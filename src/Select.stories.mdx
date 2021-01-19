@@ -15,11 +15,12 @@ import { Select, Box, Flex } from './'
 Let's define a story for our `Badge` component:
 
 <Story name="default">
-  <Flex css={{ alignContent: 'center' }}>
-    <Box as="label" css={{ display: 'block' }}>
+  <Flex css={{ alignItems: 'center', gap: '$3' }}>
+    <Box as="label" htmlFor="vegetable">
       Label
     </Box>
     <Select
+      id="vegetable"
       name="vegetable"
       label="Vegetable"
       options={[
