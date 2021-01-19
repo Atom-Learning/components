@@ -1,0 +1,29 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  Preview,
+  Props
+} from '@storybook/addon-docs/blocks'
+
+import { Box } from './'
+
+<Meta
+  title="MDX/Box"
+  component={Box}
+  argTypes={{ background: { control: 'color' } }}
+/>
+
+# Box
+<Canvas>
+  <Story name="With Text">
+    {(args) => (
+      <Box css={{ backgroundColor: args.background }}>
+        {' '}
+        I'm some text in a box!{' '}
+      </Box>
+    )}
+  </Story>
+</Canvas>
+
+<Props of={Box} />

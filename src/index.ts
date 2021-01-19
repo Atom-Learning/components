@@ -1,5 +1,5 @@
-import { Select } from './Select'
-import { Box } from './Box'
-import { Flex } from './Flex'
+import { Select } from './primitives/select/Select'
+import { Box } from './primitives/box'
+import { Flex } from './primitives/Flex'
 
 export { Select, Box, Flex }

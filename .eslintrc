@@ -16,8 +16,7 @@
     "es6": true,
     "browser": true,
     "node": true,
-    "mocha": true,
-    "cypress/globals": true
+    "mocha": true
   },
   "ignorePatterns": [
     "frontend/public/",
@@ -68,7 +67,7 @@
     "plugin:react/recommended",
     "prettier"
   ],
-  "plugins": ["simple-import-sort", "react-hooks", "cypress"],
+  "plugins": ["simple-import-sort", "react-hooks"],
   "rules": {
     "compat/compat": "error",
     "jsx-a11y/anchor-is-valid": "warn",
