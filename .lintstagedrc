@@ -1,0 +1,7 @@
+{
+  "*.{js, ts, tsx}": [
+    "node_modules/.bin/eslint --fix --cache --quiet",
+    "node_modules/.bin/prettier --config .prettierrc --write"
+  ],
+  "*.json": "node_modules/.bin/prettier --config .prettierrc --write"
+}

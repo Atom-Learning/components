@@ -1,0 +1,112 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "babelOptions": {
+      "configFile": "./babel.config.js"
+    },
+    "ecmaFeatures": {
+      "jsx": true,
+      "impliedStrict": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "cypress/globals": true
+  },
+  "ignorePatterns": [
+    "frontend/public/",
+    "node_modules",
+    "frontend/client/legacy_index.js"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "polyfills": [
+      "Array.from",
+      "Number.isInteger",
+      "Number.isNaN",
+      "Object.assign",
+      "Object.values",
+      "Promise",
+      "Set",
+      "fetch",
+      "document.querySelector"
+    ]
+  },
+  "globals": {
+    "__DEV__": "readonly",
+    "__ESMODULE_BUILD__": "readonly",
+    "__RECAPTCHA_SITE_KEY__": "readonly",
+    "__SENTRY_DSN__": "readonly",
+    "__SENTRY_ENVIRONMENT__": "readonly",
+    "__SENTRY_RELEASE__": "readonly",
+    "__STRIPE_API_KEY__": "readonly",
+    "__TOKBOX_API_KEY__": "readonly",
+    "__API_PREFIX__": "readonly",
+    "__SOCKET_PREFIX__": "readonly",
+    "__MS_ROUTES__": "readonly",
+    "__MS_API_PREFIX__": "readonly",
+    "__LIVECHAT_SALES_TRACKER_KEY__": "readonly",
+    "__API_ERROR_HANDLING_STRICT__": "readonly"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:compat/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "plugins": ["simple-import-sort", "react-hooks", "cypress"],
+  "rules": {
+    "compat/compat": "error",
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/mouse-events-have-key-events": "warn",
+    "jsx-a11y/no-autofocus": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/no-onchange": "off",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "no-prototype-builtins": "off",
+    "no-unneeded-ternary": ["warn", { "defaultAssignment": false }],
+    "no-unused-vars": ["warn", { "ignoreRestSiblings": true }],
+    "no-useless-concat": "warn",
+    "no-useless-escape": "warn",
+    "prefer-const": "error",
+    "prefer-template": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/display-name": "off",
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-curly-brace-presence": ["warn", { "props": "never" }],
+    "react/jsx-fragments": "warn",
+    "react/jsx-no-useless-fragment": "error",
+    "react/no-array-index-key": "warn",
+    "react/no-did-update-set-state": "warn",
+    "react/no-direct-mutation-state": "error",
+    "react/no-unescaped-entities": "warn",
+    "react/prefer-stateless-function": "warn",
+    "react/prop-types": "off",
+    "react/self-closing-comp": "warn",
+    "simple-import-sort/sort": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["server/**/*.js", "test/**/*.js", "scripts/*.js"],
+      "rules": {
+        "compat/compat": "off"
+      }
+    }
+  ]
+}
