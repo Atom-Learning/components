@@ -1,0 +1,40 @@
+{
+  "name": "@atomlearning/components",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "version": "1.0.0",
+  "description": "",
+  "sideEffects": "false",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --format modern,cjs --strict",
+    "dev": "microbundle watch  --jsx React.createElement",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atom-Learning/components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atom-Learning/components/issues"
+  },
+  "homepage": "https://github.com/Atom-Learning/components#readme",
+  "devDependencies": {
+    "microbundle": "^0.13.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "dependencies": {
+    "@stitches/react": "0.0.3-canary.4",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.14"
+  }
+}
