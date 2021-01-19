@@ -1,23 +1,23 @@
 import * as React from 'react'
-import { styled } from './stitches'
+import { styled, StitchesProps } from './stitches'
+
+const StyledSelect = styled('select', {
+  backgroundColor: 'papayawhip',
+  color: 'red',
+  fontSize: '$md',
+  p: '$3'
+})
 
 export type Option = {
   label: string
   value: string
 }
 
-export type SelectProps = {
+export type SelectProps = StitchesProps<typeof StyledSelect> & {
   name: string
   options: Array<Option>
   placeholder?: string
 }
-
-const StyledSelect = styled('select', {
-  p: '$3',
-  color: 'red',
-  backgroundColor: 'papayawhip',
-  fontSize: '$md'
-})
 
 export const Select = ({
   options,
