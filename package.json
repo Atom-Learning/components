@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/Atom-Learning/components#readme",
   "devDependencies": {
+    "eslint": "^7.18.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
     "microbundle": "^0.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -38,5 +41,10 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/react": "^6.1.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
