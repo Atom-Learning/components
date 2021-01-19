@@ -11,7 +11,8 @@
     "dev": "microbundle watch  --jsx React.createElement",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test:types": "tsc --noEmit"
+    "test:types": "tsc --noEmit",
+    "start:sandbox": "parcel ./sandbox/index.html  --open"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
-    "@storybook/react": "^6.1.14"
+    "@storybook/react": "^6.1.14",
+    "parcel-bundler": "^1.12.4"
   }
 }

@@ -10,7 +10,6 @@ export type SelectProps = {
   name: string
   options: Array<Option>
   placeholder?: string
-  ref: any
 }
 
 const StyledSelect = styled('select', {
@@ -24,11 +23,10 @@ export const Select = ({
   options,
   placeholder,
   name,
-  ref,
   ...rest
 }: SelectProps) => {
   return (
-    <StyledSelect ref={ref} {...rest}>
+    <StyledSelect {...rest}>
       {placeholder && <option value="">{placeholder}</option>}
       {options.map(({ label, value }) => (
         <option key={value} value={value}>
