@@ -8,21 +8,20 @@ import {
 
 import { Box } from '../'
 import { Card } from './CardExample'
+import { disableStitchesProps } from '../../../utilities/storybook'
 
 <Meta
   title="MDX/Box"
   component={Box}
   argTypes={{
     background: { control: 'color' },
-    textAlign: {
-      control: { type: 'select', options: ['left', 'right', 'center'] }
+    alignItems: {
+      control: { type: 'select', options: ['flex-start', 'center', 'flex-end'] }
     },
     border: { control: 'color' },
     borderRadius: { control: 'number' },
     padding: { control: 'number' },
-    ref: { table: { disable: true } },
-    as: { table: { disable: true } },
-    css: { table: { disable: true } }
+    ...disableStitchesProps
   }}
 />
 
@@ -42,14 +41,14 @@ addition of the powerful `css` prop and various styling utilities based on our t
   <Story
     name="Basic"
     args={{
+      alignItems: 'flex-start',
       background: 'white',
       border: '#ebebeb',
       borderRadius: 8,
-      padding: 8,
-      textAlign: 'center'
+      padding: 8
     }}
   >
-    {({ background, border, borderRadius, padding, textAlign }) => (
+    {({ alignItems, background, border, borderRadius, padding }) => (
       <Box
         as="section"
         css={{
@@ -59,11 +58,10 @@ addition of the powerful `css` prop and various styling utilities based on our t
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'center',
+          alignItems,
           backgroundColor: background,
           border: `1px solid ${border}`,
           borderRadius,
-          textAlign,
-          fontFamily: 'sans-serif',
           boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
           padding
         }}
