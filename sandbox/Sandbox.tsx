@@ -14,7 +14,7 @@ const Header = () => (
   <Box
     as="header"
     css={{
-      backgroundColor: '#ebebeb',
+      backgroundColor: 'tonal',
       p: '$3',
       borderRadius: '$1',
       mb: '$3'
