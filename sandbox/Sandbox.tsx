@@ -2,13 +2,16 @@ import React from 'react'
 
 import { Box, css } from '../dist'
 
-const containerStyles = {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%'
-}
-
-const Container = (props) => <Box css={containerStyles} {...props} />
+const Container = (props) => (
+  <Box
+    css={{
+      display: 'flex',
+      flexDirection: 'column',
+      height: '100%'
+    }}
+    {...props}
+  />
+)
 
 const Header = () => (
   <Box
@@ -30,20 +33,18 @@ const Header = () => (
   </Box>
 )
 
-const linkStyle = css({ marginRight: '16px' })
-
 const Links = () => (
   <Box>
     <a
       href="https://stitches.dev"
-      className={linkStyle}
+      className={css({ marginRight: '16px' })}
       target="_blank"
       rel="noreferrer"
     >
       Stitches docs
     </a>
     <a
-      className={linkStyle}
+      className={css({ marginRight: '16px' })}
       href="https://github.com/typescript-cheatsheets/react/blob/main/README.md#basic-cheatsheet-table-of-contents"
       target="_blank"
       rel="noreferrer"
