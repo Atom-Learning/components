@@ -4,6 +4,7 @@ import { Box, css } from '../dist'
 
 const Container = (props) => (
   <Box
+    as="main"
     css={{
       display: 'flex',
       flexDirection: 'column',
@@ -34,7 +35,7 @@ const Header = () => (
 )
 
 const Links = () => (
-  <Box>
+  <Box as="nav">
     <a
       href="https://stitches.dev"
       className={css({ marginRight: '16px' })}
