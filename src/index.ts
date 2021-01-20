@@ -1,3 +1,8 @@
+import { reset } from 'stitches-reset'
 export { Box, Flex, Select } from './primitives'
 
-export { styled, css } from './stitches'
+import { css, styled } from './stitches'
+
+css.global(reset)()
+
+export { css, styled }
