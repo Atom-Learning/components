@@ -42,10 +42,7 @@ const StyledInput = styled('input', {
   }
 })
 
-const Input = (
-  props: React.InputHTMLAttributes<HTMLInputElement> &
-    StitchesProps<typeof StyledInput>
-) => {
+const Input = (props: StitchesProps<typeof StyledInput>) => {
   return <StyledInput {...props} />
 }
 
