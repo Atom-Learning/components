@@ -5,15 +5,16 @@ type CSSValue = number | string
 
 export const tokens = {
   colors: {
-    $tonal100: 'hsl(0, 0%, 15%)',
-    $tonal200: 'hsl(0, 0%, 25%)',
-    $tonal300: 'hsl(0, 0%, 40%)',
-    $tonal400: 'hsl(0, 0%, 55%)',
+    $tonal100: 'hsl(0, 6%, 97%)',
+    $tonal200: 'hsl(0, 6%, 95%)',
+    $tonal300: 'hsl(0, 6%, 90%)',
+    $tonal400: 'hsl(0, 2%, 80%)',
     $tonal500: 'hsl(0, 2%, 70%)',
-    $tonal600: 'hsl(0, 2%, 80%)',
-    $tonal700: 'hsl(0, 6%, 90%)',
-    $tonal800: 'hsl(0, 6%, 95%)',
-    $tonal900: 'hsl(0, 6%, 97%)',
+    $tonal600: 'hsl(0, 0%, 55%)',
+    $tonal700: 'hsl(0, 0%, 40%)',
+    $tonal800: 'hsl(0, 0%, 25%)',
+    $tonal900: 'hsl(0, 0%, 15%)',
+    
 
     $primary100: 'hsl(200, 75%, 95%)',
     $primary200: 'hsl(200, 74%, 86.5%)',

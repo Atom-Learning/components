@@ -100,24 +100,39 @@ const PasswordField = ({ name }) => {
 
 const StyledButton = styled('button', {
   padding: 'unset',
-  border: 'unset',
-  background: 'unset'
+  border: 'none',
+  background: 'unset',
+  cursor: 'pointer',
+  transition: 'all 125ms ease-out'
 })
 
-const LogInButton = () => (
+const PrimaryButton = ({ css, ...rest }) => (
   <StyledButton
+    css={{
+      backgroundColor: '$primary',
+      ':hover': {
+        backgroundColor: '$primary900'
+      },
+      ...css
+    }}
+    {...rest}
+  />
+)
+
+const LogInButton = () => (
+  <PrimaryButton
     css={{
       borderRadius: '$1',
       padding: '$2 $4',
       backgroundColor: '$primary500',
-      border: '1px solid $primary500',
       width: '100%',
       color: 'white',
-      fontSize: 'md'
+      fontSize: 'md',
+      height: '40px'
     }}
   >
     Log in
-  </StyledButton>
+  </PrimaryButton>
 )
 
 const App = () => {
