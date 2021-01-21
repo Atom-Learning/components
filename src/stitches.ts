@@ -14,7 +14,6 @@ export const tokens = {
     $tonal700: 'hsl(0, 0%, 40%)',
     $tonal800: 'hsl(0, 0%, 25%)',
     $tonal900: 'hsl(0, 0%, 15%)',
-    
 
     $primary100: 'hsl(200, 75%, 95%)',
     $primary200: 'hsl(200, 74%, 86.5%)',
@@ -139,10 +138,12 @@ export const utils = {
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: CSSValue) => ({
-    marginTop: value,
-    marginBottom: value
-  })
+  my: (value: CSSValue) => {
+    return {
+      marginTop: value,
+      marginBottom: value
+    }
+  }
 }
 
 export const breakpoints = {
