@@ -1,6 +1,8 @@
 import { createStyled } from '@stitches/react'
 export * from '@stitches/react'
 
+type CSSValue = number | string
+
 export const tokens = {
   colors: {
     $tonal100: 'hsl(0, 0%, 15%)',
@@ -93,50 +95,50 @@ export const tokens = {
 }
 
 export const utils = {
-  p: (value: number | string) => ({
+  p: (value: CSSValue) => ({
     padding: value
   }),
-  pt: (value: number | string) => ({
+  pt: (value: CSSValue) => ({
     paddingTop: value
   }),
-  pr: (value: number | string) => ({
+  pr: (value: CSSValue) => ({
     paddingRight: value
   }),
-  pb: (value: number | string) => ({
+  pb: (value: CSSValue) => ({
     paddingBottom: value
   }),
-  pl: (value: number | string) => ({
+  pl: (value: CSSValue) => ({
     paddingLeft: value
   }),
-  px: (value: number | string) => ({
+  px: (value: CSSValue) => ({
     paddingLeft: value,
     paddingRight: value
   }),
-  py: (value: number | string) => ({
+  py: (value: CSSValue) => ({
     paddingTop: value,
     paddingBottom: value
   }),
 
-  m: (value: number | string) => ({
+  m: (value: CSSValue) => ({
     margin: value
   }),
-  mt: (value: number | string) => ({
+  mt: (value: CSSValue) => ({
     marginTop: value
   }),
-  mr: (value: number | string) => ({
+  mr: (value: CSSValue) => ({
     marginRight: value
   }),
-  mb: (value: number | string) => ({
+  mb: (value: CSSValue) => ({
     marginBottom: value
   }),
-  ml: (value: number | string) => ({
+  ml: (value: CSSValue) => ({
     marginLeft: value
   }),
-  mx: (value: number | string) => ({
+  mx: (value: CSSValue) => ({
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: number | string) => ({
+  my: (value: CSSValue) => ({
     marginTop: value,
     marginBottom: value
   })
