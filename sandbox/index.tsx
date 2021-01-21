@@ -1,26 +1,32 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-// import { reset } from 'stitches-reset'
+import { reset } from 'stitches-reset'
 
-import { Select, Box, css } from '../dist'
+import { Box, css } from '../dist'
+import { Sandbox } from './Sandbox'
 
-console.log({ css })
-
-css.global({
-  body: {
-    margin: '0'
-  }
-})
+css.global(reset)()
 
 const App = () => {
   return (
-    <Box css={{ backgroundColor: '$primary', p: '$4' }}>
-      <Select
-        css={{ width: '400px' }}
-        name="Hello"
-        options={[{ label: 'hello', value: 'hello' }]}
-      />
-    </Box>
+    <Sandbox>
+      <Box
+        css={{
+          height: '250px',
+          width: '250px',
+          p: '$3',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          margin: 'auto',
+          backgroundColor: 'papayawhip'
+        }}
+      >
+        Use this app to quickly render components in an environment where you
+        have more control than in Storybook. But don't commit changes to this
+        app into the main branch!
+      </Box>
+    </Sandbox>
   )
 }
 
