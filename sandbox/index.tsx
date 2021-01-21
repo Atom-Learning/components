@@ -2,10 +2,32 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css } from '../dist'
+import { Box, css, styled } from '../dist'
 import { Sandbox } from './Sandbox'
 
 css.global(reset)()
+
+const StyledInput = styled('input', {
+  p: '$3',
+  appearance: 'none',
+  width: '100%',
+  height: '50px',
+  borderRadius: '$1',
+  border: '1px solid $tonal500',
+  boxShadow: 'none', // necessary to remove default iOS default styling
+  fontSize: 'md',
+  color: '$tonal100',
+  transition: 'all 75ms ease-out',
+  ':focus': {
+    boxShadow: 'inset 0 0 0 1px $primary900',
+    borderColor: '$primary900',
+    outline: 'none'
+  }
+})
+
+const Input = (props: React.InputHTMLAttributes<HTMLInputElement>) => {
+  return <StyledInput {...props} />
+}
 
 const App = () => {
   return (
@@ -29,12 +51,12 @@ const App = () => {
             width: '355px',
             backgroundColor: 'white',
             padding: '$4',
-            borderRadius: '$3',
-            boxShadow:
-              '0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)'
+            boxShadow: '$2',
+            borderRadius: '$4'
           }}
         >
           Log in
+          <Input name="user" />
         </Box>
       </Box>
     </Sandbox>
@@ -42,12 +64,3 @@ const App = () => {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
-
-const Input = ({ label, ...rest }) => {
-  return (
-    <label>
-      {label}
-      <input {...rest} />
-    </label>
-  )
-}
