@@ -1,0 +1,77 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  Preview,
+  ArgsTable
+} from '@storybook/addon-docs/blocks'
+
+import { Box } from '../'
+import { Card } from './CardExample'
+import { disableStitchesProps } from '../../../utilities/storybook'
+
+<Meta
+  title="MDX/Box"
+  component={Box}
+  argTypes={{
+    background: { control: 'color' },
+    alignItems: {
+      control: { type: 'select', options: ['flex-start', 'center', 'flex-end'] }
+    },
+    border: { control: 'color' },
+    borderRadius: { control: 'number' },
+    padding: { control: 'number' },
+    ...disableStitchesProps
+  }}
+/>
+
+# Box
+
+The `Box` is our most fundamental container component. Many other components are composed of `Box`es. For example, this card:
+
+<Card />
+
+`Box` falls back to rendering a `div`, but we can use it to render any other container element with e.g. `<Box as="section">`. In the card, `Box` is used to render a `section`,
+`header`, `figure` and `footer`.
+
+Avoid rendering any of these elements directly in our components — `Box` has all the same flexibility, but with the
+addition of the powerful `css` prop and various styling utilities based on our themes.
+
+<Canvas>
+  <Story
+    name="Basic"
+    args={{
+      alignItems: 'flex-start',
+      background: 'white',
+      border: '#ebebeb',
+      borderRadius: 8,
+      padding: 8
+    }}
+  >
+    {({ alignItems, background, border, borderRadius, padding }) => (
+      <Box
+        as="section"
+        css={{
+          height: '250px',
+          width: '250px',
+          margin: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems,
+          backgroundColor: background,
+          border: `1px solid ${border}`,
+          borderRadius,
+          boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+          padding
+        }}
+      >
+        Some text in a Box
+      </Box>
+    )}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Box} />
