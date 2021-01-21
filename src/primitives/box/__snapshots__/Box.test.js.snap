@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Box component renders 1`] = `
+._Fgykb {
+  margin-top: auto;
+}
+
+._kSJetr {
+  margin-bottom: auto;
+}
+
+._jbMiSP {
+  margin-left: auto;
+}
+
+._bVZaHo {
+  margin-right: auto;
+}
+
+._SOQhS {
+  height: 100px;
+}
+
+._ffzcdL {
+  width: 100px;
+}
+
+<div>
+  <div
+    class="_ffzcdL _SOQhS _bVZaHo _jbMiSP _kSJetr _Fgykb scid-PJLV"
+  >
+    BOX_CHILDREN
+  </div>
+</div>
+`;
