@@ -12,22 +12,42 @@ const App = () => {
     <Sandbox>
       <Box
         css={{
-          height: '250px',
-          width: '250px',
-          p: '$3',
+          height: '100%',
+          width: '100%',
+          // p: '$3',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          margin: 'auto',
-          backgroundColor: 'papayawhip'
+          // margin: 'auto',
+          backgroundColor: 'ebf5ff'
         }}
       >
-        Use this app to quickly render components in an environment where you
-        have more control than in Storybook. But don't commit changes to this
-        app into the main branch!
+        <Box
+          as="section"
+          css={{
+            height: '295px',
+            width: '355px',
+            backgroundColor: 'white',
+            padding: '$4',
+            borderRadius: '$3',
+            boxShadow:
+              '0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12)'
+          }}
+        >
+          Log in
+        </Box>
       </Box>
     </Sandbox>
   )
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
+
+const Input = ({ label, ...rest }) => {
+  return (
+    <label>
+      {label}
+      <input {...rest} />
+    </label>
+  )
+}
