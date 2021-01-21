@@ -1,5 +1,5 @@
 node_modules
 dist
 .cache
-yarn-error.log
 .eslintcache
+yarn-error.log

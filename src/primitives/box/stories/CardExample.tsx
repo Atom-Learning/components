@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 import { Box } from '../../'
 
@@ -15,7 +15,7 @@ export const Card = () => (
       borderRadius: '8px',
       textAlign: 'center',
       fontFamily: 'sans-serif',
-      boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+      boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
     }}
   >
     <Box
