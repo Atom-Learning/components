@@ -19,7 +19,9 @@ const App = () => {
           backgroundColor: 'papayawhip'
         }}
       >
-        Render whatever you like — even text in a box!!
+        Use this app to quickly render components in an environment where you
+        have more control than in Storybook. But don't commit changes to this
+        app into the main branch!
       </Box>
     </Sandbox>
   )

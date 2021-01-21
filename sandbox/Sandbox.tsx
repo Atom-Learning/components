@@ -25,11 +25,7 @@ const Header = () => (
     }}
   >
     <h1 className={css({ margin: '$2 0' })}>Component lib sandbox</h1>
-    <p className={css({ margin: '0 0 $2 0' })}>
-      Use this app to quickly render components in an environment where you have
-      more control than in Storybook. But don't commit changes to this app into
-      the main branch!
-    </p>
+    
     <Links />
   </Box>
 )
