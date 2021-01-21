@@ -3,3 +3,4 @@ dist
 .cache
 .eslintcache
 yarn-error.log
+storybook-static
