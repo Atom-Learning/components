@@ -93,62 +93,63 @@ export const tokens = {
 }
 
 export const utils = {
-  p: (value: any) => ({
+  p: (value: number | string) => ({
     padding: value
   }),
-  pt: (value: any) => ({
+  pt: (value: number | string) => ({
     paddingTop: value
   }),
-  pr: (value: any) => ({
+  pr: (value: number | string) => ({
     paddingRight: value
   }),
-  pb: (value: any) => ({
+  pb: (value: number | string) => ({
     paddingBottom: value
   }),
-  pl: (value: any) => ({
+  pl: (value: number | string) => ({
     paddingLeft: value
   }),
-  px: (value: any) => ({
+  px: (value: number | string) => ({
     paddingLeft: value,
     paddingRight: value
   }),
-  py: (value: any) => ({
+  py: (value: number | string) => ({
     paddingTop: value,
     paddingBottom: value
   }),
 
-  m: (value: any) => ({
+  m: (value: number | string) => ({
     margin: value
   }),
-  mt: (value: any) => ({
+  mt: (value: number | string) => ({
     marginTop: value
   }),
-  mr: (value: any) => ({
+  mr: (value: number | string) => ({
     marginRight: value
   }),
-  mb: (value: any) => ({
+  mb: (value: number | string) => ({
     marginBottom: value
   }),
-  ml: (value: any) => ({
+  ml: (value: number | string) => ({
     marginLeft: value
   }),
-  mx: (value: any) => ({
+  mx: (value: number | string) => ({
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: any) => ({
+  my: (value: number | string) => ({
     marginTop: value,
     marginBottom: value
   })
 }
 
 export const breakpoints = {
-  sm: (rule: string) => `@media (min-width: 550px) { ${rule} }`,
-  md: (rule: string) => `@media (min-width: 800px) { ${rule} }`,
-  lg: (rule: string) => `@media (min-width: 1100px) { ${rule} }`,
-  xl: (rule: string) => `@media (min-width: 1350px) { ${rule} }`,
-  motion: (rule: string) => `@media (prefers-reduced-motion) { ${rule} }`,
-  hover: (rule: string) => `@media (hover: hover) { ${rule} }`
+  sm: (rule: string): string => `@media (min-width: 550px) { ${rule} }`,
+  md: (rule: string): string => `@media (min-width: 800px) { ${rule} }`,
+  lg: (rule: string): string => `@media (min-width: 1100px) { ${rule} }`,
+  xl: (rule: string): string => `@media (min-width: 1350px) { ${rule} }`,
+  motion: (rule: string): string =>
+    `@media (prefers-reduced-motion) { ${rule} }`,
+  hover: (rule: string): string => `@media (hover: hover) { ${rule} }`
 }
 
 export const { styled, css } = createStyled({
