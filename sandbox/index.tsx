@@ -1,8 +1,11 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import { reset } from 'stitches-reset'
 
-import { Box } from '../dist'
+import { Box, css } from '../dist'
 import { Sandbox } from './Sandbox'
+
+css.global(reset)()
 
 const App = () => {
   return (

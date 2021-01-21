@@ -25,7 +25,7 @@ const Header = () => (
     }}
   >
     <h1 className={css({ margin: '$2 0' })}>Component lib sandbox</h1>
-    
+
     <Links />
   </Box>
 )
