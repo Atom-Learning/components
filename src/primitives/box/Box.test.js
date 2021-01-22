@@ -1,8 +1,9 @@
-import 'jest-axe/extend-expect'
+import 'jest-axe/extend-expect' // TODO: refactor into the setupFiles.js
 
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
+import ReactDOMServer from 'react-dom/server' // TODO: refactor into the setupFiles.js
 
 import { Box } from './'
 
@@ -15,11 +16,9 @@ describe(`Box component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('should ensure that Box component doesn`t have any accessibility violations', async () => {
-    // TODO: fix why this test is passing
-    const { container } = render(<Box css={{ color: 'pink' }} />)
-    const results = await axe(container)
-
+  it('has no programmatically detectable a11y issues', async () => {
+    const html = ReactDOMServer.renderToString(<Box />)
+    const results = await axe(html)
     expect(results).toHaveNoViolations()
   })
 })
