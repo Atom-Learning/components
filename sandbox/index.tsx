@@ -147,7 +147,7 @@ const App = () => {
         }}
       >
         <img src={logo} alt="" className={css({ width: '400px', mb: '$5' })} />
-        <Panel size="md">
+        <Panel css={{ width: '355px' }}>
           <form className={css({ mb: '$5' })}>
             <InputField label="Email or username" name="user" />
             <PasswordField name="pass" />

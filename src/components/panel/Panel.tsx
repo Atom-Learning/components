@@ -8,14 +8,7 @@ const BasePanel = styled(Box, {
   backgroundColor: 'white',
   padding: '$5',
   boxShadow: '$2',
-  borderRadius: '$4',
-  variants: {
-    size: {
-      sm: {},
-      md: { width: '355px' },
-      lg: {}
-    }
-  }
+  borderRadius: '$4'
 })
 
 export const Panel = ({
@@ -24,7 +17,3 @@ export const Panel = ({
 }: StitchesProps<typeof BasePanel>): React.ReactElement => (
   <BasePanel as="section" css={css} {...props} />
 )
-
-Panel.defaultProps = {
-  size: 'md'
-}

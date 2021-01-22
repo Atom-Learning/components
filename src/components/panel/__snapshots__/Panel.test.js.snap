@@ -21,10 +21,6 @@ exports[`Panel component renders 1`] = `
   margin-top: auto;
 }
 
-._dTOYth {
-  width: 355px;
-}
-
 ._kVWBQp {
   background-color: white;
 }
@@ -67,7 +63,7 @@ exports[`Panel component renders 1`] = `
 
 <div>
   <section
-    class="scid-iAlIxK _jtDUAA _lotbxk _jHESqD _ccNyYr _cMidCU _jHWUXn _dMkVUn _jhvrto _Ekxzn _kVWBQp _dTOYth _Fgykb _bVZaHo _kSJetr _jbMiSP _SOQhS scid-PJLV"
+    class="scid-iKQhdU _jtDUAA _lotbxk _jHESqD _ccNyYr _cMidCU _jHWUXn _dMkVUn _jhvrto _Ekxzn _kVWBQp _Fgykb _bVZaHo _kSJetr _jbMiSP _SOQhS scid-PJLV"
   >
     PANEL
   </section>
