@@ -1,3 +1,3 @@
-export { Box, Flex, Select } from './primitives'
+export { Box, Flex, Select, Panel } from './primitives'
 
 export { css, styled } from './stitches'
