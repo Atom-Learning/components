@@ -11,13 +11,10 @@ import { Card } from './CardExample'
 import { disableStitchesProps } from '../../../utilities/storybook'
 
 <Meta
-  title="MDX/Box"
+  title="Primitives/Box"
   component={Box}
   argTypes={{
     background: { control: 'color' },
-    alignItems: {
-      control: { type: 'select', options: ['flex-start', 'center', 'flex-end'] }
-    },
     border: { control: 'color' },
     borderRadius: { control: 'number' },
     padding: { control: 'number' },
@@ -41,29 +38,24 @@ addition of the powerful `css` prop and various styling utilities based on our t
   <Story
     name="Basic"
     args={{
-      alignItems: 'flex-start',
       background: 'white',
       border: '#ebebeb',
       borderRadius: 8,
-      padding: 8
+      padding: 32
     }}
   >
-    {({ alignItems, background, border, borderRadius, padding }) => (
+    {({ background, border, borderRadius, padding }) => (
       <Box
         as="section"
         css={{
-          height: '250px',
-          width: '250px',
-          margin: 'auto',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems,
-          backgroundColor: background,
+          bg: background,
           border: `1px solid ${border}`,
           borderRadius,
           boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
-          padding
+          m: 'auto',
+          p: padding,
+          textAlign: 'center',
+          width: '250px'
         }}
       >
         Some text in a Box
