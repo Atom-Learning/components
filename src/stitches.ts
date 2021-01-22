@@ -2,6 +2,7 @@ import { createStyled } from '@stitches/react'
 export * from '@stitches/react'
 
 type CSSValue = number | string
+type CSSBlob = { [key: string]: CSSValue }
 
 export const tokens = {
   colors: {
@@ -95,55 +96,55 @@ export const tokens = {
 }
 
 export const utils = {
-  p: (value: CSSValue) => ({
+  p: (value: CSSValue): CSSBlob => ({
     padding: value
   }),
-  pt: (value: CSSValue) => ({
+  pt: (value: CSSValue): CSSBlob => ({
     paddingTop: value
   }),
-  pr: (value: CSSValue) => ({
+  pr: (value: CSSValue): CSSBlob => ({
     paddingRight: value
   }),
-  pb: (value: CSSValue) => ({
+  pb: (value: CSSValue): CSSBlob => ({
     paddingBottom: value
   }),
-  pl: (value: CSSValue) => ({
+  pl: (value: CSSValue): CSSBlob => ({
     paddingLeft: value
   }),
-  px: (value: CSSValue) => ({
+  px: (value: CSSValue): CSSBlob => ({
     paddingLeft: value,
     paddingRight: value
   }),
-  py: (value: CSSValue) => ({
+  py: (value: CSSValue): CSSBlob => ({
     paddingTop: value,
     paddingBottom: value
   }),
 
-  m: (value: CSSValue) => ({
+  m: (value: CSSValue): CSSBlob => ({
     margin: value
   }),
-  mt: (value: CSSValue) => ({
+  mt: (value: CSSValue): CSSBlob => ({
     marginTop: value
   }),
-  mr: (value: CSSValue) => ({
+  mr: (value: CSSValue): CSSBlob => ({
     marginRight: value
   }),
-  mb: (value: CSSValue) => ({
+  mb: (value: CSSValue): CSSBlob => ({
     marginBottom: value
   }),
-  ml: (value: CSSValue) => ({
+  ml: (value: CSSValue): CSSBlob => ({
     marginLeft: value
   }),
-  mx: (value: CSSValue) => ({
+  mx: (value: CSSValue): CSSBlob => ({
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: CSSValue) => ({
+  my: (value: CSSValue): CSSBlob => ({
     marginTop: value,
     marginBottom: value
   }),
 
-  bg: (value: string) => ({
+  bg: (value: string): CSSBlob => ({
     background: value
   })
 }
