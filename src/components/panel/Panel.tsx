@@ -1,8 +1,8 @@
 import { StitchesProps } from '@stitches/react'
 import * as React from 'react'
 
+import { Box } from '../../primitives'
 import { styled } from '../../stitches'
-import { Box } from '../'
 
 const BasePanel = styled(Box, {
   backgroundColor: 'white',
