@@ -18,7 +18,10 @@ const BasePanel = styled(Box, {
   }
 })
 
-export const Panel = ({ css, ...props }: StitchesProps<typeof BasePanel>) => (
+export const Panel = ({
+  css,
+  ...props
+}: StitchesProps<typeof BasePanel>): React.ReactElement => (
   <BasePanel as="section" css={css} {...props} />
 )
 

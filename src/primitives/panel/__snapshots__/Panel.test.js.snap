@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel component renders 1`] = `
+._SOQhS {
+  height: 100px;
+}
+
+._jbMiSP {
+  margin-left: auto;
+}
+
+._kSJetr {
+  margin-bottom: auto;
+}
+
+._bVZaHo {
+  margin-right: auto;
+}
+
+._Fgykb {
+  margin-top: auto;
+}
+
+._dTOYth {
+  width: 355px;
+}
+
+._kVWBQp {
+  background-color: white;
+}
+
+._Ekxzn {
+  padding-top: var(--space-5);
+}
+
+._jhvrto {
+  padding-right: var(--space-5);
+}
+
+._dMkVUn {
+  padding-bottom: var(--space-5);
+}
+
+._jHWUXn {
+  padding-left: var(--space-5);
+}
+
+._cMidCU {
+  box-shadow: var(--shadows-2);
+}
+
+._ccNyYr {
+  border-bottom-left-radius: var(--radii-4);
+}
+
+._jHESqD {
+  border-top-left-radius: var(--radii-4);
+}
+
+._lotbxk {
+  border-top-right-radius: var(--radii-4);
+}
+
+._jtDUAA {
+  border-bottom-right-radius: var(--radii-4);
+}
+
+<div>
+  <section
+    class="scid-iAlIxK _jtDUAA _lotbxk _jHESqD _ccNyYr _cMidCU _jHWUXn _dMkVUn _jhvrto _Ekxzn _kVWBQp _dTOYth _Fgykb _bVZaHo _kSJetr _jbMiSP _SOQhS scid-PJLV"
+  >
+    PANEL
+  </section>
+</div>
+`;
