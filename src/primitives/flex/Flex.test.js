@@ -1,14 +1,14 @@
 import { render, screen } from '@testing-library/react'
 import React from 'react'
 
-import { Box } from './'
+import { Flex } from '.'
 
-describe(`Box component`, () => {
+describe(`Flex component`, () => {
   it('renders', async () => {
     const { container } = render(
-      <Box css={{ m: 'auto', height: 100, width: 100 }}>BOX</Box>
+      <Flex css={{ m: 'auto', height: 100, width: 100 }}>FLEX</Flex>
     )
-    await screen.findByText('BOX')
+    await screen.findByText('FLEX')
     expect(container).toMatchSnapshot()
   })
 })
