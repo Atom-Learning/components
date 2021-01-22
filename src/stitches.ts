@@ -144,7 +144,7 @@ export const utils = {
   }),
 
   bg: (value: string) => ({
-    backgroundColor: value
+    background: value
   })
 }
 
