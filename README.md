@@ -34,7 +34,6 @@ _Note:_ Once a branch gets merged into `main`, it is automatically published, th
   - `@semantic-release/github` - publishes version to `GitHub Releases`
 - `husky` - precommit hook to prevent incomplete commit messages
 
-### How to setup (To be removed once process is setup)
+## Accessibility
 
-- https://dev.to/joshaguilar/fully-automating-npm-package-releases-3k7e
-- https://github.com/semantic-release/semantic-release/blob/master/docs/usage/installation.md#installation
+TODO: Finish
