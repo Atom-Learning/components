@@ -3,7 +3,9 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, styled } from '../dist'
+
+import { Box, css, Panel, styled } from '../dist'
+
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
@@ -147,18 +149,9 @@ const App = () => {
         }}
       >
         <img src={logo} alt="" className={css({ width: '400px', mb: '$5' })} />
-        <Box
-          as="section"
-          css={{
-            height: '295px',
-            width: '355px',
-            backgroundColor: 'white',
-            padding: '$5',
-            boxShadow: '$2',
-            borderRadius: '$4'
-          }}
-        >
-          <form className={css({ mb: '$4' })}>
+        <Panel css={{ width: '355px' }}>
+          <form className={css({ mb: '$5' })}>
+
             <InputField label="Email or username" name="user" />
             <PasswordField name="pass" />
             <LogInButton />
@@ -167,13 +160,14 @@ const App = () => {
             className={css({
               fontFamily: 'sans',
               fontSize: 'sm',
-              color: '$tonal400',
+              color: '$tonal500',
               textAlign: 'center'
             })}
           >
             Don't have an account yet? <StyledAnchor>Sign up!</StyledAnchor>{' '}
           </p>
-        </Box>
+        </Panel>
+
       </Box>
     </Sandbox>
   )

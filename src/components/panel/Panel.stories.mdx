@@ -1,0 +1,30 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  Preview,
+  ArgsTable
+} from '@storybook/addon-docs/blocks'
+
+import { Panel } from '../'
+import { disableStitchesProps } from '../../utilities/storybook'
+
+<Meta title="Components/Panel" component={Panel} />
+
+# Panel
+
+The `Panel` is a specialised instance of `Box`. It has rounded corners, a box shadow and padding.
+
+Use a `Panel` to organise content into a block.
+
+<Canvas>
+  <Story name="Basic">
+    <Panel size="md">
+      <p>Wow, the eye is really drawn to this content huh?</p>
+    </Panel>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Panel} />
