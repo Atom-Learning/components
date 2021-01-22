@@ -13,11 +13,12 @@
     "test": "jest",
     "test:watch": "yarn test -- --watch",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
-    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "validate": "npm-run-all validate:**",
-    "validate:types": "tsc --noEmit",
-    "validate:format": "yarn format --check",
     "validate:dependencies": "yarn audit --groups dependencies",
+    "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
+    "validate:size": "yarn build && size-limit",
+    "validate:types": "tsc --noEmit",
     "start:sandbox": "parcel ./sandbox/index.html  --open"
   },
   "repository": {
@@ -30,6 +31,11 @@
     "url": "https://github.com/Atom-Learning/components/issues"
   },
   "homepage": "https://github.com/Atom-Learning/components#readme",
+  "size-limit": [
+    {
+      "path": "dist/index.modern.js"
+    }
+  ],
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
@@ -37,12 +43,12 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-a11y": "^6.1.14",
+    "@size-limit/preset-big-lib": "^4.9.1",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/react": "^6.1.14",
     "@testing-library/react": "^11.2.3",
-    "@types/jest-axe": "^3.5.1",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "babel-eslint": "^10.1.0",
@@ -65,6 +71,7 @@
     "parcel-bundler": "^1.12.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.1.3"
   },

@@ -138,12 +138,14 @@ export const utils = {
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: CSSValue) => {
-    return {
-      marginTop: value,
-      marginBottom: value
-    }
-  }
+  my: (value: CSSValue) => ({
+    marginTop: value,
+    marginBottom: value
+  }),
+
+  bg: (value: string) => ({
+    background: value
+  })
 }
 
 export const breakpoints = {

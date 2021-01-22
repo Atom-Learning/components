@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box component renders 1`] = `
+exports[`Grid component renders 1`] = `
+._bwIihq {
+  display: grid;
+}
+
 ._Fgykb {
   margin-top: auto;
 }
@@ -27,9 +31,9 @@ exports[`Box component renders 1`] = `
 
 <div>
   <div
-    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
+    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _bwIihq scid-bQzyIt"
   >
-    BOX
+    GRID
   </div>
 </div>
 `;
