@@ -192,6 +192,7 @@ exports[`Input component renders 1`] = `
 <div>
   <div
     class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
+    data-testid="css-wrapper"
   >
     <label
       class="_gTonrz _oIZSq _dIHnma _bFduGn _ckmCCf _iGHkTP scid-hArcRT"

@@ -2,7 +2,15 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, InputField, Panel, PasswordField, styled } from '../dist'
+import {
+  Box,
+  css,
+  Image,
+  InputField,
+  Panel,
+  PasswordField,
+  styled
+} from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
@@ -68,7 +76,7 @@ const App = () => {
           backgroundColor: 'ebf5ff'
         }}
       >
-        <img src={logo} alt="" className={css({ width: '400px', mb: '$5' })} />
+        <Image src={logo} alt="" css={{ width: '400px', mb: '$5' }} />
         <Panel css={{ width: '355px' }}>
           <form className={css({ mb: '$5' })}>
             <InputField

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image component renders 1`] = `
+._Fgykb {
+  margin-top: auto;
+}
+
+._bVZaHo {
+  margin-right: auto;
+}
+
+._kSJetr {
+  margin-bottom: auto;
+}
+
+._jbMiSP {
+  margin-left: auto;
+}
+
+._SOQhS {
+  height: 100px;
+}
+
+._ffzcdL {
+  width: 100px;
+}
+
+<div>
+  <img
+    alt="image"
+    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
+  />
+</div>
+`;

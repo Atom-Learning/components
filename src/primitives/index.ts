@@ -1,6 +1,7 @@
 export { Box } from './box'
 export { Flex } from './flex'
 export { Grid } from './grid'
+export { Image } from './image'
 export { Input } from './input'
 export { Label } from './label'
 export { Select } from './select'

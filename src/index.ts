@@ -1,5 +1,5 @@
-export { Box, Flex, Grid, Select } from './primitives'
+export * from './primitives'
 
-export { Panel, PasswordField, InputField } from './components'
+export * from './components'
 
 export { css, styled } from './stitches'
