@@ -17,7 +17,6 @@ describe(`Grid component`, () => {
     render(<Grid />, document.body)
 
     const results = await axe(document.body)
-
     expect(results).toHaveNoViolations()
   })
 })

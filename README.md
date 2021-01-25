@@ -58,6 +58,8 @@ Before developing a component, please take some time to read the following secti
   })
 ```
 
+_Note:_ `axe` doesn't catch contrast issues when run on `jsdom` which `jest` is using.
+
 - Using the React Testing Library rules into adopting a user-centric testing an approach. [Priority](https://testing-library.com/docs/queries/about/#priority)
   - Test real interactions
   - Verify the perceivable results
