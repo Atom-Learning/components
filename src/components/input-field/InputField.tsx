@@ -4,10 +4,12 @@ import { Input, Label } from '../../primitives'
 import { CSSBlob } from '../../stitches'
 import { CSSWrapper } from '../../utilities/CSSWrapper'
 
+type InputType = 'email' | 'number' | 'password' | 'tel' | 'text' | 'url'
+
 type InputFieldProps = {
   label: string
   name: string
-  type: string
+  type: InputType
   css?: CSSBlob
 }
 
