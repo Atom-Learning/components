@@ -1,9 +1,8 @@
-import { StitchesProps } from '@stitches/react'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, InputField,Panel, PasswordField, styled } from '../dist'
+import { Box, css, InputField, Panel, PasswordField, styled } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
@@ -17,12 +16,6 @@ const StyledAnchor = styled('a', {
   ':active': { color: '$primary900' },
   cursor: 'pointer'
 })
-
-const ForgotPasswordLink = () => (
-  <StyledAnchor href="https://app.atomlearning.co.uk/forgotten">
-    Forgot your password?
-  </StyledAnchor>
-)
 
 const StyledButton = styled('button', {
   padding: 'unset',
