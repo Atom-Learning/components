@@ -37,6 +37,7 @@ export const PasswordField = ({
         type={isPasswordVisible ? 'text' : 'password'}
         name={name}
         id={name}
+        autoComplete="current-password"
         css={{ mb: '$1' }}
       />
       <button
