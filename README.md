@@ -51,11 +51,11 @@ Before developing a component, please take some time to read the following secti
   Add an accessibility unit test (using the `jest-axe`) to ensure that the components' different variations don't have any accessibility issues. Example:
 
 ```
-    it('has no programmatically detectable a11y issues', async () => {
-        const html = ReactDOMServer.renderToString(<Box />)
-        const results = await axe(html)
-        expect(results).toHaveNoViolations()
-     })
+  it('has no programmatically detectable a11y issues', async () => {
+    render(<Flex />, document.body)
+    const results = await axe(document.body)
+    expect(results).toHaveNoViolations()
+  })
 ```
 
 - Using the React Testing Library rules into adopting a user-centric testing an approach. [Priority](https://testing-library.com/docs/queries/about/#priority)

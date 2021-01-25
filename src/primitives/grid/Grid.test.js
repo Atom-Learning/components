@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
-import ReactDOMServer from 'react-dom/server'
 
 import { Grid } from '.'
 
@@ -15,8 +14,10 @@ describe(`Grid component`, () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const html = ReactDOMServer.renderToString(<Grid />)
-    const results = await axe(html)
+    render(<Grid />, document.body)
+
+    const results = await axe(document.body)
+
     expect(results).toHaveNoViolations()
   })
 })

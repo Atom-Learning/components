@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
-import ReactDOMServer from 'react-dom/server'
 
 import { Box } from './'
 
@@ -15,8 +14,9 @@ describe(`Box component`, () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const html = ReactDOMServer.renderToString(<Box />)
-    const results = await axe(html)
+    render(<Box />, document.body)
+
+    const results = await axe(document.body)
     expect(results).toHaveNoViolations()
   })
 })
