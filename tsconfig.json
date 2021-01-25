@@ -11,5 +11,5 @@
     "lib": ["es6", "dom"],
     "types": ["node"]
   },
-  "include": ["./src/"]
+  "include": ["./src/", "jest-setup.ts"]
 }

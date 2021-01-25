@@ -1,0 +1,21 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { TextField } from '../'
+
+<Meta title="Components/TextField" component={TextField} />
+
+# TextField
+
+The `TextField` component combines an `Input` and `label` in a standardised way, linking them and styling both. Its `css` prop applies styling to a containing `Box`,
+making it easy to size the `TextField` and position it relative to other components.
+
+<Canvas>
+  <Story name="Basic">
+    <TextField label="Username" name="user" css={{ width: '200px', mb: '$3' }} />
+    <TextField label="Password" name="pass" css={{ width: '200px' }} />
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={TextField} />

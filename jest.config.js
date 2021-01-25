@@ -3,5 +3,6 @@ module.exports = {
   snapshotSerializers: ['jest-stitches'],
   collectCoverage: true,
   coveragePathIgnorePatterns: ['/src/stitches.ts'],
-  testPathIgnorePatterns: ['/node_modules/']
+  testPathIgnorePatterns: ['/node_modules/'],
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts']
 }
