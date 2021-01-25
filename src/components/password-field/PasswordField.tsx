@@ -21,8 +21,8 @@ export const PasswordField = ({
   const togglePasswordVisibility = () =>
     setIsPasswordVisible((currentState) => !currentState)
 
-  return (
-    <Box css={css}>
+  const Field = () => (
+    <>
       <Flex
         css={{
           justifyContent: 'space-between',
@@ -57,6 +57,14 @@ export const PasswordField = ({
         />
         {`${isPasswordVisible ? 'Hide' : 'Show'} password`}{' '}
       </button>
+    </>
+  )
+
+  return css ? (
+    <Box css={css}>
+      <Field />
     </Box>
+  ) : (
+    <Field />
   )
 }

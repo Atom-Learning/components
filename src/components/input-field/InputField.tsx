@@ -16,13 +16,21 @@ export const InputField = ({
   name,
   ...props
 }: InputFieldProps): React.ReactElement => {
-  return (
-    <Box css={css}>
+  const Field = () => (
+    <>
       <Label htmlFor={name} css={{ mb: '$2' }}>
         {label}
       </Label>
       <Input name={name} id={name} {...props} />
+    </>
+  )
+
+  return css ? (
+    <Box css={css}>
+      <Field />
     </Box>
+  ) : (
+    <Field />
   )
 }
 
