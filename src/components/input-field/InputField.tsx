@@ -3,24 +3,29 @@ import * as React from 'react'
 import { Box, Input, Label } from '../../primitives'
 import { CSSBlob } from '../../stitches'
 
-type TextFieldProps = {
+type InputFieldProps = {
   label: string
   name: string
+  type: string
   css?: CSSBlob
 }
 
-export const TextField = ({
+export const InputField = ({
   label,
   css,
   name,
   ...props
-}: TextFieldProps): React.ReactElement => {
+}: InputFieldProps): React.ReactElement => {
   return (
     <Box css={css}>
       <Label htmlFor={name} css={{ mb: '$2' }}>
         {label}
       </Label>
-      <Input type="text" name={name} id={name} {...props} />
+      <Input name={name} id={name} {...props} />
     </Box>
   )
+}
+
+InputField.defaultProps = {
+  type: 'text'
 }

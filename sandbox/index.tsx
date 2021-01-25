@@ -3,7 +3,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, Panel, styled, PasswordField, TextField } from '../dist'
+import { Box, css, InputField,Panel, PasswordField, styled } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
@@ -78,7 +78,7 @@ const App = () => {
         <img src={logo} alt="" className={css({ width: '400px', mb: '$5' })} />
         <Panel css={{ width: '355px' }}>
           <form className={css({ mb: '$5' })}>
-            <TextField
+            <InputField
               label="Email or username"
               name="user"
               css={{ mb: '$3' }}
