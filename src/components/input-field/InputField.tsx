@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-import { Box, Input, Label } from '../../primitives'
+import { Input, Label } from '../../primitives'
 import { CSSBlob } from '../../stitches'
+import { CSSWrapper } from '../../utilities/CSSWrapper'
 
 type InputFieldProps = {
   label: string
@@ -16,21 +17,13 @@ export const InputField = ({
   name,
   ...props
 }: InputFieldProps): React.ReactElement => {
-  const Field = () => (
-    <>
+  return (
+    <CSSWrapper css={css}>
       <Label htmlFor={name} css={{ mb: '$2' }}>
         {label}
       </Label>
       <Input name={name} id={name} {...props} />
-    </>
-  )
-
-  return css ? (
-    <Box css={css}>
-      <Field />
-    </Box>
-  ) : (
-    <Field />
+    </CSSWrapper>
   )
 }
 

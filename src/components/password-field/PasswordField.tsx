@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as React from 'react'
 import { useState } from 'react'
 
-import { Box, Flex, Input, Label } from '../../primitives'
+import { Flex, Input, Label } from '../../primitives'
 import { css as generateCss, CSSBlob, styled } from '../../stitches'
+import { CSSWrapper } from '../../utilities/CSSWrapper'
 
 type PasswordFieldProps = {
   css?: CSSBlob
@@ -21,8 +22,8 @@ export const PasswordField = ({
   const togglePasswordVisibility = () =>
     setIsPasswordVisible((currentState) => !currentState)
 
-  const Field = () => (
-    <>
+  return (
+    <CSSWrapper css={css}>
       <Flex
         css={{
           justifyContent: 'space-between',
@@ -58,14 +59,6 @@ export const PasswordField = ({
         />
         {`${isPasswordVisible ? 'Hide' : 'Show'} password`}{' '}
       </button>
-    </>
-  )
-
-  return css ? (
-    <Box css={css}>
-      <Field />
-    </Box>
-  ) : (
-    <Field />
+    </CSSWrapper>
   )
 }
