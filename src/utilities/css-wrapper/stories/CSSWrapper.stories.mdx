@@ -1,0 +1,40 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { CSSWrapper } from '../'
+
+<Meta title="Util/CSSWrapper" component={CSSWrapper} />
+
+# CSSWrapper
+
+If `CSSWrapper` is passed a truthy `css` prop, it renders its children wrapped in a `Box` that has that `css`. If `css` is falsy, `CSSWrapper`
+just renders its children.
+
+Use `CSSWrapper` to wrap other components that have no natural container. For example, our `InputField` component renders something like this:
+
+```tsx
+<CSSWrapper css={css}>
+  <Label htmlFor={name} css={{ mb: '$2' }}>
+    {label}
+  </Label>
+  <Input name={name} id={name} {...props} />
+</CSSWrapper>
+```
+
+<Canvas>
+  <Story name="With CSS">
+    <CSSWrapper css={{ color: '$primary500', margin: 'auto' }}>
+      <p>Here's some text. It has punctuation and everything!</p>
+      <p>This second sentence is cool too!</p>
+    </CSSWrapper>
+  </Story>
+  <Story name="Without CSS">
+    <CSSWrapper>
+      <p>Here's some text. It has punctuation and everything!</p>
+      <p>This second sentence is cool too!</p>
+    </CSSWrapper>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={CSSWrapper} />
