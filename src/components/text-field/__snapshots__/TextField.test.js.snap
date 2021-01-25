@@ -45,14 +45,6 @@ exports[`Input component renders 1`] = `
   color: var(--colors-tonal900);
 }
 
-._oIZSq {
-  font-family: var(--fonts-sans);
-}
-
-._dIHnma {
-  font-size: var(--fontSizes-md);
-}
-
 ._jQbljM {
   box-shadow: none;
 }
@@ -153,6 +145,26 @@ exports[`Input component renders 1`] = `
   display: block;
 }
 
+._ckmCCf {
+  font-weight: 500;
+}
+
+._bFduGn {
+  color: var(--colors-secondary300);
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._gTonrz {
+  margin-bottom: var(--space-2);
+}
+
 ._Fgykb {
   margin-top: auto;
 }
@@ -181,10 +193,16 @@ exports[`Input component renders 1`] = `
   <div
     class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
   >
-    <label />
+    <label
+      class="_gTonrz _oIZSq _dIHnma _bFduGn _ckmCCf _iGHkTP scid-hArcRT"
+      for="example"
+    >
+      TextField
+    </label>
     <input
       class="_iGHkTP _fcMdVB _ejjNCC _kjfgpN _jpQaAF _fAMvjM _gWxQGm _fVnnfy _hxITlq _fVdSKi _cvjZAR _cmjVcV _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _jQbljM _dIHnma _oIZSq _dFQJLr _eaYTuA _hOHhxc _kKqLFw _eSAGHE _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ scid-jyvfEV"
-      placeholder="TextField"
+      id="example"
+      name="example"
       type="text"
     />
   </div>

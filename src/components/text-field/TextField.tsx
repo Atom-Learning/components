@@ -1,12 +1,12 @@
 import * as React from 'react'
 
-import { Box, Input } from '../../primitives'
+import { Box, Input, Label } from '../../primitives'
 import { CSSBlob } from '../../stitches'
 
 type TextFieldProps = {
   label: string
   name: string
-  css: CSSBlob
+  css?: CSSBlob
 }
 
 export const TextField = ({
@@ -17,7 +17,9 @@ export const TextField = ({
 }: TextFieldProps): React.ReactElement => {
   return (
     <Box css={css}>
-      <label htmlFor={name}>{label}</label>
+      <Label htmlFor={name} css={{ mb: '$2' }}>
+        {label}
+      </Label>
       <Input type="text" name={name} id={name} {...props} />
     </Box>
   )

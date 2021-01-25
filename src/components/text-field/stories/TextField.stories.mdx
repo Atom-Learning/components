@@ -11,8 +11,17 @@ making it easy to size the `TextField` and position it relative to other compone
 
 <Canvas>
   <Story name="Basic">
-    <TextField label="Username" name="user" css={{ width: '200px', mb: '$3' }} />
-    <TextField label="Password" name="pass" css={{ width: '200px' }} />
+    <TextField
+      label="Email address"
+      name="email"
+      css={{ width: '250px', mb: '$3' }}
+    />
+    <TextField
+      label="Mobile number"
+      name="mobile"
+      type="number"
+      css={{ width: '150px' }}
+    />
   </Story>
 </Canvas>
 

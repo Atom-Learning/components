@@ -8,10 +8,11 @@ describe(`Input component`, () => {
     const { container } = render(
       <TextField
         css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="TextField"
+        label="TextField"
+        name="example"
       />
     )
-    await screen.findByPlaceholderText('TextField')
+    await screen.findByLabelText('TextField')
     expect(container).toMatchSnapshot()
   })
 })
