@@ -3,8 +3,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, Panel, styled, Image } from '../dist'
-
+import { Box, css, Image, Panel, styled } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
