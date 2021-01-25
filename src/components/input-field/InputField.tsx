@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Input, Label } from '../../primitives'
 import { CSSBlob } from '../../stitches'
-import { CSSWrapper } from '../../utilities/CSSWrapper'
+import { CSSWrapper } from '../../utilities/css-wrapper'
 
 type InputType = 'email' | 'number' | 'password' | 'tel' | 'text' | 'url'
 

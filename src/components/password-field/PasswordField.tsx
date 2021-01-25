@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 import { Flex, Input, Label } from '../../primitives'
 import { css as generateCss, CSSBlob, styled } from '../../stitches'
-import { CSSWrapper } from '../../utilities/CSSWrapper'
+import { CSSWrapper } from '../../utilities/css-wrapper'
 
 type PasswordFieldProps = {
   css?: CSSBlob
