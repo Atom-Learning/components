@@ -4,5 +4,5 @@ module.exports = {
   collectCoverage: true,
   coveragePathIgnorePatterns: ['/src/stitches.ts'],
   testPathIgnorePatterns: ['/node_modules/'],
-  setupFilesAfterEnv: ['./setupFiles.ts']
+  setupFilesAfterEnv: ['<rootDir>/jest-setup.ts']
 }

@@ -2,7 +2,7 @@ import { createStyled } from '@stitches/react'
 export * from '@stitches/react'
 
 type CSSValue = number | string
-type CSSBlob = { [key: string]: CSSValue }
+export type CSSBlob = { [key: string]: CSSValue }
 
 export const tokens = {
   colors: {
