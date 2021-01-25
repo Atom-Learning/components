@@ -1,0 +1,22 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Image } from '../'
+
+<Meta title="Primitives/Image" component={Image} />
+
+# Image
+
+`Image` is a very thin wrapper around an HTML `img` element — it simply adds the `css` prop.
+
+<Canvas>
+  <Story name="small">
+    <Image
+      src="https://placekitten.com/200/300"
+      css={{ border: '2px dashed purple' }}
+    />
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Image} />

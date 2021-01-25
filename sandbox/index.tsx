@@ -2,7 +2,15 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css, Image, InputField, Panel, PasswordField, styled } from '../dist'
+import {
+  Box,
+  css,
+  Image,
+  InputField,
+  Panel,
+  PasswordField,
+  styled
+} from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
