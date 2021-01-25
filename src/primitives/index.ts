@@ -1,4 +1,5 @@
 export { Box } from './box'
 export { Flex } from './flex'
 export { Grid } from './grid'
+export { Image } from './image'
 export { Select } from './select'
