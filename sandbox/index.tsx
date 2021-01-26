@@ -10,7 +10,8 @@ import {
   Link,
   Panel,
   PasswordField,
-  styled
+  styled,
+  Text
 } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
@@ -79,17 +80,10 @@ const App = () => {
             <PasswordField name="pass" css={{ mb: '$4' }} />
             <LogInButton />
           </form>
-          <p
-            className={css({
-              fontFamily: 'sans',
-              fontSize: 'sm',
-              color: '$tonal500',
-              textAlign: 'center'
-            })}
-          >
+          <Text size="sm" css={{ color: '$tonal500', textAlign: 'center' }}>
             Don't have an account yet?{' '}
             <Link href="https://app.atomlearning.co.uk/register">Sign up!</Link>
-          </p>
+          </Text>
         </Panel>
       </Box>
     </Sandbox>
