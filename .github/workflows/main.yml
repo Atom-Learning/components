@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
     branches:
-    - main
+      - main
 
 jobs:
   test:
@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1.4.5
-        
-      - name: Run a multi-line script
+
+      - name: Test
         run: npm test
