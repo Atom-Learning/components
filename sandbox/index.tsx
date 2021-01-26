@@ -7,6 +7,7 @@ import {
   css,
   Image,
   InputField,
+  Link,
   Panel,
   PasswordField,
   styled
@@ -95,7 +96,8 @@ const App = () => {
               textAlign: 'center'
             })}
           >
-            Don't have an account yet? <StyledAnchor>Sign up!</StyledAnchor>{' '}
+            Don't have an account yet?{' '}
+            <Link href="https://app.atomlearning.co.uk/register">Sign up!</Link>
           </p>
         </Panel>
       </Box>
