@@ -1,0 +1,35 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Text } from '../'
+import { Box } from '../../'
+
+<Meta title="Primitives/Text" component={Text} />
+
+# Text
+
+The `Text` component is used for most instances of text in the app. It will have variants for headings, UI text, body
+
+<Canvas>
+  <Story name="Basic">
+    <Box
+      css={{
+        margin: 'auto',
+        width: '500px'
+      }}
+    >
+      <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </Text>
+    </Box>
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Text} />
