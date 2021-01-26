@@ -16,4 +16,4 @@ jobs:
         run: npm test
 
       - name: Validate
-        run: npm validate
+        run: npm run validate
