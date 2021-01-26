@@ -1,7 +1,6 @@
 import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
 
 import { Link } from '../'
-import { Flex } from '../../'
 
 <Meta title="Primitives/Link" component={Link} />
 
@@ -11,28 +10,9 @@ The `Link` component is a very thin wrapper around an HTML `a` element. It adds 
 
 <Canvas>
   <Story name="Basic">
-    <Flex
-      css={{
-        flexDirection: 'column',
-        justifyContent: 'space-between',
-        width: '200px',
-        height: '70px'
-      }}
-    >
-      <Link href="https://app.atomlearning.co.uk/forgotten">
-        Forgot your password?
-      </Link>
-      <Link
-        href="https://app.atomlearning.co.uk/forgotten"
-        css={{
-          fontSize: '$7',
-          color: '$secondary700',
-          ':hover': { color: '$secondary300' }
-        }}
-      >
-        Forgot your password?
-      </Link>
-    </Flex>
+    <Link href="https://app.atomlearning.co.uk/forgotten">
+      Forgot your password?
+    </Link>
   </Story>
 </Canvas>
 
