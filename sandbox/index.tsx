@@ -17,15 +17,6 @@ import { Sandbox } from './Sandbox'
 
 css.global(reset)()
 
-const StyledAnchor = styled('a', {
-  textDecoration: 'none',
-  color: '$primary500',
-  ':visited': { color: '$primary500' },
-  ':hover': { color: '$primary900' },
-  ':active': { color: '$primary900' },
-  cursor: 'pointer'
-})
-
 const StyledButton = styled('button', {
   padding: 'unset',
   border: 'none',
