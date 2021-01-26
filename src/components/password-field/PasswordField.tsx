@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as React from 'react'
 import { useState } from 'react'
 
-import { Flex, Input, Label } from '../../primitives'
+import { Flex, Input, Label, Link } from '../../primitives'
 import { css as generateCss, CSSBlob, styled } from '../../stitches'
 import { CSSWrapper } from '../../utilities/css-wrapper'
 
@@ -27,12 +27,17 @@ export const PasswordField = ({
       <Flex
         css={{
           justifyContent: 'space-between',
-          alignItems: 'center',
+          alignItems: 'end',
           mb: '$2'
         }}
       >
         <Label htmlFor={name}>Password</Label>
-        <a href="https://atomlearning.co.uk/forgotten">Forgot your password?</a>
+        <Link
+          href="https://app.atomlearning.co.uk/forgotten"
+          css={{ fontSize: 'sm' }}
+        >
+          Forgot your password?
+        </Link>
       </Flex>
       <Input
         type={isPasswordVisible ? 'text' : 'password'}
