@@ -51,11 +51,12 @@ const BaseButton = styled('button', StyledButton)
 
 type ButtonProps = StitchesProps<typeof BaseButton>
 
-export const Button = ({
-  variant,
-  ...props
-}: ButtonProps): React.ReactElement => {
-  return <BaseButton variant={variant || 'primary'} {...props} />
+export const Button = ({ ...props }: ButtonProps): React.ReactElement => {
+  return <BaseButton {...props} />
 }
 
 Button.displayName = 'Button'
+
+Button.defaultProps = {
+  variant: 'primary'
+}
