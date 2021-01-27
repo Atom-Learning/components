@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders a button 1`] = `
+._kKqLFw {
+  transition-timing-function: ease-out;
+}
+
+._efExVU {
+  transition-duration: 125ms;
+}
+
+._eaYTuA {
+  transition-property: all;
+}
+
+._cKSYdt {
+  cursor: pointer;
+}
+
+._ddSdla {
+  height: var(--sizes-2);
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+._eJwsRe {
+  padding-left: var(--space-4);
+}
+
+._kmyMpM {
+  padding-bottom: var(--space-2);
+}
+
+._hCA-dkJ {
+  padding-right: var(--space-4);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
+}
+
+._foQeyu {
+  border-left-style: none;
+}
+
+._lmVhDS {
+  border-bottom-style: none;
+}
+
+._jOpMN {
+  border-right-style: none;
+}
+
+._eEUDVO {
+  border-top-style: none;
+}
+
+._cmjVcV {
+  border-bottom-right-radius: var(--radii-1);
+}
+
+._cvjZAR {
+  border-top-right-radius: var(--radii-1);
+}
+
+._fVdSKi {
+  border-top-left-radius: var(--radii-1);
+}
+
+._hxITlq {
+  border-bottom-left-radius: var(--radii-1);
+}
+
+._logdPK._logdPK._logdPK:active {
+  background-color: var(--colors-primary500);
+}
+
+._hknsba._hknsba:hover,
+._hknsba:focus {
+  background-color: var(--colors-primary900);
+}
+
+._htOODa {
+  color: white;
+}
+
+._hPXiuU {
+  background-color: var(--colors-primary500);
+}
+
+._ffzcdL {
+  width: 100px;
+}
+
+<div>
+  <button
+    class="_ffzcdL _hPXiuU _htOODa _hknsba _logdPK _hxITlq _fVdSKi _cvjZAR _cmjVcV _eEUDVO _jOpMN _lmVhDS _foQeyu _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _ddSdla _cKSYdt _eaYTuA _efExVU _kKqLFw scid-cfEVaJ"
+  >
+    BUTTON
+  </button>
+</div>
+`;

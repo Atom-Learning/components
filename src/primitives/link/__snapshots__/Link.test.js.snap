@@ -1,12 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component renders an anchor 1`] = `
-._goa-deN._goa-deN._goa-deN:active {
-  color: var(--colors-primary900);
+._bYkcXx._bYkcXx._bYkcXx:active {
+  color: var(--colors-primary500);
+}
+
+._DzWmG._DzWmG:hover {
+  text-decoration-line: underline;
 }
 
 ._lbjgAG._lbjgAG:hover {
   color: var(--colors-primary900);
+}
+
+._fulcBE._fulcBE._fulcBE._fulcBE:focus {
+  text-decoration-line: underline;
+}
+
+._cKuykA._cKuykA._cKuykA._cKuykA:focus {
+  color: var(--colors-primary900);
+}
+
+._MxdQF:visited {
+  color: var(--colors-primary500);
 }
 
 ._cKSYdt {
@@ -27,7 +43,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="_goMgqD _oIZSq _kaGCev _cKSYdt _lbjgAG _goa-deN scid-dRBCAP"
+    class="_goMgqD _oIZSq _kaGCev _cKSYdt _MxdQF _cKuykA _fulcBE _lbjgAG _DzWmG _bYkcXx scid-efvrmx"
     href="https://google.com/"
   >
     GOOGLE
