@@ -3638,11 +3638,6 @@ babel-plugin-named-asset-import@^0.3.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.7.tgz#156cd55d3f1228a5765774340937afc8398067dd"
   integrity sha512-squySRkf+6JGnvjoUtDEjSREJEBirnXi9NqP6rjSYsylxQxqBTz+pkmf395i9E2zsvmYUaI40BHo6SqZUdydlw==
 
-babel-plugin-pure-calls-annotation@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-pure-calls-annotation/-/babel-plugin-pure-calls-annotation-0.3.1.tgz#42a6d7ec454888b631775243a324e77c860f7123"
-  integrity sha512-Fl/4vPEEsfgpGVWX3i7ZVP/aDVMkrXjoWyfGocgYzoqsryfnjZRU5iNd33f9u03NGAFCz4PzOkQf6Iiy4MdtUA==
-
 babel-plugin-react-docgen@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-docgen/-/babel-plugin-react-docgen-4.2.1.tgz#7cc8e2f94e8dc057a06e953162f0810e4e72257b"
@@ -3651,6 +3646,11 @@ babel-plugin-react-docgen@^4.2.1:
     ast-types "^0.14.2"
     lodash "^4.17.15"
     react-docgen "^5.0.0"
+
+babel-plugin-react-remove-properties@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.atomlearning.technology/babel-plugin-react-remove-properties/-/babel-plugin-react-remove-properties-0.3.0.tgz#7b623fb3c424b6efb4edc9b1ae4cc50e7154b87f"
+  integrity sha512-vbxegtXGyVcUkCvayLzftU95vuvpYFV85pRpeMpohMHeEY46Qe0VNWfkVVcCbaZ12CXHzDFOj0esumATcW83ng==
 
 babel-plugin-syntax-jsx@^6.18.0:
   version "6.18.0"
@@ -3725,7 +3725,7 @@ babel-plugin-transform-simplify-comparison-operators@^6.9.4:
 
 babel-plugin-transform-stitches-display-name@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
+  resolved "https://registry.atomlearning.technology/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
   integrity sha512-2uluT1uvmdiVwBRXILAVHqXBsCnv6qJuTLt5Iz6UMz3OGCUwXJugiC1ZD2GbqFwdD283E8zHDkoCxm2DdtKwaA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
