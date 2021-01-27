@@ -3723,6 +3723,13 @@ babel-plugin-transform-simplify-comparison-operators@^6.9.4:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-simplify-comparison-operators/-/babel-plugin-transform-simplify-comparison-operators-6.9.4.tgz#f62afe096cab0e1f68a2d753fdf283888471ceb9"
   integrity sha1-9ir+CWyrDh9ootdT/fKDiIRxzrk=
 
+babel-plugin-transform-stitches-display-name@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
+  integrity sha512-2uluT1uvmdiVwBRXILAVHqXBsCnv6qJuTLt5Iz6UMz3OGCUwXJugiC1ZD2GbqFwdD283E8zHDkoCxm2DdtKwaA==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+
 babel-plugin-transform-undefined-to-void@^6.9.4:
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-undefined-to-void/-/babel-plugin-transform-undefined-to-void-6.9.4.tgz#be241ca81404030678b748717322b89d0c8fe280"
