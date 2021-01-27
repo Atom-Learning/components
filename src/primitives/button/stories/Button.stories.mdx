@@ -22,17 +22,17 @@ The `Button` component is a very thin wrapper around an HTML `button` element. I
     <Flex
       css={{
         borderWidth: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '500px',
-        height: '200px'
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        width: '200px',
+        height: '500px'
       }}
     >
-      <Button css={{ width: '150px' }}>Primary</Button>
-      <Button css={{ width: '150px' }} variant={'secondary'}>
+      <Button css={{ mb: '$2' }}>Primary</Button>
+      <Button css={{ mb: '$2' }} variant={'secondary'}>
         Secondary
       </Button>
-      <Button css={{ width: '150px' }} variant={'tertiary'}>
+      <Button css={{ mb: '$2' }} variant={'tertiary'}>
         Tertiary
       </Button>
     </Flex>

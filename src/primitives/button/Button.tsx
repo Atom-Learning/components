@@ -7,20 +7,17 @@ const BaseButton = styled('button', {
   borderRadius: '$1',
   borderWidth: 0,
   padding: '$2 $4',
-  width: '100%',
-  color: 'white',
+  width: 'max-content',
   fontSize: 'md',
-  height: '40px',
+  height: '$2',
+
   // TODO missing disabled states
   variants: {
     variant: {
       primary: {
         backgroundColor: '$primary500',
         color: 'white',
-        ':hover': {
-          backgroundColor: '$primary900'
-        },
-        ':focus': {
+        '&:hover, &:focus': {
           backgroundColor: '$primary900'
         },
         ':active': {
@@ -30,10 +27,7 @@ const BaseButton = styled('button', {
       secondary: {
         backgroundColor: '$secondary500',
         color: 'white',
-        ':hover': {
-          backgroundColor: '$secondary700'
-        },
-        ':focus': {
+        '&:hover, &:focus': {
           backgroundColor: '$secondary700'
         },
         ':active': {
@@ -42,10 +36,8 @@ const BaseButton = styled('button', {
       },
       tertiary: {
         backgroundColor: '$tertiary500',
-        ':hover': {
-          backgroundColor: '$tertiary700'
-        },
-        ':focus': {
+        color: 'white',
+        '&:hover, &:focus': {
           backgroundColor: '$tertiary700'
         },
         ':active': {
