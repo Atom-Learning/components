@@ -1,13 +1,13 @@
 {
-  "name": "@atomlearning/components",
+  "name": "@atom-learning/components",
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "esmodule": "dist/index.module.js",
+  "module": "dist/index.modern.js",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "microbundle --jsx React.createElement --format modern,cjs --strict",
-    "dev": "microbundle watch  --jsx React.createElement",
+    "build": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict",
+    "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
@@ -19,7 +19,7 @@
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "validate:size": "yarn build && size-limit",
     "validate:types": "tsc --noEmit",
-    "start:sandbox": "parcel ./sandbox/index.html  --open"
+    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open"
   },
   "repository": {
     "type": "git",
@@ -53,6 +53,8 @@
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "babel-plugin-transform-stitches-display-name": "^0.0.1",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -78,7 +80,7 @@
   },
   "peerDependencies": {
     "@atom-learning/theme": "0.1.0-beta.0",
-    "react": "^17.0.1"
+    "react": "^16.8.0"
   },
   "dependencies": {
     "@stitches/react": "0.0.3-canary.4"
