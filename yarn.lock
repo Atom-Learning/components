@@ -4,7 +4,7 @@
 
 "@atom-learning/theme@0.1.0-beta.0":
   version "0.1.0-beta.0"
-  resolved "https://registry.atomlearning.technology/@atom-learning%2ftheme/-/theme-0.1.0-beta.0.tgz#38c50d426301f471c32c56c829361536435e04e2"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.0.tgz#38c50d426301f471c32c56c829361536435e04e2"
   integrity sha512-P85237ant+8xfv6WNSBiM4+QlAYOxoRsTHSPtN8gwomPdTYT41/10zyOtGSjLxv/r4CnFzmElQzNmV+779GD+w==
 
 "@babel/code-frame@7.8.3":
@@ -3649,7 +3649,7 @@ babel-plugin-react-docgen@^4.2.1:
 
 babel-plugin-react-remove-properties@^0.3.0:
   version "0.3.0"
-  resolved "https://registry.atomlearning.technology/babel-plugin-react-remove-properties/-/babel-plugin-react-remove-properties-0.3.0.tgz#7b623fb3c424b6efb4edc9b1ae4cc50e7154b87f"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-remove-properties/-/babel-plugin-react-remove-properties-0.3.0.tgz#7b623fb3c424b6efb4edc9b1ae4cc50e7154b87f"
   integrity sha512-vbxegtXGyVcUkCvayLzftU95vuvpYFV85pRpeMpohMHeEY46Qe0VNWfkVVcCbaZ12CXHzDFOj0esumATcW83ng==
 
 babel-plugin-syntax-jsx@^6.18.0:
@@ -3725,7 +3725,7 @@ babel-plugin-transform-simplify-comparison-operators@^6.9.4:
 
 babel-plugin-transform-stitches-display-name@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.atomlearning.technology/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
   integrity sha512-2uluT1uvmdiVwBRXILAVHqXBsCnv6qJuTLt5Iz6UMz3OGCUwXJugiC1ZD2GbqFwdD283E8zHDkoCxm2DdtKwaA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
