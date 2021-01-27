@@ -7,23 +7,16 @@ import {
   css,
   Image,
   InputField,
+  Link,
   Panel,
   PasswordField,
-  styled
+  styled,
+  Text
 } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
 css.global(reset)()
-
-const StyledAnchor = styled('a', {
-  textDecoration: 'none',
-  color: '$primary500',
-  ':visited': { color: '$primary500' },
-  ':hover': { color: '$primary900' },
-  ':active': { color: '$primary900' },
-  cursor: 'pointer'
-})
 
 const StyledButton = styled('button', {
   padding: 'unset',
@@ -87,16 +80,10 @@ const App = () => {
             <PasswordField name="pass" css={{ mb: '$4' }} />
             <LogInButton />
           </form>
-          <p
-            className={css({
-              fontFamily: 'sans',
-              fontSize: 'sm',
-              color: '$tonal500',
-              textAlign: 'center'
-            })}
-          >
-            Don't have an account yet? <StyledAnchor>Sign up!</StyledAnchor>{' '}
-          </p>
+          <Text size="sm" css={{ color: '$tonal500', textAlign: 'center' }}>
+            Don't have an account yet?{' '}
+            <Link href="https://app.atomlearning.co.uk/register">Sign up!</Link>
+          </Text>
         </Panel>
       </Box>
     </Sandbox>
