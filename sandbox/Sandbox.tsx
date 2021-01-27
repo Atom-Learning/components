@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, css } from '../dist'
+import { Box, css, Link } from '../dist'
 
 const Container = (props) => (
   <Box
@@ -32,22 +32,22 @@ const Header = () => (
 
 const Links = () => (
   <Box as="nav">
-    <a
+    <Link
       href="https://stitches.dev"
       className={css({ marginRight: '16px' })}
       target="_blank"
       rel="noreferrer"
     >
       Stitches docs
-    </a>
-    <a
+    </Link>
+    <Link
       className={css({ marginRight: '16px' })}
       href="https://github.com/typescript-cheatsheets/react/blob/main/README.md#basic-cheatsheet-table-of-contents"
       target="_blank"
       rel="noreferrer"
     >
       TypeScript/React cheat sheet
-    </a>
+    </Link>
   </Box>
 )
 
