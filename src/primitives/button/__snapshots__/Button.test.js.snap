@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component renders a button 1`] = `
+._cNVOTj {
+  height: 40px;
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+._eJwsRe {
+  padding-left: var(--space-4);
+}
+
+._kmyMpM {
+  padding-bottom: var(--space-2);
+}
+
+._hCA-dkJ {
+  padding-right: var(--space-4);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
+}
+
+._gWstWh {
+  border-left-width: 0px;
+}
+
+._bhydIR {
+  border-bottom-width: 0px;
+}
+
+._kEHmuC {
+  border-right-width: 0px;
+}
+
+._dZhdB {
+  border-top-width: 0px;
+}
+
+._cmjVcV {
+  border-bottom-right-radius: var(--radii-1);
+}
+
+._cvjZAR {
+  border-top-right-radius: var(--radii-1);
+}
+
+._fVdSKi {
+  border-top-left-radius: var(--radii-1);
+}
+
+._hxITlq {
+  border-bottom-left-radius: var(--radii-1);
+}
+
+._jDiBXD._jDiBXD._jDiBXD._jDiBXD:focus {
+  background-color: var(--colors-primary900);
+}
+
+._jHRuBV._jHRuBV:hover {
+  background-color: var(--colors-primary900);
+}
+
+._htOODa {
+  color: white;
+}
+
+._hPXiuU {
+  background-color: var(--colors-primary500);
+}
+
+._ffzcdL {
+  width: 100px;
+}
+
+<div>
+  <button
+    class="_ffzcdL _hPXiuU _htOODa _jHRuBV _jDiBXD _hxITlq _fVdSKi _cvjZAR _cmjVcV _dZhdB _kEHmuC _bhydIR _gWstWh _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _cNVOTj scid-xnUXS"
+  >
+    BUTTON
+  </button>
+</div>
+`;
