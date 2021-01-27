@@ -57,6 +57,10 @@ exports[`Button component renders a button 1`] = `
   border-bottom-left-radius: var(--radii-1);
 }
 
+._logdPK._logdPK._logdPK:active {
+  background-color: var(--colors-primary500);
+}
+
 ._jDiBXD._jDiBXD._jDiBXD._jDiBXD:focus {
   background-color: var(--colors-primary900);
 }
@@ -79,7 +83,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="_ffzcdL _hPXiuU _htOODa _jHRuBV _jDiBXD _hxITlq _fVdSKi _cvjZAR _cmjVcV _dZhdB _kEHmuC _bhydIR _gWstWh _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _cNVOTj scid-xnUXS"
+    class="_ffzcdL _hPXiuU _htOODa _jHRuBV _jDiBXD _logdPK _hxITlq _fVdSKi _cvjZAR _cmjVcV _dZhdB _kEHmuC _bhydIR _gWstWh _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _cNVOTj scid-iPooji"
   >
     BUTTON
   </button>

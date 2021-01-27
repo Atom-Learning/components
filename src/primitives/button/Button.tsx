@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { styled } from '../../stitches'
 
-const StyledButton = {
+const BaseButton = styled('button', {
   borderRadius: '$1',
   borderWidth: 0,
   padding: '$2 $4',
@@ -22,6 +22,9 @@ const StyledButton = {
         },
         ':focus': {
           backgroundColor: '$primary900'
+        },
+        ':active': {
+          backgroundColor: '$primary500'
         }
       },
       secondary: {
@@ -32,6 +35,9 @@ const StyledButton = {
         },
         ':focus': {
           backgroundColor: '$secondary700'
+        },
+        ':active': {
+          backgroundColor: '$secondary500'
         }
       },
       tertiary: {
@@ -41,17 +47,18 @@ const StyledButton = {
         },
         ':focus': {
           backgroundColor: '$tertiary700'
+        },
+        ':active': {
+          backgroundColor: '$tertiary500'
         }
       }
     }
   }
-}
-
-const BaseButton = styled('button', StyledButton)
+})
 
 type ButtonProps = StitchesProps<typeof BaseButton>
 
-export const Button = ({ ...props }: ButtonProps): React.ReactElement => {
+export const Button = (props: ButtonProps): React.ReactElement => {
   return <BaseButton {...props} />
 }
 
