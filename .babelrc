@@ -1,5 +1,13 @@
 {
   "env": {
+    "development": {
+      "plugins": ["transform-stitches-display-name"]
+    },
+    "production": {
+      "plugins": [
+        ["react-remove-properties", { "properties": ["data-testid"] }]
+      ]
+    },
     "test": {
       "presets": ["@babel/preset-react", "@babel/preset-typescript"],
       "plugins": ["@babel/plugin-transform-modules-commonjs"]

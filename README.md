@@ -1,5 +1,7 @@
 # Atom Learning Component library
 
+![badge](https://github.com/Atom-Learning/components/workflows/CI/badge.svg)
+
 This package is one part of the Atom Learning design system
 
 ## Versioning
