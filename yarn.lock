@@ -4,7 +4,7 @@
 
 "@atom-learning/theme@0.1.0-beta.0":
   version "0.1.0-beta.0"
-  resolved "https://registry.atomlearning.technology/@atom-learning%2ftheme/-/theme-0.1.0-beta.0.tgz#38c50d426301f471c32c56c829361536435e04e2"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.0.tgz#38c50d426301f471c32c56c829361536435e04e2"
   integrity sha512-P85237ant+8xfv6WNSBiM4+QlAYOxoRsTHSPtN8gwomPdTYT41/10zyOtGSjLxv/r4CnFzmElQzNmV+779GD+w==
 
 "@babel/code-frame@7.8.3":
@@ -3638,11 +3638,6 @@ babel-plugin-named-asset-import@^0.3.1:
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.7.tgz#156cd55d3f1228a5765774340937afc8398067dd"
   integrity sha512-squySRkf+6JGnvjoUtDEjSREJEBirnXi9NqP6rjSYsylxQxqBTz+pkmf395i9E2zsvmYUaI40BHo6SqZUdydlw==
 
-babel-plugin-pure-calls-annotation@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-pure-calls-annotation/-/babel-plugin-pure-calls-annotation-0.3.1.tgz#42a6d7ec454888b631775243a324e77c860f7123"
-  integrity sha512-Fl/4vPEEsfgpGVWX3i7ZVP/aDVMkrXjoWyfGocgYzoqsryfnjZRU5iNd33f9u03NGAFCz4PzOkQf6Iiy4MdtUA==
-
 babel-plugin-react-docgen@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-docgen/-/babel-plugin-react-docgen-4.2.1.tgz#7cc8e2f94e8dc057a06e953162f0810e4e72257b"
@@ -3722,13 +3717,6 @@ babel-plugin-transform-simplify-comparison-operators@^6.9.4:
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-simplify-comparison-operators/-/babel-plugin-transform-simplify-comparison-operators-6.9.4.tgz#f62afe096cab0e1f68a2d753fdf283888471ceb9"
   integrity sha1-9ir+CWyrDh9ootdT/fKDiIRxzrk=
-
-babel-plugin-transform-stitches-display-name@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-stitches-display-name/-/babel-plugin-transform-stitches-display-name-0.0.1.tgz#df53cd9ee74ff169dcce76d6c2d9185b6fe334cb"
-  integrity sha512-2uluT1uvmdiVwBRXILAVHqXBsCnv6qJuTLt5Iz6UMz3OGCUwXJugiC1ZD2GbqFwdD283E8zHDkoCxm2DdtKwaA==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.10.4"
 
 babel-plugin-transform-undefined-to-void@^6.9.4:
   version "6.9.4"
