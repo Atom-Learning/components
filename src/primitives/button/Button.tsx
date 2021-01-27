@@ -5,12 +5,14 @@ import { styled } from '../../stitches'
 
 const BaseButton = styled('button', {
   borderRadius: '$1',
-  borderWidth: 0,
+  border: 'none',
   padding: '$2 $4',
   width: 'max-content',
   fontSize: 'md',
   height: '$2',
-
+  background: 'unset',
+  cursor: 'pointer',
+  transition: 'all 125ms ease-out',
   // TODO missing disabled states
   variants: {
     variant: {

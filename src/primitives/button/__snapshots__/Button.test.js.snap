@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component renders a button 1`] = `
+._kKqLFw {
+  transition-timing-function: ease-out;
+}
+
+._efExVU {
+  transition-duration: 125ms;
+}
+
+._eaYTuA {
+  transition-property: all;
+}
+
+._cKSYdt {
+  cursor: pointer;
+}
+
 ._ddSdla {
   height: var(--sizes-2);
 }
@@ -25,20 +41,20 @@ exports[`Button component renders a button 1`] = `
   padding-top: var(--space-2);
 }
 
-._gWstWh {
-  border-left-width: 0px;
+._foQeyu {
+  border-left-style: none;
 }
 
-._bhydIR {
-  border-bottom-width: 0px;
+._lmVhDS {
+  border-bottom-style: none;
 }
 
-._kEHmuC {
-  border-right-width: 0px;
+._jOpMN {
+  border-right-style: none;
 }
 
-._dZhdB {
-  border-top-width: 0px;
+._eEUDVO {
+  border-top-style: none;
 }
 
 ._cmjVcV {
@@ -80,7 +96,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="_ffzcdL _hPXiuU _htOODa _hknsba _logdPK _hxITlq _fVdSKi _cvjZAR _cmjVcV _dZhdB _kEHmuC _bhydIR _gWstWh _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _ddSdla scid-bIrUtS"
+    class="_ffzcdL _hPXiuU _htOODa _hknsba _logdPK _hxITlq _fVdSKi _cvjZAR _cmjVcV _eEUDVO _jOpMN _lmVhDS _foQeyu _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _ddSdla _cKSYdt _eaYTuA _efExVU _kKqLFw scid-cfEVaJ"
   >
     BUTTON
   </button>

@@ -4,56 +4,19 @@ import { reset } from 'stitches-reset'
 
 import {
   Box,
+  Button,
   css,
   Image,
   InputField,
   Link,
   Panel,
   PasswordField,
-  styled,
   Text
 } from '../dist'
 import logo from './atom-logo.png'
 import { Sandbox } from './Sandbox'
 
 css.global(reset)()
-
-const StyledButton = styled('button', {
-  padding: 'unset',
-  border: 'none',
-  background: 'unset',
-  cursor: 'pointer',
-  transition: 'all 125ms ease-out'
-})
-
-const PrimaryButton = ({ css, ...rest }) => (
-  <StyledButton
-    css={{
-      backgroundColor: '$primary',
-      ':hover': {
-        backgroundColor: '$primary900'
-      },
-      ...css
-    }}
-    {...rest}
-  />
-)
-
-const LogInButton = () => (
-  <PrimaryButton
-    css={{
-      borderRadius: '$1',
-      padding: '$2 $4',
-      backgroundColor: '$primary500',
-      width: '100%',
-      color: 'white',
-      fontSize: 'md',
-      height: '40px'
-    }}
-  >
-    Log in
-  </PrimaryButton>
-)
 
 const App = () => {
   return (
@@ -66,7 +29,8 @@ const App = () => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          backgroundColor: 'ebf5ff'
+          backgroundColor: 'ebf5ff',
+          padding: '$2'
         }}
       >
         <Image src={logo} alt="" css={{ width: '400px', mb: '$5' }} />
@@ -78,7 +42,7 @@ const App = () => {
               css={{ mb: '$3' }}
             />
             <PasswordField name="pass" css={{ mb: '$4' }} />
-            <LogInButton />
+            <Button css={{ width: '100%' }}>Log in</Button>
           </form>
           <Text size="sm" css={{ color: '$tonal500', textAlign: 'center' }}>
             Don't have an account yet?{' '}
