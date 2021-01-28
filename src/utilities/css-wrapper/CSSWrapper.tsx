@@ -17,5 +17,5 @@ export const CSSWrapper = ({
       {children}
     </Box>
   ) : (
-    <> children </>
+    <>{children}</> // eslint-disable-line
   )
