@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component renders a button 1`] = `
+._hdrfYX[disabled] {
+  cursor: default;
+}
+
+._gRExQX[disabled] {
+  opacity: 0.35;
+}
+
+._bIKPcM[disabled] {
+  color: var(--colors-tonal400);
+}
+
+._fGOzpI[disabled] {
+  background-color: var(--colors-tonal700);
+}
+
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -11,10 +27,6 @@ exports[`Button component renders a button 1`] = `
 
 ._eaYTuA {
   transition-property: all;
-}
-
-._cKSYdt {
-  cursor: pointer;
 }
 
 ._ddSdla {
@@ -41,22 +53,6 @@ exports[`Button component renders a button 1`] = `
   padding-top: var(--space-2);
 }
 
-._foQeyu {
-  border-left-style: none;
-}
-
-._lmVhDS {
-  border-bottom-style: none;
-}
-
-._jOpMN {
-  border-right-style: none;
-}
-
-._eEUDVO {
-  border-top-style: none;
-}
-
 ._cmjVcV {
   border-bottom-right-radius: var(--radii-1);
 }
@@ -73,12 +69,52 @@ exports[`Button component renders a button 1`] = `
   border-bottom-left-radius: var(--radii-1);
 }
 
+._foQeyu {
+  border-left-style: none;
+}
+
+._lmVhDS {
+  border-bottom-style: none;
+}
+
+._jOpMN {
+  border-right-style: none;
+}
+
+._eEUDVO {
+  border-top-style: none;
+}
+
+._ftwEqf {
+  white-space: nowrap;
+}
+
+._kaGCev {
+  text-decoration-line: none;
+}
+
+._dtUAqZ {
+  align-items: center;
+}
+
+._jBdvvl {
+  justify-content: center;
+}
+
+._iqmwNh {
+  display: flex;
+}
+
+._cKSYdt {
+  cursor: pointer;
+}
+
 ._logdPK._logdPK._logdPK:active {
   background-color: var(--colors-primary500);
 }
 
-._hknsba._hknsba:hover,
-._hknsba:focus {
+._iRIupi._iRIupi:not([disabled]):hover,
+._iRIupi:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
@@ -96,7 +132,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="_ffzcdL _hPXiuU _htOODa _hknsba _logdPK _hxITlq _fVdSKi _cvjZAR _cmjVcV _eEUDVO _jOpMN _lmVhDS _foQeyu _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _ddSdla _cKSYdt _eaYTuA _efExVU _kKqLFw scid-cfEVaJ"
+    class="_ffzcdL _hPXiuU _htOODa _iRIupi _logdPK _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _kaGCev _ftwEqf _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _dIHnma _ddSdla _eaYTuA _efExVU _kKqLFw _fGOzpI _bIKPcM _gRExQX _hdrfYX scid-ksYDHu"
   >
     BUTTON
   </button>
