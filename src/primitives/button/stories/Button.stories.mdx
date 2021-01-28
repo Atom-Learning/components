@@ -25,17 +25,14 @@ The `Button` component is a very thin wrapper around an HTML `button` element. I
 
 ## Variants
 
-There are 3 basic branded variants for the `Button` component.
+There are 3 basic branded variants for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`
 
-- `Primary` which is the default variant
-- `Secondary`
-- `Tertiary`
+Each variant has an `disabled` variant, by setting the `disabled` property.
 
 <Preview>
   <Story name="Basic">
     <Flex
       css={{
-        borderWidth: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '500px'
@@ -52,6 +49,30 @@ There are 3 basic branded variants for the `Button` component.
   </Story>
 </Preview>
 
+### Disabled state
+
+<Preview>
+  <Story name="Basic/Disabled">
+    <Flex
+      css={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
+      }}
+    >
+      <Button css={{ mb: '$2' }} disabled>
+        Primary
+      </Button>
+      <Button css={{ mb: '$2' }} disabled variant={'secondary'}>
+        Secondary
+      </Button>
+      <Button css={{ mb: '$2' }} disabled variant={'tertiary'}>
+        Tertiary
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
+
 ## Outlines
 
 Each variant has an `outlined` variant, by setting the `appearance` property
@@ -60,7 +81,6 @@ Each variant has an `outlined` variant, by setting the `appearance` property
   <Story name="Outline">
     <Flex
       css={{
-        borderWidth: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '500px'
@@ -73,6 +93,40 @@ Each variant has an `outlined` variant, by setting the `appearance` property
         Secondary
       </Button>
       <Button css={{ mb: '$2' }} variant={'tertiary'} appearance="outline">
+        Tertiary
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
+
+### Outlines disabled state
+
+<Preview>
+  <Story name="Outline/disabled">
+    <Flex
+      css={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
+      }}
+    >
+      <Button css={{ mb: '$2' }} disabled appearance="outline">
+        Primary
+      </Button>
+      <Button
+        css={{ mb: '$2' }}
+        disabled
+        variant={'secondary'}
+        appearance="outline"
+      >
+        Secondary
+      </Button>
+      <Button
+        css={{ mb: '$2' }}
+        disabled
+        variant={'tertiary'}
+        appearance="outline"
+      >
         Tertiary
       </Button>
     </Flex>

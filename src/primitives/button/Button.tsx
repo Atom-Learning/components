@@ -4,22 +4,32 @@ import * as React from 'react'
 import { styled } from '../../stitches'
 
 const BaseButton = styled('button', {
-  borderRadius: '$1',
+  cursor: 'pointer',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textDecoration: 'none',
+  whiteSpace: 'nowrap',
   border: 'none',
+  borderRadius: '$1',
   padding: '$2 $4',
   width: 'max-content',
   fontSize: 'md',
   height: '$2',
   background: 'unset',
-  cursor: 'pointer',
   transition: 'all 125ms ease-out',
-  // TODO missing disabled states
+  '&[disabled]': {
+    backgroundColor: '$tonal700',
+    color: '$tonal400',
+    opacity: 0.35,
+    cursor: 'default'
+  },
   variants: {
     variant: {
       primary: {
         backgroundColor: '$primary500',
         color: 'white',
-        '&:hover, &:focus': {
+        '&:not([disabled]):hover, &:not([disabled]):focus': {
           backgroundColor: '$primary900'
         },
         ':active': {
@@ -29,7 +39,7 @@ const BaseButton = styled('button', {
       secondary: {
         backgroundColor: '$secondary500',
         color: 'white',
-        '&:hover, &:focus': {
+        '&:not([disabled]):hover, &:not([disabled]):focus': {
           backgroundColor: '$secondary700'
         },
         ':active': {
@@ -39,7 +49,7 @@ const BaseButton = styled('button', {
       tertiary: {
         backgroundColor: '$tertiary500',
         color: 'white',
-        '&:hover, &:focus': {
+        '&:not([disabled]):hover, &:not([disabled]):focus': {
           backgroundColor: '$tertiary700'
         },
         ':active': {
@@ -51,9 +61,11 @@ const BaseButton = styled('button', {
       outline: {
         boxShadow: 'inset 0 0 0 2px',
         backgroundColor: 'white',
-        '&:hover, &:focus': {
+        '&:not([disabled]):hover, &:not([disabled):focus': {
+          textDecoration: 'none',
           backgroundColor: 'white'
-        }
+        },
+        '&[disabled]': { backgroundColor: 'white' }
       }
     }
   }
@@ -67,12 +79,15 @@ BaseButton.compoundVariant(
   {
     color: '$primary500',
     backgroundColor: 'white',
-    '&:hover, &:focus': {
+    '&:not([disabled]):hover, &:not([disabled]):focus': {
       color: '$primary900',
       backgroundColor: 'white'
     },
     ':active': {
       color: '$primary500'
+    },
+    '&[disabled]': {
+      color: '$primary900'
     }
   }
 )
@@ -89,6 +104,9 @@ BaseButton.compoundVariant(
     },
     ':active': {
       color: '$secodary500'
+    },
+    '&[disabled]': {
+      color: '$secondary700'
     }
   }
 )
@@ -105,6 +123,9 @@ BaseButton.compoundVariant(
     },
     ':active': {
       color: '$tertiary500'
+    },
+    '&[disabled]': {
+      color: '$tertiary700'
     }
   }
 )
