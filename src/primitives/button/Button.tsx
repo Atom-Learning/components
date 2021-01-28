@@ -46,9 +46,68 @@ const BaseButton = styled('button', {
           backgroundColor: '$tertiary500'
         }
       }
+    },
+    appearance: {
+      outline: {
+        boxShadow: 'inset 0 0 0 2px',
+        backgroundColor: 'white',
+        '&:hover, &:focus': {
+          backgroundColor: 'white'
+        }
+      }
     }
   }
 })
+
+BaseButton.compoundVariant(
+  {
+    variant: 'primary',
+    appearance: 'outline'
+  },
+  {
+    color: '$primary500',
+    backgroundColor: 'white',
+    '&:hover, &:focus': {
+      color: '$primary900',
+      backgroundColor: 'white'
+    },
+    ':active': {
+      color: '$primary500'
+    }
+  }
+)
+
+BaseButton.compoundVariant(
+  {
+    variant: 'secondary',
+    appearance: 'outline'
+  },
+  {
+    color: '$secondary500',
+    '&:hover, &:focus': {
+      color: '$secondary700'
+    },
+    ':active': {
+      color: '$secodary500'
+    }
+  }
+)
+
+BaseButton.compoundVariant(
+  {
+    variant: 'tertiary',
+    appearance: 'outline'
+  },
+  {
+    color: '$tertiary500',
+    '&:hover, &:focus': {
+      color: '$tertiary700'
+    },
+    ':active': {
+      color: '$tertiary500'
+    }
+  }
+)
 
 type ButtonProps = StitchesProps<typeof BaseButton>
 

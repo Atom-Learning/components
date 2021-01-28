@@ -1,4 +1,10 @@
-import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+import {
+  Canvas,
+  Meta,
+  Story,
+  ArgsTable,
+  Preview
+} from '@storybook/addon-docs/blocks'
 
 import { Button } from '../'
 import { Flex } from '../../'
@@ -17,15 +23,22 @@ import { disableStitchesProps } from '../../../utilities/storybook'
 
 The `Button` component is a very thin wrapper around an HTML `button` element. It adds default styling and the `css` prop.
 
-<Canvas>
+## Variants
+
+There are 3 basic branded variants for the `Button` component.
+
+- `Primary` which is the default variant
+- `Secondary`
+- `Tertiary`
+
+<Preview>
   <Story name="Basic">
     <Flex
       css={{
         borderWidth: 1,
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        width: '200px',
-        height: '500px'
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
       }}
     >
       <Button css={{ mb: '$2' }}>Primary</Button>
@@ -37,7 +50,34 @@ The `Button` component is a very thin wrapper around an HTML `button` element. I
       </Button>
     </Flex>
   </Story>
-</Canvas>
+</Preview>
+
+## Outlines
+
+Each variant has an `outlined` variant, by setting the `appearance` property
+
+<Preview>
+  <Story name="Outline">
+    <Flex
+      css={{
+        borderWidth: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
+      }}
+    >
+      <Button css={{ mb: '$2' }} appearance="outline">
+        Primary
+      </Button>
+      <Button css={{ mb: '$2' }} variant={'secondary'} appearance="outline">
+        Secondary
+      </Button>
+      <Button css={{ mb: '$2' }} variant={'tertiary'} appearance="outline">
+        Tertiary
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
 
 ## Props
 
