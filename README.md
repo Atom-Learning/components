@@ -4,6 +4,56 @@
 
 This package is one part of the Atom Learning design system
 
+## Getting started
+
+After cloning the repository please run the following commands:
+
+```
+yarn
+yarn build
+yarn dev
+```
+
+**Running storybook:**
+To use the storybook functionality please run the following commands:
+
+```
+yarn build-storybook
+yarn storybook
+```
+
+**Testing:**
+Testing is implemented using `jest` and the `React testing library`. To run the tests please use one of the following commands:
+
+```
+yarn test
+yarn test:watch
+```
+
+**Static Analysis:**
+Static is performed using `Eslint` and `Prettier` for formating:
+
+```
+yarn format
+yarn lint
+```
+
+**Using the Sandbox:**
+
+```
+yarn start:sandbox
+```
+
+**Validation:**
+
+```
+yarn validate
+yarn validate:dependencies
+yarn validate:linting
+yarn validate:size
+yarn validate:types
+```
+
 ## Versioning
 
 The project follows the SemVer standard [Semantic Versioning](https://semver.org/spec/v2.0.0.html) to make using the library easy. SemVer uses the `MAJOR`.`MINOR`.`PATCH` notation to identify changes with `MAJOR` representing breaking changes that are not backwards compatible, `MINOR` representing new features / non-breaking additions and `PATCH` representing fixes.
