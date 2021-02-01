@@ -1,3 +1,3 @@
-import { styled } from '../../stitches'
+import { styled } from '~/stitches'
 
 export const Grid = styled('div', { display: 'grid' })
