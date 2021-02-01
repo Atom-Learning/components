@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '../../stitches'
+import { StitchesProps, styled } from '~/stitches'
 
 const StyledSelect = styled('select', {
   backgroundColor: 'papayawhip',

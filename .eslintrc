@@ -7,7 +7,8 @@
       "impliedStrict": true
     },
     "ecmaVersion": 2020, // Allows for the parsing of modern ECMAScript features
-    "sourceType": "module" // Allows for the use of imports
+    "sourceType": "module", // Allows for the use of imports
+    "tsconfigRootDir": "./"
   },
   "env": {
     "es6": true,
@@ -22,7 +23,8 @@
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
+      },
+      "typescript": {}
     }
   },
   "extends": [
@@ -35,7 +37,12 @@
     "prettier/@typescript-eslint",
     "prettier"
   ],
-  "plugins": ["simple-import-sort", "react-hooks"],
+  "plugins": [
+    "simple-import-sort",
+    "react-hooks",
+    "@typescript-eslint",
+    "import"
+  ],
   "rules": {
     "no-prototype-builtins": "off",
     "no-unneeded-ternary": ["warn", { "defaultAssignment": false }],

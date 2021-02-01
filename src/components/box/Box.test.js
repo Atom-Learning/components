@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import { Box } from '.'
+import { Box } from './'
 
 describe(`Box component`, () => {
   it('renders', async () => {
