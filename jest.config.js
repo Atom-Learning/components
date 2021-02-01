@@ -6,6 +6,6 @@ module.exports = {
   testPathIgnorePatterns: ['/node_modules/'],
   setupFilesAfterEnv: ['./setupFiles.ts'],
   moduleNameMapper: {
-    '~/(.*)': '<rootDir>/src/$1'
+    '~/(.*)': '<rootDir>/src/$1' // matches the path alias in tsconfig.json
   }
 }
