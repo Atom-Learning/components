@@ -4,6 +4,8 @@
 
 This package is one part of the Atom Learning design system
 
+---
+
 ## Versioning
 
 The project follows the SemVer standard [Semantic Versioning](https://semver.org/spec/v2.0.0.html) to make using the library easy. SemVer uses the `MAJOR`.`MINOR`.`PATCH` notation to identify changes with `MAJOR` representing breaking changes that are not backwards compatible, `MINOR` representing new features / non-breaking additions and `PATCH` representing fixes.
@@ -35,6 +37,8 @@ _Note:_ Once a branch gets merged into `main`, it is automatically published, th
   - `@semantic-release/npm` - publishes version to `npm`
   - `@semantic-release/github` - publishes version to `GitHub Releases`
 - `husky` - precommit hook to prevent incomplete commit messages
+
+---
 
 ## Accessibility
 
