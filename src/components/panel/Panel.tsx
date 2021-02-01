@@ -5,10 +5,10 @@ import { Box } from '../../primitives'
 import { styled } from '../../stitches'
 
 const BasePanel = styled(Box, {
-  backgroundColor: 'white',
+  backgroundColor: '$white',
   padding: '$5',
   boxShadow: '$2',
-  borderRadius: '$4'
+  borderRadius: '$2'
 })
 
 export const Panel = ({

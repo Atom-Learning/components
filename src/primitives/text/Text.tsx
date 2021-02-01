@@ -1,26 +1,26 @@
 import * as React from 'react'
 
-import { CSSBlob,styled } from '../../stitches'
+import { CSSBlob, StitchesProps, styled } from '../../stitches'
 
 const BaseText = styled('p', {
-  fontFamily: 'sans',
+  fontFamily: '$sans',
   color: '$tonal900',
   fontWeight: 400,
   maxWidth: '100ch',
   variants: {
     size: {
       sm: {
-        fontSize: 'sm',
+        fontSize: '$sm',
         letterSpacing: '0.04em',
         lineHeight: 1.6
       },
       md: {
-        fontSize: 'md',
+        fontSize: '$md',
         letterSpacing: '0.02em',
         lineHeight: 1.4
       },
       lg: {
-        fontSize: 'lg',
+        fontSize: '$lg',
         letterSpacing: '0.02em',
         lineHeight: 1.4
       }
@@ -31,7 +31,8 @@ const BaseText = styled('p', {
 type TextProps = {
   css?: CSSBlob
   size: 'sm' | 'md' | 'lg'
-}
+  children: React.ReactNode
+} & StitchesProps<typeof BaseText>
 
 export const Text = (props: TextProps): React.ReactElement => {
   return <BaseText {...props} />

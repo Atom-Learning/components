@@ -1,5 +1,5 @@
 import { styled } from '../../stitches'
 
-export const Box = styled('div', {
+export const Form = styled('div', {
   boxSizing: 'border-box'
 })

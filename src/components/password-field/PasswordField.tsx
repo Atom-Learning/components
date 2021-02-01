@@ -3,16 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as React from 'react'
 import { useState } from 'react'
 
-import { Flex, Input, Label, Link } from '../../primitives'
-import { css as generateCss, CSSBlob, styled } from '../../stitches'
-import { CSSWrapper } from '../../utilities/css-wrapper'
+import { Box, Flex, Input, Label, Link, Tooltip } from '../../primitives'
+import { CSSBlob } from '../../stitches'
 
 type PasswordFieldProps = {
   css?: CSSBlob
-  name: 'string'
+  name: string
 }
-
-const StyledIcon = styled(FontAwesomeIcon, {})
 
 export const PasswordField = ({
   css,
@@ -23,7 +20,7 @@ export const PasswordField = ({
     setIsPasswordVisible((currentState) => !currentState)
 
   return (
-    <CSSWrapper css={css}>
+    <Box css={{ position: 'relative', ...css }}>
       <Flex
         css={{
           justifyContent: 'space-between',
@@ -34,7 +31,7 @@ export const PasswordField = ({
         <Label htmlFor={name}>Password</Label>
         <Link
           href="https://app.atomlearning.co.uk/forgotten"
-          css={{ fontSize: 'sm' }}
+          css={{ fontSize: '$sm' }}
         >
           Forgot your password?
         </Link>
@@ -46,24 +43,30 @@ export const PasswordField = ({
         autoComplete="current-password"
         css={{ mb: '$1' }}
       />
-      <button
-        onClick={togglePasswordVisibility}
-        type="button"
-        className={generateCss({
-          border: 'none',
-          background: 'unset',
-          cursor: 'pointer',
-          padding: 'unset',
-          fontFamily: 'sans',
-          color: '$secondary500'
-        })}
+      <Box
+        css={{
+          position: 'absolute',
+          bottom: 8,
+          right: 8
+        }}
       >
-        <StyledIcon
-          icon={isPasswordVisible ? faEyeSlash : faEye}
-          css={generateCss({ mr: '$2' })}
-        />
-        {`${isPasswordVisible ? 'Hide' : 'Show'} password`}{' '}
-      </button>
-    </CSSWrapper>
+        <Tooltip
+          text={isPasswordVisible ? 'Hide password' : 'Show password'}
+          onClick={togglePasswordVisibility}
+          css={{
+            background: 'unset',
+            border: 0,
+            height: 32,
+            width: 32,
+            color: '$tonal500'
+          }}
+        >
+          <FontAwesomeIcon
+            size="lg"
+            icon={!isPasswordVisible ? faEyeSlash : faEye}
+          />
+        </Tooltip>
+      </Box>
+    </Box>
   )
 }

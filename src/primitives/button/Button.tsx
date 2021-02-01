@@ -4,11 +4,12 @@ import * as React from 'react'
 import { styled } from '../../stitches'
 
 const BaseButton = styled('button', {
-  borderRadius: '$1',
+  borderRadius: '$0',
   border: 'none',
   padding: '$2 $4',
   width: 'max-content',
-  fontSize: 'md',
+  fontFamily: '$sans',
+  fontSize: '$md',
   height: '$2',
   background: 'unset',
   cursor: 'pointer',

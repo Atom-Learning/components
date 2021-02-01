@@ -1,6 +1,6 @@
 export * from '@stitches/react'
 
-import { tokens } from '@atom-learning/theme'
+import tokens from '@atom-learning/theme'
 import { createStyled } from '@stitches/react'
 
 type CSSValue = number | string

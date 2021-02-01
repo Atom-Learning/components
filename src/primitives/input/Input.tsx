@@ -8,14 +8,16 @@ const BaseInput = styled('input', {
   p: '$3',
   appearance: 'none',
   width: '100%',
-  height: '50px',
-  borderRadius: '$1',
+  height: '$2',
+  borderRadius: '$0',
+  bg: '$white',
   border: '1px solid $tonal500',
   boxShadow: 'none', // necessary to remove default iOS default styling
-  fontSize: 'md', // necessary to prevent iOS zooming on focus
-  fontFamily: 'sans',
+  fontSize: '$md', // necessary to prevent iOS zooming on focus
+  fontFamily: '$sans',
+  fontWeight: 400,
   color: '$tonal900',
-  transition: 'all 75ms ease-out',
+  transition: 'boxShadow 75ms ease-out, borderColor 75ms ease-out',
   boxSizing: 'border-box',
   ':focus': {
     boxShadow: 'inset 0 0 0 1px $primary900',
