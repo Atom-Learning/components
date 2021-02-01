@@ -17,6 +17,36 @@ src/
 	    index.ts
 ```
 
+## Component API
+
+### Prop validation
+
+All components should have fully typed props.
+
+### `css` prop
+
+All components should accept a `css` prop. Single-child components are styled directly, while components composed of multiple components/elements use the `css` prop only for styles that affect the whole component/its relationship to other components on the page:
+
+- If the component renders two or more sibling elements/components, wrap them in a `CSSWrapper` and pass the `css` prop to that.
+- Otherwise, pass the `css` prop value directly to the direct child.
+
+```tsx
+const SimpleComponent = ({ css }) => (
+  <Box css={css}> This box gets styled directly </Box>
+)
+
+const ComposedComponent = ({ css }) => (
+  <CSSWrapper css={css}>
+    <Box css={{ mb: '$3' }}>
+      The styling of these boxes is ComposedComponent's responsibility
+    </Box>
+    <Box css={{ color: '$primary500' }}>
+      If we want to combine boxes differently, we can compose a new component
+    </Box>
+  </CSSWrapper>
+)
+```
+
 ## Documentation
 
 Each component should have documentation which covers the following:
