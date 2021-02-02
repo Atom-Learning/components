@@ -1,20 +1,20 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
-import React from 'react'
+import * as React from 'react'
 
-import { Grid } from '.'
+import { Box } from './'
 
-describe(`Grid component`, () => {
+describe(`Box component`, () => {
   it('renders', async () => {
     const { container } = render(
-      <Grid css={{ m: 'auto', height: 100, width: 100 }}>GRID</Grid>
+      <Box css={{ m: 'auto', height: 100, width: 100 }}>BOX</Box>
     )
-    await screen.findByText('GRID')
+    await screen.findByText('BOX')
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    render(<Grid />, document.body)
+    render(<Box />)
 
     const results = await axe(document.body)
     expect(results).toHaveNoViolations()

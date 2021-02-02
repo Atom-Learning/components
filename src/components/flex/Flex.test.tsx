@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
-import React from 'react'
+import * as React from 'react'
 
 import { Flex } from '.'
 
@@ -14,7 +14,7 @@ describe(`Flex component`, () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    render(<Flex />, document.body)
+    render(<Flex />)
 
     const results = await axe(document.body)
     expect(results).toHaveNoViolations()

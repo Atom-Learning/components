@@ -15,5 +15,5 @@
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
     }
   },
-  "include": ["./src/", "./setupFiles.ts"]
+  "include": ["./src/", "./jest-setup.ts"]
 }
