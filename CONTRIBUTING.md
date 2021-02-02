@@ -11,7 +11,7 @@ src/
   components/
 	  component-name/
 	    ComponentName.tsx
-	    ComponentName.test.ts
+	    ComponentName.test.tsx
 	    docs/
 	      ComponentName.docs.mdx
 	    index.ts
