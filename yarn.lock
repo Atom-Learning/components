@@ -2335,6 +2335,20 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
+"@testing-library/jest-dom@^5.11.9":
+  version "5.11.9"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.11.9.tgz#e6b3cd687021f89f261bd53cbe367041fbd3e975"
+  integrity sha512-Mn2gnA9d1wStlAIT2NU8J15LNob0YFBVjs2aEQ3j8rsfRQo+lAs7/ui1i2TGaJjapLmuNPLTsrm+nPjmZDwpcQ==
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+    "@types/testing-library__jest-dom" "^5.9.1"
+    aria-query "^4.2.2"
+    chalk "^3.0.0"
+    css "^3.0.0"
+    css.escape "^1.5.1"
+    lodash "^4.17.15"
+    redent "^3.0.0"
+
 "@testing-library/react@^11.2.3":
   version "11.2.3"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.2.3.tgz#9971ede1c8465a231d7982eeca3c39fc362d5443"
@@ -2456,6 +2470,22 @@
   integrity sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA==
   dependencies:
     "@types/istanbul-lib-report" "*"
+
+"@types/jest-axe@^3.5.1":
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/@types/jest-axe/-/jest-axe-3.5.1.tgz#122c3864e361c8d699e60814a6a7f6851101d263"
+  integrity sha512-yelGgELc6iJEPShJ3/XEu6uUr5rCGi/Md0QzMuoo53y0WpR2lyFM3mjdpo8Q+PPd3onHOpIw6BBzEAIU65ZFSA==
+  dependencies:
+    "@types/jest" "*"
+    axe-core "^3.5.5"
+
+"@types/jest@*", "@types/jest@^26.0.20":
+  version "26.0.20"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.20.tgz#cd2f2702ecf69e86b586e1f5223a60e454056307"
+  integrity sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
+  dependencies:
+    jest-diff "^26.0.0"
+    pretty-format "^26.0.0"
 
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
@@ -2614,6 +2644,13 @@
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@types/tapable/-/tapable-1.0.6.tgz#a9ca4b70a18b270ccb2bc0aaafefd1d486b7ea74"
   integrity sha512-W+bw9ds02rAQaMvaLYxAbJ6cvguW/iJXNT6lTssS1ps6QdrMKttqEAMEG/b5CR8TZl3/L7/lH0ZV5nNR1LXikA==
+
+"@types/testing-library__jest-dom@^5.9.1":
+  version "5.9.5"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__jest-dom/-/testing-library__jest-dom-5.9.5.tgz#5bf25c91ad2d7b38f264b12275e5c92a66d849b0"
+  integrity sha512-ggn3ws+yRbOHog9GxnXiEZ/35Mow6YtPZpd7Z5mKDeZS/o7zx3yAle0ov/wjhVB5QT4N2Dt+GNoGCdqkBGCajQ==
+  dependencies:
+    "@types/jest" "*"
 
 "@types/uglify-js@*":
   version "3.11.1"
@@ -3384,6 +3421,11 @@ aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
+
+axe-core@^3.5.5:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
+  integrity sha512-5P0QZ6J5xGikH780pghEdbEKijCTrruK9KxtPZCFWUpef0f6GipO+xEZ5GKCb020mmqgbiNO6TcA55CriL784Q==
 
 axe-core@^4.0.1, axe-core@^4.0.2:
   version "4.1.1"
@@ -5132,6 +5174,11 @@ css-what@^3.2.1:
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
   integrity sha512-ACUm3L0/jiZTqfzRM3Hi9Q8eZqd6IK37mMWPLz9PJxkLWllYeRf+EHUSHYEtFop2Eqytaq1FizFVh7XfBnXCDQ==
+
+css.escape@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/css.escape/-/css.escape-1.5.1.tgz#42e27d4fa04ae32f931a4b4d4191fa9cddee97cb"
+  integrity sha1-QuJ9T6BK4y+TGktNQZH6nN3ul8s=
 
 css@^3.0.0:
   version "3.0.0"
@@ -8430,7 +8477,7 @@ jest-config@^26.6.3:
     micromatch "^4.0.2"
     pretty-format "^26.6.2"
 
-jest-diff@^26.6.2:
+jest-diff@^26.0.0, jest-diff@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
   integrity sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA==
@@ -11335,7 +11382,7 @@ pretty-error@^2.1.1:
     lodash "^4.17.20"
     renderkid "^2.0.4"
 
-pretty-format@^26.6.2:
+pretty-format@^26.0.0, pretty-format@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
   integrity sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg==
