@@ -14,7 +14,7 @@ describe(`Box component`, () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    render(<Box />, document.body)
+    render(<Box />)
 
     const results = await axe(document.body)
     expect(results).toHaveNoViolations()

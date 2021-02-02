@@ -14,7 +14,7 @@ describe(`Flex component`, () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    render(<Flex />, document.body)
+    render(<Flex />)
 
     const results = await axe(document.body)
     expect(results).toHaveNoViolations()
