@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
-import React from 'react'
+import * as React from 'react'
 
 import { Flex } from '.'
 
