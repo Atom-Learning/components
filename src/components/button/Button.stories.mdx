@@ -33,7 +33,7 @@ The `Button` component is a very thin wrapper around an HTML `button` element. I
 
 ## Variants
 
-These are branded `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
 <Preview>
   <Story name="Themes">
@@ -66,7 +66,7 @@ These are branded `themes` for the `Button` component: `Primary` (default), `Sec
 
 ## Outlines
 
-There are `outline` variants for the `primary`, `secondary` and `tertiary` themes, by setting the `variant` property
+These are the available `outline` variants for the `primary`, `secondary` and `tertiary` themes.
 
 <Preview>
   <Story name="Outline">
@@ -92,7 +92,7 @@ There are `outline` variants for the `primary`, `secondary` and `tertiary` theme
 
 ### Disabled state
 
-Each variant has an `disabled` variant, by setting the `disabled` property.
+Each variant has an `disabled` stated, by setting the `disabled` property.
 
 <Preview>
   <Story name="Disabled">
@@ -100,13 +100,19 @@ Each variant has an `disabled` variant, by setting the `disabled` property.
       css={{
         flexDirection: 'row',
         justifyContent: 'space-between',
-        width: '500px'
+        flexWrap: 'wrap'
       }}
     >
       <Button css={{ mb: '$2' }} disabled>
         Disabled button
       </Button>
       <Button css={{ mb: '$2' }} variant="outline" disabled>
+        Disabled button
+      </Button>
+      <Button css={{ mb: '$2' }} variant="outline" theme="secondary" disabled>
+        Disabled button
+      </Button>
+      <Button css={{ mb: '$2' }} variant="outline" theme="tertiary" disabled>
         Disabled button
       </Button>
     </Flex>
