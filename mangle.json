@@ -1,0 +1,10 @@
+{
+  "mangle": {
+    "regex": "*"
+  },
+  "props": {
+    "props": {
+      "tokens": "tokens"
+    }
+  }
+}
