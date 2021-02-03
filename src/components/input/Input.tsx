@@ -39,7 +39,10 @@ type InputProps = Override<
   }
 >
 
-export const Input = ({ type, ...props }: InputProps): React.ReactElement => {
+export const Input: React.FC<InputProps> = ({
+  type,
+  ...props
+}): React.ReactElement => {
   if (type === 'number')
     return (
       <StyledInput
