@@ -39,15 +39,14 @@ type InputProps = Override<
   }
 >
 
-export const Input = ({ type, ...props }: InputProps): React.ReactElement => {
+export const Input = ({
+  type = 'text',
+  ...props
+}: InputProps): React.ReactElement => {
   if (type === 'number')
     return (
       <BaseInput type="text" inputMode="numeric" pattern="[0-9]*" {...props} />
     )
 
   return <BaseInput type={type} {...props} />
-}
-
-Input.defaultProps = {
-  type: 'text'
 }
