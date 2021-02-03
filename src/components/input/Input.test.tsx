@@ -33,7 +33,7 @@ describe(`Input component`, () => {
   })
 
   it('renders a disabled input', async () => {
-    const { findByPlaceholderText } = render(
+    const { container, findByPlaceholderText } = render(
       <Input
         css={{ m: 'auto', height: 100, width: 100 }}
         placeholder="INPUT"
@@ -41,8 +41,9 @@ describe(`Input component`, () => {
       />
     )
 
-    const input = await findByPlaceholderText('001')
+    const input = await findByPlaceholderText('INPUT')
 
     expect(input).toHaveAttribute('disabled')
+    expect(await axe(container)).toHaveNoViolations()
   })
 })
