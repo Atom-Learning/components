@@ -1,0 +1,118 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  ArgsTable,
+  Preview
+} from '@storybook/addon-docs/blocks'
+
+import { Button } from './'
+import { Flex, Grid } from '~/components/'
+
+import { disableStitchesProps } from '~/utilities/storybook'
+
+<Meta
+  title="Components/Button"
+  component={Button}
+  argTypes={{
+    theme: 'string',
+    variant: 'string',
+    ...disableStitchesProps
+  }}
+/>
+
+# Button
+
+The `Button` component is a very thin wrapper around an HTML `button` element. It adds default styling and the `css` prop. By default `Primary` theme is displayed.
+
+<Preview>
+  <Story name="Basic">
+    <Button css={{ mb: '$2' }}>Primary</Button>
+  </Story>
+</Preview>
+
+## Variants
+
+These are branded `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+
+<Preview>
+  <Story name="Themes">
+    <Flex
+      css={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap'
+      }}
+    >
+      <Button css={{ mb: '$2' }}>Primary</Button>
+      <Button css={{ mb: '$2' }} theme="secondary">
+        Secondary
+      </Button>
+      <Button css={{ mb: '$2' }} theme="tertiary">
+        Tertiary
+      </Button>
+      <Button css={{ mb: '$2' }} theme="success">
+        Success
+      </Button>
+      <Button css={{ mb: '$2' }} theme="warning">
+        Warning
+      </Button>
+      <Button css={{ mb: '$2' }} theme="danger">
+        Error
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
+
+## Outlines
+
+There are `outline` variants for the `primary`, `secondary` and `tertiary` themes, by setting the `variant` property
+
+<Preview>
+  <Story name="Outline">
+    <Flex
+      css={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
+      }}
+    >
+      <Button css={{ mb: '$2' }} variant="outline">
+        Primary
+      </Button>
+      <Button css={{ mb: '$2' }} variant="outline" theme="secondary">
+        Secondary
+      </Button>
+      <Button css={{ mb: '$2' }} variant="outline" theme="tertiary">
+        Tertiary
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
+
+### Disabled state
+
+Each variant has an `disabled` variant, by setting the `disabled` property.
+
+<Preview>
+  <Story name="Disabled">
+    <Flex
+      css={{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        width: '500px'
+      }}
+    >
+      <Button css={{ mb: '$2' }} disabled>
+        Disabled button
+      </Button>
+      <Button css={{ mb: '$2' }} variant="outline" disabled>
+        Disabled button
+      </Button>
+    </Flex>
+  </Story>
+</Preview>
+
+## Props
+
+<ArgsTable of={Button} />
