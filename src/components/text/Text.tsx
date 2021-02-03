@@ -4,7 +4,7 @@ import { StitchesProps, styled } from '~/stitches'
 
 type Override<T, U> = Omit<T, keyof U> & U
 
-const BaseText = styled('p', {
+const StyledText = styled('p', {
   color: '$tonal900',
   fontFamily: 'sans',
   fontWeight: 400,
@@ -31,7 +31,7 @@ const BaseText = styled('p', {
 })
 
 type TextProps = Override<
-  StitchesProps<typeof BaseText>,
+  StitchesProps<typeof StyledText>,
   {
     as: 'p' | 'span'
     size: 'sm' | 'md' | 'lg'
@@ -39,7 +39,7 @@ type TextProps = Override<
 >
 
 export const Text = (props: TextProps): React.ReactElement => {
-  return <BaseText {...props} />
+  return <StyledText {...props} />
 }
 
 Text.defaultProps = {
