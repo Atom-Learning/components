@@ -13,7 +13,7 @@
  *  field2: "D" | "E" | "F"
  * }
  *
- * type NewType = Override<BaseType, { field2: "G" | "H" | "I" }
+ * type NewType = Override<BaseType, { field2: "G" | "H" | "I" }>
  * //{
  * // field1: "A" |"B" | "C"
  * // field2: "G" | "H" | "I"

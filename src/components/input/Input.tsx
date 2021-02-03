@@ -12,9 +12,9 @@ const BaseInput = styled('input', {
   color: '$tonal900',
   cursor: 'text',
   display: 'block',
-  fontFamily: 'sans',
-  fontSize: 'md', // necessary to prevent iOS zooming on focus
-  height: '50px',
+  fontFamily: '$sans',
+  fontSize: '$md', // necessary to prevent iOS zooming on focus
+  height: '$2',
   width: '100%',
   p: '$3',
   transition: 'all 100ms ease-out',
