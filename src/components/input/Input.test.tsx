@@ -11,6 +11,7 @@ describe(`Input component`, () => {
     )
 
     await screen.getByPlaceholderText('INPUT')
+    
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
