@@ -1,8 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
+._eSQMtF._eSQMtF._eSQMtF._eSQMtF._eSQMtF._eSQMtF:disabled {
+  cursor: not-allowed;
+}
+
+._atDza._atDza._atDza._atDza._atDza._atDza:disabled {
+  color: var(--colors-tonal700);
+}
+
+._fQdilh._fQdilh._fQdilh._fQdilh._fQdilh._fQdilh:disabled {
+  background-color: var(--colors-tonal300);
+}
+
 ._cuMEHZ._cuMEHZ._cuMEHZ._cuMEHZ:focus {
   outline: none;
+}
+
+._fsZzKT._fsZzKT._fsZzKT._fsZzKT:focus {
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
 ._cqAMVP._cqAMVP._cqAMVP._cqAMVP:focus {
@@ -21,40 +37,76 @@ exports[`Input component renders a number input 1`] = `
   border-top-color: var(--colors-primary900);
 }
 
-._fsZzKT._fsZzKT._fsZzKT._fsZzKT:focus {
-  box-shadow: inset 0 0 0 1px var(--colors-primary900);
-}
-
-._eSAGHE {
-  box-sizing: border-box;
-}
-
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
 
-._hOHhxc {
-  transition-duration: 75ms;
+._dmGTUL {
+  transition-duration: 100ms;
 }
 
 ._eaYTuA {
   transition-property: all;
 }
 
-._dFQJLr {
-  color: var(--colors-tonal900);
+._jpQaAF {
+  padding-left: var(--space-3);
 }
 
-._oIZSq {
-  font-family: var(--fonts-sans);
+._kjfgpN {
+  padding-bottom: var(--space-3);
+}
+
+._ejjNCC {
+  padding-right: var(--space-3);
+}
+
+._fcMdVB {
+  padding-top: var(--space-3);
 }
 
 ._dIHnma {
   font-size: var(--fontSizes-md);
 }
 
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._iGHkTP {
+  display: block;
+}
+
+._fYMrRD {
+  cursor: text;
+}
+
+._dFQJLr {
+  color: var(--colors-tonal900);
+}
+
+._eSAGHE {
+  box-sizing: border-box;
+}
+
 ._jQbljM {
   box-shadow: none;
+}
+
+._cmjVcV {
+  border-bottom-right-radius: var(--radii-1);
+}
+
+._cvjZAR {
+  border-top-right-radius: var(--radii-1);
+}
+
+._fVdSKi {
+  border-top-left-radius: var(--radii-1);
+}
+
+._hxITlq {
+  border-bottom-left-radius: var(--radii-1);
 }
 
 ._gTvwgM {
@@ -105,44 +157,8 @@ exports[`Input component renders a number input 1`] = `
   border-top-width: 1px;
 }
 
-._cmjVcV {
-  border-bottom-right-radius: var(--radii-1);
-}
-
-._cvjZAR {
-  border-top-right-radius: var(--radii-1);
-}
-
-._fVdSKi {
-  border-top-left-radius: var(--radii-1);
-}
-
-._hxITlq {
-  border-bottom-left-radius: var(--radii-1);
-}
-
 ._fAMvjM {
   appearance: none;
-}
-
-._jpQaAF {
-  padding-left: var(--space-3);
-}
-
-._kjfgpN {
-  padding-bottom: var(--space-3);
-}
-
-._ejjNCC {
-  padding-right: var(--space-3);
-}
-
-._fcMdVB {
-  padding-top: var(--space-3);
-}
-
-._iGHkTP {
-  display: block;
 }
 
 ._Fgykb {
@@ -171,7 +187,7 @@ exports[`Input component renders a number input 1`] = `
 
 <div>
   <input
-    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _iGHkTP _fcMdVB _ejjNCC _kjfgpN _jpQaAF _fAMvjM _hxITlq _fVdSKi _cvjZAR _cmjVcV _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _jQbljM _dIHnma _oIZSq _dFQJLr _eaYTuA _hOHhxc _kKqLFw _eSAGHE _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ scid-jyvfEV"
+    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _fAMvjM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _hxITlq _fVdSKi _cvjZAR _cmjVcV _jQbljM _eSAGHE _dFQJLr _fYMrRD _iGHkTP _oIZSq _dIHnma _fcMdVB _ejjNCC _kjfgpN _jpQaAF _eaYTuA _dmGTUL _kKqLFw _dyCacD _jDatdc _iSyhvT _cqAMVP _fsZzKT _cuMEHZ _fQdilh _atDza _eSQMtF scid-hAotP"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -181,8 +197,24 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
+._eSQMtF._eSQMtF._eSQMtF._eSQMtF._eSQMtF._eSQMtF:disabled {
+  cursor: not-allowed;
+}
+
+._atDza._atDza._atDza._atDza._atDza._atDza:disabled {
+  color: var(--colors-tonal700);
+}
+
+._fQdilh._fQdilh._fQdilh._fQdilh._fQdilh._fQdilh:disabled {
+  background-color: var(--colors-tonal300);
+}
+
 ._cuMEHZ._cuMEHZ._cuMEHZ._cuMEHZ:focus {
   outline: none;
+}
+
+._fsZzKT._fsZzKT._fsZzKT._fsZzKT:focus {
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
 ._cqAMVP._cqAMVP._cqAMVP._cqAMVP:focus {
@@ -201,40 +233,76 @@ exports[`Input component renders a text input 1`] = `
   border-top-color: var(--colors-primary900);
 }
 
-._fsZzKT._fsZzKT._fsZzKT._fsZzKT:focus {
-  box-shadow: inset 0 0 0 1px var(--colors-primary900);
-}
-
-._eSAGHE {
-  box-sizing: border-box;
-}
-
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
 
-._hOHhxc {
-  transition-duration: 75ms;
+._dmGTUL {
+  transition-duration: 100ms;
 }
 
 ._eaYTuA {
   transition-property: all;
 }
 
-._dFQJLr {
-  color: var(--colors-tonal900);
+._jpQaAF {
+  padding-left: var(--space-3);
 }
 
-._oIZSq {
-  font-family: var(--fonts-sans);
+._kjfgpN {
+  padding-bottom: var(--space-3);
+}
+
+._ejjNCC {
+  padding-right: var(--space-3);
+}
+
+._fcMdVB {
+  padding-top: var(--space-3);
 }
 
 ._dIHnma {
   font-size: var(--fontSizes-md);
 }
 
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._iGHkTP {
+  display: block;
+}
+
+._fYMrRD {
+  cursor: text;
+}
+
+._dFQJLr {
+  color: var(--colors-tonal900);
+}
+
+._eSAGHE {
+  box-sizing: border-box;
+}
+
 ._jQbljM {
   box-shadow: none;
+}
+
+._cmjVcV {
+  border-bottom-right-radius: var(--radii-1);
+}
+
+._cvjZAR {
+  border-top-right-radius: var(--radii-1);
+}
+
+._fVdSKi {
+  border-top-left-radius: var(--radii-1);
+}
+
+._hxITlq {
+  border-bottom-left-radius: var(--radii-1);
 }
 
 ._gTvwgM {
@@ -285,44 +353,8 @@ exports[`Input component renders a text input 1`] = `
   border-top-width: 1px;
 }
 
-._cmjVcV {
-  border-bottom-right-radius: var(--radii-1);
-}
-
-._cvjZAR {
-  border-top-right-radius: var(--radii-1);
-}
-
-._fVdSKi {
-  border-top-left-radius: var(--radii-1);
-}
-
-._hxITlq {
-  border-bottom-left-radius: var(--radii-1);
-}
-
 ._fAMvjM {
   appearance: none;
-}
-
-._jpQaAF {
-  padding-left: var(--space-3);
-}
-
-._kjfgpN {
-  padding-bottom: var(--space-3);
-}
-
-._ejjNCC {
-  padding-right: var(--space-3);
-}
-
-._fcMdVB {
-  padding-top: var(--space-3);
-}
-
-._iGHkTP {
-  display: block;
 }
 
 ._Fgykb {
@@ -351,7 +383,7 @@ exports[`Input component renders a text input 1`] = `
 
 <div>
   <input
-    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _iGHkTP _fcMdVB _ejjNCC _kjfgpN _jpQaAF _fAMvjM _hxITlq _fVdSKi _cvjZAR _cmjVcV _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _jQbljM _dIHnma _oIZSq _dFQJLr _eaYTuA _hOHhxc _kKqLFw _eSAGHE _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ scid-jyvfEV"
+    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _fAMvjM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _hxITlq _fVdSKi _cvjZAR _cmjVcV _jQbljM _eSAGHE _dFQJLr _fYMrRD _iGHkTP _oIZSq _dIHnma _fcMdVB _ejjNCC _kjfgpN _jpQaAF _eaYTuA _dmGTUL _kKqLFw _dyCacD _jDatdc _iSyhvT _cqAMVP _fsZzKT _cuMEHZ _fQdilh _atDza _eSQMtF scid-hAotP"
     placeholder="INPUT"
     type="text"
   />

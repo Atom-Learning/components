@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Input } from '.'
@@ -11,6 +12,7 @@ describe(`Input component`, () => {
 
     await screen.getByPlaceholderText('INPUT')
     expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
   })
 
   it('renders a number input', async () => {
@@ -27,5 +29,20 @@ describe(`Input component`, () => {
     expect(input).toHaveAttribute('inputmode', 'numeric')
     expect(input).toHaveAttribute('pattern', '[0-9]*')
     expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a disabled input', async () => {
+    const { findByPlaceholderText } = render(
+      <Input
+        css={{ m: 'auto', height: 100, width: 100 }}
+        placeholder="INPUT"
+        disabled
+      />
+    )
+
+    const input = await findByPlaceholderText('001')
+
+    expect(input).toHaveAttribute('disabled')
   })
 })

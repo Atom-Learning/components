@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css } from '../dist'
+import { Box, css, Input } from '../dist'
 import { Sandbox } from './Sandbox'
 
 css.global(reset)()
@@ -22,9 +22,7 @@ const App = () => {
           backgroundColor: 'papayawhip'
         }}
       >
-        Use this app to quickly render components in an environment where you
-        have more control than in Storybook. But don't commit changes to this
-        app into the main branch!
+       <Input defaultValue="hello"/>
       </Box>
     </Sandbox>
   )

@@ -1,26 +1,32 @@
 import * as React from 'react'
 
 import { StitchesProps, styled } from '~/stitches'
-import { Override } from '~/utilities/override'
+import { Override } from '~/utilities/types'
 
 const BaseInput = styled('input', {
-  display: 'block',
-  p: '$3',
   appearance: 'none',
-  width: '100%',
-  height: '50px',
-  borderRadius: '$1',
   border: '1px solid $tonal500',
-  boxShadow: 'none', // necessary to remove default iOS default styling
-  fontSize: 'md', // necessary to prevent iOS zooming on focus
-  fontFamily: 'sans',
-  color: '$tonal900',
-  transition: 'all 75ms ease-out',
+  borderRadius: '$1',
+  boxShadow: 'none', // necessary to prevent default iOS default styling
   boxSizing: 'border-box',
+  color: '$tonal900',
+  cursor: 'text',
+  display: 'block',
+  fontFamily: 'sans',
+  fontSize: 'md', // necessary to prevent iOS zooming on focus
+  height: '50px',
+  width: '100%',
+  p: '$3',
+  transition: 'all 100ms ease-out',
   ':focus': {
-    boxShadow: 'inset 0 0 0 1px $primary900',
     borderColor: '$primary900',
+    boxShadow: 'inset 0 0 0 1px $primary900',
     outline: 'none'
+  },
+  ':disabled': {
+    backgroundColor: '$tonal300',
+    color: '$tonal700',
+    cursor: 'not-allowed'
   }
 })
 
