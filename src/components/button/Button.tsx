@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { styled } from '../../stitches'
 
-const BaseButton = styled('button', {
+const StyledButton = styled('button', {
   background: 'unset',
   border: 'none',
   borderRadius: '$1',
@@ -26,7 +26,7 @@ const BaseButton = styled('button', {
     backgroundColor: '$tonal300',
     color: '$tonal600',
     opacity: 0.35,
-    cursor: 'default'
+    cursor: 'not-allowed'
   },
   variants: {
     theme: {
@@ -105,7 +105,7 @@ const BaseButton = styled('button', {
   }
 })
 
-BaseButton.compoundVariant(
+StyledButton.compoundVariant(
   {
     theme: 'primary',
     variant: 'outline'
@@ -126,7 +126,7 @@ BaseButton.compoundVariant(
   }
 )
 
-BaseButton.compoundVariant(
+StyledButton.compoundVariant(
   {
     theme: 'secondary',
     variant: 'outline'
@@ -146,7 +146,7 @@ BaseButton.compoundVariant(
     }
   }
 )
-BaseButton.compoundVariant(
+StyledButton.compoundVariant(
   {
     theme: 'tertiary',
     variant: 'outline'
@@ -167,15 +167,13 @@ BaseButton.compoundVariant(
   }
 )
 
-type ButtonProps = StitchesProps<typeof BaseButton>
+type ButtonProps = StitchesProps<typeof StyledButton>
 
-export const Button = (props: ButtonProps): React.ReactElement => {
-  return <BaseButton {...props} />
+export const Button = ({
+  theme = 'primary',
+  ...rest
+}: ButtonProps): React.ReactElement => {
+  return <StyledButton theme={theme} {...rest} />
 }
 
 Button.displayName = 'Button'
-
-Button.defaultProps = {
-  theme: 'primary', // TODO: export this into an enum
-  isLoading: false
-}
