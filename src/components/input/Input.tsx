@@ -3,7 +3,7 @@ import * as React from 'react'
 import { StitchesProps, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
-const BaseInput = styled('input', {
+const StyledInput = styled('input', {
   appearance: 'none',
   border: '1px solid $tonal500',
   borderRadius: '$1',
@@ -33,7 +33,7 @@ const BaseInput = styled('input', {
 // override default 'type' property to prevent Input from being used to render
 // checkboxes, radios etc — we will have dedicated components for them
 type InputProps = Override<
-  StitchesProps<typeof BaseInput>,
+  StitchesProps<typeof StyledInput>,
   {
     type: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
@@ -45,8 +45,13 @@ export const Input = ({
 }: InputProps): React.ReactElement => {
   if (type === 'number')
     return (
-      <BaseInput type="text" inputMode="numeric" pattern="[0-9]*" {...props} />
+      <StyledInput
+        type="text"
+        inputMode="numeric"
+        pattern="[0-9]*"
+        {...props}
+      />
     )
 
-  return <BaseInput type={type} {...props} />
+  return <StyledInput type={type} {...props} />
 }
