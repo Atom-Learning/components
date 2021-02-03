@@ -39,10 +39,7 @@ type InputProps = Override<
   }
 >
 
-export const Input = ({
-  type = 'text',
-  ...props
-}: InputProps): React.ReactElement => {
+export const Input = ({ type, ...props }: InputProps): React.ReactElement => {
   if (type === 'number')
     return (
       <StyledInput
@@ -55,3 +52,7 @@ export const Input = ({
 
   return <StyledInput type={type} {...props} />
 }
+
+Input.defaultProps = {
+  type: 'text'
+} as Partial<InputProps>
