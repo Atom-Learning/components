@@ -9,14 +9,6 @@ exports[`Button component renders a button 1`] = `
   opacity: 0.35;
 }
 
-._iePRtq[disabled] {
-  color: var(--colors-tonal600);
-}
-
-._kkUuZE[disabled] {
-  background-color: var(--colors-tonal300);
-}
-
 ._eGbica {
   width: max-content;
 }
@@ -25,20 +17,20 @@ exports[`Button component renders a button 1`] = `
   white-space: nowrap;
 }
 
-._eJwsRe {
-  padding-left: var(--space-4);
-}
-
 ._kmyMpM {
   padding-bottom: var(--space-2);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
 }
 
 ._hCA-dkJ {
   padding-right: var(--space-4);
 }
 
-._fGrnfI {
-  padding-top: var(--space-2);
+._eJwsRe {
+  padding-left: var(--space-4);
 }
 
 ._kaGCev {
@@ -146,9 +138,17 @@ exports[`Button component renders a button 1`] = `
   background-color: var(--colors-primary500);
 }
 
+._iePRtq[disabled] {
+  color: var(--colors-tonal600);
+}
+
+._kkUuZE[disabled] {
+  background-color: var(--colors-tonal300);
+}
+
 <div>
   <button
-    class="_hPXiuU _htOODa _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _ftwEqf _eGbica _kkUuZE _iePRtq _gRExQX _knMBno scid-dtNPwY"
+    class="_kkUuZE _iePRtq _hPXiuU _htOODa _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-SsRDd"
   >
     BUTTON
   </button>
@@ -164,14 +164,6 @@ exports[`Button component renders a disabled button 1`] = `
   opacity: 0.35;
 }
 
-._iePRtq[disabled] {
-  color: var(--colors-tonal600);
-}
-
-._kkUuZE[disabled] {
-  background-color: var(--colors-tonal300);
-}
-
 ._eGbica {
   width: max-content;
 }
@@ -180,20 +172,20 @@ exports[`Button component renders a disabled button 1`] = `
   white-space: nowrap;
 }
 
-._eJwsRe {
-  padding-left: var(--space-4);
-}
-
 ._kmyMpM {
   padding-bottom: var(--space-2);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
 }
 
 ._hCA-dkJ {
   padding-right: var(--space-4);
 }
 
-._fGrnfI {
-  padding-top: var(--space-2);
+._eJwsRe {
+  padding-left: var(--space-4);
 }
 
 ._kaGCev {
@@ -301,9 +293,17 @@ exports[`Button component renders a disabled button 1`] = `
   background-color: var(--colors-primary500);
 }
 
+._iePRtq[disabled] {
+  color: var(--colors-tonal600);
+}
+
+._kkUuZE[disabled] {
+  background-color: var(--colors-tonal300);
+}
+
 <div>
   <button
-    class="_hPXiuU _htOODa _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _ftwEqf _eGbica _kkUuZE _iePRtq _gRExQX _knMBno scid-dtNPwY"
+    class="_kkUuZE _iePRtq _hPXiuU _htOODa _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-SsRDd"
     disabled=""
   >
     BUTTON
@@ -316,17 +316,17 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   background-color: var(--colors-secondary500);
 }
 
-._iSsbUx[disabled] {
-  color: var(--colors-secondary700);
+._hXIGsQ[disabled] {
+  color: $secondary900;
 }
 
 ._kJqZTj._kJqZTj._kJqZTj:active {
   color: var(--colors-secondary500);
 }
 
-._jUPgiV._jUPgiV:not([disabled]):hover,
-._jUPgiV:not([disabled]):focus {
-  color: var(--colors-secondary700);
+._krxJLo._krxJLo:not([disabled]):hover,
+._krxJLo:not([disabled]):focus {
+  color: $secondary900;
 }
 
 ._kERIgZ {
@@ -376,20 +376,20 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   white-space: nowrap;
 }
 
-._eJwsRe {
-  padding-left: var(--space-4);
-}
-
 ._kmyMpM {
   padding-bottom: var(--space-2);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
 }
 
 ._hCA-dkJ {
   padding-right: var(--space-4);
 }
 
-._fGrnfI {
-  padding-top: var(--space-2);
+._eJwsRe {
+  padding-left: var(--space-4);
 }
 
 ._kaGCev {
@@ -482,7 +482,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 
 <div>
   <button
-    class="_kERIgZ _kVWBQp _jUPgiV _kgpbQj _kJqZTj _iSsbUx _jrUrUN _iQQUiE _jcaWKm _eapuuH _gFGdQM _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _ftwEqf _eGbica _gRExQX _knMBno scid-dtNPwY"
+    class="_kERIgZ _kVWBQp _krxJLo _kgpbQj _kJqZTj _hXIGsQ _jrUrUN _iQQUiE _jcaWKm _eapuuH _gFGdQM _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-SsRDd"
     disabled=""
   >
     BUTTON
@@ -551,20 +551,20 @@ exports[`Button component renders a outline button 1`] = `
   white-space: nowrap;
 }
 
-._eJwsRe {
-  padding-left: var(--space-4);
-}
-
 ._kmyMpM {
   padding-bottom: var(--space-2);
+}
+
+._fGrnfI {
+  padding-top: var(--space-2);
 }
 
 ._hCA-dkJ {
   padding-right: var(--space-4);
 }
 
-._fGrnfI {
-  padding-top: var(--space-2);
+._eJwsRe {
+  padding-left: var(--space-4);
 }
 
 ._kaGCev {
@@ -661,7 +661,7 @@ exports[`Button component renders a outline button 1`] = `
 
 <div>
   <button
-    class="_goMgqD _kVWBQp _hzdivt _kgpbQj _bYkcXx _jPEaoV _jrUrUN _iQQUiE _jcaWKm _eapuuH _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _fGrnfI _hCA-dkJ _kmyMpM _eJwsRe _ftwEqf _eGbica _gRExQX _knMBno scid-dtNPwY"
+    class="_goMgqD _kVWBQp _hzdivt _kgpbQj _bYkcXx _jPEaoV _jrUrUN _iQQUiE _jcaWKm _eapuuH _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-SsRDd"
   >
     BUTTON
   </button>

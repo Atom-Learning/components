@@ -1,7 +1,37 @@
 import { StitchesProps } from '@stitches/react'
 import * as React from 'react'
 
-import { styled } from '../../stitches'
+import { styled } from '~/stitches'
+
+const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
+  color: baseColor,
+  backgroundColor: 'white',
+  '&:not([disabled]):hover, &:not([disabled]):focus': {
+    color: interactColor,
+    backgroundColor: 'white'
+  },
+  ':active': {
+    color: baseColor
+  },
+  '&[disabled]': {
+    color: interactColor
+  }
+})
+
+const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
+  '&[disabled]': {
+    backgroundColor: '$tonal300',
+    color: '$tonal600'
+  },
+  backgroundColor: baseColor,
+  color: 'white',
+  '&:not([disabled]):hover, &:not([disabled]):focus': {
+    backgroundColor: interactColor
+  },
+  ':active': {
+    backgroundColor: baseColor
+  }
+})
 
 const StyledButton = styled('button', {
   background: 'unset',
@@ -19,77 +49,22 @@ const StyledButton = styled('button', {
   lineHeight: 1.4,
   transition: 'all 125ms ease-out',
   textDecoration: 'none',
-  padding: '$2 $4',
+  px: '$4',
+  py: '$2',
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal600',
     opacity: 0.35,
     cursor: 'not-allowed'
   },
   variants: {
     theme: {
-      primary: {
-        backgroundColor: '$primary500',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$primary900'
-        },
-        ':active': {
-          backgroundColor: '$primary500'
-        }
-      },
-      secondary: {
-        backgroundColor: '$secondary500',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$secondary700'
-        },
-        ':active': {
-          backgroundColor: '$secondary500'
-        }
-      },
-      tertiary: {
-        backgroundColor: '$tertiary500',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$tertiary700'
-        },
-        ':active': {
-          backgroundColor: '$tertiary500'
-        }
-      },
-      success: {
-        backgroundColor: '$success',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$successDark'
-        },
-        ':active': {
-          backgroundColor: '$success'
-        }
-      },
-      warning: {
-        backgroundColor: '$warning',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$warningDark'
-        },
-        ':active': {
-          backgroundColor: '$warning'
-        }
-      },
-      danger: {
-        backgroundColor: '$danger',
-        color: 'white',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          backgroundColor: '$dangerDark'
-        },
-        ':active': {
-          backgroundColor: '$danger'
-        }
-      }
+      primary: getButtonSolidVariant('$primary500', '$primary900'),
+      secondary: getButtonSolidVariant('$secondary500', '$secondary700'),
+      tertiary: getButtonSolidVariant('$tertiary500', '$tertiary700'),
+      success: getButtonSolidVariant('$success', '$successDark'),
+      warning: getButtonSolidVariant('$warning', '$warningDark'),
+      danger: getButtonSolidVariant('$danger', '$dangerDark')
     },
     variant: {
       outline: {
@@ -110,20 +85,7 @@ StyledButton.compoundVariant(
     theme: 'primary',
     variant: 'outline'
   },
-  {
-    color: '$primary500',
-    backgroundColor: 'white',
-    '&:not([disabled]):hover, &:not([disabled]):focus': {
-      color: '$primary900',
-      backgroundColor: 'white'
-    },
-    ':active': {
-      color: '$primary500'
-    },
-    '&[disabled]': {
-      color: '$primary900'
-    }
-  }
+  getButtonOutlineVariant('$primary500', '$primary900')
 )
 
 StyledButton.compoundVariant(
@@ -131,40 +93,15 @@ StyledButton.compoundVariant(
     theme: 'secondary',
     variant: 'outline'
   },
-  {
-    color: '$secondary500',
-    background: 'white',
-    '&:not([disabled]):hover, &:not([disabled]):focus': {
-      color: '$secondary700',
-      background: 'white'
-    },
-    ':active': {
-      color: '$secondary500'
-    },
-    '&[disabled]': {
-      color: '$secondary700'
-    }
-  }
+  getButtonOutlineVariant('$secondary500', '$secondary900')
 )
+
 StyledButton.compoundVariant(
   {
     theme: 'tertiary',
     variant: 'outline'
   },
-  {
-    color: '$tertiary500',
-    background: 'white',
-    '&:not([disabled]):hover, &:not([disabled]):focus': {
-      color: '$tertiary700',
-      background: 'white'
-    },
-    ':active': {
-      color: '$tertiary500'
-    },
-    '&[disabled]': {
-      color: '$tertiary700'
-    }
-  }
+  getButtonOutlineVariant('$tertiary500', '$tertiary700')
 )
 
 type ButtonProps = StitchesProps<typeof StyledButton>
@@ -175,5 +112,3 @@ export const Button = ({
 }: ButtonProps): React.ReactElement => {
   return <StyledButton theme={theme} {...rest} />
 }
-
-Button.displayName = 'Button'
