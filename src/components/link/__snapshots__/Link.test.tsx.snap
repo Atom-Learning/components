@@ -33,6 +33,10 @@ exports[`Link component renders an anchor 1`] = `
   text-decoration-line: none;
 }
 
+._goseeh {
+  font-size: var(--fontSizes-sm);
+}
+
 ._oIZSq {
   font-family: var(--fonts-sans);
 }
@@ -43,7 +47,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="_goMgqD _oIZSq _kaGCev _cKSYdt _MxdQF _cKuykA _fulcBE _lbjgAG _DzWmG _bYkcXx scid-dbNsaZ"
+    class="_goMgqD _oIZSq _goseeh _kaGCev _cKSYdt _MxdQF _cKuykA _fulcBE _lbjgAG _DzWmG _bYkcXx scid-fppoWP"
     href="https://google.com/"
   >
     GOOGLE
