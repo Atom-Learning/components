@@ -15,4 +15,15 @@ describe.only(`Link component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders an large anchor', async () => {
+    const { container } = render(
+      <Link href="https://google.com/" size="lg">
+        GOOGLE
+      </Link>
+    )
+
+    expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
+  })
 })
