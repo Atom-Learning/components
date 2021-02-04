@@ -2,6 +2,7 @@ import { StitchesProps } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { Override } from '~/utilities/types'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   color: baseColor,
@@ -150,7 +151,19 @@ StyledButton.compoundVariant(
   getButtonOutlineVariant('$tertiary500', '$tertiary700')
 )
 
-type ButtonProps = StitchesProps<typeof StyledButton>
+type ButtonProps = Override<
+  StitchesProps<typeof StyledButton>,
+  {
+    theme:
+      | 'primary'
+      | 'secondary'
+      | 'tertiary'
+      | 'success'
+      | 'warning'
+      | 'danger'
+    appearance: 'solid' | 'outline'
+  }
+>
 
 export const Button = ({
   theme,
@@ -163,4 +176,4 @@ export const Button = ({
 Button.defaultProps = {
   theme: 'primary',
   appearance: 'solid'
-} as Partial<ButtonProps>
+}
