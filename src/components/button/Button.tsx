@@ -36,7 +36,7 @@ const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
 const StyledButton = styled('button', {
   background: 'unset',
   border: 'none',
-  borderRadius: '$1',
+  borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
