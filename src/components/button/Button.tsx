@@ -176,4 +176,4 @@ export const Button = ({
 Button.defaultProps = {
   theme: 'primary',
   appearance: 'solid'
-}
+} as Partial<ButtonProps>
