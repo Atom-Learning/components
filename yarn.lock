@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atom-learning/theme@0.1.0-beta.0":
-  version "0.1.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.0.tgz#38c50d426301f471c32c56c829361536435e04e2"
-  integrity sha512-P85237ant+8xfv6WNSBiM4+QlAYOxoRsTHSPtN8gwomPdTYT41/10zyOtGSjLxv/r4CnFzmElQzNmV+779GD+w==
+"@atom-learning/theme@0.1.0-beta.4":
+  version "0.1.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.4.tgz#948e80dee8881bf82192b267627985b13312c315"
+  integrity sha512-AAA+DKs9hZpPLa1OHzl4sK1S87JubTyRDYCMm4hlWkad60JGgx331qww1nh340D2bg+e34g+HFuIm17Vx1kxzQ==
 
 "@babel/code-frame@7.8.3":
   version "7.8.3"
