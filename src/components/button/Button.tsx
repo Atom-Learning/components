@@ -19,12 +19,12 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
 })
 
 const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
+  backgroundColor: baseColor,
+  color: 'white',
   '&[disabled]': {
     backgroundColor: '$tonal300',
     color: '$tonal600'
   },
-  backgroundColor: baseColor,
-  color: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     backgroundColor: interactColor
   },
@@ -59,14 +59,15 @@ const StyledButton = styled('button', {
   },
   variants: {
     theme: {
-      primary: getButtonSolidVariant('$primary500', '$primary900'),
-      secondary: getButtonSolidVariant('$secondary500', '$secondary700'),
-      tertiary: getButtonSolidVariant('$tertiary500', '$tertiary700'),
-      success: getButtonSolidVariant('$success', '$successDark'),
-      warning: getButtonSolidVariant('$warning', '$warningDark'),
-      danger: getButtonSolidVariant('$danger', '$dangerDark')
+      primary: {},
+      secondary: {},
+      tertiary: {},
+      success: {},
+      warning: {},
+      danger: {}
     },
-    variant: {
+    appearance: {
+      solid: {},
       outline: {
         boxShadow: 'inset 0 0 0 2px',
         backgroundColor: 'white',
@@ -81,9 +82,54 @@ const StyledButton = styled('button', {
 })
 
 StyledButton.compoundVariant(
+  { theme: 'primary', appearance: 'solid' },
+  getButtonSolidVariant('$primary500', '$primary900')
+)
+
+StyledButton.compoundVariant(
+  {
+    theme: 'secondary',
+    appearance: 'solid'
+  },
+  getButtonSolidVariant('$secondary500', '$secondary700')
+)
+
+StyledButton.compoundVariant(
+  {
+    theme: 'tertiary',
+    appearance: 'solid'
+  },
+  getButtonSolidVariant('$tertiary500', '$tertiary700')
+)
+
+StyledButton.compoundVariant(
+  {
+    theme: 'success',
+    appearance: 'solid'
+  },
+  getButtonSolidVariant('$success', '$successDark')
+)
+
+StyledButton.compoundVariant(
+  {
+    theme: 'warning',
+    appearance: 'solid'
+  },
+  getButtonSolidVariant('$warning', '$warningDark')
+)
+
+StyledButton.compoundVariant(
+  {
+    theme: 'danger',
+    appearance: 'solid'
+  },
+  getButtonSolidVariant('$danger', '$dangerDark')
+)
+
+StyledButton.compoundVariant(
   {
     theme: 'primary',
-    variant: 'outline'
+    appearance: 'outline'
   },
   getButtonOutlineVariant('$primary500', '$primary900')
 )
@@ -91,7 +137,7 @@ StyledButton.compoundVariant(
 StyledButton.compoundVariant(
   {
     theme: 'secondary',
-    variant: 'outline'
+    appearance: 'outline'
   },
   getButtonOutlineVariant('$secondary500', '$secondary900')
 )
@@ -99,7 +145,7 @@ StyledButton.compoundVariant(
 StyledButton.compoundVariant(
   {
     theme: 'tertiary',
-    variant: 'outline'
+    appearance: 'outline'
   },
   getButtonOutlineVariant('$tertiary500', '$tertiary700')
 )
@@ -107,8 +153,14 @@ StyledButton.compoundVariant(
 type ButtonProps = StitchesProps<typeof StyledButton>
 
 export const Button = ({
-  theme = 'primary',
+  theme,
+  appearance,
   ...rest
 }: ButtonProps): React.ReactElement => {
-  return <StyledButton theme={theme} {...rest} />
+  return <StyledButton theme={theme} appearance={appearance} {...rest} />
 }
+
+Button.defaultProps = {
+  theme: 'primary',
+  appearance: 'solid'
+} as Partial<ButtonProps>

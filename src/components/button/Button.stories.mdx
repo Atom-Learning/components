@@ -23,7 +23,7 @@ import { disableStitchesProps } from '~/utilities/storybook'
 
 # Button
 
-The `Button` component is a very thin wrapper around an HTML `button` element. It adds default styling and the `css` prop. By default `Primary` theme is displayed.
+The `Button` component is a very thin wrapper around an HTML `button` element. It adds default styling and the `css` prop. By default `primary` theme is displayed with a `solid` appearance.
 
 <Preview>
   <Story name="Basic">
@@ -31,7 +31,7 @@ The `Button` component is a very thin wrapper around an HTML `button` element. I
   </Story>
 </Preview>
 
-## Variants
+## Themes
 
 These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
@@ -64,9 +64,11 @@ These are the available `themes` for the `Button` component: `Primary` (default)
   </Story>
 </Preview>
 
-## Outlines
+## Appearearce
 
-These are the available `outline` variants for the `primary`, `secondary` and `tertiary` themes.
+There two options for the `appearance` property: `solid` and `outline`.
+
+These are the available `outline` variations for the `primary`, `secondary` and `tertiary` themes.
 
 <Preview>
   <Story name="Outline">
@@ -77,13 +79,13 @@ These are the available `outline` variants for the `primary`, `secondary` and `t
         width: '500px'
       }}
     >
-      <Button css={{ mb: '$2' }} variant="outline">
+      <Button css={{ mb: '$2' }} appearance="outline">
         Primary
       </Button>
-      <Button css={{ mb: '$2' }} variant="outline" theme="secondary">
+      <Button css={{ mb: '$2' }} appearance="outline" theme="secondary">
         Secondary
       </Button>
-      <Button css={{ mb: '$2' }} variant="outline" theme="tertiary">
+      <Button css={{ mb: '$2' }} appearance="outline" theme="tertiary">
         Tertiary
       </Button>
     </Flex>
@@ -92,7 +94,7 @@ These are the available `outline` variants for the `primary`, `secondary` and `t
 
 ### Disabled state
 
-Each variant has an `disabled` stated, by setting the `disabled` property.
+Each variation has an `disabled` stated, by setting the `disabled` property.
 
 <Preview>
   <Story name="Disabled">
@@ -106,13 +108,18 @@ Each variant has an `disabled` stated, by setting the `disabled` property.
       <Button css={{ mb: '$2' }} disabled>
         Disabled button
       </Button>
-      <Button css={{ mb: '$2' }} variant="outline" disabled>
+      <Button css={{ mb: '$2' }} appearance="outline" disabled>
         Disabled button
       </Button>
-      <Button css={{ mb: '$2' }} variant="outline" theme="secondary" disabled>
+      <Button
+        css={{ mb: '$2' }}
+        appearance="outline"
+        theme="secondary"
+        disabled
+      >
         Disabled button
       </Button>
-      <Button css={{ mb: '$2' }} variant="outline" theme="tertiary" disabled>
+      <Button css={{ mb: '$2' }} appearance="outline" theme="tertiary" disabled>
         Disabled button
       </Button>
     </Flex>
