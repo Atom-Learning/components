@@ -4,7 +4,7 @@ import React from 'react'
 
 import { Link } from './'
 
-describe.only(`Link component`, () => {
+describe(`Link component`, () => {
   it('renders an anchor', async () => {
     const { container } = render(<Link href="https://google.com/">GOOGLE</Link>)
 
