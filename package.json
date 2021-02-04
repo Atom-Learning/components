@@ -10,6 +10,7 @@
     "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "docgen": "node ./scripts/generate-component-props",
     "test": "jest",
     "test:watch": "yarn test -- --watch",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
@@ -88,7 +89,9 @@
     "react": "^16.8.0"
   },
   "dependencies": {
-    "@stitches/react": "0.0.3-canary.4"
+    "@stitches/react": "0.0.3-canary.4",
+    "glob": "^7.1.6",
+    "react-docgen-typescript": "^1.21.0"
   },
   "husky": {
     "hooks": {

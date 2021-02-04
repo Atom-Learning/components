@@ -16,7 +16,10 @@ export type Option = {
 
 export type SelectProps = StitchesProps<typeof StyledSelect> & {
   name: string
-  options: Array<Option>
+  options: {
+    label: string
+    value: string
+  }[]
   placeholder?: string
 }
 
