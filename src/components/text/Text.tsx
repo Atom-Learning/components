@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import { StitchesProps, styled } from '~/stitches'
-
-type Override<T, U> = Omit<T, keyof U> & U
+import { Override } from '~/utilities/types'
 
 const StyledParagraph = styled('p', {
   color: '$tonal900',
