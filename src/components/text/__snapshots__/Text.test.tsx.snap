@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component renders some text 1`] = `
+._djHmRq {
+  max-width: 60ch;
+}
+
+._kWAisg {
+  margin-left: 0px;
+}
+
+._eGYZJo {
+  margin-bottom: 0px;
+}
+
+._hcoQCf {
+  margin-right: 0px;
+}
+
+._gEIVY {
+  margin-top: 0px;
+}
+
+._heQxlO {
+  font-weight: 400;
+}
+
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._dFQJLr {
+  color: var(--colors-tonal900);
+}
+
+._laGdYr {
+  line-height: 1.4;
+}
+
+._bIcFyi {
+  letter-spacing: 0.02em;
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+<div>
+  <p
+    class="_dIHnma _bIcFyi _laGdYr _dFQJLr _oIZSq _heQxlO _gEIVY _hcoQCf _eGYZJo _kWAisg _djHmRq scid-dgbReq"
+  >
+    TEXT
+  </p>
+</div>
+`;
