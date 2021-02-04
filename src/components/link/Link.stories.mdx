@@ -1,4 +1,5 @@
 import { Link } from './'
+import { Box } from '../../'
 
 <Meta title="Link" component={Link} />
 
@@ -8,7 +9,9 @@ The `Link` component is a very thin wrapper around an HTML `a` element. It adds 
 
 <Canvas>
   <Story name="Basic">
-    <Link href="http://example.com/">I'm a link</Link>
+    <Box css={{ p: '$2' }}>
+      <Link href="http://example.com/">I'm a link</Link>
+    </Box>
   </Story>
 </Canvas>
 
