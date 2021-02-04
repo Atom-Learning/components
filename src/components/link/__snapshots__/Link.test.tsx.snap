@@ -5,19 +5,13 @@ exports[`Link component renders an anchor 1`] = `
   color: var(--colors-primary500);
 }
 
-._DzWmG._DzWmG:hover {
+._kNYlGF._kNYlGF._kNYlGF._kNYlGF:focus,
+._kNYlGF:hover {
   text-decoration-line: underline;
 }
 
-._lbjgAG._lbjgAG:hover {
-  color: var(--colors-primary900);
-}
-
-._fulcBE._fulcBE._fulcBE._fulcBE:focus {
-  text-decoration-line: underline;
-}
-
-._cKuykA._cKuykA._cKuykA._cKuykA:focus {
+._wFLKx._wFLKx._wFLKx._wFLKx:focus,
+._wFLKx:hover {
   color: var(--colors-primary900);
 }
 
@@ -47,7 +41,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="_goMgqD _oIZSq _goseeh _kaGCev _cKSYdt _MxdQF _cKuykA _fulcBE _lbjgAG _DzWmG _bYkcXx scid-fppoWP"
+    class="_goMgqD _oIZSq _goseeh _kaGCev _cKSYdt _MxdQF _wFLKx _kNYlGF _bYkcXx scid-lcRPmS"
     href="https://google.com/"
   >
     GOOGLE

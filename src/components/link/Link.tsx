@@ -7,7 +7,6 @@ export const Link = styled('a', {
   textDecoration: 'none',
   cursor: 'pointer',
   ':visited': { color: '$primary500' },
-  ':focus': { color: '$primary900', textDecoration: 'underline' },
-  ':hover': { color: '$primary900', textDecoration: 'underline' },
+  '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
   ':active': { color: '$primary500' }
 })
