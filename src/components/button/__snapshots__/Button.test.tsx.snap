@@ -148,7 +148,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="_hPXiuU _htOODa _kkUuZE _iePRtq _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
+    class="_hPXiuU _htOODa _kkUuZE _iePRtq _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-eiDtDY"
   >
     BUTTON
   </button>
@@ -303,7 +303,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 <div>
   <button
-    class="_hPXiuU _htOODa _kkUuZE _iePRtq _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
+    class="_hPXiuU _htOODa _kkUuZE _iePRtq _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-eiDtDY"
     disabled=""
   >
     BUTTON
@@ -478,7 +478,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 
 <div>
   <button
-    class="_kERIgZ _kVWBQp _krxJLo _kgpbQj _kJqZTj _hXIGsQ _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
+    class="_kERIgZ _kVWBQp _krxJLo _kgpbQj _kJqZTj _hXIGsQ _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-eiDtDY"
     disabled=""
   >
     BUTTON
@@ -653,7 +653,7 @@ exports[`Button component renders a outline button 1`] = `
 
 <div>
   <button
-    class="_goMgqD _kVWBQp _hzdivt _kgpbQj _bYkcXx _jPEaoV _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
+    class="_goMgqD _kVWBQp _hzdivt _kgpbQj _bYkcXx _jPEaoV _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-eiDtDY"
   >
     BUTTON
   </button>
