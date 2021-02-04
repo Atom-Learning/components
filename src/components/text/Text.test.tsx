@@ -8,7 +8,7 @@ describe(`Text component`, () => {
   it('renders some text', async () => {
     const { container } = render(<Text>TEXT</Text>)
 
-    await screen.getByPlaceholderText('TEXT')
+    await screen.getByText('TEXT')
 
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
