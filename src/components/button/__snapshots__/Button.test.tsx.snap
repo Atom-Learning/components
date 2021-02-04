@@ -312,17 +312,48 @@ exports[`Button component renders a disabled button 1`] = `
 `;
 
 exports[`Button component renders a disabled secondary outline button 1`] = `
-._gFGdQM._gFGdQM._gFGdQM:active {
-  background-color: var(--colors-secondary500);
+._hXIGsQ[disabled] {
+  color: $secondary900;
 }
 
-._bdrXEe._bdrXEe:not([disabled]):hover,
-._bdrXEe:not([disabled]):focus {
-  background-color: var(--colors-secondary700);
+._kJqZTj._kJqZTj._kJqZTj:active {
+  color: var(--colors-secondary500);
 }
 
-._hTVHdC {
-  background-color: var(--colors-secondary500);
+._krxJLo._krxJLo:not([disabled]):hover,
+._krxJLo:not([disabled]):focus {
+  color: $secondary900;
+}
+
+._kERIgZ {
+  color: var(--colors-secondary500);
+}
+
+._eapuuH[disabled] {
+  background-color: white;
+}
+
+._jcaWKm._jcaWKm:not([disabled]):hover,
+._jcaWKm:not([disabled):focus {
+  background-color: white;
+}
+
+._iQQUiE._iQQUiE:not([disabled]):hover,
+._iQQUiE:not([disabled):focus {
+  text-decoration-line: none;
+}
+
+._jrUrUN {
+  box-shadow: inset 0 0 0 2px;
+}
+
+._kgpbQj._kgpbQj:not([disabled]):hover,
+._kgpbQj:not([disabled]):focus {
+  background-color: white;
+}
+
+._kVWBQp {
+  background-color: white;
 }
 
 ._knMBno[disabled] {
@@ -445,23 +476,10 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   border-top-style: none;
 }
 
-._iePRtq[disabled] {
-  color: var(--colors-tonal600);
-}
-
-._kkUuZE[disabled] {
-  background-color: var(--colors-tonal300);
-}
-
-._htOODa {
-  color: white;
-}
-
 <div>
   <button
-    class="_hTVHdC _htOODa _kkUuZE _iePRtq _bdrXEe _gFGdQM _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
+    class="_kERIgZ _kVWBQp _krxJLo _kgpbQj _kJqZTj _hXIGsQ _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
     disabled=""
-    variant="outline"
   >
     BUTTON
   </button>
@@ -469,6 +487,50 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 `;
 
 exports[`Button component renders a outline button 1`] = `
+._eapuuH[disabled] {
+  background-color: white;
+}
+
+._jcaWKm._jcaWKm:not([disabled]):hover,
+._jcaWKm:not([disabled):focus {
+  background-color: white;
+}
+
+._iQQUiE._iQQUiE:not([disabled]):hover,
+._iQQUiE:not([disabled):focus {
+  text-decoration-line: none;
+}
+
+._jrUrUN {
+  box-shadow: inset 0 0 0 2px;
+}
+
+._jPEaoV[disabled] {
+  color: var(--colors-primary900);
+}
+
+._bYkcXx._bYkcXx._bYkcXx:active {
+  color: var(--colors-primary500);
+}
+
+._kgpbQj._kgpbQj:not([disabled]):hover,
+._kgpbQj:not([disabled]):focus {
+  background-color: white;
+}
+
+._hzdivt._hzdivt:not([disabled]):hover,
+._hzdivt:not([disabled]):focus {
+  color: var(--colors-primary900);
+}
+
+._kVWBQp {
+  background-color: white;
+}
+
+._goMgqD {
+  color: var(--colors-primary500);
+}
+
 ._knMBno[disabled] {
   cursor: not-allowed;
 }
@@ -589,35 +651,9 @@ exports[`Button component renders a outline button 1`] = `
   border-top-style: none;
 }
 
-._logdPK._logdPK._logdPK:active {
-  background-color: var(--colors-primary500);
-}
-
-._iRIupi._iRIupi:not([disabled]):hover,
-._iRIupi:not([disabled]):focus {
-  background-color: var(--colors-primary900);
-}
-
-._iePRtq[disabled] {
-  color: var(--colors-tonal600);
-}
-
-._kkUuZE[disabled] {
-  background-color: var(--colors-tonal300);
-}
-
-._htOODa {
-  color: white;
-}
-
-._hPXiuU {
-  background-color: var(--colors-primary500);
-}
-
 <div>
   <button
-    class="_hPXiuU _htOODa _kkUuZE _iePRtq _iRIupi _logdPK _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
-    variant="outline"
+    class="_goMgqD _kVWBQp _hzdivt _kgpbQj _bYkcXx _jPEaoV _jrUrUN _iQQUiE _jcaWKm _eapuuH _eEUDVO _jOpMN _lmVhDS _foQeyu _hxITlq _fVdSKi _cvjZAR _cmjVcV _cKSYdt _iqmwNh _jBdvvl _dtUAqZ _oIZSq _dIHnma _ckmCCf _ddSdla _bIcFyi _laGdYr _eaYTuA _efExVU _kKqLFw _kaGCev _eJwsRe _hCA-dkJ _fGrnfI _kmyMpM _ftwEqf _eGbica _gRExQX _knMBno scid-kemCgU"
   >
     BUTTON
   </button>

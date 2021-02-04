@@ -14,7 +14,7 @@ describe(`Button component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
   it('renders a outline button', async () => {
-    const { container } = render(<Button variant="outline">BUTTON</Button>)
+    const { container } = render(<Button appearance="outline">BUTTON</Button>)
 
     await screen.getByText('BUTTON')
     expect(container).toMatchSnapshot()
@@ -33,7 +33,7 @@ describe(`Button component`, () => {
 
   it('renders a disabled secondary outline button', async () => {
     const { container } = render(
-      <Button disabled variant="outline" theme="secondary">
+      <Button disabled appearance="outline" theme="secondary">
         BUTTON
       </Button>
     )
@@ -44,6 +44,4 @@ describe(`Button component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
-
-  // TODO: figure out accessibility test issue
 })
