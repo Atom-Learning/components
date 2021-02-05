@@ -50,6 +50,6 @@ export const Text: React.FC<TextProps> = ({
   as = 'p',
   size = 'md',
   ...rest
-}): React.ReactElement => <StyledParagraph as={as} size={size} {...rest} />
+}) => <StyledParagraph as={as} size={size} {...rest} />
 
 Text.displayName = 'Text'

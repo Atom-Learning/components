@@ -33,10 +33,8 @@ const StyledLink = styled('a', {
 
 type LinkProps = StitchesProps<typeof StyledLink>
 
-export const Link = (props: LinkProps): React.ReactElement => (
-  <StyledLink {...props} />
+export const Link: React.FC<LinkProps> = ({ size = 'md', ...rest }) => (
+  <StyledLink size={size} {...rest} />
 )
 
-Link.defaultProps = {
-  size: 'md'
-} as Partial<LinkProps>
+Link.displayName = 'Link'
