@@ -14,6 +14,8 @@ const filterReactTypes = (prop) =>
 
 const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
   shouldExtractLiteralValuesFromEnum: true,
+  shouldExtractValuesFromUnion: true,
+  shouldRemoveUndefinedFromOptional: true,
   propFilter: filterReactTypes
 })
 
