@@ -17,6 +17,8 @@ src/
 	    index.ts
 ```
 
+**Note:** Documentation is nested in a folder only if there are more than 1 files. If there is only 1 file then it should be in the component folder.
+
 ## Component API
 
 ### Prop validation
