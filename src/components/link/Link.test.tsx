@@ -8,10 +8,10 @@ describe.only(`Link component`, () => {
   it('renders an anchor', async () => {
     const { container } = render(<Link href="https://google.com/">GOOGLE</Link>)
 
-    const renderedLink = (await screen.getByText('GOOGLE')) as HTMLAnchorElement
+    const link = await screen.getByText('GOOGLE')
 
-    expect(renderedLink.href).toBe('https://google.com/')
-    expect(renderedLink.text).toBe('GOOGLE')
+    expect(link).toHaveAttribute('href', 'https://google.com/')
+    expect(link).toHaveTextContent('GOOGLE')
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })

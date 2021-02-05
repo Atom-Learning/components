@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import { StitchesProps, styled } from '~/stitches'
-import { Override } from '~/utilities/types'
 
 const StyledLink = styled('a', {
   color: '$primary500',
@@ -32,12 +31,7 @@ const StyledLink = styled('a', {
   }
 })
 
-type LinkProps = Override<
-  StitchesProps<typeof StyledLink>,
-  {
-    size: 'sm' | 'md' | 'lg'
-  }
->
+type LinkProps = StitchesProps<typeof StyledLink>
 
 export const Link = (props: LinkProps): React.ReactElement => (
   <StyledLink {...props} />
