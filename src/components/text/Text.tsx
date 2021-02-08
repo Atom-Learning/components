@@ -33,7 +33,7 @@ const StyledParagraph = styled('p', {
 type TextProps = Override<
   StitchesProps<typeof StyledParagraph>,
   {
-    as:
+    as?:
       | 'blockquote'
       | 'caption'
       | 'dd'
@@ -42,15 +42,14 @@ type TextProps = Override<
       | 'li'
       | 'p'
       | 'span'
-    size: 'sm' | 'md' | 'lg'
+    size?: 'sm' | 'md' | 'lg'
   }
 >
 
-export const Text = (props: TextProps): React.ReactElement => (
-  <StyledParagraph {...props} />
-)
+export const Text: React.FC<TextProps> = ({
+  as = 'p',
+  size = 'md',
+  ...rest
+}) => <StyledParagraph as={as} size={size} {...rest} />
 
-Text.defaultProps = {
-  as: 'p',
-  size: 'md'
-} as Partial<TextProps>
+Text.displayName = 'Text'

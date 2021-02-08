@@ -6,7 +6,7 @@ import { Override } from '~/utilities/types'
 const StyledInput = styled('input', {
   appearance: 'none',
   border: '1px solid $tonal500',
-  borderRadius: '$1',
+  borderRadius: '$0',
   boxShadow: 'none', // necessary to prevent default iOS default styling
   boxSizing: 'border-box',
   color: '$tonal900',
@@ -35,27 +35,19 @@ const StyledInput = styled('input', {
 type InputProps = Override<
   StitchesProps<typeof StyledInput>,
   {
+    as: never
     type: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
 >
 
-export const Input: React.FC<InputProps> = ({
-  type,
-  ...props
-}): React.ReactElement => {
-  if (type === 'number')
+export const Input: React.FC<InputProps> = ({ type = 'text', ...rest }) => {
+  if (type === 'number') {
     return (
-      <StyledInput
-        type="text"
-        inputMode="numeric"
-        pattern="[0-9]*"
-        {...props}
-      />
+      <StyledInput type="text" inputMode="numeric" pattern="[0-9]*" {...rest} />
     )
+  }
 
-  return <StyledInput type={type} {...props} />
+  return <StyledInput type={type} {...rest} />
 }
 
-Input.defaultProps = {
-  type: 'text'
-} as Partial<InputProps>
+Input.displayName = 'Input'
