@@ -30,3 +30,5 @@ export const Heading: React.FC<HeadingProps> = ({
   size = 'md',
   ...props
 }) => <StyledHeading as={as} size={size} {...props} />
+
+Heading.displayName = 'Heading'
