@@ -82,98 +82,64 @@ const StyledButton = styled('button', {
   }
 })
 
+// Appearance Solid
 StyledButton.compoundVariant(
   { theme: 'primary', appearance: 'solid' },
   getButtonSolidVariant('$primary500', '$primary900')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'secondary',
-    appearance: 'solid'
-  },
+  { theme: 'secondary', appearance: 'solid' },
   getButtonSolidVariant('$secondary500', '$secondary700')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'tertiary',
-    appearance: 'solid'
-  },
+  { theme: 'tertiary', appearance: 'solid' },
   getButtonSolidVariant('$tertiary500', '$tertiary700')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'success',
-    appearance: 'solid'
-  },
+  { theme: 'success', appearance: 'solid' },
   getButtonSolidVariant('$success', '$successDark')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'warning',
-    appearance: 'solid'
-  },
+  { theme: 'warning', appearance: 'solid' },
   getButtonSolidVariant('$warning', '$warningDark')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'danger',
-    appearance: 'solid'
-  },
+  { theme: 'danger', appearance: 'solid' },
   getButtonSolidVariant('$danger', '$dangerDark')
 )
 
+// Appearance Outline
 StyledButton.compoundVariant(
-  {
-    theme: 'primary',
-    appearance: 'outline'
-  },
+  { theme: 'primary', appearance: 'outline' },
   getButtonOutlineVariant('$primary500', '$primary900')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'secondary',
-    appearance: 'outline'
-  },
+  { theme: 'secondary', appearance: 'outline' },
   getButtonOutlineVariant('$secondary500', '$secondary900')
 )
-
 StyledButton.compoundVariant(
-  {
-    theme: 'tertiary',
-    appearance: 'outline'
-  },
+  { theme: 'tertiary', appearance: 'outline' },
   getButtonOutlineVariant('$tertiary500', '$tertiary700')
 )
 
 type ButtonProps = Override<
   StitchesProps<typeof StyledButton>,
   {
-    theme:
+    theme?:
       | 'primary'
       | 'secondary'
       | 'tertiary'
       | 'success'
       | 'warning'
       | 'danger'
-    appearance: 'solid' | 'outline'
+    appearance?: 'solid' | 'outline'
   }
 >
 
-export const Button = ({
-  theme,
-  appearance,
+export const Button: React.FC<ButtonProps> = ({
+  theme = 'primary',
+  appearance = 'solid',
   ...rest
-}: ButtonProps): React.ReactElement => {
-  return <StyledButton theme={theme} appearance={appearance} {...rest} />
-}
+}) => <StyledButton theme={theme} appearance={appearance} {...rest} />
 
-Button.defaultProps = {
-  theme: 'primary',
-  appearance: 'solid'
-} as Partial<ButtonProps>
+Button.displayName = 'Button'
