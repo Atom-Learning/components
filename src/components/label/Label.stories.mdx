@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Label } from '.'
+
+<Meta title="Label" component={Label} />
+
+# Label
+
+`Label` is a thin wrapper around the basic HTML `<label/>` element. It adds default styling and the `css` prop. Use it to compose more complex field components and form related component.
+
+## Accessibility
+
+For accessibility purposes the component needs either to have the `htmlFor` prop set to link it to the control it is associated with or to wrap around the component that it is labelling
+
+## Sizes
+
+The default size is `md`.
+
+### `sm`
+
+<Label size="sm">A small label</Label>
+
+### `md`
+
+<Label>A normal label</Label>
+
+### `lg`
+
+<Label size="lg">A large label</Label>

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label component renders a label 1`] = `
+._laGdYr {
+  line-height: 1.4;
+}
+
+._bIcFyi {
+  letter-spacing: 0.02em;
+}
+
+._djHmRq {
+  max-width: 60ch;
+}
+
+._ckmCCf {
+  font-weight: 500;
+}
+
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._hbxPMb {
+  display: inline-block;
+}
+
+._bFduGn {
+  color: var(--colors-secondary300);
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+<div>
+  <label
+    class="_dIHnma _bFduGn _hbxPMb _oIZSq _ckmCCf _djHmRq _bIcFyi _laGdYr scid-jxOdYP"
+  >
+    TEXT
+  </label>
+</div>
+`;
