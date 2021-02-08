@@ -10,9 +10,9 @@ const StyledHeading = styled('h1', {
   lineHeight: '1.4',
   variants: {
     size: {
-      sm: { fontSize: '16px', letterSpacing: '0.01em' },
-      md: { fontSize: '28px', letterSpacing: '0.02em' },
-      lg: { fontSize: '37px', letterSpacing: '0.02em' }
+      sm: { fontSize: '$lg', letterSpacing: '0.01em' },
+      md: { fontSize: '$xl', letterSpacing: '0.02em' },
+      lg: { fontSize: '$xxl', letterSpacing: '0.02em' }
     }
   }
 })
