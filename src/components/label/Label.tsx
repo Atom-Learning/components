@@ -5,17 +5,14 @@ import { Override } from '~/utilities/types'
 
 const StyledLabel = styled('label', {
   color: '$secondary300',
-  display: 'inline-block',
   fontFamily: '$sans',
   fontWeight: 500,
-  maxWidth: '60ch',
   letterSpacing: '0.02em',
   lineHeight: '1.4',
   variants: {
     size: {
       sm: { fontSize: '$sm' },
-      md: { fontSize: '$md' },
-      lg: { fontSize: '$lg' }
+      md: { fontSize: '$md' }
     }
   }
 })
@@ -23,18 +20,17 @@ const StyledLabel = styled('label', {
 type LabelProps = Override<
   StitchesProps<typeof StyledLabel>,
   {
-    as?: 'label'
-    size?: 'sm' | 'md' | 'lg'
+    as: 'never'
+    size?: 'sm' | 'md'
   }
 >
 
 export const Label: React.FC<LabelProps> = ({
   size = 'md',
-  htmlFor,
   children,
   ...rest
 }) => (
-  <StyledLabel htmlFor={htmlFor} size={size} {...rest}>
+  <StyledLabel size={size} {...rest}>
     {children}
   </StyledLabel>
 )

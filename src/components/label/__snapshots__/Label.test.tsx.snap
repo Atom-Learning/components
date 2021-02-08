@@ -9,20 +9,12 @@ exports[`Label component renders a label 1`] = `
   letter-spacing: 0.02em;
 }
 
-._djHmRq {
-  max-width: 60ch;
-}
-
 ._ckmCCf {
   font-weight: 500;
 }
 
 ._oIZSq {
   font-family: var(--fonts-sans);
-}
-
-._hbxPMb {
-  display: inline-block;
 }
 
 ._bFduGn {
@@ -35,7 +27,7 @@ exports[`Label component renders a label 1`] = `
 
 <div>
   <label
-    class="_dIHnma _bFduGn _hbxPMb _oIZSq _ckmCCf _djHmRq _bIcFyi _laGdYr scid-jxOdYP"
+    class="_dIHnma _bFduGn _oIZSq _ckmCCf _bIcFyi _laGdYr scid-hCMVIz"
   >
     TEXT
   </label>
