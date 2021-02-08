@@ -8,7 +8,7 @@ import { Heading } from '.'
 
 `Heading` is our fundamental heading component. It should be used for all headings, whether it's for a page, `section`, card, etc.
 
-`Heading`'s `as` prop defaults to `h1` but accepts `h2`, `h3`, `h4`, `h5`, `h6`. 
+`Heading`'s `as` prop defaults to `h2` but accepts `h2`, `h3`, `h4`, `h5`, `h6`.
 Follow [semantic HTML guidelines](https://webaim.org/techniques/semanticstructure/) when deciding which element to use. Also note that the size of a heading is controlled
 separately to which element is used.
 
@@ -22,8 +22,8 @@ separately to which element is used.
 
 ### md
 
-<Heading size="md">A subheading in a page</Heading>
+<Heading>A subheading in a page. This is the default size.</Heading>
 
 ### lg
 
-<Heading>A page heading. This is the default size.</Heading>
+<Heading size="large">A page heading.</Heading>
