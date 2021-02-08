@@ -21,15 +21,15 @@ exports[`Heading component renders a heading 1`] = `
   letter-spacing: 0.02em;
 }
 
-._asaxz {
-  font-size: var(--fontSizes-xxl);
+._bYEAlH {
+  font-size: var(--fontSizes-xl);
 }
 
 <div>
-  <h1
-    class="_asaxz _bIcFyi _ebPSpF _oIZSq _gYAgHJ _laGdYr scid-htNdSc"
+  <h2
+    class="_bYEAlH _bIcFyi _ebPSpF _oIZSq _gYAgHJ _laGdYr scid-htNdSc"
   >
     HEADING
-  </h1>
+  </h2>
 </div>
 `;

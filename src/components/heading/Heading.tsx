@@ -25,11 +25,8 @@ type HeadingProps = Override<
   }
 >
 
-export const Heading: React.FC<HeadingProps> = (props) => {
-  return <StyledHeading {...props} />
-}
-
-Heading.defaultProps = {
-  as: 'h1',
-  size: 'lg'
-} as Partial<HeadingProps>
+export const Heading: React.FC<HeadingProps> = ({
+  as = 'h2',
+  size = 'md',
+  ...props
+}) => <StyledHeading as={as} size={size} {...props} />
