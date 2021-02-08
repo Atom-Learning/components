@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading component renders a heading 1`] = `
+._laGdYr {
+  line-height: 1.4;
+}
+
+._gYAgHJ {
+  font-weight: 700;
+}
+
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._ebPSpF {
+  color: $tonal-900;
+}
+
+._bIcFyi {
+  letter-spacing: 0.02em;
+}
+
+._bYEAlH {
+  font-size: var(--fontSizes-xl);
+}
+
+<div>
+  <h2
+    class="_bYEAlH _bIcFyi _ebPSpF _oIZSq _gYAgHJ _laGdYr scid-htNdSc"
+  >
+    HEADING
+  </h2>
+</div>
+`;

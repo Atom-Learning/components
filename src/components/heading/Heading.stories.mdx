@@ -1,0 +1,29 @@
+import { Canvas, Meta, Story, ArgsTable } from '@storybook/addon-docs/blocks'
+
+import { Heading } from '.'
+
+<Meta title="Heading" component={Heading} />
+
+# Heading
+
+`Heading` is our fundamental heading component. It should be used for all headings, whether it's for a page, `section`, card, etc.
+
+`Heading`'s `as` prop defaults to `h2` but accepts `h2`, `h3`, `h4`, `h5`, `h6`.
+Follow [semantic HTML guidelines](https://webaim.org/techniques/semanticstructure/) when deciding which element to use. Also note that the size of a heading is controlled
+separately to which element is used.
+
+## Sizes
+
+### sm
+
+<Heading size="sm">
+  A heading for an individual block of content, e.g. a card
+</Heading>
+
+### md
+
+<Heading>A subheading in a page. This is the default size.</Heading>
+
+### lg
+
+<Heading size="large">A page heading.</Heading>

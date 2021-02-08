@@ -1,6 +1,7 @@
 export { Box } from './box'
 export { Flex } from './flex'
 export { Grid } from './grid'
+export { Heading } from './heading'
 export { Input } from './input'
 export { Link } from './link'
 export { Text } from './text'
