@@ -94,7 +94,8 @@
     "react": "^16.8.0"
   },
   "dependencies": {
-    "@stitches/react": "0.0.3-canary.4"
+    "@stitches/react": "0.0.3-canary.4",
+    "react-feather": "^2.0.9"
   },
   "husky": {
     "hooks": {
