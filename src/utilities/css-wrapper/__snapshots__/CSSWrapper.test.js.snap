@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSSWrapper component doesn't render if not passed CSS blob 1`] = `
+<div>
+  <p>
+    Example text
+  </p>
+</div>
+`;
+
+exports[`CSSWrapper component renders if passed CSS blob 1`] = `
+._Fgykb {
+  margin-top: auto;
+}
+
+._bVZaHo {
+  margin-right: auto;
+}
+
+._kSJetr {
+  margin-bottom: auto;
+}
+
+._jbMiSP {
+  margin-left: auto;
+}
+
+._SOQhS {
+  height: 100px;
+}
+
+._ffzcdL {
+  width: 100px;
+}
+
+<div>
+  <div
+    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
+    data-testid="css-wrapper"
+  >
+    <p>
+      Example text
+    </p>
+  </div>
+</div>
+`;
