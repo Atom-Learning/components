@@ -11,12 +11,10 @@ const StyledCheckbox = styled('input', {
 
 type CheckboxProps = Omit<StitchesProps<typeof StyledCheckbox>, 'as' | 'type'>
 
-const CheckboxWrapper = (props) => <Box as="label" {...props} />
-
 export const Checkbox: React.FC<CheckboxProps> = ({ name, css, ...props }) => {
   return (
-    <CheckboxWrapper css={css}>
-      <StyledCheckbox type="checkbox" {...props} name={name} id={name} />
+    <Box as="label" css={css}>
+      <StyledCheckbox type="checkbox" name={name} id={name} {...props} />
       <Box
         css={{
           borderRadius: '3px',
@@ -42,7 +40,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({ name, css, ...props }) => {
       >
         <Check />
       </Box>
-    </CheckboxWrapper>
+    </Box>
   )
 }
 
