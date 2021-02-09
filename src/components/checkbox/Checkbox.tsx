@@ -17,14 +17,13 @@ export const Checkbox: React.FC<CheckboxProps> = ({ name, css, ...props }) => {
       <StyledCheckbox type="checkbox" name={name} id={name} {...props} />
       <Box
         css={{
-          borderRadius: '3px',
+          borderRadius: '$0',
           border: '2px solid $secondary300',
           display: 'flex',
           alignItems: 'center',
-          flex: '1 0 auto',
-          height: '16px',
+          height: '$0',
+          width: '$0',
           transition: 'all 100ms ease-out',
-          width: '16px',
           ':not(:checked) + &:hover': {
             backgroundColor: '$tonal300'
           },
@@ -38,7 +37,14 @@ export const Checkbox: React.FC<CheckboxProps> = ({ name, css, ...props }) => {
           }
         }}
       >
-        <Check />
+        <Box
+          as={Check}
+          css={{
+            transition: 'all 100ms ease-out',
+            opacity: 0,
+            ':checked + div > &': { opacity: 1 }
+          }}
+        />
       </Box>
     </Box>
   )
