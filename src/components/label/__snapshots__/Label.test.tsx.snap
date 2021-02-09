@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label component renders a label 1`] = `
+._laGdYr {
+  line-height: 1.4;
+}
+
+._bIcFyi {
+  letter-spacing: 0.02em;
+}
+
+._ckmCCf {
+  font-weight: 500;
+}
+
+._oIZSq {
+  font-family: var(--fonts-sans);
+}
+
+._bFduGn {
+  color: var(--colors-secondary300);
+}
+
+._dIHnma {
+  font-size: var(--fontSizes-md);
+}
+
+<div>
+  <label
+    class="_dIHnma _bFduGn _oIZSq _ckmCCf _bIcFyi _laGdYr scid-hCMVIz"
+  >
+    TEXT
+  </label>
+</div>
+`;
