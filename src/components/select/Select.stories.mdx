@@ -1,0 +1,149 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  ArgsTable,
+  Preview
+} from '@storybook/addon-docs/blocks'
+
+import { Select } from './'
+import { Flex } from '~/components/'
+
+import { disableStitchesProps } from '~/utilities/storybook'
+
+<Meta title="Select" component={Select} />
+
+# Select
+
+The `Select` component is a very thin wrapper around an HTML `select` element. It adds default styling and the `css` prop.
+
+`Select` need to be associated with a label for accessibility purposes, however before using this component consider using one of the provided `Field` components that are available. Use this `Select` to compose more complex `Field` type components.
+
+<Preview>
+  <Story name="Basic">
+    <Select
+      ariaLabel={'basic'}
+      options={[
+        { value: 1, label: 'Apples' },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Accessibility
+
+For accessibility purposes the component needs either to have the `id` or `name` prop set to link it to the label it is associated with. If those are not available, please add an `aria-label` or a `title` to ensure that the component remains accessible
+
+## Sizes
+
+There are five available sizes for this component `full`(default), `lg`, `md`, `sm`, `xs` and `xxs`.
+
+<Preview>
+  <Story name="Sizes">
+    <Flex css={{ flexDirection: 'column', gap: '$2' }}>
+      <Select
+        size="full"
+        ariaLabel={'full size dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+      <Select
+        size="lg"
+        ariaLabel={'large dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+      <Select
+        size="md"
+        ariaLabel={'medium dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+      <Select
+        size="sm"
+        ariaLabel={'small dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+      <Select
+        size="xs"
+        ariaLabel={'extra small dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+      <Select
+        size="xxs"
+        ariaLabel={'extra extra small dropdown'}
+        options={[
+          { value: 1, label: 'Apples' },
+          { value: 2, label: 'Bananas' }
+        ]}
+      />
+    </Flex>
+  </Story>
+</Preview>
+
+## Default Option
+
+The component can display a default option without a value by passing the `defaultOption` property.
+
+<Preview>
+  <Story name="Default option">
+    <Select
+      defaultOption="please select"
+      ariaLabel={'with default option'}
+      options={[
+        { value: 1, label: 'one' },
+        { value: 2, label: 'two' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Disabled select
+
+The component has a `disabled` state, by setting the `disabled` property.
+
+<Preview>
+  <Story name="Disabled control">
+    <Select
+      disabled={true}
+      ariaLabel={'disabled dropdown'}
+      options={[
+        { value: 1, label: 'Apples' },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Disabled Option
+
+The component can show an option as `disabled`, by setting the `disabled` property on the option.
+
+<Preview>
+  <Story name="Disabled Option">
+    <Select
+      ariaLabel={'disabled options dropdown'}
+      options={[
+        { value: 1, label: 'Apples', disabled: true },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Props
+
+<ArgsTable of={Select} />
