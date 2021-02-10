@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox component renders a checkbox 1`] = `
+._jrmBkG._jrmBkG[data-state="checked"]:hover,
+._jrmBkG[data-state="unchecked"]:focus {
+  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+}
+
+._cMbILZ._cMbILZ[data-state="checked"]:hover,
+._cMbILZ[data-state="unchecked"]:focus {
+  background-color: var(--colors-secondary700);
+}
+
+._iHIYYq[data-state="checked"] {
+  background-color: var(--colors-secondary300);
+}
+
+._fbTcBN._fbTcBN._fbTcBN._fbTcBN:focus,
+._fbTcBN:hover {
+  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+}
+
+._jAvHmk._jAvHmk._jAvHmk._jAvHmk:focus,
+._jAvHmk:hover {
+  background-color: var(--colors-tonal300);
+}
+
+._bwOIno._bwOIno._bwOIno._bwOIno:focus,
+._bwOIno:hover {
+  outline: none;
+}
+
+._kKqLFw {
+  transition-timing-function: ease-out;
+}
+
+._dmGTUL {
+  transition-duration: 100ms;
+}
+
+._eaYTuA {
+  transition-property: all;
+}
+
+._jBdvvl {
+  justify-content: center;
+}
+
+._dtUAqZ {
+  align-items: center;
+}
+
+._iqmwNh {
+  display: flex;
+}
+
+._hMNIxR {
+  width: var(--sizes-0);
+}
+
+._dVjKDk {
+  height: var(--sizes-0);
+}
+
+._jJtiCr {
+  box-shadow: inset 0 0 0 2px var(--colors-secondary300);
+}
+
+._haYhrD {
+  padding-left: 0px;
+}
+
+._dBIZWf {
+  padding-bottom: 0px;
+}
+
+._ifTTws {
+  padding-right: 0px;
+}
+
+._knCjlL {
+  padding-top: 0px;
+}
+
+._htOODa {
+  color: white;
+}
+
+._BZBbU {
+  border-bottom-right-radius: 2px;
+}
+
+._hnNeTY {
+  border-top-right-radius: 2px;
+}
+
+._hPObMf {
+  border-top-left-radius: 2px;
+}
+
+._DRrvv {
+  border-bottom-left-radius: 2px;
+}
+
+._foQeyu {
+  border-left-style: none;
+}
+
+._lmVhDS {
+  border-bottom-style: none;
+}
+
+._jOpMN {
+  border-right-style: none;
+}
+
+._eEUDVO {
+  border-top-style: none;
+}
+
+._cqfPeM {
+  background-color: transparent;
+}
+
+._fAMvjM {
+  appearance: none;
+}
+
+<div>
+  <input
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="false"
+    class="_fAMvjM _cqfPeM _eEUDVO _jOpMN _lmVhDS _foQeyu _DRrvv _hPObMf _hnNeTY _BZBbU _htOODa _knCjlL _ifTTws _dBIZWf _haYhrD _jJtiCr _dVjKDk _hMNIxR _iqmwNh _dtUAqZ _jBdvvl _eaYTuA _dmGTUL _kKqLFw _bwOIno _jAvHmk _fbTcBN _iHIYYq _cMbILZ _jrmBkG scid-lbAvFd"
+    data-radix-checkbox=""
+    data-state="unchecked"
+    role="checkbox"
+    type="button"
+    value="on"
+  />
+</div>
+`;

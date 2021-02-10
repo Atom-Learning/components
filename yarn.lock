@@ -1629,6 +1629,67 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.6.0.tgz#f022195afdfc942e088ee2101285a1d31c7d727f"
   integrity sha512-cPqjjzuFWNK3BSKLm0abspP0sp/IGOli4p5I5fKFAzdS8fvjdOwDCfZqAaIiXd9lPkOWi3SUUfZof3hEb7J/uw==
 
+"@radix-ui/react-checkbox@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-checkbox/-/react-checkbox-0.0.4.tgz#34a7796c8c5f0c27ec236f280ea1afcb8f526105"
+  integrity sha512-oAhp/b6+sn1YW9MnGuUsj86i9BowkCQkz4y4kOvs0hC++db6VcoEexvIpAcAcTbu8ts3aadkCLZ6W3CzF9ACOA==
+  dependencies:
+    "@radix-ui/react-label" "0.0.4"
+    "@radix-ui/react-polymorphic" "0.0.4"
+    "@radix-ui/react-presence" "0.0.4"
+    "@radix-ui/react-primitive" "0.0.3"
+    "@radix-ui/react-utils" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-icons@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-icons/-/react-icons-1.0.1.tgz#37de40b8b4f3a8197ac1d29d04870e4a68f5c5b1"
+  integrity sha512-EKEB7aL4FaQyK77ff8hhl+XSIUE8wQ56pHh9XnJpuwXbYSDiYELQtbS+YNFo7KJJUDre6RVFmibc223SoUxozA==
+
+"@radix-ui/react-label@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-label/-/react-label-0.0.4.tgz#70af1710083bd170b1838f70bbe0069d9e7f85ef"
+  integrity sha512-aaLpMdX5Nnlr9duJ5cowbCT/DU2SH4flznhH0awRy31h057ZCvbyRwZ1hFt+WWf4/Zn4cOrIstRe537OykRNmw==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.4"
+    "@radix-ui/react-primitive" "0.0.3"
+    "@radix-ui/react-utils" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-polymorphic@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.4.tgz#15ae4d971054c4598141f384e56b98b4f952a23c"
+  integrity sha512-VmMdYtv2GFMPUfZflO2cqB4s1Ge0BfsbrgALk16mZhNsRLwLyUKDlSgFT0SBMqcYRQKKfto0cRpZFHEJseicbg==
+
+"@radix-ui/react-presence@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-presence/-/react-presence-0.0.4.tgz#f557942065293bbc081f6e3e4230282560e95f82"
+  integrity sha512-6Cb5AZSb4pgXfNhdjBSCVZ4ib3Z8X6oxwZNLMyHNyCIltokNNl9WqMTO5jcXi/RqpFm8sBqQNZtCwnk59LhFEg==
+  dependencies:
+    "@radix-ui/react-utils" "0.0.4"
+    "@xstate/fsm" "^1.5.1"
+
+"@radix-ui/react-primitive@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-primitive/-/react-primitive-0.0.3.tgz#208501ee0fceeb7595594529fab17d40cf224b09"
+  integrity sha512-pAn9ZgOayQJelWY7NThIrOy1qF18AX9vErnT0tDRaTK5YSsRHljTjSD14Mj2A0S/oYp2sGU/dT6n5ERO6iOLjg==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-utils@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-utils/-/react-utils-0.0.4.tgz#4834cac08088163e0e738c3017fecab406236185"
+  integrity sha512-HqC9OJJjoDun7LNqwYzVX9gYaH5yGhdNtaBRPoSt8wywh+Kv0iU6lDP5H7w7j+6TzZCHH8XEzRbmOSowzlpGAA==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/utils@0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@radix-ui/utils/-/utils-0.0.3.tgz#f20dfa8a5681d778a579ad695fe68fe6a2c0ee88"
+  integrity sha512-ruWffd3JjN8r+j8+LOIzTNEHzJsFcHOiSnQfl8KeBs+sCHGQgaI9IaRWxsaNXgrOYgPdBlZCbYG3qsLww2WR+w==
+
 "@reach/router@^1.3.3":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.4.tgz#d2574b19370a70c80480ed91f3da840136d10f8c"
@@ -2913,6 +2974,11 @@
     "@webassemblyjs/ast" "1.9.0"
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
+
+"@xstate/fsm@^1.5.1":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@xstate/fsm/-/fsm-1.6.0.tgz#589cefcef426d5bf3d654edbca89e84e3b637c5f"
+  integrity sha512-YJpzKLPxMBUUQCTkjIbicsax6svTbPz5ykTkotIaa3kOoTnBJ4CWfC0cSQuMg7FAsfV2XWOuEsFq0dbmY7NtXg==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
@@ -11715,13 +11781,6 @@ react-fast-compare@^3.0.1, react-fast-compare@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
-
-react-feather@^2.0.9:
-  version "2.0.9"
-  resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.9.tgz#6e42072130d2fa9a09d4476b0e61b0ed17814480"
-  integrity sha512-yMfCGRkZdXwIs23Zw/zIWCJO3m3tlaUvtHiXlW+3FH7cIT6fiK1iJ7RJWugXq7Fso8ZaQyUm92/GOOHXvkiVUw==
-  dependencies:
-    prop-types "^15.7.2"
 
 react-helmet-async@^1.0.2:
   version "1.0.7"
