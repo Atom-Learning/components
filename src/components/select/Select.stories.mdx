@@ -17,7 +17,7 @@ import { disableStitchesProps } from '~/utilities/storybook'
 
 The `Select` component is a very thin wrapper around an HTML `select` element. It adds default styling and the `css` prop.
 
-`Select` need to be associated with a label for accessibility purposes, however before using this component consider using one of the provided `Field` components that are available. Use this `Select` to compose more complex `Field` type components.
+A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
 
 <Preview>
   <Story name="Basic">

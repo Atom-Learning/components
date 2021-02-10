@@ -3,7 +3,6 @@ import * as React from 'react'
 import { StitchesProps, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
-// TODO: missing on hover? current system doesn't apply one
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
@@ -24,7 +23,10 @@ const StyledSelect = styled('select', {
   py: '$2',
   transition: 'all 75ms ease-out',
   width: '100%',
-  '&:focus': {
+  ':hover': {
+    cursor: 'pointer'
+  },
+  ':focus': {
     boxShadow: 'inset 0 0 0 1px $primary900',
     borderColor: '$primary900',
     outline: 'none'
@@ -32,22 +34,21 @@ const StyledSelect = styled('select', {
   '&::-ms-expand': {
     display: 'none'
   },
-  '&:disabled, > option:disabled': {
+  ':disabled, > option:disabled': {
     opacity: '0.7',
     backgroundColor: '$tonal300',
     cursor: 'not-allowed'
   }
 })
 
-type Option = {
-  value: string
-  label: string
-  disabled?: boolean
-}
 type SelectProps = Override<
   StitchesProps<typeof StyledSelect>,
   {
-    options: Array<Option>
+    options: {
+      value: string
+      label: string
+      disabled?: boolean
+    }[]
     defaultOption?: string
     ariaLabel: string
   }
@@ -55,12 +56,11 @@ type SelectProps = Override<
 
 export const Select: React.FC<SelectProps> = ({
   options,
-  disabled,
   defaultOption,
   ariaLabel,
   ...rest
 }) => (
-  <StyledSelect aria-label={ariaLabel} disabled={disabled} {...rest}>
+  <StyledSelect aria-label={ariaLabel} {...rest}>
     {defaultOption && <option> {defaultOption}</option>}
     {options &&
       options.map((option) => (
