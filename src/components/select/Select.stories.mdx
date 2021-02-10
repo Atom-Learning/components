@@ -22,7 +22,7 @@ A `Select` needs to be associated with a label for accessibility purposes, so ra
 <Preview>
   <Story name="Basic">
     <Select
-      ariaLabel={'basic'}
+      aria-label="select fruits"
       options={[
         { value: 1, label: 'Apples' },
         { value: 2, label: 'Bananas' }
@@ -33,7 +33,7 @@ A `Select` needs to be associated with a label for accessibility purposes, so ra
 
 ## Accessibility
 
-For accessibility purposes the component needs either to have the `id` or `name` prop set to link it to the label it is associated with. If those are not available, please add an `aria-label` or a `title` to ensure that the component remains accessible
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If those are not available, please add an `aria-label` or a `title` to ensure that the component remains accessible
 
 ## Default Option
 
@@ -42,8 +42,8 @@ The component can display a default option without a value by passing the `defau
 <Preview>
   <Story name="Default option">
     <Select
+      aria-label="select number"
       defaultOption="please select"
-      ariaLabel={'with default option'}
       options={[
         { value: 1, label: 'one' },
         { value: 2, label: 'two' }
@@ -59,8 +59,8 @@ The component has a `disabled` state, by setting the `disabled` property.
 <Preview>
   <Story name="Disabled control">
     <Select
+      aria-label="can't select fruits"
       disabled={true}
-      ariaLabel={'disabled dropdown'}
       options={[
         { value: 1, label: 'Apples' },
         { value: 2, label: 'Bananas' }
@@ -76,7 +76,7 @@ The component can show an option as `disabled`, by setting the `disabled` proper
 <Preview>
   <Story name="Disabled Option">
     <Select
-      ariaLabel={'disabled options dropdown'}
+      aria-label="select fruits"
       options={[
         { value: 1, label: 'Apples', disabled: true },
         { value: 2, label: 'Bananas' }

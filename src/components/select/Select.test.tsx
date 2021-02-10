@@ -11,7 +11,7 @@ describe.only(`Select component`, () => {
     { label: 'Option 3', value: 'value3' }
   ]
   it('renders select with no options', async () => {
-    const { container } = render(<Select ariaLabel="dropdown" />)
+    const { container } = render(<Select aria-label="dropdown" />)
     const select = screen.getByRole('combobox')
 
     expect(select).toBeInTheDocument()
@@ -22,7 +22,7 @@ describe.only(`Select component`, () => {
   })
   it('renders a select with 3 options', async () => {
     const { container } = render(
-      <Select ariaLabel="dropdown" options={mockOptions} />
+      <Select aria-label="dropdown" options={mockOptions} />
     )
 
     const options = await screen.getAllByRole('option')
@@ -38,7 +38,7 @@ describe.only(`Select component`, () => {
   it('renders select with a default option', async () => {
     const { container } = render(
       <Select
-        ariaLabel="dropdown"
+        aria-label="dropdown"
         defaultOption="Please select:"
         options={mockOptions}
       />
@@ -51,7 +51,7 @@ describe.only(`Select component`, () => {
   })
 
   it('renders an disabled select', async () => {
-    const { container } = render(<Select ariaLabel="dropdown" disabled />)
+    const { container } = render(<Select aria-label="dropdown" disabled />)
     const select = screen.getByRole('combobox')
 
     expect(select).toBeInTheDocument()
@@ -62,7 +62,7 @@ describe.only(`Select component`, () => {
   it('renders select with a disabled option', async () => {
     const { container } = render(
       <Select
-        ariaLabel="dropdown"
+        aria-label="dropdown"
         options={[
           ...mockOptions,
           { label: 'Option 4', value: 'value4', disabled: true }

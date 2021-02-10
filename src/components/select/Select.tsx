@@ -44,23 +44,21 @@ const StyledSelect = styled('select', {
 type SelectProps = Override<
   StitchesProps<typeof StyledSelect>,
   {
-    options: {
+    options?: {
       value: string
       label: string
       disabled?: boolean
     }[]
     defaultOption?: string
-    ariaLabel: string
-  }
+  } & ({ id: string } | { 'aria-label': string })
 >
 
 export const Select: React.FC<SelectProps> = ({
   options,
   defaultOption,
-  ariaLabel,
   ...rest
 }) => (
-  <StyledSelect aria-label={ariaLabel} {...rest}>
+  <StyledSelect {...rest}>
     {defaultOption && <option> {defaultOption}</option>}
     {options &&
       options.map((option) => (
