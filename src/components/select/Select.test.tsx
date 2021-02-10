@@ -77,14 +77,4 @@ describe.only(`Select component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
-  it('renders an xss size select', async () => {
-    const { container } = render(
-      <Select ariaLabel="dropdown" size="xxs" options={mockOptions} />
-    )
-
-    await screen.getByRole('combobox')
-
-    expect(container).toMatchSnapshot()
-    expect(await axe(container)).toHaveNoViolations()
-  })
 })

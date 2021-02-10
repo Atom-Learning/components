@@ -36,28 +36,6 @@ const StyledSelect = styled('select', {
     opacity: '0.7',
     backgroundColor: '$tonal300',
     cursor: 'not-allowed'
-  },
-  variants: {
-    size: {
-      xxs: {
-        width: 100
-      },
-      xs: {
-        width: 150
-      },
-      sm: {
-        width: 250
-      },
-      md: {
-        width: 400
-      },
-      lg: {
-        width: 550
-      },
-      full: {
-        width: '100%'
-      }
-    }
   }
 })
 
@@ -79,16 +57,10 @@ export const Select: React.FC<SelectProps> = ({
   options,
   disabled,
   defaultOption,
-  size = 'full',
   ariaLabel,
   ...rest
 }) => (
-  <StyledSelect
-    aria-label={ariaLabel}
-    disabled={disabled}
-    size={size}
-    {...rest}
-  >
+  <StyledSelect aria-label={ariaLabel} disabled={disabled} {...rest}>
     {defaultOption && <option> {defaultOption}</option>}
     {options &&
       options.map((option) => (

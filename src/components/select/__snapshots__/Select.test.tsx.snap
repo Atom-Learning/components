@@ -44,6 +44,10 @@ exports[`Select component renders a select with 3 options 1`] = `
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
+._gWxQGm {
+  width: 100%;
+}
+
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -184,14 +188,10 @@ exports[`Select component renders a select with 3 options 1`] = `
   appearance: none;
 }
 
-._gWxQGm {
-  width: 100%;
-}
-
 <div>
   <select
     aria-label="dropdown"
-    class="_gWxQGm _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
+    class="_fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _gWxQGm _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-gtsYSs"
   >
     <option
       value="value1"
@@ -256,207 +256,10 @@ exports[`Select component renders an disabled select 1`] = `
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
-._kKqLFw {
-  transition-timing-function: ease-out;
-}
-
-._hOHhxc {
-  transition-duration: 75ms;
-}
-
-._eaYTuA {
-  transition-property: all;
-}
-
-._kmyMpM {
-  padding-bottom: var(--space-2);
-}
-
-._fGrnfI {
-  padding-top: var(--space-2);
-}
-
-._ejjNCC {
-  padding-right: var(--space-3);
-}
-
-._jpQaAF {
-  padding-left: var(--space-3);
-}
-
-._laGdYr {
-  line-height: 1.4;
-}
-
-._cWrLqR {
-  letter-spacing: 0.01em;
-}
-
-._ddSdla {
-  height: var(--sizes-2);
-}
-
-._heQxlO {
-  font-weight: 400;
-}
-
-._oIZSq {
-  font-family: var(--fonts-sans);
-}
-
-._iGHkTP {
-  display: block;
-}
-
-._gTvwgM {
-  border-left-color: var(--colors-tonal500);
-}
-
-._gCPJGA {
-  border-bottom-color: var(--colors-tonal500);
-}
-
-._fkMoMT {
-  border-right-color: var(--colors-tonal500);
-}
-
-._bWucow {
-  border-top-color: var(--colors-tonal500);
-}
-
-._fsNLp {
-  border-left-style: solid;
-}
-
-._iyDEp {
-  border-bottom-style: solid;
-}
-
-._jClUIq {
-  border-right-style: solid;
-}
-
-._bKudwR {
-  border-top-style: solid;
-}
-
-._dFXvMo {
-  border-left-width: 1px;
-}
-
-._dICIiI {
-  border-bottom-width: 1px;
-}
-
-._bxAjFr {
-  border-right-width: 1px;
-}
-
-._itFHCM {
-  border-top-width: 1px;
-}
-
-._gpXcaM {
-  border-bottom-right-radius: var(--radii-0);
-}
-
-._pLtwA {
-  border-top-right-radius: var(--radii-0);
-}
-
-._cSbnDL {
-  border-top-left-radius: var(--radii-0);
-}
-
-._dEFdBr {
-  border-bottom-left-radius: var(--radii-0);
-}
-
-._jAwRYI {
-  background-size: 0.65em auto, 100%;
-}
-
-._SagVE {
-  background-repeat: no-repeat, repeat;
-}
-
-._bIbwby {
-  background-position: right 16px top 50%, 0 0;
-}
-
-._brPzkj {
-  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%0A%20%20%3Cpath%20fill%3D%22%230f65b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-._kVWBQp {
-  background-color: white;
-}
-
-._fAMvjM {
-  appearance: none;
-}
-
 ._gWxQGm {
   width: 100%;
 }
 
-<div>
-  <select
-    aria-label="dropdown"
-    class="_gWxQGm _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
-    disabled=""
-  />
-</div>
-`;
-
-exports[`Select component renders an xss size select 1`] = `
-._ffzcdL {
-  width: 100px;
-}
-
-._gTJHQO._gTJHQO._gTJHQO._gTJHQO._gTJHQO._gTJHQO:disabled,
-._gTJHQO._gTJHQO._gTJHQO._gTJHQO._gTJHQO._gTJHQO > option:disabled {
-  cursor: not-allowed;
-}
-
-._eeMqMG._eeMqMG._eeMqMG._eeMqMG._eeMqMG._eeMqMG:disabled,
-._eeMqMG._eeMqMG._eeMqMG._eeMqMG._eeMqMG._eeMqMG > option:disabled {
-  background-color: var(--colors-tonal300);
-}
-
-._fzFioI._fzFioI._fzFioI._fzFioI._fzFioI._fzFioI:disabled,
-._fzFioI._fzFioI._fzFioI._fzFioI._fzFioI._fzFioI > option:disabled {
-  opacity: 0.7;
-}
-
-._cUIJUo::-ms-expand {
-  display: none;
-}
-
-._cuMEHZ._cuMEHZ._cuMEHZ._cuMEHZ:focus {
-  outline: none;
-}
-
-._cqAMVP._cqAMVP._cqAMVP._cqAMVP:focus {
-  border-left-color: var(--colors-primary900);
-}
-
-._iSyhvT._iSyhvT._iSyhvT._iSyhvT:focus {
-  border-bottom-color: var(--colors-primary900);
-}
-
-._jDatdc._jDatdc._jDatdc._jDatdc:focus {
-  border-right-color: var(--colors-primary900);
-}
-
-._dyCacD._dyCacD._dyCacD._dyCacD:focus {
-  border-top-color: var(--colors-primary900);
-}
-
-._fsZzKT._fsZzKT._fsZzKT._fsZzKT:focus {
-  box-shadow: inset 0 0 0 1px var(--colors-primary900);
-}
-
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -600,24 +403,9 @@ exports[`Select component renders an xss size select 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="_ffzcdL _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
-  >
-    <option
-      value="value1"
-    >
-      Option 1
-    </option>
-    <option
-      value="value2"
-    >
-      Option 2
-    </option>
-    <option
-      value="value3"
-    >
-      Option 3
-    </option>
-  </select>
+    class="_fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _gWxQGm _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-gtsYSs"
+    disabled=""
+  />
 </div>
 `;
 
@@ -665,6 +453,10 @@ exports[`Select component renders select with a default option 1`] = `
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
+._gWxQGm {
+  width: 100%;
+}
+
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -805,14 +597,10 @@ exports[`Select component renders select with a default option 1`] = `
   appearance: none;
 }
 
-._gWxQGm {
-  width: 100%;
-}
-
 <div>
   <select
     aria-label="dropdown"
-    class="_gWxQGm _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
+    class="_fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _gWxQGm _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-gtsYSs"
   >
     <option>
        Please select:
@@ -880,6 +668,10 @@ exports[`Select component renders select with a disabled option 1`] = `
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
+._gWxQGm {
+  width: 100%;
+}
+
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -1020,14 +812,10 @@ exports[`Select component renders select with a disabled option 1`] = `
   appearance: none;
 }
 
-._gWxQGm {
-  width: 100%;
-}
-
 <div>
   <select
     aria-label="dropdown"
-    class="_gWxQGm _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
+    class="_fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _gWxQGm _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-gtsYSs"
   >
     <option
       value="value1"
@@ -1098,6 +886,10 @@ exports[`Select component renders select with no options 1`] = `
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
 }
 
+._gWxQGm {
+  width: 100%;
+}
+
 ._kKqLFw {
   transition-timing-function: ease-out;
 }
@@ -1238,14 +1030,10 @@ exports[`Select component renders select with no options 1`] = `
   appearance: none;
 }
 
-._gWxQGm {
-  width: 100%;
-}
-
 <div>
   <select
     aria-label="dropdown"
-    class="_gWxQGm _fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-jPqVLc"
+    class="_fAMvjM _kVWBQp _brPzkj _bIbwby _SagVE _jAwRYI _dEFdBr _cSbnDL _pLtwA _gpXcaM _itFHCM _bxAjFr _dICIiI _dFXvMo _bKudwR _jClUIq _iyDEp _fsNLp _bWucow _fkMoMT _gCPJGA _gTvwgM _iGHkTP _oIZSq _heQxlO _ddSdla _cWrLqR _laGdYr _jpQaAF _ejjNCC _fGrnfI _kmyMpM _eaYTuA _hOHhxc _kKqLFw _gWxQGm _fsZzKT _dyCacD _jDatdc _iSyhvT _cqAMVP _cuMEHZ _cUIJUo _fzFioI _eeMqMG _gTJHQO scid-gtsYSs"
   />
 </div>
 `;

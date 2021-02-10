@@ -35,65 +35,6 @@ The `Select` component is a very thin wrapper around an HTML `select` element. I
 
 For accessibility purposes the component needs either to have the `id` or `name` prop set to link it to the label it is associated with. If those are not available, please add an `aria-label` or a `title` to ensure that the component remains accessible
 
-## Sizes
-
-There are five available sizes for this component `full`(default), `lg`, `md`, `sm`, `xs` and `xxs`.
-
-<Preview>
-  <Story name="Sizes">
-    <Flex css={{ flexDirection: 'column', gap: '$2' }}>
-      <Select
-        size="full"
-        ariaLabel={'full size dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-      <Select
-        size="lg"
-        ariaLabel={'large dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-      <Select
-        size="md"
-        ariaLabel={'medium dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-      <Select
-        size="sm"
-        ariaLabel={'small dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-      <Select
-        size="xs"
-        ariaLabel={'extra small dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-      <Select
-        size="xxs"
-        ariaLabel={'extra extra small dropdown'}
-        options={[
-          { value: 1, label: 'Apples' },
-          { value: 2, label: 'Bananas' }
-        ]}
-      />
-    </Flex>
-  </Story>
-</Preview>
-
 ## Default Option
 
 The component can display a default option without a value by passing the `defaultOption` property.
