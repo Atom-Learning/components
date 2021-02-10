@@ -6,10 +6,11 @@ import { Checkbox } from '.'
 
 # Checkbox
 
-`Checkbox` provides a styled checkbox. 
+`Checkbox` provides a styled checkbox.
 
 Checkboxes should be accompanied by labels, so rather than using `Checkbox` directly in a UI,
-it's normally best to use a field component, which combines an `Checkbox` with a `Label` and
-displays validation errors.
+it's normally best to the `CheckboxField` component, which combines a `Checkbox` with a `Label` and
+displays validation errors. Alternatively, use this `Checkbox` component to compose other field components
+with more specific requirements.
 
-<Checkbox />
+<Checkbox aria-label="label" />

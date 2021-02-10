@@ -9,26 +9,31 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   backgroundColor: 'transparent',
   border: 'none',
   borderRadius: 2,
-  color: 'white',
-  padding: 0,
   boxShadow: 'inset 0 0 0 2px $secondary300',
+  color: 'white',
+  cursor: 'pointer',
+  padding: 0,
   height: '$0',
   width: '$0',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all 100ms ease-out',
-  '&:focus, &:hover': {
-    outline: 'none',
+  '&[data-state="unchecked"]:focus, &[data-state="unchecked"]:hover': {
     backgroundColor: '$tonal300',
-    boxShadow: 'inset 0 0 0 2px $secondary700'
+    boxShadow: 'inset 0 0 0 2px $secondary700',
+    outline: 'none'
   },
   '&[data-state="checked"]': {
     backgroundColor: '$secondary300'
   },
   '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
     backgroundColor: '$secondary700',
-    boxShadow: 'inset 0 0 0 2px $secondary700'
+    boxShadow: 'inset 0 0 0 2px $secondary700',
+    outline: 'none'
+  },
+  '&:focus-within': {
+    outline: 'none'
   }
 })
 

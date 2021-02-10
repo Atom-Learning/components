@@ -6,7 +6,14 @@ import { Checkbox } from '.'
 
 describe(`Checkbox component`, () => {
   it('renders a checkbox', async () => {
-    const { container } = render(<Checkbox />)
+    const { container } = render(
+      // workaround for failing axe test -
+      // Radix's checkbox hides an <input type="checkbox" /> but 
+      // doens't give it role="none" so axe wants it to have a label
+      <label>
+        <Checkbox title="test" aria-label="label" />
+      </label>
+    )
 
     await screen.getByRole('checkbox')
 
