@@ -4,7 +4,13 @@ import React from 'react'
 
 import { Select } from './'
 
-describe.only(`Select component`, () => {
+describe(`Select component`, () => {
+  beforeAll(() => {
+    // To fix issue listed here https://github.com/nickcolley/jest-axe/issues/147
+    const { getComputedStyle } = window
+    window.getComputedStyle = (elt) => getComputedStyle(elt)
+  })
+
   const mockOptions = [
     { label: 'Option 1', value: 'value1' },
     { label: 'Option 2', value: 'value2' },
