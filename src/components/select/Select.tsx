@@ -46,7 +46,6 @@ const StyledSelect = styled('select', {
   }
 })
 
-// prettier-ignore
 type SelectProps = Override<
   StitchesProps<typeof StyledSelect>,
   {
@@ -56,8 +55,10 @@ type SelectProps = Override<
       disabled?: boolean
     }[]
     defaultOption?: string
-  } & 
-  (| { id: string } | { 'aria-label': string })
+  } & (
+    | { id: string; 'aria-label'?: string }
+    | { 'aria-label': string; id?: string }
+  )
 >
 
 export const Select: React.FC<SelectProps> = ({
