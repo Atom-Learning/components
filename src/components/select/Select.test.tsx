@@ -19,10 +19,10 @@ describe(`Select component`, () => {
   it('renders select with no options', async () => {
     const { container } = render(<Select aria-label="dropdown" />)
     const select = screen.getByRole('combobox')
+    const options = screen.queryByRole('option')
 
     expect(select).toBeInTheDocument()
-    expect(select.childNodes.length).toEqual(0)
-
+    expect(options).toBe(null)
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
@@ -53,7 +53,8 @@ describe(`Select component`, () => {
     const option = await screen.getByDisplayValue('Please select:')
 
     expect(option).toBeInTheDocument()
-    expect(container).toMatchSnapshot() // Is this needed?
+    expect(option).not.toHaveAttribute('value')
+    expect(container).toMatchSnapshot()
   })
 
   it('renders an disabled select', async () => {
