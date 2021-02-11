@@ -1,0 +1,90 @@
+import {
+  Canvas,
+  Meta,
+  Story,
+  ArgsTable,
+  Preview
+} from '@storybook/addon-docs/blocks'
+
+import { Select } from './'
+import { Flex } from '~/components/'
+
+import { disableStitchesProps } from '~/utilities/storybook'
+
+<Meta title="Select" component={Select} />
+
+# Select
+
+The `Select` component is a very thin wrapper around an HTML `select` element. It adds default styling and the `css` prop.
+
+A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
+
+<Preview>
+  <Story name="Basic">
+    <Select
+      aria-label="Select fruits"
+      options={[
+        { value: 1, label: 'Apples' },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Accessibility
+
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If those are not available, please add an `aria-label` to ensure that the component remains accessible
+
+## Default Option
+
+The component can display a default option without a value by passing the `defaultOption` property.
+
+<Preview>
+  <Story name="Default option">
+    <Select
+      aria-label="select number"
+      defaultOption="Please select a number:"
+      options={[
+        { value: 1, label: 'one' },
+        { value: 2, label: 'two' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Disabled select
+
+The component has a `disabled` state, by setting the `disabled` property.
+
+<Preview>
+  <Story name="Disabled control">
+    <Select
+      aria-label="can't select fruits"
+      disabled={true}
+      options={[
+        { value: 1, label: 'Apples' },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Disabled Option
+
+The component can show an option as `disabled`, by setting the `disabled` property on the option.
+
+<Preview>
+  <Story name="Disabled Option">
+    <Select
+      aria-label="select fruits"
+      options={[
+        { value: 1, label: 'Apples', disabled: true },
+        { value: 2, label: 'Bananas' }
+      ]}
+    />
+  </Story>
+</Preview>
+
+## Props
+
+<ArgsTable of={Select} />
