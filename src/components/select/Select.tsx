@@ -3,12 +3,17 @@ import * as React from 'react'
 import { StitchesProps, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
+// TODO: extract this out in a util function
+const svg = () =>
+  '<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4"><path fill="#1066b2" d="M287 69a18 18 0 00-13-5H18c-5 0-9 2-12 5a18 18 0 00-6 13c0 5 2 10 5 13l128 128c4 4 8 5 13 5s9-1 13-5L287 95c4-3 5-8 5-13s-2-9-5-13z"/></svg>'
+
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage:
-    'url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%0A%20%20%3Cpath%20fill%3D%22%230f65b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%0A%3C%2Fsvg%3E")',
-  backgroundPosition: `right 16px top 50%, 0 0`, // TODO: layout-scale $3 doesn't work
+  backgroundImage: `url(data:image/svg+xml;charset=US-ASCII,${encodeURIComponent(
+    svg()
+  )})`,
+  backgroundPosition: `right 16px top 50%, 0 0`, // TODO: $3 doesn't work, needs stitches upgrade to fix this
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '0.65em auto, 100%',
   borderRadius: '$0',
