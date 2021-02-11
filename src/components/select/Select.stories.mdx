@@ -22,7 +22,7 @@ A `Select` needs to be associated with a label for accessibility purposes, so ra
 <Preview>
   <Story name="Basic">
     <Select
-      aria-label="select fruits"
+      aria-label="Select fruits"
       options={[
         { value: 1, label: 'Apples' },
         { value: 2, label: 'Bananas' }
@@ -33,7 +33,7 @@ A `Select` needs to be associated with a label for accessibility purposes, so ra
 
 ## Accessibility
 
-For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If those are not available, please add an `aria-label` or a `title` to ensure that the component remains accessible
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If those are not available, please add an `aria-label` to ensure that the component remains accessible
 
 ## Default Option
 
@@ -43,7 +43,7 @@ The component can display a default option without a value by passing the `defau
   <Story name="Default option">
     <Select
       aria-label="select number"
-      defaultOption="please select"
+      defaultOption="Please select a number:"
       options={[
         { value: 1, label: 'one' },
         { value: 2, label: 'two' }

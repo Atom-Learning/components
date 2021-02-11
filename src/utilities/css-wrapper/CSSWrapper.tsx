@@ -20,5 +20,5 @@ export const CSSWrapper = ({
     // children could be multiple elements/components,
     // so we need a fragment here.
     // eslint-disable-next-line react/jsx-no-useless-fragment
-    <>{children}</> 
+    <>{children}</>
   )
