@@ -4,11 +4,11 @@ import * as React from 'react'
 
 import { Image } from '.'
 
-describe(`Checkbox component`, () => {
-  it('renders a checkbox', async () => {
-    const { container } = render(<Image title="test" />)
+describe(`Image component`, () => {
+  it('renders an image', async () => {
+    const { container } = render(<Image src="http://placekitten.com/200/300" alt=""/>)
 
-    await screen.getByRole('checkbox')
+    await screen.getByRole('img')
 
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
