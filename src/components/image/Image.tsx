@@ -6,6 +6,9 @@ export const Image = styled('img', {
   '&[width]': {
     width: 'auto'
   },
+  '&[width][height]': {
+    height: 'auto'
+  },
   '&[src$=".svg"]': {
     width: '100%',
     height: 'auto',
