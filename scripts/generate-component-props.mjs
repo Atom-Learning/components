@@ -1,9 +1,6 @@
-const docgen = require('react-docgen-typescript')
-const fs = require('fs')
-const glob = require('glob')
-const util = require('util')
-
-const writeFile = util.promisify(fs.writeFile)
+import fs from 'fs'
+import glob from 'glob'
+import docgen from 'react-docgen-typescript'
 
 // remove all react specific types, including all valid props for the HTMLElement
 const filterReactTypes = (prop) =>
@@ -21,13 +18,13 @@ const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
 
 const run = async () => {
   try {
-    const componentFilePaths = await glob.sync(`${__dirname}/../src/**/*.tsx`)
+    const componentFilePaths = await glob.sync('src/**/*.tsx')
     const ouput = componentFilePaths
       .filter((path) => !path.includes('test.tsx'))
       .filter((path) => !path.includes('stories'))
       .map((path) => tsConfigParser.parse(path)[0])
 
-    await writeFile('./dist/docgen.json', JSON.stringify(ouput))
+    await fs.writeFileSync('./dist/docgen.json', JSON.stringify(ouput))
   } catch (err) {
     console.error(err)
   }

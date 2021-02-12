@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
     "build:lib": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict",
-    "build:docgen": "node ./scripts/generate-component-props",
-    "prepublishOnly": "run-s test clean build:lib build:docgen",
+    "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
@@ -20,9 +20,7 @@
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "validate:size": "yarn build:lib && size-limit",
     "validate:types": "tsc --noEmit",
-    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open"
   },
   "repository": {
     "type": "git",
