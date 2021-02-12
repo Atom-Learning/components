@@ -13,6 +13,10 @@ exports[`Image component renders an image 1`] = `
   width: 100%;
 }
 
+._byDord[width][height] {
+  height: auto;
+}
+
 ._hGTBgp[width] {
   width: auto;
 }
@@ -21,10 +25,14 @@ exports[`Image component renders an image 1`] = `
   max-width: 100%;
 }
 
+._cogCmr {
+  vertical-align: middle;
+}
+
 <div>
   <img
     alt=""
-    class="_dPTvOL _hGTBgp _jNYnTj _kFmhCF _jSaEbM scid-izWhJr"
+    class="_cogCmr _dPTvOL _hGTBgp _byDord _jNYnTj _kFmhCF _jSaEbM scid-eWgOGC"
     src="http://placekitten.com/200/300"
   />
 </div>
