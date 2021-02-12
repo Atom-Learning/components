@@ -15,3 +15,6 @@ export const Image = styled('img', {
     maxWidth: 'none'
   }
 })
+
+
+Image.displayName = 'Image'
