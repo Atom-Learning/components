@@ -1,0 +1,30 @@
+---
+title: Box
+---
+
+# Box
+
+The `Box` is our most fundamental container component. Many other components are composed of `Box`es. For example, this card:
+
+`Box` falls back to rendering a `div`, but we can use it to render any other container element with e.g. `<Box as="section">`. In the card, `Box` is used to render a `section`,
+`header`, `figure` and `footer`.
+
+Avoid rendering any of these elements directly in our components — `Box` has all the same flexibility, but with the
+addition of the powerful `css` prop and various styling utilities based on our themes.
+
+```jsx live center
+<Box
+  as="section"
+  css={{
+    bg: '$tertiary500',
+    borderRadius: '$1',
+    boxShadow: '$1',
+    color: 'white',
+    p: '$4',
+    textAlign: 'center',
+    width: 250
+  }}
+>
+  Some text in a Box
+</Box>
+```

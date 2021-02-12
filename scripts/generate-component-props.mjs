@@ -1,7 +1,7 @@
-const docgen = require('react-docgen-typescript')
-const fs = require('fs')
-const glob = require('glob')
-const util = require('util')
+import fs from 'fs'
+import glob from 'glob'
+import docgen from 'react-docgen-typescript'
+import util from 'util'
 
 const writeFile = util.promisify(fs.writeFile)
 
@@ -21,7 +21,7 @@ const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
 
 const run = async () => {
   try {
-    const componentFilePaths = await glob.sync(`${__dirname}/../src/**/*.tsx`)
+    const componentFilePaths = await glob.sync(`${process.cwd()}/src/**/*.tsx`)
     const ouput = componentFilePaths
       .filter((path) => !path.includes('test.tsx'))
       .filter((path) => !path.includes('stories'))

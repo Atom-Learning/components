@@ -1,0 +1,90 @@
+---
+title: Button
+---
+
+# Button
+
+The `Button` component is a very thin wrapper around an HTML `button` element. It adds default styling and the `css` prop. By default `primary` theme is displayed with a `solid` appearance.
+
+```jsx live center
+<Button >Primary</Button>
+```
+
+## Themes
+
+These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+
+```jsx live center
+<Flex css={{
+  gap: "$3",
+  flexWrap: 'wrap'
+}}>
+  <Button>Primary</Button>
+  <Button theme="secondary">
+    Secondary
+  </Button>
+  <Button theme="tertiary">
+    Tertiary
+  </Button>
+  <Button theme="success">
+    Success
+  </Button>
+  <Button theme="warning">
+    Warning
+  </Button>
+  <Button theme="danger">
+    Error
+  </Button>
+</Flex>
+```
+
+## Appearearce
+
+There two options for the `appearance` property: `solid` and `outline`.
+
+These are the available `outline` variations for the `primary`, `secondary` and `tertiary` themes.
+
+```jsx live center
+<Flex css={{
+  gap: "$3",
+  flexWrap: 'wrap'
+}}>
+  <Button appearance="outline">
+    Primary
+  </Button>
+  <Button appearance="outline" theme="secondary">
+    Secondary
+  </Button>
+  <Button appearance="outline" theme="tertiary">
+    Tertiary
+  </Button>
+</Flex>
+```
+
+### Disabled state
+
+Each variation has an `disabled` stated, by setting the `disabled` property.
+
+```jsx center live
+<Flex css={{
+  gap: "$3",
+  flexWrap: 'wrap'
+}}>
+  <Button  disabled>
+    Disabled button
+  </Button>
+  <Button  appearance="outline" disabled>
+    Disabled button
+  </Button>
+  <Button
+    appearance="outline"
+    theme="secondary"
+    disabled
+  >
+    Disabled button
+  </Button>
+  <Button  appearance="outline" theme="tertiary" disabled>
+    Disabled button
+  </Button>
+</Flex>
+```

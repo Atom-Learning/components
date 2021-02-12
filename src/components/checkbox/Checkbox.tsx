@@ -46,3 +46,5 @@ export const Checkbox: React.FC<CheckboxProps> = (props) => {
     </StyledCheckbox>
   )
 }
+
+Checkbox.displayName = 'Checkbox'

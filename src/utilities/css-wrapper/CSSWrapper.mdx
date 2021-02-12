@@ -1,8 +1,6 @@
-import { Meta } from '@storybook/addon-docs/blocks'
-
-import { CSSWrapper } from '.'
-
-<Meta title="Util/CSSWrapper" component={CSSWrapper} />
+---
+title: CSS Wrapper
+---
 
 # CSSWrapper
 
@@ -11,7 +9,7 @@ just renders its children.
 
 Use `CSSWrapper` to wrap other components that have no natural container. For example, an `InputField` component would render something like this:
 
-```tsx
+```jsx
 <CSSWrapper css={css}>
   <Label htmlFor={name} css={{ mb: '$2' }}>
     {label}

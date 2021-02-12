@@ -7,8 +7,8 @@
   "description": "",
   "scripts": {
     "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
-    "build:lib": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict",
-    "build:docgen": "node ./scripts/generate-component-props",
+    "build:lib": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict --external react,@radix-ui/react-icons",
+    "build:docgen": "node ./scripts/generate-component-props.mjs",
     "prepublishOnly": "run-s test clean build:lib build:docgen",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
