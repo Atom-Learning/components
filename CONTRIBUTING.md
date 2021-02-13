@@ -12,12 +12,9 @@ src/
 	  component-name/
 	    ComponentName.tsx
 	    ComponentName.test.tsx
-	    docs/
-	      ComponentName.docs.mdx
+	    ComponentName.mdx
 	    index.ts
 ```
-
-**Note:** Documentation is nested in a folder only if there are more than 1 files. If there is only 1 file then it should be in the component folder.
 
 ## Component API
 
@@ -32,9 +29,9 @@ All components should accept a `css` prop. Single-child components are styled di
 - If the component renders two or more sibling elements/components, wrap them in a `CSSWrapper` and pass the `css` prop to that.
 - Otherwise, pass the `css` prop value directly to the direct child.
 
-```tsx
+```jsx
 const SimpleComponent = ({ css }) => (
-  <Box css={css}> This box gets styled directly </Box>
+  <Box css={css}>This box gets styled directly</Box>
 )
 
 const ComposedComponent = ({ css }) => (
@@ -57,6 +54,39 @@ Each component should have documentation which covers the following:
 - Available component specific properties
 - When it should be used
 - When it _shouldn't_ be used (e.g. instead of using an `Input` directly, we'll often want to use an `InputField`)
+
+We use front matter to add metadata to our documentation, the available fields are:
+
+- `title` - The title of the page, usually the name of the component. It can be made more readable, e.g. `CSS Wrapper` instead of `CSSWrapper`
+- `component` - The name of the component; this is used to extract prop-types so must be exact.
+- `description` - A high-level description of the component and its usage, will be shown as the opening statement on the page.
+- `category` - A category to group with related components
+
+There is no need to add a main `# Heading` to your page as the documentation site will add it automatically from your `title` field. Avoid manually adding a `PropsTable` as this will be automated, or adding custom `import`s as these will break the MDX parser.
+
+To show code examples and component previews in your documentation, use the codeblock syntax with a language, in our case, likely `jsx`.
+
+```
+\`\`\`jsx
+// This is a basic example that will show just the code
+<Button />
+\`\`\`
+
+\`\`\`jsx preview
+// Adding `preview` will also render the code above the code block
+<Button />
+\`\`\`
+
+\`\`\`jsx live
+// Adding `live` will render the code and adds the ability to live edit
+<Button />
+\`\`\`
+
+\`\`\`jsx preview center
+// Combine either of the two previous attributes with `center` to center the component within the preview
+<Button />
+\`\`\`
+```
 
 ## Tests
 
