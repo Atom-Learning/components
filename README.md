@@ -50,7 +50,7 @@ Before developing a component, please take some time to read the following secti
 ### Things to consider whilst developing
 
 - Using `React.Fragment` where possible to avoid adding extra `<div>`
-  > Sometimes we break HTML semantics when we add <div> elements to our JSX to make our React code work, especially when working with lists (`<ol>`, `<ul>` and `<dl>`) and the HTML `<table>`. In these cases we should rather use React Fragments to group together multiple elements. for examples please look at the [React documentation](https://reactjs.org/docs/accessibility.html)
+  > Sometimes we break HTML semantics when we add `<div>` elements to our JSX to make our React code work, especially when working with lists (`<ol>`, `<ul>` and `<dl>`) and the HTML `<table>`. In these cases we should rather use React Fragments to group together multiple elements. for examples please look at the [React documentation](https://reactjs.org/docs/accessibility.html)
 - Utilising the [`a11y`](https://github.com/storybookjs/storybook/tree/master/addons/a11y) storybook addon that is installed
   The accessibility tab in storybook will check the component against the `aXe` accessibility rules and provide ways of solving any violations.
 - Add unit tests to test accessibility

@@ -1,0 +1,13 @@
+---
+title: Grid
+component: Grid
+---
+
+The `Grid` component is analagous to `Box` but additionally sets the rendering context of its children to `display: grid`.
+
+```jsx preview
+<Grid css={{ gap: '$3', gridAutoFlow: 'column' }}>
+  <Box css={{ bg: '$tonal200', p: '$2' }}>Hello</Box>
+  <Box css={{ bg: '$tonal200', p: '$2' }}>Hello</Box>
+</Grid>
+```
