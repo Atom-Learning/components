@@ -1,4 +1,7 @@
-# Contribution Guide
+---
+title: Contributing
+description: When contributing to this repository, use the following information, to uphold the standards we have set for this project. Please read through this and the `README.md` before starting.
+---
 
 When contributing to this repository, use the following information, to uphold the standards we have set for this project. Please read through this and the `README.md` before starting.
 
@@ -66,27 +69,37 @@ There is no need to add a main `# Heading` to your page as the documentation sit
 
 To show code examples and component previews in your documentation, use the codeblock syntax with a language, in our case, likely `jsx`.
 
+This is a basic example that will show just the code
+
+````md
+```jsx
+<Button />
 ```
-\`\`\`jsx
-// This is a basic example that will show just the code
-<Button />
-\`\`\`
+````
 
-\`\`\`jsx preview
-// Adding `preview` will also render the code above the code block
-<Button />
-\`\`\`
+Adding `preview` will also render the code above the code block
 
-\`\`\`jsx live
-// Adding `live` will render the code and adds the ability to live edit
+````md
+```jsx preview
 <Button />
-\`\`\`
-
-\`\`\`jsx preview center
-// Combine either of the two previous attributes with `center` to center the component within the preview
-<Button />
-\`\`\`
 ```
+````
+
+Adding `live` will render the code and adds the ability to live edit
+
+````md
+```jsx live
+<Button />
+```
+````
+
+Combine either of the two previous attributes with `center` to center the component within the preview
+
+````md
+```jsx preview center
+<Button />
+```
+````
 
 ## Tests
 
