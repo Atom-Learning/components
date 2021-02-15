@@ -21,7 +21,6 @@ type LabelProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledLabel>,
   {
     as: never
-    size?: 'sm' | 'md'
   }
 >
 
