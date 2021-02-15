@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
+    "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement --external **/*.svg",
     "build:lib": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict",
     "build:docgen": "node ./scripts/generate-component-props",
     "prepublishOnly": "run-s test clean build:lib build:docgen",
