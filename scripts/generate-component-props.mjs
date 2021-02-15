@@ -18,11 +18,18 @@ const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
 
 const run = async () => {
   try {
-    const componentFilePaths = await glob.sync('src/**/*.tsx')
-    const ouput = componentFilePaths
+    const componentFilePaths = await glob
+      .sync('src/**/*.tsx')
       .filter((path) => !path.includes('test.tsx'))
       .filter((path) => !path.includes('stories'))
-      .map((path) => tsConfigParser.parse(path)[0])
+
+    console.log(
+      `\nExtracting props from:\n  ${componentFilePaths.join('\n  ')}`
+    )
+
+    const ouput = componentFilePaths.map(
+      (path) => tsConfigParser.parse(path)[0]
+    )
 
     await fs.writeFileSync('./dist/docgen.json', JSON.stringify(ouput))
   } catch (err) {
