@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { StitchesCss, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledParagraph = styled('p', {
@@ -31,7 +31,7 @@ const StyledParagraph = styled('p', {
 })
 
 type TextProps = Override<
-  StitchesProps<typeof StyledParagraph>,
+  StitchesCss<typeof StyledParagraph>,
   {
     as?:
       | 'blockquote'

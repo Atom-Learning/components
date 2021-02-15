@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { StitchesCss, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledLabel = styled('label', {
@@ -18,9 +18,9 @@ const StyledLabel = styled('label', {
 })
 
 type LabelProps = Override<
-  StitchesProps<typeof StyledLabel>,
+  StitchesCss<typeof StyledLabel>,
   {
-    as: 'never'
+    // as: 'never' // TODO report override issue with as
     size?: 'sm' | 'md'
   }
 >

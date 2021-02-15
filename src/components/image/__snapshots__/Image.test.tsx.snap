@@ -1,38 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Image component renders an image 1`] = `
-._jSaEbM[src$=".svg"] {
-  max-width: none;
+:root {
+  --colors--tonal100: hsl(0, 6%, 97%);
+  --colors--tonal200: hsl(0, 6%, 95%);
+  --colors--tonal300: hsl(0, 6%, 90%);
+  --colors--tonal400: hsl(0, 2%, 80%);
+  --colors--tonal500: hsl(0, 2%, 70%);
+  --colors--tonal600: hsl(0, 0%, 55%);
+  --colors--tonal700: hsl(0, 0%, 40%);
+  --colors--tonal800: hsl(0, 0%, 25%);
+  --colors--tonal900: hsl(0, 0%, 15%);
+  --colors--alpha100: hsla(0, 0%, 10%, 0.1);
+  --colors--alpha150: hsla(0, 0%, 10%, 0.15);
+  --colors--alpha200: hsla(0, 0%, 10%, 0.2);
+  --colors--primary100: hsl(200, 75%, 95%);
+  --colors--primary200: hsl(200, 74%, 87%);
+  --colors--primary300: hsl(201, 74%, 78%);
+  --colors--primary400: hsl(201, 74%, 69%);
+  --colors--primary500: hsl(201, 74%, 60%);
+  --colors--primary600: hsl(203, 66%, 55%);
+  --colors--primary700: hsl(204, 62%, 49%);
+  --colors--primary800: hsl(206, 72%, 44%);
+  --colors--primary900: hsl(208, 85%, 38%);
+  --colors--secondary300: hsl(215, 60%, 27%);
+  --colors--secondary500: hsl(215, 60%, 19%);
+  --colors--secondary700: hsl(228, 66%, 14%);
+  --colors--tertiary300: hsl(220, 19%, 40%);
+  --colors--tertiary500: hsl(219, 19%, 29%);
+  --colors--tertiary700: hsl(218, 20%, 19%);
+  --colors--successLight: hsl(137, 44%, 60%);
+  --colors--success: hsl(137, 60%, 43%);
+  --colors--successDark: hsl(137, 60%, 32%);
+  --colors--warning: hsl(24, 100%, 55%);
+  --colors--warningDark: hsl(24, 100%, 41%);
+  --colors--dangerLight: hsl(355, 88%, 67%);
+  --colors--danger: hsl(355, 70%, 54%);
+  --colors--dangerDark: hsl(355, 71%, 40%);
+  --colors--subjectEnglish: hsl(356, 54%, 47%);
+  --colors--subjectMaths: hsl(198, 68%, 52%);
+  --colors--subjectVr: hsl(161, 89%, 44%);
+  --colors--subjectNvr: hsl(41, 100%, 50%);
+  --colors--subjectCw: hsl(24, 100%, 55%);
+  --colors--subjectEs: hsl(280, 43%, 53%);
+  --space--0: 0.125rem;
+  --space--1: 0.25rem;
+  --space--2: 0.5rem;
+  --space--3: 1rem;
+  --space--4: 2rem;
+  --space--5: 4rem;
+  --space--6: 8rem;
+  --fontSizes--xs: 0.625rem;
+  --fontSizes--sm: 0.8125rem;
+  --fontSizes--md: 1rem;
+  --fontSizes--lg: 1.3125rem;
+  --fontSizes--xl: 1.75rem;
+  --fontSizes--xxl: 2.3125rem;
+  --fontSizes--xxxl: 3.125rem;
+  --fontSizes--base: 1rem;
+  --fonts--sans: 'urw-din', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+  --fonts--mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  --sizes--0: 1rem;
+  --sizes--1: 2rem;
+  --sizes--2: 3rem;
+  --sizes--3: 4rem;
+  --radii--0: 0.25rem;
+  --radii--1: 0.5rem;
+  --radii--2: 0.75rem;
+  --radii--3: 1rem;
+  --shadows--0: 0px 2px 1px -1px hsla(0, 0%, 10%, 0.2), 0px 1px 1px 0px hsla(0, 0%, 10%, 0.15), 0px 1px 3px 0px hsla(0, 0%, 10%, 0.1);
+  --shadows--1: 0px 7px 8px -4px hsla(0, 0%, 10%, 0.2), 0px 12px 17px 2px hsla(0, 0%, 10%, 0.15), 0px 5px 22px 4px hsla(0, 0%, 10%, 0.1);
+  --shadows--2: 0px 11px 15px -7px hsla(0, 0%, 10%, 0.2), 0px 24px 38px 3px hsla(0, 0%, 10%, 0.15), 0px 9px 46px 8px hsla(0, 0%, 10%, 0.1);
 }
 
-._kFmhCF[src$=".svg"] {
-  height: auto;
-}
-
-._jNYnTj[src$=".svg"] {
-  width: 100%;
-}
-
-._byDord[width][height] {
-  height: auto;
-}
-
-._hGTBgp[width] {
-  width: auto;
-}
-
-._dPTvOL {
+.sxkoa5n {
+  vertical-align: middle;
   max-width: 100%;
 }
 
-._cogCmr {
-  vertical-align: middle;
+.sxkoa5n[width] {
+  width: auto;
+}
+
+.sxkoa5n[width][height] {
+  height: auto;
+}
+
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 <div>
   <img
     alt=""
-    class="_cogCmr _dPTvOL _hGTBgp _byDord _jNYnTj _kFmhCF _jSaEbM scid-eWgOGC"
+    class="sxkoa5n"
     src="http://placekitten.com/200/300"
   />
 </div>

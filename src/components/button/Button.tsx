@@ -1,8 +1,7 @@
-import { StitchesProps } from '@stitches/react'
+import { StitchesComponent, StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   color: baseColor,
@@ -11,7 +10,7 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
     color: interactColor,
     backgroundColor: 'white'
   },
-  ':active': {
+  '&:active': {
     color: baseColor
   },
   '&[disabled]': {
@@ -22,15 +21,15 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
 const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
   backgroundColor: baseColor,
   color: 'white',
-  '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal600'
-  },
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     backgroundColor: interactColor
   },
-  ':active': {
+  '&:active': {
     backgroundColor: baseColor
+  },
+  '&[disabled]': {
+    backgroundColor: '$tonal300',
+    color: '$tonal600'
   }
 })
 
@@ -79,62 +78,62 @@ const StyledButton = styled('button', {
         '&[disabled]': { backgroundColor: 'white' }
       }
     }
-  }
+  },
+
+  compoundVariants: [
+    // Appearance Solid
+    {
+      theme: 'primary',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$primary500', '$primary900')
+    },
+    {
+      theme: 'secondary',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$secondary500', '$secondary700')
+    },
+    {
+      theme: 'tertiary',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$tertiary500', '$tertiary700')
+    },
+    {
+      theme: 'success',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$success', '$successDark')
+    },
+    {
+      theme: 'warning',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$warning', '$warningDark')
+    },
+    {
+      theme: 'danger',
+      appearance: 'solid',
+      css: getButtonSolidVariant('$danger', '$dangerDark')
+    },
+
+    // Appearance Outline
+    {
+      theme: 'primary',
+      appearance: 'outline',
+      css: getButtonOutlineVariant('$primary500', '$primary900')
+    },
+    {
+      theme: 'secondary',
+      appearance: 'outline',
+      css: getButtonOutlineVariant('$secondary500', '$secondary900')
+    },
+    {
+      theme: 'tertiary',
+      appearance: 'outline',
+      css: getButtonOutlineVariant('$tertiary500', '$tertiary700')
+    }
+  ]
 })
 
-// Appearance Solid
-StyledButton.compoundVariant(
-  { theme: 'primary', appearance: 'solid' },
-  getButtonSolidVariant('$primary500', '$primary900')
-)
-StyledButton.compoundVariant(
-  { theme: 'secondary', appearance: 'solid' },
-  getButtonSolidVariant('$secondary500', '$secondary700')
-)
-StyledButton.compoundVariant(
-  { theme: 'tertiary', appearance: 'solid' },
-  getButtonSolidVariant('$tertiary500', '$tertiary700')
-)
-StyledButton.compoundVariant(
-  { theme: 'success', appearance: 'solid' },
-  getButtonSolidVariant('$success', '$successDark')
-)
-StyledButton.compoundVariant(
-  { theme: 'warning', appearance: 'solid' },
-  getButtonSolidVariant('$warning', '$warningDark')
-)
-StyledButton.compoundVariant(
-  { theme: 'danger', appearance: 'solid' },
-  getButtonSolidVariant('$danger', '$dangerDark')
-)
-
-// Appearance Outline
-StyledButton.compoundVariant(
-  { theme: 'primary', appearance: 'outline' },
-  getButtonOutlineVariant('$primary500', '$primary900')
-)
-StyledButton.compoundVariant(
-  { theme: 'secondary', appearance: 'outline' },
-  getButtonOutlineVariant('$secondary500', '$secondary900')
-)
-StyledButton.compoundVariant(
-  { theme: 'tertiary', appearance: 'outline' },
-  getButtonOutlineVariant('$tertiary500', '$tertiary700')
-)
-
-type ButtonProps = Override<
-  StitchesProps<typeof StyledButton>,
-  {
-    theme?:
-      | 'primary'
-      | 'secondary'
-      | 'tertiary'
-      | 'success'
-      | 'warning'
-      | 'danger'
-    appearance?: 'solid' | 'outline'
-  }
->
+type ButtonProps = StitchesComponent<typeof StyledButton> &
+  StitchesVariants<typeof StyledButton>
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',

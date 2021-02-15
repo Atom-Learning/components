@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { StitchesComponent, StitchesVariants, styled } from '~/stitches'
 
 const StyledLink = styled('a', {
   color: '$primary500',
@@ -31,10 +31,12 @@ const StyledLink = styled('a', {
   }
 })
 
-type LinkProps = StitchesProps<typeof StyledLink>
+type LinkProps = StitchesComponent<typeof StyledLink>
+type LinkVariants = StitchesVariants<typeof StyledLink>
 
-export const Link: React.FC<LinkProps> = ({ size = 'md', ...rest }) => (
-  <StyledLink size={size} {...rest} />
-)
+export const Link: React.FC<LinkProps & LinkVariants> = ({
+  size = 'md',
+  ...rest
+}) => <StyledLink size={size} {...rest} />
 
 Link.displayName = 'Link'

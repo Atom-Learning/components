@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { StitchesCss, styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 // TODO: extract this out in a util function
@@ -20,6 +20,7 @@ const StyledSelect = styled('select', {
   border: '1px solid $tonal500',
   display: 'block',
   fontFamily: '$sans',
+  fontSize: '$md',
   fontWeight: 400,
   height: '$2',
   letterSpacing: '0.01em',
@@ -47,7 +48,7 @@ const StyledSelect = styled('select', {
 })
 
 type SelectProps = Override<
-  StitchesProps<typeof StyledSelect>,
+  StitchesCss<typeof StyledSelect>,
   {
     options?: {
       value: string
