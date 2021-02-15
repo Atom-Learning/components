@@ -6,8 +6,21 @@ component: Grid
 The `Grid` component is analagous to `Box` but additionally sets the rendering context of its children to `display: grid`.
 
 ```jsx preview
-<Grid css={{ gap: '$3', gridAutoFlow: 'column' }}>
-  <Box css={{ bg: '$tonal200', p: '$2' }}>Hello</Box>
-  <Box css={{ bg: '$tonal200', p: '$2' }}>Hello</Box>
+<Grid
+  css={{
+    gap: '$3',
+    gridAutoFlow: 'column',
+    gridTemplateColumns: '33% 33% 33%'
+  }}
+>
+  <Text css={{ bg: '$tonal200', gridColumn: '1', gridRow: '1', p: '$2' }}>
+    Hello
+  </Text>
+  <Text css={{ bg: '$tonal200', gridColumn: '2', gridRow: '2', p: '$2' }}>
+    Hello
+  </Text>
+  <Text css={{ bg: '$tonal200', gridColumn: '3', gridRow: '1', p: '$2' }}>
+    Hello
+  </Text>
 </Grid>
 ```
