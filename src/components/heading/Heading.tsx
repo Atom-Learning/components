@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesCss, styled } from '~/stitches'
+import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledHeading = styled('h1', {
@@ -19,7 +19,7 @@ const StyledHeading = styled('h1', {
 })
 
 type HeadingProps = Override<
-  StitchesCss<typeof StyledHeading>,
+  React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
     as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
     size?: 'sm' | 'md' | 'lg'

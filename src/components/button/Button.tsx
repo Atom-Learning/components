@@ -1,4 +1,4 @@
-import { StitchesComponent, StitchesVariants } from '@stitches/react'
+import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
@@ -132,7 +132,7 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ButtonProps = StitchesComponent<typeof StyledButton> &
+type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
   StitchesVariants<typeof StyledButton>
 
 export const Button: React.FC<ButtonProps> = ({
