@@ -43,7 +43,7 @@ _Note:_ Once a branch gets merged into `main`, it is automatically published, th
 ## Accessibility
 
 The design system is aiming to adhere to strict accessibility standards with AA as the minimum. To enable this, `eslint-plugin-jsx-a11y` is set to strict mode.
-Different tools are used to validate the components as each serves a different purpose. The accessibility unit tests will fail the pipeline and prevent releasing inaccessible components. **_However, these tests are only valid with the context they are testing on, so they can't guarantee 100% that a component is fully accessible._** Therefore, please add stories for all the variations a component has. Also, there is a need for manual testing and design validation.
+Different tools are used to validate the components as each serves a different purpose. The accessibility unit tests will fail the pipeline and prevent releasing inaccessible components. **_However, these tests are only valid with the context they are testing on, so they can't guarantee 100% that a component is fully accessible._** Therefore, manual testing is required along with design validation.
 
 Before developing a component, please take some time to read the following sections and the reading provided.
 
