@@ -3,7 +3,6 @@ title: Contributing
 description: When contributing to this repository, use the following information, to uphold the standards we have set for this project. Please read through this and the `README.md` before starting.
 ---
 
-
 ## Directory structure
 
 Use the following directory structure and file naming conventions:
@@ -57,7 +56,7 @@ Each component should have documentation which covers the following:
 - When it should be used
 - When it _shouldn't_ be used (e.g. instead of using an `Input` directly, we'll often want to use an `InputField`)
 
-We use front matter to add metadata to our documentation, the available fields are:
+We use YAML frontmatter to add metadata to our documentation, the available fields are:
 
 - `title` - The title of the page, usually the name of the component. It can be made more readable, e.g. `CSS Wrapper` instead of `CSSWrapper`
 - `component` - The name of the component; this is used to extract prop-types so must be exact.
