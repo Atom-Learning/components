@@ -18,12 +18,12 @@ const StyledInput = styled('input', {
   width: '100%',
   p: '$3',
   transition: 'all 100ms ease-out',
-  ':focus': {
+  '&:focus': {
     borderColor: '$primary900',
     boxShadow: 'inset 0 0 0 1px $primary900',
     outline: 'none'
   },
-  ':disabled': {
+  '&[disabled]': {
     backgroundColor: '$tonal300',
     color: '$tonal700',
     cursor: 'not-allowed'

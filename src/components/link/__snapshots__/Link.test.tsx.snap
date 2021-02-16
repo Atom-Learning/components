@@ -1,28 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component renders an anchor 1`] = `
-.sx5guaa {
+.sxn6u9y {
   color: var(--colors-primary500);
   font-family: var(--fonts-sans);
   text-decoration: none;
   cursor: pointer;
 }
 
-.sx5guaa :visited {
+.sxn6u9y:visited {
   color: var(--colors-primary500);
 }
 
-.sx5guaa:focus,
-.sx5guaa:hover {
+.sxn6u9y:focus,
+.sxn6u9y:hover {
   color: var(--colors-primary900);
   text-decoration: underline;
 }
 
-.sx5guaa :active {
+.sxn6u9y:active {
   color: var(--colors-primary500);
 }
 
-.sx5guaaido38--size-md {
+.sxn6u9yido38--size-md {
   font-size: var(--fontSizes-md);
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -30,7 +30,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="sx5guaa sx5guaaido38--size-md"
+    class="sxn6u9y sxn6u9yido38--size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -39,34 +39,34 @@ exports[`Link component renders an anchor 1`] = `
 `;
 
 exports[`Link component renders an large anchor 1`] = `
-.sx5guaa {
+.sxn6u9y {
   color: var(--colors-primary500);
   font-family: var(--fonts-sans);
   text-decoration: none;
   cursor: pointer;
 }
 
-.sx5guaa :visited {
+.sxn6u9y:visited {
   color: var(--colors-primary500);
 }
 
-.sx5guaa:focus,
-.sx5guaa:hover {
+.sxn6u9y:focus,
+.sxn6u9y:hover {
   color: var(--colors-primary900);
   text-decoration: underline;
 }
 
-.sx5guaa :active {
+.sxn6u9y:active {
   color: var(--colors-primary500);
 }
 
-.sx5guaaido38--size-md {
+.sxn6u9yido38--size-md {
   font-size: var(--fontSizes-md);
   letter-spacing: 0.02em;
   line-height: 1.4;
 }
 
-.sx5guaa6hfh9--size-lg {
+.sxn6u9y6hfh9--size-lg {
   font-size: var(--fontSizes-lg);
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -74,7 +74,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="sx5guaa sx5guaa6hfh9--size-lg"
+    class="sxn6u9y sxn6u9y6hfh9--size-lg"
     href="https://google.com/"
   >
     GOOGLE
