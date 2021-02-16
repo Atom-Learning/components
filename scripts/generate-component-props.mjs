@@ -21,7 +21,6 @@ const run = async () => {
     const componentFilePaths = await glob
       .sync('src/**/*.tsx')
       .filter((path) => !path.includes('test.tsx'))
-      .filter((path) => !path.includes('stories'))
 
     console.log(
       `\nExtracting props from:\n  ${componentFilePaths.join('\n  ')}`
