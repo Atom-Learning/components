@@ -3,6 +3,5 @@ dist
 .cache
 .eslintcache
 yarn-error.log
-storybook-static
 coverage
 sandbox/build

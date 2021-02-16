@@ -1,3 +1,4 @@
+export { Button } from './button'
 export { Box } from './box'
 export { Checkbox } from './checkbox'
 export { Flex } from './flex'

@@ -43,16 +43,14 @@ _Note:_ Once a branch gets merged into `main`, it is automatically published, th
 ## Accessibility
 
 The design system is aiming to adhere to strict accessibility standards with AA as the minimum. To enable this, `eslint-plugin-jsx-a11y` is set to strict mode.
-Different tools are used to validate the components as each serves a different purpose. The a11y storybook addon will validate all the stories and explain each violation, whereas the accessibility unit tests will fail the pipeline and prevent releasing inaccessible components. **_However, these tests are only valid with the context they are testing on, so they can't guarantee 100% that a component is fully accessible._** Therefore, please add stories for all the variations a component has. Also, there is a need for manual testing and design validation.
+Different tools are used to validate the components as each serves a different purpose. The accessibility unit tests will fail the pipeline and prevent releasing inaccessible components. **_However, these tests are only valid with the context they are testing on, so they can't guarantee 100% that a component is fully accessible._** Therefore, manual testing is required along with design validation.
 
 Before developing a component, please take some time to read the following sections and the reading provided.
 
 ### Things to consider whilst developing
 
 - Using `React.Fragment` where possible to avoid adding extra `<div>`
-  > Sometimes we break HTML semantics when we add <div> elements to our JSX to make our React code work, especially when working with lists (`<ol>`, `<ul>` and `<dl>`) and the HTML `<table>`. In these cases we should rather use React Fragments to group together multiple elements. for examples please look at the [React documentation](https://reactjs.org/docs/accessibility.html)
-- Utilising the [`a11y`](https://github.com/storybookjs/storybook/tree/master/addons/a11y) storybook addon that is installed
-  The accessibility tab in storybook will check the component against the `aXe` accessibility rules and provide ways of solving any violations.
+  > Sometimes we break HTML semantics when we add `<div>` elements to our JSX to make our React code work, especially when working with lists (`<ol>`, `<ul>` and `<dl>`) and the HTML `<table>`. In these cases we should rather use React Fragments to group together multiple elements. for examples please look at the [React documentation](https://reactjs.org/docs/accessibility.html)
 - Add unit tests to test accessibility
   Add an accessibility unit test (using the `jest-axe`) to ensure that the components' different variations don't have any accessibility issues. Example:
 
