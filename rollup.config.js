@@ -1,29 +1,27 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
-import typescript from '@rollup/plugin-typescript'
+import bundleSize from 'rollup-plugin-bundle-size'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
+import typescript from 'rollup-plugin-typescript2'
 
 import pkg from './package.json'
 
-export default [
-  // browser-friendly UMD build
-  {
-    input: 'src/index.ts',
-    output: {
-      dir: 'dist',
-      format: 'cjs',
-      sourcemap: true
-    },
-    plugins: [commonjs(), peerDepsExternal(), resolve(), typescript()]
-  },
-  // ES module build
-  {
-    input: 'src/index.ts',
-    output: [
-      { file: pkg.main, format: 'cjs', sourcemap: true },
-      { file: pkg.module, format: 'esm', sourcemap: true }
-    ],
-    plugins: [commonjs(), peerDepsExternal(), resolve(), terser(), typescript()]
-  }
-]
+export default {
+  input: 'src/index.ts',
+  output: [
+    { file: pkg.main, format: 'cjs', sourcemap: true },
+    { file: pkg.module, format: 'esm', sourcemap: true }
+  ],
+  plugins: [
+    bundleSize(),
+    commonjs(),
+    peerDepsExternal(),
+    resolve(),
+    // terser(),
+    typescript({
+      rollupCommonJSResolveHack: false,
+      clean: true
+    })
+  ]
+}
