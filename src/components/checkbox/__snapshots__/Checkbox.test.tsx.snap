@@ -63,14 +63,6 @@ exports[`Checkbox component renders a checkbox 1`] = `
   display: flex;
 }
 
-._hMNIxR {
-  width: var(--sizes-0);
-}
-
-._dVjKDk {
-  height: var(--sizes-0);
-}
-
 ._haYhrD {
   padding-left: 0px;
 }
@@ -87,6 +79,14 @@ exports[`Checkbox component renders a checkbox 1`] = `
   padding-top: 0px;
 }
 
+._hMNIxR {
+  width: var(--sizes-0);
+}
+
+._dVjKDk {
+  height: var(--sizes-0);
+}
+
 ._cKSYdt {
   cursor: pointer;
 }
@@ -99,20 +99,20 @@ exports[`Checkbox component renders a checkbox 1`] = `
   box-shadow: inset 0 0 0 2px var(--colors-secondary300);
 }
 
-._BZBbU {
-  border-bottom-right-radius: 2px;
+._gpXcaM {
+  border-bottom-right-radius: var(--radii-0);
 }
 
-._hnNeTY {
-  border-top-right-radius: 2px;
+._pLtwA {
+  border-top-right-radius: var(--radii-0);
 }
 
-._hPObMf {
-  border-top-left-radius: 2px;
+._cSbnDL {
+  border-top-left-radius: var(--radii-0);
 }
 
-._DRrvv {
-  border-bottom-left-radius: 2px;
+._dEFdBr {
+  border-bottom-left-radius: var(--radii-0);
 }
 
 ._foQeyu {
@@ -148,8 +148,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      aria-label="label"
-      class="_fAMvjM _cqfPeM _eEUDVO _jOpMN _lmVhDS _foQeyu _DRrvv _hPObMf _hnNeTY _BZBbU _jJtiCr _htOODa _cKSYdt _knCjlL _ifTTws _dBIZWf _haYhrD _dVjKDk _hMNIxR _iqmwNh _dtUAqZ _jBdvvl _eaYTuA _dmGTUL _kKqLFw _dpPDNU _haUbmJ _dXLKvU _iHIYYq _cMbILZ _jrmBkG _kfgyEr _ivlZpt scid-hmgsu"
+      class="_fAMvjM _cqfPeM _eEUDVO _jOpMN _lmVhDS _foQeyu _dEFdBr _cSbnDL _pLtwA _gpXcaM _jJtiCr _htOODa _cKSYdt _dVjKDk _hMNIxR _knCjlL _ifTTws _dBIZWf _haYhrD _iqmwNh _dtUAqZ _jBdvvl _eaYTuA _dmGTUL _kKqLFw _dpPDNU _haUbmJ _dXLKvU _iHIYYq _cMbILZ _jrmBkG _kfgyEr _ivlZpt scid-ioqccs"
       data-radix-checkbox=""
       data-state="unchecked"
       role="checkbox"
