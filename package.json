@@ -46,6 +46,7 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-typescript": "^8.2.0",
     "@size-limit/preset-small-lib": "^4.9.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -83,7 +84,6 @@
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.29.0",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.1.3"
