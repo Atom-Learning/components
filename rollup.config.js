@@ -1,4 +1,3 @@
-import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import bundleSize from 'rollup-plugin-bundle-size'
@@ -20,10 +19,6 @@ export default {
     { file: pkg.module, format: 'esm', sourcemap: true }
   ],
   plugins: [
-    babel({
-      exclude: 'node_modules/**',
-      presets: ['@babel/env', '@babel/preset-react']
-    }),
     bundleSize(),
     commonjs(),
     resolve(),
