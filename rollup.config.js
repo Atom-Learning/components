@@ -1,7 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import bundleSize from 'rollup-plugin-bundle-size'
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import { terser } from 'rollup-plugin-terser'
 import typescript from 'rollup-plugin-typescript2'
 
@@ -20,9 +19,8 @@ export default {
   plugins: [
     bundleSize(),
     commonjs(),
-    peerDepsExternal(),
     resolve(),
-    // terser(),
+    terser(),
     typescript({
       rollupCommonJSResolveHack: false,
       clean: true
