@@ -121,7 +121,6 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      aria-label="label"
       class="sx7plgw"
       data-radix-checkbox=""
       data-state="unchecked"

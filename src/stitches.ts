@@ -1,6 +1,4 @@
-export * from '@stitches/react'
-
-import theme from '@atom-learning/theme'
+import atomTheme from '@atom-learning/theme'
 import { createCss } from '@stitches/react'
 
 type CSSValue = number | string
@@ -69,8 +67,8 @@ export const conditions = {
   hover: `@media (hover: hover)`
 }
 
-export const { styled, css } = createCss({
-  theme,
+export const { styled, css, global: globalCSS } = createCss({
+  theme: atomTheme,
   utils,
   conditions
 })

@@ -11,7 +11,7 @@ describe(`Checkbox component`, () => {
       // Radix's checkbox renders an <input type="checkbox" hidden=""/> but
       // doesn't give it role="none" so axe wants it to have a label
       <label>
-        <Checkbox title="test" aria-label="label" />
+        <Checkbox title="test" />
       </label>
     )
 
