@@ -1,0 +1,70 @@
+---
+title: Select
+component: Select
+description: Select is a light wrapper around the HTML select element.
+---
+
+It adds default styling and the `css` prop.
+
+A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
+
+```jsx preview center
+<Select
+  options={[
+    { value: 1, label: 'Apples' },
+    { value: 2, label: 'Bananas' }
+  ]}
+  css={{ width: 300 }}
+/>
+```
+
+## Accessibility
+
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If a label is not available, please add an `aria-label` to ensure that the component remains accessible
+
+## Default Option
+
+The component can display a default option without a value by passing the `defaultOption` property.
+
+```jsx preview center
+<Select
+  aria-label="select number"
+  defaultOption="Please select a number:"
+  options={[
+    { value: 1, label: 'one' },
+    { value: 2, label: 'two' }
+  ]}
+  css={{ width: 300 }}
+/>
+```
+
+## Disabled select
+
+The component has a `disabled` state, by setting the `disabled` property.
+
+```jsx preview center
+<Select
+  aria-label="can't select fruits"
+  disabled
+  options={[
+    { value: 1, label: 'Apples' },
+    { value: 2, label: 'Bananas' }
+  ]}
+  css={{ width: 300 }}
+/>
+```
+
+## Disabled Option
+
+The component can show an option as `disabled`, by setting the `disabled` property on the option.
+
+```jsx preview center
+<Select
+  aria-label="select fruits"
+  options={[
+    { value: 1, label: 'Apples', disabled: true },
+    { value: 2, label: 'Bananas' }
+  ]}
+  css={{ width: 300 }}
+/>
+```

@@ -8,8 +8,8 @@
   "scripts": {
     "dev": "NODE_ENV=development microbundle watch  --jsx React.createElement",
     "build:lib": "NODE_ENV=production microbundle --jsx React.createElement --format modern,cjs --strict",
-    "build:docgen": "node ./scripts/generate-component-props",
-    "prepublishOnly": "run-s test clean build:lib build:docgen",
+    "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
@@ -20,9 +20,7 @@
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "validate:size": "yarn build:lib && size-limit",
     "validate:types": "tsc --noEmit",
-    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open"
   },
   "repository": {
     "type": "git",
@@ -47,11 +45,6 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@size-limit/preset-small-lib": "^4.9.2",
-    "@storybook/addon-a11y": "^6.1.14",
-    "@storybook/addon-actions": "^6.1.11",
-    "@storybook/addon-essentials": "^6.1.11",
-    "@storybook/addon-links": "^6.1.11",
-    "@storybook/react": "^6.1.14",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@types/jest": "^26.0.20",
@@ -81,12 +74,12 @@
     "microbundle": "^0.13.0",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-docgen-typescript": "^1.21.0",
     "react-dom": "^17.0.1",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
-    "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
@@ -96,6 +89,7 @@
   "dependencies": {
     "@radix-ui/react-checkbox": "^0.0.4",
     "@radix-ui/react-icons": "^1.0.1",
+    "@radix-ui/react-radio-group": "^0.0.5",
     "@stitches/react": "0.0.3-canary.4"
   },
   "husky": {

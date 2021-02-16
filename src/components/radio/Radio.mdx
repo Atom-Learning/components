@@ -1,0 +1,11 @@
+# RadioIndicator
+
+The `Radio` component is a very thin wrapper around an HTML `select` element. It adds default styling and the `css` prop.
+
+A `Radio` needs to be associated with a label for accessibility purposes, so rather than using the `Radio` component directly in a UI, consider using a `RadioField`, which provides a `Label` and displays validation errors. Use this `Radio` to compose more complex `Field` type components.
+
+## Accessibility
+
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If those are not available, please add an `aria-label` to ensure that the component remains accessible
+
+## Props
