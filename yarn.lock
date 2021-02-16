@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@atom-learning/jest-stitches@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.7.tgz#853c3bfed08b35cef1fd2796c02d8c70ff0b2aba"
+  integrity sha512-F5Gk0nNevIfKXPB/ZTeyh2gom4tTNKA0b0trFmEHH79VpplKr6yNrQTgEjDje3GOmfm8uOk3GAfUpZmsSRLXqg==
+  dependencies:
+    chalk "^4.1.0"
+    css "^3.0.0"
+
 "@atom-learning/theme@0.1.0-beta.4":
   version "0.1.0-beta.4"
   resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.4.tgz#948e80dee8881bf82192b267627985b13312c315"
@@ -1540,17 +1548,17 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.1.0-canary.3":
-  version "0.1.0-canary.3"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.3.tgz#6431bebfe3c00772fabc6286b3de0f6f37245084"
-  integrity sha512-axvTk7nwIvv9bZvsJ8j/DoUz2pUV/idE7FlERHWApr1llAP6NgRXH45Ez02CKCfL8eNyQQKBortmESufq7sUKA==
+"@stitches/core@^0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.5.tgz#a0c32e33676606097c4841b3175cd1de7028e60f"
+  integrity sha512-WfAVbKUcqAfg3tzLyZ5JnU1pHCOgHFKbJMhKcvSc/sdQPrQTk6nFs/X3V/FipUNTHXN0Ycw4+zP/VUFGaIPpzg==
 
-"@stitches/react@0.1.0-canary.3":
-  version "0.1.0-canary.3"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.3.tgz#1172606bc5a7c72b238253651633f484dd96f9aa"
-  integrity sha512-uIhBPR3tgttNXBjhN45Ybcfr3Rd9P/tshXfGe7AW0xMySvdYMrNYLIMQDAWvSG2z7cS0UlLF0ekPzVZonTQMHA==
+"@stitches/react@0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.5.tgz#acc3fd2866c23a44d1cac03278ae64b2194ea0e3"
+  integrity sha512-t7JbvFVwIdgcJZWf+v+39U1JZ3me+mMC8MIJ9SiBP7Fbh6M6o2DpclnBeTsdAnSklIs9LRI938JUPa4fQ4ILiA==
   dependencies:
-    "@stitches/core" "^0.1.0-canary.3"
+    "@stitches/core" "^0.1.0-canary.5"
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"
@@ -1726,10 +1734,23 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.6.tgz#f4b1efa784e8db479cdb8b14403e2144b1e9ff03"
   integrity sha512-6gOkRe7OIioWAXfnO/2lFiv+SJichKVSys1mSsgyrYHSEjk8Ctv4tSR/Odvnu+HWlH2C8j53dahU03XmQdd5fA==
 
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@types/react@^17.0.2":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
+  integrity sha512-Xt40xQsrkdvjn1EyWe1Bc0dJLcil/9x2vAuW7ya+PuQip4UYUaXyhzWmAbwRsdMgwOFHpfp7/FFZebDU6Y8VHA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -3605,6 +3626,11 @@ cssstyle@^2.2.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^3.0.2:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
+  integrity sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -6145,14 +6171,6 @@ jest-snapshot@^26.6.2:
     natural-compare "^1.4.0"
     pretty-format "^26.6.2"
     semver "^7.3.2"
-
-jest-stitches@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/jest-stitches/-/jest-stitches-1.0.4.tgz#7d60402762a179b0cdc0b7d68b40b6d722e8b7d5"
-  integrity sha512-dEr55xMFodt+UiFrE+B2H1rNH0ebf1zKUZBD71PE60IvSOvwQMyXiHsMzJEwdnzU+vZ8DkHHPSwJgOOXNJrvDA==
-  dependencies:
-    chalk "^4.1.0"
-    css "^3.0.0"
 
 jest-util@^26.6.2:
   version "26.6.2"
