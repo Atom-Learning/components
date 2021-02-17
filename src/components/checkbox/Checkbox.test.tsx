@@ -9,7 +9,7 @@ describe(`Checkbox component`, () => {
     const { container } = render(
       // workaround for failing axe test -
       // Radix's checkbox renders an <input type="checkbox" hidden=""/> but
-      // doens't give it role="none" so axe wants it to have a label
+      // doesn't give it role="none" so axe wants it to have a label
       <label>
         <Checkbox title="test" />
       </label>

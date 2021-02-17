@@ -2,9 +2,9 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, css } from '../dist'
+import { Box, globalCss } from '../dist'
 
-css.global(reset)()
+globalCss(reset)()
 
 const App = () => {
   return <Box />

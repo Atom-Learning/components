@@ -38,7 +38,8 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/theme": "0.1.0-beta.4",
+    "@atom-learning/jest-stitches": "^1.0.7",
+    "@atom-learning/theme": "0.1.0-beta.5",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
@@ -69,7 +70,6 @@
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
     "jest-dom": "^4.0.0",
-    "jest-stitches": "^1.0.4",
     "lint-staged": "^10.5.3",
     "microbundle": "^0.13.0",
     "npm-run-all": "^4.1.5",
@@ -89,7 +89,9 @@
   "dependencies": {
     "@radix-ui/react-checkbox": "^0.0.4",
     "@radix-ui/react-icons": "^1.0.1",
-    "@stitches/react": "0.0.3-canary.4"
+    "@stitches/react": "0.1.0-canary.5",
+    "@types/react": "^17.0.2",
+    "@types/resize-observer-browser": "^0.1.5"
   },
   "husky": {
     "hooks": {

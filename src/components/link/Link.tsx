@@ -1,15 +1,15 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 const StyledLink = styled('a', {
   color: '$primary500',
   fontFamily: '$sans',
   textDecoration: 'none',
   cursor: 'pointer',
-  ':visited': { color: '$primary500' },
+  '&:visited': { color: '$primary500' },
   '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
-  ':active': { color: '$primary500' },
+  '&:active': { color: '$primary500' },
   variants: {
     size: {
       sm: {
@@ -31,7 +31,7 @@ const StyledLink = styled('a', {
   }
 })
 
-type LinkProps = StitchesProps<typeof StyledLink>
+type LinkProps = React.ComponentPropsWithoutRef<typeof StyledLink>
 
 export const Link: React.FC<LinkProps> = ({ size = 'md', ...rest }) => (
   <StyledLink size={size} {...rest} />

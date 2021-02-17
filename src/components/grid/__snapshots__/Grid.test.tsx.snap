@@ -1,37 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component renders 1`] = `
-._bwIihq {
+.sxsxxpi {
   display: grid;
 }
 
-._Fgykb {
-  margin-top: auto;
+.sxsxxpi6obnf--css {
+  margin: auto;
 }
 
-._bVZaHo {
-  margin-right: auto;
-}
-
-._kSJetr {
-  margin-bottom: auto;
-}
-
-._jbMiSP {
-  margin-left: auto;
-}
-
-._SOQhS {
+.sxsxxpi6obnf--css {
   height: 100px;
-}
-
-._ffzcdL {
   width: 100px;
 }
 
 <div>
   <div
-    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb _bwIihq scid-bQzyIt"
+    class="sxsxxpi sxsxxpi6obnf--css"
   >
     GRID
   </div>

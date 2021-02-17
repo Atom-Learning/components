@@ -6,7 +6,9 @@ import { Image } from '.'
 
 describe(`Image component`, () => {
   it('renders an image', async () => {
-    const { container } = render(<Image src="http://placekitten.com/200/300" alt=""/>)
+    const { container } = render(
+      <Image src="http://placekitten.com/200/300" alt="" />
+    )
 
     await screen.getByRole('img')
 

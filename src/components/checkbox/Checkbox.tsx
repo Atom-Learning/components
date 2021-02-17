@@ -2,7 +2,7 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import { CheckIcon } from '@radix-ui/react-icons'
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
@@ -37,7 +37,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   }
 })
 
-type CheckboxProps = StitchesProps<typeof StyledCheckbox>
+type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
 
 export const Checkbox: React.FC<CheckboxProps> = (props) => {
   return (
