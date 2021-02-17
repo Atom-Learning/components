@@ -20,7 +20,7 @@ const StyledInput = styled('input', {
   transition: 'all 100ms ease-out',
   '&:focus': {
     borderColor: '$primary900',
-    boxShadow: 'inset 0 0 0 1px $primary900',
+    boxShadow: 'inset 0 0 0 1px $colors$primary900',
     outline: 'none'
   },
   '&[disabled]': {

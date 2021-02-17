@@ -67,7 +67,14 @@ export const conditions = {
   hover: `@media (hover: hover)`
 }
 
-export const { styled, css, global: globalCss } = createCss({
+export const {
+  css,
+  getCssString,
+  global: globalCss,
+  keyframes,
+  styled,
+  theme
+} = createCss({
   theme: atomTheme,
   utils,
   conditions

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
-.sx8xeii {
+.sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
@@ -17,34 +17,34 @@ exports[`Input component renders a number input 1`] = `
   padding: var(--space-3);
 }
 
-.sx8xeii {
+.sxfigyv {
   transition: all 100ms ease-out;
 }
 
-.sx8xeii:focus {
+.sxfigyv:focus {
   border-color: var(--colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--shadows-primary900);
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx8xeii[disabled] {
+.sxfigyv[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sx8xeii6obnf--css {
+.sxfigyv6obnf--css {
   margin: auto;
 }
 
-.sx8xeii6obnf--css {
+.sxfigyv6obnf--css {
   height: 100px;
   width: 100px;
 }
 
 <div>
   <input
-    class="sx8xeii sx8xeii6obnf--css"
+    class="sxfigyv sxfigyv6obnf--css"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -54,7 +54,7 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
-.sx8xeii {
+.sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
@@ -70,34 +70,34 @@ exports[`Input component renders a text input 1`] = `
   padding: var(--space-3);
 }
 
-.sx8xeii {
+.sxfigyv {
   transition: all 100ms ease-out;
 }
 
-.sx8xeii:focus {
+.sxfigyv:focus {
   border-color: var(--colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--shadows-primary900);
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx8xeii[disabled] {
+.sxfigyv[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sx8xeii6obnf--css {
+.sxfigyv6obnf--css {
   margin: auto;
 }
 
-.sx8xeii6obnf--css {
+.sxfigyv6obnf--css {
   height: 100px;
   width: 100px;
 }
 
 <div>
   <input
-    class="sx8xeii sx8xeii6obnf--css"
+    class="sxfigyv sxfigyv6obnf--css"
     placeholder="INPUT"
     type="text"
   />
