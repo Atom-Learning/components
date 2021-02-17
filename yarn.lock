@@ -2,10 +2,18 @@
 # yarn lockfile v1
 
 
-"@atom-learning/theme@0.1.0-beta.4":
-  version "0.1.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.4.tgz#948e80dee8881bf82192b267627985b13312c315"
-  integrity sha512-AAA+DKs9hZpPLa1OHzl4sK1S87JubTyRDYCMm4hlWkad60JGgx331qww1nh340D2bg+e34g+HFuIm17Vx1kxzQ==
+"@atom-learning/jest-stitches@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.7.tgz#853c3bfed08b35cef1fd2796c02d8c70ff0b2aba"
+  integrity sha512-F5Gk0nNevIfKXPB/ZTeyh2gom4tTNKA0b0trFmEHH79VpplKr6yNrQTgEjDje3GOmfm8uOk3GAfUpZmsSRLXqg==
+  dependencies:
+    chalk "^4.1.0"
+    css "^3.0.0"
+
+"@atom-learning/theme@0.1.0-beta.5":
+  version "0.1.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.5.tgz#ec61898c4e62239fd0b18d8038c8ca546a9f5f99"
+  integrity sha512-HQXSTlXESvC9wG3Bak/UMlE8MW/p3BLOqTr6fZcesIiUZw0IACmmgycJVXd7um7Ej4ZGXtfmctXaBt8YD+TIjQ==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
@@ -1404,25 +1412,10 @@
     "@radix-ui/react-utils" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
-"@radix-ui/react-label@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-0.0.5.tgz#68d05c31ed5669190e09967026b8660a2f4cf736"
-  integrity sha512-zc249n6Ak3GMxvEwljgJ0HVMOUKV3J4eaN84YdijotTeSX04H7b/e2f54oFJuiboaPpvTu32AiwciRKt00reQg==
-  dependencies:
-    "@radix-ui/react-polymorphic" "0.0.5"
-    "@radix-ui/react-primitive" "0.0.4"
-    "@radix-ui/react-utils" "0.0.5"
-    "@radix-ui/utils" "0.0.3"
-
 "@radix-ui/react-polymorphic@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.4.tgz#15ae4d971054c4598141f384e56b98b4f952a23c"
   integrity sha512-VmMdYtv2GFMPUfZflO2cqB4s1Ge0BfsbrgALk16mZhNsRLwLyUKDlSgFT0SBMqcYRQKKfto0cRpZFHEJseicbg==
-
-"@radix-ui/react-polymorphic@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.5.tgz#7742695d5a47c732b3c5f627dfcd037c03f07f5b"
-  integrity sha512-XjAsBfFaa4FFYXZNPa9icHjDEqzvH+TVxQQwYJU2iY+6Ne1DhHXMLrGt/Vk0+BojMSPzg99NhjXROjQ4Fw30Hw==
 
 "@radix-ui/react-presence@0.0.4":
   version "0.0.4"
@@ -1430,14 +1423,6 @@
   integrity sha512-6Cb5AZSb4pgXfNhdjBSCVZ4ib3Z8X6oxwZNLMyHNyCIltokNNl9WqMTO5jcXi/RqpFm8sBqQNZtCwnk59LhFEg==
   dependencies:
     "@radix-ui/react-utils" "0.0.4"
-    "@xstate/fsm" "^1.5.1"
-
-"@radix-ui/react-presence@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-0.0.5.tgz#18661555b388f2d00db88921adf4a8b8e5369bb2"
-  integrity sha512-r2jpfsz3P15RXgz6EdoUfLhAZCiss95/CF2RYQhIRROWQ/cKfNc4FpnD1mQxYry/UULcZ8RZ4UcyBkxLzzbLnQ==
-  dependencies:
-    "@radix-ui/react-utils" "0.0.5"
     "@xstate/fsm" "^1.5.1"
 
 "@radix-ui/react-primitive@0.0.3":
@@ -1448,49 +1433,12 @@
     "@radix-ui/react-polymorphic" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
-"@radix-ui/react-primitive@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-0.0.4.tgz#c4ff716e8f5a57358beb75a3d447fefcd72c7a1b"
-  integrity sha512-FRiGr6WJRQG7/9i7bUHiXmyS9hLsBrAbMbsaqapYR8VPYlJyAavkNi5sXBXUoWa/VJdeZPI8jUKe/CRZ2ye5Lw==
-  dependencies:
-    "@radix-ui/react-polymorphic" "0.0.5"
-    "@radix-ui/utils" "0.0.3"
-
-"@radix-ui/react-radio-group@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-radio-group/-/react-radio-group-0.0.5.tgz#3c2d643cbec5e7d879ce6ce7621e1db60f180d20"
-  integrity sha512-AG/QBBE1wnlTNFQsyTUZ6nC/hVEZXWjOBQwMmzifd4EAucU0YL5uYP0yQ+C99tRt6nYfjdYfgv1Z+XfqZaVmIA==
-  dependencies:
-    "@radix-ui/react-label" "0.0.5"
-    "@radix-ui/react-polymorphic" "0.0.5"
-    "@radix-ui/react-presence" "0.0.5"
-    "@radix-ui/react-primitive" "0.0.4"
-    "@radix-ui/react-roving-focus" "0.0.5"
-    "@radix-ui/react-utils" "0.0.5"
-    "@radix-ui/utils" "0.0.3"
-
-"@radix-ui/react-roving-focus@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-0.0.5.tgz#ce92310bb154421f16df3df84e266f42b9b375ba"
-  integrity sha512-+Esp3HJxoMGiTx0qn0DVAp2DTiEMpyMLLN2ijlr22dFSDihmVMQH1+VpHEZu6nhclkUx8o/3lXhrgxj6wSfILA==
-  dependencies:
-    "@radix-ui/react-utils" "0.0.5"
-    "@radix-ui/utils" "0.0.3"
-
 "@radix-ui/react-utils@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-utils/-/react-utils-0.0.4.tgz#4834cac08088163e0e738c3017fecab406236185"
   integrity sha512-HqC9OJJjoDun7LNqwYzVX9gYaH5yGhdNtaBRPoSt8wywh+Kv0iU6lDP5H7w7j+6TzZCHH8XEzRbmOSowzlpGAA==
   dependencies:
     "@radix-ui/react-polymorphic" "0.0.4"
-    "@radix-ui/utils" "0.0.3"
-
-"@radix-ui/react-utils@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/@radix-ui/react-utils/-/react-utils-0.0.5.tgz#d312d4b3d1d1adb25f1ef284b6d1d861c572bb85"
-  integrity sha512-OEPLfh8J6JH0Cqv3VrvI8NYQKX1nw0qVVNM14lYCgRGmAI49YrK51tcOIzqzdfuBkXLCX5QzrwK8//DjwoAbhQ==
-  dependencies:
-    "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
 "@radix-ui/utils@0.0.3":
@@ -1600,17 +1548,17 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.0.3-canary.4":
-  version "0.0.3-canary.4"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.0.3-canary.4.tgz#47f5bcf250f5a010218e76510af4ba52e066de6c"
-  integrity sha512-VlDwtJfhWvxItU8ai5i0UQcNx7MRUIMpy2i6ufUVxcINXkrFZDTBxfahdgKQIT5oS3kT0LbUySctRDEMbt79YA==
+"@stitches/core@^0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.5.tgz#a0c32e33676606097c4841b3175cd1de7028e60f"
+  integrity sha512-WfAVbKUcqAfg3tzLyZ5JnU1pHCOgHFKbJMhKcvSc/sdQPrQTk6nFs/X3V/FipUNTHXN0Ycw4+zP/VUFGaIPpzg==
 
-"@stitches/react@0.0.3-canary.4":
-  version "0.0.3-canary.4"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.0.3-canary.4.tgz#a482ef65ee26607840b690910b177eb8a5c68d97"
-  integrity sha512-t9IotrA7nC3kM50yPgDumIwYUB9FhuEjuta2kEzUs8LTi5q8cvkG+9JOZAWDmTl/V5DImui8pv/5OMNKlG4bfg==
+"@stitches/react@0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.5.tgz#acc3fd2866c23a44d1cac03278ae64b2194ea0e3"
+  integrity sha512-t7JbvFVwIdgcJZWf+v+39U1JZ3me+mMC8MIJ9SiBP7Fbh6M6o2DpclnBeTsdAnSklIs9LRI938JUPa4fQ4ILiA==
   dependencies:
-    "@stitches/core" "^0.0.3-canary.4"
+    "@stitches/core" "^0.1.0-canary.5"
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"
@@ -1786,10 +1734,28 @@
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.6.tgz#f4b1efa784e8db479cdb8b14403e2144b1e9ff03"
   integrity sha512-6gOkRe7OIioWAXfnO/2lFiv+SJichKVSys1mSsgyrYHSEjk8Ctv4tSR/Odvnu+HWlH2C8j53dahU03XmQdd5fA==
 
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
 "@types/q@^1.5.1":
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
+
+"@types/react@^17.0.2":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
+  integrity sha512-Xt40xQsrkdvjn1EyWe1Bc0dJLcil/9x2vAuW7ya+PuQip4UYUaXyhzWmAbwRsdMgwOFHpfp7/FFZebDU6Y8VHA==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
+
+"@types/resize-observer-browser@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@types/resize-observer-browser/-/resize-observer-browser-0.1.5.tgz#36d897708172ac2380cd486da7a3daf1161c1e23"
+  integrity sha512-8k/67Z95Goa6Lznuykxkfhq9YU3l1Qe6LNZmwde1u7802a3x8v44oq0j91DICclxatTr0rNnhXx7+VTIetSrSQ==
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -3665,6 +3631,11 @@ cssstyle@^2.2.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^3.0.2:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.6.tgz#865d0b5833d7d8d40f4e5b8a6d76aea3de4725ef"
+  integrity sha512-+ZAmfyWMT7TiIlzdqJgjMb7S4f1beorDbWbsocyK4RaiqA5RTX3K14bnBWmmA9QEM0gRdsjyyrEmcyga8Zsxmw==
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -6205,14 +6176,6 @@ jest-snapshot@^26.6.2:
     natural-compare "^1.4.0"
     pretty-format "^26.6.2"
     semver "^7.3.2"
-
-jest-stitches@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/jest-stitches/-/jest-stitches-1.0.4.tgz#7d60402762a179b0cdc0b7d68b40b6d722e8b7d5"
-  integrity sha512-dEr55xMFodt+UiFrE+B2H1rNH0ebf1zKUZBD71PE60IvSOvwQMyXiHsMzJEwdnzU+vZ8DkHHPSwJgOOXNJrvDA==
-  dependencies:
-    chalk "^4.1.0"
-    css "^3.0.0"
 
 jest-util@^26.6.2:
   version "26.6.2"

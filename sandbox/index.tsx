@@ -2,10 +2,9 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Button, css, Label } from '../dist'
-import { RadioButton, RadioButtonGroup } from '../src/components/radio/'
+import { Box, globalCss } from '../dist'
 
-css.global(reset)()
+globalCss(reset)()
 
 const App = () => {
   return (
@@ -20,18 +19,7 @@ const App = () => {
         m: 10
       }}
     >
-      <RadioButtonGroup>
-        <Label>
-          <RadioButton value="bla1" />
-          hello
-        </Label>
-        <Label>
-          <RadioButton value="bla2" />
-          goodbye
-        </Label>
-      </RadioButtonGroup>
-
-      <Button>Hello</Button>
+      hello
     </Box>
   )
 }

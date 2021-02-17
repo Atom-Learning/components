@@ -1,77 +1,74 @@
-export * from '@stitches/react'
-
-import tokens from '@atom-learning/theme'
-import { createStyled } from '@stitches/react'
+import atomTheme from '@atom-learning/theme'
+import { createCss } from '@stitches/react'
 
 type CSSValue = number | string
 export type CSSBlob = { [key: string]: CSSValue }
 
 export const utils = {
-  p: (value: CSSValue): CSSBlob => ({
+  p: () => (value: CSSValue): CSSBlob => ({
     padding: value
   }),
-  pt: (value: CSSValue): CSSBlob => ({
+  pt: () => (value: CSSValue): CSSBlob => ({
     paddingTop: value
   }),
-  pr: (value: CSSValue): CSSBlob => ({
+  pr: () => (value: CSSValue): CSSBlob => ({
     paddingRight: value
   }),
-  pb: (value: CSSValue): CSSBlob => ({
+  pb: () => (value: CSSValue): CSSBlob => ({
     paddingBottom: value
   }),
-  pl: (value: CSSValue): CSSBlob => ({
+  pl: () => (value: CSSValue): CSSBlob => ({
     paddingLeft: value
   }),
-  px: (value: CSSValue): CSSBlob => ({
+  px: () => (value: CSSValue): CSSBlob => ({
     paddingLeft: value,
     paddingRight: value
   }),
-  py: (value: CSSValue): CSSBlob => ({
+  py: () => (value: CSSValue): CSSBlob => ({
     paddingTop: value,
     paddingBottom: value
   }),
 
-  m: (value: CSSValue): CSSBlob => ({
+  m: () => (value: CSSValue): CSSBlob => ({
     margin: value
   }),
-  mt: (value: CSSValue): CSSBlob => ({
+  mt: () => (value: CSSValue): CSSBlob => ({
     marginTop: value
   }),
-  mr: (value: CSSValue): CSSBlob => ({
+  mr: () => (value: CSSValue): CSSBlob => ({
     marginRight: value
   }),
-  mb: (value: CSSValue): CSSBlob => ({
+  mb: () => (value: CSSValue): CSSBlob => ({
     marginBottom: value
   }),
-  ml: (value: CSSValue): CSSBlob => ({
+  ml: () => (value: CSSValue): CSSBlob => ({
     marginLeft: value
   }),
-  mx: (value: CSSValue): CSSBlob => ({
+  mx: () => (value: CSSValue): CSSBlob => ({
     marginLeft: value,
     marginRight: value
   }),
-  my: (value: CSSValue): CSSBlob => ({
+  my: () => (value: CSSValue): CSSBlob => ({
     marginTop: value,
     marginBottom: value
   }),
 
-  bg: (value: string): CSSBlob => ({
+  bg: () => (value: string): CSSBlob => ({
     background: value
   })
 }
 
-export const breakpoints = {
-  sm: (rule: string): string => `@media (min-width: 550px) { ${rule} }`,
-  md: (rule: string): string => `@media (min-width: 800px) { ${rule} }`,
-  lg: (rule: string): string => `@media (min-width: 1100px) { ${rule} }`,
-  xl: (rule: string): string => `@media (min-width: 1350px) { ${rule} }`,
-  motion: (rule: string): string =>
-    `@media (prefers-reduced-motion) { ${rule} }`,
-  hover: (rule: string): string => `@media (hover: hover) { ${rule} }`
+export const conditions = {
+  sm: `@media (min-width: 550px)`,
+  md: `@media (min-width: 800px)`,
+  lg: `@media (min-width: 1100px)`,
+  xl: `@media (min-width: 1350px)`,
+  motion: `@media (prefers-reduced-motion)`,
+  hover: `@media (hover: hover)`
 }
 
-export const { styled, css } = createStyled({
-  tokens,
+export const { styled, css, global: globalCss } = createCss({
+  theme: atomTheme,
   utils,
-  breakpoints
+  conditions
 })

@@ -1,5 +1,5 @@
-export { Button } from './button'
 export { Box } from './box'
+export { Button } from './button'
 export { Checkbox } from './checkbox'
 export { Flex } from './flex'
 export { Grid } from './grid'

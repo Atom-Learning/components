@@ -22,3 +22,5 @@ export const CSSWrapper = ({
     // eslint-disable-next-line react/jsx-no-useless-fragment
     <>{children}</>
   )
+
+CSSWrapper.displayName = 'CSSWrapper'
