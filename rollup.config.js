@@ -1,9 +1,8 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
 import bundleSize from 'rollup-plugin-bundle-size'
 import { terser } from 'rollup-plugin-terser'
-// import typescript from 'rollup-plugin-typescript2'
-import typescript from '@rollup/plugin-typescript'
 
 import pkg from './package.json'
 
@@ -24,9 +23,6 @@ export default {
     commonjs(),
     resolve(),
     isProduction && terser(),
-    typescript({
-      // rollupCommonJSResolveHack: false,
-      // clean: true
-    })
+    typescript()
   ]
 }
