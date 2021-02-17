@@ -2,10 +2,18 @@
 # yarn lockfile v1
 
 
-"@atom-learning/theme@0.1.0-beta.4":
-  version "0.1.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.4.tgz#948e80dee8881bf82192b267627985b13312c315"
-  integrity sha512-AAA+DKs9hZpPLa1OHzl4sK1S87JubTyRDYCMm4hlWkad60JGgx331qww1nh340D2bg+e34g+HFuIm17Vx1kxzQ==
+"@atom-learning/jest-stitches@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.7.tgz#853c3bfed08b35cef1fd2796c02d8c70ff0b2aba"
+  integrity sha512-F5Gk0nNevIfKXPB/ZTeyh2gom4tTNKA0b0trFmEHH79VpplKr6yNrQTgEjDje3GOmfm8uOk3GAfUpZmsSRLXqg==
+  dependencies:
+    chalk "^4.1.0"
+    css "^3.0.0"
+
+"@atom-learning/theme@0.1.0-beta.5":
+  version "0.1.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.5.tgz#ec61898c4e62239fd0b18d8038c8ca546a9f5f99"
+  integrity sha512-HQXSTlXESvC9wG3Bak/UMlE8MW/p3BLOqTr6fZcesIiUZw0IACmmgycJVXd7um7Ej4ZGXtfmctXaBt8YD+TIjQ==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
@@ -1518,17 +1526,17 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.0.3-canary.4":
-  version "0.0.3-canary.4"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.0.3-canary.4.tgz#47f5bcf250f5a010218e76510af4ba52e066de6c"
-  integrity sha512-VlDwtJfhWvxItU8ai5i0UQcNx7MRUIMpy2i6ufUVxcINXkrFZDTBxfahdgKQIT5oS3kT0LbUySctRDEMbt79YA==
+"@stitches/core@^0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.5.tgz#a0c32e33676606097c4841b3175cd1de7028e60f"
+  integrity sha512-WfAVbKUcqAfg3tzLyZ5JnU1pHCOgHFKbJMhKcvSc/sdQPrQTk6nFs/X3V/FipUNTHXN0Ycw4+zP/VUFGaIPpzg==
 
-"@stitches/react@0.0.3-canary.4":
-  version "0.0.3-canary.4"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.0.3-canary.4.tgz#a482ef65ee26607840b690910b177eb8a5c68d97"
-  integrity sha512-t9IotrA7nC3kM50yPgDumIwYUB9FhuEjuta2kEzUs8LTi5q8cvkG+9JOZAWDmTl/V5DImui8pv/5OMNKlG4bfg==
+"@stitches/react@0.1.0-canary.5":
+  version "0.1.0-canary.5"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.5.tgz#acc3fd2866c23a44d1cac03278ae64b2194ea0e3"
+  integrity sha512-t7JbvFVwIdgcJZWf+v+39U1JZ3me+mMC8MIJ9SiBP7Fbh6M6o2DpclnBeTsdAnSklIs9LRI938JUPa4fQ4ILiA==
   dependencies:
-    "@stitches/core" "^0.0.3-canary.4"
+    "@stitches/core" "^0.1.0-canary.5"
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"
@@ -1721,6 +1729,11 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
+
+"@types/resize-observer-browser@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@types/resize-observer-browser/-/resize-observer-browser-0.1.5.tgz#36d897708172ac2380cd486da7a3daf1161c1e23"
+  integrity sha512-8k/67Z95Goa6Lznuykxkfhq9YU3l1Qe6LNZmwde1u7802a3x8v44oq0j91DICclxatTr0rNnhXx7+VTIetSrSQ==
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -6010,14 +6023,6 @@ jest-snapshot@^26.6.2:
     natural-compare "^1.4.0"
     pretty-format "^26.6.2"
     semver "^7.3.2"
-
-jest-stitches@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/jest-stitches/-/jest-stitches-1.0.4.tgz#7d60402762a179b0cdc0b7d68b40b6d722e8b7d5"
-  integrity sha512-dEr55xMFodt+UiFrE+B2H1rNH0ebf1zKUZBD71PE60IvSOvwQMyXiHsMzJEwdnzU+vZ8DkHHPSwJgOOXNJrvDA==
-  dependencies:
-    chalk "^4.1.0"
-    css "^3.0.0"
 
 jest-util@^26.6.2:
   version "26.6.2"

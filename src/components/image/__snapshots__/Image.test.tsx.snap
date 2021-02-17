@@ -1,38 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Image component renders an image 1`] = `
-._jSaEbM[src$=".svg"] {
-  max-width: none;
-}
-
-._kFmhCF[src$=".svg"] {
-  height: auto;
-}
-
-._jNYnTj[src$=".svg"] {
-  width: 100%;
-}
-
-._byDord[width][height] {
-  height: auto;
-}
-
-._hGTBgp[width] {
-  width: auto;
-}
-
-._dPTvOL {
+.sxkoa5n {
+  vertical-align: middle;
   max-width: 100%;
 }
 
-._cogCmr {
-  vertical-align: middle;
+.sxkoa5n[width] {
+  width: auto;
+}
+
+.sxkoa5n[width][height] {
+  height: auto;
+}
+
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 <div>
   <img
     alt=""
-    class="_cogCmr _dPTvOL _hGTBgp _byDord _jNYnTj _kFmhCF _jSaEbM scid-eWgOGC"
+    class="sxkoa5n"
     src="http://placekitten.com/200/300"
   />
 </div>

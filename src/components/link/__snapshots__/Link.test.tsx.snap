@@ -1,55 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component renders an anchor 1`] = `
-._bYkcXx._bYkcXx._bYkcXx:active {
+.sxn6u9y {
   color: var(--colors-primary500);
-}
-
-._kNYlGF._kNYlGF._kNYlGF._kNYlGF:focus,
-._kNYlGF:hover {
-  text-decoration-line: underline;
-}
-
-._wFLKx._wFLKx._wFLKx._wFLKx:focus,
-._wFLKx:hover {
-  color: var(--colors-primary900);
-}
-
-._MxdQF:visited {
-  color: var(--colors-primary500);
-}
-
-._cKSYdt {
+  font-family: var(--fonts-sans);
+  text-decoration: none;
   cursor: pointer;
 }
 
-._kaGCev {
-  text-decoration-line: none;
-}
-
-._oIZSq {
-  font-family: var(--fonts-sans);
-}
-
-._goMgqD {
+.sxn6u9y:visited {
   color: var(--colors-primary500);
 }
 
-._laGdYr {
-  line-height: 1.4;
+.sxn6u9y:focus,
+.sxn6u9y:hover {
+  color: var(--colors-primary900);
+  text-decoration: underline;
 }
 
-._bIcFyi {
-  letter-spacing: 0.02em;
+.sxn6u9y:active {
+  color: var(--colors-primary500);
 }
 
-._dIHnma {
+.sxn6u9yido38--size-md {
   font-size: var(--fontSizes-md);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 <div>
   <a
-    class="_dIHnma _bIcFyi _laGdYr _goMgqD _oIZSq _kaGCev _cKSYdt _MxdQF _wFLKx _kNYlGF _bYkcXx scid-zNoKV"
+    class="sxn6u9y sxn6u9yido38--size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -58,55 +39,42 @@ exports[`Link component renders an anchor 1`] = `
 `;
 
 exports[`Link component renders an large anchor 1`] = `
-._hIHyGI {
-  font-size: var(--fontSizes-lg);
-}
-
-._bYkcXx._bYkcXx._bYkcXx:active {
+.sxn6u9y {
   color: var(--colors-primary500);
-}
-
-._kNYlGF._kNYlGF._kNYlGF._kNYlGF:focus,
-._kNYlGF:hover {
-  text-decoration-line: underline;
-}
-
-._wFLKx._wFLKx._wFLKx._wFLKx:focus,
-._wFLKx:hover {
-  color: var(--colors-primary900);
-}
-
-._MxdQF:visited {
-  color: var(--colors-primary500);
-}
-
-._cKSYdt {
+  font-family: var(--fonts-sans);
+  text-decoration: none;
   cursor: pointer;
 }
 
-._kaGCev {
-  text-decoration-line: none;
-}
-
-._oIZSq {
-  font-family: var(--fonts-sans);
-}
-
-._goMgqD {
+.sxn6u9y:visited {
   color: var(--colors-primary500);
 }
 
-._laGdYr {
+.sxn6u9y:focus,
+.sxn6u9y:hover {
+  color: var(--colors-primary900);
+  text-decoration: underline;
+}
+
+.sxn6u9y:active {
+  color: var(--colors-primary500);
+}
+
+.sxn6u9yido38--size-md {
+  font-size: var(--fontSizes-md);
+  letter-spacing: 0.02em;
   line-height: 1.4;
 }
 
-._bIcFyi {
+.sxn6u9y6hfh9--size-lg {
+  font-size: var(--fontSizes-lg);
   letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 <div>
   <a
-    class="_hIHyGI _bIcFyi _laGdYr _goMgqD _oIZSq _kaGCev _cKSYdt _MxdQF _wFLKx _kNYlGF _bYkcXx scid-zNoKV"
+    class="sxn6u9y sxn6u9y6hfh9--size-lg"
     href="https://google.com/"
   >
     GOOGLE
