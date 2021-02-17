@@ -13,7 +13,8 @@
     "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
-    }
+    },
+    "declaration": true // output d.ts files
   },
   "include": ["./src/"],
   "exclude": ["./src/**/*.test.*"],
