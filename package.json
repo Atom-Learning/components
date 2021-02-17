@@ -39,7 +39,7 @@
   ],
   "devDependencies": {
     "@atom-learning/jest-stitches": "^1.0.7",
-    "@atom-learning/theme": "0.1.0-beta.4",
+    "@atom-learning/theme": "0.1.0-beta.5",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
