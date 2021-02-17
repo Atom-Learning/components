@@ -1,7 +1,10 @@
+import * as React from 'react'
+
 import { styled } from '~/stitches'
+import { Override } from '~/utilities/types'
 
 // default styling lifted from https://www.zachleat.com/web/fluid-images/#copy-and-paste
-export const Image = styled('img', {
+const StyledImage = styled('img', {
   verticalAlign: 'middle',
   maxWidth: '100%',
   '&[width]': {
@@ -16,5 +19,14 @@ export const Image = styled('img', {
     maxWidth: 'none'
   }
 })
+
+type ImageProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledImage>,
+  {
+    as: never
+  }
+>
+
+export const Image: React.FC<ImageProps> = StyledImage
 
 Image.displayName = 'Image'

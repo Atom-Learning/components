@@ -9,33 +9,18 @@ exports[`CSSWrapper component doesn't render if not passed CSS blob 1`] = `
 `;
 
 exports[`CSSWrapper component renders if passed CSS blob 1`] = `
-._Fgykb {
-  margin-top: auto;
+.sx03kze6obnf--css {
+  margin: auto;
 }
 
-._bVZaHo {
-  margin-right: auto;
-}
-
-._kSJetr {
-  margin-bottom: auto;
-}
-
-._jbMiSP {
-  margin-left: auto;
-}
-
-._SOQhS {
+.sx03kze6obnf--css {
   height: 100px;
-}
-
-._ffzcdL {
   width: 100px;
 }
 
 <div>
   <div
-    class="_ffzcdL _SOQhS _jbMiSP _kSJetr _bVZaHo _Fgykb scid-PJLV"
+    class="sx03kze sx03kze6obnf--css"
     data-testid="css-wrapper"
   >
     <p>

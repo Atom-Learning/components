@@ -13,8 +13,10 @@
     "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
-    }
+    },
+    "declaration": true // output d.ts files
   },
-  "include": ["./src/", "./jest-setup.ts"],
-  "exclude": ["./src/**/*.test.*"]
+  "include": ["./src/"],
+  "exclude": ["./src/**/*.test.*"],
+  "files": ["types/global.d.ts"]
 }

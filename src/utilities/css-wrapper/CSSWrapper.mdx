@@ -1,21 +1,20 @@
-import { Meta } from '@storybook/addon-docs/blocks'
-
-import { CSSWrapper } from '.'
-
-<Meta title="Util/CSSWrapper" component={CSSWrapper} />
-
-# CSSWrapper
+---
+title: CSS Wrapper
+component: CSSWrapper
+---
 
 If `CSSWrapper` is passed a truthy `css` prop, it renders its children wrapped in a `Box` with that `css`. If `css` is falsy, `CSSWrapper`
 just renders its children.
 
 Use `CSSWrapper` to wrap other components that have no natural container. For example, an `InputField` component would render something like this:
 
-```tsx
-<CSSWrapper css={css}>
-  <Label htmlFor={name} css={{ mb: '$2' }}>
-    {label}
-  </Label>
-  <Input name={name} id={name} {...props} />
-</CSSWrapper>
+```jsx
+const Component = ({ name, label, css, ...rest }) => (
+  <CSSWrapper css={css}>
+    <Label htmlFor={name} css={{ mb: '$2' }}>
+      {label}
+    </Label>
+    <Input name={name} id={name} {...rest} />
+  </CSSWrapper>
+)
 ```

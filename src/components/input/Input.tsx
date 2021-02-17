@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { StitchesProps, styled } from '~/stitches'
+import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
@@ -18,12 +18,12 @@ const StyledInput = styled('input', {
   width: '100%',
   p: '$3',
   transition: 'all 100ms ease-out',
-  ':focus': {
+  '&:focus': {
     borderColor: '$primary900',
     boxShadow: 'inset 0 0 0 1px $primary900',
     outline: 'none'
   },
-  ':disabled': {
+  '&[disabled]': {
     backgroundColor: '$tonal300',
     color: '$tonal700',
     cursor: 'not-allowed'
@@ -33,9 +33,9 @@ const StyledInput = styled('input', {
 // override default 'type' property to prevent Input from being used to render
 // checkboxes, radios etc — we will have dedicated components for them
 type InputProps = Override<
-  StitchesProps<typeof StyledInput>,
+  React.ComponentPropsWithoutRef<typeof StyledInput>,
   {
-    as: never
+    as: 'input'
     type: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
 >
