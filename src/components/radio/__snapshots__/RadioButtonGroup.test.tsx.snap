@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton Groupcomponent renders an empty radio button group 1`] = `
+<div>
+  <div
+    data-radix-radio-group=""
+    role="radiogroup"
+  />
+</div>
+`;

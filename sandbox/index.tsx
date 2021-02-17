@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
 import { Box, globalCss } from '../dist'
+import { RadioButton } from '../src/components/radio/RadioButton';
+import { RadioButtonGroup } from '../src/components/radio/RadioButtonGroup';
 
 globalCss(reset)()
 
@@ -19,7 +21,12 @@ const App = () => {
         m: 10
       }}
     >
-      hello
+      <RadioButtonGroup>
+        <RadioButton value="1" css={{m: 10}} />
+        <RadioButton value="2" css={{m: 10}} />
+        <RadioButton value="3" disabled />
+      </RadioButtonGroup>
+        
     </Box>
   )
 }

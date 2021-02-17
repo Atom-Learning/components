@@ -1412,10 +1412,25 @@
     "@radix-ui/react-utils" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-label@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-0.0.5.tgz#68d05c31ed5669190e09967026b8660a2f4cf736"
+  integrity sha512-zc249n6Ak3GMxvEwljgJ0HVMOUKV3J4eaN84YdijotTeSX04H7b/e2f54oFJuiboaPpvTu32AiwciRKt00reQg==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
+    "@radix-ui/react-utils" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
 "@radix-ui/react-polymorphic@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.4.tgz#15ae4d971054c4598141f384e56b98b4f952a23c"
   integrity sha512-VmMdYtv2GFMPUfZflO2cqB4s1Ge0BfsbrgALk16mZhNsRLwLyUKDlSgFT0SBMqcYRQKKfto0cRpZFHEJseicbg==
+
+"@radix-ui/react-polymorphic@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-polymorphic/-/react-polymorphic-0.0.5.tgz#7742695d5a47c732b3c5f627dfcd037c03f07f5b"
+  integrity sha512-XjAsBfFaa4FFYXZNPa9icHjDEqzvH+TVxQQwYJU2iY+6Ne1DhHXMLrGt/Vk0+BojMSPzg99NhjXROjQ4Fw30Hw==
 
 "@radix-ui/react-presence@0.0.4":
   version "0.0.4"
@@ -1423,6 +1438,14 @@
   integrity sha512-6Cb5AZSb4pgXfNhdjBSCVZ4ib3Z8X6oxwZNLMyHNyCIltokNNl9WqMTO5jcXi/RqpFm8sBqQNZtCwnk59LhFEg==
   dependencies:
     "@radix-ui/react-utils" "0.0.4"
+    "@xstate/fsm" "^1.5.1"
+
+"@radix-ui/react-presence@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-0.0.5.tgz#18661555b388f2d00db88921adf4a8b8e5369bb2"
+  integrity sha512-r2jpfsz3P15RXgz6EdoUfLhAZCiss95/CF2RYQhIRROWQ/cKfNc4FpnD1mQxYry/UULcZ8RZ4UcyBkxLzzbLnQ==
+  dependencies:
+    "@radix-ui/react-utils" "0.0.5"
     "@xstate/fsm" "^1.5.1"
 
 "@radix-ui/react-primitive@0.0.3":
@@ -1433,12 +1456,49 @@
     "@radix-ui/react-polymorphic" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-primitive@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-0.0.4.tgz#c4ff716e8f5a57358beb75a3d447fefcd72c7a1b"
+  integrity sha512-FRiGr6WJRQG7/9i7bUHiXmyS9hLsBrAbMbsaqapYR8VPYlJyAavkNi5sXBXUoWa/VJdeZPI8jUKe/CRZ2ye5Lw==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-radio-group@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-radio-group/-/react-radio-group-0.0.5.tgz#3c2d643cbec5e7d879ce6ce7621e1db60f180d20"
+  integrity sha512-AG/QBBE1wnlTNFQsyTUZ6nC/hVEZXWjOBQwMmzifd4EAucU0YL5uYP0yQ+C99tRt6nYfjdYfgv1Z+XfqZaVmIA==
+  dependencies:
+    "@radix-ui/react-label" "0.0.5"
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-presence" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
+    "@radix-ui/react-roving-focus" "0.0.5"
+    "@radix-ui/react-utils" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-roving-focus@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-0.0.5.tgz#ce92310bb154421f16df3df84e266f42b9b375ba"
+  integrity sha512-+Esp3HJxoMGiTx0qn0DVAp2DTiEMpyMLLN2ijlr22dFSDihmVMQH1+VpHEZu6nhclkUx8o/3lXhrgxj6wSfILA==
+  dependencies:
+    "@radix-ui/react-utils" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
 "@radix-ui/react-utils@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-utils/-/react-utils-0.0.4.tgz#4834cac08088163e0e738c3017fecab406236185"
   integrity sha512-HqC9OJJjoDun7LNqwYzVX9gYaH5yGhdNtaBRPoSt8wywh+Kv0iU6lDP5H7w7j+6TzZCHH8XEzRbmOSowzlpGAA==
   dependencies:
     "@radix-ui/react-polymorphic" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-utils@0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-utils/-/react-utils-0.0.5.tgz#d312d4b3d1d1adb25f1ef284b6d1d861c572bb85"
+  integrity sha512-OEPLfh8J6JH0Cqv3VrvI8NYQKX1nw0qVVNM14lYCgRGmAI49YrK51tcOIzqzdfuBkXLCX5QzrwK8//DjwoAbhQ==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
 "@radix-ui/utils@0.0.3":

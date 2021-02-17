@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component renders a disabled radio 1`] = `
+.sx6v6wr {
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+  border-color: var(--colors-secondary300);
+  border-width: 2px;
+  border-style: solid;
+  width: var(--sizes-0);
+  height: var(--sizes-0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.sx6v6wr:focus {
+  outline: none;
+}
+
+:checked + .sx6v6wr {
+  background-color: var(--colors-secondary300);
+}
+
+:disabled + .sx6v6wr {
+  background-color: var(--colors-tonal600);
+  border: 2px solid var(--colors-tonal600);
+}
+
+.sx79vrj {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+<div>
+  <div
+    data-radix-radio-group=""
+    role="radiogroup"
+  >
+    <input
+      disabled=""
+      hidden=""
+      type="radio"
+      value="value"
+    />
+    <button
+      aria-checked="false"
+      aria-label="disabled indicator"
+      class="sx6v6wr"
+      data-disabled=""
+      data-radix-radio-group-item=""
+      data-state="unchecked"
+      disabled=""
+      role="radio"
+      tabindex="-1"
+      type="button"
+      value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Radio component renders a radio 1`] = `
+.sx6v6wr {
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 50%;
+  border-color: var(--colors-secondary300);
+  border-width: 2px;
+  border-style: solid;
+  width: var(--sizes-0);
+  height: var(--sizes-0);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.sx6v6wr:focus {
+  outline: none;
+}
+
+:checked + .sx6v6wr {
+  background-color: var(--colors-secondary300);
+}
+
+:disabled + .sx6v6wr {
+  background-color: var(--colors-tonal600);
+  border: 2px solid var(--colors-tonal600);
+}
+
+.sx79vrj {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+<div>
+  <div
+    data-radix-radio-group=""
+    role="radiogroup"
+  >
+    <input
+      hidden=""
+      type="radio"
+      value="value"
+    />
+    <button
+      aria-checked="false"
+      aria-label="indicator"
+      class="sx6v6wr"
+      data-radix-radio-group-item=""
+      data-radix-roving-focus-group-1-item=""
+      data-state="unchecked"
+      role="radio"
+      tabindex="0"
+      type="button"
+      value="value"
+    />
+  </div>
+</div>
+`;

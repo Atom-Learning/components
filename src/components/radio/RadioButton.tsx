@@ -1,41 +1,52 @@
-// import * as RadioGroup from '@radix-ui/react-radio-group'
-// import * as React from 'react'
+import * as RadioGroup from '@radix-ui/react-radio-group'
+import * as React from 'react'
 
-// import { StitchesProps, styled } from '../../stitches'
+import { Override } from '~/utilities/types'
 
-// const StyledRadioButton = styled(RadioGroup.Item, {
-//   appearance: 'none',
-//   backgroundColor: 'transparent',
-//   border: 'none',
-//   padding: 0,
-//   borderRadius: '50%',
-//   boxShadow: 'inset 0 0 0 1px gainsboro',
-//   width: 15,
-//   height: 15,
-//   display: 'inline-flex',
-//   alignItems: 'center',
-//   justifyContent: 'center',
-//   verticalAlign: 'middle',
-//   '& ~ &': { marginLeft: 5 },
-//   '&:focus': {
-//     outline: 'none',
-//     boxShadow: 'inset 0 0 0 1px dodgerblue, 0 0 0 1px dodgerblue'
-//   }
-// })
+import { styled } from '../../stitches'
 
-// const StyledIndicator = styled(RadioGroup.Indicator, {
-//   width: 7,
-//   height: 7,
-//   borderRadius: '50%',
-//   backgroundColor: 'dodgerblue'
-// })
+const StyledRadioButton = styled(RadioGroup.Item, {
+  appearance: 'none',
+  backgroundColor: 'transparent',
+  padding: 0,
+  borderRadius: '50%',
+  borderColor: '$secondary300',
+  borderWidth: 2,
+  borderStyle: 'solid',
+  width: '$0',
+  height: '$0',
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  verticalAlign: 'middle',
+  '&:focus': {
+    outline: 'none'
+  },
+  ':checked + &': { backgroundColor: '$secondary300' },
+  ':disabled + &': {
+    backgroundColor: '$tonal600',
+    border: '2px solid $tonal600'
+  }
+})
 
-// type RadioButtonProps = StitchesProps<typeof StyledRadioButton>
+const StyledIndicator = styled(RadioGroup.Indicator, {
+  width: 6,
+  height: 6,
+  borderRadius: '50%',
+  backgroundColor: 'white'
+})
 
-// export const RadioButton: React.FC<RadioButtonProps> = (props) => (
-//   <StyledRadioButton value={props.value}>
-//     <StyledIndicator />
-//   </StyledRadioButton>
-// )
+type RadioButtonProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledRadioButton>,
+  { as: never } & {
+    'aria-label'?: string
+  }
+>
 
-// RadioButton.displayName = 'RadioButton'
+export const RadioButton: React.FC<RadioButtonProps> = (props) => (
+  <StyledRadioButton {...props}>
+    <StyledIndicator />
+  </StyledRadioButton>
+)
+
+RadioButton.displayName = 'RadioButton'
