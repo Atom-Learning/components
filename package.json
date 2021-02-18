@@ -95,7 +95,6 @@
     "react": "^16.8.0"
   },
   "dependencies": {
-    "@loadable/component": "^5.14.1",
     "@radix-ui/react-checkbox": "^0.0.4",
     "@radix-ui/react-icons": "^1.0.1",
     "@stitches/react": "0.1.0-canary.5",
