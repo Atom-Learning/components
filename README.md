@@ -34,11 +34,7 @@ yarn install
 - `lint`: Lints the code using `Eslint`
 - `test`: Runs the testing suit using `Jest`
 - `test:watch`: Runs the testing suit in watch mode
-- `validate`: Runs all the validate commands - This command is used by the CI too, to check pushed changed
-- `validate:dependencies`: Audits the projects dependencies
-- `validate:linting`: Checks for linting issues using `Eslint`
-- `validate:size`: Build the library and checks its size
-- `validate:types`: Checks for `Typescript` errors
+- `validate`: Runs all the validate commands (see `package.json` for more details) - This command is used by the CI too, to check pushed changes
 - `start:sandbox`: Starts up a sandbox
 
 ---
