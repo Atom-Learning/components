@@ -28,7 +28,6 @@ yarn install
 - `dev`: Starts the libary for development 
 - `build:lib`: Builds the library and populates the `dist` folder
 - `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project
-- `prepublishOnly`: Runs the tests and then creates a clean build of the library and the documentation
 - `clean`: Deletes the `dist` folder to ensure a clean build
 - `format`: Formats the code using `Prettier`
 - `lint`: Lints the code using `Eslint`
