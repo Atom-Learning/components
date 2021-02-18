@@ -1,12 +1,11 @@
 import * as React from 'react'
 
-// import { styled } from '~/stitches'
-import { styled } from '../../stitches' //TODO: switch to alias
+import { styled } from '~/stitches'
 
 const StyledTextarea = styled('textarea', {
   appearance: 'none',
   borderRadius: '$2',
-  border: '1px solid tonal500',
+  border: '1px solid $tonal500',
   boxShadow: 'none', // necessary to remove iOS default styling
   fontFamily: '$sans',
   fontSize: '$md', // necessary to prevent iOS zooming on focus
