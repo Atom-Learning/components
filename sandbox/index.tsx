@@ -7,7 +7,7 @@ import { Box, globalCss } from '../dist'
 globalCss(reset)()
 
 const App = () => {
-  return <Box />
+    return <Box />
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
