@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { styled } from '../../stitches'
 
-const StyledRadioButtonGroup = styled(RadioGroup.Root)
+const StyledRadioButtonGroup = styled(RadioGroup.Root, {})
 
 type RadioButtonGroupProps = React.ComponentPropsWithoutRef<
   typeof StyledRadioButtonGroup
