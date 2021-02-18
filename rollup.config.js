@@ -14,7 +14,7 @@ const peerDeps = Object.keys(pkg.peerDependencies || {})
 
 export default {
   input: 'src/index.ts',
-  external: [...deps, ...peerDeps, './src/components/icon/svg'],
+  external: [...deps, ...peerDeps],
   output: [
     { file: pkg.main, format: 'cjs', sourcemap: true },
     { file: pkg.module, format: 'esm', sourcemap: true }
