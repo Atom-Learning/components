@@ -3,7 +3,7 @@ import React from 'react'
 
 import { RadioButtonGroup } from '.'
 
-describe(`RadioButton Groupcomponent`, () => {
+describe(`RadioButtonGroup component`, () => {
   it('renders an empty radio button group', async () => {
     const { container } = render(<RadioButtonGroup />)
 

@@ -23,15 +23,15 @@ const StyledRadioButton = styled(RadioGroup.Item, {
     outline: 'none'
   },
   ':checked + &': { backgroundColor: '$secondary300' },
-  ':disabled + &': {
+  '[disabled] + &': {
     backgroundColor: '$tonal600',
     border: '2px solid $tonal600'
   }
 })
 
 const StyledIndicator = styled(RadioGroup.Indicator, {
-  width: 6,
-  height: 6,
+  width: 8, // TODO replace once theme is updated
+  height: 8,
   borderRadius: '50%',
   backgroundColor: 'white'
 })
