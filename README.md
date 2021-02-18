@@ -18,8 +18,8 @@ yarn install
 
 **Before starting to develop on this project, please consider the following:**
 - Read the [contribution guide](CONTRIBUTING.md)
-- Read the [versioning section](versioning)
-- Read the [accessibility section](accessibility)
+- Read the [versioning section](#versioning)
+- Read the [accessibility section](#accessibility)
 - Check that the `pre-commit` hooks work before pushing into a branch
 - Always commit your changes to a branch and request a code review by raising a PR. 
 - Always include tests for the changes introduced
