@@ -33,7 +33,7 @@ const StyledSelect = styled('select', {
     cursor: 'pointer'
   },
   '&:focus': {
-    boxShadow: 'inset 0 0 0 1px $primary900',
+    boxShadow: 'inset 0 0 0 1px $colors$primary900',
     borderColor: '$primary900',
     outline: 'none'
   },

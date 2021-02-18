@@ -9,7 +9,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   backgroundColor: 'transparent',
   border: 'none',
   borderRadius: '$0',
-  boxShadow: 'inset 0 0 0 2px $secondary300',
+  boxShadow: 'inset 0 0 0 2px $colors$secondary300',
   color: 'white',
   cursor: 'pointer',
   height: '$0',
@@ -21,7 +21,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   transition: 'all 100ms ease-out',
   '&[data-state="unchecked"]:focus, &[data-state="unchecked"]:hover': {
     backgroundColor: '$tonal300',
-    boxShadow: 'inset 0 0 0 2px $secondary700',
+    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
     outline: 'none'
   },
   '&[data-state="checked"]': {
@@ -29,7 +29,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   },
   '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
     backgroundColor: '$secondary700',
-    boxShadow: 'inset 0 0 0 2px $secondary700',
+    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
     outline: 'none'
   },
   '&:focus-within': {
