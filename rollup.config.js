@@ -26,6 +26,5 @@ export default {
     isProduction && terser(),
     typescript(),
     svgr()
-  ],
-  inlineDynamicImports: true
+  ]
 }
