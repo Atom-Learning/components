@@ -5,7 +5,8 @@
     },
     "production": {
       "plugins": [
-        ["react-remove-properties", { "properties": ["data-testid"] }]
+        ["react-remove-properties", { "properties": ["data-testid"] }],
+        "inline-react-svg"
       ]
     },
     "test": {

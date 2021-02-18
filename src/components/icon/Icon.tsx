@@ -1,38 +1,39 @@
 import * as React from 'react'
-import { useEffect, useRef } from 'react'
 
-export type IconName = 'check' | 'home'
-type SVG = () => React.ReactSVGElement
+import { styled } from '~/stitches'
+import { Override } from '~/utilities/types'
 
-type IconProps = {
-  is: IconName
-}
+const StyledIcon = styled('svg', {
+  color: 'currentcolor',
+  variants: {
+    size: {
+      // TODO: update to use size token when added
+      sm: { height: 16, width: 16 },
+      md: { height: 24, width: 24 },
+      lg: { height: 32, width: 32 }
+    }
+  }
+})
+
+type IconProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledIcon>,
+  {
+    is: React.FC<React.SVGProps<SVGSVGElement>>
+    as: never
+  }
+>
 
 export const Icon: React.FC<IconProps> = ({
-  is: iconName
-}): JSX.Element | null => {
-  const SVGRef = useRef<React.FC<React.SVGProps<SVGSVGElement>>>()
-  const [loading, setLoading] = React.useState(false)
-
-  useEffect((): void => {
-    setLoading(true)
-    const importIcon = async (): Promise<void> => {
-      try {
-        SVGRef.current = (await import(`./svg/${iconName}.svg`)).ReactComponent
-      } catch (err) {
-        console.error('cannot find SVG')
-        throw err
-      } finally {
-        setLoading(false)
-      }
-    }
-    importIcon()
-  }, [iconName])
-
-  if (!loading && SVGRef.current) {
-    const { current: SVG } = SVGRef
-    return <SVG />
-  }
-
-  return null
-}
+  is: SVG,
+  size = 'sm',
+  as, // prevent as from being included in ...props and overwriting as={SVG} on line 29
+  ...props
+}) => (
+  <StyledIcon
+    as={SVG}
+    size={size}
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    {...props}
+  />
+)
