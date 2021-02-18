@@ -6,7 +6,6 @@ import { Check, Icon } from '.'
 
 describe(`Icon component`, () => {
   it('renders an icon', async () => {
-    console.log('Check is:', Check)
     const { container } = render(<Icon is={Check} title="check" />)
 
     await screen.getByTitle('check')
