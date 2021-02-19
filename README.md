@@ -2,11 +2,43 @@
 
 ![badge](https://github.com/Atom-Learning/components/workflows/CI/badge.svg)
 
-This package is one part of the Atom Learning design system
+This package is one part of the Atom Learning design system. 
+
+
+## Getting started
+Clone the repo  
+```
+git clone git@github.com:Atom-Learning/components.git
+```
+
+Install dependencies
+```
+yarn install
+```
+
+**Before starting to develop on this project, please consider the following:**
+- Read the [contribution guide](CONTRIBUTING.md)
+- Read the [versioning section](#versioning)
+- Read the [accessibility section](#accessibility)
+- Check that the `pre-commit` hooks work before pushing into a branch
+- Always commit your changes to a branch and request a code review by raising a PR. 
+- Always include tests for the changes introduced
+
+## Available yarn scripts
+- `dev`: Starts the libary for development 
+- `build:lib`: Builds the library and populates the `dist` folder
+- `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project
+- `clean`: Deletes the `dist` folder to ensure a clean build
+- `format`: Formats the code using `Prettier`
+- `lint`: Lints the code using `Eslint`
+- `test`: Runs the testing suit using `Jest`
+- `test:watch`: Runs the testing suit in watch mode
+- `validate`: Runs all the validate commands (see `package.json` for more details) - This command is used by the CI too, to check pushed changes
+- `start:sandbox`: Starts up a sandbox
 
 ---
 
-## Versioning
+## <a name="Versioning"></a>Versioning
 
 The project follows the SemVer standard [Semantic Versioning](https://semver.org/spec/v2.0.0.html) to make using the library easy. SemVer uses the `MAJOR`.`MINOR`.`PATCH` notation to identify changes with `MAJOR` representing breaking changes that are not backwards compatible, `MINOR` representing new features / non-breaking additions and `PATCH` representing fixes.
 
@@ -40,7 +72,7 @@ _Note:_ Once a branch gets merged into `main`, it is automatically published, th
 
 ---
 
-## Accessibility
+## <a name="accessibility"></a> Accessibility
 
 The design system is aiming to adhere to strict accessibility standards with AA as the minimum. To enable this, `eslint-plugin-jsx-a11y` is set to strict mode.
 Different tools are used to validate the components as each serves a different purpose. The accessibility unit tests will fail the pipeline and prevent releasing inaccessible components. **_However, these tests are only valid with the context they are testing on, so they can't guarantee 100% that a component is fully accessible._** Therefore, manual testing is required along with design validation.
