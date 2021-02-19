@@ -4,12 +4,56 @@ component: ProgressBar
 description: ProgressBar provides a styled progress bar.
 ---
 
+A `ProgressBar` needs to be associated with a label for accessibility purposes, so rather than using this component directly in a UI, consider using a `ProgressBarField`, which provides a `Label` and displays validation errors. Use this `ProgressBar` to compose more complex `Field` type components.
+
+## Accessibility
+
+For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If a label is not available, please add an `aria-label` to ensure that the component remains accessible
+
 ```jsx live center
 <ProgressBar value={20} />
 ```
 
-```jsx live center
-<Box>
-  <ProgressBar value={20} color="$danger" />
-</Box>
+## Themes
+
+These are the available `themes` for this component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+
+```jsx preview center
+<>
+  <ProgressBar>Primary</ProgressBar>
+  <ProgressBar theme="secondary">Secondary</ProgressBar>
+  <ProgressBar theme="tertiary">Tertiary</ProgressBar>
+  <ProgressBar theme="success">Success</ProgressBar>
+  <ProgressBar theme="warning">Warning</ProgressBar>
+  <ProgressBar theme="danger">Error</ProgressBar>
+</>
 ```
+
+## Appearance
+
+There two options for the `appearance` property: `solid` and `outline(default)`. These are the available `outline` variations for all the `themes`.
+
+```jsx preview center
+<>
+  <ProgressBar appearance="solid">Primary</ProgressBar>
+  <ProgressBar appearance="solid" theme="secondary">
+    Secondary
+  </ProgressBar>
+  <ProgressBar appearance="solid" theme="tertiary">
+    Tertiary
+  </ProgressBar>
+  <ProgressBar appearance="solid" theme="success">
+    Success
+  </ProgressBar>
+  <ProgressBar appearance="solid" theme="warning">
+    Warning
+  </ProgressBar>
+  <ProgressBar appearance="solid" theme="danger">
+    Error
+  </ProgressBar>
+</>
+```
+
+## Sizes
+
+There are 4 available sizes for this component: `sm`(default), `md`, `lg` and `xl`.

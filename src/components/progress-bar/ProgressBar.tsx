@@ -4,8 +4,18 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
+const getSolidVariant = (color) => ({
+  background: '$tonal300',
+  color
+})
+
+const getOutlineVariant = (color) => ({
+  border: '1px solid $tonal400',
+  background: 'white',
+  color
+})
+
 const StyledProgressBar = styled(Progress.Root, {
-  color: 'currentcolor',
   borderRadius: 25,
   minHeight: 12,
   maxHeight: 30,
@@ -13,14 +23,17 @@ const StyledProgressBar = styled(Progress.Root, {
   overflow: 'hidden',
   width: '100%',
   variants: {
-    type: {
-      border: {
-        border: '1px solid $tonal400',
-        background: 'white'
-      },
-      background: {
-        background: '$tonal300'
-      }
+    appearance: {
+      outline: {},
+      solid: {}
+    },
+    theme: {
+      primary: {},
+      secondary: {},
+      tertiary: {},
+      success: {},
+      warning: {},
+      danger: {}
     },
     size: {
       sm: {
@@ -36,7 +49,72 @@ const StyledProgressBar = styled(Progress.Root, {
         maxWidth: '20rem'
       }
     }
-  }
+  },
+  compoundVariants: [
+    // Appearance Solid
+    {
+      theme: 'primary',
+      appearance: 'solid',
+      css: getSolidVariant('$primary500')
+    },
+    {
+      theme: 'secondary',
+      appearance: 'solid',
+      css: getSolidVariant('$secondary500')
+    },
+    {
+      theme: 'tertiary',
+      appearance: 'solid',
+      css: getSolidVariant('$tertiary500')
+    },
+    {
+      theme: 'success',
+      appearance: 'solid',
+      css: getSolidVariant('$success')
+    },
+    {
+      theme: 'warning',
+      appearance: 'solid',
+      css: getSolidVariant('$warning')
+    },
+    {
+      theme: 'danger',
+      appearance: 'solid',
+      css: getSolidVariant('$danger')
+    },
+
+    // Appearance Outline
+    {
+      theme: 'primary',
+      appearance: 'outline',
+      css: getOutlineVariant('$primary500')
+    },
+    {
+      theme: 'secondary',
+      appearance: 'outline',
+      css: getOutlineVariant('$secondary500')
+    },
+    {
+      theme: 'tertiary',
+      appearance: 'outline',
+      css: getOutlineVariant('$tertiary500')
+    },
+    {
+      theme: 'success',
+      appearance: 'outline',
+      css: getOutlineVariant('$success')
+    },
+    {
+      theme: 'warning',
+      appearance: 'outline',
+      css: getOutlineVariant('$warning')
+    },
+    {
+      theme: 'danger',
+      appearance: 'outline',
+      css: getOutlineVariant('$danger')
+    }
+  ]
 })
 
 const StyledIndicator = styled(Progress.Indicator, {
@@ -50,20 +128,36 @@ type ProgressBarProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledProgressBar>,
   {
     value: number
-    type: 'border' | 'background'
+    appearance: 'outline' | 'solid'
+    theme:
+      | 'primary'
+      | 'secondary'
+      | 'tertiary'
+      | 'success'
+      | 'warning'
+      | 'danger'
     color: string
     size: 'sm' | 'md' | 'lg' | 'xl'
-  }
+  } & (
+    | { id: string; 'aria-label'?: string }
+    | { 'aria-label': string; id?: string }
+  )
 >
-// TODO: color not working
+
 export const ProgressBar: React.FC<ProgressBarProps> = ({
   value,
-  type = 'border',
+  appearance = 'outline',
+  theme = 'primary',
   size = 'sm',
-  ...rest
+  ...remainingProps
 }) => {
   return (
-    <StyledProgressBar type={type} size={size} {...rest}>
+    <StyledProgressBar
+      appearance={appearance}
+      theme={theme}
+      size={size}
+      {...remainingProps}
+    >
       <StyledIndicator style={{ width: `${value}%` }} />
     </StyledProgressBar>
   )
