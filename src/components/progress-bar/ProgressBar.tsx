@@ -17,8 +17,7 @@ const getOutlineVariant = (color) => ({
 
 const StyledProgressBar = styled(Progress.Root, {
   borderRadius: 25,
-  minHeight: 12,
-  maxHeight: 30,
+  height: '$0',
   position: 'relative',
   overflow: 'hidden',
   width: '100%',
@@ -34,20 +33,6 @@ const StyledProgressBar = styled(Progress.Root, {
       success: {},
       warning: {},
       danger: {}
-    },
-    size: {
-      sm: {
-        maxWidth: '6rem'
-      },
-      md: {
-        maxWidth: '12rem'
-      },
-      lg: {
-        maxWidth: '15rem'
-      },
-      xl: {
-        maxWidth: '20rem'
-      }
     }
   },
   compoundVariants: [
@@ -127,17 +112,14 @@ const StyledIndicator = styled(Progress.Indicator, {
 type ProgressBarProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledProgressBar>,
   {
-    value: number
-    appearance: 'outline' | 'solid'
-    theme:
+    appearance?: 'outline' | 'solid'
+    theme?:
       | 'primary'
       | 'secondary'
       | 'tertiary'
       | 'success'
       | 'warning'
       | 'danger'
-    color: string
-    size: 'sm' | 'md' | 'lg' | 'xl'
   } & (
     | { id: string; 'aria-label'?: string }
     | { 'aria-label': string; id?: string }
@@ -148,14 +130,12 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   value,
   appearance = 'outline',
   theme = 'primary',
-  size = 'sm',
   ...remainingProps
 }) => {
   return (
     <StyledProgressBar
       appearance={appearance}
       theme={theme}
-      size={size}
       {...remainingProps}
     >
       <StyledIndicator style={{ width: `${value}%` }} />
