@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Box } from '~/components'
+import { Box } from '~/components/box'
 import { CSS } from '~/stitches'
 
 type CssWrapperProps = {

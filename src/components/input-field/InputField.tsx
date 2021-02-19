@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-import { Input, Label, ValidationError } from '~/components'
-import { CSS } from '~/stitches'
+import { Input } from '~/components/input'
+import { Label } from '~/components/label'
+import { ValidationError } from '~/components/validation-error'
 import { CSSWrapper, Override } from '~/utilities'
 
 type InputFieldProps = Override<

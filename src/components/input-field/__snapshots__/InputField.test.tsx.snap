@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField component renders a field with a  number input 1`] = `
-.sx03kze6obnf--css {
-  margin: auto;
-}
-
-.sx03kze6obnf--css {
-  height: 100px;
-  width: 100px;
-}
-
 .sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -79,6 +70,15 @@ exports[`InputField component renders a field with a  number input 1`] = `
 
 .sx25jen {
   color: var(--colors-danger);
+}
+
+.sx03kze6obnf--css {
+  margin: auto;
+}
+
+.sx03kze6obnf--css {
+  height: 100px;
+  width: 100px;
 }
 
 <div>
@@ -104,15 +104,6 @@ exports[`InputField component renders a field with a  number input 1`] = `
 `;
 
 exports[`InputField component renders a field with a text input 1`] = `
-.sx03kze6obnf--css {
-  margin: auto;
-}
-
-.sx03kze6obnf--css {
-  height: 100px;
-  width: 100px;
-}
-
 .sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -182,6 +173,15 @@ exports[`InputField component renders a field with a text input 1`] = `
 
 .sx25jen {
   color: var(--colors-danger);
+}
+
+.sx03kze6obnf--css {
+  margin: auto;
+}
+
+.sx03kze6obnf--css {
+  height: 100px;
+  width: 100px;
 }
 
 <div>
