@@ -2,7 +2,7 @@ import { styled } from '~/stitches'
 
 export const Textarea = styled('textarea', {
   appearance: 'none',
-  borderRadius: '$2',
+  borderRadius: '$0',
   border: '1px solid $tonal500',
   boxShadow: 'none', // necessary to remove iOS default styling
   fontFamily: '$sans',
@@ -14,10 +14,11 @@ export const Textarea = styled('textarea', {
   resize: 'vertical',
   width: '100%',
   color: '$tonal900',
-  p: '$3',
+  py: '$3',
+  px: '$2',
   transition: 'all 75ms ease-out',
   '&:focus': {
-    boxShadow: 'inset 0 0 0 1px $primary900',
+    boxShadow: 'inset 0 0 0 1px $color$primary900',
     borderColor: '$primary900',
     outline: 'none'
   },
