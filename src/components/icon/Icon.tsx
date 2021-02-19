@@ -5,6 +5,8 @@ import { Override } from '~/utilities/types'
 
 const StyledIcon = styled('svg', {
   color: 'currentcolor',
+  display: 'inline-block',
+  verticalAlign: 'middle',
   variants: {
     size: {
       // TODO: update to use size token when added
