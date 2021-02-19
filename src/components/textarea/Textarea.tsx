@@ -1,8 +1,6 @@
-import * as React from 'react'
-
 import { styled } from '~/stitches'
 
-const StyledTextarea = styled('textarea', {
+export const Textarea = styled('textarea', {
   appearance: 'none',
   borderRadius: '$2',
   border: '1px solid $tonal500',
@@ -28,11 +26,5 @@ const StyledTextarea = styled('textarea', {
     backgroundColor: '$tonal300'
   }
 })
-
-type TextareaProps = React.ComponentPropsWithoutRef<typeof StyledTextarea>
-
-export const Textarea: React.FC<TextareaProps> = (props) => {
-  return <StyledTextarea {...props} />
-}
 
 Textarea.displayName = 'Textarea'
