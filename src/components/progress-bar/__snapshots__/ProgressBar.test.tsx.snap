@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
-.sxkhdpa {
+.sxg17rf {
   border-radius: 25px;
-  height: var(--sizes-0);
+  height: 12px;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.sxkhdpa4bknw--comp {
+.sxg17rf4bknw--comp {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
@@ -27,7 +27,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxkhdpa sxkhdpa4bknw--comp sxkhdpa03kze--appearance-outline sxkhdpa03kze--theme-primary"
+    class="sxg17rf sxg17rf4bknw--comp sxg17rf03kze--appearance-outline sxg17rf03kze--theme-primary"
     data-max="100"
     data-radix-progress=""
     data-state="indeterminate"
@@ -45,27 +45,27 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 `;
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
-.sxkhdpa {
+.sxg17rf {
   border-radius: 25px;
-  height: var(--sizes-0);
+  height: 12px;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.sxkhdpa4bknw--comp {
+.sxg17rf4bknw--comp {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
 }
 
-.sxkhdpa4qfa7--comp {
+.sxg17rf4qfa7--comp {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-secondary500);
 }
 
-.sxkhdpamrg77--comp {
+.sxg17rfmrg77--comp {
   background: var(--colors-tonal300);
   color: var(--colors-primary500);
 }
@@ -82,7 +82,7 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxkhdpa sxkhdpamrg77--comp sxkhdpa03kze--appearance-solid sxkhdpa03kze--theme-primary"
+    class="sxg17rf sxg17rfmrg77--comp sxg17rf03kze--appearance-solid sxg17rf03kze--theme-primary"
     data-max="100"
     data-radix-progress=""
     data-state="indeterminate"
