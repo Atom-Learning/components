@@ -32,7 +32,7 @@ const StyledInput = styled('input', {
 
 // override default 'type' property to prevent Input from being used to render
 // checkboxes, radios etc — we will have dedicated components for them
-type InputProps = Override<
+export type InputProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledInput>,
   {
     as?: never

@@ -11,7 +11,10 @@ As well as text for its `Label`, `InputField` accepts all the same props as `Inp
 but if you really need something with different styling then consider composing your own field from the `Input`, `Label` and `ValidationError` components.
 
 ```jsx live center
-<InputField placeholder="Placeholder text" css={{ width: 300 }} />
+<InputField
+  name="Email address"
+  label="Email address"
+  placeholder="your.name@example.com"
+  css={{ width: 250 }}
+/>
 ```
-
-#

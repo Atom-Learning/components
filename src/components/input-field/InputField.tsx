@@ -1,17 +1,14 @@
 import * as React from 'react'
 
-import { Input } from '~/components/input'
+import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { CSSWrapper, Override } from '~/utilities'
+import { CSSWrapper } from '~/utilities'
 
-type InputFieldProps = Override<
-  React.ComponentPropsWithoutRef<typeof Input>,
-  {
-    label: string
-    error?: string
-  }
->
+type InputFieldProps = InputProps & {
+  label: string
+  error?: string
+}
 
 export const InputField: React.FC<InputFieldProps> = ({
   css,
@@ -19,7 +16,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   name,
   error,
   ...remainingProps
-}: InputFieldProps) => {
+}) => {
   return (
     <CSSWrapper css={css}>
       <Label css={{ mb: '$1' }} htmlFor={name}>
