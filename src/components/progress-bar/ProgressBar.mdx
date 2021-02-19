@@ -19,22 +19,12 @@ These are the available `themes` for this component: `Primary` (default), `Secon
 
 ```jsx preview center
 <>
-  <ProgressBar value={20}></ProgressBar>
-  <ProgressBar theme="secondary" value={20} aria-label="Completion rate">
-    Secondary
-  </ProgressBar>
-  <ProgressBar theme="tertiary" value={20} aria-label="Completion rate">
-    Tertiary
-  </ProgressBar>
-  <ProgressBar theme="success" value={20} aria-label="Completion rate">
-    Success
-  </ProgressBar>
-  <ProgressBar theme="warning" value={20} aria-label="Completion rate">
-    Warning
-  </ProgressBar>
-  <ProgressBar theme="danger" value={20} aria-label="Completion rate">
-    Error
-  </ProgressBar>
+  <ProgressBar value={20} />
+  <ProgressBar theme="secondary" value={20} aria-label="Completion rate" />
+  <ProgressBar theme="tertiary" value={20} aria-label="Completion rate" />
+  <ProgressBar theme="success" value={20} aria-label="Completion rate" />
+  <ProgressBar theme="warning" value={20} aria-label="Completion rate" />
+  <ProgressBar theme="danger" value={20} aria-label="Completion rate" />
 </>
 ```
 
@@ -44,48 +34,36 @@ There two options for the `appearance` property: `solid` and `outline(default)`.
 
 ```jsx preview center
 <>
-  <ProgressBar appearance="solid" value={20} aria-label="Completion rate">
-    Primary
-  </ProgressBar>
+  <ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
   <ProgressBar
     appearance="solid"
     theme="secondary"
     value={20}
     aria-label="Completion rate"
-  >
-    Secondary
-  </ProgressBar>
+  />
   <ProgressBar
     appearance="solid"
     theme="tertiary"
     value={20}
     aria-label="Completion rate"
-  >
-    Tertiary
-  </ProgressBar>
+  />
   <ProgressBar
     appearance="solid"
     theme="success"
     value={20}
     aria-label="Completion rate"
-  >
-    Success
-  </ProgressBar>
+  />
   <ProgressBar
     appearance="solid"
     theme="warning"
     value={20}
     aria-label="Completion rate"
-  >
-    Warning
-  </ProgressBar>
+  />
   <ProgressBar
     appearance="solid"
     theme="danger"
     value={20}
     aria-label="Completion rate"
-  >
-    Error
-  </ProgressBar>
+  />
 </>
 ```
