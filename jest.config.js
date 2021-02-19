@@ -7,5 +7,9 @@ module.exports = {
   setupFilesAfterEnv: ['./jest-setup.ts'],
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1' // matches the path alias in tsconfig.json
+  },
+  transform: {
+    '^.+\\.(ts|tsx)$': 'babel-jest',
+    '^.+\\.svg$': 'jest-svg-transformer'
   }
 }
