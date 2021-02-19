@@ -1,10 +1,10 @@
 import * as React from 'react'
 
 import { Box } from '~/components'
-import { CSSBlob } from '~/stitches'
+import { CSS } from '~/stitches'
 
 type CssWrapperProps = {
-  css?: CSSBlob
+  css?: CSS
   children: React.ReactNode
 }
 

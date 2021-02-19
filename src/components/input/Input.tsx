@@ -35,8 +35,8 @@ const StyledInput = styled('input', {
 type InputProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledInput>,
   {
-    as: 'input'
-    type: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
+    as?: never
+    type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
 >
 

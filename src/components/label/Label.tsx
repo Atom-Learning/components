@@ -5,6 +5,7 @@ import { Override } from '~/utilities/types'
 
 const StyledLabel = styled('label', {
   color: '$secondary300',
+  display: 'block',
   fontFamily: '$sans',
   fontWeight: 500,
   letterSpacing: '0.02em',
@@ -20,7 +21,7 @@ const StyledLabel = styled('label', {
 type LabelProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledLabel>,
   {
-    as: never
+    as?: never
   }
 >
 
