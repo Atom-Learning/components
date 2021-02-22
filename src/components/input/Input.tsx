@@ -27,6 +27,13 @@ const StyledInput = styled('input', {
     backgroundColor: '$tonal300',
     color: '$tonal700',
     cursor: 'not-allowed'
+  },
+  variants: {
+    state: {
+      error: {
+        border: '1px solid $danger'
+      }
+    }
   }
 })
 

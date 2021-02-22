@@ -4,13 +4,17 @@ import { Box } from '~/components/box'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { theme } from '~/stitches'
+import { Override } from '~/utilities'
 
-type InputFieldProps = InputProps & {
-  label: string
-  error?: string
-  required?: boolean
-}
+type InputFieldProps = Override<
+  InputProps,
+  {
+    label: string
+    error?: string
+    required?: boolean
+    name: string
+  }
+>
 
 export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
@@ -22,13 +26,13 @@ export const InputField: React.FC<InputFieldProps> = ({
 }) => (
   <Box css={css}>
     <Label css={{ mb: '$1' }} htmlFor={name}>
-      {label}
-      {required && <span style={{ color: theme['colors'].danger }}> *</span>}
+      {`${label} ${required ? '*' : ''}`}
     </Label>
     <Input
-      css={{ mb: '$1', ...(error && { border: '1px solid $danger ' }) }}
+      css={{ mb: '$1' }}
       id={name}
       name={name}
+      {...(error && { state: 'error' })}
       {...remainingProps}
     />
     {error && <ValidationError>{error}</ValidationError>}
