@@ -7,8 +7,6 @@ priority: 1
 
 ![badge](https://github.com/Atom-Learning/components/workflows/CI/badge.svg)
 
-This package is one part of the Atom Learning design system.
-
 ## Getting started
 
 Clone the repo
@@ -95,12 +93,12 @@ Before developing a component, please take some time to read the following secti
 - Add unit tests to test accessibility
   Add an accessibility unit test (using the `jest-axe`) to ensure that the components' different variations don't have any accessibility issues. Example:
 
-```
-  it('has no programmatically detectable a11y issues', async () => {
-    render(<Flex />, document.body)
-    const results = await axe(document.body)
-    expect(results).toHaveNoViolations()
-  })
+```jsx
+it('has no programmatically detectable a11y issues', async () => {
+  render(<Flex />, document.body)
+  const results = await axe(document.body)
+  expect(results).toHaveNoViolations()
+})
 ```
 
 _Note:_ `axe` doesn't catch contrast issues when run on `jsdom` which `jest` is using.
