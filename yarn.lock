@@ -2278,7 +2278,7 @@
     "@radix-ui/react-utils" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
-"@radix-ui/react-slot@0.0.3":
+"@radix-ui/react-slot@0.0.3", "@radix-ui/react-slot@^0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-slot/-/react-slot-0.0.3.tgz#261f63c467c42fd607f35978fa25a2f6c4c12a3e"
   integrity sha512-UbKnVjKB8aVgHxmnawsmJDV9h7XvK+dZkfte9KPfJt+7oVTEHP8h8Lxorsjx4/i8df2emD/bp6rFUa4P8mUrDg==
