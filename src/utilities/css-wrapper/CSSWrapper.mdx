@@ -6,15 +6,4 @@ component: CSSWrapper
 If `CSSWrapper` is passed a truthy `css` prop, it renders its children wrapped in a `Box` with that `css`. If `css` is falsy, `CSSWrapper`
 just renders its children.
 
-Use `CSSWrapper` to wrap other components that have no natural container. For example, an `InputField` component would render something like this:
-
-```jsx
-const Component = ({ name, label, css, ...rest }) => (
-  <CSSWrapper css={css}>
-    <Label htmlFor={name} css={{ mb: '$2' }}>
-      {label}
-    </Label>
-    <Input name={name} id={name} {...rest} />
-  </CSSWrapper>
-)
-```
+Use `CSSWrapper` to wrap other components that have no natural container, but **only if the addition of a `<Box />` won't change the component's layout behaviour**. 
