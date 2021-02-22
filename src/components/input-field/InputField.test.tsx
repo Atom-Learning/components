@@ -50,4 +50,21 @@ describe(`InputField component`, () => {
     expect(input).toHaveAttribute('disabled')
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders a field in error state', async () => {
+    const errorText = 'This field is required'
+
+    const { container, getByText } = render(
+      <InputField
+        error={errorText}
+        css={{ m: 'auto', height: 100, width: 100 }}
+        placeholder="INPUT"
+        required
+      />
+    )
+
+    getByText(errorText)
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
 })
