@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar component renders a progress bar using default props 1`] = `
+.sxg17rf {
+  border-radius: 25px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sxg17rf4bknw--comp {
+  border: 1px solid var(--colors-tonal400);
+  background: white;
+  color: var(--colors-primary500);
+}
+
+.sxypqsd {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: currentcolor;
+  height: 100%;
+}
+
+<div>
+  <div
+    aria-label="label"
+    aria-valuemax="100"
+    aria-valuemin="0"
+    class="sxg17rf sxg17rf4bknw--comp sxg17rf03kze--appearance-outline sxg17rf03kze--theme-primary"
+    data-max="100"
+    data-radix-progress=""
+    data-state="indeterminate"
+    role="progressbar"
+  >
+    <div
+      class="sxypqsd"
+      data-max="100"
+      data-radix-progress-indicator=""
+      data-state="indeterminate"
+      style="width: 50%;"
+    />
+  </div>
+</div>
+`;
+
+exports[`ProgressBar component renders a solid progress bar 1`] = `
+.sxg17rf {
+  border-radius: 25px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sxg17rf4bknw--comp {
+  border: 1px solid var(--colors-tonal400);
+  background: white;
+  color: var(--colors-primary500);
+}
+
+.sxg17rf4qfa7--comp {
+  border: 1px solid var(--colors-tonal400);
+  background: white;
+  color: var(--colors-secondary500);
+}
+
+.sxg17rfmrg77--comp {
+  background: var(--colors-tonal300);
+  color: var(--colors-primary500);
+}
+
+.sxypqsd {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: currentcolor;
+  height: 100%;
+}
+
+<div>
+  <div
+    aria-label="label"
+    aria-valuemax="100"
+    aria-valuemin="0"
+    class="sxg17rf sxg17rfmrg77--comp sxg17rf03kze--appearance-solid sxg17rf03kze--theme-primary"
+    data-max="100"
+    data-radix-progress=""
+    data-state="indeterminate"
+    role="progressbar"
+  >
+    <div
+      class="sxypqsd"
+      data-max="100"
+      data-radix-progress-indicator=""
+      data-state="indeterminate"
+      style="width: 50%;"
+    />
+  </div>
+</div>
+`;

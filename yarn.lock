@@ -2208,6 +2208,16 @@
     "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-progress@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/@radix-ui/react-progress/-/react-progress-0.0.5.tgz#75e1a2060e4130388deab9fb8a1fb531daa632a2"
+  integrity sha512-5WzGdu/+KrKO9ps2B0+gP/hvd2dfrQ9Ouk2nTHKImQL6Zcom0s1dFGBz1IKfsZgslYbuSN6Rd85oGuI5ZyqWbg==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
+    "@radix-ui/react-utils" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
 "@radix-ui/react-radio-group@^0.0.5":
   version "0.0.5"
   resolved "https://registry.npmjs.org/@radix-ui/react-radio-group/-/react-radio-group-0.0.5.tgz#3c2d643cbec5e7d879ce6ce7621e1db60f180d20"
@@ -2338,17 +2348,17 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.1.0-canary.9":
-  version "0.1.0-canary.9"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.9.tgz#0991d4a6a1579078613b9d61894cf47c2df8ae84"
-  integrity sha512-qyxjy5hg4D0fF6JWaiuuvsoATbnzDtXNiSIJ4/WP/I+OJQ5pMIDLgQB2tp67qSGODdDsyxdGjwSJDj775RSOBA==
+"@stitches/core@^0.1.0-canary.12":
+  version "0.1.0-canary.12"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0-canary.12.tgz#9254f5372607e57c2563d813907b972c5c411dcd"
+  integrity sha512-JP2OVj1yU3TijCkOr9pg0lHeLzJd7LnOeUsSOmp+H9R/LTFCrYKDuFufI71S7zlupJNBQnq76SrJXdov0pdPNA==
 
-"@stitches/react@^0.1.0-canary.9":
-  version "0.1.0-canary.9"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.9.tgz#e9b802504c0f54cdf4e759b10c7f198e050bc72f"
-  integrity sha512-sDTi05Dzw24jNO0AboKOzqpitbWms8opwjQmoqp3OMBLw6j+Iq/jP9ohwwRVhesNchTR1OVdqQAectI1j/5gtw==
+"@stitches/react@^0.1.0-canary.12":
+  version "0.1.0-canary.12"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0-canary.12.tgz#ef38e0ecfa037ff7d7f3f21d5cdbbdd87ad6044a"
+  integrity sha512-E6VsTJ2rKW89MTcfV0+PdzdFjA8GGjZ0sYFtG9f+IAXP73MGsNaHYKuulfMDDzCByFFMW9PkcDMH65xAMlyMvA==
   dependencies:
-    "@stitches/core" "^0.1.0-canary.9"
+    "@stitches/core" "^0.1.0-canary.12"
 
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
