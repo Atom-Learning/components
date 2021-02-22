@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea component renders a textarea 1`] = `
+.sx1e6m9 {
+  appearance: none;
+  border-radius: var(--radii-0);
+  border: 1px solid var(--colors-tonal500);
+  box-shadow: none;
+  font-family: var(--fonts-sans);
+  font-size: var(--fontSizes-md);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  min-height: 100px;
+  resize: vertical;
+  width: 100%;
+  color: var(--colors-tonal900);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+.sx1e6m9 {
+  padding-left: var(--space-2);
+  padding-right: var(--space-2);
+}
+
+.sx1e6m9 {
+  transition: all 75ms ease-out;
+}
+
+.sx1e6m9:focus {
+  box-shadow: inset 0 0 0 1px var(--color-primary900);
+  border-color: var(--colors-primary900);
+  outline: none;
+}
+
+.sx1e6m9[disabled] {
+  opacity: 0.7;
+  background-color: var(--colors-tonal300);
+}
+
+.sx1e6m96obnf--css {
+  margin: auto;
+}
+
+.sx1e6m96obnf--css {
+  height: 100px;
+  width: 100px;
+}
+
+<div>
+  <textarea
+    class="sx1e6m9 sx1e6m96obnf--css"
+    placeholder="DESCRIPTION"
+  />
+</div>
+`;
