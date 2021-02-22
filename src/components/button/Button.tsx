@@ -4,9 +4,11 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
+  boxShadow: 'inset 0 0 0 2px',
   color: baseColor,
   backgroundColor: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
+    textDecoration: 'none',
     color: interactColor,
     backgroundColor: 'white'
   },
@@ -14,7 +16,8 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
     color: baseColor
   },
   '&[disabled]': {
-    color: interactColor
+    backgroundColor: 'white',
+    color: '$tonal700'
   }
 })
 
@@ -28,8 +31,8 @@ const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
     backgroundColor: baseColor
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal600'
+    backgroundColor: '$tonal400',
+    color: '$tonal700'
   }
 })
 
@@ -68,15 +71,7 @@ const StyledButton = styled('button', {
     },
     appearance: {
       solid: {},
-      outline: {
-        boxShadow: 'inset 0 0 0 2px',
-        backgroundColor: 'white',
-        '&:not([disabled]):hover, &:not([disabled):focus': {
-          textDecoration: 'none',
-          backgroundColor: 'white'
-        },
-        '&[disabled]': { backgroundColor: 'white' }
-      }
+      outline: {}
     }
   },
 

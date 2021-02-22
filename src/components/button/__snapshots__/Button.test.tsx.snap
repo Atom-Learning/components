@@ -36,28 +36,28 @@ exports[`Button component renders a button 1`] = `
   cursor: not-allowed;
 }
 
-.sxyl5fnxyrog--comp {
+.sxyl5fngmarq--comp {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxyl5fngmarq--comp:not([disabled]):hover,
+.sxyl5fngmarq--comp:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxyl5fngmarq--comp:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+.sxyl5fngmarq--comp[disabled] {
+  background-color: var(--colors-tonal400);
+  color: var(--colors-tonal700);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
+    class="sxyl5fn sxyl5fngmarq--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
   >
     BUTTON
   </button>
@@ -100,62 +100,50 @@ exports[`Button component renders a disabled button 1`] = `
   cursor: not-allowed;
 }
 
-.sxyl5fn0sd1t--appearance-outline {
-  box-shadow: inset 0 0 0 2px;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline:not([disabled]):hover,
-.sxyl5fn0sd1t--appearance-outline:not([disabled):focus {
-  text-decoration: none;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline[disabled] {
-  background-color: white;
-}
-
-.sxyl5fnxyrog--comp {
+.sxyl5fngmarq--comp {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxyl5fngmarq--comp:not([disabled]):hover,
+.sxyl5fngmarq--comp:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxyl5fngmarq--comp:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+.sxyl5fngmarq--comp[disabled] {
+  background-color: var(--colors-tonal400);
+  color: var(--colors-tonal700);
 }
 
-.sxyl5fn6q0yu--comp {
+.sxyl5fn6pykn--comp {
+  box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:not([disabled]):hover,
-.sxyl5fn6q0yu--comp:not([disabled]):focus {
+.sxyl5fn6pykn--comp:not([disabled]):hover,
+.sxyl5fn6pykn--comp:not([disabled]):focus {
+  text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:active {
+.sxyl5fn6pykn--comp:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn6q0yu--comp[disabled] {
-  color: var(--colors-primary900);
+.sxyl5fn6pykn--comp[disabled] {
+  background-color: white;
+  color: var(--colors-tonal700);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
+    class="sxyl5fn sxyl5fngmarq--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
     disabled=""
   >
     BUTTON
@@ -199,81 +187,72 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   cursor: not-allowed;
 }
 
-.sxyl5fn0sd1t--appearance-outline {
-  box-shadow: inset 0 0 0 2px;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline:not([disabled]):hover,
-.sxyl5fn0sd1t--appearance-outline:not([disabled):focus {
-  text-decoration: none;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline[disabled] {
-  background-color: white;
-}
-
-.sxyl5fnxyrog--comp {
+.sxyl5fngmarq--comp {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxyl5fngmarq--comp:not([disabled]):hover,
+.sxyl5fngmarq--comp:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxyl5fngmarq--comp:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+.sxyl5fngmarq--comp[disabled] {
+  background-color: var(--colors-tonal400);
+  color: var(--colors-tonal700);
 }
 
-.sxyl5fn6q0yu--comp {
+.sxyl5fn6pykn--comp {
+  box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:not([disabled]):hover,
-.sxyl5fn6q0yu--comp:not([disabled]):focus {
+.sxyl5fn6pykn--comp:not([disabled]):hover,
+.sxyl5fn6pykn--comp:not([disabled]):focus {
+  text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:active {
+.sxyl5fn6pykn--comp:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn6q0yu--comp[disabled] {
-  color: var(--colors-primary900);
+.sxyl5fn6pykn--comp[disabled] {
+  background-color: white;
+  color: var(--colors-tonal700);
 }
 
-.sxyl5fnkqk0r--comp {
+.sxyl5fn056ve--comp {
+  box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxyl5fnkqk0r--comp:not([disabled]):hover,
-.sxyl5fnkqk0r--comp:not([disabled]):focus {
+.sxyl5fn056ve--comp:not([disabled]):hover,
+.sxyl5fn056ve--comp:not([disabled]):focus {
+  text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxyl5fnkqk0r--comp:active {
+.sxyl5fn056ve--comp:active {
   color: var(--colors-secondary500);
 }
 
-.sxyl5fnkqk0r--comp[disabled] {
-  color: var(--colors-secondary900);
+.sxyl5fn056ve--comp[disabled] {
+  background-color: white;
+  color: var(--colors-tonal700);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnkqk0r--comp sxyl5fn03kze--theme-secondary sxyl5fn0sd1t--appearance-outline"
+    class="sxyl5fn sxyl5fn056ve--comp sxyl5fn03kze--theme-secondary sxyl5fn03kze--appearance-outline"
     disabled=""
   >
     BUTTON
@@ -317,62 +296,50 @@ exports[`Button component renders a outline button 1`] = `
   cursor: not-allowed;
 }
 
-.sxyl5fn0sd1t--appearance-outline {
-  box-shadow: inset 0 0 0 2px;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline:not([disabled]):hover,
-.sxyl5fn0sd1t--appearance-outline:not([disabled):focus {
-  text-decoration: none;
-  background-color: white;
-}
-
-.sxyl5fn0sd1t--appearance-outline[disabled] {
-  background-color: white;
-}
-
-.sxyl5fnxyrog--comp {
+.sxyl5fngmarq--comp {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxyl5fngmarq--comp:not([disabled]):hover,
+.sxyl5fngmarq--comp:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxyl5fngmarq--comp:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+.sxyl5fngmarq--comp[disabled] {
+  background-color: var(--colors-tonal400);
+  color: var(--colors-tonal700);
 }
 
-.sxyl5fn6q0yu--comp {
+.sxyl5fn6pykn--comp {
+  box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:not([disabled]):hover,
-.sxyl5fn6q0yu--comp:not([disabled]):focus {
+.sxyl5fn6pykn--comp:not([disabled]):hover,
+.sxyl5fn6pykn--comp:not([disabled]):focus {
+  text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn6q0yu--comp:active {
+.sxyl5fn6pykn--comp:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn6q0yu--comp[disabled] {
-  color: var(--colors-primary900);
+.sxyl5fn6pykn--comp[disabled] {
+  background-color: white;
+  color: var(--colors-tonal700);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fn6q0yu--comp sxyl5fn03kze--theme-primary sxyl5fn0sd1t--appearance-outline"
+    class="sxyl5fn sxyl5fn6pykn--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-outline"
   >
     BUTTON
   </button>
