@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField component renders a field with a  number input 1`] = `
+.sx03kze6obnf--css {
+  margin: auto;
+}
+
+.sx03kze6obnf--css {
+  height: 100px;
+  width: 100px;
+}
+
 .sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -54,37 +63,9 @@ exports[`InputField component renders a field with a  number input 1`] = `
   margin-bottom: var(--space-1);
 }
 
-.sxeds20 {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
-  font-weight: 400;
-  margin: 0;
-  max-width: 60ch;
-}
-
-.sxeds20ido38--size-md {
-  font-size: var(--fontSizes-md);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
-.sx25jen {
-  color: var(--colors-danger);
-}
-
-.sx03kze6obnf--css {
-  margin: auto;
-}
-
-.sx03kze6obnf--css {
-  height: 100px;
-  width: 100px;
-}
-
 <div>
   <div
     class="sx03kze sx03kze6obnf--css"
-    data-testid="css-wrapper"
   >
     <label
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
@@ -96,14 +77,20 @@ exports[`InputField component renders a field with a  number input 1`] = `
       placeholder="001"
       type="text"
     />
-    <p
-      class="sxeds20 sx25jen sxeds20ido38--size-md"
-    />
   </div>
 </div>
 `;
 
 exports[`InputField component renders a field with a text input 1`] = `
+.sx03kze6obnf--css {
+  margin: auto;
+}
+
+.sx03kze6obnf--css {
+  height: 100px;
+  width: 100px;
+}
+
 .sxfigyv {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -157,37 +144,9 @@ exports[`InputField component renders a field with a text input 1`] = `
   margin-bottom: var(--space-1);
 }
 
-.sxeds20 {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
-  font-weight: 400;
-  margin: 0;
-  max-width: 60ch;
-}
-
-.sxeds20ido38--size-md {
-  font-size: var(--fontSizes-md);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-}
-
-.sx25jen {
-  color: var(--colors-danger);
-}
-
-.sx03kze6obnf--css {
-  margin: auto;
-}
-
-.sx03kze6obnf--css {
-  height: 100px;
-  width: 100px;
-}
-
 <div>
   <div
     class="sx03kze sx03kze6obnf--css"
-    data-testid="css-wrapper"
   >
     <label
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
@@ -196,9 +155,6 @@ exports[`InputField component renders a field with a text input 1`] = `
       class="sxfigyv sxfigyvysvs0--css"
       placeholder="INPUT"
       type="text"
-    />
-    <p
-      class="sxeds20 sx25jen sxeds20ido38--size-md"
     />
   </div>
 </div>

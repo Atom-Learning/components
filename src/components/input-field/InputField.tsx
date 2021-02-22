@@ -1,31 +1,38 @@
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { CSSWrapper } from '~/utilities'
+import { theme } from '~/stitches'
 
 type InputFieldProps = InputProps & {
   label: string
   error?: string
+  required?: boolean
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
-  css,
+  css = undefined,
   label,
   name,
-  error,
+  error = undefined,
+  required = false,
   ...remainingProps
-}) => {
-  return (
-    <CSSWrapper css={css}>
-      <Label css={{ mb: '$1' }} htmlFor={name}>
-        {label}
-      </Label>
-      <Input css={{ mb: '$1' }} id={name} name={name} {...remainingProps} />
-      <ValidationError>{error}</ValidationError>
-    </CSSWrapper>
-  )
-}
+}) => (
+  <Box css={css}>
+    <Label css={{ mb: '$1' }} htmlFor={name}>
+      {label}
+      {required && <span style={{ color: theme['colors'].danger }}> *</span>}
+    </Label>
+    <Input
+      css={{ mb: '$1', ...(error && { border: '1px solid $danger ' }) }}
+      id={name}
+      name={name}
+      {...remainingProps}
+    />
+    {error && <ValidationError>{error}</ValidationError>}
+  </Box>
+)
 
 InputField.displayName = 'InputField'
