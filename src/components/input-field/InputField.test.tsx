@@ -8,12 +8,14 @@ describe(`InputField component`, () => {
   it('renders a field with a text input', async () => {
     const { container } = render(
       <InputField
+        label="INPUT FIELD"
+        name="INPUT FIELD"
         css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT"
+        placeholder="INPUT FIELD"
       />
     )
 
-    await screen.getByPlaceholderText('INPUT')
+    await screen.getByPlaceholderText('INPUT FIELD')
 
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
@@ -22,6 +24,8 @@ describe(`InputField component`, () => {
   it('renders a field with a  number input', async () => {
     const { container, findByPlaceholderText } = render(
       <InputField
+        label="INPUT FIELD"
+        name="INPUT FIELD"
         css={{ m: 'auto', height: 100, width: 100 }}
         type="number"
         placeholder="001"
@@ -39,13 +43,15 @@ describe(`InputField component`, () => {
   it('renders a field with a disabled input', async () => {
     const { container, findByPlaceholderText } = render(
       <InputField
+        label="INPUT FIELD"
+        name="INPUT FIELD"
         css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT"
+        placeholder="INPUT FIELD"
         disabled
       />
     )
 
-    const input = await findByPlaceholderText('INPUT')
+    const input = await findByPlaceholderText('INPUT FIELD')
 
     expect(input).toHaveAttribute('disabled')
     expect(await axe(container)).toHaveNoViolations()
@@ -56,10 +62,10 @@ describe(`InputField component`, () => {
 
     const { container, getByText } = render(
       <InputField
+        label="INPUT FIELD"
+        name="INPUT FIELD"
         error={errorText}
         css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT"
-        required
       />
     )
 

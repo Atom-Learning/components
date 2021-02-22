@@ -69,10 +69,15 @@ exports[`InputField component renders a field with a  number input 1`] = `
   >
     <label
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
-    />
+      for="INPUT FIELD"
+    >
+      INPUT FIELD
+    </label>
     <input
       class="sxfigyv sxfigyvysvs0--css"
+      id="INPUT FIELD"
       inputmode="numeric"
+      name="INPUT FIELD"
       pattern="[0-9]*"
       placeholder="001"
       type="text"
@@ -150,10 +155,15 @@ exports[`InputField component renders a field with a text input 1`] = `
   >
     <label
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
-    />
+      for="INPUT FIELD"
+    >
+      INPUT FIELD
+    </label>
     <input
       class="sxfigyv sxfigyvysvs0--css"
-      placeholder="INPUT"
+      id="INPUT FIELD"
+      name="INPUT FIELD"
+      placeholder="INPUT FIELD"
       type="text"
     />
   </div>
