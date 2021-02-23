@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, globalCss, Text, Tooltip, Icon, Home } from '../dist'
+import { Box, globalCss, Home, Icon, Text, Tooltip } from '../dist'
 
 globalCss(reset)()
 

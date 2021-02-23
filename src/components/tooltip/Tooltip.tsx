@@ -23,7 +23,8 @@ type TooltipProps = {
 }
 
 export const Tooltip: React.FC<TooltipProps> = ({ children, content }) => {
-  const triggerContainerRef = React.useRef<HTMLDivElement>(null)
+  const triggerContainerRef = React.useRef<HTMLElement>(null)
+  // const triggerContainerRef = React.useRef<HTMLDivElement>(null)
 
   return (
     <RadixTooltip.Root>
