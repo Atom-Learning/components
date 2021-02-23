@@ -1,6 +1,7 @@
 ---
 title: Contributing
 description: When contributing to this repository, use the following information, to uphold the standards we have set for this project. Please read through this and the `README.md` before starting.
+category: Overview
 ---
 
 ## Directory structure
