@@ -2,15 +2,15 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, globalCss, Tooltip } from '../dist'
+import { Box, globalCss, Text, Tooltip, Icon, Home } from '../dist'
 
 globalCss(reset)()
 
 const App = () => {
   return (
-    <Box css={{ paddingLeft: '$3' }}>
-      <Tooltip content="hi there">
-        <button>Hello</button>
+    <Box css={{ padding: '$6 $2' }}>
+      <Tooltip content="Go home">
+        <Icon is={Home} />
       </Tooltip>
     </Box>
   )

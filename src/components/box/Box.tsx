@@ -6,8 +6,8 @@ export const StyledBox = styled('div', {})
 
 // wrapping the stitches component in a React.FC prevents a TS error
 // when passing custom components as children
-export const Box: React.FC<React.ComponentPropsWithoutRef<typeof StyledBox>> = (
-  props
-) => <StyledBox {...props} />
+export const Box: React.FC<
+  React.ComponentProps<typeof StyledBox>
+> = React.forwardRef((props, ref) => <StyledBox ref={ref} {...props} />)
 
 Box.displayName = 'Box'

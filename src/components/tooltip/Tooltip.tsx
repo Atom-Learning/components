@@ -2,6 +2,7 @@ import { Slot } from '@radix-ui/react-slot'
 import * as RadixTooltip from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { styled } from '~/stitches'
 
 const StyledContent = styled(RadixTooltip.Content, {
@@ -9,19 +10,30 @@ const StyledContent = styled(RadixTooltip.Content, {
   padding: '$1 $2',
   fontFamily: '$sans',
   fontSize: 14,
-  backgroundColor: '$tonal300',
-  color: '$tonal900'
+  backgroundColor: '$tonal600',
+  color: 'white'
 })
 
 const StyledArrow = styled(RadixTooltip.Arrow, {
-  fill: '$tonal300'
+  fill: '$tonal600'
 })
 
-export const Tooltip = ({ children, content }) => {
+type TooltipProps = {
+  content: React.ReactNode
+}
+
+export const Tooltip: React.FC<TooltipProps> = ({ children, content }) => {
+  const triggerRef = React.useRef<HTMLDivElement>(null)
+
   return (
     <RadixTooltip.Root>
-      <RadixTooltip.Trigger as={Slot}>{children}</RadixTooltip.Trigger>
-      <StyledContent>
+      <RadixTooltip.Trigger as={Slot}>
+        {/* inline Box so that the Tooltip knows the real size of the trigger */}
+        <Box ref={triggerRef} css={{ display: 'inline' }}>
+          {children}
+        </Box>
+      </RadixTooltip.Trigger>
+      <StyledContent side="top" anchorRef={triggerRef}>
         {content}
         <StyledArrow />
       </StyledContent>
