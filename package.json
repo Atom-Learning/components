@@ -100,7 +100,8 @@
     "@radix-ui/react-radio-group": "^0.0.5",
     "@stitches/react": "0.1.0-canary.5",
     "@types/react": "^17.0.2",
-    "@types/resize-observer-browser": "^0.1.5"
+    "@types/resize-observer-browser": "^0.1.5",
+    "react-player": "^2.9.0"
   },
   "husky": {
     "hooks": {
