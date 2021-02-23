@@ -8,6 +8,6 @@ export const StyledBox = styled('div', {})
 // when passing custom components as children
 export const Box: React.FC<
   React.ComponentProps<typeof StyledBox>
-> = React.forwardRef((props, ref) => <StyledBox ref={ref} {...props} />)
+> = React.forwardRef((props, ref = null) => <StyledBox ref={ref} {...props} />)
 
 Box.displayName = 'Box'

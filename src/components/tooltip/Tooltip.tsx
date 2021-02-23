@@ -23,17 +23,17 @@ type TooltipProps = {
 }
 
 export const Tooltip: React.FC<TooltipProps> = ({ children, content }) => {
-  const triggerRef = React.useRef<HTMLDivElement>(null)
+  const triggerContainerRef = React.useRef<HTMLDivElement>(null)
 
   return (
     <RadixTooltip.Root>
       <RadixTooltip.Trigger as={Slot}>
         {/* inline Box so that the Tooltip knows the real size of the trigger */}
-        <Box ref={triggerRef} css={{ display: 'inline' }}>
+        <Box ref={triggerContainerRef} css={{ display: 'inline' }}>
           {children}
         </Box>
       </RadixTooltip.Trigger>
-      <StyledContent side="top" anchorRef={triggerRef}>
+      <StyledContent side="top" anchorRef={triggerContainerRef}>
         {content}
         <StyledArrow />
       </StyledContent>
