@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { ResizeObserver } from '../../mocks/ResizeOberserver'
+// import { ResizeObserver } from '../../mocks/ResizeOberserver'
 import { Tooltip } from '.'
 
 describe(`Tooltip component`, () => {

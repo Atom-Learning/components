@@ -1,4 +1,5 @@
 module.exports = {
+  preset: 'ts-jest',
   roots: ['<rootDir>/src'],
   snapshotSerializers: ['@atom-learning/jest-stitches'],
   collectCoverage: true,
