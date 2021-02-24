@@ -1,3 +1,2 @@
-import { ReactComponent as Check } from './check.svg'
-import Home from './home.svg'
-export { Check, Home }
+export { ReactComponent as Check } from './check.svg'
+export { ReactComponent as Home } from './home.svg'

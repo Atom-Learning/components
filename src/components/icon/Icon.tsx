@@ -28,14 +28,14 @@ type IconProps = Override<
 export const Icon: React.FC<IconProps> = ({
   is: SVG,
   size = 'sm',
-  as, // prevent as from being included in ...reaminingProps and overwriting as={SVG} on line 29
+
   ...remainingProps
 }) => (
   <StyledIcon
-    as={SVG}
     size={size}
     viewBox="0 0 24 24"
     aria-hidden="true"
     {...remainingProps}
+    as={SVG}
   />
 )
