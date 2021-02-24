@@ -31,10 +31,12 @@ const StyledLink = styled('a', {
   }
 })
 
-type LinkProps = React.ComponentPropsWithoutRef<typeof StyledLink>
+type LinkProps = React.ComponentProps<typeof StyledLink>
 
-export const Link: React.FC<LinkProps> = ({ size = 'md', ...rest }) => (
-  <StyledLink size={size} {...rest} />
+export const Link: React.FC<LinkProps> = React.forwardRef(
+  ({ size = 'md', ...rest }, ref) => (
+    <StyledLink size={size} {...rest} ref={ref} />
+  )
 )
 
 Link.displayName = 'Link'
