@@ -2,28 +2,35 @@ import * as React from 'react'
 // Note: Only loading vimeo to reduce the bundle size  https://www.npmjs.com/package/react-player
 import ReactPlayer from 'react-player/vimeo'
 
-// TODO: add styled
+// import { styled } from '~/stitches' // TODO: switch to alias
+import { Override } from '~/utilities/types'
 
-// TODO: add mdx
+import { styled } from '../../stitches'
 
-type VideoProps = {
-  externalId: string
-  width?: number | string
-  height?: number | string
-  lightPlayer?: boolean
-}
+const StyledVideo = styled(ReactPlayer, {})
+
+type VideoProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledVideo>,
+  {
+    externalId: string
+    width?: number | string
+    height?: number | string
+    lightPlayer?: boolean
+    as: never
+  }
+>
 
 export const Video: React.FC<VideoProps> = ({
   externalId,
   width = '100%',
   height = 405,
-  lightPlayer,
+  lightPlayer = false,
   ...remainingProps
 }) => {
   const showControls = !lightPlayer
 
   return (
-    <ReactPlayer
+    <StyledVideo
       role="figure"
       url={`https://player.vimeo.com/video/${externalId}`}
       width={width}
@@ -31,7 +38,7 @@ export const Video: React.FC<VideoProps> = ({
       playing={lightPlayer || undefined} // true or false to pause or play the media
       muted={lightPlayer || undefined} // Mutes the player
       controls={showControls}
-      light={lightPlayer || undefined} // true to show just the video thumbnail, which loads the full player on click
+      light={lightPlayer} // true to show just the video thumbnail, which loads the full player on click
       {...remainingProps}
     />
   )
