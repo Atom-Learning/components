@@ -5,8 +5,14 @@ description: `Video` component supports playing Vimeo hosted videos.
 category: Media
 ---
 
-The `Video` component supports playing Vimeo hosted videos by setting the externalId. The default ratio is 9/16
+The `Video` component supports playing Vimeo hosted videos by setting the externalId.
 
 ```jsx preview center
 <Video externalId="1084537" />
+```
+
+This component makes the video responsive by having a default ratio of `16:9`. However, this can be overriden by setting the `ratio` prop
+
+```jsx preview center
+<Video externalId="1084537" ratio={2 / 3} />
 ```
