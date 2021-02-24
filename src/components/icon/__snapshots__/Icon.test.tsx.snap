@@ -16,7 +16,6 @@ exports[`Icon component renders an icon 1`] = `
   <svg
     aria-hidden="true"
     class="sx5zewo sx5zewo2cbmr--size-sm"
-    data-file-name="SvgCheck"
     title="check"
     viewBox="0 0 24 24"
   />
