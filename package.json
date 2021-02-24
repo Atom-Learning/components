@@ -7,7 +7,7 @@
   "description": "",
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
-    "build:lib": "NODE_ENV=production rollup -c",
+    "build:lib": "NODE_ENV=production rollup -c && tsc -d",
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
     "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
