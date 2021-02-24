@@ -1,31 +1,38 @@
-# Atom Learning Component library
+---
+title: Introduction
+description: This package is one part of the Atom Learning design system.
+category: Overview
+priority: 1
+---
 
 ![badge](https://github.com/Atom-Learning/components/workflows/CI/badge.svg)
 
-This package is one part of the Atom Learning design system. 
-
-
 ## Getting started
-Clone the repo  
+
+Clone the repo
+
 ```
 git clone git@github.com:Atom-Learning/components.git
 ```
 
 Install dependencies
+
 ```
 yarn install
 ```
 
 **Before starting to develop on this project, please consider the following:**
+
 - Read the [contribution guide](CONTRIBUTING.md)
 - Read the [versioning section](#versioning)
 - Read the [accessibility section](#accessibility)
 - Check that the `pre-commit` hooks work before pushing into a branch
-- Always commit your changes to a branch and request a code review by raising a PR. 
+- Always commit your changes to a branch and request a code review by raising a PR.
 - Always include tests for the changes introduced
 
 ## Available yarn scripts
-- `dev`: Starts the libary for development 
+
+- `dev`: Starts the libary for development
 - `build:lib`: Builds the library and populates the `dist` folder
 - `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project
 - `clean`: Deletes the `dist` folder to ensure a clean build
@@ -86,12 +93,12 @@ Before developing a component, please take some time to read the following secti
 - Add unit tests to test accessibility
   Add an accessibility unit test (using the `jest-axe`) to ensure that the components' different variations don't have any accessibility issues. Example:
 
-```
-  it('has no programmatically detectable a11y issues', async () => {
-    render(<Flex />, document.body)
-    const results = await axe(document.body)
-    expect(results).toHaveNoViolations()
-  })
+```jsx
+it('has no programmatically detectable a11y issues', async () => {
+  render(<Flex />, document.body)
+  const results = await axe(document.body)
+  expect(results).toHaveNoViolations()
+})
 ```
 
 _Note:_ `axe` doesn't catch contrast issues when run on `jsdom` which `jest` is using.

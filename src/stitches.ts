@@ -1,8 +1,8 @@
 import atomTheme from '@atom-learning/theme'
-import { createCss } from '@stitches/react'
+import { createCss, StitchesCss } from '@stitches/react'
 
 type CSSValue = number | string
-export type CSSBlob = { [key: string]: CSSValue }
+type CSSBlob = { [key: string]: CSSValue }
 
 export const utils = {
   p: () => (value: CSSValue): CSSBlob => ({
@@ -67,6 +67,12 @@ export const conditions = {
   hover: `@media (hover: hover)`
 }
 
+const stitchesConfig = createCss({
+  theme: atomTheme,
+  utils,
+  conditions
+})
+
 export const {
   css,
   getCssString,
@@ -74,8 +80,6 @@ export const {
   keyframes,
   styled,
   theme
-} = createCss({
-  theme: atomTheme,
-  utils,
-  conditions
-})
+} = stitchesConfig
+
+export type CSS = StitchesCss<typeof stitchesConfig>

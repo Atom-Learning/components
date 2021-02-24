@@ -27,16 +27,23 @@ const StyledInput = styled('input', {
     backgroundColor: '$tonal300',
     color: '$tonal700',
     cursor: 'not-allowed'
+  },
+  variants: {
+    state: {
+      error: {
+        border: '1px solid $danger'
+      }
+    }
   }
 })
 
 // override default 'type' property to prevent Input from being used to render
 // checkboxes, radios etc — we will have dedicated components for them
-type InputProps = Override<
+export type InputProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledInput>,
   {
-    as: 'input'
-    type: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
+    as?: never
+    type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
 >
 
