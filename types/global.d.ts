@@ -6,9 +6,3 @@ declare module '*.svg' {
   const src: string
   export default src
 }
-
-declare interface ResizeObserver {
-  observe(target: Element): void
-  unobserve(target: Element): void
-  disconnect(): void
-}
