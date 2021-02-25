@@ -12,7 +12,7 @@ type VideoProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledVideo>,
   {
     externalId: string
-    ratio: number
+    ratio?: number
   }
 >
 
