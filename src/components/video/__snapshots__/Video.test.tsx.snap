@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video component renders a video with custom ratio (4:3) 1`] = `
+.sx03kzevehnw--css {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  height: 0;
+}
+
+.sx03kzeyibwn--css {
+  position: relative;
+  padding-top: 75%;
+  overflow: hidden;
+  height: 0;
+}
+
+.sx03kzevtaup--css {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+<div>
+  <div
+    class="sx03kze sx03kzeyibwn--css"
+  >
+    <div
+      class="sx03kze sx03kzevtaup--css"
+      role="figure"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        style="width: 100%; height: 100%; overflow: hidden;"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Video component renders a video with default ratio 1`] = `
+.sx03kzevehnw--css {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  height: 0;
+}
+
+.sx03kzevtaup--css {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+<div>
+  <div
+    class="sx03kze sx03kzevehnw--css"
+  >
+    <div
+      class="sx03kze sx03kzevtaup--css"
+      role="figure"
+      style="width: 100%; height: 100%;"
+    >
+      <div
+        style="width: 100%; height: 100%; overflow: hidden;"
+      />
+    </div>
+  </div>
+</div>
+`;
