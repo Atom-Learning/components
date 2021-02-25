@@ -9265,7 +9265,7 @@ react-is@^17.0.1:
 
 react-player@^2.9.0:
   version "2.9.0"
-  resolved "https://registry.atomlearning.technology/react-player/-/react-player-2.9.0.tgz#ef7fe7073434087565f00ff219824e1e02c4b046"
+  resolved "https://registry.npmjs.org/react-player/-/react-player-2.9.0.tgz#ef7fe7073434087565f00ff219824e1e02c4b046"
   integrity sha512-jNUkTfMmUhwPPAktAdIqiBcVUKsFKrVGH6Ocutj6535CNfM91yrvWxHg6fvIX8Y/fjYUPoejddwh7qboNV9vGA==
   dependencies:
     deepmerge "^4.0.0"
