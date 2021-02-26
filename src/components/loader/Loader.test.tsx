@@ -6,9 +6,11 @@ import { Loader } from '.'
 
 describe(`Loader component`, () => {
   it('renders a loader', async () => {
-    const { container } = render(<Loader />)
+    const message = 'Content is loading'
+    const { container } = render(<Loader message={message} />)
 
     await screen.getByRole('alert')
+    await screen.getByText(message)
 
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
