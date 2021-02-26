@@ -66,7 +66,7 @@ type LoaderProps = {
 }
 
 export const Loader: React.FC<LoaderProps> = ({
-  css,
+  css = {},
   message = 'Loading',
   size = 'md'
 }) => {
@@ -77,7 +77,7 @@ export const Loader: React.FC<LoaderProps> = ({
         whiteSpace: 'nowrap',
         // Stitches doesn't recognise CSS as the right type here. The Modulz team doesn't know why.
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ...((css as any) || {})
+        ...(css as any)
       }}
       role="alert"
       aria-live="assertive"
