@@ -1,5 +1,6 @@
-import * as React from 'react'
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
+import * as React from 'react'
+
 import { Flex } from '~/components/flex'
 import { CSS, keyframes, styled } from '~/stitches'
 
