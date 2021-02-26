@@ -52,9 +52,12 @@ export const utils = {
     marginTop: value,
     marginBottom: value
   }),
-
   bg: () => (value: string): CSSBlob => ({
     background: value
+  }),
+  size: () => (value: CSSValue): CSSBlob => ({
+    height: value,
+    width: value
   })
 }
 

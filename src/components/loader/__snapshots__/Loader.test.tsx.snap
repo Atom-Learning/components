@@ -53,11 +53,14 @@ exports[`Loader component renders a loader 1`] = `
   animation-delay: 0;
 }
 
-.sx0yv19ju8jr--size-md {
+.sx0yv194btw3--size-md {
   height: 6px;
+  width: 6px;
+}
+
+.sx0yv194btw3--size-md {
   margin-left: 2px;
   margin-right: 2px;
-  width: 6px;
 }
 
 <div>
@@ -73,13 +76,13 @@ exports[`Loader component renders a loader 1`] = `
       Content is loading
     </span>
     <div
-      class="sx0yv19 sx0yv19ju8jr--size-md"
+      class="sx0yv19 sx0yv194btw3--size-md"
     />
     <div
-      class="sx0yv19 sx0yv19ju8jr--size-md"
+      class="sx0yv19 sx0yv194btw3--size-md"
     />
     <div
-      class="sx0yv19 sx0yv19ju8jr--size-md"
+      class="sx0yv19 sx0yv194btw3--size-md"
     />
   </div>
 </div>

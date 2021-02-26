@@ -33,22 +33,16 @@ const Dot = styled('div', {
   variants: {
     size: {
       sm: {
-        height: '4px',
-        marginLeft: '2px',
-        marginRight: '2px',
-        width: '4px'
+        size: '4px',
+        mx: '2px'
       },
       md: {
-        height: '6px',
-        marginLeft: '2px',
-        marginRight: '2px',
-        width: '6px'
+        size: '6px',
+        mx: '2px'
       },
       lg: {
-        height: '8px',
-        marginLeft: '3px',
-        marginRight: '3px',
-        width: '8px'
+        size: '8px',
+        mx: '3px'
       }
     }
   }
