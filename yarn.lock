@@ -2255,6 +2255,15 @@
     "@radix-ui/react-polymorphic" "0.0.5"
     "@radix-ui/utils" "0.0.3"
 
+"@radix-ui/react-visually-hidden@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-visually-hidden/-/react-visually-hidden-0.0.5.tgz#9e04587d070d36ba942c337523a23b3b9d296af7"
+  integrity sha512-8T8asSbt96IurSamS3uF+g2dc5vNieYCbHKloBn2dGq6yrr92RCxW1p0q5lX8IG9zDQq+shOPPq7wof1OPMv8Q==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
+    "@radix-ui/utils" "0.0.3"
+
 "@radix-ui/utils@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@radix-ui/utils/-/utils-0.0.3.tgz#f20dfa8a5681d778a579ad695fe68fe6a2c0ee88"
