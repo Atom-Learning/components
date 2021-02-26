@@ -3,9 +3,6 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
-// TODO: tests
-// TODO: accessibility
-
 const getTriangle = (position) => {
   const size = 8
   const background = 'white'
@@ -99,6 +96,7 @@ type PopoverProps = Override<
   {
     show?: boolean
     className?: string
+    'aria-label': string
   }
 >
 
@@ -110,8 +108,10 @@ export const Popover: React.FC<PopoverProps> = ({
 }) => {
   return (
     <StyledPopover
+      role="tooltip"
       align={align}
       className={show ? 'visible' : ''}
+      aria-hidden={!show}
       {...remainingProps}
     >
       {children}
