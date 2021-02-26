@@ -32,29 +32,23 @@ const Dot = styled('div', {
 
   variants: {
     size: {
-      xs: {
+      sm: {
         height: '4px',
         marginLeft: '2px',
         marginRight: '2px',
         width: '4px'
       },
-      sm: {
+      md: {
         height: '6px',
         marginLeft: '2px',
         marginRight: '2px',
         width: '6px'
       },
-      md: {
+      lg: {
         height: '8px',
         marginLeft: '3px',
         marginRight: '3px',
         width: '8px'
-      },
-      lg: {
-        height: '10px',
-        marginLeft: '5px',
-        marginRight: '5px',
-        width: '10px'
       }
     }
   }
@@ -62,7 +56,7 @@ const Dot = styled('div', {
 
 type LoaderProps = {
   message?: string
-  size?: 'xs' | 'sm' | 'md' | 'lg'
+  size?: 'sm' | 'md' | 'lg'
   css?: CSS
 }
 
@@ -75,7 +69,6 @@ export const Loader: React.FC<LoaderProps> = ({
     <Flex
       css={{
         justifyContent: 'center',
-        whiteSpace: 'nowrap',
         // Stitches doesn't recognise CSS as the right type here. The Modulz team doesn't know why.
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ...(css as any)
@@ -84,7 +77,9 @@ export const Loader: React.FC<LoaderProps> = ({
       aria-live="assertive"
     >
       <VisuallyHidden.Root>{message}</VisuallyHidden.Root>
-      <Dot size={size} /> <Dot size={size} /> <Dot size={size} />
+      <Dot size={size} />
+      <Dot size={size} />
+      <Dot size={size} />
     </Flex>
   )
 }

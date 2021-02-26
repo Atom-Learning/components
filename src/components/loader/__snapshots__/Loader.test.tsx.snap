@@ -27,9 +27,8 @@ exports[`Loader component renders a loader 1`] = `
   display: flex;
 }
 
-.sx2cs53uiywd--css {
+.sx2cs5323as4--css {
   justify-content: center;
-  white-space: nowrap;
 }
 
 .sx0yv19 {
@@ -54,17 +53,17 @@ exports[`Loader component renders a loader 1`] = `
   animation-delay: 0;
 }
 
-.sx0yv19plvfs--size-md {
-  height: 8px;
-  margin-left: 3px;
-  margin-right: 3px;
-  width: 8px;
+.sx0yv19ju8jr--size-md {
+  height: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 6px;
 }
 
 <div>
   <div
     aria-live="assertive"
-    class="sx2cs53 sx2cs53uiywd--css"
+    class="sx2cs53 sx2cs5323as4--css"
     role="alert"
   >
     <span
@@ -74,15 +73,13 @@ exports[`Loader component renders a loader 1`] = `
       Content is loading
     </span>
     <div
-      class="sx0yv19 sx0yv19plvfs--size-md"
+      class="sx0yv19 sx0yv19ju8jr--size-md"
     />
-     
     <div
-      class="sx0yv19 sx0yv19plvfs--size-md"
+      class="sx0yv19 sx0yv19ju8jr--size-md"
     />
-     
     <div
-      class="sx0yv19 sx0yv19plvfs--size-md"
+      class="sx0yv19 sx0yv19ju8jr--size-md"
     />
   </div>
 </div>
