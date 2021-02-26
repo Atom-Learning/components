@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover component renders a left aligning popover 1`] = `
+.sxi5y1j {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  - var(--space-5));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxi5y1j {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxi5y1j.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center {
+  left: 50%;
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+.sxi5y1j7rrb2--align-left::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxi5y1j7rrb2--align-left::after {
+  left: 40px;
+}
+
+.sxi5y1j7rrb2--align-left::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxi5y1j7rrb2--align-left::before {
+  left: 40px;
+}
+
+.sxi5y1j7rrb2--align-left {
+  left: 0;
+  transform-origin: 60px bottom;
+  transform: translate(-20px, var(--2)) scale(0.9);
+}
+
+<div>
+  <div
+    aria-hidden="false"
+    aria-label="Some text"
+    class="sxi5y1j visible sxi5y1j7rrb2--align-left"
+    role="tooltip"
+  />
+</div>
+`;
+
+exports[`Popover component renders a visible popover  1`] = `
+.sxi5y1j {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  - var(--space-5));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxi5y1j {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxi5y1j.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center {
+  left: 50%;
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+<div>
+  <div
+    aria-hidden="false"
+    aria-label="Empty popover"
+    class="sxi5y1j visible sxi5y1jjkn5t--align-center"
+    role="tooltip"
+  />
+</div>
+`;
+
+exports[`Popover component renders a visible popover with a child 1`] = `
+.sxi5y1j {
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  - var(--space-5));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxi5y1j {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxi5y1j.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxi5y1jjkn5t--align-center::after {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxi5y1jjkn5t--align-center::before {
+  left: 50%;
+}
+
+.sxi5y1jjkn5t--align-center {
+  left: 50%;
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+<div>
+  <div
+    aria-hidden="false"
+    aria-label="Popover containing text"
+    class="sxi5y1j visible sxi5y1jjkn5t--align-center"
+    role="tooltip"
+  >
+    hello
+  </div>
+</div>
+`;
