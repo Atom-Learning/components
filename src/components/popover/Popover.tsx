@@ -1,6 +1,10 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { Override } from '~/utilities/types'
+
+// TODO: tests
+// TODO: accessibility
 
 const getTriangle = (position) => {
   const size = 8
@@ -9,9 +13,10 @@ const getTriangle = (position) => {
 
   return {
     '&::after': {
+      // Pseudo-classes need to be separated ($::after, $::before: doesn't work in stitches work)
       borderStyle: 'solid',
       borderColor: 'transparent',
-      content: "''",
+      content: "''", //  quotes need to be escapted as a stitches workaround for pseudoclasses
       height: 0,
       pointerEvents: 'none',
       position: 'absolute',
@@ -39,6 +44,10 @@ const getTriangle = (position) => {
   }
 }
 
+const Visibility = () => ''
+
+Visibility.toString = () => '.visible' // Gives the ability to apply a class to show and hide the popover
+
 const StyledPopover = styled('div', {
   boxShadow: `0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
@@ -55,6 +64,12 @@ const StyledPopover = styled('div', {
   position: 'absolute',
   transition: 'all 150ms ease-in-out',
   width: 'max-content',
+  opacity: 0,
+  visibility: 'hidden',
+  [`&${Visibility}`]: {
+    opacity: 1,
+    visibility: 'visible'
+  },
   variants: {
     align: {
       left: {
@@ -75,31 +90,30 @@ const StyledPopover = styled('div', {
         transformOrigin: 'calc(100% - 51px) bottom',
         transform: 'translate(0, $2) scale(0.9)'
       }
-    },
-    show: {
-      // TODO: convert to class?
-      visible: {
-        opacity: 1,
-        visibility: 'visible'
-      },
-      hidden: {
-        opacity: 0,
-        visibility: 'hidden'
-      }
     }
   }
 })
 
-type PopoverProps = React.ComponentPropsWithoutRef<typeof StyledPopover>
+type PopoverProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledPopover>,
+  {
+    show?: boolean
+    className?: string
+  }
+>
 
 export const Popover: React.FC<PopoverProps> = ({
   align = 'center',
-  show = 'visible',
+  show = true,
   children,
   ...remainingProps
 }) => {
   return (
-    <StyledPopover align={align} show={show} {...remainingProps}>
+    <StyledPopover
+      align={align}
+      className={show ? 'visible' : ''}
+      {...remainingProps}
+    >
       {children}
     </StyledPopover>
   )
