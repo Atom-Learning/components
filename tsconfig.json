@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "outDir": "./dist/", // path to output directory
-    "sourceMap": true, // allow sourcemap support
+    "sourceMap": false, // allow sourcemap support
     "strictNullChecks": true, // enable strict null checks as a best practice
     "module": "ESNext", // specify module code generation
     "jsx": "react", // use typescript to transpile jsx to js
@@ -14,7 +14,8 @@
     "paths": {
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
     },
-    "declaration": true // output d.ts files
+    "declaration": true, // output d.ts files
+    "emitDeclarationOnly": true
   },
   "include": ["./src/", "types/global.d.ts"],
   "exclude": ["./src/**/*.test.*"]

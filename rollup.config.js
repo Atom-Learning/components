@@ -15,10 +15,10 @@ const peerDeps = Object.keys(pkg.peerDependencies || {})
 
 export default {
   input: 'src/index.ts',
-  external: [...deps, ...peerDeps],
+  external: [...deps, ...peerDeps, 'react-player/vimeo'],
   output: [
-    { file: pkg.main, format: 'cjs', sourcemap: true },
-    { file: pkg.module, format: 'esm', sourcemap: true }
+    { file: pkg.main, format: 'cjs' },
+    { file: pkg.module, format: 'esm' }
   ],
   plugins: [
     bundleSize(),

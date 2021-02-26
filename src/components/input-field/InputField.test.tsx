@@ -69,7 +69,7 @@ describe(`InputField component`, () => {
       />
     )
 
-    getByText(errorText)
+    await getByText(errorText)
 
     expect(await axe(container)).toHaveNoViolations()
   })

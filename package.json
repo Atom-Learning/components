@@ -3,8 +3,11 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c && tsc -d",
@@ -86,6 +89,7 @@
     "rollup": "^2.39.0",
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-url": "^3.0.1",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.2.1-rc",
@@ -103,8 +107,7 @@
     "@stitches/react": "0.1.0-canary.5",
     "@types/react": "^17.0.2",
     "@types/resize-observer-browser": "^0.1.5",
-    "react-player": "^2.9.0",
-    "rollup-plugin-url": "^3.0.1"
+    "react-player": "^2.9.0"
   },
   "husky": {
     "hooks": {
