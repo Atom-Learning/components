@@ -14,8 +14,7 @@
     "paths": {
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
     },
-    "declaration": true, // output d.ts files
-    "emitDeclarationOnly": true
+    "declaration": true // output d.ts files
   },
   "include": ["./src/", "types/global.d.ts"],
   "exclude": ["./src/**/*.test.*"]
