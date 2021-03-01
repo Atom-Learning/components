@@ -5,7 +5,6 @@ import { Override } from '~/utilities/types'
 
 const getTriangle = (position) => {
   const size = 8
-  const background = 'white'
   const border = '$tonal400'
 
   return {
@@ -19,7 +18,7 @@ const getTriangle = (position) => {
       position: 'absolute',
       top: '100%',
       width: 0,
-      borderTopColor: background,
+      borderTopColor: 'white',
       borderWidth: size,
       ml: -size,
       ...position
@@ -94,7 +93,7 @@ const StyledPopover = styled('div', {
 type PopoverProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledPopover>,
   {
-    show?: boolean
+    show: boolean
     className?: string
     'aria-label': string
   }
@@ -102,7 +101,7 @@ type PopoverProps = Override<
 
 export const Popover: React.FC<PopoverProps> = ({
   align = 'center',
-  show = true,
+  show,
   children,
   ...remainingProps
 }) => {
