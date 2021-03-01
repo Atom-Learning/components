@@ -4,6 +4,7 @@ import { createCss, StitchesCss } from '@stitches/react'
 type CSSValue = number | string
 type CSSBlob = { [key: string]: CSSValue }
 
+// TODO: assess how intuitive the team finds these
 export const utils = {
   p: () => (value: CSSValue): CSSBlob => ({
     padding: value
@@ -55,10 +56,19 @@ export const utils = {
   bg: () => (value: string): CSSBlob => ({
     background: value
   }),
-  size: () => (value: CSSValue): CSSBlob => ({
-    height: value,
-    width: value
-  })
+  size: () => (value: CSSValue | Array<CSSValue>): CSSBlob => {
+    if (Array.isArray(value)) {
+      const [height, width] = value
+      return {
+        height,
+        width
+      }
+    }
+    return {
+      height: value,
+      width: value
+    }
+  }
 }
 
 export const conditions = {

@@ -68,7 +68,6 @@ export const Loader: React.FC<LoaderProps> = ({
         ...(css as any)
       }}
       role="alert"
-      aria-live="assertive"
     >
       <VisuallyHidden.Root>{message}</VisuallyHidden.Root>
       <Dot size={size} />

@@ -65,7 +65,6 @@ exports[`Loader component renders a loader 1`] = `
 
 <div>
   <div
-    aria-live="assertive"
     class="sx2cs53 sx2cs5323as4--css"
     role="alert"
   >
