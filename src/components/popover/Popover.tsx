@@ -60,10 +60,6 @@ const StyledPopover = styled('div', {
   width: 'max-content',
   opacity: 0,
   visibility: 'hidden',
-  [`&${Visibility}`]: {
-    opacity: 1,
-    visibility: 'visible'
-  },
   variants: {
     align: {
       left: {
@@ -84,6 +80,12 @@ const StyledPopover = styled('div', {
         transformOrigin: 'calc(100% - 51px) bottom',
         transform: 'translate(0, $2) scale(0.9)'
       }
+    },
+    show: {
+      true: {
+        opacity: 1,
+        visibility: 'visible'
+      }
     }
   }
 })
@@ -92,7 +94,6 @@ type PopoverProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledPopover>,
   {
     show: boolean
-    className?: string
     'aria-label': string
   }
 >
@@ -107,7 +108,7 @@ export const Popover: React.FC<PopoverProps> = ({
     <StyledPopover
       role="tooltip"
       align={align}
-      className={show ? 'visible' : ''}
+      show={show}
       aria-hidden={!show}
       {...remainingProps}
     >
