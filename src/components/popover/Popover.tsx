@@ -45,9 +45,7 @@ const Visibility = () => ''
 Visibility.toString = () => '.visible' // Gives the ability to apply a class to show and hide the popover
 
 const StyledPopover = styled('div', {
-  boxShadow: `0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12)`,
+  boxShadow: '$0',
   borderRadius: '$1',
   backgroundColor: 'white',
   border: '1px solid $tonal400',
