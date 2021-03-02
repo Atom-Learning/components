@@ -4,16 +4,22 @@ component: Popover
 description: Popover provides a styled actionable popover.
 ---
 
-## Accessibility
-
-<!-- TODO: -->
-
-A `Popover` needs to be associated with a label for accessibility purposes, therefore the component `id` needs to be set. If a label is not available, please add an `aria-label` to ensure that the component remains accessible.
-For more examples, please read [aria-progressbar-name](https://dequeuniversity.com/rules/axe/4.1/aria-progressbar-name?application=axeAPI)
+The `Popover` component needs a `visible` boolean prop that determins whether it will show the popover or not.
 
 ```jsx live center
-<Popover show aria-label="Password hints" />
-<Popover show aria-label="Password hints" >hello</Popover>
-<Popover show aria-label="Password hints" ><button>hello</button></Popover>
-
+<Popover visible aria-label="Password hints" />
+<Popover visible={false} aria-label="Password hints" />
 ```
+
+It can display a `content` and a `child` as a trigger
+
+```jsx live center
+<Popover visible aria-label="Password hints" content="Here is some content" />
+<Popover aria-label="Password hints" content="Here is some content">
+  <Button>Click me</Button>
+</Popover>
+```
+
+## Accessibility
+
+For accessibility purposes the `aria-label` is mandatory
