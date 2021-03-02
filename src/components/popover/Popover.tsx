@@ -76,13 +76,9 @@ const StyledPopover = styled('div', {
       }
     },
     visibility: {
-      visible: {
+      true: {
         opacity: 1,
         visibility: 'visible'
-      },
-      hidden: {
-        opacity: 0,
-        visibility: 'hidden'
       }
     }
   }
@@ -123,7 +119,7 @@ export const Popover: React.FC<PopoverProps> = ({
         align={align}
         aria-hidden={!visible}
         {...remainingProps}
-        visibility={visible ? 'visible' : 'hidden'}
+        visibility={visible}
       >
         {content}
       </StyledPopover>
