@@ -40,10 +40,6 @@ const getTriangle = (position) => {
   }
 }
 
-const Visibility = () => ''
-
-Visibility.toString = () => '.visible' // Gives the ability to apply a class to show and hide the popover
-
 const StyledPopover = styled('div', {
   boxShadow: '$0',
   borderRadius: '$1',
@@ -59,10 +55,6 @@ const StyledPopover = styled('div', {
   width: 'max-content',
   opacity: 0,
   visibility: 'hidden',
-  [`&${Visibility}`]: {
-    opacity: 1,
-    visibility: 'visible'
-  },
   variants: {
     align: {
       left: {
@@ -82,13 +74,17 @@ const StyledPopover = styled('div', {
         transformOrigin: 'calc(100% - 51px) bottom',
         transform: 'translate(0, $2) scale(0.9)'
       }
-    } //,
-    // show: {
-    //   true: {
-    //     opacity: 1,
-    //     visibility: 'visible'
-    //   }
-    // }
+    },
+    visibility: {
+      visible: {
+        opacity: 1,
+        visibility: 'visible'
+      },
+      hidden: {
+        opacity: 0,
+        visibility: 'hidden'
+      }
+    }
   }
 })
 
@@ -97,7 +93,6 @@ type PopoverProps = Override<
   {
     content: string
     align: 'right' | 'center' | 'left'
-    // show?: boolean
     visible: boolean
     children: React.ReactNode
   }
@@ -114,24 +109,21 @@ const TriggerWrapper = React.forwardRef<
 
 export const Popover: React.FC<PopoverProps> = ({
   align = 'center',
-  // show,
   children,
   content,
   visible,
   ...remainingProps
 }) => {
   const triggerContainerRef = React.useRef<HTMLDivElement>(null)
-  console.log('in component', visible)
   return (
     <span style={{ position: 'relative' }}>
       <TriggerWrapper ref={triggerContainerRef}>{children}</TriggerWrapper>
       <StyledPopover
         role="tooltip"
         align={align}
-        // show={show}
-        className={visible ? 'visible' : ''}
         aria-hidden={!visible}
         {...remainingProps}
+        visibility={visible ? 'visible' : 'hidden'}
       >
         {content}
       </StyledPopover>

@@ -7,13 +7,8 @@ import { Box, globalCss, Popover } from '../dist'
 globalCss(reset)()
 
 const App = () => {
-  let show = false
-  const showButton = () => {
-    console.log(1, show)
-    show = !show
-    console.log(2, show)
-    return show
-  }
+  const [isVisible, setIsVisible] = React.useState(false)
+  const toggleVisibility = () => setIsVisible((currentState) => !currentState)
   return (
     <Box
       css={{
@@ -25,25 +20,25 @@ const App = () => {
     >
       <div style={{ height: '100px', padding: '20px' }}>
         <Popover
-          visible={show}
+          visible={isVisible}
           align="left"
           content="Hello Left with a trigger"
         >
-          <button onClick={showButton}>open left</button>
+          <button onClick={toggleVisibility}>open left</button>
         </Popover>
       </div>
       <div style={{ height: '100px', padding: '20px' }}>
-        <Popover visible={show} content="Hello with a trigger">
-          <button onClick={showButton}>open center</button>
+        <Popover visible={isVisible} content="Hello with a trigger">
+          <button onClick={toggleVisibility}>open center</button>
         </Popover>
       </div>
       <div style={{ height: '100px', padding: '20px' }}>
         <Popover
-          visible={show}
+          visible={isVisible}
           align="right"
           content="Hello Right with a trigger"
         >
-          <button onClick={showButton}>open right</button>
+          <button onClick={toggleVisibility}>open right</button>
         </Popover>
       </div>
     </Box>
