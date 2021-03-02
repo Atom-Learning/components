@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atom-learning/jest-stitches@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.7.tgz#853c3bfed08b35cef1fd2796c02d8c70ff0b2aba"
-  integrity sha512-F5Gk0nNevIfKXPB/ZTeyh2gom4tTNKA0b0trFmEHH79VpplKr6yNrQTgEjDje3GOmfm8uOk3GAfUpZmsSRLXqg==
+"@atom-learning/jest-stitches@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.8.tgz#945e6005d34be29f94b6f3d28d852a7b8359dbef"
+  integrity sha512-xJ5KtP4wzt3VDPYwtRkKfmS3PfJcAbZG1RitBob7BPn2P8GMLmiUtBKEbg5k+6m8NrWSIn+TVnQMl9FZ4am1mg==
   dependencies:
     chalk "^4.1.0"
     css "^3.0.0"
@@ -2253,6 +2253,15 @@
   integrity sha512-OEPLfh8J6JH0Cqv3VrvI8NYQKX1nw0qVVNM14lYCgRGmAI49YrK51tcOIzqzdfuBkXLCX5QzrwK8//DjwoAbhQ==
   dependencies:
     "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/utils" "0.0.3"
+
+"@radix-ui/react-visually-hidden@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-visually-hidden/-/react-visually-hidden-0.0.5.tgz#9e04587d070d36ba942c337523a23b3b9d296af7"
+  integrity sha512-8T8asSbt96IurSamS3uF+g2dc5vNieYCbHKloBn2dGq6yrr92RCxW1p0q5lX8IG9zDQq+shOPPq7wof1OPMv8Q==
+  dependencies:
+    "@radix-ui/react-polymorphic" "0.0.5"
+    "@radix-ui/react-primitive" "0.0.4"
     "@radix-ui/utils" "0.0.3"
 
 "@radix-ui/utils@0.0.3":
