@@ -7,7 +7,7 @@ import { Box, globalCss, Popover } from '../dist'
 globalCss(reset)()
 
 const App = () => {
-  let show = true
+  let show = false
   const showButton = () => {
     console.log(1, show)
     show = !show
@@ -24,17 +24,25 @@ const App = () => {
       }}
     >
       <div style={{ height: '100px', padding: '20px' }}>
-        <Popover show={show} align="left" content="Hello Left with a trigger">
+        <Popover
+          visible={show}
+          align="left"
+          content="Hello Left with a trigger"
+        >
           <button onClick={showButton}>open left</button>
         </Popover>
       </div>
       <div style={{ height: '100px', padding: '20px' }}>
-        <Popover show={show} content="Hello with a trigger">
+        <Popover visible={show} content="Hello with a trigger">
           <button onClick={showButton}>open center</button>
         </Popover>
       </div>
       <div style={{ height: '100px', padding: '20px' }}>
-        <Popover show={show} align="right" content="Hello Right with a trigger">
+        <Popover
+          visible={show}
+          align="right"
+          content="Hello Right with a trigger"
+        >
           <button onClick={showButton}>open right</button>
         </Popover>
       </div>

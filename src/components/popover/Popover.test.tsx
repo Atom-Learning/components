@@ -29,17 +29,17 @@ describe(`Popover component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it.skip('hidden popover', async () => {
-    const { container } = render(<Popover aria-label="Some text" />)
+  // it.skip('hidden popover', async () => {
+  //   const { container } = render(<Popover aria-label="Some text" />)
 
-    await screen.getByRole('tooltip')
+  //   await screen.getByRole('tooltip')
 
-    expect(screen.getByRole('tooltip')).not.toBeInTheDocument()
-    expect(screen.getByRole('tooltip')).toHaveAttribute('aria-hidden', true)
+  //   expect(screen.getByRole('tooltip')).not.toBeInTheDocument()
+  //   expect(screen.getByRole('tooltip')).toHaveAttribute('aria-hidden', true)
 
-    // expect(container).toMatchSnapshot()
-    expect(await axe(container)).toHaveNoViolations()
-  })
+  //   // expect(container).toMatchSnapshot()
+  //   expect(await axe(container)).toHaveNoViolations()
+  // })
 
   it('renders a left aligning popover', async () => {
     const { container } = render(
@@ -51,4 +51,7 @@ describe(`Popover component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it.todo('renders a passed trigger without the tooltip')
+  it.todo('renders the tooltip once trigger is clicked')
 })
