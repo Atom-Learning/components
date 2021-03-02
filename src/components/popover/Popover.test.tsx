@@ -41,7 +41,7 @@ describe(`Popover component`, () => {
 
   it('renders a child with the popover hidden', async () => {
     const { container } = render(
-      <Popover aria-label="Popover" content="Content">
+      <Popover visible={false} aria-label="Popover" content="Content">
         <button>Click me</button>
       </Popover>
     )
@@ -55,7 +55,7 @@ describe(`Popover component`, () => {
   it('renders the tooltip once trigger is clicked', async () => {
     const handleClick = jest.fn()
     render(
-      <Popover aria-label="Popover" content="Content">
+      <Popover visible={false} aria-label="Popover" content="Content">
         <button onClick={handleClick}>Click me</button>
       </Popover>
     )

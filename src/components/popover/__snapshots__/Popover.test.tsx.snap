@@ -113,7 +113,10 @@ exports[`Popover component renders a child with the popover hidden 1`] = `
   <span
     style="position: relative;"
   >
-    <span>
+    <span
+      aria-expanded="false"
+      aria-haspopup="true"
+    >
       <button>
         Click me
       </button>
@@ -123,6 +126,7 @@ exports[`Popover component renders a child with the popover hidden 1`] = `
       aria-label="Popover"
       class="sxc30pd sxc30pdpuxrx--align-center"
       role="tooltip"
+      tabindex="0"
     >
       Content
     </div>
@@ -201,12 +205,16 @@ exports[`Popover component renders a visible popover with content only 1`] = `
   <span
     style="position: relative;"
   >
-    <span />
+    <span
+      aria-expanded="true"
+      aria-haspopup="true"
+    />
     <div
       aria-hidden="false"
       aria-label="Popover with text"
       class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
       role="tooltip"
+      tabindex="0"
     >
       Content
     </div>
@@ -285,12 +293,16 @@ exports[`Popover component renders a visible popover with no content and no chil
   <span
     style="position: relative;"
   >
-    <span />
+    <span
+      aria-expanded="true"
+      aria-haspopup="true"
+    />
     <div
       aria-hidden="false"
       aria-label="Empty popover"
       class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
       role="tooltip"
+      tabindex="0"
     />
   </span>
 </div>
@@ -409,12 +421,16 @@ exports[`Popover component renders popover with the align left variant 1`] = `
   <span
     style="position: relative;"
   >
-    <span />
+    <span
+      aria-expanded="true"
+      aria-haspopup="true"
+    />
     <div
       aria-hidden="false"
       aria-label="Some text"
       class="sxc30pd sxc30pd7rrb2--align-left sxc30pdx07u8--visibility-true"
       role="tooltip"
+      tabindex="0"
     >
       Hello
     </div>

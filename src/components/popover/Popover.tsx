@@ -89,7 +89,7 @@ type PopoverProps = Override<
   {
     content: string
     align: 'right' | 'center' | 'left'
-    visible?: boolean
+    visible: boolean
     children: React.ReactNode
   }
 >
@@ -106,18 +106,25 @@ const TriggerWrapper = React.forwardRef<
 export const Popover: React.FC<PopoverProps> = ({
   children,
   content,
-  visible = false,
+  visible,
   align = 'center',
   ...remainingProps
 }) => {
   const triggerContainerRef = React.useRef<HTMLDivElement>(null)
   return (
     <span style={{ position: 'relative' }}>
-      <TriggerWrapper ref={triggerContainerRef}>{children}</TriggerWrapper>
+      <TriggerWrapper
+        aria-haspopup="true"
+        aria-expanded={visible}
+        ref={triggerContainerRef}
+      >
+        {children}
+      </TriggerWrapper>
       <StyledPopover
         role="tooltip"
         align={align}
         aria-hidden={!visible}
+        tabIndex={0}
         {...remainingProps}
         visibility={visible}
       >
