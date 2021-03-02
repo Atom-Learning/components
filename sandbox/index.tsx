@@ -7,15 +7,37 @@ import { Box, globalCss, Popover } from '../dist'
 globalCss(reset)()
 
 const App = () => {
+  let show = true
+  const showButton = () => {
+    console.log(1, show)
+    show = !show
+    console.log(2, show)
+    return show
+  }
   return (
-    <Box css={{ m: 10, p: 20 }}>
-      <Popover show> Hello</Popover>
-      <Popover show align="right">
-        Hello from the right
-      </Popover>
-      <Popover show align="left">
-        Hello from the left
-      </Popover>
+    <Box
+      css={{
+        m: '100 0',
+        p: 20,
+        display: 'flex',
+        justifyContent: 'space-between'
+      }}
+    >
+      <div style={{ height: '100px', padding: '20px' }}>
+        <Popover show={show} align="left" content="Hello Left with a trigger">
+          <button onClick={showButton}>open left</button>
+        </Popover>
+      </div>
+      <div style={{ height: '100px', padding: '20px' }}>
+        <Popover show={show} content="Hello with a trigger">
+          <button onClick={showButton}>open center</button>
+        </Popover>
+      </div>
+      <div style={{ height: '100px', padding: '20px' }}>
+        <Popover show={show} align="right" content="Hello Right with a trigger">
+          <button onClick={showButton}>open right</button>
+        </Popover>
+      </div>
     </Box>
   )
 }

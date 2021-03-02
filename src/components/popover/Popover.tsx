@@ -40,17 +40,16 @@ const getTriangle = (position) => {
   }
 }
 
-const Visibility = () => ''
+// const Visibility = () => ''
 
-Visibility.toString = () => '.visible' // Gives the ability to apply a class to show and hide the popover
+// Visibility.toString = () => '.visible' // Gives the ability to apply a class to show and hide the popover
 
 const StyledPopover = styled('div', {
   boxShadow: '$0',
   borderRadius: '$1',
   backgroundColor: 'white',
   border: '1px solid $tonal400',
-  bottom: `calc(100%  - $5)`,
-  // bottom: `calc(100%  + $3)`,  // TODO: should be this
+  bottom: `calc(100%  + $3)`,
   listStyleType: 'none',
   minWidth: 140,
   maxWidth: 354,
@@ -70,7 +69,6 @@ const StyledPopover = styled('div', {
       },
       center: {
         ...getTriangle({ left: '50%' }),
-        left: '50%',
         transformOrigin: 'center bottom',
         transform: 'translate(-50%, $2) scale(0.9)'
       },
@@ -91,29 +89,46 @@ const StyledPopover = styled('div', {
 })
 
 type PopoverProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledPopover>,
+  React.ComponentPropsWithRef<typeof StyledPopover>,
   {
+    content: string
+    align: 'right' | 'center' | 'left'
     show: boolean
-    'aria-label': string
+    children: React.ReactNode
   }
 >
+
+// We need a component that can accept a ref for the popover to target
+// TODO: replace with a Box once we make that accept a ref
+const TriggerWrapper = React.forwardRef<
+  HTMLSpanElement,
+  {
+    children: React.ReactNode
+  }
+>((props, ref) => <span ref={ref} {...props} />)
 
 export const Popover: React.FC<PopoverProps> = ({
   align = 'center',
   show,
   children,
+  content,
   ...remainingProps
 }) => {
+  const triggerContainerRef = React.useRef<HTMLDivElement>(null)
+  console.log('in component', show)
   return (
-    <StyledPopover
-      role="tooltip"
-      align={align}
-      show={show}
-      aria-hidden={!show}
-      {...remainingProps}
-    >
-      {children}
-    </StyledPopover>
+    <span style={{ position: 'relative' }}>
+      <TriggerWrapper ref={triggerContainerRef}>{children}</TriggerWrapper>
+      <StyledPopover
+        role="tooltip"
+        align={align}
+        show={show}
+        aria-hidden={!show}
+        {...remainingProps}
+      >
+        {content}
+      </StyledPopover>
+    </span>
   )
 }
 
