@@ -1,57 +1,66 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Popover } from '.'
 
 describe(`Popover component`, () => {
-  it('renders a visible popover ', async () => {
-    const { container } = render(<Popover show aria-label="Empty popover" />)
+  it('renders a visible popover with no content and no children ', async () => {
+    const { container } = render(<Popover visible aria-label="Empty popover" />)
 
-    await screen.getByRole('tooltip')
-
-    // expect() no children TODO:
+    expect(await screen.getByRole('tooltip')).toHaveAttribute(
+      'aria-hidden',
+      'false'
+    )
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('renders a visible popover with a child', async () => {
+  it('renders a visible popover with content only', async () => {
     const { container } = render(
-      <Popover show aria-label="Popover containing text">
-        hello
+      <Popover visible aria-label="Popover with text" content="Content" />
+    )
+
+    await screen.getByRole('tooltip')
+
+    expect(screen.getByText('Content')).toBeInTheDocument()
+    expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders popover with the align left variant', async () => {
+    const { container } = render(
+      <Popover visible align="left" aria-label="Some text" content="Hello" />
+    )
+
+    await screen.getByRole('tooltip')
+
+    expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a child with the popover hidden', async () => {
+    const { container } = render(
+      <Popover aria-label="Popover" content="Content">
+        <button>Click me</button>
       </Popover>
     )
 
-    await screen.getByRole('tooltip')
+    expect(await screen.getByText('Click me')).toBeInTheDocument()
+    expect(screen.queryByRole('tooltip')).not.toBeInTheDocument()
 
-    expect(screen.getByText('hello')).toBeInTheDocument()
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
-
-  // it.skip('hidden popover', async () => {
-  //   const { container } = render(<Popover aria-label="Some text" />)
-
-  //   await screen.getByRole('tooltip')
-
-  //   expect(screen.getByRole('tooltip')).not.toBeInTheDocument()
-  //   expect(screen.getByRole('tooltip')).toHaveAttribute('aria-hidden', true)
-
-  //   // expect(container).toMatchSnapshot()
-  //   expect(await axe(container)).toHaveNoViolations()
-  // })
-
-  it('renders a left aligning popover', async () => {
-    const { container } = render(
-      <Popover show align="left" aria-label="Some text" />
+  it('renders the tooltip once trigger is clicked', async () => {
+    const handleClick = jest.fn()
+    render(
+      <Popover aria-label="Popover" content="Content">
+        <button onClick={handleClick}>Click me</button>
+      </Popover>
     )
 
-    await screen.getByRole('tooltip')
-
-    expect(container).toMatchSnapshot()
-    expect(await axe(container)).toHaveNoViolations()
+    fireEvent.click(screen.getByText(/click me/i))
+    expect(handleClick).toHaveBeenCalledTimes(1)
   })
-
-  it.todo('renders a passed trigger without the tooltip')
-  it.todo('renders the tooltip once trigger is clicked')
 })

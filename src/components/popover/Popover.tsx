@@ -89,7 +89,7 @@ type PopoverProps = Override<
   {
     content: string
     align: 'right' | 'center' | 'left'
-    visible: boolean
+    visible?: boolean
     children: React.ReactNode
   }
 >
@@ -104,10 +104,10 @@ const TriggerWrapper = React.forwardRef<
 >((props, ref) => <span ref={ref} {...props} />)
 
 export const Popover: React.FC<PopoverProps> = ({
-  align = 'center',
   children,
   content,
-  visible,
+  visible = false,
+  align = 'center',
   ...remainingProps
 }) => {
   const triggerContainerRef = React.useRef<HTMLDivElement>(null)
