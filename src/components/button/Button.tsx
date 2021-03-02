@@ -1,7 +1,9 @@
 import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
+import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
+import { Override } from '~/utilities/types'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
@@ -127,13 +129,28 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
-  StitchesVariants<typeof StyledButton>
+// TODO: missing transition
+// TODO: missing test
+// TODO: MISSING doc
+
+type ButtonProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledButton> &
+    StitchesVariants<typeof StyledButton>,
+  {
+    isLoading?: boolean
+  }
+>
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
   appearance = 'solid',
+  isLoading = false,
+  children,
   ...rest
-}) => <StyledButton theme={theme} appearance={appearance} {...rest} />
+}) => (
+  <StyledButton theme={theme} appearance={appearance} {...rest}>
+    {isLoading ? <Loader /> : children}
+  </StyledButton>
+)
 
 Button.displayName = 'Button'
