@@ -23,10 +23,8 @@ const App = () => {
       <InputField
         name="name"
         label="Name"
-        required
         validation={{
-          validate: (value) => value === 1 || 'name must be 1',
-          maxLength: 1
+          required: 'Name is a required field'
         }}
       />
       <Button>Submit</Button>

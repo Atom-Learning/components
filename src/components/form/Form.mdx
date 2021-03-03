@@ -1,0 +1,13 @@
+---
+title: Form
+component: Form
+description: Form abstracts form validation logic away from the view code
+category: Forms
+---
+
+`Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic.
+
+`Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
+ - `error`: `string` (for validation errors)
+ - `register`: `React.ForwardedRef<HTMLInputElement>` (only used internally by the `Form` to keep track of the field's value)
+- `validation`: `ValidationOptions` ()

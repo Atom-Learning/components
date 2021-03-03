@@ -5,6 +5,7 @@ import { ValidationOptions } from '~/components/form/ValidationOptions'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
+import { styled } from '~/stitches'
 
 type InputFieldProps = InputProps & {
   label: string
@@ -14,6 +15,9 @@ type InputFieldProps = InputProps & {
   register?: React.ForwardedRef<HTMLInputElement>
   validation?: ValidationOptions
 }
+
+const RedSpan = styled('span', { color: '$danger' })
+const RedAsterisk = () => <RedSpan>*</RedSpan>
 
 export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
@@ -28,7 +32,8 @@ export const InputField: React.FC<InputFieldProps> = ({
   return (
     <Box css={css}>
       <Label css={{ mb: '$1' }} htmlFor={name}>
-        {`${label} ${required ? '*' : ''}`}
+        {label}
+        {required && <RedAsterisk />}
       </Label>
       <Input
         css={{ mb: '$1' }}

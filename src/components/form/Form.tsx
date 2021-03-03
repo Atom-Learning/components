@@ -23,27 +23,27 @@ export const Form: React.FC<FormProps> = ({
   ...remainingProps
 }) => {
   const { errors, handleSubmit, register } = useForm({
-    defaultValues
+    defaultValues,
+    mode: 'onBlur'
   })
 
   return (
     <StyledForm {...remainingProps} onSubmit={handleSubmit(onSubmit)}>
       {React.Children.map(children, (child: React.ReactElement) => {
-        const { name } = child.props
+        const { name, validation } = child.props
 
+        // Form fields require a name
+        // If there is no name, assume it's not a form field
         if (!name) return child
 
         const fieldError = errors[name] as ValidationError
         return React.createElement(child.type, {
           ...{
             ...child.props,
-            error: fieldError
-              ? getError(fieldError, child.props.validation)
-              : undefined,
-            register: child.props.validation
-              ? register(child.props.validation)
-              : register,
-            key: name
+            error: fieldError ? getError(fieldError, validation) : undefined,
+            register: validation ? register(validation) : register,
+            key: name,
+            required: !!validation.required
           }
         })
       })}
