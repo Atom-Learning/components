@@ -73,7 +73,7 @@ describe(`Popover component`, () => {
     const { container } = render(
       <Popover
         id="123"
-        initialState
+        defaultOpen
         align="left"
         aria-label="Some text"
         content="Hello"

@@ -96,7 +96,7 @@ type PopoverProps = Override<
     id?: string
     content: string
     align: 'right' | 'center' | 'left'
-    initialState?: boolean
+    defaultOpen?: boolean
     children: React.ReactNode
   }
 >
@@ -106,11 +106,11 @@ export const Popover: React.FC<PopoverProps> = ({
   children,
   content,
   align = 'center',
-  initialState = false,
+  defaultOpen = false,
   ...remainingProps
 }) => {
   const triggerContainerRef = React.useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = React.useState(initialState)
+  const [isVisible, setIsVisible] = React.useState(defaultOpen)
 
   // need unique ids to enable using multiple popovers in the same page. Here we apply this technique as this is being soon replaced with the Radix-ui popover.
   const popoverId = `popover-trigger-${

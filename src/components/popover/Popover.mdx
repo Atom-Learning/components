@@ -4,22 +4,33 @@ component: Popover
 description: Popover provides a styled actionable popover.
 ---
 
-The `Popover` component needs a `visible` boolean prop that determins whether it will show the popover or not.
+The `Popover` can display any type element as a trigger and has the popover hidden by default.
 
 ```jsx live center
-<Popover visible aria-label="Password hints" />
-<Popover visible={false} aria-label="Password hints" />
+<Popover aria-label="Password hints" content="Here is some content">
+  <Button>Click me</Button>
+</Popover>
 ```
 
-It can display a `content` and a `child` as a trigger
+## variants
+
+Has 3 different `align` variants `center` (default), `left` and `right`:
 
 ```jsx live center
-<Popover visible aria-label="Password hints" content="Here is some content" />
-<Popover aria-label="Password hints" content="Here is some content">
+<Popover aria-label="Password hints" content="Hello World"/>
+<Popover aria-label="Password hints" align="left" content="Hello World"/>
+<Popover aria-label="Password hints" align="right" content="Hello World"/>
+```
+
+Also, it can be defaulted to open by setting the `defaultOpen` prop.
+
+```jsx live center
+<Popover aria-label="Password hints" content="Here is some content" defaultOpen>
   <Button>Click me</Button>
 </Popover>
 ```
 
 ## Accessibility
 
-For accessibility purposes the `aria-label` is mandatory
+- For accessibility purposes the `aria-label` and `content` are mandatory.
+- If using more than one `Popover`s in a page, please provide an `id`
