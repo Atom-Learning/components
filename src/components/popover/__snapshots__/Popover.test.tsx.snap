@@ -1,0 +1,435 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover component doesn't open popover using the keypress with random key press 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
+.sxc30pd {
+  box-shadow: var(--shadows-0);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  + var(--space-3));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxc30pd {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center {
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+.sxc30pdx07u8--visibility-true {
+  opacity: 1;
+  visibility: visible;
+}
+
+<div>
+  <span
+    aria-label="Popover"
+    class="sx2v396"
+  >
+    <span
+      aria-expanded="false"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
+    >
+      <button>
+        Click me
+      </button>
+    </span>
+    <div
+      aria-hidden="true"
+      aria-labelledby="popover-trigger-123"
+      class="sxc30pd sxc30pdpuxrx--align-center"
+      role="tooltip"
+    >
+      Content
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Popover component opens popover using the space key 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
+.sxc30pd {
+  box-shadow: var(--shadows-0);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  + var(--space-3));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxc30pd {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center {
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+.sxc30pdx07u8--visibility-true {
+  opacity: 1;
+  visibility: visible;
+}
+
+<div>
+  <span
+    aria-label="Popover"
+    class="sx2v396"
+  >
+    <span
+      aria-expanded="false"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
+    >
+      <button>
+        Click me
+      </button>
+    </span>
+    <div
+      aria-hidden="true"
+      aria-labelledby="popover-trigger-123"
+      class="sxc30pd sxc30pdpuxrx--align-center"
+      role="tooltip"
+    >
+      Content
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Popover component opens the popover once trigger is clicked 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
+.sxc30pd {
+  box-shadow: var(--shadows-0);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  + var(--space-3));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxc30pd {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center {
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+.sxc30pdx07u8--visibility-true {
+  opacity: 1;
+  visibility: visible;
+}
+
+<div>
+  <span
+    aria-label="Popover"
+    class="sx2v396"
+  >
+    <span
+      aria-expanded="true"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
+    >
+      <button>
+        Click me
+      </button>
+    </span>
+    <div
+      aria-hidden="false"
+      aria-labelledby="popover-trigger-123"
+      class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
+      role="tooltip"
+    >
+      Content
+    </div>
+  </span>
+</div>
+`;
+
+exports[`Popover component renders as visible with left variant 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
+.sxc30pd {
+  box-shadow: var(--shadows-0);
+  border-radius: var(--radii-1);
+  background-color: white;
+  border: 1px solid var(--colors-tonal400);
+  bottom: calc(100%  + var(--space-3));
+  list-style-type: none;
+  min-width: 140px;
+  max-width: 354px;
+  padding: var(--space-3);
+}
+
+.sxc30pd {
+  position: absolute;
+  transition: all 150ms ease-in-out;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxc30pdpuxrx--align-center::after {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxc30pdpuxrx--align-center::before {
+  left: 50%;
+}
+
+.sxc30pdpuxrx--align-center {
+  transform-origin: center bottom;
+  transform: translate(-50%, var(--2)) scale(0.9);
+}
+
+.sxc30pdx07u8--visibility-true {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sxc30pd7rrb2--align-left::after {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.sxc30pd7rrb2--align-left::after {
+  left: 40px;
+}
+
+.sxc30pd7rrb2--align-left::before {
+  border-style: solid;
+  border-color: transparent;
+  content: '';
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: var(--colors-tonal400);
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+.sxc30pd7rrb2--align-left::before {
+  left: 40px;
+}
+
+.sxc30pd7rrb2--align-left {
+  left: 0;
+  transform-origin: 60px bottom;
+  transform: translate(-20px, var(--2)) scale(0.9);
+}
+
+<div>
+  <span
+    aria-label="Some text"
+    class="sx2v396"
+  >
+    <span
+      aria-expanded="true"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
+    />
+    <div
+      aria-hidden="false"
+      aria-labelledby="popover-trigger-123"
+      class="sxc30pd sxc30pd7rrb2--align-left sxc30pdx07u8--visibility-true"
+      role="tooltip"
+    >
+      Hello
+    </div>
+  </span>
+</div>
+`;
