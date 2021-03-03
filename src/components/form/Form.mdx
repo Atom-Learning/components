@@ -8,6 +8,83 @@ category: Forms
 `Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic.
 
 `Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
- - `error`: `string` (for validation errors)
- - `register`: `React.ForwardedRef<HTMLInputElement>` (only used internally by the `Form` to keep track of the field's value)
+
+- `error`: `string` (for validation errors)
+- `register`: `React.ForwardedRef<HTMLInputElement>` (only used internally by the `Form` to keep track of the field's value)
 - `validation`: `ValidationOptions` ()
+
+## ValidationOptions
+
+The `ValidationOptions` type provides preset logic for common validation and processing patterns. You can also define your own custom logic.
+
+### Basic validation
+
+The `required` property accepts a `message` and a `value`. `value` is a boolean that represents whether the field is required. That pattern is only necessary when
+deciding dynamically whether to make a field required. If it will also be required, you can pass a `string` containing the error message instead. The following two inputs are equivalent:
+
+```tsx center
+<Form>
+  <InputField name="name" label="Name" validation={{required: {value: true, message: "You must have a name"}}} />
+  <InputField name="name" label="Name" validation={{required: "You must have a name"} />
+  <Button>Submit</Button>
+</Form>
+```
+
+The following properties take a `message` and a `value`:
+
+- `min`
+- `max`
+- `minLength`
+- `maxLength`
+- `pattern`
+
+For example:
+
+```tsx center
+<Form>
+  <InputField type="number" name="numCats" label="Number of cats" validation={{min: {value: 3, message: "You must have at least 3 cats!"}}}/>
+  <InputField name="faveName" label="Favourite cat name" validation={{maxLength: {{value: 20, message: "Cats hate long names!"}}}} />
+  <Button>Submit</Button>
+</Form>
+```
+
+If you pass one of those properties the `value` directly, you'll get a default error message:
+
+```tsx center
+<Form>
+  <InputField type="number" name="numCats" label="Number of cats" validation={{min: 3}/> // The minimum allowed value is 3
+  <InputField name="faveName" label="Favourite cat name" validation={{maxLength: 20}} /> // the maximum allowed length is 20
+  <Button>Submit</Button>
+</Form>
+```
+
+Note that when specifying a `pattern`, the `value` is a `RegExp`. For the other basic properties listed here, `value` is a `number`.
+
+### Custom validation
+
+The `validate` property accepts a function of type `(value: any) => boolean | string`. Its single argument is the current value of the field. It should return `true` if the value passes validation and a `string` containing an error if not.
+
+```tsx center
+<Form>
+  <InputField
+    name="faveVowel"
+    label="Favourite vowel"
+    validation={{
+      validate: (value) =>
+        ['A', 'E', 'I', 'O', 'U'].contains(value) || "That's not a vowel!"
+    }}
+  />
+  <Button>Submit</Button>
+</Form>
+```
+
+### Basic processing
+
+The following properties accept boolean values:
+- `valueAsNumber`
+- `valueAsDate`
+
+These properties only apply to text inputs. If `true`, the value will be converted to the relevant type after validation.
+
+### Custom processing
+The `process` property accepts a function of type `(value: any) => any`. It can be used to process the value after validation.

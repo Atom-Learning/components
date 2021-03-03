@@ -24,7 +24,7 @@ const App = () => {
         name="name"
         label="Name"
         validation={{
-          required: 'Name is a required field'
+          maxLength: 1
         }}
       />
       <Button>Submit</Button>

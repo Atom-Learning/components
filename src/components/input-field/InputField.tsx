@@ -27,25 +27,22 @@ export const InputField: React.FC<InputFieldProps> = ({
   required = false,
   register = null,
   ...remainingProps
-}) => {
-  console.log('error:', error)
-  return (
-    <Box css={css}>
-      <Label css={{ mb: '$1' }} htmlFor={name}>
-        {label}
-        {required && <RedAsterisk />}
-      </Label>
-      <Input
-        css={{ mb: '$1' }}
-        id={name}
-        name={name}
-        ref={register}
-        {...(error && { state: 'error' })}
-        {...remainingProps}
-      />
-      {error && <ValidationError>{error}</ValidationError>}
-    </Box>
-  )
-}
+}) => (
+  <Box css={css}>
+    <Label css={{ mb: '$1' }} htmlFor={name}>
+      {label}
+      {required && <RedAsterisk />}
+    </Label>
+    <Input
+      css={{ mb: '$1' }}
+      id={name}
+      name={name}
+      ref={register}
+      {...(error && { state: 'error' })}
+      {...remainingProps}
+    />
+    {error && <ValidationError>{error}</ValidationError>}
+  </Box>
+)
 
 InputField.displayName = 'InputField'

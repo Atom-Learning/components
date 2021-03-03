@@ -4,26 +4,20 @@ type Validator = (value: any) => boolean | string
 // Processes a value after validation
 type Processor = (value: any) => any
 
-type Option =
-  | string
-  | {
-      value: boolean
-      message: string
-    }
-
-type PatternOption = { value: RegExp; message: string }
+type Option<T> = {
+  value: T
+  message: string
+}
 
 export type ValidationOptions = {
-  required?: Option
-  min?: Option
-  max?: Option
-  minLength?: Option
-  maxLength?: Option
-  pattern?: PatternOption
+  required?: Option<boolean> | string
+  min?: Option<number>
+  max?: Option<number>
+  minLength?: Option<number>
+  maxLength?: Option<number>
+  pattern?: Option<RegExp>
   validate?: Validator | { [key: string]: Validator }
-  valueAsNumber?: boolean
-  valueAsDate?: boolean
-  setValueAs?: Processor
+  process?: Processor
 }
 
 export type ValidationError = {
