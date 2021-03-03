@@ -15,8 +15,20 @@ const App = () => {
   }
 
   return (
-    <Form onSubmit={handleSubmit} css={{ width: '300px', padding: '$2 $3' }}>
-      <InputField name="name" label="Name" />
+    <Form
+      onSubmit={handleSubmit}
+      defaultValues={data}
+      css={{ width: '300px', padding: '$2 $3' }}
+    >
+      <InputField
+        name="name"
+        label="Name"
+        required
+        validation={{
+          validate: (value) => value === 1 || 'name must be 1',
+          maxLength: 1
+        }}
+      />
       <Button>Submit</Button>
     </Form>
   )
