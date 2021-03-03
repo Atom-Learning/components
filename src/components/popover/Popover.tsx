@@ -40,7 +40,11 @@ const getTriangle = (position) => {
   }
 }
 
-const StyledPopover = styled('div', {
+const StyledPopover = styled('span', {
+  position: 'relative'
+})
+
+const StyledPopoverContent = styled('div', {
   boxShadow: '$0',
   borderRadius: '$1',
   backgroundColor: 'white',
@@ -85,52 +89,81 @@ const StyledPopover = styled('div', {
 })
 
 type PopoverProps = Override<
-  React.ComponentPropsWithRef<typeof StyledPopover>,
+  React.ComponentPropsWithRef<
+    typeof StyledPopoverContent & typeof StyledPopover
+  >,
   {
     content: string
     align: 'right' | 'center' | 'left'
     visible: boolean
+    initialState?: boolean
     children: React.ReactNode
   }
 >
 
-// We need a component that can accept a ref for the popover to target
-// TODO: replace with a Box once we make that accept a ref
-const TriggerWrapper = React.forwardRef<
-  HTMLSpanElement,
-  {
-    children: React.ReactNode
-  }
->((props, ref) => <span ref={ref} {...props} />)
-
 export const Popover: React.FC<PopoverProps> = ({
   children,
   content,
-  visible,
   align = 'center',
+  initialState = false,
   ...remainingProps
 }) => {
   const triggerContainerRef = React.useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = React.useState(initialState)
+
+  // need unique ids to enable using multiple popovers in the same page. Here we apply this technique as this is being soon replaced with the Radix-ui popover.
+  const id = `popover-trigger-${Math.random().toString(36).substr(2, 9)}`
+
+  const handleClick = () => {
+    setIsVisible(!isVisible)
+  }
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLSpanElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      setIsVisible(!isVisible)
+    }
+  }
+
+  // We need a component that can accept a ref for the popover to target
+  // TODO: replace with a Box once we make that accept a ref
+  const PopoverTriggerWrapper = React.forwardRef<
+    HTMLSpanElement,
+    {
+      children: React.ReactNode
+    }
+  >((props, ref) => (
+    /*
+     * The wrapper is a span to allow passing any type of trigger element. It can't be button because if the clien
+     * passes a button in then we get an invalid HTML error as <button><button/></button> isn't semantically correct
+     */
+    <span
+      id={id}
+      aria-expanded={isVisible}
+      role="button"
+      tabIndex={0}
+      onClick={handleClick}
+      onKeyPress={handleKeyPress}
+      ref={ref}
+      {...props}
+    />
+  ))
+
   return (
-    <span style={{ position: 'relative' }}>
-      <TriggerWrapper
-        aria-haspopup="true"
-        aria-expanded={visible}
-        ref={triggerContainerRef}
-      >
+    <StyledPopover>
+      <PopoverTriggerWrapper ref={triggerContainerRef}>
         {children}
-      </TriggerWrapper>
-      <StyledPopover
+      </PopoverTriggerWrapper>
+      <StyledPopoverContent
         role="tooltip"
         align={align}
-        aria-hidden={!visible}
-        tabIndex={0}
+        aria-labelledby={id}
+        aria-hidden={!isVisible}
         {...remainingProps}
-        visibility={visible}
+        visibility={isVisible}
       >
         {content}
-      </StyledPopover>
-    </span>
+      </StyledPopoverContent>
+    </StyledPopover>
   )
 }
 
