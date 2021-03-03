@@ -1,18 +1,19 @@
+import 'regenerator-runtime/runtime'
+
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { useForm } from 'react-hook-form'
 import { reset } from 'stitches-reset'
 
-import { Button, globalCss, Input, InputField, Label, getForm } from '../dist'
+import { Button, Form, globalCss, InputField } from '../dist'
 globalCss(reset)()
 
 const App = () => {
-  type Person = { name: string }
-  const Form = getForm<Person>()
+  const data = { name: 'Gary' }
 
-  const handleSubmit = (data: Person) => {
+  const handleSubmit = (data) => {
     console.log('data:', data)
   }
+
   return (
     <Form onSubmit={handleSubmit} css={{ width: '300px', padding: '$2 $3' }}>
       <InputField name="name" label="Name" />

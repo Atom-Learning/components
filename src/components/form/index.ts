@@ -1,1 +1,1 @@
-export { Form, getForm } from './Form'
+export { Form } from './Form'
