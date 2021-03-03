@@ -93,15 +93,16 @@ type PopoverProps = Override<
     typeof StyledPopoverContent & typeof StyledPopover
   >,
   {
+    id?: string
     content: string
     align: 'right' | 'center' | 'left'
-    visible: boolean
     initialState?: boolean
     children: React.ReactNode
   }
 >
 
 export const Popover: React.FC<PopoverProps> = ({
+  id,
   children,
   content,
   align = 'center',
@@ -112,14 +113,17 @@ export const Popover: React.FC<PopoverProps> = ({
   const [isVisible, setIsVisible] = React.useState(initialState)
 
   // need unique ids to enable using multiple popovers in the same page. Here we apply this technique as this is being soon replaced with the Radix-ui popover.
-  const id = `popover-trigger-${Math.random().toString(36).substr(2, 9)}`
+  const popoverId = `popover-trigger-${
+    id || Math.random().toString(36).substr(2, 9)
+  }`
 
   const handleClick = () => {
     setIsVisible(!isVisible)
   }
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLSpanElement>) => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.keyCode !== undefined && (e.keyCode === 32 || e.keyCode === 13)) {
+      // Handle the event with KeyboardEvent.keyCode for browsers still using e.keyCode
       setIsVisible(!isVisible)
     }
   }
@@ -137,10 +141,11 @@ export const Popover: React.FC<PopoverProps> = ({
      * passes a button in then we get an invalid HTML error as <button><button/></button> isn't semantically correct
      */
     <span
-      id={id}
+      id={popoverId}
       aria-expanded={isVisible}
       role="button"
       tabIndex={0}
+      aria-label="popover trigger"
       onClick={handleClick}
       onKeyPress={handleKeyPress}
       ref={ref}
@@ -149,16 +154,15 @@ export const Popover: React.FC<PopoverProps> = ({
   ))
 
   return (
-    <StyledPopover>
+    <StyledPopover {...remainingProps}>
       <PopoverTriggerWrapper ref={triggerContainerRef}>
         {children}
       </PopoverTriggerWrapper>
       <StyledPopoverContent
         role="tooltip"
         align={align}
-        aria-labelledby={id}
+        aria-labelledby={popoverId}
         aria-hidden={!isVisible}
-        {...remainingProps}
         visibility={isVisible}
       >
         {content}

@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover component renders a child with the popover hidden 1`] = `
+exports[`Popover component doesn't open popover using the keypress with random key press 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
 .sxc30pd {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
@@ -67,55 +71,17 @@ exports[`Popover component renders a child with the popover hidden 1`] = `
   visibility: visible;
 }
 
-.sxc30pd7rrb2--align-left::after {
-  border-style: solid;
-  border-color: transparent;
-  content: '';
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  width: 0;
-  border-top-color: white;
-  border-width: 8px;
-  margin-left: -8px;
-}
-
-.sxc30pd7rrb2--align-left::after {
-  left: 40px;
-}
-
-.sxc30pd7rrb2--align-left::before {
-  border-style: solid;
-  border-color: transparent;
-  content: '';
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 100%;
-  width: 0;
-  border-top-color: var(--colors-tonal400);
-  border-width: 9px;
-  margin-left: -9px;
-}
-
-.sxc30pd7rrb2--align-left::before {
-  left: 40px;
-}
-
-.sxc30pd7rrb2--align-left {
-  left: 0;
-  transform-origin: 60px bottom;
-  transform: translate(-20px, var(--2)) scale(0.9);
-}
-
 <div>
   <span
-    style="position: relative;"
+    aria-label="Popover"
+    class="sx2v396"
   >
     <span
       aria-expanded="false"
-      aria-haspopup="true"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
     >
       <button>
         Click me
@@ -123,10 +89,9 @@ exports[`Popover component renders a child with the popover hidden 1`] = `
     </span>
     <div
       aria-hidden="true"
-      aria-label="Popover"
+      aria-labelledby="popover-trigger-123"
       class="sxc30pd sxc30pdpuxrx--align-center"
       role="tooltip"
-      tabindex="0"
     >
       Content
     </div>
@@ -134,7 +99,11 @@ exports[`Popover component renders a child with the popover hidden 1`] = `
 </div>
 `;
 
-exports[`Popover component renders a visible popover with content only 1`] = `
+exports[`Popover component opens popover using the space key 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
 .sxc30pd {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
@@ -203,18 +172,25 @@ exports[`Popover component renders a visible popover with content only 1`] = `
 
 <div>
   <span
-    style="position: relative;"
+    aria-label="Popover"
+    class="sx2v396"
   >
     <span
-      aria-expanded="true"
-      aria-haspopup="true"
-    />
-    <div
-      aria-hidden="false"
-      aria-label="Popover with text"
-      class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
-      role="tooltip"
+      aria-expanded="false"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
       tabindex="0"
+    >
+      <button>
+        Click me
+      </button>
+    </span>
+    <div
+      aria-hidden="true"
+      aria-labelledby="popover-trigger-123"
+      class="sxc30pd sxc30pdpuxrx--align-center"
+      role="tooltip"
     >
       Content
     </div>
@@ -222,7 +198,11 @@ exports[`Popover component renders a visible popover with content only 1`] = `
 </div>
 `;
 
-exports[`Popover component renders a visible popover with no content and no children  1`] = `
+exports[`Popover component opens the popover once trigger is clicked 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
 .sxc30pd {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
@@ -291,24 +271,37 @@ exports[`Popover component renders a visible popover with no content and no chil
 
 <div>
   <span
-    style="position: relative;"
+    aria-label="Popover"
+    class="sx2v396"
   >
     <span
       aria-expanded="true"
-      aria-haspopup="true"
-    />
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
+    >
+      <button>
+        Click me
+      </button>
+    </span>
     <div
       aria-hidden="false"
-      aria-label="Empty popover"
+      aria-labelledby="popover-trigger-123"
       class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
       role="tooltip"
-      tabindex="0"
-    />
+    >
+      Content
+    </div>
   </span>
 </div>
 `;
 
-exports[`Popover component renders popover with the align left variant 1`] = `
+exports[`Popover component renders as visible with left variant 1`] = `
+.sx2v396 {
+  position: relative;
+}
+
 .sxc30pd {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
@@ -419,18 +412,21 @@ exports[`Popover component renders popover with the align left variant 1`] = `
 
 <div>
   <span
-    style="position: relative;"
+    aria-label="Some text"
+    class="sx2v396"
   >
     <span
       aria-expanded="true"
-      aria-haspopup="true"
+      aria-label="popover trigger"
+      id="popover-trigger-123"
+      role="button"
+      tabindex="0"
     />
     <div
       aria-hidden="false"
-      aria-label="Some text"
+      aria-labelledby="popover-trigger-123"
       class="sxc30pd sxc30pd7rrb2--align-left sxc30pdx07u8--visibility-true"
       role="tooltip"
-      tabindex="0"
     >
       Hello
     </div>
