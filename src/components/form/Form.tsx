@@ -28,7 +28,11 @@ export const Form: React.FC<FormProps> = ({
   })
 
   return (
-    <StyledForm {...remainingProps} onSubmit={handleSubmit(onSubmit)}>
+    <StyledForm
+      {...remainingProps}
+      onSubmit={handleSubmit(onSubmit)}
+      aria-label="form"
+    >
       {React.Children.map(children, (child: React.ReactElement) => {
         const { name, validation } = child.props
 

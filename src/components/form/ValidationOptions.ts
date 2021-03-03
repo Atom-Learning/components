@@ -17,6 +17,8 @@ export type ValidationOptions = {
   maxLength?: Option<number>
   pattern?: Option<RegExp>
   validate?: Validator | { [key: string]: Validator }
+  valueAsNumber?: boolean
+  valueAsDate?: boolean
   process?: Processor
 }
 
