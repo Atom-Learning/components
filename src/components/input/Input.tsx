@@ -55,8 +55,8 @@ export const Input: React.FC<InputProps> = React.forwardRef(
           type="text"
           inputMode="numeric"
           pattern="[0-9]*"
-          {...rest}
           ref={ref}
+          {...rest}
         />
       )
     }
