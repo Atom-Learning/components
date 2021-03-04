@@ -44,10 +44,10 @@ export const Form: React.FC<FormProps> = ({
         return React.createElement(child.type, {
           ...{
             ...child.props,
-            error: fieldError?.message,
+            error: fieldError ? fieldError.message : undefined,
             register: validation ? register(validation) : register,
             key: name,
-            required: !!validation?.required
+            required: validation ? validation.required : false
           }
         })
       })}
