@@ -22,7 +22,7 @@ describe(`Form component`, () => {
 
   it('passes error messages to fields', async () => {
     render(
-      <Form onSubmit={console.log}>
+      <Form onSubmit={jest.fn()}>
         <InputField
           name="name"
           label="Name"
