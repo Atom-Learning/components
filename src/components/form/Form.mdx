@@ -10,7 +10,7 @@ category: Forms
 `Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
 
 - `error`: `string` (for validation errors)
-- `register`: `React.ForwardedRef<HTMLInputElement>` (only used internally by the `Form` to keep track of the field's value)
+- `register`: `React.ForwardedRef<HTML*Element>` (e.g. `React.ForwardedRef<HTMLInputElement>` or `React.ForwardedRef<HTMLSelectElement>` depending on what your field renders. Only used internally by the `Form` to keep track of the field's value)
 - `validation`: `ValidationOptions` ()
 
 ## ValidationOptions
