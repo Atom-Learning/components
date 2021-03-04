@@ -9,7 +9,7 @@ import { Form } from '.'
 describe(`Form component`, () => {
   it('renders a form', async () => {
     const { container } = render(
-      <Form onSubmit={console.log}>
+      <Form onSubmit={jest.fn()}>
         <InputField name="name" label="Name" />
       </Form>
     )
