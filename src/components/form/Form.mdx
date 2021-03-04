@@ -20,7 +20,7 @@ The `ValidationOptions` type provides preset logic for common validation and pro
 ### Basic validation
 
 The `required` property accepts a `message` and a `value`. `value` is a boolean that represents whether the field is required. That pattern is only necessary when
-deciding dynamically whether to make a field required. If it will also be required, you can pass a `string` containing the error message instead. The following two inputs are equivalent:
+deciding dynamically whether to make a field required. If it will always be required, you can pass a `string` containing the error message instead. The following two inputs are equivalent:
 
 ```tsx center
 <Form>
@@ -29,6 +29,9 @@ deciding dynamically whether to make a field required. If it will also be requir
   <Button>Submit</Button>
 </Form>
 ```
+
+If a field is set to be required in this way, the component will also be passed a `required` boolean prop automatically, so that's what our fields use to determine whether or not
+to show an asterisk next to the label.
 
 The following properties take a `message` and a `value`:
 
@@ -81,10 +84,12 @@ The `validate` property accepts a function of type `(value: any) => boolean | st
 ### Basic processing
 
 The following properties accept boolean values:
+
 - `valueAsNumber`
 - `valueAsDate`
 
 These properties only apply to text inputs. If `true`, the value will be converted to the relevant type after validation.
 
 ### Custom processing
+
 The `process` property accepts a function of type `(value: any) => any`. It can be used to process the value after validation.
