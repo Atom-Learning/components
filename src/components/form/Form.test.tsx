@@ -3,8 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Button, InputField } from '~/components/'
-
+import { Button, InputField } from '../'
 import { Form } from '.'
 
 describe(`Form component`, () => {
