@@ -51,16 +51,6 @@ For example:
 </Form>
 ```
 
-If you pass one of those properties the `value` directly, you'll get a default error message:
-
-```tsx center
-<Form>
-  <InputField type="number" name="numCats" label="Number of cats" validation={{min: 3}/> // The minimum allowed value is 3
-  <InputField name="faveName" label="Favourite cat name" validation={{maxLength: 20}} /> // the maximum allowed length is 20
-  <Button>Submit</Button>
-</Form>
-```
-
 Note that when specifying a `pattern`, the `value` is a `RegExp`. For the other basic properties listed here, `value` is a `number`.
 
 ### Custom validation
