@@ -62,6 +62,17 @@ const StyledButton = styled('button', {
     opacity: 0.35,
     cursor: 'not-allowed'
   },
+  '&.isLoading': {
+    cursor: 'not-allowed',
+    opacity: 0.5
+  },
+  '&:not(.isLoading) span': {
+    opacity: 0,
+    transition: 'opacity 100ms ease-out'
+  },
+  '&.isLoading span': {
+    opacity: 1
+  },
   variants: {
     theme: {
       primary: {},
@@ -129,15 +140,12 @@ const StyledButton = styled('button', {
   ]
 })
 
-// TODO: missing transition
-// TODO: missing test
-// TODO: MISSING doc
-
 type ButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledButton> &
     StitchesVariants<typeof StyledButton>,
   {
     isLoading?: boolean
+    onClick: () => void
   }
 >
 
@@ -146,11 +154,29 @@ export const Button: React.FC<ButtonProps> = ({
   appearance = 'solid',
   isLoading = false,
   children,
+  onClick,
   ...rest
-}) => (
-  <StyledButton theme={theme} appearance={appearance} {...rest}>
-    {isLoading ? <Loader /> : children}
-  </StyledButton>
-)
+}) => {
+  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired
+  const handleClick = (callback) => {
+    if (isLoading) {
+      return
+    }
+
+    callback()
+  }
+
+  return (
+    <StyledButton
+      className={isLoading ? 'isLoading' : ''}
+      theme={theme}
+      appearance={appearance}
+      onClick={() => handleClick(onClick)}
+      {...rest}
+    >
+      {isLoading ? <Loader /> : children}
+    </StyledButton>
+  )
+}
 
 Button.displayName = 'Button'
