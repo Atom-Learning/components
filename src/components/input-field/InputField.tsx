@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Box } from '~/components/box'
-import { ValidationOptions } from '~/components/form/ValidationOptions'
+import { ValidationOptions } from '~/components/form/validation'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
@@ -16,8 +16,8 @@ type InputFieldProps = InputProps & {
   validation?: ValidationOptions
 }
 
-const RedSpan = styled('span', { color: '$danger' })
-const RedAsterisk = () => <RedSpan>*</RedSpan>
+const StyledAsteriskWrapper = styled('span', { color: '$danger' })
+const StyledAsterisk = () => <StyledAsteriskWrapper>*</StyledAsteriskWrapper>
 
 export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
@@ -31,7 +31,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   <Box css={css}>
     <Label css={{ mb: '$1' }} htmlFor={name}>
       {label}
-      {required && <RedAsterisk />}
+      {required && <StyledAsterisk />}
     </Label>
     <Input
       css={{ mb: '$1' }}

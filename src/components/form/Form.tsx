@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
-import { ValidationError, ValidationOptions } from './ValidationOptions'
+import { getErrorMessage, ValidationError } from './validation'
 
 const StyledForm = styled('form', {})
 
@@ -44,7 +44,9 @@ export const Form: React.FC<FormProps> = ({
         return React.createElement(child.type, {
           ...{
             ...child.props,
-            error: fieldError ? getError(fieldError, validation) : undefined,
+            error: fieldError
+              ? getErrorMessage(fieldError, validation)
+              : undefined,
             register: validation ? register(validation) : register,
             key: name,
             required: !!validation.required
@@ -56,27 +58,3 @@ export const Form: React.FC<FormProps> = ({
 }
 
 Form.displayName = 'Form'
-
-const getError = (
-  error: ValidationError,
-  validationOptions: ValidationOptions
-): string => {
-  console.log('error in getError:', error)
-  if (error.message) return error.message
-
-  switch (error.type) {
-    case 'required':
-      return 'This field is required'
-    case 'max':
-      return `The maximum allowed value is ${validationOptions.max}`
-    case 'maxLength':
-      return `The maximum allowed length is ${validationOptions.maxLength}`
-    case 'min':
-      return `The minimum allowed value is ${validationOptions.min}`
-    case 'minLength':
-      return `The minimum allowed length is ${validationOptions.minLength}`
-
-    default:
-      return 'There is an error with this field'
-  }
-}

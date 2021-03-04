@@ -33,3 +33,27 @@ export type ValidationError = {
     | 'pattern'
     | 'validate'
 }
+
+export const getErrorMessage = (
+  error: ValidationError,
+  validationOptions: ValidationOptions
+): string => {
+  console.log('error in getError:', error)
+  if (error.message) return error.message
+
+  switch (error.type) {
+    case 'required':
+      return 'This field is required'
+    case 'max':
+      return `The maximum allowed value is ${validationOptions.max}`
+    case 'maxLength':
+      return `The maximum allowed length is ${validationOptions.maxLength}`
+    case 'min':
+      return `The minimum allowed value is ${validationOptions.min}`
+    case 'minLength':
+      return `The minimum allowed length is ${validationOptions.minLength}`
+
+    default:
+      return 'There is an error with this field'
+  }
+}
