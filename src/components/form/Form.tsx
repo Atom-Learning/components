@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
-import { getErrorMessage, ValidationError } from './validation'
+import { ValidationError } from './validation'
 
 const StyledForm = styled('form', {})
 
@@ -44,12 +44,10 @@ export const Form: React.FC<FormProps> = ({
         return React.createElement(child.type, {
           ...{
             ...child.props,
-            error: fieldError
-              ? getErrorMessage(fieldError, validation)
-              : undefined,
+            error: fieldError?.message,
             register: validation ? register(validation) : register,
             key: name,
-            required: !!validation.required
+            required: !!validation?.required
           }
         })
       })}
