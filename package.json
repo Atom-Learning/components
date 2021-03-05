@@ -3,11 +3,14 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "1.0.0",
+  "version": "0.1.0-alpha.0",
   "description": "",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
-    "build:lib": "NODE_ENV=production rollup -c && tsc -d",
+    "build:lib": "NODE_ENV=production rollup -c && tsc --emitDeclarationOnly",
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
     "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
@@ -87,6 +90,7 @@
     "rollup": "^2.39.0",
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-url": "^3.0.1",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.2.1-rc",
