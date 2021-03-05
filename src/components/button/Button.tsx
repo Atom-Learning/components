@@ -3,7 +3,6 @@ import * as React from 'react'
 
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
@@ -140,14 +139,11 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ButtonProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledButton> &
-    StitchesVariants<typeof StyledButton>,
-  {
+type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
+  StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
     onClick: () => void
   }
->
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
