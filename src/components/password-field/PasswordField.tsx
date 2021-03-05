@@ -9,11 +9,20 @@ import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import { styled } from '~/stitches'
 
-type PasswordFieldProps = InputProps & { label: string }
+type PasswordFieldProps = InputProps & {
+  label?: string
+  register?: React.ForwardedRef<HTMLInputElement>
+  error?: string
+  forgotPasswordURL?: string
+  required?: boolean
+}
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
+  label = 'Password',
   name = 'password',
+  forgotPasswordURL = undefined,
+  required = false,
   ...remainingProps
 }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
@@ -31,13 +40,13 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           fontSize: 'sm'
         }}
       >
-        <Label htmlFor={name}> Password</Label>
-        <Link
-          href="https://app.atomlearning.co.uk/forgotten"
-          css={{ fontSize: '$sm' }}
-        >
-          Forgot your password?
-        </Link>
+        {/* TODO: standardise asterisk -- should this be an option in the Label component? */}
+        <Label htmlFor={name}>{`${label} ${required ? '*' : ''}`}</Label>
+        {forgotPasswordURL && (
+          <Link href={forgotPasswordURL} css={{ fontSize: '$sm' }}>
+            Forgot your password?
+          </Link>
+        )}
       </Flex>
 
       <Input
