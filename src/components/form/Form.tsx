@@ -13,6 +13,7 @@ type FormProps = Override<
   {
     defaultValues?: { [key: string]: string | number }
     onSubmit: (data: any) => void
+    validationMode: 'onBlur' | 'onSubmit'
   }
 >
 
@@ -20,11 +21,12 @@ export const Form: React.FC<FormProps> = ({
   children,
   defaultValues = {},
   onSubmit,
+  validationMode = 'onBlur',
   ...remainingProps
 }) => {
   const { errors, handleSubmit, register } = useForm({
     defaultValues,
-    mode: 'onBlur'
+    mode: validationMode
   })
 
   return (

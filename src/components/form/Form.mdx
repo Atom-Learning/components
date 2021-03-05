@@ -5,7 +5,7 @@ description: Form abstracts form validation logic away from the view code
 category: Forms
 ---
 
-`Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic.
+`Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic. When validation happens depends on the `validationMode` prop, which accepts `"onBlur" | "onSubmit"` and defaults to `"onBlur"`.
 
 `Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
 
