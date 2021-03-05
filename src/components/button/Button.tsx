@@ -1,6 +1,7 @@
 import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
+import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -59,6 +60,17 @@ const StyledButton = styled('button', {
   '&[disabled]': {
     opacity: 0.35,
     cursor: 'not-allowed'
+  },
+  '&.isLoading': {
+    cursor: 'not-allowed',
+    opacity: 0.5
+  },
+  '&:not(.isLoading) span': {
+    opacity: 0,
+    transition: 'opacity 100ms ease-out'
+  },
+  '&.isLoading span': {
+    opacity: 1
   },
   variants: {
     theme: {
@@ -128,12 +140,39 @@ const StyledButton = styled('button', {
 })
 
 type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
-  StitchesVariants<typeof StyledButton>
+  StitchesVariants<typeof StyledButton> & {
+    isLoading?: boolean
+    onClick: () => void
+  }
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
   appearance = 'solid',
+  isLoading = false,
+  children,
+  onClick,
   ...rest
-}) => <StyledButton theme={theme} appearance={appearance} {...rest} />
+}) => {
+  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired and the button looks faded
+  const handleClick = (callback) => {
+    if (isLoading) {
+      return
+    }
+
+    callback()
+  }
+
+  return (
+    <StyledButton
+      className={isLoading ? 'isLoading' : ''}
+      theme={theme}
+      appearance={appearance}
+      onClick={() => handleClick(onClick)}
+      {...rest}
+    >
+      {isLoading ? <Loader /> : children}
+    </StyledButton>
+  )
+}
 
 Button.displayName = 'Button'
