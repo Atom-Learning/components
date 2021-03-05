@@ -153,7 +153,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   ...rest
 }) => {
-  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired
+  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired and the button looks faded
   const handleClick = (callback) => {
     if (isLoading) {
       return

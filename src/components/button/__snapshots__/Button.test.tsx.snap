@@ -1,5 +1,208 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component Loading state renders a loading button 1`] = `
+@keyframes sxwho2l {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs5323as4--css {
+  justify-content: center;
+}
+
+.sx0yv19 {
+  animation-name: sxwho2l;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: currentColor;
+  border-radius: 100%;
+}
+
+.sx0yv19:nth-child(1) {
+  animation-delay: -300ms;
+}
+
+.sx0yv19:nth-child(2) {
+  animation-delay: -150ms;
+}
+
+.sx0yv19:nth-child(3) {
+  animation-delay: 0;
+}
+
+.sx0yv194btw3--size-md {
+  height: 6px;
+  width: 6px;
+}
+
+.sx0yv194btw3--size-md {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.sxcqr6b {
+  background: unset;
+  border: none;
+  border-radius: var(--radii-0);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonts-sans);
+  font-size: var(--fontSizes-md);
+  font-weight: 500;
+  height: var(--sizes-2);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  transition: all 125ms ease-out;
+  text-decoration: none;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxcqr6b {
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+.sxcqr6b {
+  white-space: nowrap;
+  width: max-content;
+}
+
+.sxcqr6b[disabled] {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.sxcqr6b.isLoading {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.sxcqr6b:not(.isLoading) span {
+  opacity: 0;
+  transition: opacity 100ms ease-out;
+}
+
+.sxcqr6b.isLoading span {
+  opacity: 1;
+}
+
+.sxcqr6bxyrog--comp {
+  background-color: var(--colors-primary500);
+  color: white;
+}
+
+.sxcqr6bxyrog--comp:not([disabled]):hover,
+.sxcqr6bxyrog--comp:not([disabled]):focus {
+  background-color: var(--colors-primary900);
+}
+
+.sxcqr6bxyrog--comp:active {
+  background-color: var(--colors-primary500);
+}
+
+.sxcqr6bxyrog--comp[disabled] {
+  background-color: var(--colors-tonal300);
+  color: var(--colors-tonal600);
+}
+
+.sxcqr6b8heda--comp {
+  box-shadow: inset 0 0 0 2px;
+  color: var(--colors-primary500);
+  background-color: white;
+}
+
+.sxcqr6b8heda--comp:not([disabled]):hover,
+.sxcqr6b8heda--comp:not([disabled]):focus {
+  text-decoration: none;
+  color: var(--colors-primary900);
+  background-color: white;
+}
+
+.sxcqr6b8heda--comp:active {
+  color: var(--colors-primary500);
+}
+
+.sxcqr6b8heda--comp[disabled] {
+  background-color: white;
+  color: var(--colors-primary900);
+}
+
+.sxcqr6b08yia--comp {
+  box-shadow: inset 0 0 0 2px;
+  color: var(--colors-secondary500);
+  background-color: white;
+}
+
+.sxcqr6b08yia--comp:not([disabled]):hover,
+.sxcqr6b08yia--comp:not([disabled]):focus {
+  text-decoration: none;
+  color: var(--colors-secondary900);
+  background-color: white;
+}
+
+.sxcqr6b08yia--comp:active {
+  color: var(--colors-secondary500);
+}
+
+.sxcqr6b08yia--comp[disabled] {
+  background-color: white;
+  color: var(--colors-secondary900);
+}
+
+<div>
+  <button
+    class="sxcqr6b isLoading sxcqr6bxyrog--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-solid"
+  >
+    <div
+      class="sx2cs53 sx2cs5323as4--css"
+      role="alert"
+    >
+      <span
+        data-radix-visually-hidden=""
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        Loading
+      </span>
+      <div
+        class="sx0yv19 sx0yv194btw3--size-md"
+      />
+      <div
+        class="sx0yv19 sx0yv194btw3--size-md"
+      />
+      <div
+        class="sx0yv19 sx0yv194btw3--size-md"
+      />
+    </div>
+  </button>
+</div>
+`;
+
 exports[`Button component renders a button 1`] = `
 @keyframes sxwho2l {
   0% {
@@ -364,209 +567,6 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
     disabled=""
   >
     BUTTON
-  </button>
-</div>
-`;
-
-exports[`Button component renders a loading button 1`] = `
-@keyframes sxwho2l {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs5323as4--css {
-  justify-content: center;
-}
-
-.sx0yv19 {
-  animation-name: sxwho2l;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  background-color: currentColor;
-  border-radius: 100%;
-}
-
-.sx0yv19:nth-child(1) {
-  animation-delay: -300ms;
-}
-
-.sx0yv19:nth-child(2) {
-  animation-delay: -150ms;
-}
-
-.sx0yv19:nth-child(3) {
-  animation-delay: 0;
-}
-
-.sx0yv194btw3--size-md {
-  height: 6px;
-  width: 6px;
-}
-
-.sx0yv194btw3--size-md {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.sxcqr6b {
-  background: unset;
-  border: none;
-  border-radius: var(--radii-0);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
-  font-weight: 500;
-  height: var(--sizes-2);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  transition: all 125ms ease-out;
-  text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-}
-
-.sxcqr6b {
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
-}
-
-.sxcqr6b {
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxcqr6b[disabled] {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-.sxcqr6b.isLoading {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.sxcqr6b:not(.isLoading) span {
-  opacity: 0;
-  transition: opacity 100ms ease-out;
-}
-
-.sxcqr6b.isLoading span {
-  opacity: 1;
-}
-
-.sxcqr6bxyrog--comp {
-  background-color: var(--colors-primary500);
-  color: white;
-}
-
-.sxcqr6bxyrog--comp:not([disabled]):hover,
-.sxcqr6bxyrog--comp:not([disabled]):focus {
-  background-color: var(--colors-primary900);
-}
-
-.sxcqr6bxyrog--comp:active {
-  background-color: var(--colors-primary500);
-}
-
-.sxcqr6bxyrog--comp[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
-}
-
-.sxcqr6b8heda--comp {
-  box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
-  background-color: white;
-}
-
-.sxcqr6b8heda--comp:not([disabled]):hover,
-.sxcqr6b8heda--comp:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--colors-primary900);
-  background-color: white;
-}
-
-.sxcqr6b8heda--comp:active {
-  color: var(--colors-primary500);
-}
-
-.sxcqr6b8heda--comp[disabled] {
-  background-color: white;
-  color: var(--colors-primary900);
-}
-
-.sxcqr6b08yia--comp {
-  box-shadow: inset 0 0 0 2px;
-  color: var(--colors-secondary500);
-  background-color: white;
-}
-
-.sxcqr6b08yia--comp:not([disabled]):hover,
-.sxcqr6b08yia--comp:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--colors-secondary900);
-  background-color: white;
-}
-
-.sxcqr6b08yia--comp:active {
-  color: var(--colors-secondary500);
-}
-
-.sxcqr6b08yia--comp[disabled] {
-  background-color: white;
-  color: var(--colors-secondary900);
-}
-
-<div>
-  <button
-    class="sxcqr6b isLoading sxcqr6bxyrog--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-solid"
-  >
-    <div
-      class="sx2cs53 sx2cs5323as4--css"
-      role="alert"
-    >
-      <span
-        data-radix-visually-hidden=""
-        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-      >
-        Loading
-      </span>
-      <div
-        class="sx0yv19 sx0yv194btw3--size-md"
-      />
-      <div
-        class="sx0yv19 sx0yv194btw3--size-md"
-      />
-      <div
-        class="sx0yv19 sx0yv194btw3--size-md"
-      />
-    </div>
   </button>
 </div>
 `;
