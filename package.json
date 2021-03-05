@@ -52,6 +52,7 @@
     "@svgr/rollup": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.8.1",
     "@types/jest": "^26.0.20",
     "@types/jest-axe": "^3.5.1",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
