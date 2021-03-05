@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders a form 1`] = `
+@keyframes sxwho2l {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.sxfigyv {
+  appearance: none;
+  border: 1px solid var(--colors-tonal500);
+  border-radius: var(--radii-0);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--colors-tonal900);
+  cursor: text;
+  display: block;
+  font-family: var(--fonts-sans);
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-2);
+  width: 100%;
+  padding: var(--space-3);
+}
+
+.sxfigyv {
+  transition: all 100ms ease-out;
+}
+
+.sxfigyv:focus {
+  border-color: var(--colors-primary900);
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
+  outline: none;
+}
+
+.sxfigyv[disabled] {
+  background-color: var(--colors-tonal300);
+  color: var(--colors-tonal700);
+  cursor: not-allowed;
+}
+
+.sxfigyvysvs0--css {
+  margin-bottom: var(--space-1);
+}
+
+.sxhmjku {
+  color: var(--colors-secondary300);
+  display: block;
+  font-family: var(--fonts-sans);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.sxhmjkuvs8z6--size-md {
+  font-size: var(--fontSizes-md);
+}
+
+.sxhmjkuysvs0--css {
+  margin-bottom: var(--space-1);
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="sx03kze"
+  >
+    <div
+      class="sx03kze"
+    >
+      <label
+        class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
+        for="name"
+      >
+        Name
+      </label>
+      <input
+        class="sxfigyv sxfigyvysvs0--css"
+        id="name"
+        name="name"
+        type="text"
+      />
+    </div>
+  </form>
+</div>
+`;

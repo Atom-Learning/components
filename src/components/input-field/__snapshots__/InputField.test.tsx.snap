@@ -71,7 +71,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
       for="INPUT FIELD"
     >
-      INPUT FIELD 
+      INPUT FIELD
     </label>
     <input
       class="sxfigyv sxfigyvysvs0--css"
@@ -157,7 +157,7 @@ exports[`InputField component renders a field with a text input 1`] = `
       class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
       for="INPUT FIELD"
     >
-      INPUT FIELD 
+      INPUT FIELD
     </label>
     <input
       class="sxfigyv sxfigyvysvs0--css"
