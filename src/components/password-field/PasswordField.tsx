@@ -9,11 +9,16 @@ import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import { styled } from '~/stitches'
 
+type Prompt = {
+  label: string
+  link: string
+}
+
 type PasswordFieldProps = InputProps & {
   label?: string
+  prompt?: Prompt
   register?: React.ForwardedRef<HTMLInputElement>
   error?: string
-  forgotPasswordURL?: string
   required?: boolean
 }
 
@@ -21,7 +26,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
   label = 'Password',
   name = 'password',
-  forgotPasswordURL = undefined,
+  prompt = undefined,
   required = false,
   ...remainingProps
 }) => {
@@ -42,9 +47,9 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
       >
         {/* TODO: standardise asterisk -- should this be an option in the Label component? */}
         <Label htmlFor={name}>{`${label} ${required ? '*' : ''}`}</Label>
-        {forgotPasswordURL && (
-          <Link href={forgotPasswordURL} css={{ fontSize: '$sm' }}>
-            Forgot your password?
+        {prompt && (
+          <Link href={prompt.link} css={{ fontSize: '$sm' }}>
+            {prompt.label}
           </Link>
         )}
       </Flex>
