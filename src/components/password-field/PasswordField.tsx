@@ -47,15 +47,13 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         css={{
           justifyContent: 'space-between',
           alignItems: 'center',
-          mb: '$1',
-          fontFamily: 'sans',
-          fontSize: 'sm'
+          mb: '$1'
         }}
       >
         {/* TODO: standardise asterisk -- should this be an option in the Label component? */}
         <Label htmlFor={name}>{`${label} ${required ? '*' : ''}`}</Label>
         {prompt && (
-          <Link href={prompt.link} css={{ fontSize: '$sm' }}>
+          <Link href={prompt.link} size="sm">
             {prompt.label}
           </Link>
         )}
@@ -63,7 +61,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
       <Input
         type={isPasswordVisible ? 'text' : 'password'}
-        css={{ mb: '$1', paddingRight: 24 }}
+        css={{ mb: '$1', pr: 24 }} // input padding to offset the exact size of the icon
         autoComplete="current-password"
         name={name}
         id={name}
