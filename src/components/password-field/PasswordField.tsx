@@ -55,6 +55,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         autoComplete="current-password"
         name={name}
         id={name}
+        required={required}
         {...remainingProps}
       />
       <InvisibleButton
