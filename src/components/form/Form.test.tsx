@@ -34,7 +34,9 @@ describe(`Form component`, () => {
           name="password"
           validation={{ required: 'Password is required' }}
         />
-        <Button onClick={jest.fn()}>Submit</Button>
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
       </Form>
     )
 

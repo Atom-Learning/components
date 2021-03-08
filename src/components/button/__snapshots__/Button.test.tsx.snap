@@ -178,6 +178,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 <div>
   <button
     class="sxcqr6b isLoading sxcqr6bxyrog--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-solid"
+    type="button"
   >
     <div
       class="sx2cs53 sx2cs5323as4--css"
@@ -297,6 +298,7 @@ exports[`Button component renders a button 1`] = `
 <div>
   <button
     class="sxcqr6b  sxcqr6bxyrog--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-solid"
+    type="button"
   >
     BUTTON
   </button>
@@ -420,6 +422,7 @@ exports[`Button component renders a disabled button 1`] = `
   <button
     class="sxcqr6b  sxcqr6bxyrog--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-solid"
     disabled=""
+    type="button"
   >
     BUTTON
   </button>
@@ -565,6 +568,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   <button
     class="sxcqr6b  sxcqr6b08yia--comp sxcqr6b03kze--theme-secondary sxcqr6b03kze--appearance-outline"
     disabled=""
+    type="button"
   >
     BUTTON
   </button>
@@ -687,6 +691,7 @@ exports[`Button component renders a outline button 1`] = `
 <div>
   <button
     class="sxcqr6b  sxcqr6b8heda--comp sxcqr6b03kze--theme-primary sxcqr6b03kze--appearance-outline"
+    type="button"
   >
     BUTTON
   </button>
