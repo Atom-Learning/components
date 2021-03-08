@@ -40,21 +40,29 @@ const StyledInput = styled('input', {
 // override default 'type' property to prevent Input from being used to render
 // checkboxes, radios etc — we will have dedicated components for them
 export type InputProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledInput>,
+  React.ComponentProps<typeof StyledInput>,
   {
     as?: never
     type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }
 >
 
-export const Input: React.FC<InputProps> = ({ type = 'text', ...rest }) => {
-  if (type === 'number') {
-    return (
-      <StyledInput type="text" inputMode="numeric" pattern="[0-9]*" {...rest} />
-    )
-  }
+export const Input: React.FC<InputProps> = React.forwardRef(
+  ({ type = 'text', ...rest }, ref) => {
+    if (type === 'number') {
+      return (
+        <StyledInput
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          ref={ref}
+          {...rest}
+        />
+      )
+    }
 
-  return <StyledInput type={type} {...rest} />
-}
+    return <StyledInput type={type} {...rest} ref={ref} />
+  }
+)
 
 Input.displayName = 'Input'
