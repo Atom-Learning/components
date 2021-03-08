@@ -7,6 +7,7 @@ import { Eye, EyeOff, Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
+import { ValidationError } from '~/components/validation-error'
 import { styled } from '~/stitches'
 
 type Prompt = {
@@ -17,6 +18,8 @@ type Prompt = {
 type PasswordFieldProps = InputProps & {
   label?: string
   prompt?: Prompt
+  hidePasswordText?: string
+  showPasswordText?: string
   register?: React.ForwardedRef<HTMLInputElement>
   error?: string
   required?: boolean
@@ -24,10 +27,14 @@ type PasswordFieldProps = InputProps & {
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
+  error = '',
   label = 'Password',
   name = 'password',
+  hidePasswordText = 'Hide password',
+  showPasswordText = 'Show password',
   prompt = undefined,
   required = false,
+  register = undefined,
   ...remainingProps
 }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
@@ -61,14 +68,16 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         name={name}
         id={name}
         required={required}
+        ref={register}
         {...remainingProps}
       />
       <InvisibleButton
         onClick={togglePasswordVisibility}
-        aria-label={isPasswordVisible ? 'Hide password' : 'Show password'}
+        aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
       >
         <Icon is={isPasswordVisible ? Eye : EyeOff} />
       </InvisibleButton>
+      {error && <ValidationError>{error}</ValidationError>}
     </Box>
   )
 }

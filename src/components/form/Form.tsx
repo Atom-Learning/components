@@ -36,20 +36,20 @@ export const Form: React.FC<FormProps> = ({
       aria-label="form"
     >
       {React.Children.map(children, (child: React.ReactElement) => {
-        const { name, validation } = child.props
+        const { validation, ...childProps } = child.props
 
         // Form fields require a name
         // If there is no name, assume it's not a form field
-        if (!name) return child
+        if (!childProps.name) return child
 
-        const fieldError = errors[name] as ValidationError
+        const fieldError = errors[childProps.name] as ValidationError
         return React.createElement(child.type, {
           ...{
             ...child.props,
             error: fieldError ? fieldError.message : undefined,
             register: validation ? register(validation) : register,
             key: name,
-            required: validation ? validation.required : false
+            required: validation ? !!validation.required : false
           }
         })
       })}

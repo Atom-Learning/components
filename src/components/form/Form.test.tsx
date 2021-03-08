@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Button, InputField } from '../'
+import { Button, InputField, PasswordField } from '../'
 import { Form } from '.'
 
 describe(`Form component`, () => {
@@ -30,12 +30,17 @@ describe(`Form component`, () => {
           label="Name"
           validation={{ required: 'Name is required' }}
         />
+        <PasswordField
+          name="password"
+          validation={{ required: 'Password is required' }}
+        />
         <Button onClick={jest.fn()}>Submit</Button>
       </Form>
     )
 
-    userEvent.click(screen.getByRole('button'))
+    userEvent.click(screen.getByText('Submit'))
 
     expect(await screen.findByText('Name is required'))
+    expect(await screen.findByText('Password is required'))
   })
 })
