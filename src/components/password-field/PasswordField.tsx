@@ -61,7 +61,10 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
       <Input
         type={isPasswordVisible ? 'text' : 'password'}
-        css={{ mb: '$1', pr: 24 }} // input padding to offset the exact size of the icon
+        css={{
+          mb: '$1',
+          pr: '$sizes$2'
+        }}
         autoComplete="current-password"
         name={name}
         id={name}
@@ -70,10 +73,15 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         {...remainingProps}
       />
       <InvisibleButton
-        onClick={togglePasswordVisibility}
         aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
+        onClick={togglePasswordVisibility}
+        onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
+        type="button"
       >
-        <Icon is={isPasswordVisible ? Eye : EyeOff} />
+        <Icon
+          css={{ color: '$tonal700' }}
+          is={isPasswordVisible ? Eye : EyeOff}
+        />
       </InvisibleButton>
       {error && <ValidationError>{error}</ValidationError>}
     </Box>
@@ -88,6 +96,7 @@ const InvisibleButton = styled('button', {
   background: 'none',
   cursor: 'pointer',
   position: 'absolute',
-  bottom: 16,
-  right: 8
+  bottom: 0,
+  right: 0,
+  size: '$2'
 })
