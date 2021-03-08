@@ -30,7 +30,7 @@ describe(`Form component`, () => {
           label="Name"
           validation={{ required: 'Name is required' }}
         />
-        <Button>Submit</Button>
+        <Button onClick={jest.fn()}>Submit</Button>
       </Form>
     )
 
