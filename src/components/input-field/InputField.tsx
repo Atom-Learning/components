@@ -1,20 +1,23 @@
 import * as React from 'react'
 
 import { Box } from '~/components/box'
+import { ValidationOptions } from '~/components/form/validation'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { Override } from '~/utilities'
+import { styled } from '~/stitches'
 
-type InputFieldProps = Override<
-  InputProps,
-  {
-    label: string
-    error?: string
-    required?: boolean
-    name: string
-  }
->
+type InputFieldProps = InputProps & {
+  label: string
+  error?: string
+  required?: boolean
+  name: string
+  register?: React.ForwardedRef<HTMLInputElement>
+  validation?: ValidationOptions
+}
+
+const StyledAsteriskWrapper = styled('span', { color: '$danger' })
+const StyledAsterisk = () => <StyledAsteriskWrapper>*</StyledAsteriskWrapper>
 
 export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
@@ -22,16 +25,19 @@ export const InputField: React.FC<InputFieldProps> = ({
   name,
   error = undefined,
   required = false,
+  register = null,
   ...remainingProps
 }) => (
   <Box css={css}>
     <Label css={{ mb: '$1' }} htmlFor={name}>
-      {`${label} ${required ? '*' : ''}`}
+      {label}
+      {required && <StyledAsterisk />}
     </Label>
     <Input
       css={{ mb: '$1' }}
       id={name}
       name={name}
+      ref={register}
       {...(error && { state: 'error' })}
       {...remainingProps}
     />
