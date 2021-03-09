@@ -149,11 +149,13 @@ export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
   appearance = 'solid',
   isLoading = false,
+  type = 'button',
   children,
   onClick,
   ...rest
 }) => {
-  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired and the button looks faded
+  // Note: button is not disabled when loading for accessibility purposes.
+  // Instead the clickAction is not fired and the button looks faded
   const handleClick = (callback) => {
     if (isLoading) {
       return
@@ -168,6 +170,7 @@ export const Button: React.FC<ButtonProps> = ({
       theme={theme}
       appearance={appearance}
       onClick={() => handleClick(onClick)}
+      type={type}
       {...rest}
     >
       {isLoading ? <Loader /> : children}
