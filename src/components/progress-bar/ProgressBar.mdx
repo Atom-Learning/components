@@ -2,6 +2,7 @@
 title: Progress Bar
 component: ProgressBar
 description: ProgressBar provides a styled progress bar.
+category: General
 ---
 
 ## Accessibility
@@ -18,14 +19,12 @@ For more examples, please read [aria-progressbar-name](https://dequeuniversity.c
 These are the available `themes` for this component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
 ```jsx preview center
-<>
-  <ProgressBar value={20} />
-  <ProgressBar theme="secondary" value={20} aria-label="Completion rate" />
-  <ProgressBar theme="tertiary" value={20} aria-label="Completion rate" />
-  <ProgressBar theme="success" value={20} aria-label="Completion rate" />
-  <ProgressBar theme="warning" value={20} aria-label="Completion rate" />
-  <ProgressBar theme="danger" value={20} aria-label="Completion rate" />
-</>
+<ProgressBar value={20} />
+<ProgressBar theme="secondary" value={20} aria-label="Completion rate" />
+<ProgressBar theme="tertiary" value={20} aria-label="Completion rate" />
+<ProgressBar theme="success" value={20} aria-label="Completion rate" />
+<ProgressBar theme="warning" value={20} aria-label="Completion rate" />
+<ProgressBar theme="danger" value={20} aria-label="Completion rate" />
 ```
 
 ## Appearance
@@ -33,37 +32,35 @@ These are the available `themes` for this component: `Primary` (default), `Secon
 There two options for the `appearance` property: `solid` and `outline(default)`. These are the available `outline` variations for all the `themes`.
 
 ```jsx preview center
-<>
-  <ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
-  <ProgressBar
-    appearance="solid"
-    theme="secondary"
-    value={20}
-    aria-label="Completion rate"
-  />
-  <ProgressBar
-    appearance="solid"
-    theme="tertiary"
-    value={20}
-    aria-label="Completion rate"
-  />
-  <ProgressBar
-    appearance="solid"
-    theme="success"
-    value={20}
-    aria-label="Completion rate"
-  />
-  <ProgressBar
-    appearance="solid"
-    theme="warning"
-    value={20}
-    aria-label="Completion rate"
-  />
-  <ProgressBar
-    appearance="solid"
-    theme="danger"
-    value={20}
-    aria-label="Completion rate"
-  />
-</>
+<ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
+<ProgressBar
+  appearance="solid"
+  theme="secondary"
+  value={20}
+  aria-label="Completion rate"
+/>
+<ProgressBar
+  appearance="solid"
+  theme="tertiary"
+  value={20}
+  aria-label="Completion rate"
+/>
+<ProgressBar
+  appearance="solid"
+  theme="success"
+  value={20}
+  aria-label="Completion rate"
+/>
+<ProgressBar
+  appearance="solid"
+  theme="warning"
+  value={20}
+  aria-label="Completion rate"
+/>
+<ProgressBar
+  appearance="solid"
+  theme="danger"
+  value={20}
+  aria-label="Completion rate"
+/>
 ```
