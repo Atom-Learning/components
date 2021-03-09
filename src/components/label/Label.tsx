@@ -17,21 +17,25 @@ const StyledLabel = styled('label', {
     }
   }
 })
+const StyledAsteriskWrapper = styled('span', { color: '$danger' })
 
 type LabelProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledLabel>,
   {
     as?: never
+    required?: boolean
   }
 >
 
 export const Label: React.FC<LabelProps> = ({
   size = 'md',
   children,
+  required,
   ...rest
 }) => (
   <StyledLabel size={size} {...rest}>
     {children}
+    {required && <StyledAsteriskWrapper>*</StyledAsteriskWrapper>}
   </StyledLabel>
 )
 

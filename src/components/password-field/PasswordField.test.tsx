@@ -15,6 +15,15 @@ describe(`Password component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
+  it('renders with a prompt', async () => {
+    const { container } = render(
+      <PasswordField prompt={{ label: 'Hello', link: '/somewhere' }} />
+    )
+
+    expect(container).toMatchSnapshot()
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
   it('toggles password visibility', async () => {
     render(<PasswordField />)
 
