@@ -2,13 +2,14 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-const StyledLI = styled('li', {})
+const StyledListItem = styled('li', {})
 
 const StyledUL = styled('ul', {
   fontFamily: '$sans',
-  [`& ${StyledLI}`]: {
-    paddingLeft: '$1',
-    '::marker': {
+  pl: '$2',
+  [`& ${StyledListItem}`]: {
+    pl: '$1',
+    '&::marker': {
       content: '"•"',
       fontWeight: 'bold'
     }
@@ -16,20 +17,20 @@ const StyledUL = styled('ul', {
   variants: {
     theme: {
       primary: {
-        [`& ${StyledLI}`]: {
-          '::marker': { color: '$primary500' }
+        [`& ${StyledListItem}`]: {
+          '&::marker': { color: '$primary500' }
         }
       },
       secondary: {
-        [`& ${StyledLI}`]: {
-          '::marker': { color: '$secondary500' }
+        [`& ${StyledListItem}`]: {
+          '&::marker': { color: '$secondary500' }
         }
       }
     },
     size: {
-      sm: { fontSize: '$sm', pl: '$2' },
-      md: { fontSize: '$md', pl: '$2' },
-      lg: { fontSize: '$lg', pl: '$3' }
+      sm: { fontSize: '$sm' },
+      md: { fontSize: '$md' },
+      lg: { fontSize: '$lg' }
     }
   }
 })
@@ -38,9 +39,10 @@ type ListProps = React.ComponentProps<typeof StyledUL> & {
   theme?: 'primary' | 'secondary'
 }
 
-export const List: React.FC<ListProps> & { Item: typeof StyledLI } = ({
+export const List: React.FC<ListProps> & { Item: typeof StyledListItem } = ({
   theme = 'primary',
+  size = 'md',
   ...remainingProps
-}) => <StyledUL theme={theme} {...remainingProps} />
+}) => <StyledUL theme={theme} size={size} {...remainingProps} />
 
-List.Item = StyledLI
+List.Item = StyledListItem

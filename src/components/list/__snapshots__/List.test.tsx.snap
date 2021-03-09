@@ -1,26 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxa7zbs {
+.sx57jzb {
   font-family: var(--fonts-sans);
+  padding-left: var(--space-2);
 }
 
-.sxa7zbs .sx03kze {
+.sx57jzb .sx03kze {
   padding-left: var(--space-1);
 }
 
-.sxa7zbs .sx03kze ::marker {
+.sx57jzb .sx03kze::marker {
   content: "•";
   font-weight: bold;
 }
 
-.sxa7zbsw26qe--theme-primary .sx03kze ::marker {
+.sx57jzbgpy7w--theme-primary .sx03kze::marker {
   color: var(--colors-primary500);
+}
+
+.sx57jzbvs8z6--size-md {
+  font-size: var(--fontSizes-md);
 }
 
 <div>
   <ul
-    class="sxa7zbs sxa7zbsw26qe--theme-primary"
+    class="sx57jzb sx57jzbgpy7w--theme-primary sx57jzbvs8z6--size-md"
   >
     <li
       class="sx03kze"

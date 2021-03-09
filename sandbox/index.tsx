@@ -4,16 +4,11 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { globalCss, List } from '../dist'
+import { Box, globalCss } from '../dist'
 globalCss(reset)()
 
 const App = () => {
-  return (
-    <List size="lg">
-      <List.Item>first thing</List.Item>
-      <List.Item>second thing</List.Item>
-    </List>
-  )
+  return <Box />
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
