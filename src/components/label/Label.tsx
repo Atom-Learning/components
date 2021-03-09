@@ -17,7 +17,7 @@ const StyledLabel = styled('label', {
     }
   }
 })
-const StyledAsteriskWrapper = styled('span', { color: '$danger' })
+const StyledAsteriskWrapper = styled('span', { color: '$danger', ml: '$1' })
 
 type LabelProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledLabel>,

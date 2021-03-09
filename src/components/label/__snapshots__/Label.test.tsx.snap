@@ -22,3 +22,36 @@ exports[`Label component renders a label 1`] = `
   </label>
 </div>
 `;
+
+exports[`Label component renders an asterisk if required 1`] = `
+.sxhmjku {
+  color: var(--colors-secondary300);
+  display: block;
+  font-family: var(--fonts-sans);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.sxhmjkuvs8z6--size-md {
+  font-size: var(--fontSizes-md);
+}
+
+.sxxl4lf {
+  color: var(--colors-danger);
+  margin-left: var(--space-1);
+}
+
+<div>
+  <label
+    class="sxhmjku sxhmjkuvs8z6--size-md"
+  >
+    TEXT
+    <span
+      class="sxxl4lf"
+    >
+      *
+    </span>
+  </label>
+</div>
+`;
