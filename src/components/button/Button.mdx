@@ -16,12 +16,14 @@ It adds default styling and the `css` prop. By default `primary` theme is displa
 These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
 ```jsx preview center
-<Button>Primary</Button>
-<Button theme="secondary">Secondary</Button>
-<Button theme="tertiary">Tertiary</Button>
-<Button theme="success">Success</Button>
-<Button theme="warning">Warning</Button>
-<Button theme="danger">Error</Button>
+<>
+  <Button>Primary</Button>
+  <Button theme="secondary">Secondary</Button>
+  <Button theme="tertiary">Tertiary</Button>
+  <Button theme="success">Success</Button>
+  <Button theme="warning">Warning</Button>
+  <Button theme="danger">Error</Button>
+</>
 ```
 
 ## Appearance
@@ -29,13 +31,15 @@ These are the available `themes` for the `Button` component: `Primary` (default)
 There two options for the `appearance` property: `solid` and `outline`. These are the available `outline` variations for the `primary`, `secondary` and `tertiary` themes.
 
 ```jsx preview center
-<Button appearance="outline">Primary</Button>
-<Button appearance="outline" theme="secondary">
-  Secondary
-</Button>
-<Button appearance="outline" theme="tertiary">
-  Tertiary
-</Button>
+<>
+  <Button appearance="outline">Primary</Button>
+  <Button appearance="outline" theme="secondary">
+    Secondary
+  </Button>
+  <Button appearance="outline" theme="tertiary">
+    Tertiary
+  </Button>
+</>
 ```
 
 ## Disabled state
@@ -43,16 +47,18 @@ There two options for the `appearance` property: `solid` and `outline`. These ar
 Each variation has an `disabled` stated, by setting the `disabled` property.
 
 ```jsx preview center
-<Button disabled>Disabled button</Button>
-<Button theme="success" disabled>
-  Disabled button
-</Button>
-<Button appearance="outline" theme="secondary" disabled>
-  Disabled button
-</Button>
-<Button appearance="outline" theme="tertiary" disabled>
-  Disabled button
-</Button>
+<>
+  <Button disabled>Disabled button</Button>
+  <Button theme="success" disabled>
+    Disabled button
+  </Button>
+  <Button appearance="outline" theme="secondary" disabled>
+    Disabled button
+  </Button>
+  <Button appearance="outline" theme="tertiary" disabled>
+    Disabled button
+  </Button>
+</>
 ```
 
 ## Loading state
@@ -60,5 +66,5 @@ Each variation has an `disabled` stated, by setting the `disabled` property.
 When using a button to request data or fire an action that has a potential delay, including a loading state to the button can be a useful indicator that stuff is happening. The `isLoading` prop must be a boolean value to activate the loading state.
 
 ```jsx live center
-<Button isloading> Hello world</Button>
+<Button isLoading> Hello world</Button>
 ```
