@@ -13,6 +13,7 @@ describe(`Label component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
+
   it('renders an asterisk if required', async () => {
     const { container } = render(<Label required>TEXT</Label>)
 
