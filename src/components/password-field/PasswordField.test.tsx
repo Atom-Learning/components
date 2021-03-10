@@ -20,7 +20,7 @@ describe(`Password component`, () => {
       <PasswordField prompt={{ label: 'Hello', link: '/somewhere' }} />
     )
 
-    expect(container).toMatchSnapshot()
+    expect(screen.getByRole('link')).toBeInTheDocument()
     expect(await axe(container)).toHaveNoViolations()
   })
 

@@ -15,10 +15,10 @@ describe(`Label component`, () => {
   })
 
   it('renders an asterisk if required', async () => {
-    const { container } = render(<Label required>TEXT</Label>)
+    render(<Label required>TEXT</Label>)
 
-    await screen.getByText('TEXT')
+    const asterisk = await screen.getByText('*')
 
-    expect(container).toMatchSnapshot()
+    expect(asterisk).toBeInTheDocument()
   })
 })
