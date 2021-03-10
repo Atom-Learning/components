@@ -28,9 +28,9 @@ const StyledUL = styled('ul', {
       }
     },
     size: {
-      sm: { fontSize: '$sm' },
-      md: { fontSize: '$md' },
-      lg: { fontSize: '$lg' }
+      sm: { fontSize: '$sm', letterSpacing: '0.01em', lineHeight: 1.6 },
+      md: { fontSize: '$md', letterSpacing: '0.02em', lineHeight: 1.4 },
+      lg: { fontSize: '$lg', letterSpacing: '0.02em', lineHeight: 1.4 }
     }
   }
 })

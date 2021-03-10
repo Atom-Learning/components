@@ -19,13 +19,15 @@ exports[`List component renders a list 1`] = `
   color: var(--colors-primary500);
 }
 
-.sx57jzbvs8z6--size-md {
+.sx57jzbido38--size-md {
   font-size: var(--fontSizes-md);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
 }
 
 <div>
   <ul
-    class="sx57jzb sx57jzbgpy7w--theme-primary sx57jzbvs8z6--size-md"
+    class="sx57jzb sx57jzbgpy7w--theme-primary sx57jzbido38--size-md"
   >
     <li
       class="sx03kze"
