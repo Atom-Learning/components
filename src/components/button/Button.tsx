@@ -2,6 +2,7 @@ import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
 import { Loader } from '~/components/loader'
+import { Box } from '~/components/box'
 import { styled } from '~/stitches'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -60,17 +61,6 @@ const StyledButton = styled('button', {
   '&[disabled]': {
     opacity: 0.35,
     cursor: 'not-allowed'
-  },
-  '&.isLoading': {
-    cursor: 'not-allowed',
-    opacity: 0.5
-  },
-  '&:not(.isLoading) span': {
-    opacity: 0,
-    transition: 'opacity 100ms ease-out'
-  },
-  '&.isLoading span': {
-    opacity: 1
   },
   variants: {
     theme: {
@@ -142,13 +132,13 @@ const StyledButton = styled('button', {
 type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
-    onClick: () => void
+    onClick?: () => void
   }
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
   appearance = 'solid',
-  isLoading = false,
+  isLoading,
   type = 'button',
   children,
   onClick,
@@ -160,20 +150,43 @@ export const Button: React.FC<ButtonProps> = ({
     if (isLoading) {
       return
     }
-
     callback()
   }
 
   return (
     <StyledButton
-      className={isLoading ? 'isLoading' : ''}
       theme={theme}
       appearance={appearance}
       onClick={() => handleClick(onClick)}
       type={type}
       {...rest}
     >
-      {isLoading ? <Loader /> : children}
+      {typeof isLoading === 'boolean' ? (
+        <>
+          <Loader
+            css={{
+              opacity: isLoading ? 1 : 0,
+              position: 'absolute',
+              transition: 'opacity 100ms ease-out'
+            }}
+          />
+          <Box
+            as="span"
+            css={
+              isLoading
+                ? {
+                    opacity: 0,
+                    transition: 'opacity 100ms ease-out'
+                  }
+                : {}
+            }
+          >
+            {children}
+          </Box>
+        </>
+      ) : (
+        children
+      )}
     </StyledButton>
   )
 }
