@@ -1,8 +1,8 @@
 import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
-import { Loader } from '~/components/loader'
 import { Box } from '~/components/box'
+import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -74,6 +74,12 @@ const StyledButton = styled('button', {
     appearance: {
       solid: {},
       outline: {}
+    },
+    isLoading: {
+      true: {
+        cursor: 'not-allowed',
+        opacity: 0.5
+      }
     }
   },
 
@@ -157,6 +163,7 @@ export const Button: React.FC<ButtonProps> = ({
     <StyledButton
       theme={theme}
       appearance={appearance}
+      isLoading={isLoading || false}
       onClick={() => handleClick(onClick)}
       type={type}
       {...rest}
@@ -167,7 +174,7 @@ export const Button: React.FC<ButtonProps> = ({
             css={{
               opacity: isLoading ? 1 : 0,
               position: 'absolute',
-              transition: 'opacity 100ms ease-out'
+              transition: 'opacity 150ms ease-out'
             }}
           />
           <Box
@@ -176,7 +183,7 @@ export const Button: React.FC<ButtonProps> = ({
               isLoading
                 ? {
                     opacity: 0,
-                    transition: 'opacity 100ms ease-out'
+                    transition: 'opacity 150ms ease-out'
                   }
                 : {}
             }

@@ -23,15 +23,20 @@ exports[`Button component Loading state renders a loading button 1`] = `
   }
 }
 
+.sx03kzeywt1o--css {
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+
 .sx2cs53 {
   display: flex;
 }
 
-.sx2cs53ltv1a--css {
+.sx2cs53gu4h1--css {
   justify-content: center;
   opacity: 1;
   position: absolute;
-  transition: opacity 100ms ease-out;
+  transition: opacity 150ms ease-out;
 }
 
 .sx0yv19 {
@@ -64,11 +69,6 @@ exports[`Button component Loading state renders a loading button 1`] = `
 .sx0yv194btw3--size-md {
   margin-left: 2px;
   margin-right: 2px;
-}
-
-.sx03kzejolog--css {
-  opacity: 0;
-  transition: opacity 100ms ease-out;
 }
 
 .sxyl5fn {
@@ -104,6 +104,11 @@ exports[`Button component Loading state renders a loading button 1`] = `
 .sxyl5fn[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+.sxyl5fn2jpbs--isLoading-true {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .sxyl5fnxyrog--comp {
@@ -171,11 +176,11 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
+    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid sxyl5fn2jpbs--isLoading-true"
     type="button"
   >
     <div
-      class="sx2cs53 sx2cs53ltv1a--css"
+      class="sx2cs53 sx2cs53gu4h1--css"
       role="alert"
     >
       <span
@@ -195,7 +200,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
       />
     </div>
     <span
-      class="sx03kze sx03kzejolog--css"
+      class="sx03kze sx03kzeywt1o--css"
     >
       BUTTON
     </span>
