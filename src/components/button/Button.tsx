@@ -142,7 +142,7 @@ const StyledButton = styled('button', {
 type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
-    onClick?: () => void
+    onClick: () => void
   }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -157,7 +157,7 @@ export const Button: React.FC<ButtonProps> = ({
   // Note: button is not disabled when loading for accessibility purposes.
   // Instead the clickAction is not fired and the button looks faded
   const handleClick = (callback) => {
-    if (isLoading || !callback) {
+    if (isLoading) {
       return
     }
 
