@@ -42,10 +42,6 @@ exports[`InputField component renders a field with a  number input 1`] = `
   cursor: not-allowed;
 }
 
-.sxfigyvysvs0--css {
-  margin-bottom: var(--space-1);
-}
-
 .sxhmjku {
   color: var(--colors-secondary300);
   display: block;
@@ -74,7 +70,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
       INPUT FIELD
     </label>
     <input
-      class="sxfigyv sxfigyvysvs0--css"
+      class="sxfigyv"
       id="INPUT FIELD"
       inputmode="numeric"
       name="INPUT FIELD"
@@ -128,10 +124,6 @@ exports[`InputField component renders a field with a text input 1`] = `
   cursor: not-allowed;
 }
 
-.sxfigyvysvs0--css {
-  margin-bottom: var(--space-1);
-}
-
 .sxhmjku {
   color: var(--colors-secondary300);
   display: block;
@@ -160,7 +152,7 @@ exports[`InputField component renders a field with a text input 1`] = `
       INPUT FIELD
     </label>
     <input
-      class="sxfigyv sxfigyvysvs0--css"
+      class="sxfigyv"
       id="INPUT FIELD"
       name="INPUT FIELD"
       placeholder="INPUT FIELD"
