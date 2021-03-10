@@ -51,7 +51,9 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         }}
       >
         {/* TODO: standardise asterisk -- should this be an option in the Label component? */}
-        <Label htmlFor={name}>{`${label} ${required ? '*' : ''}`}</Label>
+        <Label htmlFor={name} css={{ mb: '$2' }}>{`${label} ${
+          required ? '*' : ''
+        }`}</Label>
         {prompt && (
           <Link href={prompt.link} size="sm">
             {prompt.label}

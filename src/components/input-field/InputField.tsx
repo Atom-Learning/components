@@ -29,7 +29,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   ...remainingProps
 }) => (
   <Box css={css}>
-    <Label css={{ mb: '$1' }} htmlFor={name}>
+    <Label css={{ mb: '$2' }} htmlFor={name}>
       {label}
       {required && <StyledAsterisk />}
     </Label>
