@@ -155,7 +155,7 @@ export const Button: React.FC<ButtonProps> = ({
   isLoading = false,
   type = 'button',
   children,
-  onClick = undefined,
+  onClick,
   ...rest
 }) => {
   // Note: button is not disabled when loading for accessibility purposes.
