@@ -1,22 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label component renders a label 1`] = `
-.sxhmjku {
+.sx9hj4y {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.4;
+  margin: 0;
 }
 
-.sxhmjkuvs8z6--size-md {
+.sx9hj4yvs8z6--size-md {
   font-size: var(--fontSizes-md);
 }
 
 <div>
   <label
-    class="sxhmjku sxhmjkuvs8z6--size-md"
+    class="sx9hj4y sx9hj4yvs8z6--size-md"
   >
     TEXT
   </label>

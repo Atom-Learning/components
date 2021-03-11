@@ -31,9 +31,9 @@ export const Form: React.FC<FormProps> = ({
 
   return (
     <StyledForm
+      aria-label="form"
       {...remainingProps}
       onSubmit={handleSubmit(onSubmit)}
-      aria-label="form"
     >
       {React.Children.map(children, (child: React.ReactElement) => {
         const { validation, ...childProps } = child.props
@@ -43,14 +43,13 @@ export const Form: React.FC<FormProps> = ({
         if (!childProps.name) return child
 
         const fieldError = errors[childProps.name] as ValidationError
+
         return React.createElement(child.type, {
-          ...{
-            ...child.props,
-            error: fieldError ? fieldError.message : undefined,
-            register: validation ? register(validation) : register,
-            key: name,
-            required: validation ? !!validation.required : false
-          }
+          ...childProps,
+          error: fieldError ? fieldError.message : undefined,
+          register: validation ? register(validation) : register,
+          key: childProps.name,
+          required: validation ? !!validation.required : false
         })
       })}
     </StyledForm>

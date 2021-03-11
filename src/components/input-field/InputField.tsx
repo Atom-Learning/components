@@ -5,7 +5,6 @@ import { ValidationOptions } from '~/components/form/validation'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { styled } from '~/stitches'
 
 type InputFieldProps = InputProps & {
   label: string
@@ -15,9 +14,6 @@ type InputFieldProps = InputProps & {
   register?: React.ForwardedRef<HTMLInputElement>
   validation?: ValidationOptions
 }
-
-const StyledAsteriskWrapper = styled('span', { color: '$danger' })
-const StyledAsterisk = () => <StyledAsteriskWrapper>*</StyledAsteriskWrapper>
 
 export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
@@ -29,19 +25,17 @@ export const InputField: React.FC<InputFieldProps> = ({
   ...remainingProps
 }) => (
   <Box css={css}>
-    <Label css={{ mb: '$1' }} htmlFor={name}>
+    <Label css={{ mb: '$2' }} htmlFor={name} required={required}>
       {label}
-      {required && <StyledAsterisk />}
     </Label>
     <Input
-      css={{ mb: '$1' }}
       id={name}
       name={name}
       ref={register}
       {...(error && { state: 'error' })}
       {...remainingProps}
     />
-    {error && <ValidationError>{error}</ValidationError>}
+    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
   </Box>
 )
 
