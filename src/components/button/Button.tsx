@@ -141,7 +141,7 @@ type ButtonProps = Override<
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
     onClick?: () => void
-    as: React.ComponentType | React.ElementType
+    as?: React.ComponentType | React.ElementType
   }
 >
 
