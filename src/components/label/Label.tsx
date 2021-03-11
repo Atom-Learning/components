@@ -10,6 +10,7 @@ const StyledLabel = styled('label', {
   fontWeight: 500,
   letterSpacing: '0.02em',
   lineHeight: '1.4',
+  margin: 0,
   variants: {
     size: {
       sm: { fontSize: '$sm' },

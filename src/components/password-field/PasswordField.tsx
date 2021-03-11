@@ -50,7 +50,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           mb: '$1'
         }}
       >
-        <Label htmlFor={name} required={required}>
+        <Label htmlFor={name} css={{ mb: '$2' }} required={required}>
           {label}
         </Label>
         {prompt && (

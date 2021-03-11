@@ -25,7 +25,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   ...remainingProps
 }) => (
   <Box css={css}>
-    <Label css={{ mb: '$1' }} htmlFor={name} required={required}>
+    <Label css={{ mb: '$2' }} htmlFor={name} required={required}>
       {label}
     </Label>
     <Input

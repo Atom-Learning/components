@@ -42,21 +42,22 @@ exports[`InputField component renders a field with a  number input 1`] = `
   cursor: not-allowed;
 }
 
-.sxhmjku {
+.sx9hj4y {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.4;
+  margin: 0;
 }
 
-.sxhmjkuvs8z6--size-md {
+.sx9hj4yvs8z6--size-md {
   font-size: var(--fontSizes-md);
 }
 
-.sxhmjkuysvs0--css {
-  margin-bottom: var(--space-1);
+.sx9hj4yb2uuy--css {
+  margin-bottom: var(--space-2);
 }
 
 <div>
@@ -64,7 +65,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
     class="sx03kze sx03kze6obnf--css"
   >
     <label
-      class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
+      class="sx9hj4y sx9hj4yvs8z6--size-md sx9hj4yb2uuy--css"
       for="INPUT FIELD"
     >
       INPUT FIELD
@@ -124,21 +125,22 @@ exports[`InputField component renders a field with a text input 1`] = `
   cursor: not-allowed;
 }
 
-.sxhmjku {
+.sx9hj4y {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.4;
+  margin: 0;
 }
 
-.sxhmjkuvs8z6--size-md {
+.sx9hj4yvs8z6--size-md {
   font-size: var(--fontSizes-md);
 }
 
-.sxhmjkuysvs0--css {
-  margin-bottom: var(--space-1);
+.sx9hj4yb2uuy--css {
+  margin-bottom: var(--space-2);
 }
 
 <div>
@@ -146,7 +148,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     class="sx03kze sx03kze6obnf--css"
   >
     <label
-      class="sxhmjku sxhmjkuvs8z6--size-md sxhmjkuysvs0--css"
+      class="sx9hj4y sx9hj4yvs8z6--size-md sx9hj4yb2uuy--css"
       for="INPUT FIELD"
     >
       INPUT FIELD
