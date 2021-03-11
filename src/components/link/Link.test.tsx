@@ -26,4 +26,10 @@ describe(`Link component`, () => {
     expect(container).toMatchSnapshot()
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('is polymorphic', async () => {
+    render(<Link as="button">See more</Link>)
+
+    expect(screen.getByRole('button')).toBeInTheDocument()
+  })
 })

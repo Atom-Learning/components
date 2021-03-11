@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { Override } from '~/utilities'
 
 const StyledLink = styled('a', {
   color: '$primary500',
@@ -31,7 +32,10 @@ const StyledLink = styled('a', {
   }
 })
 
-type LinkProps = React.ComponentProps<typeof StyledLink>
+type LinkProps = Override<
+  React.ComponentProps<typeof StyledLink>,
+  { as: React.ComponentType | React.ElementType }
+>
 
 export const Link: React.FC<LinkProps> = React.forwardRef(
   ({ size = 'md', ...rest }, ref) => (
