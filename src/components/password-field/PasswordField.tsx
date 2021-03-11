@@ -50,10 +50,9 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           mb: '$1'
         }}
       >
-        {/* TODO: standardise asterisk -- should this be an option in the Label component? */}
-        <Label htmlFor={name} css={{ mb: '$2' }}>{`${label} ${
-          required ? '*' : ''
-        }`}</Label>
+        <Label htmlFor={name} css={{ mb: '$2' }} required={required}>
+          {label}
+        </Label>
         {prompt && (
           <Link href={prompt.link} size="sm">
             {prompt.label}
@@ -63,10 +62,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
       <Input
         type={isPasswordVisible ? 'text' : 'password'}
-        css={{
-          mb: '$1',
-          pr: '$sizes$2'
-        }}
+        css={{ pr: '$sizes$2' }}
         autoComplete="current-password"
         name={name}
         id={name}
@@ -85,7 +81,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           is={isPasswordVisible ? Eye : EyeOff}
         />
       </InvisibleButton>
-      {error && <ValidationError>{error}</ValidationError>}
+      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
     </Box>
   )
 }
