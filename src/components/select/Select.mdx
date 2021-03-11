@@ -9,7 +9,7 @@ It adds default styling and the `css` prop.
 
 A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
 
-```jsx preview center
+```jsx preview
 <Select
   options={[
     { value: 1, label: 'Apples' },
@@ -27,7 +27,7 @@ For accessibility purposes the component needs to have the `id` prop set, to lin
 
 The component can display a default option without a value by passing the `defaultOption` property.
 
-```jsx preview center
+```jsx preview
 <Select
   aria-label="select number"
   defaultOption="Please select a number:"
@@ -43,7 +43,7 @@ The component can display a default option without a value by passing the `defau
 
 The component has a `disabled` state, by setting the `disabled` property.
 
-```jsx preview center
+```jsx preview
 <Select
   aria-label="can't select fruits"
   disabled
@@ -59,7 +59,7 @@ The component has a `disabled` state, by setting the `disabled` property.
 
 The component can show an option as `disabled`, by setting the `disabled` property on the option.
 
-```jsx preview center
+```jsx preview
 <Select
   aria-label="select fruits"
   options={[
