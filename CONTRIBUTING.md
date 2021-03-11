@@ -95,7 +95,7 @@ Adding `live` will render the code and adds the ability to live edit
 Combine either of the two previous attributes with `center` to center the component within the preview
 
 ````md
-```jsx preview center
+```jsx preview
 <Button />
 ```
 ````
