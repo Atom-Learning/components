@@ -34,7 +34,7 @@ const StyledLink = styled('a', {
 
 type LinkProps = Override<
   React.ComponentProps<typeof StyledLink>,
-  { as: React.ComponentType | React.ElementType }
+  { as?: React.ComponentType | React.ElementType }
 >
 
 export const Link: React.FC<LinkProps> = React.forwardRef(
