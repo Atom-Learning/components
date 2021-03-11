@@ -3,6 +3,7 @@ import * as React from 'react'
 
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
+import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
@@ -139,11 +140,14 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
+type ButtonProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
-    onClick: () => void
+    onClick?: () => void
+    as: React.ComponentType | React.ElementType
   }
+>
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
@@ -151,7 +155,7 @@ export const Button: React.FC<ButtonProps> = ({
   isLoading = false,
   type = 'button',
   children,
-  onClick,
+  onClick = undefined,
   ...rest
 }) => {
   // Note: button is not disabled when loading for accessibility purposes.
@@ -169,7 +173,7 @@ export const Button: React.FC<ButtonProps> = ({
       className={isLoading ? 'isLoading' : ''}
       theme={theme}
       appearance={appearance}
-      onClick={() => handleClick(onClick)}
+      onClick={onClick ? () => handleClick(onClick) : undefined}
       type={type}
       {...rest}
     >
