@@ -60,28 +60,30 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         )}
       </Flex>
 
-      <Input
-        type={isPasswordVisible ? 'text' : 'password'}
-        css={{ pr: '$sizes$2' }}
-        autoComplete="current-password"
-        name={name}
-        id={name}
-        required={required}
-        ref={register}
-        {...remainingProps}
-      />
-      <InvisibleButton
-        aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
-        onClick={togglePasswordVisibility}
-        onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
-        type="button"
-      >
-        <Icon
-          css={{ color: '$tonal700' }}
-          is={isPasswordVisible ? Eye : EyeOff}
+      <Box css={{ position: 'relative' }}>
+        <Input
+          type={isPasswordVisible ? 'text' : 'password'}
+          css={{ pr: '$sizes$2' }}
+          autoComplete="current-password"
+          name={name}
+          id={name}
+          required={required}
+          ref={register}
+          {...remainingProps}
         />
-      </InvisibleButton>
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+        <InvisibleButton
+          aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
+          onClick={togglePasswordVisibility}
+          onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
+          type="button"
+        >
+          <Icon
+            css={{ color: '$tonal700' }}
+            is={isPasswordVisible ? Eye : EyeOff}
+          />
+        </InvisibleButton>
+      </Box>
+      {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
     </Box>
   )
 }

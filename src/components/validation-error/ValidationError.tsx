@@ -1,4 +1,7 @@
-import { Text } from '~/components/text'
-import { styled } from '~/stitches'
+import * as React from 'react'
 
-export const ValidationError = styled(Text, { color: '$danger' })
+import { Text } from '~/components/text'
+
+export const ValidationError = ({ css, ...remainingProps }) => (
+  <Text {...remainingProps} css={{ color: '$danger', ...css }} size="sm" />
+)
