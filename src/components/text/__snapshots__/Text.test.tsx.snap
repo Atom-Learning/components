@@ -9,15 +9,26 @@ exports[`Text component renders some text 1`] = `
   max-width: 60ch;
 }
 
-.sxeds20ido38--size-md {
+.sxeds20zdqo8--size-md {
   font-size: var(--fontSizes-md);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
+  line-height: 1.75;
+}
+
+.sxeds20zdqo8--size-md::before {
+  content: '';
+  margin-bottom: -0.5114em;
+  display: table;
+}
+
+.sxeds20zdqo8--size-md::after {
+  content: '';
+  margin-top: -0.5114em;
+  display: table;
 }
 
 <div>
   <p
-    class="sxeds20 sxeds20ido38--size-md"
+    class="sxeds20 sxeds20zdqo8--size-md"
   >
     TEXT
   </p>

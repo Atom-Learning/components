@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
+import { capsize, Override } from '~/utilities'
 
 const StyledParagraph = styled('p', {
   color: '$tonal900',
@@ -13,18 +13,17 @@ const StyledParagraph = styled('p', {
     size: {
       sm: {
         fontSize: '$sm',
-        letterSpacing: '0.01em',
-        lineHeight: 1.6
+        lineHeight: 1.53
       },
       md: {
         fontSize: '$md',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
+        lineHeight: 1.75,
+        ...capsize('-0.5114em')
       },
       lg: {
         fontSize: '$lg',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
+        lineHeight: 1.6,
+        ...capsize('-0.4864em')
       }
     }
   }
