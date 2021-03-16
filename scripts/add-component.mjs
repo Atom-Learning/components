@@ -133,8 +133,7 @@ const run = async () => {
       }
     },
     {
-      // default to Utilities category if within utilities directory
-      type: (_, { source }) => (source === 'utilities' ? null : 'select'),
+      type: 'select',
       name: 'category',
       message: 'What category is it in?',
       choices: documentationCategories,
