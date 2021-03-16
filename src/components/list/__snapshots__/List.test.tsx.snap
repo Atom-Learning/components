@@ -19,15 +19,26 @@ exports[`List component renders a list 1`] = `
   color: var(--colors-primary500);
 }
 
-.sx57jzbido38--size-md {
+.sx57jzbjqqvr--size-md {
   font-size: var(--fontSizes-md);
-  letter-spacing: 0.02em;
-  line-height: 1.4;
+  line-height: 1.625;
+}
+
+.sx57jzbjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sx57jzbjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
 }
 
 <div>
   <ul
-    class="sx57jzb sx57jzbgpy7w--theme-primary sx57jzbido38--size-md"
+    class="sx57jzb sx57jzbgpy7w--theme-primary sx57jzbjqqvr--size-md"
   >
     <li
       class="sx03kze"

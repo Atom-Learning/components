@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { variantSize } from '../text'
+
 const StyledListItem = styled('li', {})
 
 const StyledUL = styled('ul', {
@@ -27,11 +29,7 @@ const StyledUL = styled('ul', {
         }
       }
     },
-    size: {
-      sm: { fontSize: '$sm', letterSpacing: '0.01em', lineHeight: 1.6 },
-      md: { fontSize: '$md', letterSpacing: '0.02em', lineHeight: 1.4 },
-      lg: { fontSize: '$lg', letterSpacing: '0.02em', lineHeight: 1.4 }
-    }
+    size: variantSize
   }
 })
 

@@ -3,18 +3,18 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
+import { variantSize as textSize } from '../text'
+
 const StyledLabel = styled('label', {
   color: '$secondary300',
   display: 'block',
   fontFamily: '$sans',
   fontWeight: 500,
-  letterSpacing: '0.02em',
-  lineHeight: '1.4',
   margin: 0,
   variants: {
     size: {
-      sm: { fontSize: '$sm' },
-      md: { fontSize: '$md' }
+      sm: textSize.sm,
+      md: textSize.md
     }
   }
 })

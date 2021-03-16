@@ -1,11 +1,13 @@
 ---
 title: Text
 component: Text
-description: Text is our basic text component, use it for any non-heading text.
+description: Text is our basic component for rendering text, use it for any non-heading text.
 category: Content
 ---
 
 ## Sizes
+
+For sizes `md` and up, [Capsize](https://seek-oss.github.io/capsize/) is used to size the text to the height of its capital letters, trimming the space above capital letters and below the baseline.
 
 ```jsx preview
 <Text size="sm">
@@ -14,19 +16,9 @@ category: Content
 ```
 
 ```jsx preview
-<Text>Body text. Most text in the app will use this. </Text>
+<Text>Body text. Most text in the app will use this.</Text>
 ```
 
 ```jsx preview
 <Text size="lg">Large, non-heading text. E.g. a drop quote in an article</Text>
-```
-
-## Capsize
-
-```jsx preview
-<Box css={{ bg: '$primary100' }}>
-  <Text size="lg" css={{ bg: 'white' }}>
-    Anything smaller than body text. E.g. "forgot your password?" prompts
-  </Text>
-</Box>
 ```

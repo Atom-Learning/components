@@ -12,13 +12,13 @@ const StyledHeading = styled('h1', {
     size: {
       xs: {
         fontSize: '$md',
-        lineHeight: 1.75,
-        ...capsize('-0.5114em')
+        lineHeight: 1.625,
+        ...capsize('-0.4489em')
       },
       sm: {
         fontSize: '$lg',
-        lineHeight: 1.71,
-        ...capsize('-0.4935em')
+        lineHeight: 1.52,
+        ...capsize('-0.3983em')
       },
       md: {
         fontSize: '$xl',
