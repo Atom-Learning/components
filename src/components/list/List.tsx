@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { variantSize } from '../text'
+import { textVariantSize } from '../text'
 
 const StyledListItem = styled('li', {})
 
@@ -29,7 +29,7 @@ const StyledUL = styled('ul', {
         }
       }
     },
-    size: variantSize
+    size: textVariantSize
   }
 })
 

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
-export const variantSize = {
+export const textVariantSize = {
   sm: {
     fontSize: '$sm',
     lineHeight: 1.53
@@ -27,7 +27,7 @@ const StyledParagraph = styled('p', {
   margin: 0,
   maxWidth: '60ch',
   variants: {
-    size: variantSize
+    size: textVariantSize
   }
 })
 

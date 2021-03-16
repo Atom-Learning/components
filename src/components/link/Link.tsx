@@ -3,7 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
-import { variantSize as textSize } from '../text'
+import { textVariantSize } from '../text'
 
 const StyledLink = styled('a', {
   color: '$primary500',
@@ -15,8 +15,8 @@ const StyledLink = styled('a', {
   '&:active': { color: '$primary500' },
   variants: {
     size: {
-      sm: textSize.sm,
-      md: textSize.md
+      sm: textVariantSize.sm,
+      md: textVariantSize.md
     }
   }
 })

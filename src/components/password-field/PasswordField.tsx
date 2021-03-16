@@ -47,10 +47,10 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         css={{
           justifyContent: 'space-between',
           alignItems: 'center',
-          mb: '$1'
+          mb: '$2'
         }}
       >
-        <Label htmlFor={name} css={{ mb: '$2' }} required={required}>
+        <Label htmlFor={name} required={required}>
           {label}
         </Label>
         {prompt && (
