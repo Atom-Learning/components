@@ -9,14 +9,18 @@ const outputDir = path.join('dist', 'docs')
 const inputGlob = '**/*.{md,mdx}'
 const { watch } = yargs(hideBin(process.argv)).option('watch').argv
 
+const filesToFilter = ['README.md', 'CHANGELOG.md']
+
 const copyFileToOutput = (filePath) => {
   fs.copyFileSync(filePath, path.join(outputDir, path.basename(filePath)))
 }
 
 const run = async () => {
-  const documentationFilePaths = await glob.sync(inputGlob, {
-    ignore: ['dist/**', 'node_modules/**']
-  })
+  const documentationFilePaths = await glob
+    .sync(inputGlob, {
+      ignore: ['dist/**', 'node_modules/**']
+    })
+    .filter((filePath) => !filesToFilter.includes(filePath))
   // create output directory if missing
   if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir)
 
