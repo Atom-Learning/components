@@ -6,16 +6,16 @@ category: Overview
 
 ## Directory structure
 
-Use the following directory structure and file naming conventions:
+Use the following directory structure and file naming conventions. You can automate this by running `yarn add-component` in the root directory and following the instructions.
 
 ```
 src/
   components/
-	  component-name/
-	    ComponentName.tsx
-	    ComponentName.test.tsx
-	    ComponentName.mdx
-	    index.ts
+    component-name/
+      ComponentName.tsx
+      ComponentName.test.tsx
+      ComponentName.mdx
+      index.ts
 ```
 
 ## Component API

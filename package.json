@@ -12,6 +12,7 @@
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c && tsc --emitDeclarationOnly",
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "add-component": "node ./scripts/add-component.mjs",
     "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
