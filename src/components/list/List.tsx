@@ -6,9 +6,9 @@ const StyledListItem = styled('li', {})
 
 const StyledUL = styled('ul', {
   fontFamily: '$sans',
-  pl: '$2',
+  pl: '$3',
   [`& ${StyledListItem}`]: {
-    pl: '$1',
+    pl: '$2',
     '&::marker': {
       content: '"•"',
       fontWeight: 'bold'
@@ -16,6 +16,11 @@ const StyledUL = styled('ul', {
   },
   variants: {
     theme: {
+      tonal: {
+        [`& ${StyledListItem}`]: {
+          '&::marker': { color: '$tonal900' }
+        }
+      },
       primary: {
         [`& ${StyledListItem}`]: {
           '&::marker': { color: '$primary500' }
@@ -36,11 +41,11 @@ const StyledUL = styled('ul', {
 })
 
 type ListProps = React.ComponentProps<typeof StyledUL> & {
-  theme?: 'primary' | 'secondary'
+  theme?: 'tonal' | 'primary' | 'secondary'
 }
 
 export const List: React.FC<ListProps> & { Item: typeof StyledListItem } = ({
-  theme = 'primary',
+  theme = 'tonal',
   size = 'md',
   ...remainingProps
 }) => <StyledUL theme={theme} size={size} {...remainingProps} />
