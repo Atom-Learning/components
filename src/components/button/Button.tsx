@@ -81,6 +81,11 @@ const StyledButton = styled('button', {
         cursor: 'not-allowed',
         opacity: 0.5
       }
+    },
+    fullWidth: {
+      true: {
+        width: '100%'
+      }
     }
   },
 

@@ -14,6 +14,9 @@ const StyledUL = styled('ul', {
     '&::marker': {
       content: '"•"',
       fontWeight: 'bold'
+    },
+    '&:not(:last-child)': {
+      mb: '$2'
     }
   },
   variants: {
