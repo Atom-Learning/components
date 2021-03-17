@@ -9,30 +9,18 @@ exports[`ValidationError component renders a validation error 1`] = `
   max-width: 60ch;
 }
 
-.sxeds20jqqvr--size-md {
-  font-size: var(--fontSizes-md);
-  line-height: 1.625;
+.sxeds200nw35--size-sm {
+  font-size: var(--fontSizes-sm);
+  line-height: 1.53;
 }
 
-.sxeds20jqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxeds20jqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx25jen {
+.sxeds2025jen--css {
   color: var(--colors-danger);
 }
 
 <div>
   <p
-    class="sxeds20 sx25jen sxeds20jqqvr--size-md"
+    class="sxeds20 sxeds200nw35--size-sm sxeds2025jen--css"
   >
     VALIDATION ERROR
   </p>
