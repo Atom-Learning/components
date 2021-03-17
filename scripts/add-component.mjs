@@ -1,9 +1,9 @@
-// eslint-disable-next-line
-import { default as changeCase } from 'change-case'
+// eslint-disable-next-line import/default
+import changeCase from 'change-case'
 import fs from 'fs'
+import kleur from 'kleur'
 import path from 'path'
 import prompts from 'prompts'
-import kleur from 'kleur'
 
 const { capitalCase, noCase, paramCase, pascalCase } = changeCase
 
@@ -166,12 +166,17 @@ const run = async () => {
     // safe to do as we know the directory does not exist
     fs.mkdirSync(directory)
     // go and write files from templates with content
-    await Promise.all([
-      writeFile('index.ts', templates.index, response),
-      writeFile(`${name}.tsx`, templates.component, response),
-      writeFile(`${name}.test.tsx`, templates.test, response),
-      writeFile(`${name}.mdx`, templates.documentation, response)
-    ])
+    try {
+      await Promise.all([
+        writeFile('index.ts', templates.index, response),
+        writeFile(`${name}.tsx`, templates.component, response),
+        writeFile(`${name}.test.tsx`, templates.test, response),
+        writeFile(`${name}.mdx`, templates.documentation, response)
+      ])
+    } catch (err) {
+      console.error(err)
+      process.exit(1)
+    }
 
     console.log(
       `\n${kleur.green('✔')} Successfully created ${kleur.bold(name)}`
