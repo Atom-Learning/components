@@ -81,6 +81,11 @@ const StyledButton = styled('button', {
         cursor: 'not-allowed',
         opacity: 0.5
       }
+    },
+    fullWidth: {
+      true: {
+        width: '100%'
+      }
     }
   },
 
@@ -140,6 +145,7 @@ type ButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
+    fullWidth?: boolean
     onClick?: () => void
     as?: React.ComponentType | React.ElementType
   }
