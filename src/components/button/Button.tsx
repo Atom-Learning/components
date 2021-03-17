@@ -145,7 +145,6 @@ type ButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
-    fullWidth?: boolean
     onClick?: () => void
     as?: React.ComponentType | React.ElementType
   }

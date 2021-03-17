@@ -10,11 +10,13 @@ const StyledUL = styled('ul', {
   fontFamily: '$sans',
   pl: '$3',
   [`& ${StyledListItem}`]: {
-    mb: '$2',
     pl: '$2',
     '&::marker': {
       content: '"•"',
       fontWeight: 'bold'
+    },
+    '&:not(:last-child)': {
+      mb: '$2'
     }
   },
   variants: {
