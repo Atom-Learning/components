@@ -1,7 +1,24 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
+import { capsize, Override } from '~/utilities'
+
+export const textVariantSize = {
+  sm: {
+    fontSize: '$sm',
+    lineHeight: 1.53
+  },
+  md: {
+    fontSize: '$md',
+    lineHeight: 1.625,
+    ...capsize('-0.4489em')
+  },
+  lg: {
+    fontSize: '$lg',
+    lineHeight: 1.52,
+    ...capsize('-0.3983em')
+  }
+}
 
 const StyledParagraph = styled('p', {
   color: '$tonal900',
@@ -10,23 +27,7 @@ const StyledParagraph = styled('p', {
   margin: 0,
   maxWidth: '60ch',
   variants: {
-    size: {
-      sm: {
-        fontSize: '$sm',
-        letterSpacing: '0.01em',
-        lineHeight: 1.6
-      },
-      md: {
-        fontSize: '$md',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      },
-      lg: {
-        fontSize: '$lg',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      }
-    }
+    size: textVariantSize
   }
 })
 

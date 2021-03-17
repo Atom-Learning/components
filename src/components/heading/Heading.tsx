@@ -1,19 +1,35 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
+import { capsize, Override } from '~/utilities'
 
 const StyledHeading = styled('h1', {
   color: '$tonal-900',
   fontFamily: '$sans',
-  fontWeight: '700',
+  fontWeight: 700,
   margin: 0,
-  lineHeight: '1.4',
   variants: {
     size: {
-      sm: { fontSize: '$lg', letterSpacing: '0.01em' },
-      md: { fontSize: '$xl', letterSpacing: '0.02em' },
-      lg: { fontSize: '$xxl', letterSpacing: '0.02em' }
+      xs: {
+        fontSize: '$md',
+        lineHeight: 1.625,
+        ...capsize('-0.4489em')
+      },
+      sm: {
+        fontSize: '$lg',
+        lineHeight: 1.52,
+        ...capsize('-0.3983em')
+      },
+      md: {
+        fontSize: '$xl',
+        lineHeight: 1.42,
+        ...capsize('-0.3506em')
+      },
+      lg: {
+        fontSize: '$xxl',
+        lineHeight: 1.35,
+        ...capsize('-0.312em')
+      }
     }
   }
 })
@@ -22,7 +38,7 @@ type HeadingProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
     as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
-    size?: 'sm' | 'md' | 'lg'
+    size?: 'xs' | 'sm' | 'md' | 'lg'
   }
 >
 

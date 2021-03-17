@@ -3,6 +3,8 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
+import { textVariantSize } from '../text'
+
 const StyledLink = styled('a', {
   color: '$primary500',
   fontFamily: '$sans',
@@ -12,23 +14,7 @@ const StyledLink = styled('a', {
   '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
   '&:active': { color: '$primary500' },
   variants: {
-    size: {
-      sm: {
-        fontSize: '$sm',
-        letterSpacing: '0.01em',
-        lineHeight: 1.6
-      },
-      md: {
-        fontSize: '$md',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      },
-      lg: {
-        fontSize: '$lg',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      }
-    }
+    size: textVariantSize
   }
 })
 
