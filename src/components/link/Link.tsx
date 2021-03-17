@@ -14,10 +14,7 @@ const StyledLink = styled('a', {
   '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
   '&:active': { color: '$primary500' },
   variants: {
-    size: {
-      sm: textVariantSize.sm,
-      md: textVariantSize.md
-    }
+    size: textVariantSize
   }
 })
 

@@ -88,9 +88,26 @@ exports[`Link component renders an large anchor 1`] = `
   display: table;
 }
 
+.sxn6u9yg0h8h--size-lg {
+  font-size: var(--fontSizes-lg);
+  line-height: 1.52;
+}
+
+.sxn6u9yg0h8h--size-lg::before {
+  content: '';
+  margin-bottom: -0.3983em;
+  display: table;
+}
+
+.sxn6u9yg0h8h--size-lg::after {
+  content: '';
+  margin-top: -0.3983em;
+  display: table;
+}
+
 <div>
   <a
-    class="sxn6u9y"
+    class="sxn6u9y sxn6u9yg0h8h--size-lg"
     href="https://google.com/"
   >
     GOOGLE
