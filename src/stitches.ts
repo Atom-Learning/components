@@ -1,8 +1,8 @@
 import atomTheme from '@atom-learning/theme'
 import { createCss, StitchesCss } from '@stitches/react'
 
-type CSSValue = number | string
-type CSSBlob = { [key: string]: CSSValue }
+export type CSSValue = number | string
+export type CSSBlob = { [key: string]: CSSValue }
 
 // TODO: assess how intuitive the team finds these
 export const utils = {

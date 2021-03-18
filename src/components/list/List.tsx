@@ -37,7 +37,7 @@ const StyledUL = styled('ul', {
         }
       }
     },
-    size: textVariantSize
+    size: textVariantSize()
   }
 })
 
