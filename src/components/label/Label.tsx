@@ -5,6 +5,8 @@ import { Override } from '~/utilities/types'
 
 import { textVariantSize } from '../text'
 
+const { sm, md } = textVariantSize()
+
 const StyledLabel = styled('label', {
   color: '$secondary300',
   display: 'block',
@@ -12,12 +14,10 @@ const StyledLabel = styled('label', {
   fontWeight: 500,
   margin: 0,
   variants: {
-    size: {
-      sm: textVariantSize.sm,
-      md: textVariantSize.md
-    }
+    size: { sm, md }
   }
 })
+
 const StyledAsteriskWrapper = styled('span', { color: '$danger', ml: '$1' })
 
 type LabelProps = Override<

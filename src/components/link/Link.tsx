@@ -10,11 +10,15 @@ const StyledLink = styled('a', {
   fontFamily: '$sans',
   textDecoration: 'none',
   cursor: 'pointer',
-  '&:visited': { color: '$primary500' },
-  '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
-  '&:active': { color: '$primary500' },
+  '&:focus, &:hover': {
+    color: '$primary900',
+    textDecoration: 'underline'
+  },
+  '&:active, &:visited': {
+    color: '$primary500'
+  },
   variants: {
-    size: textVariantSize
+    size: textVariantSize({ applyCapsize: false })
   }
 })
 
