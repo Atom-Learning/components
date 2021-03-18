@@ -1,0 +1,149 @@
+---
+title: Stitches
+description: Stitches is our styling library of choice, it leans on modern CSS best practices, has near-zero runtime, and provides a great developer experience
+category: Overview
+priority: 3
+---
+
+To read about Stitches in more depth you can refer to the [official documentation](https://stitches.dev/), the information provided here is mainly focused on the choices we made to configure Stitches for the component library.
+
+`@atom-learning/components` exports not only a collection of React components built with Stitches but also the full Stitches library to allow full use of `styled()` and other related methods. This enables you to write more complex components with variants, typed tokens, descendant selectors, keyframe animations and more, some of which are unavailable when using `css`.
+
+When creating a new component alongside the component library we recommend that you utilise the `styled()` function to maintain a consistent component API. This will automatically provide `as` and `css` to the user without any extra configuration, in a way that `<Box />` or another generic layout component wouldn't.
+
+## Utilities
+
+Stitches enables you to create shorthand utilities to improve the CSS authoring experience within `styled()` or `css`. We have provided an initial set of utilities that should be a useful starting point when composing components with a need to provide contextual layout or styles.
+
+A quick example using `bg` and `size` to create a little blue square.
+
+```jsx preview
+<Box css={{ bg: '$primary200', size: 100 }} />
+```
+
+The full list of utilties below
+
+```ts
+export const utils = {
+  p: () => (value: CSSValue): CSSBlob => ({
+    padding: value
+  }),
+  pt: () => (value: CSSValue): CSSBlob => ({
+    paddingTop: value
+  }),
+  pr: () => (value: CSSValue): CSSBlob => ({
+    paddingRight: value
+  }),
+  pb: () => (value: CSSValue): CSSBlob => ({
+    paddingBottom: value
+  }),
+  pl: () => (value: CSSValue): CSSBlob => ({
+    paddingLeft: value
+  }),
+  px: () => (value: CSSValue): CSSBlob => ({
+    paddingLeft: value,
+    paddingRight: value
+  }),
+  py: () => (value: CSSValue): CSSBlob => ({
+    paddingTop: value,
+    paddingBottom: value
+  }),
+
+  m: () => (value: CSSValue): CSSBlob => ({
+    margin: value
+  }),
+  mt: () => (value: CSSValue): CSSBlob => ({
+    marginTop: value
+  }),
+  mr: () => (value: CSSValue): CSSBlob => ({
+    marginRight: value
+  }),
+  mb: () => (value: CSSValue): CSSBlob => ({
+    marginBottom: value
+  }),
+  ml: () => (value: CSSValue): CSSBlob => ({
+    marginLeft: value
+  }),
+  mx: () => (value: CSSValue): CSSBlob => ({
+    marginLeft: value,
+    marginRight: value
+  }),
+  my: () => (value: CSSValue): CSSBlob => ({
+    marginTop: value,
+    marginBottom: value
+  }),
+
+  bg: () => (value: string): CSSBlob => ({
+    background: value
+  }),
+
+  size: () => (value: CSSValue | Array<CSSValue>): CSSBlob => {
+    if (Array.isArray(value)) {
+      const [height, width] = value
+      return {
+        height,
+        width
+      }
+    }
+    return {
+      height: value,
+      width: value
+    }
+  }
+}
+```
+
+## Media Queries / Conditions
+
+Stitches also has responsive styles built into its API, we've provided an initial set of mobile-first breakpoints alongside feature queries like `prefers-reduced-motion`.
+
+```ts
+export const conditions = {
+  sm: `@media (min-width: 550px)`,
+  md: `@media (min-width: 800px)`,
+  lg: `@media (min-width: 1100px)`,
+  xl: `@media (min-width: 1350px)`,
+  motion: `@media (prefers-reduced-motion)`,
+  hover: `@media (hover: hover)`
+}
+```
+
+You can use these in `styled()` or `css` within a `when` key
+
+```jsx
+const Section = styled('section', {
+  padding: '$2',
+  when: {
+    md: { padding: '$3' }
+  }
+})
+```
+
+```jsx
+<Text
+  css={{
+    color: '$tonal900',
+    when: {
+      md: { color: '$primary500' },
+      lg: { color: '$secondary700' }
+    }
+  }}
+>
+  Hello World
+</Text>
+```
+
+You can also use them to switch [variants](https://stitches.dev/docs/variants)
+
+```jsx
+<Button
+  // change the 'theme' to 'secondary' when you trigger the 'md' breakpoint
+  theme={{ initial: 'primary', md: 'secondary' }}
+  // change the 'size' to 'md' when you trigger the 'sm' breakpoint
+  size: {{ initial: 'sm', sm: 'md' }}
+>
+  Click me
+</Button>
+```
+
+Read more about responsive styling on the [Stitches docs](https://stitches.dev/docs/responsive-styles)
