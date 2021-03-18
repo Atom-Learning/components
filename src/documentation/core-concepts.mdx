@@ -2,6 +2,7 @@
 title: Core concepts
 description: These concepts will help you be more productive with our components
 category: Overview
+priority: 2
 ---
 
 These components are intended to provide an abstraction over HTML elements and interactive components, providing an interface to ease creation of user interfaces in React. This library isn't comprehensive, but it should provide enough primitive, low-level components to be able to easily create pages, layouts, content, forms, as well as using them to compose more complex components with additional logic.
@@ -50,4 +51,4 @@ The benefit of using the `css` prop as opposed to writing inline styles is that 
 
 [stitches](https://stitches.dev) uses the [System UI](https://system-ui.com/theme/) theme specification to map UI specific values to their corresponding CSS property. For the full table, refer to the [tokens reference](/theme/tokens).
 
-Our tokens come in two main forms, values and scales. As an example, for `padding` or `margin`, the token represents the nth value on the spacing scale, e.g. `padding: '$2'` will render `padding: '8px'`. Whereas for a property like `color`, it looks up the `colors` tokens and uses the value directly, e.g. `color: '$warning'` will render `color: 'hsl(24 ,100%, 55%)'`
+Our tokens come in two main forms, values and scales. As an example, for `padding` or `margin`, the token represents the nth value on the spacing scale, e.g. `padding: '$2'` will render `padding: '8px'`. Whereas for a property like `color`, it looks up the `colors` tokens and uses the value directly, e.g. `color: '$warning'` will render `color: 'hsl(24 ,100%, 55%)'`.
