@@ -92,14 +92,6 @@ Adding `live` will render the code and adds the ability to live edit
 ```
 ````
 
-Combine either of the two previous attributes with `center` to center the component within the preview
-
-````md
-```jsx preview
-<Button />
-```
-````
-
 ## Tests
 
 Please write tests to cover all the user interactions with a component. The target is to have as much test coverage as possible. Coverage is calculated when running the tests.
