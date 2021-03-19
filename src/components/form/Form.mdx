@@ -115,9 +115,10 @@ Here are two email input field examples. The first is a wrapper around an `Input
 but for more complex use cases you can use the manual composition here as a guide.
 
 ```tsx
-const EmailField = ({ register, error, validation, ...rest }) => {
+const EmailField = ({ name, register, error, validation, ...rest }) => {
   return (
     <InputField
+      name={name}
       css={{ mb: '$3' }}
       autoComplete="email"
       label="Email address"
@@ -141,8 +142,7 @@ const EmailField = ({ register, error, validation, ...rest }) => {
 ```tsx
 const EmailField = ({
   css = {},
-  label = '',
-  name = '',
+  name,
   error = null,
   register = null,
   validation = {},
