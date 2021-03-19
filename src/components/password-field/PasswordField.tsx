@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
+import { ValidationOptions } from '~/components/form'
 import { Eye, EyeOff, Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
@@ -20,9 +21,12 @@ type PasswordFieldProps = InputProps & {
   prompt?: Prompt
   hidePasswordText?: string
   showPasswordText?: string
-  register?: React.ForwardedRef<HTMLInputElement>
+  register?: (
+    validation: ValidationOptions
+  ) => React.ForwardedRef<HTMLInputElement>
   error?: string
   required?: boolean
+  validation?: ValidationOptions
 }
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
@@ -35,11 +39,19 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   prompt = undefined,
   required = false,
   register = undefined,
+  validation,
   ...remainingProps
 }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
   const togglePasswordVisibility = () =>
     setIsPasswordVisible((currentState) => !currentState)
+
+  let ref
+  if (register && validation) {
+    ref = register(validation)
+  } else if (register) {
+    ref = register
+  }
 
   return (
     <Box css={{ position: 'relative', ...(css as any) }}>
@@ -68,7 +80,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           name={name}
           id={name}
           required={required}
-          ref={register}
+          ref={ref}
           {...remainingProps}
         />
         <InvisibleButton
