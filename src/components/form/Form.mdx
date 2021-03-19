@@ -5,13 +5,15 @@ description: Form abstracts form validation logic away from the view code
 category: Forms
 ---
 
+## General
+
 `Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic. When validation happens depends on the `validationMode` prop, which accepts `"onBlur" | "onSubmit"` and defaults to `"onBlur"`.
 
 `Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
 
 - `error`: `string` (for validation errors)
-- `register`: `React.ForwardedRef<HTML*Element>` (e.g. `React.ForwardedRef<HTMLInputElement>` or `React.ForwardedRef<HTMLSelectElement>` depending on what your field renders. Only used internally by the `Form` to keep track of the field's value)
-- `validation`: `ValidationOptions` ()
+- `register`: `(validation: ValidationOptions) => React.ForwardedRef<HTML*Element>` (e.g. `React.ForwardedRef<HTMLInputElement>` or `React.ForwardedRef<HTMLSelectElement>` depending on what your field renders.)
+- `validation`: `ValidationOptions`
 
 ## ValidationOptions
 
@@ -83,3 +85,91 @@ These properties only apply to text inputs. If `true`, the value will be convert
 ### Custom processing
 
 The `process` property accepts a function of type `(value: any) => any`. It can be used to process the value after validation.
+
+## Composing form field components
+
+It's easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `ValidationError` etc) but there are some requirements that your new
+field must meet in order to be fully compatible with our `Form`.
+
+### Props
+
+Your custom form field component must take the props specified in [General](#General)
+
+#### error
+
+`error` should be displayed in a `ValidationError` when present. You don't need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
+
+#### validation
+
+`validation` allows users of your component to add custom validation rules to it as specified above
+
+#### register
+
+If you don't need to add any default validation to your component, then pass `register?.(validation)` down to the `Input` (or `Select`, etc) component's `ref` prop.
+If you do want to add default validation, pass something like this: `register?.({ maxLength: {value: 2, message: "short data only!" },...validation })`. Note that optional chaining is
+important here to protect from runtime errors if your field gets rendered outside of a `Form`.
+
+### Examples
+
+Here are two email input field examples. The first is a wrapper around an `InputField` and the second is manually composed from lower-level components. If wrapping `InputField` is an option then you should take it,
+but for more complex use cases you can use the manual composition here as a guide.
+
+```tsx
+const EmailField = ({ register, error, validation, ...rest }) => {
+  return (
+    <InputField
+      css={{ mb: '$3' }}
+      autoComplete="email"
+      label="Email address"
+      type="email"
+      register={register}
+      validation={{
+        required: 'email address is required',
+        pattern: {
+          value: /.+@.+\..+/,
+          message: 'please enter a valid email address'
+        },
+        ...validation
+      }}
+      error={error}
+      {...rest}
+    />
+  )
+}
+```
+
+```tsx
+const EmailField = ({
+  css = {},
+  label = '',
+  name = '',
+  error = null,
+  register = null,
+  validation = {},
+  required,
+  ...rest
+}) => (
+  <Box css={css}>
+    <Label required={required} css={{ mb: '$2' }}>
+      Email
+    </Label>
+    <Input
+      autoComplete="email"
+      label="Email address"
+      name={name}
+      type="email"
+      ref={register?.({
+        required: 'email address is required',
+        pattern: {
+          value: /.+@.+\..+/,
+          message: 'please enter a valid email address'
+        },
+        ...validation
+      })}
+      error={error}
+      {...rest}
+    />
+    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+  </Box>
+)
+```

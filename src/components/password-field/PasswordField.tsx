@@ -10,6 +10,8 @@ import { Link } from '~/components/link'
 import { ValidationError } from '~/components/validation-error'
 import { styled } from '~/stitches'
 
+import { ValidationOptions } from '../form'
+
 type Prompt = {
   label: string
   link: string
@@ -20,9 +22,12 @@ type PasswordFieldProps = InputProps & {
   prompt?: Prompt
   hidePasswordText?: string
   showPasswordText?: string
-  register?: React.ForwardedRef<HTMLInputElement>
+  register?: (
+    validation: ValidationOptions
+  ) => React.ForwardedRef<HTMLInputElement>
   error?: string
   required?: boolean
+  validation?: ValidationOptions
 }
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
@@ -35,11 +40,21 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   prompt = undefined,
   required = false,
   register = undefined,
+  validation,
   ...remainingProps
 }) => {
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
   const togglePasswordVisibility = () =>
     setIsPasswordVisible((currentState) => !currentState)
+
+  let ref
+  if (register && validation) {
+    ref = register(validation)
+  } else if (register) {
+    ref = register
+  } else {
+    ref = undefined
+  }
 
   return (
     <Box css={{ position: 'relative', ...(css as any) }}>
@@ -68,7 +83,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           name={name}
           id={name}
           required={required}
-          ref={register}
+          ref={ref}
           {...remainingProps}
         />
         <InvisibleButton
