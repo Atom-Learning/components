@@ -3,14 +3,13 @@ import { useState } from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
+import { ValidationOptions } from '~/components/form'
 import { Eye, EyeOff, Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import { ValidationError } from '~/components/validation-error'
 import { styled } from '~/stitches'
-
-import { ValidationOptions } from '../form'
 
 type Prompt = {
   label: string
