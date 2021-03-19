@@ -1,6 +1,6 @@
 ---
 title: Core concepts
-description: There are a few key concepts that underpin our component library, these should help with component composition, encapsulated styling and consistent UI
+description: Our component library is underpinned by concepts that help with component composition, encapsulated styling and consistent UI
 category: Overview
 priority: 2
 ---
@@ -21,7 +21,7 @@ To apply the correct semantic element to one of our components, you can use `as`
 <h3>Hello World</h3>
 ```
 
-Some components have a restricted set of valid elements to pass into `as`, for example, `Heading` only allows `h1` through to `h6`, and some components remove the ability to change the HTML element altogether, like `<Select />` or `<Icon />`, which require a certain element to work correctly. Each of these restrictions are detailed on the component documentation under `API Reference`.
+Some components have a restricted set of valid elements to pass into `as`, for example, `Heading` only allows `h1` through to `h6`, and some components remove the ability to change the HTML element altogether, like `<Select />` or `<Icon />` which require a certain element to work correctly, or `<InputField />` which renders multiple elements. Each of these restrictions are detailed on the component documentation under `API Reference`.
 
 Abstracting the underlying HTML from the component is beneficial as it allows us to control the document outline whilst preserving the ability to use a visually distinct style. This is often the case with container elements where you need to render a `section`, `aside`, `nav` or `main`, but still utilise a particular styled component, e.g. `<Panel as="aside" />`
 
@@ -60,6 +60,8 @@ An additional benefit is that we can apply context specific styles to the compon
   }}
 />
 ```
+
+There are multiple cases where a component returns multiple elements, in which case the `css` prop only applies to the containing element.
 
 `@atom-learning/components` also exports the underlying `styled()` function that was used to create these components, refer to the [Stitches page](/components/stitches) to read more about the difference between `css` and `styled()`. You can also read more about our shorthand utilities and other default configuration options.
 

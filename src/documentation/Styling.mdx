@@ -1,6 +1,6 @@
 ---
-title: Stitches
-description: Stitches is our styling library of choice(. I | because i)t leans on modern CSS best practices, has near-zero runtime, and provides a great developer experience
+title: Styling
+description: Stitches is our styling library of choice. It leans on modern CSS best practices, has near-zero runtime, and provides a great developer experience
 category: Overview
 priority: 3
 ---
@@ -21,77 +21,7 @@ A quick example using `bg` and `size` to create a little blue square.
 <Box css={{ bg: '$primary200', size: 100 }} />
 ```
 
-The full list of utilties below
-
-```ts
-export const utils = {
-  p: () => (value: CSSValue): CSSBlob => ({
-    padding: value
-  }),
-  pt: () => (value: CSSValue): CSSBlob => ({
-    paddingTop: value
-  }),
-  pr: () => (value: CSSValue): CSSBlob => ({
-    paddingRight: value
-  }),
-  pb: () => (value: CSSValue): CSSBlob => ({
-    paddingBottom: value
-  }),
-  pl: () => (value: CSSValue): CSSBlob => ({
-    paddingLeft: value
-  }),
-  px: () => (value: CSSValue): CSSBlob => ({
-    paddingLeft: value,
-    paddingRight: value
-  }),
-  py: () => (value: CSSValue): CSSBlob => ({
-    paddingTop: value,
-    paddingBottom: value
-  }),
-
-  m: () => (value: CSSValue): CSSBlob => ({
-    margin: value
-  }),
-  mt: () => (value: CSSValue): CSSBlob => ({
-    marginTop: value
-  }),
-  mr: () => (value: CSSValue): CSSBlob => ({
-    marginRight: value
-  }),
-  mb: () => (value: CSSValue): CSSBlob => ({
-    marginBottom: value
-  }),
-  ml: () => (value: CSSValue): CSSBlob => ({
-    marginLeft: value
-  }),
-  mx: () => (value: CSSValue): CSSBlob => ({
-    marginLeft: value,
-    marginRight: value
-  }),
-  my: () => (value: CSSValue): CSSBlob => ({
-    marginTop: value,
-    marginBottom: value
-  }),
-
-  bg: () => (value: string): CSSBlob => ({
-    background: value
-  }),
-
-  size: () => (value: CSSValue | Array<CSSValue>): CSSBlob => {
-    if (Array.isArray(value)) {
-      const [height, width] = value
-      return {
-        height,
-        width
-      }
-    }
-    return {
-      height: value,
-      width: value
-    }
-  }
-}
-```
+The full list of utilities can be found in the [components repository](https://github.com/Atom-Learning/components/blob/main/src/stitches.ts#L8-L72)
 
 ## Media Queries / Conditions
 
@@ -99,12 +29,12 @@ Stitches also has responsive styles built into its API, we've provided an initia
 
 ```ts
 export const conditions = {
-  sm: `@media (min-width: 550px)`,
-  md: `@media (min-width: 800px)`,
-  lg: `@media (min-width: 1100px)`,
-  xl: `@media (min-width: 1350px)`,
-  motion: `@media (prefers-reduced-motion)`,
-  hover: `@media (hover: hover)`
+  sm: '@media (min-width: 550px)',
+  md: '@media (min-width: 800px)',
+  lg: '@media (min-width: 1100px)',
+  xl: '@media (min-width: 1350px)',
+  motion: '@media (prefers-reduced-motion)',
+  hover: '@media (hover: hover)'
 }
 ```
 
