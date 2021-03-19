@@ -51,7 +51,8 @@ export const Form: React.FC<FormProps> = ({
           key: childProps.name,
           // ensure that any field marked as required in the validation object
           // also receives a true required prop for styling purposes
-          required: childProps.required || !!validation?.required,
+          // DON'T USE OPTIONAL CHAINING - IT BREAKS THE VALIDATION STEP
+          required: validation ? !!validation.required : !!childProps.required,
           validation
         })
       })}
