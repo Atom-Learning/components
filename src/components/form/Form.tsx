@@ -47,9 +47,13 @@ export const Form: React.FC<FormProps> = ({
         return React.createElement(child.type, {
           ...childProps,
           error: fieldError ? fieldError.message : undefined,
-          register: validation ? register(validation) : register,
+          register: register,
           key: childProps.name,
-          required: validation ? !!validation.required : false
+          // ensure that any field marked as required in the validation object
+          // also receives a true required prop for styling purposes
+          // DON'T USE OPTIONAL CHAINING - IT BREAKS THE VALIDATION STEP
+          required: validation ? !!validation.required : !!childProps.required,
+          validation
         })
       })}
     </StyledForm>
