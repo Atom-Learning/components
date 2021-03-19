@@ -6,16 +6,16 @@ category: Overview
 
 ## Directory structure
 
-Use the following directory structure and file naming conventions:
+Use the following directory structure and file naming conventions. You can automate this by running `yarn add-component` in the root directory and following the instructions.
 
 ```
 src/
   components/
-	  component-name/
-	    ComponentName.tsx
-	    ComponentName.test.tsx
-	    ComponentName.mdx
-	    index.ts
+    component-name/
+      ComponentName.tsx
+      ComponentName.test.tsx
+      ComponentName.mdx
+      index.ts
 ```
 
 ## Component API
@@ -88,14 +88,6 @@ Adding `live` will render the code and adds the ability to live edit
 
 ````md
 ```jsx live
-<Button />
-```
-````
-
-Combine either of the two previous attributes with `center` to center the component within the preview
-
-````md
-```jsx preview
 <Button />
 ```
 ````
