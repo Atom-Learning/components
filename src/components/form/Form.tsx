@@ -49,7 +49,7 @@ export const Form: React.FC<FormProps> = ({
           error: fieldError ? fieldError.message : undefined,
           register: register,
           key: childProps.name,
-          // ensure that any field marked as required in the validiation object
+          // ensure that any field marked as required in the validation object
           // also receives a true required prop for styling purposes
           required: childProps.required || !!validation?.required,
           validation

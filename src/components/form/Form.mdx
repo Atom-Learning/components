@@ -106,8 +106,7 @@ Your custom form field component must take the props specified in [General](#Gen
 #### register
 
 If you don't need to add any default validation to your component, then pass `register?.(validation)` down to the `Input` (or `Select`, etc) component's `ref` prop.
-If you do want to add default validation, pass something like this: `register?.({ maxLength: {value: 2, message: "short data only!" },...validation })`. Note that optional chaining is
-important here to protect from runtime errors if your field gets rendered outside of a `Form`.
+If you do want to add default validation, pass something like this: `register?.({ maxLength: {value: 2, message: "short data only!" },...validation })` (but check that `validation is truthy first, or default it to an empty object!). Note that optional chaining is important here to protect from runtime errors if your field gets rendered outside of a `Form`.
 
 ### Examples
 
@@ -115,7 +114,7 @@ Here are two email input field examples. The first is a wrapper around an `Input
 but for more complex use cases you can use the manual composition here as a guide.
 
 ```tsx
-const EmailField = ({ name, register, error, validation, ...rest }) => {
+const EmailField = ({ name, register, error, validation = {}, ...rest }) => {
   return (
     <InputField
       name={name}

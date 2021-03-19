@@ -33,8 +33,6 @@ export const InputField: React.FC<InputFieldProps> = ({
     ref = register(validation)
   } else if (register) {
     ref = register
-  } else {
-    ref = undefined
   }
 
   return (

@@ -52,8 +52,6 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
     ref = register(validation)
   } else if (register) {
     ref = register
-  } else {
-    ref = undefined
   }
 
   return (
