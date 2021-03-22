@@ -109,12 +109,11 @@
     "@radix-ui/react-progress": "^0.0.5",
     "@radix-ui/react-radio-group": "^0.0.5",
     "@radix-ui/react-visually-hidden": "^0.0.5",
-    "@stitches/react": "0.1.0-canary.5",
+    "@stitches/react": "^0.1.0",
     "@types/react": "^17.0.2",
     "@types/resize-observer-browser": "^0.1.5",
     "react-hook-form": "^6.15.4",
-    "react-player": "^2.9.0",
-    "rollup-plugin-url": "^3.0.1"
+    "react-player": "^2.9.0"
   },
   "husky": {
     "hooks": {

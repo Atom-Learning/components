@@ -2,7 +2,7 @@ import atomTheme from '@atom-learning/theme'
 import { createCss, StitchesCss } from '@stitches/react'
 
 type CSSValue = number | string
-type CSSBlob = { [key: string]: CSSValue }
+type CSSBlob = Record<string, CSSValue>
 
 // TODO: assess how intuitive the team finds these
 export const utils = {
@@ -71,19 +71,19 @@ export const utils = {
   }
 }
 
-export const conditions = {
-  sm: `@media (min-width: 550px)`,
-  md: `@media (min-width: 800px)`,
-  lg: `@media (min-width: 1100px)`,
-  xl: `@media (min-width: 1350px)`,
-  motion: `@media (prefers-reduced-motion)`,
-  hover: `@media (hover: hover)`
+export const media = {
+  sm: '(min-width: 550px)',
+  md: '(min-width: 800px)',
+  lg: '(min-width: 1100px)',
+  xl: '(min-width: 1350px)',
+  reducedMotion: '(prefers-reduced-motion)',
+  hover: '(hover: hover)'
 }
 
 const stitchesConfig = createCss({
   theme: atomTheme,
   utils,
-  conditions
+  media
 })
 
 export const {

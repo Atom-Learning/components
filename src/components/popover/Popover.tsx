@@ -3,35 +3,32 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
+const trianglePseudoElementStyles = {
+  borderStyle: 'solid',
+  borderColor: 'transparent',
+  content: '""',
+  height: 0,
+  pointerEvents: 'none',
+  position: 'absolute',
+  top: '100%',
+  width: 0
+}
+
 const getTriangle = (position) => {
   const size = 8
   const border = '$tonal400'
 
   return {
+    // Combined pseduo-selectors '&::after, &::before' doesn't work in stitches
     '&::after': {
-      // Pseudo-classes need to be separated ($::after, $::before: doesn't work in stitches work)
-      borderStyle: 'solid',
-      borderColor: 'transparent',
-      content: "''", //  quotes need to be escapted as a stitches workaround for pseudoclasses
-      height: 0,
-      pointerEvents: 'none',
-      position: 'absolute',
-      top: '100%',
-      width: 0,
+      ...trianglePseudoElementStyles,
       borderTopColor: 'white',
       borderWidth: size,
       ml: -size,
       ...position
     },
     '&::before': {
-      borderStyle: 'solid',
-      borderColor: 'transparent',
-      content: "''",
-      height: 0,
-      pointerEvents: 'none',
-      position: 'absolute',
-      top: '100%',
-      width: 0,
+      ...trianglePseudoElementStyles,
       borderTopColor: border,
       borderWidth: size + 1,
       ml: -(size + 1),
@@ -89,9 +86,7 @@ const StyledPopoverContent = styled('div', {
 })
 
 type PopoverProps = Override<
-  React.ComponentPropsWithRef<
-    typeof StyledPopoverContent & typeof StyledPopover
-  >,
+  React.ComponentPropsWithRef<typeof StyledPopover>,
   {
     id?: string
     content: string
