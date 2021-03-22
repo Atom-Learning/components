@@ -27,11 +27,11 @@ exports[`Loader component renders a loader 1`] = `
   display: flex;
 }
 
-.sx2cs5323as4--css {
+.sx2cs53-23as4 {
   justify-content: center;
 }
 
-.sx0yv19 {
+.sx4m3y2 {
   animation-name: sxwho2l;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -41,31 +41,28 @@ exports[`Loader component renders a loader 1`] = `
   border-radius: 100%;
 }
 
-.sx0yv19:nth-child(1) {
+.sx4m3y2:nth-child(1) {
   animation-delay: -300ms;
 }
 
-.sx0yv19:nth-child(2) {
+.sx4m3y2:nth-child(2) {
   animation-delay: -150ms;
 }
 
-.sx0yv19:nth-child(3) {
+.sx4m3y2:nth-child(3) {
   animation-delay: 0;
 }
 
-.sx0yv194btw3--size-md {
+.sx4m3y24btw3--size-md {
   height: 6px;
   width: 6px;
-}
-
-.sx0yv194btw3--size-md {
   margin-left: 2px;
   margin-right: 2px;
 }
 
 <div>
   <div
-    class="sx2cs53 sx2cs5323as4--css"
+    class="sx2cs53 sx2cs53-23as4"
     role="alert"
   >
     <span
@@ -75,13 +72,13 @@ exports[`Loader component renders a loader 1`] = `
       Content is loading
     </span>
     <div
-      class="sx0yv19 sx0yv194btw3--size-md"
+      class="sx4m3y2 sx4m3y24btw3--size-md"
     />
     <div
-      class="sx0yv19 sx0yv194btw3--size-md"
+      class="sx4m3y2 sx4m3y24btw3--size-md"
     />
     <div
-      class="sx0yv19 sx0yv194btw3--size-md"
+      class="sx4m3y2 sx4m3y24btw3--size-md"
     />
   </div>
 </div>

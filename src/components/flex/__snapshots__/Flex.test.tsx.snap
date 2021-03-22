@@ -5,18 +5,15 @@ exports[`Flex component renders 1`] = `
   display: flex;
 }
 
-.sx2cs536obnf--css {
+.sx2cs53-6obnf {
   margin: auto;
-}
-
-.sx2cs536obnf--css {
   height: 100px;
   width: 100px;
 }
 
 <div>
   <div
-    class="sx2cs53 sx2cs536obnf--css"
+    class="sx2cs53 sx2cs53-6obnf"
   >
     FLEX
   </div>
