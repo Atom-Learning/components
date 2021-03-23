@@ -6,7 +6,7 @@ import { Override } from '~/utilities/types'
 const trianglePseudoElementStyles = {
   borderStyle: 'solid',
   borderColor: 'transparent',
-  content: '""',
+  content: "''",
   height: 0,
   pointerEvents: 'none',
   position: 'absolute',
