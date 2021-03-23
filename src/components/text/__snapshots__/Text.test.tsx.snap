@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text component renders some text 1`] = `
-.sxhod8r {
+.sxhudno {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
   font-weight: 400;
@@ -9,18 +9,18 @@ exports[`Text component renders some text 1`] = `
   max-width: 60ch;
 }
 
-.sxhod8rjqqvr--size-md {
+.sxhudnojqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxhod8rjqqvr--size-md::before {
+.sxhudnojqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxhod8rjqqvr--size-md::after {
+.sxhudnojqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
@@ -28,7 +28,7 @@ exports[`Text component renders some text 1`] = `
 
 <div>
   <p
-    class="sxhod8r sxhod8rjqqvr--size-md"
+    class="sxhudno sxhudnojqqvr--size-md"
   >
     TEXT
   </p>

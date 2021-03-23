@@ -37,7 +37,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
   cursor: not-allowed;
 }
 
-.sxd964z {
+.sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
@@ -45,24 +45,24 @@ exports[`InputField component renders a field with a  number input 1`] = `
   margin: 0;
 }
 
-.sxd964zjqqvr--size-md {
+.sxdiu5cjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxd964zjqqvr--size-md::before {
+.sxdiu5cjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxd964zjqqvr--size-md::after {
+.sxdiu5cjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
 }
 
-.sxd964z-b2uuy {
+.sxdiu5c-b2uuy {
   margin-bottom: var(--space-2);
 }
 
@@ -71,7 +71,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
     class="sx03kze sx03kze-6obnf"
   >
     <label
-      class="sxd964z sxd964zjqqvr--size-md sxd964z-b2uuy"
+      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
       for="INPUT FIELD"
     >
       INPUT FIELD
@@ -126,7 +126,7 @@ exports[`InputField component renders a field with a text input 1`] = `
   cursor: not-allowed;
 }
 
-.sxd964z {
+.sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
@@ -134,24 +134,24 @@ exports[`InputField component renders a field with a text input 1`] = `
   margin: 0;
 }
 
-.sxd964zjqqvr--size-md {
+.sxdiu5cjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxd964zjqqvr--size-md::before {
+.sxdiu5cjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxd964zjqqvr--size-md::after {
+.sxdiu5cjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
 }
 
-.sxd964z-b2uuy {
+.sxdiu5c-b2uuy {
   margin-bottom: var(--space-2);
 }
 
@@ -160,7 +160,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     class="sx03kze sx03kze-6obnf"
   >
     <label
-      class="sxd964z sxd964zjqqvr--size-md sxd964z-b2uuy"
+      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
       for="INPUT FIELD"
     >
       INPUT FIELD

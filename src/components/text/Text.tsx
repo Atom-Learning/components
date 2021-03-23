@@ -9,7 +9,8 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
 > => ({
   sm: {
     fontSize: '$sm',
-    lineHeight: 1.53
+    lineHeight: 1.69,
+    ...(applyCapsize ? capsize('-0.477em') : {})
   },
   md: {
     fontSize: '$md',
