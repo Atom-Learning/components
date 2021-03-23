@@ -2,6 +2,7 @@
 
 exports[`Checkbox component renders a checkbox 1`] = `
 .sxj3m6q {
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   border: none;

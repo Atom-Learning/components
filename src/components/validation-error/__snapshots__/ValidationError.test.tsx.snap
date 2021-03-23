@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sxeds20 {
+.sxhod8r {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
   font-weight: 400;
@@ -9,18 +9,18 @@ exports[`ValidationError component renders a validation error 1`] = `
   max-width: 60ch;
 }
 
-.sxeds200nw35--size-sm {
+.sxhod8r0nw35--size-sm {
   font-size: var(--fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxeds2025jen--css {
+.sxhod8r-25jen {
   color: var(--colors-danger);
 }
 
 <div>
   <p
-    class="sxeds20 sxeds200nw35--size-sm sxeds2025jen--css"
+    class="sxhod8r sxhod8r0nw35--size-sm sxhod8r-25jen"
   >
     VALIDATION ERROR
   </p>

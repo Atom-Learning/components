@@ -2,6 +2,7 @@
 
 exports[`Select component renders a select with 3 options 1`] = `
 .sx1ewm2 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231066b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%3C%2Fsvg%3E);
@@ -19,14 +20,8 @@ exports[`Select component renders a select with 3 options 1`] = `
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
-}
-
-.sx1ewm2 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sx1ewm2 {
   transition: all 75ms ease-out;
   width: 100%;
 }
@@ -78,6 +73,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 
 exports[`Select component renders an disabled select 1`] = `
 .sx1ewm2 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231066b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%3C%2Fsvg%3E);
@@ -95,14 +91,8 @@ exports[`Select component renders an disabled select 1`] = `
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
-}
-
-.sx1ewm2 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sx1ewm2 {
   transition: all 75ms ease-out;
   width: 100%;
 }
@@ -139,6 +129,7 @@ exports[`Select component renders an disabled select 1`] = `
 
 exports[`Select component renders select with a default option 1`] = `
 .sx1ewm2 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231066b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%3C%2Fsvg%3E);
@@ -156,14 +147,8 @@ exports[`Select component renders select with a default option 1`] = `
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
-}
-
-.sx1ewm2 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sx1ewm2 {
   transition: all 75ms ease-out;
   width: 100%;
 }
@@ -218,6 +203,7 @@ exports[`Select component renders select with a default option 1`] = `
 
 exports[`Select component renders select with a disabled option 1`] = `
 .sx1ewm2 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231066b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%3C%2Fsvg%3E);
@@ -235,14 +221,8 @@ exports[`Select component renders select with a disabled option 1`] = `
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
-}
-
-.sx1ewm2 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sx1ewm2 {
   transition: all 75ms ease-out;
   width: 100%;
 }
@@ -300,6 +280,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 
 exports[`Select component renders select with no options 1`] = `
 .sx1ewm2 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231066b2%22%20d%3D%22M287%2069a18%2018%200%2000-13-5H18c-5%200-9%202-12%205a18%2018%200%2000-6%2013c0%205%202%2010%205%2013l128%20128c4%204%208%205%2013%205s9-1%2013-5L287%2095c4-3%205-8%205-13s-2-9-5-13z%22%2F%3E%3C%2Fsvg%3E);
@@ -317,14 +298,8 @@ exports[`Select component renders select with no options 1`] = `
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
-}
-
-.sx1ewm2 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sx1ewm2 {
   transition: all 75ms ease-out;
   width: 100%;
 }

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
-.sxg17rf {
+.sxifhea {
   border-radius: 25px;
   height: 12px;
   position: relative;
@@ -9,7 +9,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
   width: 100%;
 }
 
-.sxg17rf4bknw--comp {
+.sxifhea4bknw--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
@@ -27,7 +27,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxg17rf sxg17rf4bknw--comp sxg17rf03kze--appearance-outline sxg17rf03kze--theme-primary"
+    class="sxifhea sxifhea03kze--appearance-outline sxifhea03kze--theme-primary sxifhea4bknw--c2"
     data-max="100"
     data-radix-progress=""
     data-state="indeterminate"
@@ -45,7 +45,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 `;
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
-.sxg17rf {
+.sxifhea {
   border-radius: 25px;
   height: 12px;
   position: relative;
@@ -53,19 +53,19 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
   width: 100%;
 }
 
-.sxg17rf4bknw--comp {
+.sxifhea4bknw--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
 }
 
-.sxg17rf4qfa7--comp {
+.sxifhea4qfa7--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-secondary500);
 }
 
-.sxg17rfmrg77--comp {
+.sxifheamrg77--c2 {
   background: var(--colors-tonal300);
   color: var(--colors-primary500);
 }
@@ -82,7 +82,7 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxg17rf sxg17rfmrg77--comp sxg17rf03kze--appearance-solid sxg17rf03kze--theme-primary"
+    class="sxifhea sxifhea03kze--appearance-solid sxifhea03kze--theme-primary sxifheamrg77--c2"
     data-max="100"
     data-radix-progress=""
     data-state="indeterminate"

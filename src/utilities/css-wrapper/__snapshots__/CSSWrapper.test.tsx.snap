@@ -9,18 +9,15 @@ exports[`CSSWrapper component doesn't render if not passed CSS blob 1`] = `
 `;
 
 exports[`CSSWrapper component renders if passed CSS blob 1`] = `
-.sx03kze6obnf--css {
+.sx03kze-6obnf {
   margin: auto;
-}
-
-.sx03kze6obnf--css {
   height: 100px;
   width: 100px;
 }
 
 <div>
   <div
-    class="sx03kze sx03kze6obnf--css"
+    class="sx03kze sx03kze-6obnf"
     data-testid="css-wrapper"
   >
     <p>

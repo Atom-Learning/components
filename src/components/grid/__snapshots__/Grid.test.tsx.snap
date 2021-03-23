@@ -5,18 +5,15 @@ exports[`Grid component renders 1`] = `
   display: grid;
 }
 
-.sxsxxpi6obnf--css {
+.sxsxxpi-6obnf {
   margin: auto;
-}
-
-.sxsxxpi6obnf--css {
   height: 100px;
   width: 100px;
 }
 
 <div>
   <div
-    class="sxsxxpi sxsxxpi6obnf--css"
+    class="sxsxxpi sxsxxpi-6obnf"
   >
     GRID
   </div>
