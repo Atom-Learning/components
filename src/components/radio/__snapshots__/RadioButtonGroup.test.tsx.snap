@@ -5,7 +5,6 @@ exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
   <div
     class="sx03kze"
     role="radiogroup"
-    selector="radix-radio-group"
   />
 </div>
 `;
