@@ -116,8 +116,7 @@
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0",
-    "rollup-plugin-url": "^3.0.1",
-    "throttle-debounce": "^3.0.1"
+    "rollup-plugin-url": "^3.0.1"
   },
   "husky": {
     "hooks": {
