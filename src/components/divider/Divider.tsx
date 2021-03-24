@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 const StyledDivider = styled('hr', {
   border: 0,
   borderTop: '1px solid $tonal400',
-  margin: '2rem auto',
+  margin: '$4 auto',
   maxWidth: '50%'
 })
 
