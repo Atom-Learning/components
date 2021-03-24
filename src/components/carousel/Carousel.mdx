@@ -5,6 +5,16 @@ description: This is the description
 category: Media
 ---
 
+The `Carousel` displays a series of slides that can be swiped between or selected directly via buttons. 
+
+The `Carousel`'s children must be a series of `Carousel.Slide`s. Each `Carousel.Slide` requires an `index` (`number`) so that it can be highlighted correctly when selected.
+
 ```jsx preview
-<Carousel />
+<Carousel slideWidth={200} slideHeight={300}>
+  {[0, 1, 2, 3, 4].map((num) => (
+    <Carousel.Slide key={num} index={num}>
+      <Image src="https://placekitten.com/200/300" />
+    </Carousel.Slide>
+  ))}
+</Carousel>
 ```
