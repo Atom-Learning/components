@@ -1,6 +1,7 @@
 export { Box } from './box'
 export { Button } from './button'
 export { Checkbox } from './checkbox'
+export { Divider } from './divider'
 export { Flex } from './flex'
 export { Form, ValidationOptions } from './form'
 export { Grid } from './grid'
