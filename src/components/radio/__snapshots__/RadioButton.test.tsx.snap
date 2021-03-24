@@ -2,6 +2,7 @@
 
 exports[`Radio component renders a disabled radio 1`] = `
 .sx2kwe7 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   padding: 0;
@@ -68,6 +69,7 @@ exports[`Radio component renders a disabled radio 1`] = `
 
 exports[`Radio component renders a radio 1`] = `
 .sx2kwe7 {
+  -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
   padding: 0;
