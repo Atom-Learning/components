@@ -1,4 +1,5 @@
 import 'regenerator-runtime/runtime'
+import 'pure-react-carousel/dist/react-carousel.es.css'
 
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
@@ -9,20 +10,12 @@ globalCss(reset)()
 
 const App = () => {
   return (
-    <Box>
-      <Carousel slideWidth={200} showDots overflow equalHeights showArrows>
-        {[1, 2, 3, 4, 5].map((num) => (
-          <Image
-            src="http://placekitten.com/200/300"
-            key={num}
-            alt=""
-            // css={{
-            //   size: '100%',
-            //   opactiy: '0.7',
-            //   transition: 'all 0.25s ease-in',
-            //   '[aria-selected="true"] &': { dropShadow: '$2', opactiy: 1 }
-            // }}
-          />
+    <Box css={{ m: '0 auto', width: '250px', pt: '$4' }}>
+      <Carousel slideWidth={200} slideHeight={300}>
+        {[0, 1, 2, 3, 4].map((num) => (
+          <Carousel.Slide key={num} index={num}>
+            <Image src="https://placekitten.com/200/300" />
+          </Carousel.Slide>
         ))}
       </Carousel>
     </Box>

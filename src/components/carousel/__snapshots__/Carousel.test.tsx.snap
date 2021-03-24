@@ -1,3 +1,236 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Carousel component renders 1`] = `<div />`;
+exports[`Carousel component renders 1`] = `
+@keyframes sxwho2l {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.sx03kze1yuy1--css {
+  margin-left: 50%;
+}
+
+.sx03kze1yuy1--css {
+  cursor: grab;
+  overflow: visible !important;
+  transform: translateX(-50%);
+}
+
+.sx03kzef7jkm--css {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs538txt2--css {
+  flex-direction: column;
+}
+
+.sx2cs53px78a--css {
+  justify-content: center;
+}
+
+.sx2cs53px78a--css button {
+  height: 12px;
+  width: 12px;
+}
+
+.sx2cs53px78a--css button {
+  border-radius: 50%;
+  background: var(--colors-tonal300);
+}
+
+.sx2cs53px78a--css button {
+  margin: 0 6px;
+}
+
+.sx2cs53px78a--css button {
+  padding: var(--space-1);
+}
+
+.sx2cs53px78a--css button {
+  border: none;
+}
+
+.sx2cs53px78a--css button[class*="selected"] {
+  background: var(--colors-primary900);
+}
+
+.sxiy5j5 {
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.sxiy5j5[aria-selected="true"] {
+  opacity: 1;
+}
+
+.sxiy5j5[aria-selected="true"] > div > div > * {
+  box-shadow: var(--shadows-1);
+}
+
+.sxeds20 {
+  color: var(--colors-tonal900);
+  font-family: var(--fonts-sans);
+  font-weight: 400;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.sxeds20jqqvr--size-md {
+  font-size: var(--fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxeds20jqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxeds20jqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+<div>
+  <div
+    class="carousel"
+  >
+    <div
+      class="sx2cs53 sx2cs538txt2--css"
+    >
+      <div
+        aria-label="Example carousel"
+        aria-live="polite"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze1yuy1--css"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
+        >
+          <div
+            class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
+            style="width: 300%; transform: translateX(0%) translateX(0px); flex-direction: row;"
+          >
+            <div
+              aria-selected="true"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sxiy5j5"
+              role="option"
+              style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+              tabindex="0"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kzef7jkm--css"
+                >
+                  <p
+                    class="sxeds20 sxeds20jqqvr--size-md"
+                  >
+                    Slide 
+                    0
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sxiy5j5"
+              role="option"
+              style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+              tabindex="-1"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kzef7jkm--css"
+                >
+                  <p
+                    class="sxeds20 sxeds20jqqvr--size-md"
+                  >
+                    Slide 
+                    1
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sxiy5j5"
+              role="option"
+              style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+              tabindex="-1"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kzef7jkm--css"
+                >
+                  <p
+                    class="sxeds20 sxeds20jqqvr--size-md"
+                  >
+                    Slide 
+                    2
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel__dot-group sx2cs53 sx2cs53px78a--css"
+      >
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--0 carousel__dot--selected"
+          disabled=""
+          type="button"
+        >
+          <span />
+        </button>
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--1"
+          type="button"
+        >
+          <span />
+        </button>
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--2"
+          type="button"
+        >
+          <span />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

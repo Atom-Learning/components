@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import svgr from '@svgr/rollup'
 import bundleSize from 'rollup-plugin-bundle-size'
+import embedCSS from 'rollup-plugin-embed-css'
 import { terser } from 'rollup-plugin-terser'
 import url from 'rollup-plugin-url'
 
@@ -23,6 +24,7 @@ export default {
   plugins: [
     bundleSize(),
     commonjs(),
+    embedCSS(),
     resolve(),
     isProduction && terser(),
     svgr(),
