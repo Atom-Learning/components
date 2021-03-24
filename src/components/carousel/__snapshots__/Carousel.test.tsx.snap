@@ -23,17 +23,14 @@ exports[`Carousel component renders 1`] = `
   }
 }
 
-.sx03kze1yuy1--css {
+.sx03kze-1yuy1 {
   margin-left: 50%;
-}
-
-.sx03kze1yuy1--css {
   cursor: grab;
   overflow: visible !important;
   transform: translateX(-50%);
 }
 
-.sx03kzef7jkm--css {
+.sx03kze-f7jkm {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
 }
@@ -42,37 +39,25 @@ exports[`Carousel component renders 1`] = `
   display: flex;
 }
 
-.sx2cs538txt2--css {
+.sx2cs53-8txt2 {
   flex-direction: column;
 }
 
-.sx2cs53px78a--css {
+.sx2cs53-px78a {
   justify-content: center;
 }
 
-.sx2cs53px78a--css button {
+.sx2cs53-px78a button {
   height: 12px;
   width: 12px;
-}
-
-.sx2cs53px78a--css button {
   border-radius: 50%;
   background: var(--colors-tonal300);
-}
-
-.sx2cs53px78a--css button {
   margin: 0 6px;
-}
-
-.sx2cs53px78a--css button {
   padding: var(--space-1);
-}
-
-.sx2cs53px78a--css button {
   border: none;
 }
 
-.sx2cs53px78a--css button[class*="selected"] {
+.sx2cs53-px78a button[class*="selected"] {
   background: var(--colors-primary900);
 }
 
@@ -89,7 +74,7 @@ exports[`Carousel component renders 1`] = `
   box-shadow: var(--shadows-1);
 }
 
-.sxeds20 {
+.sxhod8r {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
   font-weight: 400;
@@ -97,18 +82,18 @@ exports[`Carousel component renders 1`] = `
   max-width: 60ch;
 }
 
-.sxeds20jqqvr--size-md {
+.sxhod8rjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxeds20jqqvr--size-md::before {
+.sxhod8rjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxeds20jqqvr--size-md::after {
+.sxhod8rjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
@@ -119,12 +104,12 @@ exports[`Carousel component renders 1`] = `
     class="carousel"
   >
     <div
-      class="sx2cs53 sx2cs538txt2--css"
+      class="sx2cs53 sx2cs53-8txt2"
     >
       <div
         aria-label="Example carousel"
         aria-live="polite"
-        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze1yuy1--css"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-1yuy1"
         role="listbox"
         tabindex="0"
       >
@@ -146,10 +131,10 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kzef7jkm--css"
+                  class="sx03kze sx03kze-f7jkm"
                 >
                   <p
-                    class="sxeds20 sxeds20jqqvr--size-md"
+                    class="sxhod8r sxhod8rjqqvr--size-md"
                   >
                     Slide 
                     0
@@ -168,10 +153,10 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kzef7jkm--css"
+                  class="sx03kze sx03kze-f7jkm"
                 >
                   <p
-                    class="sxeds20 sxeds20jqqvr--size-md"
+                    class="sxhod8r sxhod8rjqqvr--size-md"
                   >
                     Slide 
                     1
@@ -190,10 +175,10 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kzef7jkm--css"
+                  class="sx03kze sx03kze-f7jkm"
                 >
                   <p
-                    class="sxeds20 sxeds20jqqvr--size-md"
+                    class="sxhod8r sxhod8rjqqvr--size-md"
                   >
                     Slide 
                     2
@@ -205,7 +190,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group sx2cs53 sx2cs53px78a--css"
+        class="carousel__dot-group sx2cs53 sx2cs53-px78a"
       >
         <button
           aria-label="slide dot"
