@@ -1,40 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxwxskx {
+.sx9g3cf {
   font-family: var(--fonts-sans);
   padding-left: var(--space-3);
 }
 
-.sxwxskx .sx03kze {
+.sx9g3cf .sx03kze {
   padding-left: var(--space-2);
 }
 
-.sxwxskx .sx03kze::marker {
+.sx9g3cf .sx03kze::marker {
   content: "•";
   font-weight: bold;
 }
 
-.sxwxskx .sx03kze:not(:last-child) {
+.sx9g3cf .sx03kze:not(:last-child) {
   margin-bottom: var(--space-2);
 }
 
-.sxwxskxk6wac--theme-tonal .sx03kze::marker {
+.sx9g3cfk6wac--theme-tonal .sx03kze::marker {
   color: var(--colors-tonal900);
 }
 
-.sxwxskxjqqvr--size-md {
+.sx9g3cfjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxwxskxjqqvr--size-md::before {
+.sx9g3cfjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxwxskxjqqvr--size-md::after {
+.sx9g3cfjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
@@ -42,7 +42,7 @@ exports[`List component renders a list 1`] = `
 
 <div>
   <ul
-    class="sxwxskx sxwxskxk6wac--theme-tonal sxwxskxjqqvr--size-md"
+    class="sx9g3cf sx9g3cfk6wac--theme-tonal sx9g3cfjqqvr--size-md"
   >
     <li
       class="sx03kze"
