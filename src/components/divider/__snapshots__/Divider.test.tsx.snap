@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component renders 1`] = `
+.sx8imuf {
+  border: 0;
+  border-top: 1px solid var(--colors-tonal400);
+  margin: 2rem auto;
+  max-width: 50%;
+}
+
+<div>
+  <hr
+    class="sx8imuf"
+  />
+</div>
+`;
