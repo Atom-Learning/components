@@ -8,6 +8,7 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c && tsc --emitDeclarationOnly",
@@ -95,6 +96,7 @@
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-url": "^3.0.1",
+    "rollup-plugin-visualizer": "^4.2.2",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.2.1-rc",
