@@ -51,7 +51,11 @@ export const Carousel: React.FC<CarouselProps> & { Slide: typeof Slide } = ({
               transform: 'translateX(-50%)',
               '& div[class*="slide_"]': {
                 float: 'left',
-                pb: '0 !important'
+                pb: '0 !important',
+                '& div[class*="slideInner"]': {
+                  display: 'flex',
+                  justifyContent: 'center'
+                }
               }
             }}
             aria-label={name}

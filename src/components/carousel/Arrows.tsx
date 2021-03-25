@@ -24,6 +24,8 @@ const buttonStyles = {
 
 const StyledButtonBack = styled(ButtonBack, {
   ...buttonStyles,
+  // moving position:absolute to buttonStyles causes TS errors
+  position: 'absolute',
   left: '$2',
   '@md': {
     left: '$3'
@@ -36,6 +38,8 @@ const StyledButtonBack = styled(ButtonBack, {
 const StyledButtonNext = styled(ButtonNext, {
   ...buttonStyles,
   right: '$2',
+  // moving position:absolute to buttonStyles causes TS errors
+  position: 'absolute',
   '@md': {
     right: '$3'
   },
