@@ -2,12 +2,12 @@
 title: Button
 component: Button
 description: The Button component is a light wrapper around an HTML button element.
-category: General
+category: Navigation
 ---
 
 It adds default styling and the `css` prop. By default `primary` theme is displayed with a `solid` appearance.
 
-```jsx live center
+```jsx live
 <Button>Hello world</Button>
 ```
 
@@ -15,7 +15,7 @@ It adds default styling and the `css` prop. By default `primary` theme is displa
 
 These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
-```jsx preview center
+```jsx preview
 <>
   <Button>Primary</Button>
   <Button theme="secondary">Secondary</Button>
@@ -30,7 +30,7 @@ These are the available `themes` for the `Button` component: `Primary` (default)
 
 There two options for the `appearance` property: `solid` and `outline`. These are the available `outline` variations for the `primary`, `secondary` and `tertiary` themes.
 
-```jsx preview center
+```jsx preview
 <>
   <Button appearance="outline">Primary</Button>
   <Button appearance="outline" theme="secondary">
@@ -46,7 +46,7 @@ There two options for the `appearance` property: `solid` and `outline`. These ar
 
 Each variation has an `disabled` stated, by setting the `disabled` property.
 
-```jsx preview center
+```jsx preview
 <>
   <Button disabled>Disabled button</Button>
   <Button theme="success" disabled>
@@ -65,6 +65,6 @@ Each variation has an `disabled` stated, by setting the `disabled` property.
 
 When using a button to request data or fire an action that has a potential delay, including a loading state to the button can be a useful indicator that stuff is happening. The `isLoading` prop must be a boolean value to activate the loading state.
 
-```jsx live center
-<Button isloading> Hello world</Button>
+```jsx live
+<Button isLoading> Hello world</Button>
 ```

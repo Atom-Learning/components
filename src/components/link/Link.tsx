@@ -1,37 +1,31 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { Override } from '~/utilities'
+
+import { textVariantSize } from '../text'
 
 const StyledLink = styled('a', {
   color: '$primary500',
   fontFamily: '$sans',
   textDecoration: 'none',
   cursor: 'pointer',
-  '&:visited': { color: '$primary500' },
-  '&:focus, &:hover': { color: '$primary900', textDecoration: 'underline' },
-  '&:active': { color: '$primary500' },
+  '&:focus, &:hover': {
+    color: '$primary900',
+    textDecoration: 'underline'
+  },
+  '&:active, &:visited': {
+    color: '$primary500'
+  },
   variants: {
-    size: {
-      sm: {
-        fontSize: '$sm',
-        letterSpacing: '0.01em',
-        lineHeight: 1.6
-      },
-      md: {
-        fontSize: '$md',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      },
-      lg: {
-        fontSize: '$lg',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      }
-    }
+    size: textVariantSize({ applyCapsize: false })
   }
 })
 
-type LinkProps = React.ComponentProps<typeof StyledLink>
+type LinkProps = Override<
+  React.ComponentProps<typeof StyledLink>,
+  { as?: React.ComponentType | React.ElementType }
+>
 
 export const Link: React.FC<LinkProps> = React.forwardRef(
   ({ size = 'md', ...rest }, ref) => (

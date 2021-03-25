@@ -1,8 +1,10 @@
 import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
+import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
@@ -61,17 +63,6 @@ const StyledButton = styled('button', {
     opacity: 0.35,
     cursor: 'not-allowed'
   },
-  '&.isLoading': {
-    cursor: 'not-allowed',
-    opacity: 0.5
-  },
-  '&:not(.isLoading) span': {
-    opacity: 0,
-    transition: 'opacity 100ms ease-out'
-  },
-  '&.isLoading span': {
-    opacity: 1
-  },
   variants: {
     theme: {
       primary: {},
@@ -84,6 +75,17 @@ const StyledButton = styled('button', {
     appearance: {
       solid: {},
       outline: {}
+    },
+    isLoading: {
+      true: {
+        cursor: 'not-allowed',
+        opacity: 0.5
+      }
+    },
+    fullWidth: {
+      true: {
+        width: '100%'
+      }
     }
   },
 
@@ -139,38 +141,68 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ButtonProps = React.ComponentPropsWithoutRef<typeof StyledButton> &
+type ButtonProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
-    onClick: () => void
+    onClick?: () => void
+    as?: React.ComponentType | React.ElementType
   }
+>
 
 export const Button: React.FC<ButtonProps> = ({
   theme = 'primary',
   appearance = 'solid',
-  isLoading = false,
+  isLoading,
+  type = 'button',
   children,
   onClick,
   ...rest
 }) => {
-  // Note: button is not disabled when loading for accessibility purposes. Instead the clickAction is not fired and the button looks faded
+  // Note: button is not disabled when loading for accessibility purposes.
+  // Instead the clickAction is not fired and the button looks faded
   const handleClick = (callback) => {
     if (isLoading) {
       return
     }
-
     callback()
   }
 
   return (
     <StyledButton
-      className={isLoading ? 'isLoading' : ''}
       theme={theme}
       appearance={appearance}
-      onClick={() => handleClick(onClick)}
+      isLoading={isLoading || false}
+      onClick={onClick ? () => handleClick(onClick) : undefined}
+      type={type}
       {...rest}
     >
-      {isLoading ? <Loader /> : children}
+      {typeof isLoading === 'boolean' ? (
+        <>
+          <Loader
+            css={{
+              opacity: isLoading ? 1 : 0,
+              position: 'absolute',
+              transition: 'opacity 150ms ease-out'
+            }}
+          />
+          <Box
+            as="span"
+            css={
+              isLoading
+                ? {
+                    opacity: 0,
+                    transition: 'opacity 150ms ease-out'
+                  }
+                : {}
+            }
+          >
+            {children}
+          </Box>
+        </>
+      ) : (
+        children
+      )}
     </StyledButton>
   )
 }

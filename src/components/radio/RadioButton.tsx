@@ -1,9 +1,8 @@
 import * as RadioGroup from '@radix-ui/react-radio-group'
 import * as React from 'react'
 
+import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
-
-import { styled } from '../../stitches'
 
 const StyledRadioButton = styled(RadioGroup.Item, {
   appearance: 'none',

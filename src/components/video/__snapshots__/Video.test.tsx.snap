@@ -1,21 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video component renders a video with custom ratio (4:3) 1`] = `
-.sx03kzevehnw--css {
+.sx03kze-qiz11 {
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
   height: 0;
+  width: 100%;
 }
 
-.sx03kzeyibwn--css {
+.sx03kze-ifq7y {
   position: relative;
   padding-top: 75%;
   overflow: hidden;
   height: 0;
+  width: 100%;
 }
 
-.sx03kzevtaup--css {
+.sx03kze-vtaup {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,10 +25,10 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kzeyibwn--css"
+    class="sx03kze sx03kze-ifq7y"
   >
     <div
-      class="sx03kze sx03kzevtaup--css"
+      class="sx03kze sx03kze-vtaup"
       role="figure"
       style="width: 100%; height: 100%;"
     >
@@ -39,14 +41,15 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
 `;
 
 exports[`Video component renders a video with default ratio 1`] = `
-.sx03kzevehnw--css {
+.sx03kze-qiz11 {
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
   height: 0;
+  width: 100%;
 }
 
-.sx03kzevtaup--css {
+.sx03kze-vtaup {
   position: absolute;
   top: 0;
   left: 0;
@@ -54,10 +57,10 @@ exports[`Video component renders a video with default ratio 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kzevehnw--css"
+    class="sx03kze sx03kze-qiz11"
   >
     <div
-      class="sx03kze sx03kzevtaup--css"
+      class="sx03kze sx03kze-vtaup"
       role="figure"
       style="width: 100%; height: 100%;"
     >

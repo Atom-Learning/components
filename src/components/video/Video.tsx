@@ -27,7 +27,8 @@ export const Video: React.FC<VideoProps> = ({
         position: 'relative',
         paddingTop: `${ratio * 100}%`,
         overflow: 'hidden',
-        height: 0
+        height: 0,
+        width: '100%'
       }}
     >
       <StyledVideo

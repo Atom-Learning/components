@@ -31,26 +31,29 @@ export const Form: React.FC<FormProps> = ({
 
   return (
     <StyledForm
+      aria-label="form"
       {...remainingProps}
       onSubmit={handleSubmit(onSubmit)}
-      aria-label="form"
     >
       {React.Children.map(children, (child: React.ReactElement) => {
-        const { name, validation } = child.props
+        const { validation, ...childProps } = child.props
 
         // Form fields require a name
         // If there is no name, assume it's not a form field
-        if (!name) return child
+        if (!childProps.name) return child
 
-        const fieldError = errors[name] as ValidationError
+        const fieldError = errors[childProps.name] as ValidationError
+
         return React.createElement(child.type, {
-          ...{
-            ...child.props,
-            error: fieldError ? fieldError.message : undefined,
-            register: validation ? register(validation) : register,
-            key: name,
-            required: validation ? validation.required : false
-          }
+          ...childProps,
+          error: fieldError ? fieldError.message : undefined,
+          register: register,
+          key: childProps.name,
+          // ensure that any field marked as required in the validation object
+          // also receives a true required prop for styling purposes
+          // DON'T USE OPTIONAL CHAINING - IT BREAKS THE VALIDATION STEP
+          required: validation ? !!validation.required : !!childProps.required,
+          validation
         })
       })}
     </StyledForm>

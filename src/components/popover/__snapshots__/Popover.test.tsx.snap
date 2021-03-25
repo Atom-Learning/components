@@ -5,7 +5,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
   position: relative;
 }
 
-.sxc30pd {
+.sx9nlf7 {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -15,9 +15,6 @@ exports[`Popover component doesn't open popover using the keypress with random k
   min-width: 140px;
   max-width: 354px;
   padding: var(--space-3);
-}
-
-.sxc30pd {
   position: absolute;
   transition: all 150ms ease-in-out;
   width: max-content;
@@ -25,7 +22,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
   visibility: hidden;
 }
 
-.sxc30pdpuxrx--align-center::after {
+.sx9nlf7puxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -37,13 +34,10 @@ exports[`Popover component doesn't open popover using the keypress with random k
   border-top-color: white;
   border-width: 8px;
   margin-left: -8px;
-}
-
-.sxc30pdpuxrx--align-center::after {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center::before {
+.sx9nlf7puxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -55,18 +49,15 @@ exports[`Popover component doesn't open popover using the keypress with random k
   border-top-color: var(--colors-tonal400);
   border-width: 9px;
   margin-left: -9px;
-}
-
-.sxc30pdpuxrx--align-center::before {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center {
+.sx9nlf7puxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sxc30pdx07u8--visibility-true {
+.sx9nlf7x07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -90,7 +81,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
     <div
       aria-hidden="true"
       aria-labelledby="popover-trigger-123"
-      class="sxc30pd sxc30pdpuxrx--align-center"
+      class="sx9nlf7 sx9nlf7puxrx--align-center"
       role="tooltip"
     >
       Content
@@ -104,7 +95,7 @@ exports[`Popover component opens popover using the space key 1`] = `
   position: relative;
 }
 
-.sxc30pd {
+.sx9nlf7 {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -114,9 +105,6 @@ exports[`Popover component opens popover using the space key 1`] = `
   min-width: 140px;
   max-width: 354px;
   padding: var(--space-3);
-}
-
-.sxc30pd {
   position: absolute;
   transition: all 150ms ease-in-out;
   width: max-content;
@@ -124,7 +112,7 @@ exports[`Popover component opens popover using the space key 1`] = `
   visibility: hidden;
 }
 
-.sxc30pdpuxrx--align-center::after {
+.sx9nlf7puxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -136,13 +124,10 @@ exports[`Popover component opens popover using the space key 1`] = `
   border-top-color: white;
   border-width: 8px;
   margin-left: -8px;
-}
-
-.sxc30pdpuxrx--align-center::after {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center::before {
+.sx9nlf7puxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -154,18 +139,15 @@ exports[`Popover component opens popover using the space key 1`] = `
   border-top-color: var(--colors-tonal400);
   border-width: 9px;
   margin-left: -9px;
-}
-
-.sxc30pdpuxrx--align-center::before {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center {
+.sx9nlf7puxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sxc30pdx07u8--visibility-true {
+.sx9nlf7x07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -189,7 +171,7 @@ exports[`Popover component opens popover using the space key 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="popover-trigger-123"
-      class="sxc30pd sxc30pdpuxrx--align-center"
+      class="sx9nlf7 sx9nlf7puxrx--align-center"
       role="tooltip"
     >
       Content
@@ -203,7 +185,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   position: relative;
 }
 
-.sxc30pd {
+.sx9nlf7 {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -213,9 +195,6 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   min-width: 140px;
   max-width: 354px;
   padding: var(--space-3);
-}
-
-.sxc30pd {
   position: absolute;
   transition: all 150ms ease-in-out;
   width: max-content;
@@ -223,7 +202,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   visibility: hidden;
 }
 
-.sxc30pdpuxrx--align-center::after {
+.sx9nlf7puxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -235,13 +214,10 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   border-top-color: white;
   border-width: 8px;
   margin-left: -8px;
-}
-
-.sxc30pdpuxrx--align-center::after {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center::before {
+.sx9nlf7puxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -253,18 +229,15 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   border-top-color: var(--colors-tonal400);
   border-width: 9px;
   margin-left: -9px;
-}
-
-.sxc30pdpuxrx--align-center::before {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center {
+.sx9nlf7puxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sxc30pdx07u8--visibility-true {
+.sx9nlf7x07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -288,7 +261,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="popover-trigger-123"
-      class="sxc30pd sxc30pdpuxrx--align-center sxc30pdx07u8--visibility-true"
+      class="sx9nlf7 sx9nlf7puxrx--align-center sx9nlf7x07u8--visibility-true"
       role="tooltip"
     >
       Content
@@ -302,7 +275,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   position: relative;
 }
 
-.sxc30pd {
+.sx9nlf7 {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -312,9 +285,6 @@ exports[`Popover component renders as visible with left variant 1`] = `
   min-width: 140px;
   max-width: 354px;
   padding: var(--space-3);
-}
-
-.sxc30pd {
   position: absolute;
   transition: all 150ms ease-in-out;
   width: max-content;
@@ -322,7 +292,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   visibility: hidden;
 }
 
-.sxc30pdpuxrx--align-center::after {
+.sx9nlf7puxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -334,13 +304,10 @@ exports[`Popover component renders as visible with left variant 1`] = `
   border-top-color: white;
   border-width: 8px;
   margin-left: -8px;
-}
-
-.sxc30pdpuxrx--align-center::after {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center::before {
+.sx9nlf7puxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -352,23 +319,20 @@ exports[`Popover component renders as visible with left variant 1`] = `
   border-top-color: var(--colors-tonal400);
   border-width: 9px;
   margin-left: -9px;
-}
-
-.sxc30pdpuxrx--align-center::before {
   left: 50%;
 }
 
-.sxc30pdpuxrx--align-center {
+.sx9nlf7puxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sxc30pdx07u8--visibility-true {
+.sx9nlf7x07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
 
-.sxc30pd7rrb2--align-left::after {
+.sx9nlf77rrb2--align-left::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -380,13 +344,10 @@ exports[`Popover component renders as visible with left variant 1`] = `
   border-top-color: white;
   border-width: 8px;
   margin-left: -8px;
-}
-
-.sxc30pd7rrb2--align-left::after {
   left: 40px;
 }
 
-.sxc30pd7rrb2--align-left::before {
+.sx9nlf77rrb2--align-left::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -398,13 +359,10 @@ exports[`Popover component renders as visible with left variant 1`] = `
   border-top-color: var(--colors-tonal400);
   border-width: 9px;
   margin-left: -9px;
-}
-
-.sxc30pd7rrb2--align-left::before {
   left: 40px;
 }
 
-.sxc30pd7rrb2--align-left {
+.sx9nlf77rrb2--align-left {
   left: 0;
   transform-origin: 60px bottom;
   transform: translate(-20px, var(--2)) scale(0.9);
@@ -425,7 +383,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="popover-trigger-123"
-      class="sxc30pd sxc30pd7rrb2--align-left sxc30pdx07u8--visibility-true"
+      class="sx9nlf7 sx9nlf77rrb2--align-left sx9nlf7x07u8--visibility-true"
       role="tooltip"
     >
       Hello

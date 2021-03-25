@@ -7,13 +7,13 @@ const StyledInput = styled('input', {
   appearance: 'none',
   border: '1px solid $tonal500',
   borderRadius: '$0',
-  boxShadow: 'none', // necessary to prevent default iOS default styling
+  boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
   color: '$tonal900',
   cursor: 'text',
   display: 'block',
   fontFamily: '$sans',
-  fontSize: '$md', // necessary to prevent iOS zooming on focus
+  fontSize: '$md', // prevent iOS zooming on focus
   height: '$2',
   width: '100%',
   p: '$3',

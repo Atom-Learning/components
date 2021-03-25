@@ -21,7 +21,7 @@ type IconProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledIcon>,
   {
     is: React.FC<React.SVGProps<SVGSVGElement>>
-    as: never
+    as?: never
   }
 >
 

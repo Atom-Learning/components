@@ -10,6 +10,7 @@
     "lib": ["es6", "dom"],
     "types": ["node", "jest"],
     "baseUrl": "./src",
+    "skipLibCheck": true,
     "paths": {
       "~/*": ["./*"] // allow imports from '~/components', but not '~'
     },

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List component renders a list 1`] = `
+.sx9g3cf {
+  font-family: var(--fonts-sans);
+  padding-left: var(--space-3);
+}
+
+.sx9g3cf .sx03kze {
+  padding-left: var(--space-2);
+}
+
+.sx9g3cf .sx03kze::marker {
+  content: "•";
+  font-weight: bold;
+}
+
+.sx9g3cf .sx03kze:not(:last-child) {
+  margin-bottom: var(--space-2);
+}
+
+.sx9g3cfk6wac--theme-tonal .sx03kze::marker {
+  color: var(--colors-tonal900);
+}
+
+.sx9g3cfjqqvr--size-md {
+  font-size: var(--fontSizes-md);
+  line-height: 1.625;
+}
+
+.sx9g3cfjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sx9g3cfjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+<div>
+  <ul
+    class="sx9g3cf sx9g3cfk6wac--theme-tonal sx9g3cfjqqvr--size-md"
+  >
+    <li
+      class="sx03kze"
+    >
+      Item 1
+    </li>
+    <li
+      class="sx03kze"
+    >
+      Item 2
+    </li>
+  </ul>
+</div>
+`;

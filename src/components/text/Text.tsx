@@ -1,7 +1,40 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
-import { Override } from '~/utilities/types'
+import { CSS, styled } from '~/stitches'
+import { capsize, Override } from '~/utilities'
+
+type TextSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+
+export const textVariantSize = ({ applyCapsize = true } = {}): Record<
+  TextSizes,
+  CSS
+> => ({
+  sm: {
+    fontSize: '$sm',
+    lineHeight: 1.69,
+    ...(applyCapsize ? capsize('-0.477em') : {})
+  },
+  md: {
+    fontSize: '$md',
+    lineHeight: 1.625,
+    ...(applyCapsize ? capsize('-0.4489em') : {})
+  },
+  lg: {
+    fontSize: '$lg',
+    lineHeight: 1.52,
+    ...(applyCapsize ? capsize('-0.3983em') : {})
+  },
+  xl: {
+    fontSize: '$xl',
+    lineHeight: 1.42,
+    ...(applyCapsize ? capsize('-0.3506em') : {})
+  },
+  xxl: {
+    fontSize: '$xxl',
+    lineHeight: 1.35,
+    ...(applyCapsize ? capsize('-0.312em') : {})
+  }
+})
 
 const StyledParagraph = styled('p', {
   color: '$tonal900',
@@ -10,23 +43,7 @@ const StyledParagraph = styled('p', {
   margin: 0,
   maxWidth: '60ch',
   variants: {
-    size: {
-      sm: {
-        fontSize: '$sm',
-        letterSpacing: '0.01em',
-        lineHeight: 1.6
-      },
-      md: {
-        fontSize: '$md',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      },
-      lg: {
-        fontSize: '$lg',
-        letterSpacing: '0.02em',
-        lineHeight: 1.4
-      }
-    }
+    size: textVariantSize()
   }
 })
 
@@ -42,7 +59,7 @@ type TextProps = Override<
       | 'li'
       | 'p'
       | 'span'
-    size?: 'sm' | 'md' | 'lg'
+    size?: TextSizes
   }
 >
 

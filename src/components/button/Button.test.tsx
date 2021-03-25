@@ -65,6 +65,19 @@ describe(`Button component`, () => {
     expect(handleClick).toHaveBeenCalled()
   })
 
+  it.only('is polymorphic', async () => {
+    render(
+      <Button as="a" href="https://app.atomlearning.co.uk">
+        BUTTON
+      </Button>
+    )
+
+    const link = screen.getByRole('link')
+
+    expect(link).toBeInTheDocument()
+    expect(link).toHaveAttribute('href', 'https://app.atomlearning.co.uk')
+  })
+
   describe('Loading state', () => {
     it('renders a loading button', async () => {
       const { container } = render(
@@ -73,7 +86,7 @@ describe(`Button component`, () => {
         </Button>
       )
 
-      expect(await screen.queryByText('BUTTON')).not.toBeInTheDocument()
+      expect(await screen.queryByText('BUTTON')).not.toBeVisible()
       expect(await screen.getByRole('alert')).toBeInTheDocument()
 
       expect(container).toMatchSnapshot()
