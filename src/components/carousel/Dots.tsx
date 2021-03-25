@@ -9,12 +9,15 @@ export const Dots: React.FC = () => (
     css={{
       justifyContent: 'center',
       '& button': {
-        size: '12px',
-        borderRadius: '50%',
         bg: '$tonal300',
-        m: '0 6px',
-        p: '$1',
         border: 'none',
+        borderRadius: '50%',
+        cursor: 'pointer',
+        mt: '$4',
+        mx: '$1',
+        p: '$1',
+        size: '12px',
+        transition: 'all 0.25s ease-in',
         '&[class*="selected"]': {
           bg: '$primary900'
         }
