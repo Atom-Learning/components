@@ -4,15 +4,18 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledIcon = styled('svg', {
-  color: 'currentcolor',
   display: 'inline-block',
+  fill: 'none',
+  stroke: 'currentcolor',
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
+  strokeWidth: '2',
   verticalAlign: 'middle',
   variants: {
     size: {
-      // TODO: update to use size token when added
-      sm: { height: 16, width: 16 },
-      md: { height: 24, width: 24 },
-      lg: { height: 32, width: 32 }
+      sm: { size: '$1' },
+      md: { size: '$2' },
+      lg: { size: '$3' }
     }
   }
 })
@@ -27,15 +30,6 @@ type IconProps = Override<
 
 export const Icon: React.FC<IconProps> = ({
   is: SVG,
-  size = 'sm',
-
+  size = 'md',
   ...remainingProps
-}) => (
-  <StyledIcon
-    size={size}
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-    {...remainingProps}
-    as={SVG}
-  />
-)
+}) => <StyledIcon size={size} aria-hidden="true" {...remainingProps} as={SVG} />

@@ -10,7 +10,7 @@ export const Textarea = styled('textarea', {
   fontSize: '$md', // prevent iOS zooming on focus
   fontWeight: 400,
   lineHeight: 1.4,
-  minHeight: 96,
+  minHeight: '$6',
   px: '$3',
   py: 'calc($2 + $1)', // offset the line height of the text
   resize: 'vertical',
