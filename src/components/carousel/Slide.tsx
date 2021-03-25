@@ -17,11 +17,11 @@ const StyledSlide = styled(BaseSlide, {
   }
 })
 
-type SlideProps = { index: number }
+type SlideProps = /* React.ComponentProps<typeof StyledSlide> &  */{ index: number }
 
 export const Slide: React.FC<SlideProps> = ({ children, ...rest }) => {
   return (
-    <StyledSlide {...rest} tag="div">
+    <StyledSlide {...rest} /* tag="div" */>
       {/* padding to create the gap between slides */}
       <Box css={{ px: '$3' }}>{children}</Box>
     </StyledSlide>
