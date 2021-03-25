@@ -33,19 +33,17 @@ export const conditions = {
   md: '@media (min-width: 800px)',
   lg: '@media (min-width: 1100px)',
   xl: '@media (min-width: 1350px)',
-  motion: '@media (prefers-reduced-motion)',
+  reducedMotion: '@media (prefers-reduced-motion)',
   hover: '@media (hover: hover)'
 }
 ```
 
-You can use these in `styled()` or `css` within a `when` key
+You can use these in `styled()` or `css` by prefixing the key with `@`, e.g. `@reducedMotion` or `@xl`
 
 ```jsx
 const Section = styled('section', {
   padding: '$2',
-  when: {
-    md: { padding: '$3' }
-  }
+  '@md': { padding: '$3' }
 })
 ```
 
@@ -53,10 +51,8 @@ const Section = styled('section', {
 <Text
   css={{
     color: '$tonal900',
-    when: {
-      md: { color: '$primary500' },
-      lg: { color: '$secondary700' }
-    }
+    '@md': { color: '$primary500' },
+    '@lg': { color: '$secondary700' }
   }}
 >
   Hello World
@@ -68,9 +64,9 @@ You can also use them to switch [variants](https://stitches.dev/docs/variants)
 ```jsx
 <Button
   // change the 'theme' to 'secondary' when you trigger the 'md' breakpoint
-  theme={{ initial: 'primary', md: 'secondary' }}
+  theme={{ '@initial': 'primary', '@md': 'secondary' }}
   // change the 'size' to 'md' when you trigger the 'sm' breakpoint
-  size: {{ initial: 'sm', sm: 'md' }}
+  size: {{ '@initial': 'sm', '@sm': 'md' }}
 >
   Click me
 </Button>

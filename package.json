@@ -8,6 +8,7 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c && tsc --emitDeclarationOnly",
@@ -49,6 +50,7 @@
     "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@radix-ui/react-id": "^0.0.4",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@rollup/plugin-typescript": "^8.2.0",
@@ -94,6 +96,7 @@
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-url": "^3.0.1",
+    "rollup-plugin-visualizer": "^4.2.2",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.2.1-rc",
@@ -104,14 +107,15 @@
     "react": "^16.8.0"
   },
   "dependencies": {
-    "@radix-ui/react-checkbox": "^0.0.4",
+    "@radix-ui/react-checkbox": "^0.0.12",
     "@radix-ui/react-icons": "^1.0.1",
-    "@radix-ui/react-progress": "^0.0.5",
-    "@radix-ui/react-radio-group": "^0.0.5",
-    "@radix-ui/react-visually-hidden": "^0.0.5",
+    "@radix-ui/react-progress": "^0.0.10",
+    "@radix-ui/react-radio-group": "^0.0.13",
+    "@radix-ui/react-visually-hidden": "^0.0.10",
     "@stitches/react": "^0.1.0",
     "@types/react": "^17.0.2",
     "@types/resize-observer-browser": "^0.1.5",
+    "colorsys": "^1.0.22",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0",
     "rollup-plugin-url": "^3.0.1"
