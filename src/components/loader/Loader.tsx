@@ -19,7 +19,7 @@ const Dot = styled('div', {
   animationIterationCount: 'infinite',
   animationTimingFunction: 'linear',
   backgroundColor: 'currentColor',
-  borderRadius: '100%',
+  borderRadius: '$round',
   '&:nth-child(1)': {
     animationDelay: '-300ms'
   },
@@ -32,9 +32,9 @@ const Dot = styled('div', {
 
   variants: {
     size: {
-      sm: { size: 4, mx: 2 },
-      md: { size: 6, mx: 2 },
-      lg: { size: 8, mx: 3 }
+      sm: { size: '4px', mx: '2px' },
+      md: { size: '6px', mx: '2px' },
+      lg: { size: '8px', mx: '3px' }
     }
   }
 })

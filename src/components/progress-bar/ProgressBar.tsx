@@ -17,7 +17,7 @@ const getOutlineVariant = (color) => ({
 
 const StyledProgressBar = styled(Progress.Root, {
   borderRadius: '$round',
-  height: 12,
+  height: '12px',
   position: 'relative',
   overflow: 'hidden',
   width: '100%',

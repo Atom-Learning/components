@@ -48,8 +48,8 @@ const StyledPopoverContent = styled('div', {
   border: '1px solid $tonal400',
   bottom: `calc(100%  + $3)`,
   listStyleType: 'none',
-  minWidth: 140,
-  maxWidth: 354,
+  minWidth: '140px',
+  maxWidth: '354px',
   p: '$3',
   position: 'absolute',
   transition: 'all 150ms ease-in-out',
@@ -59,7 +59,7 @@ const StyledPopoverContent = styled('div', {
   variants: {
     align: {
       left: {
-        ...getTriangle({ left: 40 }),
+        ...getTriangle({ left: '40px' }),
         left: 0,
         transformOrigin: '60px bottom',
         transform: 'translate(-20px, $2) scale(0.9)'
@@ -70,7 +70,7 @@ const StyledPopoverContent = styled('div', {
         transform: 'translate(-50%, $2) scale(0.9)'
       },
       right: {
-        ...getTriangle({ right: 31 }),
+        ...getTriangle({ right: '31px' }),
         right: 0,
         transformOrigin: 'calc(100% - 51px) bottom',
         transform: 'translate(0, $2) scale(0.9)'

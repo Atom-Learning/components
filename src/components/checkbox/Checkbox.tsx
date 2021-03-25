@@ -14,7 +14,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   boxShadow: 'inset 0 0 0 2px $colors$secondary300',
   color: 'white',
   cursor: 'pointer',
-  size: 20,
+  size: '20px',
   padding: 0,
   display: 'flex',
   alignItems: 'center',
