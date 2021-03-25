@@ -1398,7 +1398,7 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@radix-ui/react-checkbox@^0.0.12":
+"@radix-ui/react-checkbox@0.0.12":
   version "0.0.12"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-checkbox/-/react-checkbox-0.0.12.tgz#6c691a8f25dbf5175f5fc923486027a8d8beba21"
   integrity sha512-GFIgbDvgeQLNWHNHHiSeZODsMCv3LN+7OGO8VuLR9uW5FeteMp7Y1TPfp2p8/PZI0ghdu4XlrWymVqLtDX5q8g==
@@ -1427,7 +1427,7 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@radix-ui/react-id@0.0.4", "@radix-ui/react-id@^0.0.4":
+"@radix-ui/react-id@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-id/-/react-id-0.0.4.tgz#eebd8ea1eb09b9dd69a1c6c7705f335e03e3c05b"
   integrity sha512-L8M4WCayPK2tIKdDA3diCcvz0XV/Z+1SL7OARzjnuEf9j3CrS/Y51fZ0pO4j9rCMfAI0A7WZPlZglMBuO3W9RA==
@@ -1468,7 +1468,7 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-polymorphic" "0.0.9"
 
-"@radix-ui/react-progress@^0.0.10":
+"@radix-ui/react-progress@0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-progress/-/react-progress-0.0.10.tgz#60d71195145cc2a0c15cbf7fb98f7290397ea7b1"
   integrity sha512-qGN7RxTxBgpYJADcML3kFxwdd7HugPAJbPKq5Oqi0QCDJfAwXK+bUMfqsQdRaKHMm8DJglseZhySPfd9SpMpWg==
@@ -1478,7 +1478,7 @@
     "@radix-ui/react-polymorphic" "0.0.9"
     "@radix-ui/react-primitive" "0.0.10"
 
-"@radix-ui/react-radio-group@^0.0.13":
+"@radix-ui/react-radio-group@0.0.13":
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-radio-group/-/react-radio-group-0.0.13.tgz#1c43e30b6685e65755fbd783d3f3ddc69fa4a037"
   integrity sha512-K6Kpeu3lpS8JL3gzcejbcqigNw0WcsD1faW74m2rINQCc0cdU+Z4AkBVkEOunHlMqdRDS1SfCAtLbA4uPDpiTA==
@@ -1521,7 +1521,7 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-use-callback-ref" "0.0.4"
 
-"@radix-ui/react-visually-hidden@^0.0.10":
+"@radix-ui/react-visually-hidden@0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-visually-hidden/-/react-visually-hidden-0.0.10.tgz#5d6ced52a87dbc3ec3345a09082eaec01077dd7e"
   integrity sha512-CeXLrVKIJaS0heuigPT4OgNLtGQMk9yE7sWsfFAbeiQeyRryAPcz7kkhXzIApg0J9HPZ7+14bs7UVp9kEoHQiQ==
