@@ -1,24 +1,23 @@
+import { Eye, EyeClosed } from '@atom-learning/icons'
 import * as React from 'react'
 import { useState } from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
-import { Eye, EyeOff, Icon } from '~/components/icon'
+import { Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import { ValidationError } from '~/components/validation-error'
 import { styled } from '~/stitches'
 
-type Prompt = {
-  label: string
-  link: string
-}
-
 type PasswordFieldProps = InputProps & {
   label?: string
-  prompt?: Prompt
+  prompt?: {
+    label: string
+    link: string
+  }
   hidePasswordText?: string
   showPasswordText?: string
   register?: (
@@ -28,6 +27,17 @@ type PasswordFieldProps = InputProps & {
   required?: boolean
   validation?: ValidationOptions
 }
+
+const InvisibleButton = styled('button', {
+  background: 'none',
+  border: 'none',
+  bottom: 0,
+  cursor: 'pointer',
+  p: 0,
+  position: 'absolute',
+  right: 0,
+  size: '$4'
+})
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
@@ -91,7 +101,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         >
           <Icon
             css={{ color: '$tonal700' }}
-            is={isPasswordVisible ? Eye : EyeOff}
+            is={isPasswordVisible ? Eye : EyeClosed}
           />
         </InvisibleButton>
       </Box>
@@ -101,14 +111,3 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 }
 
 PasswordField.displayName = 'PasswordField'
-
-const InvisibleButton = styled('button', {
-  border: 'none',
-  padding: 0,
-  background: 'none',
-  cursor: 'pointer',
-  position: 'absolute',
-  bottom: 0,
-  right: 0,
-  size: '$2'
-})

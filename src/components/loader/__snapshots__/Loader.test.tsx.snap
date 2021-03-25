@@ -31,29 +31,29 @@ exports[`Loader component renders a loader 1`] = `
   justify-content: center;
 }
 
-.sx4m3y2 {
+.sxe5oww {
   animation-name: sxwho2l;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: currentColor;
-  border-radius: 100%;
+  border-radius: var(--radii-round);
 }
 
-.sx4m3y2:nth-child(1) {
+.sxe5oww:nth-child(1) {
   animation-delay: -300ms;
 }
 
-.sx4m3y2:nth-child(2) {
+.sxe5oww:nth-child(2) {
   animation-delay: -150ms;
 }
 
-.sx4m3y2:nth-child(3) {
+.sxe5oww:nth-child(3) {
   animation-delay: 0;
 }
 
-.sx4m3y24btw3--size-md {
+.sxe5oww4btw3--size-md {
   height: 6px;
   width: 6px;
   margin-left: 2px;
@@ -71,13 +71,13 @@ exports[`Loader component renders a loader 1`] = `
       Content is loading
     </span>
     <div
-      class="sx4m3y2 sx4m3y24btw3--size-md"
+      class="sxe5oww sxe5oww4btw3--size-md"
     />
     <div
-      class="sx4m3y2 sx4m3y24btw3--size-md"
+      class="sxe5oww sxe5oww4btw3--size-md"
     />
     <div
-      class="sx4m3y2 sx4m3y24btw3--size-md"
+      class="sxe5oww sxe5oww4btw3--size-md"
     />
   </div>
 </div>

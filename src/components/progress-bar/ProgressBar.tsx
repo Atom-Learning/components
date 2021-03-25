@@ -16,8 +16,8 @@ const getOutlineVariant = (color) => ({
 })
 
 const StyledProgressBar = styled(Progress.Root, {
-  borderRadius: 25,
-  height: 12,
+  borderRadius: '$round',
+  height: '12px',
   position: 'relative',
   overflow: 'hidden',
   width: '100%',
@@ -131,16 +131,10 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
   appearance = 'outline',
   theme = 'primary',
   ...remainingProps
-}) => {
-  return (
-    <StyledProgressBar
-      appearance={appearance}
-      theme={theme}
-      {...remainingProps}
-    >
-      <StyledIndicator style={{ width: `${value}%` }} />
-    </StyledProgressBar>
-  )
-}
+}) => (
+  <StyledProgressBar appearance={appearance} theme={theme} {...remainingProps}>
+    <StyledIndicator style={{ width: `${value}%` }} />
+  </StyledProgressBar>
+)
 
 ProgressBar.displayName = 'ProgressBar'

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component renders a select with 3 options 1`] = `
-.sx3xevv {
+.sx8kxz1 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 24px auto, 100%;
+  background-size: var(--sizes-2) auto, 100%;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
   color: var(--colors-tonal900);
@@ -16,7 +16,7 @@ exports[`Select component renders a select with 3 options 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 400;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -26,26 +26,26 @@ exports[`Select component renders a select with 3 options 1`] = `
   width: 100%;
 }
 
-.sx3xevv:hover {
+.sx8kxz1:hover {
   cursor: pointer;
 }
 
-.sx3xevv:focus {
+.sx8kxz1:focus {
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   border-color: var(--colors-primary900);
   outline: none;
 }
 
-.sx3xevv::-ms-expand {
+.sx8kxz1::-ms-expand {
   display: none;
 }
 
-.sx3xevv[disabled] {
+.sx8kxz1[disabled] {
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sx3xevv[disabled],
-.sx3xevv > option[disabled] {
+.sx8kxz1[disabled],
+.sx8kxz1 > option[disabled] {
   opacity: 0.7;
   background-color: var(--colors-tonal300);
   cursor: not-allowed;
@@ -54,7 +54,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx3xevv"
+    class="sx8kxz1"
   >
     <option
       value="value1"
@@ -76,14 +76,14 @@ exports[`Select component renders a select with 3 options 1`] = `
 `;
 
 exports[`Select component renders an disabled select 1`] = `
-.sx3xevv {
+.sx8kxz1 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 24px auto, 100%;
+  background-size: var(--sizes-2) auto, 100%;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
   color: var(--colors-tonal900);
@@ -91,7 +91,7 @@ exports[`Select component renders an disabled select 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 400;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -101,26 +101,26 @@ exports[`Select component renders an disabled select 1`] = `
   width: 100%;
 }
 
-.sx3xevv:hover {
+.sx8kxz1:hover {
   cursor: pointer;
 }
 
-.sx3xevv:focus {
+.sx8kxz1:focus {
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   border-color: var(--colors-primary900);
   outline: none;
 }
 
-.sx3xevv::-ms-expand {
+.sx8kxz1::-ms-expand {
   display: none;
 }
 
-.sx3xevv[disabled] {
+.sx8kxz1[disabled] {
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sx3xevv[disabled],
-.sx3xevv > option[disabled] {
+.sx8kxz1[disabled],
+.sx8kxz1 > option[disabled] {
   opacity: 0.7;
   background-color: var(--colors-tonal300);
   cursor: not-allowed;
@@ -129,21 +129,21 @@ exports[`Select component renders an disabled select 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx3xevv"
+    class="sx8kxz1"
     disabled=""
   />
 </div>
 `;
 
 exports[`Select component renders select with a default option 1`] = `
-.sx3xevv {
+.sx8kxz1 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 24px auto, 100%;
+  background-size: var(--sizes-2) auto, 100%;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
   color: var(--colors-tonal900);
@@ -151,7 +151,7 @@ exports[`Select component renders select with a default option 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 400;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -161,26 +161,26 @@ exports[`Select component renders select with a default option 1`] = `
   width: 100%;
 }
 
-.sx3xevv:hover {
+.sx8kxz1:hover {
   cursor: pointer;
 }
 
-.sx3xevv:focus {
+.sx8kxz1:focus {
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   border-color: var(--colors-primary900);
   outline: none;
 }
 
-.sx3xevv::-ms-expand {
+.sx8kxz1::-ms-expand {
   display: none;
 }
 
-.sx3xevv[disabled] {
+.sx8kxz1[disabled] {
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sx3xevv[disabled],
-.sx3xevv > option[disabled] {
+.sx8kxz1[disabled],
+.sx8kxz1 > option[disabled] {
   opacity: 0.7;
   background-color: var(--colors-tonal300);
   cursor: not-allowed;
@@ -189,7 +189,7 @@ exports[`Select component renders select with a default option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx3xevv"
+    class="sx8kxz1"
   >
     <option>
        Please select:
@@ -214,14 +214,14 @@ exports[`Select component renders select with a default option 1`] = `
 `;
 
 exports[`Select component renders select with a disabled option 1`] = `
-.sx3xevv {
+.sx8kxz1 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 24px auto, 100%;
+  background-size: var(--sizes-2) auto, 100%;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
   color: var(--colors-tonal900);
@@ -229,7 +229,7 @@ exports[`Select component renders select with a disabled option 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 400;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -239,26 +239,26 @@ exports[`Select component renders select with a disabled option 1`] = `
   width: 100%;
 }
 
-.sx3xevv:hover {
+.sx8kxz1:hover {
   cursor: pointer;
 }
 
-.sx3xevv:focus {
+.sx8kxz1:focus {
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   border-color: var(--colors-primary900);
   outline: none;
 }
 
-.sx3xevv::-ms-expand {
+.sx8kxz1::-ms-expand {
   display: none;
 }
 
-.sx3xevv[disabled] {
+.sx8kxz1[disabled] {
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sx3xevv[disabled],
-.sx3xevv > option[disabled] {
+.sx8kxz1[disabled],
+.sx8kxz1 > option[disabled] {
   opacity: 0.7;
   background-color: var(--colors-tonal300);
   cursor: not-allowed;
@@ -267,7 +267,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx3xevv"
+    class="sx8kxz1"
   >
     <option
       value="value1"
@@ -295,14 +295,14 @@ exports[`Select component renders select with a disabled option 1`] = `
 `;
 
 exports[`Select component renders select with no options 1`] = `
-.sx3xevv {
+.sx8kxz1 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 24px auto, 100%;
+  background-size: var(--sizes-2) auto, 100%;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
   color: var(--colors-tonal900);
@@ -310,7 +310,7 @@ exports[`Select component renders select with no options 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 400;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   line-height: 1.4;
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -320,26 +320,26 @@ exports[`Select component renders select with no options 1`] = `
   width: 100%;
 }
 
-.sx3xevv:hover {
+.sx8kxz1:hover {
   cursor: pointer;
 }
 
-.sx3xevv:focus {
+.sx8kxz1:focus {
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   border-color: var(--colors-primary900);
   outline: none;
 }
 
-.sx3xevv::-ms-expand {
+.sx8kxz1::-ms-expand {
   display: none;
 }
 
-.sx3xevv[disabled] {
+.sx8kxz1[disabled] {
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sx3xevv[disabled],
-.sx3xevv > option[disabled] {
+.sx8kxz1[disabled],
+.sx8kxz1 > option[disabled] {
   opacity: 0.7;
   background-color: var(--colors-tonal300);
   cursor: not-allowed;
@@ -348,7 +348,7 @@ exports[`Select component renders select with no options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx3xevv"
+    class="sx8kxz1"
   />
 </div>
 `;

@@ -5,7 +5,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
   position: relative;
 }
 
-.sx9nlf7 {
+.sxdd99d {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -22,7 +22,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
   visibility: hidden;
 }
 
-.sx9nlf7puxrx--align-center::after {
+.sxdd99dpuxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -37,7 +37,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center::before {
+.sxdd99dpuxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -52,12 +52,12 @@ exports[`Popover component doesn't open popover using the keypress with random k
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center {
+.sxdd99dpuxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sx9nlf7x07u8--visibility-true {
+.sxdd99dx07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -81,7 +81,7 @@ exports[`Popover component doesn't open popover using the keypress with random k
     <div
       aria-hidden="true"
       aria-labelledby="popover-trigger-123"
-      class="sx9nlf7 sx9nlf7puxrx--align-center"
+      class="sxdd99d sxdd99dpuxrx--align-center"
       role="tooltip"
     >
       Content
@@ -95,7 +95,7 @@ exports[`Popover component opens popover using the space key 1`] = `
   position: relative;
 }
 
-.sx9nlf7 {
+.sxdd99d {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -112,7 +112,7 @@ exports[`Popover component opens popover using the space key 1`] = `
   visibility: hidden;
 }
 
-.sx9nlf7puxrx--align-center::after {
+.sxdd99dpuxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -127,7 +127,7 @@ exports[`Popover component opens popover using the space key 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center::before {
+.sxdd99dpuxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -142,12 +142,12 @@ exports[`Popover component opens popover using the space key 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center {
+.sxdd99dpuxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sx9nlf7x07u8--visibility-true {
+.sxdd99dx07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -171,7 +171,7 @@ exports[`Popover component opens popover using the space key 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="popover-trigger-123"
-      class="sx9nlf7 sx9nlf7puxrx--align-center"
+      class="sxdd99d sxdd99dpuxrx--align-center"
       role="tooltip"
     >
       Content
@@ -185,7 +185,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   position: relative;
 }
 
-.sx9nlf7 {
+.sxdd99d {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -202,7 +202,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   visibility: hidden;
 }
 
-.sx9nlf7puxrx--align-center::after {
+.sxdd99dpuxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -217,7 +217,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center::before {
+.sxdd99dpuxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -232,12 +232,12 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center {
+.sxdd99dpuxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sx9nlf7x07u8--visibility-true {
+.sxdd99dx07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
@@ -261,7 +261,7 @@ exports[`Popover component opens the popover once trigger is clicked 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="popover-trigger-123"
-      class="sx9nlf7 sx9nlf7puxrx--align-center sx9nlf7x07u8--visibility-true"
+      class="sxdd99d sxdd99dpuxrx--align-center sxdd99dx07u8--visibility-true"
       role="tooltip"
     >
       Content
@@ -275,7 +275,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   position: relative;
 }
 
-.sx9nlf7 {
+.sxdd99d {
   box-shadow: var(--shadows-0);
   border-radius: var(--radii-1);
   background-color: white;
@@ -292,7 +292,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   visibility: hidden;
 }
 
-.sx9nlf7puxrx--align-center::after {
+.sxdd99dpuxrx--align-center::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -307,7 +307,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center::before {
+.sxdd99dpuxrx--align-center::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -322,17 +322,17 @@ exports[`Popover component renders as visible with left variant 1`] = `
   left: 50%;
 }
 
-.sx9nlf7puxrx--align-center {
+.sxdd99dpuxrx--align-center {
   transform-origin: center bottom;
   transform: translate(-50%, var(--2)) scale(0.9);
 }
 
-.sx9nlf7x07u8--visibility-true {
+.sxdd99dx07u8--visibility-true {
   opacity: 1;
   visibility: visible;
 }
 
-.sx9nlf77rrb2--align-left::after {
+.sxdd99dyabqu--align-left::after {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -347,7 +347,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   left: 40px;
 }
 
-.sx9nlf77rrb2--align-left::before {
+.sxdd99dyabqu--align-left::before {
   border-style: solid;
   border-color: transparent;
   content: '';
@@ -362,7 +362,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
   left: 40px;
 }
 
-.sx9nlf77rrb2--align-left {
+.sxdd99dyabqu--align-left {
   left: 0;
   transform-origin: 60px bottom;
   transform: translate(-20px, var(--2)) scale(0.9);
@@ -383,7 +383,7 @@ exports[`Popover component renders as visible with left variant 1`] = `
     <div
       aria-hidden="false"
       aria-labelledby="popover-trigger-123"
-      class="sx9nlf7 sx9nlf77rrb2--align-left sx9nlf7x07u8--visibility-true"
+      class="sxdd99d sxdd99dyabqu--align-left sxdd99dx07u8--visibility-true"
       role="tooltip"
     >
       Hello

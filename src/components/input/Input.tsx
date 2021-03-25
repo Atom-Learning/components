@@ -14,7 +14,7 @@ const StyledInput = styled('input', {
   display: 'block',
   fontFamily: '$sans',
   fontSize: '$md', // prevent iOS zooming on focus
-  height: '$2',
+  height: '$4',
   width: '100%',
   p: '$3',
   transition: 'all 100ms ease-out',

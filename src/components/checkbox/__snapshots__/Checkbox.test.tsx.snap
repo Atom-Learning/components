@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component renders a checkbox 1`] = `
-.sxj3m6q {
+.sx1i2hs {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -10,8 +10,8 @@ exports[`Checkbox component renders a checkbox 1`] = `
   box-shadow: inset 0 0 0 2px var(--colors-secondary300);
   color: white;
   cursor: pointer;
-  height: var(--sizes-0);
-  width: var(--sizes-0);
+  height: 20px;
+  width: 20px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -19,25 +19,25 @@ exports[`Checkbox component renders a checkbox 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxj3m6q[data-state="unchecked"]:focus,
-.sxj3m6q[data-state="unchecked"]:hover {
+.sx1i2hs[data-state="unchecked"]:focus,
+.sx1i2hs[data-state="unchecked"]:hover {
   background-color: var(--colors-tonal300);
   box-shadow: inset 0 0 0 2px var(--colors-secondary700);
   outline: none;
 }
 
-.sxj3m6q[data-state="checked"] {
+.sx1i2hs[data-state="checked"] {
   background-color: var(--colors-secondary300);
 }
 
-.sxj3m6q[data-state="checked"]:hover,
-.sxj3m6q[data-state="unchecked"]:focus {
+.sx1i2hs[data-state="checked"]:hover,
+.sx1i2hs[data-state="unchecked"]:focus {
   background-color: var(--colors-secondary700);
   box-shadow: inset 0 0 0 2px var(--colors-secondary700);
   outline: none;
 }
 
-.sxj3m6q:focus-within {
+.sx1i2hs:focus-within {
   outline: none;
 }
 
@@ -50,7 +50,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="sxj3m6q"
+      class="sx1i2hs"
       data-state="unchecked"
       role="checkbox"
       title="test"

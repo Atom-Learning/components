@@ -44,18 +44,18 @@
   ],
   "devDependencies": {
     "@atom-learning/jest-stitches": "^1.0.8",
-    "@atom-learning/theme": "0.1.0-beta.5",
+    "@atom-learning/icons": "^0.2.0",
+    "@atom-learning/theme": "^0.1.0-beta.7",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@radix-ui/react-id": "^0.0.4",
+    "@radix-ui/react-id": "0.0.4",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@rollup/plugin-typescript": "^8.2.0",
     "@size-limit/preset-small-lib": "^4.9.2",
-    "@svgr/rollup": "^5.5.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.8.1",
@@ -83,7 +83,6 @@
     "jest": "^26.6.3",
     "jest-axe": "^4.1.0",
     "jest-dom": "^4.0.0",
-    "jest-svg-transformer": "^1.0.0",
     "lint-staged": "^10.5.3",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.4",
@@ -95,7 +94,6 @@
     "rollup": "^2.39.0",
     "rollup-plugin-bundle-size": "^1.0.3",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-url": "^3.0.1",
     "rollup-plugin-visualizer": "^4.2.2",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
@@ -103,22 +101,21 @@
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
-    "@atom-learning/theme": "0.1.0-beta.4",
+    "@atom-learning/icons": "^0.2.0",
+    "@atom-learning/theme": "^0.1.0",
     "react": "^16.8.0"
   },
   "dependencies": {
-    "@radix-ui/react-checkbox": "^0.0.12",
-    "@radix-ui/react-icons": "^1.0.1",
-    "@radix-ui/react-progress": "^0.0.10",
-    "@radix-ui/react-radio-group": "^0.0.13",
-    "@radix-ui/react-visually-hidden": "^0.0.10",
+    "@radix-ui/react-checkbox": "0.0.12",
+    "@radix-ui/react-progress": "0.0.10",
+    "@radix-ui/react-radio-group": "0.0.13",
+    "@radix-ui/react-visually-hidden": "0.0.10",
     "@stitches/react": "^0.1.0",
     "@types/react": "^17.0.2",
     "@types/resize-observer-browser": "^0.1.5",
     "colorsys": "^1.0.22",
     "react-hook-form": "^6.15.4",
-    "react-player": "^2.9.0",
-    "rollup-plugin-url": "^3.0.1"
+    "react-player": "^2.9.0"
   },
   "husky": {
     "hooks": {

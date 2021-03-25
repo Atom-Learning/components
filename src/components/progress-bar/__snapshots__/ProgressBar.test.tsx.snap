@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
-.sxifhea {
-  border-radius: 25px;
+.sxdyqdb {
+  border-radius: var(--radii-round);
   height: 12px;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.sxifhea4bknw--c2 {
+.sxdyqdb4bknw--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
@@ -27,7 +27,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxifhea sxifhea03kze--appearance-outline sxifhea03kze--theme-primary sxifhea4bknw--c2"
+    class="sxdyqdb sxdyqdb03kze--appearance-outline sxdyqdb03kze--theme-primary sxdyqdb4bknw--c2"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"
@@ -43,27 +43,27 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 `;
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
-.sxifhea {
-  border-radius: 25px;
+.sxdyqdb {
+  border-radius: var(--radii-round);
   height: 12px;
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-.sxifhea4bknw--c2 {
+.sxdyqdb4bknw--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-primary500);
 }
 
-.sxifhea4qfa7--c2 {
+.sxdyqdb4qfa7--c2 {
   border: 1px solid var(--colors-tonal400);
   background: white;
   color: var(--colors-secondary500);
 }
 
-.sxifheamrg77--c2 {
+.sxdyqdbmrg77--c2 {
   background: var(--colors-tonal300);
   color: var(--colors-primary500);
 }
@@ -80,7 +80,7 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxifhea sxifhea03kze--appearance-solid sxifhea03kze--theme-primary sxifheamrg77--c2"
+    class="sxdyqdb sxdyqdb03kze--appearance-solid sxdyqdb03kze--theme-primary sxdyqdbmrg77--c2"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"

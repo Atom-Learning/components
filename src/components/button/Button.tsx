@@ -50,7 +50,7 @@ const StyledButton = styled('button', {
   fontFamily: '$sans',
   fontSize: '$md',
   fontWeight: 500,
-  height: '$2',
+  height: '$4',
   letterSpacing: '0.02em',
   lineHeight: 1.4,
   transition: 'all 125ms ease-out',
