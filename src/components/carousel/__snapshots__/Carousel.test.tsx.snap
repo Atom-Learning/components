@@ -27,19 +27,25 @@ exports[`Carousel component renders 1`] = `
   position: relative;
 }
 
-.sx03kze-2kqv3 {
-  margin-left: 50%;
+.sx03kze-56csh {
   cursor: grab;
+  margin-left: 50%;
   overflow: hidden !important;
   transform: translateX(-50%);
 }
 
-.sx03kze-2kqv3 div[class*="slide_"] {
+.sx03kze-56csh div[class*="sliderTray_"] {
+  transition: transform .5s;
+  transition-timing-function: cubic-bezier(.645,.045,.355,1);
+  will-cchange: transform;
+}
+
+.sx03kze-56csh div[class*="slide_"] {
   float: left;
   padding-bottom: 0 !important;
 }
 
-.sx03kze-2kqv3 div[class*="slide_"] div[class*="slideInner"] {
+.sx03kze-56csh div[class*="slide_"] div[class*="slideInner"] {
   display: flex;
   justify-content: center;
 }
@@ -77,19 +83,6 @@ exports[`Carousel component renders 1`] = `
 
 .sx2cs53-mag62 button[class*="selected"] {
   background: var(--colors-primary900);
-}
-
-.sxiy5j5 {
-  opacity: 0.7;
-  transition: all 0.25s ease-in;
-}
-
-.sxiy5j5[aria-selected="true"] {
-  opacity: 1;
-}
-
-.sxiy5j5[aria-selected="true"] > div > div > * {
-  box-shadow: var(--shadows-1);
 }
 
 .sxxem7p {
@@ -240,7 +233,7 @@ exports[`Carousel component renders 1`] = `
         <div
           aria-label="Example carousel"
           aria-live="polite"
-          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-2kqv3"
+          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-56csh"
           role="listbox"
           tabindex="0"
         >
@@ -253,7 +246,7 @@ exports[`Carousel component renders 1`] = `
             >
               <div
                 aria-selected="true"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sxiy5j5"
+                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze"
                 role="option"
                 style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
                 tabindex="0"
@@ -275,7 +268,7 @@ exports[`Carousel component renders 1`] = `
               </div>
               <div
                 aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sxiy5j5"
+                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
                 role="option"
                 style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
                 tabindex="-1"
@@ -297,7 +290,7 @@ exports[`Carousel component renders 1`] = `
               </div>
               <div
                 aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sxiy5j5"
+                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
                 role="option"
                 style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
                 tabindex="-1"

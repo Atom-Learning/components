@@ -43,12 +43,17 @@ export const Carousel: React.FC<CarouselProps> & { Slide: typeof Slide } = ({
           <Box
             as={Slider}
             css={{
-              ml: '50%',
               cursor: 'grab',
+              ml: '50%',
               overflow: `${
                 type === 'overflow' ? 'visible' : 'hidden'
               } !important`,
               transform: 'translateX(-50%)',
+              '& div[class*="sliderTray_"]': {
+                transition: 'transform .5s',
+                transitionTimingFunction: 'cubic-bezier(.645,.045,.355,1)',
+                willCchange: 'transform'
+              },
               '& div[class*="slide_"]': {
                 float: 'left',
                 pb: '0 !important',
