@@ -27,25 +27,23 @@ exports[`Carousel component renders 1`] = `
   position: relative;
 }
 
-.sx03kze-56csh {
+.sx03kze-889lf {
   cursor: grab;
   margin-left: 50%;
   overflow: hidden !important;
   transform: translateX(-50%);
 }
 
-.sx03kze-56csh div[class*="sliderTray_"] {
-  transition: transform .5s;
-  transition-timing-function: cubic-bezier(.645,.045,.355,1);
-  will-cchange: transform;
+.sx03kze-889lf div[class*="sliderTray_"] {
+  transition: transform .5s cubic-bezier(.645,.045,.355,1);
 }
 
-.sx03kze-56csh div[class*="slide_"] {
+.sx03kze-889lf div[class*="slide_"] {
   float: left;
   padding-bottom: 0 !important;
 }
 
-.sx03kze-56csh div[class*="slide_"] div[class*="slideInner"] {
+.sx03kze-889lf div[class*="slideInner"] {
   display: flex;
   justify-content: center;
 }
@@ -233,7 +231,7 @@ exports[`Carousel component renders 1`] = `
         <div
           aria-label="Example carousel"
           aria-live="polite"
-          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-56csh"
+          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-889lf"
           role="listbox"
           tabindex="0"
         >

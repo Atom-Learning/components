@@ -50,17 +50,15 @@ export const Carousel: React.FC<CarouselProps> & { Slide: typeof Slide } = ({
               } !important`,
               transform: 'translateX(-50%)',
               '& div[class*="sliderTray_"]': {
-                transition: 'transform .5s',
-                transitionTimingFunction: 'cubic-bezier(.645,.045,.355,1)',
-                willCchange: 'transform'
+                transition: 'transform .5s cubic-bezier(.645,.045,.355,1)'
               },
               '& div[class*="slide_"]': {
                 float: 'left',
-                pb: '0 !important',
-                '& div[class*="slideInner"]': {
-                  display: 'flex',
-                  justifyContent: 'center'
-                }
+                pb: '0 !important'
+              },
+              '& div[class*="slideInner"]': {
+                display: 'flex',
+                justifyContent: 'center'
               }
             }}
             aria-label={name}
