@@ -1,38 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sx04ms4 {
+.sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
   font-weight: 400;
   margin: 0;
-  max-width: 60ch;
 }
 
-.sx04ms4xzxpn--size-sm {
+.sxfey5oxzxpn--size-sm {
   font-size: var(--fontSizes-sm);
   line-height: 1.69;
 }
 
-.sx04ms4xzxpn--size-sm::before {
+.sxfey5oxzxpn--size-sm::before {
   content: '';
   margin-bottom: -0.477em;
   display: table;
 }
 
-.sx04ms4xzxpn--size-sm::after {
+.sxfey5oxzxpn--size-sm::after {
   content: '';
   margin-top: -0.477em;
   display: table;
 }
 
-.sx04ms4-25jen {
+.sxfey5o-25jen {
   color: var(--colors-danger);
 }
 
 <div>
   <p
-    class="sx04ms4 sx04ms4xzxpn--size-sm sx04ms4-25jen"
+    class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-25jen"
   >
     VALIDATION ERROR
   </p>
