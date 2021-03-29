@@ -25,7 +25,6 @@ describe(`InputField component`, () => {
       <InputField
         label="INPUT FIELD"
         name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
         placeholder="INPUT FIELD"
       />
     )
@@ -56,7 +55,6 @@ describe(`InputField component`, () => {
       <InputField
         label="INPUT FIELD"
         name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
         type="number"
         placeholder="001"
       />
@@ -86,7 +84,6 @@ describe(`InputField component`, () => {
       <InputField
         label="INPUT FIELD"
         name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
         placeholder="INPUT FIELD"
         disabled
       />
@@ -116,12 +113,7 @@ describe(`InputField component`, () => {
     const errorText = 'This field is required'
 
     const { container } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        error={errorText}
-        css={{ m: 'auto', height: 100, width: 100 }}
-      />
+      <InputField label="INPUT FIELD" name="INPUT FIELD" error={errorText} />
     )
 
     expect(await axe(container)).toHaveNoViolations()

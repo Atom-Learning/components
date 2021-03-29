@@ -16,9 +16,7 @@ describe(`Input component`, () => {
   })
 
   it('renders a text input - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Input css={{ m: 'auto', height: 100, width: 100 }} placeholder="INPUT" />
-    )
+    const { container } = render(<Input placeholder="INPUT" />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
@@ -40,13 +38,7 @@ describe(`Input component`, () => {
   })
 
   it('renders a number input - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Input
-        css={{ m: 'auto', height: 100, width: 100 }}
-        type="number"
-        placeholder="001"
-      />
-    )
+    const { container } = render(<Input type="number" placeholder="001" />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
@@ -66,13 +58,7 @@ describe(`Input component`, () => {
   })
 
   it('renders a disabled input - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Input
-        css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT"
-        disabled
-      />
-    )
+    const { container } = render(<Input placeholder="INPUT" disabled />)
 
     expect(await axe(container)).toHaveNoViolations()
   })

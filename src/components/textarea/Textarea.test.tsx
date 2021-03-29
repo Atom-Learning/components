@@ -19,12 +19,7 @@ describe(`Textarea component`, () => {
   })
 
   it('renders a textarea - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Textarea
-        css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="DESCRIPTION"
-      />
-    )
+    const { container } = render(<Textarea placeholder="DESCRIPTION" />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
