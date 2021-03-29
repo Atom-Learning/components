@@ -3,13 +3,12 @@ import * as React from 'react'
 import { Flex } from '~/components/flex'
 import { CSS } from '~/stitches'
 
-// Grid implementation taken from  https://github.com/Heydon/fukol-grids
-
 type GridProps = {
   basis: string
+  children: React.ReactNode
   css: CSS
   gap: string
-} & React.ComponentProps<typeof Flex>
+} & React.ComponentsProps<typeof Flex>
 
 export const Grid: React.FC<GridProps> = ({
   basis,

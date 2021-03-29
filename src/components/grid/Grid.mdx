@@ -4,24 +4,13 @@ component: Grid
 category: Layout
 ---
 
-The `Grid` component is analagous to `Box` but additionally sets the rendering context of its children to `display: grid`.
+The `Grid` component implements a simple flex-box based grid as described [here](https://github.com/Heydon/fukol-grids).
+Its `gap` prop specifies, in any valid CSS units, the distance between items in the grid. Its `basis` prop specifies, in any valid CSS units, the minimum size of each grid item (by default this will set their `width`, but if the `css` prop is used to set `flex-direction` to `column` then it will set `height` instead).
 
 ```jsx preview
-<Grid
-  css={{
-    gap: '$3',
-    gridAutoFlow: 'column',
-    gridTemplateColumns: '33% 33% 33%'
-  }}
->
-  <Text css={{ bg: '$tonal200', gridColumn: '1', gridRow: '1', p: '$2' }}>
-    Hello
-  </Text>
-  <Text css={{ bg: '$tonal200', gridColumn: '2', gridRow: '2', p: '$2' }}>
-    Hello
-  </Text>
-  <Text css={{ bg: '$tonal200', gridColumn: '3', gridRow: '1', p: '$2' }}>
-    Hello
-  </Text>
+<Grid basis="0.5em" gap="0.05em">
+  {[0, 1, 2, 3].map((num) => (
+    <Image key={num} src="https://placekitten.com/200/300" alt="" />
+  ))}
 </Grid>
 ```
