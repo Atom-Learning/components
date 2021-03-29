@@ -8,7 +8,7 @@ type GridProps = {
   children: React.ReactNode
   css: CSS
   gap: string
-} & React.ComponentsProps<typeof Flex>
+} & React.ComponentProps<typeof Flex>
 
 export const Grid: React.FC<GridProps> = ({
   basis,
