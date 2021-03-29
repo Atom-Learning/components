@@ -6,7 +6,6 @@ import { CSS } from '~/stitches'
 type GridProps = {
   basis: string
   children: React.ReactNode
-  css: CSS
   gap: string
 } & React.ComponentProps<typeof Flex>
 
