@@ -1,4 +1,5 @@
 import theme from '@atom-learning/theme'
+import { StitchesVariants } from '@stitches/core'
 import * as React from 'react'
 
 import { CSS, styled } from '~/stitches'
@@ -43,11 +44,8 @@ const StyledStack = styled('div', {
   }
 })
 
-type StackProps = {
+type StackProps = StitchesVariants<typeof StyledStack> & {
   as?: 'div'
-  // TODO use keys from theme.space
-  gap?: 0 | 1 | 2 | 3 | 4 | 5 | 6
-  direction?: 'column' | 'row' | 'row-reverse'
 }
 
 export const Stack: React.FC<StackProps> = ({
