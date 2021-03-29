@@ -16,7 +16,16 @@ describe(`Popover component`, () => {
     expect(screen.queryByRole('tooltip')).not.toBeInTheDocument()
     expect(screen.getByRole('button', { expanded: false })).toBeInTheDocument()
 
-    // expect(container).toMatchSnapshot()
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders the trigger with the popover hidden by default - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Popover id="123" aria-label="Popover" content="Content">
+        <button>Click me</button>
+      </Popover>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -35,10 +44,24 @@ describe(`Popover component`, () => {
     expect(screen.getByRole('tooltip')).toHaveAttribute('aria-hidden', 'false')
     expect(screen.getByRole('button', { expanded: true })).toBeInTheDocument()
     expect(container).toMatchSnapshot()
+  })
+
+  it('opens the popover once trigger is clicked - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Popover id="123" aria-label="Popover" content="Content">
+        <button>Click me</button>
+      </Popover>
+    )
+    const button = screen.getByRole('button', { name: /Click me/ })
+
+    button.focus()
+    fireEvent.click(button)
+
     expect(await axe(container)).toHaveNoViolations()
   })
+
   it('opens popover using the space key', async () => {
-    const { container } = render(
+    render(
       <Popover id="123" aria-label="Popover" content="Content">
         <button>Click me</button>
       </Popover>
@@ -50,11 +73,10 @@ describe(`Popover component`, () => {
     })
 
     expect(screen.getByText('Content')).toBeInTheDocument()
-    expect(container).toMatchSnapshot()
-    expect(await axe(container)).toHaveNoViolations()
   })
+
   it("doesn't open popover using the keypress with random key press", async () => {
-    const { container } = render(
+    render(
       <Popover id="123" aria-label="Popover" content="Content">
         <button>Click me</button>
       </Popover>
@@ -66,9 +88,8 @@ describe(`Popover component`, () => {
     })
 
     expect(screen.getByText('Content')).toBeInTheDocument()
-    expect(container).toMatchSnapshot()
-    expect(await axe(container)).toHaveNoViolations()
   })
+
   it('renders as visible with left variant', async () => {
     const { container } = render(
       <Popover
@@ -83,6 +104,19 @@ describe(`Popover component`, () => {
     await screen.getByRole('tooltip')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders as visible with left variant - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Popover
+        id="123"
+        defaultOpen
+        align="left"
+        aria-label="Some text"
+        content="Hello"
+      />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })
