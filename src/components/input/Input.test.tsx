@@ -13,6 +13,13 @@ describe(`Input component`, () => {
     await screen.getByPlaceholderText('INPUT')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a text input - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Input css={{ m: 'auto', height: 100, width: 100 }} placeholder="INPUT" />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -30,11 +37,22 @@ describe(`Input component`, () => {
     expect(input).toHaveAttribute('inputmode', 'numeric')
     expect(input).toHaveAttribute('pattern', '[0-9]*')
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a number input - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Input
+        css={{ m: 'auto', height: 100, width: 100 }}
+        type="number"
+        placeholder="001"
+      />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
   it('renders a disabled input', async () => {
-    const { container, findByPlaceholderText } = render(
+    const { findByPlaceholderText } = render(
       <Input
         css={{ m: 'auto', height: 100, width: 100 }}
         placeholder="INPUT"
@@ -45,6 +63,17 @@ describe(`Input component`, () => {
     const input = await findByPlaceholderText('INPUT')
 
     expect(input).toHaveAttribute('disabled')
+  })
+
+  it('renders a disabled input - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Input
+        css={{ m: 'auto', height: 100, width: 100 }}
+        placeholder="INPUT"
+        disabled
+      />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })
