@@ -13,6 +13,13 @@ describe(`Image component`, () => {
     await screen.getByRole('img')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Image src="http://placekitten.com/200/300" alt="" />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })
