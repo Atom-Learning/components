@@ -7,8 +7,9 @@ import { CSS, styled } from '~/stitches'
 const GridContainer = styled(Flex, {
   flexWrap: 'wrap',
   variants: {
-    // { 0: { m: '-$space$0', '& > *': { m: '$space$0 } }, ... }
     gap: Object.keys(theme.space).reduce(
+      // output:
+      // { 0: { m: '-$space$0', '& > *': { m: '$space$0 } }, ... }
       (acc, key) => ({
         ...acc,
         [key]: {
@@ -24,16 +25,15 @@ const GridContainer = styled(Flex, {
 })
 
 type GridProps = {
-  minItemSize: string
-  children: React.ReactNode
   gap: string
+  minItemSize: string
 } & React.ComponentProps<typeof GridContainer>
 
 export const Grid: React.FC<GridProps> = ({
-  minItemSize,
   children,
-  gap,
   css,
+  gap,
+  minItemSize,
   ...remainingProps
 }) => {
   return (
