@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "files": [
     "dist"
@@ -43,8 +43,8 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/jest-stitches": "^1.0.8",
     "@atom-learning/icons": "^0.2.0",
+    "@atom-learning/jest-stitches": "^1.0.8",
     "@atom-learning/theme": "^0.1.0-beta.7",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",

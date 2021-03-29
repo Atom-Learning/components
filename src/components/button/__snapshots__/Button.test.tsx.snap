@@ -23,7 +23,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
   }
 }
 
-.sx03kzeywt1o--css {
+.sx03kze-ywt1o {
   opacity: 0;
   transition: opacity 150ms ease-out;
 }
@@ -32,46 +32,43 @@ exports[`Button component Loading state renders a loading button 1`] = `
   display: flex;
 }
 
-.sx2cs53gu4h1--css {
+.sx2cs53-gu4h1 {
   justify-content: center;
   opacity: 1;
   position: absolute;
   transition: opacity 150ms ease-out;
 }
 
-.sx0yv19 {
+.sxe5oww {
   animation-name: sxwho2l;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: currentColor;
-  border-radius: 100%;
+  border-radius: var(--radii-round);
 }
 
-.sx0yv19:nth-child(1) {
+.sxe5oww:nth-child(1) {
   animation-delay: -300ms;
 }
 
-.sx0yv19:nth-child(2) {
+.sxe5oww:nth-child(2) {
   animation-delay: -150ms;
 }
 
-.sx0yv19:nth-child(3) {
+.sxe5oww:nth-child(3) {
   animation-delay: 0;
 }
 
-.sx0yv194btw3--size-md {
+.sxe5oww4btw3--size-md {
   height: 6px;
   width: 6px;
-}
-
-.sx0yv194btw3--size-md {
   margin-left: 2px;
   margin-right: 2px;
 }
 
-.sxyl5fn {
+.sxoujvt {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -82,125 +79,118 @@ exports[`Button component Loading state renders a loading button 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-}
-
-.sxyl5fn {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sxyl5fn {
   white-space: nowrap;
   width: max-content;
 }
 
-.sxyl5fn[disabled] {
+.sxoujvt[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxyl5fn2jpbs--isLoading-true {
+.sxoujvt2jpbs--isLoading-true {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.sxyl5fnxyrog--comp {
+.sxoujvtxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxoujvtxyrog--c2:not([disabled]):hover,
+.sxoujvtxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxoujvtxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
+.sxoujvtxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxyl5fn8heda--comp {
+.sxoujvt8heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:not([disabled]):hover,
-.sxyl5fn8heda--comp:not([disabled]):focus {
+.sxoujvt8heda--c2:not([disabled]):hover,
+.sxoujvt8heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:active {
+.sxoujvt8heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn8heda--comp[disabled] {
+.sxoujvt8heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxyl5fn08yia--comp {
+.sxoujvt08yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxyl5fn08yia--comp:not([disabled]):hover,
-.sxyl5fn08yia--comp:not([disabled]):focus {
+.sxoujvt08yia--c2:not([disabled]):hover,
+.sxoujvt08yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxyl5fn08yia--comp:active {
+.sxoujvt08yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxyl5fn08yia--comp[disabled] {
+.sxoujvt08yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid sxyl5fn2jpbs--isLoading-true"
+    class="sxoujvt sxoujvt03kze--theme-primary sxoujvt03kze--appearance-solid sxoujvt2jpbs--isLoading-true sxoujvtxyrog--c2"
     type="button"
   >
     <div
-      class="sx2cs53 sx2cs53gu4h1--css"
+      class="sx2cs53 sx2cs53-gu4h1"
       role="alert"
     >
       <span
-        data-radix-visually-hidden=""
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >
         Loading
       </span>
       <div
-        class="sx0yv19 sx0yv194btw3--size-md"
+        class="sxe5oww sxe5oww4btw3--size-md"
       />
       <div
-        class="sx0yv19 sx0yv194btw3--size-md"
+        class="sxe5oww sxe5oww4btw3--size-md"
       />
       <div
-        class="sx0yv19 sx0yv194btw3--size-md"
+        class="sxe5oww sxe5oww4btw3--size-md"
       />
     </div>
     <span
-      class="sx03kze sx03kzeywt1o--css"
+      class="sx03kze sx03kze-ywt1o"
     >
       BUTTON
     </span>
@@ -231,7 +221,7 @@ exports[`Button component renders a button 1`] = `
   }
 }
 
-.sxyl5fn {
+.sxoujvt {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -242,52 +232,46 @@ exports[`Button component renders a button 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-}
-
-.sxyl5fn {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sxyl5fn {
   white-space: nowrap;
   width: max-content;
 }
 
-.sxyl5fn[disabled] {
+.sxoujvt[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxyl5fnxyrog--comp {
+.sxoujvtxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxoujvtxyrog--c2:not([disabled]):hover,
+.sxoujvtxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxoujvtxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
+.sxoujvtxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
+    class="sxoujvt sxoujvt03kze--theme-primary sxoujvt03kze--appearance-solid sxoujvtxyrog--c2"
     type="button"
   >
     BUTTON
@@ -318,7 +302,7 @@ exports[`Button component renders a disabled button 1`] = `
   }
 }
 
-.sxyl5fn {
+.sxoujvt {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -329,74 +313,68 @@ exports[`Button component renders a disabled button 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-}
-
-.sxyl5fn {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sxyl5fn {
   white-space: nowrap;
   width: max-content;
 }
 
-.sxyl5fn[disabled] {
+.sxoujvt[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxyl5fnxyrog--comp {
+.sxoujvtxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxoujvtxyrog--c2:not([disabled]):hover,
+.sxoujvtxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxoujvtxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
+.sxoujvtxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxyl5fn8heda--comp {
+.sxoujvt8heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:not([disabled]):hover,
-.sxyl5fn8heda--comp:not([disabled]):focus {
+.sxoujvt8heda--c2:not([disabled]):hover,
+.sxoujvt8heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:active {
+.sxoujvt8heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn8heda--comp[disabled] {
+.sxoujvt8heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fnxyrog--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-solid"
+    class="sxoujvt sxoujvt03kze--theme-primary sxoujvt03kze--appearance-solid sxoujvtxyrog--c2"
     disabled=""
     type="button"
   >
@@ -428,7 +406,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   }
 }
 
-.sxyl5fn {
+.sxoujvt {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -439,96 +417,90 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-}
-
-.sxyl5fn {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sxyl5fn {
   white-space: nowrap;
   width: max-content;
 }
 
-.sxyl5fn[disabled] {
+.sxoujvt[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxyl5fnxyrog--comp {
+.sxoujvtxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxoujvtxyrog--c2:not([disabled]):hover,
+.sxoujvtxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxoujvtxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
+.sxoujvtxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxyl5fn8heda--comp {
+.sxoujvt8heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:not([disabled]):hover,
-.sxyl5fn8heda--comp:not([disabled]):focus {
+.sxoujvt8heda--c2:not([disabled]):hover,
+.sxoujvt8heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:active {
+.sxoujvt8heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn8heda--comp[disabled] {
+.sxoujvt8heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxyl5fn08yia--comp {
+.sxoujvt08yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxyl5fn08yia--comp:not([disabled]):hover,
-.sxyl5fn08yia--comp:not([disabled]):focus {
+.sxoujvt08yia--c2:not([disabled]):hover,
+.sxoujvt08yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxyl5fn08yia--comp:active {
+.sxoujvt08yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxyl5fn08yia--comp[disabled] {
+.sxoujvt08yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fn08yia--comp sxyl5fn03kze--theme-secondary sxyl5fn03kze--appearance-outline"
+    class="sxoujvt sxoujvt03kze--theme-secondary sxoujvt03kze--appearance-outline sxoujvt08yia--c2"
     disabled=""
     type="button"
   >
@@ -560,7 +532,7 @@ exports[`Button component renders a outline button 1`] = `
   }
 }
 
-.sxyl5fn {
+.sxoujvt {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -571,74 +543,68 @@ exports[`Button component renders a outline button 1`] = `
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
   padding-left: var(--space-4);
   padding-right: var(--space-4);
-}
-
-.sxyl5fn {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
-}
-
-.sxyl5fn {
   white-space: nowrap;
   width: max-content;
 }
 
-.sxyl5fn[disabled] {
+.sxoujvt[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxyl5fnxyrog--comp {
+.sxoujvtxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxyl5fnxyrog--comp:not([disabled]):hover,
-.sxyl5fnxyrog--comp:not([disabled]):focus {
+.sxoujvtxyrog--c2:not([disabled]):hover,
+.sxoujvtxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxyl5fnxyrog--comp:active {
+.sxoujvtxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxyl5fnxyrog--comp[disabled] {
+.sxoujvtxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxyl5fn8heda--comp {
+.sxoujvt8heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:not([disabled]):hover,
-.sxyl5fn8heda--comp:not([disabled]):focus {
+.sxoujvt8heda--c2:not([disabled]):hover,
+.sxoujvt8heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxyl5fn8heda--comp:active {
+.sxoujvt8heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxyl5fn8heda--comp[disabled] {
+.sxoujvt8heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
 <div>
   <button
-    class="sxyl5fn sxyl5fn8heda--comp sxyl5fn03kze--theme-primary sxyl5fn03kze--appearance-outline"
+    class="sxoujvt sxoujvt03kze--theme-primary sxoujvt03kze--appearance-outline sxoujvt8heda--c2"
     type="button"
   >
     BUTTON
