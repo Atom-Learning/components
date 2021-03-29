@@ -65,7 +65,7 @@ describe(`Button component`, () => {
     expect(handleClick).toHaveBeenCalled()
   })
 
-  it.only('is polymorphic', async () => {
+  it('is polymorphic', async () => {
     render(
       <Button as="a" href="https://app.atomlearning.co.uk">
         BUTTON
