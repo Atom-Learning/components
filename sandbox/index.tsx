@@ -10,7 +10,7 @@ globalCss(reset)()
 const App = () => {
   return (
     <Box>
-      <Grid basis="0.5em" gap="0.05em">
+      <Grid basis="0.5em" gap={1}>
         {[0, 1, 2, 3].map((num) => (
           <Image key={num} src="https://placekitten.com/200/300" alt="" />
         ))}

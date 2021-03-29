@@ -27,17 +27,15 @@ exports[`Grid component renders 1`] = `
   display: flex;
 }
 
-.sx2cs53-vvi8t {
+.sx723mu {
   flex-wrap: wrap;
-  margin: -0.05em;
 }
 
-.sx2cs53-vvi8t > * {
-  flex: 1 0 0.5em;
-  margin: 0.05em;
+.sx723mu-ozkqi > * {
+  flex: 1 0 undefined;
 }
 
-.sx2cs53-vvi8t {
+.sx723mu-ozkqi {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -45,7 +43,8 @@ exports[`Grid component renders 1`] = `
 
 <div>
   <div
-    class="sx2cs53 sx2cs53-vvi8t"
+    basis="0.5em"
+    class="sx2cs53 sx723mu sx723mu-ozkqi"
   >
     <div
       class="sx03kze"
