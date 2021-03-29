@@ -45,13 +45,11 @@ An additional benefit is that we can apply context specific styles to the compon
     padding: '$3',
 
     // write inline responsive styles
-    when: {
-      lg: {
-        color: 'blue'
-      },
-      '@media (prefers-color-scheme: dark)': {
-        color: 'white'
-      }
+    '@lg': {
+      color: 'blue'
+    },
+    '@media (prefers-color-scheme: dark)': {
+      color: 'white'
     },
 
     // and utilise shorthand utilities

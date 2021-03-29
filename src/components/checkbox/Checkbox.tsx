@@ -1,8 +1,10 @@
+import { Ok } from '@atom-learning/icons'
 import * as RadixCheckbox from '@radix-ui/react-checkbox'
-import { CheckIcon } from '@radix-ui/react-icons'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+
+import { Icon } from '../icon'
 
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
@@ -12,8 +14,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   boxShadow: 'inset 0 0 0 2px $colors$secondary300',
   color: 'white',
   cursor: 'pointer',
-  height: '$0',
-  width: '$0',
+  size: '20px',
   padding: 0,
   display: 'flex',
   alignItems: 'center',
@@ -39,12 +40,12 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
 
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => {
-  return (
-    <StyledCheckbox {...props}>
-      <RadixCheckbox.Indicator as={CheckIcon} />
-    </StyledCheckbox>
-  )
-}
+const CheckboxIcon = () => <Icon is={Ok} size="sm" />
+
+export const Checkbox: React.FC<CheckboxProps> = (props) => (
+  <StyledCheckbox {...props}>
+    <RadixCheckbox.Indicator as={CheckboxIcon} />
+  </StyledCheckbox>
+)
 
 Checkbox.displayName = 'Checkbox'

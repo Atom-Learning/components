@@ -1,7 +1,7 @@
 import * as RadioGroup from '@radix-ui/react-radio-group'
 import * as React from 'react'
 
-import { styled } from '../../stitches'
+import { styled } from '~/stitches'
 
 const StyledRadioButtonGroup = styled(RadioGroup.Root, {})
 

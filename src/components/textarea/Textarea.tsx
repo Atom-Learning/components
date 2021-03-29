@@ -4,16 +4,15 @@ export const Textarea = styled('textarea', {
   appearance: 'none',
   border: '1px solid $tonal500',
   borderRadius: '$0',
-  boxShadow: 'none', // necessary to remove iOS default styling
+  boxShadow: 'none', // remove iOS default styling
   color: '$tonal900',
   fontFamily: '$sans',
-  fontSize: '$md', // necessary to prevent iOS zooming on focus
+  fontSize: '$md', // prevent iOS zooming on focus
   fontWeight: 400,
-  letterSpacing: '0.01em',
   lineHeight: 1.4,
-  minHeight: 100,
+  minHeight: '$6',
   px: '$3',
-  py: '$2',
+  py: 'calc($2 + $1)', // offset the line height of the text
   resize: 'vertical',
   transition: 'all 75ms ease-out',
   width: '100%',

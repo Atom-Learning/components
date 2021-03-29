@@ -83,22 +83,27 @@ exports[`Carousel component renders 1`] = `
   background: var(--colors-primary900);
 }
 
-.sxxem7p {
-  color: currentcolor;
+.sxib16r {
   display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
   vertical-align: middle;
 }
 
-.sxxem7p2cbmr--size-sm {
-  height: 16px;
-  width: 16px;
+.sxib16rmbqqh--size-md {
+  height: var(--sizes-2);
+  width: var(--sizes-2);
 }
 
-.sxqkm0u {
+.sxkha28 {
   align-items: center;
   background: none;
   border: none;
   color: var(--colors-primary900);
+  cursor: pointer;
   display: flex;
   height: 44px;
   width: 44px;
@@ -107,36 +112,37 @@ exports[`Carousel component renders 1`] = `
   transition: color 0.15s ease-in-out;
 }
 
-.sxqkm0u:hover {
+.sxkha28:hover {
   color: var(--colors-primary500);
 }
 
-.sxqkm0u:disabled {
+.sxkha28:disabled {
   color: var(--colors-tonal300);
 }
 
-.sxqkm0u {
+.sxkha28 {
   position: absolute;
   left: var(--space-2);
 }
 
 @media (min-width: 800px) {
-  .sxqkm0u {
+  .sxkha28 {
     left: var(--space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sxqkm0u {
+  .sxkha28 {
     left: var(--space-4);
   }
 }
 
-.sx08f80 {
+.sxpwwbs {
   align-items: center;
   background: none;
   border: none;
   color: var(--colors-primary900);
+  cursor: pointer;
   display: flex;
   height: 44px;
   width: 44px;
@@ -145,51 +151,50 @@ exports[`Carousel component renders 1`] = `
   transition: color 0.15s ease-in-out;
 }
 
-.sx08f80:hover {
+.sxpwwbs:hover {
   color: var(--colors-primary500);
 }
 
-.sx08f80:disabled {
+.sxpwwbs:disabled {
   color: var(--colors-tonal300);
 }
 
-.sx08f80 {
+.sxpwwbs {
   right: var(--space-2);
   position: absolute;
 }
 
 @media (min-width: 800px) {
-  .sx08f80 {
+  .sxpwwbs {
     right: var(--space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sx08f80 {
+  .sxpwwbs {
     right: var(--space-4);
   }
 }
 
-.sxhod8r {
+.sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
   font-weight: 400;
   margin: 0;
-  max-width: 60ch;
 }
 
-.sxhod8rjqqvr--size-md {
+.sxfey5ojqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxhod8rjqqvr--size-md::before {
+.sxfey5ojqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxhod8rjqqvr--size-md::after {
+.sxfey5ojqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
@@ -210,26 +215,36 @@ exports[`Carousel component renders 1`] = `
         >
           <button
             aria-label="previous"
-            class="buttonBack___1mlaL carousel__back-button sxqkm0u"
+            class="buttonBack___1mlaL carousel__back-button sxkha28"
             disabled=""
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="sxxem7p sxxem7p2cbmr--size-sm"
+              class="sxib16r sxib16rmbqqh--size-md"
               viewBox="0 0 24 24"
-            />
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="14 18 8 12 14 6 14 6"
+              />
+            </svg>
           </button>
           <button
             aria-label="next"
-            class="buttonNext___2mOCa carousel__next-button sx08f80"
+            class="buttonNext___2mOCa carousel__next-button sxpwwbs"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="sxxem7p sxxem7p2cbmr--size-sm"
+              class="sxib16r sxib16rmbqqh--size-md"
               viewBox="0 0 24 24"
-            />
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="10 6 16 12 10 18 10 18"
+              />
+            </svg>
           </button>
           <div
             aria-label="Example carousel"
@@ -259,7 +274,7 @@ exports[`Carousel component renders 1`] = `
                       class="sx03kze sx03kze-f7jkm"
                     >
                       <p
-                        class="sxhod8r sxhod8rjqqvr--size-md"
+                        class="sxfey5o sxfey5ojqqvr--size-md"
                       >
                         Slide 
                         0
@@ -281,7 +296,7 @@ exports[`Carousel component renders 1`] = `
                       class="sx03kze sx03kze-f7jkm"
                     >
                       <p
-                        class="sxhod8r sxhod8rjqqvr--size-md"
+                        class="sxfey5o sxfey5ojqqvr--size-md"
                       >
                         Slide 
                         1
@@ -303,7 +318,7 @@ exports[`Carousel component renders 1`] = `
                       class="sx03kze sx03kze-f7jkm"
                     >
                       <p
-                        class="sxhod8r sxhod8rjqqvr--size-md"
+                        class="sxfey5o sxfey5ojqqvr--size-md"
                       >
                         Slide 
                         2

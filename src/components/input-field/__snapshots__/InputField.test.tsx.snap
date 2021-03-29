@@ -7,7 +7,7 @@ exports[`InputField component renders a field with a  number input 1`] = `
   width: 100px;
 }
 
-.sx1up9i {
+.sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -19,25 +19,25 @@ exports[`InputField component renders a field with a  number input 1`] = `
   display: block;
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   width: 100%;
   padding: var(--space-3);
   transition: all 100ms ease-out;
 }
 
-.sx1up9i:focus {
+.sx47aq8:focus {
   border-color: var(--colors-primary900);
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx1up9i[disabled] {
+.sx47aq8[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sxd964z {
+.sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
@@ -45,24 +45,24 @@ exports[`InputField component renders a field with a  number input 1`] = `
   margin: 0;
 }
 
-.sxd964zjqqvr--size-md {
+.sxdiu5cjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxd964zjqqvr--size-md::before {
+.sxdiu5cjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxd964zjqqvr--size-md::after {
+.sxdiu5cjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
 }
 
-.sxd964z-b2uuy {
+.sxdiu5c-b2uuy {
   margin-bottom: var(--space-2);
 }
 
@@ -71,13 +71,13 @@ exports[`InputField component renders a field with a  number input 1`] = `
     class="sx03kze sx03kze-6obnf"
   >
     <label
-      class="sxd964z sxd964zjqqvr--size-md sxd964z-b2uuy"
+      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
       for="INPUT FIELD"
     >
       INPUT FIELD
     </label>
     <input
-      class="sx1up9i"
+      class="sx47aq8"
       id="INPUT FIELD"
       inputmode="numeric"
       name="INPUT FIELD"
@@ -96,7 +96,7 @@ exports[`InputField component renders a field with a text input 1`] = `
   width: 100px;
 }
 
-.sx1up9i {
+.sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -108,25 +108,25 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: block;
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   width: 100%;
   padding: var(--space-3);
   transition: all 100ms ease-out;
 }
 
-.sx1up9i:focus {
+.sx47aq8:focus {
   border-color: var(--colors-primary900);
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx1up9i[disabled] {
+.sx47aq8[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sxd964z {
+.sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
   font-family: var(--fonts-sans);
@@ -134,24 +134,24 @@ exports[`InputField component renders a field with a text input 1`] = `
   margin: 0;
 }
 
-.sxd964zjqqvr--size-md {
+.sxdiu5cjqqvr--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxd964zjqqvr--size-md::before {
+.sxdiu5cjqqvr--size-md::before {
   content: '';
   margin-bottom: -0.4489em;
   display: table;
 }
 
-.sxd964zjqqvr--size-md::after {
+.sxdiu5cjqqvr--size-md::after {
   content: '';
   margin-top: -0.4489em;
   display: table;
 }
 
-.sxd964z-b2uuy {
+.sxdiu5c-b2uuy {
   margin-bottom: var(--space-2);
 }
 
@@ -160,13 +160,13 @@ exports[`InputField component renders a field with a text input 1`] = `
     class="sx03kze sx03kze-6obnf"
   >
     <label
-      class="sxd964z sxd964zjqqvr--size-md sxd964z-b2uuy"
+      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
       for="INPUT FIELD"
     >
       INPUT FIELD
     </label>
     <input
-      class="sx1up9i"
+      class="sx47aq8"
       id="INPUT FIELD"
       name="INPUT FIELD"
       placeholder="INPUT FIELD"

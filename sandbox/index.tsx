@@ -14,7 +14,7 @@ const App = () => {
         slideWidth={200}
         slideHeight={300}
         name="Example carousel"
-        type="overflow"
+        type="arrows"
       >
         {[0, 1, 2, 3].map((num) => (
           <Carousel.Slide

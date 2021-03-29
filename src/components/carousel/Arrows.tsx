@@ -1,7 +1,8 @@
+import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { ButtonBack, ButtonNext } from 'pure-react-carousel'
 import * as React from 'react'
 
-import { ChevronLeft, ChevronRight, Icon } from '~/components/icon'
+import { Icon } from '~/components/icon'
 import { styled } from '~/stitches'
 
 const buttonStyles = {
@@ -9,6 +10,7 @@ const buttonStyles = {
   bg: 'none',
   border: 'none',
   color: '$primary900',
+  cursor: 'pointer',
   display: 'flex',
   size: '44px',
   top: '50%',

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
-.sx1up9i {
+.sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -13,25 +13,25 @@ exports[`Input component renders a number input 1`] = `
   display: block;
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   width: 100%;
   padding: var(--space-3);
   transition: all 100ms ease-out;
 }
 
-.sx1up9i:focus {
+.sx47aq8:focus {
   border-color: var(--colors-primary900);
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx1up9i[disabled] {
+.sx47aq8[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sx1up9i-6obnf {
+.sx47aq8-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -39,7 +39,7 @@ exports[`Input component renders a number input 1`] = `
 
 <div>
   <input
-    class="sx1up9i sx1up9i-6obnf"
+    class="sx47aq8 sx47aq8-6obnf"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -49,7 +49,7 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
-.sx1up9i {
+.sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -61,25 +61,25 @@ exports[`Input component renders a text input 1`] = `
   display: block;
   font-family: var(--fonts-sans);
   font-size: var(--fontSizes-md);
-  height: var(--sizes-2);
+  height: var(--sizes-4);
   width: 100%;
   padding: var(--space-3);
   transition: all 100ms ease-out;
 }
 
-.sx1up9i:focus {
+.sx47aq8:focus {
   border-color: var(--colors-primary900);
   box-shadow: inset 0 0 0 1px var(--colors-primary900);
   outline: none;
 }
 
-.sx1up9i[disabled] {
+.sx47aq8[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
-.sx1up9i-6obnf {
+.sx47aq8-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -87,7 +87,7 @@ exports[`Input component renders a text input 1`] = `
 
 <div>
   <input
-    class="sx1up9i sx1up9i-6obnf"
+    class="sx47aq8 sx47aq8-6obnf"
     placeholder="INPUT"
     type="text"
   />
