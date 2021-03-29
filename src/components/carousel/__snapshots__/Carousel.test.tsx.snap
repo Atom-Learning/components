@@ -197,146 +197,150 @@ exports[`Carousel component renders 1`] = `
 
 <div>
   <div
-    class="carousel"
+    class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-8txt2"
+      class="carousel"
     >
       <div
-        class="sx03kze sx03kze-2v396"
+        class="sx2cs53 sx2cs53-8txt2"
       >
-        <button
-          aria-label="previous"
-          class="buttonBack___1mlaL carousel__back-button sxqkm0u"
-          disabled=""
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="sxxem7p sxxem7p2cbmr--size-sm"
-            viewBox="0 0 24 24"
-          />
-        </button>
-        <button
-          aria-label="next"
-          class="buttonNext___2mOCa carousel__next-button sx08f80"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="sxxem7p sxxem7p2cbmr--size-sm"
-            viewBox="0 0 24 24"
-          />
-        </button>
         <div
-          aria-label="Example carousel"
-          aria-live="polite"
-          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-889lf"
-          role="listbox"
-          tabindex="0"
+          class="sx03kze sx03kze-2v396"
         >
+          <button
+            aria-label="previous"
+            class="buttonBack___1mlaL carousel__back-button sxqkm0u"
+            disabled=""
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="sxxem7p sxxem7p2cbmr--size-sm"
+              viewBox="0 0 24 24"
+            />
+          </button>
+          <button
+            aria-label="next"
+            class="buttonNext___2mOCa carousel__next-button sx08f80"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="sxxem7p sxxem7p2cbmr--size-sm"
+              viewBox="0 0 24 24"
+            />
+          </button>
           <div
-            class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
+            aria-label="Example carousel"
+            aria-live="polite"
+            class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-889lf"
+            role="listbox"
+            tabindex="0"
           >
             <div
-              class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
-              style="width: 300%; transform: translateX(0%) translateX(0px); flex-direction: row;"
+              class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
             >
               <div
-                aria-selected="true"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze"
-                role="option"
-                style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
-                tabindex="0"
+                class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
+                style="width: 300%; transform: translateX(0%) translateX(0px); flex-direction: row;"
               >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  aria-selected="true"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze"
+                  role="option"
+                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  tabindex="0"
                 >
                   <div
-                    class="sx03kze sx03kze-f7jkm"
+                    class="slideInner___2mfX9 carousel__inner-slide"
                   >
-                    <p
-                      class="sxhod8r sxhod8rjqqvr--size-md"
+                    <div
+                      class="sx03kze sx03kze-f7jkm"
                     >
-                      Slide 
-                      0
-                    </p>
+                      <p
+                        class="sxhod8r sxhod8rjqqvr--size-md"
+                      >
+                        Slide 
+                        0
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
-                role="option"
-                style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
-                tabindex="-1"
-              >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  aria-selected="false"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
+                  role="option"
+                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  tabindex="-1"
                 >
                   <div
-                    class="sx03kze sx03kze-f7jkm"
+                    class="slideInner___2mfX9 carousel__inner-slide"
                   >
-                    <p
-                      class="sxhod8r sxhod8rjqqvr--size-md"
+                    <div
+                      class="sx03kze sx03kze-f7jkm"
                     >
-                      Slide 
-                      1
-                    </p>
+                      <p
+                        class="sxhod8r sxhod8rjqqvr--size-md"
+                      >
+                        Slide 
+                        1
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div
-                aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
-                role="option"
-                style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
-                tabindex="-1"
-              >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  aria-selected="false"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
+                  role="option"
+                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  tabindex="-1"
                 >
                   <div
-                    class="sx03kze sx03kze-f7jkm"
+                    class="slideInner___2mfX9 carousel__inner-slide"
                   >
-                    <p
-                      class="sxhod8r sxhod8rjqqvr--size-md"
+                    <div
+                      class="sx03kze sx03kze-f7jkm"
                     >
-                      Slide 
-                      2
-                    </p>
+                      <p
+                        class="sxhod8r sxhod8rjqqvr--size-md"
+                      >
+                        Slide 
+                        2
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="carousel__dot-group sx2cs53 sx2cs53-mag62"
-      >
-        <button
-          aria-label="slide dot"
-          class="dot___3c3SI carousel__dot carousel__dot--0 carousel__dot--selected"
-          disabled=""
-          type="button"
+        <div
+          class="carousel__dot-group sx2cs53 sx2cs53-mag62"
         >
-          <span />
-        </button>
-        <button
-          aria-label="slide dot"
-          class="dot___3c3SI carousel__dot carousel__dot--1"
-          type="button"
-        >
-          <span />
-        </button>
-        <button
-          aria-label="slide dot"
-          class="dot___3c3SI carousel__dot carousel__dot--2"
-          type="button"
-        >
-          <span />
-        </button>
+          <button
+            aria-label="slide dot"
+            class="dot___3c3SI carousel__dot carousel__dot--0 carousel__dot--selected"
+            disabled=""
+            type="button"
+          >
+            <span />
+          </button>
+          <button
+            aria-label="slide dot"
+            class="dot___3c3SI carousel__dot carousel__dot--1"
+            type="button"
+          >
+            <span />
+          </button>
+          <button
+            aria-label="slide dot"
+            class="dot___3c3SI carousel__dot carousel__dot--2"
+            type="button"
+          >
+            <span />
+          </button>
+        </div>
       </div>
     </div>
   </div>

@@ -1,18 +1,12 @@
-import {
-  ButtonBack,
-  ButtonNext,
-  CarouselProvider,
-  Slider
-} from 'pure-react-carousel'
+import { CarouselProvider, Slider } from 'pure-react-carousel'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
-import { styled } from '~/stitches'
 
+import { Arrows } from './Arrows'
 import { Dots } from './Dots'
 import { Slide } from './Slide'
-import { Arrows } from './Arrows'
 
 type CarouselProps = {
   name: string
@@ -24,53 +18,58 @@ type CarouselProps = {
   children: Array<React.ReactElement>
 }
 
-export const Carousel: React.FC<CarouselProps> & { Slide: typeof Slide } = ({
+export const Carousel: React.FC<
+  CarouselProps & React.ComponentProps<typeof Box>
+> & { Slide: typeof Slide } = ({
   children,
   name,
   slideHeight,
   slideWidth,
-  type = 'arrows'
+  type = 'arrows',
+  ...remainingProps
 }) => {
   return (
-    <CarouselProvider
-      naturalSlideWidth={slideWidth}
-      naturalSlideHeight={slideHeight}
-      totalSlides={children.length}
-    >
-      <Flex css={{ flexDirection: 'column' }}>
-        <Box css={{ position: 'relative' }}>
-          {type === 'arrows' && <Arrows />}
-          <Box
-            as={Slider}
-            css={{
-              cursor: 'grab',
-              ml: '50%',
-              overflow: `${
-                type === 'overflow' ? 'visible' : 'hidden'
-              } !important`,
-              transform: 'translateX(-50%)',
-              '& div[class*="sliderTray_"]': {
-                transition: 'transform .5s cubic-bezier(.645,.045,.355,1)'
-              },
-              '& div[class*="slide_"]': {
-                float: 'left',
-                pb: '0 !important'
-              },
-              '& div[class*="slideInner"]': {
-                display: 'flex',
-                justifyContent: 'center'
-              }
-            }}
-            aria-label={name}
-            trayTag="div"
-          >
-            {children}
+    <Box {...remainingProps}>
+      <CarouselProvider
+        naturalSlideWidth={slideWidth}
+        naturalSlideHeight={slideHeight}
+        totalSlides={children.length}
+      >
+        <Flex css={{ flexDirection: 'column' }}>
+          <Box css={{ position: 'relative' }}>
+            {type === 'arrows' && <Arrows />}
+            <Box
+              as={Slider}
+              css={{
+                cursor: 'grab',
+                ml: '50%',
+                overflow: `${
+                  type === 'overflow' ? 'visible' : 'hidden'
+                } !important`,
+                transform: 'translateX(-50%)',
+                '& div[class*="sliderTray_"]': {
+                  transition: 'transform .5s cubic-bezier(.645,.045,.355,1)'
+                },
+                '& div[class*="slide_"]': {
+                  float: 'left',
+                  pb: '0 !important'
+                },
+                '& div[class*="slideInner"]': {
+                  display: 'flex',
+                  justifyContent: 'center'
+                }
+              }}
+              aria-label={name}
+              trayTag="div"
+            >
+              {children}
+            </Box>
           </Box>
-        </Box>
 
-        <Dots />
-      </Flex>
-    </CarouselProvider>
+          <Dots />
+        </Flex>
+      </CarouselProvider>
+    </Box>
   )
 }
 
