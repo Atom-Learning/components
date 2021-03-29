@@ -1,11 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component renders 1`] = `
-.sxsxxpi {
-  display: grid;
+@keyframes sxwho2l {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.sxsxxpi-6obnf {
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-vvi8t {
+  flex-wrap: wrap;
+  margin: -0.05em;
+}
+
+.sx2cs53-vvi8t > * {
+  flex: 1 0 0.5em;
+  margin: 0.05em;
+}
+
+.sx2cs53-vvi8t {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -13,9 +45,23 @@ exports[`Grid component renders 1`] = `
 
 <div>
   <div
-    class="sxsxxpi sxsxxpi-6obnf"
+    class="sx2cs53 sx2cs53-vvi8t"
   >
-    GRID
+    <div
+      class="sx03kze"
+    >
+      1
+    </div>
+    <div
+      class="sx03kze"
+    >
+      2
+    </div>
+    <div
+      class="sx03kze"
+    >
+      3
+    </div>
   </div>
 </div>
 `;
