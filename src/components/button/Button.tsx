@@ -86,6 +86,23 @@ const StyledButton = styled('button', {
       true: {
         width: '100%'
       }
+    },
+    size: {
+      sm: {
+        p: '$1 $2',
+        fontSize: '$sm',
+        lineHeight: 2
+      },
+      md: {
+        p: '$2 $3',
+        fontSize: '$md',
+        lineHeight: 2
+      },
+      lg: {
+        p: '$3 $4',
+        fontSize: '$lg',
+        lineHeight: 1.5
+      }
     }
   },
 
@@ -151,12 +168,13 @@ type ButtonProps = Override<
 >
 
 export const Button: React.FC<ButtonProps> = ({
-  theme = 'primary',
-  appearance = 'solid',
   isLoading,
-  type = 'button',
   children,
   onClick,
+  appearance = 'solid',
+  size = 'md',
+  theme = 'primary',
+  type = 'button',
   ...rest
 }) => {
   // Note: button is not disabled when loading for accessibility purposes.
@@ -174,6 +192,7 @@ export const Button: React.FC<ButtonProps> = ({
       appearance={appearance}
       isLoading={isLoading || false}
       onClick={onClick ? () => handleClick(onClick) : undefined}
+      size={size}
       type={type}
       {...rest}
     >
