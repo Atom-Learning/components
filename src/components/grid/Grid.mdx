@@ -7,6 +7,8 @@ category: Layout
 The `Grid` component implements a simple flex-box based grid as described [here](https://github.com/Heydon/fukol-grids).
 Its `gap` prop specifies the distance between items in the grid using the theme's `space` scale. Its `minItemSize` prop specifies, in any valid CSS units, the minimum size of each grid item (by default this will set their `width`, but if the `css` prop is used to set `flex-direction` to `column` then it will set `height` instead).
 
+**Note:** Because `gap` is implemented with CSS `margin`s, passing percentage values into `minItemSize` will result in unintuitive behaviour. E.g. `minItemSize="50%"` will result in only one item per row because `50%` `width` + any `margin` on the first item means the second item will wrap onto the second line.
+
 ```jsx preview
 <Grid minItemSize="0.5em" gap={1}>
   {[0, 1, 2, 3].map((num) => (
