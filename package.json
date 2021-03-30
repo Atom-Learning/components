@@ -113,6 +113,7 @@
     "@stitches/react": "^0.1.0",
     "@types/react": "^17.0.2",
     "@types/resize-observer-browser": "^0.1.5",
+    "pure-react-carousel": "^1.27.6",
     "colorsys": "^1.0.22",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0"
