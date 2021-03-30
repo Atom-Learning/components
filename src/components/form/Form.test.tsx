@@ -19,6 +19,15 @@ describe(`Form component`, () => {
     await screen.getByRole('form')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Form onSubmit={jest.fn()}>
+        <InputField name="name" label="Name" />
+      </Form>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 

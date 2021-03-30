@@ -18,6 +18,16 @@ Before developing a component, please take some time to read the following secti
 
 ```jsx
 it('has no programmatically detectable a11y issues', async () => {
+  const { container } = render(<Button />)
+
+  expect(await axe(container)).toHaveNoViolations()
+})
+```
+
+or
+
+```jsx
+it('has no programmatically detectable a11y issues', async () => {
   render(<Flex />, document.body)
   const results = await axe(document.body)
   expect(results).toHaveNoViolations()
