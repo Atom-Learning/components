@@ -27,27 +27,6 @@ exports[`Carousel component renders 1`] = `
   position: relative;
 }
 
-.sx03kze-889lf {
-  cursor: grab;
-  margin-left: 50%;
-  overflow: hidden !important;
-  transform: translateX(-50%);
-}
-
-.sx03kze-889lf div[class*="sliderTray_"] {
-  transition: transform .5s cubic-bezier(.645,.045,.355,1);
-}
-
-.sx03kze-889lf div[class*="slide_"] {
-  float: left;
-  padding-bottom: 0 !important;
-}
-
-.sx03kze-889lf div[class*="slideInner"] {
-  display: flex;
-  justify-content: center;
-}
-
 .sx03kze-f7jkm {
   padding-left: var(--space-3);
   padding-right: var(--space-3);
@@ -176,6 +155,26 @@ exports[`Carousel component renders 1`] = `
   }
 }
 
+.sx9wiwz {
+  cursor: grab;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.sx9wiwz div[class*="sliderTray_"] {
+  transition: transform .5s cubic-bezier(.645,.045,.355,1);
+}
+
+.sx9wiwz div[class*="slide_"] {
+  float: left;
+  padding-bottom: 0 !important;
+}
+
+.sx9wiwz div[class*="slideInner"] {
+  display: flex;
+  justify-content: center;
+}
+
 .sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
@@ -249,7 +248,7 @@ exports[`Carousel component renders 1`] = `
           <div
             aria-label="Example carousel"
             aria-live="polite"
-            class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx03kze sx03kze-889lf"
+            class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx9wiwz"
             role="listbox"
             tabindex="0"
           >
