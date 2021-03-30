@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component renders 1`] = `
+.sx03kze-4mcwz {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 500px;
+}
+
+.sx03kze-f7jkm {
+  padding-left: var(--space-3);
+  padding-right: var(--space-3);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-mag62 {
+  justify-content: center;
+}
+
+.sx2cs53-mag62 button {
+  background: var(--colors-tonal300);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: var(--space-4);
+  margin-left: var(--space-1);
+  margin-right: var(--space-1);
+  padding: var(--space-1);
+  height: 12px;
+  width: 12px;
+  transition: all 0.25s ease-in;
+}
+
+.sx2cs53-mag62 button[class*="selected"] {
+  background: var(--colors-primary900);
+}
+
+.sxib16r {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxib16rmbqqh--size-md {
+  height: var(--sizes-2);
+  width: var(--sizes-2);
+}
+
+.sxgjq46 {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--colors-primary900);
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.15s ease-in-out;
+}
+
+.sxgjq46:hover {
+  color: var(--colors-primary500);
+}
+
+.sxgjq46:disabled {
+  color: var(--colors-tonal300);
+}
+
+.sxgjq46-pqx9j {
+  position: absolute;
+  left: var(--space-2);
+}
+
+@media (min-width: 800px) {
+  .sxgjq46-pqx9j {
+    left: var(--space-3);
+  }
+}
+
+@media (min-width: 1100px) {
+  .sxgjq46-pqx9j {
+    left: var(--space-4);
+  }
+}
+
+.sxgjq46 {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--colors-primary900);
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.15s ease-in-out;
+}
+
+.sxgjq46:hover {
+  color: var(--colors-primary500);
+}
+
+.sxgjq46:disabled {
+  color: var(--colors-tonal300);
+}
+
+.sxgjq46-dtra5 {
+  position: absolute;
+  right: var(--space-2);
+}
+
+@media (min-width: 800px) {
+  .sxgjq46-dtra5 {
+    right: var(--space-3);
+  }
+}
+
+@media (min-width: 1100px) {
+  .sxgjq46-dtra5 {
+    right: var(--space-4);
+  }
+}
+
+.sx03kze-iy5j5 {
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] {
+  opacity: 1;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] > div > div > * {
+  box-shadow: var(--shadows-1);
+}
+
+.sx7shsv {
+  cursor: grab;
+  margin-left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+
+.sx7shsv div[class*="sliderTray_"] {
+  transition: transform .5s cubic-bezier(.645,.045,.355,1);
+}
+
+.sx7shsv div[class*="slide_"] {
+  float: left;
+  padding-bottom: 0 !important;
+}
+
+.sx7shsv div[class*="slideInner"] {
+  display: flex;
+  justify-content: center;
+}
+
+.sxkoa5n {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.sxkoa5n[width] {
+  width: auto;
+}
+
+.sxkoa5n[width][height] {
+  height: auto;
+}
+
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+<div>
+  <div
+    class="sx03kze sx03kze-4mcwz"
+    data-testid="css-wrapper"
+  >
+    <div
+      class="carousel"
+    >
+      <button
+        aria-label="previous"
+        class="buttonBack___1mlaL carousel__back-button sxgjq46 sxgjq46-pqx9j"
+        disabled=""
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="sxib16r sxib16rmbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="next"
+        class="buttonNext___2mOCa carousel__next-button sxgjq46 sxgjq46-dtra5"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="sxib16r sxib16rmbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+      <div
+        aria-label="Example carousel"
+        aria-live="polite"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx7shsv"
+        role="listbox"
+        tabindex="0"
+      >
+        <div
+          class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
+        >
+          <div
+            class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
+            style="width: 400%; transform: translateX(0%) translateX(0px); flex-direction: row;"
+          >
+            <div
+              aria-label="slide 0"
+              aria-selected="true"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="0"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kze-f7jkm"
+                >
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-label="slide 1"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kze-f7jkm"
+                >
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-label="slide 2"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kze-f7jkm"
+                >
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              aria-label="slide 3"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
+              <div
+                class="slideInner___2mfX9 carousel__inner-slide"
+              >
+                <div
+                  class="sx03kze sx03kze-f7jkm"
+                >
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="carousel__dot-group sx2cs53 sx2cs53-mag62"
+      >
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--0 carousel__dot--selected"
+          disabled=""
+          type="button"
+        >
+          <span />
+        </button>
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--1"
+          type="button"
+        >
+          <span />
+        </button>
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--2"
+          type="button"
+        >
+          <span />
+        </button>
+        <button
+          aria-label="slide dot"
+          class="dot___3c3SI carousel__dot carousel__dot--3"
+          type="button"
+        >
+          <span />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
