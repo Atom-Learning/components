@@ -1,5 +1,6 @@
 export { Box } from './box'
 export { Button } from './button'
+export { Carousel } from './carousel'
 export { Checkbox } from './checkbox'
 export { Divider } from './divider'
 export { Flex } from './flex'
