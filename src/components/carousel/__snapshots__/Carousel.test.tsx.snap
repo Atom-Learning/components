@@ -23,7 +23,9 @@ exports[`Carousel component renders 1`] = `
   }
 }
 
-.sx03kze-2v396 {
+.sx03kze-1pbbb {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -34,10 +36,6 @@ exports[`Carousel component renders 1`] = `
 
 .sx2cs53 {
   display: flex;
-}
-
-.sx2cs53-8txt2 {
-  flex-direction: column;
 }
 
 .sx2cs53-mag62 {
@@ -155,6 +153,19 @@ exports[`Carousel component renders 1`] = `
   }
 }
 
+.sx03kze-iy5j5 {
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] {
+  opacity: 1;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] > div > div > * {
+  box-shadow: var(--shadows-1);
+}
+
 .sx7shsv {
   cursor: grab;
   margin-left: 50%;
@@ -176,137 +187,165 @@ exports[`Carousel component renders 1`] = `
   justify-content: center;
 }
 
+.sxkoa5n {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.sxkoa5n[width] {
+  width: auto;
+}
+
+.sxkoa5n[width][height] {
+  height: auto;
+}
+
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
 <div>
   <div
-    class="carousel"
+    class="sx03kze sx03kze-1pbbb"
+    data-testid="css-wrapper"
   >
     <div
-      class="sx2cs53 sx2cs53-8txt2"
+      class="carousel"
     >
-      <div
-        class="sx03kze sx03kze-2v396"
+      <button
+        aria-label="previous"
+        class="buttonBack___1mlaL carousel__back-button sxkha28"
+        disabled=""
+        type="button"
       >
-        <button
-          aria-label="previous"
-          class="buttonBack___1mlaL carousel__back-button sxkha28"
-          disabled=""
-          type="button"
+        <svg
+          aria-hidden="true"
+          class="sxib16r sxib16rmbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="sxib16r sxib16rmbqqh--size-md"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="14 18 8 12 14 6 14 6"
-            />
-          </svg>
-        </button>
-        <button
-          aria-label="next"
-          class="buttonNext___2mOCa carousel__next-button sxpwwbs"
-          type="button"
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="next"
+        class="buttonNext___2mOCa carousel__next-button sxpwwbs"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="sxib16r sxib16rmbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="sxib16r sxib16rmbqqh--size-md"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="10 6 16 12 10 18 10 18"
-            />
-          </svg>
-        </button>
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+      <div
+        aria-label="Example carousel"
+        aria-live="polite"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx7shsv"
+        role="listbox"
+        tabindex="0"
+      >
         <div
-          aria-label="Example carousel"
-          aria-live="polite"
-          class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx7shsv"
-          role="listbox"
-          tabindex="0"
+          class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
         >
           <div
-            class="carousel__slider-tray-wrapper carousel__slider-tray-wrap--horizontal"
+            class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
+            style="width: 400%; transform: translateX(0%) translateX(0px); flex-direction: row;"
           >
             <div
-              class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
-              style="width: 400%; transform: translateX(0%) translateX(0px); flex-direction: row;"
+              aria-label="slide 0"
+              aria-selected="true"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="0"
             >
               <div
-                aria-label="slide 0"
-                aria-selected="true"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze"
-                role="option"
-                style="width: 25%; padding-bottom: 37.5%;"
-                tabindex="0"
+                class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  class="sx03kze sx03kze-f7jkm"
                 >
-                  <div
-                    class="sx03kze sx03kze-f7jkm"
-                  >
-                    Slide 
-                    0
-                  </div>
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
                 </div>
               </div>
+            </div>
+            <div
+              aria-label="slide 1"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
               <div
-                aria-label="slide 1"
-                aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
-                role="option"
-                style="width: 25%; padding-bottom: 37.5%;"
-                tabindex="-1"
+                class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  class="sx03kze sx03kze-f7jkm"
                 >
-                  <div
-                    class="sx03kze sx03kze-f7jkm"
-                  >
-                    Slide 
-                    1
-                  </div>
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
                 </div>
               </div>
+            </div>
+            <div
+              aria-label="slide 2"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
               <div
-                aria-label="slide 2"
-                aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
-                role="option"
-                style="width: 25%; padding-bottom: 37.5%;"
-                tabindex="-1"
+                class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  class="sx03kze sx03kze-f7jkm"
                 >
-                  <div
-                    class="sx03kze sx03kze-f7jkm"
-                  >
-                    Slide 
-                    2
-                  </div>
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
                 </div>
               </div>
+            </div>
+            <div
+              aria-label="slide 3"
+              aria-selected="false"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              role="option"
+              style="width: 25%; padding-bottom: 37.5%;"
+              tabindex="-1"
+            >
               <div
-                aria-label="slide 3"
-                aria-selected="false"
-                class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
-                role="option"
-                style="width: 25%; padding-bottom: 37.5%;"
-                tabindex="-1"
+                class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="slideInner___2mfX9 carousel__inner-slide"
+                  class="sx03kze sx03kze-f7jkm"
                 >
-                  <div
-                    class="sx03kze sx03kze-f7jkm"
-                  >
-                    Slide 
-                    3
-                  </div>
+                  <img
+                    alt=""
+                    class="sxkoa5n"
+                    src="https://placekitten.com/200/300"
+                  />
                 </div>
               </div>
             </div>
