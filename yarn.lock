@@ -9,10 +9,10 @@
   dependencies:
     ikonate "^1.1.1"
 
-"@atom-learning/jest-stitches@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.8.tgz#945e6005d34be29f94b6f3d28d852a7b8359dbef"
-  integrity sha512-xJ5KtP4wzt3VDPYwtRkKfmS3PfJcAbZG1RitBob7BPn2P8GMLmiUtBKEbg5k+6m8NrWSIn+TVnQMl9FZ4am1mg==
+"@atom-learning/jest-stitches@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@atom-learning/jest-stitches/-/jest-stitches-1.0.10.tgz#5d0ad7e6c24ba62858cf5b8e8240345e53ca0523"
+  integrity sha512-aPRyRcms/Zr5ixvAMzR7+kE8OHcfuUUo/fPxqAk1PWNico1rmnyIn9Hnk7uX9WuDVVia92qcZhkGVNrrxyKXtA==
   dependencies:
     chalk "^4.1.0"
     css "^3.0.0"
