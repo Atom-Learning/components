@@ -13,6 +13,13 @@ describe(`ValidationError component`, () => {
     await screen.getByText('VALIDATION ERROR')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <ValidationError>VALIDATION ERROR</ValidationError>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })

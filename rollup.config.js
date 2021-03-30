@@ -1,10 +1,8 @@
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
-import svgr from '@svgr/rollup'
 import bundleSize from 'rollup-plugin-bundle-size'
 import { terser } from 'rollup-plugin-terser'
-import url from 'rollup-plugin-url'
 import visualizer from 'rollup-plugin-visualizer'
 
 import pkg from './package.json'
@@ -27,9 +25,7 @@ export default {
     commonjs(),
     resolve(),
     isProduction && terser(),
-    svgr(),
     typescript(),
-    url(),
     debug && visualizer()
   ]
 }

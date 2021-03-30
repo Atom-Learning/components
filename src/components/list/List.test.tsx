@@ -14,6 +14,16 @@ describe(`List component`, () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <List>
+        <List.Item>Item 1</List.Item>
+        <List.Item>Item 2</List.Item>
+      </List>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })

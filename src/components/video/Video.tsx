@@ -20,27 +20,25 @@ export const Video: React.FC<VideoProps> = ({
   externalId,
   ratio = 9 / 16,
   ...remainingProps
-}) => {
-  return (
-    <Box
-      css={{
-        position: 'relative',
-        paddingTop: `${ratio * 100}%`,
-        overflow: 'hidden',
-        height: 0,
-        width: '100%'
-      }}
-    >
-      <StyledVideo
-        role="figure"
-        url={`https://player.vimeo.com/video/${externalId}`}
-        {...remainingProps}
-        height="100%"
-        width="100%"
-        css={{ position: 'absolute', top: 0, left: 0 }}
-      />
-    </Box>
-  )
-}
+}) => (
+  <Box
+    css={{
+      position: 'relative',
+      paddingTop: `${ratio * 100}%`,
+      overflow: 'hidden',
+      height: 0,
+      width: '100%'
+    }}
+  >
+    <StyledVideo
+      role="figure"
+      url={`https://player.vimeo.com/video/${externalId}`}
+      {...remainingProps}
+      height="100%"
+      width="100%"
+      css={{ position: 'absolute', top: 0, left: 0 }}
+    />
+  </Box>
+)
 
 Video.displayName = 'Video'

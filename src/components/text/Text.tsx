@@ -41,7 +41,6 @@ const StyledParagraph = styled('p', {
   fontFamily: '$sans',
   fontWeight: 400,
   margin: 0,
-  maxWidth: '60ch',
   variants: {
     size: textVariantSize()
   }
