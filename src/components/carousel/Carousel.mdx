@@ -5,14 +5,41 @@ description: The `Carousel` displays a series of slides that can be swiped betwe
 category: Media
 ---
 
-The `Carousel`'s children must be a series of `Carousel.Slide`s. Each `Carousel.Slide` requires an `index` (`number`) so that it can be highlighted correctly when selected.
+The `Carousel` must contain a `Carousel.Slider` with nested `Carousel.Slide`s and optionally can include a `Carousel.Pagination` and `Carousel.Arrows`.
+`Carousel.Slider`'s optional `overflow` prop will cause it to render all slides at once, allowing the user to drag them into view. The `aria-selected` attribute can be used as a CSS selector to style slides according to whether they are currently selected (see below).
+
+Note that `Carousel.Slide`s must receive an `index` prop in order to correctly apply styling based on whether they are selected and that `Carousel.Arrows` should be rendered inside a parent with `position: relative` in order to be positioned correctly.
 
 ```jsx preview
-<Carousel slideWidth={200} slideHeight={300}>
-  {[0, 1, 2, 3, 4].map((num) => (
-    <Carousel.Slide key={num} index={num}>
-      <Image src="https://placekitten.com/200/300" />
-    </Carousel.Slide>
-  ))}
+<Carousel slideWidth={200} slideHeight={300} type="overflow" numSlides={4}>
+  <Flex css={{ flexDirection: 'column' }}>
+    <Box css={{ position: 'relative' }}>
+      <Carousel.Arrows />
+      <Carousel.Slider aria-label="Example carousel" trayTag="div">
+        {[0, 1, 2, 3].map((num) => (
+          <Carousel.Slide
+            key={num}
+            index={num}
+            aria-label={`slide ${num}`}
+            css={{
+              opacity: '0.7',
+              transition: 'all 0.25s ease-in',
+              '&[aria-selected="true"]': {
+                opacity: 1,
+                // apply box shadow to the Slide content directly,
+                // not the wrappers added internally
+                '& > div > div > *': {
+                  boxShadow: '$1'
+                }
+              }
+            }}
+          >
+            <Image alt="" src="https://placekitten.com/200/300" />
+          </Carousel.Slide>
+        ))}
+      </Carousel.Slider>
+    </Box>
+    <Carousel.Pagination />
+  </Flex>
 </Carousel>
 ```

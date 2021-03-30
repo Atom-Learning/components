@@ -19,8 +19,8 @@ export const Slider = styled(BaseSlider, {
     justifyContent: 'center'
   },
   variants: {
-    type: {
-      overflow: {
+    overflow: {
+      true: {
         overflow: 'visible'
       }
     }
