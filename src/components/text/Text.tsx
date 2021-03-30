@@ -48,7 +48,7 @@ const StyledParagraph = styled('p', {
 })
 
 type TextProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledParagraph>,
+  React.ComponentProps<typeof StyledParagraph>,
   {
     as?:
       | 'blockquote'
@@ -63,10 +63,10 @@ type TextProps = Override<
   }
 >
 
-export const Text: React.FC<TextProps> = ({
-  as = 'p',
-  size = 'md',
-  ...rest
-}) => <StyledParagraph as={as} size={size} {...rest} />
+export const Text: React.FC<TextProps> = React.forwardRef(
+  ({ as = 'p', size = 'md', ...remainingProps }, ref) => (
+    <StyledParagraph as={as} size={size} {...remainingProps} ref={ref} />
+  )
+)
 
 Text.displayName = 'Text'
