@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Loader } from '~/components/loader'
-import { styled } from '~/stitches'
+import { styled, theme as ThemeTokens } from '~/stitches'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -166,7 +166,7 @@ type ButtonProps = Override<
     as?: React.ComponentType | React.ElementType
   }
 >
-
+// TODO preserve content when loading
 export const Button: React.FC<ButtonProps> = ({
   isLoading,
   children,
@@ -185,6 +185,24 @@ export const Button: React.FC<ButtonProps> = ({
     }
     callback()
   }
+
+  const getChildren = () => {
+    return React.Children.map(children, (child: any, i) => {
+      if (child?.type?.name === 'Icon') {
+        const style = {
+          [i === 0 ? 'marginRight' : 'marginLeft']: ThemeTokens['space'][3]
+            .value
+        }
+        return React.cloneElement(child, {
+          style
+        })
+      }
+
+      return child
+    })
+  }
+
+  children = getChildren()
 
   return (
     <StyledButton

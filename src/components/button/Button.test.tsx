@@ -1,7 +1,9 @@
+import { Ok } from '@atom-learning/icons'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Icon } from '../icon'
 import { Button } from '.'
 
 describe(`Button component`, () => {
@@ -84,6 +86,30 @@ describe(`Button component`, () => {
         BUTTON
       </Button>
     )
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a button with an icon', async () => {
+    const { container } = render(
+      <Button {...props}>
+        BUTTON <Icon is={Ok} />
+      </Button>
+    )
+
+    await screen.getByText('BUTTON')
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders a button with an icon - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Button {...props}>
+        BUTTON <Icon is={Ok} />
+      </Button>
+    )
+
+    await screen.getByText('BUTTON')
 
     expect(await axe(container)).toHaveNoViolations()
   })
