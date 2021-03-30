@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ['<rootDir>/src', '<rootDir>/types'],
+  roots: ['<rootDir>/src'],
   snapshotSerializers: ['@atom-learning/jest-stitches'],
   collectCoverage: true,
   coveragePathIgnorePatterns: ['/src/stitches.ts'],
