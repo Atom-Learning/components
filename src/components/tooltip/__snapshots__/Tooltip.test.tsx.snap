@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip component renders a tooltip 1`] = `
+<div>
+  <span
+    aria-describedby="radix-id-0-1"
+    data-state="delayed-open"
+    type="button"
+  >
+    TOOLTIP
+  </span>
+</div>
+`;
