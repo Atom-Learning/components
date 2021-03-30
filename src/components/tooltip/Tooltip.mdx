@@ -1,16 +1,19 @@
 ---
 title: Tooltip
-component: Tooltip
-description: Tooltip provides some extra information when its child component is hovered or focussed
+component: Tooltip,Tooltip.Trigger,Tooltip.Content
+description: A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+category: Surfaces
 ---
 
-Use a `Tooltip` to make a definition or description available when a user hovers or focusses on a component.
+`Tooltip` exports 3 components that combine to create our tooltip. The `Tooltip.Trigger` requires a React component child (or passed to `as`) to allow the necessary event bindings and accessible properties to be cloned, also note that the component must accept a `ref`.
+
+Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/tooltip).
 
 ```jsx preview
-<Tooltip open>
+<Tooltip>
   <Tooltip.Trigger>
-    <span>Hover on me</span>
+    <Text>Hover on me</Text>
   </Tooltip.Trigger>
-  <Tooltip.Content>Tooltip content</Tooltip.Content>
+  <Tooltip.Content>This is the tooltip content, hello</Tooltip.Content>
 </Tooltip>
 ```

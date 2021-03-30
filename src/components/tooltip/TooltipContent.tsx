@@ -37,13 +37,18 @@ type TooltipContentProps = React.ComponentProps<typeof StyledContent> &
   React.ComponentProps<typeof Content>
 
 export const TooltipContent: React.FC<TooltipContentProps> = ({
-  size = 'md',
-  sideOffset = 4,
-  side = 'top',
   children,
-  ...props
+  side = 'top',
+  sideOffset = 4,
+  size = 'md',
+  ...remainingProps
 }) => (
-  <StyledContent size={size} side={side} sideOffset={sideOffset} {...props}>
+  <StyledContent
+    side={side}
+    sideOffset={sideOffset}
+    size={size}
+    {...remainingProps}
+  >
     {children}
     <StyledArrow />
   </StyledContent>

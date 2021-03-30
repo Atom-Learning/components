@@ -9,8 +9,8 @@ type TooltipProps = React.ComponentProps<typeof Root>
 export const Tooltip: React.FC<TooltipProps> & {
   Content: typeof TooltipContent
   Trigger: typeof TooltipTrigger
-} = ({ delayDuration = 100, children, ...props }) => (
-  <Root delayDuration={delayDuration} {...props}>
+} = ({ children, delayDuration = 100, ...remainingProps }) => (
+  <Root delayDuration={delayDuration} {...remainingProps}>
     {children}
   </Root>
 )
