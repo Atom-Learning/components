@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { CSSWrapper } from '~/utilities'
 
-import { Arrows } from './Arrows'
+import { ArrowNext, ArrowPrevious } from './Arrows'
 import { Dots } from './Dots'
 import { Slide } from './Slide'
 import { Slider } from './Slider'
@@ -14,14 +14,24 @@ type CarouselProps = {
   numSlides: number
 }
 
-export const Carousel: React.FC<
-  CarouselProps & React.ComponentProps<typeof CSSWrapper>
-> & {
-  Arrows: typeof Arrows
+type CarouselSubComponents = {
+  ArrowNext: typeof ArrowNext
+  ArrowPrevious: typeof ArrowPrevious
   Pagination: typeof Dots
   Slide: typeof Slide
   Slider: typeof Slider
-} = ({ children, css, slideHeight, slideWidth, numSlides }) => {
+}
+
+export const Carousel: React.FC<
+  CarouselProps & React.ComponentProps<typeof CSSWrapper>
+> &
+  CarouselSubComponents = ({
+  children,
+  css,
+  slideHeight,
+  slideWidth,
+  numSlides
+}) => {
   return (
     <CSSWrapper css={css}>
       <CarouselProvider
@@ -35,7 +45,8 @@ export const Carousel: React.FC<
   )
 }
 
-Carousel.Arrows = Arrows
+Carousel.ArrowPrevious = ArrowPrevious
+Carousel.ArrowNext = ArrowNext
 Carousel.Pagination = Dots
 Carousel.Slide = Slide
 Carousel.Slider = Slider

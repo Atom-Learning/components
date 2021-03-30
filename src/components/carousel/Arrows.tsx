@@ -1,9 +1,12 @@
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
-import { ButtonBack, ButtonNext } from 'pure-react-carousel'
+import {
+  ButtonBack as BaseButtonBack,
+  ButtonNext as BaseButtonNext
+} from 'pure-react-carousel'
 import * as React from 'react'
 
 import { Icon } from '~/components/icon'
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 const buttonStyles = {
   alignItems: 'center',
@@ -24,39 +27,17 @@ const buttonStyles = {
   }
 }
 
-const StyledButtonBack = styled(ButtonBack, {
-  ...buttonStyles,
-  // moving position:absolute to buttonStyles causes TS errors
-  position: 'absolute',
-  left: '$2',
-  '@md': {
-    left: '$3'
-  },
-  '@lg': {
-    left: '$4'
-  }
-})
+const StyledButtonBack = styled(BaseButtonBack, buttonStyles)
 
-const StyledButtonNext = styled(ButtonNext, {
-  ...buttonStyles,
-  right: '$2',
-  // moving position:absolute to buttonStyles causes TS errors
-  position: 'absolute',
-  '@md': {
-    right: '$3'
-  },
-  '@lg': {
-    right: '$4'
-  }
-})
+const StyledButtonNext = styled(BaseButtonNext, buttonStyles)
 
-export const Arrows: React.FC = () => (
-  <>
-    <StyledButtonBack>
-      <Icon is={ChevronLeft} />
-    </StyledButtonBack>
-    <StyledButtonNext>
-      <Icon is={ChevronRight} />
-    </StyledButtonNext>
-  </>
+export const ArrowPrevious: React.FC<{ css: CSS }> = (props) => (
+  <StyledButtonBack {...props}>
+    <Icon is={ChevronLeft} />
+  </StyledButtonBack>
+)
+export const ArrowNext: React.FC<{ css: CSS }> = (props) => (
+  <StyledButtonNext {...props}>
+    <Icon is={ChevronRight} />
+  </StyledButtonNext>
 )
