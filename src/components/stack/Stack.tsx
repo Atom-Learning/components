@@ -44,7 +44,7 @@ const StyledStack = styled('div', {
   }
 })
 
-type StackProps = StitchesVariants<typeof StyledStack> & {
+type StackProps = React.ComponentProps<typeof StyledStack> & {
   as?: 'div'
 }
 
