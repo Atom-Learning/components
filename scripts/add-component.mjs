@@ -37,6 +37,11 @@ describe("${name} component", () => {
     const { container } = render(<${name} />)
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<${name} />)
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })`,
