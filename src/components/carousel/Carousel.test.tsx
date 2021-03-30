@@ -11,30 +11,20 @@ describe('Carousel component', () => {
       <Carousel
         slideWidth={200}
         slideHeight={300}
-        // name="Example carousel"
         type="overflow"
         numSlides={4}
       >
         <Flex css={{ flexDirection: 'column' }}>
           <Box css={{ position: 'relative' }}>
             <Carousel.Arrows />
-            <Carousel.Slider aria-label={'Example carousel'} trayTag="div">
+            <Carousel.Slider aria-label="Example carousel" trayTag="div">
               {[0, 1, 2, 3].map((num) => (
                 <Carousel.Slide
                   key={num}
                   index={num}
-                  css={{
-                    opacity: '0.7',
-                    transition: 'all 0.25s ease-in',
-                    '&[aria-selected="true"]': {
-                      opacity: 1,
-                      '& > div > div > *': {
-                        boxShadow: '$1'
-                      }
-                    }
-                  }}
+                  aria-label={`slide ${num}`}
                 >
-                  <Image src="https://placekitten.com/200/300" alt="" />
+                  Slide {num}
                 </Carousel.Slide>
               ))}
             </Carousel.Slider>

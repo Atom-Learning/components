@@ -10,18 +10,11 @@ globalCss(reset)()
 const App = () => {
   return (
     <Box css={{ width: '500px', p: '$3', m: '0 auto' }}>
-      <Carousel
-        slideWidth={200}
-        slideHeight={300}
-        // name="Example carousel"
-        type="overflow"
-        numSlides={4}
-        type="arrows"
-      >
+      <Carousel slideWidth={200} slideHeight={300} numSlides={4}>
         <Flex css={{ flexDirection: 'column' }}>
           <Box css={{ position: 'relative' }}>
             <Carousel.Arrows />
-            <Carousel.Slider aria-label={name} trayTag="div">
+            <Carousel.Slider aria-label={'Example carousel'} trayTag="div">
               {[0, 1, 2, 3].map((num) => (
                 <Carousel.Slide
                   key={num}
