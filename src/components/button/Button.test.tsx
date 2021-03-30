@@ -138,7 +138,7 @@ describe(`Button component`, () => {
 
   it('renders a rounded button ', async () => {
     const { container } = render(
-      <Button rounded {...props}>
+      <Button isRounded {...props}>
         <Icon is={Ok} />
       </Button>
     )

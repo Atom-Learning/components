@@ -104,7 +104,7 @@ const StyledButton = styled('button', {
         lineHeight: 1.5
       }
     },
-    rounded: {
+    isRounded: {
       true: {
         borderRadius: '$round'
       }
