@@ -6,7 +6,7 @@ import React from 'react'
 import { RadioButton, RadioButtonGroup } from '.'
 
 describe(`Radio component`, () => {
-  it('renders a radio', async () => {
+  it('renders a radio button', async () => {
     const { container } = render(
       <IdProvider>
         <RadioButtonGroup>
@@ -15,14 +15,27 @@ describe(`Radio component`, () => {
       </IdProvider>
     )
 
-    // filtering on hidden is needed to find the visibile item as Radix adds a hidden input before the visible button
-    const radio = await screen.getByRole('radio', { hidden: false })
+    await screen.getByRole('radio')
 
     expect(container).toMatchSnapshot()
-    expect(await axe(radio)).toHaveNoViolations()
   })
 
-  it('renders a disabled radio', async () => {
+  it('renders a radio button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <label>
+        Label
+        <IdProvider>
+          <RadioButtonGroup>
+            <RadioButton value="value" aria-label="indicator" />
+          </RadioButtonGroup>
+        </IdProvider>
+      </label>
+    )
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a disabled radio button', async () => {
     const { container } = render(
       <IdProvider>
         <RadioButtonGroup>
@@ -30,10 +43,30 @@ describe(`Radio component`, () => {
         </RadioButtonGroup>
       </IdProvider>
     )
-    // filtering on hidden is needed to find the visibile item as Radix adds a hidden input before the visible button
-    const radio = await screen.getByRole('radio', { hidden: false })
+
+    await screen.getByRole('radio')
 
     expect(container).toMatchSnapshot()
-    expect(await axe(radio)).toHaveNoViolations()
+  })
+
+  it('renders a disabled radio button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <label>
+        Label
+        <IdProvider>
+          <RadioButtonGroup>
+            <RadioButton
+              value="value"
+              aria-label="disabled indicator"
+              disabled
+            />
+          </RadioButtonGroup>
+        </IdProvider>
+      </label>
+    )
+
+    await screen.getByRole('radio')
+
+    expect(await axe(container)).toHaveNoViolations()
   })
 })

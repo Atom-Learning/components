@@ -11,6 +11,11 @@ describe(`Text component`, () => {
     await screen.getByText('TEXT')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders some text - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<Text>TEXT</Text>)
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })

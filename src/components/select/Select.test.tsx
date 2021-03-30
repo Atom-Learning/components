@@ -16,6 +16,7 @@ describe(`Select component`, () => {
     { label: 'Option 2', value: 'value2' },
     { label: 'Option 3', value: 'value3' }
   ]
+
   it('renders select with no options', async () => {
     const { container } = render(<Select aria-label="dropdown" />)
     const select = screen.getByRole('combobox')
@@ -24,8 +25,14 @@ describe(`Select component`, () => {
     expect(select).toBeInTheDocument()
     expect(options).toBe(null)
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders select with no options - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<Select aria-label="dropdown" />)
+
     expect(await axe(container)).toHaveNoViolations()
   })
+
   it('renders a select with 3 options', async () => {
     const { container } = render(
       <Select aria-label="dropdown" options={mockOptions} />
@@ -64,8 +71,13 @@ describe(`Select component`, () => {
     expect(select).toBeInTheDocument()
     expect(select).toHaveAttribute('disabled')
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders an disabled select - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<Select aria-label="dropdown" disabled />)
     expect(await axe(container)).toHaveNoViolations()
   })
+
   it('renders select with a disabled option', async () => {
     const { container } = render(
       <Select
@@ -82,6 +94,19 @@ describe(`Select component`, () => {
     expect(options[0]).not.toHaveAttribute('disabled')
     expect(options[3]).toHaveAttribute('disabled')
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders select with a disabled option - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Select
+        aria-label="dropdown"
+        options={[
+          ...mockOptions,
+          { label: 'Option 4', value: 'value4', disabled: true }
+        ]}
+      />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })
