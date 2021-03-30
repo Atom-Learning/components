@@ -8,11 +8,7 @@ import { Grid } from '.'
 describe(`Grid component`, () => {
   it('renders', async () => {
     const { container } = render(
-      <Grid
-        gap="0.05em"
-        basis="0.5em"
-        css={{ m: 'auto', height: 100, width: 100 }}
-      >
+      <Grid gap={1} basis="0.5em" css={{ m: 'auto', height: 100, width: 100 }}>
         <Box>1</Box>
         <Box>2</Box>
         <Box>3</Box>
@@ -25,7 +21,7 @@ describe(`Grid component`, () => {
     render(
       <Grid
         as="main"
-        gap="0.05em"
+        gap={1}
         basis="0.5em"
         css={{ m: 'auto', height: 100, width: 100 }}
       >

@@ -31,6 +31,14 @@ exports[`Grid component renders 1`] = `
   flex-wrap: wrap;
 }
 
+.sx723munxneq--gap-1 {
+  margin: calc(var(--space-1)*-1);
+}
+
+.sx723munxneq--gap-1 > * {
+  margin: var(--space-1);
+}
+
 .sx723mu-ozkqi > * {
   flex: 1 0 undefined;
 }
@@ -44,7 +52,7 @@ exports[`Grid component renders 1`] = `
 <div>
   <div
     basis="0.5em"
-    class="sx2cs53 sx723mu sx723mu-ozkqi"
+    class="sx2cs53 sx723mu sx723munxneq--gap-1 sx723mu-ozkqi"
   >
     <div
       class="sx03kze"

@@ -25,7 +25,6 @@ const GridContainer = styled(Flex, {
 })
 
 type GridProps = {
-  gap: string
   minItemSize: string
 } & React.ComponentProps<typeof GridContainer>
 
