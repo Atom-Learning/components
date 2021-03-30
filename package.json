@@ -44,7 +44,7 @@
   ],
   "devDependencies": {
     "@atom-learning/icons": "^0.2.0",
-    "@atom-learning/jest-stitches": "^1.0.8",
+    "@atom-learning/jest-stitches": "1.0.10",
     "@atom-learning/theme": "^0.1.0-beta.7",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
