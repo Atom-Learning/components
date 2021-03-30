@@ -1,7 +1,7 @@
 import { Slide as BaseSlide } from 'pure-react-carousel'
 import * as React from 'react'
 
-import { Box } from '~/components'
+import { Box } from '~/components/box'
 import { styled } from '~/stitches'
 
 const StyledSlide = styled(BaseSlide, {})
