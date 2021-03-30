@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 import { textVariantSize } from '../text'
-
+console.log('textVariantSize:', textVariantSize)
 const { sm, md } = textVariantSize()
 
 const StyledLabel = styled('label', {

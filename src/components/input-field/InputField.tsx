@@ -5,6 +5,7 @@ import { ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
+import { FieldWrapper } from '~/components/field-wrapper'
 
 type InputFieldProps = InputProps & {
   label: string
@@ -36,10 +37,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   }
 
   return (
-    <Box css={css}>
-      <Label css={{ mb: '$2' }} htmlFor={name} required={required}>
-        {label}
-      </Label>
+    <FieldWrapper label={label} required={required} htmlFor={name} css={css}>
       <Input
         id={name}
         name={name}
@@ -47,8 +45,20 @@ export const InputField: React.FC<InputFieldProps> = ({
         {...(error && { state: 'error' })}
         {...remainingProps}
       />
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
-    </Box>
+    </FieldWrapper>
+    // <Box css={css}>
+    //   <Label css={{ mb: '$2' }} htmlFor={name} required={required}>
+    //     {label}
+    //   </Label>
+    //   <Input
+    //     id={name}
+    //     name={name}
+    //     ref={ref}
+    //     {...(error && { state: 'error' })}
+    //     {...remainingProps}
+    //   />
+    //   {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+    // </Box>
   )
 }
 

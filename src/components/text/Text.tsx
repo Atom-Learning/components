@@ -35,6 +35,7 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
     ...(applyCapsize ? capsize('-0.312em') : {})
   }
 })
+console.log('textVariantSize:', textVariantSize)
 
 const StyledParagraph = styled('p', {
   color: '$tonal900',
