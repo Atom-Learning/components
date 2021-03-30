@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stack component renders 1`] = `
+.sxufta5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+}
+
+.sxufta5 > * {
+  margin: 0;
+}
+
+.sxufta58p3zg--direction-row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.sxufta5sxrde--gap-2 {
+  margin-top: calc(var(--space-2)*-1);
+  margin-left: calc(var(--space-2)*-1);
+}
+
+.sxufta5sxrde--gap-2 > * {
+  margin-top: var(--space-2);
+  margin-left: var(--space-2);
+}
+
+<div>
+  <div
+    class="sxufta5 sxufta58p3zg--direction-row sxufta5sxrde--gap-2"
+  />
+</div>
+`;
