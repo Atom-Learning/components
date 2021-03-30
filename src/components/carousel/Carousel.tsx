@@ -16,17 +16,24 @@ type CarouselProps = {
   withArrows?: boolean
   withOverflow?: boolean
   type: 'arrows' | 'overflow'
-  children: Array<React.ReactElement>
+  // children: Array<React.ReactElement>
+  numSlides: number
 }
 
 export const Carousel: React.FC<
   CarouselProps & React.ComponentProps<typeof Box>
-> & { Slide: typeof Slide } = ({
+> & {
+  Arrows: typeof Arrows
+  Pagination: typeof Dots
+  Slide: typeof Slide
+  Slider: typeof Slider
+} = ({
   children,
   name,
   slideHeight,
   slideWidth,
   type = 'arrows',
+  numSlides,
   ...remainingProps
 }) => {
   return (
@@ -34,9 +41,9 @@ export const Carousel: React.FC<
       <CarouselProvider
         naturalSlideWidth={slideWidth}
         naturalSlideHeight={slideHeight}
-        totalSlides={children.length}
+        totalSlides={numSlides}
       >
-        <Flex css={{ flexDirection: 'column' }}>
+        {/* <Flex css={{ flexDirection: 'column' }}>
           <Box css={{ position: 'relative' }}>
             {type === 'arrows' && <Arrows />}
             <Slider aria-label={name} trayTag="div">
@@ -45,12 +52,16 @@ export const Carousel: React.FC<
           </Box>
 
           <Dots />
-        </Flex>
+        </Flex> */}
+        {children}
       </CarouselProvider>
     </Box>
   )
 }
 
+Carousel.Arrows = Arrows
+Carousel.Pagination = Dots
 Carousel.Slide = Slide
+Carousel.Slider = Slider
 
 Carousel.displayName = 'Carousel'

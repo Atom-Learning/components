@@ -5,7 +5,6 @@ import { styled } from '~/stitches'
 export const Slider = styled(BaseSlider, {
   cursor: 'grab',
   ml: '50%',
-  // overflow: `${type === 'overflow' ? 'visible' : 'hidden'} !important`,
   transform: 'translateX(-50%)',
   '& div[class*="sliderTray_"]': {
     transition: 'transform .5s cubic-bezier(.645,.045,.355,1)'
@@ -21,7 +20,7 @@ export const Slider = styled(BaseSlider, {
   variants: {
     type: {
       overflow: {
-        overflow: 'visible !important'
+        // overflow: 'visible !important'
       }
     }
   }

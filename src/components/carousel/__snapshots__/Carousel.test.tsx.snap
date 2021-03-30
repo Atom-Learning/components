@@ -155,48 +155,56 @@ exports[`Carousel component renders 1`] = `
   }
 }
 
-.sx9wiwz {
+.sx03kze-iy5j5 {
+  opacity: 0.7;
+  transition: all 0.25s ease-in;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] {
+  opacity: 1;
+}
+
+.sx03kze-iy5j5[aria-selected="true"] > div > div > * {
+  box-shadow: var(--shadows-1);
+}
+
+.sxmsv7x {
   cursor: grab;
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
-.sx9wiwz div[class*="sliderTray_"] {
+.sxmsv7x div[class*="sliderTray_"] {
   transition: transform .5s cubic-bezier(.645,.045,.355,1);
 }
 
-.sx9wiwz div[class*="slide_"] {
+.sxmsv7x div[class*="slide_"] {
   float: left;
   padding-bottom: 0 !important;
 }
 
-.sx9wiwz div[class*="slideInner"] {
+.sxmsv7x div[class*="slideInner"] {
   display: flex;
   justify-content: center;
 }
 
-.sxfey5o {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
-  font-weight: 400;
-  margin: 0;
+.sxkoa5n {
+  vertical-align: middle;
+  max-width: 100%;
 }
 
-.sxfey5ojqqvr--size-md {
-  font-size: var(--fontSizes-md);
-  line-height: 1.625;
+.sxkoa5n[width] {
+  width: auto;
 }
 
-.sxfey5ojqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
+.sxkoa5n[width][height] {
+  height: auto;
 }
 
-.sxfey5ojqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
 }
 
 <div>
@@ -248,7 +256,7 @@ exports[`Carousel component renders 1`] = `
           <div
             aria-label="Example carousel"
             aria-live="polite"
-            class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx9wiwz"
+            class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sxmsv7x"
             role="listbox"
             tabindex="0"
           >
@@ -257,13 +265,13 @@ exports[`Carousel component renders 1`] = `
             >
               <div
                 class="sliderTray___-vHFQ sliderAnimation___300FY carousel__slider-tray carousel__slider-tray--horizontal"
-                style="width: 300%; transform: translateX(0%) translateX(0px); flex-direction: row;"
+                style="width: 400%; transform: translateX(0%) translateX(0px); flex-direction: row;"
               >
                 <div
                   aria-selected="true"
-                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze sx03kze-iy5j5"
                   role="option"
-                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  style="width: 25%; padding-bottom: 37.5%;"
                   tabindex="0"
                 >
                   <div
@@ -272,20 +280,19 @@ exports[`Carousel component renders 1`] = `
                     <div
                       class="sx03kze sx03kze-f7jkm"
                     >
-                      <p
-                        class="sxfey5o sxfey5ojqqvr--size-md"
-                      >
-                        Slide 
-                        0
-                      </p>
+                      <img
+                        alt=""
+                        class="sxkoa5n"
+                        src="https://placekitten.com/200/300"
+                      />
                     </div>
                   </div>
                 </div>
                 <div
                   aria-selected="false"
-                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
                   role="option"
-                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  style="width: 25%; padding-bottom: 37.5%;"
                   tabindex="-1"
                 >
                   <div
@@ -294,20 +301,19 @@ exports[`Carousel component renders 1`] = `
                     <div
                       class="sx03kze sx03kze-f7jkm"
                     >
-                      <p
-                        class="sxfey5o sxfey5ojqqvr--size-md"
-                      >
-                        Slide 
-                        1
-                      </p>
+                      <img
+                        alt=""
+                        class="sxkoa5n"
+                        src="https://placekitten.com/200/300"
+                      />
                     </div>
                   </div>
                 </div>
                 <div
                   aria-selected="false"
-                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
                   role="option"
-                  style="width: 33.333333333333336%; padding-bottom: 33.333333333333336%;"
+                  style="width: 25%; padding-bottom: 37.5%;"
                   tabindex="-1"
                 >
                   <div
@@ -316,12 +322,32 @@ exports[`Carousel component renders 1`] = `
                     <div
                       class="sx03kze sx03kze-f7jkm"
                     >
-                      <p
-                        class="sxfey5o sxfey5ojqqvr--size-md"
-                      >
-                        Slide 
-                        2
-                      </p>
+                      <img
+                        alt=""
+                        class="sxkoa5n"
+                        src="https://placekitten.com/200/300"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  aria-selected="false"
+                  class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+                  role="option"
+                  style="width: 25%; padding-bottom: 37.5%;"
+                  tabindex="-1"
+                >
+                  <div
+                    class="slideInner___2mfX9 carousel__inner-slide"
+                  >
+                    <div
+                      class="sx03kze sx03kze-f7jkm"
+                    >
+                      <img
+                        alt=""
+                        class="sxkoa5n"
+                        src="https://placekitten.com/200/300"
+                      />
                     </div>
                   </div>
                 </div>
@@ -350,6 +376,13 @@ exports[`Carousel component renders 1`] = `
           <button
             aria-label="slide dot"
             class="dot___3c3SI carousel__dot carousel__dot--2"
+            type="button"
+          >
+            <span />
+          </button>
+          <button
+            aria-label="slide dot"
+            class="dot___3c3SI carousel__dot carousel__dot--3"
             type="button"
           >
             <span />
