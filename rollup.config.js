@@ -2,7 +2,6 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import bundleSize from 'rollup-plugin-bundle-size'
-import embedCSS from 'rollup-plugin-embed-css'
 import { terser } from 'rollup-plugin-terser'
 import visualizer from 'rollup-plugin-visualizer'
 
@@ -24,7 +23,6 @@ export default {
   plugins: [
     bundleSize(),
     commonjs(),
-    embedCSS(),
     resolve(),
     isProduction && terser(),
     typescript(),

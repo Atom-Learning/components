@@ -7,7 +7,6 @@ module.exports = {
   setupFilesAfterEnv: ['./jest-setup.ts'],
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1', // matches the path alias in tsconfig.json
-    "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
     '^react$': '<rootDir>/node_modules/react'
   },
   transform: {
