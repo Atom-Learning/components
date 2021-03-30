@@ -8,12 +8,7 @@ import { Carousel } from '.'
 describe('Carousel component', () => {
   it('renders', async () => {
     const { container } = render(
-      <Carousel
-        slideWidth={200}
-        slideHeight={300}
-        type="overflow"
-        numSlides={4}
-      >
+      <Carousel slideWidth={200} slideHeight={300} numSlides={4}>
         <Flex css={{ flexDirection: 'column' }}>
           <Box css={{ position: 'relative' }}>
             <Carousel.Arrows />
@@ -40,12 +35,7 @@ describe('Carousel component', () => {
 
   it('has no programatically detectable accesibility issues', async () => {
     const { container } = render(
-      <Carousel
-        slideWidth={200}
-        slideHeight={300}
-        type="overflow"
-        numSlides={4}
-      >
+      <Carousel slideWidth={200} slideHeight={300} numSlides={4}>
         <Flex css={{ flexDirection: 'column' }}>
           <Box css={{ position: 'relative' }}>
             <Carousel.Arrows />

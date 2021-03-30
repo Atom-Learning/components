@@ -11,7 +11,7 @@ The `Carousel` must contain a `Carousel.Slider` with nested `Carousel.Slide`s an
 Note that `Carousel.Slide`s must receive an `index` prop in order to correctly apply styling based on whether they are selected and that `Carousel.Arrows` should be rendered inside a parent with `position: relative` in order to be positioned correctly.
 
 ```jsx preview
-<Carousel slideWidth={200} slideHeight={300} type="overflow" numSlides={4}>
+<Carousel slideWidth={200} slideHeight={300} numSlides={4}>
   <Flex css={{ flexDirection: 'column' }}>
     <Box css={{ position: 'relative' }}>
       <Carousel.Arrows />
