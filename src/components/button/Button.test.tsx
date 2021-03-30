@@ -136,6 +136,18 @@ describe(`Button component`, () => {
     expect(link).toHaveAttribute('href', 'https://app.atomlearning.co.uk')
   })
 
+  it('renders a rounded button ', async () => {
+    const { container } = render(
+      <Button rounded {...props}>
+        <Icon is={Ok} />
+      </Button>
+    )
+
+    await screen.getByRole('button')
+
+    expect(container).toMatchSnapshot()
+  })
+
   describe('Loading state', () => {
     it('renders a loading button', async () => {
       const { container } = render(

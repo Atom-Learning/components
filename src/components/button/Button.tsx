@@ -103,6 +103,11 @@ const StyledButton = styled('button', {
         fontSize: '$lg',
         lineHeight: 1.5
       }
+    },
+    rounded: {
+      true: {
+        borderRadius: '$round'
+      }
     }
   },
 
@@ -164,9 +169,10 @@ type ButtonProps = Override<
     isLoading?: boolean
     onClick?: () => void
     as?: React.ComponentType | React.ElementType
+    children: React.ReactNodeArray
   }
 >
-// TODO preserve content when loading
+
 export const Button: React.FC<ButtonProps> = ({
   isLoading,
   children,
@@ -188,11 +194,17 @@ export const Button: React.FC<ButtonProps> = ({
 
   const getChildren = () => {
     return React.Children.map(children, (child: any, i) => {
+      if (children.length === undefined) {
+        // If there are multiple children this will return array
+        return child
+      }
+
       if (child?.type?.name === 'Icon') {
         const style = {
           [i === 0 ? 'marginRight' : 'marginLeft']: ThemeTokens['space'][3]
             .value
         }
+
         return React.cloneElement(child, {
           style
         })
