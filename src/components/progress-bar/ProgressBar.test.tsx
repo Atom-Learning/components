@@ -11,6 +11,11 @@ describe(`ProgressBar component`, () => {
     await screen.getByRole('progressbar')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a progress bar using default props - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<ProgressBar value={50} aria-label="label" />)
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -32,6 +37,13 @@ describe(`ProgressBar component`, () => {
     await screen.getByRole('progressbar')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a solid progress bar - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <ProgressBar value={50} appearance="solid" aria-label="label" />
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })

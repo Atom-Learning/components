@@ -13,6 +13,11 @@ describe(`Link component`, () => {
     expect(link).toHaveAttribute('href', 'https://google.com/')
     expect(link).toHaveTextContent('GOOGLE')
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders an anchor - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<Link href="https://google.com/">GOOGLE</Link>)
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -24,6 +29,15 @@ describe(`Link component`, () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders an large anchor - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Link href="https://google.com/" size="lg">
+        GOOGLE
+      </Link>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 

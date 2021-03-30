@@ -13,6 +13,11 @@ describe(`Button component`, () => {
     await screen.getByText('BUTTON')
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(<Button {...props}>BUTTON</Button>)
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -25,6 +30,15 @@ describe(`Button component`, () => {
 
     await screen.getByText('BUTTON')
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a outline button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Button appearance="outline" {...props}>
+        BUTTON
+      </Button>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -39,6 +53,15 @@ describe(`Button component`, () => {
 
     expect(button).toBeDisabled()
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a disabled button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Button disabled {...props}>
+        BUTTON
+      </Button>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -53,6 +76,15 @@ describe(`Button component`, () => {
 
     expect(button).toBeDisabled()
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a disabled secondary outline button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Button disabled appearance="outline" theme="secondary" {...props}>
+        BUTTON
+      </Button>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 
@@ -90,6 +122,16 @@ describe(`Button component`, () => {
       expect(await screen.getByRole('alert')).toBeInTheDocument()
 
       expect(container).toMatchSnapshot()
+      expect(await axe(container)).toHaveNoViolations()
+    })
+
+    it('renders a loading button - has no programmatically detectable a11y issues', async () => {
+      const { container } = render(
+        <Button isLoading {...props}>
+          BUTTON
+        </Button>
+      )
+
       expect(await axe(container)).toHaveNoViolations()
     })
 
