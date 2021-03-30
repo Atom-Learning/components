@@ -10,29 +10,40 @@ const scaleIn = keyframes({
 
 const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
-  backgroundColor: '$tonal600',
+  backgroundColor: '$tonal800',
   borderRadius: '$0',
   color: 'white',
   fontFamily: '$sans',
   fontSize: '$sm',
-  px: '$2',
-  py: '$1',
-  transformOrigin: 'var(--radix-tooltip-content-transform-origin)'
+  lineHeight: 1.2,
+  p: '$2',
+  transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
+  variants: {
+    size: {
+      sm: { maxWidth: '100px' },
+      md: { maxWidth: '250px' },
+      lg: { maxWidth: '400px' }
+    }
+  }
 })
 
 const StyledArrow = styled(Arrow, {
-  fill: '$tonal600'
+  fill: '$tonal800',
+  '[data-align="end"] &': { mr: '$2' },
+  '[data-align="start"] &': { ml: '$2' }
 })
 
-type TooltipContentProps = React.ComponentProps<typeof Content>
+type TooltipContentProps = React.ComponentProps<typeof StyledContent> &
+  React.ComponentProps<typeof Content>
 
 export const TooltipContent: React.FC<TooltipContentProps> = ({
-  sideOffset = 8,
+  size = 'md',
+  sideOffset = 4,
   side = 'top',
   children,
   ...props
 }) => (
-  <StyledContent side={side} sideOffset={sideOffset} {...props}>
+  <StyledContent size={size} side={side} sideOffset={sideOffset} {...props}>
     {children}
     <StyledArrow />
   </StyledContent>

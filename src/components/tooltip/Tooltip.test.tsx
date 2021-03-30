@@ -1,20 +1,41 @@
+import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-/// <reference types="resize-observer-browser" />
-// import { ResizeObserver } from '../../mocks/ResizeOberserver'
 import { Tooltip } from '.'
 
 describe(`Tooltip component`, () => {
   it('renders a tooltip', async () => {
-    const { container } = render(<Tooltip content="CONTENT">TOOLTIP</Tooltip>)
+    const { container } = render(
+      <IdProvider>
+        <Tooltip>
+          <Tooltip.Trigger>
+            <span>TOOLTIP</span>
+          </Tooltip.Trigger>
+          <Tooltip.Content>CONTENT</Tooltip.Content>
+        </Tooltip>
+      </IdProvider>
+    )
 
     fireEvent.mouseOver(screen.getByText('TOOLTIP'))
 
-    expect(await screen.findByText('CONTENT')).toBeInTheDocument()
-
+    expect(await screen.findByRole('tooltip')).toBeInTheDocument()
     expect(container).toMatchSnapshot()
+  })
+
+  it('has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <IdProvider>
+        <Tooltip>
+          <Tooltip.Trigger>
+            <span>TOOLTIP</span>
+          </Tooltip.Trigger>
+          <Tooltip.Content>CONTENT</Tooltip.Content>
+        </Tooltip>
+      </IdProvider>
+    )
+
     expect(await axe(container)).toHaveNoViolations()
   })
 })
