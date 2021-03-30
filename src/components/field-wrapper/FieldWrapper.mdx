@@ -1,10 +1,14 @@
 ---
 title: Field Wrapper
 component: FieldWrapper
-description: This is the description
+description: A utility component to help with composing consistent form fields
 category: Forms
 ---
 
+`FieldWrapper` renders a `Label` and (when applicable) a `ValidationError`. Use it to wrap any type of input to create a consistent set of form fields.
+
 ```jsx preview
-<FieldWrapper />
+<FieldWrapper label="Example Field" htmlFor="example">
+  <Input name="example" id="example" />
+</FieldWrapper>
 ```
