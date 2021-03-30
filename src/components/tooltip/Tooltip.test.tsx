@@ -1,5 +1,5 @@
 import { IdProvider } from '@radix-ui/react-id'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -27,7 +27,7 @@ describe(`Tooltip component`, () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <IdProvider>
-        <Tooltip>
+        <Tooltip defaultOpen>
           <Tooltip.Trigger>
             <span>TOOLTIP</span>
           </Tooltip.Trigger>
@@ -36,6 +36,6 @@ describe(`Tooltip component`, () => {
       </IdProvider>
     )
 
-    expect(await axe(container)).toHaveNoViolations()
+    expect(await waitFor(() => axe(container))).toHaveNoViolations()
   })
 })
