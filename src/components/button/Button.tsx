@@ -195,7 +195,6 @@ export const Button: React.FC<ButtonProps> = ({
   const getChildren = () => {
     return React.Children.map(children, (child: any, i) => {
       if (children.length === undefined) {
-        // If there are multiple children this will return array
         return child
       }
 
