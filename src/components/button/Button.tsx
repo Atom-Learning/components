@@ -142,7 +142,7 @@ const StyledButton = styled('button', {
 })
 
 type ButtonProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledButton>,
+  React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     isLoading?: boolean
     onClick?: () => void
@@ -150,61 +150,60 @@ type ButtonProps = Override<
   }
 >
 
-export const Button: React.FC<ButtonProps> = ({
-  theme = 'primary',
-  appearance = 'solid',
-  isLoading,
-  type = 'button',
-  children,
-  onClick,
-  ...rest
-}) => {
-  // Note: button is not disabled when loading for accessibility purposes.
-  // Instead the clickAction is not fired and the button looks faded
-  const handleClick = (callback) => {
-    if (isLoading) {
-      return
-    }
-    callback()
+export const Button: React.FC<ButtonProps> = React.forwardRef(
+  (
+    {
+      theme = 'primary',
+      appearance = 'solid',
+      isLoading,
+      type = 'button',
+      children,
+      onClick,
+      ...rest
+    },
+    ref
+  ) => {
+    // Note: button is not disabled when loading for accessibility purposes.
+    // Instead the clickAction is not fired and the button looks faded
+    return (
+      <StyledButton
+        theme={theme}
+        appearance={appearance}
+        isLoading={isLoading || false}
+        onClick={isLoading ? undefined : onClick}
+        type={type}
+        {...rest}
+        ref={ref}
+      >
+        {typeof isLoading === 'boolean' ? (
+          <>
+            <Loader
+              css={{
+                opacity: isLoading ? 1 : 0,
+                position: 'absolute',
+                transition: 'opacity 150ms ease-out'
+              }}
+            />
+            <Box
+              as="span"
+              css={
+                isLoading
+                  ? {
+                      opacity: 0,
+                      transition: 'opacity 150ms ease-out'
+                    }
+                  : {}
+              }
+            >
+              {children}
+            </Box>
+          </>
+        ) : (
+          children
+        )}
+      </StyledButton>
+    )
   }
-
-  return (
-    <StyledButton
-      theme={theme}
-      appearance={appearance}
-      isLoading={isLoading || false}
-      onClick={onClick ? () => handleClick(onClick) : undefined}
-      type={type}
-      {...rest}
-    >
-      {typeof isLoading === 'boolean' ? (
-        <>
-          <Loader
-            css={{
-              opacity: isLoading ? 1 : 0,
-              position: 'absolute',
-              transition: 'opacity 150ms ease-out'
-            }}
-          />
-          <Box
-            as="span"
-            css={
-              isLoading
-                ? {
-                    opacity: 0,
-                    transition: 'opacity 150ms ease-out'
-                  }
-                : {}
-            }
-          >
-            {children}
-          </Box>
-        </>
-      ) : (
-        children
-      )}
-    </StyledButton>
-  )
-}
+)
 
 Button.displayName = 'Button'
