@@ -24,7 +24,7 @@ export const Form: React.FC<FormProps> = ({
   validationMode = 'onBlur',
   ...remainingProps
 }) => {
-  const { errors, handleSubmit, register } = useForm({
+  const { control, errors, handleSubmit, register } = useForm({
     defaultValues,
     mode: validationMode
   })
@@ -41,11 +41,12 @@ export const Form: React.FC<FormProps> = ({
         // Form fields require a name
         // If there is no name, assume it's not a form field
         if (!childProps.name) return child
-
         const fieldError = errors[childProps.name] as ValidationError
 
         return React.createElement(child.type, {
           ...childProps,
+          // controlled components can use control to register to the form
+          control,
           error: fieldError ? fieldError.message : undefined,
           register: register,
           key: childProps.name,

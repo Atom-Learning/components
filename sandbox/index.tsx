@@ -4,12 +4,13 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Button,Checkbox, CheckboxField, Form, globalCss } from '../dist'
+import { Button, CheckboxField, Form, globalCss, InputField } from '../dist'
 globalCss(reset)()
 
 const App = () => {
   return (
     <Form css={{ p: '$2', mx: 'auto', width: '200px' }} onSubmit={console.log}>
+      <InputField label="Name" name="name" />
       <CheckboxField label="Example" name="example" />
       <Button type="submit">Submit</Button>
     </Form>

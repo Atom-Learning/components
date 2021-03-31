@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField component renders 1`] = `
+.sx03kze-385xm {
+  margin-right: var(--space-2);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-08xiu {
+  align-items: center;
+}
+
 .sx1i2hs {
   -webkit-appearance: none;
   appearance: none;
@@ -41,18 +53,6 @@ exports[`CheckboxField component renders 1`] = `
   outline: none;
 }
 
-.sx03kze-385xm {
-  margin-right: var(--space-2);
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-08xiu {
-  align-items: center;
-}
-
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -79,38 +79,44 @@ exports[`CheckboxField component renders 1`] = `
 }
 
 <div>
-  <div
+  <form
+    aria-label="form"
     class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-08xiu"
+      class="sx03kze"
     >
       <div
-        class="sx03kze sx03kze-385xm"
+        class="sx2cs53 sx2cs53-08xiu"
       >
-        <input
-          hidden=""
-          name="example"
-          type="checkbox"
-          value="on"
-        />
-        <button
-          aria-checked="false"
-          class="sx1i2hs"
-          data-state="unchecked"
-          id="example"
-          role="checkbox"
-          type="button"
-          value="on"
-        />
+        <div
+          class="sx03kze sx03kze-385xm"
+        >
+          <input
+            hidden=""
+            name="example"
+            type="checkbox"
+            value="false"
+          />
+          <button
+            aria-checked="false"
+            aria-required="false"
+            class="sx1i2hs"
+            data-state="unchecked"
+            id="example"
+            role="checkbox"
+            type="button"
+            value="false"
+          />
+        </div>
+        <label
+          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          for="example"
+        >
+          Example
+        </label>
       </div>
-      <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md"
-        for="example"
-      >
-        Example
-      </label>
     </div>
-  </div>
+  </form>
 </div>
 `;
