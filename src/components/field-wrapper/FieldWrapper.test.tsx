@@ -7,7 +7,7 @@ import { Input } from '../input'
 import { FieldWrapper } from '.'
 
 const ExampleField = () => (
-  <FieldWrapper label="Example Field" fieldId="example">
+  <FieldWrapper label="Example Field" fieldId="example" error="Example error">
     <Input name="example" id="example" />
   </FieldWrapper>
 )
@@ -25,11 +25,17 @@ describe('FieldWrapper component', () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('links the label to an input ', async () => {
+  it('links the label to an input', async () => {
     render(<ExampleField />)
 
     userEvent.click(await screen.findByText('Example Field'))
 
     expect(await screen.findByRole('textbox')).toHaveFocus()
+  })
+
+  it('links renders provided error', async () => {
+    render(<ExampleField />)
+
+    expect(await screen.findByText('Example error')).toBeVisible()
   })
 })

@@ -41,6 +41,35 @@ exports[`FieldWrapper component renders 1`] = `
   margin-bottom: var(--space-2);
 }
 
+.sxfey5o {
+  color: var(--colors-tonal900);
+  font-family: var(--fonts-sans);
+  font-weight: 400;
+  margin: 0;
+}
+
+.sxfey5oxzxpn--size-sm {
+  font-size: var(--fontSizes-sm);
+  line-height: 1.69;
+}
+
+.sxfey5oxzxpn--size-sm::before {
+  content: '';
+  margin-bottom: -0.477em;
+  display: table;
+}
+
+.sxfey5oxzxpn--size-sm::after {
+  content: '';
+  margin-top: -0.477em;
+  display: table;
+}
+
+.sxfey5o-m6cy5 {
+  color: var(--colors-danger);
+  margin-top: var(--space-1);
+}
+
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -86,6 +115,11 @@ exports[`FieldWrapper component renders 1`] = `
       name="example"
       type="text"
     />
+    <p
+      class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+    >
+      Example error
+    </p>
   </div>
 </div>
 `;
