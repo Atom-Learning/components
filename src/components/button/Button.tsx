@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Loader } from '~/components/loader'
-import { styled, theme as ThemeTokens } from '~/stitches'
+import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -199,13 +199,8 @@ export const Button: React.FC<ButtonProps> = ({
       }
 
       if (child?.type?.name === 'Icon') {
-        const style = {
-          [i === 0 ? 'marginRight' : 'marginLeft']: ThemeTokens['space'][3]
-            .value
-        }
-
         return React.cloneElement(child, {
-          style
+          css: { [i === 0 ? 'mr' : 'ml']: '$3' }
         })
       }
 

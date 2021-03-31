@@ -139,11 +139,11 @@ describe(`Button component`, () => {
   it('renders a rounded button ', async () => {
     const { container } = render(
       <Button isRounded {...props}>
-        <Icon is={Ok} />
+        BUTTON <Icon is={Ok} />
       </Button>
     )
 
-    await screen.getByRole('button')
+    await screen.getByText('BUTTON')
 
     expect(container).toMatchSnapshot()
   })

@@ -38,6 +38,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
   width: var(--sizes-2);
 }
 
+.sxib16r-898e9 {
+  margin-left: var(--space-3);
+}
+
 .sx03kze-ywt1o {
   opacity: 0;
   transition: opacity 150ms ease-out;
@@ -304,6 +308,10 @@ exports[`Button component renders a button with an icon 1`] = `
   width: var(--sizes-2);
 }
 
+.sxib16r-898e9 {
+  margin-left: var(--space-3);
+}
+
 .sxdosdt {
   background: unset;
   border: none;
@@ -410,8 +418,7 @@ exports[`Button component renders a button with an icon 1`] = `
     BUTTON 
     <svg
       aria-hidden="true"
-      class="sxib16r sxib16rmbqqh--size-md"
-      style="margin-left: 1rem;"
+      class="sxib16r sxib16rmbqqh--size-md sxib16r-898e9"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -724,6 +731,10 @@ exports[`Button component renders a rounded button  1`] = `
   width: var(--sizes-2);
 }
 
+.sxib16r-898e9 {
+  margin-left: var(--space-3);
+}
+
 .sxdosdt {
   background: unset;
   border: none;
@@ -831,9 +842,10 @@ exports[`Button component renders a rounded button  1`] = `
     class="sxdosdt sxdosdt03kze--theme-primary sxdosdt03kze--appearance-solid sxdosdt3ofi0--size-md sxdosdtlmkcj--isRounded-true sxdosdtxyrog--c2"
     type="button"
   >
+    BUTTON 
     <svg
       aria-hidden="true"
-      class="sxib16r sxib16rmbqqh--size-md"
+      class="sxib16r sxib16rmbqqh--size-md sxib16r-898e9"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
