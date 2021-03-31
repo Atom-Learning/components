@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atom-learning/icons@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-0.2.0.tgz#e11c9512db14c0421c48ec8965f31d2ee21dd51d"
-  integrity sha512-lyJQBhZyUQeck4oRp/LhINi63f9K+BnndB5vSgrzrbn/Dm09OoYHSk6VfIE2OOdC19DkstBgANL+wsvYM1Irkg==
+"@atom-learning/icons@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-0.3.0.tgz#c5fee682b52275a1ec21031d0ad8b52e60a1f11b"
+  integrity sha512-oxx8p0z2CRPXWkBE7e3sS75AUMGMV//U8En/BNbr8QM0wgKmQXABFvRD024j5NR9usDINK4MnUXUagrv0biNTg==
   dependencies:
     ikonate "^1.1.1"
 
@@ -17,10 +17,10 @@
     chalk "^4.1.0"
     css "^3.0.0"
 
-"@atom-learning/theme@^0.1.0-beta.7":
-  version "0.1.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.7.tgz#5f81a69c9b8be8b4db9fa88d096fcc8f467e973b"
-  integrity sha512-DyJtln9jJp+2RVDpb5nGUZEcZhJWExbzIfudOXhvXNGY6rNkRGX764v0NocyAUplyYMJuzrU8aw/B8SNeZ5+BQ==
+"@atom-learning/theme@^0.1.0-beta.8":
+  version "0.1.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-0.1.0-beta.8.tgz#7119a5f9eb79d9102c45abb5953e34d94b41eb67"
+  integrity sha512-q+VbGelIy9PhOEeZuXSujU+YopPWJoZmwLKguZh6txrOJWB/c61HD/jjV7ndD8Lg4obBAX7eV2qdNqF1e+LH/w==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
