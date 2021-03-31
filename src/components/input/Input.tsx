@@ -42,6 +42,7 @@ const StyledInput = styled('input', {
 export type InputProps = Override<
   React.ComponentProps<typeof StyledInput>,
   {
+    name: string
     as?: never
     type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url'
   }

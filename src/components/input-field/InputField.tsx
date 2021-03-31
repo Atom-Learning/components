@@ -1,10 +1,8 @@
 import * as React from 'react'
 
-import { Box } from '~/components/box'
+import { FieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
-import { Label } from '~/components/label'
-import { ValidationError } from '~/components/validation-error'
 
 type InputFieldProps = InputProps & {
   label: string
@@ -36,10 +34,13 @@ export const InputField: React.FC<InputFieldProps> = ({
   }
 
   return (
-    <Box css={css}>
-      <Label css={{ mb: '$2' }} htmlFor={name} required={required}>
-        {label}
-      </Label>
+    <FieldWrapper
+      label={label}
+      required={required}
+      error={error}
+      fieldId={name}
+      css={css}
+    >
       <Input
         id={name}
         name={name}
@@ -47,8 +48,7 @@ export const InputField: React.FC<InputFieldProps> = ({
         {...(error && { state: 'error' })}
         {...remainingProps}
       />
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
-    </Box>
+    </FieldWrapper>
   )
 }
 
