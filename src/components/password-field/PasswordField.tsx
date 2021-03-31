@@ -4,13 +4,9 @@ import { useState } from 'react'
 
 import { Box } from '~/components/box'
 import { FieldWrapper } from '~/components/field-wrapper'
-import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
 import { Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
-import { Label } from '~/components/label'
-import { Link } from '~/components/link'
-import { ValidationError } from '~/components/validation-error'
 import { styled } from '~/stitches'
 
 type PasswordFieldProps = InputProps & {
@@ -44,7 +40,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
   error = '',
   label = 'Password',
-  name = 'password',
+  name,
   hidePasswordText = 'Hide password',
   showPasswordText = 'Show password',
   prompt = undefined,
@@ -65,7 +61,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   }
 
   return (
-    <Box css={{ position: 'relative', ...(css as any) }}>
+    <Box css={css}>
       <FieldWrapper
         label={label}
         fieldId={name}
