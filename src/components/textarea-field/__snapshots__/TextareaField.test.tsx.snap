@@ -84,6 +84,7 @@ exports[`TextareaField component renders 1`] = `
       class="sxduzhy"
       id="description"
       name="description"
+      placeholder="placeholder"
     />
   </div>
 </div>
@@ -202,6 +203,7 @@ exports[`TextareaField component renders with an error 1`] = `
       class="sxduzhy"
       id="description"
       name="description"
+      placeholder="placeholder"
       state="error"
     />
     <p

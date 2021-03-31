@@ -7,7 +7,11 @@ import { TextareaField } from '.'
 describe('TextareaField component', () => {
   it('renders', async () => {
     const { container } = render(
-      <TextareaField name="description" id="description" />
+      <TextareaField
+        name="description"
+        id="description"
+        placeholder="placeholder"
+      />
     )
 
     expect(container).toMatchSnapshot()
@@ -15,7 +19,11 @@ describe('TextareaField component', () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <TextareaField name="description" id="description" />
+      <TextareaField
+        name="description"
+        id="description"
+        placeholder="placeholder"
+      />
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -26,6 +34,7 @@ describe('TextareaField component', () => {
       <TextareaField
         name="description"
         id="description"
+        placeholder="placeholder"
         error="Error Message"
       />
     )
