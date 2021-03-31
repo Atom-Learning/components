@@ -3,6 +3,7 @@ import * as React from 'react'
 import { useState } from 'react'
 
 import { Box } from '~/components/box'
+import { FieldWrapper } from '~/components/field-wrapper'
 import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
 import { Icon } from '~/components/icon'
@@ -65,24 +66,13 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
   return (
     <Box css={{ position: 'relative', ...(css as any) }}>
-      <Flex
-        css={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          mb: '$2'
-        }}
+      <FieldWrapper
+        label={label}
+        fieldId={name}
+        prompt={prompt}
+        css={{ position: 'relative' }}
+        error={error}
       >
-        <Label htmlFor={name} required={required}>
-          {label}
-        </Label>
-        {prompt && (
-          <Link href={prompt.link} size="sm">
-            {prompt.label}
-          </Link>
-        )}
-      </Flex>
-
-      <Box css={{ position: 'relative' }}>
         <Input
           type={isPasswordVisible ? 'text' : 'password'}
           css={{ pr: '$sizes$2' }}
@@ -104,8 +94,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
             is={isPasswordVisible ? Eye : EyeClosed}
           />
         </InvisibleButton>
-      </Box>
-      {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+      </FieldWrapper>
     </Box>
   )
 }

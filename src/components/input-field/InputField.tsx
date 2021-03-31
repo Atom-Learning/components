@@ -38,7 +38,7 @@ export const InputField: React.FC<InputFieldProps> = ({
       label={label}
       required={required}
       error={error}
-      htmlFor={name}
+      fieldId={name}
       css={css}
     >
       <Input

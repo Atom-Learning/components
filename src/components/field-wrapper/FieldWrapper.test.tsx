@@ -7,7 +7,7 @@ import { Input } from '../input'
 import { FieldWrapper } from '.'
 
 const ExampleField = () => (
-  <FieldWrapper label="Example Field" htmlFor="example">
+  <FieldWrapper label="Example Field" fieldId="example">
     <Input name="example" id="example" />
   </FieldWrapper>
 )

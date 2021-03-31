@@ -7,6 +7,16 @@ exports[`InputField component renders a field in error state 1`] = `
   width: 100px;
 }
 
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
 .sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
@@ -61,10 +71,6 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
-.sxdiu5c-b2uuy {
-  margin-bottom: var(--space-2);
-}
-
 .sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
@@ -103,12 +109,16 @@ exports[`InputField component renders a field in error state 1`] = `
   <div
     class="sx03kze sx03kze-6obnf"
   >
-    <label
-      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
-      for="INPUT FIELD"
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
     >
-      INPUT FIELD
-    </label>
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="INPUT FIELD"
+      >
+        INPUT FIELD
+      </label>
+    </div>
     <input
       class="sx47aq8 sx47aq8hpnso--state-error"
       id="INPUT FIELD"
@@ -131,6 +141,16 @@ exports[`InputField component renders a field with a number input 1`] = `
   width: 100px;
 }
 
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -154,10 +174,6 @@ exports[`InputField component renders a field with a number input 1`] = `
   content: '';
   margin-top: -0.4489em;
   display: table;
-}
-
-.sxdiu5c-b2uuy {
-  margin-bottom: var(--space-2);
 }
 
 .sx47aq8 {
@@ -194,12 +210,16 @@ exports[`InputField component renders a field with a number input 1`] = `
   <div
     class="sx03kze sx03kze-6obnf"
   >
-    <label
-      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
-      for="INPUT FIELD"
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
     >
-      INPUT FIELD
-    </label>
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="INPUT FIELD"
+      >
+        INPUT FIELD
+      </label>
+    </div>
     <input
       class="sx47aq8"
       id="INPUT FIELD"
@@ -220,6 +240,16 @@ exports[`InputField component renders a field with a text input 1`] = `
   width: 100px;
 }
 
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -243,10 +273,6 @@ exports[`InputField component renders a field with a text input 1`] = `
   content: '';
   margin-top: -0.4489em;
   display: table;
-}
-
-.sxdiu5c-b2uuy {
-  margin-bottom: var(--space-2);
 }
 
 .sx47aq8 {
@@ -283,12 +309,16 @@ exports[`InputField component renders a field with a text input 1`] = `
   <div
     class="sx03kze sx03kze-6obnf"
   >
-    <label
-      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
-      for="INPUT FIELD"
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
     >
-      INPUT FIELD
-    </label>
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="INPUT FIELD"
+      >
+        INPUT FIELD
+      </label>
+    </div>
     <input
       class="sx47aq8"
       id="INPUT FIELD"

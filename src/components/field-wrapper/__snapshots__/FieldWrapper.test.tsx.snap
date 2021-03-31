@@ -31,6 +31,16 @@ exports[`FieldWrapper component renders 1`] = `
   cursor: not-allowed;
 }
 
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -56,20 +66,20 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxdiu5c-b2uuy {
-  margin-bottom: var(--space-2);
-}
-
 <div>
   <div
     class="sx03kze"
   >
-    <label
-      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-b2uuy"
-      for="example"
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
     >
-      Example Field
-    </label>
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="example"
+      >
+        Example Field
+      </label>
+    </div>
     <input
       class="sx47aq8"
       id="example"
