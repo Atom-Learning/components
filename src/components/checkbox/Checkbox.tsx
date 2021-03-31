@@ -38,14 +38,16 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   }
 })
 
-type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
+type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
 const CheckboxIcon = () => <Icon is={Ok} size="sm" />
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => (
-  <StyledCheckbox {...props}>
-    <RadixCheckbox.Indicator as={CheckboxIcon} />
-  </StyledCheckbox>
+export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
+  (props, ref) => (
+    <StyledCheckbox {...props} ref={ref}>
+      <RadixCheckbox.Indicator as={CheckboxIcon} />
+    </StyledCheckbox>
+  )
 )
 
 Checkbox.displayName = 'Checkbox'

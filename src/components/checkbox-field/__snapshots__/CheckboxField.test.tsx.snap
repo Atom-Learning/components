@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxField component renders 1`] = `
+.sx1i2hs {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radii-0);
+  box-shadow: inset 0 0 0 2px var(--colors-secondary300);
+  color: white;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease-out;
+}
+
+.sx1i2hs[data-state="unchecked"]:focus,
+.sx1i2hs[data-state="unchecked"]:hover {
+  background-color: var(--colors-tonal300);
+  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+  outline: none;
+}
+
+.sx1i2hs[data-state="checked"] {
+  background-color: var(--colors-secondary300);
+}
+
+.sx1i2hs[data-state="checked"]:hover,
+.sx1i2hs[data-state="unchecked"]:focus {
+  background-color: var(--colors-secondary700);
+  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+  outline: none;
+}
+
+.sx1i2hs:focus-within {
+  outline: none;
+}
+
+.sx03kze-385xm {
+  margin-right: var(--space-2);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-08xiu {
+  align-items: center;
+}
+
+.sxdiu5c {
+  color: var(--colors-secondary300);
+  display: block;
+  font-family: var(--fonts-sans);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sxdiu5cjqqvr--size-md {
+  font-size: var(--fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxdiu5cjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxdiu5cjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+<div>
+  <div
+    class="sx03kze"
+  >
+    <div
+      class="sx2cs53 sx2cs53-08xiu"
+    >
+      <div
+        class="sx03kze sx03kze-385xm"
+      >
+        <input
+          hidden=""
+          name="example"
+          type="checkbox"
+          value="on"
+        />
+        <button
+          aria-checked="false"
+          class="sx1i2hs"
+          data-state="unchecked"
+          id="example"
+          role="checkbox"
+          type="button"
+          value="on"
+        />
+      </div>
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="example"
+      >
+        Example
+      </label>
+    </div>
+  </div>
+</div>
+`;

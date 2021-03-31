@@ -50,3 +50,34 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
 }
 
 FieldWrapper.displayName = 'FieldWrapper'
+
+type InlineFieldWrapperProps = {
+  css?: CSS
+  error?: string
+  label: string
+  fieldId: string
+  required?: boolean
+}
+
+export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
+  children,
+  error,
+  css,
+  fieldId,
+  label,
+  required
+}) => {
+  return (
+    <Box css={css}>
+      <Flex css={{ alignItems: 'center' }}>
+        <Box css={{ mr: '$2' }}>{children}</Box>
+        <Label htmlFor={fieldId} required={required}>
+          {label}
+        </Label>
+      </Flex>
+      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+    </Box>
+  )
+}
+
+InlineFieldWrapper.displayName = 'InlineFieldWrapper'
