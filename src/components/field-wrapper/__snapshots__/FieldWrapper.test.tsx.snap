@@ -95,6 +95,29 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
+.sx8xsnx {
+  color: var(--colors-primary500);
+  font-family: var(--fonts-sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sx8xsnx:focus,
+.sx8xsnx:hover {
+  color: var(--colors-primary900);
+  text-decoration: underline;
+}
+
+.sx8xsnx:active,
+.sx8xsnx:visited {
+  color: var(--colors-primary500);
+}
+
+.sx8xsnxdi0z9--size-sm {
+  font-size: var(--fontSizes-sm);
+  line-height: 1.69;
+}
+
 <div>
   <div
     class="sx03kze"
@@ -108,6 +131,12 @@ exports[`FieldWrapper component renders 1`] = `
       >
         Example Field
       </label>
+      <a
+        class="sx8xsnx sx8xsnxdi0z9--size-sm"
+        href="https://example.com"
+      >
+        Example prompt
+      </a>
     </div>
     <input
       class="sx47aq8"

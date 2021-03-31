@@ -7,7 +7,12 @@ import { Input } from '../input'
 import { FieldWrapper } from '.'
 
 const ExampleField = () => (
-  <FieldWrapper label="Example Field" fieldId="example" error="Example error">
+  <FieldWrapper
+    label="Example Field"
+    fieldId="example"
+    error="Example error"
+    prompt={{ label: 'Example prompt', link: 'https://example.com' }}
+  >
     <Input name="example" id="example" />
   </FieldWrapper>
 )
@@ -37,5 +42,13 @@ describe('FieldWrapper component', () => {
     render(<ExampleField />)
 
     expect(await screen.findByText('Example error')).toBeVisible()
+  })
+
+  it('links renders provided prompt', async () => {
+    render(<ExampleField />)
+    const link = await screen.findByRole('link')
+
+    expect(link).toHaveTextContent('Example prompt')
+    expect(link).toHaveAttribute('href', 'https://example.com')
   })
 })
