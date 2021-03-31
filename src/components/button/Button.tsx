@@ -103,7 +103,7 @@ const StyledButton = styled('button', {
         py: '$3',
         px: '$4',
         fontSize: '$lg',
-        height: '$5'
+        height: 'calc($4 + $1)'
       }
     },
     isRounded: {
