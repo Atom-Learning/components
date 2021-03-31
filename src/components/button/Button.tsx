@@ -89,19 +89,21 @@ const StyledButton = styled('button', {
     },
     size: {
       sm: {
-        p: '$1 $2',
+        py: '$1',
+        px: '$2',
         fontSize: '$sm',
-        lineHeight: 2
+        height: '$3'
       },
       md: {
-        p: '$2 $3',
-        fontSize: '$md',
-        lineHeight: 2
+        py: '$2',
+        px: '$3',
+        fontSize: '$md'
       },
       lg: {
-        p: '$3 $4',
+        py: '$3',
+        px: '$4',
         fontSize: '$lg',
-        lineHeight: 1.5
+        height: '$5'
       }
     },
     isRounded: {
@@ -178,7 +180,6 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   appearance = 'solid',
-  size = 'md',
   theme = 'primary',
   type = 'button',
   ...rest
@@ -216,7 +217,6 @@ export const Button: React.FC<ButtonProps> = ({
       appearance={appearance}
       isLoading={isLoading || false}
       onClick={onClick ? () => handleClick(onClick) : undefined}
-      size={size}
       type={type}
       {...rest}
     >
