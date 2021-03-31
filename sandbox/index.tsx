@@ -4,7 +4,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Checkbox, globalCss, CheckboxField, Form, Button } from '../dist'
+import { Box, Button,Checkbox, CheckboxField, Form, globalCss } from '../dist'
 globalCss(reset)()
 
 const App = () => {
