@@ -86,6 +86,30 @@ const StyledButton = styled('button', {
       true: {
         width: '100%'
       }
+    },
+    size: {
+      sm: {
+        py: '$1',
+        px: '$2',
+        fontSize: '$sm',
+        height: '$3'
+      },
+      md: {
+        py: '$2',
+        px: '$3',
+        fontSize: '$md'
+      },
+      lg: {
+        py: '$3',
+        px: '$4',
+        fontSize: '$lg',
+        height: 'calc($4 + $1)'
+      }
+    },
+    isRounded: {
+      true: {
+        borderRadius: '$round'
+      }
     }
   },
 
@@ -147,16 +171,17 @@ type ButtonProps = Override<
     isLoading?: boolean
     onClick?: () => void
     as?: React.ComponentType | React.ElementType
+    children: React.ReactNodeArray
   }
 >
 
 export const Button: React.FC<ButtonProps> = ({
-  theme = 'primary',
-  appearance = 'solid',
   isLoading,
-  type = 'button',
   children,
   onClick,
+  appearance = 'solid',
+  theme = 'primary',
+  type = 'button',
   ...rest
 }) => {
   // Note: button is not disabled when loading for accessibility purposes.
@@ -167,6 +192,24 @@ export const Button: React.FC<ButtonProps> = ({
     }
     callback()
   }
+
+  const getChildren = () => {
+    return React.Children.map(children, (child: any, i) => {
+      if (children.length === undefined) {
+        return child
+      }
+
+      if (child?.type?.name === 'Icon') {
+        return React.cloneElement(child, {
+          css: { [i === 0 ? 'mr' : 'ml']: '$3' }
+        })
+      }
+
+      return child
+    })
+  }
+
+  children = getChildren()
 
   return (
     <StyledButton

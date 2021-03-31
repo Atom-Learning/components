@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldWrapper component renders 1`] = `
+.sx47aq8 {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid var(--colors-tonal500);
+  border-radius: var(--radii-0);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--colors-tonal900);
+  cursor: text;
+  display: block;
+  font-family: var(--fonts-sans);
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  width: 100%;
+  padding: var(--space-3);
+  transition: all 100ms ease-out;
+}
+
+.sx47aq8:focus {
+  border-color: var(--colors-primary900);
+  box-shadow: inset 0 0 0 1px var(--colors-primary900);
+  outline: none;
+}
+
+.sx47aq8[disabled] {
+  background-color: var(--colors-tonal300);
+  color: var(--colors-tonal700);
+  cursor: not-allowed;
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.sxfey5o {
+  color: var(--colors-tonal900);
+  font-family: var(--fonts-sans);
+  font-weight: 400;
+  margin: 0;
+}
+
+.sxfey5oxzxpn--size-sm {
+  font-size: var(--fontSizes-sm);
+  line-height: 1.69;
+}
+
+.sxfey5oxzxpn--size-sm::before {
+  content: '';
+  margin-bottom: -0.477em;
+  display: table;
+}
+
+.sxfey5oxzxpn--size-sm::after {
+  content: '';
+  margin-top: -0.477em;
+  display: table;
+}
+
+.sxfey5o-m6cy5 {
+  color: var(--colors-danger);
+  margin-top: var(--space-1);
+}
+
+.sxdiu5c {
+  color: var(--colors-secondary300);
+  display: block;
+  font-family: var(--fonts-sans);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sxdiu5cjqqvr--size-md {
+  font-size: var(--fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxdiu5cjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxdiu5cjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sx8xsnx {
+  color: var(--colors-primary500);
+  font-family: var(--fonts-sans);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sx8xsnx:focus,
+.sx8xsnx:hover {
+  color: var(--colors-primary900);
+  text-decoration: underline;
+}
+
+.sx8xsnx:active,
+.sx8xsnx:visited {
+  color: var(--colors-primary500);
+}
+
+.sx8xsnxdi0z9--size-sm {
+  font-size: var(--fontSizes-sm);
+  line-height: 1.69;
+}
+
+<div>
+  <div
+    class="sx03kze"
+  >
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
+    >
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="example"
+      >
+        Example Field
+      </label>
+      <a
+        class="sx8xsnx sx8xsnxdi0z9--size-sm"
+        href="https://example.com"
+      >
+        Example prompt
+      </a>
+    </div>
+    <input
+      class="sx47aq8"
+      id="example"
+      name="example"
+      type="text"
+    />
+    <p
+      class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+    >
+      Example error
+    </p>
+  </div>
+</div>
+`;
