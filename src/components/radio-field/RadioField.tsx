@@ -1,23 +1,22 @@
 import * as React from 'react'
 import { useState } from 'react'
-import { Controller, useForm, useFormContext } from 'react-hook-form'
+import { Controller, useFormContext } from 'react-hook-form'
 
-import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
+import { RadioButton } from '~/components/radio'
 import { CSS } from '~/stitches'
 
-type CheckboxFieldProps = {
+type RadioFieldProps = {
   css?: CSS
   error?: string
   label: string
   name: string
   validation?: ValidationOptions
-} & React.ComponentProps<typeof Checkbox>
+} & React.ComponentProps<typeof RadioButton>
 
-export const CheckboxField: React.FC<CheckboxFieldProps> = ({
+export const RadioField: React.FC<RadioFieldProps> = ({
   css,
-  error,
   label,
   name,
   validation,
@@ -26,8 +25,12 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   const { control } = useFormContext()
   const [isChecked, setIsChecked] = useState(false)
 
+  // each radio in the group has the same name, so we can't use them
+  // as unique IDs
+  const id = `${name}-${Math.floor(Math.random() * (999 - 100 + 1) + 100)}`
   return (
-    <InlineFieldWrapper label={label} fieldId={name} css={css} error={error}>
+    <InlineFieldWrapper css={css} label={label} fieldId={id}>
+      {/* <RadioButton id={id} name={name} {...remainingProps} /> */}
       <Controller
         onChange={() => setIsChecked((current) => !current)}
         control={control}
@@ -35,7 +38,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
         defaultValue={isChecked}
         rules={validation}
         render={({ onChange, value, name: innerName }) => (
-          <Checkbox
+          <RadioButton
             id={name}
             name={innerName}
             onCheckedChange={() => {
@@ -44,8 +47,8 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
                 return !current
               })
             }}
-            value={value}
             {...remainingProps}
+            value={value}
           />
         )}
       />
@@ -53,4 +56,4 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   )
 }
 
-CheckboxField.displayName = 'CheckboxField'
+RadioField.displayName = 'RadioField'
