@@ -10,22 +10,21 @@ type RadioFieldProps = {
   defaultChecked?: boolean
   error?: string
   label: string
-  name: string
   validation?: ValidationOptions
 } & React.ComponentProps<typeof RadioButton>
 
 export const RadioField: React.FC<RadioFieldProps> = ({
   css,
   label,
-  name,
+  value,
   ...remainingProps
 }) => {
   // each radio in the group has the same name, so we can't use them
   // as unique IDs
-  const id = `${name}-${Math.floor(Math.random() * (999 - 100 + 1) + 100)}`
+
   return (
-    <InlineFieldWrapper css={css} label={label} fieldId={id}>
-      <RadioButton id={id} name={name} {...remainingProps} />
+    <InlineFieldWrapper css={css} label={label} fieldId={value}>
+      <RadioButton id={value} value={value} {...remainingProps} />
     </InlineFieldWrapper>
   )
 }

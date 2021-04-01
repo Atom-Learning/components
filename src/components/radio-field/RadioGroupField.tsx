@@ -10,7 +10,7 @@ import { CSS } from '~/stitches'
 
 import { RadioField } from './RadioField'
 type RadioGroupFieldProps = {
-  css: CSS
+  css?: CSS
   defaultValue: string
   label: string
   name: string
@@ -21,8 +21,6 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   Item: typeof RadioField
 } = ({ children, css, defaultValue, label, name, validation }) => {
   const { control, errors } = useFormContext()
-
-  console.log('errors:', errors)
 
   return (
     <Box as="fieldset" css={css}>

@@ -24,6 +24,7 @@ const App = () => {
         name="name"
         validation={{ required: 'This field is required' }}
         css={{ mb: '$4' }}
+        required
       />
       <InputField label="Age" name="age" type="number" css={{ mb: '$4' }} />
       <RadioGroupField

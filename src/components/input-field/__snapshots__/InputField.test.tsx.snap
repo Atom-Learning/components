@@ -119,11 +119,6 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
-.sxxl4lf {
-  color: var(--colors-danger);
-  margin-left: var(--space-1);
-}
-
 .sx47aq8 {
   appearance: none;
   border: 1px solid var(--colors-tonal500);
@@ -173,16 +168,10 @@ exports[`InputField component renders a field in error state 1`] = `
           for="INPUT FIELD"
         >
           INPUT FIELD
-          <span
-            class="sxxl4lf"
-          >
-            *
-          </span>
         </label>
       </div>
       <input
         class="sx47aq8 sx47aq8hpnso--state-error"
-        error="This field is required"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"

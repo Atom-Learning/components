@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioField component renders 1`] = `
+.sx03kze-385xm {
+  margin-right: var(--space-2);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-08xiu {
+  align-items: center;
+}
+
+.sxdiu5c {
+  color: var(--colors-secondary300);
+  display: block;
+  font-family: var(--fonts-sans);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sxdiu5cjqqvr--size-md {
+  font-size: var(--fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxdiu5cjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxdiu5cjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sxdiu5c-e1sda {
+  margin-bottom: var(--space-3);
+}
+
+.sxjdf4a {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  border-radius: var(--radii-round);
+  border-color: var(--colors-secondary300);
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.sxjdf4a:focus {
+  outline: none;
+}
+
+:checked + .sxjdf4a {
+  background-color: var(--colors-secondary300);
+}
+
+[disabled] + .sxjdf4a {
+  background-color: var(--colors-tonal600);
+  border: 2px solid var(--colors-tonal600);
+}
+
+.sxip64y {
+  height: var(--sizes-0);
+  width: var(--sizes-0);
+  border-radius: var(--radii-round);
+  background-color: white;
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="sx03kze"
+  >
+    <fieldset
+      class="sx03kze"
+    >
+      <legend
+        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-e1sda"
+      >
+        Example options
+      </legend>
+      <div
+        class="sx03kze"
+        role="radiogroup"
+      >
+        <div
+          class="sx03kze"
+        >
+          <div
+            class="sx2cs53 sx2cs53-08xiu"
+          >
+            <div
+              class="sx03kze sx03kze-385xm"
+            >
+              <input
+                checked=""
+                hidden=""
+                type="radio"
+                value="1"
+              />
+              <button
+                aria-checked="true"
+                class="sxjdf4a"
+                data-radix-roving-focus-group-id="radix-id-0-1"
+                data-state="checked"
+                id="1"
+                role="radio"
+                tabindex="0"
+                type="button"
+                value="1"
+              >
+                <span
+                  class="sxip64y"
+                  data-state="checked"
+                />
+              </button>
+            </div>
+            <label
+              class="sxdiu5c sxdiu5cjqqvr--size-md"
+              for="1"
+            >
+              1
+            </label>
+          </div>
+        </div>
+        <div
+          class="sx03kze"
+        >
+          <div
+            class="sx2cs53 sx2cs53-08xiu"
+          >
+            <div
+              class="sx03kze sx03kze-385xm"
+            >
+              <input
+                hidden=""
+                type="radio"
+                value="2"
+              />
+              <button
+                aria-checked="false"
+                class="sxjdf4a"
+                data-radix-roving-focus-group-id="radix-id-0-1"
+                data-state="unchecked"
+                id="2"
+                role="radio"
+                tabindex="-1"
+                type="button"
+                value="2"
+              />
+            </div>
+            <label
+              class="sxdiu5c sxdiu5cjqqvr--size-md"
+              for="2"
+            >
+              2
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+`;

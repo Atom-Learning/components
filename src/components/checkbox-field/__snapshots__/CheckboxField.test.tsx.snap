@@ -100,7 +100,6 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            aria-required="false"
             class="sx1i2hs"
             data-state="unchecked"
             id="example"
