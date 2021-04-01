@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useState } from 'react'
-import { Controller, useForm, useFormContext } from 'react-hook-form'
+import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
