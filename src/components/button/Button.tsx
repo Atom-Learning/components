@@ -178,35 +178,32 @@ type ButtonProps = Override<
 export const Button: React.FC<ButtonProps> = React.forwardRef(
   (
     {
-      theme = 'primary',
-      appearance = 'solid',
-      isLoading,
-      type = 'button',
       children,
+      isLoading,
       onClick,
+      appearance = 'solid',
+      theme = 'primary',
+      type = 'button',
       ...rest
     },
     ref
   ) => {
-    // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the clickAction is not fired and the button looks faded
-
     const getChildren = () => {
       return React.Children.map(children, (child: any, i) => {
         if (children.length === undefined) {
           return child
         }
-
         if (child?.type?.name === 'Icon') {
           return React.cloneElement(child, {
             css: { [i === 0 ? 'mr' : 'ml']: '$3' }
           })
         }
-
         return child
       })
     }
 
+    // Note: button is not disabled when loading for accessibility purposes.
+    // Instead the clickAction is not fired and the button looks faded
     return (
       <StyledButton
         theme={theme}
