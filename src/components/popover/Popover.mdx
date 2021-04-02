@@ -5,7 +5,13 @@ description: Popover provides a styled actionable popup
 category: Surfaces
 ---
 
-```jsx live
+`Popover` exports 3 components that combine to create our popover. The `Popover.Trigger` requires a React component child (or passed to `as`) to allow the necessary event bindings and accessible properties to be cloned.
+
+Also, note that the component must accept a `ref`.
+
+Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/popover).
+
+```jsx preview
 <Popover>
   <Popover.Trigger>
     <Button>Click me</Button>
