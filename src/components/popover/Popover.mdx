@@ -1,39 +1,23 @@
 ---
 title: Popover
-component: Popover
-description: Popover provides a styled actionable popover.
+component: Popover,Popover.Trigger,Popover.Content
+description: Popover provides a styled actionable popup
 category: Surfaces
 ---
 
-The `Popover` can display any type of element as a trigger and has the popover hidden by default.
-
 ```jsx live
-<Popover aria-label="Password hints" content="Here is some content">
-  <Button>Click me</Button>
+<Popover>
+  <Popover.Trigger>
+    <Button>Click me</Button>
+  </Popover.Trigger>
+  <Popover.Content>
+    <Heading size="xs" css={{ mb: '$3' }}>
+      Popover
+    </Heading>
+    <Text size="sm">
+      The `Popover` can display any type of element as a trigger and has the
+      content hidden by default
+    </Text>
+  </Popover.Content>
 </Popover>
 ```
-
-## variants
-
-Has 3 different `align` variants: `center` (default), `left` and `right`:
-
-```jsx preview
-<>
-  <Popover aria-label="Password hints" content="Hello World" />
-  <Popover aria-label="Password hints" align="left" content="Hello World" />
-  <Popover aria-label="Password hints" align="right" content="Hello World" />
-</>
-```
-
-Also, it can be defaulted to open by setting the `defaultOpen` prop.
-
-```jsx preview
-<Popover aria-label="Password hints" content="Here is some content" defaultOpen>
-  <Button>Click me</Button>
-</Popover>
-```
-
-## Accessibility
-
-- For accessibility purposes the `aria-label` and `content` are mandatory.
-- If using more than one `Popover`s in a page, please provide an `id`

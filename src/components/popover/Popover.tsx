@@ -1,14 +1,18 @@
 import { Root } from '@radix-ui/react-popover'
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { PopoverContent } from './PopoverContent'
 import { PopoverTrigger } from './PopoverTrigger'
 
-type PopoverProps = React.ComponentProps<typeof Root>
+const StyledRoot = styled(Root, {})
+
+type PopoverProps = React.ComponentProps<typeof StyledRoot>
 
 export const Popover: React.FC<PopoverProps> & {
-  Content: typeof PopoverContent
   Trigger: typeof PopoverTrigger
+  Content: typeof PopoverContent
 } = (props) => <Root {...props} />
 
 Popover.Content = PopoverContent
