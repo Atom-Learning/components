@@ -58,10 +58,9 @@ const StyledAlertDialogContent = styled(Content, {
   },
   variants: {
     size: {
-      xs: { width: '380px' },
-      sm: { width: '480px' },
-      md: { width: '600px' },
-      lg: { width: '800px' }
+      sm: { width: '380px' },
+      md: { width: '480px' },
+      lg: { width: '600px' }
     }
   }
 })
