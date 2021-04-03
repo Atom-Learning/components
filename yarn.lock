@@ -1429,6 +1429,21 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
+"@radix-ui/react-alert-dialog@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-alert-dialog/-/react-alert-dialog-0.0.15.tgz#aff68a903143cbc01f7ba09e13c73aa8e866c36c"
+  integrity sha512-bvhiWNd79KZWeKwsSJ5ebJ50EY6v3WdN3YiOk2u9pUhSrBSe2cKBLveNdUGuWxnIORMAn7I6vs5i9rxexSVsWA==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.0.5"
+    "@radix-ui/react-compose-refs" "0.0.5"
+    "@radix-ui/react-context" "0.0.5"
+    "@radix-ui/react-dialog" "0.0.15"
+    "@radix-ui/react-id" "0.0.5"
+    "@radix-ui/react-polymorphic" "0.0.10"
+    "@radix-ui/react-primitive" "0.0.11"
+    "@radix-ui/react-slot" "0.0.9"
+
 "@radix-ui/react-arrow@0.0.11":
   version "0.0.11"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-arrow/-/react-arrow-0.0.11.tgz#941ba239c833fd83324cf7d0e4434aefcc43e958"
@@ -1467,7 +1482,7 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
-"@radix-ui/react-dialog@^0.0.15":
+"@radix-ui/react-dialog@0.0.15", "@radix-ui/react-dialog@^0.0.15":
   version "0.0.15"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-dialog/-/react-dialog-0.0.15.tgz#eb0b42c56d82de798990c1c4b81db625587727fc"
   integrity sha512-rFnXoZdKsYMPKTExvVScYkdCAoVX+cYpokN1ykbgqJRUdbQXW9dQ4scbmGhATW+AlOtMk3DeQXjYw1r29JiQWw==

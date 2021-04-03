@@ -58,13 +58,15 @@ type TextProps = Override<
       | 'li'
       | 'p'
       | 'span'
+      | React.ComponentType
+      | React.ElementType
     size?: TextSizes
   }
 >
 
 export const Text: React.FC<TextProps> = React.forwardRef(
-  ({ as = 'p', size = 'md', ...remainingProps }, ref) => (
-    <StyledParagraph as={as} size={size} {...remainingProps} ref={ref} />
+  ({ size = 'md', ...remainingProps }, ref) => (
+    <StyledParagraph size={size} {...remainingProps} ref={ref} />
   )
 )
 

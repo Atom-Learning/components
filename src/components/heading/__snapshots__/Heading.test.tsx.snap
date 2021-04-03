@@ -26,10 +26,10 @@ exports[`Heading component renders a heading 1`] = `
 }
 
 <div>
-  <h2
+  <h1
     class="sx1v0v7 sx1v0v7r3xir--size-md"
   >
     HEADING
-  </h2>
+  </h1>
 </div>
 `;

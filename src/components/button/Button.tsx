@@ -48,15 +48,11 @@ const StyledButton = styled('button', {
   justifyContent: 'center',
   alignItems: 'center',
   fontFamily: '$sans',
-  fontSize: '$md',
   fontWeight: 500,
-  height: '$4',
   letterSpacing: '0.02em',
   lineHeight: 1.4,
   transition: 'all 125ms ease-out',
   textDecoration: 'none',
-  px: '$4',
-  py: '$2',
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
@@ -76,6 +72,23 @@ const StyledButton = styled('button', {
       solid: {},
       outline: {}
     },
+    size: {
+      sm: {
+        fontSize: '$sm',
+        height: '$3',
+        px: '$3'
+      },
+      md: {
+        fontSize: '$md',
+        height: '$4',
+        px: '$4'
+      },
+      lg: {
+        fontSize: '$lg',
+        height: 'calc($4 + $1)',
+        px: '$4'
+      }
+    },
     isLoading: {
       true: {
         cursor: 'not-allowed',
@@ -85,25 +98,6 @@ const StyledButton = styled('button', {
     fullWidth: {
       true: {
         width: '100%'
-      }
-    },
-    size: {
-      sm: {
-        py: '$1',
-        px: '$2',
-        fontSize: '$sm',
-        height: '$3'
-      },
-      md: {
-        py: '$2',
-        px: '$3',
-        fontSize: '$md'
-      },
-      lg: {
-        py: '$3',
-        px: '$4',
-        fontSize: '$lg',
-        height: 'calc($4 + $1)'
       }
     },
     isRounded: {
@@ -165,13 +159,43 @@ const StyledButton = styled('button', {
   ]
 })
 
+const WithLoader = ({ isLoading, children }) => (
+  <>
+    <Loader
+      css={{
+        opacity: isLoading ? 1 : 0,
+        position: 'absolute',
+        transition: 'opacity 150ms ease-out'
+      }}
+    />
+    <Box
+      as="span"
+      css={
+        isLoading ? { opacity: 0, transition: 'opacity 150ms ease-out' } : {}
+      }
+    >
+      {children}
+    </Box>
+  </>
+)
+
+const getChildren = (children) =>
+  React.Children.map(children, (child: any, i) => {
+    if (child?.type?.name === 'Icon') {
+      return React.cloneElement(child, {
+        css: { [i === 0 ? 'mr' : 'ml']: '$2' }
+      })
+    }
+    return child
+  })
+
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
+    as?: React.ComponentType | React.ElementType
+    children: React.ReactNode
     isLoading?: boolean
     onClick?: () => void
-    as?: React.ComponentType | React.ElementType
-    children: React.ReactNodeArray
   }
 >
 
@@ -182,6 +206,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
       children,
       onClick,
       appearance = 'solid',
+      size = 'md',
       theme = 'primary',
       type = 'button',
       ...rest
@@ -189,61 +214,22 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     ref
   ) => {
     // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the clickAction is not fired and the button looks faded
-
-    const getChildren = () => {
-      return React.Children.map(children, (child: any, i) => {
-        if (children.length === undefined) {
-          return child
-        }
-
-        if (child?.type?.name === 'Icon') {
-          return React.cloneElement(child, {
-            css: { [i === 0 ? 'mr' : 'ml']: '$3' }
-          })
-        }
-
-        return child
-      })
-    }
-
-    children = getChildren()
-
+    // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
-        theme={theme}
-        appearance={appearance}
         isLoading={isLoading || false}
         onClick={!isLoading ? onClick : undefined}
+        appearance={appearance}
+        size={size}
+        theme={theme}
         type={type}
         {...rest}
         ref={ref}
       >
         {typeof isLoading === 'boolean' ? (
-          <>
-            <Loader
-              css={{
-                opacity: isLoading ? 1 : 0,
-                position: 'absolute',
-                transition: 'opacity 150ms ease-out'
-              }}
-            />
-            <Box
-              as="span"
-              css={
-                isLoading
-                  ? {
-                      opacity: 0,
-                      transition: 'opacity 150ms ease-out'
-                    }
-                  : {}
-              }
-            >
-              {children}
-            </Box>
-          </>
+          <WithLoader isLoading={isLoading}>{getChildren(children)}</WithLoader>
         ) : (
-          children
+          getChildren(children)
         )}
       </StyledButton>
     )
