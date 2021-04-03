@@ -1,10 +1,32 @@
 ---
 title: Dialog
-component: Dialog
-description: This is the description
+component: Dialog,Dialog.Trigger,Dialog.Content,Dialog.Close
+description: The Dialog component renders its children inside a modal and puts a dimmer over the rest of the screen
 category: Surfaces
 ---
 
+`Dialog` exports many components that combine to create a modal. The `Dialog.Trigger` requires a React component child (or passed to `as`) to allow the necessary event bindings and accessible properties to be cloned.
+
+Also, note that the component must accept a `ref`.
+
+Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/dialog).
+
 ```jsx preview
-<Dialog />
+<Dialog>
+  <Dialog.Trigger>
+    <Button>Click me</Button>
+  </Dialog.Trigger>
+  <Dialog.Content>
+    <Heading size="sm" css={{ mb: '$3' }}>
+      Dialog
+    </Heading>
+    <Text size="sm" css={{ mb: '$3' }}>
+      The `Dialog` can display any type of element as a trigger and has the
+      content hidden by default
+    </Text>
+    <Button appearance="outline" size="sm" as={Dialog.Close}>
+      Close Dialog
+    </Button>
+  </Dialog.Content>
+</Dialog>
 ```
