@@ -220,48 +220,6 @@ export const Button: React.FC<ButtonProps> = ({
       }
     : {}
 
-  if (to) {
-    return (
-      <StyledButton
-        theme={theme}
-        appearance={appearance}
-        isLoading={isLoading || false}
-        onClick={onClick ? () => handleClick(onClick) : undefined}
-        type={type}
-        as={to ? 'a' : 'button'}
-        {...optionalLinkProps}
-        {...rest}
-      >
-        {typeof isLoading === 'boolean' ? (
-          <>
-            <Loader
-              css={{
-                opacity: isLoading ? 1 : 0,
-                position: 'absolute',
-                transition: 'opacity 150ms ease-out'
-              }}
-            />
-            <Box
-              as="span"
-              css={
-                isLoading
-                  ? {
-                      opacity: 0,
-                      transition: 'opacity 150ms ease-out'
-                    }
-                  : {}
-              }
-            >
-              {children}
-            </Box>
-          </>
-        ) : (
-          children
-        )}
-      </StyledButton>
-    )
-  }
-
   return (
     <StyledButton
       theme={theme}
@@ -269,6 +227,7 @@ export const Button: React.FC<ButtonProps> = ({
       isLoading={isLoading || false}
       onClick={onClick ? () => handleClick(onClick) : undefined}
       type={type}
+      {...optionalLinkProps}
       {...rest}
     >
       {typeof isLoading === 'boolean' ? (
