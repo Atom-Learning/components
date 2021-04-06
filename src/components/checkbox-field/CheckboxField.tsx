@@ -9,7 +9,6 @@ import { CSS } from '~/stitches'
 
 type CheckboxFieldProps = {
   css?: CSS
-  error?: string
   label: string
   name: string
   validation?: ValidationOptions
@@ -17,14 +16,15 @@ type CheckboxFieldProps = {
 
 export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   css,
-  error,
   label,
   name,
   validation,
   ...remainingProps
 }) => {
-  const { control } = useFormContext()
+  const { control, errors } = useFormContext()
   const [isChecked, setIsChecked] = useState(false)
+
+  const error = errors[name]
 
   return (
     <InlineFieldWrapper label={label} fieldId={name} css={css} error={error}>
