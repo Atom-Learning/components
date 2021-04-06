@@ -1,10 +1,15 @@
 ---
 title: Radio Field
 component: RadioField
-description: This is the description
+description: Wraps Radios and RadioGroups with Labels and ValidationErrors
 category: Forms
 ---
 
+`RadioGroupField` wraps a `RadioGroup` to provide a legend and a `ValidationError`. `RadioGroupField.Item` renders an individual `Radio` with an inline `Label`.
+
 ```jsx preview
-<RadioField />
+<RadioGroupField name="options">
+  <RadioGroupField.Item label="Option 1" value="1" />
+  <RadioGroupField.Item label="Option 2" value="2" />
+</RadioGroupField>
 ```

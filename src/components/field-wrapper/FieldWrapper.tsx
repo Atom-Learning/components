@@ -7,7 +7,7 @@ import { Link } from '~/components/link'
 import { ValidationError } from '~/components/validation-error'
 import { CSS } from '~/stitches'
 
-type FieldWrapperProps = {
+export type FieldWrapperProps = {
   css?: CSS
   error?: string
   fieldId: string

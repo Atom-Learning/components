@@ -45,40 +45,41 @@ const StyledSelect = styled('select', {
   }
 })
 
-type SelectProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledSelect>,
+export type SelectProps = Override<
+  React.ComponentProps<typeof StyledSelect>,
   {
-    as: never
+    as?: never
     options?: {
       value: string
       label: string
       disabled?: boolean
     }[]
     defaultOption?: string
-  } & (
-    | { id: string; 'aria-label'?: string }
-    | { 'aria-label': string; id?: string }
-  )
+  }
+  // TODO: figure out why uncommenting this causes TS errors in
+  // component declaration
+  // & (
+  //   | { id: string; 'aria-label'?: string }
+  //   | { 'aria-label': string; id?: string }
+  // )
 >
 
-export const Select: React.FC<SelectProps> = ({
-  options,
-  defaultOption,
-  ...rest
-}) => (
-  <StyledSelect {...rest}>
-    {defaultOption && <option> {defaultOption}</option>}
-    {options &&
-      options.map((option) => (
-        <option
-          key={option.value}
-          value={option.value}
-          disabled={option.disabled}
-        >
-          {option.label}
-        </option>
-      ))}
-  </StyledSelect>
+export const Select: React.FC<SelectProps> = React.forwardRef(
+  ({ options, defaultOption, ...rest }, ref) => (
+    <StyledSelect {...rest} ref={ref}>
+      {defaultOption && <option> {defaultOption}</option>}
+      {options &&
+        options.map((option) => (
+          <option
+            key={option.value}
+            value={option.value}
+            disabled={option.disabled}
+          >
+            {option.label}
+          </option>
+        ))}
+    </StyledSelect>
+  )
 )
 
 Select.displayName = 'Select'
