@@ -186,7 +186,7 @@ describe(`Button component`, () => {
       expect(handleClick).toHaveBeenCalledTimes(0)
     })
 
-    it.only('renders an anchor if provided a link', async () => {
+    it('renders an anchor if provided a link', async () => {
       render(<Button to="https://atomlearning.co.uk">ATOM</Button>)
 
       expect(await screen.findByRole('link')).toHaveAttribute(
