@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "",
   "files": [
     "dist"
@@ -13,6 +13,7 @@
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c && tsc --emitDeclarationOnly",
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open",
     "add-component": "node ./scripts/add-component.mjs",
     "prepublishOnly": "run-s test clean build:lib build:docs",
     "clean": "del ./dist/",
@@ -24,8 +25,7 @@
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "validate:size": "yarn build:lib && size-limit",
-    "validate:types": "tsc --noEmit",
-    "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open"
+    "validate:types": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -43,19 +43,20 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/icons": "^0.2.0",
+    "@atom-learning/icons": "^0.3.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "^0.1.0-beta.7",
+    "@atom-learning/theme": "^0.1.0-beta.8",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@radix-ui/react-id": "0.0.5",
+    "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@rollup/plugin-typescript": "^8.2.0",
-    "@size-limit/preset-small-lib": "^4.9.2",
+    "@size-limit/preset-big-lib": "^4.10.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.8.1",
@@ -101,8 +102,8 @@
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
-    "@atom-learning/icons": "^0.2.0",
-    "@atom-learning/theme": "^0.1.0",
+    "@atom-learning/icons": "^0.3.0",
+    "@atom-learning/theme": "^0.1.0-beta.8",
     "react": "^16.8.0"
   },
   "dependencies": {
@@ -114,8 +115,8 @@
     "@radix-ui/react-visually-hidden": "0.0.11",
     "@stitches/react": "^0.1.0",
     "@types/react": "^17.0.2",
-    "pure-react-carousel": "^1.27.6",
     "colorsys": "^1.0.22",
+    "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0"
   },
