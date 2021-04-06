@@ -19,7 +19,7 @@ export const SelectField: React.FC<SelectFieldProps> = ({
 
   const error = errors[name]?.message
   return (
-    <FieldWrapper fieldId={name} label={label}>
+    <FieldWrapper fieldId={name} label={label} error={error}>
       <Select name={name} id={name} {...remainingProps} ref={ref} />
     </FieldWrapper>
   )
