@@ -17,7 +17,7 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--space-2);
 }
 
-.sxoujvt {
+.sxjzq4u {
   background: unset;
   border: none;
   border-radius: var(--radii-0);
@@ -41,26 +41,26 @@ exports[`InputField component renders a field in error state 1`] = `
   width: max-content;
 }
 
-.sxoujvt[disabled] {
+.sxjzq4u[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxoujvtxyrog--c2 {
+.sxjzq4uxyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxoujvtxyrog--c2:not([disabled]):hover,
-.sxoujvtxyrog--c2:not([disabled]):focus {
+.sxjzq4uxyrog--c2:not([disabled]):hover,
+.sxjzq4uxyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxoujvtxyrog--c2:active {
+.sxjzq4uxyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxoujvtxyrog--c2[disabled] {
+.sxjzq4uxyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
@@ -183,7 +183,7 @@ exports[`InputField component renders a field in error state 1`] = `
       </p>
     </div>
     <button
-      class="sxoujvt sxoujvt03kze--theme-primary sxoujvt03kze--appearance-solid sxoujvtxyrog--c2"
+      class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
       type="submit"
     >
       Submit

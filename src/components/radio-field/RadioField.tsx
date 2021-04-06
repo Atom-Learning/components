@@ -19,9 +19,6 @@ export const RadioField: React.FC<RadioFieldProps> = ({
   value,
   ...remainingProps
 }) => {
-  // each radio in the group has the same name, so we can't use them
-  // as unique IDs
-
   return (
     <InlineFieldWrapper css={css} label={label} fieldId={value}>
       <RadioButton id={value} value={value} {...remainingProps} />
