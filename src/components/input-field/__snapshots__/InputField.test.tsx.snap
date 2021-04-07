@@ -17,50 +17,50 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--space-2);
 }
 
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
@@ -183,7 +183,7 @@ exports[`InputField component renders a field in error state 1`] = `
       </p>
     </div>
     <button
-      class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
+      class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0xyrog--c2"
       type="submit"
     >
       Submit

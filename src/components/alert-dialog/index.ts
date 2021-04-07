@@ -1,3 +1,3 @@
 export { AlertDialog } from './AlertDialog'
 
-export { useAlert, AlertProvider } from './alert-context/useAlert'
+export { AlertProvider, useAlert } from './alert-context/AlertContext'
