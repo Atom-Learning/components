@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover component renders the trigger with the popover hidden by default 1`] = `
+exports[`Dialog component renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
     aria-controls="radix-id-0-1"

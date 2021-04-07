@@ -53,6 +53,12 @@ export const utils = {
     marginTop: value,
     marginBottom: value
   }),
+  inset: () => (value: CSSValue): CSSBlob => ({
+    top: value,
+    right: value,
+    bottom: value,
+    left: value
+  }),
   bg: () => (value: string): CSSBlob => ({
     background: value
   }),
