@@ -40,8 +40,7 @@ const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
 })
 
 const StyledButton = styled('button', {
-  background: 'unset',
-  border: 'none',
+  all: 'unset',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
