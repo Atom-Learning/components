@@ -7,7 +7,7 @@ import { Heading } from '../../heading'
 import { Stack } from '../../stack'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
-import { alert } from './useAlert'
+import { alert } from './types'
 
 type AlertDialogContentProps = alert &
   React.ComponentProps<typeof AlertDialog> & { css?: CSS; onClose: () => void }

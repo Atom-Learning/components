@@ -1,34 +1,11 @@
 import * as React from 'react'
-import { uid } from 'uid'
 
 import { Alert } from './AlertDialog'
+import { initialState, reducer } from './reducer'
+import { alert } from './types'
 
-export type alert = {
-  id: ReturnType<typeof uid>
-  title: string
-  description?: string
-  onAction: (result: boolean) => void
-  confirmActionText?: string
-  cancelActionText?: string
-}
 type context = {
   showAlert: (data: alert) => void
-}
-
-type State = alert[]
-type Action =
-  | { type: 'ADD'; payload: alert }
-  | { type: 'REMOVE'; payload: string }
-
-const reducer = (state: State, action: Action): alert[] => {
-  switch (action.type) {
-    case 'ADD':
-      return [...state, { ...action.payload, id: uid() }]
-    case 'REMOVE':
-      return state.filter((t) => t.id !== action.payload)
-    default:
-      return state
-  }
 }
 
 const AlertContext = React.createContext<context>({
@@ -36,7 +13,7 @@ const AlertContext = React.createContext<context>({
 })
 
 export const AlertProvider: React.FC = ({ children }) => {
-  const [alerts, dispatch] = React.useReducer(reducer, [])
+  const [alerts, dispatch] = React.useReducer(reducer, initialState)
 
   return (
     <AlertContext.Provider
