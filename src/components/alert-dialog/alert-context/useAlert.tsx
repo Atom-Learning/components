@@ -1,49 +1,65 @@
 import * as React from 'react'
+import { uid } from 'uid'
 
-import { AlertDialog } from '../AlertDialog'
-import { AlertDialogContent } from './AlertDialog'
+import { Alert } from './AlertDialog'
 
-export type contentType = {
+export type alert = {
+  id: ReturnType<typeof uid>
   title: string
   description?: string
   onAction: (result: boolean) => void
   confirmActionText?: string
   cancelActionText?: string
 }
-
 type context = {
-  showAlert: (data: contentType) => void
+  showAlert: (data: alert) => void
 }
 
-const AlertContext = React.createContext<context>({ showAlert: () => null })
+type State = alert[]
+type Action =
+  | { type: 'ADD'; payload: alert }
+  | { type: 'REMOVE'; payload: string }
+
+const reducer = (state: State, action: Action): alert[] => {
+  switch (action.type) {
+    case 'ADD':
+      return [...state, { ...action.payload, id: uid() }]
+    case 'REMOVE':
+      return state.filter((t) => t.id !== action.payload)
+    default:
+      return state
+  }
+}
+
+const AlertContext = React.createContext<context>({
+  showAlert: () => null
+})
 
 export const AlertProvider: React.FC = ({ children }) => {
-  const [dialogOpen, setDialogOpen] = React.useState(false)
-  const [content, setContent] = React.useState<contentType | undefined>(
-    undefined
-  )
-
-  const showAlert = (data) => {
-    setContent(data)
-    setDialogOpen(true)
-  }
-
-  const onAction = (result) => {
-    setDialogOpen(false)
-    content?.onAction?.(result)
-  }
+  const [alerts, dispatch] = React.useReducer(reducer, [])
 
   return (
-    <AlertContext.Provider value={{ showAlert }}>
-      <AlertDialog open={dialogOpen}>
-        {content && (
-          <AlertDialogContent
-            {...content}
-            onAction={onAction}
-            onCloseAutoFocus={() => setContent(undefined)}
-          />
-        )}
-      </AlertDialog>
+    <AlertContext.Provider
+      value={{
+        showAlert: (content: alert) =>
+          dispatch({
+            payload: content,
+            type: 'ADD'
+          })
+      }}
+    >
+      {Boolean(alerts.length) && (
+        <Alert
+          {...alerts[0]}
+          key={alerts[0].id}
+          onClose={() =>
+            dispatch({
+              payload: alerts[0].id,
+              type: 'REMOVE'
+            })
+          }
+        />
+      )}
       {children}
     </AlertContext.Provider>
   )
