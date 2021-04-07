@@ -43,19 +43,14 @@ describe(`Dialog component`, () => {
   it('has no programmatically detectable a11y issues', async () => {
     expect(await axe(rendered.container)).toHaveNoViolations()
   })
-})
 
-describe(`Dialog component - Is open`, () => {
-  let rendered
-  let trigger
+  describe(`when open`, () => {
+    beforeEach(() => {
+      fireEvent.click(trigger)
+    })
 
-  beforeEach(() => {
-    rendered = render(<DialogTest />)
-    trigger = rendered.getByText('TRIGGER')
-    fireEvent.click(trigger)
-  })
-
-  it('has no programmatically detectable a11y issues', async () => {
-    expect(await axe(rendered.container)).toHaveNoViolations()
+    it('has no programmatically detectable a11y issues', async () => {
+      expect(await axe(rendered.container)).toHaveNoViolations()
+    })
   })
 })
