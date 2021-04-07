@@ -8,6 +8,7 @@ import { keyframes, styled } from '~/stitches'
 
 import { Icon } from '../icon'
 // TODO: content is dragable why?
+// TODO: fix spacing between toasts
 
 const toastSize = '44px'
 const toastOffset = '32px'
@@ -55,6 +56,7 @@ const StyledToast = styled(ToastContainer, {
     fontFamily: '$sans',
     fontWeight: 400,
     justifyContent: 'space-between',
+    mb: '$2',
     minHeight: 60,
     position: 'relative',
     overflow: 'hidden',
@@ -108,8 +110,8 @@ const StyledToast = styled(ToastContainer, {
 
 const Zoom = cssTransition({
   enter: 'enter',
-  exit: 'exit'
-  // duration: 200 // TODO: TS error
+  exit: 'exit',
+  collapseDuration: 200
 })
 
 const CloseButton = ({ closeToast }) => (
@@ -146,6 +148,7 @@ export const Toast: React.FC<ToastProps> = ({ theme = 'primary', ...rest }) => {
       theme={theme}
       transition={Zoom}
       closeButton={CloseButton}
+      closeOnClick
       {...rest}
     />
   )
