@@ -1,6 +1,7 @@
 import { Eye, EyeClosed } from '@atom-learning/icons'
 import * as React from 'react'
 import { useState } from 'react'
+import { useFormContext } from 'react-hook-form'
 
 import { Box } from '~/components/box'
 import { FieldWrapper } from '~/components/field-wrapper'
@@ -17,10 +18,6 @@ type PasswordFieldProps = InputProps & {
   }
   hidePasswordText?: string
   showPasswordText?: string
-  register?: (
-    validation: ValidationOptions
-  ) => React.ForwardedRef<HTMLInputElement>
-  error?: string
   required?: boolean
   validation?: ValidationOptions
 }
@@ -38,27 +35,22 @@ const InvisibleButton = styled('button', {
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
-  error = '',
   label = 'Password',
   name,
   hidePasswordText = 'Hide password',
   showPasswordText = 'Show password',
   prompt = undefined,
   required = false,
-  register = undefined,
   validation,
   ...remainingProps
 }) => {
+  const { register, errors } = useFormContext()
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
   const togglePasswordVisibility = () =>
     setIsPasswordVisible((currentState) => !currentState)
 
-  let ref
-  if (register && validation) {
-    ref = register(validation)
-  } else if (register) {
-    ref = register
-  }
+  const ref = validation ? register(validation) : register
+  const error = errors[name]?.message
 
   return (
     <Box css={css}>

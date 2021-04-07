@@ -58,6 +58,7 @@ type TextProps = Override<
       | 'li'
       | 'p'
       | 'span'
+      | 'legend'
       | React.ComponentType
       | React.ElementType
     size?: TextSizes
