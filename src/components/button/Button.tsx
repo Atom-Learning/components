@@ -168,10 +168,11 @@ const StyledButton = styled('button', {
 type ButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
-    isLoading?: boolean
-    onClick?: () => void
     as?: React.ComponentType | React.ElementType
     children: React.ReactNodeArray
+    isLoading?: boolean
+    onClick?: () => void
+    to?: string
   }
 >
 
@@ -181,6 +182,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   appearance = 'solid',
   theme = 'primary',
+  to,
   type = 'button',
   ...rest
 }) => {
@@ -211,6 +213,13 @@ export const Button: React.FC<ButtonProps> = ({
 
   children = getChildren()
 
+  const optionalLinkProps = to
+    ? {
+        as: 'a',
+        href: to
+      }
+    : {}
+
   return (
     <StyledButton
       theme={theme}
@@ -218,6 +227,7 @@ export const Button: React.FC<ButtonProps> = ({
       isLoading={isLoading || false}
       onClick={onClick ? () => handleClick(onClick) : undefined}
       type={type}
+      {...optionalLinkProps}
       {...rest}
     >
       {typeof isLoading === 'boolean' ? (
