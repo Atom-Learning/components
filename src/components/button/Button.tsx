@@ -170,9 +170,7 @@ const WithLoader = ({ isLoading, children }) => (
     />
     <Box
       as="span"
-      css={
-        isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}
-      }
+      css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
     >
       {children}
     </Box>
@@ -215,7 +213,6 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     },
     ref
   ) => {
-
     const optionalLinkProps = to ? { as: 'a', href: to } : {}
 
     // Note: button is not disabled when loading for accessibility purposes.

@@ -30,3 +30,5 @@ Read more about the underlying UI component on the [Radix UI documentation site]
   </Dialog.Content>
 </Dialog>
 ```
+
+For any modifications of the default `Dialog` visuals, for example bypassing the panel design entirely, we recommend utilising the Radix UI Dialog component directly. You will need to wrap each exported component within a `styled()` function to enable `css` and `as`, and compose together `Dialog.Overlay` and `Dialog.Close` within `Dialog.Content` to mimic the behaviour of this modal.
