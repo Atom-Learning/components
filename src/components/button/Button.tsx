@@ -168,19 +168,21 @@ const StyledButton = styled('button', {
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
-    isLoading?: boolean
-    onClick?: () => void
     as?: React.ComponentType | React.ElementType
     children: React.ReactNodeArray
+    isLoading?: boolean
+    onClick?: () => void
+    to?: string
   }
 >
 
 export const Button: React.FC<ButtonProps> = React.forwardRef(
   (
     {
-      isLoading,
       children,
+      isLoading,
       onClick,
+      to,
       appearance = 'solid',
       theme = 'primary',
       type = 'button',
@@ -188,34 +190,32 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     },
     ref
   ) => {
-    // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the clickAction is not fired and the button looks faded
-
     const getChildren = () => {
       return React.Children.map(children, (child: any, i) => {
         if (children.length === undefined) {
           return child
         }
-
         if (child?.type?.name === 'Icon') {
           return React.cloneElement(child, {
             css: { [i === 0 ? 'mr' : 'ml']: '$3' }
           })
         }
-
         return child
       })
     }
 
-    children = getChildren()
+    const optionalLinkProps = to ? { as: 'a', href: to } : {}
 
+    // Note: button is not disabled when loading for accessibility purposes.
+    // Instead the clickAction is not fired and the button looks faded
     return (
       <StyledButton
         theme={theme}
         appearance={appearance}
         isLoading={isLoading || false}
-        onClick={!isLoading ? onClick : undefined}
+        onClick={isLoading ? undefined : onClick}
         type={type}
+        {...optionalLinkProps}
         {...rest}
         ref={ref}
       >
@@ -239,11 +239,11 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
                   : {}
               }
             >
-              {children}
+              {getChildren()}
             </Box>
           </>
         ) : (
-          children
+          getChildren()
         )}
       </StyledButton>
     )
