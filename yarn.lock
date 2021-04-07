@@ -1553,6 +1553,28 @@
   dependencies:
     "@babel/runtime" "^7.13.10"
 
+"@radix-ui/react-popover@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-popover/-/react-popover-0.0.15.tgz#e94d24dcb00003cbe57fdfa1b5afdd052b8ac56f"
+  integrity sha512-c9uto/f/u7EQxlGb9/ITulRPNBJE2jW8mKnCf3zq2ZjScaVkjK6vlfu6TAPY4MaXHVcEk1/xx/H2GbNFUEwzBg==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.0.5"
+    "@radix-ui/react-compose-refs" "0.0.5"
+    "@radix-ui/react-context" "0.0.5"
+    "@radix-ui/react-dismissable-layer" "0.0.12"
+    "@radix-ui/react-focus-guards" "0.0.7"
+    "@radix-ui/react-focus-scope" "0.0.11"
+    "@radix-ui/react-id" "0.0.5"
+    "@radix-ui/react-polymorphic" "0.0.10"
+    "@radix-ui/react-popper" "0.0.14"
+    "@radix-ui/react-portal" "0.0.11"
+    "@radix-ui/react-presence" "0.0.13"
+    "@radix-ui/react-primitive" "0.0.11"
+    "@radix-ui/react-use-controllable-state" "0.0.6"
+    aria-hidden "^1.1.1"
+    react-remove-scroll "^2.4.0"
+
 "@radix-ui/react-popper@0.0.14":
   version "0.0.14"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-popper/-/react-popper-0.0.14.tgz#9ac6eae69a7224ebf3a4cf1191758b35dd52cbcf"

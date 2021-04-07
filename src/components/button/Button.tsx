@@ -165,13 +165,13 @@ const WithLoader = ({ isLoading, children }) => (
       css={{
         opacity: isLoading ? 1 : 0,
         position: 'absolute',
-        transition: 'opacity 150ms ease-out'
+        transition: 'opacity 150ms'
       }}
     />
     <Box
       as="span"
       css={
-        isLoading ? { opacity: 0, transition: 'opacity 150ms ease-out' } : {}
+        isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}
       }
     >
       {children}
@@ -196,15 +196,17 @@ type ButtonProps = Override<
     children: React.ReactNode
     isLoading?: boolean
     onClick?: () => void
+    to?: string
   }
 >
 
 export const Button: React.FC<ButtonProps> = React.forwardRef(
   (
     {
-      isLoading,
       children,
+      isLoading,
       onClick,
+      to,
       appearance = 'solid',
       size = 'md',
       theme = 'primary',
@@ -213,6 +215,9 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     },
     ref
   ) => {
+
+    const optionalLinkProps = to ? { as: 'a', href: to } : {}
+
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
     return (
@@ -224,6 +229,7 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
         theme={theme}
         type={type}
         {...rest}
+        {...optionalLinkProps}
         ref={ref}
       >
         {typeof isLoading === 'boolean' ? (
