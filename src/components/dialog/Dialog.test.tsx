@@ -24,10 +24,8 @@ describe(`Dialog component`, () => {
   })
 
   it('renders the trigger with the popover hidden by default', async () => {
-    const { container } = render(<DialogTest />)
-
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
-    expect(container).toMatchSnapshot()
+    expect(rendered.container).toMatchSnapshot()
   })
 
   it('opens the popover once trigger is clicked', async () => {
