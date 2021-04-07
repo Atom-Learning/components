@@ -7,13 +7,31 @@ category: Forms
 
 ## General
 
-`Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the `useForm()` instance and handles the validation logic. When validation happens depends on the `validationMode` prop, which accepts `"onBlur" | "onSubmit"` and defaults to `"onBlur"`.
+`Form` is a wrapper around an HTML `form` element and the `react-hook-form` library. It manages the call to `useForm()`, renders a `<FormProvider>` and manages validation. When validation happens depends on the `validationMode` prop, which accepts `"onBlur" | "onSubmit"` and defaults to `"onBlur"`.
 
-`Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they accept the following props:
+`Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they call `useFormContext()` and use:
 
-- `error`: `string` (for validation errors)
-- `register`: `(validation: ValidationOptions) => React.ForwardedRef<HTML*Element>` (e.g. `React.ForwardedRef<HTMLInputElement>` or `React.ForwardedRef<HTMLSelectElement>` depending on what your field renders.)
-- `validation`: `ValidationOptions`
+- `register` or `control` to register with the form per `react-hook-form`'s docs
+- `errors` to display any errors for the relevant field
+
+Custom field components should also accept a `validation` prop of type `ValidationOptions` and apply it to the field when present.
+
+Here's an example using a simplified version of our `InputField`:
+
+```tsx center
+const InputField = ({ label, name, validation }) => {
+  const { register, errors } = useFormContext()
+  const ref = validation ? register(validation) : register
+
+  const error = errors[name]?.message
+
+  return (
+    <FieldWrapper label={label} error={error} fieldId={name}>
+      <Input id={name} name={name} ref={ref} />
+    </FieldWrapper>
+  )
+}
+```
 
 ## ValidationOptions
 
@@ -26,14 +44,11 @@ deciding dynamically whether to make a field required. If it will always be requ
 
 ```tsx center
 <Form>
-  <InputField name="name" label="Name" validation={{required: {value: true, message: "You must have a name"}}} />
+  <InputField name="name" label="Name" validation={{required: { value: true, message: "You must have a name" }}} />
   <InputField name="name" label="Name" validation={{required: "You must have a name"} />
   <Button>Submit</Button>
 </Form>
 ```
-
-If a field is set to be required in this way, the component will also be passed a `required` boolean prop automatically, so that's what our fields use to determine whether or not
-to show an asterisk next to the label.
 
 The following properties take a `message` and a `value`:
 
@@ -139,36 +154,32 @@ const EmailField = ({ name, register, error, validation = {}, ...rest }) => {
 ```
 
 ```tsx
-const EmailField = ({
-  css = {},
-  name,
-  error = null,
-  register = null,
-  validation = {},
-  required,
-  ...rest
-}) => (
-  <Box css={css}>
-    <Label required={required} css={{ mb: '$2' }}>
-      Email
-    </Label>
-    <Input
-      autoComplete="email"
-      label="Email address"
-      name={name}
-      type="email"
-      ref={register?.({
-        required: 'email address is required',
-        pattern: {
-          value: /.+@.+\..+/,
-          message: 'please enter a valid email address'
-        },
-        ...validation
-      })}
-      error={error}
-      {...rest}
-    />
-    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
-  </Box>
-)
+const EmailField = ({ css, name, validation, required, ...rest }) => {
+  const { errors, register } = useFormContext()
+
+  const ref = validation ? register(validation) : register
+  const error = errors[name]?.message
+
+  return (
+    <FieldWrapper css={css} label="Email address" fieldId={name}>
+      <Input
+        name={name}
+        id={name}
+        type="email"
+        autoComplete="email"
+        ref={register?.({
+          required: 'email address is required',
+          pattern: {
+            value: /.+@.+\..+/,
+            message: 'please enter a valid email address'
+          },
+          ...validation
+        })}
+        error={error}
+        {...rest}
+      />
+      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+    </FieldWrapper>
+  )
+}
 ```

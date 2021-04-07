@@ -17,6 +17,54 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--space-2);
 }
 
+.sxjzq4u {
+  background: unset;
+  border: none;
+  border-radius: var(--radii-0);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fonts-sans);
+  font-size: var(--fontSizes-md);
+  font-weight: 500;
+  height: var(--sizes-4);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  transition: all 125ms ease-out;
+  text-decoration: none;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  white-space: nowrap;
+  width: max-content;
+}
+
+.sxjzq4u[disabled] {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.sxjzq4uxyrog--c2 {
+  background-color: var(--colors-primary500);
+  color: white;
+}
+
+.sxjzq4uxyrog--c2:not([disabled]):hover,
+.sxjzq4uxyrog--c2:not([disabled]):focus {
+  background-color: var(--colors-primary900);
+}
+
+.sxjzq4uxyrog--c2:active {
+  background-color: var(--colors-primary500);
+}
+
+.sxjzq4uxyrog--c2[disabled] {
+  background-color: var(--colors-tonal300);
+  color: var(--colors-tonal600);
+}
+
 .sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
@@ -72,7 +120,6 @@ exports[`InputField component renders a field in error state 1`] = `
 }
 
 .sx47aq8 {
-  -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
@@ -106,31 +153,42 @@ exports[`InputField component renders a field in error state 1`] = `
 }
 
 <div>
-  <div
-    class="sx03kze sx03kze-6obnf"
+  <form
+    aria-label="form"
+    class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-re4mk"
+      class="sx03kze"
     >
-      <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md"
-        for="INPUT FIELD"
+      <div
+        class="sx2cs53 sx2cs53-re4mk"
       >
-        INPUT FIELD
-      </label>
+        <label
+          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          for="INPUT FIELD"
+        >
+          INPUT FIELD
+        </label>
+      </div>
+      <input
+        class="sx47aq8 sx47aq8hpnso--state-error"
+        id="INPUT FIELD"
+        name="INPUT FIELD"
+        type="text"
+      />
+      <p
+        class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+      >
+        This field is required
+      </p>
     </div>
-    <input
-      class="sx47aq8 sx47aq8hpnso--state-error"
-      id="INPUT FIELD"
-      name="INPUT FIELD"
-      type="text"
-    />
-    <p
-      class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+    <button
+      class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
+      type="submit"
     >
-      This field is required
-    </p>
-  </div>
+      Submit
+    </button>
+  </form>
 </div>
 `;
 
@@ -177,7 +235,6 @@ exports[`InputField component renders a field with a number input 1`] = `
 }
 
 .sx47aq8 {
-  -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
@@ -207,29 +264,34 @@ exports[`InputField component renders a field with a number input 1`] = `
 }
 
 <div>
-  <div
-    class="sx03kze sx03kze-6obnf"
+  <form
+    aria-label="form"
+    class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-re4mk"
+      class="sx03kze sx03kze-6obnf"
     >
-      <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md"
-        for="INPUT FIELD"
+      <div
+        class="sx2cs53 sx2cs53-re4mk"
       >
-        INPUT FIELD
-      </label>
+        <label
+          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          for="INPUT FIELD"
+        >
+          INPUT FIELD
+        </label>
+      </div>
+      <input
+        class="sx47aq8"
+        id="INPUT FIELD"
+        inputmode="numeric"
+        name="INPUT FIELD"
+        pattern="[0-9]*"
+        placeholder="001"
+        type="text"
+      />
     </div>
-    <input
-      class="sx47aq8"
-      id="INPUT FIELD"
-      inputmode="numeric"
-      name="INPUT FIELD"
-      pattern="[0-9]*"
-      placeholder="001"
-      type="text"
-    />
-  </div>
+  </form>
 </div>
 `;
 
@@ -276,7 +338,6 @@ exports[`InputField component renders a field with a text input 1`] = `
 }
 
 .sx47aq8 {
-  -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--colors-tonal500);
   border-radius: var(--radii-0);
@@ -306,26 +367,31 @@ exports[`InputField component renders a field with a text input 1`] = `
 }
 
 <div>
-  <div
-    class="sx03kze sx03kze-6obnf"
+  <form
+    aria-label="form"
+    class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-re4mk"
+      class="sx03kze sx03kze-6obnf"
     >
-      <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md"
-        for="INPUT FIELD"
+      <div
+        class="sx2cs53 sx2cs53-re4mk"
       >
-        INPUT FIELD
-      </label>
+        <label
+          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          for="INPUT FIELD"
+        >
+          INPUT FIELD
+        </label>
+      </div>
+      <input
+        class="sx47aq8"
+        id="INPUT FIELD"
+        name="INPUT FIELD"
+        placeholder="INPUT FIELD"
+        type="text"
+      />
     </div>
-    <input
-      class="sx47aq8"
-      id="INPUT FIELD"
-      name="INPUT FIELD"
-      placeholder="INPUT FIELD"
-      type="text"
-    />
-  </div>
+  </form>
 </div>
 `;
