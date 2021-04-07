@@ -4,7 +4,14 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Button, Form, globalCss, RadioGroupField } from '../dist'
+import {
+  Button,
+  CheckboxField,
+  Form,
+  globalCss,
+  RadioGroupField
+} from '../dist'
+import { Checkbox } from '@radix-ui/react-checkbox'
 globalCss(reset)()
 
 const App = () => {
@@ -14,6 +21,7 @@ const App = () => {
         <RadioGroupField.Item value="1" label="1" />
         <RadioGroupField.Item value="2" label="2" />
       </RadioGroupField>
+      <CheckboxField name="yes?" label="Yes?" />
       <Button type="submit">Submit</Button>
     </Form>
   )
