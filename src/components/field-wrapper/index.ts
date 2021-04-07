@@ -1,5 +1,2 @@
-export {
-  FieldWrapper,
-  InlineFieldWrapper,
-  FieldWrapperProps
-} from './FieldWrapper'
+export { FieldWrapper, FieldWrapperProps } from './FieldWrapper'
+export { InlineFieldWrapper } from './InlineFieldWrapper'
