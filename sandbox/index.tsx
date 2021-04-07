@@ -10,7 +10,7 @@ globalCss(reset)()
 const App = () => {
   return (
     <Box css={{ padding: 10 }}>
-      <Button onClick={() => toast('Wow so easy!')}>Hello</Button>
+      <Button onClick={() => toast.error('Wow so easy!')}>Hello</Button>
       <Toast />
     </Box>
   )

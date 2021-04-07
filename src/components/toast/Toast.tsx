@@ -8,7 +8,7 @@ import { keyframes, styled } from '~/stitches'
 
 import { Icon } from '../icon'
 // TODO: content is dragable why?
-// TODO: fix spacing between toasts
+// TODO: closeOnClick not working
 
 const toastSize = '44px'
 const toastOffset = '32px'
@@ -31,13 +31,7 @@ const exit = keyframes({
 })
 
 const StyledToast = styled(ToastContainer, {
-  borderRadius: '$0',
-  boxShadow: '$1',
-  color: 'white',
-  mb: '$2',
   position: 'fixed',
-  px: '$2',
-  py: '$3',
   zIndex: '10000 !important',
   '@sm': {
     left: '50%',
@@ -51,6 +45,9 @@ const StyledToast = styled(ToastContainer, {
   },
   '.Toastify__toast': {
     alignItems: 'center',
+    borderRadius: '$0',
+    boxShadow: '$1',
+    color: 'white',
     cursor: 'pointer',
     display: 'flex',
     fontFamily: '$sans',
@@ -58,6 +55,8 @@ const StyledToast = styled(ToastContainer, {
     justifyContent: 'space-between',
     mb: '$2',
     minHeight: 60,
+    px: '$2',
+    py: '$3',
     position: 'relative',
     overflow: 'hidden',
     width: '100%',
@@ -81,6 +80,18 @@ const StyledToast = styled(ToastContainer, {
     opacity: 0.7,
     zIndex: 9999
   },
+  '.Toastify__toast--default': {
+    bg: '$primary500'
+  },
+  '.Toastify__toast--success': {
+    bg: '$success'
+  },
+  '.Toastify__toast--warning': {
+    bg: '$warning'
+  },
+  '.Toastify__toast--error': {
+    bg: '$danger'
+  },
   '.Toastify__progress-bar--animated': {
     animation: `${progress} linear 1 forwards`
   },
@@ -89,22 +100,6 @@ const StyledToast = styled(ToastContainer, {
   },
   '.exit': {
     animation: exit
-  },
-  variants: {
-    theme: {
-      primary: {
-        bg: '$primary500'
-      },
-      success: {
-        bg: '$success'
-      },
-      warning: {
-        bg: '$warning'
-      },
-      danger: {
-        bg: '$danger'
-      }
-    }
   }
 })
 
@@ -134,22 +129,19 @@ const CloseButton = ({ closeToast }) => (
   />
 )
 
-type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast> & {
-  theme?: 'primary' | 'success' | 'warning' | 'danger'
-}
+type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast>
 
-export const Toast: React.FC<ToastProps> = ({ theme = 'primary', ...rest }) => {
+export const Toast: React.FC<ToastProps> = (props) => {
   return (
     <StyledToast
       position="top-center"
       // autoClose={5000}
       autoClose={false}
       pauseOnFocusLoss={false}
-      theme={theme}
       transition={Zoom}
       closeButton={CloseButton}
       closeOnClick
-      {...rest}
+      {...props}
     />
   )
 }
