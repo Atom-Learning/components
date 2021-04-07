@@ -9,6 +9,7 @@ import { ValidationError } from '~/components/validation-error'
 import { CSS } from '~/stitches'
 
 import { RadioField } from './RadioField'
+
 type RadioGroupFieldProps = {
   css?: CSS
   defaultValue: string
