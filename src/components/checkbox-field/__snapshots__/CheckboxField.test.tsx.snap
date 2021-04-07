@@ -5,14 +5,6 @@ exports[`CheckboxField component renders 1`] = `
   margin-right: var(--space-2);
 }
 
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-08xiu {
-  align-items: center;
-}
-
 .sx1i2hs {
   -webkit-appearance: none;
   appearance: none;
@@ -78,6 +70,11 @@ exports[`CheckboxField component renders 1`] = `
   display: table;
 }
 
+.sxdiu5c-ju7t4 {
+  display: flex;
+  align-items: center;
+}
+
 <div>
   <form
     aria-label="form"
@@ -86,8 +83,8 @@ exports[`CheckboxField component renders 1`] = `
     <div
       class="sx03kze"
     >
-      <div
-        class="sx2cs53 sx2cs53-08xiu"
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
       >
         <div
           class="sx03kze sx03kze-385xm"
@@ -102,19 +99,13 @@ exports[`CheckboxField component renders 1`] = `
             aria-checked="false"
             class="sx1i2hs"
             data-state="unchecked"
-            id="example"
             role="checkbox"
             type="button"
             value="false"
           />
         </div>
-        <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
-          for="example"
-        >
-          Example
-        </label>
-      </div>
+        Example
+      </label>
     </div>
   </form>
 </div>

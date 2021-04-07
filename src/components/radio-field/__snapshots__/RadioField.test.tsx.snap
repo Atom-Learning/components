@@ -5,14 +5,6 @@ exports[`RadioField component renders 1`] = `
   margin-right: var(--space-2);
 }
 
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-08xiu {
-  align-items: center;
-}
-
 .sxdiu5c {
   color: var(--colors-secondary300);
   display: block;
@@ -40,6 +32,11 @@ exports[`RadioField component renders 1`] = `
 
 .sxdiu5c-e1sda {
   margin-bottom: var(--space-3);
+}
+
+.sxdiu5c-ju7t4 {
+  display: flex;
+  align-items: center;
 }
 
 .sxjdf4a {
@@ -100,8 +97,8 @@ exports[`RadioField component renders 1`] = `
         <div
           class="sx03kze"
         >
-          <div
-            class="sx2cs53 sx2cs53-08xiu"
+          <label
+            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
           >
             <div
               class="sx03kze sx03kze-385xm"
@@ -117,7 +114,6 @@ exports[`RadioField component renders 1`] = `
                 class="sxjdf4a"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="checked"
-                id="1"
                 role="radio"
                 tabindex="0"
                 type="button"
@@ -129,19 +125,14 @@ exports[`RadioField component renders 1`] = `
                 />
               </button>
             </div>
-            <label
-              class="sxdiu5c sxdiu5cjqqvr--size-md"
-              for="1"
-            >
-              1
-            </label>
-          </div>
+            1
+          </label>
         </div>
         <div
           class="sx03kze"
         >
-          <div
-            class="sx2cs53 sx2cs53-08xiu"
+          <label
+            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
           >
             <div
               class="sx03kze sx03kze-385xm"
@@ -156,20 +147,14 @@ exports[`RadioField component renders 1`] = `
                 class="sxjdf4a"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="unchecked"
-                id="2"
                 role="radio"
                 tabindex="-1"
                 type="button"
                 value="2"
               />
             </div>
-            <label
-              class="sxdiu5c sxdiu5cjqqvr--size-md"
-              for="2"
-            >
-              2
-            </label>
-          </div>
+            2
+          </label>
         </div>
       </div>
     </fieldset>

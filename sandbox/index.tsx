@@ -4,20 +4,17 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Form, globalCss, SelectField } from '../dist'
+import { Button, Form, globalCss, RadioGroupField } from '../dist'
 globalCss(reset)()
 
 const App = () => {
   return (
     <Form onSubmit={console.log} css={{ mx: 'auto', width: '500px', p: '$2' }}>
-      <SelectField
-        label="Favourite color"
-        name="color"
-        options={[
-          { value: 1, label: 'papayawhip' },
-          { value: 2, label: 'aliceblue' }
-        ]}
-      />
+      <RadioGroupField name="option" label="Options" defaultValue={'1'}>
+        <RadioGroupField.Item value="1" label="1" />
+        <RadioGroupField.Item value="2" label="2" />
+      </RadioGroupField>
+      <Button type="submit">Submit</Button>
     </Form>
   )
 }

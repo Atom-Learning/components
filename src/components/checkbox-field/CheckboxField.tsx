@@ -27,7 +27,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   const error = errors[name]
 
   return (
-    <InlineFieldWrapper label={label} fieldId={name} css={css} error={error}>
+    <InlineFieldWrapper label={label} css={css} error={error}>
       <Controller
         onChange={() => setIsChecked((current) => !current)}
         control={control}
@@ -36,7 +36,6 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
         rules={validation}
         render={({ onChange, value, name: innerName }) => (
           <Checkbox
-            id={name}
             name={innerName}
             onCheckedChange={() => {
               setIsChecked((current) => {
