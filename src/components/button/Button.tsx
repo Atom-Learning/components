@@ -166,7 +166,7 @@ const StyledButton = styled('button', {
 })
 
 type ButtonProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledButton>,
+  React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
     as?: React.ComponentType | React.ElementType
     children: React.ReactNodeArray
@@ -176,88 +176,78 @@ type ButtonProps = Override<
   }
 >
 
-export const Button: React.FC<ButtonProps> = ({
-  isLoading,
-  children,
-  onClick,
-  appearance = 'solid',
-  theme = 'primary',
-  to,
-  type = 'button',
-  ...rest
-}) => {
-  // Note: button is not disabled when loading for accessibility purposes.
-  // Instead the clickAction is not fired and the button looks faded
-  const handleClick = (callback) => {
-    if (isLoading) {
-      return
-    }
-    callback()
-  }
-
-  const getChildren = () => {
-    return React.Children.map(children, (child: any, i) => {
-      if (children.length === undefined) {
+export const Button: React.FC<ButtonProps> = React.forwardRef(
+  (
+    {
+      children,
+      isLoading,
+      onClick,
+      to,
+      appearance = 'solid',
+      theme = 'primary',
+      type = 'button',
+      ...rest
+    },
+    ref
+  ) => {
+    const getChildren = () => {
+      return React.Children.map(children, (child: any, i) => {
+        if (children.length === undefined) {
+          return child
+        }
+        if (child?.type?.name === 'Icon') {
+          return React.cloneElement(child, {
+            css: { [i === 0 ? 'mr' : 'ml']: '$3' }
+          })
+        }
         return child
-      }
+      })
+    }
 
-      if (child?.type?.name === 'Icon') {
-        return React.cloneElement(child, {
-          css: { [i === 0 ? 'mr' : 'ml']: '$3' }
-        })
-      }
+    const optionalLinkProps = to ? { as: 'a', href: to } : {}
 
-      return child
-    })
+    // Note: button is not disabled when loading for accessibility purposes.
+    // Instead the clickAction is not fired and the button looks faded
+    return (
+      <StyledButton
+        theme={theme}
+        appearance={appearance}
+        isLoading={isLoading || false}
+        onClick={isLoading ? undefined : onClick}
+        type={type}
+        {...optionalLinkProps}
+        {...rest}
+        ref={ref}
+      >
+        {typeof isLoading === 'boolean' ? (
+          <>
+            <Loader
+              css={{
+                opacity: isLoading ? 1 : 0,
+                position: 'absolute',
+                transition: 'opacity 150ms ease-out'
+              }}
+            />
+            <Box
+              as="span"
+              css={
+                isLoading
+                  ? {
+                      opacity: 0,
+                      transition: 'opacity 150ms ease-out'
+                    }
+                  : {}
+              }
+            >
+              {getChildren()}
+            </Box>
+          </>
+        ) : (
+          getChildren()
+        )}
+      </StyledButton>
+    )
   }
-
-  children = getChildren()
-
-  const optionalLinkProps = to
-    ? {
-        as: 'a',
-        href: to
-      }
-    : {}
-
-  return (
-    <StyledButton
-      theme={theme}
-      appearance={appearance}
-      isLoading={isLoading || false}
-      onClick={onClick ? () => handleClick(onClick) : undefined}
-      type={type}
-      {...optionalLinkProps}
-      {...rest}
-    >
-      {typeof isLoading === 'boolean' ? (
-        <>
-          <Loader
-            css={{
-              opacity: isLoading ? 1 : 0,
-              position: 'absolute',
-              transition: 'opacity 150ms ease-out'
-            }}
-          />
-          <Box
-            as="span"
-            css={
-              isLoading
-                ? {
-                    opacity: 0,
-                    transition: 'opacity 150ms ease-out'
-                  }
-                : {}
-            }
-          >
-            {children}
-          </Box>
-        </>
-      ) : (
-        children
-      )}
-    </StyledButton>
-  )
-}
+)
 
 Button.displayName = 'Button'
