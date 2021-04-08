@@ -2,21 +2,25 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Toast } from '.'
+import { Toast, toast } from '.'
 
-describe.skip('Toast component', () => {
-  it('renders', async () => {
-    const message = 'This is an info message'
+describe('Toast component', () => {
+  it.skip('renders', async () => {
+    const message = 'Message'
     const { container } = render(<Toast />)
 
-    expect(await screen.findByText(message)).not.toBeInTheDocument()
+    expect(await screen.findByText(message)).not.toBeVisible()
+    toast(message)
+
+    expect(await screen.getByText(message)).toBeVisible()
 
     // expect(container).toMatchSnapshot()
   })
 
-  it('has no programmatically detectable a11y issues', async () => {
+  it.skip('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<Toast />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
+  it.todo('closes the toast when closebutton is clicked')
 })

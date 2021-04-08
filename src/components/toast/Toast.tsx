@@ -1,14 +1,11 @@
 import 'react-toastify/dist/ReactToastify.css'
 
-import { Close as CloseIcon } from '@atom-learning/icons'
 import * as React from 'react'
 import { cssTransition, ToastContainer } from 'react-toastify'
 
 import { keyframes, styled } from '~/stitches'
 
-import { Icon } from '../icon'
 // TODO: content is dragable why?
-// TODO: closeOnClick not working
 
 const toastSize = '44px'
 const toastOffset = '32px'
@@ -95,6 +92,23 @@ const StyledToast = styled(ToastContainer, {
   '.Toastify__progress-bar--animated': {
     animation: `${progress} linear 1 forwards`
   },
+  '.Toastify__close-button': {
+    background: 'unset',
+    border: 'unset',
+    color: 'inherit',
+    cursor: 'pointer',
+    display: 'flex',
+    height: toastSize,
+    padding: 'unset',
+    right: 0,
+    top: 0,
+    outline: 'unset',
+    '& > svg': {
+      fill: 'currentColor',
+      margin: 'auto',
+      width: 14
+    }
+  },
   '.enter': {
     animation: enter
   },
@@ -109,39 +123,17 @@ const Zoom = cssTransition({
   collapseDuration: 200
 })
 
-const CloseButton = ({ closeToast }) => (
-  <Icon
-    css={{
-      display: 'flex',
-      padding: 'unset',
-      right: 0,
-      top: 0,
-      '& > svg': {
-        fill: 'currentColor',
-        margin: 'auto'
-      }
-    }}
-    is={CloseIcon}
-    onClick={() => {
-      alert(1)
-      closeToast
-    }}
-    // onClick={closeToast}
-  />
-)
-
 type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast>
 
 export const Toast: React.FC<ToastProps> = (props) => {
   return (
     <StyledToast
+      role="alert"
       position="top-center"
       // autoClose={5000}
       autoClose={false}
       pauseOnFocusLoss={false}
       transition={Zoom}
-      closeButton={CloseButton}
-      // closeOnClick
       {...props}
     />
   )
