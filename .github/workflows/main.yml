@@ -40,14 +40,8 @@ jobs:
           node-version: '14'
       - run: yarn install
 
-      - name: Test
-        run: yarn test
-
-      - name: Validate
-        run: yarn validate
-
-      - name: Publish
-        uses: mikeal/merge-release@v4.0.7
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2.5.0
         env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
