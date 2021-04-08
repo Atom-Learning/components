@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component renders a disabled radio button 1`] = `
-.sxr2ug3 {
+.sxjdf4a {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -10,6 +10,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
   border-color: var(--colors-secondary300);
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
   height: 20px;
   width: 20px;
   display: inline-flex;
@@ -18,15 +19,15 @@ exports[`Radio component renders a disabled radio button 1`] = `
   vertical-align: middle;
 }
 
-.sxr2ug3:focus {
+.sxjdf4a:focus {
   outline: none;
 }
 
-:checked + .sxr2ug3 {
+:checked + .sxjdf4a {
   background-color: var(--colors-secondary300);
 }
 
-[disabled] + .sxr2ug3 {
+[disabled] + .sxjdf4a {
   background-color: var(--colors-tonal600);
   border: 2px solid var(--colors-tonal600);
 }
@@ -52,7 +53,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="sxr2ug3"
+      class="sxjdf4a"
       data-disabled=""
       data-state="unchecked"
       disabled=""
@@ -66,7 +67,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
 `;
 
 exports[`Radio component renders a radio button 1`] = `
-.sxr2ug3 {
+.sxjdf4a {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -75,6 +76,7 @@ exports[`Radio component renders a radio button 1`] = `
   border-color: var(--colors-secondary300);
   border-width: 2px;
   border-style: solid;
+  cursor: pointer;
   height: 20px;
   width: 20px;
   display: inline-flex;
@@ -83,15 +85,15 @@ exports[`Radio component renders a radio button 1`] = `
   vertical-align: middle;
 }
 
-.sxr2ug3:focus {
+.sxjdf4a:focus {
   outline: none;
 }
 
-:checked + .sxr2ug3 {
+:checked + .sxjdf4a {
   background-color: var(--colors-secondary300);
 }
 
-[disabled] + .sxr2ug3 {
+[disabled] + .sxjdf4a {
   background-color: var(--colors-tonal600);
   border: 2px solid var(--colors-tonal600);
 }
@@ -116,7 +118,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="sxr2ug3"
+      class="sxjdf4a"
       data-radix-roving-focus-group-id="radix-id-0-1"
       data-state="unchecked"
       role="radio"

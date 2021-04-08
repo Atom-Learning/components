@@ -1,18 +1,22 @@
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Button, Form } from '../'
 import { InputField } from '.'
 
 describe(`InputField component`, () => {
   it('renders a field with a text input', async () => {
     const { container } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT FIELD"
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          css={{ m: 'auto', height: 100, width: 100 }}
+          placeholder="INPUT FIELD"
+        />
+      </Form>
     )
 
     await screen.getByPlaceholderText('INPUT FIELD')
@@ -22,11 +26,13 @@ describe(`InputField component`, () => {
 
   it('renders a field with a text input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        placeholder="INPUT FIELD"
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          placeholder="INPUT FIELD"
+        />
+      </Form>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -34,13 +40,15 @@ describe(`InputField component`, () => {
 
   it('renders a field with a number input', async () => {
     const { container, findByPlaceholderText } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
-        type="number"
-        placeholder="001"
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          css={{ m: 'auto', height: 100, width: 100 }}
+          type="number"
+          placeholder="001"
+        />
+      </Form>
     )
 
     const input = await findByPlaceholderText('001')
@@ -52,12 +60,14 @@ describe(`InputField component`, () => {
 
   it('renders a field with a number input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        type="number"
-        placeholder="001"
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          type="number"
+          placeholder="001"
+        />
+      </Form>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -65,13 +75,15 @@ describe(`InputField component`, () => {
 
   it('renders a field with a disabled input', async () => {
     const { findByPlaceholderText } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        css={{ m: 'auto', height: 100, width: 100 }}
-        placeholder="INPUT FIELD"
-        disabled
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          css={{ m: 'auto', height: 100, width: 100 }}
+          placeholder="INPUT FIELD"
+          disabled
+        />
+      </Form>
     )
 
     const input = await findByPlaceholderText('INPUT FIELD')
@@ -81,12 +93,14 @@ describe(`InputField component`, () => {
 
   it('renders a field with a disabled input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        placeholder="INPUT FIELD"
-        disabled
-      />
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          placeholder="INPUT FIELD"
+          disabled
+        />
+      </Form>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -95,16 +109,18 @@ describe(`InputField component`, () => {
   it('renders a field in error state', async () => {
     const errorText = 'This field is required'
 
-    const { container, getByText } = render(
-      <InputField
-        label="INPUT FIELD"
-        name="INPUT FIELD"
-        error={errorText}
-        css={{ m: 'auto', height: 100, width: 100 }}
-      />
+    const { container, findByText, getByRole } = render(
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          validation={{ required: errorText }}
+        />
+        <button type="submit">Submit</button>
+      </Form>
     )
-
-    await getByText(errorText)
+    userEvent.click(getByRole('button'))
+    await findByText(errorText)
 
     expect(container).toMatchSnapshot()
   })
@@ -112,9 +128,19 @@ describe(`InputField component`, () => {
   it('renders a field in error state - has no programmatically detectable a11y issues', async () => {
     const errorText = 'This field is required'
 
-    const { container } = render(
-      <InputField label="INPUT FIELD" name="INPUT FIELD" error={errorText} />
+    const { container, findByText, getByRole } = render(
+      <Form>
+        <InputField
+          label="INPUT FIELD"
+          name="INPUT FIELD"
+          validation={{ required: errorText }}
+        />
+        <button type="submit">Submit</button>
+      </Form>
     )
+
+    userEvent.click(getByRole('button'))
+    await findByText(errorText)
 
     expect(await axe(container)).toHaveNoViolations()
   })
