@@ -17,54 +17,6 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--space-2);
 }
 
-.sxegjw0 {
-  all: unset;
-  border-radius: var(--radii-0);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--fonts-sans);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.4;
-  transition: all 125ms ease-out;
-  text-decoration: none;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxegjw0[disabled] {
-  opacity: 0.35;
-  cursor: not-allowed;
-}
-
-.sxegjw0fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-}
-
-.sxegjw0xyrog--c2 {
-  background-color: var(--colors-primary500);
-  color: white;
-}
-
-.sxegjw0xyrog--c2:not([disabled]):hover,
-.sxegjw0xyrog--c2:not([disabled]):focus {
-  background-color: var(--colors-primary900);
-}
-
-.sxegjw0xyrog--c2:active {
-  background-color: var(--colors-primary500);
-}
-
-.sxegjw0xyrog--c2[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
-}
-
 .sxfey5o {
   color: var(--colors-tonal900);
   font-family: var(--fonts-sans);
@@ -183,7 +135,6 @@ exports[`InputField component renders a field in error state 1`] = `
       </p>
     </div>
     <button
-      class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0xyrog--c2"
       type="submit"
     >
       Submit

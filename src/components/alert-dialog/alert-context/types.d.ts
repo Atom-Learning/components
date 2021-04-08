@@ -5,6 +5,6 @@ export type alert = {
   title: string
   description?: string
   onAction: (result: boolean) => void
-  confirmActionText?: string
-  cancelActionText?: string
+  confirmActionText: string
+  cancelActionText: string
 }

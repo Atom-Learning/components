@@ -14,7 +14,7 @@ export const reducer = (state: State, action: Action): alert[] => {
     case 'ADD':
       return [...state, { ...action.payload, id: uid() }]
     case 'REMOVE':
-      return state.filter((t) => t.id !== action.payload)
+      return state.filter(({ id }) => id !== action.payload)
     default:
       return state
   }

@@ -16,6 +16,8 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
           id: '1',
           title: 'TITLE',
           description: 'DESCRIPTION',
+          cancelActionText: 'CANCEL',
+          confirmActionText: 'CONFIRM',
           onAction
         })
         if (showSecondAlert) {
@@ -23,6 +25,8 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
             id: '2',
             title: 'TITLE 2',
             description: 'DESCRIPTION 2',
+            cancelActionText: 'CANCEL',
+            confirmActionText: 'CONFIRM',
             onAction
           })
         }
@@ -65,7 +69,7 @@ describe('Alert context', () => {
 
     fireEvent.click(trigger)
 
-    fireEvent.click(await screen.findByText('Confirm'))
+    fireEvent.click(await screen.findByText('CONFIRM'))
 
     expect(onActionMock).toHaveBeenCalledWith(true)
   })
@@ -104,7 +108,7 @@ describe('Alert context', () => {
     expect(await screen.queryByText('TITLE')).toBeInTheDocument()
     expect(await screen.queryByText('TITLE 2')).not.toBeInTheDocument()
 
-    const cancelButton = await screen.getByText('Cancel')
+    const cancelButton = screen.getByText('CANCEL')
     await fireEvent.click(cancelButton)
 
     expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()

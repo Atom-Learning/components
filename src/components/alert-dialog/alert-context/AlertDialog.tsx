@@ -9,8 +9,10 @@ import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
 import { alert } from './types'
 
-type AlertDialogContentProps = alert &
-  React.ComponentProps<typeof AlertDialog> & { css?: CSS; onClose: () => void }
+type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
+  css?: CSS
+  onClose: () => void
+} & alert
 
 export const Alert: React.FC<AlertDialogContentProps> = ({
   title,
@@ -44,7 +46,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           as={AlertDialog.Cancel}
           onClick={() => onAction(false)}
         >
-          {cancelActionText || 'Cancel'}
+          {cancelActionText}
         </Button>
         <Button
           size="sm"
@@ -52,7 +54,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           as={AlertDialog.Action}
           onClick={() => onAction(true)}
         >
-          {confirmActionText || 'Confirm'}
+          {confirmActionText}
         </Button>
       </Stack>
     </AlertDialog.Content>
