@@ -123,6 +123,9 @@ describe(`Box component`, () => {
 })
 ```
 
+## Commit messages
+We lint our commit messages with [commitlint](https://github.com/conventional-changelog/commitlint). You must include the string `BREAKING CHANGE` in any commits that introduce breaking changes in order for our automated publishling pipeline to correctly increment the major version number.
+
 ## Raising a PR
 
 In the PR, include:
