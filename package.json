@@ -19,8 +19,8 @@
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
-    "test": "jest",
-    "test:watch": "yarn test -- --watch",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
@@ -107,6 +107,7 @@
     "react": "^16.8.0"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^0.0.15",
     "@radix-ui/react-checkbox": "0.0.13",
     "@radix-ui/react-dialog": "^0.0.15",
     "@radix-ui/react-popover": "^0.0.15",
@@ -120,7 +121,8 @@
     "colorsys": "^1.0.22",
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
-    "react-player": "^2.9.0"
+    "react-player": "^2.9.0",
+    "uid": "^2.0.0"
   },
   "husky": {
     "hooks": {

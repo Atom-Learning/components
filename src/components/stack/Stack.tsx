@@ -1,8 +1,8 @@
 import theme from '@atom-learning/theme'
-import { StitchesVariants } from '@stitches/core'
 import * as React from 'react'
 
 import { CSS, styled } from '~/stitches'
+import { CSSWrapper } from '~/utilities/css-wrapper'
 
 const gap = Object.keys(theme.space).reduce(
   (acc, key) => ({
@@ -51,7 +51,12 @@ type StackProps = React.ComponentProps<typeof StyledStack> & {
 export const Stack: React.FC<StackProps> = ({
   gap = 2,
   direction = 'row',
+  css,
   ...remainingProps
-}) => <StyledStack gap={gap} direction={direction} {...remainingProps} />
+}) => (
+  <CSSWrapper css={{ width: 'max-content', ...(css as any) }}>
+    <StyledStack gap={gap} direction={direction} {...remainingProps} />
+  </CSSWrapper>
+)
 
 Stack.displayName = 'Stack'

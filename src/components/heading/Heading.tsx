@@ -3,7 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
-const StyledHeading = styled('h1', {
+const StyledHeading = styled('h2', {
   color: '$tonal-900',
   fontFamily: '$sans',
   fontWeight: 700,
@@ -37,15 +37,22 @@ const StyledHeading = styled('h1', {
 type HeadingProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
-    as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+    as?:
+      | 'h1'
+      | 'h2'
+      | 'h3'
+      | 'h4'
+      | 'h5'
+      | 'h6'
+      | React.ComponentType
+      | React.ElementType
     size?: 'xs' | 'sm' | 'md' | 'lg'
   }
 >
 
 export const Heading: React.FC<HeadingProps> = ({
-  as = 'h2',
   size = 'md',
   ...remainingProps
-}) => <StyledHeading as={as} size={size} {...remainingProps} />
+}) => <StyledHeading size={size} {...remainingProps} />
 
 Heading.displayName = 'Heading'
