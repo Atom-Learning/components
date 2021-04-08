@@ -5,6 +5,7 @@ import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
 import { Box, Button, globalCss, Toast, toast } from '../dist'
+
 globalCss(reset)()
 
 const App = () => {

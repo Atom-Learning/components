@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { IdProvider } from '@radix-ui/react-id'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -7,116 +8,50 @@ import { Popover } from '.'
 describe(`Popover component`, () => {
   it('renders the trigger with the popover hidden by default', async () => {
     const { container } = render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
+      <IdProvider>
+        <Popover>
+          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Content>CONTENT</Popover.Content>
+        </Popover>
+      </IdProvider>
     )
 
-    expect(await screen.getByText('Click me')).toBeInTheDocument()
-    expect(screen.queryByRole('tooltip')).not.toBeInTheDocument()
-    expect(screen.getByRole('button', { expanded: false })).toBeInTheDocument()
+    expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
 
     expect(container).toMatchSnapshot()
-  })
-
-  it('renders the trigger with the popover hidden by default - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
-    )
-
-    expect(await axe(container)).toHaveNoViolations()
   })
 
   it('opens the popover once trigger is clicked', async () => {
-    const { container } = render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
-    )
-    const button = screen.getByRole('button', { name: /Click me/ })
-
-    button.focus()
-    fireEvent.click(button)
-
-    expect(screen.getByText('Content')).toBeInTheDocument()
-    expect(screen.getByRole('tooltip')).toHaveAttribute('aria-hidden', 'false')
-    expect(screen.getByRole('button', { expanded: true })).toBeInTheDocument()
-    expect(container).toMatchSnapshot()
-  })
-
-  it('opens the popover once trigger is clicked - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
-    )
-    const button = screen.getByRole('button', { name: /Click me/ })
-
-    button.focus()
-    fireEvent.click(button)
-
-    expect(await axe(container)).toHaveNoViolations()
-  })
-
-  it('opens popover using the space key', async () => {
     render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
+      <IdProvider>
+        <Popover>
+          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Content>CONTENT</Popover.Content>
+        </Popover>
+      </IdProvider>
     )
 
-    fireEvent.keyPress(screen.getByText(/click me/i), {
-      key: 'Space',
-      code: ' '
-    })
+    const trigger = screen.getByText('TRIGGER')
 
-    expect(screen.getByText('Content')).toBeInTheDocument()
+    expect(await trigger).toBeInTheDocument()
+    expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
+
+    trigger.focus()
+    fireEvent.click(trigger)
+
+    expect(await screen.queryByText('CONTENT')).toBeInTheDocument()
   })
 
-  it("doesn't open popover using the keypress with random key press", async () => {
-    render(
-      <Popover id="123" aria-label="Popover" content="Content">
-        <button>Click me</button>
-      </Popover>
-    )
-
-    fireEvent.keyPress(screen.getByText(/click me/i), {
-      key: 'A',
-      code: 'A'
-    })
-
-    expect(screen.getByText('Content')).toBeInTheDocument()
-  })
-
-  it('renders as visible with left variant', async () => {
+  it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Popover
-        id="123"
-        defaultOpen
-        align="left"
-        aria-label="Some text"
-        content="Hello"
-      />
+      <IdProvider>
+        <Popover defaultOpen>
+          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Content>CONTENT</Popover.Content>
+        </Popover>
+      </IdProvider>
     )
 
-    await screen.getByRole('tooltip')
-
-    expect(container).toMatchSnapshot()
-  })
-
-  it('renders as visible with left variant - has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Popover
-        id="123"
-        defaultOpen
-        align="left"
-        aria-label="Some text"
-        content="Hello"
-      />
-    )
-
-    expect(await axe(container)).toHaveNoViolations()
+    expect(await waitFor(() => axe(container))).toHaveNoViolations()
   })
 })
