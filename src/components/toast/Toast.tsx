@@ -126,6 +126,7 @@ const CloseButton = ({ closeToast }) => (
       alert(1)
       closeToast
     }}
+    // onClick={closeToast}
   />
 )
 
@@ -140,7 +141,7 @@ export const Toast: React.FC<ToastProps> = (props) => {
       pauseOnFocusLoss={false}
       transition={Zoom}
       closeButton={CloseButton}
-      closeOnClick
+      // closeOnClick
       {...props}
     />
   )
