@@ -137,5 +137,11 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ]
   }
 }
