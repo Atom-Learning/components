@@ -36,6 +36,8 @@ describe(`Tooltip component`, () => {
       </IdProvider>
     )
 
-    expect(await waitFor(() => axe(container))).toHaveNoViolations()
+    expect(
+      await waitFor(() => axe(container), { timeout: 2000 })
+    ).toHaveNoViolations()
   })
 })

@@ -38,24 +38,24 @@ exports[`Button component Loading state renders a loading button 1`] = `
   width: var(--sizes-2);
 }
 
-.sxib16r-898e9 {
-  margin-left: var(--space-3);
+.sxib16r-yd47z {
+  margin-left: var(--space-2);
 }
 
-.sx03kze-ywt1o {
+.sx03kze-e0n2q {
   opacity: 0;
-  transition: opacity 150ms ease-out;
+  transition: opacity 150ms;
 }
 
 .sx2cs53 {
   display: flex;
 }
 
-.sx2cs53-gu4h1 {
+.sx2cs53-c4y3k {
   justify-content: center;
   opacity: 1;
   position: absolute;
-  transition: opacity 150ms ease-out;
+  transition: opacity 150ms;
 }
 
 .sxe5oww {
@@ -87,114 +87,114 @@ exports[`Button component Loading state renders a loading button 1`] = `
   margin-right: 2px;
 }
 
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4ulmkcj--isRounded-true {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0lmkcj--isRounded-true {
   border-radius: var(--radii-round);
 }
 
-.sxjzq4u2jpbs--isLoading-true {
+.sxegjw02jpbs--isLoading-true {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxjzq4u08yia--c2 {
+.sxegjw008yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:not([disabled]):hover,
-.sxjzq4u08yia--c2:not([disabled]):focus {
+.sxegjw008yia--c2:not([disabled]):hover,
+.sxegjw008yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:active {
+.sxegjw008yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxjzq4u08yia--c2[disabled] {
+.sxegjw008yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4u2jpbs--isLoading-true sxjzq4uxyrog--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw02jpbs--isLoading-true sxegjw0xyrog--c2"
     type="button"
   >
     <div
-      class="sx2cs53 sx2cs53-gu4h1"
+      class="sx2cs53 sx2cs53-c4y3k"
       role="alert"
     >
       <span
@@ -213,7 +213,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
       />
     </div>
     <span
-      class="sx03kze sx03kze-ywt1o"
+      class="sx03kze sx03kze-e0n2q"
     >
       BUTTON
     </span>
@@ -222,57 +222,57 @@ exports[`Button component Loading state renders a loading button 1`] = `
 `;
 
 exports[`Button component renders a button 1`] = `
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0xyrog--c2"
     type="button"
   >
     BUTTON
@@ -296,111 +296,111 @@ exports[`Button component renders a button with an icon 1`] = `
   width: var(--sizes-2);
 }
 
-.sxib16r-898e9 {
-  margin-left: var(--space-3);
+.sxib16r-yd47z {
+  margin-left: var(--space-2);
 }
 
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxjzq4u08yia--c2 {
+.sxegjw008yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:not([disabled]):hover,
-.sxjzq4u08yia--c2:not([disabled]):focus {
+.sxegjw008yia--c2:not([disabled]):hover,
+.sxegjw008yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:active {
+.sxegjw008yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxjzq4u08yia--c2[disabled] {
+.sxegjw008yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0xyrog--c2"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="sxib16r sxib16rmbqqh--size-md sxib16r-898e9"
+      class="sxib16r sxib16rmbqqh--size-md sxib16r-yd47z"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -413,79 +413,79 @@ exports[`Button component renders a button with an icon 1`] = `
 `;
 
 exports[`Button component renders a disabled button 1`] = `
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4uxyrog--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0xyrog--c2"
     disabled=""
     type="button"
   >
@@ -495,101 +495,101 @@ exports[`Button component renders a disabled button 1`] = `
 `;
 
 exports[`Button component renders a disabled secondary outline button 1`] = `
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxjzq4u08yia--c2 {
+.sxegjw008yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:not([disabled]):hover,
-.sxjzq4u08yia--c2:not([disabled]):focus {
+.sxegjw008yia--c2:not([disabled]):hover,
+.sxegjw008yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:active {
+.sxegjw008yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxjzq4u08yia--c2[disabled] {
+.sxegjw008yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-secondary sxjzq4u03kze--appearance-outline sxjzq4u08yia--c2"
+    class="sxegjw0 sxegjw003kze--theme-secondary sxegjw003kze--appearance-outline sxegjw0fz3et--size-md sxegjw008yia--c2"
     disabled=""
     type="button"
   >
@@ -599,79 +599,79 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 `;
 
 exports[`Button component renders a outline button 1`] = `
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-outline sxjzq4u8heda--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-outline sxegjw0fz3et--size-md sxegjw08heda--c2"
     type="button"
   >
     BUTTON
@@ -695,115 +695,115 @@ exports[`Button component renders a rounded button  1`] = `
   width: var(--sizes-2);
 }
 
-.sxib16r-898e9 {
-  margin-left: var(--space-3);
+.sxib16r-yd47z {
+  margin-left: var(--space-2);
 }
 
-.sxjzq4u {
-  background: unset;
-  border: none;
+.sxegjw0 {
+  all: unset;
   border-radius: var(--radii-0);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
   font-weight: 500;
-  height: var(--sizes-4);
   letter-spacing: 0.02em;
   line-height: 1.4;
   transition: all 125ms ease-out;
   text-decoration: none;
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-2);
   white-space: nowrap;
   width: max-content;
 }
 
-.sxjzq4u[disabled] {
+.sxegjw0[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sxjzq4ulmkcj--isRounded-true {
+.sxegjw0fz3et--size-md {
+  font-size: var(--fontSizes-md);
+  height: var(--sizes-4);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+.sxegjw0lmkcj--isRounded-true {
   border-radius: var(--radii-round);
 }
 
-.sxjzq4uxyrog--c2 {
+.sxegjw0xyrog--c2 {
   background-color: var(--colors-primary500);
   color: white;
 }
 
-.sxjzq4uxyrog--c2:not([disabled]):hover,
-.sxjzq4uxyrog--c2:not([disabled]):focus {
+.sxegjw0xyrog--c2:not([disabled]):hover,
+.sxegjw0xyrog--c2:not([disabled]):focus {
   background-color: var(--colors-primary900);
 }
 
-.sxjzq4uxyrog--c2:active {
+.sxegjw0xyrog--c2:active {
   background-color: var(--colors-primary500);
 }
 
-.sxjzq4uxyrog--c2[disabled] {
+.sxegjw0xyrog--c2[disabled] {
   background-color: var(--colors-tonal300);
   color: var(--colors-tonal600);
 }
 
-.sxjzq4u8heda--c2 {
+.sxegjw08heda--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-primary500);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:not([disabled]):hover,
-.sxjzq4u8heda--c2:not([disabled]):focus {
+.sxegjw08heda--c2:not([disabled]):hover,
+.sxegjw08heda--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-primary900);
   background-color: white;
 }
 
-.sxjzq4u8heda--c2:active {
+.sxegjw08heda--c2:active {
   color: var(--colors-primary500);
 }
 
-.sxjzq4u8heda--c2[disabled] {
+.sxegjw08heda--c2[disabled] {
   background-color: white;
   color: var(--colors-primary900);
 }
 
-.sxjzq4u08yia--c2 {
+.sxegjw008yia--c2 {
   box-shadow: inset 0 0 0 2px;
   color: var(--colors-secondary500);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:not([disabled]):hover,
-.sxjzq4u08yia--c2:not([disabled]):focus {
+.sxegjw008yia--c2:not([disabled]):hover,
+.sxegjw008yia--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--colors-secondary900);
   background-color: white;
 }
 
-.sxjzq4u08yia--c2:active {
+.sxegjw008yia--c2:active {
   color: var(--colors-secondary500);
 }
 
-.sxjzq4u08yia--c2[disabled] {
+.sxegjw008yia--c2[disabled] {
   background-color: white;
   color: var(--colors-secondary900);
 }
 
 <div>
   <button
-    class="sxjzq4u sxjzq4u03kze--theme-primary sxjzq4u03kze--appearance-solid sxjzq4ulmkcj--isRounded-true sxjzq4uxyrog--c2"
+    class="sxegjw0 sxegjw003kze--theme-primary sxegjw003kze--appearance-solid sxegjw0fz3et--size-md sxegjw0lmkcj--isRounded-true sxegjw0xyrog--c2"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="sxib16r sxib16rmbqqh--size-md sxib16r-898e9"
+      class="sxib16r sxib16rmbqqh--size-md sxib16r-yd47z"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

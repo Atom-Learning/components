@@ -116,7 +116,7 @@ describe(`InputField component`, () => {
           name="INPUT FIELD"
           validation={{ required: errorText }}
         />
-        <Button type="submit">Submit</Button>
+        <button type="submit">Submit</button>
       </Form>
     )
     userEvent.click(getByRole('button'))
@@ -135,7 +135,7 @@ describe(`InputField component`, () => {
           name="INPUT FIELD"
           validation={{ required: errorText }}
         />
-        <Button type="submit">Submit</Button>
+        <button type="submit">Submit</button>
       </Form>
     )
 

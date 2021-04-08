@@ -1,3 +1,4 @@
+export { AlertDialog, useAlert, AlertProvider } from './alert-dialog'
 export { Box } from './box'
 export { Button } from './button'
 export { Carousel } from './carousel'

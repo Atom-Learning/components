@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stack component renders 1`] = `
+.sx03kze-u5925 {
+  width: max-content;
+}
+
 .sxufta5 {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +32,12 @@ exports[`Stack component renders 1`] = `
 
 <div>
   <div
-    class="sxufta5 sxufta58p3zg--direction-row sxufta5sxrde--gap-2"
-  />
+    class="sx03kze sx03kze-u5925"
+    data-testid="css-wrapper"
+  >
+    <div
+      class="sxufta5 sxufta58p3zg--direction-row sxufta5sxrde--gap-2"
+    />
+  </div>
 </div>
 `;
