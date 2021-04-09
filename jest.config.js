@@ -7,7 +7,7 @@ module.exports = {
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1', // matches the path alias in tsconfig.json
     '^react$': '<rootDir>/node_modules/react',
-    '\\.(css|less|sass|scss)$': '<rootDir>/__mocks__/styleMock.js'
+    '\\.(css)$': '<rootDir>/__mocks__/styleMock.js'
   },
   transform: {
     '^.+\\.(ts|tsx)$': 'babel-jest'
