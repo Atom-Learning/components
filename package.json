@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "",
   "files": [
     "dist"
@@ -58,6 +58,8 @@
     "@rollup/plugin-typescript": "^8.2.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.1.1",
+    "@semantic-release/release-notes-generator": "^9.0.2",
     "@size-limit/preset-big-lib": "^4.10.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -139,9 +141,28 @@
     ]
   },
   "release": {
+    "branches": [
+      "main",
+      "semantic-release"
+    ],
     "plugins": [
-      "@semantic-release/changelog",
-      "@semantic-release/git"
+      "@semantic-release/commit-analyzer",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ]
+        }
+      ]
     ]
   }
 }
