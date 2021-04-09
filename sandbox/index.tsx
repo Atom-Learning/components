@@ -4,17 +4,12 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Button, globalCss, Toast, toast } from '../dist'
+import { Box, globalCss } from '../dist'
 
 globalCss(reset)()
 
 const App = () => {
-  return (
-    <Box css={{ padding: 10 }}>
-      <Button onClick={() => toast.error('Wow so easy!')}>Hello</Button>
-      <Toast />
-    </Box>
-  )
+  return <Box />
 }
 
 ReactDOM.render(<App />, document.getElementById('root'))
