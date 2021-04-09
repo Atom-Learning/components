@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "description": "",
   "files": [
     "dist"
@@ -147,13 +147,13 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
       [
         "@semantic-release/changelog",
         {
           "changelogFile": "CHANGELOG.md"
         }
       ],
-      "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
@@ -162,7 +162,8 @@
             "package.json"
           ]
         }
-      ]
+      ],
+      "@semantic-release/npm"
     ]
   }
 }
