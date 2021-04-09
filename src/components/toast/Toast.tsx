@@ -5,8 +5,6 @@ import { cssTransition, ToastContainer } from 'react-toastify'
 
 import { keyframes, styled } from '~/stitches'
 
-// TODO: content is dragable why?
-
 const toastSize = '44px'
 const toastOffset = '32px'
 const contentIn = `translate3d(0, -calc(${toastSize + toastOffset}), 0)`
@@ -128,11 +126,11 @@ type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast>
 export const Toast: React.FC<ToastProps> = (props) => {
   return (
     <StyledToast
-      role="alert"
-      position="top-center"
-      // autoClose={5000}
-      autoClose={false}
+      // autoClose={false}
+      aria-live="assertive"
+      draggable={false}
       pauseOnFocusLoss={false}
+      position="top-center"
       transition={Zoom}
       {...props}
     />
