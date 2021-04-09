@@ -64,16 +64,8 @@ const StyledToastContainer = styled(ToastContainer, {
       width: 'unset' // needed to show the close button in extremely small vp
     }
   },
-  '.Toastify__progress-bar': {
-    backgroundColor: 'hsla(0, 0%, 100%, 0.7)',
-    bottom: 0,
-    left: 0,
-    height: 5,
-    position: 'absolute',
-    width: '100%',
-    transformOrigin: 'left',
-    opacity: 0.7,
-    zIndex: 9999
+  '.Toastify__toast-body': {
+    width: '100%'
   },
   '.Toastify__toast--default': {
     bg: '$primary500'
@@ -129,6 +121,7 @@ export const ToastProvider: React.FC<ToastProps> = (props) => {
       aria-live="assertive"
       draggable={false}
       pauseOnFocusLoss={false}
+      hideProgressBar
       position="top-center"
       transition={Zoom}
       {...props}
