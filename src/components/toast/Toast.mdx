@@ -5,16 +5,16 @@ description: A toast notification that gives non-intrusive feedback to the user 
 category: Feedback
 ---
 
-`Toast` has 2 exports, the `Toast` component which is the container for all the notifications and the `toast` function that allows triggering the notification. It sets all the default behaviour, like pausing on hover and positioning and styles the different types of notification (`info` (default), `error`, `warning` and `success`).
+`Toast` has 2 exports, the `ToastProvider` component which is the container for all the notifications and the `toast` function that allows triggering the notification. It sets all the default behaviour, like pausing on hover and positioning and styles the different types of notification (`info` (default), `error`, `warning` and `success`).
 
 This is the preferred user feedback way as it is not intrusive and it simply provides some state information to the user without waiting for feedback, ie: the information was saved. When feedback is required consider using the `AlertDialog` component.
 
 As this component uses `react-toastify` please read more information about the underlying behaviour at [react-toastify](https://fkhadra.github.io/react-toastify/introduction/)
 
 ```jsx preview
-import { Toast, toast } from '@atom-learning/components'
+import { ToastProvider, toast } from '@atom-learning/components'
 
 const handleSuccess = () => toast.success('message')
 
-;<Toast />
+<ToastProvider />
 ```

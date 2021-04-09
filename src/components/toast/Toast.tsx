@@ -25,7 +25,7 @@ const exit = keyframes({
   '100%': { transform: contentIn }
 })
 
-const StyledToast = styled(ToastContainer, {
+const StyledToastContainer = styled(ToastContainer, {
   position: 'fixed',
   zIndex: '10000 !important',
   '@sm': {
@@ -121,11 +121,11 @@ const Zoom = cssTransition({
   collapseDuration: 200
 })
 
-type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast>
+type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToastContainer>
 
-export const Toast: React.FC<ToastProps> = (props) => {
+export const ToastProvider: React.FC<ToastProps> = (props) => {
   return (
-    <StyledToast
+    <StyledToastContainer
       aria-live="assertive"
       draggable={false}
       pauseOnFocusLoss={false}
@@ -136,4 +136,4 @@ export const Toast: React.FC<ToastProps> = (props) => {
   )
 }
 
-Toast.displayName = 'Toast'
+ToastProvider.displayName = 'ToastProvider'

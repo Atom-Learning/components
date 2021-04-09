@@ -1,2 +1,2 @@
-export { Toast } from './Toast'
+export { ToastProvider } from './Toast'
 export { toast } from 'react-toastify'

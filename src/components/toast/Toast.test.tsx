@@ -2,13 +2,13 @@ import { render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Toast, toast } from '.'
+import { toast, ToastProvider } from '.'
 
 describe('Toast component', () => {
   const message = 'Message'
 
   it('renders', async () => {
-    render(<Toast />)
+    render(<ToastProvider />)
 
     expect(await screen.queryByText(message)).toEqual(null)
 
@@ -18,7 +18,7 @@ describe('Toast component', () => {
   })
 
   it.skip('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<Toast />)
+    const { container } = render(<ToastProvider />)
 
     toast(message)
 
