@@ -127,7 +127,7 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
+      "pre-commit": "bash scripts/prevent-commit.sh && lint-staged"
     }
   },
   "commitlint": {
