@@ -2,7 +2,7 @@
 title: Radio Field
 component: RadioField
 description: Combines a RadioButton with a Label and ValidationError
-category: Forms
+category: Form fields
 ---
 
 `RadioGroupField` wraps a `RadioGroup` to provide a legend and a `ValidationError`. `RadioGroupField.Item` renders an individual `Radio` with an inline `Label`.
@@ -10,8 +10,10 @@ category: Forms
 **Note**: a `RadioGroupField.Item`'s `value` **must** be a `string`.
 
 ```jsx preview
-<RadioGroupField name="options">
-  <RadioGroupField.Item label="Option 1" value="1" />
-  <RadioGroupField.Item label="Option 2" value="2" />
-</RadioGroupField>
+<Form>
+  <RadioGroupField label="Select one of the following options" name="options">
+    <RadioGroupField.Item label="Option 1" value="1" />
+    <RadioGroupField.Item label="Option 2" value="2" />
+  </RadioGroupField>
+</Form>
 ```

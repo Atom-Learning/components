@@ -14,7 +14,7 @@ const StyledRadioButton = styled(RadioGroup.Item, {
   borderStyle: 'solid',
   cursor: 'pointer',
   size: '20px',
-  display: 'inline-flex',
+  display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   verticalAlign: 'middle',

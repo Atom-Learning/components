@@ -65,10 +65,9 @@ type TextProps = Override<
   }
 >
 
-export const Text: React.FC<TextProps> = React.forwardRef(
-  ({ size = 'md', ...remainingProps }, ref) => (
-    <StyledParagraph size={size} {...remainingProps} ref={ref} />
-  )
-)
+export const Text: React.FC<TextProps> = React.forwardRef(({ // as = 'p',
+  size = 'md', ...remainingProps }, ref) => (
+  <StyledParagraph size={size} {...remainingProps} ref={ref} />
+))
 
 Text.displayName = 'Text'

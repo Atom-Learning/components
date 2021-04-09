@@ -51,6 +51,7 @@ type HeadingProps = Override<
 >
 
 export const Heading: React.FC<HeadingProps> = ({
+  // as = 'h2',
   size = 'md',
   ...remainingProps
 }) => <StyledHeading size={size} {...remainingProps} />

@@ -8,6 +8,7 @@
   "files": [
     "dist"
   ],
+  "type": "module",
   "sideEffects": false,
   "scripts": {
     "dev": "NODE_ENV=development rollup -c -w",
@@ -90,7 +91,7 @@
     "prettier": "^2.2.1",
     "prompts": "^2.4.0",
     "react": "17.0.1",
-    "react-docgen-typescript": "^1.21.0",
+    "react-docgen-typescript": "^1.22.0",
     "react-dom": "^17.0.1",
     "rollup": "^2.39.0",
     "rollup-plugin-bundle-size": "^1.0.3",
