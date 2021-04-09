@@ -50,10 +50,10 @@ const StyledToast = styled(ToastContainer, {
     justifyContent: 'space-between',
     mb: '$2',
     minHeight: 60,
+    overflow: 'hidden',
+    position: 'relative',
     px: '$2',
     py: '$3',
-    position: 'relative',
-    overflow: 'hidden',
     width: '100%',
     zIndex: 10000,
     '@sm': {
@@ -126,7 +126,6 @@ type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToast>
 export const Toast: React.FC<ToastProps> = (props) => {
   return (
     <StyledToast
-      // autoClose={false}
       aria-live="assertive"
       draggable={false}
       pauseOnFocusLoss={false}
