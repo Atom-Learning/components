@@ -1,8 +1,8 @@
 # Atom Learning Components
 
-![badge](https://img.shields.io/github/workflow/status/Atom-Learning/components/CI)
 ![badge](https://img.shields.io/npm/v/@atom-learning/components)
-![badge](https://img.shields.io/bundlephobia/min/@atom-learning/components)
+![badge](https://img.shields.io/github/workflow/status/Atom-Learning/components/Test%20&%20validate)
+![badge](https://img.shields.io/bundlephobia/minzip/@atom-learning/components)
 
 `@atom-learning/components` is a collection of generic React components built using [stitches](https://stitches.dev), it includes components that cover layout, content, data collection, media and a host of other UI concerns. It uses `@atom-learning/theme` to provide the design tokens for color, typography, spacing and layout.
 
