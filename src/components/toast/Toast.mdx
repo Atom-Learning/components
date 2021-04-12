@@ -9,12 +9,22 @@ category: Feedback
 
 This is the preferred user feedback way as it is not intrusive and it simply provides some state information to the user without waiting for feedback, ie: the information was saved. When feedback is required consider using the `AlertDialog` component.
 
-As this component uses `react-toastify` please read more information about the underlying behaviour at [react-toastify](https://fkhadra.github.io/react-toastify/introduction/)
+This component is a wrapper for `react-toastify`
 
 ```jsx preview
-import { ToastProvider, toast } from '@atom-learning/components'
+import { Button, ToastProvider, toast } from '@atom-learning/components'
 
-const handleSuccess = () => toast.success('message')
+const Component = () => (
+  <Button onClick={() => toast.success('message')}>Delete school</Button>
+)
 
-<ToastProvider />
+const App = () => (
+  <ToastProvider>
+    <Component />
+  </ToastProvider>
+)
 ```
+
+This component can render a string message by default. However, it can be overriden to show more complex component structure [Render more than a string](https://fkhadra.github.io/react-toastify/render-what-you-want)
+
+For more information on other configuration options and props, please read about the underlying behaviour at [react-toastify](https://fkhadra.github.io/react-toastify/introduction/)
