@@ -9164,14 +9164,14 @@ react-style-singleton@^2.1.0:
 
 react-toastify@^7.0.3:
   version "7.0.3"
-  resolved "https://registry.npmjs.org/react-toastify/-/react-toastify-7.0.3.tgz#93804c777ecf918872ba3b5be9c654db14547f85"
+  resolved "https://registry.yarnpkg.com/react-toastify/-/react-toastify-7.0.3.tgz#93804c777ecf918872ba3b5be9c654db14547f85"
   integrity sha512-cxZ5rfurC8LzcZQMTYc8RHIkQTs+BFur18Pzk6Loz6uS8OXUWm6nXVlH/wqglz4Z7UAE8xxcF5mRjfE13487uQ==
   dependencies:
     clsx "^1.1.1"
 
 react@17.0.1:
   version "17.0.1"
-  resolved "https://registry.npmjs.org/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
+  resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"
   integrity sha512-lG9c9UuMHdcAexXtigOZLX8exLWkW0Ku29qPRU8uhF2R9BN96dLCt0psvzPLlHc5OWkgymP3qwTRgbnw5BKx3w==
   dependencies:
     loose-envify "^1.1.0"
@@ -9537,7 +9537,7 @@ rollup-plugin-bundle-size@^1.0.3:
 
 rollup-plugin-import-css@^2.0.1:
   version "2.0.1"
-  resolved "https://registry.npmjs.org/rollup-plugin-import-css/-/rollup-plugin-import-css-2.0.1.tgz#73a0b53ecd76c2af418dafd7cef2a72d389dc454"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-import-css/-/rollup-plugin-import-css-2.0.1.tgz#73a0b53ecd76c2af418dafd7cef2a72d389dc454"
   integrity sha512-aY8VsOVHAB8RVyNmZP6Np4NeZvMeNc0U7nBMl1q5QX2QIAHSn0veQaW2T1JyzqLY+rLjICb3oEhmHWScZmbd2Q==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
@@ -9651,7 +9651,7 @@ saxes@^5.0.0:
 
 scheduler@^0.20.1:
   version "0.20.2"
-  resolved "https://registry.npmjs.org/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
   integrity sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
   dependencies:
     loose-envify "^1.1.0"
