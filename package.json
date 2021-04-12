@@ -101,6 +101,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "^4.2.2",
     "semantic-release": "^17.4.2",
+    "semantic-release-slack-bot": "^2.1.0",
     "size-limit": "^4.9.1",
     "stitches-reset": "^1.0.0",
     "typescript": "^4.2.1-rc",
@@ -168,6 +169,18 @@
             "package.json"
           ],
           "message": "chore(release): ${nextRelease.version} [skip ci]"
+        }
+      ],
+      [
+        "semantic-release-slack-bot",
+        {
+          "branchesConfig": [
+            {
+              "pattern": "main",
+              "notifyOnFail": true,
+              "notifyOnSuccess": true
+            }
+          ]
         }
       ]
     ]
