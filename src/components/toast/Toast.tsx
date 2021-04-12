@@ -1,12 +1,12 @@
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.minimal.css'
 
 import * as React from 'react'
 import { cssTransition, ToastContainer } from 'react-toastify'
 
 import { keyframes, styled } from '~/stitches'
 
-const toastSize = '44px'
-const toastOffset = '32px'
+const toastSize = '$sizes$4'
+const toastOffset = '$sizes$5'
 const contentIn = `translate3d(0, -calc(${toastSize + toastOffset}), 0)`
 const contentOut = 'translate3d(0, 0, 0)'
 
@@ -14,6 +14,7 @@ const progress = keyframes({
   '0%': { transform: 'scaleX(1)' },
   '100%': { transform: 'scaleX(0)' }
 })
+
 const enter = keyframes({
   '0%': { transform: contentIn },
   '100%': { transform: contentOut }
@@ -48,7 +49,7 @@ const StyledToastContainer = styled(ToastContainer, {
     fontWeight: 400,
     justifyContent: 'space-between',
     mb: '$2',
-    minHeight: 60,
+    minHeight: '$5',
     overflow: 'hidden',
     position: 'relative',
     px: '$2',
@@ -79,19 +80,15 @@ const StyledToastContainer = styled(ToastContainer, {
     bg: '$danger'
   },
   '.Toastify__progress-bar--animated': {
+    // This is needed even when progress bar is hidden as without it autoClose stops working
     animation: `${progress} linear 1 forwards`
   },
   '.Toastify__close-button': {
-    background: 'unset',
-    border: 'unset',
-    color: 'inherit',
-    cursor: 'pointer',
+    all: 'unset',
     display: 'flex',
     height: toastSize,
-    padding: 'unset',
     right: 0,
     top: 0,
-    outline: 'unset',
     '& > svg': {
       fill: 'currentColor',
       margin: 'auto',
