@@ -5,9 +5,9 @@ import { cssTransition, ToastContainer } from 'react-toastify'
 
 import { keyframes, styled } from '~/stitches'
 
-const toastSize = '$sizes$4'
-const toastOffset = '$sizes$5'
-const contentIn = `translate3d(0, -calc(${toastSize + toastOffset}), 0)`
+const toastHeight = '$sizes$3'
+const toastOffset = '$sizes$4'
+const contentIn = `translate3d(0, -calc(${toastHeight + toastOffset}), 0)`
 const contentOut = 'translate3d(0, 0, 0)'
 
 const progress = keyframes({
@@ -28,9 +28,10 @@ const exit = keyframes({
 const StyledToastContainer = styled(ToastContainer, {
   position: 'fixed',
   zIndex: '10000 !important',
+  borderSizing: 'border-box',
   '@sm': {
     left: '50%',
-    top: '$4',
+    top: '$3',
     transform: 'translateX(-50%)'
   },
   '@media (max-width: 549px)': {
@@ -40,8 +41,7 @@ const StyledToastContainer = styled(ToastContainer, {
   },
   '.Toastify__toast': {
     alignItems: 'center',
-    borderRadius: '$0',
-    boxShadow: '$1',
+    boxShadow: '$0',
     color: 'white',
     cursor: 'pointer',
     display: 'flex',
@@ -49,15 +49,14 @@ const StyledToastContainer = styled(ToastContainer, {
     fontWeight: 400,
     justifyContent: 'space-between',
     mb: '$2',
-    minHeight: '$5',
+    minHeight: toastHeight,
     overflow: 'hidden',
     position: 'relative',
-    px: '$2',
-    py: '$3',
+    p: '$2',
     width: '100%',
     zIndex: 10000,
     '@sm': {
-      minHeight: toastSize,
+      borderRadius: '$0',
       width: 360
     },
     '@media (max-width: 549px)': {
@@ -86,7 +85,7 @@ const StyledToastContainer = styled(ToastContainer, {
   '.Toastify__close-button': {
     all: 'unset',
     display: 'flex',
-    height: toastSize,
+    height: toastHeight,
     right: 0,
     top: 0,
     '& > svg': {
