@@ -10,6 +10,10 @@ const toastOffset = '32px'
 const contentIn = `translate3d(0, -calc(${toastSize + toastOffset}), 0)`
 const contentOut = 'translate3d(0, 0, 0)'
 
+const progress = keyframes({
+  '0%': { transform: 'scaleX(1)' },
+  '100%': { transform: 'scaleX(0)' }
+})
 const enter = keyframes({
   '0%': { transform: contentIn },
   '100%': { transform: contentOut }
@@ -73,6 +77,9 @@ const StyledToastContainer = styled(ToastContainer, {
   },
   '.Toastify__toast--error': {
     bg: '$danger'
+  },
+  '.Toastify__progress-bar--animated': {
+    animation: `${progress} linear 1 forwards`
   },
   '.Toastify__close-button': {
     background: 'unset',
