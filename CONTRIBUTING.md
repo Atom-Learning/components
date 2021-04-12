@@ -8,9 +8,9 @@ category: Overview
 
 This section is **very important**! Our releases and version numbers follow [Semantic Versioning](https://semver.org/) and are generated from the commit messages in PRs when they get merged into `main`, so make sure you follow our conventions.
 
-We use [`commitlint`](https://github.com/conventional-changelog/commitlint) to enforce rules about commit messages and [`semantic-release`](https://github.com/semantic-release/semantic-release) to generate releases and version numbers based on them. The configuration of these tools is spread between several plugins, but here's what you need to know:
+We use [`commitlint`](https://github.com/conventional-changelog/commitlint) to enforce rules about commit messages and [`semantic-release`](https://github.com/semantic-release/semantic-release) to generate releases and version numbers based on them. The configuration of these tools is spread between several plugins, but here's what you need to know.
 
-The structure of a commit message is this:
+The structure of a commit message is as follows:
 
 ```
 <type>(<scope>): <subject>
@@ -20,7 +20,7 @@ The structure of a commit message is this:
 <footer>
 ```
 
-All commit messages must have a subject (a word followed by a colon at the start of the message) from the [list](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) in that config, and either of the following will cause a new release to be published when your PR is merged into `main`:
+All commit messages must have a type (a word followed by a colon at the start of the message) from this [list](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) (the scope is optional but strongly encouraged). Either of the following types will cause a new release to be published when your PR is merged into `main`:
 
 - `fix` for bug fixes (patch version)
 - `perf` for performance improvements (patch version)
