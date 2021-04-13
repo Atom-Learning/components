@@ -9,7 +9,12 @@ const outputDir = path.join('dist', 'docs')
 const inputGlob = '**/*.{md,mdx}'
 const { watch } = yargs(hideBin(process.argv)).option('watch').argv
 
-const filesToFilter = ['README.md', 'CHANGELOG.md']
+const filesToFilter = [
+  'CHANGELOG.md',
+  'CONTRIBUTING.md',
+  'LICENSE.md',
+  'README.md'
+]
 
 const copyFileToOutput = (filePath) => {
   fs.copyFileSync(filePath, path.join(outputDir, path.basename(filePath)))
@@ -27,6 +32,8 @@ const run = async () => {
   console.log(
     `\nPublishing documentation from:\n  ${documentationFilePaths.join('\n  ')}`
   )
+
+  console.log(documentationFilePaths)
 
   await Promise.all(documentationFilePaths.map(copyFileToOutput))
 }
