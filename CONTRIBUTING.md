@@ -1,12 +1,54 @@
 ---
 title: Contributing
-description: When contributing to this repository, use the following information, to uphold the standards we have set for this project. Please read through this and the `README.md` before starting.
+description: When contributing to this repository, use the following information to uphold the standards we have set for this project.
 category: Overview
 ---
 
+Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise an issue in GitHub using the [feature request template](https://github.com/atom-learning/components/issues/new?template=request-a-feature.md).
+In this document, you will find all the necessary information to develop and test the features. Therefore, please review this document and the `README.md` before you get started.
+
+## Commits
+
+This section is **very important**! Our releases and version numbers follow [Semantic Versioning](https://semver.org/) and are generated from the commit messages in PRs when they get merged into `main`, so make sure you follow our conventions.
+
+We use [`commitlint`](https://github.com/conventional-changelog/commitlint) to enforce rules about commit messages and [`semantic-release`](https://github.com/semantic-release/semantic-release) to generate releases and version numbers based on them. The configuration of these tools is spread between several plugins, but here's what you need to know.
+
+The structure of a commit message is as follows:
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+All commit messages must have a type (a word followed by a colon at the start of the message) from this [list](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) (the scope is optional but strongly encouraged). Either of the following types will cause a new release to be published when your PR is merged into `main`:
+
+- `fix` for bug fixes (patch version)
+- `perf` for performance improvements (patch version)
+- `feat` for new features (minor version)
+
+Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change).
+
+Commits that introduce a breaking change should start with `feat!:` and include the `BREAKING CHANGE:` footer. Breaking changes will cause a major version increase.
+
+Here is an example of the release type that will be done based on a commit messages:
+
+| Commit message                                                                                                                                                                                   | Release type           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                             | Patch Release          |
+| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | Minor Release          |
+| `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | Major Breaking Release |
+
+**Notes:**
+
+- A commit should contain at most one self-contained functional change and a functional change should be contained in exactly one commit.
+- When squashing commits make sure to rewrite the resulting commit message to be compliant with the project's commit message convention. **If the resulting squashed commit would encompasses multiple changes (for example multiple unrelated features or fixes) then it's probably not a good idea to squash those commits together**.
+
 ## Directory structure
 
-Use the following directory structure and file naming conventions. You can automate this by running `yarn add-component` in the root directory and following the instructions.
+Use the following directory structure and file naming conventions. You can automate this by running `yarn add-component` in the root directory and following the instructions. Once the `add-component` task has completed, you should have the following folder and files created:
 
 ```
 src/
@@ -48,59 +90,16 @@ const ComposedComponent = ({ css }) => (
 )
 ```
 
-## Documentation
-
-Each component should have documentation which covers the following:
-
-- Variants
-- Available component specific properties
-- When it should be used
-- When it _shouldn't_ be used (e.g. instead of using an `Input` directly, we'll often want to use an `InputField`)
-
-We use YAML frontmatter to add metadata to our documentation, the available fields are:
-
-- `title` - The title of the page, usually the name of the component. It can be made more readable, e.g. `CSS Wrapper` instead of `CSSWrapper`
-- `component` - The name of the component; this is used to extract prop-types so must be exact.
-- `description` - A high-level description of the component and its usage, will be shown as the opening statement on the page.
-- `category` - A category to group with related components
-
-There is no need to add a main `# Heading` to your page as the documentation site will add it automatically from your `title` field. Avoid manually adding a `PropsTable` as this will be automated, or adding custom `import`s as these will break the MDX parser.
-
-To show code examples and component previews in your documentation, use the codeblock syntax with a language, in our case, likely `jsx`.
-
-This is a basic example that will show just the code
-
-````md
-```jsx
-<Button />
-```
-````
-
-Adding `preview` will also render the code above the code block
-
-````md
-```jsx preview
-<Button />
-```
-````
-
-Adding `live` will render the code and adds the ability to live edit
-
-````md
-```jsx live
-<Button />
-```
-````
-
 ## Tests
 
-Please write tests to cover all the user interactions with a component. The target is to have as much test coverage as possible. Coverage is calculated when running the tests.
+In this project, we follow the principles set out by the [`React Testing Library`]() where we focus on testing the user interactions with the component. The target is to have as much test coverage as possible.
 
-As a minimum the following tests are required:
+As a minimum, the following tests are required:
 
-- Snapshots for the different states of the component (ie, for an `accordion` cover both the collapsed and expanded states
+- Tests to validate the user interactions with the component
+- Snapshots for the different states of the component (i.e., for an `accordion` cover both the collapsed and expanded states
 - Snapshots for each variant that outputs different HTML
-- Accessibility unit test
+- Accessibility unit tests
 
 ### Examples
 
@@ -123,6 +122,50 @@ describe(`Box component`, () => {
 })
 ```
 
+## Documentation
+
+Each component should have documentation that covers the following:
+
+- Variants
+- Available component-specific properties
+- When it should be used
+- When it _shouldn't_ be used (e.g. instead of using an `Input` directly, we'll often want to use an `InputField`)
+
+We use YAML frontmatter to add metadata to our documentation. The available fields are:
+
+- `title` - The title of the page, usually the name of the component. It can be made more readable, e.g. `CSS Wrapper` instead of `CSSWrapper`
+- `component` - The name of the component; this is used to extract prop-types, so must be exact.
+- `description` - A high-level description of the component and its usage will be shown as the page's opening statement.
+- `category` - A category to group with related components
+
+There is no need to add a main `# Heading` to your page as the documentation site will add it automatically from your `title` field. Avoid manually adding a `PropsTable` as this will be automated, or adding custom `import`s as these will break the MDX parser.
+
+To show code examples and component previews in your documentation, use the code block syntax with a language, in our case, likely `jsx`.
+
+The following basic example will show just the code:
+
+````md
+```jsx
+<Button />
+```
+````
+
+Adding `preview` will also render the code above the code block:
+
+````md
+```jsx preview
+<Button />
+```
+````
+
+Adding `live` will render the code and adds the ability to live edit:
+
+````md
+```jsx live
+<Button />
+```
+````
+
 ## Raising a PR
 
 In the PR, include:
@@ -134,3 +177,11 @@ In the PR, include:
 - An explanation of any decisions that were made.
 
 If any of the patterns stated above weren't followed, please explain the reasons for it.
+
+**For a PR to be approved, tests and documentation are required as mentioned above.**
+
+After a PR has at least two thumbs-up and all the recommendations/conversations have been resolved, it can be merged into `main`.
+
+## Merging/Releasing
+
+After a PR was merged, releasing the changes is fully automated (please refer to the commits section). Once the pipeline has completed and the new version is released, you can then upgrade the package in the consuming project and use it.
