@@ -9,12 +9,7 @@ const outputDir = path.join('dist', 'docs')
 const inputGlob = '**/*.{md,mdx}'
 const { watch } = yargs(hideBin(process.argv)).option('watch').argv
 
-const filesToFilter = [
-  'CHANGELOG.md',
-  'CONTRIBUTING.md',
-  'LICENSE.md',
-  'README.md'
-]
+const filesToFilter = ['CHANGELOG.md', 'LICENSE.md', 'README.md']
 
 const copyFileToOutput = (filePath) => {
   fs.copyFileSync(filePath, path.join(outputDir, path.basename(filePath)))
