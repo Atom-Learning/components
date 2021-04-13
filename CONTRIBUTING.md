@@ -4,9 +4,45 @@ description: When contributing to this repository, use the following information
 category: Overview
 ---
 
-Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise a ticket to track the changes by using this [form](https://www.notion.so/atomlearning/Need-a-new-component-4431d2db39ee47ecb9af2be4c77c6130#f006b07e3922444d85f8a2742eac21a6)
-
+Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise a ticket to track the changes by using the "Need a component" form
 In this document, you will find all the necessary information to develop and test the features. Therefore, please review this document and the `README.md` before you get started.
+
+## Commits
+
+This section is **very important**! Our releases and version numbers follow [Semantic Versioning](https://semver.org/) and are generated from the commit messages in PRs when they get merged into `main`, so make sure you follow our conventions.
+
+We use [`commitlint`](https://github.com/conventional-changelog/commitlint) to enforce rules about commit messages and [`semantic-release`](https://github.com/semantic-release/semantic-release) to generate releases and version numbers based on them. The configuration of these tools is spread between several plugins, but here's what you need to know.
+
+The structure of a commit message is as follows:
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+All commit messages must have a type (a word followed by a colon at the start of the message) from this [list](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) (the scope is optional but strongly encouraged). Either of the following types will cause a new release to be published when your PR is merged into `main`:
+
+- `fix` for bug fixes (patch version)
+- `perf` for performance improvements (patch version)
+- `feat` for new features (minor version)
+
+Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change). This **must** be included with **any** commit that introduces a breaking change. Breaking changes will cause a major version increase.
+
+Here is an example of the release type that will be done based on a commit messages:
+
+| Commit message                                                                                                                                                                                   | Release type           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
+| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                             | Patch Release          |
+| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | Minor Release          |
+| `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | Major Breaking Release |
+
+**Notes:**
+
+- A commit should contain at most one self-contained functional change and a functional change should be contained in exactly one commit.
+- When squashing commits make sure to rewrite the resulting commit message to be compliant with the project's commit message convention. If the resulting squashed commit would encompasses multiple changes (for example multiple unrelated features or fixes) then it's probably not a good idea to squash those commits together.
 
 ## Directory structure
 
@@ -83,43 +119,6 @@ describe(`Box component`, () => {
   })
 })
 ```
-
-## Commits
-
-This section is **very important**! Our releases and version numbers follow [Semantic Versioning](https://semver.org/) and are generated from the commit messages in PRs when they get merged into `main`, so make sure you follow our conventions.
-
-We use [`commitlint`](https://github.com/conventional-changelog/commitlint) to enforce rules about commit messages and [`semantic-release`](https://github.com/semantic-release/semantic-release) to generate releases and version numbers based on them. The configuration of these tools is spread between several plugins, but here's what you need to know.
-
-The structure of a commit message is as follows:
-
-```
-<type>(<scope>): <subject>
-<BLANK LINE>
-<body>
-<BLANK LINE>
-<footer>
-```
-
-All commit messages must have a type (a word followed by a colon at the start of the message) from this [list](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum) (the scope is optional but strongly encouraged). Either of the following types will cause a new release to be published when your PR is merged into `main`:
-
-- `fix` for bug fixes (patch version)
-- `perf` for performance improvements (patch version)
-- `feat` for new features (minor version)
-
-Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change). This **must** be included with **any** commit that introduces a breaking change. Breaking changes will cause a major version increase.
-
-Here is an example of the release type that will be done based on a commit messages:
-
-| Commit message                                                                                                                                                                                   | Release type           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
-| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                             | Patch Release          |
-| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | Minor Release          |
-| `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | Major Breaking Release |
-
-**Notes:**
-
-- A commit should contain at most one self-contained functional change and a functional change should be contained in exactly one commit.
-- When squashing commits make sure to rewrite the resulting commit message to be compliant with the project's commit message convention. If the resulting squashed commit would encompasses multiple changes (for example multiple unrelated features or fixes) then it's probably not a good idea to squash those commits together.
 
 ## Documentation
 
