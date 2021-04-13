@@ -29,7 +29,9 @@ All commit messages must have a type (a word followed by a colon at the start of
 - `perf` for performance improvements (patch version)
 - `feat` for new features (minor version)
 
-Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change). This **must** be included with **any** commit that introduces a breaking change. Breaking changes will cause a major version increase.
+Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change).
+
+Commits that introduce a breaking change should start with `feat!:` and include the `BREAKING CHANGE:` footer. Breaking changes will cause a major version increase.
 
 Here is an example of the release type that will be done based on a commit messages:
 
