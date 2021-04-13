@@ -33,8 +33,6 @@ const run = async () => {
     `\nPublishing documentation from:\n  ${documentationFilePaths.join('\n  ')}`
   )
 
-  console.log(documentationFilePaths)
-
   await Promise.all(documentationFilePaths.map(copyFileToOutput))
 }
 
