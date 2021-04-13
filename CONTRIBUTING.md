@@ -4,7 +4,7 @@ description: When contributing to this repository, use the following information
 category: Overview
 ---
 
-Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise an issue in GitHub using the feature request template.
+Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise an issue in GitHub using the [feature request template](https://github.com/atom-learning/components/issues/new?template=request-a-feature.md).
 In this document, you will find all the necessary information to develop and test the features. Therefore, please review this document and the `README.md` before you get started.
 
 ## Commits
