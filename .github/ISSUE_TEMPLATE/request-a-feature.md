@@ -1,10 +1,14 @@
 ---
-name: Request a component
-about: Please use this issue to track the components you are contributing to the design system
-title: 'Component request: [COMPONENT]'
+name: Request a feature
+about: Please use this issue to track the features you are contributing to the design system
+title: 'Feature request: [COMPONENT_NAME]'
 labels: ''
 assignees: thomasdigby, andoulla, hollg
 ---
+
+## Component Name(\*) or Feature Name
+
+Please include the component name that you are amending or the suggested name if it is a new component/feature
 
 ## Description(\*)
 
