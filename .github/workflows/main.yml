@@ -45,7 +45,6 @@ jobs:
         id: semantic # Need an `id` to refer back to this step from the next one
         with:
           branch: 'main'
-          dry_run: true # temporary!
 
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
