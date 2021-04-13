@@ -9,14 +9,9 @@ category: Forms
 
 ```jsx preview
 <Form>
-  <SelectField
-    name="options"
-    label="Options"
-    options={[
-      { value: 1, label: 'Option 1' },
-      { value: 2, label: 'Option 2' }
-    ]}
-    css={{ width: 320 }}
-  />
+  <SelectField name="options" label="Options" css={{ width: 320 }}>
+    <option value="apples">Apples</option>
+    <option value="bananas">Bananas</option>
+  </SelectField>
 </Form>
 ```

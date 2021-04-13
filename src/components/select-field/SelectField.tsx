@@ -9,6 +9,7 @@ type SelectFieldProps = SelectProps &
   FieldWrapperProps & { name: string; validation: ValidationOptions }
 
 export const SelectField: React.FC<SelectFieldProps> = ({
+  children,
   name,
   label,
   validation,
@@ -18,9 +19,12 @@ export const SelectField: React.FC<SelectFieldProps> = ({
   const ref = validation ? register(validation) : register
 
   const error = errors[name]?.message
+
   return (
     <FieldWrapper fieldId={name} label={label} error={error}>
-      <Select name={name} id={name} {...remainingProps} ref={ref} />
+      <Select name={name} id={name} {...remainingProps} ref={ref}>
+        {children}
+      </Select>
     </FieldWrapper>
   )
 }

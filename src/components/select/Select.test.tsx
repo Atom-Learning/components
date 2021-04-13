@@ -35,7 +35,11 @@ describe(`Select component`, () => {
 
   it('renders a select with 3 options', async () => {
     const { container } = render(
-      <Select aria-label="dropdown" options={mockOptions} />
+      <Select aria-label="dropdown">
+        {mockOptions.map((option) => (
+          <option key={option.value} {...option} />
+        ))}
+      </Select>
     )
 
     const options = await screen.getAllByRole('option')
@@ -50,11 +54,11 @@ describe(`Select component`, () => {
 
   it('renders select with a default option', async () => {
     const { container } = render(
-      <Select
-        aria-label="dropdown"
-        defaultOption="Please select:"
-        options={mockOptions}
-      />
+      <Select aria-label="dropdown" default="Please select:">
+        {mockOptions.map((option) => (
+          <option key={option.value} {...option} />
+        ))}
+      </Select>
     )
 
     const option = await screen.getByDisplayValue('Please select:')
@@ -80,13 +84,14 @@ describe(`Select component`, () => {
 
   it('renders select with a disabled option', async () => {
     const { container } = render(
-      <Select
-        aria-label="dropdown"
-        options={[
+      <Select aria-label="dropdown">
+        {[
           ...mockOptions,
           { label: 'Option 4', value: 'value4', disabled: true }
-        ]}
-      />
+        ].map((option) => (
+          <option key={option.value} {...option} />
+        ))}
+      </Select>
     )
     const options = await screen.getAllByRole('option')
 
@@ -98,13 +103,14 @@ describe(`Select component`, () => {
 
   it('renders select with a disabled option - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Select
-        aria-label="dropdown"
-        options={[
+      <Select aria-label="dropdown">
+        {[
           ...mockOptions,
           { label: 'Option 4', value: 'value4', disabled: true }
-        ]}
-      />
+        ].map((option) => (
+          <option key={option.value} {...option} />
+        ))}
+      </Select>
     )
 
     expect(await axe(container)).toHaveNoViolations()
