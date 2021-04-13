@@ -4,7 +4,7 @@ description: When contributing to this repository, use the following information
 category: Overview
 ---
 
-Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise a ticket to track the changes by using the "Need a component" form
+Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise an issue in GitHub using the feature request template.
 In this document, you will find all the necessary information to develop and test the features. Therefore, please review this document and the `README.md` before you get started.
 
 ## Commits
@@ -44,7 +44,7 @@ Here is an example of the release type that will be done based on a commit messa
 **Notes:**
 
 - A commit should contain at most one self-contained functional change and a functional change should be contained in exactly one commit.
-- When squashing commits make sure to rewrite the resulting commit message to be compliant with the project's commit message convention. If the resulting squashed commit would encompasses multiple changes (for example multiple unrelated features or fixes) then it's probably not a good idea to squash those commits together.
+- When squashing commits make sure to rewrite the resulting commit message to be compliant with the project's commit message convention. **If the resulting squashed commit would encompasses multiple changes (for example multiple unrelated features or fixes) then it's probably not a good idea to squash those commits together**.
 
 ## Directory structure
 
