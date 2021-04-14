@@ -15,7 +15,7 @@
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
     "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open",
     "add-component": "node ./scripts/add-component.mjs",
-    "prepublishOnly": "run-s test clean build:lib build:docs",
+    "prepublishOnly": "run-s clean build:lib build:docs",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
