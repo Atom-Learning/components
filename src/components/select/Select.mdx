@@ -10,33 +10,25 @@ It adds default styling and the `css` prop.
 A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
 
 ```jsx preview
-<Select
-  options={[
-    { value: 1, label: 'Apples' },
-    { value: 2, label: 'Bananas' }
-  ]}
-  css={{ width: 300 }}
-/>
+<Select css={{ width: 300 }}>
+  <option value="apples">Apples</option>
+  <option value="bananas">Bananas</option>
+</Select>
 ```
 
 ## Accessibility
 
 For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If a label is not available, please add an `aria-label` to ensure that the component remains accessible
 
-## Default Option
+## Placeholder
 
-The component can display a default option without a value by passing the `defaultOption` property.
+The component can display a placeholder without a value by passing the `placeholder` property.
 
 ```jsx preview
-<Select
-  aria-label="select number"
-  defaultOption="Please select a number:"
-  options={[
-    { value: 1, label: 'one' },
-    { value: 2, label: 'two' }
-  ]}
-  css={{ width: 300 }}
-/>
+<Select placeholder="Please select a fruit" css={{ width: 300 }}>
+  <option value="apples">Apples</option>
+  <option value="bananas">Bananas</option>
+</Select>
 ```
 
 ## Disabled select
@@ -44,15 +36,10 @@ The component can display a default option without a value by passing the `defau
 The component has a `disabled` state, by setting the `disabled` property.
 
 ```jsx preview
-<Select
-  aria-label="can't select fruits"
-  disabled
-  options={[
-    { value: 1, label: 'Apples' },
-    { value: 2, label: 'Bananas' }
-  ]}
-  css={{ width: 300 }}
-/>
+<Select disabled placeholder="Please select a fruit" css={{ width: 300 }}>
+  <option value="apples">Apples</option>
+  <option value="bananas">Bananas</option>
+</Select>
 ```
 
 ## Disabled Option
@@ -60,12 +47,10 @@ The component has a `disabled` state, by setting the `disabled` property.
 The component can show an option as `disabled`, by setting the `disabled` property on the option.
 
 ```jsx preview
-<Select
-  aria-label="select fruits"
-  options={[
-    { value: 1, label: 'Apples', disabled: true },
-    { value: 2, label: 'Bananas' }
-  ]}
-  css={{ width: 300 }}
-/>
+<Select placeholder="Please select a fruit" css={{ width: 300 }}>
+  <option value="apples">Apples</option>
+  <option value="bananas" disabled>
+    Bananas
+  </option>
+</Select>
 ```

@@ -191,8 +191,11 @@ exports[`Select component renders select with a default option 1`] = `
     aria-label="dropdown"
     class="sx8kxz1"
   >
-    <option>
-       Please select:
+    <option
+      disabled=""
+      hidden=""
+    >
+      Please select:
     </option>
     <option
       value="value1"
