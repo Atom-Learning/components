@@ -17,7 +17,7 @@ Stitches enables you to create shorthand utilities to improve the CSS authoring 
 
 A quick example using `bg` and `size` to create a little blue square.
 
-```jsx preview
+```tsx preview
 <Box css={{ bg: '$primary200', size: 100 }} />
 ```
 
@@ -40,14 +40,14 @@ export const conditions = {
 
 You can use these in `styled()` or `css` by prefixing the key with `@`, e.g. `@reducedMotion` or `@xl`
 
-```jsx
+```tsx
 const Section = styled('section', {
   padding: '$2',
   '@md': { padding: '$3' }
 })
 ```
 
-```jsx
+```tsx
 <Text
   css={{
     color: '$tonal900',
@@ -61,7 +61,7 @@ const Section = styled('section', {
 
 You can also use them to switch [variants](https://stitches.dev/docs/variants)
 
-```jsx
+```tsx
 <Button
   // change the 'theme' to 'secondary' when you trigger the 'md' breakpoint
   theme={{ '@initial': 'primary', '@md': 'secondary' }}

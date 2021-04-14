@@ -16,7 +16,7 @@ Before developing a component, please take some time to read the following secti
 - Add unit tests to test accessibility
   Add an accessibility unit test (using the `jest-axe`) to ensure that the components' different variations don't have any accessibility issues. Example:
 
-```jsx
+```tsx
 it('has no programmatically detectable a11y issues', async () => {
   const { container } = render(<Button />)
 
@@ -26,7 +26,7 @@ it('has no programmatically detectable a11y issues', async () => {
 
 or
 
-```jsx
+```tsx
 it('has no programmatically detectable a11y issues', async () => {
   render(<Flex />, document.body)
   const results = await axe(document.body)

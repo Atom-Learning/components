@@ -10,7 +10,7 @@ category: Feedback
 A `ProgressBar` needs to be associated with a label for accessibility purposes, therefore the component `id` needs to be set. If a label is not available, please add an `aria-label` to ensure that the component remains accessible.
 For more examples, please read [aria-progressbar-name](https://dequeuniversity.com/rules/axe/4.1/aria-progressbar-name?application=axeAPI)
 
-```jsx live
+```tsx live
 <ProgressBar value={20} aria-label="Completion rate" />
 ```
 
@@ -18,7 +18,7 @@ For more examples, please read [aria-progressbar-name](https://dequeuniversity.c
 
 These are the available `themes` for this component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
 
-```jsx preview
+```tsx preview
 <>
   <ProgressBar value={20} />
   <ProgressBar theme="secondary" value={20} aria-label="Completion rate" />
@@ -33,7 +33,7 @@ These are the available `themes` for this component: `Primary` (default), `Secon
 
 There two options for the `appearance` property: `solid` and `outline(default)`. These are the available `outline` variations for all the `themes`.
 
-```jsx preview
+```tsx preview
 <>
   <ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
   <ProgressBar

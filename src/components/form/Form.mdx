@@ -3,6 +3,7 @@ title: Form
 component: Form
 description: Form abstracts form validation logic away from the view code
 category: Forms
+priority: 1
 ---
 
 ## General
@@ -18,7 +19,7 @@ Custom field components should also accept a `validation` prop of type `Validati
 
 Here's an example using a simplified version of our `InputField`:
 
-```tsx center
+```tsx
 const InputField = ({ label, name, validation }) => {
   const { register, errors } = useFormContext()
   const ref = validation ? register(validation) : register
@@ -42,10 +43,25 @@ The `ValidationOptions` type provides preset logic for common validation and pro
 The `required` property accepts a `message` and a `value`. `value` is a boolean that represents whether the field is required. That pattern is only necessary when
 deciding dynamically whether to make a field required. If it will always be required, you can pass a `string` containing the error message instead. The following two inputs are equivalent:
 
-```tsx center
+```tsx
 <Form>
-  <InputField name="name" label="Name" validation={{required: { value: true, message: "You must have a name" }}} />
-  <InputField name="name" label="Name" validation={{required: "You must have a name"} />
+  <InputField
+    name="name"
+    label="Name"
+    validation={{
+      required: {
+        value: true,
+        message: 'You must have a name'
+      }
+    }}
+  />
+  <InputField
+    name="name"
+    label="Name"
+    validation={{
+      required: 'You must have a name'
+    }}
+  />
   <Button>Submit</Button>
 </Form>
 ```
@@ -60,10 +76,29 @@ The following properties take a `message` and a `value`:
 
 For example:
 
-```tsx center
+```tsx
 <Form>
-  <InputField type="number" name="numCats" label="Number of cats" validation={{min: {value: 3, message: "You must have at least 3 cats!"}}}/>
-  <InputField name="faveName" label="Favourite cat name" validation={{maxLength: {{value: 20, message: "Cats hate long names!"}}}} />
+  <InputField
+    type="number"
+    name="numCats"
+    label="Number of cats"
+    validation={{
+      min: {
+        value: 3,
+        message: 'You must have at least 3 cats!'
+      }
+    }}
+  />
+  <InputField
+    name="faveName"
+    label="Favourite cat name"
+    validation={{
+      maxLength: {
+        value: 20,
+        message: 'Cats hate long names!'
+      }
+    }}
+  />
   <Button>Submit</Button>
 </Form>
 ```
@@ -74,14 +109,17 @@ Note that when specifying a `pattern`, the `value` is a `RegExp`. For the other 
 
 The `validate` property accepts a function of type `(value: any) => boolean | string`. Its single argument is the current value of the field. It should return `true` if the value passes validation and a `string` containing an error if not.
 
-```tsx center
+```tsx
 <Form>
   <InputField
     name="faveVowel"
     label="Favourite vowel"
     validation={{
-      validate: (value) =>
-        ['A', 'E', 'I', 'O', 'U'].contains(value) || "That's not a vowel!"
+      validate: (value) => {
+        return (
+          ['A', 'E', 'I', 'O', 'U'].contains(value) || "That's not a vowel!"
+        )
+      }
     }}
   />
   <Button>Submit</Button>
@@ -121,7 +159,16 @@ Your custom form field component must take the props specified in [General](#Gen
 #### register
 
 If you don't need to add any default validation to your component, then pass `register?.(validation)` down to the `Input` (or `Select`, etc) component's `ref` prop.
-If you do want to add default validation, pass something like this: `register?.({ maxLength: {value: 2, message: "short data only!" },...validation })` (but check that `validation is truthy first, or default it to an empty object!). Note that optional chaining is important here to protect from runtime errors if your field gets rendered outside of a `Form`.
+If you do want to add default validation, pass something like this:
+
+```ts
+register?.({
+  maxLength: { value: 2, message: 'short data only!' },
+  ...validation
+})
+```
+
+(but check that validation is truthy first, or default it to an empty object!). Note that optional chaining is important here to protect from runtime errors if your field gets rendered outside of a `Form`.
 
 ### Examples
 
@@ -129,28 +176,26 @@ Here are two email input field examples. The first is a wrapper around an `Input
 but for more complex use cases you can use the manual composition here as a guide.
 
 ```tsx
-const EmailField = ({ name, register, error, validation = {}, ...rest }) => {
-  return (
-    <InputField
-      name={name}
-      css={{ mb: '$3' }}
-      autoComplete="email"
-      label="Email address"
-      type="email"
-      register={register}
-      validation={{
-        required: 'email address is required',
-        pattern: {
-          value: /.+@.+\..+/,
-          message: 'please enter a valid email address'
-        },
-        ...validation
-      }}
-      error={error}
-      {...rest}
-    />
-  )
-}
+const EmailField = ({ name, register, error, validation = {}, ...rest }) => (
+  <InputField
+    name={name}
+    css={{ mb: '$3' }}
+    autoComplete="email"
+    label="Email address"
+    type="email"
+    register={register}
+    validation={{
+      required: 'email address is required',
+      pattern: {
+        value: /.+@.+\..+/,
+        message: 'please enter a valid email address'
+      },
+      ...validation
+    }}
+    error={error}
+    {...rest}
+  />
+)
 ```
 
 ```tsx
