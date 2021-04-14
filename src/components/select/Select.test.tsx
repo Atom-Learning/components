@@ -56,7 +56,7 @@ describe(`Select component`, () => {
 
   it('renders select with a default option', async () => {
     const { container } = render(
-      <Select aria-label="dropdown" default="Please select:">
+      <Select aria-label="dropdown" placeholder="Please select:">
         {mockOptions.map(({ value, label }) => (
           <option key={value} value={value}>
             {label}

@@ -20,12 +20,12 @@ A `Select` needs to be associated with a label for accessibility purposes, so ra
 
 For accessibility purposes the component needs to have the `id` prop set, to link it to the label it is associated with. If a label is not available, please add an `aria-label` to ensure that the component remains accessible
 
-## Default option
+## Placeholder
 
-The component can display a default option without a value by passing the `defaultOption` property.
+The component can display a placeholder without a value by passing the `placeholder` property.
 
 ```jsx preview
-<Select default="Please select a fruit" css={{ width: 300 }}>
+<Select placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas">Bananas</option>
 </Select>
@@ -36,7 +36,7 @@ The component can display a default option without a value by passing the `defau
 The component has a `disabled` state, by setting the `disabled` property.
 
 ```jsx preview
-<Select disabled default="Please select a fruit" css={{ width: 300 }}>
+<Select disabled placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas">Bananas</option>
 </Select>
@@ -47,7 +47,7 @@ The component has a `disabled` state, by setting the `disabled` property.
 The component can show an option as `disabled`, by setting the `disabled` property on the option.
 
 ```jsx preview
-<Select default="Please select a fruit" css={{ width: 300 }}>
+<Select placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas" disabled>
     Bananas

@@ -49,7 +49,7 @@ export type SelectProps = Override<
   React.ComponentProps<typeof StyledSelect>,
   {
     as?: never
-    default?: string
+    placeholder?: string
   }
   // TODO: figure out why uncommenting this causes TS errors in
   // component declaration
@@ -60,9 +60,13 @@ export type SelectProps = Override<
 >
 
 export const Select: React.FC<SelectProps> = React.forwardRef(
-  ({ default: defaultOption, children, ...remainingProps }, ref) => (
+  ({ placeholder, children, ...remainingProps }, ref) => (
     <StyledSelect {...remainingProps} ref={ref}>
-      {defaultOption && <option>{defaultOption}</option>}
+      {placeholder && (
+        <option disabled selected hidden>
+          {placeholder}
+        </option>
+      )}
       {children}
     </StyledSelect>
   )
