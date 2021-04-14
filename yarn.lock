@@ -1874,12 +1874,17 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.1.0":
+"@stitches/core@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.0.tgz#9ee10f0eda36a6a7c0a6746aea32d41d41b6c9d2"
   integrity sha512-3XX86Jc3iDtMEKEg9aCrRIaPOh2Qptp/5J1UH1rB5NtepCc6jXPqK0sxNNEQO6HZlv0AszycKEp8hW2KGL7Xng==
 
-"@stitches/react@^0.1.0":
+"@stitches/core@^0.1.0":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.7.tgz#132d6e3bab1b3af44b6c67980d7e2d23b64703d0"
+  integrity sha512-OSo1qS0QlBJ/Uyc6h2luc8pzFR2qNK7ehWUtRDIegAhq5phvVw9B6oEc9E7HDf6ku8UEzCd/BVwXiUSjknMQDQ==
+
+"@stitches/react@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.0.tgz#707ac79e8a5e7eae0c742bdbf2535fa9ec5439d8"
   integrity sha512-IlbqC4bQ0iHgfpl9hcegy5QsXiZtsmQJukiB1p5eSQh133+irvS77cXFu/rHRCyBrXGr94nigJboGVmuG33ekQ==
