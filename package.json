@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "",
   "files": [
     "dist"
@@ -15,7 +15,7 @@
     "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
     "start:sandbox": "parcel ./sandbox/index.html --out-dir sandbox/build --open",
     "add-component": "node ./scripts/add-component.mjs",
-    "prepublishOnly": "run-s test clean build:lib build:docs",
+    "prepublishOnly": "run-s clean build:lib build:docs",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
@@ -117,7 +117,7 @@
     "@radix-ui/react-slot": "^0.0.9",
     "@radix-ui/react-tooltip": "^0.0.16",
     "@radix-ui/react-visually-hidden": "0.0.11",
-    "@stitches/react": "^0.1.0",
+    "@stitches/react": "0.1.0",
     "@types/react": "^17.0.2",
     "colorsys": "^1.0.22",
     "pure-react-carousel": "^1.27.6",
