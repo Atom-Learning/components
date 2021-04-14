@@ -36,8 +36,10 @@ describe(`Select component`, () => {
   it('renders a select with 3 options', async () => {
     const { container } = render(
       <Select aria-label="dropdown">
-        {mockOptions.map((option) => (
-          <option key={option.value} {...option} />
+        {mockOptions.map(({ value, label }) => (
+          <option key={value} value={value}>
+            {label}
+          </option>
         ))}
       </Select>
     )
@@ -55,8 +57,10 @@ describe(`Select component`, () => {
   it('renders select with a default option', async () => {
     const { container } = render(
       <Select aria-label="dropdown" default="Please select:">
-        {mockOptions.map((option) => (
-          <option key={option.value} {...option} />
+        {mockOptions.map(({ value, label }) => (
+          <option key={value} value={value}>
+            {label}
+          </option>
         ))}
       </Select>
     )
@@ -88,8 +92,10 @@ describe(`Select component`, () => {
         {[
           ...mockOptions,
           { label: 'Option 4', value: 'value4', disabled: true }
-        ].map((option) => (
-          <option key={option.value} {...option} />
+        ].map(({ value, label, ...rest }) => (
+          <option key={value} value={value} {...rest}>
+            {label}
+          </option>
         ))}
       </Select>
     )
@@ -107,8 +113,10 @@ describe(`Select component`, () => {
         {[
           ...mockOptions,
           { label: 'Option 4', value: 'value4', disabled: true }
-        ].map((option) => (
-          <option key={option.value} {...option} />
+        ].map(({ value, label, ...rest }) => (
+          <option key={value} value={value} {...rest}>
+            {label}
+          </option>
         ))}
       </Select>
     )

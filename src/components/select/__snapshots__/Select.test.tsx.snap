@@ -195,17 +195,20 @@ exports[`Select component renders select with a default option 1`] = `
       Please select:
     </option>
     <option
-      label="Option 1"
       value="value1"
-    />
+    >
+      Option 1
+    </option>
     <option
-      label="Option 2"
       value="value2"
-    />
+    >
+      Option 2
+    </option>
     <option
-      label="Option 3"
       value="value3"
-    />
+    >
+      Option 3
+    </option>
   </select>
 </div>
 `;
@@ -267,22 +270,26 @@ exports[`Select component renders select with a disabled option 1`] = `
     class="sx8kxz1"
   >
     <option
-      label="Option 1"
       value="value1"
-    />
+    >
+      Option 1
+    </option>
     <option
-      label="Option 2"
       value="value2"
-    />
+    >
+      Option 2
+    </option>
     <option
-      label="Option 3"
       value="value3"
-    />
+    >
+      Option 3
+    </option>
     <option
       disabled=""
-      label="Option 4"
       value="value4"
-    />
+    >
+      Option 4
+    </option>
   </select>
 </div>
 `;
