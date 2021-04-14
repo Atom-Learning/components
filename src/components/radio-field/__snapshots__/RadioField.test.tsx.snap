@@ -30,7 +30,8 @@ exports[`RadioField component renders 1`] = `
   display: table;
 }
 
-.sxdiu5c-e1sda {
+.sxdiu5c-0fxuj {
+  padding: 0;
   margin-bottom: var(--space-3);
 }
 
@@ -77,16 +78,20 @@ exports[`RadioField component renders 1`] = `
   background-color: white;
 }
 
+.sxqqba1 {
+  all: unset;
+}
+
 <div>
   <form
     aria-label="form"
     class="sx03kze"
   >
     <fieldset
-      class="sx03kze"
+      class="sxqqba1"
     >
       <legend
-        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-e1sda"
+        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-0fxuj"
       >
         Example options
       </legend>

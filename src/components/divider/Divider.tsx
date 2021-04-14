@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 import { styled } from '~/stitches'
 
 export const Divider = styled('hr', {
@@ -7,5 +5,6 @@ export const Divider = styled('hr', {
   borderTop: '1px solid $tonal400',
   my: '$4',
   mx: 'auto',
-  maxWidth: '50%'
+  maxWidth: '50%',
+  width: '100%'
 })

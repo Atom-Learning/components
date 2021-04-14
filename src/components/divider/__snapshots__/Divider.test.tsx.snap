@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Divider component renders 1`] = `
-.sxz3z76 {
+.sxovzym {
   border: 0;
   border-top: 1px solid var(--colors-tonal400);
   margin-top: var(--space-4);
@@ -9,11 +9,12 @@ exports[`Divider component renders 1`] = `
   margin-left: auto;
   margin-right: auto;
   max-width: 50%;
+  width: 100%;
 }
 
 <div>
   <hr
-    class="sxz3z76"
+    class="sxovzym"
   />
 </div>
 `;

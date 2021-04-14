@@ -91,7 +91,8 @@ const StyledButton = styled('button', {
     isLoading: {
       true: {
         cursor: 'not-allowed',
-        opacity: 0.5
+        opacity: 0.5,
+        pointerEvents: 'none'
       }
     },
     fullWidth: {
