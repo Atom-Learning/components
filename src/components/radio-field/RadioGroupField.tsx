@@ -6,9 +6,13 @@ import { ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'
 import { ValidationError } from '~/components/validation-error'
-import { CSS } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { RadioField } from './RadioField'
+
+const Fieldset = styled('fieldset', {
+  all: 'unset'
+})
 
 type RadioGroupFieldProps = {
   css?: CSS
@@ -24,8 +28,8 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   const { control, errors } = useFormContext()
 
   return (
-    <Box as="fieldset" css={css}>
-      <Label as="legend" css={{ mb: '$3' }}>
+    <Fieldset css={css}>
+      <Label as="legend" css={{ p: 0, mb: '$3' }}>
         {label}
       </Label>
       <Controller
@@ -48,7 +52,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
           {errors[name].message}
         </ValidationError>
       )}
-    </Box>
+    </Fieldset>
   )
 }
 
