@@ -9,28 +9,21 @@ exports[`Grid component renders 1`] = `
   flex-wrap: wrap;
 }
 
-.sx723munxneq--gap-1 {
-  margin: calc(var(--space-1)*-1);
+.sx723mu4ht4h--gap-3 {
+  margin: calc(var(--space-3)*-1);
 }
 
-.sx723munxneq--gap-1 > * {
-  margin: var(--space-1);
+.sx723mu4ht4h--gap-3 > * {
+  margin: var(--space-3);
 }
 
-.sx723mu-ozkqi > * {
-  flex: 1 0 undefined;
-}
-
-.sx723mu-ozkqi {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+.sx723mu-ptyoi > * {
+  flex: 1 0 0.5em;
 }
 
 <div>
   <div
-    basis="0.5em"
-    class="sx2cs53 sx723mu sx723munxneq--gap-1 sx723mu-ozkqi"
+    class="sx2cs53 sx723mu sx723mu4ht4h--gap-3 sx723mu-ptyoi"
   >
     <div
       class="sx03kze"

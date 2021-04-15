@@ -22,7 +22,6 @@ const gap = Object.keys(theme.space).reduce(
 const StyledStack = styled('div', {
   display: 'flex',
   flexWrap: 'wrap',
-  width: 'max-content',
   '& > *': {
     m: 0
   },
@@ -54,7 +53,7 @@ export const Stack: React.FC<StackProps> = ({
   css,
   ...remainingProps
 }) => (
-  <CSSWrapper css={{ width: 'max-content', ...(css as any) }}>
+  <CSSWrapper css={css}>
     <StyledStack gap={gap} direction={direction} {...remainingProps} />
   </CSSWrapper>
 )
