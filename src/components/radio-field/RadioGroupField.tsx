@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
-import { Box } from '~/components/box'
 import { ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'

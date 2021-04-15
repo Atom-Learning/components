@@ -1,48 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sx9g3cf {
+.sx79vqa {
+  all: unset;
   font-family: var(--fonts-sans);
   padding-left: var(--space-3);
 }
 
-.sx9g3cf .sx03kze {
+.sx79vqa .sx03kze {
   padding-left: var(--space-2);
 }
 
-.sx9g3cf .sx03kze::marker {
+.sx79vqa .sx03kze::marker {
   content: "•";
   font-weight: bold;
 }
 
-.sx9g3cf .sx03kze:not(:last-child) {
+.sx79vqa .sx03kze:not(:last-child) {
   margin-bottom: var(--space-2);
 }
 
-.sx9g3cfk6wac--theme-tonal .sx03kze::marker {
+.sx79vqa .sx03kze:last-child {
+  margin-bottom: 0;
+}
+
+.sx79vqak6wac--theme-tonal .sx03kze::marker {
   color: var(--colors-tonal900);
 }
 
-.sx9g3cfjqqvr--size-md {
+.sx79vqa5dbgn--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sx9g3cfjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sx9g3cfjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
 <div>
   <ul
-    class="sx9g3cf sx9g3cfk6wac--theme-tonal sx9g3cfjqqvr--size-md"
+    class="sx79vqa sx79vqak6wac--theme-tonal sx79vqa5dbgn--size-md"
   >
     <li
       class="sx03kze"
