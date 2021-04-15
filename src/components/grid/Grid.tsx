@@ -1,17 +1,13 @@
 import theme from '@atom-learning/theme'
 import * as React from 'react'
 
-import { Flex } from '~/components/flex'
 import { CSS, styled } from '~/stitches'
 
 /**
  * output:
  * {
  *   0: {
- *     m: '-$space$0',
- *     '& > *': {
- *       m: '$space$0
- *     }
+ *     gap: '-$space$0',
  *   },
  *   ...etc.
  * }
@@ -20,17 +16,14 @@ const gap = Object.keys(theme.space).reduce(
   (acc, key) => ({
     ...acc,
     [key]: {
-      m: `-$space$${key}`,
-      '& > *': {
-        m: `$space$${key}`
-      }
+      gap: `$space$${key}`
     }
   }),
   {}
 ) as Record<keyof typeof theme.space, CSS>
 
-const GridContainer = styled(Flex, {
-  flexWrap: 'wrap',
+const GridContainer = styled('div', {
+  display: 'grid',
   variants: {
     gap
   }
@@ -47,15 +40,11 @@ export const Grid: React.FC<GridProps> = ({
   ...remainingProps
 }) => (
   <GridContainer
+    css={{
+      ...(css as any),
+      gridTemplateColumns: `repeat(auto-fit, minmax(${minItemSize}, 1fr))`
+    }}
     gap={gap}
-    css={
-      {
-        ...(css as any),
-        '& > *': {
-          flex: `1 0 ${minItemSize}`
-        }
-      } as CSS
-    }
     {...remainingProps}
   />
 )
