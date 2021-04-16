@@ -9,19 +9,7 @@ To read about Stitches in more depth you can refer to the [official documentatio
 
 `@atom-learning/components` exports not only a collection of React components built with Stitches but also the full Stitches library to allow full use of `styled()` and other related methods. This enables you to write more complex components with variants, typed tokens, descendant selectors, keyframe animations and more, some of which are unavailable when using `css`.
 
-When creating a new component alongside the component library we recommend that you utilise the `styled()` function to maintain a consistent component API. This will automatically provide `as` and `css` to the user without any extra configuration, in a way that `<Box />` or another generic layout component wouldn't.
-
-## Utilities
-
-Stitches enables you to create shorthand utilities to improve the CSS authoring experience within `styled()` or `css`. We have provided an initial set of utilities that should be a useful starting point when composing components with a need to provide contextual layout or styles.
-
-A quick example using `bg` and `size` to create a little blue square.
-
-```tsx preview
-<Box css={{ bg: '$primary200', size: 100 }} />
-```
-
-The full list of utilities can be found in the [components repository](https://github.com/Atom-Learning/components/blob/main/src/stitches.ts#L8-L72)
+When creating a new component alongside the component library we recommend that you utilise the `styled()` function to maintain a consistent component API. This will automatically provide `as` and `css` to the user without any extra configuration, in a way that `<Box />` or another generic layout component wouldn’t.
 
 ## Media Queries / Conditions
 
@@ -29,12 +17,12 @@ Stitches also has responsive styles built into its API, we've provided an initia
 
 ```ts
 export const conditions = {
-  sm: '@media (min-width: 550px)',
-  md: '@media (min-width: 800px)',
-  lg: '@media (min-width: 1100px)',
-  xl: '@media (min-width: 1350px)',
-  reducedMotion: '@media (prefers-reduced-motion)',
-  hover: '@media (hover: hover)'
+  sm: '(min-width: 550px)',
+  md: '(min-width: 800px)',
+  lg: '(min-width: 1100px)',
+  xl: '(min-width: 1350px)',
+  reducedMotion: '(prefers-reduced-motion)',
+  hover: '(hover: hover)'
 }
 ```
 
@@ -73,3 +61,15 @@ You can also use them to switch [variants](https://stitches.dev/docs/variants)
 ```
 
 Read more about responsive styling on the [Stitches docs](https://stitches.dev/docs/responsive-styles)
+
+## Utilities
+
+Stitches enables you to create shorthand utilities to improve the CSS authoring experience within `styled()` or `css`. We have provided an initial set of utilities that should be a useful starting point when composing components with a need to provide contextual layout or styles.
+
+A quick example using `bg` and `size` to create a little blue square.
+
+```tsx preview
+<Box css={{ bg: '$primary200', size: 100 }} />
+```
+
+The full list of utilities can be found in the [component library source](https://github.com/Atom-Learning/components/blob/main/src/stitches.ts)
