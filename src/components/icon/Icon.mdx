@@ -1,22 +1,30 @@
 ---
 title: Icon
 component: Icon
-description: A standardised way to render icons
+description: A standardised way to render icons, ensuring that only the icons you use are included in your output
 category: Content
 ---
 
-`Icon` requires an SVG from our icon library and adds standardised `size` options. Review available icons on the [icon listing page](/theme/icons)
-
-## Sizes
-
-```tsx live
-<Icon is={Danger} size="sm" />
-```
+`Icon` is a light wrapper component that provides a standardised set of styles to the icon in use. It requires an SVG from our icon library to be passed into the `is` prop.
 
 ```tsx preview
-<Icon is={Eye} size="md" />
+<Stack gap="4">
+  <Icon is={BatteryMedium} />
+  <Icon is={Crossing} />
+  <Icon is={EyeCrossed} />
+  <Icon is={Paperclip} />
+  <Icon is={Sun} />
+  <Icon is={Wheelchair} />
+</Stack>
 ```
 
-```tsx preview
-<Icon is={Brightness} size="lg" />
+Ensure that you pair the imported icon (in this case `Brightness`) with the `Icon` component to render in a consistent and reliable way. Review the available icons on the [icon listing page](/theme/icons)
+
+```tsx
+import { Icon } from '@atom-learning/components'
+import { Brightness } from '@atom-learning/icons'
+
+const Component = () => (
+  <Icon is={Brightness} size="lg" css={{ color: '$primary500' }} />
+)
 ```
