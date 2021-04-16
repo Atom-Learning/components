@@ -1,6 +1,6 @@
 ---
 title: Contributing
-description: When contributing to this repository, use the following information to uphold the standards we have set for this project.
+description: When contributing to this repository, use the following information to uphold the standards we have set for this project
 category: Overview
 ---
 
@@ -11,13 +11,13 @@ In this document, you will find all the necessary information to develop and tes
 
 Clone the repo
 
-```
+```bash
 git clone git@github.com:atom-learning/components.git
 ```
 
 Install dependencies
 
-```
+```bash
 yarn install
 ```
 

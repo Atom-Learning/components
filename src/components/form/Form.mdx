@@ -12,12 +12,12 @@ priority: 1
 
 `Form` is compatible with all our field components (i.e. `InputField`, not `Input`) and is also compatible with custom fields so long as they call `useFormContext()` and use:
 
-- `register` or `control` to register with the form per `react-hook-form`'s docs
+- `register` or `control` to register with the form per `react-hook-form`’s docs
 - `errors` to display any errors for the relevant field
 
 Custom field components should also accept a `validation` prop of type `ValidationOptions` and apply it to the field when present.
 
-Here's an example using a simplified version of our `InputField`:
+Here’s an example using a simplified version of our `InputField`:
 
 ```tsx
 const InputField = ({ label, name, validation }) => {
@@ -117,7 +117,7 @@ The `validate` property accepts a function of type `(value: any) => boolean | st
     validation={{
       validate: (value) => {
         return (
-          ['A', 'E', 'I', 'O', 'U'].contains(value) || "That's not a vowel!"
+          ['A', 'E', 'I', 'O', 'U'].contains(value) || 'That’s not a vowel!'
         )
       }
     }}
@@ -141,7 +141,7 @@ The `process` property accepts a function of type `(value: any) => any`. It can 
 
 ## Composing form field components
 
-It's easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `ValidationError` etc) but there are some requirements that your new
+It’s easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `ValidationError` etc) but there are some requirements that your new
 field must meet in order to be fully compatible with our `Form`.
 
 ### Props
@@ -150,7 +150,7 @@ Your custom form field component must take the props specified in [General](#Gen
 
 #### error
 
-`error` should be displayed in a `ValidationError` when present. You don't need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
+`error` should be displayed in a `ValidationError` when present. You don’t need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
 
 #### validation
 
@@ -158,7 +158,7 @@ Your custom form field component must take the props specified in [General](#Gen
 
 #### register
 
-If you don't need to add any default validation to your component, then pass `register?.(validation)` down to the `Input` (or `Select`, etc) component's `ref` prop.
+If you don’t need to add any default validation to your component, then pass `register?.(validation)` down to the `Input` (or `Select`, etc) component’s `ref` prop.
 If you do want to add default validation, pass something like this:
 
 ```ts

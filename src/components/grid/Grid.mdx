@@ -9,7 +9,7 @@ The `gap` prop specifies the distance between items in the grid using the theme'
 
 **Note:** Passing percentage values into `minItemSize` will result in unintuitive behaviour. E.g. `minItemSize="50%"` will result in only one item per row because `50%` `width` + any `gap` between the items means the total width of the row will be `50%` + `50%` + `gap` which will wrap the second item onto the next line.
 
-```tsx live
+```tsx preview
 <Grid minItemSize="10em" gap="3" css={{ width: '100%' }}>
   {Array.from(Array(6)).map((_, i) => (
     <Box key={i} css={{ bg: '$primary200', height: '10em' }} />
