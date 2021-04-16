@@ -6,7 +6,9 @@ import { Override } from '~/utilities'
 import { textVariantSize } from '../text'
 
 const StyledLink = styled('a', {
-  all: 'unset',
+  bg: 'unset',
+  border: 'unset',
+  p: 'unset',
   color: '$primary500',
   cursor: 'pointer',
   fontFamily: '$sans',

@@ -95,25 +95,27 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxnygap {
-  all: unset;
+.sxx4uif {
+  background: unset;
+  border: unset;
+  padding: unset;
   color: var(--colors-primary500);
   cursor: pointer;
   font-family: var(--fonts-sans);
   text-decoration: none;
 }
 
-.sxnygap:focus,
-.sxnygap:hover {
+.sxx4uif:focus,
+.sxx4uif:hover {
   color: var(--colors-primary900);
   text-decoration: underline;
 }
 
-.sxnygap:active {
+.sxx4uif:active {
   color: var(--colors-primary500);
 }
 
-.sxnygapdi0z9--size-sm {
+.sxx4uifdi0z9--size-sm {
   font-size: var(--fontSizes-sm);
   line-height: 1.69;
 }
@@ -132,7 +134,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sxnygap sxnygapdi0z9--size-sm"
+        class="sxx4uif sxx4uifdi0z9--size-sm"
         href="https://example.com"
       >
         Example prompt

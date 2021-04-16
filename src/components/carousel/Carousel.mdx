@@ -12,28 +12,26 @@ Note that `Carousel.Slide`s must receive an `index` prop in order to correctly a
 
 ```tsx preview
 <Carousel
-  slideWidth={400}
-  slideHeight={350}
-  numSlides={2}
-  css={{
-    position: 'relative',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center'
-  }}
+  slideWidth={200}
+  slideHeight={200}
+  numSlides={3}
+  css={{ position: 'relative' }}
 >
   <Carousel.ArrowPrevious css={{ position: 'absolute', left: '$2' }} />
   <Carousel.ArrowNext css={{ position: 'absolute', right: '$2' }} />
 
   <Carousel.Slider aria-label="Example carousel" css={{ mb: '$4' }}>
     <Carousel.Slide index={1} aria-label="Slide 1">
-      <Image alt="" src="https://atomlearning.co.uk/images/key-img.png" />
+      <Box css={{ bg: '$primary200', size: 200 }} />
     </Carousel.Slide>
     <Carousel.Slide index={2} aria-label="Slide 2">
-      <Image alt="" src="https://atomlearning.co.uk/images/nucleus-img-2.png" />
+      <Box css={{ bg: '$primary300', size: 200 }} />
+    </Carousel.Slide>
+    <Carousel.Slide index={3} aria-label="Slide 3">
+      <Box css={{ bg: '$primary400', size: 200 }} />
     </Carousel.Slide>
   </Carousel.Slider>
 
-  <Carousel.Pagination />
+  <Carousel.Pagination css={{ mx: 'auto', width: 'max-content' }} />
 </Carousel>
 ```

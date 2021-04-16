@@ -10,11 +10,13 @@ import { CSS, styled } from '~/stitches'
 
 const buttonStyles = {
   alignItems: 'center',
-  bg: 'none',
-  border: 'none',
+  bg: 'unset',
+  border: 'unset',
   color: '$primary900',
   cursor: 'pointer',
   display: 'flex',
+  justifyContent: 'center',
+  p: 'unset',
   size: '$4',
   top: '50%',
   transform: 'translateY(-50%)',

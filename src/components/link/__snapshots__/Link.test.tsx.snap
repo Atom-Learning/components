@@ -1,32 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component renders an anchor 1`] = `
-.sxnygap {
-  all: unset;
+.sxx4uif {
+  background: unset;
+  border: unset;
+  padding: unset;
   color: var(--colors-primary500);
   cursor: pointer;
   font-family: var(--fonts-sans);
   text-decoration: none;
 }
 
-.sxnygap:focus,
-.sxnygap:hover {
+.sxx4uif:focus,
+.sxx4uif:hover {
   color: var(--colors-primary900);
   text-decoration: underline;
 }
 
-.sxnygap:active {
+.sxx4uif:active {
   color: var(--colors-primary500);
 }
 
-.sxnygap5dbgn--size-md {
+.sxx4uif5dbgn--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
 <div>
   <a
-    class="sxnygap sxnygap5dbgn--size-md"
+    class="sxx4uif sxx4uif5dbgn--size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -35,37 +37,39 @@ exports[`Link component renders an anchor 1`] = `
 `;
 
 exports[`Link component renders an large anchor 1`] = `
-.sxnygap {
-  all: unset;
+.sxx4uif {
+  background: unset;
+  border: unset;
+  padding: unset;
   color: var(--colors-primary500);
   cursor: pointer;
   font-family: var(--fonts-sans);
   text-decoration: none;
 }
 
-.sxnygap:focus,
-.sxnygap:hover {
+.sxx4uif:focus,
+.sxx4uif:hover {
   color: var(--colors-primary900);
   text-decoration: underline;
 }
 
-.sxnygap:active {
+.sxx4uif:active {
   color: var(--colors-primary500);
 }
 
-.sxnygap5dbgn--size-md {
+.sxx4uif5dbgn--size-md {
   font-size: var(--fontSizes-md);
   line-height: 1.625;
 }
 
-.sxnygapn3mo2--size-lg {
+.sxx4uifn3mo2--size-lg {
   font-size: var(--fontSizes-lg);
   line-height: 1.52;
 }
 
 <div>
   <a
-    class="sxnygap sxnygapn3mo2--size-lg"
+    class="sxx4uif sxx4uifn3mo2--size-lg"
     href="https://google.com/"
   >
     GOOGLE
