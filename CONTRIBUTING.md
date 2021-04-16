@@ -23,7 +23,7 @@ yarn install
 
 **Before starting to develop on this project, please consider the following:**
 
-- Read the [contribution guide](https://design.atomlearning.technology/components/contributing)
+- Read the entire contribution guide
 - Read the [accessibility section](https://design.atomlearning.technology/components/accessibility)
 - Read the [versioning section](https://design.atomlearning.technology/components/versioning)
 - Check that the `pre-commit` hooks work before pushing into a branch
