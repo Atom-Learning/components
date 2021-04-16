@@ -12,9 +12,9 @@ Note that `Carousel.Slide`s must receive an `index` prop in order to correctly a
 
 ```tsx preview
 <Carousel
-  slideWidth={400}
-  slideHeight={350}
-  numSlides={2}
+  slideWidth={200}
+  slideHeight={200}
+  numSlides={3}
   css={{ position: 'relative' }}
 >
   <Carousel.ArrowPrevious css={{ position: 'absolute', left: '$2' }} />
@@ -22,10 +22,13 @@ Note that `Carousel.Slide`s must receive an `index` prop in order to correctly a
 
   <Carousel.Slider aria-label="Example carousel">
     <Carousel.Slide index={1} aria-label="Slide 1">
-      <Image alt="" src="https://atomlearning.co.uk/images/key-img.png" />
+      <Box css={{ bg: '$primary200', size: 200 }} />
     </Carousel.Slide>
     <Carousel.Slide index={2} aria-label="Slide 2">
-      <Image alt="" src="https://atomlearning.co.uk/images/nucleus-img-2.png" />
+      <Box css={{ bg: '$primary400', size: 200 }} />
+    </Carousel.Slide>
+    <Carousel.Slide index={3} aria-label="Slide 3">
+      <Box css={{ bg: '$primary600', size: 200 }} />
     </Carousel.Slide>
   </Carousel.Slider>
 
