@@ -7,8 +7,9 @@ import { textVariantSize } from '../text'
 const StyledLi = styled('li', {})
 
 const StyledUl = styled('ul', {
-  all: 'unset',
   fontFamily: '$sans',
+  m: 'unset',
+  p: 'unset',
   pl: '$3',
   [`& ${StyledLi}`]: {
     pl: '$2',

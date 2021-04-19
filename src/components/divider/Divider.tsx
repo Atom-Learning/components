@@ -5,6 +5,5 @@ export const Divider = styled('hr', {
   borderTop: '1px solid $tonal400',
   my: '$4',
   mx: 'auto',
-  maxWidth: '50%',
-  width: '100%'
+  width: '50%'
 })

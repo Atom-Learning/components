@@ -33,17 +33,9 @@ type LinkProps = Override<
 >
 
 export const Link: React.FC<LinkProps> = React.forwardRef(
-  ({ size = 'md', href, ...remainingProps }, ref) => {
-    return (
-      <StyledLink
-        as={href ? 'a' : 'button'}
-        href={href}
-        size={size}
-        {...remainingProps}
-        ref={ref}
-      />
-    )
-  }
+  ({ size = 'md', ...remainingProps }, ref) => (
+    <StyledLink size={size} {...remainingProps} ref={ref} />
+  )
 )
 
 Link.displayName = 'Link'

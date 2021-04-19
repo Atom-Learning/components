@@ -9,49 +9,51 @@ import { Override } from '~/utilities'
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
   color: baseColor,
-  backgroundColor: 'white',
+  bg: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
     color: interactColor,
-    backgroundColor: 'white'
+    bg: 'white'
   },
   '&:active': {
     color: baseColor
   },
   '&[disabled]': {
-    backgroundColor: 'white',
+    bg: 'white',
     color: interactColor
   }
 })
 
 const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
-  backgroundColor: baseColor,
+  bg: baseColor,
   color: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
-    backgroundColor: interactColor
+    bg: interactColor
   },
   '&:active': {
-    backgroundColor: baseColor
+    bg: baseColor
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
+    bg: '$tonal300',
     color: '$tonal600'
   }
 })
 
 const StyledButton = styled('button', {
-  all: 'unset',
+  alignItems: 'center',
+  bg: 'unset',
+  border: 'unset',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
   fontFamily: '$sans',
   fontWeight: 500,
+  justifyContent: 'center',
   letterSpacing: '0.02em',
   lineHeight: 1.4,
-  transition: 'all 125ms ease-out',
+  p: 'unset',
   textDecoration: 'none',
+  transition: 'all 125ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
