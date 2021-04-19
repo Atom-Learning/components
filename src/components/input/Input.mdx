@@ -1,19 +1,19 @@
 ---
 title: Input
 component: Input
-description: Input is the lowest-level input component for text and number types.
+description: Input is the lowest-level input component for text and number types
 category: Forms
 ---
 
 Inputs should be accompanied by labels, so rather than using `Input` directly in a UI,
-it's normally best to use a field component, which combines an `Input` with a `Label` and
+it’s normally best to use a field component, which combines an `Input` with a `Label` and
 displays validation errors. If none of the existing field components suit your needs,
 it might be worth adding a new one.
 
 `Input` accepts a subset of the `types` that an HTML `input` element because we have more specialised
 components for the others (e.g. `Checkbox`, `Radio`).
 
-```jsx live
+```tsx live
 <Input placeholder="Placeholder text" css={{ width: 300 }} />
 ```
 

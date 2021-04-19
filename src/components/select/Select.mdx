@@ -1,7 +1,7 @@
 ---
 title: Select
 component: Select
-description: Select is a light wrapper around the HTML select element.
+description: Select is a light wrapper around the HTML select element
 category: Forms
 ---
 
@@ -9,7 +9,7 @@ It adds default styling and the `css` prop.
 
 A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.
 
-```jsx preview
+```tsx preview
 <Select css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas">Bananas</option>
@@ -24,7 +24,7 @@ For accessibility purposes the component needs to have the `id` prop set, to lin
 
 The component can display a placeholder without a value by passing the `placeholder` property.
 
-```jsx preview
+```tsx preview
 <Select placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas">Bananas</option>
@@ -35,7 +35,7 @@ The component can display a placeholder without a value by passing the `placehol
 
 The component has a `disabled` state, by setting the `disabled` property.
 
-```jsx preview
+```tsx preview
 <Select disabled placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas">Bananas</option>
@@ -46,7 +46,7 @@ The component has a `disabled` state, by setting the `disabled` property.
 
 The component can show an option as `disabled`, by setting the `disabled` property on the option.
 
-```jsx preview
+```tsx preview
 <Select placeholder="Please select a fruit" css={{ width: 300 }}>
   <option value="apples">Apples</option>
   <option value="bananas" disabled>
