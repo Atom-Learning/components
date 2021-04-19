@@ -1,58 +1,52 @@
 ---
 title: Box
 component: Box
-description: Box is our most fundamental layout component.
+description: Box is our most fundamental layout component
 category: Layout
 ---
 
-Many other components are composed of `Box`, for example, this card:
+`Box` can largely be seen as an abstraction over the `div` element. It is most useful when used as a generic containing component, and when paired with `as` and `css` allows a high degree of composition and flexibility.
 
-```jsx live
+`Box` falls back to rendering a `div`, but we should use it to render more sematically relevant container elements e.g. `<Box as="section">`. As an example, a card component could use `Box` to render a `section`, `header` and `footer`.
+
+Avoid rendering any of these elements directly in our components — `Box` has all the same flexibility, but with the addition of the powerful `css` prop and various styling utilities based on our themes.
+
+## Example
+
+To show an example of the benefits of using `Box`, the card below is composed together using `Box` alongside other relevant components:
+
+```tsx live
 <Box
   as="article"
   css={{
     border: '1px solid $tonal300',
-    borderRadius: '$1',
-    overflow: 'hidden'
+    borderRadius: '$2',
+    overflow: 'hidden',
+    width: '320px'
   }}
 >
-  <Box as="header" css={{ bg: '$tonal300', p: '$3' }}>
-    <Heading as="h2" size="sm">
-      Cats!
-    </Heading>
-  </Box>
-  <Box as="figure" css={{ m: 0, p: '$3' }}>
-    <Image
-      src="http://placekitten.com/280/120"
-      alt="Cats having a nice time"
-      css={{ mb: '$2' }}
-    />
-    <Text as="figcaption" size="sm">
+  <Box as="figure" css={{ m: 0, position: 'relative' }}>
+    <Image src="http://placekitten.com/320/200" alt="Cats having a nice time" />
+    <Text
+      as="figcaption"
+      size="sm"
+      css={{
+        bottom: '$2',
+        color: 'white',
+        position: 'absolute',
+        right: '$2'
+      }}
+    >
       Here is a cute cat
     </Text>
   </Box>
-  <Box as="footer" css={{ p: '$3' }}>
-    <Text>Remember: cats have whiskers!</Text>
+  <Box css={{ px: '$3', py: '$4' }}>
+    <Heading as="h2" size="sm" css={{ mb: '$3' }}>
+      Cat
+    </Heading>
+    <Text>
+      The cat (Felis catus) is a domestic species of small carnivorous mammal.
+    </Text>
   </Box>
-</Box>
-```
-
-`Box` falls back to rendering a `div`, but we can use it to render any other container element with e.g. `<Box as="section">`. For example, a card component will use `Box` to render a `section`, `header` and `footer`.
-
-Avoid rendering any of these elements directly in our components — `Box` has all the same flexibility, but with the addition of the powerful `css` prop and various styling utilities based on our themes.
-
-```jsx live
-<Box
-  css={{
-    bg: '$tertiary500',
-    borderRadius: '$1',
-    boxShadow: '$1',
-    color: 'white',
-    p: '$4',
-    textAlign: 'center',
-    width: 250
-  }}
->
-  Some text in a Box
 </Box>
 ```

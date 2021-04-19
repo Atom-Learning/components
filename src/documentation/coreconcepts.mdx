@@ -13,7 +13,7 @@ Each component in the design system is built from a `styled()` function and this
 
 To apply the correct semantic element to one of our components, you can use `as` and pass in a string HTML element. For example, when using the `Heading` component you can pass in `h3` to use that element.
 
-```jsx
+```tsx
 <Heading as="h3">Hello World</Heading>
 ```
 
@@ -33,7 +33,7 @@ The benefit of using the `css` prop as opposed to writing inline styles is that 
 
 An additional benefit is that we can apply context specific styles to the component only when necessary and avoid the problem of assuming usage and intent when authoring the components. Adding styles to a component that may affect surrounding components is a side-effect, and our aim should always be to avoid adding side-effects to our encapsulated, reusable components.
 
-```jsx
+```tsx
 <Box
   css={{
     // we can write standard CSS here

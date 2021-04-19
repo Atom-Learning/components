@@ -1,11 +1,47 @@
 ---
 title: Contributing
-description: When contributing to this repository, use the following information to uphold the standards we have set for this project.
+description: When contributing to this repository, use the following information to uphold the standards we have set for this project
 category: Overview
 ---
 
 Everyone is encouraged to contribute to the development of this project. If you spot a missing component or an additional feature, please raise an issue in GitHub using the [feature request template](https://github.com/atom-learning/components/issues/new?template=request-a-feature.md).
 In this document, you will find all the necessary information to develop and test the features. Therefore, please review this document and the `README.md` before you get started.
+
+## Getting started
+
+Clone the repo
+
+```bash
+git clone git@github.com:atom-learning/components.git
+```
+
+Install dependencies
+
+```bash
+yarn install
+```
+
+**Before starting to develop on this project, please consider the following:**
+
+- Read the entire contribution guide
+- Read the [accessibility section](https://design.atomlearning.technology/components/accessibility)
+- Read the [versioning section](https://design.atomlearning.technology/components/versioning)
+- Check that the `pre-commit` hooks work before pushing into a branch
+- Always commit your changes to a branch and request a code review by raising a PR.
+- Always include tests for the changes introduced
+
+### Available scripts
+
+- `dev`: Builds the libary in dev mode and watches for changes
+- `start:sandbox`: Starts up a simple sandbox to test changes
+- `build:lib`: Builds the library and populates the `dist` folder
+- `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project.
+- `clean`: Deletes the `dist` folder to ensure a clean build
+- `format`: Formats the code using `Prettier`
+- `lint`: Lints and fixes syntax issues with the code using `ESLint`
+- `test`: Runs the testing suite using `Jest`
+- `test:watch`: Runs the testing suite in watch mode
+- `validate`: Runs all the validate commands to: audit any additional dependencies, detect linting/syntax issues, detect typescript compilation errors, prints the output size and flags any potential build issues. See `package.json` for more details.
 
 ## Commits
 
@@ -35,11 +71,11 @@ Commits that introduce a breaking change should start with `feat!:` and include 
 
 Here is an example of the release type that will be done based on a commit messages:
 
-| Commit message                                                                                                                                                                                   | Release type           |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- |
-| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                             | Patch Release          |
-| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                       | Minor Release          |
-| `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | Major Breaking Release |
+| Commit message                                                                                                                                                                                        | Release type           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| `fix(pencil): stop graphite breaking when too much pressure applied`                                                                                                                                  | Patch Release          |
+| `feat(pencil): add 'graphiteWidth' option`                                                                                                                                                            | Minor Release          |
+| `perf(pencil): remove graphiteWidth option`<br /><br />`BREAKING CHANGE: The graphiteWidth option has been removed.`<br/>`The default graphite width of 10mm is always used for performance reasons.` | Major Breaking Release |
 
 **Notes:**
 
@@ -134,18 +170,19 @@ Each component should have documentation that covers the following:
 We use YAML frontmatter to add metadata to our documentation. The available fields are:
 
 - `title` - The title of the page, usually the name of the component. It can be made more readable, e.g. `CSS Wrapper` instead of `CSSWrapper`
-- `component` - The name of the component; this is used to extract prop-types, so must be exact.
+- `component` - The name of the component; this is used to extract prop-types, so must be exact. This can also be a comma separated list if additional components are exported or included in the root export. e.g. `Dialog,Dialog.Trigger,Dialog.Content`
 - `description` - A high-level description of the component and its usage will be shown as the page's opening statement.
 - `category` - A category to group with related components
+- `priority` - Provides the ability to prioritise the content within its category, e.g. `1` will be listed before other content that has higher or no `priority` defined
 
 There is no need to add a main `# Heading` to your page as the documentation site will add it automatically from your `title` field. Avoid manually adding a `PropsTable` as this will be automated, or adding custom `import`s as these will break the MDX parser.
 
-To show code examples and component previews in your documentation, use the code block syntax with a language, in our case, likely `jsx`.
+To show code examples and component previews in your documentation, use the code block syntax with a language, in our case, `tsx`.
 
 The following basic example will show just the code:
 
 ````md
-```jsx
+```tsx
 <Button />
 ```
 ````
@@ -153,7 +190,7 @@ The following basic example will show just the code:
 Adding `preview` will also render the code above the code block:
 
 ````md
-```jsx preview
+```tsx preview
 <Button />
 ```
 ````
@@ -161,7 +198,7 @@ Adding `preview` will also render the code above the code block:
 Adding `live` will render the code and adds the ability to live edit:
 
 ````md
-```jsx live
+```tsx live
 <Button />
 ```
 ````
