@@ -38,7 +38,7 @@ exports[`Loader component renders a loader 1`] = `
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: currentColor;
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
 }
 
 .sxe5oww:nth-child(1) {

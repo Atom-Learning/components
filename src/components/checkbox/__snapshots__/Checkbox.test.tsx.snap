@@ -6,8 +6,8 @@ exports[`Checkbox component renders a checkbox 1`] = `
   appearance: none;
   background-color: transparent;
   border: none;
-  border-radius: var(--radii-0);
-  box-shadow: inset 0 0 0 2px var(--colors-secondary300);
+  border-radius: var(--sx-radii-0);
+  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary300);
   color: white;
   cursor: pointer;
   height: 20px;
@@ -21,19 +21,19 @@ exports[`Checkbox component renders a checkbox 1`] = `
 
 .sx1i2hs[data-state="unchecked"]:focus,
 .sx1i2hs[data-state="unchecked"]:hover {
-  background-color: var(--colors-tonal300);
-  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+  background-color: var(--sx-colors-tonal300);
+  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
   outline: none;
 }
 
 .sx1i2hs[data-state="checked"] {
-  background-color: var(--colors-secondary300);
+  background-color: var(--sx-colors-secondary300);
 }
 
 .sx1i2hs[data-state="checked"]:hover,
 .sx1i2hs[data-state="unchecked"]:focus {
-  background-color: var(--colors-secondary700);
-  box-shadow: inset 0 0 0 2px var(--colors-secondary700);
+  background-color: var(--sx-colors-secondary700);
+  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
   outline: none;
 }
 

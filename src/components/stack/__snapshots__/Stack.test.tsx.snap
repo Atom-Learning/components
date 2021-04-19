@@ -16,13 +16,13 @@ exports[`Stack component renders 1`] = `
 }
 
 .sxbcohhsxrde--gap-2 {
-  margin-top: calc(var(--space-2)*-1);
-  margin-left: calc(var(--space-2)*-1);
+  margin-top: calc(var(--sx-space-2)*-1);
+  margin-left: calc(var(--sx-space-2)*-1);
 }
 
 .sxbcohhsxrde--gap-2 > * {
-  margin-top: var(--space-2);
-  margin-left: var(--space-2);
+  margin-top: var(--sx-space-2);
+  margin-left: var(--sx-space-2);
 }
 
 <div>

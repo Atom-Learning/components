@@ -3,9 +3,9 @@
 exports[`Divider component renders 1`] = `
 .sx5qf7f {
   border: 0;
-  border-top: 1px solid var(--colors-tonal400);
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-4);
+  border-top: 1px solid var(--sx-colors-tonal400);
+  margin-top: var(--sx-space-4);
+  margin-bottom: var(--sx-space-4);
   margin-left: auto;
   margin-right: auto;
   width: 50%;

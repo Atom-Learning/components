@@ -6,7 +6,7 @@ exports[`Grid component renders 1`] = `
 }
 
 .sxcwh656l7do--gap-3 {
-  gap: var(--space-3);
+  gap: var(--sx-space-3);
 }
 
 .sxcwh65-j1ipy {

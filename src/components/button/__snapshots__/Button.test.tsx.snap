@@ -34,12 +34,12 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 .sxib16rmbqqh--size-md {
-  height: var(--sizes-2);
-  width: var(--sizes-2);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
 }
 
 .sxib16r-yd47z {
-  margin-left: var(--space-2);
+  margin-left: var(--sx-space-2);
 }
 
 .sx03kze-e0n2q {
@@ -65,7 +65,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   background-color: currentColor;
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
 }
 
 .sxe5oww:nth-child(1) {
@@ -91,10 +91,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -112,14 +112,14 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9lmkcj--isRounded-true {
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
 }
 
 .sxqwab9h1fyd--isLoading-true {
@@ -129,66 +129,66 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 .sxqwab91yr1x--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
   background: white;
 }
 
 .sxqwab91yr1x--c2:not([disabled]):hover,
 .sxqwab91yr1x--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
   background: white;
 }
 
 .sxqwab91yr1x--c2:active {
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
 }
 
 .sxqwab91yr1x--c2[disabled] {
   background: white;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
 }
 
 <div>
@@ -229,10 +229,10 @@ exports[`Button component renders a button 1`] = `
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -250,29 +250,29 @@ exports[`Button component renders a button 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 <div>
@@ -297,22 +297,22 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 .sxib16rmbqqh--size-md {
-  height: var(--sizes-2);
-  width: var(--sizes-2);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
 }
 
 .sxib16r-yd47z {
-  margin-left: var(--space-2);
+  margin-left: var(--sx-space-2);
 }
 
 .sxqwab9 {
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -330,73 +330,73 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 .sxqwab91yr1x--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
   background: white;
 }
 
 .sxqwab91yr1x--c2:not([disabled]):hover,
 .sxqwab91yr1x--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
   background: white;
 }
 
 .sxqwab91yr1x--c2:active {
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
 }
 
 .sxqwab91yr1x--c2[disabled] {
   background: white;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
 }
 
 <div>
@@ -424,10 +424,10 @@ exports[`Button component renders a disabled button 1`] = `
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -445,51 +445,51 @@ exports[`Button component renders a disabled button 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 <div>
@@ -508,10 +508,10 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -529,73 +529,73 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 .sxqwab91yr1x--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
   background: white;
 }
 
 .sxqwab91yr1x--c2:not([disabled]):hover,
 .sxqwab91yr1x--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
   background: white;
 }
 
 .sxqwab91yr1x--c2:active {
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
 }
 
 .sxqwab91yr1x--c2[disabled] {
   background: white;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
 }
 
 <div>
@@ -614,10 +614,10 @@ exports[`Button component renders a outline button 1`] = `
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -635,51 +635,51 @@ exports[`Button component renders a outline button 1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 <div>
@@ -704,22 +704,22 @@ exports[`Button component renders a rounded button  1`] = `
 }
 
 .sxib16rmbqqh--size-md {
-  height: var(--sizes-2);
-  width: var(--sizes-2);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
 }
 
 .sxib16r-yd47z {
-  margin-left: var(--space-2);
+  margin-left: var(--sx-space-2);
 }
 
 .sxqwab9 {
   align-items: center;
   background: unset;
   border: unset;
-  border-radius: var(--radii-0);
+  border-radius: var(--sx-radii-0);
   cursor: pointer;
   display: flex;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   justify-content: center;
   letter-spacing: 0.02em;
@@ -737,77 +737,77 @@ exports[`Button component renders a rounded button  1`] = `
 }
 
 .sxqwab9fz3et--size-md {
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
-  padding-left: var(--space-4);
-  padding-right: var(--space-4);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-4);
+  padding-right: var(--sx-space-4);
 }
 
 .sxqwab9lmkcj--isRounded-true {
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
 }
 
 .sxqwab9gcfz3--c2 {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
   color: white;
 }
 
 .sxqwab9gcfz3--c2:not([disabled]):hover,
 .sxqwab9gcfz3--c2:not([disabled]):focus {
-  background: var(--colors-primary900);
+  background: var(--sx-colors-primary900);
 }
 
 .sxqwab9gcfz3--c2:active {
-  background: var(--colors-primary500);
+  background: var(--sx-colors-primary500);
 }
 
 .sxqwab9gcfz3--c2[disabled] {
-  background: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal600);
 }
 
 .sxqwab9zvt14--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
   background: white;
 }
 
 .sxqwab9zvt14--c2:not([disabled]):hover,
 .sxqwab9zvt14--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
   background: white;
 }
 
 .sxqwab9zvt14--c2:active {
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxqwab9zvt14--c2[disabled] {
   background: white;
-  color: var(--colors-primary900);
+  color: var(--sx-colors-primary900);
 }
 
 .sxqwab91yr1x--c2 {
   box-shadow: inset 0 0 0 2px;
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
   background: white;
 }
 
 .sxqwab91yr1x--c2:not([disabled]):hover,
 .sxqwab91yr1x--c2:not([disabled]):focus {
   text-decoration: none;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
   background: white;
 }
 
 .sxqwab91yr1x--c2:active {
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
 }
 
 .sxqwab91yr1x--c2[disabled] {
   background: white;
-  color: var(--colors-secondary900);
+  color: var(--sx-colors-secondary900);
 }
 
 <div>
