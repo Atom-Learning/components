@@ -2,14 +2,14 @@
 
 exports[`ValidationError component renders a validation error 1`] = `
 .sxfey5o {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
   font-weight: 400;
   margin: 0;
 }
 
 .sxfey5oxzxpn--size-sm {
-  font-size: var(--fontSizes-sm);
+  font-size: var(--sx-fontSizes-sm);
   line-height: 1.69;
 }
 
@@ -26,7 +26,7 @@ exports[`ValidationError component renders a validation error 1`] = `
 }
 
 .sxfey5o-25jen {
-  color: var(--colors-danger);
+  color: var(--sx-colors-danger);
 }
 
 <div>

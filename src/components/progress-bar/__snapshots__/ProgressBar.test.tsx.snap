@@ -2,7 +2,7 @@
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
 .sxdyqdb {
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
   height: 12px;
   position: relative;
   overflow: hidden;
@@ -10,9 +10,9 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 }
 
 .sxdyqdb4bknw--c2 {
-  border: 1px solid var(--colors-tonal400);
+  border: 1px solid var(--sx-colors-tonal400);
   background: white;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxypqsd {
@@ -44,7 +44,7 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
 .sxdyqdb {
-  border-radius: var(--radii-round);
+  border-radius: var(--sx-radii-round);
   height: 12px;
   position: relative;
   overflow: hidden;
@@ -52,20 +52,20 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
 }
 
 .sxdyqdb4bknw--c2 {
-  border: 1px solid var(--colors-tonal400);
+  border: 1px solid var(--sx-colors-tonal400);
   background: white;
-  color: var(--colors-primary500);
+  color: var(--sx-colors-primary500);
 }
 
 .sxdyqdb4qfa7--c2 {
-  border: 1px solid var(--colors-tonal400);
+  border: 1px solid var(--sx-colors-tonal400);
   background: white;
-  color: var(--colors-secondary500);
+  color: var(--sx-colors-secondary500);
 }
 
 .sxdyqdbmrg77--c2 {
-  background: var(--colors-tonal300);
-  color: var(--colors-primary500);
+  background: var(--sx-colors-tonal300);
+  color: var(--sx-colors-primary500);
 }
 
 .sxypqsd {

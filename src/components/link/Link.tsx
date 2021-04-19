@@ -6,15 +6,18 @@ import { Override } from '~/utilities'
 import { textVariantSize } from '../text'
 
 const StyledLink = styled('a', {
+  bg: 'unset',
+  border: 'unset',
+  p: 'unset',
   color: '$primary500',
+  cursor: 'pointer',
   fontFamily: '$sans',
   textDecoration: 'none',
-  cursor: 'pointer',
   '&:focus, &:hover': {
     color: '$primary900',
     textDecoration: 'underline'
   },
-  '&:active, &:visited': {
+  '&:active': {
     color: '$primary500'
   },
   variants: {
@@ -24,12 +27,14 @@ const StyledLink = styled('a', {
 
 type LinkProps = Override<
   React.ComponentProps<typeof StyledLink>,
-  { as?: React.ComponentType | React.ElementType }
+  {
+    as?: React.ComponentType | React.ElementType
+  }
 >
 
 export const Link: React.FC<LinkProps> = React.forwardRef(
-  ({ size = 'md', ...rest }, ref) => (
-    <StyledLink size={size} {...rest} ref={ref} />
+  ({ size = 'md', ...remainingProps }, ref) => (
+    <StyledLink size={size} {...remainingProps} ref={ref} />
   )
 )
 

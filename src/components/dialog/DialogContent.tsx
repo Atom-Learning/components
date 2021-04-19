@@ -35,9 +35,9 @@ const StyledDialogClose = styled(Close, {
   display: 'flex',
   justifyContent: 'center',
   position: 'absolute',
-  right: '0px',
+  right: '0',
   size: '$4',
-  top: '0px'
+  top: '0'
 })
 
 const StyledDialogOverlay = styled(Overlay, {

@@ -2,14 +2,14 @@
 
 exports[`Text component renders some text 1`] = `
 .sxfey5o {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
   font-weight: 400;
   margin: 0;
 }
 
 .sxfey5ojqqvr--size-md {
-  font-size: var(--fontSizes-md);
+  font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
 }
 

@@ -2,14 +2,14 @@
 
 exports[`Heading component renders a heading 1`] = `
 .sx1v0v7 {
-  color: var(--colors-tonal-900);
-  font-family: var(--fonts-sans);
+  color: var(--sx-colors-tonal-900);
+  font-family: var(--sx-fonts-sans);
   font-weight: 700;
   margin: 0;
 }
 
 .sx1v0v7r3xir--size-md {
-  font-size: var(--fontSizes-xl);
+  font-size: var(--sx-fontSizes-xl);
   line-height: 1.42;
 }
 

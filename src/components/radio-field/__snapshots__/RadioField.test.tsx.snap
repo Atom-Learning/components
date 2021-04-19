@@ -2,19 +2,19 @@
 
 exports[`RadioField component renders 1`] = `
 .sx03kze-385xm {
-  margin-right: var(--space-2);
+  margin-right: var(--sx-space-2);
 }
 
 .sxdiu5c {
-  color: var(--colors-secondary300);
+  color: var(--sx-colors-secondary300);
   display: block;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   margin: 0;
 }
 
 .sxdiu5cjqqvr--size-md {
-  font-size: var(--fontSizes-md);
+  font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
 }
 
@@ -30,8 +30,9 @@ exports[`RadioField component renders 1`] = `
   display: table;
 }
 
-.sxdiu5c-e1sda {
-  margin-bottom: var(--space-3);
+.sxdiu5c-0fxuj {
+  padding: 0;
+  margin-bottom: var(--sx-space-3);
 }
 
 .sxdiu5c-ju7t4 {
@@ -44,8 +45,8 @@ exports[`RadioField component renders 1`] = `
   appearance: none;
   background-color: transparent;
   padding: 0;
-  border-radius: var(--radii-round);
-  border-color: var(--colors-secondary300);
+  border-radius: var(--sx-radii-round);
+  border-color: var(--sx-colors-secondary300);
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
@@ -62,19 +63,23 @@ exports[`RadioField component renders 1`] = `
 }
 
 :checked + .sxjdf4a {
-  background-color: var(--colors-secondary300);
+  background-color: var(--sx-colors-secondary300);
 }
 
 [disabled] + .sxjdf4a {
-  background-color: var(--colors-tonal600);
-  border: 2px solid var(--colors-tonal600);
+  background-color: var(--sx-colors-tonal600);
+  border: 2px solid var(--sx-colors-tonal600);
 }
 
 .sxip64y {
-  height: var(--sizes-0);
-  width: var(--sizes-0);
-  border-radius: var(--radii-round);
+  height: var(--sx-sizes-0);
+  width: var(--sx-sizes-0);
+  border-radius: var(--sx-radii-round);
   background-color: white;
+}
+
+.sxqqba1 {
+  all: unset;
 }
 
 <div>
@@ -83,10 +88,10 @@ exports[`RadioField component renders 1`] = `
     class="sx03kze"
   >
     <fieldset
-      class="sx03kze"
+      class="sxqqba1"
     >
       <legend
-        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-e1sda"
+        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-0fxuj"
       >
         Example options
       </legend>

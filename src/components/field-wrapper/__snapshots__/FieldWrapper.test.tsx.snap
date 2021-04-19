@@ -4,30 +4,30 @@ exports[`FieldWrapper component renders 1`] = `
 .sx47aq8 {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--colors-tonal500);
-  border-radius: var(--radii-0);
+  border: 1px solid var(--sx-colors-tonal500);
+  border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--colors-tonal900);
+  color: var(--sx-colors-tonal900);
   cursor: text;
   display: block;
-  font-family: var(--fonts-sans);
-  font-size: var(--fontSizes-md);
-  height: var(--sizes-4);
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
   width: 100%;
-  padding: var(--space-3);
+  padding: var(--sx-space-3);
   transition: all 100ms ease-out;
 }
 
 .sx47aq8:focus {
-  border-color: var(--colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--colors-primary900);
+  border-color: var(--sx-colors-primary900);
+  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
   outline: none;
 }
 
 .sx47aq8[disabled] {
-  background-color: var(--colors-tonal300);
-  color: var(--colors-tonal700);
+  background-color: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal700);
   cursor: not-allowed;
 }
 
@@ -38,18 +38,18 @@ exports[`FieldWrapper component renders 1`] = `
 .sx2cs53-re4mk {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--sx-space-2);
 }
 
 .sxfey5o {
-  color: var(--colors-tonal900);
-  font-family: var(--fonts-sans);
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
   font-weight: 400;
   margin: 0;
 }
 
 .sxfey5oxzxpn--size-sm {
-  font-size: var(--fontSizes-sm);
+  font-size: var(--sx-fontSizes-sm);
   line-height: 1.69;
 }
 
@@ -66,20 +66,20 @@ exports[`FieldWrapper component renders 1`] = `
 }
 
 .sxfey5o-m6cy5 {
-  color: var(--colors-danger);
-  margin-top: var(--space-1);
+  color: var(--sx-colors-danger);
+  margin-top: var(--sx-space-1);
 }
 
 .sxdiu5c {
-  color: var(--colors-secondary300);
+  color: var(--sx-colors-secondary300);
   display: block;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   margin: 0;
 }
 
 .sxdiu5cjqqvr--size-md {
-  font-size: var(--fontSizes-md);
+  font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
 }
 
@@ -95,26 +95,28 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sx8xsnx {
-  color: var(--colors-primary500);
-  font-family: var(--fonts-sans);
-  text-decoration: none;
+.sxx4uif {
+  background: unset;
+  border: unset;
+  padding: unset;
+  color: var(--sx-colors-primary500);
   cursor: pointer;
+  font-family: var(--sx-fonts-sans);
+  text-decoration: none;
 }
 
-.sx8xsnx:focus,
-.sx8xsnx:hover {
-  color: var(--colors-primary900);
+.sxx4uif:focus,
+.sxx4uif:hover {
+  color: var(--sx-colors-primary900);
   text-decoration: underline;
 }
 
-.sx8xsnx:active,
-.sx8xsnx:visited {
-  color: var(--colors-primary500);
+.sxx4uif:active {
+  color: var(--sx-colors-primary500);
 }
 
-.sx8xsnxdi0z9--size-sm {
-  font-size: var(--fontSizes-sm);
+.sxx4uifdi0z9--size-sm {
+  font-size: var(--sx-fontSizes-sm);
   line-height: 1.69;
 }
 
@@ -132,7 +134,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sx8xsnx sx8xsnxdi0z9--size-sm"
+        class="sxx4uif sxx4uifdi0z9--size-sm"
         href="https://example.com"
       >
         Example prompt
