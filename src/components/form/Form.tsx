@@ -28,7 +28,6 @@ export const Form: React.FC<FormProps> = ({
   render,
   ...remainingProps
 }) => {
-  console.log('children:', children)
   invariant(
     !(children && render),
     '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
