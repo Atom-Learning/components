@@ -228,3 +228,48 @@ const EmailField = ({ css, name, validation, required, ...rest }) => {
   )
 }
 ```
+
+## Accessing form data outside of fields
+
+The same object that `useFormContext` returns is available in an optional render prop function, making it easy to use the current form state to determine whether a button should be disabled or read the current value of a specific field. Note that if `render` is provided, `Form` should not be given any children. If both are provided, only `render` will be used.
+
+```tsx
+const SomeForm = () => {
+  return (
+    <Form
+      onSubmit={console.log}
+      render={({ formState }) => (
+        <>
+          <InputField
+            label="Name"
+            name="name"
+            validation={{ required: 'This field is required!' }}
+          />
+          <Button type="submit" disabled={!formState.isValid}>
+            Submit
+          </Button>
+        </>
+      )}
+    />
+  )
+}
+```
+
+You can also name your `render` function:
+
+```tsx
+const SomeFormContent = ({ formState }) => (
+  <>
+    <InputField
+      label="Name"
+      name="name"
+      validation={{ required: 'This field is required!' }}
+    />
+    <Button type="submit" disabled={!formState.isValid}>
+      Submit
+    </Button>
+  </>
+)
+
+const SomeForm = () => <Form onSubmit={console.log} render={SomeFormContent} />
+```
