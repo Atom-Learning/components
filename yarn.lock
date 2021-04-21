@@ -1669,6 +1669,17 @@
     "@radix-ui/primitive" "0.0.5"
     "@radix-ui/react-compose-refs" "0.0.5"
 
+"@radix-ui/react-toggle@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-toggle/-/react-toggle-0.0.6.tgz#5507f646a9301d5dc9c12e5a1b639130a14cfe2f"
+  integrity sha512-et7oCxZBsV6xtCZ26jONkWAGBUCDrhB0NT2I/7CnMfjWuI8pV4710sao1yCXgqtZIlJD8tyXsI8dMRfd6K7Wuw==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.0.5"
+    "@radix-ui/react-polymorphic" "0.0.10"
+    "@radix-ui/react-primitive" "0.0.11"
+    "@radix-ui/react-use-controllable-state" "0.0.6"
+
 "@radix-ui/react-tooltip@^0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-tooltip/-/react-tooltip-0.0.16.tgz#33274c86ccd97330c9ff7fa103e524c5c051608a"
