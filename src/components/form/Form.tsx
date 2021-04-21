@@ -1,3 +1,4 @@
+import invariant from 'invariant'
 import * as React from 'react'
 import type { UseFormMethods } from 'react-hook-form'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -27,10 +28,11 @@ export const Form: React.FC<FormProps> = ({
   render,
   ...remainingProps
 }) => {
-  if (process.env.NODE_ENV === 'development' && children && render)
-    console.warn(
-      '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
-    )
+  console.log('children:', children)
+  invariant(
+    !(children && render),
+    '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
+  )
 
   const formMethods = useForm({
     defaultValues,
