@@ -1,4 +1,6 @@
+import invariant from 'invariant'
 import * as React from 'react'
+import type { UseFormMethods } from 'react-hook-form'
 import { FormProvider, useForm } from 'react-hook-form'
 
 import { styled } from '~/stitches'
@@ -12,7 +14,10 @@ type FormProps = Override<
     defaultValues?: { [key: string]: string | number }
     onSubmit: (data: any) => void
     validationMode: 'onBlur' | 'onSubmit'
-  }
+  } & (
+    | { children: React.ReactNode; render?: never }
+    | { children?: never; render: (methods: UseFormMethods) => React.ReactNode }
+  )
 >
 
 export const Form: React.FC<FormProps> = ({
@@ -20,13 +25,21 @@ export const Form: React.FC<FormProps> = ({
   defaultValues = {},
   onSubmit,
   validationMode = 'onBlur',
+  render,
   ...remainingProps
 }) => {
+  invariant(
+    !(children && render),
+    '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
+  )
+
   const formMethods = useForm({
     defaultValues,
     mode: validationMode
   })
   const { handleSubmit } = formMethods
+
+  const formContent = render ? render(formMethods) : children
 
   return (
     <FormProvider {...formMethods}>
@@ -35,7 +48,7 @@ export const Form: React.FC<FormProps> = ({
         {...remainingProps}
         onSubmit={handleSubmit(onSubmit)}
       >
-        {children}
+        {formContent}
       </StyledForm>
     </FormProvider>
   )
