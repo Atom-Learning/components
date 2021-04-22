@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleField component renders 1`] = `
+.sx03kze-898e9 {
+  margin-left: var(--sx-space-3);
+}
+
+.sxdiu5c {
+  color: var(--sx-colors-secondary300);
+  display: block;
+  font-family: var(--sx-fonts-sans);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sxdiu5cjqqvr--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxdiu5cjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxdiu5cjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sxdiu5c-ju7t4 {
+  display: flex;
+  align-items: center;
+}
+
+.sx6gk47 {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--sx-colors-tonal300);
+  border: none;
+  padding: 2px;
+  box-shadow: inset 0 0 0 1px var(--sx-shadows-tonal300);
+  overflow: hidden;
+  border-radius: var(--sx-radii-round);
+  cursor: pointer;
+  display: inline-flex;
+  width: 50px;
+}
+
+.sx6gk47:focus {
+  outline: none;
+}
+
+.sx6gk47[data-state=on] {
+  background-color: var(--sx-colors-success);
+  justify-content: flex-end;
+}
+
+.sx6gk47[data-state=off] {
+  justify-content: flex-start;
+}
+
+.sxz551g {
+  height: 20px;
+  width: 20px;
+  background: white;
+  display: inline-block;
+  border-radius: var(--sx-radii-round);
+}
+
+<div>
+  <div
+    class="sx03kze"
+  >
+    <label
+      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+    >
+      Example Field
+      <div
+        class="sx03kze sx03kze-898e9"
+      >
+        <button
+          aria-label="toggle"
+          aria-pressed="false"
+          class="sx6gk47"
+          data-state="off"
+          type="button"
+        >
+          <span
+            class="sxz551g"
+          />
+        </button>
+      </div>
+    </label>
+  </div>
+</div>
+`;
