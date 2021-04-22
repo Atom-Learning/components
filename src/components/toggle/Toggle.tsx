@@ -8,7 +8,7 @@ const StyledToggle = styled(RadixToggle.Root, {
   backgroundColor: '$tonal300',
   border: 'none',
   padding: '2px',
-  boxShadow: 'inset 0 0 0 1px gainsboro',
+  boxShadow: 'inset 0 0 0 1px $tonal300',
   overflow: 'hidden',
   borderRadius: '$round',
   cursor: 'pointer',
@@ -33,7 +33,11 @@ export const Switch = styled('span', {
   borderRadius: '$round'
 })
 
-export const Toggle: React.FC = (props) => (
+type ToggleProps = React.ComponentProps<typeof StyledToggle> & {
+  'aria-label'?: string
+}
+
+export const Toggle: React.FC<ToggleProps> = (props) => (
   <StyledToggle {...props}>
     <Switch />
   </StyledToggle>
