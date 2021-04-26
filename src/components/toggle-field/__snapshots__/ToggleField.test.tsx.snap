@@ -1,8 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ToggleField component renders 1`] = `
-.sx03kze-898e9 {
-  margin-left: var(--sx-space-3);
+.sx03kze-ju7t4 {
+  display: flex;
+  align-items: center;
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-re4mk {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--sx-space-2);
 }
 
 .sxdiu5c {
@@ -28,11 +39,6 @@ exports[`ToggleField component renders 1`] = `
   content: '';
   margin-top: -0.4489em;
   display: table;
-}
-
-.sxdiu5c-ju7t4 {
-  display: flex;
-  align-items: center;
 }
 
 .sx6gk47 {
@@ -74,26 +80,31 @@ exports[`ToggleField component renders 1`] = `
   <div
     class="sx03kze"
   >
-    <label
-      class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+    <div
+      class="sx2cs53 sx2cs53-re4mk"
     >
-      Example Field
-      <div
-        class="sx03kze sx03kze-898e9"
+      <label
+        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        for="example"
       >
-        <button
-          aria-label="toggle"
-          aria-pressed="false"
-          class="sx6gk47"
-          data-state="off"
-          type="button"
-        >
-          <span
-            class="sxz551g"
-          />
-        </button>
-      </div>
-    </label>
+        Example Field
+      </label>
+    </div>
+    <div
+      class="sx03kze sx03kze-ju7t4"
+    >
+      <button
+        aria-label="toggle"
+        aria-pressed="false"
+        class="sx6gk47"
+        data-state="off"
+        type="button"
+      >
+        <span
+          class="sxz551g"
+        />
+      </button>
+    </div>
   </div>
 </div>
 `;
