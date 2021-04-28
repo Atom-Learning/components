@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.4.1",
+  "version": "0.6.0",
   "description": "",
   "files": [
     "dist"
@@ -123,9 +123,10 @@
     "@radix-ui/react-slot": "^0.0.9",
     "@radix-ui/react-tooltip": "^0.0.16",
     "@radix-ui/react-visually-hidden": "0.0.11",
-    "@stitches/react": "^0.1.0",
+    "@stitches/react": "0.1.7",
     "@types/react": "^17.0.2",
     "colorsys": "^1.0.22",
+    "invariant": "^2.2.4",
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0",

@@ -9,14 +9,10 @@ describe('SelectField component', () => {
   it('renders', async () => {
     const { container } = render(
       <Form>
-        <SelectField
-          label="Example options"
-          name="example"
-          options={[
-            { label: 'Option 1', value: 1 },
-            { label: 'Option 2', value: 2 }
-          ]}
-        />
+        <SelectField label="Example options" name="example">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </SelectField>
       </Form>
     )
 
@@ -26,14 +22,10 @@ describe('SelectField component', () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Form>
-        <SelectField
-          label="Example options"
-          name="example"
-          options={[
-            { label: 'Option 1', value: 1 },
-            { label: 'Option 2', value: 2 }
-          ]}
-        />
+        <SelectField label="Example options" name="example">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </SelectField>
       </Form>
     )
 

@@ -1,43 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stack component renders 1`] = `
-.sx03kze-u5925 {
-  width: max-content;
-}
-
-.sxufta5 {
+.sxbcohh {
   display: flex;
   flex-wrap: wrap;
-  width: max-content;
 }
 
-.sxufta5 > * {
+.sxbcohh > * {
   margin: 0;
 }
 
-.sxufta58p3zg--direction-row {
+.sxbcohh8p3zg--direction-row {
   flex-direction: row;
   align-items: center;
 }
 
-.sxufta5sxrde--gap-2 {
-  margin-top: calc(var(--space-2)*-1);
-  margin-left: calc(var(--space-2)*-1);
+.sxbcohhsxrde--gap-2 {
+  margin-top: calc(var(--sx-space-2)*-1);
+  margin-left: calc(var(--sx-space-2)*-1);
 }
 
-.sxufta5sxrde--gap-2 > * {
-  margin-top: var(--space-2);
-  margin-left: var(--space-2);
+.sxbcohhsxrde--gap-2 > * {
+  margin-top: var(--sx-space-2);
+  margin-left: var(--sx-space-2);
 }
 
 <div>
   <div
-    class="sx03kze sx03kze-u5925"
-    data-testid="css-wrapper"
-  >
-    <div
-      class="sxufta5 sxufta58p3zg--direction-row sxufta5sxrde--gap-2"
-    />
-  </div>
+    class="sxbcohh sxbcohh8p3zg--direction-row sxbcohhsxrde--gap-2"
+  />
 </div>
 `;

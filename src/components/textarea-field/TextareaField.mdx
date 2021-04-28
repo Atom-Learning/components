@@ -7,9 +7,9 @@ category: Forms
 
 TextareaField is the preferred way to render a form field for multi-line text.
 
-In addition to text `Label` (required) and a validation error (optional), TextareaField accepts all the same props as `Textarea` and will pass them on to the `textarea` it renders. However, as with all our composed components, `TextareaField`'s css prop will be applied to a containing Box — the styling of the individual components inside `TextareaField` cannot be altered.
+In addition to text `Label` (required) and a validation error (optional), TextareaField accepts all the same props as `Textarea` and will pass them on to the `textarea` it renders. However, as with all our composed components, `TextareaField`’s css prop will be applied to a containing Box — the styling of the individual components inside `TextareaField` cannot be altered.
 
-```jsx preview
+```tsx preview
 <Form>
   <TextareaField
     label="Write something"

@@ -54,4 +54,34 @@ describe(`Form component`, () => {
     expect(await screen.findByText('Name is required'))
     expect(await screen.findByText('Password is required'))
   })
+
+  it('passes form methods to render prop function', async () => {
+    render(
+      <Form
+        onSubmit={jest.fn()}
+        render={({ formState }) => (
+          <>
+            <InputField
+              name="name"
+              label="Name"
+              validation={{ required: 'Name is required' }}
+            />
+            <PasswordField
+              name="password"
+              validation={{ required: 'Password is required' }}
+            />
+            <Button
+              type="submit"
+              onClick={jest.fn()}
+              disabled={!formState.isValid}
+            >
+              Submit
+            </Button>
+          </>
+        )}
+      />
+    )
+
+    expect(await screen.findByText('Submit')).toHaveAttribute('disabled', '')
+  })
 })

@@ -4,6 +4,20 @@ import * as React from 'react'
 import { CSS, styled } from '~/stitches'
 import { CSSWrapper } from '~/utilities/css-wrapper'
 
+/**
+ * output:
+ * {
+ *   0: {
+ *     mt: `-$space$0`,
+ *     ml: `-$space$0`,
+ *     '& > *': {
+ *       mt: `$space$0`,
+ *       ml: `$space$0`
+ *     }
+ *   },
+ *   ...etc.
+ * }
+ **/
 const gap = Object.keys(theme.space).reduce(
   (acc, key) => ({
     ...acc,
@@ -22,7 +36,6 @@ const gap = Object.keys(theme.space).reduce(
 const StyledStack = styled('div', {
   display: 'flex',
   flexWrap: 'wrap',
-  width: 'max-content',
   '& > *': {
     m: 0
   },
@@ -44,17 +57,15 @@ const StyledStack = styled('div', {
   }
 })
 
-type StackProps = React.ComponentProps<typeof StyledStack> & {
-  as?: 'div'
-}
+type StackProps = React.ComponentProps<typeof StyledStack>
 
 export const Stack: React.FC<StackProps> = ({
+  css,
   gap = 2,
   direction = 'row',
-  css,
   ...remainingProps
 }) => (
-  <CSSWrapper css={{ width: 'max-content', ...(css as any) }}>
+  <CSSWrapper css={css}>
     <StyledStack gap={gap} direction={direction} {...remainingProps} />
   </CSSWrapper>
 )

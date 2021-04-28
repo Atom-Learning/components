@@ -26,11 +26,11 @@ const run = async () => {
       `\nExtracting props from:\n  ${componentFilePaths.join('\n  ')}`
     )
 
-    const ouput = componentFilePaths.map(
-      (path) => tsConfigParser.parse(path)[0]
+    const output = componentFilePaths.flatMap((path) =>
+      tsConfigParser.parse(path)
     )
 
-    await fs.writeFileSync('./dist/docgen.json', JSON.stringify(ouput))
+    await fs.writeFileSync('./dist/docgen.json', JSON.stringify(output))
   } catch (err) {
     console.error(err)
   }

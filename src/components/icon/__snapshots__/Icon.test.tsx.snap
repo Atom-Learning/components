@@ -12,8 +12,8 @@ exports[`Icon component renders an icon 1`] = `
 }
 
 .sxib16rmbqqh--size-md {
-  height: var(--sizes-2);
-  width: var(--sizes-2);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
 }
 
 <div>
