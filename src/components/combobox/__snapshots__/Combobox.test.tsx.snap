@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Combobox component renders 1`] = `
+.sx7k4x5 {
+  --reach-combobox: 1;
+}
+
+<div>
+  <div
+    class="sx7k4x5"
+    data-reach-combobox=""
+    data-state="idle"
+  />
+</div>
+`;
