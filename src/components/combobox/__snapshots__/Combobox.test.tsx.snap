@@ -35,7 +35,7 @@ exports[`Combobox component renders 1`] = `
   cursor: not-allowed;
 }
 
-.sx7h28h {
+.sxnok79 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -43,25 +43,26 @@ exports[`Combobox component renders 1`] = `
   user-select: none;
 }
 
-.sx2rfbx {
+.sxheyap {
   cursor: pointer;
   margin: 0;
   padding: var(--sx-space-2);
 }
 
-.sx2rfbx:hover {
-  background: var(--sx-colors-alpha100);
+.sxheyap:hover {
+  background: var(--sx-colors-tonal200);
+  border-radius: var(--sx-radii-0);
 }
 
-.sx2rfbx[aria-selected="true"] {
+.sxheyap[aria-selected="true"] {
   background: var(--sx-colors-alpha200);
 }
 
-.sx2rfbx [data-user-value] {
+.sxheyap [data-user-value] {
   font-weight: bold;
 }
 
-.sxj923d {
+.sx8he37 {
   background: white;
   border: solid 1px var(--sx-colors-tonal500);
   border-radius: var(--sx-radii-0);

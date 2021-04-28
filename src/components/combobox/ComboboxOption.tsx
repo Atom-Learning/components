@@ -4,11 +4,12 @@ import { styled } from '~/stitches'
 
 export const ComboboxOption = styled(BaseComboboxOption, {
   cursor: 'pointer',
-  margin: 0,
-  padding: '$2',
+  m: 0,
+  p: '$2',
 
   '&:hover': {
-    bg: '$alpha100'
+    bg: '$tonal200',
+    borderRadius: '$0'
   },
   '&[aria-selected="true"]': {
     bg: '$alpha200'

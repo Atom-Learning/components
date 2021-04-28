@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 export const ComboboxList = styled(BaseComboboxList, {
   listStyle: 'none',
-  margin: 0,
-  padding: 0,
+  m: 0,
+  p: 0,
   userSelect: 'none'
 })
