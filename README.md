@@ -23,4 +23,4 @@ const Component = () => {
 }
 ```
 
-You can read more about the components included in `@atom-learning/components` at [https://atomlearning-docs-f4ydu.ondigitalocean.app](https://atomlearning-docs-f4ydu.ondigitalocean.app)
+You can read more about the components included in `@atom-learning/components` at [https://design.atomlearning.technology](https://design.atomlearning.technology)
