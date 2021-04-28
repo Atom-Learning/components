@@ -4,6 +4,9 @@ on:
   pull_request:
     branches:
       - main
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -23,3 +26,29 @@ jobs:
 
       - name: Validate
         run: yarn validate
+  publish:
+    name: publish
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: '14'
+      - run: yarn install
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2.5.0
+        id: semantic # Need an `id` to refer back to this step from the next one
+        with:
+          branch: 'main'
+
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+      - name: Log new version
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: echo ${{ steps.semantic.outputs.new_release_version }}
