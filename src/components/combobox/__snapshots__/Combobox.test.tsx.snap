@@ -1,15 +1,153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Combobox component renders 1`] = `
+.sxdiu5c {
+  color: var(--sx-colors-secondary300);
+  display: block;
+  font-family: var(--sx-fonts-sans);
+  font-weight: 500;
+  margin: 0;
+}
+
+.sxdiu5cjqqvr--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxdiu5cjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxdiu5cjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sxlh3dc[data-reach-combobox-input] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-position: right var(--sx-space-3) top 50%, 0 0;
+  background-repeat: no-repeat, repeat;
+  background-size: var(--sx-sizes-2) auto, 100%;
+  border: 1px solid var(--sx-colors-tonal500);
+  border-radius: var(--sx-radii-0);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--sx-colors-tonal900);
+  cursor: text;
+  display: block;
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding: var(--sx-space-3);
+  width: 100%;
+  transition: all 100ms ease-out;
+}
+
+.sxlh3dc[data-reach-combobox-input]:focus-within {
+  border-color: var(--sx-colors-primary900);
+  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+  outline: none;
+}
+
+.sxlh3dc[data-reach-combobox-input][disabled] {
+  background-color: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal700);
+  cursor: not-allowed;
+}
+
+.sxlh3dc[data-reach-combobox-input] variants state error {
+  border: 1px solid var(--sx-colors-danger);
+}
+
+.sxlh3dc[data-reach-combobox-input][data-state="suggesting"] {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom: none;
+}
+
+.sxlh3dc[data-reach-combobox-input][data-state="navigating"] {
+  border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom-color: none;
+}
+
+.sxtw7eq[data-reach-combobox-list] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sxl7cqa[data-reach-combobox-option] {
+  cursor: pointer;
+  margin: 0;
+  padding: var(--sx-space-2);
+}
+
+.sxl7cqa[data-reach-combobox-option][aria-selected="true"] {
+  background: hsl(211, 10%, 95%);
+}
+
+.sxl7cqa[data-reach-combobox-option][aria-selected="true"]:hover {
+  background: hsl(211, 10%, 90%);
+}
+
+.sxl7cqa[data-reach-combobox-option]:hover {
+  background: hsl(211, 10%, 92%);
+}
+
+.sxl7cqa[data-reach-combobox-option] [data-user-value] {
+  font-weight: bold;
+}
+
+.sxx4rpk[data-reach-combobox-popover] {
+  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+  outline: none;
+  box-sizing: border-box;
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-sm);
+  padding: var(--sx-space-2);
+  border: solid 1px var(--sx-colors-primary900);
+  border-top: none;
+  background: hsla(0, 100%, 100%, 0.99);
+  transform-origin: top;
+  animation: sxo0vkr 150ms ease-out;
+}
+
 .sx7k4x5 {
   --reach-combobox: 1;
 }
 
 <div>
+  <label
+    class="sxdiu5c sxdiu5cjqqvr--size-md"
+    for="fruit"
+  >
+    What's your favourite fruit?
+  </label>
   <div
     class="sx7k4x5"
     data-reach-combobox=""
     data-state="idle"
-  />
+  >
+    <input
+      aria-autocomplete="both"
+      aria-controls="listbox--1"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      class="sxlh3dc"
+      data-reach-combobox-input=""
+      data-state="idle"
+      id="fruit"
+      role="combobox"
+      value=""
+    />
+  </div>
 </div>
 `;
