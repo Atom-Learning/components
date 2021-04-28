@@ -38,9 +38,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
   }
 })
 
-type SwitchProps = React.ComponentProps<typeof StyledSwitch> & {
-  'aria-label'?: string
-}
+type SwitchProps = React.ComponentProps<typeof StyledSwitch>
 
 export const Switch: React.FC<SwitchProps> = (props) => (
   <StyledSwitch {...props}>

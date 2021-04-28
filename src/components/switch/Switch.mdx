@@ -1,6 +1,29 @@
 ---
 title: Switch
 component: Switch
-description: A switch is a digital on/off switch. Switches are used to change the state of system functionality and preferences. They prompt users to choose between two mutually exclusive options and always have a default value.
+description: An implementation of the Switch component from Radix with default styling and the css prop
 category: Forms
 ---
+
+The Switch component implements [Radix's Switch component](https://radix-ui.com/primitives/docs/components/switch) where the default value can be set via `default` props.
+
+Switches are used to change the state of functionality and preferences. They prompt users to choose between two mutually exclusive options and will always have a default value.
+
+The Switch component should not be used to handle data (e.g. where we submit data in a form it's encouraged to use checkboxes or radio buttons). Instead it should be used interactively where the effect is an immediate display or state change.
+
+
+## Appearance
+```tsx live
+<Switch />
+```
+
+## Disabled state
+
+The `disabled` stated can be set using the `disabled` property.
+
+```tsx preview
+<Switch disabled/>
+```
+
+## Accessibility
+Adheres to the `switch` [role requirements](https://www.w3.org/TR/wai-aria-1.2/#switch)
