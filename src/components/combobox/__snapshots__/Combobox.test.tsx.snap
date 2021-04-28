@@ -84,25 +84,21 @@ exports[`Combobox component renders 1`] = `
   user-select: none;
 }
 
-.sxl7cqa[data-reach-combobox-option] {
+.sxpzcow[data-reach-combobox-option] {
   cursor: pointer;
   margin: 0;
   padding: var(--sx-space-2);
 }
 
-.sxl7cqa[data-reach-combobox-option][aria-selected="true"] {
-  background: hsl(211, 10%, 95%);
+.sxpzcow[data-reach-combobox-option]:hover {
+  background: var(--sx-colors-alpha100);
 }
 
-.sxl7cqa[data-reach-combobox-option][aria-selected="true"]:hover {
-  background: hsl(211, 10%, 90%);
+.sxpzcow[data-reach-combobox-option][aria-selected="true"] {
+  background: var(--sx-colors-alpha200);
 }
 
-.sxl7cqa[data-reach-combobox-option]:hover {
-  background: hsl(211, 10%, 92%);
-}
-
-.sxl7cqa[data-reach-combobox-option] [data-user-value] {
+.sxpzcow[data-reach-combobox-option] [data-user-value] {
   font-weight: bold;
 }
 
