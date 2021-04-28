@@ -39,16 +39,6 @@ export const ComboboxInput = styled(BaseComboboxInput, {
           border: '1px solid $danger'
         }
       }
-    },
-    '&[data-state="suggesting"]': {
-      borderBottomLeftRadius: 'unset',
-      borderBottomRightRadius: 'unset',
-      borderBottom: 'none'
-    },
-    '&[data-state="navigating"]': {
-      borderBottomLeftRadius: 'unset',
-      borderBottomRightRadius: 'unset',
-      borderBottomColor: 'none'
     }
   }
 })
