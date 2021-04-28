@@ -5,15 +5,13 @@ description: An implementation of the Switch component from Radix with default s
 category: Forms
 ---
 
-The Switch component implements [Radix's Switch component](https://radix-ui.com/primitives/docs/components/switch) where the default value can be set via `default` props.
+The `Switch` component implements [Radix's Switch component](https://radix-ui.com/primitives/docs/components/switch).
 
-Switches are used to change the state of functionality and preferences. They prompt users to choose between two mutually exclusive options and will always have a default value.
+Switches are used to toggle application state between two mutually exlusive values. The `Switch` defaults to the "off" state unless it's rendered with the `defaultChecked` prop.
 
-The Switch component should not be used to handle data (e.g. where we submit data in a form it's encouraged to use checkboxes or radio buttons). Instead it should be used interactively where the effect is an immediate display or state change.
+The `Switch` component should not be used to collect form data — use checkboxes or radio buttons for that. Only use `Switch` inside a form if it is serving its primary purpose of toggling some state with immediate effect (e.g. to conditionally render a section of the form).
 
-
-## Appearance
-```tsx live
+```tsx preview
 <Switch />
 ```
 
