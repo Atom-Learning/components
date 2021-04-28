@@ -26,7 +26,7 @@ exports[`Combobox component renders 1`] = `
   display: table;
 }
 
-.sxfkecz[data-reach-combobox-input] {
+.sxozp0c {
   -webkit-appearance: none;
   appearance: none;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
@@ -48,23 +48,19 @@ exports[`Combobox component renders 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxfkecz[data-reach-combobox-input]:focus-within {
+.sxozp0c:focus-within {
   border-color: var(--sx-colors-primary900);
   box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
   outline: none;
 }
 
-.sxfkecz[data-reach-combobox-input][disabled] {
+.sxozp0c[disabled] {
   background-color: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal700);
   cursor: not-allowed;
 }
 
-.sxfkecz[data-reach-combobox-input] variants state error {
-  border: 1px solid var(--sx-colors-danger);
-}
-
-.sxtw7eq[data-reach-combobox-list] {
+.sx7h28h {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -72,25 +68,25 @@ exports[`Combobox component renders 1`] = `
   user-select: none;
 }
 
-.sxpzcow[data-reach-combobox-option] {
+.sx2rfbx {
   cursor: pointer;
   margin: 0;
   padding: var(--sx-space-2);
 }
 
-.sxpzcow[data-reach-combobox-option]:hover {
+.sx2rfbx:hover {
   background: var(--sx-colors-alpha100);
 }
 
-.sxpzcow[data-reach-combobox-option][aria-selected="true"] {
+.sx2rfbx[aria-selected="true"] {
   background: var(--sx-colors-alpha200);
 }
 
-.sxpzcow[data-reach-combobox-option] [data-user-value] {
+.sx2rfbx [data-user-value] {
   font-weight: bold;
 }
 
-.sx0s0j7[data-reach-combobox-popover] {
+.sx08a1a {
   border-radius: var(--sx-radii-0);
   box-shadow: var(--sx-shadows-0);
   outline: none;
@@ -125,7 +121,7 @@ exports[`Combobox component renders 1`] = `
       aria-controls="listbox--1"
       aria-expanded="false"
       aria-haspopup="listbox"
-      class="sxfkecz"
+      class="sxozp0c"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"
