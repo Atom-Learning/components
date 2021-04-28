@@ -2,6 +2,7 @@ import { ComboboxInput as BaseComboboxInput } from '@reach/combobox'
 
 import { styled } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
+
 export const ComboboxInput = styled(BaseComboboxInput, {
   '&[data-reach-combobox-input]': {
     appearance: 'none',
