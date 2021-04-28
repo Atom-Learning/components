@@ -1,34 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Switch component renders a Switch in "on" state 1`] = `
-.sx9a9dh {
+.sxop71s {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--sx-colors-tonal400);
   border: none;
   padding: var(--sx-space-0);
-  box-shadow: inset 0 0 0 1px var(--sx-shadows-tonal400);
   overflow: hidden;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
   display: inline-flex;
   width: var(--sx-sizes-4);
   position: relative;
+  transition: background-color 100ms ease;
 }
 
-.sx9a9dh:focus {
+.sxop71s:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
 }
 
-.sx9a9dh[data-state="checked"] {
+.sxop71s[data-state="checked"] {
   background-color: var(--sx-colors-success);
 }
 
-.sxtrfv7 {
+.sxh5eri {
   display: block;
-  width: var(--sx-sizes-1);
-  height: var(--sx-sizes-1);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
   background-color: white;
   border-radius: var(--sx-radii-round);
   transition: transform 100ms;
@@ -36,8 +35,8 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
   will-change: transform;
 }
 
-.sxtrfv7[data-state="checked"] {
-  transform: translateX(27px);
+.sxh5eri[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
 }
 
 <div>
@@ -49,14 +48,14 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
   />
   <button
     aria-checked="true"
-    class="sx9a9dh"
+    class="sxop71s"
     data-state="checked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="sxtrfv7"
+      class="sxh5eri"
       data-state="checked"
     />
   </button>
@@ -64,34 +63,33 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 `;
 
 exports[`Switch component renders a disabled switch 1`] = `
-.sx9a9dh {
+.sxop71s {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--sx-colors-tonal400);
   border: none;
   padding: var(--sx-space-0);
-  box-shadow: inset 0 0 0 1px var(--sx-shadows-tonal400);
   overflow: hidden;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
   display: inline-flex;
   width: var(--sx-sizes-4);
   position: relative;
+  transition: background-color 100ms ease;
 }
 
-.sx9a9dh:focus {
+.sxop71s:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
 }
 
-.sx9a9dh[data-state="checked"] {
+.sxop71s[data-state="checked"] {
   background-color: var(--sx-colors-success);
 }
 
-.sxtrfv7 {
+.sxh5eri {
   display: block;
-  width: var(--sx-sizes-1);
-  height: var(--sx-sizes-1);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
   background-color: white;
   border-radius: var(--sx-radii-round);
   transition: transform 100ms;
@@ -99,8 +97,8 @@ exports[`Switch component renders a disabled switch 1`] = `
   will-change: transform;
 }
 
-.sxtrfv7[data-state="checked"] {
-  transform: translateX(27px);
+.sxh5eri[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
 }
 
 <div>
@@ -112,7 +110,7 @@ exports[`Switch component renders a disabled switch 1`] = `
   />
   <button
     aria-checked="false"
-    class="sx9a9dh"
+    class="sxop71s"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -121,7 +119,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     value="on"
   >
     <span
-      class="sxtrfv7"
+      class="sxh5eri"
       data-disabled=""
       data-state="unchecked"
     />
@@ -130,34 +128,33 @@ exports[`Switch component renders a disabled switch 1`] = `
 `;
 
 exports[`Switch component renders a switch 1`] = `
-.sx9a9dh {
+.sxop71s {
   -webkit-appearance: none;
   appearance: none;
   background-color: var(--sx-colors-tonal400);
   border: none;
   padding: var(--sx-space-0);
-  box-shadow: inset 0 0 0 1px var(--sx-shadows-tonal400);
   overflow: hidden;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
   display: inline-flex;
   width: var(--sx-sizes-4);
   position: relative;
+  transition: background-color 100ms ease;
 }
 
-.sx9a9dh:focus {
+.sxop71s:focus {
   outline: none;
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
 }
 
-.sx9a9dh[data-state="checked"] {
+.sxop71s[data-state="checked"] {
   background-color: var(--sx-colors-success);
 }
 
-.sxtrfv7 {
+.sxh5eri {
   display: block;
-  width: var(--sx-sizes-1);
-  height: var(--sx-sizes-1);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
   background-color: white;
   border-radius: var(--sx-radii-round);
   transition: transform 100ms;
@@ -165,8 +162,8 @@ exports[`Switch component renders a switch 1`] = `
   will-change: transform;
 }
 
-.sxtrfv7[data-state="checked"] {
-  transform: translateX(27px);
+.sxh5eri[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
 }
 
 <div>
@@ -177,14 +174,14 @@ exports[`Switch component renders a switch 1`] = `
   />
   <button
     aria-checked="false"
-    class="sx9a9dh"
+    class="sxop71s"
     data-state="unchecked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="sxtrfv7"
+      class="sxh5eri"
       data-state="unchecked"
     />
   </button>
