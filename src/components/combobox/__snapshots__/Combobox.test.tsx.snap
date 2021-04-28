@@ -1,31 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Combobox component renders 1`] = `
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
 .sxozp0c {
   -webkit-appearance: none;
   appearance: none;
@@ -105,12 +80,6 @@ exports[`Combobox component renders 1`] = `
 }
 
 <div>
-  <label
-    class="sxdiu5c sxdiu5cjqqvr--size-md"
-    for="fruit"
-  >
-    What's your favourite fruit?
-  </label>
   <div
     class="sx7k4x5"
     data-reach-combobox=""
@@ -121,6 +90,7 @@ exports[`Combobox component renders 1`] = `
       aria-controls="listbox--1"
       aria-expanded="false"
       aria-haspopup="listbox"
+      aria-label="Favourite fruit"
       class="sxozp0c"
       data-reach-combobox-input=""
       data-state="idle"
