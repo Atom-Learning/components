@@ -62,18 +62,17 @@ exports[`Combobox component renders 1`] = `
   font-weight: bold;
 }
 
-.sx8he37 {
+.sxl7cnq {
   background: white;
   border: solid 1px var(--sx-colors-tonal500);
   border-radius: var(--sx-radii-0);
   box-shadow: var(--sx-shadows-0);
   box-sizing: border-box;
   font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-sm);
+  font-size: var(--sx-fontSizes-md);
   outline: none;
   padding: var(--sx-space-2);
-  position: relative !important;
-  top: var(--sx-space-1) !important;
+  transform: translateY(4px);
 }
 
 .sx7k4x5 {
