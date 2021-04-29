@@ -118,6 +118,7 @@
     "@radix-ui/react-switch": "^0.0.11",
     "@radix-ui/react-tooltip": "^0.0.16",
     "@radix-ui/react-visually-hidden": "0.0.11",
+    "@reach/combobox": "^0.15.1",
     "@stitches/react": "0.1.7",
     "@types/react": "^17.0.2",
     "colorsys": "^1.0.22",
