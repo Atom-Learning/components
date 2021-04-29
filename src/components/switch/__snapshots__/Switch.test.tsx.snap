@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component renders a Switch in "on" state 1`] = `
+.sxop71s {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--sx-colors-tonal400);
+  border: none;
+  padding: var(--sx-space-0);
+  overflow: hidden;
+  border-radius: var(--sx-radii-round);
+  cursor: pointer;
+  display: inline-flex;
+  width: var(--sx-sizes-4);
+  position: relative;
+  transition: background-color 100ms ease;
+}
+
+.sxop71s:focus {
+  outline: none;
+}
+
+.sxop71s[data-state="checked"] {
+  background-color: var(--sx-colors-success);
+}
+
+.sx2r6fb {
+  display: block;
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+  background-color: white;
+  border-radius: var(--sx-radii-round);
+  transition: transform 100ms;
+  will-change: transform;
+}
+
+.sx2r6fb[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+}
+
+<div>
+  <input
+    checked=""
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="true"
+    class="sxop71s"
+    data-state="checked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="sx2r6fb"
+      data-state="checked"
+    />
+  </button>
+</div>
+`;
+
+exports[`Switch component renders a disabled switch 1`] = `
+.sxop71s {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--sx-colors-tonal400);
+  border: none;
+  padding: var(--sx-space-0);
+  overflow: hidden;
+  border-radius: var(--sx-radii-round);
+  cursor: pointer;
+  display: inline-flex;
+  width: var(--sx-sizes-4);
+  position: relative;
+  transition: background-color 100ms ease;
+}
+
+.sxop71s:focus {
+  outline: none;
+}
+
+.sxop71s[data-state="checked"] {
+  background-color: var(--sx-colors-success);
+}
+
+.sx2r6fb {
+  display: block;
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+  background-color: white;
+  border-radius: var(--sx-radii-round);
+  transition: transform 100ms;
+  will-change: transform;
+}
+
+.sx2r6fb[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+}
+
+<div>
+  <input
+    disabled=""
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="false"
+    class="sxop71s"
+    data-disabled=""
+    data-state="unchecked"
+    disabled=""
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="sx2r6fb"
+      data-disabled=""
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;
+
+exports[`Switch component renders a switch 1`] = `
+.sxop71s {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--sx-colors-tonal400);
+  border: none;
+  padding: var(--sx-space-0);
+  overflow: hidden;
+  border-radius: var(--sx-radii-round);
+  cursor: pointer;
+  display: inline-flex;
+  width: var(--sx-sizes-4);
+  position: relative;
+  transition: background-color 100ms ease;
+}
+
+.sxop71s:focus {
+  outline: none;
+}
+
+.sxop71s[data-state="checked"] {
+  background-color: var(--sx-colors-success);
+}
+
+.sx2r6fb {
+  display: block;
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+  background-color: white;
+  border-radius: var(--sx-radii-round);
+  transition: transform 100ms;
+  will-change: transform;
+}
+
+.sx2r6fb[data-state="checked"] {
+  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+}
+
+<div>
+  <input
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="false"
+    class="sxop71s"
+    data-state="unchecked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="sx2r6fb"
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;

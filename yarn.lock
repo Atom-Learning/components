@@ -1669,6 +1669,20 @@
     "@radix-ui/primitive" "0.0.5"
     "@radix-ui/react-compose-refs" "0.0.5"
 
+"@radix-ui/react-switch@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-switch/-/react-switch-0.0.11.tgz#41866308887e53434c70c49440c78d73c3596641"
+  integrity sha512-uDIFDWmq8v/zm+qM2yisna7xbESWL7oCVIgJSQ9kIjfU6u7Xk2WXBHsU+1qgdg68Y4xilyfT6m0hfUncQjNL7w==
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/primitive" "0.0.5"
+    "@radix-ui/react-compose-refs" "0.0.5"
+    "@radix-ui/react-context" "0.0.5"
+    "@radix-ui/react-label" "0.0.11"
+    "@radix-ui/react-polymorphic" "0.0.10"
+    "@radix-ui/react-primitive" "0.0.11"
+    "@radix-ui/react-use-controllable-state" "0.0.6"
+
 "@radix-ui/react-tooltip@^0.0.16":
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-tooltip/-/react-tooltip-0.0.16.tgz#33274c86ccd97330c9ff7fa103e524c5c051608a"
