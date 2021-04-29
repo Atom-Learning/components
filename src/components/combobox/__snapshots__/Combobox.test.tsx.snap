@@ -62,7 +62,7 @@ exports[`Combobox component renders 1`] = `
   font-weight: bold;
 }
 
-.sxfl7cj {
+.sxdf19r {
   background: white;
   border: solid 1px var(--sx-colors-tonal500);
   border-radius: var(--sx-radii-0);
@@ -72,7 +72,7 @@ exports[`Combobox component renders 1`] = `
   font-size: var(--sx-fontSizes-md);
   outline: none;
   padding: var(--sx-space-2);
-  transform: translateY(8px);
+  transform: translateY(var(--sx-space-2));
 }
 
 .sx7k4x5 {

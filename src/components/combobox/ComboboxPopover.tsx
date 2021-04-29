@@ -12,5 +12,5 @@ export const ComboboxPopover = styled(BaseComboboxPopover, {
   fontSize: '$md',
   outline: 'none',
   p: '$2',
-  transform: 'translateY(8px)'
+  transform: 'translateY($space$2)'
 })
