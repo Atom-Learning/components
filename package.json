@@ -125,6 +125,7 @@
     "colorsys": "^1.0.22",
     "invariant": "^2.2.4",
     "pure-react-carousel": "^1.27.6",
+    "react-date-picker": "^8.1.1",
     "react-hook-form": "^6.15.4",
     "react-player": "^2.9.0",
     "react-toastify": "^7.0.3",
