@@ -1,15 +1,17 @@
 import * as React from 'react'
 
 import type { CSS } from '~/stitches'
+import { styled } from '~/stitches'
 
-import { Box } from '../box/Box'
 import { Divider } from '../divider/Divider'
 import { Heading } from '../heading/Heading'
 import { Image } from '../image/Image'
 import { List } from '../list/List'
 import { Text } from '../text/Text'
 
-type StackContentProps = {
+const StyledStackContent = styled('div', {})
+
+type StackContentProps = React.ComponentProps<typeof StyledStackContent> & {
   children: React.ReactNode
   css?: CSS
 }
@@ -19,9 +21,9 @@ const cloneWithStyle = (child: React.ReactElement, style: CSS) =>
 
 export const StackContent: React.FC<StackContentProps> = ({
   children,
-  css
+  ...remainingProps
 }) => (
-  <Box css={css}>
+  <StyledStackContent {...remainingProps}>
     {React.Children.map(children, (child) => {
       if (!React.isValidElement(child)) {
         return child
@@ -60,7 +62,7 @@ export const StackContent: React.FC<StackContentProps> = ({
 
       return child
     })}
-  </Box>
+  </StyledStackContent>
 )
 
 StackContent.displayName = 'StackContent'

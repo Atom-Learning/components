@@ -1,4 +1,3 @@
-import theme from '@atom-learning/theme'
 import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 
@@ -15,28 +14,27 @@ describe('StackContent component', () => {
       <StackContent>
         <Heading>HEADING</Heading>
         <Text>TEXT</Text>
+        <Divider />
         <List>
           <List.Item />
         </List>
         <Image src="" />
-        <Divider />
       </StackContent>
     )
 
-    const headingStyle = getComputedStyle(screen.getByText('HEADING'))
-    expect(headingStyle.maxWidth).toBe('75ch')
+    expect(screen.getByText('HEADING')).toHaveStyle('max-width: 65ch')
 
-    const textStyle = getComputedStyle(screen.getByText('TEXT'))
-    expect(textStyle.maxWidth).toBe('75ch')
+    expect(screen.getByText('TEXT')).toHaveStyle('max-width: 75ch')
 
-    const listStyle = getComputedStyle(screen.getByRole('list'))
-    expect(listStyle.maxWidth).toBe('75ch')
+    expect(screen.getByRole('list')).toHaveStyle('max-width: 75ch')
 
-    const imgStyle = getComputedStyle(screen.getByRole('img'))
-    expect(imgStyle.display).toBe('block')
+    expect(screen.getByRole('img')).toHaveStyle('display: block')
 
-    const dividerStyle = getComputedStyle(screen.getByRole('separator'))
-    expect(dividerStyle.marginTop).toBe(theme.space[5])
-    expect(dividerStyle.marginBottom).toBe(theme.space[5])
+    expect(screen.getByRole('separator')).toHaveStyle(
+      'margin-top: var(--sx-space-5)'
+    )
+    expect(screen.getByRole('separator')).toHaveStyle(
+      'margin-bottom: var(--sx-space-5)'
+    )
   })
 })
