@@ -1,2 +1,2 @@
 export { Form } from './Form'
-export { ValidationOptions } from './validation'
+export type { ValidationOptions } from './validation'
