@@ -31,8 +31,9 @@ export const StackContent: React.FC<StackContentProps> = ({
 
       if (type === Heading) {
         return cloneWithStyle(child, {
-          maxWidth: '75ch',
-          '&:not(:last-child)': { my: '$4' }
+          maxWidth: '65ch',
+          '&:not(:first-child)': { mt: '$4' },
+          '&:not(:last-child)': { mb: '$4' }
         })
       }
 
@@ -44,18 +45,16 @@ export const StackContent: React.FC<StackContentProps> = ({
       }
 
       if (type === Divider) {
-        return React.cloneElement(child, {
-          'data-testid': '1',
-          css: {
-            my: '$5'
-          }
+        return cloneWithStyle(child, {
+          my: '$5'
         })
       }
 
       if (type === Image) {
         return cloneWithStyle(child, {
           display: 'block',
-          '&:not(:last-child)': { my: '$5' }
+          '&:not(:first-child)': { mt: '$5' },
+          '&:not(:last-child)': { mb: '$5' }
         })
       }
 
