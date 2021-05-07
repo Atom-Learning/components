@@ -20,23 +20,14 @@ export const ToastProvider: React.FC = ({ children }) => {
   return (
     <>
       <Container onMouseEnter={startPause} onMouseLeave={endPause}>
-        {toasts.map((toast) => {
-          const offset = calculateOffset(toast.id, {
-            reverseOrder: true,
-            margin: 8
-          })
-          const ref = (el) => {
-            if (el && !toast.height) {
-              const height = el.getBoundingClientRect().height
-              updateHeight(toast.id, height)
-            }
-          }
-          return (
-            <Toast ref={ref} key={toast.id} offset={offset} {...toast}>
-              {toast.message}
-            </Toast>
-          )
-        })}
+        {toasts.map((toast) => (
+          <Toast
+            key={toast.id}
+            calculateOffset={calculateOffset}
+            updateHeight={updateHeight}
+            {...toast}
+          />
+        ))}
       </Container>
       {children}
     </>

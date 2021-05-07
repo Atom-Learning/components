@@ -17,12 +17,12 @@ describe('Toast component', () => {
     await waitFor(() => expect(screen.getByText(message)).toBeVisible())
   })
 
-  it.skip('has no programmatically detectable a11y issues', async () => {
+  it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<ToastProvider />)
 
-    toast(message)
+    toast('Something')
 
-    await waitFor(() => expect(screen.getByText(message)).toBeVisible())
+    await waitFor(() => expect(screen.getByText('Something')).toBeVisible())
 
     expect(await waitFor(() => axe(container))).toHaveNoViolations()
   })

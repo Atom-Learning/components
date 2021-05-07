@@ -1,7 +1,7 @@
 import { Close } from '@atom-learning/icons'
 import * as React from 'react'
-import { toast } from 'react-hot-toast'
-import type { ToastType } from 'react-hot-toast/dist/core/types'
+import { toast as toasty } from 'react-hot-toast'
+import type { Toast as ToastInterface } from 'react-hot-toast/dist/core/types'
 
 import { keyframes, styled } from '~/stitches'
 
@@ -43,7 +43,7 @@ const StyledToast = styled('div', {
   pl: '$3',
   pr: '$2',
   py: '$2',
-  transition: 'background-color 75ms ease-out, transform 150ms ease-out',
+  transition: 'background-color 50ms ease-out, transform 150ms ease-out',
   width: 360,
   variants: {
     status: {
@@ -66,27 +66,56 @@ const ButtonClose = styled('button', {
   size: '$3'
 })
 
-type ToastProps = React.ComponentProps<typeof StyledToast> & {
-  offset: number
-  type: ToastType
-  visible: boolean
-}
+type ToastProps = React.ComponentProps<typeof StyledToast> &
+  ToastInterface & {
+    calculateOffset: (
+      id: string,
+      opts?: { reverseOrder?: boolean; margin?: number }
+    ) => number
+    updateHeight: (toastId: string, height: number) => void
+  }
 
 export const Toast: React.FC<ToastProps> = React.memo(
-  React.forwardRef(({ children, type = 'blank', id, offset, visible }, ref) => (
-    <ToastContainer visible={visible}>
-      <StyledToast
-        ref={ref}
-        status={type}
-        role="status"
-        aria-live="polite"
-        style={{ transform: `translateY(${offset}px)` }}
-      >
-        <Text css={{ color: 'white' }}>{children}</Text>
-        <ButtonClose onClick={() => toast.dismiss(id)}>
-          <Icon is={Close} />
-        </ButtonClose>
-      </StyledToast>
-    </ToastContainer>
-  ))
+  ({
+    ariaLive,
+    height,
+    id,
+    message,
+    role,
+    type = 'blank',
+    visible,
+    calculateOffset,
+    updateHeight
+  }) => {
+    const offset = calculateOffset(id, {
+      reverseOrder: true,
+      margin: 8
+    })
+
+    const ref = (el) => {
+      if (el && height === undefined) {
+        updateHeight(id, el.getBoundingClientRect().height)
+      }
+    }
+
+    return (
+      <ToastContainer visible={visible}>
+        <StyledToast
+          ref={ref}
+          status={type}
+          role={role}
+          aria-live={ariaLive}
+          style={{ transform: `translateY(${offset}px)` }}
+        >
+          <Text css={{ color: 'white' }}>{message}</Text>
+          <ButtonClose
+            aria-label="Close alert"
+            onClick={() => toasty.dismiss(id)}
+          >
+            <Icon is={Close} />
+          </ButtonClose>
+        </StyledToast>
+      </ToastContainer>
+    )
+  }
 )
