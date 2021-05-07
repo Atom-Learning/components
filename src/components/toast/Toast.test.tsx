@@ -8,9 +8,10 @@ describe('Toast component', () => {
   const message = 'Message'
 
   it('renders', async () => {
-    render(<ToastProvider />)
+    render(<ToastProvider>TEST</ToastProvider>)
 
     expect(await screen.queryByText(message)).toEqual(null)
+    expect(await screen.queryByText('TEST')).toBeVisible()
 
     toast(message)
 
