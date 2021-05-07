@@ -1,127 +1,92 @@
-import 'react-toastify/dist/ReactToastify.minimal.css'
-
+import { Close } from '@atom-learning/icons'
 import * as React from 'react'
-import { cssTransition, ToastContainer } from 'react-toastify'
+import { toast } from 'react-hot-toast'
+import type { ToastType } from 'react-hot-toast/dist/core/types'
 
 import { keyframes, styled } from '~/stitches'
 
-const toastHeight = '$sizes$3'
-const toastOffset = '$sizes$4'
-const contentIn = `translate3d(0, -calc(${toastHeight + toastOffset}), 0)`
-const contentOut = 'translate3d(0, 0, 0)'
+import { Icon } from '../icon/Icon'
+import { Text } from '../text/Text'
 
-const progress = keyframes({
-  '0%': { transform: 'scaleX(1)' },
-  '100%': { transform: 'scaleX(0)' }
+const enterAnimation = keyframes({
+  '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
+  '100%': { transform: `translate3d(0,0,0)`, opacity: 1 }
+})
+const exitAnimation = keyframes({
+  '0%': { transform: `translate3d(0,0,0)`, opacity: 1 },
+  '100%': { transform: `translate3d(0,-100%,0)`, opacity: 0 }
 })
 
-const enter = keyframes({
-  '0%': { transform: contentIn },
-  '100%': { transform: contentOut }
-})
-
-const exit = keyframes({
-  '0%': { transform: contentOut },
-  '100%': { transform: contentIn }
-})
-
-const StyledToastContainer = styled(ToastContainer, {
-  position: 'fixed',
-  zIndex: '10000 !important',
-  borderSizing: 'border-box',
-  '@sm': {
-    left: '50%',
-    top: '$3',
-    transform: 'translateX(-50%)'
-  },
-  '@media (max-width: 549px)': {
-    left: 0,
-    right: 0,
-    top: 0
-  },
-  '.Toastify__toast': {
-    alignItems: 'center',
-    boxShadow: '$0',
-    color: 'white',
-    cursor: 'pointer',
-    display: 'flex',
-    fontFamily: '$sans',
-    fontWeight: 400,
-    justifyContent: 'space-between',
-    mb: '$2',
-    minHeight: toastHeight,
-    overflow: 'hidden',
-    position: 'relative',
-    p: '$2',
-    width: '100%',
-    zIndex: 10000,
-    '@sm': {
-      borderRadius: '$0',
-      width: 360
-    },
-    '@media (max-width: 549px)': {
-      width: 'unset' // needed to show the close button in extremely small vp
+const ToastContainer = styled('div', {
+  position: 'absolute',
+  variants: {
+    visible: {
+      true: {
+        animation: `${enterAnimation} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+      },
+      false: {
+        animation: `${exitAnimation} 250ms cubic-bezier(0.22, 1, 0.36, 1)`,
+        opacity: 0
+      }
     }
-  },
-  '.Toastify__toast-body': {
-    width: '100%'
-  },
-  '.Toastify__toast--default': {
-    bg: '$primary500'
-  },
-  '.Toastify__toast--success': {
-    bg: '$success'
-  },
-  '.Toastify__toast--warning': {
-    bg: '$warning'
-  },
-  '.Toastify__toast--error': {
-    bg: '$danger'
-  },
-  '.Toastify__progress-bar--animated': {
-    // This is needed even when progress bar is hidden as without it autoClose stops working
-    animation: `${progress} linear 1 forwards`
-  },
-  '.Toastify__close-button': {
-    all: 'unset',
-    display: 'flex',
-    height: toastHeight,
-    right: 0,
-    top: 0,
-    '& > svg': {
-      fill: 'currentColor',
-      margin: 'auto',
-      width: 14
-    }
-  },
-  '.enter': {
-    animation: enter
-  },
-  '.exit': {
-    animation: exit
   }
 })
 
-const Zoom = cssTransition({
-  enter: 'enter',
-  exit: 'exit',
-  collapseDuration: 200
+const StyledToast = styled('div', {
+  alignItems: 'center',
+  borderRadius: '$0',
+  boxSizing: 'border-box',
+  color: 'white',
+  display: 'flex',
+  justifyContent: 'space-between',
+  minHeight: '$4',
+  pl: '$3',
+  pr: '$2',
+  py: '$2',
+  transition: 'background-color 75ms ease-out, transform 150ms ease-out',
+  width: 360,
+  variants: {
+    status: {
+      blank: { bg: '$primary900' },
+      error: { bg: '$danger' },
+      loading: { bg: '$primary900' },
+      success: { bg: '$success' }
+    }
+  }
 })
 
-type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToastContainer>
+// TODO: convert to ActionIcon
+const ButtonClose = styled('button', {
+  bg: 'unset',
+  border: 'unset',
+  color: 'white',
+  cursor: 'pointer',
+  flex: '0 0 auto',
+  p: 'unset',
+  size: '$3'
+})
 
-export const ToastProvider: React.FC<ToastProps> = (props) => {
-  return (
-    <StyledToastContainer
-      aria-live="assertive"
-      draggable={false}
-      pauseOnFocusLoss={false}
-      hideProgressBar
-      position="top-center"
-      transition={Zoom}
-      {...props}
-    />
-  )
+type ToastProps = React.ComponentProps<typeof StyledToast> & {
+  offset: number
+  type: ToastType
+  visible: boolean
 }
 
-ToastProvider.displayName = 'ToastProvider'
+export const Toast: React.FC<ToastProps> = React.memo(
+  React.forwardRef(({ children, type = 'blank', id, offset, visible }, ref) => (
+    <ToastContainer visible={visible}>
+      <StyledToast
+        ref={ref}
+        status={type}
+        role="status"
+        aria-live="polite"
+        style={{ transform: `translateY(${offset}px)` }}
+      >
+        <Text css={{ color: 'white' }}>{children}</Text>
+        <ButtonClose onClick={() => toast.dismiss(id)}>
+          <Icon is={Close} />
+        </ButtonClose>
+      </StyledToast>
+    </ToastContainer>
+  ))
+)
