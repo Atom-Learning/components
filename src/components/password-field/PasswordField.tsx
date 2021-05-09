@@ -3,12 +3,12 @@ import * as React from 'react'
 import { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 
+import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box'
 import { FieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import type { ValidationOptions } from '~/components/form'
 import { Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
-import { styled } from '~/stitches'
 
 type PasswordFieldProps = InputProps & {
   label?: string
@@ -21,17 +21,6 @@ type PasswordFieldProps = InputProps & {
   required?: boolean
   validation?: ValidationOptions
 }
-
-const InvisibleButton = styled('button', {
-  background: 'none',
-  border: 'none',
-  bottom: 0,
-  cursor: 'pointer',
-  p: 0,
-  position: 'absolute',
-  right: 0,
-  size: '$4'
-})
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
@@ -71,17 +60,20 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           ref={ref}
           {...remainingProps}
         />
-        <InvisibleButton
-          aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
+        <ActionIcon
+          css={{
+            bottom: 0,
+            color: '$tonal700',
+            position: 'absolute',
+            right: 0
+          }}
+          label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}
           onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
-          type="button"
+          size="lg"
         >
-          <Icon
-            css={{ color: '$tonal700' }}
-            is={isPasswordVisible ? Eye : EyeClosed}
-          />
-        </InvisibleButton>
+          <Icon is={isPasswordVisible ? Eye : EyeClosed} />
+        </ActionIcon>
       </FieldWrapper>
     </Box>
   )

@@ -65,6 +65,7 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
 
     return (
       <StyledButton
+        type="button"
         {...remainingProps}
         aria-label={label}
         appearance={appearance}
