@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionIcon component renders 1`] = `
+.sxib16r {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxib16rmbqqh--size-md {
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+}
+
+.sxlg546 {
+  -webkit-appearance: none;
+  appearance: none;
+  border: unset;
+  border-radius: var(--sx-radii-0);
+  cursor: pointer;
+  padding: unset;
+  transition: all 125ms ease-out;
+}
+
+.sxlg546ph5pa--appearance-none {
+  background: transparent;
+  color: var(--sx-colors-tonal800);
+}
+
+.sxlg546ph5pa--appearance-none:hover,
+.sxlg546ph5pa--appearance-none:focus {
+  color: var(--sx-colors-primary900);
+}
+
+.sxlg546e6fss--size-md {
+  height: var(--sx-sizes-3);
+  width: var(--sx-sizes-3);
+}
+
+<div>
+  <button
+    aria-label="Mark as complete"
+    class="sxlg546 sxlg546ph5pa--appearance-none sxlg546e6fss--size-md"
+  >
+    <svg />
+  </button>
+</div>
+`;

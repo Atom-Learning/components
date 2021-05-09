@@ -1,0 +1,35 @@
+---
+title: Action Icon
+component: ActionIcon
+description: An accessible interactive wrapper around Icon
+category: Navigation
+---
+
+`ActionIcon` should be used alongside `Icon` when you require a user interaction.
+
+```tsx preview
+<>
+  <ActionIcon label="Attach a file" appearance="none">
+    <Icon is={Clip} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="outline">
+    <Icon is={Clip} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="solid">
+    <Icon is={Clip} size="sm" />
+  </ActionIcon>
+</>
+```
+
+It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual description of the action the user is about to perform.
+
+```tsx preview
+<Tooltip>
+  <Tooltip.Trigger>
+    <ActionIcon size="lg" label="Add to basket">
+      <Icon is={Basket} size="md" />
+    </ActionIcon>
+  </Tooltip.Trigger>
+  <Tooltip.Content>Add to basket</Tooltip.Content>
+</Tooltip>
+```
