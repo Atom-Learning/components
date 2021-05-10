@@ -61,7 +61,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           {...remainingProps}
         />
         <ActionIcon
-          appearance="subtle"
+          appearance="simple"
           css={{ bottom: 0, position: 'absolute', right: 0 }}
           label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}
