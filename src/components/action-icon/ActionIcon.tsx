@@ -25,7 +25,7 @@ const StyledButton = styled('button', {
         border: '1px solid $tonal500',
         bg: 'transparent',
         color: '$tonal600',
-        '&:hover,&:focus': {
+        '&:hover, &:focus': {
           borderColor: '$primary900',
           color: '$primary900'
         }
