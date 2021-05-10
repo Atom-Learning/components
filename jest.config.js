@@ -6,8 +6,7 @@ module.exports = {
   setupFilesAfterEnv: ['./jest-setup.ts'],
   moduleNameMapper: {
     '~/(.*)': '<rootDir>/src/$1', // matches the path alias in tsconfig.json
-    '^react$': '<rootDir>/node_modules/react',
-    '\\.(css)$': '<rootDir>/__mocks__/styleMock.js'
+    '^react$': '<rootDir>/node_modules/react'
   },
   transform: {
     '^.+\\.(ts|tsx)$': 'babel-jest'
