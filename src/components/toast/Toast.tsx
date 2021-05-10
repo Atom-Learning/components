@@ -5,6 +5,7 @@ import type { Toast as ToastInterface } from 'react-hot-toast/dist/core/types'
 
 import { keyframes, styled } from '~/stitches'
 
+import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 import { Text } from '../text/Text'
 
@@ -57,17 +58,6 @@ const StyledToast = styled('div', {
   }
 })
 
-// TODO: convert to ActionIcon
-const ButtonClose = styled('button', {
-  bg: 'unset',
-  border: 'unset',
-  color: 'white',
-  cursor: 'pointer',
-  flex: '0 0 auto',
-  p: 'unset',
-  size: '$3'
-})
-
 type ToastProps = React.ComponentProps<typeof StyledToast> &
   ToastInterface & {
     calculateOffset: (
@@ -113,12 +103,16 @@ export const Toast: React.FC<ToastProps> = React.memo(
           style={{ transform: `translateY(${offset}px)` }}
         >
           <Text css={{ color: 'inherit' }}>{message}</Text>
-          <ButtonClose
-            aria-label="Close alert"
+          <ActionIcon
+            css={{
+              color: 'white',
+              flex: '0 0 auto'
+            }}
+            label="Close alert"
             onClick={() => toast.dismiss(id)}
           >
             <Icon is={Close} />
-          </ButtonClose>
+          </ActionIcon>
         </StyledToast>
       </ToastContainer>
     )

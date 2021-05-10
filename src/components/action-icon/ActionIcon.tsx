@@ -18,7 +18,7 @@ const StyledButton = styled('button', {
         bg: 'transparent',
         color: '$tonal800',
         '&:hover,&:focus': {
-          color: '$primary900'
+          bg: '$alpha250'
         }
       },
       outline: {
