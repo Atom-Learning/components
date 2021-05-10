@@ -61,12 +61,8 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
           {...remainingProps}
         />
         <ActionIcon
-          css={{
-            bottom: 0,
-            color: '$tonal700',
-            position: 'absolute',
-            right: 0
-          }}
+          appearance="subtle"
+          css={{ bottom: 0, position: 'absolute', right: 0 }}
           label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}
           onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
