@@ -3,12 +3,12 @@ import { useToaster } from 'react-hot-toast'
 
 import { styled } from '~/stitches'
 
-import { Toast } from './Toast'
+import { Toast, TOAST_WIDTH } from './Toast'
 
 export { default as toast } from 'react-hot-toast'
 
 const Container = styled('div', {
-  left: 'calc(50% - 360px / 2)',
+  left: `calc(50% - ${TOAST_WIDTH / 2}px)`,
   position: 'fixed',
   top: '$3'
 })

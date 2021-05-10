@@ -8,6 +8,8 @@ import { keyframes, styled } from '~/stitches'
 import { Icon } from '../icon/Icon'
 import { Text } from '../text/Text'
 
+export const TOAST_WIDTH = 360
+
 const slideIn = keyframes({
   '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
   '100%': { transform: `translate3d(0,0,0)`, opacity: 1 }
@@ -44,7 +46,7 @@ const StyledToast = styled('div', {
   pr: '$2',
   py: '$2',
   transition: 'background-color 50ms ease-out, transform 150ms ease-out',
-  width: 360,
+  width: TOAST_WIDTH,
   variants: {
     status: {
       blank: { bg: '$primary900' },
@@ -70,7 +72,10 @@ type ToastProps = React.ComponentProps<typeof StyledToast> &
   ToastInterface & {
     calculateOffset: (
       id: string,
-      opts?: { reverseOrder?: boolean; margin?: number }
+      options?: {
+        reverseOrder?: boolean
+        margin?: number
+      }
     ) => number
     updateHeight: (toastId: string, height: number) => void
   }
