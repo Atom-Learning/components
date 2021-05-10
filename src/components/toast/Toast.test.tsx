@@ -8,21 +8,18 @@ describe('Toast component', () => {
   const message = 'Message'
 
   it('renders', async () => {
-    render(<ToastProvider />)
+    render(<ToastProvider>TEST</ToastProvider>)
 
     expect(await screen.queryByText(message)).toEqual(null)
+    expect(await screen.queryByText('TEST')).toBeVisible()
 
     toast(message)
 
     await waitFor(() => expect(screen.getByText(message)).toBeVisible())
   })
 
-  it.skip('has no programmatically detectable a11y issues', async () => {
+  it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<ToastProvider />)
-
-    toast(message)
-
-    await waitFor(() => expect(screen.getByText(message)).toBeVisible())
 
     expect(await waitFor(() => axe(container))).toHaveNoViolations()
   })
