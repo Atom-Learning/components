@@ -5,6 +5,24 @@ import { styled } from '~/stitches'
 
 import { Icon } from '../icon/Icon'
 
+const getOutlineVariant = (color: string) => ({
+  border: '1px solid $tonal500',
+  bg: 'transparent',
+  color: '$tonal600',
+  '&:hover, &:focus': {
+    borderColor: color,
+    color: color
+  }
+})
+const getSolidVariant = (color: string) => ({
+  bg: '$tonal200',
+  color: '$tonal800',
+  '&:hover,&:focus': {
+    bg: color,
+    color: 'white'
+  }
+})
+
 const StyledButton = styled('button', {
   appearance: 'none',
   border: 'unset',
@@ -13,41 +31,73 @@ const StyledButton = styled('button', {
   p: 'unset',
   transition: 'all 125ms ease-out',
   variants: {
+    theme: {
+      primary: {},
+      success: {},
+      warning: {},
+      error: {}
+    },
     appearance: {
       none: {
         bg: 'transparent',
         color: '$tonal800',
-        '&:hover,&:focus': {
-          bg: '$alpha250'
-        }
-      },
-      outline: {
-        border: '1px solid $tonal500',
-        bg: 'transparent',
-        color: '$tonal600',
         '&:hover, &:focus': {
-          borderColor: '$primary900',
-          color: '$primary900'
+          bg: '$alpha150'
         }
       },
-      solid: {
-        bg: '$tonal200',
-        color: '$tonal800',
-        '&:hover,&:focus': {
-          bg: '$primary900',
-          color: 'white'
-        }
-      }
+      outline: {},
+      solid: {}
     },
     size: {
-      md: {
-        size: '$3'
-      },
-      lg: {
-        size: '$4'
-      }
+      md: { size: '$3' },
+      lg: { size: '$4' }
     }
-  }
+  },
+  compoundVariants: [
+    // Appearance Solid
+    {
+      theme: 'primary',
+      appearance: 'solid',
+      css: getSolidVariant('$primary900')
+    },
+    {
+      theme: 'success',
+      appearance: 'solid',
+      css: getSolidVariant('$success')
+    },
+    {
+      theme: 'warning',
+      appearance: 'solid',
+      css: getSolidVariant('$warning')
+    },
+    {
+      theme: 'error',
+      appearance: 'solid',
+      css: getSolidVariant('$danger')
+    },
+
+    // Appearance Outline
+    {
+      theme: 'primary',
+      appearance: 'outline',
+      css: getOutlineVariant('$primary900')
+    },
+    {
+      theme: 'success',
+      appearance: 'outline',
+      css: getOutlineVariant('$success')
+    },
+    {
+      theme: 'warning',
+      appearance: 'outline',
+      css: getOutlineVariant('$warning')
+    },
+    {
+      theme: 'error',
+      appearance: 'outline',
+      css: getOutlineVariant('$danger')
+    }
+  ]
 })
 
 type ActionIconProps = React.ComponentProps<typeof StyledButton> & {
