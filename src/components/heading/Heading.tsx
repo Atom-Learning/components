@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
 const StyledHeading = styled('h2', {
-  color: '$tonal-900',
+  color: '$tonal900',
   fontFamily: '$sans',
   fontWeight: 700,
   margin: 0,
