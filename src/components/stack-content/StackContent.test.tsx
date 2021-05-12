@@ -14,7 +14,7 @@ describe('StackContent component', () => {
       <StackContent>
         <Heading>HEADING</Heading>
         <Text>TEXT</Text>
-        <Divider />
+        <Divider css={{ color: 'red' }} />
         <List>
           <List.Item />
         </List>
@@ -36,5 +36,6 @@ describe('StackContent component', () => {
     expect(screen.getByRole('separator')).toHaveStyle(
       'margin-bottom: var(--sx-space-5)'
     )
+    expect(screen.getByRole('separator')).toHaveStyle('color: red')
   })
 })
