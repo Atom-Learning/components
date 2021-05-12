@@ -17,7 +17,12 @@ type StackContentProps = React.ComponentProps<typeof StyledStackContent> & {
 }
 
 const cloneWithStyle = (child: React.ReactElement, style: CSS) =>
-  React.cloneElement(child, { css: style })
+  React.cloneElement(child, {
+    css: {
+      ...style,
+      ...child.props.css
+    }
+  })
 
 export const StackContent: React.FC<StackContentProps> = ({
   children,
