@@ -31,7 +31,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         css={{
           justifyContent: 'space-between',
           alignItems: 'center',
-          mb: '$3'
+          mb: '$2'
         }}
       >
         <Label htmlFor={fieldId} required={required}>
