@@ -21,6 +21,8 @@ describe('Toast component', () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<ToastProvider />)
 
-    expect(await waitFor(() => axe(container))).toHaveNoViolations()
+    expect(
+      await waitFor(() => axe(container), { timeout: 5000 })
+    ).toHaveNoViolations()
   })
 })
