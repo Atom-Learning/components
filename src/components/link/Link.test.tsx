@@ -2,6 +2,8 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
+import { Heading } from '../heading/Heading'
+import { Text } from '../text/Text'
 import { Link } from './'
 
 describe(`Link component`, () => {
@@ -45,5 +47,21 @@ describe(`Link component`, () => {
     render(<Link as="button">See more</Link>)
 
     expect(screen.getByRole('button')).toBeInTheDocument()
+  })
+
+  it('can be nested within Text and Heading', async () => {
+    render(
+      <>
+        <Text>
+          <Link>TEXT LINK</Link>
+        </Text>
+        <Heading>
+          <Link>HEADING LINK</Link>
+        </Heading>
+      </>
+    )
+
+    expect(screen.getByText('TEXT LINK')).toHaveStyle('font-size: 100%')
+    expect(screen.getByText('HEADING LINK')).toHaveStyle('font-size: 100%')
   })
 })

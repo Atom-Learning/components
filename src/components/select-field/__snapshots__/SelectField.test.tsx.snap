@@ -5,10 +5,10 @@ exports[`SelectField component renders 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
 .sxdiu5c {
@@ -95,7 +95,7 @@ exports[`SelectField component renders 1`] = `
       class="sx03kze"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
           class="sxdiu5c sxdiu5cjqqvr--size-md"
