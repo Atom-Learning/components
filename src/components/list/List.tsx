@@ -27,19 +27,13 @@ const StyledUl = styled('ul', {
   variants: {
     theme: {
       tonal: {
-        [`& ${StyledLi}`]: {
-          '&::marker': { color: '$tonal900' }
-        }
+        color: '$tonal900'
       },
       primary: {
-        [`& ${StyledLi}`]: {
-          '&::marker': { color: '$primary500' }
-        }
+        color: '$primary500'
       },
       secondary: {
-        [`& ${StyledLi}`]: {
-          '&::marker': { color: '$secondary500' }
-        }
+        color: '$secondary500'
       }
     },
     size: textVariantSize({ applyCapsize: false })
@@ -51,7 +45,7 @@ type ListProps = React.ComponentProps<typeof StyledUl> & {
 }
 
 export const List: React.FC<ListProps> & { Item: typeof StyledLi } = ({
-  theme = 'tonal',
+  theme,
   size = 'md',
   ...remainingProps
 }) => <StyledUl theme={theme} size={size} {...remainingProps} />
