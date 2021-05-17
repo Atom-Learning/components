@@ -95,7 +95,7 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxx4uif {
+.sx2te0w {
   background: unset;
   border: unset;
   padding: unset;
@@ -105,19 +105,44 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sxx4uif:focus,
-.sxx4uif:hover {
+.sx2te0w:focus,
+.sx2te0w:hover {
   color: var(--sx-colors-primary900);
   text-decoration: underline;
 }
 
-.sxx4uif:active {
+.sx2te0w:active {
   color: var(--sx-colors-primary500);
 }
 
-.sxx4uifdi0z9--size-sm {
+.sxfey5o .sx2te0w,
+.sxe0tmj .sx2te0w {
+  font-size: 100%;
+  line-height: 1;
+}
+
+.sxfey5o .sx2te0w::before,
+.sxfey5o .sx2te0w::after,
+.sxe0tmj .sx2te0w::before,
+.sxe0tmj .sx2te0w::after {
+  content: none;
+}
+
+.sx2te0wxzxpn--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.69;
+}
+
+.sx2te0wxzxpn--size-sm::before {
+  content: '';
+  margin-bottom: -0.477em;
+  display: table;
+}
+
+.sx2te0wxzxpn--size-sm::after {
+  content: '';
+  margin-top: -0.477em;
+  display: table;
 }
 
 <div>
@@ -134,7 +159,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sxx4uif sxx4uifdi0z9--size-sm"
+        class="sx2te0w sx2te0wxzxpn--size-sm"
         href="https://example.com"
       >
         Example prompt
