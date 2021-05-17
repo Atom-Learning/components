@@ -3,7 +3,8 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
-import { textVariantSize } from '../text'
+import { StyledHeading } from '../heading/Heading'
+import { StyledParagraph, textVariantSize } from '../text/Text'
 
 const StyledLink = styled('a', {
   bg: 'unset',
@@ -20,8 +21,15 @@ const StyledLink = styled('a', {
   '&:active': {
     color: '$primary500'
   },
+  [`${StyledParagraph} &, ${StyledHeading} &`]: {
+    fontSize: '100%',
+    lineHeight: 1,
+    '&::before, &::after': {
+      content: 'none'
+    }
+  },
   variants: {
-    size: textVariantSize({ applyCapsize: false })
+    size: textVariantSize()
   }
 })
 
