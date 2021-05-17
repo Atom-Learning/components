@@ -1,42 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxl7wr3 {
+.sxxi0hp {
   font-family: var(--sx-fonts-sans);
   margin: unset;
   padding: unset;
   padding-left: var(--sx-space-3);
 }
 
-.sxl7wr3 .sx03kze {
+.sxxi0hp .sx03kze {
   padding-left: var(--sx-space-2);
 }
 
-.sxl7wr3 .sx03kze::marker {
+.sxxi0hp .sx03kze::marker {
   content: "•";
   font-weight: bold;
 }
 
-.sxl7wr3 .sx03kze:not(:last-child) {
+.sxxi0hp .sx03kze:not(:last-child) {
   margin-bottom: var(--sx-space-2);
 }
 
-.sxl7wr3 .sx03kze:last-child {
+.sxxi0hp .sx03kze:last-child {
   margin-bottom: 0;
 }
 
-.sxl7wr3k6wac--theme-tonal .sx03kze::marker {
-  color: var(--sx-colors-tonal900);
-}
-
-.sxl7wr35dbgn--size-md {
+.sxxi0hp5dbgn--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
 }
 
 <div>
   <ul
-    class="sxl7wr3 sxl7wr3k6wac--theme-tonal sxl7wr35dbgn--size-md"
+    class="sxxi0hp sxxi0hp5dbgn--size-md"
   >
     <li
       class="sx03kze"
