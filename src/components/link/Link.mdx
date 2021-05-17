@@ -24,3 +24,14 @@ It adds default styling and the `css` prop.
   I'm a link
 </Link>
 ```
+
+---
+
+[Capsize](https://seek-oss.github.io/capsize/) is used to size the text to the height of its capital letters, trimming the space above capital letters and below the baseline. This is removed when `Link` is nested within either `Text`, `Heading` or `List` components to ensure that it renders correctly.
+
+```tsx preview
+<Text size="lg">
+  <Link href="http://example.com/">Adaptive online learning</Link> for ages
+  7-12+. Prepare your child for secondary school entry and beyond.
+</Text>
+```

@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 import { textVariantSize } from '../text'
 
-const StyledLi = styled('li', {})
+export const StyledLi = styled('li', {})
 
 const StyledUl = styled('ul', {
   fontFamily: '$sans',
