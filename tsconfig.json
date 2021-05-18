@@ -9,13 +9,21 @@
     "moduleResolution": "node",
     "lib": ["es6", "dom"],
     "types": ["node", "jest"],
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "skipLibCheck": true,
     "paths": {
-      "~/*": ["./*"] // allow imports from '~/components', but not '~'
+      "~/*": ["./src/*"], // allow imports from '~/components', but not '~',
+      "root/*": ["./*"] // allow imports from '~/components', but not '~'
     },
+    "plugins": [
+      // Transform paths in output .js files
+      { "transform": "typescript-transform-paths" },
+
+      // Transform paths in output .d.ts files (Include this line if you output declarations files)
+      { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ],
     "declaration": true // output d.ts files
   },
-  "include": ["./src/", "types/global.d.ts"],
-  "exclude": ["./src/**/*.test.*"]
+  "include": ["./", "types/global.d.ts"],
+  "exclude": ["./**/*.test.*"]
 }

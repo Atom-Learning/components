@@ -195,7 +195,7 @@ type ButtonProps = Override<
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
     isLoading?: boolean
-    onClick?: () => void
+    onClick: () => void
     to?: string
   }
 >
