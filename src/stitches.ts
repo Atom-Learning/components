@@ -1,80 +1,78 @@
-import atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme'
+import * as atomTheme from '@atom-learning/theme'
 import { createCss, StitchesCss } from '@stitches/react'
 
 type CSSValue = number | string
 type CSSBlob = { [key: string]: CSSValue }
 
+type UtilTheme<T> =
+  | `$${keyof typeof atomTheme[T]}`
+  | (string & Record<string, never>)
+
 // TODO: assess how intuitive the team finds these
 export const utils = {
-  p: () => (value: CSSValue): CSSBlob => ({
+  p: () => (value: UtilTheme<'space'>): CSSBlob => ({
     padding: value
   }),
-  pt: () => (value: CSSValue): CSSBlob => ({
+  pt: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingTop: value
   }),
-  pr: () => (value: CSSValue): CSSBlob => ({
+  pr: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingRight: value
   }),
-  pb: () => (value: CSSValue): CSSBlob => ({
+  pb: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingBottom: value
   }),
-  pl: () => (value: CSSValue): CSSBlob => ({
+  pl: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingLeft: value
   }),
-  px: () => (value: CSSValue): CSSBlob => ({
+  px: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingLeft: value,
     paddingRight: value
   }),
-  py: () => (value: CSSValue): CSSBlob => ({
+  py: () => (value: UtilTheme<'space'>): CSSBlob => ({
     paddingTop: value,
     paddingBottom: value
   }),
 
-  m: () => (value: CSSValue): CSSBlob => ({
+  m: () => (value: UtilTheme<'space'>): CSSBlob => ({
     margin: value
   }),
-  mt: () => (value: CSSValue): CSSBlob => ({
+  mt: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginTop: value
   }),
-  mr: () => (value: CSSValue): CSSBlob => ({
+  mr: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginRight: value
   }),
-  mb: () => (value: CSSValue): CSSBlob => ({
+  mb: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginBottom: value
   }),
-  ml: () => (value: CSSValue): CSSBlob => ({
+  ml: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginLeft: value
   }),
-  mx: () => (value: CSSValue): CSSBlob => ({
+  mx: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginLeft: value,
     marginRight: value
   }),
-  my: () => (value: CSSValue): CSSBlob => ({
+  my: () => (value: UtilTheme<'space'>): CSSBlob => ({
     marginTop: value,
     marginBottom: value
   }),
-  inset: () => (value: CSSValue): CSSBlob => ({
+
+  inset: () => (value: UtilTheme<'space'>): CSSBlob => ({
     top: value,
     right: value,
     bottom: value,
     left: value
   }),
-  bg: () => (value: string): CSSBlob => ({
-    background: value
+  size: () => (value: UtilTheme<'sizes'>): CSSBlob => ({
+    height: value,
+    width: value
   }),
-  size: () => (value: CSSValue | Array<CSSValue>): CSSBlob => {
-    if (Array.isArray(value)) {
-      const [height, width] = value
-      return {
-        height,
-        width
-      }
-    }
-    return {
-      height: value,
-      width: value
-    }
-  }
+
+  bg: () => (value: UtilTheme<'colors'>): CSSBlob => ({
+    background: value
+  })
 }
 
 export const media = {
@@ -87,7 +85,7 @@ export const media = {
 }
 
 const stitchesConfig = createCss({
-  theme: atomTheme,
+  theme: atomTheme as Theme,
   utils,
   media
 })
