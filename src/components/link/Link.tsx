@@ -4,6 +4,7 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
+import { StyledLi } from '../list/List'
 import { StyledParagraph, textVariantSize } from '../text/Text'
 
 const StyledLink = styled('a', {
@@ -21,7 +22,7 @@ const StyledLink = styled('a', {
   '&:active': {
     color: '$primary500'
   },
-  [`${StyledParagraph} &, ${StyledHeading} &`]: {
+  [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
     lineHeight: 1,
     '&::before, &::after': {
