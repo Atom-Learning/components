@@ -29,6 +29,11 @@ export const StyledHeading = styled('h2', {
         fontSize: '$xxl',
         lineHeight: 1.35,
         ...capsize('-0.312em')
+      },
+      xl: {
+        fontSize: '$xxxl',
+        lineHeight: 1.35,
+        ...capsize('-0.312em')
       }
     }
   }
