@@ -76,3 +76,19 @@ Setting `isRounded` creates a rounded button
 ```tsx live
 <Button isRounded>Rounded Button</Button>
 ```
+
+## Polymorphism
+
+The `Button` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively 
+
+```tsx preview
+<Button href="http://example.com/">
+  I'm a link
+</Button>
+```
+
+```tsx preview
+<Button onClick={() => console.log('clicked')}>
+  I'm a button
+</Button>
+```

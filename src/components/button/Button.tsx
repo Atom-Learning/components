@@ -4,6 +4,7 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
+import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
@@ -195,18 +196,16 @@ type ButtonProps = Override<
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
     isLoading?: boolean
-    onClick?: () => void
-    to?: string
-  }
+  } & NavigatorActions
 >
 
-export const Button: React.FC<ButtonProps> = React.forwardRef(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
       isLoading,
       onClick,
-      to,
+      href,
       appearance = 'solid',
       size = 'md',
       theme = 'primary',
@@ -215,7 +214,13 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     },
     ref
   ) => {
-    const optionalLinkProps = to ? { as: 'a', href: to } : {}
+    const optionalLinkProps = href
+      ? {
+          as: 'a',
+          href,
+          onClick: undefined
+        }
+      : {}
 
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
@@ -239,6 +244,6 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
       </StyledButton>
     )
   }
-)
+) as React.FC<ButtonProps>
 
 Button.displayName = 'Button'

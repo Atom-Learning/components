@@ -187,7 +187,7 @@ describe(`Button component`, () => {
     })
 
     it('renders an anchor if provided a link', async () => {
-      render(<Button to="https://atomlearning.co.uk">ATOM</Button>)
+      render(<Button href="https://atomlearning.co.uk">ATOM</Button>)
 
       expect(await screen.findByRole('link')).toHaveAttribute(
         'href',
