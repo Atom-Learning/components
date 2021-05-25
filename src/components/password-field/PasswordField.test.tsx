@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -42,23 +41,5 @@ describe(`Password component`, () => {
 
     expect(screen.getByRole('link')).toBeInTheDocument()
     expect(await axe(container)).toHaveNoViolations()
-  })
-
-  it('toggles password visibility', async () => {
-    render(
-      <Form>
-        <PasswordField name="password" />
-      </Form>
-    )
-
-    const input = screen.getByLabelText('Password')
-
-    expect(input).toHaveAttribute('type', 'password')
-
-    userEvent.click(screen.getByLabelText('Show password'))
-    expect(input).toHaveAttribute('type', 'text')
-
-    userEvent.click(screen.getByLabelText('Hide password'))
-    expect(input).toHaveAttribute('type', 'password')
   })
 })
