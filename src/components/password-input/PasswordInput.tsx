@@ -5,8 +5,9 @@ import { useState } from 'react'
 import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box'
 import { Icon } from '~/components/icon'
-import { Input, InputProps } from '~/components/input'
-import { CSS } from '~/stitches'
+import type { InputProps } from '~/components/input'
+import { Input } from '~/components/input'
+import type { CSS } from '~/stitches'
 
 type PasswordInputProps = Omit<InputProps, 'type'> & {
   hidePasswordText?: string
