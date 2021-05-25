@@ -25,7 +25,6 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
     const togglePasswordVisibility = () =>
       setIsPasswordVisible((currentState) => !currentState)
 
-    console.log(restProps)
 
     return (
       <Box css={{ position: 'relative' }}>
