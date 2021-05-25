@@ -42,7 +42,6 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
       error={error}
     >
       <PasswordInput
-        css={{ pr: '$sizes$2' }}
         autoComplete="current-password"
         name={name}
         id={name}

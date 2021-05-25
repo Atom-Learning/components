@@ -6,6 +6,7 @@ import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box'
 import { Icon } from '~/components/icon'
 import { Input, InputProps } from '~/components/input'
+import { CSS } from '~/stitches'
 
 type PasswordInputProps = Omit<InputProps, 'type'> & {
   hidePasswordText?: string
@@ -15,6 +16,7 @@ type PasswordInputProps = Omit<InputProps, 'type'> & {
 export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
   (
     {
+      css,
       hidePasswordText = 'Hide password',
       showPasswordText = 'Show password',
       ...restProps
@@ -25,9 +27,8 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
     const togglePasswordVisibility = () =>
       setIsPasswordVisible((currentState) => !currentState)
 
-
     return (
-      <Box css={{ position: 'relative' }}>
+      <Box css={{ position: 'relative', ...css } as CSS}>
         <Input
           {...restProps}
           type={isPasswordVisible ? 'text' : 'password'}
