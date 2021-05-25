@@ -34,6 +34,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
           {...restProps}
           type={isPasswordVisible ? 'text' : 'password'}
           ref={ref}
+          css={{ pr: '$sizes$2' }}
         />
         <ActionIcon
           appearance="simple"
