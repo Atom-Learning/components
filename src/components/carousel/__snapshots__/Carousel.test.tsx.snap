@@ -11,34 +11,8 @@ exports[`Carousel component renders 1`] = `
 }
 
 .sx03kze-f7jkm {
-  padding-left: var(--space-3);
-  padding-right: var(--space-3);
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-mag62 {
-  justify-content: center;
-}
-
-.sx2cs53-mag62 button {
-  background: var(--colors-tonal300);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-top: var(--space-4);
-  margin-left: var(--space-1);
-  margin-right: var(--space-1);
-  padding: var(--space-1);
-  height: 12px;
-  width: 12px;
-  transition: all 0.25s ease-in;
-}
-
-.sx2cs53-mag62 button[class*="selected"] {
-  background: var(--colors-primary900);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
 }
 
 .sxib16r {
@@ -52,86 +26,111 @@ exports[`Carousel component renders 1`] = `
 }
 
 .sxib16rmbqqh--size-md {
-  height: var(--sizes-2);
-  width: var(--sizes-2);
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
 }
 
-.sxgjq46 {
+.sx8qegy {
   align-items: center;
-  background: none;
-  border: none;
-  color: var(--colors-primary900);
+  background: unset;
+  border: unset;
+  color: var(--sx-colors-primary900);
   cursor: pointer;
   display: flex;
-  height: 44px;
-  width: 44px;
+  justify-content: center;
+  padding: unset;
+  height: var(--sx-sizes-4);
+  width: var(--sx-sizes-4);
   top: 50%;
   transform: translateY(-50%);
   transition: color 0.15s ease-in-out;
 }
 
-.sxgjq46:hover {
-  color: var(--colors-primary500);
+.sx8qegy:hover {
+  color: var(--sx-colors-primary500);
 }
 
-.sxgjq46:disabled {
-  color: var(--colors-tonal300);
+.sx8qegy:disabled {
+  color: var(--sx-colors-tonal300);
 }
 
-.sxgjq46-pqx9j {
+.sx8qegy-pqx9j {
   position: absolute;
-  left: var(--space-2);
+  left: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sxgjq46-pqx9j {
-    left: var(--space-3);
+  .sx8qegy-pqx9j {
+    left: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sxgjq46-pqx9j {
-    left: var(--space-4);
+  .sx8qegy-pqx9j {
+    left: var(--sx-space-4);
   }
 }
 
-.sxgjq46 {
+.sx8qegy {
   align-items: center;
-  background: none;
-  border: none;
-  color: var(--colors-primary900);
+  background: unset;
+  border: unset;
+  color: var(--sx-colors-primary900);
   cursor: pointer;
   display: flex;
-  height: 44px;
-  width: 44px;
+  justify-content: center;
+  padding: unset;
+  height: var(--sx-sizes-4);
+  width: var(--sx-sizes-4);
   top: 50%;
   transform: translateY(-50%);
   transition: color 0.15s ease-in-out;
 }
 
-.sxgjq46:hover {
-  color: var(--colors-primary500);
+.sx8qegy:hover {
+  color: var(--sx-colors-primary500);
 }
 
-.sxgjq46:disabled {
-  color: var(--colors-tonal300);
+.sx8qegy:disabled {
+  color: var(--sx-colors-tonal300);
 }
 
-.sxgjq46-dtra5 {
+.sx8qegy-dtra5 {
   position: absolute;
-  right: var(--space-2);
+  right: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sxgjq46-dtra5 {
-    right: var(--space-3);
+  .sx8qegy-dtra5 {
+    right: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sxgjq46-dtra5 {
-    right: var(--space-4);
+  .sx8qegy-dtra5 {
+    right: var(--sx-space-4);
   }
+}
+
+.sxsiaav {
+  justify-content: center;
+}
+
+.sxsiaav button {
+  background: var(--sx-colors-tonal300);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: var(--sx-space-1);
+  margin-right: var(--sx-space-1);
+  padding: var(--sx-space-1);
+  height: 12px;
+  width: 12px;
+  transition: all 0.25s ease-in;
+}
+
+.sxsiaav button[class*="selected"] {
+  background: var(--sx-colors-primary900);
 }
 
 .sx03kze-iy5j5 {
@@ -144,26 +143,28 @@ exports[`Carousel component renders 1`] = `
 }
 
 .sx03kze-iy5j5[aria-selected="true"] > div > div > * {
-  box-shadow: var(--shadows-1);
+  box-shadow: var(--sx-shadows-1);
 }
 
-.sx7shsv {
+.sx87oi3 {
   cursor: grab;
   margin-left: 50%;
   overflow: hidden;
   transform: translateX(-50%);
 }
 
-.sx7shsv div[class*="sliderTray_"] {
+.sx87oi3 [class*="sliderTray_"] {
+  padding: unset;
+  margin: unset;
   transition: transform .5s cubic-bezier(.645,.045,.355,1);
 }
 
-.sx7shsv div[class*="slide_"] {
+.sx87oi3 [class*="slide_"] {
   float: left;
   padding-bottom: 0 !important;
 }
 
-.sx7shsv div[class*="slideInner"] {
+.sx87oi3 [class*="slideInner"] {
   display: flex;
   justify-content: center;
 }
@@ -197,7 +198,7 @@ exports[`Carousel component renders 1`] = `
     >
       <button
         aria-label="previous"
-        class="buttonBack___1mlaL carousel__back-button sxgjq46 sxgjq46-pqx9j"
+        class="buttonBack___1mlaL carousel__back-button sx8qegy sx8qegy-pqx9j"
         disabled=""
         type="button"
       >
@@ -214,7 +215,7 @@ exports[`Carousel component renders 1`] = `
       </button>
       <button
         aria-label="next"
-        class="buttonNext___2mOCa carousel__next-button sxgjq46 sxgjq46-dtra5"
+        class="buttonNext___2mOCa carousel__next-button sx8qegy sx8qegy-dtra5"
         type="button"
       >
         <svg
@@ -231,7 +232,7 @@ exports[`Carousel component renders 1`] = `
       <div
         aria-label="Example carousel"
         aria-live="polite"
-        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx7shsv"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx87oi3"
         role="listbox"
         tabindex="0"
       >
@@ -334,7 +335,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group sx2cs53 sx2cs53-mag62"
+        class="carousel__dot-group sxsiaav"
       >
         <button
           aria-label="slide dot"

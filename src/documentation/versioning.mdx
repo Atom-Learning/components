@@ -1,6 +1,6 @@
 ---
 title: Versioning
-description: The project follows the SemVer standard [Semantic Versioning](https://semver.org/spec/v2.0.0.html) to make using the library easy
+description: The project follows the SemVer standard to make using the library easy
 category: Overview
 priority: 5
 ---
@@ -9,11 +9,15 @@ SemVer uses the `MAJOR`.`MINOR`.`PATCH` notation to identify changes with `MAJOR
 
 It is also a requirement to use [Semantic commits](https://www.conventionalcommits.org/en/v1.0.0/) as each tag will translate to a different type of version upgrade. For example:
 
-- Commits with a `breaking change` will be associated with a major release.
-- Commits with type 'feat' will be associated with a minor release.
-- Commits with type 'fix' will be associated with a patch release.
+- `fix` for bug fixes (patch version)
+- `perf` for performance improvements (patch version)
+- `feat` for new features (minor version)
 
-_Note:_ The `precommit` hooks will prevent commits that don't have the required tag prefixed to the message
+Other subjects (such as `chore`) will not cause a new release **unless** the commit footer starts with `BREAKING CHANGE:` (followed by an explanation of the breaking change).
+
+Commits that introduce a breaking change should start with `feat!:` and include the `BREAKING CHANGE:` footer. Breaking changes will cause a major version increase.
+
+_Note:_ The `precommit` hooks will prevent commits that don’t have the required tag prefixed to the message
 
 Versioning happens automatically when a feature branch gets merged into `main`. [semantic-release](https://github.com/semantic-release/semantic-release) is employed to calculate the new version number by running through all the new commits and their commit message tag. Once the new version is calculated, it updates the package.json and automatically updates the `CHANGELOG.md`. Then it proceeds to publish the new version both in `GitHub` and `npm`.
 

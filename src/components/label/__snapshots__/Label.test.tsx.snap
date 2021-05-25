@@ -2,15 +2,15 @@
 
 exports[`Label component renders a label 1`] = `
 .sxdiu5c {
-  color: var(--colors-secondary300);
+  color: var(--sx-colors-secondary300);
   display: block;
-  font-family: var(--fonts-sans);
+  font-family: var(--sx-fonts-sans);
   font-weight: 500;
   margin: 0;
 }
 
 .sxdiu5cjqqvr--size-md {
-  font-size: var(--fontSizes-md);
+  font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
 }
 

@@ -2,19 +2,21 @@ import { Slider as BaseSlider } from 'pure-react-carousel'
 
 import { styled } from '~/stitches'
 
-export const Slider = styled(BaseSlider, {
+export const CarouselSlider = styled(BaseSlider, {
   cursor: 'grab',
   ml: '50%',
   overflow: 'hidden',
   transform: 'translateX(-50%)',
-  '& div[class*="sliderTray_"]': {
+  '& [class*="sliderTray_"]': {
+    p: 'unset',
+    m: 'unset',
     transition: 'transform .5s cubic-bezier(.645,.045,.355,1)'
   },
-  '& div[class*="slide_"]': {
+  '& [class*="slide_"]': {
     float: 'left',
     pb: '0 !important'
   },
-  '& div[class*="slideInner"]': {
+  '& [class*="slideInner"]': {
     display: 'flex',
     justifyContent: 'center'
   },

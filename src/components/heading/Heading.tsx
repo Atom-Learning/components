@@ -3,8 +3,8 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
-const StyledHeading = styled('h2', {
-  color: '$tonal-900',
+export const StyledHeading = styled('h2', {
+  color: '$tonal900',
   fontFamily: '$sans',
   fontWeight: 700,
   margin: 0,

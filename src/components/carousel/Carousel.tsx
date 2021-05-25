@@ -3,10 +3,10 @@ import * as React from 'react'
 
 import { CSSWrapper } from '~/utilities'
 
-import { ArrowNext, ArrowPrevious } from './Arrows'
-import { Dots } from './Dots'
-import { Slide } from './Slide'
-import { Slider } from './Slider'
+import { CarouselArrowNext, CarouselArrowPrevious } from './CarouselArrows'
+import { CarouselPagination } from './CarouselPagination'
+import { CarouselSlide } from './CarouselSlide'
+import { CarouselSlider } from './CarouselSlider'
 
 type CarouselProps = {
   slideHeight: number
@@ -15,11 +15,11 @@ type CarouselProps = {
 }
 
 type CarouselSubComponents = {
-  ArrowNext: typeof ArrowNext
-  ArrowPrevious: typeof ArrowPrevious
-  Pagination: typeof Dots
-  Slide: typeof Slide
-  Slider: typeof Slider
+  ArrowNext: typeof CarouselArrowNext
+  ArrowPrevious: typeof CarouselArrowPrevious
+  Pagination: typeof CarouselPagination
+  Slide: typeof CarouselSlide
+  Slider: typeof CarouselSlider
 }
 
 export const Carousel: React.FC<
@@ -45,10 +45,10 @@ export const Carousel: React.FC<
   )
 }
 
-Carousel.ArrowPrevious = ArrowPrevious
-Carousel.ArrowNext = ArrowNext
-Carousel.Pagination = Dots
-Carousel.Slide = Slide
-Carousel.Slider = Slider
+Carousel.ArrowNext = CarouselArrowNext
+Carousel.ArrowPrevious = CarouselArrowPrevious
+Carousel.Pagination = CarouselPagination
+Carousel.Slide = CarouselSlide
+Carousel.Slider = CarouselSlider
 
 Carousel.displayName = 'Carousel'

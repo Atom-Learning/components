@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading component renders a heading 1`] = `
-.sx1v0v7 {
-  color: var(--colors-tonal-900);
-  font-family: var(--fonts-sans);
+.sxe0tmj {
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
   font-weight: 700;
   margin: 0;
 }
 
-.sx1v0v7r3xir--size-md {
-  font-size: var(--fontSizes-xl);
+.sxe0tmjr3xir--size-md {
+  font-size: var(--sx-fontSizes-xl);
   line-height: 1.42;
 }
 
-.sx1v0v7r3xir--size-md::before {
+.sxe0tmjr3xir--size-md::before {
   content: '';
   margin-bottom: -0.3506em;
   display: table;
 }
 
-.sx1v0v7r3xir--size-md::after {
+.sxe0tmjr3xir--size-md::after {
   content: '';
   margin-top: -0.3506em;
   display: table;
@@ -27,7 +27,7 @@ exports[`Heading component renders a heading 1`] = `
 
 <div>
   <h2
-    class="sx1v0v7 sx1v0v7r3xir--size-md"
+    class="sxe0tmj sxe0tmjr3xir--size-md"
   >
     HEADING
   </h2>

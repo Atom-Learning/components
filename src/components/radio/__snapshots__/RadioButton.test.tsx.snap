@@ -6,8 +6,8 @@ exports[`Radio component renders a disabled radio button 1`] = `
   appearance: none;
   background-color: transparent;
   padding: 0;
-  border-radius: var(--radii-round);
-  border-color: var(--colors-secondary300);
+  border-radius: var(--sx-radii-round);
+  border-color: var(--sx-colors-secondary300);
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
@@ -24,18 +24,18 @@ exports[`Radio component renders a disabled radio button 1`] = `
 }
 
 :checked + .sxjdf4a {
-  background-color: var(--colors-secondary300);
+  background-color: var(--sx-colors-secondary300);
 }
 
 [disabled] + .sxjdf4a {
-  background-color: var(--colors-tonal600);
-  border: 2px solid var(--colors-tonal600);
+  background-color: var(--sx-colors-tonal600);
+  border: 2px solid var(--sx-colors-tonal600);
 }
 
 .sxip64y {
-  height: var(--sizes-0);
-  width: var(--sizes-0);
-  border-radius: var(--radii-round);
+  height: var(--sx-sizes-0);
+  width: var(--sx-sizes-0);
+  border-radius: var(--sx-radii-round);
   background-color: white;
 }
 
@@ -72,8 +72,8 @@ exports[`Radio component renders a radio button 1`] = `
   appearance: none;
   background-color: transparent;
   padding: 0;
-  border-radius: var(--radii-round);
-  border-color: var(--colors-secondary300);
+  border-radius: var(--sx-radii-round);
+  border-color: var(--sx-colors-secondary300);
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
@@ -90,18 +90,18 @@ exports[`Radio component renders a radio button 1`] = `
 }
 
 :checked + .sxjdf4a {
-  background-color: var(--colors-secondary300);
+  background-color: var(--sx-colors-secondary300);
 }
 
 [disabled] + .sxjdf4a {
-  background-color: var(--colors-tonal600);
-  border: 2px solid var(--colors-tonal600);
+  background-color: var(--sx-colors-tonal600);
+  border: 2px solid var(--sx-colors-tonal600);
 }
 
 .sxip64y {
-  height: var(--sizes-0);
-  width: var(--sizes-0);
-  border-radius: var(--radii-round);
+  height: var(--sx-sizes-0);
+  width: var(--sx-sizes-0);
+  border-radius: var(--sx-radii-round);
   background-color: white;
 }
 

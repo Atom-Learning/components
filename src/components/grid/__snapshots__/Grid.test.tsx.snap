@@ -1,36 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component renders 1`] = `
-.sx2cs53 {
-  display: flex;
+.sxcwh65 {
+  display: grid;
 }
 
-.sx723mu {
-  flex-wrap: wrap;
+.sxcwh656l7do--gap-3 {
+  gap: var(--sx-space-3);
 }
 
-.sx723munxneq--gap-1 {
-  margin: calc(var(--space-1)*-1);
-}
-
-.sx723munxneq--gap-1 > * {
-  margin: var(--space-1);
-}
-
-.sx723mu-ozkqi > * {
-  flex: 1 0 undefined;
-}
-
-.sx723mu-ozkqi {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+.sxcwh65-j1ipy {
+  grid-template-columns: repeat(auto-fit, minmax(0.5em, 1fr));
 }
 
 <div>
   <div
-    basis="0.5em"
-    class="sx2cs53 sx723mu sx723munxneq--gap-1 sx723mu-ozkqi"
+    class="sxcwh65 sxcwh656l7do--gap-3 sxcwh65-j1ipy"
   >
     <div
       class="sx03kze"

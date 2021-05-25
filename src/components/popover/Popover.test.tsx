@@ -53,7 +53,7 @@ describe(`Popover component`, () => {
     )
 
     expect(
-      await waitFor(() => axe(container), { timeout: 2000 })
+      await waitFor(() => axe(container), { timeout: 5000 })
     ).toHaveNoViolations()
   })
 })

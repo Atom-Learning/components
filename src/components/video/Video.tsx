@@ -11,13 +11,13 @@ const StyledVideo = styled(ReactPlayer, {})
 type VideoProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledVideo>,
   {
-    externalId: string
+    id: string
     ratio?: number
   }
 >
 
 export const Video: React.FC<VideoProps> = ({
-  externalId,
+  id,
   ratio = 9 / 16,
   ...remainingProps
 }) => (
@@ -32,7 +32,7 @@ export const Video: React.FC<VideoProps> = ({
   >
     <StyledVideo
       role="figure"
-      url={`https://player.vimeo.com/video/${externalId}`}
+      url={`https://player.vimeo.com/video/${id}`}
       {...remainingProps}
       height="100%"
       width="100%"

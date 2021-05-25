@@ -1,14 +1,16 @@
 ---
 title: Flex
 component: Flex
+description: The Flex component is a light abstraction over Box that sets its rendering context to flex
 category: Layout
 ---
 
-The `Flex` component is analagous to `Box` but additionally sets the rendering context of its children to `display: flex`.
+`Flex` shares the same API as `Box`, so you can access `as` and `css` to apply the correct semantic element and contextually relevant styles.
 
-```jsx preview
-<Flex css={{ justifyContent: 'space-between' }}>
-  <Text css={{ bg: '$tonal200', p: '$2' }}>Hello from the left!</Text>
-  <Text css={{ bg: '$tonal200', p: '$2' }}>Hello from the right!</Text>
+```tsx preview
+<Flex css={{ justifyContent: 'space-between', width: '100%' }}>
+  <Box css={{ bg: '$primary200', size: '$6' }} />
+  <Box css={{ bg: '$primary200', size: '$6' }} />
+  <Box css={{ bg: '$primary200', size: '$6' }} />
 </Flex>
 ```

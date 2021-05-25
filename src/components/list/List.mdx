@@ -5,11 +5,24 @@ description: List renders an unordered list
 category: Content
 ---
 
-`List` renders a `ul` and accepts a `theme` prop to change the color of the bullets.
+`List` renders a `ul`, accepts a `theme` prop to change the color of the bullets and allows varying sizes.
 
-```jsx preview
+```tsx preview
 <List>
-  <List.Item>Item 1</List.Item>
-  <List.Item>Item 2</List.Item>
+  <List.Item>Personalised learning journey</List.Item>
+  <List.Item>Adaptive learning to maximise engagement</List.Item>
+  <List.Item>Comprehensive, teacher-approved content</List.Item>
+  <List.Item>Unlimited, adaptive mock tests</List.Item>
+  <List.Item>Detailed performance analytics</List.Item>
+</List>
+```
+
+```tsx preview
+<List theme="primary" size="sm">
+  <List.Item>Personalised learning journey</List.Item>
+  <List.Item>Adaptive learning to maximise engagement</List.Item>
+  <List.Item>Comprehensive, teacher-approved content</List.Item>
+  <List.Item>Unlimited, adaptive mock tests</List.Item>
+  <List.Item>Detailed performance analytics</List.Item>
 </List>
 ```

@@ -4,54 +4,57 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
+import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   boxShadow: 'inset 0 0 0 2px',
   color: baseColor,
-  backgroundColor: 'white',
+  bg: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
     color: interactColor,
-    backgroundColor: 'white'
+    bg: 'white'
   },
   '&:active': {
     color: baseColor
   },
   '&[disabled]': {
-    backgroundColor: 'white',
+    bg: 'white',
     color: interactColor
   }
 })
 
 const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
-  backgroundColor: baseColor,
+  bg: baseColor,
   color: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
-    backgroundColor: interactColor
+    bg: interactColor
   },
   '&:active': {
-    backgroundColor: baseColor
+    bg: baseColor
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
+    bg: '$tonal300',
     color: '$tonal600'
   }
 })
 
 const StyledButton = styled('button', {
-  all: 'unset',
+  alignItems: 'center',
+  bg: 'unset',
+  border: 'unset',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
   fontFamily: '$sans',
   fontWeight: 500,
+  justifyContent: 'center',
   letterSpacing: '0.02em',
   lineHeight: 1.4,
-  transition: 'all 125ms ease-out',
+  p: 'unset',
   textDecoration: 'none',
+  transition: 'all 125ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
@@ -91,7 +94,8 @@ const StyledButton = styled('button', {
     isLoading: {
       true: {
         cursor: 'not-allowed',
-        opacity: 0.5
+        opacity: 0.5,
+        pointerEvents: 'none'
       }
     },
     fullWidth: {
@@ -192,18 +196,16 @@ type ButtonProps = Override<
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
     isLoading?: boolean
-    onClick?: () => void
-    to?: string
-  }
+  } & NavigatorActions
 >
 
-export const Button: React.FC<ButtonProps> = React.forwardRef(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
       isLoading,
       onClick,
-      to,
+      href,
       appearance = 'solid',
       size = 'md',
       theme = 'primary',
@@ -212,7 +214,13 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
     },
     ref
   ) => {
-    const optionalLinkProps = to ? { as: 'a', href: to } : {}
+    const optionalLinkProps = href
+      ? {
+          as: 'a',
+          href,
+          onClick: undefined
+        }
+      : {}
 
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
@@ -236,6 +244,6 @@ export const Button: React.FC<ButtonProps> = React.forwardRef(
       </StyledButton>
     )
   }
-)
+) as React.FC<ButtonProps>
 
 Button.displayName = 'Button'
