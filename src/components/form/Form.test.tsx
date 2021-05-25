@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { act, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -33,7 +33,7 @@ describe(`Form component`, () => {
 
   it('passes error messages to fields', async () => {
     render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={jest.fn()} css={{ width: 500 }}>
         <InputField
           name="name"
           label="Name"
@@ -43,13 +43,11 @@ describe(`Form component`, () => {
           name="password"
           validation={{ required: 'Password is required' }}
         />
-        <Button type="submit" onClick={jest.fn()}>
-          Submit
-        </Button>
+        <Button type="submit">Submit</Button>
       </Form>
     )
 
-    userEvent.click(screen.getByText('Submit'))
+    await act(async () => userEvent.click(screen.getByText('Submit')))
 
     expect(await screen.findByText('Name is required'))
     expect(await screen.findByText('Password is required'))
@@ -68,6 +66,7 @@ describe(`Form component`, () => {
             />
             <PasswordField
               name="password"
+              label="Password"
               validation={{ required: 'Password is required' }}
             />
             <Button
