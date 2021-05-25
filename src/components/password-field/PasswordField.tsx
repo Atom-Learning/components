@@ -32,8 +32,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
   const ref = validation ? register(validation) : register
   const error = errors[name]?.message
-  console.log('name:', name)
-  console.log('errors:', errors)
+
   return (
     <FieldWrapper
       label={label}
