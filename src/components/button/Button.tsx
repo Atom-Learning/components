@@ -2,6 +2,7 @@ import { StitchesVariants } from '@stitches/react'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
+import { Icon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
@@ -182,7 +183,7 @@ const WithLoader = ({ isLoading, children }) => (
 
 const getChildren = (children) =>
   React.Children.map(children, (child: any, i) => {
-    if (child?.type?.name === 'Icon') {
+    if (child?.type === Icon) {
       return React.cloneElement(child, {
         css: { [i === 0 ? 'mr' : 'ml']: '$2' }
       })
