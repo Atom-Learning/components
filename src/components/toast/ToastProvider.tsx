@@ -7,10 +7,14 @@ import { Toast, TOAST_WIDTH } from './Toast'
 
 export { default as toast } from 'react-hot-toast'
 
+// maximum limit in modern browsers - 32 bit signed integer
+const TOAST_Z_INDEX = 2147483647
+
 const Container = styled('div', {
   left: `calc(50% - ${TOAST_WIDTH / 2}px)`,
   position: 'fixed',
-  top: '$3'
+  top: '$3',
+  zIndex: TOAST_Z_INDEX
 })
 
 export const ToastProvider: React.FC = ({ children }) => {
