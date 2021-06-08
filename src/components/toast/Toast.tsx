@@ -11,6 +11,9 @@ import { Text } from '../text/Text'
 
 export const TOAST_WIDTH = 360
 
+// maximum limit in modern browsers - 32 bit signed integer
+const TOAST_Z_INDEX = 2147483647
+
 const slideIn = keyframes({
   '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
   '100%': { transform: `translate3d(0,0,0)`, opacity: 1 }
@@ -48,6 +51,7 @@ const StyledToast = styled('div', {
   py: '$2',
   transition: 'background-color 50ms ease-out, transform 150ms ease-out',
   width: TOAST_WIDTH,
+  zIndex: TOAST_Z_INDEX,
   variants: {
     status: {
       blank: { bg: '$primary900' },
