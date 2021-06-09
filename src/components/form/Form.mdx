@@ -17,6 +17,13 @@ priority: 1
 
 Custom field components should also accept a `validation` prop of type `ValidationOptions` and apply it to the field when present.
 
+`Form` is integrated with `react-hook-form-persist`'s package to save form data into session storage:
+
+- send `shouldPersist` boolean prop to persist form data to sessionStorage per `react-hook-form-persist`’s docs
+- send `persistOptions` prop with a required `id` and optional `include` or `exclude` arrays with reference to the input's names
+- `include` will only save the listed inputs to session storage and `exclude` will exclude the listed inputs
+- persisted form data in session storage will populate form with `defaultValues` on refresh
+
 Here’s an example using a simplified version of our `InputField`:
 
 ```tsx
