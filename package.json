@@ -126,6 +126,7 @@
     "invariant": "^2.2.4",
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
+    "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
     "uid": "^2.0.0"
