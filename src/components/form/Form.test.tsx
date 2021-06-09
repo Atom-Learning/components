@@ -84,4 +84,36 @@ describe(`Form component`, () => {
 
     expect(await screen.findByText('Submit')).toHaveAttribute('disabled', '')
   })
+
+  it('saves form data to sessionStorage when shouldPersist prop is true', async () => {
+    render(
+      <Form
+        onSubmit={jest.fn()}
+        shouldPersist
+        persistOptions={{ id: 'nameAndPassword', exclude: ['password'] }}
+      >
+        <InputField
+          name="name"
+          label="Name"
+          validation={{ required: 'Name is required' }}
+        />
+        <PasswordField
+          name="password"
+          validation={{ required: 'Password is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+
+    expect(
+      sessionStorage.getItem('form-nameAndPassword') !== null ||
+        sessionStorage.getItem('form-nameAndPassword') !== undefined
+    )
+    expect(
+      JSON.parse(sessionStorage.getItem('form-nameAndPassword')).password ===
+        undefined
+    )
+  })
 })
