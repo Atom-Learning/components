@@ -85,21 +85,18 @@ describe(`Form component`, () => {
     expect(await screen.findByText('Submit')).toHaveAttribute('disabled', '')
   })
 
-  it('saves form data to sessionStorage when shouldPersist prop is true', async () => {
+  it('saves form data to sessionStorage when persist prop is sent through', async () => {
     render(
-      <Form
-        onSubmit={jest.fn()}
-        shouldPersist
-        persistOptions={{ id: 'nameAndPassword', exclude: ['password'] }}
-      >
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameAndYearGroup' }}>
         <InputField
           name="name"
           label="Name"
           validation={{ required: 'Name is required' }}
         />
-        <PasswordField
-          name="password"
-          validation={{ required: 'Password is required' }}
+        <InputField
+          name="yearGroup"
+          label="Year Group"
+          validation={{ required: 'Year group is required' }}
         />
         <Button type="submit" onClick={jest.fn()}>
           Submit
@@ -107,13 +104,63 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    expect(
-      sessionStorage.getItem('form-nameAndPassword') !== null ||
-        sessionStorage.getItem('form-nameAndPassword') !== undefined
+    expect(sessionStorage.getItem('nameAndYearGroup')).toBeTruthy()
+  })
+
+  it('saves form data to sessionStorage excluding secret field', async () => {
+    render(
+      <Form
+        onSubmit={jest.fn()}
+        persist={{ id: 'nameAndSecret', exclude: ['secret'] }}
+      >
+        <InputField
+          name="name"
+          label="Name"
+          validation={{ required: 'Name is required' }}
+        />
+        <InputField
+          name="secret"
+          label="Secret"
+          validation={{ required: 'Secret is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+    expect(JSON.parse(sessionStorage.getItem('nameAndSecret')).name).toEqual(
+      expect.anything()
     )
     expect(
-      JSON.parse(sessionStorage.getItem('form-nameAndPassword')).password ===
-        undefined
+      JSON.parse(sessionStorage.getItem('nameAndSecret')).secret
+    ).toBeFalsy()
+  })
+
+  it('checks default values are being persisted in sessionStorage', async () => {
+    render(
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameAndTeam' }}>
+        <InputField
+          name="name"
+          label="Name"
+          defaultValue="Kyle Lowry"
+          validation={{ required: 'Name is required' }}
+        />
+        <InputField
+          name="team"
+          label="Team"
+          defaultValue="Toronto Raptors"
+          validation={{ required: 'Team is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+    expect(JSON.parse(sessionStorage.getItem('nameAndTeam')).name).toEqual(
+      'Kyle Lowry'
+    )
+    expect(JSON.parse(sessionStorage.getItem('nameAndTeam')).team).toEqual(
+      'Toronto Raptors'
     )
   })
 })

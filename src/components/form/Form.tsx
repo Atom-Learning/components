@@ -1,82 +1,57 @@
 import invariant from 'invariant'
 import * as React from 'react'
-import type { UseFormMethods } from 'react-hook-form'
 import { FormProvider, useForm } from 'react-hook-form'
 import useFormPersist from 'react-hook-form-persist'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities'
 
 const StyledForm = styled('form', {})
 
-type ExcludeAndInclude = { exclude?: string[]; include?: string[] }
-type PersistOptions = { id: string } & ExcludeAndInclude
-type FormPersistParams = {
-  storage: Storage
-} & ExcludeAndInclude
-
-type FormProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    defaultValues?: { [key: string]: string | number }
-    onSubmit: (data: any) => void
-    validationMode: 'onBlur' | 'onSubmit'
-    shouldPersist?: boolean
-    persistOptions?: PersistOptions
-  } & (
-    | { children: React.ReactNode; render?: never }
-    | { children?: never; render: (methods: UseFormMethods) => React.ReactNode }
-  )
->
-
-type FormContentProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    formMethods
-    remainingProps
-    handleSubmit: (data: any) => void
-    onSubmit: (data: any) => void
-    formContent
-  }
->
-
-type PersistFormWrapperProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    persistOptions: PersistOptions
-    watch: (data: any) => void
-    setValue
-    children: React.ReactNode | any
-  }
->
+import {
+  FormContentProps,
+  FormPersistParams,
+  FormProps,
+  PersistFormWrapperProps,
+  StorageEnum
+} from './Form.types'
 
 const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
-  persistOptions,
+  persist,
   watch,
   setValue,
   children
 }) => {
+  const { id, ...options } = persist
+
   let params: FormPersistParams = {
-    storage: window.sessionStorage
-  }
-  if (persistOptions?.exclude) {
-    params = { ...params, exclude: persistOptions.exclude }
-  }
-  if (!persistOptions?.exclude && persistOptions?.include) {
-    params = { ...params, include: persistOptions.include }
+    ...options,
+    storage:
+      options.storage === StorageEnum.local
+        ? window.localStorage
+        : window.sessionStorage
   }
 
-  useFormPersist(`form-${persistOptions.id}`, { watch, setValue }, params)
+  if (options.exclude) {
+    // Workaround for package bug
+    const { exclude, ...rest } = params
+    const allValues = watch()
+    const include = Object.keys(allValues).filter((key) => {
+      if (!options.exclude.includes(key)) return key
+    })
+    params = { ...rest, include }
+  }
+
+  useFormPersist(id, { watch, setValue }, params)
 
   return children
 }
 
 const FormContent: React.FC<FormContentProps> = ({
   formMethods,
-  remainingProps,
   handleSubmit,
   onSubmit,
-  formContent
+  children,
+  ...remainingProps
 }) => {
   return (
     <FormProvider {...formMethods}>
@@ -85,7 +60,7 @@ const FormContent: React.FC<FormContentProps> = ({
         {...remainingProps}
         onSubmit={handleSubmit(onSubmit)}
       >
-        {formContent}
+        {children}
       </StyledForm>
     </FormProvider>
   )
@@ -97,14 +72,20 @@ export const Form: React.FC<FormProps> = ({
   onSubmit,
   validationMode = 'onBlur',
   render,
-  shouldPersist,
-  persistOptions,
+  persist,
   ...remainingProps
 }) => {
   invariant(
     !(children && render),
     '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
   )
+
+  // if (persist) {
+  //   invariant(
+  //     !(persist.include && persist.exclude),
+  //     'If `Form` is sent `persist`, it should only be given one of `include` or `exclude`. When both are provided, `exclude` will be used and `include` will be ignored.'
+  //   )
+  // }
 
   const formMethods = useForm({
     defaultValues,
@@ -116,25 +97,20 @@ export const Form: React.FC<FormProps> = ({
 
   const props = {
     formMethods,
-    remainingProps,
     handleSubmit,
     onSubmit,
-    formContent
+    ...remainingProps
   }
 
-  if (shouldPersist && persistOptions) {
+  if (persist) {
     return (
-      <PersistFormWrapper
-        persistOptions={persistOptions}
-        watch={watch}
-        setValue={setValue}
-      >
-        <FormContent {...props} />
+      <PersistFormWrapper persist={persist} watch={watch} setValue={setValue}>
+        <FormContent {...props}>{formContent}</FormContent>
       </PersistFormWrapper>
     )
   }
 
-  return <FormContent {...props} />
+  return <FormContent {...props}>{formContent}</FormContent>
 }
 
 Form.displayName = 'Form'
