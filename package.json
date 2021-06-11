@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.8.4",
+  "version": "0.9.0",
   "description": "",
   "files": [
     "dist"
