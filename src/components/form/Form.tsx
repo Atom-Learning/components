@@ -5,15 +5,25 @@ import useFormPersist from 'react-hook-form-persist'
 
 import { styled } from '~/stitches'
 
-import {
-  FormContentProps,
+import type {
+  FormContentValues,
   FormPersistParams,
-  FormProps,
-  PersistFormWrapperProps,
-  StorageEnum
+  FormValues,
+  PersistFormWrapperValues,
+  PersistOptions
 } from './Form.types'
+import { StorageEnum } from './Form.types'
 
 const StyledForm = styled('form', {})
+
+type FormProps = React.ComponentPropsWithoutRef<typeof StyledForm> & FormValues
+
+type FormContentProps = React.ComponentPropsWithoutRef<typeof StyledForm> &
+FormContentValues
+
+type PersistFormWrapperProps = React.ComponentPropsWithoutRef<
+  typeof StyledForm
+> & PersistFormWrapperValues
 
 const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
   persist,

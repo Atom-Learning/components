@@ -1,65 +1,44 @@
 import type { UseFormMethods } from 'react-hook-form'
 
-import { styled } from '~/stitches'
-import { Override } from '~/utilities'
-
-const StyledForm = styled('form', {})
-
-enum StorageEnum {
+export enum StorageEnum {
   local = 'local',
   session = 'session'
 }
 
-type PersistOptions = {
+type ExcludeIncludeConfig = {
+  exclude?: string[]
+  include?: string[]
+}
+
+export type PersistOptions = {
   id: string
   storage?: StorageEnum
-  exclude?: string[]
-  include?: string[]
-}
+} & ExcludeIncludeConfig
 
-type FormPersistParams = {
+export type FormPersistParams = {
   storage: Storage
-  exclude?: string[]
-  include?: string[]
+} & ExcludeIncludeConfig
+
+export type PersistFormWrapperValues = {
+  persist: PersistOptions
+  watch
+  setValue
+  children: React.ReactNode | any
 }
 
-type FormProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    defaultValues?: { [key: string]: string | number }
-    onSubmit: (data: any) => void
-    validationMode: 'onBlur' | 'onSubmit'
-    persist?: PersistOptions
-  } & (
-    | { children: React.ReactNode; render?: never }
-    | { children?: never; render: (methods: UseFormMethods) => React.ReactNode }
-  )
->
-
-type FormContentProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    formMethods
-    handleSubmit: (data: any) => void
-    onSubmit: (data: any) => void
-    children: React.ReactNode | any
-  }
->
-
-type PersistFormWrapperProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledForm>,
-  {
-    persist: PersistOptions
-    watch
-    setValue
-    children: React.ReactNode | any
-  }
->
-
-export {
-  FormPersistParams,
-  PersistFormWrapperProps,
-  FormContentProps,
-  FormProps,
-  StorageEnum
+export type FormContentValues = {
+  formMethods
+  handleSubmit: (data: any) => void | any
+  onSubmit: (data: any) => void | any
+  children: React.ReactNode | any
 }
+
+export type FormValues = {
+  defaultValues?: { [key: string]: string | number }
+  onSubmit: (data: any) => void | any
+  validationMode: 'onBlur' | 'onSubmit'
+  persist?: PersistOptions
+} & (
+  | { children: React.ReactNode; render?: never }
+  | { children?: never; render: (methods: UseFormMethods) => React.ReactNode }
+)
