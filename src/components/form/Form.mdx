@@ -153,17 +153,16 @@ The `process` property accepts a function of type `(value: any) => any`. It can 
 Here's an example using the `persist` prop:
 
 ```tsx
-<Form
-  persist={{ id: 'nameAndPassword', exclude: ['password'], storage: 'local' }}
->
+<Form persist={{ id: 'nameAndSecret', exclude: ['secret'], storage: 'local' }}>
   <InputField
     name="name"
     label="Name"
     validation={{ required: 'Name is required' }}
   />
-  <PasswordField
-    name="password"
-    validation={{ required: 'Password is required' }}
+  <InputField
+    name="secret"
+    label="Secret"
+    validation={{ required: 'Secret is required' }}
   />
   <Button type="submit">Submit</Button>
 </Form>

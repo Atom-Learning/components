@@ -36,13 +36,15 @@ const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
   let params: FormPersistParams = {
     ...options,
     storage:
-      options.storage === StorageEnum.local
+      options.storage === StorageEnum.LOCAL
         ? window.localStorage
         : window.sessionStorage
   }
 
   if (options.exclude) {
-    // Workaround for package bug
+    // Workaround for bug in react-hook-form-persist package
+    // package will still read from and save exclude param
+    // so need to send inputs we actually want to read from in include param instead
     const { exclude, ...rest } = params
     const allValues = watch()
     const include = Object.keys(allValues).filter((key) => {

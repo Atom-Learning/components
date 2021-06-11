@@ -1,8 +1,8 @@
 import type { UseFormMethods } from 'react-hook-form'
 
 export enum StorageEnum {
-  local = 'local',
-  session = 'session'
+  LOCAL = 'local',
+  SESSION = 'session'
 }
 
 type ExcludeIncludeConfig = {
