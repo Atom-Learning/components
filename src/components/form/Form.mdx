@@ -154,7 +154,7 @@ Here's an example using the `persist` prop:
 
 ```tsx
 <Form
-  onSubmit={jest.fn()}
+  onSubmit={console.log('')}
   persist={{ id: 'nameAndPassword', exclude: ['password'], storage: 'local' }}
 >
   <InputField
@@ -166,7 +166,7 @@ Here's an example using the `persist` prop:
     name="password"
     validation={{ required: 'Password is required' }}
   />
-  <Button type="submit" onClick={jest.fn()}>
+  <Button type="submit" onClick={console.log('')}>
     Submit
   </Button>
 </Form>
