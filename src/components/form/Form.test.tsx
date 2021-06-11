@@ -158,11 +158,11 @@ describe(`Form component`, () => {
 
     const nameInput = screen.getByRole('textbox', { name: 'Name' })
     const secretInput = screen.getByRole('textbox', { name: 'Secret' })
-    const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
 
     userEvent.type(nameInput, 'Kawhi Leonard')
     userEvent.type(secretInput, 'Very secret secret')
 
+    const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
     expect(parsedStorage).toEqual(expect.anything())
     expect(parsedStorage.name).toEqual('Kawhi Leonard')
     expect(parsedStorage.secret).toBeFalsy()
