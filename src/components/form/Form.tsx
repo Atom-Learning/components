@@ -5,8 +5,6 @@ import useFormPersist from 'react-hook-form-persist'
 
 import { styled } from '~/stitches'
 
-const StyledForm = styled('form', {})
-
 import {
   FormContentProps,
   FormPersistParams,
@@ -14,6 +12,8 @@ import {
   PersistFormWrapperProps,
   StorageEnum
 } from './Form.types'
+
+const StyledForm = styled('form', {})
 
 const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
   persist,
@@ -36,7 +36,7 @@ const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
     const { exclude, ...rest } = params
     const allValues = watch()
     const include = Object.keys(allValues).filter((key) => {
-      if (!options.exclude.includes(key)) return key
+      if (!options.exclude?.includes(key)) return key
     })
     params = { ...rest, include }
   }
@@ -79,13 +79,6 @@ export const Form: React.FC<FormProps> = ({
     !(children && render),
     '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
   )
-
-  // if (persist) {
-  //   invariant(
-  //     !(persist.include && persist.exclude),
-  //     'If `Form` is sent `persist`, it should only be given one of `include` or `exclude`. When both are provided, `exclude` will be used and `include` will be ignored.'
-  //   )
-  // }
 
   const formMethods = useForm({
     defaultValues,

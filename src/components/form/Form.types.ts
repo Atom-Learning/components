@@ -5,31 +5,17 @@ import { Override } from '~/utilities'
 
 const StyledForm = styled('form', {})
 
-type ExcludeConfig = { exclude?: string[] }
-type IncludeConfig = { include?: string[] }
-
 enum StorageEnum {
   local = 'local',
   session = 'session'
 }
 
-type PersistOptionsInclude = {
+type PersistOptions = {
   id: string
   storage?: StorageEnum
-} & IncludeConfig
-
-type PersistOptionsExclude = {
-  id: string
-  storage?: StorageEnum
-} & ExcludeConfig
-
-// type PersistOptions = PersistOptionsInclude | PersistOptionsExclude
-
-type PersistOptions = { id: string; storage?: StorageEnum } & (
-  | IncludeConfig
-  | ExcludeConfig
-  | any
-)
+  exclude?: string[]
+  include?: string[]
+}
 
 type FormPersistParams = {
   storage: Storage
