@@ -133,8 +133,8 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    const nameInput = screen.getByRole('textbox', { name: 'name' })
-    const secretInput = screen.getByRole('textbox', { name: 'secret' })
+    const nameInput = screen.getByRole('textbox', { name: 'Name' })
+    const secretInput = screen.getByRole('textbox', { name: 'Secret' })
 
     userEvent.type(nameInput, 'Kawhi Leonard')
     userEvent.type(secretInput, 'Very secret secret')
@@ -165,7 +165,7 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    userEvent.type(screen.getByRole('textbox', { name: 'name' }), 'Kyle Lowry')
+    userEvent.type(screen.getByRole('textbox', { name: 'Name' }), 'Kyle Lowry')
     expect(screen.getByRole('textbox')).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
