@@ -104,7 +104,9 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    expect(sessionStorage.getItem('nameAndYearGroup')).toBeTruthy()
+    expect(sessionStorage.getItem('nameAndYearGroup')).toEqual(
+      expect.anything()
+    )
   })
 
   it('saves form data to sessionStorage excluding secret field', async () => {
@@ -136,31 +138,48 @@ describe(`Form component`, () => {
     ).toBeFalsy()
   })
 
-  it('checks default values are being persisted in sessionStorage', async () => {
+  it('checks user input values are being persisted in sessionStorage', async () => {
     render(
-      <Form onSubmit={jest.fn()} persist={{ id: 'nameAndTeam' }}>
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameForm' }}>
         <InputField
           name="name"
           label="Name"
-          defaultValue="Kyle Lowry"
           validation={{ required: 'Name is required' }}
-        />
-        <InputField
-          name="team"
-          label="Team"
-          defaultValue="Toronto Raptors"
-          validation={{ required: 'Team is required' }}
         />
         <Button type="submit" onClick={jest.fn()}>
           Submit
         </Button>
       </Form>
     )
-    expect(JSON.parse(sessionStorage.getItem('nameAndTeam')).name).toEqual(
+
+    userEvent.type(screen.getByRole('input'), 'Kyle Lowry')
+    expect(screen.getByRole('form')).toHaveValue('Kyle Lowry')
+    expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
     )
-    expect(JSON.parse(sessionStorage.getItem('nameAndTeam')).team).toEqual(
-      'Toronto Raptors'
+  })
+
+  it('checks data attributes are availabe in the DOM', async () => {
+    render(
+      <div>
+        <Form
+          onSubmit={jest.fn()}
+          persist={{ id: 'nameAndTeam' }}
+          data-index-number="12345"
+        >
+          <InputField
+            name="name"
+            label="Name"
+            validation={{ required: 'Name is required' }}
+          />
+          <Button type="submit" onClick={jest.fn()}>
+            Submit
+          </Button>
+        </Form>
+      </div>
+    )
+    expect(screen.getByRole('form').getAttribute('data-index-number')).toEqual(
+      '12345'
     )
   })
 })
