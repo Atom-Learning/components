@@ -118,11 +118,13 @@ describe(`Form component`, () => {
         <InputField
           name="name"
           label="Name"
+          type="text"
           validation={{ required: 'Name is required' }}
         />
         <InputField
           name="secret"
           label="Secret"
+          type="text"
           validation={{ required: 'Secret is required' }}
         />
         <Button type="submit" onClick={jest.fn()}>
@@ -130,8 +132,18 @@ describe(`Form component`, () => {
         </Button>
       </Form>
     )
-    expect(JSON.parse(sessionStorage.getItem('nameAndSecret')).name).toEqual(
+
+    const nameInput = screen.getByRole('textbox', { name: 'name' })
+    const secretInput = screen.getByRole('textbox', { name: 'secret' })
+
+    userEvent.type(nameInput, 'Kawhi Leonard')
+    userEvent.type(secretInput, 'Very secret secret')
+
+    expect(JSON.parse(sessionStorage.getItem('nameAndSecret'))).toEqual(
       expect.anything()
+    )
+    expect(JSON.parse(sessionStorage.getItem('nameAndSecret')).name).toEqual(
+      'Kawhi Leonard'
     )
     expect(
       JSON.parse(sessionStorage.getItem('nameAndSecret')).secret
@@ -153,7 +165,7 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    userEvent.type(screen.getByRole('textbox'), 'Kyle Lowry')
+    userEvent.type(screen.getByRole('textbox', { name: 'name' }), 'Kyle Lowry')
     expect(screen.getByRole('textbox')).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
@@ -165,13 +177,13 @@ describe(`Form component`, () => {
       <div>
         <Form
           onSubmit={jest.fn()}
-          persist={{ id: 'nameAndTeam' }}
+          persist={{ id: 'cityForm' }}
           data-index-number="12345"
         >
           <InputField
-            name="name"
-            label="Name"
-            validation={{ required: 'Name is required' }}
+            name="city"
+            label="City"
+            validation={{ required: 'City is required' }}
           />
           <Button type="submit" onClick={jest.fn()}>
             Submit
