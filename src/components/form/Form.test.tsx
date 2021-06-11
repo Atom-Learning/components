@@ -109,6 +109,29 @@ describe(`Form component`, () => {
     )
   })
 
+  it('checks user input values are being persisted in sessionStorage', async () => {
+    render(
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameForm' }}>
+        <InputField
+          name="name"
+          label="Name"
+          type="text"
+          validation={{ required: 'Name is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+    const input = screen.getByRole('textbox', { name: 'Name' })
+
+    userEvent.type(input, 'Kyle Lowry')
+    expect(input).toHaveValue('Kyle Lowry')
+    expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
+      'Kyle Lowry'
+    )
+  })
+
   it('saves form data to sessionStorage excluding secret field', async () => {
     render(
       <Form
@@ -135,41 +158,14 @@ describe(`Form component`, () => {
 
     const nameInput = screen.getByRole('textbox', { name: 'Name' })
     const secretInput = screen.getByRole('textbox', { name: 'Secret' })
+    const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
 
     userEvent.type(nameInput, 'Kawhi Leonard')
     userEvent.type(secretInput, 'Very secret secret')
 
-    expect(JSON.parse(sessionStorage.getItem('nameAndSecret'))).toEqual(
-      expect.anything()
-    )
-    expect(JSON.parse(sessionStorage.getItem('nameAndSecret')).name).toEqual(
-      'Kawhi Leonard'
-    )
-    expect(
-      JSON.parse(sessionStorage.getItem('nameAndSecret')).secret
-    ).toBeFalsy()
-  })
-
-  it('checks user input values are being persisted in sessionStorage', async () => {
-    render(
-      <Form onSubmit={jest.fn()} persist={{ id: 'nameForm' }}>
-        <InputField
-          name="name"
-          label="Name"
-          type="text"
-          validation={{ required: 'Name is required' }}
-        />
-        <Button type="submit" onClick={jest.fn()}>
-          Submit
-        </Button>
-      </Form>
-    )
-
-    userEvent.type(screen.getByRole('textbox', { name: 'Name' }), 'Kyle Lowry')
-    expect(screen.getByRole('textbox')).toHaveValue('Kyle Lowry')
-    expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
-      'Kyle Lowry'
-    )
+    expect(parsedStorage).toEqual(expect.anything())
+    expect(parsedStorage.name).toEqual('Kawhi Leonard')
+    expect(parsedStorage.secret).toBeFalsy()
   })
 
   it('checks data attributes are availabe in the DOM', async () => {
