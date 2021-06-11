@@ -153,7 +153,7 @@ describe(`Form component`, () => {
     )
 
     userEvent.type(screen.getByRole('input'), 'Kyle Lowry')
-    expect(screen.getByRole('form')).toHaveValue('Kyle Lowry')
+    expect(screen.getByRole('input')).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
     )
