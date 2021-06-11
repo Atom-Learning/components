@@ -144,6 +144,7 @@ describe(`Form component`, () => {
         <InputField
           name="name"
           label="Name"
+          type="text"
           validation={{ required: 'Name is required' }}
         />
         <Button type="submit" onClick={jest.fn()}>
@@ -152,8 +153,8 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    userEvent.type(screen.getByRole('input'), 'Kyle Lowry')
-    expect(screen.getByRole('input')).toHaveValue('Kyle Lowry')
+    userEvent.type(screen.getByRole('textbox'), 'Kyle Lowry')
+    expect(screen.getByRole('textbox')).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
     )
