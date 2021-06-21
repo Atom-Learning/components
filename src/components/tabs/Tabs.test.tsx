@@ -5,19 +5,16 @@ import * as React from 'react'
 import { IdProvider } from '@radix-ui/react-id'
 
 import { Tabs } from '.'
-import { TabContent } from './TabContent'
-import { TabTrigger } from './TabTrigger'
-import { TabTriggerList } from './TabTriggerList'
 
 const TabsTest = ({ defaultValue = 'tab1' }) => (
   <IdProvider>
     <Tabs defaultValue={defaultValue}>
-      <TabTriggerList>
-        <TabTrigger value="tab1">Trigger 1</TabTrigger>
-        <TabTrigger value="tab2">Trigger 2</TabTrigger>
-      </TabTriggerList>
-      <TabContent value="tab1">Important content for tab 1</TabContent>
-      <TabContent value="tab2">Important content for tab 2</TabContent>
+      <Tabs.TriggerList>
+        <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
+        <Tabs.Trigger value="tab2">Trigger 2</Tabs.Trigger>
+      </Tabs.TriggerList>
+      <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+      <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
     </Tabs>
   </IdProvider>
 )
@@ -59,14 +56,14 @@ describe('Tabs component', () => {
     render(
       <IdProvider>
         <Tabs defaultValue={'tab1'}>
-          <TabTriggerList>
-            <TabTrigger value="tab1">Trigger 1</TabTrigger>
-            <TabTrigger disabled value="tab2">
+          <Tabs.TriggerList>
+            <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
+            <Tabs.Trigger disabled value="tab2">
               Trigger 2
-            </TabTrigger>
-          </TabTriggerList>
-          <TabContent value="tab1">Important content for tab 1</TabContent>
-          <TabContent value="tab2">Important content for tab 2</TabContent>
+            </Tabs.Trigger>
+          </Tabs.TriggerList>
+          <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+          <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
         </Tabs>
       </IdProvider>
     )

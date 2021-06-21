@@ -4,7 +4,7 @@ import { CSS, styled } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
   flexShrink: 0,
-  padding: '10px 20px',
+  padding: '$3',
   color: '$primary500',
   userSelect: 'none',
   '& *': { color: '$primary500' },
@@ -45,11 +45,11 @@ type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {
 
 export const TabTrigger: React.FC<TabTriggerProps> = ({
   children,
+  disabled = false,
   css,
-  value,
-  disabled = false
+  ...otherProps
 }) => (
-  <StyledTabTrigger css={css} value={value} disabled={disabled}>
+  <StyledTabTrigger css={css} disabled={disabled} {...otherProps}>
     {renderChildren(children, css as CSS)}
   </StyledTabTrigger>
 )
