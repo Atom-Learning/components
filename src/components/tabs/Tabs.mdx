@@ -72,8 +72,11 @@ A `TabTrigger` component can take a `disabled` prop, which would make it unselec
 In order to style the different states of a trigger, the following CSS selectors need to be used when passed to the `css` prop:
 
 `&:hover` to style the hover state of the trigger.
+
 `&[data-disabled]` to style a disabled trigger.
+
 `&[data-disabled]:hover` to style a disabled trigger's hover state.
+
 `&[data-state="active"]` to style an active trigger.
 
-If the content of the trigger is, say, a `Text` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly.
+If the content of the trigger is, say, a `<Text>` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly.
