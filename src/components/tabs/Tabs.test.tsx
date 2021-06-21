@@ -1,4 +1,5 @@
-import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 import { IdProvider } from '@radix-ui/react-id'
@@ -42,16 +43,39 @@ describe('Tabs component', () => {
     expect(tab2content).toBeVisible()
   })
 
-  it.only('allows the user to switch tabs', async () => {
+  it('allows the user to switch tabs', async () => {
     render(<TabsTest />)
 
     const tab1content = await screen.findByText('Important content for tab 1')
     const tab2content = await screen.findByText('Important content for tab 2')
     expect(tab1content).toBeVisible()
-    fireEvent.click(screen.queryByText('Trigger 2'))
-    screen.debug
-    await waitFor(() =>
-      expect(screen.queryByText('Important content for tab 2')).toBeVisible()
+    expect(tab2content).not.toBeVisible()
+    userEvent.click(screen.getByText('Trigger 2'))
+    expect(tab2content).toBeVisible()
+    expect(tab1content).not.toBeVisible()
+  })
+
+  it("doesn't allow clicking disabled tabs", async () => {
+    render(
+      <IdProvider>
+        <Tabs defaultValue={'tab1'}>
+          <TabTriggerList>
+            <TabTrigger value="tab1">Trigger 1</TabTrigger>
+            <TabTrigger disabled value="tab2">
+              Trigger 2
+            </TabTrigger>
+          </TabTriggerList>
+          <TabContent value="tab1">Important content for tab 1</TabContent>
+          <TabContent value="tab2">Important content for tab 2</TabContent>
+        </Tabs>
+      </IdProvider>
     )
+
+    const tab1content = await screen.findByText('Important content for tab 1')
+    const tab2content = await screen.findByText('Important content for tab 2')
+    expect(tab1content).toBeVisible()
+    userEvent.click(screen.getByText('Trigger 2'))
+    expect(tab1content).toBeVisible()
+    expect(tab2content).not.toBeVisible()
   })
 })

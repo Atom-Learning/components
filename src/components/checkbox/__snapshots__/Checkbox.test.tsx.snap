@@ -43,11 +43,6 @@ exports[`Checkbox component renders a checkbox 1`] = `
 
 <div>
   <label>
-    <input
-      hidden=""
-      type="checkbox"
-      value="on"
-    />
     <button
       aria-checked="false"
       class="sx1i2hs"

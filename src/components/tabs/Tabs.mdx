@@ -1,10 +1,79 @@
 ---
 title: Tabs
 component: Tabs
-description: This is the description
+description: Tabs is a component that provides different sections of content that are displayed one at a time.
 category: Layout
 ---
 
-```jsx preview
-<Tabs />
+The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smallar components, such as `TabTriggerList`, `TabTrigger`, and `TabContent`.
+
+```tsx preview
+<Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
+  <TabTriggerList css={{ borderBottom: '1px solid gray' }}>
+    <TabTrigger value="tab1">
+      <Text>Nested component under the TabTrigger component</Text>
+    </TabTrigger>
+    <TabTrigger value="tab2">Simple text</TabTrigger>
+  </TabTriggerList>
+  <TabContent value="tab1">Content for tab1.</TabContent>
+  <TabContent value="tab2">
+    Content for the second tab. It can also hold other components, like a{' '}
+    <Button>Button</Button>
+  </TabContent>
+</Tabs>
 ```
+
+## TabTriggerList
+
+The `TabTriggerList` component simply holds the individual `TabTrigger` components. It can also get custom styling via the `css` prop.
+
+```tsx preview
+<Tabs>
+  <TabTriggerList>
+    <TabTrigger>Tab 1</TabTrigger>
+    <TabTrigger>Tab 2</TabTrigger>
+    <TabTrigger>Tab 3</TabTrigger>
+  </TabTriggerList>
+</Tabs>
+```
+
+## TabTrigger
+
+The `TabTrigger` component holds the content that will be displayed inside the button that the user would click in order to switch tabs. In can hold either a string, or some other component. It needs to be passed a `value` prop, that would be identical to the `value` prop passed to its corresponding `TabContent` component.
+
+```tsx preview
+<TabTrigger value='tab1'>Tab 1</TabTrigger>
+<TabTrigger value='tab2'><Text>Tab 2</Text></TabTrigger>
+```
+
+## TabContent
+
+The `TabContent` component, as the name suggests, holds the content for that particular section of the tabs component. It takes a `value` prop that needs to match the `value` prop passed to its corresponding trigger. Its content can be any text or valid component.
+
+```tsx preview
+<TabContent value="tab2">
+  Content for the second tab. It can also hold other components, like a{' '}
+  <Button>Button</Button>
+</TabContent>
+```
+
+## Disabled tab
+
+A `TabTrigger` component can take a `disabled` prop, which would make it unselectable. The corresponding `TabContent` component's content will be, in this case, permanently hidden.
+
+```tsx preview
+<TabTrigger disabled value="tab1">
+  Tab 1
+</TabTrigger>
+```
+
+## Styling the `TabTrigger`
+
+In order to style the different states of a trigger, the following CSS selectors need to be used when passed to the `css` prop:
+
+`&:hover` to style the hover state of the trigger.
+`&[data-disabled]` to style a disabled trigger.
+`&[data-disabled]:hover` to style a disabled trigger's hover state.
+`&[data-state="active"]` to style an active trigger.
+
+If the content of the trigger is, say, a `Text` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly.

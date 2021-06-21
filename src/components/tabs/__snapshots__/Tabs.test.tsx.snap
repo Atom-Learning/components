@@ -16,7 +16,7 @@ exports[`Tabs component renders 1`] = `
   display: flex;
 }
 
-.sxr4q10 {
+.sxy7uml {
   flex-shrink: 0;
   padding: 10px 20px;
   color: var(--sx-colors-primary500);
@@ -24,24 +24,40 @@ exports[`Tabs component renders 1`] = `
   user-select: none;
 }
 
-.sxr4q10 * {
+.sxy7uml * {
   color: var(--sx-colors-primary500);
 }
 
-.sxr4q10:hover {
+.sxy7uml:hover {
   color: var(--sx-colors-primary900);
 }
 
-.sxr4q10 *:hover {
+.sxy7uml *:hover {
   color: var(--sx-colors-primary900);
 }
 
-.sxr4q10[data-state="active"] {
+.sxy7uml[data-disabled] {
+  color: var(--sx-colors-tonal600);
+}
+
+.sxy7uml[data-disabled] * {
+  color: var(--sx-colors-tonal600);
+}
+
+.sxy7uml[data-disabled]:hover {
+  color: var(--sx-colors-tonal600);
+}
+
+.sxy7uml[data-disabled] *:hover {
+  color: var(--sx-colors-tonal600);
+}
+
+.sxy7uml[data-state="active"] {
   color: var(--sx-colors-primary900);
   box-shadow: inset 0 -3px 0 0 currentColor;
 }
 
-.sxr4q10[data-state="active"] * {
+.sxy7uml[data-state="active"] * {
   color: var(--sx-colors-primary900);
 }
 
@@ -60,7 +76,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="sxr4q10"
+        class="sxy7uml"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -73,7 +89,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="sxr4q10"
+        class="sxy7uml"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
