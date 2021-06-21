@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component renders 1`] = `
+.sx03kze-5siaq {
+  height: 100px;
+  width: 400px;
+  color: var(--sx-colors-primary500);
+}
+
+.sxo03ad {
+  vertical-align: top;
+  text-align: left;
+  padding: var(--sx-space-2) var(--sx-space-3);
+}
+
+.sxnmgyg {
+  padding: var(--sx-space-2) var(--sx-space-3);
+  font-weight: 700;
+  vertical-align: top;
+  text-align: left;
+}
+
+.sxwi5ht {
+  width: 100%;
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-sm);
+}
+
+<div>
+  <div
+    class="sx03kze sx03kze-5siaq"
+    data-testid="css-wrapper"
+  >
+    <table
+      class="sxwi5ht"
+    >
+      <thead
+        class="sx03kze"
+      >
+        <tr
+          class="sx03kze"
+        >
+          <th
+            class="sxnmgyg"
+          >
+            Column A
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="sx03kze"
+      >
+        <tr
+          class="sx03kze"
+        >
+          <td
+            class="sxo03ad"
+          >
+            This is text
+          </td>
+        </tr>
+      </tbody>
+      <tfoot
+        class="sx03kze"
+      >
+        <tr
+          class="sx03kze"
+        >
+          <td
+            class="sxo03ad"
+          >
+            Footer 1
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+`;
