@@ -5,9 +5,11 @@ description: The Table component displays a collection of data grouped into rows
 category: Layout
 ---
 
-The `Table` component structure mirrors that of a regular HTML table. The default width is 100% of the parent container, but this can be overridden.
+The `Table` component structure mirrors that of a regular HTML table, with the smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table Row` components corresponding to the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags, respectively. 
 
-Due to rendering issues with some browsers, adding borders to `Table.Row` is not recommended. Borders may be added by styling the `Table.Cell` and `Table.HeaderCell` components;
+The default table width is 100% of the parent container, but this and other styles can be overridden with the `css` prop on all components.
+
+Best practice: Due to rendering issues with some browsers, adding borders to `Table.Row` is possible by styling the Table component with `border-collapse: collapse`; however, this practice is generally not recommended. The preferred method for adding borders is applying styles to the `Table.Cell` and `Table.HeaderCell` components;
 
 
 ```jsx preview
