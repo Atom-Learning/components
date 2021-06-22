@@ -6,6 +6,7 @@ const StyledTabTrigger = styled(Trigger, {
   flexShrink: 0,
   padding: '$3',
   color: '$primary500',
+  fontFamily: '$sans',
   userSelect: 'none',
   '&:hover': { color: '$primary900' },
   '&[data-disabled]': { color: '$tonal600' },
