@@ -98,7 +98,6 @@ exports[`RadioField component renders 1`] = `
       <div
         class="sx03kze"
         role="radiogroup"
-        tabindex="0"
       >
         <div
           class="sx03kze"
@@ -109,13 +108,19 @@ exports[`RadioField component renders 1`] = `
             <div
               class="sx03kze sx03kze-385xm"
             >
+              <input
+                checked=""
+                hidden=""
+                type="radio"
+                value="1"
+              />
               <button
                 aria-checked="true"
                 class="sxjdf4a"
-                data-radix-collection-item=""
+                data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="checked"
                 role="radio"
-                tabindex="-1"
+                tabindex="0"
                 type="button"
                 value="1"
               >
@@ -124,13 +129,6 @@ exports[`RadioField component renders 1`] = `
                   data-state="checked"
                 />
               </button>
-              <input
-                checked=""
-                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
-                tabindex="-1"
-                type="radio"
-                value="1"
-              />
             </div>
             1
           </label>
@@ -144,20 +142,19 @@ exports[`RadioField component renders 1`] = `
             <div
               class="sx03kze sx03kze-385xm"
             >
+              <input
+                hidden=""
+                type="radio"
+                value="2"
+              />
               <button
                 aria-checked="false"
                 class="sxjdf4a"
-                data-radix-collection-item=""
+                data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="unchecked"
                 role="radio"
                 tabindex="-1"
                 type="button"
-                value="2"
-              />
-              <input
-                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
-                tabindex="-1"
-                type="radio"
                 value="2"
               />
             </div>

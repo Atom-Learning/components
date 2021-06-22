@@ -89,19 +89,18 @@ exports[`CheckboxField component renders 1`] = `
         <div
           class="sx03kze sx03kze-385xm"
         >
+          <input
+            hidden=""
+            name="example"
+            type="checkbox"
+            value="false"
+          />
           <button
             aria-checked="false"
             class="sx1i2hs"
             data-state="unchecked"
             role="checkbox"
             type="button"
-            value="false"
-          />
-          <input
-            name="example"
-            style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
-            tabindex="-1"
-            type="checkbox"
             value="false"
           />
         </div>

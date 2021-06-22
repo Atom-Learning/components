@@ -7,36 +7,14 @@ const StyledTabTrigger = styled(Trigger, {
   padding: '$3',
   color: '$primary500',
   userSelect: 'none',
-  '& *': { color: '$primary500' },
-
   '&:hover': { color: '$primary900' },
-  '& *:hover': { color: '$primary900' },
-
   '&[data-disabled]': { color: '$tonal600' },
-  '&[data-disabled] *': { color: '$tonal600' },
-
   '&[data-disabled]:hover': { color: '$tonal600' },
-  '&[data-disabled] *:hover': { color: '$tonal600' },
-
   '&[data-state="active"]': {
     color: '$primary900',
     boxShadow: 'inset 0 -3px 0 0 currentColor'
-  },
-  '&[data-state="active"] *': {
-    color: '$primary900'
   }
 })
-
-const renderChildren = (children: string | React.ReactNode, css: CSS) =>
-  React.Children.map(children, (child: any) => {
-    if (typeof child === 'string') {
-      return child
-    }
-
-    return React.cloneElement(child, {
-      css
-    })
-  })
 
 type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {
   value: string
@@ -50,7 +28,7 @@ export const TabTrigger: React.FC<TabTriggerProps> = ({
   ...otherProps
 }) => (
   <StyledTabTrigger css={css} disabled={disabled} {...otherProps}>
-    {renderChildren(children, css as CSS)}
+    {children}
   </StyledTabTrigger>
 )
 

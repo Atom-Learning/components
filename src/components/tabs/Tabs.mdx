@@ -5,12 +5,11 @@ description: Tabs is a component that provides different sections of content tha
 category: Layout
 ---
 
-The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smallar components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
-It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
 
 ```tsx preview
 <Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
-  <Tabs.TriggerList css={{ borderBottom: '1px solid gray' }}>
+  <Tabs.TriggerList>
     <Tabs.Trigger value="tab1">
       <Text>Nested component under the Tabs.Trigger component</Text>
     </Tabs.Trigger>
@@ -24,13 +23,19 @@ It also takes a `defaultValue` prop that should match one of the triggers' `valu
 </Tabs>
 ```
 
+It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+
+```tsx
+<Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
+```
+
 ## Tabs.TriggerList
 
 The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
 
 ```tsx preview
 <Tabs>
-  <Tabs.TriggerList>
+  <Tabs.TriggerList css={{ borderBottom: '1px solid gray' }}>
     <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
     <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
     <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
@@ -45,19 +50,6 @@ The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` comp
 
 The `Tabs.Trigger` component holds the content that will be displayed inside the button that the user would click in order to switch tabs. In can hold either a string, or some other component. It needs to be passed a `value` prop, that would be identical to the `value` prop passed to its corresponding `Tabs.Content` component.
 
-```tsx preview
-<Tabs>
-  <Tabs.TriggerList>
-    <Tabs.Trigger value='tab1'>Tab 1</Tabs.Trigger>
-    <Tabs.Trigger value='tab2'>
-      <Text>Tab 2</Text>
-    </Tabs.Trigger>
-  <Tabs.TriggerList>
-  <Tabs.Content value="tab1">Tab 1 content</Tabs.Content>
-  <Tabs.Content value="tab2">Tab 2 content</Tabs.Content>
-</Tabs>
-```
-
 ## Tabs.Content
 
 The `Tabs.Content` component, as the name suggests, holds the content for that particular section of the tabs component. It takes a `value` prop that needs to match the `value` prop passed to its corresponding trigger. Its content can be any text or valid component.
@@ -65,9 +57,9 @@ The `Tabs.Content` component, as the name suggests, holds the content for that p
 ```tsx preview
 <Tabs>
   <Tabs.TriggerList>
-    <Tabs.Trigger value='tab1'>Tab 1</Tabs.Trigger>
-    <Tabs.Trigger value='tab2'>Tab 2</Tabs.Trigger>
-  <Tabs.TriggerList>
+    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
+    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
+  </Tabs.TriggerList>
   <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
   <Tabs.Content value="tab2">
     Content for the second tab. It can also hold other components, like a{' '}
@@ -83,9 +75,11 @@ A `Tabs.Trigger` component can take a `disabled` prop, which would make it unsel
 ```tsx preview
 <Tabs>
   <Tabs.TriggerList>
-    <Tabs.Trigger value='tab1'>Tab 1</Tabs.Trigger>
-    <Tabs.Trigger disabled value='tab2'>Tab 2</Tabs.Trigger>
-  <Tabs.TriggerList>
+    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
+    <Tabs.Trigger disabled value="tab2">
+      Tab 2
+    </Tabs.Trigger>
+  </Tabs.TriggerList>
   <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
   <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>
 </Tabs>
@@ -103,4 +97,4 @@ In order to style the different states of a trigger, the following CSS selectors
 
 `&[data-state="active"]` to style an active trigger.
 
-If the content of the trigger is, say, a `<Text>` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly.
+If the content of the trigger is, say, a `<Text>` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly. You can also simply style the nested child component directly via its own `css` prop.
