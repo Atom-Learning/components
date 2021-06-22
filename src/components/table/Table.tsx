@@ -1,16 +1,14 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { CSSWrapper } from '~/utilities'
 
+// import { CSSWrapper } from '~/utilities'
 import { Body } from './Body'
 import { Cell } from './Cell'
 import { Footer } from './Footer'
 import { Header } from './Header'
 import { HeaderCell } from './HeaderCell'
 import { Row } from './Row'
-
-// type TableProps = {}
 
 type TableSubComponents = {
   Body: typeof Body
@@ -27,12 +25,12 @@ const StyledTable = styled('table', {
   fontSize: '$sm'
 })
 
-export const Table: React.FC<React.ComponentProps<typeof CSSWrapper>> &
-  TableSubComponents = ({ children, css }) => (
-  <CSSWrapper css={css}>
-    <StyledTable>{children}</StyledTable>
-  </CSSWrapper>
-)
+type TableProps = React.ComponentProps<typeof StyledTable>
+
+export const Table: React.FC<TableProps> & TableSubComponents = ({
+  children,
+  ...restProps
+}: TableProps) => <StyledTable {...restProps}>{children}</StyledTable>
 
 Table.Body = Body
 Table.Cell = Cell
