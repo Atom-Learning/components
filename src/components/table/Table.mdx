@@ -1,10 +1,40 @@
 ---
 title: Table
-component: Table
-description: This is the description
+component: Table, Table.Body, Table.Cell, Table.Footer, Table.Header, Table.HeaderCell, Table Row
+description: The Table component displays a collection of data grouped into rows
 category: Layout
 ---
 
+The `Table` component structure mirrors that of a regular HTML table. The default width is 100% of the parent container, but this can be overridden.
+
+Due to rendering issues with some browsers, adding borders to `Table.Row` is not recommended. Borders may be added by styling the `Table.Cell` and `Table.HeaderCell` components;
+
+
 ```jsx preview
-<Table />
+<Table css={{ height: 100, width: 400, color: '$primary500' }}>
+  <Table.Header>
+    <Table.Row>
+      <Table.HeaderCell>First Name</Table.HeaderCell>
+      <Table.HeaderCell>Last Name</Table.HeaderCell>
+      <Table.HeaderCell>Age</Table.HeaderCell>
+    </Table.Row>
+  </Table.Header>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>Rakim</Table.Cell>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>Jackson</Table.Cell>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>35</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>Evelyn</Table.Cell>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>Smith</Table.Cell>
+      <Table.Cell css={{border: '1px solid $tonal300'}}>27</Table.Cell>
+    </Table.Row>
+  </Table.Body>
+  <Table.Footer>
+    <Table.Row>
+      <Table.Cell>Footer 1</Table.Cell>
+    </Table.Row>
+  </Table.Footer>
+</Table>
 ```
