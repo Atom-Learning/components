@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-// import { CSSWrapper } from '~/utilities'
 import { Body } from './Body'
 import { Cell } from './Cell'
 import { Footer } from './Footer'
