@@ -13,29 +13,40 @@ Best practice: Due to rendering issues with some browsers, adding borders to `Ta
 
 
 ```jsx preview
-<Table css={{ height: 100, width: 400, color: '$primary500' }}>
+<Table css={{ width: '500px', mb: '100px' }}>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell>First Name</Table.HeaderCell>
-      <Table.HeaderCell>Last Name</Table.HeaderCell>
-      <Table.HeaderCell>Age</Table.HeaderCell>
+      <Table.HeaderCell css={{ bg: '$tonal800' }}>
+        First Name
+      </Table.HeaderCell>
+      <Table.HeaderCell css={{ bg: '$tonal800' }}>
+        Last Name
+      </Table.HeaderCell>
+      <Table.HeaderCell css={{ bg: '$tonal800' }}>Age</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>Rakim</Table.Cell>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>Jackson</Table.Cell>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>35</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100' }}>Rakim</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100' }}>Jackson</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100' }}>35</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>Evelyn</Table.Cell>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>Smith</Table.Cell>
-      <Table.Cell css={{border: '1px solid $tonal300'}}>27</Table.Cell>
+      <Table.Cell>Evelyn</Table.Cell>
+      <Table.Cell>Smith</Table.Cell>
+      <Table.Cell>27</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell css={{ bg: '$tonal100' }}>Miguel</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100' }}>Fernandez</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100' }}>52</Table.Cell>
     </Table.Row>
   </Table.Body>
   <Table.Footer>
     <Table.Row>
       <Table.Cell>Footer 1</Table.Cell>
+      <Table.Cell>Footer 2</Table.Cell>
+      <Table.Cell>Footer 3</Table.Cell>
     </Table.Row>
   </Table.Footer>
 </Table>
