@@ -11,41 +11,42 @@ exports[`TextareaField component renders 1`] = `
   margin-bottom: var(--sx-space-2);
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sxh0wga {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sxh0wgaryo8u--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sxh0wgaryo8u--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sxh0wgaryo8u--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sxduzhy {
+.sxao3c3 {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
+  box-sizing: border-box;
   color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   min-height: var(--sx-sizes-6);
   padding-left: var(--sx-space-3);
@@ -57,13 +58,12 @@ exports[`TextareaField component renders 1`] = `
   width: 100%;
 }
 
-.sxduzhy:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+.sxao3c3:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxduzhy[disabled] {
+.sxao3c3[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
 }
@@ -80,12 +80,12 @@ exports[`TextareaField component renders 1`] = `
         class="sx2cs53 sx2cs53-re4mk"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sxh0wga sxh0wgaryo8u--size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sxduzhy"
+        class="sxao3c3"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -106,41 +106,42 @@ exports[`TextareaField component renders with an error 1`] = `
   margin-bottom: var(--sx-space-2);
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sxh0wga {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sxh0wgaryo8u--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sxh0wgaryo8u--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sxh0wgaryo8u--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sxduzhy {
+.sxao3c3 {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
+  box-sizing: border-box;
   color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   min-height: var(--sx-sizes-6);
   padding-left: var(--sx-space-3);
@@ -152,13 +153,12 @@ exports[`TextareaField component renders with an error 1`] = `
   width: 100%;
 }
 
-.sxduzhy:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+.sxao3c3:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxduzhy[disabled] {
+.sxao3c3[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
 }
@@ -175,12 +175,12 @@ exports[`TextareaField component renders with an error 1`] = `
         class="sx2cs53 sx2cs53-re4mk"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sxh0wga sxh0wgaryo8u--size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sxduzhy"
+        class="sxao3c3"
         error="Error Message"
         id="description"
         name="description"

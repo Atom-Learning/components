@@ -15,7 +15,7 @@ exports[`Carousel component renders 1`] = `
   padding-right: var(--sx-space-3);
 }
 
-.sxib16r {
+.sxwh98c {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
@@ -25,16 +25,16 @@ exports[`Carousel component renders 1`] = `
   vertical-align: middle;
 }
 
-.sxib16rmbqqh--size-md {
+.sxwh98cmbqqh--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
 }
 
-.sx8qegy {
+.sx2br14 {
   align-items: center;
   background: unset;
   border: unset;
-  color: var(--sx-colors-primary900);
+  color: var(--sx-colors-tertiary);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -46,36 +46,36 @@ exports[`Carousel component renders 1`] = `
   transition: color 0.15s ease-in-out;
 }
 
-.sx8qegy:hover {
-  color: var(--sx-colors-primary500);
+.sx2br14:hover {
+  color: var(--sx-colors-primary);
 }
 
-.sx8qegy:disabled {
+.sx2br14:disabled {
   color: var(--sx-colors-tonal300);
 }
 
-.sx8qegy-pqx9j {
+.sx2br14-pqx9j {
   position: absolute;
   left: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sx8qegy-pqx9j {
+  .sx2br14-pqx9j {
     left: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sx8qegy-pqx9j {
+  .sx2br14-pqx9j {
     left: var(--sx-space-4);
   }
 }
 
-.sx8qegy {
+.sx2br14 {
   align-items: center;
   background: unset;
   border: unset;
-  color: var(--sx-colors-primary900);
+  color: var(--sx-colors-tertiary);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -87,36 +87,36 @@ exports[`Carousel component renders 1`] = `
   transition: color 0.15s ease-in-out;
 }
 
-.sx8qegy:hover {
-  color: var(--sx-colors-primary500);
+.sx2br14:hover {
+  color: var(--sx-colors-primary);
 }
 
-.sx8qegy:disabled {
+.sx2br14:disabled {
   color: var(--sx-colors-tonal300);
 }
 
-.sx8qegy-dtra5 {
+.sx2br14-dtra5 {
   position: absolute;
   right: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sx8qegy-dtra5 {
+  .sx2br14-dtra5 {
     right: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sx8qegy-dtra5 {
+  .sx2br14-dtra5 {
     right: var(--sx-space-4);
   }
 }
 
-.sxsiaav {
+.sxv3bet {
   justify-content: center;
 }
 
-.sxsiaav button {
+.sxv3bet button {
   background: var(--sx-colors-tonal300);
   border: none;
   border-radius: 50%;
@@ -129,8 +129,8 @@ exports[`Carousel component renders 1`] = `
   transition: all 0.25s ease-in;
 }
 
-.sxsiaav button[class*="selected"] {
-  background: var(--sx-colors-primary900);
+.sxv3bet button[class*="selected"] {
+  background: var(--sx-colors-tertiary);
 }
 
 .sx03kze-iy5j5 {
@@ -198,13 +198,13 @@ exports[`Carousel component renders 1`] = `
     >
       <button
         aria-label="previous"
-        class="buttonBack___1mlaL carousel__back-button sx8qegy sx8qegy-pqx9j"
+        class="buttonBack___1mlaL carousel__back-button sx2br14 sx2br14-pqx9j"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxib16r sxib16rmbqqh--size-md"
+          class="sxwh98c sxwh98cmbqqh--size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -215,12 +215,12 @@ exports[`Carousel component renders 1`] = `
       </button>
       <button
         aria-label="next"
-        class="buttonNext___2mOCa carousel__next-button sx8qegy sx8qegy-dtra5"
+        class="buttonNext___2mOCa carousel__next-button sx2br14 sx2br14-dtra5"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxib16r sxib16rmbqqh--size-md"
+          class="sxwh98c sxwh98cmbqqh--size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -335,7 +335,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group sxsiaav"
+        class="carousel__dot-group sxv3bet"
       >
         <button
           aria-label="slide dot"
