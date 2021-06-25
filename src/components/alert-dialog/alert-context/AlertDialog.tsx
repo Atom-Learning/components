@@ -40,18 +40,13 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       )}
       <Stack gap="2" css={{ mx: 'auto' }}>
         <Button
-          fullWidth
           appearance="outline"
           as={AlertDialog.Cancel}
           onClick={() => onAction(false)}
         >
           {cancelActionText}
         </Button>
-        <Button
-          fullWidth
-          as={AlertDialog.Action}
-          onClick={() => onAction(true)}
-        >
+        <Button as={AlertDialog.Action} onClick={() => onAction(true)}>
           {confirmActionText}
         </Button>
       </Stack>

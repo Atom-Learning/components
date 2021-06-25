@@ -1,7 +1,7 @@
 import {
   Add,
+  ArrowRight,
   BatteryMedium,
-  Clip,
   Crossing,
   EyeCrossed,
   Paperclip,
@@ -34,6 +34,7 @@ import {
   Label,
   Link,
   List,
+  Loader,
   PasswordField,
   Popover,
   ProgressBar,
@@ -78,69 +79,167 @@ const AlertComponent = () => {
 
 const Bucket = ({ name, children }) => (
   <>
-    <Heading css={{ mb: '$4' }}>{name}</Heading>
+    <Heading css={{ mb: '$5' }}>{name}</Heading>
     {children}
-    <Divider css={{ my: '$5' }} />
+    <Divider css={{ my: '$6' }} />
   </>
 )
-Bucket.Section = ({ gap = '$2', ...props }) => (
-  <Flex css={{ flexWrap: 'wrap', mb: '$4', gap }} {...props} />
+Bucket.Section = ({ gap = '$3', css = {}, ...props }) => (
+  <Flex css={{ flexWrap: 'wrap', mb: '$5', gap, ...(css as any) }} {...props} />
 )
 
 const App = () => (
   <AlertProvider>
-    <Box css={{ p: '$4', maxWidth: 1100, m: 'auto' }}>
+    <Box css={{ p: '$5', maxWidth: 1100, m: 'auto' }}>
       <Bucket name="Buttons">
         <Bucket.Section>
-          <Button size="sm">Hello</Button>
-          <Button>Hello</Button>
-          <Button size="lg">Hello</Button>
-        </Bucket.Section>
-        <Bucket.Section>
-          <Button theme="success">Hello</Button>
-          <Button theme="danger">Hello</Button>
-          <Button theme="warning">Hello</Button>
-        </Bucket.Section>
-        <Bucket.Section>
-          <Button appearance="outline" size="sm">
-            Hello
+          <Button size="sm">Button</Button>
+          <Button size="sm" appearance="outline">
+            Button
           </Button>
-          <Button appearance="outline">Hello</Button>
-          <Button appearance="outline" size="lg">
-            Hello
+          <Button size="sm" theme="success">
+            Button
+          </Button>
+          <Button size="sm" theme="warning">
+            Button
+          </Button>
+          <Button size="sm" theme="danger">
+            Button
+          </Button>
+          <Box css={{ width: '100%' }} />
+          <Button size="sm" isLoading>
+            Button
+          </Button>
+          <Button size="sm" isLoading appearance="outline">
+            Button
+          </Button>
+          <Button size="sm" theme="success" isLoading>
+            Button
+          </Button>
+          <Button size="sm" theme="warning" isLoading>
+            Button
+          </Button>
+          <Button size="sm" theme="danger" isLoading>
+            Button
+          </Button>
+          <Box css={{ width: '100%' }} />
+          <Button size="sm" isRounded>
+            Button
+          </Button>
+          <Button size="sm" appearance="outline" isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="success" isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="warning" isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="danger" isRounded>
+            Button
+          </Button>
+          <Box css={{ width: '100%' }} />
+          <Button size="sm" isLoading isRounded>
+            Button
+          </Button>
+          <Button size="sm" isLoading appearance="outline" isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="success" isLoading isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="warning" isLoading isRounded>
+            Button
+          </Button>
+          <Button size="sm" theme="danger" isLoading isRounded>
+            Button
           </Button>
         </Bucket.Section>
         <Bucket.Section>
-          <Button isRounded>Hello</Button>
+          <Button>Button</Button>
+          <Button appearance="outline">Button</Button>
+          <Button theme="success">Button</Button>
+          <Button theme="warning">Button</Button>
+          <Button theme="danger">Button</Button>
+          <Box css={{ width: '100%' }} />
+          <Button isLoading>Button</Button>
+          <Button isLoading appearance="outline">
+            Button
+          </Button>
+          <Button theme="success" isLoading>
+            Button
+          </Button>
+          <Button theme="warning" isLoading>
+            Button
+          </Button>
+          <Button theme="danger" isLoading>
+            Button
+          </Button>
+          <Box css={{ width: '100%' }} />
+          <Button isRounded>Button</Button>
           <Button appearance="outline" isRounded>
-            Hello
+            Button
           </Button>
           <Button theme="success" isRounded>
-            Hello
+            Button
+          </Button>
+          <Button theme="warning" isRounded>
+            Button
+          </Button>
+          <Button theme="danger" isRounded>
+            Button
+          </Button>
+          <Box css={{ width: '100%' }} />
+          <Button isLoading isRounded>
+            Button
+          </Button>
+          <Button isLoading appearance="outline" isRounded>
+            Button
+          </Button>
+          <Button theme="success" isLoading isRounded>
+            Button
+          </Button>
+          <Button theme="warning" isLoading isRounded>
+            Button
+          </Button>
+          <Button theme="danger" isLoading isRounded>
+            Button
           </Button>
         </Bucket.Section>
+
         <Bucket.Section>
           <Button size="sm">
             <Icon is={Add} />
-            Hello
+            Button
           </Button>
+          <Button size="sm">
+            Button
+            <Icon is={ArrowRight} />
+          </Button>
+          <Button size="sm" appearance="outline">
+            <Icon is={Add} />
+            Button
+          </Button>
+          <Button size="sm" appearance="outline">
+            Button
+            <Icon is={ArrowRight} />
+          </Button>
+          <Box css={{ width: '100%' }} />
           <Button>
             <Icon is={Add} />
-            Hello
+            Button
           </Button>
-          <Button size="lg">
-            <Icon is={Add} />
-            Hello
+          <Button>
+            Button
+            <Icon is={ArrowRight} />
           </Button>
-        </Bucket.Section>
-        <Bucket.Section>
-          <Button theme="success" isLoading>
+          <Button appearance="outline">
             <Icon is={Add} />
-            Hello
+            Button
           </Button>
-          <Button theme="warning" isRounded>
-            <Icon is={Add} />
-            Hello
+          <Button appearance="outline">
+            Button
+            <Icon is={ArrowRight} />
           </Button>
         </Bucket.Section>
       </Bucket>
@@ -148,7 +247,6 @@ const App = () => (
         <Bucket.Section>
           <Icon size="xs" is={BatteryMedium} />
           <Icon size="xs" css={{ color: '$primary' }} is={Crossing} />
-          <Icon size="xs" css={{ color: '$tertiary' }} is={Paperclip} />
           <Icon size="xs" css={{ color: '$success' }} is={Sun} />
           <Icon size="xs" css={{ color: '$warning' }} is={Wheelchair} />
           <Icon size="xs" css={{ color: '$danger' }} is={EyeCrossed} />
@@ -156,7 +254,6 @@ const App = () => (
         <Bucket.Section>
           <Icon size="sm" is={BatteryMedium} />
           <Icon size="sm" css={{ color: '$primary' }} is={Crossing} />
-          <Icon size="sm" css={{ color: '$tertiary' }} is={Paperclip} />
           <Icon size="sm" css={{ color: '$success' }} is={Sun} />
           <Icon size="sm" css={{ color: '$warning' }} is={Wheelchair} />
           <Icon size="sm" css={{ color: '$danger' }} is={EyeCrossed} />
@@ -164,7 +261,6 @@ const App = () => (
         <Bucket.Section>
           <Icon is={BatteryMedium} />
           <Icon css={{ color: '$primary' }} is={Crossing} />
-          <Icon css={{ color: '$tertiary' }} is={Paperclip} />
           <Icon css={{ color: '$success' }} is={Sun} />
           <Icon css={{ color: '$warning' }} is={Wheelchair} />
           <Icon css={{ color: '$danger' }} is={EyeCrossed} />
@@ -172,7 +268,6 @@ const App = () => (
         <Bucket.Section>
           <Icon size="lg" is={BatteryMedium} />
           <Icon css={{ color: '$primary' }} size="lg" is={Crossing} />
-          <Icon css={{ color: '$tertiary' }} size="lg" is={Paperclip} />
           <Icon css={{ color: '$success' }} size="lg" is={Sun} />
           <Icon css={{ color: '$warning' }} size="lg" is={Wheelchair} />
           <Icon css={{ color: '$danger' }} size="lg" is={EyeCrossed} />
@@ -192,6 +287,50 @@ const App = () => (
           <ActionIcon label="Attach a file" appearance="solid">
             <Icon is={EyeCrossed} size="sm" />
           </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="simple" theme="success">
+            <Icon is={VolumeLoud} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="subtle" theme="success">
+            <Icon is={Add} size="sm" />
+          </ActionIcon>
+          <ActionIcon
+            label="Attach a file"
+            appearance="outline"
+            theme="success"
+          >
+            <Icon is={Paperclip} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="solid" theme="success">
+            <Icon is={EyeCrossed} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="simple" theme="warning">
+            <Icon is={VolumeLoud} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="subtle" theme="warning">
+            <Icon is={Add} size="sm" />
+          </ActionIcon>
+          <ActionIcon
+            label="Attach a file"
+            appearance="outline"
+            theme="warning"
+          >
+            <Icon is={Paperclip} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="solid" theme="warning">
+            <Icon is={EyeCrossed} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="simple" theme="danger">
+            <Icon is={VolumeLoud} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="subtle" theme="danger">
+            <Icon is={Add} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="outline" theme="danger">
+            <Icon is={Paperclip} size="sm" />
+          </ActionIcon>
+          <ActionIcon label="Attach a file" appearance="solid" theme="danger">
+            <Icon is={EyeCrossed} size="sm" />
+          </ActionIcon>
         </Bucket.Section>
         <Bucket.Section>
           <ActionIcon size="lg" label="Attach a file" appearance="simple">
@@ -208,105 +347,77 @@ const App = () => (
           </ActionIcon>
         </Bucket.Section>
       </Bucket>
-      <Bucket name="Typography">
+      <Bucket name="Loaders">
         <Bucket.Section gap="$4">
-          <Heading size="xs">
-            Looking to escape into the beautifully blocky world of LEGO?
-          </Heading>
-          <Heading size="sm">
-            Looking to escape into the beautifully blocky world of LEGO?
-          </Heading>
-          <Heading size="md">
-            Looking to escape into the beautifully blocky world of LEGO?
-          </Heading>
-          <Heading size="lg">
-            Looking to escape into the beautifully blocky world of LEGO?
-          </Heading>
-          <Heading size="xl">
-            Looking to escape into the beautifully blocky world of LEGO?
-          </Heading>
-          <Text size="sm">
-            Looking to escape into the beautifully blocky world of LEGO? Well,
-            our gameplay video for LEGO Builder's Journey has you covered. This
-            atmospheric puzzle game features the most realistic and accurately
-            rendered LEGO elements in a game, ever!
-          </Text>
-          <Text>
-            Looking to escape into the beautifully blocky world of LEGO? Well,
-            our gameplay video for LEGO Builder's Journey has you covered. This
-            atmospheric puzzle game features the most realistic and accurately
-            rendered LEGO elements in a game, ever!
-          </Text>
-          <Text size="lg">
-            Looking to escape into the beautifully blocky world of LEGO? Well,
-            our gameplay video for LEGO Builder's Journey has you covered. This
-            atmospheric puzzle game features the most realistic and accurately
-            rendered LEGO elements in a game, ever!
-          </Text>
-          <Text size="xl">
-            Looking to escape into the beautifully blocky world of LEGO? Well,
-            our gameplay video for LEGO Builder's Journey has you covered. This
-            atmospheric puzzle game features the most realistic and accurately
-            rendered LEGO elements in a game, ever!
-          </Text>
+          <Loader size="sm" />
+          <Loader />
+          <Loader size="lg" />
         </Bucket.Section>
         <Bucket.Section gap="$4">
+          <Loader size="sm" css={{ color: '$primary' }} />
+          <Loader css={{ color: '$primary' }} />
+          <Loader size="lg" css={{ color: '$primary' }} />
+        </Bucket.Section>
+      </Bucket>
+      <Bucket name="Typography">
+        <Bucket.Section gap="$5" css={{ flexDirection: 'column' }}>
+          <Heading size="xs">This is a heading size xs</Heading>
+          <Heading size="sm">This is a heading size sm</Heading>
+          <Heading size="md">This is a heading size md</Heading>
+          <Heading size="lg">This is a heading size lg</Heading>
+          <Heading size="xl">This is a heading size xl</Heading>
+          <Heading size="xxl">This is a heading size xxl</Heading>
           <Text size="sm">
-            Looking to escape into the beautifully blocky world of LEGO? Well,
-            our gameplay <Link>video for LEGO Builder's Journey</Link> has you
-            covered. This atmospheric puzzle game features the most realistic
-            and accurately rendered LEGO elements in a game, ever!
+            This is a sm Paragraph. A really long paragraph of text, to
+            demonstrate prose text, like for example, the kind you might read in
+            a blog post. The reason we're using prose here is because the most
+            common use case for this container size is longform text. So we're
+            previewing some longform text here so we can make sure the container
+            width provides an optimal line length for this font size.
+          </Text>
+          <Text>
+            This is a Paragraph. A really long paragraph of text, to demonstrate
+            prose text, like for example, the kind you might read in a blog
+            post. The reason we're using prose here is because the most common
+            use case for this container size is longform text. So we're
+            previewing some longform text here so we can make sure the container
+            width provides an optimal line length for this font size.
+          </Text>
+          <Text size="lg">
+            This is a lg Paragraph. A really long paragraph of text, to
+            demonstrate prose text.
+          </Text>
+          <Text size="xl">
+            This is a xl Paragraph. A really long paragraph of text, to
+            demonstrate prose text.
+          </Text>
+          <Text size="sm">
+            This is a sm Paragraph with a <Link>Link</Link>. A really long
+            paragraph of text, to demonstrate prose text, like for example.
+          </Text>
+          <Text>
+            This is a Paragraph with a <Link>Link</Link>. A really long
+            paragraph of text, to demonstrate prose text, like for example.
+          </Text>
+          <Text size="lg">
+            This is a lg Paragraph with a <Link>Link</Link>. A really long
+            paragraph of text, to demonstrate prose text, like for example.
           </Text>
           <Heading>
-            Looking to escape into the beautifully blocky world of{' '}
-            <Link>LEGO</Link>?
+            This is a Heading with a <Link>Link</Link>.
           </Heading>
-          <Link>video for LEGO Builder's</Link>
+          <Link>This is a Link</Link>
         </Bucket.Section>
         <Bucket.Section>
           <List>
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
+            <List.Item>This is a List</List.Item>
+            <List.Item>With multiple List.Items</List.Item>
+            <List.Item>And even more content here</List.Item>
           </List>
-          <List theme="primary">
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
-          </List>
-          <List theme="tertiary">
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
-          </List>
-        </Bucket.Section>
-        <Bucket.Section>
           <List size="sm">
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
-          </List>
-          <List theme="primary" size="sm">
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
-          </List>
-          <List theme="tertiary" size="sm">
-            <List.Item>Personalised learning journey</List.Item>
-            <List.Item>Adaptive learning to maximise engagement</List.Item>
-            <List.Item>Comprehensive, teacher-approved content</List.Item>
-            <List.Item>Unlimited, adaptive mock tests</List.Item>
-            <List.Item>Detailed performance analytics</List.Item>
+            <List.Item>This is a List</List.Item>
+            <List.Item>With multiple List.Items</List.Item>
+            <List.Item>And even more content here</List.Item>
           </List>
         </Bucket.Section>
       </Bucket>
@@ -314,7 +425,7 @@ const App = () => (
         <Bucket.Section>
           <Form
             onSubmit={() => null}
-            css={{ display: 'flex', gap: '$3', flexDirection: 'column' }}
+            css={{ display: 'flex', gap: '$5', flexDirection: 'column' }}
           >
             <InputField
               name="Email address"
@@ -348,21 +459,24 @@ const App = () => (
             />
             <Box>
               <CheckboxField
-                label="Do you like checkboxes?"
+                label="This is a checkbox?"
                 name="likeCheckboxes"
               />
               <CheckboxField
-                label="If the issue is that it's overlapping content on the screen that we're trying to access in the Cypress test, we might want to just minimize the chat window in the test?"
+                label="This is a checkbox to demonstrate
+            prose text, like for example, the kind you might read in a blog
+            post. The reason we're using prose here is because the most common
+            use case for this container size is longform text."
                 name="likeCheckboxes2"
               />
             </Box>
             <RadioGroupField name="options" label="Garys messages">
+              <RadioGroupField.Item label="This is a radio button" value="1" />
               <RadioGroupField.Item
-                label="Lmao one of those labels is a lot less generic than all the others"
-                value="1"
-              />
-              <RadioGroupField.Item
-                label="Also: this looks cool! Very excited about it."
+                label="This is a radio button to demonstrate
+            prose text, like for example, the kind you might read in a blog
+            post. The reason we're using prose here is because the most common
+            use case for this container size is longform text."
                 value="2"
               />
             </RadioGroupField>
@@ -402,6 +516,12 @@ const App = () => (
               <Switch />
             </InlineFieldWrapper>
             <ValidationError>Email address is a required field</ValidationError>
+            <InputField
+              error={{ message: 'Yolo this is the error' }}
+              name="Email address"
+              label="Email address"
+              type="email"
+            />
           </Form>
         </Bucket.Section>
       </Bucket>
@@ -467,7 +587,7 @@ const App = () => (
               <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
               <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
             </Tabs.TriggerList>
-            <Tabs.Content value="tab1" css={{ p: '$3' }}>
+            <Tabs.Content value="tab1" css={{ p: '$4' }}>
               <Text>
                 Looking to escape into the beautifully blocky world of LEGO?
                 Well, our gameplay video for LEGO Builder's Journey has you
@@ -475,7 +595,7 @@ const App = () => (
                 realistic and accurately rendered LEGO elements in a game, ever!
               </Text>
             </Tabs.Content>
-            <Tabs.Content value="tab2" css={{ p: '$3' }}>
+            <Tabs.Content value="tab2" css={{ p: '$4' }}>
               <Text>
                 If the issue is that it's overlapping content on the screen that
                 we're trying to access in the Cypress test, we might want to
@@ -499,7 +619,7 @@ const App = () => (
             />
             <Carousel.ArrowNext css={{ position: 'absolute', right: '$2' }} />
 
-            <Carousel.Slider aria-label="Example carousel" css={{ mb: '$4' }}>
+            <Carousel.Slider aria-label="Example carousel" css={{ mb: '$5' }}>
               <Carousel.Slide index={1} aria-label="Slide 1">
                 <Box css={{ bg: '$primary', size: 200 }} />
               </Carousel.Slide>
@@ -522,7 +642,7 @@ const App = () => (
               <Text>Hover on me</Text>
             </Tooltip.Trigger>
             <Tooltip.Content>
-              This is the tooltip content, hello
+              This is the tooltip content, Button
             </Tooltip.Content>
           </Tooltip>
         </Bucket.Section>
@@ -533,7 +653,7 @@ const App = () => (
             <Button>Click me</Button>
           </Popover.Trigger>
           <Popover.Content>
-            <Heading size="xs" css={{ mb: '$3' }}>
+            <Heading size="xs" css={{ mb: '$4' }}>
               Popover
             </Heading>
             <Text size="sm">
@@ -552,10 +672,10 @@ const App = () => (
             <Button>Click me</Button>
           </Dialog.Trigger>
           <Dialog.Content>
-            <Heading size="sm" css={{ mb: '$4' }}>
+            <Heading size="sm" css={{ mb: '$5' }}>
               Dialog
             </Heading>
-            <Text css={{ mb: '$4' }}>
+            <Text css={{ mb: '$5' }}>
               The `Dialog` can display any type of element as a trigger and has
               the content hidden by default
             </Text>

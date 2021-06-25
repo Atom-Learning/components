@@ -32,7 +32,7 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
 })
 
 export const StyledParagraph = styled('p', {
-  color: '$tonal900',
+  color: '$tonal800',
   fontFamily: '$body',
   fontWeight: 400,
   margin: 0,
