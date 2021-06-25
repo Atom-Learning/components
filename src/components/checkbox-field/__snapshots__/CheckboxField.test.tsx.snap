@@ -6,7 +6,7 @@ exports[`CheckboxField component renders 1`] = `
   transform: translateY(var(--sx-space-0));
 }
 
-.sxgmg9t {
+.sx2ca2v {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
@@ -23,22 +23,22 @@ exports[`CheckboxField component renders 1`] = `
   transition: all 50ms ease-out;
 }
 
-.sxgmg9t[data-state="unchecked"]:focus,
-.sxgmg9t[data-state="unchecked"]:hover {
+.sx2ca2v[data-state="unchecked"]:focus,
+.sx2ca2v[data-state="unchecked"]:hover {
   outline: none;
 }
 
-.sxgmg9t[data-state="checked"] {
+.sx2ca2v[data-state="checked"] {
   background-color: var(--sx-colors-primary);
 }
 
-.sxgmg9t[data-state="checked"]:hover,
-.sxgmg9t[data-state="unchecked"]:focus {
+.sx2ca2v[data-state="checked"]:hover,
+.sx2ca2v[data-state="unchecked"]:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxgmg9t:focus-within {
+.sx2ca2v:focus-within {
   outline: none;
 }
 
@@ -97,7 +97,7 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            class="sxgmg9t"
+            class="sx2ca2v"
             data-state="unchecked"
             role="checkbox"
             type="button"

@@ -14,7 +14,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   color: 'white',
   cursor: 'pointer',
   size: '$1',
-  padding: 0,
+  p: 0,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -36,7 +36,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
 
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
 
-const CheckboxIcon = () => <Icon is={Ok} size="xs" />
+const CheckboxIcon = () => <Icon is={Ok} size="xs" css={{ strokeWidth: '3' }} />
 
 export const Checkbox: React.FC<CheckboxProps> = (props) => (
   <StyledCheckbox {...props}>

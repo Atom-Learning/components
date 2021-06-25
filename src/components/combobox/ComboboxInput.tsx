@@ -1,11 +1,11 @@
 import { ComboboxInput as BaseComboboxInput } from '@reach/combobox'
 
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
 
 export const ComboboxInput = styled(BaseComboboxInput, {
   appearance: 'none',
-  backgroundImage: encodeBackgroundIcon('hsl(208,85%,38%)', 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.primary.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '$sizes$2 auto, 100%',

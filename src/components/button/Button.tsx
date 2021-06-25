@@ -80,14 +80,9 @@ const StyledButton = styled('button', {
         px: '$3'
       },
       md: {
-        fontSize: '$sm',
-        height: '$3',
-        px: '$4'
-      },
-      lg: {
         fontSize: '$md',
         height: '$4',
-        px: '$4'
+        px: '$5'
       }
     },
     isLoading: {
@@ -110,7 +105,6 @@ const StyledButton = styled('button', {
   },
 
   compoundVariants: [
-    // Appearance Solid
     {
       theme: 'primary',
       appearance: 'solid',
@@ -131,8 +125,6 @@ const StyledButton = styled('button', {
       appearance: 'solid',
       css: getButtonSolidVariant('$danger', '$dangerDark')
     },
-
-    // Appearance Outline
     {
       theme: 'primary',
       appearance: 'outline',
@@ -163,7 +155,9 @@ const getChildren = (children, size) =>
   React.Children.map(children, (child: any, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
-        css: { [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3' },
+        css: {
+          [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3'
+        },
         size: size === 'lg' ? 'md' : 'sm'
       })
     }

@@ -24,29 +24,27 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   label,
   prompt,
   required
-}) => {
-  return (
-    <Box css={css}>
-      <Flex
-        css={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          mb: '$2'
-        }}
-      >
-        <Label htmlFor={fieldId} required={required}>
-          {label}
-        </Label>
-        {prompt && (
-          <Link href={prompt.link} size="sm">
-            {prompt.label}
-          </Link>
-        )}
-      </Flex>
-      {children}
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
-    </Box>
-  )
-}
+}) => (
+  <Box css={css}>
+    <Flex
+      css={{
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        mb: '$3'
+      }}
+    >
+      <Label htmlFor={fieldId} required={required}>
+        {label}
+      </Label>
+      {prompt && (
+        <Link href={prompt.link} size="sm">
+          {prompt.label}
+        </Link>
+      )}
+    </Flex>
+    {children}
+    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+  </Box>
+)
 
 FieldWrapper.displayName = 'FieldWrapper'

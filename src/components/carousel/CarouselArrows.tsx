@@ -17,7 +17,7 @@ const buttonStyles = {
   display: 'flex',
   justifyContent: 'center',
   p: 'unset',
-  size: '$4',
+  size: '$5',
   top: '50%',
   transform: 'translateY(-50%)',
   transition: 'color 0.15s ease-in-out',

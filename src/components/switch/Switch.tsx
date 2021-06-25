@@ -12,7 +12,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   borderRadius: '$round',
   cursor: 'pointer',
   display: 'inline-flex',
-  width: '$4',
+  width: '$5',
   position: 'relative',
   transition: 'background-color 100ms ease',
   '&:focus': {

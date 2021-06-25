@@ -7,21 +7,21 @@ import { Icon } from '../icon/Icon'
 
 const getSimpleVariant = (color: string) => ({
   bg: 'transparent',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:hover, &:focus': { color }
 })
 const getSolidVariant = (color: string) => ({
   bg: '$tonal200',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:hover, &:focus': {
     bg: color,
     color: 'white'
   }
 })
 const getOutlineVariant = (color: string) => ({
-  border: '1px solid $tonal500',
+  border: '1px solid $tonal400',
   bg: 'transparent',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:hover, &:focus': {
     borderColor: color,
     color
@@ -34,7 +34,7 @@ const StyledButton = styled('button', {
   borderRadius: '$0',
   cursor: 'pointer',
   p: 'unset',
-  transition: 'all 125ms ease-out',
+  transition: 'all 100ms ease-out',
   variants: {
     theme: {
       primary: {},

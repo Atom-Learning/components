@@ -25,32 +25,15 @@ const StyledUl = styled('ul', {
     }
   },
   variants: {
-    theme: {
-      tonal: {
-        color: '$tonal900'
-      },
-      primary: {
-        color: '$primary'
-      },
-      secondary: {
-        color: '$secondary'
-      },
-      tertiary: {
-        color: '$tertiary'
-      }
-    },
     size: textVariantSize({ applyCapsize: false })
   }
 })
 
-type ListProps = React.ComponentProps<typeof StyledUl> & {
-  theme?: 'tonal' | 'primary' | 'secondary' | 'tertiary'
-}
+type ListProps = React.ComponentProps<typeof StyledUl>
 
 export const List: React.FC<ListProps> & { Item: typeof StyledLi } = ({
-  theme,
   size = 'md',
   ...remainingProps
-}) => <StyledUl theme={theme} size={size} {...remainingProps} />
+}) => <StyledUl size={size} {...remainingProps} />
 
 List.Item = StyledLi

@@ -1,6 +1,8 @@
 import atomTheme from '@atom-learning/theme'
 import { createCss, StitchesCss } from '@stitches/react'
 
+console.log({ atomTheme })
+
 type CSSValue = number | string
 type CSSBlob = { [key: string]: CSSValue }
 

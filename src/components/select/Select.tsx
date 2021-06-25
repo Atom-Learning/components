@@ -1,13 +1,15 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
 import { Override } from '~/utilities/types'
+
+console.log({ theme })
 
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage: encodeBackgroundIcon('hsl(208,85%,38%)', 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.primary.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '$sizes$2 auto, 100%',
@@ -35,7 +37,10 @@ const StyledSelect = styled('select', {
     display: 'none'
   },
   '&[disabled]': {
-    backgroundImage: encodeBackgroundIcon('hsl(0,0%,40%)', 'chevron')
+    backgroundImage: encodeBackgroundIcon(
+      theme.colors.tonal600.value,
+      'chevron'
+    )
   },
   '&[disabled], > option[disabled]': {
     opacity: 0.7,

@@ -43,7 +43,7 @@ const StyledAlertDialogContent = styled(Content, {
   boxSizing: 'border-box',
   left: '50%',
   maxWidth: '90vw',
-  p: '$4',
+  p: '$5',
   position: 'fixed',
   top: '50%',
   transform: contentOnScreen,

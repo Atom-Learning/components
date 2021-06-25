@@ -11,10 +11,10 @@ exports[`InputField component renders a field in error state 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
 .sx9h9si {
@@ -113,7 +113,7 @@ exports[`InputField component renders a field in error state 1`] = `
       class="sx03kze"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
           class="sxh0wga sxh0wgaryo8u--size-md"
@@ -154,10 +154,10 @@ exports[`InputField component renders a field with a number input 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
 .sxh0wga {
@@ -223,7 +223,7 @@ exports[`InputField component renders a field with a number input 1`] = `
       class="sx03kze sx03kze-6obnf"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
           class="sxh0wga sxh0wgaryo8u--size-md"
@@ -257,10 +257,10 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
 .sxh0wga {
@@ -326,7 +326,7 @@ exports[`InputField component renders a field with a text input 1`] = `
       class="sx03kze sx03kze-6obnf"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
           class="sxh0wga sxh0wgaryo8u--size-md"

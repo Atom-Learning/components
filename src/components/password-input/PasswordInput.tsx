@@ -1,4 +1,4 @@
-import { Eye, EyeClosed } from '@atom-learning/icons'
+import { Eye, EyeCrossed } from '@atom-learning/icons'
 import * as React from 'react'
 import { useState } from 'react'
 
@@ -44,7 +44,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
           onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
           size="lg"
         >
-          <Icon is={isPasswordVisible ? Eye : EyeClosed} />
+          <Icon is={isPasswordVisible ? Eye : EyeCrossed} css={{ size: 20 }} />
         </ActionIcon>
       </Box>
     )

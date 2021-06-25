@@ -34,10 +34,10 @@ exports[`FieldWrapper component renders 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
 .sx9h9si {
@@ -94,7 +94,7 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxaowvp {
+.sx3pios {
   background: unset;
   border: unset;
   padding: unset;
@@ -104,44 +104,44 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sxaowvp:focus,
-.sxaowvp:hover {
+.sx3pios:focus,
+.sx3pios:hover {
   color: var(--sx-colors-tertiary);
   text-decoration: underline;
 }
 
-.sxaowvp:active {
+.sx3pios:active {
   color: var(--sx-colors-primary);
 }
 
-.sx9h9si > .sxaowvp,
-.sxggena > .sxaowvp,
-.sx03kze > .sxaowvp {
+.sx9h9si > .sx3pios,
+.sx53fkz > .sx3pios,
+.sx03kze > .sx3pios {
   font-size: 100%;
   line-height: 1;
 }
 
-.sx9h9si > .sxaowvp::before,
-.sx9h9si > .sxaowvp::after,
-.sxggena > .sxaowvp::before,
-.sxggena > .sxaowvp::after,
-.sx03kze > .sxaowvp::before,
-.sx03kze > .sxaowvp::after {
+.sx9h9si > .sx3pios::before,
+.sx9h9si > .sx3pios::after,
+.sx53fkz > .sx3pios::before,
+.sx53fkz > .sx3pios::after,
+.sx03kze > .sx3pios::before,
+.sx03kze > .sx3pios::after {
   content: none;
 }
 
-.sxaowvp6tbwj--size-sm {
+.sx3pios6tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxaowvp6tbwj--size-sm::before {
+.sx3pios6tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxaowvp6tbwj--size-sm::after {
+.sx3pios6tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
@@ -152,7 +152,7 @@ exports[`FieldWrapper component renders 1`] = `
     class="sx03kze"
   >
     <div
-      class="sx2cs53 sx2cs53-re4mk"
+      class="sx2cs53 sx2cs53-qom1k"
     >
       <label
         class="sxh0wga sxh0wgaryo8u--size-md"
@@ -161,7 +161,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sxaowvp sxaowvp6tbwj--size-sm"
+        class="sx3pios sx3pios6tbwj--size-sm"
         href="https://example.com"
       >
         Example prompt

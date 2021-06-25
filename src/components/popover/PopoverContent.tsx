@@ -18,6 +18,7 @@ const StyledContent = styled(Content, {
   boxShadow: '$1',
   maxWidth: '90vw',
   p: '$sizes$2',
+  pr: '$6',
   position: 'relative',
   transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
   variants: {
@@ -37,13 +38,9 @@ const StyledClose = styled(Close, {
   display: 'flex',
   justifyContent: 'center',
   position: 'absolute',
-  right: '0',
-  size: '$4',
-  top: '0',
-  transition: 'color 100ms ease-out',
-  '&:hover,&:focus': {
-    color: '$primary'
-  }
+  right: '$0',
+  size: '$5',
+  top: '$0'
 })
 
 const StyledArrow = styled(Arrow, {

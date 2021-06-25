@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Combobox component renders 1`] = `
-.sxj9ly6 {
+.sxvw6ml {
   -webkit-appearance: none;
   appearance: none;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -23,12 +23,12 @@ exports[`Combobox component renders 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxj9ly6:focus-within {
+.sxvw6ml:focus-within {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxj9ly6[disabled] {
+.sxvw6ml[disabled] {
   background-color: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal700);
   cursor: not-allowed;
@@ -90,7 +90,7 @@ exports[`Combobox component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="sxj9ly6"
+      class="sxvw6ml"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"

@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component renders a select with 3 options 1`] = `
-.sxkuv64 {
+.sx43dn6 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -26,25 +26,25 @@ exports[`Select component renders a select with 3 options 1`] = `
   width: 100%;
 }
 
-.sxkuv64:hover {
+.sx43dn6:hover {
   cursor: pointer;
 }
 
-.sxkuv64:focus {
+.sx43dn6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxkuv64::-ms-expand {
+.sx43dn6::-ms-expand {
   display: none;
 }
 
-.sxkuv64[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sx43dn6[disabled] {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sxkuv64[disabled],
-.sxkuv64 > option[disabled] {
+.sx43dn6[disabled],
+.sx43dn6 > option[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
   cursor: not-allowed;
@@ -53,7 +53,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sxkuv64"
+    class="sx43dn6"
   >
     <option
       value="value1"
@@ -75,11 +75,11 @@ exports[`Select component renders a select with 3 options 1`] = `
 `;
 
 exports[`Select component renders an disabled select 1`] = `
-.sxkuv64 {
+.sx43dn6 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -100,25 +100,25 @@ exports[`Select component renders an disabled select 1`] = `
   width: 100%;
 }
 
-.sxkuv64:hover {
+.sx43dn6:hover {
   cursor: pointer;
 }
 
-.sxkuv64:focus {
+.sx43dn6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxkuv64::-ms-expand {
+.sx43dn6::-ms-expand {
   display: none;
 }
 
-.sxkuv64[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sx43dn6[disabled] {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sxkuv64[disabled],
-.sxkuv64 > option[disabled] {
+.sx43dn6[disabled],
+.sx43dn6 > option[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
   cursor: not-allowed;
@@ -127,18 +127,18 @@ exports[`Select component renders an disabled select 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sxkuv64"
+    class="sx43dn6"
     disabled=""
   />
 </div>
 `;
 
 exports[`Select component renders select with a default option 1`] = `
-.sxkuv64 {
+.sx43dn6 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -159,25 +159,25 @@ exports[`Select component renders select with a default option 1`] = `
   width: 100%;
 }
 
-.sxkuv64:hover {
+.sx43dn6:hover {
   cursor: pointer;
 }
 
-.sxkuv64:focus {
+.sx43dn6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxkuv64::-ms-expand {
+.sx43dn6::-ms-expand {
   display: none;
 }
 
-.sxkuv64[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sx43dn6[disabled] {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sxkuv64[disabled],
-.sxkuv64 > option[disabled] {
+.sx43dn6[disabled],
+.sx43dn6 > option[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
   cursor: not-allowed;
@@ -186,7 +186,7 @@ exports[`Select component renders select with a default option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sxkuv64"
+    class="sx43dn6"
   >
     <option
       disabled=""
@@ -214,11 +214,11 @@ exports[`Select component renders select with a default option 1`] = `
 `;
 
 exports[`Select component renders select with a disabled option 1`] = `
-.sxkuv64 {
+.sx43dn6 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -239,25 +239,25 @@ exports[`Select component renders select with a disabled option 1`] = `
   width: 100%;
 }
 
-.sxkuv64:hover {
+.sx43dn6:hover {
   cursor: pointer;
 }
 
-.sxkuv64:focus {
+.sx43dn6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxkuv64::-ms-expand {
+.sx43dn6::-ms-expand {
   display: none;
 }
 
-.sxkuv64[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sx43dn6[disabled] {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sxkuv64[disabled],
-.sxkuv64 > option[disabled] {
+.sx43dn6[disabled],
+.sx43dn6 > option[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
   cursor: not-allowed;
@@ -266,7 +266,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sxkuv64"
+    class="sx43dn6"
   >
     <option
       value="value1"
@@ -294,11 +294,11 @@ exports[`Select component renders select with a disabled option 1`] = `
 `;
 
 exports[`Select component renders select with no options 1`] = `
-.sxkuv64 {
+.sx43dn6 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
   background-size: var(--sx-sizes-2) auto, 100%;
@@ -319,25 +319,25 @@ exports[`Select component renders select with no options 1`] = `
   width: 100%;
 }
 
-.sxkuv64:hover {
+.sx43dn6:hover {
   cursor: pointer;
 }
 
-.sxkuv64:focus {
+.sx43dn6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxkuv64::-ms-expand {
+.sx43dn6::-ms-expand {
   display: none;
 }
 
-.sxkuv64[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sx43dn6[disabled] {
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
 }
 
-.sxkuv64[disabled],
-.sxkuv64 > option[disabled] {
+.sx43dn6[disabled],
+.sx43dn6 > option[disabled] {
   opacity: 0.7;
   background-color: var(--sx-colors-tonal300);
   cursor: not-allowed;
@@ -346,7 +346,7 @@ exports[`Select component renders select with no options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sxkuv64"
+    class="sx43dn6"
   />
 </div>
 `;

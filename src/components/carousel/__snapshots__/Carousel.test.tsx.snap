@@ -15,7 +15,7 @@ exports[`Carousel component renders 1`] = `
   padding-right: var(--sx-space-3);
 }
 
-.sxwh98c {
+.sxtros6 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
@@ -25,12 +25,12 @@ exports[`Carousel component renders 1`] = `
   vertical-align: middle;
 }
 
-.sxwh98cmbqqh--size-md {
+.sxtros6mbqqh--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
 }
 
-.sx2br14 {
+.sx9lsuj {
   align-items: center;
   background: unset;
   border: unset;
@@ -39,39 +39,39 @@ exports[`Carousel component renders 1`] = `
   display: flex;
   justify-content: center;
   padding: unset;
-  height: var(--sx-sizes-4);
-  width: var(--sx-sizes-4);
+  height: var(--sx-sizes-5);
+  width: var(--sx-sizes-5);
   top: 50%;
   transform: translateY(-50%);
   transition: color 0.15s ease-in-out;
 }
 
-.sx2br14:hover {
+.sx9lsuj:hover {
   color: var(--sx-colors-primary);
 }
 
-.sx2br14:disabled {
+.sx9lsuj:disabled {
   color: var(--sx-colors-tonal300);
 }
 
-.sx2br14-pqx9j {
+.sx9lsuj-pqx9j {
   position: absolute;
   left: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sx2br14-pqx9j {
+  .sx9lsuj-pqx9j {
     left: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sx2br14-pqx9j {
+  .sx9lsuj-pqx9j {
     left: var(--sx-space-4);
   }
 }
 
-.sx2br14 {
+.sx9lsuj {
   align-items: center;
   background: unset;
   border: unset;
@@ -80,43 +80,43 @@ exports[`Carousel component renders 1`] = `
   display: flex;
   justify-content: center;
   padding: unset;
-  height: var(--sx-sizes-4);
-  width: var(--sx-sizes-4);
+  height: var(--sx-sizes-5);
+  width: var(--sx-sizes-5);
   top: 50%;
   transform: translateY(-50%);
   transition: color 0.15s ease-in-out;
 }
 
-.sx2br14:hover {
+.sx9lsuj:hover {
   color: var(--sx-colors-primary);
 }
 
-.sx2br14:disabled {
+.sx9lsuj:disabled {
   color: var(--sx-colors-tonal300);
 }
 
-.sx2br14-dtra5 {
+.sx9lsuj-dtra5 {
   position: absolute;
   right: var(--sx-space-2);
 }
 
 @media (min-width: 800px) {
-  .sx2br14-dtra5 {
+  .sx9lsuj-dtra5 {
     right: var(--sx-space-3);
   }
 }
 
 @media (min-width: 1100px) {
-  .sx2br14-dtra5 {
+  .sx9lsuj-dtra5 {
     right: var(--sx-space-4);
   }
 }
 
-.sxv3bet {
+.sxin7l7 {
   justify-content: center;
 }
 
-.sxv3bet button {
+.sxin7l7 button {
   background: var(--sx-colors-tonal300);
   border: none;
   border-radius: 50%;
@@ -124,12 +124,12 @@ exports[`Carousel component renders 1`] = `
   margin-left: var(--sx-space-1);
   margin-right: var(--sx-space-1);
   padding: var(--sx-space-1);
-  height: 12px;
-  width: 12px;
+  height: var(--sx-space-3);
+  width: var(--sx-space-3);
   transition: all 0.25s ease-in;
 }
 
-.sxv3bet button[class*="selected"] {
+.sxin7l7 button[class*="selected"] {
   background: var(--sx-colors-tertiary);
 }
 
@@ -198,13 +198,13 @@ exports[`Carousel component renders 1`] = `
     >
       <button
         aria-label="previous"
-        class="buttonBack___1mlaL carousel__back-button sx2br14 sx2br14-pqx9j"
+        class="buttonBack___1mlaL carousel__back-button sx9lsuj sx9lsuj-pqx9j"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxwh98c sxwh98cmbqqh--size-md"
+          class="sxtros6 sxtros6mbqqh--size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -215,12 +215,12 @@ exports[`Carousel component renders 1`] = `
       </button>
       <button
         aria-label="next"
-        class="buttonNext___2mOCa carousel__next-button sx2br14 sx2br14-dtra5"
+        class="buttonNext___2mOCa carousel__next-button sx9lsuj sx9lsuj-dtra5"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxwh98c sxwh98cmbqqh--size-md"
+          class="sxtros6 sxtros6mbqqh--size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -335,7 +335,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group sxv3bet"
+        class="carousel__dot-group sxin7l7"
       >
         <button
           aria-label="slide dot"

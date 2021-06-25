@@ -13,7 +13,7 @@ const StyledIcon = styled('svg', {
   verticalAlign: 'middle',
   variants: {
     size: {
-      xs: { size: '12px' },
+      xs: { size: '$space$3' },
       sm: { size: '$1' },
       md: { size: '$2' },
       lg: { size: '$3' }

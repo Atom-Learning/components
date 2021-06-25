@@ -30,11 +30,11 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       onCloseAutoFocus={onClose}
       {...remainingProps}
     >
-      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$4' }}>
+      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$5' }}>
         {title}
       </Heading>
       {description && (
-        <Text as={AlertDialog.Description} css={{ mb: '$4' }}>
+        <Text as={AlertDialog.Description} css={{ mb: '$5' }}>
           {description}
         </Text>
       )}
