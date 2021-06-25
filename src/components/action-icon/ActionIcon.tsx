@@ -40,7 +40,7 @@ const StyledButton = styled('button', {
       primary: {},
       success: {},
       warning: {},
-      error: {}
+      danger: {}
     },
     appearance: {
       subtle: {
@@ -64,7 +64,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'simple',
-      css: getSimpleVariant('$primary900')
+      css: getSimpleVariant('$primary')
     },
     {
       theme: 'success',
@@ -77,7 +77,7 @@ const StyledButton = styled('button', {
       css: getSimpleVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'simple',
       css: getSimpleVariant('$danger')
     },
@@ -86,7 +86,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getSolidVariant('$primary900')
+      css: getSolidVariant('$primary')
     },
     {
       theme: 'success',
@@ -99,7 +99,7 @@ const StyledButton = styled('button', {
       css: getSolidVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'solid',
       css: getSolidVariant('$danger')
     },
@@ -108,7 +108,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getOutlineVariant('$primary900')
+      css: getOutlineVariant('$primary')
     },
     {
       theme: 'success',
@@ -121,7 +121,7 @@ const StyledButton = styled('button', {
       css: getOutlineVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'outline',
       css: getOutlineVariant('$danger')
     }

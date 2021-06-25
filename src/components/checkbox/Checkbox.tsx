@@ -9,28 +9,24 @@ import { Icon } from '../icon'
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: 'none',
-  borderRadius: '$0',
-  boxShadow: 'inset 0 0 0 2px $colors$secondary300',
+  border: '1px solid $colors$tonal600',
+  borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',
-  size: '20px',
+  size: '$1',
   padding: 0,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  transition: 'all 100ms ease-out',
+  transition: 'all 50ms ease-out',
   '&[data-state="unchecked"]:focus, &[data-state="unchecked"]:hover': {
-    backgroundColor: '$tonal300',
-    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
     outline: 'none'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$secondary300'
+    backgroundColor: '$primary'
   },
   '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
-    backgroundColor: '$secondary700',
-    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&:focus-within': {
@@ -40,7 +36,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
 
 type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
 
-const CheckboxIcon = () => <Icon is={Ok} size="sm" />
+const CheckboxIcon = () => <Icon is={Ok} size="xs" />
 
 export const Checkbox: React.FC<CheckboxProps> = (props) => (
   <StyledCheckbox {...props}>

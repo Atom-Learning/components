@@ -27,11 +27,10 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
     <AlertDialog.Content
       onEscapeKeyDown={(e) => e.preventDefault()}
       onPointerDownOutside={(e) => e.preventDefault()}
-      css={{ textAlign: 'center' }}
       onCloseAutoFocus={onClose}
       {...remainingProps}
     >
-      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$3' }}>
+      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$4' }}>
         {title}
       </Heading>
       {description && (
@@ -39,18 +38,17 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           {description}
         </Text>
       )}
-      <Stack gap="3" css={{ mx: 'auto' }}>
+      <Stack gap="2" css={{ mx: 'auto' }}>
         <Button
-          size="sm"
-          theme="danger"
+          fullWidth
+          appearance="outline"
           as={AlertDialog.Cancel}
           onClick={() => onAction(false)}
         >
           {cancelActionText}
         </Button>
         <Button
-          size="sm"
-          theme="success"
+          fullWidth
           as={AlertDialog.Action}
           onClick={() => onAction(true)}
         >

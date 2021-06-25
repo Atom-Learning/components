@@ -13,7 +13,7 @@ const StyledContent = styled(Content, {
   backgroundColor: '$tonal800',
   borderRadius: '$0',
   color: 'white',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   fontSize: '$sm',
   lineHeight: 1.2,
   p: '$2',

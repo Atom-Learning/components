@@ -3,7 +3,8 @@ import * as React from 'react'
 import ReactPlayer from 'react-player/vimeo'
 
 import { Box } from '~/components/box'
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
+import { CSSWrapper } from '~/utilities/css-wrapper'
 import { Override } from '~/utilities/types'
 
 const StyledVideo = styled(ReactPlayer, {})
@@ -13,32 +14,36 @@ type VideoProps = Override<
   {
     id: string
     ratio?: number
+    css?: CSS
   }
 >
 
 export const Video: React.FC<VideoProps> = ({
   id,
   ratio = 9 / 16,
+  css,
   ...remainingProps
 }) => (
-  <Box
-    css={{
-      position: 'relative',
-      paddingTop: `${ratio * 100}%`,
-      overflow: 'hidden',
-      height: 0,
-      width: '100%'
-    }}
-  >
-    <StyledVideo
-      role="figure"
-      url={`https://player.vimeo.com/video/${id}`}
-      {...remainingProps}
-      height="100%"
-      width="100%"
-      css={{ position: 'absolute', top: 0, left: 0 }}
-    />
-  </Box>
+  <CSSWrapper css={css}>
+    <Box
+      css={{
+        position: 'relative',
+        paddingTop: `${ratio * 100}%`,
+        overflow: 'hidden',
+        height: 0,
+        width: '100%'
+      }}
+    >
+      <StyledVideo
+        {...remainingProps}
+        role="figure"
+        url={`https://player.vimeo.com/video/${id}`}
+        height="100%"
+        width="100%"
+        css={{ position: 'absolute', top: 0, left: 0 }}
+      />
+    </Box>
+  </CSSWrapper>
 )
 
 Video.displayName = 'Video'

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { CSS, styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
-type TextSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+type TextSizes = 'sm' | 'md' | 'lg' | 'xl'
 
 export const textVariantSize = ({ applyCapsize = true } = {}): Record<
   TextSizes,
@@ -11,34 +11,29 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
 > => ({
   sm: {
     fontSize: '$sm',
-    lineHeight: 1.69,
-    ...(applyCapsize ? capsize('-0.477em') : {})
+    lineHeight: 1.53,
+    ...(applyCapsize ? capsize(0.4056) : {})
   },
   md: {
     fontSize: '$md',
-    lineHeight: 1.625,
-    ...(applyCapsize ? capsize('-0.4489em') : {})
+    lineHeight: 1.5,
+    ...(applyCapsize ? capsize(0.3864) : {})
   },
   lg: {
     fontSize: '$lg',
     lineHeight: 1.52,
-    ...(applyCapsize ? capsize('-0.3983em') : {})
+    ...(applyCapsize ? capsize(0.3983) : {})
   },
   xl: {
     fontSize: '$xl',
     lineHeight: 1.42,
-    ...(applyCapsize ? capsize('-0.3506em') : {})
-  },
-  xxl: {
-    fontSize: '$xxl',
-    lineHeight: 1.35,
-    ...(applyCapsize ? capsize('-0.312em') : {})
+    ...(applyCapsize ? capsize(0.3506) : {})
   }
 })
 
 export const StyledParagraph = styled('p', {
   color: '$tonal900',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   fontWeight: 400,
   margin: 0,
   variants: {

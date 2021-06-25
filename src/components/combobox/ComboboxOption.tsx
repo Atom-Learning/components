@@ -8,7 +8,7 @@ export const ComboboxOption = styled(BaseComboboxOption, {
   p: '$2',
 
   '&:hover': {
-    bg: '$tonal200',
+    bg: '$tonal100',
     borderRadius: '$0'
   },
   '&[aria-selected="true"]': {

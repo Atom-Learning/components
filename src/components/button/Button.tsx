@@ -9,7 +9,7 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
-  boxShadow: 'inset 0 0 0 2px',
+  boxShadow: 'inset 0 0 0 1px',
   color: baseColor,
   bg: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
@@ -48,7 +48,7 @@ const StyledButton = styled('button', {
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   fontWeight: 500,
   justifyContent: 'center',
   letterSpacing: '0.02em',
@@ -65,8 +65,6 @@ const StyledButton = styled('button', {
   variants: {
     theme: {
       primary: {},
-      secondary: {},
-      tertiary: {},
       success: {},
       warning: {},
       danger: {}
@@ -82,13 +80,13 @@ const StyledButton = styled('button', {
         px: '$3'
       },
       md: {
-        fontSize: '$md',
-        height: '$4',
+        fontSize: '$sm',
+        height: '$3',
         px: '$4'
       },
       lg: {
-        fontSize: '$lg',
-        height: 'calc($4 + $1)',
+        fontSize: '$md',
+        height: '$4',
         px: '$4'
       }
     },
@@ -116,17 +114,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getButtonSolidVariant('$primary500', '$primary900')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$secondary500', '$secondary700')
-    },
-    {
-      theme: 'tertiary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$tertiary500', '$tertiary700')
+      css: getButtonSolidVariant('$primary', '$tertiary')
     },
     {
       theme: 'success',
@@ -148,17 +136,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getButtonOutlineVariant('$primary500', '$primary900')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$secondary500', '$secondary900')
-    },
-    {
-      theme: 'tertiary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$tertiary500', '$tertiary700')
+      css: getButtonOutlineVariant('$primary', '$tertiary')
     }
   ]
 })
@@ -181,11 +159,12 @@ const WithLoader = ({ isLoading, children }) => (
   </>
 )
 
-const getChildren = (children) =>
+const getChildren = (children, size) =>
   React.Children.map(children, (child: any, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
-        css: { [i === 0 ? 'mr' : 'ml']: '$2' }
+        css: { [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3' },
+        size: size === 'lg' ? 'md' : 'sm'
       })
     }
     return child
@@ -238,9 +217,11 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
       >
         {typeof isLoading === 'boolean' ? (
-          <WithLoader isLoading={isLoading}>{getChildren(children)}</WithLoader>
+          <WithLoader isLoading={isLoading}>
+            {getChildren(children, size)}
+          </WithLoader>
         ) : (
-          getChildren(children)
+          getChildren(children, size)
         )}
       </StyledButton>
     )

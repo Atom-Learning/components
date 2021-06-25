@@ -5,12 +5,12 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const getSolidVariant = (color) => ({
-  background: '$tonal300',
+  background: '$tonal100',
   color
 })
 
 const getOutlineVariant = (color) => ({
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal200',
   background: 'white',
   color
 })
@@ -40,17 +40,17 @@ const StyledProgressBar = styled(Progress.Root, {
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getSolidVariant('$primary500')
+      css: getSolidVariant('$primary')
     },
     {
       theme: 'secondary',
       appearance: 'solid',
-      css: getSolidVariant('$secondary500')
+      css: getSolidVariant('$secondary')
     },
     {
       theme: 'tertiary',
       appearance: 'solid',
-      css: getSolidVariant('$tertiary500')
+      css: getSolidVariant('$tertiary')
     },
     {
       theme: 'success',
@@ -72,17 +72,17 @@ const StyledProgressBar = styled(Progress.Root, {
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getOutlineVariant('$primary500')
+      css: getOutlineVariant('$primary')
     },
     {
       theme: 'secondary',
       appearance: 'outline',
-      css: getOutlineVariant('$secondary500')
+      css: getOutlineVariant('$secondary')
     },
     {
       theme: 'tertiary',
       appearance: 'outline',
-      css: getOutlineVariant('$tertiary500')
+      css: getOutlineVariant('$tertiary')
     },
     {
       theme: 'success',

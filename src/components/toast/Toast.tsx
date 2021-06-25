@@ -50,9 +50,9 @@ const StyledToast = styled('div', {
   width: TOAST_WIDTH,
   variants: {
     status: {
-      blank: { bg: '$primary900' },
+      blank: { bg: '$tertiary' },
       error: { bg: '$danger' },
-      loading: { bg: '$primary900' },
+      loading: { bg: '$tertiary' },
       success: { bg: '$success' }
     }
   }

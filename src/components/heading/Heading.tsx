@@ -5,30 +5,35 @@ import { capsize, Override } from '~/utilities'
 
 export const StyledHeading = styled('h2', {
   color: '$tonal900',
-  fontFamily: '$sans',
+  fontFamily: '$display',
   fontWeight: 700,
-  margin: 0,
+  m: 0,
   variants: {
     size: {
       xs: {
         fontSize: '$md',
-        lineHeight: 1.625,
-        ...capsize('-0.4489em')
+        lineHeight: 1.25,
+        ...capsize(0.271, 0.279)
       },
       sm: {
         fontSize: '$lg',
-        lineHeight: 1.52,
-        ...capsize('-0.3983em')
+        lineHeight: 1.14,
+        ...capsize(0.2174, 0.2254)
       },
       md: {
         fontSize: '$xl',
-        lineHeight: 1.42,
-        ...capsize('-0.3506em')
+        lineHeight: 1.14,
+        ...capsize(0.2174, 0.2254)
       },
       lg: {
         fontSize: '$xxl',
-        lineHeight: 1.35,
-        ...capsize('-0.312em')
+        lineHeight: 1.08,
+        ...capsize(0.1865, 0.1945)
+      },
+      xl: {
+        fontSize: '$xxxl',
+        lineHeight: 1.12,
+        ...capsize(0.206, 0.214)
       }
     }
   }
@@ -46,7 +51,7 @@ type HeadingProps = Override<
       | 'h6'
       | React.ComponentType
       | React.ElementType
-    size?: 'xs' | 'sm' | 'md' | 'lg'
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   }
 >
 

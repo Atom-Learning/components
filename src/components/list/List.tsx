@@ -7,7 +7,7 @@ import { textVariantSize } from '../text'
 export const StyledLi = styled('li', {})
 
 const StyledUl = styled('ul', {
-  fontFamily: '$sans',
+  fontFamily: '$body',
   m: 'unset',
   p: 'unset',
   pl: '$3',
@@ -30,10 +30,13 @@ const StyledUl = styled('ul', {
         color: '$tonal900'
       },
       primary: {
-        color: '$primary500'
+        color: '$primary'
       },
       secondary: {
-        color: '$secondary500'
+        color: '$secondary'
+      },
+      tertiary: {
+        color: '$tertiary'
       }
     },
     size: textVariantSize({ applyCapsize: false })
@@ -41,7 +44,7 @@ const StyledUl = styled('ul', {
 })
 
 type ListProps = React.ComponentProps<typeof StyledUl> & {
-  theme?: 'tonal' | 'primary' | 'secondary'
+  theme?: 'tonal' | 'primary' | 'secondary' | 'tertiary'
 }
 
 export const List: React.FC<ListProps> & { Item: typeof StyledLi } = ({

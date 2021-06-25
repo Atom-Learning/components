@@ -10,6 +10,7 @@ type InputFieldProps = InputProps & {
   required?: boolean
   name: string
   validation?: ValidationOptions
+  prompt?: { link: string; label: string }
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
@@ -18,6 +19,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   name,
   required = false,
   validation,
+  prompt,
   ...remainingProps
 }) => {
   const { register, errors } = useFormContext()
@@ -32,6 +34,7 @@ export const InputField: React.FC<InputFieldProps> = ({
       error={error}
       fieldId={name}
       css={css}
+      prompt={prompt}
     >
       <Input
         id={name}

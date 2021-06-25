@@ -4,13 +4,14 @@ import { styled } from '~/stitches'
 
 const StyledTextarea = styled('textarea', {
   appearance: 'none',
-  border: '1px solid $tonal500',
+  border: '1px solid $tonal400',
   borderRadius: '$0',
   boxShadow: 'none', // remove iOS default styling
+  boxSizing: 'border-box',
   color: '$tonal900',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   fontSize: '$md', // prevent iOS zooming on focus
-  fontWeight: 400,
+  fontWeight: 500,
   lineHeight: 1.4,
   minHeight: '$6',
   px: '$3',
@@ -19,8 +20,7 @@ const StyledTextarea = styled('textarea', {
   transition: 'all 75ms ease-out',
   width: '100%',
   '&:focus': {
-    borderColor: '$primary900',
-    boxShadow: 'inset 0 0 0 1px $colors$primary900',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&[disabled]': {

@@ -15,7 +15,7 @@ const Fieldset = styled('fieldset', {
 
 type RadioGroupFieldProps = {
   css?: CSS
-  defaultValue: string
+  defaultValue?: string
   label: string
   name: string
   validation?: ValidationOptions

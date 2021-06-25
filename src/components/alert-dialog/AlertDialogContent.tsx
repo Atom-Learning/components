@@ -38,7 +38,7 @@ const StyledAlertDialogOverlay = styled(Overlay, {
 
 const StyledAlertDialogContent = styled(Content, {
   bg: 'white',
-  borderRadius: '$2',
+  borderRadius: '$1',
   boxShadow: '$3',
   boxSizing: 'border-box',
   left: '50%',
