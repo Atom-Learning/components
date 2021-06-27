@@ -36,20 +36,20 @@ exports[`RadioField component renders 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sxh0wga-91ee5 {
+.sxh0wga-yi5wz {
   align-items: baseline;
   display: flex;
   flex-direction: row;
-  font-weight: 500;
+  font-weight: 400;
   max-width: max-content;
 }
 
-.sxd5tx1 {
+.sx7siaz {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal600);
+  border: 1px solid var(--sx-colors-tonal500);
   border-radius: var(--sx-radii-round);
   cursor: pointer;
   display: flex;
@@ -60,22 +60,23 @@ exports[`RadioField component renders 1`] = `
   transition: all 50ms ease-out;
 }
 
-.sxd5tx1:hover {
+.sx7siaz:hover {
   outline: none;
 }
 
-.sxd5tx1:focus {
+.sx7siaz:focus {
   outline: none;
 }
 
-:checked + .sxd5tx1 {
+:checked + .sx7siaz {
   background-color: var(--sx-colors-primary);
   border-color: var(--sx-colors-primary);
 }
 
-[disabled] + .sxd5tx1 {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
+.sx7siaz[disabled] {
+  background-color: var(--sx-colors-tonal200);
+  border-color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
 }
 
 .sxekp6i {
@@ -83,6 +84,15 @@ exports[`RadioField component renders 1`] = `
   width: 6px;
   border-radius: var(--sx-radii-round);
   background-color: white;
+}
+
+.sx357xm {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sx357xm8txt2--direction-column {
+  flex-direction: column;
 }
 
 .sxqqba1 {
@@ -103,14 +113,14 @@ exports[`RadioField component renders 1`] = `
         Example options
       </legend>
       <div
-        class="sx03kze"
+        class="sx357xm sx357xm8txt2--direction-column"
         role="radiogroup"
       >
         <div
           class="sx03kze"
         >
           <label
-            class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-91ee5"
+            class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-yi5wz"
           >
             <div
               class="sx03kze sx03kze-2grog"
@@ -123,7 +133,7 @@ exports[`RadioField component renders 1`] = `
               />
               <button
                 aria-checked="true"
-                class="sxd5tx1"
+                class="sx7siaz"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="checked"
                 role="radio"
@@ -144,7 +154,7 @@ exports[`RadioField component renders 1`] = `
           class="sx03kze"
         >
           <label
-            class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-91ee5"
+            class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-yi5wz"
           >
             <div
               class="sx03kze sx03kze-2grog"
@@ -156,7 +166,7 @@ exports[`RadioField component renders 1`] = `
               />
               <button
                 aria-checked="false"
-                class="sxd5tx1"
+                class="sx7siaz"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="unchecked"
                 role="radio"

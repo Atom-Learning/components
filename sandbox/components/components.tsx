@@ -518,13 +518,14 @@ const App = () => (
               />
             </Box>
             <RadioGroupField
+              direction="row"
               name="pronoun"
               label="Pronoun"
               description="Please provide a pronoun only so we can refer to the student correctly."
             >
-              <RadioGroupField.Item label="He/Him" name="checkbox-row-1" />
-              <RadioGroupField.Item label="She/Her" name="checkbox-row-2" />
-              <RadioGroupField.Item label="They/Their" name="checkbox-row-3" />
+              <RadioGroupField.Item label="He/Him" value="checkbox-row-1" />
+              <RadioGroupField.Item label="She/Her" value="checkbox-row-2" />
+              <RadioGroupField.Item label="They/Their" value="checkbox-row-3" />
             </RadioGroupField>
             <RadioGroupField name="options" label="Legend for radio fields">
               <RadioGroupField.Item label="This is a radio button" value="1" />

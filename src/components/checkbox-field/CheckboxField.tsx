@@ -27,8 +27,6 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
 
   const error = errors[name]?.message
 
-  // console.log({ validation, errors, name, error })
-
   return (
     <InlineFieldWrapper label={label} css={css} error={error}>
       <Controller

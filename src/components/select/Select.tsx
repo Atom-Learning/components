@@ -4,8 +4,6 @@ import { styled, theme } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
 import { Override } from '~/utilities/types'
 
-console.log({ theme })
-
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',

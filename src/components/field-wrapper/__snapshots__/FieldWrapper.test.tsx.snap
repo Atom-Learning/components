@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWrapper component renders 1`] = `
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -19,14 +19,14 @@ exports[`FieldWrapper component renders 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
@@ -40,33 +40,35 @@ exports[`FieldWrapper component renders 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx9h9si {
-  color: var(--sx-colors-tonal900);
+.sxjb6b1 {
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sx9h9si6tbwj--size-sm {
+.sxjb6b16tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sx9h9si6tbwj--size-sm::before {
+.sxjb6b16tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sx9h9si6tbwj--size-sm::after {
+.sxjb6b16tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sx9h9si-m6cy5 {
+.sxjb6b1-lq7ir {
   color: var(--sx-colors-danger);
-  margin-top: var(--sx-space-1);
+  display: flex;
+  align-items: center;
+  margin-top: var(--sx-space-2);
 }
 
 .sxh0wga {
@@ -94,7 +96,7 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sx3pios {
+.sxih33v {
   background: unset;
   border: unset;
   padding: unset;
@@ -104,47 +106,66 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sx3pios:focus,
-.sx3pios:hover {
+.sxih33v:focus,
+.sxih33v:hover {
   color: var(--sx-colors-tertiary);
   text-decoration: underline;
 }
 
-.sx3pios:active {
+.sxih33v:active {
   color: var(--sx-colors-primary);
 }
 
-.sx9h9si > .sx3pios,
-.sx53fkz > .sx3pios,
-.sx03kze > .sx3pios {
+.sxjb6b1 > .sxih33v,
+.sxyi5a5 > .sxih33v,
+.sx03kze > .sxih33v {
   font-size: 100%;
   line-height: 1;
 }
 
-.sx9h9si > .sx3pios::before,
-.sx9h9si > .sx3pios::after,
-.sx53fkz > .sx3pios::before,
-.sx53fkz > .sx3pios::after,
-.sx03kze > .sx3pios::before,
-.sx03kze > .sx3pios::after {
+.sxjb6b1 > .sxih33v::before,
+.sxjb6b1 > .sxih33v::after,
+.sxyi5a5 > .sxih33v::before,
+.sxyi5a5 > .sxih33v::after,
+.sx03kze > .sxih33v::before,
+.sx03kze > .sxih33v::after {
   content: none;
 }
 
-.sx3pios6tbwj--size-sm {
+.sxih33v6tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sx3pios6tbwj--size-sm::before {
+.sxih33v6tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sx3pios6tbwj--size-sm::after {
+.sxih33v6tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
+}
+
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6or94y--size-sm {
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+}
+
+.sxtros6-385xm {
+  margin-right: var(--sx-space-2);
 }
 
 <div>
@@ -161,21 +182,42 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sx3pios sx3pios6tbwj--size-sm"
+        class="sxih33v sxih33v6tbwj--size-sm"
         href="https://example.com"
       >
         Example prompt
       </a>
     </div>
     <input
-      class="sxg6i02"
+      class="sx0j9a6"
       id="example"
       name="example"
       type="text"
     />
     <p
-      class="sx9h9si sx9h9si6tbwj--size-sm sx9h9si-m6cy5"
+      class="sxjb6b1 sxjb6b16tbwj--size-sm sxjb6b1-lq7ir"
     >
+      <svg
+        aria-hidden="true"
+        class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 8v5"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="16"
+          y2="16"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+      </svg>
       Example error
     </p>
   </div>

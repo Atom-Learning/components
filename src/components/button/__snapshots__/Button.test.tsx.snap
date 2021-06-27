@@ -87,7 +87,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
   margin-right: 2px;
 }
 
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -95,7 +95,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -106,72 +106,72 @@ exports[`Button component Loading state renders a loading button 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adlmkcj--isRounded-true {
+.sxksm8slmkcj--isRounded-true {
   border-radius: var(--sx-radii-round);
 }
 
-.sx0s1adh1fyd--isLoading-true {
+.sxksm8sh1fyd--isLoading-true {
   cursor: not-allowed;
   opacity: 0.5;
   pointer-events: none;
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-solid sx0s1addkw57--size-md sx0s1adh1fyd--isLoading-true sx0s1adhon8l--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-solid sxksm8sdkw57--size-md sxksm8sh1fyd--isLoading-true sxksm8shon8l--c2"
     type="button"
   >
     <div
@@ -203,7 +203,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 `;
 
 exports[`Button component renders a button 1`] = `
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -211,7 +211,7 @@ exports[`Button component renders a button 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -222,40 +222,40 @@ exports[`Button component renders a button 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-solid sx0s1addkw57--size-md sx0s1adhon8l--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-solid sxksm8sdkw57--size-md sxksm8shon8l--c2"
     type="button"
   >
     BUTTON
@@ -283,7 +283,7 @@ exports[`Button component renders a button with an icon 1`] = `
   margin-left: var(--sx-space-3);
 }
 
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -291,7 +291,7 @@ exports[`Button component renders a button with an icon 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -302,62 +302,62 @@ exports[`Button component renders a button with an icon 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-solid sx0s1addkw57--size-md sx0s1adhon8l--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-solid sxksm8sdkw57--size-md sxksm8shon8l--c2"
     type="button"
   >
     BUTTON 
@@ -376,7 +376,7 @@ exports[`Button component renders a button with an icon 1`] = `
 `;
 
 exports[`Button component renders a disabled button 1`] = `
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -384,7 +384,7 @@ exports[`Button component renders a disabled button 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -395,62 +395,62 @@ exports[`Button component renders a disabled button 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-solid sx0s1addkw57--size-md sx0s1adhon8l--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-solid sxksm8sdkw57--size-md sxksm8shon8l--c2"
     disabled=""
     type="button"
   >
@@ -460,7 +460,7 @@ exports[`Button component renders a disabled button 1`] = `
 `;
 
 exports[`Button component renders a disabled secondary outline button 1`] = `
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -468,7 +468,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -479,62 +479,62 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--appearance-outline sx0s1addkw57--size-md"
+    class="sxksm8s sxksm8s03kze--appearance-outline sxksm8sdkw57--size-md"
     disabled=""
     type="button"
   >
@@ -544,7 +544,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 `;
 
 exports[`Button component renders a outline button 1`] = `
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -552,7 +552,7 @@ exports[`Button component renders a outline button 1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -563,62 +563,62 @@ exports[`Button component renders a outline button 1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-outline sx0s1addkw57--size-md sx0s1aduj78t--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-outline sxksm8sdkw57--size-md sxksm8suj78t--c2"
     type="button"
   >
     BUTTON
@@ -646,7 +646,7 @@ exports[`Button component renders a rounded button  1`] = `
   margin-left: var(--sx-space-3);
 }
 
-.sx0s1ad {
+.sxksm8s {
   align-items: center;
   background: unset;
   border: unset;
@@ -654,7 +654,7 @@ exports[`Button component renders a rounded button  1`] = `
   cursor: pointer;
   display: flex;
   font-family: var(--sx-fonts-body);
-  font-weight: 500;
+  font-weight: 400;
   justify-content: center;
   letter-spacing: 0.02em;
   line-height: 1.4;
@@ -665,66 +665,66 @@ exports[`Button component renders a rounded button  1`] = `
   width: max-content;
 }
 
-.sx0s1ad[disabled] {
+.sxksm8s[disabled] {
   opacity: 0.35;
   cursor: not-allowed;
 }
 
-.sx0s1addkw57--size-md {
+.sxksm8sdkw57--size-md {
   font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
   padding-left: var(--sx-space-5);
   padding-right: var(--sx-space-5);
 }
 
-.sx0s1adlmkcj--isRounded-true {
+.sxksm8slmkcj--isRounded-true {
   border-radius: var(--sx-radii-round);
 }
 
-.sx0s1adhon8l--c2 {
+.sxksm8shon8l--c2 {
   background: var(--sx-colors-primary);
   color: white;
 }
 
-.sx0s1adhon8l--c2:not([disabled]):hover,
-.sx0s1adhon8l--c2:not([disabled]):focus {
+.sxksm8shon8l--c2:not([disabled]):hover,
+.sxksm8shon8l--c2:not([disabled]):focus {
   background: var(--sx-colors-tertiary);
 }
 
-.sx0s1adhon8l--c2:active {
+.sxksm8shon8l--c2:active {
   background: var(--sx-colors-primary);
 }
 
-.sx0s1adhon8l--c2[disabled] {
+.sxksm8shon8l--c2[disabled] {
   background: var(--sx-colors-tonal300);
   color: var(--sx-colors-tonal600);
 }
 
-.sx0s1aduj78t--c2 {
+.sxksm8suj78t--c2 {
   box-shadow: inset 0 0 0 1px;
   color: var(--sx-colors-primary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:not([disabled]):hover,
-.sx0s1aduj78t--c2:not([disabled]):focus {
+.sxksm8suj78t--c2:not([disabled]):hover,
+.sxksm8suj78t--c2:not([disabled]):focus {
   text-decoration: none;
   color: var(--sx-colors-tertiary);
   background: white;
 }
 
-.sx0s1aduj78t--c2:active {
+.sxksm8suj78t--c2:active {
   color: var(--sx-colors-primary);
 }
 
-.sx0s1aduj78t--c2[disabled] {
+.sxksm8suj78t--c2[disabled] {
   background: white;
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
-    class="sx0s1ad sx0s1ad03kze--theme-primary sx0s1ad03kze--appearance-solid sx0s1addkw57--size-md sx0s1adlmkcj--isRounded-true sx0s1adhon8l--c2"
+    class="sxksm8s sxksm8s03kze--theme-primary sxksm8s03kze--appearance-solid sxksm8sdkw57--size-md sxksm8slmkcj--isRounded-true sxksm8shon8l--c2"
     type="button"
   >
     BUTTON 

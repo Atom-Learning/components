@@ -7,6 +7,25 @@ exports[`InputField component renders a field in error state 1`] = `
   width: 100px;
 }
 
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6or94y--size-sm {
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+}
+
+.sxtros6-385xm {
+  margin-right: var(--sx-space-2);
+}
+
 .sx2cs53 {
   display: flex;
 }
@@ -17,33 +36,35 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx9h9si {
-  color: var(--sx-colors-tonal900);
+.sxjb6b1 {
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sx9h9si6tbwj--size-sm {
+.sxjb6b16tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sx9h9si6tbwj--size-sm::before {
+.sxjb6b16tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sx9h9si6tbwj--size-sm::after {
+.sxjb6b16tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sx9h9si-m6cy5 {
+.sxjb6b1-lq7ir {
   color: var(--sx-colors-danger);
-  margin-top: var(--sx-space-1);
+  display: flex;
+  align-items: center;
+  margin-top: var(--sx-space-2);
 }
 
 .sxh0wga {
@@ -71,7 +92,7 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -89,18 +110,18 @@ exports[`InputField component renders a field in error state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxg6i02hpnso--state-error {
+.sx0j9a6hpnso--state-error {
   border: 1px solid var(--sx-colors-danger);
 }
 
@@ -123,14 +144,35 @@ exports[`InputField component renders a field in error state 1`] = `
         </label>
       </div>
       <input
-        class="sxg6i02 sxg6i02hpnso--state-error"
+        class="sx0j9a6 sx0j9a6hpnso--state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
       />
       <p
-        class="sx9h9si sx9h9si6tbwj--size-sm sx9h9si-m6cy5"
+        class="sxjb6b1 sxjb6b16tbwj--size-sm sxjb6b1-lq7ir"
       >
+        <svg
+          aria-hidden="true"
+          class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v5"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="16"
+            y2="16"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+        </svg>
         This field is required
       </p>
     </div>
@@ -185,7 +227,7 @@ exports[`InputField component renders a field with a number input 1`] = `
   display: table;
 }
 
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -203,14 +245,14 @@ exports[`InputField component renders a field with a number input 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
@@ -233,7 +275,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         </label>
       </div>
       <input
-        class="sxg6i02"
+        class="sx0j9a6"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -288,7 +330,7 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: table;
 }
 
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -306,14 +348,14 @@ exports[`InputField component renders a field with a text input 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
@@ -336,7 +378,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         </label>
       </div>
       <input
-        class="sxg6i02"
+        class="sx0j9a6"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

@@ -19,13 +19,23 @@ type RadioGroupFieldProps = {
   defaultValue?: string
   label: string
   name: string
+  direction?: 'row' | 'column'
   description?: string
   validation?: ValidationOptions
 }
 
 export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   Item: typeof RadioField
-} = ({ children, css, defaultValue, description, label, name, validation }) => {
+} = ({
+  children,
+  css,
+  direction = 'column',
+  defaultValue,
+  description,
+  label,
+  name,
+  validation
+}) => {
   const { control, errors } = useFormContext()
 
   return (
@@ -33,6 +43,14 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
       <Label as="legend" css={{ p: 0, mb: '$3' }}>
         {label}
       </Label>
+      {description && (
+        <Text
+          size="sm"
+          css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}
+        >
+          {description}
+        </Text>
+      )}
       <Controller
         control={control}
         name={name}
@@ -40,6 +58,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         defaultValue={defaultValue}
         render={({ onChange, value }) => (
           <RadioButtonGroup
+            direction={direction}
             defaultValue={defaultValue}
             onValueChange={onChange}
             value={value}
@@ -52,14 +71,6 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         <ValidationError css={{ mt: '$2' }}>
           {errors[name].message}
         </ValidationError>
-      )}
-      {description && (
-        <Text
-          size="sm"
-          css={{ color: '$tonal500', mt: '$3', maxWidth: '80ch' }}
-        >
-          {description}
-        </Text>
       )}
     </Fieldset>
   )

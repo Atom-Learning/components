@@ -36,14 +36,14 @@ exports[`SelectField component renders 1`] = `
   display: table;
 }
 
-.sx43dn6 {
+.sx14cmf {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%231e71f6%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%231e71f6%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
+  background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   color: var(--sx-colors-tonal900);
@@ -61,27 +61,23 @@ exports[`SelectField component renders 1`] = `
   width: 100%;
 }
 
-.sx43dn6:hover {
+.sx14cmf:hover {
   cursor: pointer;
 }
 
-.sx43dn6:focus {
+.sx14cmf:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx43dn6::-ms-expand {
+.sx14cmf::-ms-expand {
   display: none;
 }
 
-.sx43dn6[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23545454%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23545454%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx43dn6[disabled],
-.sx43dn6 > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sx14cmf[disabled],
+.sx14cmf > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
@@ -104,7 +100,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="sx43dn6"
+        class="sx14cmf"
         id="example"
         name="example"
       >

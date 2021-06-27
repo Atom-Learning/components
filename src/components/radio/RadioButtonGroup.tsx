@@ -4,8 +4,16 @@ import { styled } from '~/stitches'
 
 export const RadioButtonGroup = styled(RadioGroup.Root, {
   display: 'flex',
-  flexDirection: 'row',
-  flexWrap: 'wrap'
+  flexWrap: 'wrap',
+  variants: {
+    direction: {
+      row: {
+        flexDirection: 'row',
+        '& > *:not(:last-child)': { mr: '$4' }
+      },
+      column: { flexDirection: 'column' }
+    }
+  }
 })
 
 RadioButtonGroup.displayName = 'RadioButtonGroup'

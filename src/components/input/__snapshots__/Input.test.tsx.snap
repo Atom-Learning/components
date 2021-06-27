@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -19,18 +19,18 @@ exports[`Input component renders a number input 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxg6i02-6obnf {
+.sx0j9a6-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -38,7 +38,7 @@ exports[`Input component renders a number input 1`] = `
 
 <div>
   <input
-    class="sxg6i02 sxg6i02-6obnf"
+    class="sx0j9a6 sx0j9a6-6obnf"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -48,7 +48,7 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
-.sxg6i02 {
+.sx0j9a6 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
@@ -66,18 +66,18 @@ exports[`Input component renders a text input 1`] = `
   transition: all 100ms ease-out;
 }
 
-.sxg6i02:focus {
+.sx0j9a6:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxg6i02[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx0j9a6[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxg6i02-6obnf {
+.sx0j9a6-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -85,7 +85,7 @@ exports[`Input component renders a text input 1`] = `
 
 <div>
   <input
-    class="sxg6i02 sxg6i02-6obnf"
+    class="sx0j9a6 sx0j9a6-6obnf"
     placeholder="INPUT"
     type="text"
   />

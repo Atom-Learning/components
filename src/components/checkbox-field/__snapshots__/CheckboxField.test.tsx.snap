@@ -6,11 +6,11 @@ exports[`CheckboxField component renders 1`] = `
   transform: translateY(var(--sx-space-0));
 }
 
-.sx2ca2v {
+.sxt3cs2 {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal600);
+  border: 1px solid var(--sx-colors-tonal500);
   border-radius: 3px;
   color: white;
   cursor: pointer;
@@ -23,22 +23,29 @@ exports[`CheckboxField component renders 1`] = `
   transition: all 50ms ease-out;
 }
 
-.sx2ca2v[data-state="unchecked"]:focus,
-.sx2ca2v[data-state="unchecked"]:hover {
+.sxt3cs2[data-state="unchecked"]:focus,
+.sxt3cs2[data-state="unchecked"]:hover {
   outline: none;
 }
 
-.sx2ca2v[data-state="checked"] {
+.sxt3cs2[data-state="checked"] {
   background-color: var(--sx-colors-primary);
+  border-color: var(--sx-colors-primary);
 }
 
-.sx2ca2v[data-state="checked"]:hover,
-.sx2ca2v[data-state="unchecked"]:focus {
+.sxt3cs2[data-state="checked"]:hover,
+.sxt3cs2[data-state="unchecked"]:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx2ca2v:focus-within {
+.sxt3cs2[disabled] {
+  background-color: var(--sx-colors-tonal200);
+  border-color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
+}
+
+.sxt3cs2:focus-within {
   outline: none;
 }
 
@@ -67,11 +74,11 @@ exports[`CheckboxField component renders 1`] = `
   display: table;
 }
 
-.sxh0wga-91ee5 {
+.sxh0wga-yi5wz {
   align-items: baseline;
   display: flex;
   flex-direction: row;
-  font-weight: 500;
+  font-weight: 400;
   max-width: max-content;
 }
 
@@ -84,7 +91,7 @@ exports[`CheckboxField component renders 1`] = `
       class="sx03kze"
     >
       <label
-        class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-91ee5"
+        class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-yi5wz"
       >
         <div
           class="sx03kze sx03kze-2grog"
@@ -97,7 +104,7 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            class="sx2ca2v"
+            class="sxt3cs2"
             data-state="unchecked"
             role="checkbox"
             type="button"

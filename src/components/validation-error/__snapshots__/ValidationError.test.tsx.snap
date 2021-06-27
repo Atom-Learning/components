@@ -1,38 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sx9h9si {
-  color: var(--sx-colors-tonal900);
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6or94y--size-sm {
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+}
+
+.sxtros6-385xm {
+  margin-right: var(--sx-space-2);
+}
+
+.sxjb6b1 {
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sx9h9si6tbwj--size-sm {
+.sxjb6b16tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sx9h9si6tbwj--size-sm::before {
+.sxjb6b16tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sx9h9si6tbwj--size-sm::after {
+.sxjb6b16tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sx9h9si-25jen {
+.sxjb6b1-5f21a {
   color: var(--sx-colors-danger);
+  display: flex;
+  align-items: center;
 }
 
 <div>
   <p
-    class="sx9h9si sx9h9si6tbwj--size-sm sx9h9si-25jen"
+    class="sxjb6b1 sxjb6b16tbwj--size-sm sxjb6b1-5f21a"
   >
+    <svg
+      aria-hidden="true"
+      class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 8v5"
+      />
+      <line
+        x1="12"
+        x2="12"
+        y1="16"
+        y2="16"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
+    </svg>
     VALIDATION ERROR
   </p>
 </div>
