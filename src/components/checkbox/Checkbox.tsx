@@ -9,7 +9,7 @@ import { Icon } from '../icon'
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: '1px solid $colors$tonal600',
+  border: '1px solid $colors$tonal500',
   borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',
@@ -23,25 +23,33 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
     outline: 'none'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$primary'
+    backgroundColor: '$primary',
+    borderColor: '$primary'
   },
   '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
     borderColor: '$primary',
     outline: 'none'
+  },
+  '&[disabled]': {
+    backgroundColor: '$tonal200',
+    borderColor: '$tonal400',
+    cursor: 'not-allowed'
   },
   '&:focus-within': {
     outline: 'none'
   }
 })
 
-type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
+type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
 const CheckboxIcon = () => <Icon is={Ok} size="xs" css={{ strokeWidth: '3' }} />
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => (
-  <StyledCheckbox {...props}>
-    <RadixCheckbox.Indicator as={CheckboxIcon} />
-  </StyledCheckbox>
+export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
+  (props, ref) => (
+    <StyledCheckbox {...props} ref={ref}>
+      <RadixCheckbox.Indicator as={CheckboxIcon} />
+    </StyledCheckbox>
+  )
 )
 
 Checkbox.displayName = 'Checkbox'

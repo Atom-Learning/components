@@ -3,18 +3,15 @@ import { ComboboxOption as BaseComboboxOption } from '@reach/combobox'
 import { styled } from '~/stitches'
 
 export const ComboboxOption = styled(BaseComboboxOption, {
+  color: '$tonal800',
   cursor: 'pointer',
   m: 0,
   p: '$2',
-
-  '&:hover': {
+  '&:hover, &[aria-selected="true"]': {
     bg: '$tonal100',
     borderRadius: '$0'
   },
-  '&[aria-selected="true"]': {
-    bg: '$alpha200'
-  },
   '[data-user-value]': {
-    fontWeight: 'bold'
+    color: '$primary'
   }
 })

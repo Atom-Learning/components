@@ -20,6 +20,7 @@ import {
   Button,
   Carousel,
   CheckboxField,
+  CheckboxFieldGroup,
   Combobox,
   Dialog,
   Divider,
@@ -75,6 +76,13 @@ const AlertComponent = () => {
       Delete school
     </Button>
   )
+}
+
+const TriggerValidation = ({ trigger }) => {
+  React.useEffect(() => {
+    trigger()
+  }, [trigger])
+  return null
 }
 
 const Bucket = ({ name, children }) => (
@@ -240,6 +248,18 @@ const App = () => (
           <Button appearance="outline">
             Button
             <Icon is={ArrowRight} />
+          </Button>
+        </Bucket.Section>
+        <Bucket.Section>
+          <Button disabled>Button</Button>
+          <Button disabled isRounded>
+            Button
+          </Button>
+          <Button disabled isLoading>
+            Button
+          </Button>
+          <Button appearance="outline" disabled>
+            Button
           </Button>
         </Bucket.Section>
       </Bucket>
@@ -428,22 +448,21 @@ const App = () => (
             css={{ display: 'flex', gap: '$5', flexDirection: 'column' }}
           >
             <InputField
-              name="Email address"
-              label="Email address"
+              name="input"
+              label="Input field"
               placeholder="your.name@example.com"
               type="email"
             />
             <InputField
               required
-              name="Email address"
-              label="Email address"
+              name="input-email"
+              label="Required input field"
               placeholder="your.name@example.com"
               type="email"
             />
             <InputField
-              required
-              name="Email address"
-              label="Email address"
+              name="input-prompt"
+              label="Input field with prompt"
               placeholder="your.name@example.com"
               type="email"
               prompt={{
@@ -451,26 +470,63 @@ const App = () => (
                 label: 'This is the prompt'
               }}
             />
+            <InputField
+              name="input-description"
+              label="Input field with description"
+              placeholder="your.name@example.com"
+              type="email"
+              description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
+            />
+            <InputField
+              disabled
+              name="input"
+              label="Input field"
+              placeholder="your.name@example.com"
+              type="email"
+            />
             <TextareaField
-              placeholder="Something else"
-              label="Write something"
-              name="example"
-              id="example"
+              required
+              placeholder="Placeholder"
+              label="Textarea field"
+              name="textarea"
+            />
+            <TextareaField
+              placeholder="Placeholder"
+              label="Textarea field with description"
+              name="textarea-description"
+              description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
+            />
+            <TextareaField
+              disabled
+              placeholder="Placeholder"
+              label="Disabled textarea field"
+              name="textarea-disabled"
             />
             <Box>
-              <CheckboxField
-                label="This is a checkbox?"
-                name="likeCheckboxes"
-              />
+              <CheckboxField label="This is a checkbox" name="likeCheckboxes" />
               <CheckboxField
                 label="This is a checkbox to demonstrate
-            prose text, like for example, the kind you might read in a blog
-            post. The reason we're using prose here is because the most common
-            use case for this container size is longform text."
+              prose text, like for example, the kind you might read in a blog
+              post. The reason we're using prose here is because the most common
+              use case for this container size is longform text."
                 name="likeCheckboxes2"
               />
+              <CheckboxField
+                disabled
+                label="This is a disabled checkbox"
+                name="likeCheckboxes"
+              />
             </Box>
-            <RadioGroupField name="options" label="Garys messages">
+            <RadioGroupField
+              name="pronoun"
+              label="Pronoun"
+              description="Please provide a pronoun only so we can refer to the student correctly."
+            >
+              <RadioGroupField.Item label="He/Him" name="checkbox-row-1" />
+              <RadioGroupField.Item label="She/Her" name="checkbox-row-2" />
+              <RadioGroupField.Item label="They/Their" name="checkbox-row-3" />
+            </RadioGroupField>
+            <RadioGroupField name="options" label="Legend for radio fields">
               <RadioGroupField.Item label="This is a radio button" value="1" />
               <RadioGroupField.Item
                 label="This is a radio button to demonstrate
@@ -478,6 +534,11 @@ const App = () => (
             post. The reason we're using prose here is because the most common
             use case for this container size is longform text."
                 value="2"
+              />
+              <RadioGroupField.Item
+                disabled
+                label="This is a disabled radio button"
+                value="3"
               />
             </RadioGroupField>
             <PasswordField
@@ -491,9 +552,22 @@ const App = () => (
             <SelectField name="something" label="Choose your favourite fruit">
               <option value="apples">Apples</option>
               <option value="bananas">Bananas</option>
+              <option value="oranges" disabled>
+                Oranges
+              </option>
+            </SelectField>
+            <SelectField
+              disabled
+              placeholder="Please select a fruit"
+              name="select-error"
+              label="Choose your favourite fruit"
+              validation={{ required: 'This is the validation error' }}
+            >
+              <option value="apples">Apples</option>
+              <option value="bananas">Bananas</option>
             </SelectField>
             <Box>
-              <Label css={{ mb: '$2' }} htmlFor="yolo">
+              <Label css={{ mb: '$3' }} htmlFor="yolo">
                 Something else about fruit
               </Label>
               <Combobox openOnFocus>
@@ -515,29 +589,72 @@ const App = () => (
             >
               <Switch />
             </InlineFieldWrapper>
-            <ValidationError>Email address is a required field</ValidationError>
-            <InputField
-              error={{ message: 'Yolo this is the error' }}
-              name="Email address"
-              label="Email address"
-              type="email"
-            />
           </Form>
+        </Bucket.Section>
+        <Bucket.Section>
+          <Form
+            css={{ display: 'flex', gap: '$5', flexDirection: 'column' }}
+            render={(props) => (
+              <>
+                <TriggerValidation {...props} />
+                <ValidationError>
+                  This is a validation error unattached to a form field
+                </ValidationError>
+
+                <InputField
+                  name="input-error"
+                  label="Input field with error"
+                  placeholder="your.name@example.com"
+                  validation={{ required: 'This is the validation error' }}
+                />
+                <InputField
+                  name="input-error-description"
+                  label="Input field with error and description"
+                  placeholder="your.name@example.com"
+                  description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
+                  validation={{ required: 'This is the validation error' }}
+                />
+                <TextareaField
+                  validation={{ required: 'This is the validation error' }}
+                  label="Textarea field with error"
+                  name="textarea-error"
+                />
+                <SelectField
+                  placeholder="Please select a fruit"
+                  name="select-error"
+                  label="Choose your favourite fruit"
+                  validation={{ required: 'This is the validation error' }}
+                >
+                  <option value="apples">Apples</option>
+                  <option value="bananas">Bananas</option>
+                </SelectField>
+                <CheckboxField
+                  label="This is a checkbox"
+                  name="checkbox-error"
+                  validation={{ required: 'This is the validation error' }}
+                />
+                <RadioGroupField
+                  name="options-error"
+                  label="Legend for radio fields"
+                  validation={{ required: 'This is the validation error' }}
+                >
+                  <RadioGroupField.Item
+                    label="This is a radio button"
+                    value="1"
+                  />
+                  <RadioGroupField.Item
+                    label="This is another radio button"
+                    value="2"
+                  />
+                </RadioGroupField>
+              </>
+            )}
+          />
         </Bucket.Section>
       </Bucket>
       <Bucket name="Media">
         <Bucket.Section>
-          <ProgressBar value={10} />
-          <ProgressBar
-            theme="secondary"
-            value={20}
-            aria-label="Completion rate"
-          />
-          <ProgressBar
-            theme="tertiary"
-            value={30}
-            aria-label="Completion rate"
-          />
+          <ProgressBar aria-label="Completion rate" value={20} />
           <ProgressBar
             theme="success"
             value={40}
@@ -545,61 +662,60 @@ const App = () => (
           />
           <ProgressBar
             theme="warning"
-            value={50}
-            aria-label="Completion rate"
-          />
-          <ProgressBar theme="danger" value={60} aria-label="Completion rate" />
-          <ProgressBar appearance="solid" value={10} />
-          <ProgressBar
-            appearance="solid"
-            theme="secondary"
-            value={20}
-            aria-label="Completion rate"
-          />
-          <ProgressBar
-            appearance="solid"
-            theme="tertiary"
-            value={30}
-            aria-label="Completion rate"
-          />
-          <ProgressBar
-            appearance="solid"
-            theme="success"
-            value={40}
-            aria-label="Completion rate"
-          />
-          <ProgressBar
-            appearance="solid"
-            theme="warning"
-            value={50}
-            aria-label="Completion rate"
-          />
-          <ProgressBar
-            appearance="solid"
-            theme="danger"
             value={60}
             aria-label="Completion rate"
           />
+          <ProgressBar theme="danger" value={80} aria-label="Completion rate" />
         </Bucket.Section>
         <Bucket.Section css={{ flexDirection: 'column' }}>
           <Tabs defaultValue="tab1">
             <Tabs.TriggerList>
               <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
               <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
+              <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
+              <Tabs.Trigger disabled value="tab4">
+                Disabled tab
+              </Tabs.Trigger>
             </Tabs.TriggerList>
             <Tabs.Content value="tab1" css={{ p: '$4' }}>
               <Text>
-                Looking to escape into the beautifully blocky world of LEGO?
-                Well, our gameplay video for LEGO Builder's Journey has you
-                covered. This atmospheric puzzle game features the most
-                realistic and accurately rendered LEGO elements in a game, ever!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </Text>
             </Tabs.Content>
             <Tabs.Content value="tab2" css={{ p: '$4' }}>
               <Text>
-                If the issue is that it's overlapping content on the screen that
-                we're trying to access in the Cypress test, we might want to
-                just minimize the chat window in the test?
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem.
+              </Text>
+            </Tabs.Content>
+            <Tabs.Content value="tab3" css={{ p: '$4' }}>
+              <Text>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                rerum facilis est et expedita distinctio. Nam libero tempore,
+                cum soluta nobis est eligendi optio cumque nihil impedit quo
+                minus id quod maxime placeat facere possimus, omnis voluptas
+                assumenda est, omnis dolor repellendus. Temporibus autem
+                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                eveniet ut et voluptates repudiandae sint et molestiae non
+                recusandae.
               </Text>
             </Tabs.Content>
           </Tabs>

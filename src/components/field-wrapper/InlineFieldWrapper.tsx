@@ -27,7 +27,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
         alignItems: 'baseline',
         display: 'flex',
         flexDirection: reverse ? 'row-reverse' : 'row',
-        fontWeight: 500,
+        fontWeight: 400,
         maxWidth: 'max-content'
       }}
       required={required}
@@ -42,7 +42,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       </Box>
       {label}
     </Label>
-    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
   </Box>
 )
 

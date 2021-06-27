@@ -4,6 +4,7 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
+import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS } from '~/stitches'
 
@@ -13,6 +14,7 @@ export type FieldWrapperProps = {
   fieldId: string
   label: string
   prompt?: { link: string; label: string }
+  description?: string
   required?: boolean
 }
 
@@ -23,6 +25,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   fieldId,
   label,
   prompt,
+  description,
   required
 }) => (
   <Box css={css}>
@@ -43,7 +46,12 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
       )}
     </Flex>
     {children}
-    {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+    {description && (
+      <Text size="sm" css={{ color: '$tonal500', mt: '$3', maxWidth: '80ch' }}>
+        {description}
+      </Text>
+    )}
   </Box>
 )
 

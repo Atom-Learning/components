@@ -23,8 +23,8 @@ const StyledInput = styled('input', {
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal700',
+    backgroundColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
   },
   variants: {

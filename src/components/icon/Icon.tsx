@@ -22,15 +22,21 @@ const StyledIcon = styled('svg', {
 })
 
 type IconProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledIcon>,
+  React.ComponentProps<typeof StyledIcon>,
   {
     is: React.FC<React.SVGProps<SVGSVGElement>>
     as?: never
   }
 >
 
-export const Icon: React.FC<IconProps> = ({
-  is: SVG,
-  size = 'md',
-  ...remainingProps
-}) => <StyledIcon size={size} aria-hidden="true" {...remainingProps} as={SVG} />
+export const Icon: React.FC<IconProps> = React.forwardRef(
+  ({ is: SVG, size = 'md', ...remainingProps }, ref) => (
+    <StyledIcon
+      size={size}
+      aria-hidden="true"
+      {...remainingProps}
+      as={SVG}
+      ref={ref}
+    />
+  )
+)

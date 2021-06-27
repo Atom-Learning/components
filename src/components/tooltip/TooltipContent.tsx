@@ -10,13 +10,14 @@ const scaleIn = keyframes({
 
 const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
-  backgroundColor: '$tonal800',
+  backgroundColor: '$tonal700',
   borderRadius: '$0',
   color: 'white',
   fontFamily: '$body',
   fontSize: '$sm',
   lineHeight: 1.2,
-  p: '$2',
+  px: '$3',
+  py: '$2',
   transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
   variants: {
     size: {
@@ -28,7 +29,7 @@ const StyledContent = styled(Content, {
 })
 
 const StyledArrow = styled(Arrow, {
-  fill: '$tonal800',
+  fill: '$tonal700',
   '[data-align="end"] &': { mr: '$2' },
   '[data-align="start"] &': { ml: '$2' }
 })

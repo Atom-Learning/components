@@ -9,10 +9,10 @@ console.log({ theme })
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage: encodeBackgroundIcon(theme.colors.primary.value, 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
-  backgroundSize: '$sizes$2 auto, 100%',
+  backgroundSize: '20px auto, 100%',
   border: '1px solid $tonal400',
   borderRadius: '$0',
   color: '$tonal900',
@@ -36,16 +36,17 @@ const StyledSelect = styled('select', {
   '&::-ms-expand': {
     display: 'none'
   },
-  '&[disabled]': {
-    backgroundImage: encodeBackgroundIcon(
-      theme.colors.tonal600.value,
-      'chevron'
-    )
-  },
   '&[disabled], > option[disabled]': {
-    opacity: 0.7,
-    backgroundColor: '$tonal300',
+    backgroundColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
+  },
+  variants: {
+    state: {
+      error: {
+        border: '1px solid $danger'
+      }
+    }
   }
 })
 
@@ -65,9 +66,9 @@ export type SelectProps = Override<
 
 export const Select: React.FC<SelectProps> = React.forwardRef(
   ({ placeholder, children, ...remainingProps }, ref) => (
-    <StyledSelect {...remainingProps} ref={ref}>
+    <StyledSelect defaultValue="" {...remainingProps} ref={ref}>
       {placeholder && (
-        <option disabled selected hidden>
+        <option disabled hidden value="">
           {placeholder}
         </option>
       )}

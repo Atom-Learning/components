@@ -5,21 +5,24 @@ import { styled } from '~/stitches'
 
 const StyledSwitch = styled(RadixSwitch.Root, {
   appearance: 'none',
-  backgroundColor: '$tonal400',
+  backgroundColor: '$tonal300',
   border: 'none',
-  padding: '$0',
-  overflow: 'hidden',
   borderRadius: '$round',
   cursor: 'pointer',
-  display: 'inline-flex',
-  width: '$5',
+  display: 'flex',
+  overflow: 'hidden',
+  p: '$0',
   position: 'relative',
   transition: 'background-color 100ms ease',
-  '&:focus': {
-    outline: 'none'
+  width: '$5',
+  '&:hover': {
+    backgroundColor: '$tonal400'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$success'
+    backgroundColor: '$primary'
+  },
+  '&[data-state="checked"]:hover': {
+    backgroundColor: '$tertiary'
   }
 })
 

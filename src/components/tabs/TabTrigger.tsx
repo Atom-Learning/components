@@ -11,8 +11,7 @@ const StyledTabTrigger = styled(Trigger, {
   p: '$4',
   userSelect: 'none',
   '&:hover': { color: '$tertiary' },
-  '&[data-disabled]': { color: '$tonal600' },
-  '&[data-disabled]:hover': { color: '$tonal600' },
+  '&[data-disabled],&[data-disabled]:hover': { color: '$tonal500' },
   '&[data-state="active"]': {
     color: '$tertiary',
     boxShadow: 'inset 0 -3px 0 0 currentColor'
@@ -21,7 +20,7 @@ const StyledTabTrigger = styled(Trigger, {
 
 type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {
   value: string
-  disabled: boolean
+  disabled?: boolean
 }
 
 export const TabTrigger: React.FC<TabTriggerProps> = ({

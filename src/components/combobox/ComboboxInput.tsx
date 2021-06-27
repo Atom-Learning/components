@@ -5,10 +5,10 @@ import { encodeBackgroundIcon } from '~/utilities'
 
 export const ComboboxInput = styled(BaseComboboxInput, {
   appearance: 'none',
-  backgroundImage: encodeBackgroundIcon(theme.colors.primary.value, 'chevron'),
-  backgroundPosition: 'right $space$3 top 50%, 0 0',
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'search'),
+  backgroundPosition: 'left $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
-  backgroundSize: '$sizes$2 auto, 100%',
+  backgroundSize: '20px auto, 100%',
   border: '1px solid $tonal400',
   borderRadius: '$0',
   boxShadow: 'none', // prevent default iOS default styling
@@ -20,6 +20,7 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   fontSize: '$md', // prevent iOS zooming on focus
   height: '$4',
   p: '$3',
+  pl: '$6',
   width: '100%',
   transition: 'all 100ms ease-out',
   '&:focus-within': {

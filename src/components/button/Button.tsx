@@ -49,7 +49,7 @@ const StyledButton = styled('button', {
   cursor: 'pointer',
   display: 'flex',
   fontFamily: '$body',
-  fontWeight: 500,
+  fontWeight: 400,
   justifyContent: 'center',
   letterSpacing: '0.02em',
   lineHeight: 1.4,
