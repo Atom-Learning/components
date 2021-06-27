@@ -1,7 +1,6 @@
-import theme from '@atom-learning/theme'
 import * as React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { CSS, styled, theme } from '~/stitches'
 import { CSSWrapper } from '~/utilities/css-wrapper'
 
 /**
