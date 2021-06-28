@@ -86,12 +86,12 @@ exports[`RadioField component renders 1`] = `
   background-color: white;
 }
 
-.sx357xm {
+.sxykmo8 {
   display: flex;
   flex-wrap: wrap;
 }
 
-.sx357xm8txt2--direction-column {
+.sxykmo88txt2--direction-column {
   flex-direction: column;
 }
 
@@ -113,7 +113,7 @@ exports[`RadioField component renders 1`] = `
         Example options
       </legend>
       <div
-        class="sx357xm sx357xm8txt2--direction-column"
+        class="sxykmo8 sxykmo88txt2--direction-column"
         role="radiogroup"
       >
         <div

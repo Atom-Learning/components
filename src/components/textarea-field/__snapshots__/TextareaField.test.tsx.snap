@@ -36,7 +36,7 @@ exports[`TextareaField component renders 1`] = `
   display: table;
 }
 
-.sxv8mb3 {
+.sx5661z {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -44,7 +44,7 @@ exports[`TextareaField component renders 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -58,12 +58,12 @@ exports[`TextareaField component renders 1`] = `
   width: 100%;
 }
 
-.sxv8mb3:focus {
+.sx5661z:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxv8mb3[disabled] {
+.sx5661z[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -86,7 +86,7 @@ exports[`TextareaField component renders 1`] = `
         />
       </div>
       <textarea
-        class="sxv8mb3"
+        class="sx5661z"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -132,7 +132,7 @@ exports[`TextareaField component renders with an error 1`] = `
   display: table;
 }
 
-.sxv8mb3 {
+.sx5661z {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -140,7 +140,7 @@ exports[`TextareaField component renders with an error 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -154,12 +154,12 @@ exports[`TextareaField component renders with an error 1`] = `
   width: 100%;
 }
 
-.sxv8mb3:focus {
+.sx5661z:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxv8mb3[disabled] {
+.sx5661z[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -182,7 +182,7 @@ exports[`TextareaField component renders with an error 1`] = `
         />
       </div>
       <textarea
-        class="sxv8mb3"
+        class="sx5661z"
         error="Error Message"
         id="description"
         name="description"

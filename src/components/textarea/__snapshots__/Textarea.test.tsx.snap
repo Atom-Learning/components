@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Textarea component renders a textarea 1`] = `
-.sxv8mb3 {
+.sx5661z {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -9,7 +9,7 @@ exports[`Textarea component renders a textarea 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -23,18 +23,18 @@ exports[`Textarea component renders a textarea 1`] = `
   width: 100%;
 }
 
-.sxv8mb3:focus {
+.sx5661z:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxv8mb3[disabled] {
+.sx5661z[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxv8mb3-6obnf {
+.sx5661z-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -42,7 +42,7 @@ exports[`Textarea component renders a textarea 1`] = `
 
 <div>
   <textarea
-    class="sxv8mb3 sxv8mb3-6obnf"
+    class="sx5661z sx5661z-6obnf"
     placeholder="DESCRIPTION"
   />
 </div>

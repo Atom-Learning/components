@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component renders a select with 3 options 1`] = `
-.sx14cmf {
+.sxayrvz {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -11,36 +11,34 @@ exports[`Select component renders a select with 3 options 1`] = `
   background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-left: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx14cmf:hover {
+.sxayrvz:hover {
   cursor: pointer;
 }
 
-.sx14cmf:focus {
+.sxayrvz:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx14cmf::-ms-expand {
+.sxayrvz::-ms-expand {
   display: none;
 }
 
-.sx14cmf[disabled],
-.sx14cmf > option[disabled] {
+.sxayrvz[disabled],
+.sxayrvz > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -49,7 +47,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx14cmf"
+    class="sxayrvz"
   >
     <option
       value="value1"
@@ -71,7 +69,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 `;
 
 exports[`Select component renders an disabled select 1`] = `
-.sx14cmf {
+.sxayrvz {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -81,36 +79,34 @@ exports[`Select component renders an disabled select 1`] = `
   background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-left: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx14cmf:hover {
+.sxayrvz:hover {
   cursor: pointer;
 }
 
-.sx14cmf:focus {
+.sxayrvz:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx14cmf::-ms-expand {
+.sxayrvz::-ms-expand {
   display: none;
 }
 
-.sx14cmf[disabled],
-.sx14cmf > option[disabled] {
+.sxayrvz[disabled],
+.sxayrvz > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -119,14 +115,14 @@ exports[`Select component renders an disabled select 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx14cmf"
+    class="sxayrvz"
     disabled=""
   />
 </div>
 `;
 
 exports[`Select component renders select with a default option 1`] = `
-.sx14cmf {
+.sxayrvz {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -136,36 +132,34 @@ exports[`Select component renders select with a default option 1`] = `
   background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-left: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx14cmf:hover {
+.sxayrvz:hover {
   cursor: pointer;
 }
 
-.sx14cmf:focus {
+.sxayrvz:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx14cmf::-ms-expand {
+.sxayrvz::-ms-expand {
   display: none;
 }
 
-.sx14cmf[disabled],
-.sx14cmf > option[disabled] {
+.sxayrvz[disabled],
+.sxayrvz > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -174,7 +168,7 @@ exports[`Select component renders select with a default option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx14cmf"
+    class="sxayrvz"
   >
     <option
       disabled=""
@@ -204,7 +198,7 @@ exports[`Select component renders select with a default option 1`] = `
 `;
 
 exports[`Select component renders select with a disabled option 1`] = `
-.sx14cmf {
+.sxayrvz {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -214,36 +208,34 @@ exports[`Select component renders select with a disabled option 1`] = `
   background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-left: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx14cmf:hover {
+.sxayrvz:hover {
   cursor: pointer;
 }
 
-.sx14cmf:focus {
+.sxayrvz:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx14cmf::-ms-expand {
+.sxayrvz::-ms-expand {
   display: none;
 }
 
-.sx14cmf[disabled],
-.sx14cmf > option[disabled] {
+.sxayrvz[disabled],
+.sxayrvz > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -252,7 +244,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx14cmf"
+    class="sxayrvz"
   >
     <option
       value="value1"
@@ -280,7 +272,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 `;
 
 exports[`Select component renders select with no options 1`] = `
-.sx14cmf {
+.sxayrvz {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -290,36 +282,34 @@ exports[`Select component renders select with no options 1`] = `
   background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-left: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx14cmf:hover {
+.sxayrvz:hover {
   cursor: pointer;
 }
 
-.sx14cmf:focus {
+.sxayrvz:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx14cmf::-ms-expand {
+.sxayrvz::-ms-expand {
   display: none;
 }
 
-.sx14cmf[disabled],
-.sx14cmf > option[disabled] {
+.sxayrvz[disabled],
+.sxayrvz > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -328,7 +318,7 @@ exports[`Select component renders select with no options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="sx14cmf"
+    class="sxayrvz"
   />
 </div>
 `;

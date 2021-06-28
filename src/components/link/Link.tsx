@@ -4,9 +4,9 @@ import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
-import { Heading } from '../heading/Heading'
+import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
-import { Text, textVariantSize } from '../text/Text'
+import { StyledParagraph, textVariantSize } from '../text/Text'
 
 const StyledLink = styled('a', {
   bg: 'unset',
@@ -23,7 +23,7 @@ const StyledLink = styled('a', {
   '&:active': {
     color: '$primary'
   },
-  [`${Text} > &, ${Heading} > &, ${StyledLi} > &`]: {
+  [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
     lineHeight: 1,
     '&::before, &::after': {

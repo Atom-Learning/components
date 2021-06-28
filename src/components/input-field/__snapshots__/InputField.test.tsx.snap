@@ -92,36 +92,37 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
-.sx0j9a6 {
+.sxojaks {
+  box-shadow: none;
+  font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx0j9a6:focus {
+.sxojaks:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx0j9a6[disabled] {
+.sxojaks[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sx0j9a6hpnso--state-error {
+.sxojakshpnso--state-error {
   border: 1px solid var(--sx-colors-danger);
 }
 
@@ -144,7 +145,7 @@ exports[`InputField component renders a field in error state 1`] = `
         </label>
       </div>
       <input
-        class="sx0j9a6 sx0j9a6hpnso--state-error"
+        class="sxojaks sxojakshpnso--state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
@@ -227,30 +228,31 @@ exports[`InputField component renders a field with a number input 1`] = `
   display: table;
 }
 
-.sx0j9a6 {
+.sxojaks {
+  box-shadow: none;
+  font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx0j9a6:focus {
+.sxojaks:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx0j9a6[disabled] {
+.sxojaks[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -275,7 +277,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         </label>
       </div>
       <input
-        class="sx0j9a6"
+        class="sxojaks"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -330,30 +332,31 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: table;
 }
 
-.sx0j9a6 {
+.sxojaks {
+  box-shadow: none;
+  font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  font-size: var(--sx-fontSizes-md);
   height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx0j9a6:focus {
+.sxojaks:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx0j9a6[disabled] {
+.sxojaks[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -378,7 +381,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         </label>
       </div>
       <input
-        class="sx0j9a6"
+        class="sxojaks"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

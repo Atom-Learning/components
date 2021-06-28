@@ -43,14 +43,14 @@ exports[`Radio component renders a disabled radio button 1`] = `
   background-color: white;
 }
 
-.sx357xm {
+.sxykmo8 {
   display: flex;
   flex-wrap: wrap;
 }
 
 <div>
   <div
-    class="sx357xm"
+    class="sxykmo8"
     role="radiogroup"
   >
     <input
@@ -118,14 +118,14 @@ exports[`Radio component renders a radio button 1`] = `
   background-color: white;
 }
 
-.sx357xm {
+.sxykmo8 {
   display: flex;
   flex-wrap: wrap;
 }
 
 <div>
   <div
-    class="sx357xm"
+    class="sxykmo8"
     role="radiogroup"
   >
     <input
