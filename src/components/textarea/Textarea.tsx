@@ -9,7 +9,7 @@ const StyledTextarea = styled('textarea', {
   border: '1px solid $tonal400',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal900',
+  color: '$tonal800',
   fontFamily: '$body',
   fontWeight: 400,
   lineHeight: 1.4,

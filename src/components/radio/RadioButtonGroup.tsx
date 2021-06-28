@@ -9,7 +9,7 @@ export const RadioButtonGroup = styled(RadioGroup.Root, {
     direction: {
       row: {
         flexDirection: 'row',
-        '& > *:not(:last-child)': { mr: '$4' }
+        '& > *:not(:last-child)': { mr: '$5' }
       },
       column: { flexDirection: 'column' }
     }

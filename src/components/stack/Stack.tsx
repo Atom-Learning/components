@@ -52,6 +52,11 @@ const StyledStack = styled('div', {
         flexDirection: 'column'
       }
     },
+    justify: {
+      start: { justifyContent: 'flex-start' },
+      end: { justifyContent: 'flex-end' },
+      center: { justifyContent: 'center' }
+    },
     gap
   }
 })
@@ -62,10 +67,16 @@ export const Stack: React.FC<StackProps> = ({
   css,
   gap = 2,
   direction = 'row',
+  justify = 'start',
   ...remainingProps
 }) => (
   <CSSWrapper css={css}>
-    <StyledStack gap={gap} direction={direction} {...remainingProps} />
+    <StyledStack
+      direction={direction}
+      gap={gap}
+      justify={justify}
+      {...remainingProps}
+    />
   </CSSWrapper>
 )
 

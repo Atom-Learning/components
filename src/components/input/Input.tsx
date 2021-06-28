@@ -4,20 +4,20 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
+  boxShadow: 'none', // prevent default iOS default styling
+  fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
   border: '1px solid $tonal400',
   borderRadius: '$0',
-  boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
-  color: '$tonal900',
+  color: '$tonal800',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
-  fontSize: '$md', // prevent iOS zooming on focus
   height: '$4',
-  width: '100%',
-  p: '$3',
+  px: '$3',
   transition: 'all 100ms ease-out',
+  width: '100%',
   '&:focus': {
     borderColor: '$primary',
     outline: 'none'
