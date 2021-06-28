@@ -1,13 +1,12 @@
 import { styled } from '~/stitches'
 
-export const HeaderCell = styled('th', {
+export const FooterCell = styled('td', {
   fontFamily: '$sans',
-  color: 'white',
+  color: '$primary500',
   fontWeight: 700,
   textAlign: 'left',
   verticalAlign: 'middle',
-  p: '$2 $3',
-  bg: '$primary500'
+  p: '$2 $3'
 })
 
-HeaderCell.displayName = 'HeaderCell'
+FooterCell.displayName = 'FooterCell'

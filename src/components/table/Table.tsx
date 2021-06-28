@@ -5,6 +5,7 @@ import { styled } from '~/stitches'
 import { Body } from './Body'
 import { Cell } from './Cell'
 import { Footer } from './Footer'
+import { FooterCell } from './FooterCell'
 import { Header } from './Header'
 import { HeaderCell } from './HeaderCell'
 import { Row } from './Row'
@@ -13,6 +14,7 @@ type TableSubComponents = {
   Body: typeof Body
   Cell: typeof Cell
   Footer: typeof Footer
+  FooterCell: typeof FooterCell
   Header: typeof Header
   HeaderCell: typeof HeaderCell
   Row: typeof Row
@@ -34,6 +36,7 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
 Table.Body = Body
 Table.Cell = Cell
 Table.Footer = Footer
+Table.FooterCell = FooterCell
 Table.Header = Header
 Table.HeaderCell = HeaderCell
 Table.Row = Row
