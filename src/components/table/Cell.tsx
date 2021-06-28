@@ -9,5 +9,4 @@ export const Cell = styled('td', {
   borderBottom: '1px solid $tonal200'
 })
 
-Cell.displayName = 'Cell'
-0.0
+Cell.displayName = 'TableCell'

@@ -9,4 +9,4 @@ export const FooterCell = styled('td', {
   p: '$2 $3'
 })
 
-FooterCell.displayName = 'FooterCell'
+FooterCell.displayName = 'TableFooterCell'

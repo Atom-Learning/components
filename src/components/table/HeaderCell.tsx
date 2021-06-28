@@ -10,4 +10,4 @@ export const HeaderCell = styled('th', {
   bg: '$primary500'
 })
 
-HeaderCell.displayName = 'HeaderCell'
+HeaderCell.displayName = 'TableHeaderCell'
