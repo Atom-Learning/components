@@ -3,7 +3,7 @@ import { styled } from '~/stitches'
 export const HeaderCell = styled('th', {
   p: '$2 $3',
   fontWeight: 700,
-  verticalAlign: 'top',
+  verticalAlign: 'middle',
   textAlign: 'left',
   bg: '$primary400',
   color: 'white'
