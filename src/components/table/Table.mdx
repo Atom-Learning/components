@@ -1,35 +1,26 @@
 ---
 title: Table
-component: Table, Table.Body, Table.Cell, Table.Footer, Table.Header, Table.HeaderCell, Table.Row
+component: Table, Table.Body, Table.Cell, Table.Footer, Table.FooterCell, Table.Header, Table.HeaderCell, Table.Row
 description: The Table component displays a collection of data grouped into rows
 category: Layout
 ---
 
 The `Table` component structure mirrors that of a regular HTML table, with the smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table Row` components corresponding to the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags, respectively. 
 
-The default table width is 100% of the parent container, but this and other styles can be overridden with the `css` prop on all components.
-
-Best practice: Due to rendering issues with some browsers, adding borders to `Table.Row` is possible by styling the Table component with `border-collapse: collapse`; however, this practice is generally not recommended. The preferred method for adding borders is applying styles to the `Table.Cell` and `Table.HeaderCell` components.
-
-
 ```jsx preview
-<Table css={{ width: '500px', mb: '100px' }}>
+<Table css={{ width: '500px', mb: '100px'}}>
   <Table.Header>
     <Table.Row>
-      <Table.HeaderCell css={{ bg: '$tonal800' }}>
-        First Name
-      </Table.HeaderCell>
-      <Table.HeaderCell css={{ bg: '$tonal800' }}>
-        Last Name
-      </Table.HeaderCell>
-      <Table.HeaderCell css={{ bg: '$tonal800' }}>Age</Table.HeaderCell>
+      <Table.HeaderCell>First Name</Table.HeaderCell>
+      <Table.HeaderCell>Last Name</Table.HeaderCell>
+      <Table.HeaderCell>Age</Table.HeaderCell>
     </Table.Row>
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell css={{ bg: '$tonal100' }}>Rakim</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100' }}>Jackson</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100' }}>35</Table.Cell>
+      <Table.Cell>Rakim</Table.Cell>
+      <Table.Cell>Jackson</Table.Cell>
+      <Table.Cell>35</Table.Cell>
     </Table.Row>
     <Table.Row>
       <Table.Cell>Evelyn</Table.Cell>
@@ -37,17 +28,63 @@ Best practice: Due to rendering issues with some browsers, adding borders to `Ta
       <Table.Cell>27</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell css={{ bg: '$tonal100' }}>Miguel</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100' }}>Fernandez</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100' }}>52</Table.Cell>
+      <Table.Cell>Miguel</Table.Cell>
+      <Table.Cell>Fernandez</Table.Cell>
+      <Table.Cell>52</Table.Cell>
     </Table.Row>
   </Table.Body>
   <Table.Footer>
     <Table.Row>
-      <Table.Cell>Footer 1</Table.Cell>
-      <Table.Cell>Footer 2</Table.Cell>
-      <Table.Cell>Footer 3</Table.Cell>
+      <Table.FooterCell>Footer 1</Table.FooterCell>
+      <Table.FooterCell>Footer 2</Table.FooterCell>
+      <Table.FooterCell>Footer 3</Table.FooterCell>
     </Table.Row>
+  </Table.Footer>
+</Table>
+```
+
+## Styling
+
+The default table width is 100% of the parent container, but this and other styles can be overridden with the `css` prop on all components.
+
+Best practice: Due to rendering issues with some browsers, adding borders to `Table.Row` is possible by styling the Table component with `border-collapse: collapse`; however, this practice is generally not recommended. The preferred method for adding borders is applying styles to the `Table.Cell` and `Table.HeaderCell` components.
+
+```jsx preview
+<Table css={{ width: '500px', mt: '100px', ml: '100px' }}>
+  <Table.Header>
+    <Table.Row>
+      <Table.HeaderCell css={{ bg: '$subjectEnglish' }}>
+        First Name
+      </Table.HeaderCell>
+      <Table.HeaderCell css={{ bg: '$subjectEnglish' }}>
+        Last Name
+      </Table.HeaderCell>
+      <Table.HeaderCell css={{ bg: '$subjectEnglish' }}>Age</Table.HeaderCell>
+    </Table.Row>
+  </Table.Header>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>Rakim</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>Jackson</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>35</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>Evelyn</Table.Cell>
+      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>Smith</Table.Cell>
+      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>27</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>Miguel</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>Fernandez</Table.Cell>
+      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>52</Table.Cell>
+    </Table.Row>
+  </Table.Body>
+  <Table.Footer>
+      <Table.Row>
+        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 1</Table.FooterCell>
+        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 2</Table.FooterCell>
+        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 3</Table.FooterCell>
+      </Table.Row>
   </Table.Footer>
 </Table>
 ```
