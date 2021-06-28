@@ -15,7 +15,7 @@ const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
   bg: 'white',
   borderRadius: '$1',
-  boxShadow: '$1',
+  boxShadow: '$2',
   maxWidth: '90vw',
   p: '$sizes$2',
   pr: '$6',

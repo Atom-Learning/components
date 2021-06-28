@@ -27,6 +27,7 @@ export const Video: React.FC<VideoProps> = ({
   <CSSWrapper css={css}>
     <Box
       css={{
+        borderRadius: '$0',
         position: 'relative',
         paddingTop: `${ratio * 100}%`,
         overflow: 'hidden',
