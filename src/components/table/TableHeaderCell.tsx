@@ -1,6 +1,6 @@
 import { styled } from '~/stitches'
 
-export const HeaderCell = styled('th', {
+export const TableHeaderCell = styled('th', {
   fontFamily: '$sans',
   color: 'white',
   fontWeight: 700,
@@ -10,4 +10,4 @@ export const HeaderCell = styled('th', {
   bg: '$primary500'
 })
 
-HeaderCell.displayName = 'TableHeaderCell'
+TableHeaderCell.displayName = 'TableHeaderCell'

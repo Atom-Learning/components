@@ -1,6 +1,6 @@
 import { styled } from '~/stitches'
 
-export const Cell = styled('td', {
+export const TableCell = styled('td', {
   fontFamily: '$sans',
   color: '$tonal600',
   textAlign: 'left',
@@ -9,4 +9,4 @@ export const Cell = styled('td', {
   borderBottom: '1px solid $tonal200'
 })
 
-Cell.displayName = 'TableCell'
+TableCell.displayName = 'TableCell'

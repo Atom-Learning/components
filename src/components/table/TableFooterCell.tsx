@@ -1,6 +1,6 @@
 import { styled } from '~/stitches'
 
-export const FooterCell = styled('td', {
+export const TableFooterCell = styled('td', {
   fontFamily: '$sans',
   color: '$primary500',
   fontWeight: 700,
@@ -9,4 +9,4 @@ export const FooterCell = styled('td', {
   p: '$2 $3'
 })
 
-FooterCell.displayName = 'TableFooterCell'
+TableFooterCell.displayName = 'TableFooterCell'

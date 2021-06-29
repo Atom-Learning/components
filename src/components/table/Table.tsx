@@ -2,22 +2,22 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Body } from './Body'
-import { Cell } from './Cell'
-import { Footer } from './Footer'
-import { FooterCell } from './FooterCell'
-import { Header } from './Header'
-import { HeaderCell } from './HeaderCell'
-import { Row } from './Row'
+import { TableBody } from './TableBody'
+import { TableCell } from './TableCell'
+import { TableFooter } from './TableFooter'
+import { TableFooterCell } from './TableFooterCell'
+import { TableHeader } from './TableHeader'
+import { TableHeaderCell } from './TableHeaderCell'
+import { TableRow } from './TableRow'
 
 type TableSubComponents = {
-  Body: typeof Body
-  Cell: typeof Cell
-  Footer: typeof Footer
-  FooterCell: typeof FooterCell
-  Header: typeof Header
-  HeaderCell: typeof HeaderCell
-  Row: typeof Row
+  Body: typeof TableBody
+  Cell: typeof TableCell
+  Footer: typeof TableFooter
+  FooterCell: typeof TableFooterCell
+  Header: typeof TableHeader
+  HeaderCell: typeof TableHeaderCell
+  Row: typeof TableRow
 }
 
 const StyledTable = styled('table', {
@@ -28,17 +28,16 @@ const StyledTable = styled('table', {
 
 type TableProps = React.ComponentProps<typeof StyledTable>
 
-export const Table: React.FC<TableProps> & TableSubComponents = ({
-  children,
-  ...restProps
-}: TableProps) => <StyledTable {...restProps}>{children}</StyledTable>
+export const Table: React.FC<TableProps> & TableSubComponents = (
+  props: TableProps
+) => <StyledTable {...props} />
 
-Table.Body = Body
-Table.Cell = Cell
-Table.Footer = Footer
-Table.FooterCell = FooterCell
-Table.Header = Header
-Table.HeaderCell = HeaderCell
-Table.Row = Row
+Table.Body = TableBody
+Table.Cell = TableCell
+Table.Footer = TableFooter
+Table.FooterCell = TableFooterCell
+Table.Header = TableHeader
+Table.HeaderCell = TableHeaderCell
+Table.Row = TableRow
 
 Table.displayName = 'Table'
