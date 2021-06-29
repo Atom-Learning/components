@@ -19,11 +19,12 @@ const StyledForm = styled('form', {})
 type FormProps = React.ComponentPropsWithoutRef<typeof StyledForm> & FormValues
 
 type FormContentProps = React.ComponentPropsWithoutRef<typeof StyledForm> &
-FormContentValues
+  FormContentValues
 
 type PersistFormWrapperProps = React.ComponentPropsWithoutRef<
   typeof StyledForm
-> & PersistFormWrapperValues
+> &
+  PersistFormWrapperValues
 
 const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
   persist,
