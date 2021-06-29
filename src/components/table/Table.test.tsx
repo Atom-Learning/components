@@ -7,7 +7,7 @@ import { Table } from './Table'
 describe(`Table component`, () => {
   it('renders', async () => {
     const { container } = await render(
-      <Table css={{ height: 100, width: 400, color: '$primary500' }}>
+      <Table css={{ height: '100px', width: '400px', color: '$primary500' }}>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>Column A</Table.HeaderCell>
