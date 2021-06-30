@@ -20,7 +20,7 @@ const StyledSelect = styled('select', {
   fontWeight: 400,
   height: '$4',
   lineHeight: 1.4,
-  pl: '$2',
+  pl: '$3',
   pr: '$6',
   transition: 'all 75ms ease-out',
   width: '100%',

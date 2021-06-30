@@ -36,31 +36,31 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sxjb6b1 {
+.sxgpjqn {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxjb6b16tbwj--size-sm {
+.sxgpjqn6tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxjb6b16tbwj--size-sm::before {
+.sxgpjqn6tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxjb6b16tbwj--size-sm::after {
+.sxgpjqn6tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxjb6b1-lq7ir {
+.sxgpjqn-lq7ir {
   color: var(--sx-colors-danger);
   display: flex;
   align-items: center;
@@ -151,7 +151,7 @@ exports[`InputField component renders a field in error state 1`] = `
         type="text"
       />
       <p
-        class="sxjb6b1 sxjb6b16tbwj--size-sm sxjb6b1-lq7ir"
+        class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-lq7ir"
       >
         <svg
           aria-hidden="true"

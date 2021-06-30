@@ -36,7 +36,7 @@ exports[`SelectField component renders 1`] = `
   display: table;
 }
 
-.sxayrvz {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -53,27 +53,27 @@ exports[`SelectField component renders 1`] = `
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-2);
+  padding-left: var(--sx-space-3);
   padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sxayrvz:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sxayrvz:focus {
+.sxqb0gi:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxayrvz::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sxayrvz[disabled],
-.sxayrvz > option[disabled] {
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
@@ -98,7 +98,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="sxayrvz"
+        class="sxqb0gi"
         id="example"
         name="example"
       >

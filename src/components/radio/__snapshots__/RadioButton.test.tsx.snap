@@ -36,11 +36,12 @@ exports[`Radio component renders a disabled radio button 1`] = `
   cursor: not-allowed;
 }
 
-.sxekp6i {
+.sxndfzf {
   height: 6px;
   width: 6px;
   border-radius: var(--sx-radii-round);
   background-color: white;
+  position: absolute;
 }
 
 .sxykmo8 {
@@ -111,11 +112,12 @@ exports[`Radio component renders a radio button 1`] = `
   cursor: not-allowed;
 }
 
-.sxekp6i {
+.sxndfzf {
   height: 6px;
   width: 6px;
   border-radius: var(--sx-radii-round);
   background-color: white;
+  position: absolute;
 }
 
 .sxykmo8 {

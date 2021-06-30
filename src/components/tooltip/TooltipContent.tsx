@@ -12,6 +12,7 @@ const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
   backgroundColor: '$tonal700',
   borderRadius: '$0',
+  boxShadow: '$0',
   color: 'white',
   fontFamily: '$body',
   fontSize: '$sm',

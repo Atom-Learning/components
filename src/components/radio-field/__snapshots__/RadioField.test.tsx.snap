@@ -79,11 +79,12 @@ exports[`RadioField component renders 1`] = `
   cursor: not-allowed;
 }
 
-.sxekp6i {
+.sxndfzf {
   height: 6px;
   width: 6px;
   border-radius: var(--sx-radii-round);
   background-color: white;
+  position: absolute;
 }
 
 .sxykmo8 {
@@ -142,7 +143,7 @@ exports[`RadioField component renders 1`] = `
                 value="1"
               >
                 <span
-                  class="sxekp6i"
+                  class="sxndfzf"
                   data-state="checked"
                 />
               </button>

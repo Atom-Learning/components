@@ -36,7 +36,8 @@ const StyledRadioButton = styled(RadioGroup.Item, {
 const StyledIndicator = styled(RadioGroup.Indicator, {
   size: '6px',
   borderRadius: '$round',
-  backgroundColor: 'white'
+  backgroundColor: 'white',
+  position: 'absolute'
 })
 
 type RadioButtonProps = Override<

@@ -3,12 +3,17 @@ import * as React from 'react'
 import { CSS, styled } from '~/stitches'
 import { capsize, Override } from '~/utilities'
 
-type TextSizes = 'sm' | 'md' | 'lg' | 'xl'
+type TextSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 export const textVariantSize = ({ applyCapsize = true } = {}): Record<
   TextSizes,
   CSS
 > => ({
+  xs: {
+    fontSize: '$xs',
+    lineHeight: 1.6,
+    ...(applyCapsize ? capsize(0.4364) : {})
+  },
   sm: {
     fontSize: '$sm',
     lineHeight: 1.53,

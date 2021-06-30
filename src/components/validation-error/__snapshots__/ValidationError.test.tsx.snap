@@ -20,31 +20,31 @@ exports[`ValidationError component renders a validation error 1`] = `
   margin-right: var(--sx-space-2);
 }
 
-.sxjb6b1 {
+.sxgpjqn {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxjb6b16tbwj--size-sm {
+.sxgpjqn6tbwj--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxjb6b16tbwj--size-sm::before {
+.sxgpjqn6tbwj--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxjb6b16tbwj--size-sm::after {
+.sxgpjqn6tbwj--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxjb6b1-5f21a {
+.sxgpjqn-5f21a {
   color: var(--sx-colors-danger);
   display: flex;
   align-items: center;
@@ -52,7 +52,7 @@ exports[`ValidationError component renders a validation error 1`] = `
 
 <div>
   <p
-    class="sxjb6b1 sxjb6b16tbwj--size-sm sxjb6b1-5f21a"
+    class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5f21a"
   >
     <svg
       aria-hidden="true"

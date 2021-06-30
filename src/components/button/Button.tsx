@@ -49,10 +49,9 @@ const StyledButton = styled('button', {
   cursor: 'pointer',
   display: 'flex',
   fontFamily: '$body',
-  fontWeight: 400,
+  fontWeight: 600,
   justifyContent: 'center',
   letterSpacing: '0.02em',
-  lineHeight: 1.4,
   p: 'unset',
   textDecoration: 'none',
   transition: 'all 125ms ease-out',
@@ -76,11 +75,13 @@ const StyledButton = styled('button', {
     size: {
       sm: {
         fontSize: '$sm',
+        lineHeight: 1.53,
         height: '$3',
-        px: '$3'
+        px: '$4'
       },
       md: {
         fontSize: '$md',
+        lineHeight: 1.5,
         height: '$4',
         px: '$5'
       }
