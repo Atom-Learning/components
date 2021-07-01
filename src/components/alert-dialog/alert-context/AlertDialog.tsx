@@ -7,7 +7,7 @@ import { Heading } from '../../heading'
 import { Stack } from '../../stack'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
-import { alert } from './types'
+import type { alert } from './types'
 
 type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
   css?: CSS
