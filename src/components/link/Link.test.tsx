@@ -49,7 +49,7 @@ describe(`Link component`, () => {
     expect(screen.getByRole('button')).toBeInTheDocument()
   })
 
-  it('can be nested within Text and Heading', async () => {
+  it.skip('can be nested within Text and Heading', async () => {
     render(
       <>
         <Text>

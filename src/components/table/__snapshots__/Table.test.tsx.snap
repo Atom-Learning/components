@@ -1,75 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component renders 1`] = `
-.sxbbxj8 {
-  font-family: var(--sx-fonts-sans);
-  color: var(--sx-colors-tonal600);
-  text-align: left;
-  vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  border-bottom: 1px solid var(--sx-colors-tonal200);
+@media  {
+  .c-gVYrkr {
+    width: 100%;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-bDizTf {
+    font-family: var(--fonts-sans);
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    vertical-align: middle;
+    padding: var(--space-2) var(--space-3);
+    background: var(--colors-primary500);
+  }
+
+  .c-iviKCh {
+    font-family: var(--fonts-sans);
+    color: var(--colors-tonal600);
+    text-align: left;
+    vertical-align: middle;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--colors-tonal200);
+  }
 }
 
-.sx4lk0d {
-  font-family: var(--sx-fonts-sans);
-  color: white;
-  font-weight: 700;
-  text-align: left;
-  vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  background: var(--sx-colors-primary500);
-}
-
-.sxwi5ht {
-  width: 100%;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-sm);
-}
-
-.sxwi5ht-a5b4a {
-  height: 100px;
-  width: 400px;
-  color: var(--sx-colors-primary500);
+@media  {
+  .c-gVYrkr-iliYStP-css {
+    height: 100px;
+    width: 400px;
+    color: var(--colors-primary500);
+  }
 }
 
 <div>
   <table
-    class="sxwi5ht sxwi5ht-a5b4a"
+    class="c-gVYrkr c-gVYrkr-iliYStP-css"
   >
     <thead
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <th
-          class="sx4lk0d"
+          class="c-bDizTf"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sxbbxj8"
+          class="c-iviKCh"
         >
           This is text
         </td>
       </tr>
     </tbody>
     <tfoot
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sxbbxj8"
+          class="c-iviKCh"
         >
           Footer 1
         </td>

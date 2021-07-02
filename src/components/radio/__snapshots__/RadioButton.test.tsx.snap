@@ -1,47 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component renders a disabled radio button 1`] = `
-.sxjdf4a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  padding: 0;
-  border-radius: var(--sx-radii-round);
-  border-color: var(--sx-colors-secondary300);
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-}
+@media  {
+  .c-bxybZx {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: var(--radii-round);
+    border-color: var(--colors-secondary300);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
 
-.sxjdf4a:focus {
-  outline: none;
-}
+  .c-bxybZx:focus {
+    outline: none;
+  }
 
-:checked + .sxjdf4a {
-  background-color: var(--sx-colors-secondary300);
-}
+  :checked + .c-bxybZx {
+    background-color: var(--colors-secondary300);
+  }
 
-[disabled] + .sxjdf4a {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
-}
+  [disabled] + .c-bxybZx {
+    background-color: var(--colors-tonal600);
+    border: 2px solid var(--colors-tonal600);
+  }
 
-.sxip64y {
-  height: var(--sx-sizes-0);
-  width: var(--sx-sizes-0);
-  border-radius: var(--sx-radii-round);
-  background-color: white;
+  .c-ghCviE {
+    height: var(--sizes-0);
+    width: var(--sizes-0);
+    border-radius: var(--radii-round);
+    background-color: white;
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
     role="radiogroup"
   >
     <input
@@ -53,7 +55,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="sxjdf4a"
+      class="c-bxybZx"
       data-disabled=""
       data-state="unchecked"
       disabled=""
@@ -67,47 +69,49 @@ exports[`Radio component renders a disabled radio button 1`] = `
 `;
 
 exports[`Radio component renders a radio button 1`] = `
-.sxjdf4a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  padding: 0;
-  border-radius: var(--sx-radii-round);
-  border-color: var(--sx-colors-secondary300);
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-}
+@media  {
+  .c-bxybZx {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    padding: 0;
+    border-radius: var(--radii-round);
+    border-color: var(--colors-secondary300);
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+  }
 
-.sxjdf4a:focus {
-  outline: none;
-}
+  .c-bxybZx:focus {
+    outline: none;
+  }
 
-:checked + .sxjdf4a {
-  background-color: var(--sx-colors-secondary300);
-}
+  :checked + .c-bxybZx {
+    background-color: var(--colors-secondary300);
+  }
 
-[disabled] + .sxjdf4a {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
-}
+  [disabled] + .c-bxybZx {
+    background-color: var(--colors-tonal600);
+    border: 2px solid var(--colors-tonal600);
+  }
 
-.sxip64y {
-  height: var(--sx-sizes-0);
-  width: var(--sx-sizes-0);
-  border-radius: var(--sx-radii-round);
-  background-color: white;
+  .c-ghCviE {
+    height: var(--sizes-0);
+    width: var(--sizes-0);
+    border-radius: var(--radii-round);
+    background-color: white;
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
     role="radiogroup"
   >
     <input
@@ -118,7 +122,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="sxjdf4a"
+      class="c-bxybZx"
       data-radix-roving-focus-group-id="radix-id-0-1"
       data-state="unchecked"
       role="radio"

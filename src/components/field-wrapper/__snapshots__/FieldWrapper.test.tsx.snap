@@ -1,181 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWrapper component renders 1`] = `
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-epZMHO {
+    color: var(--colors-secondary300);
+    display: block;
+    font-family: var(--fonts-sans);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .c-ghbaIN {
+    background: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary500);
+    cursor: pointer;
+    font-family: var(--fonts-sans);
+    text-decoration: none;
+  }
+
+  .c-ghbaIN:focus,
+  .c-ghbaIN:hover {
+    color: var(--colors-primary900);
+    text-decoration: underline;
+  }
+
+  .c-ghbaIN:active {
+    color: var(--colors-primary500);
+  }
+
+  .c-dqbvHS > .c-ghbaIN,
+  .c-fbjNGJ > .c-ghbaIN,
+  .c-PJLV > .c-ghbaIN {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-dqbvHS > .c-ghbaIN::before,
+  .c-dqbvHS > .c-ghbaIN::after,
+  .c-fbjNGJ > .c-ghbaIN::before,
+  .c-fbjNGJ > .c-ghbaIN::after,
+  .c-PJLV > .c-ghbaIN::before,
+  .c-PJLV > .c-ghbaIN::after {
+    content: none;
+  }
+
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
+
+  .c-dqbvHS {
+    color: var(--colors-tonal900);
+    font-family: var(--fonts-sans);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
+@media  {
+  .c-epZMHO-ehWmjE-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.625;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::before {
+    content: '';
+    margin-bottom: -0.4489em;
+    display: table;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::after {
+    content: '';
+    margin-top: -0.4489em;
+    display: table;
+  }
+
+  .c-ghbaIN-jZyHXx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.69;
+  }
+
+  .c-ghbaIN-jZyHXx-size-sm::before {
+    content: '';
+    margin-bottom: -0.477em;
+    display: table;
+  }
+
+  .c-ghbaIN-jZyHXx-size-sm::after {
+    content: '';
+    margin-top: -0.477em;
+    display: table;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.69;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::before {
+    content: '';
+    margin-bottom: -0.477em;
+    display: table;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::after {
+    content: '';
+    margin-top: -0.477em;
+    display: table;
+  }
 }
 
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
-}
+@media  {
+  .c-dhzjXW-iffOmLG-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-2);
+  }
 
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
-}
-
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-weight: 400;
-  margin: 0;
-}
-
-.sxfey5oxzxpn--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
-}
-
-.sxfey5oxzxpn--size-sm::before {
-  content: '';
-  margin-bottom: -0.477em;
-  display: table;
-}
-
-.sxfey5oxzxpn--size-sm::after {
-  content: '';
-  margin-top: -0.477em;
-  display: table;
-}
-
-.sxfey5o-m6cy5 {
-  color: var(--sx-colors-danger);
-  margin-top: var(--sx-space-1);
-}
-
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sxyxibq {
-  background: unset;
-  border: unset;
-  padding: unset;
-  color: var(--sx-colors-primary500);
-  cursor: pointer;
-  font-family: var(--sx-fonts-sans);
-  text-decoration: none;
-}
-
-.sxyxibq:focus,
-.sxyxibq:hover {
-  color: var(--sx-colors-primary900);
-  text-decoration: underline;
-}
-
-.sxyxibq:active {
-  color: var(--sx-colors-primary500);
-}
-
-.sxfey5o > .sxyxibq,
-.sxe0tmj > .sxyxibq,
-.sx03kze > .sxyxibq {
-  font-size: 100%;
-  line-height: 1;
-}
-
-.sxfey5o > .sxyxibq::before,
-.sxfey5o > .sxyxibq::after,
-.sxe0tmj > .sxyxibq::before,
-.sxe0tmj > .sxyxibq::after,
-.sx03kze > .sxyxibq::before,
-.sx03kze > .sxyxibq::after {
-  content: none;
-}
-
-.sxyxibqxzxpn--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
-}
-
-.sxyxibqxzxpn--size-sm::before {
-  content: '';
-  margin-bottom: -0.477em;
-  display: table;
-}
-
-.sxyxibqxzxpn--size-sm::after {
-  content: '';
-  margin-top: -0.477em;
-  display: table;
+  .c-dqbvHS-iisTNcj-css {
+    color: var(--colors-danger);
+    margin-top: var(--space-1);
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx2cs53 sx2cs53-re4mk"
+      class="c-dhzjXW c-dhzjXW-iffOmLG-css"
     >
       <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md"
+        class="c-epZMHO c-epZMHO-ehWmjE-size-md"
         for="example"
       >
         Example Field
       </label>
       <a
-        class="sxyxibq sxyxibqxzxpn--size-sm"
+        class="c-ghbaIN c-ghbaIN-jZyHXx-size-sm"
         href="https://example.com"
       >
         Example prompt
       </a>
     </div>
     <input
-      class="sx47aq8"
+      class="c-eNcmZt"
       id="example"
       name="example"
       type="text"
     />
     <p
-      class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+      class="c-dqbvHS c-dqbvHS-jZyHXx-size-sm c-dqbvHS-iisTNcj-css"
     >
       Example error
     </p>

@@ -1,25 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon component renders an icon 1`] = `
-.sxib16r {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
+@media  {
+  .c-dBUxNn {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+  }
 }
 
-.sxib16rmbqqh--size-md {
-  height: var(--sx-sizes-2);
-  width: var(--sx-sizes-2);
+@media  {
+  .c-dBUxNn-fDXBFo-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
 }
 
 <div>
   <svg
     aria-hidden="true"
-    class="sxib16r sxib16rmbqqh--size-md"
+    class="c-dBUxNn c-dBUxNn-fDXBFo-size-md"
     title="check"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"

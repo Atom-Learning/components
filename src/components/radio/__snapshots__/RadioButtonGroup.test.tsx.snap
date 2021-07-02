@@ -3,7 +3,7 @@
 exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
     role="radiogroup"
   />
 </div>

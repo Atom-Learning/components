@@ -1,37 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-weight: 400;
-  margin: 0;
+@media  {
+  .c-dqbvHS {
+    color: var(--colors-tonal900);
+    font-family: var(--fonts-sans);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sxfey5oxzxpn--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
+@media  {
+  .c-dqbvHS-jZyHXx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.69;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::before {
+    content: '';
+    margin-bottom: -0.477em;
+    display: table;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::after {
+    content: '';
+    margin-top: -0.477em;
+    display: table;
+  }
 }
 
-.sxfey5oxzxpn--size-sm::before {
-  content: '';
-  margin-bottom: -0.477em;
-  display: table;
-}
-
-.sxfey5oxzxpn--size-sm::after {
-  content: '';
-  margin-top: -0.477em;
-  display: table;
-}
-
-.sxfey5o-25jen {
-  color: var(--sx-colors-danger);
+@media  {
+  .c-dqbvHS-iiymbh-css {
+    color: var(--colors-danger);
+  }
 }
 
 <div>
   <p
-    class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-25jen"
+    class="c-dqbvHS c-dqbvHS-jZyHXx-size-sm c-dqbvHS-iiymbh-css"
   >
     VALIDATION ERROR
   </p>

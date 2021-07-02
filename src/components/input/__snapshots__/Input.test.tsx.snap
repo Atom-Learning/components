@@ -1,45 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
+@media  {
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
-}
-
-.sx47aq8-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-eNcmZt-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 <div>
   <input
-    class="sx47aq8 sx47aq8-6obnf"
+    class="c-eNcmZt c-eNcmZt-ikLAKdM-css"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -49,45 +53,49 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
+@media  {
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
-}
-
-.sx47aq8-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-eNcmZt-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 <div>
   <input
-    class="sx47aq8 sx47aq8-6obnf"
+    class="c-eNcmZt c-eNcmZt-ikLAKdM-css"
     placeholder="INPUT"
     type="text"
   />

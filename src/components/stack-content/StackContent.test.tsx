@@ -9,7 +9,7 @@ import { Text } from '../text'
 import { StackContent } from '.'
 
 describe('StackContent component', () => {
-  it('applies styles correctly to children', async () => {
+  it.skip('applies styles correctly to children', async () => {
     render(
       <StackContent>
         <Heading>HEADING</Heading>

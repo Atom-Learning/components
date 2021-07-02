@@ -7,9 +7,7 @@ import { Button, InputField, PasswordField } from '../'
 import { Form } from '.'
 
 describe(`Form component`, () => {
-  // the Loader's CSS turns up in the snapshot.
-  // TODO: figure out why ...
-  it.skip('renders a form', async () => {
+  it('renders a form', async () => {
     const { container } = render(
       <Form onSubmit={jest.fn()}>
         <InputField name="name" label="Name" />

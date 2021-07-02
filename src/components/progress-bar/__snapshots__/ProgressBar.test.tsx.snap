@@ -1,25 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
-.sxdyqdb {
-  border-radius: var(--sx-radii-round);
-  height: 12px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+@media  {
+  .c-bAPtzY {
+    border-radius: var(--radii-round);
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .c-kZAonO {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: currentcolor;
+    height: 100%;
+  }
 }
 
-.sxdyqdb4bknw--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-primary500);
-}
-
-.sxypqsd {
-  box-sizing: border-box;
-  position: absolute;
-  background-color: currentcolor;
-  height: 100%;
+@media  {
+  .c-bAPtzY-jNZdEO-cv {
+    border: 1px solid var(--colors-tonal400);
+    background: white;
+    color: var(--colors-primary500);
+  }
 }
 
 <div>
@@ -27,13 +31,13 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxdyqdb sxdyqdb03kze--appearance-outline sxdyqdb03kze--theme-primary sxdyqdb4bknw--c2"
+    class="c-bAPtzY c-bAPtzY-jNZdEO-cv"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"
   >
     <div
-      class="sxypqsd"
+      class="c-kZAonO"
       data-max="100"
       data-state="indeterminate"
       style="width: 50%;"
@@ -43,36 +47,40 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 `;
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
-.sxdyqdb {
-  border-radius: var(--sx-radii-round);
-  height: 12px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+@media  {
+  .c-bAPtzY {
+    border-radius: var(--radii-round);
+    height: 12px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .c-kZAonO {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: currentcolor;
+    height: 100%;
+  }
 }
 
-.sxdyqdb4bknw--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-primary500);
-}
+@media  {
+  .c-bAPtzY-jNZdEO-cv {
+    border: 1px solid var(--colors-tonal400);
+    background: white;
+    color: var(--colors-primary500);
+  }
 
-.sxdyqdb4qfa7--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-secondary500);
-}
+  .c-bAPtzY-kjCNYU-cv {
+    border: 1px solid var(--colors-tonal400);
+    background: white;
+    color: var(--colors-secondary500);
+  }
 
-.sxdyqdbmrg77--c2 {
-  background: var(--sx-colors-tonal300);
-  color: var(--sx-colors-primary500);
-}
-
-.sxypqsd {
-  box-sizing: border-box;
-  position: absolute;
-  background-color: currentcolor;
-  height: 100%;
+  .c-bAPtzY-bXmYIg-cv {
+    background: var(--colors-tonal300);
+    color: var(--colors-primary500);
+  }
 }
 
 <div>
@@ -80,13 +88,13 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxdyqdb sxdyqdb03kze--appearance-solid sxdyqdb03kze--theme-primary sxdyqdbmrg77--c2"
+    class="c-bAPtzY c-bAPtzY-bXmYIg-cv"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"
   >
     <div
-      class="sxypqsd"
+      class="c-kZAonO"
       data-max="100"
       data-state="indeterminate"
       style="width: 50%;"

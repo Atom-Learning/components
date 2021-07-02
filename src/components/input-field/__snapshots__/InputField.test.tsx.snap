@@ -1,136 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField component renders a field in error state 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-epZMHO {
+    color: var(--colors-secondary300);
+    display: block;
+    font-family: var(--fonts-sans);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
+
+  .c-dqbvHS {
+    color: var(--colors-tonal900);
+    font-family: var(--fonts-sans);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-epZMHO-ehWmjE-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.625;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::before {
+    content: '';
+    margin-bottom: -0.4489em;
+    display: table;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::after {
+    content: '';
+    margin-top: -0.4489em;
+    display: table;
+  }
+
+  .c-eNcmZt-bXVTjQ-state-error {
+    border: 1px solid var(--colors-danger);
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.69;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::before {
+    content: '';
+    margin-bottom: -0.477em;
+    display: table;
+  }
+
+  .c-dqbvHS-jZyHXx-size-sm::after {
+    content: '';
+    margin-top: -0.477em;
+    display: table;
+  }
 }
 
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
-}
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-weight: 400;
-  margin: 0;
-}
+  .c-dhzjXW-iffOmLG-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-2);
+  }
 
-.sxfey5oxzxpn--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
-}
-
-.sxfey5oxzxpn--size-sm::before {
-  content: '';
-  margin-bottom: -0.477em;
-  display: table;
-}
-
-.sxfey5oxzxpn--size-sm::after {
-  content: '';
-  margin-top: -0.477em;
-  display: table;
-}
-
-.sxfey5o-m6cy5 {
-  color: var(--sx-colors-danger);
-  margin-top: var(--sx-space-1);
-}
-
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
-}
-
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
-}
-
-.sx47aq8hpnso--state-error {
-  border: 1px solid var(--sx-colors-danger);
+  .c-dqbvHS-iisTNcj-css {
+    color: var(--colors-danger);
+    margin-top: var(--space-1);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="c-dhzjXW c-dhzjXW-iffOmLG-css"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="c-epZMHO c-epZMHO-ehWmjE-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8 sx47aq8hpnso--state-error"
+        class="c-eNcmZt c-eNcmZt-bXVTjQ-state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
       />
       <p
-        class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+        class="c-dqbvHS c-dqbvHS-jZyHXx-size-sm c-dqbvHS-iisTNcj-css"
       >
         This field is required
       </p>
@@ -145,97 +151,103 @@ exports[`InputField component renders a field in error state 1`] = `
 `;
 
 exports[`InputField component renders a field with a number input 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-epZMHO {
+    color: var(--colors-secondary300);
+    display: block;
+    font-family: var(--fonts-sans);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
 }
 
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-epZMHO-ehWmjE-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.625;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::before {
+    content: '';
+    margin-bottom: -0.4489em;
+    display: table;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::after {
+    content: '';
+    margin-top: -0.4489em;
+    display: table;
+  }
 }
 
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
-}
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
-}
-
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
+  .c-dhzjXW-iffOmLG-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-2);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze sx03kze-6obnf"
+      class="c-PJLV c-PJLV-ikLAKdM-css"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="c-dhzjXW c-dhzjXW-iffOmLG-css"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="c-epZMHO c-epZMHO-ehWmjE-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8"
+        class="c-eNcmZt"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -249,97 +261,103 @@ exports[`InputField component renders a field with a number input 1`] = `
 `;
 
 exports[`InputField component renders a field with a text input 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-epZMHO {
+    color: var(--colors-secondary300);
+    display: block;
+    font-family: var(--fonts-sans);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .c-eNcmZt {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal900);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    width: 100%;
+    padding: var(--space-3);
+    transition: all 100ms ease-out;
+  }
+
+  .c-eNcmZt:focus {
+    border-color: var(--colors-primary900);
+    box-shadow: inset 0 0 0 1px var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-eNcmZt[disabled] {
+    background-color: var(--colors-tonal300);
+    color: var(--colors-tonal700);
+    cursor: not-allowed;
+  }
 }
 
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-epZMHO-ehWmjE-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.625;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::before {
+    content: '';
+    margin-bottom: -0.4489em;
+    display: table;
+  }
+
+  .c-epZMHO-ehWmjE-size-md::after {
+    content: '';
+    margin-top: -0.4489em;
+    display: table;
+  }
 }
 
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
-}
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx47aq8 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
-  transition: all 100ms ease-out;
-}
-
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
-  cursor: not-allowed;
+  .c-dhzjXW-iffOmLG-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-2);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze sx03kze-6obnf"
+      class="c-PJLV c-PJLV-ikLAKdM-css"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="c-dhzjXW c-dhzjXW-iffOmLG-css"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="c-epZMHO c-epZMHO-ehWmjE-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8"
+        class="c-eNcmZt"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

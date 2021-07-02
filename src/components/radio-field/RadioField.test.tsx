@@ -8,7 +8,7 @@ import { RadioGroupField } from '.'
 
 const ExampleRadioField = () => (
   <IdProvider>
-    <Form>
+    <Form onSubmit={() => null}>
       <RadioGroupField name="example" defaultValue="1" label="Example options">
         <RadioGroupField.Item label="1" value="1" />
         <RadioGroupField.Item label="2" value="2" />
