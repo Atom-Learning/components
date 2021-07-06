@@ -11,9 +11,11 @@ export const StyledHeading = styled('h2', {
   variants: {
     size: {
       xs: {
+        fontFamily: '$body',
+        fontWeight: 600,
         fontSize: '$md',
-        lineHeight: 1.25,
-        ...capsize(0.271, 0.279)
+        lineHeight: 1.5,
+        ...capsize(0.3864)
       },
       sm: {
         fontSize: '$lg',
