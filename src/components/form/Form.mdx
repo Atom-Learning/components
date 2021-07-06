@@ -139,6 +139,35 @@ These properties only apply to text inputs. If `true`, the value will be convert
 
 The `process` property accepts a function of type `(value: any) => any`. It can be used to process the value after validation.
 
+## Persisting form data
+
+`Form` is integrated with `react-hook-form-persist`'s package to save form data into session storage:
+
+- send `persist` prop to Form component to persist form data in sessionStorage
+- `persist` object has a required `id`, an optional `storage` prop and optional `include` or `exclude` arrays with reference to the input's names
+- `include` will only save the listed inputs to session storage and `exclude` will exclude the listed inputs
+- if both `include` and `exclude` are sent it will ignore `include` and use only `exclude`
+- if no `storage` prop is sent, it will default to use sessionStorage, however you can override this by sending `local` to use localStorage
+- persisted form data in sessionStorage or localStorage will populate form with `defaultValues` on refresh
+
+Here's an example using the `persist` prop:
+
+```tsx
+<Form persist={{ id: 'nameAndSecret', exclude: ['secret'], storage: 'local' }}>
+  <InputField
+    name="name"
+    label="Name"
+    validation={{ required: 'Name is required' }}
+  />
+  <InputField
+    name="secret"
+    label="Secret"
+    validation={{ required: 'Secret is required' }}
+  />
+  <Button type="submit">Submit</Button>
+</Form>
+```
+
 ## Composing form field components
 
 It’s easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `ValidationError` etc) but there are some requirements that your new
