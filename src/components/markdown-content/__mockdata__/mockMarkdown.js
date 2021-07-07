@@ -29,8 +29,6 @@ _This is italic text_
 
 _This is italic text_
 
-~~This is strikethrough text~~
-
 ---
 
 ## Blockquotes

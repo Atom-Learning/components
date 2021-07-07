@@ -424,11 +424,6 @@ exports[`MarkdownContent component renders 1`] = `
         This is italic text
       </em>
     </p>
-    <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
-    >
-      ~~This is strikethrough text~~
-    </p>
     <hr
       class="sx95fm0 sx95fm0-6x0gg"
     />
