@@ -5,6 +5,46 @@ description: This is the description
 category: Content
 ---
 
-```jsx preview
-<MarkdownContent />
+`MarkdownContent` is a content component that will transform a Markdown string into Atom Learning design system components.
+
+Currently it suppports converts the following Markdown elements into components:
+| Type | Component | Supported |
+| --- | --- | - |
+| text | `{value}` | ✅ |
+| emphasis | `<em />` | ✅ |
+| strong | `<strong />` | ✅ |
+| heading | `<Heading />` | ✅ |
+| paragraph | `<Text />` | ✅ |
+| link | `<Link />` | ✅ |
+| blockquote | | ⛔ |
+| list | `<List />` | ✅ |
+| listItem | `<List.Item />` | ✅ |
+| inlineCode | `<Box as="code" />` | ✅ |
+| code | `<Box as="pre" />` | ✅ |
+| image | `<Image />` | ✅ |
+| thematicBreak | `<Divider />` | ✅ |
+
+```tsx live
+<MarkdownContent
+  content={`
+## This is a heading 2
+This will be a paragraph
+[And this will  be a link](https://atomlearning.co.uk)
+`}
+/>
+```
+
+The `MarkdownContent` component supports [Markdown directives](https://talk.commonmark.org/t/generic-directives-plugins-syntax/444) via the `handleDirectives` prop. This prop takes a function that returns a `ReactElement`, the function will have access to the Markdown `node` and the `handleNode` function that can be used to transform child nodes.
+
+See the following example that transform the following directive into a `Button` component:
+
+```tsx live
+<MarkdownContent
+  content={`:button[This is a button]{href=https://atomlearning.co.uk theme="secondary" isRounded=true appearance=outline}`}
+  handleDirectives={(node, handleNode) =>
+    node.name === 'button' ? (
+      <Button {...node.attributes}>{node.children.map(handleNode)}</Button>
+    ) : null
+  }
+/>
 ```

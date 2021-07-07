@@ -2,6 +2,7 @@ module.exports = {
   roots: ['<rootDir>/src'],
   snapshotSerializers: ['@atom-learning/jest-stitches'],
   coveragePathIgnorePatterns: ['/src/stitches.ts'],
+  testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/'],
   setupFilesAfterEnv: ['./jest-setup.ts'],
   moduleNameMapper: {
@@ -9,6 +10,10 @@ module.exports = {
     '^react$': '<rootDir>/node_modules/react'
   },
   transform: {
-    '^.+\\.(ts|tsx)$': 'babel-jest'
-  }
+    '^.+\\.[t|j]sx?$': 'babel-jest'
+  },
+  transformIgnorePatterns: [
+    // node_modules that need to be transformed because they are pure ESM modules.
+    'node_modules/(?!mdast|micromark|(parse|character|stringify)-entities|unist-util)'
+  ]
 }
