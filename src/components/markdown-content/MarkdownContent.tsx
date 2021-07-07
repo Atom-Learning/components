@@ -35,6 +35,7 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
       const getSize = () => {
         switch (node.depth) {
           case 1:
+            return 'xl'
           case 2:
             return 'lg'
           case 3:

@@ -51,7 +51,7 @@ type HeadingProps = Override<
       | 'h6'
       | React.ComponentType
       | React.ElementType
-    size?: 'xs' | 'sm' | 'md' | 'lg'
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   }
 >
 

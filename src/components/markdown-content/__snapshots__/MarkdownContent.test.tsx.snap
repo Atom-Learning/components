@@ -59,6 +59,23 @@ exports[`MarkdownContent component renders 1`] = `
   display: table;
 }
 
+.sx2g5mn2wj9r--size-xl {
+  font-size: var(--sx-fontSizes-xxxl);
+  line-height: 1.35;
+}
+
+.sx2g5mn2wj9r--size-xl::before {
+  content: '';
+  margin-bottom: -0.312em;
+  display: table;
+}
+
+.sx2g5mn2wj9r--size-xl::after {
+  content: '';
+  margin-top: -0.312em;
+  display: table;
+}
+
 .sx2g5mnr3xir--size-md {
   font-size: var(--sx-fontSizes-xl);
   line-height: 1.42;
@@ -339,7 +356,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-6x0gg"
     />
     <h1
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sx2g5mn sx2g5mn2wj9r--size-xl sx2g5mn-gfp0x"
     >
       h1 Heading
     </h1>
