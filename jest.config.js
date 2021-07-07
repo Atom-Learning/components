@@ -11,9 +11,5 @@ module.exports = {
   },
   transform: {
     '^.+\\.[t|j]sx?$': 'babel-jest'
-  },
-  transformIgnorePatterns: [
-    // node_modules that need to be transformed because they are pure ESM modules.
-    'node_modules/(?!mdast|micromark|(parse|character|stringify)-entities|unist-util)'
-  ]
+  }
 }

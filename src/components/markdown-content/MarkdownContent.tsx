@@ -1,6 +1,6 @@
-import { directiveFromMarkdown } from 'mdast-util-directive'
-import { fromMarkdown } from 'mdast-util-from-markdown'
-import { directive } from 'micromark-extension-directive'
+import directive from 'mdast-util-directive'
+import fromMarkdown from 'mdast-util-from-markdown'
+import syntax from 'micromark-extension-directive'
 import * as React from 'react'
 
 import { Box } from '../box/Box'
@@ -22,8 +22,8 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   handleDirectives = () => null
 }) => {
   const AST = fromMarkdown(content, {
-    extensions: [directive()],
-    mdastExtensions: [directiveFromMarkdown]
+    extensions: [syntax()],
+    mdastExtensions: [directive.fromMarkdown]
   })
 
   const handleNode = (node) => {
