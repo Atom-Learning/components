@@ -10,6 +10,6 @@ module.exports = {
     '^react$': '<rootDir>/node_modules/react'
   },
   transform: {
-    '^.+\\.[t|j]sx?$': 'babel-jest'
+    '^.+\\.(ts|tsx)$': 'babel-jest'
   }
 }
