@@ -1,26 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownContent component renders 1`] = `
-.sx03kze-1asw5 {
-  display: inline-block;
-  background: var(--sx-colors-tonal200);
-  padding: var(--sx-space-0) var(--sx-space-1);
-  border-radius: var(--sx-radii-0);
-  font-family: var(--sx-fonts-mono);
-  font-size: 85%;
-}
-
-.sx03kze-oyulj {
-  background: var(--sx-colors-tonal200);
-  padding: var(--sx-space-3);
-  margin-top: var(--sx-space-4);
-  margin-bottom: var(--sx-space-4);
-  border-radius: var(--sx-radii-1);
-  line-height: 1.4;
-  font-family: var(--sx-fonts-mono);
-  font-size: var(--sx-fontSizes-sm);
-}
-
 .sx95fm0 {
   border: 0;
   border-top: 1px solid var(--sx-colors-tonal400);
@@ -219,19 +199,6 @@ exports[`MarkdownContent component renders 1`] = `
   line-height: 1.625;
 }
 
-.sxu0om4-zivs9 {
-  max-width: 75ch;
-}
-
-.sxu0om4-zivs9:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
-}
-
-.sxu0om4-zivs9 p:before,
-.sxu0om4-zivs9 p:after {
-  display: none;
-}
-
 .sxk9hvt {
   font-family: var(--sx-fonts-sans);
   margin: unset;
@@ -259,24 +226,6 @@ exports[`MarkdownContent component renders 1`] = `
 .sxk9hvt5dbgn--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.625;
-}
-
-.sxk9hvt-zivs9 {
-  max-width: 75ch;
-}
-
-.sxk9hvt-zivs9:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
-}
-
-.sxk9hvt-zivs9 p:before,
-.sxk9hvt-zivs9 p:after {
-  display: none;
-}
-
-.sxk9hvt-jvdf5 p:before,
-.sxk9hvt-jvdf5 p:after {
-  display: none;
 }
 
 .sxfxyev {
@@ -338,6 +287,31 @@ exports[`MarkdownContent component renders 1`] = `
 
 .sx03kze-pwzbu em {
   font-style: italic;
+}
+
+.sxoyulj {
+  background: var(--sx-colors-tonal200);
+  padding: var(--sx-space-3);
+  margin-top: var(--sx-space-4);
+  margin-bottom: var(--sx-space-4);
+  border-radius: var(--sx-radii-1);
+  line-height: 1.4;
+  font-family: var(--sx-fonts-mono);
+  font-size: var(--sx-fontSizes-sm);
+}
+
+.sx1asw5 {
+  display: inline-block;
+  background: var(--sx-colors-tonal200);
+  padding: var(--sx-space-0) var(--sx-space-1);
+  border-radius: var(--sx-radii-0);
+  font-family: var(--sx-fonts-mono);
+  font-size: 85%;
+}
+
+.sxjvdf5 p:before,
+.sxjvdf5 p:after {
+  display: none;
 }
 
 <div>
@@ -452,7 +426,7 @@ exports[`MarkdownContent component renders 1`] = `
       Unordered
     </h3>
     <ul
-      class="sxk9hvt sxk9hvt5dbgn--size-md sxk9hvt-zivs9"
+      class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
     >
       <li
         class="sx03kze"
@@ -462,19 +436,19 @@ exports[`MarkdownContent component renders 1`] = `
         >
           Create a list by starting a line with 
           <code
-            class="sx03kze sx03kze-1asw5"
+            class="sx03kze sx1asw5"
           >
             +
           </code>
           , 
           <code
-            class="sx03kze sx03kze-1asw5"
+            class="sx03kze sx1asw5"
           >
             -
           </code>
           , or 
           <code
-            class="sx03kze sx03kze-1asw5"
+            class="sx03kze sx1asw5"
           >
             *
           </code>
@@ -489,7 +463,7 @@ exports[`MarkdownContent component renders 1`] = `
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="sxk9hvt sxk9hvt5dbgn--size-md sxk9hvt-jvdf5"
+          class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
         >
           <li
             class="sx03kze"
@@ -500,7 +474,7 @@ exports[`MarkdownContent component renders 1`] = `
               Marker character change forces new list start:
             </p>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxk9hvt-jvdf5"
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
             >
               <li
                 class="sx03kze"
@@ -513,7 +487,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxk9hvt-jvdf5"
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
             >
               <li
                 class="sx03kze"
@@ -526,7 +500,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxk9hvt-jvdf5"
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
             >
               <li
                 class="sx03kze"
@@ -557,7 +531,7 @@ exports[`MarkdownContent component renders 1`] = `
       Ordered
     </h3>
     <ol
-      class="sxu0om4 sxu0om45dbgn--size-md sxu0om4-zivs9"
+      class="sxu0om4 sxu0om45dbgn--size-md sxjvdf5"
     >
       <li
         class="sx03kze"
@@ -603,7 +577,7 @@ exports[`MarkdownContent component renders 1`] = `
         >
           ...or keep all the numbers as 
           <code
-            class="sx03kze sx03kze-1asw5"
+            class="sx03kze sx1asw5"
           >
             1.
           </code>
@@ -631,7 +605,7 @@ exports[`MarkdownContent component renders 1`] = `
     >
       This is inline 
       <code
-        class="sx03kze sx03kze-1asw5"
+        class="sx03kze sx1asw5"
       >
         code
       </code>
@@ -642,7 +616,7 @@ exports[`MarkdownContent component renders 1`] = `
       Indented code
     </h3>
     <pre
-      class="sx03kze sx03kze-oyulj"
+      class="sx03kze sxoyulj"
     >
       // Some comments
 line 1 of code
@@ -655,7 +629,7 @@ line 3 of code
       Block code "fences"
     </h3>
     <pre
-      class="sx03kze sx03kze-oyulj"
+      class="sx03kze sxoyulj"
     >
       Sample text here...
     </pre>

@@ -39,7 +39,7 @@ export const StyledHeading = styled('h2', {
   }
 })
 
-type HeadingProps = Override<
+export type HeadingProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
     as?:
