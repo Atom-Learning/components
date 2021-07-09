@@ -109,16 +109,20 @@ exports[`MarkdownContent component renders 1`] = `
   display: table;
 }
 
-.sxhyvnz-gfp0x {
+.sxhyvnz-y9wmg {
   max-width: 65ch;
 }
 
-.sxhyvnz-gfp0x:not(:first-child) {
-  margin-top: var(--sx-space-4);
+.sxhyvnz-y9wmg:not(:first-child) {
+  margin-top: var(--sx-space-5);
 }
 
-.sxhyvnz-gfp0x:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
+.sxhyvnz-y9wmg:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
+}
+
+.sxhyvnz-y9wmg {
+  color: inherit;
 }
 
 .sxkoa5n {
@@ -164,12 +168,20 @@ exports[`MarkdownContent component renders 1`] = `
   display: table;
 }
 
-.sxgpjqn-z6xef {
+.sxgpjqn-tp9pp {
   max-width: 75ch;
 }
 
-.sxgpjqn-z6xef:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
+.sxgpjqn-tp9pp:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
+}
+
+.sxgpjqn-tp9pp {
+  color: inherit;
+}
+
+.sxgpjqn-2obmh {
+  color: inherit;
 }
 
 .sxfcjnm {
@@ -218,16 +230,16 @@ exports[`MarkdownContent component renders 1`] = `
   font-weight: bold;
 }
 
-.sxfcjnm-zivs9 {
+.sxfcjnm-r8wfs {
   max-width: 75ch;
 }
 
-.sxfcjnm-zivs9:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
+.sxfcjnm-r8wfs:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
 }
 
-.sxfcjnm-zivs9 p:before,
-.sxfcjnm-zivs9 p:after {
+.sxfcjnm-r8wfs p:before,
+.sxfcjnm-r8wfs p:after {
   display: none;
 }
 
@@ -289,11 +301,11 @@ exports[`MarkdownContent component renders 1`] = `
   display: table;
 }
 
-.sx03kze-pwzbu strong {
+.sx4d3ki {
   font-weight: 600;
 }
 
-.sx03kze-pwzbu em {
+.sxiwbex {
   font-style: italic;
 }
 
@@ -319,13 +331,13 @@ exports[`MarkdownContent component renders 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kze-pwzbu"
+    class="sx03kze"
   >
     <hr
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Headings
     </h2>
@@ -333,32 +345,32 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h1
-      class="sxhyvnz sxhyvnzidto3--size-xl sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzidto3--size-xl sxhyvnz-y9wmg"
     >
       h1 Heading
     </h1>
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       h2 Heading
     </h2>
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       h3 Heading
     </h3>
     <h4
-      class="sxhyvnz sxhyvnzlijcm--size-sm sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzlijcm--size-sm sxhyvnz-y9wmg"
     >
       h4 Heading
     </h4>
     <h5
-      class="sxhyvnz sxhyvnzjrsjl--size-xs sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzjrsjl--size-xs sxhyvnz-y9wmg"
     >
       h5 Heading
     </h5>
     <h6
-      class="sxhyvnz sxhyvnzjrsjl--size-xs sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzjrsjl--size-xs sxhyvnz-y9wmg"
     >
       h6 Heading
     </h6>
@@ -366,7 +378,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Emphasis
     </h2>
@@ -374,30 +386,38 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
@@ -405,7 +425,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Blockquotes
     </h2>
@@ -416,7 +436,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Lists
     </h2>
@@ -424,18 +444,18 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       Unordered
     </h3>
     <ul
-      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-zivs9"
+      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-r8wfs"
     >
       <li
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Create a list by starting a line with 
           <code
@@ -461,7 +481,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
@@ -472,7 +492,7 @@ exports[`MarkdownContent component renders 1`] = `
             class="sx03kze"
           >
             <p
-              class="sxgpjqn sxgpjqnryo8u--size-md"
+              class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
             >
               Marker character change forces new list start:
             </p>
@@ -483,7 +503,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxgpjqn sxgpjqnryo8u--size-md"
+                  class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
                 >
                   Ac tristique libero volutpat at
                 </p>
@@ -496,7 +516,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxgpjqn sxgpjqnryo8u--size-md"
+                  class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
@@ -509,7 +529,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxgpjqn sxgpjqnryo8u--size-md"
+                  class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -522,25 +542,25 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Very easy!
         </p>
       </li>
     </ul>
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       Ordered
     </h3>
     <ol
-      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm0fmz6--as-ol sxfcjnm-zivs9"
+      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm0fmz6--as-ol sxfcjnm-r8wfs"
     >
       <li
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -549,7 +569,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Consectetur adipiscing elit
         </p>
@@ -558,7 +578,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           Integer molestie lorem at massa
         </p>
@@ -567,7 +587,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           You can use sequential numbers...
         </p>
@@ -576,7 +596,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxgpjqn sxgpjqnryo8u--size-md"
+          class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-2obmh"
         >
           ...or keep all the numbers as 
           <code
@@ -591,7 +611,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Code
     </h2>
@@ -599,12 +619,12 @@ exports[`MarkdownContent component renders 1`] = `
       class="sx95fm0 sx95fm0-528w3"
     />
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       Inline code
     </h3>
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
       This is inline 
       <code
@@ -614,7 +634,7 @@ exports[`MarkdownContent component renders 1`] = `
       </code>
     </p>
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       Indented code
     </h3>
@@ -627,7 +647,7 @@ line 2 of code
 line 3 of code
     </pre>
     <h3
-      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzq3glm--size-md sxhyvnz-y9wmg"
     >
       Block code "fences"
     </h3>
@@ -640,7 +660,7 @@ line 3 of code
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Links
     </h2>
@@ -648,7 +668,7 @@ line 3 of code
       class="sx95fm0 sx95fm0-528w3"
     />
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
       <a
         class="sx18gt8 sx18gt8ryo8u--size-md"
@@ -658,7 +678,7 @@ line 3 of code
       </a>
     </p>
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
       <a
         class="sx18gt8 sx18gt8ryo8u--size-md"
@@ -672,7 +692,7 @@ line 3 of code
       class="sx95fm0 sx95fm0-528w3"
     />
     <h2
-      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-gfp0x"
+      class="sxhyvnz sxhyvnzzf4dg--size-lg sxhyvnz-y9wmg"
     >
       Images
     </h2>
@@ -680,7 +700,7 @@ line 3 of code
       class="sx95fm0 sx95fm0-528w3"
     />
     <p
-      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-z6xef"
+      class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
       <img
         alt="Minion"

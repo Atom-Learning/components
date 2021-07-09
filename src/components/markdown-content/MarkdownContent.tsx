@@ -3,7 +3,7 @@ import fromMarkdown from 'mdast-util-from-markdown'
 import syntax from 'micromark-extension-directive'
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { Box } from '../box/Box'
 import { Divider } from '../divider/Divider'
@@ -17,6 +17,7 @@ import { Text } from '../text/Text'
 type MarkdownContentProps = {
   content: string
   handleDirectives?: (node, handleNode) => React.ReactElement
+  css?: CSS
 }
 
 const getHeadingProps = (depth: number): HeadingProps => {
@@ -35,6 +36,9 @@ const getHeadingProps = (depth: number): HeadingProps => {
       return { size: 'xs', as: 'h6' }
   }
 }
+
+const StyledStrong = styled('strong', { fontWeight: 600 })
+const StyledEm = styled('em', { fontStyle: 'italic' })
 
 const Code = styled(Box, {
   bg: '$tonal200',
@@ -57,7 +61,8 @@ const InlineCode = styled(Box, {
 
 export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   content,
-  handleDirectives = () => null
+  handleDirectives = () => null,
+  css
 }) => {
   const AST = fromMarkdown(content, {
     extensions: [syntax()],
@@ -70,14 +75,14 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     }
 
     if (node.type === 'emphasis') {
-      return <em>{node.children.map(handleNode)}</em>
+      return <StyledEm>{node.children.map(handleNode)}</StyledEm>
     }
 
     if (node.type === 'heading') {
       const { size, as } = getHeadingProps(node.depth)
 
       return (
-        <Heading as={as} size={size}>
+        <Heading as={as} size={size} css={{ color: 'inherit' }}>
           {node.children.map(handleNode)}
         </Heading>
       )
@@ -115,11 +120,13 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     }
 
     if (node.type === 'paragraph') {
-      return <Text>{node.children.map(handleNode)}</Text>
+      return (
+        <Text css={{ color: 'inherit' }}>{node.children.map(handleNode)}</Text>
+      )
     }
 
     if (node.type === 'strong') {
-      return <strong>{node.children.map(handleNode)}</strong>
+      return <StyledStrong>{node.children.map(handleNode)}</StyledStrong>
     }
 
     if (node.type === 'text') {
@@ -131,22 +138,13 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     }
 
     if (node.type === 'thematicBreak') {
-      return <Divider css={{ my: '$5', width: '100%' }} />
+      return <Divider css={{ width: '100%' }} />
     }
 
     return null
   }
 
-  return (
-    <StackContent
-      css={{
-        '& strong': { fontWeight: 600 },
-        '& em': { fontStyle: 'italic' }
-      }}
-    >
-      {AST.children.map(handleNode)}
-    </StackContent>
-  )
+  return <StackContent css={css}>{AST.children.map(handleNode)}</StackContent>
 }
 
 MarkdownContent.displayName = 'MarkdownContent'
