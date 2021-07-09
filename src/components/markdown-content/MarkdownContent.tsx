@@ -131,7 +131,7 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     }
 
     if (node.type === 'thematicBreak') {
-      return <Divider css={{ my: '$5', width: '100%' }} />
+      return <Divider css={{ width: '100%' }} />
     }
 
     return null
