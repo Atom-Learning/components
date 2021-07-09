@@ -6,21 +6,22 @@ category: Content
 ---
 
 Currently it suppports converts the following Markdown elements into components:
-| Type | Component | Supported |
-| --- | --- | - |
-| text | `{value}` | ✅ |
-| emphasis | `<em />` | ✅ |
-| strong | `<strong />` | ✅ |
-| heading | `<Heading />` | ✅ |
-| paragraph | `<Text />` | ✅ |
-| link | `<Link />` | ✅ |
-| blockquote | | ⛔ |
-| list | `<List />` | ✅ |
-| listItem | `<List.Item />` | ✅ |
-| inlineCode | `<Box as="code" />` | ✅ |
-| code | `<Box as="pre" />` | ✅ |
-| image | `<Image />` | ✅ |
-| thematicBreak | `<Divider />` | ✅ |
+
+| Type          | Component           | Supported |
+| :------------ | :------------------ | :-------- |
+| text          | `{value}`           | ✅        |
+| emphasis      | `<em />`            | ✅        |
+| strong        | `<strong />`        | ✅        |
+| heading       | `<Heading />`       | ✅        |
+| paragraph     | `<Text />`          | ✅        |
+| link          | `<Link />`          | ✅        |
+| blockquote    |                     | ⛔        |
+| list          | `<List />`          | ✅        |
+| listItem      | `<List.Item />`     | ✅        |
+| inlineCode    | `<Box as="code" />` | ✅        |
+| code          | `<Box as="pre" />`  | ✅        |
+| image         | `<Image />`         | ✅        |
+| thematicBreak | `<Divider />`       | ✅        |
 
 ```tsx live
 <MarkdownContent
@@ -38,7 +39,7 @@ See the following example that transform the following directive into a `Button`
 
 ```tsx live
 <MarkdownContent
-  content={`:button[This is a button]{href=https://atomlearning.co.uk theme="secondary" isRounded=true appearance=outline}`}
+  content={`:button[This is a button]{href=https://atomlearning.co.uk isRounded=true}`}
   handleDirectives={(node, handleNode) =>
     node.name === 'button' ? (
       <Button {...node.attributes}>{node.children.map(handleNode)}</Button>
