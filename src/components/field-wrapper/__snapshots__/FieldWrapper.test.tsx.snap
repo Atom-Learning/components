@@ -95,7 +95,7 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxyxibq {
+.sxfxyev {
   background: unset;
   border: unset;
   padding: unset;
@@ -105,44 +105,44 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sxyxibq:focus,
-.sxyxibq:hover {
+.sxfxyev:focus,
+.sxfxyev:hover {
   color: var(--sx-colors-primary900);
   text-decoration: underline;
 }
 
-.sxyxibq:active {
+.sxfxyev:active {
   color: var(--sx-colors-primary500);
 }
 
-.sxfey5o > .sxyxibq,
-.sxe0tmj > .sxyxibq,
-.sx03kze > .sxyxibq {
+.sxfey5o > .sxfxyev,
+.sx2g5mn > .sxfxyev,
+.sx03kze > .sxfxyev {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxfey5o > .sxyxibq::before,
-.sxfey5o > .sxyxibq::after,
-.sxe0tmj > .sxyxibq::before,
-.sxe0tmj > .sxyxibq::after,
-.sx03kze > .sxyxibq::before,
-.sx03kze > .sxyxibq::after {
+.sxfey5o > .sxfxyev::before,
+.sxfey5o > .sxfxyev::after,
+.sx2g5mn > .sxfxyev::before,
+.sx2g5mn > .sxfxyev::after,
+.sx03kze > .sxfxyev::before,
+.sx03kze > .sxfxyev::after {
   content: none;
 }
 
-.sxyxibqxzxpn--size-sm {
+.sxfxyevxzxpn--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.69;
 }
 
-.sxyxibqxzxpn--size-sm::before {
+.sxfxyevxzxpn--size-sm::before {
   content: '';
   margin-bottom: -0.477em;
   display: table;
 }
 
-.sxyxibqxzxpn--size-sm::after {
+.sxfxyevxzxpn--size-sm::after {
   content: '';
   margin-top: -0.477em;
   display: table;
@@ -162,7 +162,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sxyxibq sxyxibqxzxpn--size-sm"
+        class="sxfxyev sxfxyevxzxpn--size-sm"
         href="https://example.com"
       >
         Example prompt

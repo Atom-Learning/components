@@ -29,12 +29,17 @@ export const StyledHeading = styled('h2', {
         fontSize: '$xxl',
         lineHeight: 1.35,
         ...capsize('-0.312em')
+      },
+      xl: {
+        fontSize: '$xxxl',
+        lineHeight: 1.35,
+        ...capsize('-0.312em')
       }
     }
   }
 })
 
-type HeadingProps = Override<
+export type HeadingProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
     as?:
@@ -46,7 +51,7 @@ type HeadingProps = Override<
       | 'h6'
       | React.ComponentType
       | React.ElementType
-    size?: 'xs' | 'sm' | 'md' | 'lg'
+    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   }
 >
 

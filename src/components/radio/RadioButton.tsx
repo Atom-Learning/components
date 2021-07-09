@@ -39,7 +39,7 @@ const StyledIndicator = styled(RadioGroup.Indicator, {
 type RadioButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledRadioButton>,
   {
-    as: never
+    as?: never
   } & {
     'aria-label'?: string
   }

@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkdownContent component renders 1`] = `
+.sx95fm0 {
+  border: 0;
+  border-top: 1px solid var(--sx-colors-tonal400);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.sx95fm0-6x0gg {
+  margin-top: var(--sx-space-4);
+  margin-bottom: var(--sx-space-4);
+  width: 100%;
+}
+
+.sx2g5mn {
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
+  font-weight: 700;
+  margin: 0;
+}
+
+.sx2g5mnz2py9--size-lg {
+  font-size: var(--sx-fontSizes-xxl);
+  line-height: 1.35;
+}
+
+.sx2g5mnz2py9--size-lg::before {
+  content: '';
+  margin-bottom: -0.312em;
+  display: table;
+}
+
+.sx2g5mnz2py9--size-lg::after {
+  content: '';
+  margin-top: -0.312em;
+  display: table;
+}
+
+.sx2g5mn2wj9r--size-xl {
+  font-size: var(--sx-fontSizes-xxxl);
+  line-height: 1.35;
+}
+
+.sx2g5mn2wj9r--size-xl::before {
+  content: '';
+  margin-bottom: -0.312em;
+  display: table;
+}
+
+.sx2g5mn2wj9r--size-xl::after {
+  content: '';
+  margin-top: -0.312em;
+  display: table;
+}
+
+.sx2g5mnr3xir--size-md {
+  font-size: var(--sx-fontSizes-xl);
+  line-height: 1.42;
+}
+
+.sx2g5mnr3xir--size-md::before {
+  content: '';
+  margin-bottom: -0.3506em;
+  display: table;
+}
+
+.sx2g5mnr3xir--size-md::after {
+  content: '';
+  margin-top: -0.3506em;
+  display: table;
+}
+
+.sx2g5mng0h8h--size-sm {
+  font-size: var(--sx-fontSizes-lg);
+  line-height: 1.52;
+}
+
+.sx2g5mng0h8h--size-sm::before {
+  content: '';
+  margin-bottom: -0.3983em;
+  display: table;
+}
+
+.sx2g5mng0h8h--size-sm::after {
+  content: '';
+  margin-top: -0.3983em;
+  display: table;
+}
+
+.sx2g5mnjqqvr--size-xs {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sx2g5mnjqqvr--size-xs::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sx2g5mnjqqvr--size-xs::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sx2g5mn-gfp0x {
+  max-width: 65ch;
+}
+
+.sx2g5mn-gfp0x:not(:first-child) {
+  margin-top: var(--sx-space-4);
+}
+
+.sx2g5mn-gfp0x:not(:last-child) {
+  margin-bottom: var(--sx-space-4);
+}
+
+.sxkoa5n {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.sxkoa5n[width] {
+  width: auto;
+}
+
+.sxkoa5n[width][height] {
+  height: auto;
+}
+
+.sxkoa5n[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+.sxfey5o {
+  color: var(--sx-colors-tonal900);
+  font-family: var(--sx-fonts-sans);
+  font-weight: 400;
+  margin: 0;
+}
+
+.sxfey5ojqqvr--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxfey5ojqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxfey5ojqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sxfey5o-z6xef {
+  max-width: 75ch;
+}
+
+.sxfey5o-z6xef:not(:last-child) {
+  margin-bottom: var(--sx-space-4);
+}
+
+.sxu0om4 {
+  font-family: var(--sx-fonts-sans);
+  margin: unset;
+  padding: unset;
+  padding-left: var(--sx-space-3);
+  list-style: decimal;
+}
+
+.sxu0om4 .sx03kze {
+  padding-left: var(--sx-space-2);
+}
+
+.sxu0om4 .sx03kze::marker {
+  font-weight: bold;
+}
+
+.sxu0om4 .sx03kze:not(:last-child) {
+  margin-bottom: var(--sx-space-2);
+}
+
+.sxu0om4 .sx03kze:last-child {
+  margin-bottom: 0;
+}
+
+.sxu0om45dbgn--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxk9hvt {
+  font-family: var(--sx-fonts-sans);
+  margin: unset;
+  padding: unset;
+  padding-left: var(--sx-space-3);
+}
+
+.sxk9hvt .sx03kze {
+  padding-left: var(--sx-space-2);
+}
+
+.sxk9hvt .sx03kze::marker {
+  content: "•";
+  font-weight: bold;
+}
+
+.sxk9hvt .sx03kze:not(:last-child) {
+  margin-bottom: var(--sx-space-2);
+}
+
+.sxk9hvt .sx03kze:last-child {
+  margin-bottom: 0;
+}
+
+.sxk9hvt5dbgn--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxfxyev {
+  background: unset;
+  border: unset;
+  padding: unset;
+  color: var(--sx-colors-primary500);
+  cursor: pointer;
+  font-family: var(--sx-fonts-sans);
+  text-decoration: none;
+}
+
+.sxfxyev:focus,
+.sxfxyev:hover {
+  color: var(--sx-colors-primary900);
+  text-decoration: underline;
+}
+
+.sxfxyev:active {
+  color: var(--sx-colors-primary500);
+}
+
+.sxfey5o > .sxfxyev,
+.sx2g5mn > .sxfxyev,
+.sx03kze > .sxfxyev {
+  font-size: 100%;
+  line-height: 1;
+}
+
+.sxfey5o > .sxfxyev::before,
+.sxfey5o > .sxfxyev::after,
+.sx2g5mn > .sxfxyev::before,
+.sx2g5mn > .sxfxyev::after,
+.sx03kze > .sxfxyev::before,
+.sx03kze > .sxfxyev::after {
+  content: none;
+}
+
+.sxfxyevjqqvr--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.625;
+}
+
+.sxfxyevjqqvr--size-md::before {
+  content: '';
+  margin-bottom: -0.4489em;
+  display: table;
+}
+
+.sxfxyevjqqvr--size-md::after {
+  content: '';
+  margin-top: -0.4489em;
+  display: table;
+}
+
+.sx03kze-pwzbu strong {
+  font-weight: 600;
+}
+
+.sx03kze-pwzbu em {
+  font-style: italic;
+}
+
+.sxoyulj {
+  background: var(--sx-colors-tonal200);
+  padding: var(--sx-space-3);
+  margin-top: var(--sx-space-4);
+  margin-bottom: var(--sx-space-4);
+  border-radius: var(--sx-radii-1);
+  line-height: 1.4;
+  font-family: var(--sx-fonts-mono);
+  font-size: var(--sx-fontSizes-sm);
+}
+
+.sx1asw5 {
+  display: inline-block;
+  background: var(--sx-colors-tonal200);
+  padding: var(--sx-space-0) var(--sx-space-1);
+  border-radius: var(--sx-radii-0);
+  font-family: var(--sx-fonts-mono);
+  font-size: 85%;
+}
+
+.sxjvdf5 p:before,
+.sxjvdf5 p:after {
+  display: none;
+}
+
+<div>
+  <div
+    class="sx03kze sx03kze-pwzbu"
+  >
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Headings
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h1
+      class="sx2g5mn sx2g5mn2wj9r--size-xl sx2g5mn-gfp0x"
+    >
+      h1 Heading
+    </h1>
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      h2 Heading
+    </h2>
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      h3 Heading
+    </h3>
+    <h4
+      class="sx2g5mn sx2g5mng0h8h--size-sm sx2g5mn-gfp0x"
+    >
+      h4 Heading
+    </h4>
+    <h5
+      class="sx2g5mn sx2g5mnjqqvr--size-xs sx2g5mn-gfp0x"
+    >
+      h5 Heading
+    </h5>
+    <h6
+      class="sx2g5mn sx2g5mnjqqvr--size-xs sx2g5mn-gfp0x"
+    >
+      h6 Heading
+    </h6>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Emphasis
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <strong>
+        This is bold text
+      </strong>
+    </p>
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <strong>
+        This is bold text
+      </strong>
+    </p>
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <em>
+        This is italic text
+      </em>
+    </p>
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <em>
+        This is italic text
+      </em>
+    </p>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Blockquotes
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Lists
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      Unordered
+    </h3>
+    <ul
+      class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+    >
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Create a list by starting a line with 
+          <code
+            class="sx03kze sx1asw5"
+          >
+            +
+          </code>
+          , 
+          <code
+            class="sx03kze sx1asw5"
+          >
+            -
+          </code>
+          , or 
+          <code
+            class="sx03kze sx1asw5"
+          >
+            *
+          </code>
+        </p>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Sub-lists are made by indenting 2 spaces:
+        </p>
+        <ul
+          class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+        >
+          <li
+            class="sx03kze"
+          >
+            <p
+              class="sxfey5o sxfey5ojqqvr--size-md"
+            >
+              Marker character change forces new list start:
+            </p>
+            <ul
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+            >
+              <li
+                class="sx03kze"
+              >
+                <p
+                  class="sxfey5o sxfey5ojqqvr--size-md"
+                >
+                  Ac tristique libero volutpat at
+                </p>
+              </li>
+            </ul>
+            <ul
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+            >
+              <li
+                class="sx03kze"
+              >
+                <p
+                  class="sxfey5o sxfey5ojqqvr--size-md"
+                >
+                  Facilisis in pretium nisl aliquet
+                </p>
+              </li>
+            </ul>
+            <ul
+              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+            >
+              <li
+                class="sx03kze"
+              >
+                <p
+                  class="sxfey5o sxfey5ojqqvr--size-md"
+                >
+                  Nulla volutpat aliquam velit
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Very easy!
+        </p>
+      </li>
+    </ul>
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      Ordered
+    </h3>
+    <ol
+      class="sxu0om4 sxu0om45dbgn--size-md sxjvdf5"
+    >
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Lorem ipsum dolor sit amet
+        </p>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Consectetur adipiscing elit
+        </p>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          Integer molestie lorem at massa
+        </p>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          You can use sequential numbers...
+        </p>
+      </li>
+      <li
+        class="sx03kze"
+      >
+        <p
+          class="sxfey5o sxfey5ojqqvr--size-md"
+        >
+          ...or keep all the numbers as 
+          <code
+            class="sx03kze sx1asw5"
+          >
+            1.
+          </code>
+        </p>
+      </li>
+    </ol>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Code
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      Inline code
+    </h3>
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      This is inline 
+      <code
+        class="sx03kze sx1asw5"
+      >
+        code
+      </code>
+    </p>
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      Indented code
+    </h3>
+    <pre
+      class="sx03kze sxoyulj"
+    >
+      // Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+    </pre>
+    <h3
+      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+    >
+      Block code "fences"
+    </h3>
+    <pre
+      class="sx03kze sxoyulj"
+    >
+      Sample text here...
+    </pre>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Links
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <a
+        class="sxfxyev sxfxyevjqqvr--size-md"
+        href="http://dev.nodeca.com"
+      >
+        link text
+      </a>
+    </p>
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <a
+        class="sxfxyev sxfxyevjqqvr--size-md"
+        href="http://nodeca.github.io/pica/demo/"
+        title="title text!"
+      >
+        link with title
+      </a>
+    </p>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <h2
+      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+    >
+      Images
+    </h2>
+    <hr
+      class="sx95fm0 sx95fm0-6x0gg"
+    />
+    <p
+      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+    >
+      <img
+        alt="Minion"
+        class="sxkoa5n"
+        src="https://octodex.github.com/images/minion.png"
+      />
+      
+
+      <img
+        alt="Stormtroopocat"
+        class="sxkoa5n"
+        src="https://octodex.github.com/images/stormtroopocat.jpg"
+      />
+      "
+    </p>
+  </div>
+</div>
+`;

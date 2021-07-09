@@ -2,6 +2,7 @@ module.exports = {
   roots: ['<rootDir>/src'],
   snapshotSerializers: ['@atom-learning/jest-stitches'],
   coveragePathIgnorePatterns: ['/src/stitches.ts'],
+  testEnvironment: 'jsdom',
   testPathIgnorePatterns: ['/node_modules/'],
   setupFilesAfterEnv: ['./jest-setup.ts'],
   moduleNameMapper: {
