@@ -77,7 +77,7 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
       const { size, as } = getHeadingProps(node.depth)
 
       return (
-        <Heading as={as} size={size}>
+        <Heading as={as} size={size} css={{ color: 'inherit' }}>
           {node.children.map(handleNode)}
         </Heading>
       )
@@ -115,7 +115,9 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     }
 
     if (node.type === 'paragraph') {
-      return <Text>{node.children.map(handleNode)}</Text>
+      return (
+        <Text css={{ color: 'inherit' }}>{node.children.map(handleNode)}</Text>
+      )
     }
 
     if (node.type === 'strong') {
