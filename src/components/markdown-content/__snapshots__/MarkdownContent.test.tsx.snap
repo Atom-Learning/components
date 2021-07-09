@@ -301,11 +301,11 @@ exports[`MarkdownContent component renders 1`] = `
   display: table;
 }
 
-.sx03kze-pwzbu strong {
+.sx4d3ki {
   font-weight: 600;
 }
 
-.sx03kze-pwzbu em {
+.sxiwbex {
   font-style: italic;
 }
 
@@ -331,7 +331,7 @@ exports[`MarkdownContent component renders 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kze-pwzbu"
+    class="sx03kze"
   >
     <hr
       class="sx95fm0 sx95fm0-528w3"
@@ -388,28 +388,36 @@ exports[`MarkdownContent component renders 1`] = `
     <p
       class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
       class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
       class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
     <p
       class="sxgpjqn sxgpjqnryo8u--size-md sxgpjqn-tp9pp"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
