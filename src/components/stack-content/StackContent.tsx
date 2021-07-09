@@ -45,6 +45,7 @@ export const StackContent: React.FC<StackContentProps> = ({
       }
 
       if (type === Text || type === List) {
+        console.log({ type })
         return cloneWithStyle(child, {
           maxWidth: '75ch',
           '&:not(:last-child)': { mb: '$4' }

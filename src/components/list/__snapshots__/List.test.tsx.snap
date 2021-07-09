@@ -1,38 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxv68yi {
+.sxfcjnm {
   font-family: var(--sx-fonts-body);
   margin: unset;
   padding: unset;
-  padding-left: var(--sx-space-3);
 }
 
-.sxv68yi .sx03kze {
-  padding-left: var(--sx-space-2);
-}
-
-.sxv68yi .sx03kze::marker {
-  content: "•";
-  font-weight: bold;
-}
-
-.sxv68yi .sx03kze:not(:last-child) {
+.sxfcjnm > .sx03kze:not(:last-child) {
   margin-bottom: var(--sx-space-2);
 }
 
-.sxv68yi .sx03kze:last-child {
+.sxfcjnm > .sx03kze:last-child {
   margin-bottom: 0;
 }
 
-.sxv68yiq7qe9--size-md {
+.sxfcjnmq7qe9--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
+.sxfcjnm4kvou--as-ul {
+  padding-left: var(--sx-space-3);
+}
+
+.sxfcjnm4kvou--as-ul > .sx03kze {
+  padding-left: var(--sx-space-2);
+}
+
+.sxfcjnm4kvou--as-ul > .sx03kze::marker {
+  content: "•";
+  font-weight: bold;
+}
+
 <div>
   <ul
-    class="sxv68yi sxv68yiq7qe9--size-md"
+    class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul"
   >
     <li
       class="sx03kze"

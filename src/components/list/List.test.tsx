@@ -26,4 +26,26 @@ describe(`List component`, () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders an unordered list by default', () => {
+    const { container } = render(
+      <List>
+        <List.Item>Item 1</List.Item>
+        <List.Item>Item 2</List.Item>
+      </List>
+    )
+
+    expect(container.querySelector('ul')).toBeVisible()
+  })
+
+  it('renders an ordered list if the ordered prop is passed', () => {
+    const { container } = render(
+      <List ordered>
+        <List.Item>Item 1</List.Item>
+        <List.Item>Item 2</List.Item>
+      </List>
+    )
+
+    expect(container.querySelector('ol')).toBeVisible()
+  })
 })
