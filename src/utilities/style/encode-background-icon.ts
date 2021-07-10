@@ -1,4 +1,4 @@
-import { hsl2Hex, parseCss } from 'colorsys'
+import { parseToHsl, toColorString } from 'polished'
 
 type Icons = keyof typeof icons
 
@@ -12,7 +12,7 @@ const icons = {
 export const encodeBackgroundIcon = (color: string, icon: Icons): string => {
   // convert hsl theme value to hex
   // svg doesn't support hsl in attributes
-  const hex = hsl2Hex(parseCss(color))
+  const hex = toColorString(parseToHsl(color))
   // encode icon and return as data uri
   return `url(data:image/svg+xml;charset=US-ASCII,${encodeURIComponent(
     icons[icon](hex)
