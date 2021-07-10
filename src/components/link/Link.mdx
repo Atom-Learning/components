@@ -35,3 +35,19 @@ It adds default styling and the `css` prop.
   7-12+. Prepare your child for secondary school entry and beyond.
 </Text>
 ```
+
+## Polymorphism
+
+The `Link` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively 
+
+```tsx preview
+<Link href="http://example.com/">
+  I'm a link
+</Link>
+```
+
+```tsx preview
+<Link onClick={() => console.log('clicked')}>
+  I'm a button
+</Link>
+```

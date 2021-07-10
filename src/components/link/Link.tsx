@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
@@ -11,16 +12,16 @@ const StyledLink = styled('a', {
   bg: 'unset',
   border: 'unset',
   p: 'unset',
-  color: '$primary500',
+  color: '$primary',
   cursor: 'pointer',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   textDecoration: 'none',
   '&:focus, &:hover': {
-    color: '$primary900',
+    color: '$tertiary',
     textDecoration: 'underline'
   },
   '&:active': {
-    color: '$primary500'
+    color: '$primary'
   },
   [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
@@ -38,13 +39,22 @@ type LinkProps = Override<
   React.ComponentProps<typeof StyledLink>,
   {
     as?: React.ComponentType | React.ElementType
-  }
+  } & NavigatorActions
 >
 
-export const Link: React.FC<LinkProps> = React.forwardRef(
-  ({ size = 'md', ...remainingProps }, ref) => (
-    <StyledLink size={size} {...remainingProps} ref={ref} />
-  )
-)
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ size = 'md', onClick, href, ...remainingProps }, ref) =>
+    onClick ? (
+      <StyledLink
+        as="button"
+        size={size}
+        {...remainingProps}
+        ref={ref}
+        onClick={onClick}
+      />
+    ) : (
+      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
+    )
+) as React.FC<LinkProps>
 
 Link.displayName = 'Link'

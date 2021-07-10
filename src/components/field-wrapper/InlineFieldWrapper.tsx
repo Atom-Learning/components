@@ -10,6 +10,7 @@ type InlineFieldWrapperProps = {
   error?: string
   label: string
   required?: boolean
+  reverse?: boolean
 }
 
 export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
@@ -17,21 +18,32 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
   error,
   css,
   label,
-  required
-}) => {
-  return (
-    <Box css={css}>
-      <Label
-        css={{ display: 'flex', alignItems: 'center' }}
-        required={required}
+  required,
+  reverse
+}) => (
+  <Box css={css}>
+    <Label
+      css={{
+        alignItems: 'baseline',
+        display: 'flex',
+        flexDirection: reverse ? 'row-reverse' : 'row',
+        fontWeight: 400,
+        maxWidth: 'max-content'
+      }}
+      required={required}
+    >
+      <Box
+        css={{
+          [reverse ? 'ml' : 'mr']: '$3',
+          transform: 'translateY($space$0)'
+        }}
       >
-        <Box css={{ mr: '$2' }}>{children}</Box>
-
-        {label}
-      </Label>
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
-    </Box>
-  )
-}
+        {children}
+      </Box>
+      {label}
+    </Label>
+    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+  </Box>
+)
 
 InlineFieldWrapper.displayName = 'InlineFieldWrapper'

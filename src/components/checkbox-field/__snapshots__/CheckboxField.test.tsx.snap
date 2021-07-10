@@ -1,78 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField component renders 1`] = `
-.sx03kze-385xm {
-  margin-right: var(--sx-space-2);
+.sx03kze-2grog {
+  margin-right: var(--sx-space-3);
+  transform: translateY(var(--sx-space-0));
 }
 
-.sx1i2hs {
+.sxt3cs2 {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: none;
-  border-radius: var(--sx-radii-0);
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary300);
+  border: 1px solid var(--sx-colors-tonal500);
+  border-radius: 3px;
   color: white;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 100ms ease-out;
+  transition: all 50ms ease-out;
 }
 
-.sx1i2hs[data-state="unchecked"]:focus,
-.sx1i2hs[data-state="unchecked"]:hover {
-  background-color: var(--sx-colors-tonal300);
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
+.sxt3cs2[data-state="unchecked"]:focus,
+.sxt3cs2[data-state="unchecked"]:hover {
   outline: none;
 }
 
-.sx1i2hs[data-state="checked"] {
-  background-color: var(--sx-colors-secondary300);
+.sxt3cs2[data-state="checked"] {
+  background-color: var(--sx-colors-primary);
+  border-color: var(--sx-colors-primary);
 }
 
-.sx1i2hs[data-state="checked"]:hover,
-.sx1i2hs[data-state="unchecked"]:focus {
-  background-color: var(--sx-colors-secondary700);
-  box-shadow: inset 0 0 0 2px var(--sx-colors-secondary700);
+.sxt3cs2[data-state="checked"]:hover,
+.sxt3cs2[data-state="unchecked"]:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx1i2hs:focus-within {
+.sxt3cs2[disabled] {
+  background-color: var(--sx-colors-tonal200);
+  border-color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
+}
+
+.sxt3cs2:focus-within {
   outline: none;
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sxh0wga {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sxh0wgaryo8u--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sxh0wgaryo8u--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sxh0wgaryo8u--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sxdiu5c-ju7t4 {
+.sxh0wga-yi5wz {
+  align-items: baseline;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  font-weight: 400;
+  max-width: max-content;
 }
 
 <div>
@@ -84,10 +91,10 @@ exports[`CheckboxField component renders 1`] = `
       class="sx03kze"
     >
       <label
-        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+        class="sxh0wga sxh0wgaryo8u--size-md sxh0wga-yi5wz"
       >
         <div
-          class="sx03kze sx03kze-385xm"
+          class="sx03kze sx03kze-2grog"
         >
           <input
             hidden=""
@@ -97,7 +104,7 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            class="sx1i2hs"
+            class="sxt3cs2"
             data-state="unchecked"
             role="checkbox"
             type="button"

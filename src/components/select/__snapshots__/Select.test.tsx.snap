@@ -1,60 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component renders a select with 3 options 1`] = `
-.sx64rsp {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  background-size: 20px auto, 100%;
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
   padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx64rsp:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sx64rsp:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxqb0gi:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx64rsp::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sx64rsp[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx64rsp[disabled],
-.sx64rsp > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="sx64rsp"
+    class="sxqb0gi"
   >
     <option
       value="value1"
@@ -76,124 +69,112 @@ exports[`Select component renders a select with 3 options 1`] = `
 `;
 
 exports[`Select component renders an disabled select 1`] = `
-.sx64rsp {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  background-size: 20px auto, 100%;
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
   padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx64rsp:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sx64rsp:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxqb0gi:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx64rsp::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sx64rsp[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx64rsp[disabled],
-.sx64rsp > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="sx64rsp"
+    class="sxqb0gi"
     disabled=""
   />
 </div>
 `;
 
 exports[`Select component renders select with a default option 1`] = `
-.sx64rsp {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  background-size: 20px auto, 100%;
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
   padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx64rsp:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sx64rsp:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxqb0gi:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx64rsp::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sx64rsp[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx64rsp[disabled],
-.sx64rsp > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="sx64rsp"
+    class="sxqb0gi"
   >
     <option
       disabled=""
       hidden=""
+      selected=""
+      value=""
     >
       Please select:
     </option>
@@ -217,60 +198,53 @@ exports[`Select component renders select with a default option 1`] = `
 `;
 
 exports[`Select component renders select with a disabled option 1`] = `
-.sx64rsp {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  background-size: 20px auto, 100%;
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
   padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx64rsp:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sx64rsp:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxqb0gi:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx64rsp::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sx64rsp[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx64rsp[disabled],
-.sx64rsp > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="sx64rsp"
+    class="sxqb0gi"
   >
     <option
       value="value1"
@@ -298,60 +272,53 @@ exports[`Select component renders select with a disabled option 1`] = `
 `;
 
 exports[`Select component renders select with no options 1`] = `
-.sx64rsp {
+.sxqb0gi {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  background-size: 20px auto, 100%;
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
+  font-family: var(--sx-fonts-body);
   font-size: var(--sx-fontSizes-md);
   font-weight: 400;
   height: var(--sx-sizes-4);
   line-height: 1.4;
   padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
+  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx64rsp:hover {
+.sxqb0gi:hover {
   cursor: pointer;
 }
 
-.sx64rsp:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxqb0gi:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx64rsp::-ms-expand {
+.sxqb0gi::-ms-expand {
   display: none;
 }
 
-.sx64rsp[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx64rsp[disabled],
-.sx64rsp > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
+.sxqb0gi[disabled],
+.sxqb0gi > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="sx64rsp"
+    class="sxqb0gi"
   />
 </div>
 `;

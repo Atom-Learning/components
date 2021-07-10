@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Alert } from './AlertDialog'
 import { initialState, reducer } from './reducer'
-import { alert } from './types'
+import type { alert } from './types'
 
 type context = {
   showAlert: (data: alert) => void

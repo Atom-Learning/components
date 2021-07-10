@@ -15,15 +15,18 @@ import { CSS } from '~/stitches'
  *   })
  *
  */
-export const capsize = (margin: string): Record<string, CSS> => ({
+export const capsize = (
+  before: number,
+  after?: number
+): Record<string, CSS> => ({
   '&::before': {
     content: "''",
-    marginBottom: margin,
+    marginBottom: `-${before}em`,
     display: 'table'
   },
   '&::after': {
     content: "''",
-    marginTop: margin,
+    marginTop: `-${after || before}em`,
     display: 'table'
   }
 })

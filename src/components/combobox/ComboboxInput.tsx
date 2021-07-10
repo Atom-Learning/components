@@ -4,30 +4,27 @@ import { styled, theme } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
 
 export const ComboboxInput = styled(BaseComboboxInput, {
+  boxShadow: 'none', // prevent default iOS default styling
+  fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
-  backgroundImage: encodeBackgroundIcon(
-    theme.colors.primary900.value,
-    'chevron'
-  ),
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
-  backgroundSize: '$sizes$2 auto, 100%',
-  border: '1px solid $tonal500',
+  backgroundSize: '20px auto, 100%',
+  border: '1px solid $tonal400',
   borderRadius: '$0',
-  boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
-  color: '$tonal900',
+  color: '$tonal800',
   cursor: 'text',
   display: 'block',
-  fontFamily: '$sans',
-  fontSize: '$md', // prevent iOS zooming on focus
+  fontFamily: '$body',
   height: '$4',
-  p: '$3',
-  width: '100%',
+  pl: '$3',
+  pr: '$6',
   transition: 'all 100ms ease-out',
+  width: '100%',
   '&:focus-within': {
-    borderColor: '$primary900',
-    boxShadow: 'inset 0 0 0 1px $colors$primary900',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&[disabled]': {

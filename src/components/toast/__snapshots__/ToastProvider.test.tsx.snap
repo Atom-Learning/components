@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast component renders 1`] = `
+.sxxdn77 {
+  left: calc(50% - 200px);
+  position: fixed;
+  top: var(--sx-space-3);
+  z-index: 2147483647;
+}
+
+<div>
+  <div
+    class="sxxdn77"
+  />
+</div>
+`;

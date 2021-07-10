@@ -14,10 +14,11 @@ const scaleIn = keyframes({
 const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
   bg: 'white',
-  borderRadius: '$2',
+  borderRadius: '$1',
   boxShadow: '$2',
   maxWidth: '90vw',
-  p: '$4',
+  p: '$sizes$2',
+  pr: '$6',
   position: 'relative',
   transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
   variants: {
@@ -32,21 +33,21 @@ const StyledContent = styled(Content, {
 const StyledClose = styled(Close, {
   all: 'unset',
   alignItems: 'center',
-  color: '$tonal800',
+  color: '$tonal700',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
   position: 'absolute',
-  right: '0',
-  size: '$4',
-  top: '0'
+  right: '$0',
+  size: '$5',
+  top: '$0'
 })
 
 const StyledArrow = styled(Arrow, {
   fill: 'white',
   zIndex: 1,
-  '[data-align="end"] &': { mr: '$2' },
-  '[data-align="start"] &': { ml: '$2' }
+  '[data-align="end"] &': { mr: '$sizes$2' },
+  '[data-align="start"] &': { ml: '$sizes$2' }
 })
 
 type PopoverContentProps = React.ComponentProps<typeof StyledContent> &

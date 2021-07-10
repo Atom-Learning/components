@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActionIcon component renders 1`] = `
-.sxib16r {
+.sxtros6 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
@@ -11,32 +11,32 @@ exports[`ActionIcon component renders 1`] = `
   vertical-align: middle;
 }
 
-.sxib16rmbqqh--size-md {
+.sxtros6mbqqh--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
 }
 
-.sxy3zvi {
+.sxx73q4 {
   -webkit-appearance: none;
   appearance: none;
   border: unset;
   border-radius: var(--sx-radii-0);
   cursor: pointer;
   padding: unset;
-  transition: all 125ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.sxy3zvilo5m8--appearance-subtle {
+.sxx73q4lo5m8--appearance-subtle {
   background: transparent;
   color: var(--sx-colors-tonal800);
 }
 
-.sxy3zvilo5m8--appearance-subtle:hover,
-.sxy3zvilo5m8--appearance-subtle:focus {
+.sxx73q4lo5m8--appearance-subtle:hover,
+.sxx73q4lo5m8--appearance-subtle:focus {
   background: var(--sx-colors-alpha150);
 }
 
-.sxy3zvie6fss--size-md {
+.sxx73q4e6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
@@ -44,7 +44,7 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxy3zvi sxy3zvi03kze--theme-primary sxy3zvilo5m8--appearance-subtle sxy3zvie6fss--size-md"
+    class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
     type="button"
   >
     <svg />

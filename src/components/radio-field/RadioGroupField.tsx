@@ -4,6 +4,7 @@ import { Controller, useFormContext } from 'react-hook-form'
 import { ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'
+import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
@@ -15,15 +16,26 @@ const Fieldset = styled('fieldset', {
 
 type RadioGroupFieldProps = {
   css?: CSS
-  defaultValue: string
+  defaultValue?: string
   label: string
   name: string
+  direction?: 'row' | 'column'
+  description?: string
   validation?: ValidationOptions
 }
 
 export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   Item: typeof RadioField
-} = ({ children, css, defaultValue, label, name, validation }) => {
+} = ({
+  children,
+  css,
+  direction = 'column',
+  defaultValue,
+  description,
+  label,
+  name,
+  validation
+}) => {
   const { control, errors } = useFormContext()
 
   return (
@@ -31,6 +43,14 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
       <Label as="legend" css={{ p: 0, mb: '$3' }}>
         {label}
       </Label>
+      {description && (
+        <Text
+          size="sm"
+          css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}
+        >
+          {description}
+        </Text>
+      )}
       <Controller
         control={control}
         name={name}
@@ -38,6 +58,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         defaultValue={defaultValue}
         render={({ onChange, value }) => (
           <RadioButtonGroup
+            direction={direction}
             defaultValue={defaultValue}
             onValueChange={onChange}
             value={value}
@@ -47,7 +68,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         )}
       />
       {errors[name] && (
-        <ValidationError css={{ mt: '$1' }}>
+        <ValidationError css={{ mt: '$2' }}>
           {errors[name].message}
         </ValidationError>
       )}

@@ -4,28 +4,27 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
-  appearance: 'none',
-  border: '1px solid $tonal500',
-  borderRadius: '$0',
   boxShadow: 'none', // prevent default iOS default styling
+  fontSize: '$md', // prevent iOS zooming on focus
+  appearance: 'none',
+  border: '1px solid $tonal400',
+  borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal900',
+  color: '$tonal800',
   cursor: 'text',
   display: 'block',
-  fontFamily: '$sans',
-  fontSize: '$md', // prevent iOS zooming on focus
+  fontFamily: '$body',
   height: '$4',
-  width: '100%',
-  p: '$3',
+  px: '$3',
   transition: 'all 100ms ease-out',
+  width: '100%',
   '&:focus': {
-    borderColor: '$primary900',
-    boxShadow: 'inset 0 0 0 1px $colors$primary900',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal700',
+    backgroundColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
   },
   variants: {

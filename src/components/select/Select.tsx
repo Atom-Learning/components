@@ -7,47 +7,44 @@ import { Override } from '~/utilities/types'
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage: encodeBackgroundIcon(
-    theme.colors.primary900.value,
-    'chevron'
-  ),
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
-  backgroundSize: '$sizes$2 auto, 100%',
-  border: '1px solid $tonal500',
+  backgroundSize: '20px auto, 100%',
+  border: '1px solid $tonal400',
   borderRadius: '$0',
-  color: '$tonal900',
+  color: '$tonal800',
   display: 'block',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   fontSize: '$md',
   fontWeight: 400,
   height: '$4',
   lineHeight: 1.4,
-  px: '$3',
-  py: '$2',
+  pl: '$3',
+  pr: '$6',
   transition: 'all 75ms ease-out',
   width: '100%',
   '&:hover': {
     cursor: 'pointer'
   },
   '&:focus': {
-    boxShadow: 'inset 0 0 0 1px $colors$primary900',
-    borderColor: '$primary900',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&::-ms-expand': {
     display: 'none'
   },
-  '&[disabled]': {
-    backgroundImage: encodeBackgroundIcon(
-      theme.colors.tonal700.value,
-      'chevron'
-    )
-  },
   '&[disabled], > option[disabled]': {
-    opacity: 0.7,
-    backgroundColor: '$tonal300',
+    backgroundColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
+  },
+  variants: {
+    state: {
+      error: {
+        border: '1px solid $danger'
+      }
+    }
   }
 })
 
@@ -67,9 +64,9 @@ export type SelectProps = Override<
 
 export const Select: React.FC<SelectProps> = React.forwardRef(
   ({ placeholder, children, ...remainingProps }, ref) => (
-    <StyledSelect {...remainingProps} ref={ref}>
+    <StyledSelect defaultValue="" {...remainingProps} ref={ref}>
       {placeholder && (
-        <option disabled selected hidden>
+        <option disabled hidden value="">
           {placeholder}
         </option>
       )}

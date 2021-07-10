@@ -6,48 +6,44 @@ import { textVariantSize } from '../text'
 
 export const StyledLi = styled('li', {})
 
-const StyledUl = styled('ul', {
-  fontFamily: '$sans',
+const StyledList = styled('ul', {
+  fontFamily: '$body',
   m: 'unset',
   p: 'unset',
-  pl: '$3',
-  [`& ${StyledLi}`]: {
-    pl: '$2',
-    '&::marker': {
-      content: '"•"',
-      fontWeight: 'bold'
-    },
-    '&:not(:last-child)': {
-      mb: '$2'
-    },
-    '&:last-child': {
-      mb: 0
-    }
+  [`& > ${StyledLi}`]: {
+    '&:not(:last-child)': { mb: '$2' },
+    '&:last-child': { mb: 0 }
   },
   variants: {
-    theme: {
-      tonal: {
-        color: '$tonal900'
+    size: textVariantSize({ applyCapsize: false }),
+    as: {
+      ol: {
+        pl: '$4',
+        listStyle: 'decimal',
+        [`& > ${StyledLi}`]: {
+          pl: '$1',
+          '&::marker': { fontSize: '$sm', fontWeight: 'bold' }
+        }
       },
-      primary: {
-        color: '$primary500'
-      },
-      secondary: {
-        color: '$secondary500'
+      ul: {
+        pl: '$3',
+        [`& > ${StyledLi}`]: {
+          pl: '$2',
+          '&::marker': { content: '•', fontWeight: 'bold' }
+        }
       }
-    },
-    size: textVariantSize({ applyCapsize: false })
+    }
   }
 })
 
-type ListProps = React.ComponentProps<typeof StyledUl> & {
-  theme?: 'tonal' | 'primary' | 'secondary'
+type ListProps = React.ComponentProps<typeof StyledList> & {
+  ordered?: boolean
 }
 
 export const List: React.FC<ListProps> & { Item: typeof StyledLi } = ({
-  theme,
   size = 'md',
+  ordered,
   ...remainingProps
-}) => <StyledUl theme={theme} size={size} {...remainingProps} />
+}) => <StyledList as={ordered ? 'ol' : 'ul'} size={size} {...remainingProps} />
 
 List.Item = StyledLi
