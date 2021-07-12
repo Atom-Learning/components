@@ -13,20 +13,20 @@ It adds default styling and the `css` prop. By default `primary` theme is displa
 
 ## Themes
 
-These are the available `themes` for the `Button` component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+These are the available `themes` for the `Button` component: `primary` (default), `success`, `warning`, `danger`
 
 ```tsx preview
 <>
   <Button>Primary</Button>
   <Button theme="success">Success</Button>
   <Button theme="warning">Warning</Button>
-  <Button theme="danger">Error</Button>
+  <Button theme="danger">Danger</Button>
 </>
 ```
 
 ## Appearance
 
-There two options for the `appearance` property: `solid` and `outline`. These are the available `outline` variations for the `primary`, `secondary` and `tertiary` themes.
+There two options for the `appearance` property: `solid` and `outline`. These are the available `outline` variations for the `primary` theme.
 
 ```tsx preview
 <Button appearance="outline">Primary</Button>
@@ -66,13 +66,9 @@ Setting `isRounded` creates a rounded button
 The `Button` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively
 
 ```tsx preview
-<Button href="http://example.com/">
-  I'm a link
-</Button>
+<Button href="http://example.com/">I'm a link</Button>
 ```
 
 ```tsx preview
-<Button onClick={() => console.log('clicked')}>
-  I'm a button
-</Button>
+<Button onClick={() => console.log('clicked')}>I'm a button</Button>
 ```

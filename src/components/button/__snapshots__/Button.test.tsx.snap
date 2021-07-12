@@ -459,7 +459,7 @@ exports[`Button component renders a disabled button 1`] = `
 </div>
 `;
 
-exports[`Button component renders a disabled secondary outline button 1`] = `
+exports[`Button component renders a disabled warning outline button 1`] = `
 .sxn3kh8 {
   align-items: center;
   background: unset;
@@ -534,7 +534,7 @@ exports[`Button component renders a disabled secondary outline button 1`] = `
 
 <div>
   <button
-    class="sxn3kh8 sxn3kh803kze--appearance-outline sxn3kh8dwxsw--size-md"
+    class="sxn3kh8 sxn3kh803kze--theme-warning sxn3kh803kze--appearance-outline sxn3kh8dwxsw--size-md"
     disabled=""
     type="button"
   >

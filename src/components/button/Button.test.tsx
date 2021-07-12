@@ -67,9 +67,9 @@ describe(`Button component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('renders a disabled secondary outline button', async () => {
+  it('renders a disabled warning outline button', async () => {
     const { container } = render(
-      <Button disabled appearance="outline" theme="secondary" {...props}>
+      <Button disabled appearance="outline" theme="warning" {...props}>
         BUTTON
       </Button>
     )
@@ -80,9 +80,9 @@ describe(`Button component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders a disabled secondary outline button - has no programmatically detectable a11y issues', async () => {
+  it('renders a disabled warning outline button - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Button disabled appearance="outline" theme="secondary" {...props}>
+      <Button disabled appearance="outline" theme="warning" {...props}>
         BUTTON
       </Button>
     )

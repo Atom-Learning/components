@@ -51,10 +51,16 @@ You can also use them to switch [variants](https://stitches.dev/docs/variants)
 
 ```tsx
 <Button
-  // change the 'theme' to 'secondary' when you trigger the 'md' breakpoint
-  theme={{ '@initial': 'primary', '@md': 'secondary' }}
+  // change the 'theme' to 'success' when you trigger the 'md' breakpoint
+  theme={{
+    '@initial': 'primary',
+    '@md': 'success'
+  }}
   // change the 'size' to 'md' when you trigger the 'sm' breakpoint
-  size: {{ '@initial': 'sm', '@sm': 'md' }}
+  size: {{
+    '@initial': 'sm',
+    '@sm': 'md'
+  }}
 >
   Click me
 </Button>
