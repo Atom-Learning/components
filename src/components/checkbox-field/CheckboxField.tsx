@@ -28,14 +28,14 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   const error = errors[name]?.message
 
   return (
-    <InlineFieldWrapper label={label} css={css} error={error}>
-      <Controller
-        onChange={() => setIsChecked((current) => !current)}
-        control={control}
-        name={name}
-        defaultValue={isChecked}
-        rules={{ required: true }}
-        render={({ onChange, value, name: innerName }) => (
+    <Controller
+      onChange={() => setIsChecked((current) => !current)}
+      control={control}
+      name={name}
+      defaultValue={isChecked}
+      rules={{ required: true }}
+      render={({ onChange, value, name: innerName }) => (
+        <InlineFieldWrapper label={label} css={css} error={error}>
           <Checkbox
             name={innerName}
             onCheckedChange={() => {
@@ -47,9 +47,9 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
             value={value}
             {...remainingProps}
           />
-        )}
-      />
-    </InlineFieldWrapper>
+        </InlineFieldWrapper>
+      )}
+    />
   )
 }
 
