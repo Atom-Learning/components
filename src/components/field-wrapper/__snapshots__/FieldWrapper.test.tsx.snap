@@ -1,34 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWrapper component renders 1`] = `
-.sxojaks {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
+  box-shadow: none;
   box-sizing: border-box;
   color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  height: var(--sx-sizes-4);
   padding-left: var(--sx-space-3);
   padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
   width: 100%;
 }
 
-.sxojaks:focus {
+.sx1s1jh:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxojaks[disabled] {
+.sx1s1jh[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
 }
 
 .sx2cs53 {
@@ -190,7 +193,7 @@ exports[`FieldWrapper component renders 1`] = `
       </a>
     </div>
     <input
-      class="sxojaks"
+      class="sx1s1jh sx1s1jhpw03g--size-md"
       id="example"
       name="example"
       type="text"
