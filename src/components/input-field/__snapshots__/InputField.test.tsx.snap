@@ -36,6 +36,12 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
+.sx2cs53-ks48k {
+  color: var(--sx-colors-danger);
+  align-items: center;
+  margin-top: var(--sx-space-2);
+}
+
 .sxgpjqn {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
@@ -60,11 +66,8 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
-.sxgpjqn-lq7ir {
-  color: var(--sx-colors-danger);
-  display: flex;
-  align-items: center;
-  margin-top: var(--sx-space-2);
+.sxgpjqn-2obmh {
+  color: inherit;
 }
 
 .sxh0wga {
@@ -150,8 +153,8 @@ exports[`InputField component renders a field in error state 1`] = `
         name="INPUT FIELD"
         type="text"
       />
-      <p
-        class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-lq7ir"
+      <div
+        class="sx2cs53 sx2cs53-ks48k"
       >
         <svg
           aria-hidden="true"
@@ -174,8 +177,12 @@ exports[`InputField component renders a field in error state 1`] = `
             r="10"
           />
         </svg>
-        This field is required
-      </p>
+        <p
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-2obmh"
+        >
+          This field is required
+        </p>
+      </div>
     </div>
     <button
       type="submit"

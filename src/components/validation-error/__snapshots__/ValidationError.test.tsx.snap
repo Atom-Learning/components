@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-loxrd {
+  color: var(--sx-colors-danger);
+  align-items: center;
+}
+
 .sxtros6 {
   display: inline-block;
   fill: none;
@@ -44,15 +53,13 @@ exports[`ValidationError component renders a validation error 1`] = `
   display: table;
 }
 
-.sxgpjqn-5f21a {
-  color: var(--sx-colors-danger);
-  display: flex;
-  align-items: center;
+.sxgpjqn-2obmh {
+  color: inherit;
 }
 
 <div>
-  <p
-    class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5f21a"
+  <div
+    class="sx2cs53 sx2cs53-loxrd"
   >
     <svg
       aria-hidden="true"
@@ -75,7 +82,11 @@ exports[`ValidationError component renders a validation error 1`] = `
         r="10"
       />
     </svg>
-    VALIDATION ERROR
-  </p>
+    <p
+      class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-2obmh"
+    >
+      VALIDATION ERROR
+    </p>
+  </div>
 </div>
 `;

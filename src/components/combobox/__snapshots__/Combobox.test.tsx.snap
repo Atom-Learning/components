@@ -73,13 +73,9 @@ exports[`Combobox component renders 1`] = `
   transform: translateY(var(--sx-space-2));
 }
 
-.sx7k4x5 {
-  --reach-combobox: 1;
-}
-
 <div>
   <div
-    class="sx7k4x5"
+    class="sx03kze"
     data-reach-combobox=""
     data-state="idle"
   >
