@@ -1,0 +1,503 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar component renders 1`] = `
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6mbqqh--size-md {
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+}
+
+.sxx73q4 {
+  -webkit-appearance: none;
+  appearance: none;
+  border: unset;
+  border-radius: var(--sx-radii-0);
+  cursor: pointer;
+  padding: unset;
+  transition: all 100ms ease-out;
+}
+
+.sxx73q4lo5m8--appearance-subtle {
+  background: transparent;
+  color: var(--sx-colors-tonal800);
+}
+
+.sxx73q4lo5m8--appearance-subtle:hover,
+.sxx73q4lo5m8--appearance-subtle:focus {
+  background: var(--sx-colors-alpha150);
+}
+
+.sxx73q4e6fss--size-md {
+  height: var(--sx-sizes-3);
+  width: var(--sx-sizes-3);
+}
+
+.sx03kze-s3rli {
+  position: relative;
+  width: 320px;
+}
+
+.sx03kze-uy9e3 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-ovswn {
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sx2cs53-mauuy {
+  align-items: center;
+  justify-content: center;
+  height: var(--sx-sizes-3);
+  margin-bottom: var(--sx-space-3);
+}
+
+.sxhyvnz {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-display);
+  font-weight: 700;
+  margin: 0;
+}
+
+.sxhyvnzjrsjl--size-xs {
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.5;
+}
+
+.sxhyvnzjrsjl--size-xs::before {
+  content: '';
+  margin-bottom: -0.3864em;
+  display: table;
+}
+
+.sxhyvnzjrsjl--size-xs::after {
+  content: '';
+  margin-top: -0.3864em;
+  display: table;
+}
+
+.sxgpjqn {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-body);
+  font-weight: 400;
+  margin: 0;
+}
+
+.sxgpjqn6tbwj--size-sm {
+  font-size: var(--sx-fontSizes-sm);
+  line-height: 1.53;
+}
+
+.sxgpjqn6tbwj--size-sm::before {
+  content: '';
+  margin-bottom: -0.4056em;
+  display: table;
+}
+
+.sxgpjqn6tbwj--size-sm::after {
+  content: '';
+  margin-top: -0.4056em;
+  display: table;
+}
+
+.sxgpjqn-5jobx {
+  margin-bottom: var(--sx-space-3);
+  font-weight: 600;
+  text-align: center;
+}
+
+.sxhilm2 {
+  background: transparent;
+  border: none;
+  border-radius: var(--sx-radii-0);
+  color: var(--sx-colors-tonal900);
+  cursor: pointer;
+  font-family: var(--sx-fonts-body);
+  font-size: var(--sx-fontSizes-sm);
+  height: var(--sx-sizes-3);
+  transition: background-color 75ms;
+}
+
+.sxhilm2:hover {
+  background: var(--sx-colors-tonal200);
+}
+
+.sxhilm2:focus {
+  outline: 2px solid var(--sx-colors-tonal200);
+}
+
+.sxhilm2i6aho--isToday-true {
+  border: 2px solid var(--sx-colors-tonal200);
+}
+
+<div>
+  <div
+    class="sx03kze sx03kze-s3rli"
+  >
+    <div
+      class="sx2cs53 sx2cs53-ovswn"
+    >
+      <button
+        aria-label="Previous month"
+        class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="sxtros6 sxtros6mbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next month"
+        class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="sxtros6 sxtros6mbqqh--size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+    <div>
+      <div
+        class="sx2cs53 sx2cs53-mauuy"
+      >
+        <h2
+          class="sxhyvnz sxhyvnzjrsjl--size-xs"
+        >
+          Jul
+           
+          2021
+        </h2>
+      </div>
+      <div
+        class="sx03kze sx03kze-uy9e3"
+      >
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Sun
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Mon
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Tue
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Wed
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Thu
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Fri
+        </span>
+        <span
+          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+        >
+          Sat
+        </span>
+      </div>
+      <div
+        class="sx03kze sx03kze-uy9e3"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+        <button
+          aria-label="Thu Jul 01 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Fri Jul 02 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Sat Jul 03 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Sun Jul 04 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Mon Jul 05 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Tue Jul 06 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Wed Jul 07 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Thu Jul 08 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Fri Jul 09 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Sat Jul 10 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Sun Jul 11 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Mon Jul 12 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Tue Jul 13 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Wed Jul 14 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Thu Jul 15 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Fri Jul 16 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Sat Jul 17 2021"
+          aria-pressed="false"
+          class="sxhilm2 sxhilm2i6aho--isToday-true"
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Sun Jul 18 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Mon Jul 19 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Tue Jul 20 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Wed Jul 21 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Thu Jul 22 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Fri Jul 23 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Sat Jul 24 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Sun Jul 25 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Mon Jul 26 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Tue Jul 27 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Wed Jul 28 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Thu Jul 29 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Fri Jul 30 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Sat Jul 31 2021"
+          aria-pressed="false"
+          class="sxhilm2"
+          role="button"
+        >
+          31
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
