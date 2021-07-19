@@ -41,7 +41,7 @@ const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
   }
 })
 
-const StyledButton = styled('button', {
+export const StyledButton = styled('button', {
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
