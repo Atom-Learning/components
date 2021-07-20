@@ -10,6 +10,7 @@ import { CSS } from '~/stitches'
 type CheckboxFieldProps = {
   css?: CSS
   label: string
+  description?: string
   name: string
   validation?: ValidationOptions
 } & React.ComponentProps<typeof Checkbox>
@@ -19,22 +20,28 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   label,
   name,
   validation,
+  description,
   ...remainingProps
 }) => {
   const { control, errors } = useFormContext()
   const [isChecked, setIsChecked] = useState(false)
 
-  const error = errors[name]
+  const error = errors[name]?.message
 
   return (
-    <InlineFieldWrapper label={label} css={css} error={error}>
-      <Controller
-        onChange={() => setIsChecked((current) => !current)}
-        control={control}
-        name={name}
-        defaultValue={isChecked}
-        rules={validation}
-        render={({ onChange, value, name: innerName }) => (
+    <Controller
+      onChange={() => setIsChecked((current) => !current)}
+      control={control}
+      name={name}
+      defaultValue={isChecked}
+      rules={{ required: true }}
+      render={({ onChange, value, name: innerName }) => (
+        <InlineFieldWrapper
+          css={css}
+          description={description}
+          error={error}
+          label={label}
+        >
           <Checkbox
             name={innerName}
             onCheckedChange={() => {
@@ -46,9 +53,9 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
             value={value}
             {...remainingProps}
           />
-        )}
-      />
-    </InlineFieldWrapper>
+        </InlineFieldWrapper>
+      )}
+    />
   )
 }
 

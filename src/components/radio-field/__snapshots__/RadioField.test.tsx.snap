@@ -1,81 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioField component renders 1`] = `
-.sx03kze-385xm {
-  margin-right: var(--sx-space-2);
+.sx03kze-2grog {
+  margin-right: var(--sx-space-3);
+  transform: translateY(var(--sx-space-0));
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sx5eeij {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sxdiu5c-0fxuj {
+.sx5eeij-0fxuj {
   padding: 0;
   margin-bottom: var(--sx-space-3);
 }
 
-.sxdiu5c-ju7t4 {
-  display: flex;
+.sx7siaz {
   align-items: center;
-}
-
-.sxjdf4a {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  padding: 0;
+  border: 1px solid var(--sx-colors-tonal500);
   border-radius: var(--sx-radii-round);
-  border-color: var(--sx-colors-secondary300);
-  border-width: 2px;
-  border-style: solid;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: center;
-  vertical-align: middle;
+  padding: 0;
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+  transition: all 50ms ease-out;
 }
 
-.sxjdf4a:focus {
+.sx7siaz:hover {
   outline: none;
 }
 
-:checked + .sxjdf4a {
-  background-color: var(--sx-colors-secondary300);
+.sx7siaz:focus {
+  outline: none;
 }
 
-[disabled] + .sxjdf4a {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
+:checked + .sx7siaz {
+  background-color: var(--sx-colors-primary);
+  border-color: var(--sx-colors-primary);
 }
 
-.sxip64y {
-  height: var(--sx-sizes-0);
-  width: var(--sx-sizes-0);
+.sx7siaz[disabled] {
+  background-color: var(--sx-colors-tonal200);
+  border-color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
+}
+
+.sxndfzf {
+  height: 6px;
+  width: 6px;
   border-radius: var(--sx-radii-round);
   background-color: white;
+  position: absolute;
+}
+
+.sx9ru2a {
+  display: flex;
+  font-weight: 400;
+  max-width: max-content;
+}
+
+.sx9ru2a0fgel--align-baseline {
+  align-items: baseline;
+}
+
+.sx9ru2aged5d--direction-row {
+  flex-direction: row;
+}
+
+.sxykmo8 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sxykmo88txt2--direction-column {
+  flex-direction: column;
 }
 
 .sxqqba1 {
@@ -91,22 +115,22 @@ exports[`RadioField component renders 1`] = `
       class="sxqqba1"
     >
       <legend
-        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-0fxuj"
+        class="sx5eeij sx5eeij8bitc--size-md sx5eeij-0fxuj"
       >
         Example options
       </legend>
       <div
-        class="sx03kze"
+        class="sxykmo8 sxykmo88txt2--direction-column"
         role="radiogroup"
       >
         <div
           class="sx03kze"
         >
           <label
-            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+            class="sx5eeij sx5eeij8bitc--size-md sx9ru2a sx9ru2a0fgel--align-baseline sx9ru2aged5d--direction-row"
           >
             <div
-              class="sx03kze sx03kze-385xm"
+              class="sx03kze sx03kze-2grog"
             >
               <input
                 checked=""
@@ -116,7 +140,7 @@ exports[`RadioField component renders 1`] = `
               />
               <button
                 aria-checked="true"
-                class="sxjdf4a"
+                class="sx7siaz"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="checked"
                 role="radio"
@@ -125,7 +149,7 @@ exports[`RadioField component renders 1`] = `
                 value="1"
               >
                 <span
-                  class="sxip64y"
+                  class="sxndfzf"
                   data-state="checked"
                 />
               </button>
@@ -137,10 +161,10 @@ exports[`RadioField component renders 1`] = `
           class="sx03kze"
         >
           <label
-            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+            class="sx5eeij sx5eeij8bitc--size-md sx9ru2a sx9ru2a0fgel--align-baseline sx9ru2aged5d--direction-row"
           >
             <div
-              class="sx03kze sx03kze-385xm"
+              class="sx03kze sx03kze-2grog"
             >
               <input
                 hidden=""
@@ -149,7 +173,7 @@ exports[`RadioField component renders 1`] = `
               />
               <button
                 aria-checked="false"
-                class="sxjdf4a"
+                class="sx7siaz"
                 data-radix-roving-focus-group-id="radix-id-0-1"
                 data-state="unchecked"
                 role="radio"

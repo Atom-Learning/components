@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component renders 1`] = `
-.sxbbxj8 {
-  font-family: var(--sx-fonts-sans);
+.sxabai0 {
+  border-bottom: 1px solid var(--sx-colors-tonal200);
   color: var(--sx-colors-tonal600);
+  font-family: var(--sx-fonts-sans);
+  padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  border-bottom: 1px solid var(--sx-colors-tonal200);
 }
 
-.sx4lk0d {
-  font-family: var(--sx-fonts-sans);
+.sxz26ep {
+  background: var(--sx-colors-secondary);
   color: white;
-  font-weight: 700;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
+  padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  background: var(--sx-colors-primary500);
 }
 
 .sxwi5ht {
@@ -43,7 +43,7 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <th
-          class="sx4lk0d"
+          class="sxz26ep"
         >
           Column A
         </th>
@@ -56,7 +56,7 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <td
-          class="sxbbxj8"
+          class="sxabai0"
         >
           This is text
         </td>
@@ -69,7 +69,7 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <td
-          class="sxbbxj8"
+          class="sxabai0"
         >
           Footer 1
         </td>

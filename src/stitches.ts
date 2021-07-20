@@ -1,4 +1,5 @@
-import atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme'
+import * as atomTheme from '@atom-learning/theme'
 import { createCss, StitchesCss } from '@stitches/react'
 
 type CSSValue = number | string
@@ -87,7 +88,7 @@ export const media = {
 }
 
 const stitchesConfig = createCss({
-  theme: atomTheme,
+  theme: atomTheme as Theme,
   utils,
   media
 })

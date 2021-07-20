@@ -11,10 +11,10 @@ export const CarouselPagination = styled(DotGroup, {
     cursor: 'pointer',
     mx: '$1',
     p: '$1',
-    size: '12px',
+    size: '$space$3',
     transition: 'all 0.25s ease-in',
     '&[class*="selected"]': {
-      bg: '$primary900'
+      bg: '$tertiary'
     }
   }
 })

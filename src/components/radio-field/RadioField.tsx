@@ -18,12 +18,10 @@ export const RadioField: React.FC<RadioFieldProps> = ({
   label,
   value,
   ...remainingProps
-}) => {
-  return (
-    <InlineFieldWrapper css={css} label={label}>
-      <RadioButton value={value} {...remainingProps} />
-    </InlineFieldWrapper>
-  )
-}
+}) => (
+  <InlineFieldWrapper css={css} label={label}>
+    <RadioButton value={value} {...remainingProps} />
+  </InlineFieldWrapper>
+)
 
 RadioField.displayName = 'RadioField'

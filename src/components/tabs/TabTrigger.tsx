@@ -1,25 +1,26 @@
-import * as React from 'react'
 import { Trigger } from '@radix-ui/react-tabs'
-import { CSS, styled } from '~/stitches'
+import * as React from 'react'
+
+import { styled } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
+  color: '$primary',
+  cursor: 'pointer',
   flexShrink: 0,
-  padding: '$3',
-  color: '$primary500',
-  fontFamily: '$sans',
+  fontFamily: '$body',
+  p: '$4',
   userSelect: 'none',
-  '&:hover': { color: '$primary900' },
-  '&[data-disabled]': { color: '$tonal600' },
-  '&[data-disabled]:hover': { color: '$tonal600' },
+  '&:hover': { color: '$tertiary' },
+  '&[data-disabled],&[data-disabled]:hover': { color: '$tonal500' },
   '&[data-state="active"]': {
-    color: '$primary900',
+    color: '$tertiary',
     boxShadow: 'inset 0 -3px 0 0 currentColor'
   }
 })
 
 type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {
   value: string
-  disabled: boolean
+  disabled?: boolean
 }
 
 export const TabTrigger: React.FC<TabTriggerProps> = ({

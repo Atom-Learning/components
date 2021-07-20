@@ -1,12 +1,12 @@
 import { styled } from '~/stitches'
 
 export const TableCell = styled('td', {
-  fontFamily: '$sans',
+  borderBottom: '1px solid $tonal200',
   color: '$tonal600',
-  textAlign: 'left',
-  verticalAlign: 'middle',
+  fontFamily: '$sans',
   p: '$2 $3',
-  borderBottom: '1px solid $tonal200'
+  textAlign: 'left',
+  verticalAlign: 'middle'
 })
 
 TableCell.displayName = 'TableCell'

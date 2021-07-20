@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video component renders a video with custom ratio (4:3) 1`] = `
-.sx03kze-qiz11 {
+.sx03kze-9he4o {
+  border-radius: var(--sx-radii-0);
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
@@ -9,7 +10,8 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
   width: 100%;
 }
 
-.sx03kze-ifq7y {
+.sx03kze-oboxh {
+  border-radius: var(--sx-radii-0);
   position: relative;
   padding-top: 75%;
   overflow: hidden;
@@ -25,7 +27,7 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kze-ifq7y"
+    class="sx03kze sx03kze-oboxh"
   >
     <div
       class="sx03kze sx03kze-vtaup"
@@ -41,7 +43,8 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
 `;
 
 exports[`Video component renders a video with default ratio 1`] = `
-.sx03kze-qiz11 {
+.sx03kze-9he4o {
+  border-radius: var(--sx-radii-0);
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
@@ -57,7 +60,7 @@ exports[`Video component renders a video with default ratio 1`] = `
 
 <div>
   <div
-    class="sx03kze sx03kze-qiz11"
+    class="sx03kze sx03kze-9he4o"
   >
     <div
       class="sx03kze sx03kze-vtaup"

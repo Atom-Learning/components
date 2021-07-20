@@ -9,8 +9,7 @@ import type {
   FormContentValues,
   FormPersistParams,
   FormValues,
-  PersistFormWrapperValues,
-  PersistOptions
+  PersistFormWrapperValues
 } from './Form.types'
 import { StorageEnum } from './Form.types'
 
@@ -65,19 +64,17 @@ const FormContent: React.FC<FormContentProps> = ({
   onSubmit,
   children,
   ...remainingProps
-}) => {
-  return (
-    <FormProvider {...formMethods}>
-      <StyledForm
-        aria-label="form"
-        {...remainingProps}
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        {children}
-      </StyledForm>
-    </FormProvider>
-  )
-}
+}) => (
+  <FormProvider {...formMethods}>
+    <StyledForm
+      aria-label="form"
+      {...remainingProps}
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      {children}
+    </StyledForm>
+  </FormProvider>
+)
 
 export const Form: React.FC<FormProps> = ({
   children,

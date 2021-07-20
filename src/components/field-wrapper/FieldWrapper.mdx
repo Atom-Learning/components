@@ -7,16 +7,24 @@ category: Forms
 
 `FieldWrapper` renders a `Label` and (when applicable) a `ValidationError`. Use it to wrap any type of input to create a consistent set of form fields.
 
-`InlineFieldWrapper` does the same but renders the label inline with the input, for example:`Checkbox`es and `Radio`s.
-
 ```tsx preview
 <FieldWrapper label="Example Field" fieldId="example">
   <Input name="example" id="example" />
 </FieldWrapper>
 ```
 
+`InlineFieldWrapper` does the same but renders the label inline with the input, for example:`Checkbox`es and `Radio`s.
+
 ```tsx preview
 <InlineFieldWrapper label="Example Checkbox">
   <Checkbox name="example2" id="example2" />
+</InlineFieldWrapper>
+```
+
+It can also be used alongside components like `Input`, `Select` or `Switch` when you may require some condensed inline fields. You can use the `direction` and `align` props to handle how the label is positioned relative to the component, in this case the label is placed on the right with `direction="reverse"` and it's aligned centrally with the switch.
+
+```tsx preview
+<InlineFieldWrapper direction="reverse" align="center" label="Toggle a field">
+  <Switch />
 </InlineFieldWrapper>
 ```

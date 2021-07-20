@@ -119,7 +119,7 @@ const ComposedComponent = ({ css }) => (
     <Box css={{ mb: '$3' }}>
       The styling of these boxes is ComposedComponent's responsibility
     </Box>
-    <Box css={{ color: '$primary500' }}>
+    <Box css={{ color: '$primary' }}>
       If we want to combine boxes differently, we can compose a new component
     </Box>
   </CSSWrapper>

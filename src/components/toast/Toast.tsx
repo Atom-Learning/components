@@ -1,4 +1,4 @@
-import { Close } from '@atom-learning/icons'
+import { Close, Error } from '@atom-learning/icons'
 import * as React from 'react'
 import { toast } from 'react-hot-toast'
 import type { Toast as ToastInterface } from 'react-hot-toast/dist/core/types'
@@ -7,9 +7,10 @@ import { keyframes, styled } from '~/stitches'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
+import { Loader } from '../loader/Loader'
 import { Text } from '../text/Text'
 
-export const TOAST_WIDTH = 360
+export const TOAST_WIDTH = 400
 
 const slideIn = keyframes({
   '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
@@ -38,21 +39,21 @@ const ToastContainer = styled('div', {
 const StyledToast = styled('div', {
   alignItems: 'center',
   borderRadius: '$0',
+  boxShadow: '$2',
   boxSizing: 'border-box',
   color: 'white',
   display: 'flex',
-  justifyContent: 'space-between',
-  minHeight: '$4',
-  pl: '$3',
-  pr: '$2',
+  minHeight: '$5',
+  pl: '$4',
+  pr: '$3',
   py: '$2',
   transition: 'background-color 50ms ease-out, transform 150ms ease-out',
   width: TOAST_WIDTH,
   variants: {
     status: {
-      blank: { bg: '$primary900' },
+      blank: { bg: '$primary' },
       error: { bg: '$danger' },
-      loading: { bg: '$primary900' },
+      loading: { bg: '$primary' },
       success: { bg: '$success' }
     }
   }
@@ -102,17 +103,21 @@ export const Toast: React.FC<ToastProps> = React.memo(
           aria-live={ariaLive}
           style={{ transform: `translateY(${offset}px)` }}
         >
+          {type === 'error' && (
+            <Icon size="sm" css={{ mr: '$3', flex: '0 0 auto' }} is={Error} />
+          )}
           <Text css={{ color: 'inherit' }}>{message}</Text>
-          <ActionIcon
-            css={{
-              color: 'white',
-              flex: '0 0 auto'
-            }}
-            label="Close alert"
-            onClick={() => toast.dismiss(id)}
-          >
-            <Icon is={Close} />
-          </ActionIcon>
+          {type === 'loading' ? (
+            <Loader css={{ flex: '0 0 auto', ml: 'auto' }} />
+          ) : (
+            <ActionIcon
+              css={{ color: 'white', flex: '0 0 auto', ml: 'auto' }}
+              label="Close alert"
+              onClick={() => toast.dismiss(id)}
+            >
+              <Icon is={Close} />
+            </ActionIcon>
+          )}
         </StyledToast>
       </ToastContainer>
     )
