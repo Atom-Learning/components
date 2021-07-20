@@ -64,7 +64,15 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
     </InlineLabel>
     {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
     {description && (
-      <Text size="sm" css={{ color: '$tonal500', mt: '$3', maxWidth: '80ch' }}>
+      <Text
+        size="sm"
+        css={{
+          color: '$tonal500',
+          mt: '$2',
+          [direction === 'reverse' ? 'mr' : 'ml']: 'calc($space$3 + $sizes$1)', // calc required to get correct offset value
+          maxWidth: '80ch'
+        }}
+      >
         {description}
       </Text>
     )}
