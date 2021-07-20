@@ -26,9 +26,13 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   }
 })
 
-const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
+const getButtonSolidVariant = (
+  baseColor: string,
+  interactColor: string,
+  textColor = 'white'
+) => ({
   bg: baseColor,
-  color: 'white',
+  color: textColor,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: interactColor
   },
@@ -119,7 +123,7 @@ export const StyledButton = styled('button', {
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getButtonSolidVariant('$warning', '$warningDark')
+      css: getButtonSolidVariant('$warning', '$warningDark', '$tonal900')
     },
     {
       theme: 'danger',
