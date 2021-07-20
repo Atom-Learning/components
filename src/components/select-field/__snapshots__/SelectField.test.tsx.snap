@@ -36,47 +36,50 @@ exports[`SelectField component renders 1`] = `
   display: table;
 }
 
-.sxqb0gi {
+.sxq32pr {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-  background-position: right var(--sx-space-3) top 50%, 0 0;
   background-repeat: no-repeat, repeat;
-  background-size: 20px auto, 100%;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
-  font-size: var(--sx-fontSizes-md);
   font-weight: 400;
-  height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-6);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sxqb0gi:hover {
+.sxq32pr:hover {
   cursor: pointer;
 }
 
-.sxqb0gi:focus {
+.sxq32pr:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxqb0gi::-ms-expand {
+.sxq32pr::-ms-expand {
   display: none;
 }
 
-.sxqb0gi[disabled],
-.sxqb0gi > option[disabled] {
+.sxq32pr[disabled],
+.sxq32pr > option[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sxq32prw1wwt--size-md {
+  background-position: right var(--sx-space-3) top 50%, 0 0;
+  background-size: 20px auto, 100%;
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-6);
 }
 
 <div>
@@ -98,7 +101,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="sxqb0gi"
+        class="sxq32pr sxq32prw1wwt--size-md"
         id="example"
         name="example"
       >
