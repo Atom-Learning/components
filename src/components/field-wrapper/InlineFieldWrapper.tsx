@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Label } from '~/components/label'
+import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
@@ -31,16 +32,18 @@ type InlineFieldWrapperProps = {
   required?: boolean
   align?: 'baseline' | 'center'
   direction?: 'row' | 'reverse'
+  description?: string
 }
 
 export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
+  align = 'baseline',
   children,
-  error,
   css,
-  label,
-  required,
+  description,
   direction = 'row',
-  align = 'baseline'
+  error,
+  label,
+  required
 }) => (
   <Box css={css}>
     <InlineLabel direction={direction} align={align} required={required}>
@@ -60,6 +63,11 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       {label}
     </InlineLabel>
     {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+    {description && (
+      <Text size="sm" css={{ color: '$tonal500', mt: '$3', maxWidth: '80ch' }}>
+        {description}
+      </Text>
+    )}
   </Box>
 )
 

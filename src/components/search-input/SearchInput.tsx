@@ -8,14 +8,16 @@ import { Icon } from '../icon/Icon'
 import { Input } from '../input/Input'
 
 type SearchInputProps = React.ComponentProps<typeof Input> & {
+  size: 'sm' | 'md'
   css?: CSS
 }
 
 export const SearchInput: React.FC<SearchInputProps> = ({
+  size,
   css,
   ...remainingProps
 }) => (
-  <Box css={{ position: 'relative', ...css }}>
+  <Box css={{ position: 'relative', ...(css as any) }}>
     <>
       <Icon
         is={Search}
@@ -23,12 +25,17 @@ export const SearchInput: React.FC<SearchInputProps> = ({
           color: '$tonal500',
           pointerEvents: 'none',
           position: 'absolute',
-          size: 20,
-          top: 10,
-          left: 10
+          size: size === 'sm' ? '$1' : 20,
+          top: size === 'sm' ? '$2' : 10,
+          left: size === 'sm' ? '$2' : 10
         }}
       />
-      <Input css={{ pl: '$6' }} {...remainingProps} type="search" />
+      <Input
+        size={size}
+        css={{ pl: size === 'sm' ? '$5' : '$6' }}
+        {...remainingProps}
+        type="search"
+      />
     </>
   </Box>
 )

@@ -50,35 +50,35 @@ exports[`FieldWrapper component renders 1`] = `
   margin-top: var(--sx-space-2);
 }
 
-.sxgpjqn {
+.sxj1d4e {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxgpjqn6tbwj--size-sm {
+.sxj1d4eid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxgpjqn6tbwj--size-sm::before {
+.sxj1d4eid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxgpjqn6tbwj--size-sm::after {
+.sxj1d4eid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxgpjqn-2obmh {
+.sxj1d4e-2obmh {
   color: inherit;
 }
 
-.sxh0wga {
+.sx5eeij {
   color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
@@ -86,24 +86,24 @@ exports[`FieldWrapper component renders 1`] = `
   margin: 0;
 }
 
-.sxh0wgaryo8u--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxh0wgaryo8u--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxh0wgaryo8u--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sx18gt8 {
+.sxlc3or {
   background: unset;
   border: unset;
   padding: unset;
@@ -113,44 +113,44 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sx18gt8:focus,
-.sx18gt8:hover {
+.sxlc3or:focus,
+.sxlc3or:hover {
   color: var(--sx-colors-tertiary);
   text-decoration: underline;
 }
 
-.sx18gt8:active {
+.sxlc3or:active {
   color: var(--sx-colors-primary);
 }
 
-.sxgpjqn > .sx18gt8,
-.sxhyvnz > .sx18gt8,
-.sx03kze > .sx18gt8 {
+.sxj1d4e > .sxlc3or,
+.sxh1zwe > .sxlc3or,
+.sx03kze > .sxlc3or {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxgpjqn > .sx18gt8::before,
-.sxgpjqn > .sx18gt8::after,
-.sxhyvnz > .sx18gt8::before,
-.sxhyvnz > .sx18gt8::after,
-.sx03kze > .sx18gt8::before,
-.sx03kze > .sx18gt8::after {
+.sxj1d4e > .sxlc3or::before,
+.sxj1d4e > .sxlc3or::after,
+.sxh1zwe > .sxlc3or::before,
+.sxh1zwe > .sxlc3or::after,
+.sx03kze > .sxlc3or::before,
+.sx03kze > .sxlc3or::after {
   content: none;
 }
 
-.sx18gt86tbwj--size-sm {
+.sxlc3orid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sx18gt86tbwj--size-sm::before {
+.sxlc3orid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sx18gt86tbwj--size-sm::after {
+.sxlc3orid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
@@ -183,13 +183,13 @@ exports[`FieldWrapper component renders 1`] = `
       class="sx2cs53 sx2cs53-qom1k"
     >
       <label
-        class="sxh0wga sxh0wgaryo8u--size-md"
+        class="sx5eeij sx5eeij8bitc--size-md"
         for="example"
       >
         Example Field
       </label>
       <a
-        class="sx18gt8 sx18gt86tbwj--size-sm"
+        class="sxlc3or sxlc3orid6h2--size-sm"
         href="https://example.com"
       >
         Example prompt
@@ -226,7 +226,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-2obmh"
+        class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-2obmh"
       >
         Example error
       </p>
