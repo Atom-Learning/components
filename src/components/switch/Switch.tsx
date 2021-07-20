@@ -14,7 +14,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   p: '$0',
   position: 'relative',
   transition: 'background-color 100ms ease',
-  width: '$5',
+  width: '$4',
   '&:hover': {
     backgroundColor: '$tonal400'
   },
@@ -28,7 +28,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
 
 const StyledThumb = styled(RadixSwitch.Thumb, {
   display: 'block',
-  size: '$2',
+  size: '$1',
   backgroundColor: 'white',
   borderRadius: '$round',
   transition: 'transform 100ms',

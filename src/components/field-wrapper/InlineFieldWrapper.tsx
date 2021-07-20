@@ -3,14 +3,34 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Label } from '~/components/label'
 import { ValidationError } from '~/components/validation-error'
-import { CSS } from '~/stitches'
+import { CSS, styled } from '~/stitches'
+
+import { Checkbox } from '../checkbox/Checkbox'
+import { RadioButton } from '../radio/RadioButton'
+
+const InlineLabel = styled(Label, {
+  display: 'flex',
+  fontWeight: 400,
+  maxWidth: 'max-content',
+  variants: {
+    align: {
+      baseline: { alignItems: 'baseline' },
+      center: { alignItems: 'center' }
+    },
+    direction: {
+      reverse: { flexDirection: 'row-reverse' },
+      row: { flexDirection: 'row' }
+    }
+  }
+})
 
 type InlineFieldWrapperProps = {
   css?: CSS
   error?: string
   label: string
   required?: boolean
-  reverse?: boolean
+  align?: 'baseline' | 'center'
+  direction?: 'row' | 'reverse'
 }
 
 export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
@@ -19,29 +39,26 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
   css,
   label,
   required,
-  reverse
+  direction = 'row',
+  align = 'baseline'
 }) => (
   <Box css={css}>
-    <Label
-      css={{
-        alignItems: 'baseline',
-        display: 'flex',
-        flexDirection: reverse ? 'row-reverse' : 'row',
-        fontWeight: 400,
-        maxWidth: 'max-content'
-      }}
-      required={required}
-    >
-      <Box
-        css={{
-          [reverse ? 'ml' : 'mr']: '$3',
-          transform: 'translateY($space$0)'
-        }}
-      >
-        {children}
-      </Box>
+    <InlineLabel direction={direction} align={align} required={required}>
+      {React.Children.map(children, (child: any) => (
+        <Box
+          css={{
+            [direction === 'reverse' ? 'ml' : 'mr']: '$3',
+            // provide offset for specific child components
+            ...((child?.type === Checkbox || child?.type === RadioButton) && {
+              transform: 'translateY($space$0)'
+            })
+          }}
+        >
+          {child}
+        </Box>
+      ))}
       {label}
-    </Label>
+    </InlineLabel>
     {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
   </Box>
 )
