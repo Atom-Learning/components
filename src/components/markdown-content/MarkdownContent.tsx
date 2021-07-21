@@ -1,67 +1,58 @@
+import { Content } from 'mdast'
 import directive from 'mdast-util-directive'
 import fromMarkdown from 'mdast-util-from-markdown'
 import syntax from 'micromark-extension-directive'
 import * as React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { CSS } from '~/stitches'
 
-import { Box } from '../box/Box'
-import { Divider } from '../divider/Divider'
-import { Heading, HeadingProps } from '../heading/Heading'
-import { Image } from '../image/Image'
-import { Link } from '../link/Link'
-import { List } from '../list/List'
 import { StackContent } from '../stack-content/StackContent'
-import { Text } from '../text/Text'
+import {
+  MarkdownCode,
+  MarkdownEmphasis,
+  MarkdownHeading,
+  MarkdownImage,
+  MarkdownInlineCode,
+  MarkdownLink,
+  MarkdownList,
+  MarkdownListItem,
+  MarkdownParagraph,
+  MarkdownStrong,
+  MarkdownText,
+  MarkdownThematicBreak
+} from './components'
+
+type HandleNode = (node: Content) => JSX.Element | null
 
 type MarkdownContentProps = {
   content: string
-  handleDirectives?: (node, handleNode) => React.ReactElement
+  customComponents?: {
+    [key: string]: React.FC<{
+      node: Content
+      handleNode: HandleNode
+    }>
+  }
   css?: CSS
 }
 
-const getHeadingProps = (depth: number): HeadingProps => {
-  switch (depth) {
-    case 1:
-      return { size: 'xl', as: 'h1' }
-    case 2:
-      return { size: 'lg', as: 'h2' }
-    case 3:
-      return { size: 'md', as: 'h3' }
-    case 4:
-      return { size: 'sm', as: 'h4' }
-    case 5:
-      return { size: 'xs', as: 'h5' }
-    default:
-      return { size: 'xs', as: 'h6' }
-  }
+const defaultComponentsMap = {
+  code: MarkdownCode,
+  emphasis: MarkdownEmphasis,
+  heading: MarkdownHeading,
+  inlineCode: MarkdownInlineCode,
+  image: MarkdownImage,
+  link: MarkdownLink,
+  list: MarkdownList,
+  listItem: MarkdownListItem,
+  paragraph: MarkdownParagraph,
+  strong: MarkdownStrong,
+  text: MarkdownText,
+  thematicBreak: MarkdownThematicBreak
 }
-
-const StyledStrong = styled('strong', { fontWeight: 600 })
-const StyledEm = styled('em', { fontStyle: 'italic' })
-
-const Code = styled(Box, {
-  bg: '$tonal200',
-  p: '$3',
-  my: '$4',
-  borderRadius: '$1',
-  lineHeight: 1.4,
-  fontFamily: '$mono',
-  fontSize: '$sm'
-})
-
-const InlineCode = styled(Box, {
-  bg: '$tonal100',
-  borderRadius: '$0',
-  display: 'inline-block',
-  fontFamily: '$mono',
-  fontSize: '85%',
-  p: '$0 $1'
-})
 
 export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   content,
-  handleDirectives = () => null,
+  customComponents = {},
   css
 }) => {
   const AST = fromMarkdown(content, {
@@ -69,79 +60,30 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
     mdastExtensions: [directive.fromMarkdown]
   })
 
-  const handleNode = (node) => {
-    if (node.type === 'code') {
-      return <Code as="pre">{node.value}</Code>
+  const componentsMap = {
+    ...defaultComponentsMap,
+    ...customComponents
+  }
+
+  const generateNodeKey = (node: Content) => {
+    if (node.position?.start) {
+      const { line, column, offset } = node.position?.start
+      return `${node.type}${line}${column}${offset}`
     }
 
-    if (node.type === 'emphasis') {
-      return <StyledEm>{node.children.map(handleNode)}</StyledEm>
-    }
+    return `${node.type}${+new Date()}`
+  }
 
-    if (node.type === 'heading') {
-      const { size, as } = getHeadingProps(node.depth)
+  const handleNode: HandleNode = (node) => {
+    const MarkdownComponent = componentsMap[node.type]
 
-      return (
-        <Heading as={as} size={size} css={{ color: 'inherit' }}>
-          {node.children.map(handleNode)}
-        </Heading>
-      )
-    }
-
-    if (node.type === 'inlineCode') {
-      return <InlineCode as="code">{node.value}</InlineCode>
-    }
-
-    if (node.type === 'image') {
-      return <Image src={node.url} alt={node.alt} />
-    }
-
-    if (node.type === 'link') {
-      return (
-        <Link title={node.title} href={node.url}>
-          {node.children.map(handleNode)}
-        </Link>
-      )
-    }
-
-    if (node.type === 'list') {
-      return (
-        <List
-          css={{ '& p:before, & p:after': { display: 'none' } }}
-          ordered={node.ordered}
-        >
-          {node.children.map(handleNode)}
-        </List>
-      )
-    }
-
-    if (node.type === 'listItem') {
-      return <List.Item>{node.children.map(handleNode)}</List.Item>
-    }
-
-    if (node.type === 'paragraph') {
-      return (
-        <Text css={{ color: 'inherit' }}>{node.children.map(handleNode)}</Text>
-      )
-    }
-
-    if (node.type === 'strong') {
-      return <StyledStrong>{node.children.map(handleNode)}</StyledStrong>
-    }
-
-    if (node.type === 'text') {
-      return node.value
-    }
-
-    if (node.type === 'textDirective') {
-      return handleDirectives(node, handleNode)
-    }
-
-    if (node.type === 'thematicBreak') {
-      return <Divider css={{ width: '100%' }} />
-    }
-
-    return null
+    return MarkdownComponent ? (
+      <MarkdownComponent
+        key={generateNodeKey(node)}
+        node={node}
+        handleNode={handleNode}
+      />
+    ) : null
   }
 
   return <StackContent css={css}>{AST.children.map(handleNode)}</StackContent>
