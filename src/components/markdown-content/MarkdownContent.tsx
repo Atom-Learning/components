@@ -1,4 +1,3 @@
-import { Content } from 'mdast'
 import directive from 'mdast-util-directive'
 import fromMarkdown from 'mdast-util-from-markdown'
 import syntax from 'micromark-extension-directive'
@@ -22,13 +21,13 @@ import {
   MarkdownThematicBreak
 } from './components'
 
-type HandleNode = (node: Content) => JSX.Element | null
+type HandleNode = (node) => JSX.Element | null
 
 type MarkdownContentProps = {
   content: string
   customComponents?: {
     [key: string]: React.FC<{
-      node: Content
+      node: any
       handleNode: HandleNode
     }>
   }
@@ -50,6 +49,15 @@ const defaultComponentsMap = {
   thematicBreak: MarkdownThematicBreak
 }
 
+const generateNodeKey = (node) => {
+  if (node.position?.start) {
+    const { line, column, offset } = node.position?.start
+    return `${node.type}${line}${column}${offset}`
+  }
+
+  return `${node.type}${+new Date()}`
+}
+
 export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   content,
   customComponents = {},
@@ -63,15 +71,6 @@ export const MarkdownContent: React.FC<MarkdownContentProps> = ({
   const componentsMap = {
     ...defaultComponentsMap,
     ...customComponents
-  }
-
-  const generateNodeKey = (node: Content) => {
-    if (node.position?.start) {
-      const { line, column, offset } = node.position?.start
-      return `${node.type}${line}${column}${offset}`
-    }
-
-    return `${node.type}${+new Date()}`
   }
 
   const handleNode: HandleNode = (node) => {

@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
-import { TextDirective } from 'mdast-util-directive'
 import * as React from 'react'
 
 import { Box } from '../box'
@@ -41,7 +40,7 @@ describe('MarkdownContent component', () => {
         content={`:someDirective[This text will be shown as content]{aria-label="someDirective box"}`}
         customComponents={{
           textDirective: ({ node, handleNode }) => {
-            const { name, attributes, children } = node as TextDirective
+            const { name, attributes, children } = node
 
             if (name === 'someDirective') {
               return (
