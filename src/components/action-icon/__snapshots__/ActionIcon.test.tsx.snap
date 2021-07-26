@@ -16,27 +16,31 @@ exports[`ActionIcon component renders 1`] = `
   width: var(--sx-sizes-2);
 }
 
-.sxy3zvi {
+.sx9lq6x {
+  align-items: center;
   -webkit-appearance: none;
   appearance: none;
   border: unset;
   border-radius: var(--sx-radii-0);
+  box-sizing: border-box;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   padding: unset;
   transition: all 125ms ease-out;
 }
 
-.sxy3zvilo5m8--appearance-subtle {
+.sx9lq6xlo5m8--appearance-subtle {
   background: transparent;
   color: var(--sx-colors-tonal800);
 }
 
-.sxy3zvilo5m8--appearance-subtle:hover,
-.sxy3zvilo5m8--appearance-subtle:focus {
+.sx9lq6xlo5m8--appearance-subtle:hover,
+.sx9lq6xlo5m8--appearance-subtle:focus {
   background: var(--sx-colors-alpha150);
 }
 
-.sxy3zvie6fss--size-md {
+.sx9lq6xe6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
@@ -44,8 +48,7 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxy3zvi sxy3zvi03kze--theme-primary sxy3zvilo5m8--appearance-subtle sxy3zvie6fss--size-md"
-    type="button"
+    class="sx9lq6x sx9lq6x03kze--theme-primary sx9lq6xlo5m8--appearance-subtle sx9lq6xe6fss--size-md"
   >
     <svg />
   </button>

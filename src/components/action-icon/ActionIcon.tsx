@@ -2,6 +2,7 @@ import invariant from 'invariant'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { Override } from '~/utilities'
 
 import { Icon } from '../icon/Icon'
 
@@ -29,10 +30,14 @@ const getOutlineVariant = (color: string) => ({
 })
 
 const StyledButton = styled('button', {
+  alignItems: 'center',
   appearance: 'none',
   border: 'unset',
   borderRadius: '$0',
+  boxSizing: 'border-box',
   cursor: 'pointer',
+  display: 'flex',
+  justifyContent: 'center',
   p: 'unset',
   transition: 'all 125ms ease-out',
   variants: {
@@ -128,41 +133,14 @@ const StyledButton = styled('button', {
   ]
 })
 
-const StyledForm = styled('form', { display: 'inline' })
-
-type ActionIconProps = React.ComponentProps<typeof StyledButton> & {
-  label: string
-}
-
-type ActionIconButtonProps = React.ComponentProps<typeof StyledButton> & {
-  children: React.ReactNode
-  message: string
-}
-
-const ActionIconButton: React.FC<ActionIconButtonProps> = ({
-  children,
-  message,
-  ...restProps
-}) => {
-  return (
-    <StyledButton {...restProps}>
-      {React.Children.map(children, (child) => {
-        // TS needs this check for any following code to access child.type
-        // even with optional chaining
-        if (!React.isValidElement(child)) {
-          throw new Error(message)
-        }
-
-        invariant(
-          child.type === Icon,
-          `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-        )
-
-        return child
-      })}
-    </StyledButton>
-  )
-}
+type ActionIconProps = Override<
+  React.ComponentPropsWithRef<typeof StyledButton>,
+  {
+    label: string
+    href?: string
+    onClick?: (...args: unknown[]) => void
+  }
+>
 
 export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
   (
@@ -173,6 +151,7 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
       size = 'md',
       label,
       href,
+      onClick,
       ...remainingProps
     },
     ref
@@ -181,32 +160,36 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
 
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
-    const buttonProps = href
-      ? { onClick: undefined, type: 'submit' }
-      : { type: 'button' }
+    const optionalLinkProps = href
+      ? { as: 'a', href, onClick: undefined }
+      : { onClick }
 
-    const props = {
-      'aria-label': label,
-      theme: theme,
-      appearance: appearance,
-      size: size,
-      ref: ref,
-      children,
-      message: INVALID_CHILDREN_MESSAGE,
-      ...remainingProps,
-      ...buttonProps
-    }
+    return (
+      <StyledButton
+        {...remainingProps}
+        {...optionalLinkProps}
+        appearance={appearance}
+        aria-label={label}
+        ref={ref}
+        size={size}
+        theme={theme}
+      >
+        {React.Children.map(children, (child) => {
+          // TS needs this check for any following code to access child.type
+          // even with optional chaining
+          if (!React.isValidElement(child)) {
+            throw new Error(INVALID_CHILDREN_MESSAGE)
+          }
 
-    if (href) {
-      // Wrapped in a form to keep styles consistent with non-href ActionIcons
-      return (
-        <StyledForm action={href} method="post">
-          <ActionIconButton {...props} />
-        </StyledForm>
-      )
-    }
+          invariant(
+            child.type === Icon,
+            `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+          )
 
-    return <ActionIconButton {...props} />
+          return child
+        })}
+      </StyledButton>
+    )
   }
 )
 
