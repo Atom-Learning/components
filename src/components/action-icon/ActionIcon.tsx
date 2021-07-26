@@ -2,7 +2,6 @@ import invariant from 'invariant'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { Override } from '~/utilities'
 
 import { Icon } from '../icon/Icon'
 
@@ -133,14 +132,11 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ActionIconProps = Override<
-  React.ComponentPropsWithRef<typeof StyledButton>,
-  {
-    label: string
-    href?: string
-    onClick?: (...args: unknown[]) => void
-  }
->
+type ActionIconProps = React.ComponentPropsWithRef<typeof StyledButton> & {
+  label: string
+  href?: string
+  onClick?: (...args: unknown[]) => void
+}
 
 export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
   (
@@ -162,17 +158,17 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
 
     const optionalLinkProps = href
       ? { as: 'a', href, onClick: undefined }
-      : { onClick }
+      : ({ onClick, type: 'button' } as const)
 
     return (
       <StyledButton
         {...remainingProps}
         {...optionalLinkProps}
-        appearance={appearance}
         aria-label={label}
-        ref={ref}
-        size={size}
         theme={theme}
+        appearance={appearance}
+        size={size}
+        ref={ref}
       >
         {React.Children.map(children, (child) => {
           // TS needs this check for any following code to access child.type
