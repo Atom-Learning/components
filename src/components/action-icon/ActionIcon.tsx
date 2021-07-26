@@ -128,8 +128,40 @@ const StyledButton = styled('button', {
   ]
 })
 
+const StyledForm = styled('form', { display: 'inline' })
+
 type ActionIconProps = React.ComponentProps<typeof StyledButton> & {
   label: string
+}
+
+type ActionIconButtonProps = React.ComponentProps<typeof StyledButton> & {
+  children: React.ReactNode
+  message: string
+}
+
+const ActionIconButton: React.FC<ActionIconButtonProps> = ({
+  children,
+  message,
+  ...restProps
+}) => {
+  return (
+    <StyledButton {...restProps}>
+      {React.Children.map(children, (child) => {
+        // TS needs this check for any following code to access child.type
+        // even with optional chaining
+        if (!React.isValidElement(child)) {
+          throw new Error(message)
+        }
+
+        invariant(
+          child.type === Icon,
+          `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+        )
+
+        return child
+      })}
+    </StyledButton>
+  )
 }
 
 export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
@@ -140,6 +172,7 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
       appearance = 'subtle',
       size = 'md',
       label,
+      href,
       ...remainingProps
     },
     ref
@@ -148,32 +181,32 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
 
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
-    return (
-      <StyledButton
-        type="button"
-        {...remainingProps}
-        aria-label={label}
-        theme={theme}
-        appearance={appearance}
-        size={size}
-        ref={ref}
-      >
-        {React.Children.map(children, (child) => {
-          // TS needs this check for any following code to access child.type
-          // even with optional chaining
-          if (!React.isValidElement(child)) {
-            throw new Error(INVALID_CHILDREN_MESSAGE)
-          }
+    const buttonProps = href
+      ? { onClick: undefined, type: 'submit' }
+      : { type: 'button' }
 
-          invariant(
-            child.type === Icon,
-            `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-          )
+    const props = {
+      'aria-label': label,
+      theme: theme,
+      appearance: appearance,
+      size: size,
+      ref: ref,
+      children,
+      message: INVALID_CHILDREN_MESSAGE,
+      ...remainingProps,
+      ...buttonProps
+    }
 
-          return child
-        })}
-      </StyledButton>
-    )
+    if (href) {
+      // Wrapped in a form to keep styles consistent with non-href ActionIcons
+      return (
+        <StyledForm action={href} method="post">
+          <ActionIconButton {...props} />
+        </StyledForm>
+      )
+    }
+
+    return <ActionIconButton {...props} />
   }
 )
 
