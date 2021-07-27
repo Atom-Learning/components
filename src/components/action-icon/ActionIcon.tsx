@@ -1,7 +1,10 @@
+import { StitchesVariants } from '@stitches/react'
 import invariant from 'invariant'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { NavigatorActions } from '~/types'
+import { Override } from '~/utilities'
 
 import { Icon } from '../icon/Icon'
 
@@ -132,13 +135,16 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ActionIconProps = React.ComponentPropsWithRef<typeof StyledButton> & {
-  label: string
-  href?: string
-  onClick?: (...args: unknown[]) => void
-}
+type ActionIconProps = Override<
+  React.ComponentProps<typeof StyledButton>,
+  StitchesVariants<typeof StyledButton> & {
+    as?: never
+    children: React.ReactNode
+    label: string
+  } & NavigatorActions
+>
 
-export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
+export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
   (
     {
       children,
@@ -147,7 +153,6 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
       size = 'md',
       label,
       href,
-      onClick,
       ...remainingProps
     },
     ref
@@ -157,8 +162,8 @@ export const ActionIcon: React.FC<ActionIconProps> = React.forwardRef(
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
     const optionalLinkProps = href
-      ? { as: 'a', href, onClick: undefined }
-      : ({ onClick, type: 'button' } as const)
+      ? ({ as: 'a', href, onClick: undefined } as const)
+      : ({ type: 'button' } as const)
 
     return (
       <StyledButton
