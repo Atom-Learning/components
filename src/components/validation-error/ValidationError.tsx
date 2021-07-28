@@ -16,11 +16,14 @@ export const ValidationError: React.FC<ValidationErrorProps> = ({
   ...remainingProps
 }) => (
   <Flex
-    css={{ color: '$danger', alignItems: 'center', ...(css as any) }}
+    css={{ color: '$danger', alignItems: 'flex-start', ...(css as any) }}
     {...remainingProps}
   >
-    <Icon is={Error} size="sm" css={{ mr: '$2' }} aria-hidden />
-    <Text css={{ color: 'inherit' }} size="sm">
+    <Icon is={Error} size="sm" css={{ mr: '$2', flexShrink: 0 }} aria-hidden />
+    <Text
+      css={{ color: 'inherit', transform: 'translateY($space$1)' }}
+      size="sm"
+    >
       {children}
     </Text>
   </Flex>

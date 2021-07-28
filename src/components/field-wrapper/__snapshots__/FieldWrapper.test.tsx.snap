@@ -44,9 +44,9 @@ exports[`FieldWrapper component renders 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx2cs53-ks48k {
+.sx2cs53-1vtbu {
   color: var(--sx-colors-danger);
-  align-items: center;
+  align-items: flex-start;
   margin-top: var(--sx-space-2);
 }
 
@@ -74,8 +74,9 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxj1d4e-2obmh {
+.sxj1d4e-n4ol9 {
   color: inherit;
+  transform: translateY(var(--sx-space-1));
 }
 
 .sx5eeij {
@@ -171,8 +172,9 @@ exports[`FieldWrapper component renders 1`] = `
   width: var(--sx-sizes-1);
 }
 
-.sxtros6-385xm {
+.sxtros6-iux96 {
   margin-right: var(--sx-space-2);
+  flex-shrink: 0;
 }
 
 <div>
@@ -202,11 +204,11 @@ exports[`FieldWrapper component renders 1`] = `
       type="text"
     />
     <div
-      class="sx2cs53 sx2cs53-ks48k"
+      class="sx2cs53 sx2cs53-1vtbu"
     >
       <svg
         aria-hidden="true"
-        class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+        class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -226,7 +228,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-2obmh"
+        class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
       >
         Example error
       </p>
