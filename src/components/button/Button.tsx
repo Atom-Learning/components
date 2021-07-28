@@ -34,8 +34,10 @@ const getButtonSolidVariant = (
   bg: baseColor,
   color: textColor,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
-    bg: interactColor
+    bg: interactColor,
+    color: 'white'
   },
+
   '&:active': {
     bg: baseColor
   },
