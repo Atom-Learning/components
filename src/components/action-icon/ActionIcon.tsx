@@ -64,6 +64,11 @@ const StyledButton = styled('button', {
     size: {
       md: { size: '$3' },
       lg: { size: '$4' }
+    },
+    isRounded: {
+      true: {
+        borderRadius: '$round'
+      }
     }
   },
   compoundVariants: [
