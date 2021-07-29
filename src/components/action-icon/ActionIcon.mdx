@@ -24,6 +24,24 @@ category: Navigation
 </>
 ```
 
+## Rounded Variant
+
+Setting `isRounded` makes the Action circular when paired with the options "subtle", "outline" and "solid" for the `appearance` prop
+
+```tsx preview
+<>
+  <ActionIcon label="Attach a file" appearance="subtle" isRounded>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="outline" isRounded>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="solid" isRounded>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+</>
+```
+
 It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual description of the action the user is about to perform.
 
 ```tsx preview
