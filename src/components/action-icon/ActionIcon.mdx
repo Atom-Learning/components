@@ -54,3 +54,19 @@ It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual 
   <Tooltip.Content>Add to basket</Tooltip.Content>
 </Tooltip>
 ```
+
+## Polymorphism
+
+The `ActionIcon` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively
+
+```tsx preview
+<ActionIcon label="Shuffle selection" onClick={() => console.log('clicked')}>
+  <Icon is={Shuffle} size="sm" />
+</ActionIcon>
+```
+
+```tsx preview
+<ActionIcon label="Add a new folder" href="/directory/add">
+  <Icon is={FolderAdd} size="sm" />
+</ActionIcon>
+```
