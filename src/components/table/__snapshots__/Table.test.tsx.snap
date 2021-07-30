@@ -36,17 +36,17 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxh18y1 {
+.sxxg7cs {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxh18y1q6419--size-md td {
-  height: 48px;
+.sxxg7csy6v1p--size-md td {
+  height: var(--sx-sizes-5);
 }
 
-.sxh18y1-a5b4a {
+.sxxg7cs-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -54,7 +54,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxh18y1 sxh18y1q6419--size-md sxh18y1-a5b4a"
+    class="sxxg7cs sxxg7csy6v1p--size-md sxxg7cs-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -135,21 +135,21 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxh18y1 {
+.sxxg7cs {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxh18y1q6419--size-md td {
-  height: 48px;
+.sxxg7csy6v1p--size-md td {
+  height: var(--sx-sizes-5);
 }
 
-.sxh18y100mth--size-lg td {
-  height: 60px;
+.sxxg7csgijdn--size-lg td {
+  height: calc(var(--sx-sizes-5) + var(--sx-sizes-0));
 }
 
-.sxh18y1-a5b4a {
+.sxxg7cs-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -157,7 +157,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxh18y1 sxh18y100mth--size-lg sxh18y1-a5b4a"
+    class="sxxg7cs sxxg7csgijdn--size-lg sxxg7cs-a5b4a"
   >
     <thead
       class="sx03kze"

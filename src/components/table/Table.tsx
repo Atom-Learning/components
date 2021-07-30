@@ -28,12 +28,12 @@ const StyledTable = styled('table', {
     size: {
       md: {
         td: {
-          height: '48px'
+          height: '$5'
         }
       },
       lg: {
         td: {
-          height: '60px'
+          height: 'calc($5 + $0)'
         }
       }
     }
