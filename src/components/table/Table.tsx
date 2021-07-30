@@ -28,12 +28,12 @@ const StyledTable = styled('table', {
     size: {
       md: {
         [`${TableCell}`]: {
-          minHeight: '$5'
+          height: '$4'
         }
       },
       lg: {
         [`${TableCell}`]: {
-          minHeight: 'calc($5 + $0)'
+          height: '$5'
         }
       }
     }
