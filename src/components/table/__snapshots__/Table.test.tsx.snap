@@ -15,23 +15,23 @@ tr:nth-child(even) .sxj317c {
   background: var(--sx-colors-tonal50);
 }
 
-.sxyrxor {
+.sxgmopz {
   background: var(--sx-colors-tertiary);
   color: white;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
-  line-height: var(--sx-fontSizes-lg);
+  line-height: 1.5;
   padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
 }
 
-.sxyrxor:first-of-type {
+.sxgmopz:first-of-type {
   border-top-left-radius: var(--sx-radii-0);
   border-bottom-left-radius: var(--sx-radii-0);
 }
 
-.sxyrxor:last-of-type {
+.sxgmopz:last-of-type {
   border-top-right-radius: var(--sx-radii-0);
   border-bottom-right-radius: var(--sx-radii-0);
 }
@@ -63,7 +63,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <th
-          class="sxyrxor"
+          class="sxgmopz"
         >
           Column A
         </th>
@@ -114,23 +114,23 @@ tr:nth-child(even) .sxj317c {
   background: var(--sx-colors-tonal50);
 }
 
-.sxyrxor {
+.sxgmopz {
   background: var(--sx-colors-tertiary);
   color: white;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
-  line-height: var(--sx-fontSizes-lg);
+  line-height: 1.5;
   padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
 }
 
-.sxyrxor:first-of-type {
+.sxgmopz:first-of-type {
   border-top-left-radius: var(--sx-radii-0);
   border-bottom-left-radius: var(--sx-radii-0);
 }
 
-.sxyrxor:last-of-type {
+.sxgmopz:last-of-type {
   border-top-right-radius: var(--sx-radii-0);
   border-bottom-right-radius: var(--sx-radii-0);
 }
@@ -166,7 +166,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <th
-          class="sxyrxor"
+          class="sxgmopz"
         >
           Column A
         </th>
