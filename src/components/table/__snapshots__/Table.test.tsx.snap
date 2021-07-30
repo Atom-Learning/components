@@ -36,17 +36,17 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxxg7cs {
+.sxibxfj {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxxg7csy6v1p--size-md td {
-  height: var(--sx-sizes-5);
+.sxibxfjk3rdf--size-md td {
+  min-height: var(--sx-sizes-5);
 }
 
-.sxxg7cs-a5b4a {
+.sxibxfj-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -54,7 +54,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxxg7cs sxxg7csy6v1p--size-md sxxg7cs-a5b4a"
+    class="sxibxfj sxibxfjk3rdf--size-md sxibxfj-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -135,21 +135,21 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxxg7cs {
+.sxibxfj {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxxg7csy6v1p--size-md td {
-  height: var(--sx-sizes-5);
+.sxibxfjk3rdf--size-md td {
+  min-height: var(--sx-sizes-5);
 }
 
-.sxxg7csgijdn--size-lg td {
-  height: calc(var(--sx-sizes-5) + var(--sx-sizes-0));
+.sxibxfjz9c87--size-lg td {
+  min-height: calc(var(--sx-sizes-5) + var(--sx-sizes-0));
 }
 
-.sxxg7cs-a5b4a {
+.sxibxfj-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -157,7 +157,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxxg7cs sxxg7csgijdn--size-lg sxxg7cs-a5b4a"
+    class="sxibxfj sxibxfjz9c87--size-lg sxibxfj-a5b4a"
   >
     <thead
       class="sx03kze"
