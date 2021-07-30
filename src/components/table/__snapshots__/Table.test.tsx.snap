@@ -98,3 +98,106 @@ tr:nth-child(even) .sxj317c {
   </table>
 </div>
 `;
+
+exports[`Table component renders with size set to log 1`] = `
+.sxj317c {
+  border-bottom: 1px solid var(--sx-colors-tonal200);
+  box-sizing: border-box;
+  color: var(--sx-colors-tonal600);
+  font-family: var(--sx-fonts-body);
+  padding: var(--sx-space-2) var(--sx-space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) .sxj317c {
+  background: var(--sx-colors-tonal50);
+}
+
+.sxyrxor {
+  background: var(--sx-colors-tertiary);
+  color: white;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
+  line-height: var(--sx-fontSizes-lg);
+  padding: var(--sx-space-2) var(--sx-space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sxyrxor:first-of-type {
+  border-top-left-radius: var(--sx-radii-0);
+  border-bottom-left-radius: var(--sx-radii-0);
+}
+
+.sxyrxor:last-of-type {
+  border-top-right-radius: var(--sx-radii-0);
+  border-bottom-right-radius: var(--sx-radii-0);
+}
+
+.sxh18y1 {
+  width: 100%;
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-sm);
+}
+
+.sxh18y1q6419--size-md td {
+  height: 48px;
+}
+
+.sxh18y100mth--size-lg td {
+  height: 60px;
+}
+
+.sxh18y1-a5b4a {
+  height: 100px;
+  width: 400px;
+  color: var(--sx-colors-primary500);
+}
+
+<div>
+  <table
+    class="sxh18y1 sxh18y100mth--size-lg sxh18y1-a5b4a"
+  >
+    <thead
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <th
+          class="sxyrxor"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <td
+          class="sxj317c"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <td
+          class="sxj317c"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
