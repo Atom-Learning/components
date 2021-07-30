@@ -1,13 +1,22 @@
 import { styled } from '~/stitches'
 
 export const TableHeaderCell = styled('th', {
-  bg: '$secondary',
+  bg: '$tertiary',
   color: 'white',
   fontFamily: '$body',
   fontWeight: 600,
+  lineHeight: '$fontSizes$lg',
   p: '$2 $3',
   textAlign: 'left',
-  verticalAlign: 'middle'
+  verticalAlign: 'middle',
+  '&:first-of-type': {
+    borderTopLeftRadius: '$0',
+    borderBottomLeftRadius: '$0'
+  },
+  '&:last-of-type': {
+    borderTopRightRadius: '$0',
+    borderBottomRightRadius: '$0'
+  }
 })
 
 TableHeaderCell.displayName = 'TableHeaderCell'
