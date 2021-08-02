@@ -163,6 +163,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       size = 'md',
       label,
       href,
+      disabled,
       ...remainingProps
     },
     ref
@@ -172,7 +173,12 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
     const optionalLinkProps = href
-      ? ({ as: 'a', href, onClick: undefined } as const)
+      ? ({
+          as: 'a',
+          href: disabled ? null : href,
+          onClick: undefined,
+          'aria-disabled': !!disabled
+        } as const)
       : ({ type: 'button' } as const)
 
     return (
@@ -184,6 +190,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
         appearance={appearance}
         size={size}
         ref={ref}
+        disabled={disabled}
+        data-testid="actionIcon"
       >
         {React.Children.map(children, (child) => {
           // TS needs this check for any following code to access child.type

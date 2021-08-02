@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -38,5 +38,31 @@ describe('ActionIcon component', () => {
     )
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a link', () => {
+    render(
+      <ActionIcon label="Mark as complete" href="https:/www.google.com">
+        <Icon is={() => <svg />} />
+      </ActionIcon>
+    )
+    expect(screen.queryByTestId('actionIcon')).toHaveAttribute(
+      'href',
+      'https:/www.google.com'
+    )
+  })
+
+  it('renders a disabled link', () => {
+    render(
+      <ActionIcon
+        disabled
+        label="Mark as complete"
+        href="https:/www.google.com"
+      >
+        <Icon is={() => <svg />} />
+      </ActionIcon>
+    )
+
+    expect(screen.queryByTestId('actionIcon')).not.toHaveAttribute('href')
   })
 })
