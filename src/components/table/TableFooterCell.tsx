@@ -1,7 +1,7 @@
 import { styled } from '~/stitches'
 
 export const TableFooterCell = styled('td', {
-  color: '$secondary',
+  color: '$tonal500',
   fontFamily: '$body',
   fontWeight: 600,
   p: '$2 $3',
