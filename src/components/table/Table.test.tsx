@@ -28,7 +28,7 @@ describe(`Table component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders with size set to log', async () => {
+  it('renders with size set to lg', async () => {
     const { container } = await render(
       <Table
         size="lg"

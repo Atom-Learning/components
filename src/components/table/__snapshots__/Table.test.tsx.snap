@@ -100,7 +100,7 @@ tr:nth-child(even) .sxyjtjl {
 </div>
 `;
 
-exports[`Table component renders with size set to log 1`] = `
+exports[`Table component renders with size set to lg 1`] = `
 .sxyjtjl {
   border-bottom: 1px solid var(--sx-colors-tonal200);
   box-sizing: border-box;
