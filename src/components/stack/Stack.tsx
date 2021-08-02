@@ -1,7 +1,6 @@
-import theme from '@atom-learning/theme'
 import * as React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { CSS, styled, theme } from '~/stitches'
 import { CSSWrapper } from '~/utilities/css-wrapper'
 
 /**
@@ -53,6 +52,11 @@ const StyledStack = styled('div', {
         flexDirection: 'column'
       }
     },
+    justify: {
+      start: { justifyContent: 'flex-start' },
+      end: { justifyContent: 'flex-end' },
+      center: { justifyContent: 'center' }
+    },
     gap
   }
 })
@@ -63,10 +67,16 @@ export const Stack: React.FC<StackProps> = ({
   css,
   gap = 2,
   direction = 'row',
+  justify = 'start',
   ...remainingProps
 }) => (
   <CSSWrapper css={css}>
-    <StyledStack gap={gap} direction={direction} {...remainingProps} />
+    <StyledStack
+      direction={direction}
+      gap={gap}
+      justify={justify}
+      {...remainingProps}
+    />
   </CSSWrapper>
 )
 

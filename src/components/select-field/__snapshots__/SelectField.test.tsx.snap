@@ -5,85 +5,81 @@ exports[`SelectField component renders 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sx5eeij {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sx8kxz1 {
+.sxq32pr {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-  background-position: right var(--sx-space-3) top 50%, 0 0;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
+  font-family: var(--sx-fonts-body);
   font-weight: 400;
-  height: var(--sx-sizes-4);
   line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
   transition: all 75ms ease-out;
   width: 100%;
 }
 
-.sx8kxz1:hover {
+.sxq32pr:hover {
   cursor: pointer;
 }
 
-.sx8kxz1:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
+.sxq32pr:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx8kxz1::-ms-expand {
+.sxq32pr::-ms-expand {
   display: none;
 }
 
-.sx8kxz1[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+.sxq32pr[disabled],
+.sxq32pr > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
+  cursor: not-allowed;
 }
 
-.sx8kxz1[disabled],
-.sx8kxz1 > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
-  cursor: not-allowed;
+.sxq32prw1wwt--size-md {
+  background-position: right var(--sx-space-3) top 50%, 0 0;
+  background-size: 20px auto, 100%;
+  font-size: var(--sx-fontSizes-md);
+  height: var(--sx-sizes-4);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-6);
 }
 
 <div>
@@ -95,17 +91,17 @@ exports[`SelectField component renders 1`] = `
       class="sx03kze"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="example"
         >
           Example options
         </label>
       </div>
       <select
-        class="sx8kxz1"
+        class="sxq32pr sxq32prw1wwt--size-md"
         id="example"
         name="example"
       >

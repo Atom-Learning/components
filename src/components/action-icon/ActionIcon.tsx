@@ -10,7 +10,7 @@ import { Icon } from '../icon/Icon'
 
 const getSimpleVariant = (color: string) => ({
   bg: 'transparent',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:hover, &:focus': { color }
 })
 const getSolidVariant = (color: string) => ({
@@ -22,9 +22,9 @@ const getSolidVariant = (color: string) => ({
   }
 })
 const getOutlineVariant = (color: string) => ({
-  border: '1px solid $tonal500',
+  border: '1px solid $tonal400',
   bg: 'transparent',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:hover, &:focus': {
     borderColor: color,
     color
@@ -52,7 +52,7 @@ const StyledButton = styled('button', {
       primary: {},
       success: {},
       warning: {},
-      error: {}
+      danger: {}
     },
     appearance: {
       subtle: {
@@ -81,7 +81,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'simple',
-      css: getSimpleVariant('$primary900')
+      css: getSimpleVariant('$primary')
     },
     {
       theme: 'success',
@@ -94,7 +94,7 @@ const StyledButton = styled('button', {
       css: getSimpleVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'simple',
       css: getSimpleVariant('$danger')
     },
@@ -103,7 +103,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getSolidVariant('$primary900')
+      css: getSolidVariant('$primary')
     },
     {
       theme: 'success',
@@ -116,7 +116,7 @@ const StyledButton = styled('button', {
       css: getSolidVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'solid',
       css: getSolidVariant('$danger')
     },
@@ -125,7 +125,7 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getOutlineVariant('$primary900')
+      css: getOutlineVariant('$primary')
     },
     {
       theme: 'success',
@@ -138,7 +138,7 @@ const StyledButton = styled('button', {
       css: getOutlineVariant('$warning')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'outline',
       css: getOutlineVariant('$danger')
     }

@@ -9,43 +9,53 @@ import { Icon } from '../icon'
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: 'none',
-  borderRadius: '$0',
-  boxShadow: 'inset 0 0 0 2px $colors$secondary300',
+  border: '1px solid $colors$tonal500',
+  borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',
-  size: '20px',
-  padding: 0,
+  size: '$1',
+  p: 0,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  transition: 'all 100ms ease-out',
+  transition: 'all 50ms ease-out',
   '&[data-state="unchecked"]:focus, &[data-state="unchecked"]:hover': {
-    backgroundColor: '$tonal300',
-    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
     outline: 'none'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$secondary300'
+    backgroundColor: '$primary',
+    borderColor: '$primary'
   },
   '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
-    backgroundColor: '$secondary700',
-    boxShadow: 'inset 0 0 0 2px $colors$secondary700',
+    borderColor: '$primary',
     outline: 'none'
+  },
+  '&[disabled]': {
+    backgroundColor: '$tonal200',
+    borderColor: '$tonal400',
+    cursor: 'not-allowed'
   },
   '&:focus-within': {
     outline: 'none'
   }
 })
 
-type CheckboxProps = React.ComponentPropsWithoutRef<typeof StyledCheckbox>
+type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
-const CheckboxIcon = () => <Icon is={Ok} size="sm" />
+const CheckboxIcon = () => (
+  <Icon
+    is={Ok}
+    size="xs"
+    css={{ pointerEvents: 'none', position: 'absolute', strokeWidth: '3' }}
+  />
+)
 
-export const Checkbox: React.FC<CheckboxProps> = (props) => (
-  <StyledCheckbox {...props}>
-    <RadixCheckbox.Indicator as={CheckboxIcon} />
-  </StyledCheckbox>
+export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
+  (props, ref) => (
+    <StyledCheckbox {...props} ref={ref}>
+      <RadixCheckbox.Indicator as={CheckboxIcon} />
+    </StyledCheckbox>
+  )
 )
 
 Checkbox.displayName = 'Checkbox'

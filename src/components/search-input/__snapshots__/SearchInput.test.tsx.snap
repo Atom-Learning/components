@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInput component renders 1`] = `
+.sx03kze-2v396 {
+  position: relative;
+}
+
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6mbqqh--size-md {
+  height: var(--sx-sizes-2);
+  width: var(--sx-sizes-2);
+}
+
+.sxtros6-rsz6x {
+  color: var(--sx-colors-tonal500);
+  pointer-events: none;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+.sx1s1jh {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid var(--sx-colors-tonal400);
+  border-radius: var(--sx-radii-0);
+  box-shadow: none;
+  box-sizing: border-box;
+  color: var(--sx-colors-tonal800);
+  cursor: text;
+  display: block;
+  font-family: var(--sx-fonts-body);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
+  transition: all 100ms ease-out;
+  width: 100%;
+}
+
+.sx1s1jh:focus {
+  border-color: var(--sx-colors-primary);
+  outline: none;
+}
+
+.sx1s1jh[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
+  cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
+}
+
+.sx1s1jh-qayb7 {
+  padding-left: var(--sx-space-6);
+}
+
+<div>
+  <div
+    class="sx03kze sx03kze-2v396"
+  >
+    <svg
+      aria-hidden="true"
+      class="sxtros6 sxtros6mbqqh--size-md sxtros6-rsz6x"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.412 14.412L20 20"
+      />
+      <circle
+        cx="10"
+        cy="10"
+        r="6"
+      />
+    </svg>
+    <input
+      class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jh-qayb7"
+      type="search"
+    />
+  </div>
+</div>
+`;

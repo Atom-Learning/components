@@ -5,10 +5,10 @@ description: The Table component displays a collection of data grouped into rows
 category: Layout
 ---
 
-The `Table` component structure mirrors that of a regular HTML table, with the smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table Row` components corresponding to the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags, respectively. 
+The `Table` component structure mirrors that of a regular HTML table, with the smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table Row` components corresponding to the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags, respectively.
 
 ```jsx preview
-<Table css={{ width: '500px', mb: '100px'}}>
+<Table css={{ width: '500px', mb: '100px' }}>
   <Table.Header>
     <Table.Row>
       <Table.HeaderCell>First Name</Table.HeaderCell>
@@ -64,27 +64,61 @@ Best practice: Due to rendering issues with some browsers, adding borders to `Ta
   </Table.Header>
   <Table.Body>
     <Table.Row>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>Rakim</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>Jackson</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '1px solid $subjectEnglish' }}>35</Table.Cell>
+      <Table.Cell>Rakim</Table.Cell>
+      <Table.Cell>Jackson</Table.Cell>
+      <Table.Cell>35</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>Evelyn</Table.Cell>
-      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>Smith</Table.Cell>
-      <Table.Cell css={{ borderBottom: '1px solid $subjectEnglish' }}>27</Table.Cell>
+      <Table.Cell>Evelyn</Table.Cell>
+      <Table.Cell>Smith</Table.Cell>
+      <Table.Cell>27</Table.Cell>
     </Table.Row>
     <Table.Row>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>Miguel</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>Fernandez</Table.Cell>
-      <Table.Cell css={{ bg: '$tonal100', borderBottom: '3px solid $subjectEnglish'}}>52</Table.Cell>
+      <Table.Cell>Miguel</Table.Cell>
+      <Table.Cell>Fernandez</Table.Cell>
+      <Table.Cell>52</Table.Cell>
     </Table.Row>
   </Table.Body>
   <Table.Footer>
-      <Table.Row>
-        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 1</Table.FooterCell>
-        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 2</Table.FooterCell>
-        <Table.FooterCell css={{ fontStyle: 'italic', color:'$subjectEnglish' }}>Footer 3</Table.FooterCell>
-      </Table.Row>
+    <Table.Row>
+      <Table.FooterCell css={{ fontStyle: 'italic', color: '$subjectEnglish' }}>
+        Footer 1
+      </Table.FooterCell>
+      <Table.FooterCell css={{ fontStyle: 'italic', color: '$subjectEnglish' }}>
+        Footer 2
+      </Table.FooterCell>
+      <Table.FooterCell css={{ fontStyle: 'italic', color: '$subjectEnglish' }}>
+        Footer 3
+      </Table.FooterCell>
+    </Table.Row>
   </Table.Footer>
+</Table>
+```
+
+## Variants
+
+The `Table` component has 2 size variants that control the row height. The two available sizes are `md`(default) and `lg` which should be used when the table needs to show more than just text, ie: `Button(s)` and `ActionIcon(s)`. The increased height helps keep the elements clickable on smaller screensizes.
+
+```jsx preview
+<Table size="lg" css={{ width: '500px', mt: '100px', ml: '100px' }}>
+  <Table.Header>
+    <Table.Row>
+      <Table.HeaderCell>First Name</Table.HeaderCell>
+      <Table.HeaderCell>Last Name</Table.HeaderCell>
+      <Table.HeaderCell>Age</Table.HeaderCell>
+    </Table.Row>
+  </Table.Header>
+  <Table.Body>
+    <Table.Row>
+      <Table.Cell>Rakim</Table.Cell>
+      <Table.Cell>Jackson</Table.Cell>
+      <Table.Cell>35</Table.Cell>
+    </Table.Row>
+    <Table.Row>
+      <Table.Cell>Evelyn</Table.Cell>
+      <Table.Cell>Smith</Table.Cell>
+      <Table.Cell>27</Table.Cell>
+    </Table.Row>
+  </Table.Body>
 </Table>
 ```

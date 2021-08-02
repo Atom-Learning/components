@@ -30,14 +30,14 @@ const fadeOut = keyframes({
 const StyledDialogClose = styled(Close, {
   all: 'unset',
   alignItems: 'center',
-  color: '$tonal800',
+  color: '$tonal700',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
   position: 'absolute',
-  right: '0',
+  right: '$4',
   size: '$4',
-  top: '0'
+  top: '$4'
 })
 
 const StyledDialogOverlay = styled(Overlay, {
@@ -54,12 +54,12 @@ const StyledDialogOverlay = styled(Overlay, {
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
-  borderRadius: '$2',
+  borderRadius: '$1',
   boxShadow: '$3',
   boxSizing: 'border-box',
   left: '50%',
   maxWidth: '90vw',
-  p: '$4',
+  p: '$5',
   position: 'fixed',
   top: '50%',
   transform: contentOnScreen,

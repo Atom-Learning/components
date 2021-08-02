@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActionIcon component renders 1`] = `
-.sxib16r {
+.sxtros6 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
@@ -11,12 +11,12 @@ exports[`ActionIcon component renders 1`] = `
   vertical-align: middle;
 }
 
-.sxib16rmbqqh--size-md {
+.sxtros6mbqqh--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
 }
 
-.sxyfevm {
+.sx3c8w2 {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
@@ -30,25 +30,25 @@ exports[`ActionIcon component renders 1`] = `
   transition: all 125ms ease-out;
 }
 
-.sxyfevm[disabled],
-.sxyfevm[disabled]:hover,
-.sxyfevm[disabled]:focus {
+.sx3c8w2[disabled],
+.sx3c8w2[disabled]:hover,
+.sx3c8w2[disabled]:focus {
   color: var(--sx-colors-tonal700);
   border-color: var(--sx-colors-tonal500);
   cursor: not-allowed;
 }
 
-.sxyfevmrzwma--appearance-subtle {
+.sx3c8w2rzwma--appearance-subtle {
   background: transparent;
   color: var(--sx-colors-tonal800);
 }
 
-.sxyfevmrzwma--appearance-subtle:not([disabled]):hover,
-.sxyfevmrzwma--appearance-subtle:not([disabled]):focus {
+.sx3c8w2rzwma--appearance-subtle:not([disabled]):hover,
+.sx3c8w2rzwma--appearance-subtle:not([disabled]):focus {
   background: var(--sx-colors-alpha150);
 }
 
-.sxyfevme6fss--size-md {
+.sx3c8w2e6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
@@ -56,7 +56,7 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxyfevm sxyfevm03kze--theme-primary sxyfevmrzwma--appearance-subtle sxyfevme6fss--size-md"
+    class="sx3c8w2 sx3c8w203kze--theme-primary sx3c8w2rzwma--appearance-subtle sx3c8w2e6fss--size-md"
     type="button"
   >
     <svg />

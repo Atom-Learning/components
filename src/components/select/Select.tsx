@@ -1,47 +1,62 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { encodeBackgroundIcon } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage: encodeBackgroundIcon('hsl(208,85%,38%)', 'chevron'),
-  backgroundPosition: 'right $space$3 top 50%, 0 0',
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
   backgroundRepeat: 'no-repeat, repeat',
-  backgroundSize: '$sizes$2 auto, 100%',
-  border: '1px solid $tonal500',
+  border: '1px solid $tonal400',
   borderRadius: '$0',
-  color: '$tonal900',
+  color: '$tonal800',
   display: 'block',
-  fontFamily: '$sans',
-  fontSize: '$md',
+  fontFamily: '$body',
   fontWeight: 400,
-  height: '$4',
   lineHeight: 1.4,
-  px: '$3',
-  py: '$2',
   transition: 'all 75ms ease-out',
   width: '100%',
   '&:hover': {
     cursor: 'pointer'
   },
   '&:focus': {
-    boxShadow: 'inset 0 0 0 1px $colors$primary900',
-    borderColor: '$primary900',
+    borderColor: '$primary',
     outline: 'none'
   },
   '&::-ms-expand': {
     display: 'none'
   },
-  '&[disabled]': {
-    backgroundImage: encodeBackgroundIcon('hsl(0,0%,40%)', 'chevron')
-  },
   '&[disabled], > option[disabled]': {
-    opacity: 0.7,
-    backgroundColor: '$tonal300',
+    backgroundColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
+  },
+  variants: {
+    size: {
+      sm: {
+        backgroundPosition: 'right $space$2 top 50%, 0 0',
+        backgroundSize: '18px auto, 100%',
+        fontSize: '$sm',
+        height: '$3',
+        pl: '$2',
+        pr: '$5'
+      },
+      md: {
+        backgroundPosition: 'right $space$3 top 50%, 0 0',
+        backgroundSize: '20px auto, 100%',
+        fontSize: '$md',
+        height: '$4',
+        pl: '$3',
+        pr: '$6'
+      }
+    },
+    state: {
+      error: {
+        border: '1px solid $danger'
+      }
+    }
   }
 })
 
@@ -60,10 +75,10 @@ export type SelectProps = Override<
 >
 
 export const Select: React.FC<SelectProps> = React.forwardRef(
-  ({ placeholder, children, ...remainingProps }, ref) => (
-    <StyledSelect {...remainingProps} ref={ref}>
+  ({ placeholder, children, size = 'md', ...remainingProps }, ref) => (
+    <StyledSelect size={size} defaultValue="" {...remainingProps} ref={ref}>
       {placeholder && (
-        <option disabled selected hidden>
+        <option disabled hidden value="">
           {placeholder}
         </option>
       )}

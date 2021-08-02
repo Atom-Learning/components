@@ -9,7 +9,7 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
-  boxShadow: 'inset 0 0 0 2px',
+  boxShadow: 'inset 0 0 0 1px',
   color: baseColor,
   bg: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
@@ -26,9 +26,13 @@ const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
   }
 })
 
-const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
+const getButtonSolidVariant = (
+  baseColor: string,
+  interactColor: string,
+  textColor = 'white'
+) => ({
   bg: baseColor,
-  color: 'white',
+  color: textColor,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: interactColor,
     color: 'white'
@@ -43,18 +47,17 @@ const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
   }
 })
 
-const StyledButton = styled('button', {
+export const StyledButton = styled('button', {
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
-  fontFamily: '$sans',
-  fontWeight: 500,
+  fontFamily: '$body',
+  fontWeight: 600,
   justifyContent: 'center',
   letterSpacing: '0.02em',
-  lineHeight: 1.4,
   p: 'unset',
   textDecoration: 'none',
   transition: 'all 125ms ease-out',
@@ -67,8 +70,6 @@ const StyledButton = styled('button', {
   variants: {
     theme: {
       primary: {},
-      secondary: {},
-      tertiary: {},
       success: {},
       warning: {},
       danger: {}
@@ -80,18 +81,15 @@ const StyledButton = styled('button', {
     size: {
       sm: {
         fontSize: '$sm',
+        lineHeight: 1.53,
         height: '$3',
-        px: '$3'
+        px: '$4'
       },
       md: {
         fontSize: '$md',
+        lineHeight: 1.5,
         height: '$4',
-        px: '$4'
-      },
-      lg: {
-        fontSize: '$lg',
-        height: 'calc($4 + $1)',
-        px: '$4'
+        px: '$5'
       }
     },
     isLoading: {
@@ -114,21 +112,10 @@ const StyledButton = styled('button', {
   },
 
   compoundVariants: [
-    // Appearance Solid
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getButtonSolidVariant('$primary500', '$primary900')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$secondary500', '$secondary700')
-    },
-    {
-      theme: 'tertiary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$tertiary500', '$tertiary700')
+      css: getButtonSolidVariant('$primary', '$tertiary')
     },
     {
       theme: 'success',
@@ -138,29 +125,17 @@ const StyledButton = styled('button', {
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getButtonSolidVariant('$warning', '$warningDark')
+      css: getButtonSolidVariant('$warning', '$warningDark', '$tonal900')
     },
     {
       theme: 'danger',
       appearance: 'solid',
       css: getButtonSolidVariant('$danger', '$dangerDark')
     },
-
-    // Appearance Outline
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getButtonOutlineVariant('$primary500', '$primary900')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$secondary500', '$secondary900')
-    },
-    {
-      theme: 'tertiary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$tertiary500', '$tertiary700')
+      css: getButtonOutlineVariant('$primary', '$tertiary')
     }
   ]
 })
@@ -183,11 +158,14 @@ const WithLoader = ({ isLoading, children }) => (
   </>
 )
 
-const getChildren = (children) =>
+const getChildren = (children, size) =>
   React.Children.map(children, (child: any, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
-        css: { [i === 0 ? 'mr' : 'ml']: '$2' }
+        css: {
+          [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3'
+        },
+        size: size === 'lg' ? 'md' : 'sm'
       })
     }
     return child
@@ -240,9 +218,11 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
       >
         {typeof isLoading === 'boolean' ? (
-          <WithLoader isLoading={isLoading}>{getChildren(children)}</WithLoader>
+          <WithLoader isLoading={isLoading}>
+            {getChildren(children, size)}
+          </WithLoader>
         ) : (
-          getChildren(children)
+          getChildren(children, size)
         )}
       </StyledButton>
     )

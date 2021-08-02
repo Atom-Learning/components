@@ -8,20 +8,20 @@ import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
 import { StyledParagraph, textVariantSize } from '../text/Text'
 
-const StyledLink = styled('a', {
+export const StyledLink = styled('a', {
   bg: 'unset',
   border: 'unset',
   p: 'unset',
-  color: '$primary500',
+  color: '$primary',
   cursor: 'pointer',
-  fontFamily: '$sans',
+  fontFamily: '$body',
   textDecoration: 'none',
   '&:focus, &:hover': {
-    color: '$primary900',
+    color: '$tertiary',
     textDecoration: 'underline'
   },
   '&:active': {
-    color: '$primary500'
+    color: '$primary'
   },
   [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
