@@ -5,7 +5,7 @@ export const TableCell = styled('td', {
   boxSizing: 'border-box',
   color: '$tonal600',
   fontFamily: '$body',
-
+  lineHeight: 1.5,
   p: '$2 $3',
   textAlign: 'left',
   verticalAlign: 'middle',

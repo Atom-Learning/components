@@ -1,17 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component renders 1`] = `
-.sxj317c {
+.sxyjtjl {
   border-bottom: 1px solid var(--sx-colors-tonal200);
   box-sizing: border-box;
   color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
+  line-height: 1.5;
   padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
 }
 
-tr:nth-child(even) .sxj317c {
+tr:nth-child(even) .sxyjtjl {
   background: var(--sx-colors-tonal50);
 }
 
@@ -36,17 +37,17 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxwony4 {
+.sxss7ii {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxwony4dku3k--size-md .sxj317c {
+.sxss7iia43go--size-md .sxyjtjl {
   height: var(--sx-sizes-4);
 }
 
-.sxwony4-a5b4a {
+.sxss7ii-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -54,7 +55,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxwony4 sxwony4dku3k--size-md sxwony4-a5b4a"
+    class="sxss7ii sxss7iia43go--size-md sxss7ii-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -76,7 +77,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <td
-          class="sxj317c"
+          class="sxyjtjl"
         >
           This is text
         </td>
@@ -89,7 +90,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <td
-          class="sxj317c"
+          class="sxyjtjl"
         >
           Footer 1
         </td>
@@ -100,17 +101,18 @@ tr:nth-child(even) .sxj317c {
 `;
 
 exports[`Table component renders with size set to log 1`] = `
-.sxj317c {
+.sxyjtjl {
   border-bottom: 1px solid var(--sx-colors-tonal200);
   box-sizing: border-box;
   color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
+  line-height: 1.5;
   padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
 }
 
-tr:nth-child(even) .sxj317c {
+tr:nth-child(even) .sxyjtjl {
   background: var(--sx-colors-tonal50);
 }
 
@@ -135,21 +137,21 @@ tr:nth-child(even) .sxj317c {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxwony4 {
+.sxss7ii {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxwony4dku3k--size-md .sxj317c {
+.sxss7iia43go--size-md .sxyjtjl {
   height: var(--sx-sizes-4);
 }
 
-.sxwony4jopsk--size-lg .sxj317c {
+.sxss7iifj3j5--size-lg .sxyjtjl {
   height: var(--sx-sizes-5);
 }
 
-.sxwony4-a5b4a {
+.sxss7ii-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -157,7 +159,7 @@ tr:nth-child(even) .sxj317c {
 
 <div>
   <table
-    class="sxwony4 sxwony4jopsk--size-lg sxwony4-a5b4a"
+    class="sxss7ii sxss7iifj3j5--size-lg sxss7ii-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -179,7 +181,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <td
-          class="sxj317c"
+          class="sxyjtjl"
         >
           This is text
         </td>
@@ -192,7 +194,7 @@ tr:nth-child(even) .sxj317c {
         class="sx03kze"
       >
         <td
-          class="sxj317c"
+          class="sxyjtjl"
         >
           Footer 1
         </td>
