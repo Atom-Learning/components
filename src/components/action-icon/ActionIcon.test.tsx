@@ -42,11 +42,15 @@ describe('ActionIcon component', () => {
 
   it('renders a link', () => {
     render(
-      <ActionIcon label="Mark as complete" href="https:/www.google.com">
+      <ActionIcon
+        label="Mark as complete"
+        href="https:/www.google.com"
+        role="link"
+      >
         <Icon is={() => <svg />} />
       </ActionIcon>
     )
-    expect(screen.queryByTestId('actionIcon')).toHaveAttribute(
+    expect(screen.queryByRole('link')).toHaveAttribute(
       'href',
       'https:/www.google.com'
     )
@@ -58,11 +62,12 @@ describe('ActionIcon component', () => {
         disabled
         label="Mark as complete"
         href="https:/www.google.com"
+        role="link"
       >
         <Icon is={() => <svg />} />
       </ActionIcon>
     )
 
-    expect(screen.queryByTestId('actionIcon')).not.toHaveAttribute('href')
+    expect(screen.queryByRole('link')).not.toHaveAttribute('href')
   })
 })

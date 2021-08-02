@@ -191,7 +191,6 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
         size={size}
         ref={ref}
         disabled={disabled}
-        data-testid="actionIcon"
       >
         {React.Children.map(children, (child) => {
           // TS needs this check for any following code to access child.type

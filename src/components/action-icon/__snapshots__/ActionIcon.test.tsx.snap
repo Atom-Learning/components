@@ -57,7 +57,6 @@ exports[`ActionIcon component renders 1`] = `
   <button
     aria-label="Mark as complete"
     class="sx3c8w2 sx3c8w203kze--theme-primary sx3c8w2rzwma--appearance-subtle sx3c8w2e6fss--size-md"
-    data-testid="actionIcon"
     type="button"
   >
     <svg />
