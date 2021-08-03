@@ -14,7 +14,7 @@ const getSimpleVariant = (color: string) => ({
   '&:hover, &:focus': { color }
 })
 const getSolidVariant = (color: string) => ({
-  bg: '$tonal200',
+  bg: '$tonal100',
   color: '$tonal700',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: color,
@@ -43,8 +43,8 @@ const StyledButton = styled('button', {
   p: 'unset',
   transition: 'all 125ms ease-out',
   '&[disabled], &[disabled]:hover, &[disabled]:focus': {
-    color: '$tonal700',
-    borderColor: '$tonal500',
+    color: '$tonal600',
+    borderColor: '$tonal600',
     cursor: 'not-allowed'
   },
   variants: {
