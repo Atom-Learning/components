@@ -16,7 +16,7 @@ exports[`ActionIcon component renders 1`] = `
   width: var(--sx-sizes-2);
 }
 
-.sxslg3e {
+.sxla3ki {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
@@ -30,25 +30,25 @@ exports[`ActionIcon component renders 1`] = `
   transition: all 125ms ease-out;
 }
 
-.sxslg3e[disabled],
-.sxslg3e[disabled]:hover,
-.sxslg3e[disabled]:focus {
+.sxla3ki[disabled],
+.sxla3ki[disabled]:hover,
+.sxla3ki[disabled]:focus {
   color: var(--sx-colors-tonal600);
   border-color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxslg3erzwma--appearance-subtle {
+.sxla3kirzwma--appearance-subtle {
   background: transparent;
   color: var(--sx-colors-tonal800);
 }
 
-.sxslg3erzwma--appearance-subtle:not([disabled]):hover,
-.sxslg3erzwma--appearance-subtle:not([disabled]):focus {
+.sxla3kirzwma--appearance-subtle:not([disabled]):hover,
+.sxla3kirzwma--appearance-subtle:not([disabled]):focus {
   background: var(--sx-colors-alpha150);
 }
 
-.sxslg3ee6fss--size-md {
+.sxla3kie6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
@@ -56,7 +56,7 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxslg3e sxslg3e03kze--theme-primary sxslg3erzwma--appearance-subtle sxslg3ee6fss--size-md"
+    class="sxla3ki sxla3ki03kze--theme-primary sxla3kirzwma--appearance-subtle sxla3kie6fss--size-md"
     type="button"
   >
     <svg />

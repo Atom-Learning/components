@@ -15,7 +15,7 @@ const getSimpleVariant = (color: string) => ({
 })
 const getSolidVariant = (color: string) => ({
   bg: '$tonal100',
-  color: '$tonal700',
+  color: '$tonal600',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: color,
     color: 'white'
