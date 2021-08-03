@@ -58,13 +58,6 @@ const StyledButton = styled('button', {
       danger: {}
     },
     appearance: {
-      subtle: {
-        bg: 'transparent',
-        color: '$tonal800',
-        '&:not([disabled]):hover, &:not([disabled]):focus': {
-          bg: '$alpha150'
-        }
-      },
       simple: {},
       outline: {},
       solid: {}
@@ -162,7 +155,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
     {
       children,
       theme = 'primary',
-      appearance = 'subtle',
+      appearance = 'simple',
       size = 'md',
       label,
       href,
