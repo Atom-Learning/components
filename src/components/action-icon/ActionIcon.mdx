@@ -42,6 +42,24 @@ Setting `isRounded` makes the Action circular when paired with the options "subt
 </>
 ```
 
+## Disabled state
+
+Passing `disabled` makes the Action Icon take a disabled appearance, where any cursor interaction with the component will not render any changes in its UI.
+
+```tsx preview
+<>
+  <ActionIcon label="Attach a file" appearance="subtle" disabled>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="outline" disabled>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+  <ActionIcon label="Attach a file" appearance="solid" disabled>
+    <Icon is={Bell} size="sm" />
+  </ActionIcon>
+</>
+```
+
 It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual description of the action the user is about to perform.
 
 ```tsx preview

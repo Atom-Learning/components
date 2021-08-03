@@ -15,8 +15,8 @@ const getSimpleVariant = (color: string) => ({
 })
 const getSolidVariant = (color: string) => ({
   bg: '$tonal200',
-  color: '$tonal600',
-  '&:hover, &:focus': {
+  color: '$tonal700',
+  '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: color,
     color: 'white'
   }
@@ -41,7 +41,12 @@ const StyledButton = styled('button', {
   display: 'flex',
   justifyContent: 'center',
   p: 'unset',
-  transition: 'all 100ms ease-out',
+  transition: 'all 125ms ease-out',
+  '&[disabled], &[disabled]:hover, &[disabled]:focus': {
+    color: '$tonal700',
+    borderColor: '$tonal500',
+    cursor: 'not-allowed'
+  },
   variants: {
     theme: {
       primary: {},
@@ -53,7 +58,7 @@ const StyledButton = styled('button', {
       subtle: {
         bg: 'transparent',
         color: '$tonal800',
-        '&:hover, &:focus': {
+        '&:not([disabled]):hover, &:not([disabled]):focus': {
           bg: '$alpha150'
         }
       },
@@ -158,6 +163,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       size = 'md',
       label,
       href,
+      disabled,
       ...remainingProps
     },
     ref
@@ -167,7 +173,12 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
     const optionalLinkProps = href
-      ? ({ as: 'a', href, onClick: undefined } as const)
+      ? ({
+          as: 'a',
+          href: disabled ? null : href,
+          onClick: undefined,
+          'aria-disabled': !!disabled
+        } as const)
       : ({ type: 'button' } as const)
 
     return (
@@ -179,6 +190,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
         appearance={appearance}
         size={size}
         ref={ref}
+        disabled={disabled}
       >
         {React.Children.map(children, (child) => {
           // TS needs this check for any following code to access child.type
