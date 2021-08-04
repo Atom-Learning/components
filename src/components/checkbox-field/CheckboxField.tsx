@@ -5,7 +5,6 @@ import { Controller, useFormContext } from 'react-hook-form'
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
-import { ValidationError } from '~/components/validation-error'
 import { CSS } from '~/stitches'
 
 type CheckboxFieldProps = {
