@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Controller, useFormContext } from 'react-hook-form'
+import { Controller, useFormContext, get } from 'react-hook-form'
 
 import { ValidationOptions } from '~/components/form'
 import { RadioButtonGroup } from '~/components/radio'
@@ -34,13 +34,15 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
 }) => {
   const { control, errors } = useFormContext()
 
+  const error = get(errors, name)
+
   return (
     <FieldWrapper
       fieldId={name}
       label={label}
       required={required}
       css={css}
-      error={errors[name]?.message}
+      error={error?.message}
     >
       <Fieldset>
         <Controller

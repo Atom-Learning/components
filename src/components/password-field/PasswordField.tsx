@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useFormContext } from 'react-hook-form'
+import { useFormContext, get } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import type { ValidationOptions } from '~/components/form'
@@ -31,7 +31,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   const { register, errors } = useFormContext()
 
   const ref = validation ? register(validation) : register
-  const error = errors[name]?.message
+  const error = get(errors, name)
 
   return (
     <FieldWrapper
@@ -39,7 +39,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
       fieldId={name}
       prompt={prompt}
       css={{ ...css, position: 'relative' } as CSS}
-      error={error}
+      error={error?.message}
     >
       <PasswordInput
         autoComplete="current-password"
