@@ -47,6 +47,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
           description={description}
           error={error?.message}
           label={label}
+          required={required}
         >
           <Checkbox
             defaultChecked={defaultChecked}
