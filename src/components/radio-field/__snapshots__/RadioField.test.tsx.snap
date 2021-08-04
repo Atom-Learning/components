@@ -5,16 +5,6 @@ exports[`RadioField component renders 1`] = `
   margin-right: var(--sx-space-2);
 }
 
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
-}
-
 .sxdiu5c {
   color: var(--sx-colors-secondary300);
   display: block;
@@ -38,6 +28,11 @@ exports[`RadioField component renders 1`] = `
   content: '';
   margin-top: -0.4489em;
   display: table;
+}
+
+.sxdiu5c-0fxuj {
+  padding: 0;
+  margin-bottom: var(--sx-space-3);
 }
 
 .sxdiu5c-ju7t4 {
@@ -92,91 +87,82 @@ exports[`RadioField component renders 1`] = `
     aria-label="form"
     class="sx03kze"
   >
-    <div
-      class="sx03kze"
+    <fieldset
+      class="sxqqba1"
     >
-      <div
-        class="sx2cs53 sx2cs53-re4mk"
+      <legend
+        class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-0fxuj"
       >
-        <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
-          for="example"
-        >
-          Example options
-        </label>
-      </div>
-      <fieldset
-        class="sxqqba1"
+        Example options
+      </legend>
+      <div
+        class="sx03kze"
+        role="radiogroup"
       >
         <div
           class="sx03kze"
-          role="radiogroup"
         >
-          <div
-            class="sx03kze"
+          <label
+            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
           >
-            <label
-              class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+            <div
+              class="sx03kze sx03kze-385xm"
             >
-              <div
-                class="sx03kze sx03kze-385xm"
+              <input
+                checked=""
+                hidden=""
+                type="radio"
+                value="1"
+              />
+              <button
+                aria-checked="true"
+                class="sxjdf4a"
+                data-radix-roving-focus-group-id="radix-id-0-1"
+                data-state="checked"
+                role="radio"
+                tabindex="0"
+                type="button"
+                value="1"
               >
-                <input
-                  checked=""
-                  hidden=""
-                  type="radio"
-                  value="1"
-                />
-                <button
-                  aria-checked="true"
-                  class="sxjdf4a"
-                  data-radix-roving-focus-group-id="radix-id-0-1"
+                <span
+                  class="sxip64y"
                   data-state="checked"
-                  role="radio"
-                  tabindex="0"
-                  type="button"
-                  value="1"
-                >
-                  <span
-                    class="sxip64y"
-                    data-state="checked"
-                  />
-                </button>
-              </div>
-              1
-            </label>
-          </div>
-          <div
-            class="sx03kze"
-          >
-            <label
-              class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
-            >
-              <div
-                class="sx03kze sx03kze-385xm"
-              >
-                <input
-                  hidden=""
-                  type="radio"
-                  value="2"
                 />
-                <button
-                  aria-checked="false"
-                  class="sxjdf4a"
-                  data-radix-roving-focus-group-id="radix-id-0-1"
-                  data-state="unchecked"
-                  role="radio"
-                  tabindex="-1"
-                  type="button"
-                  value="2"
-                />
-              </div>
-              2
-            </label>
-          </div>
+              </button>
+            </div>
+            1
+          </label>
         </div>
-      </fieldset>
-    </div>
+        <div
+          class="sx03kze"
+        >
+          <label
+            class="sxdiu5c sxdiu5cjqqvr--size-md sxdiu5c-ju7t4"
+          >
+            <div
+              class="sx03kze sx03kze-385xm"
+            >
+              <input
+                hidden=""
+                type="radio"
+                value="2"
+              />
+              <button
+                aria-checked="false"
+                class="sxjdf4a"
+                data-radix-roving-focus-group-id="radix-id-0-1"
+                data-state="unchecked"
+                role="radio"
+                tabindex="-1"
+                type="button"
+                value="2"
+              />
+            </div>
+            2
+          </label>
+        </div>
+      </div>
+    </fieldset>
   </form>
 </div>
 `;
