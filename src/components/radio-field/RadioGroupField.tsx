@@ -58,9 +58,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         )}
       />
       {error && (
-        <ValidationError css={{ mt: '$1' }}>
-          {errors[name].message}
-        </ValidationError>
+        <ValidationError css={{ mt: '$1' }}>{error?.message}</ValidationError>
       )}
     </Fieldset>
   )
