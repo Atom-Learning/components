@@ -4,7 +4,8 @@ import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
 
-import { Icon } from '../icon'
+import { ActionIcon } from '../action-icon/ActionIcon'
+import { Icon } from '../icon/Icon'
 
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
@@ -25,19 +26,6 @@ const fadeIn = keyframes({
 const fadeOut = keyframes({
   '0%': { opacity: 1 },
   '100%': { opacity: 0 }
-})
-
-const StyledDialogClose = styled(Close, {
-  all: 'unset',
-  alignItems: 'center',
-  color: '$tonal700',
-  cursor: 'pointer',
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'absolute',
-  right: '$4',
-  size: '$4',
-  top: '$4'
 })
 
 const StyledDialogOverlay = styled(Overlay, {
@@ -93,9 +81,15 @@ export const DialogContent: React.FC<DialogContentProps> = ({
   <>
     <StyledDialogOverlay />
     <StyledDialogContent size={size} {...remainingProps}>
-      <StyledDialogClose>
+      <ActionIcon
+        as={Close}
+        css={{ position: 'absolute', right: '$4', top: '$4' }}
+        label="Close dialog"
+        size="lg"
+        theme="neutral"
+      >
         <Icon is={CloseIcon} />
-      </StyledDialogClose>
+      </ActionIcon>
       {children}
     </StyledDialogContent>
   </>

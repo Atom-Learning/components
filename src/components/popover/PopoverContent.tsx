@@ -4,7 +4,8 @@ import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
 
-import { Icon } from '../icon'
+import { ActionIcon } from '../action-icon/ActionIcon'
+import { Icon } from '../icon/Icon'
 
 const scaleIn = keyframes({
   '0%': { opacity: 0, transform: 'scale(0.8)' },
@@ -30,19 +31,6 @@ const StyledContent = styled(Content, {
   }
 })
 
-const StyledClose = styled(Close, {
-  all: 'unset',
-  alignItems: 'center',
-  color: '$tonal700',
-  cursor: 'pointer',
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'absolute',
-  right: '$0',
-  size: '$5',
-  top: '$0'
-})
-
 const StyledArrow = styled(Arrow, {
   fill: 'white',
   zIndex: 1,
@@ -66,9 +54,15 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     sideOffset={sideOffset}
     {...remainingProps}
   >
-    <StyledClose>
+    <ActionIcon
+      as={Close}
+      css={{ position: 'absolute', right: '$0', top: '$0' }}
+      label="Close dialog"
+      size="lg"
+      theme="neutral"
+    >
       <Icon is={CloseIcon} />
-    </StyledClose>
+    </ActionIcon>
     {children}
     <StyledArrow width={16} height={8} />
   </StyledContent>

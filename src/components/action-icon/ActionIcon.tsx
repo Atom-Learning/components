@@ -150,7 +150,7 @@ const StyledButton = styled('button', {
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
-    as?: never
+    as?: string | React.ReactNode
     children: React.ReactNode
     label: string
   } & NavigatorActions
