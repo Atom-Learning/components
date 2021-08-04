@@ -5,10 +5,12 @@ import { Controller, useFormContext } from 'react-hook-form'
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
+import { ValidationError } from '~/components/validation-error'
 import { CSS } from '~/stitches'
 
 type CheckboxFieldProps = {
   css?: CSS
+  defaultChecked?: boolean
   label: string
   name: string
   validation?: ValidationOptions
@@ -16,6 +18,7 @@ type CheckboxFieldProps = {
 
 export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   css,
+  defaultChecked,
   label,
   name,
   validation,
@@ -27,7 +30,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   const error = errors[name]
 
   return (
-    <InlineFieldWrapper label={label} css={css} error={error}>
+    <InlineFieldWrapper label={label} css={css} error={error?.message}>
       <Controller
         onChange={() => setIsChecked((current) => !current)}
         control={control}
@@ -36,6 +39,8 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
         rules={validation}
         render={({ onChange, value, name: innerName }) => (
           <Checkbox
+            defaultChecked={Boolean(defaultChecked)}
+            checked={value}
             name={innerName}
             onCheckedChange={() => {
               setIsChecked((current) => {
@@ -43,7 +48,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
                 return !current
               })
             }}
-            value={value}
+            value={value ? 'on' : 'off'}
             {...remainingProps}
           />
         )}

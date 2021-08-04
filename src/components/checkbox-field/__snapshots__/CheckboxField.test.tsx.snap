@@ -93,7 +93,7 @@ exports[`CheckboxField component renders 1`] = `
             hidden=""
             name="example"
             type="checkbox"
-            value="false"
+            value="off"
           />
           <button
             aria-checked="false"
@@ -101,7 +101,7 @@ exports[`CheckboxField component renders 1`] = `
             data-state="unchecked"
             role="checkbox"
             type="button"
-            value="false"
+            value="off"
           />
         </div>
         Example
