@@ -16,7 +16,7 @@ exports[`ActionIcon component renders 1`] = `
   width: var(--sx-sizes-2);
 }
 
-.sxavyoe {
+.sxd2uai {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
@@ -31,34 +31,34 @@ exports[`ActionIcon component renders 1`] = `
   transition: all 125ms ease-out;
 }
 
-.sxavyoe[disabled],
-.sxavyoe[disabled]:hover,
-.sxavyoe[disabled]:focus {
+.sxd2uai[disabled],
+.sxd2uai[disabled]:hover,
+.sxd2uai[disabled]:focus {
   background: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   border-color: var(--sx-colors-tonal100);
   cursor: not-allowed;
 }
 
-.sxavyoee6fss--size-md {
+.sxd2uaie6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
 
-.sxavyoe94b5u--c2 {
+.sxd2uai94b5u--c2 {
   background: transparent;
   color: var(--sx-colors-primary);
 }
 
-.sxavyoe94b5u--c2:hover,
-.sxavyoe94b5u--c2:focus {
+.sxd2uai94b5u--c2:hover,
+.sxd2uai94b5u--c2:focus {
   color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxavyoe sxavyoe03kze--theme-primary sxavyoe03kze--appearance-simple sxavyoee6fss--size-md sxavyoe94b5u--c2"
+    class="sxd2uai sxd2uai03kze--theme-primary sxd2uai03kze--appearance-simple sxd2uaie6fss--size-md sxd2uai94b5u--c2"
     type="button"
   >
     <svg />
