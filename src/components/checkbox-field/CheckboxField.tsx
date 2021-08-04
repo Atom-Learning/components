@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { useState } from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
@@ -12,42 +11,50 @@ type CheckboxFieldProps = {
   defaultChecked?: boolean
   label: string
   name: string
+  required?: boolean
   validation?: ValidationOptions
 } & React.ComponentProps<typeof Checkbox>
 
+enum CheckboxValue {
+  ON = 'on',
+  OFF = 'off'
+}
+
 export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   css,
-  defaultChecked,
+  defaultChecked = false,
   label,
   name,
+  required = false,
   validation,
   ...remainingProps
 }) => {
   const { control, errors } = useFormContext()
-  const [isChecked, setIsChecked] = useState(false)
 
   const error = errors[name]
 
   return (
-    <InlineFieldWrapper label={label} css={css} error={error?.message}>
+    <InlineFieldWrapper
+      label={label}
+      css={css}
+      error={error?.message}
+      required={required}
+    >
       <Controller
-        onChange={() => setIsChecked((current) => !current)}
         control={control}
         name={name}
-        defaultValue={isChecked}
+        defaultValue={defaultChecked}
         rules={validation}
         render={({ onChange, value, name: innerName }) => (
           <Checkbox
-            defaultChecked={Boolean(defaultChecked)}
+            defaultChecked={defaultChecked}
+            defaultValue={defaultChecked ? CheckboxValue.ON : CheckboxValue.OFF}
             checked={value}
             name={innerName}
-            onCheckedChange={() => {
-              setIsChecked((current) => {
-                onChange(!current)
-                return !current
-              })
+            onCheckedChange={(event) => {
+              onChange(event.target.value !== CheckboxValue.ON)
             }}
-            value={value ? 'on' : 'off'}
+            value={value ? CheckboxValue.ON : CheckboxValue.OFF}
             {...remainingProps}
           />
         )}
