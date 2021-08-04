@@ -1,32 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component renders 1`] = `
-.sxbbxj8 {
-  font-family: var(--sx-fonts-sans);
-  color: var(--sx-colors-tonal600);
-  text-align: left;
-  vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
+.sxyjtjl {
   border-bottom: 1px solid var(--sx-colors-tonal200);
-}
-
-.sx4lk0d {
-  font-family: var(--sx-fonts-sans);
-  color: white;
-  font-weight: 700;
+  box-sizing: border-box;
+  color: var(--sx-colors-tonal600);
+  font-family: var(--sx-fonts-body);
+  line-height: 1.5;
+  padding: var(--sx-space-2) var(--sx-space-3);
   text-align: left;
   vertical-align: middle;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  background: var(--sx-colors-primary500);
 }
 
-.sxwi5ht {
+tr:nth-child(even) .sxyjtjl {
+  background: var(--sx-colors-tonal50);
+}
+
+.sxgmopz {
+  background: var(--sx-colors-tertiary);
+  color: white;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
+  line-height: 1.5;
+  padding: var(--sx-space-2) var(--sx-space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sxgmopz:first-of-type {
+  border-top-left-radius: var(--sx-radii-0);
+  border-bottom-left-radius: var(--sx-radii-0);
+}
+
+.sxgmopz:last-of-type {
+  border-top-right-radius: var(--sx-radii-0);
+  border-bottom-right-radius: var(--sx-radii-0);
+}
+
+.sxss7ii {
   width: 100%;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sxwi5ht-a5b4a {
+.sxss7iia43go--size-md .sxyjtjl {
+  height: var(--sx-sizes-4);
+}
+
+.sxss7ii-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -34,7 +55,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="sxwi5ht sxwi5ht-a5b4a"
+    class="sxss7ii sxss7iia43go--size-md sxss7ii-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -43,7 +64,7 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <th
-          class="sx4lk0d"
+          class="sxgmopz"
         >
           Column A
         </th>
@@ -56,7 +77,7 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <td
-          class="sxbbxj8"
+          class="sxyjtjl"
         >
           This is text
         </td>
@@ -69,7 +90,111 @@ exports[`Table component renders 1`] = `
         class="sx03kze"
       >
         <td
-          class="sxbbxj8"
+          class="sxyjtjl"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
+exports[`Table component renders with size set to lg 1`] = `
+.sxyjtjl {
+  border-bottom: 1px solid var(--sx-colors-tonal200);
+  box-sizing: border-box;
+  color: var(--sx-colors-tonal600);
+  font-family: var(--sx-fonts-body);
+  line-height: 1.5;
+  padding: var(--sx-space-2) var(--sx-space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) .sxyjtjl {
+  background: var(--sx-colors-tonal50);
+}
+
+.sxgmopz {
+  background: var(--sx-colors-tertiary);
+  color: white;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
+  line-height: 1.5;
+  padding: var(--sx-space-2) var(--sx-space-3);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sxgmopz:first-of-type {
+  border-top-left-radius: var(--sx-radii-0);
+  border-bottom-left-radius: var(--sx-radii-0);
+}
+
+.sxgmopz:last-of-type {
+  border-top-right-radius: var(--sx-radii-0);
+  border-bottom-right-radius: var(--sx-radii-0);
+}
+
+.sxss7ii {
+  width: 100%;
+  font-family: var(--sx-fonts-sans);
+  font-size: var(--sx-fontSizes-sm);
+}
+
+.sxss7iia43go--size-md .sxyjtjl {
+  height: var(--sx-sizes-4);
+}
+
+.sxss7iifj3j5--size-lg .sxyjtjl {
+  height: var(--sx-sizes-5);
+}
+
+.sxss7ii-a5b4a {
+  height: 100px;
+  width: 400px;
+  color: var(--sx-colors-primary500);
+}
+
+<div>
+  <table
+    class="sxss7ii sxss7iifj3j5--size-lg sxss7ii-a5b4a"
+  >
+    <thead
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <th
+          class="sxgmopz"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <td
+          class="sxyjtjl"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="sx03kze"
+    >
+      <tr
+        class="sx03kze"
+      >
+        <td
+          class="sxyjtjl"
         >
           Footer 1
         </td>

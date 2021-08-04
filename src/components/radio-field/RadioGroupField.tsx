@@ -4,6 +4,7 @@ import { Controller, useFormContext, get } from 'react-hook-form'
 import { ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'
+import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
@@ -15,10 +16,12 @@ const Fieldset = styled('fieldset', {
 
 type RadioGroupFieldProps = {
   css?: CSS
-  defaultValue: string
+  defaultValue?: string
   label: string
   name: string
   required?: boolean
+  direction?: 'row' | 'column'
+  description?: string
   validation?: ValidationOptions
 }
 
@@ -27,7 +30,9 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
 } = ({
   children,
   css,
+  direction = 'column',
   defaultValue,
+  description,
   label,
   name,
   required = false,
@@ -42,6 +47,14 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
       <Label as="legend" css={{ p: 0, mb: '$3' }} required={required}>
         {label}
       </Label>
+      {description && (
+        <Text
+          size="sm"
+          css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}
+        >
+          {description}
+        </Text>
+      )}
       <Controller
         control={control}
         name={name}
@@ -49,6 +62,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         defaultValue={defaultValue}
         render={({ onChange, value }) => (
           <RadioButtonGroup
+            direction={direction}
             defaultValue={defaultValue}
             onValueChange={onChange}
             value={value}
@@ -58,7 +72,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         )}
       />
       {error && (
-        <ValidationError css={{ mt: '$1' }}>{error?.message}</ValidationError>
+        <ValidationError css={{ mt: '$2' }}>{error?.message}</ValidationError>
       )}
     </Fieldset>
   )

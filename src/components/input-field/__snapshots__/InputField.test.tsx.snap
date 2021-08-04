@@ -7,101 +7,130 @@ exports[`InputField component renders a field in error state 1`] = `
   width: 100px;
 }
 
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6or94y--size-sm {
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+}
+
+.sxtros6-iux96 {
+  margin-right: var(--sx-space-2);
+  flex-shrink: 0;
+}
+
 .sx2cs53 {
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
+.sx2cs53-1vtbu {
+  color: var(--sx-colors-danger);
+  align-items: flex-start;
+  margin-top: var(--sx-space-2);
+}
+
+.sxj1d4e {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxfey5oxzxpn--size-sm {
+.sxj1d4eid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
+  line-height: 1.53;
 }
 
-.sxfey5oxzxpn--size-sm::before {
+.sxj1d4eid6h2--size-sm::before {
   content: '';
-  margin-bottom: -0.477em;
+  margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxfey5oxzxpn--size-sm::after {
+.sxj1d4eid6h2--size-sm::after {
   content: '';
-  margin-top: -0.477em;
+  margin-top: -0.4056em;
   display: table;
 }
 
-.sxfey5o-m6cy5 {
-  color: var(--sx-colors-danger);
-  margin-top: var(--sx-space-1);
+.sxj1d4e-n4ol9 {
+  color: inherit;
+  transform: translateY(var(--sx-space-1));
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sx5eeij {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sx47aq8 {
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  font-family: var(--sx-fonts-body);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+.sx1s1jh:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx1s1jh[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sx47aq8hpnso--state-error {
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
+}
+
+.sx1s1jhhpnso--state-error {
   border: 1px solid var(--sx-colors-danger);
 }
 
@@ -114,26 +143,51 @@ exports[`InputField component renders a field in error state 1`] = `
       class="sx03kze"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8 sx47aq8hpnso--state-error"
+        class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jhhpnso--state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
       />
-      <p
-        class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-m6cy5"
+      <div
+        class="sx2cs53 sx2cs53-1vtbu"
       >
-        This field is required
-      </p>
+        <svg
+          aria-hidden="true"
+          class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v5"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="16"
+            y2="16"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+        </svg>
+        <p
+          class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
+        >
+          This field is required
+        </p>
+      </div>
     </div>
     <button
       type="submit"
@@ -155,65 +209,68 @@ exports[`InputField component renders a field with a number input 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sx5eeij {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sx47aq8 {
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  font-family: var(--sx-fonts-body);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+.sx1s1jh:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx1s1jh[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
 }
 
 <div>
@@ -225,17 +282,17 @@ exports[`InputField component renders a field with a number input 1`] = `
       class="sx03kze sx03kze-6obnf"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8"
+        class="sx1s1jh sx1s1jhpw03g--size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -259,65 +316,68 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: flex;
 }
 
-.sx2cs53-re4mk {
+.sx2cs53-qom1k {
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--sx-space-2);
+  margin-bottom: var(--sx-space-3);
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
+.sx5eeij {
+  color: var(--sx-colors-tonal800);
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   margin: 0;
 }
 
-.sxdiu5cjqqvr--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxdiu5cjqqvr--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxdiu5cjqqvr--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sx47aq8 {
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal900);
+  color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  height: var(--sx-sizes-4);
-  width: 100%;
-  padding: var(--sx-space-3);
+  font-family: var(--sx-fonts-body);
+  padding-left: var(--sx-space-3);
+  padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
+  width: 100%;
 }
 
-.sx47aq8:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
+.sx1s1jh:focus {
+  border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx47aq8[disabled] {
-  background-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal700);
+.sx1s1jh[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
 }
 
 <div>
@@ -329,17 +389,17 @@ exports[`InputField component renders a field with a text input 1`] = `
       class="sx03kze sx03kze-6obnf"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx47aq8"
+        class="sx1s1jh sx1s1jhpw03g--size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

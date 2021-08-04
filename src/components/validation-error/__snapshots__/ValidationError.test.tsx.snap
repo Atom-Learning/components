@@ -1,39 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
+.sx2cs53 {
+  display: flex;
+}
+
+.sx2cs53-czgdj {
+  color: var(--sx-colors-danger);
+  align-items: flex-start;
+}
+
+.sxtros6 {
+  display: inline-block;
+  fill: none;
+  stroke: currentcolor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  vertical-align: middle;
+}
+
+.sxtros6or94y--size-sm {
+  height: var(--sx-sizes-1);
+  width: var(--sx-sizes-1);
+}
+
+.sxtros6-iux96 {
+  margin-right: var(--sx-space-2);
+  flex-shrink: 0;
+}
+
+.sxj1d4e {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxfey5oxzxpn--size-sm {
+.sxj1d4eid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
+  line-height: 1.53;
 }
 
-.sxfey5oxzxpn--size-sm::before {
+.sxj1d4eid6h2--size-sm::before {
   content: '';
-  margin-bottom: -0.477em;
+  margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxfey5oxzxpn--size-sm::after {
+.sxj1d4eid6h2--size-sm::after {
   content: '';
-  margin-top: -0.477em;
+  margin-top: -0.4056em;
   display: table;
 }
 
-.sxfey5o-25jen {
-  color: var(--sx-colors-danger);
+.sxj1d4e-n4ol9 {
+  color: inherit;
+  transform: translateY(var(--sx-space-1));
 }
 
 <div>
-  <p
-    class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-25jen"
+  <div
+    class="sx2cs53 sx2cs53-czgdj"
   >
-    VALIDATION ERROR
-  </p>
+    <svg
+      aria-hidden="true"
+      class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 8v5"
+      />
+      <line
+        x1="12"
+        x2="12"
+        y1="16"
+        y2="16"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
+    </svg>
+    <p
+      class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
+    >
+      VALIDATION ERROR
+    </p>
+  </div>
 </div>
 `;

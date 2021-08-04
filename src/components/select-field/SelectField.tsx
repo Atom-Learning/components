@@ -6,12 +6,17 @@ import { ValidationOptions } from '~/components/form'
 import { Select, SelectProps } from '~/components/select'
 
 type SelectFieldProps = SelectProps &
-  FieldWrapperProps & { name: string; validation: ValidationOptions }
+  FieldWrapperProps & {
+    name: string
+    validation?: ValidationOptions
+  }
 
 export const SelectField: React.FC<SelectFieldProps> = ({
+  css = undefined,
   children,
   name,
   label,
+  required = false,
   validation,
   ...remainingProps
 }) => {
@@ -21,8 +26,20 @@ export const SelectField: React.FC<SelectFieldProps> = ({
   const error = get(errors, name)
 
   return (
-    <FieldWrapper fieldId={name} label={label} error={error?.message}>
-      <Select name={name} id={name} {...remainingProps} ref={ref}>
+    <FieldWrapper
+      label={label}
+      required={required}
+      error={error?.message}
+      fieldId={name}
+      css={css}
+    >
+      <Select
+        name={name}
+        id={name}
+        {...remainingProps}
+        ref={ref}
+        {...(error && { state: 'error' })}
+      >
         {children}
       </Select>
     </FieldWrapper>

@@ -8,32 +8,34 @@ import { Override } from '~/utilities'
 
 import { Icon } from '../icon/Icon'
 
-const getSimpleVariant = (color: string) => ({
+const getSimpleVariant = (base: string, interact: string) => ({
   bg: 'transparent',
-  color: '$tonal700',
-  '&:hover, &:focus': { color }
-})
-const getSolidVariant = (color: string) => ({
-  bg: '$tonal200',
-  color: '$tonal700',
+  color: base,
   '&:hover, &:focus': {
-    bg: color,
+    color: interact
+  }
+})
+const getSolidVariant = (base: string, interact: string) => ({
+  bg: base,
+  color: 'white',
+  '&:hover, &:focus': {
+    bg: interact,
     color: 'white'
   }
 })
-const getOutlineVariant = (color: string) => ({
-  border: '1px solid $tonal500',
-  bg: 'transparent',
-  color: '$tonal700',
+const getOutlineVariant = (base: string, interact: string) => ({
+  border: '1px solid',
+  borderColor: 'currentColor',
+  color: base,
   '&:hover, &:focus': {
-    borderColor: color,
-    color
+    color: interact
   }
 })
 
 const StyledButton = styled('button', {
   alignItems: 'center',
   appearance: 'none',
+  bg: 'white',
   border: 'unset',
   borderRadius: '$0',
   boxSizing: 'border-box',
@@ -42,21 +44,20 @@ const StyledButton = styled('button', {
   justifyContent: 'center',
   p: 'unset',
   transition: 'all 125ms ease-out',
+  '&[disabled], &[disabled]:hover, &[disabled]:focus': {
+    bg: '$tonal100',
+    color: '$tonal600',
+    borderColor: '$tonal100',
+    cursor: 'not-allowed'
+  },
   variants: {
     theme: {
       primary: {},
       success: {},
       warning: {},
-      error: {}
+      danger: {}
     },
     appearance: {
-      subtle: {
-        bg: 'transparent',
-        color: '$tonal800',
-        '&:hover, &:focus': {
-          bg: '$alpha150'
-        }
-      },
       simple: {},
       outline: {},
       solid: {}
@@ -76,66 +77,66 @@ const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'simple',
-      css: getSimpleVariant('$primary900')
+      css: getSimpleVariant('$primary', '$tertiary')
     },
     {
       theme: 'success',
       appearance: 'simple',
-      css: getSimpleVariant('$success')
+      css: getSimpleVariant('$success', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'simple',
-      css: getSimpleVariant('$warning')
+      css: getSimpleVariant('$warning', '$warningDark')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'simple',
-      css: getSimpleVariant('$danger')
+      css: getSimpleVariant('$danger', '$dangerDark')
     },
 
     // Appearance Solid
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getSolidVariant('$primary900')
+      css: getSolidVariant('$primary', '$tertiary')
     },
     {
       theme: 'success',
       appearance: 'solid',
-      css: getSolidVariant('$success')
+      css: getSolidVariant('$success', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getSolidVariant('$warning')
+      css: getSolidVariant('$warning', '$warningDark')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'solid',
-      css: getSolidVariant('$danger')
+      css: getSolidVariant('$danger', '$dangerDark')
     },
 
     // Appearance Outline
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getOutlineVariant('$primary900')
+      css: getOutlineVariant('$primary', '$tertiary')
     },
     {
       theme: 'success',
       appearance: 'outline',
-      css: getOutlineVariant('$success')
+      css: getOutlineVariant('$success', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'outline',
-      css: getOutlineVariant('$warning')
+      css: getOutlineVariant('$warning', '$warningDark')
     },
     {
-      theme: 'error',
+      theme: 'danger',
       appearance: 'outline',
-      css: getOutlineVariant('$danger')
+      css: getOutlineVariant('$danger', '$dangerDark')
     }
   ]
 })
@@ -154,10 +155,11 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
     {
       children,
       theme = 'primary',
-      appearance = 'subtle',
+      appearance = 'simple',
       size = 'md',
       label,
       href,
+      disabled,
       ...remainingProps
     },
     ref
@@ -167,7 +169,12 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
     invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
     const optionalLinkProps = href
-      ? ({ as: 'a', href, onClick: undefined } as const)
+      ? ({
+          as: 'a',
+          href: disabled ? null : href,
+          onClick: undefined,
+          'aria-disabled': !!disabled
+        } as const)
       : ({ type: 'button' } as const)
 
     return (
@@ -179,6 +186,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
         appearance={appearance}
         size={size}
         ref={ref}
+        disabled={disabled}
       >
         {React.Children.map(children, (child) => {
           // TS needs this check for any following code to access child.type

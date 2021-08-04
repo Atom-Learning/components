@@ -36,7 +36,7 @@ export type FormContentValues = {
 export type FormValues = {
   defaultValues?: { [key: string]: string | number }
   onSubmit: (data: any) => void | any
-  validationMode: 'onBlur' | 'onSubmit'
+  validationMode?: 'onBlur' | 'onSubmit'
   persist?: PersistOptions
 } & (
   | { children: React.ReactNode; render?: never }

@@ -10,6 +10,7 @@ type CheckboxFieldProps = {
   css?: CSS
   defaultChecked?: boolean
   label: string
+  description?: string
   name: string
   required?: boolean
   validation?: ValidationOptions
@@ -27,6 +28,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   name,
   required = false,
   validation,
+  description,
   ...remainingProps
 }) => {
   const { control, errors } = useFormContext()
@@ -34,18 +36,18 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   const error = get(errors, name)
 
   return (
-    <InlineFieldWrapper
-      label={label}
-      css={css}
-      error={error?.message}
-      required={required}
-    >
-      <Controller
-        control={control}
-        name={name}
-        defaultValue={defaultChecked}
-        rules={validation}
-        render={({ onChange, value, name: innerName }) => (
+    <Controller
+      control={control}
+      name={name}
+      defaultValue={defaultChecked}
+      rules={validation}
+      render={({ onChange, value, name: innerName }) => (
+        <InlineFieldWrapper
+          css={css}
+          description={description}
+          error={error?.message}
+          label={label}
+        >
           <Checkbox
             defaultChecked={defaultChecked}
             defaultValue={defaultChecked ? CheckboxValue.ON : CheckboxValue.OFF}
@@ -57,9 +59,9 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
             value={value ? CheckboxValue.ON : CheckboxValue.OFF}
             {...remainingProps}
           />
-        )}
-      />
-    </InlineFieldWrapper>
+        </InlineFieldWrapper>
+      )}
+    />
   )
 }
 

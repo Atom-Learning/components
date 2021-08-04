@@ -6,21 +6,25 @@ category: Content
 ---
 
 Currently it suppports converts the following Markdown elements into components:
-| Type | Component | Supported |
-| --- | --- | - |
-| text | `{value}` | ✅ |
-| emphasis | `<em />` | ✅ |
-| strong | `<strong />` | ✅ |
-| heading | `<Heading />` | ✅ |
-| paragraph | `<Text />` | ✅ |
-| link | `<Link />` | ✅ |
-| blockquote | | ⛔ |
-| list | `<List />` | ✅ |
-| listItem | `<List.Item />` | ✅ |
-| inlineCode | `<Box as="code" />` | ✅ |
-| code | `<Box as="pre" />` | ✅ |
-| image | `<Image />` | ✅ |
-| thematicBreak | `<Divider />` | ✅ |
+
+| Type               | Component           | Default component implemented |
+| :----------------- | :------------------ | :---------------------------- |
+| blockquote         |                     | ⛔                            |
+| code               | `<Box as="pre" />`  | ✅                            |
+| containerDirective |                     | ⛔                            |
+| emphasis           | `<em />`            | ✅                            |
+| heading            | `<Heading />`       | ✅                            |
+| image              | `<Image />`         | ✅                            |
+| inlineCode         | `<Box as="code" />` | ✅                            |
+| leafDirective      |                     | ⛔                            |
+| link               | `<Link />`          | ✅                            |
+| list               | `<List />`          | ✅                            |
+| listItem           | `<List.Item />`     | ✅                            |
+| paragraph          | `<Text />`          | ✅                            |
+| strong             | `<strong />`        | ✅                            |
+| text               | `{value}`           | ✅                            |
+| textDirective      |                     | ⛔                            |
+| thematicBreak      | `<Divider />`       | ✅                            |
 
 ```tsx live
 <MarkdownContent
@@ -32,17 +36,37 @@ This will be a paragraph
 />
 ```
 
-The `MarkdownContent` component supports [Markdown directives](https://talk.commonmark.org/t/generic-directives-plugins-syntax/444) via the `handleDirectives` prop. This prop takes a function that returns a `ReactElement`, the function will have access to the Markdown `node` and the `handleNode` function that can be used to transform child nodes.
+## Override with custom components
+
+You can override the component `MarkdownContent` will render for each type by passing an object to the `customComponents` prop where each key is the name of a Markdown Type (see the table above) and the value is a reference to the component you want to render:
+
+```tsx live
+<MarkdownContent
+  content={`This paragraph will have a red color`}
+  customComponents={{
+    paragraph: ({ node, handleNode }) => <Text css={{ color: 'red'}}>{(node as Paragraph).children?.map(handleNode)}</Text>
+  }}
+```
+
+## Markdown directives
+
+The `MarkdownContent` component supports [Markdown directives](https://talk.commonmark.org/t/generic-directives-plugins-syntax/444). There are no directives built in by default, but you can define your own directives by using the `customComponents` prop.
 
 See the following example that transform the following directive into a `Button` component:
 
 ```tsx live
 <MarkdownContent
-  content={`:button[This is a button]{href=https://atomlearning.co.uk theme="secondary" isRounded=true appearance=outline}`}
-  handleDirectives={(node, handleNode) =>
-    node.name === 'button' ? (
-      <Button {...node.attributes}>{node.children.map(handleNode)}</Button>
-    ) : null
-  }
+  content={`:button[This is a button]{href=https://atomlearning.co.uk isRounded=true}`}
+  customComponents={{
+    textDirective: ({ node, handleNode }) => {
+      const { name, attributes, children } = node as TextDirective
+
+      if (name === 'button') {
+        return <Button {...attributes}>{children?.map(handleNode)}</Button>
+      }
+
+      return null
+    }
+  }}
 />
 ```

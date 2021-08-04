@@ -1,6 +1,8 @@
-import * as React from 'react'
 import { Content, List, Root } from '@radix-ui/react-tabs'
+import * as React from 'react'
+
 import { styled } from '~/stitches'
+
 import { TabTrigger } from './TabTrigger'
 
 const StyledRoot = styled(Root, {
@@ -9,8 +11,7 @@ const StyledRoot = styled(Root, {
 })
 
 const StyledTabContent = styled(Content, {
-  flexGrow: 1,
-  padding: '$3'
+  flexGrow: 1
 })
 
 const StyledTriggerList = styled(List, {
@@ -24,9 +25,9 @@ export const Tabs: React.FC<TabsProps> & {
   TriggerList: typeof StyledTriggerList
   Trigger: typeof TabTrigger
   Content: typeof StyledTabContent
-} = ({ children, ...remainingProps }: TabsProps) => {
-  return <StyledRoot {...remainingProps}>{children}</StyledRoot>
-}
+} = ({ children, ...remainingProps }) => (
+  <StyledRoot {...remainingProps}>{children}</StyledRoot>
+)
 
 Tabs.TriggerList = StyledTriggerList
 Tabs.Trigger = TabTrigger

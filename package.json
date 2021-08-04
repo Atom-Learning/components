@@ -3,7 +3,7 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "version": "0.12.0",
+  "version": "1.0.0-beta.12",
   "description": "",
   "files": [
     "dist"
@@ -45,7 +45,7 @@
   "devDependencies": {
     "@atom-learning/icons": "^0.3.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "^0.1.0-beta.8",
+    "@atom-learning/theme": "1.0.0-beta.0",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.12.10",
@@ -124,11 +124,11 @@
     "@reach/combobox": "^0.15.1",
     "@stitches/react": "0.1.7",
     "@types/react": "^17.0.2",
-    "colorsys": "^1.0.22",
     "invariant": "^2.2.4",
     "mdast-util-directive": "1.0.1",
     "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
+    "polished": "^4.1.2",
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
     "react-hook-form-persist": "^2.0.0",
