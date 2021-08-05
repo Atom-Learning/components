@@ -30,7 +30,9 @@ Currently it suppports converts the following Markdown elements into components:
 <MarkdownContent
   content={`
 ## This is a heading 2
+
 This will be a paragraph
+
 [And this will  be a link](https://atomlearning.co.uk)
 `}
 />
@@ -40,12 +42,15 @@ This will be a paragraph
 
 You can override the component `MarkdownContent` will render for each type by passing an object to the `customComponents` prop where each key is the name of a Markdown Type (see the table above) and the value is a reference to the component you want to render:
 
-```tsx live
+```tsx preview
 <MarkdownContent
-  content={`This paragraph will have a red color`}
+  content="This paragraph will have a red color"
   customComponents={{
-    paragraph: ({ node, handleNode }) => <Text css={{ color: 'red'}}>{(node as Paragraph).children?.map(handleNode)}</Text>
+    paragraph: ({ node, handleNode }) => (
+      <Text css={{ color: 'red' }}>{node.children.map(handleNode)}</Text>
+    )
   }}
+/>
 ```
 
 ## Markdown directives
@@ -54,15 +59,15 @@ The `MarkdownContent` component supports [Markdown directives](https://talk.comm
 
 See the following example that transform the following directive into a `Button` component:
 
-```tsx live
+```tsx preview
 <MarkdownContent
-  content={`:button[This is a button]{href=https://atomlearning.co.uk isRounded=true}`}
+  content=":button[This is a button]{href=https://atomlearning.co.uk isRounded=true}"
   customComponents={{
     textDirective: ({ node, handleNode }) => {
-      const { name, attributes, children } = node as TextDirective
+      const { name, attributes, children } = node
 
       if (name === 'button') {
-        return <Button {...attributes}>{children?.map(handleNode)}</Button>
+        return <Button {...attributes}>{children.map(handleNode)}</Button>
       }
 
       return null
