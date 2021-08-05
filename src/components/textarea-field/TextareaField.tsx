@@ -17,6 +17,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
   label,
   name,
   validation,
+  prompt,
   description,
   ...remainingProps
 }) => {
@@ -27,12 +28,13 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
 
   return (
     <FieldWrapper
-      label={label}
-      required={Boolean(validation?.required)}
-      error={error}
-      fieldId={name}
       css={css}
       description={description}
+      error={error}
+      fieldId={name}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
     >
       <Textarea
         id={name}

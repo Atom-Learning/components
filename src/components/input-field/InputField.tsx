@@ -6,11 +6,11 @@ import { useFieldError, ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
 
 type InputFieldProps = InputProps & {
+  description?: string
   label: string
   name: string
-  description?: string
-  validation?: ValidationOptions
   prompt?: { link: string; label: string }
+  validation?: ValidationOptions
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
@@ -28,13 +28,13 @@ export const InputField: React.FC<InputFieldProps> = ({
 
   return (
     <FieldWrapper
-      label={label}
-      required={Boolean(validation?.required)}
+      css={css}
+      description={description}
       error={error}
       fieldId={name}
-      css={css}
+      label={label}
       prompt={prompt}
-      description={description}
+      required={Boolean(validation?.required)}
     >
       <Input
         id={name}

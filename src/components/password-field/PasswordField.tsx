@@ -9,12 +9,11 @@ import { PasswordInput } from '~/components/password-input'
 import { CSS } from '~/stitches'
 
 type PasswordFieldProps = InputProps & {
-  label?: string
-  prompt?: {
-    label: string
-    link: string
-  }
+  description?: string
   hidePasswordText?: string
+  label?: string
+  name: string
+  prompt?: { label: string; link: string }
   showPasswordText?: string
   validation?: ValidationOptions
 }
@@ -24,6 +23,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   label = 'Password',
   name,
   prompt = undefined,
+  description,
   validation,
   ...remainingProps
 }) => {
@@ -34,17 +34,18 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
 
   return (
     <FieldWrapper
-      label={label}
-      fieldId={name}
-      prompt={prompt}
       css={{ ...css, position: 'relative' } as CSS}
+      description={description}
       error={error}
+      fieldId={name}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
     >
       <PasswordInput
         autoComplete="current-password"
         name={name}
         id={name}
-        required={Boolean(validation?.required)}
         ref={ref}
         {...remainingProps}
       />
