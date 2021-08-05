@@ -1,10 +1,11 @@
 import * as React from 'react'
-import { Controller, useFormContext, get } from 'react-hook-form'
+import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
 import { CSS } from '~/stitches'
+import { getErrors } from '~/utilities'
 
 type CheckboxFieldProps = {
   css?: CSS
@@ -33,7 +34,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
 }) => {
   const { control, errors } = useFormContext()
 
-  const error = get(errors, name)
+  const error = getErrors(errors, name)
 
   return (
     <Controller

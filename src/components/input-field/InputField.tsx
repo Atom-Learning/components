@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { useFormContext, get } from 'react-hook-form'
+import { useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
+import { getErrors } from '~/utilities'
 
 type InputFieldProps = InputProps & {
   label: string
@@ -27,7 +28,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   const { register, errors } = useFormContext()
   const ref = validation ? register(validation) : register
 
-  const error = get(errors, name)
+  const error = getErrors(errors, name)
 
   return (
     <FieldWrapper

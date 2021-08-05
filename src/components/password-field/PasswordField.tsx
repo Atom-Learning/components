@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { useFormContext, get } from 'react-hook-form'
+import { useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import type { ValidationOptions } from '~/components/form'
 import { InputProps } from '~/components/input'
 import { PasswordInput } from '~/components/password-input'
 import { CSS } from '~/stitches'
+import { getErrors } from '~/utilities'
 
 type PasswordFieldProps = InputProps & {
   label?: string
@@ -31,7 +32,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   const { register, errors } = useFormContext()
 
   const ref = validation ? register(validation) : register
-  const error = get(errors, name)
+  const error = getErrors(errors, name)
 
   return (
     <FieldWrapper

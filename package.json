@@ -125,6 +125,7 @@
     "@stitches/react": "0.1.7",
     "@types/react": "^17.0.2",
     "invariant": "^2.2.4",
+    "lodash.get": "^4.4.2",
     "mdast-util-directive": "1.0.1",
     "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
