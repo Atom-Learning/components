@@ -342,22 +342,23 @@ There are a few rules that need to be followed to make the dynamic fields work c
 - Each field name needs to be in a specific format `fieldArrayName[index].fieldName`, where index is the second arg of `map` function
 - To initialize the useFieldArray hook a control object either from `useFormContext` or a Form render prop needs to be used.
 ```tsx
-  const { fields } = useFieldArray({
-            control,
-            name: 'testArray'
-          })
+const { fields } = useFieldArray({
+  control,
+  name: "testArray",
+})
 
-   ///
-   {
-      fields.map((field, index) => (
-        <CheckboxField
-          defaultChecked={field.checkbox}
-          label="Label"
-          name={`testArray[${index}].field2`}
-          key={field.id}
-        />
-      ))
-    }
+//////
+
+{
+  fields.map((field, index) => (
+    <CheckboxField
+      defaultChecked={field.checkbox}
+      label="Label"
+      name={`testArray[${index}].field2`}
+      key={field.id}
+    />
+  ))
+}
 ```
 
 Example:
