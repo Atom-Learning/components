@@ -364,7 +364,6 @@ Example:
 
 ```tsx
   <Form
-    onSubmit={console.log}
     defaultValues={{
       testArray: [
         {
@@ -384,22 +383,14 @@ Example:
       })
 
       return (
-        <>
-          {
-            fields.map((field, index) => (
-              <div key={field.id}>
-                <InputField label="Input" defaultValue={field.field1} name={`testArray[${index}].field1`} validation={{ required: 'input required' }} />
-                <CheckboxField defaultChecked={field.field2} label="Checkbox" name={`testArray[${index}].field2`} required validation={{ required: 'cbox required' }} />
-              </div>
-            ))
-          }
-          <button onClick={() => append({ field1: 'test', field2: false })}>Add Item</button>
-          {
-            fields?.length &&<button onClick={() => remove(0)}>Remove first item</button>
-          }
-
-          <button type="submit">submit form</button>
-        </>
+        {
+          fields.map((field, index) => (
+            <div key={field.id}>
+              <InputField label="Input" defaultValue={field.field1} name={`testArray[${index}].field1`} validation={{ required: 'input required' }} />
+              <CheckboxField defaultChecked={field.field2} label="Checkbox" name={`testArray[${index}].field2`} required validation={{ required: 'cbox required' }} />
+            </div>
+          ))
+        }
       )
     }}
   />
