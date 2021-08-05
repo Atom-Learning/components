@@ -326,6 +326,8 @@ const SomeForm = () => <Form onSubmit={console.log} render={SomeFormContent} />
 
 ## Dynamic fields - useFieldArray()
 
+[React-hook-form docs v6](https://react-hook-form.com/v6/api/#useFieldArray)
+
 To work with dynamically created fields `Form` exposes another render prop, `useFieldArray`. It exposes the following methods and objects:
 
 - `fields`: fields is an object keeping all the dynamic fields stored in the field array. Each entry in the field array can have multiple values (e.g { field: 'test', field2: true, field3: [ 'item1', 'item2' ] }, for example for input, checkbox and select)
