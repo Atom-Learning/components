@@ -3,7 +3,7 @@ import { useFormContext } from 'react-hook-form'
 
 import type { FieldWrapperProps } from '~/components/field-wrapper'
 import { FieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import { ValidationOptions, useFieldError } from '~/components/form'
 import { Textarea, TextareaProps } from '~/components/textarea'
 
 type TextareaFieldProps = TextareaProps &
@@ -21,11 +21,10 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
   description,
   ...remainingProps
 }) => {
-  const { register, errors } = useFormContext()
+  const { register } = useFormContext()
+  const { error } = useFieldError(name)
 
   const ref = validation ? register(validation) : register
-
-  const error = errors[name]?.message
 
   return (
     <FieldWrapper
