@@ -71,11 +71,14 @@ const StyledDialogContent = styled(Content, {
   }
 })
 
-type DialogContentProps = React.ComponentProps<typeof StyledDialogContent>
+type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
+  closeDialogText?: string
+}
 
 export const DialogContent: React.FC<DialogContentProps> = ({
   size = 'sm',
   children,
+  closeDialogText = 'Close dialog',
   ...remainingProps
 }) => (
   <>
@@ -84,7 +87,7 @@ export const DialogContent: React.FC<DialogContentProps> = ({
       <ActionIcon
         as={Close}
         css={{ position: 'absolute', right: '$4', top: '$4' }}
-        label="Close dialog"
+        label={closeDialogText}
         size="lg"
         theme="neutral"
       >

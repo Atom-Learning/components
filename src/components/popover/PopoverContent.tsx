@@ -39,12 +39,15 @@ const StyledArrow = styled(Arrow, {
 })
 
 type PopoverContentProps = React.ComponentProps<typeof StyledContent> &
-  React.ComponentProps<typeof Content>
+  React.ComponentProps<typeof Content> & {
+    closePopoverText?: string
+  }
 
 export const PopoverContent: React.FC<PopoverContentProps> = ({
   children,
   side = 'top',
   sideOffset = 8,
+  closePopoverText = 'Close popover',
   size = 'md',
   ...remainingProps
 }) => (
@@ -57,7 +60,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     <ActionIcon
       as={Close}
       css={{ position: 'absolute', right: '$0', top: '$0' }}
-      label="Close dialog"
+      label={closePopoverText}
       size="lg"
       theme="neutral"
     >
