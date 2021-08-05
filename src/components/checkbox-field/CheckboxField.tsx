@@ -3,9 +3,8 @@ import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import { ValidationOptions, useFieldError } from '~/components/form'
 import { CSS } from '~/stitches'
-import { getErrors } from '~/utilities'
 
 type CheckboxFieldProps = {
   css?: CSS
@@ -32,9 +31,8 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   description,
   ...remainingProps
 }) => {
-  const { control, errors } = useFormContext()
-
-  const error = getErrors(errors, name)
+  const { control } = useFormContext()
+  const { error } = useFieldError(name)
 
   return (
     <Controller
@@ -46,7 +44,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
         <InlineFieldWrapper
           css={css}
           description={description}
-          error={error?.message}
+          error={error}
           label={label}
           required={required}
         >

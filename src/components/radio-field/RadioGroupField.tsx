@@ -1,13 +1,12 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
-import { ValidationOptions } from '~/components/form'
+import { ValidationOptions, useFieldError } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'
 import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
-import { getErrors } from '~/utilities'
 
 import { RadioField } from './RadioField'
 
@@ -39,9 +38,8 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   required = false,
   validation
 }) => {
-  const { control, errors } = useFormContext()
-
-  const error = getErrors(errors, name)
+  const { control } = useFormContext()
+  const { error } = useFieldError(name)
 
   return (
     <Fieldset css={css}>
@@ -72,9 +70,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
           </RadioButtonGroup>
         )}
       />
-      {error && (
-        <ValidationError css={{ mt: '$2' }}>{error?.message}</ValidationError>
-      )}
+      {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
     </Fieldset>
   )
 }
