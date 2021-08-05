@@ -3,7 +3,7 @@ import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions, useFieldError } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { CSS } from '~/stitches'
 
 type CheckboxFieldProps = {
@@ -12,7 +12,6 @@ type CheckboxFieldProps = {
   label: string
   description?: string
   name: string
-  required?: boolean
   validation?: ValidationOptions
 } & React.ComponentProps<typeof Checkbox>
 
@@ -26,7 +25,6 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   defaultChecked = false,
   label,
   name,
-  required = false,
   validation,
   description,
   ...remainingProps
@@ -46,7 +44,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
           description={description}
           error={error}
           label={label}
-          required={required}
+          required={Boolean(validation?.required)}
         >
           <Checkbox
             defaultChecked={defaultChecked}

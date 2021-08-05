@@ -16,7 +16,6 @@ type PasswordFieldProps = InputProps & {
   }
   hidePasswordText?: string
   showPasswordText?: string
-  required?: boolean
   validation?: ValidationOptions
 }
 
@@ -25,7 +24,6 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   label = 'Password',
   name,
   prompt = undefined,
-  required = false,
   validation,
   ...remainingProps
 }) => {
@@ -46,7 +44,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         autoComplete="current-password"
         name={name}
         id={name}
-        required={required}
+        required={Boolean(validation?.required)}
         ref={ref}
         {...remainingProps}
       />
