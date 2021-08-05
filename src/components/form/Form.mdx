@@ -181,6 +181,8 @@ Your custom form field component must take the props specified in [General](#Gen
 
 `error` should be displayed in a `ValidationError` when present. You don’t need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
 
+To properly retrieve error in both normal and dynamic field it is necessary to use useFieldError hook stored in the form directory, that accepts a field name parameter.
+
 #### validation
 
 `validation` allows users of your component to add custom validation rules to it as specified above
