@@ -52,6 +52,7 @@ const StyledButton = styled('button', {
   },
   variants: {
     theme: {
+      neutral: {},
       primary: {},
       success: {},
       warning: {},
@@ -74,6 +75,11 @@ const StyledButton = styled('button', {
   },
   compoundVariants: [
     // Appearance Simple
+    {
+      theme: 'neutral',
+      appearance: 'simple',
+      css: getSimpleVariant('$tonal600', '$primary')
+    },
     {
       theme: 'primary',
       appearance: 'simple',
@@ -144,7 +150,7 @@ const StyledButton = styled('button', {
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   StitchesVariants<typeof StyledButton> & {
-    as?: never
+    as?: string | React.ReactNode
     children: React.ReactNode
     label: string
   } & NavigatorActions
