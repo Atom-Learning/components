@@ -363,35 +363,44 @@ There are a few rules that need to be followed to make the dynamic fields work c
 Example:
 
 ```tsx
-  <Form
-    defaultValues={{
-      testArray: [
-        {
-          field1: 'test',
-          field2: true
-        },
-        {
-          field1: 'test2',
-          field2: true
-        }
-      ]
-    }}
-    render={({ control }) => {
-      const { fields, append, remove } = useFieldArray({
-        control,
-        name: 'testArray'
-      })
+<Form
+  defaultValues={{
+    testArray: [
+      { field1: "test",  field2: true },
+      { field1: "test2", field2: true },
+    ],
+  }}
+  render={({ control }) => {
+    const { fields, append, remove } = useFieldArray({
+      control,
+      name: "testArray",
+    })
 
-      return (
-        {
-          fields.map((field, index) => (
-            <div key={field.id}>
-              <InputField label="Input" defaultValue={field.field1} name={`testArray[${index}].field1`} validation={{ required: 'input required' }} />
-              <CheckboxField defaultChecked={field.field2} label="Checkbox" name={`testArray[${index}].field2`} required validation={{ required: 'cbox required' }} />
-            </div>
-          ))
-        }
-      )
-    }}
-  />
+    return (
+      <>
+        {fields.map((field, index) => (
+          <div key={field.id}>
+            <InputField
+              label="Input"
+              name={`testArray[${index}].field1`}
+              defaultValue={field.field1}
+            />
+            <CheckboxField
+              label="Checkbox"
+              name={`testArray[${index}].field2`}
+              defaultChecked={field.field2}
+            />
+          </div>
+        ))}
+
+        <button onClick={() => append({ field1: "test", field2: false })}>
+          Add Item
+        </button>
+        <button onClick={() => remove(0)}>
+          Remove first item
+        </button>
+      </>
+    )
+  }}
+/>
 ```
