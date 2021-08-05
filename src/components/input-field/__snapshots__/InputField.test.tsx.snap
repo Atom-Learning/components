@@ -97,6 +97,11 @@ exports[`InputField component renders a field in error state 1`] = `
   display: table;
 }
 
+.sxxl4lf {
+  color: var(--sx-colors-danger);
+  margin-left: var(--sx-space-1);
+}
+
 .sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
@@ -150,6 +155,11 @@ exports[`InputField component renders a field in error state 1`] = `
           for="INPUT FIELD"
         >
           INPUT FIELD
+          <span
+            class="sxxl4lf"
+          >
+            *
+          </span>
         </label>
       </div>
       <input

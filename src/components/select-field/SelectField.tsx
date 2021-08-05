@@ -2,12 +2,14 @@ import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
 import { FieldWrapper, FieldWrapperProps } from '~/components/field-wrapper'
-import { ValidationOptions, useFieldError } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { Select, SelectProps } from '~/components/select'
 
 type SelectFieldProps = SelectProps &
   FieldWrapperProps & {
+    description?: string
     name: string
+    prompt?: { link: string; label: string }
     validation?: ValidationOptions
   }
 
@@ -16,8 +18,9 @@ export const SelectField: React.FC<SelectFieldProps> = ({
   children,
   name,
   label,
-  required = false,
   validation,
+  prompt,
+  description,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -26,11 +29,13 @@ export const SelectField: React.FC<SelectFieldProps> = ({
 
   return (
     <FieldWrapper
-      label={label}
-      required={required}
+      css={css}
+      description={description}
       error={error}
       fieldId={name}
-      css={css}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
     >
       <Select
         name={name}

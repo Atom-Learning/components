@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
-import { ValidationOptions, useFieldError } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio'
 import { Text } from '~/components/text'
@@ -19,7 +19,6 @@ type RadioGroupFieldProps = {
   defaultValue?: string
   label: string
   name: string
-  required?: boolean
   direction?: 'row' | 'column'
   description?: string
   validation?: ValidationOptions
@@ -35,7 +34,6 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   description,
   label,
   name,
-  required = false,
   validation
 }) => {
   const { control } = useFormContext()
@@ -43,7 +41,11 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
 
   return (
     <Fieldset css={css}>
-      <Label as="legend" css={{ p: 0, mb: '$3' }} required={required}>
+      <Label
+        as="legend"
+        css={{ p: 0, mb: '$3' }}
+        required={Boolean(validation?.required)}
+      >
         {label}
       </Label>
       {description && (
