@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
-import get from 'lodash.get'
+import delve from 'dlv'
 import { useFormContext } from 'react-hook-form'
 
 export const useFieldError = (fieldName: string) => {
   const [error, setError] = useState<string | undefined>(undefined)
   const { errors } = useFormContext()
 
-  const getErrors = () => get(errors, fieldName)
+  const fieldPath = fieldName.split(/[,[\].]+?/).filter(Boolean)
+
+  const getErrors = () => delve(errors, fieldPath)
   const currentFieldError = getErrors()
 
   useEffect(() => {
