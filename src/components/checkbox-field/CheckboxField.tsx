@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Controller, useFormContext, get } from 'react-hook-form'
+import { Controller, get, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
@@ -47,6 +47,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
           description={description}
           error={error?.message}
           label={label}
+          required={required}
         >
           <Checkbox
             defaultChecked={defaultChecked}
@@ -57,6 +58,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
               onChange(event.target.value !== CheckboxValue.ON)
             }}
             value={value ? CheckboxValue.ON : CheckboxValue.OFF}
+            {...(error && { state: 'error' })}
             {...remainingProps}
           />
         </InlineFieldWrapper>

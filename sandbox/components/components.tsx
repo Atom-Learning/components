@@ -111,13 +111,6 @@ const AlertComponent = () => {
   )
 }
 
-const TriggerValidation = ({ trigger }) => {
-  React.useEffect(() => {
-    trigger()
-  }, [trigger])
-  return null
-}
-
 const Bucket = ({ name, children }) => (
   <>
     <Heading css={{ mb: '$5' }}>{name}</Heading>
@@ -715,9 +708,11 @@ Sample text here...
         <Bucket.Section>
           <Form
             css={{ display: 'flex', gap: '$5', flexDirection: 'column' }}
-            render={(props) => (
+            render={() => (
               <>
-                <TriggerValidation {...props} />
+                <Button size="sm" type="submit">
+                  Click to show validation errors
+                </Button>
                 <ValidationError>
                   This is a validation error unattached to a form field
                 </ValidationError>
@@ -752,11 +747,13 @@ Sample text here...
                 <CheckboxField
                   label="This is a checkbox"
                   name="checkbox-error"
+                  required
                   validation={{ required: 'This is the validation error' }}
                 />
                 <RadioGroupField
                   name="options-error"
                   label="Legend for radio fields"
+                  required
                   validation={{ required: 'This is the validation error' }}
                 >
                   <RadioGroupField.Item

@@ -9,7 +9,7 @@ const StyledSelect = styled('select', {
   backgroundColor: 'white',
   backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
   backgroundRepeat: 'no-repeat, repeat',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal500',
   borderRadius: '$0',
   color: '$tonal800',
   display: 'block',

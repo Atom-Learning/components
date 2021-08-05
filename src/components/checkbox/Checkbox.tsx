@@ -37,6 +37,13 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   },
   '&:focus-within': {
     outline: 'none'
+  },
+  variants: {
+    state: {
+      error: {
+        borderColor: '$danger'
+      }
+    }
   }
 })
 

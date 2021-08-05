@@ -88,7 +88,14 @@ export const media = {
 }
 
 const stitchesConfig = createCss({
-  theme: atomTheme as Theme,
+  theme: {
+    ...(atomTheme as Theme),
+    fontSizes: {
+      ...atomTheme.fontSizes,
+      xs: '12px',
+      sm: '14px'
+    }
+  },
   utils,
   media
 })

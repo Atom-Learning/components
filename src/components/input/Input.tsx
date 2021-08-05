@@ -5,7 +5,7 @@ import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
   appearance: 'none',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal500',
   borderRadius: '$0',
   boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
@@ -16,6 +16,9 @@ const StyledInput = styled('input', {
   px: '$3',
   transition: 'all 100ms ease-out',
   width: '100%',
+  '&::placeholder': {
+    color: '$tonal500'
+  },
   '&:focus': {
     borderColor: '$primary',
     outline: 'none'

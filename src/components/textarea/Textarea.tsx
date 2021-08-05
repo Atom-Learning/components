@@ -6,7 +6,7 @@ const StyledTextarea = styled('textarea', {
   boxShadow: 'none', // remove iOS default styling
   fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal500',
   borderRadius: '$0',
   boxSizing: 'border-box',
   color: '$tonal800',

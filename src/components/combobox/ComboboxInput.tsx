@@ -11,7 +11,7 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '20px auto, 100%',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal500',
   borderRadius: '$0',
   boxSizing: 'border-box',
   color: '$tonal800',
