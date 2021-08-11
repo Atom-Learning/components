@@ -21,9 +21,10 @@ type TableSubComponents = {
 }
 
 const StyledTable = styled('table', {
-  width: '100%',
+  borderCollapse: 'collapse',
   fontFamily: '$sans',
   fontSize: '$sm',
+  width: '100%',
   variants: {
     size: {
       md: {

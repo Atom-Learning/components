@@ -37,17 +37,18 @@ tr:nth-child(even) .sxyjtjl {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxss7ii {
-  width: 100%;
+.sxf58vn {
+  border-collapse: collapse;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
+  width: 100%;
 }
 
-.sxss7iia43go--size-md .sxyjtjl {
+.sxf58vna43go--size-md .sxyjtjl {
   height: var(--sx-sizes-4);
 }
 
-.sxss7ii-a5b4a {
+.sxf58vn-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -55,7 +56,7 @@ tr:nth-child(even) .sxyjtjl {
 
 <div>
   <table
-    class="sxss7ii sxss7iia43go--size-md sxss7ii-a5b4a"
+    class="sxf58vn sxf58vna43go--size-md sxf58vn-a5b4a"
   >
     <thead
       class="sx03kze"
@@ -137,21 +138,22 @@ tr:nth-child(even) .sxyjtjl {
   border-bottom-right-radius: var(--sx-radii-0);
 }
 
-.sxss7ii {
-  width: 100%;
+.sxf58vn {
+  border-collapse: collapse;
   font-family: var(--sx-fonts-sans);
   font-size: var(--sx-fontSizes-sm);
+  width: 100%;
 }
 
-.sxss7iia43go--size-md .sxyjtjl {
+.sxf58vna43go--size-md .sxyjtjl {
   height: var(--sx-sizes-4);
 }
 
-.sxss7iifj3j5--size-lg .sxyjtjl {
+.sxf58vnfj3j5--size-lg .sxyjtjl {
   height: var(--sx-sizes-5);
 }
 
-.sxss7ii-a5b4a {
+.sxf58vn-a5b4a {
   height: 100px;
   width: 400px;
   color: var(--sx-colors-primary500);
@@ -159,7 +161,7 @@ tr:nth-child(even) .sxyjtjl {
 
 <div>
   <table
-    class="sxss7ii sxss7iifj3j5--size-lg sxss7ii-a5b4a"
+    class="sxf58vn sxf58vnfj3j5--size-lg sxf58vn-a5b4a"
   >
     <thead
       class="sx03kze"
