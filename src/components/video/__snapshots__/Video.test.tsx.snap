@@ -1,36 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video component renders a video with custom ratio (4:3) 1`] = `
-.sx03kze-9he4o {
-  border-radius: var(--sx-radii-0);
-  position: relative;
-  padding-top: 56.25%;
-  overflow: hidden;
-  height: 0;
-  width: 100%;
-}
-
-.sx03kze-oboxh {
-  border-radius: var(--sx-radii-0);
-  position: relative;
-  padding-top: 75%;
-  overflow: hidden;
-  height: 0;
-  width: 100%;
-}
-
-.sx03kze-vtaup {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 <div>
   <div
-    class="sx03kze sx03kze-oboxh"
+    class="c-PJLV c-PJLV-iiwtye-css"
   >
     <div
-      class="sx03kze sx03kze-vtaup"
+      class="c-PJLV c-PJLV-ijsPNpl-css"
       role="figure"
       style="width: 100%; height: 100%;"
     >
@@ -43,27 +19,12 @@ exports[`Video component renders a video with custom ratio (4:3) 1`] = `
 `;
 
 exports[`Video component renders a video with default ratio 1`] = `
-.sx03kze-9he4o {
-  border-radius: var(--sx-radii-0);
-  position: relative;
-  padding-top: 56.25%;
-  overflow: hidden;
-  height: 0;
-  width: 100%;
-}
-
-.sx03kze-vtaup {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 <div>
   <div
-    class="sx03kze sx03kze-9he4o"
+    class="c-PJLV c-PJLV-ijNtcEK-css"
   >
     <div
-      class="sx03kze sx03kze-vtaup"
+      class="c-PJLV c-PJLV-ijsPNpl-css"
       role="figure"
       style="width: 100%; height: 100%;"
     >

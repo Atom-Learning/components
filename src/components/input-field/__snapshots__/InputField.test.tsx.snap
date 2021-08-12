@@ -1,179 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField component renders a field in error state 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-}
-
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-}
-
-.sxtros6or94y--size-sm {
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-}
-
-.sxtros6-iux96 {
-  margin-right: var(--sx-space-2);
-  flex-shrink: 0;
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
-}
-
-.sx2cs53-1vtbu {
-  color: var(--sx-colors-danger);
-  align-items: flex-start;
-  margin-top: var(--sx-space-2);
-}
-
-.sxj1d4e {
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  margin: 0;
-}
-
-.sxj1d4eid6h2--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.53;
-}
-
-.sxj1d4eid6h2--size-sm::before {
-  content: '';
-  margin-bottom: -0.4056em;
-  display: table;
-}
-
-.sxj1d4eid6h2--size-sm::after {
-  content: '';
-  margin-top: -0.4056em;
-  display: table;
-}
-
-.sxj1d4e-n4ol9 {
-  color: inherit;
-  transform: translateY(var(--sx-space-1));
-}
-
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sxxl4lf {
-  color: var(--sx-colors-danger);
-  margin-left: var(--sx-space-1);
-}
-
-.sx1s1jh {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
-}
-
-.sx1s1jh:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sx1s1jhpw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
-
-.sx1s1jhhpnso--state-error {
-  border: 1px solid var(--sx-colors-danger);
-}
-
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="c-jMiJvg c-jMiJvg-gvmVBy-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
           <span
-            class="sxxl4lf"
+            class="c-fFGCSj"
           >
             *
           </span>
         </label>
       </div>
       <input
-        class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jhhpnso--state-error"
+        class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-bXVTjQ-state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
       />
       <div
-        class="sx2cs53 sx2cs53-1vtbu"
+        class="c-dhzjXW c-dhzjXW-idXOPtz-css"
       >
         <svg
           aria-hidden="true"
-          class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
+          class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihYlUBO-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -193,7 +55,7 @@ exports[`InputField component renders a field in error state 1`] = `
           />
         </svg>
         <p
-          class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
+          class="c-jwkyIg c-jwkyIg-bndJoy-size-sm c-jwkyIg-ikkBjHS-css"
         >
           This field is required
         </p>
@@ -209,100 +71,26 @@ exports[`InputField component renders a field in error state 1`] = `
 `;
 
 exports[`InputField component renders a field with a number input 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
-}
-
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx1s1jh {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
-}
-
-.sx1s1jh:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sx1s1jhpw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
-
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze sx03kze-6obnf"
+      class="c-PJLV c-PJLV-ikLAKdM-css"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="c-jMiJvg c-jMiJvg-gvmVBy-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx1s1jh sx1s1jhpw03g--size-md"
+        class="c-dtikvq c-dtikvq-pHZal-size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -316,100 +104,26 @@ exports[`InputField component renders a field with a number input 1`] = `
 `;
 
 exports[`InputField component renders a field with a text input 1`] = `
-.sx03kze-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
-}
-
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx1s1jh {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
-}
-
-.sx1s1jh:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sx1s1jhpw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
-
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze sx03kze-6obnf"
+      class="c-PJLV c-PJLV-ikLAKdM-css"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="c-jMiJvg c-jMiJvg-gvmVBy-size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sx1s1jh sx1s1jhpw03g--size-md"
+        class="c-dtikvq c-dtikvq-pHZal-size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

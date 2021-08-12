@@ -2475,17 +2475,10 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/core@^0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@stitches/core/-/core-0.1.7.tgz#132d6e3bab1b3af44b6c67980d7e2d23b64703d0"
-  integrity sha512-OSo1qS0QlBJ/Uyc6h2luc8pzFR2qNK7ehWUtRDIegAhq5phvVw9B6oEc9E7HDf6ku8UEzCd/BVwXiUSjknMQDQ==
-
-"@stitches/react@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-0.1.7.tgz#9e307b34a8b0c40d2c71907b686692ef881e9d37"
-  integrity sha512-oq+ll96qYrOmKeOGL+7fpIW9Gbxaw56kzdU7OcKWLwxaborOLHimmQELD0UXy9ZfMQ5EvgjbXPxussgUR8qrUg==
-  dependencies:
-    "@stitches/core" "^0.1.7"
+"@stitches/react@^1.0.0-canary.7":
+  version "1.0.0-canary.7"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.0.0-canary.7.tgz#170dd643e79265e9520199e9fbe2a210212d5352"
+  integrity sha512-IeRG9EKjJFG8Z18jjTK6FNXkZK0fHK0pw7NTOddQKxGpBQSQHi8Mi+OcUVC4+LbK5cGI2LRX5l3xNh+tmM1Ipw==
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"

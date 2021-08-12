@@ -1,49 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component renders a checkbox 1`] = `
-.sxt3cs2 {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 50ms ease-out;
-}
-
-.sxt3cs2[data-state="unchecked"]:focus,
-.sxt3cs2[data-state="unchecked"]:hover {
-  outline: none;
-}
-
-.sxt3cs2[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
-
-.sxt3cs2[data-state="checked"]:hover,
-.sxt3cs2[data-state="unchecked"]:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sxt3cs2[disabled] {
-  background-color: var(--sx-colors-tonal200);
-  border-color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxt3cs2:focus-within {
-  outline: none;
-}
-
 <div>
   <label>
     <input
@@ -53,7 +10,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="sxt3cs2"
+      class="c-MHVTU"
       data-state="unchecked"
       role="checkbox"
       title="test"

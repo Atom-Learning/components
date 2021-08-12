@@ -1,175 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button component Loading state renders a loading button 1`] = `
-@keyframes sxwho2l {
-  0% {
-    opacity: 0;
-  }
-
-  30% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  80% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-}
-
-.sxtros6or94y--size-sm {
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-}
-
-.sxtros6-898e9 {
-  margin-left: var(--sx-space-3);
-}
-
-.sx03kze-e0n2q {
-  opacity: 0;
-  transition: opacity 150ms;
-}
-
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-c4y3k {
-  justify-content: center;
-  opacity: 1;
-  position: absolute;
-  transition: opacity 150ms;
-}
-
-.sxe5oww {
-  animation-name: sxwho2l;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  background-color: currentColor;
-  border-radius: var(--sx-radii-round);
-}
-
-.sxe5oww:nth-child(1) {
-  animation-delay: -300ms;
-}
-
-.sxe5oww:nth-child(2) {
-  animation-delay: -150ms;
-}
-
-.sxe5oww:nth-child(3) {
-  animation-delay: 0;
-}
-
-.sxe5oww4btw3--size-md {
-  height: 6px;
-  width: 6px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlmkcj--isRounded-true {
-  border-radius: var(--sx-radii-round);
-}
-
-.sxk4zgnh1fyd--isLoading-true {
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-solid sxk4zgndwxsw--size-md sxk4zgnh1fyd--isLoading-true sxk4zgnlee6n--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-NDVFZ-isLoading-true c-dKwMvT-epyqWI-cv"
     type="button"
   >
     <div
-      class="sx2cs53 sx2cs53-c4y3k"
+      class="c-dhzjXW c-dhzjXW-ihMdMjL-css"
       role="alert"
     >
       <span
@@ -178,17 +16,17 @@ exports[`Button component Loading state renders a loading button 1`] = `
         Loading
       </span>
       <div
-        class="sxe5oww sxe5oww4btw3--size-md"
+        class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
       />
       <div
-        class="sxe5oww sxe5oww4btw3--size-md"
+        class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
       />
       <div
-        class="sxe5oww sxe5oww4btw3--size-md"
+        class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
       />
     </div>
     <span
-      class="sx03kze sx03kze-e0n2q"
+      class="c-PJLV c-PJLV-ikHJJOk-css"
     >
       BUTTON
     </span>
@@ -197,57 +35,9 @@ exports[`Button component Loading state renders a loading button 1`] = `
 `;
 
 exports[`Button component renders a button 1`] = `
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-solid sxk4zgndwxsw--size-md sxk4zgnlee6n--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-epyqWI-cv"
     type="button"
   >
     BUTTON
@@ -256,100 +46,15 @@ exports[`Button component renders a button 1`] = `
 `;
 
 exports[`Button component renders a button with an icon 1`] = `
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-}
-
-.sxtros6or94y--size-sm {
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-}
-
-.sxtros6-898e9 {
-  margin-left: var(--sx-space-3);
-}
-
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-solid sxk4zgndwxsw--size-md sxk4zgnlee6n--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-epyqWI-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="sxtros6 sxtros6or94y--size-sm sxtros6-898e9"
+      class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihbvLxt-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -362,75 +67,9 @@ exports[`Button component renders a button with an icon 1`] = `
 `;
 
 exports[`Button component renders a disabled button 1`] = `
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-solid sxk4zgndwxsw--size-md sxk4zgnlee6n--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-epyqWI-cv"
     disabled=""
     type="button"
   >
@@ -440,75 +79,9 @@ exports[`Button component renders a disabled button 1`] = `
 `;
 
 exports[`Button component renders a disabled warning outline button 1`] = `
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-warning sxk4zgn03kze--appearance-outline sxk4zgndwxsw--size-md"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md"
     disabled=""
     type="button"
   >
@@ -518,75 +91,9 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 `;
 
 exports[`Button component renders a outline button 1`] = `
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-outline sxk4zgndwxsw--size-md sxk4zgncklkz--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-cRpAgC-cv"
     type="button"
   >
     BUTTON
@@ -595,104 +102,15 @@ exports[`Button component renders a outline button 1`] = `
 `;
 
 exports[`Button component renders a rounded button  1`] = `
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-}
-
-.sxtros6or94y--size-sm {
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-}
-
-.sxtros6-898e9 {
-  margin-left: var(--sx-space-3);
-}
-
-.sxk4zgn {
-  align-items: center;
-  background: unset;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  display: flex;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  justify-content: center;
-  letter-spacing: 0.02em;
-  padding: unset;
-  text-decoration: none;
-  transition: all 125ms ease-out;
-  white-space: nowrap;
-  width: max-content;
-}
-
-.sxk4zgn[disabled] {
-  background: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sxk4zgndwxsw--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-  height: var(--sx-sizes-4);
-  padding-left: var(--sx-space-5);
-  padding-right: var(--sx-space-5);
-}
-
-.sxk4zgnlmkcj--isRounded-true {
-  border-radius: var(--sx-radii-round);
-}
-
-.sxk4zgnlee6n--c2 {
-  background: var(--sx-colors-primary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):hover,
-.sxk4zgnlee6n--c2:not([disabled]):focus {
-  background: var(--sx-colors-tertiary);
-  color: white;
-}
-
-.sxk4zgnlee6n--c2:not([disabled]):active {
-  background: var(--sx-colors-primary);
-}
-
-.sxk4zgncklkz--c2 {
-  border: 1px solid;
-  border-color: currentColor;
-  color: var(--sx-colors-primary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):hover,
-.sxk4zgncklkz--c2:not([disabled]):focus {
-  text-decoration: none;
-  color: var(--sx-colors-tertiary);
-  background: white;
-}
-
-.sxk4zgncklkz--c2:not([disabled]):active {
-  color: var(--sx-colors-primary);
-}
-
 <div>
   <button
-    class="sxk4zgn sxk4zgn03kze--theme-primary sxk4zgn03kze--appearance-solid sxk4zgndwxsw--size-md sxk4zgnlmkcj--isRounded-true sxk4zgnlee6n--c2"
+    class="c-dKwMvT c-dKwMvT-elrwsr-size-md c-dKwMvT-rloUt-isRounded-true c-dKwMvT-epyqWI-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="sxtros6 sxtros6or94y--size-sm sxtros6-898e9"
+      class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihbvLxt-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

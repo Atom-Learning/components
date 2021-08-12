@@ -1,57 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component renders a disabled radio button 1`] = `
-.sx7siaz {
-  align-items: center;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-round);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  transition: all 50ms ease-out;
-}
-
-.sx7siaz:hover {
-  outline: none;
-}
-
-.sx7siaz:focus {
-  outline: none;
-}
-
-:checked + .sx7siaz {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
-
-.sx7siaz[disabled] {
-  background-color: var(--sx-colors-tonal200);
-  border-color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxndfzf {
-  height: 6px;
-  width: 6px;
-  border-radius: var(--sx-radii-round);
-  background-color: white;
-  position: absolute;
-}
-
-.sxykmo8 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 <div>
   <div
-    class="sxykmo8"
+    class="c-iSwBqf"
     role="radiogroup"
   >
     <input
@@ -63,7 +15,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="sx7siaz"
+      class="c-hZPcEN"
       data-disabled=""
       data-state="unchecked"
       disabled=""
@@ -77,57 +29,9 @@ exports[`Radio component renders a disabled radio button 1`] = `
 `;
 
 exports[`Radio component renders a radio button 1`] = `
-.sx7siaz {
-  align-items: center;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-round);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  transition: all 50ms ease-out;
-}
-
-.sx7siaz:hover {
-  outline: none;
-}
-
-.sx7siaz:focus {
-  outline: none;
-}
-
-:checked + .sx7siaz {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
-
-.sx7siaz[disabled] {
-  background-color: var(--sx-colors-tonal200);
-  border-color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxndfzf {
-  height: 6px;
-  width: 6px;
-  border-radius: var(--sx-radii-round);
-  background-color: white;
-  position: absolute;
-}
-
-.sxykmo8 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 <div>
   <div
-    class="sxykmo8"
+    class="c-iSwBqf"
     role="radiogroup"
   >
     <input
@@ -138,7 +42,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="sx7siaz"
+      class="c-hZPcEN"
       data-radix-roving-focus-group-id="radix-id-0-1"
       data-state="unchecked"
       role="radio"

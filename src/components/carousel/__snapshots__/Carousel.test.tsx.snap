@@ -1,196 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Carousel component renders 1`] = `
-.sx03kze-4mcwz {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  width: 500px;
-}
-
-.sx03kze-f7jkm {
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-}
-
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
-}
-
-.sxtros6mbqqh--size-md {
-  height: var(--sx-sizes-2);
-  width: var(--sx-sizes-2);
-}
-
-.sx9lsuj {
-  align-items: center;
-  background: unset;
-  border: unset;
-  color: var(--sx-colors-tertiary);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: unset;
-  height: var(--sx-sizes-5);
-  width: var(--sx-sizes-5);
-  top: 50%;
-  transform: translateY(-50%);
-  transition: color 0.15s ease-in-out;
-}
-
-.sx9lsuj:hover {
-  color: var(--sx-colors-primary);
-}
-
-.sx9lsuj:disabled {
-  color: var(--sx-colors-tonal300);
-}
-
-.sx9lsuj-pqx9j {
-  position: absolute;
-  left: var(--sx-space-2);
-}
-
-@media (min-width: 800px) {
-  .sx9lsuj-pqx9j {
-    left: var(--sx-space-3);
-  }
-}
-
-@media (min-width: 1100px) {
-  .sx9lsuj-pqx9j {
-    left: var(--sx-space-4);
-  }
-}
-
-.sx9lsuj {
-  align-items: center;
-  background: unset;
-  border: unset;
-  color: var(--sx-colors-tertiary);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: unset;
-  height: var(--sx-sizes-5);
-  width: var(--sx-sizes-5);
-  top: 50%;
-  transform: translateY(-50%);
-  transition: color 0.15s ease-in-out;
-}
-
-.sx9lsuj:hover {
-  color: var(--sx-colors-primary);
-}
-
-.sx9lsuj:disabled {
-  color: var(--sx-colors-tonal300);
-}
-
-.sx9lsuj-dtra5 {
-  position: absolute;
-  right: var(--sx-space-2);
-}
-
-@media (min-width: 800px) {
-  .sx9lsuj-dtra5 {
-    right: var(--sx-space-3);
-  }
-}
-
-@media (min-width: 1100px) {
-  .sx9lsuj-dtra5 {
-    right: var(--sx-space-4);
-  }
-}
-
-.sxin7l7 {
-  justify-content: center;
-}
-
-.sxin7l7 button {
-  background: var(--sx-colors-tonal300);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-left: var(--sx-space-1);
-  margin-right: var(--sx-space-1);
-  padding: var(--sx-space-1);
-  height: var(--sx-space-3);
-  width: var(--sx-space-3);
-  transition: all 0.25s ease-in;
-}
-
-.sxin7l7 button[class*="selected"] {
-  background: var(--sx-colors-tertiary);
-}
-
-.sx03kze-iy5j5 {
-  opacity: 0.7;
-  transition: all 0.25s ease-in;
-}
-
-.sx03kze-iy5j5[aria-selected="true"] {
-  opacity: 1;
-}
-
-.sx03kze-iy5j5[aria-selected="true"] > div > div > * {
-  box-shadow: var(--sx-shadows-1);
-}
-
-.sx87oi3 {
-  cursor: grab;
-  margin-left: 50%;
-  overflow: hidden;
-  transform: translateX(-50%);
-}
-
-.sx87oi3 [class*="sliderTray_"] {
-  padding: unset;
-  margin: unset;
-  transition: transform .5s cubic-bezier(.645,.045,.355,1);
-}
-
-.sx87oi3 [class*="slide_"] {
-  float: left;
-  padding-bottom: 0 !important;
-}
-
-.sx87oi3 [class*="slideInner"] {
-  display: flex;
-  justify-content: center;
-}
-
-.sxkoa5n {
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-.sxkoa5n[width] {
-  width: auto;
-}
-
-.sxkoa5n[width][height] {
-  height: auto;
-}
-
-.sxkoa5n[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
 <div>
   <div
-    class="sx03kze sx03kze-4mcwz"
+    class="c-PJLV c-PJLV-icHUKge-css"
     data-testid="css-wrapper"
   >
     <div
@@ -198,13 +11,13 @@ exports[`Carousel component renders 1`] = `
     >
       <button
         aria-label="previous"
-        class="buttonBack___1mlaL carousel__back-button sx9lsuj sx9lsuj-pqx9j"
+        class="buttonBack___1mlaL carousel__back-button c-kesdyt c-kesdyt-idcEsDf-css"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxtros6 sxtros6mbqqh--size-md"
+          class="c-dBUxNn c-dBUxNn-fDXBFo-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -215,12 +28,12 @@ exports[`Carousel component renders 1`] = `
       </button>
       <button
         aria-label="next"
-        class="buttonNext___2mOCa carousel__next-button sx9lsuj sx9lsuj-dtra5"
+        class="buttonNext___2mOCa carousel__next-button c-kesdyt c-kesdyt-ieFGiTU-css"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="sxtros6 sxtros6mbqqh--size-md"
+          class="c-dBUxNn c-dBUxNn-fDXBFo-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -232,7 +45,7 @@ exports[`Carousel component renders 1`] = `
       <div
         aria-label="Example carousel"
         aria-live="polite"
-        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal sx87oi3"
+        class="horizontalSlider___281Ls carousel__slider carousel__slider--horizontal c-bemsGI"
         role="listbox"
         tabindex="0"
       >
@@ -246,7 +59,7 @@ exports[`Carousel component renders 1`] = `
             <div
               aria-label="slide 0"
               aria-selected="true"
-              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible sx03kze sx03kze-iy5j5"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--visible c-PJLV c-PJLV-ifsKauB-css"
               role="option"
               style="width: 25%; padding-bottom: 37.5%;"
               tabindex="0"
@@ -255,11 +68,11 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kze-f7jkm"
+                  class="c-PJLV c-PJLV-ihbsPHc-css"
                 >
                   <img
                     alt=""
-                    class="sxkoa5n"
+                    class="c-eWgOGC"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -268,7 +81,7 @@ exports[`Carousel component renders 1`] = `
             <div
               aria-label="slide 1"
               aria-selected="false"
-              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden c-PJLV c-PJLV-ifsKauB-css"
               role="option"
               style="width: 25%; padding-bottom: 37.5%;"
               tabindex="-1"
@@ -277,11 +90,11 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kze-f7jkm"
+                  class="c-PJLV c-PJLV-ihbsPHc-css"
                 >
                   <img
                     alt=""
-                    class="sxkoa5n"
+                    class="c-eWgOGC"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -290,7 +103,7 @@ exports[`Carousel component renders 1`] = `
             <div
               aria-label="slide 2"
               aria-selected="false"
-              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden c-PJLV c-PJLV-ifsKauB-css"
               role="option"
               style="width: 25%; padding-bottom: 37.5%;"
               tabindex="-1"
@@ -299,11 +112,11 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kze-f7jkm"
+                  class="c-PJLV c-PJLV-ihbsPHc-css"
                 >
                   <img
                     alt=""
-                    class="sxkoa5n"
+                    class="c-eWgOGC"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -312,7 +125,7 @@ exports[`Carousel component renders 1`] = `
             <div
               aria-label="slide 3"
               aria-selected="false"
-              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden sx03kze sx03kze-iy5j5"
+              class="slide___3-Nqo slideHorizontal___1NzNV carousel__slide carousel__slide--hidden c-PJLV c-PJLV-ifsKauB-css"
               role="option"
               style="width: 25%; padding-bottom: 37.5%;"
               tabindex="-1"
@@ -321,11 +134,11 @@ exports[`Carousel component renders 1`] = `
                 class="slideInner___2mfX9 carousel__inner-slide"
               >
                 <div
-                  class="sx03kze sx03kze-f7jkm"
+                  class="c-PJLV c-PJLV-ihbsPHc-css"
                 >
                   <img
                     alt=""
-                    class="sxkoa5n"
+                    class="c-eWgOGC"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -335,7 +148,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group sxin7l7"
+        class="carousel__dot-group c-fDEGHa"
       >
         <button
           aria-label="slide dot"

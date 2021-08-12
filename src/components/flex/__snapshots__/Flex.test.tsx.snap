@@ -1,19 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flex component renders 1`] = `
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
-}
-
 <div>
   <div
-    class="sx2cs53 sx2cs53-6obnf"
+    class="c-dhzjXW c-dhzjXW-ikLAKdM-css"
   >
     FLEX
   </div>

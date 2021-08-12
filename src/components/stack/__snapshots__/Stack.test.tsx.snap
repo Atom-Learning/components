@@ -1,37 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stack component renders 1`] = `
-.sxsp157 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sxsp157 > * {
-  margin: 0;
-}
-
-.sxsp1578p3zg--direction-row {
-  flex-direction: row;
-  align-items: center;
-}
-
-.sxsp157jp2t4--justify-start {
-  justify-content: flex-start;
-}
-
-.sxsp157sxrde--gap-2 {
-  margin-top: calc(var(--sx-space-2)*-1);
-  margin-left: calc(var(--sx-space-2)*-1);
-}
-
-.sxsp157sxrde--gap-2 > * {
-  margin-top: var(--sx-space-2);
-  margin-left: var(--sx-space-2);
-}
-
 <div>
   <div
-    class="sxsp157 sxsp1578p3zg--direction-row sxsp157jp2t4--justify-start sxsp157sxrde--gap-2"
+    class="c-gjxWtu c-gjxWtu-cPPfON-direction-row c-gjxWtu-awKDG-justify-start c-gjxWtu-dPMagj-gap-2"
   />
 </div>
 `;

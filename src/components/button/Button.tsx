@@ -1,4 +1,4 @@
-import { StitchesVariants } from '@stitches/react'
+import type * as Stitches from '@stitches/react'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
@@ -167,7 +167,7 @@ const getChildren = (children, size) =>
 
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
-  StitchesVariants<typeof StyledButton> & {
+  Stitches.VariantProps<typeof StyledButton> & {
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
     isLoading?: boolean

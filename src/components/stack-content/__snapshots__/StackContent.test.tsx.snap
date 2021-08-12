@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StackContent component applies styles correctly to children 1`] = `
+<div>
+  <div
+    class="c-PJLV"
+  >
+    <h2
+      class="c-hswVDG c-hswVDG-fOoUdm-size-md c-hswVDG-ibsOPXb-css"
+    >
+      HEADING
+    </h2>
+    <p
+      class="c-jwkyIg c-jwkyIg-gvmVBy-size-md c-jwkyIg-ielbxsX-css"
+    >
+      TEXT
+    </p>
+    <hr
+      class="c-hqVVCK c-hqVVCK-ihYlNNO-css"
+    />
+    <ul
+      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-ielbxsX-css"
+    >
+      <li
+        class="c-PJLV"
+      />
+    </ul>
+    <img
+      class="c-eWgOGC c-eWgOGC-ictMdSS-css"
+      src=""
+    />
+  </div>
+</div>
+`;
