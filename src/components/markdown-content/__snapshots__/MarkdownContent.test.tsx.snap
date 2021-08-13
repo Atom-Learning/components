@@ -1,6 +1,334 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownContent component renders 1`] = `
+@media  {
+  .c-hqVVCK {
+    border: 0;
+    border-top: 1px solid var(--colors-tonal400);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .c-hswVDG {
+    color: var(--colors-tonal800);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-jwkyIg {
+    color: var(--colors-tonal800);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-ecBjWS {
+    font-weight: 600;
+  }
+
+  .c-bYNGXt {
+    font-style: italic;
+  }
+
+  .c-iQukjL {
+    font-family: var(--fonts-body);
+    margin: unset;
+    padding: unset;
+  }
+
+  .c-iQukjL > .c-PJLV:not(:last-child) {
+    margin-bottom: var(--space-2);
+  }
+
+  .c-iQukjL > .c-PJLV:last-child {
+    margin-bottom: 0;
+  }
+
+  .c-biYWST {
+    background-color: var(--colors-tonal100);
+    border-radius: var(--radii-0);
+    display: inline-block;
+    font-family: var(--fonts-mono);
+    font-size: 85%;
+    padding: var(--space-0) var(--space-1);
+  }
+
+  .c-lczWPq {
+    background-color: var(--colors-tonal200);
+    padding: var(--space-3);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
+    border-radius: var(--radii-1);
+    line-height: 1.4;
+    font-family: var(--fonts-mono);
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-fbdNsg {
+    background-color: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    text-decoration: none;
+  }
+
+  .c-fbdNsg:focus,
+  .c-fbdNsg:hover {
+    color: var(--colors-tertiary);
+    text-decoration: underline;
+  }
+
+  .c-fbdNsg:active {
+    color: var(--colors-primary);
+  }
+
+  .c-jwkyIg > .c-fbdNsg,
+  .c-hswVDG > .c-fbdNsg,
+  .c-PJLV > .c-fbdNsg {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-jwkyIg > .c-fbdNsg::before,
+  .c-jwkyIg > .c-fbdNsg::after,
+  .c-hswVDG > .c-fbdNsg::before,
+  .c-hswVDG > .c-fbdNsg::after,
+  .c-PJLV > .c-fbdNsg::before,
+  .c-PJLV > .c-fbdNsg::after {
+    content: none;
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+}
+
+@media  {
+  .c-hswVDG-bSbzjX-size-lg {
+    font-size: var(--fontSizes-2xl);
+    line-height: 1.08;
+  }
+
+  .c-hswVDG-bSbzjX-size-lg::before {
+    content: '';
+    margin-bottom: -0.1865em;
+    display: table;
+  }
+
+  .c-hswVDG-bSbzjX-size-lg::after {
+    content: '';
+    margin-top: -0.1945em;
+    display: table;
+  }
+
+  .c-hswVDG-kYeJd-size-xl {
+    font-size: var(--fontSizes-3xl);
+    line-height: 1.12;
+  }
+
+  .c-hswVDG-kYeJd-size-xl::before {
+    content: '';
+    margin-bottom: -0.206em;
+    display: table;
+  }
+
+  .c-hswVDG-kYeJd-size-xl::after {
+    content: '';
+    margin-top: -0.214em;
+    display: table;
+  }
+
+  .c-hswVDG-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-hswVDG-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-hswVDG-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-hswVDG-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-hswVDG-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-hswVDG-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-hswVDG-llheLm-size-xs {
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-hswVDG-llheLm-size-xs::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-hswVDG-llheLm-size-xs::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-jwkyIg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-jwkyIg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-jwkyIg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-bfiEAN-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iQukjL-DlQlZ-as-ul {
+    padding-left: var(--space-3);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+    padding-left: var(--space-2);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
+    content: "•";
+    font-weight: bold;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol {
+    padding-left: var(--space-4);
+    list-style: decimal;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV {
+    padding-left: var(--space-1);
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV::marker {
+    font-size: var(--fontSizes-sm);
+    font-weight: bold;
+  }
+
+  .c-fbdNsg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fbdNsg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fbdNsg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-hqVVCK-icGzAje-css {
+    width: 100%;
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+
+  .c-hswVDG-ifCXdlF-css {
+    color: inherit;
+    max-width: 65ch;
+  }
+
+  .c-hswVDG-ifCXdlF-css:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-hswVDG-ifCXdlF-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-jwkyIg-ijBQtuh-css {
+    color: inherit;
+    max-width: 75ch;
+  }
+
+  .c-jwkyIg-ijBQtuh-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-iQukjL-iapbzE-css p:before,
+  .c-iQukjL-iapbzE-css p:after {
+    display: none;
+  }
+
+  .c-iQukjL-iapbzE-css {
+    max-width: 75ch;
+  }
+
+  .c-iQukjL-iapbzE-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-jwkyIg-ibHwuwj-css {
+    color: inherit;
+  }
+
+  .c-iQukjL-igZTZYS-css p:before,
+  .c-iQukjL-igZTZYS-css p:after {
+    display: none;
+  }
+}
+
 <div>
   <div
     class="c-PJLV"

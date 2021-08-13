@@ -1,6 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Stack component renders 1`] = `
+@media  {
+  .c-gjxWtu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .c-gjxWtu > * {
+    margin: 0;
+  }
+}
+
+@media  {
+  .c-gjxWtu-cPPfON-direction-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .c-gjxWtu-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-gjxWtu-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-gjxWtu-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+}
+
 <div>
   <div
     class="c-gjxWtu c-gjxWtu-cPPfON-direction-row c-gjxWtu-awKDG-justify-start c-gjxWtu-dPMagj-gap-2"

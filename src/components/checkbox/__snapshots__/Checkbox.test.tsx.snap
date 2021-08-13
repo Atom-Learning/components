@@ -1,6 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component renders a checkbox 1`] = `
+@media  {
+  .c-MHVTU {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+  }
+
+  .c-MHVTU[data-state="unchecked"]:focus,
+  .c-MHVTU[data-state="unchecked"]:hover {
+    outline: none;
+  }
+
+  .c-MHVTU[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-MHVTU[data-state="checked"]:hover,
+  .c-MHVTU[data-state="unchecked"]:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-MHVTU[disabled] {
+    background-color: var(--colors-tonal200);
+    border-color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-MHVTU:focus-within {
+    outline: none;
+  }
+}
+
 <div>
   <label>
     <input

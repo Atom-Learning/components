@@ -1,6 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dBUxNn {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+  }
+
+  .c-jwkyIg {
+    color: var(--colors-tonal800);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media  {
+  .c-dBUxNn-kupcZn-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-jwkyIg-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-jwkyIg-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-jwkyIg-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iccdseS-css {
+    color: var(--colors-danger);
+    align-items: flex-start;
+  }
+
+  .c-dBUxNn-ihYlUBO-css {
+    margin-right: var(--space-2);
+    flex-shrink: 0;
+  }
+
+  .c-jwkyIg-ikkBjHS-css {
+    color: inherit;
+    transform: translateY(var(--space-1));
+  }
+}
+
 <div>
   <div
     class="c-dhzjXW c-dhzjXW-iccdseS-css"

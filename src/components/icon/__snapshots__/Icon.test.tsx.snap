@@ -1,6 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Icon component renders an icon 1`] = `
+@media  {
+  .c-dBUxNn {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-dBUxNn-fDXBFo-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+}
+
 <div>
   <svg
     aria-hidden="true"

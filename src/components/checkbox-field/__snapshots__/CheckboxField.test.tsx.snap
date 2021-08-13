@@ -1,6 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField component renders 1`] = `
+@media  {
+  .c-bsbHzT {
+    display: flex;
+    font-weight: 400;
+    max-width: max-content;
+  }
+
+  .c-jMiJvg {
+    color: var(--colors-tonal800);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-MHVTU {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal500);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+  }
+
+  .c-MHVTU[data-state="unchecked"]:focus,
+  .c-MHVTU[data-state="unchecked"]:hover {
+    outline: none;
+  }
+
+  .c-MHVTU[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-MHVTU[data-state="checked"]:hover,
+  .c-MHVTU[data-state="unchecked"]:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-MHVTU[disabled] {
+    background-color: var(--colors-tonal200);
+    border-color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-MHVTU:focus-within {
+    outline: none;
+  }
+}
+
+@media  {
+  .c-bsbHzT-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-bsbHzT-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-PJLV-ioftQP-css {
+    margin-right: var(--space-3);
+    transform: translateY(var(--space-0));
+  }
+}
+
 <div>
   <form
     aria-label="form"

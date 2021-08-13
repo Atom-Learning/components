@@ -1,6 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
+@media  {
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-dtikvq-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+}
+
 <div>
   <input
     class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-ikLAKdM-css"
@@ -13,6 +58,51 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
+@media  {
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-dtikvq-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+}
+
 <div>
   <input
     class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-ikLAKdM-css"

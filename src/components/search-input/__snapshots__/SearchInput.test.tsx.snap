@@ -1,6 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchInput component renders 1`] = `
+@media  {
+  .c-dBUxNn {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+  }
+
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dBUxNn-fDXBFo-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-dBUxNn-iXjOke-css {
+    color: var(--colors-tonal500);
+    pointer-events: none;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .c-dtikvq-icSgxUp-css {
+    padding-left: var(--space-6);
+  }
+}
+
 <div>
   <div
     class="c-PJLV c-PJLV-icmpvrW-css"

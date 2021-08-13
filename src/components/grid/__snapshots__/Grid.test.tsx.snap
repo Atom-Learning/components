@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Grid component renders 1`] = `
+@media  {
+  .c-bQzyIt {
+    display: grid;
+  }
+}
+
+@media  {
+  .c-bQzyIt-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+}
+
+@media  {
+  .c-bQzyIt-igdGcHU-css {
+    grid-template-columns: repeat(auto-fit, minmax(0.5em, 1fr));
+  }
+}
+
 <div>
   <div
     class="c-bQzyIt c-bQzyIt-dvnNgW-gap-3 c-bQzyIt-igdGcHU-css"

@@ -1,6 +1,150 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputField component renders a field in error state 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-jMiJvg {
+    color: var(--colors-tonal800);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+
+  .c-fFGCSj {
+    color: var(--colors-danger);
+    margin-left: var(--space-1);
+  }
+
+  .c-dBUxNn {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    vertical-align: middle;
+  }
+
+  .c-jwkyIg {
+    color: var(--colors-tonal800);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media  {
+  .c-jMiJvg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dtikvq-bXVTjQ-state-error {
+    border: 1px solid var(--colors-danger);
+  }
+
+  .c-dBUxNn-kupcZn-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-jwkyIg-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-jwkyIg-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-jwkyIg-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-dhzjXW-idXOPtz-css {
+    color: var(--colors-danger);
+    align-items: flex-start;
+    margin-top: var(--space-2);
+  }
+
+  .c-dBUxNn-ihYlUBO-css {
+    margin-right: var(--space-2);
+    flex-shrink: 0;
+  }
+
+  .c-jwkyIg-ikkBjHS-css {
+    color: inherit;
+    transform: translateY(var(--space-1));
+  }
+}
+
 <div>
   <form
     aria-label="form"
@@ -71,6 +215,86 @@ exports[`InputField component renders a field in error state 1`] = `
 `;
 
 exports[`InputField component renders a field with a number input 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-jMiJvg {
+    color: var(--colors-tonal800);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-jMiJvg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+}
+
 <div>
   <form
     aria-label="form"
@@ -104,6 +328,86 @@ exports[`InputField component renders a field with a number input 1`] = `
 `;
 
 exports[`InputField component renders a field with a text input 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-jMiJvg {
+    color: var(--colors-tonal800);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-dtikvq {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal800);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-dtikvq:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dtikvq[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-jMiJvg-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-jMiJvg-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dtikvq-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+}
+
 <div>
   <form
     aria-label="form"

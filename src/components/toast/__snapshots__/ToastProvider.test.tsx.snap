@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toast component renders 1`] = `
+@media  {
+  .c-daNhZM {
+    left: calc(50% - 200px);
+    position: fixed;
+    top: var(--space-3);
+    z-index: 2147483647;
+  }
+}
+
 <div>
   <div
     class="c-daNhZM"

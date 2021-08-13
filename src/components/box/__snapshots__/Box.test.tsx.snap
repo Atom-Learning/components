@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Box component renders 1`] = `
+@media  {
+  .c-PJLV-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+}
+
 <div>
   <div
     class="c-PJLV c-PJLV-ikLAKdM-css"

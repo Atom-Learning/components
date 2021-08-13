@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading component renders a heading 1`] = `
+@media  {
+  .c-hswVDG {
+    color: var(--colors-tonal800);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+@media  {
+  .c-hswVDG-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-hswVDG-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-hswVDG-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+}
+
 <div>
   <h2
     class="c-hswVDG c-hswVDG-fOoUdm-size-md"
