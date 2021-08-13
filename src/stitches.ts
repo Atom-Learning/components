@@ -2,105 +2,69 @@ import * as atomTheme from '@atom-learning/theme'
 import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
 
-type CSSDeclaration = { [key: string]: number | string }
-
 export const utils = {
-  bg: (
-    value: Stitches.PropertyValue<'backgroundColor'> | string
-  ): CSSDeclaration => ({
+  bg: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
     backgroundColor: value
   }),
 
-  p: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    padding: value
-  }),
-  pt: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingTop: value
-  }),
-  pr: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingRight: value
-  }),
-  pb: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingBottom: value
-  }),
-  pl: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingLeft: value
-  }),
-  px: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingLeft: value,
-    paddingRight: value
-  }),
-  py: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    paddingTop: value,
-    paddingBottom: value
-  }),
-
-  m: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    margin: value
-  }),
-  mt: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginTop: value
-  }),
-  mr: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginRight: value
-  }),
-  mb: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginBottom: value
-  }),
-  ml: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginLeft: value
-  }),
-  mx: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginLeft: value,
-    marginRight: value
-  }),
-  my: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
-    marginTop: value,
-    marginBottom: value
-  }),
-
-  inset: (
-    value: Stitches.ScaleValue<'space'> | number | string
-  ): CSSDeclaration => ({
+  inset: (value: Stitches.ScaleValue<'space'> | number | string) => ({
     top: value,
     right: value,
     bottom: value,
     left: value
   }),
 
-  size: (
-    value: Stitches.ScaleValue<'size'> | number | string
-  ): CSSDeclaration => ({
+  size: (value: Stitches.ScaleValue<'size'> | number | string) => ({
     height: value,
     width: value
+  }),
+
+  p: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    padding: value
+  }),
+  pt: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingTop: value
+  }),
+  pr: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingRight: value
+  }),
+  pb: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingBottom: value
+  }),
+  pl: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingLeft: value
+  }),
+  px: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingLeft: value,
+    paddingRight: value
+  }),
+  py: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingTop: value,
+    paddingBottom: value
+  }),
+
+  m: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    margin: value
+  }),
+  mt: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginTop: value
+  }),
+  mr: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginRight: value
+  }),
+  mb: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginBottom: value
+  }),
+  ml: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginLeft: value
+  }),
+  mx: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginLeft: value,
+    marginRight: value
+  }),
+  my: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginTop: value,
+    marginBottom: value
   })
 }
 
