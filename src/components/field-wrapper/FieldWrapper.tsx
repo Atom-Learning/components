@@ -45,13 +45,13 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         </Link>
       )}
     </Flex>
-    {children}
-    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
     {description && (
-      <Text size="sm" css={{ color: '$tonal500', mt: '$3', maxWidth: '80ch' }}>
+      <Text size="sm" css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}>
         {description}
       </Text>
     )}
+    {children}
+    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
   </Box>
 )
 
