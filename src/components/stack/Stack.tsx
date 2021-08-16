@@ -17,7 +17,6 @@ import { CSSWrapper } from '~/utilities/css-wrapper'
  *   ...etc.
  * }
  **/
-console.log({ theme })
 const gap = Object.keys(theme.space).reduce(
   (acc, key) => ({
     ...acc,
