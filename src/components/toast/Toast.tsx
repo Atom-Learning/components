@@ -23,6 +23,7 @@ const slideOut = keyframes({
 
 const ToastContainer = styled('div', {
   position: 'absolute',
+  width: '100%',
   variants: {
     visible: {
       true: {
@@ -39,16 +40,20 @@ const ToastContainer = styled('div', {
 const StyledToast = styled('div', {
   alignItems: 'center',
   borderRadius: '$0',
-  boxShadow: '$2',
+  boxShadow: '$1',
   boxSizing: 'border-box',
   color: 'white',
   display: 'flex',
   minHeight: '$5',
   pl: '$4',
-  pr: '$3',
-  py: '$2',
+  position: 'relative',
+  pr: '$6',
+  py: '$4',
   transition: 'background-color 50ms ease-out, transform 150ms ease-out',
-  width: TOAST_WIDTH,
+  width: '100%',
+  '@sm': {
+    width: TOAST_WIDTH
+  },
   variants: {
     status: {
       blank: { bg: '$primary' },
@@ -111,7 +116,13 @@ export const Toast: React.FC<ToastProps> = React.memo(
             <Loader css={{ flex: '0 0 auto', ml: 'auto' }} />
           ) : (
             <ActionIcon
-              css={{ color: 'white', flex: '0 0 auto', ml: 'auto' }}
+              css={{
+                position: 'absolute',
+                top: '$2',
+                right: '$2',
+                color: 'white',
+                '&:hover,&:focus': { color: 'white', opacity: 0.5 }
+              }}
               label="Close alert"
               onClick={() => toast.dismiss(id)}
             >
