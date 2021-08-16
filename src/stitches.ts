@@ -1,3 +1,4 @@
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
@@ -78,7 +79,7 @@ export const media = {
 }
 
 const stitchesConfig = createStitches({
-  theme: atomTheme,
+  theme: atomTheme as Theme,
   utils,
   media
 })

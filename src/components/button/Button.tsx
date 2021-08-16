@@ -49,7 +49,6 @@ export const StyledButton = styled('button', {
   fontFamily: '$body',
   fontWeight: 600,
   justifyContent: 'center',
-  letterSpacing: '0.02em',
   p: 'unset',
   textDecoration: 'none',
   transition: 'all 125ms ease-out',
