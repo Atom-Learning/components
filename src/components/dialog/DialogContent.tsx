@@ -4,7 +4,8 @@ import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
 
-import { Icon } from '../icon'
+import { ActionIcon } from '../action-icon/ActionIcon'
+import { Icon } from '../icon/Icon'
 
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
@@ -27,19 +28,6 @@ const fadeOut = keyframes({
   '100%': { opacity: 0 }
 })
 
-const StyledDialogClose = styled(Close, {
-  all: 'unset',
-  alignItems: 'center',
-  color: '$tonal800',
-  cursor: 'pointer',
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'absolute',
-  right: '0',
-  size: '$4',
-  top: '0'
-})
-
 const StyledDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
@@ -54,12 +42,12 @@ const StyledDialogOverlay = styled(Overlay, {
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
-  borderRadius: '$2',
+  borderRadius: '$1',
   boxShadow: '$3',
   boxSizing: 'border-box',
   left: '50%',
   maxWidth: '90vw',
-  p: '$4',
+  p: '$5',
   position: 'fixed',
   top: '50%',
   transform: contentOnScreen,
@@ -83,19 +71,28 @@ const StyledDialogContent = styled(Content, {
   }
 })
 
-type DialogContentProps = React.ComponentProps<typeof StyledDialogContent>
+type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
+  closeDialogText?: string
+}
 
 export const DialogContent: React.FC<DialogContentProps> = ({
   size = 'sm',
   children,
+  closeDialogText = 'Close dialog',
   ...remainingProps
 }) => (
   <>
     <StyledDialogOverlay />
     <StyledDialogContent size={size} {...remainingProps}>
-      <StyledDialogClose>
+      <ActionIcon
+        as={Close}
+        css={{ position: 'absolute', right: '$4', top: '$4' }}
+        label={closeDialogText}
+        size="lg"
+        theme="neutral"
+      >
         <Icon is={CloseIcon} />
-      </StyledDialogClose>
+      </ActionIcon>
       {children}
     </StyledDialogContent>
   </>

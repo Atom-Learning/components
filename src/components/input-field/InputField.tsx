@@ -2,13 +2,14 @@ import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
 
 type InputFieldProps = InputProps & {
+  description?: string
   label: string
-  required?: boolean
   name: string
+  prompt?: { link: string; label: string }
   validation?: ValidationOptions
 }
 
@@ -16,22 +17,24 @@ export const InputField: React.FC<InputFieldProps> = ({
   css = undefined,
   label,
   name,
-  required = false,
   validation,
+  prompt,
+  description,
   ...remainingProps
 }) => {
-  const { register, errors } = useFormContext()
+  const { register } = useFormContext()
+  const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register
-
-  const error = errors[name]?.message
 
   return (
     <FieldWrapper
-      label={label}
-      required={required}
+      css={css}
+      description={description}
       error={error}
       fieldId={name}
-      css={css}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
     >
       <Input
         id={name}

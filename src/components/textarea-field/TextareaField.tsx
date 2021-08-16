@@ -1,37 +1,40 @@
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
+import type { FieldWrapperProps } from '~/components/field-wrapper'
 import { FieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { Textarea, TextareaProps } from '~/components/textarea'
 
-type TextareaFieldProps = TextareaProps & {
-  label: string
-  required?: boolean
-  name: string
-  validation?: ValidationOptions
-}
+type TextareaFieldProps = TextareaProps &
+  FieldWrapperProps & {
+    name: string
+    validation?: ValidationOptions
+  }
 
 export const TextareaField: React.FC<TextareaFieldProps> = ({
   css = undefined,
   label,
   name,
-  required = false,
   validation,
+  prompt,
+  description,
   ...remainingProps
 }) => {
-  const { register, errors } = useFormContext()
+  const { register } = useFormContext()
+  const { error } = useFieldError(name)
 
   const ref = validation ? register(validation) : register
-  const error = errors[name]
 
   return (
     <FieldWrapper
-      label={label}
-      required={required}
+      css={css}
+      description={description}
       error={error}
       fieldId={name}
-      css={css}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
     >
       <Textarea
         id={name}
