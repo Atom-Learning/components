@@ -1,54 +1,65 @@
 import * as React from 'react'
-import { useState } from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import { InlineFieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
+import { useFieldError, ValidationOptions } from '~/components/form'
 import { CSS } from '~/stitches'
 
 type CheckboxFieldProps = {
   css?: CSS
+  defaultChecked?: boolean
   label: string
+  description?: string
   name: string
   validation?: ValidationOptions
 } & React.ComponentProps<typeof Checkbox>
 
+enum CheckboxValue {
+  ON = 'on',
+  OFF = 'off'
+}
+
 export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   css,
+  defaultChecked = false,
   label,
   name,
   validation,
+  description,
   ...remainingProps
 }) => {
-  const { control, errors } = useFormContext()
-  const [isChecked, setIsChecked] = useState(false)
-
-  const error = errors[name]
+  const { control } = useFormContext()
+  const { error } = useFieldError(name)
 
   return (
-    <InlineFieldWrapper label={label} css={css} error={error}>
-      <Controller
-        onChange={() => setIsChecked((current) => !current)}
-        control={control}
-        name={name}
-        defaultValue={isChecked}
-        rules={validation}
-        render={({ onChange, value, name: innerName }) => (
+    <Controller
+      control={control}
+      name={name}
+      defaultValue={defaultChecked}
+      rules={validation}
+      render={({ onChange, value, name: innerName }) => (
+        <InlineFieldWrapper
+          css={css}
+          description={description}
+          error={error}
+          label={label}
+          required={Boolean(validation?.required)}
+        >
           <Checkbox
+            defaultChecked={defaultChecked}
+            defaultValue={defaultChecked ? CheckboxValue.ON : CheckboxValue.OFF}
+            checked={value}
             name={innerName}
-            onCheckedChange={() => {
-              setIsChecked((current) => {
-                onChange(!current)
-                return !current
-              })
+            onCheckedChange={(event) => {
+              onChange(event.target.value !== CheckboxValue.ON)
             }}
-            value={value}
+            value={value ? CheckboxValue.ON : CheckboxValue.OFF}
             {...remainingProps}
           />
-        )}
-      />
-    </InlineFieldWrapper>
+        </InlineFieldWrapper>
+      )}
+    />
   )
 }
 

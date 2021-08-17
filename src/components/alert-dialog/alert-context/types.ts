@@ -6,5 +6,5 @@ export type alert = {
   description?: string
   onAction: (result: boolean) => void
   confirmActionText: string
-  cancelActionText: string
+  cancelActionText?: string
 }

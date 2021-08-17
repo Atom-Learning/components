@@ -1,6 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownContent component renders 1`] = `
+.sxj1d4e {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-body);
+  font-weight: 400;
+  margin: 0;
+}
+
+.sxj1d4e8bitc--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.5;
+}
+
+.sxj1d4e8bitc--size-md::before {
+  content: '';
+  margin-bottom: -0.3864em;
+  display: table;
+}
+
+.sxj1d4e8bitc--size-md::after {
+  content: '';
+  margin-top: -0.3864em;
+  display: table;
+}
+
+.sxj1d4e-kpzng {
+  color: inherit;
+  max-width: 75ch;
+}
+
+.sxj1d4e-kpzng:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
+}
+
+.sxj1d4e-2obmh {
+  color: inherit;
+}
+
 .sx95fm0 {
   border: 0;
   border-top: 1px solid var(--sx-colors-tonal400);
@@ -9,114 +46,117 @@ exports[`MarkdownContent component renders 1`] = `
   width: 50%;
 }
 
-.sx95fm0-6x0gg {
-  margin-top: var(--sx-space-4);
-  margin-bottom: var(--sx-space-4);
+.sx95fm0-76pw2 {
   width: 100%;
+  margin-top: var(--sx-space-5);
+  margin-bottom: var(--sx-space-5);
 }
 
-.sx2g5mn {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
+.sxh1zwe {
+  color: var(--sx-colors-tonal800);
+  font-family: var(--sx-fonts-display);
   font-weight: 700;
   margin: 0;
 }
 
-.sx2g5mnz2py9--size-lg {
-  font-size: var(--sx-fontSizes-xxl);
-  line-height: 1.35;
+.sxh1zwe9egxm--size-lg {
+  font-size: var(--sx-fontSizes-2xl);
+  line-height: 1.08;
 }
 
-.sx2g5mnz2py9--size-lg::before {
+.sxh1zwe9egxm--size-lg::before {
   content: '';
-  margin-bottom: -0.312em;
+  margin-bottom: -0.1865em;
   display: table;
 }
 
-.sx2g5mnz2py9--size-lg::after {
+.sxh1zwe9egxm--size-lg::after {
   content: '';
-  margin-top: -0.312em;
+  margin-top: -0.1945em;
   display: table;
 }
 
-.sx2g5mn2wj9r--size-xl {
-  font-size: var(--sx-fontSizes-xxxl);
-  line-height: 1.35;
+.sxh1zwebk74v--size-xl {
+  font-size: var(--sx-fontSizes-3xl);
+  line-height: 1.12;
 }
 
-.sx2g5mn2wj9r--size-xl::before {
+.sxh1zwebk74v--size-xl::before {
   content: '';
-  margin-bottom: -0.312em;
+  margin-bottom: -0.206em;
   display: table;
 }
 
-.sx2g5mn2wj9r--size-xl::after {
+.sxh1zwebk74v--size-xl::after {
   content: '';
-  margin-top: -0.312em;
+  margin-top: -0.214em;
   display: table;
 }
 
-.sx2g5mnr3xir--size-md {
+.sxh1zwe9zj0i--size-md {
   font-size: var(--sx-fontSizes-xl);
-  line-height: 1.42;
+  line-height: 1.14;
 }
 
-.sx2g5mnr3xir--size-md::before {
+.sxh1zwe9zj0i--size-md::before {
   content: '';
-  margin-bottom: -0.3506em;
+  margin-bottom: -0.2174em;
   display: table;
 }
 
-.sx2g5mnr3xir--size-md::after {
+.sxh1zwe9zj0i--size-md::after {
   content: '';
-  margin-top: -0.3506em;
+  margin-top: -0.2254em;
   display: table;
 }
 
-.sx2g5mng0h8h--size-sm {
+.sxh1zwegcpf2--size-sm {
   font-size: var(--sx-fontSizes-lg);
-  line-height: 1.52;
+  line-height: 1.14;
 }
 
-.sx2g5mng0h8h--size-sm::before {
+.sxh1zwegcpf2--size-sm::before {
   content: '';
-  margin-bottom: -0.3983em;
+  margin-bottom: -0.2174em;
   display: table;
 }
 
-.sx2g5mng0h8h--size-sm::after {
+.sxh1zwegcpf2--size-sm::after {
   content: '';
-  margin-top: -0.3983em;
+  margin-top: -0.2254em;
   display: table;
 }
 
-.sx2g5mnjqqvr--size-xs {
+.sxh1zwelt963--size-xs {
+  font-family: var(--sx-fonts-body);
+  font-weight: 600;
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sx2g5mnjqqvr--size-xs::before {
+.sxh1zwelt963--size-xs::before {
   content: '';
-  margin-bottom: -0.4489em;
+  margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx2g5mnjqqvr--size-xs::after {
+.sxh1zwelt963--size-xs::after {
   content: '';
-  margin-top: -0.4489em;
+  margin-top: -0.3864em;
   display: table;
 }
 
-.sx2g5mn-gfp0x {
+.sxh1zwe-yo9l7 {
+  color: inherit;
   max-width: 65ch;
 }
 
-.sx2g5mn-gfp0x:not(:first-child) {
-  margin-top: var(--sx-space-4);
+.sxh1zwe-yo9l7:not(:first-child) {
+  margin-top: var(--sx-space-5);
 }
 
-.sx2g5mn-gfp0x:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
+.sxh1zwe-yo9l7:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
 }
 
 .sxkoa5n {
@@ -138,155 +178,68 @@ exports[`MarkdownContent component renders 1`] = `
   max-width: none;
 }
 
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-weight: 400;
-  margin: 0;
-}
-
-.sxfey5ojqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxfey5ojqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxfey5ojqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sxfey5o-z6xef {
-  max-width: 75ch;
-}
-
-.sxfey5o-z6xef:not(:last-child) {
-  margin-bottom: var(--sx-space-4);
-}
-
-.sxu0om4 {
-  font-family: var(--sx-fonts-sans);
+.sxfcjnm {
+  font-family: var(--sx-fonts-body);
   margin: unset;
   padding: unset;
-  padding-left: var(--sx-space-3);
-  list-style: decimal;
 }
 
-.sxu0om4 .sx03kze {
-  padding-left: var(--sx-space-2);
-}
-
-.sxu0om4 .sx03kze::marker {
-  font-weight: bold;
-}
-
-.sxu0om4 .sx03kze:not(:last-child) {
+.sxfcjnm > .sx03kze:not(:last-child) {
   margin-bottom: var(--sx-space-2);
 }
 
-.sxu0om4 .sx03kze:last-child {
+.sxfcjnm > .sx03kze:last-child {
   margin-bottom: 0;
 }
 
-.sxu0om45dbgn--size-md {
+.sxfcjnmq7qe9--size-md {
   font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
-.sxk9hvt {
-  font-family: var(--sx-fonts-sans);
-  margin: unset;
-  padding: unset;
+.sxfcjnm4kvou--as-ul {
   padding-left: var(--sx-space-3);
 }
 
-.sxk9hvt .sx03kze {
+.sxfcjnm4kvou--as-ul > .sx03kze {
   padding-left: var(--sx-space-2);
 }
 
-.sxk9hvt .sx03kze::marker {
+.sxfcjnm4kvou--as-ul > .sx03kze::marker {
   content: "•";
   font-weight: bold;
 }
 
-.sxk9hvt .sx03kze:not(:last-child) {
-  margin-bottom: var(--sx-space-2);
+.sxfcjnm0fmz6--as-ol {
+  padding-left: var(--sx-space-4);
+  list-style: decimal;
 }
 
-.sxk9hvt .sx03kze:last-child {
-  margin-bottom: 0;
+.sxfcjnm0fmz6--as-ol > .sx03kze {
+  padding-left: var(--sx-space-1);
 }
 
-.sxk9hvt5dbgn--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+.sxfcjnm0fmz6--as-ol > .sx03kze::marker {
+  font-size: var(--sx-fontSizes-sm);
+  font-weight: bold;
 }
 
-.sxfxyev {
-  background: unset;
-  border: unset;
-  padding: unset;
-  color: var(--sx-colors-primary500);
-  cursor: pointer;
-  font-family: var(--sx-fonts-sans);
-  text-decoration: none;
+.sxfcjnm-huhqq p:before,
+.sxfcjnm-huhqq p:after {
+  display: none;
 }
 
-.sxfxyev:focus,
-.sxfxyev:hover {
-  color: var(--sx-colors-primary900);
-  text-decoration: underline;
+.sxfcjnm-huhqq {
+  max-width: 75ch;
 }
 
-.sxfxyev:active {
-  color: var(--sx-colors-primary500);
+.sxfcjnm-huhqq:not(:last-child) {
+  margin-bottom: var(--sx-space-5);
 }
 
-.sxfey5o > .sxfxyev,
-.sx2g5mn > .sxfxyev,
-.sx03kze > .sxfxyev {
-  font-size: 100%;
-  line-height: 1;
-}
-
-.sxfey5o > .sxfxyev::before,
-.sxfey5o > .sxfxyev::after,
-.sx2g5mn > .sxfxyev::before,
-.sx2g5mn > .sxfxyev::after,
-.sx03kze > .sxfxyev::before,
-.sx03kze > .sxfxyev::after {
-  content: none;
-}
-
-.sxfxyevjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxfxyevjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxfxyevjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx03kze-pwzbu strong {
-  font-weight: 600;
-}
-
-.sx03kze-pwzbu em {
-  font-style: italic;
+.sxfcjnm-jvdf5 p:before,
+.sxfcjnm-jvdf5 p:after {
+  display: none;
 }
 
 .sxoyulj {
@@ -300,155 +253,219 @@ exports[`MarkdownContent component renders 1`] = `
   font-size: var(--sx-fontSizes-sm);
 }
 
-.sx1asw5 {
-  display: inline-block;
-  background: var(--sx-colors-tonal200);
-  padding: var(--sx-space-0) var(--sx-space-1);
-  border-radius: var(--sx-radii-0);
-  font-family: var(--sx-fonts-mono);
-  font-size: 85%;
+.sxiwbex {
+  font-style: italic;
 }
 
-.sxjvdf5 p:before,
-.sxjvdf5 p:after {
-  display: none;
+.sxbc4si {
+  background: var(--sx-colors-tonal100);
+  border-radius: var(--sx-radii-0);
+  display: inline-block;
+  font-family: var(--sx-fonts-mono);
+  font-size: 85%;
+  padding: var(--sx-space-0) var(--sx-space-1);
+}
+
+.sxlc3or {
+  background: unset;
+  border: unset;
+  padding: unset;
+  color: var(--sx-colors-primary);
+  cursor: pointer;
+  font-family: var(--sx-fonts-body);
+  text-decoration: none;
+}
+
+.sxlc3or:focus,
+.sxlc3or:hover {
+  color: var(--sx-colors-tertiary);
+  text-decoration: underline;
+}
+
+.sxlc3or:active {
+  color: var(--sx-colors-primary);
+}
+
+.sxj1d4e > .sxlc3or,
+.sxh1zwe > .sxlc3or,
+.sx03kze > .sxlc3or {
+  font-size: 100%;
+  line-height: 1;
+}
+
+.sxj1d4e > .sxlc3or::before,
+.sxj1d4e > .sxlc3or::after,
+.sxh1zwe > .sxlc3or::before,
+.sxh1zwe > .sxlc3or::after,
+.sx03kze > .sxlc3or::before,
+.sx03kze > .sxlc3or::after {
+  content: none;
+}
+
+.sxlc3or8bitc--size-md {
+  font-size: var(--sx-fontSizes-md);
+  line-height: 1.5;
+}
+
+.sxlc3or8bitc--size-md::before {
+  content: '';
+  margin-bottom: -0.3864em;
+  display: table;
+}
+
+.sxlc3or8bitc--size-md::after {
+  content: '';
+  margin-top: -0.3864em;
+  display: table;
+}
+
+.sx4d3ki {
+  font-weight: 600;
 }
 
 <div>
   <div
-    class="sx03kze sx03kze-pwzbu"
+    class="sx03kze"
   >
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Headings
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h1
-      class="sx2g5mn sx2g5mn2wj9r--size-xl sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwebk74v--size-xl sxh1zwe-yo9l7"
     >
       h1 Heading
     </h1>
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       h2 Heading
     </h2>
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       h3 Heading
     </h3>
     <h4
-      class="sx2g5mn sx2g5mng0h8h--size-sm sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwegcpf2--size-sm sxh1zwe-yo9l7"
     >
       h4 Heading
     </h4>
     <h5
-      class="sx2g5mn sx2g5mnjqqvr--size-xs sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwelt963--size-xs sxh1zwe-yo9l7"
     >
       h5 Heading
     </h5>
     <h6
-      class="sx2g5mn sx2g5mnjqqvr--size-xs sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwelt963--size-xs sxh1zwe-yo9l7"
     >
       h6 Heading
     </h6>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Emphasis
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
-      <strong>
+      <strong
+        class="sx4d3ki"
+      >
         This is bold text
       </strong>
     </p>
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
-      <em>
+      <em
+        class="sxiwbex"
+      >
         This is italic text
       </em>
     </p>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Blockquotes
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Lists
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       Unordered
     </h3>
     <ul
-      class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-huhqq"
     >
       <li
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Create a list by starting a line with 
           <code
-            class="sx03kze sx1asw5"
+            class="sx03kze sxbc4si"
           >
             +
           </code>
           , 
           <code
-            class="sx03kze sx1asw5"
+            class="sx03kze sxbc4si"
           >
             -
           </code>
           , or 
           <code
-            class="sx03kze sx1asw5"
+            class="sx03kze sxbc4si"
           >
             *
           </code>
@@ -458,55 +475,55 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+          class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
         >
           <li
             class="sx03kze"
           >
             <p
-              class="sxfey5o sxfey5ojqqvr--size-md"
+              class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
             >
               Marker character change forces new list start:
             </p>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
             >
               <li
                 class="sx03kze"
               >
                 <p
-                  class="sxfey5o sxfey5ojqqvr--size-md"
+                  class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
                 >
                   Ac tristique libero volutpat at
                 </p>
               </li>
             </ul>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
             >
               <li
                 class="sx03kze"
               >
                 <p
-                  class="sxfey5o sxfey5ojqqvr--size-md"
+                  class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
               </li>
             </ul>
             <ul
-              class="sxk9hvt sxk9hvt5dbgn--size-md sxjvdf5"
+              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
             >
               <li
                 class="sx03kze"
               >
                 <p
-                  class="sxfey5o sxfey5ojqqvr--size-md"
+                  class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -519,25 +536,25 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Very easy!
         </p>
       </li>
     </ul>
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       Ordered
     </h3>
     <ol
-      class="sxu0om4 sxu0om45dbgn--size-md sxjvdf5"
+      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm0fmz6--as-ol sxfcjnm-huhqq"
     >
       <li
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -546,7 +563,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Consectetur adipiscing elit
         </p>
@@ -555,7 +572,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           Integer molestie lorem at massa
         </p>
@@ -564,7 +581,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           You can use sequential numbers...
         </p>
@@ -573,11 +590,11 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxfey5o sxfey5ojqqvr--size-md"
+          class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-2obmh"
         >
           ...or keep all the numbers as 
           <code
-            class="sx03kze sx1asw5"
+            class="sx03kze sxbc4si"
           >
             1.
           </code>
@@ -585,33 +602,33 @@ exports[`MarkdownContent component renders 1`] = `
       </li>
     </ol>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Code
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       Inline code
     </h3>
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
       This is inline 
       <code
-        class="sx03kze sx1asw5"
+        class="sx03kze sxbc4si"
       >
         code
       </code>
     </p>
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       Indented code
     </h3>
@@ -624,7 +641,7 @@ line 2 of code
 line 3 of code
     </pre>
     <h3
-      class="sx2g5mn sx2g5mnr3xir--size-md sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9zj0i--size-md sxh1zwe-yo9l7"
     >
       Block code "fences"
     </h3>
@@ -634,31 +651,31 @@ line 3 of code
       Sample text here...
     </pre>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Links
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
       <a
-        class="sxfxyev sxfxyevjqqvr--size-md"
+        class="sxlc3or sxlc3or8bitc--size-md"
         href="http://dev.nodeca.com"
       >
         link text
       </a>
     </p>
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
       <a
-        class="sxfxyev sxfxyevjqqvr--size-md"
+        class="sxlc3or sxlc3or8bitc--size-md"
         href="http://nodeca.github.io/pica/demo/"
         title="title text!"
       >
@@ -666,18 +683,18 @@ line 3 of code
       </a>
     </p>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <h2
-      class="sx2g5mn sx2g5mnz2py9--size-lg sx2g5mn-gfp0x"
+      class="sxh1zwe sxh1zwe9egxm--size-lg sxh1zwe-yo9l7"
     >
       Images
     </h2>
     <hr
-      class="sx95fm0 sx95fm0-6x0gg"
+      class="sx95fm0 sx95fm0-76pw2"
     />
     <p
-      class="sxfey5o sxfey5ojqqvr--size-md sxfey5o-z6xef"
+      class="sxj1d4e sxj1d4e8bitc--size-md sxj1d4e-kpzng"
     >
       <img
         alt="Minion"

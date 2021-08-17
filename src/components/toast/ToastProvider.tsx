@@ -11,10 +11,16 @@ export { default as toast } from 'react-hot-toast'
 const TOAST_Z_INDEX = 2147483647
 
 const Container = styled('div', {
-  left: `calc(50% - ${TOAST_WIDTH / 2}px)`,
+  left: '$2',
   position: 'fixed',
-  top: '$3',
-  zIndex: TOAST_Z_INDEX
+  top: '$2',
+  right: '$2',
+  zIndex: TOAST_Z_INDEX,
+  '@sm': {
+    top: '$3',
+    right: 'auto',
+    left: `calc(50% - ${TOAST_WIDTH / 2}px)`
+  }
 })
 
 export const ToastProvider: React.FC = ({ children }) => {
