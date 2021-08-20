@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Textarea component renders a textarea 1`] = `
-.sx5661z {
+.sxym69s {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -9,7 +9,7 @@ exports[`Textarea component renders a textarea 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
+  color: var(--sx-colors-tonal500);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -23,18 +23,23 @@ exports[`Textarea component renders a textarea 1`] = `
   width: 100%;
 }
 
-.sx5661z:focus {
+.sxym69s:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx5661z[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
+.sxym69s[disabled] {
+  background-color: var(--sx-colors-tonal50);
+  color: var(--sx-colors-tonal300);
   cursor: not-allowed;
 }
 
-.sx5661z-6obnf {
+.sxym69s::placeholder {
+  color: var(--sx-colors-tonal200);
+  opacity: 1;
+}
+
+.sxym69s-6obnf {
   margin: auto;
   height: 100px;
   width: 100px;
@@ -42,7 +47,7 @@ exports[`Textarea component renders a textarea 1`] = `
 
 <div>
   <textarea
-    class="sx5661z sx5661z-6obnf"
+    class="sxym69s sxym69s-6obnf"
     placeholder="DESCRIPTION"
   />
 </div>

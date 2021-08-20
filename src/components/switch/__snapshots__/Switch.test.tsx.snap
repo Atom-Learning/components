@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Switch component renders a Switch in "on" state 1`] = `
-.sx1jh2a {
+.sxtzpi0 {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--sx-colors-tonal300);
+  background-color: var(--sx-colors-tonal200);
   border: none;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
@@ -16,16 +16,16 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
   width: var(--sx-sizes-4);
 }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
+.sxtzpi0:hover {
+  background-color: var(--sx-colors-tonal300);
 }
 
-.sx1jh2a[data-state="checked"] {
+.sxtzpi0[data-state="checked"] {
   background-color: var(--sx-colors-primary);
 }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
+.sxtzpi0[data-state="checked"]:hover {
+  background-color: var(--sx-colors-primaryMid);
 }
 
 .sxxf22o {
@@ -51,7 +51,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
   />
   <button
     aria-checked="true"
-    class="sx1jh2a"
+    class="sxtzpi0"
     data-state="checked"
     role="switch"
     type="button"
@@ -66,10 +66,10 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 `;
 
 exports[`Switch component renders a disabled switch 1`] = `
-.sx1jh2a {
+.sxtzpi0 {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--sx-colors-tonal300);
+  background-color: var(--sx-colors-tonal200);
   border: none;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
@@ -81,16 +81,16 @@ exports[`Switch component renders a disabled switch 1`] = `
   width: var(--sx-sizes-4);
 }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
+.sxtzpi0:hover {
+  background-color: var(--sx-colors-tonal300);
 }
 
-.sx1jh2a[data-state="checked"] {
+.sxtzpi0[data-state="checked"] {
   background-color: var(--sx-colors-primary);
 }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
+.sxtzpi0[data-state="checked"]:hover {
+  background-color: var(--sx-colors-primaryMid);
 }
 
 .sxxf22o {
@@ -116,7 +116,7 @@ exports[`Switch component renders a disabled switch 1`] = `
   />
   <button
     aria-checked="false"
-    class="sx1jh2a"
+    class="sxtzpi0"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -134,10 +134,10 @@ exports[`Switch component renders a disabled switch 1`] = `
 `;
 
 exports[`Switch component renders a switch 1`] = `
-.sx1jh2a {
+.sxtzpi0 {
   -webkit-appearance: none;
   appearance: none;
-  background-color: var(--sx-colors-tonal300);
+  background-color: var(--sx-colors-tonal200);
   border: none;
   border-radius: var(--sx-radii-round);
   cursor: pointer;
@@ -149,16 +149,16 @@ exports[`Switch component renders a switch 1`] = `
   width: var(--sx-sizes-4);
 }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
+.sxtzpi0:hover {
+  background-color: var(--sx-colors-tonal300);
 }
 
-.sx1jh2a[data-state="checked"] {
+.sxtzpi0[data-state="checked"] {
   background-color: var(--sx-colors-primary);
 }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
+.sxtzpi0[data-state="checked"]:hover {
+  background-color: var(--sx-colors-primaryMid);
 }
 
 .sxxf22o {
@@ -183,7 +183,7 @@ exports[`Switch component renders a switch 1`] = `
   />
   <button
     aria-checked="false"
-    class="sx1jh2a"
+    class="sxtzpi0"
     data-state="unchecked"
     role="switch"
     type="button"

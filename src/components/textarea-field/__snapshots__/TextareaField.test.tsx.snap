@@ -11,32 +11,32 @@ exports[`TextareaField component renders 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
+.sxbagj1 {
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   margin: 0;
 }
 
-.sx5eeij8bitc--size-md {
+.sxbagj18bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sx5eeij8bitc--size-md::before {
+.sxbagj18bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx5eeij8bitc--size-md::after {
+.sxbagj18bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sx5661z {
+.sxym69s {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -44,7 +44,7 @@ exports[`TextareaField component renders 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
+  color: var(--sx-colors-tonal500);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -58,15 +58,20 @@ exports[`TextareaField component renders 1`] = `
   width: 100%;
 }
 
-.sx5661z:focus {
+.sxym69s:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx5661z[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
+.sxym69s[disabled] {
+  background-color: var(--sx-colors-tonal50);
+  color: var(--sx-colors-tonal300);
   cursor: not-allowed;
+}
+
+.sxym69s::placeholder {
+  color: var(--sx-colors-tonal200);
+  opacity: 1;
 }
 
 <div>
@@ -81,12 +86,12 @@ exports[`TextareaField component renders 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="sxbagj1 sxbagj18bitc--size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sx5661z"
+        class="sxym69s"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -107,32 +112,32 @@ exports[`TextareaField component renders with an error 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
+.sxbagj1 {
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   margin: 0;
 }
 
-.sx5eeij8bitc--size-md {
+.sxbagj18bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sx5eeij8bitc--size-md::before {
+.sxbagj18bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx5eeij8bitc--size-md::after {
+.sxbagj18bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sx5661z {
+.sxym69s {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -140,7 +145,7 @@ exports[`TextareaField component renders with an error 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
+  color: var(--sx-colors-tonal500);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -154,15 +159,20 @@ exports[`TextareaField component renders with an error 1`] = `
   width: 100%;
 }
 
-.sx5661z:focus {
+.sxym69s:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx5661z[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
+.sxym69s[disabled] {
+  background-color: var(--sx-colors-tonal50);
+  color: var(--sx-colors-tonal300);
   cursor: not-allowed;
+}
+
+.sxym69s::placeholder {
+  color: var(--sx-colors-tonal200);
+  opacity: 1;
 }
 
 <div>
@@ -177,12 +187,12 @@ exports[`TextareaField component renders with an error 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="sxbagj1 sxbagj18bitc--size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sx5661z"
+        class="sxym69s"
         error="Error Message"
         id="description"
         name="description"

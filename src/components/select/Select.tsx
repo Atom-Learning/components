@@ -7,11 +7,11 @@ import { Override } from '~/utilities/types'
 const StyledSelect = styled('select', {
   appearance: 'none',
   backgroundColor: 'white',
-  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal300.value, 'chevron'),
   backgroundRepeat: 'no-repeat, repeat',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal300',
   borderRadius: '$0',
-  color: '$tonal800',
+  color: '$tonal500',
   display: 'block',
   fontFamily: '$body',
   fontWeight: 400,
@@ -29,8 +29,8 @@ const StyledSelect = styled('select', {
     display: 'none'
   },
   '&[disabled], > option[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal600',
+    backgroundColor: '$tonal50',
+    color: '$tonal300',
     cursor: 'not-allowed'
   },
   variants: {

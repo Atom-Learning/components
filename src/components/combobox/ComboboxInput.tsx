@@ -7,14 +7,14 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   boxShadow: 'none', // prevent default iOS default styling
   fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
-  backgroundImage: encodeBackgroundIcon(theme.colors.tonal500.value, 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.tonal300.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '20px auto, 100%',
-  border: '1px solid $tonal400',
+  border: '1px solid $tonal300',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal800',
+  color: '$tonal500',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
@@ -28,8 +28,8 @@ export const ComboboxInput = styled(BaseComboboxInput, {
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal300',
-    color: '$tonal700',
+    backgroundColor: '$tonal100',
+    color: '$tonal400',
     cursor: 'not-allowed'
   },
   variants: {

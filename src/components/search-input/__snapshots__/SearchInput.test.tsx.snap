@@ -5,23 +5,23 @@ exports[`SearchInput component renders 1`] = `
   position: relative;
 }
 
-.sxtros6 {
+.sxakl60 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 2;
   vertical-align: middle;
 }
 
-.sxtros6mbqqh--size-md {
+.sxakl60zozsa--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
+  stroke-width: 2;
 }
 
-.sxtros6-rsz6x {
-  color: var(--sx-colors-tonal500);
+.sxakl60-31xqk {
+  color: var(--sx-colors-tonal300);
   pointer-events: none;
   position: absolute;
   height: 20px;
@@ -30,14 +30,14 @@ exports[`SearchInput component renders 1`] = `
   left: 10px;
 }
 
-.sx1s1jh {
+.sxtvycl {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
+  color: var(--sx-colors-tonal500);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -47,23 +47,29 @@ exports[`SearchInput component renders 1`] = `
   width: 100%;
 }
 
-.sx1s1jh:focus {
+.sxtvycl:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
+.sxtvycl[disabled] {
+  background-color: var(--sx-colors-tonal50);
+  border-color: var(--sx-colors-tonal300);
+  color: var(--sx-colors-tonal300);
   cursor: not-allowed;
 }
 
-.sx1s1jhpw03g--size-md {
+.sxtvycl::placeholder {
+  color: var(--sx-colors-tonal200);
+  opacity: 1;
+}
+
+.sxtvyclpw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
 
-.sx1s1jh-qayb7 {
+.sxtvycl-qayb7 {
   padding-left: var(--sx-space-6);
 }
 
@@ -73,7 +79,7 @@ exports[`SearchInput component renders 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="sxtros6 sxtros6mbqqh--size-md sxtros6-rsz6x"
+      class="sxakl60 sxakl60zozsa--size-md sxakl60-31xqk"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -87,7 +93,7 @@ exports[`SearchInput component renders 1`] = `
       />
     </svg>
     <input
-      class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jh-qayb7"
+      class="sxtvycl sxtvyclpw03g--size-md sxtvycl-qayb7"
       type="search"
     />
   </div>

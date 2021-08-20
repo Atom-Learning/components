@@ -46,7 +46,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
       )}
     </Flex>
     {description && (
-      <Text size="sm" css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}>
+      <Text size="sm" css={{ color: '$tonal300', mb: '$3', maxWidth: '80ch' }}>
         {description}
       </Text>
     )}

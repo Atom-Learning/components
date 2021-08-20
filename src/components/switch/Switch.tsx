@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 
 const StyledSwitch = styled(RadixSwitch.Root, {
   appearance: 'none',
-  backgroundColor: '$tonal300',
+  backgroundColor: '$tonal200',
   border: 'none',
   borderRadius: '$round',
   cursor: 'pointer',
@@ -16,13 +16,13 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   transition: 'background-color 100ms ease',
   width: '$4',
   '&:hover': {
-    backgroundColor: '$tonal400'
+    backgroundColor: '$tonal300'
   },
   '&[data-state="checked"]': {
     backgroundColor: '$primary'
   },
   '&[data-state="checked"]:hover': {
-    backgroundColor: '$tertiary'
+    backgroundColor: '$primaryMid'
   }
 })
 

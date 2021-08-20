@@ -8,7 +8,11 @@ import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
-const getButtonOutlineVariant = (base: string, interact: string) => ({
+const getButtonOutlineVariant = (
+  base: string,
+  interact: string,
+  active: string
+) => ({
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
@@ -19,13 +23,14 @@ const getButtonOutlineVariant = (base: string, interact: string) => ({
     bg: 'white'
   },
   '&:not([disabled]):active': {
-    color: base
+    color: active
   }
 })
 
 const getButtonSolidVariant = (
   base: string,
   interact: string,
+  active: string,
   text = 'white'
 ) => ({
   bg: base,
@@ -35,7 +40,7 @@ const getButtonSolidVariant = (
     color: text
   },
   '&:not([disabled]):active': {
-    bg: base
+    bg: active
   }
 })
 
@@ -52,13 +57,13 @@ export const StyledButton = styled('button', {
   letterSpacing: '0.02em',
   p: 'unset',
   textDecoration: 'none',
-  transition: 'all 125ms ease-out',
+  transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
-    bg: '$tonal100',
-    borderColor: '$tonal100',
-    color: '$tonal600',
+    bg: '$tonal50',
+    borderColor: '$tonal50',
+    color: '$tonal300',
     cursor: 'not-allowed'
   },
   variants: {
@@ -109,27 +114,32 @@ export const StyledButton = styled('button', {
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getButtonSolidVariant('$primary', '$tertiary')
+      css: getButtonSolidVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'success',
       appearance: 'solid',
-      css: getButtonSolidVariant('$success', '$successDark')
+      css: getButtonSolidVariant('$success', '$successMid', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getButtonSolidVariant('$warning', '$warningDark', '$tonal900')
+      css: getButtonSolidVariant(
+        '$warning',
+        '$warningMid',
+        '$warningDark',
+        '$tonal500'
+      )
     },
     {
       theme: 'danger',
       appearance: 'solid',
-      css: getButtonSolidVariant('$danger', '$dangerDark')
+      css: getButtonSolidVariant('$danger', '$dangerMid', '$dangerDark')
     },
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getButtonOutlineVariant('$primary', '$tertiary')
+      css: getButtonOutlineVariant('$primary', '$primaryMid', '$primaryDark')
     }
   ]
 })
@@ -153,13 +163,14 @@ const WithLoader = ({ isLoading, children }) => (
 )
 
 const getChildren = (children, size) =>
-  React.Children.map(children, (child: any, i) => {
+  React.Children.map(children, (child, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
         css: {
-          [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3'
-        },
-        size: size === 'lg' ? 'md' : 'sm'
+          [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3',
+          size: size === 'md' ? 20 : 16,
+          ...(child.props.css ? child.props.css : {})
+        }
       })
     }
     return child

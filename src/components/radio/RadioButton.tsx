@@ -8,7 +8,7 @@ const StyledRadioButton = styled(RadioGroup.Item, {
   alignItems: 'center',
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: '1px solid $tonal500',
+  border: '1px solid $tonal300',
   borderRadius: '$round',
   cursor: 'pointer',
   display: 'flex',
@@ -27,8 +27,8 @@ const StyledRadioButton = styled(RadioGroup.Item, {
     borderColor: '$primary'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal200',
-    borderColor: '$tonal400',
+    backgroundColor: '$tonal100',
+    borderColor: '$tonal300',
     cursor: 'not-allowed'
   }
 })

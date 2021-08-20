@@ -11,40 +11,40 @@ exports[`SelectField component renders 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
+.sxbagj1 {
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   margin: 0;
 }
 
-.sx5eeij8bitc--size-md {
+.sxbagj18bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sx5eeij8bitc--size-md::before {
+.sxbagj18bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx5eeij8bitc--size-md::after {
+.sxbagj18bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxq32pr {
+.sxe93ip {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
   background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
   background-repeat: no-repeat, repeat;
-  border: 1px solid var(--sx-colors-tonal400);
+  border: 1px solid var(--sx-colors-tonal300);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal800);
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 400;
@@ -53,27 +53,27 @@ exports[`SelectField component renders 1`] = `
   width: 100%;
 }
 
-.sxq32pr:hover {
+.sxe93ip:hover {
   cursor: pointer;
 }
 
-.sxq32pr:focus {
+.sxe93ip:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxq32pr::-ms-expand {
+.sxe93ip::-ms-expand {
   display: none;
 }
 
-.sxq32pr[disabled],
-.sxq32pr > option[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
+.sxe93ip[disabled],
+.sxe93ip > option[disabled] {
+  background-color: var(--sx-colors-tonal50);
+  color: var(--sx-colors-tonal300);
   cursor: not-allowed;
 }
 
-.sxq32prw1wwt--size-md {
+.sxe93ipw1wwt--size-md {
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-size: 20px auto, 100%;
   font-size: var(--sx-fontSizes-md);
@@ -94,14 +94,14 @@ exports[`SelectField component renders 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="sxbagj1 sxbagj18bitc--size-md"
           for="example"
         >
           Example options
         </label>
       </div>
       <select
-        class="sxq32pr sxq32prw1wwt--size-md"
+        class="sxe93ip sxe93ipw1wwt--size-md"
         id="example"
         name="example"
       >

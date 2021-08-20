@@ -9,7 +9,7 @@ import { Icon } from '../icon'
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: '1px solid $colors$tonal500',
+  border: '1px solid $colors$tonal300',
   borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',
@@ -31,8 +31,8 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal200',
-    borderColor: '$tonal400',
+    backgroundColor: '$tonal100',
+    borderColor: '$tonal300',
     cursor: 'not-allowed'
   },
   '&:focus-within': {
@@ -45,8 +45,12 @@ type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 const CheckboxIcon = () => (
   <Icon
     is={Ok}
-    size="xs"
-    css={{ pointerEvents: 'none', position: 'absolute', strokeWidth: '3' }}
+    css={{
+      size: '$space$3',
+      pointerEvents: 'none',
+      position: 'absolute',
+      strokeWidth: '3'
+    }}
   />
 )
 

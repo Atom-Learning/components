@@ -51,7 +51,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
       {description && (
         <Text
           size="sm"
-          css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}
+          css={{ color: '$tonal300', mb: '$3', maxWidth: '80ch' }}
         >
           {description}
         </Text>
