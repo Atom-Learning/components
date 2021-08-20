@@ -30,17 +30,21 @@ You can use these in `styled()` or `css` by prefixing the key with `@`, e.g. `@r
 
 ```tsx
 const Section = styled('section', {
+  margin: '$1',
   padding: '$2',
-  '@md': { padding: '$3' }
+  '@md': {
+    margin: '$2',
+    padding: '$3'
+  }
 })
 ```
 
 ```tsx
 <Text
   css={{
-    color: '$tonal800',
+    color: '$tonal300',
     '@md': { color: '$primary' },
-    '@lg': { color: '$tertiary' }
+    '@lg': { color: '$primaryDark' }
   }}
 >
   Hello World
