@@ -2475,10 +2475,10 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/react@1.0.0-canary.12":
-  version "1.0.0-canary.12"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.0.0-canary.12.tgz#378d871c4b4c48c06d1d4a720f8a0e0970719005"
-  integrity sha512-s3vT70pVyxrLiTwfA0wxZMg7Gawigj6hNEXIGkWW9ReQMkbWFAdLQUYVGA94ARVsczpQaWKWUa2M9A8JzSDigg==
+"@stitches/react@^1.0.0-canary.15":
+  version "1.0.0-canary.15"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.0.0-canary.15.tgz#c09e6168ecf75678d8812c56a6ead636f54f226a"
+  integrity sha512-cNFBWq7Y+qCORs06v1vULcGJgs+7zNWyH95mUVndzePe6tskPwZMpAQbUH/xyRAdxfP80gGhPVhkfZTM0f15eg==
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"

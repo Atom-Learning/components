@@ -46,9 +46,10 @@ exports[`MarkdownContent component renders 1`] = `
     margin-bottom: 0;
   }
 
-  .c-biYWST {
+  .c-bUqGCm {
     background-color: var(--colors-tonal100);
     border-radius: var(--radii-0);
+    color: var(--colors-tonal600);
     display: inline-block;
     font-family: var(--fonts-mono);
     font-size: 85%;
@@ -459,19 +460,19 @@ exports[`MarkdownContent component renders 1`] = `
         >
           Create a list by starting a line with 
           <code
-            class="c-PJLV c-biYWST"
+            class="c-PJLV c-bUqGCm"
           >
             +
           </code>
           , 
           <code
-            class="c-PJLV c-biYWST"
+            class="c-PJLV c-bUqGCm"
           >
             -
           </code>
           , or 
           <code
-            class="c-PJLV c-biYWST"
+            class="c-PJLV c-bUqGCm"
           >
             *
           </code>
@@ -600,7 +601,7 @@ exports[`MarkdownContent component renders 1`] = `
         >
           ...or keep all the numbers as 
           <code
-            class="c-PJLV c-biYWST"
+            class="c-PJLV c-bUqGCm"
           >
             1.
           </code>
@@ -628,7 +629,7 @@ exports[`MarkdownContent component renders 1`] = `
     >
       This is inline 
       <code
-        class="c-PJLV c-biYWST"
+        class="c-PJLV c-bUqGCm"
       >
         code
       </code>
