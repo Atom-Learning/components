@@ -4,8 +4,10 @@ import { useFormContext } from 'react-hook-form'
 import { FieldWrapper } from '~/components/field-wrapper'
 import { useFieldError, ValidationOptions } from '~/components/form'
 import { Input, InputProps } from '~/components/input'
+import type { CSS } from '~/stitches'
 
 type InputFieldProps = InputProps & {
+  css?: CSS
   description?: string
   label: string
   name: string
@@ -14,7 +16,7 @@ type InputFieldProps = InputProps & {
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
-  css = undefined,
+  css,
   label,
   name,
   validation,
