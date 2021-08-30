@@ -44,7 +44,7 @@ describe('MarkdownContent component', () => {
 
             if (name === 'someDirective') {
               return (
-                <Box role="main" {...attributes}>
+                <Box as="span" role="main" {...attributes}>
                   {children.map(handleNode)}
                 </Box>
               )
