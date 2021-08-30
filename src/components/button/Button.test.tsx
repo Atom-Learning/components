@@ -156,7 +156,6 @@ describe(`Button component`, () => {
         </Button>
       )
 
-      // expect(await screen.queryByText('BUTTON')).not.toBeVisible()
       expect(await screen.getByRole('alert')).toBeInTheDocument()
 
       expect(container).toMatchSnapshot()

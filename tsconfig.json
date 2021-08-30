@@ -18,5 +18,5 @@
     "declaration": true // output d.ts files
   },
   "include": ["./src/", "types/global.d.ts"],
-  "exclude": ["./src/**/*.test.*", "./test", "./node_modules", "./sandbox"]
+  "exclude": ["./src/**/*.test.*"]
 }
