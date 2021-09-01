@@ -37,7 +37,7 @@ exports[`Combobox component renders 1`] = `
   }
 
   .c-NYaTj {
-    background-color: white;
+    background: white;
     border: solid 1px var(--colors-tonal200);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-1);
@@ -66,7 +66,7 @@ exports[`Combobox component renders 1`] = `
 
   .c-bwpfZT:hover,
   .c-bwpfZT[aria-selected="true"] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-radius: var(--radii-0);
   }
 

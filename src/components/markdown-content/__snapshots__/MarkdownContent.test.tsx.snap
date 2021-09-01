@@ -47,7 +47,7 @@ exports[`MarkdownContent component renders 1`] = `
   }
 
   .c-bUqGCm {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-radius: var(--radii-0);
     color: var(--colors-tonal600);
     display: inline-block;
@@ -57,7 +57,7 @@ exports[`MarkdownContent component renders 1`] = `
   }
 
   .c-lczWPq {
-    background-color: var(--colors-tonal200);
+    background: var(--colors-tonal200);
     padding: var(--space-3);
     margin-top: var(--space-4);
     margin-bottom: var(--space-4);
@@ -68,7 +68,7 @@ exports[`MarkdownContent component renders 1`] = `
   }
 
   .c-fbdNsg {
-    background-color: unset;
+    background: unset;
     border: unset;
     padding: unset;
     color: var(--colors-primary);

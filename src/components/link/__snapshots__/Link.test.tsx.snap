@@ -3,7 +3,7 @@
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
   .c-fbdNsg {
-    background-color: unset;
+    background: unset;
     border: unset;
     padding: unset;
     color: var(--colors-primary);
@@ -148,7 +148,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 exports[`Link component renders an anchor 1`] = `
 @media  {
   .c-fbdNsg {
-    background-color: unset;
+    background: unset;
     border: unset;
     padding: unset;
     color: var(--colors-primary);
@@ -216,7 +216,7 @@ exports[`Link component renders an anchor 1`] = `
 exports[`Link component renders an large anchor 1`] = `
 @media  {
   .c-fbdNsg {
-    background-color: unset;
+    background: unset;
     border: unset;
     padding: unset;
     color: var(--colors-primary);

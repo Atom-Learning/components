@@ -10,7 +10,7 @@ exports[`Table component renders 1`] = `
   }
 
   .c-ibRpnJ {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -42,7 +42,7 @@ exports[`Table component renders 1`] = `
   }
 
   tr:nth-child(even) .c-huaDro {
-    background-color: var(--colors-tonal50);
+    background: var(--colors-tonal50);
   }
 }
 
@@ -117,7 +117,7 @@ exports[`Table component renders with size set to lg 1`] = `
   }
 
   .c-ibRpnJ {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -149,7 +149,7 @@ exports[`Table component renders with size set to lg 1`] = `
   }
 
   tr:nth-child(even) .c-huaDro {
-    background-color: var(--colors-tonal50);
+    background: var(--colors-tonal50);
   }
 }
 

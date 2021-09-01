@@ -4,7 +4,7 @@ exports[`Carousel component renders 1`] = `
 @media  {
   .c-kesdyt {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     color: var(--colors-tertiary);
     cursor: pointer;
@@ -83,7 +83,7 @@ exports[`Carousel component renders 1`] = `
   }
 
   .c-fDEGHa button {
-    background-color: var(--colors-tonal300);
+    background: var(--colors-tonal300);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -96,7 +96,7 @@ exports[`Carousel component renders 1`] = `
   }
 
   .c-fDEGHa button[class*="selected"] {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
   }
 }
 

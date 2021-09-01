@@ -4,7 +4,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -20,7 +20,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -97,32 +97,32 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {
@@ -185,7 +185,7 @@ exports[`Button component renders a button 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -201,7 +201,7 @@ exports[`Button component renders a button 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -220,18 +220,18 @@ exports[`Button component renders a button 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 }
 
@@ -249,7 +249,7 @@ exports[`Button component renders a button with an icon 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -265,7 +265,7 @@ exports[`Button component renders a button with an icon 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -299,32 +299,32 @@ exports[`Button component renders a button with an icon 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {
@@ -362,7 +362,7 @@ exports[`Button component renders a disabled button 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -378,7 +378,7 @@ exports[`Button component renders a disabled button 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -397,32 +397,32 @@ exports[`Button component renders a disabled button 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {
@@ -445,7 +445,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -461,7 +461,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -480,32 +480,32 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {
@@ -528,7 +528,7 @@ exports[`Button component renders a outline button 1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -544,7 +544,7 @@ exports[`Button component renders a outline button 1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -563,32 +563,32 @@ exports[`Button component renders a outline button 1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {
@@ -610,7 +610,7 @@ exports[`Button component renders a rounded button  1`] = `
 @media  {
   .c-icSaAK {
     align-items: center;
-    background-color: unset;
+    background: unset;
     border: unset;
     border-radius: var(--radii-0);
     cursor: pointer;
@@ -626,7 +626,7 @@ exports[`Button component renders a rounded button  1`] = `
   }
 
   .c-icSaAK[disabled] {
-    background-color: var(--colors-tonal100);
+    background: var(--colors-tonal100);
     border-color: var(--colors-tonal100);
     color: var(--colors-tonal600);
     cursor: not-allowed;
@@ -664,32 +664,32 @@ exports[`Button component renders a rounded button  1`] = `
 
 @media  {
   .c-icSaAK-epyqWI-cv {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):hover,
   .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background-color: var(--colors-tertiary);
+    background: var(--colors-tertiary);
     color: white;
   }
 
   .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background-color: var(--colors-primary);
+    background: var(--colors-primary);
   }
 
   .c-icSaAK-cRpAgC-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
   .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-tertiary);
-    background-color: white;
+    background: white;
   }
 
   .c-icSaAK-cRpAgC-cv:not([disabled]):active {

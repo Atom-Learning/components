@@ -15,7 +15,7 @@ exports[`FieldWrapper component renders 1`] = `
   }
 
   .c-fbdNsg {
-    background-color: unset;
+    background: unset;
     border: unset;
     padding: unset;
     color: var(--colors-primary);
