@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StackContent component applies styles correctly to children 1`] = `
+exports[`StackContent component renders a stack content 1`] = `
 @media  {
   .c-hswVDG {
     color: var(--colors-tonal800);
