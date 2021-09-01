@@ -4,8 +4,8 @@ import type * as Stitches from '@stitches/react'
 import { createStitches } from '@stitches/react'
 
 export const utils = {
-  bg: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
-    backgroundColor: value
+  bg: (value: Stitches.PropertyValue<'background'>) => ({
+    background: value
   }),
 
   inset: (value: Stitches.ScaleValue<'space'> | number | string) => ({
