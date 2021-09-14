@@ -4,7 +4,8 @@ import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
 
-import { Icon } from '../icon'
+import { ActionIcon } from '../action-icon/ActionIcon'
+import { Icon } from '../icon/Icon'
 
 const scaleIn = keyframes({
   '0%': { opacity: 0, transform: 'scale(0.8)' },
@@ -30,19 +31,6 @@ const StyledContent = styled(Content, {
   }
 })
 
-const StyledClose = styled(Close, {
-  all: 'unset',
-  alignItems: 'center',
-  color: '$tonal700',
-  cursor: 'pointer',
-  display: 'flex',
-  justifyContent: 'center',
-  position: 'absolute',
-  right: '$0',
-  size: '$5',
-  top: '$0'
-})
-
 const StyledArrow = styled(Arrow, {
   fill: 'white',
   zIndex: 1,
@@ -51,12 +39,15 @@ const StyledArrow = styled(Arrow, {
 })
 
 type PopoverContentProps = React.ComponentProps<typeof StyledContent> &
-  React.ComponentProps<typeof Content>
+  React.ComponentProps<typeof Content> & {
+    closePopoverText?: string
+  }
 
 export const PopoverContent: React.FC<PopoverContentProps> = ({
   children,
   side = 'top',
   sideOffset = 8,
+  closePopoverText = 'Close popover',
   size = 'md',
   ...remainingProps
 }) => (
@@ -66,9 +57,15 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     sideOffset={sideOffset}
     {...remainingProps}
   >
-    <StyledClose>
+    <ActionIcon
+      as={Close}
+      css={{ position: 'absolute', right: '$0', top: '$0' }}
+      label={closePopoverText}
+      size="lg"
+      theme="neutral"
+    >
       <Icon is={CloseIcon} />
-    </StyledClose>
+    </ActionIcon>
     {children}
     <StyledArrow width={16} height={8} />
   </StyledContent>

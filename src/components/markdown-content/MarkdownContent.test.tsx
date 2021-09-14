@@ -3,6 +3,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Box } from '../box'
+import { Text } from '../text'
 import { MarkdownContent } from '.'
 import { mockMarkdown } from './__mockdata__/mockMarkdown'
 
@@ -19,17 +20,37 @@ describe('MarkdownContent component', () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
+  it('overwrites default components', () => {
+    render(
+      <MarkdownContent
+        content="This text will not be rendered"
+        customComponents={{
+          paragraph: () => <Text>This text will be rendered instead</Text>
+        }}
+      />
+    )
+
+    expect(screen.queryByText('This text will not be rendered')).toBeNull()
+    expect(screen.getByText('This text will be rendered instead')).toBeVisible()
+  })
+
   it('supports directives', () => {
     render(
       <MarkdownContent
         content={`:someDirective[This text will be shown as content]{aria-label="someDirective box"}`}
-        handleDirectives={(node, handleNode) => {
-          if (node.name === 'someDirective') {
-            return (
-              <Box role="main" {...node.attributes}>
-                {node.children.map(handleNode)}
-              </Box>
-            )
+        customComponents={{
+          textDirective: ({ node, handleNode }) => {
+            const { name, attributes, children } = node
+
+            if (name === 'someDirective') {
+              return (
+                <Box as="span" role="main" {...attributes}>
+                  {children.map(handleNode)}
+                </Box>
+              )
+            }
+
+            return null
           }
         }}
       />

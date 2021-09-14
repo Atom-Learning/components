@@ -22,8 +22,9 @@ exports[`InputField component renders a field in error state 1`] = `
   width: var(--sx-sizes-1);
 }
 
-.sxtros6-385xm {
+.sxtros6-iux96 {
   margin-right: var(--sx-space-2);
+  flex-shrink: 0;
 }
 
 .sx2cs53 {
@@ -36,41 +37,42 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sx2cs53-ks48k {
+.sx2cs53-1vtbu {
   color: var(--sx-colors-danger);
-  align-items: center;
+  align-items: flex-start;
   margin-top: var(--sx-space-2);
 }
 
-.sxgpjqn {
+.sxj1d4e {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxgpjqn6tbwj--size-sm {
+.sxj1d4eid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxgpjqn6tbwj--size-sm::before {
+.sxj1d4eid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxgpjqn6tbwj--size-sm::after {
+.sxj1d4eid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxgpjqn-2obmh {
+.sxj1d4e-n4ol9 {
   color: inherit;
+  transform: translateY(var(--sx-space-1));
 }
 
-.sxh0wga {
+.sx5eeij {
   color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
@@ -78,54 +80,62 @@ exports[`InputField component renders a field in error state 1`] = `
   margin: 0;
 }
 
-.sxh0wgaryo8u--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxh0wgaryo8u--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxh0wgaryo8u--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxojaks {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
+.sxxl4lf {
+  color: var(--sx-colors-danger);
+  margin-left: var(--sx-space-1);
+}
+
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
+  box-shadow: none;
   box-sizing: border-box;
   color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  height: var(--sx-sizes-4);
   padding-left: var(--sx-space-3);
   padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
   width: 100%;
 }
 
-.sxojaks:focus {
+.sx1s1jh:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxojaks[disabled] {
+.sx1s1jh[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
 }
 
-.sxojakshpnso--state-error {
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
+}
+
+.sx1s1jhhpnso--state-error {
   border: 1px solid var(--sx-colors-danger);
 }
 
@@ -141,24 +151,29 @@ exports[`InputField component renders a field in error state 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxh0wga sxh0wgaryo8u--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
+          <span
+            class="sxxl4lf"
+          >
+            *
+          </span>
         </label>
       </div>
       <input
-        class="sxojaks sxojakshpnso--state-error"
+        class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jhhpnso--state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
       />
       <div
-        class="sx2cs53 sx2cs53-ks48k"
+        class="sx2cs53 sx2cs53-1vtbu"
       >
         <svg
           aria-hidden="true"
-          class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+          class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -178,7 +193,7 @@ exports[`InputField component renders a field in error state 1`] = `
           />
         </svg>
         <p
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-2obmh"
+          class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
         >
           This field is required
         </p>
@@ -210,7 +225,7 @@ exports[`InputField component renders a field with a number input 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sxh0wga {
+.sx5eeij {
   color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
@@ -218,51 +233,54 @@ exports[`InputField component renders a field with a number input 1`] = `
   margin: 0;
 }
 
-.sxh0wgaryo8u--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxh0wgaryo8u--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxh0wgaryo8u--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxojaks {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
+  box-shadow: none;
   box-sizing: border-box;
   color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  height: var(--sx-sizes-4);
   padding-left: var(--sx-space-3);
   padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
   width: 100%;
 }
 
-.sxojaks:focus {
+.sx1s1jh:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxojaks[disabled] {
+.sx1s1jh[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
 }
 
 <div>
@@ -277,14 +295,14 @@ exports[`InputField component renders a field with a number input 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxh0wga sxh0wgaryo8u--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sxojaks"
+        class="sx1s1jh sx1s1jhpw03g--size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -314,7 +332,7 @@ exports[`InputField component renders a field with a text input 1`] = `
   margin-bottom: var(--sx-space-3);
 }
 
-.sxh0wga {
+.sx5eeij {
   color: var(--sx-colors-tonal800);
   display: block;
   font-family: var(--sx-fonts-body);
@@ -322,51 +340,54 @@ exports[`InputField component renders a field with a text input 1`] = `
   margin: 0;
 }
 
-.sxh0wgaryo8u--size-md {
+.sx5eeij8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxh0wgaryo8u--size-md::before {
+.sx5eeij8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxh0wgaryo8u--size-md::after {
+.sx5eeij8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxojaks {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
+.sx1s1jh {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
+  box-shadow: none;
   box-sizing: border-box;
   color: var(--sx-colors-tonal800);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
-  height: var(--sx-sizes-4);
   padding-left: var(--sx-space-3);
   padding-right: var(--sx-space-3);
   transition: all 100ms ease-out;
   width: 100%;
 }
 
-.sxojaks:focus {
+.sx1s1jh:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxojaks[disabled] {
+.sx1s1jh[disabled] {
   background-color: var(--sx-colors-tonal100);
   color: var(--sx-colors-tonal600);
   cursor: not-allowed;
+}
+
+.sx1s1jhpw03g--size-md {
+  height: var(--sx-sizes-4);
+  font-size: var(--sx-fontSizes-md);
 }
 
 <div>
@@ -381,14 +402,14 @@ exports[`InputField component renders a field with a text input 1`] = `
         class="sx2cs53 sx2cs53-qom1k"
       >
         <label
-          class="sxh0wga sxh0wgaryo8u--size-md"
+          class="sx5eeij sx5eeij8bitc--size-md"
           for="INPUT FIELD"
         >
           INPUT FIELD
         </label>
       </div>
       <input
-        class="sxojaks"
+        class="sx1s1jh sx1s1jhpw03g--size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

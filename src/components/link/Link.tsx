@@ -8,7 +8,7 @@ import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
 import { StyledParagraph, textVariantSize } from '../text/Text'
 
-const StyledLink = styled('a', {
+export const StyledLink = styled('a', {
   bg: 'unset',
   border: 'unset',
   p: 'unset',
