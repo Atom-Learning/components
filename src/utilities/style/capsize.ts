@@ -21,12 +21,12 @@ export const capsize = (
 ): Record<string, CSS> => ({
   '&::before': {
     content: "''",
-    marginBottom: `-${before}em`,
+    mb: `-${before}em`,
     display: 'table'
   },
   '&::after': {
     content: "''",
-    marginTop: `-${after || before}em`,
+    mt: `-${after || before}em`,
     display: 'table'
   }
 })

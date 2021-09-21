@@ -38,6 +38,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
         />
         <ActionIcon
           appearance="simple"
+          theme="neutral"
           css={{ bottom: 0, position: 'absolute', right: 0 }}
           label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}

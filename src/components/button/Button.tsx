@@ -8,40 +8,38 @@ import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
-const getButtonOutlineVariant = (baseColor: string, interactColor: string) => ({
-  boxShadow: 'inset 0 0 0 1px',
-  color: baseColor,
+const getButtonOutlineVariant = (base: string, interact: string) => ({
+  border: '1px solid',
+  borderColor: 'currentColor',
+  color: base,
   bg: 'white',
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
-    color: interactColor,
+    color: interact,
     bg: 'white'
   },
-  '&:active': {
-    color: baseColor
-  },
-  '&[disabled]': {
-    bg: 'white',
-    color: interactColor
+  '&:not([disabled]):active': {
+    color: base
   }
 })
 
-const getButtonSolidVariant = (baseColor: string, interactColor: string) => ({
-  bg: baseColor,
-  color: 'white',
+const getButtonSolidVariant = (
+  base: string,
+  interact: string,
+  text = 'white'
+) => ({
+  bg: base,
+  color: text,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
-    bg: interactColor
+    bg: interact,
+    color: text
   },
-  '&:active': {
-    bg: baseColor
-  },
-  '&[disabled]': {
-    bg: '$tonal300',
-    color: '$tonal600'
+  '&:not([disabled]):active': {
+    bg: base
   }
 })
 
-const StyledButton = styled('button', {
+export const StyledButton = styled('button', {
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
@@ -58,7 +56,9 @@ const StyledButton = styled('button', {
   whiteSpace: 'nowrap',
   width: 'max-content',
   '&[disabled]': {
-    opacity: 0.35,
+    bg: '$tonal100',
+    borderColor: '$tonal100',
+    color: '$tonal600',
     cursor: 'not-allowed'
   },
   variants: {
@@ -119,7 +119,7 @@ const StyledButton = styled('button', {
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getButtonSolidVariant('$warning', '$warningDark')
+      css: getButtonSolidVariant('$warning', '$warningDark', '$tonal900')
     },
     {
       theme: 'danger',

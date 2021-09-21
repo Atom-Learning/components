@@ -1,7 +1,8 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
 import { Icon } from '../icon/Icon'
 import { ActionIcon } from '.'
 
@@ -17,17 +18,17 @@ describe('ActionIcon component', () => {
   })
 
   it('throws with missing or invalid child', async () => {
-    expect(() => render(<ActionIcon />)).toThrow()
+    expectToThrow(() => render(<ActionIcon />))
 
-    expect(() => render(<ActionIcon>An invalid child</ActionIcon>)).toThrow()
+    expectToThrow(() => render(<ActionIcon>An invalid child</ActionIcon>))
 
-    expect(() =>
+    expectToThrow(() =>
       render(
         <ActionIcon>
           <p>An invalid child</p>
         </ActionIcon>
       )
-    ).toThrow()
+    )
   })
 
   it('has no programmatically detectable a11y issues', async () => {
@@ -38,5 +39,36 @@ describe('ActionIcon component', () => {
     )
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders a link', () => {
+    render(
+      <ActionIcon
+        label="Mark as complete"
+        href="https:/www.google.com"
+        role="link"
+      >
+        <Icon is={() => <svg />} />
+      </ActionIcon>
+    )
+    expect(screen.queryByRole('link')).toHaveAttribute(
+      'href',
+      'https:/www.google.com'
+    )
+  })
+
+  it('renders a disabled link', () => {
+    render(
+      <ActionIcon
+        disabled
+        label="Mark as complete"
+        href="https:/www.google.com"
+        role="link"
+      >
+        <Icon is={() => <svg />} />
+      </ActionIcon>
+    )
+
+    expect(screen.queryByRole('link')).not.toHaveAttribute('href')
   })
 })

@@ -700,10 +700,16 @@ Sample text here...
             <InlineFieldWrapper
               css={{ width: 'max-content' }}
               label="Do a switch thing"
+              description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
               reverse
             >
               <Switch />
             </InlineFieldWrapper>
+            <CheckboxField
+              label="This is a checkbox"
+              name="likeCheckboxes"
+              description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
+            />
           </Form>
         </Bucket.Section>
         <Bucket.Section>

@@ -5,9 +5,9 @@ exports[`ValidationError component renders a validation error 1`] = `
   display: flex;
 }
 
-.sx2cs53-loxrd {
+.sx2cs53-czgdj {
   color: var(--sx-colors-danger);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .sxtros6 {
@@ -25,45 +25,47 @@ exports[`ValidationError component renders a validation error 1`] = `
   width: var(--sx-sizes-1);
 }
 
-.sxtros6-385xm {
+.sxtros6-iux96 {
   margin-right: var(--sx-space-2);
+  flex-shrink: 0;
 }
 
-.sxgpjqn {
+.sxj1d4e {
   color: var(--sx-colors-tonal800);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxgpjqn6tbwj--size-sm {
+.sxj1d4eid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxgpjqn6tbwj--size-sm::before {
+.sxj1d4eid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxgpjqn6tbwj--size-sm::after {
+.sxj1d4eid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxgpjqn-2obmh {
+.sxj1d4e-n4ol9 {
   color: inherit;
+  transform: translateY(var(--sx-space-1));
 }
 
 <div>
   <div
-    class="sx2cs53 sx2cs53-loxrd"
+    class="sx2cs53 sx2cs53-czgdj"
   >
     <svg
       aria-hidden="true"
-      class="sxtros6 sxtros6or94y--size-sm sxtros6-385xm"
+      class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -83,7 +85,7 @@ exports[`ValidationError component renders a validation error 1`] = `
       />
     </svg>
     <p
-      class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-2obmh"
+      class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
     >
       VALIDATION ERROR
     </p>

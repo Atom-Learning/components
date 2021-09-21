@@ -13,23 +13,19 @@ import { AlertProvider, Button, useAlert } from '@atom-learning/components'
 const Component = () => {
   const { showAlert } = useAlert()
 
-  return (
-    <Button
-      onClick={() => {
-        showAlert({
-          title: 'Are you sure you want to delete this school?',
-          description:
-            'Removing this last selected school will remove all restrictions on the exam and make it available to all schools.',
-          confirmActionText: 'Delete school',
-          onAction: (result) => {
-            if (result) console.log('Confirmation')
-          }
-        })
-      }}
-    >
-      Delete school
-    </Button>
-  )
+  const handleClick = () => {
+    showAlert({
+      title: 'Are you sure you want to delete this school?',
+      description: 'This will remove all restrictions from your school',
+      confirmActionText: 'Delete school',
+      cancelActionText: 'Cancel',
+      onAction: (result) => {
+        if (result) console.log('Confirmation')
+      }
+    })
+  }
+
+  return <Button onClick={handleClick}>Delete school</Button>
 }
 
 const App = () => (

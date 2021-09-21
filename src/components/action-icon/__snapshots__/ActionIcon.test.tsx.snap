@@ -16,35 +16,49 @@ exports[`ActionIcon component renders 1`] = `
   width: var(--sx-sizes-2);
 }
 
-.sxx73q4 {
+.sxd2uai {
+  align-items: center;
   -webkit-appearance: none;
   appearance: none;
+  background: white;
   border: unset;
   border-radius: var(--sx-radii-0);
+  box-sizing: border-box;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   padding: unset;
-  transition: all 100ms ease-out;
+  transition: all 125ms ease-out;
 }
 
-.sxx73q4lo5m8--appearance-subtle {
-  background: transparent;
-  color: var(--sx-colors-tonal800);
+.sxd2uai[disabled],
+.sxd2uai[disabled]:hover,
+.sxd2uai[disabled]:focus {
+  background: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal600);
+  border-color: var(--sx-colors-tonal100);
+  cursor: not-allowed;
 }
 
-.sxx73q4lo5m8--appearance-subtle:hover,
-.sxx73q4lo5m8--appearance-subtle:focus {
-  background: var(--sx-colors-alpha150);
-}
-
-.sxx73q4e6fss--size-md {
+.sxd2uaie6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
+}
+
+.sxd2uai94b5u--c2 {
+  background: transparent;
+  color: var(--sx-colors-primary);
+}
+
+.sxd2uai94b5u--c2:hover,
+.sxd2uai94b5u--c2:focus {
+  color: var(--sx-colors-tertiary);
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
+    class="sxd2uai sxd2uai03kze--theme-primary sxd2uai03kze--appearance-simple sxd2uaie6fss--size-md sxd2uai94b5u--c2"
     type="button"
   >
     <svg />

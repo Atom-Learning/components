@@ -21,16 +21,32 @@ type TableSubComponents = {
 }
 
 const StyledTable = styled('table', {
-  width: '100%',
+  borderCollapse: 'collapse',
   fontFamily: '$sans',
-  fontSize: '$sm'
+  fontSize: '$sm',
+  width: '100%',
+  variants: {
+    size: {
+      md: {
+        [`${TableCell}`]: {
+          height: '$4'
+        }
+      },
+      lg: {
+        [`${TableCell}`]: {
+          height: '$5'
+        }
+      }
+    }
+  }
 })
 
 type TableProps = React.ComponentProps<typeof StyledTable>
 
-export const Table: React.FC<TableProps> & TableSubComponents = (
-  props: TableProps
-) => <StyledTable {...props} />
+export const Table: React.FC<TableProps> & TableSubComponents = ({
+  size = 'md',
+  ...rest
+}: TableProps) => <StyledTable size={size} {...rest} />
 
 Table.Body = TableBody
 Table.Cell = TableCell

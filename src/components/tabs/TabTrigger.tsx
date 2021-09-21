@@ -4,16 +4,17 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
-  color: '$primary',
+  color: '$secondary',
   cursor: 'pointer',
   flexShrink: 0,
   fontFamily: '$body',
   p: '$4',
   userSelect: 'none',
-  '&:hover': { color: '$tertiary' },
+  '&:hover': { color: '$primary' },
   '&[data-disabled],&[data-disabled]:hover': { color: '$tonal500' },
   '&[data-state="active"]': {
-    color: '$tertiary',
+    color: '$primary',
+    fontWeight: 'bold',
     boxShadow: 'inset 0 -3px 0 0 currentColor'
   }
 })
