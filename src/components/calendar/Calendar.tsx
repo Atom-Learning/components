@@ -8,6 +8,7 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Heading } from '~/components/heading'
 import { Icon } from '~/components/icon'
+import { Stack } from '~/components/stack'
 import { Text } from '~/components/text'
 import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
@@ -15,32 +16,43 @@ import { styled } from '~/stitches'
 import { monthNamesShort, weekdayNamesShort } from './constants'
 
 const Day = styled('button', {
-  bg: 'transparent',
+  bg: '$$hello',
   border: 'none',
-  borderRadius: '$0',
+  borderRadius: '$round',
   color: '$tonal900',
   cursor: 'pointer',
   fontFamily: '$body',
   fontSize: '$sm',
-  height: '$3',
+  size: '$3',
+  p: 0,
   transition: 'background-color 75ms',
   '&:hover': {
     bg: '$tonal200'
   },
   '&:focus': {
-    outline: '2px solid $tonal200'
+    outline: '2px solid $primary'
   },
   variants: {
     isSelected: {
-      true: { bg: '$tonal100' }
+      true: {
+        bg: '$primary',
+        color: 'white',
+        '&:hover': { bg: '$primary' }
+      }
     },
     isToday: {
-      true: { border: '2px solid $tonal200' }
+      true: { outline: '2px solid $tonal200' }
     },
     isOutsideMonth: {
       true: { color: '$tonal400' }
     }
   }
+})
+
+const Grid = styled('div', {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(7, 1fr)',
+  gridGap: '$2'
 })
 
 type CalendarProps = DayzedInterface & {
@@ -51,45 +63,46 @@ export const Calendar: React.FC<CalendarProps> = ({
   css,
   ...remainingProps
 }) => {
-  const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed(
-    remainingProps
-  )
+  const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed({
+    showOutsideDays: true,
+    ...remainingProps
+  })
 
   if (!calendars.length) return null
 
   return (
-    <Box css={{ position: 'relative', width: 320, ...(css as any) }}>
-      <Flex
-        css={{
-          justifyContent: 'space-between',
-          left: 0,
-          position: 'absolute',
-          right: 0,
-          top: 0
-        }}
-      >
-        <ActionIcon {...getBackProps({ calendars })} label="Previous month">
-          <Icon is={ChevronLeft} />
-        </ActionIcon>
-        <ActionIcon {...getForwardProps({ calendars })} label="Next month">
-          <Icon is={ChevronRight} />
-        </ActionIcon>
-      </Flex>
+    <Box css={{ position: 'relative', width: 'min-content', ...(css as any) }}>
       {calendars.map(({ month, year, weeks }) => (
         <div key={`${month}${year}`}>
           <Flex
             css={{
               alignItems: 'center',
-              justifyContent: 'center',
-              height: '$3',
-              mb: '$3'
+              justifyContent: 'space-between',
+              pl: '$1',
+              mb: '$4'
             }}
           >
             <Heading size="xs">
               {monthNamesShort[month]} {year}
             </Heading>
+            <Stack gap="2">
+              <ActionIcon
+                {...getBackProps({ calendars })}
+                label="Previous month"
+                theme="neutral"
+              >
+                <Icon is={ChevronLeft} />
+              </ActionIcon>
+              <ActionIcon
+                {...getForwardProps({ calendars })}
+                label="Next month"
+                theme="neutral"
+              >
+                <Icon is={ChevronRight} />
+              </ActionIcon>
+            </Stack>
           </Flex>
-          <Box css={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)' }}>
+          <Grid>
             {weekdayNamesShort.map((weekday) => (
               <Text
                 as="span"
@@ -100,8 +113,8 @@ export const Calendar: React.FC<CalendarProps> = ({
                 {weekday}
               </Text>
             ))}
-          </Box>
-          <Box css={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)' }}>
+          </Grid>
+          <Grid>
             {weeks.map((week, weekIndex) =>
               week.map((dateObj, index) => {
                 const key = `${month}${year}${weekIndex}${index}`
@@ -123,7 +136,7 @@ export const Calendar: React.FC<CalendarProps> = ({
                 )
               })
             )}
-          </Box>
+          </Grid>
         </div>
       ))}
     </Box>

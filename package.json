@@ -124,6 +124,7 @@
     "@reach/combobox": "^0.15.1",
     "@stitches/react": "0.1.7",
     "@types/react": "^17.0.2",
+    "dayjs": "^1.10.7",
     "dayzed": "^3.2.2",
     "dlv": "^1.1.3",
     "invariant": "^2.2.4",

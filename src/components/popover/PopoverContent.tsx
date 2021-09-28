@@ -8,18 +8,18 @@ import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 
 const scaleIn = keyframes({
-  '0%': { opacity: 0, transform: 'scale(0.8)' },
+  '0%': { opacity: 0, transform: 'scale(0.9)' },
   '100%': { opacity: 1, transform: 'scale(1)' }
 })
 
 const StyledContent = styled(Content, {
-  animation: `${scaleIn} 75ms ease-out`,
+  animation: `${scaleIn} 50ms ease-out`,
   bg: 'white',
   borderRadius: '$1',
-  boxShadow: '$2',
+  boxShadow: '$1',
   maxWidth: '90vw',
-  p: '$sizes$2',
-  pr: '$6',
+  p: '$sizes$1',
+  // pr: '$6',
   position: 'relative',
   transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
   variants: {
@@ -57,7 +57,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     sideOffset={sideOffset}
     {...remainingProps}
   >
-    <ActionIcon
+    {/* <ActionIcon
       as={Close}
       css={{ position: 'absolute', right: '$0', top: '$0' }}
       label={closePopoverText}
@@ -65,7 +65,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
       theme="neutral"
     >
       <Icon is={CloseIcon} />
-    </ActionIcon>
+    </ActionIcon> */}
     {children}
     <StyledArrow width={16} height={8} />
   </StyledContent>
