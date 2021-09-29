@@ -2475,10 +2475,10 @@
     webpack "^4.44.1"
     webpack-bundle-analyzer "^4.4.0"
 
-"@stitches/react@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.1.0.tgz#49342e085528d689b983682e112b79c5a0b0efb4"
-  integrity sha512-g1XZsmB3tFL5i9aaBx0+P4C83j3vf/PEmLc5e9PlumE5c6q3zsdbbOVr4ZC52eGm4MCvM+2bbAJ++rtTUa6ahw==
+"@stitches/react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.1.tgz#1e6e5877ccb0151a26f27c731e03efee55e8f7c6"
+  integrity sha512-xVnYuU3ZwvI4ghdM5r21hCb4eejkTZQqxm3q5iRTBnrbiG/8jpbEWTi8gXXjZ9X4+PssjuqBrjvPSqAcPvya6w==
 
 "@testing-library/dom@^7.28.1":
   version "7.29.4"
