@@ -1,34 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label component renders a label 1`] = `
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
+@media  {
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
 }
 
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
+@media  {
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
 
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
 
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
 <div>
   <label
-    class="sxdiu5c sxdiu5cjqqvr--size-md"
+    class="c-bkstqh c-bkstqh-gvmVBy-size-md"
   >
     TEXT
   </label>

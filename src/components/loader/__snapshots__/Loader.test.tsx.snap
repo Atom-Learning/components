@@ -1,68 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Loader component renders a loader 1`] = `
-@keyframes sxwho2l {
-  0% {
-    opacity: 0;
+@media  {
+  .c-dhzjXW {
+    display: flex;
   }
 
-  30% {
-    opacity: 1;
+  .c-jBOHFZ {
+    animation-name: k-gJNjLs;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: currentColor;
+    border-radius: var(--radii-round);
   }
 
-  50% {
-    opacity: 1;
+  .c-jBOHFZ:nth-child(1) {
+    animation-delay: -300ms;
   }
 
-  80% {
-    opacity: 0;
+  .c-jBOHFZ:nth-child(2) {
+    animation-delay: -150ms;
   }
 
-  100% {
-    opacity: 0;
+  .c-jBOHFZ:nth-child(3) {
+    animation-delay: 0;
   }
 }
 
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-jBOHFZ-jIYkAt-size-md {
+    height: 6px;
+    width: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
 
-.sx2cs53-23as4 {
-  justify-content: center;
-}
-
-.sxe5oww {
-  animation-name: sxwho2l;
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  background-color: currentColor;
-  border-radius: var(--sx-radii-round);
-}
-
-.sxe5oww:nth-child(1) {
-  animation-delay: -300ms;
-}
-
-.sxe5oww:nth-child(2) {
-  animation-delay: -150ms;
-}
-
-.sxe5oww:nth-child(3) {
-  animation-delay: 0;
-}
-
-.sxe5oww4btw3--size-md {
-  height: 6px;
-  width: 6px;
-  margin-left: 2px;
-  margin-right: 2px;
+@media  {
+  .c-dhzjXW-ibICGYT-css {
+    justify-content: center;
+  }
 }
 
 <div>
   <div
-    class="sx2cs53 sx2cs53-23as4"
+    class="c-dhzjXW c-dhzjXW-ibICGYT-css"
     role="alert"
   >
     <span
@@ -71,13 +55,13 @@ exports[`Loader component renders a loader 1`] = `
       Content is loading
     </span>
     <div
-      class="sxe5oww sxe5oww4btw3--size-md"
+      class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
     />
     <div
-      class="sxe5oww sxe5oww4btw3--size-md"
+      class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
     />
     <div
-      class="sxe5oww sxe5oww4btw3--size-md"
+      class="c-jBOHFZ c-jBOHFZ-jIYkAt-size-md"
     />
   </div>
 </div>

@@ -1,47 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Textarea component renders a textarea 1`] = `
-.sxduzhy {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  font-weight: 400;
-  line-height: 1.4;
-  min-height: var(--sx-sizes-6);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: calc(var(--sx-space-2) + var(--sx-space-1));
-  padding-bottom: calc(var(--sx-space-2) + var(--sx-space-1));
-  resize: vertical;
-  transition: all 75ms ease-out;
-  width: 100%;
+@media  {
+  .c-dIDWeX {
+    box-shadow: none;
+    font-size: var(--fontSizes-md);
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: var(--sizes-7);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: calc(var(--space-2) + var(--space-1));
+    padding-bottom: calc(var(--space-2) + var(--space-1));
+    resize: vertical;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-dIDWeX:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dIDWeX[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-dIDWeX::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sxduzhy:focus {
-  border-color: var(--sx-colors-primary900);
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sxduzhy[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
-}
-
-.sxduzhy-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-dIDWeX-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 <div>
   <textarea
-    class="sxduzhy sxduzhy-6obnf"
+    class="c-dIDWeX c-dIDWeX-ikLAKdM-css"
     placeholder="DESCRIPTION"
   />
 </div>

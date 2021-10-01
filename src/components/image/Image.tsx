@@ -23,7 +23,7 @@ const StyledImage = styled('img', {
 type ImageProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledImage>,
   {
-    as: never
+    as?: never
   }
 >
 

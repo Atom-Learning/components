@@ -7,11 +7,11 @@ import { textVariantSize } from '../text'
 const { sm, md } = textVariantSize()
 
 const StyledLabel = styled('label', {
-  color: '$secondary300',
+  color: '$tonal500',
   display: 'block',
-  fontFamily: '$sans',
-  fontWeight: 500,
-  margin: 0,
+  fontFamily: '$body',
+  fontWeight: 600,
+  m: 0,
   variants: {
     size: { sm, md }
   }

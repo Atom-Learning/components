@@ -24,7 +24,9 @@
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       },
-      "typescript": {}
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
   },
   "extends": [
@@ -46,7 +48,11 @@
   "rules": {
     "no-prototype-builtins": "off",
     "no-unneeded-ternary": ["warn", { "defaultAssignment": false }],
-    "no-unused-vars": ["warn", { "ignoreRestSiblings": true }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "ignoreRestSiblings": true }
+    ],
     "no-useless-concat": "warn",
     "no-useless-escape": "warn",
     "prefer-const": "error",

@@ -1,8 +1,10 @@
 import * as React from 'react'
 
+import { useIsMountedRef } from '~/utilities/use-is-mounted-ref'
+
 import { Alert } from './AlertDialog'
 import { initialState, reducer } from './reducer'
-import { alert } from './types'
+import type { alert } from './types'
 
 type context = {
   showAlert: (data: alert) => void
@@ -14,6 +16,7 @@ const AlertContext = React.createContext<context>({
 
 export const AlertProvider: React.FC = ({ children }) => {
   const [alerts, dispatch] = React.useReducer(reducer, initialState)
+  const isMountedRef = useIsMountedRef()
 
   return (
     <AlertContext.Provider
@@ -29,12 +32,13 @@ export const AlertProvider: React.FC = ({ children }) => {
         <Alert
           {...alerts[0]}
           key={alerts[0].id}
-          onClose={() =>
-            dispatch({
-              payload: alerts[0].id,
-              type: 'REMOVE'
-            })
-          }
+          onClose={() => {
+            if (isMountedRef.current)
+              dispatch({
+                payload: alerts[0].id,
+                type: 'REMOVE'
+              })
+          }}
         />
       )}
       {children}
@@ -42,4 +46,12 @@ export const AlertProvider: React.FC = ({ children }) => {
   )
 }
 
-export const useAlert = (): context => React.useContext(AlertContext)
+export const useAlert = (): context => {
+  const context = React.useContext(AlertContext)
+
+  if (context === undefined) {
+    throw new Error('useAlert must be used within a AlertProvider')
+  }
+
+  return context
+}

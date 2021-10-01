@@ -1,25 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
-.sxdyqdb {
-  border-radius: var(--sx-radii-round);
-  height: 12px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+@media  {
+  .c-rTKYu {
+    border-radius: var(--radii-round);
+    background: var(--colors-tonal100);
+    height: var(--sizes-0);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .c-igejEK {
+    background-color: currentcolor;
+    border-radius: var(--radii-round);
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    transition: all 300ms ease-out;
+  }
 }
 
-.sxdyqdb4bknw--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-primary500);
-}
-
-.sxypqsd {
-  box-sizing: border-box;
-  position: absolute;
-  background-color: currentcolor;
-  height: 100%;
+@media  {
+  .c-rTKYu-ixnjYu-theme-primary {
+    color: var(--colors-primary);
+  }
 }
 
 <div>
@@ -27,13 +32,13 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxdyqdb sxdyqdb03kze--appearance-outline sxdyqdb03kze--theme-primary sxdyqdb4bknw--c2"
+    class="c-rTKYu c-rTKYu-ixnjYu-theme-primary"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"
   >
     <div
-      class="sxypqsd"
+      class="c-igejEK"
       data-max="100"
       data-state="indeterminate"
       style="width: 50%;"
@@ -43,50 +48,45 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 `;
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
-.sxdyqdb {
-  border-radius: var(--sx-radii-round);
-  height: 12px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+@media  {
+  .c-rTKYu {
+    border-radius: var(--radii-round);
+    background: var(--colors-tonal100);
+    height: var(--sizes-0);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .c-igejEK {
+    background-color: currentcolor;
+    border-radius: var(--radii-round);
+    box-sizing: border-box;
+    height: 100%;
+    position: absolute;
+    transition: all 300ms ease-out;
+  }
 }
 
-.sxdyqdb4bknw--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-primary500);
-}
-
-.sxdyqdb4qfa7--c2 {
-  border: 1px solid var(--sx-colors-tonal400);
-  background: white;
-  color: var(--sx-colors-secondary500);
-}
-
-.sxdyqdbmrg77--c2 {
-  background: var(--sx-colors-tonal300);
-  color: var(--sx-colors-primary500);
-}
-
-.sxypqsd {
-  box-sizing: border-box;
-  position: absolute;
-  background-color: currentcolor;
-  height: 100%;
+@media  {
+  .c-rTKYu-ixnjYu-theme-primary {
+    color: var(--colors-primary);
+  }
 }
 
 <div>
   <div
+    appearance="solid"
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
-    class="sxdyqdb sxdyqdb03kze--appearance-solid sxdyqdb03kze--theme-primary sxdyqdbmrg77--c2"
+    class="c-rTKYu c-rTKYu-ixnjYu-theme-primary"
     data-max="100"
     data-state="indeterminate"
     role="progressbar"
   >
     <div
-      class="sxypqsd"
+      class="c-igejEK"
       data-max="100"
       data-state="indeterminate"
       style="width: 50%;"

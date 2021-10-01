@@ -41,20 +41,20 @@ An additional benefit is that we can apply context specific styles to the compon
     color: 'red',
 
     // we can also access design tokens
-    backgroundColor: '$primary500',
+    backgroundColor: '$primary',
     padding: '$3',
 
-    // write inline responsive styles
+    // utilise shorthand utilities
+    mb: '$3',
+    size: 30
+
+    // and write responsive styles
     '@lg': {
       color: 'blue'
     },
     '@media (prefers-color-scheme: dark)': {
       color: 'white'
-    },
-
-    // and utilise shorthand utilities
-    mb: '$3',
-    size: 30
+    }
   }}
 />
 ```
@@ -74,4 +74,4 @@ These constraints are baked into our design tokens and represent design decision
 As a quick example, our tokens come in two main forms, values and scales:
 
 - For a layout property like `padding` or `margin`, the token represents the nth value on the spacing scale, e.g. `padding: '$2'` will render `padding: '8px'`.
-- For a property like `color`, it will look up the colors tokens and will use the value directly, e.g. `color: '$warning'` will render `color: 'hsl(24 ,100%, 55%)'`.
+- For a property like `color`, it will look up the colors tokens and will use the value directly, e.g. `color: '$warning'` will render `color: 'hsl(24, 100%, 55%)'`.

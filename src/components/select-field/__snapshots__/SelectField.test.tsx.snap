@@ -1,111 +1,113 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SelectField component renders 1`] = `
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-beXZpM {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat, repeat;
+    border: 1px solid var(--colors-tonal300);
+    border-radius: var(--radii-0);
+    color: var(--colors-tonal600);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-beXZpM:hover {
+    cursor: pointer;
+  }
+
+  .c-beXZpM:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-beXZpM::-ms-expand {
+    display: none;
+  }
+
+  .c-beXZpM[disabled],
+  .c-beXZpM > option[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
 }
 
-.sx2cs53-re4mk {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-2);
+@media  {
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-beXZpM-ggkvuX-size-md {
+    background-position: right var(--space-3) top 50%, 0 0;
+    background-size: 20px auto, 100%;
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-4);
+    padding-left: var(--space-3);
+    padding-right: var(--space-6);
+  }
 }
 
-.sxdiu5c {
-  color: var(--sx-colors-secondary300);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-weight: 500;
-  margin: 0;
-}
-
-.sxdiu5cjqqvr--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
-}
-
-.sxdiu5cjqqvr--size-md::before {
-  content: '';
-  margin-bottom: -0.4489em;
-  display: table;
-}
-
-.sxdiu5cjqqvr--size-md::after {
-  content: '';
-  margin-top: -0.4489em;
-  display: table;
-}
-
-.sx8kxz1 {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: white;
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%230f66b3%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%230f66b3%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-  background-position: right var(--sx-space-3) top 50%, 0 0;
-  background-repeat: no-repeat, repeat;
-  background-size: var(--sx-sizes-2) auto, 100%;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
-  display: block;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-md);
-  font-weight: 400;
-  height: var(--sx-sizes-4);
-  line-height: 1.4;
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: var(--sx-space-2);
-  padding-bottom: var(--sx-space-2);
-  transition: all 75ms ease-out;
-  width: 100%;
-}
-
-.sx8kxz1:hover {
-  cursor: pointer;
-}
-
-.sx8kxz1:focus {
-  box-shadow: inset 0 0 0 1px var(--sx-colors-primary900);
-  border-color: var(--sx-colors-primary900);
-  outline: none;
-}
-
-.sx8kxz1::-ms-expand {
-  display: none;
-}
-
-.sx8kxz1[disabled] {
-  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23666666%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23666666%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
-}
-
-.sx8kxz1[disabled],
-.sx8kxz1 > option[disabled] {
-  opacity: 0.7;
-  background-color: var(--sx-colors-tonal300);
-  cursor: not-allowed;
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-re4mk"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sxdiu5c sxdiu5cjqqvr--size-md"
+          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
           for="example"
         >
           Example options
         </label>
       </div>
       <select
-        class="sx8kxz1"
+        class="c-beXZpM c-beXZpM-ggkvuX-size-md"
         id="example"
         name="example"
       >

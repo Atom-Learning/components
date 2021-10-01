@@ -1,89 +1,55 @@
-import { Eye, EyeClosed } from '@atom-learning/icons'
 import * as React from 'react'
-import { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 
-import { Box } from '~/components/box'
 import { FieldWrapper } from '~/components/field-wrapper'
-import { ValidationOptions } from '~/components/form'
-import { Icon } from '~/components/icon'
-import { Input, InputProps } from '~/components/input'
-import { styled } from '~/stitches'
+import type { ValidationOptions } from '~/components/form'
+import { useFieldError } from '~/components/form'
+import { InputProps } from '~/components/input'
+import { PasswordInput } from '~/components/password-input'
+import { CSS } from '~/stitches'
 
 type PasswordFieldProps = InputProps & {
-  label?: string
-  prompt?: {
-    label: string
-    link: string
-  }
+  description?: string
   hidePasswordText?: string
+  label?: string
+  name: string
+  prompt?: { label: string; link: string }
   showPasswordText?: string
-  required?: boolean
   validation?: ValidationOptions
 }
-
-const InvisibleButton = styled('button', {
-  background: 'none',
-  border: 'none',
-  bottom: 0,
-  cursor: 'pointer',
-  p: 0,
-  position: 'absolute',
-  right: 0,
-  size: '$4'
-})
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
   label = 'Password',
   name,
-  hidePasswordText = 'Hide password',
-  showPasswordText = 'Show password',
   prompt = undefined,
-  required = false,
+  description,
   validation,
   ...remainingProps
 }) => {
-  const { register, errors } = useFormContext()
-  const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false)
-  const togglePasswordVisibility = () =>
-    setIsPasswordVisible((currentState) => !currentState)
+  const { register } = useFormContext()
+  const { error } = useFieldError(name)
 
   const ref = validation ? register(validation) : register
-  const error = errors[name]?.message
 
   return (
-    <Box css={css}>
-      <FieldWrapper
-        label={label}
-        fieldId={name}
-        prompt={prompt}
-        css={{ position: 'relative' }}
-        error={error}
-      >
-        <Input
-          type={isPasswordVisible ? 'text' : 'password'}
-          css={{ pr: '$sizes$2' }}
-          autoComplete="current-password"
-          name={name}
-          id={name}
-          required={required}
-          ref={ref}
-          {...remainingProps}
-        />
-        <InvisibleButton
-          aria-label={isPasswordVisible ? hidePasswordText : showPasswordText}
-          onClick={togglePasswordVisibility}
-          onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
-          type="button"
-        >
-          <Icon
-            css={{ color: '$tonal700' }}
-            is={isPasswordVisible ? Eye : EyeClosed}
-          />
-        </InvisibleButton>
-      </FieldWrapper>
-    </Box>
+    <FieldWrapper
+      css={{ ...css, position: 'relative' } as CSS}
+      description={description}
+      error={error}
+      fieldId={name}
+      label={label}
+      prompt={prompt}
+      required={Boolean(validation?.required)}
+    >
+      <PasswordInput
+        autoComplete="current-password"
+        name={name}
+        id={name}
+        ref={ref}
+        {...remainingProps}
+      />
+    </FieldWrapper>
   )
 }
 

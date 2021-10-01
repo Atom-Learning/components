@@ -1,39 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ValidationError component renders a validation error 1`] = `
-.sxfey5o {
-  color: var(--sx-colors-tonal900);
-  font-family: var(--sx-fonts-sans);
-  font-weight: 400;
-  margin: 0;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sxfey5oxzxpn--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.69;
+@media  {
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
+  }
+
+  .c-dbleUi-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
 }
 
-.sxfey5oxzxpn--size-sm::before {
-  content: '';
-  margin-bottom: -0.477em;
-  display: table;
-}
+@media  {
+  .c-dhzjXW-iccdseS-css {
+    color: var(--colors-danger);
+    align-items: flex-start;
+  }
 
-.sxfey5oxzxpn--size-sm::after {
-  content: '';
-  margin-top: -0.477em;
-  display: table;
-}
+  .c-dbrbZt-ihYlUBO-css {
+    margin-right: var(--space-2);
+    flex-shrink: 0;
+  }
 
-.sxfey5o-25jen {
-  color: var(--sx-colors-danger);
+  .c-dbleUi-ikkBjHS-css {
+    color: inherit;
+    transform: translateY(var(--space-1));
+  }
 }
 
 <div>
-  <p
-    class="sxfey5o sxfey5oxzxpn--size-sm sxfey5o-25jen"
+  <div
+    class="c-dhzjXW c-dhzjXW-iccdseS-css"
   >
-    VALIDATION ERROR
-  </p>
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 8v5"
+      />
+      <line
+        x1="12"
+        x2="12"
+        y1="16"
+        y2="16"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+      />
+    </svg>
+    <p
+      class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
+    >
+      VALIDATION ERROR
+    </p>
+  </div>
 </div>
 `;

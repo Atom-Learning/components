@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table component renders 1`] = `
+@media  {
+  .c-kaWNwR {
+    border-collapse: collapse;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dKvdLF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-dKvdLF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal300);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) .c-eMPXna {
+    background: var(--colors-tonal50);
+  }
+}
+
+@media  {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+    height: var(--sizes-4);
+  }
+}
+
+@media  {
+  .c-kaWNwR-iliYStP-css {
+    height: 100px;
+    width: 400px;
+    color: var(--colors-primary500);
+  }
+}
+
+<div>
+  <table
+    class="c-kaWNwR c-kaWNwR-iNViGf-size-md c-kaWNwR-iliYStP-css"
+  >
+    <thead
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <th
+          class="c-dKvdLF"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-eMPXna"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-eMPXna"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
+exports[`Table component renders with size set to lg 1`] = `
+@media  {
+  .c-kaWNwR {
+    border-collapse: collapse;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dKvdLF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-dKvdLF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal300);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) .c-eMPXna {
+    background: var(--colors-tonal50);
+  }
+}
+
+@media  {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+    height: var(--sizes-4);
+  }
+
+  .c-kaWNwR-ksfOaK-size-lg .c-eMPXna {
+    height: var(--sizes-5);
+  }
+}
+
+@media  {
+  .c-kaWNwR-iliYStP-css {
+    height: 100px;
+    width: 400px;
+    color: var(--colors-primary500);
+  }
+}
+
+<div>
+  <table
+    class="c-kaWNwR c-kaWNwR-ksfOaK-size-lg c-kaWNwR-iliYStP-css"
+  >
+    <thead
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <th
+          class="c-dKvdLF"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-eMPXna"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-eMPXna"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;

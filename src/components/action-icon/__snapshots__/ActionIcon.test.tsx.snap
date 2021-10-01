@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionIcon component renders 1`] = `
+@media  {
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+<div>
+  <button
+    aria-label="Mark as complete"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv"
+    type="button"
+  >
+    <svg />
+  </button>
+</div>
+`;

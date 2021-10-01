@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch component renders a Switch in "on" state 1`] = `
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
+
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
+
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
+
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
+
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+}
+
+<div>
+  <input
+    checked=""
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="true"
+    class="c-biUdic"
+    data-state="checked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="c-etTjtm"
+      data-state="checked"
+    />
+  </button>
+</div>
+`;
+
+exports[`Switch component renders a disabled switch 1`] = `
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
+
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
+
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
+
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
+
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+}
+
+<div>
+  <input
+    disabled=""
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="false"
+    class="c-biUdic"
+    data-disabled=""
+    data-state="unchecked"
+    disabled=""
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="c-etTjtm"
+      data-disabled=""
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;
+
+exports[`Switch component renders a switch 1`] = `
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
+
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
+
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
+
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
+
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+}
+
+<div>
+  <input
+    hidden=""
+    type="checkbox"
+    value="on"
+  />
+  <button
+    aria-checked="false"
+    class="c-biUdic"
+    data-state="unchecked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="c-etTjtm"
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;

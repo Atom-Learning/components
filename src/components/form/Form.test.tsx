@@ -84,4 +84,111 @@ describe(`Form component`, () => {
 
     expect(await screen.findByText('Submit')).toHaveAttribute('disabled', '')
   })
+
+  it('saves form data to sessionStorage when persist prop is sent through', async () => {
+    render(
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameAndYearGroup' }}>
+        <InputField
+          name="name"
+          label="Name"
+          validation={{ required: 'Name is required' }}
+        />
+        <InputField
+          name="yearGroup"
+          label="Year Group"
+          validation={{ required: 'Year group is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+
+    expect(sessionStorage.getItem('nameAndYearGroup')).toEqual(
+      expect.anything()
+    )
+  })
+
+  it('checks user input values are being persisted in sessionStorage', async () => {
+    render(
+      <Form onSubmit={jest.fn()} persist={{ id: 'nameForm' }}>
+        <InputField
+          name="name"
+          label="Name"
+          type="text"
+          validation={{ required: 'Name is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+    const input = screen.getByRole('textbox', { name: 'Name *' })
+
+    userEvent.type(input, 'Kyle Lowry')
+    expect(input).toHaveValue('Kyle Lowry')
+    expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
+      'Kyle Lowry'
+    )
+  })
+
+  it('saves form data to sessionStorage excluding secret field', async () => {
+    render(
+      <Form
+        onSubmit={jest.fn()}
+        persist={{ id: 'nameAndSecret', exclude: ['secret'] }}
+      >
+        <InputField
+          name="name"
+          label="Name"
+          type="text"
+          validation={{ required: 'Name is required' }}
+        />
+        <InputField
+          name="secret"
+          label="Secret"
+          type="text"
+          validation={{ required: 'Secret is required' }}
+        />
+        <Button type="submit" onClick={jest.fn()}>
+          Submit
+        </Button>
+      </Form>
+    )
+
+    const nameInput = screen.getByRole('textbox', { name: 'Name *' })
+    const secretInput = screen.getByRole('textbox', { name: 'Secret *' })
+
+    userEvent.type(nameInput, 'Kawhi Leonard')
+    userEvent.type(secretInput, 'Very secret secret')
+
+    const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
+    expect(parsedStorage).toEqual(expect.anything())
+    expect(parsedStorage.name).toEqual('Kawhi Leonard')
+    expect(parsedStorage.secret).toBeFalsy()
+  })
+
+  it('checks data attributes are availabe in the DOM', async () => {
+    render(
+      <div>
+        <Form
+          onSubmit={jest.fn()}
+          persist={{ id: 'cityForm' }}
+          data-index-number="12345"
+        >
+          <InputField
+            name="city"
+            label="City"
+            validation={{ required: 'City is required' }}
+          />
+          <Button type="submit" onClick={jest.fn()}>
+            Submit
+          </Button>
+        </Form>
+      </div>
+    )
+    expect(screen.getByRole('form').getAttribute('data-index-number')).toEqual(
+      '12345'
+    )
+  })
 })

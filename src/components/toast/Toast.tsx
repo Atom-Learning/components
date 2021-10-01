@@ -1,127 +1,136 @@
-import 'react-toastify/dist/ReactToastify.minimal.css'
-
+import { Close, Error } from '@atom-learning/icons'
 import * as React from 'react'
-import { cssTransition, ToastContainer } from 'react-toastify'
+import { toast } from 'react-hot-toast'
+import type { Toast as ToastInterface } from 'react-hot-toast/dist/core/types'
 
 import { keyframes, styled } from '~/stitches'
 
-const toastHeight = '$sizes$3'
-const toastOffset = '$sizes$4'
-const contentIn = `translate3d(0, -calc(${toastHeight + toastOffset}), 0)`
-const contentOut = 'translate3d(0, 0, 0)'
+import { ActionIcon } from '../action-icon/ActionIcon'
+import { Icon } from '../icon/Icon'
+import { Loader } from '../loader/Loader'
+import { Text } from '../text/Text'
 
-const progress = keyframes({
-  '0%': { transform: 'scaleX(1)' },
-  '100%': { transform: 'scaleX(0)' }
+export const TOAST_WIDTH = 400
+
+const slideIn = keyframes({
+  '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
+  '100%': { transform: `translate3d(0,0,0)`, opacity: 1 }
+})
+const slideOut = keyframes({
+  '0%': { transform: `translate3d(0,0,0)`, opacity: 1 },
+  '100%': { transform: `translate3d(0,-100%,0)`, opacity: 0 }
 })
 
-const enter = keyframes({
-  '0%': { transform: contentIn },
-  '100%': { transform: contentOut }
-})
-
-const exit = keyframes({
-  '0%': { transform: contentOut },
-  '100%': { transform: contentIn }
-})
-
-const StyledToastContainer = styled(ToastContainer, {
-  position: 'fixed',
-  zIndex: '10000 !important',
-  borderSizing: 'border-box',
-  '@sm': {
-    left: '50%',
-    top: '$3',
-    transform: 'translateX(-50%)'
-  },
-  '@media (max-width: 549px)': {
-    left: 0,
-    right: 0,
-    top: 0
-  },
-  '.Toastify__toast': {
-    alignItems: 'center',
-    boxShadow: '$0',
-    color: 'white',
-    cursor: 'pointer',
-    display: 'flex',
-    fontFamily: '$sans',
-    fontWeight: 400,
-    justifyContent: 'space-between',
-    mb: '$2',
-    minHeight: toastHeight,
-    overflow: 'hidden',
-    position: 'relative',
-    p: '$2',
-    width: '100%',
-    zIndex: 10000,
-    '@sm': {
-      borderRadius: '$0',
-      width: 360
-    },
-    '@media (max-width: 549px)': {
-      width: 'unset' // needed to show the close button in extremely small vp
+const ToastContainer = styled('div', {
+  position: 'absolute',
+  width: '100%',
+  variants: {
+    visible: {
+      true: {
+        animation: `${slideIn} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+      },
+      false: {
+        animation: `${slideOut} 250ms cubic-bezier(0.22, 1, 0.36, 1)`,
+        opacity: 0
+      }
     }
-  },
-  '.Toastify__toast-body': {
-    width: '100%'
-  },
-  '.Toastify__toast--default': {
-    bg: '$primary500'
-  },
-  '.Toastify__toast--success': {
-    bg: '$success'
-  },
-  '.Toastify__toast--warning': {
-    bg: '$warning'
-  },
-  '.Toastify__toast--error': {
-    bg: '$danger'
-  },
-  '.Toastify__progress-bar--animated': {
-    // This is needed even when progress bar is hidden as without it autoClose stops working
-    animation: `${progress} linear 1 forwards`
-  },
-  '.Toastify__close-button': {
-    all: 'unset',
-    display: 'flex',
-    height: toastHeight,
-    right: 0,
-    top: 0,
-    '& > svg': {
-      fill: 'currentColor',
-      margin: 'auto',
-      width: 14
-    }
-  },
-  '.enter': {
-    animation: enter
-  },
-  '.exit': {
-    animation: exit
   }
 })
 
-const Zoom = cssTransition({
-  enter: 'enter',
-  exit: 'exit',
-  collapseDuration: 200
+const StyledToast = styled('div', {
+  alignItems: 'center',
+  borderRadius: '$0',
+  boxShadow: '$1',
+  boxSizing: 'border-box',
+  color: 'white',
+  display: 'flex',
+  minHeight: '$5',
+  pl: '$4',
+  position: 'relative',
+  pr: '$6',
+  py: '$4',
+  transition: 'background-color 50ms ease-out, transform 150ms ease-out',
+  width: '100%',
+  '@sm': {
+    width: TOAST_WIDTH
+  },
+  variants: {
+    status: {
+      blank: { bg: '$primary' },
+      error: { bg: '$danger' },
+      loading: { bg: '$primary' },
+      success: { bg: '$success' }
+    }
+  }
 })
 
-type ToastProps = React.ComponentPropsWithoutRef<typeof StyledToastContainer>
+type ToastProps = React.ComponentProps<typeof StyledToast> &
+  ToastInterface & {
+    calculateOffset: (
+      id: string,
+      options?: {
+        reverseOrder?: boolean
+        margin?: number
+      }
+    ) => number
+    updateHeight: (toastId: string, height: number) => void
+  }
 
-export const ToastProvider: React.FC<ToastProps> = (props) => {
-  return (
-    <StyledToastContainer
-      aria-live="assertive"
-      draggable={false}
-      pauseOnFocusLoss={false}
-      hideProgressBar
-      position="top-center"
-      transition={Zoom}
-      {...props}
-    />
-  )
-}
+export const Toast: React.FC<ToastProps> = React.memo(
+  ({
+    ariaLive,
+    height,
+    id,
+    message,
+    role,
+    type = 'blank',
+    visible,
+    calculateOffset,
+    updateHeight
+  }) => {
+    const offset = calculateOffset(id, {
+      reverseOrder: true,
+      margin: 8
+    })
 
-ToastProvider.displayName = 'ToastProvider'
+    const ref = (el) => {
+      if (el && height === undefined) {
+        updateHeight(id, el.getBoundingClientRect().height)
+      }
+    }
+
+    return (
+      <ToastContainer visible={visible}>
+        <StyledToast
+          ref={ref}
+          status={type}
+          role={role}
+          aria-live={ariaLive}
+          style={{ transform: `translateY(${offset}px)` }}
+        >
+          {type === 'error' && (
+            <Icon size="sm" css={{ mr: '$3', flex: '0 0 auto' }} is={Error} />
+          )}
+          <Text css={{ color: 'inherit' }}>{message}</Text>
+          {type === 'loading' ? (
+            <Loader css={{ flex: '0 0 auto', ml: 'auto' }} />
+          ) : (
+            <ActionIcon
+              css={{
+                position: 'absolute',
+                top: '$2',
+                right: '$2',
+                color: 'white',
+                '&:hover,&:focus': { color: 'white', opacity: 0.5 }
+              }}
+              label="Close alert"
+              onClick={() => toast.dismiss(id)}
+            >
+              <Icon is={Close} />
+            </ActionIcon>
+          )}
+        </StyledToast>
+      </ToastContainer>
+    )
+  }
+)

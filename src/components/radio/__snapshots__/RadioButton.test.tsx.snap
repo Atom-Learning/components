@@ -1,47 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component renders a disabled radio button 1`] = `
-.sxjdf4a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  padding: 0;
-  border-radius: var(--sx-radii-round);
-  border-color: var(--sx-colors-secondary300);
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-}
+@media  {
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.sxjdf4a:focus {
-  outline: none;
-}
+  .c-eyKPFZ {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-round);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: all 50ms ease-out;
+  }
 
-:checked + .sxjdf4a {
-  background-color: var(--sx-colors-secondary300);
-}
+  .c-eyKPFZ:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-[disabled] + .sxjdf4a {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
-}
+  :checked + .c-eyKPFZ {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
 
-.sxip64y {
-  height: var(--sx-sizes-0);
-  width: var(--sx-sizes-0);
-  border-radius: var(--sx-radii-round);
-  background-color: white;
+  .c-eyKPFZ[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-iSwBqf"
     role="radiogroup"
   >
     <input
@@ -53,7 +64,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="sxjdf4a"
+      class="c-eyKPFZ"
       data-disabled=""
       data-state="unchecked"
       disabled=""
@@ -67,47 +78,58 @@ exports[`Radio component renders a disabled radio button 1`] = `
 `;
 
 exports[`Radio component renders a radio button 1`] = `
-.sxjdf4a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  padding: 0;
-  border-radius: var(--sx-radii-round);
-  border-color: var(--sx-colors-secondary300);
-  border-width: 2px;
-  border-style: solid;
-  cursor: pointer;
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-}
+@media  {
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.sxjdf4a:focus {
-  outline: none;
-}
+  .c-eyKPFZ {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-round);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: all 50ms ease-out;
+  }
 
-:checked + .sxjdf4a {
-  background-color: var(--sx-colors-secondary300);
-}
+  .c-eyKPFZ:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-[disabled] + .sxjdf4a {
-  background-color: var(--sx-colors-tonal600);
-  border: 2px solid var(--sx-colors-tonal600);
-}
+  :checked + .c-eyKPFZ {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
 
-.sxip64y {
-  height: var(--sx-sizes-0);
-  width: var(--sx-sizes-0);
-  border-radius: var(--sx-radii-round);
-  background-color: white;
+  .c-eyKPFZ[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-iSwBqf"
     role="radiogroup"
   >
     <input
@@ -118,7 +140,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="sxjdf4a"
+      class="c-eyKPFZ"
       data-radix-roving-focus-group-id="radix-id-0-1"
       data-state="unchecked"
       role="radio"

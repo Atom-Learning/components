@@ -1,50 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxl7wr3 {
-  font-family: var(--sx-fonts-sans);
-  margin: unset;
-  padding: unset;
-  padding-left: var(--sx-space-3);
+@media  {
+  .c-iQukjL {
+    font-family: var(--fonts-body);
+    margin: unset;
+    padding: unset;
+  }
+
+  .c-iQukjL > .c-PJLV:not(:last-child) {
+    margin-bottom: var(--space-2);
+  }
+
+  .c-iQukjL > .c-PJLV:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.sxl7wr3 .sx03kze {
-  padding-left: var(--sx-space-2);
-}
+@media  {
+  .c-iQukjL-bfiEAN-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
 
-.sxl7wr3 .sx03kze::marker {
-  content: "•";
-  font-weight: bold;
-}
+  .c-iQukjL-DlQlZ-as-ul {
+    padding-left: var(--space-3);
+  }
 
-.sxl7wr3 .sx03kze:not(:last-child) {
-  margin-bottom: var(--sx-space-2);
-}
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+    padding-left: var(--space-2);
+  }
 
-.sxl7wr3 .sx03kze:last-child {
-  margin-bottom: 0;
-}
-
-.sxl7wr3k6wac--theme-tonal .sx03kze::marker {
-  color: var(--sx-colors-tonal900);
-}
-
-.sxl7wr35dbgn--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.625;
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
+    content: "•";
+    font-weight: bold;
+  }
 }
 
 <div>
   <ul
-    class="sxl7wr3 sxl7wr3k6wac--theme-tonal sxl7wr35dbgn--size-md"
+    class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul"
   >
     <li
-      class="sx03kze"
+      class="c-PJLV"
     >
       Item 1
     </li>
     <li
-      class="sx03kze"
+      class="c-PJLV"
     >
       Item 2
     </li>

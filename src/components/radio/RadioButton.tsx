@@ -5,41 +5,45 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 const StyledRadioButton = styled(RadioGroup.Item, {
+  alignItems: 'center',
   appearance: 'none',
   backgroundColor: 'transparent',
-  padding: 0,
+  border: '1px solid $tonal400',
   borderRadius: '$round',
-  borderColor: '$secondary300',
-  borderWidth: '2px',
-  borderStyle: 'solid',
+  color: 'white',
   cursor: 'pointer',
-  size: '20px',
-  display: 'inline-flex',
-  alignItems: 'center',
+  display: 'flex',
   justifyContent: 'center',
-  verticalAlign: 'middle',
+  p: 0,
+  size: '$1',
+  transition: 'all 50ms ease-out',
   '&:focus': {
-    outline: 'none'
+    outline: '2px solid $primary',
+    outlineOffset: '1px'
   },
   ':checked + &': {
-    backgroundColor: '$secondary300'
+    backgroundColor: '$primary',
+    borderColor: '$primary'
   },
-  '[disabled] + &': {
-    backgroundColor: '$tonal600',
-    border: '2px solid $tonal600'
+  '&[disabled]': {
+    backgroundColor: '$tonal100',
+    borderColor: '$tonal400',
+    color: '$tonal400',
+    cursor: 'not-allowed'
   }
 })
 
 const StyledIndicator = styled(RadioGroup.Indicator, {
-  size: '$0',
+  size: '6px',
   borderRadius: '$round',
-  backgroundColor: 'white'
+  backgroundColor: 'currentcolor',
+  position: 'absolute'
 })
 
 type RadioButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledRadioButton>,
   {
-    as: never
+    as?: never
   } & {
     'aria-label'?: string
   }

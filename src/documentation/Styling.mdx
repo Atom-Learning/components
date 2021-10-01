@@ -30,17 +30,21 @@ You can use these in `styled()` or `css` by prefixing the key with `@`, e.g. `@r
 
 ```tsx
 const Section = styled('section', {
+  margin: '$1',
   padding: '$2',
-  '@md': { padding: '$3' }
+  '@md': {
+    margin: '$2',
+    padding: '$3'
+  }
 })
 ```
 
 ```tsx
 <Text
   css={{
-    color: '$tonal900',
-    '@md': { color: '$primary500' },
-    '@lg': { color: '$secondary700' }
+    color: '$tonal300',
+    '@md': { color: '$primary' },
+    '@lg': { color: '$primaryDark' }
   }}
 >
   Hello World
@@ -51,10 +55,16 @@ You can also use them to switch [variants](https://stitches.dev/docs/variants)
 
 ```tsx
 <Button
-  // change the 'theme' to 'secondary' when you trigger the 'md' breakpoint
-  theme={{ '@initial': 'primary', '@md': 'secondary' }}
+  // change the 'theme' to 'success' when you trigger the 'md' breakpoint
+  theme={{
+    '@initial': 'primary',
+    '@md': 'success'
+  }}
   // change the 'size' to 'md' when you trigger the 'sm' breakpoint
-  size: {{ '@initial': 'sm', '@sm': 'md' }}
+  size: {{
+    '@initial': 'sm',
+    '@sm': 'md'
+  }}
 >
   Click me
 </Button>
@@ -69,7 +79,7 @@ Stitches enables you to create shorthand utilities to improve the CSS authoring 
 A quick example using `bg` and `size` to create a little blue square.
 
 ```tsx preview
-<Box css={{ bg: '$primary200', size: 100 }} />
+<Box css={{ bg: '$primary', size: 100 }} />
 ```
 
 The full list of utilities can be found in the [component library source](https://github.com/Atom-Learning/components/blob/main/src/stitches.ts)
