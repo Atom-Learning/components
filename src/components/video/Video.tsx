@@ -36,12 +36,12 @@ export const Video: React.FC<VideoProps> = ({
       }}
     >
       <StyledVideo
-        {...remainingProps}
         role="figure"
         url={`https://player.vimeo.com/video/${id}`}
         height="100%"
         width="100%"
         css={{ position: 'absolute', top: 0, left: 0 }}
+        {...remainingProps}
       />
     </Box>
   </CSSWrapper>
