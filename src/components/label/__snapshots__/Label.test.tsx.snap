@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label component renders a label 1`] = `
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
+.sxbagj1 {
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   margin: 0;
 }
 
-.sx5eeij8bitc--size-md {
+.sxbagj18bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sx5eeij8bitc--size-md::before {
+.sxbagj18bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx5eeij8bitc--size-md::after {
+.sxbagj18bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
@@ -28,7 +28,7 @@ exports[`Label component renders a label 1`] = `
 
 <div>
   <label
-    class="sx5eeij sx5eeij8bitc--size-md"
+    class="sxbagj1 sxbagj18bitc--size-md"
   >
     TEXT
   </label>

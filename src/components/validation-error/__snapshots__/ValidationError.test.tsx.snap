@@ -10,51 +10,51 @@ exports[`ValidationError component renders a validation error 1`] = `
   align-items: flex-start;
 }
 
-.sxtros6 {
+.sxakl60 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 2;
   vertical-align: middle;
 }
 
-.sxtros6or94y--size-sm {
+.sxakl60op5z4--size-sm {
   height: var(--sx-sizes-1);
   width: var(--sx-sizes-1);
+  stroke-width: 1.75;
 }
 
-.sxtros6-iux96 {
+.sxakl60-iux96 {
   margin-right: var(--sx-space-2);
   flex-shrink: 0;
 }
 
-.sxj1d4e {
-  color: var(--sx-colors-tonal800);
+.sx8yt8k {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxj1d4eid6h2--size-sm {
+.sx8yt8kid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxj1d4eid6h2--size-sm::before {
+.sx8yt8kid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxj1d4eid6h2--size-sm::after {
+.sx8yt8kid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxj1d4e-n4ol9 {
+.sx8yt8k-n4ol9 {
   color: inherit;
   transform: translateY(var(--sx-space-1));
 }
@@ -65,7 +65,7 @@ exports[`ValidationError component renders a validation error 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="sxtros6 sxtros6or94y--size-sm sxtros6-iux96"
+      class="sxakl60 sxakl60op5z4--size-sm sxakl60-iux96"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -85,7 +85,7 @@ exports[`ValidationError component renders a validation error 1`] = `
       />
     </svg>
     <p
-      class="sxj1d4e sxj1d4eid6h2--size-sm sxj1d4e-n4ol9"
+      class="sx8yt8k sx8yt8kid6h2--size-sm sx8yt8k-n4ol9"
     >
       VALIDATION ERROR
     </p>

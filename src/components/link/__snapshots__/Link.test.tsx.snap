@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link component renders an anchor 1`] = `
-.sxlc3or {
+.sxi05ns {
   background: unset;
   border: unset;
   padding: unset;
@@ -11,44 +11,44 @@ exports[`Link component renders an anchor 1`] = `
   text-decoration: none;
 }
 
-.sxlc3or:focus,
-.sxlc3or:hover {
-  color: var(--sx-colors-tertiary);
+.sxi05ns:focus,
+.sxi05ns:hover {
+  color: var(--sx-colors-primaryMid);
   text-decoration: underline;
 }
 
-.sxlc3or:active {
-  color: var(--sx-colors-primary);
+.sxi05ns:active {
+  color: var(--sx-colors-primaryDark);
 }
 
-.sxj1d4e > .sxlc3or,
-.sxh1zwe > .sxlc3or,
-.sx03kze > .sxlc3or {
+.sx8yt8k > .sxi05ns,
+.sx8wio2 > .sxi05ns,
+.sx03kze > .sxi05ns {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxj1d4e > .sxlc3or::before,
-.sxj1d4e > .sxlc3or::after,
-.sxh1zwe > .sxlc3or::before,
-.sxh1zwe > .sxlc3or::after,
-.sx03kze > .sxlc3or::before,
-.sx03kze > .sxlc3or::after {
+.sx8yt8k > .sxi05ns::before,
+.sx8yt8k > .sxi05ns::after,
+.sx8wio2 > .sxi05ns::before,
+.sx8wio2 > .sxi05ns::after,
+.sx03kze > .sxi05ns::before,
+.sx03kze > .sxi05ns::after {
   content: none;
 }
 
-.sxlc3or8bitc--size-md {
+.sxi05ns8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxlc3or8bitc--size-md::before {
+.sxi05ns8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxlc3or8bitc--size-md::after {
+.sxi05ns8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
@@ -56,7 +56,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="sxlc3or sxlc3or8bitc--size-md"
+    class="sxi05ns sxi05ns8bitc--size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -65,7 +65,7 @@ exports[`Link component renders an anchor 1`] = `
 `;
 
 exports[`Link component renders an large anchor 1`] = `
-.sxlc3or {
+.sxi05ns {
   background: unset;
   border: unset;
   padding: unset;
@@ -75,61 +75,61 @@ exports[`Link component renders an large anchor 1`] = `
   text-decoration: none;
 }
 
-.sxlc3or:focus,
-.sxlc3or:hover {
-  color: var(--sx-colors-tertiary);
+.sxi05ns:focus,
+.sxi05ns:hover {
+  color: var(--sx-colors-primaryMid);
   text-decoration: underline;
 }
 
-.sxlc3or:active {
-  color: var(--sx-colors-primary);
+.sxi05ns:active {
+  color: var(--sx-colors-primaryDark);
 }
 
-.sxj1d4e > .sxlc3or,
-.sxh1zwe > .sxlc3or,
-.sx03kze > .sxlc3or {
+.sx8yt8k > .sxi05ns,
+.sx8wio2 > .sxi05ns,
+.sx03kze > .sxi05ns {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxj1d4e > .sxlc3or::before,
-.sxj1d4e > .sxlc3or::after,
-.sxh1zwe > .sxlc3or::before,
-.sxh1zwe > .sxlc3or::after,
-.sx03kze > .sxlc3or::before,
-.sx03kze > .sxlc3or::after {
+.sx8yt8k > .sxi05ns::before,
+.sx8yt8k > .sxi05ns::after,
+.sx8wio2 > .sxi05ns::before,
+.sx8wio2 > .sxi05ns::after,
+.sx03kze > .sxi05ns::before,
+.sx03kze > .sxi05ns::after {
   content: none;
 }
 
-.sxlc3or8bitc--size-md {
+.sxi05ns8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxlc3or8bitc--size-md::before {
+.sxi05ns8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxlc3or8bitc--size-md::after {
+.sxi05ns8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxlc3orpfvfy--size-lg {
+.sxi05nspfvfy--size-lg {
   font-size: var(--sx-fontSizes-lg);
   line-height: 1.52;
 }
 
-.sxlc3orpfvfy--size-lg::before {
+.sxi05nspfvfy--size-lg::before {
   content: '';
   margin-bottom: -0.3983em;
   display: table;
 }
 
-.sxlc3orpfvfy--size-lg::after {
+.sxi05nspfvfy--size-lg::after {
   content: '';
   margin-top: -0.3983em;
   display: table;
@@ -137,7 +137,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="sxlc3or sxlc3orpfvfy--size-lg"
+    class="sxi05ns sxi05nspfvfy--size-lg"
     href="https://google.com/"
   >
     GOOGLE

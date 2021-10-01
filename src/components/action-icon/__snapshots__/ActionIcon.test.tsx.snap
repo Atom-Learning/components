@@ -1,22 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActionIcon component renders 1`] = `
-.sxtros6 {
+.sxakl60 {
   display: inline-block;
   fill: none;
   stroke: currentcolor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 2;
   vertical-align: middle;
 }
 
-.sxtros6mbqqh--size-md {
+.sxakl60zozsa--size-md {
   height: var(--sx-sizes-2);
   width: var(--sx-sizes-2);
+  stroke-width: 2;
 }
 
-.sxd2uai {
+.sxakl60-d7dk3 {
+  height: 16px;
+  width: 16px;
+}
+
+.sxua1zw {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
@@ -28,37 +33,37 @@ exports[`ActionIcon component renders 1`] = `
   display: flex;
   justify-content: center;
   padding: unset;
-  transition: all 125ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.sxd2uai[disabled],
-.sxd2uai[disabled]:hover,
-.sxd2uai[disabled]:focus {
-  background: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  border-color: var(--sx-colors-tonal100);
-  cursor: not-allowed;
-}
-
-.sxd2uaie6fss--size-md {
+.sxua1zwe6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
 
-.sxd2uai94b5u--c2 {
+.sxua1zw2gexy--c2 {
   background: transparent;
   color: var(--sx-colors-primary);
 }
 
-.sxd2uai94b5u--c2:hover,
-.sxd2uai94b5u--c2:focus {
-  color: var(--sx-colors-tertiary);
+.sxua1zw2gexy--c2:not(:disabled):hover,
+.sxua1zw2gexy--c2:not(:disabled):focus {
+  color: var(--sx-colors-primaryMid);
+}
+
+.sxua1zw2gexy--c2:not(:disabled):active {
+  color: var(--sx-colors-primaryDark);
+}
+
+.sxua1zw2gexy--c2[disabled] {
+  color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxd2uai sxd2uai03kze--theme-primary sxd2uai03kze--appearance-simple sxd2uaie6fss--size-md sxd2uai94b5u--c2"
+    class="sxua1zw sxua1zw03kze--theme-primary sxua1zw03kze--appearance-simple sxua1zwe6fss--size-md sxua1zw2gexy--c2"
     type="button"
   >
     <svg />

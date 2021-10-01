@@ -8,27 +8,50 @@ import { Override } from '~/utilities'
 
 import { Icon } from '../icon/Icon'
 
-const getSimpleVariant = (base: string, interact: string) => ({
+const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
   color: base,
-  '&:hover, &:focus': {
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
     color: interact
+  },
+  '&:not(:disabled):active': {
+    color: active
+  },
+  '&[disabled]': {
+    color: '$tonal400',
+    cursor: 'not-allowed'
   }
 })
-const getSolidVariant = (base: string, interact: string) => ({
+const getSolidVariant = (base: string, interact: string, active: string) => ({
   bg: base,
   color: 'white',
-  '&:hover, &:focus': {
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
     bg: interact,
     color: 'white'
+  },
+  '&:not(:disabled):active': {
+    bg: active
+  },
+  '&[disabled]': {
+    bg: '$tonal100',
+    color: '$tonal400',
+    cursor: 'not-allowed'
   }
 })
-const getOutlineVariant = (base: string, interact: string) => ({
+const getOutlineVariant = (base: string, interact: string, active: string) => ({
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
-  '&:hover, &:focus': {
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
     color: interact
+  },
+  '&:not(:disabled):active': {
+    color: active
+  },
+  '&[disabled]': {
+    borderColor: '$tonal400',
+    color: '$tonal400',
+    cursor: 'not-allowed'
   }
 })
 
@@ -43,13 +66,7 @@ const StyledButton = styled('button', {
   display: 'flex',
   justifyContent: 'center',
   p: 'unset',
-  transition: 'all 125ms ease-out',
-  '&[disabled], &[disabled]:hover, &[disabled]:focus': {
-    bg: '$tonal100',
-    color: '$tonal600',
-    borderColor: '$tonal100',
-    cursor: 'not-allowed'
-  },
+  transition: 'all 100ms ease-out',
   variants: {
     theme: {
       neutral: {},
@@ -78,71 +95,71 @@ const StyledButton = styled('button', {
     {
       theme: 'neutral',
       appearance: 'simple',
-      css: getSimpleVariant('$tonal600', '$primary')
+      css: getSimpleVariant('$tonal300', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'primary',
       appearance: 'simple',
-      css: getSimpleVariant('$primary', '$tertiary')
+      css: getSimpleVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'success',
       appearance: 'simple',
-      css: getSimpleVariant('$success', '$successDark')
+      css: getSimpleVariant('$success', '$successMid', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'simple',
-      css: getSimpleVariant('$warning', '$warningDark')
+      css: getSimpleVariant('$warning', '$warningMid', '$warningDark')
     },
     {
       theme: 'danger',
       appearance: 'simple',
-      css: getSimpleVariant('$danger', '$dangerDark')
+      css: getSimpleVariant('$danger', '$dangerMid', '$dangerDark')
     },
 
     // Appearance Solid
     {
       theme: 'primary',
       appearance: 'solid',
-      css: getSolidVariant('$primary', '$tertiary')
+      css: getSolidVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'success',
       appearance: 'solid',
-      css: getSolidVariant('$success', '$successDark')
+      css: getSolidVariant('$success', '$successMid', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'solid',
-      css: getSolidVariant('$warning', '$warningDark')
+      css: getSolidVariant('$warning', '$warningMid', '$warningDark')
     },
     {
       theme: 'danger',
       appearance: 'solid',
-      css: getSolidVariant('$danger', '$dangerDark')
+      css: getSolidVariant('$danger', '$dangerMid', '$dangerDark')
     },
 
     // Appearance Outline
     {
       theme: 'primary',
       appearance: 'outline',
-      css: getOutlineVariant('$primary', '$tertiary')
+      css: getOutlineVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'success',
       appearance: 'outline',
-      css: getOutlineVariant('$success', '$successDark')
+      css: getOutlineVariant('$success', '$successMid', '$successDark')
     },
     {
       theme: 'warning',
       appearance: 'outline',
-      css: getOutlineVariant('$warning', '$warningDark')
+      css: getOutlineVariant('$warning', '$warningMid', '$warningDark')
     },
     {
       theme: 'danger',
       appearance: 'outline',
-      css: getOutlineVariant('$danger', '$dangerDark')
+      css: getOutlineVariant('$danger', '$dangerMid', '$dangerDark')
     }
   ]
 })
@@ -206,7 +223,12 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
             `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
           )
 
-          return child
+          return React.cloneElement(child, {
+            css: {
+              size: size === 'lg' ? 20 : 16,
+              ...(child.props.css ? child.props.css : {})
+            }
+          })
         })}
       </StyledButton>
     )

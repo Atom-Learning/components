@@ -6,11 +6,11 @@ exports[`CheckboxField component renders 1`] = `
   transform: translateY(var(--sx-space-0));
 }
 
-.sxt3cs2 {
+.sx8za6f {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal500);
+  border: 1px solid var(--sx-colors-tonal400);
   border-radius: 3px;
   color: white;
   cursor: pointer;
@@ -23,52 +23,48 @@ exports[`CheckboxField component renders 1`] = `
   transition: all 50ms ease-out;
 }
 
-.sxt3cs2[data-state="unchecked"]:focus,
-.sxt3cs2[data-state="unchecked"]:hover {
-  outline: none;
-}
-
-.sxt3cs2[data-state="checked"] {
+.sx8za6f[data-state="checked"] {
   background-color: var(--sx-colors-primary);
   border-color: var(--sx-colors-primary);
 }
 
-.sxt3cs2[data-state="checked"]:hover,
-.sxt3cs2[data-state="unchecked"]:focus {
+.sx8za6f[data-state="indeterminate"] {
+  background-color: var(--sx-colors-primary);
   border-color: var(--sx-colors-primary);
-  outline: none;
 }
 
-.sxt3cs2[disabled] {
-  background-color: var(--sx-colors-tonal200);
+.sx8za6f:focus {
+  outline: 2px solid var(--sx-colors-primary);
+  outline-offset: 1px;
+}
+
+.sx8za6f[disabled] {
+  background-color: var(--sx-colors-tonal100);
   border-color: var(--sx-colors-tonal400);
   cursor: not-allowed;
+  color: var(--sx-colors-tonal400);
 }
 
-.sxt3cs2:focus-within {
-  outline: none;
-}
-
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
+.sxbagj1 {
+  color: var(--sx-colors-tonal500);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   margin: 0;
 }
 
-.sx5eeij8bitc--size-md {
+.sxbagj18bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sx5eeij8bitc--size-md::before {
+.sxbagj18bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sx5eeij8bitc--size-md::after {
+.sxbagj18bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
@@ -97,7 +93,7 @@ exports[`CheckboxField component renders 1`] = `
       class="sx03kze"
     >
       <label
-        class="sx5eeij sx5eeij8bitc--size-md sx9ru2a sx9ru2a0fgel--align-baseline sx9ru2aged5d--direction-row"
+        class="sxbagj1 sxbagj18bitc--size-md sx9ru2a sx9ru2a0fgel--align-baseline sx9ru2aged5d--direction-row"
       >
         <div
           class="sx03kze sx03kze-2grog"
@@ -110,7 +106,7 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            class="sxt3cs2"
+            class="sx8za6f"
             data-state="unchecked"
             role="checkbox"
             type="button"

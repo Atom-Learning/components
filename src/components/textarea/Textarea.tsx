@@ -9,7 +9,7 @@ const StyledTextarea = styled('textarea', {
   border: '1px solid $tonal400',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal800',
+  color: '$tonal600',
   fontFamily: '$body',
   fontWeight: 400,
   lineHeight: 1.4,
@@ -25,8 +25,12 @@ const StyledTextarea = styled('textarea', {
   },
   '&[disabled]': {
     backgroundColor: '$tonal100',
-    color: '$tonal600',
+    color: '$tonal400',
     cursor: 'not-allowed'
+  },
+  '&::placeholder': {
+    color: '$tonal300',
+    opacity: 1
   },
   variants: {
     state: {
