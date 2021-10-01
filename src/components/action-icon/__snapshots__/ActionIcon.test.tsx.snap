@@ -2,7 +2,7 @@
 
 exports[`ActionIcon component renders 1`] = `
 @media  {
-  .c-fTazCA {
+  .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -14,57 +14,57 @@ exports[`ActionIcon component renders 1`] = `
     display: flex;
     justify-content: center;
     padding: unset;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
   }
 
-  .c-fTazCA[disabled],
-  .c-fTazCA[disabled]:hover,
-  .c-fTazCA[disabled]:focus {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    border-color: var(--colors-tonal100);
-    cursor: not-allowed;
-  }
-
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 }
 
 @media  {
-  .c-fTazCA-elrktp-size-md {
+  .c-fDzwZw-elrktp-size-md {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
-  .c-dBUxNn-fDXBFo-size-md {
+  .c-dbrbZt-hemXWm-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
+    stroke-width: 2;
   }
 }
 
 @media  {
-  .c-fTazCA-jNEchS-cv {
+  .c-fDzwZw-cmVfvW-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fTazCA-jNEchS-cv:hover,
-  .c-fTazCA-jNEchS-cv:focus {
-    color: var(--colors-tertiary);
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
   }
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-fTazCA c-fTazCA-elrktp-size-md c-fTazCA-jNEchS-cv"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv"
     type="button"
   >
     <svg />

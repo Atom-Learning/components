@@ -2,24 +2,23 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 
-  .c-dtikvq {
+  .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal800);
+    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -29,25 +28,31 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-dtikvq:focus {
+  .c-fZTBsJ:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-dtikvq[disabled] {
+  .c-fZTBsJ[disabled] {
     background-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal400);
     cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
   }
 }
 
 @media  {
-  .c-dBUxNn-fDXBFo-size-md {
+  .c-dbrbZt-hemXWm-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
+    stroke-width: 2;
   }
 
-  .c-dtikvq-pHZal-size-md {
+  .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
@@ -58,8 +63,8 @@ exports[`SearchInput component renders 1`] = `
     position: relative;
   }
 
-  .c-dBUxNn-iXjOke-css {
-    color: var(--colors-tonal500);
+  .c-dbrbZt-iiElkIc-css {
+    color: var(--colors-tonal300);
     pointer-events: none;
     position: absolute;
     height: 20px;
@@ -68,7 +73,7 @@ exports[`SearchInput component renders 1`] = `
     left: 10px;
   }
 
-  .c-dtikvq-icSgxUp-css {
+  .c-fZTBsJ-icSgxUp-css {
     padding-left: var(--space-6);
   }
 }
@@ -79,7 +84,7 @@ exports[`SearchInput component renders 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dBUxNn c-dBUxNn-fDXBFo-size-md c-dBUxNn-iXjOke-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iiElkIc-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -93,7 +98,7 @@ exports[`SearchInput component renders 1`] = `
       />
     </svg>
     <input
-      class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-icSgxUp-css"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-icSgxUp-css"
       type="search"
     />
   </div>

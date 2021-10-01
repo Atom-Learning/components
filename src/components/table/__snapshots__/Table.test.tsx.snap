@@ -9,8 +9,8 @@ exports[`Table component renders 1`] = `
     width: 100%;
   }
 
-  .c-ibRpnJ {
-    background: var(--colors-tertiary);
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -20,20 +20,20 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-ibRpnJ:first-of-type {
+  .c-dKvdLF:first-of-type {
     border-top-left-radius: var(--radii-0);
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-ibRpnJ:last-of-type {
+  .c-dKvdLF:last-of-type {
     border-top-right-radius: var(--radii-0);
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-huaDro {
-    border-bottom: 1px solid var(--colors-tonal200);
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal300);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -41,13 +41,13 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-huaDro {
+  tr:nth-child(even) .c-eMPXna {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iXGfYx-size-md .c-huaDro {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
     height: var(--sizes-4);
   }
 }
@@ -62,7 +62,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-iXGfYx-size-md c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-iNViGf-size-md c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -71,7 +71,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <th
-          class="c-ibRpnJ"
+          class="c-dKvdLF"
         >
           Column A
         </th>
@@ -84,7 +84,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-huaDro"
+          class="c-eMPXna"
         >
           This is text
         </td>
@@ -97,7 +97,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-huaDro"
+          class="c-eMPXna"
         >
           Footer 1
         </td>
@@ -116,8 +116,8 @@ exports[`Table component renders with size set to lg 1`] = `
     width: 100%;
   }
 
-  .c-ibRpnJ {
-    background: var(--colors-tertiary);
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -127,20 +127,20 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-ibRpnJ:first-of-type {
+  .c-dKvdLF:first-of-type {
     border-top-left-radius: var(--radii-0);
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-ibRpnJ:last-of-type {
+  .c-dKvdLF:last-of-type {
     border-top-right-radius: var(--radii-0);
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-huaDro {
-    border-bottom: 1px solid var(--colors-tonal200);
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal300);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -148,17 +148,17 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-huaDro {
+  tr:nth-child(even) .c-eMPXna {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iXGfYx-size-md .c-huaDro {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-hlPgvk-size-lg .c-huaDro {
+  .c-kaWNwR-ksfOaK-size-lg .c-eMPXna {
     height: var(--sizes-5);
   }
 }
@@ -173,7 +173,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-hlPgvk-size-lg c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-ksfOaK-size-lg c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -182,7 +182,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <th
-          class="c-ibRpnJ"
+          class="c-dKvdLF"
         >
           Column A
         </th>
@@ -195,7 +195,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-huaDro"
+          class="c-eMPXna"
         >
           This is text
         </td>
@@ -208,7 +208,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-huaDro"
+          class="c-eMPXna"
         >
           Footer 1
         </td>

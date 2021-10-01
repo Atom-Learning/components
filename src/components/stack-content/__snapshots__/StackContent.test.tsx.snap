@@ -2,23 +2,23 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-hswVDG {
-    color: var(--colors-tonal800);
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
   }
 
-  .c-jwkyIg {
-    color: var(--colors-tonal800);
+  .c-dbleUi {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-hqVVCK {
+  .c-hnXsvE {
     border: 0;
-    border-top: 1px solid var(--colors-tonal400);
+    border-top: 1px solid var(--colors-tonal200);
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -59,35 +59,35 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-hswVDG-fOoUdm-size-md {
+  .c-iSnHBU-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-hswVDG-fOoUdm-size-md::before {
+  .c-iSnHBU-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-hswVDG-fOoUdm-size-md::after {
+  .c-iSnHBU-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
   }
 
-  .c-jwkyIg-gvmVBy-size-md {
+  .c-dbleUi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::before {
+  .c-dbleUi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::after {
+  .c-dbleUi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -113,27 +113,27 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-hswVDG-ibsOPXb-css {
+  .c-iSnHBU-ibsOPXb-css {
     max-width: 65ch;
   }
 
-  .c-hswVDG-ibsOPXb-css:not(:first-child) {
+  .c-iSnHBU-ibsOPXb-css:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-hswVDG-ibsOPXb-css:not(:last-child) {
+  .c-iSnHBU-ibsOPXb-css:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-jwkyIg-ielbxsX-css {
+  .c-dbleUi-ielbxsX-css {
     max-width: 75ch;
   }
 
-  .c-jwkyIg-ielbxsX-css:not(:last-child) {
+  .c-dbleUi-ielbxsX-css:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-hqVVCK-ihYlNNO-css {
+  .c-hnXsvE-ihYlNNO-css {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
     color: red;
@@ -165,17 +165,17 @@ exports[`StackContent component renders a stack content 1`] = `
     class="c-PJLV"
   >
     <h2
-      class="c-hswVDG c-hswVDG-fOoUdm-size-md c-hswVDG-ibsOPXb-css"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ibsOPXb-css"
     >
       HEADING
     </h2>
     <p
-      class="c-jwkyIg c-jwkyIg-gvmVBy-size-md c-jwkyIg-ielbxsX-css"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ielbxsX-css"
     >
       TEXT
     </p>
     <hr
-      class="c-hqVVCK c-hqVVCK-ihYlNNO-css"
+      class="c-hnXsvE c-hnXsvE-ihYlNNO-css"
     />
     <ul
       class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-ielbxsX-css"

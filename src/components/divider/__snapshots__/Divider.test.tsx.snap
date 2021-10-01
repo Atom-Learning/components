@@ -2,9 +2,9 @@
 
 exports[`Divider component renders 1`] = `
 @media  {
-  .c-hqVVCK {
+  .c-hnXsvE {
     border: 0;
-    border-top: 1px solid var(--colors-tonal400);
+    border-top: 1px solid var(--colors-tonal200);
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -13,7 +13,7 @@ exports[`Divider component renders 1`] = `
 
 <div>
   <hr
-    class="c-hqVVCK"
+    class="c-hnXsvE"
   />
 </div>
 `;

@@ -8,19 +8,19 @@ exports[`CheckboxField component renders 1`] = `
     max-width: max-content;
   }
 
-  .c-jMiJvg {
-    color: var(--colors-tonal800);
+  .c-bkstqh {
+    color: var(--colors-tonal500);
     display: block;
     font-family: var(--fonts-body);
     font-weight: 600;
     margin: 0;
   }
 
-  .c-MHVTU {
+  .c-emNREM {
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal500);
+    border: 1px solid var(--colors-tonal400);
     border-radius: 3px;
     color: white;
     cursor: pointer;
@@ -33,30 +33,26 @@ exports[`CheckboxField component renders 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-MHVTU[data-state="unchecked"]:focus,
-  .c-MHVTU[data-state="unchecked"]:hover {
-    outline: none;
-  }
-
-  .c-MHVTU[data-state="checked"] {
+  .c-emNREM[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-MHVTU[data-state="checked"]:hover,
-  .c-MHVTU[data-state="unchecked"]:focus {
+  .c-emNREM[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
     border-color: var(--colors-primary);
-    outline: none;
   }
 
-  .c-MHVTU[disabled] {
-    background-color: var(--colors-tonal200);
+  .c-emNREM:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-emNREM[disabled] {
+    background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     cursor: not-allowed;
-  }
-
-  .c-MHVTU:focus-within {
-    outline: none;
+    color: var(--colors-tonal400);
   }
 }
 
@@ -69,18 +65,18 @@ exports[`CheckboxField component renders 1`] = `
     flex-direction: row;
   }
 
-  .c-jMiJvg-gvmVBy-size-md {
+  .c-bkstqh-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::before {
+  .c-bkstqh-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::after {
+  .c-bkstqh-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -103,7 +99,7 @@ exports[`CheckboxField component renders 1`] = `
       class="c-PJLV"
     >
       <label
-        class="c-jMiJvg c-jMiJvg-gvmVBy-size-md c-bsbHzT c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
+        class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bsbHzT c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
       >
         <div
           class="c-PJLV c-PJLV-ioftQP-css"
@@ -116,7 +112,7 @@ exports[`CheckboxField component renders 1`] = `
           />
           <button
             aria-checked="false"
-            class="c-MHVTU"
+            class="c-emNREM"
             data-state="unchecked"
             role="checkbox"
             type="button"

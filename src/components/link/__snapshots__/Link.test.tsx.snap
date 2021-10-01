@@ -2,7 +2,7 @@
 
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
-  .c-fbdNsg {
+  .c-gEFkc {
     background: unset;
     border: unset;
     padding: unset;
@@ -12,41 +12,41 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     text-decoration: none;
   }
 
-  .c-fbdNsg:focus,
-  .c-fbdNsg:hover {
-    color: var(--colors-tertiary);
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fbdNsg:active {
-    color: var(--colors-primary);
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
   }
 
-  .c-jwkyIg > .c-fbdNsg,
-  .c-hswVDG > .c-fbdNsg,
-  .c-PJLV > .c-fbdNsg {
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-jwkyIg > .c-fbdNsg::before,
-  .c-jwkyIg > .c-fbdNsg::after,
-  .c-hswVDG > .c-fbdNsg::before,
-  .c-hswVDG > .c-fbdNsg::after,
-  .c-PJLV > .c-fbdNsg::before,
-  .c-PJLV > .c-fbdNsg::after {
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
     content: none;
   }
 
-  .c-jwkyIg {
-    color: var(--colors-tonal800);
+  .c-dbleUi {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-hswVDG {
-    color: var(--colors-tonal800);
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
@@ -54,69 +54,69 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 }
 
 @media  {
-  .c-fbdNsg-gvmVBy-size-md {
+  .c-gEFkc-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::before {
+  .c-gEFkc-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::after {
+  .c-gEFkc-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg {
+  .c-gEFkc-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg::before {
+  .c-gEFkc-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg::after {
+  .c-gEFkc-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
   }
 
-  .c-jwkyIg-gvmVBy-size-md {
+  .c-dbleUi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::before {
+  .c-dbleUi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::after {
+  .c-dbleUi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-hswVDG-fOoUdm-size-md {
+  .c-iSnHBU-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-hswVDG-fOoUdm-size-md::before {
+  .c-iSnHBU-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-hswVDG-fOoUdm-size-md::after {
+  .c-iSnHBU-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
@@ -125,29 +125,29 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 
 <div>
   <p
-    class="c-jwkyIg c-jwkyIg-gvmVBy-size-md"
+    class="c-dbleUi c-dbleUi-gvmVBy-size-md"
   >
-    <a
-      class="c-fbdNsg c-fbdNsg-gvmVBy-size-md"
+    <button
+      class="c-gEFkc c-gEFkc-gvmVBy-size-md"
     >
       TEXT LINK
-    </a>
+    </button>
   </p>
   <h2
-    class="c-hswVDG c-hswVDG-fOoUdm-size-md"
+    class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
   >
-    <a
-      class="c-fbdNsg c-fbdNsg-gvmVBy-size-md"
+    <button
+      class="c-gEFkc c-gEFkc-gvmVBy-size-md"
     >
       HEADING LINK
-    </a>
+    </button>
   </h2>
 </div>
 `;
 
 exports[`Link component renders an anchor 1`] = `
 @media  {
-  .c-fbdNsg {
+  .c-gEFkc {
     background: unset;
     border: unset;
     padding: unset;
@@ -157,46 +157,46 @@ exports[`Link component renders an anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-fbdNsg:focus,
-  .c-fbdNsg:hover {
-    color: var(--colors-tertiary);
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fbdNsg:active {
-    color: var(--colors-primary);
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
   }
 
-  .c-jwkyIg > .c-fbdNsg,
-  .c-hswVDG > .c-fbdNsg,
-  .c-PJLV > .c-fbdNsg {
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-jwkyIg > .c-fbdNsg::before,
-  .c-jwkyIg > .c-fbdNsg::after,
-  .c-hswVDG > .c-fbdNsg::before,
-  .c-hswVDG > .c-fbdNsg::after,
-  .c-PJLV > .c-fbdNsg::before,
-  .c-PJLV > .c-fbdNsg::after {
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
     content: none;
   }
 }
 
 @media  {
-  .c-fbdNsg-gvmVBy-size-md {
+  .c-gEFkc-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::before {
+  .c-gEFkc-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::after {
+  .c-gEFkc-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -205,7 +205,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="c-fbdNsg c-fbdNsg-gvmVBy-size-md"
+    class="c-gEFkc c-gEFkc-gvmVBy-size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -215,7 +215,7 @@ exports[`Link component renders an anchor 1`] = `
 
 exports[`Link component renders an large anchor 1`] = `
 @media  {
-  .c-fbdNsg {
+  .c-gEFkc {
     background: unset;
     border: unset;
     padding: unset;
@@ -225,63 +225,63 @@ exports[`Link component renders an large anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-fbdNsg:focus,
-  .c-fbdNsg:hover {
-    color: var(--colors-tertiary);
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fbdNsg:active {
-    color: var(--colors-primary);
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
   }
 
-  .c-jwkyIg > .c-fbdNsg,
-  .c-hswVDG > .c-fbdNsg,
-  .c-PJLV > .c-fbdNsg {
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-jwkyIg > .c-fbdNsg::before,
-  .c-jwkyIg > .c-fbdNsg::after,
-  .c-hswVDG > .c-fbdNsg::before,
-  .c-hswVDG > .c-fbdNsg::after,
-  .c-PJLV > .c-fbdNsg::before,
-  .c-PJLV > .c-fbdNsg::after {
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
     content: none;
   }
 }
 
 @media  {
-  .c-fbdNsg-gvmVBy-size-md {
+  .c-gEFkc-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::before {
+  .c-gEFkc-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-gvmVBy-size-md::after {
+  .c-gEFkc-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg {
+  .c-gEFkc-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg::before {
+  .c-gEFkc-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-fbdNsg-jvTRJO-size-lg::after {
+  .c-gEFkc-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
@@ -290,7 +290,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="c-fbdNsg c-fbdNsg-jvTRJO-size-lg"
+    class="c-gEFkc c-gEFkc-jvTRJO-size-lg"
     href="https://google.com/"
   >
     GOOGLE

@@ -9,7 +9,7 @@ const StyledInput = styled('input', {
   borderRadius: '$0',
   boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
-  color: '$tonal800',
+  color: '$tonal600',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
@@ -22,8 +22,12 @@ const StyledInput = styled('input', {
   },
   '&[disabled]': {
     backgroundColor: '$tonal100',
-    color: '$tonal600',
+    color: '$tonal400',
     cursor: 'not-allowed'
+  },
+  '&::placeholder': {
+    color: '$tonal300',
+    opacity: 1
   },
   variants: {
     size: {

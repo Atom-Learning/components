@@ -2,7 +2,7 @@
 
 exports[`Button component Loading state renders a loading button 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -14,25 +14,17 @@ exports[`Button component Loading state renders a loading button 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
   }
 
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
-  }
-
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 
@@ -64,7 +56,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -72,18 +64,19 @@ exports[`Button component Loading state renders a loading button 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dBUxNn-kupcZn-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 
-  .c-icSaAK-rloUt-isRounded-true {
+  .c-fkUJsw-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-icSaAK-NDVFZ-isLoading-true {
+  .c-fkUJsw-DdIlq-isLoading-true {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: 0.6;
     pointer-events: none;
   }
 
@@ -96,43 +89,55 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 @media  {
-  .c-dBUxNn-ihbvLxt-css {
+  .c-dbrbZt-idQfaGE-css {
     margin-left: var(--space-3);
+    height: 20px;
+    width: 20px;
   }
 
   .c-dhzjXW-ihMdMjL-css {
@@ -150,7 +155,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-NDVFZ-isLoading-true c-icSaAK-epyqWI-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-DdIlq-isLoading-true c-fkUJsw-gsycxF-cv"
     type="button"
   >
     <div
@@ -183,7 +188,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 exports[`Button component renders a button 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -195,21 +200,14 @@ exports[`Button component renders a button 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
-  }
-
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -219,25 +217,31 @@ exports[`Button component renders a button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-epyqWI-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON
@@ -247,7 +251,7 @@ exports[`Button component renders a button 1`] = `
 
 exports[`Button component renders a button with an icon 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -259,31 +263,23 @@ exports[`Button component renders a button with an icon 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
   }
 
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
-  }
-
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -291,62 +287,75 @@ exports[`Button component renders a button with an icon 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dBUxNn-kupcZn-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 @media  {
-  .c-dBUxNn-ihbvLxt-css {
+  .c-dbrbZt-idQfaGE-css {
     margin-left: var(--space-3);
+    height: 20px;
+    width: 20px;
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-epyqWI-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihbvLxt-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -360,7 +369,7 @@ exports[`Button component renders a button with an icon 1`] = `
 
 exports[`Button component renders a disabled button 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -372,21 +381,14 @@ exports[`Button component renders a disabled button 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
-  }
-
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -396,43 +398,53 @@ exports[`Button component renders a disabled button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-epyqWI-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
     disabled=""
     type="button"
   >
@@ -443,7 +455,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 exports[`Button component renders a disabled warning outline button 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -455,21 +467,14 @@ exports[`Button component renders a disabled warning outline button 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
-  }
-
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -479,43 +484,53 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md"
     disabled=""
     type="button"
   >
@@ -526,7 +541,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 
 exports[`Button component renders a outline button 1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -538,21 +553,14 @@ exports[`Button component renders a outline button 1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
-  }
-
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -562,43 +570,53 @@ exports[`Button component renders a outline button 1`] = `
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-cRpAgC-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fSssiS-cv"
     type="button"
   >
     BUTTON
@@ -608,7 +626,7 @@ exports[`Button component renders a outline button 1`] = `
 
 exports[`Button component renders a rounded button  1`] = `
 @media  {
-  .c-icSaAK {
+  .c-fkUJsw {
     align-items: center;
     background: unset;
     border: unset;
@@ -620,31 +638,23 @@ exports[`Button component renders a rounded button  1`] = `
     justify-content: center;
     padding: unset;
     text-decoration: none;
-    transition: all 125ms ease-out;
+    transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
   }
 
-  .c-icSaAK[disabled] {
-    background: var(--colors-tonal100);
-    border-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
-    cursor: not-allowed;
-  }
-
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 }
 
 @media  {
-  .c-icSaAK-elrwsr-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -652,66 +662,79 @@ exports[`Button component renders a rounded button  1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dBUxNn-kupcZn-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 
-  .c-icSaAK-rloUt-isRounded-true {
+  .c-fkUJsw-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 }
 
 @media  {
-  .c-icSaAK-epyqWI-cv {
+  .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):hover,
-  .c-icSaAK-epyqWI-cv:not([disabled]):focus {
-    background: var(--colors-tertiary);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-icSaAK-epyqWI-cv:not([disabled]):active {
-    background: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 
-  .c-icSaAK-cRpAgC-cv {
+  .c-fkUJsw-fSssiS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
-    background: white;
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):hover,
-  .c-icSaAK-cRpAgC-cv:not([disabled]):focus {
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-tertiary);
-    background: white;
+    color: var(--colors-primaryMid);
   }
 
-  .c-icSaAK-cRpAgC-cv:not([disabled]):active {
-    color: var(--colors-primary);
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
   }
 }
 
 @media  {
-  .c-dBUxNn-ihbvLxt-css {
+  .c-dbrbZt-idQfaGE-css {
     margin-left: var(--space-3);
+    height: 20px;
+    width: 20px;
   }
 }
 
 <div>
   <button
-    class="c-icSaAK c-icSaAK-elrwsr-size-md c-icSaAK-rloUt-isRounded-true c-icSaAK-epyqWI-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-rloUt-isRounded-true c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihbvLxt-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

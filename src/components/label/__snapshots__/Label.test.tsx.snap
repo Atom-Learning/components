@@ -2,8 +2,8 @@
 
 exports[`Label component renders a label 1`] = `
 @media  {
-  .c-jMiJvg {
-    color: var(--colors-tonal800);
+  .c-bkstqh {
+    color: var(--colors-tonal500);
     display: block;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -12,18 +12,18 @@ exports[`Label component renders a label 1`] = `
 }
 
 @media  {
-  .c-jMiJvg-gvmVBy-size-md {
+  .c-bkstqh-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::before {
+  .c-bkstqh-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::after {
+  .c-bkstqh-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -32,7 +32,7 @@ exports[`Label component renders a label 1`] = `
 
 <div>
   <label
-    class="c-jMiJvg c-jMiJvg-gvmVBy-size-md"
+    class="c-bkstqh c-bkstqh-gvmVBy-size-md"
   >
     TEXT
   </label>

@@ -2,11 +2,11 @@
 
 exports[`Carousel component renders 1`] = `
 @media  {
-  .c-kesdyt {
+  .c-fdtEEY {
     align-items: center;
     background: unset;
     border: unset;
-    color: var(--colors-tertiary);
+    color: var(--colors-primary);
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -18,21 +18,24 @@ exports[`Carousel component renders 1`] = `
     transition: color 0.15s ease-in-out;
   }
 
-  .c-kesdyt:hover {
-    color: var(--colors-primary);
+  .c-fdtEEY:hover {
+    color: var(--colors-primaryMid);
   }
 
-  .c-kesdyt:disabled {
-    color: var(--colors-tonal300);
+  .c-fdtEEY:active {
+    color: var(--colors-primaryDark);
   }
 
-  .c-dBUxNn {
+  .c-fdtEEY:disabled {
+    color: var(--colors-tonal100);
+  }
+
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 
@@ -78,12 +81,12 @@ exports[`Carousel component renders 1`] = `
     max-width: none;
   }
 
-  .c-fDEGHa {
+  .c-eetsND {
     justify-content: center;
   }
 
-  .c-fDEGHa button {
-    background: var(--colors-tonal300);
+  .c-eetsND button {
+    background: var(--colors-tonal200);
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -92,18 +95,24 @@ exports[`Carousel component renders 1`] = `
     padding: var(--space-1);
     height: var(--space-3);
     width: var(--space-3);
-    transition: all 0.25s ease-in;
+    transition: all 100ms ease-in;
   }
 
-  .c-fDEGHa button[class*="selected"] {
-    background: var(--colors-tertiary);
+  .c-eetsND button[class*="selected"] {
+    background: var(--colors-primary);
+  }
+
+  .c-eetsND button:hover,
+  .c-eetsND button:focus {
+    background: var(--colors-primaryMid);
   }
 }
 
 @media  {
-  .c-dBUxNn-fDXBFo-size-md {
+  .c-dbrbZt-hemXWm-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
+    stroke-width: 2;
   }
 }
 
@@ -117,36 +126,36 @@ exports[`Carousel component renders 1`] = `
     width: 500px;
   }
 
-  .c-kesdyt-idcEsDf-css {
+  .c-fdtEEY-idcEsDf-css {
     position: absolute;
     left: var(--space-2);
   }
 
 @media (min-width: 800px) {
-    .c-kesdyt-idcEsDf-css {
+    .c-fdtEEY-idcEsDf-css {
       left: var(--space-3);
     }
 }
 
 @media (min-width: 1100px) {
-    .c-kesdyt-idcEsDf-css {
+    .c-fdtEEY-idcEsDf-css {
       left: var(--space-4);
     }
 }
 
-  .c-kesdyt-ieFGiTU-css {
+  .c-fdtEEY-ieFGiTU-css {
     position: absolute;
     right: var(--space-2);
   }
 
 @media (min-width: 800px) {
-    .c-kesdyt-ieFGiTU-css {
+    .c-fdtEEY-ieFGiTU-css {
       right: var(--space-3);
     }
 }
 
 @media (min-width: 1100px) {
-    .c-kesdyt-ieFGiTU-css {
+    .c-fdtEEY-ieFGiTU-css {
       right: var(--space-4);
     }
 }
@@ -180,13 +189,13 @@ exports[`Carousel component renders 1`] = `
     >
       <button
         aria-label="previous"
-        class="buttonBack___1mlaL carousel__back-button c-kesdyt c-kesdyt-idcEsDf-css"
+        class="buttonBack___1mlaL carousel__back-button c-fdtEEY c-fdtEEY-idcEsDf-css"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dBUxNn c-dBUxNn-fDXBFo-size-md"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -197,12 +206,12 @@ exports[`Carousel component renders 1`] = `
       </button>
       <button
         aria-label="next"
-        class="buttonNext___2mOCa carousel__next-button c-kesdyt c-kesdyt-ieFGiTU-css"
+        class="buttonNext___2mOCa carousel__next-button c-fdtEEY c-fdtEEY-ieFGiTU-css"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dBUxNn c-dBUxNn-fDXBFo-size-md"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -317,7 +326,7 @@ exports[`Carousel component renders 1`] = `
         </div>
       </div>
       <div
-        class="carousel__dot-group c-fDEGHa"
+        class="carousel__dot-group c-eetsND"
       >
         <button
           aria-label="slide dot"

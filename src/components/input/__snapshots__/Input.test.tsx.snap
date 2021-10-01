@@ -2,14 +2,14 @@
 
 exports[`Input component renders a number input 1`] = `
 @media  {
-  .c-dtikvq {
+  .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal800);
+    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -19,27 +19,32 @@ exports[`Input component renders a number input 1`] = `
     width: 100%;
   }
 
-  .c-dtikvq:focus {
+  .c-fZTBsJ:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-dtikvq[disabled] {
+  .c-fZTBsJ[disabled] {
     background-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal400);
     cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
   }
 }
 
 @media  {
-  .c-dtikvq-pHZal-size-md {
+  .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
 }
 
 @media  {
-  .c-dtikvq-ikLAKdM-css {
+  .c-fZTBsJ-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -48,7 +53,7 @@ exports[`Input component renders a number input 1`] = `
 
 <div>
   <input
-    class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-ikLAKdM-css"
+    class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ikLAKdM-css"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -59,14 +64,14 @@ exports[`Input component renders a number input 1`] = `
 
 exports[`Input component renders a text input 1`] = `
 @media  {
-  .c-dtikvq {
+  .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal800);
+    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -76,27 +81,32 @@ exports[`Input component renders a text input 1`] = `
     width: 100%;
   }
 
-  .c-dtikvq:focus {
+  .c-fZTBsJ:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-dtikvq[disabled] {
+  .c-fZTBsJ[disabled] {
     background-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal400);
     cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
   }
 }
 
 @media  {
-  .c-dtikvq-pHZal-size-md {
+  .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
 }
 
 @media  {
-  .c-dtikvq-ikLAKdM-css {
+  .c-fZTBsJ-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -105,7 +115,7 @@ exports[`Input component renders a text input 1`] = `
 
 <div>
   <input
-    class="c-dtikvq c-dtikvq-pHZal-size-md c-dtikvq-ikLAKdM-css"
+    class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ikLAKdM-css"
     placeholder="INPUT"
     type="text"
   />

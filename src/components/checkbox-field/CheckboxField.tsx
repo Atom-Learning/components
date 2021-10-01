@@ -55,6 +55,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
               onChange(event.target.value !== CheckboxValue.ON)
             }}
             value={value ? CheckboxValue.ON : CheckboxValue.OFF}
+            {...(error && { state: 'error' })}
             {...remainingProps}
           />
         </InlineFieldWrapper>

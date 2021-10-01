@@ -22,7 +22,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
       <Icon
         is={Search}
         css={{
-          color: '$tonal500',
+          color: '$tonal300',
           pointerEvents: 'none',
           position: 'absolute',
           size: size === 'sm' ? '$1' : 20,

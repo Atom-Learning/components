@@ -6,18 +6,17 @@ exports[`ValidationError component renders a validation error 1`] = `
     display: flex;
   }
 
-  .c-dBUxNn {
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 
-  .c-jwkyIg {
-    color: var(--colors-tonal800);
+  .c-dbleUi {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
@@ -25,23 +24,24 @@ exports[`ValidationError component renders a validation error 1`] = `
 }
 
 @media  {
-  .c-dBUxNn-kupcZn-size-sm {
+  .c-dbrbZt-eAiySG-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
+    stroke-width: 1.75;
   }
 
-  .c-jwkyIg-bndJoy-size-sm {
+  .c-dbleUi-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-jwkyIg-bndJoy-size-sm::before {
+  .c-dbleUi-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-jwkyIg-bndJoy-size-sm::after {
+  .c-dbleUi-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -54,12 +54,12 @@ exports[`ValidationError component renders a validation error 1`] = `
     align-items: flex-start;
   }
 
-  .c-dBUxNn-ihYlUBO-css {
+  .c-dbrbZt-ihYlUBO-css {
     margin-right: var(--space-2);
     flex-shrink: 0;
   }
 
-  .c-jwkyIg-ikkBjHS-css {
+  .c-dbleUi-ikkBjHS-css {
     color: inherit;
     transform: translateY(var(--space-1));
   }
@@ -71,7 +71,7 @@ exports[`ValidationError component renders a validation error 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihYlUBO-css"
+      class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -91,7 +91,7 @@ exports[`ValidationError component renders a validation error 1`] = `
       />
     </svg>
     <p
-      class="c-jwkyIg c-jwkyIg-bndJoy-size-sm c-jwkyIg-ikkBjHS-css"
+      class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
     >
       VALIDATION ERROR
     </p>

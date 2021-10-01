@@ -2,8 +2,8 @@
 
 exports[`Text component renders some text 1`] = `
 @media  {
-  .c-jwkyIg {
-    color: var(--colors-tonal800);
+  .c-dbleUi {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
@@ -11,18 +11,18 @@ exports[`Text component renders some text 1`] = `
 }
 
 @media  {
-  .c-jwkyIg-gvmVBy-size-md {
+  .c-dbleUi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::before {
+  .c-dbleUi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jwkyIg-gvmVBy-size-md::after {
+  .c-dbleUi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -31,7 +31,7 @@ exports[`Text component renders some text 1`] = `
 
 <div>
   <p
-    class="c-jwkyIg c-jwkyIg-gvmVBy-size-md"
+    class="c-dbleUi c-dbleUi-gvmVBy-size-md"
   >
     TEXT
   </p>

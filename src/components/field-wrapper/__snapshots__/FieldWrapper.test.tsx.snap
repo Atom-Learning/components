@@ -6,15 +6,15 @@ exports[`FieldWrapper component renders 1`] = `
     display: flex;
   }
 
-  .c-jMiJvg {
-    color: var(--colors-tonal800);
+  .c-bkstqh {
+    color: var(--colors-tonal500);
     display: block;
     font-family: var(--fonts-body);
     font-weight: 600;
     margin: 0;
   }
 
-  .c-fbdNsg {
+  .c-gEFkc {
     background: unset;
     border: unset;
     padding: unset;
@@ -24,40 +24,40 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fbdNsg:focus,
-  .c-fbdNsg:hover {
-    color: var(--colors-tertiary);
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fbdNsg:active {
-    color: var(--colors-primary);
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
   }
 
-  .c-jwkyIg > .c-fbdNsg,
-  .c-hswVDG > .c-fbdNsg,
-  .c-PJLV > .c-fbdNsg {
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-jwkyIg > .c-fbdNsg::before,
-  .c-jwkyIg > .c-fbdNsg::after,
-  .c-hswVDG > .c-fbdNsg::before,
-  .c-hswVDG > .c-fbdNsg::after,
-  .c-PJLV > .c-fbdNsg::before,
-  .c-PJLV > .c-fbdNsg::after {
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
     content: none;
   }
 
-  .c-dtikvq {
+  .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal800);
+    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -67,29 +67,33 @@ exports[`FieldWrapper component renders 1`] = `
     width: 100%;
   }
 
-  .c-dtikvq:focus {
+  .c-fZTBsJ:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-dtikvq[disabled] {
+  .c-fZTBsJ[disabled] {
     background-color: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+    color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-dBUxNn {
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-dbrbZt {
     display: inline-block;
     fill: none;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 2;
     vertical-align: middle;
   }
 
-  .c-jwkyIg {
-    color: var(--colors-tonal800);
+  .c-dbleUi {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
@@ -97,62 +101,63 @@ exports[`FieldWrapper component renders 1`] = `
 }
 
 @media  {
-  .c-jMiJvg-gvmVBy-size-md {
+  .c-bkstqh-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::before {
+  .c-bkstqh-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-jMiJvg-gvmVBy-size-md::after {
+  .c-bkstqh-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-fbdNsg-bndJoy-size-sm {
+  .c-gEFkc-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fbdNsg-bndJoy-size-sm::before {
+  .c-gEFkc-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fbdNsg-bndJoy-size-sm::after {
+  .c-gEFkc-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
   }
 
-  .c-dtikvq-pHZal-size-md {
+  .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
 
-  .c-dBUxNn-kupcZn-size-sm {
+  .c-dbrbZt-eAiySG-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
+    stroke-width: 1.75;
   }
 
-  .c-jwkyIg-bndJoy-size-sm {
+  .c-dbleUi-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-jwkyIg-bndJoy-size-sm::before {
+  .c-dbleUi-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-jwkyIg-bndJoy-size-sm::after {
+  .c-dbleUi-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -172,12 +177,12 @@ exports[`FieldWrapper component renders 1`] = `
     margin-top: var(--space-2);
   }
 
-  .c-dBUxNn-ihYlUBO-css {
+  .c-dbrbZt-ihYlUBO-css {
     margin-right: var(--space-2);
     flex-shrink: 0;
   }
 
-  .c-jwkyIg-ikkBjHS-css {
+  .c-dbleUi-ikkBjHS-css {
     color: inherit;
     transform: translateY(var(--space-1));
   }
@@ -191,20 +196,20 @@ exports[`FieldWrapper component renders 1`] = `
       class="c-dhzjXW c-dhzjXW-iwHglP-css"
     >
       <label
-        class="c-jMiJvg c-jMiJvg-gvmVBy-size-md"
+        class="c-bkstqh c-bkstqh-gvmVBy-size-md"
         for="example"
       >
         Example Field
       </label>
       <a
-        class="c-fbdNsg c-fbdNsg-bndJoy-size-sm"
+        class="c-gEFkc c-gEFkc-bndJoy-size-sm"
         href="https://example.com"
       >
         Example prompt
       </a>
     </div>
     <input
-      class="c-dtikvq c-dtikvq-pHZal-size-md"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
       id="example"
       name="example"
       type="text"
@@ -214,7 +219,7 @@ exports[`FieldWrapper component renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dBUxNn c-dBUxNn-kupcZn-size-sm c-dBUxNn-ihYlUBO-css"
+        class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -234,7 +239,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="c-jwkyIg c-jwkyIg-bndJoy-size-sm c-jwkyIg-ikkBjHS-css"
+        class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
       >
         Example error
       </p>

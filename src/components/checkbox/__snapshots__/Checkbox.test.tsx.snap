@@ -2,11 +2,11 @@
 
 exports[`Checkbox component renders a checkbox 1`] = `
 @media  {
-  .c-MHVTU {
+  .c-emNREM {
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal500);
+    border: 1px solid var(--colors-tonal400);
     border-radius: 3px;
     color: white;
     cursor: pointer;
@@ -19,30 +19,26 @@ exports[`Checkbox component renders a checkbox 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-MHVTU[data-state="unchecked"]:focus,
-  .c-MHVTU[data-state="unchecked"]:hover {
-    outline: none;
-  }
-
-  .c-MHVTU[data-state="checked"] {
+  .c-emNREM[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-MHVTU[data-state="checked"]:hover,
-  .c-MHVTU[data-state="unchecked"]:focus {
+  .c-emNREM[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
     border-color: var(--colors-primary);
-    outline: none;
   }
 
-  .c-MHVTU[disabled] {
-    background-color: var(--colors-tonal200);
+  .c-emNREM:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-emNREM[disabled] {
+    background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     cursor: not-allowed;
-  }
-
-  .c-MHVTU:focus-within {
-    outline: none;
+    color: var(--colors-tonal400);
   }
 }
 
@@ -55,7 +51,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="c-MHVTU"
+      class="c-emNREM"
       data-state="unchecked"
       role="checkbox"
       title="test"
