@@ -2,7 +2,7 @@
 title: Form
 component: Form
 description: Form abstracts form validation logic away from the view code
-category: Forms
+category: Form fields
 priority: 1
 ---
 
@@ -301,7 +301,8 @@ To access field value, another render prop that can be used is `watch(fieldName:
           Submit
         </Button>
       </>
-  )}}
+    )
+  }}
 />
 ```
 
@@ -341,10 +342,11 @@ There are a few rules that need to be followed to make the dynamic fields work c
 - Each dynamic field needs to take a default value from the fields object
 - Each field name needs to be in a specific format `fieldArrayName[index].fieldName`, where index is the second arg of `map` function
 - To initialize the useFieldArray hook a control object either from `useFormContext` or a Form render prop needs to be used.
+
 ```tsx
 const { fields } = useFieldArray({
   control,
-  name: "testArray",
+  name: 'testArray'
 })
 
 //////
@@ -367,14 +369,14 @@ Example:
 <Form
   defaultValues={{
     testArray: [
-      { field1: "test",  field2: true },
-      { field1: "test2", field2: true },
-    ],
+      { field1: 'test', field2: true },
+      { field1: 'test2', field2: true }
+    ]
   }}
   render={({ control }) => {
     const { fields, append, remove } = useFieldArray({
       control,
-      name: "testArray",
+      name: 'testArray'
     })
 
     return (
@@ -394,12 +396,10 @@ Example:
           </div>
         ))}
 
-        <button onClick={() => append({ field1: "test", field2: false })}>
+        <button onClick={() => append({ field1: 'test', field2: false })}>
           Add Item
         </button>
-        <button onClick={() => remove(0)}>
-          Remove first item
-        </button>
+        <button onClick={() => remove(0)}>Remove first item</button>
       </>
     )
   }}
