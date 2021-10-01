@@ -8,10 +8,10 @@ category: Layout
 The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
 
 ```tsx preview
-<Tabs defaultValue="tab1" css={{ height: '400px' }}>
+<Tabs defaultValue="tab1" css={{ height: '100px' }}>
   <Tabs.TriggerList>
     <Tabs.Trigger value="tab1">
-      <Text>Nested component under the Tabs.Trigger component</Text>
+      Nested component under the Tabs.Trigger component
     </Tabs.Trigger>
     <Tabs.Trigger value="tab2">Simple text</Tabs.Trigger>
   </Tabs.TriggerList>
@@ -30,7 +30,7 @@ The component provides a set of default styles, which can be overwritten by usin
 It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
 
 ```tsx
-<Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
+<Tabs defaultValue="tab1">
 ```
 
 ## Tabs.TriggerList

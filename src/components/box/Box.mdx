@@ -20,7 +20,7 @@ To show an example of the benefits of using `Box`, the card below is composed to
   as="article"
   css={{
     border: '1px solid $tonal100',
-    borderRadius: '$2',
+    borderRadius: '$1',
     overflow: 'hidden',
     width: '320px'
   }}
@@ -31,22 +31,22 @@ To show an example of the benefits of using `Box`, the card below is composed to
       as="figcaption"
       size="sm"
       css={{
-        bottom: '$2',
+        bottom: '$3',
         color: 'white',
         position: 'absolute',
-        right: '$2'
+        right: '$3'
       }}
     >
       Here is a cute cat
     </Text>
   </Box>
-  <Box css={{ px: '$3', py: '$4' }}>
-    <Heading as="h2" size="sm" css={{ mb: '$3' }}>
+  <Stack gap="4" css={{ px: '$3', py: '$4' }}>
+    <Heading as="h2" size="sm">
       Cat
     </Heading>
     <Text>
       The cat (Felis catus) is a domestic species of small carnivorous mammal.
     </Text>
-  </Box>
+  </Stack>
 </Box>
 ```

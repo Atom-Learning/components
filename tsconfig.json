@@ -17,6 +17,6 @@
     },
     "declaration": true // output d.ts files
   },
-  "include": ["./src/", "types/global.d.ts"],
+  "include": ["./src/*", "types/global.d.ts"],
   "exclude": ["./src/**/*.test.*"]
 }

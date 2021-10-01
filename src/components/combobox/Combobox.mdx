@@ -12,8 +12,8 @@ Arbitrary components can be nested inside the `Combobox.Popover` to allow for mo
 Note that when combined with a `Label`, the `id` that matches the `Label`'s `htmlFor` prop should go on the `Combobox.Input`.
 
 ```jsx live
-<Box css={{ mx: 'auto', width: '400px', mt: '$3' }}>
-  <Label css={{ mb: '$2' }} htmlFor="someid">
+<Box css={{ width: '400px' }}>
+  <Label css={{ mb: '$3' }} htmlFor="someid">
     What's your favourite fruit?
   </Label>
   <Combobox onSelect={console.log} openOnFocus>
@@ -25,11 +25,11 @@ Note that when combined with a `Label`, the `id` that matches the `Label`'s `htm
         <Combobox.Option value="Cranberry" />
         <Combobox.Option value="Dragon fruit" />
 
-        <Flex css={{ alignItems: 'center' }}>
-          <Input placeholder="New fruit" css={{ height: '$2' }} />
+        <Flex css={{ alignItems: 'center', p: '$2' }}>
+          <Input size="sm" placeholder="New fruit" />
           <Button
             size="sm"
-            css={{ m: '$2' }}
+            css={{ ml: '$2' }}
             onClick={() =>
               alert('Nest other interactive UI here for advanced usecases')
             }
