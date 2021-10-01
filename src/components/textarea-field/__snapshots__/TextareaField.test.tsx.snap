@@ -36,7 +36,7 @@ exports[`TextareaField component renders 1`] = `
   display: table;
 }
 
-.sxym69s {
+.sxw9jbw {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -44,7 +44,7 @@ exports[`TextareaField component renders 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -58,19 +58,19 @@ exports[`TextareaField component renders 1`] = `
   width: 100%;
 }
 
-.sxym69s:focus {
+.sxw9jbw:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxym69s[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  color: var(--sx-colors-tonal300);
+.sxw9jbw[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxym69s::placeholder {
-  color: var(--sx-colors-tonal200);
+.sxw9jbw::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
@@ -91,7 +91,7 @@ exports[`TextareaField component renders 1`] = `
         />
       </div>
       <textarea
-        class="sxym69s"
+        class="sxw9jbw"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -137,7 +137,7 @@ exports[`TextareaField component renders with an error 1`] = `
   display: table;
 }
 
-.sxym69s {
+.sxw9jbw {
   box-shadow: none;
   font-size: var(--sx-fontSizes-md);
   -webkit-appearance: none;
@@ -145,7 +145,7 @@ exports[`TextareaField component renders with an error 1`] = `
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   line-height: 1.4;
@@ -159,19 +159,19 @@ exports[`TextareaField component renders with an error 1`] = `
   width: 100%;
 }
 
-.sxym69s:focus {
+.sxw9jbw:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxym69s[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  color: var(--sx-colors-tonal300);
+.sxw9jbw[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxym69s::placeholder {
-  color: var(--sx-colors-tonal200);
+.sxw9jbw::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
@@ -192,7 +192,7 @@ exports[`TextareaField component renders with an error 1`] = `
         />
       </div>
       <textarea
-        class="sxym69s"
+        class="sxw9jbw"
         error="Error Message"
         id="description"
         name="description"

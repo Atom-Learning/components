@@ -11,21 +11,48 @@ import { Icon } from '../icon/Icon'
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
   color: base,
-  '&:hover, &:focus': { color: interact },
-  '&:active': { color: active }
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
+    color: interact
+  },
+  '&:not(:disabled):active': {
+    color: active
+  },
+  '&[disabled]': {
+    color: '$tonal400',
+    cursor: 'not-allowed'
+  }
 })
 const getSolidVariant = (base: string, interact: string, active: string) => ({
   bg: base,
   color: 'white',
-  '&:hover, &:focus': { bg: interact, color: 'white' },
-  '&:active': { bg: active }
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
+    bg: interact,
+    color: 'white'
+  },
+  '&:not(:disabled):active': {
+    bg: active
+  },
+  '&[disabled]': {
+    bg: '$tonal100',
+    color: '$tonal400',
+    cursor: 'not-allowed'
+  }
 })
 const getOutlineVariant = (base: string, interact: string, active: string) => ({
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
-  '&:hover, &:focus': { color: interact },
-  '&:active': { color: active }
+  '&:not(:disabled):hover, &:not(:disabled):focus': {
+    color: interact
+  },
+  '&:not(:disabled):active': {
+    color: active
+  },
+  '&[disabled]': {
+    borderColor: '$tonal400',
+    color: '$tonal400',
+    cursor: 'not-allowed'
+  }
 })
 
 const StyledButton = styled('button', {
@@ -39,13 +66,7 @@ const StyledButton = styled('button', {
   display: 'flex',
   justifyContent: 'center',
   p: 'unset',
-  transition: 'all 125ms ease-out',
-  '&[disabled], &[disabled]:hover, &[disabled]:focus': {
-    bg: '$tonal50',
-    color: '$tonal300',
-    borderColor: '$tonal50',
-    cursor: 'not-allowed'
-  },
+  transition: 'all 100ms ease-out',
   variants: {
     theme: {
       neutral: {},

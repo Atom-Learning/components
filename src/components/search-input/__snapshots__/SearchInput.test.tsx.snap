@@ -30,14 +30,14 @@ exports[`SearchInput component renders 1`] = `
   left: 10px;
 }
 
-.sxtvycl {
+.sx7g9w1 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -47,29 +47,28 @@ exports[`SearchInput component renders 1`] = `
   width: 100%;
 }
 
-.sxtvycl:focus {
+.sx7g9w1:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxtvycl[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  border-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal300);
+.sx7g9w1[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxtvycl::placeholder {
-  color: var(--sx-colors-tonal200);
+.sx7g9w1::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
-.sxtvyclpw03g--size-md {
+.sx7g9w1pw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
 
-.sxtvycl-qayb7 {
+.sx7g9w1-qayb7 {
   padding-left: var(--sx-space-6);
 }
 
@@ -93,7 +92,7 @@ exports[`SearchInput component renders 1`] = `
       />
     </svg>
     <input
-      class="sxtvycl sxtvyclpw03g--size-md sxtvycl-qayb7"
+      class="sx7g9w1 sx7g9w1pw03g--size-md sx7g9w1-qayb7"
       type="search"
     />
   </div>

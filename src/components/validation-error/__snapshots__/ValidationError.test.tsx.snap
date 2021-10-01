@@ -30,31 +30,31 @@ exports[`ValidationError component renders a validation error 1`] = `
   flex-shrink: 0;
 }
 
-.sxyn8hn {
-  color: var(--sx-colors-tonal500);
+.sx8yt8k {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxyn8hnid6h2--size-sm {
+.sx8yt8kid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxyn8hnid6h2--size-sm::before {
+.sx8yt8kid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxyn8hnid6h2--size-sm::after {
+.sx8yt8kid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxyn8hn-n4ol9 {
+.sx8yt8k-n4ol9 {
   color: inherit;
   transform: translateY(var(--sx-space-1));
 }
@@ -85,7 +85,7 @@ exports[`ValidationError component renders a validation error 1`] = `
       />
     </svg>
     <p
-      class="sxyn8hn sxyn8hnid6h2--size-sm sxyn8hn-n4ol9"
+      class="sx8yt8k sx8yt8kid6h2--size-sm sx8yt8k-n4ol9"
     >
       VALIDATION ERROR
     </p>

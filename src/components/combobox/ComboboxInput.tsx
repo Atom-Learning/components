@@ -14,7 +14,7 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   border: '1px solid $tonal300',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal500',
+  color: '$tonal600',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
@@ -23,6 +23,10 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   pr: '$6',
   transition: 'all 100ms ease-out',
   width: '100%',
+  '&::placeholder': {
+    color: '$tonal300',
+    opacity: 1
+  },
   '&:focus-within': {
     borderColor: '$primary',
     outline: 'none'

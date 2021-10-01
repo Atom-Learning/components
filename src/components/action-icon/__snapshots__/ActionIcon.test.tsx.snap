@@ -21,7 +21,7 @@ exports[`ActionIcon component renders 1`] = `
   width: 16px;
 }
 
-.sx5tsqk {
+.sxua1zw {
   align-items: center;
   -webkit-appearance: none;
   appearance: none;
@@ -33,41 +33,37 @@ exports[`ActionIcon component renders 1`] = `
   display: flex;
   justify-content: center;
   padding: unset;
-  transition: all 125ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.sx5tsqk[disabled],
-.sx5tsqk[disabled]:hover,
-.sx5tsqk[disabled]:focus {
-  background: var(--sx-colors-tonal50);
-  color: var(--sx-colors-tonal300);
-  border-color: var(--sx-colors-tonal50);
-  cursor: not-allowed;
-}
-
-.sx5tsqke6fss--size-md {
+.sxua1zwe6fss--size-md {
   height: var(--sx-sizes-3);
   width: var(--sx-sizes-3);
 }
 
-.sx5tsqk97pz9--c2 {
+.sxua1zw2gexy--c2 {
   background: transparent;
   color: var(--sx-colors-primary);
 }
 
-.sx5tsqk97pz9--c2:hover,
-.sx5tsqk97pz9--c2:focus {
+.sxua1zw2gexy--c2:not(:disabled):hover,
+.sxua1zw2gexy--c2:not(:disabled):focus {
   color: var(--sx-colors-primaryMid);
 }
 
-.sx5tsqk97pz9--c2:active {
+.sxua1zw2gexy--c2:not(:disabled):active {
   color: var(--sx-colors-primaryDark);
+}
+
+.sxua1zw2gexy--c2[disabled] {
+  color: var(--sx-colors-tonal400);
+  cursor: not-allowed;
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="sx5tsqk sx5tsqk03kze--theme-primary sx5tsqk03kze--appearance-simple sx5tsqke6fss--size-md sx5tsqk97pz9--c2"
+    class="sxua1zw sxua1zw03kze--theme-primary sxua1zw03kze--appearance-simple sxua1zwe6fss--size-md sxua1zw2gexy--c2"
     type="button"
   >
     <svg />

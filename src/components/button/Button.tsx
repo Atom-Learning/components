@@ -1,10 +1,11 @@
 import { StitchesVariants } from '@stitches/react'
+import { darken } from 'polished'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Icon } from '~/components/icon'
 import { Loader } from '~/components/loader'
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
@@ -16,11 +17,14 @@ const getButtonOutlineVariant = (
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
-  bg: 'white',
+  '&[disabled]': {
+    borderColor: '$tonal400',
+    color: '$tonal400',
+    cursor: 'not-allowed'
+  },
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
-    color: interact,
-    bg: 'white'
+    color: interact
   },
   '&:not([disabled]):active': {
     color: active
@@ -35,6 +39,11 @@ const getButtonSolidVariant = (
 ) => ({
   bg: base,
   color: text,
+  '&[disabled]': {
+    bg: '$tonal100',
+    color: '$tonal400',
+    cursor: 'not-allowed'
+  },
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: interact,
     color: text
@@ -54,21 +63,15 @@ export const StyledButton = styled('button', {
   fontFamily: '$body',
   fontWeight: 600,
   justifyContent: 'center',
-  letterSpacing: '0.02em',
   p: 'unset',
   textDecoration: 'none',
   transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
-  '&[disabled]': {
-    bg: '$tonal50',
-    borderColor: '$tonal50',
-    color: '$tonal300',
-    cursor: 'not-allowed'
-  },
   variants: {
     theme: {
       primary: {},
+      secondary: {},
       success: {},
       warning: {},
       danger: {}
@@ -89,12 +92,18 @@ export const StyledButton = styled('button', {
         lineHeight: 1.5,
         height: '$4',
         px: '$5'
+      },
+      lg: {
+        fontSize: '$lg',
+        lineHeight: 1.5,
+        height: '$5',
+        px: '$5'
       }
     },
     isLoading: {
       true: {
         cursor: 'not-allowed',
-        opacity: 0.5,
+        opacity: 0.6,
         pointerEvents: 'none'
       }
     },
@@ -115,6 +124,15 @@ export const StyledButton = styled('button', {
       theme: 'primary',
       appearance: 'solid',
       css: getButtonSolidVariant('$primary', '$primaryMid', '$primaryDark')
+    },
+    {
+      theme: 'secondary',
+      appearance: 'solid',
+      css: getButtonSolidVariant(
+        '$primaryDark',
+        darken(0.1, theme.colors.primaryDark.value),
+        darken(0.15, theme.colors.primaryDark.value)
+      )
     },
     {
       theme: 'success',
@@ -162,13 +180,25 @@ const WithLoader = ({ isLoading, children }) => (
   </>
 )
 
+const getIconSize = (size) => {
+  switch (size) {
+    case 'lg':
+      return 22
+    case 'md':
+      return 20
+    case 'sm':
+    default:
+      return 16
+  }
+}
+
 const getChildren = (children, size) =>
   React.Children.map(children, (child, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
         css: {
           [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3',
-          size: size === 'md' ? 20 : 16,
+          size: getIconSize(size),
           ...(child.props.css ? child.props.css : {})
         }
       })

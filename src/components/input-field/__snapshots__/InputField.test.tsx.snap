@@ -43,31 +43,31 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-top: var(--sx-space-2);
 }
 
-.sxyn8hn {
-  color: var(--sx-colors-tonal500);
+.sx8yt8k {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxyn8hnid6h2--size-sm {
+.sx8yt8kid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxyn8hnid6h2--size-sm::before {
+.sx8yt8kid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxyn8hnid6h2--size-sm::after {
+.sx8yt8kid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxyn8hn-n4ol9 {
+.sx8yt8k-n4ol9 {
   color: inherit;
   transform: translateY(var(--sx-space-1));
 }
@@ -102,14 +102,14 @@ exports[`InputField component renders a field in error state 1`] = `
   margin-left: var(--sx-space-1);
 }
 
-.sxtvycl {
+.sx7g9w1 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -119,29 +119,28 @@ exports[`InputField component renders a field in error state 1`] = `
   width: 100%;
 }
 
-.sxtvycl:focus {
+.sx7g9w1:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxtvycl[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  border-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal300);
+.sx7g9w1[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxtvycl::placeholder {
-  color: var(--sx-colors-tonal200);
+.sx7g9w1::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
-.sxtvyclpw03g--size-md {
+.sx7g9w1pw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
 
-.sxtvyclhpnso--state-error {
+.sx7g9w1hpnso--state-error {
   border: 1px solid var(--sx-colors-danger);
 }
 
@@ -169,7 +168,7 @@ exports[`InputField component renders a field in error state 1`] = `
         </label>
       </div>
       <input
-        class="sxtvycl sxtvyclpw03g--size-md sxtvyclhpnso--state-error"
+        class="sx7g9w1 sx7g9w1pw03g--size-md sx7g9w1hpnso--state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
@@ -199,7 +198,7 @@ exports[`InputField component renders a field in error state 1`] = `
           />
         </svg>
         <p
-          class="sxyn8hn sxyn8hnid6h2--size-sm sxyn8hn-n4ol9"
+          class="sx8yt8k sx8yt8kid6h2--size-sm sx8yt8k-n4ol9"
         >
           This field is required
         </p>
@@ -256,14 +255,14 @@ exports[`InputField component renders a field with a number input 1`] = `
   display: table;
 }
 
-.sxtvycl {
+.sx7g9w1 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -273,24 +272,23 @@ exports[`InputField component renders a field with a number input 1`] = `
   width: 100%;
 }
 
-.sxtvycl:focus {
+.sx7g9w1:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxtvycl[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  border-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal300);
+.sx7g9w1[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxtvycl::placeholder {
-  color: var(--sx-colors-tonal200);
+.sx7g9w1::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
-.sxtvyclpw03g--size-md {
+.sx7g9w1pw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
@@ -314,7 +312,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         </label>
       </div>
       <input
-        class="sxtvycl sxtvyclpw03g--size-md"
+        class="sx7g9w1 sx7g9w1pw03g--size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -369,14 +367,14 @@ exports[`InputField component renders a field with a text input 1`] = `
   display: table;
 }
 
-.sxtvycl {
+.sx7g9w1 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -386,24 +384,23 @@ exports[`InputField component renders a field with a text input 1`] = `
   width: 100%;
 }
 
-.sxtvycl:focus {
+.sx7g9w1:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxtvycl[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  border-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal300);
+.sx7g9w1[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxtvycl::placeholder {
-  color: var(--sx-colors-tonal200);
+.sx7g9w1::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
-.sxtvyclpw03g--size-md {
+.sx7g9w1pw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
@@ -427,7 +424,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         </label>
       </div>
       <input
-        class="sxtvycl sxtvyclpw03g--size-md"
+        class="sx7g9w1 sx7g9w1pw03g--size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

@@ -13,10 +13,14 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   overflow: 'hidden',
   p: '$0',
   position: 'relative',
-  transition: 'background-color 100ms ease',
+  transition: 'all 50ms ease-out',
   width: '$4',
   '&:hover': {
     backgroundColor: '$tonal300'
+  },
+  '&:focus': {
+    outline: '2px solid $primary',
+    outlineOffset: '1px'
   },
   '&[data-state="checked"]': {
     backgroundColor: '$primary'
@@ -27,11 +31,11 @@ const StyledSwitch = styled(RadixSwitch.Root, {
 })
 
 const StyledThumb = styled(RadixSwitch.Thumb, {
-  display: 'block',
-  size: '$1',
   backgroundColor: 'white',
   borderRadius: '$round',
-  transition: 'transform 100ms',
+  display: 'block',
+  size: '$1',
+  transition: 'transform 75ms',
   willChange: 'transform',
   '&[data-state="checked"]': {
     transform: 'translateX(calc($sizes$2 - $space$1))'

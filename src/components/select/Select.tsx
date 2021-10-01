@@ -11,7 +11,7 @@ const StyledSelect = styled('select', {
   backgroundRepeat: 'no-repeat, repeat',
   border: '1px solid $tonal300',
   borderRadius: '$0',
-  color: '$tonal500',
+  color: '$tonal600',
   display: 'block',
   fontFamily: '$body',
   fontWeight: 400,
@@ -29,8 +29,8 @@ const StyledSelect = styled('select', {
     display: 'none'
   },
   '&[disabled], > option[disabled]': {
-    backgroundColor: '$tonal50',
-    color: '$tonal300',
+    backgroundColor: '$tonal100',
+    color: '$tonal400',
     cursor: 'not-allowed'
   },
   variants: {

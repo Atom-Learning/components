@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWrapper component renders 1`] = `
-.sxtvycl {
+.sx7g9w1 {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--sx-colors-tonal400);
   border-radius: var(--sx-radii-0);
   box-shadow: none;
   box-sizing: border-box;
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   cursor: text;
   display: block;
   font-family: var(--sx-fonts-body);
@@ -18,24 +18,23 @@ exports[`FieldWrapper component renders 1`] = `
   width: 100%;
 }
 
-.sxtvycl:focus {
+.sx7g9w1:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxtvycl[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  border-color: var(--sx-colors-tonal300);
-  color: var(--sx-colors-tonal300);
+.sx7g9w1[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxtvycl::placeholder {
-  color: var(--sx-colors-tonal200);
+.sx7g9w1::placeholder {
+  color: var(--sx-colors-tonal300);
   opacity: 1;
 }
 
-.sxtvyclpw03g--size-md {
+.sx7g9w1pw03g--size-md {
   height: var(--sx-sizes-4);
   font-size: var(--sx-fontSizes-md);
 }
@@ -56,31 +55,31 @@ exports[`FieldWrapper component renders 1`] = `
   margin-top: var(--sx-space-2);
 }
 
-.sxyn8hn {
-  color: var(--sx-colors-tonal500);
+.sx8yt8k {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxyn8hnid6h2--size-sm {
+.sx8yt8kid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxyn8hnid6h2--size-sm::before {
+.sx8yt8kid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxyn8hnid6h2--size-sm::after {
+.sx8yt8kid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
 }
 
-.sxyn8hn-n4ol9 {
+.sx8yt8k-n4ol9 {
   color: inherit;
   transform: translateY(var(--sx-space-1));
 }
@@ -110,7 +109,7 @@ exports[`FieldWrapper component renders 1`] = `
   display: table;
 }
 
-.sxlyjic {
+.sxi05ns {
   background: unset;
   border: unset;
   padding: unset;
@@ -120,44 +119,44 @@ exports[`FieldWrapper component renders 1`] = `
   text-decoration: none;
 }
 
-.sxlyjic:focus,
-.sxlyjic:hover {
+.sxi05ns:focus,
+.sxi05ns:hover {
   color: var(--sx-colors-primaryMid);
   text-decoration: underline;
 }
 
-.sxlyjic:active {
+.sxi05ns:active {
   color: var(--sx-colors-primaryDark);
 }
 
-.sxyn8hn > .sxlyjic,
-.sxlk8sk > .sxlyjic,
-.sx03kze > .sxlyjic {
+.sx8yt8k > .sxi05ns,
+.sx8wio2 > .sxi05ns,
+.sx03kze > .sxi05ns {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxyn8hn > .sxlyjic::before,
-.sxyn8hn > .sxlyjic::after,
-.sxlk8sk > .sxlyjic::before,
-.sxlk8sk > .sxlyjic::after,
-.sx03kze > .sxlyjic::before,
-.sx03kze > .sxlyjic::after {
+.sx8yt8k > .sxi05ns::before,
+.sx8yt8k > .sxi05ns::after,
+.sx8wio2 > .sxi05ns::before,
+.sx8wio2 > .sxi05ns::after,
+.sx03kze > .sxi05ns::before,
+.sx03kze > .sxi05ns::after {
   content: none;
 }
 
-.sxlyjicid6h2--size-sm {
+.sxi05nsid6h2--size-sm {
   font-size: var(--sx-fontSizes-sm);
   line-height: 1.53;
 }
 
-.sxlyjicid6h2--size-sm::before {
+.sxi05nsid6h2--size-sm::before {
   content: '';
   margin-bottom: -0.4056em;
   display: table;
 }
 
-.sxlyjicid6h2--size-sm::after {
+.sxi05nsid6h2--size-sm::after {
   content: '';
   margin-top: -0.4056em;
   display: table;
@@ -197,14 +196,14 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="sxlyjic sxlyjicid6h2--size-sm"
+        class="sxi05ns sxi05nsid6h2--size-sm"
         href="https://example.com"
       >
         Example prompt
       </a>
     </div>
     <input
-      class="sxtvycl sxtvyclpw03g--size-md"
+      class="sx7g9w1 sx7g9w1pw03g--size-md"
       id="example"
       name="example"
       type="text"
@@ -234,7 +233,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="sxyn8hn sxyn8hnid6h2--size-sm sxyn8hn-n4ol9"
+        class="sx8yt8k sx8yt8kid6h2--size-sm sx8yt8k-n4ol9"
       >
         Example error
       </p>

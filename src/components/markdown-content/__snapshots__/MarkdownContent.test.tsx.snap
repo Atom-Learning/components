@@ -1,40 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownContent component renders 1`] = `
-.sxyn8hn {
-  color: var(--sx-colors-tonal500);
+.sx8yt8k {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-body);
   font-weight: 400;
   margin: 0;
 }
 
-.sxyn8hn8bitc--size-md {
+.sx8yt8k8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxyn8hn8bitc--size-md::before {
+.sx8yt8k8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxyn8hn8bitc--size-md::after {
+.sx8yt8k8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxyn8hn-kpzng {
+.sx8yt8k-kpzng {
   color: inherit;
   max-width: 75ch;
 }
 
-.sxyn8hn-kpzng:not(:last-child) {
+.sx8yt8k-kpzng:not(:last-child) {
   margin-bottom: var(--sx-space-5);
 }
 
-.sxyn8hn-2obmh {
+.sx8yt8k-2obmh {
   color: inherit;
 }
 
@@ -52,110 +52,110 @@ exports[`MarkdownContent component renders 1`] = `
   margin-bottom: var(--sx-space-5);
 }
 
-.sxlk8sk {
-  color: var(--sx-colors-tonal500);
+.sx8wio2 {
+  color: var(--sx-colors-tonal600);
   font-family: var(--sx-fonts-display);
   font-weight: 700;
   margin: 0;
 }
 
-.sxlk8sk9egxm--size-lg {
+.sx8wio29egxm--size-lg {
   font-size: var(--sx-fontSizes-2xl);
   line-height: 1.08;
 }
 
-.sxlk8sk9egxm--size-lg::before {
+.sx8wio29egxm--size-lg::before {
   content: '';
   margin-bottom: -0.1865em;
   display: table;
 }
 
-.sxlk8sk9egxm--size-lg::after {
+.sx8wio29egxm--size-lg::after {
   content: '';
   margin-top: -0.1945em;
   display: table;
 }
 
-.sxlk8skbk74v--size-xl {
+.sx8wio2bk74v--size-xl {
   font-size: var(--sx-fontSizes-3xl);
   line-height: 1.12;
 }
 
-.sxlk8skbk74v--size-xl::before {
+.sx8wio2bk74v--size-xl::before {
   content: '';
   margin-bottom: -0.206em;
   display: table;
 }
 
-.sxlk8skbk74v--size-xl::after {
+.sx8wio2bk74v--size-xl::after {
   content: '';
   margin-top: -0.214em;
   display: table;
 }
 
-.sxlk8sk9zj0i--size-md {
+.sx8wio29zj0i--size-md {
   font-size: var(--sx-fontSizes-xl);
   line-height: 1.14;
 }
 
-.sxlk8sk9zj0i--size-md::before {
+.sx8wio29zj0i--size-md::before {
   content: '';
   margin-bottom: -0.2174em;
   display: table;
 }
 
-.sxlk8sk9zj0i--size-md::after {
+.sx8wio29zj0i--size-md::after {
   content: '';
   margin-top: -0.2254em;
   display: table;
 }
 
-.sxlk8skgcpf2--size-sm {
+.sx8wio2gcpf2--size-sm {
   font-size: var(--sx-fontSizes-lg);
   line-height: 1.14;
 }
 
-.sxlk8skgcpf2--size-sm::before {
+.sx8wio2gcpf2--size-sm::before {
   content: '';
   margin-bottom: -0.2174em;
   display: table;
 }
 
-.sxlk8skgcpf2--size-sm::after {
+.sx8wio2gcpf2--size-sm::after {
   content: '';
   margin-top: -0.2254em;
   display: table;
 }
 
-.sxlk8sklt963--size-xs {
+.sx8wio2lt963--size-xs {
   font-family: var(--sx-fonts-body);
   font-weight: 600;
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxlk8sklt963--size-xs::before {
+.sx8wio2lt963--size-xs::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxlk8sklt963--size-xs::after {
+.sx8wio2lt963--size-xs::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
 }
 
-.sxlk8sk-yo9l7 {
+.sx8wio2-yo9l7 {
   color: inherit;
   max-width: 65ch;
 }
 
-.sxlk8sk-yo9l7:not(:first-child) {
+.sx8wio2-yo9l7:not(:first-child) {
   margin-top: var(--sx-space-5);
 }
 
-.sxlk8sk-yo9l7:not(:last-child) {
+.sx8wio2-yo9l7:not(:last-child) {
   margin-bottom: var(--sx-space-5);
 }
 
@@ -268,7 +268,7 @@ exports[`MarkdownContent component renders 1`] = `
   padding: var(--sx-space-0) var(--sx-space-1);
 }
 
-.sxlyjic {
+.sxi05ns {
   background: unset;
   border: unset;
   padding: unset;
@@ -278,44 +278,44 @@ exports[`MarkdownContent component renders 1`] = `
   text-decoration: none;
 }
 
-.sxlyjic:focus,
-.sxlyjic:hover {
+.sxi05ns:focus,
+.sxi05ns:hover {
   color: var(--sx-colors-primaryMid);
   text-decoration: underline;
 }
 
-.sxlyjic:active {
+.sxi05ns:active {
   color: var(--sx-colors-primaryDark);
 }
 
-.sxyn8hn > .sxlyjic,
-.sxlk8sk > .sxlyjic,
-.sx03kze > .sxlyjic {
+.sx8yt8k > .sxi05ns,
+.sx8wio2 > .sxi05ns,
+.sx03kze > .sxi05ns {
   font-size: 100%;
   line-height: 1;
 }
 
-.sxyn8hn > .sxlyjic::before,
-.sxyn8hn > .sxlyjic::after,
-.sxlk8sk > .sxlyjic::before,
-.sxlk8sk > .sxlyjic::after,
-.sx03kze > .sxlyjic::before,
-.sx03kze > .sxlyjic::after {
+.sx8yt8k > .sxi05ns::before,
+.sx8yt8k > .sxi05ns::after,
+.sx8wio2 > .sxi05ns::before,
+.sx8wio2 > .sxi05ns::after,
+.sx03kze > .sxi05ns::before,
+.sx03kze > .sxi05ns::after {
   content: none;
 }
 
-.sxlyjic8bitc--size-md {
+.sxi05ns8bitc--size-md {
   font-size: var(--sx-fontSizes-md);
   line-height: 1.5;
 }
 
-.sxlyjic8bitc--size-md::before {
+.sxi05ns8bitc--size-md::before {
   content: '';
   margin-bottom: -0.3864em;
   display: table;
 }
 
-.sxlyjic8bitc--size-md::after {
+.sxi05ns8bitc--size-md::after {
   content: '';
   margin-top: -0.3864em;
   display: table;
@@ -333,7 +333,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Headings
     </h2>
@@ -341,32 +341,32 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h1
-      class="sxlk8sk sxlk8skbk74v--size-xl sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio2bk74v--size-xl sx8wio2-yo9l7"
     >
       h1 Heading
     </h1>
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       h2 Heading
     </h2>
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       h3 Heading
     </h3>
     <h4
-      class="sxlk8sk sxlk8skgcpf2--size-sm sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio2gcpf2--size-sm sx8wio2-yo9l7"
     >
       h4 Heading
     </h4>
     <h5
-      class="sxlk8sk sxlk8sklt963--size-xs sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio2lt963--size-xs sx8wio2-yo9l7"
     >
       h5 Heading
     </h5>
     <h6
-      class="sxlk8sk sxlk8sklt963--size-xs sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio2lt963--size-xs sx8wio2-yo9l7"
     >
       h6 Heading
     </h6>
@@ -374,7 +374,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Emphasis
     </h2>
@@ -382,7 +382,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <strong
         class="sx4d3ki"
@@ -391,7 +391,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <strong
         class="sx4d3ki"
@@ -400,7 +400,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <em
         class="sxiwbex"
@@ -409,7 +409,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <em
         class="sxiwbex"
@@ -421,7 +421,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Blockquotes
     </h2>
@@ -432,7 +432,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Lists
     </h2>
@@ -440,7 +440,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       Unordered
     </h3>
@@ -451,7 +451,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Create a list by starting a line with 
           <code
@@ -477,7 +477,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
@@ -488,7 +488,7 @@ exports[`MarkdownContent component renders 1`] = `
             class="sx03kze"
           >
             <p
-              class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+              class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
             >
               Marker character change forces new list start:
             </p>
@@ -499,7 +499,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
                 >
                   Ac tristique libero volutpat at
                 </p>
@@ -512,7 +512,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
@@ -525,7 +525,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="sx03kze"
               >
                 <p
-                  class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -538,14 +538,14 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Very easy!
         </p>
       </li>
     </ul>
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       Ordered
     </h3>
@@ -556,7 +556,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -565,7 +565,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Consectetur adipiscing elit
         </p>
@@ -574,7 +574,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           Integer molestie lorem at massa
         </p>
@@ -583,7 +583,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           You can use sequential numbers...
         </p>
@@ -592,7 +592,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="sx03kze"
       >
         <p
-          class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-2obmh"
+          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
         >
           ...or keep all the numbers as 
           <code
@@ -607,7 +607,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Code
     </h2>
@@ -615,12 +615,12 @@ exports[`MarkdownContent component renders 1`] = `
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       Inline code
     </h3>
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       This is inline 
       <code
@@ -630,7 +630,7 @@ exports[`MarkdownContent component renders 1`] = `
       </code>
     </p>
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       Indented code
     </h3>
@@ -643,7 +643,7 @@ line 2 of code
 line 3 of code
     </pre>
     <h3
-      class="sxlk8sk sxlk8sk9zj0i--size-md sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
     >
       Block code "fences"
     </h3>
@@ -656,7 +656,7 @@ line 3 of code
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Links
     </h2>
@@ -664,20 +664,20 @@ line 3 of code
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <a
-        class="sxlyjic sxlyjic8bitc--size-md"
+        class="sxi05ns sxi05ns8bitc--size-md"
         href="http://dev.nodeca.com"
       >
         link text
       </a>
     </p>
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <a
-        class="sxlyjic sxlyjic8bitc--size-md"
+        class="sxi05ns sxi05ns8bitc--size-md"
         href="http://nodeca.github.io/pica/demo/"
         title="title text!"
       >
@@ -688,7 +688,7 @@ line 3 of code
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <h2
-      class="sxlk8sk sxlk8sk9egxm--size-lg sxlk8sk-yo9l7"
+      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
     >
       Images
     </h2>
@@ -696,7 +696,7 @@ line 3 of code
       class="sxlgf7o sxlgf7o-76pw2"
     />
     <p
-      class="sxyn8hn sxyn8hn8bitc--size-md sxyn8hn-kpzng"
+      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
     >
       <img
         alt="Minion"

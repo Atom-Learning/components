@@ -36,7 +36,7 @@ exports[`SelectField component renders 1`] = `
   display: table;
 }
 
-.sxe93ip {
+.sxevq90 {
   -webkit-appearance: none;
   appearance: none;
   background-color: white;
@@ -44,7 +44,7 @@ exports[`SelectField component renders 1`] = `
   background-repeat: no-repeat, repeat;
   border: 1px solid var(--sx-colors-tonal300);
   border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal500);
+  color: var(--sx-colors-tonal600);
   display: block;
   font-family: var(--sx-fonts-body);
   font-weight: 400;
@@ -53,27 +53,27 @@ exports[`SelectField component renders 1`] = `
   width: 100%;
 }
 
-.sxe93ip:hover {
+.sxevq90:hover {
   cursor: pointer;
 }
 
-.sxe93ip:focus {
+.sxevq90:focus {
   border-color: var(--sx-colors-primary);
   outline: none;
 }
 
-.sxe93ip::-ms-expand {
+.sxevq90::-ms-expand {
   display: none;
 }
 
-.sxe93ip[disabled],
-.sxe93ip > option[disabled] {
-  background-color: var(--sx-colors-tonal50);
-  color: var(--sx-colors-tonal300);
+.sxevq90[disabled],
+.sxevq90 > option[disabled] {
+  background-color: var(--sx-colors-tonal100);
+  color: var(--sx-colors-tonal400);
   cursor: not-allowed;
 }
 
-.sxe93ipw1wwt--size-md {
+.sxevq90w1wwt--size-md {
   background-position: right var(--sx-space-3) top 50%, 0 0;
   background-size: 20px auto, 100%;
   font-size: var(--sx-fontSizes-md);
@@ -101,7 +101,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="sxe93ip sxe93ipw1wwt--size-md"
+        class="sxevq90 sxevq90w1wwt--size-md"
         id="example"
         name="example"
       >
