@@ -1,531 +1,537 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MarkdownContent component renders 1`] = `
-.sx8yt8k {
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  margin: 0;
+@media  {
+  .c-hnXsvE {
+    border: 0;
+    border-top: 1px solid var(--colors-tonal200);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-ecBjWS {
+    font-weight: 600;
+  }
+
+  .c-bYNGXt {
+    font-style: italic;
+  }
+
+  .c-iQukjL {
+    font-family: var(--fonts-body);
+    margin: unset;
+    padding: unset;
+  }
+
+  .c-iQukjL > .c-PJLV:not(:last-child) {
+    margin-bottom: var(--space-2);
+  }
+
+  .c-iQukjL > .c-PJLV:last-child {
+    margin-bottom: 0;
+  }
+
+  .c-bUqGCm {
+    background: var(--colors-tonal100);
+    border-radius: var(--radii-0);
+    color: var(--colors-tonal600);
+    display: inline-block;
+    font-family: var(--fonts-mono);
+    font-size: 85%;
+    padding: var(--space-0) var(--space-1);
+  }
+
+  .c-lopCzs {
+    background: var(--colors-tonal100);
+    border-radius: var(--radii-1);
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-mono);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.4;
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-4);
+    padding: var(--space-3);
+  }
+
+  .c-gEFkc {
+    background: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    text-decoration: none;
+  }
+
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
+    text-decoration: underline;
+  }
+
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
+    content: none;
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
 }
 
-.sx8yt8k8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
+@media  {
+  .c-iSnHBU-bSbzjX-size-lg {
+    font-size: var(--fontSizes-2xl);
+    line-height: 1.08;
+  }
+
+  .c-iSnHBU-bSbzjX-size-lg::before {
+    content: '';
+    margin-bottom: -0.1865em;
+    display: table;
+  }
+
+  .c-iSnHBU-bSbzjX-size-lg::after {
+    content: '';
+    margin-top: -0.1945em;
+    display: table;
+  }
+
+  .c-iSnHBU-kYeJd-size-xl {
+    font-size: var(--fontSizes-3xl);
+    line-height: 1.12;
+  }
+
+  .c-iSnHBU-kYeJd-size-xl::before {
+    content: '';
+    margin-bottom: -0.206em;
+    display: table;
+  }
+
+  .c-iSnHBU-kYeJd-size-xl::after {
+    content: '';
+    margin-top: -0.214em;
+    display: table;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-iSnHBU-llheLm-size-xs {
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dbleUi-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-bfiEAN-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iQukjL-DlQlZ-as-ul {
+    padding-left: var(--space-3);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+    padding-left: var(--space-2);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
+    content: "•";
+    font-weight: bold;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol {
+    padding-left: var(--space-4);
+    list-style: decimal;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV {
+    padding-left: var(--space-1);
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV::marker {
+    font-size: var(--fontSizes-sm);
+    font-weight: bold;
+  }
+
+  .c-gEFkc-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-gEFkc-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-gEFkc-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
-.sx8yt8k8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
+@media  {
+  .c-hnXsvE-icGzAje-css {
+    width: 100%;
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
 
-.sx8yt8k8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
+  .c-iSnHBU-ifCXdlF-css {
+    color: inherit;
+    max-width: 65ch;
+  }
 
-.sx8yt8k-kpzng {
-  color: inherit;
-  max-width: 75ch;
-}
+  .c-iSnHBU-ifCXdlF-css:not(:first-child) {
+    margin-top: var(--space-5);
+  }
 
-.sx8yt8k-kpzng:not(:last-child) {
-  margin-bottom: var(--sx-space-5);
-}
+  .c-iSnHBU-ifCXdlF-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
 
-.sx8yt8k-2obmh {
-  color: inherit;
-}
+  .c-dbleUi-ijBQtuh-css {
+    color: inherit;
+    max-width: 75ch;
+  }
 
-.sxlgf7o {
-  border: 0;
-  border-top: 1px solid var(--sx-colors-tonal200);
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+  .c-dbleUi-ijBQtuh-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
 
-.sxlgf7o-76pw2 {
-  width: 100%;
-  margin-top: var(--sx-space-5);
-  margin-bottom: var(--sx-space-5);
-}
+  .c-iQukjL-iapbzE-css p:before,
+  .c-iQukjL-iapbzE-css p:after {
+    display: none;
+  }
 
-.sx8wio2 {
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-display);
-  font-weight: 700;
-  margin: 0;
-}
+  .c-iQukjL-iapbzE-css {
+    max-width: 75ch;
+  }
 
-.sx8wio29egxm--size-lg {
-  font-size: var(--sx-fontSizes-2xl);
-  line-height: 1.08;
-}
+  .c-iQukjL-iapbzE-css:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
 
-.sx8wio29egxm--size-lg::before {
-  content: '';
-  margin-bottom: -0.1865em;
-  display: table;
-}
+  .c-dbleUi-ibHwuwj-css {
+    color: inherit;
+  }
 
-.sx8wio29egxm--size-lg::after {
-  content: '';
-  margin-top: -0.1945em;
-  display: table;
-}
-
-.sx8wio2bk74v--size-xl {
-  font-size: var(--sx-fontSizes-3xl);
-  line-height: 1.12;
-}
-
-.sx8wio2bk74v--size-xl::before {
-  content: '';
-  margin-bottom: -0.206em;
-  display: table;
-}
-
-.sx8wio2bk74v--size-xl::after {
-  content: '';
-  margin-top: -0.214em;
-  display: table;
-}
-
-.sx8wio29zj0i--size-md {
-  font-size: var(--sx-fontSizes-xl);
-  line-height: 1.14;
-}
-
-.sx8wio29zj0i--size-md::before {
-  content: '';
-  margin-bottom: -0.2174em;
-  display: table;
-}
-
-.sx8wio29zj0i--size-md::after {
-  content: '';
-  margin-top: -0.2254em;
-  display: table;
-}
-
-.sx8wio2gcpf2--size-sm {
-  font-size: var(--sx-fontSizes-lg);
-  line-height: 1.14;
-}
-
-.sx8wio2gcpf2--size-sm::before {
-  content: '';
-  margin-bottom: -0.2174em;
-  display: table;
-}
-
-.sx8wio2gcpf2--size-sm::after {
-  content: '';
-  margin-top: -0.2254em;
-  display: table;
-}
-
-.sx8wio2lt963--size-xs {
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx8wio2lt963--size-xs::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx8wio2lt963--size-xs::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx8wio2-yo9l7 {
-  color: inherit;
-  max-width: 65ch;
-}
-
-.sx8wio2-yo9l7:not(:first-child) {
-  margin-top: var(--sx-space-5);
-}
-
-.sx8wio2-yo9l7:not(:last-child) {
-  margin-bottom: var(--sx-space-5);
-}
-
-.sxkoa5n {
-  vertical-align: middle;
-  max-width: 100%;
-}
-
-.sxkoa5n[width] {
-  width: auto;
-}
-
-.sxkoa5n[width][height] {
-  height: auto;
-}
-
-.sxkoa5n[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
-.sxfcjnm {
-  font-family: var(--sx-fonts-body);
-  margin: unset;
-  padding: unset;
-}
-
-.sxfcjnm > .sx03kze:not(:last-child) {
-  margin-bottom: var(--sx-space-2);
-}
-
-.sxfcjnm > .sx03kze:last-child {
-  margin-bottom: 0;
-}
-
-.sxfcjnmq7qe9--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxfcjnm4kvou--as-ul {
-  padding-left: var(--sx-space-3);
-}
-
-.sxfcjnm4kvou--as-ul > .sx03kze {
-  padding-left: var(--sx-space-2);
-}
-
-.sxfcjnm4kvou--as-ul > .sx03kze::marker {
-  content: "•";
-  font-weight: bold;
-}
-
-.sxfcjnm0fmz6--as-ol {
-  padding-left: var(--sx-space-4);
-  list-style: decimal;
-}
-
-.sxfcjnm0fmz6--as-ol > .sx03kze {
-  padding-left: var(--sx-space-1);
-}
-
-.sxfcjnm0fmz6--as-ol > .sx03kze::marker {
-  font-size: var(--sx-fontSizes-sm);
-  font-weight: bold;
-}
-
-.sxfcjnm-huhqq p:before,
-.sxfcjnm-huhqq p:after {
-  display: none;
-}
-
-.sxfcjnm-huhqq {
-  max-width: 75ch;
-}
-
-.sxfcjnm-huhqq:not(:last-child) {
-  margin-bottom: var(--sx-space-5);
-}
-
-.sxfcjnm-jvdf5 p:before,
-.sxfcjnm-jvdf5 p:after {
-  display: none;
-}
-
-.sxt4nq2 {
-  background: var(--sx-colors-tonal100);
-  border-radius: var(--sx-radii-1);
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-mono);
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.4;
-  margin-top: var(--sx-space-4);
-  margin-bottom: var(--sx-space-4);
-  padding: var(--sx-space-3);
-}
-
-.sxiwbex {
-  font-style: italic;
-}
-
-.sx4omy6 {
-  background: var(--sx-colors-tonal100);
-  border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal600);
-  display: inline-block;
-  font-family: var(--sx-fonts-mono);
-  font-size: 85%;
-  padding: var(--sx-space-0) var(--sx-space-1);
-}
-
-.sxi05ns {
-  background: unset;
-  border: unset;
-  padding: unset;
-  color: var(--sx-colors-primary);
-  cursor: pointer;
-  font-family: var(--sx-fonts-body);
-  text-decoration: none;
-}
-
-.sxi05ns:focus,
-.sxi05ns:hover {
-  color: var(--sx-colors-primaryMid);
-  text-decoration: underline;
-}
-
-.sxi05ns:active {
-  color: var(--sx-colors-primaryDark);
-}
-
-.sx8yt8k > .sxi05ns,
-.sx8wio2 > .sxi05ns,
-.sx03kze > .sxi05ns {
-  font-size: 100%;
-  line-height: 1;
-}
-
-.sx8yt8k > .sxi05ns::before,
-.sx8yt8k > .sxi05ns::after,
-.sx8wio2 > .sxi05ns::before,
-.sx8wio2 > .sxi05ns::after,
-.sx03kze > .sxi05ns::before,
-.sx03kze > .sxi05ns::after {
-  content: none;
-}
-
-.sxi05ns8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxi05ns8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sxi05ns8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx4d3ki {
-  font-weight: 600;
+  .c-iQukjL-igZTZYS-css p:before,
+  .c-iQukjL-igZTZYS-css p:after {
+    display: none;
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
   >
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Headings
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h1
-      class="sx8wio2 sx8wio2bk74v--size-xl sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-kYeJd-size-xl c-iSnHBU-ifCXdlF-css"
     >
       h1 Heading
     </h1>
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       h2 Heading
     </h2>
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       h3 Heading
     </h3>
     <h4
-      class="sx8wio2 sx8wio2gcpf2--size-sm sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-dtbHih-size-sm c-iSnHBU-ifCXdlF-css"
     >
       h4 Heading
     </h4>
     <h5
-      class="sx8wio2 sx8wio2lt963--size-xs sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-llheLm-size-xs c-iSnHBU-ifCXdlF-css"
     >
       h5 Heading
     </h5>
     <h6
-      class="sx8wio2 sx8wio2lt963--size-xs sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-llheLm-size-xs c-iSnHBU-ifCXdlF-css"
     >
       h6 Heading
     </h6>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Emphasis
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <strong
-        class="sx4d3ki"
+        class="c-ecBjWS"
       >
         This is bold text
       </strong>
     </p>
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <strong
-        class="sx4d3ki"
+        class="c-ecBjWS"
       >
         This is bold text
       </strong>
     </p>
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <em
-        class="sxiwbex"
+        class="c-bYNGXt"
       >
         This is italic text
       </em>
     </p>
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <em
-        class="sxiwbex"
+        class="c-bYNGXt"
       >
         This is italic text
       </em>
     </p>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Blockquotes
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Lists
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       Unordered
     </h3>
     <ul
-      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-huhqq"
+      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-iapbzE-css"
     >
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Create a list by starting a line with 
           <code
-            class="sx03kze sx4omy6"
+            class="c-PJLV c-bUqGCm"
           >
             +
           </code>
           , 
           <code
-            class="sx03kze sx4omy6"
+            class="c-PJLV c-bUqGCm"
           >
             -
           </code>
           , or 
           <code
-            class="sx03kze sx4omy6"
+            class="c-PJLV c-bUqGCm"
           >
             *
           </code>
         </p>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
+          class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
         >
           <li
-            class="sx03kze"
+            class="c-PJLV"
           >
             <p
-              class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+              class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
             >
               Marker character change forces new list start:
             </p>
             <ul
-              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
+              class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
             >
               <li
-                class="sx03kze"
+                class="c-PJLV"
               >
                 <p
-                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
                 >
                   Ac tristique libero volutpat at
                 </p>
               </li>
             </ul>
             <ul
-              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
+              class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
             >
               <li
-                class="sx03kze"
+                class="c-PJLV"
               >
                 <p
-                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
               </li>
             </ul>
             <ul
-              class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul sxfcjnm-jvdf5"
+              class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
             >
               <li
-                class="sx03kze"
+                class="c-PJLV"
               >
                 <p
-                  class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -535,68 +541,68 @@ exports[`MarkdownContent component renders 1`] = `
         </ul>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Very easy!
         </p>
       </li>
     </ul>
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       Ordered
     </h3>
     <ol
-      class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm0fmz6--as-ol sxfcjnm-huhqq"
+      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-jrjcGe-as-ol c-iQukjL-iapbzE-css"
     >
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Lorem ipsum dolor sit amet
         </p>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Consectetur adipiscing elit
         </p>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           Integer molestie lorem at massa
         </p>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           You can use sequential numbers...
         </p>
       </li>
       <li
-        class="sx03kze"
+        class="c-PJLV"
       >
         <p
-          class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-2obmh"
+          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
         >
           ...or keep all the numbers as 
           <code
-            class="sx03kze sx4omy6"
+            class="c-PJLV c-bUqGCm"
           >
             1.
           </code>
@@ -604,38 +610,38 @@ exports[`MarkdownContent component renders 1`] = `
       </li>
     </ol>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Code
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       Inline code
     </h3>
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       This is inline 
       <code
-        class="sx03kze sx4omy6"
+        class="c-PJLV c-bUqGCm"
       >
         code
       </code>
     </p>
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       Indented code
     </h3>
     <pre
-      class="sx03kze sxt4nq2"
+      class="c-PJLV c-lopCzs"
     >
       // Some comments
 line 1 of code
@@ -643,41 +649,41 @@ line 2 of code
 line 3 of code
     </pre>
     <h3
-      class="sx8wio2 sx8wio29zj0i--size-md sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
     >
       Block code "fences"
     </h3>
     <pre
-      class="sx03kze sxt4nq2"
+      class="c-PJLV c-lopCzs"
     >
       Sample text here...
     </pre>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Links
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <a
-        class="sxi05ns sxi05ns8bitc--size-md"
+        class="c-gEFkc c-gEFkc-gvmVBy-size-md"
         href="http://dev.nodeca.com"
       >
         link text
       </a>
     </p>
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <a
-        class="sxi05ns sxi05ns8bitc--size-md"
+        class="c-gEFkc c-gEFkc-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
         title="title text!"
       >
@@ -685,29 +691,29 @@ line 3 of code
       </a>
     </p>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <h2
-      class="sx8wio2 sx8wio29egxm--size-lg sx8wio2-yo9l7"
+      class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Images
     </h2>
     <hr
-      class="sxlgf7o sxlgf7o-76pw2"
+      class="c-hnXsvE c-hnXsvE-icGzAje-css"
     />
     <p
-      class="sx8yt8k sx8yt8k8bitc--size-md sx8yt8k-kpzng"
+      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
     >
       <img
         alt="Minion"
-        class="sxkoa5n"
+        class="c-eWgOGC"
         src="https://octodex.github.com/images/minion.png"
       />
       
 
       <img
         alt="Stormtroopocat"
-        class="sxkoa5n"
+        class="c-eWgOGC"
         src="https://octodex.github.com/images/stormtroopocat.jpg"
       />
       "

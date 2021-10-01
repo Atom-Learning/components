@@ -1,97 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Table component renders 1`] = `
-.sx995qk {
-  border-bottom: 1px solid var(--sx-colors-tonal100);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal300);
-  font-family: var(--sx-fonts-body);
-  line-height: 1.5;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  text-align: left;
-  vertical-align: middle;
+@media  {
+  .c-kaWNwR {
+    border-collapse: collapse;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dKvdLF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-dKvdLF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal300);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) .c-eMPXna {
+    background: var(--colors-tonal50);
+  }
 }
 
-tr:nth-child(even) .sx995qk {
-  background: var(--sx-colors-tonal50);
+@media  {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+    height: var(--sizes-4);
+  }
 }
 
-.sxzmp3v {
-  background: var(--sx-colors-primaryDark);
-  color: white;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  line-height: 1.5;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  text-align: left;
-  vertical-align: middle;
-}
-
-.sxzmp3v:first-of-type {
-  border-top-left-radius: var(--sx-radii-0);
-  border-bottom-left-radius: var(--sx-radii-0);
-}
-
-.sxzmp3v:last-of-type {
-  border-top-right-radius: var(--sx-radii-0);
-  border-bottom-right-radius: var(--sx-radii-0);
-}
-
-.sx6ya0a {
-  border-collapse: collapse;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-sm);
-  width: 100%;
-}
-
-.sx6ya0aitr32--size-md .sx995qk {
-  height: var(--sx-sizes-4);
-}
-
-.sx6ya0a-a5b4a {
-  height: 100px;
-  width: 400px;
-  color: var(--sx-colors-primary500);
+@media  {
+  .c-kaWNwR-iliYStP-css {
+    height: 100px;
+    width: 400px;
+    color: var(--colors-primary500);
+  }
 }
 
 <div>
   <table
-    class="sx6ya0a sx6ya0aitr32--size-md sx6ya0a-a5b4a"
+    class="c-kaWNwR c-kaWNwR-iNViGf-size-md c-kaWNwR-iliYStP-css"
   >
     <thead
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <th
-          class="sxzmp3v"
+          class="c-dKvdLF"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sx995qk"
+          class="c-eMPXna"
         >
           This is text
         </td>
       </tr>
     </tbody>
     <tfoot
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sx995qk"
+          class="c-eMPXna"
         >
           Footer 1
         </td>
@@ -102,101 +108,107 @@ tr:nth-child(even) .sx995qk {
 `;
 
 exports[`Table component renders with size set to lg 1`] = `
-.sx995qk {
-  border-bottom: 1px solid var(--sx-colors-tonal100);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal300);
-  font-family: var(--sx-fonts-body);
-  line-height: 1.5;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  text-align: left;
-  vertical-align: middle;
+@media  {
+  .c-kaWNwR {
+    border-collapse: collapse;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-dKvdLF {
+    background: var(--colors-primaryDark);
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dKvdLF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-dKvdLF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-eMPXna {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal300);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  tr:nth-child(even) .c-eMPXna {
+    background: var(--colors-tonal50);
+  }
 }
 
-tr:nth-child(even) .sx995qk {
-  background: var(--sx-colors-tonal50);
+@media  {
+  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+    height: var(--sizes-4);
+  }
+
+  .c-kaWNwR-ksfOaK-size-lg .c-eMPXna {
+    height: var(--sizes-5);
+  }
 }
 
-.sxzmp3v {
-  background: var(--sx-colors-primaryDark);
-  color: white;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  line-height: 1.5;
-  padding: var(--sx-space-2) var(--sx-space-3);
-  text-align: left;
-  vertical-align: middle;
-}
-
-.sxzmp3v:first-of-type {
-  border-top-left-radius: var(--sx-radii-0);
-  border-bottom-left-radius: var(--sx-radii-0);
-}
-
-.sxzmp3v:last-of-type {
-  border-top-right-radius: var(--sx-radii-0);
-  border-bottom-right-radius: var(--sx-radii-0);
-}
-
-.sx6ya0a {
-  border-collapse: collapse;
-  font-family: var(--sx-fonts-sans);
-  font-size: var(--sx-fontSizes-sm);
-  width: 100%;
-}
-
-.sx6ya0aitr32--size-md .sx995qk {
-  height: var(--sx-sizes-4);
-}
-
-.sx6ya0ae9knf--size-lg .sx995qk {
-  height: var(--sx-sizes-5);
-}
-
-.sx6ya0a-a5b4a {
-  height: 100px;
-  width: 400px;
-  color: var(--sx-colors-primary500);
+@media  {
+  .c-kaWNwR-iliYStP-css {
+    height: 100px;
+    width: 400px;
+    color: var(--colors-primary500);
+  }
 }
 
 <div>
   <table
-    class="sx6ya0a sx6ya0ae9knf--size-lg sx6ya0a-a5b4a"
+    class="c-kaWNwR c-kaWNwR-ksfOaK-size-lg c-kaWNwR-iliYStP-css"
   >
     <thead
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <th
-          class="sxzmp3v"
+          class="c-dKvdLF"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sx995qk"
+          class="c-eMPXna"
         >
           This is text
         </td>
       </tr>
     </tbody>
     <tfoot
-      class="sx03kze"
+      class="c-PJLV"
     >
       <tr
-        class="sx03kze"
+        class="c-PJLV"
       >
         <td
-          class="sx995qk"
+          class="c-eMPXna"
         >
           Footer 1
         </td>

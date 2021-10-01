@@ -1,25 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Toast component renders 1`] = `
-.sxs49hc {
-  left: var(--sx-space-2);
-  position: fixed;
-  top: var(--sx-space-2);
-  right: var(--sx-space-2);
-  z-index: 2147483647;
-}
+@media  {
+  .c-knRjyP {
+    left: var(--space-2);
+    position: fixed;
+    top: var(--space-2);
+    right: var(--space-2);
+    z-index: 2147483647;
+  }
 
 @media (min-width: 550px) {
-  .sxs49hc {
-    top: var(--sx-space-3);
-    right: auto;
-    left: calc(50% - 200px);
-  }
+    .c-knRjyP {
+      top: var(--space-3);
+      right: auto;
+      left: calc(50% - 200px);
+    }
+}
 }
 
 <div>
   <div
-    class="sxs49hc"
+    class="c-knRjyP"
   />
 </div>
 `;

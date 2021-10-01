@@ -1,43 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component renders a checkbox 1`] = `
-.sx8za6f {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 50ms ease-out;
-}
+@media  {
+  .c-emNREM {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+  }
 
-.sx8za6f[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
+  .c-emNREM[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
 
-.sx8za6f[data-state="indeterminate"] {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
+  .c-emNREM[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
 
-.sx8za6f:focus {
-  outline: 2px solid var(--sx-colors-primary);
-  outline-offset: 1px;
-}
+  .c-emNREM:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-.sx8za6f[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  border-color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-  color: var(--sx-colors-tonal400);
+  .c-emNREM[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    cursor: not-allowed;
+    color: var(--colors-tonal400);
+  }
 }
 
 <div>
@@ -49,7 +51,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="sx8za6f"
+      class="c-emNREM"
       data-state="unchecked"
       role="checkbox"
       title="test"

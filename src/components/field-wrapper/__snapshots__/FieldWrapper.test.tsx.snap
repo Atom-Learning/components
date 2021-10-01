@@ -1,219 +1,225 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWrapper component renders 1`] = `
-.sx7g9w1 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal600);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-gEFkc {
+    background: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    text-decoration: none;
+  }
+
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
+    text-decoration: underline;
+  }
+
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
+    content: none;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sx7g9w1:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
+@media  {
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-gEFkc-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-gEFkc-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-gEFkc-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
+  }
+
+  .c-dbleUi-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
 }
 
-.sx7g9w1[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 
-.sx7g9w1::placeholder {
-  color: var(--sx-colors-tonal300);
-  opacity: 1;
-}
+  .c-dhzjXW-idXOPtz-css {
+    color: var(--colors-danger);
+    align-items: flex-start;
+    margin-top: var(--space-2);
+  }
 
-.sx7g9w1pw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
+  .c-dbrbZt-ihYlUBO-css {
+    margin-right: var(--space-2);
+    flex-shrink: 0;
+  }
 
-.sx2cs53 {
-  display: flex;
-}
-
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
-}
-
-.sx2cs53-1vtbu {
-  color: var(--sx-colors-danger);
-  align-items: flex-start;
-  margin-top: var(--sx-space-2);
-}
-
-.sx8yt8k {
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  margin: 0;
-}
-
-.sx8yt8kid6h2--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.53;
-}
-
-.sx8yt8kid6h2--size-sm::before {
-  content: '';
-  margin-bottom: -0.4056em;
-  display: table;
-}
-
-.sx8yt8kid6h2--size-sm::after {
-  content: '';
-  margin-top: -0.4056em;
-  display: table;
-}
-
-.sx8yt8k-n4ol9 {
-  color: inherit;
-  transform: translateY(var(--sx-space-1));
-}
-
-.sxbagj1 {
-  color: var(--sx-colors-tonal500);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sxbagj18bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxbagj18bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sxbagj18bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sxi05ns {
-  background: unset;
-  border: unset;
-  padding: unset;
-  color: var(--sx-colors-primary);
-  cursor: pointer;
-  font-family: var(--sx-fonts-body);
-  text-decoration: none;
-}
-
-.sxi05ns:focus,
-.sxi05ns:hover {
-  color: var(--sx-colors-primaryMid);
-  text-decoration: underline;
-}
-
-.sxi05ns:active {
-  color: var(--sx-colors-primaryDark);
-}
-
-.sx8yt8k > .sxi05ns,
-.sx8wio2 > .sxi05ns,
-.sx03kze > .sxi05ns {
-  font-size: 100%;
-  line-height: 1;
-}
-
-.sx8yt8k > .sxi05ns::before,
-.sx8yt8k > .sxi05ns::after,
-.sx8wio2 > .sxi05ns::before,
-.sx8wio2 > .sxi05ns::after,
-.sx03kze > .sxi05ns::before,
-.sx03kze > .sxi05ns::after {
-  content: none;
-}
-
-.sxi05nsid6h2--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.53;
-}
-
-.sxi05nsid6h2--size-sm::before {
-  content: '';
-  margin-bottom: -0.4056em;
-  display: table;
-}
-
-.sxi05nsid6h2--size-sm::after {
-  content: '';
-  margin-top: -0.4056em;
-  display: table;
-}
-
-.sxakl60 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  vertical-align: middle;
-}
-
-.sxakl60op5z4--size-sm {
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  stroke-width: 1.75;
-}
-
-.sxakl60-iux96 {
-  margin-right: var(--sx-space-2);
-  flex-shrink: 0;
+  .c-dbleUi-ikkBjHS-css {
+    color: inherit;
+    transform: translateY(var(--space-1));
+  }
 }
 
 <div>
   <div
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx2cs53 sx2cs53-qom1k"
+      class="c-dhzjXW c-dhzjXW-iwHglP-css"
     >
       <label
-        class="sxbagj1 sxbagj18bitc--size-md"
+        class="c-bkstqh c-bkstqh-gvmVBy-size-md"
         for="example"
       >
         Example Field
       </label>
       <a
-        class="sxi05ns sxi05nsid6h2--size-sm"
+        class="c-gEFkc c-gEFkc-bndJoy-size-sm"
         href="https://example.com"
       >
         Example prompt
       </a>
     </div>
     <input
-      class="sx7g9w1 sx7g9w1pw03g--size-md"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
       id="example"
       name="example"
       type="text"
     />
     <div
-      class="sx2cs53 sx2cs53-1vtbu"
+      class="c-dhzjXW c-dhzjXW-idXOPtz-css"
     >
       <svg
         aria-hidden="true"
-        class="sxakl60 sxakl60op5z4--size-sm sxakl60-iux96"
+        class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -233,7 +239,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="sx8yt8k sx8yt8kid6h2--size-sm sx8yt8k-n4ol9"
+        class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
       >
         Example error
       </p>

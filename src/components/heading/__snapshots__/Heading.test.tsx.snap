@@ -1,33 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading component renders a heading 1`] = `
-.sx8wio2 {
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-display);
-  font-weight: 700;
-  margin: 0;
+@media  {
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
 }
 
-.sx8wio29zj0i--size-md {
-  font-size: var(--sx-fontSizes-xl);
-  line-height: 1.14;
-}
+@media  {
+  .c-iSnHBU-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
 
-.sx8wio29zj0i--size-md::before {
-  content: '';
-  margin-bottom: -0.2174em;
-  display: table;
-}
+  .c-iSnHBU-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
 
-.sx8wio29zj0i--size-md::after {
-  content: '';
-  margin-top: -0.2254em;
-  display: table;
+  .c-iSnHBU-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
 }
 
 <div>
   <h2
-    class="sx8wio2 sx8wio29zj0i--size-md"
+    class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
   >
     HEADING
   </h2>

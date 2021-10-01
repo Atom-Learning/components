@@ -1,4 +1,4 @@
-import { StitchesVariants } from '@stitches/react'
+import type * as Stitches from '@stitches/react'
 import invariant from 'invariant'
 import * as React from 'react'
 
@@ -166,7 +166,7 @@ const StyledButton = styled('button', {
 
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
-  StitchesVariants<typeof StyledButton> & {
+  Stitches.VariantProps<typeof StyledButton> & {
     as?: string | React.ReactNode
     children: React.ReactNode
     label: string

@@ -1,97 +1,103 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextareaField component renders 1`] = `
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-dIDWeX {
+    box-shadow: none;
+    font-size: var(--fontSizes-md);
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: var(--sizes-7);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: calc(var(--space-2) + var(--space-1));
+    padding-bottom: calc(var(--space-2) + var(--space-1));
+    resize: vertical;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-dIDWeX:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dIDWeX[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-dIDWeX::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
+@media  {
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
-.sxbagj1 {
-  color: var(--sx-colors-tonal500);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sxbagj18bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxbagj18bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sxbagj18bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sxw9jbw {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  line-height: 1.4;
-  min-height: var(--sx-sizes-7);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: calc(var(--sx-space-2) + var(--sx-space-1));
-  padding-bottom: calc(var(--sx-space-2) + var(--sx-space-1));
-  resize: vertical;
-  transition: all 75ms ease-out;
-  width: 100%;
-}
-
-.sxw9jbw:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sxw9jbw[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxw9jbw::placeholder {
-  color: var(--sx-colors-tonal300);
-  opacity: 1;
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sxbagj1 sxbagj18bitc--size-md"
+          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sxw9jbw"
+        class="c-dIDWeX"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -102,97 +108,103 @@ exports[`TextareaField component renders 1`] = `
 `;
 
 exports[`TextareaField component renders with an error 1`] = `
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-dIDWeX {
+    box-shadow: none;
+    font-size: var(--fontSizes-md);
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: var(--sizes-7);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: calc(var(--space-2) + var(--space-1));
+    padding-bottom: calc(var(--space-2) + var(--space-1));
+    resize: vertical;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-dIDWeX:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dIDWeX[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-dIDWeX::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
+@media  {
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
-.sxbagj1 {
-  color: var(--sx-colors-tonal500);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sxbagj18bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxbagj18bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sxbagj18bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sxw9jbw {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal600);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  line-height: 1.4;
-  min-height: var(--sx-sizes-7);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: calc(var(--sx-space-2) + var(--sx-space-1));
-  padding-bottom: calc(var(--sx-space-2) + var(--sx-space-1));
-  resize: vertical;
-  transition: all 75ms ease-out;
-  width: 100%;
-}
-
-.sxw9jbw:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sxw9jbw[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxw9jbw::placeholder {
-  color: var(--sx-colors-tonal300);
-  opacity: 1;
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sxbagj1 sxbagj18bitc--size-md"
+          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
           for="description"
         />
       </div>
       <textarea
-        class="sxw9jbw"
+        class="c-dIDWeX"
         error="Error Message"
         id="description"
         name="description"
