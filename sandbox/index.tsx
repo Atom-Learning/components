@@ -9,27 +9,13 @@ globalCss(reset)()
 
 const App = () => {
   return (
-    <DropdownMenu>
-      <DropdownMenu.Trigger asChild>
-        <Button>click click</Button>
-      </DropdownMenu.Trigger>
-      <DropdownMenu.Content>
-        <DropdownMenu.Item>
-          <Icon is={User} css={{ mr: '$2' }} />
-          Profile
-        </DropdownMenu.Item>
-        <DropdownMenu.Item>
-          <Icon is={Error} css={{ mr: '$2' }} />
-          Report a Problem
-        </DropdownMenu.Item>
-        <DropdownMenu.Separator />
-        <DropdownMenu.Item>
-          <Icon is={Exit} css={{ mr: '$2' }} />
-          Log Out
-        </DropdownMenu.Item>
-        <DropdownMenu>
-          <DropdownMenu.TriggerItem>Nested menu</DropdownMenu.TriggerItem>
-          <DropdownMenu.Content>
+    <Box css={{ height: 200, width: '500px', mx: 'auto', p: '$4' }}>
+      <DropdownMenu>
+        <DropdownMenu.Trigger asChild>
+          <Button>click click</Button>
+        </DropdownMenu.Trigger>
+        <DropdownMenu.Content>
+          
             <DropdownMenu.Item>
               <Icon is={User} css={{ mr: '$2' }} />
               Profile
@@ -38,10 +24,15 @@ const App = () => {
               <Icon is={Error} css={{ mr: '$2' }} />
               Report a Problem
             </DropdownMenu.Item>
-          </DropdownMenu.Content>
-        </DropdownMenu>
-      </DropdownMenu.Content>
-    </DropdownMenu>
+          <DropdownMenu.Separator />
+          <DropdownMenu.Item>
+            <Icon is={Exit} css={{ mr: '$2' }} />
+            Log Out
+          </DropdownMenu.Item>
+         
+        </DropdownMenu.Content>
+      </DropdownMenu>
+    </Box>
   )
 }
 
