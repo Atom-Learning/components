@@ -42,18 +42,22 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
 
 type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
-const CheckboxIcon = () => (
-  <Icon
-    is={Ok}
-    size="xs"
-    css={{ pointerEvents: 'none', position: 'absolute', strokeWidth: '3' }}
-  />
-)
-
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
   (props, ref) => (
     <StyledCheckbox {...props} ref={ref}>
-      <RadixCheckbox.Indicator as={CheckboxIcon} />
+      <RadixCheckbox.Indicator>
+        <Icon
+          is={Ok}
+          size="xs"
+          css={{
+            left: '2px',
+            pointerEvents: 'none',
+            position: 'absolute',
+            strokeWidth: '3',
+            top: '2px'
+          }}
+        />
+      </RadixCheckbox.Indicator>
     </StyledCheckbox>
   )
 )

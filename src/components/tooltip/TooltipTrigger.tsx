@@ -6,8 +6,4 @@ type TooltipTriggerProps = React.ComponentProps<typeof Trigger>
 export const TooltipTrigger: React.FC<TooltipTriggerProps> = ({
   children,
   ...remainingProps
-}) => (
-  <Trigger asChild {...remainingProps}>
-    {children}
-  </Trigger>
-)
+}) => <Trigger {...remainingProps}>{children}</Trigger>
