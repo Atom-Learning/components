@@ -5,4 +5,4 @@ type AlertDialogTriggerProps = React.ComponentProps<typeof Trigger>
 
 export const AlertDialogTrigger: React.FC<AlertDialogTriggerProps> = (
   props
-) => <Trigger asChild {...props} />
+) => <Trigger {...props} />

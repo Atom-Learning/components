@@ -4,5 +4,5 @@ import * as React from 'react'
 type PopoverTriggerProps = React.ComponentProps<typeof Trigger>
 
 export const PopoverTrigger: React.FC<PopoverTriggerProps> = (props) => (
-  <Trigger asChild {...props} />
+  <Trigger {...props} />
 )
