@@ -1,4 +1,3 @@
-import { Slot } from '@radix-ui/react-slot'
 import { Trigger } from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
@@ -8,7 +7,7 @@ export const TooltipTrigger: React.FC<TooltipTriggerProps> = ({
   children,
   ...remainingProps
 }) => (
-  <Trigger as={Slot} {...remainingProps}>
+  <Trigger asChild {...remainingProps}>
     {children}
   </Trigger>
 )
