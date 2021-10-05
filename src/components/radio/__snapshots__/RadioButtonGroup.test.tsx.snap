@@ -9,7 +9,10 @@ exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
 <div>
   <div
     class="sxykmo8"
+    dir="ltr"
     role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
   />
 </div>
 `;
