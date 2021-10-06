@@ -2,7 +2,7 @@ import { getBabelOutputPlugin } from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
-import bundleSize from 'rollup-plugin-bundle-size'
+import summary from 'rollup-plugin-summary'
 import { terser } from 'rollup-plugin-terser'
 import visualizer from 'rollup-plugin-visualizer'
 
@@ -19,16 +19,21 @@ export default {
   external: [...deps, ...peerDeps, 'react-player/vimeo'],
   output: [
     { file: pkg.main, format: 'cjs' },
-    { file: pkg.module, format: 'esm' }
+    { dir: 'dist', format: 'esm', preserveModules: true }
   ],
   plugins: [
-    bundleSize(),
+    summary({ showBrotliSize: false }),
     commonjs(),
     getBabelOutputPlugin({
       presets: [
         [
           '@babel/preset-env',
-          { loose: true, bugfixes: true, targets: { esmodules: true } }
+          {
+            loose: true,
+            bugfixes: true,
+            modules: false,
+            targets: { esmodules: true }
+          }
         ]
       ]
     }),
