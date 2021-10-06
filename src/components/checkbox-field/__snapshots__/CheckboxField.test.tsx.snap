@@ -6,6 +6,12 @@ exports[`CheckboxField component renders 1`] = `
   transform: translateY(var(--sx-space-0));
 }
 
+.sxut1cy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sxt3cs2 {
   -webkit-appearance: none;
   appearance: none;
