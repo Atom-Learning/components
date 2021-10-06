@@ -8,7 +8,7 @@ import { AlertDialog } from '.'
 const AlertDialogTest = (props) => (
   <IdProvider>
     <AlertDialog {...props}>
-      <AlertDialog.Trigger as="button">TRIGGER</AlertDialog.Trigger>
+      <AlertDialog.Trigger>TRIGGER</AlertDialog.Trigger>
       <AlertDialog.Content>CONTENT</AlertDialog.Content>
     </AlertDialog>
   </IdProvider>

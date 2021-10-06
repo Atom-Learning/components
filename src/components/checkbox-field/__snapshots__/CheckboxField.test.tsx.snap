@@ -6,6 +6,12 @@ exports[`CheckboxField component renders 1`] = `
   transform: translateY(var(--sx-space-0));
 }
 
+.sxut1cy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sxt3cs2 {
   -webkit-appearance: none;
   appearance: none;
@@ -102,18 +108,19 @@ exports[`CheckboxField component renders 1`] = `
         <div
           class="sx03kze sx03kze-2grog"
         >
-          <input
-            hidden=""
-            name="example"
-            type="checkbox"
-            value="off"
-          />
           <button
             aria-checked="false"
             class="sxt3cs2"
             data-state="unchecked"
             role="checkbox"
             type="button"
+            value="off"
+          />
+          <input
+            name="example"
+            style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
+            tabindex="-1"
+            type="checkbox"
             value="off"
           />
         </div>
