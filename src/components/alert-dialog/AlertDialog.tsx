@@ -3,14 +3,14 @@ import {
   Cancel,
   Description,
   Root,
-  Title
+  Title,
+  Trigger
 } from '@radix-ui/react-alert-dialog'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { AlertDialogContent } from './AlertDialogContent'
-import { AlertDialogTrigger } from './AlertDialogTrigger'
 
 const StyledAlertDialog = styled(Root, {})
 
@@ -18,7 +18,7 @@ type AlertDialogProps = React.ComponentProps<typeof StyledAlertDialog>
 
 export const AlertDialog: React.FC<AlertDialogProps> & {
   Content: typeof AlertDialogContent
-  Trigger: typeof AlertDialogTrigger
+  Trigger: typeof Trigger
   Description: typeof Description
   Title: typeof Title
   Action: typeof Action
@@ -30,6 +30,6 @@ AlertDialog.Title = Title
 AlertDialog.Action = Action
 AlertDialog.Cancel = Cancel
 AlertDialog.Content = AlertDialogContent
-AlertDialog.Trigger = AlertDialogTrigger
+AlertDialog.Trigger = Trigger
 
 AlertDialog.displayName = 'AlertDialog'
