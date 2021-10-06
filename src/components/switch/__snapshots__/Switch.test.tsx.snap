@@ -43,12 +43,6 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 }
 
 <div>
-  <input
-    checked=""
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="true"
     class="sx1jh2a"
@@ -108,12 +102,6 @@ exports[`Switch component renders a disabled switch 1`] = `
 }
 
 <div>
-  <input
-    disabled=""
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="false"
     class="sx1jh2a"
@@ -176,11 +164,6 @@ exports[`Switch component renders a switch 1`] = `
 }
 
 <div>
-  <input
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="false"
     class="sx1jh2a"

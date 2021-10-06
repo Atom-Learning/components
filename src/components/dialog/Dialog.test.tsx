@@ -8,7 +8,7 @@ import { Dialog } from '.'
 const DialogTest = (props) => (
   <IdProvider>
     <Dialog {...props}>
-      <Dialog.Trigger as="button">TRIGGER</Dialog.Trigger>
+      <Dialog.Trigger>TRIGGER</Dialog.Trigger>
       <Dialog.Content>CONTENT</Dialog.Content>
     </Dialog>
   </IdProvider>

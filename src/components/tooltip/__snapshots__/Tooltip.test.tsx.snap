@@ -2,12 +2,14 @@
 
 exports[`Tooltip component renders a tooltip 1`] = `
 <div>
-  <span
+  <button
     aria-describedby="radix-id-0-1"
     data-state="delayed-open"
     type="button"
   >
-    TOOLTIP
-  </span>
+    <span>
+      TOOLTIP
+    </span>
+  </button>
 </div>
 `;
