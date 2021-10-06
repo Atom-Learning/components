@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component renders a checkbox 1`] = `
+.sxut1cy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sxt3cs2 {
   -webkit-appearance: none;
   appearance: none;
@@ -46,11 +52,6 @@ exports[`Checkbox component renders a checkbox 1`] = `
 
 <div>
   <label>
-    <input
-      hidden=""
-      type="checkbox"
-      value="on"
-    />
     <button
       aria-checked="false"
       class="sxt3cs2"

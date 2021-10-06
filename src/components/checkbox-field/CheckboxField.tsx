@@ -51,9 +51,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
             defaultValue={defaultChecked ? CheckboxValue.ON : CheckboxValue.OFF}
             checked={value}
             name={innerName}
-            onCheckedChange={(event) => {
-              onChange(event.target.value !== CheckboxValue.ON)
-            }}
+            onCheckedChange={onChange}
             value={value ? CheckboxValue.ON : CheckboxValue.OFF}
             {...remainingProps}
           />
