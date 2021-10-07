@@ -5,7 +5,7 @@ description: The Dialog component renders its children inside a modal and puts a
 category: Surfaces
 ---
 
-`Dialog` exports many components that combine to create a modal. The `Dialog.Trigger` requires a React component child (or passed to `as`) to allow the necessary event bindings and accessible properties to be cloned.
+`Dialog` exports many components that combine to create a modal. The `Dialog.Trigger` renders a `<button>` by default, but this can be overridden with the `asChild` prop, which will instead add all the functional and accessibility requirements to the child component instead (see the below example).
 
 Also, note that the component must accept a `ref`.
 
@@ -13,7 +13,7 @@ Read more about the underlying UI component on the [Radix UI documentation site]
 
 ```tsx preview
 <Dialog>
-  <Dialog.Trigger>
+  <Dialog.Trigger asChild>
     <Button>Click me</Button>
   </Dialog.Trigger>
   <Dialog.Content>

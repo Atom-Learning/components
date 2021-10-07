@@ -53,19 +53,17 @@ exports[`Radio component renders a disabled radio button 1`] = `
 <div>
   <div
     class="c-iSwBqf"
+    dir="ltr"
     role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
   >
-    <input
-      disabled=""
-      hidden=""
-      type="radio"
-      value="value"
-    />
     <button
       aria-checked="false"
       aria-label="disabled indicator"
       class="c-eyKPFZ"
       data-disabled=""
+      data-radix-collection-item=""
       data-state="unchecked"
       disabled=""
       role="radio"
@@ -130,21 +128,19 @@ exports[`Radio component renders a radio button 1`] = `
 <div>
   <div
     class="c-iSwBqf"
+    dir="ltr"
     role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
   >
-    <input
-      hidden=""
-      type="radio"
-      value="value"
-    />
     <button
       aria-checked="false"
       aria-label="indicator"
       class="c-eyKPFZ"
-      data-radix-roving-focus-group-id="radix-id-0-1"
+      data-radix-collection-item=""
       data-state="unchecked"
       role="radio"
-      tabindex="0"
+      tabindex="-1"
       type="button"
       value="value"
     />

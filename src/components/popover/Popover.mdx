@@ -5,7 +5,7 @@ description: Popover provides a styled actionable popup
 category: Surfaces
 ---
 
-`Popover` exports 3 components that combine to create our popover. The `Popover.Trigger` requires a React component child (or passed to `as`) to allow the necessary event bindings and accessible properties to be cloned.
+`Popover` exports 3 components that combine to create our popover. The `Popover.Trigger` renders a `<button>` by default, but this can be overridden with the `asChild` prop, which will instead add all the functional and accessibility requirements to the child component instead (see the below example).
 
 Also, note that the component must accept a `ref`.
 
@@ -13,7 +13,7 @@ Read more about the underlying UI component on the [Radix UI documentation site]
 
 ```tsx preview
 <Popover>
-  <Popover.Trigger>
+  <Popover.Trigger asChild>
     <Button>Click me</Button>
   </Popover.Trigger>
   <Popover.Content>

@@ -26,7 +26,6 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
   <AlertDialog defaultOpen>
     <AlertDialog.Content
       onEscapeKeyDown={(e) => e.preventDefault()}
-      onPointerDownOutside={(e) => e.preventDefault()}
       onCloseAutoFocus={onClose}
       {...remainingProps}
     >
