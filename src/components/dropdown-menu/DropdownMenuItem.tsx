@@ -28,7 +28,7 @@ export const itemStyles = {
       transform: 'scale(1)'
     }
   },
-  '&:focus, & > a:hover': {
+  '&:focus': {
     color: '$primaryMid',
     outline: 'none',
     '&:before': {
