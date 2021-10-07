@@ -17,12 +17,12 @@ Read more about the underlying UI component on the [Radix UI documentation site]
     <Button>Click me</Button>
   </DropdownMenu.Trigger>
   <DropdownMenu.Content sideOffset={25}>
-    <DropdownMenu.Item>Item 1</DropdownMenu.Item>
+    <DropdownMenu.Item onClick={() => alert('Great clicking!')}>Item 1</DropdownMenu.Item>
     <DropdownMenu.Item>Item 2</DropdownMenu.Item>
     <DropdownMenu.Separator />
-    <DropdownMenu.Item>Item 3</DropdownMenu.Item>
+    <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.Item>
   </DropdownMenu.Content>
 </DropdownMenu>
 ```
 
-For any modifications of the default `Dialog` visuals, for example bypassing the panel design entirely, we recommend utilising the Radix UI Dialog component directly. You will need to wrap each exported component within a `styled()` function to enable `css` and `as`, and compose together `Dialog.Overlay` and `Dialog.Close` within `Dialog.Content` to mimic the behaviour of this modal.
+For any modifications of the default `DropdownMenu` visuals, we recommend utilising the Radix UI Dialog component directly. You will need to wrap each exported component within a `styled()` function to enable the `css` prop.

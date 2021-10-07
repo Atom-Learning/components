@@ -5,21 +5,22 @@ import { styled } from '~/stitches'
 
 import { DropdownMenuContent } from './DropdownMenuContent'
 import { DropdownMenuItem } from './DropdownMenuItem'
+import { DropdownMenuLinkItem } from './DropdownMenuLinkItem'
 import { DropdownMenuSeparator } from './DropdownMenuSeparator'
 import { DropdownMenuTrigger } from './DropdownMenuTrigger'
 
 const Root = styled(DropdownMenuRoot, {})
 
 export const DropdownMenu: React.FC<React.ComponentProps<typeof Root>> & {
-
   Content: typeof DropdownMenuContent
   Item: typeof DropdownMenuItem
-
+  LinkItem: typeof DropdownMenuLinkItem
   Separator: typeof DropdownMenuSeparator
   Trigger: typeof DropdownMenuTrigger
 } = (props) => <Root {...props} />
 
 DropdownMenu.Content = DropdownMenuContent
 DropdownMenu.Item = DropdownMenuItem
+DropdownMenu.LinkItem = DropdownMenuLinkItem
 DropdownMenu.Separator = DropdownMenuSeparator
 DropdownMenu.Trigger = DropdownMenuTrigger

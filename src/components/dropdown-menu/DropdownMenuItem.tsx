@@ -11,14 +11,15 @@ export const itemStyles = {
   tabIndex: 0,
   position: 'relative',
   px: '$2',
-  '&:not(:last-child)': { mb: '$2' },
-  // These focus styles are only applying when keyboard
-  // navigation is used to focus an item
-  '&:focus': {
-    color: '$primary',
-    outline: 'none',
+  '&:not(:last-child)': { mb: '$3' },
+
+  '&[data-disabled]': {
+    color: '$tonal100',
+    pointerEvents: 'none'
+  },
+  '&[aria-current="page"]': {
     '&:before': {
-      borderLeft: '2px solid $primary',
+      borderLeft: '2px solid currentColor',
       color: 'currentColor',
       content: '',
       height: '100%',
@@ -27,24 +28,17 @@ export const itemStyles = {
       transform: 'scale(1)'
     }
   },
-  '&[data-disabled]': {
-    color: '$tonal100',
-    pointerEvents: 'none'
-  },
-  variants: {
-    active: {
-      true: {
-        color: '$tertiary',
-        '&:before': {
-          borderLeft: '2px solid $tertiary',
-          color: 'currentColor',
-          content: '',
-          height: '100%',
-          left: 0,
-          position: 'absolute',
-          transform: 'scale(1)'
-        }
-      }
+  '&:focus, & > a:hover': {
+    color: '$primaryMid',
+    outline: 'none',
+    '&:before': {
+      borderLeft: '2px solid $primaryMid',
+      color: 'currentColor',
+      content: '',
+      height: '100%',
+      left: 0,
+      position: 'absolute',
+      transform: 'scale(1)'
     }
   }
 }

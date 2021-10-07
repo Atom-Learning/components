@@ -26,8 +26,7 @@ export const DropdownMenuContent = styled(Content, {
   bg: 'white',
   borderRadius: '$0',
   boxShadow: '$0',
-  minWidth: '150px',
-  py: '$2',
+  py: '$3',
   '@media (prefers-reduced-motion: no-preference)': {
     animationDuration: '400ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
