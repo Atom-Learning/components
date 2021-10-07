@@ -17,11 +17,11 @@ export const StyledLink = styled('a', {
   fontFamily: '$body',
   textDecoration: 'none',
   '&:focus, &:hover': {
-    color: '$tertiary',
+    color: '$primaryMid',
     textDecoration: 'underline'
   },
   '&:active': {
-    color: '$primary'
+    color: '$primaryDark'
   },
   [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
@@ -44,7 +44,9 @@ type LinkProps = Override<
 
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ size = 'md', onClick, href, ...remainingProps }, ref) =>
-    onClick ? (
+    href ? (
+      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
+    ) : (
       <StyledLink
         as="button"
         size={size}
@@ -52,8 +54,6 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         ref={ref}
         onClick={onClick}
       />
-    ) : (
-      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
     )
 ) as React.FC<LinkProps>
 

@@ -10,7 +10,7 @@ const scaleIn = keyframes({
 
 const StyledContent = styled(Content, {
   animation: `${scaleIn} 75ms ease-out`,
-  backgroundColor: '$tonal700',
+  backgroundColor: '$tonal500',
   borderRadius: '$0',
   boxShadow: '$0',
   color: 'white',
@@ -30,7 +30,7 @@ const StyledContent = styled(Content, {
 })
 
 const StyledArrow = styled(Arrow, {
-  fill: '$tonal700',
+  fill: '$tonal500',
   '[data-align="end"] &': { mr: '$2' },
   '[data-align="start"] &': { ml: '$2' }
 })

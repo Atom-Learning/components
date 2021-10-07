@@ -67,7 +67,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       <Text
         size="sm"
         css={{
-          color: '$tonal500',
+          color: '$tonal300',
           mt: '$2',
           [direction === 'reverse' ? 'mr' : 'ml']: 'calc($space$3 + $sizes$1)', // calc required to get correct offset value
           maxWidth: '80ch'

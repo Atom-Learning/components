@@ -16,13 +16,11 @@ For more examples, please read [aria-progressbar-name](https://dequeuniversity.c
 
 ## Themes
 
-These are the available `themes` for this component: `Primary` (default), `Secondary`, `Tertiary`, `Success`, `Warning`, `Danger`
+These are the available `themes` for this component: `Primary` (default), `Success`, `Warning`, `Danger`
 
 ```tsx preview
 <>
   <ProgressBar value={20} />
-  <ProgressBar theme="secondary" value={20} aria-label="Completion rate" />
-  <ProgressBar theme="tertiary" value={20} aria-label="Completion rate" />
   <ProgressBar theme="success" value={20} aria-label="Completion rate" />
   <ProgressBar theme="warning" value={20} aria-label="Completion rate" />
   <ProgressBar theme="danger" value={20} aria-label="Completion rate" />
@@ -36,18 +34,6 @@ There two options for the `appearance` property: `solid` and `outline(default)`.
 ```tsx preview
 <>
   <ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
-  <ProgressBar
-    appearance="solid"
-    theme="secondary"
-    value={20}
-    aria-label="Completion rate"
-  />
-  <ProgressBar
-    appearance="solid"
-    theme="tertiary"
-    value={20}
-    aria-label="Completion rate"
-  />
   <ProgressBar
     appearance="solid"
     theme="success"

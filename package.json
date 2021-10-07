@@ -1,9 +1,9 @@
 {
   "name": "@atom-learning/components",
   "source": "src/index.ts",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "version": "1.0.0-beta.15",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "version": "1.0.0-rc.0",
   "description": "",
   "files": [
     "dist"
@@ -51,7 +51,7 @@
   "devDependencies": {
     "@atom-learning/icons": "^0.3.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "1.0.0-beta.0",
+    "@atom-learning/theme": "1.0.0",
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.12.10",
@@ -62,15 +62,19 @@
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
-    "@rollup/plugin-typescript": "^8.2.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/npm": "^7.1.1",
+    "@semantic-release/release-notes-generator": "^9.0.2",
     "@size-limit/preset-big-lib": "^5.0.5",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.8.1",
     "@types/jest": "^26.0.20",
     "@types/jest-axe": "^3.5.1",
-    "@typescript-eslint/eslint-plugin": "^4.14.0",
-    "@typescript-eslint/parser": "^4.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
     "@vitejs/plugin-react-refresh": "^1.3.3",
     "babel-eslint": "^10.1.0",
     "babel-plugin-react-remove-properties": "^0.3.0",
@@ -97,16 +101,18 @@
     "prettier": "^2.2.1",
     "prompts": "^2.4.0",
     "react": "17.0.1",
-    "react-docgen-typescript": "^1.21.0",
+    "react-docgen-typescript": "2.1.0",
     "react-dom": "^17.0.1",
     "rollup": "^2.39.0",
     "rollup-plugin-summary": "^1.3.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "^4.2.2",
+    "semantic-release": "^17.4.2",
+    "semantic-release-slack-bot": "^2.1.0",
     "size-limit": "^5.0.5",
     "stitches-reset": "^1.0.0",
     "tsc-alias": "^1.3.5",
-    "typescript": "^4.2.1-rc",
+    "typescript": "4.2.2",
     "vite": "^2.2.4",
     "yargs": "^16.2.0"
   },
@@ -128,7 +134,7 @@
     "@radix-ui/react-tooltip": "0.1.0",
     "@radix-ui/react-visually-hidden": "0.1.0",
     "@reach/combobox": "^0.15.1",
-    "@stitches/react": "0.1.7",
+    "@stitches/react": "^1.2.1",
     "@types/react": "^17.0.2",
     "dlv": "^1.1.3",
     "invariant": "^2.2.4",
@@ -152,6 +158,49 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-length": [
+        0,
+        "always"
+      ],
+      "body-max-line-length": [
+        0,
+        "always"
+      ]
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]"
+        }
+      ],
+      [
+        "semantic-release-slack-bot",
+        {
+          "branchesConfig": [
+            {
+              "pattern": "main",
+              "notifyOnFail": true,
+              "notifyOnSuccess": true
+            }
+          ]
+        }
+      ]
     ]
   }
 }

@@ -1,116 +1,118 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxField component renders 1`] = `
-.sx03kze-2grog {
-  margin-right: var(--sx-space-3);
-  transform: translateY(var(--sx-space-0));
+@media  {
+  .c-bsbHzT {
+    display: flex;
+    font-weight: 400;
+    max-width: max-content;
+  }
+
+  .c-bkstqh {
+    color: var(--colors-tonal500);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .c-emNREM {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+  }
+
+  .c-emNREM[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-emNREM[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-emNREM:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-emNREM[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    cursor: not-allowed;
+    color: var(--colors-tonal400);
+  }
+
+  .c-eOfRZm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.sxut1cy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media  {
+  .c-bsbHzT-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-bsbHzT-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-bkstqh-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-bkstqh-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
-.sxt3cs2 {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--sx-colors-tonal500);
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 50ms ease-out;
-}
-
-.sxt3cs2[data-state="unchecked"]:focus,
-.sxt3cs2[data-state="unchecked"]:hover {
-  outline: none;
-}
-
-.sxt3cs2[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-  border-color: var(--sx-colors-primary);
-}
-
-.sxt3cs2[data-state="checked"]:hover,
-.sxt3cs2[data-state="unchecked"]:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sxt3cs2[disabled] {
-  background-color: var(--sx-colors-tonal200);
-  border-color: var(--sx-colors-tonal400);
-  cursor: not-allowed;
-}
-
-.sxt3cs2:focus-within {
-  outline: none;
-}
-
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx9ru2a {
-  display: flex;
-  font-weight: 400;
-  max-width: max-content;
-}
-
-.sx9ru2a0fgel--align-baseline {
-  align-items: baseline;
-}
-
-.sx9ru2aged5d--direction-row {
-  flex-direction: row;
+@media  {
+  .c-PJLV-ioftQP-css {
+    margin-right: var(--space-3);
+    transform: translateY(var(--space-0));
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <label
-        class="sx5eeij sx5eeij8bitc--size-md sx9ru2a sx9ru2a0fgel--align-baseline sx9ru2aged5d--direction-row"
+        class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bsbHzT c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
       >
         <div
-          class="sx03kze sx03kze-2grog"
+          class="c-PJLV c-PJLV-ioftQP-css"
         >
           <button
             aria-checked="false"
-            class="sxt3cs2"
+            class="c-emNREM"
             data-state="unchecked"
             role="checkbox"
             type="button"

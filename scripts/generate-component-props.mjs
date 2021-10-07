@@ -9,15 +9,14 @@ const filterReactTypes = (prop) =>
     declaration?.fileName.includes('@types/react')
   )
 
-const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
-  shouldExtractLiteralValuesFromEnum: true,
-  shouldExtractValuesFromUnion: true,
-  shouldRemoveUndefinedFromOptional: true,
-  propFilter: filterReactTypes
-})
-
 const run = async () => {
   try {
+    const tsConfigParser = docgen.withCustomConfig('./tsconfig.json', {
+      shouldExtractLiteralValuesFromEnum: true,
+      shouldExtractValuesFromUnion: true,
+      shouldRemoveUndefinedFromOptional: true,
+      propFilter: filterReactTypes
+    })
     const componentFilePaths = await glob
       .sync('src/**/*.tsx')
       .filter((path) => !path.includes('test.tsx'))
@@ -32,7 +31,7 @@ const run = async () => {
 
     await fs.writeFileSync('./dist/docgen.json', JSON.stringify(output))
   } catch (err) {
-    console.error(err)
+    throw new Error(err)
   }
 }
 

@@ -53,6 +53,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
             name={innerName}
             onCheckedChange={onChange}
             value={value ? CheckboxValue.ON : CheckboxValue.OFF}
+            {...(error && { state: 'error' })}
             {...remainingProps}
           />
         </InlineFieldWrapper>

@@ -1,81 +1,72 @@
 import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
-import { createCss, StitchesCss } from '@stitches/react'
+import type * as Stitches from '@stitches/react'
+import { createStitches } from '@stitches/react'
 
-type CSSValue = number | string
-type CSSBlob = { [key: string]: CSSValue }
-
-// TODO: assess how intuitive the team finds these
 export const utils = {
-  p: () => (value: CSSValue): CSSBlob => ({
-    padding: value
-  }),
-  pt: () => (value: CSSValue): CSSBlob => ({
-    paddingTop: value
-  }),
-  pr: () => (value: CSSValue): CSSBlob => ({
-    paddingRight: value
-  }),
-  pb: () => (value: CSSValue): CSSBlob => ({
-    paddingBottom: value
-  }),
-  pl: () => (value: CSSValue): CSSBlob => ({
-    paddingLeft: value
-  }),
-  px: () => (value: CSSValue): CSSBlob => ({
-    paddingLeft: value,
-    paddingRight: value
-  }),
-  py: () => (value: CSSValue): CSSBlob => ({
-    paddingTop: value,
-    paddingBottom: value
+  bg: (value: Stitches.PropertyValue<'background'>) => ({
+    background: value
   }),
 
-  m: () => (value: CSSValue): CSSBlob => ({
-    margin: value
-  }),
-  mt: () => (value: CSSValue): CSSBlob => ({
-    marginTop: value
-  }),
-  mr: () => (value: CSSValue): CSSBlob => ({
-    marginRight: value
-  }),
-  mb: () => (value: CSSValue): CSSBlob => ({
-    marginBottom: value
-  }),
-  ml: () => (value: CSSValue): CSSBlob => ({
-    marginLeft: value
-  }),
-  mx: () => (value: CSSValue): CSSBlob => ({
-    marginLeft: value,
-    marginRight: value
-  }),
-  my: () => (value: CSSValue): CSSBlob => ({
-    marginTop: value,
-    marginBottom: value
-  }),
-  inset: () => (value: CSSValue): CSSBlob => ({
+  inset: (value: Stitches.ScaleValue<'space'> | number | string) => ({
     top: value,
     right: value,
     bottom: value,
     left: value
   }),
-  bg: () => (value: string): CSSBlob => ({
-    background: value
+
+  size: (value: Stitches.ScaleValue<'size'> | number | string) => ({
+    height: value,
+    width: value
   }),
-  size: () => (value: CSSValue | Array<CSSValue>): CSSBlob => {
-    if (Array.isArray(value)) {
-      const [height, width] = value
-      return {
-        height,
-        width
-      }
-    }
-    return {
-      height: value,
-      width: value
-    }
-  }
+
+  p: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    padding: value
+  }),
+  pt: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingTop: value
+  }),
+  pr: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingRight: value
+  }),
+  pb: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingBottom: value
+  }),
+  pl: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingLeft: value
+  }),
+  px: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingLeft: value,
+    paddingRight: value
+  }),
+  py: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    paddingTop: value,
+    paddingBottom: value
+  }),
+
+  m: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    margin: value
+  }),
+  mt: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginTop: value
+  }),
+  mr: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginRight: value
+  }),
+  mb: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginBottom: value
+  }),
+  ml: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginLeft: value
+  }),
+  mx: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginLeft: value,
+    marginRight: value
+  }),
+  my: (value: Stitches.ScaleValue<'space'> | number | string) => ({
+    marginTop: value,
+    marginBottom: value
+  })
 }
 
 export const media = {
@@ -87,7 +78,7 @@ export const media = {
   hover: '(hover: hover)'
 }
 
-const stitchesConfig = createCss({
+const stitchesConfig = createStitches({
   theme: atomTheme as Theme,
   utils,
   media
@@ -95,11 +86,12 @@ const stitchesConfig = createCss({
 
 export const {
   css,
-  getCssString,
-  global: globalCss,
+  getCssText,
+  createTheme,
+  globalCss,
   keyframes,
   styled,
   theme
 } = stitchesConfig
 
-export type CSS = StitchesCss<typeof stitchesConfig>
+export type CSS = Stitches.CSS<typeof stitchesConfig>

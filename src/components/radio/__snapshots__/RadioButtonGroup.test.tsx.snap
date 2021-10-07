@@ -1,14 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
-.sxykmo8 {
-  display: flex;
-  flex-wrap: wrap;
+@media  {
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 <div>
   <div
-    class="sxykmo8"
+    class="c-iSwBqf"
     dir="ltr"
     role="radiogroup"
     style="outline: none;"
