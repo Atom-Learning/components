@@ -76,6 +76,10 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin-left: var(--space-3);
   }
 
+  .c-cgoenp-ejCoEP-align-left {
+    flex-direction: row;
+  }
+
   .c-cgoenp-fJrRuP-size-md {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
@@ -89,10 +93,6 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
 
   .c-jCXneY-llEebI-align-left {
     margin-right: var(--space-4);
-  }
-
-  .c-PJLV-YYAoU-align-left {
-    order: 1;
   }
 }
 
@@ -108,7 +108,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     >
       <button
         aria-checked="false"
-        class="c-cgoenp c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
+        class="c-cgoenp c-cgoenp-ejCoEP-align-left c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="unchecked"
         role="radio"
@@ -120,14 +120,14 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
           class="c-jCXneY c-jCXneY-llEebI-align-left"
         />
         <div
-          class="c-PJLV c-PJLV-YYAoU-align-left"
+          class="c-PJLV"
         >
           First item
         </div>
       </button>
       <button
         aria-checked="true"
-        class="c-cgoenp c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
+        class="c-cgoenp c-cgoenp-ejCoEP-align-left c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="checked"
         role="radio"
@@ -144,7 +144,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
           />
         </div>
         <div
-          class="c-PJLV c-PJLV-YYAoU-align-left"
+          class="c-PJLV"
         >
           Second item
         </div>
