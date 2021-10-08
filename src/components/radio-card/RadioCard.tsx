@@ -3,7 +3,9 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-const StyledRadioCard = styled(RadioGroup.Item, {
+import { Box } from '../box/Box'
+
+export const StyledRadioCard = styled(RadioGroup.Item, {
   alignItems: 'center',
   bg: 'white',
   border: '1px solid $tonal200',
@@ -17,6 +19,10 @@ const StyledRadioCard = styled(RadioGroup.Item, {
   },
 
   variants: {
+    align: {
+      left: { flexDirection: 'row' },
+      right: { flexDirection: 'row-reverse' }
+    },
     size: {
       md: { px: '$4', py: '$3' },
       lg: { px: '$5', py: '$4' }
@@ -77,15 +83,6 @@ const Indicator = styled(RadioGroup.Indicator, {
   size: '6px'
 })
 
-const Content = styled('div', {
-  variants: {
-    align: {
-      left: { order: '1' },
-      right: { order: '-1' }
-    }
-  }
-})
-
 type RadioCardProps = React.ComponentProps<typeof StyledRadioCard>
 
 export const RadioCard: React.FC<RadioCardProps> = ({
@@ -95,10 +92,15 @@ export const RadioCard: React.FC<RadioCardProps> = ({
   align = 'left',
   ...rest
 }) => (
-  <StyledRadioCard {...rest} size={size} isFullWidth={isFullWidth}>
+  <StyledRadioCard
+    {...rest}
+    align={align}
+    isFullWidth={isFullWidth}
+    size={size}
+  >
     <RadioButton align={align} containerIsFullWidth={isFullWidth}>
       <Indicator />
     </RadioButton>
-    <Content align={align}>{children}</Content>
+    <Box>{children}</Box>
   </StyledRadioCard>
 )
