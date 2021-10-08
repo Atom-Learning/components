@@ -1,9 +1,9 @@
 {
   "name": "@atom-learning/components",
   "source": "src/index.ts",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
-  "version": "1.0.0-rc.1",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "version": "1.0.0-rc.2",
   "description": "",
   "files": [
     "dist"
