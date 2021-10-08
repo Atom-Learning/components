@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FieldWrapper component renders 1`] = `
+exports[`DropdownMenu component renders 1`] = `
 <div>
   <button
     aria-haspopup="menu"
