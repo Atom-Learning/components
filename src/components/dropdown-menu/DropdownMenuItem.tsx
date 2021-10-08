@@ -9,7 +9,7 @@ export const itemStyles = {
   fontFamily: '$body',
   fontWeight: 400,
   position: 'relative',
-  px: '$2',
+  px: '$3',
   '&:not(:last-child)': { mb: '$3' },
 
   '&[data-disabled]': {
