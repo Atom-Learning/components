@@ -40,15 +40,16 @@ exports[`Checkbox component renders a checkbox 1`] = `
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
+
+  .c-eOfRZm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 <div>
   <label>
-    <input
-      hidden=""
-      type="checkbox"
-      value="on"
-    />
     <button
       aria-checked="false"
       class="c-emNREM"

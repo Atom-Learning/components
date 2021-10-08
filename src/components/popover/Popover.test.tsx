@@ -10,7 +10,7 @@ describe(`Popover component`, () => {
     const { container } = render(
       <IdProvider>
         <Popover>
-          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
           <Popover.Content>CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
@@ -25,7 +25,7 @@ describe(`Popover component`, () => {
     render(
       <IdProvider>
         <Popover>
-          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
           <Popover.Content>CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
@@ -46,7 +46,7 @@ describe(`Popover component`, () => {
     const { container } = render(
       <IdProvider>
         <Popover defaultOpen>
-          <Popover.Trigger as="button">TRIGGER</Popover.Trigger>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
           <Popover.Content>CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
