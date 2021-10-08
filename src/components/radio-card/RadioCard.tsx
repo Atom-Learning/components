@@ -6,10 +6,11 @@ import { styled } from '~/stitches'
 const StyledRadioCard = styled(RadioGroup.Item, {
   alignItems: 'center',
   bg: 'white',
-  border: '1px solid $tonal300',
+  border: '1px solid $tonal200',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
+  textAlign: 'left',
   '&[data-state="checked"]': {
     outline: '2px solid $primary',
     outlineOffset: '-2px'
@@ -46,10 +47,27 @@ const RadioButton = styled('div', {
 
   variants: {
     containerIsFullWidth: {
-      true: { ml: 'auto' },
-      false: { ml: '$4' }
+      true: {},
+      false: {}
+    },
+    align: {
+      left: { mr: '$4' },
+      right: {}
     }
-  }
+  },
+
+  compoundVariants: [
+    {
+      containerIsFullWidth: true,
+      align: 'right',
+      css: { ml: 'auto' }
+    },
+    {
+      containerIsFullWidth: false,
+      align: 'right',
+      css: { ml: '$4' }
+    }
+  ]
 })
 
 const Indicator = styled(RadioGroup.Indicator, {
@@ -59,18 +77,28 @@ const Indicator = styled(RadioGroup.Indicator, {
   size: '6px'
 })
 
+const Content = styled('div', {
+  variants: {
+    align: {
+      left: { order: '1' },
+      right: { order: '-1' }
+    }
+  }
+})
+
 type RadioCardProps = React.ComponentProps<typeof StyledRadioCard>
 
 export const RadioCard: React.FC<RadioCardProps> = ({
   children,
-  isFullWidth,
+  isFullWidth = false,
   size = 'md',
+  align = 'left',
   ...rest
 }) => (
   <StyledRadioCard {...rest} size={size} isFullWidth={isFullWidth}>
-    {children}
-    <RadioButton containerIsFullWidth={isFullWidth}>
+    <RadioButton align={align} containerIsFullWidth={isFullWidth}>
       <Indicator />
     </RadioButton>
+    <Content align={align}>{children}</Content>
   </StyledRadioCard>
 )

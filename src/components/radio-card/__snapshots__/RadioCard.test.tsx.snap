@@ -11,16 +11,17 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin: 0;
   }
 
-  .c-bzvqJt {
+  .c-cgoenp {
     align-items: center;
     background: white;
-    border: 1px solid var(--colors-tonal300);
+    border: 1px solid var(--colors-tonal200);
     border-radius: var(--radii-0);
     cursor: pointer;
     display: flex;
+    text-align: left;
   }
 
-  .c-bzvqJt[data-state="checked"] {
+  .c-cgoenp[data-state="checked"] {
     outline: 2px solid var(--colors-primary);
     outline-offset: -2px;
   }
@@ -75,11 +76,23 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin-left: var(--space-3);
   }
 
-  .c-bzvqJt-fJrRuP-size-md {
+  .c-cgoenp-fJrRuP-size-md {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
+  }
+
+  .c-cgoenp-djDtlJ-isFullWidth-false {
+    width: max-content;
+  }
+
+  .c-jCXneY-llEebI-align-left {
+    margin-right: var(--space-4);
+  }
+
+  .c-PJLV-YYAoU-align-left {
+    order: 1;
   }
 }
 
@@ -95,7 +108,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     >
       <button
         aria-checked="false"
-        class="c-bzvqJt c-bzvqJt-fJrRuP-size-md"
+        class="c-cgoenp c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="unchecked"
         role="radio"
@@ -103,14 +116,18 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         type="button"
         value="1"
       >
-        First item
         <div
-          class="c-jCXneY"
+          class="c-jCXneY c-jCXneY-llEebI-align-left"
         />
+        <div
+          class="c-PJLV c-PJLV-YYAoU-align-left"
+        >
+          First item
+        </div>
       </button>
       <button
         aria-checked="true"
-        class="c-bzvqJt c-bzvqJt-fJrRuP-size-md"
+        class="c-cgoenp c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="checked"
         role="radio"
@@ -118,14 +135,18 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         type="button"
         value="2"
       >
-        Second item
         <div
-          class="c-jCXneY"
+          class="c-jCXneY c-jCXneY-llEebI-align-left"
         >
           <span
             class="c-iumWEe"
             data-state="checked"
           />
+        </div>
+        <div
+          class="c-PJLV c-PJLV-YYAoU-align-left"
+        >
+          Second item
         </div>
       </button>
     </div>
