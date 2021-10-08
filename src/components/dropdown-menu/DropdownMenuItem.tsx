@@ -8,7 +8,6 @@ export const itemStyles = {
   display: 'flex',
   fontFamily: '$body',
   fontWeight: 400,
-  tabIndex: 0,
   position: 'relative',
   px: '$2',
   '&:not(:last-child)': { mb: '$3' },
@@ -17,29 +16,21 @@ export const itemStyles = {
     color: '$tonal100',
     pointerEvents: 'none'
   },
-  '&[aria-current="page"]': {
-    '&:before': {
+  '&[aria-current="page"], &:focus': {
+    '&::before': {
       borderLeft: '2px solid currentColor',
-      color: 'currentColor',
       content: '',
       height: '100%',
       left: 0,
+      outline: 'none',
       position: 'absolute',
       transform: 'scale(1)'
     }
   },
   '&:focus': {
     color: '$primaryMid',
-    outline: 'none',
-    '&:before': {
-      borderLeft: '2px solid $primaryMid',
-      color: 'currentColor',
-      content: '',
-      height: '100%',
-      left: 0,
-      position: 'absolute',
-      transform: 'scale(1)'
-    }
+    outline: 'none'
+    
   }
 }
 
