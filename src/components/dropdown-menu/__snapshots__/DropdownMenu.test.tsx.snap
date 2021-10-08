@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldWrapper component renders 1`] = `
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c-PJLV"
+    data-state="closed"
+    id="radix-id-0-1"
+    type="button"
+  >
+    TRIGGER
+  </button>
+</div>
+`;
