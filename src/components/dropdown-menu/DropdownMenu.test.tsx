@@ -20,7 +20,7 @@ const ExampleDropdownMenu = () => (
   </IdProvider>
 )
 
-describe('FieldWrapper component', () => {
+describe('DropdownMenu component', () => {
   it('renders', async () => {
     const { container } = render(<ExampleDropdownMenu />)
 
