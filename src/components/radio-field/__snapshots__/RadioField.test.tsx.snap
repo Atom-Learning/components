@@ -135,7 +135,7 @@ exports[`RadioField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bsbHzT c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
+            class="c-bkstqh c-bsbHzT c-bkstqh-gvmVBy-size-md c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
           >
             <div
               class="c-PJLV c-PJLV-ioftQP-css"
@@ -170,7 +170,7 @@ exports[`RadioField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bsbHzT c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
+            class="c-bkstqh c-bsbHzT c-bkstqh-gvmVBy-size-md c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
           >
             <div
               class="c-PJLV c-PJLV-ioftQP-css"

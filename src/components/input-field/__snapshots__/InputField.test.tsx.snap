@@ -47,11 +47,6 @@ exports[`InputField component renders a field in error state 1`] = `
     opacity: 1;
   }
 
-  .c-fFGCSj {
-    color: var(--colors-danger);
-    margin-left: var(--space-1);
-  }
-
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -90,6 +85,12 @@ exports[`InputField component renders a field in error state 1`] = `
   .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+  }
+
+  .c-bkstqh-bRDEWY-required-true::after {
+    color: var(--colors-danger);
+    margin-left: var(--space-1);
+    content: "*";
   }
 
   .c-fZTBsJ-bXVTjQ-state-error {
@@ -162,15 +163,10 @@ exports[`InputField component renders a field in error state 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
+          class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bkstqh-bRDEWY-required-true"
           for="INPUT FIELD"
         >
           INPUT FIELD
-          <span
-            class="c-fFGCSj"
-          >
-            *
-          </span>
         </label>
       </div>
       <input

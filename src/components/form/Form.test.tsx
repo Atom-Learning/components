@@ -123,7 +123,7 @@ describe(`Form component`, () => {
         </Button>
       </Form>
     )
-    const input = screen.getByRole('textbox', { name: 'Name *' })
+    const input = screen.getByRole('textbox', { name: 'Name' })
 
     userEvent.type(input, 'Kyle Lowry')
     expect(input).toHaveValue('Kyle Lowry')
@@ -156,8 +156,8 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    const nameInput = screen.getByRole('textbox', { name: 'Name *' })
-    const secretInput = screen.getByRole('textbox', { name: 'Secret *' })
+    const nameInput = screen.getByRole('textbox', { name: 'Name' })
+    const secretInput = screen.getByRole('textbox', { name: 'Secret' })
 
     userEvent.type(nameInput, 'Kawhi Leonard')
     userEvent.type(secretInput, 'Very secret secret')

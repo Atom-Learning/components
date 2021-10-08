@@ -18,12 +18,4 @@ describe(`Label component`, () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
-
-  it('renders an asterisk if required', async () => {
-    render(<Label required>TEXT</Label>)
-
-    const asterisk = await screen.getByText('*')
-
-    expect(asterisk).toBeInTheDocument()
-  })
 })
