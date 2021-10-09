@@ -1,4 +1,6 @@
+import { IdProvider } from '@radix-ui/react-id'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import { RadioCard, RadioCardGroup } from './'
@@ -13,5 +15,21 @@ describe('RadioCardGroup component', () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders a radio button - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <IdProvider>
+        <label>
+          Label
+          <RadioCardGroup defaultValue="2">
+            <RadioCard value="1">First item</RadioCard>
+            <RadioCard value="2">Second item</RadioCard>
+          </RadioCardGroup>
+        </label>
+      </IdProvider>
+    )
+
+    expect(await axe(container)).toHaveNoViolations()
   })
 })
