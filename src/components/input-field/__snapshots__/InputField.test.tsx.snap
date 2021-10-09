@@ -6,11 +6,9 @@ exports[`InputField component renders a field in error state 1`] = `
     display: flex;
   }
 
-  .c-bkstqh {
+  .c-cVSpVL {
     color: var(--colors-tonal500);
-    display: block;
     font-family: var(--fonts-body);
-    font-weight: 600;
     margin: 0;
   }
 
@@ -47,6 +45,12 @@ exports[`InputField component renders a field in error state 1`] = `
     opacity: 1;
   }
 
+  .c-fNCeYG {
+    color: var(--colors-danger);
+    margin-left: var(--space-1);
+    font-weight: 400;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -65,32 +69,39 @@ exports[`InputField component renders a field in error state 1`] = `
 }
 
 @media  {
-  .c-bkstqh-gvmVBy-size-md {
+  .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bkstqh-gvmVBy-size-md::before {
+  .c-cVSpVL-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bkstqh-gvmVBy-size-md::after {
+  .c-cVSpVL-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
   .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
-  }
-
-  .c-bkstqh-bRDEWY-required-true::after {
-    color: var(--colors-danger);
-    margin-left: var(--space-1);
-    content: "*";
   }
 
   .c-fZTBsJ-bXVTjQ-state-error {
@@ -163,10 +174,16 @@ exports[`InputField component renders a field in error state 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-bkstqh c-bkstqh-gvmVBy-size-md c-bkstqh-bRDEWY-required-true"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD
+          <span
+            aria-hidden="true"
+            class="c-fNCeYG"
+          >
+            *
+          </span>
         </label>
       </div>
       <input
@@ -221,11 +238,9 @@ exports[`InputField component renders a field with a number input 1`] = `
     display: flex;
   }
 
-  .c-bkstqh {
+  .c-cVSpVL {
     color: var(--colors-tonal500);
-    display: block;
     font-family: var(--fonts-body);
-    font-weight: 600;
     margin: 0;
   }
 
@@ -264,21 +279,34 @@ exports[`InputField component renders a field with a number input 1`] = `
 }
 
 @media  {
-  .c-bkstqh-gvmVBy-size-md {
+  .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bkstqh-gvmVBy-size-md::before {
+  .c-cVSpVL-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bkstqh-gvmVBy-size-md::after {
+  .c-cVSpVL-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
   }
 
   .c-fZTBsJ-pHZal-size-md {
@@ -313,7 +341,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD
@@ -339,11 +367,9 @@ exports[`InputField component renders a field with a text input 1`] = `
     display: flex;
   }
 
-  .c-bkstqh {
+  .c-cVSpVL {
     color: var(--colors-tonal500);
-    display: block;
     font-family: var(--fonts-body);
-    font-weight: 600;
     margin: 0;
   }
 
@@ -382,21 +408,34 @@ exports[`InputField component renders a field with a text input 1`] = `
 }
 
 @media  {
-  .c-bkstqh-gvmVBy-size-md {
+  .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bkstqh-gvmVBy-size-md::before {
+  .c-cVSpVL-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bkstqh-gvmVBy-size-md::after {
+  .c-cVSpVL-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
   }
 
   .c-fZTBsJ-pHZal-size-md {
@@ -431,7 +470,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-bkstqh c-bkstqh-gvmVBy-size-md"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD
