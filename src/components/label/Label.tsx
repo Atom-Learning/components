@@ -1,29 +1,75 @@
+import * as React from 'react'
+
 import { styled } from '~/stitches'
+import type { Override } from '~/utilities/types'
 
 import { textVariantSize } from '../text'
+
 const { sm, md } = textVariantSize()
 
-export const Label = styled('label', {
+const StyledLabel = styled('label', {
   color: '$tonal500',
-  display: 'block',
   fontFamily: '$body',
-  fontWeight: 600,
   m: 0,
   variants: {
     size: { sm, md },
-    required: {
-      true: {
-        '&::after': {
-          color: '$danger',
-          ml: '$1',
-          content: '*'
-        }
+    type: {
+      block: {
+        display: 'block',
+        fontWeight: 600
+      },
+      inline: {
+        display: 'flex',
+        fontWeight: 400,
+        maxWidth: 'max-content'
       }
+    },
+    align: {
+      baseline: { alignItems: 'baseline' },
+      center: { alignItems: 'center' }
+    },
+    direction: {
+      reverse: { flexDirection: 'row-reverse' },
+      row: { flexDirection: 'row' }
     }
-  },
-  defaultVariants: {
-    size: 'md'
   }
 })
+
+const StyledAsterisk = styled('span', {
+  color: '$danger',
+  ml: '$1',
+  fontWeight: 400
+})
+
+type LabelProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledLabel>,
+  {
+    as?: 'label' | 'legend'
+    required?: boolean
+  }
+>
+
+export const Label: React.FC<LabelProps> = ({
+  align = 'baseline',
+  as = 'label',
+  direction = 'row',
+  size = 'md',
+  type = 'block',
+  children,
+  required,
+  ...rest
+}) => (
+  <StyledLabel
+    as={as}
+    size={size}
+    type={type}
+    align={align}
+    direction={direction}
+    {...rest}
+  >
+    {children}
+    {required && <StyledAsterisk aria-hidden>*</StyledAsterisk>}
+  </StyledLabel>
+)
 
 Label.displayName = 'Label'
