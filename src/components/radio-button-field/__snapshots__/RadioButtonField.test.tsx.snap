@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadioField component renders 1`] = `
+exports[`RadioButtonField component renders 1`] = `
 @media  {
   .c-leHWbT {
     all: unset;
