@@ -7,7 +7,7 @@ import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
 import { Checkbox } from '../checkbox/Checkbox'
-import { RadioButton } from '../radio/RadioButton'
+import { RadioButton } from '../radio-button/RadioButton'
 
 const InlineLabel = styled(Label, {
   display: 'flex',

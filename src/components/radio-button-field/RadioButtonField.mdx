@@ -1,0 +1,19 @@
+---
+title: Radio Button Field
+component: RadioButtonField
+description: Combines a RadioButton with a Label and ValidationError
+category: Form fields
+---
+
+`RadioButtonField` wraps a `RadioButtonGroup` to provide a legend and a `ValidationError`. `RadioButtonField.Item` renders an individual `Radio` with an inline `Label`.
+
+**Note**: a `RadioButtonField.Item`’s `value` **must** be a `string`.
+
+```tsx preview
+<Form>
+  <RadioButtonField name="options">
+    <RadioButtonField.Item label="Option 1" value="1" />
+    <RadioButtonField.Item label="Option 2" value="2" />
+  </RadioButtonField>
+</Form>
+```

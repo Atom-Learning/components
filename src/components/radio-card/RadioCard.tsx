@@ -17,7 +17,6 @@ export const StyledRadioCard = styled(RadioGroup.Item, {
     outline: '2px solid $primary',
     outlineOffset: '-2px'
   },
-
   variants: {
     align: {
       left: { flexDirection: 'row' },
@@ -50,7 +49,6 @@ const RadioButton = styled('div', {
     backgroundColor: '$primary',
     borderColor: '$primary'
   },
-
   variants: {
     containerIsFullWidth: {
       true: {},

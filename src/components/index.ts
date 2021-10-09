@@ -29,9 +29,12 @@ export { PasswordField } from './password-field'
 export { PasswordInput } from './password-input'
 export { Popover } from './popover'
 export { ProgressBar } from './progress-bar'
-export { RadioButton, RadioButtonGroup } from './radio'
+export { RadioButton, RadioButtonGroup } from './radio-button'
 export { RadioCard, RadioCardGroup } from './radio-card'
-export { RadioGroupField } from './radio-field'
+export {
+  RadioButtonField,
+  RadioButtonField as RadioGroupField
+} from './radio-button-field'
 export { SearchInput } from './search-input'
 export { Select } from './select'
 export { SelectField } from './select-field'
