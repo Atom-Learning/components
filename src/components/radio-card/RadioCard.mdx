@@ -1,10 +1,38 @@
 ---
 title: Radio Card
-component: RadioCard
-description: This is the description
+component: RadioCardGroup,RadioCard
+description: A Radio Button that enables extra emphasis and descriptive capability
 category: Form primitives
 ---
 
-```jsx preview
-<RadioCard />
+A set of `RadioCard`s should be wrapped with a `RadioCardGroup` component to provide the correct HTML structure for our radio buttons. Any text within the card will be used as the label for the radio button, ensure that you test this content and use `aria-hidden` to remove any unnecessary content from the announced text.
+
+```tsx preview
+<RadioCardGroup>
+  <RadioCard value="1">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+  <RadioCard value="2">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+  <RadioCard value="3">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+</RadioCardGroup>
+```
+
+You can pass props to `RadioCardGroup` to control the styling of every `RadioCard` within. Change the radio button alignment within the card, toggle between two sizes, and render each card at full width.
+
+```tsx preview
+<RadioCardGroup align="right" size="lg" isFullWidth>
+  <RadioCard value="1">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+  <RadioCard value="2">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+  <RadioCard value="3">
+    <Text>This is a radio card option</Text>
+  </RadioCard>
+</RadioCardGroup>
 ```
