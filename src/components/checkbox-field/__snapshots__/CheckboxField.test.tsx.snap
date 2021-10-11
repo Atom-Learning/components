@@ -2,18 +2,10 @@
 
 exports[`CheckboxField component renders 1`] = `
 @media  {
-  .c-bkstqh {
+  .c-cVSpVL {
     color: var(--colors-tonal500);
-    display: block;
     font-family: var(--fonts-body);
-    font-weight: 600;
     margin: 0;
-  }
-
-  .c-bsbHzT {
-    display: flex;
-    font-weight: 400;
-    max-width: max-content;
   }
 
   .c-emNREM {
@@ -63,28 +55,34 @@ exports[`CheckboxField component renders 1`] = `
 }
 
 @media  {
-  .c-bkstqh-gvmVBy-size-md {
+  .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bkstqh-gvmVBy-size-md::before {
+  .c-cVSpVL-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bkstqh-gvmVBy-size-md::after {
+  .c-cVSpVL-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-bsbHzT-kRIfoH-align-baseline {
+  .c-cVSpVL-bsbHzT-type-inline {
+    display: flex;
+    font-weight: 400;
+    max-width: max-content;
+  }
+
+  .c-cVSpVL-kRIfoH-align-baseline {
     align-items: baseline;
   }
 
-  .c-bsbHzT-ejCoEP-direction-row {
+  .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
 }
@@ -105,7 +103,7 @@ exports[`CheckboxField component renders 1`] = `
       class="c-PJLV"
     >
       <label
-        class="c-bkstqh c-bsbHzT c-bkstqh-gvmVBy-size-md c-bsbHzT-kRIfoH-align-baseline c-bsbHzT-ejCoEP-direction-row"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
       >
         <div
           class="c-PJLV c-PJLV-ioftQP-css"
