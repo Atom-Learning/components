@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
+import { Description as FieldDescription } from '~/components/field-wrapper/FieldDescription'
 import { useFieldError, ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio-button'
-import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
@@ -49,12 +49,7 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
         {label}
       </Label>
       {description && (
-        <Text
-          size="sm"
-          css={{ color: '$tonal300', mb: '$3', maxWidth: '80ch' }}
-        >
-          {description}
-        </Text>
+        <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
       )}
       <Controller
         control={control}
