@@ -14,13 +14,13 @@ type InlineFieldWrapperProps = {
   error?: string
   label: string
   required?: boolean
-  align?: 'baseline' | 'center'
+  align?: 'start' | 'center'
   direction?: 'row' | 'reverse'
   description?: string
 }
 
 export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
-  align = 'baseline',
+  align = 'start',
   children,
   css,
   description,
@@ -42,7 +42,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
             [direction === 'reverse' ? 'ml' : 'mr']: '$3',
             // provide offset for specific child components
             ...((child?.type === Checkbox || child?.type === RadioButton) && {
-              transform: 'translateY($space$0)'
+              transform: 'translateY($space$1)'
             })
           }}
         >
