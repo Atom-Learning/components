@@ -10,13 +10,22 @@ A set of `RadioCard`s should be wrapped with a `RadioCardGroup` component to pro
 ```tsx preview
 <RadioCardGroup>
   <RadioCard value="1">
-    <Text>This is a radio card option</Text>
+    <Text css={{ mb: '$2' }}>This is a radio card option</Text>
+    <Text size="sm" css={{ color: '$tonal300' }}>
+      With some additional text
+    </Text>
   </RadioCard>
   <RadioCard value="2">
-    <Text>This is a radio card option</Text>
+    <Text css={{ mb: '$2' }}>This is another radio card option</Text>
+    <Text size="sm" css={{ color: '$tonal300' }}>
+      With some additional text
+    </Text>
   </RadioCard>
   <RadioCard value="3">
-    <Text>This is a radio card option</Text>
+    <Text css={{ mb: '$2' }}>And a further radio card option</Text>
+    <Text size="sm" css={{ color: '$tonal300' }}>
+      With some additional text
+    </Text>
   </RadioCard>
 </RadioCardGroup>
 ```
@@ -24,15 +33,30 @@ A set of `RadioCard`s should be wrapped with a `RadioCardGroup` component to pro
 You can pass props to `RadioCardGroup` to control the styling of every `RadioCard` within. Change the radio button alignment within the card, toggle between two sizes, and render each card at full width.
 
 ```tsx preview
-<RadioCardGroup align="right" size="lg" isFullWidth>
+<RadioCardGroup align="right" size="lg" isFullWidth defaultValue="1">
   <RadioCard value="1">
-    <Text>This is a radio card option</Text>
+    <Flex css={{ flexDirection: 'row', alignContent: 'center' }}>
+      <Text css={{ mr: '$4' }} size="sm">
+        £99
+      </Text>
+      <Heading size="xs">This is a radio card option</Heading>
+    </Flex>
   </RadioCard>
   <RadioCard value="2">
-    <Text>This is a radio card option</Text>
+    <Flex css={{ flexDirection: 'row', alignContent: 'center' }}>
+      <Text css={{ mr: '$4' }} size="sm">
+        £109
+      </Text>
+      <Heading size="xs">This is another radio card option</Heading>
+    </Flex>
   </RadioCard>
   <RadioCard value="3">
-    <Text>This is a radio card option</Text>
+    <Flex css={{ flexDirection: 'row', alignContent: 'center' }}>
+      <Text css={{ mr: '$4' }} size="sm">
+        £149
+      </Text>
+      <Heading size="xs">And a further additional radio card option</Heading>
+    </Flex>
   </RadioCard>
 </RadioCardGroup>
 ```

@@ -26,7 +26,7 @@ export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
   <RadioGroup.Root {...rest}>
     <Stack direction="row" justify={justify} gap={gap} css={css}>
       {React.Children.map(children, (child) => {
-        if (child?.type === RadioCard) {
+        if (React.isValidElement(child) && child?.type === RadioCard) {
           return React.cloneElement(child, { size, isFullWidth, align })
         }
         return child
