@@ -2,37 +2,48 @@
 
 exports[`Label component renders a label 1`] = `
 @media  {
-  .c-bkstqh {
+  .c-cVSpVL {
     color: var(--colors-tonal500);
-    display: block;
     font-family: var(--fonts-body);
-    font-weight: 600;
     margin: 0;
   }
 }
 
 @media  {
-  .c-bkstqh-gvmVBy-size-md {
+  .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bkstqh-gvmVBy-size-md::before {
+  .c-cVSpVL-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bkstqh-gvmVBy-size-md::after {
+  .c-cVSpVL-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-kRIfoH-align-baseline {
+    align-items: baseline;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
   }
 }
 
 <div>
   <label
-    class="c-bkstqh c-bkstqh-gvmVBy-size-md"
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
   >
     TEXT
   </label>

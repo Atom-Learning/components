@@ -60,11 +60,11 @@ export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
       <StyledIndicator>
         <Icon
           is={props.checked === 'indeterminate' ? Minus : Ok}
-          size="sm"
           css={{
             pointerEvents: 'none',
             position: 'absolute',
-            strokeWidth: '3'
+            strokeWidth: '3',
+            size: 14
           }}
         />
       </StyledIndicator>
