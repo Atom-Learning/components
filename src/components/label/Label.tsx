@@ -25,7 +25,7 @@ const StyledLabel = styled('label', {
       }
     },
     align: {
-      baseline: { alignItems: 'baseline' },
+      start: { alignItems: 'flex-start' },
       center: { alignItems: 'center' }
     },
     direction: {
@@ -50,7 +50,7 @@ type LabelProps = Override<
 >
 
 export const Label: React.FC<LabelProps> = ({
-  align = 'baseline',
+  align = 'flex-start',
   as = 'label',
   direction = 'row',
   size = 'md',

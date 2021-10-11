@@ -78,8 +78,8 @@ exports[`CheckboxField component renders 1`] = `
     max-width: max-content;
   }
 
-  .c-cVSpVL-kRIfoH-align-baseline {
-    align-items: baseline;
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
   }
 
   .c-cVSpVL-ejCoEP-direction-row {
@@ -88,9 +88,9 @@ exports[`CheckboxField component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-ioftQP-css {
+  .c-PJLV-ihmIibS-css {
     margin-right: var(--space-3);
-    transform: translateY(var(--space-0));
+    transform: translateY(var(--space-1));
   }
 }
 
@@ -103,10 +103,10 @@ exports[`CheckboxField component renders 1`] = `
       class="c-PJLV"
     >
       <label
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
       >
         <div
-          class="c-PJLV c-PJLV-ioftQP-css"
+          class="c-PJLV c-PJLV-ihmIibS-css"
         >
           <button
             aria-checked="false"
