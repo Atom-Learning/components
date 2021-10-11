@@ -7,7 +7,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     flex-wrap: wrap;
   }
 
-  .c-eyKPFZ {
+  .c-hXfYPB {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -24,17 +24,17 @@ exports[`Radio component renders a disabled radio button 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-eyKPFZ:focus {
+  .c-hXfYPB:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  :checked + .c-eyKPFZ {
+  .c-hXfYPB[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-eyKPFZ[disabled] {
+  .c-hXfYPB[disabled] {
     background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
@@ -61,7 +61,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="c-eyKPFZ"
+      class="c-hXfYPB"
       data-disabled=""
       data-radix-collection-item=""
       data-state="unchecked"
@@ -82,7 +82,7 @@ exports[`Radio component renders a radio button 1`] = `
     flex-wrap: wrap;
   }
 
-  .c-eyKPFZ {
+  .c-hXfYPB {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -99,17 +99,17 @@ exports[`Radio component renders a radio button 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-eyKPFZ:focus {
+  .c-hXfYPB:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  :checked + .c-eyKPFZ {
+  .c-hXfYPB[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-eyKPFZ[disabled] {
+  .c-hXfYPB[disabled] {
     background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
@@ -136,7 +136,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="c-eyKPFZ"
+      class="c-hXfYPB"
       data-radix-collection-item=""
       data-state="unchecked"
       role="radio"
