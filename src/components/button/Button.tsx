@@ -230,13 +230,15 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const optionalLinkProps = href
+    const linkSpecificProps = href
       ? {
           as: 'a',
           href,
           onClick: undefined
         }
       : {}
+
+    const buttonSpecificProps = href ? {} : { type }
 
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
@@ -247,9 +249,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         appearance={appearance}
         size={size}
         theme={theme}
-        type={type}
         {...rest}
-        {...optionalLinkProps}
+        {...linkSpecificProps}
+        {...buttonSpecificProps}
         ref={ref}
       >
         {typeof isLoading === 'boolean' ? (
