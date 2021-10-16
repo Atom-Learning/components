@@ -34,17 +34,17 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     background-color: var(--colors-primaryMid);
   }
 
-  .c-etTjtm {
+  .c-JOzIh {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
-    transition: transform 75ms;
+    transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-etTjtm[data-state="checked"] {
+  .c-JOzIh[data-state="checked"] {
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
@@ -59,7 +59,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     value="on"
   >
     <span
-      class="c-etTjtm"
+      class="c-JOzIh"
       data-state="checked"
     />
   </button>
@@ -100,17 +100,17 @@ exports[`Switch component renders a disabled switch 1`] = `
     background-color: var(--colors-primaryMid);
   }
 
-  .c-etTjtm {
+  .c-JOzIh {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
-    transition: transform 75ms;
+    transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-etTjtm[data-state="checked"] {
+  .c-JOzIh[data-state="checked"] {
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
@@ -127,7 +127,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     value="on"
   >
     <span
-      class="c-etTjtm"
+      class="c-JOzIh"
       data-disabled=""
       data-state="unchecked"
     />
@@ -169,17 +169,17 @@ exports[`Switch component renders a switch 1`] = `
     background-color: var(--colors-primaryMid);
   }
 
-  .c-etTjtm {
+  .c-JOzIh {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
-    transition: transform 75ms;
+    transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-etTjtm[data-state="checked"] {
+  .c-JOzIh[data-state="checked"] {
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
@@ -194,7 +194,7 @@ exports[`Switch component renders a switch 1`] = `
     value="on"
   >
     <span
-      class="c-etTjtm"
+      class="c-JOzIh"
       data-state="unchecked"
     />
   </button>
