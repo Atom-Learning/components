@@ -3,6 +3,7 @@ import { Close, Content, Overlay } from '@radix-ui/react-dialog'
 import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
+import { fadeIn, fadeOut } from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
@@ -17,15 +18,6 @@ const slideIn = keyframes({
 const slideOut = keyframes({
   '0%': { transform: contentOnScreen },
   '100%': { transform: contentOffScreen }
-})
-
-const fadeIn = keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: 1 }
-})
-const fadeOut = keyframes({
-  '0%': { opacity: 1 },
-  '100%': { opacity: 0 }
 })
 
 const StyledDialogOverlay = styled(Overlay, {

@@ -1,25 +1,35 @@
 import { Arrow, Content } from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
-import { keyframes, styled } from '~/stitches'
-
-const scaleIn = keyframes({
-  '0%': { opacity: 0, transform: 'scale(0.8)' },
-  '100%': { opacity: 1, transform: 'scale(1)' }
-})
+import { styled } from '~/stitches'
+import {
+  slideDownAndFade,
+  slideLeftAndFade,
+  slideRightAndFade,
+  slideUpAndFade
+} from '~/utilities'
 
 const StyledContent = styled(Content, {
-  animation: `${scaleIn} 75ms ease-out`,
   backgroundColor: '$tonal500',
   borderRadius: '$0',
   boxShadow: '$0',
   color: 'white',
   fontFamily: '$body',
   fontSize: '$sm',
-  lineHeight: 1.2,
+  lineHeight: 1.5,
   px: '$3',
   py: '$2',
-  transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
+  '@allowMotion': {
+    animationDuration: '75ms',
+    animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
+    willChange: 'transform, opacity',
+    '&[data-state="delayed-open"]': {
+      '&[data-side="top"]': { animationName: slideDownAndFade },
+      '&[data-side="right"]': { animationName: slideLeftAndFade },
+      '&[data-side="bottom"]': { animationName: slideUpAndFade },
+      '&[data-side="left"]': { animationName: slideRightAndFade }
+    }
+  },
   variants: {
     size: {
       sm: { maxWidth: '100px' },
