@@ -17,7 +17,7 @@ exports[`RadioButtonField component renders 1`] = `
     flex-wrap: wrap;
   }
 
-  .c-eyKPFZ {
+  .c-hXfYPB {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -34,17 +34,17 @@ exports[`RadioButtonField component renders 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-eyKPFZ:focus {
+  .c-hXfYPB:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  :checked + .c-eyKPFZ {
+  .c-hXfYPB[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-eyKPFZ[disabled] {
+  .c-hXfYPB[disabled] {
     background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
@@ -83,10 +83,6 @@ exports[`RadioButtonField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-cVSpVL-kRIfoH-align-baseline {
-    align-items: baseline;
-  }
-
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -100,6 +96,10 @@ exports[`RadioButtonField component renders 1`] = `
     font-weight: 400;
     max-width: max-content;
   }
+
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
 }
 
 @media  {
@@ -108,9 +108,9 @@ exports[`RadioButtonField component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-ioftQP-css {
+  .c-PJLV-ihmIibS-css {
     margin-right: var(--space-3);
-    transform: translateY(var(--space-0));
+    transform: translateY(var(--space-1));
   }
 }
 
@@ -123,7 +123,7 @@ exports[`RadioButtonField component renders 1`] = `
       class="c-leHWbT"
     >
       <legend
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
       >
         Example options
       </legend>
@@ -138,14 +138,14 @@ exports[`RadioButtonField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
           >
             <div
-              class="c-PJLV c-PJLV-ioftQP-css"
+              class="c-PJLV c-PJLV-ihmIibS-css"
             >
               <button
                 aria-checked="true"
-                class="c-eyKPFZ"
+                class="c-hXfYPB"
                 data-radix-collection-item=""
                 data-state="checked"
                 role="radio"
@@ -173,14 +173,14 @@ exports[`RadioButtonField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
           >
             <div
-              class="c-PJLV c-PJLV-ioftQP-css"
+              class="c-PJLV c-PJLV-ihmIibS-css"
             >
               <button
                 aria-checked="false"
-                class="c-eyKPFZ"
+                class="c-hXfYPB"
                 data-radix-collection-item=""
                 data-state="unchecked"
                 role="radio"

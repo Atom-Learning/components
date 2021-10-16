@@ -74,10 +74,6 @@ exports[`TextareaField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-cVSpVL-kRIfoH-align-baseline {
-    align-items: baseline;
-  }
-
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -103,7 +99,7 @@ exports[`TextareaField component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
           for="description"
         />
       </div>
@@ -192,10 +188,6 @@ exports[`TextareaField component renders with an error 1`] = `
     font-weight: 600;
   }
 
-  .c-cVSpVL-kRIfoH-align-baseline {
-    align-items: baseline;
-  }
-
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -221,7 +213,7 @@ exports[`TextareaField component renders with an error 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-kRIfoH-align-baseline c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
           for="description"
         />
       </div>

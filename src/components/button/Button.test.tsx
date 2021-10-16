@@ -134,6 +134,7 @@ describe(`Button component`, () => {
 
     expect(link).toBeInTheDocument()
     expect(link).toHaveAttribute('href', 'https://app.atomlearning.co.uk')
+    expect(link).not.toHaveAttribute('type', 'button')
   })
 
   it('renders a rounded button ', async () => {

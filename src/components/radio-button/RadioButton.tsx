@@ -21,7 +21,7 @@ const StyledRadioButton = styled(RadioGroup.Item, {
     outline: '2px solid $primary',
     outlineOffset: '1px'
   },
-  ':checked + &': {
+  '&[data-state="checked"]': {
     backgroundColor: '$primary',
     borderColor: '$primary'
   },
