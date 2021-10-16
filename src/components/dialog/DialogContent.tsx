@@ -24,11 +24,13 @@ const StyledDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
   position: 'fixed',
-  '&[data-state="open"]': {
-    animation: `${fadeIn} 250ms ease-out`
-  },
-  '&[data-state="closed"]': {
-    animation: `${fadeOut} 550ms ease-out`
+  '@allowMotion': {
+    '&[data-state="open"]': {
+      animation: `${fadeIn} 250ms ease-out`
+    },
+    '&[data-state="closed"]': {
+      animation: `${fadeOut} 550ms ease-out`
+    }
   }
 })
 
@@ -46,11 +48,13 @@ const StyledDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
-  '&[data-state="open"]': {
-    animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
-  },
-  '&[data-state="closed"]': {
-    animation: `${slideOut} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+  '@allowMotion': {
+    '&[data-state="open"]': {
+      animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+    },
+    '&[data-state="closed"]': {
+      animation: `${slideOut} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+    }
   },
   variants: {
     size: {

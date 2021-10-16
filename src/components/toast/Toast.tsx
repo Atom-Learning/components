@@ -27,11 +27,15 @@ const ToastContainer = styled('div', {
   variants: {
     visible: {
       true: {
-        animation: `${slideIn} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+        '@allowMotion': {
+          animation: `${slideIn} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+        }
       },
       false: {
-        animation: `${slideOut} 250ms cubic-bezier(0.22, 1, 0.36, 1)`,
-        opacity: 0
+        opacity: 0,
+        '@allowMotion': {
+          animation: `${slideOut} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+        }
       }
     }
   }
@@ -49,10 +53,13 @@ const StyledToast = styled('div', {
   position: 'relative',
   pr: '$6',
   py: '$4',
-  transition: 'background-color 50ms ease-out, transform 150ms ease-out',
+  transition: 'background-color 50ms ease-out',
   width: '100%',
   '@sm': {
     width: TOAST_WIDTH
+  },
+  '@allowMotion': {
+    transition: 'background-color 50ms ease-out, transform 150ms ease-out'
   },
   variants: {
     status: {

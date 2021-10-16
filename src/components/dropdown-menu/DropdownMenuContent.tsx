@@ -13,8 +13,8 @@ export const DropdownMenuContent = styled(Content, {
   borderRadius: '$0',
   boxShadow: '$0',
   py: '$3',
-  '@media (prefers-reduced-motion: no-preference)': {
-    animationDuration: '400ms',
+  '@allowMotion': {
+    animationDuration: '75ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
     willChange: 'transform, opacity',
     '&[data-state="open"]': {
