@@ -1,49 +1,53 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List component renders a list 1`] = `
-.sxfcjnm {
-  font-family: var(--sx-fonts-body);
-  margin: unset;
-  padding: unset;
+@media  {
+  .c-iQukjL {
+    font-family: var(--fonts-body);
+    margin: unset;
+    padding: unset;
+  }
+
+  .c-iQukjL > .c-PJLV:not(:last-child) {
+    margin-bottom: var(--space-2);
+  }
+
+  .c-iQukjL > .c-PJLV:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.sxfcjnm > .sx03kze:not(:last-child) {
-  margin-bottom: var(--sx-space-2);
-}
+@media  {
+  .c-iQukjL-bfiEAN-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
 
-.sxfcjnm > .sx03kze:last-child {
-  margin-bottom: 0;
-}
+  .c-iQukjL-DlQlZ-as-ul {
+    padding-left: var(--space-3);
+  }
 
-.sxfcjnmq7qe9--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+    padding-left: var(--space-2);
+  }
 
-.sxfcjnm4kvou--as-ul {
-  padding-left: var(--sx-space-3);
-}
-
-.sxfcjnm4kvou--as-ul > .sx03kze {
-  padding-left: var(--sx-space-2);
-}
-
-.sxfcjnm4kvou--as-ul > .sx03kze::marker {
-  content: "•";
-  font-weight: bold;
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
+    content: "•";
+    font-weight: bold;
+  }
 }
 
 <div>
   <ul
-    class="sxfcjnm sxfcjnmq7qe9--size-md sxfcjnm4kvou--as-ul"
+    class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul"
   >
     <li
-      class="sx03kze"
+      class="c-PJLV"
     >
       Item 1
     </li>
     <li
-      class="sx03kze"
+      class="c-PJLV"
     >
       Item 2
     </li>

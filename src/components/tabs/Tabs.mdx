@@ -8,16 +8,20 @@ category: Layout
 The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
 
 ```tsx preview
-<Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
+<Tabs defaultValue="tab1" css={{ height: '100px' }}>
   <Tabs.TriggerList>
     <Tabs.Trigger value="tab1">
-      <Text>Nested component under the Tabs.Trigger component</Text>
+      Nested component under the Tabs.Trigger component
     </Tabs.Trigger>
     <Tabs.Trigger value="tab2">Simple text</Tabs.Trigger>
   </Tabs.TriggerList>
-  <Tabs.Content value="tab1">Content for tab1.</Tabs.Content>
-  <Tabs.Content value="tab2">
-    Content for the second tab. It can also hold other components, like a{' '}
+  <Tabs.Content css={{ p: '$3' }} value="tab1">
+    <Text>Content for tab1.</Text>
+  </Tabs.Content>
+  <Tabs.Content css={{ p: '$3' }} value="tab2">
+    <Text>
+      Content for the second tab. It can also hold other components, like a
+    </Text>
     <Button>Button</Button>
   </Tabs.Content>
 </Tabs>
@@ -26,25 +30,12 @@ The component provides a set of default styles, which can be overwritten by usin
 It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
 
 ```tsx
-<Tabs defaultValue="tab1" css={{ height: '400px', border: '1px solid black' }}>
+<Tabs defaultValue="tab1">
 ```
 
 ## Tabs.TriggerList
 
 The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
-
-```tsx preview
-<Tabs>
-  <Tabs.TriggerList css={{ borderBottom: '1px solid gray' }}>
-    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-    <Tabs.Trigger value="tab3">Tab 3</Tabs.Trigger>
-  </Tabs.TriggerList>
-  <Tabs.Content value="tab1">Tab 1 content</Tabs.Content>
-  <Tabs.Content value="tab2">Tab 2 content</Tabs.Content>
-  <Tabs.Content value="tab3">Tab 3 content</Tabs.Content>
-</Tabs>
-```
 
 ## Tabs.Trigger
 
@@ -53,20 +44,6 @@ The `Tabs.Trigger` component holds the content that will be displayed inside the
 ## Tabs.Content
 
 The `Tabs.Content` component, as the name suggests, holds the content for that particular section of the tabs component. It takes a `value` prop that needs to match the `value` prop passed to its corresponding trigger. Its content can be any text or valid component.
-
-```tsx preview
-<Tabs>
-  <Tabs.TriggerList>
-    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
-  </Tabs.TriggerList>
-  <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
-  <Tabs.Content value="tab2">
-    Content for the second tab. It can also hold other components, like a{' '}
-    <Button>Button</Button>
-  </Tabs.Content>
-</Tabs>
-```
 
 ## Disabled tab
 

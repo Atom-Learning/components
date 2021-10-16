@@ -1,92 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextareaField component renders 1`] = `
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-dIDWeX {
+    box-shadow: none;
+    font-size: var(--fontSizes-md);
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: var(--sizes-7);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: calc(var(--space-2) + var(--space-1));
+    padding-bottom: calc(var(--space-2) + var(--space-1));
+    resize: vertical;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-dIDWeX:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dIDWeX[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-dIDWeX::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
 }
 
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx5661z {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  line-height: 1.4;
-  min-height: var(--sx-sizes-7);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: calc(var(--sx-space-2) + var(--sx-space-1));
-  padding-bottom: calc(var(--sx-space-2) + var(--sx-space-1));
-  resize: vertical;
-  transition: all 75ms ease-out;
-  width: 100%;
-}
-
-.sx5661z:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sx5661z[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
           for="description"
         />
       </div>
       <textarea
-        class="sx5661z"
+        class="c-dIDWeX"
         id="description"
         name="description"
         placeholder="placeholder"
@@ -97,92 +115,110 @@ exports[`TextareaField component renders 1`] = `
 `;
 
 exports[`TextareaField component renders with an error 1`] = `
-.sx2cs53 {
-  display: flex;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-dIDWeX {
+    box-shadow: none;
+    font-size: var(--fontSizes-md);
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    min-height: var(--sizes-7);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: calc(var(--space-2) + var(--space-1));
+    padding-bottom: calc(var(--space-2) + var(--space-1));
+    resize: vertical;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-dIDWeX:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-dIDWeX[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-dIDWeX::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx2cs53-qom1k {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: var(--sx-space-3);
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
 }
 
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
-}
-
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sx5661z {
-  box-shadow: none;
-  font-size: var(--sx-fontSizes-md);
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  line-height: 1.4;
-  min-height: var(--sx-sizes-7);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  padding-top: calc(var(--sx-space-2) + var(--sx-space-1));
-  padding-bottom: calc(var(--sx-space-2) + var(--sx-space-1));
-  resize: vertical;
-  transition: all 75ms ease-out;
-  width: 100%;
-}
-
-.sx5661z:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
-}
-
-.sx5661z[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
 }
 
 <div>
   <form
     aria-label="form"
-    class="sx03kze"
+    class="c-PJLV"
   >
     <div
-      class="sx03kze"
+      class="c-PJLV"
     >
       <div
-        class="sx2cs53 sx2cs53-qom1k"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="sx5eeij sx5eeij8bitc--size-md"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
           for="description"
         />
       </div>
       <textarea
-        class="sx5661z"
+        class="c-dIDWeX"
         error="Error Message"
         id="description"
         name="description"

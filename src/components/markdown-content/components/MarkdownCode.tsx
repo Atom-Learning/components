@@ -10,13 +10,14 @@ type MarkdownCodeProps = {
 }
 
 const StyledCode = styled(Box, {
-  bg: '$tonal200',
-  p: '$3',
-  my: '$4',
+  bg: '$tonal100',
   borderRadius: '$1',
-  lineHeight: 1.4,
+  color: '$tonal600',
   fontFamily: '$mono',
-  fontSize: '$sm'
+  fontSize: '$sm',
+  lineHeight: 1.4,
+  my: '$4',
+  p: '$3'
 })
 
 export const MarkdownCode: React.FC<MarkdownCodeProps> = ({ node }) => (

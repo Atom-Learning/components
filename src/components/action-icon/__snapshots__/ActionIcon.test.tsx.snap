@@ -1,64 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ActionIcon component renders 1`] = `
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
+@media  {
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 }
 
-.sxtros6mbqqh--size-md {
-  height: var(--sx-sizes-2);
-  width: var(--sx-sizes-2);
+@media  {
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
 }
 
-.sxd2uai {
-  align-items: center;
-  -webkit-appearance: none;
-  appearance: none;
-  background: white;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  box-sizing: border-box;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  padding: unset;
-  transition: all 125ms ease-out;
-}
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
 
-.sxd2uai[disabled],
-.sxd2uai[disabled]:hover,
-.sxd2uai[disabled]:focus {
-  background: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  border-color: var(--sx-colors-tonal100);
-  cursor: not-allowed;
-}
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
 
-.sxd2uaie6fss--size-md {
-  height: var(--sx-sizes-3);
-  width: var(--sx-sizes-3);
-}
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
 
-.sxd2uai94b5u--c2 {
-  background: transparent;
-  color: var(--sx-colors-primary);
-}
-
-.sxd2uai94b5u--c2:hover,
-.sxd2uai94b5u--c2:focus {
-  color: var(--sx-colors-tertiary);
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="sxd2uai sxd2uai03kze--theme-primary sxd2uai03kze--appearance-simple sxd2uaie6fss--size-md sxd2uai94b5u--c2"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv"
     type="button"
   >
     <svg />

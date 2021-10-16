@@ -1,64 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Switch component renders a Switch in "on" state 1`] = `
-.sx1jh2a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--sx-colors-tonal300);
-  border: none;
-  border-radius: var(--sx-radii-round);
-  cursor: pointer;
-  display: flex;
-  overflow: hidden;
-  padding: var(--sx-space-0);
-  position: relative;
-  transition: background-color 100ms ease;
-  width: var(--sx-sizes-4);
-}
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
-}
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
 
-.sx1jh2a[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-}
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
-}
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
 
-.sxxf22o {
-  display: block;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  background-color: white;
-  border-radius: var(--sx-radii-round);
-  transition: transform 100ms;
-  will-change: transform;
-}
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
 
-.sxxf22o[data-state="checked"] {
-  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
 }
 
 <div>
-  <input
-    checked=""
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="true"
-    class="sx1jh2a"
+    class="c-biUdic"
     data-state="checked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="sxxf22o"
+      class="c-etTjtm"
       data-state="checked"
     />
   </button>
@@ -66,57 +67,58 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 `;
 
 exports[`Switch component renders a disabled switch 1`] = `
-.sx1jh2a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--sx-colors-tonal300);
-  border: none;
-  border-radius: var(--sx-radii-round);
-  cursor: pointer;
-  display: flex;
-  overflow: hidden;
-  padding: var(--sx-space-0);
-  position: relative;
-  transition: background-color 100ms ease;
-  width: var(--sx-sizes-4);
-}
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
-}
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
 
-.sx1jh2a[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-}
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
-}
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
 
-.sxxf22o {
-  display: block;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  background-color: white;
-  border-radius: var(--sx-radii-round);
-  transition: transform 100ms;
-  will-change: transform;
-}
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
 
-.sxxf22o[data-state="checked"] {
-  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
 }
 
 <div>
-  <input
-    disabled=""
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="false"
-    class="sx1jh2a"
+    class="c-biUdic"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -125,7 +127,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     value="on"
   >
     <span
-      class="sxxf22o"
+      class="c-etTjtm"
       data-disabled=""
       data-state="unchecked"
     />
@@ -134,63 +136,65 @@ exports[`Switch component renders a disabled switch 1`] = `
 `;
 
 exports[`Switch component renders a switch 1`] = `
-.sx1jh2a {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--sx-colors-tonal300);
-  border: none;
-  border-radius: var(--sx-radii-round);
-  cursor: pointer;
-  display: flex;
-  overflow: hidden;
-  padding: var(--sx-space-0);
-  position: relative;
-  transition: background-color 100ms ease;
-  width: var(--sx-sizes-4);
-}
+@media  {
+  .c-biUdic {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    padding: var(--space-0);
+    position: relative;
+    transition: all 50ms ease-out;
+    width: var(--sizes-4);
+  }
 
-.sx1jh2a:hover {
-  background-color: var(--sx-colors-tonal400);
-}
+  .c-biUdic:hover {
+    background-color: var(--colors-tonal300);
+  }
 
-.sx1jh2a[data-state="checked"] {
-  background-color: var(--sx-colors-primary);
-}
+  .c-biUdic:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
 
-.sx1jh2a[data-state="checked"]:hover {
-  background-color: var(--sx-colors-tertiary);
-}
+  .c-biUdic[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
 
-.sxxf22o {
-  display: block;
-  height: var(--sx-sizes-1);
-  width: var(--sx-sizes-1);
-  background-color: white;
-  border-radius: var(--sx-radii-round);
-  transition: transform 100ms;
-  will-change: transform;
-}
+  .c-biUdic[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
 
-.sxxf22o[data-state="checked"] {
-  transform: translateX(calc(var(--sx-sizes-2) - var(--sx-space-1)));
+  .c-etTjtm {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 75ms;
+    will-change: transform;
+  }
+
+  .c-etTjtm[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
 }
 
 <div>
-  <input
-    hidden=""
-    type="checkbox"
-    value="on"
-  />
   <button
     aria-checked="false"
-    class="sx1jh2a"
+    class="c-biUdic"
     data-state="unchecked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="sxxf22o"
+      class="c-etTjtm"
       data-state="unchecked"
     />
   </button>

@@ -61,7 +61,7 @@ const StyledStack = styled('div', {
   }
 })
 
-type StackProps = React.ComponentProps<typeof StyledStack>
+type StackProps = React.ComponentProps<typeof StyledStack> & { css?: CSS }
 
 export const Stack: React.FC<StackProps> = ({
   css,

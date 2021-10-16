@@ -1,34 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Label component renders a label 1`] = `
-.sx5eeij {
-  color: var(--sx-colors-tonal800);
-  display: block;
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  margin: 0;
+@media  {
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
 }
 
-.sx5eeij8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
 
-.sx5eeij8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
 
-.sx5eeij8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
 }
 
 <div>
   <label
-    class="sx5eeij sx5eeij8bitc--size-md"
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
   >
     TEXT
   </label>

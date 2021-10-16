@@ -1,0 +1,28 @@
+---
+title: Dropdown Menu
+component: DropdownMenu,DropdownMenu.Trigger,DropdownMenu.Content,DropdownMenu.Item,DropdownMenu.Separator
+description: The Dialog component renders its children inside a modal and puts a dimmer over the rest of the screen
+category: Surfaces
+---
+
+`DropdownMenu` exports many components that combine to create a dropdown menu. The `DropdownMenu.Trigger` renders a `<button>` by default, but this can be overridden with the `asChild` prop, which will instead add all the functional and accessibility requirements to the child component instead (see the below example).
+
+Also, note that the component must accept a `ref`.
+
+Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/dropdown-menu).
+
+```tsx preview
+<DropdownMenu>
+  <DropdownMenu.Trigger asChild>
+    <Button>Click me</Button>
+  </DropdownMenu.Trigger>
+  <DropdownMenu.Content sideOffset={25}>
+    <DropdownMenu.Item onClick={() => alert('Great clicking!')}>Item 1</DropdownMenu.Item>
+    <DropdownMenu.Item>Item 2</DropdownMenu.Item>
+    <DropdownMenu.Separator />
+    <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.Item>
+  </DropdownMenu.Content>
+</DropdownMenu>
+```
+
+For any modifications of the default `DropdownMenu` visuals, we recommend utilising the Radix UI DropdownMenu component directly. You will need to wrap each exported component within a `styled()` function to enable the `css` prop.

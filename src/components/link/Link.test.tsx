@@ -50,7 +50,7 @@ describe(`Link component`, () => {
   })
 
   it('can be nested within Text and Heading', async () => {
-    render(
+    const { container } = render(
       <>
         <Text>
           <Link>TEXT LINK</Link>
@@ -61,7 +61,6 @@ describe(`Link component`, () => {
       </>
     )
 
-    expect(screen.getByText('TEXT LINK')).toHaveStyle('font-size: 100%')
-    expect(screen.getByText('HEADING LINK')).toHaveStyle('font-size: 100%')
+    expect(container).toMatchSnapshot()
   })
 })
