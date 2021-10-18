@@ -1,3 +1,4 @@
-export type NavigatorActions =
-  | { onClick: (...args: unknown[]) => void; href?: never }
-  | { onClick?: never; href: string }
+export type NavigatorActions = {
+  onClick?: (...args: unknown[]) => void
+  href?: string
+}
