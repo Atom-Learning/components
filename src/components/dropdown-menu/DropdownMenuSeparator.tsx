@@ -5,5 +5,5 @@ import { styled } from '~/stitches'
 export const DropdownMenuSeparator = styled(Separator, {
   height: '1px',
   backgroundColor: '$tonal200',
-  mb: '$3'
+  my: '$2'
 })

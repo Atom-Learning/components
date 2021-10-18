@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@atom-learning/icons@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-0.3.0.tgz#c5fee682b52275a1ec21031d0ad8b52e60a1f11b"
-  integrity sha512-oxx8p0z2CRPXWkBE7e3sS75AUMGMV//U8En/BNbr8QM0wgKmQXABFvRD024j5NR9usDINK4MnUXUagrv0biNTg==
+"@atom-learning/icons@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.5.0.tgz#ca311e33ee0a2ab05bb4e0505c484816a90fb0ba"
+  integrity sha512-r6/dNlR/BnQuN7Gyf1fY/Na7TRNxP/IpGLI0c7TVJEFdSvJx9XuzL1yq7VM0e0pETvFO0ypIY81GiYIYM0sGYA==
   dependencies:
     ikonate "^1.1.1"
 

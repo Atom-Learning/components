@@ -4,23 +4,23 @@ import { styled } from '~/stitches'
 
 export const itemStyles = {
   alignItems: 'center',
-  color: '$tonal800',
+  color: '$tonal600',
+  cursor: 'pointer',
   display: 'flex',
   fontFamily: '$body',
   fontWeight: 400,
   position: 'relative',
   px: '$3',
-  '&:not(:last-child)': { mb: '$3' },
-
+  py: '$2',
   '&[data-disabled]': {
-    color: '$tonal100',
+    color: '$tonal200',
     pointerEvents: 'none'
   },
   '&[aria-current="page"], &:focus': {
     '&::before': {
       borderLeft: '2px solid currentColor',
       content: '',
-      height: '100%',
+      height: '$2',
       left: 0,
       outline: 'none',
       position: 'absolute',
