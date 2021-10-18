@@ -31,10 +31,7 @@ export { Popover } from './popover'
 export { ProgressBar } from './progress-bar'
 export { RadioButton, RadioButtonGroup } from './radio-button'
 export { RadioCard, RadioCardGroup } from './radio-card'
-export {
-  RadioButtonField,
-  RadioButtonField as RadioGroupField
-} from './radio-button-field'
+export { RadioButtonField } from './radio-button-field'
 export { SearchInput } from './search-input'
 export { Select } from './select'
 export { SelectField } from './select-field'
