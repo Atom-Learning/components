@@ -8,107 +8,70 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Heading } from '~/components/heading'
 import { Icon } from '~/components/icon'
-import { Stack } from '~/components/stack'
 import { Text } from '~/components/text'
 import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
 
 import { monthNamesShort, weekdayNamesShort } from './constants'
-
-const Day = styled('button', {
-  bg: '$$hello',
-  border: 'none',
-  borderRadius: '$round',
-  color: '$tonal900',
-  cursor: 'pointer',
-  fontFamily: '$body',
-  fontSize: '$sm',
-  size: '$3',
-  p: 0,
-  transition: 'background-color 75ms',
-  '&:hover': {
-    bg: '$tonal200'
-  },
-  '&:focus': {
-    outline: '2px solid $primary'
-  },
-  variants: {
-    isSelected: {
-      true: {
-        bg: '$primary',
-        color: 'white',
-        '&:hover': { bg: '$primary' }
-      }
-    },
-    isToday: {
-      true: { outline: '2px solid $tonal200' }
-    },
-    isOutsideMonth: {
-      true: { color: '$tonal400' }
-    }
-  }
-})
+import { Day } from './Day'
 
 const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: 'repeat(7, 1fr)',
-  gridGap: '$2'
+  gridGap: '$1 $2'
 })
 
 type CalendarProps = DayzedInterface & {
   css?: CSS
+  dateToFocus?: React.RefObject<HTMLButtonElement>
 }
 
 export const Calendar: React.FC<CalendarProps> = ({
   css,
+  dateToFocus,
   ...remainingProps
 }) => {
   const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed({
-    showOutsideDays: true,
+    showOutsideDays: false,
     ...remainingProps
   })
 
   if (!calendars.length) return null
 
   return (
-    <Box css={{ position: 'relative', width: 'min-content', ...(css as any) }}>
+    <Box css={{ position: 'relative', width: 'min-content', ...css }}>
       {calendars.map(({ month, year, weeks }) => (
         <div key={`${month}${year}`}>
-          <Flex
-            css={{
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              pl: '$1',
-              mb: '$4'
-            }}
-          >
+          <Flex css={{ alignItems: 'center', mb: '$4', mt: '-$1' }}>
             <Heading size="xs">
               {monthNamesShort[month]} {year}
             </Heading>
-            <Stack gap="2">
-              <ActionIcon
-                {...getBackProps({ calendars })}
-                label="Previous month"
-                theme="neutral"
-              >
-                <Icon is={ChevronLeft} />
-              </ActionIcon>
-              <ActionIcon
-                {...getForwardProps({ calendars })}
-                label="Next month"
-                theme="neutral"
-              >
-                <Icon is={ChevronRight} />
-              </ActionIcon>
-            </Stack>
+            <ActionIcon
+              label="Previous month"
+              theme="neutral"
+              size="lg"
+              css={{ ml: 'auto' }}
+              {...getBackProps({ calendars })}
+            >
+              <Icon is={ChevronLeft} />
+            </ActionIcon>
+            <ActionIcon
+              label="Next month"
+              theme="neutral"
+              size="lg"
+              css={{ mr: '-$1' }}
+              {...getForwardProps({ calendars })}
+            >
+              <Icon is={ChevronRight} />
+            </ActionIcon>
           </Flex>
-          <Grid>
+          <Grid css={{ mb: '$3' }}>
             {weekdayNamesShort.map((weekday) => (
               <Text
                 as="span"
                 size="sm"
                 key={`${month}${year}${weekday}`}
-                css={{ mb: '$3', fontWeight: 600, textAlign: 'center' }}
+                css={{ fontWeight: 600, textAlign: 'center' }}
               >
                 {weekday}
               </Text>

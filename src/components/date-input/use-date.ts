@@ -26,7 +26,7 @@ export const useDate = (
       ? dayjs(inputDate, dateFormat)
       : dayjs(inputDate)
 
-    setDate(parsedInputDate.isValid() ? parsedInputDate.toDate() : null)
+    setDate(parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined)
     setDateString(isDateString ? inputDate : parsedInputDate.format(dateFormat))
   }
 

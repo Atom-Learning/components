@@ -7,6 +7,7 @@ import { Calendar } from '../calendar/Calendar'
 import { Icon } from '../icon/Icon'
 import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
+import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
 
 type DateInputProps = {
@@ -16,33 +17,47 @@ type DateInputProps = {
 
 export const DateInput: React.FC<DateInputProps> = ({
   initialDate,
-  dateFormat,
+  dateFormat = DEFAULT_DATE_FORMAT,
   ...remainingProps
 }) => {
   const { date, dateString, setDate } = useDate(initialDate, dateFormat)
+
   const [calendarOpen, setCalendarOpen] = React.useState(false)
+
+  const dateTodayRef = React.useRef<HTMLButtonElement>(null)
+  const dateSelectedRef = React.useRef<HTMLButtonElement>(null)
 
   return (
     <Box css={{ position: 'relative' }}>
       <Input
         name="date"
+        placeholder={dateFormat}
+        {...remainingProps}
         onChange={(event) => setDate(event.target.value, true)}
         value={dateString}
-        {...remainingProps}
       />
       <Popover open={calendarOpen} onOpenChange={setCalendarOpen}>
-        <Popover.Trigger>
+        <Popover.Trigger asChild>
           <ActionIcon
-            size="lg"
             css={{ position: 'absolute', top: 0, right: 0 }}
             label="Open calendar"
+            size="lg"
+            theme="neutral"
           >
             <Icon size="sm" is={CalendarEvent} />
           </ActionIcon>
         </Popover.Trigger>
-        <Popover.Content side="bottom" align="end">
+        <Popover.Content
+          side="bottom"
+          align="end"
+          onOpenAutoFocus={(e) => {
+            e.preventDefault()
+            dateTodayRef.current?.focus()
+          }}
+        >
           <Calendar
             date={date || new Date()}
+            dateToFocus={date ? dateSelectedRef : dateTodayRef}
             selected={date}
             onDateSelected={(date) => {
               setCalendarOpen(false)
