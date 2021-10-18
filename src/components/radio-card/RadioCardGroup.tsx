@@ -8,8 +8,8 @@ import { Stack } from '../stack/Stack'
 import { RadioCard, StyledRadioCard } from './RadioCard'
 
 type RadioCardGroupProps = Override<
-  Stitches.VariantProps<typeof StyledRadioCard> &
-    React.ComponentProps<typeof Stack>,
+  Pick<React.ComponentProps<typeof Stack>, 'justify' | 'gap' | 'css'> &
+    Stitches.VariantProps<typeof StyledRadioCard>,
   React.ComponentProps<typeof RadioGroup.Root>
 >
 
