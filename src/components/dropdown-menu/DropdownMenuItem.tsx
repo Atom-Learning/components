@@ -30,7 +30,6 @@ export const itemStyles = {
   '&:focus': {
     color: '$primaryMid',
     outline: 'none'
-    
   }
 }
 

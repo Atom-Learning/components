@@ -3,6 +3,7 @@ import { Close, Content, Overlay } from '@radix-ui/react-dialog'
 import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
+import { fadeIn, fadeOut } from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
@@ -19,24 +20,17 @@ const slideOut = keyframes({
   '100%': { transform: contentOffScreen }
 })
 
-const fadeIn = keyframes({
-  '0%': { opacity: 0 },
-  '100%': { opacity: 1 }
-})
-const fadeOut = keyframes({
-  '0%': { opacity: 1 },
-  '100%': { opacity: 0 }
-})
-
 const StyledDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
   position: 'fixed',
-  '&[data-state="open"]': {
-    animation: `${fadeIn} 250ms ease-out`
-  },
-  '&[data-state="closed"]': {
-    animation: `${fadeOut} 550ms ease-out`
+  '@allowMotion': {
+    '&[data-state="open"]': {
+      animation: `${fadeIn} 250ms ease-out`
+    },
+    '&[data-state="closed"]': {
+      animation: `${fadeOut} 550ms ease-out`
+    }
   }
 })
 
@@ -54,11 +48,13 @@ const StyledDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
-  '&[data-state="open"]': {
-    animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
-  },
-  '&[data-state="closed"]': {
-    animation: `${slideOut} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+  '@allowMotion': {
+    '&[data-state="open"]': {
+      animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+    },
+    '&[data-state="closed"]': {
+      animation: `${slideOut} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
+    }
   },
   variants: {
     size: {
