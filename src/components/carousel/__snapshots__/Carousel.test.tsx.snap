@@ -182,7 +182,6 @@ exports[`Carousel component renders 1`] = `
 <div>
   <div
     class="c-PJLV c-PJLV-icHUKge-css"
-    data-testid="css-wrapper"
   >
     <div
       class="carousel"

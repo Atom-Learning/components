@@ -20,7 +20,6 @@ exports[`CSSWrapper component renders if passed CSS blob 1`] = `
 <div>
   <div
     class="c-PJLV c-PJLV-ikLAKdM-css"
-    data-testid="css-wrapper"
   >
     <p>
       Example text
