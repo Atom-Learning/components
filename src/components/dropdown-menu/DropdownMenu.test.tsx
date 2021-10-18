@@ -6,9 +6,9 @@ import * as React from 'react'
 
 import { DropdownMenu } from '.'
 
-const ExampleDropdownMenu = () => (
+const ExampleDropdownMenu = (props) => (
   <IdProvider>
-    <DropdownMenu>
+    <DropdownMenu {...props}>
       <DropdownMenu.Trigger>TRIGGER</DropdownMenu.Trigger>
       <DropdownMenu.Content>
         <DropdownMenu.Item>Item 1</DropdownMenu.Item>
@@ -22,13 +22,15 @@ const ExampleDropdownMenu = () => (
 
 describe('DropdownMenu component', () => {
   it('renders', async () => {
-    const { container } = render(<ExampleDropdownMenu />)
+    const { container } = render(<ExampleDropdownMenu defaultOpen />, {
+      container: document.body
+    })
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<ExampleDropdownMenu />)
+    const { container } = render(<ExampleDropdownMenu defaultOpen />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
