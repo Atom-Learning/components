@@ -173,7 +173,7 @@ exports[`DateInput component renders 1`] = `
       value=""
     />
     <button
-      aria-controls="radix-id-7953557446-1"
+      aria-controls="radix-id-0-1"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
