@@ -1,501 +1,536 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Calendar component renders 1`] = `
-.sxtros6 {
-  display: inline-block;
-  fill: none;
-  stroke: currentcolor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2;
-  vertical-align: middle;
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-fPxPMR {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: var(--space-1) var(--space-2);
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-jjKMqb {
+    background: transparent;
+    border: none;
+    border-radius: var(--radii-round);
+    color: var(--colors-tonal900);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    padding: 0;
+    transition: all 75ms;
+  }
+
+  .c-jjKMqb:hover {
+    background: var(--colors-tonal100);
+  }
+
+  .c-jjKMqb:focus {
+    outline: 2px solid var(--colors-primary);
+  }
 }
 
-.sxtros6mbqqh--size-md {
-  height: var(--sx-sizes-2);
-  width: var(--sx-sizes-2);
+@media  {
+  .c-iSnHBU-llheLm-size-xs {
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+
+  .c-dbleUi-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-jjKMqb-hztIub-isToday-true {
+    background: var(--colors-tonal100);
+  }
 }
 
-.sxx73q4 {
-  -webkit-appearance: none;
-  appearance: none;
-  border: unset;
-  border-radius: var(--sx-radii-0);
-  cursor: pointer;
-  padding: unset;
-  transition: all 100ms ease-out;
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
 }
 
-.sxx73q4lo5m8--appearance-subtle {
-  background: transparent;
-  color: var(--sx-colors-tonal800);
-}
+@media  {
+  .c-PJLV-icGINcs-css {
+    position: relative;
+    width: min-content;
+  }
 
-.sxx73q4lo5m8--appearance-subtle:hover,
-.sxx73q4lo5m8--appearance-subtle:focus {
-  background: var(--sx-colors-alpha150);
-}
+  .c-dhzjXW-ikVqpqx-css {
+    align-items: center;
+    margin-bottom: var(--space-4);
+    margin-top: calc(var(--space-1)*-1);
+  }
 
-.sxx73q4e6fss--size-md {
-  height: var(--sx-sizes-3);
-  width: var(--sx-sizes-3);
-}
+  .c-fDzwZw-icKSZB-css {
+    margin-left: auto;
+  }
 
-.sx03kze-s3rli {
-  position: relative;
-  width: 320px;
-}
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
 
-.sx03kze-uy9e3 {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-}
+  .c-fDzwZw-iiLTGYw-css {
+    margin-right: calc(var(--space-1)*-1);
+  }
 
-.sx2cs53 {
-  display: flex;
-}
+  .c-fPxPMR-ihbtntv-css {
+    margin-bottom: var(--space-3);
+  }
 
-.sx2cs53-ovswn {
-  justify-content: space-between;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.sx2cs53-mauuy {
-  align-items: center;
-  justify-content: center;
-  height: var(--sx-sizes-3);
-  margin-bottom: var(--sx-space-3);
-}
-
-.sxhyvnz {
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-display);
-  font-weight: 700;
-  margin: 0;
-}
-
-.sxhyvnzjrsjl--size-xs {
-  font-family: var(--sx-fonts-body);
-  font-weight: 600;
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
-
-.sxhyvnzjrsjl--size-xs::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
-
-.sxhyvnzjrsjl--size-xs::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
-}
-
-.sxgpjqn {
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  margin: 0;
-}
-
-.sxgpjqn6tbwj--size-sm {
-  font-size: var(--sx-fontSizes-sm);
-  line-height: 1.53;
-}
-
-.sxgpjqn6tbwj--size-sm::before {
-  content: '';
-  margin-bottom: -0.4056em;
-  display: table;
-}
-
-.sxgpjqn6tbwj--size-sm::after {
-  content: '';
-  margin-top: -0.4056em;
-  display: table;
-}
-
-.sxgpjqn-5jobx {
-  margin-bottom: var(--sx-space-3);
-  font-weight: 600;
-  text-align: center;
-}
-
-.sxhilm2 {
-  background: transparent;
-  border: none;
-  border-radius: var(--sx-radii-0);
-  color: var(--sx-colors-tonal900);
-  cursor: pointer;
-  font-family: var(--sx-fonts-body);
-  font-size: var(--sx-fontSizes-sm);
-  height: var(--sx-sizes-3);
-  transition: background-color 75ms;
-}
-
-.sxhilm2:hover {
-  background: var(--sx-colors-tonal200);
-}
-
-.sxhilm2:focus {
-  outline: 2px solid var(--sx-colors-tonal200);
-}
-
-.sxhilm2i6aho--isToday-true {
-  border: 2px solid var(--sx-colors-tonal200);
+  .c-dbleUi-idQvJRf-css {
+    font-weight: 600;
+    text-align: center;
+  }
 }
 
 <div>
   <div
-    class="sx03kze sx03kze-s3rli"
+    class="c-PJLV c-PJLV-icGINcs-css"
   >
-    <div
-      class="sx2cs53 sx2cs53-ovswn"
-    >
-      <button
-        aria-label="Previous month"
-        class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="sxtros6 sxtros6mbqqh--size-md"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polyline
-            points="14 18 8 12 14 6 14 6"
-          />
-        </svg>
-      </button>
-      <button
-        aria-label="Next month"
-        class="sxx73q4 sxx73q403kze--theme-primary sxx73q4lo5m8--appearance-subtle sxx73q4e6fss--size-md"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="sxtros6 sxtros6mbqqh--size-md"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polyline
-            points="10 6 16 12 10 18 10 18"
-          />
-        </svg>
-      </button>
-    </div>
     <div>
       <div
-        class="sx2cs53 sx2cs53-mauuy"
+        class="c-dhzjXW c-dhzjXW-ikVqpqx-css"
       >
         <h2
-          class="sxhyvnz sxhyvnzjrsjl--size-xs"
+          class="c-iSnHBU c-iSnHBU-llheLm-size-xs"
         >
-          Jul
+          Oct
            
           2021
         </h2>
+        <button
+          aria-label="Previous month"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-icKSZB-css"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="14 18 8 12 14 6 14 6"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Next month"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-iiLTGYw-css"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="10 6 16 12 10 18 10 18"
+            />
+          </svg>
+        </button>
       </div>
       <div
-        class="sx03kze sx03kze-uy9e3"
+        class="c-fPxPMR c-fPxPMR-ihbtntv-css"
       >
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
-        >
-          Sun
-        </span>
-        <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Mon
         </span>
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Tue
         </span>
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Wed
         </span>
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Thu
         </span>
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Fri
         </span>
         <span
-          class="sxgpjqn sxgpjqn6tbwj--size-sm sxgpjqn-5jobx"
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
         >
           Sat
         </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Sun
+        </span>
       </div>
       <div
-        class="sx03kze sx03kze-uy9e3"
+        class="c-fPxPMR"
       >
+        <div />
         <div />
         <div />
         <div />
         <div />
         <button
-          aria-label="Thu Jul 01 2021"
+          aria-label="Fri Oct 01 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           1
         </button>
         <button
-          aria-label="Fri Jul 02 2021"
+          aria-label="Sat Oct 02 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           2
         </button>
         <button
-          aria-label="Sat Jul 03 2021"
+          aria-label="Sun Oct 03 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           3
         </button>
         <button
-          aria-label="Sun Jul 04 2021"
+          aria-label="Mon Oct 04 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           4
         </button>
         <button
-          aria-label="Mon Jul 05 2021"
+          aria-label="Tue Oct 05 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           5
         </button>
         <button
-          aria-label="Tue Jul 06 2021"
+          aria-label="Wed Oct 06 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           6
         </button>
         <button
-          aria-label="Wed Jul 07 2021"
+          aria-label="Thu Oct 07 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           7
         </button>
         <button
-          aria-label="Thu Jul 08 2021"
+          aria-label="Fri Oct 08 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           8
         </button>
         <button
-          aria-label="Fri Jul 09 2021"
+          aria-label="Sat Oct 09 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           9
         </button>
         <button
-          aria-label="Sat Jul 10 2021"
+          aria-label="Sun Oct 10 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           10
         </button>
         <button
-          aria-label="Sun Jul 11 2021"
+          aria-label="Mon Oct 11 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           11
         </button>
         <button
-          aria-label="Mon Jul 12 2021"
+          aria-label="Tue Oct 12 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           12
         </button>
         <button
-          aria-label="Tue Jul 13 2021"
+          aria-label="Wed Oct 13 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           13
         </button>
         <button
-          aria-label="Wed Jul 14 2021"
+          aria-label="Thu Oct 14 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           14
         </button>
         <button
-          aria-label="Thu Jul 15 2021"
+          aria-label="Fri Oct 15 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           15
         </button>
         <button
-          aria-label="Fri Jul 16 2021"
+          aria-label="Sat Oct 16 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           16
         </button>
         <button
-          aria-label="Sat Jul 17 2021"
+          aria-label="Sun Oct 17 2021"
           aria-pressed="false"
-          class="sxhilm2 sxhilm2i6aho--isToday-true"
+          class="c-jjKMqb"
           role="button"
         >
           17
         </button>
         <button
-          aria-label="Sun Jul 18 2021"
+          aria-label="Mon Oct 18 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           18
         </button>
         <button
-          aria-label="Mon Jul 19 2021"
+          aria-label="Tue Oct 19 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb c-jjKMqb-hztIub-isToday-true"
           role="button"
         >
           19
         </button>
         <button
-          aria-label="Tue Jul 20 2021"
+          aria-label="Wed Oct 20 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           20
         </button>
         <button
-          aria-label="Wed Jul 21 2021"
+          aria-label="Thu Oct 21 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           21
         </button>
         <button
-          aria-label="Thu Jul 22 2021"
+          aria-label="Fri Oct 22 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           22
         </button>
         <button
-          aria-label="Fri Jul 23 2021"
+          aria-label="Sat Oct 23 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           23
         </button>
         <button
-          aria-label="Sat Jul 24 2021"
+          aria-label="Sun Oct 24 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           24
         </button>
         <button
-          aria-label="Sun Jul 25 2021"
+          aria-label="Mon Oct 25 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           25
         </button>
         <button
-          aria-label="Mon Jul 26 2021"
+          aria-label="Tue Oct 26 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           26
         </button>
         <button
-          aria-label="Tue Jul 27 2021"
+          aria-label="Wed Oct 27 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           27
         </button>
         <button
-          aria-label="Wed Jul 28 2021"
+          aria-label="Thu Oct 28 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           28
         </button>
         <button
-          aria-label="Thu Jul 29 2021"
+          aria-label="Fri Oct 29 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           29
         </button>
         <button
-          aria-label="Fri Jul 30 2021"
+          aria-label="Sat Oct 30 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           30
         </button>
         <button
-          aria-label="Sat Jul 31 2021"
+          aria-label="Sun Oct 31 2021"
           aria-pressed="false"
-          class="sxhilm2"
+          class="c-jjKMqb"
           role="button"
         >
           31
         </button>
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
       </div>
     </div>
   </div>

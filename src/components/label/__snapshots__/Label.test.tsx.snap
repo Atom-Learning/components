@@ -32,6 +32,10 @@ exports[`Label component renders a label 1`] = `
     font-weight: 600;
   }
 
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -39,7 +43,7 @@ exports[`Label component renders a label 1`] = `
 
 <div>
   <label
-    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
   >
     TEXT
   </label>

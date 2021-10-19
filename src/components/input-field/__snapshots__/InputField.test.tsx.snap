@@ -91,6 +91,10 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 600;
   }
 
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -170,7 +174,7 @@ exports[`InputField component renders a field in error state 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD
@@ -297,6 +301,10 @@ exports[`InputField component renders a field with a number input 1`] = `
     font-weight: 600;
   }
 
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -333,7 +341,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD
@@ -422,6 +430,10 @@ exports[`InputField component renders a field with a text input 1`] = `
     font-weight: 600;
   }
 
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -458,7 +470,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
           for="INPUT FIELD"
         >
           INPUT FIELD

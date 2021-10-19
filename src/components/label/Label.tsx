@@ -50,7 +50,7 @@ type LabelProps = Override<
 >
 
 export const Label: React.FC<LabelProps> = ({
-  align = 'flex-start',
+  align = 'start',
   as = 'label',
   direction = 'row',
   size = 'md',

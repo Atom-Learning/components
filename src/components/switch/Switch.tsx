@@ -35,7 +35,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
   borderRadius: '$round',
   display: 'block',
   size: '$1',
-  transition: 'transform 75ms',
+  transition: 'transform 50ms',
   willChange: 'transform',
   '&[data-state="checked"]': {
     transform: 'translateX(calc($sizes$2 - $space$1))'

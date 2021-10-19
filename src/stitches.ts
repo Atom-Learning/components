@@ -75,6 +75,7 @@ export const media = {
   lg: '(min-width: 1100px)',
   xl: '(min-width: 1350px)',
   reducedMotion: '(prefers-reduced-motion)',
+  allowMotion: '(prefers-reduced-motion: no-preference)',
   hover: '(hover: hover)'
 }
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RadioField component renders 1`] = `
+exports[`RadioButtonField component renders 1`] = `
 @media  {
   .c-leHWbT {
     all: unset;
@@ -83,6 +83,10 @@ exports[`RadioField component renders 1`] = `
     font-weight: 600;
   }
 
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
   .c-cVSpVL-ejCoEP-direction-row {
     flex-direction: row;
   }
@@ -95,10 +99,6 @@ exports[`RadioField component renders 1`] = `
     display: flex;
     font-weight: 400;
     max-width: max-content;
-  }
-
-  .c-cVSpVL-JrrAq-align-start {
-    align-items: flex-start;
   }
 }
 
@@ -123,7 +123,7 @@ exports[`RadioField component renders 1`] = `
       class="c-leHWbT"
     >
       <legend
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
       >
         Example options
       </legend>
@@ -159,6 +159,7 @@ exports[`RadioField component renders 1`] = `
                 />
               </button>
               <input
+                aria-hidden="true"
                 checked=""
                 style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
                 tabindex="-1"
@@ -189,6 +190,7 @@ exports[`RadioField component renders 1`] = `
                 value="2"
               />
               <input
+                aria-hidden="true"
                 style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
                 tabindex="-1"
                 type="radio"
