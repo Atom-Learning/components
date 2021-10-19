@@ -23,16 +23,19 @@ const Grid = styled('div', {
 
 type CalendarProps = DayzedInterface & {
   css?: CSS
-  dateToFocus?: React.RefObject<HTMLButtonElement>
+  refDateToday?: React.RefObject<HTMLButtonElement>
+  refDateSelected?: React.RefObject<HTMLButtonElement>
 }
 
 export const Calendar: React.FC<CalendarProps> = ({
   css,
-  dateToFocus,
+  refDateSelected,
+  refDateToday,
   ...remainingProps
 }) => {
   const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed({
-    showOutsideDays: false,
+    firstDayOfWeek: 1,
+    showOutsideDays: true,
     ...remainingProps
   })
 
@@ -92,6 +95,9 @@ export const Calendar: React.FC<CalendarProps> = ({
                     isSelected={selected}
                     isToday={today}
                     key={key}
+                    ref={
+                      selected ? refDateSelected : today ? refDateToday : null
+                    }
                     {...getDateProps({ dateObj })}
                   >
                     {date.getDate()}

@@ -10,7 +10,7 @@ import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
 
-type DateInputProps = {
+export type DateInputProps = {
   initialDate?: Date
   dateFormat?: string
 }
@@ -24,19 +24,18 @@ export const DateInput: React.FC<DateInputProps> = ({
 
   const [calendarOpen, setCalendarOpen] = React.useState(false)
 
-  const dateTodayRef = React.useRef<HTMLButtonElement>(null)
-  const dateSelectedRef = React.useRef<HTMLButtonElement>(null)
+  const refDateToday = React.useRef<HTMLButtonElement>(null)
+  const refDateSelected = React.useRef<HTMLButtonElement>(null)
 
   return (
     <Box css={{ position: 'relative' }}>
       <Input
         name="date"
-        placeholder={dateFormat}
         {...remainingProps}
         onChange={(event) => setDate(event.target.value, true)}
         value={dateString}
       />
-      <Popover open={calendarOpen} onOpenChange={setCalendarOpen}>
+      <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
         <Popover.Trigger asChild>
           <ActionIcon
             css={{ position: 'absolute', top: 0, right: 0 }}
@@ -52,17 +51,22 @@ export const DateInput: React.FC<DateInputProps> = ({
           align="end"
           onOpenAutoFocus={(e) => {
             e.preventDefault()
-            dateTodayRef.current?.focus()
+            if (date) {
+              refDateSelected.current?.focus()
+            } else {
+              refDateToday.current?.focus()
+            }
           }}
         >
           <Calendar
             date={date || new Date()}
-            dateToFocus={date ? dateSelectedRef : dateTodayRef}
             selected={date}
             onDateSelected={(date) => {
               setCalendarOpen(false)
               setDate(date.date, false)
             }}
+            refDateToday={refDateToday}
+            refDateSelected={refDateSelected}
           />
         </Popover.Content>
       </Popover>

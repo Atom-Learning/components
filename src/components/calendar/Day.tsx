@@ -14,6 +14,10 @@ export const Day = styled('button', {
   '&:hover': {
     bg: '$tonal100'
   },
+  '&:active': {
+    color: 'white',
+    bg: '$primary'
+  },
   '&:focus': {
     outline: '2px solid $primary'
   },

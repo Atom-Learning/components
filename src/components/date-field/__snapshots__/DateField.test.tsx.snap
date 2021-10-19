@@ -1,7 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateInput component renders 1`] = `
+exports[`DateField component renders a field with a text input 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
   .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
@@ -102,6 +112,36 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
   .c-fZTBsJ-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
@@ -145,6 +185,12 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
   .c-PJLV-icmpvrW-css {
     position: relative;
   }
@@ -162,42 +208,62 @@ exports[`DateInput component renders 1`] = `
 }
 
 <div>
-  <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+  <form
+    aria-label="form"
+    class="c-PJLV"
   >
-    <input
-      aria-label="test"
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
-      name="date"
-      type="text"
-      value=""
-    />
-    <button
-      aria-controls="radix-id-0-1"
-      aria-expanded="false"
-      aria-haspopup="dialog"
-      aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
-      data-state="closed"
-      type="button"
+    <div
+      class="c-PJLV"
     >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihFPSGE-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
-        <path
-          d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+          for="DATE FIELD"
+        >
+          DATE FIELD
+        </label>
+      </div>
+      <div
+        class="c-PJLV c-PJLV-icmpvrW-css"
+      >
+        <input
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
+          id="DATE FIELD"
+          name="DATE FIELD"
+          placeholder="DATE FIELD"
+          type="text"
+          value=""
         />
-        <rect
-          height="2"
-          width="2"
-          x="15"
-          y="15"
-        />
-      </svg>
-    </button>
-  </div>
+        <button
+          aria-controls="radix-id-990013522-1"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+          aria-label="Open calendar"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
+          data-state="closed"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihFPSGE-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+            />
+            <rect
+              height="2"
+              width="2"
+              x="15"
+              y="15"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </form>
 </div>
 `;

@@ -9,7 +9,7 @@ describe('DateInput component', () => {
   it('renders', async () => {
     const { container } = render(
       <IdProvider>
-        <DateInput />
+        <DateInput aria-label="test" />
       </IdProvider>
     )
 
@@ -17,7 +17,7 @@ describe('DateInput component', () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<DateInput />)
+    const { container } = render(<DateInput aria-label="test" />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
