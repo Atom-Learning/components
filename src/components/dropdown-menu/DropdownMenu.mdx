@@ -16,11 +16,13 @@ Read more about the underlying UI component on the [Radix UI documentation site]
   <DropdownMenu.Trigger asChild>
     <Button>Click me</Button>
   </DropdownMenu.Trigger>
-  <DropdownMenu.Content sideOffset={25}>
-    <DropdownMenu.Item onClick={() => alert('Great clicking!')}>Item 1</DropdownMenu.Item>
+  <DropdownMenu.Content sideOffset={16}>
+    <DropdownMenu.Item onClick={() => alert('Great clicking!')}>
+      Item 1
+    </DropdownMenu.Item>
     <DropdownMenu.Item>Item 2</DropdownMenu.Item>
     <DropdownMenu.Separator />
-    <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.Item>
+    <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.LinkItem>
   </DropdownMenu.Content>
 </DropdownMenu>
 ```
