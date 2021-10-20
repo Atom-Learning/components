@@ -42,31 +42,33 @@ export const Calendar: React.FC<CalendarProps> = ({
   if (!calendars.length) return null
 
   return (
-    <Box css={{ position: 'relative', width: 'min-content', ...css }}>
+    <Box
+      css={{ position: 'relative', width: 'min-content', mt: '-$1', ...css }}
+    >
+      <Flex css={{ position: 'absolute', top: 0, right: '-$1' }}>
+        <ActionIcon
+          label="Previous month"
+          theme="neutral"
+          size="lg"
+          {...getBackProps({ calendars })}
+        >
+          <Icon is={ChevronLeft} />
+        </ActionIcon>
+        <ActionIcon
+          label="Next month"
+          theme="neutral"
+          size="lg"
+          {...getForwardProps({ calendars })}
+        >
+          <Icon is={ChevronRight} />
+        </ActionIcon>
+      </Flex>
       {calendars.map(({ month, year, weeks }) => (
         <div key={`${month}${year}`}>
-          <Flex css={{ alignItems: 'center', mb: '$4', mt: '-$1' }}>
+          <Flex css={{ height: '$4', alignItems: 'center', mb: '$4' }}>
             <Heading size="xs">
               {monthNamesShort[month]} {year}
             </Heading>
-            <ActionIcon
-              label="Previous month"
-              theme="neutral"
-              size="lg"
-              css={{ ml: 'auto' }}
-              {...getBackProps({ calendars })}
-            >
-              <Icon is={ChevronLeft} />
-            </ActionIcon>
-            <ActionIcon
-              label="Next month"
-              theme="neutral"
-              size="lg"
-              css={{ mr: '-$1' }}
-              {...getForwardProps({ calendars })}
-            >
-              <Icon is={ChevronRight} />
-            </ActionIcon>
           </Flex>
           <Grid css={{ mb: '$3' }}>
             {weekdayNamesShort.map((weekday) => (
