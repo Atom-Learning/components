@@ -5,6 +5,7 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
+import { Icon } from '../icon/Icon'
 import { StyledLi } from '../list/List'
 import { StyledParagraph, textVariantSize } from '../text/Text'
 
@@ -35,6 +36,21 @@ export const StyledLink = styled('a', {
   }
 })
 
+const getChildren = (children, size) =>
+  React.Children.map(children, (child, i) => {
+    if (child?.type === Icon) {
+      return React.cloneElement(child, {
+        size: size === 'lg' ? 'md' : 'sm',
+        css: {
+          [i === 0 ? 'mr' : 'ml']: '$2',
+          mt: size === 'lg' ? '-$1' : '-$0',
+          ...(child.props.css ? child.props.css : {})
+        }
+      })
+    }
+    return child
+  })
+
 type LinkProps = Override<
   React.ComponentProps<typeof StyledLink>,
   {
@@ -43,9 +59,11 @@ type LinkProps = Override<
 >
 
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', onClick, href, ...remainingProps }, ref) =>
+  ({ children, size = 'md', onClick, href, ...remainingProps }, ref) =>
     href ? (
-      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
+      <StyledLink size={size} {...remainingProps} ref={ref} href={href}>
+        {getChildren(children, size)}
+      </StyledLink>
     ) : (
       <StyledLink
         as="button"
@@ -53,7 +71,9 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
         {...remainingProps}
         ref={ref}
         onClick={onClick}
-      />
+      >
+        {getChildren(children, size)}
+      </StyledLink>
     )
 ) as React.FC<LinkProps>
 
