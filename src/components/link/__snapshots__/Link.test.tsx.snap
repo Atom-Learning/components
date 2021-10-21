@@ -83,10 +83,19 @@ exports[`Link component applies the correct styling to child Icons 1`] = `
     display: table;
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 1.75;
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-dbrbZt-icCRcLz-css {
+    margin-right: var(--space-2);
+    margin-top: calc(var(--space-1)*-1);
+    height: 18px;
+    width: 18px;
   }
 }
 
@@ -94,7 +103,10 @@ exports[`Link component applies the correct styling to child Icons 1`] = `
   <button
     class="c-gEFkc c-gEFkc-gvmVBy-size-md"
   >
-    <svg />
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-icCRcLz-css"
+    />
     See more
   </button>
 </div>
@@ -197,10 +209,10 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     display: table;
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 1.75;
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 
   .c-dbleUi-gvmVBy-size-md {

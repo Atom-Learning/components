@@ -36,14 +36,26 @@ export const StyledLink = styled('a', {
   }
 })
 
+const getIconSize = (size) => {
+  switch (size) {
+    case 'lg':
+      return 24
+    case 'md':
+      return 18
+    case 'sm':
+    default:
+      return 16
+  }
+}
+
 const getChildren = (children, size) =>
   React.Children.map(children, (child, i) => {
     if (child?.type === Icon) {
       return React.cloneElement(child, {
-        size: size === 'lg' ? 'md' : 'sm',
         css: {
           [i === 0 ? 'mr' : 'ml']: '$2',
-          mt: size === 'lg' ? '-$1' : '-$0',
+          mt: size === 'sm' ? '-$0' : '-$1',
+          size: getIconSize(size),
           ...(child.props.css ? child.props.css : {})
         }
       })

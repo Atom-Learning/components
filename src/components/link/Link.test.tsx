@@ -43,7 +43,7 @@ describe(`Link component`, () => {
   it('applies the correct styling to child Icons', async () => {
     const { container } = render(
       <Link>
-        <Icon is={() => <svg />} />
+        <Icon is={(props) => <svg {...props} />} />
         See more
       </Link>
     )
