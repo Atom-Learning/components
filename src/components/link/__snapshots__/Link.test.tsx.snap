@@ -1,5 +1,105 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link component applies the correct styling to child Icons 1`] = `
+@media  {
+  .c-gEFkc {
+    background: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    text-decoration: none;
+  }
+
+  .c-gEFkc:focus,
+  .c-gEFkc:hover {
+    color: var(--colors-primaryMid);
+    text-decoration: underline;
+  }
+
+  .c-gEFkc:active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-dbleUi > .c-gEFkc,
+  .c-iSnHBU > .c-gEFkc,
+  .c-PJLV > .c-gEFkc {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-dbleUi > .c-gEFkc::before,
+  .c-dbleUi > .c-gEFkc::after,
+  .c-iSnHBU > .c-gEFkc::before,
+  .c-iSnHBU > .c-gEFkc::after,
+  .c-PJLV > .c-gEFkc::before,
+  .c-PJLV > .c-gEFkc::after {
+    content: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-gEFkc-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-gEFkc-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-gEFkc-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-gEFkc-jvTRJO-size-lg {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.52;
+  }
+
+  .c-gEFkc-jvTRJO-size-lg::before {
+    content: '';
+    margin-bottom: -0.3983em;
+    display: table;
+  }
+
+  .c-gEFkc-jvTRJO-size-lg::after {
+    content: '';
+    margin-top: -0.3983em;
+    display: table;
+  }
+
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
+  }
+}
+
+<div>
+  <button
+    class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+  >
+    <svg />
+    See more
+  </button>
+</div>
+`;
+
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
   .c-gEFkc {
@@ -36,6 +136,15 @@ exports[`Link component can be nested within Text and Heading 1`] = `
   .c-PJLV > .c-gEFkc::before,
   .c-PJLV > .c-gEFkc::after {
     content: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
   }
 
   .c-dbleUi {
@@ -86,6 +195,12 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     content: '';
     margin-top: -0.3983em;
     display: table;
+  }
+
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
   }
 
   .c-dbleUi-gvmVBy-size-md {

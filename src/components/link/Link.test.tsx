@@ -3,6 +3,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 
 import { Heading } from '../heading/Heading'
+import { Icon } from '../icon/Icon'
 import { Text } from '../text/Text'
 import { Link } from './'
 
@@ -33,20 +34,21 @@ describe(`Link component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders an large anchor - has no programmatically detectable a11y issues', async () => {
+  it('is polymorphic', async () => {
+    render(<Link>See more</Link>)
+
+    expect(screen.getByRole('button')).toBeInTheDocument()
+  })
+
+  it('applies the correct styling to child Icons', async () => {
     const { container } = render(
-      <Link href="https://google.com/" size="lg">
-        GOOGLE
+      <Link>
+        <Icon is={() => <svg />} />
+        See more
       </Link>
     )
 
-    expect(await axe(container)).toHaveNoViolations()
-  })
-
-  it('is polymorphic', async () => {
-    render(<Link as="button">See more</Link>)
-
-    expect(screen.getByRole('button')).toBeInTheDocument()
+    expect(container).toMatchSnapshot()
   })
 
   it('can be nested within Text and Heading', async () => {
