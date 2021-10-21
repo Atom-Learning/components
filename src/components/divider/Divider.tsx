@@ -9,21 +9,21 @@ interface DividerProps {
 
 const DEFAULT_ORIENTATION: DividerProps['orientation'] = 'horizontal'
 
-const StyledDivider = styled('div', {
+const StyledDivider = styled('hr', {
+  border: 0,
   bg: '$tonal200',
-  '&[data-orientation=horizontal]': { height: 1, width: '100%' },
-  '&[data-orientation=vertical]': { height: '100%', width: 1, minHeight: '$3' }
+  variants: {
+    orientation: {
+      horizontal: { height: 1, width: '100%' },
+      vertical: { height: '100%', width: 1, minHeight: '$3' }
+    }
+  }
 })
 
 export const Divider: React.FC<DividerProps> = ({
   orientation = DEFAULT_ORIENTATION,
-  css
+  css,
+  ...rest
 }) => {
-  return (
-    <StyledDivider
-      data-orientation={orientation}
-      aria-orientation={orientation}
-      css={css}
-    />
-  )
+  return <StyledDivider orientation={orientation} css={css} {...rest} />
 }

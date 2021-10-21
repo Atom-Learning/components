@@ -2,19 +2,9 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-kLXyqk {
+  .c-jpqjUq {
+    border: 0;
     background: var(--colors-tonal200);
-  }
-
-  .c-kLXyqk[data-orientation=horizontal] {
-    height: 1px;
-    width: 100%;
-  }
-
-  .c-kLXyqk[data-orientation=vertical] {
-    height: 100%;
-    width: 1px;
-    min-height: var(--sizes-3);
   }
 
   .c-iSnHBU {
@@ -132,6 +122,11 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
   .c-iSnHBU-bSbzjX-size-lg {
     font-size: var(--fontSizes-2xl);
     line-height: 1.08;
@@ -287,7 +282,7 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
-  .c-kLXyqk-icGzAje-css {
+  .c-jpqjUq-icGzAje-css {
     width: 100%;
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
@@ -342,20 +337,16 @@ exports[`MarkdownContent component renders 1`] = `
   <div
     class="c-PJLV"
   >
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Headings
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h1
       class="c-iSnHBU c-iSnHBU-kYeJd-size-xl c-iSnHBU-ifCXdlF-css"
@@ -387,20 +378,16 @@ exports[`MarkdownContent component renders 1`] = `
     >
       h6 Heading
     </h6>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Emphasis
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
@@ -438,35 +425,27 @@ exports[`MarkdownContent component renders 1`] = `
         This is italic text
       </em>
     </p>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Blockquotes
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Lists
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h3
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
@@ -632,20 +611,16 @@ exports[`MarkdownContent component renders 1`] = `
         </p>
       </li>
     </ol>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Code
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h3
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
@@ -685,20 +660,16 @@ line 3 of code
     >
       Sample text here...
     </pre>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Links
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
@@ -721,20 +692,16 @@ line 3 of code
         link with title
       </a>
     </p>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
     >
       Images
     </h2>
-    <div
-      aria-orientation="horizontal"
-      class="c-kLXyqk c-kLXyqk-icGzAje-css"
-      data-orientation="horizontal"
+    <hr
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
