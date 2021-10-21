@@ -16,18 +16,19 @@ exports[`StackContent component renders a stack content 1`] = `
     margin: 0;
   }
 
-  .c-ewHqZc {
+  .c-kLXyqk {
     background: var(--colors-tonal200);
   }
 
-  .c-ewHqZc[data-orientation=horizontal] {
+  .c-kLXyqk[data-orientation=horizontal] {
     height: 1px;
     width: 100%;
   }
 
-  .c-ewHqZc[data-orientation=vertical] {
+  .c-kLXyqk[data-orientation=vertical] {
     height: 100%;
     width: 1px;
+    min-height: var(--sizes-3);
   }
 
   .c-iQukjL {
@@ -139,7 +140,7 @@ exports[`StackContent component renders a stack content 1`] = `
     margin-bottom: var(--space-5);
   }
 
-  .c-ewHqZc-ihYlNNO-css {
+  .c-kLXyqk-ihYlNNO-css {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
     color: red;
@@ -182,7 +183,7 @@ exports[`StackContent component renders a stack content 1`] = `
     </p>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-ihYlNNO-css"
+      class="c-kLXyqk c-kLXyqk-ihYlNNO-css"
       data-orientation="horizontal"
     />
     <ul

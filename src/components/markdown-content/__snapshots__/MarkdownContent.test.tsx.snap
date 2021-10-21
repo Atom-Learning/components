@@ -2,18 +2,19 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-ewHqZc {
+  .c-kLXyqk {
     background: var(--colors-tonal200);
   }
 
-  .c-ewHqZc[data-orientation=horizontal] {
+  .c-kLXyqk[data-orientation=horizontal] {
     height: 1px;
     width: 100%;
   }
 
-  .c-ewHqZc[data-orientation=vertical] {
+  .c-kLXyqk[data-orientation=vertical] {
     height: 100%;
     width: 1px;
+    min-height: var(--sizes-3);
   }
 
   .c-iSnHBU {
@@ -286,7 +287,7 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
-  .c-ewHqZc-icGzAje-css {
+  .c-kLXyqk-icGzAje-css {
     width: 100%;
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
@@ -343,7 +344,7 @@ exports[`MarkdownContent component renders 1`] = `
   >
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -353,7 +354,7 @@ exports[`MarkdownContent component renders 1`] = `
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h1
@@ -388,7 +389,7 @@ exports[`MarkdownContent component renders 1`] = `
     </h6>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -398,7 +399,7 @@ exports[`MarkdownContent component renders 1`] = `
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <p
@@ -439,7 +440,7 @@ exports[`MarkdownContent component renders 1`] = `
     </p>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -449,12 +450,12 @@ exports[`MarkdownContent component renders 1`] = `
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -464,7 +465,7 @@ exports[`MarkdownContent component renders 1`] = `
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h3
@@ -633,7 +634,7 @@ exports[`MarkdownContent component renders 1`] = `
     </ol>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -643,7 +644,7 @@ exports[`MarkdownContent component renders 1`] = `
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h3
@@ -686,7 +687,7 @@ line 3 of code
     </pre>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -696,7 +697,7 @@ line 3 of code
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <p
@@ -722,7 +723,7 @@ line 3 of code
     </p>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <h2
@@ -732,7 +733,7 @@ line 3 of code
     </h2>
     <div
       aria-orientation="horizontal"
-      class="c-ewHqZc c-ewHqZc-icGzAje-css"
+      class="c-kLXyqk c-kLXyqk-icGzAje-css"
       data-orientation="horizontal"
     />
     <p
