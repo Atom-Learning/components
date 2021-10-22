@@ -1,13 +1,6 @@
 import React from 'react'
 
-import { CSS, styled } from '~/stitches'
-
-interface DividerProps {
-  orientation?: 'horizontal' | 'vertical'
-  css?: CSS
-}
-
-const DEFAULT_ORIENTATION: DividerProps['orientation'] = 'horizontal'
+import { styled } from '~/stitches'
 
 const StyledDivider = styled('hr', {
   border: 0,
@@ -20,10 +13,9 @@ const StyledDivider = styled('hr', {
   }
 })
 
-export const Divider: React.FC<DividerProps> = ({
-  orientation = DEFAULT_ORIENTATION,
-  css,
+export const Divider: React.FC<React.ComponentProps<typeof StyledDivider>> = ({
+  orientation = 'horizontal',
   ...rest
 }) => {
-  return <StyledDivider orientation={orientation} css={css} {...rest} />
+  return <StyledDivider orientation={orientation} {...rest} />
 }
