@@ -2,12 +2,9 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-hnXsvE {
+  .c-jpqjUq {
     border: 0;
-    border-top: 1px solid var(--colors-tonal200);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    background: var(--colors-tonal200);
   }
 
   .c-iSnHBU {
@@ -125,6 +122,11 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
   .c-iSnHBU-bSbzjX-size-lg {
     font-size: var(--fontSizes-2xl);
     line-height: 1.08;
@@ -280,7 +282,7 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
-  .c-hnXsvE-icGzAje-css {
+  .c-jpqjUq-icGzAje-css {
     width: 100%;
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
@@ -336,7 +338,7 @@ exports[`MarkdownContent component renders 1`] = `
     class="c-PJLV"
   >
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -344,7 +346,7 @@ exports[`MarkdownContent component renders 1`] = `
       Headings
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h1
       class="c-iSnHBU c-iSnHBU-kYeJd-size-xl c-iSnHBU-ifCXdlF-css"
@@ -377,7 +379,7 @@ exports[`MarkdownContent component renders 1`] = `
       h6 Heading
     </h6>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -385,7 +387,7 @@ exports[`MarkdownContent component renders 1`] = `
       Emphasis
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
@@ -424,7 +426,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -432,10 +434,10 @@ exports[`MarkdownContent component renders 1`] = `
       Blockquotes
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -443,7 +445,7 @@ exports[`MarkdownContent component renders 1`] = `
       Lists
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h3
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
@@ -610,7 +612,7 @@ exports[`MarkdownContent component renders 1`] = `
       </li>
     </ol>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -618,7 +620,7 @@ exports[`MarkdownContent component renders 1`] = `
       Code
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h3
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ifCXdlF-css"
@@ -659,7 +661,7 @@ line 3 of code
       Sample text here...
     </pre>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -667,7 +669,7 @@ line 3 of code
       Links
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
@@ -691,7 +693,7 @@ line 3 of code
       </a>
     </p>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <h2
       class="c-iSnHBU c-iSnHBU-bSbzjX-size-lg c-iSnHBU-ifCXdlF-css"
@@ -699,7 +701,7 @@ line 3 of code
       Images
     </h2>
     <hr
-      class="c-hnXsvE c-hnXsvE-icGzAje-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
       class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"

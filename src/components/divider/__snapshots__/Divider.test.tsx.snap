@@ -1,19 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Divider component renders 1`] = `
+exports[`Divider component renders horizontal divider 1`] = `
 @media  {
-  .c-hnXsvE {
+  .c-jpqjUq {
     border: 0;
-    border-top: 1px solid var(--colors-tonal200);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    background: var(--colors-tonal200);
+  }
+}
+
+@media  {
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
   }
 }
 
 <div>
   <hr
-    class="c-hnXsvE"
+    class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal"
+  />
+</div>
+`;
+
+exports[`Divider component renders vertical divider 1`] = `
+@media  {
+  .c-jpqjUq {
+    border: 0;
+    background: var(--colors-tonal200);
+  }
+}
+
+@media  {
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
+  .c-jpqjUq-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
+  }
+}
+
+<div>
+  <hr
+    class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical"
   />
 </div>
 `;
