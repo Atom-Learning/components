@@ -47,7 +47,7 @@ jobs:
           branch: 'main'
 
         env:
-          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
       - name: Log new version
         if: steps.semantic.outputs.new_release_published == 'true'
