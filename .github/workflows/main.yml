@@ -47,6 +47,7 @@ jobs:
           branch: 'main'
 
         env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
       - name: Log new version
