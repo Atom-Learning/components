@@ -192,12 +192,12 @@
       [
         "semantic-release-slack-bot",
         {
+          "packageName": "@atom-learning/components",
           "branchesConfig": [
             {
               "pattern": "main",
               "notifyOnFail": true,
-              "notifyOnSuccess": true,
-              "packageName": "@atom-learning/components"
+              "notifyOnSuccess": true
             }
           ]
         }
