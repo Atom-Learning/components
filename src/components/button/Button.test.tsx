@@ -134,6 +134,7 @@ describe(`Button component`, () => {
 
     expect(link).toBeInTheDocument()
     expect(link).toHaveAttribute('href', 'https://app.atomlearning.co.uk')
+    expect(link).not.toHaveAttribute('type', 'button')
   })
 
   it('renders a rounded button ', async () => {
@@ -156,7 +157,6 @@ describe(`Button component`, () => {
         </Button>
       )
 
-      expect(await screen.queryByText('BUTTON')).not.toBeVisible()
       expect(await screen.getByRole('alert')).toBeInTheDocument()
 
       expect(container).toMatchSnapshot()

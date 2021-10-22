@@ -23,11 +23,11 @@ type StackContentProps = React.ComponentProps<typeof StyledStackContent> & {
   css?: CSS
 }
 
-const cloneWithStyle = (child: React.ReactElement, style: CSS) =>
+const cloneWithCss = (child: React.ReactElement, css: CSS) =>
   React.cloneElement(child, {
     css: {
-      ...style,
-      ...child.props.css
+      ...css,
+      ...(child.props.css ? child.props.css : {})
     }
   })
 
@@ -44,7 +44,7 @@ export const StackContent: React.FC<StackContentProps> = ({
       const type = child?.type
 
       if (type === Heading || type === MarkdownHeading) {
-        return cloneWithStyle(child, {
+        return cloneWithCss(child, {
           maxWidth: '65ch',
           '&:not(:first-child)': { mt: '$5' },
           '&:not(:last-child)': { mb: '$5' }
@@ -57,20 +57,20 @@ export const StackContent: React.FC<StackContentProps> = ({
         type === List ||
         type === MarkdownList
       ) {
-        return cloneWithStyle(child, {
+        return cloneWithCss(child, {
           maxWidth: '75ch',
           '&:not(:last-child)': { mb: '$5' }
         })
       }
 
       if (type === Divider || type === MarkdownThematicBreak) {
-        return cloneWithStyle(child, {
+        return cloneWithCss(child, {
           my: '$5'
         })
       }
 
       if (type === Image || type === MarkdownImage) {
-        return cloneWithStyle(child, {
+        return cloneWithCss(child, {
           display: 'block',
           '&:not(:first-child)': { mt: '$6' },
           '&:not(:last-child)': { mb: '$6' }

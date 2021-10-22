@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component renders a disabled radio button 1`] = `
+@media  {
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .c-hXfYPB {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-round);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: all 50ms ease-out;
+  }
+
+  .c-hXfYPB:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-hXfYPB[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-hXfYPB[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
+  }
+}
+
+<div>
+  <div
+    class="c-iSwBqf"
+    dir="ltr"
+    role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-checked="false"
+      aria-label="disabled indicator"
+      class="c-hXfYPB"
+      data-disabled=""
+      data-radix-collection-item=""
+      data-state="unchecked"
+      disabled=""
+      role="radio"
+      tabindex="-1"
+      type="button"
+      value="value"
+    />
+  </div>
+</div>
+`;
+
+exports[`Radio component renders a radio button 1`] = `
+@media  {
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .c-hXfYPB {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-round);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: all 50ms ease-out;
+  }
+
+  .c-hXfYPB:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-hXfYPB[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-hXfYPB[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
+  }
+}
+
+<div>
+  <div
+    class="c-iSwBqf"
+    dir="ltr"
+    role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-checked="false"
+      aria-label="indicator"
+      class="c-hXfYPB"
+      data-radix-collection-item=""
+      data-state="unchecked"
+      role="radio"
+      tabindex="-1"
+      type="button"
+      value="value"
+    />
+  </div>
+</div>
+`;

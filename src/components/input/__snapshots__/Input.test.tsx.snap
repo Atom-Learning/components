@@ -1,48 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component renders a number input 1`] = `
-.sx1s1jh {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx1s1jh:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
+@media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
 }
 
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sx1s1jhpw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
-
-.sx1s1jh-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-fZTBsJ-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 <div>
   <input
-    class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jh-6obnf"
+    class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ikLAKdM-css"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -52,48 +63,59 @@ exports[`Input component renders a number input 1`] = `
 `;
 
 exports[`Input component renders a text input 1`] = `
-.sx1s1jh {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--sx-colors-tonal400);
-  border-radius: var(--sx-radii-0);
-  box-shadow: none;
-  box-sizing: border-box;
-  color: var(--sx-colors-tonal800);
-  cursor: text;
-  display: block;
-  font-family: var(--sx-fonts-body);
-  padding-left: var(--sx-space-3);
-  padding-right: var(--sx-space-3);
-  transition: all 100ms ease-out;
-  width: 100%;
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
 }
 
-.sx1s1jh:focus {
-  border-color: var(--sx-colors-primary);
-  outline: none;
+@media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
 }
 
-.sx1s1jh[disabled] {
-  background-color: var(--sx-colors-tonal100);
-  color: var(--sx-colors-tonal600);
-  cursor: not-allowed;
-}
-
-.sx1s1jhpw03g--size-md {
-  height: var(--sx-sizes-4);
-  font-size: var(--sx-fontSizes-md);
-}
-
-.sx1s1jh-6obnf {
-  margin: auto;
-  height: 100px;
-  width: 100px;
+@media  {
+  .c-fZTBsJ-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 <div>
   <input
-    class="sx1s1jh sx1s1jhpw03g--size-md sx1s1jh-6obnf"
+    class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ikLAKdM-css"
     placeholder="INPUT"
     type="text"
   />

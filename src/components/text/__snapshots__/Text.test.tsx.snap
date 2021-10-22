@@ -1,33 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Text component renders some text 1`] = `
-.sxj1d4e {
-  color: var(--sx-colors-tonal800);
-  font-family: var(--sx-fonts-body);
-  font-weight: 400;
-  margin: 0;
+@media  {
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
-.sxj1d4e8bitc--size-md {
-  font-size: var(--sx-fontSizes-md);
-  line-height: 1.5;
-}
+@media  {
+  .c-dbleUi-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
 
-.sxj1d4e8bitc--size-md::before {
-  content: '';
-  margin-bottom: -0.3864em;
-  display: table;
-}
+  .c-dbleUi-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
 
-.sxj1d4e8bitc--size-md::after {
-  content: '';
-  margin-top: -0.3864em;
-  display: table;
+  .c-dbleUi-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
 <div>
   <p
-    class="sxj1d4e sxj1d4e8bitc--size-md"
+    class="c-dbleUi c-dbleUi-gvmVBy-size-md"
   >
     TEXT
   </p>

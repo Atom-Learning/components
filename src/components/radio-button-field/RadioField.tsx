@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { InlineFieldWrapper } from '~/components/field-wrapper'
 import { ValidationOptions } from '~/components/form'
-import { RadioButton } from '~/components/radio'
+import { RadioButton } from '~/components/radio-button'
 import { CSS } from '~/stitches'
 
 type RadioFieldProps = {

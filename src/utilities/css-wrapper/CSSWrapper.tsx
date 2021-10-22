@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Box } from '~/components/box'
-import { CSS } from '~/stitches'
+import type { CSS } from '~/stitches'
 
 type CssWrapperProps = {
   css?: CSS
@@ -13,9 +13,7 @@ export const CSSWrapper = ({
   children
 }: CssWrapperProps): React.ReactElement =>
   css ? (
-    <Box css={css} data-testid="css-wrapper">
-      {children}
-    </Box>
+    <Box css={css}>{children}</Box>
   ) : (
     // children could be multiple elements/components,
     // so we need a fragment here.

@@ -4,9 +4,10 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
-import { Text } from '~/components/text'
 import { ValidationError } from '~/components/validation-error'
-import { CSS } from '~/stitches'
+import type { CSS } from '~/stitches'
+
+import { Description } from './FieldDescription'
 
 export type FieldWrapperProps = {
   css?: CSS
@@ -30,11 +31,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
 }) => (
   <Box css={css}>
     <Flex
-      css={{
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        mb: '$3'
-      }}
+      css={{ justifyContent: 'space-between', alignItems: 'center', mb: '$3' }}
     >
       <Label htmlFor={fieldId} required={required}>
         {label}
@@ -45,11 +42,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         </Link>
       )}
     </Flex>
-    {description && (
-      <Text size="sm" css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}>
-        {description}
-      </Text>
-    )}
+    {description && <Description css={{ mb: '$3' }}>{description}</Description>}
     {children}
     {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
   </Box>

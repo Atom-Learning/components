@@ -1,9 +1,9 @@
 import { styled } from '~/stitches'
 
 export const TableCell = styled('td', {
-  borderBottom: '1px solid $tonal200',
+  borderBottom: '1px solid $tonal100',
   boxSizing: 'border-box',
-  color: '$tonal600',
+  color: '$tonal400',
   fontFamily: '$body',
   lineHeight: 1.5,
   p: '$2 $3',

@@ -2,18 +2,18 @@ import { Close as CloseIcon } from '@atom-learning/icons'
 import { Arrow, Close, Content } from '@radix-ui/react-popover'
 import * as React from 'react'
 
-import { keyframes, styled } from '~/stitches'
+import { styled } from '~/stitches'
+import {
+  slideDownAndFade,
+  slideLeftAndFade,
+  slideRightAndFade,
+  slideUpAndFade
+} from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 
-const scaleIn = keyframes({
-  '0%': { opacity: 0, transform: 'scale(0.8)' },
-  '100%': { opacity: 1, transform: 'scale(1)' }
-})
-
 const StyledContent = styled(Content, {
-  animation: `${scaleIn} 75ms ease-out`,
   bg: 'white',
   borderRadius: '$1',
   boxShadow: '$2',
@@ -21,7 +21,17 @@ const StyledContent = styled(Content, {
   p: '$sizes$2',
   pr: '$6',
   position: 'relative',
-  transformOrigin: 'var(--radix-tooltip-content-transform-origin)',
+  '@allowMotion': {
+    animationDuration: '75ms',
+    animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
+    willChange: 'transform, opacity',
+    '&[data-state="open"]': {
+      '&[data-side="top"]': { animationName: slideDownAndFade },
+      '&[data-side="right"]': { animationName: slideLeftAndFade },
+      '&[data-side="bottom"]': { animationName: slideUpAndFade },
+      '&[data-side="left"]': { animationName: slideRightAndFade }
+    }
+  },
   variants: {
     size: {
       sm: { maxWidth: '200px' },

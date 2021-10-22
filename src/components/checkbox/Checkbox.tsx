@@ -1,4 +1,4 @@
-import { Ok } from '@atom-learning/icons'
+import { Minus, Ok } from '@atom-learning/icons'
 import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
@@ -15,7 +15,7 @@ const StyledIndicator = styled(RadixCheckbox.Indicator, {
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: '1px solid $colors$tonal500',
+  border: '1px solid $colors$tonal400',
   borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',
@@ -25,24 +25,30 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all 50ms ease-out',
-  '&[data-state="unchecked"]:focus, &[data-state="unchecked"]:hover': {
-    outline: 'none'
-  },
   '&[data-state="checked"]': {
     backgroundColor: '$primary',
     borderColor: '$primary'
   },
-  '&[data-state="checked"]:hover, &[data-state="unchecked"]:focus': {
-    borderColor: '$primary',
-    outline: 'none'
+  '&[data-state="indeterminate"]': {
+    backgroundColor: '$primary',
+    borderColor: '$primary'
+  },
+  '&:focus': {
+    outline: '2px solid $primary',
+    outlineOffset: '1px'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal200',
+    backgroundColor: '$tonal100',
     borderColor: '$tonal400',
-    cursor: 'not-allowed'
+    cursor: 'not-allowed',
+    color: '$tonal400'
   },
-  '&:focus-within': {
-    outline: 'none'
+  variants: {
+    state: {
+      error: {
+        borderColor: '$danger'
+      }
+    }
   }
 })
 
@@ -53,12 +59,12 @@ export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
     <StyledCheckbox {...props} ref={ref}>
       <StyledIndicator>
         <Icon
-          is={Ok}
-          size="xs"
+          is={props.checked === 'indeterminate' ? Minus : Ok}
           css={{
             pointerEvents: 'none',
             position: 'absolute',
-            strokeWidth: '3'
+            strokeWidth: '3',
+            size: 14
           }}
         />
       </StyledIndicator>

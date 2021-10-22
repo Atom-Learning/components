@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
+import { Description as FieldDescription } from '~/components/field-wrapper/FieldDescription'
 import { useFieldError, ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
-import { RadioButtonGroup } from '~/components/radio'
-import { Text } from '~/components/text'
+import { RadioButtonGroup } from '~/components/radio-button'
 import { ValidationError } from '~/components/validation-error'
 import { CSS, styled } from '~/stitches'
 
@@ -14,7 +14,7 @@ const Fieldset = styled('fieldset', {
   all: 'unset'
 })
 
-type RadioGroupFieldProps = {
+type RadioButtonFieldProps = {
   css?: CSS
   defaultValue?: string
   label: string
@@ -24,7 +24,7 @@ type RadioGroupFieldProps = {
   validation?: ValidationOptions
 }
 
-export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
+export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   Item: typeof RadioField
 } = ({
   children,
@@ -49,12 +49,7 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
         {label}
       </Label>
       {description && (
-        <Text
-          size="sm"
-          css={{ color: '$tonal500', mb: '$3', maxWidth: '80ch' }}
-        >
-          {description}
-        </Text>
+        <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
       )}
       <Controller
         control={control}
@@ -77,6 +72,6 @@ export const RadioGroupField: React.FC<RadioGroupFieldProps> & {
   )
 }
 
-RadioGroupField.Item = RadioField
+RadioButtonField.Item = RadioField
 
-RadioGroupField.displayName = 'RadioGroupField'
+RadioButtonField.displayName = 'RadioButtonField'

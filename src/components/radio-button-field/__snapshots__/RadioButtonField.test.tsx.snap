@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButtonField component renders 1`] = `
+@media  {
+  .c-leHWbT {
+    all: unset;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .c-hXfYPB {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-round);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: all 50ms ease-out;
+  }
+
+  .c-hXfYPB:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-hXfYPB[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-hXfYPB[disabled] {
+    background-color: var(--colors-tonal100);
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-cVSpVL-JrrAq-align-start {
+    align-items: flex-start;
+  }
+
+  .c-cVSpVL-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-iSwBqf-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-cVSpVL-bsbHzT-type-inline {
+    display: flex;
+    font-weight: 400;
+    max-width: max-content;
+  }
+}
+
+@media  {
+  .c-cVSpVL-igrvbIF-css {
+    padding: 0;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-PJLV-ihmIibS-css {
+    margin-right: var(--space-3);
+    transform: translateY(var(--space-1));
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <fieldset
+      class="c-leHWbT"
+    >
+      <legend
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
+      >
+        Example options
+      </legend>
+      <div
+        class="c-iSwBqf c-iSwBqf-iTKOFX-direction-column"
+        dir="ltr"
+        role="radiogroup"
+        style="outline: none;"
+        tabindex="0"
+      >
+        <div
+          class="c-PJLV"
+        >
+          <label
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+          >
+            <div
+              class="c-PJLV c-PJLV-ihmIibS-css"
+            >
+              <button
+                aria-checked="true"
+                class="c-hXfYPB"
+                data-radix-collection-item=""
+                data-state="checked"
+                role="radio"
+                tabindex="-1"
+                type="button"
+                value="1"
+              >
+                <span
+                  class="c-jHqXTB"
+                  data-state="checked"
+                />
+              </button>
+              <input
+                aria-hidden="true"
+                checked=""
+                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
+                tabindex="-1"
+                type="radio"
+                value="1"
+              />
+            </div>
+            1
+          </label>
+        </div>
+        <div
+          class="c-PJLV"
+        >
+          <label
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+          >
+            <div
+              class="c-PJLV c-PJLV-ihmIibS-css"
+            >
+              <button
+                aria-checked="false"
+                class="c-hXfYPB"
+                data-radix-collection-item=""
+                data-state="unchecked"
+                role="radio"
+                tabindex="-1"
+                type="button"
+                value="2"
+              />
+              <input
+                aria-hidden="true"
+                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
+                tabindex="-1"
+                type="radio"
+                value="2"
+              />
+            </div>
+            2
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</div>
+`;

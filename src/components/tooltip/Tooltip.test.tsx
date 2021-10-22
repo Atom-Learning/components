@@ -10,9 +10,7 @@ describe(`Tooltip component`, () => {
     const { container } = render(
       <IdProvider>
         <Tooltip>
-          <Tooltip.Trigger>
-            <span>TOOLTIP</span>
-          </Tooltip.Trigger>
+          <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
           <Tooltip.Content>CONTENT</Tooltip.Content>
         </Tooltip>
       </IdProvider>
@@ -28,9 +26,7 @@ describe(`Tooltip component`, () => {
     const { container } = render(
       <IdProvider>
         <Tooltip defaultOpen>
-          <Tooltip.Trigger>
-            <span>TOOLTIP</span>
-          </Tooltip.Trigger>
+          <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
           <Tooltip.Content>CONTENT</Tooltip.Content>
         </Tooltip>
       </IdProvider>
