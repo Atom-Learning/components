@@ -42,7 +42,7 @@ describe(`Link component`, () => {
 
   it('applies the correct styling to child Icons', async () => {
     const { container } = render(
-      <Link>
+      <Link href="/go/somewhere">
         <Icon is={(props) => <svg {...props} />} />
         See more
       </Link>
@@ -55,10 +55,10 @@ describe(`Link component`, () => {
     const { container } = render(
       <>
         <Text>
-          <Link>TEXT LINK</Link>
+          <Link href="/go/somewhere">TEXT LINK</Link>
         </Text>
         <Heading>
-          <Link>HEADING LINK</Link>
+          <Link href="/go/somewhere">HEADING LINK</Link>
         </Heading>
       </>
     )

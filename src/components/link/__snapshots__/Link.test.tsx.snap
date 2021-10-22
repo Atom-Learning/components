@@ -100,15 +100,16 @@ exports[`Link component applies the correct styling to child Icons 1`] = `
 }
 
 <div>
-  <button
+  <a
     class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+    href="/go/somewhere"
   >
     <svg
       aria-hidden="true"
       class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-icCRcLz-css"
     />
     See more
-  </button>
+  </a>
 </div>
 `;
 
@@ -254,20 +255,22 @@ exports[`Link component can be nested within Text and Heading 1`] = `
   <p
     class="c-dbleUi c-dbleUi-gvmVBy-size-md"
   >
-    <button
+    <a
       class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+      href="/go/somewhere"
     >
       TEXT LINK
-    </button>
+    </a>
   </p>
   <h2
     class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
   >
-    <button
+    <a
       class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+      href="/go/somewhere"
     >
       HEADING LINK
-    </button>
+    </a>
   </h2>
 </div>
 `;
