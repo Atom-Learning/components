@@ -43,7 +43,7 @@
       "path": "dist/index.js"
     },
     {
-      "limit": "300ms",
+      "limit": "400ms",
       "path": "dist/index.js",
       "import": "{ Box }"
     }
