@@ -65,10 +65,21 @@ Setting `isRounded` creates a rounded button
 
 The `Button` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively
 
-```tsx preview
+```tsx
 <Button href="http://example.com/">I'm a link</Button>
 ```
 
-```tsx preview
+```tsx
 <Button onClick={() => console.log('clicked')}>I'm a button</Button>
+```
+
+## Child icons
+
+`Button` also applies relevant sizing and spacing values to any child `Icon`s, aligning with the `Button`s size and appearance. Using an `Icon` as the first or last child in `Button` will set the correct space between itself and the sibling text.
+
+```tsx preview
+<Button>
+  <Icon is={Language} />
+  Change language
+</Button>
 ```

@@ -10,18 +10,37 @@ It adds default styling and the `css` prop.
 ## Sizes
 
 ```tsx preview
-<Link href="http://example.com/" size="sm">
-  I'm a link
-</Link>
+<>
+  <Link href="http://example.com/" size="sm">
+    I'm a link
+  </Link>
+  <Link href="http://example.com/">I'm a link</Link>
+  <Link href="http://example.com/" size="lg">
+    I'm a link
+  </Link>
+</>
 ```
 
-```tsx preview
+## Polymorphism
+
+The `Link` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively
+
+```tsx
 <Link href="http://example.com/">I'm a link</Link>
 ```
 
+```tsx
+<Link onClick={() => console.log('clicked')}>I'm a button</Link>
+```
+
+## Child icons
+
+`Link` also applies relevant sizing and spacing values to any child `Icon`s, aligning with the `Link`s size and appearance. Using an `Icon` as the first or last child in `Link` will set the correct space between itself and the sibling text.
+
 ```tsx preview
-<Link href="http://example.com/" size="lg">
-  I'm a link
+<Link href="http://example.com/">
+  <Icon is={ArrowLeft} />
+  Go back
 </Link>
 ```
 
@@ -34,20 +53,4 @@ It adds default styling and the `css` prop.
   <Link href="http://example.com/">Adaptive online learning</Link> for ages
   7-12+. Prepare your child for secondary school entry and beyond.
 </Text>
-```
-
-## Polymorphism
-
-The `Link` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively 
-
-```tsx preview
-<Link href="http://example.com/">
-  I'm a link
-</Link>
-```
-
-```tsx preview
-<Link onClick={() => console.log('clicked')}>
-  I'm a button
-</Link>
 ```
