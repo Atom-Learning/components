@@ -30,10 +30,10 @@ exports[`Table component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-eMPXna {
+  .c-fWsIFh {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal300);
+    color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -41,13 +41,13 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-eMPXna {
+  tr:nth-child(even) .c-fWsIFh {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+  .c-kaWNwR-fPSxhZ-size-md .c-fWsIFh {
     height: var(--sizes-4);
   }
 }
@@ -62,7 +62,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-iNViGf-size-md c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-fPSxhZ-size-md c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -84,7 +84,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-fWsIFh"
         >
           This is text
         </td>
@@ -97,7 +97,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-fWsIFh"
         >
           Footer 1
         </td>
@@ -137,10 +137,10 @@ exports[`Table component renders with size set to lg 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-eMPXna {
+  .c-fWsIFh {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal300);
+    color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -148,17 +148,17 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-eMPXna {
+  tr:nth-child(even) .c-fWsIFh {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+  .c-kaWNwR-fPSxhZ-size-md .c-fWsIFh {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-ksfOaK-size-lg .c-eMPXna {
+  .c-kaWNwR-WStZI-size-lg .c-fWsIFh {
     height: var(--sizes-5);
   }
 }
@@ -173,7 +173,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-ksfOaK-size-lg c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-WStZI-size-lg c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -195,7 +195,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-fWsIFh"
         >
           This is text
         </td>
@@ -208,7 +208,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-fWsIFh"
         >
           Footer 1
         </td>
