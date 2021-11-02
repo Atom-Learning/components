@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import type { Override } from '~/utilities'
 import { capsize } from '~/utilities'
 
 export const StyledHeading = styled('h2', {
@@ -46,7 +47,20 @@ export const StyledHeading = styled('h2', {
   }
 })
 
-export type HeadingProps = React.ComponentPropsWithoutRef<typeof StyledHeading>
+export type HeadingProps = Override<
+  React.ComponentPropsWithoutRef<typeof StyledHeading>,
+  {
+    as?:
+      | 'h1'
+      | 'h2'
+      | 'h3'
+      | 'h4'
+      | 'h5'
+      | 'h6'
+      | React.ComponentType
+      | React.ElementType
+  }
+>
 
 export const Heading: React.FC<HeadingProps> = ({
   size = 'md',
