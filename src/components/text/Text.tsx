@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { CSS, styled } from '~/stitches'
-import { capsize, Override } from '~/utilities'
+import { capsize } from '~/utilities'
 
 type TextSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -46,24 +46,7 @@ export const StyledParagraph = styled('p', {
   }
 })
 
-type TextProps = Override<
-  React.ComponentProps<typeof StyledParagraph>,
-  {
-    as?:
-      | 'blockquote'
-      | 'caption'
-      | 'dd'
-      | 'dt'
-      | 'figcaption'
-      | 'li'
-      | 'p'
-      | 'span'
-      | 'legend'
-      | React.ComponentType
-      | React.ElementType
-    size?: TextSizes
-  }
->
+type TextProps = React.ComponentProps<typeof StyledParagraph>
 
 export const Text: React.FC<TextProps> = React.forwardRef(
   ({ size = 'md', ...remainingProps }, ref) => (
