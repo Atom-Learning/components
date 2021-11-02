@@ -24,15 +24,31 @@ const StyledLabel = styled('label', {
         maxWidth: 'max-content'
       }
     },
-    align: {
-      start: { alignItems: 'flex-start' },
-      center: { alignItems: 'center' }
+    align: { start: {}, center: {} },
+    direction: { reverse: {}, row: {} }
+  },
+  compoundVariants: [
+    {
+      type: 'inline',
+      align: 'start',
+      css: { alignItems: 'flex-start' }
     },
-    direction: {
-      reverse: { flexDirection: 'row-reverse' },
-      row: { flexDirection: 'row' }
+    {
+      type: 'inline',
+      align: 'center',
+      css: { alignItems: 'center' }
+    },
+    {
+      type: 'inline',
+      direction: 'reverse',
+      css: { flexDirection: 'row-reverse' }
+    },
+    {
+      type: 'inline',
+      direction: 'row',
+      css: { flexDirection: 'row' }
     }
-  }
+  ]
 })
 
 const StyledAsterisk = styled('span', {

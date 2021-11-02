@@ -83,14 +83,6 @@ exports[`RadioButtonField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-cVSpVL-JrrAq-align-start {
-    align-items: flex-start;
-  }
-
-  .c-cVSpVL-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
   .c-iSwBqf-iTKOFX-direction-column {
     flex-direction: column;
   }
@@ -99,6 +91,16 @@ exports[`RadioButtonField component renders 1`] = `
     display: flex;
     font-weight: 400;
     max-width: max-content;
+  }
+}
+
+@media  {
+  .c-cVSpVL-JrrAq-cv {
+    align-items: flex-start;
+  }
+
+  .c-cVSpVL-ejCoEP-cv {
+    flex-direction: row;
   }
 }
 
@@ -123,7 +125,7 @@ exports[`RadioButtonField component renders 1`] = `
       class="c-leHWbT"
     >
       <legend
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row c-cVSpVL-igrvbIF-css"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-igrvbIF-css"
       >
         Example options
       </legend>
@@ -138,7 +140,7 @@ exports[`RadioButtonField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
           >
             <div
               class="c-PJLV c-PJLV-ihmIibS-css"
@@ -174,7 +176,7 @@ exports[`RadioButtonField component renders 1`] = `
           class="c-PJLV"
         >
           <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
           >
             <div
               class="c-PJLV c-PJLV-ihmIibS-css"

@@ -73,14 +73,6 @@ exports[`SelectField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-cVSpVL-JrrAq-align-start {
-    align-items: flex-start;
-  }
-
-  .c-cVSpVL-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
   .c-beXZpM-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
@@ -111,7 +103,7 @@ exports[`SelectField component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
           for="example"
         >
           Example options

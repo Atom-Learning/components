@@ -1,7 +1,8 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { capsize, Override } from '~/utilities'
+import type { Override } from '~/utilities'
+import { capsize } from '~/utilities'
 
 export const StyledHeading = styled('h2', {
   color: '$tonal600',
@@ -58,7 +59,6 @@ export type HeadingProps = Override<
       | 'h6'
       | React.ComponentType
       | React.ElementType
-    size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
   }
 >
 
