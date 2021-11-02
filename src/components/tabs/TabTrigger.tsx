@@ -10,8 +10,13 @@ const StyledTabTrigger = styled(Trigger, {
   fontFamily: '$body',
   p: '$4',
   userSelect: 'none',
-  '&:hover': { color: '$primary' },
-  '&[data-disabled],&[data-disabled]:hover': { color: '$tonal300' },
+  '&:hover': {
+    color: '$primary'
+  },
+  '&[data-disabled],&[data-disabled]:hover': {
+    color: '$tonal300',
+    cursor: 'default'
+  },
   '&[data-state="active"]': {
     color: '$primary',
     fontWeight: 'bold',

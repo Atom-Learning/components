@@ -13,7 +13,7 @@ exports[`Tabs component renders 1`] = `
     border-bottom: 1px solid var(--colors-primaryDark);
   }
 
-  .c-iBjJFQ {
+  .c-hUDFHn {
     color: var(--colors-secondary);
     cursor: pointer;
     flex-shrink: 0;
@@ -23,16 +23,17 @@ exports[`Tabs component renders 1`] = `
     user-select: none;
   }
 
-  .c-iBjJFQ:hover {
+  .c-hUDFHn:hover {
     color: var(--colors-primary);
   }
 
-  .c-iBjJFQ[data-disabled],
-  .c-iBjJFQ[data-disabled]:hover {
+  .c-hUDFHn[data-disabled],
+  .c-hUDFHn[data-disabled]:hover {
     color: var(--colors-tonal300);
+    cursor: default;
   }
 
-  .c-iBjJFQ[data-state="active"] {
+  .c-hUDFHn[data-state="active"] {
     color: var(--colors-primary);
     font-weight: bold;
     box-shadow: inset 0 -3px 0 0 currentColor;
@@ -60,7 +61,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-iBjJFQ"
+        class="c-hUDFHn"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -73,7 +74,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-iBjJFQ"
+        class="c-hUDFHn"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
