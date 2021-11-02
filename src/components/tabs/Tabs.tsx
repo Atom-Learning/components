@@ -15,9 +15,9 @@ const StyledTabContent = styled(Content, {
 })
 
 const StyledTriggerList = styled(List, {
-  flexShrink: 0,
+  borderBottom: '1px solid $tonal300',
   display: 'flex',
-  borderBottom: '1px solid $primaryDark'
+  flexShrink: 0
 })
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
