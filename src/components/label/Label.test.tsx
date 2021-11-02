@@ -12,6 +12,17 @@ describe(`Label component`, () => {
 
     expect(container).toMatchSnapshot()
   })
+  it('renders an inline label', async () => {
+    const { container } = render(
+      <Label type="inline" align="center">
+        TEXT
+      </Label>
+    )
+
+    await screen.getByText('TEXT')
+
+    expect(container).toMatchSnapshot()
+  })
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<Label>TEXT</Label>)
