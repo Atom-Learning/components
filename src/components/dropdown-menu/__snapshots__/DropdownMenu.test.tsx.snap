@@ -42,7 +42,7 @@ exports[`DropdownMenu component renders 1`] = `
     }
 }
 
-  .c-hmKaQv {
+  .c-iLVhIC {
     align-items: center;
     color: var(--colors-tonal600);
     cursor: pointer;
@@ -56,13 +56,13 @@ exports[`DropdownMenu component renders 1`] = `
     padding-bottom: var(--space-2);
   }
 
-  .c-hmKaQv[data-disabled] {
+  .c-iLVhIC[data-disabled] {
     color: var(--colors-tonal200);
     pointer-events: none;
   }
 
-  .c-hmKaQv[aria-current="page"]::before,
-  .c-hmKaQv:focus::before {
+  .c-iLVhIC[aria-current="page"]::before,
+  .c-iLVhIC:focus::before {
     border-left: 2px solid currentColor;
     content: "";
     height: var(--sizes-2);
@@ -72,9 +72,13 @@ exports[`DropdownMenu component renders 1`] = `
     transform: scale(1);
   }
 
-  .c-hmKaQv:focus {
+  .c-iLVhIC:focus {
     color: var(--colors-primaryMid);
     outline: none;
+  }
+
+  .c-iLVhIC:hover {
+    text-decoration: underline;
   }
 
   .c-gBsmUO {
@@ -121,7 +125,7 @@ exports[`DropdownMenu component renders 1`] = `
           tabindex="-1"
         >
           <div
-            class="c-hmKaQv"
+            class="c-iLVhIC"
             data-orientation="vertical"
             data-radix-collection-item=""
             role="menuitem"
@@ -130,7 +134,7 @@ exports[`DropdownMenu component renders 1`] = `
             Item 1
           </div>
           <div
-            class="c-hmKaQv"
+            class="c-iLVhIC"
             data-orientation="vertical"
             data-radix-collection-item=""
             role="menuitem"
@@ -144,7 +148,7 @@ exports[`DropdownMenu component renders 1`] = `
             role="separator"
           />
           <a
-            class="c-cIdiJW c-hmKaQv"
+            class="c-cIdiJW c-iLVhIC"
             data-orientation="vertical"
             data-radix-collection-item=""
             href="/logout"
