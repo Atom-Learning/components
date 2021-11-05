@@ -30,7 +30,8 @@ export const itemStyles = {
   '&:focus': {
     color: '$primaryMid',
     outline: 'none'
-  }
+  },
+  '&:hover': { textDecoration: 'underline' }
 }
 
 export const DropdownMenuItem = styled(Item, itemStyles)
