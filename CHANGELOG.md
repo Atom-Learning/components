@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Atom-Learning/components/compare/v1.0.2...v1.1.0) (2021-11-05)
+
+
+### Features
+
+* update dropdown item styles ([6bf229f](https://github.com/Atom-Learning/components/commit/6bf229fbfa9cffaaa74fda5d3629636a926a3404))
+
 ## [1.0.2](https://github.com/Atom-Learning/components/compare/v1.0.1...v1.0.2) (2021-11-02)
 
 
