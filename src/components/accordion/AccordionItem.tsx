@@ -9,13 +9,6 @@ const StyledItem = styled(Item, {
 
   '&:not(:last-child)': {
     mb: '$1'
-  },
-  '&[data-state="open"]': {
-    '& [name="accordionTrigger"]': { borderRadius: '$0 $0 0 0' },
-    '& [title="accordionContent"]': { borderRadius: '0 0 $0 $0' }
-  },
-  '&[data-state="closed"]': {
-    '& [name="accordionTrigger"]': { borderRadius: '$0' }
   }
 })
 

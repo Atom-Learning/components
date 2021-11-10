@@ -17,6 +17,7 @@ const StyledContent = styled(Content, {
   border: 0,
   width: '100%',
   bg: '#fff',
+  '&[data-state="open"]': { borderRadius: '0 0 $0 $0' },
 
   '@allowMotion': {
     '&[data-state="open"]': { animation: `${open} 300ms ease-out` },

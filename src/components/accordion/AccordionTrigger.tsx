@@ -1,13 +1,11 @@
 import { Trigger } from '@radix-ui/react-accordion'
 import React from 'react'
-import type * as Stitches from '@stitches/react'
 
 import { Box, Icon } from '~/index'
 import { ChevronDown } from '@atom-learning/icons'
 
 import { styled, theme } from '~/stitches'
 import { darken } from 'polished'
-import { Override } from '~/utilities'
 
 const getTriggerVariant = (
   base: string,
@@ -41,12 +39,14 @@ const StyledTrigger = styled(Trigger, {
   cursor: 'pointer',
 
   '&[data-state="open"]': {
+    borderRadius: '$0 $0 0 0',
     '& svg': {
       transition: 'transform 300ms',
       transform: 'rotate(180deg)'
     }
   },
   '&[data-state="closed"]': {
+    borderRadius: '$0',
     '& svg': {
       transition: 'transform 300ms',
       transform: 'rotate(0deg)'
@@ -55,62 +55,30 @@ const StyledTrigger = styled(Trigger, {
 
   variants: {
     theme: {
-      primary: {},
-      primaryDark: {},
-      dark: {},
-      light: {}
-    }
-  },
-
-  compoundVariants: [
-    {
-      theme: 'primary',
-      css: getTriggerVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      css: getTriggerVariant(
+      primaryDark: getTriggerVariant(
         '$primaryDark',
         darken(0.1, theme.colors.primaryDark.value),
         darken(0.15, theme.colors.primaryDark.value)
-      )
-    },
-    {
-      theme: 'dark',
-      css: getTriggerVariant(
-        '$tonal600',
-        darken(0.1, theme.colors.tonal600.value),
-        darken(0.15, theme.colors.tonal600.value)
-      )
-    },
-    {
-      theme: 'light',
-      css: getTriggerVariant(
+      ),
+      light: getTriggerVariant(
         '#fff',
         darken(0.1, '#fff'),
         darken(0.15, '#fff'),
         '#000'
       )
     }
-  ]
+  }
 })
 
-type AccordionTriggerProps = Override<
-  React.ComponentProps<typeof StyledTrigger>,
-  Stitches.VariantProps<typeof StyledTrigger> & {
-    theme: string
-  }
->
+type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger>
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   theme = 'primaryDark',
   children,
   ...remainingProps
 }) => (
-  <StyledTrigger theme={theme} name="accordionTrigger" {...remainingProps}>
+  <StyledTrigger theme={theme} {...remainingProps}>
     <Box>{children}</Box>
     <Icon is={ChevronDown} />
   </StyledTrigger>
 )
-
-AccordionTrigger.toString = () => 'accordionTrigger'
