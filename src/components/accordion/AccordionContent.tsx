@@ -30,8 +30,4 @@ type AccordionContentProps = React.ComponentProps<typeof StyledContent>
 export const AccordionContent: React.FC<AccordionContentProps> = ({
   children,
   ...remainingProps
-}) => (
-  <StyledContent title="accordionContent" {...remainingProps}>
-    {children}
-  </StyledContent>
-)
+}) => <StyledContent {...remainingProps}>{children}</StyledContent>
