@@ -1,0 +1,49 @@
+---
+title: Accordion
+component: Accordion,Accordion.Item,Accordion.Trigger,Accordion.Content
+description: A vertically stacked group of interactive headings that reveal an associated section of content when clicked
+category: Layout
+---
+
+The Accordion exports 4 components that combine to make the `Accordion`. The parent Accordion contains `Accordion.Item` components, which themselves must contain `Accordion.Trigger` and `Accordion.Content`.
+
+The `Accordion.Trigger` has been simplified to its most general use case, and only contains text and a chevron icon. Text must be passed in as the `text` property.
+
+Default styling has been applied to `Accordion.Trigger`, but `Accordion.Content` is an empty container without styling. Should only text be placed inside, it is highly advisable to apply spacing to align with the styling of the rest of the Accordion. This can be done with either the `css` property, or by placing any other components inside the `Accordion.Content`.
+
+You can Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/accordion).
+
+```tsx preview
+<Accordion type="single" defaultValue="1">
+  <Accordion.Item value="1">
+    <Accordion.Trigger text="Accordion Header 1" />
+    <Accordion.Content css={{ m: '$2' }}>
+      I'm styled on my container
+    </Accordion.Content>
+  </Accordion.Item>
+  <Accordion.Item value="2">
+    <Accordion.Trigger text="Accordion Header 2" />
+    <Accordion.Content>
+      <Text css={{ m: '$2' }}>I'm using child components</Text>
+    </Accordion.Content>
+  </Accordion.Item>
+</Accordion>
+```
+
+## Values
+
+Each `Accordion.Item` must have a value, which can either be used as a `defaultValue` on the Accordion, or by setting the `value` of the Accordion so it is a controlled component. If value is set, it must also contain an `onValueChange` function that sets the value to a new value.
+
+## Collapsible
+
+Accordions can be given the property `collapsible`, which allows all items to be collapsed. Without passing this at least one item must be passed.
+
+## Type
+
+Accordions can have `type` as either `single` or `multiple`. This changes how many items can be expanded at once. The default is `single`.
+
+Note: if `multiple`, `value` and `defaultValue` must be in an array. Even if you want just one item to be visible initially, you must pass something like `defaultValue={['name']}`
+
+## Themes
+
+`Accordion.Trigger` can have a `theme` property. Possible values are `primary`, `primaryDark`, `dark`, and `light`. The default is `primaryDark`.

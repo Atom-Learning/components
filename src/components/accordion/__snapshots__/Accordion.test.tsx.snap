@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component renders an accordion 1`] = `
+@media  {
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-liBuhG {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .c-liBuhG:not(:last-child) {
+    margin-bottom: var(--space-1);
+  }
+
+  .c-liBuhG[data-state="open"] [name="accordionTrigger"] {
+    border-radius: var(--radii-0) var(--radii-0) 0 0;
+  }
+
+  .c-liBuhG[data-state="open"] [title="accordionContent"] {
+    border-radius: 0 0 var(--radii-0) var(--radii-0);
+  }
+
+  .c-liBuhG[data-state="closed"] [name="accordionTrigger"] {
+    border-radius: var(--radii-0);
+  }
+
+  .c-kgkscO {
+    border: 0;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .c-kgkscO[data-state="open"] svg {
+    transition: transform 300ms;
+    transform: rotate(180deg);
+  }
+
+  .c-kgkscO[data-state="closed"] svg {
+    transition: transform 300ms;
+    transform: rotate(0deg);
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-cQTsPC {
+    border: 0;
+    width: 100%;
+    background: #fff;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-cQTsPC[data-state="open"] {
+      animation: k-jYBrOR 300ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-cQTsPC[data-state="closed"] {
+      animation: k-fNLrdV 300ms ease-out;
+    }
+}
+}
+
+@media  {
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-kgkscO-kXYOEf-cv {
+    background: var(--colors-primaryDark);
+    color: #fff;
+  }
+
+  .c-kgkscO-kXYOEf-cv[disabled] {
+    background: var(--colors-tonal100);
+    cursor: not-allowed;
+    color: var(--colors-tonal400);
+  }
+
+  .c-kgkscO-kXYOEf-cv:not([disabled]):hover {
+    background: #0b2074;
+  }
+
+  .c-kgkscO-kXYOEf-cv:not([disabled]):active {
+    background: #091a5c;
+  }
+}
+
+<div>
+  <div
+    class="c-fGHEql"
+  >
+    <div
+      class="c-liBuhG"
+      data-state="open"
+    >
+      <button
+        aria-controls="radix-id-0-2"
+        aria-disabled="true"
+        aria-expanded="true"
+        class="c-kgkscO c-kgkscO-kXYOEf-cv"
+        data-state="open"
+        id="radix-id-0-1"
+        name="accordionTrigger"
+      >
+        <div
+          class="c-PJLV"
+        >
+          TRIGGER1
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="6 10 12 16 18 10"
+          />
+        </svg>
+      </button>
+      <div
+        aria-labelledby="radix-id-0-1"
+        class="c-cQTsPC"
+        data-state="open"
+        id="radix-id-0-2"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        title="accordionContent"
+      >
+        CONTENT1
+      </div>
+    </div>
+    <div
+      class="c-liBuhG"
+      data-state="closed"
+    >
+      <button
+        aria-controls="radix-id-0-4"
+        aria-expanded="false"
+        class="c-kgkscO c-kgkscO-kXYOEf-cv"
+        data-state="closed"
+        id="radix-id-0-3"
+        name="accordionTrigger"
+      >
+        <div
+          class="c-PJLV"
+        >
+          TRIGGER2
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="6 10 12 16 18 10"
+          />
+        </svg>
+      </button>
+      <div
+        aria-labelledby="radix-id-0-3"
+        class="c-cQTsPC"
+        data-state="closed"
+        hidden=""
+        id="radix-id-0-4"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        title="accordionContent"
+      />
+    </div>
+  </div>
+</div>
+`;
