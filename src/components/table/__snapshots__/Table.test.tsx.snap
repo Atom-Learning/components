@@ -9,7 +9,7 @@ exports[`Table component renders 1`] = `
     width: 100%;
   }
 
-  .c-dKvdLF {
+  .c-cLtPph {
     background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
@@ -20,17 +20,7 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dKvdLF:first-of-type {
-    border-top-left-radius: var(--radii-0);
-    border-bottom-left-radius: var(--radii-0);
-  }
-
-  .c-dKvdLF:last-of-type {
-    border-top-right-radius: var(--radii-0);
-    border-bottom-right-radius: var(--radii-0);
-  }
-
-  .c-fWsIFh {
+  .c-dUiGek {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -41,13 +31,21 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-fWsIFh {
+  tr:nth-child(odd) .c-dUiGek {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dUiGek {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-fPSxhZ-size-md .c-fWsIFh {
+  .c-kaWNwR-bPSqIf-size-md .c-dUiGek {
+    height: var(--sizes-4);
+  }
+
+  .c-kaWNwR-bPSqIf-size-md .c-cLtPph {
     height: var(--sizes-4);
   }
 }
@@ -62,7 +60,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-fPSxhZ-size-md c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-bPSqIf-size-md c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -71,7 +69,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <th
-          class="c-dKvdLF"
+          class="c-cLtPph"
         >
           Column A
         </th>
@@ -84,7 +82,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-fWsIFh"
+          class="c-dUiGek"
         >
           This is text
         </td>
@@ -97,7 +95,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-fWsIFh"
+          class="c-dUiGek"
         >
           Footer 1
         </td>
@@ -116,7 +114,7 @@ exports[`Table component renders with size set to lg 1`] = `
     width: 100%;
   }
 
-  .c-dKvdLF {
+  .c-cLtPph {
     background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
@@ -127,17 +125,7 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-dKvdLF:first-of-type {
-    border-top-left-radius: var(--radii-0);
-    border-bottom-left-radius: var(--radii-0);
-  }
-
-  .c-dKvdLF:last-of-type {
-    border-top-right-radius: var(--radii-0);
-    border-bottom-right-radius: var(--radii-0);
-  }
-
-  .c-fWsIFh {
+  .c-dUiGek {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -148,17 +136,29 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-fWsIFh {
+  tr:nth-child(odd) .c-dUiGek {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dUiGek {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-fPSxhZ-size-md .c-fWsIFh {
+  .c-kaWNwR-bPSqIf-size-md .c-dUiGek {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-WStZI-size-lg .c-fWsIFh {
+  .c-kaWNwR-bPSqIf-size-md .c-cLtPph {
+    height: var(--sizes-4);
+  }
+
+  .c-kaWNwR-eWeWTj-size-lg .c-dUiGek {
+    height: var(--sizes-5);
+  }
+
+  .c-kaWNwR-eWeWTj-size-lg .c-cLtPph {
     height: var(--sizes-5);
   }
 }
@@ -173,7 +173,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-WStZI-size-lg c-kaWNwR-iliYStP-css"
+    class="c-kaWNwR c-kaWNwR-eWeWTj-size-lg c-kaWNwR-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -182,7 +182,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <th
-          class="c-dKvdLF"
+          class="c-cLtPph"
         >
           Column A
         </th>
@@ -195,7 +195,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-fWsIFh"
+          class="c-dUiGek"
         >
           This is text
         </td>
@@ -208,7 +208,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-fWsIFh"
+          class="c-dUiGek"
         >
           Footer 1
         </td>

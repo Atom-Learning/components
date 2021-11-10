@@ -30,10 +30,16 @@ const StyledTable = styled('table', {
       md: {
         [`${TableCell}`]: {
           height: '$4'
+        },
+        [`${TableHeaderCell}`]: {
+          height: '$4'
         }
       },
       lg: {
         [`${TableCell}`]: {
+          height: '$5'
+        },
+        [`${TableHeaderCell}`]: {
           height: '$5'
         }
       }

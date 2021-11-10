@@ -8,15 +8,7 @@ export const TableHeaderCell = styled('th', {
   lineHeight: 1.5,
   p: '$2 $3',
   textAlign: 'left',
-  verticalAlign: 'middle',
-  '&:first-of-type': {
-    borderTopLeftRadius: '$0',
-    borderBottomLeftRadius: '$0'
-  },
-  '&:last-of-type': {
-    borderTopRightRadius: '$0',
-    borderBottomRightRadius: '$0'
-  }
+  verticalAlign: 'middle'
 })
 
 TableHeaderCell.displayName = 'TableHeaderCell'
