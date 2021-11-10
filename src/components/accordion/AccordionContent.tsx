@@ -1,5 +1,6 @@
 import { Content } from '@radix-ui/react-accordion'
 import React from 'react'
+import { CSSWrapper } from '~/utilities'
 
 import { keyframes, styled } from '~/stitches'
 
@@ -29,5 +30,10 @@ type AccordionContentProps = React.ComponentProps<typeof StyledContent>
 
 export const AccordionContent: React.FC<AccordionContentProps> = ({
   children,
+  css,
   ...remainingProps
-}) => <StyledContent {...remainingProps}>{children}</StyledContent>
+}) => (
+  <StyledContent {...remainingProps}>
+    <CSSWrapper css={css}>{children}</CSSWrapper>
+  </StyledContent>
+)

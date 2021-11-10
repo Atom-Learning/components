@@ -11,23 +11,21 @@ The `Accordion.Trigger` has been simplified to include a chevron icon. Generally
 
 Default styling has been applied to `Accordion.Trigger`, but `Accordion.Content` is an empty container without styling. Should only text be placed inside, it is highly advisable to apply spacing to align with the styling of the rest of the Accordion. This can be done with either the `css` property, or by placing any other components inside the `Accordion.Content`.
 
-NOTE: spacing should not be applied to the `Accordion.Content`, and should instead be applied to child components. Otherwise, the animation will not display correctly.
-
 You can Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/accordion).
 
 ```tsx preview
 <Accordion type="single" defaultValue="1">
   <Accordion.Item value="1">
     <Accordion.Trigger>Accordion Header 1</Accordion.Trigger>
-    <Accordion.Content>
-      <Text css={{ p: '$2', height: '100px' }}>Some content here</Text>
+    <Accordion.Content css={{ p: '$2', height: '100px' }}>
+      I'm styled on my container
     </Accordion.Content>
   </Accordion.Item>
   <Accordion.Item value="2">
     <Accordion.Trigger>Accordion Header 2</Accordion.Trigger>
     <Accordion.Content>
       <Text css={{ p: '$2', height: '150px' }}>
-        Slightly larger content here
+        I'm styled on a child component
       </Text>
     </Accordion.Content>
   </Accordion.Item>
