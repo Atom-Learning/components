@@ -11,11 +11,11 @@ describe('Accordion component', () => {
       <IdProvider>
         <Accordion defaultValue="1">
           <Accordion.Item value="1">
-            <Accordion.Trigger text="TRIGGER1"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER1</Accordion.Trigger>
             <Accordion.Content>CONTENT1</Accordion.Content>
           </Accordion.Item>
           <Accordion.Item value="2">
-            <Accordion.Trigger text="TRIGGER2"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER2</Accordion.Trigger>
             <Accordion.Content>CONTENT2</Accordion.Content>
           </Accordion.Item>
         </Accordion>
@@ -30,11 +30,11 @@ describe('Accordion component', () => {
       <IdProvider>
         <Accordion defaultValue="1">
           <Accordion.Item value="1">
-            <Accordion.Trigger text="TRIGGER1"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER1</Accordion.Trigger>
             <Accordion.Content>CONTENT1</Accordion.Content>
           </Accordion.Item>
           <Accordion.Item value="2">
-            <Accordion.Trigger text="TRIGGER2"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER2</Accordion.Trigger>
             <Accordion.Content>CONTENT2</Accordion.Content>
           </Accordion.Item>
         </Accordion>
@@ -51,11 +51,11 @@ describe('Accordion component', () => {
       <IdProvider>
         <Accordion defaultValue="2">
           <Accordion.Item value="1">
-            <Accordion.Trigger text="TRIGGER1"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER1</Accordion.Trigger>
             <Accordion.Content>CONTENT1</Accordion.Content>
           </Accordion.Item>
           <Accordion.Item value="2">
-            <Accordion.Trigger text="TRIGGER2"></Accordion.Trigger>
+            <Accordion.Trigger>TRIGGER2</Accordion.Trigger>
             <Accordion.Content>CONTENT2</Accordion.Content>
           </Accordion.Item>
         </Accordion>

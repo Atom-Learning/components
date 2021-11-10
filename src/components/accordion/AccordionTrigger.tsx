@@ -89,7 +89,7 @@ const StyledTrigger = styled(Trigger, {
         '#fff',
         darken(0.1, '#fff'),
         darken(0.15, '#fff'),
-        '$000'
+        '#000'
       )
     }
   ]
@@ -98,18 +98,17 @@ const StyledTrigger = styled(Trigger, {
 type AccordionTriggerProps = Override<
   React.ComponentProps<typeof StyledTrigger>,
   Stitches.VariantProps<typeof StyledTrigger> & {
-    text?: string
     theme: string
   }
 >
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
-  text,
   theme = 'primaryDark',
+  children,
   ...remainingProps
 }) => (
   <StyledTrigger theme={theme} name="accordionTrigger" {...remainingProps}>
-    <Box>{text}</Box>
+    <Box>{children}</Box>
     <Icon is={ChevronDown} />
   </StyledTrigger>
 )

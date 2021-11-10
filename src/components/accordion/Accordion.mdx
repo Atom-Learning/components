@@ -7,7 +7,7 @@ category: Layout
 
 The Accordion exports 4 components that combine to make the `Accordion`. The parent Accordion contains `Accordion.Item` components, which themselves must contain `Accordion.Trigger` and `Accordion.Content`.
 
-The `Accordion.Trigger` has been simplified to its most general use case, and only contains text and a chevron icon. Text must be passed in as the `text` property.
+The `Accordion.Trigger` has been simplified to include a chevron icon. Generally, you would only want to render text inside the rest.
 
 Default styling has been applied to `Accordion.Trigger`, but `Accordion.Content` is an empty container without styling. Should only text be placed inside, it is highly advisable to apply spacing to align with the styling of the rest of the Accordion. This can be done with either the `css` property, or by placing any other components inside the `Accordion.Content`.
 
@@ -16,13 +16,13 @@ You can Read more about the underlying UI component on the [Radix UI documentati
 ```tsx preview
 <Accordion type="single" defaultValue="1">
   <Accordion.Item value="1">
-    <Accordion.Trigger text="Accordion Header 1" />
+    <Accordion.Trigger>Accordion Header 1</Accordion.Trigger>
     <Accordion.Content css={{ p: '$2', height: '100px' }}>
       I'm styled on my container
     </Accordion.Content>
   </Accordion.Item>
   <Accordion.Item value="2">
-    <Accordion.Trigger text="Accordion Header 2" />
+    <Accordion.Trigger>Accordion Header 2</Accordion.Trigger>
     <Accordion.Content>
       <Text css={{ p: '$2', height: '150px' }}>I'm using child components</Text>
     </Accordion.Content>
