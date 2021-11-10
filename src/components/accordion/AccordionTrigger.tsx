@@ -64,7 +64,7 @@ const StyledTrigger = styled(Trigger, {
         '#fff',
         darken(0.1, '#fff'),
         darken(0.15, '#fff'),
-        '#000'
+        '$tonal600'
       )
     }
   }
