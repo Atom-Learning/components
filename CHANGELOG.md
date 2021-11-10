@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Atom-Learning/components/compare/v1.1.0...v1.1.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* update snapshot ([e71c8a4](https://github.com/Atom-Learning/components/commit/e71c8a4f03227a29eeefca9d2afd7b6355a3ed46))
+
 # [1.1.0](https://github.com/Atom-Learning/components/compare/v1.0.2...v1.1.0) (2021-11-05)
 
 
