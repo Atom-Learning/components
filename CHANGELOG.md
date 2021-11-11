@@ -1,3 +1,24 @@
+# [1.2.0](https://github.com/Atom-Learning/components/compare/v1.1.1...v1.2.0) (2021-11-10)
+
+
+### Bug Fixes
+
+* adding TODO on type ([e928651](https://github.com/Atom-Learning/components/commit/e928651928291f8a9b639c8fa6c348b1bafe6513))
+* few changes from PR ([e0f75a1](https://github.com/Atom-Learning/components/commit/e0f75a1788af1e23ec6efdfdd24f2788d73d33b0))
+* fixing small error on documentation ([3be573a](https://github.com/Atom-Learning/components/commit/3be573a7584cbe8470a0db0186302e3e39e8734b))
+
+
+### Features
+
+* adding accordion component ([60eac3c](https://github.com/Atom-Learning/components/commit/60eac3c47e3ce48371af624ff1ec0b6477b86823))
+
+## [1.1.1](https://github.com/Atom-Learning/components/compare/v1.1.0...v1.1.1) (2021-11-10)
+
+
+### Bug Fixes
+
+* update snapshot ([e71c8a4](https://github.com/Atom-Learning/components/commit/e71c8a4f03227a29eeefca9d2afd7b6355a3ed46))
+
 # [1.1.0](https://github.com/Atom-Learning/components/compare/v1.0.2...v1.1.0) (2021-11-05)
 
 
