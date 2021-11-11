@@ -1,7 +1,8 @@
 import { Trigger } from '@radix-ui/react-accordion'
 import React from 'react'
 
-import { Box, Icon } from '~/index'
+import { Box } from '../box'
+import { Icon } from '../icon'
 import { ChevronDown } from '@atom-learning/icons'
 
 import { styled, theme } from '~/stitches'
