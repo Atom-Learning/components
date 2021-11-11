@@ -6,28 +6,16 @@ exports[`Accordion component renders an accordion 1`] = `
     width: 100%;
   }
 
-  .c-liBuhG {
+  .c-hZqVuK {
     width: 100%;
     overflow: hidden;
   }
 
-  .c-liBuhG:not(:last-child) {
+  .c-hZqVuK:not(:last-child) {
     margin-bottom: var(--space-1);
   }
 
-  .c-liBuhG[data-state="open"] [name="accordionTrigger"] {
-    border-radius: var(--radii-0) var(--radii-0) 0 0;
-  }
-
-  .c-liBuhG[data-state="open"] [title="accordionContent"] {
-    border-radius: 0 0 var(--radii-0) var(--radii-0);
-  }
-
-  .c-liBuhG[data-state="closed"] [name="accordionTrigger"] {
-    border-radius: var(--radii-0);
-  }
-
-  .c-kgkscO {
+  .c-eaWowm {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -40,12 +28,20 @@ exports[`Accordion component renders an accordion 1`] = `
     cursor: pointer;
   }
 
-  .c-kgkscO[data-state="open"] svg {
+  .c-eaWowm[data-state="open"] {
+    border-radius: var(--radii-0) var(--radii-0) 0 0;
+  }
+
+  .c-eaWowm[data-state="open"] svg {
     transition: transform 300ms;
     transform: rotate(180deg);
   }
 
-  .c-kgkscO[data-state="closed"] svg {
+  .c-eaWowm[data-state="closed"] {
+    border-radius: var(--radii-0);
+  }
+
+  .c-eaWowm[data-state="closed"] svg {
     transition: transform 300ms;
     transform: rotate(0deg);
   }
@@ -59,51 +55,53 @@ exports[`Accordion component renders an accordion 1`] = `
     vertical-align: middle;
   }
 
-  .c-cQTsPC {
+  .c-hXRGtr {
     border: 0;
     width: 100%;
     background: #fff;
   }
 
+  .c-hXRGtr[data-state="open"] {
+    border-radius: 0 0 var(--radii-0) var(--radii-0);
+  }
+
 @media (prefers-reduced-motion: no-preference) {
-    .c-cQTsPC[data-state="open"] {
+    .c-hXRGtr[data-state="open"] {
       animation: k-jYBrOR 300ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-cQTsPC[data-state="closed"] {
+    .c-hXRGtr[data-state="closed"] {
       animation: k-fNLrdV 300ms ease-out;
     }
 }
 }
 
 @media  {
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
-  }
-}
-
-@media  {
-  .c-kgkscO-kXYOEf-cv {
+  .c-eaWowm-kXYOEf-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
   }
 
-  .c-kgkscO-kXYOEf-cv[disabled] {
+  .c-eaWowm-kXYOEf-theme-primaryDark[disabled] {
     background: var(--colors-tonal100);
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
 
-  .c-kgkscO-kXYOEf-cv:not([disabled]):hover {
+  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):hover {
     background: #0b2074;
   }
 
-  .c-kgkscO-kXYOEf-cv:not([disabled]):active {
+  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):active {
     background: #091a5c;
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 }
 
@@ -112,17 +110,16 @@ exports[`Accordion component renders an accordion 1`] = `
     class="c-fGHEql"
   >
     <div
-      class="c-liBuhG"
+      class="c-hZqVuK"
       data-state="open"
     >
       <button
         aria-controls="radix-id-0-2"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-kgkscO c-kgkscO-kXYOEf-cv"
+        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
         data-state="open"
         id="radix-id-0-1"
-        name="accordionTrigger"
       >
         <div
           class="c-PJLV"
@@ -142,27 +139,25 @@ exports[`Accordion component renders an accordion 1`] = `
       </button>
       <div
         aria-labelledby="radix-id-0-1"
-        class="c-cQTsPC"
+        class="c-hXRGtr"
         data-state="open"
         id="radix-id-0-2"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-        title="accordionContent"
       >
         CONTENT1
       </div>
     </div>
     <div
-      class="c-liBuhG"
+      class="c-hZqVuK"
       data-state="closed"
     >
       <button
         aria-controls="radix-id-0-4"
         aria-expanded="false"
-        class="c-kgkscO c-kgkscO-kXYOEf-cv"
+        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
         data-state="closed"
         id="radix-id-0-3"
-        name="accordionTrigger"
       >
         <div
           class="c-PJLV"
@@ -182,13 +177,12 @@ exports[`Accordion component renders an accordion 1`] = `
       </button>
       <div
         aria-labelledby="radix-id-0-3"
-        class="c-cQTsPC"
+        class="c-hXRGtr"
         data-state="closed"
         hidden=""
         id="radix-id-0-4"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-        title="accordionContent"
       />
     </div>
   </div>

@@ -17,15 +17,11 @@ You can Read more about the underlying UI component on the [Radix UI documentati
 <Accordion type="single" defaultValue="1">
   <Accordion.Item value="1">
     <Accordion.Trigger>Accordion Header 1</Accordion.Trigger>
-    <Accordion.Content css={{ p: '$2', height: '100px' }}>
-      I'm styled on my container
-    </Accordion.Content>
+    <Accordion.Content css={{ p: '$4' }}>Accordion content 1</Accordion.Content>
   </Accordion.Item>
   <Accordion.Item value="2">
     <Accordion.Trigger>Accordion Header 2</Accordion.Trigger>
-    <Accordion.Content>
-      <Text css={{ p: '$2', height: '150px' }}>I'm using child components</Text>
-    </Accordion.Content>
+    <Accordion.Content css={{ p: '$4' }}>Accordion content 2</Accordion.Content>
   </Accordion.Item>
 </Accordion>
 ```
@@ -36,7 +32,7 @@ Each `Accordion.Item` must have a value, which can either be used as a `defaultV
 
 ## Collapsible
 
-Accordions can be given the property `collapsible`, which allows all items to be collapsed. Without passing this at least one item must be passed.
+Accordions can be given the property `collapsible`, which allows all items to be collapsed. Without passing this at least one item must be open.
 
 ## Type
 
@@ -46,4 +42,4 @@ Note: if `multiple`, `value` and `defaultValue` must be in an array. Even if you
 
 ## Themes
 
-`Accordion.Trigger` can have a `theme` property. Possible values are `primary`, `primaryDark`, `dark`, and `light`. The default is `primaryDark`.
+`Accordion.Trigger` can have a `theme` property. Possible values are `primaryDark` and `light`. The default is `primaryDark`.
