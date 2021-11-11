@@ -9,6 +9,7 @@ export const TableCell = styled('td', {
   p: '$2 $3',
   textAlign: 'left',
   verticalAlign: 'middle',
+  '&:first-child': { fontWeight: 'bold' },
   'tr:nth-child(odd) &': {
     bg: 'white'
   },

@@ -21,25 +21,20 @@ type TableSubComponents = {
 }
 
 const StyledTable = styled('table', {
-  borderCollapse: 'collapse',
+  borderCollapse: 'separate',
+  borderSpacing: 0,
   fontFamily: '$sans',
   fontSize: '$sm',
   width: '100%',
   variants: {
     size: {
       md: {
-        [`${TableCell}`]: {
-          height: '$4'
-        },
-        [`${TableHeaderCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$4'
         }
       },
       lg: {
-        [`${TableCell}`]: {
-          height: '$5'
-        },
-        [`${TableHeaderCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$5'
         }
       }
