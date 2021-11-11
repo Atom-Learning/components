@@ -2,10 +2,8 @@
 
 exports[`Table component renders 1`] = `
 @media  {
-  .c-fIyQRr {
+  .c-cwQMhQ {
     border-collapse: separate;
-    border-top-left-radius: var(--radii-0);
-    border-top-right-radius: var(--radii-0);
     border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
@@ -64,18 +62,19 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-fIyQRr-dJXtar-size-md .c-dOcJjJ,
-  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
+  .c-cwQMhQ-kbszUj-size-md .c-dOcJjJ,
+  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq,
+  .c-cwQMhQ-kbszUj-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
+  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 }
 
 @media  {
-  .c-fIyQRr-iliYStP-css {
+  .c-cwQMhQ-iliYStP-css {
     height: 100px;
     width: 400px;
     color: var(--colors-primary500);
@@ -84,7 +83,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-fIyQRr c-fIyQRr-dJXtar-size-md c-fIyQRr-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-kbszUj-size-md c-cwQMhQ-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -131,10 +130,8 @@ exports[`Table component renders 1`] = `
 
 exports[`Table component renders with size set to lg 1`] = `
 @media  {
-  .c-fIyQRr {
+  .c-cwQMhQ {
     border-collapse: separate;
-    border-top-left-radius: var(--radii-0);
-    border-top-right-radius: var(--radii-0);
     border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
@@ -193,27 +190,29 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-fIyQRr-dJXtar-size-md .c-dOcJjJ,
-  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
+  .c-cwQMhQ-kbszUj-size-md .c-dOcJjJ,
+  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq,
+  .c-cwQMhQ-kbszUj-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
+  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-deahLn-size-lg .c-dOcJjJ,
-  .c-fIyQRr-deahLn-size-lg .c-ejZzIq {
+  .c-cwQMhQ-hOEzMP-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-hOEzMP-size-lg .c-ejZzIq,
+  .c-cwQMhQ-hOEzMP-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 
-  .c-fIyQRr-deahLn-size-lg .c-ejZzIq {
+  .c-cwQMhQ-hOEzMP-size-lg .c-ejZzIq {
     height: var(--sizes-5);
   }
 }
 
 @media  {
-  .c-fIyQRr-iliYStP-css {
+  .c-cwQMhQ-iliYStP-css {
     height: 100px;
     width: 400px;
     color: var(--colors-primary500);
@@ -222,7 +221,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-fIyQRr c-fIyQRr-deahLn-size-lg c-fIyQRr-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-hOEzMP-size-lg c-cwQMhQ-iliYStP-css"
   >
     <thead
       class="c-PJLV"

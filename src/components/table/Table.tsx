@@ -22,8 +22,6 @@ type TableSubComponents = {
 
 const StyledTable = styled('table', {
   borderCollapse: 'separate',
-  borderTopLeftRadius: '$0',
-  borderTopRightRadius: '$0',
   borderSpacing: 0,
   fontFamily: '$sans',
   fontSize: '$sm',
@@ -31,7 +29,7 @@ const StyledTable = styled('table', {
   variants: {
     size: {
       md: {
-        [`${TableCell}, ${TableHeaderCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$4'
         },
         [`${TableHeaderCell}`]: {
@@ -39,7 +37,7 @@ const StyledTable = styled('table', {
         }
       },
       lg: {
-        [`${TableCell}, ${TableHeaderCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$5'
         },
         [`${TableHeaderCell}`]: {
