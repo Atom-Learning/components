@@ -62,13 +62,9 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-kbszUj-size-md .c-dOcJjJ,
-  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq,
-  .c-cwQMhQ-kbszUj-size-md .c-hYjVQ {
-    height: var(--sizes-4);
-  }
-
-  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq {
+  .c-cwQMhQ-jVAARh-size-md .c-dOcJjJ,
+  .c-cwQMhQ-jVAARh-size-md .c-ejZzIq,
+  .c-cwQMhQ-jVAARh-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 }
@@ -83,7 +79,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-kbszUj-size-md c-cwQMhQ-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-jVAARh-size-md c-cwQMhQ-iliYStP-css"
   >
     <thead
       class="c-PJLV"
@@ -190,23 +186,15 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-kbszUj-size-md .c-dOcJjJ,
-  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq,
-  .c-cwQMhQ-kbszUj-size-md .c-hYjVQ {
+  .c-cwQMhQ-jVAARh-size-md .c-dOcJjJ,
+  .c-cwQMhQ-jVAARh-size-md .c-ejZzIq,
+  .c-cwQMhQ-jVAARh-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-kbszUj-size-md .c-ejZzIq {
-    height: var(--sizes-4);
-  }
-
-  .c-cwQMhQ-hOEzMP-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-hOEzMP-size-lg .c-ejZzIq,
-  .c-cwQMhQ-hOEzMP-size-lg .c-hYjVQ {
-    height: var(--sizes-5);
-  }
-
-  .c-cwQMhQ-hOEzMP-size-lg .c-ejZzIq {
+  .c-cwQMhQ-gJEyOc-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-gJEyOc-size-lg .c-ejZzIq,
+  .c-cwQMhQ-gJEyOc-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
@@ -221,7 +209,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-hOEzMP-size-lg c-cwQMhQ-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-gJEyOc-size-lg c-cwQMhQ-iliYStP-css"
   >
     <thead
       class="c-PJLV"
