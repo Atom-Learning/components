@@ -12,10 +12,6 @@ exports[`Table component renders 1`] = `
     width: 100%;
   }
 
-  .c-jfdJeO {
-    background: var(--colors-primaryDark);
-  }
-
   .c-gkKNzf:last-child td:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
@@ -24,7 +20,8 @@ exports[`Table component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-gNZPWF {
+  .c-ejZzIq {
+    background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -34,11 +31,11 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-gNZPWF:first-of-type {
+  .c-ejZzIq:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-gNZPWF:last-of-type {
+  .c-ejZzIq:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
@@ -67,12 +64,12 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-fIyQRr-bMNbkP-size-md .c-dOcJjJ,
-  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
+  .c-fIyQRr-dJXtar-size-md .c-dOcJjJ,
+  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
+  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 }
@@ -87,16 +84,16 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-fIyQRr c-fIyQRr-bMNbkP-size-md c-fIyQRr-iliYStP-css"
+    class="c-fIyQRr c-fIyQRr-dJXtar-size-md c-fIyQRr-iliYStP-css"
   >
     <thead
-      class="c-jfdJeO"
+      class="c-PJLV"
     >
       <tr
         class="c-gkKNzf"
       >
         <th
-          class="c-gNZPWF"
+          class="c-ejZzIq"
         >
           Column A
         </th>
@@ -144,10 +141,6 @@ exports[`Table component renders with size set to lg 1`] = `
     width: 100%;
   }
 
-  .c-jfdJeO {
-    background: var(--colors-primaryDark);
-  }
-
   .c-gkKNzf:last-child td:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
@@ -156,7 +149,8 @@ exports[`Table component renders with size set to lg 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-gNZPWF {
+  .c-ejZzIq {
+    background: var(--colors-primaryDark);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -166,11 +160,11 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-gNZPWF:first-of-type {
+  .c-ejZzIq:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-gNZPWF:last-of-type {
+  .c-ejZzIq:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
@@ -199,21 +193,21 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-fIyQRr-bMNbkP-size-md .c-dOcJjJ,
-  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
+  .c-fIyQRr-dJXtar-size-md .c-dOcJjJ,
+  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
+  .c-fIyQRr-dJXtar-size-md .c-ejZzIq {
     height: var(--sizes-4);
   }
 
-  .c-fIyQRr-jbphKb-size-lg .c-dOcJjJ,
-  .c-fIyQRr-jbphKb-size-lg .c-gNZPWF {
+  .c-fIyQRr-deahLn-size-lg .c-dOcJjJ,
+  .c-fIyQRr-deahLn-size-lg .c-ejZzIq {
     height: var(--sizes-5);
   }
 
-  .c-fIyQRr-jbphKb-size-lg .c-gNZPWF {
+  .c-fIyQRr-deahLn-size-lg .c-ejZzIq {
     height: var(--sizes-5);
   }
 }
@@ -228,16 +222,16 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-fIyQRr c-fIyQRr-jbphKb-size-lg c-fIyQRr-iliYStP-css"
+    class="c-fIyQRr c-fIyQRr-deahLn-size-lg c-fIyQRr-iliYStP-css"
   >
     <thead
-      class="c-jfdJeO"
+      class="c-PJLV"
     >
       <tr
         class="c-gkKNzf"
       >
         <th
-          class="c-gNZPWF"
+          class="c-ejZzIq"
         >
           Column A
         </th>
