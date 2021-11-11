@@ -2,15 +2,29 @@
 
 exports[`Table component renders 1`] = `
 @media  {
-  .c-kaWNwR {
-    border-collapse: collapse;
+  .c-fIyQRr {
+    border-collapse: separate;
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+    border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
     width: 100%;
   }
 
-  .c-cLtPph {
+  .c-jfdJeO {
     background: var(--colors-primaryDark);
+  }
+
+  .c-gkKNzf:last-child td:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-gkKNzf:last-child td:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -20,7 +34,15 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dUiGek {
+  .c-gNZPWF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-dOcJjJ {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -31,27 +53,32 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(odd) .c-dUiGek {
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
     background: white;
   }
 
-  tr:nth-child(even) .c-dUiGek {
+  tr:nth-child(even) .c-dOcJjJ {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-bPSqIf-size-md .c-dUiGek {
+  .c-fIyQRr-bMNbkP-size-md .c-dOcJjJ,
+  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-bPSqIf-size-md .c-cLtPph {
+  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
     height: var(--sizes-4);
   }
 }
 
 @media  {
-  .c-kaWNwR-iliYStP-css {
+  .c-fIyQRr-iliYStP-css {
     height: 100px;
     width: 400px;
     color: var(--colors-primary500);
@@ -60,16 +87,16 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-bPSqIf-size-md c-kaWNwR-iliYStP-css"
+    class="c-fIyQRr c-fIyQRr-bMNbkP-size-md c-fIyQRr-iliYStP-css"
   >
     <thead
-      class="c-PJLV"
+      class="c-jfdJeO"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <th
-          class="c-cLtPph"
+          class="c-gNZPWF"
         >
           Column A
         </th>
@@ -79,10 +106,10 @@ exports[`Table component renders 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <td
-          class="c-dUiGek"
+          class="c-dOcJjJ"
         >
           This is text
         </td>
@@ -92,10 +119,10 @@ exports[`Table component renders 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <td
-          class="c-dUiGek"
+          class="c-dOcJjJ"
         >
           Footer 1
         </td>
@@ -107,15 +134,29 @@ exports[`Table component renders 1`] = `
 
 exports[`Table component renders with size set to lg 1`] = `
 @media  {
-  .c-kaWNwR {
-    border-collapse: collapse;
+  .c-fIyQRr {
+    border-collapse: separate;
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+    border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
     width: 100%;
   }
 
-  .c-cLtPph {
+  .c-jfdJeO {
     background: var(--colors-primaryDark);
+  }
+
+  .c-gkKNzf:last-child td:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-gkKNzf:last-child td:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -125,7 +166,15 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-dUiGek {
+  .c-gNZPWF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-dOcJjJ {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -136,35 +185,41 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(odd) .c-dUiGek {
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
     background: white;
   }
 
-  tr:nth-child(even) .c-dUiGek {
+  tr:nth-child(even) .c-dOcJjJ {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-bPSqIf-size-md .c-dUiGek {
+  .c-fIyQRr-bMNbkP-size-md .c-dOcJjJ,
+  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-bPSqIf-size-md .c-cLtPph {
+  .c-fIyQRr-bMNbkP-size-md .c-gNZPWF {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-eWeWTj-size-lg .c-dUiGek {
+  .c-fIyQRr-jbphKb-size-lg .c-dOcJjJ,
+  .c-fIyQRr-jbphKb-size-lg .c-gNZPWF {
     height: var(--sizes-5);
   }
 
-  .c-kaWNwR-eWeWTj-size-lg .c-cLtPph {
+  .c-fIyQRr-jbphKb-size-lg .c-gNZPWF {
     height: var(--sizes-5);
   }
 }
 
 @media  {
-  .c-kaWNwR-iliYStP-css {
+  .c-fIyQRr-iliYStP-css {
     height: 100px;
     width: 400px;
     color: var(--colors-primary500);
@@ -173,16 +228,16 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-eWeWTj-size-lg c-kaWNwR-iliYStP-css"
+    class="c-fIyQRr c-fIyQRr-jbphKb-size-lg c-fIyQRr-iliYStP-css"
   >
     <thead
-      class="c-PJLV"
+      class="c-jfdJeO"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <th
-          class="c-cLtPph"
+          class="c-gNZPWF"
         >
           Column A
         </th>
@@ -192,10 +247,10 @@ exports[`Table component renders with size set to lg 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <td
-          class="c-dUiGek"
+          class="c-dOcJjJ"
         >
           This is text
         </td>
@@ -205,10 +260,10 @@ exports[`Table component renders with size set to lg 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-gkKNzf"
       >
         <td
-          class="c-dUiGek"
+          class="c-dOcJjJ"
         >
           Footer 1
         </td>
