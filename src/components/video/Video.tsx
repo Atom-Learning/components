@@ -18,33 +18,31 @@ type VideoProps = Override<
   }
 >
 
-export const Video: React.FC<VideoProps> = ({
-  id,
-  ratio = 9 / 16,
-  css,
-  ...remainingProps
-}) => (
-  <CSSWrapper css={css}>
-    <Box
-      css={{
-        borderRadius: '$0',
-        position: 'relative',
-        paddingTop: `${ratio * 100}%`,
-        overflow: 'hidden',
-        height: 0,
-        width: '100%'
-      }}
-    >
-      <StyledVideo
-        {...remainingProps}
-        role="figure"
-        url={`https://player.vimeo.com/video/${id}`}
-        height="100%"
-        width="100%"
-        css={{ position: 'absolute', top: 0, left: 0 }}
-      />
-    </Box>
-  </CSSWrapper>
+export const Video = React.forwardRef<typeof StyledVideo, VideoProps>(
+  ({ id, ratio = 9 / 16, css, ...remainingProps }, ref) => (
+    <CSSWrapper css={css}>
+      <Box
+        css={{
+          borderRadius: '$0',
+          position: 'relative',
+          paddingTop: `${ratio * 100}%`,
+          overflow: 'hidden',
+          height: 0,
+          width: '100%'
+        }}
+      >
+        <StyledVideo
+          {...remainingProps}
+          role="figure"
+          url={`https://player.vimeo.com/video/${id}`}
+          height="100%"
+          width="100%"
+          css={{ position: 'absolute', top: 0, left: 0 }}
+          ref={ref}
+        />
+      </Box>
+    </CSSWrapper>
+  )
 )
 
 Video.displayName = 'Video'
