@@ -29,36 +29,26 @@ const Dot = styled('div', {
   '&:nth-child(3)': {
     animationDelay: 0
   },
-
   variants: {
     size: {
       sm: { size: '4px', mx: '2px' },
       md: { size: '6px', mx: '2px' },
-      lg: { size: '8px', mx: '3px' }
+      lg: { size: '8px', mx: '3px' },
+      xl: { size: '10px', mx: '6px' }
     }
   }
 })
 
-type LoaderProps = {
+type LoaderProps = React.ComponentProps<typeof Dot> & {
   message?: string
-  size?: 'sm' | 'md' | 'lg'
-  css?: CSS
 }
 
 export const Loader: React.FC<LoaderProps> = ({
-  css = {},
+  css,
   message = 'Loading',
   size = 'md'
 }) => (
-  <Flex
-    css={{
-      justifyContent: 'center',
-      // Stitches doesn't recognise CSS as the right type here. The Modulz team doesn't know why.
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ...(css as any)
-    }}
-    role="alert"
-  >
+  <Flex css={{ justifyContent: 'center', ...css }} role="alert">
     <VisuallyHidden.Root>{message}</VisuallyHidden.Root>
     <Dot size={size} />
     <Dot size={size} />
