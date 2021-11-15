@@ -45,23 +45,23 @@ const StyledThumb = styled(Thumb, {
     bg: '$primaryDark'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primaryMid',
     outlineOffset: '2px'
   }
 })
 
 type SliderProps = React.ComponentProps<typeof StyledSlider>
 
-export const Slider: React.FC<SliderProps> & {
-  Thumb: typeof StyledThumb
-} = ({ children, css, ...remainingProps }) => (
-  <StyledSlider css={css} {...remainingProps}>
-    <StyledTrack>
-      <StyledRange />
-    </StyledTrack>
-    {children}
-  </StyledSlider>
-)
+export const Slider: React.FC<SliderProps> = (props) => {
+  const thumbs = props.value || props.defaultValue
+  return (
+    <StyledSlider {...props}>
+      <StyledTrack>
+        <StyledRange />
+      </StyledTrack>
+      {thumbs?.length && thumbs.map((_, i) => <StyledThumb key={i} />)}
+    </StyledSlider>
+  )
+}
 
-Slider.Thumb = StyledThumb
 Slider.displayName = 'Slider'
