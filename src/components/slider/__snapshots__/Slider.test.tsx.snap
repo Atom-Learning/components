@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slider component renders 1`] = `
+@media  {
+  .c-kpVScu {
+    align-items: center;
+    display: flex;
+    position: relative;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .c-kpVScu[data-orientation="horizontal"] {
+    height: var(--sizes-0);
+  }
+
+  .c-kpVScu[data-orientation="vertical"] {
+    flex-direction: column;
+    width: var(--sizes-0);
+  }
+
+  .c-kQuKPW {
+    background: white;
+    border: 1px inset var(--colors-tonal200);
+    border-radius: var(--radii-round);
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .c-kQuKPW[data-orientation="horizontal"] {
+    height: var(--sizes-0);
+  }
+
+  .c-kQuKPW[data-orientation="vertical"] {
+    width: var(--sizes-0);
+  }
+
+  .c-kpcewD {
+    background: var(--colors-primary);
+    border-radius: var(--radii-round);
+    height: 100%;
+    position: absolute;
+  }
+
+  .c-HBYGH {
+    background: var(--colors-primaryMid);
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-HBYGH:hover {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-HBYGH:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+}
+
+<div>
+  <span
+    aria-disabled="false"
+    aria-label="label"
+    class="c-kpVScu"
+    data-orientation="horizontal"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="c-kQuKPW"
+      data-orientation="horizontal"
+    >
+      <span
+        class="c-kpcewD"
+        data-orientation="horizontal"
+        style="left: 0%; right: 100%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(0% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="c-HBYGH"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</div>
+`;
