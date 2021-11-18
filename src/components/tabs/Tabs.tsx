@@ -43,12 +43,13 @@ const TriggerListWrapper: React.FC<ListProps> = ({
   ...rest
 }) => {
   const triggerListRef = useRef<HTMLDivElement>(null)
-  const [showScroller, setShowScroller] = useState<boolean>(false)
+  const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
+  const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
 
   const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
     const triggerList = triggerListRef.current
     if (triggerList) {
-      const { scrollWidth } = triggerList
+      const { scrollWidth, scrollLeft, offsetWidth } = triggerList
       const scrollAmount = scrollWidth / 4 // 25% of whole scroll width
       if (direction === 'right') {
         if (triggerList.scrollLeft + scrollAmount <= scrollWidth) {
@@ -66,6 +67,21 @@ const TriggerListWrapper: React.FC<ListProps> = ({
           behavior: 'smooth'
         })
       }
+
+      // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
+      setTimeout(() => {
+        const { scrollWidth, scrollLeft, offsetWidth } = triggerList
+        if (scrollLeft === 0) {
+          setShowLeftScroller(false)
+          setShowRightScroller(true)
+        } else if (scrollLeft + offsetWidth === scrollWidth) {
+          setShowRightScroller(false)
+          setShowLeftScroller(true)
+        } else {
+          setShowLeftScroller(true)
+          setShowRightScroller(true)
+        }
+      }, 300)
     }
   }, [])
 
@@ -75,22 +91,26 @@ const TriggerListWrapper: React.FC<ListProps> = ({
       const { offsetWidth, scrollWidth } = triggerList
 
       const shouldShowScroller = scrollWidth > offsetWidth
-      if (showScroller !== shouldShowScroller) {
-        setShowScroller(shouldShowScroller)
+      if (shouldShowScroller) {
+        setShowRightScroller(true)
       }
     }
   }, [])
 
+  const showScroller = showLeftScroller || showRightScroller
+
   return showScroller || enableTabScrolling ? (
     <Flex css={{ position: 'relative' }}>
-      <StyledActionIcon
-        size="lg"
-        label="scroll-left"
-        onClick={() => scrollTriggerListTo('left')}
-        css={{ left: 0 }}
-      >
-        <Icon is={ChevronLeft} size="lg" />
-      </StyledActionIcon>
+      {showLeftScroller && (
+        <StyledActionIcon
+          size="lg"
+          label="scroll-left"
+          onClick={() => scrollTriggerListTo('left')}
+          css={{ left: 0 }}
+        >
+          <Icon is={ChevronLeft} size="lg" />
+        </StyledActionIcon>
+      )}
       <StyledTriggerList
         {...rest}
         ref={triggerListRef}
@@ -103,14 +123,16 @@ const TriggerListWrapper: React.FC<ListProps> = ({
           'div:last-child': { pr: '$6' }
         }}
       />
-      <StyledActionIcon
-        size="lg"
-        label="scroll-right"
-        onClick={() => scrollTriggerListTo('right')}
-        css={{ right: 0 }}
-      >
-        <Icon is={ChevronRight} size="lg" />
-      </StyledActionIcon>
+      {showRightScroller && (
+        <StyledActionIcon
+          size="lg"
+          label="scroll-right"
+          onClick={() => scrollTriggerListTo('right')}
+          css={{ right: 0 }}
+        >
+          <Icon is={ChevronRight} size="lg" />
+        </StyledActionIcon>
+      )}
     </Flex>
   ) : (
     <StyledTriggerList css={css} {...rest} ref={triggerListRef} />
