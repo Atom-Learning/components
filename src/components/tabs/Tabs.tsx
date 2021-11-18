@@ -1,148 +1,115 @@
-import { Content, List, Root } from '@radix-ui/react-tabs'
-import React, { useState, useEffect, useRef, useCallback } from 'react'
-import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
+import { Content, Root } from '@radix-ui/react-tabs'
+import React from 'react'
+import { opacify } from 'polished'
 
-import { styled } from '~/stitches'
-import { ActionIcon } from '~/components/action-icon'
-import { Flex } from '~/components/flex'
-import { Icon } from '~/components/icon'
+import { styled, theme } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
+import { TriggerListWrapper } from './TabsTriggerList'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
 
 const StyledRoot = styled(Root, {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  pt: '$4',
+  px: '$2',
+  variants: {
+    appearance: {
+      light: {
+        'div[role="tab"]': {
+          bg: 'white',
+          '&[data-state="active"]': {
+            color: '$primary',
+            fontWeight: 600,
+            boxShadow: 'inset 0 -2px 0 0 currentColor'
+          },
+          '&[data-state="inactive"]': {
+            color: '$tonal500'
+          },
+          '&:hover': {
+            color: '$primary',
+            bg: opacify(-0.9, theme.colors.primary.value)
+          },
+          '&:active': {
+            color: '$primary',
+            bg: opacify(-0.8, theme.colors.primary.value),
+            boxShadow: 'none'
+          },
+          '&:focus': {
+            color: '$primary',
+            boxShadow: 'inset 0 0 0 2px currentColor'
+          },
+          '&[data-disabled],&[data-disabled]:hover': {
+            color: '$tonal200',
+            cursor: 'default'
+          }
+        },
+        'div[role="tabpanel"]': {
+          bg: 'white',
+          color: '$textForeground',
+          fontFamily: '$body'
+        },
+        'div[role="tablist"]': {
+          borderBottom: '1px solid $primaryDark'
+        },
+        'button[role="scrollbar"]': {
+          bg: 'white !important',
+          opacity: 0.8
+        }
+      },
+      dark: {
+        bg: '$primaryDark',
+        color: 'white',
+        'div[role="tab"]': {
+          color: 'white',
+          '&[data-state="active"]': {
+            fontWeight: 600,
+            boxShadow: 'inset 0 -2px 0 0 currentColor'
+          },
+          '&:hover': {
+            bg: opacify(-0.8, 'white')
+          },
+          '&:active': {
+            bg: opacify(-0.7, 'white'),
+            boxShadow: 'none'
+          },
+          '&:focus': {
+            boxShadow: 'inset 0 0 0 2px currentColor'
+          },
+          '&[data-disabled],&[data-disabled]:hover': {
+            color: '$tonal200',
+            cursor: 'default'
+          }
+        },
+        'div[role="tabpanel"]': {
+          bg: '$primaryDark',
+          color: 'white',
+          fontFamily: '$body'
+        },
+        'div[role="tablist"]': {
+          borderBottom: '1px solid white'
+        },
+        'button[role="scrollbar"]': {
+          bg: '$primaryDark !important',
+          opacity: 0.8,
+          color: 'white !important'
+        }
+      }
+    }
+  }
 })
 
 const StyledTabContent = styled(Content, {
   flexGrow: 1
 })
 
-const StyledTriggerList = styled(List, {
-  flexShrink: 0,
-  display: 'flex',
-  borderBottom: '1px solid $primaryDark'
-})
-
-const StyledActionIcon = styled(ActionIcon, {
-  position: 'absolute',
-  top: 'calc(50% - 20px)',
-  bg: 'white !important',
-  opacity: 0.8
-})
-
-type ListProps = React.ComponentProps<typeof StyledTriggerList> & {
-  enableTabScrolling?: boolean
-}
-
-const TriggerListWrapper: React.FC<ListProps> = ({
-  css,
-  enableTabScrolling,
-  ...rest
-}) => {
-  const triggerListRef = useRef<HTMLDivElement>(null)
-  const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
-  const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
-
-  const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
-    const triggerList = triggerListRef.current
-    if (triggerList) {
-      const { scrollWidth, scrollLeft, offsetWidth } = triggerList
-      const scrollAmount = scrollWidth / 4 // 25% of whole scroll width
-      if (direction === 'right') {
-        if (triggerList.scrollLeft + scrollAmount <= scrollWidth) {
-          triggerList.scroll({
-            left: triggerList.scrollLeft + scrollAmount,
-            behavior: 'smooth'
-          })
-        }
-      } else {
-        triggerList.scroll({
-          left:
-            triggerList.scrollLeft - scrollAmount > 0
-              ? triggerList.scrollLeft - scrollAmount
-              : 0,
-          behavior: 'smooth'
-        })
-      }
-
-      // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
-      setTimeout(() => {
-        const { scrollWidth, scrollLeft, offsetWidth } = triggerList
-        if (scrollLeft === 0) {
-          setShowLeftScroller(false)
-          setShowRightScroller(true)
-        } else if (scrollLeft + offsetWidth === scrollWidth) {
-          setShowRightScroller(false)
-          setShowLeftScroller(true)
-        } else {
-          setShowLeftScroller(true)
-          setShowRightScroller(true)
-        }
-      }, 300)
-    }
-  }, [])
-
-  useEffect(() => {
-    const triggerList = triggerListRef.current
-    if (triggerList) {
-      const { offsetWidth, scrollWidth } = triggerList
-
-      const shouldShowScroller = scrollWidth > offsetWidth
-      if (shouldShowScroller) {
-        setShowRightScroller(true)
-      }
-    }
-  }, [])
-
-  const showScroller = showLeftScroller || showRightScroller
-
-  return showScroller || enableTabScrolling ? (
-    <Flex css={{ position: 'relative' }}>
-      {showLeftScroller && (
-        <StyledActionIcon
-          size="lg"
-          label="scroll-left"
-          onClick={() => scrollTriggerListTo('left')}
-          css={{ left: 0 }}
-        >
-          <Icon is={ChevronLeft} size="lg" />
-        </StyledActionIcon>
-      )}
-      <StyledTriggerList
-        {...rest}
-        ref={triggerListRef}
-        css={{
-          ...css,
-          width: '100%',
-          overflowX: 'auto',
-          '&::-webkit-scrollbar': { display: 'none' }
-        }}
-      />
-      {showRightScroller && (
-        <StyledActionIcon
-          size="lg"
-          label="scroll-right"
-          onClick={() => scrollTriggerListTo('right')}
-          css={{ right: 0 }}
-        >
-          <Icon is={ChevronRight} size="lg" />
-        </StyledActionIcon>
-      )}
-    </Flex>
-  ) : (
-    <StyledTriggerList css={css} {...rest} ref={triggerListRef} />
-  )
-}
-
 export const Tabs: React.FC<TabsProps> & {
   TriggerList: typeof TriggerListWrapper
   Trigger: typeof TabTrigger
   Content: typeof StyledTabContent
-} = ({ children, ...remainingProps }) => (
-  <StyledRoot {...remainingProps}>{children}</StyledRoot>
+} = ({ appearance = 'light', ...remainingProps }) => (
+  <StyledRoot appearance={appearance} {...remainingProps} />
 )
 
 Tabs.TriggerList = TriggerListWrapper

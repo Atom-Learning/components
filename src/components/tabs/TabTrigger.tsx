@@ -4,24 +4,13 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
-  color: '$secondary',
+  textTransform: 'uppercase',
   cursor: 'pointer',
   flexShrink: 0,
   fontFamily: '$body',
   p: '$4',
   userSelect: 'none',
-  '&:hover': {
-    color: '$primary'
-  },
-  '&[data-disabled],&[data-disabled]:hover': {
-    color: '$tonal300',
-    cursor: 'default'
-  },
-  '&[data-state="active"]': {
-    color: '$primary',
-    fontWeight: 'bold',
-    boxShadow: 'inset 0 -3px 0 0 currentColor'
-  }
+  transition: '0.5s'
 })
 
 type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {

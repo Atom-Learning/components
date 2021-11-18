@@ -2,41 +2,28 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-fixGjY {
+  .c-fkcdpq {
     display: flex;
     flex-direction: column;
+    padding-top: var(--space-4);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
   }
 
-  .c-MQgzr {
+  .c-bVBcpu {
     flex-shrink: 0;
     display: flex;
-    border-bottom: 1px solid var(--colors-primaryDark);
   }
 
-  .c-hUDFHn {
-    color: var(--colors-secondary);
+  .c-kUWTIa {
+    text-transform: uppercase;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
     padding: var(--space-4);
     -webkit-user-select: none;
     user-select: none;
-  }
-
-  .c-hUDFHn:hover {
-    color: var(--colors-primary);
-  }
-
-  .c-hUDFHn[data-disabled],
-  .c-hUDFHn[data-disabled]:hover {
-    color: var(--colors-tonal300);
-    cursor: default;
-  }
-
-  .c-hUDFHn[data-state="active"] {
-    color: var(--colors-primary);
-    font-weight: bold;
-    box-shadow: inset 0 -3px 0 0 currentColor;
+    transition: 0.5s;
   }
 
   .c-eGaVeY {
@@ -44,14 +31,67 @@ exports[`Tabs component renders 1`] = `
   }
 }
 
+@media  {
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"] {
+    background: white;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-state="active"] {
+    color: var(--colors-primary);
+    font-weight: 600;
+    box-shadow: inset 0 -2px 0 0 currentColor;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-state="inactive"] {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:hover {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.1);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:active {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.2);
+    box-shadow: none;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:focus {
+    color: var(--colors-primary);
+    box-shadow: inset 0 0 0 2px currentColor;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-disabled],
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-disabled]:hover {
+    color: var(--colors-tonal200);
+    cursor: default;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tabpanel"] {
+    background: white;
+    color: var(--colors-textForeground);
+    font-family: var(--fonts-body);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tablist"] {
+    border-bottom: 1px solid var(--colors-primaryDark);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light button[role="scrollbar"] {
+    background: white !important;
+    opacity: 0.8;
+  }
+}
+
 <div>
   <div
-    class="c-fixGjY"
+    class="c-fkcdpq c-fkcdpq-fGxsFx-appearance-light"
     data-orientation="horizontal"
   >
     <div
       aria-orientation="horizontal"
-      class="c-MQgzr"
+      class="c-bVBcpu"
       data-orientation="horizontal"
       dir="ltr"
       role="tablist"
@@ -61,7 +101,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-hUDFHn"
+        class="c-kUWTIa"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -74,7 +114,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-hUDFHn"
+        class="c-kUWTIa"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -112,41 +152,28 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-fixGjY {
+  .c-fkcdpq {
     display: flex;
     flex-direction: column;
+    padding-top: var(--space-4);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
   }
 
-  .c-MQgzr {
+  .c-bVBcpu {
     flex-shrink: 0;
     display: flex;
-    border-bottom: 1px solid var(--colors-primaryDark);
   }
 
-  .c-hUDFHn {
-    color: var(--colors-secondary);
+  .c-kUWTIa {
+    text-transform: uppercase;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
     padding: var(--space-4);
     -webkit-user-select: none;
     user-select: none;
-  }
-
-  .c-hUDFHn:hover {
-    color: var(--colors-primary);
-  }
-
-  .c-hUDFHn[data-disabled],
-  .c-hUDFHn[data-disabled]:hover {
-    color: var(--colors-tonal300);
-    cursor: default;
-  }
-
-  .c-hUDFHn[data-state="active"] {
-    color: var(--colors-primary);
-    font-weight: bold;
-    box-shadow: inset 0 -3px 0 0 currentColor;
+    transition: 0.5s;
   }
 
   .c-eGaVeY {
@@ -159,23 +186,76 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"] {
+    background: white;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-state="active"] {
+    color: var(--colors-primary);
+    font-weight: 600;
+    box-shadow: inset 0 -2px 0 0 currentColor;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-state="inactive"] {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:hover {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.1);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:active {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.2);
+    box-shadow: none;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"]:focus {
+    color: var(--colors-primary);
+    box-shadow: inset 0 0 0 2px currentColor;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-disabled],
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tab"][data-disabled]:hover {
+    color: var(--colors-tonal200);
+    cursor: default;
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tabpanel"] {
+    background: white;
+    color: var(--colors-textForeground);
+    font-family: var(--fonts-body);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light div[role="tablist"] {
+    border-bottom: 1px solid var(--colors-primaryDark);
+  }
+
+  .c-fkcdpq-fGxsFx-appearance-light button[role="scrollbar"] {
+    background: white !important;
+    opacity: 0.8;
+  }
+}
+
+@media  {
   .c-dhzjXW-icmpvrW-css {
     position: relative;
   }
 
-  .c-MQgzr-ifwuxZe-css {
+  .c-bVBcpu-ifwuxZe-css {
     width: 100%;
     overflow-x: auto;
   }
 
-  .c-MQgzr-ifwuxZe-css::-webkit-scrollbar {
+  .c-bVBcpu-ifwuxZe-css::-webkit-scrollbar {
     display: none;
   }
 }
 
 <div>
   <div
-    class="c-fixGjY"
+    class="c-fkcdpq c-fkcdpq-fGxsFx-appearance-light"
     data-orientation="horizontal"
   >
     <div
@@ -183,7 +263,7 @@ exports[`Tabs component renders mobile view 1`] = `
     >
       <div
         aria-orientation="horizontal"
-        class="c-MQgzr c-MQgzr-ifwuxZe-css"
+        class="c-bVBcpu c-bVBcpu-ifwuxZe-css"
         data-orientation="horizontal"
         dir="ltr"
         role="tablist"
@@ -193,7 +273,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab1"
           aria-selected="true"
-          class="c-hUDFHn"
+          class="c-kUWTIa"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -206,7 +286,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab2"
           aria-selected="false"
-          class="c-hUDFHn"
+          class="c-kUWTIa"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
