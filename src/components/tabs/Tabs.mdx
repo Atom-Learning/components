@@ -27,10 +27,17 @@ The component provides a set of default styles, which can be overwritten by usin
 </Tabs>
 ```
 
-It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+It takes a `defaultValue` prop that should match one of the triggers' `value` prop.
 
 ```tsx
 <Tabs defaultValue="tab1">
+```
+
+It also takes a `appearance` prop that should either be "light" or "dark".
+
+```tsx
+<Tabs appearance="light"></Tabs>
+<Tabs appearance="dark"></Tabs>
 ```
 
 ## Tabs.TriggerList
