@@ -118,9 +118,7 @@ const TriggerListWrapper: React.FC<ListProps> = ({
           ...css,
           width: '100%',
           overflowX: 'auto',
-          '&::-webkit-scrollbar': { display: 'none' },
-          'div:first-child': { pl: '$6' },
-          'div:last-child': { pr: '$6' }
+          '&::-webkit-scrollbar': { display: 'none' }
         }}
       />
       {showRightScroller && (

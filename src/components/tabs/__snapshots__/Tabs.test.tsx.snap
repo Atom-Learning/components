@@ -163,21 +163,13 @@ exports[`Tabs component renders mobile view 1`] = `
     position: relative;
   }
 
-  .c-MQgzr-ifTJoPk-css {
+  .c-MQgzr-ifwuxZe-css {
     width: 100%;
     overflow-x: auto;
   }
 
-  .c-MQgzr-ifTJoPk-css::-webkit-scrollbar {
+  .c-MQgzr-ifwuxZe-css::-webkit-scrollbar {
     display: none;
-  }
-
-  .c-MQgzr-ifTJoPk-css div:first-child {
-    padding-left: var(--space-6);
-  }
-
-  .c-MQgzr-ifTJoPk-css div:last-child {
-    padding-right: var(--space-6);
   }
 }
 
@@ -191,7 +183,7 @@ exports[`Tabs component renders mobile view 1`] = `
     >
       <div
         aria-orientation="horizontal"
-        class="c-MQgzr c-MQgzr-ifTJoPk-css"
+        class="c-MQgzr c-MQgzr-ifwuxZe-css"
         data-orientation="horizontal"
         dir="ltr"
         role="tablist"
