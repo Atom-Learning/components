@@ -35,19 +35,19 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
     if (triggerList) {
       const { scrollWidth, scrollLeft } = triggerList
       const scrollAmount = Math.round(scrollWidth / 4) // 25% of whole scroll width
+      let left = scrollLeft
       if (direction === 'right') {
-        if (triggerList.scrollLeft + scrollAmount <= scrollWidth) {
-          triggerList.scroll({
-            left: triggerList.scrollLeft + scrollAmount,
-            behavior: 'smooth'
-          })
-        }
+        const newScrollAmount = triggerList.scrollLeft + scrollAmount
+        left = newScrollAmount <= scrollWidth ? newScrollAmount : scrollLeft
       } else {
-        triggerList.scroll({
-          left: scrollLeft - scrollAmount > 0 ? scrollLeft - scrollAmount : 0,
-          behavior: 'smooth'
-        })
+        const newScrollAmount = scrollLeft - scrollAmount
+        left = newScrollAmount > 0 ? newScrollAmount : 0
       }
+
+      triggerList.scroll({
+        left,
+        behavior: 'smooth'
+      })
 
       // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
       setTimeout(() => {
