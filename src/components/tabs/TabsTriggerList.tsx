@@ -18,7 +18,7 @@ const fadedPrimaryDark = opacify(-0.2, theme.colors.primaryDark.value)
 
 const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
-  top: 'calc(50% - 20px)',
+  top: 'calc(50% - ($4 + $1))',
   variants: {
     theme: {
       light: {
@@ -114,53 +114,53 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   const showScroller =
     showLeftScroller || showRightScroller || enableTabScrolling
 
-  if (!showScroller) {
+  if (showScroller) {
     return (
-      <StyledTriggerList css={css} theme={theme} {...rest} ref={triggerListRef}>
-        {passPropsToChildren(children, { theme }, [TabTrigger])}
-      </StyledTriggerList>
+      <Flex css={{ position: 'relative' }}>
+        {showLeftScroller && (
+          <StyledChevronIcon
+            size="lg"
+            role="scrollbar"
+            label="scroll-left"
+            theme={theme}
+            onClick={() => scrollTriggerListTo('left')}
+            css={{ left: 0 }}
+          >
+            <Icon is={ChevronLeft} size="lg" />
+          </StyledChevronIcon>
+        )}
+        <StyledTriggerList
+          {...rest}
+          ref={triggerListRef}
+          theme={theme}
+          css={{
+            ...css,
+            width: '100%',
+            overflowX: 'auto',
+            '&::-webkit-scrollbar': { display: 'none' }
+          }}
+        >
+          {passPropsToChildren(children, { theme }, [TabTrigger])}
+        </StyledTriggerList>
+        {showRightScroller && (
+          <StyledChevronIcon
+            size="lg"
+            role="scrollbar"
+            label="scroll-right"
+            theme={theme}
+            onClick={() => scrollTriggerListTo('right')}
+            css={{ right: 0 }}
+          >
+            <Icon is={ChevronRight} size="lg" />
+          </StyledChevronIcon>
+        )}
+      </Flex>
     )
   }
 
   return (
-    <Flex css={{ position: 'relative' }}>
-      {showLeftScroller && (
-        <StyledChevronIcon
-          size="lg"
-          role="scrollbar"
-          label="scroll-left"
-          theme={theme}
-          onClick={() => scrollTriggerListTo('left')}
-          css={{ left: 0 }}
-        >
-          <Icon is={ChevronLeft} size="lg" />
-        </StyledChevronIcon>
-      )}
-      <StyledTriggerList
-        {...rest}
-        ref={triggerListRef}
-        theme={theme}
-        css={{
-          ...css,
-          width: '100%',
-          overflowX: 'auto',
-          '&::-webkit-scrollbar': { display: 'none' }
-        }}
-      >
-        {passPropsToChildren(children, { theme }, [TabTrigger])}
-      </StyledTriggerList>
-      {showRightScroller && (
-        <StyledChevronIcon
-          size="lg"
-          role="scrollbar"
-          label="scroll-right"
-          theme={theme}
-          onClick={() => scrollTriggerListTo('right')}
-          css={{ right: 0 }}
-        >
-          <Icon is={ChevronRight} size="lg" />
-        </StyledChevronIcon>
-      )}
-    </Flex>
+    <StyledTriggerList css={css} theme={theme} {...rest} ref={triggerListRef}>
+      {passPropsToChildren(children, { theme }, [TabTrigger])}
+    </StyledTriggerList>
   )
 }
