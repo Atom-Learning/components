@@ -22,14 +22,15 @@ const StyledChevronIcon = styled(ActionIcon, {
   variants: {
     theme: {
       light: {
-        bg: `${fadedWhite} !important`
+        '&[role="scrollbar"], &[role="scrollbar"]:not(:disabled):hover, &[role="scrollbar"]:not(:disabled):focus, &[role="scrollbar"]:not(:disabled):active': {
+          bg: fadedWhite,
+          color: 'currentColor'
+        }
       },
       dark: {
-        bg: `${fadedPrimaryDark} !important`,
-        color: 'white !important',
-        '&:focus': {
-          bg: `${fadedPrimaryDark} !important`,
-          color: 'white'
+        '&[role="scrollbar"], &[role="scrollbar"]:not(:disabled):hover, &[role="scrollbar"]:not(:disabled):focus, &[role="scrollbar"]:not(:disabled):active': {
+          bg: fadedPrimaryDark,
+          color: 'currentColor'
         }
       }
     }
