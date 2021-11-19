@@ -10,7 +10,7 @@ const StyledTabTrigger = styled(Trigger, {
   fontFamily: '$body',
   p: '$4',
   userSelect: 'none',
-  transition: '0.5s'
+  transition: '0.3s'
 })
 
 type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {

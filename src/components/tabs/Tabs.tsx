@@ -15,7 +15,7 @@ const StyledRoot = styled(Root, {
   pt: '$4',
   px: '$2',
   variants: {
-    appearance: {
+    theme: {
       light: {
         'div[role="tab"]': {
           bg: 'white',
@@ -108,8 +108,8 @@ export const Tabs: React.FC<TabsProps> & {
   TriggerList: typeof TriggerListWrapper
   Trigger: typeof TabTrigger
   Content: typeof StyledTabContent
-} = ({ appearance = 'light', ...remainingProps }) => (
-  <StyledRoot appearance={appearance} {...remainingProps} />
+} = ({ theme = 'light', ...remainingProps }) => (
+  <StyledRoot theme={theme} {...remainingProps} />
 )
 
 Tabs.TriggerList = TriggerListWrapper
