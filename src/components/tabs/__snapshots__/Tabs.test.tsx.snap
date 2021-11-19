@@ -39,38 +39,33 @@ exports[`Tabs component renders 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-ehnQBI-uKSRl-theme-light {
+  .c-ehnQBI-kLQAjc-theme-light {
     background: white;
   }
 
-  .c-ehnQBI-uKSRl-theme-light[data-state="active"] {
+  .c-ehnQBI-kLQAjc-theme-light[data-state="active"] {
     color: var(--colors-primary);
     text-shadow: 0px 0px 1px currentColor;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-ehnQBI-uKSRl-theme-light[data-state="inactive"] {
+  .c-ehnQBI-kLQAjc-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-ehnQBI-uKSRl-theme-light:hover {
+  .c-ehnQBI-kLQAjc-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-ehnQBI-uKSRl-theme-light:active {
+  .c-ehnQBI-kLQAjc-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-ehnQBI-uKSRl-theme-light:focus {
-    color: var(--colors-primary);
-    box-shadow: inset 0 0 0 2px currentColor;
-  }
-
-  .c-ehnQBI-uKSRl-theme-light[data-disabled],
-  .c-ehnQBI-uKSRl-theme-light[data-disabled]:hover {
+  .c-ehnQBI-kLQAjc-theme-light[data-disabled],
+  .c-ehnQBI-kLQAjc-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: default;
   }
@@ -98,7 +93,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-ehnQBI c-ehnQBI-uKSRl-theme-light"
+        class="c-ehnQBI c-ehnQBI-kLQAjc-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -111,7 +106,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-ehnQBI c-ehnQBI-uKSRl-theme-light"
+        class="c-ehnQBI c-ehnQBI-kLQAjc-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -190,38 +185,33 @@ exports[`Tabs component renders mobile view 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-ehnQBI-uKSRl-theme-light {
+  .c-ehnQBI-kLQAjc-theme-light {
     background: white;
   }
 
-  .c-ehnQBI-uKSRl-theme-light[data-state="active"] {
+  .c-ehnQBI-kLQAjc-theme-light[data-state="active"] {
     color: var(--colors-primary);
     text-shadow: 0px 0px 1px currentColor;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-ehnQBI-uKSRl-theme-light[data-state="inactive"] {
+  .c-ehnQBI-kLQAjc-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-ehnQBI-uKSRl-theme-light:hover {
+  .c-ehnQBI-kLQAjc-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-ehnQBI-uKSRl-theme-light:active {
+  .c-ehnQBI-kLQAjc-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-ehnQBI-uKSRl-theme-light:focus {
-    color: var(--colors-primary);
-    box-shadow: inset 0 0 0 2px currentColor;
-  }
-
-  .c-ehnQBI-uKSRl-theme-light[data-disabled],
-  .c-ehnQBI-uKSRl-theme-light[data-disabled]:hover {
+  .c-ehnQBI-kLQAjc-theme-light[data-disabled],
+  .c-ehnQBI-kLQAjc-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: default;
   }
@@ -267,7 +257,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab1"
           aria-selected="true"
-          class="c-ehnQBI c-ehnQBI-uKSRl-theme-light"
+          class="c-ehnQBI c-ehnQBI-kLQAjc-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -280,7 +270,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab2"
           aria-selected="false"
-          class="c-ehnQBI c-ehnQBI-uKSRl-theme-light"
+          class="c-ehnQBI c-ehnQBI-kLQAjc-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"

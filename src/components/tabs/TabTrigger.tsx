@@ -24,18 +24,14 @@ const StyledTabTrigger = styled(Trigger, {
         '&[data-state="inactive"]': {
           color: '$tonal500'
         },
-        '&:hover': {
+        '&:not([data-disabled]):hover': {
           color: '$primary',
           bg: opacify(-0.9, theme.colors.primary.value)
         },
-        '&:active': {
+        '&:not([data-disabled]):active': {
           color: '$primary',
           bg: opacify(-0.8, theme.colors.primary.value),
           boxShadow: 'none'
-        },
-        '&:focus': {
-          color: '$primary',
-          boxShadow: 'inset 0 0 0 2px currentColor'
         },
         '&[data-disabled],&[data-disabled]:hover': {
           color: '$tonal200',
@@ -48,10 +44,10 @@ const StyledTabTrigger = styled(Trigger, {
           textShadow: '0px 0px 1px currentColor',
           boxShadow: 'inset 0 -2px 0 0 currentColor'
         },
-        '&:hover': {
+        '&:not([data-disabled]):hover': {
           bg: opacify(-0.8, 'white')
         },
-        '&:active': {
+        '&:not([data-disabled]):active': {
           bg: opacify(-0.7, 'white'),
           boxShadow: 'none'
         },
