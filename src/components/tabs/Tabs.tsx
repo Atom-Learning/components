@@ -21,7 +21,7 @@ const StyledRoot = styled(Root, {
           bg: 'white',
           '&[data-state="active"]': {
             color: '$primary',
-            fontWeight: 600,
+            textShadow: '0px 0px 1px currentColor',
             boxShadow: 'inset 0 -2px 0 0 currentColor'
           },
           '&[data-state="inactive"]': {
@@ -64,7 +64,7 @@ const StyledRoot = styled(Root, {
         'div[role="tab"]': {
           color: 'white',
           '&[data-state="active"]': {
-            fontWeight: 600,
+            textShadow: '0px 0px 1px currentColor',
             boxShadow: 'inset 0 -2px 0 0 currentColor'
           },
           '&:hover': {
