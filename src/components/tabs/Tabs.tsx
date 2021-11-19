@@ -14,7 +14,6 @@ const StyledRoot = styled(Root, {
   display: 'flex',
   flexDirection: 'column',
   pt: '$4',
-  px: '$2',
   variants: {
     theme: {
       light: {

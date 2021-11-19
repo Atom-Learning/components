@@ -2,12 +2,10 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-fkcdpq {
+  .c-caRXJy {
     display: flex;
     flex-direction: column;
     padding-top: var(--space-4);
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
   }
 
   .c-bVBcpu {
@@ -32,7 +30,7 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-fkcdpq-eOLnUW-theme-light {
+  .c-caRXJy-eOLnUW-theme-light {
     background: white;
     color: var(--colors-primary);
   }
@@ -85,7 +83,7 @@ exports[`Tabs component renders 1`] = `
 
 <div>
   <div
-    class="c-fkcdpq c-fkcdpq-eOLnUW-theme-light"
+    class="c-caRXJy c-caRXJy-eOLnUW-theme-light"
     data-orientation="horizontal"
   >
     <div
@@ -151,12 +149,10 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-fkcdpq {
+  .c-caRXJy {
     display: flex;
     flex-direction: column;
     padding-top: var(--space-4);
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
   }
 
   .c-bVBcpu {
@@ -185,7 +181,7 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-fkcdpq-eOLnUW-theme-light {
+  .c-caRXJy-eOLnUW-theme-light {
     background: white;
     color: var(--colors-primary);
   }
@@ -253,7 +249,7 @@ exports[`Tabs component renders mobile view 1`] = `
 
 <div>
   <div
-    class="c-fkcdpq c-fkcdpq-eOLnUW-theme-light"
+    class="c-caRXJy c-caRXJy-eOLnUW-theme-light"
     data-orientation="horizontal"
   >
     <div
