@@ -1,8 +1,9 @@
 import { List } from '@radix-ui/react-tabs'
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
+import { opacify } from 'polished'
 
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { ActionIcon } from '~/components/action-icon'
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
@@ -12,9 +13,27 @@ interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   enableTabScrolling?: boolean
 }
 
+const fadedWhite = opacify(-0.2, 'white')
+const fadedPrimaryDark = opacify(-0.2, theme.colors.primaryDark.value)
+
 const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
-  top: 'calc(50% - 20px)'
+  top: 'calc(50% - 20px)',
+  variants: {
+    theme: {
+      light: {
+        bg: `${fadedWhite} !important`
+      },
+      dark: {
+        bg: `${fadedPrimaryDark} !important`,
+        color: 'white !important',
+        '&:focus': {
+          bg: `${fadedPrimaryDark} !important`,
+          color: 'white'
+        }
+      }
+    }
+  }
 })
 
 const StyledTriggerList = styled(List, {
@@ -22,8 +41,12 @@ const StyledTriggerList = styled(List, {
   display: 'flex',
   variants: {
     theme: {
-      light: {},
-      dark: {}
+      light: {
+        borderBottom: '1px solid $tonal300'
+      },
+      dark: {
+        borderBottom: '1px solid $tonal200'
+      }
     }
   }
 })
@@ -92,7 +115,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
 
   if (!showScroller) {
     return (
-      <StyledTriggerList css={css} {...rest} ref={triggerListRef}>
+      <StyledTriggerList css={css} theme={theme} {...rest} ref={triggerListRef}>
         {passPropsToChildren(children, { theme }, [TabTrigger])}
       </StyledTriggerList>
     )
@@ -105,6 +128,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           size="lg"
           role="scrollbar"
           label="scroll-left"
+          theme={theme}
           onClick={() => scrollTriggerListTo('left')}
           css={{ left: 0 }}
         >
@@ -114,6 +138,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
       <StyledTriggerList
         {...rest}
         ref={triggerListRef}
+        theme={theme}
         css={{
           ...css,
           width: '100%',
@@ -128,6 +153,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           size="lg"
           role="scrollbar"
           label="scroll-right"
+          theme={theme}
           onClick={() => scrollTriggerListTo('right')}
           css={{ right: 0 }}
         >
