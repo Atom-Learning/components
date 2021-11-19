@@ -93,7 +93,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "glob": "^7.1.6",
     "husky": "^4.3.8",
-    "jest": "^26.6.3",
+    "jest": "^27.0.6",
     "jest-axe": "^4.1.0",
     "jest-dom": "^4.0.0",
     "lint-staged": "^10.5.3",
