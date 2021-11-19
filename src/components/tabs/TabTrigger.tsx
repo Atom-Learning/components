@@ -10,21 +10,29 @@ const StyledTabTrigger = styled(Trigger, {
   fontFamily: '$body',
   p: '$4',
   userSelect: 'none',
-  transition: '0.3s'
+  transition: '0.3s',
+  variants: {
+    theme: {
+      light: {},
+      dark: {}
+    }
+  }
 })
 
-type TabTriggerProps = React.ComponentProps<typeof StyledTabTrigger> & {
+interface TabTriggerProps
+  extends React.ComponentProps<typeof StyledTabTrigger> {
   value: string
   disabled?: boolean
 }
 
 export const TabTrigger: React.FC<TabTriggerProps> = ({
   children,
+  theme,
   disabled = false,
   css,
   ...otherProps
 }) => (
-  <StyledTabTrigger css={css} disabled={disabled} {...otherProps}>
+  <StyledTabTrigger css={css} disabled={disabled} theme={theme} {...otherProps}>
     {children}
   </StyledTabTrigger>
 )

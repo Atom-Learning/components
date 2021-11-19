@@ -6,8 +6,9 @@ import { styled } from '~/stitches'
 import { ActionIcon } from '~/components/action-icon'
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
-
-type ListProps = React.ComponentProps<typeof StyledTriggerList> & {
+import { TabTrigger } from './TabTrigger'
+import { passPropsToChildren } from './utils'
+interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   enableTabScrolling?: boolean
 }
 
@@ -18,11 +19,19 @@ const StyledChevronIcon = styled(ActionIcon, {
 
 const StyledTriggerList = styled(List, {
   flexShrink: 0,
-  display: 'flex'
+  display: 'flex',
+  variants: {
+    theme: {
+      light: {},
+      dark: {}
+    }
+  }
 })
 
 export const TriggerListWrapper: React.FC<ListProps> = ({
   css,
+  children,
+  theme,
   enableTabScrolling,
   ...rest
 }) => {
@@ -82,7 +91,11 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
     showLeftScroller || showRightScroller || enableTabScrolling
 
   if (!showScroller) {
-    return <StyledTriggerList css={css} {...rest} ref={triggerListRef} />
+    return (
+      <StyledTriggerList css={css} {...rest} ref={triggerListRef}>
+        {passPropsToChildren(children, { theme }, [TabTrigger])}
+      </StyledTriggerList>
+    )
   }
 
   return (
@@ -107,7 +120,9 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           overflowX: 'auto',
           '&::-webkit-scrollbar': { display: 'none' }
         }}
-      />
+      >
+        {passPropsToChildren(children, { theme }, [TabTrigger])}
+      </StyledTriggerList>
       {showRightScroller && (
         <StyledChevronIcon
           size="lg"
