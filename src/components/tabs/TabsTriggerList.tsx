@@ -11,7 +11,7 @@ type ListProps = React.ComponentProps<typeof StyledTriggerList> & {
   enableTabScrolling?: boolean
 }
 
-const StyledActionIcon = styled(ActionIcon, {
+const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
   top: 'calc(50% - 20px)'
 })
@@ -88,7 +88,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   return (
     <Flex css={{ position: 'relative' }}>
       {showLeftScroller && (
-        <StyledActionIcon
+        <StyledChevronIcon
           size="lg"
           role="scrollbar"
           label="scroll-left"
@@ -96,7 +96,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           css={{ left: 0 }}
         >
           <Icon is={ChevronLeft} size="lg" />
-        </StyledActionIcon>
+        </StyledChevronIcon>
       )}
       <StyledTriggerList
         {...rest}
@@ -109,7 +109,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         }}
       />
       {showRightScroller && (
-        <StyledActionIcon
+        <StyledChevronIcon
           size="lg"
           role="scrollbar"
           label="scroll-right"
@@ -117,7 +117,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           css={{ right: 0 }}
         >
           <Icon is={ChevronRight} size="lg" />
-        </StyledActionIcon>
+        </StyledChevronIcon>
       )}
     </Flex>
   )
