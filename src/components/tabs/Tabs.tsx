@@ -54,7 +54,7 @@ const StyledRoot = styled(Root, {
           borderBottom: '1px solid $primaryDark'
         },
         'button[role="scrollbar"]': {
-          bg: 'white !important',
+          bg: 'white',
           opacity: 0.8
         }
       },
@@ -90,10 +90,10 @@ const StyledRoot = styled(Root, {
         'div[role="tablist"]': {
           borderBottom: '1px solid white'
         },
-        'button[role="scrollbar"]': {
-          bg: '$primaryDark !important',
+        'button[role="scrollbar"], button[role="scrollbar"]:focus': {
+          bg: '$primaryDark',
           opacity: 0.8,
-          color: 'white !important'
+          color: 'white'
         }
       }
     }
