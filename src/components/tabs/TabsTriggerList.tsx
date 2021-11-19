@@ -78,9 +78,14 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
     }
   }, [])
 
-  const showScroller = showLeftScroller || showRightScroller
+  const showScroller =
+    showLeftScroller || showRightScroller || enableTabScrolling
 
-  return showScroller || enableTabScrolling ? (
+  if (!showScroller) {
+    return <StyledTriggerList css={css} {...rest} ref={triggerListRef} />
+  }
+
+  return (
     <Flex css={{ position: 'relative' }}>
       {showLeftScroller && (
         <StyledActionIcon
@@ -115,7 +120,5 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         </StyledActionIcon>
       )}
     </Flex>
-  ) : (
-    <StyledTriggerList css={css} {...rest} ref={triggerListRef} />
   )
 }
