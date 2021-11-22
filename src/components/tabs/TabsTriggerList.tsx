@@ -146,7 +146,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           <StyledChevronIcon
             size="lg"
             role="scrollbar"
-            label="scroll-right"
+            label="Scroll right"
             theme={theme}
             onClick={() => scrollTriggerListTo('right')}
             css={{ right: 0 }}
