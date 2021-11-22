@@ -2,6 +2,7 @@ import { List } from '@radix-ui/react-tabs'
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { opacify } from 'polished'
+import { debounce } from 'lodash'
 
 import { styled, theme } from '~/stitches'
 import { ActionIcon } from '~/components/action-icon'
@@ -40,6 +41,10 @@ const StyledChevronIcon = styled(ActionIcon, {
 const StyledTriggerList = styled(List, {
   flexShrink: 0,
   display: 'flex',
+  width: '100%',
+  overflowX: 'auto',
+  '&::-webkit-scrollbar': { display: 'none' },
+  scrollbarWidth: 'none',
   variants: {
     theme: {
       light: {
@@ -62,6 +67,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   const triggerListRef = useRef<HTMLDivElement>(null)
   const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
   const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth)
 
   const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
     const triggerList = triggerListRef.current
@@ -95,7 +101,18 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           setShowLeftScroller(true)
           setShowRightScroller(true)
         }
-      }, 300)
+      }, 500)
+    }
+  }, [])
+
+  useEffect(() => {
+    const onResize = debounce(() => {
+      setScreenWidth(window.innerWidth)
+    }, 500)
+    window.addEventListener('resize', onResize)
+
+    return () => {
+      window.removeEventListener('resize', onResize)
     }
   }, [])
 
@@ -105,11 +122,15 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
       const { offsetWidth, scrollWidth } = triggerList
 
       const shouldShowScroller = scrollWidth > offsetWidth
-      if (shouldShowScroller) {
-        setShowRightScroller(true)
-      }
+
+      // Scroll to left on resize, hide left scroll button and then decide if right scroll button should be visible or not
+      triggerList.scroll?.({
+        left: 0
+      })
+      setShowLeftScroller(false)
+      setShowRightScroller(shouldShowScroller)
     }
-  }, [])
+  }, [screenWidth])
 
   const showScroller =
     showLeftScroller || showRightScroller || enableTabScrolling
@@ -121,7 +142,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           <StyledChevronIcon
             size="lg"
             role="scrollbar"
-            label="scroll-left"
+            label="Scroll Left"
             theme={theme}
             onClick={() => scrollTriggerListTo('left')}
             css={{ left: 0 }}
@@ -129,17 +150,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
             <Icon is={ChevronLeft} size="lg" />
           </StyledChevronIcon>
         )}
-        <StyledTriggerList
-          {...rest}
-          ref={triggerListRef}
-          theme={theme}
-          css={{
-            ...css,
-            width: '100%',
-            overflowX: 'auto',
-            '&::-webkit-scrollbar': { display: 'none' }
-          }}
-        >
+        <StyledTriggerList {...rest} ref={triggerListRef} theme={theme}>
           {passPropsToChildren(children, { theme }, [TabTrigger])}
         </StyledTriggerList>
         {showRightScroller && (

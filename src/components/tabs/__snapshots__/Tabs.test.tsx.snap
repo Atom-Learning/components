@@ -8,9 +8,19 @@ exports[`Tabs component renders 1`] = `
     padding-top: var(--space-4);
   }
 
-  .c-bVBcpu {
+  .c-gZZKZD {
     flex-shrink: 0;
     display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
   }
 
   .c-ehnQBI {
@@ -36,7 +46,7 @@ exports[`Tabs component renders 1`] = `
     color: var(--colors-primary);
   }
 
-  .c-bVBcpu-eFavRf-theme-light {
+  .c-gZZKZD-eFavRf-theme-light {
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
@@ -83,7 +93,7 @@ exports[`Tabs component renders 1`] = `
   >
     <div
       aria-orientation="horizontal"
-      class="c-bVBcpu c-bVBcpu-eFavRf-theme-light"
+      class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
       data-orientation="horizontal"
       dir="ltr"
       role="tablist"
@@ -150,9 +160,19 @@ exports[`Tabs component renders mobile view 1`] = `
     padding-top: var(--space-4);
   }
 
-  .c-bVBcpu {
+  .c-gZZKZD {
     flex-shrink: 0;
     display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
   }
 
   .c-ehnQBI {
@@ -182,7 +202,7 @@ exports[`Tabs component renders mobile view 1`] = `
     color: var(--colors-primary);
   }
 
-  .c-bVBcpu-eFavRf-theme-light {
+  .c-gZZKZD-eFavRf-theme-light {
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
@@ -226,15 +246,6 @@ exports[`Tabs component renders mobile view 1`] = `
   .c-dhzjXW-icmpvrW-css {
     position: relative;
   }
-
-  .c-bVBcpu-ifwuxZe-css {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .c-bVBcpu-ifwuxZe-css::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 <div>
@@ -247,7 +258,7 @@ exports[`Tabs component renders mobile view 1`] = `
     >
       <div
         aria-orientation="horizontal"
-        class="c-bVBcpu c-bVBcpu-eFavRf-theme-light c-bVBcpu-ifwuxZe-css"
+        class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
         data-orientation="horizontal"
         dir="ltr"
         role="tablist"
