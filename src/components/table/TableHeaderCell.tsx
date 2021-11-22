@@ -1,7 +1,6 @@
 import { styled } from '~/stitches'
 
 export const TableHeaderCell = styled('th', {
-  bg: '$primaryDark',
   color: 'white',
   fontFamily: '$body',
   fontWeight: 600,

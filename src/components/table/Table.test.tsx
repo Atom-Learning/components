@@ -54,6 +54,55 @@ describe(`Table component`, () => {
     expect(container).toMatchSnapshot()
   })
 
+  it('renders with no radius', async () => {
+    const { container } = await render(
+      <Table
+        applyRadius="false"
+        css={{ height: '100px', width: '400px', color: '$primary500' }}
+      >
+        <Table.Header>
+          <Table.Row>
+            <Table.HeaderCell>Column A</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
+        <Table.Body>
+          <Table.Row>
+            <Table.Cell>This is text</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+        <Table.Footer>
+          <Table.Row>
+            <Table.Cell>Footer 1</Table.Cell>
+          </Table.Row>
+        </Table.Footer>
+      </Table>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders with a themed header', async () => {
+    const { container } = await render(
+      <Table css={{ height: '100px', width: '400px', color: '$primary500' }}>
+        <Table.Header theme="primary">
+          <Table.Row>
+            <Table.HeaderCell>Column A</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
+        <Table.Body>
+          <Table.Row>
+            <Table.Cell>This is text</Table.Cell>
+          </Table.Row>
+        </Table.Body>
+        <Table.Footer>
+          <Table.Row>
+            <Table.Cell>Footer 1</Table.Cell>
+          </Table.Row>
+        </Table.Footer>
+      </Table>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Table>

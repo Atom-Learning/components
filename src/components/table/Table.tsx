@@ -38,6 +38,18 @@ const StyledTable = styled('table', {
           height: '$5'
         }
       }
+    },
+    applyRadius: {
+      true: {},
+      false: {
+        [`${TableHeaderCell}, ${TableRow}`]: {
+          borderRadius: '0',
+          '&:last-child': {
+            'td:first-child': { borderBottomLeftRadius: '0' },
+            'td:last-child': { borderBottomRightRadius: '0' }
+          }
+        }
+      }
     }
   }
 })
@@ -46,8 +58,11 @@ type TableProps = React.ComponentProps<typeof StyledTable>
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
+  applyRadius = 'true',
   ...rest
-}: TableProps) => <StyledTable size={size} {...rest} />
+}: TableProps) => (
+  <StyledTable size={size} applyRadius={applyRadius} {...rest} />
+)
 
 Table.Body = TableBody
 Table.Cell = TableCell
