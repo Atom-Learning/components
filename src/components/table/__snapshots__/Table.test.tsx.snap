@@ -73,16 +73,15 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-iliYStP-css {
+  .c-cwQMhQ-icnGIKd-css {
     height: 100px;
     width: 400px;
-    color: var(--colors-primary500);
   }
 }
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-dmDtdc-theme-primaryDark"
@@ -204,18 +203,18 @@ exports[`Table component renders with a themed header 1`] = `
     height: var(--sizes-5);
   }
 
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf {
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf {
     border-radius: 0;
   }
 
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF:last-child td:first-child,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf:last-child td:first-child {
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF:last-child td:first-child,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf:last-child td:first-child {
     border-bottom-left-radius: 0;
   }
 
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF:last-child td:last-child,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf:last-child td:last-child {
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF:last-child td:last-child,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf:last-child td:last-child {
     border-bottom-right-radius: 0;
   }
 
@@ -225,167 +224,18 @@ exports[`Table component renders with a themed header 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-iliYStP-css {
+  .c-cwQMhQ-icnGIKd-css {
     height: 100px;
     width: 400px;
-    color: var(--colors-primary500);
   }
 }
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jbaVbo-theme-primary"
-    >
-      <tr
-        class="c-gkKNzf"
-      >
-        <th
-          class="c-gNZPWF"
-        >
-          Column A
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      class="c-PJLV"
-    >
-      <tr
-        class="c-gkKNzf"
-      >
-        <td
-          class="c-dOcJjJ"
-        >
-          This is text
-        </td>
-      </tr>
-    </tbody>
-    <tfoot
-      class="c-PJLV"
-    >
-      <tr
-        class="c-gkKNzf"
-      >
-        <td
-          class="c-dOcJjJ"
-        >
-          Footer 1
-        </td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
-`;
-
-exports[`Table component renders with no radius 1`] = `
-@media  {
-  .c-cwQMhQ {
-    border-collapse: separate;
-    border-spacing: 0;
-    font-family: var(--fonts-sans);
-    font-size: var(--fontSizes-sm);
-    width: 100%;
-  }
-
-  .c-gkKNzf:last-child td:first-child {
-    border-bottom-left-radius: var(--radii-0);
-  }
-
-  .c-gkKNzf:last-child td:last-child {
-    border-bottom-right-radius: var(--radii-0);
-  }
-
-  .c-gNZPWF {
-    color: white;
-    font-family: var(--fonts-body);
-    font-weight: 600;
-    line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  .c-gNZPWF:first-of-type {
-    border-top-left-radius: var(--radii-0);
-  }
-
-  .c-gNZPWF:last-of-type {
-    border-top-right-radius: var(--radii-0);
-  }
-
-  .c-dOcJjJ {
-    border-bottom: 1px solid var(--colors-tonal100);
-    box-sizing: border-box;
-    color: var(--colors-tonal400);
-    font-family: var(--fonts-body);
-    line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
-    text-align: left;
-    vertical-align: middle;
-  }
-
-  .c-dOcJjJ:first-child {
-    font-weight: bold;
-  }
-
-  tr:nth-child(odd) .c-dOcJjJ {
-    background: white;
-  }
-
-  tr:nth-child(even) .c-dOcJjJ {
-    background: var(--colors-tonal50);
-  }
-}
-
-@media  {
-  .c-cwQMhQ-bZDCAE-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bZDCAE-size-md .c-gNZPWF,
-  .c-cwQMhQ-bZDCAE-size-md .c-hYjVQ {
-    height: var(--sizes-4);
-  }
-
-  .c-PJLV-dmDtdc-theme-primaryDark th {
-    background: var(--colors-primaryDark);
-  }
-
-  .c-cwQMhQ-fUfzxR-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-fUfzxR-size-lg .c-gNZPWF,
-  .c-cwQMhQ-fUfzxR-size-lg .c-hYjVQ {
-    height: var(--sizes-5);
-  }
-
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf {
-    border-radius: 0;
-  }
-
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF:last-child td:first-child,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf:last-child td:first-child {
-    border-bottom-left-radius: 0;
-  }
-
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gNZPWF:last-child td:last-child,
-  .c-cwQMhQ-dfUUxG-applyRadius-false .c-gkKNzf:last-child td:last-child {
-    border-bottom-right-radius: 0;
-  }
-}
-
-@media  {
-  .c-cwQMhQ-iliYStP-css {
-    height: 100px;
-    width: 400px;
-    color: var(--colors-primary500);
-  }
-}
-
-<div>
-  <table
-    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-dfUUxG-applyRadius-false c-cwQMhQ-iliYStP-css"
-  >
-    <thead
-      class="c-PJLV c-PJLV-dmDtdc-theme-primaryDark"
     >
       <tr
         class="c-gkKNzf"
@@ -506,16 +356,162 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-iliYStP-css {
+  .c-cwQMhQ-icnGIKd-css {
     height: 100px;
     width: 400px;
-    color: var(--colors-primary500);
   }
 }
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-fUfzxR-size-lg c-cwQMhQ-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-fUfzxR-size-lg c-cwQMhQ-icnGIKd-css"
+  >
+    <thead
+      class="c-PJLV c-PJLV-dmDtdc-theme-primaryDark"
+    >
+      <tr
+        class="c-gkKNzf"
+      >
+        <th
+          class="c-gNZPWF"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV"
+    >
+      <tr
+        class="c-gkKNzf"
+      >
+        <td
+          class="c-dOcJjJ"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="c-PJLV"
+    >
+      <tr
+        class="c-gkKNzf"
+      >
+        <td
+          class="c-dOcJjJ"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
+exports[`Table component renders with square corners 1`] = `
+@media  {
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-gkKNzf:last-child td:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-gkKNzf:last-child td:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF {
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-gNZPWF:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-gNZPWF:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-dOcJjJ {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dOcJjJ {
+    background: var(--colors-tonal50);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-bZDCAE-size-md .c-dOcJjJ,
+  .c-cwQMhQ-bZDCAE-size-md .c-gNZPWF,
+  .c-cwQMhQ-bZDCAE-size-md .c-hYjVQ {
+    height: var(--sizes-4);
+  }
+
+  .c-PJLV-dmDtdc-theme-primaryDark th {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-cwQMhQ-fUfzxR-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-fUfzxR-size-lg .c-gNZPWF,
+  .c-cwQMhQ-fUfzxR-size-lg .c-hYjVQ {
+    height: var(--sizes-5);
+  }
+
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf {
+    border-radius: 0;
+  }
+
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF:last-child td:first-child,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf:last-child td:first-child {
+    border-bottom-left-radius: 0;
+  }
+
+  .c-cwQMhQ-dfUUxG-corners-square .c-gNZPWF:last-child td:last-child,
+  .c-cwQMhQ-dfUUxG-corners-square .c-gkKNzf:last-child td:last-child {
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media  {
+  .c-cwQMhQ-icnGIKd-css {
+    height: 100px;
+    width: 400px;
+  }
+}
+
+<div>
+  <table
+    class="c-cwQMhQ c-cwQMhQ-bZDCAE-size-md c-cwQMhQ-dfUUxG-corners-square c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-dmDtdc-theme-primaryDark"

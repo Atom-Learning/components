@@ -39,9 +39,9 @@ const StyledTable = styled('table', {
         }
       }
     },
-    applyRadius: {
-      true: {},
-      false: {
+    corners: {
+      round: {},
+      square: {
         [`${TableHeaderCell}, ${TableRow}`]: {
           borderRadius: '0',
           '&:last-child': {
@@ -58,11 +58,9 @@ type TableProps = React.ComponentProps<typeof StyledTable>
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
-  applyRadius = 'true',
+  corners = 'round',
   ...rest
-}: TableProps) => (
-  <StyledTable size={size} applyRadius={applyRadius} {...rest} />
-)
+}: TableProps) => <StyledTable size={size} corners={corners} {...rest} />
 
 Table.Body = TableBody
 Table.Cell = TableCell
