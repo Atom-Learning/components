@@ -58,7 +58,6 @@ const StyledTriggerList = styled(List, {
 })
 
 export const TriggerListWrapper: React.FC<ListProps> = ({
-  css,
   children,
   theme,
   enableTabScrolling,
@@ -170,7 +169,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   }
 
   return (
-    <StyledTriggerList css={css} theme={theme} {...rest} ref={triggerListRef}>
+    <StyledTriggerList theme={theme} {...rest} ref={triggerListRef}>
       {passPropsToChildren(children, { theme }, [TabTrigger])}
     </StyledTriggerList>
   )
