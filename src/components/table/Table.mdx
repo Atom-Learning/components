@@ -123,10 +123,10 @@ The `Table` component has 2 size variants that control the row height. The two a
 </Table>
 ```
 
-The `Table` component by default renders with a slight border radius. If you want to remove this, for example if you are rendering the `Table` inside another component that has border radius, you can remove this by setting `applyRadius="false"`.
+The `Table` component by default renders with a slight border radius. If you want to remove this, for example if you are rendering the `Table` inside another component that has border radius, you can remove this by setting `corners="square"`. The default is `corners="round"`.
 
 ```tsx
-<Table applyRadius="false">...</Table>
+<Table corners="square">...</Table>
 ```
 
 `Table.Header` accepts a theme prop, the current available options are `primary` and `primaryDark`. The default is `primaryDark`.
