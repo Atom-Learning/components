@@ -35,7 +35,7 @@ const StyledTabTrigger = styled(Trigger, {
         },
         '&[data-disabled],&[data-disabled]:hover': {
           color: '$tonal200',
-          cursor: 'default'
+          cursor: 'not-allowed'
         }
       },
       dark: {
@@ -51,12 +51,9 @@ const StyledTabTrigger = styled(Trigger, {
           bg: opacify(-0.7, 'white'),
           boxShadow: 'none'
         },
-        '&:focus': {
-          boxShadow: 'inset 0 0 0 2px currentColor'
-        },
         '&[data-disabled],&[data-disabled]:hover': {
           color: '$tonal200',
-          cursor: 'default'
+          cursor: 'not-allowed'
         }
       }
     }

@@ -1,6 +1,5 @@
 import { Content, Root } from '@radix-ui/react-tabs'
 import React from 'react'
-import { opacify } from 'polished'
 
 import { styled, theme } from '~/stitches'
 
@@ -30,15 +29,14 @@ const StyledRoot = styled(Root, {
 
 const StyledTabContent = styled(Content, {
   flexGrow: 1,
+  fontFamily: '$body',
   variants: {
     theme: {
       light: {
-        color: '$textForeground',
-        fontFamily: '$body'
+        color: '$textForeground'
       },
       dark: {
-        color: 'white',
-        fontFamily: '$body'
+        color: 'white'
       }
     }
   }
