@@ -12,7 +12,6 @@ type TabsProps = React.ComponentProps<typeof StyledRoot>
 const StyledRoot = styled(Root, {
   display: 'flex',
   flexDirection: 'column',
-  pt: '$4',
   variants: {
     theme: {
       light: {

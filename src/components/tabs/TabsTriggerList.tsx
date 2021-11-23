@@ -19,6 +19,7 @@ const fadedPrimaryDark = opacify(-0.2, theme.colors.primaryDark.value)
 
 const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
+  transition: 'all 125ms',
   variants: {
     theme: {
       light: {

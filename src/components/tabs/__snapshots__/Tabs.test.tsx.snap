@@ -2,10 +2,9 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-caRXJy {
+  .c-fixGjY {
     display: flex;
     flex-direction: column;
-    padding-top: var(--space-4);
   }
 
   .c-gZZKZD {
@@ -42,7 +41,7 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-caRXJy-eOLnUW-theme-light {
+  .c-fixGjY-eOLnUW-theme-light {
     background: white;
     color: var(--colors-primary);
   }
@@ -90,7 +89,7 @@ exports[`Tabs component renders 1`] = `
 
 <div>
   <div
-    class="c-caRXJy c-caRXJy-eOLnUW-theme-light"
+    class="c-fixGjY c-fixGjY-eOLnUW-theme-light"
     data-orientation="horizontal"
   >
     <div
@@ -156,10 +155,9 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-caRXJy {
+  .c-fixGjY {
     display: flex;
     flex-direction: column;
-    padding-top: var(--space-4);
   }
 
   .c-gZZKZD {
@@ -198,8 +196,9 @@ exports[`Tabs component renders mobile view 1`] = `
     display: flex;
   }
 
-  .c-bMCfDd {
+  .c-fDwKcF {
     position: absolute;
+    transition: all 125ms;
   }
 
   .c-fDzwZw {
@@ -228,7 +227,7 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-caRXJy-eOLnUW-theme-light {
+  .c-fixGjY-eOLnUW-theme-light {
     background: white;
     color: var(--colors-primary);
   }
@@ -273,11 +272,11 @@ exports[`Tabs component renders mobile view 1`] = `
     color: var(--colors-textForeground);
   }
 
-  .c-bMCfDd-faCgme-theme-light {
+  .c-fDwKcF-faCgme-theme-light {
     background: rgba(255,255,255,0.8) !important;
   }
 
-  .c-bMCfDd-ejYaUA-visible-false {
+  .c-fDwKcF-ejYaUA-visible-false {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -321,7 +320,7 @@ exports[`Tabs component renders mobile view 1`] = `
     position: relative;
   }
 
-  .c-bMCfDd-icezigA-css {
+  .c-fDwKcF-icezigA-css {
     left: 0;
   }
 
@@ -330,14 +329,14 @@ exports[`Tabs component renders mobile view 1`] = `
     width: 20px;
   }
 
-  .c-bMCfDd-iczsSGP-css {
+  .c-fDwKcF-iczsSGP-css {
     right: 0;
   }
 }
 
 <div>
   <div
-    class="c-caRXJy c-caRXJy-eOLnUW-theme-light"
+    class="c-fixGjY c-fixGjY-eOLnUW-theme-light"
     data-orientation="horizontal"
   >
     <div
@@ -345,7 +344,7 @@ exports[`Tabs component renders mobile view 1`] = `
     >
       <button
         aria-label="Scroll Left"
-        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-bMCfDd c-bMCfDd-faCgme-theme-light c-bMCfDd-ejYaUA-visible-false c-bMCfDd-icezigA-css"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-faCgme-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-icezigA-css"
         type="button"
       >
         <svg
@@ -397,7 +396,7 @@ exports[`Tabs component renders mobile view 1`] = `
       </div>
       <button
         aria-label="Scroll right"
-        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-bMCfDd c-bMCfDd-faCgme-theme-light c-bMCfDd-ejYaUA-visible-false c-bMCfDd-iczsSGP-css"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-faCgme-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-iczsSGP-css"
         type="button"
       >
         <svg
