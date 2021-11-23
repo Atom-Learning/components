@@ -23,12 +23,13 @@ exports[`Tabs component renders 1`] = `
     scrollbar-width: none;
   }
 
-  .c-ehnQBI {
+  .c-hMbQTI {
     text-transform: uppercase;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
     padding: var(--space-4);
+    height: var(--sizes-5);
     -webkit-user-select: none;
     user-select: none;
     transition: 0.3s;
@@ -50,33 +51,33 @@ exports[`Tabs component renders 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-ehnQBI-hibzPz-theme-light {
+  .c-hMbQTI-hibzPz-theme-light {
     background: white;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-state="active"] {
+  .c-hMbQTI-hibzPz-theme-light[data-state="active"] {
     color: var(--colors-primary);
     text-shadow: 0px 0px 1px currentColor;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-state="inactive"] {
+  .c-hMbQTI-hibzPz-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-ehnQBI-hibzPz-theme-light:not([data-disabled]):hover {
+  .c-hMbQTI-hibzPz-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-ehnQBI-hibzPz-theme-light:not([data-disabled]):active {
+  .c-hMbQTI-hibzPz-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-disabled],
-  .c-ehnQBI-hibzPz-theme-light[data-disabled]:hover {
+  .c-hMbQTI-hibzPz-theme-light[data-disabled],
+  .c-hMbQTI-hibzPz-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -103,7 +104,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-ehnQBI c-ehnQBI-hibzPz-theme-light"
+        class="c-hMbQTI c-hMbQTI-hibzPz-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -116,7 +117,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-ehnQBI c-ehnQBI-hibzPz-theme-light"
+        class="c-hMbQTI c-hMbQTI-hibzPz-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -175,12 +176,13 @@ exports[`Tabs component renders mobile view 1`] = `
     scrollbar-width: none;
   }
 
-  .c-ehnQBI {
+  .c-hMbQTI {
     text-transform: uppercase;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
     padding: var(--space-4);
+    height: var(--sizes-5);
     -webkit-user-select: none;
     user-select: none;
     transition: 0.3s;
@@ -206,33 +208,33 @@ exports[`Tabs component renders mobile view 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-ehnQBI-hibzPz-theme-light {
+  .c-hMbQTI-hibzPz-theme-light {
     background: white;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-state="active"] {
+  .c-hMbQTI-hibzPz-theme-light[data-state="active"] {
     color: var(--colors-primary);
     text-shadow: 0px 0px 1px currentColor;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-state="inactive"] {
+  .c-hMbQTI-hibzPz-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-ehnQBI-hibzPz-theme-light:not([data-disabled]):hover {
+  .c-hMbQTI-hibzPz-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-ehnQBI-hibzPz-theme-light:not([data-disabled]):active {
+  .c-hMbQTI-hibzPz-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-ehnQBI-hibzPz-theme-light[data-disabled],
-  .c-ehnQBI-hibzPz-theme-light[data-disabled]:hover {
+  .c-hMbQTI-hibzPz-theme-light[data-disabled],
+  .c-hMbQTI-hibzPz-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -268,7 +270,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab1"
           aria-selected="true"
-          class="c-ehnQBI c-ehnQBI-hibzPz-theme-light"
+          class="c-hMbQTI c-hMbQTI-hibzPz-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -281,7 +283,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab2"
           aria-selected="false"
-          class="c-ehnQBI c-ehnQBI-hibzPz-theme-light"
+          class="c-hMbQTI c-hMbQTI-hibzPz-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"

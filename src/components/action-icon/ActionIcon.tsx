@@ -82,7 +82,8 @@ const StyledButton = styled('button', {
     },
     size: {
       md: { size: '$3' },
-      lg: { size: '$4' }
+      lg: { size: '$4' },
+      xl: { size: '$5' }
     },
     isRounded: {
       true: {
@@ -225,7 +226,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
 
           return React.cloneElement(child, {
             css: {
-              size: size === 'lg' ? 20 : 16,
+              size: ['lg', 'xl'].includes(size as string) ? 20 : 16,
               ...(child.props.css ? child.props.css : {})
             }
           })

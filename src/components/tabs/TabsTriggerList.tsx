@@ -19,7 +19,6 @@ const fadedPrimaryDark = opacify(-0.2, theme.colors.primaryDark.value)
 
 const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
-  top: 'calc(50% - ($4 + $1))',
   variants: {
     theme: {
       light: {
@@ -139,7 +138,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
       <Flex css={{ position: 'relative' }}>
         {showLeftScroller && (
           <StyledChevronIcon
-            size="lg"
+            size="xl"
             role="scrollbar"
             label="Scroll Left"
             theme={theme}
@@ -154,7 +153,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         </StyledTriggerList>
         {showRightScroller && (
           <StyledChevronIcon
-            size="lg"
+            size="xl"
             role="scrollbar"
             label="Scroll right"
             theme={theme}

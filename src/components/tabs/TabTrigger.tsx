@@ -10,6 +10,7 @@ const StyledTabTrigger = styled(Trigger, {
   flexShrink: 0,
   fontFamily: '$body',
   p: '$4',
+  height: '$5',
   userSelect: 'none',
   transition: '0.3s',
   variants: {
