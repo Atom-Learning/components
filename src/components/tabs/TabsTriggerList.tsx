@@ -2,7 +2,7 @@ import { List } from '@radix-ui/react-tabs'
 import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { opacify } from 'polished'
-import { debounce } from 'lodash'
+import { debounce } from 'throttle-debounce'
 
 import { styled, theme } from '~/stitches'
 import { ActionIcon } from '~/components/action-icon'
