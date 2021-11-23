@@ -1,8 +1,9 @@
 import type * as Stitches from '@stitches/react'
 import invariant from 'invariant'
+import { darken } from 'polished'
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
@@ -106,7 +107,11 @@ const StyledButton = styled('button', {
     {
       theme: 'primaryDark',
       appearance: 'simple',
-      css: getSimpleVariant('$primaryDark', '$primaryMid', '$primaryDark')
+      css: getSimpleVariant(
+        '$primaryDark',
+        darken(0.1, theme.colors.primaryDark.value),
+        darken(0.15, theme.colors.primaryDark.value)
+      )
     },
     {
       theme: 'success',
@@ -133,7 +138,11 @@ const StyledButton = styled('button', {
     {
       theme: 'primaryDark',
       appearance: 'solid',
-      css: getSolidVariant('$primaryDark', '$primaryMid', '$primaryDark')
+      css: getSolidVariant(
+        '$primaryDark',
+        darken(0.1, theme.colors.primaryDark.value),
+        darken(0.15, theme.colors.primaryDark.value)
+      )
     },
     {
       theme: 'success',
@@ -160,7 +169,11 @@ const StyledButton = styled('button', {
     {
       theme: 'primaryDark',
       appearance: 'outline',
-      css: getOutlineVariant('$primaryDark', '$primaryMid', '$primaryDark')
+      css: getOutlineVariant(
+        '$primaryDark',
+        darken(0.1, theme.colors.primaryDark.value),
+        darken(0.15, theme.colors.primaryDark.value)
+      )
     },
     {
       theme: 'success',
