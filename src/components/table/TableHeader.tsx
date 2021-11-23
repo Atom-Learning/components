@@ -1,16 +1,17 @@
 import { styled } from '~/stitches'
 import React from 'react'
+import { TableHeaderCell } from './TableHeaderCell'
 
 const StyledTableHeader = styled('thead', {
   variants: {
     theme: {
       primary: {
-        '& th': {
+        [`${TableHeaderCell}`]: {
           bg: '$primary'
         }
       },
       primaryDark: {
-        '& th': {
+        [`${TableHeaderCell}`]: {
           bg: '$primaryDark'
         }
       }

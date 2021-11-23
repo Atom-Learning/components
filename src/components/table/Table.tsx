@@ -40,16 +40,17 @@ const StyledTable = styled('table', {
       }
     },
     corners: {
-      round: {},
-      square: {
-        [`${TableHeaderCell}, ${TableRow}`]: {
-          borderRadius: '0',
-          '&:last-child': {
-            'td:first-child': { borderBottomLeftRadius: '0' },
-            'td:last-child': { borderBottomRightRadius: '0' }
-          }
+      round: {
+        [`${TableHeaderCell}`]: {
+          '&:first-of-type': { borderTopLeftRadius: '$0' },
+          '&:last-of-type': { borderTopRightRadius: '$0' }
+        },
+        [`${TableRow}:last-child`]: {
+          [`${TableCell}:first-child`]: { borderBottomLeftRadius: '$0' },
+          [`${TableCell}:last-child`]: { borderBottomRightRadius: '$0' }
         }
-      }
+      },
+      square: {}
     }
   }
 })
