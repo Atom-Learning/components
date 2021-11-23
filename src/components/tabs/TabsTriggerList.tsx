@@ -22,15 +22,15 @@ const StyledChevronIcon = styled(ActionIcon, {
   variants: {
     theme: {
       light: {
-        '&[role="scrollbar"], &[role="scrollbar"]:not(:disabled):hover, &[role="scrollbar"]:not(:disabled):focus, &[role="scrollbar"]:not(:disabled):active': {
+        '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
           bg: fadedWhite,
           color: 'currentColor'
         }
       },
       dark: {
-        '&[role="scrollbar"], &[role="scrollbar"]:not(:disabled):hover, &[role="scrollbar"]:not(:disabled):focus, &[role="scrollbar"]:not(:disabled):active': {
+        '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
           bg: fadedPrimaryDark,
-          color: 'currentColor'
+          color: 'currentColor !important'
         }
       }
     }
@@ -139,7 +139,6 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         {showLeftScroller && (
           <StyledChevronIcon
             size="xl"
-            role="scrollbar"
             label="Scroll Left"
             theme={theme}
             onClick={() => scrollTriggerListTo('left')}
@@ -154,7 +153,6 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         {showRightScroller && (
           <StyledChevronIcon
             size="xl"
-            role="scrollbar"
             label="Scroll right"
             theme={theme}
             onClick={() => scrollTriggerListTo('right')}

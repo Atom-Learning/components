@@ -71,10 +71,9 @@ export const TabTrigger: React.FC<TabTriggerProps> = ({
   children,
   theme,
   disabled = false,
-  css,
   ...otherProps
 }) => (
-  <StyledTabTrigger css={css} disabled={disabled} theme={theme} {...otherProps}>
+  <StyledTabTrigger disabled={disabled} theme={theme} {...otherProps}>
     {children}
   </StyledTabTrigger>
 )

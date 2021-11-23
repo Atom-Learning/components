@@ -1,7 +1,7 @@
 import { Content, Root } from '@radix-ui/react-tabs'
-import React from 'react'
+import * as React from 'react'
 
-import { styled, theme } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
 import { TriggerListWrapper } from './TabsTriggerList'
