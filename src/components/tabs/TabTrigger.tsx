@@ -19,7 +19,8 @@ const StyledTabTrigger = styled(Trigger, {
         bg: 'white',
         '&[data-state="active"]': {
           color: '$primary',
-          textShadow: '0px 0px 1px currentColor',
+          fontWeight: 600,
+          letterSpacing: '-0.005em',
           boxShadow: 'inset 0 -2px 0 0 currentColor'
         },
         '&[data-state="inactive"]': {
@@ -42,7 +43,8 @@ const StyledTabTrigger = styled(Trigger, {
       dark: {
         color: 'white',
         '&[data-state="active"]': {
-          textShadow: '0px 0px 1px currentColor',
+          fontWeight: 600,
+          letterSpacing: '-0.005em',
           boxShadow: 'inset 0 -2px 0 0 currentColor'
         },
         '&:not([data-disabled]):hover': {

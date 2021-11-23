@@ -22,16 +22,23 @@ const StyledChevronIcon = styled(ActionIcon, {
   variants: {
     theme: {
       light: {
-        '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
-          bg: `${fadedWhite} !important`,
-          color: 'currentColor !important'
-        }
+        bg: `${fadedWhite} !important`
       },
       dark: {
-        '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
-          bg: `${fadedPrimaryDark} !important`,
-          color: 'currentColor !important'
-        }
+        bg: `${fadedPrimaryDark} !important`,
+        color: 'currentColor !important'
+      }
+    },
+    visible: {
+      true: {
+        opacity: 1,
+        visibility: 'visible',
+        pointerEvents: 'all'
+      },
+      false: {
+        opacity: 0,
+        visibility: 'hidden',
+        pointerEvents: 'none'
       }
     }
   }
@@ -141,7 +148,8 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           label="Scroll Left"
           theme={theme}
           onClick={() => scrollTriggerListTo('left')}
-          css={{ left: 0, display: showLeftScroller ? 'block' : 'none' }}
+          visible={showLeftScroller}
+          css={{ left: 0 }}
         >
           <Icon is={ChevronLeft} size="lg" />
         </StyledChevronIcon>
@@ -153,7 +161,8 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           label="Scroll right"
           theme={theme}
           onClick={() => scrollTriggerListTo('right')}
-          css={{ right: 0, display: showRightScroller ? 'block' : 'none' }}
+          visible={showRightScroller}
+          css={{ right: 0 }}
         >
           <Icon is={ChevronRight} size="lg" />
         </StyledChevronIcon>
