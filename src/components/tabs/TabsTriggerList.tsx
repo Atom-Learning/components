@@ -23,13 +23,13 @@ const StyledChevronIcon = styled(ActionIcon, {
     theme: {
       light: {
         '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
-          bg: fadedWhite,
-          color: 'currentColor'
+          bg: `${fadedWhite} !important`,
+          color: 'currentColor !important'
         }
       },
       dark: {
         '&, &:not(:disabled):hover, &:not(:disabled):focus, &:not(:disabled):active': {
-          bg: fadedPrimaryDark,
+          bg: `${fadedPrimaryDark} !important`,
           color: 'currentColor !important'
         }
       }
@@ -136,31 +136,27 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   if (showScroller) {
     return (
       <Flex css={{ position: 'relative' }}>
-        {showLeftScroller && (
-          <StyledChevronIcon
-            size="xl"
-            label="Scroll Left"
-            theme={theme}
-            onClick={() => scrollTriggerListTo('left')}
-            css={{ left: 0 }}
-          >
-            <Icon is={ChevronLeft} size="lg" />
-          </StyledChevronIcon>
-        )}
+        <StyledChevronIcon
+          size="xl"
+          label="Scroll Left"
+          theme={theme}
+          onClick={() => scrollTriggerListTo('left')}
+          css={{ left: 0, display: showLeftScroller ? 'block' : 'none' }}
+        >
+          <Icon is={ChevronLeft} size="lg" />
+        </StyledChevronIcon>
         <StyledTriggerList {...rest} ref={triggerListRef} theme={theme}>
           {passPropsToChildren(children, { theme }, [TabTrigger])}
         </StyledTriggerList>
-        {showRightScroller && (
-          <StyledChevronIcon
-            size="xl"
-            label="Scroll right"
-            theme={theme}
-            onClick={() => scrollTriggerListTo('right')}
-            css={{ right: 0 }}
-          >
-            <Icon is={ChevronRight} size="lg" />
-          </StyledChevronIcon>
-        )}
+        <StyledChevronIcon
+          size="xl"
+          label="Scroll right"
+          theme={theme}
+          onClick={() => scrollTriggerListTo('right')}
+          css={{ right: 0, display: showRightScroller ? 'block' : 'none' }}
+        >
+          <Icon is={ChevronRight} size="lg" />
+        </StyledChevronIcon>
       </Flex>
     )
   }

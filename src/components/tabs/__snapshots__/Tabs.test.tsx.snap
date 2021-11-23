@@ -196,6 +196,34 @@ exports[`Tabs component renders mobile view 1`] = `
   .c-dhzjXW {
     display: flex;
   }
+
+  .c-bMCfDd {
+    position: absolute;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 }
 
 @media  {
@@ -242,11 +270,66 @@ exports[`Tabs component renders mobile view 1`] = `
   .c-cWMaKf-fwFiEo-theme-light {
     color: var(--colors-textForeground);
   }
+
+  .c-bMCfDd-fPEWfa-theme-light,
+  .c-bMCfDd-fPEWfa-theme-light:not(:disabled):hover,
+  .c-bMCfDd-fPEWfa-theme-light:not(:disabled):focus,
+  .c-bMCfDd-fPEWfa-theme-light:not(:disabled):active {
+    background: rgba(255,255,255,0.8) !important;
+    color: currentColor !important;
+  }
+
+  .c-fDzwZw-kMhpXP-size-xl {
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-fLGGKn-size-lg {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
 }
 
 @media  {
   .c-dhzjXW-icmpvrW-css {
     position: relative;
+  }
+
+  .c-bMCfDd-idoKZhy-css {
+    left: 0;
+    display: none;
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-bMCfDd-ihLdYJt-css {
+    right: 0;
+    display: none;
   }
 }
 
@@ -258,6 +341,22 @@ exports[`Tabs component renders mobile view 1`] = `
     <div
       class="c-dhzjXW c-dhzjXW-icmpvrW-css"
     >
+      <button
+        aria-label="Scroll Left"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-bMCfDd c-bMCfDd-fPEWfa-theme-light c-bMCfDd-idoKZhy-css"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
       <div
         aria-orientation="horizontal"
         class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
@@ -294,6 +393,22 @@ exports[`Tabs component renders mobile view 1`] = `
           Trigger 2 which is going to be even longer
         </div>
       </div>
+      <button
+        aria-label="Scroll right"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-bMCfDd c-bMCfDd-fPEWfa-theme-light c-bMCfDd-ihLdYJt-css"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab1"
