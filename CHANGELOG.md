@@ -1,3 +1,5 @@
+# [1.3.0](https://github.com/Atom-Learning/components/compare/v1.2.3...v1.3.0) (2021-11-23)
+
 # [1.2.3](https://github.com/Atom-Learning/components/compare/v1.2.2...v1.2.3) (2021-11-16)
 
 # [1.2.2](https://github.com/Atom-Learning/components/compare/v1.2.1...v1.2.2) (2021-11-12)
