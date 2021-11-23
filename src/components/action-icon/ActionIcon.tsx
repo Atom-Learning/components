@@ -104,6 +104,11 @@ const StyledButton = styled('button', {
       css: getSimpleVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
+      theme: 'primaryDark',
+      appearance: 'simple',
+      css: getSimpleVariant('$primaryDark', '$primaryMid', '$primaryDark')
+    },
+    {
       theme: 'success',
       appearance: 'simple',
       css: getSimpleVariant('$success', '$successMid', '$successDark')
@@ -126,6 +131,11 @@ const StyledButton = styled('button', {
       css: getSolidVariant('$primary', '$primaryMid', '$primaryDark')
     },
     {
+      theme: 'primaryDark',
+      appearance: 'solid',
+      css: getSolidVariant('$primaryDark', '$primaryMid', '$primaryDark')
+    },
+    {
       theme: 'success',
       appearance: 'solid',
       css: getSolidVariant('$success', '$successMid', '$successDark')
@@ -146,6 +156,11 @@ const StyledButton = styled('button', {
       theme: 'primary',
       appearance: 'outline',
       css: getOutlineVariant('$primary', '$primaryMid', '$primaryDark')
+    },
+    {
+      theme: 'primaryDark',
+      appearance: 'outline',
+      css: getOutlineVariant('$primaryDark', '$primaryMid', '$primaryDark')
     },
     {
       theme: 'success',
