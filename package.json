@@ -148,6 +148,7 @@
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
+    "throttle-debounce": "^3.0.1",
     "uid": "^2.0.0"
   },
   "husky": {

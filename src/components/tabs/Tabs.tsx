@@ -1,36 +1,60 @@
-import { Content, List, Root } from '@radix-ui/react-tabs'
+import { Content, Root } from '@radix-ui/react-tabs'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
-
-const StyledRoot = styled(Root, {
-  display: 'flex',
-  flexDirection: 'column'
-})
-
-const StyledTabContent = styled(Content, {
-  flexGrow: 1
-})
-
-const StyledTriggerList = styled(List, {
-  flexShrink: 0,
-  display: 'flex',
-  borderBottom: '1px solid $primaryDark'
-})
+import { TriggerListWrapper } from './TabsTriggerList'
+import { passPropsToChildren } from './utils'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
 
+const StyledRoot = styled(Root, {
+  display: 'flex',
+  flexDirection: 'column',
+  variants: {
+    theme: {
+      light: {
+        bg: 'white',
+        color: '$primary'
+      },
+      dark: {
+        bg: '$primaryDark',
+        color: 'white'
+      }
+    }
+  }
+})
+
+const StyledTabContent = styled(Content, {
+  flexGrow: 1,
+  fontFamily: '$body',
+  variants: {
+    theme: {
+      light: {
+        color: '$textForeground'
+      },
+      dark: {
+        color: 'white'
+      }
+    }
+  }
+})
+
 export const Tabs: React.FC<TabsProps> & {
-  TriggerList: typeof StyledTriggerList
+  TriggerList: typeof TriggerListWrapper
   Trigger: typeof TabTrigger
   Content: typeof StyledTabContent
-} = ({ children, ...remainingProps }) => (
-  <StyledRoot {...remainingProps}>{children}</StyledRoot>
+} = ({ theme = 'light', children, ...remainingProps }) => (
+  <StyledRoot theme={theme} {...remainingProps}>
+    {passPropsToChildren(children, { theme }, [
+      TriggerListWrapper,
+      StyledTabContent
+    ])}
+  </StyledRoot>
 )
 
-Tabs.TriggerList = StyledTriggerList
+Tabs.TriggerList = TriggerListWrapper
 Tabs.Trigger = TabTrigger
 Tabs.Content = StyledTabContent
 

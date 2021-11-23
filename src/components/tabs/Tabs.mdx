@@ -27,15 +27,23 @@ The component provides a set of default styles, which can be overwritten by usin
 </Tabs>
 ```
 
-It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+It takes a `defaultValue` prop that should match one of the triggers' `value` prop.
 
 ```tsx
 <Tabs defaultValue="tab1">
 ```
 
+It also takes a `theme` prop that should either be "light" or "dark".
+
+```tsx
+<Tabs theme="light"></Tabs>
+<Tabs theme="dark"></Tabs>
+```
+
 ## Tabs.TriggerList
 
 The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
+`Tabs.TriggerList` will automatically show `<` & `>` buttons in case the content is overshooting the available space.
 
 ## Tabs.Trigger
 
