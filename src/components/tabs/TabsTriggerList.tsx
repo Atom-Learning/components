@@ -113,9 +113,9 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   }, [])
 
   useEffect(() => {
-    const onResize = debounce(() => {
+    const onResize = debounce(500, () => {
       setScreenWidth(window.innerWidth)
-    }, 500)
+    })
     window.addEventListener('resize', onResize)
 
     return () => {
