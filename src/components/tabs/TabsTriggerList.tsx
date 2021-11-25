@@ -74,7 +74,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   const triggerListRef = useRef<HTMLDivElement>(null)
   const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
   const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
-  const [screenWidth, setScreenWidth] = useState<number>(0)
+  const [screenWidth, setScreenWidth] = useState<number>()
 
   const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
     const triggerList = triggerListRef.current
