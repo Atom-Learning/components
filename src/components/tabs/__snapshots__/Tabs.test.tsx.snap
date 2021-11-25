@@ -41,8 +41,7 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-fixGjY-eOLnUW-theme-light {
-    background: white;
+  .c-fixGjY-ixnjYu-theme-light {
     color: var(--colors-primary);
   }
 
@@ -82,14 +81,15 @@ exports[`Tabs component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-cWMaKf-fwFiEo-theme-light {
+  .c-cWMaKf-bPagfo-theme-light {
+    background: white;
     color: var(--colors-textForeground);
   }
 }
 
 <div>
   <div
-    class="c-fixGjY c-fixGjY-eOLnUW-theme-light"
+    class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
     data-orientation="horizontal"
   >
     <div
@@ -130,7 +130,7 @@ exports[`Tabs component renders 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab1"
-      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      class="c-cWMaKf c-cWMaKf-bPagfo-theme-light"
       data-orientation="horizontal"
       data-state="active"
       id="radix-id-0-1-content-tab1"
@@ -141,7 +141,7 @@ exports[`Tabs component renders 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab2"
-      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      class="c-cWMaKf c-cWMaKf-bPagfo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
@@ -227,8 +227,7 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-fixGjY-eOLnUW-theme-light {
-    background: white;
+  .c-fixGjY-ixnjYu-theme-light {
     color: var(--colors-primary);
   }
 
@@ -268,7 +267,8 @@ exports[`Tabs component renders mobile view 1`] = `
     cursor: not-allowed;
   }
 
-  .c-cWMaKf-fwFiEo-theme-light {
+  .c-cWMaKf-bPagfo-theme-light {
+    background: white;
     color: var(--colors-textForeground);
   }
 
@@ -336,7 +336,7 @@ exports[`Tabs component renders mobile view 1`] = `
 
 <div>
   <div
-    class="c-fixGjY c-fixGjY-eOLnUW-theme-light"
+    class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
     data-orientation="horizontal"
   >
     <div
@@ -413,7 +413,7 @@ exports[`Tabs component renders mobile view 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab1"
-      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      class="c-cWMaKf c-cWMaKf-bPagfo-theme-light"
       data-orientation="horizontal"
       data-state="active"
       id="radix-id-0-1-content-tab1"
@@ -424,7 +424,7 @@ exports[`Tabs component renders mobile view 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab2"
-      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      class="c-cWMaKf c-cWMaKf-bPagfo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""

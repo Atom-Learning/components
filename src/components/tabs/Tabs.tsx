@@ -15,11 +15,9 @@ const StyledRoot = styled(Root, {
   variants: {
     theme: {
       light: {
-        bg: 'white',
         color: '$primary'
       },
       dark: {
-        bg: '$primaryDark',
         color: 'white'
       }
     }
@@ -32,9 +30,11 @@ const StyledTabContent = styled(Content, {
   variants: {
     theme: {
       light: {
+        bg: 'white',
         color: '$textForeground'
       },
       dark: {
+        bg: '$primaryDark',
         color: 'white'
       }
     }

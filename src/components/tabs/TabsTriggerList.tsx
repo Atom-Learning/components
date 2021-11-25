@@ -58,6 +58,7 @@ const StyledTriggerList = styled(List, {
         borderBottom: '1px solid $tonal300'
       },
       dark: {
+        bg: '$primaryDark',
         borderBottom: '1px solid $tonal200'
       }
     }
@@ -73,7 +74,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   const triggerListRef = useRef<HTMLDivElement>(null)
   const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
   const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
-  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth)
+  const [screenWidth, setScreenWidth] = useState<number>(0)
 
   const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
     const triggerList = triggerListRef.current
