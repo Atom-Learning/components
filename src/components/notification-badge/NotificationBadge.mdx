@@ -23,4 +23,34 @@ Whilst you would normally want to display a number, the `value` prop also suppor
 
 ## Themes
 
-The component accepts a `theme` prop of either `primary`, `dark`, or `neutral`. Default is `primary`. It can also take an `appearance` prop, which can either be `simple` or `outline`. Default is `simple`.
+The component accepts a `theme` prop of either `primary`, `dark`, or `neutral`. Default is `primary`.
+
+```tsx preview
+<NotificationBadge value={1}>
+  <ActionIcon appearance="outline" size="lg" isRounded>
+    <Icon is={Controls} />
+  </ActionIcon>
+</NotificationBadge>
+<NotificationBadge theme="dark" value={2}>
+  <ActionIcon appearance="outline" size="lg" isRounded>
+    <Icon is={Controls} />
+  </ActionIcon>
+</NotificationBadge>
+<NotificationBadge theme="neutral" value={3}>
+  <ActionIcon appearance="outline" size="lg" isRounded>
+    <Icon is={Controls} />
+  </ActionIcon>
+</NotificationBadge>
+```
+
+## Appearance
+
+The component can take an `appearance` prop, which can either be `simple` or `outline`. Default is `simple`.
+
+```tsx preview
+<NotificationBadge theme="neutral" apperance="outline" value={3}>
+  <ActionIcon appearance="outline" size="lg" isRounded>
+    <Icon is={Controls} />
+  </ActionIcon>
+</NotificationBadge>
+```
