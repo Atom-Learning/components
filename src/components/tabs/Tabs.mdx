@@ -70,6 +70,21 @@ A `Tabs.Trigger` component can take a `disabled` prop, which would make it unsel
 </Tabs>
 ```
 
+## Styling the `Tabs.TriggerList`
+
+The trigger list accepts a property to apply uppercase to all tabs. Simply pass `uppercase`. Omiting this property will result in text rendered as it is typed.
+
+```tsx preview
+<Tabs>
+  <Tabs.TriggerList uppercase>
+    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
+    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
+  </Tabs.TriggerList>
+  <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
+  <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>
+</Tabs>
+```
+
 ## Styling the `Tabs.Trigger`
 
 In order to style the different states of a trigger, the following CSS selectors need to be used when passed to the `css` prop:

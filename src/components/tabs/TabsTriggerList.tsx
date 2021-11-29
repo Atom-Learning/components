@@ -61,6 +61,12 @@ const StyledTriggerList = styled(List, {
         bg: '$primaryDark',
         borderBottom: '1px solid $tonal200'
       }
+    },
+    uppercase: {
+      true: {
+        textTransform: 'uppercase'
+      },
+      false: {}
     }
   }
 })
@@ -68,6 +74,7 @@ const StyledTriggerList = styled(List, {
 export const TriggerListWrapper: React.FC<ListProps> = ({
   children,
   theme,
+  uppercase = false,
   enableTabScrolling,
   ...rest
 }) => {
@@ -155,7 +162,12 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         >
           <Icon is={ChevronLeft} size="lg" />
         </StyledChevronIcon>
-        <StyledTriggerList {...rest} ref={triggerListRef} theme={theme}>
+        <StyledTriggerList
+          {...rest}
+          ref={triggerListRef}
+          uppercase={uppercase}
+          theme={theme}
+        >
           {passPropsToChildren(children, { theme }, [TabTrigger])}
         </StyledTriggerList>
         <StyledChevronIcon
@@ -173,7 +185,12 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   }
 
   return (
-    <StyledTriggerList theme={theme} {...rest} ref={triggerListRef}>
+    <StyledTriggerList
+      theme={theme}
+      {...rest}
+      uppercase={uppercase}
+      ref={triggerListRef}
+    >
       {passPropsToChildren(children, { theme }, [TabTrigger])}
     </StyledTriggerList>
   )

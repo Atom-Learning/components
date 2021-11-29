@@ -22,8 +22,7 @@ exports[`Tabs component renders 1`] = `
     scrollbar-width: none;
   }
 
-  .c-hMbQTI {
-    text-transform: uppercase;
+  .c-hOCLBl {
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -49,34 +48,34 @@ exports[`Tabs component renders 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-hMbQTI-eBYslT-theme-light {
+  .c-hOCLBl-eBYslT-theme-light {
     background: white;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-state="active"] {
+  .c-hOCLBl-eBYslT-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-state="inactive"] {
+  .c-hOCLBl-eBYslT-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-hMbQTI-eBYslT-theme-light:not([data-disabled]):hover {
+  .c-hOCLBl-eBYslT-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-hMbQTI-eBYslT-theme-light:not([data-disabled]):active {
+  .c-hOCLBl-eBYslT-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-disabled],
-  .c-hMbQTI-eBYslT-theme-light[data-disabled]:hover {
+  .c-hOCLBl-eBYslT-theme-light[data-disabled],
+  .c-hOCLBl-eBYslT-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -104,7 +103,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-hMbQTI c-hMbQTI-eBYslT-theme-light"
+        class="c-hOCLBl c-hOCLBl-eBYslT-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -117,7 +116,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-hMbQTI c-hMbQTI-eBYslT-theme-light"
+        class="c-hOCLBl c-hOCLBl-eBYslT-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -175,8 +174,7 @@ exports[`Tabs component renders mobile view 1`] = `
     scrollbar-width: none;
   }
 
-  .c-hMbQTI {
-    text-transform: uppercase;
+  .c-hOCLBl {
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -235,34 +233,34 @@ exports[`Tabs component renders mobile view 1`] = `
     border-bottom: 1px solid var(--colors-tonal300);
   }
 
-  .c-hMbQTI-eBYslT-theme-light {
+  .c-hOCLBl-eBYslT-theme-light {
     background: white;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-state="active"] {
+  .c-hOCLBl-eBYslT-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-state="inactive"] {
+  .c-hOCLBl-eBYslT-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-hMbQTI-eBYslT-theme-light:not([data-disabled]):hover {
+  .c-hOCLBl-eBYslT-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.1);
   }
 
-  .c-hMbQTI-eBYslT-theme-light:not([data-disabled]):active {
+  .c-hOCLBl-eBYslT-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30,113,246,0.2);
     box-shadow: none;
   }
 
-  .c-hMbQTI-eBYslT-theme-light[data-disabled],
-  .c-hMbQTI-eBYslT-theme-light[data-disabled]:hover {
+  .c-hOCLBl-eBYslT-theme-light[data-disabled],
+  .c-hOCLBl-eBYslT-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -370,7 +368,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab1"
           aria-selected="true"
-          class="c-hMbQTI c-hMbQTI-eBYslT-theme-light"
+          class="c-hOCLBl c-hOCLBl-eBYslT-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -383,7 +381,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <div
           aria-controls="radix-id-0-1-content-tab2"
           aria-selected="false"
-          class="c-hMbQTI c-hMbQTI-eBYslT-theme-light"
+          class="c-hOCLBl c-hOCLBl-eBYslT-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
