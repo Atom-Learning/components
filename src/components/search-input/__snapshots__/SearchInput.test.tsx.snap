@@ -2,15 +2,6 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
   .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
@@ -43,18 +34,27 @@ exports[`SearchInput component renders 1`] = `
     color: var(--colors-tonal300);
     opacity: 1;
   }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 }
 
 @media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
   .c-dbrbZt-hemXWm-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 2;
-  }
-
-  .c-fZTBsJ-pHZal-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
   }
 }
 
@@ -63,18 +63,18 @@ exports[`SearchInput component renders 1`] = `
     position: relative;
   }
 
-  .c-dbrbZt-iiElkIc-css {
+  .c-fZTBsJ-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-dbrbZt-iiJvgJv-css {
     color: var(--colors-tonal300);
-    pointer-events: none;
     position: absolute;
     height: 20px;
     width: 20px;
     top: 10px;
-    left: 10px;
-  }
-
-  .c-fZTBsJ-icSgxUp-css {
-    padding-left: var(--space-6);
+    right: 10px;
+    pointer-events: none;
   }
 }
 
@@ -82,9 +82,14 @@ exports[`SearchInput component renders 1`] = `
   <div
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-icRYcAH-css"
+      type="text"
+      value=""
+    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iiElkIc-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iiJvgJv-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -97,10 +102,135 @@ exports[`SearchInput component renders 1`] = `
         r="6"
       />
     </svg>
+  </div>
+</div>
+`;
+
+exports[`SearchInput component renders clear button 1`] = `
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+}
+
+@media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-fZTBsJ-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-dbrbZt-iiJvgJv-css {
+    color: var(--colors-tonal300);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+    pointer-events: none;
+  }
+
+  .c-fDzwZw-igcpkVD-css {
+    color: var(--colors-tonal300);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-icmpvrW-css"
+  >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-icSgxUp-css"
-      type="search"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-icRYcAH-css"
+      type="text"
+      value="testing"
     />
+    <button
+      class="c-fDzwZw c-fDzwZw-igcpkVD-css"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
