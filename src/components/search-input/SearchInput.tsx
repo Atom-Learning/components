@@ -41,6 +41,12 @@ const StyledIcon = styled(Icon, {
   }
 })
 
+const StyledSearchInput = styled(Input, {
+  '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, & input[type="search"]::-webkit-search-results-decoration': {
+    display: 'none'
+  }
+})
+
 export const SearchInput: React.FC<SearchInputProps> = ({
   size = 'md',
   css,
@@ -88,8 +94,9 @@ export const SearchInput: React.FC<SearchInputProps> = ({
 
   return (
     <Box css={{ position: 'relative', ...css }}>
-      <Input
+      <StyledSearchInput
         size={size}
+        type="search"
         {...remainingProps}
         value={inputValue}
         onChange={handleOnChange}
