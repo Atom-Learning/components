@@ -14,6 +14,11 @@ type SearchInputProps = React.ComponentProps<typeof Input> & {
   clearText?: string
 }
 
+enum INPUT_ICON {
+  SEARCH = 'SEARCH',
+  CLEAR = 'CLEAR'
+}
+
 const StyledIcon = styled(Icon, {
   color: '$tonal300',
   position: 'absolute',
@@ -46,22 +51,27 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   const [inputValue, setInputValue] = React.useState<string | number>(
     value || ''
   )
-  const [isClearVisible, setIsClearVisible] = React.useState<boolean>(
-    (value && value?.toString().length > 0) || false
+  const [isClearVisible, setIsClearVisible] = React.useState<INPUT_ICON>(
+    value && value?.toString().length > 0 ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
   )
 
   const handleClear = () => {
     setInputValue('')
-    setIsClearVisible(false)
+    setIsClearVisible(INPUT_ICON.SEARCH)
   }
 
   const handleOnChange = (event) => {
     setInputValue(event.target.value)
-    setIsClearVisible(event.target.value.toString().length > 0)
+    setIsClearVisible(
+      event.target.value.toString().length > 0
+        ? INPUT_ICON.CLEAR
+        : INPUT_ICON.SEARCH
+    )
   }
 
   const getIcon = () => {
-    if (!isClearVisible) return <StyledIcon is={Search} size={size} />
+    if (isClearVisible === INPUT_ICON.SEARCH)
+      return <StyledIcon is={Search} size={size} />
 
     return (
       <ActionIcon
