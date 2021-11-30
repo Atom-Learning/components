@@ -5,7 +5,7 @@ import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
 import { Input } from '~/components/input/'
-import { CSS } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 type SearchInputProps = React.ComponentProps<typeof Input> & {
   size: 'sm' | 'md'
@@ -14,8 +14,30 @@ type SearchInputProps = React.ComponentProps<typeof Input> & {
   clearText?: string
 }
 
+const StyledIcon = styled(Icon, {
+  color: '$tonal300',
+  position: 'absolute',
+  pointerEvents: 'none',
+  variants: {
+    size: {
+      sm: {
+        top: '$2',
+        right: '$2',
+        size: '$1',
+        ml: '$5'
+      },
+      md: {
+        top: 10,
+        right: 10,
+        size: 20,
+        ml: '$6'
+      }
+    }
+  }
+})
+
 export const SearchInput: React.FC<SearchInputProps> = ({
-  size,
+  size = 'md',
   css,
   value,
   clearText = 'Clear',
@@ -39,20 +61,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   const getIcon = () => {
-    if (!isClearVisible)
-      return (
-        <Icon
-          is={Search}
-          css={{
-            color: '$tonal300',
-            position: 'absolute',
-            size: size === 'sm' ? '$1' : 20,
-            top: size === 'sm' ? '$2' : 10,
-            right: size === 'sm' ? '$2' : 10,
-            pointerEvents: 'none'
-          }}
-        />
-      )
+    if (!isClearVisible) return <StyledIcon is={Search} size={size} />
 
     return (
       <ActionIcon
@@ -71,7 +80,6 @@ export const SearchInput: React.FC<SearchInputProps> = ({
     <Box css={{ position: 'relative', ...css }}>
       <Input
         size={size}
-        css={{ pr: size === 'sm' ? '$5' : '$6' }}
         {...remainingProps}
         value={inputValue}
         onChange={handleOnChange}
