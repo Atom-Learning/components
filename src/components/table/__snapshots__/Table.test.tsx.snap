@@ -10,7 +10,7 @@ exports[`Table component renders 1`] = `
     width: 100%;
   }
 
-  .c-GSaiK {
+  .c-dxynEC {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -18,6 +18,7 @@ exports[`Table component renders 1`] = `
     padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
+    white-space: nowrap;
   }
 
   .c-dOcJjJ {
@@ -45,29 +46,29 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-cLxoRD-size-md .c-dOcJjJ,
+  .c-cwQMhQ-cLxoRD-size-md .c-dxynEC,
+  .c-cwQMhQ-cLxoRD-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-eHHTYb-theme-primaryDark .c-dxynEC {
     background: var(--colors-primaryDark);
   }
 }
@@ -81,16 +82,16 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-cLxoRD-size-md c-cwQMhQ-kCnvZP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-eHHTYb-theme-primaryDark"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-GSaiK"
+          class="c-dxynEC"
         >
           Column A
         </th>
@@ -136,7 +137,7 @@ exports[`Table component renders with a themed header 1`] = `
     width: 100%;
   }
 
-  .c-GSaiK {
+  .c-dxynEC {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -144,6 +145,7 @@ exports[`Table component renders with a themed header 1`] = `
     padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
+    white-space: nowrap;
   }
 
   .c-dOcJjJ {
@@ -171,39 +173,39 @@ exports[`Table component renders with a themed header 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-cLxoRD-size-md .c-dOcJjJ,
+  .c-cwQMhQ-cLxoRD-size-md .c-dxynEC,
+  .c-cwQMhQ-cLxoRD-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-eHHTYb-theme-primaryDark .c-dxynEC {
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-cwQMhQ-LQLpC-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-LQLpC-size-lg .c-dxynEC,
+  .c-cwQMhQ-LQLpC-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 
-  .c-PJLV-gmYsCp-theme-primary .c-GSaiK {
+  .c-PJLV-hHEXZz-theme-primary .c-dxynEC {
     background: var(--colors-primary);
   }
 }
@@ -217,16 +219,16 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-cLxoRD-size-md c-cwQMhQ-kCnvZP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gmYsCp-theme-primary"
+      class="c-PJLV c-PJLV-hHEXZz-theme-primary"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-GSaiK"
+          class="c-dxynEC"
         >
           Column A
         </th>
@@ -272,7 +274,7 @@ exports[`Table component renders with size set to lg 1`] = `
     width: 100%;
   }
 
-  .c-GSaiK {
+  .c-dxynEC {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -280,6 +282,7 @@ exports[`Table component renders with size set to lg 1`] = `
     padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
+    white-space: nowrap;
   }
 
   .c-dOcJjJ {
@@ -307,35 +310,35 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-cLxoRD-size-md .c-dOcJjJ,
+  .c-cwQMhQ-cLxoRD-size-md .c-dxynEC,
+  .c-cwQMhQ-cLxoRD-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-eHHTYb-theme-primaryDark .c-dxynEC {
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-cwQMhQ-LQLpC-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-LQLpC-size-lg .c-dxynEC,
+  .c-cwQMhQ-LQLpC-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
@@ -349,16 +352,16 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-lhkyUQ-size-lg c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-LQLpC-size-lg c-cwQMhQ-kCnvZP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-eHHTYb-theme-primaryDark"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-GSaiK"
+          class="c-dxynEC"
         >
           Column A
         </th>
@@ -404,7 +407,7 @@ exports[`Table component renders with square corners 1`] = `
     width: 100%;
   }
 
-  .c-GSaiK {
+  .c-dxynEC {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -412,6 +415,7 @@ exports[`Table component renders with square corners 1`] = `
     padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
+    white-space: nowrap;
   }
 
   .c-dOcJjJ {
@@ -439,35 +443,35 @@ exports[`Table component renders with square corners 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-cLxoRD-size-md .c-dOcJjJ,
+  .c-cwQMhQ-cLxoRD-size-md .c-dxynEC,
+  .c-cwQMhQ-cLxoRD-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-kCnvZP-corners-round .c-dxynEC:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-kCnvZP-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-eHHTYb-theme-primaryDark .c-dxynEC {
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-cwQMhQ-LQLpC-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-LQLpC-size-lg .c-dxynEC,
+  .c-cwQMhQ-LQLpC-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
@@ -481,16 +485,16 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-cLxoRD-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-eHHTYb-theme-primaryDark"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-GSaiK"
+          class="c-dxynEC"
         >
           Column A
         </th>
