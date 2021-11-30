@@ -51,7 +51,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   const getIcon = () => {
-    const css = {
+    const css: CSS = {
       color: '$tonal300',
       position: 'absolute',
       size: size === 'sm' ? '$1' : 20,
@@ -78,7 +78,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   return (
-    <Box css={{ position: 'relative', ...(css as CSS) }}>
+    <Box css={{ position: 'relative', ...css }}>
       <Input
         size={size}
         css={{ pr: size === 'sm' ? '$5' : '$6' }}
