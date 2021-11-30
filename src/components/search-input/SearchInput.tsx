@@ -1,36 +1,24 @@
 import { Close, Search } from '@atom-learning/icons'
 import * as React from 'react'
 
-import { CSS, styled } from '~/stitches'
-
-import { Box } from '../box/Box'
-import { Icon } from '../icon/Icon'
-import { Input } from '../input/Input'
+import { ActionIcon } from '~/components/action-icon'
+import { Box } from '~/components/box/'
+import { Icon } from '~/components/icon/'
+import { Input } from '~/components/input/'
+import { CSS } from '~/stitches'
 
 type SearchInputProps = React.ComponentProps<typeof Input> & {
   size: 'sm' | 'md'
   css?: CSS
   value?: string | number
+  clearText?: string
 }
-
-const StyledButton = styled('button', {
-  alignItems: 'center',
-  appearance: 'none',
-  bg: 'white',
-  border: 'unset',
-  borderRadius: '$0',
-  boxSizing: 'border-box',
-  cursor: 'pointer',
-  display: 'flex',
-  justifyContent: 'center',
-  p: 'unset',
-  transition: 'all 100ms ease-out'
-})
 
 export const SearchInput: React.FC<SearchInputProps> = ({
   size,
   css,
   value,
+  clearText = 'Clear',
   ...remainingProps
 }) => {
   const [inputValue, setInputValue] = React.useState<string | number>(
@@ -51,29 +39,31 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   const getIcon = () => {
-    const css: CSS = {
-      color: '$tonal300',
-      position: 'absolute',
-      size: size === 'sm' ? '$1' : 20,
-      top: size === 'sm' ? '$2' : 10,
-      right: size === 'sm' ? '$2' : 10
-    }
-
     if (!isClearVisible)
       return (
         <Icon
           is={Search}
           css={{
-            ...css,
+            color: '$tonal300',
+            position: 'absolute',
+            size: size === 'sm' ? '$1' : 20,
+            top: size === 'sm' ? '$2' : 10,
+            right: size === 'sm' ? '$2' : 10,
             pointerEvents: 'none'
           }}
         />
       )
 
     return (
-      <StyledButton onClick={handleClear} css={css}>
+      <ActionIcon
+        label={clearText}
+        appearance="simple"
+        theme="neutral"
+        css={{ bottom: 4, position: 'absolute', right: 0 }}
+        onClick={handleClear}
+      >
         <Icon is={Close} />
-      </StyledButton>
+      </ActionIcon>
     )
   }
 
