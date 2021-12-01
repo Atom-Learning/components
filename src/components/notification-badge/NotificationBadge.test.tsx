@@ -7,8 +7,8 @@ import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { Controls } from '@atom-learning/icons'
 
-describe('NotificationIcon component', () => {
-  it('renders an accordion', async () => {
+describe('NotificationBadge component', () => {
+  it('renders a NotificationBadge', async () => {
     const { container } = render(
       <NotificationBadge value={3}>
         <ActionIcon appearance="outline" label="testing" size="lg" isRounded>

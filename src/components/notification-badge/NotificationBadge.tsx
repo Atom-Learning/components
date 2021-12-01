@@ -9,13 +9,15 @@ const StyledWrapper = styled(Box, {
 })
 
 const StyledBadge = styled(Box, {
+  fontFamily: '$body',
   position: 'absolute',
   top: '-$2',
-  right: '-$2',
+  left: '100%',
+  transform: 'translateX(-50%)',
   borderRadius: '$round',
   p: '$1',
   height: '$2',
-  width: '$2',
+  minWidth: '$2',
   textAlign: 'center',
   variants: {
     theme: {
@@ -26,15 +28,6 @@ const StyledBadge = styled(Box, {
       dark: {
         bg: '$tonal600',
         color: '#fff'
-      },
-      neutral: {
-        bg: '#fff'
-      }
-    },
-    appearance: {
-      simple: {},
-      outline: {
-        border: '1px solid currentColor'
       }
     }
   }
@@ -46,12 +39,11 @@ type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {
 
 export const NotificationBadge: React.FC<NotificationBadgeProps> = ({
   theme = 'primary',
-  appearance = 'simple',
   value,
   children
 }) => (
   <StyledWrapper>
-    <StyledBadge appearance={appearance} theme={theme}>
+    <StyledBadge role="status" theme={theme}>
       {value}
     </StyledBadge>
     {children}

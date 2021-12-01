@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotificationIcon component renders an accordion 1`] = `
+exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 @media  {
   .c-cmpvrW {
     position: relative;
   }
 
-  .c-cqJpgx {
+  .c-gHsBZI {
+    font-family: var(--fonts-body);
     position: absolute;
     top: calc(var(--space-2)*-1);
-    right: calc(var(--space-2)*-1);
+    left: 100%;
+    transform: translateX(-50%);
     border-radius: var(--radii-round);
     padding: var(--space-1);
     height: var(--sizes-2);
-    width: var(--sizes-2);
+    min-width: var(--sizes-2);
     text-align: center;
   }
 
@@ -43,7 +45,7 @@ exports[`NotificationIcon component renders an accordion 1`] = `
 }
 
 @media  {
-  .c-cqJpgx-cmSFZU-theme-primary {
+  .c-gHsBZI-cmSFZU-theme-primary {
     background: var(--colors-primary);
     color: #fff;
   }
@@ -99,7 +101,8 @@ exports[`NotificationIcon component renders an accordion 1`] = `
     class="c-PJLV c-cmpvrW"
   >
     <div
-      class="c-PJLV c-cqJpgx c-cqJpgx-cmSFZU-theme-primary"
+      class="c-PJLV c-gHsBZI c-gHsBZI-cmSFZU-theme-primary"
+      role="status"
     >
       3
     </div>
