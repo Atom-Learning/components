@@ -62,11 +62,11 @@ const StyledTriggerList = styled(List, {
         borderBottom: '1px solid $tonal200'
       }
     },
-    uppercase: {
-      true: {
+    appearance: {
+      uppercase: {
         textTransform: 'uppercase'
       },
-      false: {}
+      default: {}
     }
   }
 })
@@ -74,7 +74,7 @@ const StyledTriggerList = styled(List, {
 export const TriggerListWrapper: React.FC<ListProps> = ({
   children,
   theme,
-  uppercase = false,
+  appearance = 'default',
   enableTabScrolling,
   ...rest
 }) => {
@@ -165,7 +165,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         <StyledTriggerList
           {...rest}
           ref={triggerListRef}
-          uppercase={uppercase}
+          appearance={appearance}
           theme={theme}
         >
           {passPropsToChildren(children, { theme }, [TabTrigger])}
@@ -188,7 +188,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
     <StyledTriggerList
       theme={theme}
       {...rest}
-      uppercase={uppercase}
+      appearance={appearance}
       ref={triggerListRef}
     >
       {passPropsToChildren(children, { theme }, [TabTrigger])}

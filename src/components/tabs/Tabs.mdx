@@ -72,11 +72,11 @@ A `Tabs.Trigger` component can take a `disabled` prop, which would make it unsel
 
 ## Styling the `Tabs.TriggerList`
 
-The trigger list accepts a property to apply uppercase to all tabs. Simply pass `uppercase`. Omiting this property will result in text rendered as it is typed.
+The trigger list accepts an appearance property to apply uppercase to all tabs. Simply pass `appearance='uppercase'`. The default value is `appearance='default'`.
 
 ```tsx preview
 <Tabs>
-  <Tabs.TriggerList uppercase>
+  <Tabs.TriggerList appearance="uppercase">
     <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
     <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
   </Tabs.TriggerList>
