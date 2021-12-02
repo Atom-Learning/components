@@ -17,9 +17,9 @@ const StyledBadge = styled(Flex, {
   position: 'absolute',
   top: '0',
   right: '0',
-  transform: 'translate(50%, -50%)',
+  transform: 'translate(calc($sizes$2 / 2), -50%)',
   borderRadius: '$round',
-  p: '$1',
+  p: '$2',
   height: '$2',
   minWidth: '$2',
   textAlign: 'center',
@@ -36,7 +36,7 @@ export const NotificationBadge: React.FC<NotificationBadgeProps> = ({
   children
 }) => (
   <StyledWrapper>
-    <StyledBadge role="status">{value}</StyledBadge>
+    {value ? <StyledBadge role="status">{value}</StyledBadge> : ''}
     {children}
   </StyledWrapper>
 )
