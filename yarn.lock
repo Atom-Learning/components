@@ -17,10 +17,10 @@
     chalk "^4.1.0"
     css "^3.0.0"
 
-"@atom-learning/theme@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.0.0.tgz#d6ca9f1684165b731c490f7594a6e2f79967bee4"
-  integrity sha512-sjyzKebnppjjXkksY60EGYJj0bMplGh6GAgQHgZPlJl2jvxhrF4Kg3fm+u9cZAIc0n/MLx1enZWvGNvOQAe/+g==
+"@atom-learning/theme@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@atom-learning/theme/-/theme-1.0.1.tgz#75b04b0f650d6194d26de9efaac7042ecc6f807a"
+  integrity sha512-vf18VU9LWXdv4JYmhn1vZXS6Nk/0HY/XNw0jVCpcn8xJhxPi6Y01zOaOxRpcvl+6hhKQtUKF36rHdn0VHgJ5ng==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11":
   version "7.12.11"
