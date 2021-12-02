@@ -10,7 +10,7 @@ import { CSS, styled } from '~/stitches'
 type SearchInputProps = React.ComponentProps<typeof Input> & {
   size: 'sm' | 'md'
   css?: CSS
-  value?: string | number
+  value?: string
   clearText?: string
 }
 
@@ -56,7 +56,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
     value || ''
   )
   const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
-    value && value?.toString().length > 0 ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
+    value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
   )
 
   const handleClear = () => {
@@ -64,13 +64,9 @@ export const SearchInput: React.FC<SearchInputProps> = ({
     setActiveIcon(INPUT_ICON.SEARCH)
   }
 
-  const handleOnChange = (event) => {
+  const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value)
-    setActiveIcon(
-      event.target.value.toString().length > 0
-        ? INPUT_ICON.CLEAR
-        : INPUT_ICON.SEARCH
-    )
+    setActiveIcon(event.target.value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
   }
 
   const getIcon = () => {
