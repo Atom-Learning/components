@@ -65,8 +65,7 @@ const StyledTriggerList = styled(List, {
     appearance: {
       uppercase: {
         textTransform: 'uppercase'
-      },
-      default: {}
+      }
     }
   }
 })
@@ -74,7 +73,7 @@ const StyledTriggerList = styled(List, {
 export const TriggerListWrapper: React.FC<ListProps> = ({
   children,
   theme,
-  appearance = 'default',
+  appearance,
   enableTabScrolling,
   ...rest
 }) => {
