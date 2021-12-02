@@ -15,7 +15,6 @@ const StyledTabTrigger = styled(Trigger, {
   variants: {
     theme: {
       light: {
-        bg: 'white',
         '&[data-state="active"]': {
           color: '$primary',
           fontWeight: 600,

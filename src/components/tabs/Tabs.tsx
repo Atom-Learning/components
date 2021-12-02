@@ -30,7 +30,6 @@ const StyledTabContent = styled(Content, {
   variants: {
     theme: {
       light: {
-        bg: 'white',
         color: '$textForeground'
       },
       dark: {
