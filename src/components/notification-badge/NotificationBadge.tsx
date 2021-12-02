@@ -36,7 +36,7 @@ export const NotificationBadge: React.FC<NotificationBadgeProps> = ({
   children
 }) => (
   <StyledWrapper>
-    {value ? <StyledBadge role="status">{value}</StyledBadge> : ''}
+    {!!value && <StyledBadge role="status">{value}</StyledBadge>}
     {children}
   </StyledWrapper>
 )
