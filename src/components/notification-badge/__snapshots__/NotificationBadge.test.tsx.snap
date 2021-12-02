@@ -6,17 +6,26 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     position: relative;
   }
 
-  .c-gHsBZI {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-DBukb {
     font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
-    top: calc(var(--space-2)*-1);
-    left: 100%;
-    transform: translateX(-50%);
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
     border-radius: var(--radii-round);
     padding: var(--space-1);
     height: var(--sizes-2);
     min-width: var(--sizes-2);
     text-align: center;
+    color: #fff;
+    background: var(--colors-primary);
   }
 
   .c-fDzwZw {
@@ -45,11 +54,6 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-gHsBZI-cmSFZU-theme-primary {
-    background: var(--colors-primary);
-    color: #fff;
-  }
-
   .c-fDzwZw-PrXKS-size-lg {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -101,7 +105,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     class="c-PJLV c-cmpvrW"
   >
     <div
-      class="c-PJLV c-gHsBZI c-gHsBZI-cmSFZU-theme-primary"
+      class="c-dhzjXW c-DBukb"
       role="status"
     >
       3

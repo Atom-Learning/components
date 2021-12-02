@@ -1,11 +1,11 @@
 ---
-title: NotificationBadge
+title: Notification Badge
 component: NotificationBadge
 description: A badge that wraps content and displays a notification
-category: Layout
+category: Feedback
 ---
 
-The NotificationBadge component is a lightweight wrapper for content such as ActionIcons, but can be wrapped around anything.
+The NotificationBadge component is a lightweight wrapper for content such as ActionIcons, but can be wrapped around any block-level element.
 
 It displays a badge in top right of the content it is wrapping, which displays a `value` passed in as a prop. This could be, for example, the number of filters selected on a select filters badge.
 
@@ -19,21 +19,15 @@ It displays a badge in top right of the content it is wrapping, which displays a
 
 ## Value
 
-Whilst you would normally want to display a number, the `value` prop also supports strings.
-
-## Themes
-
-The component accepts a `theme` prop of either `primary`, `dark`. Default is `primary`.
+Whilst you would normally want to display a number, the `value` prop also supports strings. Here are some usage examples:
 
 ```tsx preview
-<NotificationBadge value={1}>
-  <ActionIcon appearance="outline" size="lg" isRounded>
+<NotificationBadge value={88}>
+  <ActionIcon appearance="outline" size="lg">
     <Icon is={Controls} />
   </ActionIcon>
 </NotificationBadge>
-<NotificationBadge theme="dark" value={2}>
-  <ActionIcon appearance="outline" size="lg" isRounded>
-    <Icon is={Controls} />
-  </ActionIcon>
+<NotificationBadge value="hi">
+  <Button theme="warning">I'm a button!</Button>
 </NotificationBadge>
 ```

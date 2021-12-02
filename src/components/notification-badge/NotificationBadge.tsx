@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Box } from '../box'
+import { Flex } from '../flex'
 
 import { styled } from '~/stitches'
 
@@ -8,29 +9,22 @@ const StyledWrapper = styled(Box, {
   position: 'relative'
 })
 
-const StyledBadge = styled(Box, {
+const StyledBadge = styled(Flex, {
   fontFamily: '$body',
+  fontSize: '$sm',
+  flexDirection: 'column',
+  justifyContent: 'center',
   position: 'absolute',
-  top: '-$2',
-  left: '100%',
-  transform: 'translateX(-50%)',
+  top: '0',
+  right: '0',
+  transform: 'translate(50%, -50%)',
   borderRadius: '$round',
   p: '$1',
   height: '$2',
   minWidth: '$2',
   textAlign: 'center',
-  variants: {
-    theme: {
-      primary: {
-        bg: '$primary',
-        color: '#fff'
-      },
-      dark: {
-        bg: '$tonal600',
-        color: '#fff'
-      }
-    }
-  }
+  color: '#fff',
+  bg: '$primary'
 })
 
 type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {
@@ -38,14 +32,11 @@ type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {
 }
 
 export const NotificationBadge: React.FC<NotificationBadgeProps> = ({
-  theme = 'primary',
   value,
   children
 }) => (
   <StyledWrapper>
-    <StyledBadge role="status" theme={theme}>
-      {value}
-    </StyledBadge>
+    <StyledBadge role="status">{value}</StyledBadge>
     {children}
   </StyledWrapper>
 )
