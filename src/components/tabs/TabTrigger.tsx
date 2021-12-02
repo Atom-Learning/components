@@ -5,7 +5,6 @@ import { opacify } from 'polished'
 import { styled, theme } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
-  textTransform: 'uppercase',
   cursor: 'pointer',
   flexShrink: 0,
   fontFamily: '$body',
