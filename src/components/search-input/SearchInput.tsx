@@ -28,14 +28,12 @@ const StyledIcon = styled(Icon, {
       sm: {
         top: '$2',
         right: '$2',
-        size: '$1',
-        ml: '$5'
+        size: '$1'
       },
       md: {
         top: 10,
         right: 10,
-        size: 20,
-        ml: '$6'
+        size: 20
       }
     }
   }
@@ -57,18 +55,18 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   const [inputValue, setInputValue] = React.useState<string | number>(
     value || ''
   )
-  const [isClearVisible, setIsClearVisible] = React.useState<INPUT_ICON>(
+  const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
     value && value?.toString().length > 0 ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
   )
 
   const handleClear = () => {
     setInputValue('')
-    setIsClearVisible(INPUT_ICON.SEARCH)
+    setActiveIcon(INPUT_ICON.SEARCH)
   }
 
   const handleOnChange = (event) => {
     setInputValue(event.target.value)
-    setIsClearVisible(
+    setActiveIcon(
       event.target.value.toString().length > 0
         ? INPUT_ICON.CLEAR
         : INPUT_ICON.SEARCH
@@ -76,13 +74,12 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   }
 
   const getIcon = () => {
-    if (isClearVisible === INPUT_ICON.SEARCH)
+    if (activeIcon === INPUT_ICON.SEARCH)
       return <StyledIcon is={Search} size={size} />
 
     return (
       <ActionIcon
         label={clearText}
-        appearance="simple"
         theme="neutral"
         css={{ bottom: 4, position: 'absolute', right: 0 }}
         onClick={handleClear}
