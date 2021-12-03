@@ -82,6 +82,15 @@ exports[`SearchInput component renders 1`] = `
   .c-PJLV-icmpvrW-css {
     position: relative;
   }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 <div>
@@ -89,13 +98,13 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-hvMhuR c-hvMhuR-OveXb-size-md"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -236,6 +245,15 @@ exports[`SearchInput component renders clear button 1`] = `
     position: relative;
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
   .c-fDzwZw-ialwQu-css {
     position: absolute;
     top: 0;
@@ -253,7 +271,7 @@ exports[`SearchInput component renders clear button 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value="testing"
     />

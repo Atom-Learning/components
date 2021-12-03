@@ -71,7 +71,13 @@ export const SearchInput: React.FC<SearchInputProps> = ({
 
   const getIcon = () => {
     if (activeIcon === INPUT_ICON.SEARCH)
-      return <StyledIcon is={Search} size={size} />
+      return (
+        <StyledIcon
+          is={Search}
+          size={size}
+          css={{ size: size == 'sm' ? '$1' : 20 }}
+        />
+      )
 
     return (
       <ActionIcon
@@ -94,6 +100,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
         {...remainingProps}
         value={inputValue}
         onChange={handleOnChange}
+        css={{ pr: size === 'sm' ? '$5' : '$6' }}
       />
       {getIcon()}
     </Box>
