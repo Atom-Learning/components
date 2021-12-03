@@ -2,13 +2,11 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
   }
 
   .c-fZTBsJ {
@@ -43,18 +41,40 @@ exports[`SearchInput component renders 1`] = `
     color: var(--colors-tonal300);
     opacity: 1;
   }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 }
 
 @media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
   .c-dbrbZt-hemXWm-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 2;
-  }
-
-  .c-fZTBsJ-pHZal-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
   }
 }
 
@@ -63,18 +83,13 @@ exports[`SearchInput component renders 1`] = `
     position: relative;
   }
 
-  .c-dbrbZt-iiElkIc-css {
-    color: var(--colors-tonal300);
-    pointer-events: none;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 10px;
-    left: 10px;
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
   }
 
-  .c-fZTBsJ-icSgxUp-css {
-    padding-left: var(--space-6);
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
   }
 }
 
@@ -82,9 +97,14 @@ exports[`SearchInput component renders 1`] = `
   <div
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iiElkIc-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -97,10 +117,180 @@ exports[`SearchInput component renders 1`] = `
         r="6"
       />
     </svg>
+  </div>
+</div>
+`;
+
+exports[`SearchInput component renders clear button 1`] = `
+@media  {
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+}
+
+@media  {
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+}
+
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fDzwZw-ialwQu-css {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-icmpvrW-css"
+  >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-icSgxUp-css"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
+      value="testing"
     />
+    <button
+      aria-label="Clear"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
