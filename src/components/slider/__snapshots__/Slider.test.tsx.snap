@@ -2,7 +2,7 @@
 
 exports[`Slider component renders 1`] = `
 @media  {
-  .c-kpVScu {
+  .c-iLExMP {
     align-items: center;
     display: flex;
     position: relative;
@@ -11,39 +11,47 @@ exports[`Slider component renders 1`] = `
     user-select: none;
   }
 
-  .c-kpVScu[data-orientation="horizontal"] {
+  .c-iLExMP[data-orientation="horizontal"] {
     height: var(--sizes-0);
   }
 
-  .c-kpVScu[data-orientation="vertical"] {
+  .c-iLExMP[data-orientation="vertical"] {
     flex-direction: column;
     width: var(--sizes-0);
   }
 
-  .c-kQuKPW {
+  .c-iLExMP[data-disabled] {
+    cursor: not-allowed;
+  }
+
+  .c-unqlq {
     background: white;
-    border: 1px inset var(--colors-tonal200);
     border-radius: var(--radii-round);
     flex-grow: 1;
     position: relative;
   }
 
-  .c-kQuKPW[data-orientation="horizontal"] {
+  .c-unqlq[data-orientation="horizontal"] {
     height: var(--sizes-0);
   }
 
-  .c-kQuKPW[data-orientation="vertical"] {
+  .c-unqlq[data-orientation="vertical"] {
     width: var(--sizes-0);
   }
 
-  .c-kpcewD {
+  .c-dLnWVA {
     background: var(--colors-primary);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
   }
 
-  .c-jrtSur {
+  .c-dLnWVA[data-disabled] {
+    background: var(--colors-tonal100);
+    cursor: not-allowed;
+  }
+
+  .c-hLIhMj {
     background: var(--colors-primaryMid);
     border-radius: var(--radii-round);
     cursor: pointer;
@@ -52,30 +60,40 @@ exports[`Slider component renders 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-jrtSur:hover {
+  .c-hLIhMj:hover {
     background: var(--colors-primaryDark);
   }
 
-  .c-jrtSur:focus {
+  .c-hLIhMj:focus {
     outline: 2px solid var(--colors-primaryMid);
     outline-offset: 2px;
+  }
+
+  .c-hLIhMj[data-disabled] {
+    background: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-iLExMP-bUKODi-border-solid .c-unqlq {
+    border: 1px inset var(--colors-tonal200);
   }
 }
 
 <div>
   <span
     aria-disabled="false"
-    aria-label="label"
-    class="c-kpVScu"
+    class="c-iLExMP c-iLExMP-bUKODi-border-solid"
     data-orientation="horizontal"
     style="--radix-slider-thumb-transform: translateX(-50%);"
   >
     <span
-      class="c-kQuKPW"
+      class="c-unqlq"
       data-orientation="horizontal"
     >
       <span
-        class="c-kpcewD"
+        class="c-dLnWVA"
         data-orientation="horizontal"
         style="left: 0%; right: 50%;"
       />
@@ -88,7 +106,7 @@ exports[`Slider component renders 1`] = `
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="50"
-        class="c-jrtSur"
+        class="c-hLIhMj"
         data-orientation="horizontal"
         data-radix-collection-item=""
         role="slider"

@@ -3,6 +3,15 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+const StyledTrack = styled(Track, {
+  bg: 'white',
+  borderRadius: '$round',
+  flexGrow: 1,
+  position: 'relative',
+  '&[data-orientation="horizontal"]': { height: '$0' },
+  '&[data-orientation="vertical"]': { width: '$0' }
+})
+
 const StyledSlider = styled(Root, {
   alignItems: 'center',
   display: 'flex',
@@ -15,24 +24,26 @@ const StyledSlider = styled(Root, {
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
     width: '$0'
+  },
+  '&[data-disabled]': { cursor: 'not-allowed' },
+  variants: {
+    border: {
+      none: {
+        [`${StyledTrack}`]: { border: '0' }
+      },
+      solid: {
+        [`${StyledTrack}`]: { border: '1px inset $tonal200' }
+      }
+    }
   }
-})
-
-const StyledTrack = styled(Track, {
-  bg: 'white',
-  border: '1px inset $tonal200',
-  borderRadius: '$round',
-  flexGrow: 1,
-  position: 'relative',
-  '&[data-orientation="horizontal"]': { height: '$0' },
-  '&[data-orientation="vertical"]': { width: '$0' }
 })
 
 const StyledRange = styled(Range, {
   bg: '$primary',
   borderRadius: '$round',
   height: '100%',
-  position: 'absolute'
+  position: 'absolute',
+  '&[data-disabled]': { bg: '$tonal100', cursor: 'not-allowed' }
 })
 
 const StyledThumb = styled(Thumb, {
@@ -47,15 +58,26 @@ const StyledThumb = styled(Thumb, {
   '&:focus': {
     outline: '2px solid $primaryMid',
     outlineOffset: '2px'
-  }
+  },
+  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
-type SliderProps = React.ComponentProps<typeof StyledSlider>
+export type SliderProps = React.ComponentProps<typeof StyledSlider>
 
-export const Slider: React.FC<SliderProps> = (props) => {
-  const thumbs = props.value || props.defaultValue
+export const Slider: React.FC<SliderProps> = ({
+  value,
+  defaultValue,
+  border = 'solid',
+  ...remainingProps
+}) => {
+  const thumbs = value || defaultValue
   return (
-    <StyledSlider {...props}>
+    <StyledSlider
+      border={border}
+      defaultValue={defaultValue}
+      value={value}
+      {...remainingProps}
+    >
       <StyledTrack>
         <StyledRange />
       </StyledTrack>
