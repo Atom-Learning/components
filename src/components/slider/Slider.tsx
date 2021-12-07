@@ -3,8 +3,10 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { Box } from '../box'
+import { Text } from '../text'
+
 const StyledTrack = styled(Track, {
-  bg: 'white',
   borderRadius: '$round',
   flexGrow: 1,
   position: 'relative',
@@ -27,12 +29,12 @@ const StyledSlider = styled(Root, {
   },
   '&[data-disabled]': { cursor: 'not-allowed' },
   variants: {
-    border: {
-      none: {
-        [`${StyledTrack}`]: { border: '0' }
+    theme: {
+      light: {
+        [`${StyledTrack}`]: { bg: '#fff' }
       },
-      solid: {
-        [`${StyledTrack}`]: { border: '1px inset $tonal200' }
+      dark: {
+        [`${StyledTrack}`]: { bg: '$tonal200' }
       }
     }
   }
@@ -62,27 +64,71 @@ const StyledThumb = styled(Thumb, {
   '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
-export type SliderProps = React.ComponentProps<typeof StyledSlider>
+const getPercentValue = (value: number, min: number, max: number): number => {
+  return ((value - min) / (max - min)) * 100
+}
+
+const getTransformValue = (value: number, min: number, max: number): number => {
+  const percentage = getPercentValue(value, min, max)
+
+  if (percentage <= 10) return 0
+  if (percentage >= 90) return 100
+  return 50
+}
+
+export type SliderProps = React.ComponentProps<typeof StyledSlider> & {
+  steps: [{ value: number; label: string }]
+}
 
 export const Slider: React.FC<SliderProps> = ({
+  steps = [],
   value,
   defaultValue,
-  border = 'solid',
+  min = 0,
+  max = 100,
+  theme = 'light',
   ...remainingProps
 }) => {
   const thumbs = value || defaultValue
   return (
-    <StyledSlider
-      border={border}
-      defaultValue={defaultValue}
-      value={value}
-      {...remainingProps}
-    >
-      <StyledTrack>
-        <StyledRange />
-      </StyledTrack>
-      {thumbs?.length && thumbs.map((_, i) => <StyledThumb key={i} />)}
-    </StyledSlider>
+    <>
+      <StyledSlider
+        theme={theme}
+        defaultValue={defaultValue}
+        value={value}
+        min={min}
+        max={max}
+        {...remainingProps}
+      >
+        <StyledTrack>
+          <StyledRange />
+        </StyledTrack>
+        {thumbs?.length && thumbs.map((_, i) => <StyledThumb key={i} />)}
+      </StyledSlider>
+
+      {steps?.length > 0 && (
+        <Box css={{ width: '100%', position: 'relative', mb: '$6' }}>
+          {steps.map((step) => (
+            <Text
+              key={`sliderStep${step.label}`}
+              css={{
+                position: 'absolute',
+                top: '$3',
+                left: `${getPercentValue(step.value, min, max)}%`,
+                transform: `translate(-${getTransformValue(
+                  step.value,
+                  min,
+                  max
+                )}%, 0)`,
+                color: '$tonal300'
+              }}
+            >
+              {step.label}
+            </Text>
+          ))}
+        </Box>
+      )}
+    </>
   )
 }
 

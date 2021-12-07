@@ -24,18 +24,17 @@ exports[`Slider component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-unqlq {
-    background: white;
+  .c-jJNnGi {
     border-radius: var(--radii-round);
     flex-grow: 1;
     position: relative;
   }
 
-  .c-unqlq[data-orientation="horizontal"] {
+  .c-jJNnGi[data-orientation="horizontal"] {
     height: var(--sizes-0);
   }
 
-  .c-unqlq[data-orientation="vertical"] {
+  .c-jJNnGi[data-orientation="vertical"] {
     width: var(--sizes-0);
   }
 
@@ -76,20 +75,20 @@ exports[`Slider component renders 1`] = `
 }
 
 @media  {
-  .c-iLExMP-bUKODi-border-solid .c-unqlq {
-    border: 1px inset var(--colors-tonal200);
+  .c-iLExMP-gTzpAZ-theme-light .c-jJNnGi {
+    background: #fff;
   }
 }
 
 <div>
   <span
     aria-disabled="false"
-    class="c-iLExMP c-iLExMP-bUKODi-border-solid"
+    class="c-iLExMP c-iLExMP-gTzpAZ-theme-light"
     data-orientation="horizontal"
     style="--radix-slider-thumb-transform: translateX(-50%);"
   >
     <span
-      class="c-unqlq"
+      class="c-jJNnGi"
       data-orientation="horizontal"
     >
       <span
