@@ -107,11 +107,11 @@ exports[`SliderField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-iLExMP-SDEhp-theme-light .c-nJgcq {
-    background: #fff;
+  .c-iLExMP-loVuWq-theme-dark .c-nJgcq {
+    background: var(--colors-tonal200);
   }
 
-  .c-iLExMP-SDEhp-theme-light .c-nJgcq[data-disabled] {
+  .c-iLExMP-loVuWq-theme-dark .c-nJgcq[data-disabled] {
     background: var(--colors-tonal100);
   }
 }
@@ -144,7 +144,7 @@ exports[`SliderField component renders 1`] = `
       </div>
       <span
         aria-disabled="false"
-        class="c-iLExMP c-iLExMP-SDEhp-theme-light"
+        class="c-iLExMP c-iLExMP-loVuWq-theme-dark"
         data-orientation="horizontal"
         style="--radix-slider-thumb-transform: translateX(-50%);"
       >

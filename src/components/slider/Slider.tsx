@@ -92,7 +92,7 @@ export const Slider: React.FC<SliderProps> = ({
   defaultValue,
   min = 0,
   max = 100,
-  theme = 'light',
+  theme = 'dark',
   ...remainingProps
 }) => {
   const thumbs = value || defaultValue

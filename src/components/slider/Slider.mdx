@@ -25,10 +25,38 @@ Should you wish to have more than one control on the slider, you can pass those 
 <Slider defaultValue={[25, 75]} />
 ```
 
-## Styling
+## Steps and Labels
 
-The `Slider` track defaults to having a border, but should you wish to remove this you can pass `border="none"`
+The slider can output an array of labels which appear at given value points along the slider. These are passed in to the `steps` property using an array objects that contain a label and a value.
 
 ```tsx preview
-<Slider border="none" defaultValue={[50]} />
+const steps = [
+    { value: 0, label: "min" },
+    { value: 50, label: "mid" },
+    { value: 100, label: "max" }
+]
+
+<Slider steps={steps} defaultValue={[50]} />
+```
+
+These values should be limited to the `min` and `max` values that can be passed in to the slider object, as it is not limited to a 0-100 range.
+
+The steps work well with the built in `step` property, which defaults to 1 and changes the size of each movement. For example, this would limit the slider to three values only.
+
+```tsx preview
+const steps = [
+    { value: 10, label: "min" },
+    { value: 15, label: "mid" },
+    { value: 20, label: "max" }
+]
+
+<Slider steps={steps} step={5} min={10} max={20} defaultValue={[15]} />
+```
+
+## Styling
+
+Depending on the background of your page, you can change the theme of the track to be either light or dark using `theme="light"`. Default is `theme="dark"`.
+
+```tsx preview
+<Slider theme="light" defaultValue={[50]} />
 ```
