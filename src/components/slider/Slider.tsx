@@ -31,10 +31,16 @@ const StyledSlider = styled(Root, {
   variants: {
     theme: {
       light: {
-        [`${StyledTrack}`]: { bg: '#fff' }
+        [`${StyledTrack}`]: {
+          bg: '#fff',
+          '&[data-disabled]': { bg: '$tonal100' }
+        }
       },
       dark: {
-        [`${StyledTrack}`]: { bg: '$tonal200' }
+        [`${StyledTrack}`]: {
+          bg: '$tonal200',
+          '&[data-disabled]': { bg: '$tonal100' }
+        }
       }
     }
   }
@@ -45,7 +51,7 @@ const StyledRange = styled(Range, {
   borderRadius: '$round',
   height: '100%',
   position: 'absolute',
-  '&[data-disabled]': { bg: '$tonal100', cursor: 'not-allowed' }
+  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
 const StyledThumb = styled(Thumb, {

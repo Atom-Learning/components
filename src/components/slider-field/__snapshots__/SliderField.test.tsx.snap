@@ -48,15 +48,15 @@ exports[`SliderField component renders 1`] = `
     width: var(--space-1);
   }
 
-  .c-dLnWVA {
+  .c-bOJGDH {
     background: var(--colors-primary);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
   }
 
-  .c-dLnWVA[data-disabled] {
-    background: var(--colors-tonal100);
+  .c-bOJGDH[data-disabled] {
+    background: var(--colors-tonal200);
     cursor: not-allowed;
   }
 
@@ -107,8 +107,12 @@ exports[`SliderField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-iLExMP-hiYDqK-theme-light .c-nJgcq {
+  .c-iLExMP-SDEhp-theme-light .c-nJgcq {
     background: #fff;
+  }
+
+  .c-iLExMP-SDEhp-theme-light .c-nJgcq[data-disabled] {
+    background: var(--colors-tonal100);
   }
 }
 
@@ -140,7 +144,7 @@ exports[`SliderField component renders 1`] = `
       </div>
       <span
         aria-disabled="false"
-        class="c-iLExMP c-iLExMP-hiYDqK-theme-light"
+        class="c-iLExMP c-iLExMP-SDEhp-theme-light"
         data-orientation="horizontal"
         style="--radix-slider-thumb-transform: translateX(-50%);"
       >
@@ -149,7 +153,7 @@ exports[`SliderField component renders 1`] = `
           data-orientation="horizontal"
         >
           <span
-            class="c-dLnWVA"
+            class="c-bOJGDH"
             data-orientation="horizontal"
             style="left: 0%; right: 50%;"
           />
