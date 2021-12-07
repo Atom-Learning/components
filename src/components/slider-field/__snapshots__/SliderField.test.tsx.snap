@@ -34,18 +34,18 @@ exports[`SliderField component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-jJNnGi {
+  .c-nJgcq {
     border-radius: var(--radii-round);
     flex-grow: 1;
     position: relative;
   }
 
-  .c-jJNnGi[data-orientation="horizontal"] {
-    height: var(--sizes-0);
+  .c-nJgcq[data-orientation="horizontal"] {
+    height: var(--space-1);
   }
 
-  .c-jJNnGi[data-orientation="vertical"] {
-    width: var(--sizes-0);
+  .c-nJgcq[data-orientation="vertical"] {
+    width: var(--space-1);
   }
 
   .c-dLnWVA {
@@ -107,7 +107,7 @@ exports[`SliderField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-iLExMP-gTzpAZ-theme-light .c-jJNnGi {
+  .c-iLExMP-hiYDqK-theme-light .c-nJgcq {
     background: #fff;
   }
 }
@@ -140,12 +140,12 @@ exports[`SliderField component renders 1`] = `
       </div>
       <span
         aria-disabled="false"
-        class="c-iLExMP c-iLExMP-gTzpAZ-theme-light"
+        class="c-iLExMP c-iLExMP-hiYDqK-theme-light"
         data-orientation="horizontal"
         style="--radix-slider-thumb-transform: translateX(-50%);"
       >
         <span
-          class="c-jJNnGi"
+          class="c-nJgcq"
           data-orientation="horizontal"
         >
           <span

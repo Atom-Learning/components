@@ -10,8 +10,8 @@ const StyledTrack = styled(Track, {
   borderRadius: '$round',
   flexGrow: 1,
   position: 'relative',
-  '&[data-orientation="horizontal"]': { height: '$0' },
-  '&[data-orientation="vertical"]': { width: '$0' }
+  '&[data-orientation="horizontal"]': { height: '$space$1' },
+  '&[data-orientation="vertical"]': { width: '$space$1' }
 })
 
 const StyledSlider = styled(Root, {
