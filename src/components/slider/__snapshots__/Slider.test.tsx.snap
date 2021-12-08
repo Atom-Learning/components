@@ -2,26 +2,28 @@
 
 exports[`Slider component renders 1`] = `
 @media  {
-  .c-iLExMP {
+  .c-eqsMSy {
     align-items: center;
     display: flex;
     position: relative;
     touch-action: none;
     -webkit-user-select: none;
     user-select: none;
+    cursor: pointer;
   }
 
-  .c-iLExMP[data-orientation="horizontal"] {
-    height: var(--sizes-0);
+  .c-eqsMSy[data-orientation="horizontal"] {
+    height: var(--sizes-1);
   }
 
-  .c-iLExMP[data-orientation="vertical"] {
+  .c-eqsMSy[data-orientation="vertical"] {
     flex-direction: column;
-    width: var(--sizes-0);
+    width: var(--sizes-1);
   }
 
-  .c-iLExMP[data-disabled] {
+  .c-eqsMSy[data-disabled] {
     cursor: not-allowed;
+    background: var(--colors-tonal100);
   }
 
   .c-nJgcq {
@@ -50,44 +52,39 @@ exports[`Slider component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-hLIhMj {
+  .c-gCMpHY {
     background: var(--colors-primaryMid);
     border-radius: var(--radii-round);
-    cursor: pointer;
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
 
-  .c-hLIhMj:hover {
+  .c-gCMpHY:hover {
     background: var(--colors-primaryDark);
   }
 
-  .c-hLIhMj:focus {
+  .c-gCMpHY:focus {
     outline: 2px solid var(--colors-primaryMid);
     outline-offset: 2px;
   }
 
-  .c-hLIhMj[data-disabled] {
+  .c-gCMpHY[data-disabled] {
     background: var(--colors-tonal200);
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-iLExMP-loVuWq-theme-dark .c-nJgcq {
+  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
-  }
-
-  .c-iLExMP-loVuWq-theme-dark .c-nJgcq[data-disabled] {
-    background: var(--colors-tonal100);
   }
 }
 
 <div>
   <span
     aria-disabled="false"
-    class="c-iLExMP c-iLExMP-loVuWq-theme-dark"
+    class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
     data-orientation="horizontal"
     style="--radix-slider-thumb-transform: translateX(-50%);"
   >
@@ -109,7 +106,7 @@ exports[`Slider component renders 1`] = `
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="50"
-        class="c-hLIhMj"
+        class="c-gCMpHY"
         data-orientation="horizontal"
         data-radix-collection-item=""
         role="slider"

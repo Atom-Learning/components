@@ -2,9 +2,9 @@ import { Range, Root, Thumb, Track } from '@radix-ui/react-slider'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { CSSWrapper } from '~/utilities'
 
-import { Box } from '../box'
-import { Text } from '../text'
+import { SliderSteps, SliderStepsType } from './SliderSteps'
 
 const StyledTrack = styled(Track, {
   borderRadius: '$round',
@@ -20,27 +20,22 @@ const StyledSlider = styled(Root, {
   position: 'relative',
   touchAction: 'none',
   userSelect: 'none',
+  cursor: 'pointer',
   '&[data-orientation="horizontal"]': {
-    height: '$0'
+    height: '$1'
   },
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
-    width: '$0'
+    width: '$1'
   },
-  '&[data-disabled]': { cursor: 'not-allowed' },
+  '&[data-disabled]': { cursor: 'not-allowed', bg: '$tonal100' },
   variants: {
     theme: {
       light: {
-        [`${StyledTrack}`]: {
-          bg: '#fff',
-          '&[data-disabled]': { bg: '$tonal100' }
-        }
+        [`${StyledTrack}`]: { bg: '#fff' }
       },
-      dark: {
-        [`${StyledTrack}`]: {
-          bg: '$tonal200',
-          '&[data-disabled]': { bg: '$tonal100' }
-        }
+      tonal: {
+        [`${StyledTrack}`]: { bg: '$tonal200' }
       }
     }
   }
@@ -57,7 +52,6 @@ const StyledRange = styled(Range, {
 const StyledThumb = styled(Thumb, {
   bg: '$primaryMid',
   borderRadius: '$round',
-  cursor: 'pointer',
   display: 'block',
   size: '$1',
   '&:hover': {
@@ -70,21 +64,8 @@ const StyledThumb = styled(Thumb, {
   '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
-const getPercentValue = (value: number, min: number, max: number): number => {
-  return ((value - min) / (max - min)) * 100
-}
-
-const getTransformValue = (value: number, min: number, max: number): number => {
-  const percentage = getPercentValue(value, min, max)
-
-  if (percentage <= 10) return 0
-  if (percentage >= 90) return 100
-  return 50
-}
-
-export type SliderProps = React.ComponentProps<typeof StyledSlider> & {
-  steps: [{ value: number; label: string }]
-}
+export type SliderProps = React.ComponentProps<typeof StyledSlider> &
+  SliderStepsType
 
 export const Slider: React.FC<SliderProps> = ({
   steps = [],
@@ -92,12 +73,13 @@ export const Slider: React.FC<SliderProps> = ({
   defaultValue,
   min = 0,
   max = 100,
-  theme = 'dark',
+  theme = 'tonal',
+  css,
   ...remainingProps
 }) => {
   const thumbs = value || defaultValue
   return (
-    <>
+    <CSSWrapper css={css}>
       <StyledSlider
         theme={theme}
         defaultValue={defaultValue}
@@ -112,29 +94,8 @@ export const Slider: React.FC<SliderProps> = ({
         {thumbs?.length && thumbs.map((_, i) => <StyledThumb key={i} />)}
       </StyledSlider>
 
-      {steps?.length > 0 && (
-        <Box css={{ width: '100%', position: 'relative', mb: '$6' }}>
-          {steps.map((step) => (
-            <Text
-              key={`sliderStep${step.label}`}
-              css={{
-                position: 'absolute',
-                top: '$3',
-                left: `${getPercentValue(step.value, min, max)}%`,
-                transform: `translate(-${getTransformValue(
-                  step.value,
-                  min,
-                  max
-                )}%, 0)`,
-                color: '$tonal300'
-              }}
-            >
-              {step.label}
-            </Text>
-          ))}
-        </Box>
-      )}
-    </>
+      <SliderSteps min={min} max={max} steps={steps} />
+    </CSSWrapper>
   )
 }
 
