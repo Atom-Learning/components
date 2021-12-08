@@ -20,27 +20,23 @@ const SliderStepsContainer = styled('div', {
   width: '100%'
 })
 
+const getPercentValue = (value: number, min: number, max: number): number => {
+  return ((value - min) / (max - min)) * 100
+}
+
+const getTransformValue = (value: number, min: number, max: number): number => {
+  const percentage = getPercentValue(value, min, max)
+
+  if (percentage <= 10) return 0
+  if (percentage >= 90) return 100
+  return 50
+}
+
 export const SliderSteps: React.FC<SliderStepsProps> = ({
   min,
   max,
   steps
 }) => {
-  const getPercentValue = (value: number, min: number, max: number): number => {
-    return ((value - min) / (max - min)) * 100
-  }
-
-  const getTransformValue = (
-    value: number,
-    min: number,
-    max: number
-  ): number => {
-    const percentage = getPercentValue(value, min, max)
-
-    if (percentage <= 10) return 0
-    if (percentage >= 90) return 100
-    return 50
-  }
-
   if (steps.length === 0) return null
 
   return (
