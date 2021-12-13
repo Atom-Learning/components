@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { SliderPointType } from '.'
 
 import { Text } from '../text'
@@ -6,6 +6,7 @@ import { Text } from '../text'
 export type SliderValueType = {
   outputLabel: string
   emptyData?: SliderPointType
+  item?: { single: string; plural: string }
 }
 
 type SliderValueProps = SliderValueType & {
@@ -15,7 +16,8 @@ type SliderValueProps = SliderValueType & {
 export const SliderValue: React.FC<SliderValueProps> = ({
   value = [],
   outputLabel = 'Current value is $VALUE',
-  emptyData
+  emptyData,
+  item = { single: '', plural: '' }
 }) => {
   if (value.length > 1) return null
 
@@ -23,7 +25,7 @@ export const SliderValue: React.FC<SliderValueProps> = ({
 
   const outputString = outputLabel
     .replace('$VALUE', outputValue.toString())
-    .replace('$S', outputValue > 1 ? 's' : '')
+    .replace('$ITEM', outputValue === 1 ? item?.single : item?.plural)
 
   return (
     <Text css={{ mt: '$4', color: '$tonal300', width: '100%' }}>

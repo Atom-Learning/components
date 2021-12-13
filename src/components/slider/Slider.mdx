@@ -72,7 +72,7 @@ NOTE: this will only work if there is only one value selected. In order to not o
 
 By default this simply outputs the value, however this can be customised in a number of ways. `outputLabel` can be passed, which is a string that must contain the `$VALUE`. This will be replaced with the value when it renders. A string is used so that the value can be placed wherever it needs to be in the output sentence, such as in the example below.
 
-The `outputLabel` also will turn the string `$S` into conditional plurals, i.e. 's' will be output if the value is greater than 1. This is also shown in the example review.
+You can also put the string `$ITEM` in `outputLabel`, which will be replaced with either a single or plural depending on the current value. This relies on the prop `item` being passed, which should be an object with two keys, `single` and `plural`. These strings allow the handling of non standard plurals. This is shown in the example below.
 
 Another prop, `emptyData`, accepts a `label` and `value` object, and tells the output at what value the label should be replaced. This typically would be an empty state, such as in the example below.
 
@@ -80,8 +80,9 @@ Another prop, `emptyData`, accepts a `label` and `value` object, and tells the o
 <Slider
   defaultValue={[50]}
   showValue
-  outputLabel="You have selected $VALUE apple$S"
-  emptyData={{ label: 'No apples selected', value: 0 }}
+  outputLabel="You have selected $VALUE $ITEM"
+  item={{ single: 'goose', plural: 'geese' }}
+  emptyData={{ label: 'No geese selected', value: 0 }}
 />
 ```
 

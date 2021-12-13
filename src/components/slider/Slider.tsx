@@ -82,6 +82,7 @@ export const Slider: React.FC<SliderProps> = ({
   showValue = false,
   outputLabel,
   emptyData,
+  item,
   ...remainingProps
 }) => {
   const values = value || defaultValue
@@ -108,6 +109,7 @@ export const Slider: React.FC<SliderProps> = ({
           value={values}
           outputLabel={outputLabel}
           emptyData={emptyData}
+          item={item}
         />
       )}
     </CSSWrapper>
