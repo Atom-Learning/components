@@ -24,6 +24,7 @@ const Grid = styled('div', {
 export type CalendarTranslationProps = {
   monthNames?: string[]
   weekdayNames?: string[]
+  labels?: { open: string; next: string; previous: string }
 }
 
 type CalendarProps = DayzedInterface &
@@ -49,6 +50,7 @@ export const Calendar: React.FC<CalendarProps> = ({
   firstDayOfWeek = 0,
   monthNames = monthNamesShort,
   weekdayNames = weekdayNamesShort,
+  labels = { next: 'Next month', previous: 'Previous month' },
   ...remainingProps
 }) => {
   const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed({
@@ -65,7 +67,7 @@ export const Calendar: React.FC<CalendarProps> = ({
     >
       <Flex css={{ position: 'absolute', top: 0, right: '-$1' }}>
         <ActionIcon
-          label="Previous month"
+          label={labels.previous}
           theme="neutral"
           size="lg"
           {...getBackProps({ calendars })}
@@ -73,7 +75,7 @@ export const Calendar: React.FC<CalendarProps> = ({
           <Icon is={ChevronLeft} />
         </ActionIcon>
         <ActionIcon
-          label="Next month"
+          label={labels.next}
           theme="neutral"
           size="lg"
           {...getForwardProps({ calendars })}

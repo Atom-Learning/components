@@ -16,9 +16,10 @@ import { Icon } from '../icon/Icon'
 const StyledContent = styled(Content, {
   bg: 'white',
   borderRadius: '$1',
-  boxShadow: '$1',
+  boxShadow: '$2',
   maxWidth: '90vw',
-  p: '$sizes$1',
+  p: '$sizes$2',
+  pr: '$6',
   position: 'relative',
   '@allowMotion': {
     animationDuration: '75ms',
@@ -58,7 +59,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
   side = 'top',
   sideOffset = 8,
   closePopoverText = 'Close popover',
-  showCloseButton = false,
+  showCloseButton = true,
   size = 'md',
   ...remainingProps
 }) => (
@@ -73,7 +74,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
         as={Close}
         css={{ position: 'absolute', right: '$0', top: '$0' }}
         label={closePopoverText}
-        size="md"
+        size="lg"
         theme="neutral"
       >
         <Icon is={CloseIcon} />

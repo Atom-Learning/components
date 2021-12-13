@@ -16,6 +16,7 @@ export type DateInputProps = DayzedInterface &
     initialDate?: Date
     dateFormat?: string
     disabled?: boolean
+    size: 'sm' | 'md'
   }
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
@@ -27,6 +28,12 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       disabled,
       monthNames,
       weekdayNames,
+      size,
+      labels = {
+        open: 'Open calendar',
+        next: 'Next month',
+        previous: 'Previous month'
+      },
       ...remainingProps
     },
     ref
@@ -43,6 +50,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         <Input
           name="date"
           disabled={disabled}
+          size={size}
           {...remainingProps}
           onChange={(event) => setDate(event.target.value, true)}
           value={dateString}
@@ -53,16 +61,18 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
             <ActionIcon
               css={{ position: 'absolute', top: 0, right: 0 }}
               disabled={disabled}
-              label="Open calendar"
-              size="lg"
+              label={labels.open}
+              size={size === 'sm' ? 'md' : 'lg'}
               theme="neutral"
             >
               <Icon size="sm" is={CalendarEvent} />
             </ActionIcon>
           </Popover.Trigger>
           <Popover.Content
+            css={{ pr: '$sizes$2' }}
             side="bottom"
             align="end"
+            showCloseButton={false}
             onOpenAutoFocus={(e) => {
               e.preventDefault()
               if (date) {
@@ -84,6 +94,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               firstDayOfWeek={firstDayOfWeek}
               monthNames={monthNames}
               weekdayNames={weekdayNames}
+              labels={labels}
             />
           </Popover.Content>
         </Popover>

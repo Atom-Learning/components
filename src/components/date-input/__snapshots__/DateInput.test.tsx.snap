@@ -59,17 +59,18 @@ exports[`DateInput component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-kNRrVd {
+  .c-klXesr {
     background: white;
     border-radius: var(--radii-1);
-    box-shadow: var(--shadows-1);
+    box-shadow: var(--shadows-2);
     max-width: 90vw;
-    padding: var(--sizes-1);
+    padding: var(--sizes-2);
+    padding-right: var(--space-6);
     position: relative;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-kNRrVd {
+    .c-klXesr {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -77,25 +78,25 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-kNRrVd[data-state="open"][data-side="top"] {
+    .c-klXesr[data-state="open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-kNRrVd[data-state="open"][data-side="right"] {
+    .c-klXesr[data-state="open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-kNRrVd[data-state="open"][data-side="bottom"] {
+    .c-klXesr[data-state="open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-kNRrVd[data-state="open"][data-side="left"] {
+    .c-klXesr[data-state="open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -118,7 +119,7 @@ exports[`DateInput component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-kNRrVd-kUaMfZ-size-md {
+  .c-klXesr-kUaMfZ-size-md {
     max-width: 400px;
   }
 }
@@ -158,6 +159,10 @@ exports[`DateInput component renders 1`] = `
   .c-dbrbZt-ihFPSGE-css {
     height: 20px;
     width: 20px;
+  }
+
+  .c-klXesr-icFLuKp-css {
+    padding-right: var(--sizes-2);
   }
 }
 
