@@ -1,11 +1,12 @@
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { SliderPointType } from '.'
 
 import { Text } from '../text'
 
 export type SliderStepsType = {
-  steps: { value: number; label: string }[]
+  steps: SliderPointType[]
 }
 
 type SliderStepsProps = {

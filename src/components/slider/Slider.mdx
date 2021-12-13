@@ -60,6 +60,31 @@ The steps work well with the built in `step` property, which defaults to 1 and c
 />
 ```
 
+## Value output
+
+The slider can be set to display a label below the track displaying the current value selected. To do this, pass in the prop `showValue`.
+
+NOTE: this will only work if there is only one value selected. In order to not overly complicate the output, it is recommended to indicate multiple values using `steps` (see above). Should you pass in this prop with multiple values, the value output will not be rendered.
+
+```tsx preview
+<Slider defaultValue={[50]} showValue />
+```
+
+By default this simply outputs the value, however this can be customised in a number of ways. `outputLabel` can be passed, which is a string that must contain the `$VALUE`. This will be replaced with the value when it renders. A string is used so that the value can be placed wherever it needs to be in the output sentence, such as in the example below.
+
+The `outputLabel` also will turn the string `$S` into conditional plurals, i.e. 's' will be output if the value is greater than 1. This is also shown in the example review.
+
+Another prop, `emptyData`, accepts a `label` and `value` object, and tells the output at what value the label should be replaced. This typically would be an empty state, such as in the example below.
+
+```tsx preview
+<Slider
+  defaultValue={[50]}
+  showValue
+  outputLabel="You have selected $VALUE apple$S"
+  emptyData={{ label: 'No apples selected', position: 0 }}
+/>
+```
+
 ## Styling
 
 Depending on the background of your page, you can change the theme of the track to be either light or tonal using `theme="light"`. Default is `theme="tonal"`.
