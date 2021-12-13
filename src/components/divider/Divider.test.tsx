@@ -5,8 +5,14 @@ import * as React from 'react'
 import { Divider } from '.'
 
 describe('Divider component', () => {
-  it('renders', async () => {
-    const { container } = render(<Divider />)
+  it('renders horizontal divider', async () => {
+    const { container } = render(<Divider orientation="horizontal" />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders vertical divider', async () => {
+    const { container } = render(<Divider orientation="vertical" />)
 
     expect(container).toMatchSnapshot()
   })

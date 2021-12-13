@@ -2,15 +2,15 @@
 
 exports[`Table component renders 1`] = `
 @media  {
-  .c-kaWNwR {
-    border-collapse: collapse;
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
     width: 100%;
   }
 
-  .c-dKvdLF {
-    background: var(--colors-primaryDark);
+  .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -20,20 +20,10 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dKvdLF:first-of-type {
-    border-top-left-radius: var(--radii-0);
-    border-bottom-left-radius: var(--radii-0);
-  }
-
-  .c-dKvdLF:last-of-type {
-    border-top-right-radius: var(--radii-0);
-    border-bottom-right-radius: var(--radii-0);
-  }
-
-  .c-eMPXna {
+  .c-dOcJjJ {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal300);
+    color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -41,37 +31,66 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-eMPXna {
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dOcJjJ {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
+  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
+  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
     height: var(--sizes-4);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
   }
 }
 
 @media  {
-  .c-kaWNwR-iliYStP-css {
+  .c-cwQMhQ-icnGIKd-css {
     height: 100px;
     width: 400px;
-    color: var(--colors-primary500);
   }
 }
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-iNViGf-size-md c-kaWNwR-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-dKvdLF"
+          class="c-GSaiK"
         >
           Column A
         </th>
@@ -84,7 +103,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-dOcJjJ"
         >
           This is text
         </td>
@@ -97,7 +116,143 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-dOcJjJ"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
+exports[`Table component renders with a themed header 1`] = `
+@media  {
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-GSaiK {
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dOcJjJ {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dOcJjJ {
+    background: var(--colors-tonal50);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
+  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
+  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+    height: var(--sizes-4);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+    height: var(--sizes-5);
+  }
+
+  .c-PJLV-gmYsCp-theme-primary .c-GSaiK {
+    background: var(--colors-primary);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-icnGIKd-css {
+    height: 100px;
+    width: 400px;
+  }
+}
+
+<div>
+  <table
+    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+  >
+    <thead
+      class="c-PJLV c-PJLV-gmYsCp-theme-primary"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <th
+          class="c-GSaiK"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-dOcJjJ"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-dOcJjJ"
         >
           Footer 1
         </td>
@@ -109,15 +264,15 @@ exports[`Table component renders 1`] = `
 
 exports[`Table component renders with size set to lg 1`] = `
 @media  {
-  .c-kaWNwR {
-    border-collapse: collapse;
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
     font-family: var(--fonts-sans);
     font-size: var(--fontSizes-sm);
     width: 100%;
   }
 
-  .c-dKvdLF {
-    background: var(--colors-primaryDark);
+  .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -127,20 +282,10 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-dKvdLF:first-of-type {
-    border-top-left-radius: var(--radii-0);
-    border-bottom-left-radius: var(--radii-0);
-  }
-
-  .c-dKvdLF:last-of-type {
-    border-top-right-radius: var(--radii-0);
-    border-bottom-right-radius: var(--radii-0);
-  }
-
-  .c-eMPXna {
+  .c-dOcJjJ {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
-    color: var(--colors-tonal300);
+    color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
     padding: var(--space-2) var(--space-3);
@@ -148,41 +293,72 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  tr:nth-child(even) .c-eMPXna {
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dOcJjJ {
     background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-kaWNwR-iNViGf-size-md .c-eMPXna {
+  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
+  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
+  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-kaWNwR-ksfOaK-size-lg .c-eMPXna {
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
 
 @media  {
-  .c-kaWNwR-iliYStP-css {
+  .c-cwQMhQ-icnGIKd-css {
     height: 100px;
     width: 400px;
-    color: var(--colors-primary500);
   }
 }
 
 <div>
   <table
-    class="c-kaWNwR c-kaWNwR-ksfOaK-size-lg c-kaWNwR-iliYStP-css"
+    class="c-cwQMhQ c-cwQMhQ-lhkyUQ-size-lg c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
         class="c-PJLV"
       >
         <th
-          class="c-dKvdLF"
+          class="c-GSaiK"
         >
           Column A
         </th>
@@ -195,7 +371,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-dOcJjJ"
         >
           This is text
         </td>
@@ -208,7 +384,139 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-eMPXna"
+          class="c-dOcJjJ"
+        >
+          Footer 1
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
+exports[`Table component renders with square corners 1`] = `
+@media  {
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-GSaiK {
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dOcJjJ {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-dOcJjJ:first-child {
+    font-weight: bold;
+  }
+
+  tr:nth-child(odd) .c-dOcJjJ {
+    background: white;
+  }
+
+  tr:nth-child(even) .c-dOcJjJ {
+    background: var(--colors-tonal50);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
+  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
+  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+    height: var(--sizes-4);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
+  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+    height: var(--sizes-5);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-icnGIKd-css {
+    height: 100px;
+    width: 400px;
+  }
+}
+
+<div>
+  <table
+    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-icnGIKd-css"
+  >
+    <thead
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <th
+          class="c-GSaiK"
+        >
+          Column A
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-dOcJjJ"
+        >
+          This is text
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      class="c-PJLV"
+    >
+      <tr
+        class="c-PJLV"
+      >
+        <td
+          class="c-dOcJjJ"
         >
           Footer 1
         </td>

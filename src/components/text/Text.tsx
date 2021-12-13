@@ -1,7 +1,8 @@
 import * as React from 'react'
 
 import { CSS, styled } from '~/stitches'
-import { capsize, Override } from '~/utilities'
+import type { Override } from '~/utilities'
+import { capsize } from '~/utilities'
 
 type TextSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -61,7 +62,6 @@ type TextProps = Override<
       | 'legend'
       | React.ComponentType
       | React.ElementType
-    size?: TextSizes
   }
 >
 

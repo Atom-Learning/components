@@ -1,4 +1,4 @@
-import type { UseFormMethods } from 'react-hook-form'
+import type { UseFormMethods, Mode } from 'react-hook-form'
 
 export enum StorageEnum {
   LOCAL = 'local',
@@ -36,7 +36,7 @@ export type FormContentValues = {
 export type FormValues = {
   defaultValues?: { [key: string]: string | number }
   onSubmit: (data: any) => void | any
-  validationMode?: 'onBlur' | 'onSubmit'
+  validationMode?: Mode
   persist?: PersistOptions
 } & (
   | { children: React.ReactNode; render?: never }

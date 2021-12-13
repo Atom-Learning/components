@@ -1,0 +1,18 @@
+---
+title: Slider Field
+component: SliderField
+description: Combines a Slider with a label and form integration.
+category: Form fields
+---
+
+`SliderField` renders a `Slider` with a label, and easy implementation with `Form`.
+
+In it's most simple form, a slider allows one value to be set between two given values (default 0 and 100).
+
+Please note: the `value` or `defaultValue` passed in should always be an array.
+
+```tsx preview
+<Form>
+  <SliderField name="slider" label="Select a value" defaultValue={[50]} />
+</Form>
+```

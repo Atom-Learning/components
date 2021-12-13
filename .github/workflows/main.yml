@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
@@ -33,6 +35,8 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
@@ -47,7 +51,8 @@ jobs:
           branch: 'main'
 
         env:
-          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_WITHOUT_THIS_SUFFIX }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
       - name: Log new version
         if: steps.semantic.outputs.new_release_published == 'true'

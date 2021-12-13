@@ -21,22 +21,36 @@ type TableSubComponents = {
 }
 
 const StyledTable = styled('table', {
-  borderCollapse: 'collapse',
+  borderCollapse: 'separate',
+  borderSpacing: 0,
   fontFamily: '$sans',
   fontSize: '$sm',
   width: '100%',
   variants: {
     size: {
       md: {
-        [`${TableCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$4'
         }
       },
       lg: {
-        [`${TableCell}`]: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
           height: '$5'
         }
       }
+    },
+    corners: {
+      round: {
+        [`${TableHeaderCell}`]: {
+          '&:first-of-type': { borderTopLeftRadius: '$0' },
+          '&:last-of-type': { borderTopRightRadius: '$0' }
+        },
+        [`${TableRow}:last-child`]: {
+          [`${TableCell}:first-child`]: { borderBottomLeftRadius: '$0' },
+          [`${TableCell}:last-child`]: { borderBottomRightRadius: '$0' }
+        }
+      },
+      square: {}
     }
   }
 })
@@ -45,8 +59,9 @@ type TableProps = React.ComponentProps<typeof StyledTable>
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
+  corners = 'round',
   ...rest
-}: TableProps) => <StyledTable size={size} {...rest} />
+}: TableProps) => <StyledTable size={size} corners={corners} {...rest} />
 
 Table.Body = TableBody
 Table.Cell = TableCell

@@ -1,15 +1,185 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DropdownMenu component renders 1`] = `
-<div>
+@media  {
+  .c-jFCTlP {
+    background: white;
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP {
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-iLVhIC {
+    align-items: center;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    position: relative;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+  .c-iLVhIC[data-disabled] {
+    color: var(--colors-tonal200);
+    pointer-events: none;
+  }
+
+  .c-iLVhIC[aria-current="page"]::before,
+  .c-iLVhIC:focus::before {
+    border-left: 2px solid currentColor;
+    content: "";
+    height: var(--sizes-2);
+    left: 0;
+    outline: none;
+    position: absolute;
+    transform: scale(1);
+  }
+
+  .c-iLVhIC:focus {
+    color: var(--colors-primaryMid);
+    outline: none;
+  }
+
+  .c-iLVhIC:hover {
+    text-decoration: underline;
+  }
+
+  .c-gBsmUO {
+    height: 1px;
+    background-color: var(--colors-tonal200);
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .c-cIdiJW {
+    text-decoration: none;
+  }
+}
+
+<body
+  style="pointer-events: none;"
+>
+  <span
+    aria-hidden="true"
+    data-aria-hidden="true"
+    data-radix-focus-guard=""
+    style="outline: none; opacity: 0; position: fixed; pointer-events: none;"
+    tabindex="0"
+  />
+  <div
+    data-radix-portal=""
+    style="position: absolute; top: 0px; left: 0px; z-index: 2147483647;"
+  >
+    <div>
+      <div
+        data-radix-popper-content-wrapper=""
+        style="position: fixed; top: 0px; left: 0px; opacity: 0; transform: translate3d(0, -200%, 0);"
+      >
+        <div
+          aria-labelledby="radix-id-0-1"
+          aria-orientation="vertical"
+          class="c-jFCTlP"
+          data-orientation="vertical"
+          data-state="open"
+          dir="ltr"
+          id="radix-id-0-2"
+          role="menu"
+          style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
+          tabindex="-1"
+        >
+          <div
+            class="c-iLVhIC"
+            data-orientation="vertical"
+            data-radix-collection-item=""
+            role="menuitem"
+            tabindex="-1"
+          >
+            Item 1
+          </div>
+          <div
+            class="c-iLVhIC"
+            data-orientation="vertical"
+            data-radix-collection-item=""
+            role="menuitem"
+            tabindex="-1"
+          >
+            Item 2
+          </div>
+          <div
+            aria-orientation="horizontal"
+            class="c-gBsmUO"
+            role="separator"
+          />
+          <a
+            class="c-cIdiJW c-iLVhIC"
+            data-orientation="vertical"
+            data-radix-collection-item=""
+            href="/logout"
+            role="menuitem"
+            tabindex="-1"
+          >
+            Log Out
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <button
+    aria-controls="radix-id-0-2"
+    aria-expanded="true"
     aria-haspopup="menu"
+    aria-hidden="true"
     class="c-PJLV"
-    data-state="closed"
+    data-aria-hidden="true"
+    data-state="open"
     id="radix-id-0-1"
     type="button"
   >
     TRIGGER
   </button>
-</div>
+  <span
+    aria-hidden="true"
+    data-aria-hidden="true"
+    data-radix-focus-guard=""
+    style="outline: none; opacity: 0; position: fixed; pointer-events: none;"
+    tabindex="0"
+  />
+</body>
 `;

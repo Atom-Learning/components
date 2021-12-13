@@ -77,12 +77,14 @@ exports[`CheckboxField component renders 1`] = `
     font-weight: 400;
     max-width: max-content;
   }
+}
 
-  .c-cVSpVL-JrrAq-align-start {
+@media  {
+  .c-cVSpVL-JrrAq-cv {
     align-items: flex-start;
   }
 
-  .c-cVSpVL-ejCoEP-direction-row {
+  .c-cVSpVL-ejCoEP-cv {
     flex-direction: row;
   }
 }
@@ -103,7 +105,7 @@ exports[`CheckboxField component renders 1`] = `
       class="c-PJLV"
     >
       <label
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-align-start c-cVSpVL-ejCoEP-direction-row"
+        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
       >
         <div
           class="c-PJLV c-PJLV-ihmIibS-css"

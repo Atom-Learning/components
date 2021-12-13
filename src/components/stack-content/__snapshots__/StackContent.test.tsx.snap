@@ -16,12 +16,9 @@ exports[`StackContent component renders a stack content 1`] = `
     margin: 0;
   }
 
-  .c-hnXsvE {
+  .c-jpqjUq {
     border: 0;
-    border-top: 1px solid var(--colors-tonal200);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    background: var(--colors-tonal200);
   }
 
   .c-iQukjL {
@@ -93,6 +90,11 @@ exports[`StackContent component renders a stack content 1`] = `
     display: table;
   }
 
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
   .c-iQukjL-bfiEAN-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -133,7 +135,7 @@ exports[`StackContent component renders a stack content 1`] = `
     margin-bottom: var(--space-5);
   }
 
-  .c-hnXsvE-ihYlNNO-css {
+  .c-jpqjUq-ihYlNNO-css {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
     color: red;
@@ -175,7 +177,7 @@ exports[`StackContent component renders a stack content 1`] = `
       TEXT
     </p>
     <hr
-      class="c-hnXsvE c-hnXsvE-ihYlNNO-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ihYlNNO-css"
     />
     <ul
       class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-ielbxsX-css"

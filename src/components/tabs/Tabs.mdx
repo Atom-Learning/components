@@ -27,15 +27,23 @@ The component provides a set of default styles, which can be overwritten by usin
 </Tabs>
 ```
 
-It also takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+It takes a `defaultValue` prop that should match one of the triggers' `value` prop.
 
 ```tsx
 <Tabs defaultValue="tab1">
 ```
 
+It also takes a `theme` prop that should either be "light" or "dark".
+
+```tsx
+<Tabs theme="light"></Tabs>
+<Tabs theme="dark"></Tabs>
+```
+
 ## Tabs.TriggerList
 
 The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
+`Tabs.TriggerList` will automatically show `<` & `>` buttons in case the content is overshooting the available space.
 
 ## Tabs.Trigger
 
@@ -56,6 +64,21 @@ A `Tabs.Trigger` component can take a `disabled` prop, which would make it unsel
     <Tabs.Trigger disabled value="tab2">
       Tab 2
     </Tabs.Trigger>
+  </Tabs.TriggerList>
+  <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
+  <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>
+</Tabs>
+```
+
+## Styling the `Tabs.TriggerList`
+
+The trigger list accepts an appearance property to apply uppercase to all tabs. Simply pass `appearance='uppercase'`.
+
+```tsx preview
+<Tabs>
+  <Tabs.TriggerList appearance="uppercase">
+    <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
+    <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
   </Tabs.TriggerList>
   <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
   <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>

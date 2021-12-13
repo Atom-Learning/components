@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component renders an accordion 1`] = `
+@media  {
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-hZqVuK {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .c-hZqVuK:not(:last-child) {
+    margin-bottom: var(--space-1);
+  }
+
+  .c-eaWowm {
+    border: 0;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .c-eaWowm[data-state="open"] {
+    border-radius: var(--radii-0) var(--radii-0) 0 0;
+  }
+
+  .c-eaWowm[data-state="open"] svg {
+    transition: transform 300ms;
+    transform: rotate(180deg);
+  }
+
+  .c-eaWowm[data-state="closed"] {
+    border-radius: var(--radii-0);
+  }
+
+  .c-eaWowm[data-state="closed"] svg {
+    transition: transform 300ms;
+    transform: rotate(0deg);
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hXRGtr {
+    border: 0;
+    width: 100%;
+    background: #fff;
+  }
+
+  .c-hXRGtr[data-state="open"] {
+    border-radius: 0 0 var(--radii-0) var(--radii-0);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hXRGtr[data-state="open"] {
+      animation: k-jYBrOR 300ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hXRGtr[data-state="closed"] {
+      animation: k-fNLrdV 300ms ease-out;
+    }
+}
+}
+
+@media  {
+  .c-eaWowm-kXYOEf-theme-primaryDark {
+    background: var(--colors-primaryDark);
+    color: #fff;
+  }
+
+  .c-eaWowm-kXYOEf-theme-primaryDark[disabled] {
+    background: var(--colors-tonal100);
+    cursor: not-allowed;
+    color: var(--colors-tonal400);
+  }
+
+  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):hover {
+    background: #0b2074;
+  }
+
+  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):active {
+    background: #091a5c;
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+<div>
+  <div
+    class="c-fGHEql"
+  >
+    <div
+      class="c-hZqVuK"
+      data-state="open"
+    >
+      <button
+        aria-controls="radix-id-0-2"
+        aria-disabled="true"
+        aria-expanded="true"
+        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        data-state="open"
+        id="radix-id-0-1"
+      >
+        <div
+          class="c-PJLV"
+        >
+          TRIGGER1
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="6 10 12 16 18 10"
+          />
+        </svg>
+      </button>
+      <div
+        aria-labelledby="radix-id-0-1"
+        class="c-hXRGtr"
+        data-state="open"
+        id="radix-id-0-2"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      >
+        CONTENT1
+      </div>
+    </div>
+    <div
+      class="c-hZqVuK"
+      data-state="closed"
+    >
+      <button
+        aria-controls="radix-id-0-4"
+        aria-expanded="false"
+        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        data-state="closed"
+        id="radix-id-0-3"
+      >
+        <div
+          class="c-PJLV"
+        >
+          TRIGGER2
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="6 10 12 16 18 10"
+          />
+        </svg>
+      </button>
+      <div
+        aria-labelledby="radix-id-0-3"
+        class="c-hXRGtr"
+        data-state="closed"
+        hidden=""
+        id="radix-id-0-4"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+  </div>
+</div>
+`;

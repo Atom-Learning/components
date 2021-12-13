@@ -7,50 +7,88 @@ exports[`Tabs component renders 1`] = `
     flex-direction: column;
   }
 
-  .c-MQgzr {
+  .c-gZZKZD {
     flex-shrink: 0;
     display: flex;
-    border-bottom: 1px solid var(--colors-primaryDark);
+    width: 100%;
+    overflow-x: auto;
   }
 
-  .c-iBjJFQ {
-    color: var(--colors-secondary);
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-hOCLBl {
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
     padding: var(--space-4);
+    height: var(--sizes-5);
     -webkit-user-select: none;
     user-select: none;
+    transition: 0.3s;
   }
 
-  .c-iBjJFQ:hover {
-    color: var(--colors-primary);
-  }
-
-  .c-iBjJFQ[data-disabled],
-  .c-iBjJFQ[data-disabled]:hover {
-    color: var(--colors-tonal300);
-  }
-
-  .c-iBjJFQ[data-state="active"] {
-    color: var(--colors-primary);
-    font-weight: bold;
-    box-shadow: inset 0 -3px 0 0 currentColor;
-  }
-
-  .c-eGaVeY {
+  .c-cWMaKf {
     flex-grow: 1;
+    font-family: var(--fonts-body);
+  }
+}
+
+@media  {
+  .c-fixGjY-ixnjYu-theme-light {
+    color: var(--colors-primary);
+  }
+
+  .c-gZZKZD-eFavRf-theme-light {
+    border-bottom: 1px solid var(--colors-tonal300);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-state="active"] {
+    color: var(--colors-primary);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    box-shadow: inset 0 -2px 0 0 currentColor;
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-state="inactive"] {
+    color: var(--colors-tonal500);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light:not([data-disabled]):hover {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.1);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light:not([data-disabled]):active {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.2);
+    box-shadow: none;
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-disabled],
+  .c-hOCLBl-hPUmPP-theme-light[data-disabled]:hover {
+    color: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+
+  .c-cWMaKf-fwFiEo-theme-light {
+    color: var(--colors-textForeground);
   }
 }
 
 <div>
   <div
-    class="c-fixGjY"
+    class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
     data-orientation="horizontal"
   >
     <div
       aria-orientation="horizontal"
-      class="c-MQgzr"
+      class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
       data-orientation="horizontal"
       dir="ltr"
       role="tablist"
@@ -60,7 +98,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-iBjJFQ"
+        class="c-hOCLBl c-hOCLBl-hPUmPP-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -73,7 +111,7 @@ exports[`Tabs component renders 1`] = `
       <div
         aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-iBjJFQ"
+        class="c-hOCLBl c-hOCLBl-hPUmPP-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -86,7 +124,7 @@ exports[`Tabs component renders 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab1"
-      class="c-eGaVeY"
+      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="active"
       id="radix-id-0-1-content-tab1"
@@ -97,7 +135,284 @@ exports[`Tabs component renders 1`] = `
     </div>
     <div
       aria-labelledby="radix-id-0-1-trigger-tab2"
-      class="c-eGaVeY"
+      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-id-0-1-content-tab2"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</div>
+`;
+
+exports[`Tabs component renders mobile view 1`] = `
+@media  {
+  .c-fixGjY {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-gZZKZD {
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-hOCLBl {
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: var(--fonts-body);
+    padding: var(--space-4);
+    height: var(--sizes-5);
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.3s;
+  }
+
+  .c-cWMaKf {
+    flex-grow: 1;
+    font-family: var(--fonts-body);
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-fDwKcF {
+    position: absolute;
+    transition: all 125ms;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-fixGjY-ixnjYu-theme-light {
+    color: var(--colors-primary);
+  }
+
+  .c-gZZKZD-eFavRf-theme-light {
+    border-bottom: 1px solid var(--colors-tonal300);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-state="active"] {
+    color: var(--colors-primary);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    box-shadow: inset 0 -2px 0 0 currentColor;
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-state="inactive"] {
+    color: var(--colors-tonal500);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light:not([data-disabled]):hover {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.1);
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light:not([data-disabled]):active {
+    color: var(--colors-primary);
+    background: rgba(30,113,246,0.2);
+    box-shadow: none;
+  }
+
+  .c-hOCLBl-hPUmPP-theme-light[data-disabled],
+  .c-hOCLBl-hPUmPP-theme-light[data-disabled]:hover {
+    color: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+
+  .c-cWMaKf-fwFiEo-theme-light {
+    color: var(--colors-textForeground);
+  }
+
+  .c-fDwKcF-faCgme-theme-light {
+    background: rgba(255,255,255,0.8) !important;
+  }
+
+  .c-fDwKcF-ejYaUA-visible-false {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .c-fDzwZw-kMhpXP-size-xl {
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-fLGGKn-size-lg {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-fDwKcF-icezigA-css {
+    left: 0;
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fDwKcF-iczsSGP-css {
+    right: 0;
+  }
+}
+
+<div>
+  <div
+    class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
+    data-orientation="horizontal"
+  >
+    <div
+      class="c-dhzjXW c-dhzjXW-icmpvrW-css"
+    >
+      <button
+        aria-label="Scroll Left"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-faCgme-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-icezigA-css"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
+        data-orientation="horizontal"
+        dir="ltr"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
+      >
+        <div
+          aria-controls="radix-id-0-1-content-tab1"
+          aria-selected="true"
+          class="c-hOCLBl c-hOCLBl-hPUmPP-theme-light"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-id-0-1-trigger-tab1"
+          role="tab"
+          tabindex="-1"
+        >
+          Trigger 1 which is going to be long
+        </div>
+        <div
+          aria-controls="radix-id-0-1-content-tab2"
+          aria-selected="false"
+          class="c-hOCLBl c-hOCLBl-hPUmPP-theme-light"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-id-0-1-trigger-tab2"
+          role="tab"
+          tabindex="-1"
+        >
+          Trigger 2 which is going to be even longer
+        </div>
+      </div>
+      <button
+        aria-label="Scroll right"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-faCgme-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-iczsSGP-css"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      aria-labelledby="radix-id-0-1-trigger-tab1"
+      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-id-0-1-content-tab1"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Important content for tab 1
+    </div>
+    <div
+      aria-labelledby="radix-id-0-1-trigger-tab2"
+      class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
