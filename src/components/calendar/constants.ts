@@ -12,12 +12,13 @@ export const monthNamesShort = [
   'Nov',
   'Dec'
 ]
+
 export const weekdayNamesShort = [
+  'Sun',
   'Mon',
   'Tue',
   'Wed',
   'Thu',
   'Fri',
-  'Sat',
-  'Sun'
+  'Sat'
 ]

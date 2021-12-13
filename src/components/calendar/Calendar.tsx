@@ -21,20 +21,38 @@ const Grid = styled('div', {
   gridGap: '$1 $2'
 })
 
-type CalendarProps = DayzedInterface & {
-  css?: CSS
-  refDateToday?: React.RefObject<HTMLButtonElement>
-  refDateSelected?: React.RefObject<HTMLButtonElement>
+export type CalendarTranslationProps = {
+  monthNames?: string[]
+  weekdayNames?: string[]
+}
+
+type CalendarProps = DayzedInterface &
+  CalendarTranslationProps & {
+    css?: CSS
+    refDateToday?: React.RefObject<HTMLButtonElement>
+    refDateSelected?: React.RefObject<HTMLButtonElement>
+  }
+
+const offsetWeekdayNames = (
+  weekdayNames: string[],
+  firstDayOfWeek: number
+): string[] => {
+  const start = weekdayNames.slice(0, firstDayOfWeek)
+  const end = weekdayNames.slice(firstDayOfWeek)
+  return end.concat(start)
 }
 
 export const Calendar: React.FC<CalendarProps> = ({
   css,
   refDateSelected,
   refDateToday,
+  firstDayOfWeek = 0,
+  monthNames = monthNamesShort,
+  weekdayNames = weekdayNamesShort,
   ...remainingProps
 }) => {
   const { calendars, getBackProps, getForwardProps, getDateProps } = useDayzed({
-    firstDayOfWeek: 1,
+    firstDayOfWeek,
     showOutsideDays: true,
     ...remainingProps
   })
@@ -67,11 +85,11 @@ export const Calendar: React.FC<CalendarProps> = ({
         <div key={`${month}${year}`}>
           <Flex css={{ height: '$4', alignItems: 'center', mb: '$4' }}>
             <Heading size="xs">
-              {monthNamesShort[month]} {year}
+              {monthNames[month]} {year}
             </Heading>
           </Flex>
           <Grid css={{ mb: '$3' }}>
-            {weekdayNamesShort.map((weekday) => (
+            {offsetWeekdayNames(weekdayNames, firstDayOfWeek).map((weekday) => (
               <Text
                 as="span"
                 size="sm"
