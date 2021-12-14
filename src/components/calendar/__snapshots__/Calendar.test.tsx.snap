@@ -407,7 +407,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Dec 13 2021"
           aria-pressed="false"
-          class="c-epywoc c-epywoc-hztIub-isToday-true"
+          class="c-epywoc"
           role="button"
         >
           13
@@ -415,7 +415,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Dec 14 2021"
           aria-pressed="false"
-          class="c-epywoc"
+          class="c-epywoc c-epywoc-hztIub-isToday-true"
           role="button"
         >
           14

@@ -6,7 +6,9 @@ import { Calendar } from '.'
 
 describe('Calendar component', () => {
   it('renders', async () => {
-    const { container } = render(<Calendar onDateSelected={() => null} />)
+    const { container } = render(
+      <Calendar date={new Date('12/25/21')} onDateSelected={() => null} />
+    )
 
     expect(container).toMatchSnapshot()
   })
