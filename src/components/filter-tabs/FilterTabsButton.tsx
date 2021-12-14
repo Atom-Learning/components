@@ -1,0 +1,42 @@
+import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
+import React from 'react'
+
+import { styled } from '~/stitches'
+import { ActionIcon } from '../action-icon'
+import { Icon } from '../icon'
+
+const FilterTabsIconContainer = styled(ActionIcon, {
+  bg: 'rgba(255, 255, 255, 0.6) !important',
+  '&:hover': { bg: 'rgba(255, 255, 255, 0.8) !important' },
+  position: 'absolute',
+  zIndex: '2',
+  top: '0'
+})
+
+type FilterTabsButtonProps = {
+  side: string
+  visible: boolean
+  onClick: (direction) => void
+  disabled?: boolean
+}
+
+export const FilterTabsButton: React.FC<FilterTabsButtonProps> = ({
+  side,
+  visible,
+  onClick,
+  disabled = false
+}) => {
+  if (!visible) return null
+
+  return (
+    <FilterTabsIconContainer
+      onClick={() => onClick(side)}
+      size="xl"
+      label={`scroll ${side}`}
+      css={{ [`${side}`]: '0' }}
+      disabled={disabled}
+    >
+      <Icon is={side === 'left' ? ChevronLeft : ChevronRight} />
+    </FilterTabsIconContainer>
+  )
+}

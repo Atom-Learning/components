@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterTabs component renders 1`] = `
+@media  {
+  .c-cmpvrW {
+    position: relative;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bTGMgd {
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--colors-tonal300);
+    overflow-x: auto;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .c-eeDzjx {
+    font-family: var(--fonts-body);
+    padding: var(--space-4);
+    height: var(--sizes-5);
+    flex-shrink: 0;
+  }
+
+  .c-eeDzjx:hover {
+    background: rgba(30,113,246,0.1);
+  }
+
+  .c-eeDzjx[data-disabled=true] {
+    background: unset;
+    color: var(--colors-tonal300);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-eeDzjx-jJnYiF-selected-true {
+    font-weight: 600;
+    color: var(--colors-primary);
+  }
+}
+
+<div>
+  <div
+    class="c-cmpvrW"
+  >
+    <div
+      class="c-dhzjXW c-bTGMgd"
+    >
+      <div
+        class="c-dhzjXW c-eeDzjx c-eeDzjx-jJnYiF-selected-true"
+        data-disabled="false"
+      >
+        tab1
+      </div>
+      <div
+        class="c-dhzjXW c-eeDzjx"
+        data-disabled="false"
+      >
+        tab2
+      </div>
+      <div
+        class="c-dhzjXW c-eeDzjx"
+        data-disabled="false"
+      >
+        tab3
+      </div>
+    </div>
+  </div>
+</div>
+`;

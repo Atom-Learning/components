@@ -1,0 +1,33 @@
+---
+title: Filter Tabs
+component: FilterTabs
+description: Filter Tabs is a component that mimics the look of Tab Trigger Lists whilst not containing the rest of Tabs logic.
+category: Layout
+---
+
+The main use case for Filter Tabs are where you would want something to look like tabs, but you would not use Tabs Content, for example fetching data from an API, where the content would change based on API data rather than hard coded changes.
+
+The tabs are passed in to the `filter` prop, which should be an array of strings.
+
+```tsx preview
+<FilterTabs
+  filters={['tab1', 'tab2', 'tab3']}
+  value="tab1"
+  onValueChange={() => null}
+/>
+```
+
+The value prop can also be a defaultValue, depending on whether you want the component to be controlled or not.
+
+## Disabled
+
+Should you wish to disable the component, simply pass the `disabled` prop.
+
+```tsx preview
+<FilterTabs
+  filters={['tab1', 'tab2', 'tab3']}
+  value="tab1"
+  onValueChange={() => null}
+  disabled
+/>
+```
