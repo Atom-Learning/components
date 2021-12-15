@@ -6,7 +6,7 @@ import { Flex } from '../flex'
 
 import { styled, theme } from '~/stitches'
 
-import { FilterTabsButton } from './FilterTabsButton'
+import { FilterTabsButton, Side } from './FilterTabsButton'
 
 const fadedPrimaryDark = opacify(-0.9, theme.colors.primary.value)
 
@@ -14,7 +14,7 @@ type FilterTabsType = {
   filters: string[]
   value?: string
   defaultValue?: string
-  onValueChange: (value) => void
+  onValueChange: (value: string) => void
   disabled?: boolean
 }
 
@@ -153,13 +153,13 @@ export const FilterTabs: React.FC<FilterTabsType> &
       <FilterTabsButton
         onClick={scrollTriggerListTo}
         visible={showLeftScroller}
-        side="left"
+        side={Side.LEFT}
         disabled={disabled}
       />
       <FilterTabsButton
         onClick={scrollTriggerListTo}
         visible={showRightScroller}
-        side="right"
+        side={Side.RIGHT}
         disabled={disabled}
       />
     </FilterTabsContainer>

@@ -13,10 +13,15 @@ const FilterTabsIconContainer = styled(ActionIcon, {
   top: '0'
 })
 
+export enum Side {
+  LEFT = 'left',
+  RIGHT = 'right'
+}
+
 type FilterTabsButtonProps = {
-  side: string
+  side: Side
   visible: boolean
-  onClick: (direction) => void
+  onClick: (direction: Side) => void
   disabled?: boolean
 }
 
@@ -36,7 +41,7 @@ export const FilterTabsButton: React.FC<FilterTabsButtonProps> = ({
       css={{ [`${side}`]: '0' }}
       disabled={disabled}
     >
-      <Icon is={side === 'left' ? ChevronLeft : ChevronRight} />
+      <Icon is={side === Side.LEFT ? ChevronLeft : ChevronRight} />
     </FilterTabsIconContainer>
   )
 }
