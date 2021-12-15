@@ -54,7 +54,7 @@ describe('Slider.Value component', () => {
   it('renders with a custom empty value label', async () => {
     render(<Slider.Value value={[0]} emptyData={emptyData} />)
 
-    expect(await screen.findByText('No test items')).toBeVisible()
+    expect(await screen.findByText(emptyData.label)).toBeVisible()
   })
 
   it('does not render with a value label given multiple values', async () => {
