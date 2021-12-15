@@ -230,7 +230,9 @@ exports[`Calendar component renders 1`] = `
         </svg>
       </button>
     </div>
-    <div>
+    <div
+      class="c-PJLV"
+    >
       <div
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >

@@ -84,7 +84,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         </ActionIcon>
       </Flex>
       {calendars.map(({ month, year, weeks }) => (
-        <div key={`${month}${year}`}>
+        <Box key={`${month}${year}`}>
           <Flex css={{ height: '$4', alignItems: 'center', mb: '$4' }}>
             <Heading size="xs">
               {monthNames[month]} {year}
@@ -128,7 +128,7 @@ export const Calendar: React.FC<CalendarProps> = ({
               })
             )}
           </Grid>
-        </div>
+        </Box>
       ))}
     </Box>
   )

@@ -4,23 +4,31 @@ import * as React from 'react'
 
 import { Calendar } from '.'
 
+// NOTE: We need to set the date or the 'isToday' class on individual
+// dates will cause these snapshots to fail every new day this test is
+// run. Setting this system time means this is kept consistent.
+Date.now = jest.fn(() => Date.parse('2021-12-14'))
+
+const props = {
+  onDateSelected: jest.fn(),
+  date: new Date('12/25/21')
+}
+
 describe('Calendar component', () => {
   it('renders', async () => {
-    const { container } = render(
-      <Calendar date={new Date('12/25/21')} onDateSelected={() => null} />
-    )
+    const { container } = render(<Calendar {...props} />)
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<Calendar onDateSelected={() => null} />)
+    const { container } = render(<Calendar {...props} />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
 
   it('changes month when change month arrows are pressed', async () => {
-    render(<Calendar onDateSelected={() => null} date={new Date('12/25/21')} />)
+    render(<Calendar {...props} />)
 
     const arrow = await screen.findByLabelText('Next month')
     fireEvent.click(arrow)
@@ -31,7 +39,7 @@ describe('Calendar component', () => {
   it('renders translated weekday names', async () => {
     render(
       <Calendar
-        onDateSelected={() => null}
+        {...props}
         weekdayNames={[
           'Måndag',
           'Tisdag',
@@ -50,7 +58,7 @@ describe('Calendar component', () => {
   it('renders translated month names', async () => {
     render(
       <Calendar
-        onDateSelected={() => null}
+        {...props}
         date={new Date('08/01/21')}
         monthNames={[
           'Januri',
