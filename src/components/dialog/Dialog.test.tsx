@@ -1,5 +1,6 @@
 import { IdProvider } from '@radix-ui/react-id'
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, RenderResult, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -15,7 +16,7 @@ const DialogTest = (props) => (
 )
 
 describe(`Dialog component`, () => {
-  let rendered
+  let rendered: RenderResult
   let trigger
 
   beforeEach(() => {
@@ -35,9 +36,12 @@ describe(`Dialog component`, () => {
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
 
     trigger.focus()
-    fireEvent.click(trigger)
+    userEvent.click(trigger)
 
     expect(await screen.queryByText('CONTENT')).toBeInTheDocument()
+
+    const dialog = await screen.getByRole('dialog')
+    expect(dialog).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
@@ -46,11 +50,30 @@ describe(`Dialog component`, () => {
 
   describe(`when open`, () => {
     beforeEach(() => {
-      fireEvent.click(trigger)
+      userEvent.click(trigger)
     })
 
     it('has no programmatically detectable a11y issues', async () => {
       expect(await axe(rendered.container)).toHaveNoViolations()
     })
+  })
+})
+
+describe('Dialog component without close button', () => {
+  it('renders', async () => {
+    await render(
+      <IdProvider>
+        <Dialog>
+          <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+          <Dialog.Content showCloseIcon={false}>CONTENT</Dialog.Content>
+        </Dialog>
+      </IdProvider>
+    )
+
+    const trigger = await screen.getByText('TRIGGER')
+    userEvent.click(trigger)
+
+    const dialog = await screen.getByRole('dialog')
+    expect(dialog).toMatchSnapshot()
   })
 })
