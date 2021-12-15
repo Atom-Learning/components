@@ -1,21 +1,37 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import { axe } from 'jest-axe'
 
 import { SliderField } from '.'
 import { Form } from '../'
 
-const ExampleSliderField = () => (
-  <Form onSubmit={() => null}>
-    <SliderField name="sliderTest" label="Slider Test" defaultValue={[50]} />
-  </Form>
-)
+const props = {
+  name: 'sliderTest',
+  label: 'Slider Test',
+  defaultValue: [50]
+}
 
 describe('SliderField component', () => {
   it('renders', async () => {
-    const { container } = render(<ExampleSliderField />)
+    const { container } = render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} />
+      </Form>
+    )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders without a value label', async () => {
+    render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} showValue={false} />
+      </Form>
+    )
+
+    expect(
+      await screen.queryByText('Current value is 50')
+    ).not.toBeInTheDocument()
   })
 
   //TODO: figure out how to pass aria-label properly so that there are no a11y issues
@@ -23,7 +39,11 @@ describe('SliderField component', () => {
   //thumb, which would require a lot of drilling, and doesn't seem the right solution.
   //In the future we hope to find a better solution.
   it.skip('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<ExampleSliderField />)
+    const { container } = render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} />
+      </Form>
+    )
 
     expect(await axe(container)).toHaveNoViolations()
   })

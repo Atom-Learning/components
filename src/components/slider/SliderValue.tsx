@@ -4,7 +4,7 @@ import { SliderPointType } from '.'
 import { Text } from '../text'
 
 export type SliderValueType = {
-  outputLabel: string
+  outputLabel?: string
   emptyData?: SliderPointType
   item?: { single: string; plural: string }
 }

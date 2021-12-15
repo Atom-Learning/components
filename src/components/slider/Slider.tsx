@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 import { CSSWrapper } from '~/utilities'
 
 import { SliderSteps, SliderStepsType } from './SliderSteps'
-import { SliderValue, SliderValueType } from './SliderValue'
+import { SliderValue } from './SliderValue'
 
 const StyledTrack = styled(Track, {
   borderRadius: '$round',
@@ -68,10 +68,9 @@ const StyledThumb = styled(Thumb, {
 export type SliderPointType = { label: string; value: number }
 
 export type SliderProps = React.ComponentProps<typeof StyledSlider> &
-  SliderStepsType &
-  SliderValueType & { showValue?: boolean }
+  SliderStepsType
 
-export const Slider: React.FC<SliderProps> = ({
+export const Slider: React.FC<SliderProps> & { Value: typeof SliderValue } = ({
   steps = [],
   value,
   defaultValue,
@@ -79,10 +78,6 @@ export const Slider: React.FC<SliderProps> = ({
   max = 100,
   theme = 'tonal',
   css,
-  showValue = false,
-  outputLabel,
-  emptyData,
-  item,
   ...remainingProps
 }) => {
   const values = value || defaultValue
@@ -103,17 +98,10 @@ export const Slider: React.FC<SliderProps> = ({
       </StyledSlider>
 
       <SliderSteps min={min} max={max} steps={steps} />
-
-      {showValue && (
-        <SliderValue
-          value={values}
-          outputLabel={outputLabel}
-          emptyData={emptyData}
-          item={item}
-        />
-      )}
     </CSSWrapper>
   )
 }
+
+Slider.Value = SliderValue
 
 Slider.displayName = 'Slider'

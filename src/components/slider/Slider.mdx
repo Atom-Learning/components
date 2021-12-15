@@ -1,13 +1,13 @@
 ---
 title: Slider
-component: Slider
+component: Slider, Slider.Value
 description: The slider component implements the Slider component from Radix, with default styling and the CSS prop.
 category: Form primitives
 ---
 
 The `Slider` is a simple component that renders a form slider.
 
-The `Slider` component should be rendered with a label for accesibility reasons. Rather than using the `Slider` component directly, it is best to use the `SliderField` component, which provides a label and easily integrates with the `Form` component.
+The `Slider` component should be rendered with a label for accesibility reasons. Rather than using the `Slider` component directly, it is best to use the `SliderField` component, which provides a label and easily integrates with the `Form` component. It also adds the `Slider.Value` by default (with options to remove) in order to create a unified experience without bloating the individual component.
 
 Should you wish to create a more complex UI with `Field` components, you should use this base component.
 
@@ -60,14 +60,14 @@ The steps work well with the built in `step` property, which defaults to 1 and c
 />
 ```
 
-## Value output
+## Slider.Value
 
-The slider can be set to display a label below the track displaying the current value selected. To do this, pass in the prop `showValue`.
+A separate component exists to output the value from a slider. This is most commonly used within the `SliderField`, but is here in case you need to compose your own complex component.
 
-NOTE: this will only work if there is only one value selected. In order to not overly complicate the output, it is recommended to indicate multiple values using `steps` (see above). Should you pass in this prop with multiple values, the value output will not be rendered.
+NOTE: this will only work if there is only one value selected. In order to not overly complicate the output, it is recommended to indicate multiple values using `steps` (see above). If more than one value is passed in, the component will not render.
 
 ```tsx preview
-<Slider defaultValue={[50]} showValue />
+<Slider.Value value={[50]} />
 ```
 
 By default this simply outputs the value, however this can be customised in a number of ways. `outputLabel` can be passed, which is a string that must contain the `$VALUE`. This will be replaced with the value when it renders. A string is used so that the value can be placed wherever it needs to be in the output sentence, such as in the example below.
@@ -77,9 +77,8 @@ You can also put the string `$ITEM` in `outputLabel`, which will be replaced wit
 Another prop, `emptyData`, accepts a `label` and `value` object, and tells the output at what value the label should be replaced. This typically would be an empty state, such as in the example below.
 
 ```tsx preview
-<Slider
-  defaultValue={[50]}
-  showValue
+<Slider.Value
+  value={[50]}
   outputLabel="You have selected $VALUE $ITEM"
   item={{ single: 'goose', plural: 'geese' }}
   emptyData={{ label: 'No geese selected', value: 0 }}

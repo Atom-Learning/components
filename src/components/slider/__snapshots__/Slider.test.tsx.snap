@@ -295,3 +295,137 @@ exports[`Slider component renders with a steps list 1`] = `
   </div>
 </div>
 `;
+
+exports[`Slider.Value component renders 1`] = `
+@media  {
+  .c-eqsMSy {
+    align-items: center;
+    display: flex;
+    position: relative;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .c-eqsMSy[data-orientation="horizontal"] {
+    height: var(--sizes-1);
+  }
+
+  .c-eqsMSy[data-orientation="vertical"] {
+    flex-direction: column;
+    width: var(--sizes-1);
+  }
+
+  .c-eqsMSy[data-disabled] {
+    cursor: not-allowed;
+    background: var(--colors-tonal100);
+  }
+
+  .c-nJgcq {
+    border-radius: var(--radii-round);
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .c-nJgcq[data-orientation="horizontal"] {
+    height: var(--space-1);
+  }
+
+  .c-nJgcq[data-orientation="vertical"] {
+    width: var(--space-1);
+  }
+
+  .c-bOJGDH {
+    background: var(--colors-primary);
+    border-radius: var(--radii-round);
+    height: 100%;
+    position: absolute;
+  }
+
+  .c-bOJGDH[data-disabled] {
+    background: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+
+  .c-gCMpHY {
+    background: var(--colors-primaryMid);
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-gCMpHY:hover {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-gCMpHY:focus {
+    outline: 2px solid var(--colors-primaryMid);
+    outline-offset: 2px;
+  }
+
+  .c-gCMpHY[data-disabled] {
+    background: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+
+  .c-gyNHgU {
+    height: var(--space-3);
+    margin-top: var(--space-3);
+    position: relative;
+    width: 100%;
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+@media  {
+  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
+    background: var(--colors-tonal200);
+  }
+
+  .c-dbleUi-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dbleUi-ibmknkB-css {
+    position: absolute;
+    color: var(--colors-tonal300);
+  }
+
+  .c-dbleUi-iQwDky-css {
+    margin-top: var(--space-4);
+    color: var(--colors-tonal300);
+    width: 100%;
+  }
+}
+
+<div>
+  <p
+    class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-iQwDky-css"
+  >
+    Current value is 50
+  </p>
+</div>
+`;

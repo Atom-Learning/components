@@ -27,39 +27,6 @@ describe('Slider component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders with a value label', async () => {
-    render(<Slider defaultValue={[50]} showValue />)
-
-    expect(await screen.findByText('Current value is 50')).toBeVisible()
-  })
-
-  it('renders with a custom value label', async () => {
-    render(<Slider defaultValue={[50]} showValue outputLabel={outputLabel} />)
-
-    expect(await screen.findByText('50 test items')).toBeVisible()
-  })
-
-  it('renders with a custom empty value label', async () => {
-    render(
-      <Slider
-        defaultValue={[0]}
-        showValue
-        outputLabel={outputLabel}
-        emptyData={emptyData}
-      />
-    )
-
-    expect(await screen.findByText('No test items')).toBeVisible()
-  })
-
-  it('does not render with a value label given multiple values', async () => {
-    render(<Slider defaultValue={[50, 75]} showValue />)
-
-    expect(
-      await screen.queryByText('Current value is 50')
-    ).not.toBeInTheDocument()
-  })
-
   //TODO: figure out how to pass aria-label properly so that there are no a11y issues
   //NOTE: this is here because the slider seems to want an aria-label on the slider
   //thumb, which would require a lot of drilling, and doesn't seem the right solution.
@@ -68,5 +35,33 @@ describe('Slider component', () => {
     const { container } = render(<Slider defaultValue={[50]} />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+})
+
+describe('Slider.Value component', () => {
+  it('renders', async () => {
+    const { container } = render(<Slider.Value value={[50]} />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders with a custom value label', async () => {
+    render(<Slider.Value value={[50]} outputLabel={outputLabel} />)
+
+    expect(await screen.findByText('50 test items')).toBeVisible()
+  })
+
+  it('renders with a custom empty value label', async () => {
+    render(<Slider.Value value={[0]} emptyData={emptyData} />)
+
+    expect(await screen.findByText('No test items')).toBeVisible()
+  })
+
+  it('does not render with a value label given multiple values', async () => {
+    render(<Slider.Value value={[50, 75]} />)
+
+    expect(
+      await screen.queryByText('Current value is 50')
+    ).not.toBeInTheDocument()
   })
 })
