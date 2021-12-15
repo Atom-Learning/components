@@ -4,21 +4,21 @@ import { axe } from 'jest-axe'
 
 import { FilterTabs } from './'
 
-const filters = ['tab1', 'tab2', 'tab3']
+const props = {
+  filters: ['tab1', 'tab2', 'tab3'],
+  value: 'tab1',
+  onValueChange: jest.fn()
+}
 
 describe('FilterTabs component', () => {
   it('renders', async () => {
-    const { container } = await render(
-      <FilterTabs filters={filters} value="tab1" onValueChange={() => null} />
-    )
+    const { container } = await render(<FilterTabs {...props} />)
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <FilterTabs filters={filters} value="tab1" onValueChange={() => null} />
-    )
+    const { container } = render(<FilterTabs {...props} />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
@@ -27,11 +27,7 @@ describe('FilterTabs component', () => {
     let currentTab = 'tab1'
 
     render(
-      <FilterTabs
-        filters={filters}
-        value="tab1"
-        onValueChange={(value) => (currentTab = value)}
-      />
+      <FilterTabs {...props} onValueChange={(value) => (currentTab = value)} />
     )
 
     const tab2 = await screen.findByText('tab2')
@@ -45,8 +41,7 @@ describe('FilterTabs component', () => {
 
     render(
       <FilterTabs
-        filters={filters}
-        value="tab1"
+        {...props}
         onValueChange={(value) => (currentTab = value)}
         disabled
       />

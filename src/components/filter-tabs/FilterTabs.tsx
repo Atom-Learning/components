@@ -18,11 +18,11 @@ type FilterTabsType = {
   disabled?: boolean
 }
 
-const FilterTabsOuter = styled('div', {
+const FilterTabsContainer = styled('div', {
   position: 'relative'
 })
 
-const FilterTabsContainer = styled(Flex, {
+const FilterTabsList = styled(Flex, {
   flexShrink: '0',
   borderBottom: '1px solid $tonal300',
   overflowX: 'auto',
@@ -54,7 +54,7 @@ const FilterTabsItem = styled(Flex, {
 })
 
 export const FilterTabs: React.FC<FilterTabsType> &
-  React.ComponentProps<typeof FilterTabsContainer> = ({
+  React.ComponentProps<typeof FilterTabsList> = ({
   filters,
   value,
   defaultValue,
@@ -132,8 +132,8 @@ export const FilterTabs: React.FC<FilterTabsType> &
   }, [screenWidth])
 
   return (
-    <FilterTabsOuter>
-      <FilterTabsContainer {...remainingProps} ref={filterTabsRef}>
+    <FilterTabsContainer>
+      <FilterTabsList {...remainingProps} ref={filterTabsRef}>
         {filters.map((filter) => (
           <FilterTabsItem
             selected={filter === (value || currentValue)}
@@ -149,7 +149,7 @@ export const FilterTabs: React.FC<FilterTabsType> &
             {filter}
           </FilterTabsItem>
         ))}
-      </FilterTabsContainer>
+      </FilterTabsList>
       <FilterTabsButton
         onClick={scrollTriggerListTo}
         visible={showLeftScroller}
@@ -162,6 +162,6 @@ export const FilterTabs: React.FC<FilterTabsType> &
         side="right"
         disabled={disabled}
       />
-    </FilterTabsOuter>
+    </FilterTabsContainer>
   )
 }
