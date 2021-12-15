@@ -19,9 +19,9 @@ export const SliderValue: React.FC<SliderValueProps> = ({
   emptyData,
   item = { single: '', plural: '' }
 }) => {
-  if (value.length > 1) return null
+  if (value.length !== 1) return null
 
-  const outputValue = value.length > 0 ? value[0] : ''
+  const outputValue = value[0]
 
   const outputString = outputLabel
     .replace('$VALUE', outputValue.toString())
