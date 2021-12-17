@@ -94,7 +94,8 @@ export const Slider: React.FC<SliderProps> & { Value: typeof SliderValue } = ({
         <StyledTrack>
           <StyledRange />
         </StyledTrack>
-        {values?.length && values.map((_, i) => <StyledThumb key={i} />)}
+        {values?.length &&
+          values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
       </StyledSlider>
 
       <SliderSteps min={min} max={max} steps={steps} />
