@@ -103,6 +103,13 @@ export const FilterTabs: React.FC<FilterTabsType> &
     }
   }, [])
 
+  const handleTabClick = (filter: string): void => {
+    if (disabled) return
+
+    onValueChange(filter)
+    setCurrentValue(filter)
+  }
+
   useEffect(() => {
     const onResize = debounce(500, () => {
       setScreenWidth(window.innerWidth)
@@ -137,12 +144,7 @@ export const FilterTabs: React.FC<FilterTabsType> &
         {filters.map((filter) => (
           <FilterTabsItem
             selected={filter === (value || currentValue)}
-            onClick={() => {
-              if (!disabled) {
-                onValueChange(filter)
-                setCurrentValue(filter)
-              }
-            }}
+            onClick={() => handleTabClick(filter)}
             key={filter}
             data-disabled={disabled}
           >
