@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { act, fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -9,6 +9,23 @@ describe('SearchInput component', () => {
     const { container } = render(<SearchInput />)
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders clear button', async () => {
+    const { container } = render(<SearchInput value="testing" />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('clears text on button click', async () => {
+    render(<SearchInput value="testing" />)
+
+    act(() => {
+      fireEvent.click(screen.getByRole('button'))
+    })
+
+    expect(await screen.queryByText('testing')).not.toBeInTheDocument()
+    expect(screen.queryByRole('button')).not.toBeInTheDocument()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
