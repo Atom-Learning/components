@@ -2,7 +2,7 @@
 title: Date Input
 component: DateInput
 description: A form component that provides a styled date selector without a label
-category: Form primitive
+category: Form primitives
 ---
 
 Date Inputs should be accompanied by labels, so rather than using `DateInput` directly in a UI,
@@ -18,7 +18,7 @@ with more specific requirements.
 
 ## Initial Date
 
-The `DateInput` component allows passing of an initial date, which should be selected by default. If you wish this to be the current date, you can easily use the date shown below. Otherwise strings are also accepted, however those must use a MM/DD/YYYY format. It is recommended to use standard constructors for the date object as per MDN specifications.
+The `DateInput` component allows passing of an initial date, which will be selected by default. If you wish this to be the current date, you can use `new Date()` as per the preview below. Strings are also accepted and default to the `DD/MM/YYYY` format. It is recommended to use standard constructors for the date object as per MDN specifications.
 
 ```tsx preview
 <DateInput initialDate={new Date()} />
@@ -26,38 +26,38 @@ The `DateInput` component allows passing of an initial date, which should be sel
 
 ## Date Format
 
-Any combination of date formats can be passed in as a string, such as "DD/MM/YY" or "YYYY/MM/DD". Default is "DD/MM/YYYY".
+Any combination of date formats can be passed in as a string, such as `DD/MM/YY` or `YYYY/MM/DD`. The default is `DD/MM/YYYY`. A full list of possible formats can be found [here](https://day.js.org/docs/en/parse/string-format#list-of-all-available-parsing-tokens).
 
-A full list of possible formats can be found [here](https://day.js.org/docs/en/parse/string-format#list-of-all-available-parsing-tokens).
-
-```tsx preview
+```tsx
 <DateInput dateFormat="YYYY/MM/DD" />
 ```
 
-## First Day of Week
+## Dayzed customisation
+
+### First Day of Week
 
 The calendar that is rendered by this component can have its first day of the week customised for different locales. The default is 1 (Monday), but for locales such as the US, pass in `firstDayOfWeek={0}` to set it to Sunday.
 
-```tsx preview
+```tsx
 <DateInput firstDayOfWeek={0} />
 ```
 
-## Label Translations
+## Translations
 
-The weekday and month names can be changed to anything you wish (such as translations) by passing in an array of strings to `weekdayNames` and `monthNames`.
+The weekday and month names can be changed to anything you wish by passing in an array of strings to `weekdayNames` and `monthNames`.
 
 NOTE: It is very important that you keep these labels in the right order. Weekdays must be `Sun -> Sat` and months must be `Jan -> Dec`.
 
-```tsx preview
+```tsx
 <DateInput
-    weekdayNames={['su', 'm', 't', 'w', 'th', 'f', 's']}
-    monthNames={{ '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12' ]}
+  weekdayNames={['su', 'm', 't', 'w', 'th', 'f', 's']}
+  monthNames={['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']}
 />
 ```
 
 You can also translate the internal labels for accessibility purposes. The `labels` prop accepts an object containing three keys, `open`, `next`, and `previous`. These should all be strings.
 
-```tsx preview
+```tsx
 <DateInput
   labels={{
     open: 'Open label',
