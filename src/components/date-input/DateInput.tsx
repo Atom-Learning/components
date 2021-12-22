@@ -1,4 +1,5 @@
 import { CalendarEvent } from '@atom-learning/icons'
+import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
@@ -9,14 +10,13 @@ import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
-import type { Props as DayzedInterface } from 'dayzed'
 
 export type DateInputProps = DayzedInterface &
   CalendarTranslationProps & {
     initialDate?: Date
     dateFormat?: string
     disabled?: boolean
-    size: 'sm' | 'md'
+    size?: 'sm' | 'md'
   }
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
@@ -28,7 +28,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       disabled,
       monthNames,
       weekdayNames,
-      size,
+      size = 'md',
       labels = {
         open: 'Open calendar',
         next: 'Next month',
