@@ -24,7 +24,7 @@ export const DateField: React.FC<DateFieldProps> = ({
   description,
   ...remainingProps
 }) => {
-  const { register } = useFormContext()
+  const { register, trigger } = useFormContext()
   const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register
 
@@ -44,6 +44,7 @@ export const DateField: React.FC<DateFieldProps> = ({
         ref={ref}
         {...(error && { state: 'error' })}
         {...remainingProps}
+        revalidate={trigger}
       />
     </FieldWrapper>
   )

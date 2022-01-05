@@ -17,6 +17,7 @@ export type DateInputProps = DayzedInterface &
     dateFormat?: string
     disabled?: boolean
     size?: 'sm' | 'md'
+    revalidate?: () => Promise<boolean>
   }
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
@@ -34,6 +35,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         next: 'Next month',
         previous: 'Previous month'
       },
+      revalidate,
       ...remainingProps
     },
     ref
@@ -85,9 +87,10 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
             <Calendar
               date={date || new Date()}
               selected={date}
-              onDateSelected={(date) => {
+              onDateSelected={async (date) => {
                 setCalendarOpen(false)
-                setDate(date.date, false)
+                await setDate(date.date, false)
+                if (revalidate) revalidate()
               }}
               refDateToday={refDateToday}
               refDateSelected={refDateSelected}
