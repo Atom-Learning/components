@@ -191,49 +191,11 @@ exports[`Slider component renders with a steps list 1`] = `
     background: var(--colors-tonal200);
     cursor: not-allowed;
   }
-
-  .c-gyNHgU {
-    height: var(--space-3);
-    margin-top: var(--space-3);
-    position: relative;
-    width: 100%;
-  }
-
-  .c-dbleUi {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
 }
 
 @media  {
   .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
-  }
-
-  .c-dbleUi-gvmVBy-size-md {
-    font-size: var(--fontSizes-md);
-    line-height: 1.5;
-  }
-
-  .c-dbleUi-gvmVBy-size-md::before {
-    content: '';
-    margin-bottom: -0.3864em;
-    display: table;
-  }
-
-  .c-dbleUi-gvmVBy-size-md::after {
-    content: '';
-    margin-top: -0.3864em;
-    display: table;
-  }
-}
-
-@media  {
-  .c-dbleUi-ibmknkB-css {
-    position: absolute;
-    color: var(--colors-tonal300);
   }
 }
 
@@ -242,6 +204,7 @@ exports[`Slider component renders with a steps list 1`] = `
     aria-disabled="false"
     class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
     data-orientation="horizontal"
+    steps="[object Object],[object Object],[object Object]"
     style="--radix-slider-thumb-transform: translateX(-50%);"
   >
     <span
@@ -271,28 +234,6 @@ exports[`Slider component renders with a steps list 1`] = `
       />
     </span>
   </span>
-  <div
-    class="c-gyNHgU"
-  >
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 0%; transform: translateX(-0%);"
-    >
-      min
-    </span>
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 50%; transform: translateX(-50%);"
-    >
-      mid
-    </span>
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 100%; transform: translateX(-100%);"
-    >
-      max
-    </span>
-  </div>
 </div>
 `;
 
@@ -370,13 +311,6 @@ exports[`Slider.Value component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-gyNHgU {
-    height: var(--space-3);
-    margin-top: var(--space-3);
-    position: relative;
-    width: 100%;
-  }
-
   .c-dbleUi {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
@@ -409,11 +343,6 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-dbleUi-ibmknkB-css {
-    position: absolute;
-    color: var(--colors-tonal300);
-  }
-
   .c-dbleUi-iQwDky-css {
     margin-top: var(--space-4);
     color: var(--colors-tonal300);

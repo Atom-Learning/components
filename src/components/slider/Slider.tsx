@@ -4,7 +4,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { CSSWrapper } from '~/utilities'
 
-import { SliderSteps, SliderStepsType } from './SliderSteps'
+import { SliderSteps } from './SliderSteps'
 import { SliderValue } from './SliderValue'
 
 const StyledTrack = styled(Track, {
@@ -67,17 +67,19 @@ const StyledThumb = styled(Thumb, {
 
 export type SliderPointType = { label: string; value: number }
 
-export type SliderProps = React.ComponentProps<typeof StyledSlider> &
-  SliderStepsType
+export type SliderProps = React.ComponentProps<typeof StyledSlider>
 
-export const Slider: React.FC<SliderProps> & { Value: typeof SliderValue } = ({
-  steps = [],
+export const Slider: React.FC<SliderProps> & {
+  Value: typeof SliderValue
+  Steps: typeof SliderSteps
+} = ({
   value,
   defaultValue,
   min = 0,
   max = 100,
   theme = 'tonal',
   css,
+  children,
   ...remainingProps
 }) => {
   const values = value || defaultValue
@@ -97,12 +99,12 @@ export const Slider: React.FC<SliderProps> & { Value: typeof SliderValue } = ({
         {values?.length &&
           values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
       </StyledSlider>
-
-      <SliderSteps min={min} max={max} steps={steps} />
+      {children}
     </CSSWrapper>
   )
 }
 
 Slider.Value = SliderValue
+Slider.Steps = SliderSteps
 
 Slider.displayName = 'Slider'

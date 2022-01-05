@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import * as React from 'react'
 import { axe } from 'jest-axe'
 
@@ -20,18 +20,6 @@ describe('SliderField component', () => {
     )
 
     expect(container).toMatchSnapshot()
-  })
-
-  it('renders without a value label', async () => {
-    render(
-      <Form onSubmit={jest.fn()}>
-        <SliderField {...props} showValue={false} />
-      </Form>
-    )
-
-    expect(
-      await screen.queryByText('Current value is 50')
-    ).not.toBeInTheDocument()
   })
 
   //TODO: figure out how to pass aria-label properly so that there are no a11y issues

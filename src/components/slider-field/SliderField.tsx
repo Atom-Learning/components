@@ -3,16 +3,17 @@ import { Controller, useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import { Slider, SliderProps } from '~/components/slider'
+import { SliderStepsType } from '~/components/slider/SliderSteps'
 import { SliderValueType } from '../slider/SliderValue'
 import type { CSS } from '~/stitches'
 
 type SliderFieldProps = SliderProps &
+  SliderStepsType &
   SliderValueType & {
     css?: CSS
     label: string
     name: string
     defaultValue: number[]
-    showValue?: boolean
   }
 
 export const SliderField: React.FC<SliderFieldProps> = ({
@@ -23,7 +24,9 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   outputLabel,
   emptyData,
   item,
-  showValue = true,
+  min = 0,
+  max = 100,
+  steps = [],
   ...remainingProps
 }) => {
   const { control } = useFormContext()
@@ -35,23 +38,22 @@ export const SliderField: React.FC<SliderFieldProps> = ({
         name={name}
         defaultValue={defaultValue}
         render={({ onChange, value }) => (
-          <>
-            <Slider
-              name={name}
-              defaultValue={defaultValue}
-              onValueChange={onChange}
-              value={value}
-              {...remainingProps}
+          <Slider
+            name={name}
+            defaultValue={defaultValue}
+            onValueChange={onChange}
+            value={value}
+            {...remainingProps}
+          >
+            <Slider.Steps min={min} max={max} steps={steps} />
+
+            <Slider.Value
+              value={value || defaultValue}
+              outputLabel={outputLabel}
+              emptyData={emptyData}
+              item={item}
             />
-            {showValue && (
-              <Slider.Value
-                value={value || defaultValue}
-                outputLabel={outputLabel}
-                emptyData={emptyData}
-                item={item}
-              />
-            )}
-          </>
+          </Slider>
         )}
       />
     </FieldWrapper>
