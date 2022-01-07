@@ -22,11 +22,11 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "size": "size-limit",
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
-    "validate:types": "tsc --noEmit"
+    "validate:types": "tsc --noEmit",
+    "validate:size": "yarn build:lib && size-limit"
   },
   "repository": {
     "type": "git",
