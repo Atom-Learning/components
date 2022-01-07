@@ -32,6 +32,7 @@ jobs:
           github_token: ${{ secrets.REPO_ACCESS_TOKEN }}
           build_script: build:lib
           skip_step: install
+          clean_script: clean
 
       - name: Validate
         run: yarn validate

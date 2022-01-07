@@ -22,6 +22,7 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
+    "size": "size-limit",
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
@@ -39,13 +40,19 @@
   "homepage": "https://github.com/Atom-Learning/components#readme",
   "size-limit": [
     {
-      "limit": "4s",
-      "path": "dist/index.js"
-    },
-    {
-      "limit": "400ms",
+      "limit": "10kb",
       "path": "dist/index.js",
       "import": "{ Box }"
+    },
+    {
+      "limit": "16kb",
+      "path": "dist/index.js",
+      "import": "{ Button }"
+    },
+    {
+      "limit": "75kb",
+      "path": "dist/index.js",
+      "import": "{ AlertDialog, useAlert, AlertProvider }"
     }
   ],
   "devDependencies": {
@@ -67,7 +74,7 @@
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.1.1",
     "@semantic-release/release-notes-generator": "^9.0.2",
-    "@size-limit/preset-big-lib": "^7.0.5",
+    "@size-limit/preset-small-lib": "^7.0.5",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.8.1",
