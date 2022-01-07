@@ -69,26 +69,30 @@ const StyledDialogContent = styled(Content, {
 
 type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
   closeDialogText?: string
+  showCloseButton?: boolean
 }
 
 export const DialogContent: React.FC<DialogContentProps> = ({
   size = 'sm',
   children,
   closeDialogText = 'Close dialog',
+  showCloseButton = true,
   ...remainingProps
 }) => (
   <>
     <StyledDialogOverlay />
     <StyledDialogContent size={size} {...remainingProps}>
-      <ActionIcon
-        as={Close}
-        css={{ position: 'absolute', right: '$4', top: '$4' }}
-        label={closeDialogText}
-        size="lg"
-        theme="neutral"
-      >
-        <Icon is={CloseIcon} />
-      </ActionIcon>
+      {showCloseButton && (
+        <ActionIcon
+          as={Close}
+          css={{ position: 'absolute', right: '$4', top: '$4' }}
+          label={closeDialogText}
+          size="lg"
+          theme="neutral"
+        >
+          <Icon is={CloseIcon} />
+        </ActionIcon>
+      )}
       {children}
     </StyledDialogContent>
   </>

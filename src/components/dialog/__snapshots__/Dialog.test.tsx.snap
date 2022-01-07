@@ -1,5 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Dialog component opens the popover once trigger is clicked 1`] = `
+@media  {
+  .c-hSCvKD {
+    background-color: var(--colors-alpha600);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hSCvKD[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hSCvKD[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
+
+  .c-iZiUtw {
+    background: white;
+    border-radius: var(--radii-1);
+    box-shadow: var(--shadows-3);
+    box-sizing: border-box;
+    left: 50%;
+    max-width: 90vw;
+    padding: var(--space-5);
+    position: fixed;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .c-iZiUtw:focus {
+    outline: none;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iZiUtw[data-state="open"] {
+      animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iZiUtw[data-state="closed"] {
+      animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+}
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iZiUtw-lgqbzh-size-sm {
+    width: 480px;
+  }
+
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-fDzwZw-ikHqHwu-css {
+    position: absolute;
+    right: var(--space-4);
+    top: var(--space-4);
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+<div
+  aria-describedby="radix-id-0-3"
+  aria-labelledby="radix-id-0-2"
+  class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
+  data-state="open"
+  id="radix-id-0-1"
+  role="dialog"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
+  <button
+    aria-label="Close dialog"
+    class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+      />
+    </svg>
+  </button>
+  CONTENT
+</div>
+`;
+
 exports[`Dialog component renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
@@ -11,5 +169,113 @@ exports[`Dialog component renders the trigger with the popover hidden by default
   >
     TRIGGER
   </button>
+</div>
+`;
+
+exports[`Dialog component without close button renders 1`] = `
+@media  {
+  .c-hSCvKD {
+    background-color: var(--colors-alpha600);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hSCvKD[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hSCvKD[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
+
+  .c-iZiUtw {
+    background: white;
+    border-radius: var(--radii-1);
+    box-shadow: var(--shadows-3);
+    box-sizing: border-box;
+    left: 50%;
+    max-width: 90vw;
+    padding: var(--space-5);
+    position: fixed;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .c-iZiUtw:focus {
+    outline: none;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iZiUtw[data-state="open"] {
+      animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iZiUtw[data-state="closed"] {
+      animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+}
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iZiUtw-lgqbzh-size-sm {
+    width: 480px;
+  }
+
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+<div
+  aria-describedby="radix-id-0-3"
+  aria-labelledby="radix-id-0-2"
+  class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
+  data-state="open"
+  id="radix-id-0-1"
+  role="dialog"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
+  CONTENT
 </div>
 `;
