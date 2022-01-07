@@ -10,9 +10,8 @@ const steps = [
   { value: 100, label: 'max' }
 ]
 
-const outputLabel = '$VALUE test items'
-
-const emptyData = { value: 0, label: 'No test items' }
+const outputLabel = (value) =>
+  value === 0 ? 'No test items' : `${value} test items`
 
 describe('Slider component', () => {
   it('renders', async () => {
@@ -52,9 +51,9 @@ describe('Slider.Value component', () => {
   })
 
   it('renders with a custom empty value label', async () => {
-    render(<Slider.Value value={[0]} emptyData={emptyData} />)
+    render(<Slider.Value value={[0]} outputLabel={outputLabel} />)
 
-    expect(await screen.findByText(emptyData.label)).toBeVisible()
+    expect(await screen.findByText('No test items')).toBeVisible()
   })
 
   it('does not render with a value label given multiple values', async () => {

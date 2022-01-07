@@ -22,8 +22,6 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   name,
   defaultValue,
   outputLabel,
-  emptyData,
-  item,
   min = 0,
   max = 100,
   steps = [],
@@ -50,8 +48,6 @@ export const SliderField: React.FC<SliderFieldProps> = ({
             <Slider.Value
               value={value || defaultValue}
               outputLabel={outputLabel}
-              emptyData={emptyData}
-              item={item}
             />
           </Slider>
         )}
