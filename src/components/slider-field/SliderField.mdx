@@ -5,7 +5,7 @@ description: Combines a Slider with a label and form integration.
 category: Form fields
 ---
 
-`SliderField` renders a `Slider` with a label, and easy implementation with `Form`.
+`SliderField` renders a `Slider` with a label, and easy implementation with `Form`. It also renders a `Slider.Value` label underneath the slider, and a `Slider.Steps` component should steps be passed in.
 
 In it's most simple form, a slider allows one value to be set between two given values (default 0 and 100).
 
@@ -14,5 +14,22 @@ Please note: the `value` or `defaultValue` passed in should always be an array.
 ```tsx preview
 <Form>
   <SliderField name="slider" label="Select a value" defaultValue={[50]} />
+</Form>
+```
+
+With optional `Slider.Steps`:
+
+```tsx preview
+<Form>
+  <SliderField
+    name="slider"
+    label="Select a value (now with steps)"
+    defaultValue={[50]}
+    steps={[
+      { value: 0, label: 'min' },
+      { value: 50, label: 'mid' },
+      { value: 100, label: 'max' }
+    ]}
+  />
 </Form>
 ```

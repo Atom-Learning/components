@@ -4,7 +4,8 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { CSSWrapper } from '~/utilities'
 
-import { SliderSteps, SliderStepsType } from './SliderSteps'
+import { SliderSteps } from './SliderSteps'
+import { SliderValue } from './SliderValue'
 
 const StyledTrack = styled(Track, {
   borderRadius: '$round',
@@ -64,20 +65,22 @@ const StyledThumb = styled(Thumb, {
   '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
-export type SliderProps = React.ComponentProps<typeof StyledSlider> &
-  SliderStepsType
+export type SliderProps = React.ComponentProps<typeof StyledSlider>
 
-export const Slider: React.FC<SliderProps> = ({
-  steps = [],
+export const Slider: React.FC<SliderProps> & {
+  Value: typeof SliderValue
+  Steps: typeof SliderSteps
+} = ({
   value,
   defaultValue,
   min = 0,
   max = 100,
   theme = 'tonal',
   css,
+  children,
   ...remainingProps
 }) => {
-  const thumbs = value || defaultValue
+  const values = value || defaultValue
   return (
     <CSSWrapper css={css}>
       <StyledSlider
@@ -91,12 +94,15 @@ export const Slider: React.FC<SliderProps> = ({
         <StyledTrack>
           <StyledRange />
         </StyledTrack>
-        {thumbs?.length && thumbs.map((_, i) => <StyledThumb key={i} />)}
+        {values?.length &&
+          values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
       </StyledSlider>
-
-      <SliderSteps min={min} max={max} steps={steps} />
+      {children}
     </CSSWrapper>
   )
 }
+
+Slider.Value = SliderValue
+Slider.Steps = SliderSteps
 
 Slider.displayName = 'Slider'

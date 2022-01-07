@@ -1,11 +1,11 @@
-import React from 'react'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { Text } from '../text'
 
 export type SliderStepsType = {
-  steps: { value: number; label: string }[]
+  steps: { label: string; value: number }[]
 }
 
 type SliderStepsProps = {

@@ -191,12 +191,124 @@ exports[`Slider component renders with a steps list 1`] = `
     background: var(--colors-tonal200);
     cursor: not-allowed;
   }
+}
 
-  .c-gyNHgU {
-    height: var(--space-3);
-    margin-top: var(--space-3);
+@media  {
+  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
+    background: var(--colors-tonal200);
+  }
+}
+
+<div>
+  <span
+    aria-disabled="false"
+    class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
+    data-orientation="horizontal"
+    steps="[object Object],[object Object],[object Object]"
+    style="--radix-slider-thumb-transform: translateX(-50%);"
+  >
+    <span
+      class="c-nJgcq"
+      data-orientation="horizontal"
+    >
+      <span
+        class="c-bOJGDH"
+        data-orientation="horizontal"
+        style="left: 0%; right: 50%;"
+      />
+    </span>
+    <span
+      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
+    >
+      <span
+        aria-orientation="horizontal"
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="50"
+        class="c-gCMpHY"
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        role="slider"
+        style=""
+        tabindex="0"
+      />
+    </span>
+  </span>
+</div>
+`;
+
+exports[`Slider.Value component renders 1`] = `
+@media  {
+  .c-eqsMSy {
+    align-items: center;
+    display: flex;
     position: relative;
-    width: 100%;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .c-eqsMSy[data-orientation="horizontal"] {
+    height: var(--sizes-1);
+  }
+
+  .c-eqsMSy[data-orientation="vertical"] {
+    flex-direction: column;
+    width: var(--sizes-1);
+  }
+
+  .c-eqsMSy[data-disabled] {
+    cursor: not-allowed;
+    background: var(--colors-tonal100);
+  }
+
+  .c-nJgcq {
+    border-radius: var(--radii-round);
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .c-nJgcq[data-orientation="horizontal"] {
+    height: var(--space-1);
+  }
+
+  .c-nJgcq[data-orientation="vertical"] {
+    width: var(--space-1);
+  }
+
+  .c-bOJGDH {
+    background: var(--colors-primary);
+    border-radius: var(--radii-round);
+    height: 100%;
+    position: absolute;
+  }
+
+  .c-bOJGDH[data-disabled] {
+    background: var(--colors-tonal200);
+    cursor: not-allowed;
+  }
+
+  .c-gCMpHY {
+    background: var(--colors-primaryMid);
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-gCMpHY:hover {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-gCMpHY:focus {
+    outline: 2px solid var(--colors-primaryMid);
+    outline-offset: 2px;
+  }
+
+  .c-gCMpHY[data-disabled] {
+    background: var(--colors-tonal200);
+    cursor: not-allowed;
   }
 
   .c-dbleUi {
@@ -231,67 +343,18 @@ exports[`Slider component renders with a steps list 1`] = `
 }
 
 @media  {
-  .c-dbleUi-ibmknkB-css {
-    position: absolute;
+  .c-dbleUi-iQwDky-css {
+    margin-top: var(--space-4);
     color: var(--colors-tonal300);
+    width: 100%;
   }
 }
 
 <div>
-  <span
-    aria-disabled="false"
-    class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
-    data-orientation="horizontal"
-    style="--radix-slider-thumb-transform: translateX(-50%);"
+  <p
+    class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-iQwDky-css"
   >
-    <span
-      class="c-nJgcq"
-      data-orientation="horizontal"
-    >
-      <span
-        class="c-bOJGDH"
-        data-orientation="horizontal"
-        style="left: 0%; right: 50%;"
-      />
-    </span>
-    <span
-      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
-    >
-      <span
-        aria-orientation="horizontal"
-        aria-valuemax="100"
-        aria-valuemin="0"
-        aria-valuenow="50"
-        class="c-gCMpHY"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        role="slider"
-        style=""
-        tabindex="0"
-      />
-    </span>
-  </span>
-  <div
-    class="c-gyNHgU"
-  >
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 0%; transform: translateX(-0%);"
-    >
-      min
-    </span>
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 50%; transform: translateX(-50%);"
-    >
-      mid
-    </span>
-    <span
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibmknkB-css"
-      style="left: 100%; transform: translateX(-100%);"
-    >
-      max
-    </span>
-  </div>
+    Current value is 50
+  </p>
 </div>
 `;

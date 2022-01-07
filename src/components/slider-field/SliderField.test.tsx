@@ -5,15 +5,19 @@ import { axe } from 'jest-axe'
 import { SliderField } from '.'
 import { Form } from '../'
 
-const ExampleSliderField = () => (
-  <Form onSubmit={() => null}>
-    <SliderField name="sliderTest" label="Slider Test" defaultValue={[50]} />
-  </Form>
-)
+const props = {
+  name: 'sliderTest',
+  label: 'Slider Test',
+  defaultValue: [50]
+}
 
 describe('SliderField component', () => {
   it('renders', async () => {
-    const { container } = render(<ExampleSliderField />)
+    const { container } = render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} />
+      </Form>
+    )
 
     expect(container).toMatchSnapshot()
   })
@@ -23,7 +27,11 @@ describe('SliderField component', () => {
   //thumb, which would require a lot of drilling, and doesn't seem the right solution.
   //In the future we hope to find a better solution.
   it.skip('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<ExampleSliderField />)
+    const { container } = render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} />
+      </Form>
+    )
 
     expect(await axe(container)).toHaveNoViolations()
   })

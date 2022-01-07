@@ -83,6 +83,13 @@ exports[`SliderField component renders 1`] = `
     background: var(--colors-tonal200);
     cursor: not-allowed;
   }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
 }
 
 @media  {
@@ -111,6 +118,23 @@ exports[`SliderField component renders 1`] = `
   .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
   }
+
+  .c-dbleUi-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dbleUi-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
 }
 
 @media  {
@@ -118,6 +142,12 @@ exports[`SliderField component renders 1`] = `
     justify-content: space-between;
     align-items: center;
     margin-bottom: var(--space-3);
+  }
+
+  .c-dbleUi-iQwDky-css {
+    margin-top: var(--space-4);
+    color: var(--colors-tonal300);
+    width: 100%;
   }
 }
 
@@ -177,6 +207,11 @@ exports[`SliderField component renders 1`] = `
         style="display: none;"
         value="50"
       />
+      <p
+        class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-iQwDky-css"
+      >
+        Current value is 50
+      </p>
     </div>
   </form>
 </div>
