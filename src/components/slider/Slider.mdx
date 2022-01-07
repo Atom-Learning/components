@@ -7,7 +7,7 @@ category: Form primitives
 
 The `Slider` is a simple component that renders a form slider.
 
-The `Slider` component should be rendered with a label for accesibility reasons. Rather than using the `Slider` component directly, it is best to use the `SliderField` component, which provides a label and easily integrates with the `Form` component. It also adds the `Slider.Value` by default (with options to remove) in order to create a unified experience without bloating the individual component.
+The `Slider` component should be rendered with a label for accesibility reasons. Rather than using the `Slider` component directly, it is best to use the `SliderField` component, which provides a field label, a value label, and easily integrates with the `Form` component.
 
 Should you wish to create a more complex UI with `Field` components, you should use this base component.
 
@@ -51,7 +51,7 @@ The component requires min and max values, these should be the same as the optio
 
 `Slider.Steps` work well with the built in `step` property, which defaults to 1 and changes the size of each movement. For example, this would limit the slider to three values only.
 
-```tsx preview
+```tsx
 <Slider defaultValue={[50]} min={10} max={20} step={5}>
   <Slider.Steps
     min={10}
@@ -69,20 +69,11 @@ The component requires min and max values, these should be the same as the optio
 
 A separate component exists to output the value from a slider. This is most commonly used within the `SliderField`, but is here in case you need to compose your own complex component.
 
-NOTE: this will only work if there is only one value selected. In order to not overly complicate the output, it is recommended to indicate multiple values using `steps` (see above). If more than one value is passed in, the component will not render.
-
 ```tsx preview
 <Slider.Value value={[50]} />
 ```
 
-By default this simply outputs the value, however this can be customised in a number of ways. The property `outputLabel` accepts a callback function that takes a value and returns that in a string.
-
-```tsx preview
-<Slider.Value
-  value={[50]}
-  outputLabel={(value) => `Current number of geese is ${value}`)}
-/>
-```
+By default this simply outputs the value, however, this can be customised in a number of ways. The property `outputLabel` accepts a function that passes the value selected in the slider and expects a string returned for the label.
 
 You can also use this is in more complex ways, for example to set empty states and pluralisation, like below.
 
@@ -94,6 +85,15 @@ You can also use this is in more complex ways, for example to set empty states a
       ? 'You have no geese'
       : `You have ${value} ${value === 1 ? 'goose' : 'geese'}`
   }
+/>
+```
+
+Should you wish to use the label with multiple values, you can use `Array.join()` like below.
+
+```tsx
+<Slider.Value
+  value={[25, 75]}
+  outputLabel={(value) => `You have between ${value.join(' and ')} geese`}
 />
 ```
 

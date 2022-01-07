@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Text } from '../text'
 
 export type SliderValueType = {
-  outputLabel?: (value) => string
+  outputLabel?: (value: number | number[]) => string
 }
 
 type SliderValueProps = SliderValueType & {
@@ -14,11 +14,9 @@ export const SliderValue: React.FC<SliderValueProps> = ({
   value = [],
   outputLabel = (value) => `Current value is ${value}`
 }) => {
-  if (value.length !== 1) return null
-
   return (
     <Text css={{ mt: '$4', color: '$tonal300', width: '100%' }}>
-      {outputLabel(value[0])}
+      {outputLabel(value.length === 1 ? value[0] : value)}
     </Text>
   )
 }

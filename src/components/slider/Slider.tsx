@@ -65,8 +65,6 @@ const StyledThumb = styled(Thumb, {
   '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
 })
 
-export type SliderPointType = { label: string; value: number }
-
 export type SliderProps = React.ComponentProps<typeof StyledSlider>
 
 export const Slider: React.FC<SliderProps> & {
