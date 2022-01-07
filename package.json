@@ -25,7 +25,6 @@
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
-    "validate:size": "yarn build:lib && size-limit",
     "validate:types": "tsc --noEmit"
   },
   "repository": {

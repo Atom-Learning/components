@@ -26,6 +26,12 @@ jobs:
       - name: Test
         run: yarn test
 
+      - name: Size limit
+        uses: andresz1/size-limit-action@v1
+        with:
+          build_script: build:lib
+          skip_step: install
+
       - name: Validate
         run: yarn validate
   publish:
