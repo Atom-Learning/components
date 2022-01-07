@@ -65,7 +65,7 @@ describe('Dialog component without close button', () => {
       <IdProvider>
         <Dialog>
           <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-          <Dialog.Content showCloseIcon={false}>CONTENT</Dialog.Content>
+          <Dialog.Content showCloseButton={false}>CONTENT</Dialog.Content>
         </Dialog>
       </IdProvider>
     )

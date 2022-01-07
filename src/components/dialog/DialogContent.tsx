@@ -69,20 +69,20 @@ const StyledDialogContent = styled(Content, {
 
 type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
   closeDialogText?: string
-  showCloseIcon?: boolean
+  showCloseButton?: boolean
 }
 
 export const DialogContent: React.FC<DialogContentProps> = ({
   size = 'sm',
   children,
   closeDialogText = 'Close dialog',
-  showCloseIcon = true,
+  showCloseButton = true,
   ...remainingProps
 }) => (
   <>
     <StyledDialogOverlay />
     <StyledDialogContent size={size} {...remainingProps}>
-      {showCloseIcon && (
+      {showCloseButton && (
         <ActionIcon
           as={Close}
           css={{ position: 'absolute', right: '$4', top: '$4' }}

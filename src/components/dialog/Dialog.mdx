@@ -14,7 +14,7 @@ Read more about the underlying UI component on the [Radix UI documentation site]
 ```tsx preview
 <Dialog>
   <Dialog.Trigger asChild>
-    <Button>Click me</Button>
+    <Button>Open Dialog</Button>
   </Dialog.Trigger>
   <Dialog.Content>
     <Heading size="sm" css={{ mb: '$3' }}>
@@ -31,28 +31,19 @@ Read more about the underlying UI component on the [Radix UI documentation site]
 </Dialog>
 ```
 
-`Dialog` may be rendered without a close button. Example - 
+`Dialog` may be rendered without a close button. It's important to note that in case the default close button is hidden, one would need to provide an action button explicitly, to close the dialog.
 
-```tsx preview
+```tsx
 <Dialog>
-  <Dialog.Trigger asChild>
-    <Button>Click me</Button>
-  </Dialog.Trigger>
-  <Dialog.Content showCloseIcon={false}>
-    <Heading size="sm" css={{ mb: '$3' }}>
-      Dialog
-    </Heading>
-    <Text size="sm" css={{ mb: '$3' }}>
-      The `Dialog` can display any type of element as a trigger and has the
-      content hidden by default
+  <Dialog.Trigger>Open Dialog</Dialog.Trigger>
+  <Dialog.Content showCloseButton={false}>
+    <Text>
+      Dialog.Close is used below to retain the correct accessible roles and
+      related logic
     </Text>
-    <Button appearance="outline" size="sm" as={Dialog.Close}>
-      Close Dialog
-    </Button>
+    <Button as={Dialog.Close}>Close</Button>
   </Dialog.Content>
 </Dialog>
 ```
-
-It's important to note that in case the default close button is hidden, one would need to provide an action button explicitly, to close the dialog
 
 For any modifications of the default `Dialog` visuals, for example bypassing the panel design entirely, we recommend utilising the Radix UI Dialog component directly. You will need to wrap each exported component within a `styled()` function to enable `css` and `as`, and compose together `Dialog.Overlay` and `Dialog.Close` within `Dialog.Content` to mimic the behaviour of this modal.
