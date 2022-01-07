@@ -1,0 +1,573 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-fPxPMR {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: var(--space-1) var(--space-2);
+  }
+
+  .c-dbleUi {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-epywoc {
+    background: transparent;
+    border: none;
+    border-radius: var(--radii-round);
+    color: var(--colors-tonal900);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    padding: 0;
+    transition: all 75ms;
+  }
+
+  .c-epywoc:hover {
+    background: var(--colors-tonal100);
+  }
+
+  .c-epywoc:active {
+    color: white;
+    background: var(--colors-primary);
+  }
+
+  .c-epywoc:focus {
+    outline: 2px solid var(--colors-primary);
+  }
+}
+
+@media  {
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+
+  .c-iSnHBU-llheLm-size-xs {
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-iSnHBU-llheLm-size-xs::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dbleUi-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dbleUi-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-epywoc-huXVXM-isOutsideMonth-true {
+    color: var(--colors-tonal200);
+  }
+
+  .c-epywoc-hztIub-isToday-true {
+    background: var(--colors-tonal100);
+  }
+}
+
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-PJLV-ijkIlaT-css {
+    position: relative;
+    width: min-content;
+    margin-top: calc(var(--space-1)*-1);
+  }
+
+  .c-dhzjXW-ihOOvbW-css {
+    position: absolute;
+    top: 0;
+    right: calc(var(--space-1)*-1);
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-dhzjXW-iePfWBT-css {
+    height: var(--sizes-4);
+    align-items: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fPxPMR-ihbtntv-css {
+    margin-bottom: var(--space-3);
+  }
+
+  .c-dbleUi-idQvJRf-css {
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-ijkIlaT-css"
+  >
+    <div
+      class="c-dhzjXW c-dhzjXW-ihOOvbW-css"
+    >
+      <button
+        aria-label="Previous month"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next month"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iePfWBT-css"
+      >
+        <h2
+          class="c-iSnHBU c-iSnHBU-llheLm-size-xs"
+        >
+          Dec
+           
+          2021
+        </h2>
+      </div>
+      <div
+        class="c-fPxPMR c-fPxPMR-ihbtntv-css"
+      >
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Sun
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Mon
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Tue
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Wed
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Thu
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Fri
+        </span>
+        <span
+          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-idQvJRf-css"
+        >
+          Sat
+        </span>
+      </div>
+      <div
+        class="c-fPxPMR"
+      >
+        <button
+          aria-label="Sun Nov 28 2021"
+          aria-pressed="false"
+          class="c-epywoc c-epywoc-huXVXM-isOutsideMonth-true"
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Mon Nov 29 2021"
+          aria-pressed="false"
+          class="c-epywoc c-epywoc-huXVXM-isOutsideMonth-true"
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Tue Nov 30 2021"
+          aria-pressed="false"
+          class="c-epywoc c-epywoc-huXVXM-isOutsideMonth-true"
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Wed Dec 01 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          1
+        </button>
+        <button
+          aria-label="Thu Dec 02 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          2
+        </button>
+        <button
+          aria-label="Fri Dec 03 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          3
+        </button>
+        <button
+          aria-label="Sat Dec 04 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          4
+        </button>
+        <button
+          aria-label="Sun Dec 05 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          5
+        </button>
+        <button
+          aria-label="Mon Dec 06 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          6
+        </button>
+        <button
+          aria-label="Tue Dec 07 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          7
+        </button>
+        <button
+          aria-label="Wed Dec 08 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          8
+        </button>
+        <button
+          aria-label="Thu Dec 09 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          9
+        </button>
+        <button
+          aria-label="Fri Dec 10 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          10
+        </button>
+        <button
+          aria-label="Sat Dec 11 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          11
+        </button>
+        <button
+          aria-label="Sun Dec 12 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          12
+        </button>
+        <button
+          aria-label="Mon Dec 13 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          13
+        </button>
+        <button
+          aria-label="Tue Dec 14 2021"
+          aria-pressed="false"
+          class="c-epywoc c-epywoc-hztIub-isToday-true"
+          role="button"
+        >
+          14
+        </button>
+        <button
+          aria-label="Wed Dec 15 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          15
+        </button>
+        <button
+          aria-label="Thu Dec 16 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          16
+        </button>
+        <button
+          aria-label="Fri Dec 17 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          17
+        </button>
+        <button
+          aria-label="Sat Dec 18 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          18
+        </button>
+        <button
+          aria-label="Sun Dec 19 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          19
+        </button>
+        <button
+          aria-label="Mon Dec 20 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          20
+        </button>
+        <button
+          aria-label="Tue Dec 21 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          21
+        </button>
+        <button
+          aria-label="Wed Dec 22 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          22
+        </button>
+        <button
+          aria-label="Thu Dec 23 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          23
+        </button>
+        <button
+          aria-label="Fri Dec 24 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          24
+        </button>
+        <button
+          aria-label="Sat Dec 25 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          25
+        </button>
+        <button
+          aria-label="Sun Dec 26 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          26
+        </button>
+        <button
+          aria-label="Mon Dec 27 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          27
+        </button>
+        <button
+          aria-label="Tue Dec 28 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          28
+        </button>
+        <button
+          aria-label="Wed Dec 29 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          29
+        </button>
+        <button
+          aria-label="Thu Dec 30 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          30
+        </button>
+        <button
+          aria-label="Fri Dec 31 2021"
+          aria-pressed="false"
+          class="c-epywoc"
+          role="button"
+        >
+          31
+        </button>
+        <button
+          aria-label="Sat Jan 01 2022"
+          aria-pressed="false"
+          class="c-epywoc c-epywoc-huXVXM-isOutsideMonth-true"
+          role="button"
+        >
+          1
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

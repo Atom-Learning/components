@@ -13,10 +13,16 @@ const debug = process.env.DEBUG === 'true'
 
 const deps = Object.keys(pkg.dependencies || {})
 const peerDeps = Object.keys(pkg.peerDependencies || {})
+const externalDeps = [
+  ...deps,
+  ...peerDeps,
+  'react-player/vimeo',
+  'dayjs/plugin/customParseFormat'
+]
 
 export default {
   input: 'src/index.ts',
-  external: [...deps, ...peerDeps, 'react-player/vimeo'],
+  external: externalDeps,
   output: [
     { file: pkg.main, format: 'cjs' },
     { dir: 'dist', format: 'esm', preserveModules: true }
