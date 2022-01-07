@@ -25,8 +25,8 @@
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
-    "validate:types": "tsc --noEmit",
-    "validate:size": "yarn build:lib && size-limit"
+    "validate:size": "yarn build:lib && size-limit",
+    "validate:types": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -40,19 +40,7 @@
   "homepage": "https://github.com/Atom-Learning/components#readme",
   "size-limit": [
     {
-      "limit": "10kb",
-      "path": "dist/index.js",
-      "import": "{ Box }"
-    },
-    {
-      "limit": "16kb",
-      "path": "dist/index.js",
-      "import": "{ Button }"
-    },
-    {
-      "limit": "75kb",
-      "path": "dist/index.js",
-      "import": "{ AlertDialog, useAlert, AlertProvider }"
+      "path": "dist/index.js"
     }
   ],
   "devDependencies": {
