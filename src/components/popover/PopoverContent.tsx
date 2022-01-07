@@ -51,6 +51,7 @@ const StyledArrow = styled(Arrow, {
 type PopoverContentProps = React.ComponentProps<typeof StyledContent> &
   React.ComponentProps<typeof Content> & {
     closePopoverText?: string
+    showCloseButton?: boolean
   }
 
 export const PopoverContent: React.FC<PopoverContentProps> = ({
@@ -58,6 +59,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
   side = 'top',
   sideOffset = 8,
   closePopoverText = 'Close popover',
+  showCloseButton = true,
   size = 'md',
   ...remainingProps
 }) => (
@@ -67,15 +69,17 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     sideOffset={sideOffset}
     {...remainingProps}
   >
-    <ActionIcon
-      as={Close}
-      css={{ position: 'absolute', right: '$0', top: '$0' }}
-      label={closePopoverText}
-      size="lg"
-      theme="neutral"
-    >
-      <Icon is={CloseIcon} />
-    </ActionIcon>
+    {showCloseButton && (
+      <ActionIcon
+        as={Close}
+        css={{ position: 'absolute', right: '$0', top: '$0' }}
+        label={closePopoverText}
+        size="lg"
+        theme="neutral"
+      >
+        <Icon is={CloseIcon} />
+      </ActionIcon>
+    )}
     {children}
     <StyledArrow width={16} height={8} />
   </StyledContent>
