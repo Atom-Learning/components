@@ -6,6 +6,7 @@
     "jsx": "react",
     "target": "es2018",
     "moduleResolution": "node",
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["es6", "dom"],
     "types": ["node", "jest"],

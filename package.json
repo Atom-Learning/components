@@ -41,13 +41,19 @@
   "homepage": "https://github.com/Atom-Learning/components#readme",
   "size-limit": [
     {
-      "limit": "4s",
-      "path": "dist/index.js"
-    },
-    {
-      "limit": "400ms",
+      "limit": "10kb",
       "path": "dist/index.js",
       "import": "{ Box }"
+    },
+    {
+      "limit": "16kb",
+      "path": "dist/index.js",
+      "import": "{ Button }"
+    },
+    {
+      "limit": "75kb",
+      "path": "dist/index.js",
+      "import": "{  useAlert, AlertProvider }"
     }
   ],
   "devDependencies": {
@@ -64,7 +70,7 @@
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/npm": "^7.1.1",
     "@semantic-release/release-notes-generator": "^9.0.2",
-    "@size-limit/preset-big-lib": "^5.0.5",
+    "@size-limit/preset-small-lib": "^7.0.5",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/react-hooks": "^7.0.2",
@@ -108,7 +114,7 @@
     "rollup-plugin-visualizer": "^4.2.2",
     "semantic-release": "^17.4.2",
     "semantic-release-slack-bot": "^2.1.1",
-    "size-limit": "^5.0.5",
+    "size-limit": "^7.0.5",
     "stitches-reset": "^1.0.0",
     "tsc-alias": "^1.3.5",
     "typescript": "4.2.2",
