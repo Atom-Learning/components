@@ -5645,6 +5645,13 @@ es-abstract@^1.18.0-next.1:
     string.prototype.trimend "^1.0.3"
     string.prototype.trimstart "^1.0.3"
 
+es-jest@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/es-jest/-/es-jest-1.5.0.tgz#7e8a45a90be0882afccdd56ea3084b5616d08e24"
+  integrity sha512-LC6IKr3IqmdYeFCnmi53vktU4GB0CAWFQ2HPi8hoab5jvtaBy62P7mFNnARw5Es3hgF99qiB0c/0N0eBsk8Cww==
+  dependencies:
+    esbuild "^0"
+
 es-module-lexer@^0.9.3:
   version "0.9.3"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.9.3.tgz#6f13db00cc38417137daf74366f535c8eb438f19"
@@ -5749,7 +5756,7 @@ esbuild-windows-arm64@0.14.10:
   resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.10.tgz#50ab9a83f6ccf71c272e58489ecc4d7375075f32"
   integrity sha512-OJOyxDtabvcUYTc+O4dR0JMzLBz6G9+gXIHA7Oc5d5Fv1xiYa0nUeo8+W5s2e6ZkPRdIwOseYoL70rZz80S5BA==
 
-esbuild@^0.14.10:
+esbuild@^0, esbuild@^0.14.10:
   version "0.14.10"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.10.tgz#10268d2b576b25ed6f8554553413988628a7767b"
   integrity sha512-ibZb+NwFqBwHHJlpnFMtg4aNmVK+LUtYMFC9CuKs6lDCBEvCHpqCFZFEirpqt1jOugwKGx8gALNGvX56lQyfew==
