@@ -23,6 +23,7 @@
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
+    "test:ci": "jest --silent --ci",
     "validate": "run-p validate:**",
     "validate:dependencies": "yarn audit --groups dependencies",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
