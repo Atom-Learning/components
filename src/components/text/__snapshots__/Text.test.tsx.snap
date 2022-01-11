@@ -2,27 +2,32 @@
 
 exports[`Text component renders some text 1`] = `
 @media  {
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
 }
 
 @media  {
-  .c-dbleUi-gvmVBy-size-md {
+  .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dbleUi-gvmVBy-size-md::before {
+  .c-fIXJvv-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md::after {
+  .c-fIXJvv-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -31,7 +36,7 @@ exports[`Text component renders some text 1`] = `
 
 <div>
   <p
-    class="c-dbleUi c-dbleUi-gvmVBy-size-md"
+    class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
   >
     TEXT
   </p>

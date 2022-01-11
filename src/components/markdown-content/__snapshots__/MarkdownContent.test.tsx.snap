@@ -14,11 +14,16 @@ exports[`MarkdownContent component renders 1`] = `
     margin: 0;
   }
 
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
   }
 
   .c-ecBjWS {
@@ -65,7 +70,7 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-gEFkc {
+  .c-kgcOue {
     background: unset;
     border: unset;
     padding: unset;
@@ -75,29 +80,29 @@ exports[`MarkdownContent component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-gEFkc:focus,
-  .c-gEFkc:hover {
+  .c-kgcOue:focus,
+  .c-kgcOue:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gEFkc:active {
+  .c-kgcOue:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dbleUi > .c-gEFkc,
-  .c-iSnHBU > .c-gEFkc,
-  .c-PJLV > .c-gEFkc {
+  .c-fIXJvv > .c-kgcOue,
+  .c-iSnHBU > .c-kgcOue,
+  .c-PJLV > .c-kgcOue {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dbleUi > .c-gEFkc::before,
-  .c-dbleUi > .c-gEFkc::after,
-  .c-iSnHBU > .c-gEFkc::before,
-  .c-iSnHBU > .c-gEFkc::after,
-  .c-PJLV > .c-gEFkc::before,
-  .c-PJLV > .c-gEFkc::after {
+  .c-fIXJvv > .c-kgcOue::before,
+  .c-fIXJvv > .c-kgcOue::after,
+  .c-iSnHBU > .c-kgcOue::before,
+  .c-iSnHBU > .c-kgcOue::after,
+  .c-PJLV > .c-kgcOue::before,
+  .c-PJLV > .c-kgcOue::after {
     content: none;
   }
 
@@ -214,18 +219,18 @@ exports[`MarkdownContent component renders 1`] = `
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md {
+  .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dbleUi-gvmVBy-size-md::before {
+  .c-fIXJvv-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md::after {
+  .c-fIXJvv-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -263,18 +268,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-gEFkc-gvmVBy-size-md {
+  .c-kgcOue-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gEFkc-gvmVBy-size-md::before {
+  .c-kgcOue-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gEFkc-gvmVBy-size-md::after {
+  .c-kgcOue-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -301,12 +306,12 @@ exports[`MarkdownContent component renders 1`] = `
     margin-bottom: var(--space-5);
   }
 
-  .c-dbleUi-ijBQtuh-css {
+  .c-fIXJvv-ijBQtuh-css {
     color: inherit;
     max-width: 75ch;
   }
 
-  .c-dbleUi-ijBQtuh-css:not(:last-child) {
+  .c-fIXJvv-ijBQtuh-css:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
@@ -323,7 +328,7 @@ exports[`MarkdownContent component renders 1`] = `
     margin-bottom: var(--space-5);
   }
 
-  .c-dbleUi-ibHwuwj-css {
+  .c-fIXJvv-ibHwuwj-css {
     color: inherit;
   }
 
@@ -390,7 +395,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <strong
         class="c-ecBjWS"
@@ -399,7 +404,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <strong
         class="c-ecBjWS"
@@ -408,7 +413,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <em
         class="c-bYNGXt"
@@ -417,7 +422,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <em
         class="c-bYNGXt"
@@ -459,7 +464,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Create a list by starting a line with 
           <code
@@ -485,7 +490,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
@@ -496,7 +501,7 @@ exports[`MarkdownContent component renders 1`] = `
             class="c-PJLV"
           >
             <p
-              class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+              class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
             >
               Marker character change forces new list start:
             </p>
@@ -507,7 +512,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+                  class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
                 >
                   Ac tristique libero volutpat at
                 </p>
@@ -520,7 +525,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+                  class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
@@ -533,7 +538,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+                  class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -546,7 +551,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Very easy!
         </p>
@@ -564,7 +569,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -573,7 +578,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Consectetur adipiscing elit
         </p>
@@ -582,7 +587,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           Integer molestie lorem at massa
         </p>
@@ -591,7 +596,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           You can use sequential numbers...
         </p>
@@ -600,7 +605,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ibHwuwj-css"
+          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ibHwuwj-css"
         >
           ...or keep all the numbers as 
           <code
@@ -628,7 +633,7 @@ exports[`MarkdownContent component renders 1`] = `
       Inline code
     </h3>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       This is inline 
       <code
@@ -672,20 +677,20 @@ line 3 of code
       class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <a
-        class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+        class="c-kgcOue c-kgcOue-gvmVBy-size-md"
         href="http://dev.nodeca.com"
       >
         link text
       </a>
     </p>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <a
-        class="c-gEFkc c-gEFkc-gvmVBy-size-md"
+        class="c-kgcOue c-kgcOue-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
         title="title text!"
       >
@@ -704,7 +709,7 @@ line 3 of code
       class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-icGzAje-css"
     />
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ijBQtuh-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ijBQtuh-css"
     >
       <img
         alt="Minion"
