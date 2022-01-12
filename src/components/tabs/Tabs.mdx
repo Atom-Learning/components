@@ -5,7 +5,7 @@ description: Tabs is a component that provides different sections of content tha
 category: Layout
 ---
 
-The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
+The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, `Tabs.Content`, and the optional `Tabs.TriggerListFlexContainer`.
 
 ```tsx preview
 <Tabs defaultValue="tab1" css={{ height: '100px' }}>
@@ -98,3 +98,19 @@ In order to style the different states of a trigger, the following CSS selectors
 `&[data-state="active"]` to style an active trigger.
 
 If the content of the trigger is, say, a `<Text>` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly. You can also simply style the nested child component directly via its own `css` prop.
+
+## Tabs.TriggerListFlexContainer
+
+For more complex designs, where tab triggers require a fixed element at the start or end separate to the scrollable tab trigger list, you can wrap `Tabs.TriggerList` and your other required element(s) in `Tabs.TriggerListFlexContainer`.
+
+```tsx
+<Tabs>
+  <Tabs.TriggerListFlexContainer>
+    <Tabs.TriggerList>...</Tabs.TriggerList>
+    <RequiredItemHere />
+  </Tabs.TriggerListFlexContainer>
+  ...
+</Tabs>
+```
+
+Note: for larger items you may need to apply `flex-shrink: 0` CSS to the required item.
