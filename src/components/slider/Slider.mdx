@@ -14,7 +14,7 @@ Should you wish to create a more complex UI with `Field` components, you should 
 Please note: the `value` or `defaultValue` passed in should always be an array.
 
 ```tsx preview
-<Slider defaultValue={[50]} />
+<Slider defaultValue={[50]} css={{ width: '320px' }} />
 ```
 
 ## Multiple Values
@@ -22,7 +22,7 @@ Please note: the `value` or `defaultValue` passed in should always be an array.
 Should you wish to have more than one control on the slider, you can pass those values in the array.
 
 ```tsx preview
-<Slider defaultValue={[25, 75]} />
+<Slider defaultValue={[25, 75]} css={{ width: '320px' }} />
 ```
 
 ## Slider.Steps
@@ -34,7 +34,7 @@ This is most commonly used within the `SliderField`, but is here in case you nee
 Note: it is likely better to create steps as a constant and pass in with `steps={steps}` or similar, but this preview code cannot see values outside of JSX.
 
 ```tsx preview
-<Slider defaultValue={[50]}>
+<Slider defaultValue={[50]} css={{ width: '320px' }}>
   <Slider.Steps
     min={0}
     max={100}
@@ -70,22 +70,31 @@ The component requires min and max values, these should be the same as the optio
 A separate component exists to output the value from a slider. This is most commonly used within the `SliderField`, but is here in case you need to compose your own complex component.
 
 ```tsx preview
-<Slider.Value value={[50]} />
+<Slider defaultValue={[50]} css={{ width: '320px' }}>
+  {/**
+   * The Slider.Value value must be manually controlled using onValueChange
+   * from Slider. This is a visual example of how would render Slider.Value
+   * and will not update when changed.
+   */}
+  <Slider.Value value={[50]} />
+</Slider>
 ```
 
 By default this simply outputs the value, however, this can be customised in a number of ways. The property `outputLabel` accepts a function that passes the value selected in the slider and expects a string returned for the label.
 
 You can also use this is in more complex ways, for example to set empty states and pluralisation, like below.
 
-```tsx preview
-<Slider.Value
-  value={[50]}
-  outputLabel={(value) =>
-    value === 0
-      ? 'You have no geese'
-      : `You have ${value} ${value === 1 ? 'goose' : 'geese'}`
-  }
-/>
+```tsx
+<Slider defaultValue={[50]} css={{ width: '320px' }}>
+  <Slider.Value
+    value={[50]}
+    outputLabel={(value) =>
+      value === 0
+        ? 'You have no geese'
+        : `You have ${value} ${value === 1 ? 'goose' : 'geese'}`
+    }
+  />
+</Slider>
 ```
 
 Should you wish to use the label with multiple values, you can use `Array.join()` like below.
@@ -102,5 +111,7 @@ Should you wish to use the label with multiple values, you can use `Array.join()
 Depending on the background of your page, you can change the theme of the track to be either light or tonal using `theme="light"`. Default is `theme="tonal"`.
 
 ```tsx preview
-<Slider theme="light" defaultValue={[50]} />
+<Box css={{ p: '$5', bg: '$tonal100' }}>
+  <Slider theme="light" defaultValue={[50]} css={{ width: '320px' }} />
+</Box>
 ```

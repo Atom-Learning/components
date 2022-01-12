@@ -19,7 +19,8 @@ export const Day = styled('button', {
     bg: '$primary'
   },
   '&:focus': {
-    outline: '2px solid $primary'
+    outline: '2px solid $primary',
+    outlineOffset: '2px'
   },
   variants: {
     isSelected: {

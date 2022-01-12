@@ -46,12 +46,25 @@ The calendar that is rendered by this component can have its first day of the we
 
 The weekday and month names can be changed to anything you wish by passing in an array of strings to `weekdayNames` and `monthNames`.
 
-NOTE: It is very important that you keep these labels in the right order. Weekdays must be `Sun -> Sat` and months must be `Jan -> Dec`.
+> NOTE: It is very important that you keep these labels in the right order. Weekdays must be `Sun -> Sat` and months must be `Jan -> Dec`.
 
-```tsx
+```tsx preview
 <DateInput
-  weekdayNames={['su', 'm', 't', 'w', 'th', 'f', 's']}
-  monthNames={['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']}
+  weekdayNames={['D', 'L', 'M', 'X', 'J', 'V', 'S']}
+  monthNames={[
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre'
+  ]}
 />
 ```
 
