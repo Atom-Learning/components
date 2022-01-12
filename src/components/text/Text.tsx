@@ -42,6 +42,10 @@ export const StyledParagraph = styled('p', {
   fontFamily: '$body',
   fontWeight: 400,
   margin: 0,
+  /** Allow nesting `<Text />` inside `<Text />` without forcing a new line and spacing. */
+  '& > &': {
+    '&:before, &:after': { display: 'none' }
+  },
   variants: {
     size: textVariantSize()
   }
