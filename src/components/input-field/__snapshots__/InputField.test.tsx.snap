@@ -60,11 +60,16 @@ exports[`InputField component renders a field in error state 1`] = `
     vertical-align: middle;
   }
 
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
   }
 }
 
@@ -106,18 +111,18 @@ exports[`InputField component renders a field in error state 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dbleUi-bndJoy-size-sm {
+  .c-fIXJvv-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dbleUi-bndJoy-size-sm::before {
+  .c-fIXJvv-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dbleUi-bndJoy-size-sm::after {
+  .c-fIXJvv-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -148,7 +153,7 @@ exports[`InputField component renders a field in error state 1`] = `
     flex-shrink: 0;
   }
 
-  .c-dbleUi-ikkBjHS-css {
+  .c-fIXJvv-ikkBjHS-css {
     color: inherit;
     transform: translateY(var(--space-1));
   }
@@ -209,7 +214,7 @@ exports[`InputField component renders a field in error state 1`] = `
           />
         </svg>
         <p
-          class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikkBjHS-css"
         >
           This field is required
         </p>

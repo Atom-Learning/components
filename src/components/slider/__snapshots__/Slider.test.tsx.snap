@@ -311,11 +311,16 @@ exports[`Slider.Value component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
   }
 }
 
@@ -324,18 +329,18 @@ exports[`Slider.Value component renders 1`] = `
     background: var(--colors-tonal200);
   }
 
-  .c-dbleUi-gvmVBy-size-md {
+  .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dbleUi-gvmVBy-size-md::before {
+  .c-fIXJvv-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md::after {
+  .c-fIXJvv-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -343,7 +348,7 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-dbleUi-iQwDky-css {
+  .c-fIXJvv-iQwDky-css {
     margin-top: var(--space-4);
     color: var(--colors-tonal300);
     width: 100%;
@@ -352,7 +357,7 @@ exports[`Slider.Value component renders 1`] = `
 
 <div>
   <p
-    class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-iQwDky-css"
+    class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-iQwDky-css"
   >
     Current value is 50
   </p>

@@ -9,11 +9,16 @@ exports[`StackContent component renders a stack content 1`] = `
     margin: 0;
   }
 
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
   }
 
   .c-jpqjUq {
@@ -73,18 +78,18 @@ exports[`StackContent component renders a stack content 1`] = `
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md {
+  .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dbleUi-gvmVBy-size-md::before {
+  .c-fIXJvv-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dbleUi-gvmVBy-size-md::after {
+  .c-fIXJvv-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -127,11 +132,11 @@ exports[`StackContent component renders a stack content 1`] = `
     margin-bottom: var(--space-5);
   }
 
-  .c-dbleUi-ielbxsX-css {
+  .c-fIXJvv-ielbxsX-css {
     max-width: 75ch;
   }
 
-  .c-dbleUi-ielbxsX-css:not(:last-child) {
+  .c-fIXJvv-ielbxsX-css:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
@@ -172,7 +177,7 @@ exports[`StackContent component renders a stack content 1`] = `
       HEADING
     </h2>
     <p
-      class="c-dbleUi c-dbleUi-gvmVBy-size-md c-dbleUi-ielbxsX-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ielbxsX-css"
     >
       TEXT
     </p>

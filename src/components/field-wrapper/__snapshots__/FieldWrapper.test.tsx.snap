@@ -12,7 +12,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-gEFkc {
+  .c-kgcOue {
     background: unset;
     border: unset;
     padding: unset;
@@ -22,29 +22,29 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-gEFkc:focus,
-  .c-gEFkc:hover {
+  .c-kgcOue:focus,
+  .c-kgcOue:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gEFkc:active {
+  .c-kgcOue:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dbleUi > .c-gEFkc,
-  .c-iSnHBU > .c-gEFkc,
-  .c-PJLV > .c-gEFkc {
+  .c-fIXJvv > .c-kgcOue,
+  .c-iSnHBU > .c-kgcOue,
+  .c-PJLV > .c-kgcOue {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dbleUi > .c-gEFkc::before,
-  .c-dbleUi > .c-gEFkc::after,
-  .c-iSnHBU > .c-gEFkc::before,
-  .c-iSnHBU > .c-gEFkc::after,
-  .c-PJLV > .c-gEFkc::before,
-  .c-PJLV > .c-gEFkc::after {
+  .c-fIXJvv > .c-kgcOue::before,
+  .c-fIXJvv > .c-kgcOue::after,
+  .c-iSnHBU > .c-kgcOue::before,
+  .c-iSnHBU > .c-kgcOue::after,
+  .c-PJLV > .c-kgcOue::before,
+  .c-PJLV > .c-kgcOue::after {
     content: none;
   }
 
@@ -90,11 +90,16 @@ exports[`FieldWrapper component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dbleUi {
+  .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
   }
 }
 
@@ -121,18 +126,18 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-gEFkc-bndJoy-size-sm {
+  .c-kgcOue-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-gEFkc-bndJoy-size-sm::before {
+  .c-kgcOue-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-gEFkc-bndJoy-size-sm::after {
+  .c-kgcOue-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -149,18 +154,18 @@ exports[`FieldWrapper component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dbleUi-bndJoy-size-sm {
+  .c-fIXJvv-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dbleUi-bndJoy-size-sm::before {
+  .c-fIXJvv-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dbleUi-bndJoy-size-sm::after {
+  .c-fIXJvv-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -185,7 +190,7 @@ exports[`FieldWrapper component renders 1`] = `
     flex-shrink: 0;
   }
 
-  .c-dbleUi-ikkBjHS-css {
+  .c-fIXJvv-ikkBjHS-css {
     color: inherit;
     transform: translateY(var(--space-1));
   }
@@ -205,7 +210,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-gEFkc c-gEFkc-bndJoy-size-sm"
+        class="c-kgcOue c-kgcOue-bndJoy-size-sm"
         href="https://example.com"
       >
         Example prompt
@@ -242,7 +247,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <p
-        class="c-dbleUi c-dbleUi-bndJoy-size-sm c-dbleUi-ikkBjHS-css"
+        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikkBjHS-css"
       >
         Example error
       </p>
