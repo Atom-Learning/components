@@ -304,8 +304,9 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ifaJnEw-css {
     position: relative;
+    min-width: 0;
   }
 
   .c-fDwKcF-icezigA-css {
@@ -328,7 +329,7 @@ exports[`Tabs component renders mobile view 1`] = `
     data-orientation="horizontal"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-icmpvrW-css"
+      class="c-dhzjXW c-dhzjXW-ifaJnEw-css"
     >
       <button
         aria-label="Scroll Left"

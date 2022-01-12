@@ -4,7 +4,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
-import { TriggerListWrapper } from './TabsTriggerList'
+import { TriggerListWrapper, TriggerListFlexContainer } from './TabsTriggerList'
 import { passPropsToChildren } from './utils'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
@@ -42,18 +42,21 @@ const StyledTabContent = styled(Content, {
 
 export const Tabs: React.FC<TabsProps> & {
   TriggerList: typeof TriggerListWrapper
+  TriggerListFlexContainer: typeof TriggerListFlexContainer
   Trigger: typeof TabTrigger
   Content: typeof StyledTabContent
 } = ({ theme = 'light', children, ...remainingProps }) => (
   <StyledRoot theme={theme} {...remainingProps}>
     {passPropsToChildren(children, { theme }, [
       TriggerListWrapper,
+      TriggerListFlexContainer,
       StyledTabContent
     ])}
   </StyledRoot>
 )
 
 Tabs.TriggerList = TriggerListWrapper
+Tabs.TriggerListFlexContainer = TriggerListFlexContainer
 Tabs.Trigger = TabTrigger
 Tabs.Content = StyledTabContent
 

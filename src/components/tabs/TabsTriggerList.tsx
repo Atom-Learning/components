@@ -70,6 +70,15 @@ const StyledTriggerList = styled(List, {
   }
 })
 
+export const TriggerListFlexContainer: React.FC<ListProps> = ({
+  children,
+  theme
+}) => (
+  <Flex css={{ flexDirection: 'row' }}>
+    {passPropsToChildren(children, { theme }, [TriggerListWrapper])}
+  </Flex>
+)
+
 export const TriggerListWrapper: React.FC<ListProps> = ({
   children,
   theme,
@@ -150,7 +159,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
 
   if (showScroller) {
     return (
-      <Flex css={{ position: 'relative' }}>
+      <Flex css={{ position: 'relative', minWidth: '0' }}>
         <StyledChevronIcon
           size="xl"
           label="Scroll Left"
