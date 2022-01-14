@@ -24,7 +24,7 @@ jobs:
       - run: yarn install
 
       - name: Test
-        run: yarn test
+        run: yarn test:ci
 
       - name: Validate
         run: yarn validate

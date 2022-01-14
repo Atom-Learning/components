@@ -1,15 +1,15 @@
-import { getBabelOutputPlugin } from '@rollup/plugin-babel'
+import alias from '@rollup/plugin-alias'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
-import typescript from '@rollup/plugin-typescript'
+import hq from 'alias-hq'
+import esbuild from 'rollup-plugin-esbuild'
 import summary from 'rollup-plugin-summary'
-import { terser } from 'rollup-plugin-terser'
 import visualizer from 'rollup-plugin-visualizer'
 
 import pkg from './package.json'
 
 const isProduction = process.env.NODE_ENV === 'production'
-const debug = process.env.DEBUG === 'true'
+const isDebug = process.env.DEBUG === 'true'
 
 const deps = Object.keys(pkg.dependencies || {})
 const peerDeps = Object.keys(pkg.peerDependencies || {})
@@ -28,24 +28,11 @@ export default {
     { dir: 'dist', format: 'esm', preserveModules: true }
   ],
   plugins: [
-    summary({ showBrotliSize: false }),
+    summary({ showMinifiedSize: false, showBrotliSize: false }),
     commonjs(),
-    getBabelOutputPlugin({
-      presets: [
-        [
-          '@babel/preset-env',
-          {
-            loose: true,
-            bugfixes: true,
-            modules: false,
-            targets: { esmodules: true }
-          }
-        ]
-      ]
-    }),
-    resolve(),
-    isProduction && terser(),
-    typescript(),
-    debug && visualizer()
+    alias({ entries: hq.get('rollup', { format: 'array' }) }),
+    esbuild({ minify: isProduction }),
+    resolve({ extensions: ['.ts', '.tsx'] }),
+    isDebug && visualizer()
   ]
 }

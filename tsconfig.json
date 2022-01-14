@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/", // path to output directory
-    "strictNullChecks": true, // enable strict null checks as a best practice
-    "module": "ESNext", // specify module code generation
-    "jsx": "react", // use typescript to transpile jsx to js
-    "target": "esnext", // specify ECMAScript target version
-    "allowJs": true, // allow a partial TypeScript and JavaScript codebase
+    "outDir": "./dist",
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "jsx": "react",
+    "target": "es2018",
     "moduleResolution": "node",
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["es6", "dom"],
     "types": ["node", "jest"],
     "baseUrl": "./src",
     "skipLibCheck": true,
     "paths": {
-      "~/*": ["./*"] // allow imports from '~/components', but not '~'
+      "~/*": ["./*"]
     },
-    "declaration": true // output d.ts files
+    "declaration": true
   },
   "include": ["./src/*", "types/global.d.ts"],
   "exclude": ["./src/**/*.test.*"]
