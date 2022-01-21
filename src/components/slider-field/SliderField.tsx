@@ -41,6 +41,8 @@ export const SliderField: React.FC<SliderFieldProps> = ({
             defaultValue={defaultValue}
             onValueChange={onChange}
             value={value}
+            min={min}
+            max={max}
             {...remainingProps}
           >
             <Slider.Steps min={min} max={max} steps={steps} />

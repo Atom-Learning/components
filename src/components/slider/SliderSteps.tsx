@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 import { Text } from '../text'
 
 export type SliderStepsType = {
-  steps: { label: string; value: number }[]
+  steps?: { label: string; value: number }[]
 }
 
 type SliderStepsProps = {
@@ -35,7 +35,7 @@ const getTransformValue = (value: number, min: number, max: number): number => {
 export const SliderSteps: React.FC<SliderStepsProps> = ({
   min,
   max,
-  steps
+  steps = []
 }) => {
   if (steps.length === 0) return null
 
