@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import * as React from 'react'
 import { axe } from 'jest-axe'
 
@@ -20,6 +20,18 @@ describe('SliderField component', () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('properly passes down min and max to slider', async () => {
+    await render(
+      <Form onSubmit={jest.fn()}>
+        <SliderField {...props} min={25} max={75} />
+      </Form>
+    )
+
+    const slider = await screen.findByRole('slider')
+    expect(slider).toHaveAttribute('aria-valuemin', '25')
+    expect(slider).toHaveAttribute('aria-valuemax', '75')
   })
 
   //TODO: figure out how to pass aria-label properly so that there are no a11y issues
