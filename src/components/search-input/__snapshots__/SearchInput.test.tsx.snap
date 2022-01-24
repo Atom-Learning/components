@@ -2,6 +2,13 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
@@ -35,11 +42,10 @@ exports[`SearchInput component renders 1`] = `
     opacity: 1;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
-    display: none;
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-dbrbZt {
@@ -50,12 +56,6 @@ exports[`SearchInput component renders 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
-
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
-    position: absolute;
-    pointer-events: none;
-  }
 }
 
 @media  {
@@ -64,17 +64,17 @@ exports[`SearchInput component renders 1`] = `
     font-size: var(--fontSizes-md);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
-  }
-
   .c-hvMhuR-OveXb-size-md {
     top: 10px;
     right: 10px;
     height: 20px;
     width: 20px;
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 }
 
@@ -123,6 +123,13 @@ exports[`SearchInput component renders 1`] = `
 
 exports[`SearchInput component renders clear button 1`] = `
 @media  {
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
   .c-fZTBsJ {
     -webkit-appearance: none;
     appearance: none;
@@ -156,11 +163,10 @@ exports[`SearchInput component renders clear button 1`] = `
     opacity: 1;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
-    display: none;
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-dbrbZt {
@@ -170,12 +176,6 @@ exports[`SearchInput component renders clear button 1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
-    position: absolute;
-    pointer-events: none;
   }
 
   .c-fDzwZw {
@@ -200,17 +200,17 @@ exports[`SearchInput component renders clear button 1`] = `
     font-size: var(--fontSizes-md);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
-  }
-
   .c-hvMhuR-OveXb-size-md {
     top: 10px;
     right: 10px;
     height: 20px;
     width: 20px;
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
   }
 
   .c-fDzwZw-PrXKS-size-lg {
