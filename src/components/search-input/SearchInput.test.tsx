@@ -17,7 +17,7 @@ describe('SearchInput component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('clears text on button click', async () => {
+  it('calls onChange with user input', async () => {
     const mockOnChange = jest.fn()
 
     render(<SearchInput placeholder="Search" onChange={mockOnChange} />)
