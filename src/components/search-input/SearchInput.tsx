@@ -12,6 +12,7 @@ type SearchInputProps = React.ComponentProps<typeof Input> & {
   css?: CSS
   value?: string
   clearText?: string
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 enum INPUT_ICON {
@@ -50,6 +51,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   css,
   value,
   clearText = 'Clear',
+  onChange,
   ...remainingProps
 }) => {
   const [inputValue, setInputValue] = React.useState<string | number>(
@@ -67,6 +69,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value)
     setActiveIcon(event.target.value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
+    onChange?.(event)
   }
 
   const getIcon = () => {
