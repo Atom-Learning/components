@@ -18,6 +18,17 @@ describe('SearchInput component', () => {
   })
 
   it('clears text on button click', async () => {
+    const mockOnChange = jest.fn()
+
+    render(<SearchInput placeholder="Search" onChange={mockOnChange} />)
+
+    const input = screen.getByPlaceholderText('Search')
+    fireEvent.change(input, { target: { value: '1' } })
+
+    expect(mockOnChange.mock.calls.length).toBe(1)
+  })
+
+  it('clears text on button click', async () => {
     render(<SearchInput value="testing" />)
 
     act(() => {
