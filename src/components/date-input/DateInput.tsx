@@ -11,7 +11,7 @@ import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
 
-export type DateInputProps = DayzedInterface &
+export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {
     initialDate?: Date
     dateFormat?: string
