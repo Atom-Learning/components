@@ -13,6 +13,7 @@ type DateFieldProps = DateInputProps & {
   name: string
   prompt?: { link: string; label: string }
   validation?: ValidationOptions
+  handleChange?: (value: Date) => void
 }
 
 export const DateField: React.FC<DateFieldProps> = ({
