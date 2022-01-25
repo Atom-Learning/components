@@ -50,15 +50,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     const refDateSelected = React.useRef<HTMLButtonElement>(null)
 
     React.useEffect(() => {
-      let isMounted = true
-
-      if (isMounted) {
-        onChange?.(date)
-      }
-
-      return () => {
-        isMounted = false
-      }
+      onChange?.(date)
     }, [date, onChange])
 
     return (
