@@ -33,7 +33,7 @@ describe('DateInput component', () => {
 
   it('allows external behaviour to be passed down to the "onDateSelected" callback', async () => {
     const changeSpy = jest.fn()
-    render(<DateInput aria-label="test" handleChange={changeSpy} />)
+    render(<DateInput aria-label="test" onChange={changeSpy} />)
 
     const button = await screen.findByRole('button')
     fireEvent.click(button)

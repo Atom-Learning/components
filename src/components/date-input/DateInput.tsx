@@ -18,7 +18,7 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     disabled?: boolean
     size?: 'sm' | 'md'
     revalidate?: () => Promise<boolean>
-    handleChange?: (value: Date) => void
+    onChange?: (value?: Date) => void
   }
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
@@ -37,7 +37,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         previous: 'Previous month'
       },
       revalidate,
-      handleChange,
+      onChange,
       ...remainingProps
     },
     ref
@@ -48,6 +48,18 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
 
     const refDateToday = React.useRef<HTMLButtonElement>(null)
     const refDateSelected = React.useRef<HTMLButtonElement>(null)
+
+    React.useEffect(() => {
+      let isMounted = true
+
+      if (isMounted) {
+        onChange?.(date)
+      }
+
+      return () => {
+        isMounted = false
+      }
+    }, [date, onChange])
 
     return (
       <Box css={{ position: 'relative' }}>
@@ -93,7 +105,6 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
                 setCalendarOpen(false)
                 await setDate(date.date, false)
                 if (revalidate) revalidate()
-                handleChange?.(date.date)
               }}
               refDateToday={refDateToday}
               refDateSelected={refDateSelected}
