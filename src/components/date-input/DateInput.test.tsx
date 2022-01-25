@@ -31,7 +31,7 @@ describe('DateInput component', () => {
     expect(await screen.findByRole('dialog')).toBeVisible()
   })
 
-  it('allows external behaviour to be passed down to the "onDateSelected" callback', async () => {
+  it('allows an external change handler to be passed to the component', async () => {
     const changeSpy = jest.fn()
     render(<DateInput aria-label="test" onChange={changeSpy} />)
 
