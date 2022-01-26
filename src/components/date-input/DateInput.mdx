@@ -79,3 +79,9 @@ You can also translate the internal labels for accessibility purposes. The `labe
   }}
 />
 ```
+
+If you need even finer control over what happens with the selected date, you can pass `onChange`, which takes a `Date` type as input.
+
+```tsx
+<DateInput onChange={(date) => doSomethingWith(date)} />
+```

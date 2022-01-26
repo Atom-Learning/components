@@ -18,6 +18,7 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     disabled?: boolean
     size?: 'sm' | 'md'
     revalidate?: () => Promise<boolean>
+    onChange?: (value?: Date) => void
   }
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
@@ -36,6 +37,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         previous: 'Previous month'
       },
       revalidate,
+      onChange,
       ...remainingProps
     },
     ref
@@ -46,6 +48,10 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
 
     const refDateToday = React.useRef<HTMLButtonElement>(null)
     const refDateSelected = React.useRef<HTMLButtonElement>(null)
+
+    React.useEffect(() => {
+      onChange?.(date)
+    }, [date, onChange])
 
     return (
       <Box css={{ position: 'relative' }}>
