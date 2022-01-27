@@ -2,6 +2,8 @@ import { CalendarEvent } from '@atom-learning/icons'
 import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
 import { Calendar, CalendarTranslationProps } from '../calendar/Calendar'
@@ -20,6 +22,15 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     revalidate?: () => Promise<boolean>
     onChange?: (value?: Date) => void
   }
+
+const CalendarPopover = styled(Popover.Content, {
+  variants: {
+    layout: {
+      compact: { p: '$4', pt: '$3' },
+      comfortable: { p: '$sizes$2' }
+    }
+  }
+})
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
   (
@@ -76,10 +87,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               <Icon size="sm" is={CalendarEvent} />
             </ActionIcon>
           </Popover.Trigger>
-          <Popover.Content
-            css={{ pr: '$sizes$2' }}
+          <CalendarPopover
             side="bottom"
-            align="end"
+            layout={{ '@initial': 'compact', '@sm': 'comfortable' }}
             showCloseButton={false}
             onOpenAutoFocus={(e) => {
               e.preventDefault()
@@ -104,8 +114,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               monthNames={monthNames}
               weekdayNames={weekdayNames}
               labels={labels}
+              layout={{ '@initial': 'compact', '@sm': 'comfortable' }}
             />
-          </Popover.Content>
+          </CalendarPopover>
         </Popover>
       </Box>
     )
