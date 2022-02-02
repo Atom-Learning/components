@@ -45,6 +45,8 @@ It also takes a `theme` prop that should either be "light" or "dark".
 The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
 `Tabs.TriggerList` will automatically show `<` & `>` buttons in case the content is overshooting the available space.
 
+The default scroll amount for the scroll buttons on the `Tabs.TriggerList` is 10% of the content width. You can set this to any percentage by setting, for example, `scrollPercentage={25}`.
+
 ## Tabs.Trigger
 
 The `Tabs.Trigger` component holds the content that will be displayed inside the button that the user would click in order to switch tabs. In can hold either a string, or some other component. It needs to be passed a `value` prop, that would be identical to the `value` prop passed to its corresponding `Tabs.Content` component.
