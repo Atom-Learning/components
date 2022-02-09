@@ -12,6 +12,7 @@ import { TabTrigger } from './TabTrigger'
 import { passPropsToChildren } from './utils'
 interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   enableTabScrolling?: boolean
+  scrollPercentage?: number
 }
 
 const fadedWhite = opacify(-0.2, 'white')
@@ -75,6 +76,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   theme,
   appearance,
   enableTabScrolling,
+  scrollPercentage = 10,
   ...rest
 }) => {
   const triggerListRef = useRef<HTMLDivElement>(null)
@@ -85,12 +87,15 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
   const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
     const triggerList = triggerListRef.current
     if (triggerList) {
-      const { scrollWidth, scrollLeft } = triggerList
-      const scrollAmount = Math.round(scrollWidth / 4) // 25% of whole scroll width
+      const { scrollWidth, scrollLeft, offsetWidth } = triggerList
+      const scrollAmount = Math.round(scrollWidth * (scrollPercentage / 100))
       let left = scrollLeft
       if (direction === 'right') {
-        const newScrollAmount = triggerList.scrollLeft + scrollAmount
-        left = newScrollAmount <= scrollWidth ? newScrollAmount : scrollLeft
+        const newScrollAmount = scrollLeft + scrollAmount
+        left =
+          newScrollAmount + offsetWidth <= scrollWidth
+            ? newScrollAmount
+            : scrollWidth - offsetWidth
       } else {
         const newScrollAmount = scrollLeft - scrollAmount
         left = newScrollAmount > 0 ? newScrollAmount : 0
@@ -104,10 +109,12 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
       // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
       setTimeout(() => {
         const { scrollWidth, scrollLeft, offsetWidth } = triggerList
+        const scrollDistance = scrollWidth - (scrollLeft + offsetWidth)
         if (scrollLeft === 0) {
           setShowLeftScroller(false)
           setShowRightScroller(true)
-        } else if (scrollLeft + offsetWidth === scrollWidth) {
+        } else if (scrollDistance < 5) {
+          // sometimes right button does not hide due to few pixel precision
           setShowRightScroller(false)
           setShowLeftScroller(true)
         } else {
