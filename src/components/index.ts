@@ -33,6 +33,10 @@ export { PasswordField } from './password-field'
 export { PasswordInput } from './password-input'
 export { Popover } from './popover'
 export { ProgressBar } from './progress-bar'
+export {
+  ProgressIndicator,
+  ProgressIndicatorProvider
+} from './progress-indicator'
 export { RadioButton, RadioButtonGroup } from './radio-button'
 export { RadioButtonField } from './radio-button-field'
 export { RadioCard, RadioCardGroup } from './radio-card'
