@@ -12,17 +12,18 @@ const ProgressIndicatorContext = React.createContext<ProgressContext>({
   setActiveStep: () => null,
   viewedSteps: [],
   allowSkip: false,
-  labels: { back: 'Back', next: 'Next', start: 'Start' }
+  isFinalStep: false
 })
 
 export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps> = ({
   children,
   stepsData,
-  allowSkip,
-  labels
+  allowSkip
 }) => {
   const [steps, setSteps] = React.useState<unknown[]>(stepsData)
+
   const [activeStep, setActiveStep] = React.useState(0)
+
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])
 
   React.useEffect(() => {
@@ -55,7 +56,7 @@ export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps>
         setActiveStep,
         viewedSteps,
         allowSkip,
-        labels
+        isFinalStep: activeStep === steps.length - 1
       }}
     >
       {children}

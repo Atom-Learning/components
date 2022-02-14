@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressIndicator renders the correct number of bullets 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-fUopBg {
+    padding: var(--space-2);
+    justify-content: center;
+    align-items: center;
+    width: var(--sizes-2);
+    height: var(--sizes-2);
+    border-radius: 50%;
+    border: none;
+    background: var(--colors-tonal50);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
+  .c-jpqjUq {
+    border: 0;
+    background: var(--colors-tonal200);
+  }
+}
+
+@media  {
+  .c-fkUJsw-eYnvrx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+    height: var(--sizes-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .c-fUopBg-cXAcFO-state-active {
+    background: var(--colors-primary);
+  }
+
+  .c-PJLV-fjEkWJ-color-light {
+    color: white;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs {
+    font-size: var(--fontSizes-xs);
+    line-height: 1.6;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::before {
+    content: '';
+    margin-bottom: -0.4364em;
+    display: table;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::after {
+    content: '';
+    margin-top: -0.4364em;
+    display: table;
+  }
+
+  .c-jpqjUq-jokUAR-orientation-horizontal {
+    height: 1px;
+    width: 100%;
+  }
+
+  .c-PJLV-ldsiYK-color-dark {
+    color: var(--colors-tonal400);
+  }
+}
+
+@media  {
+  .c-fkUJsw-fSssiS-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
+  }
+}
+
+@media  {
+  .c-dhzjXW-iSmFNb-css {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
+  }
+
+  .c-dhzjXW-idGcKFW-css {
+    cursor: auto;
+  }
+
+  .c-jpqjUq-ikVnves-css {
+    width: var(--sizes-2);
+    background: var(--colors-tonal400);
+  }
+
+  .c-dhzjXW-igsmDXe-css {
+    cursor: pointer;
+  }
+}
+
+<div>
+  <div
+    aria-label="progress"
+    class="c-dhzjXW c-dhzjXW-iSmFNb-css"
+  >
+    <button
+      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      disabled=""
+      type="button"
+    >
+      Back
+    </button>
+    <div
+      class="c-dhzjXW"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      >
+        <button
+          aria-current="step"
+          aria-label="step 1"
+          class="c-dhzjXW c-fUopBg c-fUopBg-cXAcFO-state-active c-dhzjXW-igsmDXe-css"
+        >
+          <p
+            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-fjEkWJ-color-light"
+          >
+            1
+          </p>
+        </button>
+        <hr
+          class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ikVnves-css"
+        />
+      </div>
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      >
+        <button
+          aria-current="false"
+          aria-label="step 2"
+          class="c-dhzjXW c-fUopBg c-dhzjXW-igsmDXe-css"
+        >
+          <p
+            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
+          >
+            2
+          </p>
+        </button>
+        <hr
+          class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ikVnves-css"
+        />
+      </div>
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      >
+        <button
+          aria-current="false"
+          aria-label="step 3"
+          class="c-dhzjXW c-fUopBg c-dhzjXW-igsmDXe-css"
+        >
+          <p
+            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
+          >
+            3
+          </p>
+        </button>
+      </div>
+    </div>
+    <button
+      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv"
+      type="button"
+    >
+      Next
+    </button>
+  </div>
+</div>
+`;

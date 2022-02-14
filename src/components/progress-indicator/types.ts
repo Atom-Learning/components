@@ -9,11 +9,20 @@ export type ProgressContext = {
   validateViewedStep?: boolean
   viewedSteps: number[]
   allowSkip?: boolean
-  labels?: { back: string; next: string; start: string }
+  isFinalStep: boolean
 }
 
 export type ProgressIndicatorProviderProps = {
   stepsData: unknown[]
   allowSkip?: boolean
-  labels?: { back: string; next: string; start: string }
+}
+
+export interface IProgressIndicatorProps {
+  stepsData: unknown[]
+  allowSkip?: boolean
+}
+
+export interface IProgressIndicatorNavigateNextProps {
+  finalLabel?: string
+  finalAction: () => void
 }
