@@ -1,0 +1,42 @@
+---
+title: Progress Indicator
+component: ProgressIndicator
+description: ProgressIndicator provides a bullet list of steps and forward/backwards navigation buttons.
+category: Feedback
+---
+
+`ProgressIndicator` exports multiple components that combine to create a Progress Indicator view.
+
+`ProgressIndicator.NavigatePrevious` represents the backwards navigation element. It must receive text as its child in order to render a label on the underlying Button element. It is automatically disabled while the user is viewing the first step.
+
+`ProgressIndicator.NavigateNext` represents the forward navigation element. It must also receive text as its child in order to render a label on the underlying Button element. Apart from that, it can also receive `finalLabel` and `finalAction` props. When the user reaches the final step, the `finalLabel` gets rendered, while clicking the element triggers `finalAction`.
+
+`ProgressIndicator.Steps` holds the actual bullet list.
+
+The root `ProgressIndicator` component must be passed `stepsData` in the form of an array.
+
+```tsx preview
+<ProgressIndicator stepsData={[1, 2, 3]}>
+  <ProgressIndicator.NavigatePrevious>
+    Back
+  </ProgressIndicator.NavigatePrevious>
+  <ProgressIndicator.Steps/>
+  <ProgressIndicator.NavigateNext finalLabel="Start" finalAction={() => console.log('Finished)}>
+    Next
+  </ProgressIndicator.NavigateNext>
+</Dialog>
+```
+
+The root `ProgressIndicator` component can also take an `allowSkip` prop. When this prop is passed, the user is allowed to click the actual bullets in order to navigate.
+
+```tsx preview
+<ProgressIndicator stepsData={[1, 2, 3]} allowSkip>
+  <ProgressIndicator.NavigatePrevious>
+    Back
+  </ProgressIndicator.NavigatePrevious>
+  <ProgressIndicator.Steps/>
+  <ProgressIndicator.NavigateNext finalLabel="Start" finalAction={() => console.log('Finished)}>
+    Next
+  </ProgressIndicator.NavigateNext>
+</Dialog>
+```

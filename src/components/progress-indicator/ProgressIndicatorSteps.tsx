@@ -18,6 +18,7 @@ const StyledBullet = styled(Flex, {
   bg: '$tonal50',
   variants: {
     state: {
+      normal: { bg: '$tonal50' },
       active: { bg: '$primary' },
       viewed: { bg: '$primaryDark' }
     }
@@ -50,7 +51,7 @@ export const ProgressIndicatorSteps: React.FC = () => {
   const getBulletState = (index: number) => {
     if (activeStep === index) return 'active'
     if (viewedSteps.includes(index)) return 'viewed'
-    return
+    return 'normal'
   }
 
   return (

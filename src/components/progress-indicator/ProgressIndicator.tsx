@@ -14,9 +14,6 @@ export const ProgressIndicator: React.FC<IProgressIndicatorProps> & {
   NavigateNext: typeof ProgressIndicatorNavigateNext
   Steps: typeof ProgressIndicatorSteps
 } = ({ children, stepsData, allowSkip }) => {
-  if (!stepsData?.length) {
-    return <Loader />
-  }
   return (
     <ProgressIndicatorProvider stepsData={stepsData} allowSkip={allowSkip}>
       <Flex
