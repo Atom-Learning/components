@@ -31,11 +31,12 @@ The root `ProgressIndicator` component can also take an `allowSkip` prop. When t
 
 ```tsx preview
 <ProgressIndicator stepsData={[1, 2, 3]} allowSkip>
-  <ProgressIndicator.NavigatePrevious>
-    Back
-  </ProgressIndicator.NavigatePrevious>
-  <ProgressIndicator.Steps/>
-  <ProgressIndicator.NavigateNext finalLabel="Start" finalAction={() => console.log('Finished)}>
+  <ProgressIndicator.NavigatePrevious>Back</ProgressIndicator.NavigatePrevious>
+  <ProgressIndicator.Steps />
+  <ProgressIndicator.NavigateNext
+    finalLabel="Start"
+    finalAction={() => console.log('Finished')}
+  >
     Next
   </ProgressIndicator.NavigateNext>
 </ProgressIndicator>
