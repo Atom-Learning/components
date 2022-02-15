@@ -91,6 +91,10 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     width: 100%;
   }
 
+  .c-fUopBg-ejBMHX-state-normal {
+    background: var(--colors-tonal50);
+  }
+
   .c-PJLV-ldsiYK-color-dark {
     color: var(--colors-tonal400);
   }
@@ -206,7 +210,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
         <button
           aria-current="false"
           aria-label="step 2"
-          class="c-dhzjXW c-fUopBg c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-fUopBg c-fUopBg-ejBMHX-state-normal c-dhzjXW-igsmDXe-css"
         >
           <p
             class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
@@ -224,7 +228,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
         <button
           aria-current="false"
           aria-label="step 3"
-          class="c-dhzjXW c-fUopBg c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-fUopBg c-fUopBg-ejBMHX-state-normal c-dhzjXW-igsmDXe-css"
         >
           <p
             class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
