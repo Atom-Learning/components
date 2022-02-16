@@ -4,24 +4,22 @@ import { ProgressContext, ProgressIndicatorProviderProps } from '../types'
 
 const ProgressIndicatorContext = React.createContext<ProgressContext>({
   steps: [],
-  setSteps: () => null,
   goToNextStep: () => null,
   goToPreviousStep: () => null,
   goToStep: () => null,
   activeStep: 0,
-  setActiveStep: () => null,
   viewedSteps: [],
   allowSkip: false,
-  isFinalStep: false
+  isFinalStep: false,
+  onComplete: () => null
 })
 
 export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps> = ({
   children,
-  stepsData,
-  allowSkip
+  stepCount,
+  allowSkip,
+  onComplete
 }) => {
-  const [steps, setSteps] = React.useState<unknown[]>(stepsData)
-
   const [activeStep, setActiveStep] = React.useState(0)
 
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])
@@ -47,16 +45,15 @@ export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps>
   return (
     <ProgressIndicatorContext.Provider
       value={{
-        steps,
-        setSteps,
+        steps: Array(stepCount).fill(''),
         goToNextStep,
         goToPreviousStep,
         goToStep,
         activeStep,
-        setActiveStep,
         viewedSteps,
         allowSkip,
-        isFinalStep: activeStep === steps.length - 1
+        isFinalStep: activeStep === stepCount - 1,
+        onComplete
       }}
     >
       {children}

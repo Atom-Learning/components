@@ -2,8 +2,7 @@ import * as React from 'react'
 
 import { Flex } from '~/components/flex'
 
-import { Loader } from '..'
-import { ProgressIndicatorProvider } from '.'
+import { ProgressIndicatorProvider } from './progress-indicator-context/ProgressIndicatorContext'
 import { ProgressIndicatorNavigateNext } from './ProgressIndicatorNavigateNext'
 import { ProgressIndicatorNavigatePrevious } from './ProgressIndicatorNavigatePrevious'
 import { ProgressIndicatorSteps } from './ProgressIndicatorSteps'
@@ -13,15 +12,19 @@ export const ProgressIndicator: React.FC<IProgressIndicatorProps> & {
   NavigatePrevious: typeof ProgressIndicatorNavigatePrevious
   NavigateNext: typeof ProgressIndicatorNavigateNext
   Steps: typeof ProgressIndicatorSteps
-} = ({ children, stepsData, allowSkip }) => {
+} = ({ children, stepCount, allowSkip, onComplete }) => {
   return (
-    <ProgressIndicatorProvider stepsData={stepsData} allowSkip={allowSkip}>
+    <ProgressIndicatorProvider
+      stepCount={stepCount}
+      allowSkip={allowSkip}
+      onComplete={onComplete}
+    >
       <Flex
         aria-label="progress"
         css={{
           display: 'flex',
           width: '100%',
-          justifyContent: 'space-around',
+          justifyContent: 'space-between',
           alignItems: 'center'
         }}
       >

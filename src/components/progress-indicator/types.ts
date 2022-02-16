@@ -1,28 +1,31 @@
 export type ProgressContext = {
   steps: unknown[]
-  setSteps: React.Dispatch<React.SetStateAction<unknown>[]>
   goToNextStep: () => void
   goToPreviousStep: () => void
   goToStep: (index: number) => void
   activeStep: number
-  setActiveStep: React.Dispatch<React.SetStateAction<number>>
-  validateViewedStep?: boolean
   viewedSteps: number[]
   allowSkip?: boolean
   isFinalStep: boolean
+  onComplete?: () => void
 }
 
 export type ProgressIndicatorProviderProps = {
-  stepsData: unknown[]
+  stepCount: number
   allowSkip?: boolean
+  onComplete?: () => void
 }
 
 export interface IProgressIndicatorProps {
-  stepsData: unknown[]
+  stepCount: number
   allowSkip?: boolean
+  onComplete?: () => void
 }
 
 export interface IProgressIndicatorNavigateNextProps {
-  finalLabel?: string
-  finalAction: () => void
+  outputLabel: (isFinalStep: boolean) => string
+}
+
+export interface IProgressIndicatorNavigatePreviousProps {
+  outputLabel: string
 }

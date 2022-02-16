@@ -1,18 +1,19 @@
 import * as React from 'react'
 
 import { Button } from '../button'
-import { useProgressIndicator } from '.'
+import { useProgressIndicator } from './progress-indicator-context/ProgressIndicatorContext'
 import { IProgressIndicatorNavigateNextProps } from './types'
 
-export const ProgressIndicatorNavigateNext: React.FC<IProgressIndicatorNavigateNextProps> &
-  typeof Button = ({ children, finalAction, finalLabel, ...rest }) => {
-  const { goToNextStep, isFinalStep } = useProgressIndicator()
+export const ProgressIndicatorNavigateNext: React.FC<
+  IProgressIndicatorNavigateNextProps & typeof Button
+> = ({ outputLabel, ...rest }) => {
+  const { goToNextStep, isFinalStep, onComplete } = useProgressIndicator()
 
-  const handleClick = () => (isFinalStep ? finalAction() : goToNextStep())
+  const handleClick = () => (isFinalStep ? onComplete?.() : goToNextStep())
 
   return (
-    <Button size="sm" onClick={handleClick} {...rest}>
-      {isFinalStep && finalLabel ? finalLabel : children}
+    <Button size="sm" {...rest} onClick={handleClick}>
+      {outputLabel(isFinalStep)}
     </Button>
   )
 }

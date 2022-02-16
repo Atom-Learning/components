@@ -23,7 +23,8 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     width: max-content;
   }
 
-  .c-fUopBg {
+  .c-cpneff {
+    position: relative;
     padding: var(--space-2);
     justify-content: center;
     align-items: center;
@@ -32,23 +33,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     border-radius: 50%;
     border: none;
     background: var(--colors-tonal50);
-  }
-
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
-
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
-    display: none;
-  }
-
-  .c-jpqjUq {
-    border: 0;
-    background: var(--colors-tonal200);
+    margin-left: var(--space-3);
   }
 }
 
@@ -61,41 +46,22 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-fUopBg-cXAcFO-state-active {
+  .c-cpneff-lkRQpS-state-active {
     background: var(--colors-primary);
-  }
-
-  .c-PJLV-fjEkWJ-color-light {
     color: white;
   }
 
-  .c-fIXJvv-bhKTXb-size-xs {
-    font-size: var(--fontSizes-xs);
-    line-height: 1.6;
-  }
-
-  .c-fIXJvv-bhKTXb-size-xs::before {
-    content: '';
-    margin-bottom: -0.4364em;
-    display: table;
-  }
-
-  .c-fIXJvv-bhKTXb-size-xs::after {
-    content: '';
-    margin-top: -0.4364em;
-    display: table;
-  }
-
-  .c-jpqjUq-jokUAR-orientation-horizontal {
+  .c-cpneff-iRsopx-separator-normal:not(:last-child)::after {
+    content: "";
+    width: var(--sizes-1);
     height: 1px;
-    width: 100%;
+    background: var(--colors-tonal400);
+    position: absolute;
+    left: var(--sizes-2);
   }
 
-  .c-fUopBg-ejBMHX-state-normal {
+  .c-cpneff-jdelko-state-normal {
     background: var(--colors-tonal50);
-  }
-
-  .c-PJLV-ldsiYK-color-dark {
     color: var(--colors-tonal400);
   }
 }
@@ -146,10 +112,10 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-iSmFNb-css {
+  .c-dhzjXW-ixpGSK-css {
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -161,11 +127,6 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     cursor: auto;
   }
 
-  .c-jpqjUq-ikVnves-css {
-    width: var(--sizes-2);
-    background: var(--colors-tonal400);
-  }
-
   .c-dhzjXW-igsmDXe-css {
     cursor: pointer;
   }
@@ -174,7 +135,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
 <div>
   <div
     aria-label="progress"
-    class="c-dhzjXW c-dhzjXW-iSmFNb-css"
+    class="c-dhzjXW c-dhzjXW-ixpGSK-css"
   >
     <button
       class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
@@ -184,59 +145,27 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW"
+      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
     >
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      <button
+        aria-current="step"
+        aria-label="step 1"
+        class="c-dhzjXW c-cpneff c-cpneff-lkRQpS-state-active c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
       >
-        <button
-          aria-current="step"
-          aria-label="step 1"
-          class="c-dhzjXW c-fUopBg c-fUopBg-cXAcFO-state-active c-dhzjXW-igsmDXe-css"
-        >
-          <p
-            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-fjEkWJ-color-light"
-          >
-            1
-          </p>
-        </button>
-        <hr
-          class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ikVnves-css"
-        />
-      </div>
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+        1
+      </button>
+      <button
+        aria-label="step 2"
+        class="c-dhzjXW c-cpneff c-cpneff-jdelko-state-normal c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
       >
-        <button
-          aria-current="false"
-          aria-label="step 2"
-          class="c-dhzjXW c-fUopBg c-fUopBg-ejBMHX-state-normal c-dhzjXW-igsmDXe-css"
-        >
-          <p
-            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
-          >
-            2
-          </p>
-        </button>
-        <hr
-          class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ikVnves-css"
-        />
-      </div>
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+        2
+      </button>
+      <button
+        aria-label="step 3"
+        class="c-dhzjXW c-cpneff c-cpneff-jdelko-state-normal c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
       >
-        <button
-          aria-current="false"
-          aria-label="step 3"
-          class="c-dhzjXW c-fUopBg c-fUopBg-ejBMHX-state-normal c-dhzjXW-igsmDXe-css"
-        >
-          <p
-            class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-PJLV c-PJLV-ldsiYK-color-dark"
-          >
-            3
-          </p>
-        </button>
-      </div>
+        3
+      </button>
     </div>
     <button
       class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv"

@@ -7,14 +7,12 @@ import { ProgressIndicator } from './ProgressIndicator'
 describe('ProgressIndicator', () => {
   it('renders a bullet style progress indicator - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <ProgressIndicator stepsData={[1, 2, 3]}>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} onComplete={jest.fn()}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
-        <ProgressIndicator.NavigateNext finalAction={jest.fn()}>
-          Next
-        </ProgressIndicator.NavigateNext>
+        <ProgressIndicator.NavigateNext
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
 
@@ -23,14 +21,12 @@ describe('ProgressIndicator', () => {
 
   it('renders the correct number of bullets', () => {
     const { container } = render(
-      <ProgressIndicator stepsData={[1, 2, 3]} allowSkip>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} allowSkip onComplete={jest.fn()}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
-        <ProgressIndicator.NavigateNext finalAction={jest.fn()}>
-          Next
-        </ProgressIndicator.NavigateNext>
+        <ProgressIndicator.NavigateNext
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
     expect(container).toMatchSnapshot()
@@ -38,17 +34,12 @@ describe('ProgressIndicator', () => {
 
   it('allows skipping steps', () => {
     render(
-      <ProgressIndicator stepsData={[1, 2, 3]} allowSkip>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} allowSkip onComplete={jest.fn()}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
         <ProgressIndicator.NavigateNext
-          finalLabel="Start"
-          finalAction={jest.fn()}
-        >
-          Next
-        </ProgressIndicator.NavigateNext>
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
 
@@ -59,14 +50,12 @@ describe('ProgressIndicator', () => {
 
   it("doesn't allow skipping steps", async () => {
     render(
-      <ProgressIndicator stepsData={[1, 2, 3]}>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} onComplete={jest.fn()}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
-        <ProgressIndicator.NavigateNext finalAction={jest.fn()}>
-          Next
-        </ProgressIndicator.NavigateNext>
+        <ProgressIndicator.NavigateNext
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
 
@@ -77,14 +66,12 @@ describe('ProgressIndicator', () => {
 
   it('allows going backwards', async () => {
     render(
-      <ProgressIndicator stepsData={[1, 2, 3]}>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} onComplete={jest.fn()}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
-        <ProgressIndicator.NavigateNext finalAction={jest.fn()}>
-          Next
-        </ProgressIndicator.NavigateNext>
+        <ProgressIndicator.NavigateNext
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
     // go to the second item
@@ -98,17 +85,12 @@ describe('ProgressIndicator', () => {
   it('calls final action handler if provided, when on final step', () => {
     const finalActionSpy = jest.fn()
     render(
-      <ProgressIndicator stepsData={[1, 2, 3]} allowSkip>
-        <ProgressIndicator.NavigatePrevious>
-          Back
-        </ProgressIndicator.NavigatePrevious>
+      <ProgressIndicator stepCount={3} allowSkip onComplete={finalActionSpy}>
+        <ProgressIndicator.NavigatePrevious outputLabel="Back" />
         <ProgressIndicator.Steps />
         <ProgressIndicator.NavigateNext
-          finalLabel="Start"
-          finalAction={finalActionSpy}
-        >
-          Next
-        </ProgressIndicator.NavigateNext>
+          outputLabel={(isFinalStep) => (isFinalStep ? 'Start' : 'Next')}
+        />
       </ProgressIndicator>
     )
 

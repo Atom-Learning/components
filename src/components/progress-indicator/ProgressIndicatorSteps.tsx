@@ -2,12 +2,11 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Divider } from '../divider'
 import { Flex } from '../flex'
-import { Text } from '../text'
-import { useProgressIndicator } from '.'
+import { useProgressIndicator } from './progress-indicator-context/ProgressIndicatorContext'
 
 const StyledBullet = styled(Flex, {
+  position: 'relative',
   p: '$2',
   justifyContent: 'center',
   alignItems: 'center',
@@ -16,20 +15,34 @@ const StyledBullet = styled(Flex, {
   borderRadius: '50%',
   border: 'none',
   bg: '$tonal50',
+  ml: '$3',
   variants: {
     state: {
-      normal: { bg: '$tonal50' },
-      active: { bg: '$primary' },
-      viewed: { bg: '$primaryDark' }
-    }
-  }
-})
-
-const StyledText = styled(Text, {
-  variants: {
-    color: {
-      light: { color: 'white' },
-      dark: { color: '$tonal400' }
+      normal: { bg: '$tonal50', color: '$tonal400' },
+      active: { bg: '$primary', color: 'white' },
+      viewed: { bg: '$primaryDark', color: 'white' }
+    },
+    separator: {
+      normal: {
+        '&:not(:last-child)::after': {
+          content: '',
+          width: '$1',
+          height: '1px',
+          background: '$tonal400',
+          position: 'absolute',
+          left: '$sizes$2'
+        }
+      },
+      highlight: {
+        '&:not(:last-child)::after': {
+          content: '',
+          width: '$1',
+          height: '1px',
+          background: '$primary',
+          position: 'absolute',
+          left: '$sizes$2'
+        }
+      }
     }
   }
 })
@@ -55,39 +68,21 @@ export const ProgressIndicatorSteps: React.FC = () => {
   }
 
   return (
-    <Flex>
+    <Flex css={{ alignItems: 'center' }}>
       {steps.map((_, index) => {
         return (
-          <Flex key={`step_${index}`} css={{ alignItems: 'center' }}>
-            <StyledBullet
-              as={allowSkip ? 'button' : 'div'}
-              onClick={() => handleStepClick(index)}
-              state={getBulletState(index)}
-              aria-current={index === activeStep ? 'step' : false}
-              aria-label={`step ${index + 1}`}
-              css={{ cursor: allowSkip ? 'pointer' : 'auto' }}
-            >
-              <StyledText
-                size="xs"
-                color={
-                  viewedSteps.includes(index) || index === activeStep
-                    ? 'light'
-                    : 'dark'
-                }
-              >
-                {index + 1}
-              </StyledText>
-            </StyledBullet>
-            {index < steps.length - 1 && (
-              <Divider
-                css={{
-                  width: '$2',
-                  bg: index < activeStep ? '$primary' : '$tonal400'
-                }}
-                orientation="horizontal"
-              />
-            )}
-          </Flex>
+          <StyledBullet
+            key={`step_${index}`}
+            as={allowSkip ? 'button' : 'div'}
+            onClick={() => handleStepClick(index)}
+            state={getBulletState(index)}
+            separator={index < activeStep ? 'highlight' : 'normal'}
+            aria-current={index === activeStep ? 'step' : undefined}
+            aria-label={`step ${index + 1}`}
+            css={{ cursor: allowSkip ? 'pointer' : 'auto' }}
+          >
+            {index + 1}
+          </StyledBullet>
         )
       })}
     </Flex>
