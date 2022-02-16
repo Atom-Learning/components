@@ -169,6 +169,15 @@ export const StyledButton = styled('button', {
       theme: 'primary',
       appearance: 'outline',
       css: getButtonOutlineVariant('$primary', '$primaryMid', '$primaryDark')
+    },
+    {
+      theme: 'neutral',
+      appearance: 'outline',
+      css: getButtonOutlineVariant(
+        'white',
+        opacify(-0.2, 'white'),
+        opacify(-0.35, 'white')
+      )
     }
   ]
 })
