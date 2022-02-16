@@ -1,5 +1,5 @@
 import type * as Stitches from '@stitches/react'
-import { darken } from 'polished'
+import { darken, opacify } from 'polished'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
@@ -74,7 +74,8 @@ export const StyledButton = styled('button', {
       secondary: {},
       success: {},
       warning: {},
-      danger: {}
+      danger: {},
+      neutral: {}
     },
     appearance: {
       solid: {},
@@ -153,6 +154,16 @@ export const StyledButton = styled('button', {
       theme: 'danger',
       appearance: 'solid',
       css: getButtonSolidVariant('$danger', '$dangerMid', '$dangerDark')
+    },
+    {
+      theme: 'neutral',
+      appearance: 'solid',
+      css: getButtonSolidVariant(
+        'white',
+        opacify(-0.1, 'white'),
+        opacify(-0.25, 'white'),
+        '$primary'
+      )
     },
     {
       theme: 'primary',
