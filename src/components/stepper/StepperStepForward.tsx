@@ -10,7 +10,7 @@ export const StepperStepForward: React.FC<
   const { goToNextStep, activeStep } = useStepper()
 
   return (
-    <Button size="sm" {...rest} onClick={goToNextStep}>
+    <Button size="sm" {...rest} onClick={goToNextStep} css={{ ml: 'auto' }}>
       {children || label(activeStep)}
     </Button>
   )

@@ -15,7 +15,12 @@ const StyledBullet = styled(Flex, {
   borderRadius: '50%',
   border: 'none',
   bg: '$tonal50',
-  ml: '$3',
+  fontFamily: '$body',
+  fontWeight: 400,
+  fontSize: '$sm',
+  '&:not(:first-child)': {
+    ml: '$3'
+  },
   '&:not(:last-child)::after': {
     content: '',
     width: '$1',

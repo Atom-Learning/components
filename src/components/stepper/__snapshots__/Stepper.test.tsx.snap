@@ -2,10 +2,6 @@
 
 exports[`Stepper renders the correct number of bullets 1`] = `
 @media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -23,7 +19,11 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     width: max-content;
   }
 
-  .c-gEmDHr {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-krQlAY {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -33,10 +33,16 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     border-radius: 50%;
     border: none;
     background: var(--colors-tonal50);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-krQlAY:not(:first-child) {
     margin-left: var(--space-3);
   }
 
-  .c-gEmDHr:not(:last-child)::after {
+  .c-krQlAY:not(:last-child)::after {
     content: "";
     width: var(--sizes-1);
     height: 1px;
@@ -54,16 +60,16 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-gEmDHr-lkRQpS-state-active {
+  .c-krQlAY-lkRQpS-state-active {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-gEmDHr-bUvtCt-separator-normal:not(:last-child)::after {
+  .c-krQlAY-bUvtCt-separator-normal:not(:last-child)::after {
     background: var(--colors-tonal400);
   }
 
-  .c-gEmDHr-jdelko-state-normal {
+  .c-krQlAY-jdelko-state-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -115,10 +121,10 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-icKBiAN-css {
+  .c-PJLV-ibhOcIJ-css {
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
   }
 
   .c-dhzjXW-ijroWjL-css {
@@ -129,6 +135,10 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     cursor: auto;
   }
 
+  .c-fkUJsw-icKSZB-css {
+    margin-left: auto;
+  }
+
   .c-dhzjXW-igsmDXe-css {
     cursor: pointer;
   }
@@ -137,7 +147,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 <div>
   <div
     aria-label="progress"
-    class="c-dhzjXW c-dhzjXW-icKBiAN-css"
+    class="c-PJLV c-PJLV-ibhOcIJ-css"
   >
     <button
       class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
@@ -152,25 +162,25 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       <button
         aria-current="step"
         aria-label="step 1"
-        class="c-dhzjXW c-gEmDHr c-gEmDHr-lkRQpS-state-active c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-lkRQpS-state-active c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         1
       </button>
       <button
         aria-label="step 2"
-        class="c-dhzjXW c-gEmDHr c-gEmDHr-jdelko-state-normal c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         2
       </button>
       <button
         aria-label="step 3"
-        class="c-dhzjXW c-gEmDHr c-gEmDHr-jdelko-state-normal c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         3
       </button>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv"
+      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
       type="button"
     >
       Next

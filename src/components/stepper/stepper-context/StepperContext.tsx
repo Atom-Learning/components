@@ -27,7 +27,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     setviewedSteps((prev) =>
       prev.includes(activeStep) ? prev : [...prev, activeStep]
     )
-    onStepChange(activeStep)
+    onStepChange?.(activeStep)
   }, [activeStep, onStepChange])
 
   const goToNextStep = () => {

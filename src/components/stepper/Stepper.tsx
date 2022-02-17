@@ -1,7 +1,6 @@
 import * as React from 'react'
 
-import { Flex } from '~/components/flex'
-
+import { Box } from '../box/Box'
 import { StepperProvider } from './stepper-context/StepperContext'
 import { StepperStepBack } from './StepperStepBack'
 import { StepperStepForward } from './StepperStepForward'
@@ -20,16 +19,16 @@ export const Stepper: React.FC<IStepperProps> & {
       onComplete={onComplete}
       onStepChange={onStepChange}
     >
-      <Flex
+      <Box
         aria-label="progress"
         css={{
           width: '100%',
-          justifyContent: 'space-between',
-          alignItems: 'center'
+          display: 'grid',
+          gridTemplateColumns: '1fr auto 1fr'
         }}
       >
         {children}
-      </Flex>
+      </Box>
     </StepperProvider>
   )
 }
