@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ProgressIndicator renders the correct number of bullets 1`] = `
+exports[`Stepper renders the correct number of bullets 1`] = `
 @media  {
   .c-dhzjXW {
     display: flex;
@@ -23,7 +23,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     width: max-content;
   }
 
-  .c-cpneff {
+  .c-gEmDHr {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -34,6 +34,14 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     border: none;
     background: var(--colors-tonal50);
     margin-left: var(--space-3);
+  }
+
+  .c-gEmDHr:not(:last-child)::after {
+    content: "";
+    width: var(--sizes-1);
+    height: 1px;
+    position: absolute;
+    left: var(--sizes-2);
   }
 }
 
@@ -46,21 +54,16 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-cpneff-lkRQpS-state-active {
+  .c-gEmDHr-lkRQpS-state-active {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-cpneff-iRsopx-separator-normal:not(:last-child)::after {
-    content: "";
-    width: var(--sizes-1);
-    height: 1px;
+  .c-gEmDHr-bUvtCt-separator-normal:not(:last-child)::after {
     background: var(--colors-tonal400);
-    position: absolute;
-    left: var(--sizes-2);
   }
 
-  .c-cpneff-jdelko-state-normal {
+  .c-gEmDHr-jdelko-state-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -112,8 +115,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ixpGSK-css {
-    display: flex;
+  .c-dhzjXW-icKBiAN-css {
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -135,7 +137,7 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
 <div>
   <div
     aria-label="progress"
-    class="c-dhzjXW c-dhzjXW-ixpGSK-css"
+    class="c-dhzjXW c-dhzjXW-icKBiAN-css"
   >
     <button
       class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
@@ -150,19 +152,19 @@ exports[`ProgressIndicator renders the correct number of bullets 1`] = `
       <button
         aria-current="step"
         aria-label="step 1"
-        class="c-dhzjXW c-cpneff c-cpneff-lkRQpS-state-active c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-gEmDHr c-gEmDHr-lkRQpS-state-active c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         1
       </button>
       <button
         aria-label="step 2"
-        class="c-dhzjXW c-cpneff c-cpneff-jdelko-state-normal c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-gEmDHr c-gEmDHr-jdelko-state-normal c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         2
       </button>
       <button
         aria-label="step 3"
-        class="c-dhzjXW c-cpneff c-cpneff-jdelko-state-normal c-cpneff-iRsopx-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-gEmDHr c-gEmDHr-jdelko-state-normal c-gEmDHr-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
       >
         3
       </button>

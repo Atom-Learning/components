@@ -1,20 +1,18 @@
 import * as React from 'react'
 
-import { ProgressContext, ProgressIndicatorProviderProps } from '../types'
+import { Context, StepperProviderProps } from '../types'
 
-const ProgressIndicatorContext = React.createContext<ProgressContext>({
+const StepperContext = React.createContext<Context>({
   steps: [],
-  goToNextStep: () => null,
   goToPreviousStep: () => null,
+  goToNextStep: () => null,
   goToStep: () => null,
   activeStep: 0,
   viewedSteps: [],
-  allowSkip: false,
-  isFinalStep: false,
-  onComplete: () => null
+  allowSkip: false
 })
 
-export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps> = ({
+export const StepperProvider: React.FC<StepperProviderProps> = ({
   children,
   stepCount,
   allowSkip,
@@ -31,6 +29,9 @@ export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps>
   }, [activeStep])
 
   const goToNextStep = () => {
+    if (onComplete && activeStep === stepCount - 1) {
+      onComplete()
+    }
     setActiveStep((current) => current + 1)
   }
 
@@ -43,29 +44,27 @@ export const ProgressIndicatorProvider: React.FC<ProgressIndicatorProviderProps>
   }
 
   return (
-    <ProgressIndicatorContext.Provider
+    <StepperContext.Provider
       value={{
         steps: Array(stepCount).fill(''),
-        goToNextStep,
         goToPreviousStep,
+        goToNextStep,
         goToStep,
         activeStep,
         viewedSteps,
-        allowSkip,
-        isFinalStep: activeStep === stepCount - 1,
-        onComplete
+        allowSkip
       }}
     >
       {children}
-    </ProgressIndicatorContext.Provider>
+    </StepperContext.Provider>
   )
 }
 
-export const useProgressIndicator = (): ProgressContext => {
-  const context = React.useContext(ProgressIndicatorContext)
+export const useStepper = (): Context => {
+  const context = React.useContext(StepperContext)
   if (!context)
     throw new Error(
-      'useProgressIndicatorContext can only be called within a ProgressIndicatorContext'
+      'Ensure that you wrap any components with the root component Stepper'
     )
 
   return context

@@ -3,7 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
-import { useProgressIndicator } from './progress-indicator-context/ProgressIndicatorContext'
+import { useStepper } from './stepper-context/StepperContext'
 
 const StyledBullet = styled(Flex, {
   position: 'relative',
@@ -16,6 +16,13 @@ const StyledBullet = styled(Flex, {
   border: 'none',
   bg: '$tonal50',
   ml: '$3',
+  '&:not(:last-child)::after': {
+    content: '',
+    width: '$1',
+    height: '1px',
+    position: 'absolute',
+    left: '$sizes$2'
+  },
   variants: {
     state: {
       normal: { bg: '$tonal50', color: '$tonal400' },
@@ -25,41 +32,20 @@ const StyledBullet = styled(Flex, {
     separator: {
       normal: {
         '&:not(:last-child)::after': {
-          content: '',
-          width: '$1',
-          height: '1px',
-          background: '$tonal400',
-          position: 'absolute',
-          left: '$sizes$2'
+          bg: '$tonal400'
         }
       },
       highlight: {
         '&:not(:last-child)::after': {
-          content: '',
-          width: '$1',
-          height: '1px',
-          background: '$primary',
-          position: 'absolute',
-          left: '$sizes$2'
+          bg: '$primary'
         }
       }
     }
   }
 })
 
-export const ProgressIndicatorSteps: React.FC = () => {
-  const {
-    steps,
-    goToStep,
-    activeStep,
-    viewedSteps,
-    allowSkip
-  } = useProgressIndicator()
-
-  const handleStepClick = (index: number) => {
-    if (!allowSkip) return
-    goToStep(index)
-  }
+export const StepperSteps: React.FC = () => {
+  const { steps, goToStep, activeStep, viewedSteps, allowSkip } = useStepper()
 
   const getBulletState = (index: number) => {
     if (activeStep === index) return 'active'
@@ -74,7 +60,7 @@ export const ProgressIndicatorSteps: React.FC = () => {
           <StyledBullet
             key={`step_${index}`}
             as={allowSkip ? 'button' : 'div'}
-            onClick={() => handleStepClick(index)}
+            onClick={() => (allowSkip ? goToStep(index) : undefined)}
             state={getBulletState(index)}
             separator={index < activeStep ? 'highlight' : 'normal'}
             aria-current={index === activeStep ? 'step' : undefined}
