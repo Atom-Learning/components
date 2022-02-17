@@ -13,10 +13,16 @@ category: Feedback
 
 `Stepper.Steps` holds the actual bullet list.
 
-The root `Stepper` component must be passed `stepCount` as a number. It can also take `onComplete` as a function that gets called when the user clicks the `StepForward` button while on the last step.
+The root `Stepper` component must be passed `stepCount` as a number. It also requires `onStepChange` as a function that takes `activeStep` as an argument. This can be used to determine what content to display, based on the current step. It can also take `onComplete` as a function that gets called when the user clicks the `StepForward` button while on the last step.
 
 ```tsx preview
-<Stepper stepCount={3} onComplete={() => console.log('Finished')}>
+<Stepper
+  stepCount={3}
+  onComplete={() => console.log('Finished')}
+  onStepChange={(activeStep) =>
+    console.log('Do something with the active step')
+  }
+>
   <Stepper.StepBack label={(activeStep) => 'Back'} />
   <Stepper.Steps />
   <Stepper.StepForward
@@ -28,7 +34,14 @@ The root `Stepper` component must be passed `stepCount` as a number. It can also
 The root ProgressIndicator component can also take an `allowSkip` prop that allows the user to navigate by clicking the actual bullets.
 
 ```tsx preview
-<Stepper stepCount={3} allowSkip onComplete={() => console.log('Finished')}>
+<Stepper
+  stepCount={3}
+  allowSkip
+  onComplete={() => console.log('Finished')}
+  onStepChange={(activeStep) =>
+    console.log('Do something with the active step')
+  }
+>
   <Stepper.StepBack label={(activeStep) => 'Back'} />
   <Stepper.Steps />
   <Stepper.StepForward

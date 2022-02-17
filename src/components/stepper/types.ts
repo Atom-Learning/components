@@ -12,12 +12,14 @@ export type StepperProviderProps = {
   stepCount: number
   allowSkip?: boolean
   onComplete?: () => void
+  onStepChange: (activeStep: number) => void
 }
 
 export interface IStepperProps {
   stepCount: number
   allowSkip?: boolean
   onComplete?: () => void
+  onStepChange: (activeStep: number) => void
 }
 
 export interface IStepperNavigateProps {

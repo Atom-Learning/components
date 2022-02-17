@@ -16,7 +16,8 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   children,
   stepCount,
   allowSkip,
-  onComplete
+  onComplete,
+  onStepChange
 }) => {
   const [activeStep, setActiveStep] = React.useState(0)
 
@@ -26,11 +27,12 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     setviewedSteps((prev) =>
       prev.includes(activeStep) ? prev : [...prev, activeStep]
     )
-  }, [activeStep])
+    onStepChange(activeStep)
+  }, [activeStep, onStepChange])
 
   const goToNextStep = () => {
     if (onComplete && activeStep === stepCount - 1) {
-      onComplete()
+      return onComplete()
     }
     setActiveStep((current) => current + 1)
   }

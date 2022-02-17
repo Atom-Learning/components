@@ -9,7 +9,8 @@ describe('Stepper', () => {
   beforeEach(() => {
     props = {
       stepCount: 3,
-      onComplete: jest.fn()
+      onComplete: jest.fn(),
+      onStepChange: jest.fn()
     }
   })
 
@@ -105,5 +106,19 @@ describe('Stepper', () => {
     expect(screen.getByText('Start')).toBeVisible()
     fireEvent.click(screen.getByText('Start'))
     expect(props.onComplete).toHaveBeenCalled()
+  })
+
+  it('calls the onStepChange handler when the activeStepChanges', () => {
+    render(
+      <Stepper allowSkip {...props}>
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    fireEvent.click(screen.getByText('3'))
+    expect(props.onStepChange).toHaveBeenCalledWith(2)
   })
 })

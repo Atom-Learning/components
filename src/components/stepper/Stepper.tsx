@@ -12,12 +12,13 @@ export const Stepper: React.FC<IStepperProps> & {
   StepBack: typeof StepperStepBack
   StepForward: typeof StepperStepForward
   Steps: typeof StepperSteps
-} = ({ children, stepCount, allowSkip, onComplete }) => {
+} = ({ children, stepCount, allowSkip, onComplete, onStepChange }) => {
   return (
     <StepperProvider
       stepCount={stepCount}
       allowSkip={allowSkip}
       onComplete={onComplete}
+      onStepChange={onStepChange}
     >
       <Flex
         aria-label="progress"
