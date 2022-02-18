@@ -121,4 +121,31 @@ describe('Stepper', () => {
     fireEvent.click(screen.getByText('3'))
     expect(props.onStepChange).toHaveBeenCalledWith(2)
   })
+
+  it("doesn't allow navigating out of the bullets range when no onComplete is passed", () => {
+    render(
+      <Stepper allowSkip stepCount={3} onStepChange={jest.fn()}>
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward label={() => 'Next'} />
+      </Stepper>
+    )
+    fireEvent.click(screen.getByText('Next'))
+    expect(screen.getByLabelText('step 2')).toHaveAttribute(
+      'aria-current',
+      'step'
+    )
+
+    fireEvent.click(screen.getByText('Next'))
+    expect(screen.getByLabelText('step 3')).toHaveAttribute(
+      'aria-current',
+      'step'
+    )
+
+    fireEvent.click(screen.getByText('Next'))
+    expect(screen.getByLabelText('step 3')).toHaveAttribute(
+      'aria-current',
+      'step'
+    )
+  })
 })

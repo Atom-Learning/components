@@ -34,7 +34,9 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     if (onComplete && activeStep === stepCount - 1) {
       return onComplete()
     }
-    setActiveStep((current) => current + 1)
+    if (activeStep < stepCount - 1) {
+      return setActiveStep((current) => current + 1)
+    }
   }
 
   const goToPreviousStep = () => {
