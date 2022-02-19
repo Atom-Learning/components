@@ -1,7 +1,7 @@
+import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-import { IdProvider } from '@radix-ui/react-id'
 
 import { Accordion } from '.'
 
