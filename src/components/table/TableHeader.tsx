@@ -1,5 +1,7 @@
-import { styled } from '~/stitches'
 import React from 'react'
+
+import { styled } from '~/stitches'
+
 import { TableHeaderCell } from './TableHeaderCell'
 
 const StyledTableHeader = styled('thead', {
