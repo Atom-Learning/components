@@ -3,8 +3,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { TriggerListWrapper } from './TabsTriggerList'
 import { TabTrigger } from './TabTrigger'
+import { TriggerListWrapper } from './TabsTriggerList'
 import { passPropsToChildren } from './utils'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>

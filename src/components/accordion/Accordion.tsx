@@ -1,11 +1,11 @@
 import { Root } from '@radix-ui/react-accordion'
+import { AccordionItem } from './AccordionItem'
+import { AccordionTrigger } from './AccordionTrigger'
+import { AccordionContent } from './AccordionContent'
+
 import React from 'react'
 
 import { styled } from '~/stitches'
-
-import { AccordionContent } from './AccordionContent'
-import { AccordionItem } from './AccordionItem'
-import { AccordionTrigger } from './AccordionTrigger'
 
 const StyledRoot = styled(Root, {
   width: '100%'

@@ -4,9 +4,8 @@ import { Controller, useFormContext } from 'react-hook-form'
 import { FieldWrapper } from '~/components/field-wrapper'
 import { Slider, SliderProps } from '~/components/slider'
 import { SliderStepsType } from '~/components/slider/SliderSteps'
-import type { CSS } from '~/stitches'
-
 import { SliderValueType } from '../slider/SliderValue'
+import type { CSS } from '~/stitches'
 
 type SliderFieldProps = SliderProps &
   SliderStepsType &

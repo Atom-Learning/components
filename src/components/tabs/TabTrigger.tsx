@@ -1,6 +1,6 @@
 import { Trigger } from '@radix-ui/react-tabs'
-import { opacify } from 'polished'
 import * as React from 'react'
+import { opacify } from 'polished'
 
 import { styled, theme } from '~/stitches'
 

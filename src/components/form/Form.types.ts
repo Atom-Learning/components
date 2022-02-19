@@ -1,4 +1,4 @@
-import type { Mode, UseFormMethods } from 'react-hook-form'
+import type { UseFormMethods, Mode } from 'react-hook-form'
 
 export enum StorageEnum {
   LOCAL = 'local',

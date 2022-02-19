@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
-import { axe } from 'jest-axe'
 import * as React from 'react'
+import { axe } from 'jest-axe'
 
-import { Form } from '../'
 import { SliderField } from '.'
+import { Form } from '../'
 
 const props = {
   name: 'sliderTest',

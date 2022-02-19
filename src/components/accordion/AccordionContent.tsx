@@ -1,8 +1,8 @@
 import { Content } from '@radix-ui/react-accordion'
 import React from 'react'
+import { CSSWrapper } from '~/utilities'
 
 import { keyframes, styled } from '~/stitches'
-import { CSSWrapper } from '~/utilities'
 
 const open = keyframes({
   from: { height: 0 },

@@ -1,12 +1,12 @@
-import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
-import { darken } from 'polished'
 import React from 'react'
-
-import { styled, theme } from '~/stitches'
 
 import { Box } from '../box'
 import { Icon } from '../icon'
+import { ChevronDown } from '@atom-learning/icons'
+
+import { styled, theme } from '~/stitches'
+import { darken } from 'polished'
 
 const getTriggerVariant = (
   base: string,
