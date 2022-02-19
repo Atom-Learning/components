@@ -22,10 +22,10 @@ jobs:
       - run: yarn install
 
       - name: Run ESLint
-        uses: yarn lint && yarn format
+        run: yarn lint && yarn format
 
       - name: Run Prettier
-        uses: yarn format
+        run: yarn format
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
