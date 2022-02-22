@@ -32,4 +32,4 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Apply auto-fix changes
+          commit_message: 'chore: apply auto-fix changes'
