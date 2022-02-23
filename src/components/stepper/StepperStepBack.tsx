@@ -5,7 +5,7 @@ import { useStepper } from './stepper-context/StepperContext'
 import { IStepperNavigateProps } from './types'
 
 export const StepperStepBack: React.FC<
-  IStepperNavigateProps & Partial<React.ComponentProps<typeof Button>>
+  IStepperNavigateProps & Omit<React.ComponentProps<typeof Button>, 'children'>
 > = ({ label, children, ...rest }) => {
   const { activeStep, goToPreviousStep } = useStepper()
   return (
