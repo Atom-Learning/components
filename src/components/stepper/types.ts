@@ -23,5 +23,5 @@ export interface IStepperProps {
 }
 
 export interface IStepperNavigateProps {
-  label: (currentStep?: number) => string
+  label?: (currentStep?: number) => string
 }
