@@ -16,3 +16,13 @@ The `gap` prop specifies the distance between items in the grid using the theme'
   ))}
 </Grid>
 ```
+
+Should you need further control of the size of grid items, you can pass `maxItemSize`, which accepts the same value types as `minItemSize`. This is useful when you wish to control the width of items that may or may not fill the container width based on content, so they do not stretch to fill the width.
+
+```tsx
+<Grid minItemSize="10em" maxItemSize="10em" gap="3" css={{ width: '100%' }}>
+  {Array.from(Array(3)).map((_, i) => (
+    <Box key={i} css={{ bg: '$primary', height: '10em' }} />
+  ))}
+</Grid>
+```
