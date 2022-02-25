@@ -30,18 +30,20 @@ const GridContainer = styled('div', {
 
 type GridProps = React.ComponentProps<typeof GridContainer> & {
   minItemSize: string
+  maxItemSize?: string
 }
 
 export const Grid: React.FC<GridProps> = ({
   css,
   gap = 2,
   minItemSize,
+  maxItemSize = '1fr',
   ...remainingProps
 }) => (
   <GridContainer
     css={{
       ...(css as any),
-      gridTemplateColumns: `repeat(auto-fit, minmax(${minItemSize}, 1fr))`
+      gridTemplateColumns: `repeat(auto-fit, minmax(${minItemSize}, ${maxItemSize}))`
     }}
     gap={gap}
     {...remainingProps}
