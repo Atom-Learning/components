@@ -37,12 +37,12 @@ const StyledBullet = styled(Flex, {
     separator: {
       normal: {
         '&:not(:last-child)::after': {
-          bg: '$tonal400'
+          bg: '$tonal50'
         }
       },
       highlight: {
         '&:not(:last-child)::after': {
-          bg: '$primary'
+          bg: '$primaryDark'
         }
       }
     }
@@ -58,6 +58,9 @@ export const StepperSteps: React.FC = () => {
     return 'normal'
   }
 
+  const getSeparatorState = (index: number) =>
+    index < Math.max(...viewedSteps) ? 'highlight' : 'normal'
+
   return (
     <Flex css={{ alignItems: 'center' }}>
       {steps.map((_, index) => {
@@ -65,12 +68,19 @@ export const StepperSteps: React.FC = () => {
           <StyledBullet
             key={`step_${index}`}
             as={allowSkip ? 'button' : 'div'}
-            onClick={() => (allowSkip ? goToStep(index) : undefined)}
+            onClick={() =>
+              allowSkip && viewedSteps.includes(index)
+                ? goToStep(index)
+                : undefined
+            }
             state={getBulletState(index)}
-            separator={index < activeStep ? 'highlight' : 'normal'}
+            separator={getSeparatorState(index)}
             aria-current={index === activeStep ? 'step' : undefined}
             aria-label={`step ${index + 1}`}
-            css={{ cursor: allowSkip ? 'pointer' : 'auto' }}
+            css={{
+              cursor:
+                allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
+            }}
           >
             {index + 1}
           </StyledBullet>

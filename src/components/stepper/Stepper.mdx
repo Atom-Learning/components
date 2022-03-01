@@ -23,7 +23,7 @@ The root `Stepper` component must be passed `stepCount` as a number in order to 
 </Stepper>
 ```
 
-The root `Stepper` component can also take an `allowSkip` prop that allows the user to navigate by clicking the actual bullets.
+The root `Stepper` component can also take an `allowSkip` prop that allows the user to navigate by clicking the actual bullets. However, navigating by clicking a bullet is only possible if the user has already viewed it by using the `Next`/`Back` navigation buttons.
 
 Below is a more complex example that shows how to dynamically render the button labels, get the activeStep in order to potentially use it to determine what content to render based on the current position, and use an `onComplete` function to trigger custom behaviour when the user reaches the final step.
 
