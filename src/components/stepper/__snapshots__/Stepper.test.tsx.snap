@@ -65,8 +65,8 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     color: white;
   }
 
-  .c-krQlAY-bUvtCt-separator-normal:not(:last-child)::after {
-    background: var(--colors-tonal400);
+  .c-krQlAY-iPHtVM-separator-normal:not(:last-child)::after {
+    background: var(--colors-tonal50);
   }
 
   .c-krQlAY-jdelko-state-normal {
@@ -162,19 +162,19 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       <button
         aria-current="step"
         aria-label="step 1"
-        class="c-dhzjXW c-krQlAY c-krQlAY-lkRQpS-state-active c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-lkRQpS-state-active c-krQlAY-iPHtVM-separator-normal c-dhzjXW-igsmDXe-css"
       >
         1
       </button>
       <button
         aria-label="step 2"
-        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-iPHtVM-separator-normal c-dhzjXW-idGcKFW-css"
       >
         2
       </button>
       <button
         aria-label="step 3"
-        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-bUvtCt-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-iPHtVM-separator-normal c-dhzjXW-idGcKFW-css"
       >
         3
       </button>

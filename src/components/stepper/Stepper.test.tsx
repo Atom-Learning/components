@@ -41,22 +41,6 @@ describe('Stepper', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('allows skipping steps', () => {
-    render(
-      <Stepper allowSkip {...props}>
-        <Stepper.StepBack label={() => 'Back'} />
-        <Stepper.Steps />
-        <Stepper.StepForward
-          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
-        />
-      </Stepper>
-    )
-
-    fireEvent.click(screen.getByText(3))
-    // clicking on the last item switches the "Next" button text to "Start"
-    expect(screen.getByText('Start')).toBeVisible()
-  })
-
   it("doesn't allow skipping steps", async () => {
     render(
       <Stepper {...props}>
@@ -91,7 +75,7 @@ describe('Stepper', () => {
     expect(screen.getByText('Back')).toBeDisabled()
   })
 
-  it('calls final action handler if provided, when on final step', () => {
+  it('only allows skipping to a certain step if the user has previously viewed it', () => {
     render(
       <Stepper allowSkip {...props}>
         <Stepper.StepBack label={() => 'Back'} />
@@ -101,8 +85,39 @@ describe('Stepper', () => {
         />
       </Stepper>
     )
+    // clear the onStepChange mock, because it's getting called with `0` when the component initializes
+    jest.clearAllMocks()
 
+    // after initialization, try to click the final step. onStepChange should not get called
     fireEvent.click(screen.getByText('3'))
+    expect(props.onStepChange).not.toHaveBeenCalled()
+
+    // navigate all the way to the last item using the `Next` button, then go back to the first item
+    fireEvent.click(screen.getByText('Next'))
+    fireEvent.click(screen.getByText('Next'))
+
+    jest.clearAllMocks()
+    fireEvent.click(screen.getByText('1'))
+    expect(props.onStepChange).toHaveBeenCalledWith(0)
+
+    // the user can now navigate freely by clicking the third step even while on the first one
+    fireEvent.click(screen.getByText('3'))
+    expect(props.onStepChange).toHaveBeenCalledWith(2)
+  })
+
+  it('calls final action handler if provided, when on final step', () => {
+    render(
+      <Stepper {...props}>
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+
+    fireEvent.click(screen.getByText('Next'))
+    fireEvent.click(screen.getByText('Next'))
     expect(screen.getByText('Start')).toBeVisible()
     fireEvent.click(screen.getByText('Start'))
     expect(props.onComplete).toHaveBeenCalled()
@@ -110,7 +125,7 @@ describe('Stepper', () => {
 
   it('calls the onStepChange handler when the activeStepChanges', () => {
     render(
-      <Stepper allowSkip {...props}>
+      <Stepper {...props}>
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
         <Stepper.StepForward
@@ -118,8 +133,8 @@ describe('Stepper', () => {
         />
       </Stepper>
     )
-    fireEvent.click(screen.getByText('3'))
-    expect(props.onStepChange).toHaveBeenCalledWith(2)
+    fireEvent.click(screen.getByText('Next'))
+    expect(props.onStepChange).toHaveBeenCalledWith(1)
   })
 
   it("doesn't allow navigating out of the bullets range when no onComplete is passed", () => {
