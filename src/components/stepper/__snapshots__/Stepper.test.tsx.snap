@@ -23,7 +23,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     display: flex;
   }
 
-  .c-krQlAY {
+  .c-dJecyp {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -38,13 +38,12 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     font-size: var(--fontSizes-sm);
   }
 
-  .c-krQlAY:not(:first-child) {
+  .c-dJecyp:not(:first-child) {
     margin-left: var(--space-3);
   }
 
-  .c-krQlAY:not(:last-child)::after {
+  .c-dJecyp:not(:last-child)::after {
     content: "";
-    width: var(--sizes-1);
     height: 1px;
     position: absolute;
     left: var(--sizes-2);
@@ -60,16 +59,16 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-krQlAY-lkRQpS-state-active {
+  .c-dJecyp-lkRQpS-state-active {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-krQlAY-iPHtVM-separator-normal:not(:last-child)::after {
+  .c-dJecyp-iPHtVM-separator-normal:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-krQlAY-jdelko-state-normal {
+  .c-dJecyp-jdelko-state-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -127,20 +126,30 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     grid-template-columns: 1fr auto 1fr;
   }
 
-  .c-dhzjXW-ijroWjL-css {
+  .c-dhzjXW-igRvUEk-css {
     align-items: center;
+    width: unset;
+    justify-content: space-between;
   }
 
-  .c-dhzjXW-idGcKFW-css {
+  .c-dhzjXW-icnQKYw-css {
     cursor: auto;
+  }
+
+  .c-dhzjXW-icnQKYw-css:not(:last-child)::after {
+    width: var(--sizes-1);
   }
 
   .c-fkUJsw-icKSZB-css {
     margin-left: auto;
   }
 
-  .c-dhzjXW-igsmDXe-css {
+  .c-dhzjXW-ifdDoaQ-css {
     cursor: pointer;
+  }
+
+  .c-dhzjXW-ifdDoaQ-css:not(:last-child)::after {
+    width: var(--sizes-1);
   }
 }
 
@@ -157,24 +166,24 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      class="c-dhzjXW c-dhzjXW-igRvUEk-css"
     >
       <button
         aria-current="step"
         aria-label="step 1"
-        class="c-dhzjXW c-krQlAY c-krQlAY-lkRQpS-state-active c-krQlAY-iPHtVM-separator-normal c-dhzjXW-igsmDXe-css"
+        class="c-dhzjXW c-dJecyp c-dJecyp-lkRQpS-state-active c-dJecyp-iPHtVM-separator-normal c-dhzjXW-ifdDoaQ-css"
       >
         1
       </button>
       <button
         aria-label="step 2"
-        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-iPHtVM-separator-normal c-dhzjXW-idGcKFW-css"
+        class="c-dhzjXW c-dJecyp c-dJecyp-jdelko-state-normal c-dJecyp-iPHtVM-separator-normal c-dhzjXW-icnQKYw-css"
       >
         2
       </button>
       <button
         aria-label="step 3"
-        class="c-dhzjXW c-krQlAY c-krQlAY-jdelko-state-normal c-krQlAY-iPHtVM-separator-normal c-dhzjXW-idGcKFW-css"
+        class="c-dhzjXW c-dJecyp c-dJecyp-jdelko-state-normal c-dJecyp-iPHtVM-separator-normal c-dhzjXW-icnQKYw-css"
       >
         3
       </button>
