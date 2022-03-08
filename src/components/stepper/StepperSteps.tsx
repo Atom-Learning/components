@@ -50,7 +50,7 @@ const StyledBullet = styled(Flex, {
 })
 
 export const StepperSteps: React.FC<IStepperStepsProps> = ({
-  stepsWidth,
+  css,
   ...rest
 }) => {
   const { steps, goToStep, activeStep, viewedSteps, allowSkip } = useStepper()
@@ -68,8 +68,8 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
     <Flex
       css={{
         alignItems: 'center',
-        width: stepsWidth || 'unset',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        ...css
       }}
       {...rest}
     >
@@ -91,8 +91,8 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
               cursor:
                 allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto',
               '&:not(:last-child)::after': {
-                width: stepsWidth
-                  ? `calc((${stepsWidth} - ($2 * ${steps.length})) / ${
+                width: css?.width
+                  ? `calc((${css.width} - ($2 * ${steps.length})) / ${
                       steps.length - 1
                     })`
                   : '$1'

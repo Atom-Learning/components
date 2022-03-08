@@ -1,3 +1,5 @@
+import { CSS } from '~/stitches'
+
 export type Context = {
   steps: unknown[]
   goToPreviousStep: () => void
@@ -27,5 +29,6 @@ export interface IStepperNavigateProps {
 }
 
 export interface IStepperStepsProps {
+  css?: CSS
   stepsWidth?: string
 }
