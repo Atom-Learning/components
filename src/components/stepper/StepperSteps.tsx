@@ -49,7 +49,10 @@ const StyledBullet = styled(Flex, {
   }
 })
 
-export const StepperSteps: React.FC<IStepperStepsProps> = ({ stepsWidth }) => {
+export const StepperSteps: React.FC<IStepperStepsProps> = ({
+  stepsWidth,
+  ...rest
+}) => {
   const { steps, goToStep, activeStep, viewedSteps, allowSkip } = useStepper()
 
   const getBulletState = (index: number) => {
@@ -68,6 +71,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ stepsWidth }) => {
         width: stepsWidth || 'unset',
         justifyContent: 'space-between'
       }}
+      {...rest}
     >
       {steps.map((_, index) => {
         return (
