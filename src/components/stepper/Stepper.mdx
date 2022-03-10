@@ -1,6 +1,6 @@
 ---
 title: Stepper
-component: Stepper, Stepper.StepBack, Stepper.StepForward
+component: Stepper, Stepper.StepBack, Stepper.StepForward, Stepper.Steps
 description: Stepper provides a bullet list of steps and forward/backwards navigation buttons.
 category: Navigation
 ---
@@ -11,7 +11,7 @@ category: Navigation
 
 `Stepper.StepForward` represents the forward navigation element. It can receive either a child text node or a `label` prop as a function that receives `activeStep` as an argument in order to possibly render different labels based on the current step the user is on.
 
-`Stepper.Steps` holds the actual bullet list.
+`Stepper.Steps` holds the actual bullet list. It can receive a `css` prop, allowing for full customization.
 
 The root `Stepper` component must be passed `stepCount` as a number in order to display the desired number of bullet steps. It also takes `onStepChange` as a function that takes `activeStep` as an argument. This can be used to determine what content to display, based on the current step. It can also take `onComplete` as a function that gets called when the user clicks the `StepForward` button while on the last step.
 
@@ -37,7 +37,7 @@ Below is a more complex example that shows how to dynamically render the button 
   }
 >
   <Stepper.StepBack label={(activeStep) => 'Back'} />
-  <Stepper.Steps />
+  <Stepper.Steps css={{ width: '200px' }} />
   <Stepper.StepForward
     label={(activeStep) => (activeStep === 2 ? 'Finish' : 'Next')}
   />

@@ -4,6 +4,7 @@ import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
 import { useStepper } from './stepper-context/StepperContext'
+import { IStepperStepsProps } from './types'
 
 const StyledBullet = styled(Flex, {
   position: 'relative',
@@ -23,7 +24,6 @@ const StyledBullet = styled(Flex, {
   },
   '&:not(:last-child)::after': {
     content: '',
-    width: '$1',
     height: '1px',
     position: 'absolute',
     left: '$sizes$2'
@@ -49,7 +49,10 @@ const StyledBullet = styled(Flex, {
   }
 })
 
-export const StepperSteps: React.FC = () => {
+export const StepperSteps: React.FC<IStepperStepsProps> = ({
+  css,
+  ...rest
+}) => {
   const { steps, goToStep, activeStep, viewedSteps, allowSkip } = useStepper()
 
   const getBulletState = (index: number) => {
@@ -62,7 +65,14 @@ export const StepperSteps: React.FC = () => {
     index < Math.max(...viewedSteps) ? 'highlight' : 'normal'
 
   return (
-    <Flex css={{ alignItems: 'center' }}>
+    <Flex
+      css={{
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        ...css
+      }}
+      {...rest}
+    >
       {steps.map((_, index) => {
         return (
           <StyledBullet
@@ -79,7 +89,14 @@ export const StepperSteps: React.FC = () => {
             aria-label={`step ${index + 1}`}
             css={{
               cursor:
-                allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
+                allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto',
+              '&:not(:last-child)::after': {
+                width: css?.width
+                  ? `calc((${css.width} - ($2 * ${steps.length})) / ${
+                      steps.length - 1
+                    })`
+                  : '$1'
+              }
             }}
           >
             {index + 1}
