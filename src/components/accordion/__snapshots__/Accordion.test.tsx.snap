@@ -121,11 +121,7 @@ exports[`Accordion component renders an accordion 1`] = `
         data-state="open"
         id="radix-id-0-1"
       >
-        <div
-          class="c-PJLV"
-        >
-          TRIGGER1
-        </div>
+        TRIGGER1
         <svg
           aria-hidden="true"
           class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
@@ -159,11 +155,7 @@ exports[`Accordion component renders an accordion 1`] = `
         data-state="closed"
         id="radix-id-0-3"
       >
-        <div
-          class="c-PJLV"
-        >
-          TRIGGER2
-        </div>
+        TRIGGER2
         <svg
           aria-hidden="true"
           class="c-dbrbZt c-dbrbZt-hemXWm-size-md"

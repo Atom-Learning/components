@@ -1,12 +1,11 @@
+import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
+import { darken } from 'polished'
 import React from 'react'
 
-import { Box } from '../box'
-import { Icon } from '../icon'
-import { ChevronDown } from '@atom-learning/icons'
-
 import { styled, theme } from '~/stitches'
-import { darken } from 'polished'
+
+import { Icon } from '../icon'
 
 const getTriggerVariant = (
   base: string,
@@ -79,7 +78,7 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   ...remainingProps
 }) => (
   <StyledTrigger theme={theme} {...remainingProps}>
-    <Box>{children}</Box>
+    {children}
     <Icon is={ChevronDown} />
   </StyledTrigger>
 )
