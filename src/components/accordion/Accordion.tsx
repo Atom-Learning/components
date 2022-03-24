@@ -11,10 +11,8 @@ const StyledRoot = styled(Root, {
   width: '100%'
 })
 
-// TODO: this isn't perfect, trying to find a fix from creators,
-// will hopefully fix in another PR in the future
-type AccordionProps = React.ComponentProps<typeof StyledRoot> & {
-  type: 'single'
+type AccordionProps = React.ComponentProps<typeof Root> & {
+  type: 'single' | 'multiple'
 }
 
 export const Accordion: React.FC<AccordionProps> & {
@@ -22,6 +20,8 @@ export const Accordion: React.FC<AccordionProps> & {
   Content: typeof AccordionContent
   Trigger: typeof AccordionTrigger
 } = ({ type = 'single', children, ...remainingProps }) => (
+  // eslint-disable-next-line
+  // @ts-ignore TODO: Radix has an TS error that throws a warning if you pass multiple in. Needs to be fixed by the owner
   <StyledRoot type={type} {...remainingProps}>
     {children}
   </StyledRoot>
