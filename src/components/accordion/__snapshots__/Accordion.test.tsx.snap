@@ -15,7 +15,7 @@ exports[`Accordion component hides the chevron icon from the triger 1`] = `
     margin-bottom: var(--space-1);
   }
 
-  .c-eaWowm {
+  .c-khdwTa {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -28,20 +28,20 @@ exports[`Accordion component hides the chevron icon from the triger 1`] = `
     cursor: pointer;
   }
 
-  .c-eaWowm[data-state="open"] {
+  .c-khdwTa[data-state="open"] {
     border-radius: var(--radii-0) var(--radii-0) 0 0;
   }
 
-  .c-eaWowm[data-state="open"] svg {
+  .c-khdwTa[data-state="open"] .chevron-icon {
     transition: transform 300ms;
     transform: rotate(180deg);
   }
 
-  .c-eaWowm[data-state="closed"] {
+  .c-khdwTa[data-state="closed"] {
     border-radius: var(--radii-0);
   }
 
-  .c-eaWowm[data-state="closed"] svg {
+  .c-khdwTa[data-state="closed"] .chevron-icon {
     transition: transform 300ms;
     transform: rotate(0deg);
   }
@@ -79,22 +79,22 @@ exports[`Accordion component hides the chevron icon from the triger 1`] = `
 }
 
 @media  {
-  .c-eaWowm-kXYOEf-theme-primaryDark {
+  .c-khdwTa-kXYOEf-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark[disabled] {
+  .c-khdwTa-kXYOEf-theme-primaryDark[disabled] {
     background: var(--colors-tonal100);
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):hover {
+  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):hover {
     background: #0b2074;
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):active {
+  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):active {
     background: #091a5c;
   }
 
@@ -117,7 +117,7 @@ exports[`Accordion component hides the chevron icon from the triger 1`] = `
         aria-controls="radix-id-0-2"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
         data-state="open"
         id="radix-id-0-1"
       >
@@ -141,14 +141,14 @@ exports[`Accordion component hides the chevron icon from the triger 1`] = `
       <button
         aria-controls="radix-id-0-4"
         aria-expanded="false"
-        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
         data-state="closed"
         id="radix-id-0-3"
       >
         TRIGGER2
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md chevron-icon"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -186,7 +186,7 @@ exports[`Accordion component renders an accordion 1`] = `
     margin-bottom: var(--space-1);
   }
 
-  .c-eaWowm {
+  .c-khdwTa {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -199,20 +199,20 @@ exports[`Accordion component renders an accordion 1`] = `
     cursor: pointer;
   }
 
-  .c-eaWowm[data-state="open"] {
+  .c-khdwTa[data-state="open"] {
     border-radius: var(--radii-0) var(--radii-0) 0 0;
   }
 
-  .c-eaWowm[data-state="open"] svg {
+  .c-khdwTa[data-state="open"] .chevron-icon {
     transition: transform 300ms;
     transform: rotate(180deg);
   }
 
-  .c-eaWowm[data-state="closed"] {
+  .c-khdwTa[data-state="closed"] {
     border-radius: var(--radii-0);
   }
 
-  .c-eaWowm[data-state="closed"] svg {
+  .c-khdwTa[data-state="closed"] .chevron-icon {
     transition: transform 300ms;
     transform: rotate(0deg);
   }
@@ -250,22 +250,22 @@ exports[`Accordion component renders an accordion 1`] = `
 }
 
 @media  {
-  .c-eaWowm-kXYOEf-theme-primaryDark {
+  .c-khdwTa-kXYOEf-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark[disabled] {
+  .c-khdwTa-kXYOEf-theme-primaryDark[disabled] {
     background: var(--colors-tonal100);
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):hover {
+  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):hover {
     background: #0b2074;
   }
 
-  .c-eaWowm-kXYOEf-theme-primaryDark:not([disabled]):active {
+  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):active {
     background: #091a5c;
   }
 
@@ -288,14 +288,14 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-id-0-2"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
         data-state="open"
         id="radix-id-0-1"
       >
         TRIGGER1
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md chevron-icon"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -322,14 +322,14 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-id-0-4"
         aria-expanded="false"
-        class="c-eaWowm c-eaWowm-kXYOEf-theme-primaryDark"
+        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
         data-state="closed"
         id="radix-id-0-3"
       >
         TRIGGER2
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md chevron-icon"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

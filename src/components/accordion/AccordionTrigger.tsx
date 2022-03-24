@@ -28,6 +28,9 @@ const getTriggerVariant = (
   }
 })
 
+const ChevronIcon = () => <Icon className="chevron-icon" is={ChevronDown} />
+ChevronIcon.toString = () => '.chevron-icon'
+
 const StyledTrigger = styled(Trigger, {
   border: 0,
   py: '$3',
@@ -40,14 +43,14 @@ const StyledTrigger = styled(Trigger, {
 
   '&[data-state="open"]': {
     borderRadius: '$0 $0 0 0',
-    '& svg': {
+    [`& ${ChevronIcon}`]: {
       transition: 'transform 300ms',
       transform: 'rotate(180deg)'
     }
   },
   '&[data-state="closed"]': {
     borderRadius: '$0',
-    '& svg': {
+    [`& ${ChevronIcon}`]: {
       transition: 'transform 300ms',
       transform: 'rotate(0deg)'
     }
@@ -82,6 +85,6 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
 }) => (
   <StyledTrigger theme={theme} {...remainingProps}>
     {children}
-    {showChevron && <Icon is={ChevronDown} />}
+    {showChevron && <ChevronIcon />}
   </StyledTrigger>
 )
