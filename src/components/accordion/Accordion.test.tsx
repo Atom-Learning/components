@@ -67,23 +67,4 @@ describe('Accordion component', () => {
     expect(await screen.findByText('CONTENT1')).toBeVisible()
     expect(await screen.queryByText('CONTENT2')).not.toBeInTheDocument()
   })
-
-  it('hides the chevron icon from the triger', async () => {
-    const { container } = render(
-      <IdProvider>
-        <Accordion defaultValue="1">
-          <Accordion.Item value="1">
-            <Accordion.Trigger showChevron={false}>TRIGGER1</Accordion.Trigger>
-            <Accordion.Content>CONTENT1</Accordion.Content>
-          </Accordion.Item>
-          <Accordion.Item value="2">
-            <Accordion.Trigger>TRIGGER2</Accordion.Trigger>
-            <Accordion.Content>CONTENT2</Accordion.Content>
-          </Accordion.Item>
-        </Accordion>
-      </IdProvider>
-    )
-
-    expect(container).toMatchSnapshot()
-  })
 })
