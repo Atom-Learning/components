@@ -28,7 +28,7 @@ const getTriggerVariant = (
   }
 })
 
-const ChevronIcon = styled(Icon, {
+const RotatingIcon = styled(Icon, {
   transition: 'transform 300ms',
   '[data-state="open"] > &': {
     transform: 'rotate(180deg)'
@@ -50,14 +50,14 @@ const StyledTrigger = styled(Trigger, {
 
   '&[data-state="open"]': {
     borderRadius: '$0 $0 0 0',
-    [`& ${ChevronIcon}`]: {
+    [`& ${RotatingIcon}`]: {
       transition: 'transform 300ms',
       transform: 'rotate(180deg)'
     }
   },
   '&[data-state="closed"]': {
     borderRadius: '$0',
-    [`& ${ChevronIcon}`]: {
+    [`& ${RotatingIcon}`]: {
       transition: 'transform 300ms',
       transform: 'rotate(0deg)'
     }
@@ -90,6 +90,6 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
 }) => (
   <StyledTrigger theme={theme} {...remainingProps}>
     {children}
-    <ChevronIcon is={ChevronDown} />
+    <RotatingIcon is={ChevronDown} />
   </StyledTrigger>
 )
