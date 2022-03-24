@@ -70,15 +70,18 @@ const StyledTrigger = styled(Trigger, {
   }
 })
 
-type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger>
+type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger> & {
+  showChevron?: boolean
+}
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   theme = 'primaryDark',
+  showChevron = true,
   children,
   ...remainingProps
 }) => (
   <StyledTrigger theme={theme} {...remainingProps}>
     {children}
-    <Icon is={ChevronDown} />
+    {showChevron && <Icon is={ChevronDown} />}
   </StyledTrigger>
 )
