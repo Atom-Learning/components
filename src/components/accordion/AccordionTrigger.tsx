@@ -49,18 +49,10 @@ const StyledTrigger = styled(Trigger, {
   cursor: 'pointer',
 
   '&[data-state="open"]': {
-    borderRadius: '$0 $0 0 0',
-    [`& ${RotatingIcon}`]: {
-      transition: 'transform 300ms',
-      transform: 'rotate(180deg)'
-    }
+    borderRadius: '$0 $0 0 0'
   },
   '&[data-state="closed"]': {
-    borderRadius: '$0',
-    [`& ${RotatingIcon}`]: {
-      transition: 'transform 300ms',
-      transform: 'rotate(0deg)'
-    }
+    borderRadius: '$0'
   },
 
   variants: {
