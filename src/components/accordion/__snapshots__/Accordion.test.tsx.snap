@@ -15,7 +15,7 @@ exports[`Accordion component renders an accordion 1`] = `
     margin-bottom: var(--space-1);
   }
 
-  .c-khdwTa {
+  .c-bizxIm {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -28,21 +28,33 @@ exports[`Accordion component renders an accordion 1`] = `
     cursor: pointer;
   }
 
-  .c-khdwTa[data-state="open"] {
+  .c-bizxIm[data-state="open"] {
     border-radius: var(--radii-0) var(--radii-0) 0 0;
   }
 
-  .c-khdwTa[data-state="open"] .chevron-icon {
+  .c-bizxIm[data-state="open"] .c-iRFrve {
     transition: transform 300ms;
     transform: rotate(180deg);
   }
 
-  .c-khdwTa[data-state="closed"] {
+  .c-bizxIm[data-state="closed"] {
     border-radius: var(--radii-0);
   }
 
-  .c-khdwTa[data-state="closed"] .chevron-icon {
+  .c-bizxIm[data-state="closed"] .c-iRFrve {
     transition: transform 300ms;
+    transform: rotate(0deg);
+  }
+
+  .c-iRFrve {
+    transition: transform 300ms;
+  }
+
+  [data-state="open"] > .c-iRFrve {
+    transform: rotate(180deg);
+  }
+
+  [data-state="closed"] > .c-iRFrve {
     transform: rotate(0deg);
   }
 
@@ -79,22 +91,22 @@ exports[`Accordion component renders an accordion 1`] = `
 }
 
 @media  {
-  .c-khdwTa-kXYOEf-theme-primaryDark {
+  .c-bizxIm-kXYOEf-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
   }
 
-  .c-khdwTa-kXYOEf-theme-primaryDark[disabled] {
+  .c-bizxIm-kXYOEf-theme-primaryDark[disabled] {
     background: var(--colors-tonal100);
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
 
-  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):hover {
+  .c-bizxIm-kXYOEf-theme-primaryDark:not([disabled]):hover {
     background: #0b2074;
   }
 
-  .c-khdwTa-kXYOEf-theme-primaryDark:not([disabled]):active {
+  .c-bizxIm-kXYOEf-theme-primaryDark:not([disabled]):active {
     background: #091a5c;
   }
 
@@ -117,14 +129,14 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-id-0-2"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
+        class="c-bizxIm c-bizxIm-kXYOEf-theme-primaryDark"
         data-state="open"
         id="radix-id-0-1"
       >
         TRIGGER1
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md chevron-icon"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-iRFrve"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -151,14 +163,14 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-id-0-4"
         aria-expanded="false"
-        class="c-khdwTa c-khdwTa-kXYOEf-theme-primaryDark"
+        class="c-bizxIm c-bizxIm-kXYOEf-theme-primaryDark"
         data-state="closed"
         id="radix-id-0-3"
       >
         TRIGGER2
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md chevron-icon"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-iRFrve"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
