@@ -132,26 +132,26 @@ exports[`Button component Loading state renders a loading button 1`] = `
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv {
+  .c-fkUJsw-gRlFrS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv[disabled] {
+  .c-fkUJsw-gRlFrS-cv[disabled] {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):hover,
-  .c-fkUJsw-dlmocn-cv:not([disabled]):focus {
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):hover,
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: #0e278b;
+    color: #0b2074;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):active {
-    color: #0b2074;
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):active {
+    color: #091a5c;
   }
 }
 
@@ -360,26 +360,26 @@ exports[`Button component renders a button with an icon 1`] = `
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv {
+  .c-fkUJsw-gRlFrS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv[disabled] {
+  .c-fkUJsw-gRlFrS-cv[disabled] {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):hover,
-  .c-fkUJsw-dlmocn-cv:not([disabled]):focus {
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):hover,
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: #0e278b;
+    color: #0b2074;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):active {
-    color: #0b2074;
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):active {
+    color: #091a5c;
   }
 }
 
@@ -742,32 +742,32 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv {
+  .c-fkUJsw-gRlFrS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv[disabled] {
+  .c-fkUJsw-gRlFrS-cv[disabled] {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):hover,
-  .c-fkUJsw-dlmocn-cv:not([disabled]):focus {
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):hover,
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: #0e278b;
+    color: #0b2074;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):active {
-    color: #0b2074;
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):active {
+    color: #091a5c;
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-dlmocn-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gRlFrS-cv"
     type="button"
   >
     BUTTON
@@ -868,26 +868,26 @@ exports[`Button component renders a rounded button  1`] = `
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv {
+  .c-fkUJsw-gRlFrS-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-dlmocn-cv[disabled] {
+  .c-fkUJsw-gRlFrS-cv[disabled] {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):hover,
-  .c-fkUJsw-dlmocn-cv:not([disabled]):focus {
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):hover,
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):focus {
     text-decoration: none;
-    color: #0e278b;
+    color: #0b2074;
   }
 
-  .c-fkUJsw-dlmocn-cv:not([disabled]):active {
-    color: #0b2074;
+  .c-fkUJsw-gRlFrS-cv:not([disabled]):active {
+    color: #091a5c;
   }
 }
 
