@@ -178,6 +178,15 @@ export const StyledButton = styled('button', {
         opacify(-0.2, 'white'),
         opacify(-0.35, 'white')
       )
+    },
+    {
+      theme: 'secondary',
+      appearance: 'outline',
+      css: getButtonOutlineVariant(
+        '$primaryDark',
+        darken(0.1, theme.colors.primaryDark.value),
+        darken(0.15, theme.colors.primaryDark.value)
+      )
     }
   ]
 })
