@@ -11,7 +11,7 @@ const StyledRoot = styled(Root, {
   width: '100%'
 })
 
-type AccordionProps = React.ComponentProps<typeof Root> & {
+type AccordionProps = React.ComponentProps<typeof StyledRoot> & {
   type: 'single' | 'multiple'
 }
 
