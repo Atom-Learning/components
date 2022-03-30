@@ -1,7 +1,7 @@
 import { Root } from '@radix-ui/react-accordion'
 import React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { AccordionContent } from './AccordionContent'
 import { AccordionItem } from './AccordionItem'
@@ -11,9 +11,8 @@ const StyledRoot = styled(Root, {
   width: '100%'
 })
 
-type AccordionProps = React.ComponentProps<typeof Root> & {
+type AccordionProps = React.ComponentProps<typeof StyledRoot> & {
   type: 'single' | 'multiple'
-  css?: CSS
 }
 
 export const Accordion: React.FC<AccordionProps> & {
