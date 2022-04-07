@@ -11,9 +11,11 @@ The 3 most important props it takes are: `onSelect`, `id` and `label`.
 
 `onSelect` is a callback that accepts the actual file selection (as a FileList), which gets updated after the user interacts with the file browser interface. The file selection can then be used in order to build a payload for something like a `POST` API call.
 
-Note: The actual action of uploading the file to a backend is not this input's responsability.
+Note: The actual action of uploading the file to a backend is the parent's responsibility.
 
-`id` is really important because under the hood, the actual file input is hidden, while the visible element is a `label` with an `htmlFor` attribute that pairs with the hidden input via the `id` attribute. So make sure the `id` is unique.
+`id` is really important because the actual file input is hidden, while the visible element is a `label` with an `htmlFor` attribute that pairs with the hidden input via the `id` attribute. 
+
+ Note: `id` has to be unique 
 
 `label` is used to add text to the visible button.
 
