@@ -81,23 +81,23 @@ exports[`Accordion component renders an accordion 1`] = `
 }
 
 @media  {
-  .c-gErdmT-kXYOEf-theme-primaryDark {
+  .c-gErdmT-irYuKu-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
   }
 
-  .c-gErdmT-kXYOEf-theme-primaryDark[disabled] {
+  .c-gErdmT-irYuKu-theme-primaryDark[disabled] {
     background: var(--colors-tonal100);
     cursor: not-allowed;
     color: var(--colors-tonal400);
   }
 
-  .c-gErdmT-kXYOEf-theme-primaryDark:not([disabled]):hover {
-    background: #0b2074;
+  .c-gErdmT-irYuKu-theme-primaryDark:not([disabled]):hover {
+    background: hsla(228, 82%, 25%, 1);
   }
 
-  .c-gErdmT-kXYOEf-theme-primaryDark:not([disabled]):active {
-    background: #091a5c;
+  .c-gErdmT-irYuKu-theme-primaryDark:not([disabled]):active {
+    background: hsla(228, 82%, 20%, 1);
   }
 
   .c-dbrbZt-hemXWm-size-md {
@@ -119,7 +119,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-id-0-2"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-gErdmT c-gErdmT-kXYOEf-theme-primaryDark"
+        class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
         data-state="open"
         id="radix-id-0-1"
       >
@@ -153,7 +153,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-id-0-4"
         aria-expanded="false"
-        class="c-gErdmT c-gErdmT-kXYOEf-theme-primaryDark"
+        class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
         data-state="closed"
         id="radix-id-0-3"
       >
