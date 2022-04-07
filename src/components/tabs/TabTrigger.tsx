@@ -1,6 +1,6 @@
 import { Trigger } from '@radix-ui/react-tabs'
+import { opacify } from 'color2k'
 import * as React from 'react'
-import { opacify } from 'polished'
 
 import { styled, theme } from '~/stitches'
 
@@ -26,11 +26,11 @@ const StyledTabTrigger = styled(Trigger, {
         },
         '&:not([data-disabled]):hover': {
           color: '$primary',
-          bg: opacify(-0.9, theme.colors.primary.value)
+          bg: opacify(theme.colors.primary.value, -0.9)
         },
         '&:not([data-disabled]):active': {
           color: '$primary',
-          bg: opacify(-0.8, theme.colors.primary.value),
+          bg: opacify(theme.colors.primary.value, -0.8),
           boxShadow: 'none'
         },
         '&[data-disabled],&[data-disabled]:hover': {
@@ -46,10 +46,10 @@ const StyledTabTrigger = styled(Trigger, {
           boxShadow: 'inset 0 -2px 0 0 currentColor'
         },
         '&:not([data-disabled]):hover': {
-          bg: opacify(-0.8, 'white')
+          bg: opacify('white', -0.8)
         },
         '&:not([data-disabled]):active': {
-          bg: opacify(-0.7, 'white'),
+          bg: opacify('white', -0.7),
           boxShadow: 'none'
         },
         '&[data-disabled],&[data-disabled]:hover': {

@@ -1,6 +1,6 @@
 import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
-import { darken } from 'polished'
+import { darken } from 'color2k'
 import React from 'react'
 
 import { styled, theme } from '~/stitches'
@@ -59,13 +59,13 @@ const StyledTrigger = styled(Trigger, {
     theme: {
       primaryDark: getTriggerVariant(
         '$primaryDark',
-        darken(0.1, theme.colors.primaryDark.value),
-        darken(0.15, theme.colors.primaryDark.value)
+        darken(theme.colors.primaryDark.value, 0.1),
+        darken(theme.colors.primaryDark.value, 0.15)
       ),
       light: getTriggerVariant(
         '#fff',
-        darken(0.1, '#fff'),
-        darken(0.15, '#fff'),
+        darken('#fff', 0.1),
+        darken('#fff', 0.15),
         '$tonal600'
       )
     }
