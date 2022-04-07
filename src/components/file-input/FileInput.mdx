@@ -1,0 +1,51 @@
+---
+title: File Input
+component: FileInput
+description: FileInput is the lowest-level input component for text and number types
+category: Form primitives
+---
+
+`FileInput` is a specialised input that allows file uploads.
+
+The 3 most important props it takes are: `onSelect`, `id` and `label`.
+
+`onSelect` is a callback that accepts the actual file selection (as a FileList), which gets updated after the user interacts with the file browser interface. The file selection can then be used in order to build a payload for something like a `POST` API call.
+
+Note: The actual action of uploading the file to a backend is not this input's responsability.
+
+`id` is really important because under the hood, the actual file input is hidden, while the visible element is a `label` with an `htmlFor` attribute that pairs with the hidden input via the `id` attribute. So make sure the `id` is unique.
+
+`label` is used to add text to the visible button.
+
+```jsx preview
+<FileInput
+  onSelect={(fileSelection) => console.log(fileSelection)}
+  id="unique-identifier"
+  label="Select file"
+/>
+```
+
+The input can also accept multiple files at once, via the `multiple` prop. Another important feature is the `accept` prop. This makes the input filter out unwanted file types and prevent the user from selecting them.
+
+```jsx preview
+<FileInput
+  onSelect={(fileSelection) => console.log(fileSelection)}
+  id="unique-identifier"
+  label="Select file"
+  multiple
+  accept="application/pdf"
+/>
+```
+
+You can also use our icon pack to add an icon next to the button text.
+
+```jsx preview
+<FileInput
+  onSelect={(fileSelection) => console.log(fileSelection)}
+  id="unique-identifier"
+  label="Select file"
+  multiple
+  accept="application/pdf"
+  icon={Upload}
+/>
+```
