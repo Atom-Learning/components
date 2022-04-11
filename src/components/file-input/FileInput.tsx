@@ -8,23 +8,20 @@ import { Icon } from '../icon'
 export type FileInputProps = {
   onSelect: (selection: FileList) => void
   id: string
-  label: string
   accept?: string
   multiple?: boolean
   appearance?: string
   css?: CSS
-  icon?: SVGSVGElement
 }
 
 export const FileInput: React.FC<FileInputProps> = ({
   onSelect,
-  label,
   accept,
   multiple,
   id,
   appearance = 'outline',
-  icon,
-  css
+  css,
+  children
 }) => {
   const [fileSelection, setFileSelection] = React.useState<FileList>()
 
@@ -49,7 +46,7 @@ export const FileInput: React.FC<FileInputProps> = ({
       />
       <Button as="label" htmlFor={id} appearance={appearance} css={css}>
         <Icon is={Download} />
-        {label}
+        {children}
       </Button>
     </>
   )

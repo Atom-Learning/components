@@ -105,7 +105,6 @@ exports[`FileInput component renders 1`] = `
         d="M20 21H4"
       />
     </svg>
-    Select file
   </label>
 </div>
 `;
