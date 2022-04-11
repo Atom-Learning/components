@@ -1,13 +1,14 @@
-import { List } from '@radix-ui/react-tabs'
-import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
-import { opacify } from 'polished'
+import { List } from '@radix-ui/react-tabs'
+import { opacify } from 'color2k'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { debounce } from 'throttle-debounce'
 
-import { styled, theme } from '~/stitches'
 import { ActionIcon } from '~/components/action-icon'
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
+import { styled, theme } from '~/stitches'
+
 import { TabTrigger } from './TabTrigger'
 import { passPropsToChildren } from './utils'
 interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
@@ -15,8 +16,8 @@ interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   scrollPercentage?: number
 }
 
-const fadedWhite = opacify(-0.2, 'white')
-const fadedPrimaryDark = opacify(-0.2, theme.colors.primaryDark.value)
+const fadedWhite = opacify('white', -0.2)
+const fadedPrimaryDark = opacify(theme.colors.primaryDark.value, -0.2)
 
 const StyledChevronIcon = styled(ActionIcon, {
   position: 'absolute',
