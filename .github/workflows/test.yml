@@ -20,6 +20,9 @@ jobs:
 
       - run: yarn install
 
+      - name: Build
+        run: yarn build:lib && yarn build:types
+
       - name: Test
         run: yarn test:ci
 
