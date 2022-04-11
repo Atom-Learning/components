@@ -1,32 +1,28 @@
 import { Download } from '@atom-learning/icons'
-import { CSS } from '@stitches/react'
 import * as React from 'react'
 
 import { Button } from '../button'
 import { Icon } from '../icon'
 
-export type FileInputProps = {
+export type FileInputProps = typeof Button & {
   onSelect: (selection: FileList) => void
-  id: string
-  accept?: string
+  id: string // TODO: make optiona and add default
+  accept?: string // TODO rename
   multiple?: boolean
-  appearance?: string
-  css?: CSS
 }
 
 export const FileInput: React.FC<FileInputProps> = ({
   onSelect,
   accept,
-  multiple,
+  multiple = false,
   id,
-  appearance = 'outline',
-  css,
-  children
+  children,
+  ...rest
 }) => {
   const [fileSelection, setFileSelection] = React.useState<FileList>()
 
   React.useEffect(() => {
-    onSelect(fileSelection)
+    onSelect(fileSelection) // TODO: TS errors
   }, [fileSelection, onSelect])
 
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -41,10 +37,10 @@ export const FileInput: React.FC<FileInputProps> = ({
         accept={accept}
         multiple={multiple}
         id={id}
-        data-testid="file-upload"
+        data-testid="file-upload" // TODO: remove
         hidden
       />
-      <Button as="label" htmlFor={id} appearance={appearance} css={css}>
+      <Button as="label" htmlFor={id} {...rest}>
         <Icon is={Download} />
         {children}
       </Button>

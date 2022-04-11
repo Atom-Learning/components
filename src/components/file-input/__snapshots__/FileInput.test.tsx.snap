@@ -46,26 +46,25 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: var(--colors-primary);
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: var(--colors-primaryMid);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
-    color: var(--colors-primaryDark);
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
   }
 }
 
@@ -85,8 +84,9 @@ exports[`FileInput component renders 1`] = `
     type="file"
   />
   <label
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fSssiS-cv"
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
     for="file-input-id"
+    label="Select file"
     type="button"
   >
     <svg
