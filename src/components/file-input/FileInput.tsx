@@ -1,3 +1,4 @@
+import { Download } from '@atom-learning/icons'
 import { CSS } from '@stitches/react'
 import * as React from 'react'
 
@@ -47,7 +48,7 @@ export const FileInput: React.FC<FileInputProps> = ({
         hidden
       />
       <Button as="label" htmlFor={id} appearance={appearance} css={css}>
-        {icon && <Icon is={icon} />}
+        <Icon is={Download} />
         {label}
       </Button>
     </>
