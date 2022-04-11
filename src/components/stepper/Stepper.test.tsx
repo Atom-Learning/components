@@ -163,4 +163,20 @@ describe('Stepper', () => {
       'step'
     )
   })
+
+  it('allows overriding default forward event', () => {
+    const onClickFn = jest.fn()
+    render(
+      <Stepper {...props}>
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward label={() => 'Next'} onClick={onClickFn} />
+      </Stepper>
+    )
+    // clear the onStepChange mock, because it's getting called with `0` when the component initializes
+    jest.clearAllMocks()
+    fireEvent.click(screen.getByText('Next'))
+    expect(props.onStepChange).not.toHaveBeenCalled()
+    expect(onClickFn).toHaveBeenCalled()
+  })
 })

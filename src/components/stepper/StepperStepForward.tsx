@@ -6,11 +6,18 @@ import { IStepperNavigateProps } from './types'
 
 export const StepperStepForward: React.FC<
   IStepperNavigateProps & Omit<React.ComponentProps<typeof Button>, 'children'>
-> = ({ label, children, ...rest }) => {
+> = ({ label, children, onClick, ...rest }) => {
   const { goToNextStep, activeStep } = useStepper()
 
+  const handleClick = () => {
+    if (onClick) {
+      return onClick(goToNextStep)
+    }
+    goToNextStep()
+  }
+
   return (
-    <Button size="sm" {...rest} onClick={goToNextStep} css={{ ml: 'auto' }}>
+    <Button size="sm" {...rest} onClick={handleClick} css={{ ml: 'auto' }}>
       {children || label?.(activeStep)}
     </Button>
   )

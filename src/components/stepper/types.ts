@@ -26,6 +26,7 @@ export interface IStepperProps {
 
 export interface IStepperNavigateProps {
   label?: (currentStep?: number) => string
+  onClick?: (next: () => void) => void
 }
 
 export interface IStepperStepsProps {
