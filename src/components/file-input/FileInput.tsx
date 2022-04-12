@@ -21,11 +21,9 @@ export const FileInput: FileInputProps = ({
   onSelect,
   ...rest
 }) => {
-  const [fileSelection, setFileSelection] = React.useState<FileList | null>()
-
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = event.target
-    setFileSelection(files)
+
     onSelect(files)
   }
 
