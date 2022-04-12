@@ -37,7 +37,6 @@ export const FileInput: FileInputProps = ({
         accept={accept}
         multiple={multiple}
         id={id}
-        data-testid="file-upload" // TODO: remove
         hidden
       />
       <Button as="label" htmlFor={id} {...rest}>

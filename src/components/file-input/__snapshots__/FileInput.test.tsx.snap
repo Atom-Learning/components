@@ -78,15 +78,13 @@ exports[`FileInput component renders 1`] = `
 
 <div>
   <input
-    data-testid="file-upload"
     hidden=""
-    id="file-input-id"
+    id="fileInputId"
     type="file"
   />
   <label
     class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
-    for="file-input-id"
-    label="Select file"
+    for="fileInputId"
     type="button"
   >
     <svg
@@ -105,6 +103,7 @@ exports[`FileInput component renders 1`] = `
         d="M20 21H4"
       />
     </svg>
+    Upload
   </label>
 </div>
 `;
