@@ -241,7 +241,6 @@ type ButtonProps = Override<
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
     isLoading?: boolean
-    htmlFor?: string // styled() omits this prop, however it is needed if need to pair the button with another component (ie: file input)
   } & NavigatorActions
 >
 

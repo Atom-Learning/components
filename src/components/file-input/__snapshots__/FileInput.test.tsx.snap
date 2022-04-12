@@ -69,27 +69,25 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-idQgHjC-css {
-    margin-right: var(--space-3);
+  .c-dbrbZt-idQfaGE-css {
+    margin-left: var(--space-3);
     height: 20px;
     width: 20px;
   }
 }
 
 <div>
-  <input
-    hidden=""
-    id="fileInputId"
-    type="file"
-  />
   <label
     class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
-    for="fileInputId"
     type="button"
   >
+    <input
+      hidden=""
+      type="file"
+    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQgHjC-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

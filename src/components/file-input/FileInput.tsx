@@ -7,7 +7,6 @@ import { Icon } from '../icon'
 export type FileInputProps = React.FC<
   typeof StyledButton & {
     accept?: string
-    id?: string
     multiple?: boolean
     onSelect: (selection: FileList | null) => void
   }
@@ -16,7 +15,6 @@ export type FileInputProps = React.FC<
 export const FileInput: FileInputProps = ({
   accept,
   children,
-  id = 'fileInputId',
   multiple = false,
   onSelect,
   ...rest
@@ -28,20 +26,17 @@ export const FileInput: FileInputProps = ({
   }
 
   return (
-    <>
+    <Button as="label" {...rest}>
       <input
         type="file"
         onChange={handleFileSelect}
         accept={accept}
         multiple={multiple}
-        id={id}
         hidden
       />
-      <Button as="label" htmlFor={id} {...rest}>
-        <Icon is={Download} />
-        {children}
-      </Button>
-    </>
+      <Icon is={Download} />
+      {children}
+    </Button>
   )
 }
 

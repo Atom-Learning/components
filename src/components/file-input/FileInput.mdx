@@ -21,12 +21,6 @@ The required props `FileInput` needs are: `onSelect` and `children`.
 
 `children` is used to add text to the visible button.
 
-## Accessibility
-
-`id` is really important because the actual file input is hidden, while the visible element is a `label` with an `htmlFor` attribute that pairs with the hidden input via the `id` attribute.
-
-**Note:** `id` has to be unique and needs to be provided in cases where the component is used multiple times on the same page.
-
 ## Multiple files
 
 The input can also accept multiple files at once, via the `multiple` prop.
