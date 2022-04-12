@@ -6,19 +6,19 @@ import { Icon } from '../icon'
 
 export type FileInputProps = React.FC<
   typeof StyledButton & {
-    onSelect: (selection: FileList | null) => void
-    id: string // TODO: make optiona and add default
     accept?: string
+    id?: string
     multiple?: boolean
+    onSelect: (selection: FileList | null) => void
   }
 >
 
 export const FileInput: FileInputProps = ({
-  onSelect,
   accept,
-  multiple = false,
-  id,
   children,
+  id = 'fileInputId',
+  multiple = false,
+  onSelect,
   ...rest
 }) => {
   const [fileSelection, setFileSelection] = React.useState<FileList | null>()
