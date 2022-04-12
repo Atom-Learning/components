@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileInput component renders 1`] = `
+@media  {
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-fkUJsw-elrwsr-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
+  }
+}
+
+@media  {
+  .c-dbrbZt-idQfaGE-css {
+    margin-left: var(--space-3);
+    height: 20px;
+    width: 20px;
+  }
+}
+
+<div>
+  <label
+    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    type="button"
+  >
+    <input
+      hidden=""
+      type="file"
+    />
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 3v13"
+      />
+      <polyline
+        points="7 12 12 17 17 12"
+      />
+      <path
+        d="M20 21H4"
+      />
+    </svg>
+    Upload
+  </label>
+</div>
+`;

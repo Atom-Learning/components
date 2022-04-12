@@ -1,0 +1,27 @@
+name: Test & validate
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: '14'
+
+      - run: yarn install
+
+      - name: Test
+        run: yarn test:ci
+
+      - name: Validate
+        run: yarn validate

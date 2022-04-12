@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Atom-Learning/components/compare/v1.3.0...v1.4.0) (2022-04-11)
+
+
+### Features
+
+* **stepper:** adding ability to override default forward behaviour ([#318](https://github.com/Atom-Learning/components/issues/318)) ([c9cc080](https://github.com/Atom-Learning/components/commit/c9cc080ce9c77afda0ba9df48eb74276ce2c4505))
+
 # [1.3.0](https://github.com/Atom-Learning/components/compare/v1.2.1...v1.3.0) (2022-04-07)
 
 
