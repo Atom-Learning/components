@@ -1,18 +1,16 @@
-import { Download } from '@atom-learning/icons'
+import { Upload } from '@atom-learning/icons'
 import * as React from 'react'
 
-import { Button, StyledButton } from '../button'
+import { Button } from '../button'
 import { Icon } from '../icon'
 
-export type FileInputProps = React.FC<
-  typeof StyledButton & {
-    accept?: string
-    multiple?: boolean
-    onSelect: (selection: FileList | null) => void
-  }
->
+export type FileInputProps = React.ComponentProps<typeof Button> & {
+  onSelect: (selection: FileList | null) => void
+  accept?: string
+  multiple?: boolean
+}
 
-export const FileInput: FileInputProps = ({
+export const FileInput: React.FC<FileInputProps> = ({
   accept,
   children,
   multiple = false,
@@ -27,6 +25,8 @@ export const FileInput: FileInputProps = ({
 
   return (
     <Button as="label" {...rest}>
+      <Icon is={Upload} />
+      {children}
       <input
         type="file"
         onChange={handleFileSelect}
@@ -34,8 +34,6 @@ export const FileInput: FileInputProps = ({
         multiple={multiple}
         hidden
       />
-      <Icon is={Download} />
-      {children}
     </Button>
   )
 }

@@ -69,8 +69,8 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-idQfaGE-css {
-    margin-left: var(--space-3);
+  .c-dbrbZt-idQgHjC-css {
+    margin-right: var(--space-3);
     height: 20px;
     width: 20px;
   }
@@ -81,27 +81,27 @@ exports[`FileInput component renders 1`] = `
     class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
-    <input
-      hidden=""
-      type="file"
-    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQgHjC-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M12 3v13"
+        d="M12 4v13"
       />
       <polyline
-        points="7 12 12 17 17 12"
+        points="7 8 12 3 17 8"
       />
       <path
         d="M20 21H4"
       />
     </svg>
     Upload
+    <input
+      hidden=""
+      type="file"
+    />
   </label>
 </div>
 `;
