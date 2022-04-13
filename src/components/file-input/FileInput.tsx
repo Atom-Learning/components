@@ -5,7 +5,7 @@ import { Button } from '../button'
 import { Icon } from '../icon'
 
 export type FileInputProps = React.ComponentProps<typeof Button> & {
-  onSelect: (selection: FileList | null) => void
+  onFileSelect: (selection: FileList | null) => void
   accept?: string
   multiple?: boolean
 }
@@ -14,13 +14,13 @@ export const FileInput: React.FC<FileInputProps> = ({
   accept,
   children,
   multiple = false,
-  onSelect,
+  onFileSelect,
   ...rest
 }) => {
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = event.target
 
-    onSelect(files)
+    onFileSelect(files)
   }
 
   return (
