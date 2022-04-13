@@ -42,6 +42,7 @@ const ToastContainer = styled('div', {
 })
 
 const StyledToast = styled('div', {
+  pointerEvents: 'auto',
   alignItems: 'center',
   borderRadius: '$0',
   boxShadow: '$1',
