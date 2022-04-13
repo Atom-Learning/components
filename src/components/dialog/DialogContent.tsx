@@ -10,6 +10,7 @@ import { Icon } from '../icon/Icon'
 
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
+const modalOverlayId = 'modal_overlay'
 
 const slideIn = keyframes({
   '0%': { transform: contentOffScreen },
@@ -80,8 +81,18 @@ export const DialogContent: React.FC<DialogContentProps> = ({
   ...remainingProps
 }) => (
   <>
-    <StyledDialogOverlay />
-    <StyledDialogContent size={size} {...remainingProps}>
+    <StyledDialogOverlay id={modalOverlayId} />
+    <StyledDialogContent
+      size={size}
+      aria-label="Dialog"
+      onPointerDownOutside={(event) => {
+        const element = event.target as HTMLElement
+        if (element?.id !== modalOverlayId) {
+          event.preventDefault()
+        }
+      }}
+      {...remainingProps}
+    >
       {showCloseButton && (
         <ActionIcon
           as={Close}

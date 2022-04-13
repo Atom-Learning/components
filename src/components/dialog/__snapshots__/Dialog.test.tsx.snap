@@ -129,11 +129,11 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 <div
-  aria-describedby="radix-id-0-3"
-  aria-labelledby="radix-id-0-2"
+  aria-describedby="radix-5"
+  aria-label="Dialog"
   class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
   data-state="open"
-  id="radix-id-0-1"
+  id="radix-3"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
@@ -161,7 +161,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 exports[`Dialog component renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
-    aria-controls="radix-id-0-1"
+    aria-controls="radix-0"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
@@ -267,11 +267,11 @@ exports[`Dialog component without close button renders 1`] = `
 }
 
 <div
-  aria-describedby="radix-id-0-3"
-  aria-labelledby="radix-id-0-2"
+  aria-describedby="radix-17"
+  aria-label="Dialog"
   class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
   data-state="open"
-  id="radix-id-0-1"
+  id="radix-15"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
