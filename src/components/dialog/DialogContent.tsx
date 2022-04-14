@@ -1,5 +1,5 @@
 import { Close as CloseIcon } from '@atom-learning/icons'
-import { Close, Content, Overlay } from '@radix-ui/react-dialog'
+import { Close, Content, Overlay, Portal } from '@radix-ui/react-dialog'
 import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
@@ -11,6 +11,7 @@ import { Icon } from '../icon/Icon'
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
 const modalOverlayId = 'modal_overlay'
+const DIALOG_Z_INDEX = 2147483646
 
 const slideIn = keyframes({
   '0%': { transform: contentOffScreen },
@@ -25,6 +26,8 @@ const StyledDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
   position: 'fixed',
+  overflowY: 'auto',
+  zIndex: DIALOG_Z_INDEX,
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${fadeIn} 250ms ease-out`
@@ -46,6 +49,7 @@ const StyledDialogContent = styled(Content, {
   position: 'fixed',
   top: '50%',
   transform: contentOnScreen,
+  zIndex: DIALOG_Z_INDEX,
   '&:focus': {
     outline: 'none'
   },
@@ -80,31 +84,32 @@ export const DialogContent: React.FC<DialogContentProps> = ({
   showCloseButton = true,
   ...remainingProps
 }) => (
-  <>
-    <StyledDialogOverlay id={modalOverlayId} />
-    <StyledDialogContent
-      size={size}
-      aria-label="Dialog"
-      onPointerDownOutside={(event) => {
-        const element = event.target as HTMLElement
-        if (element?.id !== modalOverlayId) {
-          event.preventDefault()
-        }
-      }}
-      {...remainingProps}
-    >
-      {showCloseButton && (
-        <ActionIcon
-          as={Close}
-          css={{ position: 'absolute', right: '$4', top: '$4' }}
-          label={closeDialogText}
-          size="lg"
-          theme="neutral"
-        >
-          <Icon is={CloseIcon} />
-        </ActionIcon>
-      )}
-      {children}
-    </StyledDialogContent>
-  </>
+  <Portal>
+    <StyledDialogOverlay id={modalOverlayId}>
+      <StyledDialogContent
+        size={size}
+        aria-label="Dialog"
+        onPointerDownOutside={(event) => {
+          const element = event.target as HTMLElement
+          if (element?.id !== modalOverlayId) {
+            event.preventDefault()
+          }
+        }}
+        {...remainingProps}
+      >
+        {showCloseButton && (
+          <ActionIcon
+            as={Close}
+            css={{ position: 'absolute', right: '$4', top: '$4' }}
+            label={closeDialogText}
+            size="lg"
+            theme="neutral"
+          >
+            <Icon is={CloseIcon} />
+          </ActionIcon>
+        )}
+        {children}
+      </StyledDialogContent>
+    </StyledDialogOverlay>
+  </Portal>
 )
