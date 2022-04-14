@@ -13,6 +13,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
           ref: ${{ github.head_ref }}
 
       - name: Setup environment
@@ -32,4 +33,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          
           commit_message: 'chore: apply auto-fix changes'

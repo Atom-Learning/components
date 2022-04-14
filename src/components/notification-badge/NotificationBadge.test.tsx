@@ -1,11 +1,11 @@
+import { Controls } from '@atom-learning/icons'
 import { render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { NotificationBadge } from '.'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { Controls } from '@atom-learning/icons'
+import { NotificationBadge } from '.'
 
 describe('NotificationBadge component', () => {
   it('renders a NotificationBadge', async () => {
