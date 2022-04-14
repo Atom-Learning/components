@@ -7,7 +7,7 @@ import { FileInputProps } from './FileInput'
 
 describe('FileInput component', () => {
   const props: FileInputProps = {
-    onSelect: jest.fn()
+    onFileSelect: jest.fn()
   }
 
   it('renders', async () => {
