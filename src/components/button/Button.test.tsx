@@ -80,6 +80,16 @@ describe(`Button component`, () => {
     expect(container).toMatchSnapshot()
   })
 
+  it('renders a outline button with secondary theme', async () => {
+    const { container } = render(
+      <Button appearance="outline" theme="secondary" {...props}>
+        BUTTON
+      </Button>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
   it('renders a disabled warning outline button - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Button disabled appearance="outline" theme="warning" {...props}>

@@ -1,9 +1,9 @@
 import React from 'react'
 
+import { styled } from '~/stitches'
+
 import { Box } from '../box'
 import { Flex } from '../flex'
-
-import { styled } from '~/stitches'
 
 const StyledWrapper = styled(Box, {
   position: 'relative'

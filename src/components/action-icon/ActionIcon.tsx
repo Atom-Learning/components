@@ -1,6 +1,6 @@
 import type * as Stitches from '@stitches/react'
+import { darken } from 'color2k'
 import invariant from 'invariant'
-import { darken } from 'polished'
 import * as React from 'react'
 
 import { styled, theme } from '~/stitches'
@@ -109,8 +109,8 @@ const StyledButton = styled('button', {
       appearance: 'simple',
       css: getSimpleVariant(
         '$primaryDark',
-        darken(0.1, theme.colors.primaryDark.value),
-        darken(0.15, theme.colors.primaryDark.value)
+        darken(theme.colors.primaryDark.value, 0.1),
+        darken(theme.colors.primaryDark.value, 0.15)
       )
     },
     {
@@ -140,8 +140,8 @@ const StyledButton = styled('button', {
       appearance: 'solid',
       css: getSolidVariant(
         '$primaryDark',
-        darken(0.1, theme.colors.primaryDark.value),
-        darken(0.15, theme.colors.primaryDark.value)
+        darken(theme.colors.primaryDark.value, 0.1),
+        darken(theme.colors.primaryDark.value, 0.15)
       )
     },
     {
@@ -171,8 +171,8 @@ const StyledButton = styled('button', {
       appearance: 'outline',
       css: getOutlineVariant(
         '$primaryDark',
-        darken(0.1, theme.colors.primaryDark.value),
-        darken(0.15, theme.colors.primaryDark.value)
+        darken(theme.colors.primaryDark.value, 0.1),
+        darken(theme.colors.primaryDark.value, 0.15)
       )
     },
     {
