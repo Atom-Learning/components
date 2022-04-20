@@ -1,12 +1,11 @@
+import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
+import { darken } from 'color2k'
 import React from 'react'
 
-import { Box } from '../box'
-import { Icon } from '../icon'
-import { ChevronDown } from '@atom-learning/icons'
-
 import { styled, theme } from '~/stitches'
-import { darken } from 'polished'
+
+import { Icon } from '../icon'
 
 const getTriggerVariant = (
   base: string,
@@ -29,6 +28,16 @@ const getTriggerVariant = (
   }
 })
 
+const RotatingIcon = styled(Icon, {
+  transition: 'transform 300ms',
+  '[data-state="open"] > &': {
+    transform: 'rotate(180deg)'
+  },
+  '[data-state="closed"] > &': {
+    transform: 'rotate(0deg)'
+  }
+})
+
 const StyledTrigger = styled(Trigger, {
   border: 0,
   py: '$3',
@@ -40,31 +49,23 @@ const StyledTrigger = styled(Trigger, {
   cursor: 'pointer',
 
   '&[data-state="open"]': {
-    borderRadius: '$0 $0 0 0',
-    '& svg': {
-      transition: 'transform 300ms',
-      transform: 'rotate(180deg)'
-    }
+    borderRadius: '$0 $0 0 0'
   },
   '&[data-state="closed"]': {
-    borderRadius: '$0',
-    '& svg': {
-      transition: 'transform 300ms',
-      transform: 'rotate(0deg)'
-    }
+    borderRadius: '$0'
   },
 
   variants: {
     theme: {
       primaryDark: getTriggerVariant(
         '$primaryDark',
-        darken(0.1, theme.colors.primaryDark.value),
-        darken(0.15, theme.colors.primaryDark.value)
+        darken(theme.colors.primaryDark.value, 0.1),
+        darken(theme.colors.primaryDark.value, 0.15)
       ),
       light: getTriggerVariant(
         '#fff',
-        darken(0.1, '#fff'),
-        darken(0.15, '#fff'),
+        darken('#fff', 0.1),
+        darken('#fff', 0.15),
         '$tonal600'
       )
     }
@@ -75,11 +76,12 @@ type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger>
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   theme = 'primaryDark',
+
   children,
   ...remainingProps
 }) => (
   <StyledTrigger theme={theme} {...remainingProps}>
-    <Box>{children}</Box>
-    <Icon is={ChevronDown} />
+    {children}
+    <RotatingIcon is={ChevronDown} />
   </StyledTrigger>
 )

@@ -2,28 +2,30 @@
 
 exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 @media  {
-  .c-hSCvKD {
+  .c-gJNIBC {
     background-color: var(--colors-alpha600);
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     position: fixed;
+    overflow-y: auto;
+    z-index: 2147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hSCvKD[data-state="open"] {
+    .c-gJNIBC[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hSCvKD[data-state="closed"] {
+    .c-gJNIBC[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 
-  .c-iZiUtw {
+  .c-cEjFpV {
     background: white;
     border-radius: var(--radii-1);
     box-shadow: var(--shadows-3);
@@ -34,20 +36,21 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     position: fixed;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+    z-index: 2147483646;
   }
 
-  .c-iZiUtw:focus {
+  .c-cEjFpV:focus {
     outline: none;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-iZiUtw[data-state="open"] {
+    .c-cEjFpV[data-state="open"] {
       animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-iZiUtw[data-state="closed"] {
+    .c-cEjFpV[data-state="closed"] {
       animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
@@ -78,7 +81,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-iZiUtw-lgqbzh-size-sm {
+  .c-cEjFpV-lgqbzh-size-sm {
     width: 480px;
   }
 
@@ -129,11 +132,11 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 <div
-  aria-describedby="radix-id-0-3"
-  aria-labelledby="radix-id-0-2"
-  class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
+  aria-describedby="radix-5"
+  aria-label="Dialog"
+  class="c-cEjFpV c-cEjFpV-lgqbzh-size-sm"
   data-state="open"
-  id="radix-id-0-1"
+  id="radix-3"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
@@ -161,7 +164,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 exports[`Dialog component renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
-    aria-controls="radix-id-0-1"
+    aria-controls="radix-0"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
@@ -174,28 +177,30 @@ exports[`Dialog component renders the trigger with the popover hidden by default
 
 exports[`Dialog component without close button renders 1`] = `
 @media  {
-  .c-hSCvKD {
+  .c-gJNIBC {
     background-color: var(--colors-alpha600);
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     position: fixed;
+    overflow-y: auto;
+    z-index: 2147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hSCvKD[data-state="open"] {
+    .c-gJNIBC[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hSCvKD[data-state="closed"] {
+    .c-gJNIBC[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 
-  .c-iZiUtw {
+  .c-cEjFpV {
     background: white;
     border-radius: var(--radii-1);
     box-shadow: var(--shadows-3);
@@ -206,20 +211,21 @@ exports[`Dialog component without close button renders 1`] = `
     position: fixed;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
+    z-index: 2147483646;
   }
 
-  .c-iZiUtw:focus {
+  .c-cEjFpV:focus {
     outline: none;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-iZiUtw[data-state="open"] {
+    .c-cEjFpV[data-state="open"] {
       animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-iZiUtw[data-state="closed"] {
+    .c-cEjFpV[data-state="closed"] {
       animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
@@ -250,7 +256,7 @@ exports[`Dialog component without close button renders 1`] = `
 }
 
 @media  {
-  .c-iZiUtw-lgqbzh-size-sm {
+  .c-cEjFpV-lgqbzh-size-sm {
     width: 480px;
   }
 
@@ -267,11 +273,11 @@ exports[`Dialog component without close button renders 1`] = `
 }
 
 <div
-  aria-describedby="radix-id-0-3"
-  aria-labelledby="radix-id-0-2"
-  class="c-iZiUtw c-iZiUtw-lgqbzh-size-sm"
+  aria-describedby="radix-17"
+  aria-label="Dialog"
+  class="c-cEjFpV c-cEjFpV-lgqbzh-size-sm"
   data-state="open"
-  id="radix-id-0-1"
+  id="radix-15"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
