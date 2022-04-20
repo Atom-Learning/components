@@ -35,3 +35,54 @@ Note that `Carousel.Slide`s must receive an `index` prop in order to correctly a
   <Carousel.Pagination css={{ mx: 'auto', width: 'max-content' }} />
 </Carousel>
 ```
+
+### useCarousel hook
+
+useCarousel hook exposes the Carousel context outside.
+
+Documentation about the hook usage
+https://github.com/express-labs/pure-react-carousel#hooks-and-usecontext
+
+Code snippet:
+
+```
+const Slider = ({ children }) => {
+  const carouselContext = useCarousel()
+  const [currentSlide, setCurrentSlide] = React.useState(
+    carouselContext.state.currentSlide
+  )
+
+  React.useEffect(() => {
+    function onChange() {
+      setCurrentSlide(carouselContext.state.currentSlide)
+    }
+    carouselContext.subscribe(onChange)
+    return () => carouselContext.unsubscribe(onChange)
+  }, [carouselContext])
+
+  console.log('carouselContext', carouselContext)
+  return (
+    <>
+      <div>Current slide: {currentSlide}</div>
+      {children}
+    </>
+  )
+}
+```
+
+```
+ <Carousel
+  slideWidth={200}
+  slideHeight={200}
+  numSlides={2}
+  css={{ position: 'relative' }}
+>
+  <Carousel.ArrowPrevious />
+  <Carousel.ArrowNext />
+  <Slider>
+    <Carousel.Slider>
+      // slides
+    </Carousel.Slider>
+  </Slider>
+</Carousel>
+```
