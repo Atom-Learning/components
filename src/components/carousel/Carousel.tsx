@@ -1,4 +1,4 @@
-import { CarouselProvider } from 'pure-react-carousel'
+import { CarouselContext, CarouselProvider } from 'pure-react-carousel'
 import * as React from 'react'
 
 import { CSSWrapper } from '~/utilities'
@@ -44,6 +44,12 @@ export const Carousel: React.FC<
     </CSSWrapper>
   )
 }
+
+/**
+ * Documentation about the hook usage
+ * https://github.com/express-labs/pure-react-carousel#hooks-and-usecontext
+ */
+export const useCarousel = () => React.useContext(CarouselContext)
 
 Carousel.ArrowNext = CarouselArrowNext
 Carousel.ArrowPrevious = CarouselArrowPrevious
