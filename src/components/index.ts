@@ -1,6 +1,7 @@
 export type { ValidationOptions } from './form'
 
 export { Accordion } from './accordion'
+export { EmptyStates } from './empty-states'
 export { ActionIcon } from './action-icon'
 export { AlertDialog, useAlert, AlertProvider } from './alert-dialog'
 export { Box } from './box'

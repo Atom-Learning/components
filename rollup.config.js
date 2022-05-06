@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import hq from 'alias-hq'
 import esbuild from 'rollup-plugin-esbuild'
 import summary from 'rollup-plugin-summary'
+import svg from 'rollup-plugin-svg'
 import visualizer from 'rollup-plugin-visualizer'
 
 import pkg from './package.json'
@@ -33,6 +34,7 @@ export default {
     alias({ entries: hq.get('rollup', { format: 'array' }) }),
     esbuild({ minify: isProduction }),
     resolve({ extensions: ['.ts', '.tsx'] }),
+    svg(),
     isDebug && visualizer()
   ]
 }
