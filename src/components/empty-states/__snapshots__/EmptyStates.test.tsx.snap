@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyStates component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bzdkxA-size-md .c-dhzjXW:where(.c-kmANXN) {
+    width: 126px;
+    height: 72px;
+    margin-bottom: 16px;
+  }
+
+  .c-kmANXN-bzdkxA-size-md .c-eWgOGC {
+    width: 126px;
+  }
+
+  .c-kmANXN-bzdkxA-size-md .c-ftwtsZ {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .c-kmANXN-dQemPF-color-grey {
+    background-color: var(--colors-tonal50);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dhzjXW-ikmANXN-css {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-dhzjXW-ikmANXN-css"
+  >
+    <div
+      class="c-dhzjXW c-kmANXN c-kmANXN-bzdkxA-size-md c-kmANXN-dQemPF-color-grey"
+    >
+      <div
+        class="c-dhzjXW c-kmANXN"
+      >
+        <img
+          alt=""
+          class="c-eWgOGC"
+          src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
+        />
+      </div>
+    </div>
+    <h2
+      class="c-ftwtsZ"
+    >
+      This is a title
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ftwtsZ"
+    >
+      This is the body
+    </p>
+  </div>
+</div>
+`;

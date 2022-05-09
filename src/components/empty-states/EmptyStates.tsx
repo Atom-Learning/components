@@ -7,46 +7,17 @@ import { CSS, styled } from '~/stitches'
 
 // import background from './semicircle.svg'
 
-const StyledBody = styled(Text, {
+export const StyledBody = styled(Text, {
   color: '$tonal400',
   fontFamily: '$body'
 })
 
-const StyledTitle = styled('h2', {
+export const StyledTitle = styled('h2', {
   color: '$tonal400',
-  fontFamily: '$body',
-  variants: {
-    size: {
-      xs: {
-        fontSize: '$md',
-        fontWeight: '600',
-        mb: '12px'
-      },
-      sm: {
-        fontSize: '$md',
-        fontWeight: '600',
-        mb: '12px'
-      },
-      md: {
-        fontSize: '$md',
-        fontWeight: '600',
-        mb: '12px'
-      },
-      lg: {
-        fontSize: '$lg',
-        fontWeight: '600',
-        mb: '16px'
-      },
-      xl: {
-        fontSize: '$lg',
-        fontWeight: '600',
-        mb: '16px'
-      }
-    }
-  }
+  fontFamily: '$body'
 })
 
-const StyledIllustration = styled(Flex, {
+export const StyledIllustration = styled(Flex, {
   flexDirection: 'column',
   alignItems: 'center'
 })
@@ -121,7 +92,7 @@ const StyledBox = styled(Flex, {
           width: '190px',
           height: '142px',
           mb: '32px',
-          backgroundImage: `url`
+          backgroundImage: `url()`
         },
         [`& ${Image}`]: {
           width: '126px'
@@ -142,7 +113,7 @@ const StyledBox = styled(Flex, {
           width: '285px',
           height: '213px',
           mb: '32px',
-          backgroundImage: `url`
+          backgroundImage: `url()`
         },
         [`& ${Image}`]: {
           width: '189px'
@@ -172,24 +143,12 @@ const StyledBox = styled(Flex, {
 
 type EmptyStatesProps = React.ComponentProps<typeof StyledBox> & { css?: CSS }
 
-export const EmptyStates: React.FC<EmptyStatesProps> = ({
-  css,
-  size = 'md',
-  children
-}) => {
-  return (
-    // <Flex css={css}>
-    <Flex css={{ flexDirection: 'column', alignItems: 'center' }}>
-      <StyledBox css={css} size={size} color="grey">
-        <IllustrationContainer
-          src="https://png.pngtree.com/png-vector/20190214/ourmid/pngtree-vector-gallery-icon-png-image_515223.jpg"
-          alt=""
-        />
-      </StyledBox>
-      <StyledTitle>This is a title</StyledTitle>
-      <StyledBody>This is the body</StyledBody>
-    </Flex>
-  )
+export const EmptyStates: React.FC<EmptyStatesProps> & {
+  Image: typeof IllustrationContainer
+  Title: typeof StyledTitle
+  Body: typeof StyledBody
+} = ({ size = 'sm', ...props }) => {
+  return <StyledBox size={size} color="grey" {...props} />
 }
 
 type IllustrationContainerProps = React.ComponentProps<typeof Image>
@@ -203,3 +162,6 @@ const IllustrationContainer: React.FC<IllustrationContainerProps> = (props) => {
 }
 
 EmptyStates.displayName = 'EmptyStates'
+EmptyStates.Image = IllustrationContainer
+EmptyStates.Title = StyledTitle
+EmptyStates.Body = StyledBody
