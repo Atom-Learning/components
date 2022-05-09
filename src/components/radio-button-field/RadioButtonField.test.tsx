@@ -1,5 +1,6 @@
 import { IdProvider } from '@radix-ui/react-id'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -46,8 +47,7 @@ describe('RadioButtonField component', () => {
     const onValueChangeSpy = jest.fn()
     render(<ExampleRadioButtonField onValueChange={onValueChangeSpy} />)
 
-    const button = await screen.findByLabelText('2')
-    fireEvent.click(button)
+    userEvent.click(screen.getByLabelText('2'))
     await waitFor(() => {
       expect(onValueChangeSpy).toHaveBeenCalledTimes(1)
       expect(onValueChangeSpy).toHaveBeenCalledWith('2')
