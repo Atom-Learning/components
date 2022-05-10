@@ -1,26 +1,12 @@
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Image } from '~/components/image'
-import { Text } from '~/components/text'
 import { CSS, styled } from '~/stitches'
 
-// import background from './semicircle.svg'
-
-export const StyledBody = styled(Text, {
-  color: '$tonal400',
-  fontFamily: '$body'
-})
-
-export const StyledTitle = styled('h2', {
-  color: '$tonal400',
-  fontFamily: '$body'
-})
-
-export const StyledIllustration = styled(Flex, {
-  flexDirection: 'column',
-  alignItems: 'center'
-})
+import { EmptyStatesBody } from './EmptyStatesBody'
+import { EmptyStatesTitle } from './EmptyStatesTitle'
 
 const StyledBox = styled(Flex, {
   flexDirection: 'column',
@@ -28,140 +14,113 @@ const StyledBox = styled(Flex, {
   variants: {
     size: {
       xs: {
-        [`& ${StyledIllustration}`]: {
+        [`& ${Image}`]: {
           width: '56px',
           height: '32px',
-          mb: '16px'
+          mb: '$4'
         },
-        [`& ${Image}`]: {
-          width: '56px'
-        },
-        [`& ${StyledTitle}`]: {
+        [`& ${EmptyStatesTitle}`]: {
           fontSize: '$md',
           fontWeight: '600',
-          mb: '12px'
+          mb: '$3'
         },
-        [`& ${StyledBody}`]: {
+        [`& ${EmptyStatesBody}`]: {
           fontSize: '$sm',
           fontWeight: '400',
-          mb: '16px'
+          mb: '$4'
         }
       },
       sm: {
-        [`& ${StyledIllustration}`]: {
+        [`& ${Image}`]: {
           width: '84px',
           height: '48px',
-          mb: '16px'
+          mb: '$4'
         },
-        [`& ${Image}`]: {
-          width: '84px'
-        },
-        [`& ${StyledTitle}`]: {
+        [`& ${EmptyStatesTitle}`]: {
           fontSize: '$md',
           fontWeight: '600',
-          mb: '12px'
+          mb: '$3'
         },
-        [`& ${StyledBody}`]: {
+        [`& ${EmptyStatesBody}`]: {
           fontSize: '$sm',
           fontWeight: '400',
-          mb: '16px'
+          mb: '$4'
         }
       },
       md: {
-        [`& ${StyledIllustration}`]: {
+        [`& ${Image}`]: {
           width: '126px',
           height: '72px',
-          mb: '16px'
+          mb: '$4'
         },
-        [`& ${Image}`]: {
-          width: '126px'
-        },
-        [`& ${StyledTitle}`]: {
-          fontSize: '$md',
+        [`& ${EmptyStatesTitle}`]: {
+          fontSize: '16px',
           fontWeight: '600',
-          mb: '12px'
+          mb: '$3'
         },
-        [`& ${StyledBody}`]: {
-          fontSize: '$sm',
+        [`& ${EmptyStatesBody}`]: {
+          fontSize: '14px',
           fontWeight: '400',
-          mb: '16px'
+          mb: '$4'
         }
       },
       lg: {
-        [`& ${StyledIllustration}`]: {
+        [`& ${Image}`]: {
           width: '190px',
           height: '142px',
-          mb: '32px',
-          backgroundImage: `url()`
+          mb: '$5'
         },
-        [`& ${Image}`]: {
-          width: '126px'
-        },
-        [`& ${StyledTitle}`]: {
+        [`& ${EmptyStatesTitle}`]: {
           fontSize: '$lg',
           fontWeight: '600',
-          mb: '16px'
+          mb: '$4'
         },
-        [`& ${StyledBody}`]: {
+        [`& ${EmptyStatesBody}`]: {
           fontSize: '$md',
           fontWeight: '400',
-          mb: '32px'
+          mb: '$5'
         }
       },
       xl: {
-        [`& ${StyledIllustration}`]: {
+        [`& ${Image}`]: {
           width: '285px',
           height: '213px',
-          mb: '32px',
-          backgroundImage: `url()`
+          mb: '$5'
         },
-        [`& ${Image}`]: {
-          width: '189px'
-        },
-        [`& ${StyledTitle}`]: {
+        [`& ${EmptyStatesTitle}`]: {
           fontSize: '$lg',
           fontWeight: '600',
-          mb: '16px'
+          mb: '$4'
         },
-        [`& ${StyledBody}`]: {
+        [`& ${EmptyStatesBody}`]: {
           fontSize: '$md',
           fontWeight: '400',
-          mb: '32px'
+          mb: '$5'
         }
-      }
-    },
-    color: {
-      white: {
-        backgroundColor: '$white'
-      },
-      grey: {
-        backgroundColor: '$tonal50'
       }
     }
   }
 })
 
-type EmptyStatesProps = React.ComponentProps<typeof StyledBox> & { css?: CSS }
-
-export const EmptyStates: React.FC<EmptyStatesProps> & {
-  Image: typeof IllustrationContainer
-  Title: typeof StyledTitle
-  Body: typeof StyledBody
-} = ({ size = 'sm', ...props }) => {
-  return <StyledBox size={size} color="grey" {...props} />
-}
-
 type IllustrationContainerProps = React.ComponentProps<typeof Image>
 
 const IllustrationContainer: React.FC<IllustrationContainerProps> = (props) => {
   return (
-    <StyledIllustration>
+    <Box>
       <Image {...props} />
-    </StyledIllustration>
+    </Box>
   )
 }
 
+type EmptyStatesProps = React.ComponentProps<typeof StyledBox> & { css?: CSS }
+
+export const EmptyStates: React.FC<EmptyStatesProps> & {
+  Image: typeof IllustrationContainer
+  Title: typeof EmptyStatesTitle
+  Body: typeof EmptyStatesBody
+} = ({ size = 'xs', ...props }) => <StyledBox size={size} {...props} />
+
 EmptyStates.displayName = 'EmptyStates'
 EmptyStates.Image = IllustrationContainer
-EmptyStates.Title = StyledTitle
-EmptyStates.Body = StyledBody
+EmptyStates.Title = EmptyStatesTitle
+EmptyStates.Body = EmptyStatesBody
