@@ -1,10 +1,20 @@
 ---
 title: Empty States
 component: EmptyStates
-description: This is the description
+description: Empty states are messages that provide an explanation of an interface in absence of content.
 category: Content
 ---
 
+`EmptyStates` exports a number of components that can be composed together to create an `EmptyStates` message.
+The message can include Title and/or Body and sometimes they appear together with an illustration and actionable buttons.
+There are 5 different size variants of `EmptyStates` ( 'xs', 'sm', 'md', 'lg' and 'xl').
+
 ```jsx preview
-<EmptyStates />
+<EmptyStates size="sm">
+  <EmptyStates.Image src="" />
+  <EmptyStates.Title>No users found!</EmptyStates.Title>
+  <EmptyStates.Body>
+    You need to add some users before you can use this feature
+  </EmptyStates.Body>
+</EmptyStates>
 ```
