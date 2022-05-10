@@ -22,6 +22,7 @@ type RadioButtonFieldProps = {
   direction?: 'row' | 'column'
   description?: string
   validation?: ValidationOptions
+  onValueChange?: (value: string) => void
 }
 
 export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
@@ -34,7 +35,8 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   description,
   label,
   name,
-  validation
+  validation,
+  onValueChange
 }) => {
   const { control } = useFormContext()
   const { error } = useFieldError(name)
@@ -60,7 +62,10 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
           <RadioButtonGroup
             direction={direction}
             defaultValue={defaultValue}
-            onValueChange={onChange}
+            onValueChange={(value) => {
+              onChange(value)
+              onValueChange?.(value)
+            }}
             value={value}
           >
             {children}

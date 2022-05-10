@@ -17,3 +17,9 @@ category: Form fields
   </RadioButtonField>
 </Form>
 ```
+
+If you need to know when the radio group value changes, you can pass `onValueChange`, which takes a `string` type as input.
+
+```tsx
+<RadioButtonField onValueChange={onChangeHandler} />
+```
