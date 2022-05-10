@@ -1,13 +1,11 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { EmptyStates } from '.'
-// import lg from './lg1.svg'
 
 const SimpleExample = () => (
-  <EmptyStates size="lg" color="grey">
-    <EmptyStates.Image src="" />
+  <EmptyStates size="lg">
     <EmptyStates.Title>No users found!</EmptyStates.Title>
     <EmptyStates.Body>
       You need to add some users before you can use this feature
@@ -16,7 +14,7 @@ const SimpleExample = () => (
 )
 
 describe('EmptyStates component', () => {
-  it.skip('renders', async () => {
+  it('renders', async () => {
     const { container } = render(<EmptyStates />)
 
     expect(container).toMatchSnapshot()
@@ -26,5 +24,15 @@ describe('EmptyStates component', () => {
     const { container } = render(<EmptyStates />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('renders title and body correctly', async () => {
+    render(<SimpleExample />)
+    expect(screen.getByText('No users found!')).toBeVisible()
+    expect(
+      screen.getByText(
+        'You need to add some users before you can use this feature'
+      )
+    ).toBeVisible()
   })
 })
