@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Image } from '~/components/image'
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { EmptyStatesBody } from './EmptyStatesBody'
 import { EmptyStatesTitle } from './EmptyStatesTitle'
@@ -118,7 +118,7 @@ export const EmptyStates: React.FC<EmptyStatesProps> & {
   Image: typeof IllustrationContainer
   Title: typeof EmptyStatesTitle
   Body: typeof EmptyStatesBody
-} = ({ size = 'xs', ...props }) => <StyledBox size={size} {...props} />
+} = ({ size = 'sm', ...props }) => <StyledBox size={size} {...props} />
 
 EmptyStates.displayName = 'EmptyStates'
 EmptyStates.Image = IllustrationContainer
