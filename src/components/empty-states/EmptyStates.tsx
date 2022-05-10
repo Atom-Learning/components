@@ -112,7 +112,7 @@ const IllustrationContainer: React.FC<IllustrationContainerProps> = (props) => {
   )
 }
 
-type EmptyStatesProps = React.ComponentProps<typeof StyledBox> & { css?: CSS }
+type EmptyStatesProps = React.ComponentProps<typeof StyledBox>
 
 export const EmptyStates: React.FC<EmptyStatesProps> & {
   Image: typeof IllustrationContainer
