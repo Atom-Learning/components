@@ -2,9 +2,15 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-fixGjY {
-    display: flex;
-    flex-direction: column;
+  .c-hOCLBl {
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: var(--fonts-body);
+    padding: var(--space-4);
+    height: var(--sizes-5);
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.3s;
   }
 
   .c-gZZKZD {
@@ -22,32 +28,18 @@ exports[`Tabs component renders 1`] = `
     scrollbar-width: none;
   }
 
-  .c-hOCLBl {
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: var(--fonts-body);
-    padding: var(--space-4);
-    height: var(--sizes-5);
-    -webkit-user-select: none;
-    user-select: none;
-    transition: 0.3s;
-  }
-
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
   }
+
+  .c-fixGjY {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media  {
-  .c-fixGjY-ixnjYu-theme-light {
-    color: var(--colors-primary);
-  }
-
-  .c-gZZKZD-eFavRf-theme-light {
-    border-bottom: 1px solid var(--colors-tonal300);
-  }
-
   .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
@@ -76,8 +68,16 @@ exports[`Tabs component renders 1`] = `
     cursor: not-allowed;
   }
 
+  .c-gZZKZD-eFavRf-theme-light {
+    border-bottom: 1px solid var(--colors-tonal300);
+  }
+
   .c-cWMaKf-fwFiEo-theme-light {
     color: var(--colors-textForeground);
+  }
+
+  .c-fixGjY-ixnjYu-theme-light {
+    color: var(--colors-primary);
   }
 }
 
@@ -149,9 +149,15 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-fixGjY {
-    display: flex;
-    flex-direction: column;
+  .c-hOCLBl {
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: var(--fonts-body);
+    padding: var(--space-4);
+    height: var(--sizes-5);
+    -webkit-user-select: none;
+    user-select: none;
+    transition: 0.3s;
   }
 
   .c-gZZKZD {
@@ -169,29 +175,18 @@ exports[`Tabs component renders mobile view 1`] = `
     scrollbar-width: none;
   }
 
-  .c-hOCLBl {
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: var(--fonts-body);
-    padding: var(--space-4);
-    height: var(--sizes-5);
-    -webkit-user-select: none;
-    user-select: none;
-    transition: 0.3s;
-  }
-
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
   }
 
-  .c-dhzjXW {
+  .c-fixGjY {
     display: flex;
+    flex-direction: column;
   }
 
-  .c-fDwKcF {
-    position: absolute;
-    transition: all 125ms;
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-fDzwZw {
@@ -217,17 +212,14 @@ exports[`Tabs component renders mobile view 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-fDwKcF {
+    position: absolute;
+    transition: all 125ms;
+  }
 }
 
 @media  {
-  .c-fixGjY-ixnjYu-theme-light {
-    color: var(--colors-primary);
-  }
-
-  .c-gZZKZD-eFavRf-theme-light {
-    border-bottom: 1px solid var(--colors-tonal300);
-  }
-
   .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
@@ -256,18 +248,16 @@ exports[`Tabs component renders mobile view 1`] = `
     cursor: not-allowed;
   }
 
+  .c-gZZKZD-eFavRf-theme-light {
+    border-bottom: 1px solid var(--colors-tonal300);
+  }
+
   .c-cWMaKf-fwFiEo-theme-light {
     color: var(--colors-textForeground);
   }
 
-  .c-fDwKcF-hVkDAC-theme-light {
-    background: rgba(255, 255, 255, 0.8) !important;
-  }
-
-  .c-fDwKcF-ejYaUA-visible-false {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  .c-fixGjY-ixnjYu-theme-light {
+    color: var(--colors-primary);
   }
 
   .c-fDzwZw-kMhpXP-size-xl {
@@ -279,6 +269,16 @@ exports[`Tabs component renders mobile view 1`] = `
     height: var(--sizes-3);
     width: var(--sizes-3);
     stroke-width: 2;
+  }
+
+  .c-fDwKcF-hVkDAC-theme-light {
+    background: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .c-fDwKcF-ejYaUA-visible-false {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 
@@ -308,13 +308,13 @@ exports[`Tabs component renders mobile view 1`] = `
     position: relative;
   }
 
-  .c-fDwKcF-icezigA-css {
-    left: 0;
-  }
-
   .c-dbrbZt-ihFPSGE-css {
     height: 20px;
     width: 20px;
+  }
+
+  .c-fDwKcF-icezigA-css {
+    left: 0;
   }
 
   .c-fDwKcF-iczsSGP-css {
