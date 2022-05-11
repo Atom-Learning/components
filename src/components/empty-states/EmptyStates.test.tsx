@@ -26,7 +26,7 @@ describe('EmptyStates component', () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('renders title and body correctly', async () => {
+  it('renders title and body correctly ', async () => {
     render(<SimpleExample />)
     expect(screen.getByText('No users found!')).toBeVisible()
     expect(
