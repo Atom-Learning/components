@@ -1,14 +1,14 @@
 import * as React from 'react'
 
-import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
-import { EmptyStatesBody } from './EmptyStatesBody'
-import { EmptyStatesTitle } from './EmptyStatesTitle'
+import { EmptyStateBody } from './EmptyStateBody'
+import { EmptyStateImage } from './EmptyStateImage'
+import { EmptyStateTitle } from './EmptyStateTitle'
 
-const StyledBox = styled(Flex, {
+const EmptyStateContainer = styled(Flex, {
   flexDirection: 'column',
   alignItems: 'center',
   variants: {
@@ -19,13 +19,12 @@ const StyledBox = styled(Flex, {
           height: '32px',
           mb: '$4'
         },
-        [`& ${EmptyStatesTitle}`]: {
+        [`& ${EmptyStateTitle}`]: {
           fontSize: '$md',
           fontWeight: '600',
           mb: '$3'
         },
-        [`& ${EmptyStatesBody}`]: {
-          color: '$tonal400',
+        [`& ${EmptyStateBody}`]: {
           fontSize: '$sm',
           fontWeight: '400',
           mb: '$4'
@@ -33,17 +32,15 @@ const StyledBox = styled(Flex, {
       },
       sm: {
         [`& ${Image}`]: {
-          width: '84px',
-          height: '48px',
+          size: '84px',
           mb: '$4'
         },
-        [`& ${EmptyStatesTitle}`]: {
+        [`& ${EmptyStateTitle}`]: {
           fontSize: '$md',
           fontWeight: '600',
           mb: '$3'
         },
-        [`& ${EmptyStatesBody}`]: {
-          color: '$tonal400',
+        [`& ${EmptyStateBody}`]: {
           fontSize: '$sm',
           fontWeight: '400',
           mb: '$4'
@@ -55,14 +52,13 @@ const StyledBox = styled(Flex, {
           height: '72px',
           mb: '$4'
         },
-        [`& ${EmptyStatesTitle}`]: {
-          fontSize: '16px',
+        [`& ${EmptyStateTitle}`]: {
+          fontSize: '$md',
           fontWeight: '600',
           mb: '$3'
         },
-        [`& ${EmptyStatesBody}`]: {
-          color: '$tonal400',
-          fontSize: '14px',
+        [`& ${EmptyStateBody}`]: {
+          fontSize: '$sm',
           fontWeight: '400',
           mb: '$4'
         }
@@ -73,13 +69,12 @@ const StyledBox = styled(Flex, {
           height: '142px',
           mb: '$5'
         },
-        [`& ${EmptyStatesTitle}`]: {
+        [`& ${EmptyStateTitle}`]: {
           fontSize: '$lg',
           fontWeight: '600',
           mb: '$4'
         },
-        [`& ${EmptyStatesBody}`]: {
-          color: '$tonal400',
+        [`& ${EmptyStateBody}`]: {
           fontSize: '$md',
           fontWeight: '400',
           mb: '$5'
@@ -91,13 +86,12 @@ const StyledBox = styled(Flex, {
           height: '213px',
           mb: '$5'
         },
-        [`& ${EmptyStatesTitle}`]: {
+        [`& ${EmptyStateTitle}`]: {
           fontSize: '$lg',
           fontWeight: '600',
           mb: '$4'
         },
-        [`& ${EmptyStatesBody}`]: {
-          color: '$tonal400',
+        [`& ${EmptyStateBody}`]: {
           fontSize: '$md',
           fontWeight: '400',
           mb: '$5'
@@ -107,25 +101,17 @@ const StyledBox = styled(Flex, {
   }
 })
 
-type IllustrationContainerProps = React.ComponentProps<typeof Image>
+type EmptyStateProps = React.ComponentProps<typeof EmptyStateContainer>
 
-const IllustrationContainer: React.FC<IllustrationContainerProps> = (props) => {
-  return (
-    <Box>
-      <Image {...props} />
-    </Box>
-  )
-}
+export const EmptyState: React.FC<EmptyStateProps> & {
+  Image: typeof EmptyStateImage
+  Title: typeof EmptyStateTitle
+  Body: typeof EmptyStateBody
+} = ({ size = 'sm', ...props }) => (
+  <EmptyStateContainer size={size} {...props} />
+)
 
-type EmptyStatesProps = React.ComponentProps<typeof StyledBox>
-
-export const EmptyStates: React.FC<EmptyStatesProps> & {
-  Image: typeof IllustrationContainer
-  Title: typeof EmptyStatesTitle
-  Body: typeof EmptyStatesBody
-} = ({ size = 'sm', ...props }) => <StyledBox size={size} {...props} />
-
-EmptyStates.displayName = 'EmptyStates'
-EmptyStates.Image = IllustrationContainer
-EmptyStates.Title = EmptyStatesTitle
-EmptyStates.Body = EmptyStatesBody
+EmptyState.displayName = 'EmptyState'
+EmptyState.Image = EmptyStateImage
+EmptyState.Title = EmptyStateTitle
+EmptyState.Body = EmptyStateBody

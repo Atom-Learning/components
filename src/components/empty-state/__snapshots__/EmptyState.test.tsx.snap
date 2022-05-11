@@ -1,0 +1,887 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState component renders a size lg component 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-ldsiYK {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+    size: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+    height: 84px;
+    width: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-eWgOGC {
+    width: 190px;
+    height: 142px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-eWgOGC {
+    width: 190px;
+    height: 142px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kmANXN c-kmANXN-fAUMav-size-lg"
+  >
+    <h2
+      class="c-ftwtsZ"
+    >
+      No users found!
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+    >
+      You need to add some users before you can use this feature
+    </p>
+  </div>
+</div>
+`;
+
+exports[`EmptyState component renders a size md component 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-ldsiYK {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+    size: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+    height: 84px;
+    width: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kmANXN c-kmANXN-cArXFC-size-md"
+  >
+    <h2
+      class="c-ftwtsZ"
+    >
+      No users found!
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+    >
+      You need to add some users before you can use this feature
+    </p>
+  </div>
+</div>
+`;
+
+exports[`EmptyState component renders a size sm component 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-ldsiYK {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+    size: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+    height: 84px;
+    width: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kmANXN c-kmANXN-gFbYTI-size-sm"
+  >
+    <h2
+      class="c-ftwtsZ"
+    >
+      No users found!
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+    >
+      You need to add some users before you can use this feature
+    </p>
+  </div>
+</div>
+`;
+
+exports[`EmptyState component renders a size xl component 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-ldsiYK {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+    size: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+    height: 84px;
+    width: 84px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-eWgOGC {
+    width: 190px;
+    height: 142px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg height .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-eWgOGC {
+    width: 190px;
+    height: 142px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fAUMav-size-lg width .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl height .c-eWgOGC {
+    width: 285px;
+    height: 213px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl height .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl height .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl width .c-eWgOGC {
+    width: 285px;
+    height: 213px;
+    margin-bottom: var(--space-5);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl width .c-ftwtsZ {
+    font-size: var(--fontSizes-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-fyyrJP-size-xl width .c-ldsiYK {
+    font-size: var(--fontSizes-md);
+    font-weight: 400;
+    margin-bottom: var(--space-5);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kmANXN c-kmANXN-fyyrJP-size-xl"
+  >
+    <h2
+      class="c-ftwtsZ"
+    >
+      No users found!
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+    >
+      You need to add some users before you can use this feature
+    </p>
+  </div>
+</div>
+`;
+
+exports[`EmptyState component renders a size xs component 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kmANXN {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-ftwtsZ {
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+  }
+
+  .c-ldsiYK {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+    width: 56px;
+    height: 32px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kmANXN c-kmANXN-bnJakI-size-xs"
+  >
+    <h2
+      class="c-ftwtsZ"
+    >
+      No users found!
+    </h2>
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+    >
+      You need to add some users before you can use this feature
+    </p>
+  </div>
+</div>
+`;
