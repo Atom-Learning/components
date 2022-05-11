@@ -11,21 +11,6 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin: 0;
   }
 
-  .c-cgoenp {
-    align-items: center;
-    background: white;
-    border: 1px solid var(--colors-tonal200);
-    border-radius: var(--radii-0);
-    cursor: pointer;
-    display: flex;
-    text-align: left;
-  }
-
-  .c-cgoenp[data-state="checked"] {
-    outline: 2px solid var(--colors-primary);
-    outline-offset: -2px;
-  }
-
   .c-jCXneY {
     align-items: center;
     -webkit-appearance: none;
@@ -54,6 +39,21 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     height: 6px;
     width: 6px;
   }
+
+  .c-cgoenp {
+    align-items: center;
+    background: white;
+    border: 1px solid var(--colors-tonal200);
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+  }
+
+  .c-cgoenp[data-state="checked"] {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: -2px;
+  }
 }
 
 @media  {
@@ -76,6 +76,10 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin-left: var(--space-3);
   }
 
+  .c-jCXneY-llEebI-align-left {
+    margin-right: var(--space-4);
+  }
+
   .c-cgoenp-ejCoEP-align-left {
     flex-direction: row;
   }
@@ -89,10 +93,6 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
 
   .c-cgoenp-djDtlJ-isFullWidth-false {
     width: max-content;
-  }
-
-  .c-jCXneY-llEebI-align-left {
-    margin-right: var(--space-4);
   }
 }
 

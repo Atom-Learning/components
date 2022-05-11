@@ -2,28 +2,29 @@
 
 exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 @media  {
-  .c-gJNIBC {
-    background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    overflow-y: auto;
-    z-index: 2147483646;
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
   }
 
-@media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="open"] {
-      animation: k-eyOShd 250ms ease-out;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="closed"] {
-      animation: k-bHbNKp 550ms ease-out;
-    }
-}
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 
   .c-cEjFpV {
     background: white;
@@ -55,36 +56,31 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     }
 }
 
-  .c-fDzwZw {
-    align-items: center;
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-    border: unset;
-    border-radius: var(--radii-0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: unset;
-    transition: all 100ms ease-out;
+  .c-gJNIBC {
+    background-color: var(--colors-alpha600);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 2147483646;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
+@media (prefers-reduced-motion: no-preference) {
+    .c-gJNIBC[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-gJNIBC[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
 }
 
 @media  {
-  .c-cEjFpV-lgqbzh-size-sm {
-    width: 480px;
-  }
-
   .c-fDzwZw-PrXKS-size-lg {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -94,6 +90,10 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 2;
+  }
+
+  .c-cEjFpV-lgqbzh-size-sm {
+    width: 480px;
   }
 }
 
@@ -177,28 +177,29 @@ exports[`Dialog component renders the trigger with the popover hidden by default
 
 exports[`Dialog component without close button renders 1`] = `
 @media  {
-  .c-gJNIBC {
-    background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    overflow-y: auto;
-    z-index: 2147483646;
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
   }
 
-@media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="open"] {
-      animation: k-eyOShd 250ms ease-out;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="closed"] {
-      animation: k-bHbNKp 550ms ease-out;
-    }
-}
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
 
   .c-cEjFpV {
     background: white;
@@ -230,36 +231,31 @@ exports[`Dialog component without close button renders 1`] = `
     }
 }
 
-  .c-fDzwZw {
-    align-items: center;
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-    border: unset;
-    border-radius: var(--radii-0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: unset;
-    transition: all 100ms ease-out;
+  .c-gJNIBC {
+    background-color: var(--colors-alpha600);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 2147483646;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
+@media (prefers-reduced-motion: no-preference) {
+    .c-gJNIBC[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-gJNIBC[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
 }
 
 @media  {
-  .c-cEjFpV-lgqbzh-size-sm {
-    width: 480px;
-  }
-
   .c-fDzwZw-PrXKS-size-lg {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -269,6 +265,10 @@ exports[`Dialog component without close button renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 2;
+  }
+
+  .c-cEjFpV-lgqbzh-size-sm {
+    width: 480px;
   }
 }
 

@@ -141,7 +141,7 @@
     "@radix-ui/react-tooltip": "0.1.1",
     "@radix-ui/react-visually-hidden": "0.1.1",
     "@reach/combobox": "^0.16.1",
-    "@stitches/react": "^1.2.5",
+    "@stitches/react": "^1.2.8",
     "@types/react": "^17.0.30",
     "color2k": "^2.0.0",
     "dayjs": "^1.10.7",
