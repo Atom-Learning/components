@@ -12,9 +12,12 @@ exports[`RadioButtonField component renders 1`] = `
     margin: 0;
   }
 
-  .c-iSwBqf {
-    display: flex;
-    flex-wrap: wrap;
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
   }
 
   .c-hXfYPB {
@@ -51,12 +54,9 @@ exports[`RadioButtonField component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-jHqXTB {
-    height: 6px;
-    width: 6px;
-    border-radius: var(--radii-round);
-    background-color: currentcolor;
-    position: absolute;
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -83,14 +83,14 @@ exports[`RadioButtonField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-iSwBqf-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
   .c-cVSpVL-bsbHzT-type-inline {
     display: flex;
     font-weight: 400;
     max-width: max-content;
+  }
+
+  .c-iSwBqf-iTKOFX-direction-column {
+    flex-direction: column;
   }
 }
 

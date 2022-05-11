@@ -8,6 +8,12 @@ exports[`CheckboxField component renders 1`] = `
     margin: 0;
   }
 
+  .c-eOfRZm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .c-emNREM {
     -webkit-appearance: none;
     appearance: none;
@@ -45,12 +51,6 @@ exports[`CheckboxField component renders 1`] = `
     border-color: var(--colors-tonal400);
     cursor: not-allowed;
     color: var(--colors-tonal400);
-  }
-
-  .c-eOfRZm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
