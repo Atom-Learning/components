@@ -34,7 +34,6 @@ const gap = Object.keys(theme.space).reduce(
 
 const StyledStack = styled('div', {
   display: 'flex',
-  flexWrap: 'wrap',
   '& > *': {
     m: 0
   },
@@ -42,20 +41,28 @@ const StyledStack = styled('div', {
     direction: {
       row: {
         flexDirection: 'row',
-        alignItems: 'center'
       },
       'row-reverse': {
         flexDirection: 'row-reverse',
-        alignItems: 'center'
       },
       column: {
         flexDirection: 'column'
       }
     },
+    wrap: {
+      true: {
+        flexWrap: 'wrap',
+      }
+    },
     justify: {
       start: { justifyContent: 'flex-start' },
-      end: { justifyContent: 'flex-end' },
-      center: { justifyContent: 'center' }
+      center: { justifyContent: 'center' },
+      end: { justifyContent: 'flex-end' }
+    },
+    align: {
+      start: { alignItems: 'flex-start' },
+      center: { alignItems: 'center' },
+      end: { alignItems: 'flex-end' },
     },
     gap
   }
@@ -65,16 +72,20 @@ type StackProps = React.ComponentProps<typeof StyledStack> & { css?: CSS }
 
 export const Stack: React.FC<StackProps> = ({
   css,
-  gap = 2,
+  gap,
   direction = 'row',
+  wrap = true,
   justify = 'start',
+  align = 'center',
   ...remainingProps
 }) => (
   <CSSWrapper css={css}>
     <StyledStack
       direction={direction}
       gap={gap}
+      wrap={wrap}
       justify={justify}
+      align={align}
       {...remainingProps}
     />
   </CSSWrapper>
