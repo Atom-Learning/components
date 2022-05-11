@@ -13,13 +13,20 @@ exports[`EmptyStates component renders 1`] = `
 }
 
 @media  {
-  .c-kmANXN-hFCQod-size-sm .c-eWgOGC {
+  .c-kmANXN-eSveXA-size-sm .c-eWgOGC {
     width: 84px;
     height: 48px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-hFCQod-size-sm .c-ftwtsZ {
+  .c-kmANXN-eSveXA-size-sm .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-kmANXN-eSveXA-size-sm .c-cyRcZm {
+    color: var(--colors-tonal400);
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -28,7 +35,7 @@ exports[`EmptyStates component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-hFCQod-size-sm"
+    class="c-dhzjXW c-kmANXN c-kmANXN-eSveXA-size-sm"
   />
 </div>
 `;

@@ -25,6 +25,7 @@ const StyledBox = styled(Flex, {
           mb: '$3'
         },
         [`& ${EmptyStatesBody}`]: {
+          color: '$tonal400',
           fontSize: '$sm',
           fontWeight: '400',
           mb: '$4'
@@ -42,6 +43,7 @@ const StyledBox = styled(Flex, {
           mb: '$3'
         },
         [`& ${EmptyStatesBody}`]: {
+          color: '$tonal400',
           fontSize: '$sm',
           fontWeight: '400',
           mb: '$4'
@@ -59,6 +61,7 @@ const StyledBox = styled(Flex, {
           mb: '$3'
         },
         [`& ${EmptyStatesBody}`]: {
+          color: '$tonal400',
           fontSize: '14px',
           fontWeight: '400',
           mb: '$4'
@@ -76,6 +79,7 @@ const StyledBox = styled(Flex, {
           mb: '$4'
         },
         [`& ${EmptyStatesBody}`]: {
+          color: '$tonal400',
           fontSize: '$md',
           fontWeight: '400',
           mb: '$5'
@@ -93,6 +97,7 @@ const StyledBox = styled(Flex, {
           mb: '$4'
         },
         [`& ${EmptyStatesBody}`]: {
+          color: '$tonal400',
           fontSize: '$md',
           fontWeight: '400',
           mb: '$5'
