@@ -1,5 +1,5 @@
 import directive from 'mdast-util-directive'
-import fromMarkdown from 'mdast-util-from-markdown'
+import { fromMarkdown } from 'mdast-util-from-markdown'
 import syntax from 'micromark-extension-directive'
 import * as React from 'react'
 
