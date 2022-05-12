@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleGroup renders 1`] = `
+@media  {
+  .c-flWDnm {
+    width: fit-content;
+  }
+
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-xmjwP {
+    background: white;
+    color: var(--colors-tonal400);
+    border: 1px solid var(--colors-tonal200);
+    cursor: pointer;
+    outline: none !important;
+  }
+
+  .c-xmjwP::before {
+    background: var(--colors-tonal200);
+  }
+
+  .c-xmjwP:not([disabled]):hover::before,
+  .c-xmjwP:not([disabled]):focus-visible::before,
+  .c-xmjwP:not([disabled])[data-state="on"]::before {
+    background: none;
+  }
+
+  .c-xmjwP:not([disabled]):hover {
+    border-color: currentColor !important;
+    color: var(--colors-primaryMid);
+  }
+
+  .c-xmjwP:not([disabled]):focus-visible[data-state="off"] {
+    border-color: var(--colors-tonal200) !important;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-xmjwP:not([disabled]):focus-visible[data-state="on"] {
+    box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-xmjwP[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-xmjwP[data-state="on"] {
+    color: var(--colors-primary);
+    border-color: currentColor !important;
+    box-shadow: inset currentColor 0px 0px 0px 1px;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-gxXeKS {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 1;
+    padding-top: var(--space-1);
+    padding-bottom: var(--space-1);
+  }
+
+  .c-gxXeKS .c-dbrbZt {
+    flex-shrink: 0;
+  }
+}
+
+@media  {
+  .c-flWDnm-naIct-hasGap-true .c-xmjwP {
+    border-radius: var(--radii-0);
+  }
+
+  .c-flWDnm-eMcgPC-orientation-vertical {
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .c-jgdwfn-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+
+  .c-gxXeKS-bQYzYh-size-sm {
+    font-size: var(--fontSizes-sm);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    min-height: 32px;
+  }
+
+  .c-gxXeKS-bQYzYh-size-sm > *:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
+  }
+}
+
+<div>
+  <div
+    class="c-flWDnm c-flWDnm-naIct-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <div
+      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+    >
+      <button
+        aria-pressed="true"
+        class="c-xmjwP"
+        data-disabled=""
+        data-radix-collection-item=""
+        data-state="on"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        A
+      </button>
+      <button
+        aria-pressed="false"
+        class="c-xmjwP"
+        data-radix-collection-item=""
+        data-state="off"
+        tabindex="-1"
+        type="button"
+      >
+        B
+      </button>
+      <button
+        aria-pressed="false"
+        class="c-xmjwP"
+        data-radix-collection-item=""
+        data-state="off"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 4v13"
+          />
+          <polyline
+            points="7 8 12 3 17 8"
+          />
+          <path
+            d="M20 21H4"
+          />
+        </svg>
+        Item with icon
+      </button>
+      <button
+        aria-pressed="true"
+        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        data-disabled=""
+        data-radix-collection-item=""
+        data-state="on"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        A
+      </button>
+      <button
+        aria-pressed="false"
+        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        data-radix-collection-item=""
+        data-state="off"
+        tabindex="-1"
+        type="button"
+      >
+        B
+      </button>
+      <button
+        aria-pressed="false"
+        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        data-radix-collection-item=""
+        data-state="off"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-eAiySG-size-sm"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 4v13"
+          />
+          <polyline
+            points="7 8 12 3 17 8"
+          />
+          <path
+            d="M20 21H4"
+          />
+        </svg>
+        <span>
+          Button with icon
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
