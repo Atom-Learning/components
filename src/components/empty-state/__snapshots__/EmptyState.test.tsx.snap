@@ -6,9 +6,10 @@ exports[`EmptyState component renders a size lg component 1`] = `
     display: flex;
   }
 
-  .c-kmANXN {
+  .c-bmXGTI {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-ftwtsZ {
@@ -34,37 +35,37 @@ exports[`EmptyState component renders a size lg component 1`] = `
 }
 
 @media  {
-  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs height .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs width .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -87,108 +88,108 @@ exports[`EmptyState component renders a size lg component 1`] = `
     display: table;
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm height .c-eWgOGC {
     size: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm width .c-eWgOGC {
     height: 84px;
     width: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md height .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md width .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-eWgOGC {
+  .c-bmXGTI-fAUMav-size-lg height .c-eWgOGC {
     width: 190px;
     height: 142px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-ftwtsZ {
+  .c-bmXGTI-fAUMav-size-lg height .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-ldsiYK {
+  .c-bmXGTI-fAUMav-size-lg height .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-eWgOGC {
+  .c-bmXGTI-fAUMav-size-lg width .c-eWgOGC {
     width: 190px;
     height: 142px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-ftwtsZ {
+  .c-bmXGTI-fAUMav-size-lg width .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-ldsiYK {
+  .c-bmXGTI-fAUMav-size-lg width .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
@@ -197,7 +198,7 @@ exports[`EmptyState component renders a size lg component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-fAUMav-size-lg"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-fAUMav-size-lg"
   >
     <h2
       class="c-ftwtsZ"
@@ -219,9 +220,10 @@ exports[`EmptyState component renders a size md component 1`] = `
     display: flex;
   }
 
-  .c-kmANXN {
+  .c-bmXGTI {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-ftwtsZ {
@@ -247,37 +249,37 @@ exports[`EmptyState component renders a size md component 1`] = `
 }
 
 @media  {
-  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs height .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs width .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -300,72 +302,72 @@ exports[`EmptyState component renders a size md component 1`] = `
     display: table;
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm height .c-eWgOGC {
     size: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm width .c-eWgOGC {
     height: 84px;
     width: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md height .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md width .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -374,7 +376,7 @@ exports[`EmptyState component renders a size md component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-cArXFC-size-md"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-cArXFC-size-md"
   >
     <h2
       class="c-ftwtsZ"
@@ -396,9 +398,10 @@ exports[`EmptyState component renders a size sm component 1`] = `
     display: flex;
   }
 
-  .c-kmANXN {
+  .c-bmXGTI {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-ftwtsZ {
@@ -424,37 +427,37 @@ exports[`EmptyState component renders a size sm component 1`] = `
 }
 
 @media  {
-  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs height .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs width .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -477,36 +480,36 @@ exports[`EmptyState component renders a size sm component 1`] = `
     display: table;
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm height .c-eWgOGC {
     size: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm width .c-eWgOGC {
     height: 84px;
     width: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -515,7 +518,7 @@ exports[`EmptyState component renders a size sm component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-gFbYTI-size-sm"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-gFbYTI-size-sm"
   >
     <h2
       class="c-ftwtsZ"
@@ -537,9 +540,10 @@ exports[`EmptyState component renders a size xl component 1`] = `
     display: flex;
   }
 
-  .c-kmANXN {
+  .c-bmXGTI {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-ftwtsZ {
@@ -565,37 +569,37 @@ exports[`EmptyState component renders a size xl component 1`] = `
 }
 
 @media  {
-  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs height .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs width .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -618,144 +622,144 @@ exports[`EmptyState component renders a size xl component 1`] = `
     display: table;
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm height .c-eWgOGC {
     size: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm height .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-eWgOGC {
+  .c-bmXGTI-gFbYTI-size-sm width .c-eWgOGC {
     height: 84px;
     width: 84px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ftwtsZ {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-gFbYTI-size-sm width .c-ldsiYK {
+  .c-bmXGTI-gFbYTI-size-sm width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md height .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md height .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-eWgOGC {
+  .c-bmXGTI-cArXFC-size-md width .c-eWgOGC {
     width: 126px;
     height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ftwtsZ {
+  .c-bmXGTI-cArXFC-size-md width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-cArXFC-size-md width .c-ldsiYK {
+  .c-bmXGTI-cArXFC-size-md width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-eWgOGC {
+  .c-bmXGTI-fAUMav-size-lg height .c-eWgOGC {
     width: 190px;
     height: 142px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-ftwtsZ {
+  .c-bmXGTI-fAUMav-size-lg height .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg height .c-ldsiYK {
+  .c-bmXGTI-fAUMav-size-lg height .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-eWgOGC {
+  .c-bmXGTI-fAUMav-size-lg width .c-eWgOGC {
     width: 190px;
     height: 142px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-ftwtsZ {
+  .c-bmXGTI-fAUMav-size-lg width .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fAUMav-size-lg width .c-ldsiYK {
+  .c-bmXGTI-fAUMav-size-lg width .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fyyrJP-size-xl height .c-eWgOGC {
+  .c-bmXGTI-fyyrJP-size-xl height .c-eWgOGC {
     width: 285px;
     height: 213px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fyyrJP-size-xl height .c-ftwtsZ {
+  .c-bmXGTI-fyyrJP-size-xl height .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fyyrJP-size-xl height .c-ldsiYK {
+  .c-bmXGTI-fyyrJP-size-xl height .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fyyrJP-size-xl width .c-eWgOGC {
+  .c-bmXGTI-fyyrJP-size-xl width .c-eWgOGC {
     width: 285px;
     height: 213px;
     margin-bottom: var(--space-5);
   }
 
-  .c-kmANXN-fyyrJP-size-xl width .c-ftwtsZ {
+  .c-bmXGTI-fyyrJP-size-xl width .c-ftwtsZ {
     font-size: var(--fontSizes-lg);
     font-weight: 600;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-fyyrJP-size-xl width .c-ldsiYK {
+  .c-bmXGTI-fyyrJP-size-xl width .c-ldsiYK {
     font-size: var(--fontSizes-md);
     font-weight: 400;
     margin-bottom: var(--space-5);
@@ -764,7 +768,7 @@ exports[`EmptyState component renders a size xl component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-fyyrJP-size-xl"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-fyyrJP-size-xl"
   >
     <h2
       class="c-ftwtsZ"
@@ -786,9 +790,10 @@ exports[`EmptyState component renders a size xs component 1`] = `
     display: flex;
   }
 
-  .c-kmANXN {
+  .c-bmXGTI {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-ftwtsZ {
@@ -814,37 +819,37 @@ exports[`EmptyState component renders a size xs component 1`] = `
 }
 
 @media  {
-  .c-kmANXN-bnJakI-size-xs height .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs height .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs height .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs height .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-eWgOGC {
+  .c-bmXGTI-bnJakI-size-xs width .c-eWgOGC {
     width: 56px;
     height: 32px;
     margin-bottom: var(--space-4);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ftwtsZ {
+  .c-bmXGTI-bnJakI-size-xs width .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-kmANXN-bnJakI-size-xs width .c-ldsiYK {
+  .c-bmXGTI-bnJakI-size-xs width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -870,7 +875,7 @@ exports[`EmptyState component renders a size xs component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kmANXN c-kmANXN-bnJakI-size-xs"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-bnJakI-size-xs"
   >
     <h2
       class="c-ftwtsZ"

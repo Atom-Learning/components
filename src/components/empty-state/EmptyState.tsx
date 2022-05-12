@@ -11,6 +11,7 @@ import { EmptyStateTitle } from './EmptyStateTitle'
 const EmptyStateContainer = styled(Flex, {
   flexDirection: 'column',
   alignItems: 'center',
+  textAlign: 'center',
   variants: {
     size: {
       xs: {
