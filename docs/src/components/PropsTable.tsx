@@ -1,14 +1,5 @@
-import {
-  Box,
-  CSS,
-  Flex,
-  Heading,
-  Icon,
-  Link,
-  Text,
-  Tooltip
-} from '@atom-learning/components'
-import docgen from '@atom-learning/components/dist/docgen.json'
+import { Box, CSS, Flex, Heading, Icon, Link, Text, Tooltip } from '@components'
+import docgen from '@components/docgen.json'
 import { Ok } from '@atom-learning/icons'
 import { pascalCase } from 'pascal-case'
 import * as React from 'react'

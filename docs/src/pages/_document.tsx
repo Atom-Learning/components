@@ -1,4 +1,4 @@
-import { getCssText } from '@atom-learning/components'
+import { getCssText } from '@components'
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document'
 import * as React from 'react'
 

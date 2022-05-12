@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Text } from '@atom-learning/components'
+import { Box, Divider, Flex, Text } from '@components'
 import * as React from 'react'
 
 type GroupProps = {

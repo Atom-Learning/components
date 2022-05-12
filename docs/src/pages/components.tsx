@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Text } from '@atom-learning/components'
+import { Box, Flex, Heading, Text } from '@components'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import { MdxRemote } from 'next-mdx-remote/types'

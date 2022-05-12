@@ -1,4 +1,4 @@
-import pkg from '@atom-learning/components/package.json'
+import pkg from '@pkgJson'
 import fs from 'fs'
 import glob from 'glob'
 import matter from 'gray-matter'

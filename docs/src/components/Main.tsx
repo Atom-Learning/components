@@ -1,4 +1,4 @@
-import { Box } from '@atom-learning/components'
+import { Box } from '@components'
 import * as React from 'react'
 
 export const Container: React.FC<{ css?: any }> = ({ css, children }) => (

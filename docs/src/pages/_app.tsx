@@ -1,4 +1,6 @@
-import { globalCss } from '@atom-learning/components'
+// import { globalCss } from '@components'
+import { globalCss } from '@components'
+// import { globalCss } from '../../../dist/index'
 import { IdProvider } from '@radix-ui/react-id'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'

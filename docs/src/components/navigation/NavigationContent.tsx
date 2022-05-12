@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Text } from '@atom-learning/components'
+import { Flex, Icon, Link, Text } from '@components'
 import { ArrowRight } from '@atom-learning/icons'
 import { default as NextLink } from 'next/link'
 import { useRouter } from 'next/router'

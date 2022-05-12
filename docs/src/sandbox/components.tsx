@@ -44,7 +44,7 @@ import {
   useAlert,
   ValidationError,
   Video
-} from '@atom-learning/components'
+} from '@components'
 import {
   Add,
   ArrowLeft,
