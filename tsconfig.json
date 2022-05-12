@@ -10,13 +10,13 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["es6", "dom"],
     "types": ["node", "jest"],
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "skipLibCheck": true,
     "paths": {
       "~/*": ["./*"]
     },
     "declaration": true
   },
-  "include": ["./src/*", "types/global.d.ts", "../src/*"],
+  "include": ["./src/*", "types/global.d.ts"],
   "exclude": ["./src/**/*.test.*"]
 }
