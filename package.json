@@ -150,7 +150,7 @@
     "dlv": "^1.1.3",
     "invariant": "^2.2.4",
     "mdast-util-directive": "1.0.1",
-    "mdast-util-from-markdown": "1.2.0",
+    "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
     "pure-react-carousel": "^1.27.6",
     "react-hook-form": "^6.15.4",
