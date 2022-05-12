@@ -15,6 +15,7 @@ const EmptyStateContainer = styled(Flex, {
   variants: {
     size: {
       xs: {
+        p: '$2',
         [`& ${Image}`]: {
           width: '56px',
           height: '32px',
@@ -32,6 +33,7 @@ const EmptyStateContainer = styled(Flex, {
         }
       },
       sm: {
+        p: '$3',
         [`& ${Image}`]: {
           size: '84px',
           mb: '$4'
@@ -48,6 +50,7 @@ const EmptyStateContainer = styled(Flex, {
         }
       },
       md: {
+        p: '$4',
         [`& ${Image}`]: {
           width: '126px',
           height: '72px',
@@ -65,6 +68,7 @@ const EmptyStateContainer = styled(Flex, {
         }
       },
       lg: {
+        p: '$5',
         [`& ${Image}`]: {
           width: '190px',
           height: '142px',
@@ -82,6 +86,7 @@ const EmptyStateContainer = styled(Flex, {
         }
       },
       xl: {
+        p: '$6',
         [`& ${Image}`]: {
           width: '285px',
           height: '213px',
