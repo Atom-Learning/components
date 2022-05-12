@@ -33,14 +33,13 @@ export const StyledItem = styled(ToggleGroup.Item, {
       color: '$primaryMid'
     },
     '&:focus-visible': {
+      '&[data-state]': focusIndicatorBlock(),
       '&[data-state="off"]': {
-        borderColor: '$tonal200 !important',
-        ...focusIndicatorBlock()
+        borderColor: '$tonal200 !important'
       },
       '&[data-state="on"]': {
-        boxShadow: `inset currentColor 0px 0px 0px 1px, ${
-          focusIndicatorBlock().boxShadow
-        }`
+        boxShadow: `inset currentColor 0px 0px 0px 1px, ${focusIndicatorBlock().boxShadow
+          }`
       }
     }
   },
