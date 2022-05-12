@@ -14,7 +14,7 @@ exports[`ToggleGroup renders 1`] = `
     margin: 0;
   }
 
-  .c-xmjwP {
+  .c-cUSnhR {
     background: white;
     color: var(--colors-tonal400);
     border: 1px solid var(--colors-tonal200);
@@ -22,38 +22,41 @@ exports[`ToggleGroup renders 1`] = `
     outline: none !important;
   }
 
-  .c-xmjwP::before {
+  .c-cUSnhR::before {
     background: var(--colors-tonal200);
   }
 
-  .c-xmjwP:not([disabled]):hover::before,
-  .c-xmjwP:not([disabled]):focus-visible::before,
-  .c-xmjwP:not([disabled])[data-state="on"]::before {
+  .c-cUSnhR:not([disabled]):hover::before,
+  .c-cUSnhR:not([disabled]):focus-visible::before,
+  .c-cUSnhR:not([disabled])[data-state="on"]::before {
     background: none;
   }
 
-  .c-xmjwP:not([disabled]):hover {
+  .c-cUSnhR:not([disabled]):hover {
     border-color: currentColor !important;
     color: var(--colors-primaryMid);
   }
 
-  .c-xmjwP:not([disabled]):focus-visible[data-state="off"] {
-    border-color: var(--colors-tonal200) !important;
+  .c-cUSnhR:not([disabled]):focus-visible[data-state] {
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-xmjwP:not([disabled]):focus-visible[data-state="on"] {
+  .c-cUSnhR:not([disabled]):focus-visible[data-state="off"] {
+    border-color: var(--colors-tonal200) !important;
+  }
+
+  .c-cUSnhR:not([disabled]):focus-visible[data-state="on"] {
     box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-xmjwP[disabled] {
+  .c-cUSnhR[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-xmjwP[data-state="on"] {
+  .c-cUSnhR[data-state="on"] {
     color: var(--colors-primary);
     border-color: currentColor !important;
     box-shadow: inset currentColor 0px 0px 0px 1px;
@@ -85,7 +88,7 @@ exports[`ToggleGroup renders 1`] = `
 }
 
 @media  {
-  .c-flWDnm-naIct-hasGap-true .c-xmjwP {
+  .c-flWDnm-fcbSYk-hasGap-true .c-cUSnhR {
     border-radius: var(--radii-0);
   }
 
@@ -138,7 +141,7 @@ exports[`ToggleGroup renders 1`] = `
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-naIct-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
+    class="c-flWDnm c-flWDnm-fcbSYk-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
     dir="ltr"
     role="group"
     style="outline: none;"
@@ -149,7 +152,7 @@ exports[`ToggleGroup renders 1`] = `
     >
       <button
         aria-pressed="true"
-        class="c-xmjwP"
+        class="c-cUSnhR"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -161,7 +164,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-xmjwP"
+        class="c-cUSnhR"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -171,7 +174,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-xmjwP"
+        class="c-cUSnhR"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -197,7 +200,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -209,7 +212,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -219,7 +222,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-xmjwP c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"

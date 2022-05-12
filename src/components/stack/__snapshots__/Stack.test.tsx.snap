@@ -2,40 +2,36 @@
 
 exports[`Stack component renders 1`] = `
 @media  {
-  .c-gjxWtu {
+  .c-jgdwfn {
     display: flex;
-    flex-wrap: wrap;
   }
 
-  .c-gjxWtu > * {
+  .c-jgdwfn > * {
     margin: 0;
   }
 }
 
 @media  {
-  .c-gjxWtu-cPPfON-direction-row {
+  .c-jgdwfn-ejCoEP-direction-row {
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-gjxWtu-awKDG-justify-start {
+  .c-jgdwfn-XefLA-wrap-true {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
     justify-content: flex-start;
   }
 
-  .c-gjxWtu-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-gjxWtu-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
   }
 }
 
 <div>
   <div
-    class="c-gjxWtu c-gjxWtu-cPPfON-direction-row c-gjxWtu-awKDG-justify-start c-gjxWtu-dPMagj-gap-2"
+    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-true c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center"
   />
 </div>
 `;
