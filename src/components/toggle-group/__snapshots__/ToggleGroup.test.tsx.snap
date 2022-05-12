@@ -14,7 +14,7 @@ exports[`ToggleGroup renders 1`] = `
     margin: 0;
   }
 
-  .c-cUSnhR {
+  .c-eYBlKX {
     background: white;
     color: var(--colors-tonal400);
     border: 1px solid var(--colors-tonal200);
@@ -22,41 +22,41 @@ exports[`ToggleGroup renders 1`] = `
     outline: none !important;
   }
 
-  .c-cUSnhR::before {
+  .c-eYBlKX::before {
     background: var(--colors-tonal200);
   }
 
-  .c-cUSnhR:not([disabled]):hover::before,
-  .c-cUSnhR:not([disabled]):focus-visible::before,
-  .c-cUSnhR:not([disabled])[data-state="on"]::before {
+  .c-eYBlKX:not([disabled]):hover::before,
+  .c-eYBlKX:not([disabled]):focus-visible::before,
+  .c-eYBlKX:not([disabled])[data-state="on"]::before {
     background: none;
   }
 
-  .c-cUSnhR:not([disabled]):hover {
+  .c-eYBlKX:not([disabled]):hover {
     border-color: currentColor !important;
     color: var(--colors-primaryMid);
   }
 
-  .c-cUSnhR:not([disabled]):focus-visible[data-state] {
+  .c-eYBlKX:not([disabled]):focus-visible {
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-cUSnhR:not([disabled]):focus-visible[data-state="off"] {
+  .c-eYBlKX:not([disabled]):focus-visible[data-state="off"] {
     border-color: var(--colors-tonal200) !important;
   }
 
-  .c-cUSnhR:not([disabled]):focus-visible[data-state="on"] {
+  .c-eYBlKX:not([disabled]):focus-visible[data-state="on"] {
     box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-cUSnhR[disabled] {
+  .c-eYBlKX[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cUSnhR[data-state="on"] {
+  .c-eYBlKX[data-state="on"] {
     color: var(--colors-primary);
     border-color: currentColor !important;
     box-shadow: inset currentColor 0px 0px 0px 1px;
@@ -88,7 +88,7 @@ exports[`ToggleGroup renders 1`] = `
 }
 
 @media  {
-  .c-flWDnm-fcbSYk-hasGap-true .c-cUSnhR {
+  .c-flWDnm-kbQVqs-hasGap-true .c-eYBlKX {
     border-radius: var(--radii-0);
   }
 
@@ -141,7 +141,7 @@ exports[`ToggleGroup renders 1`] = `
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-fcbSYk-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
+    class="c-flWDnm c-flWDnm-kbQVqs-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
     dir="ltr"
     role="group"
     style="outline: none;"
@@ -152,7 +152,7 @@ exports[`ToggleGroup renders 1`] = `
     >
       <button
         aria-pressed="true"
-        class="c-cUSnhR"
+        class="c-eYBlKX"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -164,7 +164,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-cUSnhR"
+        class="c-eYBlKX"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -174,7 +174,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-cUSnhR"
+        class="c-eYBlKX"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -200,7 +200,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -212,7 +212,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -222,7 +222,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-cUSnhR c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"

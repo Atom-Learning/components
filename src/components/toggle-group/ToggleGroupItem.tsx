@@ -33,7 +33,7 @@ export const StyledItem = styled(ToggleGroup.Item, {
       color: '$primaryMid'
     },
     '&:focus-visible': {
-      '&[data-state]': focusIndicatorBlock(),
+      ...focusIndicatorBlock(),
       '&[data-state="off"]': {
         borderColor: '$tonal200 !important'
       },
