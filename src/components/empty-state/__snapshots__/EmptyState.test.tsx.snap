@@ -35,23 +35,45 @@ exports[`EmptyState component renders a component 1`] = `
 }
 
 @media  {
-  .c-bmXGTI-cbjprQ-size-sm {
-    padding: var(--space-3);
+  .c-bmXGTI-daaINI-size-md height {
+    padding: var(--space-4);
   }
 
-  .c-bmXGTI-cbjprQ-size-sm .c-eWgOGC {
-    height: 84px;
-    width: 84px;
+  .c-bmXGTI-daaINI-size-md height .c-eWgOGC {
+    width: 126px;
+    height: 72px;
     margin-bottom: var(--space-4);
   }
 
-  .c-bmXGTI-cbjprQ-size-sm .c-ftwtsZ {
+  .c-bmXGTI-daaINI-size-md height .c-ftwtsZ {
     font-size: var(--fontSizes-md);
     font-weight: 600;
     margin-bottom: var(--space-3);
   }
 
-  .c-bmXGTI-cbjprQ-size-sm .c-ldsiYK {
+  .c-bmXGTI-daaINI-size-md height .c-ldsiYK {
+    font-size: var(--fontSizes-sm);
+    font-weight: 400;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-bmXGTI-daaINI-size-md width {
+    padding: var(--space-4);
+  }
+
+  .c-bmXGTI-daaINI-size-md width .c-eWgOGC {
+    width: 126px;
+    height: 72px;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-bmXGTI-daaINI-size-md width .c-ftwtsZ {
+    font-size: var(--fontSizes-md);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-bmXGTI-daaINI-size-md width .c-ldsiYK {
     font-size: var(--fontSizes-sm);
     font-weight: 400;
     margin-bottom: var(--space-4);
@@ -77,7 +99,7 @@ exports[`EmptyState component renders a component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bmXGTI c-bmXGTI-cbjprQ-size-sm"
+    class="c-dhzjXW c-bmXGTI c-bmXGTI-daaINI-size-md"
   >
     <h2
       class="c-ftwtsZ"

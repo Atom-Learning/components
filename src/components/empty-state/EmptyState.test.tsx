@@ -4,8 +4,8 @@ import * as React from 'react'
 
 import { EmptyState } from '.'
 
-const SimpleExample = () => (
-  <EmptyState>
+const SimpleExample = (size) => (
+  <EmptyState size={size}>
     <EmptyState.Title>No users found!</EmptyState.Title>
     <EmptyState.Body>
       You need to add some users before you can use this feature
@@ -15,7 +15,7 @@ const SimpleExample = () => (
 
 describe('EmptyState component', () => {
   it('renders a component', async () => {
-    const { container } = render(<SimpleExample />)
+    const { container } = render(<SimpleExample size="md" />)
 
     expect(container).toMatchSnapshot()
   })
