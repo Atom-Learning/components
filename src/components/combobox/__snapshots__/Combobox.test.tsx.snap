@@ -54,14 +54,6 @@ exports[`Combobox component renders 1`] = `
     transform: translateY(var(--space-2));
   }
 
-  .c-cOrACU {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
   .c-uYIcy {
     color: var(--colors-tonal500);
     cursor: pointer;
@@ -77,6 +69,14 @@ exports[`Combobox component renders 1`] = `
 
   .c-uYIcy [data-user-value] {
     color: var(--colors-primary);
+  }
+
+  .c-cOrACU {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    user-select: none;
   }
 }
 

@@ -1,15 +1,26 @@
 import { IdProvider } from '@radix-ui/react-id'
-import { render } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Form } from '../'
 import { RadioButtonField } from '.'
 
-const ExampleRadioButtonField = () => (
+type ExampleRadioFieldProps = Omit<
+  React.ComponentProps<typeof RadioButtonField>,
+  'name' | 'label'
+>
+
+const ExampleRadioButtonField = (props: ExampleRadioFieldProps) => (
   <IdProvider>
     <Form>
-      <RadioButtonField name="example" defaultValue="1" label="Example options">
+      <RadioButtonField
+        name="example"
+        defaultValue="1"
+        label="Example options"
+        {...props}
+      >
         <RadioButtonField.Item label="1" value="1" />
         <RadioButtonField.Item label="2" value="2" />
       </RadioButtonField>
@@ -30,5 +41,16 @@ describe('RadioButtonField component', () => {
     const { container } = render(<ExampleRadioButtonField />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('allows an external on value change handler to be passed to the component', async () => {
+    const onValueChangeSpy = jest.fn()
+    render(<ExampleRadioButtonField onValueChange={onValueChangeSpy} />)
+
+    userEvent.click(screen.getByLabelText('2'))
+    await waitFor(() => {
+      expect(onValueChangeSpy).toHaveBeenCalledTimes(1)
+      expect(onValueChangeSpy).toHaveBeenCalledWith('2')
+    })
   })
 })

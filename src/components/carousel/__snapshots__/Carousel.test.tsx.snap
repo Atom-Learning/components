@@ -2,6 +2,15 @@
 
 exports[`Carousel component renders 1`] = `
 @media  {
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
   .c-fdtEEY {
     align-items: center;
     background: unset;
@@ -30,13 +39,23 @@ exports[`Carousel component renders 1`] = `
     color: var(--colors-tonal100);
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  .c-eWgOGC {
     vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
   }
 
   .c-bemsGI {
@@ -60,25 +79,6 @@ exports[`Carousel component renders 1`] = `
   .c-bemsGI [class*="slideInner"] {
     display: flex;
     justify-content: center;
-  }
-
-  .c-eWgOGC {
-    vertical-align: middle;
-    max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-eetsND {
@@ -160,6 +160,11 @@ exports[`Carousel component renders 1`] = `
     }
 }
 
+  .c-PJLV-ihbsPHc-css {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
+
   .c-PJLV-ifsKauB-css {
     opacity: 0.7;
     transition: all 0.25s ease-in;
@@ -171,11 +176,6 @@ exports[`Carousel component renders 1`] = `
 
   .c-PJLV-ifsKauB-css[aria-selected="true"] > div > div > * {
     box-shadow: var(--shadows-1);
-  }
-
-  .c-PJLV-ihbsPHc-css {
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
   }
 }
 
