@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
-import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
 import { EmptyStateBody } from './EmptyStateBody'
@@ -15,93 +14,19 @@ const EmptyStateContainer = styled(Flex, {
   variants: {
     size: {
       xs: {
-        p: '$2',
-        [`& ${Image}`]: {
-          width: '56px',
-          height: '32px',
-          mb: '$4'
-        },
-        [`& ${EmptyStateTitle}`]: {
-          fontSize: '$md',
-          fontWeight: '600',
-          mb: '$3'
-        },
-        [`& ${EmptyStateBody}`]: {
-          fontSize: '$sm',
-          fontWeight: '400',
-          mb: '$4'
-        }
+        p: '$2'
       },
       sm: {
-        p: '$3',
-        [`& ${Image}`]: {
-          size: '84px',
-          mb: '$4'
-        },
-        [`& ${EmptyStateTitle}`]: {
-          fontSize: '$md',
-          fontWeight: '600',
-          mb: '$3'
-        },
-        [`& ${EmptyStateBody}`]: {
-          fontSize: '$sm',
-          fontWeight: '400',
-          mb: '$4'
-        }
+        p: '$3'
       },
       md: {
-        p: '$4',
-        [`& ${Image}`]: {
-          width: '126px',
-          height: '72px',
-          mb: '$4'
-        },
-        [`& ${EmptyStateTitle}`]: {
-          fontSize: '$md',
-          fontWeight: '600',
-          mb: '$3'
-        },
-        [`& ${EmptyStateBody}`]: {
-          fontSize: '$sm',
-          fontWeight: '400',
-          mb: '$4'
-        }
+        p: '$4'
       },
       lg: {
-        p: '$5',
-        [`& ${Image}`]: {
-          width: '190px',
-          height: '142px',
-          mb: '$5'
-        },
-        [`& ${EmptyStateTitle}`]: {
-          fontSize: '$lg',
-          fontWeight: '600',
-          mb: '$4'
-        },
-        [`& ${EmptyStateBody}`]: {
-          fontSize: '$md',
-          fontWeight: '400',
-          mb: '$5'
-        }
+        p: '$5'
       },
       xl: {
-        p: '$6',
-        [`& ${Image}`]: {
-          width: '285px',
-          height: '213px',
-          mb: '$5'
-        },
-        [`& ${EmptyStateTitle}`]: {
-          fontSize: '$lg',
-          fontWeight: '600',
-          mb: '$4'
-        },
-        [`& ${EmptyStateBody}`]: {
-          fontSize: '$md',
-          fontWeight: '400',
-          mb: '$5'
-        }
+        p: '$6'
       }
     }
   }
@@ -113,8 +38,28 @@ export const EmptyState: React.FC<EmptyStateProps> & {
   Image: typeof EmptyStateImage
   Title: typeof EmptyStateTitle
   Body: typeof EmptyStateBody
-} = ({ size = 'sm', ...props }) => (
-  <EmptyStateContainer size={size} {...props} />
+} = ({ size = 'sm', children, ...props }) => (
+  <EmptyStateContainer size={size} {...props}>
+    {React.Children.map(children, (child) => {
+      // add relevant check for valid child
+      if (!React.isValidElement(child)) {
+        throw new Error()
+      }
+
+      if (
+        [
+          (<EmptyStateImage />).type,
+          (<EmptyStateTitle />).type,
+          (<EmptyStateBody />).type
+        ].includes(child.type)
+      ) {
+        // clone child and pass size prop
+        return React.cloneElement(child, { ...child.props, size })
+      }
+
+      return child
+    })}
+  </EmptyStateContainer>
 )
 
 EmptyState.displayName = 'EmptyState'

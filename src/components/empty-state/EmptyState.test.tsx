@@ -15,7 +15,7 @@ const SimpleExample = () => (
 
 describe('EmptyState component', () => {
   it('renders a component', async () => {
-    const { container } = render(<EmptyState />)
+    const { container } = render(<SimpleExample />)
 
     expect(container).toMatchSnapshot()
   })
