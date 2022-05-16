@@ -43,7 +43,7 @@ export const EmptyState: React.FC<EmptyStateProps> & {
     {React.Children.map(children, (child) => {
       // add relevant check for valid child
       if (!React.isValidElement(child)) {
-        throw new Error()
+        throw new Error("Invalid child element in EmptyState")
       }
 
       if (
