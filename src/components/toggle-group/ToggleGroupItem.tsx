@@ -5,6 +5,7 @@ import { styled } from '~/stitches'
 // TODO: How do I make this reusable from other components?
 const focusIndicatorBlock = ({ position = 'relative', zIndex = 1 } = {}) => {
   return {
+    outline: 'none',
     position: ['relative', 'absolute', 'fixed', 'sticky'].includes(position)
       ? position
       : 'relative',
@@ -18,7 +19,6 @@ export const StyledItem = styled(ToggleGroup.Item, {
   color: '$tonal400',
   border: '1px solid $tonal200',
   cursor: 'pointer',
-  outline: 'none !important',
   '&::before': {
     background: '$tonal200'
   },
@@ -38,8 +38,9 @@ export const StyledItem = styled(ToggleGroup.Item, {
         borderColor: '$tonal200 !important'
       },
       '&[data-state="on"]': {
-        boxShadow: `inset currentColor 0px 0px 0px 1px, ${focusIndicatorBlock().boxShadow
-          }`
+        boxShadow: `inset currentColor 0px 0px 0px 1px, ${
+          focusIndicatorBlock().boxShadow
+        }`
       }
     }
   },

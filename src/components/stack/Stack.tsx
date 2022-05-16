@@ -40,10 +40,10 @@ const StyledStack = styled('div', {
   variants: {
     direction: {
       row: {
-        flexDirection: 'row',
+        flexDirection: 'row'
       },
       'row-reverse': {
-        flexDirection: 'row-reverse',
+        flexDirection: 'row-reverse'
       },
       column: {
         flexDirection: 'column'
@@ -51,7 +51,7 @@ const StyledStack = styled('div', {
     },
     wrap: {
       true: {
-        flexWrap: 'wrap',
+        flexWrap: 'wrap'
       }
     },
     justify: {
@@ -62,7 +62,7 @@ const StyledStack = styled('div', {
     align: {
       start: { alignItems: 'flex-start' },
       center: { alignItems: 'center' },
-      end: { alignItems: 'flex-end' },
+      end: { alignItems: 'flex-end' }
     },
     gap
   }
@@ -76,19 +76,23 @@ export const Stack: React.FC<StackProps> = ({
   direction = 'row',
   wrap = true,
   justify = 'start',
-  align = 'center',
+  align,
   ...remainingProps
-}) => (
-  <CSSWrapper css={css}>
-    <StyledStack
-      direction={direction}
-      gap={gap}
-      wrap={wrap}
-      justify={justify}
-      align={align}
-      {...remainingProps}
-    />
-  </CSSWrapper>
-)
+}) => {
+  const alignDefault = direction === 'column' ? undefined : 'center'
+
+  return (
+    <CSSWrapper css={css}>
+      <StyledStack
+        direction={direction}
+        gap={gap}
+        wrap={wrap}
+        justify={justify}
+        align={align || alignDefault}
+        {...remainingProps}
+      />
+    </CSSWrapper>
+  )
+}
 
 Stack.displayName = 'Stack'

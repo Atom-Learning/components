@@ -18,9 +18,9 @@ const px = {
 }
 
 const spacingBetweenElements = {
-  sm: '8px',
-  md: '12px',
-  lg: '12px'
+  sm: '$2',
+  md: '$3',
+  lg: '$3'
 }
 
 const getSizeVariant = (size) => ({

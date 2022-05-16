@@ -10,49 +10,49 @@ exports[`ToggleGroup renders 1`] = `
     margin: 0;
   }
 
-  .c-eYBlKX {
+  .c-iVViNQ {
     background: white;
     color: var(--colors-tonal400);
     border: 1px solid var(--colors-tonal200);
     cursor: pointer;
-    outline: none !important;
   }
 
-  .c-eYBlKX::before {
+  .c-iVViNQ::before {
     background: var(--colors-tonal200);
   }
 
-  .c-eYBlKX:not([disabled]):hover::before,
-  .c-eYBlKX:not([disabled]):focus-visible::before,
-  .c-eYBlKX:not([disabled])[data-state="on"]::before {
+  .c-iVViNQ:not([disabled]):hover::before,
+  .c-iVViNQ:not([disabled]):focus-visible::before,
+  .c-iVViNQ:not([disabled])[data-state="on"]::before {
     background: none;
   }
 
-  .c-eYBlKX:not([disabled]):hover {
+  .c-iVViNQ:not([disabled]):hover {
     border-color: currentColor !important;
     color: var(--colors-primaryMid);
   }
 
-  .c-eYBlKX:not([disabled]):focus-visible {
+  .c-iVViNQ:not([disabled]):focus-visible {
+    outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-eYBlKX:not([disabled]):focus-visible[data-state="off"] {
+  .c-iVViNQ:not([disabled]):focus-visible[data-state="off"] {
     border-color: var(--colors-tonal200) !important;
   }
 
-  .c-eYBlKX:not([disabled]):focus-visible[data-state="on"] {
+  .c-iVViNQ:not([disabled]):focus-visible[data-state="on"] {
     box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-eYBlKX[disabled] {
+  .c-iVViNQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-eYBlKX[data-state="on"] {
+  .c-iVViNQ[data-state="on"] {
     color: var(--colors-primary);
     border-color: currentColor !important;
     box-shadow: inset currentColor 0px 0px 0px 1px;
@@ -106,15 +106,15 @@ exports[`ToggleGroup renders 1`] = `
     margin-left: var(--space-2);
   }
 
-  .c-gxXeKS-bQYzYh-size-sm {
+  .c-gxXeKS-fKibdn-size-sm {
     font-size: var(--fontSizes-sm);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     min-height: 32px;
   }
 
-  .c-gxXeKS-bQYzYh-size-sm > *:not(:last-child) {
-    margin-right: 8px;
+  .c-gxXeKS-fKibdn-size-sm > *:not(:last-child) {
+    margin-right: var(--space-2);
   }
 
   .c-dbrbZt-eAiySG-size-sm {
@@ -123,7 +123,7 @@ exports[`ToggleGroup renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-flWDnm-kbQVqs-hasGap-true .c-eYBlKX {
+  .c-flWDnm-epWAHO-hasGap-true .c-iVViNQ {
     border-radius: var(--radii-0);
   }
 
@@ -135,7 +135,7 @@ exports[`ToggleGroup renders 1`] = `
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-kbQVqs-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
+    class="c-flWDnm c-flWDnm-epWAHO-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
     dir="ltr"
     role="group"
     style="outline: none;"
@@ -146,7 +146,7 @@ exports[`ToggleGroup renders 1`] = `
     >
       <button
         aria-pressed="true"
-        class="c-eYBlKX"
+        class="c-iVViNQ"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -158,7 +158,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
         data-disabled=""
         data-radix-collection-item=""
         data-state="on"
@@ -170,7 +170,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -180,7 +180,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-eYBlKX c-gxXeKS c-gxXeKS-bQYzYh-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
