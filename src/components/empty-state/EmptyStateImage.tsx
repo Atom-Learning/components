@@ -1,9 +1,7 @@
-import * as React from 'react'
-
 import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
-const StyledImage = styled(Image, {
+export const EmptyStateImage = styled(Image, {
   variants: {
     size: {
       xs: {
@@ -33,9 +31,3 @@ const StyledImage = styled(Image, {
     }
   }
 })
-
-type EmptyStateImage = React.ComponentProps<typeof StyledImage>
-
-export const EmptyStateImage: React.FC<EmptyStateImage> = (props) => (
-  <StyledImage {...props} />
-)
