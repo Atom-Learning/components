@@ -58,15 +58,6 @@ exports[`ToggleGroup renders 1`] = `
     box-shadow: inset currentColor 0px 0px 0px 1px;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
   .c-gxXeKS {
     flex-grow: 1;
     display: flex;
@@ -80,6 +71,15 @@ exports[`ToggleGroup renders 1`] = `
 
   .c-gxXeKS .c-dbrbZt {
     flex-shrink: 0;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
   }
 
   .c-flWDnm {
@@ -104,12 +104,6 @@ exports[`ToggleGroup renders 1`] = `
   .c-jgdwfn-dPMagj-gap-2 > * {
     margin-top: var(--space-2);
     margin-left: var(--space-2);
-  }
-
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
   }
 
   .c-gxXeKS-bQYzYh-size-sm {
@@ -160,43 +154,7 @@ exports[`ToggleGroup renders 1`] = `
         tabindex="-1"
         type="button"
       >
-        A
-      </button>
-      <button
-        aria-pressed="false"
-        class="c-eYBlKX"
-        data-radix-collection-item=""
-        data-state="off"
-        tabindex="-1"
-        type="button"
-      >
-        B
-      </button>
-      <button
-        aria-pressed="false"
-        class="c-eYBlKX"
-        data-radix-collection-item=""
-        data-state="off"
-        tabindex="-1"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12 4v13"
-          />
-          <polyline
-            points="7 8 12 3 17 8"
-          />
-          <path
-            d="M20 21H4"
-          />
-        </svg>
-        Item with icon
+        item
       </button>
       <button
         aria-pressed="true"
@@ -208,7 +166,7 @@ exports[`ToggleGroup renders 1`] = `
         tabindex="-1"
         type="button"
       >
-        A
+         button A 
       </button>
       <button
         aria-pressed="false"
@@ -218,7 +176,7 @@ exports[`ToggleGroup renders 1`] = `
         tabindex="-1"
         type="button"
       >
-        B
+        button B
       </button>
       <button
         aria-pressed="false"
