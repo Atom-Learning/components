@@ -2,10 +2,6 @@
 
 exports[`ToggleGroup renders 1`] = `
 @media  {
-  .c-flWDnm {
-    width: fit-content;
-  }
-
   .c-jgdwfn {
     display: flex;
   }
@@ -85,18 +81,13 @@ exports[`ToggleGroup renders 1`] = `
   .c-gxXeKS .c-dbrbZt {
     flex-shrink: 0;
   }
+
+  .c-flWDnm {
+    width: fit-content;
+  }
 }
 
 @media  {
-  .c-flWDnm-kbQVqs-hasGap-true .c-eYBlKX {
-    border-radius: var(--radii-0);
-  }
-
-  .c-flWDnm-eMcgPC-orientation-vertical {
-    flex-flow: column;
-    justify-content: center;
-  }
-
   .c-jgdwfn-iTKOFX-direction-column {
     flex-direction: column;
   }
@@ -136,6 +127,15 @@ exports[`ToggleGroup renders 1`] = `
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.75;
+  }
+
+  .c-flWDnm-kbQVqs-hasGap-true .c-eYBlKX {
+    border-radius: var(--radii-0);
+  }
+
+  .c-flWDnm-eMcgPC-orientation-vertical {
+    flex-flow: column;
+    justify-content: center;
   }
 }
 
