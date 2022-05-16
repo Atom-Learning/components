@@ -72,7 +72,7 @@ type StackProps = React.ComponentProps<typeof StyledStack> & { css?: CSS }
 
 export const Stack: React.FC<StackProps> = ({
   css,
-  gap,
+  gap = 2,
   direction = 'row',
   wrap = true,
   justify = 'start',
