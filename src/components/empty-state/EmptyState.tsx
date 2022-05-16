@@ -41,17 +41,13 @@ export const EmptyState: React.FC<EmptyStateProps> & {
 } = ({ size = 'sm', children, ...props }) => (
   <EmptyStateContainer size={size} {...props}>
     {React.Children.map(children, (child) => {
-      // add relevant check for valid child
-      if (!React.isValidElement(child)) {
-        throw new Error('Invalid child element in EmptyState')
-      }
+      if (!React.isValidElement(child)) return child;
 
       if (
         child.type === EmptyStateImage ||
         child.type === EmptyStateTitle ||
         child.type === EmptyStateBody
       ) {
-        // clone child and pass size prop
         return React.cloneElement(child, { ...child.props, size })
       }
 
