@@ -11,6 +11,9 @@ const EmptyStateContainer = styled(Flex, {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
+  '& > *:last-child': {
+    mb: 0
+  },
   variants: {
     size: {
       xs: {
@@ -41,7 +44,7 @@ export const EmptyState: React.FC<EmptyStateProps> & {
 } = ({ size = 'sm', children, ...props }) => (
   <EmptyStateContainer size={size} {...props}>
     {React.Children.map(children, (child) => {
-      if (!React.isValidElement(child)) return child;
+      if (!React.isValidElement(child)) return child
 
       if (
         child.type === EmptyStateImage ||

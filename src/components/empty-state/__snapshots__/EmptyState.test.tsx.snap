@@ -6,10 +6,14 @@ exports[`EmptyState component renders a component 1`] = `
     display: flex;
   }
 
-  .c-bmXGTI {
+  .c-QtuIU {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .c-QtuIU > *:last-child {
+    margin-bottom: 0;
   }
 
   .c-ksLbIG {
@@ -37,7 +41,7 @@ exports[`EmptyState component renders a component 1`] = `
 }
 
 @media  {
-  .c-bmXGTI-gtyVWU-size-sm {
+  .c-QtuIU-gtyVWU-size-sm {
     padding: var(--space-3);
   }
 
@@ -71,7 +75,7 @@ exports[`EmptyState component renders a component 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bmXGTI c-bmXGTI-gtyVWU-size-sm"
+    class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
   >
     <h2
       class="c-ksLbIG c-ksLbIG-gNjhJG-size-sm"
