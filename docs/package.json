@@ -25,6 +25,7 @@
     "@atom-learning/theme": "1.0.1",
     "@babel/runtime": "^7.17.9",
     "@next/mdx": "^10.0.6",
+    "@radix-ui/react-id": "^0.1.5",
     "@stitches/react": "^1.2.5",
     "capital-case": "^1.0.4",
     "next": "10.0.8",

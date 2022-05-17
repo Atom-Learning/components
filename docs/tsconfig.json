@@ -15,9 +15,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@components": ["../dist/"],
-      "@components/*": ["../dist/*"],
-      "@pkgJson": ["../package.json"]
+      "@components": ["../lib/dist/"],
+      "@components/*": ["../lib/dist/*"],
+      "@pkgJson": ["../lib/package.json"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../dist"],
