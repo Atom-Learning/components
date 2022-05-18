@@ -45,6 +45,8 @@ const StyledDialogContent = styled(Content, {
   boxSizing: 'border-box',
   left: '50%',
   maxWidth: '90vw',
+  maxHeight: '90vh',
+  overflowY: 'scroll',
   p: '$5',
   position: 'fixed',
   top: '50%',
