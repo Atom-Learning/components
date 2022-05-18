@@ -85,8 +85,6 @@ export const Stack: React.FC<StackProps> = ({
   align,
   ...remainingProps
 }) => {
-  const alignDefault = direction === 'column' ? undefined : 'center'
-
   return (
     <CSSWrapper css={css}>
       <StyledStack
@@ -94,7 +92,7 @@ export const Stack: React.FC<StackProps> = ({
         gap={gap}
         wrap={wrap}
         justify={justify}
-        align={align || alignDefault}
+        align={(typeof align === 'undefined') && (direction !== 'column') ? 'center' : align}
         {...remainingProps}
       />
     </CSSWrapper>
