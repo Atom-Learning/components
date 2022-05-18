@@ -50,8 +50,14 @@ const StyledStack = styled('div', {
       }
     },
     wrap: {
-      true: {
+      wrap: {
         flexWrap: 'wrap'
+      },
+      'no-wrap': {
+        flexWrap: 'no-wrap'
+      },
+      'wrap-reverse': {
+        flexWrap: 'wrap-reverse'
       }
     },
     justify: {
@@ -74,7 +80,7 @@ export const Stack: React.FC<StackProps> = ({
   css,
   gap = 2,
   direction = 'row',
-  wrap = true,
+  wrap = 'wrap',
   justify = 'start',
   align,
   ...remainingProps

@@ -92,6 +92,10 @@ exports[`ToggleGroup renders 1`] = `
     flex-direction: column;
   }
 
+  .c-jgdwfn-hjymVw-wrap-no-wrap {
+    flex-wrap: no-wrap;
+  }
+
   .c-jgdwfn-awKDG-justify-start {
     justify-content: flex-start;
   }
@@ -142,7 +146,7 @@ exports[`ToggleGroup renders 1`] = `
     tabindex="0"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-hjymVw-wrap-no-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
     >
       <button
         aria-pressed="true"

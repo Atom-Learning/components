@@ -131,31 +131,31 @@ export const ToggleGroupRoot: React.FC<
   gap = false,
   isFullWidth,
   children,
-  wrap = false,
+  wrap = 'no-wrap',
   ...rest
 }) => {
-    const hasGap = typeof gap === 'number'
-    const childrenArray = React.Children.toArray(children)
-    return (
-      <StyledRoot
-        orientation={orientation}
-        hasGap={hasGap}
-        isFullWidth={isFullWidth}
-        {...rest}
+  const hasGap = typeof gap === 'number'
+  const childrenArray = React.Children.toArray(children)
+  return (
+    <StyledRoot
+      orientation={orientation}
+      hasGap={hasGap}
+      isFullWidth={isFullWidth}
+      {...rest}
+    >
+      <Stack
+        direction={orientationToDirection(orientation)}
+        gap={hasGap && gap}
+        align={false}
+        wrap={wrap}
       >
-        <Stack
-          direction={orientationToDirection(orientation)}
-          gap={hasGap && gap}
-          align={false}
-          wrap={wrap}
-        >
-          {
-            childrenArray.map((child) => {
-              if (!React.isValidElement(child)) return child
-              return React.cloneElement(child, { ...child.props, size })
-            }) as React.ReactElement[]
-          }
-        </Stack>
-      </StyledRoot>
-    )
-  }
+        {
+          childrenArray.map((child) => {
+            if (!React.isValidElement(child)) return child
+            return React.cloneElement(child, { ...child.props, size })
+          }) as React.ReactElement[]
+        }
+      </Stack>
+    </StyledRoot>
+  )
+}
