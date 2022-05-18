@@ -130,16 +130,12 @@ exports[`ToggleGroup renders 1`] = `
   .c-flWDnm-epWAHO-hasGap-true .c-iVViNQ {
     border-radius: var(--radii-0);
   }
-
-  .c-flWDnm-eMcgPC-orientation-vertical {
-    flex-flow: column;
-    justify-content: center;
-  }
 }
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-epWAHO-hasGap-true c-flWDnm-eMcgPC-orientation-vertical"
+    class="c-flWDnm c-flWDnm-epWAHO-hasGap-true"
+    data-orientation="vertical"
     dir="ltr"
     role="group"
     style="outline: none;"
@@ -152,6 +148,7 @@ exports[`ToggleGroup renders 1`] = `
         aria-pressed="true"
         class="c-iVViNQ"
         data-disabled=""
+        data-orientation="vertical"
         data-radix-collection-item=""
         data-state="on"
         disabled=""
@@ -164,6 +161,7 @@ exports[`ToggleGroup renders 1`] = `
         aria-pressed="true"
         class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
         data-disabled=""
+        data-orientation="vertical"
         data-radix-collection-item=""
         data-state="on"
         disabled=""
@@ -175,6 +173,7 @@ exports[`ToggleGroup renders 1`] = `
       <button
         aria-pressed="false"
         class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"
@@ -185,6 +184,7 @@ exports[`ToggleGroup renders 1`] = `
       <button
         aria-pressed="false"
         class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
         tabindex="-1"

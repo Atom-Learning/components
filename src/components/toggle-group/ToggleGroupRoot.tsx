@@ -43,18 +43,15 @@ export const StyledRoot = styled(ToggleGroup.Root, {
         }
       }
     },
-    orientation: {
-      vertical: { flexFlow: 'column', justifyContent: 'center' },
-      horizontal: {
-        flexFlow: 'row wrap',
-        alignItems: 'center'
-      }
+    direction: {
+      column: {},
+      row: {}
     }
   },
   compoundVariants: [
     {
       hasGap: false,
-      orientation: 'horizontal',
+      direction: 'row',
       css: {
         [`& ${StyledItem}`]: {
           '&:not(:last-child)::before': {
@@ -83,7 +80,7 @@ export const StyledRoot = styled(ToggleGroup.Root, {
     },
     {
       hasGap: false,
-      orientation: 'vertical',
+      direction: 'column',
       css: {
         [`& ${StyledItem}`]: {
           '&:not(:last-child)::before': {
@@ -136,15 +133,17 @@ export const ToggleGroupRoot: React.FC<
 }) => {
   const hasGap = typeof gap === 'number'
   const childrenArray = React.Children.toArray(children)
+  const direction = orientationToDirection(orientation)
   return (
     <StyledRoot
-      orientation={orientation}
+      direction={direction}
       hasGap={hasGap}
       isFullWidth={isFullWidth}
+      orientation={orientation}
       {...rest}
     >
       <Stack
-        direction={orientationToDirection(orientation)}
+        direction={direction}
         gap={hasGap && gap}
         align={false}
         wrap={wrap}
