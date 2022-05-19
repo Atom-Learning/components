@@ -3,7 +3,7 @@
 exports[`Tooltip component renders a tooltip 1`] = `
 <div>
   <button
-    aria-describedby="radix-id-0-1"
+    aria-describedby="radix-id-1683138318-1"
     class="c-PJLV"
     data-state="delayed-open"
     type="button"
