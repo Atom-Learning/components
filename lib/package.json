@@ -66,7 +66,7 @@
     "@radix-ui/react-id": "0.1.1",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/npm": "^7.1.1",
     "@semantic-release/release-notes-generator": "^9.0.2",
@@ -124,13 +124,14 @@
   "peerDependencies": {
     "@atom-learning/icons": "^0.3.0",
     "@atom-learning/theme": "^0.1.0-beta.8",
-    "react": "17.0.1"
+    "react": "17.0.1",
+    "react-dom": "^17.0.1"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "0.1.1",
     "@radix-ui/react-alert-dialog": "0.1.1",
     "@radix-ui/react-checkbox": "0.1.1",
-    "@radix-ui/react-dialog": "0.1.1",
+    "@radix-ui/react-dialog": "0.1.2",
     "@radix-ui/react-dropdown-menu": "0.1.1",
     "@radix-ui/react-popover": "0.1.1",
     "@radix-ui/react-progress": "0.1.1",
@@ -156,6 +157,7 @@
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "throttle-debounce": "^3.0.1",
     "uid": "^2.0.0"
   },
