@@ -25,7 +25,7 @@
     "@atom-learning/theme": "1.0.1",
     "@babel/runtime": "^7.17.9",
     "@next/mdx": "^10.0.6",
-    "@radix-ui/react-id": "^0.1.5",
+    "@radix-ui/react-id": "0.1.5",
     "@stitches/react": "^1.2.5",
     "capital-case": "^1.0.4",
     "next": "10.0.8",
@@ -37,7 +37,6 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-feather": "^2.0.9",
-    "react-live": "^2.2.3",
     "throttle-debounce": "^3.0.1"
   },
   "devDependencies": {
