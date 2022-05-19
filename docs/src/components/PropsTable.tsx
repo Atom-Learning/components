@@ -42,26 +42,26 @@ const WithTooltip = ({ children, content }) => (
 const PropType = ({ name, type }) => {
   if (name === 'css') {
     return (
-      <WithTooltip content="Override the component styles. Supports tokens, media queries and all stitches features">
-        <Link
-          size="sm"
-          href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v16/index.d.ts#L1547"
-        >
-          <InlineCode>CSSProperties</InlineCode>
-        </Link>
-      </WithTooltip>
+      // <WithTooltip content="Override the component styles. Supports tokens, media queries and all stitches features">
+      <Link
+        size="sm"
+        href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v16/index.d.ts#L1547"
+      >
+        <InlineCode>CSSProperties</InlineCode>
+      </Link>
+      //  </WithTooltip> *
     )
   }
   if (name === 'as') {
     return (
-      <WithTooltip content="Change the component to a different HTML tag or custom component">
-        <Link
-          size="sm"
-          href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v16/index.d.ts#L2993"
-        >
-          <InlineCode>JSX.IntrinsicElements</InlineCode>
-        </Link>
-      </WithTooltip>
+      // <WithTooltip content="Change the component to a different HTML tag or custom component">
+      <Link
+        size="sm"
+        href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/v16/index.d.ts#L2993"
+      >
+        <InlineCode>JSX.IntrinsicElements</InlineCode>
+      </Link>
+      // </WithTooltip>
     )
   }
   if (Array.isArray(type.value)) {
