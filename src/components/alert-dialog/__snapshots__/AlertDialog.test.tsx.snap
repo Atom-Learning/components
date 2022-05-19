@@ -3,7 +3,7 @@
 exports[`AlertDialog component renders the trigger with the dialog hidden by default 1`] = `
 <div>
   <button
-    aria-controls="radix-id-0-1"
+    aria-controls="radix-0"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"

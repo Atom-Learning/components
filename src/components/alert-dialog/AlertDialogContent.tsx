@@ -63,14 +63,19 @@ const StyledAlertDialogContent = styled(Content, {
 
 type AlertDialogContentProps = React.ComponentProps<
   typeof StyledAlertDialogContent
->
+> & { ariaLabel: string }
 
 export const AlertDialogContent: React.FC<AlertDialogContentProps> = ({
   size = 'sm',
+  ariaLabel = 'Alert',
   ...remainingProps
 }) => (
   <>
     <StyledAlertDialogOverlay />
-    <StyledAlertDialogContent size={size} {...remainingProps} />
+    <StyledAlertDialogContent
+      size={size}
+      {...remainingProps}
+      aria-label={ariaLabel}
+    />
   </>
 )
