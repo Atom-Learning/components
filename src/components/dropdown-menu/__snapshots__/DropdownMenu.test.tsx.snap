@@ -113,13 +113,13 @@ exports[`DropdownMenu component renders 1`] = `
         style="position: fixed; top: 0px; left: 0px; opacity: 0; transform: translate3d(0, -200%, 0);"
       >
         <div
-          aria-labelledby="radix-id-0-1"
+          aria-labelledby="radix-id-9389645446-1"
           aria-orientation="vertical"
           class="c-jFCTlP"
           data-orientation="vertical"
           data-state="open"
           dir="ltr"
-          id="radix-id-0-2"
+          id="radix-id-9389645446-2"
           role="menu"
           style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
           tabindex="-1"
@@ -162,14 +162,14 @@ exports[`DropdownMenu component renders 1`] = `
     </div>
   </div>
   <button
-    aria-controls="radix-id-0-2"
+    aria-controls="radix-id-9389645446-2"
     aria-expanded="true"
     aria-haspopup="menu"
     aria-hidden="true"
     class="c-PJLV"
     data-aria-hidden="true"
     data-state="open"
-    id="radix-id-0-1"
+    id="radix-id-9389645446-1"
     type="button"
   >
     TRIGGER

@@ -116,12 +116,12 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="open"
     >
       <button
-        aria-controls="radix-id-0-2"
+        aria-controls="radix-id-3803171916-1"
         aria-disabled="true"
         aria-expanded="true"
         class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
         data-state="open"
-        id="radix-id-0-1"
+        id="radix-id-61846499-1"
       >
         TRIGGER1
         <svg
@@ -136,10 +136,10 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-id-0-1"
+        aria-labelledby="radix-id-61846499-1"
         class="c-hXRGtr"
         data-state="open"
-        id="radix-id-0-2"
+        id="radix-id-3803171916-1"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       >
@@ -151,11 +151,11 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="closed"
     >
       <button
-        aria-controls="radix-id-0-4"
+        aria-controls="radix-id-3803171916-2"
         aria-expanded="false"
         class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
         data-state="closed"
-        id="radix-id-0-3"
+        id="radix-id-61846499-2"
       >
         TRIGGER2
         <svg
@@ -170,11 +170,11 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-id-0-3"
+        aria-labelledby="radix-id-61846499-2"
         class="c-hXRGtr"
         data-state="closed"
         hidden=""
-        id="radix-id-0-4"
+        id="radix-id-3803171916-2"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />

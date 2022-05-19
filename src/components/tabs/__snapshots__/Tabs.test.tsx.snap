@@ -96,26 +96,26 @@ exports[`Tabs component renders 1`] = `
       tabindex="0"
     >
       <div
-        aria-controls="radix-id-0-1-content-tab1"
+        aria-controls="radix-id-5059847790-1-content-tab1"
         aria-selected="true"
         class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
-        id="radix-id-0-1-trigger-tab1"
+        id="radix-id-5059847790-1-trigger-tab1"
         role="tab"
         tabindex="-1"
       >
         Trigger 1
       </div>
       <div
-        aria-controls="radix-id-0-1-content-tab2"
+        aria-controls="radix-id-5059847790-1-content-tab2"
         aria-selected="false"
         class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-id-0-1-trigger-tab2"
+        id="radix-id-5059847790-1-trigger-tab2"
         role="tab"
         tabindex="-1"
       >
@@ -123,23 +123,23 @@ exports[`Tabs component renders 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="radix-id-0-1-trigger-tab1"
+      aria-labelledby="radix-id-5059847790-1-trigger-tab1"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-id-0-1-content-tab1"
+      id="radix-id-5059847790-1-content-tab1"
       role="tabpanel"
       tabindex="0"
     >
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-id-0-1-trigger-tab2"
+      aria-labelledby="radix-id-5059847790-1-trigger-tab2"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-id-0-1-content-tab2"
+      id="radix-id-5059847790-1-content-tab2"
       role="tabpanel"
       tabindex="0"
     />
@@ -356,26 +356,26 @@ exports[`Tabs component renders mobile view 1`] = `
         tabindex="0"
       >
         <div
-          aria-controls="radix-id-0-1-content-tab1"
+          aria-controls="radix-id-5059847790-2-content-tab1"
           aria-selected="true"
           class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
-          id="radix-id-0-1-trigger-tab1"
+          id="radix-id-5059847790-2-trigger-tab1"
           role="tab"
           tabindex="-1"
         >
           Trigger 1 which is going to be long
         </div>
         <div
-          aria-controls="radix-id-0-1-content-tab2"
+          aria-controls="radix-id-5059847790-2-content-tab2"
           aria-selected="false"
           class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
-          id="radix-id-0-1-trigger-tab2"
+          id="radix-id-5059847790-2-trigger-tab2"
           role="tab"
           tabindex="-1"
         >
@@ -400,23 +400,23 @@ exports[`Tabs component renders mobile view 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="radix-id-0-1-trigger-tab1"
+      aria-labelledby="radix-id-5059847790-2-trigger-tab1"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-id-0-1-content-tab1"
+      id="radix-id-5059847790-2-content-tab1"
       role="tabpanel"
       tabindex="0"
     >
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-id-0-1-trigger-tab2"
+      aria-labelledby="radix-id-5059847790-2-trigger-tab2"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-id-0-1-content-tab2"
+      id="radix-id-5059847790-2-content-tab2"
       role="tabpanel"
       tabindex="0"
     />
