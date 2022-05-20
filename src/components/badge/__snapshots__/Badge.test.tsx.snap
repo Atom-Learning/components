@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-QWATl {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+}
+
+@media  {
+  .c-QWATl-eUcpXf-theme-info {
+    background: var(--colors-primaryLight);
+    color: var(--colors-primaryMid);
+  }
+
+  .c-QWATl-eTRBzi-size-sm {
+    font-size: var(--fontSizes-md);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    height: 32px;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-eTRBzi-size-sm"
+    role="status"
+  >
+    Some Text
+  </div>
+</div>
+`;
+
+exports[`Badge component renders a md size and danger theme 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-QWATl {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+}
+
+@media  {
+  .c-QWATl-eUcpXf-theme-info {
+    background: var(--colors-primaryLight);
+    color: var(--colors-primaryMid);
+  }
+
+  .c-QWATl-eTRBzi-size-sm {
+    font-size: var(--fontSizes-md);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    height: 32px;
+  }
+
+  .c-QWATl-jtgfr-theme-danger {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerDark);
+  }
+
+  .c-QWATl-cGylQj-size-md {
+    font-size: var(--fontSizes-md);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    height: 48px;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-cGylQj-size-md"
+    role="status"
+  >
+    Some Text
+  </div>
+</div>
+`;
