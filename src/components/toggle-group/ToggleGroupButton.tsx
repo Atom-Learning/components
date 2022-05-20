@@ -50,10 +50,7 @@ export const StyledButton = styled(StyledItem, {
       lg: getSizeVariant('lg')
     },
     isIconOnly: {
-      true: {
-        px: '0 !important',
-        py: '0 !important'
-      }
+      true: {}
     }
   },
   compoundVariants: [
@@ -61,21 +58,24 @@ export const StyledButton = styled(StyledItem, {
       isIconOnly: true,
       size: 'sm',
       css: {
-        minWidth: minHeight.sm
+        minWidth: minHeight.sm,
+        p: 0
       }
     },
     {
       isIconOnly: true,
       size: 'md',
       css: {
-        minWidth: minHeight.md
+        minWidth: minHeight.md,
+        p: 0
       }
     },
     {
       isIconOnly: true,
       size: 'lg',
       css: {
-        minWidth: minHeight.lg
+        minWidth: minHeight.lg,
+        p: 0
       }
     }
   ]
