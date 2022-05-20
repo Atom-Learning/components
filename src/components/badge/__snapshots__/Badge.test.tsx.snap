@@ -29,12 +29,24 @@ exports[`Badge component renders 1`] = `
   }
 }
 
+@media  {
+  .c-PJLV-ieRHsFj-css {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 <div>
   <div
     class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-eTRBzi-size-sm"
     role="status"
   >
-    Some Text
+    <div
+      class="c-PJLV c-PJLV-ieRHsFj-css"
+    >
+      Some Text
+    </div>
   </div>
 </div>
 `;
@@ -80,12 +92,24 @@ exports[`Badge component renders a md size and danger theme 1`] = `
   }
 }
 
+@media  {
+  .c-PJLV-ieRHsFj-css {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 <div>
   <div
     class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-cGylQj-size-md"
     role="status"
   >
-    Some Text
+    <div
+      class="c-PJLV c-PJLV-ieRHsFj-css"
+    >
+      Some Text
+    </div>
   </div>
 </div>
 `;

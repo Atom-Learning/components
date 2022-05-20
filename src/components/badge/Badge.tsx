@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { Box } from '../box'
 import { Flex } from '../flex'
 
 const StyledBadge = styled(Flex, {
@@ -63,7 +64,16 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   return (
     <StyledBadge role="status" theme={theme} size={size} {...rest}>
-      {children}
+      <Box
+        as="div"
+        css={{
+          whiteSpace: 'nowrap',
+          overflowX: 'hidden',
+          textOverflow: 'ellipsis'
+        }}
+      >
+        {children}
+      </Box>
     </StyledBadge>
   )
 }
