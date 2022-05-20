@@ -110,15 +110,8 @@ export const StyledRoot = styled(ToggleGroup.Root, {
   ]
 })
 
-const orientationToDirection = (o) => {
-  switch (o) {
-    case 'horizontal':
-      return 'row'
-    case 'vertical':
-      return 'column'
-    default:
-  }
-}
+const orientationToDirection = (orientation) =>
+  orientation === 'horizontal' ? 'row' : 'column'
 
 export const ToggleGroupRoot: React.FC<
   React.ComponentProps<typeof StyledRoot> & RootType
@@ -134,6 +127,7 @@ export const ToggleGroupRoot: React.FC<
   const hasGap = typeof gap === 'number'
   const childrenArray = React.Children.toArray(children)
   const direction = orientationToDirection(orientation)
+  console.log({ direction })
   return (
     <StyledRoot
       direction={direction}
