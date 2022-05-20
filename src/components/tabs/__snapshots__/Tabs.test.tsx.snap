@@ -2,7 +2,9 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-hOCLBl {
+  .c-dMeHjX {
+    background: none;
+    border: none;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -40,30 +42,30 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
+  .c-dMeHjX-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-hOCLBl-LDxTj-theme-light[data-state="inactive"] {
+  .c-dMeHjX-LDxTj-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):hover {
+  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.1);
   }
 
-  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):active {
+  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.2);
     box-shadow: none;
   }
 
-  .c-hOCLBl-LDxTj-theme-light[data-disabled],
-  .c-hOCLBl-LDxTj-theme-light[data-disabled]:hover {
+  .c-dMeHjX-LDxTj-theme-light[data-disabled],
+  .c-dMeHjX-LDxTj-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -98,7 +100,7 @@ exports[`Tabs component renders 1`] = `
       <button
         aria-controls="radix-2-content-tab1"
         aria-selected="true"
-        class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
+        class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -112,7 +114,7 @@ exports[`Tabs component renders 1`] = `
       <button
         aria-controls="radix-2-content-tab2"
         aria-selected="false"
-        class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
+        class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -151,7 +153,9 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-hOCLBl {
+  .c-dMeHjX {
+    background: none;
+    border: none;
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -222,30 +226,30 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
+  .c-dMeHjX-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-hOCLBl-LDxTj-theme-light[data-state="inactive"] {
+  .c-dMeHjX-LDxTj-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):hover {
+  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.1);
   }
 
-  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):active {
+  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.2);
     box-shadow: none;
   }
 
-  .c-hOCLBl-LDxTj-theme-light[data-disabled],
-  .c-hOCLBl-LDxTj-theme-light[data-disabled]:hover {
+  .c-dMeHjX-LDxTj-theme-light[data-disabled],
+  .c-dMeHjX-LDxTj-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -360,7 +364,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <button
           aria-controls="radix-5-content-tab1"
           aria-selected="true"
-          class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
+          class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -374,7 +378,7 @@ exports[`Tabs component renders mobile view 1`] = `
         <button
           aria-controls="radix-5-content-tab2"
           aria-selected="false"
-          class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
+          class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
