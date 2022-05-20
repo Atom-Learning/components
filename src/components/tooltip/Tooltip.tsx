@@ -1,4 +1,4 @@
-import { Root, Trigger, Provider } from '@radix-ui/react-tooltip'
+import { Provider, Root, Trigger } from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
