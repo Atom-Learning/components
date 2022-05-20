@@ -9,7 +9,7 @@ const AlertDialogTest = (props) => (
   <IdProvider>
     <AlertDialog {...props}>
       <AlertDialog.Trigger>TRIGGER</AlertDialog.Trigger>
-      <AlertDialog.Content>CONTENT</AlertDialog.Content>
+      <AlertDialog.Content aria-label="Alert!">CONTENT</AlertDialog.Content>
     </AlertDialog>
   </IdProvider>
 )
