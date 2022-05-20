@@ -127,7 +127,6 @@ export const ToggleGroupRoot: React.FC<
   const hasGap = typeof gap === 'number'
   const childrenArray = React.Children.toArray(children)
   const direction = orientationToDirection(orientation)
-  console.log({ direction })
   return (
     <StyledRoot
       direction={direction}
