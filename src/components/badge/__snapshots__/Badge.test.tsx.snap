@@ -21,11 +21,11 @@ exports[`Badge component renders 1`] = `
     color: var(--colors-primaryMid);
   }
 
-  .c-QWATl-eTRBzi-size-sm {
+  .c-QWATl-kUPbCM-size-sm {
     font-size: var(--fontSizes-md);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
-    height: 32px;
+    min-height: 32px;
   }
 }
 
@@ -39,7 +39,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-eTRBzi-size-sm"
+    class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-kUPbCM-size-sm"
     role="status"
   >
     <div
@@ -72,11 +72,11 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     color: var(--colors-primaryMid);
   }
 
-  .c-QWATl-eTRBzi-size-sm {
+  .c-QWATl-kUPbCM-size-sm {
     font-size: var(--fontSizes-md);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
-    height: 32px;
+    min-height: 32px;
   }
 
   .c-QWATl-jtgfr-theme-danger {
@@ -84,11 +84,11 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     color: var(--colors-dangerDark);
   }
 
-  .c-QWATl-cGylQj-size-md {
+  .c-QWATl-kemnMd-size-md {
     font-size: var(--fontSizes-md);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
-    height: 48px;
+    min-height: 48px;
   }
 }
 
@@ -102,7 +102,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-cGylQj-size-md"
+    class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-kemnMd-size-md"
     role="status"
   >
     <div
