@@ -192,7 +192,7 @@ describe(`Form component`, () => {
     )
   })
 
-  it('should call onError if there are erros in the form and onSubmit when the errors are gone', async () => {
+  it('should call onError if there are errors in the form and onSubmit when the errors are gone', async () => {
     const onSubmit = jest.fn()
     const onError = jest.fn()
 
