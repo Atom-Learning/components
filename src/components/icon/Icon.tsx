@@ -3,7 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
-const StyledIcon = styled('svg', {
+export const StyledIcon = styled('svg', {
   display: 'inline-block',
   fill: 'none',
   stroke: 'currentcolor',
