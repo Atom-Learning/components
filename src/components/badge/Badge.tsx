@@ -38,17 +38,17 @@ const StyledBadge = styled(Flex, {
       xs: {
         fontSize: '$sm',
         px: '$3',
-        minHeight: 'calc(24px - $space$1)'
+        height: 'calc(24px - $space$1)'
       },
       sm: {
         fontSize: '$md',
         px: '$4',
-        minHeight: 'calc(32px - $space$1)'
+        height: 'calc(32px - $space$1)'
       },
       md: {
         fontSize: '$md',
         px: '$4',
-        minHeight: 'calc(48px - $space$1)'
+        height: 'calc(48px - $space$1)'
       }
     }
   }
