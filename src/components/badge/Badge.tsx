@@ -38,17 +38,17 @@ const StyledBadge = styled(Flex, {
       xs: {
         fontSize: '$sm',
         px: '$3',
-        minHeight: '24px'
+        minHeight: 'calc(24px - $space$1)'
       },
       sm: {
         fontSize: '$md',
         px: '$4',
-        minHeight: '32px'
+        minHeight: 'calc(32px - $space$1)'
       },
       md: {
         fontSize: '$md',
         px: '$4',
-        minHeight: '48px'
+        minHeight: 'calc(48px - $space$1)'
       }
     }
   }
@@ -69,7 +69,8 @@ export const Badge: React.FC<BadgeProps> = ({
         css={{
           whiteSpace: 'nowrap',
           overflowX: 'hidden',
-          textOverflow: 'ellipsis'
+          textOverflow: 'ellipsis',
+          py: '$0'
         }}
       >
         {children}
