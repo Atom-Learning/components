@@ -28,14 +28,19 @@ export type PersistFormWrapperValues = {
 
 export type FormContentValues = {
   formMethods
-  handleSubmit: (data: any) => void | any
+  handleSubmit: (
+    submitHandler: (data: any) => void | any,
+    submitErrorHandler?: (errors: any) => void
+  ) => (e: any) => Promise<void>
   onSubmit: (data: any) => void | any
+  onError?: (errors: any) => void
   children: React.ReactNode | any
 }
 
 export type FormValues = {
   defaultValues?: { [key: string]: string | number }
   onSubmit: (data: any) => void | any
+  onError?: (errors: any) => void
   validationMode?: Mode
   persist?: PersistOptions
 } & (
