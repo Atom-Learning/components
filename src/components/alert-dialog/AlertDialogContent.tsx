@@ -1,4 +1,4 @@
-import { Content, Overlay } from '@radix-ui/react-alert-dialog'
+import { Content, Overlay, Portal } from '@radix-ui/react-alert-dialog'
 import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
@@ -69,8 +69,8 @@ export const AlertDialogContent: React.FC<AlertDialogContentProps> = ({
   size = 'sm',
   ...remainingProps
 }) => (
-  <>
+  <Portal>
     <StyledAlertDialogOverlay />
     <StyledAlertDialogContent size={size} {...remainingProps} />
-  </>
+  </Portal>
 )
