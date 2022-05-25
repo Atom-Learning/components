@@ -2,9 +2,7 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-dMeHjX {
-    background: none;
-    border: none;
+  .c-hOCLBl {
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -42,30 +40,30 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-dMeHjX-LDxTj-theme-light[data-state="active"] {
+  .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-dMeHjX-LDxTj-theme-light[data-state="inactive"] {
+  .c-hOCLBl-LDxTj-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):hover {
+  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.1);
   }
 
-  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):active {
+  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.2);
     box-shadow: none;
   }
 
-  .c-dMeHjX-LDxTj-theme-light[data-disabled],
-  .c-dMeHjX-LDxTj-theme-light[data-disabled]:hover {
+  .c-hOCLBl-LDxTj-theme-light[data-disabled],
+  .c-hOCLBl-LDxTj-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -97,53 +95,51 @@ exports[`Tabs component renders 1`] = `
       style="outline: none;"
       tabindex="0"
     >
-      <button
-        aria-controls="radix-2-content-tab1"
+      <div
+        aria-controls="radix-id-0-1-content-tab1"
         aria-selected="true"
-        class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
+        class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
-        id="radix-2-trigger-tab1"
+        id="radix-id-0-1-trigger-tab1"
         role="tab"
         tabindex="-1"
-        type="button"
       >
         Trigger 1
-      </button>
-      <button
-        aria-controls="radix-2-content-tab2"
+      </div>
+      <div
+        aria-controls="radix-id-0-1-content-tab2"
         aria-selected="false"
-        class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
+        class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-2-trigger-tab2"
+        id="radix-id-0-1-trigger-tab2"
         role="tab"
         tabindex="-1"
-        type="button"
       >
         Trigger 2
-      </button>
+      </div>
     </div>
     <div
-      aria-labelledby="radix-2-trigger-tab1"
+      aria-labelledby="radix-id-0-1-trigger-tab1"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-2-content-tab1"
+      id="radix-id-0-1-content-tab1"
       role="tabpanel"
       tabindex="0"
     >
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-2-trigger-tab2"
+      aria-labelledby="radix-id-0-1-trigger-tab2"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-2-content-tab2"
+      id="radix-id-0-1-content-tab2"
       role="tabpanel"
       tabindex="0"
     />
@@ -153,9 +149,7 @@ exports[`Tabs component renders 1`] = `
 
 exports[`Tabs component renders mobile view 1`] = `
 @media  {
-  .c-dMeHjX {
-    background: none;
-    border: none;
+  .c-hOCLBl {
     cursor: pointer;
     flex-shrink: 0;
     font-family: var(--fonts-body);
@@ -226,30 +220,30 @@ exports[`Tabs component renders mobile view 1`] = `
 }
 
 @media  {
-  .c-dMeHjX-LDxTj-theme-light[data-state="active"] {
+  .c-hOCLBl-LDxTj-theme-light[data-state="active"] {
     color: var(--colors-primary);
     font-weight: 600;
     letter-spacing: -0.005em;
     box-shadow: inset 0 -2px 0 0 currentColor;
   }
 
-  .c-dMeHjX-LDxTj-theme-light[data-state="inactive"] {
+  .c-hOCLBl-LDxTj-theme-light[data-state="inactive"] {
     color: var(--colors-tonal500);
   }
 
-  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):hover {
+  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):hover {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.1);
   }
 
-  .c-dMeHjX-LDxTj-theme-light:not([data-disabled]):active {
+  .c-hOCLBl-LDxTj-theme-light:not([data-disabled]):active {
     color: var(--colors-primary);
     background: rgba(30, 113, 246, 0.2);
     box-shadow: none;
   }
 
-  .c-dMeHjX-LDxTj-theme-light[data-disabled],
-  .c-dMeHjX-LDxTj-theme-light[data-disabled]:hover {
+  .c-hOCLBl-LDxTj-theme-light[data-disabled],
+  .c-hOCLBl-LDxTj-theme-light[data-disabled]:hover {
     color: var(--colors-tonal200);
     cursor: not-allowed;
   }
@@ -361,34 +355,32 @@ exports[`Tabs component renders mobile view 1`] = `
         style="outline: none;"
         tabindex="0"
       >
-        <button
-          aria-controls="radix-5-content-tab1"
+        <div
+          aria-controls="radix-id-0-1-content-tab1"
           aria-selected="true"
-          class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
+          class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
-          id="radix-5-trigger-tab1"
+          id="radix-id-0-1-trigger-tab1"
           role="tab"
           tabindex="-1"
-          type="button"
         >
           Trigger 1 which is going to be long
-        </button>
-        <button
-          aria-controls="radix-5-content-tab2"
+        </div>
+        <div
+          aria-controls="radix-id-0-1-content-tab2"
           aria-selected="false"
-          class="c-dMeHjX c-dMeHjX-LDxTj-theme-light"
+          class="c-hOCLBl c-hOCLBl-LDxTj-theme-light"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
-          id="radix-5-trigger-tab2"
+          id="radix-id-0-1-trigger-tab2"
           role="tab"
           tabindex="-1"
-          type="button"
         >
           Trigger 2 which is going to be even longer
-        </button>
+        </div>
       </div>
       <button
         aria-label="Scroll right"
@@ -408,23 +400,23 @@ exports[`Tabs component renders mobile view 1`] = `
       </button>
     </div>
     <div
-      aria-labelledby="radix-5-trigger-tab1"
+      aria-labelledby="radix-id-0-1-trigger-tab1"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-5-content-tab1"
+      id="radix-id-0-1-content-tab1"
       role="tabpanel"
       tabindex="0"
     >
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-5-trigger-tab2"
+      aria-labelledby="radix-id-0-1-trigger-tab2"
       class="c-cWMaKf c-cWMaKf-fwFiEo-theme-light"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-5-content-tab2"
+      id="radix-id-0-1-content-tab2"
       role="tabpanel"
       tabindex="0"
     />

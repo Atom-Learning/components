@@ -3,7 +3,7 @@
 exports[`Popover component renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
-    aria-controls="radix-0"
+    aria-controls="radix-id-0-1"
     aria-expanded="false"
     aria-haspopup="dialog"
     data-state="closed"
