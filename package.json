@@ -138,6 +138,7 @@
     "@radix-ui/react-slider": "0.1.4",
     "@radix-ui/react-switch": "0.1.5",
     "@radix-ui/react-tabs": "0.1.5",
+    "@radix-ui/react-toggle-group": "0.1.5",
     "@radix-ui/react-tooltip": "0.1.7",
     "@radix-ui/react-visually-hidden": "0.1.4",
     "@reach/combobox": "^0.16.1",

@@ -22,12 +22,14 @@ It displays a badge in top right of the content it is wrapping, which displays a
 Whilst you would normally want to display a number, the `value` prop also supports strings. Here are some usage examples:
 
 ```tsx preview
-<NotificationBadge value={88}>
-  <ActionIcon appearance="outline" size="lg">
-    <Icon is={Controls} />
-  </ActionIcon>
-</NotificationBadge>
-<NotificationBadge value="hi">
-  <Button theme="warning">I'm a button!</Button>
-</NotificationBadge>
+<>
+  <NotificationBadge value={88}>
+    <ActionIcon appearance="outline" size="lg">
+      <Icon is={Controls} />
+    </ActionIcon>
+  </NotificationBadge>
+  <NotificationBadge value="hi">
+    <Button theme="warning">I'm a button!</Button>
+  </NotificationBadge>
+</>
 ```

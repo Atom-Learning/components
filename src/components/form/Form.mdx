@@ -34,6 +34,10 @@ const InputField = ({ label, name, validation }) => {
 }
 ```
 
+## Form submission
+
+To handle form submission, `onSubmit` and optional `onError` callback props can be passed to Form. If there are any validation errors present `onError` will be called, in case of no errors the `onSubmit` will be called instead.
+
 ## ValidationOptions
 
 The `ValidationOptions` type provides preset logic for common validation and processing patterns. You can also define your own custom logic.
