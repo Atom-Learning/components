@@ -1,4 +1,4 @@
-import { Root, Trigger } from '@radix-ui/react-tooltip'
+import { Provider, Root, Trigger } from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
@@ -10,6 +10,7 @@ type TooltipProps = React.ComponentProps<typeof Root>
 export const Tooltip: React.FC<TooltipProps> & {
   Content: typeof TooltipContent
   Trigger: typeof Trigger
+  Provider: typeof Provider
 } = ({ children, delayDuration = 350, ...remainingProps }) => (
   <Root delayDuration={delayDuration} {...remainingProps}>
     {children}
@@ -18,5 +19,6 @@ export const Tooltip: React.FC<TooltipProps> & {
 
 Tooltip.Content = TooltipContent
 Tooltip.Trigger = styled(Trigger, {})
+Tooltip.Provider = Provider
 
 Tooltip.displayName = 'Tooltip'

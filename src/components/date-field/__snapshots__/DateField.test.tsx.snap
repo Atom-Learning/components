@@ -294,7 +294,7 @@ exports[`DateField component renders a field in error state 1`] = `
           value=""
         />
         <button
-          aria-controls="radix-id-0-1"
+          aria-controls="radix-4"
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
@@ -594,7 +594,7 @@ exports[`DateField component renders a field with a text input 1`] = `
           value=""
         />
         <button
-          aria-controls="radix-id-0-1"
+          aria-controls="radix-0"
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"

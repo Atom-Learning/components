@@ -136,6 +136,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 <div
   aria-describedby="radix-5"
   aria-label="Dialog"
+  aria-labelledby="radix-4"
   class="c-ixewiD c-ixewiD-lgqbzh-size-sm"
   data-state="open"
   id="radix-3"
@@ -279,6 +280,7 @@ exports[`Dialog component without close button renders 1`] = `
 <div
   aria-describedby="radix-17"
   aria-label="Dialog"
+  aria-labelledby="radix-16"
   class="c-ixewiD c-ixewiD-lgqbzh-size-sm"
   data-state="open"
   id="radix-15"

@@ -5,6 +5,8 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 
 const StyledTabTrigger = styled(Trigger, {
+  background: 'none',
+  border: 'none',
   cursor: 'pointer',
   flexShrink: 0,
   fontFamily: '$body',
