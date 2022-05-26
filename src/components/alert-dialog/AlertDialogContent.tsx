@@ -20,6 +20,7 @@ const StyledAlertDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
   position: 'fixed',
+  zIndex: 100,
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${fadeIn} 250ms ease-out`
@@ -44,6 +45,7 @@ const StyledAlertDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
+  zIndex: 100,
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
