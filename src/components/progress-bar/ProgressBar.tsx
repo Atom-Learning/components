@@ -39,11 +39,17 @@ type ProgressBarProps = React.ComponentPropsWithoutRef<
 
 export const ProgressBar: React.FC<ProgressBarProps> = ({
   value,
+  max = 100,
   theme = 'primary',
   ...remainingProps
 }) => (
-  <StyledProgressBar theme={theme} {...remainingProps}>
-    <StyledIndicator style={{ width: `${value}%` }} />
+  <StyledProgressBar value={value} max={max} theme={theme} {...remainingProps}>
+    <StyledIndicator
+      style={{
+        width: '100%',
+        transform: `translateX(-${100 - ((value || 0) / max) * 100}%)`
+      }}
+    />
   </StyledProgressBar>
 )
 
