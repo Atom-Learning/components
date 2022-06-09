@@ -20,7 +20,7 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ {
+  .c-cCZzXk {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -31,44 +31,44 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ:first-child {
+  .c-cCZzXk:first-child {
     font-weight: bold;
-  }
-
-  tr:nth-child(odd) .c-dOcJjJ {
-    background: white;
-  }
-
-  tr:nth-child(even) .c-dOcJjJ {
-    background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
   .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
     background: var(--colors-primaryDark);
+  }
+
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+    background: var(--colors-tonal50);
   }
 }
 
@@ -81,7 +81,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
@@ -97,13 +97,13 @@ exports[`Table component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
     >
       <tr
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           This is text
         </td>
@@ -116,7 +116,7 @@ exports[`Table component renders 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           Footer 1
         </td>
@@ -146,7 +146,7 @@ exports[`Table component renders with a themed header 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ {
+  .c-cCZzXk {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -157,39 +157,31 @@ exports[`Table component renders with a themed header 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ:first-child {
+  .c-cCZzXk:first-child {
     font-weight: bold;
-  }
-
-  tr:nth-child(odd) .c-dOcJjJ {
-    background: white;
-  }
-
-  tr:nth-child(even) .c-dOcJjJ {
-    background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -197,9 +189,17 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+    background: var(--colors-tonal50);
+  }
+
+  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
+  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
+  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 
@@ -217,7 +217,7 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-gmYsCp-theme-primary"
@@ -233,13 +233,13 @@ exports[`Table component renders with a themed header 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
     >
       <tr
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           This is text
         </td>
@@ -252,7 +252,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           Footer 1
         </td>
@@ -282,7 +282,7 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ {
+  .c-cCZzXk {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -293,39 +293,31 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ:first-child {
+  .c-cCZzXk:first-child {
     font-weight: bold;
-  }
-
-  tr:nth-child(odd) .c-dOcJjJ {
-    background: white;
-  }
-
-  tr:nth-child(even) .c-dOcJjJ {
-    background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -333,9 +325,17 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+    background: var(--colors-tonal50);
+  }
+
+  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
+  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
+  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
@@ -349,7 +349,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-lhkyUQ-size-lg c-cwQMhQ-gCFJjl-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-goJwcl-size-lg c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
@@ -365,13 +365,13 @@ exports[`Table component renders with size set to lg 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
     >
       <tr
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           This is text
         </td>
@@ -384,7 +384,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           Footer 1
         </td>
@@ -414,7 +414,7 @@ exports[`Table component renders with square corners 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ {
+  .c-cCZzXk {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
@@ -425,39 +425,31 @@ exports[`Table component renders with square corners 1`] = `
     vertical-align: middle;
   }
 
-  .c-dOcJjJ:first-child {
+  .c-cCZzXk:first-child {
     font-weight: bold;
-  }
-
-  tr:nth-child(odd) .c-dOcJjJ {
-    background: white;
-  }
-
-  tr:nth-child(even) .c-dOcJjJ {
-    background: var(--colors-tonal50);
   }
 }
 
 @media  {
-  .c-cwQMhQ-bgSNGZ-size-md .c-dOcJjJ,
-  .c-cwQMhQ-bgSNGZ-size-md .c-GSaiK,
-  .c-cwQMhQ-bgSNGZ-size-md .c-hYjVQ {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:first-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-gCFJjl-corners-round .c-PJLV:last-child .c-dOcJjJ:last-child {
+  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -465,9 +457,17 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-cwQMhQ-lhkyUQ-size-lg .c-dOcJjJ,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-GSaiK,
-  .c-cwQMhQ-lhkyUQ-size-lg .c-hYjVQ {
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+    background: var(--colors-tonal50);
+  }
+
+  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
+  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
+  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
     height: var(--sizes-5);
   }
 }
@@ -481,7 +481,7 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-bgSNGZ-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
@@ -497,13 +497,13 @@ exports[`Table component renders with square corners 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
     >
       <tr
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           This is text
         </td>
@@ -516,7 +516,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-PJLV"
       >
         <td
-          class="c-dOcJjJ"
+          class="c-cCZzXk"
         >
           Footer 1
         </td>

@@ -129,10 +129,18 @@ The `Table` component by default renders with a slight border radius. If you wan
 <Table corners="square">...</Table>
 ```
 
-`Table.Header` accepts a theme prop, the current available options are `primary` and `primaryDark`. The default is `primaryDark`.
+`Table.Header` accepts a theme prop, the current available options are `primary`, `primaryDark`, and `neutral`. The default is `primaryDark`.
 
 ```tsx
 <Table>
-  <Table.Header theme="primary">...</Table.Header>
+  <Table.Header theme="neutral">...</Table.Header>
+</Table>
+```
+
+`Table.Body` accepts an appearance prop, which determines whether the rows will be alternate coloured or not. The current options are `alternating` and `simple`, and the default is `alternating`.
+
+```tsx
+<Table>
+  <Table.Body appearance="simple">...</Table.Body>
 </Table>
 ```
