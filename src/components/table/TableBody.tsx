@@ -4,14 +4,14 @@ import { TableRow } from './TableRow'
 
 const StyledTableBody = styled('tbody', {
   variants: {
-    appearance: {
-      striped: {
+    striped: {
+      true: {
         [`${TableRow}`]: {
           '&:nth-child(odd)': { bg: 'white' },
           '&:nth-child(even)': { bg: '$tonal50' }
         }
       },
-      simple: {
+      false: {
         bg: 'white'
       }
     }
@@ -21,8 +21,8 @@ const StyledTableBody = styled('tbody', {
 type TableBodyProps = React.ComponentProps<typeof StyledTableBody>
 
 export const TableBody: React.FC<TableBodyProps> = ({
-  appearance = 'striped',
+  striped = true,
   ...rest
-}) => <StyledTableBody appearance={appearance} {...rest} />
+}) => <StyledTableBody striped={striped} {...rest} />
 
 TableBody.displayName = 'TableBody'
