@@ -63,11 +63,11 @@ exports[`Table component renders 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(even) {
     background: var(--colors-tonal50);
   }
 }
@@ -97,7 +97,7 @@ exports[`Table component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-striped"
     >
       <tr
         class="c-PJLV"
@@ -189,11 +189,11 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -233,7 +233,7 @@ exports[`Table component renders with a themed header 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-striped"
     >
       <tr
         class="c-PJLV"
@@ -325,11 +325,11 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -365,7 +365,7 @@ exports[`Table component renders with size set to lg 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-striped"
     >
       <tr
         class="c-PJLV"
@@ -457,11 +457,11 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(odd) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-appearance-alternating .c-PJLV:nth-child(even) {
+  .c-PJLV-gQAHHw-appearance-striped .c-PJLV:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -497,7 +497,7 @@ exports[`Table component renders with square corners 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-appearance-alternating"
+      class="c-PJLV c-PJLV-gQAHHw-appearance-striped"
     >
       <tr
         class="c-PJLV"

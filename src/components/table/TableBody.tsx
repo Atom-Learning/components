@@ -5,7 +5,7 @@ import { TableRow } from './TableRow'
 const StyledTableBody = styled('tbody', {
   variants: {
     appearance: {
-      alternating: {
+      striped: {
         [`${TableRow}`]: {
           '&:nth-child(odd)': { bg: 'white' },
           '&:nth-child(even)': { bg: '$tonal50' }
@@ -21,7 +21,7 @@ const StyledTableBody = styled('tbody', {
 type TableBodyProps = React.ComponentProps<typeof StyledTableBody>
 
 export const TableBody: React.FC<TableBodyProps> = ({
-  appearance = 'alternating',
+  appearance = 'striped',
   ...rest
 }) => <StyledTableBody appearance={appearance} {...rest} />
 
