@@ -1,6 +1,7 @@
-import { Content, Overlay } from '@radix-ui/react-alert-dialog'
+import { Content, Overlay, Portal } from '@radix-ui/react-alert-dialog'
 import * as React from 'react'
 
+import { DIALOG_Z_INDEX } from '~/constants/dialog'
 import { keyframes, styled } from '~/stitches'
 import { fadeIn, fadeOut } from '~/utilities'
 
@@ -20,6 +21,7 @@ const StyledAlertDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
   inset: 0,
   position: 'fixed',
+  zIndex: DIALOG_Z_INDEX,
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${fadeIn} 250ms ease-out`
@@ -44,6 +46,7 @@ const StyledAlertDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
+  zIndex: DIALOG_Z_INDEX,
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
@@ -69,8 +72,8 @@ export const AlertDialogContent: React.FC<AlertDialogContentProps> = ({
   size = 'sm',
   ...remainingProps
 }) => (
-  <>
+  <Portal>
     <StyledAlertDialogOverlay />
     <StyledAlertDialogContent size={size} {...remainingProps} />
-  </>
+  </Portal>
 )
