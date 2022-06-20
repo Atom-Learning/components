@@ -42,7 +42,7 @@ export const Grid: React.FC<GridProps> = ({
 }) => (
   <GridContainer
     css={{
-      ...(minItemSize !== undefined && {
+      ...(minItemSize && {
         gridTemplateColumns: `repeat(auto-fit, minmax(${minItemSize}, ${maxItemSize}))`
       }),
       ...(css as any)
