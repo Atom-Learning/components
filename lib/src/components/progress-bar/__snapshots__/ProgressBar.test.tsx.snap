@@ -2,15 +2,6 @@
 
 exports[`ProgressBar component renders a progress bar using default props 1`] = `
 @media  {
-  .c-rTKYu {
-    border-radius: var(--radii-round);
-    background: var(--colors-tonal100);
-    height: var(--sizes-0);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-
   .c-igejEK {
     background-color: currentcolor;
     border-radius: var(--radii-round);
@@ -18,6 +9,15 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     height: 100%;
     position: absolute;
     transition: all 300ms ease-out;
+  }
+
+  .c-rTKYu {
+    border-radius: var(--radii-round);
+    background: var(--colors-tonal100);
+    height: var(--sizes-0);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
   }
 }
 
@@ -32,16 +32,20 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="50%"
     class="c-rTKYu c-rTKYu-ixnjYu-theme-primary"
     data-max="100"
-    data-state="indeterminate"
+    data-state="loading"
+    data-value="50"
     role="progressbar"
   >
     <div
       class="c-igejEK"
       data-max="100"
-      data-state="indeterminate"
-      style="width: 50%;"
+      data-state="loading"
+      data-value="50"
+      style="width: 100%; transform: translateX(-50%);"
     />
   </div>
 </div>
@@ -49,15 +53,6 @@ exports[`ProgressBar component renders a progress bar using default props 1`] = 
 
 exports[`ProgressBar component renders a solid progress bar 1`] = `
 @media  {
-  .c-rTKYu {
-    border-radius: var(--radii-round);
-    background: var(--colors-tonal100);
-    height: var(--sizes-0);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-
   .c-igejEK {
     background-color: currentcolor;
     border-radius: var(--radii-round);
@@ -65,6 +60,15 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     height: 100%;
     position: absolute;
     transition: all 300ms ease-out;
+  }
+
+  .c-rTKYu {
+    border-radius: var(--radii-round);
+    background: var(--colors-tonal100);
+    height: var(--sizes-0);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
   }
 }
 
@@ -80,16 +84,20 @@ exports[`ProgressBar component renders a solid progress bar 1`] = `
     aria-label="label"
     aria-valuemax="100"
     aria-valuemin="0"
+    aria-valuenow="50"
+    aria-valuetext="50%"
     class="c-rTKYu c-rTKYu-ixnjYu-theme-primary"
     data-max="100"
-    data-state="indeterminate"
+    data-state="loading"
+    data-value="50"
     role="progressbar"
   >
     <div
       class="c-igejEK"
       data-max="100"
-      data-state="indeterminate"
-      style="width: 50%;"
+      data-state="loading"
+      data-value="50"
+      style="width: 100%; transform: translateX(-50%);"
     />
   </div>
 </div>

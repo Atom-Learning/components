@@ -2,6 +2,12 @@
 
 exports[`Checkbox component renders a checkbox 1`] = `
 @media  {
+  .c-eOfRZm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .c-emNREM {
     -webkit-appearance: none;
     appearance: none;
@@ -39,12 +45,6 @@ exports[`Checkbox component renders a checkbox 1`] = `
     border-color: var(--colors-tonal400);
     cursor: not-allowed;
     color: var(--colors-tonal400);
-  }
-
-  .c-eOfRZm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 

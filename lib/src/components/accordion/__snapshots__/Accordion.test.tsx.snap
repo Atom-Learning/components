@@ -2,17 +2,25 @@
 
 exports[`Accordion component renders an accordion 1`] = `
 @media  {
-  .c-fGHEql {
-    width: 100%;
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
   }
 
-  .c-hZqVuK {
-    width: 100%;
-    overflow: hidden;
+  .c-iRFrve {
+    transition: transform 300ms;
   }
 
-  .c-hZqVuK:not(:last-child) {
-    margin-bottom: var(--space-1);
+  [data-state="open"] > .c-iRFrve {
+    transform: rotate(180deg);
+  }
+
+  [data-state="closed"] > .c-iRFrve {
+    transform: rotate(0deg);
   }
 
   .c-gErdmT {
@@ -36,27 +44,6 @@ exports[`Accordion component renders an accordion 1`] = `
     border-radius: var(--radii-0);
   }
 
-  .c-iRFrve {
-    transition: transform 300ms;
-  }
-
-  [data-state="open"] > .c-iRFrve {
-    transform: rotate(180deg);
-  }
-
-  [data-state="closed"] > .c-iRFrve {
-    transform: rotate(0deg);
-  }
-
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
   .c-hXRGtr {
     border: 0;
     width: 100%;
@@ -78,9 +65,28 @@ exports[`Accordion component renders an accordion 1`] = `
       animation: k-fNLrdV 300ms ease-out;
     }
 }
+
+  .c-hZqVuK {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .c-hZqVuK:not(:last-child) {
+    margin-bottom: var(--space-1);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
 }
 
 @media  {
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 2;
+  }
+
   .c-gErdmT-irYuKu-theme-primaryDark {
     background: var(--colors-primaryDark);
     color: #fff;
@@ -99,12 +105,6 @@ exports[`Accordion component renders an accordion 1`] = `
   .c-gErdmT-irYuKu-theme-primaryDark:not([disabled]):active {
     background: hsla(228, 82%, 20%, 1);
   }
-
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
-  }
 }
 
 <div>
@@ -116,12 +116,14 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="open"
     >
       <button
-        aria-controls="radix-id-0-2"
+        aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
         class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
+        data-radix-collection-item=""
         data-state="open"
-        id="radix-id-0-1"
+        id="radix-1"
+        type="button"
       >
         TRIGGER1
         <svg
@@ -136,12 +138,12 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-id-0-1"
+        aria-labelledby="radix-1"
         class="c-hXRGtr"
         data-state="open"
-        id="radix-id-0-2"
+        id="radix-0"
         role="region"
-        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-duration: 0s; animation-fill-mode: none;"
       >
         CONTENT1
       </div>
@@ -151,11 +153,13 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="closed"
     >
       <button
-        aria-controls="radix-id-0-4"
+        aria-controls="radix-2"
         aria-expanded="false"
         class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
+        data-radix-collection-item=""
         data-state="closed"
-        id="radix-id-0-3"
+        id="radix-3"
+        type="button"
       >
         TRIGGER2
         <svg
@@ -170,11 +174,11 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-id-0-3"
+        aria-labelledby="radix-3"
         class="c-hXRGtr"
         data-state="closed"
         hidden=""
-        id="radix-id-0-4"
+        id="radix-2"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />

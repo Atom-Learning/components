@@ -2,6 +2,20 @@
 
 exports[`Switch component renders a Switch in "on" state 1`] = `
 @media  {
+  .c-JOzIh {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 50ms;
+    will-change: transform;
+  }
+
+  .c-JOzIh[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
   .c-biUdic {
     -webkit-appearance: none;
     appearance: none;
@@ -32,20 +46,6 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 
   .c-biUdic[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
-  }
-
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
 
@@ -68,6 +68,20 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 
 exports[`Switch component renders a disabled switch 1`] = `
 @media  {
+  .c-JOzIh {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 50ms;
+    will-change: transform;
+  }
+
+  .c-JOzIh[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
   .c-biUdic {
     -webkit-appearance: none;
     appearance: none;
@@ -98,20 +112,6 @@ exports[`Switch component renders a disabled switch 1`] = `
 
   .c-biUdic[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
-  }
-
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
 
@@ -137,6 +137,20 @@ exports[`Switch component renders a disabled switch 1`] = `
 
 exports[`Switch component renders a switch 1`] = `
 @media  {
+  .c-JOzIh {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    transition: transform 50ms;
+    will-change: transform;
+  }
+
+  .c-JOzIh[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
   .c-biUdic {
     -webkit-appearance: none;
     appearance: none;
@@ -167,20 +181,6 @@ exports[`Switch component renders a switch 1`] = `
 
   .c-biUdic[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
-  }
-
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 }
 

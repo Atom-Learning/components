@@ -34,28 +34,41 @@ const gap = Object.keys(theme.space).reduce(
 
 const StyledStack = styled('div', {
   display: 'flex',
-  flexWrap: 'wrap',
   '& > *': {
     m: 0
   },
   variants: {
     direction: {
       row: {
-        flexDirection: 'row',
-        alignItems: 'center'
+        flexDirection: 'row'
       },
       'row-reverse': {
-        flexDirection: 'row-reverse',
-        alignItems: 'center'
+        flexDirection: 'row-reverse'
       },
       column: {
         flexDirection: 'column'
       }
     },
+    wrap: {
+      wrap: {
+        flexWrap: 'wrap'
+      },
+      'no-wrap': {
+        flexWrap: 'no-wrap'
+      },
+      'wrap-reverse': {
+        flexWrap: 'wrap-reverse'
+      }
+    },
     justify: {
       start: { justifyContent: 'flex-start' },
-      end: { justifyContent: 'flex-end' },
-      center: { justifyContent: 'center' }
+      center: { justifyContent: 'center' },
+      end: { justifyContent: 'flex-end' }
+    },
+    align: {
+      start: { alignItems: 'flex-start' },
+      center: { alignItems: 'center' },
+      end: { alignItems: 'flex-end' }
     },
     gap
   }
@@ -67,17 +80,23 @@ export const Stack: React.FC<StackProps> = ({
   css,
   gap = 2,
   direction = 'row',
+  wrap = 'wrap',
   justify = 'start',
+  align,
   ...remainingProps
-}) => (
-  <CSSWrapper css={css}>
-    <StyledStack
-      direction={direction}
-      gap={gap}
-      justify={justify}
-      {...remainingProps}
-    />
-  </CSSWrapper>
-)
+}) => {
+  return (
+    <CSSWrapper css={css}>
+      <StyledStack
+        direction={direction}
+        gap={gap}
+        wrap={wrap}
+        justify={justify}
+        align={(typeof align === 'undefined') && (direction !== 'column') ? 'center' : align}
+        {...remainingProps}
+      />
+    </CSSWrapper>
+  )
+}
 
 Stack.displayName = 'Stack'

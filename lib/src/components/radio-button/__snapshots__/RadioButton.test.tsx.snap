@@ -2,9 +2,12 @@
 
 exports[`Radio component renders a disabled radio button 1`] = `
 @media  {
-  .c-iSwBqf {
-    display: flex;
-    flex-wrap: wrap;
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
   }
 
   .c-hXfYPB {
@@ -41,12 +44,9 @@ exports[`Radio component renders a disabled radio button 1`] = `
     cursor: not-allowed;
   }
 
-  .c-jHqXTB {
-    height: 6px;
-    width: 6px;
-    border-radius: var(--radii-round);
-    background-color: currentcolor;
-    position: absolute;
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -77,9 +77,12 @@ exports[`Radio component renders a disabled radio button 1`] = `
 
 exports[`Radio component renders a radio button 1`] = `
 @media  {
-  .c-iSwBqf {
-    display: flex;
-    flex-wrap: wrap;
+  .c-jHqXTB {
+    height: 6px;
+    width: 6px;
+    border-radius: var(--radii-round);
+    background-color: currentcolor;
+    position: absolute;
   }
 
   .c-hXfYPB {
@@ -116,12 +119,9 @@ exports[`Radio component renders a radio button 1`] = `
     cursor: not-allowed;
   }
 
-  .c-jHqXTB {
-    height: 6px;
-    width: 6px;
-    border-radius: var(--radii-round);
-    background-color: currentcolor;
-    position: absolute;
+  .c-iSwBqf {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

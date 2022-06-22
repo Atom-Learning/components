@@ -2,46 +2,6 @@
 
 exports[`DropdownMenu component renders 1`] = `
 @media  {
-  .c-jFCTlP {
-    background: white;
-    border-radius: var(--radii-0);
-    box-shadow: var(--shadows-0);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP {
-      animation-duration: 250ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
-
   .c-iLVhIC {
     align-items: center;
     color: var(--colors-tonal600);
@@ -91,6 +51,46 @@ exports[`DropdownMenu component renders 1`] = `
   .c-cIdiJW {
     text-decoration: none;
   }
+
+  .c-jFCTlP {
+    background: white;
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP {
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
 }
 
 <body
@@ -113,13 +113,13 @@ exports[`DropdownMenu component renders 1`] = `
         style="position: fixed; top: 0px; left: 0px; opacity: 0; transform: translate3d(0, -200%, 0);"
       >
         <div
-          aria-labelledby="radix-id-0-1"
+          aria-labelledby="radix-3"
           aria-orientation="vertical"
           class="c-jFCTlP"
           data-orientation="vertical"
           data-state="open"
           dir="ltr"
-          id="radix-id-0-2"
+          id="radix-4"
           role="menu"
           style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
           tabindex="-1"
@@ -162,14 +162,14 @@ exports[`DropdownMenu component renders 1`] = `
     </div>
   </div>
   <button
-    aria-controls="radix-id-0-2"
+    aria-controls="radix-4"
     aria-expanded="true"
     aria-haspopup="menu"
     aria-hidden="true"
     class="c-PJLV"
     data-aria-hidden="true"
     data-state="open"
-    id="radix-id-0-1"
+    id="radix-3"
     type="button"
   >
     TRIGGER

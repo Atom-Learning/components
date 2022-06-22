@@ -5,3 +5,4 @@ dist
 yarn-error.log
 coverage
 stats.html
+.DS_Store

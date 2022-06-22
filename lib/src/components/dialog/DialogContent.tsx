@@ -2,6 +2,7 @@ import { Close as CloseIcon } from '@atom-learning/icons'
 import { Close, Content, Overlay, Portal } from '@radix-ui/react-dialog'
 import * as React from 'react'
 
+import { DIALOG_Z_INDEX } from '~/constants/dialog'
 import { keyframes, styled } from '~/stitches'
 import { fadeIn, fadeOut } from '~/utilities'
 
@@ -11,7 +12,6 @@ import { Icon } from '../icon/Icon'
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
 const modalOverlayId = 'modal_overlay'
-const DIALOG_Z_INDEX = 2147483646
 
 const slideIn = keyframes({
   '0%': { transform: contentOffScreen },
@@ -45,6 +45,8 @@ const StyledDialogContent = styled(Content, {
   boxSizing: 'border-box',
   left: '50%',
   maxWidth: '90vw',
+  maxHeight: '90vh',
+  overflowY: 'auto',
   p: '$5',
   position: 'fixed',
   top: '50%',

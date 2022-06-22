@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -190,5 +190,42 @@ describe(`Form component`, () => {
     expect(screen.getByRole('form').getAttribute('data-index-number')).toEqual(
       '12345'
     )
+  })
+
+  it('should call onError if there are errors in the form and onSubmit when the errors are gone', async () => {
+    const onSubmit = jest.fn()
+    const onError = jest.fn()
+
+    render(
+      <div>
+        <Form onSubmit={onSubmit} onError={onError}>
+          <InputField
+            name="test"
+            label="Test"
+            validation={{
+              required: 'Test is required',
+              minLength: {
+                value: 5,
+                message: 'Test needs length 5'
+              }
+            }}
+          />
+          <Button type="submit">Submit</Button>
+        </Form>
+      </div>
+    )
+    await waitFor(() => screen.getByRole('button').click())
+
+    expect(onError).toBeCalledTimes(1)
+    expect(onSubmit).toBeCalledTimes(0)
+
+    const input = screen.getByRole('textbox')
+
+    userEvent.type(input, 'test5')
+
+    await waitFor(() => screen.getByRole('button').click())
+
+    expect(onError).toBeCalledTimes(1)
+    expect(onSubmit).toBeCalledTimes(1)
   })
 })

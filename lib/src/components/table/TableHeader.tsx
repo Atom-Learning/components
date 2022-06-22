@@ -16,6 +16,12 @@ const StyledTableHeader = styled('thead', {
         [`${TableHeaderCell}`]: {
           bg: '$primaryDark'
         }
+      },
+      light: {
+        [`${TableHeaderCell}`]: {
+          bg: '$tonal50',
+          color: '$tonal600'
+        }
       }
     }
   }

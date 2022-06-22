@@ -62,6 +62,7 @@ const FormContent: React.FC<FormContentProps> = ({
   formMethods,
   handleSubmit,
   onSubmit,
+  onError,
   children,
   ...remainingProps
 }) => (
@@ -69,7 +70,7 @@ const FormContent: React.FC<FormContentProps> = ({
     <StyledForm
       aria-label="form"
       {...remainingProps}
-      onSubmit={handleSubmit(onSubmit)}
+      onSubmit={handleSubmit(onSubmit, onError)}
     >
       {children}
     </StyledForm>
@@ -80,6 +81,7 @@ export const Form: React.FC<FormProps> = ({
   children,
   defaultValues = {},
   onSubmit,
+  onError,
   validationMode = 'onBlur',
   render,
   persist,
@@ -102,6 +104,7 @@ export const Form: React.FC<FormProps> = ({
     formMethods,
     handleSubmit,
     onSubmit,
+    onError,
     ...remainingProps
   }
 
