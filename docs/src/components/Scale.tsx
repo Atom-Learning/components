@@ -1,5 +1,5 @@
-import type { CSS } from '@atom-learning/components'
-import { Box, Divider, Flex, Text } from '@atom-learning/components'
+import type { CSS } from '@components'
+import { Box, Divider, Flex, Text } from '@components'
 import * as React from 'react'
 
 type ScaleProps = {

@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@atom-learning/components'
+import { Box, Flex, Text } from '@components'
 import { capitalCase } from 'capital-case'
 import { hsl, parseToHsl } from 'polished'
 import * as React from 'react'

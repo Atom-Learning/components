@@ -1,4 +1,4 @@
-import { Icon, Link, Stack } from '@atom-learning/components'
+import { Icon, Link, Stack } from '@components'
 import { ArrowRightTop } from '@atom-learning/icons'
 import * as React from 'react'
 

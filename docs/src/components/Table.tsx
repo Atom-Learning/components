@@ -1,4 +1,4 @@
-import { styled } from '@atom-learning/components'
+import { styled } from '@components'
 
 export const Table = styled('table', {
   borderCollapse: 'collapse',
