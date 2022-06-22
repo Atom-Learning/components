@@ -11,6 +11,7 @@ import { styled, theme } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
 import { passPropsToChildren } from './utils'
+
 interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   enableTabScrolling?: boolean
   scrollPercentage?: number
@@ -66,7 +67,7 @@ const StyledTriggerList = styled(List, {
     },
     appearance: {
       uppercase: {
-        textTransform: 'uppercase'
+        '& button': { textTransform: 'uppercase' }
       }
     }
   }
