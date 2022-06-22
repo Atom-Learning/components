@@ -17,14 +17,7 @@ const constructSourceUrl = ({ category, id }) => {
 
 const getPagesSource = (source) => {
   if (source === 'components') {
-    return path.resolve(
-      process.cwd(),
-      'node_modules',
-      '@atom-learning',
-      'components',
-      'dist',
-      'docs'
-    )
+    return path.resolve(process.cwd(), '../', 'lib', 'dist', 'docs')
   }
 
   if (source === 'theme') {
@@ -61,15 +54,20 @@ export const getPagesSlugs = async (sources: string[]) => {
 const getMarkdownFile = (basePath, name) => {
   // try to access .mdx initially, attempt .md after
   // true-case-path will error if neither are found
+
   try {
     const file = trueCasePathSync(`${pascalCase(name)}.mdx`, basePath)
     return fs.readFileSync(file, 'utf8')
-  } catch (err) {} // eslint-disable-line no-empty
+  } catch (err) {
+    console.log(err)
+  } // eslint-disable-line no-empty
 
   try {
     const file = trueCasePathSync(`${pascalCase(name)}.md`, basePath)
     return fs.readFileSync(file, 'utf8')
-  } catch (err) {} // eslint-disable-line no-empty
+  } catch (err) {
+    console.log(err)
+  } // eslint-disable-line no-empty
 }
 
 export interface PageBySlug {
