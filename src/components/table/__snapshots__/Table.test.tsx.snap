@@ -10,6 +10,10 @@ exports[`Table component renders 1`] = `
     width: 100%;
   }
 
+  .c-hjAYDb {
+    background: unset;
+  }
+
   .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
@@ -43,19 +47,19 @@ exports[`Table component renders 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -63,11 +67,11 @@ exports[`Table component renders 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 }
@@ -81,13 +85,13 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <th
           class="c-GSaiK"
@@ -97,10 +101,10 @@ exports[`Table component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -113,7 +117,7 @@ exports[`Table component renders 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -136,6 +140,10 @@ exports[`Table component renders with a themed header 1`] = `
     width: 100%;
   }
 
+  .c-hjAYDb {
+    background: unset;
+  }
+
   .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
@@ -169,19 +177,19 @@ exports[`Table component renders with a themed header 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -189,11 +197,11 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -217,13 +225,13 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-gmYsCp-theme-primary"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <th
           class="c-GSaiK"
@@ -233,10 +241,10 @@ exports[`Table component renders with a themed header 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -249,7 +257,7 @@ exports[`Table component renders with a themed header 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -272,6 +280,10 @@ exports[`Table component renders with size set to lg 1`] = `
     width: 100%;
   }
 
+  .c-hjAYDb {
+    background: unset;
+  }
+
   .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
@@ -305,19 +317,19 @@ exports[`Table component renders with size set to lg 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -325,11 +337,11 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -349,13 +361,13 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-goJwcl-size-lg c-cwQMhQ-UpMKF-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-goJwcl-size-lg c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <th
           class="c-GSaiK"
@@ -365,10 +377,10 @@ exports[`Table component renders with size set to lg 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -381,7 +393,7 @@ exports[`Table component renders with size set to lg 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -404,6 +416,10 @@ exports[`Table component renders with square corners 1`] = `
     width: 100%;
   }
 
+  .c-hjAYDb {
+    background: unset;
+  }
+
   .c-GSaiK {
     color: white;
     font-family: var(--fonts-body);
@@ -437,19 +453,19 @@ exports[`Table component renders with square corners 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-UpMKF-corners-round .c-PJLV:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -457,11 +473,11 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gQAHHw-striped-true .c-PJLV:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -487,7 +503,7 @@ exports[`Table component renders with square corners 1`] = `
       class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <th
           class="c-GSaiK"
@@ -497,10 +513,10 @@ exports[`Table component renders with square corners 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gQAHHw-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
@@ -513,7 +529,7 @@ exports[`Table component renders with square corners 1`] = `
       class="c-PJLV"
     >
       <tr
-        class="c-PJLV"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
