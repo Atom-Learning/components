@@ -213,9 +213,9 @@ exports[`SearchInput component renders clear button 1`] = `
     width: 20px;
   }
 
-  .c-fDzwZw-PrXKS-size-lg {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
   }
 }
 
@@ -254,15 +254,11 @@ exports[`SearchInput component renders clear button 1`] = `
     width: 20px;
   }
 
-  .c-fDzwZw-ialwQu-css {
+  .c-fDzwZw-ibONpUy-css {
     position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
+    top: 50%;
+    right: var(--space-1);
+    transform: translateY(-50%);
   }
 }
 
@@ -277,12 +273,12 @@ exports[`SearchInput component renders clear button 1`] = `
     />
     <button
       aria-label="Clear"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
+      class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ibONpUy-css"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

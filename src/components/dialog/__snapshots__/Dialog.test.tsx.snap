@@ -83,9 +83,9 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-lg {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
   }
 
   .c-dbrbZt-hemXWm-size-md {
@@ -126,11 +126,6 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     right: var(--space-4);
     top: var(--space-4);
   }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
-  }
 }
 
 <div
@@ -146,12 +141,12 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -261,9 +256,9 @@ exports[`Dialog component without close button renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-lg {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
   }
 
   .c-dbrbZt-hemXWm-size-md {

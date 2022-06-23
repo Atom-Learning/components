@@ -82,6 +82,7 @@ const StyledButton = styled('button', {
       solid: {}
     },
     size: {
+      sm: { size: '$2 ' },
       md: { size: '$3' },
       lg: { size: '$4' },
       xl: { size: '$5' }
@@ -193,6 +194,15 @@ const StyledButton = styled('button', {
   ]
 })
 
+const getIconSize = (
+  size: 'sm' | 'md' | 'lg' | 'xl',
+  appearance: string
+): string => {
+  if (size === 'sm' || size === 'md' || appearance === 'simple') return size
+  if (size === 'lg') return 'md'
+  return 'lg'
+}
+
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   Stitches.VariantProps<typeof StyledButton> & {
@@ -253,10 +263,11 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           )
 
           return React.cloneElement(child, {
-            css: {
-              size: ['lg', 'xl'].includes(size as string) ? 20 : 16,
-              ...(child.props.css ? child.props.css : {})
-            }
+            size:
+              child.props.size && appearance === 'simple'
+                ? child.props.size
+                : getIconSize(size, appearance),
+            css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}
       </StyledButton>

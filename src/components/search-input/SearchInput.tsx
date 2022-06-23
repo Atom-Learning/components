@@ -86,8 +86,13 @@ export const SearchInput: React.FC<SearchInputProps> = ({
       <ActionIcon
         label={clearText}
         theme="neutral"
-        size={size == 'sm' ? 'md' : 'lg'} // map icon size to the input's size
-        css={{ position: 'absolute', top: 0, right: 0 }}
+        size={size}
+        css={{
+          position: 'absolute',
+          top: '50%',
+          right: '$1',
+          transform: 'translateY(-50%)'
+        }}
         onClick={handleClear}
       >
         <Icon is={Close} />

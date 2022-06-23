@@ -69,7 +69,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         <ActionIcon
           label={labels.previous}
           theme="neutral"
-          size="lg"
+          size="md"
           {...getBackProps({ calendars })}
         >
           <Icon is={ChevronLeft} />
@@ -77,7 +77,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         <ActionIcon
           label={labels.next}
           theme="neutral"
-          size="lg"
+          size="md"
           {...getForwardProps({ calendars })}
         >
           <Icon is={ChevronRight} />
