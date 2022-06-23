@@ -1,4 +1,4 @@
-import { Flex, Icon } from '@components'
+import { Flex, Icon } from '@atom-learning/components'
 import { Hamburger } from '@atom-learning/icons'
 import * as React from 'react'
 

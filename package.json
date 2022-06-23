@@ -1,0 +1,8 @@
+{
+	"private": true,
+	"name": "design-system",
+	"workspaces": [
+		"docs",
+		"lib"
+	]
+}

@@ -1,4 +1,4 @@
-import { Box, Divider, Heading, Link, List, Text } from '@components'
+import { Box, Divider, Heading, Link, List, Text } from '@atom-learning/components'
 import theme from '@atom-learning/theme'
 import hydrate from 'next-mdx-remote/hydrate'
 import renderToString from 'next-mdx-remote/render-to-string'

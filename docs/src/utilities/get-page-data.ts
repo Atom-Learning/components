@@ -1,4 +1,4 @@
-import pkg from '@pkgJson'
+import pkg from '@atom-learning/components/package.json'
 import fs from 'fs'
 import glob from 'glob'
 import matter from 'gray-matter'
@@ -17,7 +17,14 @@ const constructSourceUrl = ({ category, id }) => {
 
 const getPagesSource = (source) => {
   if (source === 'components') {
-    return path.resolve(process.cwd(), '../', 'lib', 'dist', 'docs')
+    return path.resolve(
+      process.cwd(),
+      'node_modules',
+      '@atom-learning',
+      'components',
+      'dist',
+      'docs'
+    )
   }
 
   if (source === 'theme') {

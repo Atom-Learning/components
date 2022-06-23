@@ -1,4 +1,11 @@
-import { Box, CSS, Flex, Icon, SearchInput, Text } from '@components'
+import {
+  Box,
+  CSS,
+  Flex,
+  Icon,
+  SearchInput,
+  Text
+} from '@atom-learning/components'
 import * as Icons from '@atom-learning/icons'
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'

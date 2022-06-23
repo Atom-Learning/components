@@ -1,4 +1,4 @@
-import { Box, Link, Text } from '@components'
+import { Box, Link, Text } from '@atom-learning/components'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
 

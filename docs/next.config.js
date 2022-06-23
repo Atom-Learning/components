@@ -18,19 +18,15 @@ module.exports = withImages({
       config.externals = ['react', ...config.externals]
     }
 
-    config.resolve.alias['react'] = path.resolve(
-      __dirname,
-      '.',
-      'node_modules',
-      'react'
-    )
-
-    config.resolve.alias['react-dom'] = path.resolve(
-      __dirname,
-      '.',
-      'node_modules',
-      'react-dom'
-    )
+    // required to fix import issue with GenMapping, a nested dependency of this project
+    config.module.rules = [
+      ...config.module.rules,
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto'
+      }
+    ]
 
     return config
   },

@@ -11,7 +11,7 @@ yarn add @atom-learning/components @atom-learning/theme
 ```
 
 ```jsx
-import { Box, Heading, Text } from '@components'
+import { Box, Heading, Text } from '@atom-learning/components'
 
 const Component = () => {
   return (

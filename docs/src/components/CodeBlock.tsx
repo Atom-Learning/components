@@ -1,5 +1,5 @@
-import * as Components from '@components'
-import { styled } from '@components'
+import * as Components from '@atom-learning/components'
+import { styled } from '@atom-learning/components'
 import * as Icons from '@atom-learning/icons'
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/nightOwl'

@@ -1,5 +1,5 @@
-import { Box, Heading, Image, styled, Text } from '@components'
-import pkg from '@pkgJson'
+import { Box, Heading, Image, styled, Text } from '@atom-learning/components'
+import pkg from '@atom-learning/components/package.json'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { capitalCase } from 'capital-case'
 import { default as NextLink } from 'next/link'
