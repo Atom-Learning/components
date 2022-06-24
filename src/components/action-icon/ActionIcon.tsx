@@ -194,10 +194,7 @@ const StyledButton = styled('button', {
   ]
 })
 
-const getIconSize = (
-  size: 'sm' | 'md' | 'lg' | 'xl',
-  appearance: string
-): string => {
+const getIconSize = (size: string, appearance: string): string => {
   if (size === 'sm' || size === 'md' || appearance === 'simple') return size
   if (size === 'lg') return 'md'
   return 'lg'
@@ -266,7 +263,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
             size:
               child.props.size && appearance === 'simple'
                 ? child.props.size
-                : getIconSize(size, appearance),
+                : getIconSize(size as string, appearance as string),
             css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}
