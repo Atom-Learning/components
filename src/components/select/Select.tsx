@@ -75,16 +75,23 @@ export type SelectProps = Override<
 >
 
 export const Select: React.FC<SelectProps> = React.forwardRef(
-  ({ placeholder, children, size = 'md', ...remainingProps }, ref) => (
-    <StyledSelect size={size} defaultValue="" {...remainingProps} ref={ref}>
-      {placeholder && (
-        <option disabled hidden value="">
-          {placeholder}
-        </option>
-      )}
-      {children}
-    </StyledSelect>
-  )
+  ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
+    const props = { size, ref, ...remainingProps }
+
+    if (!remainingProps.value && !remainingProps.defaultValue)
+      props.defaultValue = ''
+
+    return (
+      <StyledSelect {...props}>
+        {placeholder && (
+          <option disabled hidden value="">
+            {placeholder}
+          </option>
+        )}
+        {children}
+      </StyledSelect>
+    )
+  }
 )
 
 Select.displayName = 'Select'
