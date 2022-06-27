@@ -4,5 +4,13 @@
 	"workspaces": [
 		"docs",
 		"lib"
-	]
+	],
+	"scripts": {
+		"build:lib": "cd lib && NODE_ENV=production rollup -c",
+		"build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
+		"build:docs": "cd lib && node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+		"dev:lib": "cd lib && NODE_ENV=development rollup -c -w",
+		"dev:site": "cd site && next",
+		"build:site": "cd site && next build"
+	}
 }
