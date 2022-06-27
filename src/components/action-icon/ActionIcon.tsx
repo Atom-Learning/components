@@ -194,12 +194,6 @@ const StyledButton = styled('button', {
   ]
 })
 
-const getIconSize = (size: string, appearance: string): string => {
-  if (size === 'sm' || size === 'md' || appearance === 'simple') return size
-  if (size === 'lg') return 'md'
-  return 'lg'
-}
-
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   Stitches.VariantProps<typeof StyledButton> & {
@@ -263,7 +257,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
             size:
               child.props.size && appearance === 'simple'
                 ? child.props.size
-                : getIconSize(size as string, appearance as string),
+                : size,
+            isInActionIcon: appearance !== 'simple',
             css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}
