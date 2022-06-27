@@ -2,8 +2,8 @@
 	"private": true,
 	"name": "design-system",
 	"workspaces": [
-		"docs",
-		"lib"
+		"lib",
+		"site"
 	],
 	"scripts": {
 		"build:lib": "cd lib && NODE_ENV=production rollup -c",
