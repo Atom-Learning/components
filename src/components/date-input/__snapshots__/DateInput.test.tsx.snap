@@ -108,14 +108,14 @@ exports[`DateInput component renders 1`] = `
     font-size: var(--fontSizes-md);
   }
 
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
+  .c-dbrbZt-fLGGKn-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
     stroke-width: 2;
   }
 
@@ -142,6 +142,11 @@ exports[`DateInput component renders 1`] = `
   .c-fDzwZw-otpKd-cv[disabled] {
     color: var(--colors-tonal400);
     cursor: not-allowed;
+  }
+
+  .c-dbrbZt-fDXBFo-cv {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
   }
 }
 
@@ -177,13 +182,13 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
       data-state="closed"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
+        class="c-dbrbZt c-dbrbZt-fLGGKn-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

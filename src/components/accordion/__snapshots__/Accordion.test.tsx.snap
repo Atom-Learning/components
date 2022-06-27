@@ -81,10 +81,10 @@ exports[`Accordion component renders an accordion 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-sm {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-gErdmT-irYuKu-theme-primaryDark {
@@ -128,7 +128,7 @@ exports[`Accordion component renders an accordion 1`] = `
         TRIGGER1
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-iRFrve"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm c-iRFrve"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -164,7 +164,7 @@ exports[`Accordion component renders an accordion 1`] = `
         TRIGGER2
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-iRFrve"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm c-iRFrve"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

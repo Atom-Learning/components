@@ -45,9 +45,9 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
           label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}
           onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
-          size={size === 'sm' ? 'md' : 'lg'}
+          size={size}
         >
-          <Icon is={isPasswordVisible ? Eye : EyeCrossed} size={size} />
+          <Icon is={isPasswordVisible ? Eye : EyeCrossed} />
         </ActionIcon>
       </Box>
     )

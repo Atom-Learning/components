@@ -12,10 +12,10 @@ export const StyledIcon = styled('svg', {
   verticalAlign: 'middle',
   variants: {
     size: {
-      sm: { size: '$1', strokeWidth: '1.75' },
-      md: { size: '$2', strokeWidth: '2' },
-      lg: { size: '$3', strokeWidth: '2' },
-      xl: { size: '$4', strokeWidth: '2' }
+      xs: { size: '$1', strokeWidth: '1.75' },
+      sm: { size: '$2', strokeWidth: '1.75' },
+      md: { size: '$3', strokeWidth: '2' },
+      lg: { size: '$4', strokeWidth: '2' }
     },
     isInActionIcon: {
       true: {}
@@ -23,17 +23,17 @@ export const StyledIcon = styled('svg', {
   },
   compoundVariants: [
     {
-      size: 'md',
+      size: 'sm',
       isInActionIcon: true,
-      css: { size: 'calc($2 - 2px)' }
+      css: { size: '$1' }
     },
     {
-      size: 'lg',
+      size: 'md',
       isInActionIcon: true,
       css: { size: '$2' }
     },
     {
-      size: 'xl',
+      size: 'lg',
       isInActionIcon: true,
       css: { size: '$3' }
     }
@@ -49,7 +49,7 @@ type IconProps = Override<
 >
 
 export const Icon: React.FC<IconProps> = React.forwardRef(
-  ({ is: SVG, size = 'md', ...remainingProps }, ref) => (
+  ({ is: SVG, size = 'sm', ...remainingProps }, ref) => (
     <StyledIcon
       size={size}
       aria-hidden="true"

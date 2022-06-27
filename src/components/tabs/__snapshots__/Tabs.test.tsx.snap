@@ -266,14 +266,14 @@ exports[`Tabs component renders mobile view 1`] = `
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-kMhpXP-size-xl {
+  .c-fDzwZw-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
+  .c-dbrbZt-fLGGKn-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
     stroke-width: 2;
   }
 
@@ -333,12 +333,12 @@ exports[`Tabs component renders mobile view 1`] = `
     >
       <button
         aria-label="Scroll Left"
-        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-hVkDAC-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-icezigA-css"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-hVkDAC-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-icezigA-css"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -387,12 +387,12 @@ exports[`Tabs component renders mobile view 1`] = `
       </div>
       <button
         aria-label="Scroll right"
-        class="c-fDzwZw c-fDzwZw-kMhpXP-size-xl c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-hVkDAC-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-iczsSGP-css"
+        class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-cmVfvW-cv c-fDwKcF c-fDwKcF-hVkDAC-theme-light c-fDwKcF-ejYaUA-visible-false c-fDwKcF-iczsSGP-css"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

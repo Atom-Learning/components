@@ -70,10 +70,10 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               css={{ position: 'absolute', top: '0', right: '0' }}
               disabled={disabled}
               label={labels.open}
-              size={size === 'sm' ? 'md' : 'lg'}
+              size={size}
               theme="neutral"
             >
-              <Icon size={size} is={CalendarEvent} />
+              <Icon is={CalendarEvent} />
             </ActionIcon>
           </Popover.Trigger>
           <Popover.Content

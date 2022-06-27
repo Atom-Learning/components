@@ -82,10 +82,10 @@ const StyledButton = styled('button', {
       solid: {}
     },
     size: {
-      sm: { size: '$2 ' },
-      md: { size: '$3' },
-      lg: { size: '$4' },
-      xl: { size: '$5' }
+      xs: { size: '$2' },
+      sm: { size: '$3' },
+      md: { size: '$4' },
+      lg: { size: '$5' }
     },
     isRounded: {
       true: {
@@ -209,7 +209,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       children,
       theme = 'primary',
       appearance = 'simple',
-      size = 'md',
+      size = 'sm',
       label,
       href,
       disabled,
@@ -254,11 +254,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           )
 
           return React.cloneElement(child, {
-            size:
-              child.props.size && appearance === 'simple'
-                ? child.props.size
-                : size,
-            isInActionIcon: appearance !== 'simple',
+            size: child.props.size || size,
+            isInActionIcon: !child.props.size,
             css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}

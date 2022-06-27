@@ -105,7 +105,7 @@ exports[`InputField component renders a field in error state 1`] = `
     border: 1px solid var(--colors-danger);
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
+  .c-dbrbZt-eAiySG-size-xs {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.75;
@@ -194,7 +194,7 @@ exports[`InputField component renders a field in error state 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
+          class="c-dbrbZt c-dbrbZt-eAiySG-size-xs c-dbrbZt-ihYlUBO-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

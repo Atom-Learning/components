@@ -86,11 +86,11 @@ export const SearchInput: React.FC<SearchInputProps> = ({
       <ActionIcon
         label={clearText}
         theme="neutral"
-        size={size === 'sm' ? 'md' : 'lg'}
+        size={size}
         css={{ position: 'absolute', top: '0', right: '$1' }}
         onClick={handleClear}
       >
-        <Icon size={size} is={Close} />
+        <Icon is={Close} />
       </ActionIcon>
     )
   }

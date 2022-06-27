@@ -161,7 +161,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
     return (
       <Flex css={{ position: 'relative' }}>
         <StyledChevronIcon
-          size="xl"
+          size="lg"
           label="Scroll Left"
           theme={theme}
           onClick={() => scrollTriggerListTo('left')}
@@ -179,7 +179,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           {passPropsToChildren(children, { theme }, [TabTrigger])}
         </StyledTriggerList>
         <StyledChevronIcon
-          size="xl"
+          size="lg"
           label="Scroll right"
           theme={theme}
           onClick={() => scrollTriggerListTo('right')}

@@ -38,10 +38,10 @@ exports[`FileInput component renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-sm {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 }
 
@@ -83,7 +83,7 @@ exports[`FileInput component renders 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQgHjC-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm c-dbrbZt-idQgHjC-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

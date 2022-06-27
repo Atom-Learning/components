@@ -64,10 +64,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-sm {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-fkUJsw-rloUt-isRounded-true {
@@ -309,10 +309,10 @@ exports[`Button component renders a button with an icon 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-sm {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 }
 
@@ -399,7 +399,7 @@ exports[`Button component renders a button with an icon 1`] = `
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm c-dbrbZt-idQfaGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -813,10 +813,10 @@ exports[`Button component renders a rounded button  1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-sm {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-fkUJsw-rloUt-isRounded-true {
@@ -907,7 +907,7 @@ exports[`Button component renders a rounded button  1`] = `
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-idQfaGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm c-dbrbZt-idQfaGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
