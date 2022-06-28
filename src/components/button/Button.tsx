@@ -109,6 +109,9 @@ export const StyledButton = styled('button', {
       }
     },
     fullWidth: {
+      false: {
+        width: 'auto'
+      },
       true: {
         width: '100%'
       }
