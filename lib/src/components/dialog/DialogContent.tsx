@@ -8,6 +8,7 @@ import { fadeIn, fadeOut } from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
+import { DialogBackground } from './DialogBackground'
 
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
@@ -88,6 +89,10 @@ export const DialogContent: React.FC<DialogContentProps> = ({
 }) => (
   <Portal>
     <StyledDialogOverlay id={modalOverlayId}>
+      {React.Children.map(
+        children,
+        (child: React.ReactElement) => child.type === DialogBackground && child
+      )}
       <StyledDialogContent
         size={size}
         aria-label="Dialog"
@@ -110,7 +115,11 @@ export const DialogContent: React.FC<DialogContentProps> = ({
             <Icon is={CloseIcon} />
           </ActionIcon>
         )}
-        {children}
+        {React.Children.map(
+          children,
+          (child: React.ReactElement) =>
+            child.type !== DialogBackground && child
+        )}
       </StyledDialogContent>
     </StyledDialogOverlay>
   </Portal>
