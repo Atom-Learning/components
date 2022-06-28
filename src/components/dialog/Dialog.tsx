@@ -5,12 +5,14 @@ import { styled } from '~/stitches'
 
 import { DialogClose } from './DialogClose'
 import { DialogContent } from './DialogContent'
+import { DialogBackground } from './DialogBackground'
 
 const StyledDialog = styled(Root, {})
 
 type DialogProps = React.ComponentProps<typeof StyledDialog>
 
 export const Dialog: React.FC<DialogProps> & {
+  Background: typeof DialogBackground
   Close: typeof DialogClose
   Content: typeof DialogContent
   Description: typeof Description
@@ -18,6 +20,7 @@ export const Dialog: React.FC<DialogProps> & {
   Trigger: typeof Trigger
 } = (props) => <StyledDialog {...props} />
 
+Dialog.Background = DialogBackground
 Dialog.Close = DialogClose
 Dialog.Content = DialogContent
 Dialog.Description = Description
