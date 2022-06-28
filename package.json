@@ -39,23 +39,14 @@
     "url": "https://github.com/Atom-Learning/components/issues"
   },
   "homepage": "https://github.com/Atom-Learning/components#readme",
-  "size-limit": [
-    {
-      "limit": "10kb",
-      "path": "dist/index.js",
-      "import": "{ Box }"
-    },
-    {
-      "limit": "16kb",
-      "path": "dist/index.js",
-      "import": "{ Button }"
-    },
-    {
-      "limit": "75kb",
-      "path": "dist/index.js",
-      "import": "{  useAlert, AlertProvider }"
-    }
-  ],
+  "bundlewatch": {
+    "files": [
+      {
+        "path": "dist/index.js",
+        "maxSize": "9.0 kB"
+      }
+    ]
+  },
   "devDependencies": {
     "@atom-learning/icons": "1.5.0",
     "@atom-learning/jest-stitches": "1.0.10",
