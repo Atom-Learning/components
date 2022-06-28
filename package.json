@@ -11,6 +11,31 @@
 		"build:docs": "cd lib && node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
 		"dev:lib": "cd lib && NODE_ENV=development rollup -c -w",
 		"dev:site": "cd site && next",
-		"build:site": "cd site && next build"
+		"build:site": "cd site && next build",
+		"lint-staged": "cd site && yarn run precommit && cd lib && yarn run precommit"
+	},
+	"devDependencies": {
+		"husky": "^4.3.8"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "bash scripts/prevent-commit.sh && yarn lint-staged"
+		}
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		],
+		"rules": {
+			"body-max-length": [
+				0,
+				"always"
+			],
+			"body-max-line-length": [
+				0,
+				"always"
+			]
+		}
 	}
 }
