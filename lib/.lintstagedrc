@@ -4,5 +4,5 @@
     "prettier --config .prettierrc --write",
     "jest --bail --findRelatedTests"
   ],
-  "*.json": "/prettier --config .prettierrc --write"
+  "*.json": "prettier --config .prettierrc --write"
 }

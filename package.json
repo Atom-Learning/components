@@ -12,7 +12,7 @@
 		"dev:lib": "cd lib && NODE_ENV=development rollup -c -w",
 		"dev:site": "cd site && next",
 		"build:site": "cd site && next build",
-		"lint-staged": "cd site && yarn run precommit && cd lib && yarn run precommit"
+		"lint-staged": "cd site && yarn run precommit && cd ../lib && yarn run precommit"
 	},
 	"devDependencies": {
 		"husky": "^4.3.8"
