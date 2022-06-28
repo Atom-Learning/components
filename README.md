@@ -9,3 +9,5 @@ We can run the documentation site locally, with hot-reloading triggered by chang
 First, run `yarn build:docs && yarn dev:lib`. `yarn build:docs` collects the markdown documentation files for each component in `lib` into its `dist` directory, where the documentation site can find them. `yarn dev:lib` compiles the React component library and watches for changes.
 
 In another terminal, run `yarn dev:site` to run the documentation site at `http://localhost:3000`, taking the output as the previous commands as its input.
+
+In the future, you only need to rerun `yarn build:docs` after you either delete the content of `lib/dist` or you add/update some markdown files inside `lib`.
