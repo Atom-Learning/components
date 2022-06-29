@@ -11,3 +11,6 @@ First, run `yarn build:docs && yarn dev:lib`. `yarn build:docs` collects the mar
 In another terminal, run `yarn dev:site` to run the documentation site at `http://localhost:3000`, taking the output as the previous commands as its input.
 
 In the future, you only need to rerun `yarn build:docs` after you either delete the content of `lib/dist` or you add/update some markdown files inside `lib`.
+
+### Tests
+Make sure you run test commands for `lib` components from _within the `lib` directory_, otherwise Jest won't run with the correct configuration and it won't be able to interpret JSX.
