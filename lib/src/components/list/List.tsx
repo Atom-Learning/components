@@ -36,14 +36,16 @@ export const StyledList = styled('ul', {
   }
 })
 
-type ListProps = React.ComponentPropsWithRef<typeof StyledList> & {
+type ListPropsType = React.ComponentPropsWithRef<typeof StyledList> & {
   ordered?: boolean
 }
 
-export const List: React.FC<ListProps> & { Item: typeof StyledLi } = React.forwardRef(({
+type ListType = React.ForwardRefExoticComponent<ListPropsType> & { Item: typeof StyledLi };
+
+export const List = React.forwardRef(({
   size = 'md',
   ordered,
   ...remainingProps
-}, ref) => <StyledList ref={ref} as={ordered ? 'ol' : 'ul'} size={size} {...remainingProps} />)
+}, ref) => <StyledList ref={ref} as={ordered ? 'ol' : 'ul'} size={size} {...remainingProps} />) as ListType
 
 List.Item = StyledLi
