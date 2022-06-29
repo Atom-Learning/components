@@ -37,7 +37,7 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
   }
 })
 
-export const StyledParagraph = styled('p', {
+export const StyledText = styled('p', {
   color: '$tonal600',
   fontFamily: '$body',
   fontWeight: 400,
@@ -52,26 +52,26 @@ export const StyledParagraph = styled('p', {
 })
 
 type TextProps = Override<
-  React.ComponentProps<typeof StyledParagraph>,
+  React.ComponentProps<typeof StyledText>,
   {
     as?:
-      | 'blockquote'
-      | 'caption'
-      | 'dd'
-      | 'dt'
-      | 'figcaption'
-      | 'li'
-      | 'p'
-      | 'span'
-      | 'legend'
-      | React.ComponentType
-      | React.ElementType
+    | 'blockquote'
+    | 'caption'
+    | 'dd'
+    | 'dt'
+    | 'figcaption'
+    | 'li'
+    | 'p'
+    | 'span'
+    | 'legend'
+    | React.ComponentType
+    | React.ElementType
   }
 >
 
 export const Text: React.FC<TextProps> = React.forwardRef(
   ({ size = 'md', ...remainingProps }, ref) => (
-    <StyledParagraph size={size} {...remainingProps} ref={ref} />
+    <StyledText size={size} {...remainingProps} ref={ref} />
   )
 )
 

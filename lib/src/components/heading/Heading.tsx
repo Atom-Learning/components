@@ -48,23 +48,23 @@ export const StyledHeading = styled('h2', {
 })
 
 export type HeadingProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledHeading>,
+  React.ComponentPropsWithRef<typeof StyledHeading>,
   {
     as?:
-      | 'h1'
-      | 'h2'
-      | 'h3'
-      | 'h4'
-      | 'h5'
-      | 'h6'
-      | React.ComponentType
-      | React.ElementType
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | React.ComponentType
+    | React.ElementType
   }
 >
 
-export const Heading: React.FC<HeadingProps> = ({
+export const Heading: React.FC<HeadingProps> = React.forwardRef(({
   size = 'md',
   ...remainingProps
-}) => <StyledHeading size={size} {...remainingProps} />
+}, ref) => <StyledHeading ref={ref} size={size} {...remainingProps} />)
 
 Heading.displayName = 'Heading'
