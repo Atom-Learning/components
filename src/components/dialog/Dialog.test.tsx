@@ -77,3 +77,27 @@ describe('Dialog component without close button', () => {
     expect(dialog).toMatchSnapshot()
   })
 })
+
+describe('Dialog component with custom background', () => {
+  it('renders', async () => {
+    await render(
+      <IdProvider>
+        <Dialog>
+          <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+          <Dialog.Content>
+            <Dialog.Background>CUSTOM BACKGROUND</Dialog.Background>
+            CONTENT
+          </Dialog.Content>
+        </Dialog>
+      </IdProvider>
+    )
+
+    const trigger = await screen.getByText('TRIGGER')
+    userEvent.click(trigger)
+
+    const dialog = await screen.getByRole('dialog')
+
+    // Since background is a sibling to content
+    expect(dialog.parentElement).toMatchSnapshot()
+  })
+})
