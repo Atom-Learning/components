@@ -10,7 +10,8 @@ type RootType = {
   size: 'sm' | 'md' | 'lg'
   orientation?: 'horizontal' | 'vertical'
   gap?: number
-  isFullWidth?: boolean
+  isFullWidth?: boolean,
+  wrap: 'wrap' | 'no-wrap' | 'wrap-reverse'
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
@@ -124,30 +125,30 @@ export const ToggleGroupRoot: React.FC<
   wrap = 'no-wrap',
   ...rest
 }) => {
-  const hasGap = typeof gap === 'number'
-  const childrenArray = React.Children.toArray(children)
-  const direction = orientationToDirection(orientation)
-  return (
-    <StyledRoot
-      direction={direction}
-      hasGap={hasGap}
-      isFullWidth={isFullWidth}
-      orientation={orientation}
-      {...rest}
-    >
-      <Stack
+    const hasGap = typeof gap === 'number'
+    const childrenArray = React.Children.toArray(children)
+    const direction = orientationToDirection(orientation)
+    return (
+      <StyledRoot
         direction={direction}
-        gap={hasGap && gap}
-        align={false}
-        wrap={wrap}
+        hasGap={hasGap}
+        isFullWidth={isFullWidth}
+        orientation={orientation}
+        {...rest}
       >
-        {
-          childrenArray.map((child) => {
-            if (!React.isValidElement(child)) return child
-            return React.cloneElement(child, { ...child.props, size })
-          }) as React.ReactElement[]
-        }
-      </Stack>
-    </StyledRoot>
-  )
-}
+        <Stack
+          direction={direction}
+          gap={hasGap && gap}
+          align={false}
+          wrap={wrap}
+        >
+          {
+            childrenArray.map((child) => {
+              if (!React.isValidElement(child)) return child
+              return React.cloneElement(child, { ...child.props, size })
+            }) as React.ReactElement[]
+          }
+        </Stack>
+      </StyledRoot>
+    )
+  }
