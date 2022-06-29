@@ -21,7 +21,9 @@ jobs:
       - run: yarn install
 
       - name: Test
+        working-directory: lib
         run: yarn test:ci
 
       - name: Validate
+        working-directory: lib
         run: yarn validate

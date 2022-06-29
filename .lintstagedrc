@@ -1,8 +1,0 @@
-{
-  "src/**/*.{js,ts,tsx}": [
-    "node_modules/.bin/eslint --fix --cache --quiet",
-    "node_modules/.bin/prettier --config .prettierrc --write",
-    "node_modules/.bin/jest --bail --findRelatedTests",
-  ],
-  "*.json": "node_modules/.bin/prettier --config .prettierrc --write"
-}
