@@ -2,6 +2,51 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
+  .c-dcjLby > .c-iSnHBU {
+    max-width: 65ch;
+  }
+
+  .c-dcjLby > .c-iSnHBU:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-dcjLby > .c-iSnHBU:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-dcjLby > .c-fIXJvv {
+    max-width: 75ch;
+  }
+
+  .c-dcjLby > .c-fIXJvv:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-dcjLby > .c-iQukjL {
+    max-width: 75ch;
+  }
+
+  .c-dcjLby > .c-iQukjL:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-dcjLby > .c-jpqjUq {
+    margin-top: var(--space-5);
+    margin-bottom: var(--space-5);
+  }
+
+  .c-dcjLby > .c-eWgOGC {
+    display: block;
+  }
+
+  .c-dcjLby > .c-eWgOGC:not(:first-child) {
+    margin-top: var(--space-6);
+  }
+
+  .c-dcjLby > .c-eWgOGC:not(:last-child) {
+    margin-bottom: var(--space-6);
+  }
+
   .c-iSnHBU {
     color: var(--colors-tonal600);
     font-family: var(--fonts-display);
@@ -120,79 +165,37 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-iSnHBU-ibsOPXb-css {
-    max-width: 65ch;
-  }
-
-  .c-iSnHBU-ibsOPXb-css:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-iSnHBU-ibsOPXb-css:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-fIXJvv-ielbxsX-css {
-    max-width: 75ch;
-  }
-
-  .c-fIXJvv-ielbxsX-css:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-jpqjUq-ihYlNNO-css {
-    margin-top: var(--space-5);
-    margin-bottom: var(--space-5);
+  .c-jpqjUq-igmqXFB-css {
     color: red;
-  }
-
-  .c-iQukjL-ielbxsX-css {
-    max-width: 75ch;
-  }
-
-  .c-iQukjL-ielbxsX-css:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-eWgOGC-ictMdSS-css {
-    display: block;
-  }
-
-  .c-eWgOGC-ictMdSS-css:not(:first-child) {
-    margin-top: var(--space-6);
-  }
-
-  .c-eWgOGC-ictMdSS-css:not(:last-child) {
-    margin-bottom: var(--space-6);
   }
 }
 
 <div>
   <div
-    class="c-PJLV"
+    class="c-dcjLby"
   >
     <h2
-      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ibsOPXb-css"
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
     >
       HEADING
     </h2>
     <p
-      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ielbxsX-css"
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
     >
       TEXT
     </p>
     <hr
-      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ihYlNNO-css"
+      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-igmqXFB-css"
     />
     <ul
-      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul c-iQukjL-ielbxsX-css"
+      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul"
     >
       <li
         class="c-PJLV"
       />
     </ul>
     <img
-      class="c-eWgOGC c-eWgOGC-ictMdSS-css"
+      class="c-eWgOGC"
       src=""
     />
   </div>
