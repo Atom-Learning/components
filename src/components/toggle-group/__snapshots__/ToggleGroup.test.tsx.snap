@@ -121,9 +121,9 @@ exports[`ToggleGroup renders 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-dbrbZt-dMrjnF-size-sm {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
     stroke-width: 1.75;
   }
 
@@ -192,7 +192,7 @@ exports[`ToggleGroup renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-sm"
+          class="c-dbrbZt c-dbrbZt-eAiySG-size-sm"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

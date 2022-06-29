@@ -271,9 +271,9 @@ exports[`Tabs component renders mobile view 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-dbrbZt-fLGGKn-size-md {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
+  .c-dbrbZt-hemXWm-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
     stroke-width: 2;
   }
 
@@ -338,7 +338,7 @@ exports[`Tabs component renders mobile view 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-fLGGKn-size-md c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -392,7 +392,7 @@ exports[`Tabs component renders mobile view 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-fLGGKn-size-md c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

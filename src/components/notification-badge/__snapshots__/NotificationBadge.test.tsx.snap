@@ -63,9 +63,9 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-DwSrM-size-lg {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
+  .c-dbrbZt-fLGGKn-size-lg {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
     stroke-width: 2;
   }
 }
@@ -115,7 +115,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-DwSrM-size-lg c-dbrbZt-elrktp-cv c-dbrbZt-iPJLV-css"
+        class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-elrktp-cv c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

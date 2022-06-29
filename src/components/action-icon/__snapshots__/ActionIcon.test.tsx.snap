@@ -33,9 +33,9 @@ exports[`ActionIcon component renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-dMrjnF-size-sm {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
     stroke-width: 1.75;
   }
 }
@@ -60,9 +60,10 @@ exports[`ActionIcon component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dbrbZt-kupcZn-cv {
+  .c-dbrbZt-kSexDl-cv {
     height: var(--sizes-1);
     width: var(--sizes-1);
+    stroke-width: 2;
   }
 }
 
