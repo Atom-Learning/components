@@ -69,7 +69,7 @@ type TextProps = Override<
   }
 >
 
-export const Text: React.FC<TextProps> = React.forwardRef(
+export const Text: React.ForwardRefExoticComponent<TextProps> = React.forwardRef(
   ({ size = 'md', ...remainingProps }, ref) => (
     <StyledText size={size} {...remainingProps} ref={ref} />
   )

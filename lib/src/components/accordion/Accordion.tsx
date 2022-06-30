@@ -11,11 +11,11 @@ const StyledRoot = styled(Root, {
   width: '100%'
 })
 
-type AccordionPropsType = React.ComponentProps<typeof StyledRoot> & {
+type AccordionProps = React.ComponentProps<typeof StyledRoot> & {
   type: 'single' | 'multiple'
 }
 
-type AccordionType = React.ForwardRefExoticComponent<AccordionPropsType> & {
+type AccordionType = React.ForwardRefExoticComponent<AccordionProps> & {
   Item: typeof AccordionItem
   Content: typeof AccordionContent
   Trigger: typeof AccordionTrigger

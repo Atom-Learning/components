@@ -13,7 +13,7 @@ export const StyledDivider = styled('hr', {
   }
 })
 
-export const Divider: React.FC<React.ComponentProps<typeof StyledDivider>> = React.forwardRef(({
+export const Divider: React.ForwardRefExoticComponent<React.ComponentProps<typeof StyledDivider>> = React.forwardRef(({
   orientation = 'horizontal',
   ...rest
 }, ref) => {
