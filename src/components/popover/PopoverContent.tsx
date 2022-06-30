@@ -19,7 +19,6 @@ const StyledContent = styled(Content, {
   boxShadow: '$2',
   maxWidth: '90vw',
   p: '$sizes$2',
-  pr: '$6',
   position: 'relative',
   '@allowMotion': {
     animationDuration: '75ms',
@@ -37,6 +36,10 @@ const StyledContent = styled(Content, {
       sm: { maxWidth: '200px' },
       md: { maxWidth: '400px' },
       lg: { maxWidth: '600px' }
+    },
+    closeButtonVisible: {
+      true: { pr: '$6' },
+      false: {}
     }
   }
 })
@@ -67,6 +70,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
     size={size}
     side={side}
     sideOffset={sideOffset}
+    closeButtonVisible={showCloseButton}
     {...remainingProps}
   >
     {showCloseButton && (

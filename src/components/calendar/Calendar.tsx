@@ -18,7 +18,12 @@ import { Day } from './Day'
 const Grid = styled('div', {
   display: 'grid',
   gridTemplateColumns: 'repeat(7, 1fr)',
-  gridGap: '$1 $2'
+  variants: {
+    layout: {
+      compact: { gridGap: '$1 $1' },
+      comfortable: { gridGap: '$1 $2' }
+    }
+  }
 })
 
 export type CalendarTranslationProps = {
@@ -28,7 +33,8 @@ export type CalendarTranslationProps = {
 }
 
 type CalendarProps = DayzedInterface &
-  CalendarTranslationProps & {
+  CalendarTranslationProps &
+  React.ComponentProps<typeof Grid> & {
     css?: CSS
     refDateToday?: React.RefObject<HTMLButtonElement>
     refDateSelected?: React.RefObject<HTMLButtonElement>
@@ -50,6 +56,7 @@ export const Calendar: React.FC<CalendarProps> = ({
   firstDayOfWeek = 0,
   monthNames = monthNamesShort,
   weekdayNames = weekdayNamesShort,
+  layout,
   labels = { next: 'Next month', previous: 'Previous month' },
   ...remainingProps
 }) => {
@@ -90,7 +97,7 @@ export const Calendar: React.FC<CalendarProps> = ({
               {monthNames[month]} {year}
             </Heading>
           </Flex>
-          <Grid css={{ mb: '$3' }}>
+          <Grid layout={layout} css={{ mb: '$3' }}>
             {offsetWeekdayNames(weekdayNames, firstDayOfWeek).map((weekday) => (
               <Text
                 as="span"
@@ -102,7 +109,7 @@ export const Calendar: React.FC<CalendarProps> = ({
               </Text>
             ))}
           </Grid>
-          <Grid>
+          <Grid layout={layout}>
             {weeks.map((week, weekIndex) =>
               week.map((dateObj, index) => {
                 const key = `${month}${year}${weekIndex}${index}`
