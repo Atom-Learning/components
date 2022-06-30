@@ -91,7 +91,8 @@ export const DialogContent: React.FC<DialogContentProps> = ({
     <StyledDialogOverlay id={modalOverlayId}>
       {React.Children.map(
         children,
-        (child: React.ReactElement) => child.type === DialogBackground && child
+        (child?: React.ReactElement) =>
+          child?.type === DialogBackground && child
       )}
       <StyledDialogContent
         size={size}
@@ -117,8 +118,8 @@ export const DialogContent: React.FC<DialogContentProps> = ({
         )}
         {React.Children.map(
           children,
-          (child: React.ReactElement) =>
-            child.type !== DialogBackground && child
+          (child?: React.ReactElement) =>
+            child?.type !== DialogBackground && child
         )}
       </StyledDialogContent>
     </StyledDialogOverlay>
