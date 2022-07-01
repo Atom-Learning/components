@@ -25,9 +25,11 @@ jobs:
         run: yarn install
 
       - name: Run ESLint
+        working-directory: lib
         run: yarn lint
 
       - name: Run Prettier
+        working-directory: lib
         run: yarn format
 
       - name: Commit changes

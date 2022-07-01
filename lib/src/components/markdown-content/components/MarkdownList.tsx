@@ -18,7 +18,7 @@ export const MarkdownList: React.FC<MarkdownListProps> = ({
 }) => (
   <List
     css={{ '& p:before, & p:after': { display: 'none' }, ...css } as CSS}
-    ordered={node.ordered}
+    ordered={node.ordered || undefined}
   >
     {node.children?.map(handleNode)}
   </List>
