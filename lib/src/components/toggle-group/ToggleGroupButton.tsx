@@ -81,9 +81,9 @@ export const StyledButton = styled(StyledItem, {
   ]
 })
 
-export const ToggleGroupButton: React.FC<
+export const ToggleGroupButton: React.ForwardRefExoticComponent<
   React.ComponentProps<typeof StyledButton>
-> = ({ size, children, ...rest }) => {
+> = React.forwardRef(({ size, children, ...rest }, ref) => {
   const childrenArray = React.Children.toArray(children)
   const isSingleChild = childrenArray.length <= 1
   const isIconOnly =
@@ -92,7 +92,7 @@ export const ToggleGroupButton: React.FC<
     childrenArray[0]?.type === Icon
 
   return (
-    <StyledButton size={size} isIconOnly={isIconOnly} {...rest}>
+    <StyledButton ref={ref} size={size} isIconOnly={isIconOnly} {...rest}>
       {
         childrenArray.map((child) => {
           if (!isSingleChild && typeof child === 'string')
@@ -106,4 +106,4 @@ export const ToggleGroupButton: React.FC<
       }
     </StyledButton>
   )
-}
+})

@@ -1,0 +1,93 @@
+@import 'settings.colors';
+@import 'settings.layout';
+@import 'settings.typography';
+
+.item {
+  background-color: white;
+  appearance: none;
+  outline: none;
+  border: none;
+  text-align: center;
+  width: 100%;
+  transition: 0.25s ease-out;
+  transform: translateY(0);
+  @include space-inset-stretch(2);
+  &.half {
+    width: 50%;
+  }
+}
+
+.item.editable {
+  &:hover {
+    cursor: pointer;
+    background: tonal(8);
+    transition: 0.3s;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.screen {
+  position: relative;
+}
+
+.screen_delete {
+  background: none;
+  height: 80px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 150ms ease-out;
+  width: 30px;
+  border: none;
+}
+
+.screen_content {
+  @include space-inset(2);
+  border-radius: 12px;
+  align-content: baseline;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 300px;
+  transition: background-color 250ms ease-out;
+  position: relative;
+  @include space-stack(4);
+}
+
+.screen_content.empty,
+.screen_content.highlighted,
+.screen:hover .screen_content {
+  background-color: tonal(8);
+}
+
+.screen_content::after {
+  color: tonal(6);
+  content: 'Drop a particle item here';
+  font-size: 1.25em;
+  font-weight: 600;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms ease-out;
+}
+
+.screen_content.empty::after {
+  opacity: 1;
+}
+
+.screen:hover .screen_delete {
+  transform: translate(100%, -50%);
+  opacity: 1;
+}
+
+.dragging {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}

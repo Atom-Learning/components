@@ -64,6 +64,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   const handleClear = () => {
     setInputValue('')
     setActiveIcon(INPUT_ICON.SEARCH)
+    // trigger onChange here
   }
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {

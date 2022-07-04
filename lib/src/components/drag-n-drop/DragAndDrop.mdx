@@ -1,0 +1,35 @@
+---
+title: Drag and Drop
+component: DndKitCore,DndKitParticles,DndKitSortable,ToggleGroup
+category: Surfaces
+---
+
+Base dnd-kit
+
+```tsx preview
+<DndKitCore />
+```
+
+Particle dnd-kit
+
+```tsx preview
+<DndKitParticles />
+```
+
+Sortable dnd-kit
+
+```tsx preview
+<DndKitSortable
+  as={ToggleGroup.Root}
+  defaultSort={[0, 1]}
+  onSortChange={(value) => console.log({ value })}
+  type="single"
+>
+  <DndKitSortable.Item sortableId={1} as={ToggleGroup.Button} value="a">
+    A
+  </DndKitSortable.Item>
+  <DndKitSortable.Item sortableId={0} as={ToggleGroup.Button} value="b">
+    B
+  </DndKitSortable.Item>
+</DndKitSortable>
+```
