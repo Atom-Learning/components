@@ -12,7 +12,7 @@ export const MarkdownLink: React.FC<MarkdownLinkProps> = ({
   node,
   handleNode
 }) => (
-  <Link title={node.title} href={node.url}>
+  <Link title={node.title ?? undefined} href={node.url}>
     {node.children?.map(handleNode)}
   </Link>
 )

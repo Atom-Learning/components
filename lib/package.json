@@ -1,0 +1,209 @@
+{
+  "name": "@atom-learning/components",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "version": "0.0.0-semantically-released",
+  "description": "",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "NODE_ENV=development rollup -c -w",
+    "build:lib": "NODE_ENV=production rollup -c",
+    "build:types": "NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
+    "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "start:sandbox": "vite -c ./sandbox/vite.config.js",
+    "add-component": "node ./scripts/add-component.mjs",
+    "prepublishOnly": "run-s clean build:lib build:types build:docs",
+    "clean": "del ./dist/",
+    "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --silent --ci",
+    "validate": "run-p validate:**",
+    "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
+    "validate:size": "yarn build:lib && size-limit",
+    "validate:types": "tsc --noEmit",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atom-Learning/components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atom-Learning/components/issues"
+  },
+  "homepage": "https://github.com/Atom-Learning/components#readme",
+  "size-limit": [
+    {
+      "limit": "10kb",
+      "path": "dist/index.js",
+      "import": "{ Box }"
+    },
+    {
+      "limit": "16kb",
+      "path": "dist/index.js",
+      "import": "{ Button }"
+    },
+    {
+      "limit": "75kb",
+      "path": "dist/index.js",
+      "import": "{  useAlert, AlertProvider }"
+    }
+  ],
+  "devDependencies": {
+    "@atom-learning/icons": "1.5.0",
+    "@atom-learning/jest-stitches": "1.0.10",
+    "@atom-learning/theme": "1.0.1",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@radix-ui/react-id": "0.1.5",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/npm": "^7.1.1",
+    "@semantic-release/release-notes-generator": "^9.0.2",
+    "@size-limit/preset-small-lib": "^7.0.5",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^12.8.1",
+    "@types/jest": "^26.0.20",
+    "@types/jest-axe": "^3.5.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "@vitejs/plugin-react-refresh": "^1.3.3",
+    "alias-hq": "^5.3.0",
+    "change-case": "^4.1.2",
+    "chokidar": "^3.5.1",
+    "del-cli": "^3.0.1",
+    "es-jest": "^1.5.0",
+    "esbuild": "^0.14.10",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "glob": "^7.1.6",
+    "husky": "^4.3.8",
+    "jest": "^27.0.6",
+    "jest-axe": "^4.1.0",
+    "jest-dom": "^4.0.0",
+    "lint-staged": "^10.5.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "prompts": "^2.4.0",
+    "react-docgen-typescript": "2.1.0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-esbuild": "^4.8.2",
+    "rollup-plugin-summary": "^1.3.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^4.2.2",
+    "semantic-release": "^17.4.2",
+    "semantic-release-slack-bot": "^2.1.1",
+    "size-limit": "^7.0.5",
+    "stitches-reset": "^1.0.0",
+    "tsc-alias": "^1.3.5",
+    "typescript": "4.2.2",
+    "vite": "^2.2.4",
+    "yargs": "^16.2.0"
+  },
+  "peerDependencies": {
+    "@atom-learning/icons": "^0.3.0",
+    "@atom-learning/theme": "^0.1.0-beta.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "0.1.6",
+    "@radix-ui/react-alert-dialog": "0.1.7",
+    "@radix-ui/react-checkbox": "0.1.5",
+    "@radix-ui/react-dialog": "0.1.7",
+    "@radix-ui/react-dropdown-menu": "0.1.6",
+    "@radix-ui/react-popover": "0.1.6",
+    "@radix-ui/react-progress": "0.1.4",
+    "@radix-ui/react-radio-group": "0.1.5",
+    "@radix-ui/react-slider": "0.1.4",
+    "@radix-ui/react-switch": "0.1.5",
+    "@radix-ui/react-tabs": "0.1.5",
+    "@radix-ui/react-toggle-group": "0.1.5",
+    "@radix-ui/react-tooltip": "0.1.7",
+    "@radix-ui/react-visually-hidden": "0.1.4",
+    "@reach/combobox": "^0.16.1",
+    "@stitches/react": "^1.2.8",
+    "@types/react": "^17.0.30",
+    "color2k": "^2.0.0",
+    "dayjs": "^1.10.7",
+    "dayzed": "^3.2.2",
+    "dlv": "^1.1.3",
+    "invariant": "^2.2.4",
+    "mdast-util-directive": "1.0.1",
+    "mdast-util-from-markdown": "0.8.5",
+    "micromark-extension-directive": "1.4.0",
+    "pure-react-carousel": "^1.27.6",
+    "react-hook-form": "^6.15.4",
+    "react-hook-form-persist": "^2.0.0",
+    "react-hot-toast": "^1.0.2",
+    "react-player": "^2.9.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "throttle-debounce": "^3.0.1",
+    "uid": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "bash scripts/prevent-commit.sh && lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-length": [
+        0,
+        "always"
+      ],
+      "body-max-line-length": [
+        0,
+        "always"
+      ]
+    }
+  },
+  "release": {
+    "branches": [
+      "main",
+      "feat/semantic-release"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "semantic-release-slack-bot",
+        {
+          "packageName": "@atom-learning/components",
+          "branchesConfig": [
+            {
+              "pattern": "main",
+              "notifyOnFail": true,
+              "notifyOnSuccess": true
+            }
+          ]
+        }
+      ]
+    ]
+  }
+}
