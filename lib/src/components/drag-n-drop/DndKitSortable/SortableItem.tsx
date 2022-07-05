@@ -16,5 +16,5 @@ export function SortableItem({ as: Component = 'div', sortableId, ...rest }) {
         transition,
     };
 
-    return <Component ref={setNodeRef} style={style} {...attributes} {...listeners} {...rest} />;
+    return <Component ref={setNodeRef} handle={true} style={style} {...attributes} {...listeners} {...rest} />;
 }
