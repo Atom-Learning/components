@@ -12,9 +12,6 @@ category: Navigation
   <ActionIcon label="Attach a file" appearance="simple">
     <Icon is={Clip} />
   </ActionIcon>
-  <ActionIcon label="Attach a file" appearance="subtle">
-    <Icon is={Clip} />
-  </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline">
     <Icon is={Clip} />
   </ActionIcon>
@@ -26,13 +23,10 @@ category: Navigation
 
 ## Rounded Variant
 
-Setting `isRounded` makes the Action circular when paired with the options "subtle", "outline" and "solid" for the `appearance` prop
+Setting `isRounded` makes the Action circular when paired with the options "outline" and "solid" for the `appearance` prop
 
 ```tsx preview
 <>
-  <ActionIcon label="Attach a file" appearance="subtle" isRounded>
-    <Icon is={Bell} />
-  </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline" isRounded>
     <Icon is={Bell} />
   </ActionIcon>
@@ -48,7 +42,7 @@ Passing `disabled` makes the Action Icon take a disabled appearance, where any c
 
 ```tsx preview
 <>
-  <ActionIcon label="Attach a file" appearance="subtle" disabled>
+  <ActionIcon label="Attach a file" appearance="simple" disabled>
     <Icon is={Bell} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline" disabled>
