@@ -19,31 +19,3 @@ exports[`CSSWrapper component > renders if passed CSS blob 1`] = `
   </div>
 </div>
 `;
-
-exports[`CSSWrapper component doesn't render if not passed CSS blob 1`] = `
-<div>
-  <p>
-    Example text
-  </p>
-</div>
-`;
-
-exports[`CSSWrapper component renders if passed CSS blob 1`] = `
-@media  {
-  .c-PJLV-ikLAKdM-css {
-    margin: auto;
-    height: 100px;
-    width: 100px;
-  }
-}
-
-<div>
-  <div
-    class="c-PJLV c-PJLV-ikLAKdM-css"
-  >
-    <p>
-      Example text
-    </p>
-  </div>
-</div>
-`;
