@@ -87,7 +87,7 @@ describe(`DateField component`, () => {
         </Form>
       </IdProvider>
     )
-    userEvent.click(getByRole('button', { name: /submit/i }))
+    await userEvent.click(getByRole('button', { name: /submit/i }))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()
@@ -107,7 +107,7 @@ describe(`DateField component`, () => {
       </Form>
     )
 
-    userEvent.click(getByRole('button', { name: /submit/i }))
+    await userEvent.click(getByRole('button', { name: /submit/i }))
     await findByText(errorText)
 
     expect(await axe(container)).toHaveNoViolations()

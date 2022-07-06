@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Form } from '../'
 import { SliderField } from '.'
@@ -14,7 +15,7 @@ const props = {
 describe('SliderField component', () => {
   it('renders', async () => {
     const { container } = render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <SliderField {...props} />
       </Form>
     )
@@ -24,7 +25,7 @@ describe('SliderField component', () => {
 
   it('properly passes down min and max to slider', async () => {
     await render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <SliderField {...props} min={25} max={75} />
       </Form>
     )
@@ -40,7 +41,7 @@ describe('SliderField component', () => {
   //In the future we hope to find a better solution.
   it.skip('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <SliderField {...props} />
       </Form>
     )

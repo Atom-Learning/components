@@ -1,16 +1,17 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Calendar } from '.'
 
 // NOTE: We need to set the date or the 'isToday' class on individual
 // dates will cause these snapshots to fail every new day this test is
 // run. Setting this system time means this is kept consistent.
-Date.now = jest.fn(() => Date.parse('2021-12-14'))
+Date.now = vi.fn(() => Date.parse('2021-12-14'))
 
 const props = {
-  onDateSelected: jest.fn(),
+  onDateSelected: vi.fn(),
   date: new Date('12/25/21')
 }
 

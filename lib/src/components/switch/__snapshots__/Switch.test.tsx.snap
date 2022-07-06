@@ -1,54 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Switch component renders a Switch in "on" state 1`] = `
-@media  {
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: var(--colors-tonal200);
-    border: none;
-    border-radius: var(--radii-round);
-    cursor: pointer;
-    display: flex;
-    overflow: hidden;
-    padding: var(--space-0);
-    position: relative;
-    transition: all 50ms ease-out;
-    width: var(--sizes-4);
-  }
-
-  .c-biUdic:hover {
-    background-color: var(--colors-tonal300);
-  }
-
-  .c-biUdic:focus {
-    outline: 2px solid var(--colors-primary);
-    outline-offset: 1px;
-  }
-
-  .c-biUdic[data-state="checked"] {
-    background-color: var(--colors-primary);
-  }
-
-  .c-biUdic[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
-  }
-}
-
+exports[`Switch component > renders a Switch in "on" state 1`] = `
 <div>
   <button
     aria-checked="true"
@@ -66,55 +18,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 </div>
 `;
 
-exports[`Switch component renders a disabled switch 1`] = `
-@media  {
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: var(--colors-tonal200);
-    border: none;
-    border-radius: var(--radii-round);
-    cursor: pointer;
-    display: flex;
-    overflow: hidden;
-    padding: var(--space-0);
-    position: relative;
-    transition: all 50ms ease-out;
-    width: var(--sizes-4);
-  }
-
-  .c-biUdic:hover {
-    background-color: var(--colors-tonal300);
-  }
-
-  .c-biUdic:focus {
-    outline: 2px solid var(--colors-primary);
-    outline-offset: 1px;
-  }
-
-  .c-biUdic[data-state="checked"] {
-    background-color: var(--colors-primary);
-  }
-
-  .c-biUdic[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
-  }
-}
-
+exports[`Switch component > renders a disabled switch 1`] = `
 <div>
   <button
     aria-checked="false"
@@ -135,55 +39,7 @@ exports[`Switch component renders a disabled switch 1`] = `
 </div>
 `;
 
-exports[`Switch component renders a switch 1`] = `
-@media  {
-  .c-JOzIh {
-    background-color: white;
-    border-radius: var(--radii-round);
-    display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    transition: transform 50ms;
-    will-change: transform;
-  }
-
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: var(--colors-tonal200);
-    border: none;
-    border-radius: var(--radii-round);
-    cursor: pointer;
-    display: flex;
-    overflow: hidden;
-    padding: var(--space-0);
-    position: relative;
-    transition: all 50ms ease-out;
-    width: var(--sizes-4);
-  }
-
-  .c-biUdic:hover {
-    background-color: var(--colors-tonal300);
-  }
-
-  .c-biUdic:focus {
-    outline: 2px solid var(--colors-primary);
-    outline-offset: 1px;
-  }
-
-  .c-biUdic[data-state="checked"] {
-    background-color: var(--colors-primary);
-  }
-
-  .c-biUdic[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
-  }
-}
-
+exports[`Switch component > renders a switch 1`] = `
 <div>
   <button
     aria-checked="false"

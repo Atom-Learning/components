@@ -1,4 +1,24 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
+
+exports[`CSSWrapper component > doesn't render if not passed CSS blob 1`] = `
+<div>
+  <p>
+    Example text
+  </p>
+</div>
+`;
+
+exports[`CSSWrapper component > renders if passed CSS blob 1`] = `
+<div>
+  <div
+    class="c-PJLV c-PJLV-ikLAKdM-css"
+  >
+    <p>
+      Example text
+    </p>
+  </div>
+</div>
+`;
 
 exports[`CSSWrapper component doesn't render if not passed CSS blob 1`] = `
 <div>

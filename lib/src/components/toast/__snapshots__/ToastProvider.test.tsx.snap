@@ -1,24 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Toast component renders 1`] = `
-@media  {
-  .c-knRjyP {
-    left: var(--space-2);
-    position: fixed;
-    top: var(--space-2);
-    right: var(--space-2);
-    z-index: 2147483647;
-  }
-
-@media (min-width: 550px) {
-    .c-knRjyP {
-      top: var(--space-3);
-      right: auto;
-      left: calc(50% - 200px);
-    }
-}
-}
-
+exports[`Toast component > renders 1`] = `
 <div>
   <div
     class="c-knRjyP"

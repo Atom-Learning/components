@@ -1,49 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Loader component renders a loader 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-jBOHFZ {
-    animation-name: k-gJNjLs;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    background-color: currentColor;
-    border-radius: var(--radii-round);
-  }
-
-  .c-jBOHFZ:nth-child(1) {
-    animation-delay: -300ms;
-  }
-
-  .c-jBOHFZ:nth-child(2) {
-    animation-delay: -150ms;
-  }
-
-  .c-jBOHFZ:nth-child(3) {
-    animation-delay: 0;
-  }
-}
-
-@media  {
-  .c-jBOHFZ-jIYkAt-size-md {
-    height: 6px;
-    width: 6px;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-}
-
-@media  {
-  .c-dhzjXW-ibICGYT-css {
-    justify-content: center;
-  }
-}
-
+exports[`Loader component > renders a loader 1`] = `
 <div>
   <div
     class="c-dhzjXW c-dhzjXW-ibICGYT-css"

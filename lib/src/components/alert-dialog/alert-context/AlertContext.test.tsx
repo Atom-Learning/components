@@ -3,6 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
+import { vi } from 'vitest'
 
 import { AlertProvider, useAlert } from './AlertContext'
 
@@ -63,7 +64,7 @@ describe('Alert context', () => {
   })
 
   it('onAction is called correctly', async () => {
-    const onActionMock = jest.fn()
+    const onActionMock = vi.fn()
     render(<AlertContextTest onAction={onActionMock} />)
     const trigger = screen.getByText('TRIGGER')
 

@@ -3,6 +3,7 @@ import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Form } from '../'
 import { RadioButtonField } from '.'
@@ -44,10 +45,10 @@ describe('RadioButtonField component', () => {
   })
 
   it('allows an external on value change handler to be passed to the component', async () => {
-    const onValueChangeSpy = jest.fn()
+    const onValueChangeSpy = vi.fn()
     render(<ExampleRadioButtonField onValueChange={onValueChangeSpy} />)
 
-    userEvent.click(screen.getByLabelText('2'))
+    await userEvent.click(screen.getByLabelText('2'))
     await waitFor(() => {
       expect(onValueChangeSpy).toHaveBeenCalledTimes(1)
       expect(onValueChangeSpy).toHaveBeenCalledWith('2')

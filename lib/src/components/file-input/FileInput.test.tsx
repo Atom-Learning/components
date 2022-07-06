@@ -1,13 +1,14 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { FileInput } from '.'
 import { FileInputProps } from './FileInput'
 
 describe('FileInput component', () => {
   const props: FileInputProps = {
-    onFileSelect: jest.fn()
+    onFileSelect: vi.fn()
   }
 
   it('renders', async () => {

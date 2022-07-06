@@ -1,44 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Badge component renders 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-QWATl {
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--radii-0);
-    border: 1px solid #FFFFFF;
-    font-family: var(--fonts-body);
-  }
-}
-
-@media  {
-  .c-QWATl-eUcpXf-theme-info {
-    background: var(--colors-primaryLight);
-    color: var(--colors-primaryMid);
-  }
-
-  .c-QWATl-gMcPmy-size-sm {
-    font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-    height: calc(32px - var(--space-1));
-  }
-}
-
-@media  {
-  .c-PJLV-iguVXTk-css {
-    white-space: nowrap;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    padding-top: var(--space-0);
-    padding-bottom: var(--space-0);
-  }
-}
-
+exports[`Badge component > renders 1`] = `
 <div>
   <div
     class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-gMcPmy-size-sm"
@@ -53,57 +15,7 @@ exports[`Badge component renders 1`] = `
 </div>
 `;
 
-exports[`Badge component renders a md size and danger theme 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-QWATl {
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--radii-0);
-    border: 1px solid #FFFFFF;
-    font-family: var(--fonts-body);
-  }
-}
-
-@media  {
-  .c-QWATl-eUcpXf-theme-info {
-    background: var(--colors-primaryLight);
-    color: var(--colors-primaryMid);
-  }
-
-  .c-QWATl-gMcPmy-size-sm {
-    font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-    height: calc(32px - var(--space-1));
-  }
-
-  .c-QWATl-jtgfr-theme-danger {
-    background: var(--colors-dangerLight);
-    color: var(--colors-dangerDark);
-  }
-
-  .c-QWATl-jFTdoT-size-md {
-    font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
-    height: calc(48px - var(--space-1));
-  }
-}
-
-@media  {
-  .c-PJLV-iguVXTk-css {
-    white-space: nowrap;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-    padding-top: var(--space-0);
-    padding-bottom: var(--space-0);
-  }
-}
-
+exports[`Badge component > renders a md size and danger theme 1`] = `
 <div>
   <div
     class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-jFTdoT-size-md"

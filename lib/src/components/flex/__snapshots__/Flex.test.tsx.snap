@@ -1,20 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Flex component renders 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-}
-
-@media  {
-  .c-dhzjXW-ikLAKdM-css {
-    margin: auto;
-    height: 100px;
-    width: 100px;
-  }
-}
-
+exports[`Flex component > renders 1`] = `
 <div>
   <div
     class="c-dhzjXW c-dhzjXW-ikLAKdM-css"

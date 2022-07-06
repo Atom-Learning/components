@@ -1,13 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
-@media  {
-  .c-iSwBqf {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
+exports[`RadioButtonGroup component > renders an empty radio button group 1`] = `
 <div>
   <div
     class="c-iSwBqf"

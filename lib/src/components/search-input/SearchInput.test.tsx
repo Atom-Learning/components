@@ -1,6 +1,7 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { SearchInput } from '.'
 
@@ -18,7 +19,7 @@ describe('SearchInput component', () => {
   })
 
   it('calls onChange with user input', async () => {
-    const mockOnChange = jest.fn()
+    const mockOnChange = vi.fn()
 
     render(<SearchInput placeholder="Search" onChange={mockOnChange} />)
 

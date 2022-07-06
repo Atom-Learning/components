@@ -1,3 +1,5 @@
+import { vi } from 'vitest'
+
 type JestToErrorArg = Parameters<
   jest.Matchers<unknown, () => unknown>['toThrow']
 >[0]
@@ -14,7 +16,7 @@ export const expectToThrow = (
 ): void => {
   // Even though the error is caught, it still gets printed to the console
   // so we mock that out to avoid the wall of red text.
-  const spy = jest.spyOn(console, 'error')
+  const spy = vi.spyOn(console, 'error')
   spy.mockImplementation(() => null)
 
   expect(func).toThrow(error)

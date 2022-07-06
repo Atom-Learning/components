@@ -2,12 +2,13 @@ import { Ok } from '@atom-learning/icons'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Icon } from '../icon'
 import { Button } from '.'
 
 describe(`Button component`, () => {
-  const props = { onClick: jest.fn() }
+  const props = { onClick: vi.fn() }
 
   it('renders a button', async () => {
     const { container } = render(<Button {...props}>BUTTON</Button>)
@@ -125,7 +126,7 @@ describe(`Button component`, () => {
   })
 
   it('onClick is called when button is clicked', async () => {
-    const handleClick = jest.fn()
+    const handleClick = vi.fn()
     render(<Button onClick={handleClick}>BUTTON</Button>)
 
     fireEvent.click(screen.getByRole('button'))
@@ -184,7 +185,7 @@ describe(`Button component`, () => {
     })
 
     it('onClick is prevented if button is in loading state', async () => {
-      const handleClick = jest.fn()
+      const handleClick = vi.fn()
       render(
         <Button onClick={handleClick} isLoading>
           BUTTON

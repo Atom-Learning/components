@@ -33,7 +33,7 @@ describe('FieldWrapper component', () => {
   it('links the label to an input', async () => {
     render(<ExampleField />)
 
-    userEvent.click(await screen.findByText('Example Field'))
+    await userEvent.click(await screen.findByText('Example Field'))
 
     expect(await screen.findByRole('textbox')).toHaveFocus()
   })

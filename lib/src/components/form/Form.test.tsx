@@ -2,6 +2,7 @@ import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Button, InputField, PasswordField } from '../'
 import { Form } from '.'
@@ -11,7 +12,7 @@ describe(`Form component`, () => {
   // TODO: figure out why ...
   it.skip('renders a form', async () => {
     const { container } = render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <InputField name="name" label="Name" />
       </Form>
     )
@@ -23,7 +24,7 @@ describe(`Form component`, () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <InputField name="name" label="Name" />
       </Form>
     )
@@ -33,7 +34,7 @@ describe(`Form component`, () => {
 
   it('passes error messages to fields', async () => {
     render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={vi.fn()}>
         <InputField
           name="name"
           label="Name"
@@ -43,13 +44,13 @@ describe(`Form component`, () => {
           name="password"
           validation={{ required: 'Password is required' }}
         />
-        <Button type="submit" onClick={jest.fn()}>
+        <Button type="submit" onClick={vi.fn()}>
           Submit
         </Button>
       </Form>
     )
 
-    userEvent.click(screen.getByText('Submit'))
+    await userEvent.click(screen.getByText('Submit'))
 
     expect(await screen.findByText('Name is required'))
     expect(await screen.findByText('Password is required'))
@@ -58,7 +59,7 @@ describe(`Form component`, () => {
   it('passes form methods to render prop function', async () => {
     render(
       <Form
-        onSubmit={jest.fn()}
+        onSubmit={vi.fn()}
         render={({ formState }) => (
           <>
             <InputField
@@ -72,7 +73,7 @@ describe(`Form component`, () => {
             />
             <Button
               type="submit"
-              onClick={jest.fn()}
+              onClick={vi.fn()}
               disabled={!formState.isValid}
             >
               Submit
@@ -87,7 +88,7 @@ describe(`Form component`, () => {
 
   it('saves form data to sessionStorage when persist prop is sent through', async () => {
     render(
-      <Form onSubmit={jest.fn()} persist={{ id: 'nameAndYearGroup' }}>
+      <Form onSubmit={vi.fn()} persist={{ id: 'nameAndYearGroup' }}>
         <InputField
           name="name"
           label="Name"
@@ -98,7 +99,7 @@ describe(`Form component`, () => {
           label="Year Group"
           validation={{ required: 'Year group is required' }}
         />
-        <Button type="submit" onClick={jest.fn()}>
+        <Button type="submit" onClick={vi.fn()}>
           Submit
         </Button>
       </Form>
@@ -111,21 +112,21 @@ describe(`Form component`, () => {
 
   it('checks user input values are being persisted in sessionStorage', async () => {
     render(
-      <Form onSubmit={jest.fn()} persist={{ id: 'nameForm' }}>
+      <Form onSubmit={vi.fn()} persist={{ id: 'nameForm' }}>
         <InputField
           name="name"
           label="Name"
           type="text"
           validation={{ required: 'Name is required' }}
         />
-        <Button type="submit" onClick={jest.fn()}>
+        <Button type="submit" onClick={vi.fn()}>
           Submit
         </Button>
       </Form>
     )
     const input = screen.getByRole('textbox', { name: 'Name' })
 
-    userEvent.type(input, 'Kyle Lowry')
+    await userEvent.type(input, 'Kyle Lowry')
     expect(input).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
@@ -135,7 +136,7 @@ describe(`Form component`, () => {
   it('saves form data to sessionStorage excluding secret field', async () => {
     render(
       <Form
-        onSubmit={jest.fn()}
+        onSubmit={vi.fn()}
         persist={{ id: 'nameAndSecret', exclude: ['secret'] }}
       >
         <InputField
@@ -150,7 +151,7 @@ describe(`Form component`, () => {
           type="text"
           validation={{ required: 'Secret is required' }}
         />
-        <Button type="submit" onClick={jest.fn()}>
+        <Button type="submit" onClick={vi.fn()}>
           Submit
         </Button>
       </Form>
@@ -159,8 +160,8 @@ describe(`Form component`, () => {
     const nameInput = screen.getByRole('textbox', { name: 'Name' })
     const secretInput = screen.getByRole('textbox', { name: 'Secret' })
 
-    userEvent.type(nameInput, 'Kawhi Leonard')
-    userEvent.type(secretInput, 'Very secret secret')
+    await userEvent.type(nameInput, 'Kawhi Leonard')
+    await userEvent.type(secretInput, 'Very secret secret')
 
     const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
     expect(parsedStorage).toEqual(expect.anything())
@@ -172,7 +173,7 @@ describe(`Form component`, () => {
     render(
       <div>
         <Form
-          onSubmit={jest.fn()}
+          onSubmit={vi.fn()}
           persist={{ id: 'cityForm' }}
           data-index-number="12345"
         >
@@ -181,7 +182,7 @@ describe(`Form component`, () => {
             label="City"
             validation={{ required: 'City is required' }}
           />
-          <Button type="submit" onClick={jest.fn()}>
+          <Button type="submit" onClick={vi.fn()}>
             Submit
           </Button>
         </Form>
@@ -193,8 +194,8 @@ describe(`Form component`, () => {
   })
 
   it('should call onError if there are errors in the form and onSubmit when the errors are gone', async () => {
-    const onSubmit = jest.fn()
-    const onError = jest.fn()
+    const onSubmit = vi.fn()
+    const onError = vi.fn()
 
     render(
       <div>
@@ -221,7 +222,7 @@ describe(`Form component`, () => {
 
     const input = screen.getByRole('textbox')
 
-    userEvent.type(input, 'test5')
+    await userEvent.type(input, 'test5')
 
     await waitFor(() => screen.getByRole('button').click())
 

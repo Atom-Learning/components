@@ -25,10 +25,10 @@ describe('PasswordInput component', () => {
 
     expect(input).toHaveAttribute('type', 'password')
 
-    userEvent.click(screen.getByLabelText('Show password'))
+    await userEvent.click(screen.getByLabelText('Show password'))
     expect(input).toHaveAttribute('type', 'text')
 
-    userEvent.click(screen.getByLabelText('Hide password'))
+    await userEvent.click(screen.getByLabelText('Hide password'))
     expect(input).toHaveAttribute('type', 'password')
   })
 })

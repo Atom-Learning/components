@@ -1,42 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`List component renders a list 1`] = `
-@media  {
-  .c-iQukjL {
-    font-family: var(--fonts-body);
-    margin: unset;
-    padding: unset;
-  }
-
-  .c-iQukjL > .c-PJLV:not(:last-child) {
-    margin-bottom: var(--space-2);
-  }
-
-  .c-iQukjL > .c-PJLV:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media  {
-  .c-iQukjL-bfiEAN-size-md {
-    font-size: var(--fontSizes-md);
-    line-height: 1.5;
-  }
-
-  .c-iQukjL-DlQlZ-as-ul {
-    padding-left: var(--space-3);
-  }
-
-  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
-    padding-left: var(--space-2);
-  }
-
-  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
-    content: "•";
-    font-weight: bold;
-  }
-}
-
+exports[`List component > renders a list 1`] = `
 <div>
   <ul
     class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul"

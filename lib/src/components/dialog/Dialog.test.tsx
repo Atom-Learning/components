@@ -37,7 +37,7 @@ describe(`Dialog component`, () => {
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
 
     trigger.focus()
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     expect(await screen.queryByText('CONTENT')).toBeInTheDocument()
 
@@ -72,7 +72,7 @@ describe('Dialog component without close button', () => {
     )
 
     const trigger = await screen.getByText('TRIGGER')
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     const dialog = await screen.getByRole('dialog')
     expect(dialog).toMatchSnapshot()
@@ -94,7 +94,7 @@ describe('Dialog component with custom background', () => {
     )
 
     const trigger = await screen.getByText('TRIGGER')
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     const dialog = await screen.getByRole('dialog')
 

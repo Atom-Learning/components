@@ -2,6 +2,7 @@ import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { DateInput } from '.'
 
@@ -32,7 +33,7 @@ describe('DateInput component', () => {
   })
 
   it('allows an external change handler to be passed to the component', async () => {
-    const changeSpy = jest.fn()
+    const changeSpy = vi.fn()
     render(<DateInput aria-label="test" onChange={changeSpy} />)
 
     const button = await screen.findByRole('button')

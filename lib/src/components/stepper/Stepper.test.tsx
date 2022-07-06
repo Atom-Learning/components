@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+import { vi } from 'vitest'
 
 import { Stepper } from './Stepper'
 
@@ -9,8 +10,8 @@ describe('Stepper', () => {
   beforeEach(() => {
     props = {
       stepCount: 3,
-      onComplete: jest.fn(),
-      onStepChange: jest.fn()
+      onComplete: vi.fn(),
+      onStepChange: vi.fn()
     }
   })
 
@@ -86,7 +87,7 @@ describe('Stepper', () => {
       </Stepper>
     )
     // clear the onStepChange mock, because it's getting called with `0` when the component initializes
-    jest.clearAllMocks()
+    vi.clearAllMocks()
 
     // after initialization, try to click the final step. onStepChange should not get called
     fireEvent.click(screen.getByText('3'))
@@ -96,7 +97,7 @@ describe('Stepper', () => {
     fireEvent.click(screen.getByText('Next'))
     fireEvent.click(screen.getByText('Next'))
 
-    jest.clearAllMocks()
+    vi.clearAllMocks()
     fireEvent.click(screen.getByText('1'))
     expect(props.onStepChange).toHaveBeenCalledWith(0)
 
@@ -139,7 +140,7 @@ describe('Stepper', () => {
 
   it("doesn't allow navigating out of the bullets range when no onComplete is passed", () => {
     render(
-      <Stepper allowSkip stepCount={3} onStepChange={jest.fn()}>
+      <Stepper allowSkip stepCount={3} onStepChange={vi.fn()}>
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
         <Stepper.StepForward label={() => 'Next'} />
@@ -165,7 +166,7 @@ describe('Stepper', () => {
   })
 
   it('allows overriding default forward event', () => {
-    const onClickFn = jest.fn()
+    const onClickFn = vi.fn()
     render(
       <Stepper {...props}>
         <Stepper.StepBack label={() => 'Back'} />
@@ -174,7 +175,7 @@ describe('Stepper', () => {
       </Stepper>
     )
     // clear the onStepChange mock, because it's getting called with `0` when the component initializes
-    jest.clearAllMocks()
+    vi.clearAllMocks()
     fireEvent.click(screen.getByText('Next'))
     expect(props.onStepChange).not.toHaveBeenCalled()
     expect(onClickFn).toHaveBeenCalled()

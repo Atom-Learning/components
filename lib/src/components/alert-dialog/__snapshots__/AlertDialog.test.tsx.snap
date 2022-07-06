@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`AlertDialog component renders the trigger with the dialog hidden by default 1`] = `
+exports[`AlertDialog component > renders the trigger with the dialog hidden by default 1`] = `
 <div>
   <button
     aria-controls="radix-0"

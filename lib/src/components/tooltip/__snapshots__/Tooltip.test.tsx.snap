@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Tooltip component renders a tooltip 1`] = `
+exports[`Tooltip component > renders a tooltip 1`] = `
 <div>
   <button
     aria-describedby="radix-0"
