@@ -62,21 +62,13 @@ export const SearchInput: React.FC<SearchInputProps> = ({
     value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
   )
 
-  const searchBoxRef = React.useRef<HTMLInputElement>(null)
-
   const handleClear = () => {
     setInputValue('')
     setActiveIcon(INPUT_ICON.SEARCH)
-
-    const nativeInputValueSetter = (
-      Object.getOwnPropertyDescriptor(
-        window.HTMLInputElement.prototype,
-        'value'
-      ) || { set: (value) => null }
-    ).set
-    nativeInputValueSetter?.call(searchBoxRef?.current, '')
-    const event = new Event('input', { bubbles: true })
-    searchBoxRef?.current?.dispatchEvent(event)
+    onChange?.({
+      currentTarget: { value: '' },
+      target: { value: '' }
+    } as React.ChangeEvent<HTMLInputElement>)
   }
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,7 +103,6 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   return (
     <Box css={{ position: 'relative', ...css }}>
       <StyledSearchInput
-        ref={searchBoxRef}
         size={size}
         type="search"
         {...remainingProps}
