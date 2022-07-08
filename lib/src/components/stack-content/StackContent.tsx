@@ -3,83 +3,43 @@ import * as React from 'react'
 import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
 
-import { Divider } from '../divider/Divider'
-import { Heading } from '../heading/Heading'
-import { Image } from '../image/Image'
-import { List } from '../list/List'
-import {
-  MarkdownHeading,
-  MarkdownImage,
-  MarkdownList,
-  MarkdownParagraph,
-  MarkdownThematicBreak
-} from '../markdown-content/components'
-import { Text } from '../text/Text'
+import { StyledDivider } from '../divider/Divider'
+import { StyledHeading } from '../heading/Heading'
+import { StyledImage } from '../image/Image'
+import { StyledList } from '../list/List'
+import { StyledText } from '../text/Text'
 
-const StyledStackContent = styled('div', {})
+const StyledStackContent = styled('div', {
+  [`& > ${StyledHeading}`]: {
+    maxWidth: '65ch',
+    '&:not(:first-child)': { mt: '$5' },
+    '&:not(:last-child)': { mb: '$5' }
+  },
+  [`& > ${StyledText}`]: {
+    maxWidth: '75ch',
+    '&:not(:last-child)': { mb: '$5' }
+  },
+  [`& > ${StyledList}`]: {
+    maxWidth: '75ch',
+    '&:not(:last-child)': { mb: '$5' }
+  },
+  [`& > ${StyledDivider}`]: {
+    my: '$5'
+  },
+  [`& > ${StyledImage}`]: {
+    display: 'block',
+    '&:not(:first-child)': { mt: '$6' },
+    '&:not(:last-child)': { mb: '$6' }
+  }
+})
 
 type StackContentProps = React.ComponentProps<typeof StyledStackContent> & {
   children: React.ReactNode
   css?: CSS
 }
 
-const cloneWithCss = (child: React.ReactElement, css: CSS) =>
-  React.cloneElement(child, {
-    css: {
-      ...css,
-      ...(child.props.css ? child.props.css : {})
-    }
-  })
-
-export const StackContent: React.FC<StackContentProps> = ({
-  children,
-  ...remainingProps
-}) => (
-  <StyledStackContent {...remainingProps}>
-    {React.Children.map(children, (child) => {
-      if (!React.isValidElement(child)) {
-        return child
-      }
-
-      const type = child?.type
-
-      if (type === Heading || type === MarkdownHeading) {
-        return cloneWithCss(child, {
-          maxWidth: '65ch',
-          '&:not(:first-child)': { mt: '$5' },
-          '&:not(:last-child)': { mb: '$5' }
-        })
-      }
-
-      if (
-        type === Text ||
-        type === MarkdownParagraph ||
-        type === List ||
-        type === MarkdownList
-      ) {
-        return cloneWithCss(child, {
-          maxWidth: '75ch',
-          '&:not(:last-child)': { mb: '$5' }
-        })
-      }
-
-      if (type === Divider || type === MarkdownThematicBreak) {
-        return cloneWithCss(child, {
-          my: '$5'
-        })
-      }
-
-      if (type === Image || type === MarkdownImage) {
-        return cloneWithCss(child, {
-          display: 'block',
-          '&:not(:first-child)': { mt: '$6' },
-          '&:not(:last-child)': { mb: '$6' }
-        })
-      }
-
-      return child
-    })}
-  </StyledStackContent>
-)
+export const StackContent: React.ForwardRefExoticComponent<StackContentProps> = React.forwardRef((props, ref) => (
+  <StyledStackContent ref={ref} {...props} />
+))
 
 StackContent.displayName = 'StackContent'

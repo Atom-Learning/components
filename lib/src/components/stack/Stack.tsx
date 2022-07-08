@@ -63,20 +63,25 @@ const StyledStack = styled('div', {
     justify: {
       start: { justifyContent: 'flex-start' },
       center: { justifyContent: 'center' },
-      end: { justifyContent: 'flex-end' }
+      end: { justifyContent: 'flex-end' },
+      false: {}
     },
     align: {
       start: { alignItems: 'flex-start' },
       center: { alignItems: 'center' },
-      end: { alignItems: 'flex-end' }
+      end: { alignItems: 'flex-end' },
+      false: {}
     },
-    gap
+    gap: {
+      ...gap,
+      false: {}
+    }
   }
 })
 
-type StackProps = React.ComponentProps<typeof StyledStack> & { css?: CSS }
+type StackPropsType = React.ComponentProps<typeof StyledStack> & { css?: CSS }
 
-export const Stack: React.FC<StackProps> = ({
+export const Stack: React.FC<StackPropsType> = ({
   css,
   gap = 2,
   direction = 'row',
