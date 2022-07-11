@@ -36,7 +36,7 @@ const StyledBullet = styled(Flex, {
   }
 })
 
-const StepsContainer = styled(Flex, {
+const StepperStepsContainer = styled(Flex, {
   justifyContent: 'space-between',
   variants: {
     orientation: {
@@ -166,7 +166,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   }
 
   return (
-    <StepsContainer css={css} {...rest} orientation={orientation}>
+    <StepperStepsContainer css={css} {...rest} orientation={orientation}>
       {steps.map((step, index) => {
         const bulletState = getBulletState(index)
         const seperatorState = getSeparatorState(index)
@@ -227,6 +227,6 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
           </StepContainer>
         )
       })}
-    </StepsContainer>
+    </StepperStepsContainer>
   )
 }
