@@ -28,7 +28,7 @@ export const Stepper: React.FC<IStepperProps> & {
       stepCount={count}
       allowSkip={allowSkip}
       onComplete={onComplete}
-      onStepChange={onStepChange}
+      onStepChange={stepCount ? onStepChange : undefined}
       orientation={orientation}
       steps={steps || Array(count).fill('')}
     >

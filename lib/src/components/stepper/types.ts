@@ -17,9 +17,9 @@ export type Orientation = 'vertical' | 'horizontal'
 
 export type Context = {
   steps: Step[]
-  goToPreviousStep: () => void
-  goToNextStep: () => void
-  goToStep: (index: number) => void
+  goToPreviousStep?: () => void
+  goToNextStep?: () => void
+  goToStep?: (index: number) => void
   activeStep: number
   viewedSteps: number[]
   allowSkip?: boolean
@@ -27,7 +27,7 @@ export type Context = {
 }
 
 export type StepperProviderProps = {
-  stepCount: number
+  stepCount?: number
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void
@@ -37,7 +37,7 @@ export type StepperProviderProps = {
 
 export interface IStepperProps {
   css?: CSS
-  stepCount: number
+  stepCount?: number
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void

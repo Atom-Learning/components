@@ -67,12 +67,6 @@ Below is an example that shows how to use the controlled component. Each object 
 
 ```tsx preview
 <Stepper
-  stepCount={2}
-  allowSkip
-  onComplete={() => console.log('Finished')}
-  onStepChange={(activeStep) =>
-    console.log('Do something with the active step')
-  }
   steps={[
     {
       label: 'Step 1',

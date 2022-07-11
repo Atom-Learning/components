@@ -225,12 +225,11 @@ describe('Stepper', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('does not call the onStepChange handler when a controlled component', () => {
+  it('does not call the onStepChange handler when used as a controlled component', () => {
     const onStepChange = jest.fn()
 
     render(
       <Stepper
-        {...props}
         onStepChange={onStepChange}
         steps={[
           {

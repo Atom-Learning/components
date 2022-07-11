@@ -26,19 +26,18 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
 
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])
 
-  React.useEffect(() => {
-    const isControlled = steps.filter((step) => !step.label).length === 0
+  const isControlled = !stepCount
 
+  React.useEffect(() => {
     setviewedSteps((prev) =>
       prev.includes(activeStep) ? prev : [...prev, activeStep]
     )
-    if (!isControlled) {
-      onStepChange?.(activeStep)
-    }
-  }, [activeStep, onStepChange, steps])
+
+    onStepChange?.(activeStep)
+  }, [activeStep, onStepChange])
 
   const goToNextStep = () => {
-    if (steps[activeStep]?.status) return
+    if (isControlled) return
     if (onComplete && activeStep === stepCount - 1) {
       return onComplete()
     }
@@ -48,12 +47,10 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   }
 
   const goToPreviousStep = () => {
-    if (steps[activeStep]?.status) return
     setActiveStep((current) => current - 1)
   }
 
   const goToStep = (index: number) => {
-    if (steps[index]?.status) return
     setActiveStep(index)
   }
 
@@ -61,9 +58,9 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     <StepperContext.Provider
       value={{
         steps: steps || Array(stepCount).fill(''),
-        goToPreviousStep,
-        goToNextStep,
-        goToStep,
+        goToPreviousStep: isControlled ? undefined : goToPreviousStep,
+        goToNextStep: isControlled ? undefined : goToNextStep,
+        goToStep: isControlled ? undefined : goToStep,
         activeStep,
         viewedSteps,
         allowSkip,

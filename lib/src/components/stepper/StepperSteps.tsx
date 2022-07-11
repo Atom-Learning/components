@@ -198,7 +198,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
                 as={allowSkip ? 'button' : 'div'}
                 onClick={() =>
                   allowSkip && viewedSteps.includes(index)
-                    ? goToStep(index)
+                    ? goToStep?.(index)
                     : undefined
                 }
                 state={bulletState}
