@@ -9,7 +9,8 @@ const StepperContext = React.createContext<Context>({
   goToStep: () => null,
   activeStep: 0,
   viewedSteps: [],
-  allowSkip: false
+  allowSkip: false,
+  orientation: 'horizontal'
 })
 
 export const StepperProvider: React.FC<StepperProviderProps> = ({
@@ -17,7 +18,9 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   stepCount,
   allowSkip,
   onComplete,
-  onStepChange
+  onStepChange,
+  orientation,
+  steps
 }) => {
   const [activeStep, setActiveStep] = React.useState(0)
 
@@ -31,6 +34,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   }, [activeStep, onStepChange])
 
   const goToNextStep = () => {
+    if (steps[activeStep]?.status) return
     if (onComplete && activeStep === stepCount - 1) {
       return onComplete()
     }
@@ -40,23 +44,26 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   }
 
   const goToPreviousStep = () => {
+    if (steps[activeStep]?.status) return
     setActiveStep((current) => current - 1)
   }
 
   const goToStep = (index: number) => {
+    if (steps[index]?.status) return
     setActiveStep(index)
   }
 
   return (
     <StepperContext.Provider
       value={{
-        steps: Array(stepCount).fill(''),
+        steps: steps || Array(stepCount).fill(''),
         goToPreviousStep,
         goToNextStep,
         goToStep,
         activeStep,
         viewedSteps,
-        allowSkip
+        allowSkip,
+        orientation
       }}
     >
       {children}

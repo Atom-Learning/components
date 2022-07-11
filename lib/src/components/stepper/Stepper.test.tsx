@@ -179,4 +179,119 @@ describe('Stepper', () => {
     expect(props.onStepChange).not.toHaveBeenCalled()
     expect(onClickFn).toHaveBeenCalled()
   })
+
+  it('renders in horizontal orientation', () => {
+    render(
+      <Stepper allowSkip {...props} orientation="horizontal">
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    expect(screen.getByTestId('horizontal')).toBeVisible
+  })
+
+  it('renders in vertical orientation', () => {
+    render(
+      <Stepper allowSkip {...props} orientation="vertical">
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+
+    expect(screen.getByTestId('vertical')).toBeVisible
+  })
+
+  it('renders in horizontal orientation', () => {
+    render(
+      <Stepper allowSkip {...props} orientation="horizontal">
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+
+    expect(screen.getByTestId('horizontal')).toBeVisible
+  })
+
+  it('renders the correct number of bullets when a controlled component', () => {
+    const { container } = render(
+      <Stepper
+        allowSkip
+        {...props}
+        steps={[
+          { label: 'Set up your parent account' },
+          { label: 'Create student profile' }
+        ]}
+      >
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('does not call the onStepChange handler when a controlled component', () => {
+    render(
+      <Stepper
+        {...props}
+        steps={[
+          {
+            label: 'Set up your parent account',
+            status: 'active'
+          },
+          {
+            label: 'Create student profile',
+            status: 'normal'
+          }
+        ]}
+      >
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    fireEvent.click(screen.getByText('Next'))
+    fireEvent.click(screen.getByText('Next'))
+    // clicking on Next doesn't do anything, since steps prop is passed
+    expect(screen.getByText('Next')).toBeVisible
+  })
+
+  it('renders success icon for bullets when step is viewed', () => {
+    render(
+      <Stepper
+        allowSkip
+        {...props}
+        steps={[
+          {
+            label: 'Set up your parent account',
+            status: 'viewed'
+          },
+          {
+            label: 'Create student profile',
+            status: 'active'
+          }
+        ]}
+      >
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    expect(screen.getByTestId('success-icon')).toBeVisible()
+  })
 })
