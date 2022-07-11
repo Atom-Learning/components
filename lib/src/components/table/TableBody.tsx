@@ -1,5 +1,7 @@
-import { styled } from '~/stitches'
 import * as React from 'react'
+
+import { styled } from '~/stitches'
+
 import { TableRow } from './TableRow'
 
 const StyledTableBody = styled('tbody', {
