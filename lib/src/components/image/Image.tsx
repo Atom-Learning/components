@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 import { Override } from '~/utilities/types'
 
 // default styling lifted from https://www.zachleat.com/web/fluid-images/#copy-and-paste
-const StyledImage = styled('img', {
+export const StyledImage = styled('img', {
   verticalAlign: 'middle',
   maxWidth: '100%',
   '&[width]': {

@@ -9,7 +9,7 @@ type MarkdownCodeProps = {
   node: Code
 }
 
-const StyledCode = styled(Box, {
+const StyledMarkdownCode = styled(Box, {
   bg: '$tonal100',
   borderRadius: '$1',
   color: '$tonal600',
@@ -21,5 +21,5 @@ const StyledCode = styled(Box, {
 })
 
 export const MarkdownCode: React.FC<MarkdownCodeProps> = ({ node }) => (
-  <StyledCode as="pre">{node.value}</StyledCode>
+  <StyledMarkdownCode as="pre">{node.value}</StyledMarkdownCode>
 )
