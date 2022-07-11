@@ -27,14 +27,14 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     justify-content: space-between;
   }
 
-  .c-jRSCFn {
+  .c-lnckVF {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
   }
 
-  .c-jRSCFn:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     content: "";
     position: absolute;
   }
@@ -45,12 +45,12 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     align-items: center;
   }
 
-  .c-kqbxnE {
+  .c-tthIx {
     padding: var(--space-2);
     justify-content: center;
     align-items: center;
-    width: var(--sizes-3);
     height: var(--sizes-3);
+    width: var(--sizes-3);
     border-radius: 50%;
     border: none;
     background: var(--colors-tonal50);
@@ -66,22 +66,22 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-jRSCFn-DGQmx-separator-active:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-fZPNqf-separator-active:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     background: var(--colors-primary);
   }
 
-  .c-kqbxnE-gjRYFk-state-active {
+  .c-tthIx-gjRYFk-state-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jRSCFn-jLHlew-separator-normal:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-NYdPG-separator-normal:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-kqbxnE-jdelko-state-normal {
+  .c-tthIx-jdelko-state-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -139,7 +139,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     grid-template-columns: 1fr auto 1fr;
   }
 
-  .c-dhzjXW-ifJjpHH-css:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-dhzjXW-ieGGkix-css:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     width: var(--sizes-1);
     height: var(--sizes-1);
   }
@@ -173,7 +173,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH"
     >
       <div
-        class="c-dhzjXW c-jRSCFn c-jRSCFn-DGQmx-separator-active c-dhzjXW-ifJjpHH-css"
+        class="c-dhzjXW c-lnckVF c-lnckVF-fZPNqf-separator-active c-dhzjXW-ieGGkix-css"
       >
         <div
           class="c-dhzjXW c-giGIoG"
@@ -181,35 +181,35 @@ exports[`Stepper renders the correct number of bullets 1`] = `
           <button
             aria-current="step"
             aria-label="step 1"
-            class="c-dhzjXW c-kqbxnE c-kqbxnE-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
+            class="c-dhzjXW c-tthIx c-tthIx-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
           >
             1
           </button>
         </div>
       </div>
       <div
-        class="c-dhzjXW c-jRSCFn c-jRSCFn-jLHlew-separator-normal c-dhzjXW-ifJjpHH-css"
+        class="c-dhzjXW c-lnckVF c-lnckVF-NYdPG-separator-normal c-dhzjXW-ieGGkix-css"
       >
         <div
           class="c-dhzjXW c-giGIoG"
         >
           <button
             aria-label="step 2"
-            class="c-dhzjXW c-kqbxnE c-kqbxnE-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+            class="c-dhzjXW c-tthIx c-tthIx-jdelko-state-normal c-dhzjXW-idGcKFW-css"
           >
             2
           </button>
         </div>
       </div>
       <div
-        class="c-dhzjXW c-jRSCFn c-jRSCFn-jLHlew-separator-normal c-dhzjXW-ifJjpHH-css"
+        class="c-dhzjXW c-lnckVF c-lnckVF-NYdPG-separator-normal c-dhzjXW-ieGGkix-css"
       >
         <div
           class="c-dhzjXW c-giGIoG"
         >
           <button
             aria-label="step 3"
-            class="c-dhzjXW c-kqbxnE c-kqbxnE-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+            class="c-dhzjXW c-tthIx c-tthIx-jdelko-state-normal c-dhzjXW-idGcKFW-css"
           >
             3
           </button>
@@ -253,14 +253,14 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     justify-content: space-between;
   }
 
-  .c-jRSCFn {
+  .c-lnckVF {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
   }
 
-  .c-jRSCFn:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     content: "";
     position: absolute;
   }
@@ -271,12 +271,12 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     align-items: center;
   }
 
-  .c-kqbxnE {
+  .c-tthIx {
     padding: var(--space-2);
     justify-content: center;
     align-items: center;
-    width: var(--sizes-3);
     height: var(--sizes-3);
+    width: var(--sizes-3);
     border-radius: 50%;
     border: none;
     background: var(--colors-tonal50);
@@ -308,27 +308,27 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     padding-right: var(--space-4);
   }
 
-  .c-jRSCFn-DGQmx-separator-active:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-fZPNqf-separator-active:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     background: var(--colors-primary);
   }
 
-  .c-kqbxnE-gjRYFk-state-active {
+  .c-tthIx-gjRYFk-state-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jRSCFn-jLHlew-separator-normal:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-NYdPG-separator-normal:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-kqbxnE-jdelko-state-normal {
+  .c-tthIx-jdelko-state-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
 
-  .c-kqbxnE-lkRQpS-state-viewed {
+  .c-tthIx-lkRQpS-state-viewed {
     background: var(--colors-primary);
     color: white;
   }
@@ -337,12 +337,12 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     flex-direction: column;
   }
 
-  .c-jRSCFn-EFZIU-orientation-vertical {
+  .c-lnckVF-dbkyPG-orientation-vertical {
     flex-direction: row;
     align-items: center;
   }
 
-  .c-jRSCFn-EFZIU-orientation-vertical:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-dbkyPG-orientation-vertical:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     width: 4px !important;
     top: 100%;
   }
@@ -351,12 +351,12 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     flex-direction: row;
   }
 
-  .c-jRSCFn-kTEdgR-orientation-horizontal {
+  .c-lnckVF-cfQFbD-orientation-horizontal {
     flex-direction: column;
     align-items: center;
   }
 
-  .c-jRSCFn-kTEdgR-orientation-horizontal:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-lnckVF-cfQFbD-orientation-horizontal:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     height: 4px !important;
     left: 100%;
   }
@@ -440,7 +440,7 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     grid-template-columns: 1fr auto 1fr;
   }
 
-  .c-dhzjXW-ifJjpHH-css:not(:last-child) .c-dhzjXW:where(.c-kqbxnE)::after {
+  .c-dhzjXW-ieGGkix-css:not(:last-child) .c-dhzjXW:where(.c-tthIx)::after {
     width: var(--sizes-1);
     height: var(--sizes-1);
   }
@@ -474,7 +474,7 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
       class="c-dhzjXW c-knmidH"
     >
       <div
-        class="c-dhzjXW c-jRSCFn c-jRSCFn-DGQmx-separator-active c-dhzjXW-ifJjpHH-css"
+        class="c-dhzjXW c-lnckVF c-lnckVF-fZPNqf-separator-active c-dhzjXW-ieGGkix-css"
       >
         <div
           class="c-dhzjXW c-giGIoG"
@@ -482,7 +482,7 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
           <button
             aria-current="step"
             aria-label="step 1"
-            class="c-dhzjXW c-kqbxnE c-kqbxnE-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
+            class="c-dhzjXW c-tthIx c-tthIx-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
           >
             1
           </button>
@@ -498,14 +498,14 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
         </div>
       </div>
       <div
-        class="c-dhzjXW c-jRSCFn c-jRSCFn-jLHlew-separator-normal c-dhzjXW-ifJjpHH-css"
+        class="c-dhzjXW c-lnckVF c-lnckVF-NYdPG-separator-normal c-dhzjXW-ieGGkix-css"
       >
         <div
           class="c-dhzjXW c-giGIoG"
         >
           <button
             aria-label="step 2"
-            class="c-dhzjXW c-kqbxnE c-kqbxnE-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+            class="c-dhzjXW c-tthIx c-tthIx-jdelko-state-normal c-dhzjXW-idGcKFW-css"
           >
             2
           </button>
