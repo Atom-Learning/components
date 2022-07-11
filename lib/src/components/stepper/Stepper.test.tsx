@@ -213,10 +213,7 @@ describe('Stepper', () => {
       <Stepper
         allowSkip
         {...props}
-        steps={[
-          { label: 'Set up your parent account' },
-          { label: 'Create student profile' }
-        ]}
+        steps={[{ label: 'Step 1' }, { label: 'Step 2' }]}
       >
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
@@ -234,11 +231,11 @@ describe('Stepper', () => {
         {...props}
         steps={[
           {
-            label: 'Set up your parent account',
+            label: 'Step 1',
             status: 'active'
           },
           {
-            label: 'Create student profile',
+            label: 'Step 2',
             status: 'normal'
           }
         ]}
@@ -263,11 +260,11 @@ describe('Stepper', () => {
         {...props}
         steps={[
           {
-            label: 'Set up your parent account',
+            label: 'Step 1',
             status: 'success'
           },
           {
-            label: 'Create student profile',
+            label: 'Step 2',
             status: 'active'
           }
         ]}

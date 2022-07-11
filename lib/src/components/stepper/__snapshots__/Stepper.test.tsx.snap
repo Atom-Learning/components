@@ -493,7 +493,7 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
           <p
             class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ecBjWS c-ecBjWS-cDiHrO-state-active"
           >
-            Set up your parent account
+            Step 1
           </p>
         </div>
       </div>
@@ -516,7 +516,7 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
           <p
             class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ecBjWS c-ecBjWS-iHLjaT-state-normal"
           >
-            Create student profile
+            Step 2
           </p>
         </div>
       </div>
