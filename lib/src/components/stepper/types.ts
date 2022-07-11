@@ -1,9 +1,19 @@
 import { CSS } from '~/stitches'
 
+export enum StatusEnum {
+  Active = 'ACTIVE',
+  Viewed = 'VIEWED',
+  Success = 'SUCCESS',
+  Normal = 'NORMAL'
+}
+
+export type Status = 'active' | 'viewed' | 'success' | 'normal'
 export interface Step {
   label: string
-  status: 'active' | 'viewed' | 'completed' | 'normal'
+  status: Status
 }
+
+export type Orientation = 'vertical' | 'horizontal'
 
 export type Context = {
   steps: Step[]
@@ -13,7 +23,7 @@ export type Context = {
   activeStep: number
   viewedSteps: number[]
   allowSkip?: boolean
-  orientation?: 'vertical' | 'horizontal'
+  orientation?: Orientation
 }
 
 export type StepperProviderProps = {
@@ -21,7 +31,7 @@ export type StepperProviderProps = {
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void
-  orientation?: 'vertical' | 'horizontal'
+  orientation?: Orientation
   steps: Step[]
 }
 
@@ -31,7 +41,7 @@ export interface IStepperProps {
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void
-  orientation?: 'vertical' | 'horizontal'
+  orientation?: Orientation
   steps?: Step[]
 }
 
@@ -43,5 +53,5 @@ export interface IStepperNavigateProps {
 export interface IStepperStepsProps {
   css?: CSS
   stepsWidth?: string
-  orientation?: 'vertical' | 'horizontal'
+  orientation?: Orientation
 }
