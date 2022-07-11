@@ -254,8 +254,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           )
 
           return React.cloneElement(child, {
-            size: child.props.size || size,
-            isInActionIcon: !child.props.size,
+            size: size,
+            isInActionIcon: true,
             css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}

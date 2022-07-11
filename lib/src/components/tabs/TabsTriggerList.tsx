@@ -168,7 +168,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           visible={showLeftScroller}
           css={{ left: 0 }}
         >
-          <Icon is={ChevronLeft} size="md" />
+          <Icon is={ChevronLeft} />
         </StyledChevronIcon>
         <StyledTriggerList
           {...rest}
@@ -186,7 +186,7 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           visible={showRightScroller}
           css={{ right: 0 }}
         >
-          <Icon is={ChevronRight} size="md" />
+          <Icon is={ChevronRight} />
         </StyledChevronIcon>
       </Flex>
     )
