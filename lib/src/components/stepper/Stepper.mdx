@@ -61,9 +61,9 @@ Below is how to override the forward default behavior if some logic or validatio
 </Stepper>
 ```
 
-The root `Stepper` component also allows the user to pass a `step` prop in order to render step labels. When the `step` prop is passed, the `Stepper` component will be used as a controlled component thereby taking control of it's state. When used as a controlled component, navigation across steps, and identifying the state of a step would be controlled by the array of steps passed to the component.
+The root `Stepper` component also allows the user to pass a `step` prop in order to render step labels. When the `step` prop is passed, the `Stepper` component will be used as a controlled component thereby taking control of its state. When used as a controlled component, navigation across steps, and identifying the state of a step would be controlled by the array of steps passed to the component.
 
-Below is an example that shows how to use the controlled component Each object in the `step` array must include a `label` and a `status` property to determine what content to render based on the current position.
+Below is an example that shows how to use the controlled component. Each object in the `steps` array must include a `label` and a `status` property to determine what content to render based on the current position.
 
 ```tsx preview
 <Stepper
