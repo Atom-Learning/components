@@ -27,11 +27,15 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])
 
   React.useEffect(() => {
+    const isControlled = steps.filter((step) => !step.label).length === 0
+
     setviewedSteps((prev) =>
       prev.includes(activeStep) ? prev : [...prev, activeStep]
     )
-    onStepChange?.(activeStep)
-  }, [activeStep, onStepChange])
+    if (!isControlled) {
+      onStepChange?.(activeStep)
+    }
+  }, [activeStep, onStepChange, steps])
 
   const goToNextStep = () => {
     if (steps[activeStep]?.status) return

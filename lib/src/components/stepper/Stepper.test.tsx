@@ -226,9 +226,12 @@ describe('Stepper', () => {
   })
 
   it('does not call the onStepChange handler when a controlled component', () => {
+    const onStepChange = jest.fn()
+
     render(
       <Stepper
         {...props}
+        onStepChange={onStepChange}
         steps={[
           {
             label: 'Step 1',
@@ -248,9 +251,8 @@ describe('Stepper', () => {
       </Stepper>
     )
     fireEvent.click(screen.getByText('Next'))
-    fireEvent.click(screen.getByText('Next'))
     // clicking on Next doesn't do anything, since steps prop is passed
-    expect(screen.getByText('Next')).toBeVisible()
+    expect(onStepChange).toHaveBeenCalledTimes(0)
   })
 
   it('renders success icon for bullets when step is completed', () => {
