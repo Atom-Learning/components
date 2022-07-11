@@ -180,19 +180,6 @@ describe('Stepper', () => {
     expect(onClickFn).toHaveBeenCalled()
   })
 
-  it('renders in horizontal orientation', () => {
-    render(
-      <Stepper allowSkip {...props} orientation="horizontal">
-        <Stepper.StepBack label={() => 'Back'} />
-        <Stepper.Steps />
-        <Stepper.StepForward
-          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
-        />
-      </Stepper>
-    )
-    expect(screen.getByTestId('horizontal')).toBeVisible
-  })
-
   it('renders in vertical orientation', () => {
     render(
       <Stepper allowSkip {...props} orientation="vertical">
@@ -204,7 +191,7 @@ describe('Stepper', () => {
       </Stepper>
     )
 
-    expect(screen.getByTestId('vertical')).toBeVisible
+    expect(screen.getByTestId('vertical')).toBeVisible()
   })
 
   it('renders in horizontal orientation', () => {
@@ -218,10 +205,10 @@ describe('Stepper', () => {
       </Stepper>
     )
 
-    expect(screen.getByTestId('horizontal')).toBeVisible
+    expect(screen.getByTestId('horizontal')).toBeVisible()
   })
 
-  it('renders the correct number of bullets when a controlled component', () => {
+  it('renders the correct number of bullets when used as a controlled component', () => {
     const { container } = render(
       <Stepper
         allowSkip
@@ -266,10 +253,10 @@ describe('Stepper', () => {
     fireEvent.click(screen.getByText('Next'))
     fireEvent.click(screen.getByText('Next'))
     // clicking on Next doesn't do anything, since steps prop is passed
-    expect(screen.getByText('Next')).toBeVisible
+    expect(screen.getByText('Next')).toBeVisible()
   })
 
-  it('renders success icon for bullets when step is viewed', () => {
+  it('renders success icon for bullets when step is completed', () => {
     render(
       <Stepper
         allowSkip
@@ -277,7 +264,7 @@ describe('Stepper', () => {
         steps={[
           {
             label: 'Set up your parent account',
-            status: 'viewed'
+            status: 'success'
           },
           {
             label: 'Create student profile',

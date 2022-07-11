@@ -10,7 +10,7 @@ import { Box } from '../box'
 
 import { useStepper } from './stepper-context/StepperContext'
 
-import { IStepperStepsProps } from './types'
+import { IStepperStepsProps, StatusEnum } from './types'
 
 const StyledBullet = styled(Flex, {
   p: '$2',
@@ -21,20 +21,17 @@ const StyledBullet = styled(Flex, {
   borderRadius: '50%',
   border: 'none',
   bg: '$tonal50',
-  fontFamily: '$body',
-  fontWeight: 600,
-  fontSize: '$md',
   variants: {
     state: {
       normal: { bg: '$tonal50', color: '$tonal400' },
       active: {
         bg: 'white',
-        color: '$primary',
+        color: '$primaryMid',
         border: '2px solid',
         borderColor: 'currentColor'
       },
       viewed: { bg: '$primary', color: 'white' },
-      completed: { bg: '$success', color: 'white' }
+      success: { bg: '$success', color: 'white' }
     }
   }
 })
@@ -57,6 +54,9 @@ const BulletContainer = styled(Flex, {
 
 const StepContainer = styled(Flex, {
   position: 'relative',
+  fontFamily: '$body',
+  fontWeight: 600,
+  fontSize: '$md',
   [`&:not(:last-child) ${StyledBullet}`]: {
     '&::after': {
       content: '',
@@ -94,7 +94,7 @@ const StepContainer = styled(Flex, {
           }
         }
       },
-      highlight: {
+      active: {
         [`&:not(:last-child) ${StyledBullet}`]: {
           '&::after': {
             bg: '$primary'
@@ -121,6 +121,20 @@ const StepDescription = styled(Box, {
   }
 })
 
+const Label = styled(Text, {
+  fontWeight: 600,
+  variants: {
+    state: {
+      normal: { color: '$tonal400', fontWeight: 400 },
+      active: {
+        color: '$primaryMid'
+      },
+      viewed: { color: '$primary' },
+      success: { color: '$success' }
+    }
+  }
+})
+
 export const StepperSteps: React.FC<IStepperStepsProps> = ({
   css,
   ...rest
@@ -137,16 +151,16 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   }
 
   const getSeparatorState = (index: number) => {
-    const bulletStatus = steps[index]?.status
+    const bulletStatus = steps[index]?.status?.toUpperCase()
 
-    if (bulletStatus === 'completed') return 'success'
+    if (bulletStatus === StatusEnum.Success) return 'success'
 
     if (
-      bulletStatus === 'active' ||
-      bulletStatus === 'viewed' ||
+      bulletStatus === StatusEnum.Viewed ||
       index <= Math.max(...viewedSteps)
-    )
-      return 'highlight'
+    ) {
+      return 'active'
+    }
 
     return 'normal'
   }
@@ -154,11 +168,14 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   return (
     <StepsContainer css={css} {...rest} orientation={orientation}>
       {steps.map((step, index) => {
+        const bulletState = getBulletState(index)
+        const seperatorState = getSeparatorState(index)
+
         return (
           <StepContainer
             key={`step_${index}`}
             orientation={orientation}
-            separator={getSeparatorState(index)}
+            separator={seperatorState}
             css={{
               [`&:not(:last-child) ${StyledBullet}`]: {
                 '&::after': {
@@ -184,7 +201,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
                     ? goToStep(index)
                     : undefined
                 }
-                state={getBulletState(index)}
+                state={bulletState}
                 aria-current={index === activeStep ? 'step' : undefined}
                 aria-label={`step ${index + 1}`}
                 css={{
@@ -194,7 +211,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
                       : 'auto'
                 }}
               >
-                {step.status === 'completed' || step.status === 'viewed' ? (
+                {step.status === 'success' ? (
                   <Icon is={Ok} data-testid="success-icon" />
                 ) : (
                   index + 1
@@ -204,7 +221,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
 
             {step.label && (
               <StepDescription orientation={orientation}>
-                <Text>{step.label}</Text>
+                <Label state={bulletState}>{step.label}</Label>
               </StepDescription>
             )}
           </StepContainer>
