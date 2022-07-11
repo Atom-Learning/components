@@ -9,7 +9,7 @@ type MarkdownInlineCodeProps = {
   node: InlineCode
 }
 
-const StyledInlineCode = styled(Box, {
+const StyledMarkdownInlineCode = styled(Box, {
   bg: '$tonal100',
   borderRadius: '$0',
   color: '$tonal600',
@@ -21,4 +21,4 @@ const StyledInlineCode = styled(Box, {
 
 export const MarkdownInlineCode: React.FC<MarkdownInlineCodeProps> = ({
   node
-}) => <StyledInlineCode as="code">{node.value}</StyledInlineCode>
+}) => <StyledMarkdownInlineCode as="code">{node.value}</StyledMarkdownInlineCode>

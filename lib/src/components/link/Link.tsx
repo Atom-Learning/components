@@ -6,7 +6,7 @@ import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
-import { StyledParagraph, textVariantSize } from '../text/Text'
+import { StyledText, textVariantSize } from '../text/Text'
 
 export const StyledLink = styled('a', {
   bg: 'unset',
@@ -23,7 +23,7 @@ export const StyledLink = styled('a', {
   '&:active': {
     color: '$primaryDark'
   },
-  [`${StyledParagraph} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
+  [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
     fontSize: '100%',
     lineHeight: 1,
     '&::before, &::after': {
