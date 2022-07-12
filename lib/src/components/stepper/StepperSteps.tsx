@@ -1,18 +1,16 @@
-import * as React from 'react'
 import { Ok } from '@atom-learning/icons'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
 import { Icon } from '../icon'
 import { Text } from '../text'
-import { Box } from '../box'
-
 import { useStepper } from './stepper-context/StepperContext'
-
 import { IStepperStepsProps, StatusEnum } from './types'
 
 const StyledBullet = styled(Flex, {
+  position: 'relative',
   p: '$2',
   justifyContent: 'center',
   alignItems: 'center',
@@ -20,6 +18,7 @@ const StyledBullet = styled(Flex, {
   borderRadius: '50%',
   border: 'none',
   bg: '$tonal50',
+  zIndex: 1,
   variants: {
     state: {
       normal: { bg: '$tonal50', color: '$tonal400' },
@@ -40,15 +39,9 @@ const StepperStepsContainer = styled(Flex, {
   variants: {
     orientation: {
       vertical: { flexDirection: 'column' },
-      horizontal: { flexDirection: 'row' }
+      horizontal: { flexDirection: 'row', alignItems: 'center' }
     }
   }
-})
-
-const BulletContainer = styled(Flex, {
-  position: 'relative',
-  justifyContent: 'center',
-  alignItems: 'center'
 })
 
 const StepContainer = styled(Flex, {
@@ -56,73 +49,51 @@ const StepContainer = styled(Flex, {
   fontFamily: '$body',
   fontWeight: 600,
   fontSize: '$md',
-  [`&:not(:last-child) ${StyledBullet}`]: {
-    '&::after': {
-      content: '',
-      position: 'absolute'
-    }
+  '&:not(:last-child)::after': {
+    content: '',
+    position: 'absolute'
   },
   variants: {
     orientation: {
       vertical: {
+        py: '$3',
         flexDirection: 'row',
         alignItems: 'center',
-        [`&:not(:last-child) ${StyledBullet}`]: {
-          '&::after': {
-            width: '4px !important',
-            top: '100%'
-          }
+        '&:not(:last-child)::after': {
+          height: '100%',
+          width: '4px',
+          left: '14px',
+          top: '50%'
         }
       },
       horizontal: {
+        px: '$2',
         flexDirection: 'column',
         alignItems: 'center',
-        [`&:not(:last-child) ${StyledBullet}`]: {
-          '&::after': {
-            height: '4px !important',
-            left: '100%'
-          }
+        '&:not(:last-child)::after': {
+          width: '100%',
+          height: '4px',
+          left: '50%',
+          top: '14px'
         }
       }
     },
     separator: {
-      normal: {
-        [`&:not(:last-child) ${StyledBullet}`]: {
-          '&::after': {
-            bg: '$tonal50'
-          }
-        }
-      },
-      active: {
-        [`&:not(:last-child) ${StyledBullet}`]: {
-          '&::after': {
-            bg: '$primary'
-          }
-        }
-      },
-      success: {
-        [`&:not(:last-child) ${StyledBullet}`]: {
-          '&::after': {
-            bg: '$success'
-          }
-        }
-      }
-    }
-  }
-})
-
-const StepDescription = styled(Box, {
-  variants: {
-    orientation: {
-      horizontal: { display: 'none' },
-      vertical: { display: 'block', ml: '$4' }
+      normal: { '&:not(:last-child)::after': { bg: '$tonal50' } },
+      active: { '&:not(:last-child)::after': { bg: '$primary' } },
+      success: { '&:not(:last-child)::after': { bg: '$success' } }
     }
   }
 })
 
 const Label = styled(Text, {
   fontWeight: 600,
+  textAlign: 'center',
   variants: {
+    orientation: {
+      vertical: { ml: '$3' },
+      horizontal: { mt: '$3' }
+    },
     state: {
       normal: { color: '$tonal400', fontWeight: 400 },
       active: {
@@ -152,11 +123,13 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   const getSeparatorState = (index: number) => {
     const bulletStatus = steps[index]?.status
 
-    if (bulletStatus === StatusEnum.SUCCESS) return StatusEnum.SUCCESS
+    if (bulletStatus === StatusEnum.SUCCESS) {
+      return StatusEnum.SUCCESS
+    }
 
     if (
       bulletStatus === StatusEnum.VIEWED ||
-      index <= Math.max(...viewedSteps)
+      index < Math.max(...viewedSteps)
     ) {
       return StatusEnum.ACTIVE
     }
@@ -175,53 +148,38 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
             key={`step_${index}`}
             orientation={orientation}
             separator={seperatorState}
-            css={{
-              [`&:not(:last-child) ${StyledBullet}`]: {
-                '&::after': {
-                  width: css?.width
-                    ? `calc((${css.width} - ($3 * ${steps.length})) / ${
-                        steps.length - 1
-                      })`
-                    : '$1',
-                  height: css?.height
-                    ? `calc((${css.height} - ($3 * ${steps.length})) / ${
-                        steps.length - 1
-                      })`
-                    : `$1`
-                }
-              }
-            }}
+            css={
+              orientation === 'horizontal'
+                ? { width: `calc(100% / ${steps.length})` }
+                : { height: `calc(100% / ${steps.length})` }
+            }
           >
-            <BulletContainer>
-              <StyledBullet
-                as={allowSkip ? 'button' : 'div'}
-                onClick={() =>
-                  allowSkip && viewedSteps.includes(index)
-                    ? goToStep?.(index)
-                    : undefined
-                }
-                state={bulletState}
-                aria-current={index === activeStep ? 'step' : undefined}
-                aria-label={`step ${index + 1}`}
-                css={{
-                  cursor:
-                    allowSkip && viewedSteps.includes(index)
-                      ? 'pointer'
-                      : 'auto'
-                }}
-              >
-                {step.status === 'success' ? (
-                  <Icon is={Ok} data-testid="success-icon" />
-                ) : (
-                  index + 1
-                )}
-              </StyledBullet>
-            </BulletContainer>
+            <StyledBullet
+              as={allowSkip ? 'button' : 'div'}
+              onClick={() =>
+                allowSkip && viewedSteps.includes(index)
+                  ? goToStep?.(index)
+                  : undefined
+              }
+              state={bulletState}
+              aria-current={index === activeStep ? 'step' : undefined}
+              aria-label={`step ${index + 1}`}
+              css={{
+                cursor:
+                  allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
+              }}
+            >
+              {step.status === 'success' ? (
+                <Icon is={Ok} data-testid="success-icon" />
+              ) : (
+                index + 1
+              )}
+            </StyledBullet>
 
             {step.label && (
-              <StepDescription orientation={orientation}>
-                <Label state={bulletState}>{step.label}</Label>
-              </StepDescription>
+              <Label orientation={orientation} state={bulletState}>
+                {step.label}
+              </Label>
             )}
           </StepContainer>
         )
