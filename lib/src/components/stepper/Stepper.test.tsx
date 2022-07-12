@@ -4,6 +4,8 @@ import * as React from 'react'
 
 import { Stepper } from './Stepper'
 
+import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
+
 describe('Stepper', () => {
   let props
   beforeEach(() => {
@@ -277,5 +279,31 @@ describe('Stepper', () => {
       </Stepper>
     )
     expect(screen.getByTestId('success-icon')).toBeVisible()
+  })
+
+  it('throws when both stepCount and steps props are provided', async () => {
+    expectToThrow(() =>
+      render(
+        <Stepper
+          steps={[
+            {
+              label: 'Step 1',
+              status: 'success'
+            },
+            {
+              label: 'Step 2',
+              status: 'active'
+            }
+          ]}
+          stepCount={3}
+        >
+          <Stepper.StepBack label={() => 'Back'} />
+          <Stepper.Steps />
+          <Stepper.StepForward
+            label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+          />
+        </Stepper>
+      )
+    )
   })
 })
