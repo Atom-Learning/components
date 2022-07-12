@@ -1,4 +1,5 @@
 import * as React from 'react'
+import invariant from 'invariant'
 
 import { Box } from '../box/Box'
 import { StepperProvider } from './stepper-context/StepperContext'
@@ -21,6 +22,11 @@ export const Stepper: React.FC<IStepperProps> & {
   steps,
   css
 }) => {
+  invariant(
+    !(stepCount && steps),
+    '`Stepper` should only be given one of `stepCount` or `steps`. When both are provided, `steps` will be used and `stepCount` will be ignored.'
+  )
+
   const count = steps?.length || stepCount
 
   return (

@@ -211,9 +211,10 @@ describe('Stepper', () => {
   it('renders the correct number of bullets when used as a controlled component', () => {
     const { container } = render(
       <Stepper
-        allowSkip
-        {...props}
-        steps={[{ label: 'Step 1' }, { label: 'Step 2' }]}
+        steps={[
+          { label: 'Step 1', status: 'active' },
+          { label: 'Step 2', status: 'normal' }
+        ]}
       >
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
@@ -257,8 +258,6 @@ describe('Stepper', () => {
   it('renders success icon for bullets when step is completed', () => {
     render(
       <Stepper
-        allowSkip
-        {...props}
         steps={[
           {
             label: 'Step 1',
