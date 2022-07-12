@@ -1,5 +1,5 @@
-import * as React from 'react'
 import invariant from 'invariant'
+import * as React from 'react'
 
 import { Box } from '../box/Box'
 import { StepperProvider } from './stepper-context/StepperContext'
@@ -18,7 +18,7 @@ export const Stepper: React.FC<IStepperProps> & {
   allowSkip,
   onComplete,
   onStepChange,
-  orientation,
+  orientation = 'horizontal',
   steps,
   css
 }) => {
@@ -44,8 +44,6 @@ export const Stepper: React.FC<IStepperProps> & {
         data-testid={orientation}
         css={{
           width: '100%',
-          display: 'grid',
-          gridTemplateColumns: '1fr auto 1fr',
           ...css
         }}
       >
