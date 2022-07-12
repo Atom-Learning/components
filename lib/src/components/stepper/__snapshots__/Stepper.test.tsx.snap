@@ -479,13 +479,13 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
         <div
           class="c-dhzjXW c-giGIoG"
         >
-          <button
+          <div
             aria-current="step"
             aria-label="step 1"
-            class="c-dhzjXW c-tthIx c-tthIx-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
+            class="c-dhzjXW c-tthIx c-tthIx-gjRYFk-state-active c-dhzjXW-idGcKFW-css"
           >
             1
-          </button>
+          </div>
         </div>
         <div
           class="c-PJLV"
@@ -503,12 +503,12 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
         <div
           class="c-dhzjXW c-giGIoG"
         >
-          <button
+          <div
             aria-label="step 2"
             class="c-dhzjXW c-tthIx c-tthIx-jdelko-state-normal c-dhzjXW-idGcKFW-css"
           >
             2
-          </button>
+          </div>
         </div>
         <div
           class="c-PJLV"

@@ -1,10 +1,10 @@
 import { CSS } from '~/stitches'
 
 export enum StatusEnum {
-  Active = 'ACTIVE',
-  Viewed = 'VIEWED',
-  Success = 'SUCCESS',
-  Normal = 'NORMAL'
+  ACTIVE = 'active',
+  VIEWED = 'viewed',
+  SUCCESS = 'success',
+  NORMAL = 'normal'
 }
 
 export type Status = 'active' | 'viewed' | 'success' | 'normal'

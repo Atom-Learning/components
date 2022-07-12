@@ -144,24 +144,24 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   const getBulletState = (index: number) => {
     const activeBullet = steps[index]
     if (activeBullet.status) return activeBullet.status
-    if (activeStep === index) return 'active'
-    if (viewedSteps.includes(index)) return 'viewed'
-    return 'normal'
+    if (activeStep === index) return StatusEnum.ACTIVE
+    if (viewedSteps.includes(index)) return StatusEnum.VIEWED
+    return StatusEnum.NORMAL
   }
 
   const getSeparatorState = (index: number) => {
-    const bulletStatus = steps[index]?.status?.toUpperCase()
+    const bulletStatus = steps[index]?.status
 
-    if (bulletStatus === StatusEnum.Success) return 'success'
+    if (bulletStatus === StatusEnum.SUCCESS) return StatusEnum.SUCCESS
 
     if (
-      bulletStatus === StatusEnum.Viewed ||
+      bulletStatus === StatusEnum.VIEWED ||
       index <= Math.max(...viewedSteps)
     ) {
-      return 'active'
+      return StatusEnum.ACTIVE
     }
 
-    return 'normal'
+    return StatusEnum.NORMAL
   }
 
   return (
