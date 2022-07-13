@@ -1,16 +1,14 @@
 import { CSS } from '~/stitches'
 
-export enum StatusEnum {
+export enum Status {
   ACTIVE = 'active',
   VIEWED = 'viewed',
   SUCCESS = 'success',
   NORMAL = 'normal'
 }
-
-export type Status = 'active' | 'viewed' | 'success' | 'normal'
 export interface Step {
   label: string
-  status: Status
+  status: `${Status}`
 }
 
 export type Orientation = 'vertical' | 'horizontal'

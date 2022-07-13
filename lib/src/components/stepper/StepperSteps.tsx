@@ -11,7 +11,7 @@ import { StepperStepContainer } from './StepperStepContainer'
 import { StepperStepBullet } from './StepperStepBullet'
 
 import { useStepper } from './stepper-context/StepperContext'
-import { IStepperStepsProps, StatusEnum } from './types'
+import { IStepperStepsProps, Status } from './types'
 
 const StepperStepsContainer = styled(Flex, {
   justifyContent: 'space-between',
@@ -30,42 +30,39 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   const { steps, goToStep, activeStep, viewedSteps, allowSkip, orientation } =
     useStepper()
 
-  const getBulletState = (index: number) => {
+  const getBulletStatus = (index: number) => {
     const activeBullet = steps[index]
     if (activeBullet.status) return activeBullet.status
-    if (activeStep === index) return StatusEnum.ACTIVE
-    if (viewedSteps.includes(index)) return StatusEnum.VIEWED
-    return StatusEnum.NORMAL
+    if (activeStep === index) return Status.ACTIVE
+    if (viewedSteps.includes(index)) return Status.VIEWED
+    return Status.NORMAL
   }
 
-  const getSeparatorState = (index: number) => {
+  const getSeparatorStatus = (index: number) => {
     const bulletStatus = steps[index]?.status
 
-    if (bulletStatus === StatusEnum.SUCCESS) {
-      return StatusEnum.SUCCESS
+    if (bulletStatus === Status.SUCCESS) {
+      return Status.SUCCESS
     }
 
-    if (
-      bulletStatus === StatusEnum.VIEWED ||
-      index < Math.max(...viewedSteps)
-    ) {
-      return StatusEnum.ACTIVE
+    if (bulletStatus === Status.VIEWED || index < Math.max(...viewedSteps)) {
+      return Status.ACTIVE
     }
 
-    return StatusEnum.NORMAL
+    return Status.NORMAL
   }
 
   return (
     <StepperStepsContainer css={css} {...rest} orientation={orientation}>
       {steps.map((step, index) => {
-        const bulletState = getBulletState(index)
-        const seperatorState = getSeparatorState(index)
+        const bulletStatus = getBulletStatus(index)
+        const seperatorStatus = getSeparatorStatus(index)
 
         return (
           <StepperStepContainer
             key={`step_${index}`}
             orientation={orientation}
-            separator={seperatorState}
+            separator={seperatorStatus}
             css={
               orientation === 'horizontal'
                 ? { width: `calc(100% / ${steps.length})` }
@@ -79,9 +76,10 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
                   ? goToStep?.(index)
                   : undefined
               }
-              state={bulletState}
+              status={bulletStatus}
               aria-current={index === activeStep ? 'step' : undefined}
-              aria-label={`step ${index + 1}`}
+              aria-label={!step.label ? `step ${index + 1}` : ''}
+              aria-labelledby={step.label ? `step-${index}` : undefined}
               css={{
                 cursor:
                   allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
@@ -95,7 +93,12 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
             </StepperStepBullet>
 
             {step.label && (
-              <StepperStepLabel orientation={orientation} state={bulletState}>
+              <StepperStepLabel
+                as="span"
+                id={`step-${index}`}
+                orientation={orientation}
+                status={bulletStatus}
+              >
                 {step.label}
               </StepperStepLabel>
             )}
