@@ -7,7 +7,7 @@ export enum Status {
   NORMAL = 'normal'
 }
 export interface Step {
-  label: string
+  label?: string
   status: `${Status}`
 }
 
