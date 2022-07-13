@@ -27,7 +27,7 @@ export const Stepper: React.FC<IStepperProps> & {
     '`Stepper` should only be given one of `stepCount` or `steps`. When both are provided, `steps` will be used and `stepCount` will be ignored.'
   )
 
-  const count = steps?.length || stepCount
+  const count = steps?.length || stepCount || 0
 
   return (
     <StepperProvider

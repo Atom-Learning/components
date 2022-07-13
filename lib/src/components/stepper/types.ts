@@ -27,7 +27,7 @@ export type Context = {
 }
 
 export type StepperProviderProps = {
-  stepCount?: number
+  stepCount: number
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void

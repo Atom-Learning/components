@@ -37,7 +37,6 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   }, [activeStep, onStepChange])
 
   const goToNextStep = () => {
-    if (isControlled) return
     if (onComplete && activeStep === stepCount - 1) {
       return onComplete()
     }
