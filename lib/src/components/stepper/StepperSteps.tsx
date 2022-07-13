@@ -85,11 +85,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
                   allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
               }}
             >
-              {step.status === 'success' ? (
-                <Icon is={Ok} data-testid="success-icon" />
-              ) : (
-                index + 1
-              )}
+              {step.status === 'success' ? <Icon is={Ok} /> : index + 1}
             </StepperStepBullet>
 
             {step.label && (

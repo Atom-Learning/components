@@ -5,6 +5,7 @@ import * as React from 'react'
 import { Stepper } from './Stepper'
 
 import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
+import { Step } from './types'
 
 describe('Stepper', () => {
   let props
@@ -182,8 +183,8 @@ describe('Stepper', () => {
     expect(onClickFn).toHaveBeenCalled()
   })
 
-  it('renders in vertical orientation', () => {
-    render(
+  it('renders correctly with default orientation changed', () => {
+    const { container } = render(
       <Stepper allowSkip {...props} orientation="vertical">
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
@@ -193,39 +194,24 @@ describe('Stepper', () => {
       </Stepper>
     )
 
-    expect(screen.getByTestId('vertical')).toBeVisible()
-  })
-
-  it('renders in horizontal orientation', () => {
-    render(
-      <Stepper allowSkip {...props} orientation="horizontal">
-        <Stepper.StepBack label={() => 'Back'} />
-        <Stepper.Steps />
-        <Stepper.StepForward
-          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
-        />
-      </Stepper>
-    )
-
-    expect(screen.getByTestId('horizontal')).toBeVisible()
+    expect(container).toMatchSnapshot()
   })
 
   it('renders the correct number of bullets when used as a controlled component', () => {
-    const { container } = render(
-      <Stepper
-        steps={[
-          { label: 'Step 1', status: 'active' },
-          { label: 'Step 2', status: 'normal' }
-        ]}
-      >
-        <Stepper.StepBack label={() => 'Back'} />
+    const steps: Step[] = [
+      { label: 'Step 1', status: 'active' },
+      { label: 'Step 2', status: 'normal' }
+    ]
+
+    render(
+      <Stepper steps={steps}>
         <Stepper.Steps />
-        <Stepper.StepForward
-          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
-        />
       </Stepper>
     )
-    expect(container).toMatchSnapshot()
+
+    const expectedSteps = screen.getAllByLabelText('step', { exact: false })
+
+    expect(expectedSteps).toHaveLength(steps.length)
   })
 
   it('does not call the onStepChange handler when used as a controlled component', () => {
@@ -258,7 +244,7 @@ describe('Stepper', () => {
   })
 
   it('renders success icon for bullets when step is completed', () => {
-    render(
+    const { container } = render(
       <Stepper
         steps={[
           {
@@ -278,7 +264,7 @@ describe('Stepper', () => {
         />
       </Stepper>
     )
-    expect(screen.getByTestId('success-icon')).toBeVisible()
+    expect(container).toMatchSnapshot()
   })
 
   it('throws when both stepCount and steps props are provided', async () => {

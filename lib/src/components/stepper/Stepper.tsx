@@ -40,7 +40,6 @@ export const Stepper: React.FC<IStepperProps> & {
     >
       <Box
         aria-label="progress"
-        data-testid={orientation}
         css={{
           width: '100%',
           ...css
