@@ -10,7 +10,7 @@ import { trueCasePathSync } from './true-case-path'
 
 const constructSourceUrl = ({ category, id }) => {
   const base = new URL(pkg.homepage)
-  return `${base.origin}${base.pathname}/tree/main/src/${
+  return `${base.origin}${base.pathname}/tree/main/lib/src/${
     category === 'Utilities' ? 'utilities' : 'components'
   }/${id}`
 }
