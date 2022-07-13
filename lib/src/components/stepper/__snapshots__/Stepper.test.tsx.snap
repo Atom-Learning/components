@@ -85,14 +85,14 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     background: var(--colors-tonal50);
   }
 
-  .c-jHTmAV-gjRYFk-state-active {
+  .c-jHTmAV-gjRYFk-status-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-state-normal {
+  .c-jHTmAV-jdelko-status-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -187,7 +187,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-state-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
@@ -197,7 +197,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
@@ -207,7 +207,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
         >
           3
         </button>
@@ -275,18 +275,6 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     z-index: 1;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
-
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
-    display: none;
-  }
-
   .c-dQvJRf {
     font-weight: 600;
     text-align: center;
@@ -325,19 +313,19 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     background: var(--colors-tonal50);
   }
 
-  .c-jHTmAV-gjRYFk-state-active {
+  .c-jHTmAV-gjRYFk-status-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-state-normal {
+  .c-jHTmAV-jdelko-status-normal {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
 
-  .c-jHTmAV-lkRQpS-state-viewed {
+  .c-jHTmAV-lkRQpS-status-viewed {
     background: var(--colors-primary);
     color: white;
   }
@@ -364,32 +352,15 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
     top: 50%;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
-    font-size: var(--fontSizes-md);
-    line-height: 1.5;
-  }
-
-  .c-fIXJvv-gvmVBy-size-md::before {
-    content: '';
-    margin-bottom: -0.3864em;
-    display: table;
-  }
-
-  .c-fIXJvv-gvmVBy-size-md::after {
-    content: '';
-    margin-top: -0.3864em;
-    display: table;
-  }
-
   .c-dQvJRf-hbpKWx-orientation-horizontal {
     margin-top: var(--space-3);
   }
 
-  .c-dQvJRf-cDiHrO-state-active {
+  .c-dQvJRf-cDiHrO-status-active {
     color: var(--colors-primaryMid);
   }
 
-  .c-dQvJRf-iHLjaT-state-normal {
+  .c-dQvJRf-iHLjaT-status-normal {
     color: var(--colors-tonal400);
     font-weight: 400;
   }
@@ -491,31 +462,35 @@ exports[`Stepper renders the correct number of bullets when used as a controlled
       >
         <div
           aria-current="step"
-          aria-label="step 1"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-state-active c-dhzjXW-idGcKFW-css"
+          aria-label=""
+          aria-labelledby="step-0"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-status-active c-dhzjXW-idGcKFW-css"
         >
           1
         </div>
-        <p
-          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-cDiHrO-state-active"
+        <span
+          class="c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-cDiHrO-status-active"
+          id="step-0"
         >
           Step 1
-        </p>
+        </span>
       </div>
       <div
         class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ikOanEY-css"
       >
         <div
-          aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-state-normal c-dhzjXW-idGcKFW-css"
+          aria-label=""
+          aria-labelledby="step-1"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
         >
           2
         </div>
-        <p
-          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-iHLjaT-state-normal"
+        <span
+          class="c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-iHLjaT-status-normal"
+          id="step-1"
         >
           Step 2
-        </p>
+        </span>
       </div>
     </div>
     <button
