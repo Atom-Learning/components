@@ -13,4 +13,8 @@ const StyledMarkdownEmphasis = styled('em', { fontStyle: 'italic' })
 export const MarkdownEmphasis: React.FC<MarkdownEmphasisProps> = ({
   node,
   handleNode
-}) => <StyledMarkdownEmphasis>{node.children?.map(handleNode)}</StyledMarkdownEmphasis>
+}) => (
+  <StyledMarkdownEmphasis>
+    {node.children?.map(handleNode)}
+  </StyledMarkdownEmphasis>
+)

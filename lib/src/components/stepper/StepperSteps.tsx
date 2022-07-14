@@ -1,108 +1,103 @@
+import { Ok } from '@atom-learning/icons'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
-import { useStepper } from './stepper-context/StepperContext'
-import { IStepperStepsProps } from './types'
+import { Icon } from '../icon'
 
-const StyledBullet = styled(Flex, {
-  position: 'relative',
-  p: '$2',
-  justifyContent: 'center',
-  alignItems: 'center',
-  width: '$2',
-  height: '$2',
-  borderRadius: '50%',
-  border: 'none',
-  bg: '$tonal50',
-  fontFamily: '$body',
-  fontWeight: 400,
-  fontSize: '$sm',
-  '&:not(:first-child)': {
-    ml: '$3'
-  },
-  '&:not(:last-child)::after': {
-    content: '',
-    height: '1px',
-    position: 'absolute',
-    left: '$sizes$2'
-  },
+import { StepperStepLabel } from './StepperStepLabel'
+import { StepperStepContainer } from './StepperStepContainer'
+import { StepperStepBullet } from './StepperStepBullet'
+
+import { useStepper } from './stepper-context/StepperContext'
+import { IStepperStepsProps, Status } from './types'
+
+const StepperStepsContainer = styled(Flex, {
+  justifyContent: 'space-between',
   variants: {
-    state: {
-      normal: { bg: '$tonal50', color: '$tonal400' },
-      active: { bg: '$primary', color: 'white' },
-      viewed: { bg: '$primaryDark', color: 'white' }
-    },
-    separator: {
-      normal: {
-        '&:not(:last-child)::after': {
-          bg: '$tonal50'
-        }
-      },
-      highlight: {
-        '&:not(:last-child)::after': {
-          bg: '$primaryDark'
-        }
-      }
+    direction: {
+      vertical: { flexDirection: 'column' },
+      horizontal: { flexDirection: 'row', alignItems: 'center' }
     }
   }
 })
 
-export const StepperSteps: React.FC<IStepperStepsProps> = ({
-  css,
-  ...rest
-}) => {
-  const { steps, goToStep, activeStep, viewedSteps, allowSkip } = useStepper()
+export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
+  const { steps, goToStep, activeStep, viewedSteps, allowSkip, direction } =
+    useStepper()
 
-  const getBulletState = (index: number) => {
-    if (activeStep === index) return 'active'
-    if (viewedSteps.includes(index)) return 'viewed'
-    return 'normal'
+  const getBulletStatus = (index: number) => {
+    const activeBullet = steps[index]
+    if (activeBullet.status) return activeBullet.status
+    if (activeStep === index) return Status.ACTIVE
+    if (viewedSteps.includes(index)) return Status.VIEWED
+    return Status.DEFAULT
   }
 
-  const getSeparatorState = (index: number) =>
-    index < Math.max(...viewedSteps) ? 'highlight' : 'normal'
+  const getSeparatorStatus = (index: number) => {
+    const bulletStatus = steps[index]?.status
+
+    if (bulletStatus === Status.SUCCESS) {
+      return Status.SUCCESS
+    }
+
+    if (bulletStatus === Status.VIEWED || index < Math.max(...viewedSteps)) {
+      return Status.ACTIVE
+    }
+
+    return Status.DEFAULT
+  }
 
   return (
-    <Flex
-      css={{
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        ...css
-      }}
-      {...rest}
-    >
-      {steps.map((_, index) => {
+    <StepperStepsContainer css={css} direction={direction}>
+      {steps.map((step, index) => {
+        const bulletStatus = getBulletStatus(index)
+        const seperatorStatus = getSeparatorStatus(index)
+
         return (
-          <StyledBullet
+          <StepperStepContainer
             key={`step_${index}`}
-            as={allowSkip ? 'button' : 'div'}
-            onClick={() =>
-              allowSkip && viewedSteps.includes(index)
-                ? goToStep(index)
-                : undefined
+            direction={direction}
+            separator={seperatorStatus}
+            css={
+              direction === 'horizontal'
+                ? { width: `calc(100% / ${steps.length})` }
+                : { height: `calc(100% / ${steps.length})` }
             }
-            state={getBulletState(index)}
-            separator={getSeparatorState(index)}
-            aria-current={index === activeStep ? 'step' : undefined}
-            aria-label={`step ${index + 1}`}
-            css={{
-              cursor:
-                allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto',
-              '&:not(:last-child)::after': {
-                width: css?.width
-                  ? `calc((${css.width} - ($2 * ${steps.length})) / ${
-                      steps.length - 1
-                    })`
-                  : '$1'
-              }
-            }}
           >
-            {index + 1}
-          </StyledBullet>
+            <StepperStepBullet
+              as={allowSkip ? 'button' : 'div'}
+              onClick={() =>
+                allowSkip && viewedSteps.includes(index)
+                  ? goToStep?.(index)
+                  : undefined
+              }
+              status={bulletStatus}
+              aria-current={index === activeStep ? 'step' : undefined}
+              aria-label={!step.label ? `step ${index + 1}` : ''}
+              aria-labelledby={step.label ? `step-${index}` : undefined}
+              css={{
+                cursor:
+                  allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
+              }}
+            >
+              {step.status === 'success' ? <Icon is={Ok} /> : index + 1}
+            </StepperStepBullet>
+
+            {step.label && (
+              <StepperStepLabel
+                as="span"
+                id={`step-${index}`}
+                direction={direction}
+                status={bulletStatus}
+              >
+                {step.label}
+              </StepperStepLabel>
+            )}
+          </StepperStepContainer>
         )
       })}
-    </Flex>
+    </StepperStepsContainer>
   )
 }

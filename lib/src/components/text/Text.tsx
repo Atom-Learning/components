@@ -55,24 +55,23 @@ type TextProps = Override<
   React.ComponentProps<typeof StyledText>,
   {
     as?:
-    | 'blockquote'
-    | 'caption'
-    | 'dd'
-    | 'dt'
-    | 'figcaption'
-    | 'li'
-    | 'p'
-    | 'span'
-    | 'legend'
-    | React.ComponentType
-    | React.ElementType
+      | 'blockquote'
+      | 'caption'
+      | 'dd'
+      | 'dt'
+      | 'figcaption'
+      | 'li'
+      | 'p'
+      | 'span'
+      | 'legend'
+      | React.ComponentType
+      | React.ElementType
   }
 >
 
-export const Text: React.ForwardRefExoticComponent<TextProps> = React.forwardRef(
-  ({ size = 'md', ...remainingProps }, ref) => (
+export const Text: React.ForwardRefExoticComponent<TextProps> =
+  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
     <StyledText size={size} {...remainingProps} ref={ref} />
-  )
-)
+  ))
 
 Text.displayName = 'Text'

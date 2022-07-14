@@ -13,7 +13,7 @@ export const StepperStepForward: React.FC<
     if (onClick) {
       return onClick(goToNextStep)
     }
-    goToNextStep()
+    goToNextStep?.()
   }
 
   return (

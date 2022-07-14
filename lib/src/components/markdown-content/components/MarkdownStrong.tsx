@@ -13,4 +13,6 @@ const StyledMarkdownStrong = styled('strong', { fontWeight: 600 })
 export const MarkdownStrong: React.FC<MarkdownStrongProps> = ({
   node,
   handleNode
-}) => <StyledMarkdownStrong>{node.children?.map(handleNode)}</StyledMarkdownStrong>
+}) => (
+  <StyledMarkdownStrong>{node.children?.map(handleNode)}</StyledMarkdownStrong>
+)
