@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Text } from '@atom-learning/components'
+import { Flex, Icon, styled, Text } from '@atom-learning/components'
 import { ArrowRight } from '@atom-learning/icons'
 import { default as NextLink } from 'next/link'
 import { useRouter } from 'next/router'
@@ -53,21 +53,26 @@ const NavigationList: React.FC<NavigationListProps> = ({
             key={`${source}${id}`}
           >
             <NextLink passHref href={`/${source}/${id}`}>
-              <Link
+              <Text
+                as="a"
                 size="sm"
                 css={{
                   color: 'white',
                   display: 'block',
                   width: '100%',
                   textAlign: 'left',
+                  textDecoration: 'none',
                   py: '$2',
-                  '&:hover,&:focus': { color: 'white' },
+                  '&:hover,&:focus': {
+                    color: 'white',
+                    textDecoration: 'underline'
+                  },
                   ...(isCurrentPage ? { textDecoration: 'underline' } : {})
                 }}
                 onClick={onNavigate}
               >
                 {title}
-              </Link>
+              </Text>
             </NextLink>
             {isCurrentPage && (
               <Icon css={{ color: 'white' }} size="sm" is={ArrowRight} />

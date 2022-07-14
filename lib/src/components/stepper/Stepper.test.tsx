@@ -4,6 +4,9 @@ import * as React from 'react'
 
 import { Stepper } from './Stepper'
 
+import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
+import { Step } from './types'
+
 describe('Stepper', () => {
   let props
   beforeEach(() => {
@@ -178,5 +181,115 @@ describe('Stepper', () => {
     fireEvent.click(screen.getByText('Next'))
     expect(props.onStepChange).not.toHaveBeenCalled()
     expect(onClickFn).toHaveBeenCalled()
+  })
+
+  it('renders correctly with default direction changed', () => {
+    const { container } = render(
+      <Stepper allowSkip {...props} direction="vertical">
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders the correct number of bullets when used as a controlled component', () => {
+    const steps: Step[] = [
+      { label: 'Step 1', status: 'active' },
+      { label: 'Step 2', status: 'default' }
+    ]
+
+    render(
+      <Stepper steps={steps}>
+        <Stepper.Steps />
+      </Stepper>
+    )
+
+    const expectedSteps = screen.getAllByLabelText('step', { exact: false })
+
+    expect(expectedSteps).toHaveLength(steps.length)
+  })
+
+  it('does not call the onStepChange handler when used as a controlled component', () => {
+    const onStepChange = jest.fn()
+
+    render(
+      <Stepper
+        onStepChange={onStepChange}
+        steps={[
+          {
+            label: 'Step 1',
+            status: 'active'
+          },
+          {
+            label: 'Step 2',
+            status: 'default'
+          }
+        ]}
+      >
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    fireEvent.click(screen.getByText('Next'))
+    // clicking on Next doesn't do anything, since steps prop is passed
+    expect(onStepChange).toHaveBeenCalledTimes(0)
+  })
+
+  it('renders success icon for bullets when step is completed', () => {
+    const { container } = render(
+      <Stepper
+        steps={[
+          {
+            label: 'Step 1',
+            status: 'success'
+          },
+          {
+            label: 'Step 2',
+            status: 'active'
+          }
+        ]}
+      >
+        <Stepper.StepBack label={() => 'Back'} />
+        <Stepper.Steps />
+        <Stepper.StepForward
+          label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+        />
+      </Stepper>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('throws when both stepCount and steps props are provided', async () => {
+    expectToThrow(() =>
+      render(
+        <Stepper
+          steps={[
+            {
+              label: 'Step 1',
+              status: 'success'
+            },
+            {
+              label: 'Step 2',
+              status: 'active'
+            }
+          ]}
+          stepCount={3}
+        >
+          <Stepper.StepBack label={() => 'Back'} />
+          <Stepper.Steps />
+          <Stepper.StepForward
+            label={(activeStep) => (activeStep === 2 ? 'Start' : 'Next')}
+          />
+        </Stepper>
+      )
+    )
   })
 })
