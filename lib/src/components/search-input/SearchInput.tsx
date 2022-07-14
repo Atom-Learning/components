@@ -41,9 +41,10 @@ const StyledIcon = styled(Icon, {
 })
 
 const StyledSearchInput = styled(Input, {
-  '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, & input[type="search"]::-webkit-search-results-decoration': {
-    display: 'none'
-  }
+  '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, & input[type="search"]::-webkit-search-results-decoration':
+    {
+      display: 'none'
+    }
 })
 
 export const SearchInput: React.FC<SearchInputProps> = ({
@@ -64,6 +65,10 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   const handleClear = () => {
     setInputValue('')
     setActiveIcon(INPUT_ICON.SEARCH)
+    onChange?.({
+      currentTarget: { value: '' },
+      target: { value: '' }
+    } as React.ChangeEvent<HTMLInputElement>)
   }
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {

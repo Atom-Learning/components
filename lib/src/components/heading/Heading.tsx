@@ -62,9 +62,9 @@ export type HeadingProps = Override<
   }
 >
 
-export const Heading: React.FC<HeadingProps> = ({
-  size = 'md',
-  ...remainingProps
-}) => <StyledHeading size={size} {...remainingProps} />
+export const Heading: React.ForwardRefExoticComponent<HeadingProps> =
+  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
+    <StyledHeading ref={ref} size={size} {...remainingProps} />
+  ))
 
 Heading.displayName = 'Heading'

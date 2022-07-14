@@ -37,7 +37,7 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
   }
 })
 
-export const StyledParagraph = styled('p', {
+export const StyledText = styled('p', {
   color: '$tonal600',
   fontFamily: '$body',
   fontWeight: 400,
@@ -52,7 +52,7 @@ export const StyledParagraph = styled('p', {
 })
 
 type TextProps = Override<
-  React.ComponentProps<typeof StyledParagraph>,
+  React.ComponentProps<typeof StyledText>,
   {
     as?:
       | 'blockquote'
@@ -69,10 +69,9 @@ type TextProps = Override<
   }
 >
 
-export const Text: React.FC<TextProps> = React.forwardRef(
-  ({ size = 'md', ...remainingProps }, ref) => (
-    <StyledParagraph size={size} {...remainingProps} ref={ref} />
-  )
-)
+export const Text: React.ForwardRefExoticComponent<TextProps> =
+  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
+    <StyledText size={size} {...remainingProps} ref={ref} />
+  ))
 
 Text.displayName = 'Text'

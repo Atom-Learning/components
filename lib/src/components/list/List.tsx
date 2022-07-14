@@ -6,7 +6,7 @@ import { textVariantSize } from '../text'
 
 export const StyledLi = styled('li', {})
 
-const StyledList = styled('ul', {
+export const StyledList = styled('ul', {
   fontFamily: '$body',
   m: 'unset',
   p: 'unset',
@@ -40,10 +40,19 @@ type ListProps = React.ComponentProps<typeof StyledList> & {
   ordered?: boolean
 }
 
-export const List: React.FC<ListProps> & { Item: typeof StyledLi } = ({
-  size = 'md',
-  ordered,
-  ...remainingProps
-}) => <StyledList as={ordered ? 'ol' : 'ul'} size={size} {...remainingProps} />
+type ListType = React.ForwardRefExoticComponent<ListProps> & {
+  Item: typeof StyledLi
+}
+
+export const List = React.forwardRef(
+  ({ size = 'md', ordered, ...remainingProps }, ref) => (
+    <StyledList
+      ref={ref}
+      as={ordered ? 'ol' : 'ul'}
+      size={size}
+      {...remainingProps}
+    />
+  )
+) as ListType
 
 List.Item = StyledLi

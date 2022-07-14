@@ -2,7 +2,7 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 
-const StyledDivider = styled('hr', {
+export const StyledDivider = styled('hr', {
   border: 0,
   bg: '$tonal200',
   variants: {
@@ -13,9 +13,8 @@ const StyledDivider = styled('hr', {
   }
 })
 
-export const Divider: React.FC<React.ComponentProps<typeof StyledDivider>> = ({
-  orientation = 'horizontal',
-  ...rest
-}) => {
-  return <StyledDivider orientation={orientation} {...rest} />
-}
+export const Divider: React.ForwardRefExoticComponent<
+  React.ComponentProps<typeof StyledDivider>
+> = React.forwardRef(({ orientation = 'horizontal', ...rest }, ref) => {
+  return <StyledDivider ref={ref} orientation={orientation} {...rest} />
+})

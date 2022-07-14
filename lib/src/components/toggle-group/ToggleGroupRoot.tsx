@@ -11,6 +11,7 @@ type RootType = {
   orientation?: 'horizontal' | 'vertical'
   gap?: number
   isFullWidth?: boolean
+  wrap: 'wrap' | 'no-wrap' | 'wrap-reverse'
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {

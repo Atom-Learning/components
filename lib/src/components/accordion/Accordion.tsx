@@ -15,17 +15,21 @@ type AccordionProps = React.ComponentProps<typeof StyledRoot> & {
   type: 'single' | 'multiple'
 }
 
-export const Accordion: React.FC<AccordionProps> & {
+type AccordionType = React.ForwardRefExoticComponent<AccordionProps> & {
   Item: typeof AccordionItem
   Content: typeof AccordionContent
   Trigger: typeof AccordionTrigger
-} = ({ type = 'single', children, ...remainingProps }) => (
-  // eslint-disable-next-line
-  // @ts-ignore TODO: Radix has an TS error that throws a warning if you pass multiple in. Needs to be fixed by the owner
-  <StyledRoot type={type} {...remainingProps}>
-    {children}
-  </StyledRoot>
-)
+}
+
+export const Accordion = React.forwardRef(
+  ({ type = 'single', children, ...remainingProps }, ref) => (
+    // eslint-disable-next-line
+    // @ts-ignore TODO: Radix has an TS error that throws a warning if you pass multiple in. Needs to be fixed by the owner
+    <StyledRoot ref={ref} type={type} {...remainingProps}>
+      {children}
+    </StyledRoot>
+  )
+) as AccordionType
 
 Accordion.Item = AccordionItem
 Accordion.Content = AccordionContent
