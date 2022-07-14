@@ -12,6 +12,7 @@ import {
   PropsTable
 } from '../../components'
 import {
+  getLatestLibVersion,
   getPageBySlug,
   getPages,
   mdxToString,
@@ -33,15 +34,22 @@ type PageProps = {
     [key: string]: []
   }
   orderedPages: []
+  version: string
 }
 
-const Page: React.FC<PageProps> = ({ pages, orderedPages, content, data }) => (
+const Page: React.FC<PageProps> = ({
+  pages,
+  orderedPages,
+  content,
+  data,
+  version
+}) => (
   <>
     <Head>
       <title>{`Atom Learning | ${data.title}`}</title>
     </Head>
     <Flex>
-      <Navigation items={pages} />
+      <Navigation items={pages} version={version} />
       <Flex as="main" css={{ width: '100%', flexDirection: 'column' }}>
         <Box
           as="header"
@@ -80,6 +88,8 @@ const Page: React.FC<PageProps> = ({ pages, orderedPages, content, data }) => (
 type Pages = [string, { category: string }[]][]
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const version = await getLatestLibVersion()
+
   const pages = (await getPages([
     'title',
     'source',
@@ -108,6 +118,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       pages: transformedPages,
       orderedPages,
       data: page.data,
+      version,
       content
     }
   }
