@@ -81,7 +81,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-normal:not(:last-child)::after {
+  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
@@ -92,7 +92,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-normal {
+  .c-jHTmAV-jdelko-status-default {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -212,7 +212,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-current="step"
@@ -223,21 +223,21 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>
@@ -348,7 +348,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-normal:not(:last-child)::after {
+  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
@@ -359,7 +359,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-normal {
+  .c-jHTmAV-jdelko-status-default {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -399,7 +399,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-primaryMid);
   }
 
-  .c-dQvJRf-iHLjaT-status-normal {
+  .c-dQvJRf-iHLjaT-status-default {
     color: var(--colors-tonal400);
     font-weight: 400;
   }
@@ -542,7 +542,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         </span>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ikOanEY-css"
       >
         <div
           aria-label=""
@@ -650,7 +650,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-normal:not(:last-child)::after {
+  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
@@ -661,7 +661,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-normal {
+  .c-jHTmAV-jdelko-status-default {
     background: var(--colors-tonal50);
     color: var(--colors-tonal400);
   }
@@ -750,7 +750,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-cPPfON-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-current="step"
@@ -761,21 +761,21 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-normal c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>

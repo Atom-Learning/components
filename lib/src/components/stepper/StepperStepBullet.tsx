@@ -14,7 +14,7 @@ export const StepperStepBullet = styled(Flex, {
   zIndex: 1,
   variants: {
     status: {
-      normal: { bg: '$tonal50', color: '$tonal400' },
+      default: { bg: '$tonal50', color: '$tonal400' },
       active: {
         bg: 'white',
         color: '$primaryMid',

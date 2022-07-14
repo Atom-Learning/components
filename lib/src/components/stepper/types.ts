@@ -4,7 +4,7 @@ export enum Status {
   ACTIVE = 'active',
   VIEWED = 'viewed',
   SUCCESS = 'success',
-  NORMAL = 'normal'
+  DEFAULT = 'default'
 }
 export interface Step {
   label?: string

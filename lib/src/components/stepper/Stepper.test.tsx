@@ -200,7 +200,7 @@ describe('Stepper', () => {
   it('renders the correct number of bullets when used as a controlled component', () => {
     const steps: Step[] = [
       { label: 'Step 1', status: 'active' },
-      { label: 'Step 2', status: 'normal' }
+      { label: 'Step 2', status: 'default' }
     ]
 
     render(
@@ -227,7 +227,7 @@ describe('Stepper', () => {
           },
           {
             label: 'Step 2',
-            status: 'normal'
+            status: 'default'
           }
         ]}
       >

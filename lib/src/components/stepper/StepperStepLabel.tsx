@@ -11,7 +11,7 @@ export const StepperStepLabel = styled(Text, {
       horizontal: { mt: '$3' }
     },
     status: {
-      normal: { color: '$tonal400', fontWeight: 400 },
+      default: { color: '$tonal400', fontWeight: 400 },
       active: {
         color: '$primaryMid'
       },

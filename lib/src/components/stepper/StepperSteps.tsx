@@ -32,7 +32,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
     if (activeBullet.status) return activeBullet.status
     if (activeStep === index) return Status.ACTIVE
     if (viewedSteps.includes(index)) return Status.VIEWED
-    return Status.NORMAL
+    return Status.DEFAULT
   }
 
   const getSeparatorStatus = (index: number) => {
@@ -46,7 +46,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
       return Status.ACTIVE
     }
 
-    return Status.NORMAL
+    return Status.DEFAULT
   }
 
   return (

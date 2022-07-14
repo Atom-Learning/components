@@ -37,7 +37,7 @@ export const StepperStepContainer = styled(Flex, {
       }
     },
     separator: {
-      normal: { '&:not(:last-child)::after': { bg: '$tonal50' } },
+      default: { '&:not(:last-child)::after': { bg: '$tonal50' } },
       active: { '&:not(:last-child)::after': { bg: '$primary' } },
       success: { '&:not(:last-child)::after': { bg: '$success' } }
     }
