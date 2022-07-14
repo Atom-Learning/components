@@ -6,13 +6,11 @@ import {
   styled,
   Text
 } from '@atom-learning/components'
-// import pkg from '@atom-learning/components/package.json'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { capitalCase } from 'capital-case'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
 
-// import { Pill } from '../'
 import { NavigationContent } from './NavigationContent'
 import { NavigationTrigger } from './NavigationTrigger'
 
