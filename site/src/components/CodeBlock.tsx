@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import * as Components from '@atom-learning/components'
 import { styled } from '@atom-learning/components'
 import * as Icons from '@atom-learning/icons'
