@@ -3,9 +3,9 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { DialogBackground } from './DialogBackground'
 import { DialogClose } from './DialogClose'
 import { DialogContent } from './DialogContent'
-import { DialogBackground } from './DialogBackground'
 
 const StyledDialog = styled(Root, {})
 

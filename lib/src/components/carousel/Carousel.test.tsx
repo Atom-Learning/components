@@ -1,11 +1,11 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Image } from '../'
 import { Carousel } from '.'
 
-const ExampleCarousel = () => (
+const ExampleCarousel = (props: React.ComponentProps<typeof Carousel>) => (
   <Carousel
     slideWidth={200}
     slideHeight={300}
@@ -17,6 +17,7 @@ const ExampleCarousel = () => (
       position: 'relative',
       width: '500px'
     }}
+    {...props}
   >
     <Carousel.ArrowPrevious
       css={{
@@ -80,5 +81,13 @@ describe('Carousel component', () => {
     const { container } = render(<ExampleCarousel />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('passes props onto the carousel provider', async () => {
+    render(<ExampleCarousel currentSlide={1} />)
+
+    const secondDot = screen.getAllByRole('button', { name: 'slide dot' })[1]
+
+    expect(secondDot).toBeDisabled()
   })
 })
