@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Stepper renders correctly with default orientation changed 1`] = `
+exports[`Stepper renders correctly with default direction changed 1`] = `
 @media  {
   .c-fkUJsw {
     align-items: center;
@@ -62,19 +62,19 @@ exports[`Stepper renders correctly with default orientation changed 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-orientation-horizontal {
+  .c-knmidH-cPPfON-direction-horizontal {
     flex-direction: row;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal {
+  .c-eBWKsL-fCWxeO-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal:not(:last-child)::after {
+  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
@@ -106,18 +106,18 @@ exports[`Stepper renders correctly with default orientation changed 1`] = `
     background: var(--colors-primary);
   }
 
-  .c-knmidH-iTKOFX-orientation-vertical {
+  .c-knmidH-iTKOFX-direction-vertical {
     flex-direction: column;
   }
 
-  .c-eBWKsL-ictAHG-orientation-vertical {
+  .c-eBWKsL-ictAHG-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
     align-items: center;
   }
 
-  .c-eBWKsL-ictAHG-orientation-vertical:not(:last-child)::after {
+  .c-eBWKsL-ictAHG-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
@@ -209,10 +209,10 @@ exports[`Stepper renders correctly with default orientation changed 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-orientation-vertical"
+      class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-orientation-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-current="step"
@@ -223,7 +223,7 @@ exports[`Stepper renders correctly with default orientation changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-orientation-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-label="step 2"
@@ -233,7 +233,7 @@ exports[`Stepper renders correctly with default orientation changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-orientation-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ieTCIBM-css"
       >
         <button
           aria-label="step 3"
@@ -329,19 +329,19 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-orientation-horizontal {
+  .c-knmidH-cPPfON-direction-horizontal {
     flex-direction: row;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal {
+  .c-eBWKsL-fCWxeO-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal:not(:last-child)::after {
+  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
@@ -373,25 +373,25 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     background: var(--colors-primary);
   }
 
-  .c-knmidH-iTKOFX-orientation-vertical {
+  .c-knmidH-iTKOFX-direction-vertical {
     flex-direction: column;
   }
 
-  .c-eBWKsL-ictAHG-orientation-vertical {
+  .c-eBWKsL-ictAHG-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
     align-items: center;
   }
 
-  .c-eBWKsL-ictAHG-orientation-vertical:not(:last-child)::after {
+  .c-eBWKsL-ictAHG-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
     top: 50%;
   }
 
-  .c-dQvJRf-hbpKWx-orientation-horizontal {
+  .c-dQvJRf-hbpKWx-direction-horizontal {
     margin-top: var(--space-3);
   }
 
@@ -512,10 +512,10 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-orientation-horizontal"
+      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
       >
         <div
           aria-current="step"
@@ -535,14 +535,14 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           </svg>
         </div>
         <span
-          class="c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-byQUqd-status-success"
+          class="c-dQvJRf c-dQvJRf-hbpKWx-direction-horizontal c-dQvJRf-byQUqd-status-success"
           id="step-0"
         >
           Step 1
         </span>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ikOanEY-css"
       >
         <div
           aria-label=""
@@ -552,7 +552,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           2
         </div>
         <span
-          class="c-dQvJRf c-dQvJRf-hbpKWx-orientation-horizontal c-dQvJRf-cDiHrO-status-active"
+          class="c-dQvJRf c-dQvJRf-hbpKWx-direction-horizontal c-dQvJRf-cDiHrO-status-active"
           id="step-1"
         >
           Step 2
@@ -631,19 +631,19 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-orientation-horizontal {
+  .c-knmidH-cPPfON-direction-horizontal {
     flex-direction: row;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal {
+  .c-eBWKsL-fCWxeO-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
     align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-orientation-horizontal:not(:last-child)::after {
+  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
@@ -747,10 +747,10 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-orientation-horizontal"
+      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-current="step"
@@ -761,7 +761,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-label="step 2"
@@ -771,7 +771,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-orientation-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-normal c-dhzjXW-ibJjasZ-css"
       >
         <button
           aria-label="step 3"

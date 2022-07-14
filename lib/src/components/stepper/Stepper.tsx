@@ -18,7 +18,7 @@ export const Stepper: React.FC<IStepperProps> & {
   allowSkip,
   onComplete,
   onStepChange,
-  orientation = 'horizontal',
+  direction = 'horizontal',
   steps,
   css
 }) => {
@@ -35,7 +35,7 @@ export const Stepper: React.FC<IStepperProps> & {
       allowSkip={allowSkip}
       onComplete={onComplete}
       onStepChange={stepCount ? onStepChange : undefined}
-      orientation={orientation}
+      direction={direction}
       steps={steps || Array(count).fill('')}
     >
       <Box

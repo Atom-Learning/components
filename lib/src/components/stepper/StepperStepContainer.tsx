@@ -12,7 +12,7 @@ export const StepperStepContainer = styled(Flex, {
     position: 'absolute'
   },
   variants: {
-    orientation: {
+    direction: {
       vertical: {
         py: '$3',
         flexDirection: 'row',

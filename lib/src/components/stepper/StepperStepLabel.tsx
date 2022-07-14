@@ -6,7 +6,7 @@ export const StepperStepLabel = styled(Text, {
   fontWeight: 600,
   textAlign: 'center',
   variants: {
-    orientation: {
+    direction: {
       vertical: { ml: '$3' },
       horizontal: { mt: '$3' }
     },

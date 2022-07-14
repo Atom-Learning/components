@@ -16,18 +16,15 @@ import { IStepperStepsProps, Status } from './types'
 const StepperStepsContainer = styled(Flex, {
   justifyContent: 'space-between',
   variants: {
-    orientation: {
+    direction: {
       vertical: { flexDirection: 'column' },
       horizontal: { flexDirection: 'row', alignItems: 'center' }
     }
   }
 })
 
-export const StepperSteps: React.FC<IStepperStepsProps> = ({
-  css,
-  ...rest
-}) => {
-  const { steps, goToStep, activeStep, viewedSteps, allowSkip, orientation } =
+export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
+  const { steps, goToStep, activeStep, viewedSteps, allowSkip, direction } =
     useStepper()
 
   const getBulletStatus = (index: number) => {
@@ -53,7 +50,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
   }
 
   return (
-    <StepperStepsContainer css={css} {...rest} orientation={orientation}>
+    <StepperStepsContainer css={css} direction={direction}>
       {steps.map((step, index) => {
         const bulletStatus = getBulletStatus(index)
         const seperatorStatus = getSeparatorStatus(index)
@@ -61,10 +58,10 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
         return (
           <StepperStepContainer
             key={`step_${index}`}
-            orientation={orientation}
+            direction={direction}
             separator={seperatorStatus}
             css={
-              orientation === 'horizontal'
+              direction === 'horizontal'
                 ? { width: `calc(100% / ${steps.length})` }
                 : { height: `calc(100% / ${steps.length})` }
             }
@@ -92,7 +89,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({
               <StepperStepLabel
                 as="span"
                 id={`step-${index}`}
-                orientation={orientation}
+                direction={direction}
                 status={bulletStatus}
               >
                 {step.label}

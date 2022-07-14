@@ -183,9 +183,9 @@ describe('Stepper', () => {
     expect(onClickFn).toHaveBeenCalled()
   })
 
-  it('renders correctly with default orientation changed', () => {
+  it('renders correctly with default direction changed', () => {
     const { container } = render(
-      <Stepper allowSkip {...props} orientation="vertical">
+      <Stepper allowSkip {...props} direction="vertical">
         <Stepper.StepBack label={() => 'Back'} />
         <Stepper.Steps />
         <Stepper.StepForward

@@ -11,7 +11,7 @@ export interface Step {
   status: `${Status}`
 }
 
-export type Orientation = 'vertical' | 'horizontal'
+export type Direction = 'vertical' | 'horizontal'
 
 export type Context = {
   steps: Step[]
@@ -21,7 +21,7 @@ export type Context = {
   activeStep: number
   viewedSteps: number[]
   allowSkip?: boolean
-  orientation?: Orientation
+  direction?: Direction
 }
 
 export type StepperProviderProps = {
@@ -29,7 +29,7 @@ export type StepperProviderProps = {
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void
-  orientation?: Orientation
+  direction?: Direction
   steps: Step[]
 }
 
@@ -39,7 +39,7 @@ export interface IStepperProps {
   allowSkip?: boolean
   onComplete?: () => void
   onStepChange?: (activeStep: number) => void
-  orientation?: Orientation
+  direction?: Direction
   steps?: Step[]
 }
 
@@ -50,6 +50,4 @@ export interface IStepperNavigateProps {
 
 export interface IStepperStepsProps {
   css?: CSS
-  stepsWidth?: string
-  orientation?: Orientation
 }
