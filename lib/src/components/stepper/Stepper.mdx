@@ -16,7 +16,10 @@ category: Navigation
 The root `Stepper` component must be passed `stepCount` as a number in order to display the desired number of bullet steps. It also takes `onStepChange` as a function that takes `activeStep` as an argument. This can be used to determine what content to display, based on the current step. It can also take `onComplete` as a function that gets called when the user clicks the `StepForward` button while on the last step.
 
 ```tsx preview
-<Stepper stepCount={3}>
+<Stepper
+  stepCount={3}
+  css={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr' }}
+>
   <Stepper.StepBack>Back</Stepper.StepBack>
   <Stepper.Steps />
   <Stepper.StepForward>Next</Stepper.StepForward>
@@ -35,9 +38,10 @@ Below is a more complex example that shows how to dynamically render the button 
   onStepChange={(activeStep) =>
     console.log('Do something with the active step')
   }
+  css={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr' }}
 >
   <Stepper.StepBack label={(activeStep) => 'Back'} />
-  <Stepper.Steps css={{ width: '200px' }} />
+  <Stepper.Steps />
   <Stepper.StepForward
     label={(activeStep) => (activeStep === 2 ? 'Finish' : 'Next')}
   />
@@ -45,13 +49,56 @@ Below is a more complex example that shows how to dynamically render the button 
 ```
 
 Below is how to override the forward default behavior if some logic or validation need to be done before moving to the next step
+
 ```tsx preview
-<Stepper stepCount={3}>
+<Stepper
+  stepCount={3}
+  css={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr' }}
+>
   <Stepper.StepBack>Back</Stepper.StepBack>
   <Stepper.Steps />
-  <Stepper.StepForward onClick={(goToNextStep) => {
-    // do something before
-    goToNextStep()
-  }}>Next</Stepper.StepForward>
+  <Stepper.StepForward
+    onClick={(goToNextStep) => {
+      // do something before
+      goToNextStep()
+    }}
+  >
+    Next
+  </Stepper.StepForward>
+</Stepper>
+```
+
+The root `Stepper` component also allows the user to pass a `steps` prop in order to render step labels. When the `steps` prop is passed, the `Stepper` component will be used as a controlled component thereby taking control of its state. When used as a controlled component, navigation across steps, and identifying the state of a step would be controlled by the array of steps passed to the component.
+
+Below is an example that shows how to use the controlled component. Each object in the `steps` array must include a `label` and a `status` property to determine what content to render based on the current position.
+
+```tsx preview
+<Stepper
+  steps={[
+    {
+      label: 'Step 1',
+      status: 'viewed'
+    },
+    {
+      label: 'Step 2',
+      status: 'active'
+    },
+    {
+      label: 'Step 4',
+      status: 'default'
+    }
+  ]}
+>
+  <Stepper.Steps />
+</Stepper>
+```
+
+The root `Stepper` component also allows the user to pass a `orientation` prop in order to the alternate the component direction .
+
+Below is an example that shows how to render steps in vertical direction.
+
+```tsx preview
+<Stepper stepCount={2} orientation="vertical">
+  <Stepper.Steps />
 </Stepper>
 ```
