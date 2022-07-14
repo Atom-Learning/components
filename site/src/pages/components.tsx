@@ -6,7 +6,7 @@ import * as React from 'react'
 
 import { Container, Navigation } from '../components'
 import Components from '../sandbox/components'
-import { getPages, transformNavigationStructure } from '../utilities'
+import { getLatestLibVersion, getPages, transformNavigationStructure } from '../utilities'
 
 type PageProps = {
   data: {
@@ -22,15 +22,16 @@ type PageProps = {
     [key: string]: []
   }
   orderedPages: []
+  version: string
 }
 
-const Page: React.FC<PageProps> = ({ pages }) => (
+const Page: React.FC<PageProps> = ({ pages, version }) => (
   <>
     <Head>
       <title>Atom Learning | Components</title>
     </Head>
     <Flex>
-      <Navigation items={pages} />
+      <Navigation items={pages} version={version} />
       <Box as="main" css={{ width: '100%' }}>
         <Box as="header" css={{ bg: '$tonal50', py: '$8' }}>
           <Container css={{ px: '$4' }}>
@@ -54,6 +55,7 @@ const Page: React.FC<PageProps> = ({ pages }) => (
 type Pages = [string, { category: string }[]][]
 
 export const getStaticProps: GetStaticProps = async () => {
+  const version = await getLatestLibVersion()
   const pages = (await getPages([
     'title',
     'source',
@@ -66,7 +68,8 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      pages: transformedPages
+      pages: transformedPages,
+      version
     }
   }
 }
