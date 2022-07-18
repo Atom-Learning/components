@@ -22,6 +22,7 @@ export type Context = {
   viewedSteps: number[]
   allowSkip?: boolean
   direction?: Direction
+  hideLabels: boolean
 }
 
 export type StepperProviderProps = {
@@ -31,6 +32,7 @@ export type StepperProviderProps = {
   onStepChange?: (activeStep: number) => void
   direction?: Direction
   steps: Step[]
+  hideLabels: boolean
 }
 
 export interface IStepperProps {
@@ -41,6 +43,7 @@ export interface IStepperProps {
   onStepChange?: (activeStep: number) => void
   direction?: Direction
   steps?: Step[]
+  hideLabels?: boolean
 }
 
 export interface IStepperNavigateProps {

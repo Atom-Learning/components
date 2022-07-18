@@ -93,6 +93,32 @@ Below is an example that shows how to use the controlled component. Each object 
 </Stepper>
 ```
 
+The root `Stepper` component also allows the user to pass a `hideLabels` prop in order to hide step labels passed in the `step` object.
+
+Below is an example that shows how to hide step labels
+
+```tsx preview
+<Stepper
+  steps={[
+    {
+      label: 'Step 1',
+      status: 'viewed'
+    },
+    {
+      label: 'Step 2',
+      status: 'active'
+    },
+    {
+      label: 'Step 4',
+      status: 'default'
+    }
+  ]}
+  hideLabels={true}
+>
+  <Stepper.Steps />
+</Stepper>
+```
+
 The root `Stepper` component also allows the user to pass a `orientation` prop in order to the alternate the component direction .
 
 Below is an example that shows how to render steps in vertical direction.
