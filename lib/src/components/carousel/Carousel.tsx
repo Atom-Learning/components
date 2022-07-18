@@ -23,14 +23,20 @@ type CarouselSubComponents = {
 }
 
 export const Carousel: React.FC<
-  CarouselProps & React.ComponentProps<typeof CSSWrapper>
+  CarouselProps &
+    Omit<
+      React.ComponentProps<typeof CarouselProvider>,
+      'naturalSlideWidth' | 'naturalSlideHeight' | 'totalSlides'
+    > &
+    React.ComponentProps<typeof CSSWrapper>
 > &
   CarouselSubComponents = ({
   children,
   css,
   slideHeight,
   slideWidth,
-  numSlides
+  numSlides,
+  ...props
 }) => {
   return (
     <CSSWrapper css={css}>
@@ -38,6 +44,7 @@ export const Carousel: React.FC<
         naturalSlideWidth={slideWidth}
         naturalSlideHeight={slideHeight}
         totalSlides={numSlides}
+        {...props}
       >
         {children}
       </CarouselProvider>
