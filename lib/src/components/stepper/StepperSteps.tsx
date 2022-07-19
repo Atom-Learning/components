@@ -24,8 +24,15 @@ const StepperStepsContainer = styled(Flex, {
 })
 
 export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
-  const { steps, goToStep, activeStep, viewedSteps, allowSkip, direction } =
-    useStepper()
+  const {
+    steps,
+    goToStep,
+    activeStep,
+    viewedSteps,
+    allowSkip,
+    direction,
+    hideLabels
+  } = useStepper()
 
   const getBulletStatus = (index: number) => {
     const activeBullet = steps[index]
@@ -85,7 +92,7 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
               {step.status === 'success' ? <Icon is={Ok} /> : index + 1}
             </StepperStepBullet>
 
-            {step.label && (
+            {step.label && !hideLabels && (
               <StepperStepLabel
                 as="span"
                 id={`step-${index}`}

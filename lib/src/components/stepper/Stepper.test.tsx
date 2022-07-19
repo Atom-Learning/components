@@ -292,4 +292,20 @@ describe('Stepper', () => {
       )
     )
   })
+
+  it("doesn't render labels when hideLabels prop is truthy", () => {
+    const steps: Step[] = [
+      { label: 'Step 1', status: 'active' },
+      { label: 'Step 2', status: 'default' }
+    ]
+
+    render(
+      <Stepper steps={steps} hideLabels={true}>
+        <Stepper.Steps />
+      </Stepper>
+    )
+
+    const expectedSteps = screen.queryAllByLabelText('step', { exact: false })
+    expect(expectedSteps).toHaveLength(0)
+  })
 })
