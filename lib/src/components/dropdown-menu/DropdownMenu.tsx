@@ -1,4 +1,4 @@
-import { Root as DropdownMenuRoot } from '@radix-ui/react-dropdown-menu'
+import { Root as DropdownMenuRoot, Portal } from '@radix-ui/react-dropdown-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'
@@ -15,6 +15,7 @@ export const DropdownMenu: React.FC<React.ComponentProps<typeof Root>> & {
   Content: typeof DropdownMenuContent
   Item: typeof DropdownMenuItem
   LinkItem: typeof DropdownMenuLinkItem
+  Portal: typeof Portal
   Separator: typeof DropdownMenuSeparator
   Trigger: typeof DropdownMenuTrigger
 } = (props) => <Root {...props} />
@@ -22,5 +23,6 @@ export const DropdownMenu: React.FC<React.ComponentProps<typeof Root>> & {
 DropdownMenu.Content = DropdownMenuContent
 DropdownMenu.Item = DropdownMenuItem
 DropdownMenu.LinkItem = DropdownMenuLinkItem
+DropdownMenu.Portal = Portal
 DropdownMenu.Separator = DropdownMenuSeparator
 DropdownMenu.Trigger = DropdownMenuTrigger
