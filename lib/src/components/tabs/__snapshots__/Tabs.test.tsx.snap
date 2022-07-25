@@ -87,12 +87,12 @@ exports[`Tabs component renders 1`] = `
   <div
     class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
     data-orientation="horizontal"
+    dir="ltr"
   >
     <div
       aria-orientation="horizontal"
       class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
       data-orientation="horizontal"
-      dir="ltr"
       role="tablist"
       style="outline: none;"
       tabindex="0"
@@ -133,6 +133,7 @@ exports[`Tabs component renders 1`] = `
       data-state="active"
       id="radix-2-content-tab1"
       role="tabpanel"
+      style="animation-duration: 0s;"
       tabindex="0"
     >
       Important content for tab 1
@@ -332,6 +333,7 @@ exports[`Tabs component renders mobile view 1`] = `
   <div
     class="c-fixGjY c-fixGjY-ixnjYu-theme-light"
     data-orientation="horizontal"
+    dir="ltr"
   >
     <div
       class="c-dhzjXW c-dhzjXW-icmpvrW-css"
@@ -356,7 +358,6 @@ exports[`Tabs component renders mobile view 1`] = `
         aria-orientation="horizontal"
         class="c-gZZKZD c-gZZKZD-eFavRf-theme-light"
         data-orientation="horizontal"
-        dir="ltr"
         role="tablist"
         style="outline: none;"
         tabindex="0"
@@ -414,6 +415,7 @@ exports[`Tabs component renders mobile view 1`] = `
       data-state="active"
       id="radix-5-content-tab1"
       role="tabpanel"
+      style="animation-duration: 0s;"
       tabindex="0"
     >
       Important content for tab 1

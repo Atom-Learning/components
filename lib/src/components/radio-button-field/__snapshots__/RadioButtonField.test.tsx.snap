@@ -130,6 +130,7 @@ exports[`RadioButtonField component renders 1`] = `
         Example options
       </legend>
       <div
+        aria-required="false"
         class="c-iSwBqf c-iSwBqf-iTKOFX-direction-column"
         dir="ltr"
         role="radiogroup"
