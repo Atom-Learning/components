@@ -1252,6 +1252,7 @@ post.
           </Tooltip.Trigger>
           <Tooltip.Content>This is the tooltip content</Tooltip.Content>
         </Tooltip>
+
         <Popover>
           <Popover.Trigger>
             <Button>Click for popover</Button>

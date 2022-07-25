@@ -63,14 +63,16 @@ Passing `disabled` makes the Action Icon take a disabled appearance, where any c
 It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual description of the action the user is about to perform.
 
 ```tsx preview
-<Tooltip>
-  <Tooltip.Trigger>
-    <ActionIcon size="lg" label="Add to basket">
-      <Icon is={Basket} size="md" />
-    </ActionIcon>
-  </Tooltip.Trigger>
-  <Tooltip.Content>Add to basket</Tooltip.Content>
-</Tooltip>
+<ToolTip.Provider>
+  <Tooltip>
+    <Tooltip.Trigger>
+      <ActionIcon size="lg" label="Add to basket">
+        <Icon is={Basket} size="md" />
+      </ActionIcon>
+    </Tooltip.Trigger>
+    <Tooltip.Content>Add to basket</Tooltip.Content>
+  </Tooltip>
+</ToolTip.Provider>
 ```
 
 ## Polymorphism

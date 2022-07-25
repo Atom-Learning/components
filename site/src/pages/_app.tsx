@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { globalCss } from '@atom-learning/components'
+import { globalCss, Tooltip } from '@atom-learning/components'
 import { IdProvider } from '@radix-ui/react-id'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
@@ -13,10 +13,12 @@ globalCss({
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => (
   <IdProvider>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </Head>
-    <Component {...pageProps} />
+    <Tooltip.Provider>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Component {...pageProps} />
+    </Tooltip.Provider>
   </IdProvider>
 )
 
