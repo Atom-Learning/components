@@ -9,10 +9,12 @@ describe(`Tooltip component`, () => {
   it('renders a tooltip', async () => {
     const { container } = render(
       <IdProvider>
-        <Tooltip>
-          <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
-          <Tooltip.Content>CONTENT</Tooltip.Content>
-        </Tooltip>
+        <Tooltip.Provider>
+          <Tooltip>
+            <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
+            <Tooltip.Content>CONTENT</Tooltip.Content>
+          </Tooltip>
+        </Tooltip.Provider>
       </IdProvider>
     )
 
@@ -25,10 +27,12 @@ describe(`Tooltip component`, () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <IdProvider>
-        <Tooltip defaultOpen>
-          <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
-          <Tooltip.Content>CONTENT</Tooltip.Content>
-        </Tooltip>
+        <Tooltip.Provider>
+          <Tooltip defaultOpen>
+            <Tooltip.Trigger>TOOLTIP</Tooltip.Trigger>
+            <Tooltip.Content>CONTENT</Tooltip.Content>
+          </Tooltip>
+        </Tooltip.Provider>
       </IdProvider>
     )
 
