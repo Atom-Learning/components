@@ -163,10 +163,10 @@ exports[`DateField component renders a field in error state 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-emECXH-size-sm {
+  .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
-    stroke-width: 1.25;
+    stroke-width: 1.5;
   }
 
   .c-klXesr-kUaMfZ-size-md {
@@ -304,7 +304,7 @@ exports[`DateField component renders a field in error state 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-emECXH-size-sm c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihFPSGE-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -325,7 +325,7 @@ exports[`DateField component renders a field in error state 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-emECXH-size-sm c-dbrbZt-ihYlUBO-css"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihYlUBO-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -505,10 +505,10 @@ exports[`DateField component renders a field with a text input 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-emECXH-size-sm {
+  .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
-    stroke-width: 1.25;
+    stroke-width: 1.5;
   }
 
   .c-klXesr-kUaMfZ-size-md {
@@ -604,7 +604,7 @@ exports[`DateField component renders a field with a text input 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-emECXH-size-sm c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihFPSGE-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
