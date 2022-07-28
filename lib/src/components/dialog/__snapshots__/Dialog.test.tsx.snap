@@ -88,10 +88,10 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-ixewiD-lgqbzh-size-sm {
@@ -151,7 +151,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -271,10 +271,10 @@ exports[`Dialog component with custom background renders 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-ixewiD-lgqbzh-size-sm {
@@ -347,7 +347,7 @@ exports[`Dialog component with custom background renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -449,10 +449,10 @@ exports[`Dialog component without close button renders 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-ixewiD-lgqbzh-size-sm {
