@@ -12,8 +12,8 @@ export const StyledIcon = styled('svg', {
   verticalAlign: 'middle',
   variants: {
     size: {
-      sm: { size: '$1', strokeWidth: '1.75' },
-      md: { size: '$2', strokeWidth: '2' },
+      sm: { size: '$1', strokeWidth: '1.5' },
+      md: { size: '$2', strokeWidth: '1.75' },
       lg: { size: '$3', strokeWidth: '2' }
     }
   }

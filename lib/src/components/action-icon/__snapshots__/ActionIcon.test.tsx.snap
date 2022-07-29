@@ -33,10 +33,10 @@ exports[`ActionIcon component renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 }
 

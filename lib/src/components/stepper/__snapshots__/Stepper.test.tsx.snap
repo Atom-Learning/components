@@ -413,10 +413,10 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: white;
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-dQvJRf-byQUqd-status-success {
@@ -525,7 +525,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
