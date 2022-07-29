@@ -7,6 +7,7 @@ export const StepperStepContainer = styled(Flex, {
   fontFamily: '$body',
   fontWeight: 600,
   fontSize: '$md',
+  alignItems: 'center',
   '&:not(:last-child)::after': {
     content: '',
     position: 'absolute'
@@ -16,7 +17,6 @@ export const StepperStepContainer = styled(Flex, {
       vertical: {
         py: '$3',
         flexDirection: 'row',
-        alignItems: 'center',
         '&:not(:last-child)::after': {
           height: '100%',
           width: '4px',
@@ -27,7 +27,6 @@ export const StepperStepContainer = styled(Flex, {
       horizontal: {
         px: '$2',
         flexDirection: 'column',
-        alignItems: 'center',
         '&:not(:last-child)::after': {
           width: '100%',
           height: '4px',

@@ -5,12 +5,10 @@ import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
 import { Icon } from '../icon'
-
-import { StepperStepLabel } from './StepperStepLabel'
-import { StepperStepContainer } from './StepperStepContainer'
-import { StepperStepBullet } from './StepperStepBullet'
-
 import { useStepper } from './stepper-context/StepperContext'
+import { StepperStepBullet } from './StepperStepBullet'
+import { StepperStepContainer } from './StepperStepContainer'
+import { StepperStepLabel } from './StepperStepLabel'
 import { IStepperStepsProps, Status } from './types'
 
 const StepperStepsContainer = styled(Flex, {
@@ -18,7 +16,7 @@ const StepperStepsContainer = styled(Flex, {
   variants: {
     direction: {
       vertical: { flexDirection: 'column' },
-      horizontal: { flexDirection: 'row', alignItems: 'center' }
+      horizontal: { flexDirection: 'row' }
     }
   }
 })
