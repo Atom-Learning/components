@@ -23,7 +23,7 @@ export const useDate = (
 
   const saveDate = (inputDate, isDateString = false) => {
     const parsedInputDate = isDateString
-      ? dayjs(inputDate, dateFormat)
+      ? dayjs(inputDate, dateFormat, true)
       : dayjs(inputDate)
 
     setDate(parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined)
