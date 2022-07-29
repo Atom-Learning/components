@@ -13,13 +13,12 @@ const ToggleGroupImplementation = () => (
     type="multiple"
     orientation="vertical"
     gap={2}
-    size="sm"
     defaultValue={['item_a', 'button_a']}
   >
     <ToggleGroup.Item disabled value="item_a">item</ToggleGroup.Item>
-    <ToggleGroup.Button disabled value="button_a"> button A </ToggleGroup.Button>
-    <ToggleGroup.Button value="button_b">button B</ToggleGroup.Button>
-    <ToggleGroup.Button value="button_icon">
+    <ToggleGroup.Button size="sm" disabled value="button_a"> button A </ToggleGroup.Button>
+    <ToggleGroup.Button size="sm" value="button_b">button B</ToggleGroup.Button>
+    <ToggleGroup.Button size="sm" value="button_icon">
       <Icon is={Upload} />
       Button with icon
     </ToggleGroup.Button>
