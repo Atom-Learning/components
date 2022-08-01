@@ -6,6 +6,7 @@ import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
 import { Input } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
+import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 
 type SearchInputProps = React.ComponentProps<typeof Input> & {
   size: 'sm' | 'md'
@@ -55,6 +56,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   onChange,
   ...remainingProps
 }) => {
+  const [inputElRef, setInputElRef] = useCallbackRef()
   const [inputValue, setInputValue] = React.useState<string | number>(
     value || ''
   )
@@ -63,12 +65,20 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   )
 
   const handleClear = () => {
-    setInputValue('')
-    setActiveIcon(INPUT_ICON.SEARCH)
-    onChange?.({
-      currentTarget: { value: '' },
-      target: { value: '' }
-    } as React.ChangeEvent<HTMLInputElement>)
+    const inputEl = inputElRef.current
+    if (!inputEl) return
+
+    // https://stackoverflow.com/a/46012210
+    const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+      window.HTMLInputElement.prototype,
+      'value'
+    )?.set
+    nativeInputValueSetter?.call?.(inputEl, '')
+    const ev2 = new Event('input', {
+      bubbles: true
+    })
+    inputEl.dispatchEvent(ev2)
+    inputEl.focus()
   }
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,6 +113,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
   return (
     <Box css={{ position: 'relative', ...css }}>
       <StyledSearchInput
+        ref={setInputElRef}
         size={size}
         type="search"
         {...remainingProps}
