@@ -12,19 +12,19 @@ import { StyledText } from '../text/Text'
 const StyledStackContent = styled('div', {
   [`& > ${StyledHeading}`]: {
     maxWidth: '65ch',
-    '&:not(:first-child)': { mt: '$5' },
-    '&:not(:last-child)': { mb: '$5' }
+    '&:not(:first-child)': { mt: '$6' },
+    '&:not(:last-child)': { mb: '$6' }
   },
   [`& > ${StyledText}`]: {
     maxWidth: '75ch',
-    '&:not(:last-child)': { mb: '$5' }
+    '&:not(:last-child)': { mb: '$6' }
   },
   [`& > ${StyledList}`]: {
     maxWidth: '75ch',
-    '&:not(:last-child)': { mb: '$5' }
+    '&:not(:last-child)': { mb: '$6' }
   },
   [`& > ${StyledDivider}`]: {
-    my: '$5'
+    my: '$6'
   },
   [`& > ${StyledImage}`]: {
     display: 'block',

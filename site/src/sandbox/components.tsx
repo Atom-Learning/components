@@ -103,24 +103,24 @@ const Page = () => (
     <Divider css={{ my: '$8' }} />
     <Group name="Assets">
       <Image src={logo} />
-      <Text size="sm" css={{ mt: '$3', mb: '$5', color: '$tonal600' }}>
+      <Text size="sm" css={{ mt: '$3', mb: '$6', color: '$tonal600' }}>
         @atom-learning/theme/lib/assets/logo.svg
       </Text>
       <Group.Separator />
       <Box css={{ m: '-$2', p: '$2', bg: '$tonal100', width: 'max-content' }}>
         <Image src={logoLight} />
       </Box>
-      <Text size="sm" css={{ mt: '$3', mb: '$5', color: '$tonal600' }}>
+      <Text size="sm" css={{ mt: '$3', mb: '$6', color: '$tonal600' }}>
         @atom-learning/theme/lib/assets/logo-light.svg
       </Text>
       <Group.Separator />
       <Image src={logoPrimary} />
-      <Text size="sm" css={{ mt: '$3', mb: '$5', color: '$tonal600' }}>
+      <Text size="sm" css={{ mt: '$3', mb: '$6', color: '$tonal600' }}>
         @atom-learning/theme/lib/assets/logo-primary.svg
       </Text>
     </Group>
     <Group name="Typography">
-      <Group.Section gap="$5" css={{ flexDirection: 'column' }}>
+      <Group.Section gap="$6" css={{ flexDirection: 'column' }}>
         <Heading size="xs">This is a heading size xs</Heading>
         <Heading size="sm">This is a heading size sm</Heading>
         <Heading size="md">This is a heading size md</Heading>
@@ -633,7 +633,7 @@ post.
       </Group.Section>
     </Group>
     <Group name="Links">
-      <Group.Section direction="column" gap="$5">
+      <Group.Section direction="column" gap="$6">
         <Text size="sm">
           This is a sm Paragraph with a <Link>Link</Link>. A really long
           paragraph of text, to demonstrate prose text, like for example.
@@ -684,7 +684,7 @@ post.
       </Group.Section>
     </Group>
     <Group name="Tables">
-      <Table css={{ borderCollapse: 'collapse', mb: '$5' }}>
+      <Table css={{ borderCollapse: 'collapse', mb: '$6' }}>
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>First Name</Table.HeaderCell>
@@ -825,7 +825,7 @@ post.
       <Group.Section>
         <Form
           onSubmit={() => null}
-          css={{ display: 'flex', gap: '$5', flexDirection: 'column' }}
+          css={{ display: 'flex', gap: '$6', flexDirection: 'column' }}
         >
           <InputField
             name="input"
@@ -1080,7 +1080,7 @@ post.
             <Slider defaultValue={[50]} css={{ width: '320px' }}>
               <Slider.Value value={[50]} />
             </Slider>
-            <Box css={{ p: '$5', bg: '$tonal100' }}>
+            <Box css={{ p: '$6', bg: '$tonal100' }}>
               <Slider
                 theme="light"
                 defaultValue={[50]}
@@ -1095,7 +1095,7 @@ post.
           onSubmit={() => null}
           css={{
             display: 'flex',
-            gap: '$5',
+            gap: '$6',
             flexDirection: 'column',
             width: '100%'
           }}
@@ -1230,7 +1230,7 @@ post.
       >
         <Carousel.ArrowPrevious css={{ position: 'absolute', left: '$2' }} />
         <Carousel.ArrowNext css={{ position: 'absolute', right: '$2' }} />
-        <Carousel.Slider aria-label="Example carousel" css={{ mb: '$5' }}>
+        <Carousel.Slider aria-label="Example carousel" css={{ mb: '$6' }}>
           <Carousel.Slide index={1} aria-label="Slide 1">
             <Box css={{ bg: '$primary', size: 200 }} />
           </Carousel.Slide>
@@ -1268,10 +1268,10 @@ post.
             <Button>Click for dialog</Button>
           </Dialog.Trigger>
           <Dialog.Content>
-            <Heading size="sm" css={{ mb: '$5' }}>
+            <Heading size="sm" css={{ mb: '$6' }}>
               Dialog
             </Heading>
-            <Text css={{ mb: '$5' }}>
+            <Text css={{ mb: '$6' }}>
               The `Dialog` can display any type of element as a trigger and has
               the content hidden by default
             </Text>
@@ -1289,10 +1289,10 @@ post.
             <Button>Click for nested surfaces</Button>
           </Dialog.Trigger>
           <Dialog.Content>
-            <Heading size="sm" css={{ mb: '$5' }}>
+            <Heading size="sm" css={{ mb: '$6' }}>
               Dialog
             </Heading>
-            <Text css={{ mb: '$5' }}>
+            <Text css={{ mb: '6' }}>
               The `Dialog` can display any type of element as a trigger and has
               the content hidden by default
             </Text>

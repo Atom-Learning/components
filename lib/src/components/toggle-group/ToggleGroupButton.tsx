@@ -13,8 +13,8 @@ const minHeight = {
 
 const px = {
   sm: '$4',
-  md: '$5',
-  lg: '$5'
+  md: '$6',
+  lg: '$6'
 }
 
 const spacingBetweenElements = {

@@ -32,10 +32,10 @@
     chalk "^4.1.0"
     css "^3.0.0"
 
-"@atom-learning/theme@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.0.1.tgz#75b04b0f650d6194d26de9efaac7042ecc6f807a"
-  integrity sha512-vf18VU9LWXdv4JYmhn1vZXS6Nk/0HY/XNw0jVCpcn8xJhxPi6Y01zOaOxRpcvl+6hhKQtUKF36rHdn0VHgJ5ng==
+"@atom-learning/theme@2.0.0-beta.0":
+  version "2.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-2.0.0-beta.0.tgz#2c90c3a3d12d20778855d80779add13df377d40c"
+  integrity sha512-22nKpI9ieLBbeZ6J6MZ0M/Ti+N6yDUnVueHNWhEtC99rSDJMF/37XtS+3zi1ZYVk0OqEdbWYkyhC8oULmIcLng==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

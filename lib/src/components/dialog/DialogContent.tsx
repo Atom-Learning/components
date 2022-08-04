@@ -48,7 +48,7 @@ const StyledDialogContent = styled(Content, {
   maxWidth: '90vw',
   maxHeight: '90vh',
   overflowY: 'auto',
-  p: '$5',
+  p: '$6',
   position: 'fixed',
   top: '50%',
   transform: contentOnScreen,

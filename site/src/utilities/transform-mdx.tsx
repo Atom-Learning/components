@@ -21,17 +21,17 @@ const components: MdxRemote.Components = {
       {...props}
       size="md"
       as="h2"
-      css={{ fontWeight: 600, mt: '$8', mb: '$5' }}
+      css={{ fontWeight: 600, mt: '$8', mb: '$6' }}
     />
   ),
   h3: (props) => (
-    <Heading {...props} as="h3" size="sm" css={{ mt: '$5', mb: '$4' }} />
+    <Heading {...props} as="h3" size="sm" css={{ mt: '$6', mb: '$4' }} />
   ),
   h4: (props) => (
-    <Heading {...props} as="h4" size="xs" css={{ mt: '$5', mb: '$4' }} />
+    <Heading {...props} as="h4" size="xs" css={{ mt: '$6', mb: '$4' }} />
   ),
-  p: (props) => <Text {...props} css={{ color: '$tonal700', mb: '$5' }} />,
-  ul: (props) => <List {...props} css={{ mb: '$5' }} />,
+  p: (props) => <Text {...props} css={{ color: '$tonal700', mb: '$6' }} />,
+  ul: (props) => <List {...props} css={{ mb: '$6' }} />,
   li: List.Item,
   inlineCode: InlineCode,
   blockquote: (props) => (
@@ -39,8 +39,8 @@ const components: MdxRemote.Components = {
       {...props}
       as="blockquote"
       css={{
-        pl: '$5',
-        my: '$5',
+        pl: '$6',
+        my: '$6',
         color: '$tonal500',
         borderLeft: '2px solid $colors$tonal400'
       }}
@@ -51,7 +51,7 @@ const components: MdxRemote.Components = {
   a: Link,
   code: CodeBlock,
   hr: (props) => <Divider {...props} css={{ my: '$8' }} />,
-  table: (props) => <Table {...props} css={{ mb: '$5' }} />,
+  table: (props) => <Table {...props} css={{ mb: '$6' }} />,
   td: (props) => <Cell size="md" appearance="content" {...props} />,
   th: (props) => <Cell size="md" appearance="heading" {...props} />,
   ColorPalette,

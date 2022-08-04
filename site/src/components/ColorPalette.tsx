@@ -21,17 +21,14 @@ const transformPalette = (colors) => {
   return palette
 }
 
-export const ColorPalette: React.FC<ColorPaletteProps> = ({
-  colors,
-  ...props
-}) => (
+export const ColorPalette: React.FC<ColorPaletteProps> = ({ colors, ...props }) => (
   <Flex css={{ flexDirection: 'column', flexWrap: 'wrap' }} {...props}>
     {Object.entries(transformPalette(colors)).map(([key, value]) => (
       <Flex
         css={{
           flexDirection: 'column',
           flexWrap: 'wrap',
-          py: '$5',
+          py: '$6',
           gap: '$3',
           '&:not(:last-child)': { borderBottom: '1px solid $tonal100' }
         }}

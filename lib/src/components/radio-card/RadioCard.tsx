@@ -24,7 +24,7 @@ export const StyledRadioCard = styled(RadioGroup.Item, {
     },
     size: {
       md: { px: '$4', py: '$3' },
-      lg: { px: '$5', py: '$4' }
+      lg: { px: '$6', py: '$4' }
     },
     isFullWidth: {
       true: { width: '100%' },

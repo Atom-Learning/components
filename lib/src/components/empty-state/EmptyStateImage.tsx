@@ -21,12 +21,12 @@ export const EmptyStateImage = styled(Image, {
       lg: {
         width: '190px',
         height: '142px',
-        mb: '$5'
+        mb: '$6'
       },
       xl: {
         width: '285px',
         height: '213px',
-        mb: '$5'
+        mb: '$6'
       }
     }
   }

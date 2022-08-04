@@ -143,7 +143,7 @@ const PropsTableContent: React.FC<{ css?: CSS; component: ComponentDoc }> = ({
 
             return (
               <tr key={key}>
-                <Cell css={{ pr: '$5' }}>
+                <Cell css={{ pr: '$6' }}>
                   <InlineCode>{name}</InlineCode>
                 </Cell>
                 <Cell>
@@ -178,7 +178,7 @@ export const PropsTable: React.FC<PropsTableProps> = ({
   if (componentName.includes(',')) {
     return (
       <Box css={{ mt: '$8' }}>
-        <Heading as="h2" css={{ mb: '$5', color: '$tonal800' }}>
+        <Heading as="h2" css={{ mb: '$6', color: '$tonal800' }}>
           API Reference
         </Heading>
         {componentName.split(',').map((component) => {

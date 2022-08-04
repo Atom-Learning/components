@@ -92,13 +92,13 @@ export const StyledButton = styled('button', {
         fontSize: '$md',
         lineHeight: 1.5,
         height: '$4',
-        px: '$5'
+        px: '$6'
       },
       lg: {
         fontSize: '$lg',
         lineHeight: 1.5,
         height: '$5',
-        px: '$5'
+        px: '$6'
       }
     },
     isLoading: {

@@ -41,7 +41,7 @@ const StyledSelect = styled('select', {
         fontSize: '$sm',
         height: '$3',
         pl: '$2',
-        pr: '$5'
+        pr: '$6'
       },
       md: {
         backgroundPosition: 'right $space$3 top 50%, 0 0',

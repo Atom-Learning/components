@@ -56,7 +56,7 @@ const Page: React.FC<PageProps> = ({
           css={{ bg: '$tonal50', pt: '128px', pb: '$8', '@md': { py: '$8' } }}
         >
           <Container css={{ px: '$4' }}>
-            <Heading as="h1" size="lg" css={data.component ? { mb: '$5' } : {}}>
+            <Heading as="h1" size="lg" css={data.component ? { mb: '$6' } : {}}>
               {data.title}
             </Heading>
             {data.component && (
@@ -69,7 +69,7 @@ const Page: React.FC<PageProps> = ({
         </Box>
         <Container css={{ flex: 1, px: '$4', py: '$8' }}>
           {data.description && (
-            <Text size="lg" css={{ mb: data.component ? '$5' : '$8' }}>
+            <Text size="lg" css={{ mb: data.component ? '6' : '$8' }}>
               {data.description}
             </Text>
           )}

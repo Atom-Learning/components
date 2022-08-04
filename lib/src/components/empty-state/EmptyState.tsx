@@ -26,7 +26,7 @@ const EmptyStateContainer = styled(Flex, {
         p: '$4'
       },
       lg: {
-        p: '$5'
+        p: '$6'
       },
       xl: {
         p: '$6'

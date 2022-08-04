@@ -31,7 +31,7 @@ const IconTableItem = ({ name, Component }) => (
       flex: '1 0 auto',
       flexDirection: 'column',
       justifyContent: 'center',
-      p: '$5 $2',
+      p: '$6 $2',
       minWidth: 140,
       width: 'calc(100% / 5 - ($space$2 * 4))',
       position: 'relative',
@@ -87,7 +87,7 @@ export const IconTable: React.FC<IconTableProps> = ({ css }) => {
   )
 
   return (
-    <Box css={{ pt: '$5' }}>
+    <Box css={{ pt: '$6' }}>
       <SearchInput
         size="md"
         name="icon-search"

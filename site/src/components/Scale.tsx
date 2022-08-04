@@ -41,7 +41,7 @@ export const Scale: React.FC<ScaleProps> = ({
         css={{
           alignItems: 'center',
           justifyContent: 'space-between',
-          py: '$5',
+          py: '$6',
           '&:not(:last-child)': {
             borderBottom: '1px solid $tonal100'
           }

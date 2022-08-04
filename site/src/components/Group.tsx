@@ -11,7 +11,7 @@ const Section = ({ gap = '$2', direction = 'row', css = {}, ...props }) => (
     css={{
       flexWrap: 'wrap',
       flexDirection: direction,
-      mb: '$5',
+      mb: '$6',
       gap,
       ...(css as any)
     }}
@@ -25,7 +25,7 @@ export const Group: React.FC<GroupProps> & {
   Separator: typeof Separator
 } = ({ name, children }) => (
   <Box css={{ '@md': { mx: '-$8' }, mb: '$8' }}>
-    <Text size="xl" as="h2" css={{ fontWeight: 600, mb: '$5' }}>
+    <Text size="xl" as="h2" css={{ fontWeight: 600, mb: '$6' }}>
       {name}
     </Text>
     {children}

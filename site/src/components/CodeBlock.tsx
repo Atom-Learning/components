@@ -23,7 +23,7 @@ const StyledPre = styled('pre', {
   fontSize: '$sm',
   fontWeight: 100,
   lineHeight: 1.5,
-  mb: '$5',
+  mb: '$6',
   mt: 0,
   mx: '-$4',
   overflow: 'hidden',
@@ -37,7 +37,7 @@ const StyledPre = styled('pre', {
   },
   '@md': {
     fontSize: '15px',
-    mx: '-$5'
+    mx: '-$6'
   }
 })
 const StyledLivePreview = styled(LivePreview, {
@@ -48,14 +48,14 @@ const StyledLivePreview = styled(LivePreview, {
   justifyContent: 'center',
   mx: '-$4',
   overflow: 'visible',
-  p: '$5',
+  p: '$6',
   whiteSpace: 'initial',
   '@sm': {
     borderRadius: '$1',
     mx: 0
   },
   '@md': {
-    mx: '-$5',
+    mx: '-$6',
     py: '$8'
   }
 })
@@ -63,7 +63,7 @@ const StyledLiveEditor = styled(LiveEditor, {
   '> textarea,> pre': {
     p: '$4',
     '@md': {
-      px: '$5',
+      px: '$6',
       py: '$sizes$2'
     }
   }
@@ -139,7 +139,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
                 overflow: 'auto',
                 p: '$4',
                 '@md': {
-                  px: '$5',
+                  px: '$6',
                   py: '$sizes$2'
                 }
               })}`}

@@ -108,7 +108,7 @@ export const SearchInput: React.FC<SearchInputProps> = ({
         {...remainingProps}
         value={inputValue}
         onChange={handleOnChange}
-        css={{ pr: size === 'sm' ? '$5' : '$6' }}
+        css={{ pr: size === 'sm' ? '$6' : '$7' }} // already updated the second one
       />
       {getIcon()}
     </Box>
