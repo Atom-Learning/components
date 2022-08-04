@@ -53,7 +53,7 @@ const Page: React.FC<PageProps> = ({
       <Flex as="main" css={{ width: '100%', flexDirection: 'column' }}>
         <Box
           as="header"
-          css={{ bg: '$tonal50', pt: '128px', pb: '$8', '@md': { py: '$8' } }}
+          css={{ bg: '$tonal50', pt: '128px', pb: '$9', '@md': { py: '$9' } }}
         >
           <Container css={{ px: '$4' }}>
             <Heading as="h1" size="lg" css={data.component ? { mb: '$6' } : {}}>
@@ -67,9 +67,9 @@ const Page: React.FC<PageProps> = ({
             )}
           </Container>
         </Box>
-        <Container css={{ flex: 1, px: '$4', py: '$8' }}>
+        <Container css={{ flex: 1, px: '$4', py: '$9' }}>
           {data.description && (
-            <Text size="lg" css={{ mb: data.component ? '6' : '$8' }}>
+            <Text size="lg" css={{ mb: data.component ? '$6' : '$9' }}>
               {data.description}
             </Text>
           )}

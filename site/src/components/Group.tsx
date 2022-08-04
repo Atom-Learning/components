@@ -24,12 +24,12 @@ export const Group: React.FC<GroupProps> & {
   Section: typeof Section
   Separator: typeof Separator
 } = ({ name, children }) => (
-  <Box css={{ '@md': { mx: '-$8' }, mb: '$8' }}>
+  <Box css={{ '@md': { mx: '-$9' }, mb: '$9' }}>
     <Text size="xl" as="h2" css={{ fontWeight: 600, mb: '$6' }}>
       {name}
     </Text>
     {children}
-    <Divider css={{ my: '$8' }} />
+    <Divider css={{ my: '$9' }} />
   </Box>
 )
 

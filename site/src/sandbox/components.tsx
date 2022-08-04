@@ -100,7 +100,7 @@ const AlertComponent = () => {
 
 const Page = () => (
   <>
-    <Divider css={{ my: '$8' }} />
+    <Divider css={{ my: '$9' }} />
     <Group name="Assets">
       <Image src={logo} />
       <Text size="sm" css={{ mt: '$3', mb: '$6', color: '$tonal600' }}>

@@ -56,7 +56,7 @@ const StyledLivePreview = styled(LivePreview, {
   },
   '@md': {
     mx: '-$6',
-    py: '$8'
+    py: '$9'
   }
 })
 const StyledLiveEditor = styled(LiveEditor, {

@@ -177,7 +177,7 @@ export const PropsTable: React.FC<PropsTableProps> = ({
 }) => {
   if (componentName.includes(',')) {
     return (
-      <Box css={{ mt: '$8' }}>
+      <Box css={{ mt: '$9' }}>
         <Heading as="h2" css={{ mb: '$6', color: '$tonal800' }}>
           API Reference
         </Heading>
@@ -191,7 +191,7 @@ export const PropsTable: React.FC<PropsTableProps> = ({
               </Heading>
               <PropsTableContent
                 component={componentProps}
-                css={{ mb: '$8', color: '$tonal800' }}
+                css={{ mb: '$9', color: '$tonal800' }}
               />
             </React.Fragment>
           )
@@ -204,7 +204,7 @@ export const PropsTable: React.FC<PropsTableProps> = ({
   if (!componentProps) return null
 
   return (
-    <Box css={{ mt: '$8' }}>
+    <Box css={{ mt: '$9' }}>
       <Heading as="h2" css={{ mb: '$4' }}>
         API Reference
       </Heading>

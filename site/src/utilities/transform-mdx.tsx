@@ -21,7 +21,7 @@ const components: MdxRemote.Components = {
       {...props}
       size="md"
       as="h2"
-      css={{ fontWeight: 600, mt: '$8', mb: '$6' }}
+      css={{ fontWeight: 600, mt: '$9', mb: '$6' }}
     />
   ),
   h3: (props) => (
@@ -50,7 +50,7 @@ const components: MdxRemote.Components = {
   ),
   a: Link,
   code: CodeBlock,
-  hr: (props) => <Divider {...props} css={{ my: '$8' }} />,
+  hr: (props) => <Divider {...props} css={{ my: '$9' }} />,
   table: (props) => <Table {...props} css={{ mb: '$6' }} />,
   td: (props) => <Cell size="md" appearance="content" {...props} />,
   th: (props) => <Cell size="md" appearance="heading" {...props} />,

@@ -33,15 +33,15 @@ const Page: React.FC<PageProps> = ({ pages, version }) => (
     <Flex>
       <Navigation items={pages} version={version} />
       <Box as="main" css={{ width: '100%' }}>
-        <Box as="header" css={{ bg: '$tonal50', py: '$8' }}>
+        <Box as="header" css={{ bg: '$tonal50', py: '$9' }}>
           <Container css={{ px: '$4' }}>
             <Heading as="h1" size="lg">
               Components
             </Heading>
           </Container>
         </Box>
-        <Container css={{ px: '$4', py: '$8' }}>
-          <Text size="lg" css={{ mb: '$8' }}>
+        <Container css={{ px: '$4', py: '$9' }}>
+          <Text size="lg" css={{ mb: '$9' }}>
             An environment for displaying all of our components in various
             configurations to help test and validate design consistency
           </Text>
