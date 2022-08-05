@@ -93,7 +93,7 @@ export const Navigation: React.FC<NavigationProps> = ({ items, version }) => {
       <NavigationTrigger onClick={() => setMenuOpen(true)} />
       <StyledNavigation ref={ref} open={menuOpen}>
         <NextLink href="/">
-          <Image src={logo} css={{ cursor: 'pointer', mb: '$7', width: 80 }} />
+          <Image src={logo} css={{ cursor: 'pointer', mb: '$8', width: 80 }} />
         </NextLink>
         <Badge
           theme="success"
