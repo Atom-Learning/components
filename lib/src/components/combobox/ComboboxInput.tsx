@@ -20,7 +20,7 @@ export const ComboboxInput = styled(BaseComboboxInput, {
   fontFamily: '$body',
   height: '$4',
   pl: '$3',
-  pr: '$6',
+  pr: '$7',
   transition: 'all 100ms ease-out',
   width: '100%',
   '&::placeholder': {

@@ -50,7 +50,7 @@ export const Pagination: React.FC<PaginationProps> = ({
 
   return (
     <Box as="footer" css={{ bg: '$tonal50', mt: '$9' }}>
-      <Container css={{ display: 'flex', py: '$6', px: '$4' }}>
+      <Container css={{ display: 'flex', py: '$7', px: '$4' }}>
         {previousPage && (
           <PaginationItem align="left" label="Previous" page={previousPage} />
         )}

@@ -49,7 +49,7 @@ const StyledSelect = styled('select', {
         fontSize: '$md',
         height: '$4',
         pl: '$3',
-        pr: '$6'
+        pr: '$7'
       }
     },
     state: {

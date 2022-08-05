@@ -41,7 +41,7 @@ export const ColorPalette: React.FC<ColorPaletteProps> = ({ colors, ...props }) 
           return (
             <Flex key={key} css={{ alignItems: 'center' }}>
               <Box
-                css={{ borderRadius: '$round', bg: `$${key}`, size: '$6' }}
+                css={{ borderRadius: '$round', bg: `$${key}`, size: '$7' }}
               />
               <Flex css={{ pl: '$3', flexDirection: 'column' }}>
                 <Text css={{ fontWeight: 600, mb: '$3' }}>{`$${key}`}</Text>

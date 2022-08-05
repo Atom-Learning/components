@@ -19,7 +19,7 @@ const StyledContent = styled(Content, {
   boxShadow: '$2',
   maxWidth: '90vw',
   p: '$sizes$2',
-  pr: '$6',
+  pr: '$7',
   position: 'relative',
   '@allowMotion': {
     animationDuration: '75ms',

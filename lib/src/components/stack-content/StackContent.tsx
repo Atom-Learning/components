@@ -28,8 +28,8 @@ const StyledStackContent = styled('div', {
   },
   [`& > ${StyledImage}`]: {
     display: 'block',
-    '&:not(:first-child)': { mt: '$6' },
-    '&:not(:last-child)': { mb: '$6' }
+    '&:not(:first-child)': { mt: '$7' },
+    '&:not(:last-child)': { mb: '$7' }
   }
 })
 

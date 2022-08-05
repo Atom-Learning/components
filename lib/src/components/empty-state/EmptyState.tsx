@@ -29,7 +29,7 @@ const EmptyStateContainer = styled(Flex, {
         p: '$6'
       },
       xl: {
-        p: '$6'
+        p: '$7'
       }
     }
   }

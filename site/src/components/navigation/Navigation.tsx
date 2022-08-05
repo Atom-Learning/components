@@ -103,7 +103,7 @@ export const Navigation: React.FC<NavigationProps> = ({ items, version }) => {
           {version}
         </Badge>
         {Object.entries(items).map(([source, content]) => (
-          <Box css={{ mb: '$6' }} key={source}>
+          <Box css={{ mb: '7' }} key={source}>
             <Heading as="h2" size="sm" css={{ color: 'white', mb: '$4' }}>
               {capitalCase(source)}
             </Heading>

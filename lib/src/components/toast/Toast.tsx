@@ -52,7 +52,7 @@ const StyledToast = styled('div', {
   minHeight: '$5',
   pl: '$4',
   position: 'relative',
-  pr: '$6',
+  pr: '$7',
   py: '$4',
   transition: 'background-color 50ms ease-out',
   width: '100%',
