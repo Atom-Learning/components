@@ -83,8 +83,8 @@ exports[`SearchInput component renders 1`] = `
     position: relative;
   }
 
-  .c-cNcGUX-icRYcAH-css {
-    padding-right: var(--space-6);
+  .c-cNcGUX-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-hvMhuR-ihFPSGE-css {
@@ -98,7 +98,7 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-iIFRSO-css"
       type="search"
       value=""
     />
@@ -245,8 +245,8 @@ exports[`SearchInput component renders clear button 1`] = `
     position: relative;
   }
 
-  .c-cNcGUX-icRYcAH-css {
-    padding-right: var(--space-6);
+  .c-cNcGUX-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-hvMhuR-ihFPSGE-css {
@@ -271,7 +271,7 @@ exports[`SearchInput component renders clear button 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-iIFRSO-css"
       type="search"
       value="testing"
     />

@@ -73,13 +73,13 @@ exports[`SelectField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
@@ -110,7 +110,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+        class="c-beXZpM c-beXZpM-dazoWq-size-md"
         id="example"
         name="example"
       >

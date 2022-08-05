@@ -30,12 +30,12 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -78,7 +78,7 @@ exports[`FileInput component renders 1`] = `
 
 <div>
   <label
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
     <svg

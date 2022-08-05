@@ -56,12 +56,12 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -177,7 +177,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-DdIlq-isLoading-true c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-DdIlq-isLoading-true c-fkUJsw-gsycxF-cv"
     type="button"
   >
     <div
@@ -229,12 +229,12 @@ exports[`Button component renders a button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 }
 
@@ -263,7 +263,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON
@@ -301,12 +301,12 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -393,7 +393,7 @@ exports[`Button component renders a button with an icon 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON 
@@ -432,12 +432,12 @@ exports[`Button component renders a disabled button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 }
 
@@ -488,7 +488,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-gsycxF-cv"
     disabled=""
     type="button"
   >
@@ -518,12 +518,12 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 }
 
@@ -574,7 +574,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md"
     disabled=""
     type="button"
   >
@@ -604,12 +604,12 @@ exports[`Button component renders a outline button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 }
 
@@ -660,7 +660,7 @@ exports[`Button component renders a outline button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fSssiS-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-fSssiS-cv"
     type="button"
   >
     BUTTON
@@ -689,12 +689,12 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 }
 
@@ -767,7 +767,7 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-skNNT-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-skNNT-cv"
     type="button"
   >
     BUTTON
@@ -805,12 +805,12 @@ exports[`Button component renders a rounded button  1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-eCHSBE-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
-    padding-left: var(--space-5);
-    padding-right: var(--space-5);
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -901,7 +901,7 @@ exports[`Button component renders a rounded button  1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-rloUt-isRounded-true c-fkUJsw-gsycxF-cv"
+    class="c-fkUJsw c-fkUJsw-eCHSBE-size-md c-fkUJsw-rloUt-isRounded-true c-fkUJsw-gsycxF-cv"
     type="button"
   >
     BUTTON 

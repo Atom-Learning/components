@@ -2,7 +2,7 @@
 
 exports[`Combobox component renders 1`] = `
 @media  {
-  .c-bYKHLS {
+  .c-gVcItL {
     box-shadow: none;
     font-size: var(--fontSizes-md);
     -webkit-appearance: none;
@@ -20,22 +20,22 @@ exports[`Combobox component renders 1`] = `
     font-family: var(--fonts-body);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
     transition: all 100ms ease-out;
     width: 100%;
   }
 
-  .c-bYKHLS::placeholder {
+  .c-gVcItL::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-bYKHLS:focus-within {
+  .c-gVcItL:focus-within {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-bYKHLS[disabled] {
+  .c-gVcItL[disabled] {
     background-color: var(--colors-tonal100);
     color: var(--colors-tonal400);
     cursor: not-allowed;
@@ -92,7 +92,7 @@ exports[`Combobox component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="c-bYKHLS"
+      class="c-gVcItL"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"

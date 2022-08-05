@@ -2,49 +2,49 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-dcjLby > .c-iSnHBU {
+  .c-darjOp > .c-iSnHBU {
     max-width: 65ch;
   }
 
-  .c-dcjLby > .c-iSnHBU:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-dcjLby > .c-iSnHBU:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-fIXJvv {
-    max-width: 75ch;
-  }
-
-  .c-dcjLby > .c-fIXJvv:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-iQukjL {
-    max-width: 75ch;
-  }
-
-  .c-dcjLby > .c-iQukjL:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-jpqjUq {
-    margin-top: var(--space-5);
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-eWgOGC {
-    display: block;
-  }
-
-  .c-dcjLby > .c-eWgOGC:not(:first-child) {
+  .c-darjOp > .c-iSnHBU:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-dcjLby > .c-eWgOGC:not(:last-child) {
+  .c-darjOp > .c-iSnHBU:not(:last-child) {
     margin-bottom: var(--space-6);
+  }
+
+  .c-darjOp > .c-fIXJvv {
+    max-width: 75ch;
+  }
+
+  .c-darjOp > .c-fIXJvv:not(:last-child) {
+    margin-bottom: var(--space-6);
+  }
+
+  .c-darjOp > .c-iQukjL {
+    max-width: 75ch;
+  }
+
+  .c-darjOp > .c-iQukjL:not(:last-child) {
+    margin-bottom: var(--space-6);
+  }
+
+  .c-darjOp > .c-jpqjUq {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+
+  .c-darjOp > .c-eWgOGC {
+    display: block;
+  }
+
+  .c-darjOp > .c-eWgOGC:not(:first-child) {
+    margin-top: var(--space-7);
+  }
+
+  .c-darjOp > .c-eWgOGC:not(:last-child) {
+    margin-bottom: var(--space-7);
   }
 
   .c-iSnHBU {
@@ -172,7 +172,7 @@ exports[`StackContent component renders a stack content 1`] = `
 
 <div>
   <div
-    class="c-dcjLby"
+    class="c-darjOp"
   >
     <h2
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"

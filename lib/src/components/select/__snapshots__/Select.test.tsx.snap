@@ -41,20 +41,20 @@ exports[`Select component renders a select with 3 options 1`] = `
 }
 
 @media  {
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+    class="c-beXZpM c-beXZpM-dazoWq-size-md"
   >
     <option
       value="value1"
@@ -116,20 +116,20 @@ exports[`Select component renders an disabled select 1`] = `
 }
 
 @media  {
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+    class="c-beXZpM c-beXZpM-dazoWq-size-md"
     disabled=""
   />
 </div>
@@ -176,20 +176,20 @@ exports[`Select component renders select with a default option 1`] = `
 }
 
 @media  {
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+    class="c-beXZpM c-beXZpM-dazoWq-size-md"
   >
     <option
       disabled=""
@@ -259,20 +259,20 @@ exports[`Select component renders select with a disabled option 1`] = `
 }
 
 @media  {
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+    class="c-beXZpM c-beXZpM-dazoWq-size-md"
   >
     <option
       value="value1"
@@ -340,20 +340,20 @@ exports[`Select component renders select with no options 1`] = `
 }
 
 @media  {
-  .c-beXZpM-ggkvuX-size-md {
+  .c-beXZpM-dazoWq-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
     height: var(--sizes-4);
     padding-left: var(--space-3);
-    padding-right: var(--space-6);
+    padding-right: var(--space-7);
   }
 }
 
 <div>
   <select
     aria-label="dropdown"
-    class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+    class="c-beXZpM c-beXZpM-dazoWq-size-md"
   />
 </div>
 `;
