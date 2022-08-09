@@ -151,7 +151,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -347,7 +347,7 @@ exports[`Dialog component with custom background renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
