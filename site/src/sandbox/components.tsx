@@ -1341,7 +1341,10 @@ post.
       </Accordion>
     </Group>
     <Group name="Stepper">
-      <Stepper stepCount={3}>
+      <Stepper
+        stepCount={3}
+        css={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr' }}
+      >
         <Stepper.StepBack>Back</Stepper.StepBack>
         <Stepper.Steps />
         <Stepper.StepForward>Next</Stepper.StepForward>
