@@ -97,7 +97,11 @@ export const Stack: React.FC<StackPropsType> = ({
         gap={gap}
         wrap={wrap}
         justify={justify}
-        align={(typeof align === 'undefined') && (direction !== 'column') ? 'center' : align}
+        align={
+          typeof align === 'undefined' && direction !== 'column'
+            ? 'center'
+            : align
+        }
         {...remainingProps}
       />
     </CSSWrapper>

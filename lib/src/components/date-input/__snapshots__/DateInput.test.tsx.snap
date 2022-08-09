@@ -113,10 +113,10 @@ exports[`DateInput component renders 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 2;
+  .c-dbrbZt-eAiySG-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.75;
   }
 
   .c-klXesr-kUaMfZ-size-md {
@@ -188,7 +188,7 @@ exports[`DateInput component renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
+        class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihFPSGE-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

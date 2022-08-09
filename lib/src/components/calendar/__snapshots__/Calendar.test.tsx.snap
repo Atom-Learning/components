@@ -90,10 +90,10 @@ exports[`Calendar component renders 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
   .c-iSnHBU-llheLm-size-xs {
@@ -210,7 +210,7 @@ exports[`Calendar component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -226,7 +226,7 @@ exports[`Calendar component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
+          class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -297,6 +297,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
           role="button"
+          type="button"
         >
           28
         </button>
@@ -305,6 +306,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
           role="button"
+          type="button"
         >
           29
         </button>
@@ -313,6 +315,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
           role="button"
+          type="button"
         >
           30
         </button>
@@ -321,6 +324,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           1
         </button>
@@ -329,6 +333,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           2
         </button>
@@ -337,6 +342,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           3
         </button>
@@ -345,6 +351,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           4
         </button>
@@ -353,6 +360,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           5
         </button>
@@ -361,6 +369,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           6
         </button>
@@ -369,6 +378,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           7
         </button>
@@ -377,6 +387,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           8
         </button>
@@ -385,6 +396,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           9
         </button>
@@ -393,6 +405,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           10
         </button>
@@ -401,6 +414,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           11
         </button>
@@ -409,6 +423,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           12
         </button>
@@ -417,6 +432,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           13
         </button>
@@ -425,6 +441,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp c-gNRHdp-hztIub-isToday-true"
           role="button"
+          type="button"
         >
           14
         </button>
@@ -433,6 +450,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           15
         </button>
@@ -441,6 +459,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           16
         </button>
@@ -449,6 +468,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           17
         </button>
@@ -457,6 +477,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           18
         </button>
@@ -465,6 +486,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           19
         </button>
@@ -473,6 +495,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           20
         </button>
@@ -481,6 +504,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           21
         </button>
@@ -489,6 +513,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           22
         </button>
@@ -497,6 +522,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           23
         </button>
@@ -505,6 +531,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           24
         </button>
@@ -513,6 +540,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           25
         </button>
@@ -521,6 +549,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           26
         </button>
@@ -529,6 +558,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           27
         </button>
@@ -537,6 +567,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           28
         </button>
@@ -545,6 +576,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           29
         </button>
@@ -553,6 +585,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           30
         </button>
@@ -561,6 +594,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp"
           role="button"
+          type="button"
         >
           31
         </button>
@@ -569,6 +603,7 @@ exports[`Calendar component renders 1`] = `
           aria-pressed="false"
           class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
           role="button"
+          type="button"
         >
           1
         </button>

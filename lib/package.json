@@ -120,10 +120,10 @@
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
-    "@atom-learning/icons": "^0.3.0",
-    "@atom-learning/theme": "^0.1.0-beta.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@atom-learning/icons": "^1.0.0",
+    "@atom-learning/theme": "^1.0.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "0.1.6",
@@ -156,7 +156,6 @@
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "throttle-debounce": "^3.0.1",
     "uid": "^2.0.0"
   },

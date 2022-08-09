@@ -38,8 +38,7 @@ type StackContentProps = React.ComponentProps<typeof StyledStackContent> & {
   css?: CSS
 }
 
-export const StackContent: React.ForwardRefExoticComponent<StackContentProps> = React.forwardRef((props, ref) => (
-  <StyledStackContent ref={ref} {...props} />
-))
+export const StackContent: React.ForwardRefExoticComponent<StackContentProps> =
+  React.forwardRef((props, ref) => <StyledStackContent ref={ref} {...props} />)
 
 StackContent.displayName = 'StackContent'

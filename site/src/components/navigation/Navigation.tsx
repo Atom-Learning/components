@@ -1,11 +1,16 @@
-import { Box, Heading, Image, styled, Text } from '@atom-learning/components'
-import pkg from '@atom-learning/components/package.json'
+import {
+  Badge,
+  Box,
+  Heading,
+  Image,
+  styled,
+  Text
+} from '@atom-learning/components'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { capitalCase } from 'capital-case'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
 
-import { Pill } from '../'
 import { NavigationContent } from './NavigationContent'
 import { NavigationTrigger } from './NavigationTrigger'
 
@@ -25,6 +30,7 @@ type NavigationProps = {
   items: {
     [key: string]: NavigationItem
   }
+  version: string
 }
 
 const useOnClickOutside = (ref, handler) => {
@@ -76,7 +82,7 @@ const StyledNavigation = styled('nav', {
   }
 })
 
-export const Navigation: React.FC<NavigationProps> = ({ items }) => {
+export const Navigation: React.FC<NavigationProps> = ({ items, version }) => {
   const ref = React.useRef()
   const [menuOpen, setMenuOpen] = React.useState(false)
 
@@ -89,9 +95,13 @@ export const Navigation: React.FC<NavigationProps> = ({ items }) => {
         <NextLink href="/">
           <Image src={logo} css={{ cursor: 'pointer', mb: '$7', width: 80 }} />
         </NextLink>
-        <Pill
-          css={{ position: 'absolute', right: '$3', top: '$3' }}
-        >{`v${pkg.version}`}</Pill>
+        <Badge
+          theme="success"
+          size="xs"
+          css={{ position: 'absolute', right: '$3', top: '$4' }}
+        >
+          {version}
+        </Badge>
         {Object.entries(items).map(([source, content]) => (
           <Box css={{ mb: '$6' }} key={source}>
             <Heading as="h2" size="sm" css={{ color: 'white', mb: '$4' }}>

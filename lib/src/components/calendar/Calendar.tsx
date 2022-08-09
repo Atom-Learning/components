@@ -121,6 +121,7 @@ export const Calendar: React.FC<CalendarProps> = ({
                       selected ? refDateSelected : today ? refDateToday : null
                     }
                     {...getDateProps({ dateObj })}
+                    type="button"
                   >
                     {date.getDate()}
                   </Day>

@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { globalCss } from '@atom-learning/components'
 import { IdProvider } from '@radix-ui/react-id'
 import type { AppProps } from 'next/app'

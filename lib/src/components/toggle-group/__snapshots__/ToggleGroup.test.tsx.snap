@@ -121,10 +121,10 @@ exports[`ToggleGroup renders 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
+  .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
-    stroke-width: 1.75;
+    stroke-width: 1.5;
   }
 
   .c-flWDnm-epWAHO-hasGap-true .c-iVViNQ {
@@ -192,7 +192,7 @@ exports[`ToggleGroup renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-eAiySG-size-sm"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

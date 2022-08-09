@@ -38,12 +38,14 @@ Extends visually by allowing for different sizing, vertical/horizontal display a
 `size="sm | md | lg"`
 
 ```jsx preview
-<ToggleGroup.Root type="single" gap={3} size="sm">
-  <ToggleGroup.Button value="a">
+<ToggleGroup.Root type="single" gap={3}>
+  <ToggleGroup.Button value="a" size="sm">
     <Icon is={Upload} /> A
   </ToggleGroup.Button>
-  <ToggleGroup.Button value="b">B</ToggleGroup.Button>
-  <ToggleGroup.Button value="icon">
+  <ToggleGroup.Button value="b" size="sm">
+    B
+  </ToggleGroup.Button>
+  <ToggleGroup.Button value="icon" size="sm">
     <Icon is={Upload} />
   </ToggleGroup.Button>
 </ToggleGroup.Root>

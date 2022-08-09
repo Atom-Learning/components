@@ -1,3 +1,4 @@
+import invariant from 'invariant'
 import * as React from 'react'
 
 import { Box } from '../box/Box'
@@ -11,20 +12,39 @@ export const Stepper: React.FC<IStepperProps> & {
   StepBack: typeof StepperStepBack
   StepForward: typeof StepperStepForward
   Steps: typeof StepperSteps
-} = ({ children, stepCount, allowSkip, onComplete, onStepChange }) => {
+} = ({
+  children,
+  stepCount,
+  allowSkip,
+  onComplete,
+  onStepChange,
+  direction = 'horizontal',
+  steps,
+  hideLabels = false,
+  css
+}) => {
+  invariant(
+    !(stepCount && steps),
+    '`Stepper` should only be given one of `stepCount` or `steps`. When both are provided, `steps` will be used and `stepCount` will be ignored.'
+  )
+
+  const count = steps?.length || stepCount || 0
+
   return (
     <StepperProvider
-      stepCount={stepCount}
+      stepCount={count}
       allowSkip={allowSkip}
       onComplete={onComplete}
-      onStepChange={onStepChange}
+      onStepChange={stepCount ? onStepChange : undefined}
+      direction={direction}
+      steps={steps || Array(count).fill('')}
+      hideLabels={hideLabels}
     >
       <Box
         aria-label="progress"
         css={{
           width: '100%',
-          display: 'grid',
-          gridTemplateColumns: '1fr auto 1fr'
+          ...css
         }}
       >
         {children}
