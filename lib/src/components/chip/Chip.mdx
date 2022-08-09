@@ -1,0 +1,71 @@
+---
+title: Chip
+component: Chip
+description: Represents an object or a series of data providing feedback in context
+category: Feedback
+---
+
+The `Chip` is a component in the shape of a pill that visually represents an object or a series of data providing feedback in context, such as filtering criteria, keywords or selection sets.
+
+```tsx preview
+<Chip label="Not the tasty kind" selected />
+```
+
+## Modes
+
+There are two modes for different use cases of Chip, `filter` and `input`. Filter is a permanently displayed on/off toggle for things like filters. Input is a dismissable element, and as such contains a close button. The default mode is `filter`.
+
+```tsx preview
+<>
+  <Chip label="Filter" selected={false} />
+  <Chip label="Filter" selected />
+  <Chip label="Input" mode="input" />
+</>
+```
+
+## Selected
+
+Most of the time this component will be used in a controlled state. The filter mode does work uncontrolled, but it is advised to use this in a controlled manner.
+
+For filter mode, you need to pass in `selected` (a boolean), and `onSelectedChange`, which is a function that should accept a boolean.
+
+For input mode, you can pass whatever function you want. If, for example, a state held an array of strings, that were then mapped through to display all currently selected Chips, you could pass `() => updateArray(label)` to handle removing that item from the array.
+
+```tsx
+<>
+  <Chip label="Filter" selected={selected} onSelectedChange={setSelected} />
+  <Chip label="Input" onSelectedChange={() => removeFromArray('Input')} />
+</>
+```
+
+## Size
+
+These are the available `size`s for this component: `sm`, `md` and `lg`. The default is `md`.
+
+```tsx preview
+<>
+  <Chip label="Small" selected size="sm" />
+  <Chip label="Medium" selected size="md" />
+  <Chip label="Large" selected size="lg" />
+</>
+```
+
+## Icon
+
+When in input mode, the Chip accepts a custom icon to be displayed to the left of the label.
+
+```tsx preview
+<Chip mode="input" label="Chips go with" icon={Hamburger} />
+```
+
+## Disabled
+
+Should you need to disable Chips, you can do so with the `disabled` prop.
+
+```tsx preview
+<>
+  <Chip label="Filter" selected={false} disabled />
+  <Chip label="Filter" selected disabled />
+  <Chip label="Input" mode="input" disabled />
+</>
+```
