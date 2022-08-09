@@ -11,7 +11,8 @@ const StepperContext = React.createContext<Context>({
   viewedSteps: [],
   allowSkip: false,
   direction: 'horizontal',
-  hideLabels: false
+  hideLabels: false,
+  completedSteps: []
 })
 
 export const StepperProvider: React.FC<StepperProviderProps> = ({
@@ -27,6 +28,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   const [activeStep, setActiveStep] = React.useState(0)
 
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])
+  const [completedSteps, setCompletedSteps] = React.useState<number[]>([])
 
   const isControlled = !stepCount
 
@@ -39,10 +41,19 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   }, [activeStep, onStepChange])
 
   const goToNextStep = () => {
-    if (onComplete && activeStep === stepCount - 1) {
+    const isCompleted = onComplete && activeStep === stepCount - 1
+    const isNextStep = activeStep < stepCount - 1
+
+    if (onComplete || isNextStep) {
+      setCompletedSteps((prev) =>
+        prev.includes(activeStep) ? prev : [...prev, activeStep]
+      )
+    }
+
+    if (isCompleted) {
       return onComplete()
     }
-    if (activeStep < stepCount - 1) {
+    if (isNextStep) {
       return setActiveStep((current) => current + 1)
     }
   }
@@ -64,6 +75,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
         goToStep: isControlled ? undefined : goToStep,
         activeStep,
         viewedSteps,
+        completedSteps,
         allowSkip,
         direction,
         hideLabels
