@@ -1,106 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge component renders and displays passed in label 1`] = `
+exports[`Chip component renders and displays passed in label 1`] = `
 @media  {
   .c-dhzjXW {
     display: flex;
   }
 
-  .c-jvZljZ {
+  .c-eqwZtD {
     padding-left: var(--space-2);
     background: var(--colors-primaryLight);
     border: 1px solid var(--colors-primary);
     border-radius: var(--radii-0);
     align-items: center;
-  }
-
-  .c-jvZljZ p {
+    font-size: var(--fontSizes-sm);
+    font-family: var(--fonts-body);
     color: var(--colors-primary);
   }
 
-  .c-jvZljZ:hover {
+  .c-eqwZtD:hover {
     background: white;
     border: 1px solid var(--colors-primaryDark);
-  }
-
-  .c-jvZljZ:hover p {
     color: var(--colors-primaryDark);
   }
 
-  .c-jvZljZ:hover svg {
+  .c-eqwZtD:hover svg {
     color: var(--colors-primaryDark);
   }
 
-  .c-jvZljZ:focus {
+  .c-eqwZtD:focus-visible {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
-
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
-
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
-    display: none;
-  }
 }
 
 @media  {
-  .c-jvZljZ-bLojnD-size-md {
+  .c-eqwZtD-bLojnD-size-md {
     height: var(--sizes-3);
   }
 
-  .c-jvZljZ-cWZJXM-mode-filter {
+  .c-eqwZtD-cWZJXM-mode-filter {
     cursor: pointer;
     padding-right: var(--space-2);
-  }
-
-  .c-fIXJvv-bndJoy-size-sm {
-    font-size: var(--fontSizes-sm);
-    line-height: 1.53;
-  }
-
-  .c-fIXJvv-bndJoy-size-sm::before {
-    content: '';
-    margin-bottom: -0.4056em;
-    display: table;
-  }
-
-  .c-fIXJvv-bndJoy-size-sm::after {
-    content: '';
-    margin-top: -0.4056em;
-    display: table;
   }
 }
 
 @media  {
-  .c-jvZljZ-jCshKG-cv {
+  .c-eqwZtD-fyZwsy-cv {
     background: var(--colors-tonal50);
     border: 1px solid var(--colors-tonal200);
-  }
-
-  .c-jvZljZ-jCshKG-cv p {
     color: var(--colors-tonal400);
   }
 
-  .c-jvZljZ-jCshKG-cv:hover {
+  .c-eqwZtD-fyZwsy-cv:hover {
     background: var(--colors-tonal100);
     border: 1px solid var(--colors-tonal400);
-  }
-
-  .c-jvZljZ-jCshKG-cv:hover p {
     color: var(--colors-tonal600);
   }
 
-  .c-jvZljZ-jCshKG-cv:hover svg {
+  .c-eqwZtD-fyZwsy-cv:hover svg {
     color: var(--colors-tonal600);
   }
 
-  .c-jvZljZ-hbsPHc-cv {
+  .c-eqwZtD-hbsPHc-cv {
     padding-left: var(--space-3);
     padding-right: var(--space-3);
   }
@@ -108,14 +69,10 @@ exports[`Badge component renders and displays passed in label 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-jvZljZ c-jvZljZ-bLojnD-size-md c-jvZljZ-cWZJXM-mode-filter c-jvZljZ-jCshKG-cv c-jvZljZ-hbsPHc-cv"
+    class="c-dhzjXW c-eqwZtD c-eqwZtD-bLojnD-size-md c-eqwZtD-cWZJXM-mode-filter c-eqwZtD-fyZwsy-cv c-eqwZtD-hbsPHc-cv"
     tabindex="0"
   >
-    <p
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
-    >
-      Not the tasty kind
-    </p>
+    Not the tasty kind
   </div>
 </div>
 `;

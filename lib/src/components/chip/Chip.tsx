@@ -13,20 +13,18 @@ const ChipContainer = styled(Flex, {
   border: '1px solid $primary',
   borderRadius: '$0',
   alignItems: 'center',
-  '& p': {
-    color: '$primary'
-  },
+  fontSize: '$sm',
+  fontFamily: '$body',
+  color: '$primary',
   '&:hover': {
     bg: 'white',
     border: '1px solid $primaryDark',
-    '& p': {
-      color: '$primaryDark'
-    },
+    color: '$primaryDark',
     '& svg': {
       color: '$primaryDark'
     }
   },
-  '&:focus': {
+  '&:focus-visible': {
     outline: '2px solid $primary',
     outlineOffset: '2px'
   },
@@ -34,7 +32,7 @@ const ChipContainer = styled(Flex, {
     size: {
       sm: { height: '$2' },
       md: { height: '$3' },
-      lg: { height: '$4' }
+      lg: { height: '$4', fontSize: '$md' }
     },
     mode: {
       filter: {
@@ -63,13 +61,11 @@ const ChipContainer = styled(Flex, {
       css: {
         bg: '$tonal50',
         border: '1px solid $tonal200',
-        '& p': { color: '$tonal400' },
+        color: '$tonal400',
         '&:hover': {
           bg: '$tonal100',
           border: '1px solid $tonal400',
-          '& p': {
-            color: '$tonal600'
-          },
+          color: '$tonal600',
           '& svg': {
             color: '$tonal600'
           }
@@ -98,7 +94,6 @@ const ChipContainer = styled(Flex, {
 })
 
 interface ChipProps {
-  label: string
   selected?: boolean
   icon?: SVGSVGElement
   onSelectedChange?: (value?: boolean) => void
@@ -108,12 +103,12 @@ type ChipType = React.ComponentProps<typeof ChipContainer> & ChipProps
 
 export const Chip: React.FC<ChipType> = ({
   mode = 'filter',
-  label,
   selected = false,
   size = 'md',
   icon,
   onSelectedChange,
   disabled = false,
+  children,
   ...remainingProps
 }) => {
   const [internalSelected, setInternalSelected] =
@@ -140,13 +135,13 @@ export const Chip: React.FC<ChipType> = ({
     >
       {((icon && !isFilterMode) || internalSelected) && (
         <Icon
-          aria-label={isFilterMode ? 'SelectedIcon' : 'ChipIcon'}
+          data-testid={isFilterMode ? 'SelectedIcon' : 'ChipIcon'}
           is={isFilterMode ? Ok : icon}
           size={size === 'lg' ? 'md' : 'sm'}
           css={{ color: '$primary', mr: '$1' }}
         />
       )}
-      <Text size={size === 'lg' ? 'md' : 'sm'}>{label}</Text>
+      {children}
       {!isFilterMode && (
         <ActionIcon
           label="Close"
