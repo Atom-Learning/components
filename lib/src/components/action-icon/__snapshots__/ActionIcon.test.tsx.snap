@@ -59,12 +59,6 @@ exports[`ActionIcon component renders 1`] = `
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
-
-  .c-dbrbZt-kSexDl-cv {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 2;
-  }
 }
 
 <div>

@@ -220,11 +220,6 @@ exports[`DateField component renders a field in error state 1`] = `
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
-
-  .c-dbrbZt-fDXBFo-cv {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-  }
 }
 
 @media  {
@@ -310,7 +305,7 @@ exports[`DateField component renders a field in error state 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -541,11 +536,6 @@ exports[`DateField component renders a field with a text input 1`] = `
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
-
-  .c-dbrbZt-fDXBFo-cv {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-  }
 }
 
 @media  {
@@ -610,7 +600,7 @@ exports[`DateField component renders a field with a text input 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-fDXBFo-cv c-dbrbZt-iPJLV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

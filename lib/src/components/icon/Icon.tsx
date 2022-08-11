@@ -19,29 +19,7 @@ export const StyledIcon = styled('svg', {
     isInActionIcon: {
       true: {}
     }
-  },
-  compoundVariants: [
-    {
-      size: 'xs',
-      isInActionIcon: true,
-      css: { size: '$1', strokeWidth: '1.75' }
-    },
-    {
-      size: 'sm',
-      isInActionIcon: true,
-      css: { size: '$1', strokeWidth: '2' }
-    },
-    {
-      size: 'md',
-      isInActionIcon: true,
-      css: { size: '$2' }
-    },
-    {
-      size: 'lg',
-      isInActionIcon: true,
-      css: { size: '$3' }
-    }
-  ]
+  }
 })
 
 type IconProps = Override<

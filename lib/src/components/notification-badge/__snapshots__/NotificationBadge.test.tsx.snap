@@ -91,11 +91,6 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
-
-  .c-dbrbZt-elrktp-cv {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
-  }
 }
 
 <div>
@@ -115,7 +110,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-elrktp-cv c-dbrbZt-iPJLV-css"
+        class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

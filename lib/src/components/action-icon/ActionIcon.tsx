@@ -6,6 +6,7 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
+import { ActionIconSizeMap } from './ActionIcon.constants'
 
 import { Icon } from '../icon/Icon'
 
@@ -254,8 +255,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           )
 
           return React.cloneElement(child, {
-            size: size,
-            isInActionIcon: true,
+            size: ActionIconSizeMap[size as string],
             css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}
