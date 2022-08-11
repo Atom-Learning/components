@@ -27,7 +27,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     justify-content: space-between;
   }
 
-  .c-kEdUjx {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -35,12 +35,12 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     align-items: center;
   }
 
-  .c-kEdUjx:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-kEdUjx:focus {
+  .c-boNUgq:focus-visible {
     outline: none;
   }
 
@@ -72,33 +72,33 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     flex-direction: row;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-kEdUjx-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :first-child {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :last-child {
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:focus :first-child {
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -115,16 +115,16 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: var(--colors-tonal300);
   }
 
-  .c-kEdUjx-juDMjp-status-completed:hover :first-child {
+  .c-boNUgq-dKQwO-status-completed:hover :first-child {
     background: var(--colors-primaryMid);
     color: white !important;
   }
 
-  .c-kEdUjx-juDMjp-status-completed:hover :last-child {
+  .c-boNUgq-dKQwO-status-completed:hover :last-child {
     color: var(--colors-primaryMid);
   }
 
-  .c-kEdUjx-juDMjp-status-completed:focus :first-child {
+  .c-boNUgq-dKQwO-status-completed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -134,11 +134,11 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: white;
   }
 
-  .c-kEdUjx-dGwPMl-separator-active:not(:last-child)::after {
+  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
   }
 
-  .c-kEdUjx-fZoDsU-status-reviewed:focus :first-child {
+  .c-boNUgq-iIblYT-status-reviewed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -148,7 +148,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: white;
   }
 
-  .c-kEdUjx-fZoDsU-status-viewed:focus :first-child {
+  .c-boNUgq-iIblYT-status-viewed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -159,7 +159,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-fpjjDi-separator-success:not(:last-child)::after {
+  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
@@ -172,13 +172,13 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     flex-direction: column;
   }
 
-  .c-kEdUjx-bQZyjU-direction-vertical {
+  .c-boNUgq-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
   }
 
-  .c-kEdUjx-bQZyjU-direction-vertical:not(:last-child)::after {
+  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
@@ -273,7 +273,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-bQZyjU-direction-vertical c-kEdUjx-iPHtVM-separator-default c-kEdUjx-hrSxsh-status-active c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -285,7 +285,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-bQZyjU-direction-vertical c-kEdUjx-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -296,7 +296,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-bQZyjU-direction-vertical c-kEdUjx-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -344,7 +344,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     justify-content: space-between;
   }
 
-  .c-kEdUjx {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -352,12 +352,12 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     align-items: center;
   }
 
-  .c-kEdUjx:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-kEdUjx:focus {
+  .c-boNUgq:focus-visible {
     outline: none;
   }
 
@@ -402,33 +402,33 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     flex-direction: row;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-kEdUjx-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :first-child {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :last-child {
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:focus :first-child {
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -445,16 +445,16 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-tonal300);
   }
 
-  .c-kEdUjx-juDMjp-status-completed:hover :first-child {
+  .c-boNUgq-dKQwO-status-completed:hover :first-child {
     background: var(--colors-primaryMid);
     color: white !important;
   }
 
-  .c-kEdUjx-juDMjp-status-completed:hover :last-child {
+  .c-boNUgq-dKQwO-status-completed:hover :last-child {
     color: var(--colors-primaryMid);
   }
 
-  .c-kEdUjx-juDMjp-status-completed:focus :first-child {
+  .c-boNUgq-dKQwO-status-completed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -464,11 +464,11 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: white;
   }
 
-  .c-kEdUjx-dGwPMl-separator-active:not(:last-child)::after {
+  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
   }
 
-  .c-kEdUjx-fZoDsU-status-reviewed:focus :first-child {
+  .c-boNUgq-iIblYT-status-reviewed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -478,7 +478,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: white;
   }
 
-  .c-kEdUjx-fZoDsU-status-viewed:focus :first-child {
+  .c-boNUgq-iIblYT-status-viewed:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -489,7 +489,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-fpjjDi-separator-success:not(:last-child)::after {
+  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
@@ -502,13 +502,13 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     flex-direction: column;
   }
 
-  .c-kEdUjx-bQZyjU-direction-vertical {
+  .c-boNUgq-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
   }
 
-  .c-kEdUjx-bQZyjU-direction-vertical:not(:last-child)::after {
+  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
@@ -631,7 +631,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-fruqQw-direction-horizontal c-kEdUjx-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
         tabindex="0"
       >
         <div
@@ -659,7 +659,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         </span>
       </div>
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-fruqQw-direction-horizontal c-kEdUjx-iPHtVM-separator-default c-kEdUjx-hrSxsh-status-active c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ikOanEY-css"
         tabindex="0"
       >
         <div
@@ -714,7 +714,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     justify-content: space-between;
   }
 
-  .c-kEdUjx {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -722,12 +722,12 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     align-items: center;
   }
 
-  .c-kEdUjx:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-kEdUjx:focus {
+  .c-boNUgq:focus-visible {
     outline: none;
   }
 
@@ -759,33 +759,33 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     flex-direction: row;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-kEdUjx-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-kEdUjx-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :first-child {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:hover :last-child {
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-kEdUjx-hrSxsh-status-active:focus :first-child {
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -886,7 +886,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-fruqQw-direction-horizontal c-kEdUjx-iPHtVM-separator-default c-kEdUjx-hrSxsh-status-active c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
@@ -898,7 +898,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-fruqQw-direction-horizontal c-kEdUjx-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
@@ -909,7 +909,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-kEdUjx c-kEdUjx-fruqQw-direction-horizontal c-kEdUjx-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button

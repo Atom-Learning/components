@@ -12,7 +12,7 @@ export const StepperStepContainer = styled(Flex, {
     content: '',
     position: 'absolute'
   },
-  '&:focus': {
+  '&:focus-visible': {
     outline: 'none'
   },
   variants: {
@@ -49,7 +49,7 @@ export const StepperStepContainer = styled(Flex, {
           '& :first-child': { bg: '$primaryMid', color: 'white !important' },
           '& :last-child': { color: '$primaryMid' }
         },
-        '&:focus': {
+        '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary',
             outlineOffset: '2px'
@@ -61,7 +61,7 @@ export const StepperStepContainer = styled(Flex, {
           '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
           '& :last-child': { color: '$tonal600' }
         },
-        '&:focus': {
+        '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary',
             outlineOffset: '2px'
@@ -70,7 +70,7 @@ export const StepperStepContainer = styled(Flex, {
       },
       default: {},
       viewed: {
-        '&:focus': {
+        '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary !important',
             outlineOffset: '2px !important'
@@ -79,7 +79,7 @@ export const StepperStepContainer = styled(Flex, {
       },
       success: {},
       reviewed: {
-        '&:focus': {
+        '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary !important',
             outlineOffset: '2px !important'
