@@ -160,6 +160,9 @@ export const Calendar: React.FC<CalendarProps> = ({
         >
           {yearList.map((year, i) => {
             const isCurrentYear = year === date.getFullYear()
+            if (!year)
+              return <Box key={i} css={{ width: '$6', height: '$4' }} />
+
             return (
               <StyledButton
                 key={`${year}${i}`}
@@ -167,9 +170,8 @@ export const Calendar: React.FC<CalendarProps> = ({
                 isRounded
                 onClick={() => handleSetYear(year)}
                 selected={isCurrentYear}
-                disabled={year === 0}
               >
-                {year !== 0 && year}
+                {year}
               </StyledButton>
             )
           })}
