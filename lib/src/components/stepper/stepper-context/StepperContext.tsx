@@ -51,7 +51,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     }
 
     if (isCompleted) {
-      return onComplete()
+      return onComplete?.()
     }
     if (isNextStep) {
       return setActiveStep((current) => current + 1)
