@@ -81,31 +81,38 @@ const StyledStack = styled('div', {
 
 type StackPropsType = React.ComponentProps<typeof StyledStack> & { css?: CSS }
 
-export const Stack: React.FC<StackPropsType> = ({
-  css,
-  gap = 2,
-  direction = 'row',
-  wrap = 'wrap',
-  justify = 'start',
-  align,
-  ...remainingProps
-}) => {
-  return (
-    <CSSWrapper css={css}>
-      <StyledStack
-        direction={direction}
-        gap={gap}
-        wrap={wrap}
-        justify={justify}
-        align={
-          typeof align === 'undefined' && direction !== 'column'
-            ? 'center'
-            : align
-        }
-        {...remainingProps}
-      />
-    </CSSWrapper>
+export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
+  React.forwardRef(
+    (
+      {
+        css,
+        gap = 2,
+        direction = 'row',
+        wrap = 'wrap',
+        justify = 'start',
+        align,
+        ...remainingProps
+      },
+      ref
+    ) => {
+      return (
+        <CSSWrapper css={css}>
+          <StyledStack
+            ref={ref}
+            direction={direction}
+            gap={gap}
+            wrap={wrap}
+            justify={justify}
+            align={
+              typeof align === 'undefined' && direction !== 'column'
+                ? 'center'
+                : align
+            }
+            {...remainingProps}
+          />
+        </CSSWrapper>
+      )
+    }
   )
-}
 
 Stack.displayName = 'Stack'
