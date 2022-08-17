@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChipToggleGroup component renders 1`] = `
+@media  {
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dozMAD {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    border: 1px solid;
+    border-radius: var(--radii-0);
+    align-items: center;
+    font-family: var(--fonts-body);
+    max-width: 100%;
+    border-color: var(--colors-primary);
+    color: var(--colors-primaryMid);
+    background: var(--colors-primaryLight);
+  }
+
+  .c-dozMAD[data-disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .c-dozMAD .c-dbrbZt {
+    flex-shrink: 0;
+    color: currentColor;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-kBYYkb {
+    display: none;
+  }
+
+  .c-eOdeXL {
+    display: inline-flex;
+    align-items: center;
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .c-eOdeXL > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-inNjp:not([disabled]) {
+    cursor: pointer;
+  }
+
+  .c-inNjp:not([disabled]):hover {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+    border-color: currentColor;
+  }
+
+  .c-inNjp:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-inNjp:not([disabled])[data-state="on"]:hover {
+    background: var(--colors-white);
+    color: var(--colors-primaryDark);
+  }
+
+  .c-inNjp[data-state="off"] {
+    color: var(--colors-tonal400);
+    background: var(--colors-tonal50);
+    border-color: var(--colors-tonal200);
+  }
+
+  .c-inNjp[data-state="on"] .c-kBYYkb {
+    display: block;
+  }
+}
+
+@media  {
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-dozMAD-kIEsaE-size-md {
+    height: var(--sizes-3);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dozMAD-kIEsaE-size-md::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dozMAD-kIEsaE-size-md::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+<div>
+  <div
+    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+    data-orientation="horizontal"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-pressed="true"
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-inNjp"
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="on"
+      tabindex="-1"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-kBYYkb"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="4 13 9 18 20 7"
+        />
+      </svg>
+      <span
+        class="c-eOdeXL"
+      >
+        A
+      </span>
+    </button>
+    <button
+      aria-pressed="true"
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-inNjp"
+      data-disabled=""
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="on"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-kBYYkb"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="4 13 9 18 20 7"
+        />
+      </svg>
+      <span
+        class="c-eOdeXL"
+      >
+        B
+      </span>
+    </button>
+    <button
+      aria-pressed="false"
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-inNjp"
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="off"
+      tabindex="-1"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-kBYYkb"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="4 13 9 18 20 7"
+        />
+      </svg>
+      <span
+        class="c-eOdeXL"
+      >
+        C
+      </span>
+    </button>
+    <button
+      aria-pressed="false"
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-inNjp"
+      data-disabled=""
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="off"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-kBYYkb"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="4 13 9 18 20 7"
+        />
+      </svg>
+      <span
+        class="c-eOdeXL"
+      >
+        D
+      </span>
+    </button>
+  </div>
+</div>
+`;

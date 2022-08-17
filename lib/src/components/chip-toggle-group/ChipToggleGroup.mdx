@@ -1,0 +1,27 @@
+---
+title: Chip Toggle Group
+component: ChipToggleGroup
+description: Combines the Toggle Group radix component with the Chip primitive styling
+category: Feedback
+---
+
+Used as a method for filtering a collection of data. Acts like multiple or single selection. Each chip toggles between selected and unselected. When selected, a checkmark appears as the leading icon.
+
+```tsx preview
+<ChipToggleGroup.Root
+  type="multiple"
+  defaultValue={['a', 'b']}
+  onValueChange={(value) => {
+    console.log(value)
+  }}
+>
+  <ChipToggleGroup.Item value="a">A</ChipToggleGroup.Item>
+  <ChipToggleGroup.Item value="b" disabled>
+    B
+  </ChipToggleGroup.Item>
+  <ChipToggleGroup.Item value="c">C</ChipToggleGroup.Item>
+  <ChipToggleGroup.Item value="d" disabled>
+    D
+  </ChipToggleGroup.Item>
+</ChipToggleGroup.Root>
+```
