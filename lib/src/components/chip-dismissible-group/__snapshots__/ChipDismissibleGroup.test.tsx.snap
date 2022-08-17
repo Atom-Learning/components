@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChipDismissibleGroup component renders 1`] = `
+@media  {
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dozMAD {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    border: 1px solid;
+    border-radius: var(--radii-0);
+    align-items: center;
+    font-family: var(--fonts-body);
+    max-width: 100%;
+    border-color: var(--colors-primary);
+    color: var(--colors-primaryMid);
+    background: var(--colors-primaryLight);
+  }
+
+  .c-dozMAD[data-disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .c-dozMAD .c-dbrbZt {
+    flex-shrink: 0;
+    color: currentColor;
+  }
+
+  .c-eOdeXL {
+    display: inline-flex;
+    align-items: center;
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .c-eOdeXL > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-efCiES {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+}
+
+@media  {
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-dozMAD-kIEsaE-size-md {
+    height: var(--sizes-3);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dozMAD-kIEsaE-size-md::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dozMAD-kIEsaE-size-md::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-fDzwZw-iccTSao-css {
+    color: var(--colors-tonal200);
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-iisACLx-css {
+    height: 16px;
+    width: 16px;
+  }
+
+  .c-PJLV-iiepcqn-css {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+<div>
+  <div
+    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+  >
+    <div
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-efCiES"
+    >
+      <span
+        class="c-eOdeXL"
+      >
+        A
+      </span>
+      <button
+        aria-label="Dismiss"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-efCiES"
+      data-disabled=""
+    >
+      <span
+        class="c-eOdeXL"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 4v13"
+          />
+          <polyline
+            points="7 8 12 3 17 8"
+          />
+          <path
+            d="M20 21H4"
+          />
+        </svg>
+        <span
+          class="c-PJLV c-PJLV-iiepcqn-css"
+        >
+          B
+        </span>
+      </span>
+      <button
+        aria-label="Dismiss"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        disabled=""
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
