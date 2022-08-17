@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DismissibleGroup component renders 1`] = `
+<div>
+  <div>
+    <div>
+      A
+      <button
+        data-cy="trigger-a"
+        type="button"
+      >
+        Dismiss
+      </button>
+    </div>
+    <div>
+      B
+      <button
+        data-cy="trigger-b"
+        type="button"
+      >
+        Dismiss
+      </button>
+    </div>
+    <div
+      data-disabled=""
+    >
+      C
+      <button
+        data-cy="trigger-c"
+        disabled=""
+        type="button"
+      >
+        Dismiss
+      </button>
+    </div>
+    <div
+      data-disabled=""
+    >
+      D
+    </div>
+  </div>
+</div>
+`;

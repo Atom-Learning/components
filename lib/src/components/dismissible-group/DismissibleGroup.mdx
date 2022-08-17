@@ -1,0 +1,26 @@
+---
+title: Dismissible Group
+component: DismissibleGroup
+description: A set of dismissible elements.
+category: Utilities
+---
+
+```tsx preview
+<DismissibleGroup.Root
+  onDismiss={(value) => {
+    alert(`dismiss ${value}`)
+  }}
+>
+  <DismissibleGroup.Item value="a">
+    A
+    <DismissibleGroup.Trigger />
+  </DismissibleGroup.Item>
+  <DismissibleGroup.Item value="b" disabled>
+    B
+    <DismissibleGroup.Trigger />
+  </DismissibleGroup.Item>
+  <DismissibleGroup.Item value="c" disabled>
+    C
+  </DismissibleGroup.Item>
+</DismissibleGroup.Root>
+```

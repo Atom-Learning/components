@@ -1,0 +1,45 @@
+---
+title: Dismissible
+component: Dismissible
+description: An element with a dismiss button which removes it from the view
+category: Utilities
+---
+
+```tsx preview
+<Dismissible.Root
+  value="a"
+  onDismiss={(value) => {
+    alert(`dismiss ${value}`)
+  }}
+>
+  Press the trigger to dismiss this ->
+  <Dismissible.Trigger />
+</Dismissible.Root>
+```
+
+```tsx preview
+<Dismissible.Root
+  value="custom"
+  onDismiss={(value) => {
+    alert(`dismiss ${value}`)
+  }}
+  asChild
+>
+  <Box
+    css={{
+      width: '100%',
+      fontFamily: 'system-ui',
+      border: '1px solid',
+      borderRadius: 4,
+      display: 'flex',
+      justifyContent: 'space-between',
+      padding: 8
+    }}
+  >
+    Basic custom implementation example
+    <Dismissible.Trigger asChild>
+      <button type="button">Custom Dismiss Trigger</button>
+    </Dismissible.Trigger>
+  </Box>
+</Dismissible.Root>
+```
