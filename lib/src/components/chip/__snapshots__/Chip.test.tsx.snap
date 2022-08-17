@@ -1,121 +1,122 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Badge component renders and displays passed in label 1`] = `
+exports[`Chip component renders 1`] = `
 @media  {
   .c-dhzjXW {
     display: flex;
   }
 
-  .c-jvZljZ {
+  .c-dozMAD {
     padding-left: var(--space-2);
-    background: var(--colors-primaryLight);
-    border: 1px solid var(--colors-primary);
+    padding-right: var(--space-2);
+    border: 1px solid;
     border-radius: var(--radii-0);
     align-items: center;
-  }
-
-  .c-jvZljZ p {
-    color: var(--colors-primary);
-  }
-
-  .c-jvZljZ:hover {
-    background: white;
-    border: 1px solid var(--colors-primaryDark);
-  }
-
-  .c-jvZljZ:hover p {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-jvZljZ:hover svg {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-jvZljZ:focus {
-    outline: 2px solid var(--colors-primary);
-    outline-offset: 2px;
-  }
-
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
+    max-width: 100%;
+    border-color: var(--colors-primary);
+    color: var(--colors-primaryMid);
+    background: var(--colors-primaryLight);
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
-    display: none;
+  .c-dozMAD[data-disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .c-dozMAD .c-dbrbZt {
+    flex-shrink: 0;
+    color: currentColor;
+  }
+
+  .c-eOdeXL {
+    display: inline-flex;
+    align-items: center;
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .c-eOdeXL > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
   }
 }
 
 @media  {
-  .c-jvZljZ-bLojnD-size-md {
+  .c-dozMAD-kIEsaE-size-md {
     height: var(--sizes-3);
-  }
-
-  .c-jvZljZ-cWZJXM-mode-filter {
-    cursor: pointer;
-    padding-right: var(--space-2);
-  }
-
-  .c-fIXJvv-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dozMAD-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dozMAD-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
   }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
 }
 
 @media  {
-  .c-jvZljZ-jCshKG-cv {
-    background: var(--colors-tonal50);
-    border: 1px solid var(--colors-tonal200);
-  }
-
-  .c-jvZljZ-jCshKG-cv p {
-    color: var(--colors-tonal400);
-  }
-
-  .c-jvZljZ-jCshKG-cv:hover {
-    background: var(--colors-tonal100);
-    border: 1px solid var(--colors-tonal400);
-  }
-
-  .c-jvZljZ-jCshKG-cv:hover p {
-    color: var(--colors-tonal600);
-  }
-
-  .c-jvZljZ-jCshKG-cv:hover svg {
-    color: var(--colors-tonal600);
-  }
-
-  .c-jvZljZ-hbsPHc-cv {
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
+  .c-PJLV-iiepcqn-css {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-jvZljZ c-jvZljZ-bLojnD-size-md c-jvZljZ-cWZJXM-mode-filter c-jvZljZ-jCshKG-cv c-jvZljZ-hbsPHc-cv"
-    tabindex="0"
+    class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md"
   >
-    <p
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
+    <span
+      class="c-eOdeXL"
     >
-      Not the tasty kind
-    </p>
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 4v13"
+        />
+        <polyline
+          points="7 8 12 3 17 8"
+        />
+        <path
+          d="M20 21H4"
+        />
+      </svg>
+      <span
+        class="c-PJLV c-PJLV-iiepcqn-css"
+      >
+        Not the tasty kind
+      </span>
+    </span>
   </div>
 </div>
 `;
