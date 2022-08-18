@@ -2,32 +2,25 @@ import { fireEvent, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-
 import { Dismissible } from '.'
 
-const mockOnDismiss = jest.fn(value => value)
+const mockOnDismiss = jest.fn((value) => null)
 
 const DismissibleImplementation = () => (
-  <Dismissible.Root
-    value="a"
-    onDismiss={mockOnDismiss}
-    data-cy="root"
-  >
+  <Dismissible.Root value="a" onDismiss={mockOnDismiss} data-cy="root">
     A
     <Dismissible.Trigger data-cy="trigger" />
   </Dismissible.Root>
 )
 
 const DismissibleImplementationCustomOverrides = () => (
-  <Dismissible.Root
-    value="a"
-    onDismiss={mockOnDismiss}
-    asChild
-  >
+  <Dismissible.Root value="a" onDismiss={mockOnDismiss} asChild>
     <div data-cy="custom-root">
       A
       <Dismissible.Trigger asChild>
-        <button type="button" data-cy="custom-trigger">Dismiss</button>
+        <button type="button" data-cy="custom-trigger">
+          Dismiss
+        </button>
       </Dismissible.Trigger>
     </div>
   </Dismissible.Root>
@@ -90,7 +83,6 @@ describe('Dismissible component', () => {
       if (trigger) fireEvent.click(trigger)
 
       expect(root).not.toBeVisible()
-
     })
   })
 })

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
-import { Icon, StyledIcon } from '~/components/icon'
+import { StyledIcon } from '~/components/icon'
 import { textVariantSize } from '~/components/text'
 import { styled } from '~/stitches'
 
@@ -40,7 +40,6 @@ const ChipContent = ({ children, ...rest }) => {
               </Box>
             )
           if (React.isValidElement(child)) {
-            if (child?.type === Icon) console.log('is icon', toIconSize[size])
             return React.cloneElement(child, {
               ...child.props,
               size: toIconSize[size]
@@ -88,11 +87,11 @@ export const ChipRootContext = React.createContext<IChipRootContext>({
   size: 'md'
 })
 
-export interface IChipRootProps {
+export interface IChipRootProviderProps {
   size: 'sm' | 'md' | 'lg'
 }
 
-export const ChipRootProvider: React.FC<IChipRootProps> = ({
+export const ChipRootProvider: React.FC<IChipRootProviderProps> = ({
   size,
   children
 }) => {
@@ -104,15 +103,18 @@ export const ChipRootProvider: React.FC<IChipRootProps> = ({
   )
 }
 
-// (!) `is` rather than `as` because I THINK `as` is getting overwritten when used with an `asChild` parent
-const ChipRoot: React.ForwardRefExoticComponent<
-  typeof StyledRoot & { is: React.Component }
-> = React.forwardRef(({ is, size = 'md', ...rest }, ref) => {
-  return (
-    <ChipRootProvider size={size}>
-      <StyledRoot as={is} ref={ref} size={size} {...rest} />
-    </ChipRootProvider>
-  )
-})
+export type TChipRootProps = React.ComponentProps<typeof StyledRoot> & {
+  size?: 'sm' | 'md' | 'lg'
+  asWorkaround: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
+}
+
+const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =
+  React.forwardRef(({ asWorkaround, size = 'md', ...rest }, ref) => {
+    return (
+      <ChipRootProvider size={size}>
+        <StyledRoot ref={ref} as={asWorkaround} size={size} {...rest} />
+      </ChipRootProvider>
+    )
+  })
 
 export const Chip = { Root: ChipRoot, Content: ChipContent }

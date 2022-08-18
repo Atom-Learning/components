@@ -4,12 +4,10 @@ import * as React from 'react'
 
 import { DismissibleGroup } from '.'
 
-const mockOnDismiss = jest.fn(value => value)
+const mockOnDismiss = jest.fn((value) => null)
 
 const DismissibleGroupImplementation = () => (
-  <DismissibleGroup.Root
-    onDismiss={mockOnDismiss}
-  >
+  <DismissibleGroup.Root onDismiss={mockOnDismiss}>
     <DismissibleGroup.Item value="a">
       A
       <DismissibleGroup.Trigger data-cy="trigger-a" />

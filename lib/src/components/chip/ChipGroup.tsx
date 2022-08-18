@@ -7,13 +7,5 @@ type TChipGroupProps = {
 
 export const ChipGroup: React.ForwardRefExoticComponent<TChipGroupProps> =
   React.forwardRef(({ gap = 2, ...rest }, ref) => {
-    return (
-      <Stack
-        ref={ref}
-        direction="row"
-        gap={Math.min(Math.max(gap, 1), 3)}
-        align={false}
-        {...rest}
-      />
-    )
+    return <Stack ref={ref} direction="row" gap={gap} align={false} {...rest} />
   })

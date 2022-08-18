@@ -42,12 +42,8 @@ const StyledToggleGroupItem = styled(Chip.Root, {
   }
 })
 
-interface IToggleGroupItemProps {
-  size: 'sm' | 'md' | 'lg'
-}
-
-type TToggleGroupItem = React.ComponentProps<typeof StyledToggleGroupItem> &
-  IToggleGroupItemProps
+type TToggleGroupItem = React.ComponentProps<typeof ToggleGroup.Item> &
+  React.ComponentProps<typeof StyledToggleGroupItem>
 
 export const ToggleGroupItem: React.FC<TToggleGroupItem> = ({
   size = 'md',
@@ -55,8 +51,8 @@ export const ToggleGroupItem: React.FC<TToggleGroupItem> = ({
   ...rest
 }) => {
   return (
-    <ToggleGroup.Item value="" {...rest} asChild>
-      <StyledToggleGroupItem is="button">
+    <ToggleGroup.Item {...rest} asChild>
+      <StyledToggleGroupItem asWorkaround="button">
         <StyledToggleIcon is={Ok} size={size === 'lg' ? 'md' : 'sm'} />
         <Chip.Content>{children}</Chip.Content>
       </StyledToggleGroupItem>
