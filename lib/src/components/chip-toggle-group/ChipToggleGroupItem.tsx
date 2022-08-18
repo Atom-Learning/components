@@ -43,8 +43,7 @@ const StyledToggleGroupItem = styled(Chip.Root, {
 })
 
 interface IToggleGroupItemProps {
-  pressed?: boolean
-  disabled?: boolean
+  size: 'sm' | 'md' | 'lg'
 }
 
 type TToggleGroupItem = React.ComponentProps<typeof StyledToggleGroupItem> &

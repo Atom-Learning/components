@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import { Dismissible } from '.'
 
-const mockOnDismiss = jest.fn(value => { })
+const mockOnDismiss = jest.fn(value => value)
 
 const DismissibleImplementation = () => (
   <Dismissible.Root

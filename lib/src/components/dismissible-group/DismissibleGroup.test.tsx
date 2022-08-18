@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { DismissibleGroup } from '.'
 
-const mockOnDismiss = jest.fn(value => { })
+const mockOnDismiss = jest.fn(value => value)
 
 const DismissibleGroupImplementation = () => (
   <DismissibleGroup.Root
