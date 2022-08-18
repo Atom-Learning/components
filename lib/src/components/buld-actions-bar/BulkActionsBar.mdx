@@ -1,0 +1,35 @@
+---
+title: BulkActionsBar
+component: BulkActionsBar, BulkActionsBar.Action
+description: The BulkActionsBar component displays a bar with the main actions as buttons and the other actions as options in a dropdown
+category: Content
+---
+
+`BulkActionsBar` can be used with tables or lists to show the actions that can be done in bulk in the selected items.
+The actions are split between main actions that are always visible as buttons and other actions that are visible inside a dropdown.
+By default `BulkActionsBar` shows a cancel button that should be used to cancel the selection.
+
+```jsx preview
+<BulkActionsBar
+  label="1 item selected - Sorted by session name"
+  cancelLabel="Cancel"
+  onCancel={() => {}}
+>
+  <BulkActionsBar.Action
+    icon={Edit}
+    text="Edit"
+    onClick={() => {}}
+    isMain
+  />
+  <BulkActionsBar.Action
+    icon={Bolt}
+    text="Other action"
+    onClick={() => {}}
+  />
+</BulkActionsBar>
+```
+
+## Actions
+
+`BulkActionsBar.Action` displays a button or a dropdown item depending on the property `isMain`. 
+Main actions will be displayed as visible buttons in the bar and moved to the dropdown on small screens while other actions will always be displayed in the dropdown

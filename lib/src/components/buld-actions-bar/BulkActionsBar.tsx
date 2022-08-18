@@ -48,7 +48,7 @@ export const BulkActionsBar: React.FC<BulkActionsBarProps> & {
 
     invariant(
       child.type === BulkAction,
-      `Children of type ${child?.type.displayName} aren't permitted. Only an ${BulkAction.displayName} component is allowed in ${BulkActionsBar.displayName}`
+      `Children of type ${child?.type.displayName || child?.type} are not permitted. Only an ${BulkAction.displayName} component is allowed in ${BulkActionsBar.displayName}`
     )
 
     if (child.props.isMain) {
@@ -69,7 +69,7 @@ export const BulkActionsBar: React.FC<BulkActionsBarProps> & {
       >
         <DropdownMenu>
           <DropdownMenu.Trigger asChild>
-            <ActionIcon>
+            <ActionIcon label="other_actions_dropdown">
               <Icon is={Ellypsis} />
             </ActionIcon>
           </DropdownMenu.Trigger>
@@ -90,7 +90,7 @@ export const BulkActionsBar: React.FC<BulkActionsBarProps> & {
       >
         <DropdownMenu>
           <DropdownMenu.Trigger asChild>
-            <ActionIcon>
+            <ActionIcon label="all_actions_dropdown">
               <Icon is={Ellypsis} />
             </ActionIcon>
           </DropdownMenu.Trigger>
@@ -125,6 +125,7 @@ export const BulkActionsBar: React.FC<BulkActionsBarProps> & {
         <BulkActionsBar.Action text={cancelLabel} onClick={onCancel} isMain />
         <ActionIcon
           onClick={onCancel}
+          label="close"
           css={{
             '@media (min-width: 640px)': {
               display: 'none'

@@ -1,0 +1,422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BulkActionsBar component renders a bulk actions bar 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kUIQmw {
+    min-height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background: var(--colors-backgroundAccent);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radii-0) var(--radii-0) 0 0;
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-jFCTlP {
+    background: white;
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP {
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-jpqjUq {
+    border: 0;
+    background: var(--colors-tonal200);
+  }
+}
+
+@media  {
+  .c-fIXJvv-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-fkUJsw-eYnvrx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+    height: var(--sizes-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-jpqjUq-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
+  }
+}
+
+@media  {
+  .c-fkUJsw-fSssiS-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-fSssiS-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
+  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-PJLV-ibYFnTE-css :first-child {
+    flex-wrap: nowrap;
+  }
+
+  .c-fkUJsw-ihruujR-css {
+    border: none;
+  }
+
+@media (max-width: 640px) {
+    .c-fkUJsw-ihruujR-css {
+      display: none;
+    }
+}
+
+  .c-dbrbZt-iKgibq-css {
+    margin-right: var(--space-2);
+    height: 16px;
+    width: 16px;
+  }
+
+@media (max-width: 640px) {
+    .c-PJLV-ikVnppt-css {
+      display: none;
+    }
+}
+
+  .c-dbrbZt-iisACLx-css {
+    height: 16px;
+    width: 16px;
+  }
+
+@media (min-width: 640px) {
+    .c-PJLV-iHBjGb-css {
+      display: none;
+    }
+}
+
+@media (min-width: 640px) {
+    .c-fDzwZw-iHBjGb-css {
+      display: none;
+    }
+}
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-kUIQmw"
+  >
+    <p
+      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
+    >
+      BULK ACTIONS BAR
+    </p>
+    <div
+      class="c-PJLV c-PJLV-ibYFnTE-css"
+    >
+      <div
+        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2"
+      >
+        <button
+          aria-label="Action_EDIT"
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv c-fkUJsw-ihruujR-css"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iKgibq-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.414 4.414l1.172 1.172a2 2 0 010 2.828L8 20H4v-4L15.586 4.414a2 2 0 012.828 0zM14 6l4 4"
+            />
+          </svg>
+          EDIT
+        </button>
+        <div
+          class="c-PJLV c-PJLV-ikVnppt-css"
+        >
+          <button
+            aria-haspopup="menu"
+            aria-label="other_actions_dropdown"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-PJLV"
+            data-state="closed"
+            id="radix-0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="1"
+              />
+              <circle
+                cx="6"
+                cy="12"
+                r="1"
+              />
+              <circle
+                cx="18"
+                cy="12"
+                r="1"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="c-PJLV c-PJLV-iHBjGb-css"
+        >
+          <button
+            aria-haspopup="menu"
+            aria-label="all_actions_dropdown"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-PJLV"
+            data-state="closed"
+            id="radix-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="1"
+              />
+              <circle
+                cx="6"
+                cy="12"
+                r="1"
+              />
+              <circle
+                cx="18"
+                cy="12"
+                r="1"
+              />
+            </svg>
+          </button>
+        </div>
+        <hr
+          class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical"
+        />
+        <button
+          aria-label="Action_CANCEL"
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv c-fkUJsw-ihruujR-css"
+          type="button"
+        >
+          CANCEL
+        </button>
+        <button
+          aria-label="close"
+          class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-fDzwZw-iHBjGb-css"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

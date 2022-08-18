@@ -24,6 +24,7 @@ export const BulkAction: React.FC<BulkActionProps> = ({
     <Button
       appearance="outline"
       size="sm"
+      aria-label={`Action_${text}`}
       css={{
         border: 'none',
         '@media (max-width: 640px)': {
