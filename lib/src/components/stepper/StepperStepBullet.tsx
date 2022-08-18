@@ -15,14 +15,20 @@ export const StepperStepBullet = styled(Flex, {
   flex: 'none',
   variants: {
     status: {
-      default: { bg: '$tonal50', color: '$tonal400' },
+      default: { bg: '$tonal50', color: '$tonal300' },
       active: {
         bg: 'white',
         color: '$primaryMid',
         border: '2px solid',
         borderColor: 'currentColor'
       },
-      viewed: { bg: '$primary', color: 'white' },
+      viewed: {
+        bg: 'white',
+        border: '2px solid $tonal200',
+        color: '$tonal600'
+      },
+      completed: { bg: '$primary', color: 'white' },
+      reviewed: { bg: '$primaryMid', color: 'white' },
       success: { bg: '$success', color: 'white' }
     }
   }
