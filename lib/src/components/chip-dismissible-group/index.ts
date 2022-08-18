@@ -1,7 +1,7 @@
-import { DismissibleGroupItem } from './ChipDismissibleGroupItem'
-import { DismissibleGroupRoot } from './ChipDismissibleGroupRoot'
+import { ChipDismissibleGroupItem } from './ChipDismissibleGroupItem'
+import { ChipDismissibleGroupRoot } from './ChipDismissibleGroupRoot'
 
 export const ChipDismissibleGroup = {
-  Root: DismissibleGroupRoot,
-  Item: DismissibleGroupItem
+  Root: ChipDismissibleGroupRoot,
+  Item: ChipDismissibleGroupItem
 }

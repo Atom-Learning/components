@@ -1,7 +1,7 @@
-import { ToggleGroupItem } from './ChipToggleGroupItem'
-import { ToggleGroupRoot } from './ChipToggleGroupRoot'
+import { ChipToggleGroupItem } from './ChipToggleGroupItem'
+import { ChipToggleGroupRoot } from './ChipToggleGroupRoot'
 
 export const ChipToggleGroup = {
-  Root: ToggleGroupRoot,
-  Item: ToggleGroupItem
+  Root: ChipToggleGroupRoot,
+  Item: ChipToggleGroupItem
 }

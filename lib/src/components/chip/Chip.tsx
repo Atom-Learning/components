@@ -105,7 +105,7 @@ export const ChipRootProvider: React.FC<IChipRootProviderProps> = ({
 
 export type TChipRootProps = React.ComponentProps<typeof StyledRoot> & {
   size?: 'sm' | 'md' | 'lg'
-  asWorkaround: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
+  asWorkaround?: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
 }
 
 const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =

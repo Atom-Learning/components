@@ -3,7 +3,7 @@ import * as React from 'react'
 
 import { ChipGroup } from '~/components/chip'
 
-export const ToggleGroupRoot: React.ForwardRefExoticComponent<React.FC> =
+export const ChipToggleGroupRoot: React.ForwardRefExoticComponent<React.FC> =
   React.forwardRef((props, ref) => {
     return (
       <ChipGroup

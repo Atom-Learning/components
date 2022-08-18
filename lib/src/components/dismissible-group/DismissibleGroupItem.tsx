@@ -3,13 +3,17 @@ import * as React from 'react'
 import { DismissibleGroupContext } from './DismissibleGroupRoot'
 import { Dismissible } from '~/components/dismissible'
 
-export interface IDismissibleGroupItemProps {
+export type TDismissibleGroupItemProps = React.ComponentProps<
+  typeof Dismissible.Root
+> & {
   disabled?: boolean
 }
 
-export const DismissibleGroupItem: React.FC<
-  IDismissibleGroupItemProps & typeof Dismissible
-> = ({ children, disabled: itemDisabled = false, ...rest }) => {
+export const DismissibleGroupItem: React.FC<TDismissibleGroupItemProps> = ({
+  children,
+  disabled: itemDisabled = false,
+  ...rest
+}) => {
   const groupContext = React.useContext(DismissibleGroupContext)
   if (groupContext === undefined) {
     throw new Error(

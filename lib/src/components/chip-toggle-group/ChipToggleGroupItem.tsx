@@ -8,11 +8,11 @@ import { focusVisibleStyleBlock } from '~/utilities'
 import { Icon } from '~/components/icon'
 import { Chip } from '~/components/chip'
 
-const StyledToggleIcon = styled(Icon, {
+const StyledChipToggleIcon = styled(Icon, {
   display: 'none'
 })
 
-const StyledToggleGroupItem = styled(Chip.Root, {
+const StyledChipToggleGroupItem = styled(Chip.Root, {
   '&:not([disabled])': {
     cursor: 'pointer',
     '&:hover': {
@@ -36,26 +36,26 @@ const StyledToggleGroupItem = styled(Chip.Root, {
     borderColor: '$tonal200'
   },
   '&[data-state="on"]': {
-    [`& ${StyledToggleIcon}`]: {
+    [`& ${StyledChipToggleIcon}`]: {
       display: 'block'
     }
   }
 })
 
-type TToggleGroupItem = React.ComponentProps<typeof ToggleGroup.Item> &
-  React.ComponentProps<typeof StyledToggleGroupItem>
+type TChipToggleGroupItem = React.ComponentProps<typeof ToggleGroup.Item> &
+  React.ComponentProps<typeof StyledChipToggleGroupItem>
 
-export const ToggleGroupItem: React.FC<TToggleGroupItem> = ({
+export const ChipToggleGroupItem: React.FC<TChipToggleGroupItem> = ({
   size = 'md',
   children,
   ...rest
 }) => {
   return (
     <ToggleGroup.Item {...rest} asChild>
-      <StyledToggleGroupItem asWorkaround="button">
-        <StyledToggleIcon is={Ok} size={size === 'lg' ? 'md' : 'sm'} />
+      <StyledChipToggleGroupItem asWorkaround="button">
+        <StyledChipToggleIcon is={Ok} size={size === 'lg' ? 'md' : 'sm'} />
         <Chip.Content>{children}</Chip.Content>
-      </StyledToggleGroupItem>
+      </StyledChipToggleGroupItem>
     </ToggleGroup.Item>
   )
 }
