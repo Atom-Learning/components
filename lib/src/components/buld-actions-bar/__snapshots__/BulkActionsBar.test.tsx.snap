@@ -263,22 +263,10 @@ exports[`BulkActionsBar component renders a bulk actions bar 1`] = `
     width: 16px;
   }
 
-@media (max-width: 640px) {
-    .c-PJLV-ikVnppt-css {
-      display: none;
-    }
-}
-
   .c-dbrbZt-iisACLx-css {
     height: 16px;
     width: 16px;
   }
-
-@media (min-width: 640px) {
-    .c-PJLV-iHBjGb-css {
-      display: none;
-    }
-}
 
 @media (min-width: 640px) {
     .c-fDzwZw-iHBjGb-css {
@@ -319,76 +307,37 @@ exports[`BulkActionsBar component renders a bulk actions bar 1`] = `
           </svg>
           EDIT
         </button>
-        <div
-          class="c-PJLV c-PJLV-ikVnppt-css"
+        <button
+          aria-haspopup="menu"
+          aria-label="actions_dropdown"
+          class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-PJLV"
+          data-state="closed"
+          id="radix-0"
+          type="button"
         >
-          <button
-            aria-haspopup="menu"
-            aria-label="other_actions_dropdown"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-PJLV"
-            data-state="closed"
-            id="radix-0"
-            type="button"
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="1"
-              />
-              <circle
-                cx="6"
-                cy="12"
-                r="1"
-              />
-              <circle
-                cx="18"
-                cy="12"
-                r="1"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="c-PJLV c-PJLV-iHBjGb-css"
-        >
-          <button
-            aria-haspopup="menu"
-            aria-label="all_actions_dropdown"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-PJLV"
-            data-state="closed"
-            id="radix-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="1"
-              />
-              <circle
-                cx="6"
-                cy="12"
-                r="1"
-              />
-              <circle
-                cx="18"
-                cy="12"
-                r="1"
-              />
-            </svg>
-          </button>
-        </div>
+            <circle
+              cx="12"
+              cy="12"
+              r="1"
+            />
+            <circle
+              cx="6"
+              cy="12"
+              r="1"
+            />
+            <circle
+              cx="18"
+              cy="12"
+              r="1"
+            />
+          </svg>
+        </button>
         <hr
           class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical"
         />

@@ -19,13 +19,14 @@ describe('BulkActionsBar component', () => {
           icon={Edit}
           text="EDIT"
           onClick={jest.fn()}
-          isMain
         />
-        <BulkActionsBar.Action
-          icon={Bolt}
-          text="OTHER ACTION"
-          onClick={jest.fn()}
-        />
+        <BulkActionsBar.Dropdown>
+          <BulkActionsBar.DropdownAction
+            icon={Bolt}
+            text="OTHER ACTION"
+            onClick={jest.fn()}
+          />
+        </BulkActionsBar.Dropdown>
       </BulkActionsBar>
     )
 
@@ -45,30 +46,10 @@ describe('BulkActionsBar component', () => {
     const { container } = renderComponent()
 
     expect(screen.getByText('EDIT')).toBeVisible()
+    screen.debug()
     expect(
-      container.querySelector('[aria-label="other_actions_dropdown"')
+      container.querySelector('[aria-label="actions_dropdown"')
     ).toBeVisible()
-  })
-
-  it('hides other actions dropdown when there is no other action', async () => {
-    const { container } = render(
-      <BulkActionsBar
-        label="BULK ACTIONS BAR"
-        cancelLabel="CANCEL"
-        onCancel={jest.fn()}
-      >
-        <BulkActionsBar.Action
-          icon={Edit}
-          text="EDIT"
-          onClick={jest.fn()}
-          isMain
-        />
-      </BulkActionsBar>
-    )
-
-    expect(
-      container.querySelector('[aria-label="other_actions_dropdown"')
-    ).toBeNull()
   })
 
   it('onCancel is called when cancel button is clicked', async () => {
@@ -94,17 +75,17 @@ describe('BulkActionsBar component', () => {
     ).toThrow('At least one child is required for BulkActionsBar')
   })
 
-  it('throws an error if a child is not an action ', async () => {
-    expect(() =>
-      render(
-        <BulkActionsBar
-          label="BULK ACTIONS BAR"
-          cancelLabel="CANCEL"
-          onCancel={jest.fn()}
-        >
-          <Text>Not an action</Text>
-        </BulkActionsBar>
-      )
-    ).toThrow('Children of type Text are not permitted. Only an BulkAction component is allowed in BulkActionsBar')
+  it('renders children of different types ', async () => {
+    render(
+      <BulkActionsBar
+        label="BULK ACTIONS BAR"
+        cancelLabel="CANCEL"
+        onCancel={jest.fn()}
+      >
+        <Text>Not an action</Text>
+      </BulkActionsBar>
+    )
+
+    expect(screen.getByText('Not an action')).toBeInTheDocument()
   })
 })

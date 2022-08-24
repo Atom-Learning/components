@@ -1,17 +1,20 @@
 import * as React from 'react'
 
+import { Override } from '~/utilities'
+
 import { Button } from '../button'
-import { DropdownMenu } from '../dropdown-menu'
 import { Icon } from '../icon/Icon'
 
-type BulkActionProps = {
-  isMain?: boolean
-  icon?: React.FC<React.SVGProps<SVGSVGElement>>
-  text: string
-} & React.ComponentProps<typeof DropdownMenu.Item & typeof Button>
+type BulkActionProps = Override<
+  React.ComponentProps<typeof Button>,
+  {
+    icon?: React.FC<React.SVGProps<SVGSVGElement>>
+    text: string
+    children?: React.ReactNode
+  }
+>
 
 export const BulkAction: React.FC<BulkActionProps> = ({
-  isMain,
   icon,
   text,
   ...rest
@@ -20,7 +23,7 @@ export const BulkAction: React.FC<BulkActionProps> = ({
     <Icon is={icon} size="sm" css={{ mr: '$2' }} />
   ) : null
   const { css, ...otherProps } = rest
-  return isMain ? (
+  return (
     <Button
       appearance="outline"
       size="sm"
@@ -37,11 +40,6 @@ export const BulkAction: React.FC<BulkActionProps> = ({
       {iconComponent}
       {text}
     </Button>
-  ) : (
-    <DropdownMenu.Item {...rest}>
-      {iconComponent}
-      {text}
-    </DropdownMenu.Item>
   )
 }
 
