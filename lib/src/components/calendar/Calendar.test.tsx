@@ -36,6 +36,57 @@ describe('Calendar component', () => {
     expect(await screen.queryByText('Dec 2021')).not.toBeInTheDocument()
   })
 
+  it('opens the change year view when year is clicked', async () => {
+    render(<Calendar {...props} />)
+
+    const yearButton = await screen.findByText('Dec 2021')
+    fireEvent.click(yearButton)
+
+    expect(await screen.queryByText('Dec 2021')).not.toBeInTheDocument()
+    expect(await screen.findByText('2020')).toBeVisible()
+  })
+
+  it('changes year when change year arrows are pressed', async () => {
+    render(<Calendar {...props} />)
+
+    const yearButton = await screen.findByText('Dec 2021')
+    fireEvent.click(yearButton)
+
+    const arrow = await screen.findByLabelText('Next year')
+    fireEvent.click(arrow)
+
+    expect(await screen.queryByText('2021')).not.toBeInTheDocument()
+    expect(await screen.findByText('2025')).toBeVisible()
+  })
+
+  it('cannot select year later than max date year', async () => {
+    render(<Calendar {...props} maxDate={new Date('2025-01-01')} />)
+
+    const yearButton = await screen.findByText('Dec 2021')
+    fireEvent.click(yearButton)
+
+    const arrow = await screen.findByLabelText('Next year')
+    fireEvent.click(arrow)
+
+    expect(await screen.queryByText('2021')).not.toBeInTheDocument()
+    expect(await screen.findByText('2025')).toBeVisible()
+    expect(await screen.queryByText('2026')).not.toBeInTheDocument()
+  })
+
+  it('cannot select year earlier than min date year', async () => {
+    render(<Calendar {...props} minDate={new Date('2000-01-01')} />)
+
+    const yearButton = await screen.findByText('Dec 2021')
+    fireEvent.click(yearButton)
+
+    const arrow = await screen.findByLabelText('Previous year')
+    fireEvent.click(arrow)
+
+    expect(await screen.queryByText('2021')).not.toBeInTheDocument()
+    expect(await screen.findByText('2000')).toBeVisible()
+    expect(await screen.queryByText('1999')).not.toBeInTheDocument()
+  })
+
   it('renders translated weekday names', async () => {
     render(
       <Calendar

@@ -12,6 +12,9 @@ export const StepperStepContainer = styled(Flex, {
     content: '',
     position: 'absolute'
   },
+  '&:focus-visible': {
+    outline: 'none'
+  },
   variants: {
     direction: {
       vertical: {
@@ -39,6 +42,50 @@ export const StepperStepContainer = styled(Flex, {
       default: { '&:not(:last-child)::after': { bg: '$tonal50' } },
       active: { '&:not(:last-child)::after': { bg: '$primary' } },
       success: { '&:not(:last-child)::after': { bg: '$success' } }
+    },
+    status: {
+      completed: {
+        '&:hover': {
+          '& :first-child': { bg: '$primaryMid', color: 'white !important' },
+          '& :last-child': { color: '$primaryMid' }
+        },
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary',
+            outlineOffset: '2px'
+          }
+        }
+      },
+      active: {
+        '&:hover': {
+          '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
+          '& :last-child': { color: '$tonal600' }
+        },
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary',
+            outlineOffset: '2px'
+          }
+        }
+      },
+      default: {},
+      viewed: {
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary !important',
+            outlineOffset: '2px !important'
+          }
+        }
+      },
+      success: {},
+      reviewed: {
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary !important',
+            outlineOffset: '2px !important'
+          }
+        }
+      }
     }
   }
 })
