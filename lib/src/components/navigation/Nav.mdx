@@ -1,0 +1,150 @@
+---
+title: Nav
+component: Nav,Nav.Link,Nav.Dropdown,Nav.DropdownContent,Nav.DropdownItem
+description: A collection of links for navigating apps.
+category: Navigation
+---
+
+`Nav` exports many components that combine to form a navigation menu.
+
+```tsx preview
+<Nav>
+  <Nav.Link href="/introduction">Introduction</Nav.Link>
+  <Nav.Dropdown title="Theme">
+    <Nav.DropdownContent>
+      <Nav.DropdownItem href="/colours">Colours</Nav.DropdownItem>
+      <Nav.DropdownItem href="/effects">Effects</Nav.DropdownItem>
+      <Nav.DropdownItem href="/icons">Icons</Nav.DropdownItem>
+    </Nav.DropdownContent>
+  </Nav.Dropdown>
+</Nav>
+```
+
+## With client side routing
+
+`Nav.Dropdown`, `Nav.DropdownItem` and `Nav.Link` can be passed an `active` prop for instances when you want to highlight the currently active route. See below for examples using client side routing with the `Nav.Link` component. The same method can be applied to `Nav.Dropdown` and `Nav.DropdownItem`.
+
+#### Example using React Router
+
+```tsx
+const Link = ({ href, ...props }) => {
+  const { pathname } = useLocation()
+  const isActive = path === href
+
+  return (
+    <Nav.Link active={isActive} {...props}>
+      Introduction
+    </Nav.Link>
+  )
+}
+```
+
+#### Example using Next JS
+
+```tsx
+const Link = ({ href, ...props }) => {
+  const router = useRouter()
+  const isActive = router.asPath === href
+
+  return (
+    <Nav.Link active={isActive} {...props}>
+      Introduction
+    </Nav.Link>
+  )
+}
+```
+
+## Changing the layout of the dropdown content
+
+By default, dropdown items inside of `Nav.DropdownContent` will stack, if you want to change the way items are displayed, you can add custom styling to `Nav.DropdownContent`.
+
+`Nav.DropdownItem` can render whatever you choose, in the below example `ContentGridItem` is used to render an icon, title and subtitle.
+
+`Nav.DropdownContent` styling has also been changed to allow a grid layout.
+
+```tsx preview
+const LinkTitle = styled('div', {
+  color: 'inherit',
+  py: '$1',
+  fontWeight: 600
+})
+
+const LinkText = styled('p', {
+  color: 'inherit',
+  lineHeight: 1.5,
+  mt: '$1',
+  fontWeight: 400,
+  fontSize: 14
+})
+
+const DropdownContentGrid = styled('Nav.DropdownContent', {
+  display: 'grid',
+  gridAutoFlow: 'column',
+  width: 600,
+  gridTemplateRows: 'repeat(2, 1fr)'
+})
+
+const ContentGridItem = ({ href, title, children, icon, ...props }) => {
+  return (
+    <Nav.DropdownItem
+      href={href}
+      css={{ display: 'flex', gap: '$3' }}
+      {...props}
+    >
+      <Box>
+        <Icon is={icon} />
+      </Box>
+      <Box>
+        <LinkTitle>{title}</LinkTitle>
+        {children && <LinkText>{children}</LinkText>}
+      </Box>
+    </Nav.DropdownItem>
+  )
+}
+
+;<Nav>
+  <Nav.Link href="/introduction">Introduction</Nav.Link>
+  <Nav.Dropdown title="Components">
+    <DropdownContentGrid>
+      <ContentListItem
+        href="/docs/primitives/overview/introduction"
+        title="Introduction"
+        icon={Feed}
+      >
+        This is an introduction about the application.
+      </ContentListItem>
+      <ContentListItem
+        href="/docs/primitives/overview/getting-started"
+        title="Getting Started"
+        icon={Bag}
+      >
+        A quick tutorial to get you up and running with Radix Primitives.
+      </ContentListItem>
+
+      <ContentListItem
+        href="/docs/primitives/overview/styling"
+        title="Styling"
+        icon={Camera}
+      >
+        Unstyled and compatible with any styling solution.
+      </ContentListItem>
+
+      <ContentListItem
+        href="/docs/primitives/overview/animation"
+        title="Animation"
+        icon={CalendarEvent}
+      >
+        Use CSS keyframes or any animation library of your choice.
+      </ContentListItem>
+
+      <ContentListItem
+        href="/docs/primitives/overview/accessibility"
+        title="Accessibility"
+        icon={Cart}
+      >
+        Tested in a range of browsers and assistive technologies.
+      </ContentListItem>
+    </DropdownContentGrid>
+  </Nav.Dropdown>
+</Nav>
+```

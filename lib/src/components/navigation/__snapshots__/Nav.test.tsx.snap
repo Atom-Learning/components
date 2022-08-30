@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component renders 1`] = `
+@media  {
+  .c-dVpnxX {
+    all: unset;
+    position: relative;
+    color: var(--colors-tonal400);
+    outline: none;
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    -webkit-user-select: none;
+    user-select: none;
+    padding: var(--space-3);
+    border-radius: var(--radii-1);
+  }
+
+  .c-dVpnxX:hover {
+    background: var(--colors-tonal50);
+    color: var(--colors-tonal600);
+  }
+
+  .c-dVpnxX:active {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+  }
+
+  .c-dVpnxX:focus-visible {
+    box-shadow: 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-dVpnxX:disabled {
+    background: none;
+    color: var(--colors-tonal400);
+    opacity: 30%;
+    cursor: default;
+  }
+
+  .c-govTNd {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-gWdZwW {
+    display: flex;
+    align-items: center;
+    border-radius: var(--radii-1);
+    justify-content: space-between;
+    gap: var(--space-1);
+  }
+
+  .c-gWdZwW[data-state="open"] {
+    background: var(--colors-tonal100);
+  }
+
+  .c-eRROnt {
+    padding: var(--space-3);
+    background: white;
+    margin-top: 4px;
+    box-shadow: 0px 3px 6px rgba(51, 51, 51, 0.15), 0px 3px 6px rgba(51, 51, 51, 0.2);
+    border-radius: var(--radii-1);
+  }
+
+  .c-CVLlg {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-1);
+    list-style: none;
+  }
+
+  .c-dbtMpA {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-eZxssT {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+@media  {
+  .c-govTNd-ctVDrw-elementType-link[data-active] {
+    font-weight: bold;
+    color: var(--colors-tonal500);
+  }
+
+  .c-govTNd-ctVDrw-elementType-link[data-active]::after {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-1);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: var(--sizes-2);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  [data-state=open] .c-dbrbZt-iBlUzV-css {
+    transform: rotate(-180deg);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-dbrbZt-iBlUzV-css {
+      transition: transform .2s ease;
+    }
+}
+
+  .c-PJLV-ijNcvSj-css {
+    display: none;
+    transform: translateX(undefinedpx);
+    transition: all 0.3s ease;
+  }
+
+  .c-PJLV-ijNcvSj-css[data-state="open"] {
+    animation: k-feVUdh 0.15s ease;
+  }
+
+  .c-PJLV-ijNcvSj-css[data-state="closed"] {
+    animation: k-kJITOZ 0.15s ease;
+  }
+
+  .c-PJLV-ifwUrEa-css {
+    display: none;
+    transform: translateX(nullpx);
+    transition: all 0.3s ease;
+  }
+
+  .c-PJLV-ifwUrEa-css[data-state="open"] {
+    animation: k-feVUdh 0.15s ease;
+  }
+
+  .c-PJLV-ifwUrEa-css[data-state="closed"] {
+    animation: k-kJITOZ 0.15s ease;
+  }
+}
+
+<body>
+  <nav
+    aria-label="Main"
+    class="c-eZxssT"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      style="position: relative;"
+    >
+      <ul
+        class="c-CVLlg"
+        data-orientation="horizontal"
+        dir="ltr"
+      >
+        <li
+          class="c-PJLV"
+        >
+          <a
+            class="c-dVpnxX c-govTNd c-govTNd-ctVDrw-elementType-link"
+            data-radix-collection-item=""
+            href="/introduction"
+          >
+            Introduction
+          </a>
+        </li>
+        <li>
+          <button
+            aria-controls="radix-1-content-Theme"
+            aria-expanded="false"
+            class="c-dVpnxX c-gWdZwW"
+            data-radix-collection-item=""
+            data-state="closed"
+            id="radix-1-trigger-Theme"
+          >
+            Theme
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iBlUzV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="c-dbtMpA"
+    />
+  </nav>
+</body>
+`;
