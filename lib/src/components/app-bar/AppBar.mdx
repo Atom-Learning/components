@@ -1,0 +1,103 @@
+---
+title: AppBar
+component: AppBar,AppBar.Collapsible,AppBar.CollapsibleTrigger,AppBar.CollapsibleContent,AppBar.Brand,AppBar.Actions,AppBar.ActionIcon,AppBar.ActionsOverflowMenu
+description: The top App bar provides content and actions related to the current screen. It's used for branding, screen titles, navigation, and actions.
+category: Surfaces
+---
+
+`AppBar` exports many components that combine to form the elements that you would expect to commonly see in a AppBar. Although the App bar is not limited to these components.
+
+```tsx preview
+<AppBar>
+  <AppBar.Collapsible css={{ display: 'block', '@md': { display: 'none' } }}>
+    <AppBar.CollapsibleTrigger />
+    <AppBar.CollapsibleContent>
+      <Link href="/somewhere">Go somewhere</Link>
+    </AppBar.CollapsibleContent>
+  </AppBar.Collapsible>
+  <AppBar.Brand href="atomlearning.co.uk">
+    <Text>Admin Panel</Text>
+  </AppBar.Brand>
+  <AppBar.Actions>
+    <AppBar.ActionIcon icon={Search} label="Search" />
+    <AppBar.Divider />
+    <AppBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
+    <AppBar.Divider />
+    <AppBar.ActionsOverflowMenu>
+      <DropdownMenu.Item>
+        <AppBar.ActionIcon icon={Settings} label="Settings" />
+        <Text>Settings</Text>
+      </DropdownMenu.Item>
+      <DropdownMenu.Item>
+        <AppBar.ActionIcon icon={User} label="Your profile" />
+        <Text>Profile</Text>
+      </DropdownMenu.Item>
+    </AppBar.ActionsOverflowMenu>
+  </AppBar.Actions>
+</AppBar>
+```
+
+By default, `AppBar` uses a flex layout with flex items placed immediatley after each other. To align flex items, an optional css prop with `justifyContent` can be passed.
+
+Alternatively, if you want to avoid wrapping groups of items with a `div` purely for alignment purposes, you could use a spacer.
+With the following code, our collapsible trigger (hamburger) and brand will be aligned to the left and our actions aligned to the right.
+
+```tsx preview
+const Spacer = styled('div', {
+  flex: 1,
+  justifySelf: 'stretch',
+  alignSelf: 'stretch'
+})
+
+<AppBar>
+  <AppBar.Collapsible css={{ display: 'block', '@md': { display: 'none' } }}>
+    <AppBar.CollapsibleTrigger />
+    <AppBar.CollapsibleContent>
+      <Link href="/somewhere">Go somewhere</Link>
+    </AppBar.CollapsibleContent>
+  </AppBar.Collapsible>
+  <AppBar.Brand href="atomlearning.co.uk">
+    <Text>Admin Panel</Text>
+  </AppBar.Brand>
+  <Spacer />
+  <AppBar.Actions>
+    <AppBar.ActionIcon icon={Search} label="Search" />
+    <AppBar.Divider />
+    <AppBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
+    <AppBar.Divider />
+    <AppBar.ActionsOverflowMenu>
+      <DropdownMenu.Item>
+        <AppBar.ActionIcon icon={Settings} label="Settings" />
+        <Text>Settings</Text>
+      </DropdownMenu.Item>
+      <DropdownMenu.Item>
+        <AppBar.ActionIcon icon={User} label="Your profile" />
+        <Text>Profile</Text>
+      </DropdownMenu.Item>
+    </AppBar.ActionsOverflowMenu>
+  </AppBar.Actions>
+</AppBar>
+```
+
+## AppBar.Collapsible
+
+`AppBar.CollapsibleTrigger` The button that toggles the collapsible. By default this is set to a hamburger icon, which when clicked this will animate into a close button. Any children passed to this component will render alongside the hamburger icon.
+
+`AppBar.CollapsibleContent` is the component that contains the collapsible content.
+
+## AppBar.Brand
+
+`AppBar.Brand` renders a link with the Atom Logo, any children passed will be rendered alongside the logo.
+
+## AppBar.Actions
+
+`AppBar.Actions` is a component that is used to wrap a group of actions.
+
+`AppBar.ActionIcon` extends the base `ActionIcon` component with some additional styles.
+Note that instead of needing to include a seperate `Icon` component as children, an icon can be passed directly to this component as a prop.
+
+`AppBar.ActionsOverflowMenu` renders a `DropdownMenu` with an ellipsis icon set as the trigger.
+Any children passed to this component will be wrapped in a `DropdownMenu.Content` component.
+This means that a `DropdownMenu.Item` component can be passed as children.
+
+For further information about the `DropdownMenu` component please see [DropdownMenu docs](https://design.atomlearning.technology/components/dropdown-menu).

@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppBar component renders 1`] = `
+@media  {
+  .c-goJbTI {
+    background: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    top: 0;
+    height: var(--sizes-6);
+    z-index: 1;
+    border-bottom: 1px solid var(--colors-tonal100);
+    transition: box-shadow .2s ease-out;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-kNUsOG {
+    height: 14px;
+    width: 16px;
+    transform: rotate(0deg);
+  }
+
+  .c-jdXwhM {
+    width: 100%;
+    height: 2px;
+    background: var(--colors-tonal400);
+    border-radius: var(--radii-1);
+    left: 0;
+    margin-left: auto;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .325s ease-in-out;
+  }
+
+  .c-gSuKgQ {
+    margin-right: var(--space-2);
+    margin-left: calc(var(--space-2)*-1);
+    padding: 0;
+    color: var(--colors-tonal400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-diqZsx {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    top: var(--sizes-6);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2147483647;
+    position: fixed;
+  }
+
+  .c-diqZsx[data-state="open"] {
+    animation: k-faRpTs 0.15s linear;
+  }
+
+  .c-diqZsx[data-state="closed"] {
+    animation: k-hejlCg 0.15s linear;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-lovLRb {
+    border-radius: 4px;
+  }
+
+  .c-lovLRb[data-state="open"] {
+    background: var(--colors-primaryLight);
+  }
+
+  .c-lovLRb:hover {
+    background: var(--colors-primaryLight);
+  }
+
+  .c-lovLRb > svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-jFCTlP {
+    background: white;
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP {
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jFCTlP[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+}
+
+@media  {
+  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(1) {
+    top: 0px;
+  }
+
+  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(2),
+  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(3) {
+    top: 6px;
+  }
+
+  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(4) {
+    top: 12px;
+  }
+
+  .c-fDzwZw-PrXKS-size-lg {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iftiHlK-css {
+    align-items: center;
+    height: var(--sizes-4);
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+    width: 100%;
+  }
+
+@media (min-width: 800px) {
+    .c-dhzjXW-iftiHlK-css {
+      margin-left: var(--space-5);
+      margin-right: var(--space-5);
+    }
+}
+
+  .c-dhzjXW-ieVEbtG-css {
+    gap: var(--space-1);
+    align-items: center;
+  }
+
+  .c-dbrbZt-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-dhzjXW-ibHHKcd-css {
+    align-items: center;
+    margin-right: calc(var(--space-2)*-1);
+  }
+}
+
+<body>
+  <div
+    class="c-goJbTI"
+  >
+    <div
+      class="c-dhzjXW c-dhzjXW-iftiHlK-css"
+    >
+      <div
+        class="c-dhzjXW"
+      >
+        <div
+          class="c-PJLV"
+          data-state="closed"
+        >
+          <button
+            aria-controls="radix-0"
+            aria-expanded="false"
+            aria-label="toggle mobile menu"
+            class="c-gSuKgQ"
+            data-state="closed"
+            type="button"
+          >
+            <div
+              class="c-kNUsOG c-kNUsOG-bkdlcv-state-closed"
+            >
+              <div
+                class="c-PJLV c-jdXwhM"
+              />
+              <div
+                class="c-PJLV c-jdXwhM"
+              />
+              <div
+                class="c-PJLV c-jdXwhM"
+              />
+              <div
+                class="c-PJLV c-jdXwhM"
+              />
+            </div>
+          </button>
+          <div
+            class="c-diqZsx"
+            data-state="closed"
+            hidden=""
+            id="radix-0"
+            style=""
+          />
+        </div>
+      </div>
+      <div
+        class="c-dhzjXW c-dhzjXW-ieVEbtG-css"
+      >
+        <button
+          aria-label="Search"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.412 14.412L20 20"
+            />
+            <circle
+              cx="10"
+              cy="10"
+              r="6"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Light/Dark mode"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+              fill-rule="evenodd"
+            />
+            <path
+              d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+            />
+          </svg>
+        </button>
+        <div
+          class="c-dhzjXW c-dhzjXW-ibHHKcd-css"
+        >
+          <button
+            aria-haspopup="menu"
+            aria-label="Click to expand"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb c-PJLV"
+            data-state="closed"
+            id="radix-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 12a1 1 0 112 0 1 1 0 01-2 0zm0-6a1 1 0 112 0 1 1 0 01-2 0zm0 12a1 1 0 112 0 1 1 0 01-2 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
