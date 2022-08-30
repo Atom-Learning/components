@@ -8,7 +8,7 @@ globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
 const ExampleTableImplementation = () => {
   const { getHeaderGroups, getRowModel, setPageIndex, getPageCount } =
-    useDataTable()
+    useDataTable<{ name: string; hobby: string }>()
 
   return (
     <>

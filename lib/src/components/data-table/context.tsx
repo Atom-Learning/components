@@ -1,51 +1,49 @@
 import * as React from 'react'
 import {
   useReactTable,
-  TableOptions,
-  HeaderGroup,
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  SortingState
+  SortingState,
+  Table
 } from '@tanstack/react-table'
 
 // TODO: get methods onto context type
 // and solve issues with react-table methods being generic / type T not
 // being known here at compile time
-type DataTableMethods = {}
-const DataTableContext = React.createContext<DataTableMethods>({})
+type DataTableContext<T extends Record<string, unknown>> = Table<T> & {
+  applyPagination: () => void
+  getTotalRows: () => number
+}
+const DataTableContext = React.createContext<DataTableContext | null>(null)
+
+// const createTableContext = <T extends Record<string, unknown>>() => {
+//   React.createContext<DataTableContext<T> | null>(null)
+// }
 
 type TableProviderProps<T> = {
   columns
-  data: any
-  options?: TableOptions<T>
+  data: Array<T>
   children: React.ReactNode
   sortable?: boolean
 }
 
-export const DataTableProvider = <T extends unknown>({
+export const DataTableProvider = <T extends Record<string, unknown>>({
   columns,
   data,
-  options,
   children,
   sortable
 }: TableProviderProps<T>): JSX.Element => {
+  // const DataTableContext = createTableContext<T>()
   const [sortingState, setSortingState] = React.useState<SortingState>([])
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
 
-  const applyPagination = () => setIsPaginated(true)
+  const applyPagination = () => {
+    if (!isPaginated) setIsPaginated(true)
+  }
+  const getTotalRows = () => data.length
 
-  const {
-    getFooterGroups,
-    getHeaderGroups,
-    getRowModel,
-    setPageIndex,
-    nextPage,
-    previousPage,
-    getPageCount,
-    getCanNextPage,
-    getCanPreviousPage
-  } = useReactTable({
+  const table = useReactTable({
     columns,
     data,
     getCoreRowModel: getCoreRowModel(),
@@ -59,26 +57,16 @@ export const DataTableProvider = <T extends unknown>({
 
   return (
     <DataTableContext.Provider
-      value={{
-        applyPagination,
-        getFooterGroups,
-        getHeaderGroups,
-        getRowModel,
-        setPageIndex,
-        getPageCount,
-        nextPage,
-        previousPage,
-        getCanPreviousPage,
-        getCanNextPage
-      }}
+      value={{ ...table, applyPagination, getTotalRows }}
     >
       {children}
     </DataTableContext.Provider>
   )
 }
 
-export const useDataTable = () => {
+export const useDataTable = <T extends Record<string, unknown>>() => {
   const context = React.useContext(DataTableContext)
+  console.log('context in hook:', context)
 
   if (!context)
     throw new Error(
