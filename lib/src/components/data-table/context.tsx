@@ -8,42 +8,36 @@ import {
   Table
 } from '@tanstack/react-table'
 
-// TODO: get methods onto context type
-// and solve issues with react-table methods being generic / type T not
-// being known here at compile time
-type DataTableContext<T extends Record<string, unknown>> = Table<T> & {
+type DataTableContextType<T = unknown> = Table<T> & {
   applyPagination: () => void
   getTotalRows: () => number
 }
-const DataTableContext = React.createContext<DataTableContext | null>(null)
+const DataTableContext =
+  React.createContext<DataTableContextType<unknown> | null>(null)
 
-// const createTableContext = <T extends Record<string, unknown>>() => {
-//   React.createContext<DataTableContext<T> | null>(null)
-// }
-
-type TableProviderProps<T> = {
+type TableProviderProps = {
   columns
-  data: Array<T>
+  data: Array<Record<string, unknown>>
   children: React.ReactNode
   sortable?: boolean
 }
 
-export const DataTableProvider = <T extends Record<string, unknown>>({
+export const DataTableProvider = ({
   columns,
   data,
   children,
   sortable
-}: TableProviderProps<T>): JSX.Element => {
-  // const DataTableContext = createTableContext<T>()
+}: TableProviderProps): JSX.Element => {
   const [sortingState, setSortingState] = React.useState<SortingState>([])
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
 
   const applyPagination = () => {
     if (!isPaginated) setIsPaginated(true)
   }
+
   const getTotalRows = () => data.length
 
-  const table = useReactTable({
+  const table = useReactTable<unknown>({
     columns,
     data,
     getCoreRowModel: getCoreRowModel(),
@@ -57,7 +51,11 @@ export const DataTableProvider = <T extends Record<string, unknown>>({
 
   return (
     <DataTableContext.Provider
-      value={{ ...table, applyPagination, getTotalRows }}
+      value={{
+        ...table,
+        applyPagination,
+        getTotalRows
+      }}
     >
       {children}
     </DataTableContext.Provider>
@@ -65,8 +63,7 @@ export const DataTableProvider = <T extends Record<string, unknown>>({
 }
 
 export const useDataTable = <T extends Record<string, unknown>>() => {
-  const context = React.useContext(DataTableContext)
-  console.log('context in hook:', context)
+  const context = React.useContext(DataTableContext) as DataTableContextType<T>
 
   if (!context)
     throw new Error(

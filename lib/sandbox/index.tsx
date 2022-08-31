@@ -7,8 +7,7 @@ import { Box, DataTable, Flex, globalCss, useDataTable, Table } from '../src'
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
 const ExampleTableImplementation = () => {
-  const { getHeaderGroups, getRowModel, setPageIndex, getPageCount } =
-    useDataTable<{ name: string; hobby: string }>()
+  const { getHeaderGroups, getRowModel } = useDataTable()
 
   return (
     <>
@@ -48,7 +47,7 @@ const ExampleTableImplementation = () => {
           })}
         </Table.Body>
       </Table>
-      <DataTable.Pagination />
+      <DataTable.Pagination pageSize={5} />
     </>
   )
 }

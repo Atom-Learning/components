@@ -6,19 +6,24 @@ import { Text } from '../../text'
 import { DirectionButton, GotoPageSelect } from './Buttons'
 import { styled } from '~/stitches'
 import { useReactTable } from '@tanstack/react-table'
-import { CSS } from '~/stitches'
+import type { CSS } from '~/stitches'
 
-/** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-
-const StyledPagination = styled('nav', {
+const StyledNav = styled('nav', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center'
 })
 
-export const Pagination: React.FC<
-  React.ComponentProps<typeof StyledPagination>
-> = ({ css, ...props }) => {
+type PaginationProps = React.ComponentProps<typeof StyledNav> & {
+  pageSize?: number
+}
+
+/** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
+export const Pagination: React.FC<PaginationProps> = ({
+  css,
+  pageSize: defaultPageSize = 10,
+  ...props
+}) => {
   const {
     applyPagination,
     getState,
@@ -27,19 +32,23 @@ export const Pagination: React.FC<
     previousPage,
     nextPage,
     setPageIndex,
+    setPageSize,
     getTotalRows
   } = useDataTable()
 
   React.useEffect(() => {
     applyPagination()
-  }, [applyPagination])
+    if (getState().pagination.pageSize !== defaultPageSize) {
+      setPageSize(defaultPageSize)
+    }
+  }, [applyPagination, setPageSize])
 
   const { pageIndex, pageSize } = getState().pagination
   const recordsCountFrom = pageIndex * pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
 
   return (
-    <StyledPagination {...props} css={{ mt: '$4', ...css } as CSS}>
+    <StyledNav {...props} css={{ mt: '$4', ...css } as CSS}>
       <Text size="sm" css={{ flexBasis: '25%' }}>
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
@@ -69,6 +78,6 @@ export const Pagination: React.FC<
           onClick={nextPage}
         />
       </Flex>
-    </StyledPagination>
+    </StyledNav>
   )
 }
