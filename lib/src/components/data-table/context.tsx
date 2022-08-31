@@ -28,7 +28,6 @@ export const DataTableProvider = ({
   children,
   sortable
 }: TableProviderProps): JSX.Element => {
-  const [sortingState, setSortingState] = React.useState<SortingState>([])
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
 
   const applyPagination = () => {
@@ -42,11 +41,7 @@ export const DataTableProvider = ({
     data,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
-    getSortedRowModel: getSortedRowModel(),
-    onSortingChange: setSortingState,
-    state: {
-      sorting: sortable ? sortingState : undefined
-    }
+    getSortedRowModel: getSortedRowModel()
   })
 
   return (

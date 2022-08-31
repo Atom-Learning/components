@@ -101,7 +101,7 @@ const App = () => {
       }}
     >
       <Box css={{ width: '500px' }}>
-        <DataTable.Provider columns={columns} data={data} sortable>
+        <DataTable.Provider columns={columns} data={data}>
           <ExampleTableImplementation />
         </DataTable.Provider>
       </Box>
