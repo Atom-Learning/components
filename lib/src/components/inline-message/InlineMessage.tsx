@@ -22,16 +22,14 @@ const InlineMessageIcon = styled(Icon, {
   mr: '$2'
 })
 
-interface IInlineMessageProps {
+type TInlineMessageProps = React.ComponentProps<
+  typeof InlineMessageContainer
+> & {
   showIcon?: boolean
-  css?: CSS
   size?: 'xs' | 'sm' | 'md'
 }
 
-type TInlineMessage = React.ComponentProps<typeof InlineMessageContainer> &
-  IInlineMessageProps
-
-export const InlineMessage: React.FC<TInlineMessage> = ({
+export const InlineMessage: React.FC<TInlineMessageProps> = ({
   css,
   showIcon = true,
   theme = 'error',
