@@ -8,7 +8,7 @@ import { Flex } from '~/components/flex'
 import { Text } from '~/components/text'
 import { Icon } from '~/components/icon'
 
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 import { InlineMessageTheme } from './InlineMessage.types'
 
 const InlineMessageContainer = styled(Flex, {
@@ -34,9 +34,10 @@ export const InlineMessage: React.FC<TInlineMessageProps> = ({
   showIcon = true,
   theme = 'error',
   size = 'sm',
-  children
+  children,
+  ...rest
 }) => (
-  <InlineMessageContainer theme={theme} css={css}>
+  <InlineMessageContainer theme={theme} css={css} {...rest}>
     {showIcon && (
       <InlineMessageIcon
         size="sm"
