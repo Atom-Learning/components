@@ -1,0 +1,50 @@
+---
+title: Inline Message
+component: InlineMessage
+description: Inline feedback message with an optional icon
+category: Feedback
+---
+
+Inline notices consist of an inline feedback message in the form of simple text that inform the user of relevant information, revealed in context.
+
+```tsx preview
+<InlineMessage>This is an Inline Message</InlineMessage>
+```
+
+## Theme
+
+These are the available `theme`s for this component: `success`, `warning`, `error`, `system` and `info`. The default is `error` (due to most frequent context).
+
+```tsx preview
+<>
+  <InlineMessage theme="error">This is an error Inline Message</InlineMessage>
+  <InlineMessage theme="warning">
+    This is a warning Inline Message
+  </InlineMessage>
+  <InlineMessage theme="success">
+    This is a success Inline Message
+  </InlineMessage>
+  <InlineMessage theme="info">This is an info Inline Message</InlineMessage>
+  <InlineMessage theme="system">This is a system Inline Message</InlineMessage>
+</>
+```
+
+## Size
+
+These are the available `size`s for this component: `xs`, `sm` and `md`. The default is `sm`
+
+```tsx preview
+<>
+  <InlineMessage size="xs">This is an xs Inline Message</InlineMessage>
+  <InlineMessage size="sm">This is a sm Inline Message</InlineMessage>
+  <InlineMessage size="md">This is a md Inline Message</InlineMessage>
+</>
+```
+
+## Icon
+
+Each theme has a specific icon it should export, so showing or hiding an icon is simply done using the `showIcon` prop. Default is `true`.
+
+```tsx preview
+<InlineMessage showIcon={false}>This is an Inline Message</InlineMessage>
+```

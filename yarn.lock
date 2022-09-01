@@ -37,6 +37,11 @@
   resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.0.1.tgz#75b04b0f650d6194d26de9efaac7042ecc6f807a"
   integrity sha512-vf18VU9LWXdv4JYmhn1vZXS6Nk/0HY/XNw0jVCpcn8xJhxPi6Y01zOaOxRpcvl+6hhKQtUKF36rHdn0VHgJ5ng==
 
+"@atom-learning/theme@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.1.0.tgz#dde9ea78393bba9b9fbce01107a9c36eedfa262f"
+  integrity sha512-Pz4VpmQy1OllkNpsT4bT7Fah7hANiooI/kkQJuIMTTHwwQ3JyNIadxpomGvz0Pqfjnk2RRZbjPFGkWhLymdOOg==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"

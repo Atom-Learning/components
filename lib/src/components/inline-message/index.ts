@@ -1,0 +1,1 @@
+export { InlineMessage } from './InlineMessage'

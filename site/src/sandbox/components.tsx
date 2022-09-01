@@ -18,6 +18,7 @@ import {
   Icon,
   Image,
   InlineFieldWrapper,
+  InlineMessage,
   Input,
   InputField,
   Label,
@@ -48,7 +49,6 @@ import {
   ToastProvider,
   Tooltip,
   useAlert,
-  ValidationError,
   Video
 } from '@atom-learning/components'
 import {
@@ -1104,9 +1104,9 @@ post.
               <Button size="sm" type="submit">
                 Click to show validation errors
               </Button>
-              <ValidationError>
+              <InlineMessage>
                 This is a validation error unattached to a form field
-              </ValidationError>
+              </InlineMessage>
 
               <InputField
                 name="input-error"
