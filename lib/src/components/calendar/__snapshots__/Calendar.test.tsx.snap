@@ -30,11 +30,21 @@ exports[`Calendar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-iSnHBU {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-display);
-    font-weight: 700;
-    margin: 0;
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
   }
 
   .c-fPxPMR {
@@ -96,23 +106,12 @@ exports[`Calendar component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-iSnHBU-llheLm-size-xs {
-    font-family: var(--fonts-body);
-    font-weight: 600;
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
-  }
-
-  .c-iSnHBU-llheLm-size-xs::before {
-    content: '';
-    margin-bottom: -0.3864em;
-    display: table;
-  }
-
-  .c-iSnHBU-llheLm-size-xs::after {
-    content: '';
-    margin-top: -0.3864em;
-    display: table;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
   }
 
   .c-fIXJvv-bndJoy-size-sm {
@@ -160,6 +159,27 @@ exports[`Calendar component renders 1`] = `
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
+
+  .c-fkUJsw-iRJCoR-cv {
+    background: white;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
+  }
 }
 
 @media  {
@@ -179,6 +199,12 @@ exports[`Calendar component renders 1`] = `
     height: var(--sizes-4);
     align-items: center;
     margin-bottom: var(--space-4);
+  }
+
+  .c-fkUJsw-ikwYYXS-css {
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--colors-tonal600);
   }
 
   .c-fPxPMR-ihbtntv-css {
@@ -237,13 +263,14 @@ exports[`Calendar component renders 1`] = `
       <div
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
-        <h2
-          class="c-iSnHBU c-iSnHBU-llheLm-size-xs"
+        <button
+          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-iRJCoR-cv c-fkUJsw-ikwYYXS-css"
+          type="button"
         >
           Dec
            
           2021
-        </h2>
+        </button>
       </div>
       <div
         class="c-fPxPMR c-fPxPMR-ihbtntv-css"
