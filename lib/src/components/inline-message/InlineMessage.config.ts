@@ -10,7 +10,7 @@ export const INLINE_MESSAGE_THEMES: Record<InlineMessageTheme, CSS> = {
     success: { color: "$success" },
     warning: { color: "$warningText", "& svg": { color: "$warningDark" }}, 
     info: { color: "$primary" },
-    system: { color: "$tonal400" },
+    neutral: { color: "$tonal400" },
     error: { color: "$danger" }
 }
 
@@ -18,6 +18,6 @@ export const INLINE_MESSAGE_ICONS: Record<InlineMessageTheme, React.FC<React.SVG
     success: OkCircle,
     warning: Danger,
     info: Info,
-    system: Info,
+    neutral: Info,
     error: Error
 }

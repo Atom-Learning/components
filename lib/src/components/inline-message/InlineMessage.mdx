@@ -13,7 +13,7 @@ Inline messages consist of an inline feedback message in the form of simple text
 
 ## Theme
 
-These are the available `theme`s for this component: `success`, `warning`, `error`, `system` and `info`. The default is `error` (due to most frequent context).
+These are the available `theme`s for this component: `success`, `warning`, `error`, `neutral` and `info`. The default is `error` (due to most frequent context).
 
 ```tsx preview
 <>
@@ -25,7 +25,9 @@ These are the available `theme`s for this component: `success`, `warning`, `erro
     This is a success Inline Message
   </InlineMessage>
   <InlineMessage theme="info">This is an info Inline Message</InlineMessage>
-  <InlineMessage theme="system">This is a system Inline Message</InlineMessage>
+  <InlineMessage theme="neutral">
+    This is a neutral Inline Message
+  </InlineMessage>
 </>
 ```
 

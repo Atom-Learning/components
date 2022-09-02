@@ -1,1 +1,1 @@
-export type InlineMessageTheme = 'warning' | 'error' | 'success' | 'info' | 'system'
+export type InlineMessageTheme = 'warning' | 'error' | 'success' | 'info' | 'neutral'
