@@ -14,16 +14,19 @@ const Sources = {
   multi: logo
 } as const
 
-type BrandProps = {
+type AppBarBrandProps = {
   href: string
   theme?: keyof typeof Sources
   css?: CSS
+  logoAlt?: string
 }
 
-export const Brand: React.FC<BrandProps> = ({
+export const AppBarBrand: React.FC<AppBarBrandProps> = ({
   children,
   theme = 'multi',
-  href
+  href,
+  css,
+  logoAlt = 'Atom Learning logo'
 }) => {
   return (
     <Link
@@ -35,13 +38,13 @@ export const Brand: React.FC<BrandProps> = ({
         '& > p': {
           color: '$tonal400'
         },
-        '&:hover, &:focus': { textDecoration: 'none' }
+        '&:hover, &:focus': { textDecoration: 'none' },
+        ...css
       }}
     >
       <Image
         src={Sources[theme]}
-        alt="An Atom Learning user riding a pencil rocket"
-        height={24}
+        alt={logoAlt}
         css={{
           mr: '$3',
           mb: 5,

@@ -13,7 +13,7 @@ type ActionsOverflowMenuProps = Omit<
 >
 
 const StyledActionIcon = styled(BaseActionIcon, {
-  borderRadius: '4px',
+  borderRadius: '$0',
   '&[data-state="open"]': {
     background: '$primaryLight'
   },
@@ -31,7 +31,7 @@ const ActionsOverflowMenu: React.FC<ActionsOverflowMenuProps> = ({
     <Flex css={{ alignItems: 'center', mr: '-$2' }}>
       <DropdownMenu>
         <DropdownMenu.Trigger asChild>
-          <ActionIcon icon={EllypsisVertical} label={label} />
+          <AppBarActionIcon icon={EllypsisVertical} label={label} />
         </DropdownMenu.Trigger>
         <DropdownMenu.Content sideOffset={16}>{children}</DropdownMenu.Content>
       </DropdownMenu>
@@ -45,18 +45,18 @@ const Actions: React.FC<{ css?: CSS }> = ({ children, css }) => {
   )
 }
 
-type ActionIconProps = Omit<
+type AppBarActionIconProps = Omit<
   React.ComponentProps<typeof StyledActionIcon>,
   'size' | 'children'
 > & { icon: React.FC<React.SVGProps<SVGSVGElement>>; label: string }
 
-const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
-  React.forwardRef(({ icon, label, ...rest }, forwardedRef) => {
+const AppBarActionIcon: React.ForwardRefExoticComponent<AppBarActionIconProps> =
+  React.forwardRef(({ icon, ...rest }, forwardedRef) => {
     return (
-      <StyledActionIcon label={label} size="lg" ref={forwardedRef} {...rest}>
+      <StyledActionIcon size="lg" ref={forwardedRef} {...rest}>
         <Icon is={icon} />
       </StyledActionIcon>
     )
   })
 
-export { Actions, ActionIcon, ActionsOverflowMenu }
+export { Actions, AppBarActionIcon, ActionsOverflowMenu }

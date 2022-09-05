@@ -42,11 +42,10 @@ const StyledTrigger = styled(CollapsiblePrimitive.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  background: 'none',
+  bg: 'none',
   border: 'none',
   cursor: 'pointer',
-  height: '$4',
-  width: '$4'
+  size: '$4'
 })
 
 interface CollapsibleContextValue {

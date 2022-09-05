@@ -37,7 +37,7 @@ exports[`AppBar component renders 1`] = `
     transition: .325s ease-in-out;
   }
 
-  .c-gSuKgQ {
+  .c-gMYLLF {
     margin-right: var(--space-2);
     margin-left: calc(var(--space-2)*-1);
     padding: 0;
@@ -97,19 +97,19 @@ exports[`AppBar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-lovLRb {
-    border-radius: 4px;
+  .c-dzawqf {
+    border-radius: var(--radii-0);
   }
 
-  .c-lovLRb[data-state="open"] {
+  .c-dzawqf[data-state="open"] {
     background: var(--colors-primaryLight);
   }
 
-  .c-lovLRb:hover {
+  .c-dzawqf:hover {
     background: var(--colors-primaryLight);
   }
 
-  .c-lovLRb > svg {
+  .c-dzawqf > svg {
     color: var(--colors-tonal400);
   }
 
@@ -251,7 +251,7 @@ exports[`AppBar component renders 1`] = `
             aria-controls="radix-0"
             aria-expanded="false"
             aria-label="toggle mobile menu"
-            class="c-gSuKgQ"
+            class="c-gMYLLF"
             data-state="closed"
             type="button"
           >
@@ -286,7 +286,7 @@ exports[`AppBar component renders 1`] = `
       >
         <button
           aria-label="Search"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf"
           type="button"
         >
           <svg
@@ -307,7 +307,7 @@ exports[`AppBar component renders 1`] = `
         </button>
         <button
           aria-label="Light/Dark mode"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf"
           type="button"
         >
           <svg
@@ -332,7 +332,7 @@ exports[`AppBar component renders 1`] = `
           <button
             aria-haspopup="menu"
             aria-label="Click to expand"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-lovLRb c-PJLV"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf c-PJLV"
             data-state="closed"
             id="radix-1"
             type="button"

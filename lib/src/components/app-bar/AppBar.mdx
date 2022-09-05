@@ -5,7 +5,8 @@ description: The top App bar provides content and actions related to the current
 category: Surfaces
 ---
 
-`AppBar` exports many components that combine to form the elements that you would expect to commonly see in a AppBar. Although the App bar is not limited to these components.
+`AppBar` exports many components that combine to form the elements that you would expect to commonly see in a AppBar.
+However, the App bar is not limited to these components, as any components may sit within the `AppBar` to create flexible and a custom UI.
 
 ```tsx preview
 <AppBar>
@@ -39,16 +40,10 @@ category: Surfaces
 
 By default, `AppBar` uses a flex layout with flex items placed immediatley after each other. To align flex items, an optional css prop with `justifyContent` can be passed.
 
-Alternatively, if you want to avoid wrapping groups of items with a `div` purely for alignment purposes, you could use a spacer.
+Alternatively, if you want to avoid wrapping groups of items with a `div` purely for alignment purposes, you could use a spacer. In this example, the styling of the `Flex` component has been extended so that it stretches to fill the available space.
 With the following code, our collapsible trigger (hamburger) and brand will be aligned to the left and our actions aligned to the right.
 
 ```tsx preview
-const Spacer = styled('div', {
-  flex: 1,
-  justifySelf: 'stretch',
-  alignSelf: 'stretch'
-})
-
 <AppBar>
   <AppBar.Collapsible css={{ display: 'block', '@md': { display: 'none' } }}>
     <AppBar.CollapsibleTrigger />
@@ -59,7 +54,7 @@ const Spacer = styled('div', {
   <AppBar.Brand href="atomlearning.co.uk">
     <Text>Admin Panel</Text>
   </AppBar.Brand>
-  <Spacer />
+  <Flex css={{ flex: 1, justifySelf: 'stretch', alignSelf: 'stretch' }} />
   <AppBar.Actions>
     <AppBar.ActionIcon icon={Search} label="Search" />
     <AppBar.Divider />

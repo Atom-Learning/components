@@ -1,33 +1,33 @@
 import React from 'react'
 
 import { CSS, styled } from '~/stitches'
+import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 
 import { Divider as BaseDivider } from '../divider'
 import { Flex } from '../flex'
-import { ActionIcon, Actions, ActionsOverflowMenu } from './Actions'
-import { Brand } from './Brand'
+import { Actions, ActionsOverflowMenu, AppBarActionIcon } from './Actions'
+import { AppBarBrand } from './Brand'
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger
 } from './Collapsible'
-import { useScrollPosition } from './utils'
 
 type AppBarSubComponents = {
   Collapsible: typeof Collapsible
   CollapsibleTrigger: typeof CollapsibleTrigger
   CollapsibleContent: typeof CollapsibleContent
-  Brand: typeof Brand
+  Brand: typeof AppBarBrand
   Actions: typeof Actions
-  ActionIcon: typeof ActionIcon
+  ActionIcon: typeof AppBarActionIcon
   ActionsOverflowMenu: typeof ActionsOverflowMenu
-  Divider: typeof Divider
+  Divider: typeof AppBarDivider
 }
 
-const Divider = () => (
+const AppBarDivider = () => (
   <BaseDivider
     orientation="vertical"
-    css={{ minHeight: 28, background: '$tonal100' }}
+    css={{ minHeight: 28, bg: '$tonal100' }}
   />
 )
 
@@ -43,7 +43,7 @@ const StyledRoot = styled('div', {
   borderBottom: '1px solid $tonal100',
   transition: 'box-shadow .2s ease-out',
   variants: {
-    scrolled: {
+    hasScrolled: {
       true: {
         boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);'
       }
@@ -64,7 +64,7 @@ export const AppBar: React.FC<{ css?: CSS }> & AppBarSubComponents = ({
   const { y: hasScrolled } = useScrollPosition()
 
   return (
-    <StyledRoot scrolled={!!hasScrolled}>
+    <StyledRoot hasScrolled={!!hasScrolled}>
       <Flex
         css={{
           alignItems: 'center',
@@ -86,8 +86,10 @@ export const AppBar: React.FC<{ css?: CSS }> & AppBarSubComponents = ({
 AppBar.Collapsible = Collapsible
 AppBar.CollapsibleTrigger = CollapsibleTrigger
 AppBar.CollapsibleContent = CollapsibleContent
-AppBar.Brand = Brand
+AppBar.Brand = AppBarBrand
 AppBar.Actions = Actions
-AppBar.ActionIcon = ActionIcon
+AppBar.ActionIcon = AppBarActionIcon
 AppBar.ActionsOverflowMenu = ActionsOverflowMenu
-AppBar.Divider = Divider
+AppBar.Divider = AppBarDivider
+
+AppBar.displayName = 'AppBar'
