@@ -2,7 +2,7 @@ import React from 'react'
 import { ChevronDown } from '@atom-learning/icons'
 import { styled } from '~/stitches'
 import { Icon } from '../icon'
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import * as PrimitiveNavigationMenu from '@radix-ui/react-navigation-menu'
 import { CSS, theme } from '~/stitches'
 
 const activeParentItemStyles = {
@@ -49,7 +49,7 @@ const itemStyles = {
   }
 }
 
-const StyledTrigger = styled(NavigationMenu.Trigger, itemStyles, {
+const StyledTrigger = styled(PrimitiveNavigationMenu.Trigger, itemStyles, {
   display: 'flex',
   alignItems: 'center',
   borderRadius: '$1',
@@ -61,7 +61,7 @@ const StyledTrigger = styled(NavigationMenu.Trigger, itemStyles, {
   variants: { active: { true: { ...activeParentItemStyles } } }
 })
 
-const StyledLink = styled(NavigationMenu.Link, itemStyles, {
+const StyledLink = styled(PrimitiveNavigationMenu.Link, itemStyles, {
   display: 'block',
   textDecoration: 'none',
   lineHeight: 1,
@@ -80,7 +80,7 @@ const StyledLink = styled(NavigationMenu.Link, itemStyles, {
   }
 })
 
-const NavDropdownTrigger = React.forwardRef<
+const NavigationMenuDropdownTrigger = React.forwardRef<
   HTMLButtonElement,
   React.PropsWithChildren<{ active?: boolean }>
 >(({ children, active, ...props }, forwardedRef) => {
@@ -101,11 +101,11 @@ const NavDropdownTrigger = React.forwardRef<
   )
 })
 
-const NavDropdownContent = styled('ul', {})
+const NavigationMenuDropdownContent = styled('ul', {})
 const ListItem = styled('li', {})
 const DisabledButton = styled('button', { ...itemStyles, ...disabledStyles })
 
-type NavLinkProps = {
+type NavigationMenuLinkProps = {
   href: string
   active?: boolean
   disabled?: boolean
@@ -113,9 +113,9 @@ type NavLinkProps = {
   css?: CSS
 }
 
-const NavLink = React.forwardRef<
+const NavigationMenuLink = React.forwardRef<
   HTMLAnchorElement,
-  React.PropsWithChildren<NavLinkProps>
+  React.PropsWithChildren<NavigationMenuLinkProps>
 >(
   (
     { children, href, disabled, css, variant = 'link', ...props },
@@ -145,11 +145,18 @@ const NavLink = React.forwardRef<
   }
 )
 
-const NavDropdownItem = React.forwardRef<
+const NavigationMenuDropdownItem = React.forwardRef<
   HTMLAnchorElement,
-  React.PropsWithChildren<NavLinkProps>
+  React.PropsWithChildren<NavigationMenuLinkProps>
 >((props, forwardedRef) => {
-  return <NavLink ref={forwardedRef} variant="dropdownItem" {...props} />
+  return (
+    <NavigationMenuLink ref={forwardedRef} variant="dropdownItem" {...props} />
+  )
 })
 
-export { NavDropdownTrigger, NavLink, NavDropdownContent, NavDropdownItem }
+export {
+  NavigationMenuDropdownTrigger,
+  NavigationMenuLink,
+  NavigationMenuDropdownContent,
+  NavigationMenuDropdownItem
+}

@@ -4,26 +4,28 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Nav } from '.'
+import { NavigationMenu } from '.'
 
 const ExampleNav = () => (
   <IdProvider>
-    <Nav>
-      <Nav.Link href="/introduction">Introduction</Nav.Link>
-      <Nav.Dropdown title="Theme">
-        <Nav.DropdownContent>
-          <Nav.DropdownItem href="https://app.atomlearning.co.uk/colours">
+    <NavigationMenu>
+      <NavigationMenu.Link href="/introduction">
+        Introduction
+      </NavigationMenu.Link>
+      <NavigationMenu.Dropdown title="Theme">
+        <NavigationMenu.DropdownContent>
+          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
             Colours
-          </Nav.DropdownItem>
-          <Nav.DropdownItem href="https://app.atomlearning.co.uk/effects">
+          </NavigationMenu.DropdownItem>
+          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/effects">
             Effects
-          </Nav.DropdownItem>
-          <Nav.DropdownItem href="https://app.atomlearning.co.uk/icons">
+          </NavigationMenu.DropdownItem>
+          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/icons">
             Icons
-          </Nav.DropdownItem>
-        </Nav.DropdownContent>
-      </Nav.Dropdown>
-    </Nav>
+          </NavigationMenu.DropdownItem>
+        </NavigationMenu.DropdownContent>
+      </NavigationMenu.Dropdown>
+    </NavigationMenu>
   </IdProvider>
 )
 

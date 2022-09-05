@@ -1,18 +1,20 @@
+import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
-import { styled, keyframes, CSS } from '~/stitches'
-import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import {
-  NavDropdownContent,
-  NavLink,
-  NavDropdownTrigger,
-  NavDropdownItem
-} from './NavItem'
 
-type NavSubComponents = {
-  Link: typeof NavLink
-  Dropdown: typeof NavDropdown
-  DropdownContent: typeof NavDropdownContent
-  DropdownItem: typeof NavDropdownItem
+import { CSS, keyframes, styled } from '~/stitches'
+
+import {
+  NavigationMenuDropdownContent,
+  NavigationMenuDropdownItem,
+  NavigationMenuDropdownTrigger,
+  NavigationMenuLink
+} from './NavigationMenuItem'
+
+type NavigationMenuSubComponents = {
+  Link: typeof NavigationMenuLink
+  Dropdown: typeof NavigationMenuDropdown
+  DropdownContent: typeof NavigationMenuDropdownContent
+  DropdownItem: typeof NavigationMenuDropdownItem
 }
 
 interface NavContextValue {
@@ -46,20 +48,20 @@ const fadeOut = keyframes({
   to: { opacity: 0 }
 })
 
-const StyledMenu = styled(NavigationMenu.Root, {
+const StyledMenu = styled(NavigationMenuPrimitive.Root, {
   display: 'flex',
   justifyContent: 'center',
   position: 'relative'
 })
 
-const StyledList = styled(NavigationMenu.List, {
+const StyledList = styled(NavigationMenuPrimitive.List, {
   display: 'flex',
   justifyContent: 'center',
   gap: '$1',
   listStyle: 'none'
 })
 
-const StyledContent = styled(NavigationMenu.Content, {
+const StyledContent = styled(NavigationMenuPrimitive.Content, {
   padding: '$3',
   background: 'white',
   marginTop: '4px',
@@ -68,7 +70,7 @@ const StyledContent = styled(NavigationMenu.Content, {
   borderRadius: '$1'
 })
 
-const StyledViewport = styled(NavigationMenu.Viewport, {})
+const StyledViewport = styled(NavigationMenuPrimitive.Viewport, {})
 
 const ViewportPosition = styled('div', {
   position: 'absolute',
@@ -79,12 +81,12 @@ const ViewportPosition = styled('div', {
   justifyContent: 'center'
 })
 
-type NavDropdownProps = {
+type NavigationMenuDropdownProps = {
   title: string
   active?: boolean
 } & React.HTMLProps<HTMLButtonElement>
 
-const NavDropdown: React.FC<NavDropdownProps> = ({
+const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   children,
   title,
   active,
@@ -93,27 +95,25 @@ const NavDropdown: React.FC<NavDropdownProps> = ({
   const { onNodeUpdate } = useNavContext()
 
   return (
-    <NavigationMenu.Item value={title}>
-      <NavDropdownTrigger
+    <NavigationMenuPrimitive.Item value={title}>
+      <NavigationMenuDropdownTrigger
         active={active}
         {...props}
         ref={(node: HTMLButtonElement) => onNodeUpdate(node, title)}
       >
         {title}
-      </NavDropdownTrigger>
+      </NavigationMenuDropdownTrigger>
       <StyledContent>{children}</StyledContent>
-    </NavigationMenu.Item>
+    </NavigationMenuPrimitive.Item>
   )
 }
 
-type NavProps = {
+type NavigationMenuProps = {
   css?: CSS
 }
 
-export const Nav: React.FC<NavProps> & NavSubComponents = ({
-  children,
-  css
-}) => {
+export const NavigationMenu: React.FC<NavigationMenuProps> &
+  NavigationMenuSubComponents = ({ children, css }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
@@ -176,7 +176,9 @@ export const Nav: React.FC<NavProps> & NavSubComponents = ({
   )
 }
 
-Nav.Link = NavLink
-Nav.Dropdown = NavDropdown
-Nav.DropdownContent = NavDropdownContent
-Nav.DropdownItem = NavDropdownItem
+NavigationMenu.Link = NavigationMenuLink
+NavigationMenu.Dropdown = NavigationMenuDropdown
+NavigationMenu.DropdownContent = NavigationMenuDropdownContent
+NavigationMenu.DropdownItem = NavigationMenuDropdownItem
+
+NavigationMenu.displayName = 'NavigationMenu'
