@@ -3,10 +3,9 @@ import logoLight from '@atom-learning/theme/lib/assets/logo-light.svg'
 import logoPrimary from '@atom-learning/theme/lib/assets/logo-primary.svg'
 import React from 'react'
 
-import { CSS } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { Image } from '../image'
-import { Link } from '../link'
 
 const Sources = {
   primary: logoPrimary,
@@ -21,6 +20,17 @@ type AppBarBrandProps = {
   logoAlt?: string
 }
 
+const StyledLink = styled('a', {
+  display: 'flex',
+  alignItems: 'center',
+  textDecoration: 'none',
+  color: '$tonal400',
+  '& > p': {
+    color: '$tonal400'
+  },
+  '&:hover, &:focus': { textDecoration: 'none' }
+})
+
 export const AppBarBrand: React.FC<AppBarBrandProps> = ({
   children,
   theme = 'multi',
@@ -29,19 +39,7 @@ export const AppBarBrand: React.FC<AppBarBrandProps> = ({
   logoAlt = 'Atom Learning logo'
 }) => {
   return (
-    <Link
-      href={href}
-      css={{
-        display: 'flex',
-        alignItems: 'center',
-        color: '$tonal400',
-        '& > p': {
-          color: '$tonal400'
-        },
-        '&:hover, &:focus': { textDecoration: 'none' },
-        ...css
-      }}
-    >
+    <StyledLink href={href} css={css}>
       <Image
         src={Sources[theme]}
         alt={logoAlt}
@@ -55,6 +53,6 @@ export const AppBarBrand: React.FC<AppBarBrandProps> = ({
         }}
       />
       {children}
-    </Link>
+    </StyledLink>
   )
 }

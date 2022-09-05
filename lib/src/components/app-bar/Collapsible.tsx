@@ -69,7 +69,7 @@ export const useCollapsibleContext = () => {
   return context
 }
 
-const Collapsible: React.FC<React.ComponentProps<typeof StyledRoot>> = ({
+export const Collapsible: React.FC<React.ComponentProps<typeof StyledRoot>> = ({
   children,
   css,
   ...props
@@ -96,7 +96,7 @@ const Collapsible: React.FC<React.ComponentProps<typeof StyledRoot>> = ({
   )
 }
 
-const CollapsibleTrigger: React.FC<
+export const CollapsibleTrigger: React.FC<
   React.ComponentProps<typeof StyledTrigger>
 > = ({ children, css, ...props }) => {
   const { isOpen } = useCollapsibleContext()
@@ -109,7 +109,7 @@ const CollapsibleTrigger: React.FC<
   )
 }
 
-const CollapsibleContent: React.FC<
+export const CollapsibleContent: React.FC<
   React.ComponentProps<typeof StyledContent>
 > = ({ children, css }) => {
   const { isOpen, onOpenToggle } = useCollapsibleContext()
@@ -131,5 +131,3 @@ const CollapsibleContent: React.FC<
     </RemoveScroll>
   )
 }
-
-export { Collapsible, CollapsibleTrigger, CollapsibleContent }
