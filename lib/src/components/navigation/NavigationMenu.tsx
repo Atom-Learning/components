@@ -6,36 +6,17 @@ import { CSS, keyframes, styled } from '~/stitches'
 import {
   NavigationMenuDropdownContent,
   NavigationMenuDropdownItem,
-  NavigationMenuDropdownTrigger,
   NavigationMenuLink
 } from './NavigationMenuItem'
+
+import { NavigationMenuDropdown } from './NavigationMenuDropdown'
+import { NavigationMenuContext } from './NavigationMenuContext'
 
 type NavigationMenuSubComponents = {
   Link: typeof NavigationMenuLink
   Dropdown: typeof NavigationMenuDropdown
   DropdownContent: typeof NavigationMenuDropdownContent
   DropdownItem: typeof NavigationMenuDropdownItem
-}
-
-interface NavContextValue {
-  activeItem: string | undefined
-  setActiveItem: React.Dispatch<React.SetStateAction<string | undefined>>
-  onNodeUpdate: (
-    trigger: HTMLButtonElement,
-    itemValue: string
-  ) => HTMLButtonElement
-}
-
-const NavContext = React.createContext<NavContextValue | undefined>(undefined)
-
-const useNavContext = () => {
-  const context = React.useContext(NavContext)
-
-  if (context === undefined) {
-    throw new Error('useNavContext must be used within a NavContextProvider')
-  }
-
-  return context
 }
 
 const fadeIn = keyframes({
@@ -61,15 +42,6 @@ const StyledList = styled(NavigationMenuPrimitive.List, {
   listStyle: 'none'
 })
 
-const StyledContent = styled(NavigationMenuPrimitive.Content, {
-  padding: '$3',
-  background: 'white',
-  marginTop: '4px',
-  boxShadow:
-    '0px 3px 6px rgba(51, 51, 51, 0.15), 0px 3px 6px rgba(51, 51, 51, 0.2)',
-  borderRadius: '$1'
-})
-
 const StyledViewport = styled(NavigationMenuPrimitive.Viewport, {})
 
 const ViewportPosition = styled('div', {
@@ -81,38 +53,11 @@ const ViewportPosition = styled('div', {
   justifyContent: 'center'
 })
 
-type NavigationMenuDropdownProps = {
-  title: string
-  active?: boolean
-} & React.HTMLProps<HTMLButtonElement>
-
-const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
-  children,
-  title,
-  active,
-  ...props
-}) => {
-  const { onNodeUpdate } = useNavContext()
-
-  return (
-    <NavigationMenuPrimitive.Item value={title}>
-      <NavigationMenuDropdownTrigger
-        active={active}
-        {...props}
-        ref={(node: HTMLButtonElement) => onNodeUpdate(node, title)}
-      >
-        {title}
-      </NavigationMenuDropdownTrigger>
-      <StyledContent>{children}</StyledContent>
-    </NavigationMenuPrimitive.Item>
-  )
-}
-
 type NavigationMenuProps = {
   css?: CSS
 }
 
-export const NavigationMenu: React.FC<NavigationMenuProps> &
+const NavigationMenu: React.FC<NavigationMenuProps> &
   NavigationMenuSubComponents = ({ children, css }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
@@ -148,7 +93,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
   }
 
   return (
-    <NavContext.Provider
+    <NavigationMenuContext.Provider
       value={{
         activeItem,
         setActiveItem,
@@ -172,7 +117,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
           />
         </ViewportPosition>
       </StyledMenu>
-    </NavContext.Provider>
+    </NavigationMenuContext.Provider>
   )
 }
 
@@ -182,3 +127,5 @@ NavigationMenu.DropdownContent = NavigationMenuDropdownContent
 NavigationMenu.DropdownItem = NavigationMenuDropdownItem
 
 NavigationMenu.displayName = 'NavigationMenu'
+
+export { NavigationMenu }
