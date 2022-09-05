@@ -63,7 +63,7 @@ exports[`Nav component renders 1`] = `
     background: var(--colors-tonal100);
   }
 
-  .c-eRROnt {
+  .c-iIIuLn {
     padding: var(--space-3);
     background: white;
     margin-top: 4px;
