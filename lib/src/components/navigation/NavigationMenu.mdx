@@ -1,28 +1,34 @@
 ---
-title: Nav
-component: Nav,Nav.Link,Nav.Dropdown,Nav.DropdownContent,Nav.DropdownItem
+title: NavigationMenu
+component: NavigationMenu,NavigationMenu.Link,NavigationMenu.Dropdown,NavigationMenu.DropdownContent,NavigationMenu.DropdownItem
 description: A collection of links for navigating apps.
 category: Navigation
 ---
 
-`Nav` exports many components that combine to form a navigation menu.
+`NavigationMenu` exports many components that combine to form a navigation menu.
 
 ```tsx preview
-<Nav>
-  <Nav.Link href="/introduction">Introduction</Nav.Link>
-  <Nav.Dropdown title="Theme">
-    <Nav.DropdownContent>
-      <Nav.DropdownItem href="/colours">Colours</Nav.DropdownItem>
-      <Nav.DropdownItem href="/effects">Effects</Nav.DropdownItem>
-      <Nav.DropdownItem href="/icons">Icons</Nav.DropdownItem>
-    </Nav.DropdownContent>
-  </Nav.Dropdown>
-</Nav>
+<NavigationMenu>
+  <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
+  <NavigationMenu.Dropdown title="Theme">
+    <NavigationMenu.DropdownContent>
+      <NavigationMenu.DropdownItem href="/colours">
+        Colours
+      </NavigationMenu.DropdownItem>
+      <NavigationMenu.DropdownItem href="/effects">
+        Effects
+      </NavigationMenu.DropdownItem>
+      <NavigationMenu.DropdownItem href="/icons">
+        Icons
+      </NavigationMenu.DropdownItem>
+    </NavigationMenu.DropdownContent>
+  </NavigationMenu.Dropdown>
+</NavigationMenu>
 ```
 
 ## With client side routing
 
-`Nav.Dropdown`, `Nav.DropdownItem` and `Nav.Link` can be passed an `active` prop for instances when you want to highlight the currently active route. See below for examples using client side routing with the `Nav.Link` component. The same method can be applied to `Nav.Dropdown` and `Nav.DropdownItem`.
+`NavigationMenu.Dropdown`, `NavigationMenu.DropdownItem` and `NavigationMenu.Link` can be passed an `active` prop for instances when you want to highlight the currently active route. See below for examples using client side routing with the `NavigationMenu.Link` component. The same method can be applied to `NavigationMenu.Dropdown` and `NavigationMenu.DropdownItem`.
 
 #### Example using React Router
 
@@ -32,9 +38,9 @@ const Link = ({ href, ...props }) => {
   const isActive = path === href
 
   return (
-    <Nav.Link active={isActive} {...props}>
+    <NavigationMenu.Link active={isActive} {...props}>
       Introduction
-    </Nav.Link>
+    </NavigationMenu.Link>
   )
 }
 ```
@@ -47,46 +53,59 @@ const Link = ({ href, ...props }) => {
   const isActive = router.asPath === href
 
   return (
-    <Nav.Link active={isActive} {...props}>
+    <NavigationMenu.Link active={isActive} {...props}>
       Introduction
-    </Nav.Link>
+    </NavigationMenu.Link>
   )
 }
 ```
 
 ## Changing the layout of the dropdown content
 
-By default, dropdown items inside of `Nav.DropdownContent` will stack, if you want to change the way items are displayed, you can add custom styling to `Nav.DropdownContent`.
+By default, dropdown items inside of `NavigationMenu.DropdownContent` will stack, if you want to change the way items are displayed, you can add custom styling to `NavigationMenu.DropdownContent`.
 
-`Nav.DropdownItem` can render whatever you choose, in the below example `ContentGridItem` is used to render an icon, title and subtitle.
+`NavigationMenu.DropdownItem` can render whatever you choose, in the below example `ContentGridItem` is used to render an icon, title and subtitle.
 
-`Nav.DropdownContent` styling has also been changed to allow a grid layout.
+`NavigationMenu.DropdownContent` styling has also been changed to allow a grid layout.
 
 ```tsx preview
-const LinkTitle = styled('div', {
-  color: 'inherit',
-  py: '$1',
-  fontWeight: 600
-})
+const LinkTitle = () => {
+  return (
+    <Box css={{ all: 'unset', color: 'inherit', py: '$1', fontWeight: 600 }} />
+  )
+}
 
-const LinkText = styled('p', {
-  color: 'inherit',
-  lineHeight: 1.5,
-  mt: '$1',
-  fontWeight: 400,
-  fontSize: 14
-})
+const LinkText = () => {
+  return (
+    <Text
+      css={{
+        all: 'unset',
+        color: 'inherit',
+        lineHeight: 1.5,
+        mt: '$1',
+        fontWeight: 400,
+        fontSize: 14
+      }}
+    />
+  )
+}
 
-const DropdownContentGrid = styled('Nav.DropdownContent', {
-  display: 'grid',
-  gridAutoFlow: 'column',
-  width: 600,
-  gridTemplateRows: 'repeat(2, 1fr)'
-})
+const DropdownContentGrid = () => {
+  return (
+    <NavigationMenu.DropdownContent
+      style={{
+        display: 'grid',
+        gridAutoFlow: 'column',
+        width: 600,
+        gridTemplateRows: 'repeat(2, 1fr)'
+      }}
+    />
+  )
+}
 
 const ContentGridItem = ({ href, title, children, icon, ...props }) => {
   return (
-    <Nav.DropdownItem
+    <NavigationMenu.DropdownItem
       href={href}
       css={{ display: 'flex', gap: '$3' }}
       {...props}
@@ -98,13 +117,13 @@ const ContentGridItem = ({ href, title, children, icon, ...props }) => {
         <LinkTitle>{title}</LinkTitle>
         {children && <LinkText>{children}</LinkText>}
       </Box>
-    </Nav.DropdownItem>
+    </NavigationMenu.DropdownItem>
   )
 }
 
-;<Nav>
-  <Nav.Link href="/introduction">Introduction</Nav.Link>
-  <Nav.Dropdown title="Components">
+;<NavigationMenu>
+  <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
+  <NavigationMenu.Dropdown title="Components">
     <DropdownContentGrid>
       <ContentListItem
         href="/docs/primitives/overview/introduction"
@@ -145,6 +164,6 @@ const ContentGridItem = ({ href, title, children, icon, ...props }) => {
         Tested in a range of browsers and assistive technologies.
       </ContentListItem>
     </DropdownContentGrid>
-  </Nav.Dropdown>
-</Nav>
+  </NavigationMenu.Dropdown>
+</NavigationMenu>
 ```
