@@ -2,15 +2,14 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { CSS, keyframes, styled } from '~/stitches'
-
+import { fadeOut } from '~/utilities/style/keyframe-animations'
+import { NavigationMenuContext } from './NavigationMenuContext'
+import { NavigationMenuDropdown } from './NavigationMenuDropdown'
 import {
   NavigationMenuDropdownContent,
   NavigationMenuDropdownItem,
   NavigationMenuLink
 } from './NavigationMenuItem'
-
-import { NavigationMenuDropdown } from './NavigationMenuDropdown'
-import { NavigationMenuContext } from './NavigationMenuContext'
 
 type NavigationMenuSubComponents = {
   Link: typeof NavigationMenuLink
@@ -19,14 +18,9 @@ type NavigationMenuSubComponents = {
   DropdownItem: typeof NavigationMenuDropdownItem
 }
 
-const fadeIn = keyframes({
-  from: { opacity: 0 },
-  to: { opacity: 1 }
-})
-
-const fadeOut = keyframes({
-  from: { opacity: 1 },
-  to: { opacity: 0 }
+const delayedFadeIn = keyframes({
+  '0%, 75%': { opacity: 0 },
+  '100%': { opacity: 1 }
 })
 
 const StyledMenu = styled(NavigationMenuPrimitive.Root, {
@@ -57,12 +51,14 @@ type NavigationMenuProps = {
   css?: CSS
 }
 
-const NavigationMenu: React.FC<NavigationMenuProps> &
+export const NavigationMenu: React.FC<NavigationMenuProps> &
   NavigationMenuSubComponents = ({ children, css }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
   const listRef = React.useRef<HTMLUListElement>(null)
+  const timer = React.useRef<NodeJS.Timer | null>(null)
+  const fadeDuration = 200
 
   React.useLayoutEffect(() => {
     if (listRef.current) {
@@ -70,10 +66,20 @@ const NavigationMenu: React.FC<NavigationMenuProps> &
     }
   }, [])
 
+  React.useEffect(() => {
+    return () => {
+      if (timer.current !== null) {
+        clearTimeout(timer.current)
+      }
+    }
+  }, [])
+
   // https://github.com/radix-ui/primitives/issues/1462
   const onNodeUpdate = (trigger: HTMLButtonElement, itemValue: string) => {
-    if (!activeItem) {
-      setOffset(null)
+    if (activeItem === '') {
+      // Delay transitioning back to initial position
+      // to allow enough time for fadeOut animation to complete
+      setTimeout(() => setOffset(null), fadeDuration)
       return trigger
     }
 
@@ -93,25 +99,18 @@ const NavigationMenu: React.FC<NavigationMenuProps> &
   }
 
   return (
-    <NavigationMenuContext.Provider
-      value={{
-        activeItem,
-        setActiveItem,
-        onNodeUpdate
-      }}
-    >
+    <NavigationMenuContext.Provider value={{ onNodeUpdate }}>
       <StyledMenu onValueChange={setActiveItem} css={css}>
         <StyledList ref={listRef}>{children}</StyledList>
         <ViewportPosition>
           <StyledViewport
             css={{
-              // Avoid transitioning from initial position when first opening
-              display: !offset ? 'none' : undefined,
-              transform: `translateX(${offset}px)`,
-              transition: 'all 0.3s ease',
-              '&[data-state="open"]': { animation: `${fadeIn} 0.15s ease` },
+              transform: `translateX(${offset || 0}px)`,
+              '&[data-state="open"]': {
+                animation: `${delayedFadeIn} ${fadeDuration}ms ease`
+              },
               '&[data-state="closed"]': {
-                animation: `${fadeOut} 0.15s ease`
+                animation: `${fadeOut} ${fadeDuration}ms ease-out`
               }
             }}
           />
@@ -127,5 +126,3 @@ NavigationMenu.DropdownContent = NavigationMenuDropdownContent
 NavigationMenu.DropdownItem = NavigationMenuDropdownItem
 
 NavigationMenu.displayName = 'NavigationMenu'
-
-export { NavigationMenu }

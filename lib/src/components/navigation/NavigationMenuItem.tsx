@@ -80,7 +80,7 @@ const StyledLink = styled(PrimitiveNavigationMenu.Link, itemStyles, {
   }
 })
 
-const NavigationMenuDropdownTrigger = React.forwardRef<
+export const NavigationMenuDropdownTrigger = React.forwardRef<
   HTMLButtonElement,
   React.PropsWithChildren<{ active?: boolean }>
 >(({ children, active, ...props }, forwardedRef) => {
@@ -101,7 +101,7 @@ const NavigationMenuDropdownTrigger = React.forwardRef<
   )
 })
 
-const NavigationMenuDropdownContent = styled('ul', {})
+export const NavigationMenuDropdownContent = styled('ul', {})
 const ListItem = styled('li', {})
 const DisabledButton = styled('button', { ...itemStyles, ...disabledStyles })
 
@@ -113,7 +113,7 @@ type NavigationMenuLinkProps = {
   css?: CSS
 }
 
-const NavigationMenuLink = React.forwardRef<
+export const NavigationMenuLink = React.forwardRef<
   HTMLAnchorElement,
   React.PropsWithChildren<NavigationMenuLinkProps>
 >(
@@ -135,8 +135,8 @@ const NavigationMenuLink = React.forwardRef<
           href={href}
           ref={forwardedRef}
           elementType={variant}
-          {...props}
           css={css}
+          {...props}
         >
           {children}
         </StyledLink>
@@ -145,7 +145,7 @@ const NavigationMenuLink = React.forwardRef<
   }
 )
 
-const NavigationMenuDropdownItem = React.forwardRef<
+export const NavigationMenuDropdownItem = React.forwardRef<
   HTMLAnchorElement,
   React.PropsWithChildren<NavigationMenuLinkProps>
 >((props, forwardedRef) => {
@@ -153,10 +153,3 @@ const NavigationMenuDropdownItem = React.forwardRef<
     <NavigationMenuLink ref={forwardedRef} variant="dropdownItem" {...props} />
   )
 })
-
-export {
-  NavigationMenuDropdownTrigger,
-  NavigationMenuLink,
-  NavigationMenuDropdownContent,
-  NavigationMenuDropdownItem
-}
