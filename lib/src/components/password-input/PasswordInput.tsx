@@ -20,6 +20,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
       css,
       hidePasswordText = 'Hide password',
       showPasswordText = 'Show password',
+      size = 'md',
       ...restProps
     },
     ref
@@ -32,6 +33,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
       <Box css={{ position: 'relative', ...css } as CSS}>
         <Input
           {...restProps}
+          size={size}
           type={isPasswordVisible ? 'text' : 'password'}
           ref={ref}
           css={{ pr: '$sizes$2' }}
@@ -43,9 +45,9 @@ export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
           label={isPasswordVisible ? hidePasswordText : showPasswordText}
           onClick={togglePasswordVisibility}
           onMouseDown={(e) => e.preventDefault()} // prevent focus being lost from password input
-          size="lg"
+          size={size}
         >
-          <Icon is={isPasswordVisible ? Eye : EyeCrossed} css={{ size: 20 }} />
+          <Icon is={isPasswordVisible ? Eye : EyeCrossed} />
         </ActionIcon>
       </Box>
     )

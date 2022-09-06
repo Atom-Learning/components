@@ -28,15 +28,15 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-md {
+  .c-fDzwZw-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
   }
 }
 
@@ -64,7 +64,7 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv"
     type="button"
   >
     <svg />

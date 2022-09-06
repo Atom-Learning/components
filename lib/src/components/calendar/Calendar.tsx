@@ -127,7 +127,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         <ActionIcon
           label={labels[showYears ? 'previousYear' : 'previous']}
           theme="neutral"
-          size="lg"
+          size="md"
           {...(!showYears && getBackProps({ calendars }))}
           {...(showYears && {
             onClick: () => setCurrentYear(currentYear - 16)
@@ -139,7 +139,7 @@ export const Calendar: React.FC<CalendarProps> = ({
         <ActionIcon
           label={labels[showYears ? 'nextYear' : 'next']}
           theme="neutral"
-          size="lg"
+          size="md"
           {...(!showYears && getForwardProps({ calendars }))}
           {...(showYears && {
             onClick: () => setCurrentYear(currentYear + 16)
