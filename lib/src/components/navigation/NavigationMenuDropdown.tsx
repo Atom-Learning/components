@@ -20,7 +20,7 @@ type NavigationMenuDropdownProps = {
   active?: boolean
 } & React.HTMLProps<HTMLButtonElement>
 
-const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
+export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   children,
   title,
   active,
@@ -41,5 +41,3 @@ const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
     </NavigationMenuPrimitive.Item>
   )
 }
-
-export { NavigationMenuDropdown }

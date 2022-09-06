@@ -131,32 +131,16 @@ exports[`Nav component renders 1`] = `
     }
 }
 
-  .c-PJLV-ijNcvSj-css {
-    display: none;
-    transform: translateX(undefinedpx);
-    transition: all 0.3s ease;
+  .c-PJLV-ibIQANC-css {
+    transform: translateX(0px);
   }
 
-  .c-PJLV-ijNcvSj-css[data-state="open"] {
-    animation: k-feVUdh 0.15s ease;
+  .c-PJLV-ibIQANC-css[data-state="open"] {
+    animation: k-jjzxee 200ms ease;
   }
 
-  .c-PJLV-ijNcvSj-css[data-state="closed"] {
-    animation: k-kJITOZ 0.15s ease;
-  }
-
-  .c-PJLV-ifwUrEa-css {
-    display: none;
-    transform: translateX(nullpx);
-    transition: all 0.3s ease;
-  }
-
-  .c-PJLV-ifwUrEa-css[data-state="open"] {
-    animation: k-feVUdh 0.15s ease;
-  }
-
-  .c-PJLV-ifwUrEa-css[data-state="closed"] {
-    animation: k-kJITOZ 0.15s ease;
+  .c-PJLV-ibIQANC-css[data-state="closed"] {
+    animation: k-bHbNKp 200ms ease-out;
   }
 }
 
