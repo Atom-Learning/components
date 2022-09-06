@@ -3,6 +3,7 @@ import React from 'react'
 
 import { CSS, keyframes, styled } from '~/stitches'
 import { fadeOut } from '~/utilities/style/keyframe-animations'
+
 import { NavigationMenuContext } from './NavigationMenuContext'
 import { NavigationMenuDropdown } from './NavigationMenuDropdown'
 import {
@@ -19,7 +20,7 @@ type NavigationMenuSubComponents = {
 }
 
 const delayedFadeIn = keyframes({
-  '0%, 75%': { opacity: 0 },
+  '0%, 50%': { opacity: 0 },
   '100%': { opacity: 1 }
 })
 
@@ -57,7 +58,6 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
   const listRef = React.useRef<HTMLUListElement>(null)
-  const timer = React.useRef<NodeJS.Timer | null>(null)
   const fadeDuration = 200
 
   React.useLayoutEffect(() => {
@@ -67,22 +67,23 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
   }, [])
 
   React.useEffect(() => {
+    let timer: NodeJS.Timer
+
+    // Delay transitioning back to initial position
+    // to allow enough time for fadeOut animation to complete
+    if (activeItem === '') {
+      timer = setTimeout(() => setOffset(null), fadeDuration)
+    }
+
     return () => {
-      if (timer.current !== null) {
-        clearTimeout(timer.current)
+      if (timer !== null) {
+        clearTimeout(timer)
       }
     }
-  }, [])
+  }, [activeItem])
 
   // https://github.com/radix-ui/primitives/issues/1462
   const onNodeUpdate = (trigger: HTMLButtonElement, itemValue: string) => {
-    if (activeItem === '') {
-      // Delay transitioning back to initial position
-      // to allow enough time for fadeOut animation to complete
-      setTimeout(() => setOffset(null), fadeDuration)
-      return trigger
-    }
-
     if (trigger && listWidth && activeItem === itemValue) {
       const listCenter = listWidth / 2
 

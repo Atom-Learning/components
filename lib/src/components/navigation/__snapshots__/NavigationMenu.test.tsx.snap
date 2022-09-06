@@ -131,15 +131,15 @@ exports[`Nav component renders 1`] = `
     }
 }
 
-  .c-PJLV-ibIQANC-css {
+  .c-PJLV-ikEdNcB-css {
     transform: translateX(0px);
   }
 
-  .c-PJLV-ibIQANC-css[data-state="open"] {
-    animation: k-jjzxee 200ms ease;
+  .c-PJLV-ikEdNcB-css[data-state="open"] {
+    animation: k-brPFuJ 200ms ease;
   }
 
-  .c-PJLV-ibIQANC-css[data-state="closed"] {
+  .c-PJLV-ikEdNcB-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
   }
 }
