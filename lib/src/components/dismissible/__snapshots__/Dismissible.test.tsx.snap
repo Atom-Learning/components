@@ -23,10 +23,11 @@ exports[`Dismissible component when it is using custom component overrides rende
   >
     A
     <button
+      aria-label="Dismiss 'A'"
       data-cy="custom-trigger"
       type="button"
     >
-      Dismiss
+      x
     </button>
   </div>
 </div>

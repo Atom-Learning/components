@@ -3,15 +3,19 @@ import * as React from 'react'
 
 import { ChipGroup } from '~/components/chip'
 
-export const ChipToggleGroupRoot: React.ForwardRefExoticComponent<React.FC> =
-  React.forwardRef((props, ref) => {
-    return (
-      <ChipGroup
-        ref={ref}
-        as={ToggleGroup.Root}
-        type="multiple"
-        orientation="horizontal"
-        {...props}
-      />
-    )
-  })
+type TChipToggleGroupRootProps = React.ComponentProps<typeof ChipGroup> &
+  React.ComponentProps<typeof ToggleGroup.Root>
+
+export const ChipToggleGroupRoot = React.forwardRef<
+  HTMLDivElement,
+  TChipToggleGroupRootProps
+>((props, ref) => {
+  return (
+    <ChipGroup
+      ref={ref}
+      as={ToggleGroup.Root}
+      orientation="horizontal"
+      {...props}
+    />
+  )
+})

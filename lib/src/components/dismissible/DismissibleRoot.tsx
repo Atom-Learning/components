@@ -60,6 +60,7 @@ const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
   const Component = asChild ? Slot : 'div'
   return <Component {...props} />
 }
+
 export const DismissibleRoot: React.FC<
   IDismissibleGroupItemProps & IDismissibleRootProps
 > = ({ disabled = false, ...rest }) => (

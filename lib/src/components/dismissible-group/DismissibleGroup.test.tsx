@@ -10,7 +10,7 @@ const DismissibleGroupImplementation = () => (
   <DismissibleGroup.Root onDismiss={mockOnDismiss}>
     <DismissibleGroup.Item value="a">
       A
-      <DismissibleGroup.Trigger data-cy="trigger-a" />
+      <DismissibleGroup.Trigger data-cy="trigger-a" aria-label="Dismiss A" />
     </DismissibleGroup.Item>
     <DismissibleGroup.Item value="b">
       B

@@ -6,6 +6,7 @@ exports[`DismissibleGroup component renders 1`] = `
     <div>
       A
       <button
+        aria-label="Dismiss A"
         data-cy="trigger-a"
         type="button"
       >

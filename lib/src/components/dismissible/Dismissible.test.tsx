@@ -18,8 +18,8 @@ const DismissibleImplementationCustomOverrides = () => (
     <div data-cy="custom-root">
       A
       <Dismissible.Trigger asChild>
-        <button type="button" data-cy="custom-trigger">
-          Dismiss
+        <button type="button" data-cy="custom-trigger" aria-label="Dismiss 'A'">
+          x
         </button>
       </Dismissible.Trigger>
     </div>

@@ -79,7 +79,10 @@ const StyledStack = styled('div', {
   }
 })
 
-type StackPropsType = React.ComponentProps<typeof StyledStack> & { css?: CSS }
+type StackPropsType = React.ComponentProps<typeof StyledStack> & {
+  css?: CSS
+  as?: any
+} // (!) `css` and `as` are both props that come from `stitches`. It would be better to figure out and export the appropriate type for them in stitches!
 
 export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
   React.forwardRef(
