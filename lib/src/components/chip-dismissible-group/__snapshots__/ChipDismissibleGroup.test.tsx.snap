@@ -123,15 +123,9 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-elrktp-size-md {
+  .c-fDzwZw-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
-  }
-
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
   }
 
   .c-dbrbZt-cyeZeh-size-sm {
@@ -169,11 +163,6 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-iisACLx-css {
-    height: 16px;
-    width: 16px;
-  }
-
   .c-PJLV-iiepcqn-css {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -195,12 +184,12 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </span>
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -241,13 +230,13 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </span>
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iisACLx-css"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
