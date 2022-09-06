@@ -3,8 +3,8 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 
-import { NavigationMenuDropdownTrigger } from './NavigationMenuItem'
 import { useNavigationMenuContext } from './NavigationMenuContext'
+import { NavigationMenuDropdownTrigger } from './NavigationMenuItem'
 
 const StyledContent = styled(NavigationMenuPrimitive.Content, {
   p: '$3',
@@ -23,7 +23,6 @@ type NavigationMenuDropdownProps = {
 export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   children,
   title,
-  active,
   ...props
 }) => {
   const { onNodeUpdate } = useNavigationMenuContext()
@@ -31,7 +30,6 @@ export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   return (
     <NavigationMenuPrimitive.Item value={title}>
       <NavigationMenuDropdownTrigger
-        active={active}
         {...props}
         ref={(node: HTMLButtonElement) => onNodeUpdate(node, title)}
       >

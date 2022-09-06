@@ -3,6 +3,7 @@ import React from 'react'
 
 import { CSS, keyframes, styled } from '~/stitches'
 import { fadeOut } from '~/utilities/style/keyframe-animations'
+
 import { NavigationMenuContext } from './NavigationMenuContext'
 import { NavigationMenuDropdown } from './NavigationMenuDropdown'
 import {
@@ -51,13 +52,32 @@ type NavigationMenuProps = {
   css?: CSS
 }
 
+const isOutOfViewport = (elem: HTMLElement) => {
+  // Get element's bounding
+  const bounding = elem.getBoundingClientRect()
+
+  // Check if it's out of the viewport on each side
+  const out: any = {}
+  out.top = bounding.top < 0
+  out.left = bounding.left < 0
+  out.bottom =
+    bounding.bottom >
+    (window.innerHeight || document.documentElement.clientHeight)
+  out.right =
+    bounding.right > (window.innerWidth || document.documentElement.clientWidth)
+  out.any = out.top || out.left || out.bottom || out.right
+  out.all = out.top && out.left && out.bottom && out.right
+
+  return out
+}
+
 export const NavigationMenu: React.FC<NavigationMenuProps> &
   NavigationMenuSubComponents = ({ children, css }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
   const listRef = React.useRef<HTMLUListElement>(null)
-  const timer = React.useRef<NodeJS.Timer | null>(null)
+  const viewportRef = React.useRef<HTMLDivElement | null>(null)
   const fadeDuration = 200
 
   React.useLayoutEffect(() => {
@@ -67,21 +87,30 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
   }, [])
 
   React.useEffect(() => {
+    let timer: NodeJS.Timer
+
+    if (activeItem === '') {
+      timer = setTimeout(() => setOffset(null), fadeDuration)
+    }
+
     return () => {
-      if (timer.current !== null) {
-        clearTimeout(timer.current)
+      if (timer !== null) {
+        clearTimeout(timer)
       }
     }
-  }, [])
+  }, [activeItem])
 
   // https://github.com/radix-ui/primitives/issues/1462
   const onNodeUpdate = (trigger: HTMLButtonElement, itemValue: string) => {
-    if (activeItem === '') {
-      // Delay transitioning back to initial position
-      // to allow enough time for fadeOut animation to complete
-      setTimeout(() => setOffset(null), fadeDuration)
+    if (viewportRef.current) {
+      const isOut = isOutOfViewport(viewportRef.current)
+      const pos = isOut.right ? 'right' : isOut.left ? 'left' : ''
+      viewportRef.current.style.position = 'absolute'
+      viewportRef.current.style[pos] = `0px`
       return trigger
     }
+
+    console.log({ listWidth })
 
     if (trigger && listWidth && activeItem === itemValue) {
       const listCenter = listWidth / 2
@@ -104,6 +133,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
         <StyledList ref={listRef}>{children}</StyledList>
         <ViewportPosition>
           <StyledViewport
+            ref={viewportRef}
             css={{
               transform: `translateX(${offset || 0}px)`,
               '&[data-state="open"]': {

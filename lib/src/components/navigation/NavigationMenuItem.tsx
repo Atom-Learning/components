@@ -1,9 +1,10 @@
-import React from 'react'
 import { ChevronDown } from '@atom-learning/icons'
-import { styled } from '~/stitches'
+import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
+import React from 'react'
+
+import { CSS, styled, theme } from '~/stitches'
+
 import { Icon } from '../icon'
-import * as PrimitiveNavigationMenu from '@radix-ui/react-navigation-menu'
-import { CSS, theme } from '~/stitches'
 
 const activeParentItemStyles = {
   fontWeight: 'bold',
@@ -49,7 +50,7 @@ const itemStyles = {
   }
 }
 
-const StyledTrigger = styled(PrimitiveNavigationMenu.Trigger, itemStyles, {
+const StyledTrigger = styled(NavigationMenuPrimitive.Trigger, itemStyles, {
   display: 'flex',
   alignItems: 'center',
   borderRadius: '$1',
@@ -61,7 +62,7 @@ const StyledTrigger = styled(PrimitiveNavigationMenu.Trigger, itemStyles, {
   variants: { active: { true: { ...activeParentItemStyles } } }
 })
 
-const StyledLink = styled(PrimitiveNavigationMenu.Link, itemStyles, {
+const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
   display: 'block',
   textDecoration: 'none',
   lineHeight: 1,
