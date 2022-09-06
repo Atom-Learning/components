@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   Accordion,
   ActionIcon,
@@ -901,6 +900,11 @@ post.
             label="This is a checkbox"
             name="likeCheckboxes"
             description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
+          />
+          <CheckboxField
+            checked="indeterminate"
+            label="This is a checkbox to demonstrate the indeterminate state"
+            name="likeCheckboxes"
           />
           <RadioButtonField
             direction="row"
