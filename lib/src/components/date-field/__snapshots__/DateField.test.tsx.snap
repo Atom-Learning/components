@@ -255,9 +255,9 @@ exports[`DateField component renders a field in error state 1`] = `
     margin-top: var(--space-2);
   }
 
-  .c-fIXJvv-icPxlik-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
-    margin-top: var(--space-0);
+    transform: translateY(var(--space-0));
   }
 }
 
@@ -347,7 +347,7 @@ exports[`DateField component renders a field in error state 1`] = `
           />
         </svg>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-icPxlik-css"
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
         >
           This field is required
         </span>

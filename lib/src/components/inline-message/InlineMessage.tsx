@@ -44,7 +44,11 @@ export const InlineMessage: React.FC<TInlineMessageProps> = ({
         is={INLINE_MESSAGE_ICONS[theme as InlineMessageTheme]}
       />
     )}
-    <Text as="span" size={size} css={{ color: 'inherit', mt: '$0' }}>
+    <Text
+      as="span"
+      size={size}
+      css={{ color: 'inherit', transform: 'translateY($space$0)' }}
+    >
       {children}
     </Text>
   </InlineMessageContainer>

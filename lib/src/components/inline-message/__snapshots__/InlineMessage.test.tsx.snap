@@ -63,9 +63,9 @@ exports[`InlineMessage component renders an inline message 1`] = `
 }
 
 @media  {
-  .c-fIXJvv-icPxlik-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
-    margin-top: var(--space-0);
+    transform: translateY(var(--space-0));
   }
 }
 
@@ -95,7 +95,7 @@ exports[`InlineMessage component renders an inline message 1`] = `
       />
     </svg>
     <span
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-icPxlik-css"
+      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
     >
       This is an Inline Message
     </span>
