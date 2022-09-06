@@ -7,14 +7,14 @@ import { Dismissible } from '.'
 const mockOnDismiss = jest.fn((value) => null)
 
 const DismissibleImplementation = () => (
-  <Dismissible.Root value="a" onDismiss={mockOnDismiss} data-cy="root">
+  <Dismissible value="a" onDismiss={mockOnDismiss} data-cy="root">
     A
     <Dismissible.Trigger data-cy="trigger" />
-  </Dismissible.Root>
+  </Dismissible>
 )
 
 const DismissibleImplementationCustomOverrides = () => (
-  <Dismissible.Root value="a" onDismiss={mockOnDismiss} asChild>
+  <Dismissible value="a" onDismiss={mockOnDismiss} asChild>
     <div data-cy="custom-root">
       A
       <Dismissible.Trigger asChild>
@@ -23,7 +23,7 @@ const DismissibleImplementationCustomOverrides = () => (
         </button>
       </Dismissible.Trigger>
     </div>
-  </Dismissible.Root>
+  </Dismissible>
 )
 
 describe('Dismissible component', () => {

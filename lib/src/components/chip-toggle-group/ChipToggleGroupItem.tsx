@@ -12,7 +12,7 @@ const StyledChipToggleIcon = styled(Icon, {
   display: 'none'
 })
 
-const StyledChipToggleGroupItem = styled(Chip.Root, {
+const StyledChipToggleGroupItem = styled(Chip, {
   '&:not([disabled])': {
     cursor: 'pointer',
     '&:hover': {

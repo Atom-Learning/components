@@ -1,7 +1,10 @@
 import { DismissibleRoot } from './DismissibleRoot'
 import { DismissibleTrigger } from './DismissibleTrigger'
 
-export const Dismissible = {
-  Root: DismissibleRoot,
-  Trigger: DismissibleTrigger
+type TDismissible = typeof DismissibleRoot & {
+  Trigger: typeof DismissibleTrigger
 }
+
+export const Dismissible = DismissibleRoot as TDismissible
+Dismissible.Trigger = DismissibleTrigger
+Dismissible.displayName = 'Dismissible'

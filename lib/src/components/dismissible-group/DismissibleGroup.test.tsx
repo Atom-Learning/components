@@ -7,7 +7,7 @@ import { DismissibleGroup } from '.'
 const mockOnDismiss = jest.fn((value) => null)
 
 const DismissibleGroupImplementation = () => (
-  <DismissibleGroup.Root onDismiss={mockOnDismiss}>
+  <DismissibleGroup onDismiss={mockOnDismiss}>
     <DismissibleGroup.Item value="a">
       A
       <DismissibleGroup.Trigger data-cy="trigger-a" aria-label="Dismiss A" />
@@ -23,7 +23,7 @@ const DismissibleGroupImplementation = () => (
     <DismissibleGroup.Item value="d" disabled>
       D
     </DismissibleGroup.Item>
-  </DismissibleGroup.Root>
+  </DismissibleGroup>
 )
 
 describe('DismissibleGroup component', () => {

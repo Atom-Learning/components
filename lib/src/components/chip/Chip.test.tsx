@@ -7,12 +7,12 @@ import { Upload } from '@atom-learning/icons'
 import { Chip } from './Chip'
 
 const ChipImplementation = () => (
-  <Chip.Root>
+  <Chip>
     <Chip.Content>
       <Icon is={Upload} />
       Not the tasty kind
     </Chip.Content>
-  </Chip.Root>
+  </Chip>
 )
 
 describe('Chip component', () => {

@@ -4,18 +4,19 @@ import * as React from 'react'
 import { Icon } from '~/components/icon'
 import { Upload } from '@atom-learning/icons'
 
-
 import { ChipDismissibleGroup } from '.'
 
 const ChipDismissibleGroupImplementation = () => (
-  <ChipDismissibleGroup.Root
+  <ChipDismissibleGroup
     onDismiss={(value) => {
       console.log(`dismiss: ${value}`)
     }}
   >
     <ChipDismissibleGroup.Item value="a">A</ChipDismissibleGroup.Item>
-    <ChipDismissibleGroup.Item value="b" disabled><Icon is={Upload} />B</ChipDismissibleGroup.Item>
-  </ChipDismissibleGroup.Root>
+    <ChipDismissibleGroup.Item value="b" disabled>
+      <Icon is={Upload} />B
+    </ChipDismissibleGroup.Item>
+  </ChipDismissibleGroup>
 )
 
 describe('ChipDismissibleGroup component', () => {

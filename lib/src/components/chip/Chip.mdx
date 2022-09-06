@@ -8,9 +8,9 @@ category: Feedback
 `Chip` itself is a primitive. It has no functional logic in itself, however, it is used to provide common styles for all the `Chip`-based components.
 
 ```tsx preview
-<Chip.Root>
+<Chip>
   <Chip.Content>Not the tasty kind</Chip.Content>
-</Chip.Root>
+</Chip>
 ```
 
 ## Gap
@@ -21,15 +21,15 @@ We provide three options for gap space between chips. `1` will be typically used
 
 ```tsx preview
 <ChipGroup gap={1}>
-  <Chip.Root>
+  <Chip>
     <Chip.Content>A</Chip.Content>
-  </Chip.Root>
-  <Chip.Root>
+  </Chip>
+  <Chip>
     <Chip.Content>B</Chip.Content>
-  </Chip.Root>
-  <Chip.Root>
+  </Chip>
+  <Chip>
     <Chip.Content>C</Chip.Content>
-  </Chip.Root>
+  </Chip>
 </ChipGroup>
 ```
 
@@ -39,28 +39,28 @@ We provide three options for gap space between chips. `1` will be typically used
 
 ```tsx preview
 <ChipGroup align="center">
-  <Chip.Root size="sm">
+  <Chip size="sm">
     <Chip.Content>
       <Icon is={Upload} />A
     </Chip.Content>
-  </Chip.Root>
-  <Chip.Root size="md">
+  </Chip>
+  <Chip size="md">
     <Chip.Content>
       <Icon is={Upload} />B
     </Chip.Content>
-  </Chip.Root>
-  <Chip.Root size="lg">
+  </Chip>
+  <Chip size="lg">
     <Chip.Content>
       <Icon is={Upload} />C
     </Chip.Content>
-  </Chip.Root>
+  </Chip>
 </ChipGroup>
 ```
 
 ## Disabled
 
 ```tsx preview
-<Chip.Root data-disabled>
+<Chip data-disabled>
   <Chip.Content>Not the tasty kind</Chip.Content>
-</Chip.Root>
+</Chip>
 ```

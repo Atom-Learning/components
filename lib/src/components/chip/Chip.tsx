@@ -117,4 +117,10 @@ const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =
     )
   })
 
-export const Chip = { Root: ChipRoot, Content: ChipContent }
+type TChipType = typeof ChipRoot & {
+  Content: typeof ChipContent
+}
+
+export const Chip = ChipRoot as TChipType
+Chip.Content = ChipContent
+Chip.displayName = 'Chip'

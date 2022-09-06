@@ -8,7 +8,7 @@ category: Feedback
 Used as a method for filtering a collection of data. Acts like multiple or single selection. Each chip toggles between selected and unselected. When selected, a checkmark appears as the leading icon.
 
 ```tsx preview
-<ChipToggleGroup.Root
+<ChipToggleGroup
   type="multiple"
   defaultValue={['a', 'b']}
   onValueChange={(value) => {
@@ -23,5 +23,5 @@ Used as a method for filtering a collection of data. Acts like multiple or singl
   <ChipToggleGroup.Item value="d" disabled>
     D
   </ChipToggleGroup.Item>
-</ChipToggleGroup.Root>
+</ChipToggleGroup>
 ```

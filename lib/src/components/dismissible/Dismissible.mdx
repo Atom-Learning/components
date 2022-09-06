@@ -6,7 +6,7 @@ category: Primitives
 ---
 
 ```tsx preview
-<Dismissible.Root
+<Dismissible
   value="a"
   onDismiss={(value) => {
     alert(`dismiss ${value}`)
@@ -14,11 +14,11 @@ category: Primitives
 >
   Press the trigger to dismiss this ->
   <Dismissible.Trigger aria-label="Dismiss 'a'" />
-</Dismissible.Root>
+</Dismissible>
 ```
 
 ```tsx preview
-<Dismissible.Root
+<Dismissible
   value="custom"
   onDismiss={(value) => {
     alert(`dismiss ${value}`)
@@ -41,5 +41,5 @@ category: Primitives
       <button type="button">Custom Dismiss Trigger</button>
     </Dismissible.Trigger>
   </Box>
-</Dismissible.Root>
+</Dismissible>
 ```

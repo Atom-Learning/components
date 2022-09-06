@@ -6,7 +6,7 @@ import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { Close } from '@atom-learning/icons'
 
-const StyledChipDismissibleGroupItem = styled(Chip.Root, { px: '$1' })
+const StyledChipDismissibleGroupItem = styled(Chip, { px: '$1' })
 
 export type TChipDismissibleGroupItem = React.ComponentProps<
   typeof DismissibleGroup.Item

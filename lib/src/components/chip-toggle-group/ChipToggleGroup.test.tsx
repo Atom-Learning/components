@@ -5,7 +5,7 @@ import * as React from 'react'
 import { ChipToggleGroup } from '.'
 
 const ChipToggleGroupImplementation = () => (
-  <ChipToggleGroup.Root
+  <ChipToggleGroup
     type="multiple"
     defaultValue={['a', 'b']}
     onValueChange={(value) => {
@@ -20,7 +20,7 @@ const ChipToggleGroupImplementation = () => (
     <ChipToggleGroup.Item value="d" disabled>
       D
     </ChipToggleGroup.Item>
-  </ChipToggleGroup.Root>
+  </ChipToggleGroup>
 )
 
 describe('ChipToggleGroup component', () => {

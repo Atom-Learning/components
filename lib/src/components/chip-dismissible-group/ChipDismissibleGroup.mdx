@@ -8,7 +8,7 @@ category: Feedback
 Used to visualise groups of dismissible information, in fields such as an entity or different attributes. Can also be used to represent removable filtering criteria.
 
 ```tsx preview
-<ChipDismissibleGroup.Root
+<ChipDismissibleGroup
   onDismiss={(value) => {
     alert(`dismiss ${value}`)
   }}
@@ -25,5 +25,5 @@ Used to visualise groups of dismissible information, in fields such as an entity
     <Icon is={Person} />
     Dismissible
   </ChipDismissibleGroup.Item>
-</ChipDismissibleGroup.Root>
+</ChipDismissibleGroup>
 ```
