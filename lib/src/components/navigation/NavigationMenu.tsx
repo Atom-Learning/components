@@ -45,46 +45,58 @@ const ViewportPosition = styled('div', {
   top: '100%',
   width: '100%',
   display: 'flex',
-  justifyContent: 'center'
+  variants: {
+    alignment: {
+      center: { justifyContent: 'center' },
+      left: { justifyContent: 'left' },
+      right: { justifyContent: 'right' }
+    }
+  }
 })
 
 type NavigationMenuProps = {
   css?: CSS
 }
 
-const isOutOfViewport = (elem: HTMLElement) => {
-  // Get element's bounding
-  const bounding = elem.getBoundingClientRect()
+// const isOutOfViewport = (elem: HTMLElement) => {
+//   // Get element's bounding
+//   const bounding = elem.getBoundingClientRect()
 
-  // Check if it's out of the viewport on each side
-  const out: any = {}
-  out.top = bounding.top < 0
-  out.left = bounding.left < 0
-  out.bottom =
-    bounding.bottom >
-    (window.innerHeight || document.documentElement.clientHeight)
-  out.right =
-    bounding.right > (window.innerWidth || document.documentElement.clientWidth)
-  out.any = out.top || out.left || out.bottom || out.right
-  out.all = out.top && out.left && out.bottom && out.right
+//   // Check if it's out of the viewport on each side
+//   const out: any = {}
+//   out.top = bounding.top < 0
+//   out.left = bounding.left < 0
+//   out.bottom =
+//     bounding.bottom >
+//     (window.innerHeight || document.documentElement.clientHeight)
+//   out.right =
+//     bounding.right > (window.innerWidth || document.documentElement.clientWidth)
+//   out.any = out.top || out.left || out.bottom || out.right
+//   out.all = out.top && out.left && out.bottom && out.right
 
-  return out
-}
+//   return out
+// }
 
 export const NavigationMenu: React.FC<NavigationMenuProps> &
   NavigationMenuSubComponents = ({ children, css }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
+  const [alignment, setAlignment] = React.useState<
+    'left' | 'right' | 'center' | null | undefined
+  >()
+  // const [prevAlignment, setPrevAlignment] = React.useState<
+  //   'left' | 'right' | 'center' | null | undefined
+  // >()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
   const listRef = React.useRef<HTMLUListElement>(null)
   const viewportRef = React.useRef<HTMLDivElement | null>(null)
   const fadeDuration = 200
 
-  React.useLayoutEffect(() => {
-    if (listRef.current) {
-      setListWidth(listRef.current.offsetWidth)
-    }
-  }, [])
+  // React.useLayoutEffect(() => {
+  //   if (listRef.current) {
+  //     setListWidth(listRef.current.offsetWidth)
+  //   }
+  // }, [])
 
   React.useEffect(() => {
     let timer: NodeJS.Timer
@@ -102,26 +114,61 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
 
   // https://github.com/radix-ui/primitives/issues/1462
   const onNodeUpdate = (trigger: HTMLButtonElement, itemValue: string) => {
-    if (viewportRef.current) {
-      const isOut = isOutOfViewport(viewportRef.current)
-      const pos = isOut.right ? 'right' : isOut.left ? 'left' : ''
-      viewportRef.current.style.position = 'absolute'
-      viewportRef.current.style[pos] = `0px`
-      return trigger
-    }
 
-    console.log({ listWidth })
+    if (trigger && activeItem === itemValue) {
+      setTimeout(() => {
+        // DOM reads
+        const triggerBoundingRect = trigger.getBoundingClientRect()
+        const triggerListBoundingRect = listRef.current?.getBoundingClientRect()
+        const dropdownContentWidth = parseInt(
+          String(
+            viewportRef.current?.style.getPropertyValue(
+              '--radix-navigation-menu-viewport-width'
+            )
+          )
+        )
 
-    if (trigger && listWidth && activeItem === itemValue) {
-      const listCenter = listWidth / 2
+        // values
+        const triggerCenter =
+          triggerBoundingRect.left + triggerBoundingRect.width / 2
+        const triggerListLeft = triggerListBoundingRect?.left || 0
+        // const triggerListRight = triggerListBoundingRect?.right || 0
+        const dropdownContentCenter = dropdownContentWidth / 2
 
-      const triggerOffsetRight =
-        listWidth -
-        trigger.offsetLeft -
-        trigger.offsetWidth +
-        trigger.offsetWidth / 2
+        // if (listWidth) {
+          // const listCenter = listWidth / 2
 
-      setOffset(Math.round(listCenter - triggerOffsetRight))
+          // const triggerOffsetRight =
+          //   listWidth -
+          //   trigger.offsetLeft -
+          //   trigger.offsetWidth +
+          //   trigger.offsetWidth / 2
+
+          // setOffset(-dropdownContentCenter + triggerCenter - triggerListLeft)
+        // }
+
+        // if (triggerCenter < dropdownContentCenter) {
+        //   setOffset(0)
+        // } else if (window.innerWidth - triggerCenter < dropdownContentCenter) {
+        //   setOffset(
+        //     window.innerWidth -
+        //       (triggerListLeft + dropdownContentWidth) -
+        //       (window.innerWidth - triggerListRight)
+        //   )
+        // } else {
+        //   setOffset(
+        //     -dropdownContentCenter + triggerCenter - triggerListLeft
+        //   )
+        // }
+        if (triggerCenter < dropdownContentCenter) {
+          setAlignment('left')
+        } else if (window.innerWidth - triggerCenter < dropdownContentCenter) {
+          setAlignment('right')
+        } else {
+          setAlignment('center')
+          // setOffset(-dropdownContentCenter + triggerCenter - triggerListLeft)
+        }
+      }, 0)
     }
 
     return trigger
@@ -131,7 +178,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
     <NavigationMenuContext.Provider value={{ onNodeUpdate }}>
       <StyledMenu onValueChange={setActiveItem} css={css}>
         <StyledList ref={listRef}>{children}</StyledList>
-        <ViewportPosition>
+        <ViewportPosition alignment={alignment}>
           <StyledViewport
             ref={viewportRef}
             css={{
