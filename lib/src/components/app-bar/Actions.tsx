@@ -1,18 +1,19 @@
+import { EllypsisVertical } from '@atom-learning/icons'
 import React from 'react'
-import { ActionIcon as BaseActionIcon } from '../action-icon'
+
+import { CSS, styled } from '~/stitches'
+
+import { ActionIcon } from '../action-icon'
 import { DropdownMenu } from '../dropdown-menu'
 import { Flex } from '../flex'
 import { Icon } from '../icon'
-import { EllypsisVertical } from '@atom-learning/icons'
-
-import { styled, CSS } from '~/stitches'
 
 type ActionsOverflowMenuProps = Omit<
-  React.ComponentProps<typeof BaseActionIcon>,
+  React.ComponentProps<typeof ActionIcon>,
   'children'
 >
 
-const StyledActionIcon = styled(BaseActionIcon, {
+const StyledActionIcon = styled(ActionIcon, {
   borderRadius: '$0',
   '&[data-state="open"]': {
     background: '$primaryLight'
@@ -23,7 +24,7 @@ const StyledActionIcon = styled(BaseActionIcon, {
   '& > svg': { color: '$tonal400' }
 })
 
-const ActionsOverflowMenu: React.FC<ActionsOverflowMenuProps> = ({
+export const ActionsOverflowMenu: React.FC<ActionsOverflowMenuProps> = ({
   children,
   label = 'Click to expand'
 }) => {
@@ -39,7 +40,7 @@ const ActionsOverflowMenu: React.FC<ActionsOverflowMenuProps> = ({
   )
 }
 
-const Actions: React.FC<{ css?: CSS }> = ({ children, css }) => {
+export const Actions: React.FC<{ css?: CSS }> = ({ children, css }) => {
   return (
     <Flex css={{ gap: '$1', alignItems: 'center', ...css }}>{children}</Flex>
   )
@@ -50,7 +51,7 @@ type AppBarActionIconProps = Omit<
   'size' | 'children'
 > & { icon: React.FC<React.SVGProps<SVGSVGElement>>; label: string }
 
-const AppBarActionIcon: React.ForwardRefExoticComponent<AppBarActionIconProps> =
+export const AppBarActionIcon: React.ForwardRefExoticComponent<AppBarActionIconProps> =
   React.forwardRef(({ icon, ...rest }, forwardedRef) => {
     return (
       <StyledActionIcon size="lg" ref={forwardedRef} {...rest}>
@@ -58,5 +59,3 @@ const AppBarActionIcon: React.ForwardRefExoticComponent<AppBarActionIconProps> =
       </StyledActionIcon>
     )
   })
-
-export { Actions, AppBarActionIcon, ActionsOverflowMenu }

@@ -3,7 +3,7 @@ import React from 'react'
 import { CSS, styled } from '~/stitches'
 import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 
-import { Divider as BaseDivider } from '../divider'
+import { Divider } from '../divider'
 import { Flex } from '../flex'
 import { Actions, ActionsOverflowMenu, AppBarActionIcon } from './Actions'
 import { AppBarBrand } from './Brand'
@@ -25,10 +25,7 @@ type AppBarSubComponents = {
 }
 
 const AppBarDivider = () => (
-  <BaseDivider
-    orientation="vertical"
-    css={{ minHeight: 28, bg: '$tonal100' }}
-  />
+  <Divider orientation="vertical" css={{ minHeight: 28, bg: '$tonal100' }} />
 )
 
 const StyledRoot = styled('div', {
