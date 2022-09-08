@@ -42,7 +42,7 @@ export const ActionsOverflowMenu: React.FC<ActionsOverflowMenuProps> = ({
 
 export const Actions: React.FC<{ css?: CSS }> = ({ children, css }) => {
   return (
-    <Flex css={{ gap: '$1', alignItems: 'center', ...css }}>{children}</Flex>
+    <Flex css={{ gap: '$2', alignItems: 'center', ...css }}>{children}</Flex>
   )
 }
 
@@ -54,7 +54,7 @@ type AppBarActionIconProps = Omit<
 export const AppBarActionIcon: React.ForwardRefExoticComponent<AppBarActionIconProps> =
   React.forwardRef(({ icon, ...rest }, forwardedRef) => {
     return (
-      <StyledActionIcon size="lg" ref={forwardedRef} {...rest}>
+      <StyledActionIcon size="md" ref={forwardedRef} {...rest}>
         <Icon is={icon} />
       </StyledActionIcon>
     )

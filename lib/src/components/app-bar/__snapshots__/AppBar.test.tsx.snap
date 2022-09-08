@@ -168,7 +168,7 @@ exports[`AppBar component renders 1`] = `
     top: 12px;
   }
 
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -217,14 +217,9 @@ exports[`AppBar component renders 1`] = `
     }
 }
 
-  .c-dhzjXW-ieVEbtG-css {
-    gap: var(--space-1);
+  .c-dhzjXW-iggyktZ-css {
+    gap: var(--space-2);
     align-items: center;
-  }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
   }
 
   .c-dhzjXW-ibHHKcd-css {
@@ -282,16 +277,16 @@ exports[`AppBar component renders 1`] = `
         </div>
       </div>
       <div
-        class="c-dhzjXW c-dhzjXW-ieVEbtG-css"
+        class="c-dhzjXW c-dhzjXW-iggyktZ-css"
       >
         <button
           aria-label="Search"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -307,12 +302,12 @@ exports[`AppBar component renders 1`] = `
         </button>
         <button
           aria-label="Light/Dark mode"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -332,14 +327,14 @@ exports[`AppBar component renders 1`] = `
           <button
             aria-haspopup="menu"
             aria-label="Click to expand"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-cmVfvW-cv c-dzawqf c-PJLV"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf c-PJLV"
             data-state="closed"
             id="radix-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ihFPSGE-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
