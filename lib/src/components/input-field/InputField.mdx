@@ -1,7 +1,7 @@
 ---
 title: Input Field
 component: InputField
-description: InputField renders a field composed of an Input, a Label and a ValidationError
+description: InputField renders a field composed of an Input, a Label and a InlineMessage
 category: Form fields
 ---
 
@@ -11,7 +11,7 @@ In addition to text `Label` (required) and a validation error (optional), `Input
 `InputField`’s `css` prop will be applied to a containing `Box`—the styling of the individual components inside `InputField` cannot be altered.
 
 Err on the side of using consistent form fields, but if you really need something with different styling then consider composing your own field from the
-`Input`, `Label` and `ValidationError` components.
+`Input`, `Label` and `InlineMessage` components.
 
 ```tsx preview
 <Form>

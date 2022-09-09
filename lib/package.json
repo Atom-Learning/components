@@ -60,7 +60,7 @@
   "devDependencies": {
     "@atom-learning/icons": "1.5.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "1.0.1",
+    "@atom-learning/theme": "1.1.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@radix-ui/react-id": "0.1.5",
@@ -126,6 +126,7 @@
     "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
+    "@atom-learning/theme": "1.1.0",
     "@radix-ui/react-accordion": "0.1.6",
     "@radix-ui/react-alert-dialog": "0.1.7",
     "@radix-ui/react-checkbox": "0.1.5",

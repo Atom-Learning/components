@@ -5,7 +5,7 @@ import { Description as FieldDescription } from '~/components/field-wrapper/Fiel
 import { useFieldError, ValidationOptions } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio-button'
-import { ValidationError } from '~/components/validation-error'
+import { InlineMessage } from '~/components/inline-message'
 import { CSS, styled } from '~/stitches'
 
 import { RadioField } from './RadioField'
@@ -72,7 +72,7 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
           </RadioButtonGroup>
         )}
       />
-      {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
     </Fieldset>
   )
 }

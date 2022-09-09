@@ -4,7 +4,7 @@ import { Box } from '~/components/box'
 import { Checkbox } from '~/components/checkbox'
 import { Label } from '~/components/label'
 import { RadioButton } from '~/components/radio-button'
-import { ValidationError } from '~/components/validation-error'
+import { InlineMessage } from '~/components/inline-message'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
@@ -51,7 +51,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       ))}
       {label}
     </Label>
-    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+    {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
     {description && (
       <Description
         css={{

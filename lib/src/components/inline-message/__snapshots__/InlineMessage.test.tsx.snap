@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ValidationError component renders a validation error 1`] = `
+exports[`InlineMessage component renders an inline message 1`] = `
 @media  {
   .c-dhzjXW {
     display: flex;
@@ -13,6 +13,11 @@ exports[`ValidationError component renders a validation error 1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fzYfTW {
+    flex-shrink: 0;
+    margin-right: var(--space-2);
   }
 
   .c-fIXJvv {
@@ -29,6 +34,10 @@ exports[`ValidationError component renders a validation error 1`] = `
 }
 
 @media  {
+  .c-PJLV-iymbh-theme-error {
+    color: var(--colors-danger);
+  }
+
   .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -54,29 +63,19 @@ exports[`ValidationError component renders a validation error 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-iccdseS-css {
-    color: var(--colors-danger);
-    align-items: flex-start;
-  }
-
-  .c-dbrbZt-ihYlUBO-css {
-    margin-right: var(--space-2);
-    flex-shrink: 0;
-  }
-
-  .c-fIXJvv-ikkBjHS-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
-    transform: translateY(var(--space-1));
+    transform: translateY(var(--space-0));
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-dhzjXW-iccdseS-css"
+    class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihYlUBO-css"
+      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -95,11 +94,11 @@ exports[`ValidationError component renders a validation error 1`] = `
         r="10"
       />
     </svg>
-    <p
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikkBjHS-css"
+    <span
+      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
     >
-      VALIDATION ERROR
-    </p>
+      This is an Inline Message
+    </span>
   </div>
 </div>
 `;

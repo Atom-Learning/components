@@ -60,6 +60,11 @@ exports[`InputField component renders a field in error state 1`] = `
     vertical-align: middle;
   }
 
+  .c-fzYfTW {
+    flex-shrink: 0;
+    margin-right: var(--space-2);
+  }
+
   .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
@@ -105,6 +110,10 @@ exports[`InputField component renders a field in error state 1`] = `
     border: 1px solid var(--colors-danger);
   }
 
+  .c-PJLV-iymbh-theme-error {
+    color: var(--colors-danger);
+  }
+
   .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -142,20 +151,13 @@ exports[`InputField component renders a field in error state 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-idXOPtz-css {
-    color: var(--colors-danger);
-    align-items: flex-start;
+  .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
   }
 
-  .c-dbrbZt-ihYlUBO-css {
-    margin-right: var(--space-2);
-    flex-shrink: 0;
-  }
-
-  .c-fIXJvv-ikkBjHS-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
-    transform: translateY(var(--space-1));
+    transform: translateY(var(--space-0));
   }
 }
 
@@ -190,11 +192,11 @@ exports[`InputField component renders a field in error state 1`] = `
         type="text"
       />
       <div
-        class="c-dhzjXW c-dhzjXW-idXOPtz-css"
+        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihYlUBO-css"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -213,11 +215,11 @@ exports[`InputField component renders a field in error state 1`] = `
             r="10"
           />
         </svg>
-        <p
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikkBjHS-css"
+        <span
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
         >
           This field is required
-        </p>
+        </span>
       </div>
     </div>
     <button
