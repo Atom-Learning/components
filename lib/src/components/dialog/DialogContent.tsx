@@ -110,7 +110,7 @@ export const DialogContent: React.FC<DialogContentProps> = ({
             as={Close}
             css={{ position: 'absolute', right: '$4', top: '$4' }}
             label={closeDialogText}
-            size="lg"
+            size="md"
             theme="neutral"
           >
             <Icon is={CloseIcon} />

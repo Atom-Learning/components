@@ -6,6 +6,7 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
+import { ActionIconSizeMap } from './ActionIcon.constants'
 
 import { Icon } from '../icon/Icon'
 
@@ -82,9 +83,10 @@ const StyledButton = styled('button', {
       solid: {}
     },
     size: {
-      md: { size: '$3' },
-      lg: { size: '$4' },
-      xl: { size: '$5' }
+      xs: { size: '$2' },
+      sm: { size: '$3' },
+      md: { size: '$4' },
+      lg: { size: '$5' }
     },
     isRounded: {
       true: {
@@ -208,7 +210,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       children,
       theme = 'primary',
       appearance = 'simple',
-      size = 'md',
+      size = 'sm',
       label,
       href,
       disabled,
@@ -253,10 +255,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           )
 
           return React.cloneElement(child, {
-            css: {
-              size: ['lg', 'xl'].includes(size as string) ? 20 : 16,
-              ...(child.props.css ? child.props.css : {})
-            }
+            size: ActionIconSizeMap[size as string],
+            css: { ...(child.props.css ? child.props.css : {}) }
           })
         })}
       </StyledButton>

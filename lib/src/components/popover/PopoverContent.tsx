@@ -74,7 +74,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
         as={Close}
         css={{ position: 'absolute', right: '$0', top: '$0' }}
         label={closePopoverText}
-        size="lg"
+        size="md"
         theme="neutral"
       >
         <Icon is={CloseIcon} />
