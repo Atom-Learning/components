@@ -1,4 +1,5 @@
 import { fireEvent, render } from '@testing-library/react'
+import { screen } from '@testing-library/dom'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -7,18 +8,22 @@ import { Dismissible } from '.'
 const mockOnDismiss = jest.fn((value) => null)
 
 const DismissibleImplementation = () => (
-  <Dismissible value="a" onDismiss={mockOnDismiss} data-cy="root">
+  <Dismissible value="a" onDismiss={mockOnDismiss} data-testid="root">
     A
-    <Dismissible.Trigger data-cy="trigger" />
+    <Dismissible.Trigger data-testid="trigger" />
   </Dismissible>
 )
 
 const DismissibleImplementationCustomOverrides = () => (
   <Dismissible value="a" onDismiss={mockOnDismiss} asChild>
-    <div data-cy="custom-root">
+    <div data-testid="custom-root">
       A
       <Dismissible.Trigger asChild>
-        <button type="button" data-cy="custom-trigger" aria-label="Dismiss 'A'">
+        <button
+          type="button"
+          data-testid="custom-trigger"
+          aria-label="Dismiss 'A'"
+        >
           x
         </button>
       </Dismissible.Trigger>
@@ -40,21 +45,21 @@ describe('Dismissible component', () => {
   })
 
   it('is dismissed when the trigger is pressed', async () => {
-    const { container } = render(<DismissibleImplementation />)
+    render(<DismissibleImplementation />)
 
-    const root = container.querySelector('[data-cy="root"]')
+    const root = screen.getByTestId('root')
     expect(root).toBeVisible()
 
-    const trigger = container.querySelector('[data-cy="trigger"]')
+    const trigger = screen.getByTestId('trigger')
     if (trigger) fireEvent.click(trigger)
 
     expect(root).not.toBeVisible()
   })
 
   it('when dismissed calls the onDismiss function with the correct value', async () => {
-    const { container } = render(<DismissibleImplementation />)
+    render(<DismissibleImplementation />)
 
-    const trigger = container.querySelector('[data-cy="trigger"]')
+    const trigger = screen.getByTestId('trigger')
     if (trigger) fireEvent.click(trigger)
 
     expect(mockOnDismiss).toBeCalledWith('a')
@@ -74,12 +79,12 @@ describe('Dismissible component', () => {
     })
 
     it('is dismissed when the trigger is pressed', async () => {
-      const { container } = render(<DismissibleImplementationCustomOverrides />)
+      render(<DismissibleImplementationCustomOverrides />)
 
-      const root = container.querySelector('[data-cy="custom-root"]')
+      const root = screen.getByTestId('custom-root')
       expect(root).toBeVisible()
 
-      const trigger = container.querySelector('[data-cy="custom-trigger"]')
+      const trigger = screen.getByTestId('custom-trigger')
       if (trigger) fireEvent.click(trigger)
 
       expect(root).not.toBeVisible()

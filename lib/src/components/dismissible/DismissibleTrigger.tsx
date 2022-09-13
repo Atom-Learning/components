@@ -21,7 +21,7 @@ export const DismissibleTrigger: React.FC<IDismissibleTriggerProps> = ({
   const context = React.useContext(DismissibleRootContext)
   if (context === undefined) {
     throw new Error(
-      'Dismissible.Trigger should be use withing a Dismissible.Item'
+      'Dismissible.Trigger can only be used within a Dismissible.Item'
     )
   }
 

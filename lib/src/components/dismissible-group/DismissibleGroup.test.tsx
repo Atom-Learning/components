@@ -1,4 +1,5 @@
 import { fireEvent, render } from '@testing-library/react'
+import { screen } from '@testing-library/dom'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -10,15 +11,18 @@ const DismissibleGroupImplementation = () => (
   <DismissibleGroup onDismiss={mockOnDismiss}>
     <DismissibleGroup.Item value="a">
       A
-      <DismissibleGroup.Trigger data-cy="trigger-a" aria-label="Dismiss A" />
+      <DismissibleGroup.Trigger
+        data-testid="trigger-a"
+        aria-label="Dismiss A"
+      />
     </DismissibleGroup.Item>
     <DismissibleGroup.Item value="b">
       B
-      <DismissibleGroup.Trigger data-cy="trigger-b" />
+      <DismissibleGroup.Trigger data-testid="trigger-b" />
     </DismissibleGroup.Item>
     <DismissibleGroup.Item value="c" disabled>
       C
-      <DismissibleGroup.Trigger data-cy="trigger-c" />
+      <DismissibleGroup.Trigger data-testid="trigger-c" />
     </DismissibleGroup.Item>
     <DismissibleGroup.Item value="d" disabled>
       D
@@ -40,20 +44,20 @@ describe('DismissibleGroup component', () => {
   })
 
   it('when an Item is dismissed, it calls the onDismiss function with the correct value', async () => {
-    const { container } = render(<DismissibleGroupImplementation />)
+    render(<DismissibleGroupImplementation />)
 
-    const triggerA = container.querySelector('[data-cy="trigger-a"]')
+    const triggerA = screen.getByTestId('trigger-a')
     if (triggerA) fireEvent.click(triggerA)
 
     expect(mockOnDismiss).toBeCalledWith('a')
 
-    const triggerB = container.querySelector('[data-cy="trigger-b"]')
+    const triggerB = screen.getByTestId('trigger-b')
     if (triggerB) fireEvent.click(triggerB)
 
     expect(mockOnDismiss).toBeCalledWith('b')
 
     // disabled
-    const triggerC = container.querySelector('[data-cy="trigger-c"]')
+    const triggerC = screen.getByTestId('trigger-c')
     if (triggerC) fireEvent.click(triggerC)
 
     expect(mockOnDismiss).not.toBeCalledWith

@@ -3,11 +3,11 @@
 exports[`Dismissible component renders 1`] = `
 <div>
   <div
-    data-cy="root"
+    data-testid="root"
   >
     A
     <button
-      data-cy="trigger"
+      data-testid="trigger"
       type="button"
     >
       Dismiss
@@ -19,12 +19,12 @@ exports[`Dismissible component renders 1`] = `
 exports[`Dismissible component when it is using custom component overrides renders 1`] = `
 <div>
   <div
-    data-cy="custom-root"
+    data-testid="custom-root"
   >
     A
     <button
       aria-label="Dismiss 'A'"
-      data-cy="custom-trigger"
+      data-testid="custom-trigger"
       type="button"
     >
       x

@@ -7,7 +7,7 @@ exports[`DismissibleGroup component renders 1`] = `
       A
       <button
         aria-label="Dismiss A"
-        data-cy="trigger-a"
+        data-testid="trigger-a"
         type="button"
       >
         Dismiss
@@ -16,7 +16,7 @@ exports[`DismissibleGroup component renders 1`] = `
     <div>
       B
       <button
-        data-cy="trigger-b"
+        data-testid="trigger-b"
         type="button"
       >
         Dismiss
@@ -27,7 +27,7 @@ exports[`DismissibleGroup component renders 1`] = `
     >
       C
       <button
-        data-cy="trigger-c"
+        data-testid="trigger-c"
         disabled=""
         type="button"
       >
