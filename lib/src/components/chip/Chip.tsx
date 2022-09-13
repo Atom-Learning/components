@@ -2,9 +2,10 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
-import { StyledIcon } from '~/components/icon'
+import { Icon } from '~/components/icon'
 import { textVariantSize } from '~/components/text'
 import { styled } from '~/stitches'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 const overflowElipsis = {
   overflow: 'hidden',
@@ -23,10 +24,20 @@ export const StyledChipContent = styled('span', {
 })
 
 const toIconSize = { sm: 'sm', md: 'sm', lg: 'md' }
-const ChipContent = ({ children, ...rest }) => {
+export const StyledChipIcon = styled(Icon, {
+  flexShrink: 0
+})
+export const ChipIcon: typeof Icon = ({ ...props }) => {
   const rootContext = React.useContext(ChipRootContext)
   const { size } = rootContext
+  const iconSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+    [size]
+  )
+  return <StyledChipIcon {...props} size={iconSize} />
+}
 
+const ChipContent = ({ children, ...rest }) => {
   const childrenArray = React.Children.toArray(children)
   const isSingleChild = childrenArray.length <= 1
   return (
@@ -39,11 +50,8 @@ const ChipContent = ({ children, ...rest }) => {
                 {child}
               </Box>
             )
-          if (React.isValidElement(child)) {
-            return React.cloneElement(child, {
-              ...child.props,
-              size: toIconSize[size]
-            })
+          if (React.isValidElement(child) && child.type === Icon) {
+            return <ChipIcon {...child.props} />
           }
           return child
         }) as React.ReactElement[]
@@ -66,10 +74,6 @@ export const StyledRoot = styled(Flex, {
     opacity: '0.3',
     pointerEvents: 'none'
   },
-  [`& ${StyledIcon}`]: {
-    flexShrink: 0,
-    color: 'currentColor'
-  },
   variants: {
     size: {
       sm: { height: '$2', ...textVariantSize({ applyCapsize: true }).sm },
@@ -79,23 +83,16 @@ export const StyledRoot = styled(Flex, {
   }
 })
 
-export interface IChipRootContext {
-  size: 'sm' | 'md' | 'lg'
-}
+export type TChipRootContext = React.ComponentProps<typeof StyledRoot>
+export type TChipRootProviderProps = TChipRootContext
 
-export const ChipRootContext = React.createContext<IChipRootContext>({
-  size: 'md'
-})
+export const ChipRootContext = React.createContext<TChipRootContext>({})
 
-export interface IChipRootProviderProps {
-  size: 'sm' | 'md' | 'lg'
-}
-
-export const ChipRootProvider: React.FC<IChipRootProviderProps> = ({
+export const ChipRootProvider: React.FC<TChipRootProviderProps> = ({
   size,
   children
 }) => {
-  const value = React.useMemo<IChipRootContext>(() => ({ size }), [size])
+  const value = React.useMemo<TChipRootContext>(() => ({ size }), [size])
   return (
     <ChipRootContext.Provider value={value}>
       {children}
@@ -103,8 +100,7 @@ export const ChipRootProvider: React.FC<IChipRootProviderProps> = ({
   )
 }
 
-export type TChipRootProps = React.ComponentProps<typeof StyledRoot> & {
-  size?: 'sm' | 'md' | 'lg'
+export type TChipRootProps = TChipRootProviderProps & {
   asWorkaround?: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
 }
 
@@ -119,8 +115,10 @@ const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =
 
 type TChipType = typeof ChipRoot & {
   Content: typeof ChipContent
+  Icon: typeof ChipIcon
 }
 
 export const Chip = ChipRoot as TChipType
 Chip.Content = ChipContent
+Chip.Icon = ChipIcon
 Chip.displayName = 'Chip'

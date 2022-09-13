@@ -54,6 +54,58 @@ We provide three options for gap space between chips. `1` will be typically used
       <Icon is={Upload} />C
     </Chip.Content>
   </Chip>
+  <Chip
+    size={{
+      '@initial': 'lg',
+      '@md': 'md',
+      '@lg': 'sm'
+    }}
+  >
+    <Chip.Content>
+      <Icon is={Upload} />C
+    </Chip.Content>
+  </Chip>
+</ChipGroup>
+```
+
+## Icon
+
+When an `<Icon />` is used as an immediate child of `<Chip.Content />` we automatically transform it to
+a `<Chip.Icon />` which applies the correct styles and sizing to it.
+
+```tsx preview
+<ChipGroup>
+  <Chip>
+    <Chip.Content>
+      <Icon is={Upload} /> Icon
+    </Chip.Content>
+  </Chip>
+  <Chip>
+    <Chip.Content>
+      <Chip.Icon is={Upload} /> Chip.Icon
+    </Chip.Content>
+  </Chip>
+</ChipGroup>
+```
+
+If additional nesting is needed; you can use the `<Chip.Icon />` component directly.
+
+```tsx preview
+<ChipGroup>
+  <Chip>
+    <Chip.Content>
+      <div>
+        <Icon is={Upload} /> Icon (wrong sizing)
+      </div>
+    </Chip.Content>
+  </Chip>
+  <Chip>
+    <Chip.Content>
+      <div>
+        <Chip.Icon is={Upload} /> Chip.Icon
+      </div>
+    </Chip.Content>
+  </Chip>
 </ChipGroup>
 ```
 
