@@ -12,8 +12,14 @@ const ChipDismissibleGroupImplementation = () => (
       console.log(`dismiss: ${value}`)
     }}
   >
-    <ChipDismissibleGroup.Item value="a">A</ChipDismissibleGroup.Item>
-    <ChipDismissibleGroup.Item value="b" disabled>
+    <ChipDismissibleGroup.Item value="a" dismissActionLabel="Dismiss 'A'">
+      A
+    </ChipDismissibleGroup.Item>
+    <ChipDismissibleGroup.Item
+      value="b"
+      dismissActionLabel="Dismiss 'B'"
+      disabled
+    >
       <Icon is={Upload} />B
     </ChipDismissibleGroup.Item>
   </ChipDismissibleGroup>

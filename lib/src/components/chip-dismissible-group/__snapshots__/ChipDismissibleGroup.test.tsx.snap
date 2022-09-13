@@ -14,7 +14,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     display: flex;
   }
 
-  .c-dozMAD {
+  .c-bvauNG {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     border: 1px solid;
@@ -27,14 +27,9 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     background: var(--colors-primaryLight);
   }
 
-  .c-dozMAD[data-disabled] {
+  .c-bvauNG[data-disabled] {
     opacity: 0.3;
     pointer-events: none;
-  }
-
-  .c-dozMAD .c-dbrbZt {
-    flex-shrink: 0;
-    color: currentColor;
   }
 
   .c-eOdeXL {
@@ -80,6 +75,10 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     padding-left: var(--space-1);
     padding-right: var(--space-1);
   }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
 }
 
 @media  {
@@ -105,19 +104,19 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     margin-left: var(--space-2);
   }
 
-  .c-dozMAD-kIEsaE-size-md {
+  .c-bvauNG-kIEsaE-size-md {
     height: var(--sizes-3);
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dozMAD-kIEsaE-size-md::before {
+  .c-bvauNG-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dozMAD-kIEsaE-size-md::after {
+  .c-bvauNG-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -157,10 +156,8 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-iccTSao-css {
+  .c-fDzwZw-ihuXVXM-css {
     color: var(--colors-tonal200);
-    height: var(--sizes-3);
-    width: var(--sizes-3);
   }
 
   .c-PJLV-iiepcqn-css {
@@ -175,7 +172,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
   >
     <div
-      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"
     >
       <span
         class="c-eOdeXL"
@@ -183,8 +180,8 @@ exports[`ChipDismissibleGroup component renders 1`] = `
         A
       </span>
       <button
-        aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        aria-label="Dismiss 'A'"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-ihuXVXM-css"
         type="button"
       >
         <svg
@@ -200,7 +197,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </button>
     </div>
     <div
-      class="c-dhzjXW c-dozMAD c-dozMAD-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"
       data-disabled=""
     >
       <span
@@ -208,7 +205,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cCfVEt"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -229,8 +226,8 @@ exports[`ChipDismissibleGroup component renders 1`] = `
         </span>
       </span>
       <button
-        aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-iccTSao-css"
+        aria-label="Dismiss 'B'"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-fDzwZw-ihuXVXM-css"
         disabled=""
         type="button"
       >

@@ -13,15 +13,19 @@ Used to visualise groups of dismissible information, in fields such as an entity
     alert(`dismiss ${value}`)
   }}
 >
-  <ChipDismissibleGroup.Item value="a">
+  <ChipDismissibleGroup.Item value="a" dismissActionLabel="Dismiss 'A'">
     <Icon is={Person} />
     Dismissible
   </ChipDismissibleGroup.Item>
-  <ChipDismissibleGroup.Item value="b">
+  <ChipDismissibleGroup.Item value="b" dismissActionLabel="Dismiss 'B'">
     <Icon is={Person} />
     Dismissible
   </ChipDismissibleGroup.Item>
-  <ChipDismissibleGroup.Item value="c" disabled>
+  <ChipDismissibleGroup.Item
+    value="c"
+    dismissActionLabel="Dismiss 'C'"
+    disabled
+  >
     <Icon is={Person} />
     Dismissible
   </ChipDismissibleGroup.Item>
