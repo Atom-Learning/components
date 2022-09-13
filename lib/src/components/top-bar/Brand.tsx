@@ -31,7 +31,7 @@ const StyledLink = styled('a', {
   '&:hover, &:focus': { textDecoration: 'none' }
 })
 
-export const AppBarBrand: React.FC<AppBarBrandProps> = ({
+export const TopBarBrand: React.FC<AppBarBrandProps> = ({
   children,
   theme = 'multi',
   href,

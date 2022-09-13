@@ -1,10 +1,12 @@
-import React from 'react'
 import * as CollapsiblePrimitive from '@radix-ui/react-collapsible'
-import { keyframes, styled, theme } from '~/stitches'
-import { Flex } from '../flex'
+import React from 'react'
 import { RemoveScroll } from 'react-remove-scroll'
-import { Box } from '../box'
+
 import { MAX_Z_INDEX } from '~/constants/zIndices'
+import { keyframes, styled, theme } from '~/stitches'
+
+import { Box } from '../box'
+import { Flex } from '../flex'
 import { Hamburger } from './Hamburger'
 
 const open = keyframes({

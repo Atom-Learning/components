@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppBar component renders 1`] = `
+exports[`TopBar component renders 1`] = `
 @media  {
   .c-goJbTI {
     background: white;
@@ -112,46 +112,6 @@ exports[`AppBar component renders 1`] = `
   .c-dzawqf > svg {
     color: var(--colors-tonal400);
   }
-
-  .c-jFCTlP {
-    background: white;
-    border-radius: var(--radii-0);
-    box-shadow: var(--shadows-0);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP {
-      animation-duration: 250ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
 }
 
 @media  {
@@ -216,16 +176,6 @@ exports[`AppBar component renders 1`] = `
       margin-right: var(--space-5);
     }
 }
-
-  .c-dhzjXW-iggyktZ-css {
-    gap: var(--space-2);
-    align-items: center;
-  }
-
-  .c-dhzjXW-ibHHKcd-css {
-    align-items: center;
-    margin-right: calc(var(--space-2)*-1);
-  }
 }
 
 <body>
@@ -276,75 +226,48 @@ exports[`AppBar component renders 1`] = `
           />
         </div>
       </div>
-      <div
-        class="c-dhzjXW c-dhzjXW-iggyktZ-css"
+      <button
+        aria-label="Search"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
+        type="button"
       >
-        <button
-          aria-label="Search"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
-          type="button"
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.412 14.412L20 20"
-            />
-            <circle
-              cx="10"
-              cy="10"
-              r="6"
-            />
-          </svg>
-        </button>
-        <button
-          aria-label="Light/Dark mode"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
-          type="button"
+          <path
+            d="M14.412 14.412L20 20"
+          />
+          <circle
+            cx="10"
+            cy="10"
+            r="6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Light/Dark mode"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M7 14a2 2 0 110-4 2 2 0 010 4z"
-              fill-rule="evenodd"
-            />
-            <path
-              d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
-            />
-          </svg>
-        </button>
-        <div
-          class="c-dhzjXW c-dhzjXW-ibHHKcd-css"
-        >
-          <button
-            aria-haspopup="menu"
-            aria-label="Click to expand"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf c-PJLV"
-            data-state="closed"
-            id="radix-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11 12a1 1 0 112 0 1 1 0 01-2 0zm0-6a1 1 0 112 0 1 1 0 01-2 0zm0 12a1 1 0 112 0 1 1 0 01-2 0z"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
+          <path
+            clip-rule="evenodd"
+            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+            fill-rule="evenodd"
+          />
+          <path
+            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </body>

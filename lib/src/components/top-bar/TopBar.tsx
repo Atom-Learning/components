@@ -5,26 +5,24 @@ import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 
 import { Divider } from '../divider'
 import { Flex } from '../flex'
-import { Actions, ActionsOverflowMenu, AppBarActionIcon } from './Actions'
-import { AppBarBrand } from './Brand'
+import { TopBarActionIcon } from './Actions'
+import { TopBarBrand } from './Brand'
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger
 } from './Collapsible'
 
-type AppBarSubComponents = {
+type TopBarSubComponents = {
   Collapsible: typeof Collapsible
   CollapsibleTrigger: typeof CollapsibleTrigger
   CollapsibleContent: typeof CollapsibleContent
-  Brand: typeof AppBarBrand
-  Actions: typeof Actions
-  ActionIcon: typeof AppBarActionIcon
-  ActionsOverflowMenu: typeof ActionsOverflowMenu
-  Divider: typeof AppBarDivider
+  Brand: typeof TopBarBrand
+  ActionIcon: typeof TopBarActionIcon
+  Divider: typeof TopBarDivider
 }
 
-const AppBarDivider = () => (
+const TopBarDivider = () => (
   <Divider orientation="vertical" css={{ minHeight: 28, bg: '$tonal100' }} />
 )
 
@@ -54,7 +52,7 @@ const StyledRoot = styled('div', {
   }
 })
 
-export const AppBar: React.FC<{ css?: CSS }> & AppBarSubComponents = ({
+export const TopBar: React.FC<{ css?: CSS }> & TopBarSubComponents = ({
   children,
   css
 }) => {
@@ -80,13 +78,11 @@ export const AppBar: React.FC<{ css?: CSS }> & AppBarSubComponents = ({
   )
 }
 
-AppBar.Collapsible = Collapsible
-AppBar.CollapsibleTrigger = CollapsibleTrigger
-AppBar.CollapsibleContent = CollapsibleContent
-AppBar.Brand = AppBarBrand
-AppBar.Actions = Actions
-AppBar.ActionIcon = AppBarActionIcon
-AppBar.ActionsOverflowMenu = ActionsOverflowMenu
-AppBar.Divider = AppBarDivider
+TopBar.Collapsible = Collapsible
+TopBar.CollapsibleTrigger = CollapsibleTrigger
+TopBar.CollapsibleContent = CollapsibleContent
+TopBar.Brand = TopBarBrand
+TopBar.ActionIcon = TopBarActionIcon
+TopBar.Divider = TopBarDivider
 
-AppBar.displayName = 'AppBar'
+TopBar.displayName = 'TopBar'
