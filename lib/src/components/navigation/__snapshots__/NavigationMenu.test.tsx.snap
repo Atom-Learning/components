@@ -2,6 +2,10 @@
 
 exports[`Nav component renders 1`] = `
 @media  {
+  .c-leHWbT {
+    all: unset;
+  }
+
   .c-dVpnxX {
     all: unset;
     position: relative;
@@ -71,9 +75,11 @@ exports[`Nav component renders 1`] = `
     border-radius: var(--radii-1);
   }
 
-  .c-CVLlg {
+  .c-hJXQkI {
+    all: unset;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: var(--space-1);
     list-style: none;
   }
@@ -85,6 +91,10 @@ exports[`Nav component renders 1`] = `
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .c-zowIn {
+    z-index: 1147483646;
   }
 
   .c-eZxssT {
@@ -131,15 +141,15 @@ exports[`Nav component renders 1`] = `
     }
 }
 
-  .c-PJLV-ikEdNcB-css {
+  .c-zowIn-ikEdNcB-css {
     transform: translateX(0px);
   }
 
-  .c-PJLV-ikEdNcB-css[data-state="open"] {
+  .c-zowIn-ikEdNcB-css[data-state="open"] {
     animation: k-brPFuJ 200ms ease;
   }
 
-  .c-PJLV-ikEdNcB-css[data-state="closed"] {
+  .c-zowIn-ikEdNcB-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
   }
 }
@@ -155,12 +165,12 @@ exports[`Nav component renders 1`] = `
       style="position: relative;"
     >
       <ul
-        class="c-CVLlg"
+        class="c-hJXQkI"
         data-orientation="horizontal"
         dir="ltr"
       >
         <li
-          class="c-PJLV"
+          class="c-leHWbT"
         >
           <a
             class="c-dVpnxX c-govTNd c-govTNd-ctVDrw-elementType-link"

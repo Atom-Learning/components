@@ -9,16 +9,18 @@ category: Navigation
 
 ```tsx preview
 <NavigationMenu>
-  <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
+  <NavigationMenu.Link href="/overview/introduction">
+    Introduction
+  </NavigationMenu.Link>
   <NavigationMenu.Dropdown title="Theme">
     <NavigationMenu.DropdownContent>
-      <NavigationMenu.DropdownItem href="/colours">
+      <NavigationMenu.DropdownItem href="/theme/colours">
         Colours
       </NavigationMenu.DropdownItem>
-      <NavigationMenu.DropdownItem href="/effects">
+      <NavigationMenu.DropdownItem href="/theme/effects">
         Effects
       </NavigationMenu.DropdownItem>
-      <NavigationMenu.DropdownItem href="/icons">
+      <NavigationMenu.DropdownItem href="/theme/icons">
         Icons
       </NavigationMenu.DropdownItem>
     </NavigationMenu.DropdownContent>
@@ -63,108 +65,49 @@ const Link = ({ href, ...props }) => {
 ## Changing the layout of the dropdown content
 
 By default, dropdown items inside of `NavigationMenu.DropdownContent` will stack.
+
 If you want to change the way items are displayed, you can add custom styling to `NavigationMenu.DropdownContent`.
 
-`NavigationMenu.DropdownItem` can render whatever you choose, in the below example `ContentGridItem` is used to render an icon, title and subtitle.
-
-`NavigationMenu.DropdownContent` styling has also been changed to allow a grid layout.
+In the below example the styling of `NavigationMenu.DropdownContent` has been changed to allow a grid layout.
 
 ```tsx preview
-const LinkTitle = () => {
-  return (
-    <Box css={{ all: 'unset', color: 'inherit', py: '$1', fontWeight: 600 }} />
-  )
-}
-
-const LinkText = () => {
-  return (
-    <Text
-      css={{
-        all: 'unset',
-        color: 'inherit',
-        lineHeight: 1.5,
-        mt: '$1',
-        fontWeight: 400,
-        fontSize: 14
-      }}
-    />
-  )
-}
-
-const DropdownContentGrid = () => {
-  return (
+<NavigationMenu>
+  <NavigationMenu.Link href="/overview/introduction">
+    Introduction
+  </NavigationMenu.Link>
+  <NavigationMenu.Dropdown title="Theme">
     <NavigationMenu.DropdownContent
-      style={{
+      css={{
         display: 'grid',
+        gap: '$1',
         gridAutoFlow: 'column',
-        width: 600,
+        width: 500,
         gridTemplateRows: 'repeat(2, 1fr)'
       }}
-    />
-  )
-}
-
-const ContentGridItem = ({ href, title, children, icon, ...props }) => {
-  return (
-    <NavigationMenu.DropdownItem
-      href={href}
-      css={{ display: 'flex', gap: '$3' }}
-      {...props}
     >
-      <Box>
-        <Icon is={icon} />
-      </Box>
-      <Box>
-        <LinkTitle>{title}</LinkTitle>
-        {children && <LinkText>{children}</LinkText>}
-      </Box>
-    </NavigationMenu.DropdownItem>
-  )
-}
-
-;<NavigationMenu>
-  <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
-  <NavigationMenu.Dropdown title="Components">
-    <DropdownContentGrid>
-      <ContentListItem
-        href="/docs/primitives/overview/introduction"
-        title="Introduction"
-        icon={Feed}
-      >
-        This is an introduction about the application.
-      </ContentListItem>
-      <ContentListItem
-        href="/docs/primitives/overview/getting-started"
-        title="Getting Started"
-        icon={Bag}
-      >
-        A quick tutorial to get you up and running with Radix Primitives.
-      </ContentListItem>
-
-      <ContentListItem
-        href="/docs/primitives/overview/styling"
-        title="Styling"
-        icon={Camera}
-      >
-        Unstyled and compatible with any styling solution.
-      </ContentListItem>
-
-      <ContentListItem
-        href="/docs/primitives/overview/animation"
-        title="Animation"
-        icon={CalendarEvent}
-      >
-        Use CSS keyframes or any animation library of your choice.
-      </ContentListItem>
-
-      <ContentListItem
-        href="/docs/primitives/overview/accessibility"
-        title="Accessibility"
-        icon={Cart}
-      >
-        Tested in a range of browsers and assistive technologies.
-      </ContentListItem>
-    </DropdownContentGrid>
+      {['colours', 'icons', 'effects', 'typography'].map((item) => (
+        <NavigationMenu.DropdownItem href={`/theme/${item}`}>
+          <Text
+            css={{
+              mb: '0.75rem',
+              textTransform: 'capitalize'
+            }}
+          >
+            {item}
+          </Text>
+          <Text
+            css={{
+              color: 'inherit',
+              lineHeight: 1.5,
+              fontWeight: 400,
+              fontSize: 14
+            }}
+          >
+            This is some example text about {item}
+          </Text>
+        </NavigationMenu.DropdownItem>
+      ))}
+    </NavigationMenu.DropdownContent>
   </NavigationMenu.Dropdown>
 </NavigationMenu>
 ```
