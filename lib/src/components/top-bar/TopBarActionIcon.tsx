@@ -6,10 +6,6 @@ import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 
 const StyledActionIcon = styled(ActionIcon, {
-  borderRadius: '$0',
-  '&[data-state="open"]': {
-    background: '$primaryLight'
-  },
   '&:hover': {
     background: '$primaryLight'
   },

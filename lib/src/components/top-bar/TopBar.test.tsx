@@ -7,14 +7,12 @@ import * as React from 'react'
 import { TopBar } from '.'
 
 const ExampleTopBar = () => (
-  <IdProvider>
-    <TopBar>
-      <TopBar.Brand href="atomlearning.co.uk">Admin Panel</TopBar.Brand>
-      <TopBar.ActionIcon icon={Search} label="Search" />
-      <TopBar.Divider />
-      <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
-    </TopBar>
-  </IdProvider>
+  <TopBar>
+    <TopBar.Brand href="atomlearning.co.uk">Admin Panel</TopBar.Brand>
+    <TopBar.ActionIcon icon={Search} label="Search" />
+    <TopBar.Divider />
+    <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
+  </TopBar>
 )
 
 describe('TopBar component', () => {

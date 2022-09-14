@@ -78,19 +78,11 @@ exports[`TopBar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dzawqf {
-    border-radius: var(--radii-0);
-  }
-
-  .c-dzawqf[data-state="open"] {
+  .c-iwoyoQ:hover {
     background: var(--colors-primaryLight);
   }
 
-  .c-dzawqf:hover {
-    background: var(--colors-primaryLight);
-  }
-
-  .c-dzawqf > svg {
+  .c-iwoyoQ > svg {
     color: var(--colors-tonal400);
   }
 
@@ -193,7 +185,7 @@ exports[`TopBar component renders 1`] = `
       </a>
       <button
         aria-label="Search"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-iwoyoQ"
         type="button"
       >
         <svg
@@ -217,7 +209,7 @@ exports[`TopBar component renders 1`] = `
       />
       <button
         aria-label="Light/Dark mode"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-iwoyoQ"
         type="button"
       >
         <svg

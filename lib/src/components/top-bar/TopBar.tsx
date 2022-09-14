@@ -34,12 +34,6 @@ const StyledRoot = styled('div', {
       true: {
         boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);'
       }
-    },
-    mobileOpen: {
-      true: {
-        height: '100vh',
-        '@md': { height: 'auto' }
-      }
     }
   }
 })
@@ -48,10 +42,10 @@ export const TopBar: React.FC<{ css?: CSS }> & TopBarSubComponents = ({
   children,
   css
 }) => {
-  const { y: hasScrolled } = useScrollPosition()
+  const { y: scrollPositionY } = useScrollPosition()
 
   return (
-    <StyledRoot hasScrolled={!!hasScrolled}>
+    <StyledRoot hasScrolled={!!scrollPositionY}>
       <Flex
         css={{
           alignItems: 'center',
