@@ -14,7 +14,8 @@ const nestedNavigationCategories = {
     'Media',
     'Surfaces',
     'Feedback',
-    'Utilities'
+    'Utilities',
+    'Primitives'
   ]
 }
 

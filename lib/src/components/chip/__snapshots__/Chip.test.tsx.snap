@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bvauNG {
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    border: 1px solid;
+    border-radius: var(--radii-0);
+    align-items: center;
+    font-family: var(--fonts-body);
+    max-width: 100%;
+    border-color: var(--colors-primary);
+    color: var(--colors-primaryMid);
+    background: var(--colors-primaryLight);
+  }
+
+  .c-bvauNG[data-disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .c-eOdeXL {
+    display: inline-flex;
+    align-items: center;
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .c-eOdeXL > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
+}
+
+@media  {
+  .c-bvauNG-kIEsaE-size-md {
+    height: var(--sizes-3);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-bvauNG-kIEsaE-size-md::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-bvauNG-kIEsaE-size-md::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  .c-PJLV-iiepcqn-css {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md"
+  >
+    <span
+      class="c-eOdeXL"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cCfVEt"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 4v13"
+        />
+        <polyline
+          points="7 8 12 3 17 8"
+        />
+        <path
+          d="M20 21H4"
+        />
+      </svg>
+      <span
+        class="c-PJLV c-PJLV-iiepcqn-css"
+      >
+        Not the tasty kind
+      </span>
+    </span>
+  </div>
+</div>
+`;
