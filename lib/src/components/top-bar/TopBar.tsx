@@ -5,18 +5,10 @@ import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 
 import { Divider } from '../divider'
 import { Flex } from '../flex'
-import { TopBarActionIcon } from './Actions'
-import { TopBarBrand } from './Brand'
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger
-} from './Collapsible'
+import { TopBarActionIcon } from './TopBarActionIcon'
+import { TopBarBrand } from './TopBarBrand'
 
 type TopBarSubComponents = {
-  Collapsible: typeof Collapsible
-  CollapsibleTrigger: typeof CollapsibleTrigger
-  CollapsibleContent: typeof CollapsibleContent
   Brand: typeof TopBarBrand
   ActionIcon: typeof TopBarActionIcon
   Divider: typeof TopBarDivider
@@ -78,9 +70,6 @@ export const TopBar: React.FC<{ css?: CSS }> & TopBarSubComponents = ({
   )
 }
 
-TopBar.Collapsible = Collapsible
-TopBar.CollapsibleTrigger = CollapsibleTrigger
-TopBar.CollapsibleContent = CollapsibleContent
 TopBar.Brand = TopBarBrand
 TopBar.ActionIcon = TopBarActionIcon
 TopBar.Divider = TopBarDivider

@@ -19,58 +19,39 @@ exports[`TopBar component renders 1`] = `
     display: flex;
   }
 
-  .c-kNUsOG {
-    height: 14px;
-    width: 16px;
-    transform: rotate(0deg);
-  }
-
-  .c-jdXwhM {
-    width: 100%;
-    height: 2px;
-    background: var(--colors-tonal400);
-    border-radius: var(--radii-1);
-    left: 0;
-    margin-left: auto;
-    position: absolute;
-    transform: rotate(0deg);
-    transition: .325s ease-in-out;
-  }
-
-  .c-gMYLLF {
-    margin-right: var(--space-2);
-    margin-left: calc(var(--space-2)*-1);
-    padding: 0;
-    color: var(--colors-tonal400);
+  .c-cOWktq {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-    height: var(--sizes-4);
-    width: var(--sizes-4);
+    text-decoration: none;
+    color: var(--colors-tonal400);
   }
 
-  .c-diqZsx {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    background: white;
-    top: var(--sizes-6);
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2147483647;
-    position: fixed;
+  .c-cOWktq > p {
+    color: var(--colors-tonal400);
   }
 
-  .c-diqZsx[data-state="open"] {
-    animation: k-faRpTs 0.15s linear;
+  .c-cOWktq:hover,
+  .c-cOWktq:focus {
+    text-decoration: none;
   }
 
-  .c-diqZsx[data-state="closed"] {
-    animation: k-hejlCg 0.15s linear;
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
   }
 
   .c-fDzwZw {
@@ -112,22 +93,14 @@ exports[`TopBar component renders 1`] = `
   .c-dzawqf > svg {
     color: var(--colors-tonal400);
   }
+
+  .c-jpqjUq {
+    border: 0;
+    background: var(--colors-tonal200);
+  }
 }
 
 @media  {
-  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(1) {
-    top: 0px;
-  }
-
-  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(2),
-  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(3) {
-    top: 6px;
-  }
-
-  .c-kNUsOG-bkdlcv-state-closed .c-PJLV:where(.c-jdXwhM):nth-child(4) {
-    top: 12px;
-  }
-
   .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -137,6 +110,12 @@ exports[`TopBar component renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-jpqjUq-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
   }
 }
 
@@ -176,6 +155,21 @@ exports[`TopBar component renders 1`] = `
       margin-right: var(--space-5);
     }
 }
+
+  .c-eWgOGC-icQtbJA-css {
+    margin-right: var(--space-3);
+    margin-bottom: 5px;
+  }
+
+  .c-eWgOGC-icQtbJA-css[src$=".svg"] {
+    height: 24px;
+    width: auto;
+  }
+
+  .c-jpqjUq-ijAuhka-css {
+    min-height: 28px;
+    background: var(--colors-tonal100);
+  }
 }
 
 <body>
@@ -185,47 +179,18 @@ exports[`TopBar component renders 1`] = `
     <div
       class="c-dhzjXW c-dhzjXW-iftiHlK-css"
     >
-      <div
-        class="c-dhzjXW"
+      <a
+        class="c-cOWktq"
+        href="atomlearning.co.uk"
       >
-        <div
-          class="c-PJLV"
-          data-state="closed"
-        >
-          <button
-            aria-controls="radix-0"
-            aria-expanded="false"
-            aria-label="toggle mobile menu"
-            class="c-gMYLLF"
-            data-state="closed"
-            type="button"
-          >
-            <div
-              class="c-kNUsOG c-kNUsOG-bkdlcv-state-closed"
-            >
-              <div
-                class="c-PJLV c-jdXwhM"
-              />
-              <div
-                class="c-PJLV c-jdXwhM"
-              />
-              <div
-                class="c-PJLV c-jdXwhM"
-              />
-              <div
-                class="c-PJLV c-jdXwhM"
-              />
-            </div>
-          </button>
-          <div
-            class="c-diqZsx"
-            data-state="closed"
-            hidden=""
-            id="radix-0"
-            style=""
-          />
-        </div>
-      </div>
+        <img
+          alt="Atom Learning logo"
+          class="c-eWgOGC c-eWgOGC-icQtbJA-css"
+          height="24"
+          src="[object Object]"
+        />
+        Admin Panel
+      </a>
       <button
         aria-label="Search"
         class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"
@@ -247,6 +212,9 @@ exports[`TopBar component renders 1`] = `
           />
         </svg>
       </button>
+      <hr
+        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ijAuhka-css"
+      />
       <button
         aria-label="Light/Dark mode"
         class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-dzawqf"

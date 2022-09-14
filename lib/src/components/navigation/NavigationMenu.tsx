@@ -1,7 +1,7 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
-import { DIALOG_Z_INDEX } from '~/constants/dialog'
+import { MAX_Z_INDEX } from '~/constants/zIndices'
 import { CSS, keyframes, styled } from '~/stitches'
 import { fadeOut } from '~/utilities/style/keyframe-animations'
 
@@ -41,7 +41,7 @@ const StyledList = styled(NavigationMenuPrimitive.List, {
 })
 
 const StyledViewport = styled(NavigationMenuPrimitive.Viewport, {
-  zIndex: DIALOG_Z_INDEX
+  zIndex: MAX_Z_INDEX
 })
 
 const ViewportPosition = styled('div', {

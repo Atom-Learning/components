@@ -43,6 +43,7 @@ export const TopBarBrand: React.FC<AppBarBrandProps> = ({
       <Image
         src={Sources[theme]}
         alt={logoAlt}
+        height={24}
         css={{
           mr: '$3',
           mb: 5,

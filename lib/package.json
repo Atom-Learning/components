@@ -66,6 +66,7 @@
     "@radix-ui/react-id": "0.1.5",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-image": "^2.1.1",
     "@rollup/plugin-node-resolve": "^11.2.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/npm": "^7.1.1",
