@@ -31,7 +31,11 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
 }) => (
   <Box css={css}>
     <Flex
-      css={{ justifyContent: 'space-between', alignItems: 'center', mb: '$3' }}
+      css={{
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        mb: label ? '$3' : '0'
+      }}
     >
       <Label htmlFor={fieldId} required={required}>
         {label}
