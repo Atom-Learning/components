@@ -1,11 +1,13 @@
 ---
 title: DataTable
-component: DataTable
+component: DataTable, DataTable.Provider, DataTable.Body, DataTable.Header, DataTable.Row, DataTable.HeaderCell
 description: Displays tabular data with features such as sorting and pagination
 category: Content
 ---
 
 `DataTable` provides complex features for tables, like sorting and pagination. It's built around the `@tanstack/react-table` library and exposes the `table` state from that library directly. All util functions from the library are also compatible with `DataTable`. It's worth a good read of [`@tanstack/react-table`'s documentation](https://tanstack.com/table/v8/docs/guide/introduction) too, since we won't be repeating much of it here.
+
+`DataTable` and its subcomponents are designed to be very simple to use. This is achieved by abstracting complex and/or boilerplate logic away from the consumer. For example, `DataTable.Pagination` can be dropped inside a `DataTable.Provider` to paginate the table's data without the need to add any configuration on `DataTable.Provider` itself. This is achieved by having `DataTable.Pagination` itself use the `applyPagination` and `setPageSize` methods exposed by `useDataTable` on its first render. This pattern should be replicated wherever practical to maintain the best developer experience possible.
 
 ## Anatomy
 
@@ -13,39 +15,43 @@ category: Content
 
 Other `DataTable` components use `useDataTable` and provide useful default behaviours for different functionality. If they don't meet your requirements, you can build your own implementation by calling `useDataTable` in a new component yourself. If your use case is a common one, please make a PR to add the component to the library. The root `DataTable` component is a re-export of our `Table` component for convenience, since it doesn't need to contain any logic itself.
 
-### Example using defaults
+### Using defaults vs using rolling your own
+
+Here are two ways of building the same `DataTable` from this set of columns and data. The first uses the highest-level components that are bundled into `DataTable` for useful default behaviours with minimal code. The second uses a combination of lower-level `DataTable` components and the underlying `Table` components to achieve the same thing. This demonstrates how you could create more custom table UIs without the need to extend the high-level components.
 
 ```tsx
-<DataTable.Provider
-  columns={columns={(() => {
-    const columnHelper = createColumnHelper<{
-      name: string
-      hobby: string
-    }>()
-    const columns = [
-      columnHelper.accessor('name', {
-        cell: (info) => info.getValue(),
-        footer: (info) => info.column.id
-      }),
-      columnHelper.accessor('hobby', {
-        cell: (info) => info.getValue(),
-        footer: (info) => info.column.id
-      }),
-      columnHelper.display({
-        cell: (info) => 'something',
-        footer: (info) => info.column.id,
-        header: 'Actions'
-      })
-    ]
+const columnHelper = createColumnHelper<{
+  name: string
+  hobby: string
+}>()
 
-    return columns
-    })()}}
-  data={[
-    { name: 'chrissy', hobby: 'bare-knuckle boxing' },
-    { name: 'agatha', hobby: 'crossfit' },
-    { name: 'betty', hobby: 'acting' }
-  ]}
->
+const columns = [
+  columnHelper.accessor('name', {
+    cell: (info) => info.getValue(),
+    footer: (info) => info.column.id
+  }),
+  columnHelper.accessor('hobby', {
+    cell: (info) => info.getValue(),
+    footer: (info) => info.column.id
+  }),
+  columnHelper.display({
+    cell: (info) => 'something',
+    footer: (info) => info.column.id,
+    header: 'Actions'
+  })
+]
+
+const data = [
+  { name: 'chrissy', hobby: 'bare-knuckle boxing' },
+  { name: 'agatha', hobby: 'crossfit' },
+  { name: 'betty', hobby: 'acting' }
+]
+```
+
+#### With Defaults
+
+```tsx
+<DataTable.Provider columns={columns} data={data}>
   <Table>
     <DataTable.Header />
     <DataTable.Body />
@@ -54,77 +60,57 @@ Other `DataTable` components use `useDataTable` and provide useful default behav
 </DataTable.Provider>
 ```
 
-### Example using `useDataTable` directly
+### Rolling your own
+
+Note that `useDataTable` can only be called by a child component of `DataTable.Provider`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
 ```tsx
-<DataTable.Provider
-  columns={columns={(() => {
-    const columnHelper = createColumnHelper<{
-      name: string
-      hobby: string
-    }>()
-    const columns = [
-      columnHelper.accessor('name', {
-        cell: (info) => info.getValue(),
-        footer: (info) => info.column.id
-      }),
-      columnHelper.accessor('hobby', {
-        cell: (info) => info.getValue(),
-        footer: (info) => info.column.id
-      }),
-      columnHelper.display({
-        cell: (info) => 'something',
-        footer: (info) => info.column.id,
-        header: 'Actions'
-      })
-    ]
+<DataTable.Provider columns={columns} data={data}>
+  {() => {
+    const { getHeaderGroups, getRowModel } = useDataTable()
 
-    return columns
-    })()}}
-  data={[
-    { name: 'chrissy', hobby: 'bare-knuckle boxing' },
-    { name: 'agatha', hobby: 'crossfit' },
-    { name: 'betty', hobby: 'acting' }
-  ]}
->
-  {
-    () => {
-      const {getHeaderGroups,getRowModel} = useDataTable()
-
-      return (
-        <Table>
-          <Table.Header>
-            { getHeaderGroups().map((headerGroup) => {
-              return (
-                <Table.Row key={headerGroup.id}>
-                  {headerGroup.headers.map((header) => (
-                    <DataTable.HeaderCell header={header} key={header.id} sortable />
-                  ))}
-                </Table.Row>
-              )
-            }) }
-          </Table.Header>
-          <Table.Body>
-            { getRowModel().rows.map((row) => {
-              return (
-                <Table.Row>
-                  {row.getVisibleCells().map((cell) => (
-                    <Table.Cell key={cell.id}>
-                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </Table.Cell>
-                  ))}
-                </Table.Row>
-              )
-            })}
-          </Table.Body>
-        </Table>
-      )
-    }
-  }
-
+    return (
+      <Table>
+        <Table.Header>
+          {getHeaderGroups().map((headerGroup) => {
+            return (
+              <Table.Row key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <DataTable.HeaderCell
+                    header={header}
+                    key={header.id}
+                    sortable
+                  />
+                ))}
+              </Table.Row>
+            )
+          })}
+        </Table.Header>
+        <Table.Body>
+          {getRowModel().rows.map((row) => {
+            return (
+              <Table.Row>
+                {row.getVisibleCells().map((cell) => (
+                  <Table.Cell key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            )
+          })}
+        </Table.Body>
+      </Table>
+    )
+  }}
 </DataTable.Provider>
 ```
 
-## Drop-in features
+## Features
 
-`DataTable` and its subcomponents are designed to be very simple to use. This is achieved by abstracting complex and/or boilerplate logic away from the consumer. For example, `DataTable.Pagination` can be dropped inside a `DataTable.Provider` to paginate the table's data without the need to add any configuration on `DataTable.Provider` itself. This is achieved by having `DataTable.Pagination` itself use the `applyPagination` and `setPageSize` methods exposed by `useDataTable` on its first render. This pattern should be replicated wherever practical to maintain the best developer experience possible.
+### Sorting
+
+`DataTable.HeaderCell` takes an optional `sortable` prop. If `true` is passed, the cell can be clicked to switch between unsorted (default), ascending order, descending order and back to unsorted.
+
+### Pagination
+
+`DataTable.Pagination` can be passed as a child to `DataTable.Provider` to render the pagination UI and

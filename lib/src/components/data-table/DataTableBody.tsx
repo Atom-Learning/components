@@ -1,8 +1,9 @@
 import * as React from 'react'
+
 import { Table } from '../table'
-import { useDataTable } from './context'
 import { DataTable } from './'
-type DataTableBodyProps = React.ComponentProps<typeof Table.Body> & {}
+import { useDataTable } from './context'
+type DataTableBodyProps = React.ComponentProps<typeof Table.Body>
 export const DataTableBody: React.FC<DataTableBodyProps> = () => {
   const { getRowModel } = useDataTable()
 

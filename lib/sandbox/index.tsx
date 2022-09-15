@@ -2,8 +2,8 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 import { createColumnHelper } from '@tanstack/react-table'
-import { Box, DataTable, Flex, globalCss, Table } from '../src'
-
+import { Box, Flex, globalCss, Table } from '../src'
+import { TableBody } from '../src/components/table/TableBody'
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
 const data = [
@@ -26,46 +26,32 @@ const data = [
   { name: 'tony', hobby: 'crossfit' },
   { name: 'tina', hobby: 'acting' }
 ]
+const columnHelper = createColumnHelper<{ name: string; hobby: string }>()
+const columns = [
+  columnHelper.accessor('name', {
+    cell: (info) => info.getValue(),
+    footer: (info) => info.column.id
+  }),
+  columnHelper.accessor('hobby', {
+    cell: (info) => info.getValue(),
+    footer: (info) => info.column.id
+  }),
+  columnHelper.display({
+    cell: (info) => 'something',
+    footer: (info) => info.column.id,
+    header: 'Actions'
+  })
+]
 
 const App = () => {
-  const columnHelper = createColumnHelper<{ name: string; hobby: string }>()
-  const columns = [
-    columnHelper.accessor('name', {
-      cell: (info) => info.getValue(),
-      footer: (info) => info.column.id
-    }),
-    columnHelper.accessor('hobby', {
-      cell: (info) => info.getValue(),
-      footer: (info) => info.column.id
-    }),
-    columnHelper.display({
-      cell: (info) => 'something',
-      footer: (info) => info.column.id,
-      header: 'Actions'
-    })
-  ]
-
-  console.log(columns[0])
-
   return (
-    <Flex
-      css={{
-        minHeight: '100vh',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column'
-      }}
-    >
-      <Box css={{ width: '500px' }}>
-        <DataTable.Provider columns={columns} data={data}>
-          <Table>
-            <DataTable.Header />
-            {/* <DataTable.Body /> */}
-          </Table>
-          <DataTable.Pagination pageSize={5} />
-        </DataTable.Provider>
-      </Box>
-    </Flex>
+    <Table>
+      <Table.Body>
+        <Table.Row>
+          <Table.Cell>hello</Table.Cell>
+        </Table.Row>
+      </Table.Body>
+    </Table>
   )
 }
 

@@ -61,7 +61,7 @@ export const DataTableProvider = ({
 
 export const useDataTable = <T extends Record<string, unknown>>() => {
   const context = React.useContext(DataTableContext) as DataTableContextType<T>
-
+  console.log('in use datatable')
   if (!context)
     throw new Error(
       'useDataTable can only be called from inside a DataTableProvider'
