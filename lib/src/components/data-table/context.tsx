@@ -30,9 +30,9 @@ export const DataTableProvider = ({
 }: TableProviderProps): JSX.Element => {
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
 
-  const applyPagination = () => {
-    if (!isPaginated) setIsPaginated(true)
-  }
+  const applyPagination = React.useCallback(() => {
+    setIsPaginated(true)
+  }, [])
 
   const getTotalRows = () => data.length
 
@@ -44,14 +44,16 @@ export const DataTableProvider = ({
     getSortedRowModel: getSortedRowModel()
   })
 
+  const value = React.useMemo(() => {
+    return {
+      ...table,
+      applyPagination,
+      getTotalRows
+    }
+  }, [table, applyPagination, getTotalRows])
+
   return (
-    <DataTableContext.Provider
-      value={{
-        ...table,
-        applyPagination,
-        getTotalRows
-      }}
-    >
+    <DataTableContext.Provider value={value}>
       {children}
     </DataTableContext.Provider>
   )

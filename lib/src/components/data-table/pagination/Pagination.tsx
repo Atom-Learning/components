@@ -38,10 +38,11 @@ export const Pagination: React.FC<PaginationProps> = ({
 
   React.useEffect(() => {
     applyPagination()
-    if (getState().pagination.pageSize !== defaultPageSize) {
-      setPageSize(defaultPageSize)
-    }
-  }, [applyPagination, setPageSize])
+  }, [applyPagination])
+
+  React.useEffect(() => {
+    setPageSize(defaultPageSize)
+  }, [setPageSize, defaultPageSize])
 
   const { pageIndex, pageSize } = getState().pagination
   const recordsCountFrom = pageIndex * pageSize + 1

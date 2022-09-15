@@ -1,0 +1,130 @@
+---
+title: DataTable
+component: DataTable
+description: Displays tabular data with features such as sorting and pagination
+category: Content
+---
+
+`DataTable` provides complex features for tables, like sorting and pagination. It's built around the `@tanstack/react-table` library and exposes the `table` state from that library directly. All util functions from the library are also compatible with `DataTable`. It's worth a good read of [`@tanstack/react-table`'s documentation](https://tanstack.com/table/v8/docs/guide/introduction) too, since we won't be repeating much of it here.
+
+## Anatomy
+
+`DataTable.Provider` manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+
+Other `DataTable` components use `useDataTable` and provide useful default behaviours for different functionality. If they don't meet your requirements, you can build your own implementation by calling `useDataTable` in a new component yourself. If your use case is a common one, please make a PR to add the component to the library. The root `DataTable` component is a re-export of our `Table` component for convenience, since it doesn't need to contain any logic itself.
+
+### Example using defaults
+
+```tsx
+<DataTable.Provider
+  columns={columns={(() => {
+    const columnHelper = createColumnHelper<{
+      name: string
+      hobby: string
+    }>()
+    const columns = [
+      columnHelper.accessor('name', {
+        cell: (info) => info.getValue(),
+        footer: (info) => info.column.id
+      }),
+      columnHelper.accessor('hobby', {
+        cell: (info) => info.getValue(),
+        footer: (info) => info.column.id
+      }),
+      columnHelper.display({
+        cell: (info) => 'something',
+        footer: (info) => info.column.id,
+        header: 'Actions'
+      })
+    ]
+
+    return columns
+    })()}}
+  data={[
+    { name: 'chrissy', hobby: 'bare-knuckle boxing' },
+    { name: 'agatha', hobby: 'crossfit' },
+    { name: 'betty', hobby: 'acting' }
+  ]}
+>
+  <Table>
+    <DataTable.Header />
+    <DataTable.Body />
+  </Table>
+  <DataTable.Pagination pageSize={5} />
+</DataTable.Provider>
+```
+
+### Example using `useDataTable` directly
+
+```tsx
+<DataTable.Provider
+  columns={columns={(() => {
+    const columnHelper = createColumnHelper<{
+      name: string
+      hobby: string
+    }>()
+    const columns = [
+      columnHelper.accessor('name', {
+        cell: (info) => info.getValue(),
+        footer: (info) => info.column.id
+      }),
+      columnHelper.accessor('hobby', {
+        cell: (info) => info.getValue(),
+        footer: (info) => info.column.id
+      }),
+      columnHelper.display({
+        cell: (info) => 'something',
+        footer: (info) => info.column.id,
+        header: 'Actions'
+      })
+    ]
+
+    return columns
+    })()}}
+  data={[
+    { name: 'chrissy', hobby: 'bare-knuckle boxing' },
+    { name: 'agatha', hobby: 'crossfit' },
+    { name: 'betty', hobby: 'acting' }
+  ]}
+>
+  {
+    () => {
+      const {getHeaderGroups,getRowModel} = useDataTable()
+
+      return (
+        <Table>
+          <Table.Header>
+            { getHeaderGroups().map((headerGroup) => {
+              return (
+                <Table.Row key={headerGroup.id}>
+                  {headerGroup.headers.map((header) => (
+                    <DataTable.HeaderCell header={header} key={header.id} sortable />
+                  ))}
+                </Table.Row>
+              )
+            }) }
+          </Table.Header>
+          <Table.Body>
+            { getRowModel().rows.map((row) => {
+              return (
+                <Table.Row>
+                  {row.getVisibleCells().map((cell) => (
+                    <Table.Cell key={cell.id}>
+                      {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                    </Table.Cell>
+                  ))}
+                </Table.Row>
+              )
+            })}
+          </Table.Body>
+        </Table>
+      )
+    }
+  }
+
+</DataTable.Provider>
+```
+
+## Drop-in features
+
+`DataTable` and its subcomponents are designed to be very simple to use. This is achieved by abstracting complex and/or boilerplate logic away from the consumer. For example, `DataTable.Pagination` can be dropped inside a `DataTable.Provider` to paginate the table's data without the need to add any configuration on `DataTable.Provider` itself. This is achieved by having `DataTable.Pagination` itself use the `applyPagination` and `setPageSize` methods exposed by `useDataTable` on its first render. This pattern should be replicated wherever practical to maintain the best developer experience possible.

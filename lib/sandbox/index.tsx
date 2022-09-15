@@ -1,61 +1,10 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
-import { createColumnHelper, flexRender } from '@tanstack/react-table'
-import { Box, DataTable, Flex, globalCss, useDataTable, Table } from '../src'
+import { createColumnHelper } from '@tanstack/react-table'
+import { Box, DataTable, Flex, globalCss, Table } from '../src'
 
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
-
-const ExampleTableImplementation = () => {
-  const { getHeaderGroups, getRowModel } = useDataTable()
-
-  return (
-    <>
-      <Table>
-        <Table.Header>
-          {getHeaderGroups().map((headerGroup) => {
-            return (
-              <Table.Row key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <Table.HeaderCell
-                    key={header.id}
-                    onClick={header.column.getToggleSortingHandler()}
-                  >
-                    {header.isPlaceholder
-                      ? null
-                      : flexRender(
-                          header.column.columnDef.header,
-                          header.getContext()
-                        )}
-                  </Table.HeaderCell>
-                ))}
-              </Table.Row>
-            )
-          })}
-        </Table.Header>
-        <Table.Body>
-          {getRowModel().rows.map((row) => {
-            return (
-              <Table.Row key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <Table.Cell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </Table.Cell>
-                ))}
-              </Table.Row>
-            )
-          })}
-        </Table.Body>
-      </Table>
-      <DataTable.Pagination pageSize={5} />
-    </>
-  )
-}
-
-interface Person {
-  name: string
-  hobby: string
-}
 
 const data = [
   { name: 'chrissy', hobby: 'bare-knuckle boxing' },
@@ -79,7 +28,7 @@ const data = [
 ]
 
 const App = () => {
-  const columnHelper = createColumnHelper<Person>()
+  const columnHelper = createColumnHelper<{ name: string; hobby: string }>()
   const columns = [
     columnHelper.accessor('name', {
       cell: (info) => info.getValue(),
@@ -88,8 +37,15 @@ const App = () => {
     columnHelper.accessor('hobby', {
       cell: (info) => info.getValue(),
       footer: (info) => info.column.id
+    }),
+    columnHelper.display({
+      cell: (info) => 'something',
+      footer: (info) => info.column.id,
+      header: 'Actions'
     })
   ]
+
+  console.log(columns[0])
 
   return (
     <Flex
@@ -102,7 +58,11 @@ const App = () => {
     >
       <Box css={{ width: '500px' }}>
         <DataTable.Provider columns={columns} data={data}>
-          <ExampleTableImplementation />
+          <Table>
+            <DataTable.Header />
+            {/* <DataTable.Body /> */}
+          </Table>
+          <DataTable.Pagination pageSize={5} />
         </DataTable.Provider>
       </Box>
     </Flex>
