@@ -4,7 +4,10 @@ import { DataTable } from './index'
 import { Table } from '../table'
 import { useDataTable } from './context'
 
-export const DataTableHeader: React.FC = () => {
+type DataTableProps = {
+  sortable?: boolean
+}
+export const DataTableHeader: React.FC<DataTableProps> = ({ sortable }) => {
   const { getHeaderGroups } = useDataTable()
 
   return (
@@ -13,7 +16,11 @@ export const DataTableHeader: React.FC = () => {
         return (
           <Table.Row key={headerGroup.id}>
             {headerGroup.headers.map((header) => (
-              <DataTable.HeaderCell header={header} key={header.id} sortable />
+              <DataTable.HeaderCell
+                header={header}
+                key={header.id}
+                sortable={sortable}
+              />
             ))}
           </Table.Row>
         )

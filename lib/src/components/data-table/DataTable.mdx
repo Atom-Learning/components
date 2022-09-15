@@ -53,7 +53,7 @@ const data = [
 ```tsx
 <DataTable.Provider columns={columns} data={data}>
   <DataTable>
-    <DataTable.Header />
+    <DataTable.Header sortable />
     <DataTable.Body />
   </DataTable>
   <DataTable.Pagination pageSize={5} />
@@ -74,13 +74,21 @@ Note that `useDataTable` can only be called by a child component of `DataTable.P
         <Table.Header>
           {getHeaderGroups().map((headerGroup) => (
             <Table.Row key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <DataTable.HeaderCell
-                  header={header}
-                  key={header.id}
-                  sortable
-                />
-              ))}
+              {headerGroup.headers.map((header) => {
+                const sort = header.column.getIsSorted()
+                return (
+                  <Table.HeaderCell
+                    onClick={header.column.getToggleSortingHandler()}
+                    {...props}
+                  >
+                    {flexRender(
+                      header.column.columnDef.header,
+                      header.getContext()
+                    )}
+                    {sort && { asc: '^', desc: 'v' }[sort as string]}
+                  </Table.HeaderCell>
+                )
+              })}
             </Table.Row>
           ))}
         </Table.Header>
