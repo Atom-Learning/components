@@ -52,10 +52,10 @@ const data = [
 
 ```tsx
 <DataTable.Provider columns={columns} data={data}>
-  <Table>
+  <DataTable>
     <DataTable.Header />
     <DataTable.Body />
-  </Table>
+  </DataTable>
   <DataTable.Pagination pageSize={5} />
 </DataTable.Provider>
 ```
@@ -72,34 +72,31 @@ Note that `useDataTable` can only be called by a child component of `DataTable.P
     return (
       <Table>
         <Table.Header>
-          {getHeaderGroups().map((headerGroup) => {
-            return (
-              <Table.Row key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <DataTable.HeaderCell
-                    header={header}
-                    key={header.id}
-                    sortable
-                  />
-                ))}
-              </Table.Row>
-            )
-          })}
+          {getHeaderGroups().map((headerGroup) => (
+            <Table.Row key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <DataTable.HeaderCell
+                  header={header}
+                  key={header.id}
+                  sortable
+                />
+              ))}
+            </Table.Row>
+          ))}
         </Table.Header>
         <Table.Body>
-          {getRowModel().rows.map((row) => {
-            return (
-              <Table.Row>
-                {row.getVisibleCells().map((cell) => (
-                  <Table.Cell key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </Table.Cell>
-                ))}
-              </Table.Row>
-            )
-          })}
+          {getRowModel().rows.map((row) => (
+            <Table.Row>
+              {row.getVisibleCells().map((cell) => (
+                <Table.Cell key={cell.id}>
+                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                </Table.Cell>
+              ))}
+            </Table.Row>
+          ))}
         </Table.Body>
       </Table>
+      // Then you could build your own pagination here too I guess? If you really wanted to?
     )
   }}
 </DataTable.Provider>
@@ -113,4 +110,4 @@ Note that `useDataTable` can only be called by a child component of `DataTable.P
 
 ### Pagination
 
-`DataTable.Pagination` can be passed as a child to `DataTable.Provider` to render the pagination UI and
+`DataTable.Pagination` can be passed as a child to `DataTable.Provider` to render the pagination UI and configure the parent `DataTable.Provider` to paginate its data.
