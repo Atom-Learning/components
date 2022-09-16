@@ -4,7 +4,6 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  SortingState,
   Table
 } from '@tanstack/react-table'
 
@@ -19,14 +18,12 @@ type TableProviderProps = {
   columns
   data: Array<Record<string, unknown>>
   children: React.ReactNode
-  sortable?: boolean
 }
 
 export const DataTableProvider = ({
   columns,
   data,
-  children,
-  sortable
+  children
 }: TableProviderProps): JSX.Element => {
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
 

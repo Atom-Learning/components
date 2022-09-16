@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnhancedTable component renders 1`] = `
+@media  {
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-hjAYDb {
+    background: unset;
+  }
+
+  .c-GSaiK {
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-cCZzXk {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-cCZzXk:first-child {
+    font-weight: bold;
+  }
+
+  .c-ciKXky {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-beXZpM {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat, repeat;
+    border: 1px solid var(--colors-tonal300);
+    border-radius: var(--radii-0);
+    color: var(--colors-tonal600);
+    display: block;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    line-height: 1.4;
+    transition: all 75ms ease-out;
+    width: 100%;
+  }
+
+  .c-beXZpM:hover {
+    cursor: pointer;
+  }
+
+  .c-beXZpM:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-beXZpM::-ms-expand {
+    display: none;
+  }
+
+  .c-beXZpM[disabled],
+  .c-beXZpM > option[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jbyCVO {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+}
+
+@media  {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+    height: var(--sizes-4);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fIXJvv-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-beXZpM-cGAtlD-size-sm {
+    background-position: right var(--space-2) top 50%, 0 0;
+    background-size: 18px auto, 100%;
+    font-size: var(--fontSizes-sm);
+    height: var(--sizes-3);
+    padding-left: var(--space-2);
+    padding-right: var(--space-5);
+  }
+
+  .c-fDzwZw-elrktp-size-md {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-fDzwZw-rloUt-isRounded-true {
+    border-radius: var(--radii-round);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-jbyCVO-gWQnqe-size-md {
+    max-width: 250px;
+  }
+}
+
+@media  {
+  .c-fDzwZw-jpgoGt-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-jpgoGt-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-ciKXky-illFBbS-css {
+    margin-top: var(--space-4);
+  }
+
+  .c-fIXJvv-ikXMcew-css {
+    flex-basis: 25%;
+  }
+
+  .c-dhzjXW-icllVcr-css {
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 50%;
+  }
+
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
+  }
+
+  .c-beXZpM-ikubvOQ-css {
+    flex: none;
+    margin-right: var(--space-3);
+  }
+
+  .c-fIXJvv-igbZjeK-css {
+    flex: none;
+  }
+
+  .c-dhzjXW-igFPRFg-css {
+    flex-basis: 25%;
+    justify-content: flex-end;
+  }
+
+  .c-fDzwZw-illEebI-css {
+    margin-right: var(--space-4);
+  }
+
+  .c-dbrbZt-iisACLx-css {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+<div>
+  <table
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round"
+  >
+    <thead
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+    >
+      <tr
+        class="c-hjAYDb"
+      >
+        <th
+          class="c-GSaiK"
+        >
+          name
+        </th>
+        <th
+          class="c-GSaiK"
+        >
+          hobby
+        </th>
+        <th
+          class="c-GSaiK"
+        >
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+    >
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          chrissy
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          agatha
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          betty
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    class="c-ciKXky c-ciKXky-illFBbS-css"
+  >
+    <p
+      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikXMcew-css"
+    >
+      1 - 3 of 3 items
+    </p>
+    <div
+      class="c-dhzjXW c-dhzjXW-icllVcr-css"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      >
+        <select
+          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ikubvOQ-css"
+        >
+          <option
+            value="0"
+          >
+            1
+          </option>
+        </select>
+        <p
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+        >
+          of 1 page
+        </p>
+      </div>
+    </div>
+    <div
+      class="c-dhzjXW c-dhzjXW-igFPRFg-css"
+    >
+      <button
+        aria-label="Previous page"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+        data-state="closed"
+        disabled=""
+        name="Previous page"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iisACLx-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next page"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+        data-state="closed"
+        disabled=""
+        name="Next page"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iisACLx-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
+</div>
+`;

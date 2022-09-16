@@ -27,16 +27,16 @@ const columnHelper = createColumnHelper<{
 
 const columns = [
   columnHelper.accessor('name', {
-    cell: (info) => info.getValue(),
-    footer: (info) => info.column.id
+    cell: (info) => info.getValue()
   }),
   columnHelper.accessor('hobby', {
-    cell: (info) => info.getValue(),
-    footer: (info) => info.column.id
+    cell: (info) => info.getValue()
   }),
+  // Columns created with columnHelper.display won't get be sortable.
+  // They need a header to be set manually since they're not just reading
+  // a property from the row.
   columnHelper.display({
-    cell: (info) => 'something',
-    footer: (info) => info.column.id,
+    cell: (info) => <button>do something</button>,
     header: 'Actions'
   })
 ]
