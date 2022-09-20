@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import { DataTableProvider } from './DataTableContext'
 import { DataTableBody } from './DataTableBody'
+import { DataTableProvider } from './DataTableContext'
 import { DataTableHeader } from './DataTableHeader'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableRow } from './DataTableRow'
+import { DataTableTable } from './DataTableTable'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
@@ -13,6 +14,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
   HeaderCell: typeof DataTableHeaderCell
   Pagination: typeof Pagination
   Row: typeof DataTableRow
+  Table: typeof DataTableTable
 }
 
 // DataTable = Table doesn't work because it overrides
@@ -27,3 +29,4 @@ DataTable.Body = DataTableBody
 DataTable.Header = DataTableHeader
 DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Row = DataTableRow
+DataTable.Table = DataTableTable

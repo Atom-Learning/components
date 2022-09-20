@@ -11,9 +11,9 @@ category: Content
 
 ## Anatomy
 
-`DataTable.Provider` manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+The root `DataTable` component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
 
-Other `DataTable` components use `useDataTable` and provide useful default behaviours for different functionality. If they don't meet your requirements, you can build your own implementation by calling `useDataTable` in a new component yourself. If your use case is a common one, please make a PR to add the component to the library. The root `DataTable` component is a re-export of our `Table` component for convenience, since it doesn't need to contain any logic itself.
+Other `DataTable` components use `useDataTable` and provide useful default behaviours for different functionality. If they don't meet your requirements, you can build your own implementation by calling `useDataTable` in a new component yourself. If your use case is a common one, please make a PR to add the component to the library.
 
 ### Using defaults vs using rolling your own
 
@@ -51,13 +51,13 @@ const data = [
 #### With Defaults
 
 ```tsx
-<DataTable.Provider columns={columns} data={data}>
-  <DataTable>
+<DataTable columns={columns} data={data}>
+  <DataTable.Table>
     <DataTable.Header sortable />
     <DataTable.Body />
-  </DataTable>
+  </DataTable.Table>
   <DataTable.Pagination pageSize={5} />
-</DataTable.Provider>
+</DataTable>
 ```
 
 ### Rolling your own
