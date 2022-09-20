@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EnhancedTable component renders 1`] = `
+exports[`DataTable component renders 1`] = `
 @media  {
   .c-cwQMhQ {
     border-collapse: separate;
@@ -409,6 +409,48 @@ exports[`EnhancedTable component renders 1`] = `
           </button>
         </td>
       </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          denise
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          charlie
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
     </tbody>
   </table>
   <nav
@@ -417,7 +459,7 @@ exports[`EnhancedTable component renders 1`] = `
     <p
       class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikXMcew-css"
     >
-      1 - 3 of 3 items
+      1 - 5 of 18 items
     </p>
     <div
       class="c-dhzjXW c-dhzjXW-icllVcr-css"
@@ -433,11 +475,26 @@ exports[`EnhancedTable component renders 1`] = `
           >
             1
           </option>
+          <option
+            value="1"
+          >
+            2
+          </option>
+          <option
+            value="2"
+          >
+            3
+          </option>
+          <option
+            value="3"
+          >
+            4
+          </option>
         </select>
         <p
           class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
         >
-          of 1 page
+          of 4 pages
         </p>
       </div>
     </div>
@@ -467,7 +524,6 @@ exports[`EnhancedTable component renders 1`] = `
         aria-label="Next page"
         class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
         data-state="closed"
-        disabled=""
         name="Next page"
         type="button"
       >
