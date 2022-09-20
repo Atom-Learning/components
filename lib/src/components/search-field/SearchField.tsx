@@ -7,7 +7,6 @@ import { SearchInput, SearchInputProps } from '~/components/search-input'
 import type { CSS } from '~/stitches'
 
 type SearchFieldProps = SearchInputProps & {
-  css?: CSS
   description?: string
   label: string
   name: string
