@@ -32,6 +32,7 @@ import {
   RadioButtonField,
   RadioCard,
   RadioCardGroup,
+  SearchField,
   SearchInput,
   Select,
   SelectField,
@@ -947,6 +948,30 @@ post.
               label: 'Forgotten your password?'
             }}
             placeholder="Your password"
+          />
+          <SearchField name="searchField" label="Search Field" />
+          <SearchField
+            name="searchField"
+            label="Required Search Field"
+            required
+          />
+          <SearchField
+            name="searchField"
+            label="Search Field with Prompt"
+            prompt={{
+              link: 'https://nowhere.com',
+              label: 'This is the prompt'
+            }}
+          />
+          <SearchField
+            name="searchField"
+            label="Search Field with Description"
+            description="This is the description. The reason we're using prose here is because the most common."
+          />
+          <SearchField
+            name="searchField"
+            label="Disabled Search Field"
+            disabled
           />
           <SearchInput name="password" placeholder="Search" />
           <SelectField name="something" label="Choose your favourite fruit">
