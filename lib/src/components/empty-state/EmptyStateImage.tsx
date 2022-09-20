@@ -5,27 +5,27 @@ export const EmptyStateImage = styled(Image, {
   variants: {
     size: {
       xs: {
-        width: '56px',
-        height: '32px',
+        width: '56px !important',
+        height: '32px !important',
         mb: '$4'
       },
       sm: {
-        size: '84px',
+        size: '84px !important',
         mb: '$4'
       },
       md: {
-        width: '126px',
-        height: '72px',
+        width: '126px !important',
+        height: '72px !important',
         mb: '$4'
       },
       lg: {
-        width: '190px',
-        height: '142px',
+        width: '190px !important',
+        height: '142px !important',
         mb: '$5'
       },
       xl: {
-        width: '285px',
-        height: '213px',
+        width: '285px !important',
+        height: '213px !important',
         mb: '$5'
       }
     }
