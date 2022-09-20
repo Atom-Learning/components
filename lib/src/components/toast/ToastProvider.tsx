@@ -6,16 +6,14 @@ import { styled } from '~/stitches'
 import { Toast, TOAST_WIDTH } from './Toast'
 
 export { default as toast } from 'react-hot-toast'
-
-// maximum limit in modern browsers - 32 bit signed integer
-const TOAST_Z_INDEX = 2147483647
+import { MAX_Z_INDEX } from '~/constants/zIndices'
 
 const Container = styled('div', {
   left: '$2',
   position: 'fixed',
   top: '$2',
   right: '$2',
-  zIndex: TOAST_Z_INDEX,
+  zIndex: MAX_Z_INDEX,
   '@sm': {
     top: '$3',
     right: 'auto',
