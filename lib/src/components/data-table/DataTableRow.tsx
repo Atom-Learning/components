@@ -1,7 +1,7 @@
 import { flexRender, Row } from '@tanstack/react-table'
 import * as React from 'react'
 import { Table } from '../table'
-import { useDataTable } from './context'
+import { useDataTable } from './DataTableContext'
 
 type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>

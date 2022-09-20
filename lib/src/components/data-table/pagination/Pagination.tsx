@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Flex } from '../../flex'
-import { useDataTable } from '../context'
+import { useDataTable } from '../DataTableContext'
 import { Button } from '../../button'
 import { Text } from '../../text'
 import { DirectionButton, GotoPageSelect } from './Buttons'

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Table } from '../table'
 import { DataTable } from './'
-import { useDataTable } from './context'
+import { useDataTable } from './DataTableContext'
 type DataTableBodyProps = Omit<
   React.ComponentProps<typeof Table.Body>,
   'children'

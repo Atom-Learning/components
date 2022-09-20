@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { DataTableProvider } from './context'
+import { DataTableProvider } from './DataTableContext'
 import { DataTableBody } from './DataTableBody'
 import { DataTableHeader } from './DataTableHeader'
 import { DataTableHeaderCell } from './DataTableHeaderCell'

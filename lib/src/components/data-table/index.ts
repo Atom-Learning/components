@@ -1,2 +1,2 @@
-export { useDataTable } from './context'
+export { useDataTable } from './DataTableContext'
 export { DataTable } from './DataTable'
