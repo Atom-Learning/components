@@ -58,15 +58,17 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       onChange,
       ...remainingProps
     },
-    ref: (instance: HTMLInputElement | null) => void
+    ref
   ) => {
-    const [inputElRef] = useCallbackRef()
+    const [inputElRef, setInputElRef] = useCallbackRef()
     const [inputValue, setInputValue] = React.useState<string | number>(
       value || ''
     )
     const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
       value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
     )
+
+    React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
 
     const handleClear = () => {
       const inputEl = inputElRef.current
@@ -117,10 +119,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
     return (
       <Box css={{ position: 'relative', ...css }}>
         <StyledSearchInput
-          ref={(e) => {
-            ref?.(e)
-            inputElRef.current = e
-          }}
+          ref={setInputElRef}
           size={size}
           type="search"
           {...remainingProps}
