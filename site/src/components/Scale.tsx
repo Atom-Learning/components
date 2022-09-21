@@ -23,8 +23,8 @@ const ScaleKey = ({ id }: { id: string }) => (
   </Text>
 )
 
-const ScaleValue = ({ children }) => (
-  <Text css={{ color: '$tonal300', fontSize: '$sm' }}>{children}</Text>
+const ScaleValue: React.FC<{ css?: CSS }> = ({ children, css }) => (
+  <Text css={{ color: '$tonal300', fontSize: '$sm', ...css }}>{children}</Text>
 )
 
 export const Scale: React.FC<ScaleProps> = ({
@@ -63,7 +63,10 @@ export const Scale: React.FC<ScaleProps> = ({
                 </React.Fragment>
               ))
             ) : (
-              <ScaleValue>{value}</ScaleValue>
+              <Flex css={{ flexDirection: 'column' }}>
+                <ScaleValue css={{ mb: '$3' }}>{value}</ScaleValue>
+                <ScaleValue>{`${+(value.split('rem')[0]) * 16}px`}</ScaleValue>
+              </Flex>
             ))}
         </Flex>
         {children(value)}

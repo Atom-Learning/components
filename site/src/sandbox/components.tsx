@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   Accordion,
   ActionIcon,
@@ -18,6 +17,7 @@ import {
   Icon,
   Image,
   InlineFieldWrapper,
+  InlineMessage,
   Input,
   InputField,
   Label,
@@ -48,7 +48,6 @@ import {
   ToastProvider,
   Tooltip,
   useAlert,
-  ValidationError,
   Video
 } from '@atom-learning/components'
 import {
@@ -902,6 +901,11 @@ post.
             name="likeCheckboxes"
             description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
           />
+          <CheckboxField
+            checked="indeterminate"
+            label="This is a checkbox to demonstrate the indeterminate state"
+            name="likeCheckboxes"
+          />
           <RadioButtonField
             direction="row"
             name="pronoun"
@@ -1104,9 +1108,9 @@ post.
               <Button size="sm" type="submit">
                 Click to show validation errors
               </Button>
-              <ValidationError>
+              <InlineMessage>
                 This is a validation error unattached to a form field
-              </ValidationError>
+              </InlineMessage>
 
               <InputField
                 name="input-error"

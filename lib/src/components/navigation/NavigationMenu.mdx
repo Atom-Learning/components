@@ -1,0 +1,113 @@
+---
+title: NavigationMenu
+component: NavigationMenu,NavigationMenu.Link,NavigationMenu.Dropdown,NavigationMenu.DropdownContent,NavigationMenu.DropdownItem
+description: A collection of links for navigating apps.
+category: Navigation
+---
+
+`NavigationMenu` exports many components that combine to form a navigation menu.
+
+```tsx preview
+<NavigationMenu>
+  <NavigationMenu.Link href="/overview/introduction">
+    Introduction
+  </NavigationMenu.Link>
+  <NavigationMenu.Dropdown title="Theme">
+    <NavigationMenu.DropdownContent>
+      <NavigationMenu.DropdownItem href="/theme/colours">
+        Colours
+      </NavigationMenu.DropdownItem>
+      <NavigationMenu.DropdownItem href="/theme/effects">
+        Effects
+      </NavigationMenu.DropdownItem>
+      <NavigationMenu.DropdownItem href="/theme/icons">
+        Icons
+      </NavigationMenu.DropdownItem>
+    </NavigationMenu.DropdownContent>
+  </NavigationMenu.Dropdown>
+</NavigationMenu>
+```
+
+## With client side routing
+
+`NavigationMenu.Dropdown`, `NavigationMenu.DropdownItem` and `NavigationMenu.Link` can be passed an `active` prop for instances when you want to highlight the currently active route. See below for examples using client side routing with the `NavigationMenu.Link` component. The same method can be applied to `NavigationMenu.Dropdown` and `NavigationMenu.DropdownItem`.
+
+#### Example using React Router
+
+```tsx
+const Link = ({ href, ...props }) => {
+  const { pathname } = useLocation()
+  const isActive = path === href
+
+  return (
+    <NavigationMenu.Link active={isActive} {...props}>
+      Introduction
+    </NavigationMenu.Link>
+  )
+}
+```
+
+#### Example using Next JS
+
+```tsx
+const Link = ({ href, ...props }) => {
+  const router = useRouter()
+  const isActive = router.asPath === href
+
+  return (
+    <NavigationMenu.Link active={isActive} {...props}>
+      Introduction
+    </NavigationMenu.Link>
+  )
+}
+```
+
+## Changing the layout of the dropdown content
+
+By default, dropdown items inside of `NavigationMenu.DropdownContent` will stack.
+
+If you want to change the way items are displayed, you can add custom styling to `NavigationMenu.DropdownContent`.
+
+In the below example the styling of `NavigationMenu.DropdownContent` has been changed to allow a grid layout.
+
+```tsx preview
+<NavigationMenu>
+  <NavigationMenu.Link href="/overview/introduction">
+    Introduction
+  </NavigationMenu.Link>
+  <NavigationMenu.Dropdown title="Theme">
+    <NavigationMenu.DropdownContent
+      css={{
+        display: 'grid',
+        gap: '$1',
+        gridAutoFlow: 'column',
+        width: 500,
+        gridTemplateRows: 'repeat(2, 1fr)'
+      }}
+    >
+      {['colours', 'icons', 'effects', 'typography'].map((item) => (
+        <NavigationMenu.DropdownItem href={`/theme/${item}`}>
+          <Text
+            css={{
+              mb: '0.75rem',
+              textTransform: 'capitalize'
+            }}
+          >
+            {item}
+          </Text>
+          <Text
+            css={{
+              color: 'inherit',
+              lineHeight: 1.5,
+              fontWeight: 400,
+              fontSize: 14
+            }}
+          >
+            This is some example text about {item}
+          </Text>
+        </NavigationMenu.DropdownItem>
+      ))}
+    </NavigationMenu.DropdownContent>
+  </NavigationMenu.Dropdown>
+</NavigationMenu>
+```

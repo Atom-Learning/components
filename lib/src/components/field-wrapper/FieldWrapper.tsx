@@ -4,7 +4,7 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
-import { ValidationError } from '~/components/validation-error'
+import { InlineMessage } from '~/components/inline-message'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
@@ -44,7 +44,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
     </Flex>
     {description && <Description css={{ mb: '$3' }}>{description}</Description>}
     {children}
-    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
+    {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
   </Box>
 )
 

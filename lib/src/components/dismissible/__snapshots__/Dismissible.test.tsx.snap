@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dismissible component renders 1`] = `
+<div>
+  <div
+    data-testid="root"
+  >
+    A
+    <button
+      data-testid="trigger"
+      type="button"
+    >
+      Dismiss
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Dismissible component when it is using custom component overrides renders 1`] = `
+<div>
+  <div
+    data-testid="custom-root"
+  >
+    A
+    <button
+      aria-label="Dismiss 'A'"
+      data-testid="custom-trigger"
+      type="button"
+    >
+      x
+    </button>
+  </div>
+</div>
+`;
