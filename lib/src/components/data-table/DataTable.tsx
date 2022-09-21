@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { DataTableBody } from './DataTableBody'
+import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableProvider } from './DataTableContext'
 import { DataTableHead } from './DataTableHead'
 import { DataTableHeader } from './DataTableHeader'
@@ -15,18 +16,27 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * you can build your own implementation with `useDataTable()` and the UI-only `Table` components.
    */
   Body: typeof DataTableBody
+
+  /** Default table data cell implementation for `DataTable`
+   *
+   *
+   */
+  DataCell: typeof DataTableDataCell
+
   /** Default table head implementation
    *
    * Can be configured to be sortable and with different visual themes.
    * If you need more customisation options, you can build your own implementation
    * with `useDataTable` and the UI-only `Table` components.
    */
+
   Head: typeof DataTableHead
   /** Default header implementation for `DataTable`
    *
    * Can be configured to make the column sortable. If you need more customisation options,
    * you can build your own implementation with the UI-only `Table` components.
    */
+
   Header: typeof DataTableHeader
   /** Default pagination implementation for `DataTable`
    *
@@ -34,12 +44,14 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * you can build your own implementation with `useDataTable` and other UI components.
    *
    */
+
   Pagination: typeof Pagination
   /** Default row implementation for `DataTable`
    *
    * Renders all visible cells as `Table.Cell`. If you need more customisation options,
    * you can build your own implementation with the UI-only `Table` components.
    */
+
   Row: typeof DataTableRow
   /** Default table implementation for `DataTable`.
    *
@@ -56,6 +68,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
 export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
 
 DataTable.Body = DataTableBody
+DataTable.DataCell = DataTableDataCell
 DataTable.Head = DataTableHead
 DataTable.Header = DataTableHeader
 DataTable.Pagination = Pagination

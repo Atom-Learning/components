@@ -10,7 +10,10 @@ import {
 type DataTableContextType<T = unknown> = Table<T> & {
   applyPagination: () => void
   getTotalRows: () => number
+  isSortable: boolean
+  setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
 }
+
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
@@ -26,6 +29,7 @@ export const DataTableProvider = ({
   children
 }: TableProviderProps): JSX.Element => {
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
+  const [isSortable, setIsSortable] = React.useState<boolean>(false)
 
   const applyPagination = React.useCallback(() => {
     setIsPaginated(true)
@@ -38,16 +42,18 @@ export const DataTableProvider = ({
     data,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
-    getSortedRowModel: getSortedRowModel()
+    getSortedRowModel: isSortable ? getSortedRowModel() : undefined
   })
 
   const value = React.useMemo(() => {
     return {
       ...table,
       applyPagination,
-      getTotalRows
+      getTotalRows,
+      isSortable,
+      setIsSortable
     }
-  }, [table, applyPagination, getTotalRows])
+  }, [table, applyPagination, getTotalRows, isSortable])
 
   return (
     <DataTableContext.Provider value={value}>

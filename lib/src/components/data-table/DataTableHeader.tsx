@@ -3,9 +3,9 @@ import * as React from 'react'
 import { Table } from '../table'
 import { Icon } from '../icon'
 import { ChevronDown, ChevronUp } from '@atom-learning/icons'
-type DataTableHeaderCellProps = React.ComponentProps<typeof Table.Header> & {
+import { useDataTable } from './DataTableContext'
+type DataTableHeaderProps = React.ComponentProps<typeof Table.Header> & {
   header: Header<Record<string, unknown>, unknown>
-  sortable?: boolean
 }
 
 const sortIcons = {
@@ -13,17 +13,20 @@ const sortIcons = {
   desc: <Icon is={ChevronDown} size="sm" css={{ ml: '$1' }} />
 }
 
-export const DataTableHeader: React.FC<DataTableHeaderCellProps> = ({
+export const DataTableHeader: React.FC<DataTableHeaderProps> = ({
   header,
-  sortable,
   children,
   ...props
 }) => {
   const sort = header.column.getIsSorted()
-
+  const { isSortable } = useDataTable()
   return (
     <Table.HeaderCell
-      onClick={sortable ? header.column.getToggleSortingHandler() : undefined}
+      onClick={
+        isSortable
+          ? (header.column.getToggleSortingHandler() as MouseEventHandler<HTMLTableCellElement>)
+          : undefined
+      }
       {...props}
     >
       {flexRender(header.column.columnDef.header, header.getContext())}

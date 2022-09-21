@@ -5,16 +5,20 @@ import { TABLE_HEADER_THEMES } from '../table/TableHeader'
 import { useDataTable } from './DataTableContext'
 import { DataTable } from './index'
 
-type DataTableProps = {
+type DataTableHeadProps = {
   sortable?: boolean
   theme?: keyof typeof TABLE_HEADER_THEMES
 }
 
-export const DataTableHead: React.FC<DataTableProps> = ({
-  sortable,
+export const DataTableHead: React.FC<DataTableHeadProps> = ({
+  sortable = true,
   theme
 }) => {
-  const { getHeaderGroups } = useDataTable()
+  const { getHeaderGroups, setIsSortable } = useDataTable()
+
+  React.useEffect(() => {
+    if (sortable) setIsSortable(true)
+  }, [setIsSortable, sortable])
 
   return (
     <Table.Header theme={theme}>
@@ -22,11 +26,7 @@ export const DataTableHead: React.FC<DataTableProps> = ({
         return (
           <Table.Row key={headerGroup.id}>
             {headerGroup.headers.map((header) => (
-              <DataTable.Header
-                header={header}
-                key={header.id}
-                sortable={sortable}
-              />
+              <DataTable.Header header={header} key={header.id} />
             ))}
           </Table.Row>
         )
