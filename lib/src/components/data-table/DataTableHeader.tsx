@@ -1,30 +1,33 @@
+import { flexRender, Header } from '@tanstack/react-table'
 import * as React from 'react'
-
-import { DataTable } from './index'
 import { Table } from '../table'
-import { useDataTable } from './DataTableContext'
-
-type DataTableProps = {
+import { Icon } from '../icon'
+import { ChevronDown, ChevronUp } from '@atom-learning/icons'
+type DataTableHeaderCellProps = React.ComponentProps<typeof Table.Header> & {
+  header: Header<Record<string, unknown>, unknown>
   sortable?: boolean
 }
-export const DataTableHeader: React.FC<DataTableProps> = ({ sortable }) => {
-  const { getHeaderGroups } = useDataTable()
+
+const sortIcons = {
+  asc: <Icon is={ChevronUp} size="sm" css={{ ml: '$1' }} />,
+  desc: <Icon is={ChevronDown} size="sm" css={{ ml: '$1' }} />
+}
+
+export const DataTableHeader: React.FC<DataTableHeaderCellProps> = ({
+  header,
+  sortable,
+  children,
+  ...props
+}) => {
+  const sort = header.column.getIsSorted()
 
   return (
-    <Table.Header>
-      {getHeaderGroups().map((headerGroup) => {
-        return (
-          <Table.Row key={headerGroup.id}>
-            {headerGroup.headers.map((header) => (
-              <DataTable.HeaderCell
-                header={header}
-                key={header.id}
-                sortable={sortable}
-              />
-            ))}
-          </Table.Row>
-        )
-      })}
-    </Table.Header>
+    <Table.HeaderCell
+      onClick={sortable ? header.column.getToggleSortingHandler() : undefined}
+      {...props}
+    >
+      {flexRender(header.column.columnDef.header, header.getContext())}
+      {sort && sortIcons[sort as string]}
+    </Table.HeaderCell>
   )
 }

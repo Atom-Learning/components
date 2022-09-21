@@ -48,10 +48,7 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
-        <Table>
-          <DataTable.Header sortable />
-          <DataTable.Body />
-        </Table>
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -61,10 +58,7 @@ describe('DataTable component', () => {
   it('Sorts data on click of sortable header cell', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <Table>
-          <DataTable.Header sortable />
-          <DataTable.Body />
-        </Table>
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -84,10 +78,7 @@ describe('DataTable.Pagination component', () => {
   it('Displays the correct page number', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <Table>
-          <DataTable.Header sortable />
-          <DataTable.Body />
-        </Table>
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -107,10 +98,7 @@ describe('DataTable.Pagination component', () => {
   it('Navigates to the correct page', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <Table>
-          <DataTable.Header sortable />
-          <DataTable.Body />
-        </Table>
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={10} />
       </DataTable>
     )
@@ -124,10 +112,7 @@ describe('DataTable.Pagination component', () => {
   it('Disables previous button on first page and next page button on last page', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <Table>
-          <DataTable.Header sortable />
-          <DataTable.Body />
-        </Table>
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={10} />
       </DataTable>
     )
