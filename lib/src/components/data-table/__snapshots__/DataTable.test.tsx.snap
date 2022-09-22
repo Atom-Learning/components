@@ -192,8 +192,9 @@ exports[`DataTable component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
-    background: var(--colors-primaryDark);
+  .c-PJLV-gzzGYN-theme-light .c-GSaiK {
+    background: var(--colors-tonal50);
+    color: var(--colors-tonal600);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -230,19 +231,19 @@ exports[`DataTable component renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-fDzwZw-elrktp-size-md {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
   }
 
   .c-fDzwZw-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 1.5;
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
   }
 
   .c-jbyCVO-gWQnqe-size-md {
@@ -309,11 +310,6 @@ exports[`DataTable component renders 1`] = `
   .c-fDzwZw-illEebI-css {
     margin-right: var(--space-4);
   }
-
-  .c-dbrbZt-iisACLx-css {
-    height: 16px;
-    width: 16px;
-  }
 }
 
 <div>
@@ -321,7 +317,7 @@ exports[`DataTable component renders 1`] = `
     class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-gzzGYN-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -503,7 +499,7 @@ exports[`DataTable component renders 1`] = `
     >
       <button
         aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
         data-state="closed"
         disabled=""
         name="Previous page"
@@ -511,7 +507,7 @@ exports[`DataTable component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iisACLx-css"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -522,14 +518,14 @@ exports[`DataTable component renders 1`] = `
       </button>
       <button
         aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
         data-state="closed"
         name="Next page"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iisACLx-css"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -39,7 +39,7 @@ export const GotoPageSelect: React.FC<{
   return (
     <Flex css={{ alignItems: 'center' }}>
       <Select
-        defaultValue={pageIndex}
+        value={pageIndex}
         size="sm"
         css={{ flex: 'none', mr: '$3' }}
         onChange={(e) => {

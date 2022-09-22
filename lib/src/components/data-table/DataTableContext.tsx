@@ -4,14 +4,15 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
+  SortingState,
   Table
 } from '@tanstack/react-table'
 
 type DataTableContextType<T = unknown> = Table<T> & {
+  setUserSortable: React.Dispatch<React.SetStateAction<boolean>>
   applyPagination: () => void
   getTotalRows: () => number
-  isSortable: boolean
-  setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
+  userSortable: boolean
 }
 
 const DataTableContext =
@@ -29,7 +30,8 @@ export const DataTableProvider = ({
   children
 }: TableProviderProps): JSX.Element => {
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
-  const [isSortable, setIsSortable] = React.useState<boolean>(false)
+  const [userSortable, setUserSortable] = React.useState<boolean>(false)
+  const [sorting, setSorting] = React.useState<SortingState>([])
 
   const applyPagination = React.useCallback(() => {
     setIsPaginated(true)
@@ -39,21 +41,25 @@ export const DataTableProvider = ({
 
   const table = useReactTable<unknown>({
     columns,
-    data,
+    data: data,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
-    getSortedRowModel: isSortable ? getSortedRowModel() : undefined
+    getSortedRowModel:
+      userSortable || sorting.length ? getSortedRowModel() : undefined,
+    state: { sorting },
+    onSortingChange: setSorting
   })
 
   const value = React.useMemo(() => {
     return {
       ...table,
+
+      setUserSortable,
       applyPagination,
       getTotalRows,
-      isSortable,
-      setIsSortable
+      userSortable
     }
-  }, [table, applyPagination, getTotalRows, isSortable])
+  }, [table, applyPagination, getTotalRows, userSortable])
 
   return (
     <DataTableContext.Provider value={value}>

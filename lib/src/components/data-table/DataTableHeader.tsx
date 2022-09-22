@@ -19,18 +19,16 @@ export const DataTableHeader: React.FC<DataTableHeaderProps> = ({
   ...props
 }) => {
   const sort = header.column.getIsSorted()
-  const { isSortable } = useDataTable()
+  const { userSortable } = useDataTable()
   return (
     <Table.HeaderCell
       onClick={
-        isSortable
-          ? (header.column.getToggleSortingHandler() as MouseEventHandler<HTMLTableCellElement>)
-          : undefined
+        userSortable ? header.column.getToggleSortingHandler() : undefined
       }
       {...props}
     >
       {flexRender(header.column.columnDef.header, header.getContext())}
-      {sort && sortIcons[sort as string]}
+      {sort && userSortable && sortIcons[sort as string]}
     </Table.HeaderCell>
   )
 }

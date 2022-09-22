@@ -8,7 +8,10 @@ type DataTableBodyProps = Omit<
   'children'
 >
 
-export const DataTableBody: React.FC<DataTableBodyProps> = (props) => {
+export const DataTableBody: React.FC<DataTableBodyProps> = ({
+  striped = false,
+  ...props
+}) => {
   const { getRowModel } = useDataTable()
 
   return (

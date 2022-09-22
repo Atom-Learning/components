@@ -65,6 +65,11 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
   Table: typeof DataTableTable
 }
 
+/** Context provider for DataTable state and logic.
+ *
+ * Children can call `useDataTable` to access everything provided by `@tanstack/react-table` plus
+ * the functionality we've built on top.
+ */
 export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
 
 DataTable.Body = DataTableBody

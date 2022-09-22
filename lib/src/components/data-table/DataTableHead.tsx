@@ -1,27 +1,39 @@
 import * as React from 'react'
 
 import { Table } from '../table'
-import { TABLE_HEADER_THEMES } from '../table/TableHeader'
+
 import { useDataTable } from './DataTableContext'
 import { DataTable } from './index'
 
-type DataTableHeadProps = {
-  sortable?: boolean
-  theme?: keyof typeof TABLE_HEADER_THEMES
+type DataTableHeadProps = Omit<
+  React.ComponentProps<typeof Table.Header>,
+  'children'
+> & {
+  defaultSort?: { column: string; direction: 'asc' | 'desc' }
+  userSortable?: boolean
 }
 
 export const DataTableHead: React.FC<DataTableHeadProps> = ({
-  sortable = true,
-  theme
+  userSortable = true,
+  defaultSort = null,
+  theme = 'light',
+  ...props
 }) => {
-  const { getHeaderGroups, setIsSortable } = useDataTable()
+  const { getHeaderGroups, setUserSortable, setSorting } = useDataTable()
 
   React.useEffect(() => {
-    if (sortable) setIsSortable(true)
-  }, [setIsSortable, sortable])
+    setUserSortable(userSortable)
+  }, [userSortable, setUserSortable])
+
+  React.useEffect(() => {
+    if (defaultSort)
+      setSorting([
+        { id: defaultSort?.column, desc: defaultSort?.direction === 'desc' }
+      ])
+  }, [defaultSort, setSorting])
 
   return (
-    <Table.Header theme={theme}>
+    <Table.Header theme={theme} {...props}>
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
