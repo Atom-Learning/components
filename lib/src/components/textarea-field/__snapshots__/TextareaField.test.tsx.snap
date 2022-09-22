@@ -76,10 +76,10 @@ exports[`TextareaField component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-iceIFRw-css {
+  .c-dhzjXW-iwHglP-css {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: var(--space-3);
   }
 }
 
@@ -92,7 +92,7 @@ exports[`TextareaField component renders 1`] = `
       class="c-PJLV"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iceIFRw-css"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
@@ -186,10 +186,10 @@ exports[`TextareaField component renders with an error 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-iceIFRw-css {
+  .c-dhzjXW-iwHglP-css {
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: var(--space-3);
   }
 }
 
@@ -202,7 +202,7 @@ exports[`TextareaField component renders with an error 1`] = `
       class="c-PJLV"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iceIFRw-css"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
