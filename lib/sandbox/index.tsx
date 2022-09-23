@@ -58,10 +58,7 @@ const App = () => (
   >
     <Box css={{ width: '700px' }}>
       <DataTable columns={columns} data={data}>
-        <DataTable.Table
-          defaultSort={{ column: 'name', direction: 'asc' }}
-          userSortable
-        />
+        <DataTable.Table defaultSort={{ column: 'name', direction: 'asc' }} />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     </Box>

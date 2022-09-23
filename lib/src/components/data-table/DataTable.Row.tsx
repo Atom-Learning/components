@@ -1,7 +1,7 @@
 import { Row } from '@tanstack/react-table'
 import * as React from 'react'
 import { Table } from '../table'
-import { DataTableDataCell } from './DataTableDataCell'
+import { DataTableDataCell } from './DataTable.DataCell'
 
 type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>

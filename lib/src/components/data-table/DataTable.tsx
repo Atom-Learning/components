@@ -1,12 +1,12 @@
 import * as React from 'react'
 
-import { DataTableBody } from './DataTableBody'
-import { DataTableDataCell } from './DataTableDataCell'
+import { DataTableBody } from './DataTable.Body'
+import { DataTableDataCell } from './DataTable.DataCell'
 import { DataTableProvider } from './DataTableContext'
-import { DataTableHead } from './DataTableHead'
-import { DataTableHeader } from './DataTableHeader'
-import { DataTableRow } from './DataTableRow'
-import { DataTableTable } from './DataTableTable'
+import { DataTableHead } from './DataTable.Head'
+import { DataTableHeader } from './DataTable.Header'
+import { DataTableRow } from './DataTable.Row'
+import { DataTableTable } from './DataTable.Table'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {

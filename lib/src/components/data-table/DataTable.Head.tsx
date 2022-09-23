@@ -1,9 +1,7 @@
 import * as React from 'react'
 
 import { Table } from '../table'
-
-import { useDataTable } from './DataTableContext'
-import { DataTable } from './index'
+import { DataTable, useDataTable } from './index'
 
 type DataTableHeadProps = Omit<
   React.ComponentProps<typeof Table.Header>,
