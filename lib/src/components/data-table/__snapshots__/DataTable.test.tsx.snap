@@ -24,6 +24,10 @@ exports[`DataTable component renders 1`] = `
     vertical-align: middle;
   }
 
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cCZzXk {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
@@ -55,10 +59,6 @@ exports[`DataTable component renders 1`] = `
   .c-fIXJvv > .c-fIXJvv:before,
   .c-fIXJvv > .c-fIXJvv:after {
     display: none;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-beXZpM {
@@ -275,6 +275,10 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
+  }
+
   .c-ciKXky-illFBbS-css {
     margin-top: var(--space-4);
   }
@@ -289,12 +293,7 @@ exports[`DataTable component renders 1`] = `
     flex-basis: 50%;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
-  .c-beXZpM-ikubvOQ-css {
-    flex: none;
+  .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
@@ -323,19 +322,31 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK"
+          class="c-GSaiK c-GSaiK-iPJLV-css"
         >
-          name
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            name
+          </div>
         </th>
         <th
-          class="c-GSaiK"
+          class="c-GSaiK c-GSaiK-iPJLV-css"
         >
-          hobby
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            hobby
+          </div>
         </th>
         <th
-          class="c-GSaiK"
+          class="c-GSaiK c-GSaiK-iPJLV-css"
         >
-          Actions
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            Actions
+          </div>
         </th>
       </tr>
     </thead>
@@ -464,7 +475,7 @@ exports[`DataTable component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-ijroWjL-css"
       >
         <select
-          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ikubvOQ-css"
+          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
         >
           <option
             value="0"
