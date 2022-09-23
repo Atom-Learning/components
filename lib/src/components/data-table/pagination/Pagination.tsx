@@ -53,19 +53,13 @@ export const Pagination: React.FC<PaginationProps> = ({
       <Text size="sm" css={{ flexBasis: '25%' }}>
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
-      <Flex
-        css={{
-          alignItems: 'center',
-          justifyContent: 'space-around',
-          flexBasis: '50%'
-        }}
-      >
-        <GotoPageSelect
-          gotoPage={setPageIndex}
-          pageCount={getPageCount()}
-          pageIndex={pageIndex}
-        />
-      </Flex>
+
+      <GotoPageSelect
+        gotoPage={setPageIndex}
+        pageCount={getPageCount()}
+        pageIndex={pageIndex}
+      />
+
       <Flex css={{ flexBasis: '25%', justifyContent: 'flex-end' }}>
         <DirectionButton
           direction="previous"

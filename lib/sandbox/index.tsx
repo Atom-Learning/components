@@ -62,7 +62,7 @@ const App = () => (
         data={data}
         defaultSort={{ column: 'name', direction: 'asc' }}
       >
-        <DataTable.Table theme="primary" />
+        <DataTable.Table />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     </Box>
