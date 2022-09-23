@@ -54,13 +54,13 @@ The following two examples are exactly equivalent in their output. The second ex
 
 ```tsx
 <DataTable columns={columns} data={data}>
-  <DataTable.Table />
+  <DataTable.Table userSortable />
   <DataTable.Pagination pageSize={5} />
 </DataTable>
 
 <DataTable columns={columns} data={data}>
-  <Table >
-    <DataTable.Header sortable />
+  <Table>
+    <DataTable.Head userSortable />
     <DataTable.Body />
   </Table>
   <DataTable.Pagination pageSize={5} />

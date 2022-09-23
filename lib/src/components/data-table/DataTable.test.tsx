@@ -57,8 +57,12 @@ describe('DataTable component', () => {
 
   it('Sorts data according to defaultSort config', () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.Table defaultSort={{ column: 'name', direction: 'desc' }} />
+      <DataTable
+        columns={columns}
+        data={data}
+        defaultSort={{ column: 'name', direction: 'desc' }}
+      >
+        <DataTable.Table />
         <DataTable.Pagination pageSize={1} />
       </DataTable>
     )

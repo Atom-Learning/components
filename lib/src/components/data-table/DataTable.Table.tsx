@@ -8,15 +8,12 @@ type DataTableTableProps = Omit<
   'children'
 > &
   Partial<
-    Pick<
-      React.ComponentProps<typeof DataTable.Head>,
-      'theme' | 'defaultSort' | 'userSortable'
-    >
+    Pick<React.ComponentProps<typeof DataTable.Head>, 'theme' | 'userSortable'>
   > &
   Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>>
 
 export const DataTableTable: React.FC<DataTableTableProps> = ({
-  defaultSort,
+  // defaultSort,
   userSortable,
   striped,
   theme,
@@ -25,7 +22,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   <Table {...props}>
     <DataTable.Head
       theme={theme}
-      defaultSort={defaultSort}
+      // defaultSort={defaultSort}
       userSortable={userSortable}
     />
     <DataTable.Body striped={striped} />

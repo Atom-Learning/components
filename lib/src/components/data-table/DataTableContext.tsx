@@ -21,17 +21,28 @@ const DataTableContext =
 type TableProviderProps = {
   columns
   data: Array<Record<string, unknown>>
+  defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
 }
 
 export const DataTableProvider = ({
   columns,
   data,
+  defaultSort,
   children
 }: TableProviderProps): JSX.Element => {
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
   const [userSortable, setUserSortable] = React.useState<boolean>(false)
-  const [sorting, setSorting] = React.useState<SortingState>([])
+  const [sorting, setSorting] = React.useState<SortingState>(
+    defaultSort
+      ? [
+          {
+            id: defaultSort.column,
+            desc: defaultSort.direction === 'desc'
+          }
+        ]
+      : []
+  )
 
   const applyPagination = React.useCallback(() => {
     setIsPaginated(true)
