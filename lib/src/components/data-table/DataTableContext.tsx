@@ -7,7 +7,6 @@ import {
   SortingState,
   Table
 } from '@tanstack/react-table'
-
 type DataTableContextType<T = unknown> = Table<T> & {
   setUserSortable: React.Dispatch<React.SetStateAction<boolean>>
   applyPagination: () => void

@@ -21,7 +21,6 @@ export const DirectionButton: React.FC<{
     <TooltipActionIcon
       appearance="outline"
       icon={isNext ? ChevronRight : ChevronLeft}
-      iconSize="sm"
       isRounded
       label={isNext ? 'Next page' : 'Previous page'}
       name={isNext ? 'Next page' : 'Previous page'}
@@ -41,7 +40,7 @@ export const GotoPageSelect: React.FC<{
       <Select
         value={pageIndex}
         size="sm"
-        css={{ flex: 'none', mr: '$3' }}
+        css={{ mr: '$3' }}
         onChange={(e) => {
           gotoPage(Number(e.target.value))
         }}
@@ -66,12 +65,12 @@ type TooltipActionIconProps = React.ComponentProps<typeof ActionIcon> &
   }
 export const TooltipActionIcon: React.FC<
   Omit<TooltipActionIconProps, 'children' | 'is'>
-> = ({ icon, iconSize, label, ...rest }) => {
+> = ({ icon, label, ...rest }) => {
   return (
     <Tooltip>
       <Tooltip.Trigger asChild>
         <ActionIcon label={label} {...rest}>
-          <Icon is={icon} size={iconSize} />
+          <Icon is={icon} />
         </ActionIcon>
       </Tooltip.Trigger>
       <Tooltip.Content>{label}</Tooltip.Content>
