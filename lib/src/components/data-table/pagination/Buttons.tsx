@@ -45,9 +45,9 @@ export const GotoPageSelect: React.FC<{
           gotoPage(Number(e.target.value))
         }}
       >
-        {Array.from({ length: pageCount }, (z, x) => x + 1).map((x) => (
-          <option key={x - 1} value={x - 1}>
-            {x}
+        {Array.from({ length: pageCount }, (z, x) => x + 1).map((i) => (
+          <option key={i} value={i}>
+            {i}
           </option>
         ))}
       </Select>

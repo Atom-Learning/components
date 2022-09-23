@@ -98,15 +98,13 @@ describe('DataTable.Pagination component', () => {
       </DataTable>
     )
 
-    // TODO: update pagination component to have page number as value here
-    // rather than page number -1
-    expect(screen.getByRole('combobox')).toHaveValue('0')
+    expect(screen.getByRole('combobox')).toHaveValue('1')
     expect(screen.getByText('of 4 pages')).toBeVisible()
 
     const nextPageButton = screen.getByLabelText('Next page')
     userEvent.click(nextPageButton)
     waitFor(
-      async () => await expect(screen.getByRole('combobox')).toHaveValue('1')
+      async () => await expect(screen.getByRole('combobox')).toHaveValue('2')
     )
   })
 
@@ -121,7 +119,7 @@ describe('DataTable.Pagination component', () => {
     const options = screen.getAllByRole('option')
     userEvent.click(options[1])
 
-    waitFor(async () => expect(screen.getByRole('combobox')).toHaveValue('1'))
+    waitFor(async () => expect(screen.getByRole('combobox')).toHaveValue('2'))
   })
 
   it('Disables previous button on first page and next page button on last page', () => {
