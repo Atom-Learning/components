@@ -283,16 +283,6 @@ exports[`DataTable component renders 1`] = `
     margin-top: var(--space-4);
   }
 
-  .c-fIXJvv-ikXMcew-css {
-    flex-basis: 25%;
-  }
-
-  .c-dhzjXW-icllVcr-css {
-    align-items: center;
-    justify-content: space-around;
-    flex-basis: 50%;
-  }
-
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
@@ -301,8 +291,7 @@ exports[`DataTable component renders 1`] = `
     flex: none;
   }
 
-  .c-dhzjXW-igFPRFg-css {
-    flex-basis: 25%;
+  .c-dhzjXW-ibZmKkd-css {
     justify-content: flex-end;
   }
 
@@ -464,49 +453,45 @@ exports[`DataTable component renders 1`] = `
     class="c-ciKXky c-ciKXky-illFBbS-css"
   >
     <p
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikXMcew-css"
+      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
     >
       1 - 5 of 18 items
     </p>
     <div
-      class="c-dhzjXW c-dhzjXW-icllVcr-css"
+      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
     >
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      <select
+        class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
       >
-        <select
-          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+        <option
+          value="1"
         >
-          <option
-            value="1"
-          >
-            1
-          </option>
-          <option
-            value="2"
-          >
-            2
-          </option>
-          <option
-            value="3"
-          >
-            3
-          </option>
-          <option
-            value="4"
-          >
-            4
-          </option>
-        </select>
-        <p
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+          1
+        </option>
+        <option
+          value="2"
         >
-          of 4 pages
-        </p>
-      </div>
+          2
+        </option>
+        <option
+          value="3"
+        >
+          3
+        </option>
+        <option
+          value="4"
+        >
+          4
+        </option>
+      </select>
+      <p
+        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+      >
+        of 4 pages
+      </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-igFPRFg-css"
+      class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
     >
       <button
         aria-label="Previous page"
