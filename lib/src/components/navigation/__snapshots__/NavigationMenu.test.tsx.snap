@@ -93,8 +93,8 @@ exports[`Nav component renders 1`] = `
     justify-content: center;
   }
 
-  .c-zowIn {
-    z-index: 1147483646;
+  .c-jQFjpB {
+    z-index: 2147483647;
   }
 
   .c-eZxssT {
@@ -141,15 +141,15 @@ exports[`Nav component renders 1`] = `
     }
 }
 
-  .c-zowIn-ikEdNcB-css {
+  .c-jQFjpB-ikEdNcB-css {
     transform: translateX(0px);
   }
 
-  .c-zowIn-ikEdNcB-css[data-state="open"] {
+  .c-jQFjpB-ikEdNcB-css[data-state="open"] {
     animation: k-brPFuJ 200ms ease;
   }
 
-  .c-zowIn-ikEdNcB-css[data-state="closed"] {
+  .c-jQFjpB-ikEdNcB-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
   }
 }
