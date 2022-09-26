@@ -3,10 +3,10 @@ import {
   useReactTable,
   getCoreRowModel,
   getPaginationRowModel,
-  getSortedRowModel,
-  SortingState,
-  Table
+  getSortedRowModel
 } from '@tanstack/react-table'
+import type { SortingState, Table } from '@tanstack/react-table'
+
 type DataTableContextType<T = unknown> = Table<T> & {
   setUserSortable: React.Dispatch<React.SetStateAction<boolean>>
   applyPagination: () => void

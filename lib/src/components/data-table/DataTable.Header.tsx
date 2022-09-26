@@ -1,10 +1,11 @@
-import { flexRender, Header } from '@tanstack/react-table'
+import { flexRender } from '@tanstack/react-table'
+import type { Header } from '@tanstack/react-table'
 import * as React from 'react'
 import { Flex } from '../flex'
 import { Table } from '../table'
 import { Icon } from '../icon'
 import { SortDown, SortUp } from '@atom-learning/icons'
-import { Box } from '../box'
+
 import { useDataTable } from './DataTableContext'
 type DataTableHeaderProps = React.ComponentProps<typeof Table.HeaderCell> & {
   header: Header<Record<string, unknown>, unknown>
