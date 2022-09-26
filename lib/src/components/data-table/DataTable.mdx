@@ -17,7 +17,7 @@ category: Content
 
 The root `DataTable` component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
 
-Other `DataTable` components use `useDataTable` and provide useful default behaviours for different functionality. If they don't meet your requirements, you can build your own implementation by calling `useDataTable` in a new component yourself. If your use case is a common one, please make a PR to add the component to the library.
+Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
 
 ### Using defaults vs using rolling your own
 
@@ -77,7 +77,9 @@ The following two examples are exactly equivalent in their output. The second ex
 
 ### Rolling your own
 
-Note that `useDataTable` can only be called by a child component of `DataTable.Provider`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
+If you need more flexibility than the default implementations provide, you can roll your own implementations. Note that you can mix and match default implementations with your own. For example you could write your own table head implementation but use `DataTable.Body` for the body.
+
+Note also that `useDataTable` can only be called by a child component of `DataTable.Provider`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
 ```tsx
 <DataTable.Provider columns={columns} data={data}>

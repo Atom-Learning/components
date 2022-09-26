@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { Flex } from '../../flex'
-import { useDataTable } from '../DataTableContext'
-import { Button } from '../../button'
-import { Text } from '../../text'
-import { DirectionButton, GotoPageSelect } from './Buttons'
-import { styled } from '~/stitches'
-import { useReactTable } from '@tanstack/react-table'
+
 import type { CSS } from '~/stitches'
+import { styled } from '~/stitches'
+
+import { Flex } from '../../flex'
+import { Text } from '../../text'
+import { useDataTable } from '../DataTableContext'
+import { DirectionButton, GotoPageSelect } from './Buttons'
 
 const StyledNav = styled('nav', {
   display: 'flex',
@@ -21,7 +21,7 @@ type PaginationProps = React.ComponentProps<typeof StyledNav> & {
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
 export const Pagination: React.FC<PaginationProps> = ({
   css,
-  pageSize: defaultPageSize = 10,
+  pageSize = 10,
   ...props
 }) => {
   const {
@@ -41,35 +41,37 @@ export const Pagination: React.FC<PaginationProps> = ({
   }, [applyPagination])
 
   React.useEffect(() => {
-    setPageSize(defaultPageSize)
-  }, [setPageSize, defaultPageSize])
+    setPageSize(pageSize)
+  }, [setPageSize, pageSize])
 
-  const { pageIndex, pageSize } = getState().pagination
-  const recordsCountFrom = pageIndex * pageSize + 1
+  const { pagination: paginationState } = getState()
+
+  const recordsCountFrom =
+    paginationState.pageIndex * paginationState.pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
 
   return (
     <StyledNav {...props} css={{ mt: '$4', ...css } as CSS}>
-      <Text size="sm" css={{ flexBasis: '25%' }}>
+      <Text size="sm">
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
 
       <GotoPageSelect
         gotoPage={setPageIndex}
         pageCount={getPageCount()}
-        pageIndex={pageIndex}
+        pageIndex={paginationState.pageIndex}
       />
 
-      <Flex css={{ flexBasis: '25%', justifyContent: 'flex-end' }}>
+      <Flex css={{ justifyContent: 'flex-end' }}>
         <DirectionButton
           direction="previous"
-          disabled={pageIndex === 0}
+          disabled={paginationState.pageIndex === 0}
           onClick={previousPage}
           css={{ mr: '$4' }}
         />
         <DirectionButton
           direction="next"
-          disabled={pageIndex === getPageCount() - 1}
+          disabled={paginationState.pageIndex === getPageCount() - 1}
           onClick={nextPage}
         />
       </Flex>
