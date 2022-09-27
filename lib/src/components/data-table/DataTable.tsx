@@ -6,6 +6,7 @@ import { DataTableProvider } from './DataTableContext'
 import { DataTableHead } from './DataTable.Head'
 import { DataTableHeader } from './DataTable.Header'
 import { DataTableRow } from './DataTable.Row'
+import { DataTableSearch } from './DataTable.Search'
 import { DataTableTable } from './DataTable.Table'
 import { Pagination } from './pagination'
 
@@ -53,6 +54,11 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    */
 
   Row: typeof DataTableRow
+  /** Default global search implementation for `DataTable`
+   *
+   * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
+   */
+  Search: typeof DataTableSearch
   /** Default table implementation for `DataTable`.
    *
    * Can be configured with sortable columns and different visual themes.
@@ -78,4 +84,5 @@ DataTable.Head = DataTableHead
 DataTable.Header = DataTableHeader
 DataTable.Pagination = Pagination
 DataTable.Row = DataTableRow
+DataTable.Search = DataTableSearch
 DataTable.Table = DataTableTable

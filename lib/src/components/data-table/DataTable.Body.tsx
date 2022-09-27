@@ -15,7 +15,7 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
   const { getRowModel } = useDataTable()
 
   return (
-    <Table.Body {...props}>
+    <Table.Body {...props} striped={striped}>
       {getRowModel().rows.map((row) => {
         return <DataTable.Row row={row} key={row.id} />
       })}

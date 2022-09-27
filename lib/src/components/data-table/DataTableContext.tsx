@@ -3,7 +3,8 @@ import {
   useReactTable,
   getCoreRowModel,
   getPaginationRowModel,
-  getSortedRowModel
+  getSortedRowModel,
+  getFilteredRowModel
 } from '@tanstack/react-table'
 import type { SortingState, Table } from '@tanstack/react-table'
 
@@ -56,14 +57,18 @@ export const DataTableProvider = ({
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       userSortable || sorting.length ? getSortedRowModel() : undefined,
-    state: { sorting },
-    onSortingChange: setSorting
+    state: {
+      sorting
+    },
+
+    onSortingChange: setSorting,
+    getFilteredRowModel: getFilteredRowModel()
   })
 
   const value = React.useMemo(() => {
     return {
       ...table,
-
+      // globalFilter,
       setUserSortable,
       applyPagination,
       getTotalRows,

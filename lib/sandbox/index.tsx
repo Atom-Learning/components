@@ -62,7 +62,12 @@ const App = () => (
         data={data}
         defaultSort={{ column: 'name', direction: 'asc' }}
       >
-        <DataTable.Table />
+        <DataTable.Search
+          css={{ mb: '$4', maxWidth: '300px' }}
+          label="User search"
+          placeholder="Search for a user"
+        />
+        <DataTable.Table css={{ mb: '$4' }} theme="primary" striped={false} />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     </Box>

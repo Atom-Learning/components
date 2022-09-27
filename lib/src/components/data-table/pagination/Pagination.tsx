@@ -1,6 +1,4 @@
 import * as React from 'react'
-
-import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
 
 import { Flex } from '../../flex'
@@ -51,7 +49,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
 
   return (
-    <StyledNav {...props} css={{ mt: '$4', ...css } as CSS}>
+    <StyledNav {...props} css={css}>
       <Text size="sm">
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>

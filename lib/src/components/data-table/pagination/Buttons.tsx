@@ -35,6 +35,7 @@ export const GotoPageSelect: React.FC<{
   pageCount: number
   gotoPage: (pageNumber: number) => void
 }> = ({ gotoPage, pageCount, pageIndex }) => {
+  console.log('page index:', pageIndex)
   return (
     <Flex css={{ alignItems: 'center' }}>
       <Select

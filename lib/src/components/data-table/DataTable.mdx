@@ -62,7 +62,7 @@ The following two examples are exactly equivalent in their output. The second ex
 
 ```tsx
 <DataTable columns={columns} data={data}>
-  <DataTable.Table userSortable />
+  <DataTable.Table userSortable css={{mb: '$4'}}/>
   <DataTable.Pagination pageSize={5} />
 </DataTable>
 
@@ -77,50 +77,60 @@ The following two examples are exactly equivalent in their output. The second ex
 
 ### Rolling your own
 
-If you need more flexibility than the default implementations provide, you can roll your own implementations. Note that you can mix and match default implementations with your own. For example you could write your own table head implementation but use `DataTable.Body` for the body.
+If you need more flexibility than the default implementations provide, you can roll your own. Note that you can mix and match default implementations with your own. For example you could write your own table head implementation but use `DataTable.Body` for the body.
 
 Note also that `useDataTable` can only be called by a child component of `DataTable.Provider`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
 ```tsx
 <DataTable.Provider columns={columns} data={data}>
   {() => {
-    const { getHeaderGroups, getRowModel } = useDataTable()
+    const { getHeaderGroups, getRowModel, setGlobalFilter, getState } =
+      useDataTable()
+    const { globalFilter } = getState()
 
     return (
-      <Table>
-        <Table.Header>
-          {getHeaderGroups().map((headerGroup) => (
-            <Table.Row key={headerGroup.id}>
-              {headerGroup.headers.map((header) => {
-                const sort = header.column.getIsSorted()
-                return (
-                  <Table.HeaderCell
-                    onClick={header.column.getToggleSortingHandler()}
-                    {...props}
-                  >
-                    {flexRender(
-                      header.column.columnDef.header,
-                      header.getContext()
-                    )}
-                    {sort && { asc: '^', desc: 'v' }[sort as string]}
-                  </Table.HeaderCell>
-                )
-              })}
-            </Table.Row>
-          ))}
-        </Table.Header>
-        <Table.Body>
-          {getRowModel().rows.map((row) => (
-            <Table.Row>
-              {row.getVisibleCells().map((cell) => (
-                <Table.Cell key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </Table.Cell>
-              ))}
-            </Table.Row>
-          ))}
-        </Table.Body>
-      </Table>
+      <>
+        <Label htmlFor="search">User search</Label>
+        <SearchInput
+          name="search"
+          value={globalFilter}
+          onChange={setGlobalFilter}
+        />
+        <Table>
+          <Table.Header>
+            {getHeaderGroups().map((headerGroup) => (
+              <Table.Row key={headerGroup.id}>
+                {headerGroup.headers.map((header) => {
+                  const sort = header.column.getIsSorted()
+                  return (
+                    <Table.HeaderCell
+                      onClick={header.column.getToggleSortingHandler()}
+                      {...props}
+                    >
+                      {flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                      {sort && { asc: '^', desc: 'v' }[sort as string]}
+                    </Table.HeaderCell>
+                  )
+                })}
+              </Table.Row>
+            ))}
+          </Table.Header>
+          <Table.Body>
+            {getRowModel().rows.map((row) => (
+              <Table.Row>
+                {row.getVisibleCells().map((cell) => (
+                  <Table.Cell key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </Table.Cell>
+                ))}
+              </Table.Row>
+            ))}
+          </Table.Body>
+        </Table>
+      </>
       // Then you could build your own pagination here too I guess? If you really wanted to?
     )
   }}
@@ -128,6 +138,10 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 ```
 
 ## Features
+
+### Search
+
+`DataTable.Search` renders a search input that filters the whole table by matching the input against values from any table column.
 
 ### Sorting
 

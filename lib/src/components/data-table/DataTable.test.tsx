@@ -48,7 +48,8 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Table userSortable />
+        <DataTable.Search label="User search" css={{ mb: '$4' }} />
+        <DataTable.Table userSortable css={{ mb: '$4' }} />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -139,5 +140,30 @@ describe('DataTable.Pagination component', () => {
     userEvent.click(nextPageButton)
 
     waitFor(async () => await expect(nextPageButton).toBeDisabled())
+  })
+})
+
+describe('DataTable Search component', () => {
+  it('Filters table based on any column', () => {
+    render(
+      <DataTable columns={columns} data={data}>
+        <DataTable.Search label="Search" />
+        <DataTable.Table userSortable />
+      </DataTable>
+    )
+
+    const search = screen.getByRole('searchbox')
+    userEvent.type(search, 'ch')
+
+    waitFor(async () => {
+      expect(screen.getByText('chrissy')).toBeVisible()
+      expect(screen.getByText('charlie')).toBeVisible()
+      expect(screen.getByText('xena')).not.toBeVisible()
+    })
+
+    userEvent.type(search, 'crossfit')
+    waitFor(async () => {
+      expect(screen.getByText('agatha')).toBeVisible()
+    })
   })
 })

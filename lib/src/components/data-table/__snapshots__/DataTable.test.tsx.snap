@@ -2,6 +2,67 @@
 
 exports[`DataTable component renders 1`] = `
 @media  {
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+
   .c-cwQMhQ {
     border-collapse: separate;
     border-spacing: 0;
@@ -113,15 +174,6 @@ exports[`DataTable component renders 1`] = `
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
   .c-jbyCVO {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
@@ -170,6 +222,46 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
   .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
   .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
   .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
@@ -197,12 +289,8 @@ exports[`DataTable component renders 1`] = `
     color: var(--colors-tonal600);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-kqWICR-striped-false {
     background: white;
-  }
-
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
   }
 
   .c-fIXJvv-bndJoy-size-sm {
@@ -240,12 +328,6 @@ exports[`DataTable component renders 1`] = `
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
-  }
-
   .c-jbyCVO-gWQnqe-size-md {
     max-width: 250px;
   }
@@ -275,12 +357,31 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
+  .c-cVSpVL-ijCjufR-css {
+    margin-bottom: var(--space-3);
+    visibility: initial;
   }
 
-  .c-ciKXky-illFBbS-css {
-    margin-top: var(--space-4);
+  .c-PJLV-ieyRoAv-css {
+    position: relative;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-cwQMhQ-illIiIE-css {
+    margin-bottom: var(--space-4);
+  }
+
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
   }
 
   .c-beXZpM-ihbpiMz-css {
@@ -301,8 +402,39 @@ exports[`DataTable component renders 1`] = `
 }
 
 <div>
+  <label
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ijCjufR-css"
+    for="User search"
+  >
+    User search
+  </label>
+  <div
+    class="c-PJLV c-PJLV-ieyRoAv-css"
+  >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      name="User search"
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.412 14.412L20 20"
+      />
+      <circle
+        cx="10"
+        cy="10"
+        r="6"
+      />
+    </svg>
+  </div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
       class="c-PJLV c-PJLV-gzzGYN-theme-light"
@@ -340,7 +472,7 @@ exports[`DataTable component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+      class="c-PJLV c-PJLV-kqWICR-striped-false"
     >
       <tr
         class="c-hjAYDb"
@@ -450,7 +582,7 @@ exports[`DataTable component renders 1`] = `
     </tbody>
   </table>
   <nav
-    class="c-ciKXky c-ciKXky-illFBbS-css"
+    class="c-ciKXky"
   >
     <p
       class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
