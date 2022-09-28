@@ -380,6 +380,10 @@ exports[`DataTable component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
+  .c-GSaiK-ifYtQLP-css {
+    cursor: initial;
+  }
+
   .c-dhzjXW-ijroWjL-css {
     align-items: center;
   }
@@ -398,6 +402,10 @@ exports[`DataTable component renders 1`] = `
 
   .c-fDzwZw-illEebI-css {
     margin-right: var(--space-4);
+  }
+
+  .c-GSaiK-igsmDXe-css {
+    cursor: pointer;
   }
 }
 
@@ -443,7 +451,7 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK c-GSaiK-iPJLV-css"
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -452,7 +460,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-iPJLV-css"
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -461,7 +469,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-iPJLV-css"
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
