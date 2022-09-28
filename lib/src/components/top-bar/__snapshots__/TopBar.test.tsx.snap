@@ -1,228 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopBar component renders 1`] = `
-@media  {
-  .c-goJbTI {
-    background: white;
-    position: sticky;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    top: 0;
-    height: var(--sizes-6);
-    z-index: 1;
-    border-bottom: 1px solid var(--colors-tonal100);
-    transition: box-shadow .2s ease-out;
-  }
-
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-ftiHlK {
-    align-items: center;
-    height: var(--sizes-4);
-    margin-left: var(--space-4);
-    margin-right: var(--space-4);
-    width: 100%;
-  }
-
-@media (min-width: 800px) {
-    .c-ftiHlK {
-      margin-left: var(--space-5);
-      margin-right: var(--space-5);
-    }
-}
-
-  .c-dbEDIJ {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--colors-tonal400);
-  }
-
-  .c-dbEDIJ:hover,
-  .c-dbEDIJ:focus {
-    text-decoration: none;
-  }
-
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
-
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
-    display: none;
-  }
-
-  .c-ldsiYK {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw {
-    align-items: center;
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-    border: unset;
-    border-radius: var(--radii-0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: unset;
-    transition: all 100ms ease-out;
-  }
-
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jpqjUq {
-    border: 0;
-    background: var(--colors-tonal200);
-  }
-}
-
-@media  {
-  .c-fIXJvv-gvmVBy-size-md {
-    font-size: var(--fontSizes-md);
-    line-height: 1.5;
-  }
-
-  .c-fIXJvv-gvmVBy-size-md::before {
-    content: '';
-    margin-bottom: -0.3864em;
-    display: table;
-  }
-
-  .c-fIXJvv-gvmVBy-size-md::after {
-    content: '';
-    margin-top: -0.3864em;
-    display: table;
-  }
-
-  .c-fDzwZw-PrXKS-size-md {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
-  }
-
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
-  }
-
-  .c-jpqjUq-fKZlxR-orientation-vertical {
-    height: 100%;
-    width: 1px;
-    min-height: var(--sizes-3);
-  }
-}
-
-@media  {
-  .c-fDzwZw-otpKd-cv {
-    background: transparent;
-    color: var(--colors-tonal300);
-  }
-
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-}
-
-@media  {
-  .c-jpqjUq-ijAuhka-css {
-    min-height: 28px;
-    background: var(--colors-tonal100);
-  }
-}
-
-<body>
-  <div
-    class="c-goJbTI"
-  >
-    <div
-      class="c-dhzjXW c-ftiHlK"
-    >
-      <a
-        class="c-dbEDIJ"
-        href="atomlearning.co.uk"
-      >
-        <p
-          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
-        >
-          Admin Panel
-        </p>
-      </a>
-      <button
-        aria-label="Search"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14.412 14.412L20 20"
-          />
-          <circle
-            cx="10"
-            cy="10"
-            r="6"
-          />
-        </svg>
-      </button>
-      <hr
-        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ijAuhka-css"
-      />
-      <button
-        aria-label="Light/Dark mode"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
-            fill-rule="evenodd"
-          />
-          <path
-            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-</body>
-`;
-
 exports[`TopBar component renders with the size prop lg 1`] = `
 @media  {
   .c-glwkin {
@@ -241,13 +18,15 @@ exports[`TopBar component renders with the size prop lg 1`] = `
     display: flex;
   }
 
-  .c-juHlLg {
+  .c-bywLwH {
     align-items: center;
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
     width: 100%;
   }
 
 @media (min-width: 800px) {
-    .c-juHlLg {
+    .c-bywLwH {
       margin-left: var(--space-5);
       margin-right: var(--space-5);
     }
@@ -355,13 +134,13 @@ exports[`TopBar component renders with the size prop lg 1`] = `
 }
 
 @media size {
-    .c-juHlLg-kUKTlI-size-md {
+    .c-bywLwH-kUKTlI-size-md {
       height: var(--sizes-4);
     }
 }
 
 @media size {
-    .c-juHlLg-kUKTlI-size-md .topbar-brand-logo[src$=".svg"] {
+    .c-bywLwH-kUKTlI-size-md .topbar-brand-logo[src$=".svg"] {
       height: 24px;
       width: auto;
     }
@@ -374,13 +153,13 @@ exports[`TopBar component renders with the size prop lg 1`] = `
 }
 
 @media size {
-    .c-juHlLg-hTLIsj-size-lg {
+    .c-bywLwH-hTLIsj-size-lg {
       height: 80px;
     }
 }
 
 @media size {
-    .c-juHlLg-hTLIsj-size-lg .topbar-brand-logo[src$=".svg"] {
+    .c-bywLwH-hTLIsj-size-lg .topbar-brand-logo[src$=".svg"] {
       height: 32px;
       width: auto;
     }
@@ -420,7 +199,7 @@ exports[`TopBar component renders with the size prop lg 1`] = `
     class="c-glwkin c-glwkin-ipiiai-size-lg"
   >
     <div
-      class="c-dhzjXW c-juHlLg c-juHlLg-hTLIsj-size-lg"
+      class="c-dhzjXW c-bywLwH c-bywLwH-hTLIsj-size-lg"
     >
       <a
         class="c-dbEDIJ"
@@ -500,13 +279,15 @@ exports[`TopBar component renders with the size prop md 1`] = `
     display: flex;
   }
 
-  .c-juHlLg {
+  .c-bywLwH {
     align-items: center;
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
     width: 100%;
   }
 
 @media (min-width: 800px) {
-    .c-juHlLg {
+    .c-bywLwH {
       margin-left: var(--space-5);
       margin-right: var(--space-5);
     }
@@ -614,13 +395,13 @@ exports[`TopBar component renders with the size prop md 1`] = `
 }
 
 @media size {
-    .c-juHlLg-kUKTlI-size-md {
+    .c-bywLwH-kUKTlI-size-md {
       height: var(--sizes-4);
     }
 }
 
 @media size {
-    .c-juHlLg-kUKTlI-size-md .topbar-brand-logo[src$=".svg"] {
+    .c-bywLwH-kUKTlI-size-md .topbar-brand-logo[src$=".svg"] {
       height: 24px;
       width: auto;
     }
@@ -660,7 +441,7 @@ exports[`TopBar component renders with the size prop md 1`] = `
     class="c-glwkin c-glwkin-byWREH-size-md"
   >
     <div
-      class="c-dhzjXW c-juHlLg c-juHlLg-kUKTlI-size-md"
+      class="c-dhzjXW c-bywLwH c-bywLwH-kUKTlI-size-md"
     >
       <a
         class="c-dbEDIJ"
@@ -740,13 +521,15 @@ exports[`TopBar component renders without size prop 1`] = `
     display: flex;
   }
 
-  .c-juHlLg {
+  .c-bywLwH {
     align-items: center;
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
     width: 100%;
   }
 
 @media (min-width: 800px) {
-    .c-juHlLg {
+    .c-bywLwH {
       margin-left: var(--space-5);
       margin-right: var(--space-5);
     }
@@ -879,7 +662,7 @@ exports[`TopBar component renders without size prop 1`] = `
     class="c-glwkin"
   >
     <div
-      class="c-dhzjXW c-juHlLg"
+      class="c-dhzjXW c-bywLwH"
     >
       <a
         class="c-dbEDIJ"

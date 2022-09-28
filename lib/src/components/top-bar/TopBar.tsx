@@ -49,6 +49,7 @@ const StyledRoot = styled('div', {
 
 const Container = styled(Flex, {
   alignItems: 'center',
+  mx: '$4',
   width: '100%',
   '@md': {
     mx: '$5'
@@ -70,7 +71,7 @@ const Container = styled(Flex, {
           '&[src$=".svg"]': {
             height: 32,
             width: 'auto'
-          },
+          }
         }
       }
     }
