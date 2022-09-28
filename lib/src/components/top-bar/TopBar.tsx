@@ -27,7 +27,6 @@ const StyledRoot = styled('div', {
   alignItems: 'center',
   width: '100vw',
   top: '0',
-  height: '$6',
   zIndex: 1,
   borderBottom: '1px solid $tonal100',
   transition: 'box-shadow .2s ease-out',
@@ -36,30 +35,63 @@ const StyledRoot = styled('div', {
       true: {
         boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);'
       }
+    },
+    size: {
+      md: {
+        height: '$6'
+      },
+      lg: {
+        height: '$7'
+      }
     }
   }
 })
 
 const Container = styled(Flex, {
   alignItems: 'center',
-  height: '$4',
-  mx: '$4',
   width: '100%',
   '@md': {
     mx: '$5'
+  },
+  variants: {
+    size: {
+      md: {
+        height: '$4',
+        [`& ${TopBarBrandLogo}`]: {
+          '&[src$=".svg"]': {
+            height: 24,
+            width: 'auto'
+          }
+        }
+      },
+      lg: {
+        height: 80,
+        [`& ${TopBarBrandLogo}`]: {
+          '&[src$=".svg"]': {
+            height: 32,
+            width: 'auto'
+          },
+        }
+      }
+    }
   }
 })
 
-interface TopBarProps {
+type StyledRootProps = React.ComponentProps<typeof StyledRoot>
+
+interface TopBarProps extends StyledRootProps {
   css?: CSS
 }
 
-export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = (props) => {
+export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
+  size = 'md',
+  ...props
+}) => {
   const { y: scrollPositionY } = useScrollPosition()
 
   return (
-    <StyledRoot hasScrolled={!!scrollPositionY}>
-      <Container {...props} />
+    <StyledRoot hasScrolled={!!scrollPositionY} size={size}>
+      <Container size={size} {...props} />
     </StyledRoot>
   )
 }
