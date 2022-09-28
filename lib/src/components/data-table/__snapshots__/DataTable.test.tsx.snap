@@ -469,7 +469,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-GSaiK c-GSaiK-ifYtQLP-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -604,22 +604,22 @@ exports[`DataTable component renders 1`] = `
         class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
       >
         <option
-          value="1"
+          value="0"
         >
           1
         </option>
         <option
-          value="2"
+          value="1"
         >
           2
         </option>
         <option
-          value="3"
+          value="2"
         >
           3
         </option>
         <option
-          value="4"
+          value="3"
         >
           4
         </option>

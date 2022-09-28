@@ -28,13 +28,20 @@ export const DataTableHeader: React.FC<DataTableHeaderProps> = ({
 }) => {
   const sort = header.column.getIsSorted()
   const { userSortable } = useDataTable()
+  // false for display columns, e.g. "Actions"
+  const isSortableData = header.column.getCanSort()
 
   return (
     <Table.HeaderCell
       onClick={
-        userSortable ? header.column.getToggleSortingHandler() : undefined
+        userSortable && isSortableData
+          ? header.column.getToggleSortingHandler()
+          : undefined
       }
-      css={{ cursor: userSortable ? 'pointer' : 'initial', ...css }}
+      css={{
+        cursor: userSortable && isSortableData ? 'pointer' : 'initial',
+        ...css
+      }}
       {...props}
     >
       <Flex css={{ alignItems: 'center' }}>

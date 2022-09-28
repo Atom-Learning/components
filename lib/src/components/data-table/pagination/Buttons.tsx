@@ -35,7 +35,6 @@ export const GotoPageSelect: React.FC<{
   pageCount: number
   gotoPage: (pageNumber: number) => void
 }> = ({ gotoPage, pageCount, pageIndex }) => {
-  console.log('page index:', pageIndex)
   return (
     <Flex css={{ alignItems: 'center' }}>
       <Select
@@ -46,11 +45,13 @@ export const GotoPageSelect: React.FC<{
           gotoPage(Number(e.target.value))
         }}
       >
-        {Array.from({ length: pageCount }, (z, x) => x + 1).map((i) => (
-          <option key={i} value={i}>
-            {i}
-          </option>
-        ))}
+        {Array.from({ length: pageCount }, (z, x) => x).map((i) => {
+          return (
+            <option key={i} value={i}>
+              {i + 1}
+            </option>
+          )
+        })}
       </Select>
       <Text size="sm" css={{ flex: 'none' }}>{`of ${pageCount} ${
         pageCount > 1 ? 'pages' : 'page'
