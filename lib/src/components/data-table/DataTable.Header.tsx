@@ -34,7 +34,7 @@ export const DataTableHeader: React.FC<DataTableHeaderProps> = ({
       onClick={
         userSortable ? header.column.getToggleSortingHandler() : undefined
       }
-      css={{ ...(sort && userSortable && { position: 'relative' }), ...css }}
+      css={{ cursor: userSortable ? 'pointer' : 'initial', ...css }}
       {...props}
     >
       <Flex css={{ alignItems: 'center' }}>
