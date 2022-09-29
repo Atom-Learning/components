@@ -357,9 +357,8 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-ijCjufR-css {
+  .c-cVSpVL-ihbtntv-css {
     margin-bottom: var(--space-3);
-    visibility: initial;
   }
 
   .c-PJLV-ieyRoAv-css {
@@ -411,7 +410,7 @@ exports[`DataTable component renders 1`] = `
 
 <div>
   <label
-    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ijCjufR-css"
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
     for="User search"
   >
     User search

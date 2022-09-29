@@ -1,15 +1,16 @@
 import * as React from 'react'
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import { debounce } from 'throttle-debounce'
 
 import { SearchInput } from '../search-input'
 import { useDataTable } from './DataTableContext'
 import { Label } from '../label'
+import { OptionallyVisuallyHiddenContainer } from '../../utilities/optionally-visually-hidden-container'
 
 type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {
   label: string
   hideLabel?: boolean
 }
-
 export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   onChange,
   label,
@@ -30,12 +31,11 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
 
   return (
     <>
-      <Label
-        css={{ mb: '$3', visibility: hideLabel ? 'hidden' : 'initial' }}
-        htmlFor={label}
-      >
-        {label}
-      </Label>
+      <OptionallyVisuallyHiddenContainer hidden={hideLabel}>
+        <Label css={{ mb: '$3' }} htmlFor={label}>
+          {label}
+        </Label>
+      </OptionallyVisuallyHiddenContainer>
       <SearchInput
         {...props}
         value={globalFilter}
