@@ -21,6 +21,7 @@ export const SelectField: React.FC<SelectFieldProps> = ({
   validation,
   prompt,
   description,
+  hideLabel,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -36,6 +37,7 @@ export const SelectField: React.FC<SelectFieldProps> = ({
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
+      hideLabel={hideLabel}
     >
       <Select
         name={name}
