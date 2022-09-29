@@ -1,0 +1,649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchField component renders a field in error state - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .c-fNCeYG {
+    color: var(--colors-danger);
+    margin-left: var(--space-1);
+    font-weight: 400;
+  }
+
+  .c-fzYfTW {
+    flex-shrink: 0;
+    margin-right: var(--space-2);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fZTBsJ-bXVTjQ-state-error {
+    border: 1px solid var(--colors-danger);
+  }
+
+  .c-PJLV-iymbh-theme-error {
+    color: var(--colors-danger);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-dhzjXW-ijkHUQU-css {
+    margin-top: var(--space-2);
+  }
+
+  .c-fIXJvv-igszWir-css {
+    color: inherit;
+    transform: translateY(var(--space-0));
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="searchField"
+        >
+          <span
+            aria-hidden="true"
+            class="c-fNCeYG"
+          >
+            *
+          </span>
+        </label>
+      </div>
+      <div
+        class="c-PJLV c-PJLV-icmpvrW-css"
+      >
+        <input
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
+          id="searchField"
+          llabel="Search Field"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.412 14.412L20 20"
+          />
+          <circle
+            cx="10"
+            cy="10"
+            r="6"
+          />
+        </svg>
+      </div>
+      <div
+        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v5"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="16"
+            y2="16"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+        </svg>
+        <span
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+        >
+          This field is required
+        </span>
+      </div>
+    </div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`SearchField component renders a field with a disabled input - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="searchField"
+        >
+          Search Field
+        </label>
+      </div>
+      <div
+        class="c-PJLV c-PJLV-icmpvrW-css"
+      >
+        <input
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          disabled=""
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.412 14.412L20 20"
+          />
+          <circle
+            cx="10"
+            cy="10"
+            r="6"
+          />
+        </svg>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`SearchField component renders a field with a search input - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="searchField"
+        >
+          Search Field
+        </label>
+      </div>
+      <div
+        class="c-PJLV c-PJLV-icmpvrW-css"
+      >
+        <input
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.412 14.412L20 20"
+          />
+          <circle
+            cx="10"
+            cy="10"
+            r="6"
+          />
+        </svg>
+      </div>
+    </div>
+  </form>
+</div>
+`;

@@ -1,7 +1,7 @@
 import { Content, Overlay, Portal } from '@radix-ui/react-alert-dialog'
 import * as React from 'react'
 
-import { DIALOG_Z_INDEX } from '~/constants/dialog'
+import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 import { keyframes, styled } from '~/stitches'
 import { fadeIn, fadeOut } from '~/utilities'
 
