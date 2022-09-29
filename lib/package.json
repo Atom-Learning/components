@@ -145,6 +145,7 @@
     "@radix-ui/react-visually-hidden": "0.1.4",
     "@reach/combobox": "^0.16.1",
     "@stitches/react": "^1.2.8",
+    "@tanstack/react-table": "^8.5.11",
     "@types/react": "^17.0.30",
     "color2k": "^2.0.0",
     "dayjs": "^1.10.7",

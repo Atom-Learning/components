@@ -4,20 +4,26 @@ import { styled } from '~/stitches'
 
 import { TableHeaderCell } from './TableHeaderCell'
 
+export const TABLE_HEADER_THEMES = {
+  PRIMARY: 'primary',
+  PRIMARY_DARK: 'primaryDark',
+  LIGHT: 'light'
+}
+
 const StyledTableHeader = styled('thead', {
   variants: {
     theme: {
-      primary: {
+      [TABLE_HEADER_THEMES.PRIMARY]: {
         [`${TableHeaderCell}`]: {
           bg: '$primary'
         }
       },
-      primaryDark: {
+      [TABLE_HEADER_THEMES.PRIMARY_DARK]: {
         [`${TableHeaderCell}`]: {
           bg: '$primaryDark'
         }
       },
-      light: {
+      [TABLE_HEADER_THEMES.LIGHT]: {
         [`${TableHeaderCell}`]: {
           bg: '$tonal50',
           color: '$tonal600'
