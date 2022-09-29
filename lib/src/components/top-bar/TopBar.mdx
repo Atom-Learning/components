@@ -27,12 +27,10 @@ Alternatively, if you want to avoid wrapping groups of items with a `div` purely
 
 ## TopBar Size Variant
 
-`TopBar` also takes in one of these size props `md | lg`, this size is used to dictate the height of the `TopBar` and the `TopBar.BrandLogo`.
-
-If size `md` is passed to the `TopBar` it will be 64px in height and the `TopBar.BrandLogo` will be 24px in height.
+TopBar has a default size of `md` which means that the default height of the component is 64px and the `Topbar.BrandLogo` is 24px.
 
 ```tsx preview
-<TopBar size="md">
+<TopBar>
   <TopBar.Brand href="atomlearning.co.uk">
     <TopBar.BrandLogo src={logo} />
   </TopBar.Brand>
@@ -43,16 +41,6 @@ If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar
 
 ```tsx preview
 <TopBar size="lg">
-  <TopBar.Brand href="atomlearning.co.uk">
-    <TopBar.BrandLogo src={logo} />
-  </TopBar.Brand>
-</TopBar>
-```
-
-If no size prop is added to the `TopBar` by default it will have the size `md`.
-
-```tsx preview
-<TopBar>
   <TopBar.Brand href="atomlearning.co.uk">
     <TopBar.BrandLogo src={logo} />
   </TopBar.Brand>
