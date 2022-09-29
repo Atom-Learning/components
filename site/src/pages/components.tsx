@@ -5,7 +5,7 @@ import { MdxRemote } from 'next-mdx-remote/types'
 import * as React from 'react'
 
 import { Container, Navigation } from '../components'
-import Components from '../sandbox/components'
+// import Components from '../sandbox/components'
 import { getLatestLibVersion, getPages, transformNavigationStructure } from '../utilities'
 
 type PageProps = {
@@ -45,7 +45,7 @@ const Page: React.FC<PageProps> = ({ pages, version }) => (
             An environment for displaying all of our components in various
             configurations to help test and validate design consistency
           </Text>
-          <Components />
+          {/* <Components /> */}
         </Container>
       </Box>
     </Flex>
