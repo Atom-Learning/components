@@ -1,12 +1,8 @@
-import { DataTableExample } from './DataTableExample'
-
 ---
-
 title: DataTable
-component: DataTable, DataTable.Table, DataTable.Head, DataTable.Header, DataTable.Body, DataTable.Row, DataTable.DataCell
+component: DataTable, DataTable.Table, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter
 description: Displays tabular data with features such as sorting and pagination
 category: Content
-
 ---
 
 `DataTable` provides complex features for tables, like sorting and pagination. It's built around the `@tanstack/react-table` library and exposes the `table` state from that library directly. All util functions from the library are also compatible with `DataTable`. It's worth a good read of [`@tanstack/react-table`'s documentation](https://tanstack.com/table/v8/docs/guide/introduction) too, since we won't be repeating much of it here.
@@ -24,7 +20,7 @@ Other `DataTable` components call `useDataTable` and provide useful default impl
 Here's a simple config for some table data and columns.
 
 ```tsx
-import { createColumnHelper } from '@tanstack/react-table'
+// import { createColumnHelper } from '@tanstack/react-table'
 
 const columnHelper = createColumnHelper<{
   name: string
