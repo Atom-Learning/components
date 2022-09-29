@@ -92,6 +92,15 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
+  .c-glwkin-daNQNf-size-md {
+    height: var(--sizes-6);
+  }
+
+  .c-glwkin-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+    height: 24px;
+    width: auto;
+  }
+
   .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -157,7 +166,7 @@ exports[`TopBar component renders 1`] = `
 
 <body>
   <div
-    class="c-glwkin"
+    class="c-glwkin c-glwkin-daNQNf-size-md"
   >
     <div
       class="c-dhzjXW c-ftiHlK"
@@ -314,6 +323,15 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
+  .c-glwkin-daNQNf-size-md {
+    height: var(--sizes-6);
+  }
+
+  .c-glwkin-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+    height: 24px;
+    width: auto;
+  }
+
   .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -347,21 +365,15 @@ exports[`TopBar component renders the lg variant 1`] = `
     width: 1px;
     min-height: var(--sizes-3);
   }
-}
 
-@media  {
-@media size {
-    .c-glwkin-dzdwkc-size-lg {
-      height: var(--sizes-7);
-    }
-}
+  .c-glwkin-lcsdih-size-lg {
+    height: var(--sizes-7);
+  }
 
-@media size {
-    .c-glwkin-dzdwkc-size-lg .topbar-brand-logo[src$=".svg"] {
-      height: 32px;
-      width: auto;
-    }
-}
+  .c-glwkin-lcsdih-size-lg .topbar-brand-logo[src$=".svg"] {
+    height: 32px;
+    width: auto;
+  }
 }
 
 @media  {
@@ -394,7 +406,7 @@ exports[`TopBar component renders the lg variant 1`] = `
 
 <body>
   <div
-    class="c-glwkin c-glwkin-dzdwkc-size-lg"
+    class="c-glwkin c-glwkin-lcsdih-size-lg"
   >
     <div
       class="c-dhzjXW c-ftiHlK"
