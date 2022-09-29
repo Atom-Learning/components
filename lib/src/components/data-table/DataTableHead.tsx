@@ -7,19 +7,19 @@ type DataTableHeadProps = Omit<
   React.ComponentProps<typeof Table.Header>,
   'children'
 > & {
-  userSortable?: boolean
+  sortable?: boolean
 }
 
 export const DataTableHead: React.FC<DataTableHeadProps> = ({
-  userSortable = true,
+  sortable = true,
   theme = 'light',
   ...props
 }) => {
-  const { getHeaderGroups, setUserSortable, getState } = useDataTable()
+  const { getHeaderGroups, setIsSortable } = useDataTable()
 
   React.useEffect(() => {
-    setUserSortable(userSortable)
-  }, [userSortable, setUserSortable])
+    setIsSortable(sortable)
+  }, [sortable, setIsSortable])
 
   return (
     <Table.Header theme={theme} {...props}>
@@ -27,7 +27,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
         return (
           <Table.Row key={headerGroup.id}>
             {headerGroup.headers.map((header) => (
-              <DataTable.Header header={header} key={header.id} />
+              <DataTable.HeaderCell header={header} key={header.id} />
             ))}
           </Table.Row>
         )

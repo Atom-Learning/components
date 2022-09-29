@@ -38,7 +38,7 @@ const columns = [
   columnHelper.accessor('hobby', {
     cell: (info) => info.getValue()
   }),
-  // Columns created with columnHelper.display won't get be sortable.
+  // Columns created with columnHelper.display won't be sortable.
   // They need a header to be set manually since they're not just reading
   // a property from the row.
   columnHelper.display({
@@ -62,13 +62,13 @@ The following two examples are exactly equivalent in their output. The second ex
 
 ```tsx
 <DataTable columns={columns} data={data}>
-  <DataTable.Table userSortable css={{mb: '$4'}}/>
+  <DataTable.Table sortable css={{mb: '$4'}}/>
   <DataTable.Pagination pageSize={5} />
 </DataTable>
 
 <DataTable columns={columns} data={data}>
   <Table>
-    <DataTable.Head userSortable />
+    <DataTable.Head sortable />
     <DataTable.Body />
   </Table>
   <DataTable.Pagination pageSize={5} />
@@ -79,10 +79,10 @@ The following two examples are exactly equivalent in their output. The second ex
 
 If you need more flexibility than the default implementations provide, you can roll your own. Note that you can mix and match default implementations with your own. For example you could write your own table head implementation but use `DataTable.Body` for the body.
 
-Note also that `useDataTable` can only be called by a child component of `DataTable.Provider`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
+Note also that `useDataTable` can only be called by a child component of `DataTable`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
 ```tsx
-<DataTable.Provider columns={columns} data={data}>
+<DataTable columns={columns} data={data}>
   {() => {
     const { getHeaderGroups, getRowModel, setGlobalFilter, getState } =
       useDataTable()
@@ -134,7 +134,7 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
       // Then you could build your own pagination here too I guess? If you really wanted to?
     )
   }}
-</DataTable.Provider>
+</DataTable>
 ```
 
 ## Features
@@ -153,8 +153,8 @@ A `DataTable`'s data can be sorted by default and can also be sortable by the us
 
 #### User sorting
 
-If `DataTable`'s `userSortable` state is `true`, then `DataTable.Header` will be clickable to toggle between ascending, descending and no sorting in any sortable columns. `DataTable.Head` and `DataTable.Table` take an optional boolean `userSortable` prop to configure this option.
+If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be clickable to toggle between ascending, descending and no sorting in any sortable columns. `DataTable.Head` and `DataTable.Table` take an optional boolean `sortable` prop to configure this option.
 
 ### Pagination
 
-`DataTable.Pagination` can be passed as a child to `DataTable.Provider` to render the pagination UI and configure the parent `DataTable.Provider` to paginate its data.
+`DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.

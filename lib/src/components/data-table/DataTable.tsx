@@ -1,13 +1,13 @@
 import * as React from 'react'
 
-import { DataTableBody } from './DataTable.Body'
-import { DataTableDataCell } from './DataTable.DataCell'
+import { DataTableBody } from './DataTableBody'
+import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableProvider } from './DataTableContext'
-import { DataTableHead } from './DataTable.Head'
-import { DataTableHeader } from './DataTable.Header'
-import { DataTableRow } from './DataTable.Row'
-import { DataTableSearch } from './DataTable.Search'
-import { DataTableTable } from './DataTable.Table'
+import { DataTableHead } from './DataTableHead'
+import { DataTableHeaderCell } from './DataTableHeaderCell'
+import { DataTableRow } from './DataTableRow'
+import { DataTableGlobalFilter } from './DataTableGlobalFilter'
+import { DataTableTable } from './DataTableTable'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
@@ -23,6 +23,11 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    */
   DataCell: typeof DataTableDataCell
+  /** Default global search implementation for `DataTable`
+   *
+   * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
+   */
+  GloabalFilter: typeof DataTableGlobalFilter
 
   /** Default table head implementation
    *
@@ -38,7 +43,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * you can build your own implementation with the UI-only `Table` components.
    */
 
-  Header: typeof DataTableHeader
+  HeaderCell: typeof DataTableHeaderCell
   /** Default pagination implementation for `DataTable`
    *
    * Can navigate forward, backward, or to any specific page. If you need more customisation options,
@@ -54,11 +59,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    */
 
   Row: typeof DataTableRow
-  /** Default global search implementation for `DataTable`
-   *
-   * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
-   */
-  Search: typeof DataTableSearch
+
   /** Default table implementation for `DataTable`.
    *
    * Can be configured with sortable columns and different visual themes.
@@ -81,8 +82,8 @@ export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
 DataTable.Body = DataTableBody
 DataTable.DataCell = DataTableDataCell
 DataTable.Head = DataTableHead
-DataTable.Header = DataTableHeader
+DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Pagination = Pagination
 DataTable.Row = DataTableRow
-DataTable.Search = DataTableSearch
+DataTable.GloabalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable

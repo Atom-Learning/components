@@ -48,8 +48,8 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Search label="User search" css={{ mb: '$4' }} />
-        <DataTable.Table userSortable css={{ mb: '$4' }} />
+        <DataTable.GloabalFilter label="User search" css={{ mb: '$4' }} />
+        <DataTable.Table sortable css={{ mb: '$4' }} />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -74,7 +74,7 @@ describe('DataTable component', () => {
   it('Sorts data on click of sortable header cell', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Table userSortable />
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -94,7 +94,7 @@ describe('DataTable.Pagination component', () => {
   it('Displays the correct page number', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Table userSortable />
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
     )
@@ -112,7 +112,7 @@ describe('DataTable.Pagination component', () => {
   it('Navigates to the correct page', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Table userSortable />
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={10} />
       </DataTable>
     )
@@ -126,7 +126,7 @@ describe('DataTable.Pagination component', () => {
   it('Disables previous button on first page and next page button on last page', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Table userSortable />
+        <DataTable.Table sortable />
         <DataTable.Pagination pageSize={10} />
       </DataTable>
     )
@@ -147,8 +147,8 @@ describe('DataTable Search component', () => {
   it('Filters table based on any column', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.Search label="Search" />
-        <DataTable.Table userSortable />
+        <DataTable.GloabalFilter label="Search" />
+        <DataTable.Table sortable />
       </DataTable>
     )
 

@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 import { createColumnHelper } from '@tanstack/react-table'
-import { Box, Flex, globalCss, DataTable } from '../src'
+import { Box, Button, Flex, globalCss, DataTable } from '../src'
 
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
@@ -47,32 +47,47 @@ const data = [
   { name: 'tina', hobby: 'acting' }
 ]
 
-const App = () => (
-  <Flex
-    css={{
-      minHeight: '100vh',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'column'
-    }}
-  >
-    <Box css={{ width: '700px', height: '900px' }}>
-      <DataTable
-        columns={columns}
-        data={data}
-        defaultSort={{ column: 'name', direction: 'asc' }}
+const App = () => {
+  const [sortState, setSortState] = React.useState({
+    column: 'name',
+    direction: 'asc'
+  })
+
+  console.log('sortState:', sortState)
+  return (
+    <Flex
+      css={{
+        minHeight: '100vh',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
+      }}
+    >
+      <Button
+        onClick={() => {
+          console.log('clicking')
+          setSortState({
+            column: 'hobby',
+            direction: 'desc'
+          })
+        }}
       >
-        <DataTable.Search
-          css={{ mb: '$4', maxWidth: '300px' }}
-          label="User search"
-          placeholder="Search for a user"
-          hideLabel
-        />
-        <DataTable.Table css={{ mb: '$4' }} theme="light" striped />
-        <DataTable.Pagination pageSize={5} />
-      </DataTable>
-    </Box>
-  </Flex>
-)
+        Clicky click
+      </Button>
+      <Box css={{ width: '700px', height: '900px' }}>
+        <DataTable columns={columns} data={data} defaultSort={sortState}>
+          <DataTable.Search
+            css={{ mb: '$4', maxWidth: '300px' }}
+            label="User search"
+            placeholder="Search for a user"
+            hideLabel
+          />
+          <DataTable.Table css={{ mb: '$4' }} theme="light" striped />
+          <DataTable.Pagination pageSize={5} />
+        </DataTable>
+      </Box>
+    </Flex>
+  )
+}
 
 ReactDOM.render(<App />, document.getElementById('root'))

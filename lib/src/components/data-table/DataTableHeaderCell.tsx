@@ -12,43 +12,47 @@ type DataTableHeaderProps = React.ComponentProps<typeof Table.HeaderCell> & {
 }
 
 const sortIcons = {
-  asc: (
-    <Icon is={SortUp} size="sm" css={{ position: 'absolute', left: '$1' }} />
-  ),
-  desc: (
-    <Icon is={SortDown} size="sm" css={{ position: 'absolute', left: '$1' }} />
-  )
+  asc: SortUp,
+  desc: SortDown
 }
 
-export const DataTableHeader: React.FC<DataTableHeaderProps> = ({
+const SortIcon: React.FC<{ direction: 'asc' | 'desc' }> = ({ direction }) => (
+  <Icon
+    is={sortIcons[direction]}
+    size="sm"
+    css={{ position: 'absolute', left: '$1' }}
+  />
+)
+
+export const DataTableHeaderCell: React.FC<DataTableHeaderProps> = ({
   header,
   children,
   css,
   ...props
 }) => {
-  const sort = header.column.getIsSorted()
-  const { userSortable } = useDataTable()
+  const sortDirection = header.column.getIsSorted()
+  const { isSortable: isSortableTable } = useDataTable()
   // false for display columns, e.g. "Actions"
-  const isSortableData = header.column.getCanSort()
+  const isDataColumn = header.column.getCanSort()
 
   return (
     <Table.HeaderCell
       onClick={
-        userSortable && isSortableData
+        isSortableTable && isDataColumn
           ? header.column.getToggleSortingHandler()
           : undefined
       }
       css={{
-        cursor: userSortable && isSortableData ? 'pointer' : 'initial',
+        cursor: isSortableTable && isDataColumn ? 'pointer' : 'initial',
         ...css
       }}
       {...props}
     >
       <Flex css={{ alignItems: 'center' }}>
         {flexRender(header.column.columnDef.header, header.getContext())}
-        {sort && userSortable && (
+        {sortDirection && isSortableTable && (
           <Flex css={{ position: 'relative', alignItems: 'center' }}>
-            {sortIcons[sort as string]}
+            <SortIcon direction={sortDirection} />
           </Flex>
         )}
       </Flex>

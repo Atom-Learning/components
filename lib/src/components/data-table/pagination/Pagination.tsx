@@ -1,10 +1,11 @@
 import * as React from 'react'
+
 import { styled } from '~/stitches'
 
+import { useDataTable } from '../DataTableContext'
+import { DirectionButton, GotoPageSelect } from './PaginationButtons'
 import { Flex } from '../../flex'
 import { Text } from '../../text'
-import { useDataTable } from '../DataTableContext'
-import { DirectionButton, GotoPageSelect } from './Buttons'
 
 const StyledNav = styled('nav', {
   display: 'flex',
@@ -18,7 +19,6 @@ type PaginationProps = React.ComponentProps<typeof StyledNav> & {
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
 export const Pagination: React.FC<PaginationProps> = ({
-  css,
   pageSize = 10,
   ...props
 }) => {
@@ -49,7 +49,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
 
   return (
-    <StyledNav {...props} css={css}>
+    <StyledNav {...props}>
       <Text size="sm">
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>

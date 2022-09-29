@@ -80,7 +80,7 @@ export const Select: React.FC<SelectProps> = React.forwardRef(
 
     if (
       [remainingProps.value, remainingProps.defaultValue].every(
-        (value) => !value && value !== 0
+        (value) => value === undefined
       )
     ) {
       props.defaultValue = ''

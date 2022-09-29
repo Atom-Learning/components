@@ -10,7 +10,7 @@ type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {
   hideLabel?: boolean
 }
 
-export const DataTableSearch: React.FC<DataTableSearchProps> = ({
+export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   onChange,
   label,
   hideLabel = false,
