@@ -17,7 +17,7 @@ interface TopBarSubComponents {
 }
 
 const TopBarDivider = () => (
-  <Divider orientation="vertical" css={{ minHeight: 28, bg: '$tonal100' }} />
+  <Divider orientation="vertical" css={{ height: '$2', bg: '$tonal100' }} />
 )
 
 const StyledRoot = styled('div', {
@@ -38,26 +38,7 @@ const StyledRoot = styled('div', {
     },
     size: {
       md: {
-        height: '$6'
-      },
-      lg: {
-        height: '$7'
-      }
-    }
-  }
-})
-
-const Container = styled(Flex, {
-  alignItems: 'center',
-  mx: '$4',
-  width: '100%',
-  '@md': {
-    mx: '$5'
-  },
-  variants: {
-    size: {
-      md: {
-        height: '$4',
+        height: '$6',
         [`& ${TopBarBrandLogo}`]: {
           '&[src$=".svg"]': {
             height: 24,
@@ -66,7 +47,7 @@ const Container = styled(Flex, {
         }
       },
       lg: {
-        height: 80,
+        height: '$7',
         [`& ${TopBarBrandLogo}`]: {
           '&[src$=".svg"]': {
             height: 32,
@@ -75,6 +56,16 @@ const Container = styled(Flex, {
         }
       }
     }
+  }
+})
+
+const Container = styled(Flex, {
+  alignItems: 'center',
+  height: '$4',
+  mx: '$4',
+  width: '100%',
+  '@md': {
+    mx: '$5'
   }
 })
 
@@ -92,7 +83,7 @@ export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
 
   return (
     <StyledRoot hasScrolled={!!scrollPositionY} size={size}>
-      <Container size={size} {...props} />
+      <Container {...props} />
     </StyledRoot>
   )
 }
