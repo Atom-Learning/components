@@ -27,7 +27,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
    */
-  GloabalFilter: typeof DataTableGlobalFilter
+  GlobalFilter: typeof DataTableGlobalFilter
 
   /** Default table head implementation
    *
@@ -85,5 +85,5 @@ DataTable.Head = DataTableHead
 DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Pagination = Pagination
 DataTable.Row = DataTableRow
-DataTable.GloabalFilter = DataTableGlobalFilter
+DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable

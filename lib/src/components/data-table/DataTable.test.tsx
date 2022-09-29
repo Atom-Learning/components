@@ -48,7 +48,7 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
-        <DataTable.GloabalFilter label="User search" css={{ mb: '$4' }} />
+        <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
         <DataTable.Table sortable css={{ mb: '$4' }} />
         <DataTable.Pagination pageSize={5} />
       </DataTable>
@@ -147,7 +147,7 @@ describe('DataTable Search component', () => {
   it('Filters table based on any column', () => {
     render(
       <DataTable columns={columns} data={data}>
-        <DataTable.GloabalFilter label="Search" />
+        <DataTable.GlobalFilter label="Search" />
         <DataTable.Table sortable />
       </DataTable>
     )
