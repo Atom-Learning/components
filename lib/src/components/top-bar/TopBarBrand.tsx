@@ -18,20 +18,19 @@ export const TopBarBrandLogo = ({
 }: TopBarBrandLogoProps): JSX.Element => {
   return (
     <Image
+      className="topbar-brand-logo"
       src={src}
       alt={alt}
       css={{
         mr: '$3',
         mb: '5px',
-        '&[src$=".svg"]': {
-          height: 24,
-          width: 'auto'
-        },
         ...css
       }}
     />
   )
 }
+
+TopBarBrandLogo.toString = () => '.topbar-brand-logo'
 
 export const TopBarBrandName = styled(Text, {
   color: '$tonal400'
