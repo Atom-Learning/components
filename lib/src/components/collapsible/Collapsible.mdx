@@ -1,0 +1,31 @@
+---
+title: Collapsible
+component: Collapsible,Collapsible.Trigger,Collapsible.Content
+description: An interactive component which expands/collapses a panel.
+category: Layout
+---
+
+Collapsible exports three components:
+
+- `Collapsible`
+- `Collapsible.Trigger`
+- `Collapsible.Content`
+
+These components have some minimal styling applied to align the items within and provide space between them. The `Collapsible.Trigger` component also renders a Chevron icon to indicate the current state of the collapsible.
+
+This component is based on the `Collapsible` component from Radix UI, you can find more information in [their docs](https://www.radix-ui.com/docs/primitives/components/collapsible).
+
+```tsx preview
+<Collapsible space={3}>
+  <Collapsible.Trigger>
+    <Heading size="sm">Collapsible trigger</Heading>
+  </Collapsible.Trigger>
+  <Collapsible.Content showDivider>
+    <Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel volutpat
+      arcu, quis dictum mi. Aliquam magna augue, semper quis arcu sit amet,
+      egestas mollis dolor. Integer tincidunt eget augue quis pulvinar.
+    </Text>
+  </Collapsible.Content>
+</Collapsible>
+```

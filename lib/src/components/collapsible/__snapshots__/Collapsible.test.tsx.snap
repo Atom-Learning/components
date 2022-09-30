@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapsible component renders a Collapsible 1`] = `
+@media  {
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
+  .c-gsmDXe {
+    cursor: pointer;
+  }
+
+  .c-bbFHCz {
+    overflow: hidden;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-bbFHCz[data-state="open"] {
+      animation: k-eKwwnt 200ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-bbFHCz[data-state="closed"] {
+      animation: k-mHYuV 200ms ease-out;
+    }
+}
+}
+
+@media  {
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-PJLV-kgwRCv-space-4 > button {
+    padding: var(--space-4);
+  }
+
+  .c-PJLV-kgwRCv-space-4 > div {
+    padding: 0 var(--space-4) var(--space-4) var(--space-4);
+  }
+
+  .c-PJLV-kgwRCv-space-4 > div hr {
+    margin-top: 0;
+    margin-bottom: calc(var(--space-4) + var(--space-2));
+  }
+}
+
+@media  {
+  .c-dbrbZt-iilNZcu-css {
+    margin-right: var(--space-4);
+    transition: transform 200ms ease-out;
+  }
+
+  [data-state="open"] .c-dbrbZt-iilNZcu-css {
+    transform: rotate(90deg);
+  }
+
+  .c-gsmDXe-iftxirp-css {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background: transparent;
+  }
+
+  .c-PJLV-ifGHEql-css {
+    width: 100%;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-kgwRCv-space-4 c-PJLV-ifGHEql-css"
+    data-state="closed"
+  >
+    <button
+      aria-controls="radix-0"
+      aria-expanded="false"
+      class="c-gsmDXe c-gsmDXe-iftxirp-css"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iilNZcu-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="10 6 16 12 10 18 10 18"
+        />
+      </svg>
+      <p
+        class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
+      >
+        This is the trigger
+      </p>
+    </button>
+    <div
+      class="c-bbFHCz"
+      data-state="closed"
+      data-testid="content"
+      hidden=""
+      id="radix-0"
+      style=""
+    />
+  </div>
+</div>
+`;
