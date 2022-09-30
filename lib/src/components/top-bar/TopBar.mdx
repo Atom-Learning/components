@@ -60,6 +60,8 @@ If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar
 `TopBar.Brand` renders a styled link.
 
 ```tsx
+// You'll import the logo like this in practice, but it doesn't work
+// in these previews
 // import logo from '@atom-learning/theme/lib/assets/logo.svg'
 
 const App = () => {
@@ -68,7 +70,7 @@ const App = () => {
       <TopBar.Brand href="atomlearning.co.uk">
         <TopBar.BrandLogo
           src={
-            'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg' 
+            'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg'
           }
         />
         <TopBar.BrandName>Admin Panel</TopBar.BrandName>
