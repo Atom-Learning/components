@@ -32,7 +32,11 @@ TopBar has a default size of `md` which means that the default height of the com
 ```tsx preview
 <TopBar>
   <TopBar.Brand href="atomlearning.co.uk">
-    <TopBar.BrandLogo src={logo} />
+    <TopBar.BrandLogo
+      src={
+        'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg'
+      }
+    />
   </TopBar.Brand>
 </TopBar>
 ```
@@ -42,7 +46,11 @@ If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar
 ```tsx preview
 <TopBar size="lg">
   <TopBar.Brand href="atomlearning.co.uk">
-    <TopBar.BrandLogo src={logo} />
+    <TopBar.BrandLogo
+      src={
+        'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg'
+      }
+    />
   </TopBar.Brand>
 </TopBar>
 ```
@@ -52,13 +60,17 @@ If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar
 `TopBar.Brand` renders a styled link.
 
 ```tsx
-import logo from '@atom-learning/theme/lib/assets/logo.svg'
+// import logo from '@atom-learning/theme/lib/assets/logo.svg'
 
 const App = () => {
   return (
     <TopBar>
       <TopBar.Brand href="atomlearning.co.uk">
-        <TopBar.BrandLogo src={logo} />
+        <TopBar.BrandLogo
+          src={
+            'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg' 
+          }
+        />
         <TopBar.BrandName>Admin Panel</TopBar.BrandName>
       </TopBar.Brand>
     </TopBar>
