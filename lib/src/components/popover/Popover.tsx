@@ -2,8 +2,6 @@ import { Root, Portal, Trigger } from '@radix-ui/react-popover'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { ToastProvider } from '../toast'
-
 import { PopoverContent } from './PopoverContent'
 
 const StyledRoot = styled(Root, {})
