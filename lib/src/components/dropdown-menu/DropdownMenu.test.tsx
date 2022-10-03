@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
@@ -7,17 +6,15 @@ import * as React from 'react'
 import { DropdownMenu } from '.'
 
 const ExampleDropdownMenu = (props) => (
-  <IdProvider>
-    <DropdownMenu {...props}>
-      <DropdownMenu.Trigger>TRIGGER</DropdownMenu.Trigger>
-      <DropdownMenu.Content>
-        <DropdownMenu.Item>Item 1</DropdownMenu.Item>
-        <DropdownMenu.Item>Item 2</DropdownMenu.Item>
-        <DropdownMenu.Separator />
-        <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.LinkItem>
-      </DropdownMenu.Content>
-    </DropdownMenu>
-  </IdProvider>
+  <DropdownMenu {...props}>
+    <DropdownMenu.Trigger>TRIGGER</DropdownMenu.Trigger>
+    <DropdownMenu.Content>
+      <DropdownMenu.Item>Item 1</DropdownMenu.Item>
+      <DropdownMenu.Item>Item 2</DropdownMenu.Item>
+      <DropdownMenu.Separator />
+      <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.LinkItem>
+    </DropdownMenu.Content>
+  </DropdownMenu>
 )
 
 describe('DropdownMenu component', () => {

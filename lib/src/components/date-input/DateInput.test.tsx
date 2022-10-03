@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -7,11 +6,7 @@ import { DateInput } from '.'
 
 describe('DateInput component', () => {
   it('renders', async () => {
-    const { container } = render(
-      <IdProvider>
-        <DateInput aria-label="test" />
-      </IdProvider>
-    )
+    const { container } = render(<DateInput aria-label="test" />)
 
     expect(container).toMatchSnapshot()
   })

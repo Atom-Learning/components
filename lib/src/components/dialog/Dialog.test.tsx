@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import type { RenderResult } from '@testing-library/react'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
@@ -8,12 +7,10 @@ import * as React from 'react'
 import { Dialog } from '.'
 
 const DialogTest = (props) => (
-  <IdProvider>
-    <Dialog {...props}>
-      <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-      <Dialog.Content>CONTENT</Dialog.Content>
-    </Dialog>
-  </IdProvider>
+  <Dialog {...props}>
+    <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+    <Dialog.Content>CONTENT</Dialog.Content>
+  </Dialog>
 )
 
 describe(`Dialog component`, () => {
@@ -63,12 +60,10 @@ describe(`Dialog component`, () => {
 describe('Dialog component without close button', () => {
   it('renders', async () => {
     await render(
-      <IdProvider>
-        <Dialog>
-          <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-          <Dialog.Content showCloseButton={false}>CONTENT</Dialog.Content>
-        </Dialog>
-      </IdProvider>
+      <Dialog>
+        <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+        <Dialog.Content showCloseButton={false}>CONTENT</Dialog.Content>
+      </Dialog>
     )
 
     const trigger = await screen.getByText('TRIGGER')
@@ -82,15 +77,13 @@ describe('Dialog component without close button', () => {
 describe('Dialog component with custom background', () => {
   it('renders', async () => {
     await render(
-      <IdProvider>
-        <Dialog>
-          <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-          <Dialog.Content>
-            <Dialog.Background>CUSTOM BACKGROUND</Dialog.Background>
-            CONTENT
-          </Dialog.Content>
-        </Dialog>
-      </IdProvider>
+      <Dialog>
+        <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+        <Dialog.Content>
+          <Dialog.Background>CUSTOM BACKGROUND</Dialog.Background>
+          CONTENT
+        </Dialog.Content>
+      </Dialog>
     )
 
     const trigger = await screen.getByText('TRIGGER')
