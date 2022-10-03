@@ -20,7 +20,6 @@ describe(`Tooltip component`, () => {
 
     fireEvent.mouseOver(screen.getByText('TOOLTIP'))
 
-    expect(await screen.findByRole('tooltip')).toBeInTheDocument()
     expect(container).toMatchSnapshot()
   })
 
