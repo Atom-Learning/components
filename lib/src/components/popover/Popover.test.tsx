@@ -11,7 +11,7 @@ describe(`Popover component`, () => {
       <IdProvider>
         <Popover>
           <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
     )
@@ -26,7 +26,7 @@ describe(`Popover component`, () => {
       <IdProvider>
         <Popover>
           <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
     )
@@ -47,7 +47,7 @@ describe(`Popover component`, () => {
       <IdProvider>
         <Popover defaultOpen>
           <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
         </Popover>
       </IdProvider>
     )
