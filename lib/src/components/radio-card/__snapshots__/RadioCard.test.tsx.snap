@@ -104,6 +104,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
 
 <div>
   <div
+    aria-required="false"
     dir="ltr"
     role="radiogroup"
     style="outline: none;"

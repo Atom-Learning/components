@@ -103,64 +103,6 @@ exports[`DropdownMenu component renders 1`] = `
     style="outline: none; opacity: 0; position: fixed; pointer-events: none;"
     tabindex="0"
   />
-  <div
-    data-radix-portal=""
-    style="position: absolute; top: 0px; left: 0px; z-index: 2147483647;"
-  >
-    <div>
-      <div
-        data-radix-popper-content-wrapper=""
-        style="position: fixed; top: 0px; left: 0px; opacity: 0; transform: translate3d(0, -200%, 0);"
-      >
-        <div
-          aria-labelledby="radix-3"
-          aria-orientation="vertical"
-          class="c-jFCTlP"
-          data-orientation="vertical"
-          data-state="open"
-          dir="ltr"
-          id="radix-4"
-          role="menu"
-          style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
-          tabindex="-1"
-        >
-          <div
-            class="c-iLVhIC"
-            data-orientation="vertical"
-            data-radix-collection-item=""
-            role="menuitem"
-            tabindex="-1"
-          >
-            Item 1
-          </div>
-          <div
-            class="c-iLVhIC"
-            data-orientation="vertical"
-            data-radix-collection-item=""
-            role="menuitem"
-            tabindex="-1"
-          >
-            Item 2
-          </div>
-          <div
-            aria-orientation="horizontal"
-            class="c-gBsmUO"
-            role="separator"
-          />
-          <a
-            class="c-cIdiJW c-iLVhIC"
-            data-orientation="vertical"
-            data-radix-collection-item=""
-            href="/logout"
-            role="menuitem"
-            tabindex="-1"
-          >
-            Log Out
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
   <button
     aria-controls="radix-4"
     aria-expanded="true"
@@ -174,6 +116,59 @@ exports[`DropdownMenu component renders 1`] = `
   >
     TRIGGER
   </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
+  >
+    <div
+      aria-labelledby="radix-3"
+      aria-orientation="vertical"
+      class="c-jFCTlP"
+      data-align="center"
+      data-orientation="vertical"
+      data-side="bottom"
+      data-state="open"
+      dir="ltr"
+      id="radix-4"
+      role="menu"
+      style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
+      tabindex="-1"
+    >
+      <div
+        class="c-iLVhIC"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        role="menuitem"
+        tabindex="-1"
+      >
+        Item 1
+      </div>
+      <div
+        class="c-iLVhIC"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        role="menuitem"
+        tabindex="-1"
+      >
+        Item 2
+      </div>
+      <div
+        aria-orientation="horizontal"
+        class="c-gBsmUO"
+        role="separator"
+      />
+      <a
+        class="c-cIdiJW c-iLVhIC"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        href="/logout"
+        role="menuitem"
+        tabindex="-1"
+      >
+        Log Out
+      </a>
+    </div>
+  </div>
   <span
     aria-hidden="true"
     data-aria-hidden="true"

@@ -178,6 +178,7 @@ exports[`SliderField component renders 1`] = `
         aria-disabled="false"
         class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
         data-orientation="horizontal"
+        dir="ltr"
         style="--radix-slider-thumb-transform: translateX(-50%);"
       >
         <span
