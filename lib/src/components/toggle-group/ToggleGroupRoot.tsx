@@ -7,11 +7,10 @@ import { styled } from '~/stitches'
 import { StyledItem } from './ToggleGroupItem'
 
 type RootType = {
-  size: 'sm' | 'md' | 'lg'
   orientation?: 'horizontal' | 'vertical'
   gap?: number
   isFullWidth?: boolean
-  wrap: 'wrap' | 'no-wrap' | 'wrap-reverse'
+  wrap?: 'wrap' | 'no-wrap' | 'wrap-reverse'
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
@@ -114,22 +113,21 @@ export const StyledRoot = styled(ToggleGroup.Root, {
 const orientationToDirection = (orientation) =>
   orientation === 'horizontal' ? 'row' : 'column'
 
-export const ToggleGroupRoot: React.FC<
+export const ToggleGroupRoot: React.ForwardRefExoticComponent<
   React.ComponentProps<typeof StyledRoot> & RootType
-> = ({
-  size = 'md',
+> = React.forwardRef(({
   orientation = 'horizontal',
   gap = false,
   isFullWidth,
   children,
   wrap = 'no-wrap',
   ...rest
-}) => {
+}, ref) => {
   const hasGap = typeof gap === 'number'
-  const childrenArray = React.Children.toArray(children)
   const direction = orientationToDirection(orientation)
   return (
     <StyledRoot
+      ref={ref}
       direction={direction}
       hasGap={hasGap}
       isFullWidth={isFullWidth}
@@ -142,13 +140,8 @@ export const ToggleGroupRoot: React.FC<
         align={false}
         wrap={wrap}
       >
-        {
-          childrenArray.map((child) => {
-            if (!React.isValidElement(child)) return child
-            return React.cloneElement(child, { ...child.props, size })
-          }) as React.ReactElement[]
-        }
+        {children}
       </Stack>
     </StyledRoot>
   )
-}
+})

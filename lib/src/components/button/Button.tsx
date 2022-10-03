@@ -110,7 +110,7 @@ export const StyledButton = styled('button', {
     },
     fullWidth: {
       false: {
-        width: 'auto'
+        width: 'max-content'
       },
       true: {
         width: '100%'

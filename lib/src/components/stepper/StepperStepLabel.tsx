@@ -4,19 +4,20 @@ import { Text } from '../text'
 
 export const StepperStepLabel = styled(Text, {
   fontWeight: 600,
-  textAlign: 'center',
   variants: {
     direction: {
-      vertical: { ml: '$3' },
-      horizontal: { mt: '$3' }
+      vertical: { ml: '$3', textAlign: 'left' },
+      horizontal: { mt: '$3', textAlign: 'center' }
     },
     status: {
-      default: { color: '$tonal400', fontWeight: 400 },
+      default: { color: '$tonal300', fontWeight: 400 },
       active: {
         color: '$primaryMid'
       },
-      viewed: { color: '$primary' },
-      success: { color: '$success' }
+      viewed: { color: '$tonal600' },
+      completed: { color: '$primary' },
+      success: { color: '$success' },
+      reviewed: {}
     }
   }
 })

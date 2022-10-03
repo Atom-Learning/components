@@ -1,7 +1,8 @@
+import React from 'react'
 import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
-export const EmptyStateImage = styled(Image, {
+const EmptyStateImageContainer = styled('div', {
   variants: {
     size: {
       xs: {
@@ -31,3 +32,19 @@ export const EmptyStateImage = styled(Image, {
     }
   }
 })
+
+const StyledImage = styled(Image, { maxHeight: '100%' })
+
+type EmptyStateImageProps = React.ComponentProps<
+  typeof EmptyStateImageContainer
+> &
+  React.ComponentProps<typeof Image>
+
+export const EmptyStateImage: React.FC<EmptyStateImageProps> = ({
+  size,
+  ...rest
+}) => (
+  <EmptyStateImageContainer size={size}>
+    <StyledImage {...rest} />
+  </EmptyStateImageContainer>
+)

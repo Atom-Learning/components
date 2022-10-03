@@ -26,7 +26,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     vertical-align: middle;
   }
 
-  .c-ixewiD {
+  .c-bnQNAg {
     background: white;
     border-radius: var(--radii-1);
     box-shadow: var(--shadows-3);
@@ -39,26 +39,26 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     position: fixed;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
-  .c-ixewiD:focus {
+  .c-bnQNAg:focus {
     outline: none;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="open"] {
+    .c-bnQNAg[data-state="open"] {
       animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="closed"] {
+    .c-bnQNAg[data-state="closed"] {
       animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
-  .c-gJNIBC {
+  .c-hImYEd {
     background-color: var(--colors-alpha600);
     top: 0;
     right: 0;
@@ -66,35 +66,35 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     left: 0;
     position: fixed;
     overflow-y: auto;
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="open"] {
+    .c-hImYEd[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="closed"] {
+    .c-hImYEd[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
-  .c-ixewiD-lgqbzh-size-sm {
+  .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
 }
@@ -126,18 +126,13 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     right: var(--space-4);
     top: var(--space-4);
   }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
-  }
 }
 
 <div
   aria-describedby="radix-5"
   aria-label="Dialog"
   aria-labelledby="radix-4"
-  class="c-ixewiD c-ixewiD-lgqbzh-size-sm"
+  class="c-bnQNAg c-bnQNAg-lgqbzh-size-sm"
   data-state="open"
   id="radix-3"
   role="dialog"
@@ -146,12 +141,12 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -204,7 +199,7 @@ exports[`Dialog component with custom background renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-ixewiD {
+  .c-bnQNAg {
     background: white;
     border-radius: var(--radii-1);
     box-shadow: var(--shadows-3);
@@ -217,26 +212,26 @@ exports[`Dialog component with custom background renders 1`] = `
     position: fixed;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
-  .c-ixewiD:focus {
+  .c-bnQNAg:focus {
     outline: none;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="open"] {
+    .c-bnQNAg[data-state="open"] {
       animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="closed"] {
+    .c-bnQNAg[data-state="closed"] {
       animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
-  .c-gJNIBC {
+  .c-hImYEd {
     background-color: var(--colors-alpha600);
     top: 0;
     right: 0;
@@ -244,17 +239,17 @@ exports[`Dialog component with custom background renders 1`] = `
     left: 0;
     position: fixed;
     overflow-y: auto;
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="open"] {
+    .c-hImYEd[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="closed"] {
+    .c-hImYEd[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
@@ -266,18 +261,18 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
-  .c-ixewiD-lgqbzh-size-sm {
+  .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
 }
@@ -309,15 +304,10 @@ exports[`Dialog component with custom background renders 1`] = `
     right: var(--space-4);
     top: var(--space-4);
   }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
-  }
 }
 
 <div
-  class="c-gJNIBC"
+  class="c-hImYEd"
   data-state="open"
   id="modal_overlay"
   style="pointer-events: auto;"
@@ -333,7 +323,7 @@ exports[`Dialog component with custom background renders 1`] = `
     aria-describedby="radix-20"
     aria-label="Dialog"
     aria-labelledby="radix-19"
-    class="c-ixewiD c-ixewiD-lgqbzh-size-sm"
+    class="c-bnQNAg c-bnQNAg-lgqbzh-size-sm"
     data-state="open"
     id="radix-18"
     role="dialog"
@@ -342,12 +332,12 @@ exports[`Dialog component with custom background renders 1`] = `
   >
     <button
       aria-label="Close dialog"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-hemXWm-size-md c-dbrbZt-ihFPSGE-css"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -387,7 +377,7 @@ exports[`Dialog component without close button renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-ixewiD {
+  .c-bnQNAg {
     background: white;
     border-radius: var(--radii-1);
     box-shadow: var(--shadows-3);
@@ -400,26 +390,26 @@ exports[`Dialog component without close button renders 1`] = `
     position: fixed;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
-  .c-ixewiD:focus {
+  .c-bnQNAg:focus {
     outline: none;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="open"] {
+    .c-bnQNAg[data-state="open"] {
       animation: k-iaWRFC 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-ixewiD[data-state="closed"] {
+    .c-bnQNAg[data-state="closed"] {
       animation: k-gturUW 550ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 }
 
-  .c-gJNIBC {
+  .c-hImYEd {
     background-color: var(--colors-alpha600);
     top: 0;
     right: 0;
@@ -427,35 +417,35 @@ exports[`Dialog component without close button renders 1`] = `
     left: 0;
     position: fixed;
     overflow-y: auto;
-    z-index: 2147483646;
+    z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="open"] {
+    .c-hImYEd[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-gJNIBC[data-state="closed"] {
+    .c-hImYEd[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
-  .c-ixewiD-lgqbzh-size-sm {
+  .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
 }
@@ -464,7 +454,7 @@ exports[`Dialog component without close button renders 1`] = `
   aria-describedby="radix-17"
   aria-label="Dialog"
   aria-labelledby="radix-16"
-  class="c-ixewiD c-ixewiD-lgqbzh-size-sm"
+  class="c-bnQNAg c-bnQNAg-lgqbzh-size-sm"
   data-state="open"
   id="radix-15"
   role="dialog"

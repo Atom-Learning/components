@@ -5,12 +5,10 @@ import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
 import { Icon } from '../icon'
-
-import { StepperStepLabel } from './StepperStepLabel'
-import { StepperStepContainer } from './StepperStepContainer'
-import { StepperStepBullet } from './StepperStepBullet'
-
 import { useStepper } from './stepper-context/StepperContext'
+import { StepperStepBullet } from './StepperStepBullet'
+import { StepperStepContainer } from './StepperStepContainer'
+import { StepperStepLabel } from './StepperStepLabel'
 import { IStepperStepsProps, Status } from './types'
 
 const StepperStepsContainer = styled(Flex, {
@@ -18,7 +16,7 @@ const StepperStepsContainer = styled(Flex, {
   variants: {
     direction: {
       vertical: { flexDirection: 'column' },
-      horizontal: { flexDirection: 'row', alignItems: 'center' }
+      horizontal: { flexDirection: 'row' }
     }
   }
 })
@@ -31,19 +29,29 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
     viewedSteps,
     allowSkip,
     direction,
-    hideLabels
+    hideLabels,
+    completedSteps
   } = useStepper()
 
   const getBulletStatus = (index: number) => {
     const activeBullet = steps[index]
+
     if (activeBullet.status) return activeBullet.status
+    if (completedSteps.length === steps.length) return Status.SUCCESS
+    if (activeStep === index && completedSteps.includes(activeStep))
+      return Status.REVIEWED
     if (activeStep === index) return Status.ACTIVE
+    if (completedSteps.includes(index)) return Status.COMPLETED
     if (viewedSteps.includes(index)) return Status.VIEWED
     return Status.DEFAULT
   }
 
   const getSeparatorStatus = (index: number) => {
     const bulletStatus = steps[index]?.status
+
+    if (completedSteps.length === steps.length) {
+      return Status.SUCCESS
+    }
 
     if (bulletStatus === Status.SUCCESS) {
       return Status.SUCCESS
@@ -64,9 +72,11 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
 
         return (
           <StepperStepContainer
+            tabIndex={0}
             key={`step_${index}`}
             direction={direction}
             separator={seperatorStatus}
+            status={bulletStatus}
             css={
               direction === 'horizontal'
                 ? { width: `calc(100% / ${steps.length})` }

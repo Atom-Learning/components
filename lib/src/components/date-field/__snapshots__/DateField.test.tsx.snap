@@ -117,6 +117,11 @@ exports[`DateField component renders a field in error state 1`] = `
     font-weight: 400;
   }
 
+  .c-fzYfTW {
+    flex-shrink: 0;
+    margin-right: var(--space-2);
+  }
+
   .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
@@ -158,14 +163,14 @@ exports[`DateField component renders a field in error state 1`] = `
     font-size: var(--fontSizes-md);
   }
 
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
@@ -175,6 +180,16 @@ exports[`DateField component renders a field in error state 1`] = `
 
   .c-fZTBsJ-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
+  }
+
+  .c-PJLV-iymbh-theme-error {
+    color: var(--colors-danger);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
   }
 
   .c-fIXJvv-bndJoy-size-sm {
@@ -227,35 +242,23 @@ exports[`DateField component renders a field in error state 1`] = `
     position: relative;
   }
 
-  .c-fDzwZw-ialwQu-css {
+  .c-fDzwZw-iewRRYK-css {
     position: absolute;
     top: 0;
     right: 0;
-  }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
   }
 
   .c-klXesr-icFLuKp-css {
     padding-right: var(--sizes-2);
   }
 
-  .c-dhzjXW-idXOPtz-css {
-    color: var(--colors-danger);
-    align-items: flex-start;
+  .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
   }
 
-  .c-dbrbZt-ihYlUBO-css {
-    margin-right: var(--space-2);
-    flex-shrink: 0;
-  }
-
-  .c-fIXJvv-ikkBjHS-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
-    transform: translateY(var(--space-1));
+    transform: translateY(var(--space-0));
   }
 }
 
@@ -298,13 +301,13 @@ exports[`DateField component renders a field in error state 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
           data-state="closed"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -321,11 +324,11 @@ exports[`DateField component renders a field in error state 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-dhzjXW-idXOPtz-css"
+        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihYlUBO-css"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -344,11 +347,11 @@ exports[`DateField component renders a field in error state 1`] = `
             r="10"
           />
         </svg>
-        <p
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-ikkBjHS-css"
+        <span
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
         >
           This field is required
-        </p>
+        </span>
       </div>
     </div>
     <button
@@ -500,14 +503,14 @@ exports[`DateField component renders a field with a text input 1`] = `
     font-size: var(--fontSizes-md);
   }
 
-  .c-fDzwZw-PrXKS-size-lg {
+  .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-eAiySG-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
@@ -548,15 +551,10 @@ exports[`DateField component renders a field with a text input 1`] = `
     position: relative;
   }
 
-  .c-fDzwZw-ialwQu-css {
+  .c-fDzwZw-iewRRYK-css {
     position: absolute;
     top: 0;
     right: 0;
-  }
-
-  .c-dbrbZt-ihFPSGE-css {
-    height: 20px;
-    width: 20px;
   }
 
   .c-klXesr-icFLuKp-css {
@@ -598,13 +596,13 @@ exports[`DateField component renders a field with a text input 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-lg c-fDzwZw-otpKd-cv c-fDzwZw-ialwQu-css"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
           data-state="closed"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-eAiySG-size-sm c-dbrbZt-ihFPSGE-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

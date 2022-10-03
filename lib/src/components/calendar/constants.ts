@@ -22,3 +22,11 @@ export const weekdayNamesShort = [
   'Fri',
   'Sat'
 ]
+
+export const DEFAULT_LABELS = {
+  open: 'Open calendar',
+  next: 'Next month',
+  previous: 'Previous month',
+  nextYear: 'Next year',
+  previousYear: 'Previous year'
+}

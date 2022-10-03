@@ -4,10 +4,11 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
-import { ValidationError } from '~/components/validation-error'
+import { InlineMessage } from '~/components/inline-message'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 
 export type FieldWrapperProps = {
   css?: CSS
@@ -17,6 +18,7 @@ export type FieldWrapperProps = {
   prompt?: { link: string; label: string }
   description?: string
   required?: boolean
+  hideLabel?: boolean
 }
 
 export const FieldWrapper: React.FC<FieldWrapperProps> = ({
@@ -27,25 +29,36 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   label,
   prompt,
   description,
-  required
-}) => (
-  <Box css={css}>
-    <Flex
-      css={{ justifyContent: 'space-between', alignItems: 'center', mb: '$3' }}
-    >
-      <Label htmlFor={fieldId} required={required}>
-        {label}
-      </Label>
-      {prompt && (
-        <Link href={prompt.link} size="sm">
-          {prompt.label}
-        </Link>
+  required,
+  hideLabel
+}) => {
+  const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
+
+  return (
+    <Box css={css}>
+      <LabelContainer
+        css={{
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          mb: '$3'
+        }}
+      >
+        <Label htmlFor={fieldId} required={required}>
+          {label}
+        </Label>
+        {prompt && (
+          <Link href={prompt.link} size="sm">
+            {prompt.label}
+          </Link>
+        )}
+      </LabelContainer>
+      {description && (
+        <Description css={{ mb: '$3' }}>{description}</Description>
       )}
-    </Flex>
-    {description && <Description css={{ mb: '$3' }}>{description}</Description>}
-    {children}
-    {error && <ValidationError css={{ mt: '$2' }}>{error}</ValidationError>}
-  </Box>
-)
+      {children}
+      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+    </Box>
+  )
+}
 
 FieldWrapper.displayName = 'FieldWrapper'

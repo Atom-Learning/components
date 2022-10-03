@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { useIsMountedRef } from '~/utilities/use-is-mounted-ref'
+import { useIsMountedRef } from '~/utilities/hooks/useIsMountedRef'
 
 import { Alert } from './AlertDialog'
 import { initialState, reducer } from './reducer'

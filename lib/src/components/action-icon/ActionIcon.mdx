@@ -10,34 +10,28 @@ category: Navigation
 ```tsx preview
 <>
   <ActionIcon label="Attach a file" appearance="simple">
-    <Icon is={Clip} size="sm" />
-  </ActionIcon>
-  <ActionIcon label="Attach a file" appearance="subtle">
-    <Icon is={Clip} size="sm" />
+    <Icon is={Clip} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline">
-    <Icon is={Clip} size="sm" />
+    <Icon is={Clip} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="solid">
-    <Icon is={Clip} size="sm" />
+    <Icon is={Clip} />
   </ActionIcon>
 </>
 ```
 
 ## Rounded Variant
 
-Setting `isRounded` makes the Action circular when paired with the options "subtle", "outline" and "solid" for the `appearance` prop
+Setting `isRounded` makes the Action circular when paired with the options "outline" and "solid" for the `appearance` prop
 
 ```tsx preview
 <>
-  <ActionIcon label="Attach a file" appearance="subtle" isRounded>
-    <Icon is={Bell} size="sm" />
-  </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline" isRounded>
-    <Icon is={Bell} size="sm" />
+    <Icon is={Bell} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="solid" isRounded>
-    <Icon is={Bell} size="sm" />
+    <Icon is={Bell} />
   </ActionIcon>
 </>
 ```
@@ -48,14 +42,14 @@ Passing `disabled` makes the Action Icon take a disabled appearance, where any c
 
 ```tsx preview
 <>
-  <ActionIcon label="Attach a file" appearance="subtle" disabled>
-    <Icon is={Bell} size="sm" />
+  <ActionIcon label="Attach a file" appearance="simple" disabled>
+    <Icon is={Bell} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="outline" disabled>
-    <Icon is={Bell} size="sm" />
+    <Icon is={Bell} />
   </ActionIcon>
   <ActionIcon label="Attach a file" appearance="solid" disabled>
-    <Icon is={Bell} size="sm" />
+    <Icon is={Bell} />
   </ActionIcon>
 </>
 ```
@@ -81,12 +75,12 @@ The `ActionIcon` component supports polymorphism, therefore depending on whether
 
 ```tsx preview
 <ActionIcon label="Shuffle selection" onClick={() => console.log('clicked')}>
-  <Icon is={Shuffle} size="sm" />
+  <Icon is={Shuffle} />
 </ActionIcon>
 ```
 
 ```tsx preview
 <ActionIcon label="Add a new folder" href="/directory/add">
-  <Icon is={FolderAdd} size="sm" />
+  <Icon is={FolderAdd} />
 </ActionIcon>
 ```

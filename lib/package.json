@@ -60,7 +60,7 @@
   "devDependencies": {
     "@atom-learning/icons": "1.5.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "1.0.1",
+    "@atom-learning/theme": "1.1.0",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@radix-ui/react-id": "0.1.5",
@@ -120,21 +120,24 @@
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
-    "@atom-learning/icons": "^0.3.0",
-    "@atom-learning/theme": "^0.1.0-beta.8",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@atom-learning/icons": "^1.0.0",
+    "@atom-learning/theme": "^1.0.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-    "@radix-ui/react-accordion": "^1.0.0",
+"@atom-learning/theme": "1.1.0",    
+"@radix-ui/react-accordion": "^1.0.0",
     "@radix-ui/react-alert-dialog": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.0",
     "@radix-ui/react-dialog": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^1.0.0",
+    "@radix-ui/react-navigation-menu": "^1.0.0",
     "@radix-ui/react-popover": "^1.0.0",
     "@radix-ui/react-progress": "^1.0.0",
     "@radix-ui/react-radio-group": "^1.0.0",
     "@radix-ui/react-slider": "^1.0.0",
+    "@radix-ui/react-slot": "1.0.0",
     "@radix-ui/react-switch": "^1.0.0",
     "@radix-ui/react-tabs": "^1.0.0",
     "@radix-ui/react-toggle-group": "^1.0.0",
@@ -142,6 +145,7 @@
     "@radix-ui/react-visually-hidden": "^1.0.0",
     "@reach/combobox": "^0.16.1",
     "@stitches/react": "^1.2.8",
+    "@tanstack/react-table": "^8.5.11",
     "@types/react": "^17.0.30",
     "color2k": "^2.0.0",
     "dayjs": "^1.10.7",
@@ -156,7 +160,6 @@
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
     "throttle-debounce": "^3.0.1",
     "uid": "^2.0.0"
   },

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import {
   Accordion,
   ActionIcon,
@@ -18,6 +17,7 @@ import {
   Icon,
   Image,
   InlineFieldWrapper,
+  InlineMessage,
   Input,
   InputField,
   Label,
@@ -32,6 +32,7 @@ import {
   RadioButtonField,
   RadioCard,
   RadioCardGroup,
+  SearchField,
   SearchInput,
   Select,
   SelectField,
@@ -48,7 +49,6 @@ import {
   ToastProvider,
   Tooltip,
   useAlert,
-  ValidationError,
   Video
 } from '@atom-learning/components'
 import {
@@ -902,6 +902,11 @@ post.
             name="likeCheckboxes"
             description="This is the description. The reason we're using prose here is because the most common use case for this container size is longform text."
           />
+          <CheckboxField
+            checked="indeterminate"
+            label="This is a checkbox to demonstrate the indeterminate state"
+            name="likeCheckboxes"
+          />
           <RadioButtonField
             direction="row"
             name="pronoun"
@@ -943,6 +948,30 @@ post.
               label: 'Forgotten your password?'
             }}
             placeholder="Your password"
+          />
+          <SearchField name="searchField" label="Search Field" />
+          <SearchField
+            name="searchField"
+            label="Required Search Field"
+            required
+          />
+          <SearchField
+            name="searchField"
+            label="Search Field with Prompt"
+            prompt={{
+              link: 'https://nowhere.com',
+              label: 'This is the prompt'
+            }}
+          />
+          <SearchField
+            name="searchField"
+            label="Search Field with Description"
+            description="This is the description. The reason we're using prose here is because the most common."
+          />
+          <SearchField
+            name="searchField"
+            label="Disabled Search Field"
+            disabled
           />
           <SearchInput name="password" placeholder="Search" />
           <SelectField name="something" label="Choose your favourite fruit">
@@ -1104,9 +1133,9 @@ post.
               <Button size="sm" type="submit">
                 Click to show validation errors
               </Button>
-              <ValidationError>
+              <InlineMessage>
                 This is a validation error unattached to a form field
-              </ValidationError>
+              </InlineMessage>
 
               <InputField
                 name="input-error"
@@ -1342,7 +1371,10 @@ post.
       </Accordion>
     </Group>
     <Group name="Stepper">
-      <Stepper stepCount={3}>
+      <Stepper
+        stepCount={3}
+        css={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr' }}
+      >
         <Stepper.StepBack>Back</Stepper.StepBack>
         <Stepper.Steps />
         <Stepper.StepForward>Next</Stepper.StepForward>

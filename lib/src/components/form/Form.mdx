@@ -174,7 +174,7 @@ Here's an example using the `persist` prop:
 
 ## Composing form field components
 
-It’s easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `ValidationError` etc) but there are some requirements that your new
+It’s easy to compose your own custom form fields from the low-level components in this library (`Input`, `Label`, `InlineMessage` etc) but there are some requirements that your new
 field must meet in order to be fully compatible with our `Form`.
 
 ### Props
@@ -183,7 +183,7 @@ Your custom form field component must take the props specified in [General](#Gen
 
 #### error
 
-`error` should be displayed in a `ValidationError` when present. You don’t need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
+`error` should be displayed in a `InlineMessage` when present. You don’t need to pass `error` to your component manually; the `Form` will pass it in automatically when appropriate.
 
 To properly retrieve the error in both static and dynamic fields it is necessary to use the `useFieldError` hook stored in the form directory, that accepts a field name parameter.
 
@@ -258,7 +258,7 @@ const EmailField = ({ css, name, validation, required, ...rest }) => {
         error={error}
         {...rest}
       />
-      {error && <ValidationError css={{ mt: '$1' }}>{error}</ValidationError>}
+      {error && <InlineMessage css={{ mt: '$1' }}>{error}</InlineMessage>}
     </FieldWrapper>
   )
 }

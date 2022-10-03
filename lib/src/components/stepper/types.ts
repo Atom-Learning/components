@@ -4,7 +4,9 @@ export enum Status {
   ACTIVE = 'active',
   VIEWED = 'viewed',
   SUCCESS = 'success',
-  DEFAULT = 'default'
+  DEFAULT = 'default',
+  COMPLETED = 'completed',
+  REVIEWED = 'reviewed'
 }
 export interface Step {
   label?: string
@@ -20,6 +22,7 @@ export type Context = {
   goToStep?: (index: number) => void
   activeStep: number
   viewedSteps: number[]
+  completedSteps: number[]
   allowSkip?: boolean
   direction?: Direction
   hideLabels: boolean

@@ -7,16 +7,19 @@ export const StepperStepContainer = styled(Flex, {
   fontFamily: '$body',
   fontWeight: 600,
   fontSize: '$md',
+  alignItems: 'center',
   '&:not(:last-child)::after': {
     content: '',
     position: 'absolute'
+  },
+  '&:focus-visible': {
+    outline: 'none'
   },
   variants: {
     direction: {
       vertical: {
         py: '$3',
         flexDirection: 'row',
-        alignItems: 'center',
         '&:not(:last-child)::after': {
           height: '100%',
           width: '4px',
@@ -27,7 +30,6 @@ export const StepperStepContainer = styled(Flex, {
       horizontal: {
         px: '$2',
         flexDirection: 'column',
-        alignItems: 'center',
         '&:not(:last-child)::after': {
           width: '100%',
           height: '4px',
@@ -40,6 +42,50 @@ export const StepperStepContainer = styled(Flex, {
       default: { '&:not(:last-child)::after': { bg: '$tonal50' } },
       active: { '&:not(:last-child)::after': { bg: '$primary' } },
       success: { '&:not(:last-child)::after': { bg: '$success' } }
+    },
+    status: {
+      completed: {
+        '&:hover': {
+          '& :first-child': { bg: '$primaryMid', color: 'white !important' },
+          '& :last-child': { color: '$primaryMid' }
+        },
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary',
+            outlineOffset: '2px'
+          }
+        }
+      },
+      active: {
+        '&:hover': {
+          '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
+          '& :last-child': { color: '$tonal600' }
+        },
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary',
+            outlineOffset: '2px'
+          }
+        }
+      },
+      default: {},
+      viewed: {
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary !important',
+            outlineOffset: '2px !important'
+          }
+        }
+      },
+      success: {},
+      reviewed: {
+        '&:focus-visible': {
+          '& :first-child': {
+            outline: '2px solid $primary !important',
+            outlineOffset: '2px !important'
+          }
+        }
+      }
     }
   }
 })

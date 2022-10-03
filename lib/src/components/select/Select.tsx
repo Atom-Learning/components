@@ -78,8 +78,13 @@ export const Select: React.FC<SelectProps> = React.forwardRef(
   ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
     const props = { size, ref, ...remainingProps }
 
-    if (!remainingProps.value && !remainingProps.defaultValue)
+    if (
+      [remainingProps.value, remainingProps.defaultValue].every(
+        (value) => value === undefined
+      )
+    ) {
       props.defaultValue = ''
+    }
 
     return (
       <StyledSelect {...props}>

@@ -27,19 +27,24 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     justify-content: space-between;
   }
 
-  .c-eBWKsL {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
+    align-items: center;
   }
 
-  .c-eBWKsL:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-jHTmAV {
+  .c-boNUgq:focus-visible {
+    outline: none;
+  }
+
+  .c-eqmUPO {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -50,6 +55,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     border: none;
     background: var(--colors-tonal50);
     z-index: 1;
+    flex: none;
   }
 }
 
@@ -62,62 +68,117 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-direction-horizontal {
+  .c-knmidH-ejCoEP-direction-horizontal {
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-jHTmAV-gjRYFk-status-active {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-eqmUPO-gjRYFk-status-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-default {
+  .c-eqmUPO-gMtQgP-status-default {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal400);
+    color: var(--colors-tonal300);
   }
 
-  .c-jHTmAV-lkRQpS-status-viewed {
+  .c-boNUgq-dKQwO-status-completed:hover :first-child {
+    background: var(--colors-primaryMid);
+    color: white !important;
+  }
+
+  .c-boNUgq-dKQwO-status-completed:hover :last-child {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-boNUgq-dKQwO-status-completed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-eqmUPO-lkRQpS-status-completed {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-eBWKsL-dGwPMl-separator-active:not(:last-child)::after {
+  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
+  }
+
+  .c-boNUgq-iIblYT-status-reviewed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary) !important;
+    outline-offset: 2px !important;
+  }
+
+  .c-eqmUPO-bHjIVm-status-reviewed {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-boNUgq-iIblYT-status-viewed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary) !important;
+    outline-offset: 2px !important;
+  }
+
+  .c-eqmUPO-kDTefL-status-viewed {
+    background: white;
+    border: 2px solid var(--colors-tonal200);
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
+    background: var(--colors-success);
+  }
+
+  .c-eqmUPO-fpBJZl-status-success {
+    background: var(--colors-success);
+    color: white;
   }
 
   .c-knmidH-iTKOFX-direction-vertical {
     flex-direction: column;
   }
 
-  .c-eBWKsL-ictAHG-direction-vertical {
+  .c-boNUgq-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-eBWKsL-ictAHG-direction-vertical:not(:last-child)::after {
+  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
@@ -212,32 +273,35 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ieTCIBM-css"
+        tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        tabindex="0"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gMtQgP-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-ictAHG-direction-vertical c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-iPHtVM-separator-default c-dhzjXW-ieTCIBM-css"
+        tabindex="0"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gMtQgP-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>
@@ -280,19 +344,24 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     justify-content: space-between;
   }
 
-  .c-eBWKsL {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
+    align-items: center;
   }
 
-  .c-eBWKsL:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-jHTmAV {
+  .c-boNUgq:focus-visible {
+    outline: none;
+  }
+
+  .c-eqmUPO {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -303,11 +372,11 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     border: none;
     background: var(--colors-tonal50);
     z-index: 1;
+    flex: none;
   }
 
-  .c-dQvJRf {
+  .c-ecBjWS {
     font-weight: 600;
-    text-align: center;
   }
 
   .c-dbrbZt {
@@ -329,97 +398,144 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-direction-horizontal {
+  .c-knmidH-ejCoEP-direction-horizontal {
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-jHTmAV-gjRYFk-status-active {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-eqmUPO-gjRYFk-status-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-default {
+  .c-eqmUPO-gMtQgP-status-default {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal400);
+    color: var(--colors-tonal300);
   }
 
-  .c-jHTmAV-lkRQpS-status-viewed {
+  .c-boNUgq-dKQwO-status-completed:hover :first-child {
+    background: var(--colors-primaryMid);
+    color: white !important;
+  }
+
+  .c-boNUgq-dKQwO-status-completed:hover :last-child {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-boNUgq-dKQwO-status-completed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-eqmUPO-lkRQpS-status-completed {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-eBWKsL-dGwPMl-separator-active:not(:last-child)::after {
+  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
+  }
+
+  .c-boNUgq-iIblYT-status-reviewed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary) !important;
+    outline-offset: 2px !important;
+  }
+
+  .c-eqmUPO-bHjIVm-status-reviewed {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-boNUgq-iIblYT-status-viewed:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary) !important;
+    outline-offset: 2px !important;
+  }
+
+  .c-eqmUPO-kDTefL-status-viewed {
+    background: white;
+    border: 2px solid var(--colors-tonal200);
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
+    background: var(--colors-success);
+  }
+
+  .c-eqmUPO-fpBJZl-status-success {
+    background: var(--colors-success);
+    color: white;
   }
 
   .c-knmidH-iTKOFX-direction-vertical {
     flex-direction: column;
   }
 
-  .c-eBWKsL-ictAHG-direction-vertical {
+  .c-boNUgq-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-eBWKsL-ictAHG-direction-vertical:not(:last-child)::after {
+  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
     top: 50%;
   }
 
-  .c-dQvJRf-hbpKWx-direction-horizontal {
+  .c-ecBjWS-iwHyEI-direction-horizontal {
     margin-top: var(--space-3);
+    text-align: center;
   }
 
-  .c-dQvJRf-cDiHrO-status-active {
+  .c-ecBjWS-cDiHrO-status-active {
     color: var(--colors-primaryMid);
   }
 
-  .c-dQvJRf-iHLjaT-status-default {
-    color: var(--colors-tonal400);
+  .c-ecBjWS-dlhNdU-status-default {
+    color: var(--colors-tonal300);
     font-weight: 400;
   }
 
-  .c-eBWKsL-fpjjDi-separator-success:not(:last-child)::after {
-    background: var(--colors-success);
-  }
-
-  .c-jHTmAV-fpBJZl-status-success {
-    background: var(--colors-success);
-    color: white;
-  }
-
-  .c-dbrbZt-hemXWm-size-md {
+  .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
-    stroke-width: 2;
+    stroke-width: 1.75;
   }
 
-  .c-dQvJRf-byQUqd-status-success {
+  .c-ecBjWS-byQUqd-status-success {
     color: var(--colors-success);
   }
 }
@@ -512,20 +628,21 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-direction-horizontal"
+      class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
+        tabindex="0"
       >
         <div
           aria-current="step"
           aria-label=""
           aria-labelledby="step-0"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-fpBJZl-status-success c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-fpBJZl-status-success c-dhzjXW-idGcKFW-css"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-hemXWm-size-md"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -535,24 +652,25 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           </svg>
         </div>
         <span
-          class="c-dQvJRf c-dQvJRf-hbpKWx-direction-horizontal c-dQvJRf-byQUqd-status-success"
+          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-byQUqd-status-success"
           id="step-0"
         >
           Step 1
         </span>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ikOanEY-css"
+        tabindex="0"
       >
         <div
           aria-label=""
           aria-labelledby="step-1"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-status-active c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gjRYFk-status-active c-dhzjXW-idGcKFW-css"
         >
           2
         </div>
         <span
-          class="c-dQvJRf c-dQvJRf-hbpKWx-direction-horizontal c-dQvJRf-cDiHrO-status-active"
+          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-cDiHrO-status-active"
           id="step-1"
         >
           Step 2
@@ -596,19 +714,24 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     justify-content: space-between;
   }
 
-  .c-eBWKsL {
+  .c-boNUgq {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
+    align-items: center;
   }
 
-  .c-eBWKsL:not(:last-child)::after {
+  .c-boNUgq:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-jHTmAV {
+  .c-boNUgq:focus-visible {
+    outline: none;
+  }
+
+  .c-eqmUPO {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -619,6 +742,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     border: none;
     background: var(--colors-tonal50);
     z-index: 1;
+    flex: none;
   }
 }
 
@@ -631,39 +755,51 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     padding-right: var(--space-4);
   }
 
-  .c-knmidH-cPPfON-direction-horizontal {
+  .c-knmidH-ejCoEP-direction-horizontal {
     flex-direction: row;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal {
+  .c-boNUgq-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
-    align-items: center;
   }
 
-  .c-eBWKsL-fCWxeO-direction-horizontal:not(:last-child)::after {
+  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-eBWKsL-iPHtVM-separator-default:not(:last-child)::after {
+  .c-boNUgq-iPHtVM-separator-default:not(:last-child)::after {
     background: var(--colors-tonal50);
   }
 
-  .c-jHTmAV-gjRYFk-status-active {
+  .c-boNUgq-jCkdlW-status-active:hover :first-child {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:hover :last-child {
+    color: var(--colors-tonal600);
+  }
+
+  .c-boNUgq-jCkdlW-status-active:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-eqmUPO-gjRYFk-status-active {
     background: white;
     color: var(--colors-primaryMid);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-jHTmAV-jdelko-status-default {
+  .c-eqmUPO-gMtQgP-status-default {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal400);
+    color: var(--colors-tonal300);
   }
 }
 
@@ -747,35 +883,38 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       Back
     </button>
     <div
-      class="c-dhzjXW c-knmidH c-knmidH-cPPfON-direction-horizontal"
+      class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-boNUgq-jCkdlW-status-active c-dhzjXW-ibJjasZ-css"
+        tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        tabindex="0"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gMtQgP-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-eBWKsL c-eBWKsL-fCWxeO-direction-horizontal c-eBWKsL-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-iPHtVM-separator-default c-dhzjXW-ibJjasZ-css"
+        tabindex="0"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-jHTmAV c-jHTmAV-jdelko-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-eqmUPO c-eqmUPO-gMtQgP-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>

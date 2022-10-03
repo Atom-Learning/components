@@ -5,6 +5,7 @@ import * as React from 'react'
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
 import { Calendar, CalendarTranslationProps } from '../calendar/Calendar'
+import { DEFAULT_LABELS } from '../calendar/constants'
 import { Icon } from '../icon/Icon'
 import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
@@ -31,18 +32,20 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       monthNames,
       weekdayNames,
       size = 'md',
-      labels = {
-        open: 'Open calendar',
-        next: 'Next month',
-        previous: 'Previous month'
-      },
+      labels,
       revalidate,
       onChange,
+      minDate,
+      maxDate,
       ...remainingProps
     },
     ref
   ) => {
     const { date, dateString, setDate } = useDate(initialDate, dateFormat)
+    const updatedLabels = {
+      ...DEFAULT_LABELS,
+      ...labels
+    }
 
     const [calendarOpen, setCalendarOpen] = React.useState(false)
 
@@ -67,13 +70,13 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
           <Popover.Trigger asChild>
             <ActionIcon
-              css={{ position: 'absolute', top: 0, right: 0 }}
+              css={{ position: 'absolute', top: '0', right: '0' }}
               disabled={disabled}
-              label={labels.open}
-              size={size === 'sm' ? 'md' : 'lg'}
+              label={updatedLabels.open}
+              size={size}
               theme="neutral"
             >
-              <Icon size="sm" is={CalendarEvent} />
+              <Icon is={CalendarEvent} />
             </ActionIcon>
           </Popover.Trigger>
           <Popover.Content
@@ -98,12 +101,18 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
                 await setDate(date.date, false)
                 if (revalidate) revalidate()
               }}
+              setYear={async (date) => {
+                await setDate(date, false)
+                if (revalidate) revalidate()
+              }}
+              minDate={minDate}
+              maxDate={maxDate}
               refDateToday={refDateToday}
               refDateSelected={refDateSelected}
               firstDayOfWeek={firstDayOfWeek}
               monthNames={monthNames}
               weekdayNames={weekdayNames}
-              labels={labels}
+              labels={updatedLabels}
             />
           </Popover.Content>
         </Popover>
