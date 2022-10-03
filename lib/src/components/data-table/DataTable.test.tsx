@@ -1,9 +1,10 @@
 import * as React from 'react'
-import { act, render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createColumnHelper } from '@tanstack/react-table'
 import { DataTable } from '.'
-import { Table } from '../table'
+import { Tooltip } from '../tooltip'
+import { TooltipPortal } from '@radix-ui/react-tooltip'
 
 const columnHelper = createColumnHelper<{
   name: string
@@ -44,13 +45,21 @@ const data = [
   { name: 'tina', hobby: 'acting' }
 ]
 
+const PaginationWithToolTipProvider: React.FC<
+  React.ComponentProps<typeof DataTable.Pagination>
+> = (props) => (
+  <Tooltip.Provider>
+    <DataTable.Pagination {...props} />
+  </Tooltip.Provider>
+)
+
 describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
         <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
         <DataTable.Table sortable css={{ mb: '$4' }} />
-        <DataTable.Pagination pageSize={5} />
+        <PaginationWithToolTipProvider pageSize={5} />
       </DataTable>
     )
     expect(container).toMatchSnapshot()
@@ -64,7 +73,7 @@ describe('DataTable component', () => {
         defaultSort={{ column: 'name', direction: 'desc' }}
       >
         <DataTable.Table />
-        <DataTable.Pagination pageSize={1} />
+        <PaginationWithToolTipProvider pageSize={1} />
       </DataTable>
     )
 
@@ -75,7 +84,7 @@ describe('DataTable component', () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.Table sortable />
-        <DataTable.Pagination pageSize={5} />
+        <PaginationWithToolTipProvider pageSize={5} />
       </DataTable>
     )
     const nameHeader = screen.getByText('name')
@@ -95,7 +104,7 @@ describe('DataTable.Pagination component', () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.Table sortable />
-        <DataTable.Pagination pageSize={5} />
+        <PaginationWithToolTipProvider pageSize={5} />
       </DataTable>
     )
 
@@ -113,7 +122,7 @@ describe('DataTable.Pagination component', () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.Table sortable />
-        <DataTable.Pagination pageSize={10} />
+        <PaginationWithToolTipProvider pageSize={10} />
       </DataTable>
     )
 
@@ -127,7 +136,7 @@ describe('DataTable.Pagination component', () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.Table sortable />
-        <DataTable.Pagination pageSize={10} />
+        <PaginationWithToolTipProvider pageSize={10} />
       </DataTable>
     )
 
