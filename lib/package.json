@@ -126,8 +126,8 @@
     "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "dependencies": {
-"@atom-learning/theme": "1.1.0",    
-"@radix-ui/react-accordion": "^1.0.0",
+    "@atom-learning/theme": "1.1.0",
+    "@radix-ui/react-accordion": "^1.0.0",
     "@radix-ui/react-alert-dialog": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.0",
     "@radix-ui/react-dialog": "^1.0.0",
