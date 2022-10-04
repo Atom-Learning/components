@@ -45,36 +45,40 @@ const data = [
   { name: 'tina', hobby: 'acting' }
 ]
 
-const PaginationWithToolTipProvider: React.FC<
-  React.ComponentProps<typeof DataTable.Pagination>
-> = (props) => (
-  <Tooltip.Provider>
-    <DataTable.Pagination {...props} />
-  </Tooltip.Provider>
+/** `DataTable.Pagination` uses `Tooltip`s so it needs a `Tooltip.Provider`.
+ * In practice, `Tooltip.Provider` is rendered once at the root of an app,
+ * but this wrapper provides it for these tests.
+ */
+const Wrapper: React.FC = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
 )
 
 describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
-        <DataTable.Table sortable css={{ mb: '$4' }} />
-        <PaginationWithToolTipProvider pageSize={5} />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination pageSize={5} />
+        </DataTable>
+      </Wrapper>
     )
     expect(container).toMatchSnapshot()
   })
 
   it('Sorts data according to defaultSort config', () => {
     render(
-      <DataTable
-        columns={columns}
-        data={data}
-        defaultSort={{ column: 'name', direction: 'desc' }}
-      >
-        <DataTable.Table />
-        <PaginationWithToolTipProvider pageSize={1} />
-      </DataTable>
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data}
+          defaultSort={{ column: 'name', direction: 'desc' }}
+        >
+          <DataTable.Table />
+          <DataTable.Pagination pageSize={1} />
+        </DataTable>
+      </Wrapper>
     )
 
     expect(screen.getByText('xena')).toBeVisible()
@@ -82,10 +86,12 @@ describe('DataTable component', () => {
 
   it('Sorts data on click of sortable header cell', () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.Table sortable />
-        <PaginationWithToolTipProvider pageSize={5} />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table sortable />
+          <DataTable.Pagination pageSize={5} />
+        </DataTable>
+      </Wrapper>
     )
     const nameHeader = screen.getByText('name')
 
@@ -102,10 +108,12 @@ describe('DataTable component', () => {
 describe('DataTable.Pagination component', () => {
   it('Displays the correct page number', () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.Table sortable />
-        <PaginationWithToolTipProvider pageSize={5} />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table sortable />
+          <DataTable.Pagination pageSize={5} />
+        </DataTable>
+      </Wrapper>
     )
 
     expect(screen.getByRole('combobox')).toHaveValue('0')
@@ -120,10 +128,12 @@ describe('DataTable.Pagination component', () => {
 
   it('Navigates to the correct page', () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.Table sortable />
-        <PaginationWithToolTipProvider pageSize={10} />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table sortable />
+          <DataTable.Pagination pageSize={10} />
+        </DataTable>
+      </Wrapper>
     )
 
     const options = screen.getAllByRole('option')
@@ -134,10 +144,12 @@ describe('DataTable.Pagination component', () => {
 
   it('Disables previous button on first page and next page button on last page', () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.Table sortable />
-        <PaginationWithToolTipProvider pageSize={10} />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table sortable />
+          <DataTable.Pagination pageSize={10} />
+        </DataTable>
+      </Wrapper>
     )
 
     const previousPageButton = screen.getByRole('button', {
