@@ -42,6 +42,10 @@ exports[`Collapsible component renders a Collapsible 1`] = `
       animation: k-mHYuV 200ms ease-out;
     }
 }
+
+  .c-fGHEql {
+    width: 100%;
+  }
 }
 
 @media  {
@@ -68,15 +72,15 @@ exports[`Collapsible component renders a Collapsible 1`] = `
     display: table;
   }
 
-  .c-PJLV-kgwRCv-space-4 > button {
+  .c-fGHEql-kgwRCv-space-4 > button {
     padding: var(--space-4);
   }
 
-  .c-PJLV-kgwRCv-space-4 > div {
+  .c-fGHEql-kgwRCv-space-4 > div {
     padding: 0 var(--space-4) var(--space-4) var(--space-4);
   }
 
-  .c-PJLV-kgwRCv-space-4 > div hr {
+  .c-fGHEql-kgwRCv-space-4 > div hr {
     margin-top: 0;
     margin-bottom: calc(var(--space-4) + var(--space-2));
   }
@@ -99,15 +103,11 @@ exports[`Collapsible component renders a Collapsible 1`] = `
     border: none;
     background: transparent;
   }
-
-  .c-PJLV-ifGHEql-css {
-    width: 100%;
-  }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-kgwRCv-space-4 c-PJLV-ifGHEql-css"
+    class="c-fGHEql c-fGHEql-kgwRCv-space-4"
     data-state="closed"
   >
     <button

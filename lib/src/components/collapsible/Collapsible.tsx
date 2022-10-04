@@ -26,6 +26,7 @@ const space = Object.keys(theme.space).reduce(
 )
 
 const StyledRoot = styled(Root, {
+  width: '100%',
   variants: {
     space: {
       ...space,
@@ -41,13 +42,11 @@ type TCollapsible = React.ForwardRefExoticComponent<
   Trigger: typeof CollapsibleTrigger
 }
 
-export const Collapsible = React.forwardRef(
-  ({ children, css, ...props }, ref) => (
-    <StyledRoot ref={ref} css={{ width: '100%', ...css }} {...props}>
-      {children}
-    </StyledRoot>
-  )
-) as TCollapsible
+export const Collapsible = React.forwardRef(({ children, ...props }, ref) => (
+  <StyledRoot ref={ref} {...props}>
+    {children}
+  </StyledRoot>
+)) as TCollapsible
 
 Collapsible.Content = CollapsibleContent
 Collapsible.Trigger = CollapsibleTrigger
