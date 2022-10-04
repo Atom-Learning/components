@@ -2,30 +2,26 @@ import { ChevronRight } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-collapsible'
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled, theme } from '~/stitches'
+import { createThemeVariants } from '~/utilities'
 
 import { Icon } from '../icon'
 
 const StyledTrigger = styled(Trigger, {
-  cursor: 'pointer'
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'center',
+  width: '100%',
+  border: 'none',
+  bg: 'transparent',
+  variants: { space: createThemeVariants('space', { p: '$key' }) }
 })
 
 export const CollapsibleTrigger = React.forwardRef<
   React.ElementRef<typeof StyledTrigger>,
   React.ComponentPropsWithRef<typeof StyledTrigger>
->(({ children, css, ...props }, ref) => (
-  <StyledTrigger
-    ref={ref}
-    css={{
-      display: 'flex',
-      alignItems: 'center',
-      width: '100%',
-      border: 'none',
-      bg: 'transparent',
-      ...css
-    }}
-    {...props}
-  >
+>(({ children, ...props }, ref) => (
+  <StyledTrigger ref={ref} {...props}>
     <Icon
       is={ChevronRight}
       css={{
@@ -37,3 +33,5 @@ export const CollapsibleTrigger = React.forwardRef<
     {children}
   </StyledTrigger>
 ))
+
+CollapsibleTrigger.displayName = 'Collapsible.Trigger'

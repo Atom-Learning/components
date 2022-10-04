@@ -2,8 +2,7 @@ import { Content } from '@radix-ui/react-collapsible'
 import * as React from 'react'
 
 import { keyframes, styled } from '~/stitches'
-
-import { Divider } from '../divider'
+import { createThemeVariants } from '~/utilities'
 
 const open = keyframes({
   from: { height: 0, opacity: 0, py: 0 },
@@ -20,15 +19,17 @@ const StyledContent = styled(Content, {
   '@allowMotion': {
     '&[data-state="open"]': { animation: `${open} 200ms ease-out` },
     '&[data-state="closed"]': { animation: `${close} 200ms ease-out` }
-  }
+  },
+  variants: { space: createThemeVariants('space', { m: '$key' }) }
 })
 
 export const CollapsibleContent = React.forwardRef<
   React.ElementRef<typeof StyledContent>,
-  React.ComponentPropsWithRef<typeof StyledContent> & { showDivider?: boolean }
->(({ children, showDivider, ...props }, ref) => (
+  React.ComponentPropsWithRef<typeof StyledContent>
+>(({ children, ...props }, ref) => (
   <StyledContent ref={ref} {...props}>
-    {showDivider && <Divider />}
     {children}
   </StyledContent>
 ))
+
+CollapsibleContent.displayName = 'Collapsible.Content'

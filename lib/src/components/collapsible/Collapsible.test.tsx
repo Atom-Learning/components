@@ -65,16 +65,4 @@ describe('Collapsible component', () => {
     expect(content).toHaveAttribute('data-state', 'closed')
     expect(screen.queryByText(contentText)).toBeNull()
   })
-
-  it('only renders a divider with the `showDivider` prop', () => {
-    const { rerender } = render(<Component />)
-
-    userEvent.click(screen.getByRole('button', { name: triggerText }))
-
-    expect(screen.queryByRole('separator')).toBeNull()
-
-    rerender(<Component showDivider />)
-
-    expect(screen.getByRole('separator')).toBeVisible()
-  })
 })

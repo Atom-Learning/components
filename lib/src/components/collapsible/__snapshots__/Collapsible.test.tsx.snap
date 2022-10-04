@@ -23,8 +23,13 @@ exports[`Collapsible component renders a Collapsible 1`] = `
     display: none;
   }
 
-  .c-gsmDXe {
+  .c-lmKIKu {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background: transparent;
   }
 
   .c-bbFHCz {
@@ -72,17 +77,12 @@ exports[`Collapsible component renders a Collapsible 1`] = `
     display: table;
   }
 
-  .c-fGHEql-kgwRCv-space-4 > button {
+  .c-lmKIKu-jximsX-space-4 {
     padding: var(--space-4);
   }
 
-  .c-fGHEql-kgwRCv-space-4 > div {
-    padding: 0 var(--space-4) var(--space-4) var(--space-4);
-  }
-
-  .c-fGHEql-kgwRCv-space-4 > div hr {
-    margin-top: 0;
-    margin-bottom: calc(var(--space-4) + var(--space-2));
+  .c-bbFHCz-jxixmK-space-4 {
+    margin: var(--space-4);
   }
 }
 
@@ -95,25 +95,17 @@ exports[`Collapsible component renders a Collapsible 1`] = `
   [data-state="open"] .c-dbrbZt-iilNZcu-css {
     transform: rotate(90deg);
   }
-
-  .c-gsmDXe-iftxirp-css {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border: none;
-    background: transparent;
-  }
 }
 
 <div>
   <div
-    class="c-fGHEql c-fGHEql-kgwRCv-space-4"
+    class="c-fGHEql"
     data-state="closed"
   >
     <button
       aria-controls="radix-0"
       aria-expanded="false"
-      class="c-gsmDXe c-gsmDXe-iftxirp-css"
+      class="c-lmKIKu c-lmKIKu-jximsX-space-4"
       data-state="closed"
       type="button"
     >
@@ -134,7 +126,7 @@ exports[`Collapsible component renders a Collapsible 1`] = `
       </p>
     </button>
     <div
-      class="c-bbFHCz"
+      class="c-bbFHCz c-bbFHCz-jxixmK-space-4"
       data-state="closed"
       data-testid="content"
       hidden=""
