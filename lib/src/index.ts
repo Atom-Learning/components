@@ -2,4 +2,4 @@ export * from './components'
 
 export * from './stitches'
 
-export { focusVisibleStyleBlock } from '~/utilities'
+export { createThemeVariants, focusVisibleStyleBlock } from '~/utilities'
