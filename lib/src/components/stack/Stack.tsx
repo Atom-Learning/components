@@ -1,36 +1,8 @@
 import * as React from 'react'
 
-import { CSS, styled, theme } from '~/stitches'
+import { CSS, styled } from '~/stitches'
+import { createThemeVariants } from '~/utilities'
 import { CSSWrapper } from '~/utilities/css-wrapper'
-
-/**
- * output:
- * {
- *   0: {
- *     mt: `-$space$0`,
- *     ml: `-$space$0`,
- *     '& > *': {
- *       mt: `$space$0`,
- *       ml: `$space$0`
- *     }
- *   },
- *   ...etc.
- * }
- **/
-const gap = Object.keys(theme.space).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: {
-      mt: `-$space$${key}`,
-      ml: `-$space$${key}`,
-      '& > *': {
-        mt: `$space$${key}`,
-        ml: `$space$${key}`
-      }
-    }
-  }),
-  {}
-) as Record<keyof typeof theme.space, CSS>
 
 const StyledStack = styled('div', {
   display: 'flex',
@@ -73,7 +45,14 @@ const StyledStack = styled('div', {
       false: {}
     },
     gap: {
-      ...gap,
+      ...createThemeVariants('space', {
+        mt: '-$key',
+        ml: '-$key',
+        '& > *': {
+          mt: '$key',
+          ml: '$key'
+        }
+      }),
       false: {}
     }
   }
