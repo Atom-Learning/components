@@ -1,30 +1,12 @@
 import * as React from 'react'
 
-import { CSS, styled, theme } from '~/stitches'
-
-/**
- * output:
- * {
- *   0: {
- *     gap: '-$space$0',
- *   },
- *   ...etc.
- * }
- **/
-const gap = Object.keys(theme.space).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: {
-      gap: `$space$${key}`
-    }
-  }),
-  {}
-) as Record<keyof typeof theme.space, CSS>
+import { styled } from '~/stitches'
+import { createThemeVariants } from '~/utilities'
 
 const GridContainer = styled('div', {
   display: 'grid',
   variants: {
-    gap
+    gap: createThemeVariants('space', { gap: '$key' })
   }
 })
 
