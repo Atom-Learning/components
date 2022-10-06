@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberInput component renders number input  1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jbyCVO {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+}
+
+@media  {
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-jbyCVO-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-fDzwZw-jpgoGt-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-jpgoGt-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-ikkrfJd-css {
+    width: 100%;
+    justify-content: center;
+    opacity: 1;
+  }
+
+  .c-fDzwZw-icfrMWe-css {
+    border-color: var(--colors-tonal400);
+    z-index: 1;
+  }
+
+  .c-fDzwZw-icfrMWe-css:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fDzwZw-icfrMWe-css:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fDzwZw-icfrMWe-css:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fDzwZw-icfrMWe-css:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fDzwZw-icfrMWe-css:disabled {
+    opacity: 0.3;
+  }
+
+  .c-fDzwZw-icfrMWe-css {
+    pointer-events: none;
+    border-right: none;
+    border-radius: var(--radii-0) 0px 0px var(--radii-0);
+  }
+
+  .c-dbrbZt-iesazQZ-css {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fZTBsJ-idfXovZ-css {
+    border-radius: 0px;
+    width: var(--sizes-6);
+  }
+
+  .c-fDzwZw-ilfsPzq-css {
+    border-color: var(--colors-tonal400);
+    z-index: 1;
+  }
+
+  .c-fDzwZw-ilfsPzq-css:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fDzwZw-ilfsPzq-css:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fDzwZw-ilfsPzq-css:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fDzwZw-ilfsPzq-css:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fDzwZw-ilfsPzq-css:disabled {
+    opacity: 0.3;
+  }
+
+  .c-fDzwZw-ilfsPzq-css {
+    pointer-events: all;
+    border-left: none;
+    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
+  }
+}
+
+@media  {
+  .c-jVLVTy {
+    z-index: 1;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-dhzjXW-ikkrfJd-css"
+  >
+    <span
+      aria-hidden="true"
+      class="c-jVLVTy c-PJLV"
+      data-state="closed"
+    >
+      <button
+        aria-label=""
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-icfrMWe-css"
+        data-testid="decrement-btn"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 12H4"
+          />
+        </svg>
+      </button>
+    </span>
+    <input
+      aria-invalid="false"
+      aria-label="test"
+      aria-valuemax="9007199254740991"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-idfXovZ-css"
+      inputmode="numeric"
+      name="test"
+      pattern="[0-9]*"
+      role="spinbutton"
+      type="text"
+      value="0"
+    />
+    <span
+      aria-hidden="true"
+      class="c-jVLVTy c-PJLV"
+      data-state="closed"
+    >
+      <button
+        aria-label=""
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-ilfsPzq-css"
+        data-testid="increment-btn"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 12H4m8-8v16"
+          />
+        </svg>
+      </button>
+    </span>
+  </div>
+</div>
+`;
