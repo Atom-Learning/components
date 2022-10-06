@@ -52,16 +52,17 @@ exports[`DropdownMenu component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-jFCTlP {
+  .c-ghAfvs {
     background: white;
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+    z-index: 10;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP {
+    .c-ghAfvs {
       animation-duration: 250ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -69,25 +70,25 @@ exports[`DropdownMenu component renders 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="top"] {
+    .c-ghAfvs[data-state="open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="right"] {
+    .c-ghAfvs[data-state="open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="bottom"] {
+    .c-ghAfvs[data-state="open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jFCTlP[data-state="open"][data-side="left"] {
+    .c-ghAfvs[data-state="open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -123,7 +124,7 @@ exports[`DropdownMenu component renders 1`] = `
     <div
       aria-labelledby="radix-3"
       aria-orientation="vertical"
-      class="c-jFCTlP"
+      class="c-ghAfvs"
       data-align="center"
       data-orientation="vertical"
       data-side="bottom"
