@@ -1,6 +1,7 @@
 import { Minus, Plus } from '@atom-learning/icons'
 import * as React from 'react'
 
+import type { CSS } from '~/stitches'
 import { mergeRefs } from '~/utilities/mergeRefs'
 
 import { Flex } from '../flex'
@@ -18,6 +19,7 @@ export interface NumberInputProps {
   size?: 'sm' | 'md'
   onChange?: (value: number) => void
   disabledTooltipContent?: { increment?: string; decrement?: string }
+  css?: CSS
 }
 
 export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
@@ -33,6 +35,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       size = 'md',
       onChange,
       disabledTooltipContent: disabledTooltipContentProp,
+      css,
       ...rest
     } = props
 
@@ -161,9 +164,8 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     return (
       <Flex
         css={{
-          width: '100%',
-          justifyContent: 'center',
-          opacity: isDisabled ? 0.3 : 1
+          opacity: isDisabled ? 0.3 : 1,
+          ...css
         }}
       >
         <NumberInputStepper

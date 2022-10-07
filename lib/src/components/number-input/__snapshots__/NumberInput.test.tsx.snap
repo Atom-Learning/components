@@ -156,9 +156,7 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ikkrfJd-css {
-    width: 100%;
-    justify-content: center;
+  .c-dhzjXW-ibDGmTT-css {
     opacity: 1;
   }
 
@@ -242,7 +240,7 @@ exports[`NumberInput component renders number input  1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-dhzjXW-ikkrfJd-css"
+    class="c-dhzjXW c-dhzjXW-ibDGmTT-css"
   >
     <span
       aria-hidden="true"
