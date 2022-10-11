@@ -149,7 +149,11 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       onBlur: validateOnBlur,
       onKeyDown,
       size,
-      css: { borderRadius: '0px', width: '$6' },
+      css: {
+        borderRadius: '0px',
+        width: '$6',
+        '&:disabled': { opacity: 0.3, pointerEvents: 'none' }
+      },
       ref: mergeRefs(inputRef, forwardedRef),
       readOnly: isReadOnly,
       disabled: isDisabled,
@@ -162,22 +166,18 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     }
 
     return (
-      <Flex
-        css={{
-          opacity: isDisabled ? 0.3 : 1,
-          ...css
-        }}
-      >
+      <Flex css={css}>
         <NumberInputStepper
           onClick={decrement}
           icon={Minus}
           css={{
             borderRight: 'none',
-            borderRadius: '$0 0px 0px $0'
+            borderTopRightRadius: '0px',
+            borderBottomRightRadius: '0px'
           }}
           size={size}
-          isRootDisabled={isDisabled}
-          disabled={isAtMin}
+          disabled={isAtMin || isDisabled}
+          showTooltip={!isDisabled}
           disabledTooltipContent={disabledTooltipContent.decrement}
           data-testid="decrement-btn"
         />
@@ -185,10 +185,14 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
         <NumberInputStepper
           onClick={increment}
           icon={Plus}
-          css={{ borderLeft: 'none', borderRadius: '0px $0 $0 0px' }}
+          css={{
+            borderLeft: 'none',
+            borderTopLeftRadius: '0px',
+            borderBottomLeftRadius: '0px'
+          }}
           size={size}
-          isRootDisabled={isDisabled}
-          disabled={isAtMax}
+          disabled={isAtMax || isDisabled}
+          showTooltip={!isDisabled}
           disabledTooltipContent={disabledTooltipContent.increment}
           data-testid="increment-btn"
         />

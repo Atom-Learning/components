@@ -238,145 +238,18 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ibDGmTT-css {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-icfrMWe-css:disabled {
-    opacity: 0.3;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    pointer-events: none;
-    border-right: none;
-    border-radius: var(--radii-0) 0px 0px var(--radii-0);
-  }
-
   .c-dbrbZt-iesazQZ-css {
     color: var(--colors-tonal300);
   }
 
-  .c-fZTBsJ-idfXovZ-css {
+  .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fDzwZw-ilfsPzq-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:disabled {
+  .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
-  }
-
-  .c-fDzwZw-ilfsPzq-css {
-    pointer-events: all;
-    border-left: none;
-    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
-  }
-
-  .c-dhzjXW-iJWpPj-css {
-    opacity: 0.3;
-  }
-
-  .c-fDzwZw-ihPnxLe-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ihPnxLe-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:disabled {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-ihPnxLe-css {
     pointer-events: none;
-    border-right: none;
-    border-radius: var(--radii-0) 0px 0px var(--radii-0);
-  }
-
-  .c-fDzwZw-ijleZyt-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ijleZyt-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ijleZyt-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ijleZyt-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ijleZyt-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ijleZyt-css:disabled {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-ijleZyt-css {
-    pointer-events: none;
-    border-left: none;
-    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
   }
 
   .c-dhzjXW-ijkHUQU-css {
@@ -392,6 +265,46 @@ exports[`NumberInputField component renders a field in error state - has no prog
 @media  {
   .c-jVLVTy {
     z-index: 1;
+  }
+
+  .c-dwuWAP {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-dwuWAP:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-dwuWAP:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-dwuWAP:active {
+    bg: var(--tonal100);
+  }
+
+  .c-dwuWAP:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-dwuWAP:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-dwuWAP-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-dwuWAP-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
 
@@ -414,7 +327,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         </label>
       </div>
       <div
-        class="c-dhzjXW c-dhzjXW-ibDGmTT-css"
+        class="c-dhzjXW"
       >
         <span
           aria-hidden="true"
@@ -423,7 +336,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-icfrMWe-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
             data-testid="decrement-btn"
             disabled=""
             tabindex="-1"
@@ -446,7 +359,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-fZTBsJ-idfXovZ-css"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-fZTBsJ-ibwGleD-css"
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
@@ -462,7 +375,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-ilfsPzq-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
             data-testid="increment-btn"
             tabindex="-1"
             type="button"
@@ -710,151 +623,64 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ibDGmTT-css {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-icfrMWe-css:disabled {
-    opacity: 0.3;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    pointer-events: none;
-    border-right: none;
-    border-radius: var(--radii-0) 0px 0px var(--radii-0);
-  }
-
   .c-dbrbZt-iesazQZ-css {
     color: var(--colors-tonal300);
   }
 
-  .c-fZTBsJ-idfXovZ-css {
+  .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fDzwZw-ilfsPzq-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:disabled {
+  .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
-  }
-
-  .c-fDzwZw-ilfsPzq-css {
-    pointer-events: all;
-    border-left: none;
-    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
-  }
-
-  .c-dhzjXW-iJWpPj-css {
-    opacity: 0.3;
-  }
-
-  .c-fDzwZw-ihPnxLe-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ihPnxLe-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ihPnxLe-css:disabled {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-ihPnxLe-css {
     pointer-events: none;
-    border-right: none;
-    border-radius: var(--radii-0) 0px 0px var(--radii-0);
-  }
-
-  .c-fDzwZw-ijleZyt-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ijleZyt-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ijleZyt-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ijleZyt-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ijleZyt-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ijleZyt-css:disabled {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-ijleZyt-css {
-    pointer-events: none;
-    border-left: none;
-    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
   }
 }
 
 @media  {
   .c-jVLVTy {
     z-index: 1;
+  }
+
+  .c-dwuWAP {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-dwuWAP:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-dwuWAP:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-dwuWAP:active {
+    bg: var(--tonal100);
+  }
+
+  .c-dwuWAP:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-dwuWAP:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-dwuWAP-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-dwuWAP-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
 
@@ -877,7 +703,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         </label>
       </div>
       <div
-        class="c-dhzjXW c-dhzjXW-iJWpPj-css"
+        class="c-dhzjXW"
       >
         <span
           aria-hidden="true"
@@ -886,7 +712,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-ihPnxLe-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
             data-testid="decrement-btn"
             disabled=""
             tabindex="-1"
@@ -909,7 +735,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-idfXovZ-css"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
           disabled=""
           id="numberInputField"
           inputmode="numeric"
@@ -926,8 +752,9 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-ijleZyt-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
             data-testid="increment-btn"
+            disabled=""
             tabindex="-1"
             type="button"
           >
@@ -1144,85 +971,64 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ibDGmTT-css {
-    opacity: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-icfrMWe-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-icfrMWe-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-icfrMWe-css:disabled {
-    opacity: 0.3;
-  }
-
-  .c-fDzwZw-icfrMWe-css {
-    pointer-events: none;
-    border-right: none;
-    border-radius: var(--radii-0) 0px 0px var(--radii-0);
-  }
-
   .c-dbrbZt-iesazQZ-css {
     color: var(--colors-tonal300);
   }
 
-  .c-fZTBsJ-idfXovZ-css {
+  .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fDzwZw-ilfsPzq-css {
-    border-color: var(--colors-tonal400);
-    z-index: 1;
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover {
-    background: var(--colors-tonal50);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fDzwZw-ilfsPzq-css:disabled {
+  .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
-  }
-
-  .c-fDzwZw-ilfsPzq-css {
-    pointer-events: all;
-    border-left: none;
-    border-radius: 0px var(--radii-0) var(--radii-0) 0px;
+    pointer-events: none;
   }
 }
 
 @media  {
   .c-jVLVTy {
     z-index: 1;
+  }
+
+  .c-dwuWAP {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-dwuWAP:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-dwuWAP:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-dwuWAP:active {
+    bg: var(--tonal100);
+  }
+
+  .c-dwuWAP:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-dwuWAP:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-dwuWAP-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-dwuWAP-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 }
 
@@ -1245,7 +1051,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         </label>
       </div>
       <div
-        class="c-dhzjXW c-dhzjXW-ibDGmTT-css"
+        class="c-dhzjXW"
       >
         <span
           aria-hidden="true"
@@ -1254,7 +1060,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-icfrMWe-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
             data-testid="decrement-btn"
             disabled=""
             tabindex="-1"
@@ -1277,7 +1083,7 @@ exports[`NumberInputField component renders a field with a number input - has no
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-idfXovZ-css"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
@@ -1293,7 +1099,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fDzwZw-ilfsPzq-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
             data-testid="increment-btn"
             tabindex="-1"
             type="button"
