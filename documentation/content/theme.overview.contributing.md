@@ -59,7 +59,7 @@ tabs:
 
       * `build:lib`: Builds the library and populates the `dist` folder
 
-      * `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project.
+      * `build:proptypes`: Builds the proptypes and exports it to be consumed by the `documentation` project.
 
       * `clean`: Deletes the `dist` folder to ensure a clean build
 
@@ -152,7 +152,6 @@ tabs:
           component-name/
             ComponentName.tsx
             ComponentName.test.tsx
-            ComponentName.mdx
             index.ts
       ```
 

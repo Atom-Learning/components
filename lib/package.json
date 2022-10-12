@@ -17,7 +17,7 @@
     "build:proptypes": "node ./scripts/generate-component-props.mjs",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
     "add-component": "node ./scripts/add-component.mjs",
-    "prepublishOnly": "run-s clean build:lib build:types build:docs",
+    "prepublishOnly": "run-s clean build:lib build:types build:proptypes",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
