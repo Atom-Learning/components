@@ -47,7 +47,7 @@ describe('Collapsible component', () => {
     expect(trigger).toHaveAttribute('aria-expanded', 'false')
 
     expect(content).toHaveAttribute('data-state', 'closed')
-    expect(screen.queryByText(contentText)).toBeNull()
+    expect(screen.queryByText(contentText)).not.toBeInTheDocument()
 
     userEvent.click(trigger)
 
@@ -63,6 +63,6 @@ describe('Collapsible component', () => {
     expect(trigger).toHaveAttribute('aria-expanded', 'false')
 
     expect(content).toHaveAttribute('data-state', 'closed')
-    expect(screen.queryByText(contentText)).toBeNull()
+    expect(screen.queryByText(contentText)).not.toBeInTheDocument()
   })
 })
