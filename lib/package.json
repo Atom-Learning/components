@@ -14,7 +14,7 @@
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c",
     "build:types": "NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
-    "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "build:proptypes": "node ./scripts/generate-component-props.mjs",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
     "add-component": "node ./scripts/add-component.mjs",
     "prepublishOnly": "run-s clean build:lib build:types build:docs",
