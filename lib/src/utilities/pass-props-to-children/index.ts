@@ -1,0 +1,1 @@
+export { passPropsToChildren } from './passPropsToChildren'

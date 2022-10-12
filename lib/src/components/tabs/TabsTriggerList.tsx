@@ -10,7 +10,7 @@ import { Icon } from '~/components/icon'
 import { styled, theme } from '~/stitches'
 
 import { TabTrigger } from './TabTrigger'
-import { passPropsToChildren } from './utils'
+import { passPropsToChildren } from '~/utilities/pass-props-to-children'
 
 interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
   enableTabScrolling?: boolean
