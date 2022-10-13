@@ -2,7 +2,6 @@ import { Minus, Plus } from '@atom-learning/icons'
 import * as React from 'react'
 
 import type { CSS } from '~/stitches'
-import { mergeRefs } from '~/utilities/mergeRefs'
 
 import { Flex } from '../flex'
 import { Input } from '../input'
@@ -42,6 +41,11 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     const [value, setValue] = React.useState<number | string>(initialValue)
     const [isInvalid, setIsInvalid] = React.useState(false)
     const inputRef = React.useRef<HTMLInputElement | null>(null)
+
+    React.useImperativeHandle(
+      forwardedRef,
+      () => inputRef.current as HTMLInputElement
+    )
 
     const disabledTooltipContent = {
       decrement: `Cannot enter values below ${min}`,
@@ -154,7 +158,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
         width: '$6',
         '&:disabled': { opacity: 0.3, pointerEvents: 'none' }
       },
-      ref: mergeRefs(inputRef, forwardedRef),
+      ref: inputRef,
       readOnly: isReadOnly,
       disabled: isDisabled,
       'aria-valuemin': min,
