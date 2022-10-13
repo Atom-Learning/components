@@ -7,16 +7,25 @@ import { Override } from '~/utilities/types'
 export const StyledImage = styled('img', {
   verticalAlign: 'middle',
   maxWidth: '100%',
-  '&[width]': {
-    width: 'auto'
+  variants: {
+    fluid: {
+      true: {
+        '&[width]': {
+          width: 'auto'
+        },
+        '&[width][height]': {
+          height: 'auto'
+        },
+        '&[src$=".svg"]': {
+          width: '100%',
+          height: 'auto',
+          maxWidth: 'none'
+        }
+      }
+    }
   },
-  '&[width][height]': {
-    height: 'auto'
-  },
-  '&[src$=".svg"]': {
-    width: '100%',
-    height: 'auto',
-    maxWidth: 'none'
+  defaultVariants: {
+    fluid: 'true'
   }
 })
 
