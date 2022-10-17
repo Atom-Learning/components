@@ -38,7 +38,6 @@ export const textVariantSize = ({ applyCapsize = true } = {}): Record<
 })
 
 export const StyledText = styled('p', {
-  color: '$tonal600',
   fontFamily: '$body',
   fontWeight: 400,
   margin: 0,
@@ -55,17 +54,17 @@ type TextProps = Override<
   React.ComponentProps<typeof StyledText>,
   {
     as?:
-      | 'blockquote'
-      | 'caption'
-      | 'dd'
-      | 'dt'
-      | 'figcaption'
-      | 'li'
-      | 'p'
-      | 'span'
-      | 'legend'
-      | React.ComponentType
-      | React.ElementType
+    | 'blockquote'
+    | 'caption'
+    | 'dd'
+    | 'dt'
+    | 'figcaption'
+    | 'li'
+    | 'p'
+    | 'span'
+    | 'legend'
+    | React.ComponentType
+    | React.ElementType
   }
 >
 

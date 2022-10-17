@@ -5,7 +5,6 @@ import type { Override } from '~/utilities'
 import { capsize } from '~/utilities'
 
 export const StyledHeading = styled('h2', {
-  color: '$tonal600',
   fontFamily: '$display',
   fontWeight: 700,
   m: 0,
@@ -51,14 +50,14 @@ export type HeadingProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledHeading>,
   {
     as?:
-      | 'h1'
-      | 'h2'
-      | 'h3'
-      | 'h4'
-      | 'h5'
-      | 'h6'
-      | React.ComponentType
-      | React.ElementType
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | React.ComponentType
+    | React.ElementType
   }
 >
 
