@@ -2,18 +2,14 @@ import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
-import { InlineFieldWrapper } from '~/components/field-wrapper'
-import { useFieldError, ValidationOptions } from '~/components/form'
-import { CSS } from '~/stitches'
+import {
+  InlineFieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
+import { useFieldError } from '~/components/form'
 
-type CheckboxFieldProps = {
-  css?: CSS
-  defaultChecked?: boolean
-  label: string
-  description?: string
-  name: string
-  validation?: ValidationOptions
-} & React.ComponentProps<typeof Checkbox>
+type CheckboxFieldProps = React.ComponentProps<typeof Checkbox> &
+  FieldElementWrapperProps
 
 enum CheckboxValue {
   ON = 'on',

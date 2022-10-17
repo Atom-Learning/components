@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
+import { FieldElementWrapperProps } from '~/components/field-wrapper'
 import { Description as FieldDescription } from '~/components/field-wrapper/FieldDescription'
-import { useFieldError, ValidationOptions } from '~/components/form'
+import { useFieldError } from '~/components/form'
 import { Label } from '~/components/label'
 import { RadioButtonGroup } from '~/components/radio-button'
 import { InlineMessage } from '~/components/inline-message'
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { RadioField } from './RadioField'
 
@@ -14,16 +15,8 @@ const Fieldset = styled('fieldset', {
   all: 'unset'
 })
 
-type RadioButtonFieldProps = {
-  css?: CSS
-  defaultValue?: string
-  label: string
-  name: string
-  direction?: 'row' | 'column'
-  description?: string
-  validation?: ValidationOptions
-  onValueChange?: (value: string) => void
-}
+type RadioButtonFieldProps = React.ComponentProps<typeof RadioButtonGroup> &
+  FieldElementWrapperProps
 
 export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   Item: typeof RadioField
