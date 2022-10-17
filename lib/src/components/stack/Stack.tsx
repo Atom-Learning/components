@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import { CSS, styled } from '~/stitches'
 import { createThemeVariants } from '~/utilities'
-import { CSSWrapper } from '~/utilities/css-wrapper'
 
 const StyledStack = styled('div', {
   display: 'flex',
@@ -67,7 +66,6 @@ export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
   React.forwardRef(
     (
       {
-        css,
         gap = 2,
         direction = 'row',
         wrap = 'wrap',
@@ -78,21 +76,20 @@ export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
       ref
     ) => {
       return (
-        <CSSWrapper css={css}>
-          <StyledStack
-            ref={ref}
-            direction={direction}
-            gap={gap}
-            wrap={wrap}
-            justify={justify}
-            align={
-              typeof align === 'undefined' && direction !== 'column'
-                ? 'center'
-                : align
-            }
-            {...remainingProps}
-          />
-        </CSSWrapper>
+        <StyledStack
+          ref={ref}
+          direction={direction}
+          gap={gap}
+          wrap={wrap}
+          justify={justify}
+          align={
+            typeof align === 'undefined' && direction !== 'column'
+              ? 'center'
+              : align
+          }
+          {...remainingProps}
+        />
+
       )
     }
   )
