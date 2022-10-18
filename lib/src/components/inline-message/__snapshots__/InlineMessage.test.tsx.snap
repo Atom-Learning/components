@@ -20,15 +20,14 @@ exports[`InlineMessage component renders an inline message 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 }
@@ -44,18 +43,18 @@ exports[`InlineMessage component renders an inline message 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -63,7 +62,7 @@ exports[`InlineMessage component renders an inline message 1`] = `
 }
 
 @media  {
-  .c-fIXJvv-igszWir-css {
+  .c-dyvMgW-igszWir-css {
     color: inherit;
     transform: translateY(var(--space-0));
   }
@@ -95,7 +94,7 @@ exports[`InlineMessage component renders an inline message 1`] = `
       />
     </svg>
     <span
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igszWir-css"
     >
       This is an Inline Message
     </span>
