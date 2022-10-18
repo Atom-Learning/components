@@ -156,6 +156,12 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
+  .c-dbrbZt-idQfaGE-css {
+    margin-left: var(--space-3);
+    height: 20px;
+    width: 20px;
+  }
+
   .c-dhzjXW-ihMdMjL-css {
     justify-content: center;
     opacity: 1;
