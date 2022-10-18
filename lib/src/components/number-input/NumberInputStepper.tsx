@@ -16,6 +16,9 @@ const StyledStepperButton = styled(ActionIcon, {
       color: '$tonal400'
     }
   },
+  svg: {
+    color: '$tonal300'
+  },
   '&:active': {
     bg: '$tonal100',
     svg: {
@@ -29,7 +32,7 @@ const StyledStepperButton = styled(ActionIcon, {
 })
 
 interface NumberInputStepperProps
-  extends Omit<React.ComponentProps<typeof ActionIcon>, 'children' | 'label'> {
+  extends Omit<React.ComponentProps<typeof ActionIcon>, 'children'> {
   icon: React.FC<React.SVGProps<SVGSVGElement>>
   showTooltip?: boolean
   disabledTooltipContent?: string
@@ -37,22 +40,19 @@ interface NumberInputStepperProps
 
 export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStepperProps> =
   React.forwardRef((props, forwardedRef) => {
-    const { icon, disabledTooltipContent, showTooltip, disabled, ...rest } =
-      props
+    const { icon, disabledTooltipContent, showTooltip, ...rest } = props
 
     return (
       <Tooltip>
         <Tooltip.Trigger asChild>
-          <StyledSpan aria-hidden>
+          <StyledSpan tabIndex={-1}>
             <StyledStepperButton
               tabIndex={-1}
               appearance="outline"
               ref={forwardedRef}
-              disabled={disabled}
-              label=""
               {...rest}
             >
-              <Icon is={icon} css={{ color: '$tonal300' }} />
+              <Icon is={icon} />
             </StyledStepperButton>
           </StyledSpan>
         </Tooltip.Trigger>

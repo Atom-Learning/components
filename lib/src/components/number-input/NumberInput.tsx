@@ -13,10 +13,11 @@ export interface NumberInputProps {
   max?: number
   step?: number
   initialValue?: number
-  isDisabled?: boolean
-  isReadOnly?: boolean
+  disabled?: boolean
+  readonly?: boolean
   size?: 'sm' | 'md'
   onChange?: (value: number) => void
+  stepperButtonLabels?: { increment?: string; decrement?: string }
   disabledTooltipContent?: { increment?: string; decrement?: string }
   css?: CSS
 }
@@ -29,23 +30,29 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       max = Number.MAX_SAFE_INTEGER,
       step = 1,
       initialValue = 0,
-      isDisabled = false,
-      isReadOnly = false,
+      disabled: isDisabled = false,
+      readonly: isReadOnly = false,
       size = 'md',
       onChange,
+      stepperButtonLabels: stepperButtonLabelsProp,
       disabledTooltipContent: disabledTooltipContentProp,
       css,
       ...rest
     } = props
 
     const [value, setValue] = React.useState<number | string>(initialValue)
-    const [isInvalid, setIsInvalid] = React.useState(false)
     const inputRef = React.useRef<HTMLInputElement | null>(null)
 
     React.useImperativeHandle(
       forwardedRef,
       () => inputRef.current as HTMLInputElement
     )
+
+    const stepperButtonLabels = {
+      increment: 'increment',
+      decrement: 'decrement',
+      ...stepperButtonLabelsProp
+    }
 
     const disabledTooltipContent = {
       decrement: `Cannot enter values below ${min}`,
@@ -60,14 +67,6 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       (value: number) => Math.min(Math.max(value, min), max),
       [max, min]
     )
-
-    const validateOnBlur = React.useCallback(() => {
-      if (value < min || value > max) {
-        setIsInvalid(true)
-      } else {
-        setIsInvalid(false)
-      }
-    }, [max, min, value])
 
     const updateValue = React.useCallback(
       (next: string | number) => {
@@ -129,7 +128,9 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
 
         const keyMap: Record<string, React.KeyboardEventHandler> = {
           ArrowUp: increment,
+          ArrowRight: increment,
           ArrowDown: decrement,
+          ArrowLeft: decrement,
           Home: () => updateValue(min),
           End: () => updateValue(max)
         }
@@ -150,7 +151,6 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       value,
       ...rest,
       onChange: onInputChange,
-      onBlur: validateOnBlur,
       onKeyDown,
       size,
       css: {
@@ -163,10 +163,8 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       disabled: isDisabled,
       'aria-valuemin': min,
       'aria-valuemax': max,
-      'aria-invalid': isInvalid,
       'aria-valuenow': Number(value),
-      role: 'spinbutton',
-      ...(isInvalid && { state: 'error' })
+      role: 'spinbutton'
     }
 
     return (
@@ -181,9 +179,9 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
           }}
           size={size}
           disabled={isAtMin || isDisabled}
-          showTooltip={!isDisabled}
+          showTooltip={isAtMin && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.decrement}
-          data-testid="decrement-btn"
+          label={stepperButtonLabels.decrement}
         />
         <Input {...inputProps} />
         <NumberInputStepper
@@ -196,9 +194,9 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
           }}
           size={size}
           disabled={isAtMax || isDisabled}
-          showTooltip={!isDisabled}
+          showTooltip={isAtMax && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.increment}
-          data-testid="increment-btn"
+          label={stepperButtonLabels.increment}
         />
       </Flex>
     )

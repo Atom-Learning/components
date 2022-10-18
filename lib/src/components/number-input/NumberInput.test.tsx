@@ -30,7 +30,7 @@ describe(`NumberInput component`, () => {
     renderComponent()
 
     const input = screen.getByRole('spinbutton')
-    const incrementBtn = screen.getByTestId('increment-btn')
+    const incrementBtn = screen.getByRole('button', { name: /increment/i })
 
     userEvent.click(incrementBtn)
     expect(input).toHaveValue('1')
@@ -43,7 +43,7 @@ describe(`NumberInput component`, () => {
     renderComponent({ initialValue: 5 })
 
     const input = screen.getByRole('spinbutton')
-    const decrementBtn = screen.getByTestId('decrement-btn')
+    const decrementBtn = screen.getByRole('button', { name: /decrement/i })
 
     userEvent.click(decrementBtn)
     expect(input).toHaveValue('4')
@@ -56,8 +56,8 @@ describe(`NumberInput component`, () => {
     renderComponent({ max: 10 })
 
     const input = screen.getByRole('spinbutton')
-    const decrementBtn = screen.getByTestId('decrement-btn')
-    const incrementBtn = screen.getByTestId('increment-btn')
+    const decrementBtn = screen.getByRole('button', { name: /decrement/i })
+    const incrementBtn = screen.getByRole('button', { name: /increment/i })
 
     expect(decrementBtn).toBeDisabled()
 
@@ -67,7 +67,7 @@ describe(`NumberInput component`, () => {
 
   it('should show tooltip on disabled button hover', async () => {
     renderComponent()
-    fireEvent.mouseOver(screen.getByTestId('decrement-btn'))
+    fireEvent.mouseOver(screen.getByRole('button', { name: /decrement/i }))
     expect(await screen.findByRole('tooltip')).toBeInTheDocument()
   })
 
@@ -94,20 +94,10 @@ describe(`NumberInput component`, () => {
     const onChange = jest.fn()
     renderComponent({ onChange })
 
-    const incrementBtn = screen.getByTestId('increment-btn')
+    const incrementBtn = screen.getByRole('button', { name: /increment/i })
     userEvent.click(incrementBtn)
 
     expect(onChange).toBeCalled()
     expect(onChange).toBeCalledWith(1)
-  })
-
-  it('should validate onBlur', () => {
-    renderComponent({ max: 10 })
-
-    const input = screen.getByRole('spinbutton')
-    userEvent.type(input, '50')
-
-    fireEvent.blur(input)
-    expect(input).toHaveAttribute('aria-invalid', 'true')
   })
 })

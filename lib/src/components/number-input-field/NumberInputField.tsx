@@ -3,7 +3,6 @@ import { useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import { useFieldError, ValidationOptions } from '~/components/form'
-import type { InputProps } from '~/components/input'
 import type { CSS } from '~/stitches'
 
 import type { NumberInputProps } from '../number-input/NumberInput'
@@ -45,9 +44,9 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
         id={name}
         name={name}
         ref={ref}
-        {...(error && { state: 'error' })}
+        {...(error && { state: 'error', 'aria-invalid': true })}
         {...remainingProps}
-        onChange={() => trigger}
+        onChange={trigger}
       />
     </FieldWrapper>
   )

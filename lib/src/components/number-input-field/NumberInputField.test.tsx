@@ -29,7 +29,7 @@ describe(`NumberInputField component`, () => {
   })
 
   it('renders a field with a disabled input - has no programmatically detectable a11y issues', async () => {
-    const { container, getByRole } = renderComponent({ isDisabled: true })
+    const { container, getByRole } = renderComponent({ disabled: true })
 
     const input = getByRole('spinbutton')
 
@@ -45,7 +45,7 @@ describe(`NumberInputField component`, () => {
       validation: { min: { value: 7, message: errorText } }
     })
 
-    userEvent.click(getByRole('button'))
+    userEvent.click(getByRole('button', { name: /submit/i }))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()

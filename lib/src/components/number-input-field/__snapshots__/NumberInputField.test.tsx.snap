@@ -238,10 +238,6 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-dbrbZt-iesazQZ-css {
-    color: var(--colors-tonal300);
-  }
-
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -267,41 +263,45 @@ exports[`NumberInputField component renders a field in error state - has no prog
     z-index: 1;
   }
 
-  .c-dwuWAP {
+  .c-fPoCzx {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
   }
 
-  .c-dwuWAP:hover {
+  .c-fPoCzx:hover {
     bg: var(--tonal50);
   }
 
-  .c-dwuWAP:hover svg {
+  .c-fPoCzx:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-dwuWAP:active {
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
     bg: var(--tonal100);
   }
 
-  .c-dwuWAP:active svg {
+  .c-fPoCzx:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-dwuWAP:disabled {
+  .c-fPoCzx:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 }
 
 @media  {
-  .c-dwuWAP-iwWtoZ-css {
+  .c-fPoCzx-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
-  .c-dwuWAP-ihgsOSq-css {
+  .c-fPoCzx-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -330,21 +330,20 @@ exports[`NumberInputField component renders a field in error state - has no prog
         class="c-dhzjXW"
       >
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
-            data-testid="decrement-btn"
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -355,7 +354,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           </button>
         </span>
         <input
-          aria-invalid="false"
+          aria-invalid="true"
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
@@ -369,20 +368,19 @@ exports[`NumberInputField component renders a field in error state - has no prog
           value="0"
         />
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
-            data-testid="increment-btn"
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -623,10 +621,6 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
-  .c-dbrbZt-iesazQZ-css {
-    color: var(--colors-tonal300);
-  }
-
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -643,41 +637,45 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     z-index: 1;
   }
 
-  .c-dwuWAP {
+  .c-fPoCzx {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
   }
 
-  .c-dwuWAP:hover {
+  .c-fPoCzx:hover {
     bg: var(--tonal50);
   }
 
-  .c-dwuWAP:hover svg {
+  .c-fPoCzx:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-dwuWAP:active {
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
     bg: var(--tonal100);
   }
 
-  .c-dwuWAP:active svg {
+  .c-fPoCzx:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-dwuWAP:disabled {
+  .c-fPoCzx:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 }
 
 @media  {
-  .c-dwuWAP-iwWtoZ-css {
+  .c-fPoCzx-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
-  .c-dwuWAP-ihgsOSq-css {
+  .c-fPoCzx-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -706,21 +704,20 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         class="c-dhzjXW"
       >
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
-            data-testid="decrement-btn"
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -731,7 +728,6 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           </button>
         </span>
         <input
-          aria-invalid="false"
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
@@ -746,21 +742,20 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           value="0"
         />
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
-            data-testid="increment-btn"
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -971,10 +966,6 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
-  .c-dbrbZt-iesazQZ-css {
-    color: var(--colors-tonal300);
-  }
-
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -991,41 +982,45 @@ exports[`NumberInputField component renders a field with a number input - has no
     z-index: 1;
   }
 
-  .c-dwuWAP {
+  .c-fPoCzx {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
   }
 
-  .c-dwuWAP:hover {
+  .c-fPoCzx:hover {
     bg: var(--tonal50);
   }
 
-  .c-dwuWAP:hover svg {
+  .c-fPoCzx:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-dwuWAP:active {
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
     bg: var(--tonal100);
   }
 
-  .c-dwuWAP:active svg {
+  .c-fPoCzx:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-dwuWAP:disabled {
+  .c-fPoCzx:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 }
 
 @media  {
-  .c-dwuWAP-iwWtoZ-css {
+  .c-fPoCzx-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
-  .c-dwuWAP-ihgsOSq-css {
+  .c-fPoCzx-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1054,21 +1049,20 @@ exports[`NumberInputField component renders a field with a number input - has no
         class="c-dhzjXW"
       >
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-iwWtoZ-css"
-            data-testid="decrement-btn"
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1079,7 +1073,6 @@ exports[`NumberInputField component renders a field with a number input - has no
           </button>
         </span>
         <input
-          aria-invalid="false"
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
@@ -1093,20 +1086,19 @@ exports[`NumberInputField component renders a field with a number input - has no
           value="0"
         />
         <span
-          aria-hidden="true"
           class="c-jVLVTy c-PJLV"
           data-state="closed"
+          tabindex="-1"
         >
           <button
-            aria-label=""
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dwuWAP c-dwuWAP-ihgsOSq-css"
-            data-testid="increment-btn"
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
