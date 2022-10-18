@@ -122,10 +122,11 @@
   "peerDependencies": {
     "@atom-learning/icons": "^1.0.0",
     "@atom-learning/theme": "^1.0.0",
-    "react": "^16.0.0 || ^17.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0"
+    "react": "^17",
+    "react-dom": "^17"
   },
   "dependencies": {
+    "@atom-learning/color-scheme": "0.0.0-semantically-released",
     "@atom-learning/theme": "1.1.0",
     "@radix-ui/react-accordion": "^1.0.0",
     "@radix-ui/react-alert-dialog": "^1.0.0",
@@ -156,8 +157,6 @@
     "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
     "pure-react-carousel": "^1.27.6",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
     "react-hook-form": "^6.15.4",
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
