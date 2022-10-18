@@ -21,25 +21,25 @@ export const components = {
             {...props}
             size="md"
             as="h2"
-            css={{ fontWeight: 600, mt: '$8', mb: '$5' }}
+            css={{ fontWeight: 600 }}
         />
     ),
     h3: (props) => (
-        <Heading {...props} as="h3" size="sm" css={{ mt: '$5', mb: '$4' }} />
+        <Heading {...props} as="h3" size="sm" />
     ),
     h4: (props) => (
-        <Heading {...props} as="h4" size="xs" css={{ mt: '$5', mb: '$4' }} />
+        <Heading {...props} as="h4" size="xs" />
     ),
     h5: (props) => (
-        <Heading {...props} as="h5" size="xs" css={{ mt: '$5', mb: '$4' }} />
+        <Heading {...props} as="h5" size="xs" />
     ),
     h6: (props) => (
-        <Heading {...props} as="h6" size="xs" css={{ mt: '$5', mb: '$4' }} />
+        <Heading {...props} as="h6" size="xs" />
     ),
     code: InlineCode,
     pre: CodeBlock,
-    p: (props) => <Text {...props} css={{ mb: '$5' }} />,
-    ul: (props) => <List {...props} css={{ mb: '$5' }} />,
+    p: (props) => <Text {...props} />,
+    ul: (props) => <List {...props} />,
     li: List.Item,
     blockquote: (props) => (
         <Text
@@ -47,7 +47,6 @@ export const components = {
             as="blockquote"
             css={{
                 pl: '$5',
-                my: '$5',
                 color: '$tonal7',
                 borderLeft: '2px solid $colors$tonal3'
             }}
@@ -56,7 +55,7 @@ export const components = {
         </Text>
     ),
     a: Link,
-    hr: (props) => <Divider {...props} css={{ my: '$8' }} />,
+    hr: (props) => <Divider {...props} />,
     Text,
     Box,
     table: Table,

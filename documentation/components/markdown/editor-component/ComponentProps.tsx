@@ -5,7 +5,8 @@ import {
   Icon,
   Link,
   Tooltip,
-  Table
+  Table,
+  Box
 } from '@atom-learning/components'
 import docgen from '@atom-learning/components/dist/docgen.json'
 import { Ok } from '@atom-learning/icons'
@@ -93,40 +94,44 @@ const PropType = ({ name, type }) => {
 
 export const ComponentProps: React.FC<{ component }> = ({ component }) => {
   const componentProps = getComponentProps(component)
-
   if (!componentProps) return null
 
   return (
-    <Table css={{ width: '500px', mb: '100px' }}>
-      <Table.Header>
-        <Table.Row>
-          {columns.map((column) => (
-            <Table.HeaderCell key={column}>{column}</Table.HeaderCell>
-          ))}
-        </Table.Row>
-      </Table.Header>
-      <Table.Body>
-        {Object.entries(componentProps.props).map(([key, { name, type, defaultValue, required }]) => {
-          if (type.name === 'never') return null
-
-          return (
-            <Table.Row key={key}>
-              <Table.Cell><code>{name}</code></Table.Cell>
-              <Table.Cell><PropType name={name} type={type} /></Table.Cell>
-              <Table.Cell>
-                {defaultValue && defaultValue.value !== 'undefined' ? (
-                  <code>{defaultValue.value}</code>
-                ) : "-"}
-              </Table.Cell>
-              <Table.Cell>
-                {required && name !== 'as' && name !== 'css' ? (
-                  <Icon is={Ok} size="sm" />
-                ) : "-"}
-              </Table.Cell>
+    <Box as="figure" css={{ width: '100%', p: 0, m: 0 }}>
+      <Text as="figcaption" size='xs' css={{ mb: '$2', fontWeight: 'bold' }}>{component}</Text>
+      <Box css={{ width: '100%', overflow: 'auto' }}>
+        <Table css={{ width: '100%' }}>
+          <Table.Header>
+            <Table.Row>
+              {columns.map((column) => (
+                <Table.HeaderCell key={column}>{column}</Table.HeaderCell>
+              ))}
             </Table.Row>
-          )
-        })}
-      </Table.Body>
-    </Table>
+          </Table.Header>
+          <Table.Body>
+            {Object.entries(componentProps.props).map(([key, { name, type, defaultValue, required }]) => {
+              if (type.name === 'never') return null
+
+              return (
+                <Table.Row key={key}>
+                  <Table.Cell><code>{name}</code></Table.Cell>
+                  <Table.Cell><PropType name={name} type={type} /></Table.Cell>
+                  <Table.Cell>
+                    {defaultValue && defaultValue.value !== 'undefined' ? (
+                      <code>{defaultValue.value}</code>
+                    ) : "-"}
+                  </Table.Cell>
+                  <Table.Cell>
+                    {required && name !== 'as' && name !== 'css' ? (
+                      <Icon is={Ok} size="sm" />
+                    ) : "-"}
+                  </Table.Cell>
+                </Table.Row>
+              )
+            })}
+          </Table.Body>
+        </Table>
+      </Box>
+    </Box>
   )
 }
