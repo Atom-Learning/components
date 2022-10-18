@@ -23,7 +23,7 @@ exports[`Accordion component renders an accordion 1`] = `
     transform: rotate(0deg);
   }
 
-  .c-gErdmT {
+  .c-dkSJnW {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -34,44 +34,64 @@ exports[`Accordion component renders an accordion 1`] = `
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    background: var(--colors-interactive2);
+    color: var(--colors-interactiveForeground);
   }
 
-  .c-gErdmT[data-state="open"] {
+  .c-dkSJnW[data-disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-dkSJnW:not([data-disabled]):active,
+  .c-dkSJnW:not([data-disabled]):hover,
+  .c-dkSJnW:not([data-disabled]):focus-visible {
+    background: var(--colors-interactive3);
+  }
+
+  .c-dkSJnW:not([data-disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-dkSJnW[data-state="open"] {
     border-radius: var(--radii-0) var(--radii-0) 0 0;
   }
 
-  .c-gErdmT[data-state="closed"] {
+  .c-dkSJnW[data-state="closed"] {
     border-radius: var(--radii-0);
   }
 
-  .c-hXRGtr {
+  .c-ftGaDE {
     border: 0;
     width: 100%;
-    background: #fff;
+    background: var(--colors-background);
+    overflow: hidden;
   }
 
-  .c-hXRGtr[data-state="open"] {
+  .c-ftGaDE[data-state="open"] {
     border-radius: 0 0 var(--radii-0) var(--radii-0);
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hXRGtr[data-state="open"] {
+    .c-ftGaDE[data-state="open"] {
       animation: k-jYBrOR 300ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hXRGtr[data-state="closed"] {
+    .c-ftGaDE[data-state="closed"] {
       animation: k-fNLrdV 300ms ease-out;
     }
 }
 
-  .c-hZqVuK {
+  .c-lglaXW {
     width: 100%;
-    overflow: hidden;
   }
 
-  .c-hZqVuK:not(:last-child) {
+  .c-lglaXW:not(:last-child) {
     margin-bottom: var(--space-1);
   }
 
@@ -86,24 +106,78 @@ exports[`Accordion component renders an accordion 1`] = `
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
+}
 
-  .c-gErdmT-irYuKu-theme-primaryDark {
-    background: var(--colors-primaryDark);
-    color: #fff;
+@media  {
+  :root,
+  .t-fLvBYr {
+    --colors-background: white;
+    --colors-foreground: #191919;
+    --colors-foreground6plus: white;
+    --colors-blue1: #F3F8FF;
+    --colors-blue2: #E5F1FF;
+    --colors-blue3: #D6EAFF;
+    --colors-blue4: #C2DEFF;
+    --colors-blue5: #B3D4FA;
+    --colors-blue6: #057AFF;
+    --colors-blue7: #0F67F5;
+    --colors-blue8: #194DCC;
+    --colors-blue9: #102DA3;
+    --colors-blueA1: rgba(0,0,255,0.025);
+    --colors-blueA2: rgba(214,233,255,0.63);
+    --colors-blueA3: rgba(0,45,255,0.1);
+    --colors-blueA4: rgba(0,39,255,0.153);
+    --colors-blueA5: rgba(0,63,233,0.224);
+    --colors-blueA6: rgba(0,0,255,0.32);
+    --colors-blueA7: rgba(0,0,232,0.44);
+    --colors-blueA8: rgba(0,21,188,0.76);
+    --colors-blueA9: rgba(0,0,140,0.8);
+    --colors-slate1: #F6F6F6;
+    --colors-slate2: #EBEBEB;
+    --colors-slate3: #E0E0E0;
+    --colors-slate4: #CECECE;
+    --colors-slate5: #C2C2C2;
+    --colors-slate6: #757575;
+    --colors-slate7: #545454;
+    --colors-slate8: #333333;
+    --colors-slate9: #1F1F1F;
+    --colors-slateA1: rgba(0,0,0,0.025);
+    --colors-slateA2: rgba(223,223,223,0.63);
+    --colors-slateA3: rgba(0,0,0,0.1);
+    --colors-slateA4: rgba(0,0,0,0.153);
+    --colors-slateA5: rgba(0,0,0,0.224);
+    --colors-slateA6: rgba(0,0,0,0.32);
+    --colors-slateA7: rgba(0,0,0,0.44);
+    --colors-slateA8: rgba(0,0,0,0.76);
+    --colors-slateA9: rgba(0,0,0,0.8);
   }
 
-  .c-gErdmT-irYuKu-theme-primaryDark[disabled] {
-    background: var(--colors-tonal100);
-    cursor: not-allowed;
-    color: var(--colors-tonal400);
+  .interactive-hiContrast {
+    --colors-interactiveForeground: var(--colors-foreground6plus);
+    --colors-interactive1: var(--colors-accent7);
+    --colors-interactive2: var(--colors-accent8);
+    --colors-interactive3: var(--colors-accent9);
   }
 
-  .c-gErdmT-irYuKu-theme-primaryDark:not([disabled]):hover {
-    background: hsla(228, 82%, 25%, 1);
-  }
-
-  .c-gErdmT-irYuKu-theme-primaryDark:not([disabled]):active {
-    background: hsla(228, 82%, 20%, 1);
+  .accent-slate {
+    --colors-accent1: var(--colors-slate1);
+    --colors-accentA1: var(--colors-slateA1);
+    --colors-accent2: var(--colors-slate2);
+    --colors-accentA2: var(--colors-slateA2);
+    --colors-accent3: var(--colors-slate3);
+    --colors-accentA3: var(--colors-slateA3);
+    --colors-accent4: var(--colors-slate4);
+    --colors-accentA4: var(--colors-slateA4);
+    --colors-accent5: var(--colors-slate5);
+    --colors-accentA5: var(--colors-slateA5);
+    --colors-accent6: var(--colors-slate6);
+    --colors-accentA6: var(--colors-slateA6);
+    --colors-accent7: var(--colors-slate7);
+    --colors-accentA7: var(--colors-slateA7);
+    --colors-accent8: var(--colors-slate8);
+    --colors-accentA8: var(--colors-slateA8);
+    --colors-accent9: var(--colors-slate9);
+    --colors-accentA9: var(--colors-slateA9);
   }
 }
 
@@ -112,14 +186,14 @@ exports[`Accordion component renders an accordion 1`] = `
     class="c-fGHEql"
   >
     <div
-      class="c-hZqVuK"
+      class="c-lglaXW"
       data-state="open"
     >
       <button
         aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
+        class="c-dkSJnW PJLV interactive-hiContrast accent-slate"
         data-radix-collection-item=""
         data-state="open"
         id="radix-1"
@@ -139,7 +213,7 @@ exports[`Accordion component renders an accordion 1`] = `
       </button>
       <div
         aria-labelledby="radix-1"
-        class="c-hXRGtr"
+        class="c-ftGaDE"
         data-state="open"
         id="radix-0"
         role="region"
@@ -149,13 +223,13 @@ exports[`Accordion component renders an accordion 1`] = `
       </div>
     </div>
     <div
-      class="c-hZqVuK"
+      class="c-lglaXW"
       data-state="closed"
     >
       <button
         aria-controls="radix-2"
         aria-expanded="false"
-        class="c-gErdmT c-gErdmT-irYuKu-theme-primaryDark"
+        class="c-dkSJnW PJLV interactive-hiContrast accent-slate"
         data-radix-collection-item=""
         data-state="closed"
         id="radix-3"
@@ -175,7 +249,7 @@ exports[`Accordion component renders an accordion 1`] = `
       </button>
       <div
         aria-labelledby="radix-3"
-        class="c-hXRGtr"
+        class="c-ftGaDE"
         data-state="closed"
         hidden=""
         id="radix-2"
