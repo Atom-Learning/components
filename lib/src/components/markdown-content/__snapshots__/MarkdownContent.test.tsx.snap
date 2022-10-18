@@ -2,48 +2,40 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-eiVJvY > .c-jryFOR {
+  .c-jhvlDu > *:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-jhvlDu > *:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-jhvlDu > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-eiVJvY > .c-jryFOR:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-eiVJvY > .c-jryFOR:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-eiVJvY > .c-dyvMgW {
+  .c-jhvlDu > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-eiVJvY > .c-dyvMgW:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-eiVJvY > .c-iQukjL {
+  .c-jhvlDu > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-eiVJvY > .c-iQukjL:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-eiVJvY > .c-jpqjUq {
+  .c-jhvlDu > .c-jpqjUq {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-eiVJvY > .c-eWgOGC {
+  .c-jhvlDu > .c-eWgOGC {
     display: block;
   }
 
-  .c-eiVJvY > .c-eWgOGC:not(:first-child) {
+  .c-jhvlDu > .c-eWgOGC:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-eiVJvY > .c-eWgOGC:not(:last-child) {
+  .c-jhvlDu > .c-eWgOGC:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -350,7 +342,7 @@ exports[`MarkdownContent component renders 1`] = `
 
 <div>
   <div
-    class="c-eiVJvY"
+    class="c-jhvlDu"
   >
     <hr
       class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-ifGHEql-css"
