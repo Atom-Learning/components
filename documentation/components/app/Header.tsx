@@ -19,8 +19,8 @@ export const HeaderTrigger: React.FC<HeaderTriggerProps> = (props) => (
     appearance="solid"
     size="lg"
     css={{
-      background: '$accent1',
-      color: '$foreground',
+      background: '$interactive1',
+      color: '$interactiveForeground',
       position: 'fixed',
       top: '$2',
       left: '$2',
