@@ -3,11 +3,13 @@
   "name": "design-system",
   "workspaces": [
     "lib",
-    "site"
+    "documentation",
+    "color-scheme"
   ],
   "scripts": {
-    "dev:lib": "cd lib && yarn proptypes && NODE_ENV=development rollup -c -w",
-    "build:lib": "cd lib && yarn proptypes && NODE_ENV=production rollup -c",
+    "dev:color-scheme": "cd color-scheme && yarn dev",
+    "dev:lib": "cd lib && yarn build:proptypes && yarn dev",
+    "build:lib": "cd lib && yarn build:proptypes && yarn build:lib",
     "test:lib": "cd lib && yarn test",
     "server:docs": "cd documentation && npx netlify-cms-proxy-server",
     "dev:docs": "cd documentation && yarn provision && yarn dev",
@@ -42,8 +44,5 @@
         "always"
       ]
     }
-  },
-  "engines": {
-    "node": "^14.20"
   }
 }
