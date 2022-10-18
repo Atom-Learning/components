@@ -72,14 +72,8 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     align-items: center;
   }
 
-  .c-jgdwfn-dlytZv-gap-3 {
-    margin-top: calc(var(--space-3)*-1);
-    margin-left: calc(var(--space-3)*-1);
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 > * {
-    margin-top: var(--space-3);
-    margin-left: var(--space-3);
+  .c-jgdwfn-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-jCXneY-llEebI-align-left {
@@ -111,7 +105,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     tabindex="0"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3"
+      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dvnNgW-gap-3"
     >
       <button
         aria-checked="false"

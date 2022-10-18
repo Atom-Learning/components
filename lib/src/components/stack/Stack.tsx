@@ -45,12 +45,7 @@ const StyledStack = styled('div', {
     },
     gap: {
       ...createThemeVariants('space', {
-        mt: '-$key',
-        ml: '-$key',
-        '& > *': {
-          mt: '$key',
-          ml: '$key'
-        }
+        gap: '$key',
       }),
       false: {}
     }
