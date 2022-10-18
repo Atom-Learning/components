@@ -15,7 +15,7 @@ describe(`Tooltip component`, () => {
       </Tooltip.Provider>
     )
 
-    fireEvent.mouseOver(screen.getByText('TOOLTIP'))
+    fireEvent.focus(screen.getByText('TOOLTIP'))
 
     expect(container).toMatchSnapshot()
   })
