@@ -15,7 +15,7 @@ const StyledTriggerList = styled(List, {
   }
 })
 
-export const TriggerListWrapper: React.FC<typeof StyledTriggerList> = ({
+export const TabsTriggerList: React.FC<typeof StyledTriggerList> = ({
   children,
   appearance,
   ...rest

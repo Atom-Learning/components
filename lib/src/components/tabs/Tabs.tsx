@@ -1,25 +1,21 @@
-import { Content, Root } from '@radix-ui/react-tabs'
+import { Root } from '@radix-ui/react-tabs'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { TriggerListWrapper } from './TabsTriggerList'
-import { TabTrigger } from './TabTrigger'
+import { TabsTriggerList } from './TabsTriggerList'
+import { TabsTrigger } from './TabsTrigger'
+import { TabsContent } from './TabsContent'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
 
 
 const StyledRoot = styled(Root)
 
-const StyledTabContent = styled(Content, {
-  flexGrow: 1,
-  fontFamily: '$body'
-})
-
 export const Tabs: React.FC<TabsProps> & {
-  TriggerList: typeof TriggerListWrapper
-  Trigger: typeof TabTrigger
-  Content: typeof StyledTabContent
+  TriggerList: typeof TabsTriggerList
+  Trigger: typeof TabsTrigger
+  Content: typeof TabsContent
 } = ({ children, ...remainingProps }) => {
 
   return (
@@ -29,8 +25,8 @@ export const Tabs: React.FC<TabsProps> & {
   )
 }
 
-Tabs.TriggerList = TriggerListWrapper
-Tabs.Trigger = TabTrigger
-Tabs.Content = StyledTabContent
+Tabs.TriggerList = TabsTriggerList
+Tabs.Trigger = TabsTrigger
+Tabs.Content = TabsContent
 
 Tabs.displayName = 'Tabs'

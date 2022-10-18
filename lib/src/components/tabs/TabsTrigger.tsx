@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
 import { Text } from '../text'
 
-const StyledTabTrigger = styled(Trigger, {
+const StyledTabsTrigger = styled(Trigger, {
   background: 'none',
   border: 'none',
   cursor: 'pointer',
@@ -36,16 +36,16 @@ const StyledTabTrigger = styled(Trigger, {
   }
 })
 
-interface TabTriggerProps
-  extends React.ComponentProps<typeof StyledTabTrigger> {
+interface TabsTriggerProps
+  extends React.ComponentProps<typeof StyledTabsTrigger> {
   value: string
 }
 
-export const TabTrigger: React.FC<TabTriggerProps> = ({
+export const TabsTrigger: React.FC<TabsTriggerProps> = ({
   children,
   ...rest
 }) => (
-  <StyledTabTrigger asChild {...rest}><Text size="sm" as="span">{children}</Text></StyledTabTrigger>
+  <StyledTabsTrigger asChild {...rest}><Text size="sm" as="span">{children}</Text></StyledTabsTrigger>
 )
 
-TabTrigger.displayName = 'TabTrigger'
+TabsTrigger.displayName = 'TabsTrigger'
