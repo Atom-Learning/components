@@ -1,7 +1,7 @@
 import { Box } from '@atom-learning/components'
 import * as React from 'react'
 
-export const Container: React.FC<{ css?: any }> = ({ css, children, ...rest }) => (
+export const Container: React.FC<typeof Box> = ({ css, children, ...rest }) => (
   <Box
     css={{
       maxWidth: 640,

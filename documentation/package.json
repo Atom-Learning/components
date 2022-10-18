@@ -10,6 +10,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "peerDependencies": {
+    "@atom-learning/color-scheme": "0.0.0-semantically-released"
+  },
   "dependencies": {
     "@atom-learning/components": "0.0.0-semantically-released",
     "@atom-learning/icons": "^1.14.0",
@@ -20,8 +23,8 @@
     "pascalcase": "^2.0.0",
     "polished": "^4.2.2",
     "randomstring": "^1.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-live": "3.1.1",
     "simple-oauth2": "^4.3.0"
   },
