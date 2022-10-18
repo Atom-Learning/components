@@ -995,17 +995,19 @@ post.
             <Label css={{ mb: '$3' }} htmlFor="yolo">
               Something else about fruit
             </Label>
-            <Combobox openOnFocus>
-              <Combobox.Input id="yolo" />
-              <Combobox.Popover>
-                <Combobox.List>
-                  <Combobox.Option value="Apple" />
-                  <Combobox.Option value="Banana" />
-                  <Combobox.Option value="Cranberry" />
-                  <Combobox.Option value="Dragon fruit" />
-                </Combobox.List>
-              </Combobox.Popover>
-            </Combobox>
+            <Form onSubmit={() => undefined}>
+              <Combobox openOnFocus>
+                <Combobox.Input id="yolo" />
+                <Combobox.Popover>
+                  <Combobox.List>
+                    <Combobox.Option value="Apple" />
+                    <Combobox.Option value="Banana" />
+                    <Combobox.Option value="Cranberry" />
+                    <Combobox.Option value="Dragon fruit" />
+                  </Combobox.List>
+                </Combobox.Popover>
+              </Combobox>
+            </Form>
           </Box>
           <RadioCardGroup align="right" size="lg" isFullWidth defaultValue="1">
             <RadioCard value="1">
