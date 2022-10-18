@@ -23,10 +23,9 @@ const NavigationTitle = ({ level, css, ...rest }) => {
   }
 }
 
-const NavigationLink: React.FC<{ href: string, css: any }> = ({
+const NavigationLink: React.FC<{ href: string }> = ({
   href,
-  children,
-  css
+  children
 }) => {
   const { asPath: currentPage } = useRouter()
 
@@ -35,9 +34,9 @@ const NavigationLink: React.FC<{ href: string, css: any }> = ({
 
   return (
     <NextLink href={href} passHref replace={true} shallow={true}>
-      <Link css={{ display: 'flex', justifyContent: 'space-between', ...css }}>
+      <Link css={{ position: 'relative', color: 'currentColor !important', display: 'block', mb: '$3' }}>
         {children}
-        {isCurrentPage && <Icon size="sm" is={ArrowRight} />}
+        {isCurrentPage && <Icon size="sm" css={{ position: 'absolute', right: '0', top: '50%', transform: 'translateY(-50%)' }} is={ArrowRight} />}
       </Link>
     </NextLink>
   )
@@ -62,7 +61,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({
             if (!title) return;
             return (
               <Box as="li" css={{ mb: [1].includes(level) ? '$6' : 0 }} key={href}>
-                <NavigationLink href={href} css={{ mb: '$4', color: 'currentColor !important' }}>
+                <NavigationLink href={href}>
                   <NavigationTitle level={level} css={{ color: 'currentColor' }} >
                     {title}
                   </NavigationTitle>
