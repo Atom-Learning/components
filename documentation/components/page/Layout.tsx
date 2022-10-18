@@ -37,7 +37,9 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
                     <Container css={{ py: '$5' }}>
                         {tabs.map((tab, i) => (
                             <Tabs.Content key={tab.title} value={`tab${i}`}>
-                                <MDXRemote {...tab.content} components={components} />
+                                <StackContent>
+                                    <MDXRemote {...tab.content} components={components} />
+                                </StackContent>
                             </Tabs.Content>
                         ))
                         }
