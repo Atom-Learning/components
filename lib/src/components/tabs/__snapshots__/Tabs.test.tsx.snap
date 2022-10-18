@@ -2,64 +2,159 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-llMclw {
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-bWpZXV {
     background: none;
     border: none;
     cursor: pointer;
     flex-shrink: 0;
-    font-family: var(--fonts-body);
     padding: var(--space-4);
-    height: var(--sizes-5);
     -webkit-user-select: none;
     user-select: none;
-    transition: 0.3s;
-    color: var(--colors-tonal500);
+    border-bottom: 2px solid transparent;
   }
 
-  .c-llMclw[data-state="active"] {
+  .c-bWpZXV[data-state="active"] {
+    color: var(--colors-interactive1);
     font-weight: 600;
     letter-spacing: -0.005em;
-    box-shadow: inset 0 -2px 0 0 currentColor;
+    border-color: currentColor;
   }
 
-  .c-llMclw[data-disabled] {
+  .c-bWpZXV[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-llMclw:not([data-disabled]):active,
-  .c-llMclw:not([data-disabled]):hover,
-  .c-llMclw:not([data-disabled]):focus-visible {
-    color: var(--colors-accent);
+  .c-bWpZXV:not([data-disabled]):hover,
+  .c-bWpZXV:not([data-disabled]):focus-visible {
+    color: var(--colors-interactive2);
+    background: var(--colors-accentA1);
   }
 
-  .c-llMclw:not([data-disabled]):focus-visible {
+  .c-bWpZXV:not([data-disabled]):active {
+    color: var(--colors-interactive3);
+  }
+
+  .c-bWpZXV:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-gnshMT {
+  .c-joSbBU {
     flex-shrink: 0;
     display: flex;
+    border-bottom: 1px solid var(--colors-tonal3);
     width: 100%;
-    overflow: visible;
-    overflow-x: auto;
-  }
-
-  .c-gnshMT::-webkit-scrollbar {
-    display: none;
-  }
-
-  .c-gnshMT {
-    scrollbar-width: none;
-    border-bottom: 1px solid var(--colors-separator);
   }
 
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
+  }
+}
+
+@media  {
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+@media  {
+  :root,
+  .t-fLvBYr {
+    --colors-background: white;
+    --colors-foreground: #191919;
+    --colors-foreground6plus: white;
+    --colors-blue1: #F3F8FF;
+    --colors-blue2: #E5F1FF;
+    --colors-blue3: #D6EAFF;
+    --colors-blue4: #C2DEFF;
+    --colors-blue5: #B3D4FA;
+    --colors-blue6: #057AFF;
+    --colors-blue7: #0F67F5;
+    --colors-blue8: #194DCC;
+    --colors-blue9: #102DA3;
+    --colors-blueA1: rgba(0,0,255,0.025);
+    --colors-blueA2: rgba(214,233,255,0.63);
+    --colors-blueA3: rgba(0,45,255,0.1);
+    --colors-blueA4: rgba(0,39,255,0.153);
+    --colors-blueA5: rgba(0,63,233,0.224);
+    --colors-blueA6: rgba(0,0,255,0.32);
+    --colors-blueA7: rgba(0,0,232,0.44);
+    --colors-blueA8: rgba(0,21,188,0.76);
+    --colors-blueA9: rgba(0,0,140,0.8);
+    --colors-slate1: #F6F6F6;
+    --colors-slate2: #EBEBEB;
+    --colors-slate3: #E0E0E0;
+    --colors-slate4: #CECECE;
+    --colors-slate5: #C2C2C2;
+    --colors-slate6: #757575;
+    --colors-slate7: #545454;
+    --colors-slate8: #333333;
+    --colors-slate9: #1F1F1F;
+    --colors-slateA1: rgba(0,0,0,0.025);
+    --colors-slateA2: rgba(223,223,223,0.63);
+    --colors-slateA3: rgba(0,0,0,0.1);
+    --colors-slateA4: rgba(0,0,0,0.153);
+    --colors-slateA5: rgba(0,0,0,0.224);
+    --colors-slateA6: rgba(0,0,0,0.32);
+    --colors-slateA7: rgba(0,0,0,0.44);
+    --colors-slateA8: rgba(0,0,0,0.76);
+    --colors-slateA9: rgba(0,0,0,0.8);
+  }
+
+  .interactive-hiContrast {
+    --colors-interactiveForeground: var(--colors-foreground6plus);
+    --colors-interactive1: var(--colors-accent7);
+    --colors-interactive2: var(--colors-accent8);
+    --colors-interactive3: var(--colors-accent9);
+  }
+
+  .accent-blue {
+    --colors-accent1: var(--colors-blue1);
+    --colors-accentA1: var(--colors-blueA1);
+    --colors-accent2: var(--colors-blue2);
+    --colors-accentA2: var(--colors-blueA2);
+    --colors-accent3: var(--colors-blue3);
+    --colors-accentA3: var(--colors-blueA3);
+    --colors-accent4: var(--colors-blue4);
+    --colors-accentA4: var(--colors-blueA4);
+    --colors-accent5: var(--colors-blue5);
+    --colors-accentA5: var(--colors-blueA5);
+    --colors-accent6: var(--colors-blue6);
+    --colors-accentA6: var(--colors-blueA6);
+    --colors-accent7: var(--colors-blue7);
+    --colors-accentA7: var(--colors-blueA7);
+    --colors-accent8: var(--colors-blue8);
+    --colors-accentA8: var(--colors-blueA8);
+    --colors-accent9: var(--colors-blue9);
+    --colors-accentA9: var(--colors-blueA9);
   }
 }
 
@@ -71,49 +166,63 @@ exports[`Tabs component renders 1`] = `
   >
     <div
       aria-orientation="horizontal"
-      class="c-gnshMT"
+      class="c-joSbBU PJLV interactive-hiContrast accent-blue"
       data-orientation="horizontal"
       role="tablist"
       style="outline: none;"
       tabindex="0"
     >
-      <button
-        aria-controls="radix-2-content-tab1"
+      <span
+        aria-controls="radix-3-content-tab1"
         aria-selected="true"
-        class="c-llMclw"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
-        id="radix-2-trigger-tab1"
+        id="radix-3-trigger-tab1"
         role="tab"
         tabindex="-1"
-        theme="t-kLRDWO"
         type="button"
       >
         Trigger 1
-      </button>
-      <button
-        aria-controls="radix-2-content-tab2"
+      </span>
+      <span
+        aria-controls="radix-3-content-tab2"
         aria-selected="false"
-        class="c-llMclw"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
-        id="radix-2-trigger-tab2"
+        id="radix-3-trigger-tab2"
         role="tab"
         tabindex="-1"
-        theme="t-kLRDWO"
         type="button"
       >
         Trigger 2
-      </button>
+      </span>
+      <span
+        aria-controls="radix-3-content-tab3"
+        aria-selected="false"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+        data-disabled=""
+        data-orientation="horizontal"
+        data-radix-collection-item=""
+        data-state="inactive"
+        disabled=""
+        id="radix-3-trigger-tab3"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Trigger 3
+      </span>
     </div>
     <div
-      aria-labelledby="radix-2-trigger-tab1"
+      aria-labelledby="radix-3-trigger-tab1"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-2-content-tab1"
+      id="radix-3-content-tab1"
       role="tabpanel"
       style="animation-duration: 0s;"
       tabindex="0"
@@ -121,160 +230,22 @@ exports[`Tabs component renders 1`] = `
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-2-trigger-tab2"
+      aria-labelledby="radix-3-trigger-tab2"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-2-content-tab2"
+      id="radix-3-content-tab2"
       role="tabpanel"
       tabindex="0"
     />
-  </div>
-</div>
-`;
-
-exports[`Tabs component renders mobile view 1`] = `
-@media  {
-  .c-llMclw {
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex-shrink: 0;
-    font-family: var(--fonts-body);
-    padding: var(--space-4);
-    height: var(--sizes-5);
-    -webkit-user-select: none;
-    user-select: none;
-    transition: 0.3s;
-    color: var(--colors-tonal500);
-  }
-
-  .c-llMclw[data-state="active"] {
-    font-weight: 600;
-    letter-spacing: -0.005em;
-    box-shadow: inset 0 -2px 0 0 currentColor;
-  }
-
-  .c-llMclw[data-disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-llMclw:not([data-disabled]):active,
-  .c-llMclw:not([data-disabled]):hover,
-  .c-llMclw:not([data-disabled]):focus-visible {
-    color: var(--colors-accent);
-  }
-
-  .c-llMclw:not([data-disabled]):focus-visible {
-    outline: none;
-    position: relative;
-    z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
-  }
-
-  .c-gnshMT {
-    flex-shrink: 0;
-    display: flex;
-    width: 100%;
-    overflow: visible;
-    overflow-x: auto;
-  }
-
-  .c-gnshMT::-webkit-scrollbar {
-    display: none;
-  }
-
-  .c-gnshMT {
-    scrollbar-width: none;
-    border-bottom: 1px solid var(--colors-separator);
-  }
-
-  .c-cWMaKf {
-    flex-grow: 1;
-    font-family: var(--fonts-body);
-  }
-
-  .c-dhzjXW {
-    display: flex;
-  }
-}
-
-@media  {
-  .c-dhzjXW-icmpvrW-css {
-    position: relative;
-  }
-}
-
-<div>
-  <div
-    class="PJLV"
-    data-orientation="horizontal"
-    dir="ltr"
-  >
     <div
-      class="c-dhzjXW c-dhzjXW-icmpvrW-css"
-    >
-      <div
-        aria-orientation="horizontal"
-        class="c-gnshMT"
-        data-orientation="horizontal"
-        role="tablist"
-        style="outline: none;"
-        tabindex="0"
-      >
-        <button
-          aria-controls="radix-5-content-tab1"
-          aria-selected="true"
-          class="c-llMclw"
-          data-orientation="horizontal"
-          data-radix-collection-item=""
-          data-state="active"
-          id="radix-5-trigger-tab1"
-          role="tab"
-          tabindex="-1"
-          theme="t-kLRDWO"
-          type="button"
-        >
-          Trigger 1 which is going to be long
-        </button>
-        <button
-          aria-controls="radix-5-content-tab2"
-          aria-selected="false"
-          class="c-llMclw"
-          data-orientation="horizontal"
-          data-radix-collection-item=""
-          data-state="inactive"
-          id="radix-5-trigger-tab2"
-          role="tab"
-          tabindex="-1"
-          theme="t-kLRDWO"
-          type="button"
-        >
-          Trigger 2 which is going to be even longer
-        </button>
-      </div>
-    </div>
-    <div
-      aria-labelledby="radix-5-trigger-tab1"
-      class="c-cWMaKf"
-      data-orientation="horizontal"
-      data-state="active"
-      id="radix-5-content-tab1"
-      role="tabpanel"
-      style="animation-duration: 0s;"
-      tabindex="0"
-    >
-      Important content for tab 1
-    </div>
-    <div
-      aria-labelledby="radix-5-trigger-tab2"
+      aria-labelledby="radix-3-trigger-tab3"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-5-content-tab2"
+      id="radix-3-content-tab3"
       role="tabpanel"
       tabindex="0"
     />

@@ -6,40 +6,25 @@ import * as React from 'react'
 import { Tabs } from '.'
 
 const TabsTest = ({ defaultValue = 'tab1' }) => (
-  <Tabs defaultValue={defaultValue}>
-    <Tabs.TriggerList>
-      <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
-      <Tabs.Trigger value="tab2">Trigger 2</Tabs.Trigger>
-    </Tabs.TriggerList>
-    <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-    <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-  </Tabs>
-)
+  <IdProvider>
+    <Tabs defaultValue={defaultValue}>
+      <Tabs.TriggerList>
+        <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
+        <Tabs.Trigger value="tab2">Trigger 2</Tabs.Trigger>
+        <Tabs.Trigger value="tab3" disabled>Trigger 3</Tabs.Trigger>
 
-const MobileTabsTest = ({ defaultValue = 'tab1' }) => (
-  <Tabs defaultValue={defaultValue}>
-    <Tabs.TriggerList enableTabScrolling>
-      <Tabs.Trigger value="tab1">
-        Trigger 1 which is going to be long
-      </Tabs.Trigger>
-      <Tabs.Trigger value="tab2">
-        Trigger 2 which is going to be even longer
-      </Tabs.Trigger>
-    </Tabs.TriggerList>
-    <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-    <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-  </Tabs>
+      </Tabs.TriggerList>
+      <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+      <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
+      <Tabs.Content value="tab3">Important content for tab 2</Tabs.Content>
+
+    </Tabs>
+  </IdProvider>
 )
 
 describe('Tabs component', () => {
   it('renders', async () => {
     const { container } = render(<TabsTest />)
-
-    expect(container).toMatchSnapshot()
-  })
-
-  it('renders mobile view', async () => {
-    const { container } = render(<MobileTabsTest />)
 
     expect(container).toMatchSnapshot()
   })
@@ -78,27 +63,17 @@ describe('Tabs component', () => {
   })
 
   it("doesn't allow clicking disabled tabs", async () => {
-    render(
-      <Tabs defaultValue="tab1">
-        <Tabs.TriggerList>
-          <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
-          <Tabs.Trigger disabled value="tab2">
-            Trigger 2
-          </Tabs.Trigger>
-        </Tabs.TriggerList>
-        <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-        <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-      </Tabs>
-    )
+    render(<TabsTest />)
+
 
     const tab1content = await screen.queryByText('Important content for tab 1')
-    const tab2content = await screen.queryByText('Important content for tab 2')
+    const tab3content = await screen.queryByText('Important content for tab 3')
 
     expect(tab1content).toBeVisible()
 
-    userEvent.click(screen.queryByText('Trigger 2'))
+    userEvent.click(screen.queryByText('Trigger 3'))
 
     expect(tab1content).toBeVisible()
-    expect(tab2content).not.toBeInTheDocument()
+    expect(tab3content).not.toBeInTheDocument()
   })
 })
