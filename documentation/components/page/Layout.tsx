@@ -26,9 +26,9 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
                         <Heading as="h1" size="lg">{title}</Heading>
                         <Links {...links} />
                         {tabsLength > 1 && (
-                            <Tabs.TriggerTokenList css={{ position: 'absolute', bottom: 0 }}>
+                            <Tabs.TriggerList css={{ position: 'absolute', bottom: 0 }}>
                                 {tabs.map((tab, i) => <Tabs.Trigger key={tab.title} value={`tab${i}`}>{tab.title}</Tabs.Trigger>)}
-                            </Tabs.TriggerTokenList>
+                            </Tabs.TriggerList>
                         )}
                     </StackContent>
                 </Header>
@@ -41,8 +41,8 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
                             </Tabs.Content>
                         ))
                         }
-                    </Container>)
-                }
+                    </Container>
+                )}
 
                 <Footer>
                     <Pagination slug={slug} />

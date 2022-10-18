@@ -48,8 +48,8 @@ export const components = {
             css={{
                 pl: '$5',
                 my: '$5',
-                color: '$tonal500',
-                borderLeft: '2px solid $colors$tonal400'
+                color: '$tonal7',
+                borderLeft: '2px solid $colors$tonal3'
             }}
         >
             {props.children}

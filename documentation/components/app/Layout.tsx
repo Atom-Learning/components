@@ -1,4 +1,5 @@
-import { Theme } from '@atom-learning/components'
+import { Box } from '@atom-learning/components'
+import { ColorScheme } from '@atom-learning/color-scheme'
 import { Header } from './Header'
 import { Meta } from './Meta'
 
@@ -10,10 +11,12 @@ type Props = {
 
 export const Layout = ({ preview, children }: Props) => {
   return (
-    <>
+    <ColorScheme base="slate" accent="blue" css={{ display: 'flex', width: '100%', background: '$background', color: '$foreground' }}>
       <Meta />
       <Header />
-      <Theme as="main" css={{ flexGrow: 1, overflow: 'hidden' }} base="primary" mode="light">{children}</Theme>
-    </>
+      <Box as="main" css={{ flexGrow: 1, overflow: 'hidden' }}>
+        {children}
+      </Box>
+    </ColorScheme>
   )
 }

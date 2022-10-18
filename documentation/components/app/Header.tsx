@@ -1,4 +1,4 @@
-import { Badge, Image, styled, Theme } from '@atom-learning/components'
+import { Badge, Image, styled, ActionIcon, Icon } from '@atom-learning/components'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
@@ -6,7 +6,7 @@ import * as React from 'react'
 import buildConstants from '~/lib/build/constants.json'
 import { Navigation } from '~/components/app'
 
-import { ActionIcon, Icon } from '@atom-learning/components'
+import { ColorScheme } from '@atom-learning/color-scheme'
 import { Hamburger } from '@atom-learning/icons'
 
 
@@ -19,8 +19,8 @@ export const HeaderTrigger: React.FC<HeaderTriggerProps> = (props) => (
     appearance="solid"
     size="lg"
     css={{
-      background: '$tonal100',
-      color: '$tonal500',
+      background: '$accent1',
+      color: '$foreground',
       position: 'fixed',
       top: '$2',
       left: '$2',
@@ -52,8 +52,8 @@ const useOnClickOutside = (ref, handler) => {
 }
 
 const StyledHeader = styled('header', {
-  background: '$tonal100',
-  color: '$tonal500',
+  background: '$interactive1',
+  color: '$interactiveForeground',
   boxShadow: '$1',
   height: '100vh',
   overflowX: 'hidden',
@@ -91,11 +91,11 @@ export const Header: React.FC = (props) => {
   useOnClickOutside(ref, () => setMenuOpen(false))
 
   return (
-    <Theme base="primary" mode="dark">
+    <ColorScheme interactiveAccent="hiContrast">
       <HeaderTrigger onClick={() => setMenuOpen(true)} />
       <StyledHeader ref={ref} open={menuOpen} {...props}>
         <NextLink href="/">
-          <Image src={logo.src} width={80} alt="" css={{ mb: '$7' }} isFluid={false} />
+          <Image src={logo.src} width={80} alt="" css={{ mb: '$7' }} />
         </NextLink>
         <Badge
           theme="success"
@@ -106,6 +106,6 @@ export const Header: React.FC = (props) => {
         </Badge>
         <Navigation />
       </StyledHeader>
-    </Theme>
+    </ColorScheme>
   )
 }

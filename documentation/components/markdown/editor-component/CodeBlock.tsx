@@ -14,7 +14,7 @@ type CodeBlockProps = {
   preview?: boolean
 }
 
-const StyledPre = styled('code', {
+const StyledCode = styled('code', {
   display: 'block',
   fontSize: '$sm',
   lineHeight: 1.5,
@@ -25,6 +25,7 @@ const StyledPre = styled('code', {
     ...focusVisibleStyleBlock()
   }
 })
+
 const StyledLivePreview = styled(LivePreview, {
   alignItems: 'center',
   display: 'flex',
@@ -59,9 +60,9 @@ export const CodeBlock: React.FC<CodeBlockProps> = React.memo(({
         <StyledLivePreview />
         <StyledLiveError />
       </>)}
-      <StyledPre>
+      <StyledCode>
         <StyledLiveEditor />
-      </StyledPre>
+      </StyledCode>
     </LiveProvider>
   )
 })
