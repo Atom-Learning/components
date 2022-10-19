@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      Stack is a layout component that provides an abstraction over the flexbox
-      gap property
+      Stack is a layout component that provides an abstraction over the
+      flexbox gap property
 
 
       `Stack` is a single axis layout component enabling you to space items evenly within it using the `gap` prop and change the direction of content with `direction`. 

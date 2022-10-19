@@ -28,22 +28,25 @@ const StyledTrigger = styled(Trigger, {
   justifyContent: 'space-between',
   alignItems: 'center',
   cursor: 'pointer',
-  bg: '$interactive2',
+  bg: '$interactive1',
   color: '$interactiveForeground',
   '&[data-disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
   },
   '&:not([data-disabled])': {
-    '&:active, &:hover, &:focus-visible': {
+    '&:hover, &:focus-visible': {
+      bg: '$interactive2'
+    },
+    '&:active': {
       bg: '$interactive3'
     },
     '&:focus-visible': {
-      ...focusVisibleStyleBlock(),
+      ...focusVisibleStyleBlock()
     }
   },
   '&[data-state="open"]': {
-    borderRadius: '$0 $0 0 0',
+    borderRadius: '$0 $0 0 0'
   },
   '&[data-state="closed"]': {
     borderRadius: '$0'
@@ -51,17 +54,22 @@ const StyledTrigger = styled(Trigger, {
 })
 
 type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger> & {
-  color?: typeof ColorScheme.accent,
-  colorMode?: typeof ColorScheme.interactiveAccentMode,
+  color?: typeof ColorScheme.accent
+  colorMode?: typeof ColorScheme.interactiveAccentMode
 }
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   children,
   color = 'slate',
-  colorMode = 'hiContrast',
+  colorMode = 'loContrast1',
   ...remainingProps
 }) => (
-  <ColorScheme as={StyledTrigger} accent={color} interactiveAccentMode={colorMode} {...remainingProps}>
+  <ColorScheme
+    as={StyledTrigger}
+    accent={color}
+    interactiveAccentMode={colorMode}
+    {...remainingProps}
+  >
     {children}
     <RotatingIcon is={ChevronDown} />
   </ColorScheme>

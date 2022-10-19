@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      A standardised way to render icons, ensuring that only the icons you use
-      are included in your output
+      A standardised way to render icons, ensuring that only the icons you
+      use are included in your output
 
 
       `Icon` is a light wrapper component that provides a standardised set of styles to the icon in use. It requires an SVG from our icon library to be passed into the `is` prop.

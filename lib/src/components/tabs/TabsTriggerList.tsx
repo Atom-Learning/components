@@ -22,7 +22,7 @@ export const TabsTriggerList: React.FC<
     <ColorScheme
       as={StyledTriggerList}
       accent="blue"
-      interactiveAccentMode="hiContrast"
+      interactiveAccentMode="hiContrast1"
       appearance={appearance}
       {...rest}
     >

@@ -19,7 +19,6 @@ export default function Page({ Page, preview }: Props) {
 
     if (preview) return null;
     return <PageLayout {...Page} />
-
 }
 
 export const getStaticProps = async () => {

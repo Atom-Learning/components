@@ -36,8 +36,6 @@ type Params = {
 
 export const getStaticProps = async ({ params }: Params) => {
     const nestedSlug = params.slug
-    // const slug = nestedSlug[nestedSlug.length - 1];
-    // const Page = getPageByFilename(slug, [
     const Page = getPageByFilename(nestedSlug.join('.'), [
         'slug',
         'title',
