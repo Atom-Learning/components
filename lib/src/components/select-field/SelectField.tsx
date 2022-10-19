@@ -1,15 +1,14 @@
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
-import { FieldWrapper, FieldWrapperProps } from '~/components/field-wrapper'
-import { useFieldError, ValidationOptions } from '~/components/form'
+import {
+  FieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
+import { useFieldError } from '~/components/form'
 import { Select, SelectProps } from '~/components/select'
 
-type SelectFieldProps = SelectProps &
-  Omit<FieldWrapperProps, 'fieldId' | 'error'> & {
-    name: string
-    validation?: ValidationOptions
-  }
+type SelectFieldProps = SelectProps & FieldElementWrapperProps
 
 export const SelectField: React.FC<SelectFieldProps> = ({
   css = undefined,

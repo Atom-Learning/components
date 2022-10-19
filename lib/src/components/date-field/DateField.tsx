@@ -2,18 +2,13 @@ import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
 import { DateInput, DateInputProps } from '~/components/date-input'
-import { FieldWrapper } from '~/components/field-wrapper'
-import { useFieldError, ValidationOptions } from '~/components/form'
-import type { CSS } from '~/stitches'
+import {
+  FieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
+import { useFieldError } from '~/components/form'
 
-type DateFieldProps = DateInputProps & {
-  css?: CSS
-  description?: string
-  label: string
-  name: string
-  prompt?: { link: string; label: string }
-  validation?: ValidationOptions
-}
+type DateFieldProps = DateInputProps & FieldElementWrapperProps
 
 export const DateField: React.FC<DateFieldProps> = ({
   css,

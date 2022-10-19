@@ -9,7 +9,7 @@ import { CSS, styled } from '~/stitches'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 
 export type SearchInputProps = React.ComponentProps<typeof Input> & {
-  size: 'sm' | 'md'
+  size?: 'sm' | 'md'
   css?: CSS
   value?: string
   clearText?: string

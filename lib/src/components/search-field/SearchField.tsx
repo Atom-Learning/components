@@ -1,18 +1,14 @@
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
-import { FieldWrapper } from '~/components/field-wrapper'
-import { useFieldError, ValidationOptions } from '~/components/form'
+import {
+  FieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
+import { useFieldError } from '~/components/form'
 import { SearchInput, SearchInputProps } from '~/components/search-input'
-import type { CSS } from '~/stitches'
 
-type SearchFieldProps = SearchInputProps & {
-  description?: string
-  label: string
-  name: string
-  prompt?: { link: string; label: string }
-  validation?: ValidationOptions
-}
+type SearchFieldProps = SearchInputProps & FieldElementWrapperProps
 
 export const SearchField: React.FC<SearchFieldProps> = ({
   css,
