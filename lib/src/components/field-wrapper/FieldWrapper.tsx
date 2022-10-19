@@ -5,6 +5,7 @@ import { Flex } from '~/components/flex'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import { InlineMessage } from '~/components/inline-message'
+import { ValidationOptions } from '~/components/form'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
@@ -19,6 +20,11 @@ export type FieldWrapperProps = {
   description?: string
   required?: boolean
   hideLabel?: boolean
+}
+
+export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
+  name: string
+  validation?: ValidationOptions
 }
 
 export const FieldWrapper: React.FC<FieldWrapperProps> = ({
