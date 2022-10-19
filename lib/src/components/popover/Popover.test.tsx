@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -8,12 +7,10 @@ import { Popover } from '.'
 describe(`Popover component`, () => {
   it('renders the trigger with the popover hidden by default', async () => {
     const { container } = render(
-      <IdProvider>
-        <Popover>
-          <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
-        </Popover>
-      </IdProvider>
+      <Popover>
+        <Popover.Trigger>TRIGGER</Popover.Trigger>
+        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+      </Popover>
     )
 
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
@@ -23,12 +20,10 @@ describe(`Popover component`, () => {
 
   it('opens the popover once trigger is clicked', async () => {
     render(
-      <IdProvider>
-        <Popover>
-          <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
-        </Popover>
-      </IdProvider>
+      <Popover>
+        <Popover.Trigger>TRIGGER</Popover.Trigger>
+        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+      </Popover>
     )
 
     const trigger = screen.getByText('TRIGGER')
@@ -44,12 +39,10 @@ describe(`Popover component`, () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <IdProvider>
-        <Popover defaultOpen>
-          <Popover.Trigger>TRIGGER</Popover.Trigger>
-          <Popover.Content>CONTENT</Popover.Content>
-        </Popover>
-      </IdProvider>
+      <Popover defaultOpen>
+        <Popover.Trigger>TRIGGER</Popover.Trigger>
+        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+      </Popover>
     )
 
     expect(

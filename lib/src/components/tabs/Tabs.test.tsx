@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
@@ -7,33 +6,29 @@ import * as React from 'react'
 import { Tabs } from '.'
 
 const TabsTest = ({ defaultValue = 'tab1' }) => (
-  <IdProvider>
-    <Tabs defaultValue={defaultValue}>
-      <Tabs.TriggerList>
-        <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
-        <Tabs.Trigger value="tab2">Trigger 2</Tabs.Trigger>
-      </Tabs.TriggerList>
-      <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-      <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-    </Tabs>
-  </IdProvider>
+  <Tabs defaultValue={defaultValue}>
+    <Tabs.TriggerList>
+      <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
+      <Tabs.Trigger value="tab2">Trigger 2</Tabs.Trigger>
+    </Tabs.TriggerList>
+    <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+    <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
+  </Tabs>
 )
 
 const MobileTabsTest = ({ defaultValue = 'tab1' }) => (
-  <IdProvider>
-    <Tabs defaultValue={defaultValue}>
-      <Tabs.TriggerList enableTabScrolling>
-        <Tabs.Trigger value="tab1">
-          Trigger 1 which is going to be long
-        </Tabs.Trigger>
-        <Tabs.Trigger value="tab2">
-          Trigger 2 which is going to be even longer
-        </Tabs.Trigger>
-      </Tabs.TriggerList>
-      <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-      <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-    </Tabs>
-  </IdProvider>
+  <Tabs defaultValue={defaultValue}>
+    <Tabs.TriggerList enableTabScrolling>
+      <Tabs.Trigger value="tab1">
+        Trigger 1 which is going to be long
+      </Tabs.Trigger>
+      <Tabs.Trigger value="tab2">
+        Trigger 2 which is going to be even longer
+      </Tabs.Trigger>
+    </Tabs.TriggerList>
+    <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+    <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
+  </Tabs>
 )
 
 describe('Tabs component', () => {
@@ -84,18 +79,16 @@ describe('Tabs component', () => {
 
   it("doesn't allow clicking disabled tabs", async () => {
     render(
-      <IdProvider>
-        <Tabs defaultValue="tab1">
-          <Tabs.TriggerList>
-            <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
-            <Tabs.Trigger disabled value="tab2">
-              Trigger 2
-            </Tabs.Trigger>
-          </Tabs.TriggerList>
-          <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-          <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-        </Tabs>
-      </IdProvider>
+      <Tabs defaultValue="tab1">
+        <Tabs.TriggerList>
+          <Tabs.Trigger value="tab1">Trigger 1</Tabs.Trigger>
+          <Tabs.Trigger disabled value="tab2">
+            Trigger 2
+          </Tabs.Trigger>
+        </Tabs.TriggerList>
+        <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+        <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
+      </Tabs>
     )
 
     const tab1content = await screen.queryByText('Important content for tab 1')

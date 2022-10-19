@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
@@ -13,19 +12,17 @@ type ExampleRadioFieldProps = Omit<
 >
 
 const ExampleRadioButtonField = (props: ExampleRadioFieldProps) => (
-  <IdProvider>
-    <Form>
-      <RadioButtonField
-        name="example"
-        defaultValue="1"
-        label="Example options"
-        {...props}
-      >
-        <RadioButtonField.Item label="1" value="1" />
-        <RadioButtonField.Item label="2" value="2" />
-      </RadioButtonField>
-    </Form>
-  </IdProvider>
+  <Form>
+    <RadioButtonField
+      name="example"
+      defaultValue="1"
+      label="Example options"
+      {...props}
+    >
+      <RadioButtonField.Item label="1" value="1" />
+      <RadioButtonField.Item label="2" value="2" />
+    </RadioButtonField>
+  </Form>
 )
 
 describe('RadioButtonField component', () => {

@@ -1,5 +1,5 @@
 import { Content } from '@radix-ui/react-dropdown-menu'
-
+import { DROPDOWN_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
 import {
   slideDownAndFade,
@@ -13,6 +13,7 @@ export const DropdownMenuContent = styled(Content, {
   borderRadius: '$0',
   boxShadow: '$0',
   py: '$2',
+  zIndex: DROPDOWN_Z_INDEX,
   '@allowMotion': {
     animationDuration: '250ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',

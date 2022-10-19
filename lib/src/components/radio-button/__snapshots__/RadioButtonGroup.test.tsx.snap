@@ -10,6 +10,7 @@ exports[`RadioButtonGroup component renders an empty radio button group 1`] = `
 
 <div>
   <div
+    aria-required="false"
     class="c-iSwBqf"
     dir="ltr"
     role="radiogroup"
