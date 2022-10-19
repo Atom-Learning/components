@@ -223,7 +223,7 @@ exports[`Accordion component renders an accordion 1`] = `
         data-state="open"
         id="radix-0"
         role="region"
-        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-duration: 0s; animation-fill-mode: none;"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
       >
         CONTENT1
       </div>
