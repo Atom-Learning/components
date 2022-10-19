@@ -42,6 +42,11 @@ export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStep
   React.forwardRef((props, forwardedRef) => {
     const { icon, disabledTooltipContent, showTooltip, ...rest } = props
 
+    /**
+     * Focus has been removed from the button
+     * as the increment and decrement buttons should be keyboard accessible via arrow keys.
+     * see MDN docs https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/spinbutton_role
+     */
     return (
       <Tooltip>
         <Tooltip.Trigger asChild>

@@ -60,8 +60,8 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       ...disabledTooltipContentProp
     }
 
-    const isAtMax = value === max
-    const isAtMin = value === min
+    const isAtMax = value >= max
+    const isAtMin = value <= min
 
     const clamp = React.useCallback(
       (value: number) => Math.min(Math.max(value, min), max),
