@@ -1,18 +1,6 @@
 import { Stack, Box, styled, Text } from '@atom-learning/components'
 import * as React from 'react'
 
-const StyledTokenListItem = styled(Box, {
-  py: '$5',
-  '&:not(:last-child)': {
-    borderBottom: '1px solid $tonal3'
-  }
-})
-
-type TTokenListItemProps = typeof StyledTokenListItem & {
-  token: string
-  value: string
-}
-
 const TokenListItemToken = ({ token }: { token: string }) => (
   <Text
     size="md"
@@ -25,12 +13,24 @@ const TokenListItemToken = ({ token }: { token: string }) => (
   </Text>
 )
 
-const TokenListItemValue: React.FC<typeof Text> = ({ css, ...rest }) => (
+const TokenListItemValue: React.FC<React.ComponentProps<typeof Text>> = ({ css, ...rest }) => (
   <Text
     size="sm"
     css={{ color: '$tonal6', ...css }}
     {...rest} />
 )
+
+const StyledTokenListItem = styled(Box, {
+  py: '$5',
+  '&:not(:last-child)': {
+    borderBottom: '1px solid $tonal3'
+  }
+})
+
+type TTokenListItemProps = React.ComponentProps<typeof StyledTokenListItem> & {
+  token: string
+  value: string
+}
 
 export const TokenListItem: React.FC<TTokenListItemProps> = ({
   token,
@@ -54,7 +54,7 @@ export const TokenListItem: React.FC<TTokenListItemProps> = ({
         </Box>
 
         <Box css={{ flexGrow: 1 }}>
-          <Stack gap="1" direction="column" justifyContent="center">
+          <Stack gap="1" direction="column" justify="center">
             <TokenListItemValue>{value}</TokenListItemValue>
             {isValueInRem && <TokenListItemValue>{`${+(valueWithoutRem) * 16}px`}</TokenListItemValue>}
           </Stack>

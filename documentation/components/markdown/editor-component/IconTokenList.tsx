@@ -21,49 +21,52 @@ const copyIcon = (str: string) => {
   }
 }
 
-const IconItem: typeof TokenList.Item = ({ token, value: Component }) => (
-  <Box as="li" css={{ listStyle: 'none' }}>
-    <Tooltip.Provider>
-      <Tooltip>
-        <Tooltip.Trigger asChild>
-          <Button
-            css={
-              {
-                size: '140px',
-                display: 'flex',
-                p: '8px',
-                flexDirection: 'column',
-                '&:focus-visible': {
-                  ...focusVisibleStyleBlock()
-                },
+const IconItem: typeof TokenList.Item = ({ token, value }) => {
+  const Component = atomIcons[value]
+  return (
+    <Box as="li" css={{ listStyle: 'none' }}>
+      <Tooltip.Provider>
+        <Tooltip>
+          <Tooltip.Trigger asChild>
+            <Button
+              css={
+                {
+                  size: '140px',
+                  display: 'flex',
+                  p: '8px',
+                  flexDirection: 'column',
+                  '&:focus-visible': {
+                    ...focusVisibleStyleBlock()
+                  },
+                }
               }
-            }
-            onClick={() => copyIcon(token)}
-            aria-label={`Click to copy: ${token}`}>
-            <Stack gap={1} css={{ mb: '$4' }} align="center" justify="center">
-              <Icon
-                is={Component}
-                size="sm"
-              />
-              <Icon
-                is={Component}
-                size="md"
-              />
-              <Icon
-                is={Component}
-                size="lg"
-              />
-            </Stack>
-            <Text size="sm">
-              {token}
-            </Text>
-          </Button>
-        </Tooltip.Trigger>
-        <Tooltip.Content>Click to copy: {token}</Tooltip.Content>
-      </Tooltip>
-    </Tooltip.Provider>
-  </Box >
-)
+              onClick={() => copyIcon(token)}
+              aria-label={`Click to copy: ${token}`}>
+              <Stack gap={1} css={{ mb: '$4' }} align="center" justify="center">
+                <Icon
+                  is={Component}
+                  size="sm"
+                />
+                <Icon
+                  is={Component}
+                  size="md"
+                />
+                <Icon
+                  is={Component}
+                  size="lg"
+                />
+              </Stack>
+              <Text size="sm">
+                {token}
+              </Text>
+            </Button>
+          </Tooltip.Trigger>
+          <Tooltip.Content>Click to copy: {token}</Tooltip.Content>
+        </Tooltip>
+      </Tooltip.Provider>
+    </Box >
+  )
+}
 
 type IconTokenListProps = {
   icons: { token: string }[],

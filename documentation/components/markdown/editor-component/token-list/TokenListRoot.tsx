@@ -3,8 +3,8 @@ import { Stack } from '@atom-learning/components'
 import * as React from 'react'
 import { TokenListItem } from './TokenListItem'
 
-type TokenListRootProps = typeof Stack & {
-  ItemComponent: typeof TokenListItem,
+type TokenListRootProps = React.ComponentProps<typeof Stack> & {
+  ItemComponent: any, // typeof TokenListItem,
   allTokens?: Record<string, string>,
   specificTokens?: { token: string }[],
   filter?: ({ key, value }) => boolean
