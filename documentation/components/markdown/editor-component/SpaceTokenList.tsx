@@ -8,7 +8,7 @@ import * as React from 'react'
 const SpaceExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
   return (
     <TokenList.Item token={token} value={value} {...rest}>
-      <Stack gap={token.trim('$')}>
+      <Stack gap={Number(token.replace(/^\$+/, ''))}>
         <DemoBox />
         <DemoBox />
       </Stack>
