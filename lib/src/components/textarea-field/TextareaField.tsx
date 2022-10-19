@@ -7,7 +7,7 @@ import { useFieldError, ValidationOptions } from '~/components/form'
 import { Textarea, TextareaProps } from '~/components/textarea'
 
 type TextareaFieldProps = TextareaProps &
-  FieldWrapperProps & {
+  Omit<FieldWrapperProps, 'fieldId' | 'error'> & {
     name: string
     validation?: ValidationOptions
   }

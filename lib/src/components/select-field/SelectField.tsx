@@ -6,10 +6,8 @@ import { useFieldError, ValidationOptions } from '~/components/form'
 import { Select, SelectProps } from '~/components/select'
 
 type SelectFieldProps = SelectProps &
-  FieldWrapperProps & {
-    description?: string
+  Omit<FieldWrapperProps, 'fieldId' | 'error'> & {
     name: string
-    prompt?: { link: string; label: string }
     validation?: ValidationOptions
   }
 
