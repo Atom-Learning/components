@@ -67,7 +67,7 @@ describe(`NumberInput component`, () => {
 
   it('should show tooltip on disabled button hover', async () => {
     renderComponent()
-    fireEvent.mouseOver(screen.getByRole('button', { name: /decrement/i }))
+    fireEvent.focus(screen.getByRole('button', { name: /decrement/i }))
     expect(await screen.findByRole('tooltip')).toBeInTheDocument()
   })
 

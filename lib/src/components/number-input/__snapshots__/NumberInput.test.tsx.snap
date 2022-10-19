@@ -30,7 +30,7 @@ exports[`NumberInput component renders number input  1`] = `
     vertical-align: middle;
   }
 
-  .c-jbyCVO {
+  .c-hAXqx {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -42,10 +42,11 @@ exports[`NumberInput component renders number input  1`] = `
     padding-right: var(--space-3);
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+    z-index: 10;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO {
+    .c-hAXqx {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -53,25 +54,25 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -122,7 +123,7 @@ exports[`NumberInput component renders number input  1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jbyCVO-gWQnqe-size-md {
+  .c-hAXqx-gWQnqe-size-md {
     max-width: 250px;
   }
 

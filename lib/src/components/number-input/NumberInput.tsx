@@ -1,4 +1,5 @@
 import { Minus, Plus } from '@atom-learning/icons'
+import type { TooltipProviderProps } from '@radix-ui/react-tooltip'
 import * as React from 'react'
 
 import type { CSS } from '~/stitches'
@@ -7,7 +8,8 @@ import { Flex } from '../flex'
 import { Input } from '../input'
 import { NumberInputStepper } from './NumberInputStepper'
 
-export interface NumberInputProps {
+export interface NumberInputProps
+  extends Omit<TooltipProviderProps, 'children'> {
   name: string
   min?: number
   max?: number
@@ -37,6 +39,9 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       stepperButtonLabels: stepperButtonLabelsProp,
       disabledTooltipContent: disabledTooltipContentProp,
       css,
+      delayDuration,
+      skipDelayDuration,
+      disableHoverableContent,
       ...rest
     } = props
 
@@ -47,6 +52,12 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       forwardedRef,
       () => inputRef.current as HTMLInputElement
     )
+
+    const tooltipProviderProps = {
+      delayDuration,
+      skipDelayDuration,
+      disableHoverableContent
+    }
 
     const stepperButtonLabels = {
       increment: 'increment',
@@ -182,6 +193,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
           showTooltip={isAtMin && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.decrement}
           label={stepperButtonLabels.decrement}
+          {...tooltipProviderProps}
         />
         <Input {...inputProps} />
         <NumberInputStepper
@@ -197,6 +209,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
           showTooltip={isAtMax && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.increment}
           label={stepperButtonLabels.increment}
+          {...tooltipProviderProps}
         />
       </Flex>
     )

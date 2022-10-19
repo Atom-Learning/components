@@ -36,7 +36,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     vertical-align: middle;
   }
 
-  .c-jbyCVO {
+  .c-hAXqx {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -48,10 +48,11 @@ exports[`NumberInputField component renders a field in error state - has no prog
     padding-right: var(--space-3);
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+    z-index: 10;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO {
+    .c-hAXqx {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -59,25 +60,25 @@ exports[`NumberInputField component renders a field in error state - has no prog
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -167,7 +168,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-width: 1.75;
   }
 
-  .c-jbyCVO-gWQnqe-size-md {
+  .c-hAXqx-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -467,7 +468,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     vertical-align: middle;
   }
 
-  .c-jbyCVO {
+  .c-hAXqx {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -479,10 +480,11 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     padding-right: var(--space-3);
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+    z-index: 10;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO {
+    .c-hAXqx {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -490,25 +492,25 @@ exports[`NumberInputField component renders a field with a disabled input - has 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -581,7 +583,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     stroke-width: 1.75;
   }
 
-  .c-jbyCVO-gWQnqe-size-md {
+  .c-hAXqx-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -812,7 +814,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     vertical-align: middle;
   }
 
-  .c-jbyCVO {
+  .c-hAXqx {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -824,10 +826,11 @@ exports[`NumberInputField component renders a field with a number input - has no
     padding-right: var(--space-3);
     padding-top: var(--space-2);
     padding-bottom: var(--space-2);
+    z-index: 10;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO {
+    .c-hAXqx {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -835,25 +838,25 @@ exports[`NumberInputField component renders a field with a number input - has no
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="top"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="right"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="bottom"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-jbyCVO[data-state="delayed-open"][data-side="left"] {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -926,7 +929,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     stroke-width: 1.75;
   }
 
-  .c-jbyCVO-gWQnqe-size-md {
+  .c-hAXqx-gWQnqe-size-md {
     max-width: 250px;
   }
 
