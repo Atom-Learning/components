@@ -65,7 +65,7 @@ export const Scale: React.FC<ScaleProps> = ({
             ) : (
               <Flex css={{ flexDirection: 'column' }}>
                 <ScaleValue css={{ mb: '$3' }}>{value}</ScaleValue>
-                <ScaleValue>{`${+(value.split('rem')[0]) * 16}px`}</ScaleValue>
+                <ScaleValue>{`${+value.split('rem')[0] * 16}px`}</ScaleValue>
               </Flex>
             ))}
         </Flex>
