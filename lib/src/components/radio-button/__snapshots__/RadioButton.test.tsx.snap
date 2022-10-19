@@ -57,7 +57,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     dir="ltr"
     role="radiogroup"
     style="outline: none;"
-    tabindex="0"
+    tabindex="-1"
   >
     <button
       aria-checked="false"
