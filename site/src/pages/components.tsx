@@ -6,7 +6,11 @@ import * as React from 'react'
 
 import { Container, Navigation } from '../components'
 // import Components from '../sandbox/components'
-import { getLatestLibVersion, getPages, transformNavigationStructure } from '../utilities'
+import {
+  getLatestLibVersion,
+  getPages,
+  transformNavigationStructure
+} from '../utilities'
 
 type PageProps = {
   data: {

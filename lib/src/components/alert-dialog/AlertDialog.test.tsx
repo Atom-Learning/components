@@ -1,4 +1,3 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -6,12 +5,10 @@ import * as React from 'react'
 import { AlertDialog } from '.'
 
 const AlertDialogTest = (props) => (
-  <IdProvider>
-    <AlertDialog {...props}>
-      <AlertDialog.Trigger>TRIGGER</AlertDialog.Trigger>
-      <AlertDialog.Content aria-label="Alert!">CONTENT</AlertDialog.Content>
-    </AlertDialog>
-  </IdProvider>
+  <AlertDialog {...props}>
+    <AlertDialog.Trigger>TRIGGER</AlertDialog.Trigger>
+    <AlertDialog.Content aria-label="Alert!">CONTENT</AlertDialog.Content>
+  </AlertDialog>
 )
 
 describe(`AlertDialog component`, () => {

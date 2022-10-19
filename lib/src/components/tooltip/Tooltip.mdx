@@ -1,6 +1,6 @@
 ---
 title: Tooltip
-component: Tooltip,Tooltip.Trigger,Tooltip.Content,Tooltip.Provider
+component: Tooltip,Tooltip.Trigger,Tooltip.Content,Tooltip.Provider, Tooltip.Portal
 description: A component that displays information related to an element when the element receives keyboard focus or the mouse hovers over it
 category: Surfaces
 ---
@@ -9,7 +9,7 @@ category: Surfaces
 
 Also, note that the component must accept a `ref`.
 
-`Tooltip.Provider` is optional and provides some global configuration for all `Tooltips` rendered within. 
+`Tooltip.Provider` is **required to avoid regressions** and should be included at the root level of the application.
 
 Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/tooltip).
 

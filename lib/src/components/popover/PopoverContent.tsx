@@ -1,6 +1,7 @@
 import { Close as CloseIcon } from '@atom-learning/icons'
 import { Arrow, Close, Content } from '@radix-ui/react-popover'
 import * as React from 'react'
+import { POPOVER_Z_INDEX } from '~/constants/zIndices'
 
 import { styled } from '~/stitches'
 import {
@@ -21,6 +22,7 @@ const StyledContent = styled(Content, {
   p: '$sizes$2',
   pr: '$6',
   position: 'relative',
+  zIndex: POPOVER_Z_INDEX,
   '@allowMotion': {
     animationDuration: '75ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',

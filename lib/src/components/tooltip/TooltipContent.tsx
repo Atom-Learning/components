@@ -1,5 +1,6 @@
 import { Arrow, Content } from '@radix-ui/react-tooltip'
 import * as React from 'react'
+import { TOOLTIP_Z_INDEX } from '~/constants/zIndices'
 
 import { styled } from '~/stitches'
 import {
@@ -19,6 +20,7 @@ const StyledContent = styled(Content, {
   lineHeight: 1.5,
   px: '$3',
   py: '$2',
+  zIndex: TOOLTIP_Z_INDEX,
   '@allowMotion': {
     animationDuration: '75ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',

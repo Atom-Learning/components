@@ -1,6 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
 
-import { IdProvider } from '@radix-ui/react-id'
 import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
@@ -37,11 +36,9 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
   )
 }
 const AlertContextTest = (props) => (
-  <IdProvider>
-    <AlertProvider>
-      <ComponentTest {...props} />
-    </AlertProvider>
-  </IdProvider>
+  <AlertProvider>
+    <ComponentTest {...props} />
+  </AlertProvider>
 )
 
 describe('Alert context', () => {
@@ -95,11 +92,9 @@ describe('Alert context', () => {
 
   it('opens second dialog once first dialog is closed', async () => {
     render(
-      <IdProvider>
-        <AlertProvider>
-          <ComponentTest showSecondAlert />
-        </AlertProvider>
-      </IdProvider>
+      <AlertProvider>
+        <ComponentTest showSecondAlert />
+      </AlertProvider>
     )
     const trigger = screen.getByText('TRIGGER')
 
