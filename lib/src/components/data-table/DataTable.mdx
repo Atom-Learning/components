@@ -154,3 +154,35 @@ If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be c
 ### Pagination
 
 `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.
+
+## Adapter Pattern
+
+Adapters are used to get data _out_ of a `DataTable`. Many tables are used only to display data. But if your table allows the user to update that data in the client, you might need to synchronise those changes with systems outside of the `DataTable`.
+
+Adapters are components that call `useDataTable` and use its output to update other state, fire events, synchronise with external systems via network requests, etc. They must do two things:
+
+1. subscribe to `useDataTable` to get some update(s) from `DataTable`'s internal state
+2. `render children` so that they can be nested with other `DataTable` components
+
+```tsx
+const ExampleDataTableAdapter = () => {
+  const { getState } = useDataTable()
+
+  const {
+    pagination: { pageIndex }
+  } = getState()
+
+  console.log('Page index is:', pageIndex)
+}
+
+const App = () => {
+  return (
+    <DataTable columns={columns} data={data}>
+      <ExampleDataTableAdapter>
+        <DataTable.Table sortable css={{ mb: '$4' }} />
+        <DataTable.Pagination pageSize={5} />
+      </ExampleDataTableAdapter>
+    </DataTable>
+  )
+}
+```
