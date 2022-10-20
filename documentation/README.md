@@ -1,34 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Documentation Website
 
-## Getting Started
+`./documentation` is a NetlifyCMS+next.js implementation developed to allow for adding and editing markdown documentation for `@atom-learning/components`, `@atom-learning/theme`, `@atom-learning/icons`, as well as any other design system relevant information easily. It is intended to be used by any editor with log in permissions and access to our organisation, without the need for understanding code, markdown or git versioning. It is _not_ limited to only document the library components, but allows for any sort of design system relevent information to be documented.
 
-First, run the development server:
+The documentation itself is added via a NetlifyCMS website. You will need to log in to the CMS to make changes over on `https://design.atomlearning.technology/admin`. The login requires a github account as it uses Github OAuth. When making changes it uses your github user to make a direct commit to the main repository; which means changes will cause a redeployment of the website and might take a bit of time to process and show.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Working with documentation locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can also work with the documentation locally by installing this repo as seen in [the main `README.md`](https://github.com/Atom-Learning/components/tree/main#readme)
+This will a faster way to work and see changes but it will require opening a PR in the end and is not recommended for users not comfortable with working with `git`.
