@@ -1,0 +1,1123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberInputField component renders a field in error state - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hAXqx {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-fzYfTW {
+    flex-shrink: 0;
+    margin-right: var(--space-2);
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hAXqx-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-fZTBsJ-bXVTjQ-state-error {
+    border: 1px solid var(--colors-danger);
+  }
+
+  .c-PJLV-iymbh-theme-error {
+    color: var(--colors-danger);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-fDzwZw-jpgoGt-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-jpgoGt-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-fZTBsJ-ibwGleD-css {
+    border-radius: 0px;
+    width: var(--sizes-6);
+  }
+
+  .c-fZTBsJ-ibwGleD-css:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .c-dhzjXW-ijkHUQU-css {
+    margin-top: var(--space-2);
+  }
+
+  .c-fIXJvv-igszWir-css {
+    color: inherit;
+    transform: translateY(var(--space-0));
+  }
+}
+
+@media  {
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    bg: var(--tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-fPoCzx-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="numberInputField"
+        >
+          Number Input
+        </label>
+      </div>
+      <div
+        class="c-dhzjXW"
+      >
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4"
+              />
+            </svg>
+          </button>
+        </span>
+        <input
+          aria-invalid="true"
+          aria-valuemax="9007199254740991"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-fZTBsJ-ibwGleD-css"
+          id="numberInputField"
+          inputmode="numeric"
+          name="numberInputField"
+          pattern="[0-9]*"
+          role="spinbutton"
+          type="text"
+          value="0"
+        />
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4m8-8v16"
+              />
+            </svg>
+          </button>
+        </span>
+      </div>
+      <div
+        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8v5"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="16"
+            y2="16"
+          />
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+        </svg>
+        <span
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+        >
+          Cannot enter values less than 7
+        </span>
+      </div>
+    </div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`NumberInputField component renders a field with a disabled input - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hAXqx {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hAXqx-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-fDzwZw-jpgoGt-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-jpgoGt-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-fZTBsJ-ibwGleD-css {
+    border-radius: 0px;
+    width: var(--sizes-6);
+  }
+
+  .c-fZTBsJ-ibwGleD-css:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    bg: var(--tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-fPoCzx-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="numberInputField"
+        >
+          Number Input
+        </label>
+      </div>
+      <div
+        class="c-dhzjXW"
+      >
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4"
+              />
+            </svg>
+          </button>
+        </span>
+        <input
+          aria-valuemax="9007199254740991"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          disabled=""
+          id="numberInputField"
+          inputmode="numeric"
+          name="numberInputField"
+          pattern="[0-9]*"
+          role="spinbutton"
+          type="text"
+          value="0"
+        />
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4m8-8v16"
+              />
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`NumberInputField component renders a field with a number input - has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-cVSpVL {
+    color: var(--colors-tonal500);
+    font-family: var(--fonts-body);
+    margin: 0;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hAXqx {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+}
+
+@media  {
+  .c-cVSpVL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-cVSpVL-grKRUr-type-block {
+    display: block;
+    font-weight: 600;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hAXqx-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fZTBsJ-pHZal-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+  }
+}
+
+@media  {
+  .c-fDzwZw-jpgoGt-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-jpgoGt-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iwHglP-css {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-3);
+  }
+
+  .c-fZTBsJ-ibwGleD-css {
+    border-radius: 0px;
+    width: var(--sizes-6);
+  }
+
+  .c-fZTBsJ-ibwGleD-css:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    bg: var(--tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    bg: var(--tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .c-fPoCzx-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+<div>
+  <form
+    aria-label="form"
+    class="c-PJLV"
+  >
+    <div
+      class="c-PJLV"
+    >
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="numberInputField"
+        >
+          Number Input
+        </label>
+      </div>
+      <div
+        class="c-dhzjXW"
+      >
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="decrement"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            disabled=""
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4"
+              />
+            </svg>
+          </button>
+        </span>
+        <input
+          aria-valuemax="9007199254740991"
+          aria-valuemin="0"
+          aria-valuenow="0"
+          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          id="numberInputField"
+          inputmode="numeric"
+          name="numberInputField"
+          pattern="[0-9]*"
+          role="spinbutton"
+          type="text"
+          value="0"
+        />
+        <span
+          class="c-jVLVTy c-PJLV"
+          data-state="closed"
+          tabindex="-1"
+        >
+          <button
+            aria-label="increment"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            tabindex="-1"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 12H4m8-8v16"
+              />
+            </svg>
+          </button>
+        </span>
+      </div>
+    </div>
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
