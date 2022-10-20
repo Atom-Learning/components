@@ -1,3 +1,4 @@
+import { TooltipProvider } from '@radix-ui/react-tooltip'
 import { fireEvent, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
@@ -7,7 +8,11 @@ import { NumberInput } from '.'
 import type { NumberInputProps } from './NumberInput'
 
 const renderComponent = (props: Partial<NumberInputProps> = {}) => {
-  return render(<NumberInput name="test" aria-label="test" {...props} />)
+  return render(
+    <TooltipProvider>
+      <NumberInput name="test" aria-label="test" {...props} />
+    </TooltipProvider>
+  )
 }
 
 describe(`NumberInput component`, () => {

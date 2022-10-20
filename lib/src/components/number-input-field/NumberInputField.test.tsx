@@ -1,3 +1,4 @@
+import { TooltipProvider } from '@radix-ui/react-tooltip'
 import { render } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
@@ -9,14 +10,17 @@ import type { NumberInputFieldProps } from './NumberInputField'
 
 const renderComponent = (props: Partial<NumberInputFieldProps> = {}) => {
   return render(
-    <Form onSubmit={() => console.log('Form submitted')}>
-      <NumberInputField
-        name="numberInputField"
-        label="Number Input"
-        {...props}
-      />
-      <button type="submit">Submit</button>
-    </Form>
+    <TooltipProvider>
+      <Form onSubmit={() => console.log('Form submitted')}>
+        <NumberInputField
+          name="numberInputField"
+          label="Number Input"
+          {...props}
+        />
+
+        <button type="submit">Submit</button>
+      </Form>
+    </TooltipProvider>
   )
 }
 

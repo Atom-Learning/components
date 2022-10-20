@@ -1,4 +1,3 @@
-import type { TooltipProviderProps } from '@radix-ui/react-tooltip'
 import { styled } from '@stitches/react'
 import * as React from 'react'
 
@@ -35,24 +34,15 @@ const StyledStepperButton = styled(ActionIcon, {
 type NumberInputStepperProps = Omit<
   React.ComponentProps<typeof ActionIcon>,
   'children'
-> &
-  Omit<TooltipProviderProps, 'children'> & {
-    icon: React.FC<React.SVGProps<SVGSVGElement>>
-    showTooltip?: boolean
-    disabledTooltipContent?: string
-  }
+> & {
+  icon: React.FC<React.SVGProps<SVGSVGElement>>
+  showTooltip?: boolean
+  disabledTooltipContent?: string
+}
 
 export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStepperProps> =
   React.forwardRef((props, forwardedRef) => {
-    const {
-      icon,
-      disabledTooltipContent,
-      showTooltip,
-      delayDuration,
-      skipDelayDuration,
-      disableHoverableContent,
-      ...rest
-    } = props
+    const { icon, disabledTooltipContent, showTooltip, ...rest } = props
 
     /**
      * Focus has been removed from the button
@@ -60,28 +50,22 @@ export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStep
      * see MDN docs https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/spinbutton_role
      */
     return (
-      <Tooltip.Provider
-        delayDuration={delayDuration}
-        skipDelayDuration={skipDelayDuration}
-        disableHoverableContent={disableHoverableContent}
-      >
-        <Tooltip>
-          <Tooltip.Trigger asChild>
-            <StyledSpan tabIndex={-1}>
-              <StyledStepperButton
-                tabIndex={-1}
-                appearance="outline"
-                ref={forwardedRef}
-                {...rest}
-              >
-                <Icon is={icon} />
-              </StyledStepperButton>
-            </StyledSpan>
-          </Tooltip.Trigger>
-          {showTooltip && (
-            <Tooltip.Content>{disabledTooltipContent}</Tooltip.Content>
-          )}
-        </Tooltip>
-      </Tooltip.Provider>
+      <Tooltip>
+        <Tooltip.Trigger asChild>
+          <StyledSpan tabIndex={-1}>
+            <StyledStepperButton
+              tabIndex={-1}
+              appearance="outline"
+              ref={forwardedRef}
+              {...rest}
+            >
+              <Icon is={icon} />
+            </StyledStepperButton>
+          </StyledSpan>
+        </Tooltip.Trigger>
+        {showTooltip && (
+          <Tooltip.Content>{disabledTooltipContent}</Tooltip.Content>
+        )}
+      </Tooltip>
     )
   })
