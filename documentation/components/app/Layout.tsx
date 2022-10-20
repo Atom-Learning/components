@@ -11,7 +11,7 @@ type Props = {
 
 export const Layout = ({ preview, children }: Props) => {
   return (
-    <ColorScheme base="slate" accent="blue" css={{ display: 'flex', width: '100%', background: '$background', color: '$foreground' }}>
+    <ColorScheme base="slate" accent="blue" interactive="loContrast2" css={{ display: 'flex', width: '100%', background: '$background', color: '$foreground' }}>
       <Meta />
       <Header />
       <Box as="main" css={{ flexGrow: 1, overflow: 'hidden' }}>
