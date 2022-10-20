@@ -11,9 +11,9 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "dev": "NODE_ENV=development rollup -c -w",
-    "build:lib": "NODE_ENV=production rollup -c",
-    "build:types": "NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
+    "dev": "yarn build:local-deps && NODE_ENV=development rollup -c -w",
+    "build:lib": "yarn build:local-deps && NODE_ENV=production rollup -c",
+    "build:types": "yarn build:local-deps && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
     "build:proptypes": "node ./scripts/generate-component-props.mjs",
     "build:local-deps": "cd .. && yarn build:color-scheme",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
