@@ -16,14 +16,17 @@ const StyledTriggerList = styled(List, {
 })
 
 export const TabsTriggerList: React.FC<
-  React.ComponentProps<typeof StyledTriggerList>
-> = ({ children, appearance, ...rest }) => {
+  React.ComponentProps<typeof StyledTriggerList> & {
+    colorScheme?: typeof ColorScheme
+  }
+> = ({ children, appearance, colorScheme = {}, ...rest }) => {
   return (
     <ColorScheme
       as={StyledTriggerList}
       accent="blue"
-      interactiveAccentMode="hiContrast1"
+      interactive="hiContrast1"
       appearance={appearance}
+      {...colorScheme}
       {...rest}
     >
       {children}

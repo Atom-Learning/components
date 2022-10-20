@@ -54,20 +54,19 @@ const StyledTrigger = styled(Trigger, {
 })
 
 type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger> & {
-  color?: typeof ColorScheme.accent
-  colorMode?: typeof ColorScheme.interactiveAccentMode
+  colorScheme?: typeof ColorScheme
 }
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   children,
-  color = 'slate',
-  colorMode = 'loContrast1',
+  colorScheme = {},
   ...remainingProps
 }) => (
   <ColorScheme
     as={StyledTrigger}
-    accent={color}
-    interactiveAccentMode={colorMode}
+    accent="slate"
+    interactive="loContrast1"
+    {...colorScheme}
     {...remainingProps}
   >
     {children}
