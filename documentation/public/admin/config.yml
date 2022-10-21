@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: LimeWub/components-test
-  branch: main # Branch to update (optional; defaults to master)
-  base_url: http://design.atomlearning.technology/ #Change to EXACT match for deployment url
+  repo: Atom-Learning/components
+  branch: feat/site-cms # Branch to update (optional; defaults to master)
+  base_url: http://localhost:3000/ #Change to EXACT match for deployment url
   api_root: https://api.github.com # Shouldn't be necessary
   auth_endpoint: api/auth
 
-local_backend: true
+# local_backend: true
 
 media_folder: "public/admin/images" # Media files will be stored in the repo under images/uploads
 
