@@ -1,0 +1,61 @@
+---
+title: SectionItem
+component: SectionItem,SectionItem.Icon,SectionItem.Heading,SectionItem.SubHeading
+description: The SectionItem component renders children in specific locations and with specific styles
+category: Content
+---
+
+`SectionItem` can be rendered as a `link` if `to` prop is provided
+
+```tsx preview
+<SectionItem
+  iconBackground="$primaryDark"
+  status={{ text: 'Today', theme: 'danger', icon: CalendarEvent }}
+  to="/"
+>
+  <SectionItem.Icon is={CheckList} size="md" css={{ color: 'white' }} />
+  <SectionItem.Heading as="h4" css={{ fontFamily: '$body' }} size="sm">
+    A small heading
+  </SectionItem.Heading>
+  <SectionItem.SubHeading css={{ color: '$tonal300' }} size="sm">
+    A small subheading
+  </SectionItem.SubHeading>
+</SectionItem>
+```
+
+`SectionItem` can be rendered as a `button` if `onClick` prop is provided
+
+```tsx preview
+<SectionItem
+  iconBackground="$primaryDark"
+  status={{ text: 'Today', theme: 'danger', icon: CalendarEvent }}
+  onClick={() => console.log('Clicked')}
+>
+  <SectionItem.Icon is={CheckList} size="md" css={{ color: 'white' }} />
+  <SectionItem.Heading as="h4" css={{ fontFamily: '$body' }} size="sm">
+    A small heading
+  </SectionItem.Heading>
+  <SectionItem.SubHeading css={{ color: '$tonal300' }} size="sm">
+    A small subheading
+  </SectionItem.SubHeading>
+</SectionItem>
+```
+
+`SectionItem` can be rendered as a `div` if neither `onClick` nor `to` prop is provided
+
+```tsx preview
+<SectionItem
+  iconBackground="$primaryDark"
+  status={{ text: 'Today', theme: 'danger', icon: CalendarEvent }}
+>
+  <SectionItem.Icon is={CheckList} size="md" css={{ color: 'white' }} />
+  <SectionItem.Heading as="h4" css={{ fontFamily: '$body' }} size="sm">
+    A small heading
+  </SectionItem.Heading>
+  <SectionItem.SubHeading css={{ color: '$tonal300' }} size="sm">
+    A small subheading
+  </SectionItem.SubHeading>
+</SectionItem>
+```
+
+It's important to note that every prop and nested children component(s) are `optional`, which enables a greater extent of customisation
