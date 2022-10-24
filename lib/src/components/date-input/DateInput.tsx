@@ -11,6 +11,7 @@ import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
+import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {
@@ -79,42 +80,44 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               <Icon is={CalendarEvent} />
             </ActionIcon>
           </Popover.Trigger>
-          <Popover.Content
-            css={{ pr: '$sizes$2' }}
-            side="bottom"
-            align="end"
-            showCloseButton={false}
-            onOpenAutoFocus={(e) => {
-              e.preventDefault()
-              if (date) {
-                refDateSelected.current?.focus()
-              } else {
-                refDateToday.current?.focus()
-              }
-            }}
-          >
-            <Calendar
-              date={date || new Date()}
-              selected={date}
-              onDateSelected={async (date) => {
-                setCalendarOpen(false)
-                await setDate(date.date, false)
-                if (revalidate) revalidate()
+          <Popover.Portal>
+            <Popover.Content
+              css={{ pr: '$sizes$2', zIndex: DIALOG_Z_INDEX }}
+              side="bottom"
+              align="end"
+              showCloseButton={false}
+              onOpenAutoFocus={(e) => {
+                e.preventDefault()
+                if (date) {
+                  refDateSelected.current?.focus()
+                } else {
+                  refDateToday.current?.focus()
+                }
               }}
-              setYear={async (date) => {
-                await setDate(date, false)
-                if (revalidate) revalidate()
-              }}
-              minDate={minDate}
-              maxDate={maxDate}
-              refDateToday={refDateToday}
-              refDateSelected={refDateSelected}
-              firstDayOfWeek={firstDayOfWeek}
-              monthNames={monthNames}
-              weekdayNames={weekdayNames}
-              labels={updatedLabels}
-            />
-          </Popover.Content>
+            >
+              <Calendar
+                date={date || new Date()}
+                selected={date}
+                onDateSelected={async (date) => {
+                  setCalendarOpen(false)
+                  await setDate(date.date, false)
+                  if (revalidate) revalidate()
+                }}
+                setYear={async (date) => {
+                  await setDate(date, false)
+                  if (revalidate) revalidate()
+                }}
+                minDate={minDate}
+                maxDate={maxDate}
+                refDateToday={refDateToday}
+                refDateSelected={refDateSelected}
+                firstDayOfWeek={firstDayOfWeek}
+                monthNames={monthNames}
+                weekdayNames={weekdayNames}
+                labels={updatedLabels}
+              />
+            </Popover.Content>
+          </Popover.Portal>
         </Popover>
       </Box>
     )
