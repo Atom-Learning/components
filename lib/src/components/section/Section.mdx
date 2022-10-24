@@ -1,0 +1,46 @@
+---
+title: Section
+component: Section,Section.Content
+description: The Section component renders a heading and children elements
+category: Content
+---
+
+```tsx preview
+<Section heading="Section Heading">
+  <Section.Content>
+    <Text>Section Content</Text>
+  </Section.Content>
+</Section>
+```
+
+`Section` may be rendered without a heading.
+
+```tsx preview
+<Section>
+  <Section.Content>
+    <Text>Section Content</Text>
+  </Section.Content>
+</Section>
+```
+
+`Section` can also be rendered with a custom background.
+
+```tsx preview
+<Section heading="Section Heading" css={{ bg: '$warningLight' }}>
+  <Section.Content>
+    <Text>Section Content</Text>
+  </Section.Content>
+</Section>
+```
+
+The css properties of `Section` component can also be overridden.
+
+```tsx preview
+<Section heading="Section Heading" css={{ border: '1px solid $primary' }}>
+  <Section.Content>
+    <Text>Section Content</Text>
+  </Section.Content>
+</Section>
+```
+
+`Section.Content` renders a `<Grid />`, it can be leveraged to render desired layouts.

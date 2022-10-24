@@ -1,0 +1,643 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-bQzyIt {
+    display: grid;
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-iSnHBU-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-bQzyIt-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dhzjXW-ibXmpqi-css {
+    background: var(--colors-primaryLight);
+    gap: var(--space-5);
+    padding: calc(var(--space-4) + var(--space-2));
+    flex-direction: column;
+    border-radius: var(--radii-0);
+  }
+
+  .c-iSnHBU-ijkHWQd-css {
+    padding-top: var(--space-2);
+  }
+}
+
+<div>
+  <section
+    class="c-dhzjXW c-dhzjXW-ibXmpqi-css"
+  >
+    <h3
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ijkHWQd-css"
+    >
+      Section Heading
+    </h3>
+    <div
+      class="c-bQzyIt c-bQzyIt-kaVYFn-gap-2 c-bQzyIt-iPJLV-css"
+    >
+      <p
+        class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
+      >
+        Section Content
+      </p>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Section component renders with SectionItem 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-iSnHBU {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-bQzyIt {
+    display: grid;
+  }
+
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
+  .c-kgcOue {
+    background: unset;
+    border: unset;
+    padding: unset;
+    color: var(--colors-primary);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    text-decoration: none;
+  }
+
+  .c-kgcOue:focus,
+  .c-kgcOue:hover {
+    color: var(--colors-primaryMid);
+    text-decoration: underline;
+  }
+
+  .c-kgcOue:active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fIXJvv > .c-kgcOue,
+  .c-iSnHBU > .c-kgcOue,
+  .c-PJLV > .c-kgcOue {
+    font-size: 100%;
+    line-height: 1;
+  }
+
+  .c-fIXJvv > .c-kgcOue::before,
+  .c-fIXJvv > .c-kgcOue::after,
+  .c-iSnHBU > .c-kgcOue::before,
+  .c-iSnHBU > .c-kgcOue::after,
+  .c-PJLV > .c-kgcOue::before,
+  .c-PJLV > .c-kgcOue::after {
+    content: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-QWATl {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+
+  .c-bPWfQD {
+    display: flex;
+    gap: var(--space-4);
+    background: white;
+    border-radius: var(--radii-2);
+    padding: var(--space-4);
+    align-items: center;
+    text-align: left;
+  }
+
+  .c-bPWfQD::before,
+  .c-bPWfQD::after {
+    display: none !important;
+  }
+
+  .c-bPWfQD:hover,
+  .c-bPWfQD:active,
+  .c-bPWfQD:focus {
+    text-decoration: none;
+  }
+
+  .c-bPWfQD:hover > svg,
+  .c-bPWfQD:active > svg,
+  .c-bPWfQD:focus > svg {
+    animation: k-cBFJMA 250ms ease;
+    animation-fill-mode: forwards;
+  }
+
+  .c-bPWfQD > svg {
+    animation: k-hKVLpM 250ms ease;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media  {
+  .c-iSnHBU-fOoUdm-size-md {
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-iSnHBU-fOoUdm-size-md::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-bQzyIt-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-kgcOue-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-kgcOue-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-kgcOue-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-iSnHBU-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-QWATl-jtgfr-theme-danger {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerDark);
+  }
+
+  .c-QWATl-eCnudN-size-xs {
+    font-size: var(--fontSizes-sm);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    height: var(--sizes-2);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-fIXJvv-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-dbrbZt-fLGGKn-size-lg {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    stroke-width: 2;
+  }
+}
+
+@media  {
+  .c-dhzjXW-ibXmpqi-css {
+    background: var(--colors-primaryLight);
+    gap: var(--space-5);
+    padding: calc(var(--space-4) + var(--space-2));
+    flex-direction: column;
+    border-radius: var(--radii-0);
+  }
+
+  .c-iSnHBU-ijkHWQd-css {
+    padding-top: var(--space-2);
+  }
+
+  .c-dhzjXW-iehXZNA-css {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: var(--colors-primaryDark);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+    border-radius: var(--radii-round);
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-iehXZNA-css {
+      display: flex;
+    }
+}
+
+  .c-dbrbZt-ifjEkWJ-css {
+    color: white;
+  }
+
+  .c-dhzjXW-icdAfUY-css {
+    gap: var(--space-3);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icdAfUY-css {
+      gap: var(--space-1);
+    }
+}
+
+  .c-dhzjXW-ikdofoX-css {
+    gap: var(--space-2);
+  }
+
+  .c-iSnHBU-icyRcZm-css {
+    font-family: var(--fonts-body);
+  }
+
+  .c-dhzjXW-ihhNUSJ-css {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    border-radius: var(--radii-1);
+  }
+
+  .c-PJLV-iguVXTk-css {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-dhzjXW-ieVEbtG-css {
+    gap: var(--space-1);
+    align-items: center;
+  }
+
+  .c-fIXJvv-iesazQZ-css {
+    color: var(--colors-tonal300);
+  }
+
+  .c-dbrbZt-ifAkqkn-css {
+    margin-left: auto;
+    color: var(--colors-primary);
+    display: none;
+  }
+
+@media (min-width: 550px) {
+    .c-dbrbZt-ifAkqkn-css {
+      display: block;
+    }
+}
+}
+
+<div>
+  <section
+    class="c-dhzjXW c-dhzjXW-ibXmpqi-css"
+  >
+    <h3
+      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md c-iSnHBU-ijkHWQd-css"
+    >
+      Section Heading
+    </h3>
+    <div
+      class="c-bQzyIt c-bQzyIt-kaVYFn-gap-2 c-bQzyIt-iPJLV-css"
+    >
+      <button
+        class="c-kgcOue c-kgcOue-gvmVBy-size-md c-bPWfQD"
+      >
+        <div
+          class="c-dhzjXW c-dhzjXW-iehXZNA-css"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ifjEkWJ-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 6h10m-10 6h10m-10 6h10M3.5 11.5l1 1 2-2m-3-5l1 1 2-2"
+            />
+            <circle
+              cx="5"
+              cy="18"
+              r="0.75"
+            />
+          </svg>
+        </div>
+        <div
+          class="c-dhzjXW c-dhzjXW-icdAfUY-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ikdofoX-css"
+          >
+            <h4
+              class="c-iSnHBU c-iSnHBU-dtbHih-size-sm c-iSnHBU-icyRcZm-css"
+            >
+              A small heading
+            </h4>
+            <div
+              class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-eCnudN-size-xs c-dhzjXW-ihhNUSJ-css"
+              role="status"
+            >
+              <div
+                class="c-PJLV c-PJLV-iguVXTk-css"
+              >
+                <div
+                  class="c-dhzjXW c-dhzjXW-ieVEbtG-css"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+                    />
+                    <rect
+                      height="2"
+                      width="2"
+                      x="15"
+                      y="15"
+                    />
+                  </svg>
+                  Today
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-iesazQZ-css"
+          >
+            A small subheading
+          </p>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ifAkqkn-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 18l6-6-6-6M3 12h17"
+          />
+          <path
+            d="M21 12h-1"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <a
+        class="c-kgcOue c-kgcOue-gvmVBy-size-md c-bPWfQD"
+        href="/#/"
+      >
+        <div
+          class="c-dhzjXW c-dhzjXW-iehXZNA-css"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ifjEkWJ-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 6h10m-10 6h10m-10 6h10M3.5 11.5l1 1 2-2m-3-5l1 1 2-2"
+            />
+            <circle
+              cx="5"
+              cy="18"
+              r="0.75"
+            />
+          </svg>
+        </div>
+        <div
+          class="c-dhzjXW c-dhzjXW-icdAfUY-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ikdofoX-css"
+          >
+            <h4
+              class="c-iSnHBU c-iSnHBU-dtbHih-size-sm c-iSnHBU-icyRcZm-css"
+            >
+              A small heading
+            </h4>
+            <div
+              class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-eCnudN-size-xs c-dhzjXW-ihhNUSJ-css"
+              role="status"
+            >
+              <div
+                class="c-PJLV c-PJLV-iguVXTk-css"
+              >
+                <div
+                  class="c-dhzjXW c-dhzjXW-ieVEbtG-css"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+                    />
+                    <rect
+                      height="2"
+                      width="2"
+                      x="15"
+                      y="15"
+                    />
+                  </svg>
+                  Today
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-iesazQZ-css"
+          >
+            A small subheading
+          </p>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-ifAkqkn-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 18l6-6-6-6M3 12h17"
+          />
+          <path
+            d="M21 12h-1"
+            stroke-linecap="round"
+          />
+        </svg>
+      </a>
+      <div
+        class="c-dhzjXW c-bPWfQD"
+      >
+        <div
+          class="c-dhzjXW c-dhzjXW-icdAfUY-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ikdofoX-css"
+          >
+            <h4
+              class="c-iSnHBU c-iSnHBU-dtbHih-size-sm c-iSnHBU-icyRcZm-css"
+            >
+              A small heading
+            </h4>
+          </div>
+          <p
+            class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-iesazQZ-css"
+          >
+            A small subheading
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
