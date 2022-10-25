@@ -1,14 +1,14 @@
 import * as React from 'react'
 import { ArrowRight } from '@atom-learning/icons'
 
-import { CSS, keyframes, styled } from '../../stitches'
+import { CSS, keyframes } from '../../stitches'
 import { Badge } from '../badge'
 import { Flex } from '../flex'
 import { Heading } from '../heading'
 import { Icon } from '../icon'
-import { Link } from '../link'
 import { Text } from '../text'
 import { findChildByType } from '../../utilities'
+import { Button } from '../button'
 
 interface ISectionItemProps extends React.ComponentProps<typeof Flex> {
   status?: {
@@ -40,32 +40,33 @@ const slideRightAnimation = keyframes({
 })
 
 const containerCss: CSS = {
+  height: 'unset',
+  width: 'unset',
   display: 'flex',
   gap: '$4',
   bg: 'white',
   borderRadius: '$2',
   p: '$4',
+  justifyContent: 'flex-start',
   alignItems: 'center',
   textAlign: 'left',
   '&::before, &::after': {
     display: 'none !important'
   },
-  '&:hover, &:active, &:focus': {
-    textDecoration: 'none',
-    '> svg': {
-      animation: `${slideLeftAnimation} 250ms ease`,
-      animationFillMode: 'forwards'
-    }
-  },
+  '&:hover:not([disabled]), &:active:not([disabled]), &:focus:not([disabled])':
+    {
+      bg: 'white',
+      textDecoration: 'none',
+      '> svg': {
+        animation: `${slideLeftAnimation} 250ms ease`,
+        animationFillMode: 'forwards'
+      }
+    },
   '> svg': {
     animation: `${slideRightAnimation} 250ms ease`,
     animationFillMode: 'forwards'
   }
 }
-
-const StyledFlexContainer = styled(Flex, containerCss)
-
-const StyledLinkContainer = styled(Link, containerCss)
 
 export const SectionItem: React.FC<ISectionItemProps> & {
   Icon: typeof Icon
@@ -75,7 +76,19 @@ export const SectionItem: React.FC<ISectionItemProps> & {
   const icon = findChildByType(children, Icon)
   const heading = findChildByType(children, Heading)
   const subHeading = findChildByType(children, Text)
-  const isClickable = Boolean(onClick || to)
+
+  let renderAs: React.ElementType<any>
+
+  switch (true) {
+    case Boolean(to):
+      renderAs = 'link'
+      break
+    case Boolean(onClick):
+      renderAs = 'button'
+      break
+    default:
+      renderAs = 'div'
+  }
 
   const getChildren = () => {
     return (
@@ -138,12 +151,15 @@ export const SectionItem: React.FC<ISectionItemProps> & {
     )
   }
 
-  return isClickable ? (
-    <StyledLinkContainer css={css} href={to} onClick={onClick}>
+  return (
+    <Button
+      as={renderAs}
+      css={{ ...containerCss, ...css }}
+      href={to}
+      onClick={onClick}
+    >
       {getChildren()}
-    </StyledLinkContainer>
-  ) : (
-    <StyledFlexContainer css={css}>{getChildren()}</StyledFlexContainer>
+    </Button>
   )
 }
 

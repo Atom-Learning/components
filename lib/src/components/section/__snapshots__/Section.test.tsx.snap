@@ -135,40 +135,21 @@ exports[`Section component renders with SectionItem 1`] = `
     display: none;
   }
 
-  .c-kgcOue {
+  .c-fkUJsw {
+    align-items: center;
     background: unset;
     border: unset;
-    padding: unset;
-    color: var(--colors-primary);
+    border-radius: var(--radii-0);
     cursor: pointer;
+    display: flex;
     font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
     text-decoration: none;
-  }
-
-  .c-kgcOue:focus,
-  .c-kgcOue:hover {
-    color: var(--colors-primaryMid);
-    text-decoration: underline;
-  }
-
-  .c-kgcOue:active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fIXJvv > .c-kgcOue,
-  .c-iSnHBU > .c-kgcOue,
-  .c-PJLV > .c-kgcOue {
-    font-size: 100%;
-    line-height: 1;
-  }
-
-  .c-fIXJvv > .c-kgcOue::before,
-  .c-fIXJvv > .c-kgcOue::after,
-  .c-iSnHBU > .c-kgcOue::before,
-  .c-iSnHBU > .c-kgcOue::after,
-  .c-PJLV > .c-kgcOue::before,
-  .c-PJLV > .c-kgcOue::after {
-    content: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
   }
 
   .c-dbrbZt {
@@ -186,39 +167,6 @@ exports[`Section component renders with SectionItem 1`] = `
     border-radius: var(--radii-0);
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
-  }
-
-  .c-bPWfQD {
-    display: flex;
-    gap: var(--space-4);
-    background: white;
-    border-radius: var(--radii-2);
-    padding: var(--space-4);
-    align-items: center;
-    text-align: left;
-  }
-
-  .c-bPWfQD::before,
-  .c-bPWfQD::after {
-    display: none !important;
-  }
-
-  .c-bPWfQD:hover,
-  .c-bPWfQD:active,
-  .c-bPWfQD:focus {
-    text-decoration: none;
-  }
-
-  .c-bPWfQD:hover > svg,
-  .c-bPWfQD:active > svg,
-  .c-bPWfQD:focus > svg {
-    animation: k-cBFJMA 250ms ease;
-    animation-fill-mode: forwards;
-  }
-
-  .c-bPWfQD > svg {
-    animation: k-hKVLpM 250ms ease;
-    animation-fill-mode: forwards;
   }
 }
 
@@ -261,21 +209,12 @@ exports[`Section component renders with SectionItem 1`] = `
     display: table;
   }
 
-  .c-kgcOue-gvmVBy-size-md {
+  .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
-  }
-
-  .c-kgcOue-gvmVBy-size-md::before {
-    content: '';
-    margin-bottom: -0.3864em;
-    display: table;
-  }
-
-  .c-kgcOue-gvmVBy-size-md::after {
-    content: '';
-    margin-top: -0.3864em;
-    display: table;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -344,6 +283,29 @@ exports[`Section component renders with SectionItem 1`] = `
 }
 
 @media  {
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
+  }
+}
+
+@media  {
   .c-dhzjXW-ibXmpqi-css {
     background: var(--colors-primaryLight);
     gap: var(--space-5);
@@ -354,6 +316,43 @@ exports[`Section component renders with SectionItem 1`] = `
 
   .c-iSnHBU-ijkHWQd-css {
     padding-top: var(--space-2);
+  }
+
+  .c-fkUJsw-iiBxIJp-css {
+    height: unset;
+    width: unset;
+    display: flex;
+    gap: var(--space-4);
+    background: white;
+    border-radius: var(--radii-2);
+    padding: var(--space-4);
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+  }
+
+  .c-fkUJsw-iiBxIJp-css::before,
+  .c-fkUJsw-iiBxIJp-css::after {
+    display: none !important;
+  }
+
+  .c-fkUJsw-iiBxIJp-css:hover:not([disabled]),
+  .c-fkUJsw-iiBxIJp-css:active:not([disabled]),
+  .c-fkUJsw-iiBxIJp-css:focus:not([disabled]) {
+    background: white;
+    text-decoration: none;
+  }
+
+  .c-fkUJsw-iiBxIJp-css:hover:not([disabled]) > svg,
+  .c-fkUJsw-iiBxIJp-css:active:not([disabled]) > svg,
+  .c-fkUJsw-iiBxIJp-css:focus:not([disabled]) > svg {
+    animation: k-cBFJMA 250ms ease;
+    animation-fill-mode: forwards;
+  }
+
+  .c-fkUJsw-iiBxIJp-css > svg {
+    animation: k-hKVLpM 250ms ease;
+    animation-fill-mode: forwards;
   }
 
   .c-dhzjXW-iehXZNA-css {
@@ -445,7 +444,8 @@ exports[`Section component renders with SectionItem 1`] = `
       class="c-bQzyIt c-bQzyIt-kaVYFn-gap-2 c-bQzyIt-iPJLV-css"
     >
       <button
-        class="c-kgcOue c-kgcOue-gvmVBy-size-md c-bPWfQD"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fkUJsw-iiBxIJp-css"
+        type="button"
       >
         <div
           class="c-dhzjXW c-dhzjXW-iehXZNA-css"
@@ -530,7 +530,7 @@ exports[`Section component renders with SectionItem 1`] = `
         </svg>
       </button>
       <a
-        class="c-kgcOue c-kgcOue-gvmVBy-size-md c-bPWfQD"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fkUJsw-iiBxIJp-css"
         href="/#/"
       >
         <div
@@ -616,7 +616,8 @@ exports[`Section component renders with SectionItem 1`] = `
         </svg>
       </a>
       <div
-        class="c-dhzjXW c-bPWfQD"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fkUJsw-iiBxIJp-css"
+        type="button"
       >
         <div
           class="c-dhzjXW c-dhzjXW-icdAfUY-css"
