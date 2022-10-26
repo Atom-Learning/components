@@ -7,3 +7,4 @@
 **/stats.html
 .DS_Store
 **/.next
+**/.env
