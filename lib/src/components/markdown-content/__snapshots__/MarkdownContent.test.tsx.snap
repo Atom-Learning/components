@@ -322,20 +322,6 @@ exports[`MarkdownContent component renders 1`] = `
     margin-top: -0.3864em;
     display: table;
   }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
 }
 
 @media  {
@@ -724,14 +710,14 @@ line 3 of code
     >
       <img
         alt="Minion"
-        class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+        class="c-iSBxEZ"
         src="https://octodex.github.com/images/minion.png"
       />
       
 
       <img
         alt="Stormtroopocat"
-        class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+        class="c-iSBxEZ"
         src="https://octodex.github.com/images/stormtroopocat.jpg"
       />
       "

@@ -155,20 +155,6 @@ exports[`StackContent component renders a stack content 1`] = `
     content: "•";
     font-weight: bold;
   }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
 }
 
 @media  {
@@ -202,7 +188,7 @@ exports[`StackContent component renders a stack content 1`] = `
       />
     </ul>
     <img
-      class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+      class="c-iSBxEZ"
       src=""
     />
   </div>

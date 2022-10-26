@@ -23,9 +23,6 @@ export const StyledImage = styled('img', {
         }
       }
     }
-  },
-  defaultVariants: {
-    fluid: 'true'
   }
 })
 

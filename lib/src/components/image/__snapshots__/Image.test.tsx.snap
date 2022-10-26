@@ -8,26 +8,10 @@ exports[`Image component renders an image 1`] = `
   }
 }
 
-@media  {
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
-}
-
 <div>
   <img
     alt=""
-    class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+    class="c-iSBxEZ"
     src="http://placekitten.com/200/300"
   />
 </div>

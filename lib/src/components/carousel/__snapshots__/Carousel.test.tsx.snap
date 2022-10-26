@@ -100,20 +100,6 @@ exports[`Carousel component renders 1`] = `
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
 }
 
 @media  {
@@ -249,7 +235,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -271,7 +257,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -293,7 +279,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -315,7 +301,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-iSBxEZ c-iSBxEZ-dsQBoa-fluid-true"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
