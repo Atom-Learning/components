@@ -1,0 +1,100 @@
+---
+title: Avatar
+component: Avatar
+description: Show a thumbnail representation of an individual or entity.
+category: Media
+---
+
+The `Avatar` component can be used to show a visual representation of a user or entity. It helps to quickly identify users or objets.
+
+```jsx preview
+<Avatar name="Alice Smith" src="https://thispersondoesnotexist.com/image" />
+```
+
+When an image is not passed, it will show the first initial of the name as a fallback.
+
+```jsx preview
+<Avatar name="Alice Smith" />
+```
+
+When the name is not available either, it will show a user icon as fallback.
+
+```jsx preview
+<Avatar name="" src="" />
+```
+
+An `onClick` prop can be used.
+
+```jsx preview
+<Avatar onClick={() => alert('Thanks for clicking')} />
+```
+
+When disabled, the onClick won't work
+
+```jsx preview
+<Avatar disabled onClick={() => alert('This will not show')} />
+```
+
+Instead of an image, an icon can be passed
+
+```jsx preview
+<>
+  <Avatar size="xs" name="" iconName="">
+    <Icon size="sm" is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="sm" name="" iconName="">
+    <Icon size="sm" is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="md" name="" iconName="">
+    <Icon size="md" is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="lg" name="" iconName="">
+    <Icon size="md" is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="xl" name="" iconName="">
+    <Icon size="lg" is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="xxl" name="" iconName="">
+    <Icon size="lg" is={BatteryMedium} />
+  </Avatar>
+</>
+```
+
+## Size
+
+These are the available `size`s for this component: `xs`, `sm`, `md`, `lg`, `xl` and `xxl`. The default is `lg`
+
+```jsx live
+<>
+  <Avatar
+    size="xs"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+  <Avatar
+    size="sm"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+  <Avatar
+    size="md"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+  <Avatar
+    size="lg"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+  <Avatar
+    size="xl"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+  <Avatar
+    size="xxl"
+    name="Alice Smith"
+    src="https://thispersondoesnotexist.com/image"
+  />
+</>
+```
