@@ -12,7 +12,7 @@
     "dev:lib": "cd lib && yarn build:proptypes && yarn dev",
     "build:lib": "cd lib && yarn build:proptypes && yarn build:lib",
     "test:lib": "cd lib && yarn test",
-    "server:docs": "cd documentation && npx netlify-cms-proxy-server",
+    "server:docs": "npx netlify-cms-proxy-server",
     "dev:docs": "cd documentation && yarn provision && yarn dev",
     "build:docs": "cd documentation && yarn provision && yarn build",
     "start:docs": "cd documentation && yarn provision && yarn start",
