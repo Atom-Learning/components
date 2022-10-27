@@ -6,6 +6,7 @@ import buildConstants from '~/lib/build/constants.json'
 
 function flat(array) {
     var result = [];
+    if (!Array.isArray(array)) return result
     array.forEach(function (a) {
         result.push(a);
         if (Array.isArray(a.children)) {
