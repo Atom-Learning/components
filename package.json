@@ -18,7 +18,7 @@
     "start:docs": "cd documentation && yarn provision && yarn start",
     "dev:sandbox": "cd lib && yarn start:sandbox",
     "build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
-    "lint-staged": "cd lib && yarn run precommit && cd ../documentation && yarn lint",
+    "lint-staged": "cd lib && yarn run precommit",
     "build-all": "run-s build:*"
   },
   "devDependencies": {
