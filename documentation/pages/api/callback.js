@@ -17,7 +17,7 @@ if ("".match(originPattern)) {
   }
 }
 
-export default async (req, res, next) => {
+const fn = async (req, res, next) => {
   const code = req.query.code;
   const scope = req.query.scope;
 
@@ -66,3 +66,4 @@ export default async (req, res, next) => {
           </script>`;
   return res.send(script);
 };
+export default fn;

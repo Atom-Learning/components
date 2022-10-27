@@ -11,6 +11,7 @@ const authorizationUri = client.authorizeURL({
   state: randomstring.generate(32),
 });
 
-export default (req, res, next) => {
+const fn = (req, res, next) => {
   res.redirect(authorizationUri);
 };
+export default fn;

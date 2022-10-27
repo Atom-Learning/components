@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { globalCss } from '@atom-learning/components'
+import { globalCss, Tooltip } from '@atom-learning/components'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import * as React from 'react'
@@ -32,18 +32,19 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   if (Component.displayName === 'Admin') Layout = React.Fragment
 
   return (
-    <Layout>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>{`
+    <Tooltip.Provider>
+      <Layout>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <style>{`
             #__next {
               display: flex
             }
           `}</style>
-      </Head>
-      <Component {...pageProps} />
-    </Layout>
-
+        </Head>
+        <Component {...pageProps} />
+      </Layout>
+    </Tooltip.Provider>
   )
 }
 
