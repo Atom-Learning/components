@@ -21,8 +21,9 @@ const copyIcon = (str: string) => {
   }
 }
 
-const IconItem: typeof TokenList.Item = ({ token, value }) => {
-  const Component = atomIcons[value]
+type TIconItemProps = React.ComponentProps<typeof TokenList.Item> & { value: React.FC<React.SVGProps<SVGSVGElement>> }
+
+const IconItem: React.FC<TIconItemProps> = ({ token, value: Component }) => {
   return (
     <Box as="li" css={{ listStyle: 'none' }}>
       <Tooltip>
