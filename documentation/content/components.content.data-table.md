@@ -1,0 +1,227 @@
+---
+slug: data-table
+title: Data Table
+links:
+  viewSource: components/data-table
+  showReportAnIssue: true
+tabs:
+  - title: Main
+    content: >-
+      Displays tabular data with features such as sorting and pagination
+
+
+      `DataTable` provides complex features for tables, like sorting and pagination. It's built around the `@tanstack/react-table` library and exposes the `table` state from that library directly. All util functions from the library are also compatible with `DataTable`. It's worth a good read of [`@tanstack/react-table`'s documentation](https://tanstack.com/table/v8/docs/guide/introduction) too, since we won't be repeating much of it here.
+
+
+      `DataTable` and its subcomponents are designed to be very simple to use. This is achieved by abstracting complex and/or boilerplate logic away from the consumer. For example, `DataTable.Pagination` can be dropped inside a `DataTable` to paginate the table's data without the need to add any configuration on `DataTable` itself. This is achieved by having `DataTable.Pagination` itself use the `applyPagination` and `setPageSize` methods exposed by `useDataTable` on its first render. This pattern should be replicated wherever practical to maintain the best developer experience possible.
+
+
+      ## Anatomy
+
+
+      The root `DataTable` component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+
+
+      Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
+
+
+      ### Using defaults vs using rolling your own
+
+
+      Here's a simple config for some table data and columns.
+
+
+      <CodeBlock live={false} preview={false} code={`// import { createColumnHelper } from '@tanstack/react-table'
+
+
+      const columnHelper = createColumnHelper<{
+        name: string
+        hobby: string
+      }>()
+
+
+      const columns = [
+        columnHelper.accessor('name', {
+          cell: (info) => info.getValue()
+        }),
+        columnHelper.accessor('hobby', {
+          cell: (info) => info.getValue()
+        }),
+        // Columns created with columnHelper.display won't be sortable.
+        // They need a header to be set manually since they're not just reading
+        // a property from the row.
+        columnHelper.display({
+          cell: (info) => <button>do something</button>,
+          header: 'Actions'
+        })
+      ]
+
+
+      const data = [
+        { name: 'chrissy', hobby: 'bare-knuckle boxing' },
+        { name: 'agatha', hobby: 'crossfit' },
+        { name: 'betty', hobby: 'acting' }
+      ]`} language={"tsx"} />
+
+
+      There are basically two ways to use `DataTable` to build a table from this config. The first uses the highest-level components that are bundled into `DataTable` to provide useful default behaviours with minimal code. The second directly accesses the state from `DataTable` and combines it with the `Table` UI components to achieve the same thing. This demonstrates how you could create more custom table UIs without the need to extend the high-level components.
+
+
+      #### With Defaults
+
+
+      The following two examples are exactly equivalent in their output. The second example is included to demonstrate what `DataTable`'s subcomponents do: they bundle up UI components and logic to provide useful defaults. They exist at various levels of abstraction, e.g. `DataTable.Table` renders `DataTable.Body`, which renders `DataTable.Row`. This means that you can use whichever component provides useful functionality for your use case while still being low-level enough to let you combine it with your own custom logic.
+
+
+      <CodeBlock live={false} preview={false} code={`<DataTable columns={columns} data={data}>
+        <DataTable.Table sortable css={{mb: '$4'}}/>
+        <DataTable.Pagination pageSize={5} />
+      </DataTable>
+
+
+      <DataTable columns={columns} data={data}>
+        <Table>
+          <DataTable.Head sortable />
+          <DataTable.Body />
+        </Table>
+        <DataTable.Pagination pageSize={5} />
+      </DataTable>`} language={"tsx"} />
+
+
+      #### Rolling your own
+
+
+      If you need more flexibility than the default implementations provide, you can roll your own. Note that you can mix and match default implementations with your own. For example you could write your own table head implementation but use `DataTable.Body` for the body.
+
+
+      Note also that `useDataTable` can only be called by a child component of `DataTable`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
+
+
+      <CodeBlock live={false} preview={false} code={`<DataTable columns={columns} data={data}>
+        {() => {
+          const { getHeaderGroups, getRowModel, setGlobalFilter, getState } =
+            useDataTable()
+          const { globalFilter } = getState()
+
+          return (
+            <>
+              <Label htmlFor="search">User search</Label>
+              <SearchInput
+                name="search"
+                value={globalFilter}
+                onChange={setGlobalFilter}
+              />
+              <Table>
+                <Table.Header>
+                  {getHeaderGroups().map((headerGroup) => (
+                    <Table.Row key={headerGroup.id}>
+                      {headerGroup.headers.map((header) => {
+                        const sort = header.column.getIsSorted()
+                        return (
+                          <Table.HeaderCell
+                            onClick={header.column.getToggleSortingHandler()}
+                            {...props}
+                          >
+                            {flexRender(
+                              header.column.columnDef.header,
+                              header.getContext()
+                            )}
+                            {sort && { asc: '^', desc: 'v' }[sort as string]}
+                          </Table.HeaderCell>
+                        )
+                      })}
+                    </Table.Row>
+                  ))}
+                </Table.Header>
+                <Table.Body>
+                  {getRowModel().rows.map((row) => (
+                    <Table.Row>
+                      {row.getVisibleCells().map((cell) => (
+                        <Table.Cell key={cell.id}>
+                          {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                        </Table.Cell>
+                      ))}
+                    </Table.Row>
+                  ))}
+                </Table.Body>
+              </Table>
+            </>
+            // Then you could build your own pagination here too I guess? If you really wanted to?
+          )
+        }}
+      </DataTable>`} language={"tsx"} />
+
+
+      ## Features
+
+
+      ### Search
+
+
+      `DataTable.Search` renders a search input that filters the whole table by matching the input against values from any table column.
+
+
+      ### Sorting
+
+
+      A `DataTable`'s data can be sorted by default and can also be sortable by the user. These two options are independent of each other.
+
+
+      #### Default sorting
+
+
+      `DataTable` takes an optional `defaultSort` prop to configure the column and direction for the table's default sorting, e.g. `{column: 'name', direction: 'asc'}`
+
+
+      #### User sorting
+
+
+      If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be clickable to toggle between ascending, descending and no sorting in any sortable columns. `DataTable.Head` and `DataTable.Table` take an optional boolean `sortable` prop to configure this option.
+
+
+      ### Pagination
+
+
+      `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.
+
+
+      ## API Reference
+
+
+      <ComponentProps component="DataTable" />
+
+
+      <ComponentProps component="DataTableTable" />
+
+
+      <ComponentProps component="DataTableHead" />
+
+
+      <ComponentProps component="DataTableHeaderCell" />
+
+
+
+
+      <ComponentProps component="DataTableBody" />
+
+
+
+
+      <ComponentProps component="DataTableRow" />
+
+
+
+
+      <ComponentProps component="DataTableDataCell" />
+
+
+
+
+      <ComponentProps component="DataTableGlobalFilter" />
+parent: A4GgFCvNbHBt9iaKdB7Kv
+uuid: cagh7LpcbxiyLCvvU3T8m
+nestedSlug:
+  - components
+  - content
+  - data-table
+---
