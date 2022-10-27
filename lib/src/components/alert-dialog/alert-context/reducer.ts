@@ -1,4 +1,5 @@
 import { uid } from 'uid'
+
 import { alert } from './types'
 
 type State = alert[]
@@ -11,7 +12,7 @@ export const initialState = []
 export const reducer = (state: State, action: Action): alert[] => {
   switch (action.type) {
     case 'ADD':
-      return [...state, { ...action.payload, id: action.payload.id || uid() }] // @TODO
+      return [...state, { ...action.payload, id: uid() }]
     case 'REMOVE':
       return state.filter(({ id }) => id !== action.payload)
     default:
