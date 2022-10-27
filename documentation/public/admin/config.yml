@@ -8,7 +8,8 @@ backend:
 
 # local_backend: true
 
-media_folder: "public/admin/images" # Media files will be stored in the repo under images/uploads
+media_folder: "documentation/public/admin/images" # Media files will be stored in the repo under images/uploads
+public_folder: "/public/admin/images"
 
 collections:
   - name: static
@@ -16,7 +17,7 @@ collections:
     files:
       - label: "Landing Page"
         name: landing
-        file: "content/landing/index.md"
+        file: "documentation/content/landing/index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Tabs"
@@ -34,7 +35,7 @@ collections:
 
   - name: dynamic
     label: "Dynamic Pages"
-    folder: "content"
+    folder: "documentation/content"
     create: true
     identifier_field: slug
     fields:
