@@ -36,7 +36,7 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
       filteredListItems.push(<ItemComponent as="li" key={key} token={key} value={value} />)
     })
     return filteredListItems
-  }, [filter, tokens])
+  }, [filter, tokens, ItemComponent])
 
   if (!listItems.length) return null;
 
