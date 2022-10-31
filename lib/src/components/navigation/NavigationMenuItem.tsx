@@ -5,6 +5,7 @@ import React from 'react'
 import { CSS, styled, theme } from '~/stitches'
 
 import { Icon } from '../icon'
+import { Text } from '../text'
 
 const activeParentItemStyles = {
   fontWeight: 'bold',
@@ -43,7 +44,7 @@ const itemStyles = {
   '&:hover': { background: '$tonal50', color: '$tonal600' },
   '&:active': { background: '$tonal100', color: '$tonal600' },
   '&:focus-visible': {
-    boxShadow: `0 0 0 2px ${theme.colors.primary}`
+    boxShadow: `inset 0 0 0 2px ${theme.colors.primary}`
   },
   '&:disabled': {
     ...disabledStyles
@@ -71,7 +72,14 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
       dropdownItem: {
         '&[data-active]': {
           background: '$primaryLight',
-          color: '$primary'
+          '*': {
+            color: '$primary'
+          },
+          '&:hover': { background: '$tonal50' },
+          '&:active': { background: '$tonal100' },
+          '&:focus-visible': {
+            boxShadow: `0 0 0 2px ${theme.colors.primary}`
+          }
         }
       },
       link: {
@@ -79,6 +87,21 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
       }
     }
   }
+})
+
+export const NavigationMenuDropdownItemTitle = styled(Text, {
+  color: '$tonal500',
+  variants: {
+    bold: {
+      true: {
+        fontWeight: '600'
+      }
+    }
+  }
+})
+
+export const NavigationMenuDropdownItemSubtitle = styled(Text, {
+  color: '$tonal500'
 })
 
 export const NavigationMenuDropdownTrigger = React.forwardRef<
