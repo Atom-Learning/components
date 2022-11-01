@@ -10,6 +10,7 @@ import { NavigationMenuDropdown } from './NavigationMenuDropdown'
 import {
   NavigationMenuDropdownContent,
   NavigationMenuDropdownItem,
+  NavigationMenuDropdownItemTitle,
   NavigationMenuLink
 } from './NavigationMenuItem'
 
@@ -18,6 +19,7 @@ type NavigationMenuSubComponents = {
   Dropdown: typeof NavigationMenuDropdown
   DropdownContent: typeof NavigationMenuDropdownContent
   DropdownItem: typeof NavigationMenuDropdownItem
+  DropdownItemTitle: typeof NavigationMenuDropdownItemTitle
 }
 
 const delayedFadeIn = keyframes({
@@ -130,5 +132,6 @@ NavigationMenu.Link = NavigationMenuLink
 NavigationMenu.Dropdown = NavigationMenuDropdown
 NavigationMenu.DropdownContent = NavigationMenuDropdownContent
 NavigationMenu.DropdownItem = NavigationMenuDropdownItem
+NavigationMenu.DropdownItemTitle = NavigationMenuDropdownItemTitle
 
 NavigationMenu.displayName = 'NavigationMenu'
