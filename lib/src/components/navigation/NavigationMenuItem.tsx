@@ -91,17 +91,7 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
 
 export const NavigationMenuDropdownItemTitle = styled(Text, {
   color: '$tonal500',
-  variants: {
-    bold: {
-      true: {
-        fontWeight: '600'
-      }
-    }
-  }
-})
-
-export const NavigationMenuDropdownItemSubtitle = styled(Text, {
-  color: '$tonal500'
+  fontWeight: '600'
 })
 
 export const NavigationMenuDropdownTrigger = React.forwardRef<

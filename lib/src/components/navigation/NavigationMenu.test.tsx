@@ -4,6 +4,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Flex } from '../flex'
+import { Text } from '../text'
 import { NavigationMenu } from '.'
 
 const ExampleNav = () => (
@@ -17,23 +18,17 @@ const ExampleNav = () => (
               flexDirection: 'column'
             }}
           >
-            <NavigationMenu.DropdownItemTitle bold>
+            <NavigationMenu.DropdownItemTitle>
               Colours
             </NavigationMenu.DropdownItemTitle>
-            <NavigationMenu.DropdownItemSubtitle>
-              Atom Learning color palette
-            </NavigationMenu.DropdownItemSubtitle>
+            <Text>Atom Learning color palette</Text>
           </Flex>
         </NavigationMenu.DropdownItem>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/effects">
-          <NavigationMenu.DropdownItemTitle>
-            Effects
-          </NavigationMenu.DropdownItemTitle>
+          Effects
         </NavigationMenu.DropdownItem>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/icons">
-          <NavigationMenu.DropdownItemTitle>
-            Icons
-          </NavigationMenu.DropdownItemTitle>
+          Icons
         </NavigationMenu.DropdownItem>
       </NavigationMenu.DropdownContent>
     </NavigationMenu.Dropdown>

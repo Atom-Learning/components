@@ -15,19 +15,13 @@ category: Navigation
   <NavigationMenu.Dropdown title="Theme">
     <NavigationMenu.DropdownContent>
       <NavigationMenu.DropdownItem href="/theme/colours">
-        <NavigationMenu.DropdownItemTitle>
-          Colours
-        </NavigationMenu.DropdownItemTitle
+        Colours
       </NavigationMenu.DropdownItem>
       <NavigationMenu.DropdownItem href="/theme/effects">
-        <NavigationMenu.DropdownItemTitle>
-          Effects
-        </NavigationMenu.DropdownItemTitle
+        Effects
       </NavigationMenu.DropdownItem>
       <NavigationMenu.DropdownItem href="/theme/icons">
-        <NavigationMenu.DropdownItemTitle>
-          Icons
-        </NavigationMenu.DropdownItemTitle
+        Icons
       </NavigationMenu.DropdownItem>
     </NavigationMenu.DropdownContent>
   </NavigationMenu.Dropdown>
@@ -96,10 +90,9 @@ In the below example the styling of `NavigationMenu.DropdownContent` has been ch
           <NavigationMenu.DropdownItemTitle>
             {item}
           </NavigationMenu.DropdownItemTitle
-          <NavigationMenu.DropdownItemSubtitle>
-
+          <Text>
             This is some example text about {item}
-          </NavigationMenu.DropdownItemSubtitle>
+          </Text>
         </NavigationMenu.DropdownItem>
       ))}
     </NavigationMenu.DropdownContent>
@@ -123,9 +116,7 @@ DropdownItem gives a lot of flexibility. It's an easy to compose it for own purp
       <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
         Example title
       </NavigationMenu.DropdownItemTitle>
-      <NavigationMenu.DropdownItemSubtitle size="sm">
-        This is example subtitle
-      </NavigationMenu.DropdownItemSubtitle>
+      <Text>This is example subtitle</Text>
     </Flex>
   </Grid>
 </NavigationMenu.DropdownItem>
