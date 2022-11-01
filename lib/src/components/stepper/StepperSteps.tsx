@@ -30,7 +30,8 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
     allowSkip,
     direction,
     hideLabels,
-    completedSteps
+    completedSteps,
+    showCompletedIcons
   } = useStepper()
 
   const getBulletStatus = (index: number) => {
@@ -57,8 +58,12 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
       return Status.SUCCESS
     }
 
-    if (bulletStatus === Status.VIEWED || index < Math.max(...viewedSteps)) {
+    if (bulletStatus === Status.COMPLETED || index < Math.max(...viewedSteps)) {
       return Status.ACTIVE
+    }
+
+    if (bulletStatus === Status.VIEWED) {
+      return Status.VIEWED
     }
 
     return Status.DEFAULT
@@ -68,20 +73,21 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
     <StepperStepsContainer css={css} direction={direction}>
       {steps.map((step, index) => {
         const bulletStatus = getBulletStatus(index)
-        const seperatorStatus = getSeparatorStatus(index)
+        const separatorStatus = getSeparatorStatus(index)
 
         return (
           <StepperStepContainer
             tabIndex={0}
             key={`step_${index}`}
             direction={direction}
-            separator={seperatorStatus}
+            separator={separatorStatus}
             status={bulletStatus}
             css={
               direction === 'horizontal'
                 ? { width: `calc(100% / ${steps.length})` }
                 : { height: `calc(100% / ${steps.length})` }
             }
+            canInteract={allowSkip}
           >
             <StepperStepBullet
               as={allowSkip ? 'button' : 'div'}
@@ -99,7 +105,12 @@ export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
                   allowSkip && viewedSteps.includes(index) ? 'pointer' : 'auto'
               }}
             >
-              {step.status === 'success' ? <Icon is={Ok} /> : index + 1}
+              {step.status === Status.SUCCESS ||
+              (showCompletedIcons && bulletStatus === Status.COMPLETED) ? (
+                <Icon is={Ok} />
+              ) : (
+                index + 1
+              )}
             </StepperStepBullet>
 
             {step.label && !hideLabels && (

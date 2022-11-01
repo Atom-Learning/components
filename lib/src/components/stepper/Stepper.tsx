@@ -21,6 +21,7 @@ export const Stepper: React.FC<IStepperProps> & {
   direction = 'horizontal',
   steps,
   hideLabels = false,
+  showCompletedIcons = false,
   css
 }) => {
   invariant(
@@ -39,6 +40,7 @@ export const Stepper: React.FC<IStepperProps> & {
       direction={direction}
       steps={steps || Array(count).fill('')}
       hideLabels={hideLabels}
+      showCompletedIcons={showCompletedIcons}
     >
       <Box
         aria-label="progress"

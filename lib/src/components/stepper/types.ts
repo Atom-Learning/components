@@ -26,6 +26,7 @@ export type Context = {
   allowSkip?: boolean
   direction?: Direction
   hideLabels: boolean
+  showCompletedIcons: boolean
 }
 
 export type StepperProviderProps = {
@@ -36,6 +37,7 @@ export type StepperProviderProps = {
   direction?: Direction
   steps: Step[]
   hideLabels: boolean
+  showCompletedIcons: boolean
 }
 
 export interface IStepperProps {
@@ -47,6 +49,7 @@ export interface IStepperProps {
   direction?: Direction
   steps?: Step[]
   hideLabels?: boolean
+  showCompletedIcons?: boolean
 }
 
 export interface IStepperNavigateProps {
