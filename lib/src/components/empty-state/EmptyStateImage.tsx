@@ -3,37 +3,39 @@ import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
 const EmptyStateImageContainer = styled('div', {
+  height: 'auto',
   variants: {
     size: {
       xs: {
         width: '56px',
-        height: '32px',
+        maxHeight: '56px',
         mb: '$4'
       },
       sm: {
-        size: '84px',
+        width: '84px',
+        maxHeight: '84px',
         mb: '$4'
       },
       md: {
         width: '126px',
-        height: '72px',
+        maxHeight: '126px',
         mb: '$4'
       },
       lg: {
         width: '190px',
-        height: '142px',
+        maxHeight: '190px',
         mb: '$5'
       },
       xl: {
         width: '285px',
-        height: '213px',
+        maxHeight: '285px',
         mb: '$5'
       }
     }
   }
 })
 
-const StyledImage = styled(Image, { maxHeight: '100%' })
+const StyledImage = styled(Image, { objectFit: 'contain', maxHeight: '100%' })
 
 type EmptyStateImageProps = React.ComponentProps<
   typeof EmptyStateImageContainer
