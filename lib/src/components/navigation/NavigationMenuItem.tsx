@@ -44,7 +44,7 @@ const itemStyles = {
   '&:hover': { background: '$tonal50', color: '$tonal600' },
   '&:active': { background: '$tonal100', color: '$tonal600' },
   '&:focus-visible': {
-    boxShadow: `inset 0 0 0 2px ${theme.colors.primary}`
+    boxShadow: `inset 0 0 0 2px $colors$primary`
   },
   '&:disabled': {
     ...disabledStyles
@@ -78,7 +78,7 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
           '&:hover': { background: '$tonal50' },
           '&:active': { background: '$tonal100' },
           '&:focus-visible': {
-            boxShadow: `0 0 0 2px ${theme.colors.primary}`
+            boxShadow: `0 0 0 2px $colors$primary}`
           }
         }
       },

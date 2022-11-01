@@ -6,7 +6,7 @@ exports[`Nav component renders 1`] = `
     all: unset;
   }
 
-  .c-hNVQIG {
+  .c-dIYQCX {
     all: unset;
     position: relative;
     color: var(--colors-tonal400);
@@ -19,21 +19,21 @@ exports[`Nav component renders 1`] = `
     border-radius: var(--radii-1);
   }
 
-  .c-hNVQIG:hover {
+  .c-dIYQCX:hover {
     background: var(--colors-tonal50);
     color: var(--colors-tonal600);
   }
 
-  .c-hNVQIG:active {
+  .c-dIYQCX:active {
     background: var(--colors-tonal100);
     color: var(--colors-tonal600);
   }
 
-  .c-hNVQIG:focus-visible {
+  .c-dIYQCX:focus-visible {
     box-shadow: inset 0 0 0 2px var(--colors-primary);
   }
 
-  .c-hNVQIG:disabled {
+  .c-dIYQCX:disabled {
     background: none;
     color: var(--colors-tonal400);
     opacity: 30%;
@@ -173,7 +173,7 @@ exports[`Nav component renders 1`] = `
           class="c-leHWbT"
         >
           <a
-            class="c-hNVQIG c-govTNd c-govTNd-ctVDrw-elementType-link"
+            class="c-dIYQCX c-govTNd c-govTNd-ctVDrw-elementType-link"
             data-radix-collection-item=""
             href="/introduction"
           >
@@ -184,7 +184,7 @@ exports[`Nav component renders 1`] = `
           <button
             aria-controls="radix-1-content-Theme"
             aria-expanded="false"
-            class="c-hNVQIG c-gWdZwW"
+            class="c-dIYQCX c-gWdZwW"
             data-radix-collection-item=""
             data-state="closed"
             id="radix-1-trigger-Theme"
