@@ -30,7 +30,7 @@ exports[`NumberInput component renders number input  1`] = `
     vertical-align: middle;
   }
 
-  .c-hAXqx {
+  .c-hVoQtf {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -38,6 +38,7 @@ exports[`NumberInput component renders number input  1`] = `
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     line-height: 1.5;
+    white-space: normal;
     padding-left: var(--space-3);
     padding-right: var(--space-3);
     padding-top: var(--space-2);
@@ -46,7 +47,7 @@ exports[`NumberInput component renders number input  1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx {
+    .c-hVoQtf {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -54,25 +55,25 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -123,7 +124,7 @@ exports[`NumberInput component renders number input  1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hAXqx-gWQnqe-size-md {
+  .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
 
