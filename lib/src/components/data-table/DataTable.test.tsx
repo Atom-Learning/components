@@ -4,7 +4,6 @@ import userEvent from '@testing-library/user-event'
 import { createColumnHelper } from '@tanstack/react-table'
 import { DataTable } from '.'
 import { Tooltip } from '../tooltip'
-import { TooltipPortal } from '@radix-ui/react-tooltip'
 
 const columnHelper = createColumnHelper<{
   name: string

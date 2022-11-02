@@ -18,6 +18,7 @@ const StyledContent = styled(Content, {
   fontFamily: '$body',
   fontSize: '$sm',
   lineHeight: 1.5,
+  whiteSpace: 'normal',
   px: '$3',
   py: '$2',
   zIndex: TOOLTIP_Z_INDEX,
