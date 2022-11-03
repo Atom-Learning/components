@@ -10,12 +10,12 @@ export const StepperStepBullet = styled(Flex, {
   size: '$3',
   borderRadius: '50%',
   border: 'none',
-  bg: '$tonal50',
+  bg: '$tonal100',
   zIndex: 1,
   flex: 'none',
   variants: {
     status: {
-      default: { bg: '$tonal50', color: '$tonal300' },
+      default: { bg: '$tonal100', color: '$tonal300' },
       active: {
         bg: 'white',
         color: '$primaryMid',

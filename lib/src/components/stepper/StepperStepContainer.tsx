@@ -16,6 +16,7 @@ export const StepperStepContainer = styled(Flex, {
     outline: 'none'
   },
   variants: {
+    canInteract: { true: {} },
     direction: {
       vertical: {
         py: '$3',
@@ -39,12 +40,25 @@ export const StepperStepContainer = styled(Flex, {
       }
     },
     separator: {
-      default: { '&:not(:last-child)::after': { bg: '$tonal50' } },
+      default: { '&:not(:last-child)::after': { bg: '$tonal100' } },
       active: { '&:not(:last-child)::after': { bg: '$primary' } },
-      success: { '&:not(:last-child)::after': { bg: '$success' } }
+      success: { '&:not(:last-child)::after': { bg: '$success' } },
+      viewed: { '&:not(:last-child)::after': { bg: '$tonal200' } }
     },
     status: {
-      completed: {
+      completed: {},
+      active: {},
+      default: {},
+      viewed: {},
+      success: {},
+      reviewed: {}
+    }
+  },
+  compoundVariants: [
+    {
+      canInteract: true,
+      status: 'completed',
+      css: {
         '&:hover': {
           '& :first-child': { bg: '$primaryMid', color: 'white !important' },
           '& :last-child': { color: '$primaryMid' }
@@ -55,8 +69,12 @@ export const StepperStepContainer = styled(Flex, {
             outlineOffset: '2px'
           }
         }
-      },
-      active: {
+      }
+    },
+    {
+      canInteract: true,
+      status: 'active',
+      css: {
         '&:hover': {
           '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
           '& :last-child': { color: '$tonal600' }
@@ -67,18 +85,28 @@ export const StepperStepContainer = styled(Flex, {
             outlineOffset: '2px'
           }
         }
-      },
-      default: {},
-      viewed: {
+      }
+    },
+    {
+      canInteract: true,
+      status: 'viewed',
+      css: {
+        '&:hover': {
+          '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
+          '& :last-child': { color: '$tonal600' }
+        },
         '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary !important',
             outlineOffset: '2px !important'
           }
         }
-      },
-      success: {},
-      reviewed: {
+      }
+    },
+    {
+      canInteract: true,
+      status: 'reviewed',
+      css: {
         '&:focus-visible': {
           '& :first-child': {
             outline: '2px solid $primary !important',
@@ -87,5 +115,5 @@ export const StepperStepContainer = styled(Flex, {
         }
       }
     }
-  }
+  ]
 })
