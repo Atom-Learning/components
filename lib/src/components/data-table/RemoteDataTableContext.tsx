@@ -4,7 +4,8 @@ import {
   getCoreRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  getFilteredRowModel
+  getFilteredRowModel,
+  PaginationState
 } from '@tanstack/react-table'
 import type { SortingState, Table } from '@tanstack/react-table'
 
@@ -12,22 +13,27 @@ import { DataTableContextType, DataTableContext } from './DataTable.types'
 
 type TableProviderProps = {
   columns
-  data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
+  fetcher: (
+    pageIndex: number,
+    pageSize: number,
+    sortBy: string,
+    sortDirection: 'asc' | 'desc' | null
+  ) => Promise<Array<Record<string, unknown>>>
 }
 
-export const DataTableProvider = ({
+export const RemoteDataTableProvider: React.FC<TableProviderProps> = ({
   columns,
-  data: dataProp,
+  fetcher,
   defaultSort,
   children
-}: TableProviderProps): JSX.Element => {
-  const [data, setData] =
-    React.useState<Array<Record<string, unknown>>>(dataProp)
+}): JSX.Element => {
+  const [data, setData] = React.useState<Array<Record<string, unknown>> | null>(
+    null
+  )
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
-  const [isDragAndDrop, setIsDragAndDrop] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
     defaultSort
       ? [
@@ -38,38 +44,38 @@ export const DataTableProvider = ({
         ]
       : []
   )
+  const [{ pageIndex, pageSize }, setPagination] =
+    React.useState<PaginationState>({
+      pageIndex: 0,
+      pageSize: 10
+    })
 
   const applyPagination = React.useCallback(() => {
     setIsPaginated(true)
   }, [])
 
-  const applyDragAndDrop = React.useCallback(() => {
-    setIsDragAndDrop(true)
-  }, [])
+  const getTotalRows = () => data?.length ?? 0
 
-  const getTotalRows = () => data.length
+  React.useEffect(() => {
+    const doFetch = async () => {
+      const newData = await fetcher(
+        pageIndex,
+        pageSize,
+        sorting[0]?.id,
+        sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
+      )
 
-  const moveRow = (oldIndex: number, newIndex: number) => {
-    const maxIndex = data.length - 1
-    const minIndex = 0
-    if ([oldIndex, newIndex].some((i) => i > maxIndex || i < minIndex)) {
-      throw new Error(`You can't move a row to an index that doesn't exist`)
+      setData(newData)
     }
-
-    const dataCopy = JSON.parse(JSON.stringify(data))
-    const row = dataCopy[oldIndex]
-
-    dataCopy.splice(oldIndex, 1)
-    dataCopy.splice(newIndex, 0, row)
-
-    setData(dataCopy)
-  }
+    doFetch()
+  }, [fetcher, pageIndex, pageSize, sorting])
 
   const table = useReactTable<unknown>({
     columns,
-    data: data,
+    data: data ?? [],
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
+    manualPagination: isPaginated,
+    onPaginationChange: isPaginated ? setPagination : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
     state: {
@@ -83,15 +89,15 @@ export const DataTableProvider = ({
   const value = React.useMemo(() => {
     return {
       ...table,
+
       setIsSortable,
       applyPagination,
-      applyDragAndDrop,
       getTotalRows,
-      isSortable,
-      isDragAndDrop,
-      moveRow
+      isSortable
     }
   }, [table, applyPagination, getTotalRows, isSortable])
+
+  console.log('data:', data)
 
   return (
     <DataTableContext.Provider value={value}>

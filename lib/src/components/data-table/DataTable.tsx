@@ -9,7 +9,7 @@ import { DataTableRow } from './DataTableRow'
 import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableTable } from './DataTableTable'
 import { Pagination } from './pagination'
-
+import { RemoteDataTableProvider } from './RemoteDataTableContext'
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
   /** Default table body implementation for `DataTable`.
    *
@@ -58,6 +58,13 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * you can build your own implementation with the UI-only `Table` components.
    */
 
+  Remote: typeof RemoteDataTableProvider
+  /** Alternate context provider for remote data
+   *
+   * Replaces `data` prop with `fetcher`, which must be implemented by the consumer and must return table
+   * data given the current `pageSize`, `pageIndex`, `sortBy` and `sortDirection` values
+   */
+
   Row: typeof DataTableRow
 
   /** Default table implementation for `DataTable`.
@@ -84,6 +91,7 @@ DataTable.DataCell = DataTableDataCell
 DataTable.Head = DataTableHead
 DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Pagination = Pagination
+DataTable.Remote = RemoteDataTableProvider
 DataTable.Row = DataTableRow
 DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable
