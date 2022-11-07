@@ -1,32 +1,38 @@
-import { IdProvider } from '@radix-ui/react-id'
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Flex } from '../flex'
+import { Text } from '../text'
 import { NavigationMenu } from '.'
 
 const ExampleNav = () => (
-  <IdProvider>
-    <NavigationMenu>
-      <NavigationMenu.Link href="/introduction">
-        Introduction
-      </NavigationMenu.Link>
-      <NavigationMenu.Dropdown title="Theme">
-        <NavigationMenu.DropdownContent>
-          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
-            Colours
-          </NavigationMenu.DropdownItem>
-          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/effects">
-            Effects
-          </NavigationMenu.DropdownItem>
-          <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/icons">
-            Icons
-          </NavigationMenu.DropdownItem>
-        </NavigationMenu.DropdownContent>
-      </NavigationMenu.Dropdown>
-    </NavigationMenu>
-  </IdProvider>
+  <NavigationMenu>
+    <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
+    <NavigationMenu.Dropdown title="Theme">
+      <NavigationMenu.DropdownContent>
+        <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
+          <Flex
+            css={{
+              flexDirection: 'column'
+            }}
+          >
+            <NavigationMenu.DropdownItemTitle>
+              Colours
+            </NavigationMenu.DropdownItemTitle>
+            <Text>Atom Learning color palette</Text>
+          </Flex>
+        </NavigationMenu.DropdownItem>
+        <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/effects">
+          Effects
+        </NavigationMenu.DropdownItem>
+        <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/icons">
+          Icons
+        </NavigationMenu.DropdownItem>
+      </NavigationMenu.DropdownContent>
+    </NavigationMenu.Dropdown>
+  </NavigationMenu>
 )
 
 describe('Nav component', () => {

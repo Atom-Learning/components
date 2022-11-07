@@ -308,4 +308,21 @@ describe('Stepper', () => {
     const expectedSteps = screen.queryAllByLabelText('step', { exact: false })
     expect(expectedSteps).toHaveLength(0)
   })
+
+  it('replaces completed step numbers with icons when prop passed in', () => {
+    const steps: Step[] = [
+      { label: 'Step 1', status: 'completed' },
+      { label: 'Step 2', status: 'active' },
+      { label: 'Step 3', status: 'default' }
+    ]
+
+    render(
+      <Stepper steps={steps} showCompletedIcons>
+        <Stepper.Steps />
+      </Stepper>
+    )
+
+    expect(screen.queryByText('1')).not.toBeInTheDocument()
+    expect(screen.getByText('2')).toBeVisible()
+  })
 })

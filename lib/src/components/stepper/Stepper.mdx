@@ -84,7 +84,7 @@ Below is an example that shows how to use the controlled component. Each object 
       status: 'active'
     },
     {
-      label: 'Step 4',
+      label: 'Step 3',
       status: 'default'
     }
   ]}
@@ -109,11 +109,35 @@ Below is an example that shows how to hide step labels
       status: 'active'
     },
     {
-      label: 'Step 4',
+      label: 'Step 3',
       status: 'default'
     }
   ]}
   hideLabels={true}
+>
+  <Stepper.Steps />
+</Stepper>
+```
+
+The root `Stepper` component also allows the user to pass a `showCompletedIcons` prop in order to replace step numbers with tick icons when the step has been completed. This defaults to `false`.
+
+```tsx preview
+<Stepper
+  steps={[
+    {
+      label: 'Step 1',
+      status: 'completed'
+    },
+    {
+      label: 'Step 2',
+      status: 'active'
+    },
+    {
+      label: 'Step 3',
+      status: 'default'
+    }
+  ]}
+  showCompletedIcons
 >
   <Stepper.Steps />
 </Stepper>

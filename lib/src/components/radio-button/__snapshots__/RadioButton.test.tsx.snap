@@ -52,6 +52,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
 
 <div>
   <div
+    aria-required="false"
     class="c-iSwBqf"
     dir="ltr"
     role="radiogroup"
@@ -127,6 +128,7 @@ exports[`Radio component renders a radio button 1`] = `
 
 <div>
   <div
+    aria-required="false"
     class="c-iSwBqf"
     dir="ltr"
     role="radiogroup"

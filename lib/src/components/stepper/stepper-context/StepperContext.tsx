@@ -12,7 +12,8 @@ const StepperContext = React.createContext<Context>({
   allowSkip: false,
   direction: 'horizontal',
   hideLabels: false,
-  completedSteps: []
+  completedSteps: [],
+  showCompletedIcons: false
 })
 
 export const StepperProvider: React.FC<StepperProviderProps> = ({
@@ -23,7 +24,8 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   onStepChange,
   direction,
   steps,
-  hideLabels
+  hideLabels,
+  showCompletedIcons
 }) => {
   const [activeStep, setActiveStep] = React.useState(0)
 
@@ -78,7 +80,8 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
         completedSteps,
         allowSkip,
         direction,
-        hideLabels
+        hideLabels,
+        showCompletedIcons
       }}
     >
       {children}

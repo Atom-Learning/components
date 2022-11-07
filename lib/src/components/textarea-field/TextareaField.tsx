@@ -1,16 +1,14 @@
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
-import type { FieldWrapperProps } from '~/components/field-wrapper'
-import { FieldWrapper } from '~/components/field-wrapper'
-import { useFieldError, ValidationOptions } from '~/components/form'
+import {
+  FieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
+import { useFieldError } from '~/components/form'
 import { Textarea, TextareaProps } from '~/components/textarea'
 
-type TextareaFieldProps = TextareaProps &
-  FieldWrapperProps & {
-    name: string
-    validation?: ValidationOptions
-  }
+type TextareaFieldProps = TextareaProps & FieldElementWrapperProps
 
 export const TextareaField: React.FC<TextareaFieldProps> = ({
   css = undefined,

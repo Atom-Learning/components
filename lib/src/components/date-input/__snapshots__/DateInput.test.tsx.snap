@@ -58,48 +58,6 @@ exports[`DateInput component renders 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
-
-  .c-klXesr {
-    background: white;
-    border-radius: var(--radii-1);
-    box-shadow: var(--shadows-2);
-    max-width: 90vw;
-    padding: var(--sizes-2);
-    padding-right: var(--space-6);
-    position: relative;
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-klXesr {
-      animation-duration: 75ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-klXesr[data-state="open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-klXesr[data-state="open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-klXesr[data-state="open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-klXesr[data-state="open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
 }
 
 @media  {
@@ -117,10 +75,6 @@ exports[`DateInput component renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-klXesr-kUaMfZ-size-md {
-    max-width: 400px;
   }
 }
 
@@ -154,10 +108,6 @@ exports[`DateInput component renders 1`] = `
     position: absolute;
     top: 0;
     right: 0;
-  }
-
-  .c-klXesr-icFLuKp-css {
-    padding-right: var(--sizes-2);
   }
 }
 

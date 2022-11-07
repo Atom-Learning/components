@@ -1,22 +1,18 @@
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
-import { FieldWrapper } from '~/components/field-wrapper'
-import type { ValidationOptions } from '~/components/form'
+import {
+  FieldWrapper,
+  FieldElementWrapperProps
+} from '~/components/field-wrapper'
 import { useFieldError } from '~/components/form'
-import { InputProps } from '~/components/input'
 import { PasswordInput } from '~/components/password-input'
 import { CSS } from '~/stitches'
 
-type PasswordFieldProps = InputProps & {
-  description?: string
-  hidePasswordText?: string
-  label?: string
-  name: string
-  prompt?: { label: string; link: string }
-  showPasswordText?: string
-  validation?: ValidationOptions
-}
+type PasswordFieldProps = React.ComponentProps<typeof PasswordInput> &
+  Omit<FieldElementWrapperProps, 'label'> & {
+    label?: string
+  }
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
