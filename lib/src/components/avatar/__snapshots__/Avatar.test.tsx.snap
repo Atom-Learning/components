@@ -1,105 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar component renders 1`] = `
+exports[`Avatar component renders a fallback icon instead of an initial if name is missing 1`] = `
 @media  {
-  .c-dhzjXW {
+  .c-iOTJbN {
     display: flex;
-  }
-
-  .c-kjnYYX {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
-  }
-
-  .c-kjnYYX:not([disabled]):hover {
-    border-color: var(--colors-tonal400);
-    background-color: var(--colors-tonal50);
-  }
-
-  .c-kjnYYX:not([disabled]):active {
-    border-color: var(--colors-primary);
-    background-color: var(--colors-tonal100);
-  }
-
-  .c-kjnYYX:focus {
-    box-shadow: 0px 0px 0px 3px #1D6FF5, 0px 0px 0px 2px #FFFFFF;
-  }
-
-  .c-kjnYYX[disabled] {
-    opacity: 30%;
-  }
-
-  .c-kjnYYX {
     overflow: hidden;
     font-family: var(--fonts-body);
   }
-}
 
-@media  {
-  .c-kjnYYX-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
-    height: var(--sizes-5);
-    width: var(--sizes-5);
-  }
-}
-
-@media  {
-  .c-dhzjXW-idGcKFW-css {
-    cursor: auto;
-  }
-}
-
-<div>
-  <div
-    class="c-dhzjXW c-kjnYYX c-kjnYYX-cLvQgi-size-lg c-dhzjXW-idGcKFW-css"
-  >
-    <img
-      alt="a name's avatar"
-      src="path-to-image"
-      width="100%"
-    />
-  </div>
-</div>
-`;
-
-exports[`Avatar component renders an icon instead of an image 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
   }
 
-  .c-kjnYYX {
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid var(--colors-tonal100);
-    background-color: var(--colors-white);
+  .c-eWgOGC[width] {
+    width: auto;
   }
 
-  .c-kjnYYX:not([disabled]):hover {
-    border-color: var(--colors-tonal400);
-    background-color: var(--colors-tonal50);
+  .c-eWgOGC[width][height] {
+    height: auto;
   }
 
-  .c-kjnYYX:not([disabled]):active {
-    border-color: var(--colors-primary);
-    background-color: var(--colors-tonal100);
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
   }
 
-  .c-kjnYYX:focus {
-    box-shadow: 0px 0px 0px 3px #1D6FF5, 0px 0px 0px 2px #FFFFFF;
-  }
-
-  .c-kjnYYX[disabled] {
-    opacity: 30%;
-  }
-
-  .c-kjnYYX {
-    overflow: hidden;
-    font-family: var(--fonts-body);
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   .c-dbrbZt {
@@ -113,16 +49,10 @@ exports[`Avatar component renders an icon instead of an image 1`] = `
 }
 
 @media  {
-  .c-kjnYYX-cLvQgi-size-lg {
+  .c-iOTJbN-cLvQgi-size-lg {
     font-size: var(--fontSizes-md);
     height: var(--sizes-5);
     width: var(--sizes-5);
-  }
-
-  .c-kjnYYX-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
-    height: var(--sizes-2);
-    width: var(--sizes-2);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -130,13 +60,15 @@ exports[`Avatar component renders an icon instead of an image 1`] = `
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
+
+  .c-iOTJbN-kcTwYD-size-xs {
+    font-size: var(--fontSizes-xs);
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
 }
 
 @media  {
-  .c-dhzjXW-idGcKFW-css {
-    cursor: auto;
-  }
-
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
@@ -156,114 +88,7 @@ exports[`Avatar component renders an icon instead of an image 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kjnYYX c-kjnYYX-cLvQgi-size-lg c-dhzjXW-idGcKFW-css"
-  >
-    <div
-      class="c-PJLV"
-    >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ildsiYK-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M21 14v-4m-1-4H4v12h16zm-8 8v-4m-4 4v-4"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Avatar component renders an xs size with a fallback instead of an image 1`] = `
-@media  {
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-kjnYYX {
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 2px solid var(--colors-tonal100);
-    background-color: var(--colors-white);
-  }
-
-  .c-kjnYYX:not([disabled]):hover {
-    border-color: var(--colors-tonal400);
-    background-color: var(--colors-tonal50);
-  }
-
-  .c-kjnYYX:not([disabled]):active {
-    border-color: var(--colors-primary);
-    background-color: var(--colors-tonal100);
-  }
-
-  .c-kjnYYX:focus {
-    box-shadow: 0px 0px 0px 3px #1D6FF5, 0px 0px 0px 2px #FFFFFF;
-  }
-
-  .c-kjnYYX[disabled] {
-    opacity: 30%;
-  }
-
-  .c-kjnYYX {
-    overflow: hidden;
-    font-family: var(--fonts-body);
-  }
-
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-}
-
-@media  {
-  .c-kjnYYX-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
-    height: var(--sizes-5);
-    width: var(--sizes-5);
-  }
-
-  .c-kjnYYX-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-  }
-
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
-  }
-}
-
-@media  {
-  .c-dhzjXW-idGcKFW-css {
-    cursor: auto;
-  }
-
-  .c-PJLV-ieGSWOZ-css {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
-    height: 100%;
-    width: 100%;
-  }
-}
-
-<div>
-  <div
-    class="c-dhzjXW c-kjnYYX c-kjnYYX-kcTwYD-size-xs c-dhzjXW-idGcKFW-css"
+    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
@@ -284,6 +109,476 @@ exports[`Avatar component renders an xs size with a fallback instead of an image
           r="10"
         />
       </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Avatar component renders an icon avatar 1`] = `
+@media  {
+  .c-iOTJbN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--colors-tonal100);
+    background-color: var(--colors-white);
+    overflow: hidden;
+    font-family: var(--fonts-body);
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iOTJbN-cLvQgi-size-lg {
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-iOTJbN-kcTwYD-size-xs {
+    font-size: var(--fontSizes-xs);
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+}
+
+@media  {
+  .c-PJLV-ieGSWOZ-css {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ijmwTsZ-css {
+    color: var(--colors-tonal400);
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+}
+
+<div>
+  <div
+    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+  >
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ildsiYK-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21 14v-4m-1-4H4v12h16zm-8 8v-4m-4 4v-4"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`Avatar component renders an image avatar 1`] = `
+@media  {
+  .c-iOTJbN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--colors-tonal100);
+    background-color: var(--colors-white);
+    overflow: hidden;
+    font-family: var(--fonts-body);
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media  {
+  .c-iOTJbN-cLvQgi-size-lg {
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+}
+
+<div>
+  <div
+    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+  >
+    <img
+      alt="a name's avatar"
+      class="c-eWgOGC c-jxOsbj"
+      src="path-to-image"
+    />
+  </div>
+</div>
+`;
+
+exports[`Avatar component renders an inital avatar 1`] = `
+@media  {
+  .c-iOTJbN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--colors-tonal100);
+    background-color: var(--colors-white);
+    overflow: hidden;
+    font-family: var(--fonts-body);
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iOTJbN-cLvQgi-size-lg {
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-iOTJbN-kcTwYD-size-xs {
+    font-size: var(--fontSizes-xs);
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+}
+
+@media  {
+  .c-PJLV-ieGSWOZ-css {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ijmwTsZ-css {
+    color: var(--colors-tonal400);
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+}
+
+<div>
+  <div
+    class="c-iOTJbN c-iOTJbN-kcTwYD-size-xs"
+  >
+    <div
+      class="c-PJLV"
+    >
+      A
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Avatar component renders an xs size with the fallback icon when src and name are missing 1`] = `
+@media  {
+  .c-iOTJbN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--colors-tonal100);
+    background-color: var(--colors-white);
+    overflow: hidden;
+    font-family: var(--fonts-body);
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iOTJbN-cLvQgi-size-lg {
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-iOTJbN-kcTwYD-size-xs {
+    font-size: var(--fontSizes-xs);
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+}
+
+@media  {
+  .c-PJLV-ieGSWOZ-css {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ijmwTsZ-css {
+    color: var(--colors-tonal400);
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+}
+
+<div>
+  <div
+    class="c-iOTJbN c-iOTJbN-kcTwYD-size-xs"
+  >
+    <div
+      class="c-PJLV c-PJLV-ieGSWOZ-css"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijmwTsZ-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5.5 19.5c2.333-1 3.833-1.833 4.5-2.5 1-1-2-1-2-6 0-3.333 1.333-5 4-5s4 1.667 4 5c0 5-3 5-2 6 .667.667 2.167 1.5 4.5 2.5"
+          stroke-linecap="round"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Avatar component renders the initial of the name when the src of the image is not available and a name was provided 1`] = `
+@media  {
+  .c-iOTJbN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid var(--colors-tonal100);
+    background-color: var(--colors-white);
+    overflow: hidden;
+    font-family: var(--fonts-body);
+  }
+
+  .c-eWgOGC {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-eWgOGC[width] {
+    width: auto;
+  }
+
+  .c-eWgOGC[width][height] {
+    height: auto;
+  }
+
+  .c-eWgOGC[src$=".svg"] {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+
+  .c-jxOsbj {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-iOTJbN-cLvQgi-size-lg {
+    font-size: var(--fontSizes-md);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+}
+
+@media  {
+  .c-PJLV-ieGSWOZ-css {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ijmwTsZ-css {
+    color: var(--colors-tonal400);
+    height: 100%;
+    width: 100%;
+  }
+
+  .c-dbrbZt-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+}
+
+<div>
+  <div
+    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+  >
+    <div
+      class="c-PJLV"
+    >
+      B
     </div>
   </div>
 </div>

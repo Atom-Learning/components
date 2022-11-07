@@ -5,96 +5,142 @@ description: Show a thumbnail representation of an individual or entity.
 category: Media
 ---
 
-The `Avatar` component can be used to show a visual representation of a user or entity. It helps to quickly identify users or objets.
+The `Avatar` component can be used to show a visual representation of a user or entity. It helps to quickly identify users or objects.
 
 ```jsx preview
-<Avatar name="Alice Smith" src="https://thispersondoesnotexist.com/image" />
+<Avatar name="Alice Smith">
+  <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+</Avatar>
 ```
 
-When an image is not passed, it will show the first initial of the name as a fallback.
-
-```jsx preview
-<Avatar name="Alice Smith" />
-```
-
-When the name is not available either, it will show a user icon as fallback.
-
-```jsx preview
-<Avatar name="" src="" />
-```
-
-An `onClick` prop can be used.
-
-```jsx preview
-<Avatar onClick={() => alert('Thanks for clicking')} />
-```
-
-When disabled, the onClick won't work
-
-```jsx preview
-<Avatar disabled onClick={() => alert('This will not show')} />
-```
-
-Instead of an image, an icon can be passed
+Instead of an image, the initial of the name or a placeholder icon can be used
 
 ```jsx preview
 <>
-  <Avatar size="xs" name="" iconName="">
-    <Icon size="sm" is={BatteryMedium} />
+  <Avatar name="Alice Smith">
+    <Avatar.Initial />
   </Avatar>
-  <Avatar size="sm" name="" iconName="">
-    <Icon size="sm" is={BatteryMedium} />
+  <Avatar>
+    <Avatar.Placeholder />
   </Avatar>
-  <Avatar size="md" name="" iconName="">
-    <Icon size="md" is={BatteryMedium} />
+</>
+```
+
+When an image src is missing it will fallback to the initial of the name.
+
+```jsx preview
+<Avatar name="Alice Smith">
+  <Avatar.Image src="" />
+</Avatar>
+```
+
+When the name is also missing it will fallback to the placeholder icon.
+
+```jsx preview
+<Avatar name="">
+  <Avatar.Image src="" />
+</Avatar>
+```
+
+When `<Avatar.Initial />` is used but the name is missing, it will fallback to the placeholder icon.
+
+```jsx preview
+<Avatar name="">
+  <Avatar.Initial />
+</Avatar>
+```
+
+An `onClick` prop can be used, this will make the component focusable using the keyboard, as it uses a `<button>` under the hood.
+
+```jsx preview
+<Avatar name="Alice Smith" onClick={() => alert('Thanks for clicking')}>
+  <Avatar.Initial />
+</Avatar>
+```
+
+When disabled, the onClick won't work.
+
+```jsx preview
+<Avatar
+  name="Alice Smith"
+  disabled
+  onClick={() => alert('This message will not appear')}
+>
+  <Avatar.Initial />
+</Avatar>
+```
+
+Instead of an image, an icon can be passed.
+
+```jsx preview
+<>
+  <Avatar size="xs">
+    <Avatar.Icon is={BatteryMedium} />
   </Avatar>
-  <Avatar size="lg" name="" iconName="">
-    <Icon size="md" is={BatteryMedium} />
+  <Avatar size="sm">
+    <Avatar.Icon is={BatteryMedium} />
   </Avatar>
-  <Avatar size="xl" name="" iconName="">
-    <Icon size="lg" is={BatteryMedium} />
+  <Avatar size="md">
+    <Avatar.Icon is={BatteryMedium} />
   </Avatar>
-  <Avatar size="xxl" name="" iconName="">
-    <Icon size="lg" is={BatteryMedium} />
+  <Avatar size="lg">
+    <Avatar.Icon is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="xl">
+    <Avatar.Icon is={BatteryMedium} />
+  </Avatar>
+  <Avatar size="xxl">
+    <Avatar.Icon is={BatteryMedium} />
   </Avatar>
 </>
 ```
 
 ## Size
 
-These are the available `size`s for this component: `xs`, `sm`, `md`, `lg`, `xl` and `xxl`. The default is `lg`
+The available `size`s for this component are: `xs`, `sm`, `md`, `lg`, `xl` and `xxl`. The default is `lg`.
 
 ```jsx live
 <>
-  <Avatar
-    size="xs"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
-  <Avatar
-    size="sm"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
-  <Avatar
-    size="md"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
-  <Avatar
-    size="lg"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
-  <Avatar
-    size="xl"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
-  <Avatar
-    size="xxl"
-    name="Alice Smith"
-    src="https://thispersondoesnotexist.com/image"
-  />
+  <Avatar size="xs" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+  <Avatar size="sm" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+  <Avatar size="md" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+  <Avatar size="lg" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+  <Avatar size="xl" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+  <Avatar size="xxl" name="Alice Smith">
+    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  </Avatar>
+</>
+```
+
+```jsx preview
+<>
+  <Avatar size="xs" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
+  <Avatar size="sm" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
+  <Avatar size="md" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
+  <Avatar size="lg" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
+  <Avatar size="xl" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
+  <Avatar size="xxl" name="Alice Smith">
+    <Avatar.Initial />
+  </Avatar>
 </>
 ```

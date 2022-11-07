@@ -1,33 +1,19 @@
 import * as React from 'react'
 
 import { User } from '@atom-learning/icons'
-
 import { styled } from '~/stitches'
-
+import { focusVisibleStyleBlock } from '~/utilities'
 import { Box } from '../box'
-import { Flex } from '../flex'
 import { Icon } from '../icon'
+import { Image } from '../image'
 
-const StyledAvatar = styled(Flex, {
+const avatarRootStyles = {
+  display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '50%',
   border: '2px solid $tonal100',
   backgroundColor: '$white',
-  '&:not([disabled]):hover': {
-    borderColor: '$tonal400',
-    backgroundColor: '$tonal50'
-  },
-  '&:not([disabled]):active': {
-    borderColor: '$primary',
-    backgroundColor: '$tonal100'
-  },
-  '&:focus': {
-    boxShadow: '0px 0px 0px 3px #1D6FF5, 0px 0px 0px 2px #FFFFFF'
-  },
-  '&[disabled]': {
-    opacity: '30%'
-  },
   overflow: 'hidden',
   fontFamily: '$body',
   variants: {
@@ -58,38 +44,124 @@ const StyledAvatar = styled(Flex, {
       }
     }
   }
+}
+
+const avatarSizeToIconSize = {
+  xs: 'sm',
+  sm: 'sm',
+  md: 'md',
+  lg: 'md',
+  xl: 'lg',
+  xxl: 'lg'
+}
+
+const StyledDiv = styled('div', avatarRootStyles)
+const StyledButton = styled('button', {
+  all: 'unset',
+  ...avatarRootStyles,
+  '&:not([disabled])': {
+    '&:hover': {
+      borderColor: '$tonal400',
+      backgroundColor: '$tonal50'
+    },
+    '&:active': {
+      borderColor: '$primary',
+      backgroundColor: '$tonal100'
+    },
+    '&:focus-visible': focusVisibleStyleBlock()
+  },
+  '&[disabled]': {
+    opacity: '30%',
+    cursor: 'not-allowed'
+  }
 })
 
-type AvatarContentProps = {
-  src?: string
-  children?: React.ReactNode
-  name?: string
-}
-type AvatarProps = React.ComponentProps<typeof StyledAvatar> &
-  AvatarContentProps & {
-    disabled: boolean
-    onClick?: () => void
-  }
+type TAvatarProps = React.ComponentProps<
+  typeof StyledDiv | typeof StyledButton
+> & { name?: string } & (
+    | {
+        onClick: React.MouseEventHandler<HTMLButtonElement>
+        disabled?: boolean
+      }
+    | { onClick?: never; disabled?: never }
+  )
 
-const AvatarContent: React.FC<AvatarContentProps> = ({
-  src,
+export type TAvatarRootContext = {
+  name?: TAvatarProps['name']
+  size: TAvatarProps['size']
+}
+
+export const AvatarRootContext = React.createContext<TAvatarRootContext>({
+  name: undefined,
+  size: 'lg'
+})
+
+export const AvatarRootProvider: React.FC<TAvatarProps> = ({
   children,
-  name
+  name,
+  size
 }) => {
-  if (src) {
+  const value = React.useMemo<TAvatarRootContext>(
+    () => ({ name, size }),
+    [name, size]
+  )
+
+  return (
+    <AvatarRootContext.Provider value={value}>
+      {children}
+    </AvatarRootContext.Provider>
+  )
+}
+
+export const AvatarRoot: React.FC<TAvatarProps> = ({
+  children,
+  size = 'lg',
+  name,
+  disabled = false,
+  onClick
+}) => {
+  if (onClick) {
     return (
-      <img src={src} alt={name ? `${name}'s avatar` : 'avatar'} width="100%" />
+      <StyledButton
+        size={size}
+        disabled={disabled}
+        onClick={disabled ? undefined : onClick}
+        css={{ cursor: disabled ? 'auto' : 'pointer' }}
+      >
+        <AvatarRootProvider name={name} size={size}>
+          {children}
+        </AvatarRootProvider>
+      </StyledButton>
     )
   }
 
-  if (children) {
-    return <Box>{children}</Box>
-  }
+  return (
+    <StyledDiv size={size}>
+      <AvatarRootProvider name={name} size={size}>
+        {children}
+      </AvatarRootProvider>
+    </StyledDiv>
+  )
+}
 
-  if (name) {
-    return <Box>{name[0].toUpperCase()}</Box>
-  }
+type TAvatarIconProps = {
+  is: typeof Icon
+}
 
+const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
+  const rootContext = React.useContext(AvatarRootContext)
+  const { size } = rootContext
+
+  return (
+    <Icon
+      size={avatarSizeToIconSize[size]}
+      is={is}
+      css={{ color: '$tonal400' }}
+    />
+  )
+}
+
+const AvatarPlaceholder: React.FC<Record<string, never>> = () => {
   return (
     <Box css={{ position: 'relative', size: '100%' }}>
       <Icon
@@ -103,28 +175,47 @@ const AvatarContent: React.FC<AvatarContentProps> = ({
   )
 }
 
-export const Avatar: React.FC<AvatarProps> = ({
-  size = 'lg',
-  src,
-  children,
-  name,
-  disabled = false,
-  onClick,
-  ...rest
-}) => {
-  return (
-    <StyledAvatar
-      size={size}
-      disabled={disabled}
-      onClick={disabled ? null : onClick}
-      css={{ cursor: onClick && !disabled ? 'pointer' : 'auto' }}
-      {...rest}
-    >
-      <AvatarContent src={src} name={name}>
-        {children}
-      </AvatarContent>
-    </StyledAvatar>
-  )
+const AvatarInitial: React.FC<Record<string, never>> = () => {
+  const rootContext = React.useContext(AvatarRootContext)
+  const { name } = rootContext
+
+  if (name) {
+    return <Box>{name[0].toUpperCase()}</Box>
+  }
+
+  return <AvatarPlaceholder />
 }
 
+const StyledImage = styled(Image, {
+  size: '100%',
+  objectFit: 'cover'
+})
+
+type TAvatarImageProps = typeof StyledImage & {
+  src: string
+}
+
+const AvatarImage: React.FC<TAvatarImageProps> = ({ src }) => {
+  const rootContext = React.useContext(AvatarRootContext)
+  const { name } = rootContext
+
+  if (src) {
+    return <StyledImage src={src} alt={name ? `${name}'s avatar` : 'avatar'} />
+  }
+
+  return <AvatarInitial />
+}
+
+type TAvatar = typeof AvatarRoot & {
+  Image: typeof AvatarImage
+  Initial: typeof AvatarInitial
+  Placeholder: typeof AvatarPlaceholder
+  Icon: typeof AvatarIcon
+}
+
+export const Avatar = AvatarRoot as TAvatar
+Avatar.Image = AvatarImage
+Avatar.Initial = AvatarInitial
+Avatar.Placeholder = AvatarPlaceholder
+Avatar.Icon = AvatarIcon
 Avatar.displayName = 'Avatar'
