@@ -3,6 +3,7 @@ import * as React from 'react'
 import { User } from '@atom-learning/icons'
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 import { Box } from '../box'
 import { Icon } from '../icon'
 import { Image } from '../image'
@@ -44,15 +45,6 @@ const avatarRootStyles = {
       }
     }
   }
-}
-
-const avatarSizeToIconSize = {
-  xs: 'sm',
-  sm: 'sm',
-  md: 'md',
-  lg: 'md',
-  xl: 'lg',
-  xxl: 'lg'
 }
 
 const StyledDiv = styled('div', avatarRootStyles)
@@ -148,17 +140,24 @@ type TAvatarIconProps = {
   is: typeof Icon
 }
 
+const toIconSize = {
+  xs: 'sm',
+  sm: 'sm',
+  md: 'md',
+  lg: 'md',
+  xl: 'lg',
+  xxl: 'lg'
+}
+
 const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
   const rootContext = React.useContext(AvatarRootContext)
   const { size } = rootContext
-
-  return (
-    <Icon
-      size={avatarSizeToIconSize[size]}
-      is={is}
-      css={{ color: '$tonal400' }}
-    />
+  const iconSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+    [size]
   )
+
+  return <Icon size={iconSize} is={is} css={{ color: '$tonal400' }} />
 }
 
 const AvatarPlaceholder: React.FC<Record<string, never>> = () => {
