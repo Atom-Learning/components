@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { textVariantSize } from '../text'
+import { textVariants } from '../text'
 
 export const StyledLi = styled('li', {})
 
@@ -15,7 +15,7 @@ export const StyledList = styled('ul', {
     '&:last-child': { mb: 0 }
   },
   variants: {
-    size: textVariantSize({ applyCapsize: false }),
+    ...textVariants,
     as: {
       ol: {
         pl: '$4',

@@ -4,37 +4,46 @@ import { CSS, styled } from '~/stitches'
 import type { Override } from '~/utilities'
 import { capsize } from '~/utilities'
 
-type TextSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+const defaultSize = 'md'
 
-export const textVariantSize = ({ applyCapsize = true } = {}): Record<
-  TextSizes,
-  CSS
-> => ({
-  xs: {
-    fontSize: '$xs',
-    lineHeight: 1.6,
-    ...(applyCapsize ? capsize(0.4364) : {})
+export const textVariants = {
+  size: {
+    xs: { fontSize: '$xs', lineHeight: 1.6, ...capsize(0.4364) },
+    sm: { fontSize: '$sm', lineHeight: 1.53, ...capsize(0.4056) },
+    md: { fontSize: '$md', lineHeight: 1.5, ...capsize(0.3864) },
+    lg: { fontSize: '$lg', lineHeight: 1.52, ...capsize(0.3983) },
+    xl: { fontSize: '$xl', lineHeight: 1.42, ...capsize(0.3506) }
   },
-  sm: {
-    fontSize: '$sm',
-    lineHeight: 1.53,
-    ...(applyCapsize ? capsize(0.4056) : {})
-  },
-  md: {
-    fontSize: '$md',
-    lineHeight: 1.5,
-    ...(applyCapsize ? capsize(0.3864) : {})
-  },
-  lg: {
-    fontSize: '$lg',
-    lineHeight: 1.52,
-    ...(applyCapsize ? capsize(0.3983) : {})
-  },
-  xl: {
-    fontSize: '$xl',
-    lineHeight: 1.42,
-    ...(applyCapsize ? capsize(0.3506) : {})
+  noCapsize: {
+    true: {
+      '&::before, &::after': { display: 'none' }
+    }
   }
+}
+
+// export const textCompoundVariants = (
+//   Object.keys(capSizes) as Array<keyof typeof capSizes>
+// ).flatMap((size) => [
+//   {
+//     size,
+//     noCapsize: false,
+//     css: capSizes[size]
+//   },
+//   {
+//     size,
+//     noCapsize: undefined,
+//     css: capSizes[size]
+//   }
+// ])
+
+export const getTextVariant: (
+  options: Partial<{
+    size: keyof typeof textVariants.size
+    noCapsize: boolean
+  }>
+) => CSS = ({ size = defaultSize, noCapsize }) => ({
+  ...textVariants.size[size],
+  ...textVariants.noCapsize[`${noCapsize}`]
 })
 
 export const StyledText = styled('p', {
@@ -46,9 +55,7 @@ export const StyledText = styled('p', {
   '& > &': {
     '&:before, &:after': { display: 'none' }
   },
-  variants: {
-    size: textVariantSize()
-  }
+  variants: textVariants
 })
 
 type TextProps = Override<
@@ -70,7 +77,7 @@ type TextProps = Override<
 >
 
 export const Text: React.ForwardRefExoticComponent<TextProps> =
-  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
+  React.forwardRef(({ size = defaultSize, ...remainingProps }, ref) => (
     <StyledText size={size} {...remainingProps} ref={ref} />
   ))
 
