@@ -132,12 +132,6 @@ exports[`Link component can be nested within Text and Heading 1`] = `
   }
 }
 
-@media  {
-  .c-cmpvrW-icmpvrW-css {
-    position: relative;
-  }
-}
-
 <div>
   <p
     class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
@@ -146,7 +140,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
       class="c-kgcOue c-kgcOue-gvmVBy-size-md"
     >
       <span
-        class="c-cmpvrW c-cmpvrW-icmpvrW-css"
+        class="c-cmpvrW"
       >
         TEXT LINK
       </span>
@@ -159,7 +153,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
       class="c-kgcOue c-kgcOue-gvmVBy-size-md"
     >
       <span
-        class="c-cmpvrW c-cmpvrW-icmpvrW-css"
+        class="c-cmpvrW"
       >
         HEADING LINK
       </span>
