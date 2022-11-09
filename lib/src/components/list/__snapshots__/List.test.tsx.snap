@@ -35,6 +35,11 @@ exports[`List component renders a list 1`] = `
     display: table;
   }
 
+  .c-iQukjL-hUrFFO-noCapsize-true::before,
+  .c-iQukjL-hUrFFO-noCapsize-true::after {
+    display: none;
+  }
+
   .c-iQukjL-DlQlZ-as-ul {
     padding-left: var(--space-3);
   }
@@ -51,7 +56,7 @@ exports[`List component renders a list 1`] = `
 
 <div>
   <ul
-    class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-DlQlZ-as-ul"
+    class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-hUrFFO-noCapsize-true c-iQukjL-DlQlZ-as-ul"
   >
     <li
       class="c-PJLV"

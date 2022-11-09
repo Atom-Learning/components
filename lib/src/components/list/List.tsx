@@ -45,11 +45,12 @@ type ListType = React.ForwardRefExoticComponent<ListProps> & {
 }
 
 export const List = React.forwardRef(
-  ({ size = 'md', ordered, ...remainingProps }, ref) => (
+  ({ size = 'md', noCapsize = true, ordered, ...remainingProps }, ref) => (
     <StyledList
       ref={ref}
       as={ordered ? 'ol' : 'ul'}
       size={size}
+      noCapsize={noCapsize}
       {...remainingProps}
     />
   )
