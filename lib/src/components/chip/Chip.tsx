@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
-import { textVariantSize } from '~/components/text'
+import { getTextVariant } from '~/components/text'
 import { styled } from '~/stitches'
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
@@ -76,9 +76,18 @@ export const StyledRoot = styled(Flex, {
   },
   variants: {
     size: {
-      sm: { height: '$2', ...textVariantSize({ applyCapsize: true }).sm },
-      md: { height: '$3', ...textVariantSize({ applyCapsize: true }).sm },
-      lg: { height: '$4', ...textVariantSize({ applyCapsize: true }).md }
+      sm: {
+        height: '$2',
+        ...getTextVariant({ size: 'sm' })
+      },
+      md: {
+        height: '$3',
+        ...getTextVariant({ size: 'sm' })
+      },
+      lg: {
+        height: '$4',
+        ...getTextVariant({ size: 'md' })
+      }
     }
   }
 })

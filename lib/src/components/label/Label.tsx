@@ -3,16 +3,17 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import type { Override } from '~/utilities/types'
 
-import { textVariantSize } from '../text'
-
-const { sm, md } = textVariantSize()
+import { getTextVariant } from '../text'
 
 const StyledLabel = styled('label', {
   color: '$tonal500',
   fontFamily: '$body',
   m: 0,
   variants: {
-    size: { sm, md },
+    size: {
+      sm: getTextVariant({ size: 'sm' }),
+      md: getTextVariant({ size: 'md' })
+    },
     type: {
       block: {
         display: 'block',
