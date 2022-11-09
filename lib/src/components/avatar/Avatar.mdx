@@ -9,7 +9,10 @@ The `Avatar` component can be used to show a visual representation of a user or 
 
 ```jsx preview
 <Avatar name="Alice Smith">
-  <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+  <Avatar.Image
+    alt="Alice Smith's avatar"
+    src="https://thispersondoesnotexist.com/image"
+  />
 </Avatar>
 ```
 
@@ -30,7 +33,7 @@ When an image src is missing it will fallback to the initial of the name.
 
 ```jsx preview
 <Avatar name="Alice Smith">
-  <Avatar.Image src="" />
+  <Avatar.Image alt="" src="" />
 </Avatar>
 ```
 
@@ -38,7 +41,7 @@ When the name is also missing it will fallback to the placeholder icon.
 
 ```jsx preview
 <Avatar name="">
-  <Avatar.Image src="" />
+  <Avatar.Image alt="Alice Smith's avatar" src="" />
 </Avatar>
 ```
 
@@ -102,22 +105,40 @@ The available `size`s for this component are: `xs`, `sm`, `md`, `lg`, `xl` and `
 ```jsx live
 <>
   <Avatar size="xs" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
   <Avatar size="sm" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
   <Avatar size="md" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
   <Avatar size="lg" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
   <Avatar size="xl" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
   <Avatar size="xxl" name="Alice Smith">
-    <Avatar.Image src="https://thispersondoesnotexist.com/image" />
+    <Avatar.Image
+      alt="Alice Smith's avatar"
+      src="https://thispersondoesnotexist.com/image"
+    />
   </Avatar>
 </>
 ```

@@ -4,13 +4,12 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Avatar } from '.'
-import { Icon } from '../icon'
 
 describe('Avatar component', () => {
   it('renders an image avatar', async () => {
     const { container } = render(
       <Avatar name="a name">
-        <Avatar.Image src="path-to-image" />
+        <Avatar.Image alt="somobody's avatar" src="path-to-image" />
       </Avatar>
     )
 
@@ -20,7 +19,7 @@ describe('Avatar component', () => {
   it('has no programmatically detectable a11y issues', async () => {
     let view = render(
       <Avatar name="a name">
-        <Avatar.Image src="path-to-image" />
+        <Avatar.Image alt="somobody's avatar" src="path-to-image" />
       </Avatar>
     )
     expect(await axe(view.container)).toHaveNoViolations()
@@ -50,7 +49,7 @@ describe('Avatar component', () => {
   it('renders the initial of the name when the src of the image is not available and a name was provided', async () => {
     const { container } = render(
       <Avatar name="Bob">
-        <Avatar.Image src="" />
+        <Avatar.Image alt="Bob's avatar" src="" />
       </Avatar>
     )
 
@@ -60,7 +59,7 @@ describe('Avatar component', () => {
   it('renders an xs size with the fallback icon when src and name are missing', async () => {
     const { container } = render(
       <Avatar size="xs">
-        <Avatar.Image src="" />
+        <Avatar.Image alt="an avatar" src="" />
       </Avatar>
     )
 

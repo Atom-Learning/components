@@ -355,7 +355,7 @@ exports[`Avatar component renders an image avatar 1`] = `
     class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <img
-      alt="a name's avatar"
+      alt="somobody's avatar"
       class="c-eWgOGC c-jxOsbj"
       src="path-to-image"
     />

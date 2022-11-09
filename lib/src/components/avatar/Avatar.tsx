@@ -176,16 +176,14 @@ const StyledImage = styled(Image, {
   objectFit: 'cover'
 })
 
-type TAvatarImageProps = typeof StyledImage & {
+type TAvatarImageProps = {
   src: string
+  alt: string
 }
 
-const AvatarImage: React.FC<TAvatarImageProps> = ({ src }) => {
-  const rootContext = React.useContext(AvatarRootContext)
-  const { name } = rootContext
-
+const AvatarImage: React.FC<TAvatarImageProps> = ({ src, alt }) => {
   if (src) {
-    return <StyledImage src={src} alt={name ? `${name}'s avatar` : 'avatar'} />
+    return <StyledImage src={src} alt={alt} />
   }
 
   return <AvatarInitial />
