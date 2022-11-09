@@ -21,12 +21,10 @@ export const textVariants = {
   }
 }
 
-export const getTextVariant: (
-  options: Partial<{
-    size: keyof typeof textVariants.size
-    noCapsize: boolean
-  }>
-) => CSS = ({ size = defaultSize, noCapsize }) => ({
+export const getTextVariant: (options: {
+  size: keyof typeof textVariants.size
+  noCapsize?: boolean
+}) => CSS = ({ size, noCapsize }) => ({
   ...textVariants.size[size],
   ...textVariants.noCapsize[`${noCapsize}`]
 })
