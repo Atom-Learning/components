@@ -111,30 +111,22 @@ export const AvatarRoot: React.FC<TAvatarProps> = ({
   name,
   disabled = false,
   onClick
-}) => {
-  if (onClick) {
-    return (
+}) => (
+  <AvatarRootProvider name={name} size={size}>
+    {onClick ? (
       <StyledButton
         size={size}
         disabled={disabled}
         onClick={disabled ? undefined : onClick}
         css={{ cursor: disabled ? 'auto' : 'pointer' }}
       >
-        <AvatarRootProvider name={name} size={size}>
-          {children}
-        </AvatarRootProvider>
-      </StyledButton>
-    )
-  }
-
-  return (
-    <StyledDiv size={size}>
-      <AvatarRootProvider name={name} size={size}>
         {children}
-      </AvatarRootProvider>
-    </StyledDiv>
-  )
-}
+      </StyledButton>
+    ) : (
+      <StyledDiv size={size}>{children}</StyledDiv>
+    )}
+  </AvatarRootProvider>
+)
 
 type TAvatarIconProps = {
   is: typeof Icon
