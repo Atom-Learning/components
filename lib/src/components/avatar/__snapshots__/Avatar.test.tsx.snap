@@ -2,15 +2,15 @@
 
 exports[`Avatar component renders a fallback icon instead of an initial if name is missing 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -38,6 +38,18 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     object-fit: cover;
   }
 
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -49,10 +61,26 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -61,41 +89,56 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     stroke-width: 1.75;
   }
 
-  .c-iOTJbN-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
+  .c-hMBZYr-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs {
+    font-size: var(--fontSizes-xs);
+    line-height: 1.6;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::before {
+    content: '';
+    margin-bottom: -0.4364em;
+    display: table;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::after {
+    content: '';
+    margin-top: -0.4364em;
+    display: table;
   }
 }
 
 @media  {
+  .c-fIXJvv-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
     width: 100%;
   }
 
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
+  .c-dbrbZt-ijiyhIq-css {
     height: 100%;
     width: 100%;
-  }
-
-  .c-dbrbZt-ildsiYK-css {
-    color: var(--colors-tonal400);
   }
 }
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijmwTsZ-css"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijiyhIq-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -116,15 +159,15 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 
 exports[`Avatar component renders an icon avatar 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -152,6 +195,18 @@ exports[`Avatar component renders an icon avatar 1`] = `
     object-fit: cover;
   }
 
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -163,10 +218,26 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -175,38 +246,53 @@ exports[`Avatar component renders an icon avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-iOTJbN-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
+  .c-hMBZYr-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs {
+    font-size: var(--fontSizes-xs);
+    line-height: 1.6;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::before {
+    content: '';
+    margin-bottom: -0.4364em;
+    display: table;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::after {
+    content: '';
+    margin-top: -0.4364em;
+    display: table;
   }
 }
 
 @media  {
+  .c-fIXJvv-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
     width: 100%;
   }
 
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
+  .c-dbrbZt-ijiyhIq-css {
     height: 100%;
     width: 100%;
-  }
-
-  .c-dbrbZt-ildsiYK-css {
-    color: var(--colors-tonal400);
   }
 }
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ildsiYK-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -220,15 +306,15 @@ exports[`Avatar component renders an icon avatar 1`] = `
 
 exports[`Avatar component renders an image avatar 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -258,8 +344,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -267,7 +352,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <img
       alt="a name's avatar"
@@ -280,15 +365,15 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 exports[`Avatar component renders an inital avatar 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -316,6 +401,18 @@ exports[`Avatar component renders an inital avatar 1`] = `
     object-fit: cover;
   }
 
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -327,10 +424,26 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -339,55 +452,70 @@ exports[`Avatar component renders an inital avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-iOTJbN-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
+  .c-hMBZYr-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs {
+    font-size: var(--fontSizes-xs);
+    line-height: 1.6;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::before {
+    content: '';
+    margin-bottom: -0.4364em;
+    display: table;
+  }
+
+  .c-fIXJvv-bhKTXb-size-xs::after {
+    content: '';
+    margin-top: -0.4364em;
+    display: table;
   }
 }
 
 @media  {
+  .c-fIXJvv-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
     width: 100%;
   }
 
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
+  .c-dbrbZt-ijiyhIq-css {
     height: 100%;
     width: 100%;
-  }
-
-  .c-dbrbZt-ildsiYK-css {
-    color: var(--colors-tonal400);
   }
 }
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-kcTwYD-size-xs"
+    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
   >
-    <div
-      class="c-PJLV"
+    <p
+      class="c-fIXJvv c-fIXJvv-bhKTXb-size-xs c-fIXJvv-ildsiYK-css"
     >
       A
-    </div>
+    </p>
   </div>
 </div>
 `;
 
 exports[`Avatar component renders an xs size with the fallback icon when src and name are missing 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -415,6 +543,18 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     object-fit: cover;
   }
 
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -426,10 +566,26 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -438,41 +594,39 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     stroke-width: 1.75;
   }
 
-  .c-iOTJbN-kcTwYD-size-xs {
-    font-size: var(--fontSizes-xs);
+  .c-hMBZYr-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
 }
 
 @media  {
+  .c-fIXJvv-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
     width: 100%;
   }
 
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
+  .c-dbrbZt-ijiyhIq-css {
     height: 100%;
     width: 100%;
-  }
-
-  .c-dbrbZt-ildsiYK-css {
-    color: var(--colors-tonal400);
   }
 }
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-kcTwYD-size-xs"
+    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijmwTsZ-css"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijiyhIq-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -493,15 +647,15 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 
 exports[`Avatar component renders the initial of the name when the src of the image is not available and a name was provided 1`] = `
 @media  {
-  .c-iOTJbN {
+  .c-hMBZYr {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    color: var(--colors-tonal400);
+    border-radius: var(--radii-round);
     border: 2px solid var(--colors-tonal100);
     background-color: var(--colors-white);
     overflow: hidden;
-    font-family: var(--fonts-body);
   }
 
   .c-eWgOGC {
@@ -529,6 +683,18 @@ exports[`Avatar component renders the initial of the name when the src of the im
     object-fit: cover;
   }
 
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
+    display: none;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -540,10 +706,26 @@ exports[`Avatar component renders the initial of the name when the src of the im
 }
 
 @media  {
-  .c-iOTJbN-cLvQgi-size-lg {
-    font-size: var(--fontSizes-md);
+  .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
+  }
+
+  .c-fIXJvv-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-fIXJvv-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -554,32 +736,31 @@ exports[`Avatar component renders the initial of the name when the src of the im
 }
 
 @media  {
+  .c-fIXJvv-ildsiYK-css {
+    color: var(--colors-tonal400);
+  }
+
   .c-PJLV-ieGSWOZ-css {
     position: relative;
     height: 100%;
     width: 100%;
   }
 
-  .c-dbrbZt-ijmwTsZ-css {
-    color: var(--colors-tonal400);
+  .c-dbrbZt-ijiyhIq-css {
     height: 100%;
     width: 100%;
-  }
-
-  .c-dbrbZt-ildsiYK-css {
-    color: var(--colors-tonal400);
   }
 }
 
 <div>
   <div
-    class="c-iOTJbN c-iOTJbN-cLvQgi-size-lg"
+    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
-    <div
-      class="c-PJLV"
+    <p
+      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-ildsiYK-css"
     >
       B
-    </div>
+    </p>
   </div>
 </div>
 `;

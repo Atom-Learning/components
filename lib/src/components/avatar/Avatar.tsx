@@ -7,42 +7,25 @@ import { overrideStitchesVariantValue } from '~/utilities/override-stitches-vari
 import { Box } from '../box'
 import { Icon } from '../icon'
 import { Image } from '../image'
+import { Text } from '../text'
 
 const avatarRootStyles = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  borderRadius: '50%',
+  color: '$tonal400',
+  borderRadius: '$round',
   border: '2px solid $tonal100',
   backgroundColor: '$white',
   overflow: 'hidden',
-  fontFamily: '$body',
   variants: {
     size: {
-      xs: {
-        fontSize: '$xs',
-        size: '$2'
-      },
-      sm: {
-        fontSize: '$sm',
-        size: '$3'
-      },
-      md: {
-        fontSize: '$sm',
-        size: '$4'
-      },
-      lg: {
-        fontSize: '$md',
-        size: '$5'
-      },
-      xl: {
-        fontSize: '$md',
-        size: '$6'
-      },
-      xxl: {
-        fontSize: '$lg',
-        size: '$7'
-      }
+      xs: { size: '$2' },
+      sm: { size: '$3' },
+      md: { size: '$4' },
+      lg: { size: '$5' },
+      xl: { size: '$6' },
+      xxl: { size: '$7' }
     }
   }
 }
@@ -149,29 +132,40 @@ const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
     [size]
   )
 
-  return <Icon size={iconSize} is={is} css={{ color: '$tonal400' }} />
+  return <Icon size={iconSize} is={is} />
 }
 
 const AvatarPlaceholder: React.FC<Record<string, never>> = () => {
   return (
     <Box css={{ position: 'relative', size: '100%' }}>
-      <Icon
-        is={User}
-        css={{
-          color: '$tonal400',
-          size: '100%'
-        }}
-      />
+      <Icon is={User} css={{ size: '100%' }} />
     </Box>
   )
 }
 
+const toTextSize = {
+  xs: 'xs',
+  sm: 'sm',
+  md: 'sm',
+  lg: 'md',
+  xl: 'md',
+  xxl: 'lg'
+}
+
 const AvatarInitial: React.FC<Record<string, never>> = () => {
   const rootContext = React.useContext(AvatarRootContext)
-  const { name } = rootContext
+  const { name, size } = rootContext
+  const textSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toTextSize[s]),
+    [size]
+  )
 
   if (name) {
-    return <Box>{name[0].toUpperCase()}</Box>
+    return (
+      <Text size={textSize} css={{ color: '$tonal400' }}>
+        {name[0].toUpperCase()}
+      </Text>
+    )
   }
 
   return <AvatarPlaceholder />
