@@ -160,15 +160,15 @@ const AvatarInitial: React.FC<Record<string, never>> = () => {
     [size]
   )
 
-  if (name) {
-    return (
-      <Text size={textSize} css={{ color: '$tonal400' }}>
-        {name[0].toUpperCase()}
-      </Text>
-    )
+  if (!name) {
+    return <AvatarPlaceholder />
   }
 
-  return <AvatarPlaceholder />
+  return (
+    <Text size={textSize} css={{ color: '$tonal400' }}>
+      {name[0].toUpperCase()}
+    </Text>
+  )
 }
 
 const StyledImage = styled(Image, {
@@ -182,11 +182,11 @@ type TAvatarImageProps = {
 }
 
 const AvatarImage: React.FC<TAvatarImageProps> = ({ src, alt }) => {
-  if (src) {
-    return <StyledImage src={src} alt={alt} />
+  if (!src) {
+    return <AvatarInitial />
   }
 
-  return <AvatarInitial />
+  return <StyledImage src={src} alt={alt} />
 }
 
 type TAvatar = typeof AvatarRoot & {
