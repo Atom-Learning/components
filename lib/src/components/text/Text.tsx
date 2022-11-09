@@ -21,21 +21,6 @@ export const textVariants = {
   }
 }
 
-// export const textCompoundVariants = (
-//   Object.keys(capSizes) as Array<keyof typeof capSizes>
-// ).flatMap((size) => [
-//   {
-//     size,
-//     noCapsize: false,
-//     css: capSizes[size]
-//   },
-//   {
-//     size,
-//     noCapsize: undefined,
-//     css: capSizes[size]
-//   }
-// ])
-
 export const getTextVariant: (
   options: Partial<{
     size: keyof typeof textVariants.size

@@ -63,7 +63,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
          *
          * https://stackoverflow.com/questions/41100273/overflowing-button-text-is-being-clipped-in-safari
          */}
-        <StyledSpan css={{ position: 'relative' }}>{children}</StyledSpan>
+        <StyledSpan>{children}</StyledSpan>
       </StyledLink>
     )
 ) as React.FC<LinkProps>
