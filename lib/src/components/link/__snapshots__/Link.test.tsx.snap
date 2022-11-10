@@ -38,6 +38,10 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     content: none;
   }
 
+  .c-cmpvrW {
+    position: relative;
+  }
+
   .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
@@ -135,7 +139,11 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     <button
       class="c-kgcOue c-kgcOue-gvmVBy-size-md"
     >
-      TEXT LINK
+      <span
+        class="c-cmpvrW"
+      >
+        TEXT LINK
+      </span>
     </button>
   </p>
   <h2
@@ -144,7 +152,11 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     <button
       class="c-kgcOue c-kgcOue-gvmVBy-size-md"
     >
-      HEADING LINK
+      <span
+        class="c-cmpvrW"
+      >
+        HEADING LINK
+      </span>
     </button>
   </h2>
 </div>

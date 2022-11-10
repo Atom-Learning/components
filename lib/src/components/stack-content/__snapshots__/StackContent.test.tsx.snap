@@ -145,9 +145,26 @@ exports[`StackContent component renders a stack content 1`] = `
     width: 100%;
   }
 
-  .c-iQukjL-bfiEAN-size-md {
+  .c-iQukjL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
+  }
+
+  .c-iQukjL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-hUrFFO-noCapsize-true::before,
+  .c-iQukjL-hUrFFO-noCapsize-true::after {
+    display: none;
   }
 
   .c-iQukjL-DlQlZ-as-ul {
@@ -188,7 +205,7 @@ exports[`StackContent component renders a stack content 1`] = `
       class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-igmqXFB-css"
     />
     <ul
-      class="c-iQukjL c-iQukjL-bfiEAN-size-md c-iQukjL-DlQlZ-as-ul"
+      class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-hUrFFO-noCapsize-true c-iQukjL-DlQlZ-as-ul"
     >
       <li
         class="c-PJLV"

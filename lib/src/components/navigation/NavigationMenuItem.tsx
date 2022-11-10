@@ -118,7 +118,7 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
 export const NavigationMenuDropdownContent = styled('ul', {
   all: 'unset'
 })
-const ListItem = styled('li', { all: 'unset' })
+const ListItem = styled('li', { listStyle: 'none' })
 const DisabledButton = styled('button', { ...itemStyles, ...disabledStyles })
 
 type NavigationMenuLinkProps = {
