@@ -1,13 +1,11 @@
 import * as React from 'react'
 
-import { User } from '@atom-learning/icons'
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
-import { Box } from '../box'
-import { Icon } from '../icon'
-import { Image } from '../image'
-import { Text } from '../text'
+import { AvatarPlaceholder } from './AvatarPlaceholder'
+import { AvatarIcon } from './AvatarIcon'
+import { AvatarInitial } from './AvatarInitial'
+import { AvatarImage } from './AvatarImage'
 
 const avatarRootStyles = {
   display: 'flex',
@@ -110,84 +108,6 @@ export const AvatarRoot: React.FC<TAvatarProps> = ({
     )}
   </AvatarRootProvider>
 )
-
-type TAvatarIconProps = {
-  is: typeof Icon
-}
-
-const toIconSize = {
-  xs: 'sm',
-  sm: 'sm',
-  md: 'md',
-  lg: 'md',
-  xl: 'lg',
-  xxl: 'lg'
-}
-
-const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
-  const rootContext = React.useContext(AvatarRootContext)
-  const { size } = rootContext
-  const iconSize = React.useMemo(
-    () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
-    [size]
-  )
-
-  return <Icon size={iconSize} is={is} />
-}
-
-const AvatarPlaceholder: React.FC<Record<string, never>> = () => {
-  return (
-    <Box css={{ position: 'relative', size: '100%' }}>
-      <Icon is={User} css={{ size: '100%' }} />
-    </Box>
-  )
-}
-
-const toTextSize = {
-  xs: 'xs',
-  sm: 'sm',
-  md: 'sm',
-  lg: 'md',
-  xl: 'md',
-  xxl: 'lg'
-}
-
-const AvatarInitial: React.FC<Record<string, never>> = () => {
-  const rootContext = React.useContext(AvatarRootContext)
-  const { name, size } = rootContext
-  const textSize = React.useMemo(
-    () => overrideStitchesVariantValue(size, (s) => toTextSize[s]),
-    [size]
-  )
-
-  if (!name) {
-    return <AvatarPlaceholder />
-  }
-
-  return (
-    <Text size={textSize} css={{ color: '$tonal400' }}>
-      {name[0].toUpperCase()}
-    </Text>
-  )
-}
-
-const StyledImage = styled(Image, {
-  size: '100%',
-  objectFit: 'cover'
-})
-
-type TAvatarImageProps = {
-  src: string
-  alt: string
-}
-
-const AvatarImage: React.FC<TAvatarImageProps> = ({ src, alt }) => {
-  if (!src) {
-    return <AvatarInitial />
-  }
-
-  return <StyledImage src={src} alt={alt} />
-}
 
 type TAvatar = typeof AvatarRoot & {
   Image: typeof AvatarImage
