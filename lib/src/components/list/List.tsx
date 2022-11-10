@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { textVariantSize } from '../text'
+import { textVariants } from '../text'
 
 export const StyledLi = styled('li', {})
 
@@ -15,7 +15,7 @@ export const StyledList = styled('ul', {
     '&:last-child': { mb: 0 }
   },
   variants: {
-    size: textVariantSize({ applyCapsize: false }),
+    ...textVariants,
     as: {
       ol: {
         pl: '$4',
@@ -45,11 +45,12 @@ type ListType = React.ForwardRefExoticComponent<ListProps> & {
 }
 
 export const List = React.forwardRef(
-  ({ size = 'md', ordered, ...remainingProps }, ref) => (
+  ({ size = 'md', noCapsize = true, ordered, ...remainingProps }, ref) => (
     <StyledList
       ref={ref}
       as={ordered ? 'ol' : 'ul'}
       size={size}
+      noCapsize={noCapsize}
       {...remainingProps}
     />
   )
