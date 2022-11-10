@@ -83,15 +83,15 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     display: table;
   }
 
+  .c-hMBZYr-fDXBFo-size-xs {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
   .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hMBZYr-fDXBFo-size-xs {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
   }
 
   .c-fIXJvv-bhKTXb-size-xs {
@@ -240,15 +240,15 @@ exports[`Avatar component renders an icon avatar 1`] = `
     display: table;
   }
 
+  .c-hMBZYr-fDXBFo-size-xs {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
   .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hMBZYr-fDXBFo-size-xs {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
   }
 
   .c-fIXJvv-bhKTXb-size-xs {
@@ -446,15 +446,15 @@ exports[`Avatar component renders an inital avatar 1`] = `
     display: table;
   }
 
+  .c-hMBZYr-fDXBFo-size-xs {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
   .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hMBZYr-fDXBFo-size-xs {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
   }
 
   .c-fIXJvv-bhKTXb-size-xs {
@@ -588,15 +588,15 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     display: table;
   }
 
+  .c-hMBZYr-fDXBFo-size-xs {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
   .c-dbrbZt-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hMBZYr-fDXBFo-size-xs {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
   }
 }
 
@@ -694,15 +694,6 @@ exports[`Avatar component renders the initial of the name when the src of the im
   .c-fIXJvv > .c-fIXJvv:after {
     display: none;
   }
-
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
 }
 
 @media  {
@@ -727,28 +718,11 @@ exports[`Avatar component renders the initial of the name when the src of the im
     margin-top: -0.3864em;
     display: table;
   }
-
-  .c-dbrbZt-dMrjnF-size-md {
-    height: var(--sizes-2);
-    width: var(--sizes-2);
-    stroke-width: 1.75;
-  }
 }
 
 @media  {
   .c-fIXJvv-ildsiYK-css {
     color: var(--colors-tonal400);
-  }
-
-  .c-PJLV-ieGSWOZ-css {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-
-  .c-dbrbZt-ijiyhIq-css {
-    height: 100%;
-    width: 100%;
   }
 }
 

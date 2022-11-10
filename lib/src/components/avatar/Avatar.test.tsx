@@ -16,36 +16,6 @@ describe('Avatar component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('has no programmatically detectable a11y issues', async () => {
-    let view = render(
-      <Avatar name="a name">
-        <Avatar.Image alt="somobody's avatar" src="path-to-image" />
-      </Avatar>
-    )
-    expect(await axe(view.container)).toHaveNoViolations()
-
-    view = render(
-      <Avatar name="a name">
-        <Avatar.Initial />
-      </Avatar>
-    )
-    expect(await axe(view.container)).toHaveNoViolations()
-
-    view = render(
-      <Avatar name="a name">
-        <Avatar.Placeholder />
-      </Avatar>
-    )
-    expect(await axe(view.container)).toHaveNoViolations()
-
-    view = render(
-      <Avatar name="a name">
-        <Avatar.Icon is={BatteryMedium} />
-      </Avatar>
-    )
-    expect(await axe(view.container)).toHaveNoViolations()
-  })
-
   it('renders the initial of the name when the src of the image is not available and a name was provided', async () => {
     const { container } = render(
       <Avatar name="Bob">
@@ -118,5 +88,43 @@ describe('Avatar component', () => {
     fireEvent.click(container.firstChild as ChildNode)
 
     expect(onClick).not.toHaveBeenCalled()
+  })
+
+  it('Avatar.Image has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Avatar name="a name">
+        <Avatar.Image alt="somobody's avatar" src="path-to-image" />
+      </Avatar>
+    )
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('Avatar.Initial has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Avatar name="a name">
+        <Avatar.Initial />
+      </Avatar>
+    )
+
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('Avatar.Placeholder has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Avatar name="a name">
+        <Avatar.Placeholder />
+      </Avatar>
+    )
+    expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('Avatar.Icon has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <Avatar name="a name">
+        <Avatar.Icon is={BatteryMedium} />
+      </Avatar>
+    )
+    expect(await axe(container)).toHaveNoViolations()
   })
 })
