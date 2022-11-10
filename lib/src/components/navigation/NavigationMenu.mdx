@@ -34,7 +34,7 @@ category: Navigation
 
 #### Example using React Router
 
-```tsx
+```tsx preview
 const Link = ({ href, ...props }) => {
   const { pathname } = useLocation()
   const isActive = path === href
@@ -49,7 +49,7 @@ const Link = ({ href, ...props }) => {
 
 #### Example using Next JS
 
-```tsx
+```tsx preview
 const Link = ({ href, ...props }) => {
   const router = useRouter()
   const isActive = router.asPath === href
@@ -102,7 +102,7 @@ In the below example the styling of `NavigationMenu.DropdownContent` has been ch
 
 DropdownItem gives a lot of flexibility. It's an easy to compose it for own purposes.
 
-```
+```tsx preview
 <NavigationMenu.DropdownItem href="/" active>
   <Grid
     css={{
@@ -118,4 +118,32 @@ DropdownItem gives a lot of flexibility. It's an easy to compose it for own purp
     </Flex>
   </Grid>
 </NavigationMenu.DropdownItem>
+```
+
+## Customizable Dropdown Trigger
+
+NavigationMenu.Dropdown gives you the way to exchange the default Trigger text with a custom component.
+Be aware that 'title' property is required in any case to satisfy underlying operations.
+
+```tsx preview
+<NavigationMenu.Dropdown title="User" triggerComponent={<Avatar />}>
+  // content
+</NavigationMenu.Dropdown>
+```
+
+If you need, you can also modify the CSS
+
+```tsx preview
+<NavigationMenu.Dropdown
+  css={{
+    border: '1px solid $tonal100',
+    borderRadius: '40px',
+    height: '40px',
+    padding: '0 4px'
+  }}
+  title="User"
+  triggerComponent={<Avatar />}
+>
+  // content
+</NavigationMenu.Dropdown>
 ```

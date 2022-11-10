@@ -1,8 +1,10 @@
+import { Person } from '@atom-learning/icons'
 import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Icon } from '../icon'
 import { Flex } from '../flex'
 import { Text } from '../text'
 import { NavigationMenu } from '.'
@@ -32,6 +34,13 @@ const ExampleNav = () => (
         </NavigationMenu.DropdownItem>
       </NavigationMenu.DropdownContent>
     </NavigationMenu.Dropdown>
+    <NavigationMenu.Dropdown title="User" triggerComponent={<Flex>User</Flex>}>
+      <NavigationMenu.DropdownContent>
+        <NavigationMenu.DropdownItem href="/account">
+          Account
+        </NavigationMenu.DropdownItem>
+      </NavigationMenu.DropdownContent>
+    </NavigationMenu.Dropdown>
   </NavigationMenu>
 )
 
@@ -52,7 +61,7 @@ describe('Nav component', () => {
 
   it('displays the correct number of nav items', async () => {
     render(<ExampleNav />)
-    expect(screen.getAllByRole('listitem').length).toEqual(2)
+    expect(screen.getAllByRole('listitem').length).toEqual(3)
     expect(screen.getByText('Introduction')).toBeInTheDocument()
     expect(screen.getByText('Theme')).toBeInTheDocument()
   })
@@ -80,6 +89,22 @@ describe('Nav component', () => {
     expect(screen.getByRole('link', { name: /icons/i })).toHaveAttribute(
       'href',
       'https://app.atomlearning.co.uk/icons'
+    )
+  })
+
+  it('displays custom trigger component and perform a trigger action to display dropdown items', async () => {
+    render(<ExampleNav />)
+
+    const customTrigger = screen.getByRole('button', { name: /user/i })
+    expect(customTrigger).toBeVisible()
+
+    expect(screen.queryByRole('link', { name: /account/i })).toBeNull()
+
+    userEvent.click(customTrigger)
+
+    expect(screen.getByRole('link', { name: /account/i })).toHaveAttribute(
+      'href',
+      '/account'
     )
   })
 })

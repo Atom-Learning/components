@@ -75,6 +75,10 @@ exports[`Nav component renders 1`] = `
     border-radius: var(--radii-1);
   }
 
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-hJXQkI {
     all: unset;
     display: flex;
@@ -182,14 +186,40 @@ exports[`Nav component renders 1`] = `
         </li>
         <li>
           <button
-            aria-controls="radix-1-content-Theme"
+            aria-controls="radix-2-content-Theme"
             aria-expanded="false"
             class="c-dIYQCX c-gWdZwW"
             data-radix-collection-item=""
             data-state="closed"
-            id="radix-1-trigger-Theme"
+            id="radix-2-trigger-Theme"
           >
             Theme
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iBlUzV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button
+            aria-controls="radix-2-content-User"
+            aria-expanded="false"
+            class="c-dIYQCX c-gWdZwW"
+            data-radix-collection-item=""
+            data-state="closed"
+            id="radix-2-trigger-User"
+          >
+            <div
+              class="c-dhzjXW"
+            >
+              User
+            </div>
             <svg
               aria-hidden="true"
               class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iBlUzV-css"

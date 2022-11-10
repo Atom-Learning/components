@@ -1,7 +1,7 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { useNavigationMenuContext } from './NavigationMenuContext'
 import { NavigationMenuDropdownTrigger } from './NavigationMenuItem'
@@ -16,13 +16,16 @@ const StyledContent = styled(NavigationMenuPrimitive.Content, {
 })
 
 type NavigationMenuDropdownProps = {
-  title: string
   active?: boolean
+  css?: CSS
+  title: string
+  triggerComponent?: React.ReactNode
 } & React.HTMLProps<HTMLButtonElement>
 
 export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   children,
   title,
+  triggerComponent,
   ...props
 }) => {
   const { onNodeUpdate } = useNavigationMenuContext()
@@ -33,7 +36,7 @@ export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
         {...props}
         ref={(node: HTMLButtonElement) => onNodeUpdate(node, title)}
       >
-        {title}
+        {triggerComponent || title}
       </NavigationMenuDropdownTrigger>
       <StyledContent>{children}</StyledContent>
     </NavigationMenuPrimitive.Item>
