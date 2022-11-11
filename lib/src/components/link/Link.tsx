@@ -41,19 +41,15 @@ type LinkProps = Override<
 >
 
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', onClick, href, ...remainingProps }, ref) =>
-    href ? (
-      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
-    ) : (
-      <StyledLink
-        as="button"
-        size={size}
-        noCapsize // Safari cuts off overflowing text in <button /> elements
-        {...remainingProps}
-        ref={ref}
-        onClick={onClick}
-      />
-    )
+  ({ size = 'md', href, ...props }, ref) => (
+    <StyledLink
+      {...(!href && { as: 'button', noCapsize: true })}
+      size={size}
+      href={href}
+      {...props}
+      ref={ref}
+    />
+  )
 ) as React.FC<LinkProps>
 
 Link.displayName = 'Link'
