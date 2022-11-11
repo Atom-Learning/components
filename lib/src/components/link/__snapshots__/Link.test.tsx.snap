@@ -38,10 +38,6 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     content: none;
   }
 
-  .c-cmpvrW {
-    position: relative;
-  }
-
   .c-fIXJvv {
     color: var(--colors-tonal600);
     font-family: var(--fonts-body);
@@ -97,6 +93,11 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     display: table;
   }
 
+  .c-kgcOue-hUrFFO-noCapsize-true::before,
+  .c-kgcOue-hUrFFO-noCapsize-true::after {
+    display: none;
+  }
+
   .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -137,26 +138,18 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md"
+      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
     >
-      <span
-        class="c-cmpvrW"
-      >
-        TEXT LINK
-      </span>
+      TEXT LINK
     </button>
   </p>
   <h2
     class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md"
+      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
     >
-      <span
-        class="c-cmpvrW"
-      >
-        HEADING LINK
-      </span>
+      HEADING LINK
     </button>
   </h2>
 </div>
