@@ -8,7 +8,7 @@ import { Icon } from '../icon'
 import { Text } from '../text'
 
 const activeParentItemStyles = {
-  fontWeight: 'bold',
+  fontWeight: '600',
   color: '$tonal500',
   '&::after': {
     backgroundColor: '$tonal500',
@@ -89,6 +89,19 @@ const StyledLink = styled(NavigationMenuPrimitive.Link, itemStyles, {
   }
 })
 
+const StyledContent = styled(NavigationMenuPrimitive.Content, {
+  p: '$3',
+  bg: 'white',
+  mt: '4px',
+  boxShadow:
+    '0px 3px 6px rgba(51, 51, 51, 0.15), 0px 3px 6px rgba(51, 51, 51, 0.2)',
+  borderRadius: '$1'
+})
+
+const StyledList = styled('ul', {
+  all: 'unset'
+})
+
 export const NavigationMenuDropdownItemTitle = styled(Text, {
   color: '$tonal500',
   fontWeight: '600'
@@ -115,9 +128,16 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
   )
 })
 
-export const NavigationMenuDropdownContent = styled('ul', {
-  all: 'unset'
-})
+NavigationMenuDropdownTrigger.displayName = 'NavigationMenuDropdownTrigger'
+
+export const NavigationMenuDropdownContent = ({ children }) => (
+  <StyledContent>
+    <StyledList>{children}</StyledList>
+  </StyledContent>
+)
+
+NavigationMenuDropdownContent.displayName = 'NavigationMenuDropdownContent'
+
 const ListItem = styled('li', { listStyle: 'none' })
 const DisabledButton = styled('button', { ...itemStyles, ...disabledStyles })
 

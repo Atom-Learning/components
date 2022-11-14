@@ -34,7 +34,7 @@ category: Navigation
 
 #### Example using React Router
 
-```tsx preview
+```tsx
 const Link = ({ href, ...props }) => {
   const { pathname } = useLocation()
   const isActive = path === href
@@ -49,7 +49,7 @@ const Link = ({ href, ...props }) => {
 
 #### Example using Next JS
 
-```tsx preview
+```tsx
 const Link = ({ href, ...props }) => {
   const router = useRouter()
   const isActive = router.asPath === href
@@ -126,24 +126,10 @@ NavigationMenu.Dropdown gives you the way to exchange the default Trigger text w
 Be aware that 'title' property is required in any case to satisfy underlying operations.
 
 ```tsx preview
-<NavigationMenu.Dropdown title="User" triggerComponent={<Avatar />}>
-  // content
-</NavigationMenu.Dropdown>
-```
-
-If you need, you can also modify the CSS
-
-```tsx preview
-<NavigationMenu.Dropdown
-  css={{
-    border: '1px solid $tonal100',
-    borderRadius: '40px',
-    height: '40px',
-    padding: '0 4px'
-  }}
-  title="User"
-  triggerComponent={<Avatar />}
->
-  // content
+<NavigationMenu.Dropdown title="User">
+  <NavigationMenu.DropdownTrigger>
+    <Avatar />
+  </NavigationMenu.DropdownTrigger>
+  <NavigationMenu.DropdownContent>// content</NavigationMenu.DropdownContent>
 </NavigationMenu.Dropdown>
 ```

@@ -34,7 +34,10 @@ const ExampleNav = () => (
         </NavigationMenu.DropdownItem>
       </NavigationMenu.DropdownContent>
     </NavigationMenu.Dropdown>
-    <NavigationMenu.Dropdown title="User" triggerComponent={<Flex>User</Flex>}>
+    <NavigationMenu.Dropdown title="User">
+      <NavigationMenu.DropdownTrigger>
+        <Flex>User</Flex>
+      </NavigationMenu.DropdownTrigger>
       <NavigationMenu.DropdownContent>
         <NavigationMenu.DropdownItem href="/account">
           Account
