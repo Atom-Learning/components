@@ -7,13 +7,13 @@ import { fadeOut } from '~/utilities/style/keyframe-animations'
 
 import { NavigationMenuContext } from './NavigationMenuContext'
 import { NavigationMenuDropdown } from './NavigationMenuDropdown'
+import { NavigationMenuDropdownContent } from './NavigationMenuDropdownContent'
 import {
-  NavigationMenuDropdownContent,
   NavigationMenuDropdownItem,
-  NavigationMenuDropdownItemTitle,
-  NavigationMenuDropdownTrigger,
-  NavigationMenuLink
-} from './NavigationMenuItem'
+  NavigationMenuDropdownItemTitle
+} from './NavigationMenuDropdownItem'
+import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
+import { NavigationMenuLink } from './NavigationMenuLink'
 
 type NavigationMenuSubComponents = {
   Link: typeof NavigationMenuLink

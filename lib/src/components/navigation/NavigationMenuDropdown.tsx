@@ -4,10 +4,8 @@ import React from 'react'
 import { CSS } from '~/stitches'
 
 import { useNavigationMenuContext } from './NavigationMenuContext'
-import {
-  NavigationMenuDropdownContent,
-  NavigationMenuDropdownTrigger
-} from './NavigationMenuItem'
+import { NavigationMenuDropdownContent } from './NavigationMenuDropdownContent'
+import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
 
 type NavigationMenuDropdownProps = {
   active?: boolean
@@ -79,3 +77,5 @@ export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
     </NavigationMenuPrimitive.Item>
   )
 }
+
+NavigationMenuDropdown.displayName = 'NavigationMenuDropdown'

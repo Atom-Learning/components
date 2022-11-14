@@ -2,8 +2,8 @@
 
 exports[`Nav component renders 1`] = `
 @media  {
-  .c-hdHRLY {
-    list-style: none;
+  .c-kafsZL {
+    unset: all;
   }
 
   .c-dIYQCX {
@@ -174,7 +174,7 @@ exports[`Nav component renders 1`] = `
         dir="ltr"
       >
         <li
-          class="c-hdHRLY"
+          class="c-kafsZL"
         >
           <a
             class="c-dIYQCX c-govTNd c-govTNd-icyDJD-elementType-link"
