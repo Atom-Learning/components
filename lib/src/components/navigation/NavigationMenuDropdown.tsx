@@ -1,5 +1,5 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import React, { ComponentProps, PropsWithRef, ReactElement } from 'react'
 
 import { CSS } from '~/stitches'
 
@@ -12,6 +12,9 @@ type NavigationMenuDropdownProps = {
   css?: CSS
   title: string
 } & React.HTMLProps<HTMLButtonElement>
+
+type DropdownTriggerProps = ComponentProps<typeof NavigationMenuDropdownTrigger>
+type DropdownContentProps = ComponentProps<typeof NavigationMenuDropdownContent>
 
 const DefaultDropdown: React.FC<
   NavigationMenuDropdownProps & {
@@ -62,16 +65,24 @@ export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
 
           if (!isTrigger && !isContent) {
             throw new Error(
-              'NavigationMenu.Dropdown children can be only NavigationMenu.Trigger and NavigationMenu.Content'
+              'Only NavigationMenu.Trigger and NavigationMenu.Content can be the passed as a "children" of NavigationMenu.Dropdown'
             )
           }
-
           return isTrigger
-            ? React.cloneElement(child, {
-                ...props,
-                ref: (node: HTMLButtonElement) => onNodeUpdate(node, title)
-              })
-            : React.cloneElement(child)
+            ? React.cloneElement(
+                child as ReactElement<
+                  React.PropsWithChildren<DropdownTriggerProps>
+                >,
+                {
+                  ...props,
+                  ref: (node: HTMLButtonElement) => onNodeUpdate(node, title)
+                } as React.PropsWithRef<DropdownTriggerProps>
+              )
+            : React.cloneElement(
+                child as ReactElement<
+                  React.PropsWithChildren<DropdownContentProps>
+                >
+              )
         })
       )}
     </NavigationMenuPrimitive.Item>
