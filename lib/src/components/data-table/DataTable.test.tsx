@@ -105,7 +105,7 @@ describe('DataTable component', () => {
 })
 
 describe('DataTable.Pagination component', () => {
-  it('Displays the correct page number', () => {
+  it('Displays the correct page number', async () => {
     render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
@@ -120,28 +120,28 @@ describe('DataTable.Pagination component', () => {
 
     const nextPageButton = screen.getByLabelText('Next page')
     userEvent.click(nextPageButton)
-    waitFor(
-      async () => await expect(screen.getByRole('combobox')).toHaveValue('1')
-    )
+    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('1'))
   })
 
-  it('Navigates to the correct page', () => {
+  it('Navigates to the correct page', async () => {
     render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
           <DataTable.Table sortable />
-          <DataTable.Pagination pageSize={10} />
+          <DataTable.Pagination pageSize={5} />
         </DataTable>
       </Wrapper>
     )
 
-    const options = screen.getAllByRole('option')
-    userEvent.click(options[1])
+    userEvent.selectOptions(
+      screen.getByRole('combobox'),
+      screen.getByRole('option', { name: '2' })
+    )
 
-    waitFor(async () => expect(screen.getByRole('combobox')).toHaveValue('1'))
+    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('1'))
   })
 
-  it('Disables previous button on first page and next page button on last page', () => {
+  it('Disables previous button on first page and next page button on last page', async () => {
     render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
@@ -159,12 +159,12 @@ describe('DataTable.Pagination component', () => {
     const nextPageButton = screen.getByRole('button', { name: 'Next page' })
     userEvent.click(nextPageButton)
 
-    waitFor(async () => await expect(nextPageButton).toBeDisabled())
+    await waitFor(() => expect(nextPageButton).toBeDisabled())
   })
 })
 
 describe('DataTable Search component', () => {
-  it('Filters table based on any column', () => {
+  it('Filters table based on any column', async () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.GlobalFilter label="Search" />
@@ -175,15 +175,17 @@ describe('DataTable Search component', () => {
     const search = screen.getByRole('searchbox')
     userEvent.type(search, 'ch')
 
-    waitFor(async () => {
+    await waitFor(() => {
       expect(screen.getByText('chrissy')).toBeVisible()
       expect(screen.getByText('charlie')).toBeVisible()
-      expect(screen.getByText('xena')).not.toBeVisible()
+      expect(screen.queryByText('agatha')).toBe(null)
     })
 
+    userEvent.clear(search)
     userEvent.type(search, 'crossfit')
-    waitFor(async () => {
+    await waitFor(() => {
       expect(screen.getByText('agatha')).toBeVisible()
+      expect(screen.queryByText('chrissy')).toBe(null)
     })
   })
 })
