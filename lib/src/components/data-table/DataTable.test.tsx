@@ -187,3 +187,132 @@ describe('DataTable Search component', () => {
     })
   })
 })
+
+describe('DataTable Remote component', () => {
+  const fetcher = jest.fn().mockResolvedValue({
+    results: data.slice(0, 10),
+    total: data.length
+  })
+
+  afterEach(() => {
+    jest.clearAllMocks()
+  })
+
+  it('renders', async () => {
+    const { container } = render(
+      <Wrapper>
+        <DataTable.Remote columns={columns} fetcher={fetcher}>
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    await screen.findByText('chrissy')
+    expect(container).toMatchSnapshot()
+  })
+
+  it('Calls the fetcher with the first page, passed defaultPageSize, and default sortings', () => {
+    const PAGE_SIZE = 7
+    const SORT_COLUMN = 'name'
+    const SORT_DIRECTION = 'asc'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+          defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    expect(fetcher).toHaveBeenCalledWith(
+      0,
+      PAGE_SIZE,
+      SORT_COLUMN,
+      SORT_DIRECTION
+    )
+  })
+
+  it('The fetcher is called with the correct page when going to a different page', async () => {
+    const PAGE_SIZE = 10
+    const SORT_COLUMN = 'name'
+    const SORT_DIRECTION = 'asc'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+          defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+    await screen.findByText('chrissy')
+
+    const nextPageButton = screen.getByLabelText('Next page')
+    userEvent.click(nextPageButton)
+    expect(fetcher).toHaveBeenLastCalledWith(
+      1,
+      PAGE_SIZE,
+      SORT_COLUMN,
+      SORT_DIRECTION
+    )
+  })
+
+  it('The fetcher is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
+    const PAGE_SIZE = 10
+    const SORT_COLUMN = 'name'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+    await screen.findByText('chrissy')
+
+    const nameHeader = screen.getByText('name')
+
+    userEvent.click(nameHeader)
+
+    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, SORT_COLUMN, 'asc')
+  })
+
+  it('The fetcher is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
+    const PAGE_SIZE = 10
+    const SORT_COLUMN = 'name'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+    await screen.findByText('chrissy')
+
+    const nameHeader = screen.getByText('name')
+
+    userEvent.click(nameHeader)
+    userEvent.click(nameHeader)
+
+    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, SORT_COLUMN, 'desc')
+  })
+})
