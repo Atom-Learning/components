@@ -7,12 +7,13 @@ import { fadeOut } from '~/utilities/style/keyframe-animations'
 
 import { NavigationMenuContext } from './NavigationMenuContext'
 import { NavigationMenuDropdown } from './NavigationMenuDropdown'
+import { NavigationMenuDropdownContent } from './NavigationMenuDropdownContent'
 import {
-  NavigationMenuDropdownContent,
   NavigationMenuDropdownItem,
-  NavigationMenuDropdownItemTitle,
-  NavigationMenuLink
-} from './NavigationMenuItem'
+  NavigationMenuDropdownItemTitle
+} from './NavigationMenuDropdownItem'
+import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
+import { NavigationMenuLink } from './NavigationMenuLink'
 
 type NavigationMenuSubComponents = {
   Link: typeof NavigationMenuLink
@@ -20,6 +21,7 @@ type NavigationMenuSubComponents = {
   DropdownContent: typeof NavigationMenuDropdownContent
   DropdownItem: typeof NavigationMenuDropdownItem
   DropdownItemTitle: typeof NavigationMenuDropdownItemTitle
+  DropdownTrigger: typeof NavigationMenuDropdownTrigger
 }
 
 const delayedFadeIn = keyframes({
@@ -133,5 +135,6 @@ NavigationMenu.Dropdown = NavigationMenuDropdown
 NavigationMenu.DropdownContent = NavigationMenuDropdownContent
 NavigationMenu.DropdownItem = NavigationMenuDropdownItem
 NavigationMenu.DropdownItemTitle = NavigationMenuDropdownItemTitle
+NavigationMenu.DropdownTrigger = NavigationMenuDropdownTrigger
 
 NavigationMenu.displayName = 'NavigationMenu'

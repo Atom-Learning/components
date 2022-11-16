@@ -10,7 +10,8 @@ import { NavigationMenu } from '.'
 const ExampleNav = () => (
   <NavigationMenu>
     <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
-    <NavigationMenu.Dropdown title="Theme">
+    <NavigationMenu.Dropdown id="1">
+      <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
       <NavigationMenu.DropdownContent>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
           <Flex

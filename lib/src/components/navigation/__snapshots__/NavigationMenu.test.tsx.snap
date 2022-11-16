@@ -2,10 +2,6 @@
 
 exports[`Nav component renders 1`] = `
 @media  {
-  .c-hdHRLY {
-    list-style: none;
-  }
-
   .c-dIYQCX {
     all: unset;
     position: relative;
@@ -105,12 +101,12 @@ exports[`Nav component renders 1`] = `
 }
 
 @media  {
-  .c-govTNd-ctVDrw-elementType-link[data-active] {
-    font-weight: bold;
+  .c-govTNd-icyDJD-elementType-link[data-active] {
+    font-weight: 600;
     color: var(--colors-tonal500);
   }
 
-  .c-govTNd-ctVDrw-elementType-link[data-active]::after {
+  .c-govTNd-icyDJD-elementType-link[data-active]::after {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-1);
     bottom: 0;
@@ -170,10 +166,10 @@ exports[`Nav component renders 1`] = `
         dir="ltr"
       >
         <li
-          class="c-hdHRLY"
+          class="PJLV"
         >
           <a
-            class="c-dIYQCX c-govTNd c-govTNd-ctVDrw-elementType-link"
+            class="c-dIYQCX c-govTNd c-govTNd-icyDJD-elementType-link"
             data-radix-collection-item=""
             href="/introduction"
           >
@@ -182,12 +178,12 @@ exports[`Nav component renders 1`] = `
         </li>
         <li>
           <button
-            aria-controls="radix-1-content-Theme"
+            aria-controls="radix-2-content-1"
             aria-expanded="false"
             class="c-dIYQCX c-gWdZwW"
             data-radix-collection-item=""
             data-state="closed"
-            id="radix-1-trigger-Theme"
+            id="radix-2-trigger-1"
           >
             Theme
             <svg
