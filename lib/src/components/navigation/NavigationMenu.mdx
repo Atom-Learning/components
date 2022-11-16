@@ -12,7 +12,8 @@ category: Navigation
   <NavigationMenu.Link href="/overview/introduction">
     Introduction
   </NavigationMenu.Link>
-  <NavigationMenu.Dropdown title="Theme">
+  <NavigationMenu.Dropdown id="1">
+    <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
     <NavigationMenu.DropdownContent>
       <NavigationMenu.DropdownItem href="/theme/colours">
         Colours
@@ -75,7 +76,8 @@ In the below example the styling of `NavigationMenu.DropdownContent` has been ch
   <NavigationMenu.Link href="/overview/introduction">
     Introduction
   </NavigationMenu.Link>
-  <NavigationMenu.Dropdown title="Theme">
+  <NavigationMenu.Dropdown id="1">
+    <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
     <NavigationMenu.DropdownContent
       css={{
         display: 'grid',
@@ -120,15 +122,22 @@ DropdownItem gives a lot of flexibility. It's an easy to compose it for own purp
 </NavigationMenu.DropdownItem>
 ```
 
-## Customizable Dropdown Trigger
+## Dropdown Trigger
 
-NavigationMenu.Dropdown gives you the way to exchange the default Trigger text with a custom component.
-Be aware that 'title' property is required in any case to satisfy underlying operations.
+NavigationMenu.Dropdown gives you the way to pass your own trigger component inside the `NavigationMenu.DropdownTrigger`.
+The children of NavigationMenu.DropdownTrigger can be a plain text or more complex component.
 
 ```tsx
-<NavigationMenu.Dropdown title="User">
+<NavigationMenu.Dropdown id="1">
   <NavigationMenu.DropdownTrigger>
     <Avatar />
+  </NavigationMenu.DropdownTrigger>
+  <NavigationMenu.DropdownContent>// content</NavigationMenu.DropdownContent>
+</NavigationMenu.Dropdown>
+
+<NavigationMenu.Dropdown id="2">
+  <NavigationMenu.DropdownTrigger>
+    Plain text
   </NavigationMenu.DropdownTrigger>
   <NavigationMenu.DropdownContent>// content</NavigationMenu.DropdownContent>
 </NavigationMenu.Dropdown>

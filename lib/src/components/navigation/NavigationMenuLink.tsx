@@ -3,21 +3,21 @@ import React from 'react'
 
 import { CSS, styled } from '~/stitches'
 import {
-  navigationMenuActiveParentItemStyles,
-  navigationMenuDisabledStyles,
-  navigationMenuItemStyles
-} from './NavigationMenu.constants'
+  navigationMenuActiveItemStyles,
+  navigationMenuDisabledItemStyles,
+  navigationMenuBaseItemStyles
+} from './NavigationMenu.styles'
 
 const DisabledButton = styled('button', {
-  ...navigationMenuItemStyles,
-  ...navigationMenuDisabledStyles
+  ...navigationMenuBaseItemStyles,
+  ...navigationMenuDisabledItemStyles
 })
 
-const ListItem = styled('li', { unset: 'all' })
+const ListItem = styled(NavigationMenuPrimitive.Item)
 
 const StyledLink = styled(
   NavigationMenuPrimitive.Link,
-  navigationMenuItemStyles,
+  navigationMenuBaseItemStyles,
   {
     display: 'block',
     textDecoration: 'none',
@@ -27,6 +27,7 @@ const StyledLink = styled(
         dropdownItem: {
           '&[data-active]': {
             background: '$primaryLight',
+            color: '$primary',
             '*': {
               color: '$primary'
             },
@@ -38,7 +39,7 @@ const StyledLink = styled(
           }
         },
         link: {
-          '&[data-active]': { ...navigationMenuActiveParentItemStyles }
+          '&[data-active]': { ...navigationMenuActiveItemStyles }
         }
       }
     }

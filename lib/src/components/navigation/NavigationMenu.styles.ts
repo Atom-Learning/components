@@ -1,28 +1,11 @@
-export const navigationMenuActiveParentItemStyles = {
-  fontWeight: '600',
-  color: '$tonal500',
-  '&::after': {
-    backgroundColor: '$tonal500',
-    borderRadius: '$1',
-    bottom: 0,
-    content: '',
-    display: 'block',
-    height: '2px',
-    left: '50%',
-    position: 'absolute',
-    transform: 'translate(-50%,0)',
-    width: '$2'
-  }
-}
-
-export const navigationMenuDisabledStyles = {
+export const navigationMenuDisabledItemStyles = {
   background: 'none',
   color: '$tonal400',
   opacity: '30%',
   cursor: 'default'
 }
 
-export const navigationMenuItemStyles = {
+export const navigationMenuBaseItemStyles = {
   all: 'unset',
   position: 'relative',
   color: '$tonal400',
@@ -38,6 +21,23 @@ export const navigationMenuItemStyles = {
     boxShadow: 'inset 0 0 0 2px $colors$primary'
   },
   '&:disabled': {
-    ...navigationMenuDisabledStyles
+    ...navigationMenuDisabledItemStyles
+  }
+}
+
+export const navigationMenuActiveItemStyles = {
+  fontWeight: '600',
+  color: '$tonal500',
+  '&::after': {
+    backgroundColor: '$tonal500',
+    borderRadius: '$1',
+    bottom: 0,
+    content: '',
+    display: 'block',
+    height: '2px',
+    left: '50%',
+    position: 'absolute',
+    transform: 'translate(-50%,0)',
+    width: '$2'
   }
 }

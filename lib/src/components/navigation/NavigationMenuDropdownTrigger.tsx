@@ -6,13 +6,13 @@ import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
 import {
-  navigationMenuActiveParentItemStyles,
-  navigationMenuItemStyles
-} from './NavigationMenu.constants'
+  navigationMenuActiveItemStyles,
+  navigationMenuBaseItemStyles
+} from './NavigationMenu.styles'
 
 const StyledTrigger = styled(
   NavigationMenuPrimitive.Trigger,
-  navigationMenuItemStyles,
+  navigationMenuBaseItemStyles,
   {
     display: 'flex',
     alignItems: 'center',
@@ -22,7 +22,7 @@ const StyledTrigger = styled(
     '&[data-state="open"]': {
       background: '$tonal100'
     },
-    variants: { active: { true: { ...navigationMenuActiveParentItemStyles } } }
+    variants: { active: { true: { ...navigationMenuActiveItemStyles } } }
   }
 )
 
