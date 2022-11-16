@@ -123,7 +123,8 @@
     "@atom-learning/icons": "^1.0.0",
     "@atom-learning/theme": "^1.0.0",
     "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-hook-form": "^6.0.0"
   },
   "dependencies": {
     "@atom-learning/theme": "1.1.0",
@@ -156,7 +157,6 @@
     "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
     "pure-react-carousel": "^1.27.6",
-    "react-hook-form": "^6.15.4",
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
