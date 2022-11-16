@@ -1,5 +1,10 @@
 import * as React from 'react'
-import { render, screen, waitFor } from '@testing-library/react'
+import {
+  render,
+  screen,
+  waitFor,
+  waitForElementToBeRemoved
+} from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createColumnHelper } from '@tanstack/react-table'
 import { DataTable } from '.'
@@ -210,7 +215,7 @@ describe('DataTable Remote component', () => {
       </Wrapper>
     )
 
-    await screen.findByText('chrissy')
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
     expect(container).toMatchSnapshot()
   })
 
@@ -257,7 +262,7 @@ describe('DataTable Remote component', () => {
         </DataTable.Remote>
       </Wrapper>
     )
-    await screen.findByText('chrissy')
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
     const nextPageButton = screen.getByLabelText('Next page')
     userEvent.click(nextPageButton)
@@ -284,7 +289,7 @@ describe('DataTable Remote component', () => {
         </DataTable.Remote>
       </Wrapper>
     )
-    await screen.findByText('chrissy')
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
     const nameHeader = screen.getByText('name')
 
@@ -308,13 +313,55 @@ describe('DataTable Remote component', () => {
         </DataTable.Remote>
       </Wrapper>
     )
-    await screen.findByText('chrissy')
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
     const nameHeader = screen.getByText('name')
 
     userEvent.click(nameHeader)
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
     userEvent.click(nameHeader)
 
     expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, SORT_COLUMN, 'desc')
+  })
+
+  it('A loader should appear while fetching the data, and then removed', async () => {
+    const PAGE_SIZE = 10
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+    expect(screen.queryByText('Loading')).toBeVisible()
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
+  })
+
+  it('No pagination controls or sorting controls work while loading', async () => {
+    const PAGE_SIZE = 10
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    userEvent.click(screen.getByLabelText('Next page'))
+    userEvent.click(screen.getByLabelText('Previous page'))
+    userEvent.click(screen.getByText('name'))
+
+    expect(screen.getByRole('combobox')).toBeDisabled()
+    expect(fetcher).toHaveBeenCalledTimes(1)
   })
 })

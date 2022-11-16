@@ -7,6 +7,7 @@ import { Icon } from '../icon'
 import { SortDown, SortUp } from '@atom-learning/icons'
 
 import { useDataTable } from './DataTableContext'
+import { ApiQueryStatus } from './DataTable.types'
 type DataTableHeaderProps = React.ComponentProps<typeof Table.HeaderCell> & {
   header: Header<Record<string, unknown>, unknown>
 }
@@ -31,26 +32,27 @@ export const DataTableHeaderCell: React.FC<DataTableHeaderProps> = ({
   ...props
 }) => {
   const sortDirection = header.column.getIsSorted()
-  const { isSortable: isSortableTable } = useDataTable()
+  const { isSortable: isSortableTable, apiQueryStatus } = useDataTable()
   // false for display columns, e.g. "Actions"
   const isDataColumn = header.column.getCanSort()
-
+  const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
+  const isSortEnabled = isSortableTable && !isLoading
   return (
     <Table.HeaderCell
       onClick={
-        isSortableTable && isDataColumn
+        isSortEnabled && isDataColumn
           ? header.column.getToggleSortingHandler()
           : undefined
       }
       css={{
-        cursor: isSortableTable && isDataColumn ? 'pointer' : 'initial',
+        cursor: isSortEnabled && isDataColumn ? 'pointer' : 'initial',
         ...css
       }}
       {...props}
     >
       <Flex css={{ alignItems: 'center' }}>
         {flexRender(header.column.columnDef.header, header.getContext())}
-        {sortDirection && isSortableTable && (
+        {sortDirection && isSortEnabled && (
           <Flex css={{ position: 'relative', alignItems: 'center' }}>
             <SortIcon direction={sortDirection} />
           </Flex>

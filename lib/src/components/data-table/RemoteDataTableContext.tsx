@@ -7,7 +7,25 @@ import {
 } from '@tanstack/react-table'
 import type { SortingState, PaginationState } from '@tanstack/react-table'
 
-import { DataTableContextType, DataTableContext } from './DataTable.types'
+import {
+  DataTableContextType,
+  DataTableContext,
+  ApiQueryStatus
+} from './DataTable.types'
+import { Box } from '../box'
+
+import { DataTableLoading } from './DataTableLoading'
+import { styled } from '~/stitches'
+
+const DataTableWrapper = styled(Box, {
+  variants: {
+    isLoading: {
+      true: {
+        filter: 'blur(3px)'
+      }
+    }
+  }
+})
 
 type TFetcherResult = {
   total: number
@@ -38,6 +56,9 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
     results: [],
     total: 0
   })
+  const [apiQueryStatus, setApiQueryStatus] = React.useState<ApiQueryStatus>(
+    ApiQueryStatus.NONE
+  )
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -64,14 +85,20 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
 
   React.useEffect(() => {
     const doFetch = async () => {
-      const newData = await fetcher(
-        pageIndex,
-        pageSize,
-        sorting[0]?.id,
-        sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
-      )
+      try {
+        setApiQueryStatus(ApiQueryStatus.PENDING)
+        const newData = await fetcher(
+          pageIndex,
+          pageSize,
+          sorting[0]?.id,
+          sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
+        )
 
-      setData(newData)
+        setData(newData)
+        setApiQueryStatus(ApiQueryStatus.SUCCEDED)
+      } catch (error) {
+        setApiQueryStatus(ApiQueryStatus.FAILED)
+      }
     }
     doFetch()
   }, [fetcher, pageIndex, pageSize, sorting])
@@ -99,15 +126,23 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
       setIsSortable,
       applyPagination,
       getTotalRows,
-      isSortable
+      isSortable,
+      apiQueryStatus
     }),
     [table, applyPagination, getTotalRows, isSortable]
   )
 
+  const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
+
   return (
-    <DataTableContext.Provider value={value}>
-      {children}
-    </DataTableContext.Provider>
+    <Box css={{ position: 'relative' }}>
+      {isLoading && <DataTableLoading />}
+      <DataTableWrapper isLoading={isLoading}>
+        <DataTableContext.Provider value={value}>
+          {children}
+        </DataTableContext.Provider>
+      </DataTableWrapper>
+    </Box>
   )
 }
 
