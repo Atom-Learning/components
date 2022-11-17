@@ -83,25 +83,26 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
 
   const getTotalRows = () => data?.total ?? 0
 
-  React.useEffect(() => {
-    const doFetch = async () => {
-      try {
-        setApiQueryStatus(ApiQueryStatus.PENDING)
-        const newData = await fetcher(
-          pageIndex,
-          pageSize,
-          sorting[0]?.id,
-          sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
-        )
+  const doFetchData = React.useCallback(async () => {
+    try {
+      setApiQueryStatus(ApiQueryStatus.PENDING)
+      const newData = await fetcher(
+        pageIndex,
+        pageSize,
+        sorting[0]?.id,
+        sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
+      )
 
-        setData(newData)
-        setApiQueryStatus(ApiQueryStatus.SUCCEDED)
-      } catch (error) {
-        setApiQueryStatus(ApiQueryStatus.FAILED)
-      }
+      setData(newData)
+      setApiQueryStatus(ApiQueryStatus.SUCCEDED)
+    } catch (error) {
+      setApiQueryStatus(ApiQueryStatus.FAILED)
     }
-    doFetch()
   }, [fetcher, pageIndex, pageSize, sorting])
+
+  React.useEffect(() => {
+    doFetchData()
+  }, [doFetchData])
 
   const table = useReactTable<unknown>({
     columns,
@@ -120,14 +121,15 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
     getFilteredRowModel: getFilteredRowModel()
   })
 
-  const value = React.useMemo(
+  const value: DataTableContextType<unknown> = React.useMemo(
     () => ({
       ...table,
       setIsSortable,
       applyPagination,
       getTotalRows,
       isSortable,
-      apiQueryStatus
+      apiQueryStatus,
+      doFetchData
     }),
     [table, applyPagination, getTotalRows, isSortable]
   )

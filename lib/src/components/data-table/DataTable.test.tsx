@@ -9,6 +9,8 @@ import userEvent from '@testing-library/user-event'
 import { createColumnHelper } from '@tanstack/react-table'
 import { DataTable } from '.'
 import { Tooltip } from '../tooltip'
+import { Text } from '../text'
+import { Button } from '../button'
 
 const columnHelper = createColumnHelper<{
   name: string
@@ -363,5 +365,55 @@ describe('DataTable Remote component', () => {
 
     expect(screen.getByRole('combobox')).toBeDisabled()
     expect(fetcher).toHaveBeenCalledTimes(1)
+  })
+
+  it('Error message component is displayed when it fails to fetch the paginated data', async () => {
+    fetcher.mockRejectedValue(new Error('Something went wrong'))
+    const PAGE_SIZE = 10
+    const error = 'Oops something went wrong'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Error>{() => <Text>{error}</Text>}</DataTable.Error>
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    expect(await screen.findByText(error)).toBeVisible()
+  })
+
+  it('Retrys fetching the pagination data when clicking retry from the error component', async () => {
+    fetcher.mockRejectedValue(new Error('Something went wrong'))
+    const PAGE_SIZE = 10
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Error>
+            {(retry) => (
+              <>
+                <Text>Oops something went wrong</Text>
+                <Button onClick={retry}>Retry fetch</Button>
+              </>
+            )}
+          </DataTable.Error>
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    userEvent.click(await screen.findByText('Retry fetch'))
+    expect(fetcher).toHaveBeenCalledTimes(2)
+    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, undefined, null)
   })
 })

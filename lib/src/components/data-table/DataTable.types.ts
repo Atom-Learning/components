@@ -14,6 +14,8 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   getTotalRows: () => number
   isSortable: boolean
   apiQueryStatus?: ApiQueryStatus
+  doFetchData?: () => Promise<void>
 }
+
 export const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)

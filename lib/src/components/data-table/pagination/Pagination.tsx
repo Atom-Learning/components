@@ -51,6 +51,8 @@ export const Pagination: React.FC<PaginationProps> = ({
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
   const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
 
+  if (apiQueryStatus === ApiQueryStatus.FAILED) return null
+
   return (
     <StyledNav {...props}>
       <Text size="sm">
