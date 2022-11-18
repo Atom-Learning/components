@@ -7,6 +7,7 @@ import { DataTableError } from './DataTableError'
 import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableHead } from './DataTableHead'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
+import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
 import { DataTableTable } from './DataTableTable'
 import { Pagination } from './pagination'
@@ -79,6 +80,16 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    */
   Table: typeof DataTableTable
 
+  /** Default loading implementation for remote data
+   *
+   * Renders a loading component while fetching the paginated data in `DataTable.Remote`.
+   * This component is included inside `DataTable.Remote`
+   *
+   * If you need more customisation, you can compose your own implentation, `apiQueryStatus`
+   * can be retrieved from `useDataTable`
+   */
+  Loading: typeof DataTableLoading
+
   /** Default error implementation for remote data
    *
    * Renders an error component when the api fetch call fails for `DataTable.Remote`.
@@ -109,4 +120,5 @@ DataTable.Remote = RemoteDataTableProvider
 DataTable.Row = DataTableRow
 DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable
+DataTable.Loading = DataTableLoading
 DataTable.Error = DataTableError

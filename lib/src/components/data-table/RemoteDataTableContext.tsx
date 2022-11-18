@@ -15,17 +15,7 @@ import {
 import { Box } from '../box'
 
 import { DataTableLoading } from './DataTableLoading'
-import { styled } from '~/stitches'
-
-const DataTableWrapper = styled(Box, {
-  variants: {
-    isLoading: {
-      true: {
-        filter: 'blur(3px)'
-      }
-    }
-  }
-})
+import { CSS } from '~/stitches'
 
 type TFetcherResult = {
   total: number
@@ -37,6 +27,7 @@ type TTableProviderProps = {
   defaultPageSize?: number
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
+  css?: CSS
   fetcher: (
     pageIndex: number,
     pageSize: number,
@@ -50,7 +41,8 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
   fetcher,
   defaultSort,
   defaultPageSize = 10,
-  children
+  children,
+  css
 }): JSX.Element => {
   const [data, setData] = React.useState<TFetcherResult>({
     results: [],
@@ -134,16 +126,12 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
     [table, applyPagination, getTotalRows, isSortable]
   )
 
-  const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
-
   return (
-    <Box css={{ position: 'relative' }}>
-      {isLoading && <DataTableLoading />}
-      <DataTableWrapper isLoading={isLoading}>
-        <DataTableContext.Provider value={value}>
-          {children}
-        </DataTableContext.Provider>
-      </DataTableWrapper>
+    <Box css={{ position: 'relative', ...css }}>
+      <DataTableContext.Provider value={value}>
+        <DataTableLoading />
+        {children}
+      </DataTableContext.Provider>
     </Box>
   )
 }

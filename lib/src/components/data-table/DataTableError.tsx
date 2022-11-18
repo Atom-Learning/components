@@ -1,5 +1,6 @@
-import { CSS } from '@stitches/react'
 import * as React from 'react'
+
+import { CSS } from '~/stitches'
 
 import { Flex } from '../flex'
 import { ApiQueryStatus } from './DataTable.types'

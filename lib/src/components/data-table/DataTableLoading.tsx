@@ -1,16 +1,30 @@
 import * as React from 'react'
 
-import { Loader } from '../loader'
+import { CSS } from '~/stitches'
 
-export const DataTableLoading: React.FC = () => (
-  <Loader
-    css={{
-      position: 'absolute',
-      marginBottom: '$4',
-      left: '50%',
-      transform: 'translate(-50%, 0)',
-      bottom: '$9',
-      zIndex: 1
-    }}
-  />
-)
+import { Loader } from '../loader'
+import { ApiQueryStatus } from './DataTable.types'
+import { useDataTable } from './RemoteDataTableContext'
+
+interface IDataTableLoadingProps {
+  css?: CSS
+}
+
+export const DataTableLoading: React.FC<IDataTableLoadingProps> = ({ css }) => {
+  const { apiQueryStatus } = useDataTable()
+  if (apiQueryStatus !== ApiQueryStatus.PENDING) return null
+
+  return (
+    <Loader
+      css={{
+        position: 'absolute',
+        marginBottom: '$4',
+        left: '50%',
+        transform: 'translate(-50%, 0)',
+        bottom: '$9',
+        zIndex: 1,
+        ...css
+      }}
+    />
+  )
+}
