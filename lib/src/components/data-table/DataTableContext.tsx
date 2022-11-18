@@ -23,15 +23,18 @@ type TableProviderProps = {
   data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
+  pagination?: { pageIndex: 0; pageSize: number }
 }
 
 export const DataTableProvider = ({
   columns,
   data,
   defaultSort,
-  children
+  children,
+  pagination = undefined
 }: TableProviderProps): JSX.Element => {
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
+  const [isPaginated, setIsPaginated] = React.useState<boolean>(!!pagination)
+
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
     defaultSort
@@ -57,6 +60,11 @@ export const DataTableProvider = ({
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
+    initialState: {
+      pagination: pagination
+        ? { pageSize: pagination.pageSize, pageIndex: pagination.pageIndex }
+        : undefined
+    },
     state: {
       sorting
     },
