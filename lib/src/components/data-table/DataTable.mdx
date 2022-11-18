@@ -11,7 +11,7 @@ category: Content
 
 ## Anatomy
 
-`DataTable` has two different roots namely; `DataTable` and `DataTable.Remote`. Both components manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+`DataTable` has two different roots namely; `DataTable` and `DataTable.Remote`. Both components manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`. You can pass an `initialState` prop to `DataTable` as described in the [`@tanstack/react-table` docs](https://tanstack.com/table/v8/docs/api/core/table#initialstate).
 `DataTable.Remote` is used when you want achieve server-side pagination and sorting.
 
 Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
@@ -200,4 +200,4 @@ If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be c
 
 ### Pagination
 
-`DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.
+`DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data. Note: there is currently a bug where `DataTable` will render all rows on the initial render, even when paginated. There is no visible effect, but it can cause performance issues on large tables. The workaround for this is to pass an `initialState` prop to `DataTable`. E.g. `initialState={pagination: {pageSize: 5, pageIndex: 0}}`. This will force pagination to apply properly on the initial render. Make sure the `pagination` prop matches the config you use in `DataTable.Pagination`, as the latter will take precedence after the initial render.

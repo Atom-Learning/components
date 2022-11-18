@@ -6,26 +6,57 @@ import {
   getSortedRowModel,
   getFilteredRowModel
 } from '@tanstack/react-table'
-import type { SortingState, Table } from '@tanstack/react-table'
+import type {
+  VisibilityTableState,
+  ColumnOrderTableState,
+  ColumnPinningTableState,
+  FiltersTableState,
+  SortingTableState,
+  ExpandedTableState,
+  GroupingTableState,
+  ColumnSizingTableState,
+  PaginationTableState,
+  RowSelectionTableState,
+  SortingState,
+  Table
+} from '@tanstack/react-table'
 
 import { DataTableContextType, DataTableContext } from './DataTable.types'
+
+type InitialState = Partial<
+  VisibilityTableState &
+    ColumnOrderTableState &
+    ColumnPinningTableState &
+    FiltersTableState &
+    SortingTableState &
+    ExpandedTableState &
+    GroupingTableState &
+    ColumnSizingTableState &
+    PaginationTableState &
+    RowSelectionTableState
+>
 
 type TableProviderProps = {
   columns
   data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
+  initialState?: InitialState
 }
 
 export const DataTableProvider = ({
   columns,
   data: dataProp,
   defaultSort,
+  initialState = undefined,
   children
 }: TableProviderProps): JSX.Element => {
   const [data, setData] =
     React.useState<Array<Record<string, unknown>>>(dataProp)
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
+  const [isPaginated, setIsPaginated] = React.useState<boolean>(
+    !!initialState?.pagination
+  )
+
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
     defaultSort
@@ -51,6 +82,7 @@ export const DataTableProvider = ({
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
+    initialState: initialState,
     state: {
       sorting
     },
