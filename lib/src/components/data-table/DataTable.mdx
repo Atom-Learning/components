@@ -1,6 +1,6 @@
 ---
 title: DataTable
-component: DataTable, DataTable.Table, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter
+component: DataTable, DataTable.Remote, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter, DataTable.Remote, DataTable.Loading, DataTable.Error
 description: Displays tabular data with features such as sorting and pagination
 category: Content
 ---
@@ -11,7 +11,8 @@ category: Content
 
 ## Anatomy
 
-The root `DataTable` component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+`DataTable` has two different roots namely; `DataTable` and `DataTable.Remote`. Both components manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`.
+`DataTable.Remote` is used when you want achieve server-side pagination and sorting.
 
 Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
 
@@ -131,6 +132,52 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
     )
   }}
 </DataTable>
+```
+
+### Server-side pagination and sorting
+
+`DataTable.Remote` accepts a `fetcher` function that is used to fetch the paginated data. The `fetcher` function provides you with the necessary parameters to query your api endpoint; `pageIndex`, `pageSize`, `sortBy` and `sortDirection`. The response from the `fetcher` function must match the following schema:
+
+```ts
+{
+  results: Array<Record<string, unknown>> // your paginated data
+  total: number // the total number of elements in your data
+}
+```
+
+A loading state using `<DataTable.Loading>` is automatically included in `DataTable.Remote` which is visible while the `fetcher` promise is pending. You can use `DataTable.Error` to display your own error component when the `fetcher` function promise rejects. It provides a `retry` function, allowing the children of the component to recall `fetcher` with the current pagination and sorting parameters.
+
+```tsx
+<DataTable.Remote
+  columns={columns}
+  defaultPageSize={10}
+  defaultSort={{ column: 'name', direction: 'asc' }}
+  fetcher={async (pageIndex, pageSize, sortBy, sortDirection) => {
+    const nextPage = pageIndex + 1
+    const data = await fetch(
+      `https://your-api?page=${nextPage}&pageSize=${pageSize}&order=${sortBy}&dir=${sortDirection}`
+    )
+    const results = await data.json()
+
+    return {
+      results,
+      total: results.total
+    }
+  }}
+>
+  <DataTable.Table sortable css={{ mb: '$4', minWidth: '500px' }} />
+  <DataTable.Error>
+    {(retry) => {
+      return (
+        <>
+          <InlineMessage>Error occured</InlineMessage>
+          <Button onClick={retry}>Retry</Button>
+        </>
+      )
+    }}
+  </DataTable.Error>
+  <DataTable.Pagination />
+</DataTable.Remote>
 ```
 
 ## Features
