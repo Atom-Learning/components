@@ -6,7 +6,20 @@ import {
   getSortedRowModel,
   getFilteredRowModel
 } from '@tanstack/react-table'
-import type { SortingState, Table } from '@tanstack/react-table'
+import type {
+  VisibilityTableState,
+  ColumnOrderTableState,
+  ColumnPinningTableState,
+  FiltersTableState,
+  SortingTableState,
+  ExpandedTableState,
+  GroupingTableState,
+  ColumnSizingTableState,
+  PaginationTableState,
+  RowSelectionTableState,
+  SortingState,
+  Table
+} from '@tanstack/react-table'
 
 type DataTableContextType<T = unknown> = Table<T> & {
   setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
@@ -18,22 +31,37 @@ type DataTableContextType<T = unknown> = Table<T> & {
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
+type InitialState = Partial<
+  VisibilityTableState &
+    ColumnOrderTableState &
+    ColumnPinningTableState &
+    FiltersTableState &
+    SortingTableState &
+    ExpandedTableState &
+    GroupingTableState &
+    ColumnSizingTableState &
+    PaginationTableState &
+    RowSelectionTableState
+>
+
 type TableProviderProps = {
   columns
   data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
-  pagination?: { pageIndex: number; pageSize: number }
+  initialState?: InitialState
 }
 
 export const DataTableProvider = ({
   columns,
   data,
   defaultSort,
-  children,
-  pagination = undefined
+  initialState = undefined,
+  children
 }: TableProviderProps): JSX.Element => {
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(!!pagination)
+  const [isPaginated, setIsPaginated] = React.useState<boolean>(
+    !!initialState?.pagination
+  )
 
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -60,11 +88,7 @@ export const DataTableProvider = ({
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
-    initialState: {
-      pagination: pagination
-        ? { pageSize: pagination.pageSize, pageIndex: pagination.pageIndex }
-        : undefined
-    },
+    initialState: initialState,
     state: {
       sorting
     },
