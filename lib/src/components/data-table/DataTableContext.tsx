@@ -27,7 +27,6 @@ export const DataTableProvider = ({
     React.useState<Array<Record<string, unknown>>>(dataProp)
   const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
-  const [isDragAndDrop, setIsDragAndDrop] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
     defaultSort
       ? [
@@ -43,27 +42,7 @@ export const DataTableProvider = ({
     setIsPaginated(true)
   }, [])
 
-  const applyDragAndDrop = React.useCallback(() => {
-    setIsDragAndDrop(true)
-  }, [])
-
   const getTotalRows = () => data.length
-
-  const moveRow = (oldIndex: number, newIndex: number) => {
-    const maxIndex = data.length - 1
-    const minIndex = 0
-    if ([oldIndex, newIndex].some((i) => i > maxIndex || i < minIndex)) {
-      throw new Error(`You can't move a row to an index that doesn't exist`)
-    }
-
-    const dataCopy = JSON.parse(JSON.stringify(data))
-    const row = dataCopy[oldIndex]
-
-    dataCopy.splice(oldIndex, 1)
-    dataCopy.splice(newIndex, 0, row)
-
-    setData(dataCopy)
-  }
 
   const table = useReactTable<unknown>({
     columns,
@@ -85,11 +64,8 @@ export const DataTableProvider = ({
       ...table,
       setIsSortable,
       applyPagination,
-      applyDragAndDrop,
       getTotalRows,
-      isSortable,
-      isDragAndDrop,
-      moveRow
+      isSortable
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 
