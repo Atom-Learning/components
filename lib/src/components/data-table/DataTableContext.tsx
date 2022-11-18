@@ -23,7 +23,7 @@ type TableProviderProps = {
   data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
-  pagination?: { pageIndex: 0; pageSize: number }
+  pagination?: { pageIndex: number; pageSize: number }
 }
 
 export const DataTableProvider = ({
