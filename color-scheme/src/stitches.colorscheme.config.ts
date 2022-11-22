@@ -85,7 +85,7 @@ const generateBase = () => {
   Object.entries(bases).forEach(([themeName, colorName]) => {
     const baseThemeName = `base-${themeName}`
     colorSchemes[baseThemeName] = createTheme(baseThemeName, {
-      colors: generateColors('tonal', colorName)
+      colors: generateColors('base', colorName)
     })
   })
 }
