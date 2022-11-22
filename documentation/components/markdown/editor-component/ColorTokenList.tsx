@@ -17,12 +17,12 @@ const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
         <Text css={{ fontWeight: 600, mb: '$3' }}>{`$${token}`}</Text>
         <Text
           size="sm"
-          css={{ color: '$tonal6', mb: !hasAlpha ? '$3' : 0 }}
+          css={{ color: '$base6', mb: !hasAlpha ? '$3' : 0 }}
         >
           {value}
         </Text>
         {!hasAlpha && (
-          <Text size="sm" css={{ color: '$tonal6' }}>
+          <Text size="sm" css={{ color: '$base6' }}>
             {hsl(color)}
           </Text>
         )}

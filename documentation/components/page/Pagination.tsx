@@ -33,7 +33,7 @@ const PaginationItem = ({
     page
 }: TPaginationItem) => (
     <Box css={{ textAlign: align, [align === 'left' ? 'mr' : 'ml']: 'auto' }}>
-        <Text css={{ color: '$tonal7' }} size="sm">
+        <Text css={{ color: '$base7' }} size="sm">
             {label}
         </Text>
         <NextLink passHref href={`${page.href}`}>

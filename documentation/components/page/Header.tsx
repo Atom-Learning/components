@@ -4,7 +4,7 @@ import { Container } from '~/components/page'
 
 export const Header = ({ children }) => {
     return (
-        <Box as="header" css={{ background: '$tonal1' }}>
+        <Box as="header" css={{ background: '$base1' }}>
             <Container css={{ py: '$9', position: 'relative' }}>
                 {children}
             </Container>

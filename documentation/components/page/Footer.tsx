@@ -4,7 +4,7 @@ import { Container } from '~/components/page'
 
 export const Footer = ({ children }) => {
     return (
-        <Box as="footer" css={{ mt: 'auto', mb: '0', background: '$tonal1' }}>
+        <Box as="footer" css={{ mt: 'auto', mb: '0', background: '$base1' }}>
             <Container css={{ py: '$6' }}>
                 {children}
             </Container>

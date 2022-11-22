@@ -122,14 +122,15 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-right: var(--space-2);
   }
 
-  .c-dyvMgW {
+  .c-fIXJvv {
+    color: var(--colors-tonal600);
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-fIXJvv > .c-fIXJvv:before,
+  .c-fIXJvv > .c-fIXJvv:after {
     display: none;
   }
 }
@@ -191,18 +192,18 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-width: 1.5;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-fIXJvv-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-fIXJvv-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-fIXJvv-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -253,7 +254,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-top: var(--space-2);
   }
 
-  .c-dyvMgW-igszWir-css {
+  .c-fIXJvv-igszWir-css {
     color: inherit;
     transform: translateY(var(--space-0));
   }
@@ -417,7 +418,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           />
         </svg>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igszWir-css"
+          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
         >
           Cannot enter values less than 7
         </span>
