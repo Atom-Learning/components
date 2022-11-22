@@ -5,7 +5,7 @@
 The problem that this component was introduced to solve is the difficult way we have approached theming so far in our components.
 In the past we have heavily relied on props drilling and passing down theme related stitches variants to children, which means _(1)_ the colours can easily break when the expected children are nested further than directly under the 'theme providing' parent (The component which has a `theme` prop and tries to prop-drill theme). Moreover, _(2)_ we have inconsistent naming for our themes and _(3)_ inconsistent implementations on active components since _(4)_ the theming need to be documented and coded separately for each new component.
 
-This package introduces a solution via the `<ColorScheme />` component which allows for properties to pass a `base` (`var(--tonalX)`) and `accent` (`var(--accentX)`) theme property, as well as an `interactive` contrast mode to affect all interactable components.
+This package introduces a solution via the `<ColorScheme />` component which allows for properties to pass a `base` (`var(--baseX)`) and `accent` (`var(--accentX)`) theme property, as well as an `interactive` contrast mode to affect all interactable components.
 
 The props are:
 
