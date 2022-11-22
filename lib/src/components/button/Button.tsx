@@ -9,51 +9,8 @@ import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 
-const getButtonOutlineVariant = (
-  base: string,
-  interact: string,
-  active: string
-) => ({
-  border: '1px solid',
-  borderColor: 'currentColor',
-  color: base,
-  '&[disabled]': {
-    borderColor: '$tonal400',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    textDecoration: 'none',
-    color: interact
-  },
-  '&:not([disabled]):active': {
-    color: active
-  }
-})
-
-const getButtonSolidVariant = (
-  base: string,
-  interact: string,
-  active: string,
-  text = 'white'
-) => ({
-  bg: base,
-  color: text,
-  '&[disabled]': {
-    bg: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    bg: interact,
-    color: text
-  },
-  '&:not([disabled]):active': {
-    bg: active
-  }
-})
-
 export const StyledButton = styled('button', {
+  all: 'unset',
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
@@ -68,18 +25,50 @@ export const StyledButton = styled('button', {
   transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
+  '&[disabled]': {
+    opacity: 0.3,
+    cursor: 'not-allowed'
+  },
   variants: {
-    theme: {
-      primary: {},
-      secondary: {},
-      success: {},
-      warning: {},
-      danger: {},
-      neutral: {}
-    },
     appearance: {
-      solid: {},
-      outline: {}
+      solid: {
+        bg: '$interactive1',
+        color: '$interactiveForeground',
+        '&:not([disabled])':
+        {
+          '&:hover, &:focus': {
+            bg: '$interactive2',
+          },
+          '&:active': {
+            bg: '$interactive3'
+          }
+        }
+      },
+      outline: {
+        border: '1px solid',
+        color: '$interactive1',
+        '&:not([disabled])':
+        {
+          '&:hover, &:focus': {
+            color: '$interactive2',
+          },
+          '&:active': {
+            color: '$interactive3'
+          }
+        }
+      },
+      simple: {
+        color: '$interactive1',
+        '&:not([disabled])':
+        {
+          '&:hover, &:focus': {
+            color: '$interactive2',
+          },
+          '&:active': {
+            color: '$interactive3'
+          }
+        }
+      }
     },
     size: {
       sm: {
@@ -121,77 +110,7 @@ export const StyledButton = styled('button', {
         borderRadius: '$round'
       }
     }
-  },
-
-  compoundVariants: [
-    {
-      theme: 'primary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$warning',
-        '$warningMid',
-        '$warningDark',
-        '$tonal500'
-      )
-    },
-    {
-      theme: 'danger',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$danger', '$dangerMid', '$dangerDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        'white',
-        opacify('white', -0.1),
-        opacify('white', -0.25),
-        '$primary'
-      )
-    },
-    {
-      theme: 'primary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        'white',
-        opacify('white', -0.2),
-        opacify('white', -0.35)
-      )
-    },
-    {
-      theme: 'secondary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    }
-  ]
+  }
 })
 
 const WithLoader = ({ isLoading, children }) => (
@@ -256,7 +175,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       href,
       appearance = 'solid',
       size = 'md',
-      theme = 'primary',
       type = 'button',
       ...rest
     },
@@ -264,10 +182,10 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const linkSpecificProps = href
       ? {
-          as: 'a',
-          href,
-          onClick: undefined
-        }
+        as: 'a',
+        href,
+        onClick: undefined
+      }
       : {}
 
     const buttonSpecificProps = href ? {} : { type }
@@ -280,7 +198,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         onClick={!isLoading ? onClick : undefined}
         appearance={appearance}
         size={size}
-        theme={theme}
         {...rest}
         {...linkSpecificProps}
         {...buttonSpecificProps}

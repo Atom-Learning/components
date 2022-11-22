@@ -1,5 +1,7 @@
 import { createStitches } from '@stitches/react'
 import { blue, blueA } from './blue'
+import { danger, dangerA } from './danger'
+import { warning, warningA } from './warning'
 import { slate, slateA } from './slate'
 
 export const colorSchemes = {}
@@ -25,7 +27,11 @@ export const { styled, createTheme } = createStitches({
       ...blue,
       ...blueA,
       ...slate,
-      ...slateA
+      ...slateA,
+      ...danger,
+      ...dangerA,
+      ...warning,
+      ...warningA
     }
   }
 })
@@ -92,7 +98,9 @@ const generateBase = () => {
 
 export const accents = {
   slate: 'slate',
-  blue: 'blue'
+  blue: 'blue',
+  danger: 'danger',
+  warning: 'warning'
 }
 const generateAccent = () => {
   Object.entries(accents).forEach(([themeName, colorName]) => {
