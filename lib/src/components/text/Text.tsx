@@ -4,8 +4,6 @@ import { CSS, styled } from '~/stitches'
 import type { Override } from '~/utilities'
 import { capsize } from '~/utilities'
 
-const defaultSize = 'md'
-
 export const textVariants = {
   size: {
     xs: { fontSize: '$xs', lineHeight: 1.6, ...capsize(0.4364) },
@@ -30,7 +28,6 @@ export const getTextVariant: (options: {
 })
 
 export const StyledText = styled('p', {
-  color: '$tonal600',
   fontFamily: '$body',
   fontWeight: 400,
   margin: 0,
@@ -60,7 +57,7 @@ type TextProps = Override<
 >
 
 export const Text: React.ForwardRefExoticComponent<TextProps> =
-  React.forwardRef(({ size = defaultSize, ...remainingProps }, ref) => (
+  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
     <StyledText size={size} {...remainingProps} ref={ref} />
   ))
 

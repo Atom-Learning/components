@@ -45,15 +45,14 @@ exports[`TopBar component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -101,18 +100,18 @@ exports[`TopBar component renders 1`] = `
     width: auto;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -176,7 +175,7 @@ exports[`TopBar component renders 1`] = `
         href="atomlearning.co.uk"
       >
         <p
-          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ldsiYK"
         >
           Admin Panel
         </p>
@@ -276,15 +275,14 @@ exports[`TopBar component renders the lg variant 1`] = `
     text-decoration: none;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -332,18 +330,18 @@ exports[`TopBar component renders the lg variant 1`] = `
     width: auto;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -416,7 +414,7 @@ exports[`TopBar component renders the lg variant 1`] = `
         href="atomlearning.co.uk"
       >
         <p
-          class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-ldsiYK"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ldsiYK"
         >
           Admin Panel
         </p>

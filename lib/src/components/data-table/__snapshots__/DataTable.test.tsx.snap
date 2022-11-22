@@ -110,15 +110,14 @@ exports[`DataTable component renders 1`] = `
     align-items: center;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -295,18 +294,18 @@ exports[`DataTable component renders 1`] = `
     background: white;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -393,7 +392,7 @@ exports[`DataTable component renders 1`] = `
     margin-right: var(--space-3);
   }
 
-  .c-fIXJvv-igbZjeK-css {
+  .c-dyvMgW-igbZjeK-css {
     flex: none;
   }
 
@@ -594,7 +593,7 @@ exports[`DataTable component renders 1`] = `
     class="c-ciKXky"
   >
     <p
-      class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
     >
       1 - 5 of 18 items
     </p>
@@ -626,7 +625,7 @@ exports[`DataTable component renders 1`] = `
         </option>
       </select>
       <p
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
       >
         of 4 pages
       </p>
