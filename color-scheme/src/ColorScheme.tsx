@@ -12,6 +12,9 @@ const StyledColorScheme = styled('div')
 
 type TColorSchemeProps = React.ComponentProps<typeof StyledColorScheme> & TColorSchemeOwnProps
 
+/**
+ * @experimental Component has not been finalised. Further design input required. Use with caution.
+ */
 export const ColorScheme = React.forwardRef<HTMLDivElement, TColorSchemeProps>(({ base = '', accent = '', interactive = '', className, ...rest }, ref) => {
     const c = [
         className,
