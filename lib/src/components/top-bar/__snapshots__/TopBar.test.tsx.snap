@@ -85,9 +85,9 @@ exports[`TopBar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 }
 
@@ -129,7 +129,7 @@ exports[`TopBar component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jpqjUq-fKZlxR-orientation-vertical {
+  .c-fNKiiB-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -158,7 +158,7 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-ieFaPrQ-css {
+  .c-fNKiiB-ieFaPrQ-css {
     height: var(--sizes-2);
     background: var(--colors-tonal100);
   }
@@ -203,7 +203,7 @@ exports[`TopBar component renders 1`] = `
         </svg>
       </button>
       <hr
-        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ieFaPrQ-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ieFaPrQ-css"
       />
       <button
         aria-label="Light/Dark mode"
@@ -316,9 +316,9 @@ exports[`TopBar component renders the lg variant 1`] = `
     vertical-align: middle;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 }
 
@@ -360,7 +360,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jpqjUq-fKZlxR-orientation-vertical {
+  .c-fNKiiB-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -398,7 +398,7 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-ieFaPrQ-css {
+  .c-fNKiiB-ieFaPrQ-css {
     height: var(--sizes-2);
     background: var(--colors-tonal100);
   }
@@ -443,7 +443,7 @@ exports[`TopBar component renders the lg variant 1`] = `
         </svg>
       </button>
       <hr
-        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ieFaPrQ-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ieFaPrQ-css"
       />
       <button
         aria-label="Light/Dark mode"
