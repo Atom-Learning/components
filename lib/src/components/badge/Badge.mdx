@@ -7,7 +7,7 @@ category: Feedback
 
 The `Badge` component can be used to highlight a short piece of information, like a status.
 
-```jsx preview
+```tsx preview
 <Badge>New Data</Badge>
 ```
 
@@ -15,7 +15,7 @@ The `Badge` component can be used to highlight a short piece of information, lik
 
 These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral` and `info`. The default is `info`
 
-```jsx preview
+```tsx preview
 <>
   <Badge>Info</Badge>
   <Badge theme="neutral">Neutral</Badge>
@@ -29,10 +29,27 @@ These are the available `theme`s for this component: `success`, `warning`, `dang
 
 These are the available `size`s for this component: `xs`, `sm` and `md`. The default is `sm`
 
-```jsx preview
+```tsx preview
 <>
   <Badge size="xs">extra small</Badge>
   <Badge size="sm">small</Badge>
   <Badge size="md">medium</Badge>
+</>
+```
+
+## With icons
+
+An `<Icon />` can be passed as a child to show alongside text.
+
+```tsx preview
+<>
+  <Badge>
+    <Icon is={Wifi} />
+    Info with icon
+  </Badge>
+  <Badge theme="neutral">
+    Info with icon
+    <Icon is={Wifi} />
+  </Badge>
 </>
 ```
