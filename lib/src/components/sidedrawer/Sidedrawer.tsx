@@ -4,9 +4,11 @@ import { MAX_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
 
 import { Box } from '../box/Box'
+import { SidedrawerAccordion } from './SidedrawerAccordion/SidedrawerAccordtion'
 import { SidedrawerContent } from './SidedrawerContent'
 import { SidedrawerFooter } from './SidedrawerFooter'
 import { SidedrawerHeader } from './SidedrawerHeader'
+import { SidedrawerItem } from './SidedrawerItem'
 import { SidedrawerOverlay } from './SidedrawerOverlay'
 
 interface SidedrawerProps {
@@ -14,9 +16,11 @@ interface SidedrawerProps {
 }
 
 type SidedrawerSubComponents = {
-  Header: typeof SidedrawerHeader
+  Accordion: typeof SidedrawerAccordion
   Content: typeof SidedrawerContent
   Footer: typeof SidedrawerFooter
+  Header: typeof SidedrawerHeader
+  Item: typeof SidedrawerItem
   Overlay: typeof SidedrawerOverlay
 }
 
@@ -62,7 +66,9 @@ export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
   )
 }
 
-Sidedrawer.Header = SidedrawerHeader
+Sidedrawer.Accordion = SidedrawerAccordion
 Sidedrawer.Content = SidedrawerContent
 Sidedrawer.Footer = SidedrawerFooter
+Sidedrawer.Header = SidedrawerHeader
+Sidedrawer.Item = SidedrawerItem
 Sidedrawer.Overlay = SidedrawerOverlay
