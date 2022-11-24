@@ -4,26 +4,31 @@ import { styled } from '~/stitches'
 
 import { Box } from '../box'
 import { Flex } from '../flex'
+import { Icon } from '../icon'
 
 const StyledBadge = styled(Flex, {
   justifyContent: 'center',
   alignItems: 'center',
   borderRadius: '$0',
+  minWidth: 0,
   border: '1px solid #FFFFFF',
   fontFamily: '$body',
+  '& > *:not(:last-child)': {
+    mr: '$1'
+  },
   variants: {
     theme: {
       success: {
         bg: '$successLight',
-        color: '$successDark'
+        color: '$successMid'
       },
       warning: {
         bg: '$warningLight',
-        color: '$tonal600'
+        color: '$warningText'
       },
       danger: {
         bg: '$dangerLight',
-        color: '$dangerDark'
+        color: '$dangerMid'
       },
       neutral: {
         bg: '$tonal50',
@@ -37,17 +42,17 @@ const StyledBadge = styled(Flex, {
     size: {
       xs: {
         fontSize: '$sm',
-        px: '$3',
+        px: '$1',
         height: '$2'
       },
       sm: {
         fontSize: '$md',
-        px: '$4',
+        px: '$1',
         height: '$3'
       },
       md: {
         fontSize: '$md',
-        px: '$4',
+        px: '$2',
         height: '$4'
       }
     }
@@ -64,17 +69,32 @@ export const Badge: React.FC<BadgeProps> = ({
 }) => {
   return (
     <StyledBadge role="status" theme={theme} size={size} {...rest}>
-      <Box
-        as="div"
-        css={{
-          whiteSpace: 'nowrap',
-          overflowX: 'hidden',
-          textOverflow: 'ellipsis',
-          py: '$0'
-        }}
-      >
-        {children}
-      </Box>
+      {React.Children.map(children, (child) => {
+        if (typeof child === 'string') {
+          return (
+            <Box
+              css={{
+                whiteSpace: 'nowrap',
+                overflowX: 'hidden',
+                textOverflow: 'ellipsis',
+                py: '$0'
+              }}
+            >
+              {child}
+            </Box>
+          )
+        }
+
+        if (React.isValidElement(child) && child.type === Icon) {
+          return React.cloneElement(
+            child as React.ReactElement<React.ComponentProps<typeof Icon>>,
+            {
+              size: 'sm',
+              css: { ...child.props.css, flexShrink: 0 }
+            }
+          )
+        }
+      })}
     </StyledBadge>
   )
 }

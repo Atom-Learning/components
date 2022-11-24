@@ -3,15 +3,27 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Flex } from '../flex'
+import { Text } from '../text'
 import { NavigationMenu } from '.'
 
 const ExampleNav = () => (
   <NavigationMenu>
     <NavigationMenu.Link href="/introduction">Introduction</NavigationMenu.Link>
-    <NavigationMenu.Dropdown title="Theme">
+    <NavigationMenu.Dropdown id="1">
+      <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
       <NavigationMenu.DropdownContent>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
-          Colours
+          <Flex
+            css={{
+              flexDirection: 'column'
+            }}
+          >
+            <NavigationMenu.DropdownItemTitle>
+              Colours
+            </NavigationMenu.DropdownItemTitle>
+            <Text>Atom Learning color palette</Text>
+          </Flex>
         </NavigationMenu.DropdownItem>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/effects">
           Effects

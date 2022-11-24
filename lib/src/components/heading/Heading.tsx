@@ -43,6 +43,11 @@ export const StyledHeading = styled('h2', {
         lineHeight: 1.06,
         ...capsize(0.1793, 0.1873)
       }
+    },
+    noCapsize: {
+      true: {
+        '&::before, &::after': { display: 'none' }
+      }
     }
   }
 })

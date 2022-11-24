@@ -93,6 +93,11 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     display: table;
   }
 
+  .c-kgcOue-hUrFFO-noCapsize-true::before,
+  .c-kgcOue-hUrFFO-noCapsize-true::after {
+    display: none;
+  }
+
   .c-fIXJvv-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -133,7 +138,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md"
+      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
     >
       TEXT LINK
     </button>
@@ -142,7 +147,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md"
+      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
     >
       HEADING LINK
     </button>

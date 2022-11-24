@@ -36,7 +36,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     vertical-align: middle;
   }
 
-  .c-hAXqx {
+  .c-hVoQtf {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -44,6 +44,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     line-height: 1.5;
+    white-space: normal;
     padding-left: var(--space-3);
     padding-right: var(--space-3);
     padding-top: var(--space-2);
@@ -52,7 +53,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx {
+    .c-hVoQtf {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -60,25 +61,25 @@ exports[`NumberInputField component renders a field in error state - has no prog
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -168,7 +169,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-width: 1.75;
   }
 
-  .c-hAXqx-gWQnqe-size-md {
+  .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -468,7 +469,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     vertical-align: middle;
   }
 
-  .c-hAXqx {
+  .c-hVoQtf {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -476,6 +477,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     line-height: 1.5;
+    white-space: normal;
     padding-left: var(--space-3);
     padding-right: var(--space-3);
     padding-top: var(--space-2);
@@ -484,7 +486,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx {
+    .c-hVoQtf {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -492,25 +494,25 @@ exports[`NumberInputField component renders a field with a disabled input - has 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -583,7 +585,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     stroke-width: 1.75;
   }
 
-  .c-hAXqx-gWQnqe-size-md {
+  .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -814,7 +816,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     vertical-align: middle;
   }
 
-  .c-hAXqx {
+  .c-hVoQtf {
     background-color: var(--colors-tonal500);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
@@ -822,6 +824,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     line-height: 1.5;
+    white-space: normal;
     padding-left: var(--space-3);
     padding-right: var(--space-3);
     padding-top: var(--space-2);
@@ -830,7 +833,7 @@ exports[`NumberInputField component renders a field with a number input - has no
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx {
+    .c-hVoQtf {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -838,25 +841,25 @@ exports[`NumberInputField component renders a field with a number input - has no
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="top"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="right"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="bottom"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hAXqx[data-state="delayed-open"][data-side="left"] {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -929,7 +932,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     stroke-width: 1.75;
   }
 
-  .c-hAXqx-gWQnqe-size-md {
+  .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
 

@@ -12,7 +12,8 @@ category: Navigation
   <NavigationMenu.Link href="/overview/introduction">
     Introduction
   </NavigationMenu.Link>
-  <NavigationMenu.Dropdown title="Theme">
+  <NavigationMenu.Dropdown id="1">
+    <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
     <NavigationMenu.DropdownContent>
       <NavigationMenu.DropdownItem href="/theme/colours">
         Colours
@@ -75,7 +76,8 @@ In the below example the styling of `NavigationMenu.DropdownContent` has been ch
   <NavigationMenu.Link href="/overview/introduction">
     Introduction
   </NavigationMenu.Link>
-  <NavigationMenu.Dropdown title="Theme">
+  <NavigationMenu.Dropdown id="1">
+    <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
     <NavigationMenu.DropdownContent
       css={{
         display: 'grid',
@@ -87,27 +89,56 @@ In the below example the styling of `NavigationMenu.DropdownContent` has been ch
     >
       {['colours', 'icons', 'effects', 'typography'].map((item) => (
         <NavigationMenu.DropdownItem href={`/theme/${item}`}>
-          <Text
-            css={{
-              mb: '0.75rem',
-              textTransform: 'capitalize'
-            }}
-          >
+          <NavigationMenu.DropdownItemTitle>
             {item}
-          </Text>
-          <Text
-            css={{
-              color: 'inherit',
-              lineHeight: 1.5,
-              fontWeight: 400,
-              fontSize: 14
-            }}
-          >
-            This is some example text about {item}
-          </Text>
+          </NavigationMenu.DropdownItemTitle>
+          <Text>This is some example text about {item}</Text>
         </NavigationMenu.DropdownItem>
       ))}
     </NavigationMenu.DropdownContent>
   </NavigationMenu.Dropdown>
 </NavigationMenu>
+```
+
+## DropdownItem composition example
+
+DropdownItem gives a lot of flexibility. It's an easy to compose it for own purposes.
+
+```tsx
+<NavigationMenu.DropdownItem href="/" active>
+  <Grid
+    css={{
+      gridTemplateColumns: '1fr 7fr'
+    }}
+  >
+    <Icon is={Feed} size={'md'} />
+    <Flex css={{ flexDirection: 'column' }}>
+      <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
+        Example title
+      </NavigationMenu.DropdownItemTitle>
+      <Text>This is example subtitle</Text>
+    </Flex>
+  </Grid>
+</NavigationMenu.DropdownItem>
+```
+
+## Dropdown Trigger
+
+NavigationMenu.Dropdown gives you the way to pass your own trigger component inside the `NavigationMenu.DropdownTrigger`.
+The children of NavigationMenu.DropdownTrigger can be a plain text or more complex component.
+
+```tsx
+<NavigationMenu.Dropdown id="1">
+  <NavigationMenu.DropdownTrigger>
+    <Avatar />
+  </NavigationMenu.DropdownTrigger>
+  <NavigationMenu.DropdownContent>// content</NavigationMenu.DropdownContent>
+</NavigationMenu.Dropdown>
+
+<NavigationMenu.Dropdown id="2">
+  <NavigationMenu.DropdownTrigger>
+    Plain text
+  </NavigationMenu.DropdownTrigger>
+  <NavigationMenu.DropdownContent>// content</NavigationMenu.DropdownContent>
+</NavigationMenu.Dropdown>
 ```

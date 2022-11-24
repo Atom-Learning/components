@@ -1,41 +1,54 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import React, { ComponentProps, ReactElement } from 'react'
 
-import { styled } from '~/stitches'
+import { CSS } from '~/stitches'
 
 import { useNavigationMenuContext } from './NavigationMenuContext'
-import { NavigationMenuDropdownTrigger } from './NavigationMenuItem'
-
-const StyledContent = styled(NavigationMenuPrimitive.Content, {
-  p: '$3',
-  bg: 'white',
-  mt: '4px',
-  boxShadow:
-    '0px 3px 6px rgba(51, 51, 51, 0.15), 0px 3px 6px rgba(51, 51, 51, 0.2)',
-  borderRadius: '$1'
-})
+import { NavigationMenuDropdownContent } from './NavigationMenuDropdownContent'
+import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
 
 type NavigationMenuDropdownProps = {
-  title: string
   active?: boolean
+  css?: CSS
+  id: string
 } & React.HTMLProps<HTMLButtonElement>
+
+type DropdownTriggerProps = ComponentProps<typeof NavigationMenuDropdownTrigger>
 
 export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
   children,
-  title,
+  id,
   ...props
 }) => {
   const { onNodeUpdate } = useNavigationMenuContext()
 
   return (
-    <NavigationMenuPrimitive.Item value={title}>
-      <NavigationMenuDropdownTrigger
-        {...props}
-        ref={(node: HTMLButtonElement) => onNodeUpdate(node, title)}
-      >
-        {title}
-      </NavigationMenuDropdownTrigger>
-      <StyledContent>{children}</StyledContent>
+    <NavigationMenuPrimitive.Item value={id}>
+      {React.Children.map(children, (child) => {
+        const isTrigger =
+          React.isValidElement(child) &&
+          child.type === NavigationMenuDropdownTrigger
+        const isContent =
+          React.isValidElement(child) &&
+          child.type === NavigationMenuDropdownContent
+
+        if (!isTrigger && !isContent) {
+          throw new Error(
+            'Only NavigationMenu.Trigger and NavigationMenu.Content can be the passed as a "children" of NavigationMenu.Dropdown'
+          )
+        }
+        return isTrigger
+          ? React.cloneElement(
+              child as ReactElement<DropdownTriggerProps>,
+              {
+                ...props,
+                ref: (node: HTMLButtonElement) => onNodeUpdate(node, id)
+              } as React.PropsWithRef<DropdownTriggerProps>
+            )
+          : child
+      })}
     </NavigationMenuPrimitive.Item>
   )
 }
+
+NavigationMenuDropdown.displayName = 'NavigationMenuDropdown'

@@ -6,25 +6,30 @@ exports[`Badge component renders 1`] = `
     display: flex;
   }
 
-  .c-QWATl {
+  .c-lkWDnA {
     justify-content: center;
     align-items: center;
     border-radius: var(--radii-0);
+    min-width: 0;
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
   }
 }
 
 @media  {
-  .c-QWATl-eUcpXf-theme-info {
+  .c-lkWDnA-eUcpXf-theme-info {
     background: var(--colors-primaryLight);
     color: var(--colors-primaryMid);
   }
 
-  .c-QWATl-cEBmdw-size-sm {
+  .c-lkWDnA-cOMlyh-size-sm {
     font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
     height: var(--sizes-3);
   }
 }
@@ -41,7 +46,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-QWATl c-QWATl-eUcpXf-theme-info c-QWATl-cEBmdw-size-sm"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-eUcpXf-theme-info c-lkWDnA-cOMlyh-size-sm"
     role="status"
   >
     <div
@@ -59,37 +64,42 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     display: flex;
   }
 
-  .c-QWATl {
+  .c-lkWDnA {
     justify-content: center;
     align-items: center;
     border-radius: var(--radii-0);
+    min-width: 0;
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
   }
 }
 
 @media  {
-  .c-QWATl-eUcpXf-theme-info {
+  .c-lkWDnA-eUcpXf-theme-info {
     background: var(--colors-primaryLight);
     color: var(--colors-primaryMid);
   }
 
-  .c-QWATl-cEBmdw-size-sm {
+  .c-lkWDnA-cOMlyh-size-sm {
     font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
     height: var(--sizes-3);
   }
 
-  .c-QWATl-jtgfr-theme-danger {
+  .c-lkWDnA-iZOjmP-theme-danger {
     background: var(--colors-dangerLight);
-    color: var(--colors-dangerDark);
+    color: var(--colors-dangerMid);
   }
 
-  .c-QWATl-fmNUnr-size-md {
+  .c-lkWDnA-hQQbPV-size-md {
     font-size: var(--fontSizes-md);
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
     height: var(--sizes-4);
   }
 }
@@ -106,9 +116,108 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-QWATl c-QWATl-jtgfr-theme-danger c-QWATl-fmNUnr-size-md"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-iZOjmP-theme-danger c-lkWDnA-hQQbPV-size-md"
     role="status"
   >
+    <div
+      class="c-PJLV c-PJLV-iguVXTk-css"
+    >
+      Some Text
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Badge component renders with an icon 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-lkWDnA {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    min-width: 0;
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+}
+
+@media  {
+  .c-lkWDnA-eUcpXf-theme-info {
+    background: var(--colors-primaryLight);
+    color: var(--colors-primaryMid);
+  }
+
+  .c-lkWDnA-cOMlyh-size-sm {
+    font-size: var(--fontSizes-md);
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    height: var(--sizes-3);
+  }
+
+  .c-lkWDnA-iZOjmP-theme-danger {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerMid);
+  }
+
+  .c-lkWDnA-hQQbPV-size-md {
+    font-size: var(--fontSizes-md);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    height: var(--sizes-4);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  .c-PJLV-iguVXTk-css {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-dbrbZt-icCfVEt-css {
+    flex-shrink: 0;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-eUcpXf-theme-info c-lkWDnA-cOMlyh-size-sm"
+    role="status"
+  >
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-icCfVEt-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M21.228 11.036c-4.99-4.99-13.081-4.99-18.071 0m14.457 3.614a7.667 7.667 0 0 0-10.843 0M14 18.264a2.556 2.556 0 0 0-3.614 0"
+      />
+    </svg>
     <div
       class="c-PJLV c-PJLV-iguVXTk-css"
     >

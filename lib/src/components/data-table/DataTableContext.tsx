@@ -6,8 +6,22 @@ import {
   getSortedRowModel,
   getFilteredRowModel
 } from '@tanstack/react-table'
-import type { SortingState, Table } from '@tanstack/react-table'
-import { UniqueIdentifier } from '@dnd-kit/core'
+
+import type { UniqueIdentifier } from '@dnd-kit/core'
+import type {
+  VisibilityTableState,
+  ColumnOrderTableState,
+  ColumnPinningTableState,
+  FiltersTableState,
+  SortingTableState,
+  ExpandedTableState,
+  GroupingTableState,
+  ColumnSizingTableState,
+  PaginationTableState,
+  RowSelectionTableState,
+  SortingState,
+  Table
+} from '@tanstack/react-table'
 
 type DataTableContextType<T = unknown> = Table<T> & {
   data: Array<Record<string, unknown>>
@@ -30,12 +44,26 @@ type DataTableContextType<T = unknown> = Table<T> & {
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
+type InitialState = Partial<
+  VisibilityTableState &
+    ColumnOrderTableState &
+    ColumnPinningTableState &
+    FiltersTableState &
+    SortingTableState &
+    ExpandedTableState &
+    GroupingTableState &
+    ColumnSizingTableState &
+    PaginationTableState &
+    RowSelectionTableState
+>
+
 type TableProviderProps = {
   columns
   data: Array<Record<string, unknown>>
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
   dragAndDrop?: boolean
+  initialState?: InitialState
 }
 
 export const DataTableProvider = ({
@@ -43,6 +71,7 @@ export const DataTableProvider = ({
   data: dataProp,
   dragAndDrop = false,
   defaultSort,
+  initialState = undefined,
   children
 }: TableProviderProps): JSX.Element => {
   const [data, setData] =
@@ -51,7 +80,9 @@ export const DataTableProvider = ({
     () => data?.map(({ id }) => id as UniqueIdentifier),
     [data]
   )
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(false)
+  const [isPaginated, setIsPaginated] = React.useState<boolean>(
+    !!initialState?.pagination
+  )
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [isDragAndDrop, setIsDragAndDrop] = React.useState<boolean>(dragAndDrop)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -98,6 +129,7 @@ export const DataTableProvider = ({
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
+    initialState: initialState,
     state: {
       sorting
     },
@@ -117,7 +149,8 @@ export const DataTableProvider = ({
       getTotalRows,
       isSortable,
       isDragAndDrop,
-      moveRow
+      moveRow,
+      order
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

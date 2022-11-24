@@ -6,7 +6,7 @@ import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
-import { StyledText, textVariantSize } from '../text/Text'
+import { StyledText, textVariants } from '../text/Text'
 
 export const StyledLink = styled('a', {
   bg: 'unset',
@@ -30,9 +30,7 @@ export const StyledLink = styled('a', {
       content: 'none'
     }
   },
-  variants: {
-    size: textVariantSize()
-  }
+  variants: textVariants
 })
 
 type LinkProps = Override<
@@ -43,18 +41,15 @@ type LinkProps = Override<
 >
 
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', onClick, href, ...remainingProps }, ref) =>
-    href ? (
-      <StyledLink size={size} {...remainingProps} ref={ref} href={href} />
-    ) : (
-      <StyledLink
-        as="button"
-        size={size}
-        {...remainingProps}
-        ref={ref}
-        onClick={onClick}
-      />
-    )
+  ({ size = 'md', href, ...props }, ref) => (
+    <StyledLink
+      {...(!href && { as: 'button', noCapsize: true })}
+      size={size}
+      href={href}
+      {...props}
+      ref={ref}
+    />
+  )
 ) as React.FC<LinkProps>
 
 Link.displayName = 'Link'

@@ -85,9 +85,9 @@ exports[`TopBar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 }
 
@@ -129,7 +129,7 @@ exports[`TopBar component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jpqjUq-fKZlxR-orientation-vertical {
+  .c-fNKiiB-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -158,7 +158,7 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-ieFaPrQ-css {
+  .c-fNKiiB-ieFaPrQ-css {
     height: var(--sizes-2);
     background: var(--colors-tonal100);
   }
@@ -193,7 +193,7 @@ exports[`TopBar component renders 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.412 14.412L20 20"
+            d="M14.412 14.412 20 20"
           />
           <circle
             cx="10"
@@ -203,7 +203,7 @@ exports[`TopBar component renders 1`] = `
         </svg>
       </button>
       <hr
-        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ieFaPrQ-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ieFaPrQ-css"
       />
       <button
         aria-label="Light/Dark mode"
@@ -218,11 +218,11 @@ exports[`TopBar component renders 1`] = `
         >
           <path
             clip-rule="evenodd"
-            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
             fill-rule="evenodd"
           />
           <path
-            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
           />
         </svg>
       </button>
@@ -316,9 +316,9 @@ exports[`TopBar component renders the lg variant 1`] = `
     vertical-align: middle;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 }
 
@@ -360,7 +360,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jpqjUq-fKZlxR-orientation-vertical {
+  .c-fNKiiB-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -398,7 +398,7 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-ieFaPrQ-css {
+  .c-fNKiiB-ieFaPrQ-css {
     height: var(--sizes-2);
     background: var(--colors-tonal100);
   }
@@ -433,7 +433,7 @@ exports[`TopBar component renders the lg variant 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.412 14.412L20 20"
+            d="M14.412 14.412 20 20"
           />
           <circle
             cx="10"
@@ -443,7 +443,7 @@ exports[`TopBar component renders the lg variant 1`] = `
         </svg>
       </button>
       <hr
-        class="c-jpqjUq c-jpqjUq-fKZlxR-orientation-vertical c-jpqjUq-ieFaPrQ-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ieFaPrQ-css"
       />
       <button
         aria-label="Light/Dark mode"
@@ -458,11 +458,11 @@ exports[`TopBar component renders the lg variant 1`] = `
         >
           <path
             clip-rule="evenodd"
-            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
             fill-rule="evenodd"
           />
           <path
-            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
           />
         </svg>
       </button>
