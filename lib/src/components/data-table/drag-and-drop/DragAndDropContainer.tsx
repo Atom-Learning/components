@@ -2,14 +2,17 @@ import { useDataTable } from '../DataTableContext'
 import {
   closestCenter,
   DndContext,
+  DragOverlay,
   KeyboardSensor,
   PointerSensor,
   useSensor,
   useSensors
 } from '@dnd-kit/core'
+import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 import { useState } from 'react'
 import * as React from 'react'
+import { DataTable } from '../DataTable'
 
 const orientationToDirection = (orientation) =>
   orientation === 'vertical' ? 'column' : 'row'
@@ -21,11 +24,10 @@ export const DragAndDropContainer = ({
   orientation,
   ...rest
 }) => {
-  const { setData } = useDataTable()
+  const { order, setData, getRowModel } = useDataTable()
   const direction = orientationToDirection(orientation)
   const [activeId, setActiveId] = useState(null)
-  const [order, setOrder] = useState<number[]>([])
-
+  const { rows } = getRowModel()
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
@@ -34,6 +36,7 @@ export const DragAndDropContainer = ({
   )
 
   function handleDragStart(event) {
+    console.log('happening')
     setActiveId(event.active.id)
   }
 
@@ -41,8 +44,8 @@ export const DragAndDropContainer = ({
     const { active, over } = event
     if (active.id !== over.id) {
       setData((data) => {
-        const oldIndex = items.indexOf(active.id)
-        const newIndex = items.indexOf(over.id)
+        const oldIndex = order.indexOf(active.id)
+        const newIndex = order.indexOf(over.id)
         return arrayMove(data, oldIndex, newIndex)
       })
     }
@@ -54,6 +57,14 @@ export const DragAndDropContainer = ({
     setActiveId(null)
   }
 
+  const selectedRow = React.useMemo(() => {
+    if (!activeId) {
+      return null
+    }
+    const row = rows.find(({ original }) => original.id === activeId)
+    return row
+  }, [activeId, rows])
+
   return (
     <DndContext
       sensors={sensors}
@@ -61,8 +72,18 @@ export const DragAndDropContainer = ({
       onDragEnd={handleDragEnd}
       onDragStart={handleDragStart}
       onDragCancel={handleDragCancel}
+      modifiers={[restrictToVerticalAxis]}
     >
       {children}
+      <DragOverlay>
+        {activeId && selectedRow && (
+          <table style={{ width: '100%' }}>
+            <tbody>
+              <DataTable.Row row={selectedRow} />
+            </tbody>
+          </table>
+        )}
+      </DragOverlay>
     </DndContext>
   )
 }

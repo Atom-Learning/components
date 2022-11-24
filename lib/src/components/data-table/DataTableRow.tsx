@@ -4,38 +4,49 @@ import { Table } from '../table'
 import { DataTableDataCell } from './DataTableDataCell'
 import { useDataTable } from './DataTableContext'
 import { DragHandle } from './drag-and-drop'
+import { CSS } from '@dnd-kit/utilities'
+import { useSortable } from '@dnd-kit/sortable'
+import type { UniqueIdentifier } from '@dnd-kit/core'
+import { styled } from '~/stitches'
+import { flexRender } from '@tanstack/react-table'
 export type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>
-  reorderable?: boolean
 }
-export const DataTableRow: React.FC<DataTableRowProps> = ({
-  row,
-  reorderable = false
-}) => {
-  const { applyDragAndDrop } = useDataTable()
 
-  // TODO: figure out whether this is the right place for this logic.
-  // It's going to fire on every row... Should this really be a property of the row,
-  // rather than of the table provider itself?
-  // What happens if some state in a parent component decides that the table rows
-  // should no longer be drag and drop?
-  React.useEffect(() => {
-    if (reorderable) {
-      applyDragAndDrop()
-    }
-  }, [reorderable])
+const DraggingRow = styled('td', { background: 'rgba(127, 207, 250, 0.3)' })
+export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
+  const { isDragAndDrop } = useDataTable()
 
-  return (
-    <Table.Row>
-      {reorderable && (
-        <Table.Cell>
-          {/* TODO: decide on label */}
-          <DragHandle targetId={row.id} label={row.id} />
-        </Table.Cell>
-      )}
-      {row.getVisibleCells().map((cell) => (
-        <DataTableDataCell key={cell.id} cell={cell} />
-      ))}
+  const {
+    attributes,
+    listeners,
+    transform,
+    transition,
+    setNodeRef,
+    isDragging
+  } = useSortable({
+    id: row.original.id as UniqueIdentifier
+  })
+
+  return isDragging ? (
+    <DraggingRow colSpan={row.getAllCells().length}>&nbsp;</DraggingRow>
+  ) : (
+    <Table.Row
+      ref={setNodeRef}
+      css={{ transform: CSS.Transform.toString(transform), transition }}
+    >
+      {row.getVisibleCells().map((cell, i) => {
+        if (isDragAndDrop && i === 0) {
+          return (
+            <Table.Cell key={cell.id}>
+              {/* TODO: decide on label */}
+              <DragHandle {...attributes} {...listeners} />
+              {flexRender(cell.column.columnDef.cell, cell.getContext())}
+            </Table.Cell>
+          )
+        }
+        return <DataTableDataCell key={cell.id} cell={cell} />
+      })}
     </Table.Row>
   )
 }
