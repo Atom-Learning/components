@@ -13,20 +13,18 @@ const StyledTrigger = styled(Trigger, {
   ...sidedrawerItemStyles
 })
 
+const StyledIcon = styled(Icon, {
+  '[data-state=open] &': { transform: 'rotate(-180deg)' },
+  '@media (prefers-reduced-motion: no-preference)': {
+    transition: 'transform .2s ease'
+  }
+})
+
 export const SidedrawerAccordionTrigger: React.FC = ({ children }) => (
   <Header>
-    <StyledTrigger disabled={false}>
+    <StyledTrigger>
       {children}
-      <Icon
-        is={ChevronDown}
-        css={{
-          '[data-state=open] &': { transform: 'rotate(-180deg)' },
-          '@media (prefers-reduced-motion: no-preference)': {
-            transition: 'transform .2s ease'
-          }
-        }}
-        size="sm"
-      />
+      <StyledIcon is={ChevronDown} size="sm" />
     </StyledTrigger>
   </Header>
 )
