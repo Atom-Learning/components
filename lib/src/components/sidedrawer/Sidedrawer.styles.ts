@@ -5,10 +5,10 @@ export const sidedrawerItemStyles = {
   display: 'flex',
   color: '$tonal600',
   fontFamily: '$body',
-  fontWeight: 400,
+  fontWeight: '400',
   fontSize: '$md',
   margin: 0,
-  minHeight: 48,
+  minHeight: '48px',
   outline: 'unset',
   outlineOffset: 'unset',
   py: '$3',
@@ -24,7 +24,9 @@ export const sidedrawerItemStyles = {
     active: {
       true: {
         bg: '$primaryLight',
-        borderLeft: '4px solid $primary'
+        borderLeft: '4px solid $primary',
+        color: '$primary',
+        fontWeight: '600'
       }
     }
   }
