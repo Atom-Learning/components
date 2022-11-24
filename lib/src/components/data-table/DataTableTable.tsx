@@ -17,9 +17,11 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   striped,
   theme,
   ...props
-}) => (
-  <Table {...props}>
-    <DataTable.Head theme={theme} sortable={sortable} />
-    <DataTable.Body striped={striped} />
-  </Table>
-)
+}) => {
+  return (
+    <Table {...props}>
+      <DataTable.Head theme={theme} sortable={sortable} />
+      <DataTable.Body striped={striped} />
+    </Table>
+  )
+}
