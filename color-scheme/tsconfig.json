@@ -9,14 +9,13 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["es6", "dom"],
-    "types": ["node", "jest"],
+    "types": ["node"],
     "baseUrl": "./src",
     "skipLibCheck": true,
-    "paths": {
-      "~/*": ["./*"]
-    },
-    "declaration": true
+    "declaration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
-  "include": ["./src/*", "types/global.d.ts"],
+  "include": ["./src/*"],
   "exclude": ["./src/**/*.test.*"]
 }

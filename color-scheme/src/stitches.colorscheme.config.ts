@@ -1,6 +1,8 @@
 import { createStitches } from '@stitches/react'
-import { blue, blueA } from './blue'
-import { slate, slateA } from './slate'
+import blue from './blue.json'
+import slate from './slate.json'
+import { generateAlphaColors } from './generateAlphaColors'
+
 
 export const colorSchemes = {}
 
@@ -23,9 +25,9 @@ export const { styled, createTheme } = createStitches({
       foreground: black,
       foreground6plus: white,
       ...blue,
-      ...blueA,
+      ...generateAlphaColors('blue', blue),
       ...slate,
-      ...slateA
+      ...generateAlphaColors('slate', slate),
     }
   }
 })
