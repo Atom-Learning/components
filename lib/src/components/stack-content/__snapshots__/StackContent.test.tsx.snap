@@ -2,48 +2,48 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-dcjLby > .c-iSnHBU {
+  .c-cLTcXe > .c-iSnHBU {
     max-width: 65ch;
   }
 
-  .c-dcjLby > .c-iSnHBU:not(:first-child) {
+  .c-cLTcXe > .c-iSnHBU:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-dcjLby > .c-iSnHBU:not(:last-child) {
+  .c-cLTcXe > .c-iSnHBU:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-dcjLby > .c-fIXJvv {
+  .c-cLTcXe > .c-fIXJvv {
     max-width: 75ch;
   }
 
-  .c-dcjLby > .c-fIXJvv:not(:last-child) {
+  .c-cLTcXe > .c-fIXJvv:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-dcjLby > .c-iQukjL {
+  .c-cLTcXe > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-dcjLby > .c-iQukjL:not(:last-child) {
+  .c-cLTcXe > .c-iQukjL:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-dcjLby > .c-jpqjUq {
+  .c-cLTcXe > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-dcjLby > .c-eWgOGC {
+  .c-cLTcXe > .c-eWgOGC {
     display: block;
   }
 
-  .c-dcjLby > .c-eWgOGC:not(:first-child) {
+  .c-cLTcXe > .c-eWgOGC:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-dcjLby > .c-eWgOGC:not(:last-child) {
+  .c-cLTcXe > .c-eWgOGC:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -66,9 +66,9 @@ exports[`StackContent component renders a stack content 1`] = `
     display: none;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 
   .c-iQukjL {
@@ -140,7 +140,7 @@ exports[`StackContent component renders a stack content 1`] = `
     display: table;
   }
 
-  .c-jpqjUq-jokUAR-orientation-horizontal {
+  .c-fNKiiB-jokUAR-orientation-horizontal {
     height: 1px;
     width: 100%;
   }
@@ -182,14 +182,14 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-igmqXFB-css {
+  .c-fNKiiB-igmqXFB-css {
     color: red;
   }
 }
 
 <div>
   <div
-    class="c-dcjLby"
+    class="c-cLTcXe"
   >
     <h2
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
@@ -202,7 +202,7 @@ exports[`StackContent component renders a stack content 1`] = `
       TEXT
     </p>
     <hr
-      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-igmqXFB-css"
+      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-igmqXFB-css"
     />
     <ul
       class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-hUrFFO-noCapsize-true c-iQukjL-DlQlZ-as-ul"
