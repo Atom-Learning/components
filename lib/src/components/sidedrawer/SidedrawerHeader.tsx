@@ -11,6 +11,12 @@ export const SidedrawerHeader: React.FC = ({ children }) => (
       }
     }}
   >
-    <TopBar>{children}</TopBar>
+    <TopBar
+      css={{
+        mx: '$3'
+      }}
+    >
+      {children}
+    </TopBar>
   </Box>
 )

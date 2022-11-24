@@ -9,6 +9,7 @@ import {
   SidedrawerAccordionContent,
   SidedrawerAccordionTrigger
 } from './SidedrawerAccordion'
+import { SidedrawerClose } from './SidedrawerClose'
 import { SidedrawerContent } from './SidedrawerContent'
 import { SidedrawerFooter } from './SidedrawerFooter'
 import { SidedrawerHeader } from './SidedrawerHeader'
@@ -23,6 +24,7 @@ type SidedrawerSubComponents = {
   Accordion: typeof SidedrawerAccordion
   AccordionContent: typeof SidedrawerAccordionContent
   AccordionTrigger: typeof SidedrawerAccordionTrigger
+  Close: typeof SidedrawerClose
   Content: typeof SidedrawerContent
   Footer: typeof SidedrawerFooter
   Header: typeof SidedrawerHeader
@@ -75,6 +77,7 @@ export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
 Sidedrawer.Accordion = SidedrawerAccordion
 Sidedrawer.AccordionContent = SidedrawerAccordionContent
 Sidedrawer.AccordionTrigger = SidedrawerAccordionTrigger
+Sidedrawer.Close = SidedrawerClose
 Sidedrawer.Content = SidedrawerContent
 Sidedrawer.Footer = SidedrawerFooter
 Sidedrawer.Header = SidedrawerHeader

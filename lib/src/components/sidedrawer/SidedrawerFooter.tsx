@@ -1,18 +1,21 @@
 import React from 'react'
 
-import { Box } from '../box'
+import { Flex } from '../flex/Flex'
 
 export const SidedrawerFooter: React.FC = ({ children }) => (
-  <Box
+  <Flex
     css={{
+      alignItems: 'center',
       borderTop: '1px solid $tonal100',
+      bottom: 0,
       boxShadow: '$3',
       height: '$6',
-      width: '100%',
+      justifyContent: 'center',
+      p: '$3',
       position: 'absolute',
-      bottom: 0
+      width: '100%'
     }}
   >
     {children}
-  </Box>
+  </Flex>
 )
