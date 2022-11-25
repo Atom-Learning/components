@@ -2,8 +2,9 @@ export const sidedrawerItemStyles = {
   alignItems: 'center',
   bg: 'white',
   border: 'unset',
-  display: 'flex',
   color: '$tonal600',
+  cursor: 'pointer',
+  display: 'flex',
   fontFamily: '$body',
   fontWeight: '400',
   fontSize: '$md',
@@ -15,10 +16,15 @@ export const sidedrawerItemStyles = {
   px: '$4',
   width: '100%',
   textDecoration: 'none',
-  '&:hover': { background: '$tonal50' },
-  '&:active': { background: '$tonal100' },
+  '&:hover': { bg: '$tonal50' },
+  '&:active': { bg: '$tonal100' },
   '&:focus-visible': {
     boxShadow: 'inset 0 0 0 2px $colors$primary'
+  },
+  '&[disabled]': {
+    opacity: '0.3',
+    pointerEvents: 'none',
+    cursor: 'default'
   },
   variants: {
     active: {
