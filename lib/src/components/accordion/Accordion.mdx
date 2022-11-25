@@ -5,23 +5,29 @@ description: A vertically stacked group of interactive headings that reveal an a
 category: Layout
 ---
 
+Functionality based on the [`Accordion`](https://radix-ui.com/primitives/docs/components/accordion) radix component.
+
+Implements experimental ColorScheme component to allow multiple colour setups.
+
 The Accordion exports 4 components that combine to make the `Accordion`. The parent Accordion contains `Accordion.Item` components, which themselves must contain `Accordion.Trigger` and `Accordion.Content`.
 
 The `Accordion.Trigger` has been simplified to include a chevron icon. Generally, you would only want to render text inside the rest.
 
 Default styling has been applied to `Accordion.Trigger`, but `Accordion.Content` is an empty container without styling. Should only text be placed inside, it is highly advisable to apply spacing to align with the styling of the rest of the Accordion. This can be done with either the `css` property, or by placing any other components inside the `Accordion.Content`.
 
-You can Read more about the underlying UI component on the [Radix UI documentation site](https://radix-ui.com/primitives/docs/components/accordion).
-
 ```tsx preview
 <Accordion type="single" defaultValue="1">
   <Accordion.Item value="1">
-    <Accordion.Trigger theme="light">Accordion Header 1</Accordion.Trigger>
-    <Accordion.Content css={{ p: '$4' }}>Accordion content 1</Accordion.Content>
+    <Accordion.Trigger>Accordion Header 1</Accordion.Trigger>
+    <Accordion.Content css={{ p: '$3' }}>
+      <Text>Accordion content 1</Text>
+    </Accordion.Content>
   </Accordion.Item>
   <Accordion.Item value="2">
     <Accordion.Trigger>Accordion Header 2</Accordion.Trigger>
-    <Accordion.Content css={{ p: '$4' }}>Accordion content 2</Accordion.Content>
+    <Accordion.Content css={{ p: '$3' }}>
+      <Text>Accordion content 2</Text>
+    </Accordion.Content>
   </Accordion.Item>
 </Accordion>
 ```
@@ -40,6 +46,49 @@ Accordions can have `type` as either `single` or `multiple`. This changes how ma
 
 Note: if `multiple`, `value` and `defaultValue` must be in an array. Even if you want just one item to be visible initially, you must pass something like `defaultValue={['name']}`
 
-## Themes
+## Disabled
 
-`Accordion.Trigger` can have a `theme` property. Possible values are `primaryDark` and `light`. The default is `primaryDark`.
+An `Accordion.Item` component can take a `disabled` prop, which would make it untoggleable.
+The corresponding `Accordion.Content` component's content will be, in this case, permanently in its original state.
+
+```tsx preview live
+<Accordion type="single" defaultValue="1">
+  <Accordion.Item value="1" disabled>
+    <Accordion.Trigger>Accordion Header 1</Accordion.Trigger>
+    <Accordion.Content css={{ p: '$3' }}>
+      <Text>Accordion content 1</Text>
+    </Accordion.Content>
+  </Accordion.Item>
+  <Accordion.Item value="2">
+    <Accordion.Trigger>Accordion Header 2</Accordion.Trigger>
+    <Accordion.Content css={{ p: '$3' }}>
+      <Text>Accordion content 2</Text>
+    </Accordion.Content>
+  </Accordion.Item>
+</Accordion>
+```
+
+## Color Scheme
+
+You can pass in a `colorScheme` object to the Accordion.Trigger to customise the colours of the component.
+Defaults to `{ accent: "slate", interactive: "loContrast1"}`
+ColorScheme is experimental and has been implemented only locally but you can read more about how it
+currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
+
+```tsx preview live
+<Accordion type="single" defaultValue="1">
+  <Accordion.Item value="1">
+    <Accordion.Trigger
+      colorScheme={{
+        accent: 'blue',
+        interactive: 'hiContrast2'
+      }}
+    >
+      Accordion Header 1
+    </Accordion.Trigger>
+    <Accordion.Content css={{ p: '$3' }}>
+      <Text>Accordion content 1</Text>
+    </Accordion.Content>
+  </Accordion.Item>
+</Accordion>
+```

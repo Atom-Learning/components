@@ -5,10 +5,12 @@ description: Tabs is a component that provides different sections of content tha
 category: Layout
 ---
 
-The component provides a set of default styles, which can be overwritten by using the `css` prop. It is composed by combining smaller components, such as `Tabs.TriggerList`, `Tabs.Trigger`, and `Tabs.Content`.
+Functionality based on the [`Tab`](https://www.radix-ui.com/docs/primitives/components/tabs) radix component, which already allows for: controlled/uncontrolled tabbing, disabling or partly disabling options, adds keyboard navigation and orientation and more.
+
+Implements experimental ColorScheme component to allow multiple colour setups.
 
 ```tsx preview
-<Tabs defaultValue="tab1" css={{ height: '100px' }}>
+<Tabs defaultValue="tab2">
   <Tabs.TriggerList>
     <Tabs.Trigger value="tab1">
       Nested component under the Tabs.Trigger component
@@ -27,76 +29,48 @@ The component provides a set of default styles, which can be overwritten by usin
 </Tabs>
 ```
 
-It takes a `defaultValue` prop that should match one of the triggers' `value` prop.
+## Disabled
 
-```tsx
-<Tabs defaultValue="tab1">
-```
-
-It also takes a `theme` prop that should either be "light" or "dark".
-
-```tsx
-<Tabs theme="light"></Tabs>
-<Tabs theme="dark"></Tabs>
-```
-
-## Tabs.TriggerList
-
-The `Tabs.TriggerList` component simply holds the individual `Tabs.Trigger` components. It can also get custom styling via the `css` prop.
-`Tabs.TriggerList` will automatically show `<` & `>` buttons in case the content is overshooting the available space.
-
-The default scroll amount for the scroll buttons on the `Tabs.TriggerList` is 10% of the content width. You can set this to any percentage by setting, for example, `scrollPercentage={25}`.
-
-## Tabs.Trigger
-
-The `Tabs.Trigger` component holds the content that will be displayed inside the button that the user would click in order to switch tabs. In can hold either a string, or some other component. It needs to be passed a `value` prop, that would be identical to the `value` prop passed to its corresponding `Tabs.Content` component.
-
-## Tabs.Content
-
-The `Tabs.Content` component, as the name suggests, holds the content for that particular section of the tabs component. It takes a `value` prop that needs to match the `value` prop passed to its corresponding trigger. Its content can be any text or valid component.
-
-## Disabled tab
-
-A `Tabs.Trigger` component can take a `disabled` prop, which would make it unselectable. The corresponding `Tabs.Content` component's content will be, in this case, permanently hidden.
+A `Tabs.Trigger` component can take a `disabled` prop, which would make it unselectable.
+The corresponding `Tabs.Content` component's content will be, in this case, permanently hidden.
 
 ```tsx preview
-<Tabs>
+<Tabs defaultValue="tab1">
   <Tabs.TriggerList>
     <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
-    <Tabs.Trigger disabled value="tab2">
+    <Tabs.Trigger value="tab2" disabled>
       Tab 2
     </Tabs.Trigger>
   </Tabs.TriggerList>
-  <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
-  <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>
+  <Tabs.Content css={{ p: '$3' }} value="tab1">
+    <Text>Content for tab1.</Text>
+  </Tabs.Content>
+  <Tabs.Content css={{ p: '$3' }} value="tab2">
+    <Text>Content for tab2.</Text>
+  </Tabs.Content>
 </Tabs>
 ```
 
-## Styling the `Tabs.TriggerList`
+## Color Scheme
 
-The trigger list accepts an appearance property to apply uppercase to all tabs. Simply pass `appearance='uppercase'`.
+You can pass in a `colorScheme` object to the TriggerList to customise the colours of the component.
+Defaults to `{ base: "slate", accent: "blue", interactive: "hiContrast1"}`
+ColorScheme is experimental and has been implemented only locally but you can read more about how it
+currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
 
-```tsx preview
-<Tabs>
-  <Tabs.TriggerList appearance="uppercase">
+```tsx preview live
+<Tabs defaultValue="tab2">
+  <Tabs.TriggerList
+    colorScheme={{ base: 'slate', accent: 'slate', interactive: 'hiContrast2' }}
+  >
     <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
     <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>
   </Tabs.TriggerList>
-  <Tabs.Content value="tab1">Content for tab 1</Tabs.Content>
-  <Tabs.Content value="tab2">Content for the second tab.</Tabs.Content>
+  <Tabs.Content css={{ p: '$3' }} value="tab1">
+    <Text>Content for tab1.</Text>
+  </Tabs.Content>
+  <Tabs.Content css={{ p: '$3' }} value="tab2">
+    <Text>Content for tab2.</Text>
+  </Tabs.Content>
 </Tabs>
 ```
-
-## Styling the `Tabs.Trigger`
-
-In order to style the different states of a trigger, the following CSS selectors need to be used when passed to the `css` prop:
-
-`&:hover` to style the hover state of the trigger.
-
-`&[data-disabled]` to style a disabled trigger.
-
-`&[data-disabled]:hover` to style a disabled trigger's hover state.
-
-`&[data-state="active"]` to style an active trigger.
-
-If the content of the trigger is, say, a `<Text>` component instead of a string, you can append the `*` symbol or any other child/sibling selectors, to make sure that any nested content is styled accordingly. You can also simply style the nested child component directly via its own `css` prop.

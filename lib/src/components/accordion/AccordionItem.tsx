@@ -5,7 +5,6 @@ import { styled } from '~/stitches'
 
 const StyledItem = styled(Item, {
   width: '100%',
-  overflow: 'hidden',
 
   '&:not(:last-child)': {
     mb: '$1'
