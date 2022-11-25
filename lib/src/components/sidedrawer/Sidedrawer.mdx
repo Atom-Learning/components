@@ -25,7 +25,7 @@ Other main elements:
 - `Sidedrawer.Overlay` - Full screen overlay positioned under the `Sidedrawer menu`. It inherits the `onClose` prop from `Sidedrawer`, so you can close the whole menu by clicking on `Overlay` area. This in an optional element.
 
 ```tsx
-<Sidedrawer isOpen>
+<Sidedrawer isOpen onClose={() => console.log('closed')}>
   <Sidedrawer.Header>
     <Sidedrawer.Close onClose={() => console.log('closed')} />
   </Sidedrawer.Header>
@@ -93,7 +93,7 @@ Accordion item requires few elements to work properly:
 ## All Sidedrawer components composition
 
 ```tsx
-<Sidedrawer isOpen>
+<Sidedrawer isOpen onClose={() => console.log('closed')}>
   <Sidedrawer.Header>
     <Sidedrawer.Close onClose={() => console.log('closed')} />
     <TopBar.BrandLogo
@@ -120,11 +120,10 @@ Accordion item requires few elements to work properly:
         <Sidedrawer.Item active href="/">
           I am a link
         </Sidedrawer.Item>
-        <Sidedrawer.Item href="/">Link to</Sidedrawer.Item>
       </Sidedrawer.AccordionContent>
     </Sidedrawer.Item>
   </Sidedrawer.Content>
   <Sidedrawer.Footer>The footer content</Sidedrawer.Footer>
-  <Sidedrawer.Overlay onClose={() => console.log('closed')} />
+  <Sidedrawer.Overlay />
 </Sidedrawer>
 ```
