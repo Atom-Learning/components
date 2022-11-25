@@ -1,3 +1,4 @@
+import { Dialog } from '@radix-ui/react-dialog'
 import React from 'react'
 
 import { MAX_Z_INDEX } from '~/constants/zIndices'
@@ -17,6 +18,7 @@ import { SidedrawerOverlay } from './SidedrawerOverlay'
 
 interface SidedrawerProps {
   isOpen: boolean
+  onClose: () => void
 }
 
 type SidedrawerSubComponents = {
@@ -52,9 +54,24 @@ const StyledBox = styled(Box, {
 })
 
 export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
-  SidedrawerSubComponents = ({ children, isOpen }) => {
+  SidedrawerSubComponents = ({ children, isOpen, onClose }) => {
   let overlayChild: typeof SidedrawerOverlay | null = null
   const contentChildren: React.ReactNode[] = []
+
+  const handleCloseOnEscape = (event: KeyboardEvent) => {
+    if (event.key === 'Escape') {
+      event.preventDefault()
+      onClose()
+    }
+  }
+
+  React.useEffect(() => {
+    document.addEventListener('keydown', handleCloseOnEscape)
+
+    return () => {
+      document.removeEventListener('keydown', handleCloseOnEscape)
+    }
+  }, [])
 
   React.Children.forEach(children, (child) => {
     if (React.isValidElement(child) && child.type === SidedrawerOverlay) {
@@ -66,8 +83,10 @@ export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
 
   return (
     <>
-      <StyledBox open={isOpen}>{contentChildren}</StyledBox>
-      {isOpen && overlayChild}
+      <Dialog>
+        <StyledBox open={isOpen}>{contentChildren}</StyledBox>
+      </Dialog>
+      {isOpen && <Box onClick={onClose}>{overlayChild}</Box>}
     </>
   )
 }

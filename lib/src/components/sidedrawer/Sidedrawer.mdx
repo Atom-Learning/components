@@ -11,14 +11,18 @@ category: Navigation
 
 Sidedrawer exposes few main elements to build foundations.
 The core element is a `Sidedrawer` which wraps entire components composition.
-`Sidedrawer` requires `isOpen` property. This property determines if the whole `Sidedrawer` is visible or not.
+`Sidedrawer` has a controlled state, that's why it requires `isOpen` and `onClose` properties.
+
+- `isOpen` property determines if the whole `Sidedrawer` is visible or not.
+- `onClose` prop should be a function which updates `isOpen` state. This function is triggered automatically when click on `Sidedrawer.Overlay` or press `Escape` key.
+
 Other main elements:
 
 - `Sidedrawer.Header` - It's based on `TopBar` component, so it plays really well with all `TopBar` subcomponents. This component is flexible, so you can render anything you need inside of it (for example app logo, Sidedrawer.Close etc.)
 - `Sidedrawer.Close` - It's an `"close" ActionIcon` which requires `onClose` prop.
 - `Sidedrawer.Content` - This is the wrapper for all `Sidedrawer.Item` items. The content is scrollable.
 - `Sidedrawer.Footer` - Optional part of the `Sidedrawer`. It's fixed to the botton. You can pass whatever you need as it's children.
-- `Sidedrawer.Overlay` - Full screen overlay positioned under the `Sidedrawer menu`. It expects `onClose` prop, so you can close the whole menu by clicking on `Overlay` area. This in an optional element.
+- `Sidedrawer.Overlay` - Full screen overlay positioned under the `Sidedrawer menu`. It inherits the `onClose` prop from `Sidedrawer`, so you can close the whole menu by clicking on `Overlay` area. This in an optional element.
 
 ```tsx
 <Sidedrawer isOpen>

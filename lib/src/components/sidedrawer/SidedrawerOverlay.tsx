@@ -4,10 +4,6 @@ import { MAX_Z_INDEX } from '~/constants/zIndices'
 
 import { Box } from '../box'
 
-interface SidedrawerOverlayProps {
-  onClose: () => void
-}
-
 const fadeIn = {
   from: {
     opacity: 0
@@ -17,13 +13,12 @@ const fadeIn = {
   }
 }
 
-export const SidedrawerOverlay: React.FC<SidedrawerOverlayProps> = ({
-  onClose
-}) => (
+export const SidedrawerOverlay: React.FC = () => (
   <Box
     css={{
       animation: `${fadeIn} 100ms ease-out`,
       bg: '$tonal600',
+      cursor: 'pointer',
       height: '100vh',
       left: '0',
       opacity: '0.6',
@@ -32,6 +27,5 @@ export const SidedrawerOverlay: React.FC<SidedrawerOverlayProps> = ({
       width: '100vw',
       zIndex: MAX_Z_INDEX - 1
     }}
-    onClick={onClose}
   />
 )
