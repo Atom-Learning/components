@@ -1,0 +1,126 @@
+---
+title: Sidedrawer
+component: Sidedrawer,Sidedrawer.Close,Sidedrawer.Content,Sidedrawer.Footer,Sidedrawer.Header,Sidedrawer.Item,Sidedrawer.Overlay,Sidedrawer.Accordion,Sidedrawer.AccordtionContent,Sidedrawer.AccordtionTrigger
+description: A collection of items to build flexible sidedrawer
+category: Navigation
+---
+
+`Sidedrawer` exports components that combine to build complex side navigation.
+
+## The main sidedrawer structure
+
+Sidedrawer exposes few main elements to build foundations.
+The core element is a `Sidedrawer` which wraps entire components composition.
+`Sidedrawer` requires `isOpen` property. This property determines if the whole `Sidedrawer` is visible or not.
+Other main elements:
+
+- `Sidedrawer.Header` - It's based on `TopBar` component, so it plays really well with all `TopBar` subcomponents. This component is flexible, so you can render anything you need inside of it (for example app logo, Sidedrawer.Close etc.)
+- `Sidedrawer.Close` - It's an `"close" ActionIcon` which requires `onClose` prop.
+- `Sidedrawer.Content` - This is the wrapper for all `Sidedrawer.Item` items. The content is scrollable.
+- `Sidedrawer.Footer` - Optional part of the `Sidedrawer`. It's fixed to the botton. You can pass whatever you need as it's children.
+- `Sidedrawer.Overlay` - Full screen overlay positioned under the `Sidedrawer menu`. It expects `onClose` prop, so you can close the whole menu by clicking on `Overlay` area. This in an optional element.
+
+```tsx
+<Sidedrawer isOpen>
+  <Sidedrawer.Header>
+    <Sidedrawer.Close onClose={() => console.log('closed')} />
+  </Sidedrawer.Header>
+  <Sidedrawer.Content>Sidedrawer items and accordtions here</Sidedrawer.Content>
+  <Sidedrawer.Footer>Footer items here</Sidedrawer.Footer>
+  <Sidedrawer.Overlay />
+</Sidedrawer>
+```
+
+## Sidedrawer items
+
+Sidedrawer exposes `Item` component to build a navigation elements.
+`Sidedrawer.Item` is only component you need to define `Accordion item`, `Link` or a `Button`.
+This component lets you pass various composition of props which determines what kind of element you'll render.
+
+- `href` prop determine a link render
+- `onClick` prop determines a button render
+- `value` determines accordion item render. Accordion expects few other elements which are described below in this section.
+
+**Link item:**
+
+```tsx
+<Sidedrawer.Item href={'/'}>
+  <Icon is={Apps} css={{ mr: '$2' }} />
+  Dashboard
+</Sidedrawer.Item>
+```
+
+**Button item:**
+
+```tsx
+<Sidedrawer.Item onClick={logout}>
+  <Icon is={Exit} css={{ mr: '$2' }} />
+  Log out
+</Sidedrawer.Item>
+```
+
+**Accordion item:**
+
+Accordion item requires few elements to work properly:
+
+- `value` property is a unique identifier needed to expand accordion content. [read more](https://www.radix-ui.com/docs/primitives/components/accordion#item)
+- `Sidedrawer.AccordionTrigger` - This component is a trigger which expand/collapse accordtion content. You can pass a text or components composition as its children.
+- `Sidedrawer.AccordionContent` - This component contains whole accorion content. Most likely you would like to pass few another `Sidedrawer.Item` items inside. Accordion content is collapsed until you click the `Sidedrawer.AccordionTrigger` to expand it.
+
+```tsx
+<Sidedrawer.Item value="your_unique_identifier">
+  <Sidedrawer.AccordionTrigger>
+    <Icon is={New} css={{ mr: '$2' }} />
+    Set work
+  </Sidedrawer.AccordionTrigger>
+  <Sidedrawer.AccordionContent>
+    <Sidedrawer.Item href={'/practice'}>
+      <Icon is={Feed} css={{ mr: '$2' }} />
+      Practice
+    </Sidedrawer.Item>
+    <Sidedrawer.Item href={'/test'}>
+      <Icon is={Inbox} css={{ mr: '$2' }} />
+      Test
+    </Sidedrawer.Item>
+  </Sidedrawer.AccordionContent>
+</Sidedrawer.Item>
+```
+
+## All Sidedrawer components composition
+
+```tsx
+<Sidedrawer isOpen>
+  <Sidedrawer.Header>
+    <Sidedrawer.Close onClose={() => console.log('closed')} />
+    <TopBar.BrandLogo
+      src={'https://atomlearning.co.uk/_next/static/media/logo.e9276284.svg'}
+    />
+  </Sidedrawer.Header>
+  <Sidedrawer.Content>
+    <Sidedrawer.Item href={'/'} active>
+      Dashboard
+    </Sidedrawer.Item>
+    <Sidedrawer.Item value="1" disabled>
+      <Sidedrawer.AccordionTrigger>Set work</Sidedrawer.AccordionTrigger>
+      <Sidedrawer.AccordionContent>
+        <Sidedrawer.Item href={'/'}>Set Practice</Sidedrawer.Item>
+        <Sidedrawer.Item href={'/'}>Mock Tests</Sidedrawer.Item>
+      </Sidedrawer.AccordionContent>
+    </Sidedrawer.Item>
+    <Sidedrawer.Item value="2">
+      <Sidedrawer.AccordionTrigger>Resources</Sidedrawer.AccordionTrigger>
+      <Sidedrawer.AccordionContent>
+        <Sidedrawer.Item onClick={() => console.log('clicked!')}>
+          I am a button
+        </Sidedrawer.Item>
+        <Sidedrawer.Item active href="/">
+          I am a link
+        </Sidedrawer.Item>
+        <Sidedrawer.Item href="/">Link to</Sidedrawer.Item>
+      </Sidedrawer.AccordionContent>
+    </Sidedrawer.Item>
+  </Sidedrawer.Content>
+  <Sidedrawer.Footer>The footer content</Sidedrawer.Footer>
+  <Sidedrawer.Overlay onClose={() => console.log('closed')} />
+</Sidedrawer>
+```
