@@ -15,15 +15,12 @@ const generateColors = (tokenPrefix, colorName) => {
   return colors
 }
 
-const white = 'white'
-const black = '#191919'
-
 export const { styled, createTheme } = createStitches({
   theme: {
     colors: {
-      background: white,
-      foreground: black,
-      foreground6plus: white,
+      background: 'white',
+      foreground: slate.slate9,
+      foreground6plus: 'white',
       ...blue,
       ...generateAlphaColors('blue', blue),
       ...slate,
@@ -37,7 +34,7 @@ colorSchemes['interactive-loContrast1'] = createTheme(
   {
     colors: {
       interactiveForeground: '$foreground',
-      interactive1: white,
+      interactive1: 'white',
       interactive2: '$accent1',
       interactive3: '$accent2'
     }
