@@ -20,8 +20,6 @@
   "license": "ISC",
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^11.2.0",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.8.1",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
     "esbuild": "^0.14.10",
