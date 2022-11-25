@@ -8,24 +8,24 @@ import { SidedrawerAccordionItem } from './SidedrawerAccordion/'
 const StyledLink = styled('a', sidedrawerItemStyles)
 const StyledButton = styled('button', sidedrawerItemStyles)
 
-type SidedrawerAccordionItemEnhancedProps = React.ComponentProps<
-  typeof SidedrawerAccordionItem
-> & {
-  href?: never
-  onClick?: never
-}
-
 type SidedrawerItemProps = {
   active?: boolean
   disabled?: boolean
 } & (
-  | SidedrawerAccordionItemEnhancedProps
   | {
+      asChild?: boolean
+      href?: never
+      onClick?: never
+      value: string
+    }
+  | {
+      asChild?: never
       href: string
       value?: never
       onClick?: never
     }
   | {
+      asChild?: never
       href?: never
       value?: never
       onClick: () => void
@@ -64,12 +64,7 @@ export const SidedrawerItem: React.FC<SidedrawerItemProps> = ({
 
   if (href) {
     return (
-      <StyledLink
-        active={active}
-        disabled={disabled}
-        href={href}
-        {...remainingProps}
-      >
+      <StyledLink active={active} href={href} {...remainingProps}>
         {children}
       </StyledLink>
     )

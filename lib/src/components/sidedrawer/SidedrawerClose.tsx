@@ -10,7 +10,7 @@ interface SidedrawerCloseProps {
 export const SidedrawerClose: React.FC<SidedrawerCloseProps> = ({
   onClose
 }) => (
-  <ActionIcon appearance="simple" size="md" onClick={onClose}>
+  <ActionIcon appearance="simple" label="close" size="md" onClick={onClose}>
     <Icon
       is={Close}
       css={{
