@@ -2,11 +2,15 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Flex, globalCss } from '../src'
+import { Box, Button, Flex, Stack, globalCss } from '../src'
 
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
-const App = () => (
+
+const App = () => {
+
+  const [state, setState] = React.useState(true)
+  return (
   <Flex
     css={{
       minHeight: '100vh',
@@ -15,8 +19,12 @@ const App = () => (
       flexDirection: 'column'
     }}
   >
-    <Box />
+    <Stack>
+      <Button onClick={() => setState(false)}>Yolo</Button>
+      {state && <Button>Yolo</Button>}
+      <Button>Yolo</Button>
+    </Stack>
   </Flex>
-)
+)}
 
 ReactDOM.render(<App />, document.getElementById('root'))
