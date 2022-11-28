@@ -16,6 +16,7 @@ const fadeIn = keyframes({
 
 export const SidedrawerOverlay: React.FC = () => (
   <Box
+    data-testid={'sidedrawer_overlay'}
     css={{
       animation: `${fadeIn} 300ms ease-in-out`,
       animationFillMode: 'forwards',

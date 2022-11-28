@@ -84,7 +84,13 @@ export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
   return (
     <>
       <Dialog>
-        <StyledBox open={isOpen}>{contentChildren}</StyledBox>
+        <StyledBox
+          role="navigation"
+          data-state={isOpen ? 'open' : 'closed'}
+          open={isOpen}
+        >
+          {contentChildren}
+        </StyledBox>
       </Dialog>
       {isOpen && <Box onClick={onClose}>{overlayChild}</Box>}
     </>
