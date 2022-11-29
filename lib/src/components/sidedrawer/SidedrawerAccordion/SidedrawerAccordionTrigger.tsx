@@ -15,9 +15,9 @@ const StyledTrigger = styled(Trigger, {
 })
 
 const StyledIcon = styled(Icon, {
-  '[data-state=open] &': { transform: 'rotate(-180deg)' },
-  '@media (prefers-reduced-motion: no-preference)': {
-    transition: 'transform .2s ease'
+  transition: 'transform 300ms',
+  '[data-state="open"] > &': {
+    transform: 'rotate(180deg)'
   }
 })
 

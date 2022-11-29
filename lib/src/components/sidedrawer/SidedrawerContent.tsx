@@ -1,7 +1,7 @@
 import React, { isValidElement } from 'react'
 
 import { Box } from '../box'
-import { SidedrawerAccordion } from './SidedrawerAccordion'
+import { SidedrawerAccordionRoot } from './SidedrawerAccordion/'
 
 export const SidedrawerContent: React.FC = ({ children }) => {
   let hasAccordionItems = false
@@ -21,7 +21,9 @@ export const SidedrawerContent: React.FC = ({ children }) => {
       }}
     >
       {hasAccordionItems ? (
-        <SidedrawerAccordion type="single">{children}</SidedrawerAccordion>
+        <SidedrawerAccordionRoot type="single">
+          {children}
+        </SidedrawerAccordionRoot>
       ) : (
         children
       )}

@@ -7,6 +7,7 @@ import { styled } from '~/stitches'
 import { Box } from '../box/Box'
 import {
   SidedrawerAccordionContent,
+  SidedrawerAccordionItem,
   SidedrawerAccordionTrigger
 } from './SidedrawerAccordion'
 import { SidedrawerClose } from './SidedrawerClose'
@@ -22,6 +23,7 @@ interface SidedrawerProps {
 }
 
 type SidedrawerSubComponents = {
+  Accordion: typeof SidedrawerAccordionItem
   AccordionContent: typeof SidedrawerAccordionContent
   AccordionTrigger: typeof SidedrawerAccordionTrigger
   Close: typeof SidedrawerClose
@@ -53,7 +55,7 @@ const StyledBox = styled(Box, {
   }
 })
 
-export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
+export const Sidedrawer: React.FC<SidedrawerProps> &
   SidedrawerSubComponents = ({ children, isOpen, onClose }) => {
   let overlayChild: typeof SidedrawerOverlay | null = null
   const contentChildren: React.ReactNode[] = []
@@ -97,6 +99,7 @@ export const Sidedrawer: React.FC<React.PropsWithChildren<SidedrawerProps>> &
   )
 }
 
+Sidedrawer.Accordion = SidedrawerAccordionItem
 Sidedrawer.AccordionContent = SidedrawerAccordionContent
 Sidedrawer.AccordionTrigger = SidedrawerAccordionTrigger
 Sidedrawer.Close = SidedrawerClose

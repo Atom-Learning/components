@@ -1,18 +1,9 @@
 import React from 'react'
 
 import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { keyframes } from '~/stitches'
+import { fadeIn } from '~/utilities'
 
 import { Box } from '../box'
-
-const fadeIn = keyframes({
-  from: {
-    opacity: 0
-  },
-  to: {
-    opacity: 0.6
-  }
-})
 
 export const SidedrawerOverlay: React.FC = () => (
   <Box
@@ -20,7 +11,7 @@ export const SidedrawerOverlay: React.FC = () => (
     css={{
       animation: `${fadeIn} 300ms ease-in-out`,
       animationFillMode: 'forwards',
-      bg: '$tonal600',
+      bg: '$alpha600',
       cursor: 'pointer',
       height: '100vh',
       left: '0',

@@ -35,7 +35,7 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
             Dashboard
           </Sidedrawer.Item>
           <Sidedrawer.Item onClick={increase}>Button Count</Sidedrawer.Item>
-          <Sidedrawer.Item value="1">
+          <Sidedrawer.Accordion value="1">
             <Sidedrawer.AccordionTrigger>Set Work</Sidedrawer.AccordionTrigger>
             <Sidedrawer.AccordionContent>
               <Sidedrawer.Item href="/practice">Set Practice</Sidedrawer.Item>
@@ -44,7 +44,7 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
                 Accordion Count
               </Sidedrawer.Item>
             </Sidedrawer.AccordionContent>
-          </Sidedrawer.Item>
+          </Sidedrawer.Accordion>
         </Sidedrawer.Content>
         <Sidedrawer.Footer>
           <Button
@@ -89,17 +89,17 @@ describe('Sidedrawer', () => {
   it('should render closed accordion item', async () => {
     const { findByRole } = render(<TestingComponent />)
 
-    const accordtionTrigger = await findByRole('button', { name: 'Set Work' })
-    expect(accordtionTrigger).toHaveAttribute('data-state', 'closed')
+    const accordionTrigger = await findByRole('button', { name: 'Set Work' })
+    expect(accordionTrigger).toHaveAttribute('data-state', 'closed')
   })
 
   it('should expand an accordion by clicking on trigger and display proper accordion children', async () => {
     const { container, findByRole, queryByRole } = render(<TestingComponent />)
 
     expect(queryByRole('link', { name: 'Set Practice' })).toBeNull()
-    const accordtionTrigger = await findByRole('button', { name: 'Set Work' })
+    const accordionTrigger = await findByRole('button', { name: 'Set Work' })
 
-    fireEvent.click(accordtionTrigger)
+    fireEvent.click(accordionTrigger)
 
     const setPracticeLink = await findByRole('link', { name: 'Set Practice' })
     const increaseButton = await findByRole('button', {
@@ -107,7 +107,7 @@ describe('Sidedrawer', () => {
     })
 
     expect(setPracticeLink).toHaveAttribute('href', '/practice')
-    expect(accordtionTrigger).toHaveAttribute('data-state', 'open')
+    expect(accordionTrigger).toHaveAttribute('data-state', 'open')
     expect(container).toMatchSnapshot()
   })
 

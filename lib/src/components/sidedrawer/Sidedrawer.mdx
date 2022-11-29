@@ -1,6 +1,6 @@
 ---
 title: Sidedrawer
-component: Sidedrawer,Sidedrawer.Close,Sidedrawer.Content,Sidedrawer.Footer,Sidedrawer.Header,Sidedrawer.Item,Sidedrawer.Overlay,Sidedrawer.Accordion,Sidedrawer.AccordtionContent,Sidedrawer.AccordtionTrigger
+component: Sidedrawer,Sidedrawer.Close,Sidedrawer.Content,Sidedrawer.Footer,Sidedrawer.Header,Sidedrawer.Item,Sidedrawer.Overlay,Sidedrawer.Accordion,Sidedrawer.AccordionContent,Sidedrawer.AccordionTrigger
 description: A collection of items to build flexible sidedrawer
 category: Navigation
 ---
@@ -29,7 +29,7 @@ Other main elements:
   <Sidedrawer.Header>
     <Sidedrawer.Close onClose={() => console.log('closed')} />
   </Sidedrawer.Header>
-  <Sidedrawer.Content>Sidedrawer items and accordtions here</Sidedrawer.Content>
+  <Sidedrawer.Content>Sidedrawer items and Accordions here</Sidedrawer.Content>
   <Sidedrawer.Footer>Footer items here</Sidedrawer.Footer>
   <Sidedrawer.Overlay />
 </Sidedrawer>
@@ -68,7 +68,7 @@ This component lets you pass various composition of props which determines what 
 Accordion item requires few elements to work properly:
 
 - `value` property is a unique identifier needed to expand accordion content. [read more](https://www.radix-ui.com/docs/primitives/components/accordion#item)
-- `Sidedrawer.AccordionTrigger` - This component is a trigger which expand/collapse accordtion content. You can pass a text or components composition as its children.
+- `Sidedrawer.AccordionTrigger` - This component is a trigger which expand/collapse Accordion content. You can pass a text or components composition as its children.
 - `Sidedrawer.AccordionContent` - This component contains whole accorion content. Most likely you would like to pass few another `Sidedrawer.Item` items inside. Accordion content is collapsed until you click the `Sidedrawer.AccordionTrigger` to expand it.
 
 ```tsx
