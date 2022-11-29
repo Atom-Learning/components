@@ -2,6 +2,7 @@ export const sidedrawerItemStyles = {
   alignItems: 'center',
   bg: 'white',
   border: 'unset',
+  borderLeft: '4px solid transparent',
   color: '$tonal600',
   cursor: 'pointer',
   display: 'flex',

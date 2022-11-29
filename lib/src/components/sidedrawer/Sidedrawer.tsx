@@ -79,16 +79,10 @@ export const Sidedrawer: React.FC<SidedrawerProps> &
   })
 
   return (
-    <Dialog.Root open={isOpen} onOpenChange={onClose}>
+    <Dialog.Root open={isOpen} onOpenChange={() => isOpen && onClose()}>
       <Dialog.Portal>
         {overlayChild}
-        <StyledContent
-          role="navigation"
-          onEscapeKeyDown={onClose}
-          onInteractOutside={onClose}
-        >
-          {contentChildren}
-        </StyledContent>
+        <StyledContent role="navigation">{contentChildren}</StyledContent>
       </Dialog.Portal>
     </Dialog.Root>
   )
