@@ -2,48 +2,40 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-cLTcXe > .c-iSnHBU {
+  .c-eCmqPI > *:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-eCmqPI > *:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-eCmqPI > .c-iSnHBU {
     max-width: 65ch;
   }
 
-  .c-cLTcXe > .c-iSnHBU:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-iSnHBU:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-fIXJvv {
+  .c-eCmqPI > .c-fIXJvv {
     max-width: 75ch;
   }
 
-  .c-cLTcXe > .c-fIXJvv:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-iQukjL {
+  .c-eCmqPI > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-cLTcXe > .c-iQukjL:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-fNKiiB {
+  .c-eCmqPI > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-cLTcXe > .c-eWgOGC {
+  .c-eCmqPI > .c-eWgOGC {
     display: block;
   }
 
-  .c-cLTcXe > .c-eWgOGC:not(:first-child) {
+  .c-eCmqPI > .c-eWgOGC:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-cLTcXe > .c-eWgOGC:not(:last-child) {
+  .c-eCmqPI > .c-eWgOGC:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -189,7 +181,7 @@ exports[`StackContent component renders a stack content 1`] = `
 
 <div>
   <div
-    class="c-cLTcXe"
+    class="c-eCmqPI"
   >
     <h2
       class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
