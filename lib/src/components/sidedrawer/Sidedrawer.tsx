@@ -30,7 +30,6 @@ type SidedrawerSubComponents = {
   Footer: typeof SidedrawerFooter
   Header: typeof SidedrawerHeader
   Item: typeof SidedrawerItem
-  Overlay: typeof SidedrawerOverlay
 }
 
 const slideIn = keyframes({
@@ -64,29 +63,14 @@ const StyledContent = styled(Dialog.Content, {
 })
 
 export const Sidedrawer: React.FC<SidedrawerProps> &
-  SidedrawerSubComponents = ({ children, isOpen, onClose }) => {
-  let overlayChild: typeof SidedrawerOverlay | null = null
-  const contentChildren: React.ReactNode[] = []
-
-  React.Children.forEach(children, (child) => {
-    if (React.isValidElement(child) && child.type === SidedrawerOverlay) {
-      overlayChild = React.cloneElement(child, {
-        'data-testid': 'sidedrawer_overlay'
-      }) as unknown as typeof SidedrawerOverlay
-    } else {
-      contentChildren.push(child)
-    }
-  })
-
-  return (
-    <Dialog.Root open={isOpen} onOpenChange={() => isOpen && onClose()}>
-      <Dialog.Portal>
-        {overlayChild}
-        <StyledContent role="navigation">{contentChildren}</StyledContent>
-      </Dialog.Portal>
-    </Dialog.Root>
-  )
-}
+  SidedrawerSubComponents = ({ children, isOpen, onClose }) => (
+  <Dialog.Root open={isOpen} onOpenChange={() => isOpen && onClose()}>
+    <Dialog.Portal>
+      <SidedrawerOverlay data-testid="sidedrawer_overlay" />
+      <StyledContent role="navigation">{children}</StyledContent>
+    </Dialog.Portal>
+  </Dialog.Root>
+)
 
 Sidedrawer.Accordion = SidedrawerAccordionItem
 Sidedrawer.AccordionContent = SidedrawerAccordionContent
@@ -96,4 +80,3 @@ Sidedrawer.Content = SidedrawerContent
 Sidedrawer.Footer = SidedrawerFooter
 Sidedrawer.Header = SidedrawerHeader
 Sidedrawer.Item = SidedrawerItem
-Sidedrawer.Overlay = SidedrawerOverlay

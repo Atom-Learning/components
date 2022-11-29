@@ -98,14 +98,6 @@ exports[`Sidedrawer renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-bkJeSF > svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-bkJeSF > svg:hover {
-    color: var(--colors-tonal500);
-  }
-
   .c-buzpRz {
     align-items: center;
     background: white;
@@ -333,21 +325,21 @@ exports[`Sidedrawer renders 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv {
+  .c-fDzwZw-otpKd-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv[disabled] {
+  .c-fDzwZw-otpKd-cv[disabled] {
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
@@ -384,6 +376,14 @@ exports[`Sidedrawer renders 1`] = `
     margin-right: var(--space-3);
   }
 
+  .c-dbrbZt-icPPzeV-css {
+    color: var(--colors-tonal300);
+  }
+
+  .c-dbrbZt-icPPzeV-css:hover {
+    color: var(--colors-tonal500);
+  }
+
   .c-PJLV-ifOjvfm-css {
     height: calc(100% - (var(--sizes-6) * 2));
     width: 100%;
@@ -418,12 +418,12 @@ exports[`Sidedrawer renders 1`] = `
         0
         <button
           aria-label="close"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-bkJeSF"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-icPPzeV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -607,14 +607,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     vertical-align: middle;
   }
 
-  .c-bkJeSF > svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-bkJeSF > svg:hover {
-    color: var(--colors-tonal500);
-  }
-
   .c-buzpRz {
     align-items: center;
     background: white;
@@ -842,21 +834,21 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     background: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv {
+  .c-fDzwZw-otpKd-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv[disabled] {
+  .c-fDzwZw-otpKd-cv[disabled] {
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
@@ -891,6 +883,14 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
   .c-dhzjXW-ihbsENp-css {
     margin-left: var(--space-3);
     margin-right: var(--space-3);
+  }
+
+  .c-dbrbZt-icPPzeV-css {
+    color: var(--colors-tonal300);
+  }
+
+  .c-dbrbZt-icPPzeV-css:hover {
+    color: var(--colors-tonal500);
   }
 
   .c-PJLV-ifOjvfm-css {
@@ -937,12 +937,12 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
         0
         <button
           aria-label="close"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv c-bkJeSF"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-icPPzeV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

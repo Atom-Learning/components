@@ -55,7 +55,6 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
             Log out
           </Button>
         </Sidedrawer.Footer>
-        <Sidedrawer.Overlay />
       </Sidedrawer>
     </>
   )
