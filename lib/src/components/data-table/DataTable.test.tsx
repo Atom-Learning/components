@@ -239,12 +239,12 @@ describe('DataTable Remote component', () => {
       </Wrapper>
     )
 
-    expect(fetcher).toHaveBeenCalledWith(
-      0,
-      PAGE_SIZE,
-      SORT_COLUMN,
-      SORT_DIRECTION
-    )
+    expect(fetcher).toHaveBeenCalledWith({
+      pageIndex: 0,
+      pageSize: PAGE_SIZE,
+      sortBy: SORT_COLUMN,
+      sortDirection: SORT_DIRECTION
+    })
   })
 
   it('The fetcher is called with the correct page when going to a different page', async () => {
@@ -268,12 +268,12 @@ describe('DataTable Remote component', () => {
 
     const nextPageButton = screen.getByLabelText('Next page')
     userEvent.click(nextPageButton)
-    expect(fetcher).toHaveBeenLastCalledWith(
-      1,
-      PAGE_SIZE,
-      SORT_COLUMN,
-      SORT_DIRECTION
-    )
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: 1,
+      pageSize: PAGE_SIZE,
+      sortBy: SORT_COLUMN,
+      sortDirection: SORT_DIRECTION
+    })
   })
 
   it('The fetcher is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
@@ -297,7 +297,12 @@ describe('DataTable Remote component', () => {
 
     userEvent.click(nameHeader)
 
-    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, SORT_COLUMN, 'asc')
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: 0,
+      pageSize: PAGE_SIZE,
+      sortBy: SORT_COLUMN,
+      sortDirection: 'asc'
+    })
   })
 
   it('The fetcher is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
@@ -323,7 +328,12 @@ describe('DataTable Remote component', () => {
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
     userEvent.click(nameHeader)
 
-    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, SORT_COLUMN, 'desc')
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: 0,
+      pageSize: PAGE_SIZE,
+      sortBy: SORT_COLUMN,
+      sortDirection: 'desc'
+    })
   })
 
   it('A loader should appear while fetching the data, and then removed', async () => {
@@ -414,6 +424,11 @@ describe('DataTable Remote component', () => {
 
     userEvent.click(await screen.findByText('Retry fetch'))
     expect(fetcher).toHaveBeenCalledTimes(2)
-    expect(fetcher).toHaveBeenLastCalledWith(0, PAGE_SIZE, undefined, null)
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: 0,
+      pageSize: PAGE_SIZE,
+      sortBy: undefined,
+      sortDirection: null
+    })
   })
 })

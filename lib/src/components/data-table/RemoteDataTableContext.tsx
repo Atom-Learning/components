@@ -23,18 +23,20 @@ type TFetcherResult = {
   results: Array<Record<string, unknown>>
 }
 
+type TFetcherOptions = {
+  pageIndex: number
+  pageSize: number
+  sortBy: string
+  sortDirection: 'asc' | 'desc' | null
+}
+
 type TTableProviderProps = {
   columns
   defaultPageSize?: number
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
   css?: CSS
-  fetcher: (
-    pageIndex: number,
-    pageSize: number,
-    sortBy: string,
-    sortDirection: 'asc' | 'desc' | null
-  ) => Promise<TFetcherResult>
+  fetcher: (options: TFetcherOptions) => Promise<TFetcherResult>
 }
 
 export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
@@ -79,12 +81,12 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
   const doFetchData = React.useCallback(async () => {
     try {
       setApiQueryStatus(ApiQueryStatus.PENDING)
-      const newData = await fetcher(
+      const newData = await fetcher({
         pageIndex,
         pageSize,
-        sorting[0]?.id,
-        sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
-      )
+        sortBy: sorting[0]?.id,
+        sortDirection: sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
+      })
 
       invariant(
         Array.isArray(newData?.results),
