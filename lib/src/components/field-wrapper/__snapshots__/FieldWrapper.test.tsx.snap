@@ -191,8 +191,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin-top: var(--space-2);
   }
 
-  .c-dyvMgW-igszWir-css {
-    color: inherit;
+  .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -248,7 +247,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <span
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igszWir-css"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
       >
         Example error
       </span>

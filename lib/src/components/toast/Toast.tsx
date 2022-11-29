@@ -119,7 +119,7 @@ export const Toast: React.FC<ToastProps> = React.memo(
           {type === 'error' && (
             <Icon size="sm" css={{ mr: '$3', flex: '0 0 auto' }} is={Error} />
           )}
-          <Text css={{ color: 'inherit' }}>{message}</Text>
+          <Text>{message}</Text>
           {type === 'loading' ? (
             <Loader css={{ flex: '0 0 auto', ml: 'auto' }} />
           ) : (

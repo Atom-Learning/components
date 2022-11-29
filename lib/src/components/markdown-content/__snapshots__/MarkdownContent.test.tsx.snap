@@ -343,14 +343,6 @@ exports[`MarkdownContent component renders 1`] = `
     width: 100%;
   }
 
-  .c-jryFOR-ibHwuwj-css {
-    color: inherit;
-  }
-
-  .c-dyvMgW-ibHwuwj-css {
-    color: inherit;
-  }
-
   .c-iQukjL-igZTZYS-css p:before,
   .c-iQukjL-igZTZYS-css p:after {
     display: none;
@@ -365,7 +357,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Headings
     </h2>
@@ -373,32 +365,32 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h1
-      class="c-jryFOR c-jryFOR-kYeJd-size-xl c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-kYeJd-size-xl"
     >
       h1 Heading
     </h1>
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       h2 Heading
     </h2>
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       h3 Heading
     </h3>
     <h4
-      class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-dtbHih-size-sm"
     >
       h4 Heading
     </h4>
     <h5
-      class="c-jryFOR c-jryFOR-llheLm-size-xs c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-llheLm-size-xs"
     >
       h5 Heading
     </h5>
     <h6
-      class="c-jryFOR c-jryFOR-llheLm-size-xs c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-llheLm-size-xs"
     >
       h6 Heading
     </h6>
@@ -406,7 +398,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Emphasis
     </h2>
@@ -414,7 +406,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <strong
         class="c-ecBjWS"
@@ -423,7 +415,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <strong
         class="c-ecBjWS"
@@ -432,7 +424,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <em
         class="c-bYNGXt"
@@ -441,7 +433,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <em
         class="c-bYNGXt"
@@ -453,7 +445,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Blockquotes
     </h2>
@@ -464,7 +456,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Lists
     </h2>
@@ -472,7 +464,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       Unordered
     </h3>
@@ -483,7 +475,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Create a list by starting a line with 
           <code
@@ -509,7 +501,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
@@ -520,7 +512,7 @@ exports[`MarkdownContent component renders 1`] = `
             class="c-PJLV"
           >
             <p
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
             >
               Marker character change forces new list start:
             </p>
@@ -531,7 +523,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
                 >
                   Ac tristique libero volutpat at
                 </p>
@@ -544,7 +536,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
@@ -557,7 +549,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -570,14 +562,14 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Very easy!
         </p>
       </li>
     </ul>
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       Ordered
     </h3>
@@ -588,7 +580,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -597,7 +589,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Consectetur adipiscing elit
         </p>
@@ -606,7 +598,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           Integer molestie lorem at massa
         </p>
@@ -615,7 +607,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           You can use sequential numbers...
         </p>
@@ -624,7 +616,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
         >
           ...or keep all the numbers as 
           <code
@@ -639,7 +631,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Code
     </h2>
@@ -647,12 +639,12 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       Inline code
     </h3>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       This is inline 
       <code
@@ -662,7 +654,7 @@ exports[`MarkdownContent component renders 1`] = `
       </code>
     </p>
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       Indented code
     </h3>
@@ -675,7 +667,7 @@ line 2 of code
 line 3 of code
     </pre>
     <h3
-      class="c-jryFOR c-jryFOR-fOoUdm-size-md c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       Block code "fences"
     </h3>
@@ -688,7 +680,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Links
     </h2>
@@ -696,7 +688,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
         class="c-dEwrHQ c-dEwrHQ-gvmVBy-size-md"
@@ -706,7 +698,7 @@ line 3 of code
       </a>
     </p>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
         class="c-dEwrHQ c-dEwrHQ-gvmVBy-size-md"
@@ -720,7 +712,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <h2
-      class="c-jryFOR c-jryFOR-bSbzjX-size-lg c-jryFOR-ibHwuwj-css"
+      class="c-jryFOR c-jryFOR-bSbzjX-size-lg"
     >
       Images
     </h2>
@@ -728,7 +720,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibHwuwj-css"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <img
         alt="Minion"
