@@ -15,7 +15,7 @@ export const SidedrawerContent: React.FC = ({ children }) => {
   return (
     <Box
       css={{
-        height: 'calc(100% - ($6 * 2))',
+        height: 'calc(100% - $6)',
         width: '100%',
         overflowY: 'auto'
       }}

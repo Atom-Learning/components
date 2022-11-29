@@ -45,6 +45,8 @@ const slideOut = keyframes({
 const StyledContent = styled(Dialog.Content, {
   bg: 'white',
   boxShadow: '$2',
+  display: 'flex',
+  flexDirection: 'column',
   position: 'fixed',
   top: 0,
   left: 0,

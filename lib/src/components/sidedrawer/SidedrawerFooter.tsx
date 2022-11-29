@@ -10,6 +10,5 @@ export const SidedrawerFooter = styled(Flex, {
   height: '$6',
   justifyContent: 'center',
   p: '$3',
-  position: 'absolute',
   width: '100%'
 })
