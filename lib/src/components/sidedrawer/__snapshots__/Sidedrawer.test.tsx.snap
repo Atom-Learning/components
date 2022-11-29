@@ -50,34 +50,29 @@ exports[`Sidedrawer renders 1`] = `
     width: max-content;
   }
 
-  .c-ctxXMZ {
-    background: white;
-    box-shadow: var(--shadows-2);
+  .c-iXlyPW {
+    animation-fill-mode: forwards;
+    background: var(--colors-alpha600);
+    cursor: pointer;
+    height: 100vh;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    height: 100vh;
-    max-width: 304px;
-    translate: -304px 0;
-    transition: translate 300ms ease-in-out;
-    width: 100%;
-    z-index: 2147483647;
+    width: 100vw;
+    z-index: 2147483646;
   }
 
-  .c-fDzwZw {
-    align-items: center;
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-    border: unset;
-    border-radius: var(--radii-0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: unset;
-    transition: all 100ms ease-out;
-  }
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
 
   .c-dbrbZt {
     display: inline-block;
@@ -86,6 +81,16 @@ exports[`Sidedrawer renders 1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-iyvUmN {
+    color: var(--colors-tonal300);
+    cursor: pointer;
+    margin: var(--space-3);
+  }
+
+  .c-iyvUmN:hover {
+    color: var(--colors-tonal500);
   }
 
   .c-kmlUPp {
@@ -218,6 +223,30 @@ exports[`Sidedrawer renders 1`] = `
     position: absolute;
     width: 100%;
   }
+
+  .c-jhnHTe {
+    background: white;
+    box-shadow: var(--shadows-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-width: 304px;
+    width: 100%;
+    z-index: 2147483647;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jhnHTe[data-state="open"] {
+      animation: k-jLcgiN 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jhnHTe[data-state="closed"] {
+      animation: k-kSYzSh 250ms ease-out;
+    }
+}
 }
 
 @media  {
@@ -236,15 +265,6 @@ exports[`Sidedrawer renders 1`] = `
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
-  }
-
-  .c-ctxXMZ-cDwygN-open-true {
-    translate: 0 0;
-  }
-
-  .c-fDzwZw-PrXKS-size-md {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -293,25 +313,6 @@ exports[`Sidedrawer renders 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv {
-    background: transparent;
-    color: var(--colors-primary);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
   .c-fkUJsw-iSsXry-cv {
     background: var(--colors-danger);
     color: white;
@@ -344,10 +345,6 @@ exports[`Sidedrawer renders 1`] = `
     margin-right: var(--space-3);
   }
 
-  .c-dbrbZt-iesazQZ-css {
-    color: var(--colors-tonal300);
-  }
-
   .c-PJLV-ifOjvfm-css {
     height: calc(100% - (var(--sizes-6) * 2));
     width: 100%;
@@ -357,150 +354,114 @@ exports[`Sidedrawer renders 1`] = `
   .c-dhzjXW-ijroWjL-css {
     align-items: center;
   }
-
-  .c-PJLV-icjjmFN-css {
-    animation: k-eyOShd 300ms ease-in-out;
-    animation-fill-mode: forwards;
-    background: var(--colors-alpha600);
-    cursor: pointer;
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 2147483646;
-  }
 }
 
-<div>
+<div
+  aria-describedby="radix-4"
+  aria-labelledby="radix-3"
+  class="c-jhnHTe"
+  data-state="open"
+  id="radix-2"
+  role="navigation"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
   <div
-    class="c-glwkin c-glwkin-daNQNf-size-md"
+    class="c-PJLV c-PJLV-idUthMk-css"
   >
     <div
-      class="c-dhzjXW c-ftiHlK"
+      class="c-glwkin c-glwkin-daNQNf-size-md"
     >
-      <button
-        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
-        type="button"
+      <div
+        class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
       >
-        Open Sidedrawer
-      </button>
+        Count is: 
+        0
+        <svg
+          aria-hidden="true"
+          aria-label="close"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-iyvUmN"
+          type="button"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
-    class="c-PJLV c-ctxXMZ c-ctxXMZ-cDwygN-open-true"
-    data-state="open"
-    role="navigation"
+    class="c-PJLV c-PJLV-ifOjvfm-css"
   >
     <div
-      class="c-PJLV c-PJLV-idUthMk-css"
+      class="c-fGHEql"
     >
-      <div
-        class="c-glwkin c-glwkin-daNQNf-size-md"
+      <a
+        class="c-kmlUPp c-kmlUPp-ctpDzU-active-true"
+        href="/"
       >
-        <div
-          class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
+        Dashboard
+      </a>
+      <button
+        class="c-kmlUPp"
+      >
+        Button Count
+      </button>
+      <div
+        data-state="closed"
+      >
+        <h3
+          data-state="closed"
         >
-          Count is: 
-          0
           <button
-            aria-label="close"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv"
+            aria-controls="radix-0"
+            aria-expanded="false"
+            class="c-kqQsIy"
+            data-radix-collection-item=""
+            data-state="closed"
+            id="radix-1"
             type="button"
           >
+            <div
+              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            >
+              Set Work
+            </div>
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+              <polyline
+                points="6 10 12 16 18 10"
               />
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c-PJLV c-PJLV-ifOjvfm-css"
-    >
-      <div
-        class="c-fGHEql"
-      >
-        <a
-          class="c-kmlUPp c-kmlUPp-ctpDzU-active-true"
-          href="/"
-        >
-          Dashboard
-        </a>
-        <button
-          class="c-kmlUPp"
-        >
-          Button Count
-        </button>
+        </h3>
         <div
+          aria-labelledby="radix-1"
+          class="c-igwAPi"
           data-state="closed"
-        >
-          <h3
-            data-state="closed"
-          >
-            <button
-              aria-controls="radix-0"
-              aria-expanded="false"
-              class="c-kqQsIy"
-              data-radix-collection-item=""
-              data-state="closed"
-              id="radix-1"
-              type="button"
-            >
-              <div
-                class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-              >
-                Set Work
-              </div>
-              <svg
-                aria-hidden="true"
-                class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="6 10 12 16 18 10"
-                />
-              </svg>
-            </button>
-          </h3>
-          <div
-            aria-labelledby="radix-1"
-            class="c-igwAPi"
-            data-state="closed"
-            hidden=""
-            id="radix-0"
-            role="region"
-            style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-          />
-        </div>
+          hidden=""
+          id="radix-0"
+          role="region"
+          style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        />
       </div>
-    </div>
-    <div
-      class="c-dhzjXW c-jhgGug"
-    >
-      <button
-        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
-        type="button"
-      >
-        Log out
-      </button>
     </div>
   </div>
   <div
-    class="c-PJLV"
+    class="c-dhzjXW c-jhgGug"
   >
-    <div
-      class="c-PJLV c-PJLV-icjjmFN-css"
-      data-testid="sidedrawer_overlay"
-    />
+    <button
+      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      type="button"
+    >
+      Log out
+    </button>
   </div>
 </div>
 `;
@@ -555,34 +516,29 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     width: max-content;
   }
 
-  .c-ctxXMZ {
-    background: white;
-    box-shadow: var(--shadows-2);
+  .c-iXlyPW {
+    animation-fill-mode: forwards;
+    background: var(--colors-alpha600);
+    cursor: pointer;
+    height: 100vh;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    height: 100vh;
-    max-width: 304px;
-    translate: -304px 0;
-    transition: translate 300ms ease-in-out;
-    width: 100%;
-    z-index: 2147483647;
+    width: 100vw;
+    z-index: 2147483646;
   }
 
-  .c-fDzwZw {
-    align-items: center;
-    -webkit-appearance: none;
-    appearance: none;
-    background: white;
-    border: unset;
-    border-radius: var(--radii-0);
-    box-sizing: border-box;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: unset;
-    transition: all 100ms ease-out;
-  }
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
 
   .c-dbrbZt {
     display: inline-block;
@@ -591,6 +547,16 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-iyvUmN {
+    color: var(--colors-tonal300);
+    cursor: pointer;
+    margin: var(--space-3);
+  }
+
+  .c-iyvUmN:hover {
+    color: var(--colors-tonal500);
   }
 
   .c-kmlUPp {
@@ -723,6 +689,30 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     position: absolute;
     width: 100%;
   }
+
+  .c-jhnHTe {
+    background: white;
+    box-shadow: var(--shadows-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-width: 304px;
+    width: 100%;
+    z-index: 2147483647;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jhnHTe[data-state="open"] {
+      animation: k-jLcgiN 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-jhnHTe[data-state="closed"] {
+      animation: k-kSYzSh 250ms ease-out;
+    }
+}
 }
 
 @media  {
@@ -741,15 +731,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
-  }
-
-  .c-ctxXMZ-cDwygN-open-true {
-    translate: 0 0;
-  }
-
-  .c-fDzwZw-PrXKS-size-md {
-    height: var(--sizes-4);
-    width: var(--sizes-4);
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -798,25 +779,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     background: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-cmVfvW-cv {
-    background: transparent;
-    color: var(--colors-primary);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
   .c-fkUJsw-iSsXry-cv {
     background: var(--colors-danger);
     color: white;
@@ -849,10 +811,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     margin-right: var(--space-3);
   }
 
-  .c-dbrbZt-iesazQZ-css {
-    color: var(--colors-tonal300);
-  }
-
   .c-PJLV-ifOjvfm-css {
     height: calc(100% - (var(--sizes-6) * 2));
     width: 100%;
@@ -861,19 +819,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
 
   .c-dhzjXW-ijroWjL-css {
     align-items: center;
-  }
-
-  .c-PJLV-icjjmFN-css {
-    animation: k-eyOShd 300ms ease-in-out;
-    animation-fill-mode: forwards;
-    background: var(--colors-alpha600);
-    cursor: pointer;
-    height: 100vh;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 2147483646;
   }
 
   .c-PJLV-icVPQga-css > a {
@@ -887,165 +832,142 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
   }
 }
 
-<div>
+<div
+  aria-describedby="radix-24"
+  aria-labelledby="radix-23"
+  class="c-jhnHTe"
+  data-state="open"
+  id="radix-22"
+  role="navigation"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
   <div
-    class="c-glwkin c-glwkin-daNQNf-size-md"
+    class="c-PJLV c-PJLV-idUthMk-css"
   >
     <div
-      class="c-dhzjXW c-ftiHlK"
+      class="c-glwkin c-glwkin-daNQNf-size-md"
     >
-      <button
-        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
-        type="button"
+      <div
+        class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
       >
-        Open Sidedrawer
-      </button>
+        Count is: 
+        0
+        <svg
+          aria-hidden="true"
+          aria-label="close"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-iyvUmN"
+          type="button"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </div>
     </div>
   </div>
   <div
-    class="c-PJLV c-ctxXMZ c-ctxXMZ-cDwygN-open-true"
-    data-state="open"
-    role="navigation"
+    class="c-PJLV c-PJLV-ifOjvfm-css"
   >
     <div
-      class="c-PJLV c-PJLV-idUthMk-css"
+      class="c-fGHEql"
     >
-      <div
-        class="c-glwkin c-glwkin-daNQNf-size-md"
+      <a
+        class="c-kmlUPp c-kmlUPp-ctpDzU-active-true"
+        href="/"
       >
-        <div
-          class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
+        Dashboard
+      </a>
+      <button
+        class="c-kmlUPp"
+      >
+        Button Count
+      </button>
+      <div
+        data-state="open"
+      >
+        <h3
+          data-state="open"
         >
-          Count is: 
-          0
           <button
-            aria-label="close"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-cmVfvW-cv"
+            aria-controls="radix-20"
+            aria-disabled="true"
+            aria-expanded="true"
+            class="c-kqQsIy"
+            data-radix-collection-item=""
+            data-state="open"
+            id="radix-21"
             type="button"
           >
+            <div
+              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            >
+              Set Work
+            </div>
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iesazQZ-css"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+              <polyline
+                points="6 10 12 16 18 10"
               />
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c-PJLV c-PJLV-ifOjvfm-css"
-    >
-      <div
-        class="c-fGHEql"
-      >
-        <a
-          class="c-kmlUPp c-kmlUPp-ctpDzU-active-true"
-          href="/"
-        >
-          Dashboard
-        </a>
-        <button
-          class="c-kmlUPp"
-        >
-          Button Count
-        </button>
+        </h3>
         <div
+          aria-labelledby="radix-21"
+          class="c-igwAPi"
           data-state="open"
+          id="radix-20"
+          role="region"
+          style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
         >
-          <h3
-            data-state="open"
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
+          >
+            <a
+              class="c-kmlUPp"
+              href="/practice"
+            >
+              Set Practice
+            </a>
+          </div>
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
+          >
+            <a
+              class="c-kmlUPp"
+              href="/mock-tests"
+            >
+              Mock Tests
+            </a>
+          </div>
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
           >
             <button
-              aria-controls="radix-20"
-              aria-disabled="true"
-              aria-expanded="true"
-              class="c-kqQsIy"
-              data-radix-collection-item=""
-              data-state="open"
-              id="radix-21"
-              type="button"
+              class="c-kmlUPp"
             >
-              <div
-                class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-              >
-                Set Work
-              </div>
-              <svg
-                aria-hidden="true"
-                class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <polyline
-                  points="6 10 12 16 18 10"
-                />
-              </svg>
+              Accordion Count
             </button>
-          </h3>
-          <div
-            aria-labelledby="radix-21"
-            class="c-igwAPi"
-            data-state="open"
-            id="radix-20"
-            role="region"
-            style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
-          >
-            <div
-              class="c-PJLV c-PJLV-icVPQga-css"
-            >
-              <a
-                class="c-kmlUPp"
-                href="/practice"
-              >
-                Set Practice
-              </a>
-            </div>
-            <div
-              class="c-PJLV c-PJLV-icVPQga-css"
-            >
-              <a
-                class="c-kmlUPp"
-                href="/mock-tests"
-              >
-                Mock Tests
-              </a>
-            </div>
-            <div
-              class="c-PJLV c-PJLV-icVPQga-css"
-            >
-              <button
-                class="c-kmlUPp"
-              >
-                Accordion Count
-              </button>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="c-dhzjXW c-jhgGug"
-    >
-      <button
-        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
-        type="button"
-      >
-        Log out
-      </button>
-    </div>
   </div>
   <div
-    class="c-PJLV"
+    class="c-dhzjXW c-jhgGug"
   >
-    <div
-      class="c-PJLV c-PJLV-icjjmFN-css"
-      data-testid="sidedrawer_overlay"
-    />
+    <button
+      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      type="button"
+    >
+      Log out
+    </button>
   </div>
 </div>
 `;

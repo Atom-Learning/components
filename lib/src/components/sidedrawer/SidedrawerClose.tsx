@@ -1,21 +1,22 @@
+import { Close as DialogClose } from '@radix-ui/react-dialog'
 import { Close } from '@atom-learning/icons'
 import React from 'react'
-import { ActionIcon } from '../action-icon/ActionIcon'
+
+import { styled } from '~/stitches'
+
 import { Icon } from '../icon/Icon'
 
-interface SidedrawerCloseProps {
-  onClose: () => void
-}
+const StyledIcon = styled(Icon, {
+  color: '$tonal300',
+  cursor: 'pointer',
+  margin: '$3',
+  '&:hover': {
+    color: '$tonal500'
+  }
+})
 
-export const SidedrawerClose: React.FC<SidedrawerCloseProps> = ({
-  onClose
-}) => (
-  <ActionIcon appearance="simple" label="close" size="md" onClick={onClose}>
-    <Icon
-      is={Close}
-      css={{
-        color: '$tonal300'
-      }}
-    />
-  </ActionIcon>
+export const SidedrawerClose: React.FC = () => (
+  <DialogClose asChild>
+    <StyledIcon aria-label="close" is={Close} />
+  </DialogClose>
 )

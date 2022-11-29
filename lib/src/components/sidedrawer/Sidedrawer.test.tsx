@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { Button } from '../button/Button'
@@ -28,7 +28,7 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
       <Sidedrawer isOpen={isOpen} onClose={close}>
         <Sidedrawer.Header>
           Count is: {count}
-          <Sidedrawer.Close onClose={close} />
+          <Sidedrawer.Close />
         </Sidedrawer.Header>
         <Sidedrawer.Content>
           <Sidedrawer.Item href="/" active>
@@ -63,9 +63,10 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
 
 describe('Sidedrawer', () => {
   it('renders', async () => {
-    const { container } = render(<TestingComponent />)
+    const { findByRole } = render(<TestingComponent />)
 
-    expect(container).toMatchSnapshot()
+    const sidedrawer = await findByRole('navigation')
+    expect(sidedrawer).toMatchSnapshot()
   })
 
   it('should render link item', async () => {
@@ -94,7 +95,7 @@ describe('Sidedrawer', () => {
   })
 
   it('should expand an accordion by clicking on trigger and display proper accordion children', async () => {
-    const { container, findByRole, queryByRole } = render(<TestingComponent />)
+    const { findByRole, queryByRole } = render(<TestingComponent />)
 
     expect(queryByRole('link', { name: 'Set Practice' })).toBeNull()
     const accordionTrigger = await findByRole('button', { name: 'Set Work' })
@@ -102,13 +103,10 @@ describe('Sidedrawer', () => {
     fireEvent.click(accordionTrigger)
 
     const setPracticeLink = await findByRole('link', { name: 'Set Practice' })
-    const increaseButton = await findByRole('button', {
-      name: 'Accordion Count'
-    })
 
     expect(setPracticeLink).toHaveAttribute('href', '/practice')
     expect(accordionTrigger).toHaveAttribute('data-state', 'open')
-    expect(container).toMatchSnapshot()
+    expect(await findByRole('navigation')).toMatchSnapshot()
   })
 
   it('should close Sidedrawer by clicking "Close" icon', async () => {
@@ -129,21 +127,20 @@ describe('Sidedrawer', () => {
   })
 
   it('should open Sidedrawer', async () => {
-    const { findByRole, findByTestId, queryByTestId } = render(
+    const { findByRole, findByTestId, queryByTestId, queryByRole } = render(
       <TestingComponent initialOpen={false} />
     )
-    const sidedrawer = await findByRole('navigation')
+
     const sidedrawerOpenBtn = await findByRole('button', {
       name: 'Open Sidedrawer'
     })
 
     expect(queryByTestId('sidedrawer_overlay')).toBeNull()
-    expect(sidedrawer).toHaveAttribute('data-state', 'closed')
+    expect(queryByRole('navigation')).toBeNull()
 
     fireEvent.click(sidedrawerOpenBtn)
 
-    expect(sidedrawer).toHaveAttribute('data-state', 'open')
-    const overlay = await findByTestId('sidedrawer_overlay')
-    expect(overlay).toBeVisible()
+    expect(await findByRole('navigation')).toHaveAttribute('data-state', 'open')
+    expect(await findByTestId('sidedrawer_overlay')).toBeVisible()
   })
 })
