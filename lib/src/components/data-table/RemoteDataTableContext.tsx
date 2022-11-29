@@ -1,3 +1,4 @@
+import invariant from 'invariant'
 import * as React from 'react'
 import {
   useReactTable,
@@ -85,6 +86,11 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
         sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
       )
 
+      invariant(
+        Array.isArray(newData?.results),
+        'The fetcher function must return an object with a property `result` which must be an array'
+      )
+
       setData(newData)
       setApiQueryStatus(ApiQueryStatus.SUCCEDED)
     } catch (error) {
@@ -99,7 +105,7 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
   const table = useReactTable<unknown>({
     columns,
     data: data.results,
-    pageCount: Math.ceil(data.total / pageSize),
+    pageCount: Math.ceil(getTotalRows() / pageSize),
     getCoreRowModel: getCoreRowModel(),
     manualPagination: isPaginated,
     onPaginationChange: isPaginated ? setPagination : undefined,
