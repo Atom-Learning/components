@@ -18,45 +18,49 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
   const [count, setCount] = React.useState(initialCount)
 
   const increase = () => setCount(count + 1)
-  const close = () => setIsOpen(false)
+  const onOpenChange = () => setIsOpen((prevState) => !prevState)
 
   return (
-    <>
-      <TopBar>
-        <Button onClick={() => setIsOpen(true)}>Open Sidedrawer</Button>
-      </TopBar>
-      <Sidedrawer isOpen={isOpen} onClose={close}>
-        <Sidedrawer.Header>
-          Count is: {count}
-          <Sidedrawer.Close />
-        </Sidedrawer.Header>
+    <TopBar>
+      <Sidedrawer isOpen={isOpen} onOpenChange={onOpenChange}>
+        <Sidedrawer.Trigger asChild>
+          <Button>Open Sidedrawer</Button>
+        </Sidedrawer.Trigger>
         <Sidedrawer.Content>
-          <Sidedrawer.Item href="/" active>
-            Dashboard
-          </Sidedrawer.Item>
-          <Sidedrawer.Item onClick={increase}>Button Count</Sidedrawer.Item>
-          <Sidedrawer.Accordion value="1">
-            <Sidedrawer.AccordionTrigger>Set Work</Sidedrawer.AccordionTrigger>
-            <Sidedrawer.AccordionContent>
-              <Sidedrawer.Item href="/practice">Set Practice</Sidedrawer.Item>
-              <Sidedrawer.Item href="/mock-tests">Mock Tests</Sidedrawer.Item>
-              <Sidedrawer.Item onClick={increase}>
-                Accordion Count
-              </Sidedrawer.Item>
-            </Sidedrawer.AccordionContent>
-          </Sidedrawer.Accordion>
+          <Sidedrawer.Header>
+            Count is: {count}
+            <Sidedrawer.Close />
+          </Sidedrawer.Header>
+          <Sidedrawer.Body>
+            <Sidedrawer.Item href="/" active>
+              Dashboard
+            </Sidedrawer.Item>
+            <Sidedrawer.Item onClick={increase}>Button Count</Sidedrawer.Item>
+            <Sidedrawer.Accordion value="1">
+              <Sidedrawer.AccordionTrigger>
+                Set Work
+              </Sidedrawer.AccordionTrigger>
+              <Sidedrawer.AccordionContent>
+                <Sidedrawer.Item href="/practice">Set Practice</Sidedrawer.Item>
+                <Sidedrawer.Item href="/mock-tests">Mock Tests</Sidedrawer.Item>
+                <Sidedrawer.Item onClick={increase}>
+                  Accordion Count
+                </Sidedrawer.Item>
+              </Sidedrawer.AccordionContent>
+            </Sidedrawer.Accordion>
+          </Sidedrawer.Body>
+          <Sidedrawer.Footer>
+            <Button
+              fullWidth
+              theme="danger"
+              onClick={() => console.log('Legged out!')}
+            >
+              Log out
+            </Button>
+          </Sidedrawer.Footer>
         </Sidedrawer.Content>
-        <Sidedrawer.Footer>
-          <Button
-            fullWidth
-            theme="danger"
-            onClick={() => console.log('Legged out!')}
-          >
-            Log out
-          </Button>
-        </Sidedrawer.Footer>
       </Sidedrawer>
-    </>
+    </TopBar>
   )
 }
 

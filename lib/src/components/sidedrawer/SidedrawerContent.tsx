@@ -1,32 +1,46 @@
-import React, { isValidElement } from 'react'
+import { Content, Portal } from '@radix-ui/react-dialog'
+import React from 'react'
 
-import { Box } from '../box'
-import { SidedrawerAccordionRoot } from './SidedrawerAccordion/'
+import { MAX_Z_INDEX } from '~/constants/zIndices'
+import { keyframes, styled } from '~/stitches'
 
-export const SidedrawerContent: React.FC = ({ children }) => {
-  let hasAccordionItems = false
+import { SidedrawerOverlay } from './SidedrawerOverlay'
 
-  React.Children.forEach(children, (child) => {
-    if (isValidElement(child) && child.props?.value) {
-      hasAccordionItems = true
+const slideIn = keyframes({
+  '0%': { transform: 'translateX(-100%)' },
+  '100%': { transform: 'translateX(0)' }
+})
+
+const slideOut = keyframes({
+  '0%': { transform: 'translateX(0)' },
+  '100%': { transform: 'translateX(-100%)' }
+})
+
+const StyledContent = styled(Content, {
+  bg: 'white',
+  boxShadow: '$2',
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'fixed',
+  top: 0,
+  left: 0,
+  height: '100vh',
+  maxWidth: '304px',
+  width: '100%',
+  zIndex: MAX_Z_INDEX,
+  '@allowMotion': {
+    '&[data-state="open"]': {
+      animation: `${slideIn} 250ms ease-out`
+    },
+    '&[data-state="closed"]': {
+      animation: `${slideOut} 250ms ease-out`
     }
-  })
+  }
+})
 
-  return (
-    <Box
-      css={{
-        height: 'calc(100% - $6)',
-        width: '100%',
-        overflowY: 'auto'
-      }}
-    >
-      {hasAccordionItems ? (
-        <SidedrawerAccordionRoot type="single">
-          {children}
-        </SidedrawerAccordionRoot>
-      ) : (
-        children
-      )}
-    </Box>
-  )
-}
+export const SidedrawerContent: React.FC = ({ children }) => (
+  <Portal>
+    <SidedrawerOverlay data-testid="sidedrawer_overlay" />
+    <StyledContent role="navigation">{children}</StyledContent>
+  </Portal>
+)

@@ -1,84 +1,51 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import React from 'react'
 
-import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { keyframes, styled } from '~/stitches'
-
 import {
   SidedrawerAccordionContent,
   SidedrawerAccordionItem,
   SidedrawerAccordionTrigger
 } from './SidedrawerAccordion'
+import { SidedrawerBody } from './SidedrawerBody'
 import { SidedrawerClose } from './SidedrawerClose'
 import { SidedrawerContent } from './SidedrawerContent'
 import { SidedrawerFooter } from './SidedrawerFooter'
 import { SidedrawerHeader } from './SidedrawerHeader'
 import { SidedrawerItem } from './SidedrawerItem'
-import { SidedrawerOverlay } from './SidedrawerOverlay'
+import { SidedrawerTrigger } from './SidedrawerTrigger'
 
 interface SidedrawerProps {
   isOpen: boolean
-  onClose: () => void
+  onOpenChange: () => void
 }
 
 type SidedrawerSubComponents = {
   Accordion: typeof SidedrawerAccordionItem
   AccordionContent: typeof SidedrawerAccordionContent
   AccordionTrigger: typeof SidedrawerAccordionTrigger
+  Body: typeof SidedrawerBody
   Close: typeof SidedrawerClose
   Content: typeof SidedrawerContent
   Footer: typeof SidedrawerFooter
   Header: typeof SidedrawerHeader
   Item: typeof SidedrawerItem
+  Trigger: typeof SidedrawerTrigger
 }
 
-const slideIn = keyframes({
-  '0%': { transform: 'translateX(-100%)' },
-  '100%': { transform: 'translateX(0)' }
-})
-
-const slideOut = keyframes({
-  '0%': { transform: 'translateX(0)' },
-  '100%': { transform: 'translateX(-100%)' }
-})
-
-const StyledContent = styled(Dialog.Content, {
-  bg: 'white',
-  boxShadow: '$2',
-  display: 'flex',
-  flexDirection: 'column',
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  height: '100vh',
-  maxWidth: '304px',
-  width: '100%',
-  zIndex: MAX_Z_INDEX,
-  '@allowMotion': {
-    '&[data-state="open"]': {
-      animation: `${slideIn} 250ms ease-out`
-    },
-    '&[data-state="closed"]': {
-      animation: `${slideOut} 250ms ease-out`
-    }
-  }
-})
-
 export const Sidedrawer: React.FC<SidedrawerProps> &
-  SidedrawerSubComponents = ({ children, isOpen, onClose }) => (
-  <Dialog.Root open={isOpen} onOpenChange={() => isOpen && onClose()}>
-    <Dialog.Portal>
-      <SidedrawerOverlay data-testid="sidedrawer_overlay" />
-      <StyledContent role="navigation">{children}</StyledContent>
-    </Dialog.Portal>
+  SidedrawerSubComponents = ({ children, isOpen, onOpenChange }) => (
+  <Dialog.Root open={isOpen} onOpenChange={onOpenChange}>
+    {children}
   </Dialog.Root>
 )
 
 Sidedrawer.Accordion = SidedrawerAccordionItem
 Sidedrawer.AccordionContent = SidedrawerAccordionContent
 Sidedrawer.AccordionTrigger = SidedrawerAccordionTrigger
+Sidedrawer.Body = SidedrawerBody
 Sidedrawer.Close = SidedrawerClose
 Sidedrawer.Content = SidedrawerContent
 Sidedrawer.Footer = SidedrawerFooter
 Sidedrawer.Header = SidedrawerHeader
 Sidedrawer.Item = SidedrawerItem
+Sidedrawer.Trigger = SidedrawerTrigger

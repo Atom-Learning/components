@@ -147,17 +147,17 @@ exports[`Sidedrawer renders 1`] = `
     transform: rotate(180deg);
   }
 
-  .c-jIgsSw {
+  .c-kAYqTI {
     justify-content: space-between;
     margin: 0;
     padding: 0;
   }
 
-  [data-state=open] .c-jIgsSw {
+  .c-kAYqTI[data-state=open] {
     font-weight: 600;
   }
 
-  .c-jIgsSw {
+  .c-kAYqTI {
     align-items: center;
     background: white;
     border: unset;
@@ -180,19 +180,19 @@ exports[`Sidedrawer renders 1`] = `
     text-decoration: none;
   }
 
-  .c-jIgsSw:hover {
+  .c-kAYqTI:hover {
     background: var(--colors-tonal50);
   }
 
-  .c-jIgsSw:active {
+  .c-kAYqTI:active {
     background: var(--colors-tonal100);
   }
 
-  .c-jIgsSw:focus-visible {
+  .c-kAYqTI:focus-visible {
     box-shadow: inset 0 0 0 2px var(--colors-primary);
   }
 
-  .c-jIgsSw[disabled] {
+  .c-kAYqTI[disabled] {
     opacity: 0.3;
     pointer-events: none;
     cursor: default;
@@ -462,7 +462,7 @@ exports[`Sidedrawer renders 1`] = `
           <button
             aria-controls="radix-0"
             aria-expanded="false"
-            class="c-jIgsSw"
+            class="c-kAYqTI"
             data-radix-collection-item=""
             data-state="closed"
             id="radix-1"
@@ -657,17 +657,17 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     transform: rotate(180deg);
   }
 
-  .c-jIgsSw {
+  .c-kAYqTI {
     justify-content: space-between;
     margin: 0;
     padding: 0;
   }
 
-  [data-state=open] .c-jIgsSw {
+  .c-kAYqTI[data-state=open] {
     font-weight: 600;
   }
 
-  .c-jIgsSw {
+  .c-kAYqTI {
     align-items: center;
     background: white;
     border: unset;
@@ -690,19 +690,19 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     text-decoration: none;
   }
 
-  .c-jIgsSw:hover {
+  .c-kAYqTI:hover {
     background: var(--colors-tonal50);
   }
 
-  .c-jIgsSw:active {
+  .c-kAYqTI:active {
     background: var(--colors-tonal100);
   }
 
-  .c-jIgsSw:focus-visible {
+  .c-kAYqTI:focus-visible {
     box-shadow: inset 0 0 0 2px var(--colors-primary);
   }
 
-  .c-jIgsSw[disabled] {
+  .c-kAYqTI[disabled] {
     opacity: 0.3;
     pointer-events: none;
     cursor: default;
@@ -983,7 +983,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
             aria-controls="radix-20"
             aria-disabled="true"
             aria-expanded="true"
-            class="c-jIgsSw"
+            class="c-kAYqTI"
             data-radix-collection-item=""
             data-state="open"
             id="radix-21"

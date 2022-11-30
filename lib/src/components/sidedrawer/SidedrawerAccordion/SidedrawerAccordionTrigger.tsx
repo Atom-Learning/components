@@ -10,7 +10,7 @@ const StyledTrigger = styled(Trigger, {
   justifyContent: 'space-between',
   m: 0,
   p: 0,
-  '[data-state=open] &': { fontWeight: '600' },
+  '&[data-state=open]': { fontWeight: '600' },
   ...sidedrawerItemStyles
 })
 
