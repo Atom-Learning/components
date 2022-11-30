@@ -7,35 +7,33 @@ category: Navigation
 
 `Sidedrawer` exports components that combine to build complex side navigation.
 
-## Sidedrawer components
-
-### The `Sidedrawer` root
+## The `Sidedrawer` root
 
 Sidedrawer exposes few main elements to build foundations.
 The core element is a `Sidedrawer` which wraps entire components composition.
 `Sidedrawer` has build-in state, but also allows you to pass props to control if from the outside.
 The Sidedrawer root is made in top of the [radix dialog](https://www.radix-ui.com/docs/primitives/components/dialog)
 
-Optional `Sidedrawer` props:
+Optional `Sidedrawer` props
 
 - `isOpen` property determines if the whole `Sidedrawer` is visible or not.
 - `onOpenChange` prop should be a function which updates `isOpen` state. This function is triggered automatically when click on `Sidedrawer.Overlay`, `Sidedrawer.Close` or press `Escape` key.
 
-### Other main elements:
+### Fundamental root componenents
 
-- `Sidedrawer.Trigger` - It's the main `trigger element` responsible for opening the whole `Sidedrawer.Content`. This component is build in top of [radix dialog trigger](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
-- `Sidedrawer.Content` - This is whe wrapper for whole content (`Sidedrawer.Header`, `Sidedrawer.Body`, `Sidedrawer.Footer` and other nested elements). This component is build in top of [radix dialog content](https://www.radix-ui.com/docs/primitives/components/dialog#content)
+- `Sidedrawer.Trigger` - It's the main `trigger element` responsible for opening the whole `Sidedrawer.Content`. This component is build on top of [radix dialog trigger](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
+- `Sidedrawer.Content` - This is whe wrapper for whole content (`Sidedrawer.Header`, `Sidedrawer.Body`, `Sidedrawer.Footer` and other nested elements). This component is build on top of [radix dialog content](https://www.radix-ui.com/docs/primitives/components/dialog#content)
 
 ```tsx
 <Sidedrawer>
   <Sidedrawer.Trigger asChild>
     <Button>Open the navigation</Button>
   </Sidedrawer.Trigger>
-  <Sidedrawer.Content>// the sidedrawer content</Sidedrawer.Content>
+  <Sidedrawer.Content>the sidedrawer content</Sidedrawer.Content>
 </Sidedrawer>
 ```
 
-### The `Sidedrawer.Content` children building blocks.
+### The `Sidedrawer.Content` children building blocks
 
 - `Sidedrawer.Header` - It's based on `TopBar` component, so it plays really well with all `TopBar` subcomponents. This component is flexible, so you can render anything you need inside of it (for example app logo, Sidedrawer.Close etc.)
 - `Sidedrawer.Close` - It's an `"close" ActionIcon` which triggers `Sidedrawer.Content` closing.
@@ -49,7 +47,7 @@ Optional `Sidedrawer` props:
   </Sidedrawer.Trigger>
   <Sidedrawer.Content>
     <Sidedrawer.Header>
-      <Sidedrawer.Close onClose={() => console.log('closed')} />
+      <Sidedrawer.Close />
     </Sidedrawer.Header>
     <Sidedrawer.Body>Sidedrawer items and Accordions here</Sidedrawer.Body>
     <Sidedrawer.Footer>Footer items here</Sidedrawer.Footer>
