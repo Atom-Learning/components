@@ -116,10 +116,10 @@ Accordion item requires few elements to work properly:
 
 ## Whole Sidedrawer components composition
 
-```tsx
+```tsx preview
 <Sidedrawer>
   <Sidedrawer.Trigger asChild>
-    <Button>Open the navigation</Button>
+    <Button>Open the Sidedrawer</Button>
   </Sidedrawer.Trigger>
   <Sidedrawer.Content>
     <Sidedrawer.Header>
@@ -145,9 +145,7 @@ Accordion item requires few elements to work properly:
           <Sidedrawer.Item onClick={() => console.log('clicked!')}>
             I am a button
           </Sidedrawer.Item>
-          <Sidedrawer.Item active href="/">
-            I am a link
-          </Sidedrawer.Item>
+          <Sidedrawer.Item href="/">I am a link</Sidedrawer.Item>
         </Sidedrawer.AccordionContent>
       </Sidedrawer.Accordion>
     </Sidedrawer.Body>
