@@ -22,7 +22,7 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
 
   return (
     <TopBar>
-      <Sidedrawer isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Sidedrawer open={isOpen} onOpenChange={onOpenChange}>
         <Sidedrawer.Trigger asChild>
           <Button>Open Sidedrawer</Button>
         </Sidedrawer.Trigger>

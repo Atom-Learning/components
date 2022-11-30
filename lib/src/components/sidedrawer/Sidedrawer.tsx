@@ -14,11 +14,6 @@ import { SidedrawerHeader } from './SidedrawerHeader'
 import { SidedrawerItem } from './SidedrawerItem'
 import { SidedrawerTrigger } from './SidedrawerTrigger'
 
-interface SidedrawerProps {
-  isOpen: boolean
-  onOpenChange: () => void
-}
-
 type SidedrawerSubComponents = {
   Accordion: typeof SidedrawerAccordionItem
   AccordionContent: typeof SidedrawerAccordionContent
@@ -32,11 +27,9 @@ type SidedrawerSubComponents = {
   Trigger: typeof SidedrawerTrigger
 }
 
-export const Sidedrawer: React.FC<SidedrawerProps> &
-  SidedrawerSubComponents = ({ children, isOpen, onOpenChange }) => (
-  <Dialog.Root open={isOpen} onOpenChange={onOpenChange}>
-    {children}
-  </Dialog.Root>
+export const Sidedrawer: React.FC<React.ComponentProps<typeof Dialog.Root>> &
+  SidedrawerSubComponents = ({ children, ...remainingProps }) => (
+  <Dialog.Root {...remainingProps}>{children}</Dialog.Root>
 )
 
 Sidedrawer.Accordion = SidedrawerAccordionItem
