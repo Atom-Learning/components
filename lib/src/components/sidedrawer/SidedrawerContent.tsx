@@ -2,19 +2,10 @@ import { Content, Portal } from '@radix-ui/react-dialog'
 import React from 'react'
 
 import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { keyframes, styled } from '~/stitches'
+import { styled } from '~/stitches'
+import { slideInLeft, slideOutLeft } from '~/utilities'
 
 import { SidedrawerOverlay } from './SidedrawerOverlay'
-
-const slideIn = keyframes({
-  '0%': { transform: 'translateX(-100%)' },
-  '100%': { transform: 'translateX(0)' }
-})
-
-const slideOut = keyframes({
-  '0%': { transform: 'translateX(0)' },
-  '100%': { transform: 'translateX(-100%)' }
-})
 
 const StyledContent = styled(Content, {
   bg: 'white',
@@ -30,10 +21,10 @@ const StyledContent = styled(Content, {
   zIndex: MAX_Z_INDEX,
   '@allowMotion': {
     '&[data-state="open"]': {
-      animation: `${slideIn} 250ms ease-out`
+      animation: `${slideInLeft} 250ms ease-out`
     },
     '&[data-state="closed"]': {
-      animation: `${slideOut} 250ms ease-out`
+      animation: `${slideOutLeft} 250ms ease-out`
     }
   }
 })

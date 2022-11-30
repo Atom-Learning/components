@@ -8,15 +8,7 @@ import { ActionIcon } from '../action-icon/ActionIcon'
 export const SidedrawerClose: React.FC = () => (
   <DialogClose asChild>
     <ActionIcon theme="neutral" appearance="simple" label="close" size="md">
-      <Icon
-        css={{
-          color: '$tonal300',
-          '&:hover': {
-            color: '$tonal500'
-          }
-        }}
-        is={Close}
-      />
+      <Icon is={Close} />
     </ActionIcon>
   </DialogClose>
 )

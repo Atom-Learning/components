@@ -74,6 +74,10 @@ exports[`Sidedrawer renders 1`] = `
     }
 }
 
+  .c-dUthMk > div {
+    width: 100%;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -219,11 +223,12 @@ exports[`Sidedrawer renders 1`] = `
     width: 100%;
   }
 
-  .c-iVpUww {
+  .c-dtVmmL {
     align-items: center;
     border-top: 1px solid var(--colors-tonal100);
     bottom: 0;
     box-shadow: var(--shadows-3);
+    display: flex;
     height: var(--sizes-6);
     justify-content: center;
     padding: var(--space-3);
@@ -368,25 +373,13 @@ exports[`Sidedrawer renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-idUthMk-css > div {
-    width: 100%;
-  }
-
   .c-dhzjXW-ihbsENp-css {
     margin-left: var(--space-3);
     margin-right: var(--space-3);
   }
 
-  .c-dbrbZt-icPPzeV-css {
-    color: var(--colors-tonal300);
-  }
-
-  .c-dbrbZt-icPPzeV-css:hover {
-    color: var(--colors-tonal500);
-  }
-
-  .c-PJLV-ihnjcqz-css {
-    height: calc(100% - var(--sizes-6));
+  .c-PJLV-ijdijCQ-css {
+    flex-grow: 1;
     width: 100%;
     overflow-y: auto;
   }
@@ -406,8 +399,8 @@ exports[`Sidedrawer renders 1`] = `
   style="pointer-events: auto;"
   tabindex="-1"
 >
-  <div
-    class="c-PJLV c-PJLV-idUthMk-css"
+  <header
+    class="c-dUthMk"
   >
     <div
       class="c-glwkin c-glwkin-daNQNf-size-md"
@@ -424,7 +417,7 @@ exports[`Sidedrawer renders 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-icPPzeV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -435,9 +428,9 @@ exports[`Sidedrawer renders 1`] = `
         </button>
       </div>
     </div>
-  </div>
+  </header>
   <div
-    class="c-PJLV c-PJLV-ihnjcqz-css"
+    class="c-PJLV c-PJLV-ijdijCQ-css"
   >
     <div
       class="c-fGHEql"
@@ -497,8 +490,8 @@ exports[`Sidedrawer renders 1`] = `
       </div>
     </div>
   </div>
-  <div
-    class="c-dhzjXW c-iVpUww"
+  <footer
+    class="c-dtVmmL"
   >
     <button
       class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
@@ -506,7 +499,7 @@ exports[`Sidedrawer renders 1`] = `
     >
       Log out
     </button>
-  </div>
+  </footer>
 </div>
 `;
 
@@ -584,6 +577,10 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     }
 }
 
+  .c-dUthMk > div {
+    width: 100%;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -729,11 +726,12 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     width: 100%;
   }
 
-  .c-iVpUww {
+  .c-dtVmmL {
     align-items: center;
     border-top: 1px solid var(--colors-tonal100);
     bottom: 0;
     box-shadow: var(--shadows-3);
+    display: flex;
     height: var(--sizes-6);
     justify-content: center;
     padding: var(--space-3);
@@ -878,25 +876,13 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
 }
 
 @media  {
-  .c-PJLV-idUthMk-css > div {
-    width: 100%;
-  }
-
   .c-dhzjXW-ihbsENp-css {
     margin-left: var(--space-3);
     margin-right: var(--space-3);
   }
 
-  .c-dbrbZt-icPPzeV-css {
-    color: var(--colors-tonal300);
-  }
-
-  .c-dbrbZt-icPPzeV-css:hover {
-    color: var(--colors-tonal500);
-  }
-
-  .c-PJLV-ihnjcqz-css {
-    height: calc(100% - var(--sizes-6));
+  .c-PJLV-ijdijCQ-css {
+    flex-grow: 1;
     width: 100%;
     overflow-y: auto;
   }
@@ -926,8 +912,8 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
   style="pointer-events: auto;"
   tabindex="-1"
 >
-  <div
-    class="c-PJLV c-PJLV-idUthMk-css"
+  <header
+    class="c-dUthMk"
   >
     <div
       class="c-glwkin c-glwkin-daNQNf-size-md"
@@ -944,7 +930,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-icPPzeV-css"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -955,9 +941,9 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
         </button>
       </div>
     </div>
-  </div>
+  </header>
   <div
-    class="c-PJLV c-PJLV-ihnjcqz-css"
+    class="c-PJLV c-PJLV-ijdijCQ-css"
   >
     <div
       class="c-fGHEql"
@@ -1047,8 +1033,8 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
       </div>
     </div>
   </div>
-  <div
-    class="c-dhzjXW c-iVpUww"
+  <footer
+    class="c-dtVmmL"
   >
     <button
       class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
@@ -1056,6 +1042,6 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     >
       Log out
     </button>
-  </div>
+  </footer>
 </div>
 `;

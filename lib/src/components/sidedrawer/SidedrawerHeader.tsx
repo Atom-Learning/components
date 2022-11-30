@@ -1,16 +1,17 @@
 import React from 'react'
 
-import { Box } from '../box'
+import { styled } from '~/stitches'
+
 import { TopBar } from '../top-bar'
 
+const StyledHeader = styled('header', {
+  '> div': {
+    width: '100%'
+  }
+})
+
 export const SidedrawerHeader: React.FC = ({ children }) => (
-  <Box
-    css={{
-      '> div': {
-        width: '100%'
-      }
-    }}
-  >
+  <StyledHeader>
     <TopBar
       css={{
         mx: '$3'
@@ -18,5 +19,5 @@ export const SidedrawerHeader: React.FC = ({ children }) => (
     >
       {children}
     </TopBar>
-  </Box>
+  </StyledHeader>
 )

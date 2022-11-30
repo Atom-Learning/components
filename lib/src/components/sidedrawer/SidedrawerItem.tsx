@@ -10,16 +10,9 @@ const StyledButton = styled('button', sidedrawerItemStyles)
 type SidedrawerItemProps = {
   active?: boolean
   disabled?: boolean
-} & (
-  | {
-      href: string
-      onClick?: never
-    }
-  | {
-      href?: never
-      onClick: () => void
-    }
-)
+  href?: string
+  onClick?: () => void
+}
 
 export const SidedrawerItem: React.FC<SidedrawerItemProps> = ({
   active,
@@ -31,7 +24,12 @@ export const SidedrawerItem: React.FC<SidedrawerItemProps> = ({
 }) => {
   if (href) {
     return (
-      <StyledLink active={active} href={href} {...remainingProps}>
+      <StyledLink
+        active={active}
+        href={href}
+        onClick={onClick}
+        {...remainingProps}
+      >
         {children}
       </StyledLink>
     )
