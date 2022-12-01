@@ -11,7 +11,8 @@ import type { SortingState, PaginationState } from '@tanstack/react-table'
 import {
   DataTableContextType,
   DataTableContext,
-  ApiQueryStatus
+  ApiQueryStatus,
+  TFetcherOptions
 } from './DataTable.types'
 import { Box } from '../box'
 
@@ -21,13 +22,6 @@ import { CSS } from '~/stitches'
 type TFetcherResult = {
   total: number
   results: Array<Record<string, unknown>>
-}
-
-type TFetcherOptions = {
-  pageIndex: number
-  pageSize: number
-  sortBy: string
-  sortDirection: 'asc' | 'desc' | null
 }
 
 type TTableProviderProps = {
@@ -78,30 +72,48 @@ export const RemoteDataTableProvider: React.FC<TTableProviderProps> = ({
 
   const getTotalRows = () => data?.total ?? 0
 
-  const doFetchData = React.useCallback(async () => {
-    try {
-      setApiQueryStatus(ApiQueryStatus.PENDING)
-      const newData = await fetcher({
-        pageIndex,
-        pageSize,
-        sortBy: sorting[0]?.id,
-        sortDirection: sorting[0] ? (sorting[0].desc ? 'desc' : 'asc') : null
-      })
+  const doFetchData = React.useCallback(
+    async ({
+      pageIndex: overridePageIndex,
+      pageSize: overridePageSize,
+      sortBy: overrideSortBy,
+      sortDirection: overrideSortDirection
+    }) => {
+      const getSortDirection = () => {
+        if (sorting[0]) {
+          if (sorting[0].desc) return 'desc'
 
-      invariant(
-        Array.isArray(newData?.results),
-        'The fetcher function must return an object with a property `result` which must be an array'
-      )
+          return 'asc'
+        }
 
-      setData(newData)
-      setApiQueryStatus(ApiQueryStatus.SUCCEDED)
-    } catch (error) {
-      setApiQueryStatus(ApiQueryStatus.FAILED)
-    }
-  }, [fetcher, pageIndex, pageSize, sorting])
+        return null
+      }
+
+      try {
+        setApiQueryStatus(ApiQueryStatus.PENDING)
+        const newData = await fetcher({
+          pageIndex: overridePageIndex ?? pageIndex,
+          pageSize: overridePageSize ?? pageSize,
+          sortBy: overrideSortBy ?? sorting[0]?.id,
+          sortDirection: overrideSortDirection ?? getSortDirection()
+        })
+
+        invariant(
+          Array.isArray(newData?.results),
+          'The fetcher function must return an object with a property `result` which must be an array'
+        )
+
+        setData(newData)
+        setApiQueryStatus(ApiQueryStatus.SUCCEDED)
+      } catch (error) {
+        setApiQueryStatus(ApiQueryStatus.FAILED)
+      }
+    },
+    [fetcher, pageIndex, pageSize, sorting]
+  )
 
   React.useEffect(() => {
-    doFetchData()
+    doFetchData({})
   }, [doFetchData])
 
   const table = useReactTable<unknown>({

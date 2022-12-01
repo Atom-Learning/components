@@ -8,13 +8,20 @@ export enum ApiQueryStatus {
   FAILED = 'failed'
 }
 
+export type TFetcherOptions = {
+  pageIndex: number
+  pageSize: number
+  sortBy: string
+  sortDirection: 'asc' | 'desc' | null
+}
+
 export type DataTableContextType<T = unknown> = Table<T> & {
   setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
   applyPagination: () => void
   getTotalRows: () => number
   isSortable: boolean
   apiQueryStatus?: ApiQueryStatus
-  doFetchData?: () => Promise<void>
+  doFetchData?: (options: TFetcherOptions) => Promise<void>
 }
 
 export const DataTableContext =

@@ -398,7 +398,7 @@ describe('DataTable Remote component', () => {
     expect(await screen.findByText(error)).toBeVisible()
   })
 
-  it('Retrys fetching the pagination data when clicking retry from the error component', async () => {
+  it('Retrys fetching the data when clicking retry from the error component', async () => {
     fetcher.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
     render(
@@ -429,6 +429,55 @@ describe('DataTable Remote component', () => {
       pageSize: PAGE_SIZE,
       sortBy: undefined,
       sortDirection: null
+    })
+  })
+
+  it('Retrys fetching the data with custom fetching options when clicking retry from the error component', async () => {
+    fetcher.mockRejectedValue(new Error('Something went wrong'))
+    const DEFAULT_PAGE_SIZE = 10
+    const PAGE_INDEX = 2
+    const PAGE_SIZE = 8
+    const SORT_BY = 'made up column name'
+    const SORT_DIRECTION = 'asc'
+    render(
+      <Wrapper>
+        <DataTable.Remote
+          columns={columns}
+          fetcher={fetcher}
+          defaultPageSize={DEFAULT_PAGE_SIZE}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Error>
+            {(retry) => (
+              <>
+                <Text>Oops something went wrong</Text>
+                <Button
+                  onClick={() =>
+                    retry?.({
+                      pageIndex: PAGE_INDEX,
+                      pageSize: PAGE_SIZE,
+                      sortBy: SORT_BY,
+                      sortDirection: SORT_DIRECTION
+                    })
+                  }
+                >
+                  Retry fetch
+                </Button>
+              </>
+            )}
+          </DataTable.Error>
+          <DataTable.Pagination />
+        </DataTable.Remote>
+      </Wrapper>
+    )
+
+    userEvent.click(await screen.findByText('Retry fetch'))
+    expect(fetcher).toHaveBeenCalledTimes(2)
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: PAGE_INDEX,
+      pageSize: PAGE_SIZE,
+      sortBy: SORT_BY,
+      sortDirection: SORT_DIRECTION
     })
   })
 })

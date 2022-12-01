@@ -3,12 +3,14 @@ import * as React from 'react'
 import { CSS } from '~/stitches'
 
 import { Flex } from '../flex'
-import { ApiQueryStatus } from './DataTable.types'
+import { ApiQueryStatus, TFetcherOptions } from './DataTable.types'
 import { useDataTable } from './RemoteDataTableContext'
 
 type TDataTableErrorProps = Omit<React.FC, 'children'> & {
   css?: CSS
-  children: (retry?: () => Promise<void>) => React.ReactNode
+  children: (
+    retry?: (options: TFetcherOptions) => Promise<void>
+  ) => React.ReactNode
 }
 
 export const DataTableError: React.FC<TDataTableErrorProps> = ({
