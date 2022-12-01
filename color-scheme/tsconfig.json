@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "jsx": "react",
+    "target": "es2018",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "lib": ["es6", "dom"],
+    "types": ["node"],
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": ["./src/*"],
+  "exclude": ["./src/**/*.test.*"]
+}

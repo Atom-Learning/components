@@ -10,18 +10,18 @@ import { StyledList } from '../list/List'
 import { StyledText } from '../text/Text'
 
 const StyledStackContent = styled('div', {
-  [`& > ${StyledHeading}`]: {
-    maxWidth: '65ch',
+  '& > *': {
     '&:not(:first-child)': { mt: '$5' },
     '&:not(:last-child)': { mb: '$5' }
   },
+  [`& > ${StyledHeading}`]: {
+    maxWidth: '65ch'
+  },
   [`& > ${StyledText}`]: {
-    maxWidth: '75ch',
-    '&:not(:last-child)': { mb: '$5' }
+    maxWidth: '75ch'
   },
   [`& > ${StyledList}`]: {
-    maxWidth: '75ch',
-    '&:not(:last-child)': { mb: '$5' }
+    maxWidth: '75ch'
   },
   [`& > ${StyledDivider}`]: {
     my: '$5'
