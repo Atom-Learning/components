@@ -447,6 +447,7 @@ exports[`Sidedrawer renders 1`] = `
         Button Count
       </button>
       <div
+        class="c-PJLV"
         data-state="closed"
       >
         <h3
@@ -960,6 +961,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
         Button Count
       </button>
       <div
+        class="c-PJLV"
         data-state="open"
       >
         <h3
