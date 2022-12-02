@@ -14,15 +14,10 @@ const StyledNav = styled('nav', {
   alignItems: 'center'
 })
 
-type PaginationProps = React.ComponentProps<typeof StyledNav> & {
-  pageSize?: number
-}
+type PaginationProps = React.ComponentProps<typeof StyledNav>
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-export const Pagination: React.FC<PaginationProps> = ({
-  pageSize = 10,
-  ...props
-}) => {
+export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
   const {
     applyPagination,
     getState,
@@ -31,7 +26,6 @@ export const Pagination: React.FC<PaginationProps> = ({
     previousPage,
     nextPage,
     setPageIndex,
-    setPageSize,
     getTotalRows,
     apiQueryStatus
   } = useDataTable()
@@ -39,10 +33,6 @@ export const Pagination: React.FC<PaginationProps> = ({
   React.useEffect(() => {
     applyPagination()
   }, [applyPagination])
-
-  React.useEffect(() => {
-    setPageSize(pageSize)
-  }, [setPageSize, pageSize])
 
   const { pagination: paginationState } = getState()
 

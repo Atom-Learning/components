@@ -47,7 +47,6 @@ type InitialState = Partial<
 
 type TableProviderProps = {
   columns
-  defaultPageSize?: number
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
   initialState?: InitialState
@@ -60,6 +59,8 @@ type TableProviderProps = {
     }
 )
 
+const defaultPaginationState: PaginationState = { pageIndex: 0, pageSize: 10 }
+
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
@@ -67,7 +68,6 @@ export const DataTableProvider = ({
   columns,
   data: dataProp,
   fetcher,
-  defaultPageSize = 10,
   defaultSort,
   initialState = undefined,
   children,
@@ -84,11 +84,17 @@ export const DataTableProvider = ({
   const [apiQueryStatus, setApiQueryStatus] = React.useState<ApiQueryStatus>(
     ApiQueryStatus.NONE
   )
-  const [{ pageIndex, pageSize }, setPagination] =
-    React.useState<PaginationState>({
-      pageIndex: 0,
-      pageSize: defaultPageSize
-    })
+
+  const [paginationState, setPagination] = React.useState<
+    PaginationState | undefined
+  >(
+    fetcher
+      ? {
+          ...defaultPaginationState,
+          ...initialState?.pagination
+        }
+      : initialState?.pagination
+  )
 
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -127,6 +133,8 @@ export const DataTableProvider = ({
 
       try {
         setApiQueryStatus(ApiQueryStatus.PENDING)
+
+        const { pageIndex, pageSize } = paginationState as PaginationState
         const newData = await fetcher({
           pageIndex: overridePageIndex ?? pageIndex,
           pageSize: overridePageSize ?? pageSize,
@@ -145,7 +153,7 @@ export const DataTableProvider = ({
         setApiQueryStatus(ApiQueryStatus.FAILED)
       }
     },
-    [fetcher, pageIndex, pageSize, sorting]
+    [fetcher, paginationState?.pageIndex, paginationState?.pageSize, sorting]
   )
 
   React.useEffect(() => {
@@ -157,7 +165,9 @@ export const DataTableProvider = ({
   const table = useReactTable<unknown>({
     columns,
     data: data.results,
-    pageCount: Math.ceil(getTotalRows() / pageSize),
+    pageCount: paginationState
+      ? Math.ceil(getTotalRows() / paginationState.pageSize)
+      : -1,
     getCoreRowModel: getCoreRowModel(),
     manualPagination: fetcher && isPaginated,
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
@@ -167,7 +177,7 @@ export const DataTableProvider = ({
     initialState: initialState,
     state: {
       sorting,
-      pagination: { pageIndex, pageSize }
+      pagination: paginationState
     },
     onSortingChange: setSorting,
     getFilteredRowModel: getFilteredRowModel()

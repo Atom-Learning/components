@@ -63,10 +63,14 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <Wrapper>
-        <DataTable columns={columns} data={data} defaultPageSize={5}>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
           <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
           <DataTable.Table sortable css={{ mb: '$4' }} />
-          <DataTable.Pagination pageSize={5} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -80,9 +84,10 @@ describe('DataTable component', () => {
           columns={columns}
           data={data}
           defaultSort={{ column: 'name', direction: 'desc' }}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 1 } }}
         >
           <DataTable.Table />
-          <DataTable.Pagination pageSize={1} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -93,9 +98,13 @@ describe('DataTable component', () => {
   it('Sorts data on click of sortable header cell', () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} data={data}>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
           <DataTable.Table sortable />
-          <DataTable.Pagination pageSize={5} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -115,9 +124,13 @@ describe('DataTable.Pagination component', () => {
   it('Displays the correct page number', async () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} data={data} defaultPageSize={5}>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
           <DataTable.Table sortable />
-          <DataTable.Pagination pageSize={5} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -133,9 +146,13 @@ describe('DataTable.Pagination component', () => {
   it('Navigates to the correct page', async () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} data={data}>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
           <DataTable.Table sortable />
-          <DataTable.Pagination pageSize={5} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -151,9 +168,13 @@ describe('DataTable.Pagination component', () => {
   it('Disables previous button on first page and next page button on last page', async () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} data={data}>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
+        >
           <DataTable.Table sortable />
-          <DataTable.Pagination pageSize={10} />
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )
@@ -167,6 +188,23 @@ describe('DataTable.Pagination component', () => {
     userEvent.click(nextPageButton)
 
     await waitFor(() => expect(nextPageButton).toBeDisabled())
+  })
+
+  it('Sets the page index passed in the initial state', async () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data}
+          initialState={{ pagination: { pageIndex: 2, pageSize: 5 } }}
+        >
+          <DataTable.Table sortable />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+
+    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('2'))
   })
 })
 
@@ -230,8 +268,8 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
           defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -256,8 +294,8 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
           defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -276,6 +314,25 @@ describe('DataTable Remote component', () => {
     })
   })
 
+  it('The fetcher is called with the default pageIndex and pageSize when no initial state is provided', async () => {
+    render(
+      <Wrapper>
+        <DataTable columns={columns} fetcher={fetcher}>
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
+
+    expect(fetcher).toHaveBeenLastCalledWith({
+      pageIndex: 0,
+      pageSize: 10,
+      sortBy: undefined,
+      sortDirection: null
+    })
+  })
+
   it('The fetcher is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
@@ -284,7 +341,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -313,7 +370,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -343,7 +400,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -361,7 +418,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
@@ -386,7 +443,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Error>{() => <Text>{error}</Text>}</DataTable.Error>
@@ -406,7 +463,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Error>
@@ -434,7 +491,6 @@ describe('DataTable Remote component', () => {
 
   it('Retrys fetching the data with custom fetching options when clicking retry from the error component', async () => {
     fetcher.mockRejectedValue(new Error('Something went wrong'))
-    const DEFAULT_PAGE_SIZE = 10
     const PAGE_INDEX = 2
     const PAGE_SIZE = 8
     const SORT_BY = 'made up column name'
@@ -444,7 +500,7 @@ describe('DataTable Remote component', () => {
         <DataTable
           columns={columns}
           fetcher={fetcher}
-          defaultPageSize={DEFAULT_PAGE_SIZE}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Error>
