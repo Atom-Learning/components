@@ -8,6 +8,11 @@ export enum ApiQueryStatus {
   FAILED = 'failed'
 }
 
+export type TFetcherResult = {
+  total: number
+  results: Array<Record<string, unknown>>
+}
+
 export type TFetcherOptions = {
   pageIndex: number
   pageSize: number
@@ -23,6 +28,3 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   apiQueryStatus?: ApiQueryStatus
   doFetchData?: (options: TFetcherOptions) => Promise<void>
 }
-
-export const DataTableContext =
-  React.createContext<DataTableContextType<unknown> | null>(null)

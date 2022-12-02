@@ -1,3 +1,4 @@
+import invariant from 'invariant'
 import * as React from 'react'
 import {
   useReactTable,
@@ -18,10 +19,18 @@ import type {
   PaginationTableState,
   RowSelectionTableState,
   SortingState,
-  Table
+  PaginationState
 } from '@tanstack/react-table'
+import { CSS } from '~/stitches'
 
-import { DataTableContextType, DataTableContext } from './DataTable.types'
+import {
+  DataTableContextType,
+  TFetcherOptions,
+  TFetcherResult,
+  ApiQueryStatus
+} from './DataTable.types'
+import { Box } from '../box'
+import { DataTableLoading } from './DataTableLoading'
 
 type InitialState = Partial<
   VisibilityTableState &
@@ -38,24 +47,48 @@ type InitialState = Partial<
 
 type TableProviderProps = {
   columns
-  data: Array<Record<string, unknown>>
+  defaultPageSize?: number
   defaultSort?: { column: string; direction: 'asc' | 'desc' }
   children: React.ReactNode
   initialState?: InitialState
-}
+  css?: CSS
+} & (
+  | { data: Array<Record<string, unknown>>; fetcher?: never }
+  | {
+      data?: never
+      fetcher: (options: TFetcherOptions) => Promise<TFetcherResult>
+    }
+)
+
+const DataTableContext =
+  React.createContext<DataTableContextType<unknown> | null>(null)
 
 export const DataTableProvider = ({
   columns,
   data: dataProp,
+  fetcher,
+  defaultPageSize = 10,
   defaultSort,
   initialState = undefined,
-  children
+  children,
+  css
 }: TableProviderProps): JSX.Element => {
-  const [data, setData] =
-    React.useState<Array<Record<string, unknown>>>(dataProp)
+  const [data, setData] = React.useState<TFetcherResult>({
+    results: dataProp ?? [],
+    total: dataProp?.length ?? 0
+  })
+
   const [isPaginated, setIsPaginated] = React.useState<boolean>(
     !!initialState?.pagination
   )
+  const [apiQueryStatus, setApiQueryStatus] = React.useState<ApiQueryStatus>(
+    ApiQueryStatus.NONE
+  )
+  const [{ pageIndex, pageSize }, setPagination] =
+    React.useState<PaginationState>({
+      pageIndex: 0,
+      pageSize: defaultPageSize
+    })
 
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -73,20 +106,69 @@ export const DataTableProvider = ({
     setIsPaginated(true)
   }, [])
 
-  const getTotalRows = () => data.length
+  const doFetchData = React.useCallback(
+    async ({
+      pageIndex: overridePageIndex,
+      pageSize: overridePageSize,
+      sortBy: overrideSortBy,
+      sortDirection: overrideSortDirection
+    }) => {
+      if (!fetcher) return
+
+      const getSortDirection = () => {
+        if (sorting[0]) {
+          if (sorting[0].desc) return 'desc'
+
+          return 'asc'
+        }
+
+        return null
+      }
+
+      try {
+        setApiQueryStatus(ApiQueryStatus.PENDING)
+        const newData = await fetcher({
+          pageIndex: overridePageIndex ?? pageIndex,
+          pageSize: overridePageSize ?? pageSize,
+          sortBy: overrideSortBy ?? sorting[0]?.id,
+          sortDirection: overrideSortDirection ?? getSortDirection()
+        })
+
+        invariant(
+          Array.isArray(newData?.results),
+          'The fetcher function must return an object with a property `result` which must be an array'
+        )
+
+        setData(newData)
+        setApiQueryStatus(ApiQueryStatus.SUCCEDED)
+      } catch (error) {
+        setApiQueryStatus(ApiQueryStatus.FAILED)
+      }
+    },
+    [fetcher, pageIndex, pageSize, sorting]
+  )
+
+  React.useEffect(() => {
+    doFetchData({})
+  }, [doFetchData])
+
+  const getTotalRows = () => data.total
 
   const table = useReactTable<unknown>({
     columns,
-    data: data,
+    data: data.results,
+    pageCount: Math.ceil(getTotalRows() / pageSize),
     getCoreRowModel: getCoreRowModel(),
+    manualPagination: fetcher && isPaginated,
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
+    onPaginationChange: isPaginated ? setPagination : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
     initialState: initialState,
     state: {
-      sorting
+      sorting,
+      pagination: { pageIndex, pageSize }
     },
-
     onSortingChange: setSorting,
     getFilteredRowModel: getFilteredRowModel()
   })
@@ -97,14 +179,19 @@ export const DataTableProvider = ({
       setIsSortable,
       applyPagination,
       getTotalRows,
-      isSortable
+      isSortable,
+      apiQueryStatus,
+      doFetchData
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 
   return (
-    <DataTableContext.Provider value={value}>
-      {children}
-    </DataTableContext.Provider>
+    <Box css={{ position: 'relative', ...css }}>
+      <DataTableContext.Provider value={value}>
+        <DataTableLoading />
+        {children}
+      </DataTableContext.Provider>
+    </Box>
   )
 }
 

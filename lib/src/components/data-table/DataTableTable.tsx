@@ -4,7 +4,7 @@ import * as React from 'react'
 import { Table } from '../table'
 import { DataTable } from './DataTable'
 import { ApiQueryStatus } from './DataTable.types'
-import { useDataTable } from './RemoteDataTableContext'
+import { useDataTable } from './DataTableContext'
 
 type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,

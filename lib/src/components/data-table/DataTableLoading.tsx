@@ -4,7 +4,7 @@ import { CSS } from '~/stitches'
 
 import { Loader } from '../loader'
 import { ApiQueryStatus } from './DataTable.types'
-import { useDataTable } from './RemoteDataTableContext'
+import { useDataTable } from './DataTableContext'
 
 interface IDataTableLoadingProps {
   css?: CSS

@@ -4,7 +4,7 @@ import { CSS } from '~/stitches'
 
 import { Flex } from '../flex'
 import { ApiQueryStatus, DataTableContextType } from './DataTable.types'
-import { useDataTable } from './RemoteDataTableContext'
+import { useDataTable } from './DataTableContext'
 
 type TDataTableErrorProps = Omit<React.FC, 'children'> & {
   css?: CSS

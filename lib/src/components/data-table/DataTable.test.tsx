@@ -63,7 +63,7 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <Wrapper>
-        <DataTable columns={columns} data={data}>
+        <DataTable columns={columns} data={data} defaultPageSize={5}>
           <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination pageSize={5} />
@@ -115,7 +115,7 @@ describe('DataTable.Pagination component', () => {
   it('Displays the correct page number', async () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} data={data}>
+        <DataTable columns={columns} data={data} defaultPageSize={5}>
           <DataTable.Table sortable />
           <DataTable.Pagination pageSize={5} />
         </DataTable>
@@ -210,10 +210,10 @@ describe('DataTable Remote component', () => {
   it('renders', async () => {
     const { container } = render(
       <Wrapper>
-        <DataTable.Remote columns={columns} fetcher={fetcher}>
+        <DataTable columns={columns} fetcher={fetcher}>
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
@@ -227,7 +227,7 @@ describe('DataTable Remote component', () => {
     const SORT_DIRECTION = 'asc'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
@@ -235,7 +235,7 @@ describe('DataTable Remote component', () => {
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
@@ -253,7 +253,7 @@ describe('DataTable Remote component', () => {
     const SORT_DIRECTION = 'asc'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
@@ -261,7 +261,7 @@ describe('DataTable Remote component', () => {
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
@@ -281,14 +281,14 @@ describe('DataTable Remote component', () => {
     const SORT_COLUMN = 'name'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
@@ -310,14 +310,14 @@ describe('DataTable Remote component', () => {
     const SORT_COLUMN = 'name'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
@@ -340,14 +340,14 @@ describe('DataTable Remote component', () => {
     const PAGE_SIZE = 10
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
     expect(screen.queryByText('Loading')).toBeVisible()
@@ -358,14 +358,14 @@ describe('DataTable Remote component', () => {
     const PAGE_SIZE = 10
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
@@ -383,7 +383,7 @@ describe('DataTable Remote component', () => {
     const error = 'Oops something went wrong'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
@@ -391,7 +391,7 @@ describe('DataTable Remote component', () => {
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Error>{() => <Text>{error}</Text>}</DataTable.Error>
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
@@ -403,7 +403,7 @@ describe('DataTable Remote component', () => {
     const PAGE_SIZE = 10
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={PAGE_SIZE}
@@ -418,7 +418,7 @@ describe('DataTable Remote component', () => {
             )}
           </DataTable.Error>
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
@@ -441,7 +441,7 @@ describe('DataTable Remote component', () => {
     const SORT_DIRECTION = 'asc'
     render(
       <Wrapper>
-        <DataTable.Remote
+        <DataTable
           columns={columns}
           fetcher={fetcher}
           defaultPageSize={DEFAULT_PAGE_SIZE}
@@ -467,7 +467,7 @@ describe('DataTable Remote component', () => {
             )}
           </DataTable.Error>
           <DataTable.Pagination />
-        </DataTable.Remote>
+        </DataTable>
       </Wrapper>
     )
 
