@@ -433,7 +433,7 @@ exports[`DataTable component renders 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M14.412 14.412L20 20"
+        d="M14.412 14.412 20 20"
       />
       <circle
         cx="10"
