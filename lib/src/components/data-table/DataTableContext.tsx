@@ -55,7 +55,7 @@ type TableProviderProps = {
   | { data: Array<Record<string, unknown>>; fetcher?: never }
   | {
       data?: never
-      fetcher: (options: TFetcherOptions) => Promise<TFetcherResult>
+      fetcher: (options: TFetcherOptions) => Promise<TFetcherResult | undefined>
     }
 )
 
@@ -146,8 +146,12 @@ export const DataTableProvider = ({
           Array.isArray(newData?.results),
           'The fetcher function must return an object with a property `result` which must be an array'
         )
+        invariant(
+          newData && Number.isInteger(newData.total) && newData.total >= 0,
+          'The fetcher function must return an object with a property `total` which must be a positive integer or zero'
+        )
 
-        setData(newData)
+        setData(newData as TFetcherResult)
         setApiQueryStatus(ApiQueryStatus.SUCCEDED)
       } catch (error) {
         setApiQueryStatus(ApiQueryStatus.FAILED)
