@@ -368,6 +368,10 @@ exports[`DataTable Remote component renders 1`] = `
     margin-left: 2px;
     margin-right: 2px;
   }
+
+  .c-cwQMhQ-IBhIY-isLoading-true {
+    filter: blur(3px);
+  }
 }
 
 @media  {
@@ -435,6 +439,10 @@ exports[`DataTable Remote component renders 1`] = `
     width: 20px;
   }
 
+  .c-cwQMhQ-illIiIE-css {
+    margin-bottom: var(--space-4);
+  }
+
   .c-GSaiK-ifYtQLP-css {
     cursor: initial;
   }
@@ -490,24 +498,12 @@ exports[`DataTable Remote component renders 1`] = `
   }
 }
 
-@media  {
-  .c-PJLV-IBhIY-isLoading-true {
-    filter: blur(3px);
-  }
-}
-
-@media  {
-  .c-PJLV-illIiIE-css {
-    mb: var(--4);
-  }
-}
-
 <div>
   <div
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-PJLV c-PJLV-illIiIE-css"
+      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
     >
       <thead
         class="c-PJLV c-PJLV-gzzGYN-theme-light"
@@ -1217,6 +1213,10 @@ exports[`DataTable component renders 1`] = `
     width: 20px;
   }
 
+  .c-cwQMhQ-illIiIE-css {
+    margin-bottom: var(--space-4);
+  }
+
   .c-GSaiK-ifYtQLP-css {
     cursor: initial;
   }
@@ -1243,12 +1243,6 @@ exports[`DataTable component renders 1`] = `
 
   .c-GSaiK-igsmDXe-css {
     cursor: pointer;
-  }
-}
-
-@media  {
-  .c-PJLV-illIiIE-css {
-    mb: var(--4);
   }
 }
 
@@ -1288,7 +1282,7 @@ exports[`DataTable component renders 1`] = `
       </svg>
     </div>
     <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-PJLV c-PJLV-illIiIE-css"
+      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
     >
       <thead
         class="c-PJLV c-PJLV-gzzGYN-theme-light"

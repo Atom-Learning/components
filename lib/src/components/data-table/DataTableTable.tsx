@@ -1,4 +1,3 @@
-import { styled } from '@stitches/react'
 import * as React from 'react'
 
 import { Table } from '../table'
@@ -15,16 +14,6 @@ type DataTableTableProps = Omit<
   > &
   Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>>
 
-const TableStyled = styled(Table, {
-  variants: {
-    isLoading: {
-      true: {
-        filter: 'blur(3px)'
-      }
-    }
-  }
-})
-
 export const DataTableTable: React.FC<DataTableTableProps> = ({
   sortable,
   striped,
@@ -35,9 +24,9 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
 
   return (
-    <TableStyled isLoading={isLoading} {...props}>
+    <Table isLoading={isLoading} {...props}>
       <DataTable.Head theme={theme} sortable={sortable} />
       <DataTable.Body striped={striped} />
-    </TableStyled>
+    </Table>
   )
 }

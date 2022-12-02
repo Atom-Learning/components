@@ -51,6 +51,11 @@ const StyledTable = styled('table', {
         }
       },
       square: {}
+    },
+    isLoading: {
+      true: {
+        filter: 'blur(3px)'
+      }
     }
   }
 })
