@@ -193,7 +193,7 @@ exports[`TopBar component renders 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.412 14.412L20 20"
+            d="M14.412 14.412 20 20"
           />
           <circle
             cx="10"
@@ -218,11 +218,11 @@ exports[`TopBar component renders 1`] = `
         >
           <path
             clip-rule="evenodd"
-            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
             fill-rule="evenodd"
           />
           <path
-            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
           />
         </svg>
       </button>
@@ -433,7 +433,7 @@ exports[`TopBar component renders the lg variant 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.412 14.412L20 20"
+            d="M14.412 14.412 20 20"
           />
           <circle
             cx="10"
@@ -458,11 +458,11 @@ exports[`TopBar component renders the lg variant 1`] = `
         >
           <path
             clip-rule="evenodd"
-            d="M7 14a2 2 0 110-4 2 2 0 010 4z"
+            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
             fill-rule="evenodd"
           />
           <path
-            d="M7 17A5 5 0 017 7h9a5 5 0 010 10H7z"
+            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
           />
         </svg>
       </button>
