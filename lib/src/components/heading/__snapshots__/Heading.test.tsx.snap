@@ -2,8 +2,7 @@
 
 exports[`Heading component renders a heading 1`] = `
 @media  {
-  .c-iSnHBU {
-    color: var(--colors-tonal600);
+  .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
@@ -11,18 +10,18 @@ exports[`Heading component renders a heading 1`] = `
 }
 
 @media  {
-  .c-iSnHBU-fOoUdm-size-md {
+  .c-jryFOR-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::before {
+  .c-jryFOR-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::after {
+  .c-jryFOR-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
@@ -31,7 +30,7 @@ exports[`Heading component renders a heading 1`] = `
 
 <div>
   <h2
-    class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
+    class="c-jryFOR c-jryFOR-fOoUdm-size-md"
   >
     HEADING
   </h2>

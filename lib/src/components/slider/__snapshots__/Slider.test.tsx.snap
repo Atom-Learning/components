@@ -313,15 +313,14 @@ exports[`Slider.Value component renders 1`] = `
     background: var(--colors-tonal100);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 }
@@ -331,18 +330,18 @@ exports[`Slider.Value component renders 1`] = `
     background: var(--colors-tonal200);
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -350,7 +349,7 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-fIXJvv-iQwDky-css {
+  .c-dyvMgW-iQwDky-css {
     margin-top: var(--space-4);
     color: var(--colors-tonal300);
     width: 100%;
@@ -359,7 +358,7 @@ exports[`Slider.Value component renders 1`] = `
 
 <div>
   <p
-    class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-fIXJvv-iQwDky-css"
+    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iQwDky-css"
   >
     Current value is 50
   </p>

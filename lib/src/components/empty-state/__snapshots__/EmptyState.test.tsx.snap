@@ -22,15 +22,14 @@ exports[`EmptyState component renders a component 1`] = `
     font-weight: 600;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -50,18 +49,18 @@ exports[`EmptyState component renders a component 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -83,7 +82,7 @@ exports[`EmptyState component renders a component 1`] = `
       No users found!
     </h2>
     <p
-      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
     >
       You need to add some users before you can use this feature
     </p>
