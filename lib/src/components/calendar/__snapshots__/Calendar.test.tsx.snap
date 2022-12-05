@@ -53,15 +53,14 @@ exports[`Calendar component renders 1`] = `
     grid-gap: var(--space-1) var(--space-2);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -114,18 +113,18 @@ exports[`Calendar component renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -211,7 +210,7 @@ exports[`Calendar component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-fIXJvv-idQvJRf-css {
+  .c-dyvMgW-idQvJRf-css {
     font-weight: 600;
     text-align: center;
   }
@@ -276,37 +275,37 @@ exports[`Calendar component renders 1`] = `
         class="c-fPxPMR c-fPxPMR-ihbtntv-css"
       >
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Sun
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Mon
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Tue
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Wed
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Thu
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Fri
         </span>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-idQvJRf-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
         >
           Sat
         </span>
