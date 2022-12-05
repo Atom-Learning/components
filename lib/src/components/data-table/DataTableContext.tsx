@@ -174,6 +174,7 @@ export const DataTableProvider = ({
       : -1,
     getCoreRowModel: getCoreRowModel(),
     manualPagination: fetcher && isPaginated,
+    manualSorting: fetcher && isPaginated,
     enableSorting: apiQueryStatus !== ApiQueryStatus.PENDING,
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     onPaginationChange: isPaginated ? setPagination : undefined,
