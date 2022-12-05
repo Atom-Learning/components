@@ -135,7 +135,7 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 
 ### Server-side pagination and sorting
 
-`DataTable` accepts a `fetcher` function that is used to fetch the paginated data. The `fetcher` function provides you with the necessary parameters to query your api endpoint; `pageIndex`, `pageSize`, `sortBy` and `sortDirection`. The response from the `fetcher` function must match the following schema:
+`DataTable` accepts an `asyncData` function that is used to fetch the paginated data. The `asyncData` function provides you with the necessary parameters to query your api endpoint; `pageIndex`, `pageSize`, `sortBy` and `sortDirection`. The response from the `asyncData` function must match the following schema:
 
 ```ts
 {
@@ -144,14 +144,14 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 }
 ```
 
-A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `fetcher` promise is pending. You can use `DataTable.Error` to display your own error component when the `fetcher` function promise rejects. It provides a `retry` function, allowing the children of the component to recall the `fetcher` function with either the last pagination options or your own custom pagination properties
+A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `asyncData` promise is pending. You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. It provides a `retry` function, allowing the children of the component to recall the `asyncData` function with either the last pagination options or your own custom pagination properties
 
 ```tsx
 <DataTable
   columns={columns}
   defaultPageSize={10}
   defaultSort={{ column: 'name', direction: 'asc' }}
-  fetcher={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
+  asyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
     const nextPage = pageIndex + 1
     const data = await fetch(
       `https://your-api?page=${nextPage}&pageSize=${pageSize}&order=${sortBy}&dir=${sortDirection}`

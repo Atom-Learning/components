@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 import { Flex } from '../../flex'
 import { Text } from '../../text'
-import { ApiQueryStatus } from '../DataTable.types'
+import { AsyncDataState } from '../DataTable.types'
 import { useDataTable } from '../DataTableContext'
 import { DirectionButton, GotoPageSelect } from './PaginationButtons'
 
@@ -27,7 +27,7 @@ export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
     nextPage,
     setPageIndex,
     getTotalRows,
-    apiQueryStatus
+    asyncDataState
   } = useDataTable()
 
   React.useEffect(() => {
@@ -39,9 +39,9 @@ export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
   const recordsCountFrom =
     paginationState.pageIndex * paginationState.pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
-  const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
+  const isPending = asyncDataState === AsyncDataState.PENDING
 
-  if (apiQueryStatus === ApiQueryStatus.FAILED) return null
+  if (asyncDataState === AsyncDataState.REJECTED) return null
 
   return (
     <StyledNav {...props}>
@@ -53,20 +53,20 @@ export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
         gotoPage={setPageIndex}
         pageCount={getPageCount()}
         pageIndex={paginationState.pageIndex}
-        disabled={isLoading}
+        disabled={isPending}
       />
 
       <Flex css={{ justifyContent: 'flex-end' }}>
         <DirectionButton
           direction="previous"
-          disabled={paginationState.pageIndex === 0 || isLoading}
+          disabled={paginationState.pageIndex === 0 || isPending}
           onClick={previousPage}
           css={{ mr: '$4' }}
         />
         <DirectionButton
           direction="next"
           disabled={
-            paginationState.pageIndex === getPageCount() - 1 || isLoading
+            paginationState.pageIndex === getPageCount() - 1 || isPending
           }
           onClick={nextPage}
         />

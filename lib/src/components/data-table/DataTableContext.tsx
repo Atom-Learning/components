@@ -25,9 +25,9 @@ import { CSS } from '~/stitches'
 
 import {
   DataTableContextType,
-  TFetcherOptions,
-  TFetcherResult,
-  ApiQueryStatus
+  TAsyncDataOptions,
+  TAsyncDataResult,
+  AsyncDataState
 } from './DataTable.types'
 import { Box } from '../box'
 import { DataTableLoading } from './DataTableLoading'
@@ -52,10 +52,12 @@ type TableProviderProps = {
   initialState?: InitialState
   css?: CSS
 } & (
-  | { data: Array<Record<string, unknown>>; fetcher?: never }
+  | { data: Array<Record<string, unknown>>; asyncData?: never }
   | {
       data?: never
-      fetcher: (options: TFetcherOptions) => Promise<TFetcherResult | undefined>
+      asyncData: (
+        options: TAsyncDataOptions
+      ) => Promise<TAsyncDataResult | undefined>
     }
 )
 
@@ -67,13 +69,13 @@ const DataTableContext =
 export const DataTableProvider = ({
   columns,
   data: dataProp,
-  fetcher,
+  asyncData,
   defaultSort,
   initialState = undefined,
   children,
   css
 }: TableProviderProps): JSX.Element => {
-  const [data, setData] = React.useState<TFetcherResult>({
+  const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
     total: dataProp?.length ?? 0
   })
@@ -81,14 +83,14 @@ export const DataTableProvider = ({
   const [isPaginated, setIsPaginated] = React.useState<boolean>(
     !!initialState?.pagination
   )
-  const [apiQueryStatus, setApiQueryStatus] = React.useState<ApiQueryStatus>(
-    ApiQueryStatus.NONE
+  const [asyncDataState, setApiQueryStatus] = React.useState<AsyncDataState>(
+    AsyncDataState.NONE
   )
 
   const [paginationState, setPagination] = React.useState<
     PaginationState | undefined
   >(
-    fetcher
+    asyncData
       ? {
           ...defaultPaginationState,
           ...initialState?.pagination
@@ -112,14 +114,14 @@ export const DataTableProvider = ({
     setIsPaginated(true)
   }, [])
 
-  const doFetchData = React.useCallback(
+  const runAsyncData = React.useCallback(
     async ({
       pageIndex: overridePageIndex,
       pageSize: overridePageSize,
       sortBy: overrideSortBy,
       sortDirection: overrideSortDirection
     }) => {
-      if (!fetcher) return
+      if (!asyncData) return
 
       const getSortDirection = () => {
         if (sorting[0]) {
@@ -132,10 +134,10 @@ export const DataTableProvider = ({
       }
 
       try {
-        setApiQueryStatus(ApiQueryStatus.PENDING)
+        setApiQueryStatus(AsyncDataState.PENDING)
 
         const { pageIndex, pageSize } = paginationState as PaginationState
-        const newData = await fetcher({
+        const newData = await asyncData({
           pageIndex: overridePageIndex ?? pageIndex,
           pageSize: overridePageSize ?? pageSize,
           sortBy: overrideSortBy ?? sorting[0]?.id,
@@ -144,25 +146,25 @@ export const DataTableProvider = ({
 
         invariant(
           Array.isArray(newData?.results),
-          'The fetcher function must return an object with a property `result` which must be an array'
+          'The asyncData function must return an object with a property `result` which must be an array'
         )
         invariant(
           newData && Number.isInteger(newData.total) && newData.total >= 0,
-          'The fetcher function must return an object with a property `total` which must be a positive integer or zero'
+          'The asyncData function must return an object with a property `total` which must be a positive integer or zero'
         )
 
-        setData(newData as TFetcherResult)
-        setApiQueryStatus(ApiQueryStatus.SUCCEDED)
+        setData(newData as TAsyncDataResult)
+        setApiQueryStatus(AsyncDataState.FULFILLED)
       } catch (error) {
-        setApiQueryStatus(ApiQueryStatus.FAILED)
+        setApiQueryStatus(AsyncDataState.REJECTED)
       }
     },
-    [fetcher, paginationState?.pageIndex, paginationState?.pageSize, sorting]
+    [asyncData, paginationState?.pageIndex, paginationState?.pageSize, sorting]
   )
 
   React.useEffect(() => {
-    doFetchData({})
-  }, [doFetchData])
+    runAsyncData({})
+  }, [runAsyncData])
 
   const getTotalRows = () => data.total
 
@@ -173,9 +175,9 @@ export const DataTableProvider = ({
       ? Math.ceil(getTotalRows() / paginationState.pageSize)
       : -1,
     getCoreRowModel: getCoreRowModel(),
-    manualPagination: fetcher && isPaginated,
-    manualSorting: fetcher && isPaginated,
-    enableSorting: apiQueryStatus !== ApiQueryStatus.PENDING,
+    manualPagination: asyncData && isPaginated,
+    manualSorting: asyncData && isPaginated,
+    enableSorting: asyncDataState !== AsyncDataState.PENDING,
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     onPaginationChange: isPaginated ? setPagination : undefined,
     getSortedRowModel:
@@ -196,8 +198,8 @@ export const DataTableProvider = ({
       applyPagination,
       getTotalRows,
       isSortable,
-      apiQueryStatus,
-      doFetchData
+      asyncDataState,
+      runAsyncData
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

@@ -52,7 +52,7 @@ const StyledTable = styled('table', {
       },
       square: {}
     },
-    isLoading: {
+    isPending: {
       true: {
         opacity: 0.5,
         transition: 'opacity 250ms linear 150ms'

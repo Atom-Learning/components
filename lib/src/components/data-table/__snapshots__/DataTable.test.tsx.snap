@@ -369,7 +369,7 @@ exports[`DataTable Remote component renders 1`] = `
     margin-right: 2px;
   }
 
-  .c-cwQMhQ-brLNpz-isLoading-true {
+  .c-cwQMhQ-brLNpz-isPending-true {
     opacity: 0.5;
     transition: opacity 250ms linear 150ms;
   }

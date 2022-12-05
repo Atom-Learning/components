@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Table } from '../table'
 import { DataTable } from '.'
-import { ApiQueryStatus } from './DataTable.types'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type DataTableBodyProps = Omit<
@@ -14,9 +14,9 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
   striped = false,
   ...props
 }) => {
-  const { getRowModel, apiQueryStatus } = useDataTable()
+  const { getRowModel, asyncDataState } = useDataTable()
 
-  if (apiQueryStatus === ApiQueryStatus.FAILED) return null
+  if (asyncDataState === AsyncDataState.REJECTED) return null
 
   return (
     <Table.Body {...props} striped={striped}>

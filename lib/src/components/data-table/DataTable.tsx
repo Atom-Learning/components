@@ -78,7 +78,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * Renders a loading component while fetching the paginated data in `DataTable.Remote`.
    * This component is included inside `DataTable.Remote`
    *
-   * If you need more customisation, you can compose your own implentation, `apiQueryStatus`
+   * If you need more customisation, you can compose your own implentation, `asyncDataState`
    * can be retrieved from `useDataTable`
    */
   Loading: typeof DataTableLoading
@@ -86,11 +86,11 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
   /** Default error implementation for remote data
    *
    * Renders an error component when the api fetch call fails for `DataTable.Remote`.
-   * Children are rendered as a function, it exposes a `doFetchData()` to the children component.
-   * `doFetchData()` can be used to retry fetching the paginated data with the current pageIndex, pageSize
+   * Children are rendered as a function, it exposes a `runAsyncData()` to the children component.
+   * `runAsyncData()` can be used to retry fetching the paginated data with the current pageIndex, pageSize
    * and sorting parameters.
    *
-   * If you need more customisation, you can compose your own implentation, `apiQueryStatus` and `doFetchData()
+   * If you need more customisation, you can compose your own implentation, `asyncDataState` and `runAsyncData()
    * can be retrieved from `useDataTable`
    *
    */

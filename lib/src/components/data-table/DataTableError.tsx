@@ -3,21 +3,21 @@ import * as React from 'react'
 import { CSS } from '~/stitches'
 
 import { Flex } from '../flex'
-import { ApiQueryStatus, DataTableContextType } from './DataTable.types'
+import { AsyncDataState, DataTableContextType } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type TDataTableErrorProps = Omit<React.FC, 'children'> & {
   css?: CSS
-  children: (retry: DataTableContextType['doFetchData']) => React.ReactNode
+  children: (retry: DataTableContextType['runAsyncData']) => React.ReactNode
 }
 
 export const DataTableError: React.FC<TDataTableErrorProps> = ({
   css,
   children
 }) => {
-  const { apiQueryStatus, doFetchData } = useDataTable()
+  const { asyncDataState, runAsyncData } = useDataTable()
 
-  if (apiQueryStatus !== ApiQueryStatus.FAILED) return null
+  if (asyncDataState !== AsyncDataState.REJECTED) return null
 
   return (
     <Flex
@@ -29,7 +29,7 @@ export const DataTableError: React.FC<TDataTableErrorProps> = ({
         ...css
       }}
     >
-      {children(doFetchData)}
+      {children(runAsyncData)}
     </Flex>
   )
 }

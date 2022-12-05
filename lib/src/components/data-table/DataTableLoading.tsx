@@ -3,7 +3,7 @@ import * as React from 'react'
 import { CSS } from '~/stitches'
 
 import { Loader } from '../loader'
-import { ApiQueryStatus } from './DataTable.types'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 interface IDataTableLoadingProps {
@@ -11,8 +11,8 @@ interface IDataTableLoadingProps {
 }
 
 export const DataTableLoading: React.FC<IDataTableLoadingProps> = ({ css }) => {
-  const { apiQueryStatus } = useDataTable()
-  if (apiQueryStatus !== ApiQueryStatus.PENDING) return null
+  const { asyncDataState } = useDataTable()
+  if (asyncDataState !== AsyncDataState.PENDING) return null
 
   return (
     <Loader

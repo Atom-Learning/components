@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Table } from '../table'
 import { DataTable } from './DataTable'
-import { ApiQueryStatus } from './DataTable.types'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type DataTableTableProps = Omit<
@@ -20,11 +20,11 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   theme,
   ...props
 }) => {
-  const { apiQueryStatus } = useDataTable()
-  const isLoading = apiQueryStatus === ApiQueryStatus.PENDING
+  const { asyncDataState } = useDataTable()
+  const isPending = asyncDataState === AsyncDataState.PENDING
 
   return (
-    <Table isLoading={isLoading} {...props}>
+    <Table isPending={isPending} {...props}>
       <DataTable.Head theme={theme} sortable={sortable} />
       <DataTable.Body striped={striped} />
     </Table>

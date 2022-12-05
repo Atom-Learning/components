@@ -1,19 +1,19 @@
 import type { Table } from '@tanstack/react-table'
 import * as React from 'react'
 
-export enum ApiQueryStatus {
+export enum AsyncDataState {
   NONE = 'none',
   PENDING = 'pending',
-  SUCCEDED = 'succeded',
-  FAILED = 'failed'
+  FULFILLED = 'fulfilled',
+  REJECTED = 'rejected'
 }
 
-export type TFetcherResult = {
+export type TAsyncDataResult = {
   total: number
   results: Array<Record<string, unknown>>
 }
 
-export type TFetcherOptions = {
+export type TAsyncDataOptions = {
   pageIndex: number
   pageSize: number
   sortBy: string
@@ -25,6 +25,6 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   applyPagination: () => void
   getTotalRows: () => number
   isSortable: boolean
-  apiQueryStatus?: ApiQueryStatus
-  doFetchData?: (options: TFetcherOptions) => Promise<void>
+  asyncDataState?: AsyncDataState
+  runAsyncData?: (options: TAsyncDataOptions) => Promise<void>
 }
