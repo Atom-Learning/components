@@ -260,7 +260,7 @@ exports[`DateField component renders a field in error state 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+              d="M3 5h18v16H3V5Zm18 4H3m4-4V3m10 2V3"
             />
             <rect
               height="2"
@@ -505,7 +505,7 @@ exports[`DateField component renders a field with a text input 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+              d="M3 5h18v16H3V5Zm18 4H3m4-4V3m10 2V3"
             />
             <rect
               height="2"

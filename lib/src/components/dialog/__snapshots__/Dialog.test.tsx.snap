@@ -151,7 +151,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+        d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
       />
     </svg>
   </button>
@@ -342,7 +342,7 @@ exports[`Dialog component with custom background renders 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M6.343 6.343l11.314 11.314m-11.314 0L17.657 6.343"
+          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
         />
       </svg>
     </button>
