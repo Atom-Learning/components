@@ -51,20 +51,6 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     width: var(--sizes-5);
   }
 
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
-
   .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -207,20 +193,6 @@ exports[`Avatar component renders an icon avatar 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
-
   .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -332,20 +304,6 @@ exports[`Avatar component renders an image avatar 1`] = `
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
 }
 
 <div>
@@ -354,7 +312,7 @@ exports[`Avatar component renders an image avatar 1`] = `
   >
     <img
       alt="somobody's avatar"
-      class="c-iSBxEZ c-jxOsbj c-iSBxEZ-dsQBoa-fluid-true"
+      class="c-iSBxEZ c-jxOsbj"
       src="path-to-image"
     />
   </div>
@@ -410,20 +368,6 @@ exports[`Avatar component renders an inital avatar 1`] = `
   .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -553,20 +497,6 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     width: var(--sizes-5);
   }
 
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
-  }
-
   .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -681,20 +611,6 @@ exports[`Avatar component renders the initial of the name when the src of the im
   .c-hMBZYr-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width] {
-    width: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[width][height] {
-    height: auto;
-  }
-
-  .c-iSBxEZ-dsQBoa-fluid-true[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-dyvMgW-gvmVBy-size-md {
