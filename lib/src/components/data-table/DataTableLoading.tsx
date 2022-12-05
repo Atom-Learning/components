@@ -18,10 +18,9 @@ export const DataTableLoading: React.FC<IDataTableLoadingProps> = ({ css }) => {
     <Loader
       css={{
         position: 'absolute',
-        marginBottom: '$4',
         left: '50%',
-        transform: 'translate(-50%, 0)',
-        bottom: '$9',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
         zIndex: 1,
         ...css
       }}

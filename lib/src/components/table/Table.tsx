@@ -54,7 +54,8 @@ const StyledTable = styled('table', {
     },
     isLoading: {
       true: {
-        filter: 'blur(3px)'
+        opacity: 0.5,
+        transition: 'opacity 250ms linear 150ms'
       }
     }
   }

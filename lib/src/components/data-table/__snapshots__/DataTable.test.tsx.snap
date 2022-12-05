@@ -369,8 +369,9 @@ exports[`DataTable Remote component renders 1`] = `
     margin-right: 2px;
   }
 
-  .c-cwQMhQ-IBhIY-isLoading-true {
-    filter: blur(3px);
+  .c-cwQMhQ-brLNpz-isLoading-true {
+    opacity: 0.5;
+    transition: opacity 250ms linear 150ms;
   }
 }
 
@@ -487,13 +488,12 @@ exports[`DataTable Remote component renders 1`] = `
     right: var(--space-1);
   }
 
-  .c-dhzjXW-ijuSDni-css {
+  .c-dhzjXW-ienkVEh-css {
     justify-content: center;
     position: absolute;
-    margin-bottom: var(--space-4);
     left: 50%;
-    transform: translate(-50%, 0);
-    bottom: var(--space-9);
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
   }
 }
