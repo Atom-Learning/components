@@ -20,11 +20,11 @@ export const EmptyStateBody = styled(Text, {
       },
       lg: {
         fontSize: '$md',
-        mb: '$5'
+        mb: 'calc($4 + $2)'
       },
       xl: {
         fontSize: '$md',
-        mb: '$5'
+        mb: 'calc($4 + $2)'
       }
     }
   }
