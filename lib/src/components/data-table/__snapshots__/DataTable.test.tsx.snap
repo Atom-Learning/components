@@ -111,15 +111,14 @@ exports[`DataTable Remote component renders 1`] = `
     font-variant-numeric: tabular-nums;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -318,18 +317,18 @@ exports[`DataTable Remote component renders 1`] = `
     background: white;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -457,7 +456,7 @@ exports[`DataTable Remote component renders 1`] = `
     margin-right: var(--space-3);
   }
 
-  .c-fIXJvv-igbZjeK-css {
+  .c-dyvMgW-igbZjeK-css {
     flex: none;
   }
 
@@ -760,7 +759,7 @@ exports[`DataTable Remote component renders 1`] = `
       class="c-eIXSIu"
     >
       <p
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
       >
         1 - 10 of 18 items
       </p>
@@ -782,7 +781,7 @@ exports[`DataTable Remote component renders 1`] = `
           </option>
         </select>
         <p
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
         >
           of 2 pages
         </p>
@@ -1255,172 +1254,8 @@ exports[`DataTable component renders 1`] = `
       class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
       for="User search"
     >
-      <path
-        d="M14.412 14.412 20 20"
-      />
-      <circle
-        cx="10"
-        cy="10"
-        r="6"
-      />
-    </svg>
-  </div>
-  <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
-  >
-    <thead
-      class="c-PJLV c-PJLV-gzzGYN-theme-light"
-    >
-      <tr
-        class="c-hjAYDb"
-      >
-        <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
-        >
-          <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-          >
-            name
-          </div>
-        </th>
-        <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
-        >
-          <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-          >
-            hobby
-          </div>
-        </th>
-        <th
-          class="c-GSaiK c-GSaiK-ifYtQLP-css"
-        >
-          <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-          >
-            Actions
-          </div>
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      class="c-PJLV c-PJLV-kqWICR-striped-false"
-    >
-      <tr
-        class="c-hjAYDb"
-      >
-        <td
-          class="c-cCZzXk"
-        >
-          chrissy
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          bare-knuckle boxing
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          <button>
-            do something
-          </button>
-        </td>
-      </tr>
-      <tr
-        class="c-hjAYDb"
-      >
-        <td
-          class="c-cCZzXk"
-        >
-          agatha
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          crossfit
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          <button>
-            do something
-          </button>
-        </td>
-      </tr>
-      <tr
-        class="c-hjAYDb"
-      >
-        <td
-          class="c-cCZzXk"
-        >
-          betty
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          acting
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          <button>
-            do something
-          </button>
-        </td>
-      </tr>
-      <tr
-        class="c-hjAYDb"
-      >
-        <td
-          class="c-cCZzXk"
-        >
-          denise
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          bare-knuckle boxing
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          <button>
-            do something
-          </button>
-        </td>
-      </tr>
-      <tr
-        class="c-hjAYDb"
-      >
-        <td
-          class="c-cCZzXk"
-        >
-          charlie
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          crossfit
-        </td>
-        <td
-          class="c-cCZzXk"
-        >
-          <button>
-            do something
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <nav
-    class="c-ciKXky"
-  >
-    <p
-      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
-    >
-      1 - 5 of 18 items
-    </p>
+      User search
+    </label>
     <div
       class="c-PJLV c-PJLV-ieyRoAv-css"
     >
@@ -1598,7 +1433,7 @@ exports[`DataTable component renders 1`] = `
       class="c-eIXSIu"
     >
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
       >
         1 - 5 of 18 items
       </p>
@@ -1630,7 +1465,7 @@ exports[`DataTable component renders 1`] = `
           </option>
         </select>
         <p
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igbZjeK-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
         >
           of 4 pages
         </p>
