@@ -329,7 +329,7 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: 10,
       sortBy: undefined,
-      sortDirection: null
+      sortDirection: undefined
     })
   })
 
@@ -485,7 +485,7 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: undefined,
-      sortDirection: null
+      sortDirection: undefined
     })
   })
 

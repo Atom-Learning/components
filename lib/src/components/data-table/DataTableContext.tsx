@@ -130,7 +130,7 @@ export const DataTableProvider = ({
           return 'asc'
         }
 
-        return null
+        return undefined
       }
 
       try {

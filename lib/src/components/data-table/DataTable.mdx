@@ -1,6 +1,6 @@
 ---
 title: DataTable
-component: DataTable, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter, DataTable.Loading, DataTable.Error
+component: DataTable, DataTable.Table, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter, DataTable.Loading, DataTable.Error
 description: Displays tabular data with features such as sorting and pagination
 category: Content
 ---
@@ -11,7 +11,7 @@ category: Content
 
 ## Anatomy
 
-The root DataTable component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling useDataTable. You can pass an initialState prop to DataTable as described in the [`@tanstack/react-table` docs](https://tanstack.com/table/v8/docs/api/core/table#initialstate).
+The root `DataTable` component manages the table's state and exposes it via the React Context API. This state can be accessed by any child components by calling `useDataTable`. You can pass an `initialState` prop to `DataTable` as described in the [`@tanstack/react-table` docs](https://tanstack.com/table/v8/docs/api/core/table#initialstate).
 
 Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
 
@@ -135,22 +135,38 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 
 ### Server-side pagination and sorting
 
-`DataTable` accepts an `asyncData` function that is used to fetch the paginated data. The `asyncData` function provides you with the necessary parameters to query your api endpoint; `pageIndex`, `pageSize`, `sortBy` and `sortDirection`. The response from the `asyncData` function must match the following schema:
+`DataTable` can be used with local pagination or server-side pagination (getting only the data needed for the current page). To use one or the other, you have to use the `data` or `asyncData` prop respectively.
+
+The `asyncData` function accepts an object with the necessary parameters to get the relevant piece of data for the current page and order. All the parameters are optional, with these defaults:
+
+```
+{
+  pageIndex: 0,
+  pageSize: 10,
+  sortBy: undefined,
+  sortDirection: undefined
+}
+```
+
+The response from the `asyncData` function must match the following schema:
 
 ```ts
 {
-  results: Array<Record<string, unknown>> // your paginated data
+  results: Array<Record<string, unknown>> // your current page data, sorted if specified
   total: number // the total number of elements in your data
 }
 ```
 
-A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `asyncData` promise is pending. You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. It provides a `retry` function, allowing the children of the component to recall the `asyncData` function with either the last pagination options or your own custom pagination properties
+A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `asyncData` promise is pending.
+
+You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern. It provides a `retry` function, allowing the children of the component to recall the `asyncData` function with either the last pagination options or your own custom pagination properties.
 
 ```tsx
 <DataTable
   columns={columns}
   defaultPageSize={10}
   defaultSort={{ column: 'name', direction: 'asc' }}
+  initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
   asyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
     const nextPage = pageIndex + 1
     const data = await fetch(
