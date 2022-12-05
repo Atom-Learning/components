@@ -11,7 +11,8 @@ import { DirectionButton, GotoPageSelect } from './PaginationButtons'
 const StyledNav = styled('nav', {
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center'
+  alignItems: 'center',
+  fontVariantNumeric: 'tabular-nums'
 })
 
 type PaginationProps = React.ComponentProps<typeof StyledNav>

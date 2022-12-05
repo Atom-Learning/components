@@ -104,10 +104,11 @@ exports[`DataTable Remote component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-ciKXky {
+  .c-eIXSIu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-variant-numeric: tabular-nums;
   }
 
   .c-fIXJvv {
@@ -756,7 +757,7 @@ exports[`DataTable Remote component renders 1`] = `
       </tbody>
     </table>
     <nav
-      class="c-ciKXky"
+      class="c-eIXSIu"
     >
       <p
         class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
@@ -936,10 +937,11 @@ exports[`DataTable component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-ciKXky {
+  .c-eIXSIu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-variant-numeric: tabular-nums;
   }
 
   .c-fIXJvv {
@@ -1430,7 +1432,7 @@ exports[`DataTable component renders 1`] = `
       </tbody>
     </table>
     <nav
-      class="c-ciKXky"
+      class="c-eIXSIu"
     >
       <p
         class="c-fIXJvv c-fIXJvv-bndJoy-size-sm"
