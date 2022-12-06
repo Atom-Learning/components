@@ -83,7 +83,7 @@ export const DataTableProvider = ({
   const [isPaginated, setIsPaginated] = React.useState<boolean>(
     !!initialState?.pagination
   )
-  const [asyncDataState, setApiQueryStatus] = React.useState<AsyncDataState>(
+  const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
     AsyncDataState.NONE
   )
 
@@ -134,7 +134,7 @@ export const DataTableProvider = ({
       }
 
       try {
-        setApiQueryStatus(AsyncDataState.PENDING)
+        setAsyncDataState(AsyncDataState.PENDING)
 
         const { pageIndex, pageSize } = paginationState as PaginationState
         const newData = await asyncData({
@@ -154,9 +154,9 @@ export const DataTableProvider = ({
         )
 
         setData(newData as TAsyncDataResult)
-        setApiQueryStatus(AsyncDataState.FULFILLED)
+        setAsyncDataState(AsyncDataState.FULFILLED)
       } catch (error) {
-        setApiQueryStatus(AsyncDataState.REJECTED)
+        setAsyncDataState(AsyncDataState.REJECTED)
       }
     },
     [asyncData, paginationState?.pageIndex, paginationState?.pageSize, sorting]
