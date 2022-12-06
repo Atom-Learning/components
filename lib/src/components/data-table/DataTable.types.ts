@@ -16,8 +16,8 @@ export type TAsyncDataResult = {
 export type TAsyncDataOptions = {
   pageIndex: number
   pageSize: number
-  sortBy: string
-  sortDirection: 'asc' | 'desc' | null
+  sortBy?: string
+  sortDirection?: 'asc' | 'desc'
 }
 
 export type DataTableContextType<T = unknown> = Table<T> & {
