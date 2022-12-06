@@ -243,6 +243,14 @@ exports[`DataTable Remote component renders 1`] = `
   .c-jBOHFZ:nth-child(3) {
     animation-delay: 0;
   }
+
+  .c-deGxWL {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 @media  {
@@ -488,13 +496,8 @@ exports[`DataTable Remote component renders 1`] = `
     right: var(--space-1);
   }
 
-  .c-dhzjXW-ienkVEh-css {
+  .c-dhzjXW-ibICGYT-css {
     justify-content: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
   }
 }
 

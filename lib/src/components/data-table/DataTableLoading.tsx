@@ -1,29 +1,25 @@
 import * as React from 'react'
 
-import { CSS } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { Loader } from '../loader'
 import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
-interface IDataTableLoadingProps {
-  css?: CSS
-}
+const PendingState = styled(Loader, {
+  position: 'absolute',
+  left: '50%',
+  top: '50%',
+  transform: 'translate(-50%, -50%)',
+  zIndex: 1
+})
 
-export const DataTableLoading: React.FC<IDataTableLoadingProps> = ({ css }) => {
+export const DataTableLoading: React.FC<
+  React.ComponentProps<typeof PendingState>
+> = (props) => {
   const { asyncDataState } = useDataTable()
+
   if (asyncDataState !== AsyncDataState.PENDING) return null
 
-  return (
-    <Loader
-      css={{
-        position: 'absolute',
-        left: '50%',
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex: 1,
-        ...css
-      }}
-    />
-  )
+  return <PendingState {...props} />
 }
