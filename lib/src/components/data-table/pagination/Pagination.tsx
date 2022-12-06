@@ -18,7 +18,7 @@ const StyledNav = styled('nav', {
 type PaginationProps = React.ComponentProps<typeof StyledNav>
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
+export const Pagination: React.FC<PaginationProps> = (props) => {
   const {
     applyPagination,
     getState,
@@ -40,9 +40,9 @@ export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
   const recordsCountFrom =
     paginationState.pageIndex * paginationState.pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
-  const isPending = asyncDataState === AsyncDataState.PENDING
-
-  if (asyncDataState === AsyncDataState.REJECTED) return null
+  const isPaginationDisabled =
+    asyncDataState === AsyncDataState.PENDING ||
+    asyncDataState === AsyncDataState.REJECTED
 
   return (
     <StyledNav {...props}>
@@ -54,20 +54,21 @@ export const Pagination: React.FC<PaginationProps> = ({ ...props }) => {
         gotoPage={setPageIndex}
         pageCount={getPageCount()}
         pageIndex={paginationState.pageIndex}
-        disabled={isPending}
+        disabled={isPaginationDisabled}
       />
 
       <Flex css={{ justifyContent: 'flex-end' }}>
         <DirectionButton
           direction="previous"
-          disabled={paginationState.pageIndex === 0 || isPending}
+          disabled={paginationState.pageIndex === 0 || isPaginationDisabled}
           onClick={previousPage}
           css={{ mr: '$4' }}
         />
         <DirectionButton
           direction="next"
           disabled={
-            paginationState.pageIndex === getPageCount() - 1 || isPending
+            paginationState.pageIndex === getPageCount() - 1 ||
+            isPaginationDisabled
           }
           onClick={nextPage}
         />

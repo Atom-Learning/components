@@ -489,6 +489,29 @@ describe('DataTable Remote component', () => {
     })
   })
 
+  it('No pagination controls work if fetching the paginated data fails', async () => {
+    asyncData.mockRejectedValue(new Error('Something went wrong'))
+    const PAGE_SIZE = 10
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          asyncData={asyncData}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
+        >
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+
+    userEvent.click(screen.getByLabelText('Next page'))
+    userEvent.click(screen.getByLabelText('Previous page'))
+
+    expect(screen.getByRole('combobox')).toBeDisabled()
+    expect(asyncData).toHaveBeenCalledTimes(1)
+  })
+
   it('Retrys fetching the data with custom fetching options when clicking retry from the error component', async () => {
     asyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_INDEX = 2
