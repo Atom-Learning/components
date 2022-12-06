@@ -159,7 +159,7 @@ The response from the `asyncData` function must match the following schema:
 
 A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `asyncData` promise is pending.
 
-You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern. It provides a `retry` function, allowing the children of the component to recall the `asyncData` function with either the last pagination options or your own custom pagination properties.
+You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
 
 ```tsx
 <DataTable
@@ -168,34 +168,27 @@ You can use `DataTable.Error` to display your own error component when the `asyn
   defaultSort={{ column: 'name', direction: 'asc' }}
   initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
   asyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
-    const nextPage = pageIndex + 1
-    const data = await fetch(
-      `https://your-api?page=${nextPage}&pageSize=${pageSize}&order=${sortBy}&dir=${sortDirection}`
-    )
-    const results = await data.json()
+    const params = new URLSearchParams({
+      page: pageIndex,
+      pageSize,
+      order: sortBy,
+      dir: sortDirection
+    })
+    const response = await fetch(`https://your-api?${params.toString()}`)
+    const { results, total } = await response.json()
 
-    return {
-      results,
-      total: results.total
-    }
+    return { results, total }
   }}
 >
   <DataTable.Table sortable css={{ mb: '$4', minWidth: '500px' }} />
   <DataTable.Error>
-    {(retry) => {
-      return (
-        <>
-          <InlineMessage>Error occured</InlineMessage>
-          <Button onClick={() => retry?.({ pageIndex: 3, pageSize: 10 })}>
-            Retry
-          </Button>
-        </>
-      )
-    }}
+    {(retry) => <Button onClick={retry}>Try again</Button>}
   </DataTable.Error>
   <DataTable.Pagination />
 </DataTable>
 ```
+
+`DataTable.Error` provides a `retry` function to the children which allows you to recall the `asyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
 
 ## Features
 
