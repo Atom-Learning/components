@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import { Table } from '../table'
 import { DataTable } from '.'
-import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type DataTableBodyProps = Omit<
@@ -14,9 +13,7 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
   striped = false,
   ...props
 }) => {
-  const { getRowModel, asyncDataState } = useDataTable()
-
-  if (asyncDataState === AsyncDataState.REJECTED) return null
+  const { getRowModel } = useDataTable()
 
   return (
     <Table.Body {...props} striped={striped}>

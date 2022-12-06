@@ -4,7 +4,7 @@ import { AsyncDataState, DataTableContextType } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type TDataTableErrorProps = Omit<React.FC, 'children'> & {
-  children(retry: DataTableContextType['runAsyncData']): React.ReactElement
+  children: (retry: DataTableContextType['runAsyncData']) => React.ReactElement
 }
 
 export const DataTableError: React.FC<TDataTableErrorProps> = ({
