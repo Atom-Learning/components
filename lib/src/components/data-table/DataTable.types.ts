@@ -1,4 +1,4 @@
-import type { Table } from '@tanstack/react-table'
+import type { Table, SortDirection } from '@tanstack/react-table'
 import * as React from 'react'
 
 export enum AsyncDataState {
@@ -17,8 +17,10 @@ export type TAsyncDataOptions = {
   pageIndex: number
   pageSize: number
   sortBy?: string
-  sortDirection?: 'asc' | 'desc'
+  sortDirection?: SortDirection
 }
+
+export type TGetAsyncData = (options: TAsyncDataOptions) => Promise<TAsyncDataResult | undefined>
 
 export type DataTableContextType<T = unknown> = Table<T> & {
   setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
@@ -26,5 +28,5 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   getTotalRows: () => number
   isSortable: boolean
   asyncDataState?: AsyncDataState
-  runAsyncData?: (options: TAsyncDataOptions) => Promise<void>
+  runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
 }

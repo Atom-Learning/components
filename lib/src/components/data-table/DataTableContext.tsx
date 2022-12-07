@@ -1,4 +1,3 @@
-import invariant from 'invariant'
 import * as React from 'react'
 import {
   useReactTable,
@@ -19,7 +18,8 @@ import type {
   PaginationTableState,
   RowSelectionTableState,
   SortingState,
-  PaginationState
+  PaginationState,
+  SortDirection
 } from '@tanstack/react-table'
 import { CSS } from '~/stitches'
 
@@ -27,10 +27,12 @@ import {
   DataTableContextType,
   TAsyncDataOptions,
   TAsyncDataResult,
-  AsyncDataState
+  AsyncDataState,
+  TGetAsyncData
 } from './DataTable.types'
 import { Box } from '../box'
 import { DataTableLoading } from './DataTableLoading'
+import { getNewAsyncData } from './getNewAsyncData'
 
 type InitialState = Partial<
   VisibilityTableState &
@@ -47,18 +49,13 @@ type InitialState = Partial<
 
 type TableProviderProps = {
   columns
-  defaultSort?: { column: string; direction: 'asc' | 'desc' }
+  defaultSort?: { column: string; direction: SortDirection }
   children: React.ReactNode
   initialState?: InitialState
   css?: CSS
 } & (
   | { data: Array<Record<string, unknown>>; getAsyncData?: never }
-  | {
-      data?: never
-      getAsyncData: (
-        options: TAsyncDataOptions
-      ) => Promise<TAsyncDataResult | undefined>
-    }
+  | { data?: never; getAsyncData: TGetAsyncData }
 )
 
 const defaultPaginationState: PaginationState = { pageIndex: 0, pageSize: 10 }
@@ -115,42 +112,17 @@ export const DataTableProvider = ({
   }, [])
 
   const runAsyncData = React.useCallback(
-    async ({
-      pageIndex: overridePageIndex,
-      pageSize: overridePageSize,
-      sortBy: overrideSortBy,
-      sortDirection: overrideSortDirection
-    }) => {
+    async (overrideAsyncDataOptions: Partial<TAsyncDataOptions>) => {
       if (!getAsyncData) return
-
-      const getSortDirection = () => {
-        if (sorting[0]) {
-          if (sorting[0].desc) return 'desc'
-
-          return 'asc'
-        }
-
-        return undefined
-      }
 
       try {
         setAsyncDataState(AsyncDataState.PENDING)
 
-        const { pageIndex, pageSize } = paginationState as PaginationState
-        const newData = await getAsyncData({
-          pageIndex: overridePageIndex ?? pageIndex,
-          pageSize: overridePageSize ?? pageSize,
-          sortBy: overrideSortBy ?? sorting[0]?.id,
-          sortDirection: overrideSortDirection ?? getSortDirection()
-        })
-
-        invariant(
-          Array.isArray(newData?.results),
-          'The getAsyncData function must return an object with a property `result` which must be an array'
-        )
-        invariant(
-          newData && Number.isInteger(newData.total) && newData.total >= 0,
-          'The getAsyncData function must return an object with a property `total` which must be a positive integer or zero'
+        const newData = await getNewAsyncData(
+          getAsyncData,
+          overrideAsyncDataOptions,
+          paginationState as PaginationState,
+          sorting
         )
 
         setData(newData as TAsyncDataResult)
