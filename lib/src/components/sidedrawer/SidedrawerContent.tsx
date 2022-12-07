@@ -15,7 +15,7 @@ const StyledContent = styled(Content, {
   position: 'fixed',
   top: 0,
   left: 0,
-  height: '100vh',
+  height: '100%',
   maxWidth: '304px',
   width: '100%',
   zIndex: MAX_Z_INDEX,
@@ -29,9 +29,13 @@ const StyledContent = styled(Content, {
   }
 })
 
-export const SidedrawerContent: React.FC = ({ children }) => (
+export const SidedrawerContent: React.FC<
+  React.ComponentProps<typeof StyledContent>
+> = ({ children, ...remainingProps }) => (
   <Portal>
     <SidedrawerOverlay data-testid="sidedrawer_overlay" />
-    <StyledContent role="navigation">{children}</StyledContent>
+    <StyledContent role="navigation" {...remainingProps}>
+      {children}
+    </StyledContent>
   </Portal>
 )
