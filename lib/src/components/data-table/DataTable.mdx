@@ -135,9 +135,9 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 
 ### Server-side pagination and sorting
 
-`DataTable` can be used with local pagination or server-side pagination (getting only the data needed for the current page). To use one or the other, you have to use the `data` or `asyncData` prop respectively.
+`DataTable` can be used with local pagination or server-side pagination (getting only the data needed for the current page). To use one or the other, you have to use the `data` or `getAsyncData` prop respectively.
 
-The `asyncData` function accepts an object with the necessary parameters to get the relevant piece of data for the current page and order. All the parameters are optional, with these defaults:
+The `getAsyncData` function accepts an object with the necessary parameters to get the relevant piece of data for the current page and order. All the parameters are optional, with these defaults:
 
 ```
 {
@@ -148,7 +148,7 @@ The `asyncData` function accepts an object with the necessary parameters to get 
 }
 ```
 
-The response from the `asyncData` function must match the following schema:
+The response from the `getAsyncData` function must match the following schema:
 
 ```ts
 {
@@ -157,9 +157,9 @@ The response from the `asyncData` function must match the following schema:
 }
 ```
 
-A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `asyncData` promise is pending.
+A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `getAsyncData` promise is pending.
 
-You can use `DataTable.Error` to display your own error component when the `asyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
+You can use `DataTable.Error` to display your own error component when the `getAsyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
 
 ```tsx
 <DataTable
@@ -167,7 +167,7 @@ You can use `DataTable.Error` to display your own error component when the `asyn
   defaultPageSize={10}
   defaultSort={{ column: 'name', direction: 'asc' }}
   initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
-  asyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
+  getAsyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
     const params = new URLSearchParams({
       page: pageIndex,
       pageSize,
@@ -188,7 +188,7 @@ You can use `DataTable.Error` to display your own error component when the `asyn
 </DataTable>
 ```
 
-`DataTable.Error` provides a `retry` function to the children which allows you to recall the `asyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
+`DataTable.Error` provides a `retry` function to the children which allows you to recall the `getAsyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
 
 ## Features
 

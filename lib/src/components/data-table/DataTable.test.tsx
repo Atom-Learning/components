@@ -236,7 +236,7 @@ describe('DataTable Search component', () => {
 })
 
 describe('DataTable Remote component', () => {
-  const asyncData = jest.fn().mockResolvedValue({
+  const getAsyncData = jest.fn().mockResolvedValue({
     results: data.slice(0, 10),
     total: data.length
   })
@@ -248,7 +248,7 @@ describe('DataTable Remote component', () => {
   it('renders', async () => {
     const { container } = render(
       <Wrapper>
-        <DataTable columns={columns} asyncData={asyncData}>
+        <DataTable columns={columns} getAsyncData={getAsyncData}>
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
         </DataTable>
@@ -259,7 +259,7 @@ describe('DataTable Remote component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('Calls the asyncData with the first page, passed defaultPageSize, and default sortings', () => {
+  it('Calls the getAsyncData with the first page, passed defaultPageSize, and default sortings', () => {
     const PAGE_SIZE = 7
     const SORT_COLUMN = 'name'
     const SORT_DIRECTION = 'asc'
@@ -267,7 +267,7 @@ describe('DataTable Remote component', () => {
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
@@ -277,7 +277,7 @@ describe('DataTable Remote component', () => {
       </Wrapper>
     )
 
-    expect(asyncData).toHaveBeenCalledWith({
+    expect(getAsyncData).toHaveBeenCalledWith({
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
@@ -285,7 +285,7 @@ describe('DataTable Remote component', () => {
     })
   })
 
-  it('The asyncData is called with the correct page when going to a different page', async () => {
+  it('The getAsyncData is called with the correct page when going to a different page', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     const SORT_DIRECTION = 'asc'
@@ -293,7 +293,7 @@ describe('DataTable Remote component', () => {
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           defaultSort={{ column: SORT_COLUMN, direction: SORT_DIRECTION }}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
@@ -306,7 +306,7 @@ describe('DataTable Remote component', () => {
 
     const nextPageButton = screen.getByLabelText('Next page')
     userEvent.click(nextPageButton)
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 1,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
@@ -314,10 +314,10 @@ describe('DataTable Remote component', () => {
     })
   })
 
-  it('The asyncData is called with the default pageIndex and pageSize when no initial state is provided', async () => {
+  it('The getAsyncData is called with the default pageIndex and pageSize when no initial state is provided', async () => {
     render(
       <Wrapper>
-        <DataTable columns={columns} asyncData={asyncData}>
+        <DataTable columns={columns} getAsyncData={getAsyncData}>
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
         </DataTable>
@@ -325,7 +325,7 @@ describe('DataTable Remote component', () => {
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
       pageSize: 10,
       sortBy: undefined,
@@ -333,14 +333,14 @@ describe('DataTable Remote component', () => {
     })
   })
 
-  it('The asyncData is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
+  it('The getAsyncData is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     render(
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -354,7 +354,7 @@ describe('DataTable Remote component', () => {
 
     userEvent.click(nameHeader)
 
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
@@ -362,14 +362,14 @@ describe('DataTable Remote component', () => {
     })
   })
 
-  it('The asyncData is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
+  it('The getAsyncData is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     render(
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -385,7 +385,7 @@ describe('DataTable Remote component', () => {
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
     userEvent.click(nameHeader)
 
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
@@ -399,7 +399,7 @@ describe('DataTable Remote component', () => {
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -417,7 +417,7 @@ describe('DataTable Remote component', () => {
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -431,18 +431,18 @@ describe('DataTable Remote component', () => {
     userEvent.click(screen.getByText('name'))
 
     expect(screen.getByRole('combobox')).toBeDisabled()
-    expect(asyncData).toHaveBeenCalledTimes(1)
+    expect(getAsyncData).toHaveBeenCalledTimes(1)
   })
 
   it('Error message component is displayed when it fails to fetch the paginated data', async () => {
-    asyncData.mockRejectedValue(new Error('Something went wrong'))
+    getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
     const error = 'Oops something went wrong'
     render(
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -456,13 +456,13 @@ describe('DataTable Remote component', () => {
   })
 
   it('Retrys fetching the data when clicking retry from the error component', async () => {
-    asyncData.mockRejectedValue(new Error('Something went wrong'))
+    getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
     render(
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -480,8 +480,8 @@ describe('DataTable Remote component', () => {
     )
 
     userEvent.click(await screen.findByText('Retry fetch'))
-    expect(asyncData).toHaveBeenCalledTimes(2)
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenCalledTimes(2)
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: undefined,
@@ -490,13 +490,13 @@ describe('DataTable Remote component', () => {
   })
 
   it('No pagination controls work if fetching the paginated data fails', async () => {
-    asyncData.mockRejectedValue(new Error('Something went wrong'))
+    getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
     render(
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -509,11 +509,11 @@ describe('DataTable Remote component', () => {
     userEvent.click(screen.getByLabelText('Previous page'))
 
     expect(screen.getByRole('combobox')).toBeDisabled()
-    expect(asyncData).toHaveBeenCalledTimes(1)
+    expect(getAsyncData).toHaveBeenCalledTimes(1)
   })
 
   it('Retrys fetching the data with custom fetching options when clicking retry from the error component', async () => {
-    asyncData.mockRejectedValue(new Error('Something went wrong'))
+    getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_INDEX = 2
     const PAGE_SIZE = 8
     const SORT_BY = 'made up column name'
@@ -522,7 +522,7 @@ describe('DataTable Remote component', () => {
       <Wrapper>
         <DataTable
           columns={columns}
-          asyncData={asyncData}
+          getAsyncData={getAsyncData}
           initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
         >
           <DataTable.Table sortable css={{ mb: '$4' }} />
@@ -551,8 +551,8 @@ describe('DataTable Remote component', () => {
     )
 
     userEvent.click(await screen.findByText('Retry fetch'))
-    expect(asyncData).toHaveBeenCalledTimes(2)
-    expect(asyncData).toHaveBeenLastCalledWith({
+    expect(getAsyncData).toHaveBeenCalledTimes(2)
+    expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: PAGE_INDEX,
       pageSize: PAGE_SIZE,
       sortBy: SORT_BY,

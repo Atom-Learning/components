@@ -52,10 +52,10 @@ type TableProviderProps = {
   initialState?: InitialState
   css?: CSS
 } & (
-  | { data: Array<Record<string, unknown>>; asyncData?: never }
+  | { data: Array<Record<string, unknown>>; getAsyncData?: never }
   | {
       data?: never
-      asyncData: (
+      getAsyncData: (
         options: TAsyncDataOptions
       ) => Promise<TAsyncDataResult | undefined>
     }
@@ -69,7 +69,7 @@ const DataTableContext =
 export const DataTableProvider = ({
   columns,
   data: dataProp,
-  asyncData,
+  getAsyncData,
   defaultSort,
   initialState = undefined,
   children,
@@ -90,7 +90,7 @@ export const DataTableProvider = ({
   const [paginationState, setPagination] = React.useState<
     PaginationState | undefined
   >(
-    asyncData
+    getAsyncData
       ? {
           ...defaultPaginationState,
           ...initialState?.pagination
@@ -121,7 +121,7 @@ export const DataTableProvider = ({
       sortBy: overrideSortBy,
       sortDirection: overrideSortDirection
     }) => {
-      if (!asyncData) return
+      if (!getAsyncData) return
 
       const getSortDirection = () => {
         if (sorting[0]) {
@@ -137,7 +137,7 @@ export const DataTableProvider = ({
         setAsyncDataState(AsyncDataState.PENDING)
 
         const { pageIndex, pageSize } = paginationState as PaginationState
-        const newData = await asyncData({
+        const newData = await getAsyncData({
           pageIndex: overridePageIndex ?? pageIndex,
           pageSize: overridePageSize ?? pageSize,
           sortBy: overrideSortBy ?? sorting[0]?.id,
@@ -146,11 +146,11 @@ export const DataTableProvider = ({
 
         invariant(
           Array.isArray(newData?.results),
-          'The asyncData function must return an object with a property `result` which must be an array'
+          'The getAsyncData function must return an object with a property `result` which must be an array'
         )
         invariant(
           newData && Number.isInteger(newData.total) && newData.total >= 0,
-          'The asyncData function must return an object with a property `total` which must be a positive integer or zero'
+          'The getAsyncData function must return an object with a property `total` which must be a positive integer or zero'
         )
 
         setData(newData as TAsyncDataResult)
@@ -159,7 +159,12 @@ export const DataTableProvider = ({
         setAsyncDataState(AsyncDataState.REJECTED)
       }
     },
-    [asyncData, paginationState?.pageIndex, paginationState?.pageSize, sorting]
+    [
+      getAsyncData,
+      paginationState?.pageIndex,
+      paginationState?.pageSize,
+      sorting
+    ]
   )
 
   React.useEffect(() => {
@@ -175,8 +180,8 @@ export const DataTableProvider = ({
       ? Math.ceil(getTotalRows() / paginationState.pageSize)
       : -1,
     getCoreRowModel: getCoreRowModel(),
-    manualPagination: asyncData && isPaginated,
-    manualSorting: asyncData && isPaginated,
+    manualPagination: getAsyncData && isPaginated,
+    manualSorting: getAsyncData && isPaginated,
     enableSorting: asyncDataState !== AsyncDataState.PENDING,
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     onPaginationChange: isPaginated ? setPagination : undefined,
