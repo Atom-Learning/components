@@ -376,12 +376,6 @@ exports[`DataTable Remote component renders 1`] = `
     margin-left: 2px;
     margin-right: 2px;
   }
-
-  .c-cwQMhQ-juxINb-isPending-true {
-    opacity: 0.5;
-    pointer-events: none;
-    transition: opacity 250ms linear 150ms;
-  }
 }
 
 @media  {
@@ -499,6 +493,13 @@ exports[`DataTable Remote component renders 1`] = `
 
   .c-dhzjXW-ibICGYT-css {
     justify-content: center;
+  }
+
+  .c-cwQMhQ-igyXmJO-css {
+    margin-bottom: var(--space-4);
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 250ms linear 150ms;
   }
 }
 
@@ -1276,7 +1277,7 @@ exports[`DataTable component renders 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M14.412 14.412L20 20"
+          d="M14.412 14.412 20 20"
         />
         <circle
           cx="10"

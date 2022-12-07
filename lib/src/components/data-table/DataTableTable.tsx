@@ -18,13 +18,24 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   sortable,
   striped,
   theme,
+  css,
   ...props
 }) => {
   const { asyncDataState } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
 
   return (
-    <Table isPending={isPending} {...props}>
+    <Table
+      {...props}
+      css={{
+        ...css,
+        ...(isPending && {
+          opacity: 0.5,
+          pointerEvents: 'none',
+          transition: 'opacity 250ms linear 150ms'
+        })
+      }}
+    >
       <DataTable.Head theme={theme} sortable={sortable} />
       <DataTable.Body striped={striped} />
     </Table>
