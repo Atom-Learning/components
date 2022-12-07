@@ -55,6 +55,7 @@ const StyledTable = styled('table', {
     isPending: {
       true: {
         opacity: 0.5,
+        pointerEvents: 'none',
         transition: 'opacity 250ms linear 150ms'
       }
     }
