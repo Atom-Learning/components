@@ -10,8 +10,10 @@ const StyledHeader = styled('header', {
   }
 })
 
-export const SidedrawerHeader: React.FC = ({ children }) => (
-  <StyledHeader>
+export const SidedrawerHeader: React.FC<
+  React.ComponentProps<typeof StyledHeader>
+> = ({ children, ...remainingProps }) => (
+  <StyledHeader {...remainingProps}>
     <TopBar
       css={{
         mx: '$3'

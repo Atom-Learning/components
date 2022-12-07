@@ -235,7 +235,7 @@ exports[`Sidedrawer renders 1`] = `
     width: 100%;
   }
 
-  .c-hGKzaH {
+  .c-lnkIfg {
     background: white;
     box-shadow: var(--shadows-2);
     display: flex;
@@ -243,20 +243,20 @@ exports[`Sidedrawer renders 1`] = `
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     max-width: 304px;
     width: 100%;
     z-index: 2147483647;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hGKzaH[data-state="open"] {
+    .c-lnkIfg[data-state="open"] {
       animation: k-jLcgiN 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hGKzaH[data-state="closed"] {
+    .c-lnkIfg[data-state="closed"] {
       animation: k-kSYzSh 250ms ease-out;
     }
 }
@@ -392,7 +392,7 @@ exports[`Sidedrawer renders 1`] = `
 <div
   aria-describedby="radix-4"
   aria-labelledby="radix-3"
-  class="c-hGKzaH"
+  class="c-lnkIfg"
   data-state="open"
   id="radix-2"
   role="navigation"
@@ -739,7 +739,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     width: 100%;
   }
 
-  .c-hGKzaH {
+  .c-lnkIfg {
     background: white;
     box-shadow: var(--shadows-2);
     display: flex;
@@ -747,20 +747,20 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     max-width: 304px;
     width: 100%;
     z-index: 2147483647;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hGKzaH[data-state="open"] {
+    .c-lnkIfg[data-state="open"] {
       animation: k-jLcgiN 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hGKzaH[data-state="closed"] {
+    .c-lnkIfg[data-state="closed"] {
       animation: k-kSYzSh 250ms ease-out;
     }
 }
@@ -906,7 +906,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
 <div
   aria-describedby="radix-24"
   aria-labelledby="radix-23"
-  class="c-hGKzaH"
+  class="c-lnkIfg"
   data-state="open"
   id="radix-22"
   role="navigation"

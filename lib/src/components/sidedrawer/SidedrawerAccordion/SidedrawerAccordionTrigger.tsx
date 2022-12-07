@@ -21,9 +21,11 @@ const StyledIcon = styled(Icon, {
   }
 })
 
-export const SidedrawerAccordionTrigger: React.FC = ({ children }) => (
+export const SidedrawerAccordionTrigger: React.FC<
+  React.ComponentProps<typeof StyledTrigger>
+> = ({ children, ...remainingProps }) => (
   <Header>
-    <StyledTrigger>
+    <StyledTrigger {...remainingProps}>
       <Flex
         css={{
           alignItems: 'center'

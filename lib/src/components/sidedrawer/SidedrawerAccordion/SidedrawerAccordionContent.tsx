@@ -22,8 +22,10 @@ const StyledContent = styled(Content, {
   }
 })
 
-export const SidedrawerAccordionContent: React.FC = ({ children }) => (
-  <StyledContent>
+export const SidedrawerAccordionContent: React.FC<
+  React.ComponentProps<typeof StyledContent>
+> = ({ children, ...remainingProps }) => (
+  <StyledContent {...remainingProps}>
     {React.Children.map(children, (child) => {
       return (
         <Box
