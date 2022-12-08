@@ -13,7 +13,7 @@ import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 import { useState } from 'react'
 import * as React from 'react'
 import { DataTable } from '../DataTable'
-
+import { Table } from '../../table'
 const orientationToDirection = (orientation) =>
   orientation === 'vertical' ? 'column' : 'row'
 
@@ -36,7 +36,6 @@ export const DragAndDropContainer = ({
   )
 
   function handleDragStart(event) {
-    console.log('happening')
     setActiveId(event.active.id)
   }
 
@@ -77,11 +76,11 @@ export const DragAndDropContainer = ({
       {children}
       <DragOverlay>
         {activeId && selectedRow && (
-          <table style={{ width: '100%' }}>
-            <tbody>
+          <Table css={{ width: '100%' }}>
+            <Table.Body>
               <DataTable.Row row={selectedRow} />
-            </tbody>
-          </table>
+            </Table.Body>
+          </Table>
         )}
       </DragOverlay>
     </DndContext>

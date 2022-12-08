@@ -28,9 +28,9 @@ const columns = [
 ]
 
 const data = [
-  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
   { name: 'agatha', hobby: 'crossfit', id: 2 },
-  { name: 'betty', hobby: 'acting', id: 3 }
+  { name: 'betty', hobby: 'acting', id: 3 },
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 }
 ]
 
 const App = () => (
@@ -43,7 +43,7 @@ const App = () => (
         flexDirection: 'column'
       }}
     >
-      <Box>
+      <Box css={{ height: '300px', width: '500px' }}>
         <DataTable columns={columns} data={data} dragAndDrop>
           <DataTable.GlobalFilter />
           <DataTable.Table sortable css={{ mb: '$4' }} />

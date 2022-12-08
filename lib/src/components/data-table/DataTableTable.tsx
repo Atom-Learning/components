@@ -2,7 +2,8 @@ import * as React from 'react'
 
 import { Table } from '../table'
 import { DataTable } from './DataTable'
-
+import { useDataTable } from './DataTableContext'
+import { DragAndDropContainer } from './drag-and-drop'
 type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
   'children'
@@ -18,6 +19,18 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   theme,
   ...props
 }) => {
+  const { isDragAndDrop } = useDataTable()
+
+  if (isDragAndDrop)
+    return (
+      <DragAndDropContainer>
+        <Table {...props}>
+          <DataTable.Head theme={theme} sortable={sortable} />
+          <DataTable.Body striped={striped} />
+        </Table>
+      </DragAndDropContainer>
+    )
+
   return (
     <Table {...props}>
       <DataTable.Head theme={theme} sortable={sortable} />

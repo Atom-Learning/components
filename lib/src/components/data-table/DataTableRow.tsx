@@ -13,7 +13,9 @@ export type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>
 }
 
-const DraggingRow = styled('td', { background: 'rgba(127, 207, 250, 0.3)' })
+const DraggingRow = styled(Table.Cell, {
+  background: 'rgba(127, 207, 250, 0.3)'
+})
 export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
   const { isDragAndDrop } = useDataTable()
 
@@ -28,25 +30,33 @@ export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
     id: row.original.id as UniqueIdentifier
   })
 
-  return isDragging ? (
-    <DraggingRow colSpan={row.getAllCells().length}>&nbsp;</DraggingRow>
-  ) : (
+  return (
     <Table.Row
       ref={setNodeRef}
-      css={{ transform: CSS.Transform.toString(transform), transition }}
+      css={{
+        transform: CSS.Transform.toString(transform),
+        // Online examples apply the transition to all rows, but here it causes a bug where
+        // the displaced rows move a second time on drag end
+        // transition: isDragging ? transition : undefined
+        transition: isDragging ? transition : undefined
+      }}
     >
-      {row.getVisibleCells().map((cell, i) => {
-        if (isDragAndDrop && i === 0) {
-          return (
-            <Table.Cell key={cell.id}>
-              {/* TODO: decide on label */}
-              <DragHandle {...attributes} {...listeners} />
-              {flexRender(cell.column.columnDef.cell, cell.getContext())}
-            </Table.Cell>
-          )
-        }
-        return <DataTableDataCell key={cell.id} cell={cell} />
-      })}
+      {isDragging ? (
+        <DraggingRow colSpan={row.getAllCells().length}>&nbsp;</DraggingRow>
+      ) : (
+        row.getVisibleCells().map((cell, i) => {
+          if (isDragAndDrop && i === 0) {
+            return (
+              <Table.Cell key={cell.id}>
+                {/* TODO: decide on label */}
+                <DragHandle {...attributes} {...listeners} />
+                {flexRender(cell.column.columnDef.cell, cell.getContext())}
+              </Table.Cell>
+            )
+          }
+          return <DataTableDataCell key={cell.id} cell={cell} />
+        })
+      )}
     </Table.Row>
   )
 }
