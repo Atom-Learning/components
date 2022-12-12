@@ -30,8 +30,6 @@ import {
   AsyncDataState,
   TGetAsyncData
 } from './DataTable.types'
-import { Box } from '../box'
-import { DataTableLoading } from './DataTableLoading'
 import { getNewAsyncData } from './getNewAsyncData'
 
 type InitialState = Partial<
@@ -181,12 +179,9 @@ export const DataTableProvider = ({
   }, [table, applyPagination, getTotalRows, isSortable])
 
   return (
-    <Box css={{ position: 'relative', ...css }}>
-      <DataTableContext.Provider value={value}>
-        <DataTableLoading />
-        {children}
-      </DataTableContext.Provider>
-    </Box>
+    <DataTableContext.Provider value={value}>
+      {children}
+    </DataTableContext.Provider>
   )
 }
 

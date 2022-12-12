@@ -421,10 +421,6 @@ exports[`DataTable Remote component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
-    position: relative;
-  }
-
   .c-cVSpVL-ihbtntv-css {
     margin-bottom: var(--space-3);
   }
@@ -485,6 +481,10 @@ exports[`DataTable Remote component renders 1`] = `
     left: var(--space-1);
   }
 
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
   .c-fDzwZw-ifWWfIb-css {
     position: absolute;
     top: 0;
@@ -504,336 +504,332 @@ exports[`DataTable Remote component renders 1`] = `
 }
 
 <div>
-  <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+  <table
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
   >
-    <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
+    <thead
+      class="c-PJLV c-PJLV-gzzGYN-theme-light"
     >
-      <thead
-        class="c-PJLV c-PJLV-gzzGYN-theme-light"
+      <tr
+        class="c-hjAYDb"
       >
-        <tr
-          class="c-hjAYDb"
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
-          <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              name
-            </div>
-          </th>
-          <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
-          >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              hobby
-            </div>
-          </th>
-          <th
-            class="c-GSaiK c-GSaiK-ifYtQLP-css"
-          >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              Actions
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="c-PJLV c-PJLV-kqWICR-striped-false"
-      >
-        <tr
-          class="c-hjAYDb"
+            name
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
-          <td
-            class="c-cCZzXk"
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            chrissy
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
+            hobby
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-ifYtQLP-css"
         >
-          <td
-            class="c-cCZzXk"
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            agatha
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            crossfit
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            betty
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            acting
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            denise
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            charlie
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            crossfit
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            xena
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            acting
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            rick
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            phillip
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            crossfit
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            maurice
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            acting
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            peter
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <nav
-      class="c-eIXSIu"
+            Actions
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV c-PJLV-kqWICR-striped-false"
     >
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          chrissy
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          agatha
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          betty
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          denise
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          charlie
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          xena
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          rick
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          phillip
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          maurice
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          peter
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    class="c-eIXSIu"
+  >
+    <p
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
+    >
+      1 - 10 of 18 items
+    </p>
+    <div
+      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+    >
+      <select
+        class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+      >
+        <option
+          value="0"
+        >
+          1
+        </option>
+        <option
+          value="1"
+        >
+          2
+        </option>
+      </select>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
       >
-        1 - 10 of 18 items
+        of 2 pages
       </p>
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+    </div>
+    <div
+      class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
+    >
+      <button
+        aria-label="Previous page"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+        data-state="closed"
+        disabled=""
+        name="Previous page"
+        type="button"
       >
-        <select
-          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <option
-            value="0"
-          >
-            1
-          </option>
-          <option
-            value="1"
-          >
-            2
-          </option>
-        </select>
-        <p
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
-        >
-          of 2 pages
-        </p>
-      </div>
-      <div
-        class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next page"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+        data-state="closed"
+        name="Next page"
+        type="button"
       >
-        <button
-          aria-label="Previous page"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
-          data-state="closed"
-          disabled=""
-          name="Previous page"
-          type="button"
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="14 18 8 12 14 6 14 6"
-            />
-          </svg>
-        </button>
-        <button
-          aria-label="Next page"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
-          data-state="closed"
-          name="Next page"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="10 6 16 12 10 18 10 18"
-            />
-          </svg>
-        </button>
-      </div>
-    </nav>
-  </div>
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
 </div>
 `;
 
@@ -1196,10 +1192,6 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
-    position: relative;
-  }
-
   .c-cVSpVL-ihbtntv-css {
     margin-bottom: var(--space-3);
   }
@@ -1252,271 +1244,267 @@ exports[`DataTable component renders 1`] = `
 }
 
 <div>
-  <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+  <label
+    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
+    for="User search"
   >
-    <label
-      class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
-      for="User search"
+    User search
+  </label>
+  <div
+    class="c-PJLV c-PJLV-ieyRoAv-css"
+  >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      name="User search"
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      User search
-    </label>
-    <div
-      class="c-PJLV c-PJLV-ieyRoAv-css"
-    >
-      <input
-        class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-        name="User search"
-        type="search"
-        value=""
+      <path
+        d="M14.412 14.412 20 20"
       />
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M14.412 14.412 20 20"
-        />
-        <circle
-          cx="10"
-          cy="10"
-          r="6"
-        />
-      </svg>
-    </div>
-    <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
-    >
-      <thead
-        class="c-PJLV c-PJLV-gzzGYN-theme-light"
-      >
-        <tr
-          class="c-hjAYDb"
-        >
-          <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
-          >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              name
-            </div>
-          </th>
-          <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
-          >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              hobby
-            </div>
-          </th>
-          <th
-            class="c-GSaiK c-GSaiK-ifYtQLP-css"
-          >
-            <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-            >
-              Actions
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody
-        class="c-PJLV c-PJLV-kqWICR-striped-false"
-      >
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            chrissy
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            agatha
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            crossfit
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            betty
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            acting
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            denise
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            bare-knuckle boxing
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-        <tr
-          class="c-hjAYDb"
-        >
-          <td
-            class="c-cCZzXk"
-          >
-            charlie
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            crossfit
-          </td>
-          <td
-            class="c-cCZzXk"
-          >
-            <button>
-              do something
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <nav
-      class="c-eIXSIu"
-    >
-      <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
-      >
-        1 - 5 of 18 items
-      </p>
-      <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
-      >
-        <select
-          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
-        >
-          <option
-            value="0"
-          >
-            1
-          </option>
-          <option
-            value="1"
-          >
-            2
-          </option>
-          <option
-            value="2"
-          >
-            3
-          </option>
-          <option
-            value="3"
-          >
-            4
-          </option>
-        </select>
-        <p
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
-        >
-          of 4 pages
-        </p>
-      </div>
-      <div
-        class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
-      >
-        <button
-          aria-label="Previous page"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
-          data-state="closed"
-          disabled=""
-          name="Previous page"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="14 18 8 12 14 6 14 6"
-            />
-          </svg>
-        </button>
-        <button
-          aria-label="Next page"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
-          data-state="closed"
-          name="Next page"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <polyline
-              points="10 6 16 12 10 18 10 18"
-            />
-          </svg>
-        </button>
-      </div>
-    </nav>
+      <circle
+        cx="10"
+        cy="10"
+        r="6"
+      />
+    </svg>
   </div>
+  <table
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
+  >
+    <thead
+      class="c-PJLV c-PJLV-gzzGYN-theme-light"
+    >
+      <tr
+        class="c-hjAYDb"
+      >
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            name
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            hobby
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-ifYtQLP-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            Actions
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      class="c-PJLV c-PJLV-kqWICR-striped-false"
+    >
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          chrissy
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          agatha
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          betty
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          denise
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          charlie
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav
+    class="c-eIXSIu"
+  >
+    <p
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
+    >
+      1 - 5 of 18 items
+    </p>
+    <div
+      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+    >
+      <select
+        class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+      >
+        <option
+          value="0"
+        >
+          1
+        </option>
+        <option
+          value="1"
+        >
+          2
+        </option>
+        <option
+          value="2"
+        >
+          3
+        </option>
+        <option
+          value="3"
+        >
+          4
+        </option>
+      </select>
+      <p
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
+      >
+        of 4 pages
+      </p>
+    </div>
+    <div
+      class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
+    >
+      <button
+        aria-label="Previous page"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+        data-state="closed"
+        disabled=""
+        name="Previous page"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="14 18 8 12 14 6 14 6"
+          />
+        </svg>
+      </button>
+      <button
+        aria-label="Next page"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+        data-state="closed"
+        name="Next page"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="10 6 16 12 10 18 10 18"
+          />
+        </svg>
+      </button>
+    </div>
+  </nav>
 </div>
 `;
