@@ -198,6 +198,26 @@ You can use `DataTable.Error` to display your own error component when the `getA
 
 `DataTable.Error` provides a `retry` function to the children which allows you to recall the `getAsyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
 
+```tsx
+<DataTable.Error>
+  {(retry) => (
+    <Button
+      onClick={() =>
+        retry?.({
+          pageIndex: 5,
+          pageSize: 10,
+          sortBy: 'name',
+          sortDirection: 'asc',
+          globalFilter: ''
+        })
+      }
+    >
+      Retry
+    </Button>
+  )}
+</DataTable.Error>
+```
+
 ## Features
 
 ### Search
