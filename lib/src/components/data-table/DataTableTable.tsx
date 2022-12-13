@@ -23,7 +23,13 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
 
   if (isDragAndDrop)
     return (
-      <DragAndDropContainer>
+      <DragAndDropContainer
+      // onSortChange={(oldIndex, newIndex, newData) => {
+      //   console.log('oldIndex:', oldIndex)
+      //   console.log('newIndex:', newIndex)
+      //   console.log('newData:', newData)
+      // }}
+      >
         <Table {...props}>
           <DataTable.Head theme={theme} sortable={sortable} />
           <DataTable.Body striped={striped} />

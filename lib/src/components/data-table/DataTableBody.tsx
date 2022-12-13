@@ -3,7 +3,6 @@ import * as React from 'react'
 import { Table } from '../table'
 import { DataTable } from '.'
 import { useDataTable } from './DataTableContext'
-import { DataTableRowProps } from './DataTableRow'
 import { SortableContainer } from './drag-and-drop'
 type DataTableBodyProps = Omit<
   React.ComponentProps<typeof Table.Body>,
@@ -16,13 +15,16 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
 }) => {
   const { isDragAndDrop } = useDataTable()
 
-  return isDragAndDrop ? (
-    <Table.Body {...props} striped={striped}>
-      <SortableContainer>
-        <Rows />
-      </SortableContainer>
-    </Table.Body>
-  ) : (
+  if (isDragAndDrop)
+    return (
+      <Table.Body {...props} striped={striped}>
+        <SortableContainer>
+          <Rows />
+        </SortableContainer>
+      </Table.Body>
+    )
+
+  return (
     <Table.Body {...props} striped={striped}>
       <Rows />
     </Table.Body>

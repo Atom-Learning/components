@@ -43,9 +43,21 @@ const App = () => (
         flexDirection: 'column'
       }}
     >
-      <Box css={{ height: '300px', width: '500px' }}>
-        <DataTable columns={columns} data={data} dragAndDrop>
-          <DataTable.GlobalFilter />
+      <Box css={{ height: '300px', width: '700px' }}>
+        <DataTable
+          columns={columns}
+          data={data}
+          dragAndDrop={{
+            active: true,
+            onChange: (oldIndex, newIndex, newData) => {
+              console.log('old index:', oldIndex)
+              console.log('new index:', newIndex)
+              console.log('newData:', newData)
+            }
+          }}
+          // dragAndDrop
+        >
+          {/* <DataTable.GlobalFilter /> */}
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination pageSize={5} />
         </DataTable>
