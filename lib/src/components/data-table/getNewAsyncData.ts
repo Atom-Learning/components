@@ -1,7 +1,15 @@
-import type { PaginationState, SortingState, SortDirection } from '@tanstack/react-table'
+import type {
+  PaginationState,
+  SortingState,
+  SortDirection
+} from '@tanstack/react-table'
 import invariant from 'invariant'
 
-import type  { TAsyncDataOptions, TAsyncDataResult, TGetAsyncData } from './DataTable.types'
+import type {
+  TAsyncDataOptions,
+  TAsyncDataResult,
+  TGetAsyncData
+} from './DataTable.types'
 
 const getSortDirection = (sorting: SortingState): SortDirection | undefined => {
   if (sorting[0]) {
@@ -15,13 +23,15 @@ export const getNewAsyncData = async (
   asyncDataOptions: Partial<TAsyncDataOptions>,
   paginationState: PaginationState,
   sorting: SortingState,
+  globalFilter: string
 ): Promise<TAsyncDataResult | undefined> => {
   const { pageIndex, pageSize } = paginationState
   const params = {
     pageIndex: asyncDataOptions?.pageIndex ?? pageIndex,
     pageSize: asyncDataOptions?.pageSize ?? pageSize,
     sortBy: asyncDataOptions?.sortBy ?? sorting[0]?.id,
-    sortDirection: asyncDataOptions?.sortDirection ?? getSortDirection(sorting)
+    sortDirection: asyncDataOptions?.sortDirection ?? getSortDirection(sorting),
+    globalFilter: asyncDataOptions.globalFilter ?? globalFilter
   }
 
   const newData = await getAsyncData(params)

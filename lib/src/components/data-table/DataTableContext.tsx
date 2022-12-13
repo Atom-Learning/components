@@ -78,9 +78,12 @@ export const DataTableProvider = ({
   const [isPaginated, setIsPaginated] = React.useState<boolean>(
     !!initialState?.pagination
   )
+
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
     AsyncDataState.NONE
   )
+
+  const [globalFilter, setGlobalFilter] = React.useState<string>('')
 
   const [paginationState, setPagination] = React.useState<
     PaginationState | undefined
@@ -120,7 +123,8 @@ export const DataTableProvider = ({
           getAsyncData,
           overrideAsyncDataOptions,
           paginationState as PaginationState,
-          sorting
+          sorting,
+          globalFilter
         )
 
         setData(newData as TAsyncDataResult)
@@ -133,7 +137,8 @@ export const DataTableProvider = ({
       getAsyncData,
       paginationState?.pageIndex,
       paginationState?.pageSize,
-      sorting
+      sorting,
+      globalFilter
     ]
   )
 
@@ -149,21 +154,24 @@ export const DataTableProvider = ({
     pageCount: paginationState
       ? Math.ceil(getTotalRows() / paginationState.pageSize)
       : -1,
-    getCoreRowModel: getCoreRowModel(),
-    manualPagination: getAsyncData && isPaginated,
-    manualSorting: getAsyncData && isPaginated,
-    enableSorting: asyncDataState !== AsyncDataState.PENDING,
-    getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
-    onPaginationChange: isPaginated ? setPagination : undefined,
-    getSortedRowModel:
-      isSortable || sorting.length ? getSortedRowModel() : undefined,
     initialState: initialState,
     state: {
       sorting,
+      globalFilter,
       pagination: paginationState
     },
+    manualPagination: getAsyncData && isPaginated,
+    manualSorting: getAsyncData && isPaginated,
+    enableSorting: asyncDataState !== AsyncDataState.PENDING,
+    enableGlobalFilter: !getAsyncData,
+    getCoreRowModel: getCoreRowModel(),
+    getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
+    getSortedRowModel:
+      isSortable || sorting.length ? getSortedRowModel() : undefined,
+    getFilteredRowModel: getFilteredRowModel(),
+    onPaginationChange: isPaginated ? setPagination : undefined,
     onSortingChange: setSorting,
-    getFilteredRowModel: getFilteredRowModel()
+    onGlobalFilterChange: setGlobalFilter
   })
 
   const value = React.useMemo(() => {

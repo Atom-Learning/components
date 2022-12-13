@@ -144,7 +144,8 @@ The `getAsyncData` function accepts an object with the necessary parameters to g
   pageIndex: 0,
   pageSize: 10,
   sortBy: undefined,
-  sortDirection: undefined
+  sortDirection: undefined,
+  globalFilter: ''
 }
 ```
 
@@ -167,12 +168,19 @@ You can use `DataTable.Error` to display your own error component when the `getA
   defaultPageSize={10}
   defaultSort={{ column: 'name', direction: 'asc' }}
   initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
-  getAsyncData={async ({ pageIndex, pageSize, sortBy, sortDirection }) => {
+  getAsyncData={async ({
+    pageIndex,
+    pageSize,
+    sortBy,
+    sortDirection,
+    globalFilter
+  }) => {
     const params = new URLSearchParams({
       page: pageIndex,
       pageSize,
       order: sortBy,
-      dir: sortDirection
+      dir: sortDirection,
+      search: globalFilter
     })
     const response = await fetch(`https://your-api?${params.toString()}`)
     const { results, total } = await response.json()

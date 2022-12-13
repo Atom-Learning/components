@@ -18,9 +18,12 @@ export type TAsyncDataOptions = {
   pageSize: number
   sortBy?: string
   sortDirection?: SortDirection
+  globalFilter?: string
 }
 
-export type TGetAsyncData = (options: TAsyncDataOptions) => Promise<TAsyncDataResult | undefined>
+export type TGetAsyncData = (
+  options: TAsyncDataOptions
+) => Promise<TAsyncDataResult | undefined>
 
 export type DataTableContextType<T = unknown> = Table<T> & {
   setIsSortable: React.Dispatch<React.SetStateAction<boolean>>

@@ -235,7 +235,7 @@ describe('DataTable Search component', () => {
   })
 })
 
-describe('DataTable Remote component', () => {
+describe('DataTable server-side', () => {
   const getAsyncData = jest.fn().mockResolvedValue({
     results: data.slice(0, 10),
     total: data.length
@@ -249,6 +249,7 @@ describe('DataTable Remote component', () => {
     const { container } = render(
       <Wrapper>
         <DataTable columns={columns} getAsyncData={getAsyncData}>
+          <DataTable.GlobalFilter />
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />
         </DataTable>
@@ -259,7 +260,7 @@ describe('DataTable Remote component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('Calls the getAsyncData with the first page, passed defaultPageSize, and default sortings', () => {
+  it('The getAsyncData function is called with the first page, passed defaultPageSize, and default sortings', () => {
     const PAGE_SIZE = 7
     const SORT_COLUMN = 'name'
     const SORT_DIRECTION = 'asc'
@@ -281,11 +282,12 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
-      sortDirection: SORT_DIRECTION
+      sortDirection: SORT_DIRECTION,
+      globalFilter: ''
     })
   })
 
-  it('The getAsyncData is called with the correct page when going to a different page', async () => {
+  it('The getAsyncData function is called with the correct page when going to a different page', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     const SORT_DIRECTION = 'asc'
@@ -310,11 +312,12 @@ describe('DataTable Remote component', () => {
       pageIndex: 1,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
-      sortDirection: SORT_DIRECTION
+      sortDirection: SORT_DIRECTION,
+      globalFilter: ''
     })
   })
 
-  it('The getAsyncData is called with the default pageIndex and pageSize when no initial state is provided', async () => {
+  it('The getAsyncData function is called with the default pageIndex and pageSize when no initial state is provided', async () => {
     render(
       <Wrapper>
         <DataTable columns={columns} getAsyncData={getAsyncData}>
@@ -329,11 +332,12 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: 10,
       sortBy: undefined,
-      sortDirection: undefined
+      sortDirection: undefined,
+      globalFilter: ''
     })
   })
 
-  it('The getAsyncData is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
+  it('The getAsyncData function is called with the correct sortBy and ascending when we click in a column to sort ascending', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     render(
@@ -358,11 +362,12 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
-      sortDirection: 'asc'
+      sortDirection: 'asc',
+      globalFilter: ''
     })
   })
 
-  it('The getAsyncData is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
+  it('The getAsyncData function is called with the correct sortBy and descending when we click in a column and then click again on it', async () => {
     const PAGE_SIZE = 10
     const SORT_COLUMN = 'name'
     render(
@@ -389,7 +394,40 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: SORT_COLUMN,
-      sortDirection: 'desc'
+      sortDirection: 'desc',
+      globalFilter: ''
+    })
+  })
+
+  it('The getAsyncData function is called with the correct global filter when the user globally searches', async () => {
+    const PAGE_SIZE = 10
+    const GLOBAL_FILTER = 'qwe'
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          getAsyncData={getAsyncData}
+          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
+        >
+          <DataTable.GlobalFilter />
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
+
+    const search = screen.getByRole('searchbox')
+    userEvent.type(search, GLOBAL_FILTER)
+
+    await waitFor(() => {
+      expect(getAsyncData).toHaveBeenLastCalledWith({
+        pageIndex: 0,
+        pageSize: PAGE_SIZE,
+        sortBy: undefined,
+        sortDirection: undefined,
+        globalFilter: GLOBAL_FILTER
+      })
     })
   })
 
@@ -485,7 +523,8 @@ describe('DataTable Remote component', () => {
       pageIndex: 0,
       pageSize: PAGE_SIZE,
       sortBy: undefined,
-      sortDirection: undefined
+      sortDirection: undefined,
+      globalFilter: ''
     })
   })
 
@@ -556,7 +595,8 @@ describe('DataTable Remote component', () => {
       pageIndex: PAGE_INDEX,
       pageSize: PAGE_SIZE,
       sortBy: SORT_BY,
-      sortDirection: SORT_DIRECTION
+      sortDirection: SORT_DIRECTION,
+      globalFilter: ''
     })
   })
 })
