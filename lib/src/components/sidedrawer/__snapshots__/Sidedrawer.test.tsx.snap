@@ -1,0 +1,1049 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidedrawer renders 1`] = `
+@media  {
+  .c-glwkin {
+    background: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid var(--colors-tonal100);
+    transition: box-shadow .2s ease-out;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-ftiHlK {
+    align-items: center;
+    height: var(--sizes-4);
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+    width: 100%;
+  }
+
+@media (min-width: 800px) {
+    .c-ftiHlK {
+      margin-left: var(--space-5);
+      margin-right: var(--space-5);
+    }
+}
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-iXlyPW {
+    animation-fill-mode: forwards;
+    background: var(--colors-alpha600);
+    cursor: pointer;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2147483646;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
+
+  .c-dUthMk > div {
+    width: 100%;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-buzpRz {
+    align-items: center;
+    background: white;
+    border: unset;
+    border-left: 4px solid transparent;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    font-size: var(--fontSizes-md);
+    margin: 0;
+    min-height: 48px;
+    outline: unset;
+    outline-offset: unset;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .c-buzpRz:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-buzpRz:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-buzpRz:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-buzpRz[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .c-cqsEVF {
+    transition: transform 300ms;
+  }
+
+  [data-state="open"] > .c-cqsEVF {
+    transform: rotate(180deg);
+  }
+
+  .c-kAYqTI {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-kAYqTI[data-state=open] {
+    font-weight: 600;
+  }
+
+  .c-kAYqTI {
+    align-items: center;
+    background: white;
+    border: unset;
+    border-left: 4px solid transparent;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    font-size: var(--fontSizes-md);
+    margin: 0;
+    min-height: 48px;
+    outline: unset;
+    outline-offset: unset;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .c-kAYqTI:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-kAYqTI:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-kAYqTI:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-kAYqTI[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .c-igwAPi {
+    background: white;
+    overflow: hidden;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-igwAPi[data-state="open"] {
+      animation: k-jYBrOR 300ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-igwAPi[data-state="closed"] {
+      animation: k-fNLrdV 300ms ease-out;
+    }
+}
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-dtVmmL {
+    align-items: center;
+    border-top: 1px solid var(--colors-tonal100);
+    bottom: 0;
+    box-shadow: var(--shadows-3);
+    display: flex;
+    height: var(--sizes-6);
+    justify-content: center;
+    padding: var(--space-3);
+    width: 100%;
+  }
+
+  .c-lnkIfg {
+    background: white;
+    box-shadow: var(--shadows-2);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 304px;
+    width: 100%;
+    z-index: 2147483647;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-lnkIfg[data-state="open"] {
+      animation: k-jLcgiN 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-lnkIfg[data-state="closed"] {
+      animation: k-kSYzSh 250ms ease-out;
+    }
+}
+}
+
+@media  {
+  .c-glwkin-daNQNf-size-md {
+    height: var(--sizes-6);
+  }
+
+  .c-glwkin-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+    height: 24px;
+    width: auto;
+  }
+
+  .c-fkUJsw-elrwsr-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-buzpRz-ctpDzU-active-true {
+    background: var(--colors-primaryLight);
+    border-left: 4px solid var(--colors-primary);
+    color: var(--colors-primary);
+    font-weight: 600;
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
+  }
+}
+
+@media  {
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iSsXry-cv {
+    background: var(--colors-danger);
+    color: white;
+  }
+
+  .c-fkUJsw-iSsXry-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iSsXry-cv:not([disabled]):hover,
+  .c-fkUJsw-iSsXry-cv:not([disabled]):focus {
+    background: var(--colors-dangerMid);
+    color: white;
+  }
+
+  .c-fkUJsw-iSsXry-cv:not([disabled]):active {
+    background: var(--colors-dangerDark);
+  }
+}
+
+@media  {
+  .c-dhzjXW-ihbsENp-css {
+    margin-left: var(--space-3);
+    margin-right: var(--space-3);
+  }
+
+  .c-PJLV-ijdijCQ-css {
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
+  }
+}
+
+<div
+  aria-describedby="radix-4"
+  aria-labelledby="radix-3"
+  class="c-lnkIfg"
+  data-state="open"
+  id="radix-2"
+  role="navigation"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
+  <header
+    class="c-dUthMk"
+  >
+    <div
+      class="c-glwkin c-glwkin-daNQNf-size-md"
+    >
+      <div
+        class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
+      >
+        Count is: 
+        0
+        <button
+          aria-label="close"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div
+    class="c-PJLV c-PJLV-ijdijCQ-css"
+  >
+    <div
+      class="c-fGHEql"
+    >
+      <a
+        class="c-buzpRz c-buzpRz-ctpDzU-active-true"
+        href="/"
+      >
+        Dashboard
+      </a>
+      <button
+        class="c-buzpRz"
+      >
+        Button Count
+      </button>
+      <div
+        class="c-PJLV"
+        data-state="closed"
+      >
+        <h3
+          data-state="closed"
+        >
+          <button
+            aria-controls="radix-0"
+            aria-expanded="false"
+            class="c-kAYqTI"
+            data-radix-collection-item=""
+            data-state="closed"
+            id="radix-1"
+            type="button"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            >
+              Set Work
+            </div>
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+        </h3>
+        <div
+          aria-labelledby="radix-1"
+          class="c-igwAPi"
+          data-state="closed"
+          hidden=""
+          id="radix-0"
+          role="region"
+          style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        />
+      </div>
+    </div>
+  </div>
+  <footer
+    class="c-dtVmmL"
+  >
+    <button
+      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      type="button"
+    >
+      Log out
+    </button>
+  </footer>
+</div>
+`;
+
+exports[`Sidedrawer should expand an accordion by clicking on trigger and display proper accordion children 1`] = `
+@media  {
+  .c-glwkin {
+    background: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid var(--colors-tonal100);
+    transition: box-shadow .2s ease-out;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-ftiHlK {
+    align-items: center;
+    height: var(--sizes-4);
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+    width: 100%;
+  }
+
+@media (min-width: 800px) {
+    .c-ftiHlK {
+      margin-left: var(--space-5);
+      margin-right: var(--space-5);
+    }
+}
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-iXlyPW {
+    animation-fill-mode: forwards;
+    background: var(--colors-alpha600);
+    cursor: pointer;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2147483646;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="open"] {
+      animation: k-eyOShd 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iXlyPW[data-state="closed"] {
+      animation: k-bHbNKp 550ms ease-out;
+    }
+}
+
+  .c-dUthMk > div {
+    width: 100%;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-buzpRz {
+    align-items: center;
+    background: white;
+    border: unset;
+    border-left: 4px solid transparent;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    font-size: var(--fontSizes-md);
+    margin: 0;
+    min-height: 48px;
+    outline: unset;
+    outline-offset: unset;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .c-buzpRz:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-buzpRz:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-buzpRz:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-buzpRz[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .c-cqsEVF {
+    transition: transform 300ms;
+  }
+
+  [data-state="open"] > .c-cqsEVF {
+    transform: rotate(180deg);
+  }
+
+  .c-kAYqTI {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-kAYqTI[data-state=open] {
+    font-weight: 600;
+  }
+
+  .c-kAYqTI {
+    align-items: center;
+    background: white;
+    border: unset;
+    border-left: 4px solid transparent;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    font-size: var(--fontSizes-md);
+    margin: 0;
+    min-height: 48px;
+    outline: unset;
+    outline-offset: unset;
+    padding-top: var(--space-3);
+    padding-bottom: var(--space-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .c-kAYqTI:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-kAYqTI:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-kAYqTI:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-kAYqTI[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .c-igwAPi {
+    background: white;
+    overflow: hidden;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-igwAPi[data-state="open"] {
+      animation: k-jYBrOR 300ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-igwAPi[data-state="closed"] {
+      animation: k-fNLrdV 300ms ease-out;
+    }
+}
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-dtVmmL {
+    align-items: center;
+    border-top: 1px solid var(--colors-tonal100);
+    bottom: 0;
+    box-shadow: var(--shadows-3);
+    display: flex;
+    height: var(--sizes-6);
+    justify-content: center;
+    padding: var(--space-3);
+    width: 100%;
+  }
+
+  .c-lnkIfg {
+    background: white;
+    box-shadow: var(--shadows-2);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    max-width: 304px;
+    width: 100%;
+    z-index: 2147483647;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-lnkIfg[data-state="open"] {
+      animation: k-jLcgiN 250ms ease-out;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-lnkIfg[data-state="closed"] {
+      animation: k-kSYzSh 250ms ease-out;
+    }
+}
+}
+
+@media  {
+  .c-glwkin-daNQNf-size-md {
+    height: var(--sizes-6);
+  }
+
+  .c-glwkin-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+    height: 24px;
+    width: auto;
+  }
+
+  .c-fkUJsw-elrwsr-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-buzpRz-ctpDzU-active-true {
+    background: var(--colors-primaryLight);
+    border-left: 4px solid var(--colors-primary);
+    color: var(--colors-primary);
+    font-weight: 600;
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
+  }
+}
+
+@media  {
+  .c-fkUJsw-gsycxF-cv {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
+  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+    background: var(--colors-primaryMid);
+    color: white;
+  }
+
+  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iSsXry-cv {
+    background: var(--colors-danger);
+    color: white;
+  }
+
+  .c-fkUJsw-iSsXry-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iSsXry-cv:not([disabled]):hover,
+  .c-fkUJsw-iSsXry-cv:not([disabled]):focus {
+    background: var(--colors-dangerMid);
+    color: white;
+  }
+
+  .c-fkUJsw-iSsXry-cv:not([disabled]):active {
+    background: var(--colors-dangerDark);
+  }
+}
+
+@media  {
+  .c-dhzjXW-ihbsENp-css {
+    margin-left: var(--space-3);
+    margin-right: var(--space-3);
+  }
+
+  .c-PJLV-ijdijCQ-css {
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .c-dhzjXW-ijroWjL-css {
+    align-items: center;
+  }
+
+  .c-PJLV-icVPQga-css > a {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .c-PJLV-icVPQga-css > button {
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+}
+
+<div
+  aria-describedby="radix-24"
+  aria-labelledby="radix-23"
+  class="c-lnkIfg"
+  data-state="open"
+  id="radix-22"
+  role="navigation"
+  style="pointer-events: auto;"
+  tabindex="-1"
+>
+  <header
+    class="c-dUthMk"
+  >
+    <div
+      class="c-glwkin c-glwkin-daNQNf-size-md"
+    >
+      <div
+        class="c-dhzjXW c-ftiHlK c-dhzjXW-ihbsENp-css"
+      >
+        Count is: 
+        0
+        <button
+          aria-label="close"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div
+    class="c-PJLV c-PJLV-ijdijCQ-css"
+  >
+    <div
+      class="c-fGHEql"
+    >
+      <a
+        class="c-buzpRz c-buzpRz-ctpDzU-active-true"
+        href="/"
+      >
+        Dashboard
+      </a>
+      <button
+        class="c-buzpRz"
+      >
+        Button Count
+      </button>
+      <div
+        class="c-PJLV"
+        data-state="open"
+      >
+        <h3
+          data-state="open"
+        >
+          <button
+            aria-controls="radix-20"
+            aria-disabled="true"
+            aria-expanded="true"
+            class="c-kAYqTI"
+            data-radix-collection-item=""
+            data-state="open"
+            id="radix-21"
+            type="button"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            >
+              Set Work
+            </div>
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cqsEVF"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+        </h3>
+        <div
+          aria-labelledby="radix-21"
+          class="c-igwAPi"
+          data-state="open"
+          id="radix-20"
+          role="region"
+          style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+        >
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
+          >
+            <a
+              class="c-buzpRz"
+              href="/practice"
+            >
+              Set Practice
+            </a>
+          </div>
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
+          >
+            <a
+              class="c-buzpRz"
+              href="/mock-tests"
+            >
+              Mock Tests
+            </a>
+          </div>
+          <div
+            class="c-PJLV c-PJLV-icVPQga-css"
+          >
+            <button
+              class="c-buzpRz"
+            >
+              Accordion Count
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer
+    class="c-dtVmmL"
+  >
+    <button
+      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      type="button"
+    >
+      Log out
+    </button>
+  </footer>
+</div>
+`;

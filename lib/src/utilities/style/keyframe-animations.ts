@@ -25,3 +25,13 @@ export const fadeOut = keyframes({
   '0%': { opacity: 1 },
   '100%': { opacity: 0 }
 })
+
+export const slideInLeft = keyframes({
+  '0%': { transform: 'translateX(-100%)' },
+  '100%': { transform: 'translateX(0)' }
+})
+
+export const slideOutLeft = keyframes({
+  '0%': { transform: 'translateX(0)' },
+  '100%': { transform: 'translateX(-100%)' }
+})

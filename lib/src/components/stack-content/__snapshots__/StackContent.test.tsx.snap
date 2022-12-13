@@ -2,67 +2,57 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-cLTcXe > .c-iSnHBU {
+  .c-cZCiNa > *:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-cZCiNa > *:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-cZCiNa > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-cLTcXe > .c-iSnHBU:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-iSnHBU:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-fIXJvv {
+  .c-cZCiNa > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-cLTcXe > .c-fIXJvv:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-iQukjL {
+  .c-cZCiNa > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-cLTcXe > .c-iQukjL:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-cLTcXe > .c-fNKiiB {
+  .c-cZCiNa > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-cLTcXe > .c-eWgOGC {
+  .c-cZCiNa > .c-eWgOGC {
     display: block;
   }
 
-  .c-cLTcXe > .c-eWgOGC:not(:first-child) {
+  .c-cZCiNa > .c-eWgOGC:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-cLTcXe > .c-eWgOGC:not(:last-child) {
+  .c-cZCiNa > .c-eWgOGC:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
-  .c-iSnHBU {
-    color: var(--colors-tonal600);
+  .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -106,35 +96,35 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-iSnHBU-fOoUdm-size-md {
+  .c-jryFOR-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::before {
+  .c-jryFOR-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::after {
+  .c-jryFOR-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -189,15 +179,15 @@ exports[`StackContent component renders a stack content 1`] = `
 
 <div>
   <div
-    class="c-cLTcXe"
+    class="c-cZCiNa"
   >
     <h2
-      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       HEADING
     </h2>
     <p
-      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       TEXT
     </p>
