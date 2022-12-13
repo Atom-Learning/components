@@ -269,19 +269,19 @@ exports[`DataTable component renders 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-codIxD-corners-round .c-GSaiK:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-codIxD-corners-round .c-GSaiK:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-codIxD-corners-round [object Object]:last-child .c-cCZzXk:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-codIxD-corners-round [object Object]:last-child .c-cCZzXk:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -388,6 +388,11 @@ exports[`DataTable component renders 1`] = `
     align-items: center;
   }
 
+  .c-hjAYDb-ihemFPK-css {
+    transform: ;
+    z-index: 5;
+  }
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
@@ -442,7 +447,7 @@ exports[`DataTable component renders 1`] = `
     </svg>
   </div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
+    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-codIxD-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
       class="c-PJLV c-PJLV-gzzGYN-theme-light"
@@ -483,7 +488,7 @@ exports[`DataTable component renders 1`] = `
       class="c-PJLV c-PJLV-kqWICR-striped-false"
     >
       <tr
-        class="c-hjAYDb"
+        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
       >
         <td
           class="c-cCZzXk"
@@ -504,7 +509,7 @@ exports[`DataTable component renders 1`] = `
         </td>
       </tr>
       <tr
-        class="c-hjAYDb"
+        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
       >
         <td
           class="c-cCZzXk"
@@ -525,7 +530,7 @@ exports[`DataTable component renders 1`] = `
         </td>
       </tr>
       <tr
-        class="c-hjAYDb"
+        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
       >
         <td
           class="c-cCZzXk"
@@ -546,7 +551,7 @@ exports[`DataTable component renders 1`] = `
         </td>
       </tr>
       <tr
-        class="c-hjAYDb"
+        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
       >
         <td
           class="c-cCZzXk"
@@ -567,7 +572,7 @@ exports[`DataTable component renders 1`] = `
         </td>
       </tr>
       <tr
-        class="c-hjAYDb"
+        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
       >
         <td
           class="c-cCZzXk"

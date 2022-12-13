@@ -1,3 +1,3 @@
 export { DragAndDropContainer } from './DragAndDropContainer'
 export { SortableContainer } from './SortableContainer'
-export { Handle } from './handle'
+export { Handle } from './Handle'
