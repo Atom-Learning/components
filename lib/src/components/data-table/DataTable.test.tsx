@@ -102,6 +102,16 @@ describe('DataTable component', () => {
     expect(screen.getByText('xena')).toBeVisible()
     expect(screen.queryByText('agatha')).not.toBeInTheDocument()
   })
+
+  it('Renders drag handles for draggable table rows', () => {
+   const {container} =  render(
+        <DataTable columns={columns} data={data} dragAndDrop>
+          <DataTable.Table  />
+        </DataTable>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })
 
 describe('DataTable.Pagination component', () => {

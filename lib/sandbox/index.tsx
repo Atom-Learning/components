@@ -28,9 +28,9 @@ const columns = [
 ]
 
 const data = [
-  { name: 'agatha', hobby: 'crossfit', id: 2 },
-  { name: 'betty', hobby: 'acting', id: 3 },
-  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 }
+  { name: 'agatha', hobby: 'crossfit' },
+  { name: 'betty', hobby: 'acting' },
+  { name: 'chrissy', hobby: 'bare-knuckle boxing' }
 ]
 
 const App = () => (
@@ -47,14 +47,14 @@ const App = () => (
         <DataTable
           columns={columns}
           data={data}
-          dragAndDrop={{
-            active: true,
-            onChange: (oldIndex, newIndex, newData) => {
-              console.log('old index:', oldIndex)
-              console.log('new index:', newIndex)
-              console.log('newData:', newData)
-            }
-          }}
+          // dragAndDrop={{
+          //   active: true,
+          //   onChange: (oldIndex, newIndex, newData) => {
+          //     console.log('old index:', oldIndex)
+          //     console.log('new index:', newIndex)
+          //     console.log('newData:', newData)
+          //   }
+          // }}
           // dragAndDrop
         >
           {/* <DataTable.GlobalFilter /> */}
