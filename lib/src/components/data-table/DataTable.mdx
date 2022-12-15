@@ -155,7 +155,7 @@ If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be c
 
 `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data. Note: there is currently a bug where `DataTable` will render all rows on the initial render, even when paginated. There is no visible effect, but it can cause performance issues on large tables. The workaround for this is to pass an `initialState` prop to `DataTable`. E.g. `initialState={pagination: {pageSize: 5, pageIndex: 0}}`. This will force pagination to apply properly on the initial render. Make sure the `pagination` prop matches the config you use in `DataTable.Pagination`, as the latter will take precedence after the initial render.
 
-### Drag and dropp
+### Drag and drop
 `DataTable` accepts a `dragAndDrop` prop which you can use to allow users to reorder table rows via drag and drop. You'll normally use it like this: `dragAndDrop={ {active: true, onChange: (oldIndex, newIndex, newData) => console.log (`row ${oldIndex} moved to ${newIndex})} }`. If you would prefer
 to define the `onChange` behaviour elsewhere, by subscribing to `useDataTable` and watching for changes in the `data` property, you can simply pass `dragAndDrop` to `DataTable` as a boolean instead.
 
