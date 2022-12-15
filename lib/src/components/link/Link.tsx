@@ -6,6 +6,7 @@ import { Override } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
+import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
 
 export const StyledLink = styled('a', {
@@ -23,13 +24,14 @@ export const StyledLink = styled('a', {
   '&:active': {
     color: '$primaryDark'
   },
-  [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &`]: {
-    fontSize: '100%',
-    lineHeight: 1,
-    '&::before, &::after': {
-      content: 'none'
-    }
-  },
+  [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &, ${StyledMarkdownEmphasis} > &`]:
+    {
+      fontSize: '100%',
+      lineHeight: 1,
+      '&::before, &::after': {
+        content: 'none'
+      }
+    },
   variants: textVariants
 })
 
