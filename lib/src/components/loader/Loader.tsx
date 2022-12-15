@@ -48,7 +48,8 @@ type LoaderProps = {
 export const Loader: React.FC<LoaderProps> = ({
   css = {},
   message = 'Loading',
-  size = 'md'
+  size = 'md',
+  ...props
 }) => (
   <Flex
     css={{
@@ -58,6 +59,7 @@ export const Loader: React.FC<LoaderProps> = ({
       ...(css as any)
     }}
     role="alert"
+    {...props}
   >
     <VisuallyHidden.Root>{message}</VisuallyHidden.Root>
     <Dot size={size} />
