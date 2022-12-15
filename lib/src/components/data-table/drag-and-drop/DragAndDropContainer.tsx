@@ -13,19 +13,8 @@ import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 
 import * as React from 'react'
 
-interface DragAndDropContainerProps {
-  onSortChange?: (
-    oldIndex: number,
-    newIndex: number,
-    newData: Array<Record<string, unknown>>
-  ) => void
-}
-
-export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
-  children,
-  onSortChange
-}) => {
-  const { idColumn, order, setData } = useDataTable()
+export const DragAndDropContainer: React.FC = ({ children }) => {
+  const { idColumn, onDragAndDrop, order, setData } = useDataTable()
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -41,7 +30,7 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
         const oldIndex = order.indexOf(active[idColumn])
         const newIndex = order.indexOf(over[idColumn])
         const result = arrayMove(data, oldIndex, newIndex)
-        onSortChange?.(oldIndex, newIndex, result)
+        onDragAndDrop?.(oldIndex, newIndex, result)
         return result
       })
     }
