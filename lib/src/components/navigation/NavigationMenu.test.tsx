@@ -14,11 +14,7 @@ const ExampleNav = () => (
       <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
       <NavigationMenu.DropdownContent>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
-          <Flex
-            css={{
-              flexDirection: 'column'
-            }}
-          >
+          <Flex css={{ flexDirection: 'column' }}>
             <NavigationMenu.DropdownItemTitle>
               Colours
             </NavigationMenu.DropdownItemTitle>
@@ -31,6 +27,9 @@ const ExampleNav = () => (
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/icons">
           Icons
         </NavigationMenu.DropdownItem>
+        <NavigationMenu.DropdownItem disabled href="">
+          Icons
+        </NavigationMenu.DropdownItem>
       </NavigationMenu.DropdownContent>
     </NavigationMenu.Dropdown>
   </NavigationMenu>
@@ -41,6 +40,8 @@ describe('Nav component', () => {
     const { container } = render(<ExampleNav />, {
       container: document.body
     })
+
+    userEvent.click(screen.getByRole('button', { name: /theme/i }))
 
     expect(container).toMatchSnapshot()
   })
@@ -68,7 +69,7 @@ describe('Nav component', () => {
     ).getByRole('list')
     const dropdownListItems = within(dropdownList).getAllByRole('listitem')
 
-    expect(dropdownListItems.length).toEqual(3)
+    expect(dropdownListItems.length).toEqual(4)
 
     expect(screen.getByRole('link', { name: /colours/i })).toHaveAttribute(
       'href',
