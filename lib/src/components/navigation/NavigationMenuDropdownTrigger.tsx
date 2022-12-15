@@ -18,33 +18,33 @@ const StyledTrigger = styled(
     alignItems: 'center',
     borderRadius: '$1',
     justifyContent: 'space-between',
-    gap: '$1',
     '&[data-state="open"]': {
       background: '$tonal100'
     },
-    variants: { active: { true: { ...navigationMenuActiveItemStyles } } }
+    variants: {
+      active: { true: { ...navigationMenuActiveItemStyles } }
+    }
   }
 )
 
 export const NavigationMenuDropdownTrigger = React.forwardRef<
   HTMLButtonElement,
   React.PropsWithChildren<{ active?: boolean }>
->(({ children, active, ...props }, forwardedRef) => {
-  return (
-    <StyledTrigger active={active} {...props} ref={forwardedRef}>
-      {children}
-      <Icon
-        is={ChevronDown}
-        css={{
-          '[data-state=open] &': { transform: 'rotate(-180deg)' },
-          '@media (prefers-reduced-motion: no-preference)': {
-            transition: 'transform .2s ease'
-          }
-        }}
-        size="sm"
-      />
-    </StyledTrigger>
-  )
-})
+>(({ children, active, ...props }, forwardedRef) => (
+  <StyledTrigger active={active} {...props} ref={forwardedRef}>
+    {children}
+    <Icon
+      is={ChevronDown}
+      css={{
+        ml: '$1',
+        '[data-state=open] &': { transform: 'rotate(-180deg)' },
+        '@media (prefers-reduced-motion: no-preference)': {
+          transition: 'transform .2s ease'
+        }
+      }}
+      size="sm"
+    />
+  </StyledTrigger>
+))
 
 NavigationMenuDropdownTrigger.displayName = 'NavigationMenuDropdownTrigger'
