@@ -105,7 +105,7 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-dEwrHQ {
+  .c-fucOQC {
     background: unset;
     border: unset;
     padding: unset;
@@ -115,29 +115,32 @@ exports[`MarkdownContent component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-dEwrHQ:focus,
-  .c-dEwrHQ:hover {
+  .c-fucOQC:focus,
+  .c-fucOQC:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-dEwrHQ:active {
+  .c-fucOQC:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dyvMgW > .c-dEwrHQ,
-  .c-jryFOR > .c-dEwrHQ,
-  .c-PJLV > .c-dEwrHQ {
+  .c-dyvMgW > .c-fucOQC,
+  .c-jryFOR > .c-fucOQC,
+  .c-PJLV > .c-fucOQC,
+  .c-bYNGXt > .c-fucOQC {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-dEwrHQ::before,
-  .c-dyvMgW > .c-dEwrHQ::after,
-  .c-jryFOR > .c-dEwrHQ::before,
-  .c-jryFOR > .c-dEwrHQ::after,
-  .c-PJLV > .c-dEwrHQ::before,
-  .c-PJLV > .c-dEwrHQ::after {
+  .c-dyvMgW > .c-fucOQC::before,
+  .c-dyvMgW > .c-fucOQC::after,
+  .c-jryFOR > .c-fucOQC::before,
+  .c-jryFOR > .c-fucOQC::after,
+  .c-PJLV > .c-fucOQC::before,
+  .c-PJLV > .c-fucOQC::after,
+  .c-bYNGXt > .c-fucOQC::before,
+  .c-bYNGXt > .c-fucOQC::after {
     content: none;
   }
 
@@ -320,18 +323,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-dEwrHQ-gvmVBy-size-md {
+  .c-fucOQC-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dEwrHQ-gvmVBy-size-md::before {
+  .c-fucOQC-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dEwrHQ-gvmVBy-size-md::after {
+  .c-fucOQC-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -691,7 +694,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-dEwrHQ c-dEwrHQ-gvmVBy-size-md"
+        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
         href="http://dev.nodeca.com"
       >
         link text
@@ -701,7 +704,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-dEwrHQ c-dEwrHQ-gvmVBy-size-md"
+        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
         title="title text!"
       >
