@@ -1,6 +1,6 @@
 ## Color Schemes (v.ALPHA)
 
-`color-schemes/`, is a **local only** package in an alpha stage (usable but not finalised) `@atom-learning/color-schemes` which introduces a `ColorScheme` component. It has been worked on heavily in terms of considering the required options and logic from dev but is **not finished and needs more design input**.
+`color-schemes/`, is a **local only** package in an alpha stage (usable but not finalised) `@atom-learning/color-scheme` which introduces a `ColorScheme` component. It has been worked on heavily in terms of considering the required options and logic from dev but is **not finished and needs more design input**.
 
 The problem that this component was introduced to solve is the difficult way we have approached theming so far in our components.
 In the past we have heavily relied on props drilling and passing down theme related stitches variants to children, which means _(1)_ the colours can easily break when the expected children are nested further than directly under the 'theme providing' parent (The component which has a `theme` prop and tries to prop-drill theme). Moreover, _(2)_ we have inconsistent naming for our themes and _(3)_ inconsistent implementations on active components since _(4)_ the theming need to be documented and coded separately for each new component.
