@@ -2,15 +2,14 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -68,18 +67,18 @@ exports[`Tabs component renders 1`] = `
 }
 
 @media  {
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -205,7 +204,7 @@ exports[`Tabs component renders 1`] = `
       <span
         aria-controls="radix-3-content-tab1"
         aria-selected="true"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="active"
@@ -219,7 +218,7 @@ exports[`Tabs component renders 1`] = `
       <span
         aria-controls="radix-3-content-tab2"
         aria-selected="false"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
         data-orientation="horizontal"
         data-radix-collection-item=""
         data-state="inactive"
@@ -233,7 +232,7 @@ exports[`Tabs component renders 1`] = `
       <span
         aria-controls="radix-3-content-tab3"
         aria-selected="false"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
         data-disabled=""
         data-orientation="horizontal"
         data-radix-collection-item=""
