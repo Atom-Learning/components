@@ -51,23 +51,22 @@ exports[`Nav component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-gWdZwW {
+  .c-DeiGT {
     display: flex;
     align-items: center;
     border-radius: var(--radii-1);
     justify-content: space-between;
-    gap: var(--space-1);
   }
 
-  .c-gWdZwW[data-state="open"] {
+  .c-DeiGT[data-state="open"] {
     background: var(--colors-tonal100);
   }
 
-  .c-iIIuLn {
+  .c-jYBZds {
     padding: var(--space-3);
     background: white;
     margin-top: 4px;
-    box-shadow: 0px 3px 6px rgba(51, 51, 51, 0.15), 0px 3px 6px rgba(51, 51, 51, 0.2);
+    box-shadow: var(--shadows-1);
     border-radius: var(--radii-1);
   }
 
@@ -98,6 +97,71 @@ exports[`Nav component renders 1`] = `
     justify-content: center;
     position: relative;
   }
+
+  .c-fZCQPN {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-BFpiU {
+    color: var(--colors-tonal500);
+    font-weight: 600;
+  }
+
+  .c-iXImxE {
+    all: unset;
+    position: relative;
+    color: var(--colors-tonal400);
+    outline: none;
+    cursor: default;
+    font-family: var(--fonts-body);
+    -webkit-user-select: none;
+    user-select: none;
+    padding: var(--space-3);
+    border-radius: var(--radii-1);
+  }
+
+  .c-iXImxE:hover {
+    background: var(--colors-tonal50);
+    color: var(--colors-tonal600);
+  }
+
+  .c-iXImxE:active {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal600);
+  }
+
+  .c-iXImxE:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--colors-primary);
+  }
+
+  .c-iXImxE:disabled {
+    background: none;
+    color: var(--colors-tonal400);
+    opacity: 30%;
+    cursor: default;
+  }
+
+  .c-iXImxE {
+    background: none;
+    opacity: 30%;
+  }
 }
 
 @media  {
@@ -124,15 +188,57 @@ exports[`Nav component renders 1`] = `
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active] {
+    background: var(--colors-primaryLight);
+    color: var(--colors-primary);
+  }
+
+  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active] * {
+    color: var(--colors-primary);
+  }
+
+  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:focus-visible {
+    box-shadow: 0 0 0 2px var(--colors-primary);
+  }
 }
 
 @media  {
-  [data-state=open] .c-dbrbZt-iBlUzV-css {
+  .c-dbrbZt-ihxkArn-css {
+    margin-left: var(--space-1);
+  }
+
+  [data-state=open] .c-dbrbZt-ihxkArn-css {
     transform: rotate(-180deg);
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-dbrbZt-iBlUzV-css {
+    .c-dbrbZt-ihxkArn-css {
       transition: transform .2s ease;
     }
 }
@@ -147,6 +253,10 @@ exports[`Nav component renders 1`] = `
 
   .c-jQFjpB-ikEdNcB-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
+  }
+
+  .c-dhzjXW-iiTKOFX-css {
+    flex-direction: column;
   }
 }
 
@@ -179,16 +289,16 @@ exports[`Nav component renders 1`] = `
         <li>
           <button
             aria-controls="radix-2-content-1"
-            aria-expanded="false"
-            class="c-dIYQCX c-gWdZwW"
+            aria-expanded="true"
+            class="c-dIYQCX c-DeiGT"
             data-radix-collection-item=""
-            data-state="closed"
+            data-state="open"
             id="radix-2-trigger-1"
           >
             Theme
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iBlUzV-css"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihxkArn-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -197,12 +307,95 @@ exports[`Nav component renders 1`] = `
               />
             </svg>
           </button>
+          <span
+            aria-hidden="true"
+            style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+            tabindex="0"
+          />
+          <span
+            aria-owns="radix-2-content-1"
+          />
         </li>
       </ul>
     </div>
     <div
       class="c-dbtMpA"
-    />
+    >
+      <div
+        class="c-jQFjpB c-jQFjpB-ikEdNcB-css"
+        data-orientation="horizontal"
+        data-state="open"
+      >
+        <div
+          aria-labelledby="radix-2-trigger-1"
+          class="c-jYBZds"
+          data-orientation="horizontal"
+          dir="ltr"
+          id="radix-2-content-1"
+        >
+          <ul
+            class="c-fZCQPN"
+          >
+            <li
+              class="PJLV"
+            >
+              <a
+                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                data-radix-collection-item=""
+                href="https://app.atomlearning.co.uk/colours"
+              >
+                <div
+                  class="c-dhzjXW c-dhzjXW-iiTKOFX-css"
+                >
+                  <p
+                    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-BFpiU"
+                  >
+                    Colours
+                  </p>
+                  <p
+                    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
+                  >
+                    Atom Learning color palette
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="PJLV"
+            >
+              <a
+                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                data-radix-collection-item=""
+                href="https://app.atomlearning.co.uk/effects"
+              >
+                Effects
+              </a>
+            </li>
+            <li
+              class="PJLV"
+            >
+              <a
+                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                data-radix-collection-item=""
+                href="https://app.atomlearning.co.uk/icons"
+              >
+                Icons
+              </a>
+            </li>
+            <li
+              class="PJLV"
+            >
+              <button
+                class="c-iXImxE"
+                disabled=""
+              >
+                Icons
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </nav>
 </body>
 `;
