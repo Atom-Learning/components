@@ -1,6 +1,5 @@
 import {
   Box,
-  CSS,
   Flex,
   Heading,
   Icon,
@@ -14,6 +13,8 @@ import { pascalCase } from 'pascal-case'
 import * as React from 'react'
 import { ComponentDoc } from 'react-docgen-typescript'
 
+import type { CSS } from '~/stitches'
+
 import { Cell, InlineCode, Table } from '.'
 
 type PropsTableProps = {
@@ -25,7 +26,11 @@ const sizeOrder = ['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl']
 const getComponentProps = (name): ComponentDoc =>
   docgen
     .filter(Boolean)
-    .find((component) => component.displayName === pascalCase(name))
+    .find(
+      (component) =>
+        component.displayName === name ||
+        component.displayName === pascalCase(name)
+    )
 
 const columns = ['Prop', 'Type', 'Default', 'Required']
 
