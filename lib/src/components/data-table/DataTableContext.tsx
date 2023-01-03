@@ -21,7 +21,6 @@ import type {
   PaginationState,
   SortDirection
 } from '@tanstack/react-table'
-import { CSS } from '~/stitches'
 
 import {
   DataTableContextType,
@@ -50,7 +49,6 @@ type TableProviderProps = {
   defaultSort?: { column: string; direction: SortDirection }
   children: React.ReactNode
   initialState?: InitialState
-  css?: CSS
 } & (
   | { data: Array<Record<string, unknown>>; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -67,8 +65,7 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
-  children,
-  css
+  children
 }: TableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
