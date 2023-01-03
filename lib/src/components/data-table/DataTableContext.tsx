@@ -142,6 +142,12 @@ export const DataTableProvider = ({
     runAsyncData({})
   }, [runAsyncData])
 
+  React.useEffect(() => {
+    if (!dataProp) return
+
+    setData({ results: dataProp, total: dataProp.length })
+  }, [dataProp])
+
   const getTotalRows = () => data.total
 
   const table = useReactTable<unknown>({
