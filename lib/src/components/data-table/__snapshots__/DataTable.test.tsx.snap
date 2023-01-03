@@ -588,6 +588,111 @@ exports[`DataTable component renders 1`] = `
           </button>
         </td>
       </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          xena
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          rick
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          phillip
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          crossfit
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          maurice
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          acting
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
+      <tr
+        class="c-hjAYDb"
+      >
+        <td
+          class="c-cCZzXk"
+        >
+          peter
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          bare-knuckle boxing
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
+          <button>
+            do something
+          </button>
+        </td>
+      </tr>
     </tbody>
   </table>
   <nav
@@ -596,7 +701,7 @@ exports[`DataTable component renders 1`] = `
     <p
       class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
     >
-      1 - 5 of 18 items
+      1 - 10 of 18 items
     </p>
     <div
       class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -614,21 +719,11 @@ exports[`DataTable component renders 1`] = `
         >
           2
         </option>
-        <option
-          value="2"
-        >
-          3
-        </option>
-        <option
-          value="3"
-        >
-          4
-        </option>
       </select>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
       >
-        of 4 pages
+        of 2 pages
       </p>
     </div>
     <div

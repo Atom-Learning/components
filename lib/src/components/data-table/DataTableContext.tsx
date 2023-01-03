@@ -87,14 +87,10 @@ export const DataTableProvider = ({
 
   const [paginationState, setPagination] = React.useState<
     PaginationState | undefined
-  >(
-    getAsyncData
-      ? {
-          ...defaultPaginationState,
-          ...initialState?.pagination
-        }
-      : initialState?.pagination
-  )
+  >({
+    ...defaultPaginationState,
+    ...initialState?.pagination
+  })
 
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
