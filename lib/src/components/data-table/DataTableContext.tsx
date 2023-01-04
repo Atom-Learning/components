@@ -1,4 +1,5 @@
 import * as React from 'react'
+import useDeepCompareEffect from 'use-deep-compare-effect'
 import {
   useReactTable,
   getCoreRowModel,
@@ -61,7 +62,7 @@ const DataTableContext =
 
 export const DataTableProvider = ({
   columns,
-  data: dataProp,
+  data: dataProp = [],
   getAsyncData,
   defaultSort,
   initialState = undefined,
@@ -139,7 +140,7 @@ export const DataTableProvider = ({
     runAsyncData({})
   }, [runAsyncData])
 
-  React.useEffect(() => {
+  useDeepCompareEffect(() => {
     if (!dataProp) return
 
     setData({ results: dataProp, total: dataProp.length })
