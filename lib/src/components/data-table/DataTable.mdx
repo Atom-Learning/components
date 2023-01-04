@@ -77,6 +77,8 @@ If you need more flexibility than the default implementations provide, you can r
 
 Note also that `useDataTable` can only be called by a child component of `DataTable`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
+Note that if you update the value of the `data` prop, it will reset the state of the table. This is useful if you are manipulating the data outside the context of the table.
+
 ```tsx
 <DataTable columns={columns} data={data}>
   {() => {
