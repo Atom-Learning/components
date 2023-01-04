@@ -1,4 +1,5 @@
 import * as React from 'react'
+import useDeepCompareEffect from 'use-deep-compare-effect'
 import {
   useReactTable,
   getCoreRowModel,
@@ -21,7 +22,6 @@ import type {
   PaginationState,
   SortDirection
 } from '@tanstack/react-table'
-import { CSS } from '~/stitches'
 
 import {
   DataTableContextType,
@@ -50,7 +50,6 @@ type TableProviderProps = {
   defaultSort?: { column: string; direction: SortDirection }
   children: React.ReactNode
   initialState?: InitialState
-  css?: CSS
 } & (
   | { data: Array<Record<string, unknown>>; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -63,12 +62,11 @@ const DataTableContext =
 
 export const DataTableProvider = ({
   columns,
-  data: dataProp,
+  data: dataProp = [],
   getAsyncData,
   defaultSort,
   initialState = undefined,
-  children,
-  css
+  children
 }: TableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
@@ -87,14 +85,10 @@ export const DataTableProvider = ({
 
   const [paginationState, setPagination] = React.useState<
     PaginationState | undefined
-  >(
-    getAsyncData
-      ? {
-          ...defaultPaginationState,
-          ...initialState?.pagination
-        }
-      : initialState?.pagination
-  )
+  >({
+    ...defaultPaginationState,
+    ...initialState?.pagination
+  })
 
   const [isSortable, setIsSortable] = React.useState<boolean>(false)
   const [sorting, setSorting] = React.useState<SortingState>(
@@ -145,6 +139,12 @@ export const DataTableProvider = ({
   React.useEffect(() => {
     runAsyncData({})
   }, [runAsyncData])
+
+  useDeepCompareEffect(() => {
+    if (!dataProp) return
+
+    setData({ results: dataProp, total: dataProp.length })
+  }, [dataProp])
 
   const getTotalRows = () => data.total
 

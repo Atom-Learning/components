@@ -63,11 +63,7 @@ describe('DataTable component', () => {
   it('renders', () => {
     const { container } = render(
       <Wrapper>
-        <DataTable
-          columns={columns}
-          data={data}
-          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
-        >
+        <DataTable columns={columns} data={data}>
           <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
           <DataTable.Table sortable css={{ mb: '$4' }} />
           <DataTable.Pagination />

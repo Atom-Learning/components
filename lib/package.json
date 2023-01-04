@@ -161,7 +161,8 @@
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
     "throttle-debounce": "^3.0.1",
-    "uid": "^2.0.0"
+    "uid": "^2.0.0",
+    "use-deep-compare-effect": "^1.8.1"
   },
   "husky": {
     "hooks": {
