@@ -28,9 +28,7 @@ const StyledLink = styled(
           '&[data-active]': {
             background: '$primaryLight',
             color: '$primary',
-            '*': {
-              color: '$primary'
-            },
+            '*': { color: '$primary' },
             '&:hover': { background: '$tonal50' },
             '&:active': { background: '$tonal100' },
             '&:focus-visible': {
@@ -61,17 +59,13 @@ export const NavigationMenuLink = React.forwardRef<
   (
     { children, href, disabled, css, variant = 'link', ...props },
     forwardedRef
-  ) => {
-    if (disabled) {
-      return (
+  ) => (
+    <ListItem>
+      {disabled ? (
         <DisabledButton disabled {...props}>
           {children}
         </DisabledButton>
-      )
-    }
-
-    return (
-      <ListItem>
+      ) : (
         <StyledLink
           href={href}
           ref={forwardedRef}
@@ -81,9 +75,9 @@ export const NavigationMenuLink = React.forwardRef<
         >
           {children}
         </StyledLink>
-      </ListItem>
-    )
-  }
+      )}
+    </ListItem>
+  )
 )
 
 NavigationMenuLink.displayName = 'NavigationMenuLink'

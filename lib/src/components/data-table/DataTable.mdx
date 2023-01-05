@@ -1,6 +1,6 @@
 ---
 title: DataTable
-component: DataTable, DataTable.Table, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter
+component: DataTable, DataTable.Table, DataTable.Head, DataTable.HeaderCell, DataTable.Body, DataTable.Row, DataTable.DataCell, DataTable.GlobalFilter, DataTable.Loading, DataTable.Error
 description: Displays tabular data with features such as sorting and pagination
 category: Content
 ---
@@ -77,6 +77,8 @@ If you need more flexibility than the default implementations provide, you can r
 
 Note also that `useDataTable` can only be called by a child component of `DataTable`. In a real example, you'll probably have a separate named component which makes the `useDataTable` call, because if you're not using the defaults as above then you probably have some complex logic involved. In this example we've got an inline child component for simplicity.
 
+Note that if you update the value of the `data` prop, it will reset the state of the table. This is useful if you are manipulating the data outside the context of the table.
+
 ```tsx
 <DataTable columns={columns} data={data} idColumn='userId'>
   {() => {
@@ -131,6 +133,91 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
     )
   }}
 </DataTable>
+```
+
+### Server-side pagination and sorting
+
+`DataTable` can be used with local pagination or server-side pagination (getting only the data needed for the current page). To use one or the other, you have to use the `data` or `getAsyncData` prop respectively.
+
+The `getAsyncData` function accepts an object with the necessary parameters to get the relevant piece of data for the current page and order. All the parameters are optional, with these defaults:
+
+```
+{
+  pageIndex: 0,
+  pageSize: 10,
+  sortBy: undefined,
+  sortDirection: undefined,
+  globalFilter: ''
+}
+```
+
+The response from the `getAsyncData` function must match the following schema:
+
+```ts
+{
+  results: Array<Record<string, unknown>> // your current page data, sorted if specified
+  total: number // the total number of elements in your data
+}
+```
+
+A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `getAsyncData` promise is pending.
+
+You can use `DataTable.Error` to display your own error component when the `getAsyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
+
+```tsx
+<DataTable
+  columns={columns}
+  defaultPageSize={10}
+  defaultSort={{ column: 'name', direction: 'asc' }}
+  initialState={{ pagination: { pageIndex: 0, pageSize: 10 } }}
+  getAsyncData={async ({
+    pageIndex,
+    pageSize,
+    sortBy,
+    sortDirection,
+    globalFilter
+  }) => {
+    const params = new URLSearchParams({
+      page: pageIndex,
+      pageSize,
+      order: sortBy,
+      dir: sortDirection,
+      search: globalFilter
+    })
+    const response = await fetch(`https://your-api?${params.toString()}`)
+    const { results, total } = await response.json()
+
+    return { results, total }
+  }}
+>
+  <DataTable.Table sortable css={{ mb: '$4', minWidth: '500px' }} />
+  <DataTable.Error>
+    {(retry) => <Button onClick={retry}>Try again</Button>}
+  </DataTable.Error>
+  <DataTable.Pagination />
+</DataTable>
+```
+
+`DataTable.Error` provides a `retry` function to the children which allows you to recall the `getAsyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
+
+```tsx
+<DataTable.Error>
+  {(retry) => (
+    <Button
+      onClick={() =>
+        retry?.({
+          pageIndex: 5,
+          pageSize: 10,
+          sortBy: 'name',
+          sortDirection: 'asc',
+          globalFilter: ''
+        })
+      }
+    >
+      Retry
+    </Button>
+  )}
+</DataTable.Error>
 ```
 
 ## Features

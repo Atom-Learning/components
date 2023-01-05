@@ -8,7 +8,7 @@ type MarkdownEmphasisProps = {
   handleNode: (node: Content) => React.ReactElement
 }
 
-const StyledMarkdownEmphasis = styled('em', { fontStyle: 'italic' })
+export const StyledMarkdownEmphasis = styled('em', { fontStyle: 'italic' })
 
 export const MarkdownEmphasis: React.FC<MarkdownEmphasisProps> = ({
   node,

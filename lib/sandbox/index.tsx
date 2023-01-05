@@ -47,14 +47,14 @@ const App = () => (
         <DataTable
           columns={columns}
           data={data}
-          // dragAndDrop={{
-          //   active: true,
-          //   onChange: (oldIndex, newIndex, newData) => {
-          //     console.log('old index:', oldIndex)
-          //     console.log('new index:', newIndex)
-          //     console.log('newData:', newData)
-          //   }
-          // }}
+          dragAndDrop={{
+            active: true,
+            onChange: (oldIndex, newIndex, newData) => {
+              console.log('old index:', oldIndex)
+              console.log('new index:', newIndex)
+              console.log('newData:', newData)
+            }
+          }}
           // dragAndDrop
         >
           {/* <DataTable.GlobalFilter /> */}

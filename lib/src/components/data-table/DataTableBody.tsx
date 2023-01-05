@@ -4,6 +4,7 @@ import { Table } from '../table'
 import { DataTable } from '.'
 import { useDataTable } from './DataTableContext'
 import { SortableContainer } from './drag-and-drop'
+
 type DataTableBodyProps = Omit<
   React.ComponentProps<typeof Table.Body>,
   'children'

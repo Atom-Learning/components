@@ -1,5 +1,4 @@
 import * as React from 'react'
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import { debounce } from 'throttle-debounce'
 
 import { SearchInput } from '../search-input'
@@ -17,7 +16,7 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   hideLabel = false,
   ...props
 }) => {
-  const { setGlobalFilter, getState } = useDataTable()
+  const { setGlobalFilter, getState, resetPagination } = useDataTable()
   const { globalFilter } = getState()
 
   const handleChange = debounce(250, (event) => {
@@ -26,6 +25,7 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
     } = event
 
     onChange?.(event)
+    resetPagination()
     setGlobalFilter(value)
   })
 
