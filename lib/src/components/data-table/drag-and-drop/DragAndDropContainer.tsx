@@ -22,7 +22,7 @@ export const DragAndDropContainer: React.FC = ({ children }) => {
     })
   )
 
-  function handleDragEnd(event) {
+  const handleDragEnd = (event) => {
     const { active, over } = event
     if (active.id !== over.id) {
       setData((data) => {
