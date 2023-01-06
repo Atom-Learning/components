@@ -201,13 +201,13 @@ export const DataTableProvider = ({
       )
     }
 
-    const dataCopy = JSON.parse(JSON.stringify(data))
-    const row = dataCopy[oldIndex]
+    const dataClone = JSON.parse(JSON.stringify(data))
+    const row = dataClone[oldIndex]
 
-    dataCopy.splice(oldIndex, 1)
-    dataCopy.splice(newIndex, 0, row)
+    dataClone.splice(oldIndex, 1)
+    dataClone.splice(newIndex, 0, row)
 
-    setData(dataCopy)
+    setData(dataClone)
   }
 
   const table = useReactTable<unknown>({
