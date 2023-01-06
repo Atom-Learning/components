@@ -112,7 +112,7 @@ export const DataTableProvider = ({
   const [isPaginated, setIsPaginated] = React.useState<boolean>(
     !!initialState?.pagination
   )
-  const order = React.useMemo(
+  const rowOrder = React.useMemo(
     () => data?.results.map((row, i) => row[idColumn] as UniqueIdentifier),
     [data]
   )
@@ -236,7 +236,7 @@ export const DataTableProvider = ({
     onGlobalFilterChange: setGlobalFilter
   })
 
-  const value = React.useMemo(() => {
+  const value: DataTableContextType = React.useMemo(() => {
     return {
       ...table,
       data,
@@ -248,7 +248,7 @@ export const DataTableProvider = ({
       isSortable,
       isDragAndDrop,
       moveRow,
-      order,
+      rowOrder,
       asyncDataState,
       runAsyncData
     }
