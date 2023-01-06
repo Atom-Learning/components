@@ -2,7 +2,6 @@ import { useDataTable } from '../DataTableContext'
 import {
   closestCenter,
   DndContext,
-  DragOverlay,
   KeyboardSensor,
   PointerSensor,
   useSensor,

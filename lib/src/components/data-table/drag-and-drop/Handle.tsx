@@ -1,7 +1,7 @@
 import { ActionIcon } from '../../action-icon'
 import { Icon } from '../../icon'
 import { styled } from '../../../stitches'
-import { DragHandle, User } from '@atom-learning/icons'
+import { DragHandle } from '@atom-learning/icons'
 import * as React from 'react'
 
 export const StyledHandle = styled(ActionIcon, {
