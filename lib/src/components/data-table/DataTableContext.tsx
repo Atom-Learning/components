@@ -30,46 +30,14 @@ import {
   TAsyncDataOptions,
   TAsyncDataResult,
   AsyncDataState,
-  TGetAsyncData
+  TGetAsyncData,
+  TableData,
+  InitialState
 } from './DataTable.types'
 import { getNewAsyncData } from './getNewAsyncData'
-// type DataTableContextType<T = unknown> = Table<T> & {
-//   data: Array<Record<string, unknown>>
-//   /**
-//    *  Directly update the data array that the table rows are built from.
-//    *  This is useful when re-ordering rows, but is high-risk if you're not sure what you're doing!
-//    *
-//    *  Note in particular that this value is also updated if you update the value of the `DataTable`'s `data` prop
-//    *  — it's probably best to only use one of those two methods for any given table.
-
-//    */
-//   setData: React.Dispatch<React.SetStateAction<TAsyncDataResult>>
-//   setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
-//   order: Array<UniqueIdentifier>
-//   applyPagination: () => void
-//   getTotalRows: () => number
-//   idColumn: string
-//   isSortable: boolean
-//   isDragAndDrop: boolean
-//   onDragAndDrop?: (oldIndex: number, newIndex: number, newData: Array<Record<string, unknown>>) => void
-//   moveRow: (oldIndex: number, newIndex: number) => void
-// }
 
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
-
-type InitialState = Partial<
-  VisibilityTableState &
-    ColumnOrderTableState &
-    ColumnPinningTableState &
-    FiltersTableState &
-    SortingTableState &
-    ExpandedTableState &
-    GroupingTableState &
-    ColumnSizingTableState &
-    PaginationTableState &
-    RowSelectionTableState
->
 
 type TableProviderProps = {
   columns
@@ -82,13 +50,13 @@ type TableProviderProps = {
         onChange: (
           oldIndex: number,
           newIndex: number,
-          newData: Array<Record<string, unknown>>
+          newData: TableData
         ) => void
       }
   initialState?: InitialState
   idColumn?: string
 } & (
-  | { data: Array<Record<string, unknown>>; getAsyncData?: never }
+  | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
 )
 

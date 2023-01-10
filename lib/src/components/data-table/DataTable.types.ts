@@ -1,6 +1,21 @@
-import type { Table, SortDirection } from '@tanstack/react-table'
+import type { Table } from '@tanstack/react-table'
 import * as React from 'react'
 import type { UniqueIdentifier } from '@dnd-kit/core'
+import type {
+  VisibilityTableState,
+  ColumnOrderTableState,
+  ColumnPinningTableState,
+  FiltersTableState,
+  SortingTableState,
+  ExpandedTableState,
+  GroupingTableState,
+  ColumnSizingTableState,
+  PaginationTableState,
+  RowSelectionTableState,
+  SortingState,
+  PaginationState,
+  SortDirection
+} from '@tanstack/react-table'
 export enum AsyncDataState {
   NONE = 'none',
   PENDING = 'pending',
@@ -10,7 +25,7 @@ export enum AsyncDataState {
 
 export type TAsyncDataResult = {
   total: number
-  results: Array<Record<string, unknown>>
+  results: TableData
 }
 
 export type TAsyncDataOptions = {
@@ -38,7 +53,7 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   onDragAndDrop?: (
     oldIndex: number,
     newIndex: number,
-    newData: Array<Record<string, unknown>>
+    newData: TableData
   ) => void
   moveRow: (oldIndex: number, newIndex: number) => void
   /**
@@ -50,3 +65,18 @@ export type DataTableContextType<T = unknown> = Table<T> & {
    */
   setData: React.Dispatch<React.SetStateAction<TAsyncDataResult>>
 }
+
+export type TableData = Array<Record<string, unknown>>
+
+export type InitialState = Partial<
+  VisibilityTableState &
+    ColumnOrderTableState &
+    ColumnPinningTableState &
+    FiltersTableState &
+    SortingTableState &
+    ExpandedTableState &
+    GroupingTableState &
+    ColumnSizingTableState &
+    PaginationTableState &
+    RowSelectionTableState
+>
