@@ -4,10 +4,10 @@ import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { useDataTable } from '../DataTableContext'
 
 export const SortableContainer = ({ children }) => {
-  const { order } = useDataTable()
+  const { rowOrder } = useDataTable()
 
   return (
-    <SortableContext items={order} strategy={verticalListSortingStrategy}>
+    <SortableContext items={rowOrder} strategy={verticalListSortingStrategy}>
       {children}
     </SortableContext>
   )
