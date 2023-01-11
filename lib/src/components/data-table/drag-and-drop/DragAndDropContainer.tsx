@@ -13,7 +13,7 @@ import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
 import * as React from 'react'
 
 export const DragAndDropContainer: React.FC = ({ children }) => {
-  const { idColumn, onDragAndDrop, order, setData } = useDataTable()
+  const { idColumn, onDragAndDrop, rowOrder, setData } = useDataTable()
 
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -26,11 +26,11 @@ export const DragAndDropContainer: React.FC = ({ children }) => {
     const { active, over } = event
     if (active.id !== over.id) {
       setData((data) => {
-        const oldIndex = order.indexOf(active[idColumn])
-        const newIndex = order.indexOf(over[idColumn])
-        const result = arrayMove(data, oldIndex, newIndex)
-        onDragAndDrop?.(oldIndex, newIndex, result)
-        return result
+        const oldIndex = rowOrder.indexOf(active[idColumn])
+        const newIndex = rowOrder.indexOf(over[idColumn])
+        const results = arrayMove(data.results, oldIndex, newIndex)
+        onDragAndDrop?.(oldIndex, newIndex, results)
+        return { results, total: results.length }
       })
     }
   }
@@ -39,6 +39,8 @@ export const DragAndDropContainer: React.FC = ({ children }) => {
     <DndContext
       sensors={sensors}
       collisionDetection={closestCenter}
+      onDragStart={() => console.log('start')}
+      onDragMove={() => console.log('move')}
       onDragEnd={handleDragEnd}
       modifiers={[restrictToVerticalAxis]}
     >
