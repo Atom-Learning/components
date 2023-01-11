@@ -92,6 +92,12 @@ export const DataTableProvider = ({
     AsyncDataState.NONE
   )
 
+  if (isDragAndDrop && rowOrder.some((id) => id === undefined)) {
+    console.error(
+      'To ensure drag-and-drop works correctly, please ensure that each row has a unique ID. Use the `id` property or pass DataTable an `idColumn` prop that defines the ID property on the rows.'
+    )
+  }
+
   const [globalFilter, setGlobalFilter] = React.useState<string>('')
 
   const [paginationState, setPagination] = React.useState<

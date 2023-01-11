@@ -16,25 +16,16 @@ export type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
 export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
   const { isDragAndDrop } = useDataTable()
 
-  const {
-    attributes,
-    listeners,
-    transform,
-    transition,
-    setNodeRef,
-    isDragging
-  } = useSortable({
-    id: row.original.id as UniqueIdentifier
-  })
+  const { attributes, listeners, transform, setNodeRef, isDragging } =
+    useSortable({
+      id: row.original.id as UniqueIdentifier
+    })
 
   return (
     <Table.Row
       ref={setNodeRef}
       css={{
         transform: CSS.Transform.toString(transform),
-        // Online examples apply the transition to all rows, but here it causes a bug where
-        // the displaced rows move a second time on drag end
-        // transition,
         zIndex: isDragging ? 5 : undefined
       }}
     >

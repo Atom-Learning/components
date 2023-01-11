@@ -28,9 +28,9 @@ const columns = [
 ]
 
 const data = [
-  { name: 'agatha', hobby: 'crossfit' },
-  { name: 'betty', hobby: 'acting' },
-  { name: 'chrissy', hobby: 'bare-knuckle boxing' }
+  { name: 'agatha', hobby: 'crossfit', id: 1 },
+  { name: 'betty', hobby: 'acting', id: 2 },
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 3 }
 ]
 
 const App = () => (
