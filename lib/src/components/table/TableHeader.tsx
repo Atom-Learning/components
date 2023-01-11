@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { useDataTable } from '../data-table'
 
 import { TableHeaderCell } from './TableHeaderCell'
 
@@ -33,11 +34,30 @@ const StyledTableHeader = styled('thead', {
   }
 })
 
-type TableHeaderProps = React.ComponentProps<typeof StyledTableHeader>
+type TableHeaderProps = React.ComponentProps<typeof StyledTableHeader> & {
+  numberOfStickyColumns?: number
+}
 
 export const TableHeader: React.FC<TableHeaderProps> = ({
   theme = 'primaryDark',
+  numberOfStickyColumns = 0,
+  css,
   ...rest
-}: TableHeaderProps) => <StyledTableHeader theme={theme} {...rest} />
+}: TableHeaderProps) => (
+  <StyledTableHeader
+    theme={theme}
+    css={{
+      ...(numberOfStickyColumns === 1 && {
+        '& th:nth-of-type(1)': {
+          position: 'sticky',
+          left: '0',
+          zIndex: '2'
+        }
+      }),
+      ...css
+    }}
+    {...rest}
+  />
+)
 
 TableHeader.displayName = 'TableHeader'

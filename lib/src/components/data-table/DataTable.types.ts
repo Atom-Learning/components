@@ -32,4 +32,6 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
+  numberOfStickyColumns: number
+  setNumberOfStickyColumns: (value: number) => void
 }

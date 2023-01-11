@@ -102,6 +102,9 @@ export const DataTableProvider = ({
       : []
   )
 
+  const [numberOfStickyColumns, setNumberOfStickyColumns] =
+    React.useState<number>(0)
+
   const applyPagination = React.useCallback(() => {
     setIsPaginated(true)
   }, [])
@@ -182,7 +185,9 @@ export const DataTableProvider = ({
       getTotalRows,
       isSortable,
       asyncDataState,
-      runAsyncData
+      runAsyncData,
+      numberOfStickyColumns,
+      setNumberOfStickyColumns
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

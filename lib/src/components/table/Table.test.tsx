@@ -119,4 +119,31 @@ describe(`Table component`, () => {
     )
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders with sticky columns', async () => {
+    const numberOfStickyColumns = 1
+    const { container } = render(
+      <Table.StickyColumnsContainer
+        numberOfStickyColumns={numberOfStickyColumns}
+      >
+        <Table css={{ height: '100px', width: '300px' }}>
+          <Table.Header numberOfStickyColumns={numberOfStickyColumns}>
+            <Table.Row>
+              <Table.HeaderCell>Column A</Table.HeaderCell>
+              <Table.HeaderCell>Column B</Table.HeaderCell>
+              <Table.HeaderCell>Column C</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body numberOfStickyColumns={numberOfStickyColumns}>
+            <Table.Row>
+              <Table.Cell>This is text</Table.Cell>
+              <Table.Cell>This is text</Table.Cell>
+              <Table.Cell>This is text</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </Table.StickyColumnsContainer>
+    )
+    expect(container).toMatchSnapshot()
+  })
 })

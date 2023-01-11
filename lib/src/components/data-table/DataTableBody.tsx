@@ -13,10 +13,14 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
   striped = false,
   ...props
 }) => {
-  const { getRowModel } = useDataTable()
+  const { getRowModel, numberOfStickyColumns } = useDataTable()
 
   return (
-    <Table.Body {...props} striped={striped}>
+    <Table.Body
+      {...props}
+      numberOfStickyColumns={numberOfStickyColumns}
+      striped={striped}
+    >
       {getRowModel().rows.map((row) => {
         return <DataTable.Row row={row} key={row.id} />
       })}

@@ -9,6 +9,7 @@ import { TableFooterCell } from './TableFooterCell'
 import { TableHeader } from './TableHeader'
 import { TableHeaderCell } from './TableHeaderCell'
 import { TableRow } from './TableRow'
+import { TableStickyColumnsContainer } from './TableStickyColumnsContainer'
 
 type TableSubComponents = {
   Body: typeof TableBody
@@ -18,6 +19,7 @@ type TableSubComponents = {
   Header: typeof TableHeader
   HeaderCell: typeof TableHeaderCell
   Row: typeof TableRow
+  StickyColumnsContainer: typeof TableStickyColumnsContainer
 }
 
 const StyledTable = styled('table', {
@@ -70,5 +72,6 @@ Table.FooterCell = TableFooterCell
 Table.Header = TableHeader
 Table.HeaderCell = TableHeaderCell
 Table.Row = TableRow
+Table.StickyColumnsContainer = TableStickyColumnsContainer
 
 Table.displayName = 'Table'

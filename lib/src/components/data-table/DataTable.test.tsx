@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {
+  fireEvent,
   render,
   screen,
   waitFor,
@@ -594,5 +595,37 @@ describe('DataTable server-side', () => {
       sortDirection: SORT_DIRECTION,
       globalFilter: ''
     })
+  })
+})
+
+describe('DataTable sticky columns', () => {
+  it('renders', () => {
+    const { container } = render(
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.StickyColumnsContainer>
+            <DataTable.Table />
+          </DataTable.StickyColumnsContainer>
+        </DataTable>
+      </Wrapper>
+    )
+    expect(container).toMatchSnapshot()
+  })
+
+  it('allows scrolling and still see the first column', async () => {
+    render(
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.StickyColumnsContainer>
+            <DataTable.Table />
+          </DataTable.StickyColumnsContainer>
+        </DataTable>
+      </Wrapper>
+    )
+
+    fireEvent.scroll(screen.getByRole('scrollbar'), {
+      target: { scrollY: 100 }
+    })
+    expect(await screen.findByText('name')).toBeVisible()
   })
 })
