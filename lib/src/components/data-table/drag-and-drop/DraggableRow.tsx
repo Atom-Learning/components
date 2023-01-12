@@ -32,7 +32,6 @@ export const DraggableRow: React.FC<DataTableDraggableRowProps> = ({ row }) => {
         if (i === 0) {
           return (
             <Table.Cell key={cell.id}>
-              {/* TODO: decide on label */}
               <Handle
                 {...attributes}
                 {...listeners}
