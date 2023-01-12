@@ -13,23 +13,9 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {
@@ -169,23 +155,9 @@ exports[`Avatar component renders an icon avatar 1`] = `
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {
@@ -315,23 +287,9 @@ exports[`Avatar component renders an image avatar 1`] = `
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {
@@ -354,7 +312,7 @@ exports[`Avatar component renders an image avatar 1`] = `
   >
     <img
       alt="somobody's avatar"
-      class="c-eWgOGC c-jxOsbj"
+      class="c-iSBxEZ c-jxOsbj"
       src="path-to-image"
     />
   </div>
@@ -374,23 +332,9 @@ exports[`Avatar component renders an inital avatar 1`] = `
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {
@@ -515,23 +459,9 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {
@@ -654,23 +584,9 @@ exports[`Avatar component renders the initial of the name when the src of the im
     overflow: hidden;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-jxOsbj {

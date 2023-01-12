@@ -16,10 +16,11 @@ exports[`EmptyState component renders a component 1`] = `
     margin-bottom: 0;
   }
 
-  .c-ksLbIG {
+  .c-eyOYLV {
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     font-weight: 600;
+    margin: 0;
   }
 
   .c-dyvMgW {
@@ -44,7 +45,7 @@ exports[`EmptyState component renders a component 1`] = `
     padding: var(--space-3);
   }
 
-  .c-ksLbIG-gNjhJG-size-sm {
+  .c-eyOYLV-gNjhJG-size-sm {
     font-size: var(--fontSizes-md);
     margin-bottom: var(--space-3);
   }
@@ -77,7 +78,7 @@ exports[`EmptyState component renders a component 1`] = `
     class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
   >
     <h2
-      class="c-ksLbIG c-ksLbIG-gNjhJG-size-sm"
+      class="c-eyOYLV c-eyOYLV-gNjhJG-size-sm"
     >
       No users found!
     </h2>

@@ -2,40 +2,40 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-cZCiNa > *:not(:first-child) {
+  .c-NbSdr > *:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-cZCiNa > *:not(:last-child) {
+  .c-NbSdr > *:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-cZCiNa > .c-jryFOR {
+  .c-NbSdr > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-cZCiNa > .c-dyvMgW {
+  .c-NbSdr > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-cZCiNa > .c-iQukjL {
+  .c-NbSdr > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-cZCiNa > .c-fNKiiB {
+  .c-NbSdr > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-cZCiNa > .c-eWgOGC {
+  .c-NbSdr > .c-iSBxEZ {
     display: block;
   }
 
-  .c-cZCiNa > .c-eWgOGC:not(:first-child) {
+  .c-NbSdr > .c-iSBxEZ:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-cZCiNa > .c-eWgOGC:not(:last-child) {
+  .c-NbSdr > .c-iSBxEZ:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -144,23 +144,9 @@ exports[`MarkdownContent component renders 1`] = `
     content: none;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 }
 
@@ -354,7 +340,7 @@ exports[`MarkdownContent component renders 1`] = `
 
 <div>
   <div
-    class="c-cZCiNa"
+    class="c-NbSdr"
   >
     <hr
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
@@ -727,14 +713,14 @@ line 3 of code
     >
       <img
         alt="Minion"
-        class="c-eWgOGC"
+        class="c-iSBxEZ"
         src="https://octodex.github.com/images/minion.png"
       />
       
 
       <img
         alt="Stormtroopocat"
-        class="c-eWgOGC"
+        class="c-iSBxEZ"
         src="https://octodex.github.com/images/stormtroopocat.jpg"
       />
       "

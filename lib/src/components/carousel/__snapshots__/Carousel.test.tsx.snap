@@ -39,23 +39,9 @@ exports[`Carousel component renders 1`] = `
     color: var(--colors-tonal100);
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 
   .c-bemsGI {
@@ -249,7 +235,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-eWgOGC"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -271,7 +257,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-eWgOGC"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -293,7 +279,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-eWgOGC"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
@@ -315,7 +301,7 @@ exports[`Carousel component renders 1`] = `
                 >
                   <img
                     alt=""
-                    class="c-eWgOGC"
+                    class="c-iSBxEZ"
                     src="https://placekitten.com/200/300"
                   />
                 </div>
