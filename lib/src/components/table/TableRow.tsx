@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-const StyledRow = styled('tr', {
+export const StyledRow = styled('tr', {
   bg: 'unset'
 })
 
