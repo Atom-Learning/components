@@ -44,9 +44,9 @@ const columns = [
 ]
 
 const data = [
-  { name: 'chrissy', hobby: 'bare-knuckle boxing', userId: 1 },
-  { name: 'agatha', hobby: 'crossfit', userId: 2 },
-  { name: 'betty', hobby: 'acting', userId: 3 }
+  { name: 'chrissy', hobby: 'bare-knuckle boxing' },
+  { name: 'agatha', hobby: 'crossfit' },
+  { name: 'betty', hobby: 'acting' }
 ]
 ```
 
@@ -57,12 +57,12 @@ There are basically two ways to use `DataTable` to build a table from this confi
 The following two examples are exactly equivalent in their output. The second example is included to demonstrate what `DataTable`'s subcomponents do: they bundle up UI components and logic to provide useful defaults. They exist at various levels of abstraction, e.g. `DataTable.Table` renders `DataTable.Body`, which renders `DataTable.Row`. This means that you can use whichever component provides useful functionality for your use case while still being low-level enough to let you combine it with your own custom logic.
 
 ```tsx
-<DataTable columns={columns} data={data} idColumn='userId'>
+<DataTable columns={columns} data={data} >
   <DataTable.Table sortable css={{mb: '$4'}}/>
   <DataTable.Pagination pageSize={5} />
 </DataTable>
 
-<DataTable columns={columns} data={data} idColumn='userId'>
+<DataTable columns={columns} data={data} >
   <Table>
     <DataTable.Head sortable />
     <DataTable.Body />
@@ -251,4 +251,26 @@ Note that column sorting conflicts with drag and drop behaviour. In any context 
 
 #### Row IDs
 
-Drag and drop will break if each row doesn't have a unique ID. By default, `DataTable` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table.
+Drag and drop will break if each row doesn't have a unique ID. By default, `DataTable` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
+
+```tsx
+const data = [
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+  { name: 'agatha', hobby: 'crossfit', id: 2 },
+  { name: 'betty', hobby: 'acting', id: 3 }
+]`
+```
+
+Or you could provide this data and specify the id column accordingly:
+
+```tsx
+const data = [
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', userId: 1 },
+  { name: 'agatha', hobby: 'crossfit', userId: 2 },
+  { name: 'betty', hobby: 'acting', userId: 3 }
+]`
+
+<DataTable idColumn="userId">
+  // ...
+</DataTable>
+```
