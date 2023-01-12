@@ -8,8 +8,12 @@ import {
   useSensors
 } from '@dnd-kit/core'
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
-import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable'
-
+import {
+  arrayMove,
+  sortableKeyboardCoordinates,
+  SortableContext,
+  verticalListSortingStrategy
+} from '@dnd-kit/sortable'
 import * as React from 'react'
 
 export const DragAndDropContainer: React.FC = ({ children }) => {
@@ -44,7 +48,9 @@ export const DragAndDropContainer: React.FC = ({ children }) => {
       onDragEnd={handleDragEnd}
       modifiers={[restrictToVerticalAxis]}
     >
-      {children}
+      <SortableContext items={rowOrder} strategy={verticalListSortingStrategy}>
+        {children}
+      </SortableContext>
     </DndContext>
   )
 }
