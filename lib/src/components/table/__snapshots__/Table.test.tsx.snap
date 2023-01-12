@@ -67,11 +67,11 @@ exports[`Table component renders 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 }
@@ -101,7 +101,7 @@ exports[`Table component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gbDJOS-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -197,11 +197,11 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -241,7 +241,7 @@ exports[`Table component renders with a themed header 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gbDJOS-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -337,11 +337,11 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -377,7 +377,7 @@ exports[`Table component renders with size set to lg 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gbDJOS-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -473,11 +473,11 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(odd) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gbDJOS-striped-true [object Object]:nth-child(even) {
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
     background: var(--colors-tonal50);
   }
 
@@ -513,7 +513,7 @@ exports[`Table component renders with square corners 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gbDJOS-striped-true"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
