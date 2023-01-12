@@ -43,8 +43,6 @@ export const DragAndDropContainer: React.FC = ({ children }) => {
     <DndContext
       sensors={sensors}
       collisionDetection={closestCenter}
-      onDragStart={() => console.log('start')}
-      onDragMove={() => console.log('move')}
       onDragEnd={handleDragEnd}
       modifiers={[restrictToVerticalAxis]}
     >
