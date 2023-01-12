@@ -10,6 +10,9 @@ export const StyledHandle = styled(ActionIcon, {
   variants: {
     isDragging: {
       true: {
+        cursor: 'grabbing'
+      },
+      false: {
         cursor: 'grab'
       }
     }

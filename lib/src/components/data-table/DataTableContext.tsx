@@ -10,38 +10,27 @@ import {
 
 import type { UniqueIdentifier } from '@dnd-kit/core'
 
-import type {
-  VisibilityTableState,
-  ColumnOrderTableState,
-  ColumnPinningTableState,
-  FiltersTableState,
-  SortingTableState,
-  ExpandedTableState,
-  GroupingTableState,
-  ColumnSizingTableState,
-  PaginationTableState,
-  RowSelectionTableState,
-  SortingState,
-  PaginationState,
-  SortDirection
-} from '@tanstack/react-table'
+import type { PaginationState } from '@tanstack/react-table'
 import {
   DataTableContextType,
   TAsyncDataOptions,
   TAsyncDataResult,
+  TDefaultSort,
   AsyncDataState,
   TGetAsyncData,
   TableData,
   InitialState
 } from './DataTable.types'
 import { getNewAsyncData } from './getNewAsyncData'
+import { useSortByColumn } from './useSorting'
+import { usePagination } from './usePagination'
 
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
-type TableProviderProps = {
+type DataTableProviderProps = {
   columns
-  defaultSort?: { column: string; direction: SortDirection }
+  defaultSort?: TDefaultSort
   children: React.ReactNode
   dragAndDrop?:
     | boolean
@@ -60,8 +49,6 @@ type TableProviderProps = {
   | { data?: never; getAsyncData: TGetAsyncData }
 )
 
-const defaultPaginationState: PaginationState = { pageIndex: 0, pageSize: 10 }
-
 export const DataTableProvider = ({
   columns,
   data: dataProp = [],
@@ -71,23 +58,28 @@ export const DataTableProvider = ({
   initialState = undefined,
   idColumn = 'id',
   children
-}: TableProviderProps): JSX.Element => {
+}: DataTableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
     total: dataProp?.length ?? 0
   })
+  const { isPaginated, applyPagination, paginationState, setPaginationState } =
+    usePagination(initialState?.pagination)
 
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(
-    !!initialState?.pagination
-  )
   const rowOrder = React.useMemo(
-    () => data?.results.map((row, i) => row[idColumn] as UniqueIdentifier),
+    () => data?.results.map((row) => row[idColumn] as UniqueIdentifier),
     [data]
   )
   const isDragAndDrop =
     typeof dragAndDrop === 'boolean'
       ? dragAndDrop
       : dragAndDrop?.active ?? false
+
+  const onDragAndDrop =
+    typeof dragAndDrop === 'boolean'
+      ? undefined
+      : dragAndDrop?.onChange ?? undefined
+
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
     AsyncDataState.NONE
   )
@@ -100,29 +92,8 @@ export const DataTableProvider = ({
 
   const [globalFilter, setGlobalFilter] = React.useState<string>('')
 
-  const [paginationState, setPagination] = React.useState<
-    PaginationState | undefined
-  >({
-    ...defaultPaginationState,
-    ...initialState?.pagination
-  })
-
-  const [isSortable, setIsSortable] = React.useState<boolean>(false)
-
-  const [sorting, setSorting] = React.useState<SortingState>(
-    defaultSort
-      ? [
-          {
-            id: defaultSort.column,
-            desc: defaultSort.direction === 'desc'
-          }
-        ]
-      : []
-  )
-
-  const applyPagination = React.useCallback(() => {
-    setIsPaginated(true)
-  }, [])
+  const { setIsSortable, isSortable, sorting, setSorting } =
+    useSortByColumn(defaultSort)
 
   const runAsyncData = React.useCallback(
     async (overrideAsyncDataOptions: Partial<TAsyncDataOptions>) => {
@@ -205,7 +176,7 @@ export const DataTableProvider = ({
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
     getFilteredRowModel: getFilteredRowModel(),
-    onPaginationChange: isPaginated ? setPagination : undefined,
+    onPaginationChange: isPaginated ? setPaginationState : undefined,
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter
   })
@@ -224,7 +195,8 @@ export const DataTableProvider = ({
       moveRow,
       rowOrder,
       asyncDataState,
-      runAsyncData
+      runAsyncData,
+      onDragAndDrop
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

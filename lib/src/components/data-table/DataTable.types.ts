@@ -80,3 +80,5 @@ export type InitialState = Partial<
     PaginationTableState &
     RowSelectionTableState
 >
+
+export type TDefaultSort = { column: string; direction: SortDirection }
