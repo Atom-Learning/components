@@ -274,8 +274,6 @@ const data = [
 ]`
 
 <DataTable data={data} columns={columns}>
-  <DataTable.DragAndDropTable idColumn="userId" onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}>
-    <DataTable.Table />
-  </ DataTable.DragAndDropTable>
+  <DataTable.DragAndDropTable idColumn="userId" onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)} />
 </DataTable>
 ```
