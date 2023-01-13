@@ -22,7 +22,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   css,
   ...props
 }) => {
-  const { asyncDataState, isDragAndDrop } = useDataTable()
+  const { asyncDataState } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
 
   return (
