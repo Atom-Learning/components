@@ -250,7 +250,7 @@ Note that column sorting conflicts with drag and drop behaviour. In any context 
 
 #### Row IDs
 
-Drag and drop will break if each row doesn't have a unique ID. By default, `DataTable` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
+Drag-and-drop functionality relies on each table row having a unique ID. `DataTable.DragAndDropContainer` will throw an error if your don't provide unique IDs for each row in the `data` provided to `DataTable`, so you should consider wrapping your table in an `ErrorBoundary` to reduce the impact on your user if there is a problem with your data. By default, `DataTable.DragAndDropContainer` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
 
 ```tsx
 const data = [
@@ -258,6 +258,12 @@ const data = [
   { name: 'agatha', hobby: 'crossfit', id: 2 },
   { name: 'betty', hobby: 'acting', id: 3 }
 ]`
+
+<DataTable data={data} columns={columns}>
+  <DataTable.DragAndDropContainer>
+    <DataTable.Table />
+  </ DataTable.DragAndDropContainer>
+</DataTable>
 ```
 
 Or you could provide this data and specify the id column accordingly:
@@ -269,7 +275,9 @@ const data = [
   { name: 'betty', hobby: 'acting', userId: 3 }
 ]`
 
-<DataTable idColumn="userId">
-  // ...
+<DataTable data={data} columns={columns}>
+  <DataTable.DragAndDropContainer idColumn="userId">
+    <DataTable.Table />
+  </ DataTable.DragAndDropContainer>
 </DataTable>
 ```

@@ -34,7 +34,7 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
       data.results.map((row) => {
         const id = row[idColumn]
         if (id === undefined)
-          console.error(
+          throw new Error(
             'To ensure drag-and-drop works correctly, please ensure that each row has a unique ID. Use the `id` property or pass DataTable an `idColumn` prop that defines the ID property on the rows.'
           )
         return id as UniqueIdentifier
