@@ -19,18 +19,20 @@ export const StyledHandle = styled(ActionIcon, {
   }
 })
 
-export const Handle: React.ForwardRefExoticComponent<
-  Omit<React.ComponentProps<typeof StyledHandle>, 'children'>
-> = React.forwardRef(({ isDragging, size, ...rest }, ref) => {
-  return (
-    <StyledHandle
-      ref={ref}
-      isDragging={isDragging}
-      appearance="simple"
-      size={size}
-      {...rest}
-    >
-      <Icon is={DragHandle} size={size} />
-    </StyledHandle>
-  )
-})
+type HandleProps = Omit<React.ComponentProps<typeof StyledHandle>, 'children'> &
+  Pick<React.ComponentProps<typeof Icon>, 'size'>
+
+export const Handle: React.ForwardRefExoticComponent<HandleProps> =
+  React.forwardRef(({ isDragging, size, ...rest }, ref) => {
+    return (
+      <StyledHandle
+        ref={ref}
+        isDragging={isDragging}
+        appearance="simple"
+        size={size}
+        {...rest}
+      >
+        <Icon is={DragHandle} size={size} />
+      </StyledHandle>
+    )
+  })
