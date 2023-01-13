@@ -20,7 +20,7 @@ type TAvatarIconProps = {
 export const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
   const rootContext = React.useContext(AvatarRootContext)
   const { size } = rootContext
-  const iconSize = React.processDragEndEvent(
+  const iconSize = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
     [size]
   )

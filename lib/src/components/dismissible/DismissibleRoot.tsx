@@ -23,7 +23,7 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
   disabled
 }) => {
   const [isDismissed, setIsDismissed] = React.useState(false)
-  const value = React.processDragEndEvent<IDismissibleRootContext>(
+  const value = React.useMemo<IDismissibleRootContext>(
     () => ({ disabled, isDismissed, setIsDismissed }),
     [disabled, isDismissed]
   )
