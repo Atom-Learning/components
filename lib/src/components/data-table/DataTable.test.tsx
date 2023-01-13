@@ -116,10 +116,12 @@ describe('DataTable component', () => {
   })
 
   it('Renders drag handles for draggable table rows', () => {
-   const {container} =  render(
-        <DataTable columns={columns} data={data} dragAndDrop>
-          <DataTable.Table  />
-        </DataTable>
+    const { container } = render(
+      <DataTable columns={columns} data={data}>
+        <DataTable.DragAndDropContainer>
+          <DataTable.Table />
+        </DataTable.DragAndDropContainer>
+      </DataTable>
     )
 
     expect(container).toMatchSnapshot()
