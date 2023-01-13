@@ -41,6 +41,7 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
       }),
     [data]
   )
+
   React.useEffect(() => {
     setIsDragAndDrop(true)
   }, [])
