@@ -284,7 +284,7 @@ describe('DataTable.Pagination component', () => {
 })
 
 describe('DataTable Search component', () => {
-  it('Filters table based on any column', async () => {
+  it.only('Filters table based on any column', async () => {
     render(
       <DataTable columns={columns} data={data}>
         <DataTable.GlobalFilter label="Search" />

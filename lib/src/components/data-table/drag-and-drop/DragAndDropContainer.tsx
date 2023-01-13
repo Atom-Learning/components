@@ -56,13 +56,9 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
   onChange = undefined,
   children
 }) => {
-  const { data, setData, setIsDragAndDrop } = useDataTable()
+  const { data, setData } = useDataTable()
 
   const rowOrder = React.useMemo(() => getRowOrder(data, idColumn), [data])
-
-  React.useEffect(() => {
-    setIsDragAndDrop(true)
-  }, [])
 
   const sensors = useSensors(
     useSensor(PointerSensor),

@@ -52,7 +52,6 @@ export const DataTableProvider = ({
   })
   const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
-  const [isDragAndDrop, setIsDragAndDrop] = React.useState(false)
 
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
     AsyncDataState.NONE
@@ -140,8 +139,6 @@ export const DataTableProvider = ({
       applyPagination,
       getTotalRows,
       isSortable,
-      isDragAndDrop,
-      setIsDragAndDrop,
       asyncDataState,
       runAsyncData
     }

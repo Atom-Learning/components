@@ -47,8 +47,6 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
-  isDragAndDrop: boolean
-  setIsDragAndDrop: React.Dispatch<React.SetStateAction<boolean>>
   data: TAsyncDataResult
   /**
    * Directly update the data array that the table rows are built from.

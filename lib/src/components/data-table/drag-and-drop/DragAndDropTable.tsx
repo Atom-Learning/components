@@ -44,7 +44,7 @@ export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
         }}
       >
         <DataTable.Head theme={theme} sortable={sortable} />
-        <DataTable.Body striped={striped} />
+        <DragAndDropTable striped={striped} />
       </Table>
     </DragAndDropContainer>
   )
