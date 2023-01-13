@@ -57,12 +57,12 @@ There are basically two ways to use `DataTable` to build a table from this confi
 The following two examples are exactly equivalent in their output. The second example is included to demonstrate what `DataTable`'s subcomponents do: they bundle up UI components and logic to provide useful defaults. They exist at various levels of abstraction, e.g. `DataTable.Table` renders `DataTable.Body`, which renders `DataTable.Row`. This means that you can use whichever component provides useful functionality for your use case while still being low-level enough to let you combine it with your own custom logic.
 
 ```tsx
-<DataTable columns={columns} data={data} >
+<DataTable columns={columns} data={data}>
   <DataTable.Table sortable css={{mb: '$4'}}/>
   <DataTable.Pagination pageSize={5} />
 </DataTable>
 
-<DataTable columns={columns} data={data} >
+<DataTable columns={columns} data={data}>
   <Table>
     <DataTable.Head sortable />
     <DataTable.Body />
@@ -80,7 +80,7 @@ Note also that `useDataTable` can only be called by a child component of `DataTa
 Note that if you update the value of the `data` prop, it will reset the state of the table. This is useful if you are manipulating the data outside the context of the table.
 
 ```tsx
-<DataTable columns={columns} data={data} idColumn="userId">
+<DataTable columns={columns} data={data}>
   {() => {
     const { getHeaderGroups, getRowModel, setGlobalFilter, getState } =
       useDataTable()
@@ -260,9 +260,7 @@ const data = [
 ]`
 
 <DataTable data={data} columns={columns}>
-  <DataTable.DragAndDropContainer>
-    <DataTable.Table />
-  </ DataTable.DragAndDropContainer>
+  <DataTable.DragAndDropTable onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}/>
 </DataTable>
 ```
 
@@ -276,8 +274,8 @@ const data = [
 ]`
 
 <DataTable data={data} columns={columns}>
-  <DataTable.DragAndDropContainer idColumn="userId">
+  <DataTable.DragAndDropTable idColumn="userId" onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}>
     <DataTable.Table />
-  </ DataTable.DragAndDropContainer>
+  </ DataTable.DragAndDropTable>
 </DataTable>
 ```
