@@ -30,7 +30,7 @@ export const StyledChipIcon = styled(Icon, {
 export const ChipIcon: typeof Icon = ({ ...props }) => {
   const rootContext = React.useContext(ChipRootContext)
   const { size } = rootContext
-  const iconSize = React.useMemo(
+  const iconSize = React.processDragEndEvent(
     () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
     [size]
   )
@@ -101,7 +101,7 @@ export const ChipRootProvider: React.FC<TChipRootProviderProps> = ({
   size,
   children
 }) => {
-  const value = React.useMemo<TChipRootContext>(() => ({ size }), [size])
+  const value = React.processDragEndEvent<TChipRootContext>(() => ({ size }), [size])
   return (
     <ChipRootContext.Provider value={value}>
       {children}

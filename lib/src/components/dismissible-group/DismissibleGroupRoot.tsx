@@ -19,7 +19,7 @@ export const DismissibleGroupProvider: React.FC<IDismissibleGroupProps> = ({
   disabled,
   onDismiss
 }) => {
-  const value = React.useMemo<IDismissibleGroupContext>(
+  const value = React.processDragEndEvent<IDismissibleGroupContext>(
     () => ({ disabled, onDismiss }),
     [disabled, onDismiss]
   )

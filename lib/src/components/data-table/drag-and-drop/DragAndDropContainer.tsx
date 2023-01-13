@@ -26,10 +26,10 @@ type DragAndDropContainerProps = {
 
 // These two funcs are exported for testing purposes. This is a non-ideal workaround to the lack of support for drag-and-drop events
 // in the unit test JS environment.
-export const updateData = (
-  rowOrder: Array<UniqueIdentifier>,
-  data: TAsyncDataResult,
+export const processDragEndEvent = (
   event: { active: { id: UniqueIdentifier }; over: { id: UniqueIdentifier } },
+  data: TAsyncDataResult,
+  rowOrder: Array<UniqueIdentifier>,
   idColumn: UniqueIdentifier,
   onChange?: (oldIndex: number, newIndex: number, newData: TableData) => void
 ) => {
@@ -50,6 +50,7 @@ export const getRowOrder = (data: TAsyncDataResult, idColumn: string) =>
       )
     return id as UniqueIdentifier
   })
+
 export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
   idColumn = 'id',
   onChange = undefined,
@@ -74,7 +75,13 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
     const { active, over } = event
     if (active.id && over?.id && active.id !== over?.id) {
       setData((data) => {
-        return updateData(rowOrder, data, { active, over }, idColumn, onChange)
+        return processDragEndEvent(
+          { active, over },
+          data,
+          rowOrder,
+          idColumn,
+          onChange
+        )
       })
     }
   }

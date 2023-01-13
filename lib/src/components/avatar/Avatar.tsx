@@ -74,7 +74,7 @@ export const AvatarRootProvider: React.FC<TAvatarProps> = ({
   name,
   size
 }) => {
-  const value = React.useMemo<TAvatarRootContext>(
+  const value = React.processDragEndEvent<TAvatarRootContext>(
     () => ({ name, size }),
     [name, size]
   )

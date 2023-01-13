@@ -12,7 +12,10 @@ import { DataTable, useDataTable } from '.'
 import { Tooltip } from '../tooltip'
 import { Text } from '../text'
 import { Button } from '../button'
-import { updateData, getRowOrder } from './drag-and-drop/DragAndDropContainer'
+import {
+  processDragEndEvent,
+  getRowOrder
+} from './drag-and-drop/DragAndDropContainer'
 import { DragEndEvent } from '@dnd-kit/core'
 import { TAsyncDataResult } from './DataTable.types'
 
@@ -135,7 +138,7 @@ describe('DataTable component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it.only('Updates data when row is dragged and dropped', () => {
+  it('Updates data when row is dragged and dropped', () => {
     const onChange = jest.fn()
 
     // render a button that swaps the first and second rows on click
@@ -152,12 +155,18 @@ describe('DataTable component', () => {
         }
       }
 
-      const mockDragAndDrop = () => {
-        updateData(rowOrder, data, mockDragEndEvent, idColumn, onChange)
-      }
-
       return (
-        <button onClick={mockDragAndDrop}>
+        <button
+          onClick={() => {
+            processDragEndEvent(
+              mockDragEndEvent,
+              data,
+              rowOrder,
+              idColumn,
+              onChange
+            )
+          }}
+        >
           Click to fake a drag-and-drop event
         </button>
       )

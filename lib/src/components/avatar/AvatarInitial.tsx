@@ -17,7 +17,7 @@ const toTextSize = {
 export const AvatarInitial: React.FC<Record<string, never>> = () => {
   const rootContext = React.useContext(AvatarRootContext)
   const { name, size } = rootContext
-  const textSize = React.useMemo(
+  const textSize = React.processDragEndEvent(
     () => overrideStitchesVariantValue(size, (s) => toTextSize[s]),
     [size]
   )
