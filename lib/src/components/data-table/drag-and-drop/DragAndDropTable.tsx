@@ -7,6 +7,7 @@ import { useDataTable } from '../DataTableContext'
 import { DataTableLoading } from '../DataTableLoading'
 import { DragAndDropContainer } from './DragAndDropContainer'
 import type { DataTableTableProps } from '../DataTableTable'
+import { DragAndDropTableBody } from './DragAndDropTableBody'
 
 type DragAndDropTableProps = DataTableTableProps & {
   idColumn?: string
@@ -44,7 +45,7 @@ export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
         }}
       >
         <DataTable.Head theme={theme} sortable={sortable} />
-        <DragAndDropTable striped={striped} />
+        <DragAndDropTableBody striped={striped} />
       </Table>
     </DragAndDropContainer>
   )

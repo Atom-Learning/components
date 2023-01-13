@@ -9,7 +9,7 @@ type DataTableBodyProps = Omit<
   'children'
 >
 
-export const DataTableBody: React.FC<DataTableBodyProps> = ({
+export const DragAndDropTableBody: React.FC<DataTableBodyProps> = ({
   striped = false,
   ...props
 }) => {

@@ -45,7 +45,7 @@ const App = () => (
     >
       <Box css={{ height: '300px', width: '700px' }}>
         <DataTable columns={columns} data={data}>
-          <DataTable.GlobalFilter />
+          {/* <DataTable.GlobalFilter /> */}
 
           <DataTable.DragAndDropTable
             sortable
@@ -57,7 +57,7 @@ const App = () => (
             }}
           />
 
-          <DataTable.Pagination pageSize={5} />
+          {/* <DataTable.Pagination pageSize={5} /> */}
         </DataTable>
       </Box>
     </Flex>
