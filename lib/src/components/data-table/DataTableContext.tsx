@@ -32,18 +32,7 @@ type DataTableProviderProps = {
   columns
   defaultSort?: TDefaultSort
   children: React.ReactNode
-  dragAndDrop?:
-    | boolean
-    | {
-        active: boolean
-        onChange: (
-          oldIndex: number,
-          newIndex: number,
-          newData: TableData
-        ) => void
-      }
   initialState?: InitialState
-  idColumn?: string
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -52,11 +41,9 @@ type DataTableProviderProps = {
 export const DataTableProvider = ({
   columns,
   data: dataProp = [],
-  dragAndDrop,
   getAsyncData,
   defaultSort,
   initialState = undefined,
-  idColumn = 'id',
   children
 }: DataTableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
@@ -65,30 +52,11 @@ export const DataTableProvider = ({
   })
   const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
-
-  const rowOrder = React.useMemo(
-    () => data?.results.map((row) => row[idColumn] as UniqueIdentifier),
-    [data]
-  )
-  const isDragAndDrop =
-    typeof dragAndDrop === 'boolean'
-      ? dragAndDrop
-      : dragAndDrop?.active ?? false
-
-  const onDragAndDrop =
-    typeof dragAndDrop === 'boolean'
-      ? undefined
-      : dragAndDrop?.onChange ?? undefined
+  const [isDragAndDrop, setIsDragAndDrop] = React.useState(false)
 
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
     AsyncDataState.NONE
   )
-
-  if (isDragAndDrop && rowOrder.some((id) => id === undefined)) {
-    console.error(
-      'To ensure drag-and-drop works correctly, please ensure that each row has a unique ID. Use the `id` property or pass DataTable an `idColumn` prop that defines the ID property on the rows.'
-    )
-  }
 
   const [globalFilter, setGlobalFilter] = React.useState<string>('')
 
@@ -185,18 +153,16 @@ export const DataTableProvider = ({
     return {
       ...table,
       data,
-      idColumn,
       setData,
       setIsSortable,
       applyPagination,
       getTotalRows,
       isSortable,
       isDragAndDrop,
+      setIsDragAndDrop,
       moveRow,
-      rowOrder,
       asyncDataState,
-      runAsyncData,
-      onDragAndDrop
+      runAsyncData
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

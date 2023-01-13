@@ -47,15 +47,10 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
-  rowOrder: Array<UniqueIdentifier>
-  idColumn: string
   isDragAndDrop: boolean
-  onDragAndDrop?: (
-    oldIndex: number,
-    newIndex: number,
-    newData: TableData
-  ) => void
+  setIsDragAndDrop: React.Dispatch<React.SetStateAction<boolean>>
   moveRow: (oldIndex: number, newIndex: number) => void
+  data: TAsyncDataResult
   /**
    * Directly update the data array that the table rows are built from.
    * This is useful when re-ordering rows, but is high-risk if you're not sure what you're doing!
