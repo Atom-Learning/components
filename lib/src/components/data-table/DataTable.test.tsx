@@ -129,9 +129,7 @@ describe('DataTable component', () => {
   it('Renders drag handles for draggable table rows', () => {
     const { container } = render(
       <DataTable columns={columns} data={data}>
-        <DataTable.DragAndDropContainer>
-          <DataTable.Table />
-        </DataTable.DragAndDropContainer>
+        <DataTable.DragAndDropTable />
       </DataTable>
     )
 
@@ -180,10 +178,8 @@ describe('DataTable component', () => {
           { name: 'betty', hobby: 'acting', id: 3 }
         ]}
       >
-        <DataTable.DragAndDropContainer>
-          <DataTable.Table />
-          <DragAndDropMock />
-        </DataTable.DragAndDropContainer>
+        <DataTable.DragAndDropTable />
+        <DragAndDropMock />
       </DataTable>
     )
 

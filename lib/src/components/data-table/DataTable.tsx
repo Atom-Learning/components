@@ -10,7 +10,7 @@ import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
 import { DataTableTable } from './DataTableTable'
-import { DragAndDropContainer } from './drag-and-drop'
+import { DragAndDropContainer, DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
@@ -27,11 +27,9 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    */
   DataCell: typeof DataTableDataCell
   /**
-   * Forces nested `DataTable.Row`s to render with drag handles and contains
-   * drag-and-drop implementation and logic for sorting rows on drop.
+   * Used in place of `DataTable.Table` to render a table with rows that the user can sort by drag-and-drop
    */
-  DragAndDropContainer: typeof DragAndDropContainer
-
+  DragAndDropTable: typeof DragAndDropTable
   /** Default global search implementation for `DataTable`
    *
    * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
@@ -112,7 +110,7 @@ export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
 
 DataTable.Body = DataTableBody
 DataTable.DataCell = DataTableDataCell
-DataTable.DragAndDropContainer = DragAndDropContainer
+DataTable.DragAndDropTable = DragAndDropTable
 DataTable.Head = DataTableHead
 DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Pagination = Pagination

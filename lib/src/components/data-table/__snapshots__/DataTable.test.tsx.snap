@@ -350,8 +350,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     width: var(--sizes-3);
   }
 
-  .c-dlcCnN-kZVtXJ-isDragging-true {
-    cursor: grabbing;
+  .c-dlcCnN-kbKHjH-isDragging-false {
+    cursor: grab;
   }
 }
 
@@ -458,9 +458,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     left: var(--space-1);
   }
 
-  .c-hjAYDb-ihemFPK-css {
+  .c-hjAYDb-iPJLV-css {
     transform: ;
-    z-index: 5;
+    z-index: ;
   }
 
   .c-dlcCnN-iAsWAM-css {
@@ -478,6 +478,15 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       <tr
         class="c-hjAYDb"
       >
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
+            id
+          </div>
+        </th>
         <th
           class="c-GSaiK c-GSaiK-igsmDXe-css"
         >
@@ -511,7 +520,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       class="c-PJLV c-PJLV-kqWICR-striped-false"
     >
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -520,9 +529,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -541,6 +549,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          1
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           chrissy
         </td>
         <td
@@ -557,7 +570,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -566,9 +579,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -587,6 +599,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          2
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           agatha
         </td>
         <td
@@ -603,7 +620,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -612,9 +629,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -633,6 +649,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          3
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           betty
         </td>
         <td
@@ -649,7 +670,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -658,9 +679,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -679,6 +699,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          4
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           denise
         </td>
         <td
@@ -695,7 +720,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -704,9 +729,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -725,6 +749,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          5
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           charlie
         </td>
         <td
@@ -741,7 +770,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -750,9 +779,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -771,6 +799,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          6
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           xena
         </td>
         <td
@@ -787,7 +820,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -796,9 +829,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -817,6 +849,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          7
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           rick
         </td>
         <td
@@ -833,7 +870,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -842,9 +879,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -863,6 +899,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          8
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           phillip
         </td>
         <td
@@ -879,7 +920,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -888,9 +929,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -909,6 +949,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          9
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           maurice
         </td>
         <td
@@ -925,7 +970,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -934,9 +979,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -955,6 +999,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          10
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           peter
         </td>
         <td
@@ -971,7 +1020,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -980,9 +1029,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1001,6 +1049,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          11
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           velma
         </td>
         <td
@@ -1017,7 +1070,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1026,9 +1079,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1047,6 +1099,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          12
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           max
         </td>
         <td
@@ -1063,7 +1120,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1072,9 +1129,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1093,6 +1149,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          13
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           maxine
         </td>
         <td
@@ -1109,7 +1170,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1118,9 +1179,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1139,6 +1199,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          14
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           siobhan
         </td>
         <td
@@ -1155,7 +1220,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1164,9 +1229,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1185,6 +1249,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          15
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           nelly
         </td>
         <td
@@ -1201,7 +1270,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1210,9 +1279,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1231,6 +1299,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          16
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           kris
         </td>
         <td
@@ -1247,7 +1320,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1256,9 +1329,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1277,6 +1349,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          17
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           tony
         </td>
         <td
@@ -1293,7 +1370,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb c-hjAYDb-iPJLV-css"
       >
         <td
           class="c-cCZzXk"
@@ -1302,9 +1379,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
             aria-label="drag and drop"
-            aria-pressed="true"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1323,6 +1399,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
               />
             </svg>
           </button>
+          18
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           tina
         </td>
         <td
@@ -1817,6 +1898,15 @@ exports[`DataTable component renders 1`] = `
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
+            id
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
             name
           </div>
         </th>
@@ -1849,6 +1939,11 @@ exports[`DataTable component renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          1
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           chrissy
         </td>
         <td
@@ -1867,6 +1962,11 @@ exports[`DataTable component renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          2
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -1891,6 +1991,11 @@ exports[`DataTable component renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          3
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           betty
         </td>
         <td
@@ -1909,6 +2014,11 @@ exports[`DataTable component renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          4
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -1933,6 +2043,11 @@ exports[`DataTable component renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          5
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           charlie
         </td>
         <td
@@ -1951,6 +2066,11 @@ exports[`DataTable component renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          6
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -1975,6 +2095,11 @@ exports[`DataTable component renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          7
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           rick
         </td>
         <td
@@ -1993,6 +2118,11 @@ exports[`DataTable component renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          8
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2017,6 +2147,11 @@ exports[`DataTable component renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          9
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           maurice
         </td>
         <td
@@ -2035,6 +2170,11 @@ exports[`DataTable component renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          10
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2511,8 +2651,8 @@ exports[`DataTable server-side renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dlcCnN-kZVtXJ-isDragging-true {
-    cursor: grabbing;
+  .c-dlcCnN-kbKHjH-isDragging-false {
+    cursor: grab;
   }
 
   .c-jBOHFZ-jIYkAt-size-md {
@@ -2645,9 +2785,9 @@ exports[`DataTable server-side renders 1`] = `
     left: var(--space-1);
   }
 
-  .c-hjAYDb-ihemFPK-css {
+  .c-hjAYDb-iPJLV-css {
     transform: ;
-    z-index: 5;
+    z-index: ;
   }
 
   .c-dlcCnN-iAsWAM-css {
@@ -2719,6 +2859,15 @@ exports[`DataTable server-side renders 1`] = `
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
+            id
+          </div>
+        </th>
+        <th
+          class="c-GSaiK c-GSaiK-igsmDXe-css"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+          >
             name
           </div>
         </th>
@@ -2751,6 +2900,11 @@ exports[`DataTable server-side renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          1
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           chrissy
         </td>
         <td
@@ -2769,6 +2923,11 @@ exports[`DataTable server-side renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          2
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2793,6 +2952,11 @@ exports[`DataTable server-side renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          3
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           betty
         </td>
         <td
@@ -2811,6 +2975,11 @@ exports[`DataTable server-side renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          4
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2835,6 +3004,11 @@ exports[`DataTable server-side renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          5
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           charlie
         </td>
         <td
@@ -2853,6 +3027,11 @@ exports[`DataTable server-side renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          6
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2877,6 +3056,11 @@ exports[`DataTable server-side renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          7
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           rick
         </td>
         <td
@@ -2895,6 +3079,11 @@ exports[`DataTable server-side renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          8
+        </td>
         <td
           class="c-cCZzXk"
         >
@@ -2919,6 +3108,11 @@ exports[`DataTable server-side renders 1`] = `
         <td
           class="c-cCZzXk"
         >
+          9
+        </td>
+        <td
+          class="c-cCZzXk"
+        >
           maurice
         </td>
         <td
@@ -2937,6 +3131,11 @@ exports[`DataTable server-side renders 1`] = `
       <tr
         class="c-hjAYDb"
       >
+        <td
+          class="c-cCZzXk"
+        >
+          10
+        </td>
         <td
           class="c-cCZzXk"
         >

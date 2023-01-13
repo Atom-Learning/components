@@ -13,7 +13,7 @@ type DragAndDropTableProps = DataTableTableProps & {
   onDragAndDrop?: (
     oldIndex: number,
     newIndex: number,
-    newData: TAsyncDataResult
+    newData: Record<string, unknown>[]
   ) => void
 }
 

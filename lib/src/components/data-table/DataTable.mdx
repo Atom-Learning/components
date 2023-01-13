@@ -244,7 +244,7 @@ If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be c
 
 ### Drag and drop
 
-The `DataTable.DragAndDropContainer` can be rendered as a child of `DataTable` and parent of `DataTable.Table` to allow users to reorder table rows via drag and drop. It takes an optional `onChange` prop which is a function that fires when rows have been re-ordered via drag-and-drop. Use this to sync those changes with external data sources.
+The `DataTable.DragAndDropTable` can be rendered in place of `DataTable.Table` to allow users to reorder table rows via drag and drop. It takes an optional `onDragAndDrop` prop which is a function that fires when rows have been re-ordered via drag-and-drop. Use this to sync those changes with external data sources.
 
 Note that column sorting conflicts with drag and drop behaviour. In any context where you allow drag and drop reordering, you probably want to disable column sorting (see User Sorting above). Similarly, you should probably disable pagination because users won't be able to drag rows across page boundaries.
 
