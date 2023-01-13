@@ -221,11 +221,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       animation-name: k-fvyGIa;
     }
 }
-
-  .c-dlcCnN {
-    color: inherit !important;
-    fill: currentColor;
-  }
 }
 
 @media  {
@@ -344,57 +339,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
-
-  .c-fDzwZw-elrktp-size-sm {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
-  }
-
-  .c-dlcCnN-kZVtXJ-isDragging-true {
-    cursor: grabbing;
-  }
-}
-
-@media  {
-  .c-fDzwZw-jpgoGt-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: var(--colors-primary);
-  }
-
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fDzwZw-cmVfvW-cv {
-    background: transparent;
-    color: var(--colors-primary);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
 }
 
 @media  {
@@ -457,15 +401,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     position: absolute;
     left: var(--space-1);
   }
-
-  .c-hjAYDb-ihemFPK-css {
-    transform: ;
-    z-index: 5;
-  }
-
-  .c-dlcCnN-iAsWAM-css {
-    display: inline-block;
-  }
 }
 
 <div>
@@ -511,36 +446,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       class="c-PJLV c-PJLV-kqWICR-striped-false"
     >
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           chrissy
         </td>
         <td
@@ -557,36 +467,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           agatha
         </td>
         <td
@@ -603,36 +488,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           betty
         </td>
         <td
@@ -649,36 +509,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           denise
         </td>
         <td
@@ -695,36 +530,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           charlie
         </td>
         <td
@@ -741,36 +551,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           xena
         </td>
         <td
@@ -787,36 +572,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           rick
         </td>
         <td
@@ -833,36 +593,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           phillip
         </td>
         <td
@@ -879,36 +614,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           maurice
         </td>
         <td
@@ -925,36 +635,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           peter
         </td>
         <td
@@ -971,36 +656,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           velma
         </td>
         <td
@@ -1017,36 +677,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           max
         </td>
         <td
@@ -1063,36 +698,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           maxine
         </td>
         <td
@@ -1109,36 +719,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           siobhan
         </td>
         <td
@@ -1155,36 +740,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           nelly
         </td>
         <td
@@ -1201,36 +761,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           kris
         </td>
         <td
@@ -1247,36 +782,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           tony
         </td>
         <td
@@ -1293,36 +803,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-ihemFPK-css"
+        class="c-hjAYDb"
       >
         <td
           class="c-cCZzXk"
         >
-          <button
-            aria-describedby="DndDescribedBy-0"
-            aria-disabled="false"
-            aria-label="drag and drop"
-            aria-pressed="true"
-            aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-dlcCnN c-dlcCnN-kZVtXJ-isDragging-true c-dlcCnN-iAsWAM-css"
-            role="button"
-            tabindex="0"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
-              />
-              <path
-                d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
-              />
-            </svg>
-          </button>
           tina
         </td>
         <td
@@ -1340,23 +825,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       </tr>
     </tbody>
   </table>
-  <div
-    id="DndDescribedBy-0"
-    style="display: none;"
-  >
-    
-    To pick up a draggable item, press the space bar.
-    While dragging, use the arrow keys to move the item.
-    Press space again to drop the item in its new position, or press escape to cancel.
-  
-  </div>
-  <div
-    aria-atomic="true"
-    aria-live="assertive"
-    id="DndLiveRegion-0"
-    role="status"
-    style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
-  />
 </div>
 `;
 
@@ -2353,11 +1821,6 @@ exports[`DataTable server-side renders 1`] = `
     }
 }
 
-  .c-dlcCnN {
-    color: inherit !important;
-    fill: currentColor;
-  }
-
   .c-jBOHFZ {
     animation-name: k-gJNjLs;
     animation-duration: 1s;
@@ -2506,15 +1969,6 @@ exports[`DataTable server-side renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
-  }
-
-  .c-dlcCnN-kZVtXJ-isDragging-true {
-    cursor: grabbing;
-  }
-
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -2541,25 +1995,6 @@ exports[`DataTable server-side renders 1`] = `
 
   .c-fDzwZw-jpgoGt-cv[disabled] {
     border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fDzwZw-cmVfvW-cv {
-    background: transparent;
-    color: var(--colors-primary);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
-  }
-
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
@@ -2643,15 +2078,6 @@ exports[`DataTable server-side renders 1`] = `
   .c-dbrbZt-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
-  }
-
-  .c-hjAYDb-ihemFPK-css {
-    transform: ;
-    z-index: 5;
-  }
-
-  .c-dlcCnN-iAsWAM-css {
-    display: inline-block;
   }
 
   .c-PJLV-icmpvrW-css {
