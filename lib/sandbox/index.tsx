@@ -45,7 +45,7 @@ const App = () => (
     >
       <Box css={{ height: '300px', width: '700px' }}>
         <DataTable columns={columns} data={data}>
-          {/* <DataTable.GlobalFilter /> */}
+          <DataTable.GlobalFilter />
 
           <DataTable.DragAndDropTable
             sortable
