@@ -49,7 +49,6 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
   isDragAndDrop: boolean
   setIsDragAndDrop: React.Dispatch<React.SetStateAction<boolean>>
-  moveRow: (oldIndex: number, newIndex: number) => void
   data: TAsyncDataResult
   /**
    * Directly update the data array that the table rows are built from.

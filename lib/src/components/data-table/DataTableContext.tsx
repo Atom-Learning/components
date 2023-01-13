@@ -105,24 +105,6 @@ export const DataTableProvider = ({
 
   const getTotalRows = () => data.total
 
-  const moveRow = (oldIndex: number, newIndex: number) => {
-    const maxIndex = data.results.length - 1
-    const minIndex = 0
-    if ([oldIndex, newIndex].some((i) => i > maxIndex || i < minIndex)) {
-      throw new Error(
-        `You can't move a row to or from an index that doesn't exist`
-      )
-    }
-
-    const dataClone = JSON.parse(JSON.stringify(data))
-    const row = dataClone[oldIndex]
-
-    dataClone.splice(oldIndex, 1)
-    dataClone.splice(newIndex, 0, row)
-
-    setData(dataClone)
-  }
-
   const table = useReactTable<unknown>({
     columns,
     data: data.results,
@@ -160,7 +142,6 @@ export const DataTableProvider = ({
       isSortable,
       isDragAndDrop,
       setIsDragAndDrop,
-      moveRow,
       asyncDataState,
       runAsyncData
     }
