@@ -6,10 +6,9 @@ import {
   KeyboardSensor,
   PointerSensor,
   useSensor,
-  useSensors,
-  UniqueIdentifier,
-  DragEndEvent
+  useSensors
 } from '@dnd-kit/core'
+import type { UniqueIdentifier, DragEndEvent } from '@dnd-kit/core'
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 import {
   arrayMove,
