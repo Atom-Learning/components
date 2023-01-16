@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sortable component renders 1`] = `
+@media  {
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-ecNzKx {
+    color: inherit !important;
+    fill: currentColor;
+  }
+
+  .c-ecNzKx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ecNzKx[disabled] * {
+    pointer-events: none;
+  }
+}
+
+@media  {
+  .c-fDzwZw-elrktp-size-sm {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-ecNzKx-kbKHjH-isDragging-false {
+    cursor: grab;
+  }
+}
+
+@media  {
+  .c-fDzwZw-cmVfvW-cv {
+    background: transparent;
+    color: var(--colors-primary);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-cmVfvW-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-PJLV-iDuHyI-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
+    z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
+  }
+
+  .c-PJLV-iDuHyI-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-PJLV-iDuHyI-css[disabled] * {
+    pointer-events: none;
+  }
+
+  .c-PJLV-igkdsCi-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
+    z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
+  }
+
+  .c-PJLV-igkdsCi-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-PJLV-igkdsCi-css[disabled] * {
+    pointer-events: none;
+  }
+
+  .c-PJLV-igkdsCi-css {
+    cursor: grab;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-iDuHyI-css"
+    data-dragging="false"
+  >
+    <button
+      aria-label="drag handle"
+      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      disabled=""
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
+        />
+        <path
+          d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
+        />
+      </svg>
+    </button>
+    A
+  </div>
+  <div
+    class="c-PJLV c-PJLV-igkdsCi-css"
+    data-dragging="false"
+    disabled=""
+  >
+    B
+  </div>
+  <div
+    class="c-PJLV c-PJLV-iDuHyI-css"
+    data-dragging="false"
+  >
+    <button
+      aria-describedby="DndDescribedBy-0"
+      aria-disabled="false"
+      aria-label="drag handle"
+      aria-roledescription="sortable"
+      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      role="button"
+      tabindex="0"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7 5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM8.5 5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 11.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1ZM7 17.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Zm5.5.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5-.5a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1Z"
+        />
+        <path
+          d="M8 5h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1zm-7 6h1v1H8zm7 0h1v1h-1z"
+        />
+      </svg>
+    </button>
+    C
+  </div>
+  <div
+    aria-describedby="DndDescribedBy-0"
+    aria-disabled="false"
+    aria-roledescription="sortable"
+    class="c-PJLV c-PJLV-igkdsCi-css"
+    data-dragging="false"
+    role="button"
+    tabindex="0"
+  >
+    D
+  </div>
+  <div
+    id="DndDescribedBy-0"
+    style="display: none;"
+  >
+    
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  
+  </div>
+  <div
+    aria-atomic="true"
+    aria-live="assertive"
+    id="DndLiveRegion-0"
+    role="status"
+    style="position: fixed; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip-path: inset(100%); white-space: nowrap;"
+  />
+</div>
+`;

@@ -1,0 +1,74 @@
+---
+title: Sortable
+component: Sortable
+category: Primitives
+description: Primitive, wrapper component for dndkit's useSortable
+---
+
+Lets users sort an array of sibling elements.
+
+Functionality based on [`dndkit's useSortable`](https://docs.dndkit.com/presets/sortable/usesortable),
+which is implemented as a basic use-case component, and allows for:
+
+- horizontal, vertical and grid sort
+- a11y controls
+
+(!) This version of the component is a primitive and not to be used by itself directly in core. It is meant as a utility layer so as to not repeat code relevant to interacting with `useSortable`.
+
+(!) There is some potentially glitchy behaviour when sorting via keyboard but it's still usable _{citation needed}_
+
+All implementations require:
+
+- the `.Root` level component to be passed an array of `sortableIds` on which to apply the sorting. Additionally, requires an `onSortChange` function to call so that the implementation receives the new order of items to manually render appropriately.
+- the `.Item` level component to be passed in a unique (to its siblings) `id`, the same id which coresponds to it from the `sortableIds` array.
+- the `.Handle` level component to be passed in the same `targetId` as the `id` of the `.Item` it controls.
+
+## Example usage
+
+```js
+const sortableItems = [
+  { text: 'A', id: 1, disabled: true, hasHandle: true },
+  { text: 'B', id: 2, disabled: true },
+  { text: 'C', id: 3, hasHandle: true },
+  { text: 'D', id: 'd' }
+]
+```
+
+```jsx
+const [sortableIdsCurrentOrder, setSortableIdsCurrentOrder] = React.useState(
+  sortableItems.map(({ id }) => id)
+)
+```
+
+```jsx preview
+<Sortable.Root
+  sortableIds={sortableIdsCurrentOrder}
+  onSortChange={({ order }) => {
+    setSortableIdsCurrentOrder(order)
+  }}
+>
+  {sortableIdsCurrentOrder.map((sortedId) => {
+    const sortableItem = sortableItems.find(({ id }) => id === sortedId)
+    if (!sortableItem) return null
+    return (
+      <Sortable.Item
+        key={sortableItem.id}
+        id={sortableItem.id}
+        disabled={!sortableItem.hasHandle && sortableItem.disabled}
+        isDragHandle={!sortableItem.hasHandle}
+        asChild
+      >
+        <Flex>
+          {sortableItem.hasHandle && (
+            <Sortable.Handle
+              targetId={sortableItem.id}
+              disabled={sortableItem.hasHandle && sortableItem.disabled}
+            />
+          )}
+          {sortableItem.text}
+        </Flex>
+      </Sortable.Item>
+    )
+  })}
+</Sortable.Root>
+```

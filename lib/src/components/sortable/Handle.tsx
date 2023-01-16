@@ -1,12 +1,19 @@
-import { ActionIcon } from '../../action-icon'
-import { Icon } from '../../icon'
-import { styled } from '../../../stitches'
+import { ActionIcon } from '../action-icon'
+import { Icon } from '../icon'
+import { styled } from '../../stitches'
 import { DragHandle } from '@atom-learning/icons'
 import * as React from 'react'
 
 export const StyledHandle = styled(ActionIcon, {
   color: 'inherit !important',
   fill: 'currentColor',
+  '&[disabled]': {
+    opacity: 0.3,
+    cursor: 'not-allowed',
+    ['*']: {
+      pointerEvents: 'none'
+    }
+  },
   variants: {
     isDragging: {
       true: {
@@ -29,7 +36,6 @@ export const Handle: React.ForwardRefExoticComponent<HandleProps> =
         ref={ref}
         isDragging={isDragging}
         appearance="simple"
-        size={size}
         {...rest}
       >
         <Icon is={DragHandle} size={size} />

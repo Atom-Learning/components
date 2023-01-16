@@ -136,63 +136,6 @@ describe('DataTable component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('Updates data when row is dragged and dropped', () => {
-    const onChange = jest.fn()
-
-    // render a button that swaps the first and second rows on click
-    const DragAndDropMock = () => {
-      const idColumn = 'id'
-      const { data } = useDataTable()
-      const rowOrder = getRowOrder(data, 'id')
-      const mockDragEndEvent = {
-        active: {
-          id: 1
-        },
-        over: {
-          id: 2
-        }
-      }
-
-      return (
-        <button
-          onClick={() => {
-            processDragEndEvent(
-              mockDragEndEvent,
-              data,
-              rowOrder,
-              idColumn,
-              onChange
-            )
-          }}
-        >
-          Click to fake a drag-and-drop event
-        </button>
-      )
-    }
-    render(
-      <DataTable
-        columns={columns}
-        data={[
-          { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-          { name: 'agatha', hobby: 'crossfit', id: 2 },
-          { name: 'betty', hobby: 'acting', id: 3 }
-        ]}
-      >
-        <DataTable.DragAndDropTable />
-        <DragAndDropMock />
-      </DataTable>
-    )
-
-    act(() =>
-      userEvent.click(screen.getByText('Click to fake a drag-and-drop event'))
-    )
-
-    expect(onChange).toBeCalledWith(0, 1, [
-      { name: 'agatha', hobby: 'crossfit', id: 2 },
-      { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-      { name: 'betty', hobby: 'acting', id: 3 }
-    ])
-  })
 })
 
 describe('DataTable.Pagination component', () => {
