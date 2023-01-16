@@ -16,7 +16,7 @@ import {
   processDragEndEvent,
   getRowOrder
 } from './drag-and-drop/DragAndDropContainer'
-import { DragEndEvent } from '@dnd-kit/core'
+import type { DragEndEvent } from '@dnd-kit/core'
 import { TAsyncDataResult } from './DataTable.types'
 
 const columnHelper = createColumnHelper<{
