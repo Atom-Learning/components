@@ -1,0 +1,86 @@
+---
+title: Sortable (Core Implementation)
+component: SortableCoreImplementation
+description: Component use case of Sortable in core. Name/use case needs to be re-assessed whenever this is properly moved into design system.
+---
+
+Uses the Sortable component to allow sorting of elements while it also adds styling and onDrag shadow effects:
+
+- `SortableCoreImplementation.Item` adds hover/focus states, border radius, vertical/horizontal display and gaps using the Stack component
+- `SortableCoreImplementation.Button` includes styling similar to `ToggleGroup.Button`, matching to its sizing, and allows for use with a drag-handle or without
+  and via a more specific wrapper SortableCoreImplementation.Button which styles approximately like a ToggleGroup.Button, matching to its sizing, and allows for use with a drag-handle or without.
+
+All implementations require the `.Item` level component be passed in a unique (to its siblings) `id`.
+
+## Handle
+
+_Currently only available to turn on/off using `hasHandle` on the `SortableCoreImplementation.Button`._
+
+`hasHandle={true | false}`
+
+If `hasHandle` is `false` the entire button is a `button` element, draggable and with the drag listeners attached to itself.
+If `hasHandle` is `true` the element is now a `div` with the `Handle` being a nested actionable button to initialise dragging.
+Adding the variation which uses the `Handle` is very important for cases where the `SortableCoreImplementation.Item` has nested `button`s and thus
+we need it to not be a button itself; as nesting buttons is semantically incorrect, inaccessible and confuses the sorting algorithm!
+For most complex cases you will be using `SortableCoreImplementation` with items with handles.
+
+(!) The component name for the handle itself is `Sortable.Handle` and is provided by the `Sortable` component directly.
+
+```jsx preview
+<SortableCoreImplementation.Root>
+  <SortableCoreImplementation.Button id="a" hasHandle>
+    A
+  </SortableCoreImplementation.Button>
+  <SortableCoreImplementation.Button id="b">
+    B
+  </SortableCoreImplementation.Button>
+</SortableCoreImplementation.Root>
+```
+
+## Orientation
+
+`orientation="vertical | horizontal"`
+
+```jsx preview
+<SortableCoreImplementation.Root orientation="vertical">
+  <SortableCoreImplementation.Button id="a">
+    A
+  </SortableCoreImplementation.Button>
+  <SortableCoreImplementation.Button id="b">
+    B
+  </SortableCoreImplementation.Button>
+</SortableCoreImplementation.Root>
+```
+
+## Gap
+
+`gap={0 | 1 | 2 | ... | 9}`
+
+```jsx preview
+<SortableCoreImplementation.Root gap={3}>
+  <SortableCoreImplementation.Button id="a">
+    A
+  </SortableCoreImplementation.Button>
+  <SortableCoreImplementation.Button id="b">
+    B
+  </SortableCoreImplementation.Button>
+</SortableCoreImplementation.Root>
+```
+
+## Size
+
+`size="sm | md | lg"`
+
+```jsx preview
+<SortableCoreImplementation.Root>
+  <SortableCoreImplementation.Button id="a" size="sm">
+    Small
+  </SortableCoreImplementation.Button>
+  <SortableCoreImplementation.Button id="b" size="md">
+    Medium
+  </SortableCoreImplementation.Button>
+  <SortableCoreImplementation.Button id="c" size="lg">
+    Large
+  </SortableCoreImplementation.Button>
+</SortableCoreImplementation.Root>
+```
