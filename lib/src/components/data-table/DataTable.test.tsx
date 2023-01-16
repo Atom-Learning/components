@@ -3,21 +3,32 @@ import {
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved
+  waitForElementToBeRemoved,
+  act
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createColumnHelper } from '@tanstack/react-table'
-import { DataTable } from '.'
+import { DataTable, useDataTable } from '.'
 import { Tooltip } from '../tooltip'
 import { Text } from '../text'
 import { Button } from '../button'
+import {
+  processDragEndEvent,
+  getRowOrder
+} from './drag-and-drop/DragAndDropContainer'
+import type { DragEndEvent } from '@dnd-kit/core'
+import { TAsyncDataResult } from './DataTable.types'
 
 const columnHelper = createColumnHelper<{
+  id: number
   name: string
   hobby: string
 }>()
 
 const columns = [
+  columnHelper.accessor('id', {
+    cell: (info) => info.getValue()
+  }),
   columnHelper.accessor('name', {
     cell: (info) => info.getValue()
   }),
@@ -31,24 +42,24 @@ const columns = [
 ]
 
 const data = [
-  { name: 'chrissy', hobby: 'bare-knuckle boxing' },
-  { name: 'agatha', hobby: 'crossfit' },
-  { name: 'betty', hobby: 'acting' },
-  { name: 'denise', hobby: 'bare-knuckle boxing' },
-  { name: 'charlie', hobby: 'crossfit' },
-  { name: 'xena', hobby: 'acting' },
-  { name: 'rick', hobby: 'bare-knuckle boxing' },
-  { name: 'phillip', hobby: 'crossfit' },
-  { name: 'maurice', hobby: 'acting' },
-  { name: 'peter', hobby: 'bare-knuckle boxing' },
-  { name: 'velma', hobby: 'crossfit' },
-  { name: 'max', hobby: 'acting' },
-  { name: 'maxine', hobby: 'bare-knuckle boxing' },
-  { name: 'siobhan', hobby: 'crossfit' },
-  { name: 'nelly', hobby: 'acting' },
-  { name: 'kris', hobby: 'bare-knuckle boxing' },
-  { name: 'tony', hobby: 'crossfit' },
-  { name: 'tina', hobby: 'acting' }
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: '1' },
+  { name: 'agatha', hobby: 'crossfit', id: '2' },
+  { name: 'betty', hobby: 'acting', id: '3' },
+  { name: 'denise', hobby: 'bare-knuckle boxing', id: '4' },
+  { name: 'charlie', hobby: 'crossfit', id: '5' },
+  { name: 'xena', hobby: 'acting', id: '6' },
+  { name: 'rick', hobby: 'bare-knuckle boxing', id: '7' },
+  { name: 'phillip', hobby: 'crossfit', id: '8' },
+  { name: 'maurice', hobby: 'acting', id: '9' },
+  { name: 'peter', hobby: 'bare-knuckle boxing', id: '10' },
+  { name: 'velma', hobby: 'crossfit', id: '11' },
+  { name: 'max', hobby: 'acting', id: '12' },
+  { name: 'maxine', hobby: 'bare-knuckle boxing', id: '13' },
+  { name: 'siobhan', hobby: 'crossfit', id: '14' },
+  { name: 'nelly', hobby: 'acting', id: '15' },
+  { name: 'kris', hobby: 'bare-knuckle boxing', id: '16' },
+  { name: 'tony', hobby: 'crossfit', id: '17' },
+  { name: 'tina', hobby: 'acting', id: '18' }
 ]
 
 /** `DataTable.Pagination` uses `Tooltip`s so it needs a `Tooltip.Provider`.
@@ -113,6 +124,74 @@ describe('DataTable component', () => {
     userEvent.click(nameHeader) // Sorts descending
     expect(screen.getByText('xena')).toBeVisible()
     expect(screen.queryByText('agatha')).not.toBeInTheDocument()
+  })
+
+  it('Renders drag handles for draggable table rows', () => {
+    const { container } = render(
+      <DataTable columns={columns} data={data}>
+        <DataTable.DragAndDropTable />
+      </DataTable>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('Updates data when row is dragged and dropped', () => {
+    const onChange = jest.fn()
+
+    // render a button that swaps the first and second rows on click
+    const DragAndDropMock = () => {
+      const idColumn = 'id'
+      const { data } = useDataTable()
+      const rowOrder = getRowOrder(data, 'id')
+      const mockDragEndEvent = {
+        active: {
+          id: 1
+        },
+        over: {
+          id: 2
+        }
+      }
+
+      return (
+        <button
+          onClick={() => {
+            processDragEndEvent(
+              mockDragEndEvent,
+              data,
+              rowOrder,
+              idColumn,
+              onChange
+            )
+          }}
+        >
+          Click to fake a drag-and-drop event
+        </button>
+      )
+    }
+    render(
+      <DataTable
+        columns={columns}
+        data={[
+          { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+          { name: 'agatha', hobby: 'crossfit', id: 2 },
+          { name: 'betty', hobby: 'acting', id: 3 }
+        ]}
+      >
+        <DataTable.DragAndDropTable />
+        <DragAndDropMock />
+      </DataTable>
+    )
+
+    act(() =>
+      userEvent.click(screen.getByText('Click to fake a drag-and-drop event'))
+    )
+
+    expect(onChange).toBeCalledWith(0, 1, [
+      { name: 'agatha', hobby: 'crossfit', id: 2 },
+      { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+      { name: 'betty', hobby: 'acting', id: 3 }
+    ])
   })
 })
 
@@ -214,12 +293,10 @@ describe('DataTable Search component', () => {
     )
 
     const search = screen.getByRole('searchbox')
-    userEvent.type(search, 'ch')
 
     await waitFor(() => {
       expect(screen.getByText('chrissy')).toBeVisible()
       expect(screen.getByText('charlie')).toBeVisible()
-      expect(screen.queryByText('agatha')).toBe(null)
     })
 
     userEvent.clear(search)

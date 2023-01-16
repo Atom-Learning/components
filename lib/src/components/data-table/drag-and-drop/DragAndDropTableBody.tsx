@@ -1,15 +1,15 @@
 import * as React from 'react'
 
-import { Table } from '../table'
-import { DataTable } from '.'
-import { useDataTable } from './DataTableContext'
+import { Table } from '../../table'
+import { useDataTable } from '../DataTableContext'
+import { DraggableRow } from './DraggableRow'
 
 type DataTableBodyProps = Omit<
   React.ComponentProps<typeof Table.Body>,
   'children'
 >
 
-export const DataTableBody: React.FC<DataTableBodyProps> = ({
+export const DragAndDropTableBody: React.FC<DataTableBodyProps> = ({
   striped = false,
   ...props
 }) => {
@@ -17,7 +17,7 @@ export const DataTableBody: React.FC<DataTableBodyProps> = ({
   return (
     <Table.Body {...props} striped={striped}>
       {getRowModel().rows.map((row) => {
-        return <DataTable.Row row={row} key={row.id} />
+        return <DraggableRow row={row} key={row.id} />
       })}
     </Table.Body>
   )

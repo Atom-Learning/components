@@ -6,7 +6,7 @@ import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 import { DataTableLoading } from './DataTableLoading'
 
-type DataTableTableProps = Omit<
+export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
   'children'
 > &
