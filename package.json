@@ -14,7 +14,8 @@
     "build:site": "cd site && next build",
     "start:site": "cd site && next start",
     "lint-staged": "cd site && yarn run precommit && cd ../lib && yarn run precommit",
-    "build-all": "run-s build:*"
+    "build-all": "run-s build:*",
+    "start:sandbox": "cd lib && vite -c ./sandbox/vite.config.js"
   },
   "devDependencies": {
     "husky": "^4.3.8",
