@@ -32,6 +32,13 @@ export const StyledList = styled('ul', {
           '&::marker': { content: '•', fontWeight: 'bold' }
         }
       }
+    },
+    theme: {
+      primary: {
+        [`& > ${StyledLi}`]: {
+          '&::marker': { color: '$primary' }
+        }
+      }
     }
   }
 })
