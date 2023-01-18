@@ -2,7 +2,7 @@ import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 import { Table } from '../../table'
 import { DataTableDataCell } from '../DataTableDataCell'
-import { Handle } from './'
+import { Handle, useDragAndDropTable } from './'
 import { CSS } from '@dnd-kit/utilities'
 import { useSortable } from '@dnd-kit/sortable'
 import type { UniqueIdentifier } from '@dnd-kit/core'
@@ -15,9 +15,11 @@ export type DataTableDraggableRowProps = React.ComponentProps<
 }
 
 export const DraggableRow: React.FC<DataTableDraggableRowProps> = ({ row }) => {
+  const { idColumn } = useDragAndDropTable()
+
   const { attributes, listeners, transform, setNodeRef, isDragging } =
     useSortable({
-      id: row.original.id as UniqueIdentifier
+      id: row.original[idColumn] as UniqueIdentifier
     })
 
   return (
