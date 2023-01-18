@@ -2,13 +2,13 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { TableRow } from './TableRow'
+import { StyledRow } from './TableRow'
 
 const StyledTableBody = styled('tbody', {
   variants: {
     striped: {
       true: {
-        [`${TableRow}`]: {
+        [`${StyledRow}`]: {
           '&:nth-child(odd)': { bg: 'white' },
           '&:nth-child(even)': { bg: '$tonal50' }
         }

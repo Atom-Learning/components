@@ -48,4 +48,15 @@ describe(`List component`, () => {
 
     expect(container.querySelector('ol')).toBeVisible()
   })
+
+  it('renders an unordered list with a primary theme', () => {
+    const { container } = render(
+      <List theme="primary">
+        <List.Item>Item 1</List.Item>
+        <List.Item>Item 2</List.Item>
+      </List>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })

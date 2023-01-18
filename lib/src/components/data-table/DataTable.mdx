@@ -15,7 +15,7 @@ The root `DataTable` component manages the table's state and exposes it via the 
 
 Other `DataTable` components call `useDataTable` and provide useful default implementations for common patterns. For example, `DataTable.Head` will render a header for every column defined in the parent `DataTable`. `DataTable.Body` will render a row for every data item. `DataTable.Table` combines both `DataTable.Head` and `DataTable.Body`.
 
-### Using defaults vs using rolling your own
+### Using defaults vs rolling your own
 
 Here's a simple config for some table data and columns.
 
@@ -241,3 +241,39 @@ If `DataTable`'s `isSortable` state is `true`, then `DataTable.Header` will be c
 ### Pagination
 
 `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data. Note: there is currently a bug where `DataTable` will render all rows on the initial render, even when paginated. There is no visible effect, but it can cause performance issues on large tables. The workaround for this is to pass an `initialState` prop to `DataTable`. E.g. `initialState={pagination: {pageSize: 5, pageIndex: 0}}`. This will force pagination to apply properly on the initial render. Make sure the `pagination` prop matches the config you use in `DataTable.Pagination`, as the latter will take precedence after the initial render.
+
+### Drag and drop
+
+The `DataTable.DragAndDropTable` can be rendered in place of `DataTable.Table` to allow users to reorder table rows via drag and drop. It takes an optional `onDragAndDrop` prop which is a function that fires when rows have been re-ordered via drag-and-drop. Use this to sync those changes with external data sources.
+
+Note that column sorting conflicts with drag and drop behaviour. In any context where you allow drag and drop reordering, you probably want to disable column sorting (see User Sorting above). Similarly, you should probably disable pagination because users won't be able to drag rows across page boundaries.
+
+#### Row IDs
+
+Drag-and-drop functionality relies on each table row having a unique ID. `DataTable.DragAndDropContainer` will throw an error if your don't provide unique IDs for each row in the `data` provided to `DataTable`, so you should consider wrapping your table in an `ErrorBoundary` to reduce the impact on your user if there is a problem with your data. By default, `DataTable.DragAndDropContainer` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
+
+```tsx
+const data = [
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+  { name: 'agatha', hobby: 'crossfit', id: 2 },
+  { name: 'betty', hobby: 'acting', id: 3 }
+]`
+
+<DataTable data={data} columns={columns}>
+  <DataTable.DragAndDropTable onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}/>
+</DataTable>
+```
+
+Or you could provide this data and specify the id column accordingly:
+
+```tsx
+const data = [
+  { name: 'chrissy', hobby: 'bare-knuckle boxing', userId: 1 },
+  { name: 'agatha', hobby: 'crossfit', userId: 2 },
+  { name: 'betty', hobby: 'acting', userId: 3 }
+]`
+
+<DataTable data={data} columns={columns}>
+  <DataTable.DragAndDropTable idColumn="userId" onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)} />
+</DataTable>
+```
