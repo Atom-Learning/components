@@ -39,7 +39,7 @@ In the future, you only need to rerun `yarn build:docs` after you either delete 
 
 ### Running the sandbox
 
-The library offers sandbox capabilities to ease the development process. This run with the following command
+The library offers sandbox capabilities to ease the development process. This runs with the following command
 
 `yarn start:sandbox`
 
