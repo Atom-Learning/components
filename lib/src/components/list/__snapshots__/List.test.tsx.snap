@@ -71,3 +71,93 @@ exports[`List component renders a list 1`] = `
   </ul>
 </div>
 `;
+
+exports[`List component renders an unordered list with a primary theme 1`] = `
+@media  {
+  .c-iQukjL {
+    font-family: var(--fonts-body);
+    margin: unset;
+    padding: unset;
+  }
+
+  .c-iQukjL > .c-PJLV:not(:last-child) {
+    margin-bottom: var(--space-2);
+  }
+
+  .c-iQukjL > .c-PJLV:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media  {
+  .c-iQukjL-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-iQukjL-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-iQukjL-hUrFFO-noCapsize-true::before,
+  .c-iQukjL-hUrFFO-noCapsize-true::after {
+    display: none;
+  }
+
+  .c-iQukjL-DlQlZ-as-ul {
+    padding-left: var(--space-3);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+    padding-left: var(--space-2);
+  }
+
+  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
+    content: "•";
+    font-weight: bold;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol {
+    padding-left: var(--space-4);
+    list-style: decimal;
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV {
+    padding-left: var(--space-1);
+  }
+
+  .c-iQukjL-jrjcGe-as-ol > .c-PJLV::marker {
+    font-size: var(--fontSizes-sm);
+    font-weight: bold;
+  }
+
+  .c-iQukjL-gvBFgi-theme-primary > .c-PJLV::marker {
+    color: var(--colors-primary);
+  }
+}
+
+<div>
+  <ul
+    class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-hUrFFO-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-gvBFgi-theme-primary"
+  >
+    <li
+      class="c-PJLV"
+    >
+      Item 1
+    </li>
+    <li
+      class="c-PJLV"
+    >
+      Item 2
+    </li>
+  </ul>
+</div>
+`;
