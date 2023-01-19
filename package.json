@@ -3,12 +3,9 @@
   "name": "design-system",
   "workspaces": [
     "lib",
-    "site",
-    "color-scheme"
+    "site"
   ],
   "scripts": {
-    "dev:color-scheme": "cd color-scheme && yarn dev",
-    "build:color-scheme": "cd color-scheme && yarn build",
     "dev:lib": "cd lib && NODE_ENV=development rollup -c -w",
     "build:lib": "cd lib && NODE_ENV=production rollup -c",
     "build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",

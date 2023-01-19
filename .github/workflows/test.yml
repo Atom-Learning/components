@@ -20,8 +20,6 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn build:color-scheme
-
       - name: Test
         working-directory: lib
         run: yarn test:ci

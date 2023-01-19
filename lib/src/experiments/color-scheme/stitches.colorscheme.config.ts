@@ -3,7 +3,6 @@ import blue from './blue.json'
 import slate from './slate.json'
 import { generateAlphaColors } from './generateAlphaColors'
 
-
 export const colorSchemes = {}
 
 const generateColors = (tokenPrefix, colorName) => {
@@ -24,7 +23,7 @@ export const { styled, createTheme } = createStitches({
       ...blue,
       ...generateAlphaColors('blue', blue),
       ...slate,
-      ...generateAlphaColors('slate', slate),
+      ...generateAlphaColors('slate', slate)
     }
   }
 })

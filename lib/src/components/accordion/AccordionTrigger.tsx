@@ -7,7 +7,7 @@ import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
 
-import { ColorScheme } from '@atom-learning/color-scheme'
+import { ColorScheme } from '~/experiments/color-scheme'
 
 const RotatingIcon = styled(Icon, {
   transition: 'transform 300ms',
