@@ -53,16 +53,28 @@ exports[`Tabs component renders 1`] = `
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-fCldmZ {
+  .c-gZZKZD {
     flex-shrink: 0;
     display: flex;
-    border-bottom: 1px solid var(--colors-base3);
-    width: max-content;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
   }
 
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
+  }
+
+  .c-fGHEql {
+    width: 100%;
   }
 }
 
@@ -187,64 +199,76 @@ exports[`Tabs component renders 1`] = `
   }
 }
 
+@media  {
+  .PJLV-iefhaTF-css {
+    position: relative;
+    border-bottom: 1px solid var(--colors-base3);
+    width: 100%;
+  }
+}
+
 <div>
   <div
-    class="PJLV"
+    class="c-fGHEql"
     data-orientation="horizontal"
     dir="ltr"
   >
     <div
-      aria-orientation="horizontal"
-      class="c-fCldmZ PJLV interactive-hiContrast1 accent-blue base-slate"
-      data-orientation="horizontal"
-      role="tablist"
-      style="outline: none;"
-      tabindex="0"
+      class="PJLV PJLV-iefhaTF-css interactive-hiContrast1 accent-blue base-slate"
     >
-      <span
-        aria-controls="radix-3-content-tab1"
-        aria-selected="true"
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD"
         data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="active"
-        id="radix-3-trigger-tab1"
-        role="tab"
-        tabindex="-1"
-        type="button"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
       >
-        Trigger 1
-      </span>
-      <span
-        aria-controls="radix-3-content-tab2"
-        aria-selected="false"
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        id="radix-3-trigger-tab2"
-        role="tab"
-        tabindex="-1"
-        type="button"
-      >
-        Trigger 2
-      </span>
-      <span
-        aria-controls="radix-3-content-tab3"
-        aria-selected="false"
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
-        data-disabled=""
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        disabled=""
-        id="radix-3-trigger-tab3"
-        role="tab"
-        tabindex="-1"
-        type="button"
-      >
-        Trigger 3
-      </span>
+        <span
+          aria-controls="radix-3-content-tab1"
+          aria-selected="true"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-3-trigger-tab1"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 1
+        </span>
+        <span
+          aria-controls="radix-3-content-tab2"
+          aria-selected="false"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-3-trigger-tab2"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 2
+        </span>
+        <span
+          aria-controls="radix-3-content-tab3"
+          aria-selected="false"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-disabled=""
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          disabled=""
+          id="radix-3-trigger-tab3"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 3
+        </span>
+      </div>
     </div>
     <div
       aria-labelledby="radix-3-trigger-tab1"

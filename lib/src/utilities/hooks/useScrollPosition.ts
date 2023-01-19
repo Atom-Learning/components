@@ -1,21 +1,25 @@
 import { useEffect, useState } from 'react'
-import { throttle } from 'throttle-debounce'
+import { debounce } from 'throttle-debounce'
 
-export const useScrollPosition = (): { x: number; y: number } => {
-  const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 })
-  const { x, y } = scrollPosition
+export const useScrollPosition = ({ elRef, delay = 500 } = {}): {
+  left: number
+  top: number
+} => {
+  const [scrollPosition, setScrollPosition] = useState({ left: 0, top: 0 })
 
   useEffect(() => {
-    const handleScroll = throttle(500, () => {
-      setScrollPosition({ x: window.scrollX, y: window.scrollY })
+    if (!elRef) return
+
+    const handleScroll = debounce(delay, () => {
+      setScrollPosition({ left: elRef.scrollLeft, top: elRef.scrollTop })
     })
 
-    window.addEventListener('scroll', handleScroll)
+    elRef.addEventListener('scroll', handleScroll)
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      elRef.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [elRef])
 
-  return { x, y }
+  return scrollPosition
 }
