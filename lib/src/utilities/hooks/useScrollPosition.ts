@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
 import { debounce } from 'throttle-debounce'
 
-export const useScrollPosition = ({ elRef, delay = 500 } = {}): {
+export const useScrollPosition = ({
+  elRef,
+  delay = 500
+}: {
+  elRef?: HTMLElement | null
+  delay?: number
+}): {
   left: number
   top: number
 } => {

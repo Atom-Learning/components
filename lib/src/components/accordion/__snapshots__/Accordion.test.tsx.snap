@@ -199,7 +199,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-dkSJnW PJLV interactive-loContrast1 accent-slate"
+        class="c-dkSJnW interactive-loContrast1 accent-slate"
         data-radix-collection-item=""
         data-state="open"
         id="radix-1"
@@ -235,7 +235,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-2"
         aria-expanded="false"
-        class="c-dkSJnW PJLV interactive-loContrast1 accent-slate"
+        class="c-dkSJnW interactive-loContrast1 accent-slate"
         data-radix-collection-item=""
         data-state="closed"
         id="radix-3"

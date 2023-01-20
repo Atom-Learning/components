@@ -60,13 +60,14 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   ...remainingProps
 }) => (
   <ColorScheme
-    as={StyledTrigger}
+    asChild
     accent="slate"
     interactive="loContrast1"
     {...colorScheme}
-    {...remainingProps}
   >
-    {children}
-    <RotatingIcon is={ChevronDown} />
+    <StyledTrigger {...remainingProps}>
+      {children}
+      <RotatingIcon is={ChevronDown} />
+    </StyledTrigger>
   </ColorScheme>
 )

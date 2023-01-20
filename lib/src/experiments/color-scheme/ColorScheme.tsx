@@ -6,11 +6,13 @@ import {
   colorSchemes,
   styled
 } from './stitches.colorscheme.config'
+import { Slot } from '@radix-ui/react-slot'
 
 type TColorSchemeOwnProps = {
   base?: keyof typeof bases
   accent?: keyof typeof accents
   interactive?: 'loContrast1' | 'loContrast2' | 'hiContrast1' | 'hiContrast2'
+  asChild?: boolean
 }
 
 const StyledColorScheme = styled('div')
@@ -22,7 +24,17 @@ type TColorSchemeProps = React.ComponentProps<typeof StyledColorScheme> &
  * @experimental Component has not been finalised. Further design input required. Use with caution.
  */
 export const ColorScheme = React.forwardRef<HTMLDivElement, TColorSchemeProps>(
-  ({ base = '', accent = '', interactive = '', className, ...rest }, ref) => {
+  (
+    {
+      base = '',
+      accent = '',
+      interactive = '',
+      className,
+      asChild = false,
+      ...rest
+    },
+    ref
+  ) => {
     const c = [
       className,
       colorSchemes[`interactive-${interactive}`],
@@ -32,7 +44,8 @@ export const ColorScheme = React.forwardRef<HTMLDivElement, TColorSchemeProps>(
       .filter(Boolean)
       .join(' ')
 
-    return <StyledColorScheme ref={ref} className={c} {...rest} />
+    const Component = asChild ? Slot : StyledColorScheme
+    return <Component ref={ref} className={c} {...rest} />
   }
 )
 
