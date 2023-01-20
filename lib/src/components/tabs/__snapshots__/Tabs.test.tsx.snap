@@ -68,6 +68,12 @@ exports[`Tabs component renders 1`] = `
     scrollbar-width: none;
   }
 
+  .c-efhaTF {
+    position: relative;
+    border-bottom: 1px solid var(--colors-base3);
+    width: 100%;
+  }
+
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
@@ -199,14 +205,6 @@ exports[`Tabs component renders 1`] = `
   }
 }
 
-@media  {
-  .PJLV-iefhaTF-css {
-    position: relative;
-    border-bottom: 1px solid var(--colors-base3);
-    width: 100%;
-  }
-}
-
 <div>
   <div
     class="c-fGHEql"
@@ -214,7 +212,7 @@ exports[`Tabs component renders 1`] = `
     dir="ltr"
   >
     <div
-      class="PJLV PJLV-iefhaTF-css interactive-hiContrast1 accent-blue base-slate"
+      class="PJLV c-efhaTF interactive-hiContrast1 accent-blue base-slate"
     >
       <div
         aria-orientation="horizontal"

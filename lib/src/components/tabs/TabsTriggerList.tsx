@@ -9,6 +9,12 @@ import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 
+const StyledContainer = styled(ColorScheme, {
+  position: 'relative',
+  borderBottom: '1px solid $base3',
+  width: '100%'
+})
+
 const StyledTriggerList = styled(List, {
   flexShrink: 0,
   display: 'flex',
@@ -67,15 +73,10 @@ export const TabsTriggerList: React.FC<
   )
 
   return (
-    <ColorScheme
+    <StyledContainer
       base="slate"
       accent="blue"
       interactive="hiContrast1"
-      css={{
-        position: 'relative',
-        borderBottom: '1px solid $base3',
-        width: '100%'
-      }}
       {...colorScheme}
       {...rest}
     >
@@ -106,7 +107,7 @@ export const TabsTriggerList: React.FC<
           <Icon is={ChevronRight} />
         </StyledChevronActionIcon>
       )}
-    </ColorScheme>
+    </StyledContainer>
   )
 }
 
