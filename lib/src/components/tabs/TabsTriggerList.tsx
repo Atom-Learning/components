@@ -58,7 +58,7 @@ export const TabsTriggerList: React.FC<
 
   const canScrollRight = React.useMemo(() => {
     if (!listRef || !canScrollXAxis) return false
-    return listRef.scrollWidth - left - listRef.clientWidth > 0
+    return listRef.scrollWidth - left - listRef.clientWidth > 1 // 1 rather than 0 to account for sub-pixel widths and calculations
   }, [listRef, left, canScrollXAxis])
 
   const scrollList = React.useCallback(
