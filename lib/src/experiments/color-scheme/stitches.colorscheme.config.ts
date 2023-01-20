@@ -2,6 +2,7 @@ import { createStitches } from '@stitches/react'
 import blue from './blue.json'
 import slate from './slate.json'
 import { generateAlphaColors } from './generateAlphaColors'
+import { utils, media } from '../../stitches'
 
 export const colorSchemes = {}
 
@@ -25,7 +26,9 @@ export const { styled, createTheme } = createStitches({
       ...slate,
       ...generateAlphaColors('slate', slate)
     }
-  }
+  },
+  utils,
+  media
 })
 
 colorSchemes['interactive-loContrast1'] = createTheme(
