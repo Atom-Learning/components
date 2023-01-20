@@ -222,7 +222,7 @@ exports[`Tabs component renders 1`] = `
         style="outline: none;"
         tabindex="0"
       >
-        <span
+        <button
           aria-controls="radix-3-content-tab1"
           aria-selected="true"
           class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
@@ -235,8 +235,8 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           Trigger 1
-        </span>
-        <span
+        </button>
+        <button
           aria-controls="radix-3-content-tab2"
           aria-selected="false"
           class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
@@ -249,8 +249,8 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           Trigger 2
-        </span>
-        <span
+        </button>
+        <button
           aria-controls="radix-3-content-tab3"
           aria-selected="false"
           class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
@@ -265,7 +265,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           Trigger 3
-        </span>
+        </button>
       </div>
     </div>
     <div

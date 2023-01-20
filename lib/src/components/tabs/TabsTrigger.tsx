@@ -46,7 +46,7 @@ export const TabsTrigger: React.FC<TabsTriggerProps> = ({
   ...rest
 }) => (
   <StyledTabsTrigger asChild {...rest}>
-    <Text size="sm" as="span">
+    <Text size="sm" as="button">
       {children}
     </Text>
   </StyledTabsTrigger>
