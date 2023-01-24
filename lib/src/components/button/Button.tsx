@@ -115,11 +115,6 @@ export const StyledButton = styled('button', {
       true: {
         width: '100%'
       }
-    },
-    isRounded: {
-      true: {
-        borderRadius: '$round'
-      }
     }
   },
 
