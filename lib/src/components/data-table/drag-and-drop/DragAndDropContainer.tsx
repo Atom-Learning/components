@@ -18,6 +18,20 @@ import {
 } from '@dnd-kit/sortable'
 import * as React from 'react'
 
+const DragAndDropTableContext = React.createContext<{ idColumn: string }>({
+  idColumn: 'id'
+})
+export const useDragAndDropTable = () => {
+  const context = React.useContext(DragAndDropTableContext)
+
+  if (!context)
+    throw new Error(
+      'useDragAndDropTable can only be called within a DragAndDropContainer'
+    )
+
+  return context
+}
+
 type DragAndDropContainerProps = {
   idColumn?: string
   onChange?: (oldIndex: number, newIndex: number, newData: TableData) => void
@@ -33,8 +47,8 @@ export const processDragEndEvent = (
   onChange?: (oldIndex: number, newIndex: number, newData: TableData) => void
 ) => {
   const { active, over } = event
-  const oldIndex = rowOrder.indexOf(active[idColumn])
-  const newIndex = rowOrder.indexOf(over?.[idColumn])
+  const oldIndex = rowOrder.indexOf(active.id)
+  const newIndex = rowOrder.indexOf(over?.id)
   const results = arrayMove(data.results, oldIndex, newIndex)
   onChange?.(oldIndex, newIndex, results)
   return { results, total: results.length }
@@ -89,7 +103,9 @@ export const DragAndDropContainer: React.FC<DragAndDropContainerProps> = ({
       modifiers={[restrictToVerticalAxis]}
     >
       <SortableContext items={rowOrder} strategy={verticalListSortingStrategy}>
-        {children}
+        <DragAndDropTableContext.Provider value={{ idColumn }}>
+          {children}
+        </DragAndDropTableContext.Provider>
       </SortableContext>
     </DndContext>
   )
