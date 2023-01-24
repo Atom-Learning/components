@@ -680,9 +680,7 @@ describe('DataTable sticky columns', () => {
     const { container } = render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
-          <DataTable.StickyColumnsContainer>
-            <DataTable.Table />
-          </DataTable.StickyColumnsContainer>
+          <DataTable.Table numberOfStickyColumns={1} />
         </DataTable>
       </Wrapper>
     )
@@ -693,9 +691,7 @@ describe('DataTable sticky columns', () => {
     render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
-          <DataTable.StickyColumnsContainer>
-            <DataTable.Table />
-          </DataTable.StickyColumnsContainer>
+          <DataTable.Table numberOfStickyColumns={1} />
         </DataTable>
       </Wrapper>
     )

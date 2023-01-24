@@ -58,9 +58,6 @@ export const DataTableProvider = ({
   )
 
   const [globalFilter, setGlobalFilter] = React.useState<string>('')
-  
-  const [numberOfStickyColumns, setNumberOfStickyColumns] =
-    React.useState<number>(0)
 
   const { setIsSortable, isSortable, sorting, setSorting } =
     useSortByColumn(defaultSort)
@@ -143,9 +140,7 @@ export const DataTableProvider = ({
       getTotalRows,
       isSortable,
       asyncDataState,
-      runAsyncData,
-      numberOfStickyColumns,
-      setNumberOfStickyColumns
+      runAsyncData
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

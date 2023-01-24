@@ -15,19 +15,14 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   theme = 'light',
   ...props
 }) => {
-  const { getHeaderGroups, setIsSortable, numberOfStickyColumns } =
-    useDataTable()
+  const { getHeaderGroups, setIsSortable } = useDataTable()
 
   React.useEffect(() => {
     setIsSortable(sortable)
   }, [sortable, setIsSortable])
 
   return (
-    <Table.Header
-      theme={theme}
-      numberOfStickyColumns={numberOfStickyColumns}
-      {...props}
-    >
+    <Table.Header theme={theme} {...props}>
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>

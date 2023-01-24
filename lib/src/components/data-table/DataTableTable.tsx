@@ -20,6 +20,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   striped,
   theme,
   css,
+  numberOfStickyColumns = 0,
   ...props
 }) => {
   const { asyncDataState } = useDataTable()
@@ -30,6 +31,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
       <DataTableLoading />
       <Table
         {...props}
+        numberOfStickyColumns={numberOfStickyColumns}
         css={{
           ...css,
           ...(isPending && {
@@ -39,8 +41,15 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
           })
         }}
       >
-        <DataTable.Head theme={theme} sortable={sortable} />
-        <DataTable.Body striped={striped} />
+        <DataTable.Head
+          theme={theme}
+          sortable={sortable}
+          numberOfStickyColumns={numberOfStickyColumns}
+        />
+        <DataTable.Body
+          striped={striped}
+          numberOfStickyColumns={numberOfStickyColumns}
+        />
       </Table>
     </>
   )

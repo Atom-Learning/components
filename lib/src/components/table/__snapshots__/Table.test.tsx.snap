@@ -634,8 +634,9 @@ exports[`Table component renders with sticky columns 1`] = `
     width: 400px;
   }
 
-  .c-PJLV-idWksIc-css {
+  .c-PJLV-iiisqbM-css {
     overflow: auto;
+    max-width: 100%;
   }
 
   .c-cwQMhQ-idVpojG-css {
@@ -659,7 +660,7 @@ exports[`Table component renders with sticky columns 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-idWksIc-css"
+    class="c-PJLV c-PJLV-iiisqbM-css"
     role="scrollbar"
   >
     <table

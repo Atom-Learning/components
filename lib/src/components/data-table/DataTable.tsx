@@ -9,7 +9,6 @@ import { DataTableHead } from './DataTableHead'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
-import { DataTableStickyColumnsContainer } from './DataTableStickyColumnsContainer'
 import { DataTableTable } from './DataTableTable'
 import { DragAndDropContainer, DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
@@ -100,8 +99,6 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    */
   Error: typeof DataTableError
-
-  StickyColumnsContainer: typeof DataTableStickyColumnsContainer
 }
 
 /** Context provider for DataTable state and logic.
@@ -122,4 +119,3 @@ DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable
 DataTable.Loading = DataTableLoading
 DataTable.Error = DataTableError
-DataTable.StickyColumnsContainer = DataTableStickyColumnsContainer

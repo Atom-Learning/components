@@ -296,7 +296,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     color: var(--colors-tonal600);
   }
 
-  .c-PJLV-kqWICR-striped-false {
+  .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
 
@@ -473,7 +473,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-iPJLV-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gzzGYN-theme-light"
+      class="c-PJLV c-PJLV-gzzGYN-theme-light c-PJLV-iPJLV-css"
     >
       <tr
         class="c-hjAYDb"
@@ -517,7 +517,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-kqWICR-striped-false"
+      class="c-PJLV c-PJLV-cevUCR-striped-false c-PJLV-iPJLV-css"
     >
       <tr
         class="c-hjAYDb c-hjAYDb-iPJLV-css"
@@ -3454,6 +3454,11 @@ exports[`DataTable sticky columns renders 1`] = `
     }
 }
 
+  .c-dlcCnN {
+    color: inherit !important;
+    fill: currentColor;
+  }
+
   .c-jBOHFZ {
     animation-name: k-gJNjLs;
     animation-duration: 1s;
@@ -3619,6 +3624,15 @@ exports[`DataTable sticky columns renders 1`] = `
     stroke-width: 1.5;
   }
 
+  .c-fDzwZw-elrktp-size-sm {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-dlcCnN-kbKHjH-isDragging-false {
+    cursor: grab;
+  }
+
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -3713,6 +3727,15 @@ exports[`DataTable sticky columns renders 1`] = `
     left: var(--space-1);
   }
 
+  .c-hjAYDb-iPJLV-css {
+    transform: ;
+    z-index: ;
+  }
+
+  .c-dlcCnN-iAsWAM-css {
+    display: inline-block;
+  }
+
   .c-PJLV-icmpvrW-css {
     position: relative;
   }
@@ -3734,8 +3757,9 @@ exports[`DataTable sticky columns renders 1`] = `
     transition: opacity 250ms linear 150ms;
   }
 
-  .c-PJLV-idWksIc-css {
+  .c-PJLV-iiisqbM-css {
     overflow: auto;
+    max-width: 100%;
   }
 
   .c-PJLV-ifwqPNX-css th:nth-of-type(1) {
@@ -3754,7 +3778,7 @@ exports[`DataTable sticky columns renders 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-idWksIc-css"
+    class="c-PJLV c-PJLV-iiisqbM-css"
     role="scrollbar"
   >
     <table
@@ -3766,6 +3790,15 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <th
+            class="c-GSaiK c-GSaiK-igsmDXe-css"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            >
+              id
+            </div>
+          </th>
           <th
             class="c-GSaiK c-GSaiK-igsmDXe-css"
           >
@@ -3804,6 +3837,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            1
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             chrissy
           </td>
           <td
@@ -3822,6 +3860,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            2
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -3846,6 +3889,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            3
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             betty
           </td>
           <td
@@ -3864,6 +3912,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            4
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -3888,6 +3941,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            5
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             charlie
           </td>
           <td
@@ -3906,6 +3964,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            6
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -3930,6 +3993,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            7
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             rick
           </td>
           <td
@@ -3948,6 +4016,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            8
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -3972,6 +4045,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            9
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             maurice
           </td>
           <td
@@ -3990,6 +4068,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            10
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -4014,6 +4097,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            11
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             velma
           </td>
           <td
@@ -4032,6 +4120,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            12
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -4056,6 +4149,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            13
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             maxine
           </td>
           <td
@@ -4074,6 +4172,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            14
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -4098,6 +4201,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            15
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             nelly
           </td>
           <td
@@ -4116,6 +4224,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            16
+          </td>
           <td
             class="c-cCZzXk"
           >
@@ -4140,6 +4253,11 @@ exports[`DataTable sticky columns renders 1`] = `
           <td
             class="c-cCZzXk"
           >
+            17
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
             tony
           </td>
           <td
@@ -4158,6 +4276,11 @@ exports[`DataTable sticky columns renders 1`] = `
         <tr
           class="c-hjAYDb"
         >
+          <td
+            class="c-cCZzXk"
+          >
+            18
+          </td>
           <td
             class="c-cCZzXk"
           >

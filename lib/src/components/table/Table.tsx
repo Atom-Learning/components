@@ -57,13 +57,26 @@ const StyledTable = styled('table', {
   }
 })
 
-type TableProps = React.ComponentProps<typeof StyledTable>
+type TableProps = React.ComponentProps<typeof StyledTable> & {
+  numberOfStickyColumns?: number
+}
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
   corners = 'round',
+  numberOfStickyColumns = 0,
   ...rest
-}: TableProps) => <StyledTable size={size} corners={corners} {...rest} />
+}: TableProps) => {
+  const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
+
+  return numberOfStickyColumns ? (
+    <TableStickyColumnsContainer numberOfStickyColumns={numberOfStickyColumns}>
+      {tableComponent}
+    </TableStickyColumnsContainer>
+  ) : (
+    tableComponent
+  )
+}
 
 Table.Body = TableBody
 Table.Cell = TableCell

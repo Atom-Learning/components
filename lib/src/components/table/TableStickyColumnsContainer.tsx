@@ -25,6 +25,7 @@ export const TableStickyColumnsContainer: React.FC<
       role="scrollbar"
       css={{
         overflow: 'auto',
+        maxWidth: '100%',
         ...(isScrolling && {
           [`& th,td:nth-of-type(${numberOfStickyColumns})`]: {
             boxShadow: '$colors$alpha200 -2px -3px 9px 1px',
