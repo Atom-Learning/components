@@ -167,7 +167,6 @@ export const Calendar: React.FC<CalendarProps> = ({
               <StyledButton
                 key={`${year}${i}`}
                 theme={isCurrentYear ? 'primary' : 'neutral'}
-                isRounded
                 onClick={() => handleSetYear(year)}
                 selected={isCurrentYear}
               >
