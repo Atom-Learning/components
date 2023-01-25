@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { CSS, styled } from '~/stitches'
-import { useWindowScrollPosition } from '~/utilities/hooks/useWindowScrollPosition'
+import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 
 import { Divider } from '../divider'
 import { Flex } from '../flex'
@@ -79,7 +79,7 @@ export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
   size = 'md',
   ...props
 }) => {
-  const { y: scrollPositionY } = useWindowScrollPosition()
+  const { y: scrollPositionY } = useScrollPosition()
 
   return (
     <StyledRoot hasScrolled={!!scrollPositionY} size={size}>
