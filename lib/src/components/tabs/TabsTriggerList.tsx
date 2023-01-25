@@ -2,7 +2,7 @@ import { List } from '@radix-ui/react-tabs'
 import React from 'react'
 import { styled } from '~/stitches'
 import { ColorScheme } from '~/experiments/color-scheme'
-import { useWindowSize } from '~/utilities/hooks/useWindowSize'
+import { useSize } from '~/utilities/hooks/useSize'
 import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { ActionIcon } from '../action-icon'
@@ -43,8 +43,8 @@ export const TabsTriggerList: React.FC<
 > = ({ children, colorScheme = {}, ...rest }) => {
   const [listRef, setListRefCallback] = useCallbackRefState()
 
-  const { width } = useWindowSize()
-  const { left } = useScrollPosition({ elRef: listRef, delay: 100 })
+  const { width } = useSize({ element: listRef, delay: 500 })
+  const { left } = useScrollPosition({ element: listRef, delay: 100 })
 
   const canScrollXAxis = React.useMemo(() => {
     if (!listRef) return false
