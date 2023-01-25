@@ -3,6 +3,7 @@ import React from 'react'
 import { styled } from '~/stitches'
 import { ColorScheme } from '~/experiments/color-scheme'
 import { useWindowSize } from '~/utilities/hooks/useWindowSize'
+import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
@@ -35,7 +36,6 @@ const StyledChevronActionIcon = styled(ActionIcon, {
   opacity: 0.9
 })
 
-const SCROLL_PERCENTAGE = 10
 export const TabsTriggerList: React.FC<
   React.ComponentProps<typeof StyledTriggerList> & {
     colorScheme?: typeof ColorScheme
@@ -43,67 +43,34 @@ export const TabsTriggerList: React.FC<
 > = ({ children, colorScheme = {}, ...rest }) => {
   const [listRef, setListRefCallback] = useCallbackRefState()
 
-  const { width: screenWidth } = useWindowSize()
+  const { width } = useWindowSize()
+  const { left } = useScrollPosition({ elRef: listRef, delay: 100 })
 
-  const [showLeftScroller, setShowLeftScroller] = React.useState<boolean>(false)
-  const [showRightScroller, setShowRightScroller] =
-    React.useState<boolean>(false)
+  const canScrollXAxis = React.useMemo(() => {
+    if (!listRef) return false
+    return listRef.scrollWidth > listRef.clientWidth
+  }, [width, listRef])
 
-  const scrollTriggerListTo = React.useCallback(
-    (direction: 'left' | 'right') => {
+  const canScrollLeft = React.useMemo(() => {
+    if (!canScrollXAxis) return false
+    return left > 0
+  }, [left, canScrollXAxis])
+
+  const canScrollRight = React.useMemo(() => {
+    if (!listRef || !canScrollXAxis) return false
+    return listRef.scrollWidth - left - listRef.clientWidth > 1 // 1 rather than 0 to account for sub-pixel widths and calculations
+  }, [listRef, left, canScrollXAxis])
+
+  const scrollList = React.useCallback(
+    (stepModifier) => {
       if (!listRef) return
-      const { scrollWidth, scrollLeft, offsetWidth } = listRef
-      const scrollAmount = Math.round(scrollWidth * (SCROLL_PERCENTAGE / 100))
-      let left = scrollLeft
-      if (direction === 'right') {
-        const newScrollAmount = scrollLeft + scrollAmount
-        left =
-          newScrollAmount + offsetWidth <= scrollWidth
-            ? newScrollAmount
-            : scrollWidth - offsetWidth
-      } else {
-        const newScrollAmount = scrollLeft - scrollAmount
-        left = newScrollAmount > 0 ? newScrollAmount : 0
-      }
-
       listRef.scroll({
-        left,
+        left: listRef.scrollLeft + listRef.clientWidth * stepModifier,
         behavior: 'smooth'
       })
-
-      // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
-      setTimeout(() => {
-        const { scrollWidth, scrollLeft, offsetWidth } = listRef
-        const scrollDistance = scrollWidth - (scrollLeft + offsetWidth)
-        if (scrollLeft === 0) {
-          setShowLeftScroller(false)
-          setShowRightScroller(true)
-        } else if (scrollDistance < 5) {
-          // sometimes right button does not hide due to few pixel precision
-          setShowRightScroller(false)
-          setShowLeftScroller(true)
-        } else {
-          setShowLeftScroller(true)
-          setShowRightScroller(true)
-        }
-      }, 500)
     },
     [listRef]
   )
-
-  React.useEffect(() => {
-    if (!listRef) return
-    const { offsetWidth, scrollWidth } = listRef
-
-    const shouldShowScroller = scrollWidth > offsetWidth
-
-    // Scroll to left on resize, hide left scroll button and then decide if right scroll button should be visible or not
-    listRef.scroll?.({
-      left: 0
-    })
-    setShowLeftScroller(false)
-    setShowRightScroller(shouldShowScroller)
-  }, [listRef, screenWidth])
 
   return (
     <StyledContainer
@@ -113,14 +80,14 @@ export const TabsTriggerList: React.FC<
       {...colorScheme}
       {...rest}
     >
-      {showLeftScroller && (
+      {canScrollLeft && (
         <StyledChevronActionIcon
           label="scroll left"
           size="md"
           css={{
             left: 0
           }}
-          onClick={() => scrollTriggerListTo('left')}
+          onClick={() => scrollList(-0.8)}
         >
           <Icon is={ChevronLeft} />
         </StyledChevronActionIcon>
@@ -128,14 +95,14 @@ export const TabsTriggerList: React.FC<
 
       <StyledTriggerList ref={setListRefCallback}>{children}</StyledTriggerList>
 
-      {showRightScroller && (
+      {canScrollRight && (
         <StyledChevronActionIcon
           label="scroll right"
           size="md"
           css={{
             right: 0
           }}
-          onClick={() => scrollTriggerListTo('right')}
+          onClick={() => scrollList(0.8)}
         >
           <Icon is={ChevronRight} />
         </StyledChevronActionIcon>
