@@ -9,6 +9,7 @@ import { Override } from '~/utilities'
 import { ActionIconSizeMap } from './ActionIcon.constants'
 
 import { Icon } from '../icon/Icon'
+import { Tooltip } from '../tooltip/Tooltip'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
@@ -195,12 +196,24 @@ const StyledButton = styled('button', {
   ]
 })
 
+const ConditionallyWrapWithTooltip = ({hideTooltip, label, children}) => {
+
+  return hideTooltip? children: <Tooltip>
+      <Tooltip.Trigger asChild>
+        {children}
+      </Tooltip.Trigger>
+      <Tooltip.Content>{label}</Tooltip.Content>
+    </Tooltip>
+
+}
+
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   Stitches.VariantProps<typeof StyledButton> & {
     as?: string | React.ReactNode
     children: React.ReactNode
     label: string
+    hideTooltip?: boolean
   } & NavigatorActions
 >
 
@@ -211,6 +224,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       theme = 'primary',
       appearance = 'simple',
       size = 'sm',
+      hideTooltip = false,
       label,
       href,
       disabled,
@@ -232,34 +246,36 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       : ({ type: 'button' } as const)
 
     return (
-      <StyledButton
-        {...remainingProps}
-        {...optionalLinkProps}
-        aria-label={label}
-        theme={theme}
-        appearance={appearance}
-        size={size}
-        ref={ref}
-        disabled={disabled}
-      >
-        {React.Children.map(children, (child) => {
-          // TS needs this check for any following code to access child.type
-          // even with optional chaining
-          if (!React.isValidElement(child)) {
-            throw new Error(INVALID_CHILDREN_MESSAGE)
-          }
+      <ConditionallyWrapWithTooltip hideTooltip={hideTooltip} label={label}>
+          <StyledButton
+          {...remainingProps}
+          {...optionalLinkProps}
+          aria-label={label}
+          theme={theme}
+          appearance={appearance}
+          size={size}
+          ref={ref}
+          disabled={disabled}
+        >
+          {React.Children.map(children, (child) => {
+            // TS needs this check for any following code to access child.type
+            // even with optional chaining
+            if (!React.isValidElement(child)) {
+              throw new Error(INVALID_CHILDREN_MESSAGE)
+            }
 
-          invariant(
-            child.type === Icon,
-            `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-          )
+            invariant(
+              child.type === Icon,
+              `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+            )
 
-          return React.cloneElement(child, {
-            size: ActionIconSizeMap[size as string],
-            css: { ...(child.props.css ? child.props.css : {}) }
-          })
-        })}
-      </StyledButton>
+            return React.cloneElement(child, {
+              size: ActionIconSizeMap[size as string],
+              css: { ...(child.props.css ? child.props.css : {}) }
+            })
+          })}
+        </StyledButton>
+      </ConditionallyWrapWithTooltip>
     )
   }
 )
