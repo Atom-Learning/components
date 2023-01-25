@@ -28,14 +28,22 @@ const StyledTable = styled('table', {
   width: '100%',
   variants: {
     size: {
+      sm: {
+        [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
+          height: '$4',
+          py: '$1'
+        }
+      },
       md: {
         [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
-          height: '$4'
+          height: '$4',
+          py: '$2'
         }
       },
       lg: {
         [`${TableCell}, ${TableHeaderCell}, ${TableFooterCell}`]: {
-          height: '$5'
+          height: '$6',
+          py: '$4'
         }
       }
     },
