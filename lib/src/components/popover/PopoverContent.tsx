@@ -1,8 +1,8 @@
 import { Close as CloseIcon } from '@atom-learning/icons'
 import { Arrow, Close, Content } from '@radix-ui/react-popover'
 import * as React from 'react'
-import { POPOVER_Z_INDEX } from '~/constants/zIndices'
 
+import { POPOVER_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
 import {
   slideDownAndFade,
@@ -78,6 +78,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
         label={closePopoverText}
         size="md"
         theme="neutral"
+        hideTooltip
       >
         <Icon is={CloseIcon} />
       </ActionIcon>

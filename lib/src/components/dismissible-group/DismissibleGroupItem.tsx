@@ -1,7 +1,8 @@
 import * as React from 'react'
 
-import { DismissibleGroupContext } from './DismissibleGroupRoot'
 import { Dismissible } from '~/components/dismissible'
+
+import { DismissibleGroupContext } from './DismissibleGroupRoot'
 
 export type TDismissibleGroupItemProps = React.ComponentProps<
   typeof Dismissible

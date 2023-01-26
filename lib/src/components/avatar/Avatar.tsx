@@ -2,10 +2,11 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
-import { AvatarPlaceholder } from './AvatarPlaceholder'
+
 import { AvatarIcon } from './AvatarIcon'
-import { AvatarInitial } from './AvatarInitial'
 import { AvatarImage } from './AvatarImage'
+import { AvatarInitial } from './AvatarInitial'
+import { AvatarPlaceholder } from './AvatarPlaceholder'
 
 const avatarRootStyles = {
   display: 'flex',

@@ -1,29 +1,28 @@
-import * as React from 'react'
-import useDeepCompareEffect from 'use-deep-compare-effect'
-import {
-  useReactTable,
-  getCoreRowModel,
-  getPaginationRowModel,
-  getSortedRowModel,
-  getFilteredRowModel
-} from '@tanstack/react-table'
-
 import type { UniqueIdentifier } from '@dnd-kit/core'
-
 import type { PaginationState } from '@tanstack/react-table'
 import {
+  getCoreRowModel,
+  getFilteredRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable
+} from '@tanstack/react-table'
+import * as React from 'react'
+import useDeepCompareEffect from 'use-deep-compare-effect'
+
+import {
+  AsyncDataState,
   DataTableContextType,
+  InitialState,
+  TableData,
   TAsyncDataOptions,
   TAsyncDataResult,
   TDefaultSort,
-  AsyncDataState,
-  TGetAsyncData,
-  TableData,
-  InitialState
+  TGetAsyncData
 } from './DataTable.types'
 import { getNewAsyncData } from './getNewAsyncData'
-import { useSortByColumn } from './useSorting'
 import { usePagination } from './usePagination'
+import { useSortByColumn } from './useSorting'
 
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)

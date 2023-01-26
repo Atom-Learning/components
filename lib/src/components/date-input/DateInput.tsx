@@ -2,6 +2,8 @@ import { CalendarEvent } from '@atom-learning/icons'
 import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
+import { DIALOG_Z_INDEX } from '~/constants/zIndices'
+
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
 import { Calendar, CalendarTranslationProps } from '../calendar/Calendar'
@@ -11,7 +13,6 @@ import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
-import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {
@@ -76,6 +77,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               label={updatedLabels.open}
               size={size}
               theme="neutral"
+              hideTooltip
             >
               <Icon is={CalendarEvent} />
             </ActionIcon>

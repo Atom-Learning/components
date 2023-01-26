@@ -1,12 +1,13 @@
-import type { CSS } from '~/stitches'
-
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import React from 'react'
+
+import type { CSS } from '~/stitches'
+
+import { ActionIcon } from '../../action-icon'
 import { Flex } from '../../flex'
+import { Icon } from '../../icon'
 import { Select } from '../../select'
 import { Text } from '../../text'
-import { ActionIcon } from '../../action-icon'
-import { Icon } from '../../icon'
 import { Tooltip } from '../../tooltip'
 
 export const DirectionButton: React.FC<{
@@ -18,15 +19,16 @@ export const DirectionButton: React.FC<{
   const isNext = direction === 'next'
 
   return (
-    <TooltipActionIcon
+    <ActionIcon
       appearance="outline"
-      icon={isNext ? ChevronRight : ChevronLeft}
       isRounded
       label={isNext ? 'Next page' : 'Previous page'}
       name={isNext ? 'Next page' : 'Previous page'}
       size="md"
       {...remainingProps}
-    />
+    >
+      <Icon is={isNext ? ChevronRight : ChevronLeft} />
+    </ActionIcon>
   )
 }
 
@@ -59,25 +61,5 @@ export const GotoPageSelect: React.FC<{
         pageCount > 1 ? 'pages' : 'page'
       }`}</Text>
     </Flex>
-  )
-}
-
-type TooltipActionIconProps = React.ComponentProps<typeof ActionIcon> &
-  React.ComponentProps<typeof Icon> & {
-    icon: React.FC<React.SVGProps<SVGSVGElement>>
-    iconSize?: 'sm' | 'md' | 'lg'
-  }
-export const TooltipActionIcon: React.FC<
-  Omit<TooltipActionIconProps, 'children' | 'is'>
-> = ({ icon, label, ...rest }) => {
-  return (
-    <Tooltip>
-      <Tooltip.Trigger asChild>
-        <ActionIcon label={label} {...rest}>
-          <Icon is={icon} />
-        </ActionIcon>
-      </Tooltip.Trigger>
-      <Tooltip.Content>{label}</Tooltip.Content>
-    </Tooltip>
   )
 }

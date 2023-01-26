@@ -6,7 +6,7 @@ import { styled } from '~/stitches'
 const StyledList = styled('ul', {
   listStyle: 'none',
   m: 0,
-  p: 0,
+  p: 0
 })
 
 const StyledContent = styled(NavigationMenuPrimitive.Content, {

@@ -2,9 +2,9 @@ import * as React from 'react'
 
 import { Box } from '~/components/box'
 import { Checkbox } from '~/components/checkbox'
+import { InlineMessage } from '~/components/inline-message'
 import { Label } from '~/components/label'
 import { RadioButton } from '~/components/radio-button'
-import { InlineMessage } from '~/components/inline-message'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
