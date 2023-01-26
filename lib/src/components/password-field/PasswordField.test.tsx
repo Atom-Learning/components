@@ -13,6 +13,7 @@ import { PasswordField } from '.'
 const Wrapper: React.FC = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>
 )
+
 describe(`PasswordField component`, () => {
   it('renders a password field', async () => {
     const { container } = render(
