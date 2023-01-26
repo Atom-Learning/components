@@ -2,15 +2,26 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Tooltip } from '../tooltip'
 import { Popover } from '.'
+
+/** `Popover` uses `ActionIcon` that renders a tooltip so it needs a `Tooltip.Provider`.
+ * In practice, `Tooltip.Provider` is rendered once at the root of an app,
+ * but this wrapper provides it for these tests.
+ */
+const Wrapper: React.FC = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
+)
 
 describe(`Popover component`, () => {
   it('renders the trigger with the popover hidden by default', async () => {
     const { container } = render(
-      <Popover>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
@@ -20,10 +31,12 @@ describe(`Popover component`, () => {
 
   it('opens the popover once trigger is clicked', async () => {
     render(
-      <Popover>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     const trigger = screen.getByText('TRIGGER')
@@ -39,10 +52,12 @@ describe(`Popover component`, () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Popover defaultOpen>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover defaultOpen>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     expect(

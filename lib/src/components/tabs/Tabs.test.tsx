@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Tooltip } from '../tooltip'
 import { Tabs } from '.'
 
 const TabsTest = ({ defaultValue = 'tab1' }) => (
@@ -17,18 +18,20 @@ const TabsTest = ({ defaultValue = 'tab1' }) => (
 )
 
 const MobileTabsTest = ({ defaultValue = 'tab1' }) => (
-  <Tabs defaultValue={defaultValue}>
-    <Tabs.TriggerList enableTabScrolling>
-      <Tabs.Trigger value="tab1">
-        Trigger 1 which is going to be long
-      </Tabs.Trigger>
-      <Tabs.Trigger value="tab2">
-        Trigger 2 which is going to be even longer
-      </Tabs.Trigger>
-    </Tabs.TriggerList>
-    <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
-    <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
-  </Tabs>
+  <Tooltip.Provider>
+    <Tabs defaultValue={defaultValue}>
+      <Tabs.TriggerList enableTabScrolling>
+        <Tabs.Trigger value="tab1">
+          Trigger 1 which is going to be long
+        </Tabs.Trigger>
+        <Tabs.Trigger value="tab2">
+          Trigger 2 which is going to be even longer
+        </Tabs.Trigger>
+      </Tabs.TriggerList>
+      <Tabs.Content value="tab1">Important content for tab 1</Tabs.Content>
+      <Tabs.Content value="tab2">Important content for tab 2</Tabs.Content>
+    </Tabs>
+  </Tooltip.Provider>
 )
 
 describe('Tabs component', () => {

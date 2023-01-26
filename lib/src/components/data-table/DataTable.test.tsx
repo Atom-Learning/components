@@ -1,23 +1,24 @@
-import * as React from 'react'
+import type { DragEndEvent } from '@dnd-kit/core'
+import { createColumnHelper } from '@tanstack/react-table'
 import {
+  act,
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved,
-  act
+  waitForElementToBeRemoved
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { createColumnHelper } from '@tanstack/react-table'
-import { DataTable, useDataTable } from '.'
-import { Tooltip } from '../tooltip'
-import { Text } from '../text'
+import * as React from 'react'
+
 import { Button } from '../button'
-import {
-  processDragEndEvent,
-  getRowOrder
-} from './drag-and-drop/DragAndDropContainer'
-import type { DragEndEvent } from '@dnd-kit/core'
+import { Text } from '../text'
+import { Tooltip } from '../tooltip'
+import { DataTable, useDataTable } from '.'
 import { TAsyncDataResult } from './DataTable.types'
+import {
+  getRowOrder,
+  processDragEndEvent
+} from './drag-and-drop/DragAndDropContainer'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -62,7 +63,7 @@ const data = [
   { name: 'tina', hobby: 'acting', id: '18' }
 ]
 
-/** `DataTable.Pagination` uses `Tooltip`s so it needs a `Tooltip.Provider`.
+/** `DataTable.Pagination` uses `ActionIcon`s that renders a tooltip so it needs a `Tooltip.Provider`.
  * In practice, `Tooltip.Provider` is rendered once at the root of an app,
  * but this wrapper provides it for these tests.
  */
@@ -128,9 +129,11 @@ describe('DataTable component', () => {
 
   it('Renders drag handles for draggable table rows', () => {
     const { container } = render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.DragAndDropTable />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.DragAndDropTable />
+        </DataTable>
+      </Wrapper>
     )
 
     expect(container).toMatchSnapshot()
@@ -170,17 +173,19 @@ describe('DataTable component', () => {
       )
     }
     render(
-      <DataTable
-        columns={columns}
-        data={[
-          { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-          { name: 'agatha', hobby: 'crossfit', id: 2 },
-          { name: 'betty', hobby: 'acting', id: 3 }
-        ]}
-      >
-        <DataTable.DragAndDropTable />
-        <DragAndDropMock />
-      </DataTable>
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={[
+            { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+            { name: 'agatha', hobby: 'crossfit', id: 2 },
+            { name: 'betty', hobby: 'acting', id: 3 }
+          ]}
+        >
+          <DataTable.DragAndDropTable />
+          <DragAndDropMock />
+        </DataTable>
+      </Wrapper>
     )
 
     act(() =>
@@ -286,10 +291,12 @@ describe('DataTable.Pagination component', () => {
 describe('DataTable Search component', () => {
   it('Filters table based on any column', async () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.GlobalFilter label="Search" />
-        <DataTable.Table sortable />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.GlobalFilter label="Search" />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
     )
 
     const search = screen.getByRole('searchbox')

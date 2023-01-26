@@ -4,13 +4,16 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Tooltip } from '../tooltip'
 import { Dialog } from '.'
 
 const DialogTest = (props) => (
-  <Dialog {...props}>
-    <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-    <Dialog.Content>CONTENT</Dialog.Content>
-  </Dialog>
+  <Tooltip.Provider>
+    <Dialog {...props}>
+      <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+      <Dialog.Content>CONTENT</Dialog.Content>
+    </Dialog>
+  </Tooltip.Provider>
 )
 
 describe(`Dialog component`, () => {
@@ -77,13 +80,15 @@ describe('Dialog component without close button', () => {
 describe('Dialog component with custom background', () => {
   it('renders', async () => {
     await render(
-      <Dialog>
-        <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-        <Dialog.Content>
-          <Dialog.Background>CUSTOM BACKGROUND</Dialog.Background>
-          CONTENT
-        </Dialog.Content>
-      </Dialog>
+      <Tooltip.Provider>
+        <Dialog>
+          <Dialog.Trigger>TRIGGER</Dialog.Trigger>
+          <Dialog.Content>
+            <Dialog.Background>CUSTOM BACKGROUND</Dialog.Background>
+            CONTENT
+          </Dialog.Content>
+        </Dialog>
+      </Tooltip.Provider>
     )
 
     const trigger = await screen.getByText('TRIGGER')

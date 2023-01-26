@@ -57,6 +57,7 @@ export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStep
               tabIndex={-1}
               appearance="outline"
               ref={forwardedRef}
+              hideTooltip
               {...rest}
             >
               <Icon is={icon} />

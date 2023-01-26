@@ -4,6 +4,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Button, InputField, PasswordField } from '../'
+import { Tooltip } from '../tooltip'
 import { Form } from '.'
 
 describe(`Form component`, () => {
@@ -33,20 +34,22 @@ describe(`Form component`, () => {
 
   it('passes error messages to fields', async () => {
     render(
-      <Form onSubmit={jest.fn()}>
-        <InputField
-          name="name"
-          label="Name"
-          validation={{ required: 'Name is required' }}
-        />
-        <PasswordField
-          name="password"
-          validation={{ required: 'Password is required' }}
-        />
-        <Button type="submit" onClick={jest.fn()}>
-          Submit
-        </Button>
-      </Form>
+      <Tooltip.Provider>
+        <Form onSubmit={jest.fn()}>
+          <InputField
+            name="name"
+            label="Name"
+            validation={{ required: 'Name is required' }}
+          />
+          <PasswordField
+            name="password"
+            validation={{ required: 'Password is required' }}
+          />
+          <Button type="submit" onClick={jest.fn()}>
+            Submit
+          </Button>
+        </Form>
+      </Tooltip.Provider>
     )
 
     userEvent.click(screen.getByText('Submit'))
@@ -57,29 +60,31 @@ describe(`Form component`, () => {
 
   it('passes form methods to render prop function', async () => {
     render(
-      <Form
-        onSubmit={jest.fn()}
-        render={({ formState }) => (
-          <>
-            <InputField
-              name="name"
-              label="Name"
-              validation={{ required: 'Name is required' }}
-            />
-            <PasswordField
-              name="password"
-              validation={{ required: 'Password is required' }}
-            />
-            <Button
-              type="submit"
-              onClick={jest.fn()}
-              disabled={!formState.isValid}
-            >
-              Submit
-            </Button>
-          </>
-        )}
-      />
+      <Tooltip.Provider>
+        <Form
+          onSubmit={jest.fn()}
+          render={({ formState }) => (
+            <>
+              <InputField
+                name="name"
+                label="Name"
+                validation={{ required: 'Name is required' }}
+              />
+              <PasswordField
+                name="password"
+                validation={{ required: 'Password is required' }}
+              />
+              <Button
+                type="submit"
+                onClick={jest.fn()}
+                disabled={!formState.isValid}
+              >
+                Submit
+              </Button>
+            </>
+          )}
+        />
+      </Tooltip.Provider>
     )
 
     expect(await screen.findByText('Submit')).toHaveAttribute('disabled', '')

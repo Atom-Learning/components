@@ -6,10 +6,10 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
-import { ActionIconSizeMap } from './ActionIcon.constants'
 
 import { Icon } from '../icon/Icon'
 import { Tooltip } from '../tooltip/Tooltip'
+import { ActionIconSizeMap } from './ActionIcon.constants'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
@@ -196,15 +196,15 @@ const StyledButton = styled('button', {
   ]
 })
 
-const ConditionallyWrapWithTooltip = ({hideTooltip, label, children}) => {
-
-  return hideTooltip? children: <Tooltip>
-      <Tooltip.Trigger asChild>
-        {children}
-      </Tooltip.Trigger>
+const ConditionallyWrapWithTooltip = ({ hideTooltip, label, children }) => {
+  return hideTooltip ? (
+    children
+  ) : (
+    <Tooltip>
+      <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
       <Tooltip.Content>{label}</Tooltip.Content>
     </Tooltip>
-
+  )
 }
 
 type ActionIconProps = Override<
@@ -247,7 +247,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
 
     return (
       <ConditionallyWrapWithTooltip hideTooltip={hideTooltip} label={label}>
-          <StyledButton
+        <StyledButton
           {...remainingProps}
           {...optionalLinkProps}
           aria-label={label}
