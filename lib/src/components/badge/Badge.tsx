@@ -70,7 +70,7 @@ export const Badge: React.FC<BadgeProps> = ({
   return (
     <StyledBadge role="status" theme={theme} size={size} {...rest}>
       {React.Children.map(children, (child) => {
-        if (typeof child === 'string') {
+        if (typeof child === 'string' || typeof child === 'number') {
           return (
             <Box
               css={{

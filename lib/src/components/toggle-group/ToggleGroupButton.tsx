@@ -95,7 +95,7 @@ export const ToggleGroupButton: React.ForwardRefExoticComponent<
     <StyledButton ref={ref} size={size} isIconOnly={isIconOnly} {...rest}>
       {
         childrenArray.map((child) => {
-          if (!isSingleChild && typeof child === 'string')
+          if (!isSingleChild && (typeof child === 'string' || typeof child === 'number'))
             return <span key={child}>{child}</span>
           if (React.isValidElement(child)) {
             if (child?.type === Icon)
