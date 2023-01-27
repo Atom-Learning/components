@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
@@ -34,9 +35,7 @@ const StyledEmptyStateImage = styled(Image, {
   }
 })
 
-type EmptyStateImageProps = React.ComponentProps<
-  typeof StyledEmptyStateImage
-> &
+type EmptyStateImageProps = React.ComponentProps<typeof StyledEmptyStateImage> &
   React.ComponentProps<typeof Image>
 
 export const EmptyStateImage: React.FC<EmptyStateImageProps> = (props) => (

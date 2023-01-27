@@ -1,7 +1,9 @@
-import React from 'react'
 import { Content } from '@radix-ui/react-accordion'
-import { Box } from '../../box/Box'
+import React from 'react'
+
 import { keyframes, styled } from '~/stitches'
+
+import { Box } from '../../box/Box'
 
 const open = keyframes({
   from: { height: 0 },

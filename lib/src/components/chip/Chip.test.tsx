@@ -1,8 +1,9 @@
+import { Upload } from '@atom-learning/icons'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+
 import { Icon } from '~/components/icon'
-import { Upload } from '@atom-learning/icons'
 
 import { Chip } from './Chip'
 

@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+
 import { Text } from '../text'
 import { AvatarRootContext } from './Avatar'
 import { AvatarPlaceholder } from './AvatarPlaceholder'

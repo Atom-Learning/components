@@ -5,14 +5,14 @@ import * as React from 'react'
 
 import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box'
+import { Button } from '~/components/button'
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
 import { Text } from '~/components/text'
-import { Button } from '~/components/button'
 import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
 
-import { monthNamesShort, weekdayNamesShort, DEFAULT_LABELS } from './constants'
+import { DEFAULT_LABELS, monthNamesShort, weekdayNamesShort } from './constants'
 import { Day } from './Day'
 
 const Grid = styled('div', {

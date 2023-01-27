@@ -1,4 +1,5 @@
 import { Root } from '@radix-ui/react-accordion'
+
 import { styled } from '~/stitches'
 
 export const SidedrawerAccordionRoot = styled(Root, {

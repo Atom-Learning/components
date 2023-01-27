@@ -1,6 +1,5 @@
-import * as React from 'react'
-
 import { User } from '@atom-learning/icons'
+import * as React from 'react'
 
 import { Box } from '../box'
 import { Icon } from '../icon'
