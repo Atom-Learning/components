@@ -5,8 +5,8 @@ import { DataTable } from '../DataTable'
 import { AsyncDataState, TAsyncDataResult } from '../DataTable.types'
 import { useDataTable } from '../DataTableContext'
 import { DataTableLoading } from '../DataTableLoading'
-import { DragAndDropContainer } from './DragAndDropContainer'
 import type { DataTableTableProps } from '../DataTableTable'
+import { DragAndDropContainer } from './DragAndDropContainer'
 import { DragAndDropTableBody } from './DragAndDropTableBody'
 
 type DragAndDropTableProps = DataTableTableProps & {

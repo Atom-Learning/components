@@ -1,5 +1,4 @@
-import { useDataTable } from '../DataTableContext'
-import type { TAsyncDataResult, TableData } from '../DataTable.types'
+import type { DragEndEvent, UniqueIdentifier } from '@dnd-kit/core'
 import {
   closestCenter,
   DndContext,
@@ -8,15 +7,17 @@ import {
   useSensor,
   useSensors
 } from '@dnd-kit/core'
-import type { UniqueIdentifier, DragEndEvent } from '@dnd-kit/core'
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 import {
   arrayMove,
-  sortableKeyboardCoordinates,
   SortableContext,
+  sortableKeyboardCoordinates,
   verticalListSortingStrategy
 } from '@dnd-kit/sortable'
 import * as React from 'react'
+
+import type { TableData, TAsyncDataResult } from '../DataTable.types'
+import { useDataTable } from '../DataTableContext'
 
 const DragAndDropTableContext = React.createContext<{ idColumn: string }>({
   idColumn: 'id'

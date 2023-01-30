@@ -1,14 +1,14 @@
 import * as React from 'react'
 
-import {
-  INLINE_MESSAGE_THEMES,
-  INLINE_MESSAGE_ICONS
-} from './InlineMessage.config'
 import { Flex } from '~/components/flex'
-import { Text } from '~/components/text'
 import { Icon } from '~/components/icon'
-
+import { Text } from '~/components/text'
 import { styled } from '~/stitches'
+
+import {
+  INLINE_MESSAGE_ICONS,
+  INLINE_MESSAGE_THEMES
+} from './InlineMessage.config'
 import { InlineMessageTheme } from './InlineMessage.types'
 
 const InlineMessageContainer = styled(Flex, {

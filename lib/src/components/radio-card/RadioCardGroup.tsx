@@ -1,5 +1,5 @@
 import * as RadioGroup from '@radix-ui/react-radio-group'
-import type * as Stitches from '@stitches/react'
+import type { VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import type { Override } from '~/utilities'
@@ -9,7 +9,7 @@ import { RadioCard, StyledRadioCard } from './RadioCard'
 
 type RadioCardGroupProps = Override<
   Pick<React.ComponentProps<typeof Stack>, 'justify' | 'gap' | 'css'> &
-    Stitches.VariantProps<typeof StyledRadioCard>,
+    VariantProps<typeof StyledRadioCard>,
   React.ComponentProps<typeof RadioGroup.Root>
 >
 

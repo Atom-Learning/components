@@ -1,8 +1,8 @@
-import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { fadeIn, fadeOut } from '~/utilities'
-
 import { Overlay } from '@radix-ui/react-dialog'
+
+import { MAX_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
+import { fadeIn, fadeOut } from '~/utilities'
 
 export const SidedrawerOverlay = styled(Overlay, {
   animationFillMode: 'forwards',

@@ -2,9 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Stepper } from './Stepper'
-
 import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
+import { Stepper } from './Stepper'
 import { Step } from './types'
 
 describe('Stepper', () => {
@@ -300,7 +299,7 @@ describe('Stepper', () => {
     ]
 
     render(
-      <Stepper steps={steps} hideLabels={true}>
+      <Stepper steps={steps} hideLabels>
         <Stepper.Steps />
       </Stepper>
     )

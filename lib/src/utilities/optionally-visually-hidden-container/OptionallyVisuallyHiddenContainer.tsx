@@ -1,5 +1,5 @@
-import * as React from 'react'
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
+import * as React from 'react'
 
 export const OptionallyVisuallyHiddenContainer: React.FC<{
   hidden?: boolean

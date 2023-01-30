@@ -1,5 +1,5 @@
-import React from 'react'
 import type { SortingState } from '@tanstack/react-table'
+import React from 'react'
 
 import { TDefaultSort } from './DataTable.types'
 export const useSortByColumn = (defaultSort: TDefaultSort | undefined) => {

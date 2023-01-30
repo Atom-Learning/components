@@ -3,8 +3,8 @@ import { Controller, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import {
-  InlineFieldWrapper,
-  FieldElementWrapperProps
+  FieldElementWrapperProps,
+  InlineFieldWrapper
 } from '~/components/field-wrapper'
 import { useFieldError } from '~/components/form'
 
