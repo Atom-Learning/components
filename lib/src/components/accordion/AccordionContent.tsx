@@ -17,7 +17,8 @@ const close = keyframes({
 const StyledContent = styled(Content, {
   border: 0,
   width: '100%',
-  bg: '#fff',
+  bg: '$background',
+  overflow: 'hidden',
   '&[data-state="open"]': { borderRadius: '0 0 $0 $0' },
 
   '@allowMotion': {
