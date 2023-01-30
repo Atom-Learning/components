@@ -12,13 +12,6 @@ export const utils = {
     background: value
   }),
 
-  inset: (value: ScaleValue<'space'> | number | string) => ({
-    top: value,
-    right: value,
-    bottom: value,
-    left: value
-  }),
-
   size: (value: ScaleValue<'size'> | number | string) => ({
     height: value,
     width: value
