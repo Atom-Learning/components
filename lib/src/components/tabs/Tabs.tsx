@@ -9,7 +9,7 @@ import { TabsContent } from './TabsContent'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
 
-const StyledRoot = styled(Root)
+const StyledRoot = styled(Root, { width: '100%' })
 
 export const Tabs: React.FC<TabsProps> & {
   TriggerList: typeof TabsTriggerList

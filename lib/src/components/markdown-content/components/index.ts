@@ -1,5 +1,5 @@
 export { MarkdownCode } from './MarkdownCode'
-export { MarkdownEmphasis } from './MarkdownEmphasis'
+export { MarkdownEmphasis, StyledMarkdownEmphasis } from './MarkdownEmphasis'
 export { MarkdownHeading } from './MarkdownHeading'
 export { MarkdownInlineCode } from './MarkdownInlineCode'
 export { MarkdownImage } from './MarkdownImage'

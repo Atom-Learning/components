@@ -2,15 +2,14 @@
 
 exports[`Tabs component renders 1`] = `
 @media  {
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
@@ -54,9 +53,23 @@ exports[`Tabs component renders 1`] = `
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-lmpLrZ {
+  .c-gZZKZD {
     flex-shrink: 0;
     display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-efhaTF {
+    position: relative;
     border-bottom: 1px solid var(--colors-base3);
     width: 100%;
   }
@@ -65,21 +78,25 @@ exports[`Tabs component renders 1`] = `
     flex-grow: 1;
     font-family: var(--fonts-body);
   }
+
+  .c-fGHEql {
+    width: 100%;
+  }
 }
 
 @media  {
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -88,9 +105,9 @@ exports[`Tabs component renders 1`] = `
 
 @media  {
   :root,
-  .t-deVgmU {
+  .t-ixWgRL {
     --colors-background: white;
-    --colors-foreground: #191919;
+    --colors-foreground: #1F1F1F;
     --colors-foreground6plus: white;
     --colors-blue1: #F3F8FF;
     --colors-blue2: #E5F1FF;
@@ -163,66 +180,93 @@ exports[`Tabs component renders 1`] = `
     --colors-accent10: var(--colors-blue10);
     --colors-accentA10: var(--colors-blueA10);
   }
+
+  .base-slate {
+    --colors-base1: var(--colors-slate1);
+    --colors-baseA1: var(--colors-slateA1);
+    --colors-base2: var(--colors-slate2);
+    --colors-baseA2: var(--colors-slateA2);
+    --colors-base3: var(--colors-slate3);
+    --colors-baseA3: var(--colors-slateA3);
+    --colors-base4: var(--colors-slate4);
+    --colors-baseA4: var(--colors-slateA4);
+    --colors-base5: var(--colors-slate5);
+    --colors-baseA5: var(--colors-slateA5);
+    --colors-base6: var(--colors-slate6);
+    --colors-baseA6: var(--colors-slateA6);
+    --colors-base7: var(--colors-slate7);
+    --colors-baseA7: var(--colors-slateA7);
+    --colors-base8: var(--colors-slate8);
+    --colors-baseA8: var(--colors-slateA8);
+    --colors-base9: var(--colors-slate9);
+    --colors-baseA9: var(--colors-slateA9);
+    --colors-base10: var(--colors-slate10);
+    --colors-baseA10: var(--colors-slateA10);
+  }
 }
 
 <div>
   <div
-    class="PJLV"
+    class="c-fGHEql"
     data-orientation="horizontal"
     dir="ltr"
   >
     <div
-      aria-orientation="horizontal"
-      class="c-lmpLrZ PJLV interactive-hiContrast1 accent-blue"
-      data-orientation="horizontal"
-      role="tablist"
-      style="outline: none;"
-      tabindex="0"
+      class="PJLV c-efhaTF interactive-hiContrast1 accent-blue base-slate"
     >
-      <span
-        aria-controls="radix-3-content-tab1"
-        aria-selected="true"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD"
         data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="active"
-        id="radix-3-trigger-tab1"
-        role="tab"
-        tabindex="-1"
-        type="button"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
       >
-        Trigger 1
-      </span>
-      <span
-        aria-controls="radix-3-content-tab2"
-        aria-selected="false"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        id="radix-3-trigger-tab2"
-        role="tab"
-        tabindex="-1"
-        type="button"
-      >
-        Trigger 2
-      </span>
-      <span
-        aria-controls="radix-3-content-tab3"
-        aria-selected="false"
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-bWpZXV"
-        data-disabled=""
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        data-state="inactive"
-        disabled=""
-        id="radix-3-trigger-tab3"
-        role="tab"
-        tabindex="-1"
-        type="button"
-      >
-        Trigger 3
-      </span>
+        <button
+          aria-controls="radix-3-content-tab1"
+          aria-selected="true"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-3-trigger-tab1"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 1
+        </button>
+        <button
+          aria-controls="radix-3-content-tab2"
+          aria-selected="false"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-3-trigger-tab2"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 2
+        </button>
+        <button
+          aria-controls="radix-3-content-tab3"
+          aria-selected="false"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bWpZXV"
+          data-disabled=""
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          disabled=""
+          id="radix-3-trigger-tab3"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Trigger 3
+        </button>
+      </div>
     </div>
     <div
       aria-labelledby="radix-3-trigger-tab1"

@@ -1,6 +1,8 @@
 import { createStitches } from '@stitches/react'
-import { blue, blueA } from './blue'
-import { slate, slateA } from './slate'
+import blue from './blue.json'
+import slate from './slate.json'
+import { generateAlphaColors } from './generateAlphaColors'
+import { utils, media } from '../../stitches'
 
 export const colorSchemes = {}
 
@@ -13,21 +15,20 @@ const generateColors = (tokenPrefix, colorName) => {
   return colors
 }
 
-const white = 'white'
-const black = '#191919'
-
 export const { styled, createTheme } = createStitches({
   theme: {
     colors: {
-      background: white,
-      foreground: black,
-      foreground6plus: white,
+      background: 'white',
+      foreground: slate.slate9,
+      foreground6plus: 'white',
       ...blue,
-      ...blueA,
+      ...generateAlphaColors('blue', blue),
       ...slate,
-      ...slateA
+      ...generateAlphaColors('slate', slate)
     }
-  }
+  },
+  utils,
+  media
 })
 
 colorSchemes['interactive-loContrast1'] = createTheme(
@@ -35,7 +36,7 @@ colorSchemes['interactive-loContrast1'] = createTheme(
   {
     colors: {
       interactiveForeground: '$foreground',
-      interactive1: white,
+      interactive1: 'white',
       interactive2: '$accent1',
       interactive3: '$accent2'
     }

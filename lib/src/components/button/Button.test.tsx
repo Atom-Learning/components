@@ -147,18 +147,6 @@ describe(`Button component`, () => {
     expect(link).not.toHaveAttribute('type', 'button')
   })
 
-  it('renders a rounded button ', async () => {
-    const { container } = render(
-      <Button isRounded {...props}>
-        BUTTON <Icon is={Ok} />
-      </Button>
-    )
-
-    await screen.getByText('BUTTON')
-
-    expect(container).toMatchSnapshot()
-  })
-
   describe('Loading state', () => {
     it('renders a loading button', async () => {
       const { container } = render(

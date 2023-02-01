@@ -1,4 +1,4 @@
-import { Root as DropdownMenuRoot, Portal } from '@radix-ui/react-dropdown-menu'
+import { Portal, Root as DropdownMenuRoot } from '@radix-ui/react-dropdown-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'

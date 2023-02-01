@@ -2,73 +2,63 @@
 
 exports[`StackContent component renders a stack content 1`] = `
 @media  {
-  .c-dcjLby > .c-iSnHBU {
+  .c-NbSdr > *:not(:first-child) {
+    margin-top: var(--space-5);
+  }
+
+  .c-NbSdr > *:not(:last-child) {
+    margin-bottom: var(--space-5);
+  }
+
+  .c-NbSdr > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-dcjLby > .c-iSnHBU:not(:first-child) {
-    margin-top: var(--space-5);
-  }
-
-  .c-dcjLby > .c-iSnHBU:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-fIXJvv {
+  .c-NbSdr > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-dcjLby > .c-fIXJvv:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-iQukjL {
+  .c-NbSdr > .c-iQukjL {
     max-width: 75ch;
   }
 
-  .c-dcjLby > .c-iQukjL:not(:last-child) {
-    margin-bottom: var(--space-5);
-  }
-
-  .c-dcjLby > .c-jpqjUq {
+  .c-NbSdr > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-dcjLby > .c-eWgOGC {
+  .c-NbSdr > .c-iSBxEZ {
     display: block;
   }
 
-  .c-dcjLby > .c-eWgOGC:not(:first-child) {
+  .c-NbSdr > .c-iSBxEZ:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-dcjLby > .c-eWgOGC:not(:last-child) {
+  .c-NbSdr > .c-iSBxEZ:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
-  .c-iSnHBU {
-    color: var(--colors-tonal600);
+  .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
-  .c-jpqjUq {
+  .c-fNKiiB {
     border: 0;
-    background: var(--colors-tonal200);
+    background: var(--colors-tonal100);
   }
 
   .c-iQukjL {
@@ -85,62 +75,48 @@ exports[`StackContent component renders a stack content 1`] = `
     margin-bottom: 0;
   }
 
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 }
 
 @media  {
-  .c-iSnHBU-fOoUdm-size-md {
+  .c-jryFOR-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::before {
+  .c-jryFOR-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::after {
+  .c-jryFOR-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-jpqjUq-jokUAR-orientation-horizontal {
+  .c-fNKiiB-jokUAR-orientation-horizontal {
     height: 1px;
     width: 100%;
   }
@@ -182,27 +158,27 @@ exports[`StackContent component renders a stack content 1`] = `
 }
 
 @media  {
-  .c-jpqjUq-igmqXFB-css {
+  .c-fNKiiB-igmqXFB-css {
     color: red;
   }
 }
 
 <div>
   <div
-    class="c-dcjLby"
+    class="c-NbSdr"
   >
     <h2
-      class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
+      class="c-jryFOR c-jryFOR-fOoUdm-size-md"
     >
       HEADING
     </h2>
     <p
-      class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       TEXT
     </p>
     <hr
-      class="c-jpqjUq c-jpqjUq-jokUAR-orientation-horizontal c-jpqjUq-igmqXFB-css"
+      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-igmqXFB-css"
     />
     <ul
       class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-hUrFFO-noCapsize-true c-iQukjL-DlQlZ-as-ul"
@@ -212,7 +188,7 @@ exports[`StackContent component renders a stack content 1`] = `
       />
     </ul>
     <img
-      class="c-eWgOGC"
+      class="c-iSBxEZ"
       src=""
     />
   </div>

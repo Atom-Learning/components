@@ -80,15 +80,14 @@ exports[`DateField component renders a field in error state 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 }
@@ -146,18 +145,18 @@ exports[`DateField component renders a field in error state 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -206,8 +205,7 @@ exports[`DateField component renders a field in error state 1`] = `
     margin-top: var(--space-2);
   }
 
-  .c-fIXJvv-igszWir-css {
-    color: inherit;
+  .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -262,7 +260,7 @@ exports[`DateField component renders a field in error state 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+              d="M3 5h18v16H3V5Zm18 4H3m4-4V3m10 2V3"
             />
             <rect
               height="2"
@@ -298,7 +296,7 @@ exports[`DateField component renders a field in error state 1`] = `
           />
         </svg>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
         >
           This field is required
         </span>
@@ -507,7 +505,7 @@ exports[`DateField component renders a field with a text input 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M3 5h18v16H3V5zm18 4H3m4-4V3m10 2V3"
+              d="M3 5h18v16H3V5Zm18 4H3m4-4V3m10 2V3"
             />
             <rect
               height="2"

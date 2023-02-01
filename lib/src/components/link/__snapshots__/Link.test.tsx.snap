@@ -2,7 +2,7 @@
 
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
-  .c-kgcOue {
+  .c-fucOQC {
     background: unset;
     border: unset;
     padding: unset;
@@ -12,46 +12,47 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     text-decoration: none;
   }
 
-  .c-kgcOue:focus,
-  .c-kgcOue:hover {
+  .c-fucOQC:focus,
+  .c-fucOQC:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-kgcOue:active {
+  .c-fucOQC:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fIXJvv > .c-kgcOue,
-  .c-iSnHBU > .c-kgcOue,
-  .c-PJLV > .c-kgcOue {
+  .c-dyvMgW > .c-fucOQC,
+  .c-jryFOR > .c-fucOQC,
+  .c-PJLV > .c-fucOQC,
+  .c-bYNGXt > .c-fucOQC {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-fIXJvv > .c-kgcOue::before,
-  .c-fIXJvv > .c-kgcOue::after,
-  .c-iSnHBU > .c-kgcOue::before,
-  .c-iSnHBU > .c-kgcOue::after,
-  .c-PJLV > .c-kgcOue::before,
-  .c-PJLV > .c-kgcOue::after {
+  .c-dyvMgW > .c-fucOQC::before,
+  .c-dyvMgW > .c-fucOQC::after,
+  .c-jryFOR > .c-fucOQC::before,
+  .c-jryFOR > .c-fucOQC::after,
+  .c-PJLV > .c-fucOQC::before,
+  .c-PJLV > .c-fucOQC::after,
+  .c-bYNGXt > .c-fucOQC::before,
+  .c-bYNGXt > .c-fucOQC::after {
     content: none;
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 
-  .c-iSnHBU {
-    color: var(--colors-tonal600);
+  .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
     margin: 0;
@@ -59,74 +60,74 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 }
 
 @media  {
-  .c-kgcOue-gvmVBy-size-md {
+  .c-fucOQC-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-kgcOue-gvmVBy-size-md::before {
+  .c-fucOQC-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-kgcOue-gvmVBy-size-md::after {
+  .c-fucOQC-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-kgcOue-jvTRJO-size-lg {
+  .c-fucOQC-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-kgcOue-jvTRJO-size-lg::before {
+  .c-fucOQC-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-kgcOue-jvTRJO-size-lg::after {
+  .c-fucOQC-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
   }
 
-  .c-kgcOue-hUrFFO-noCapsize-true::before,
-  .c-kgcOue-hUrFFO-noCapsize-true::after {
+  .c-fucOQC-hUrFFO-noCapsize-true::before,
+  .c-fucOQC-hUrFFO-noCapsize-true::after {
     display: none;
   }
 
-  .c-fIXJvv-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fIXJvv-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-iSnHBU-fOoUdm-size-md {
+  .c-jryFOR-fOoUdm-size-md {
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::before {
+  .c-jryFOR-fOoUdm-size-md::before {
     content: '';
     margin-bottom: -0.2174em;
     display: table;
   }
 
-  .c-iSnHBU-fOoUdm-size-md::after {
+  .c-jryFOR-fOoUdm-size-md::after {
     content: '';
     margin-top: -0.2254em;
     display: table;
@@ -135,19 +136,19 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 
 <div>
   <p
-    class="c-fIXJvv c-fIXJvv-gvmVBy-size-md"
+    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
+      class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-hUrFFO-noCapsize-true"
     >
       TEXT LINK
     </button>
   </p>
   <h2
-    class="c-iSnHBU c-iSnHBU-fOoUdm-size-md"
+    class="c-jryFOR c-jryFOR-fOoUdm-size-md"
   >
     <button
-      class="c-kgcOue c-kgcOue-gvmVBy-size-md c-kgcOue-hUrFFO-noCapsize-true"
+      class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-hUrFFO-noCapsize-true"
     >
       HEADING LINK
     </button>
@@ -157,7 +158,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 
 exports[`Link component renders an anchor 1`] = `
 @media  {
-  .c-kgcOue {
+  .c-fucOQC {
     background: unset;
     border: unset;
     padding: unset;
@@ -167,46 +168,49 @@ exports[`Link component renders an anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-kgcOue:focus,
-  .c-kgcOue:hover {
+  .c-fucOQC:focus,
+  .c-fucOQC:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-kgcOue:active {
+  .c-fucOQC:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fIXJvv > .c-kgcOue,
-  .c-iSnHBU > .c-kgcOue,
-  .c-PJLV > .c-kgcOue {
+  .c-dyvMgW > .c-fucOQC,
+  .c-jryFOR > .c-fucOQC,
+  .c-PJLV > .c-fucOQC,
+  .c-bYNGXt > .c-fucOQC {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-fIXJvv > .c-kgcOue::before,
-  .c-fIXJvv > .c-kgcOue::after,
-  .c-iSnHBU > .c-kgcOue::before,
-  .c-iSnHBU > .c-kgcOue::after,
-  .c-PJLV > .c-kgcOue::before,
-  .c-PJLV > .c-kgcOue::after {
+  .c-dyvMgW > .c-fucOQC::before,
+  .c-dyvMgW > .c-fucOQC::after,
+  .c-jryFOR > .c-fucOQC::before,
+  .c-jryFOR > .c-fucOQC::after,
+  .c-PJLV > .c-fucOQC::before,
+  .c-PJLV > .c-fucOQC::after,
+  .c-bYNGXt > .c-fucOQC::before,
+  .c-bYNGXt > .c-fucOQC::after {
     content: none;
   }
 }
 
 @media  {
-  .c-kgcOue-gvmVBy-size-md {
+  .c-fucOQC-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-kgcOue-gvmVBy-size-md::before {
+  .c-fucOQC-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-kgcOue-gvmVBy-size-md::after {
+  .c-fucOQC-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -215,7 +219,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="c-kgcOue c-kgcOue-gvmVBy-size-md"
+    class="c-fucOQC c-fucOQC-gvmVBy-size-md"
     href="https://google.com/"
   >
     GOOGLE
@@ -225,7 +229,7 @@ exports[`Link component renders an anchor 1`] = `
 
 exports[`Link component renders an large anchor 1`] = `
 @media  {
-  .c-kgcOue {
+  .c-fucOQC {
     background: unset;
     border: unset;
     padding: unset;
@@ -235,63 +239,66 @@ exports[`Link component renders an large anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-kgcOue:focus,
-  .c-kgcOue:hover {
+  .c-fucOQC:focus,
+  .c-fucOQC:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-kgcOue:active {
+  .c-fucOQC:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fIXJvv > .c-kgcOue,
-  .c-iSnHBU > .c-kgcOue,
-  .c-PJLV > .c-kgcOue {
+  .c-dyvMgW > .c-fucOQC,
+  .c-jryFOR > .c-fucOQC,
+  .c-PJLV > .c-fucOQC,
+  .c-bYNGXt > .c-fucOQC {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-fIXJvv > .c-kgcOue::before,
-  .c-fIXJvv > .c-kgcOue::after,
-  .c-iSnHBU > .c-kgcOue::before,
-  .c-iSnHBU > .c-kgcOue::after,
-  .c-PJLV > .c-kgcOue::before,
-  .c-PJLV > .c-kgcOue::after {
+  .c-dyvMgW > .c-fucOQC::before,
+  .c-dyvMgW > .c-fucOQC::after,
+  .c-jryFOR > .c-fucOQC::before,
+  .c-jryFOR > .c-fucOQC::after,
+  .c-PJLV > .c-fucOQC::before,
+  .c-PJLV > .c-fucOQC::after,
+  .c-bYNGXt > .c-fucOQC::before,
+  .c-bYNGXt > .c-fucOQC::after {
     content: none;
   }
 }
 
 @media  {
-  .c-kgcOue-gvmVBy-size-md {
+  .c-fucOQC-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-kgcOue-gvmVBy-size-md::before {
+  .c-fucOQC-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-kgcOue-gvmVBy-size-md::after {
+  .c-fucOQC-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-kgcOue-jvTRJO-size-lg {
+  .c-fucOQC-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-kgcOue-jvTRJO-size-lg::before {
+  .c-fucOQC-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-kgcOue-jvTRJO-size-lg::after {
+  .c-fucOQC-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
@@ -300,7 +307,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="c-kgcOue c-kgcOue-jvTRJO-size-lg"
+    class="c-fucOQC c-fucOQC-jvTRJO-size-lg"
     href="https://google.com/"
   >
     GOOGLE

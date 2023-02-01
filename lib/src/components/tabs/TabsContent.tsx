@@ -7,3 +7,5 @@ const StyledTabsContent = styled(Content, {
 })
 
 export const TabsContent = StyledTabsContent
+
+TabsContent.displayName = 'TabsContent'

@@ -1,14 +1,14 @@
 import * as React from 'react'
 
-import {
-  INLINE_MESSAGE_THEMES,
-  INLINE_MESSAGE_ICONS
-} from './InlineMessage.config'
 import { Flex } from '~/components/flex'
-import { Text } from '~/components/text'
 import { Icon } from '~/components/icon'
-
+import { Text } from '~/components/text'
 import { styled } from '~/stitches'
+
+import {
+  INLINE_MESSAGE_ICONS,
+  INLINE_MESSAGE_THEMES
+} from './InlineMessage.config'
 import { InlineMessageTheme } from './InlineMessage.types'
 
 const InlineMessageContainer = styled(Flex, {
@@ -44,11 +44,7 @@ export const InlineMessage: React.FC<TInlineMessageProps> = ({
         is={INLINE_MESSAGE_ICONS[theme as InlineMessageTheme]}
       />
     )}
-    <Text
-      as="span"
-      size={size}
-      css={{ color: 'inherit', transform: 'translateY($space$0)' }}
-    >
+    <Text as="span" size={size} css={{ transform: 'translateY($space$0)' }}>
       {children}
     </Text>
   </InlineMessageContainer>

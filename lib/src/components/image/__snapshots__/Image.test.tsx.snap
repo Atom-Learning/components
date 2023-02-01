@@ -2,30 +2,16 @@
 
 exports[`Image component renders an image 1`] = `
 @media  {
-  .c-eWgOGC {
+  .c-iSBxEZ {
     vertical-align: middle;
     max-width: 100%;
-  }
-
-  .c-eWgOGC[width] {
-    width: auto;
-  }
-
-  .c-eWgOGC[width][height] {
-    height: auto;
-  }
-
-  .c-eWgOGC[src$=".svg"] {
-    width: 100%;
-    height: auto;
-    max-width: none;
   }
 }
 
 <div>
   <img
     alt=""
-    class="c-eWgOGC"
+    class="c-iSBxEZ"
     src="http://placekitten.com/200/300"
   />
 </div>

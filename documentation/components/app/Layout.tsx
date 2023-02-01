@@ -1,5 +1,4 @@
-import { Box } from '@atom-learning/components'
-import { ColorScheme } from '@atom-learning/color-scheme'
+import { Box, ColorScheme } from '@atom-learning/components'
 import { Header } from './Header'
 import { Meta } from './Meta'
 

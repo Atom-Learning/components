@@ -6,6 +6,10 @@ exports[`NumberInput component renders number input  1`] = `
     display: flex;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -28,6 +32,36 @@ exports[`NumberInput component renders number input  1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -158,6 +192,12 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -166,50 +206,6 @@ exports[`NumberInput component renders number input  1`] = `
   .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .c-fPoCzx-ihgsOSq-css {

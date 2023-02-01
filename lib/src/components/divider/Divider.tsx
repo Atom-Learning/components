@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 export const StyledDivider = styled('hr', {
   border: 0,
-  bg: '$tonal200',
+  bg: '$tonal100',
   variants: {
     orientation: {
       horizontal: { height: 1, width: '100%' },

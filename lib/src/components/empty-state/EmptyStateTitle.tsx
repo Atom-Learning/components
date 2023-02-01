@@ -4,6 +4,7 @@ export const EmptyStateTitle = styled('h2', {
   color: '$tonal400',
   fontFamily: '$body',
   fontWeight: '600',
+  m: 0,
   variants: {
     size: {
       xs: {

@@ -1,12 +1,11 @@
-import * as React from 'react'
-import * as ToggleGroup from '@radix-ui/react-toggle-group'
-
 import { Ok } from '@atom-learning/icons'
+import * as ToggleGroup from '@radix-ui/react-toggle-group'
+import * as React from 'react'
 
+import { Chip } from '~/components/chip'
+import { Icon } from '~/components/icon'
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
-import { Icon } from '~/components/icon'
-import { Chip } from '~/components/chip'
 
 const StyledChipToggleIcon = styled(Icon, {
   display: 'none'

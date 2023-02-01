@@ -1,14 +1,11 @@
 import { Content, Heading as HeadingType } from 'mdast'
 import * as React from 'react'
 
-import { CSS } from '~/stitches'
-
 import { Heading, HeadingProps } from '../../heading/Heading'
 
 type MarkdownHeadingProps = {
   node: HeadingType
   handleNode: (node: Content) => React.ReactElement
-  css?: CSS
 }
 
 const getHeadingProps = (depth: number): HeadingProps => {
@@ -31,12 +28,12 @@ const getHeadingProps = (depth: number): HeadingProps => {
 export const MarkdownHeading: React.FC<MarkdownHeadingProps> = ({
   node,
   handleNode,
-  css
+  ...rest
 }) => {
   const { as, size } = getHeadingProps(node.depth)
 
   return (
-    <Heading as={as} size={size} css={{ color: 'inherit', ...css } as CSS}>
+    <Heading as={as} size={size} {...rest}>
       {node.children?.map(handleNode)}
     </Heading>
   )

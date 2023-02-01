@@ -10,9 +10,6 @@
     "start": "next start",
     "lint": "next lint"
   },
-  "peerDependencies": {
-    "@atom-learning/color-scheme": "0.0.0-semantically-released"
-  },
   "dependencies": {
     "@atom-learning/components": "0.0.0-semantically-released",
     "@atom-learning/icons": "^1.14.0",

@@ -12,7 +12,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-kgcOue {
+  .c-fucOQC {
     background: unset;
     border: unset;
     padding: unset;
@@ -22,29 +22,32 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-kgcOue:focus,
-  .c-kgcOue:hover {
+  .c-fucOQC:focus,
+  .c-fucOQC:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-kgcOue:active {
+  .c-fucOQC:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fIXJvv > .c-kgcOue,
-  .c-iSnHBU > .c-kgcOue,
-  .c-PJLV > .c-kgcOue {
+  .c-dyvMgW > .c-fucOQC,
+  .c-jryFOR > .c-fucOQC,
+  .c-PJLV > .c-fucOQC,
+  .c-bYNGXt > .c-fucOQC {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-fIXJvv > .c-kgcOue::before,
-  .c-fIXJvv > .c-kgcOue::after,
-  .c-iSnHBU > .c-kgcOue::before,
-  .c-iSnHBU > .c-kgcOue::after,
-  .c-PJLV > .c-kgcOue::before,
-  .c-PJLV > .c-kgcOue::after {
+  .c-dyvMgW > .c-fucOQC::before,
+  .c-dyvMgW > .c-fucOQC::after,
+  .c-jryFOR > .c-fucOQC::before,
+  .c-jryFOR > .c-fucOQC::after,
+  .c-PJLV > .c-fucOQC::before,
+  .c-PJLV > .c-fucOQC::after,
+  .c-bYNGXt > .c-fucOQC::before,
+  .c-bYNGXt > .c-fucOQC::after {
     content: none;
   }
 
@@ -95,15 +98,14 @@ exports[`FieldWrapper component renders 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 }
@@ -131,18 +133,18 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-kgcOue-bndJoy-size-sm {
+  .c-fucOQC-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-kgcOue-bndJoy-size-sm::before {
+  .c-fucOQC-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-kgcOue-bndJoy-size-sm::after {
+  .c-fucOQC-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -163,18 +165,18 @@ exports[`FieldWrapper component renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -192,8 +194,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin-top: var(--space-2);
   }
 
-  .c-fIXJvv-igszWir-css {
-    color: inherit;
+  .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -212,7 +213,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-kgcOue c-kgcOue-bndJoy-size-sm"
+        class="c-fucOQC c-fucOQC-bndJoy-size-sm"
         href="https://example.com"
       >
         Example prompt
@@ -249,7 +250,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <span
-        class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
       >
         Example error
       </span>

@@ -110,9 +110,9 @@ exports[`Accordion component renders an accordion 1`] = `
 
 @media  {
   :root,
-  .t-deVgmU {
+  .t-ixWgRL {
     --colors-background: white;
-    --colors-foreground: #191919;
+    --colors-foreground: #1F1F1F;
     --colors-foreground6plus: white;
     --colors-blue1: #F3F8FF;
     --colors-blue2: #E5F1FF;
@@ -199,7 +199,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-dkSJnW PJLV interactive-loContrast1 accent-slate"
+        class="c-dkSJnW interactive-loContrast1 accent-slate"
         data-radix-collection-item=""
         data-state="open"
         id="radix-1"
@@ -235,7 +235,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-2"
         aria-expanded="false"
-        class="c-dkSJnW PJLV interactive-loContrast1 accent-slate"
+        class="c-dkSJnW interactive-loContrast1 accent-slate"
         data-radix-collection-item=""
         data-state="closed"
         id="radix-3"

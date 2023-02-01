@@ -7,7 +7,7 @@ import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
 
-import { ColorScheme } from '@atom-learning/color-scheme'
+import { ColorScheme } from '~/experiments/color-scheme'
 
 const RotatingIcon = styled(Icon, {
   transition: 'transform 300ms',
@@ -60,13 +60,14 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   ...remainingProps
 }) => (
   <ColorScheme
-    as={StyledTrigger}
+    asChild
     accent="slate"
     interactive="loContrast1"
     {...colorScheme}
-    {...remainingProps}
   >
-    {children}
-    <RotatingIcon is={ChevronDown} />
+    <StyledTrigger {...remainingProps}>
+      {children}
+      <RotatingIcon is={ChevronDown} />
+    </StyledTrigger>
   </ColorScheme>
 )

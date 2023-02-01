@@ -1,5 +1,5 @@
-import { fireEvent, render } from '@testing-library/react'
 import { screen } from '@testing-library/dom'
+import { fireEvent, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 

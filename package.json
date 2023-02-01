@@ -3,12 +3,9 @@
   "name": "design-system",
   "workspaces": [
     "lib",
-    "documentation",
-    "color-scheme"
+    "documentation"
   ],
   "scripts": {
-    "dev:color-scheme": "cd color-scheme && yarn dev",
-    "build:color-scheme": "cd color-scheme && yarn build",
     "dev:lib": "cd lib && yarn build:proptypes && yarn dev",
     "build:lib": "cd lib && yarn build:proptypes && yarn build:lib",
     "test:lib": "cd lib && yarn test",

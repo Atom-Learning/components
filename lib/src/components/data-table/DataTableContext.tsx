@@ -1,110 +1,145 @@
-import * as React from 'react'
+import type { UniqueIdentifier } from '@dnd-kit/core'
+import type { PaginationState } from '@tanstack/react-table'
 import {
-  useReactTable,
   getCoreRowModel,
+  getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
-  getFilteredRowModel
+  useReactTable
 } from '@tanstack/react-table'
-import type {
-  VisibilityTableState,
-  ColumnOrderTableState,
-  ColumnPinningTableState,
-  FiltersTableState,
-  SortingTableState,
-  ExpandedTableState,
-  GroupingTableState,
-  ColumnSizingTableState,
-  PaginationTableState,
-  RowSelectionTableState,
-  SortingState,
-  Table
-} from '@tanstack/react-table'
+import * as React from 'react'
+import useDeepCompareEffect from 'use-deep-compare-effect'
 
-type DataTableContextType<T = unknown> = Table<T> & {
-  setIsSortable: React.Dispatch<React.SetStateAction<boolean>>
-  applyPagination: () => void
-  getTotalRows: () => number
-  isSortable: boolean
-}
+import {
+  AsyncDataState,
+  DataTableContextType,
+  InitialState,
+  TableData,
+  TAsyncDataOptions,
+  TAsyncDataResult,
+  TDefaultSort,
+  TGetAsyncData
+} from './DataTable.types'
+import { getNewAsyncData } from './getNewAsyncData'
+import { usePagination } from './usePagination'
+import { useSortByColumn } from './useSorting'
 
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
-type InitialState = Partial<
-  VisibilityTableState &
-    ColumnOrderTableState &
-    ColumnPinningTableState &
-    FiltersTableState &
-    SortingTableState &
-    ExpandedTableState &
-    GroupingTableState &
-    ColumnSizingTableState &
-    PaginationTableState &
-    RowSelectionTableState
->
-
-type TableProviderProps = {
+type DataTableProviderProps = {
   columns
-  data: Array<Record<string, unknown>>
-  defaultSort?: { column: string; direction: 'asc' | 'desc' }
+  defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
-}
+} & (
+  | { data: TableData; getAsyncData?: never }
+  | { data?: never; getAsyncData: TGetAsyncData }
+)
 
 export const DataTableProvider = ({
   columns,
-  data,
+  data: dataProp = [],
+  getAsyncData,
   defaultSort,
   initialState = undefined,
   children
-}: TableProviderProps): JSX.Element => {
-  const [isPaginated, setIsPaginated] = React.useState<boolean>(
-    !!initialState?.pagination
+}: DataTableProviderProps): JSX.Element => {
+  const [data, setData] = React.useState<TAsyncDataResult>({
+    results: dataProp ?? [],
+    total: dataProp?.length ?? 0
+  })
+  const { isPaginated, applyPagination, paginationState, setPaginationState } =
+    usePagination(initialState?.pagination)
+
+  const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
+    AsyncDataState.NONE
   )
 
-  const [isSortable, setIsSortable] = React.useState<boolean>(false)
-  const [sorting, setSorting] = React.useState<SortingState>(
-    defaultSort
-      ? [
-          {
-            id: defaultSort.column,
-            desc: defaultSort.direction === 'desc'
-          }
-        ]
-      : []
+  const [globalFilter, setGlobalFilter] = React.useState<string>('')
+
+  const { setIsSortable, isSortable, sorting, setSorting } =
+    useSortByColumn(defaultSort)
+
+  const runAsyncData = React.useCallback(
+    async (overrideAsyncDataOptions: Partial<TAsyncDataOptions>) => {
+      if (!getAsyncData) return
+
+      try {
+        setAsyncDataState(AsyncDataState.PENDING)
+
+        const newData = await getNewAsyncData(
+          getAsyncData,
+          overrideAsyncDataOptions,
+          paginationState as PaginationState,
+          sorting,
+          globalFilter
+        )
+
+        setData(newData as TAsyncDataResult)
+        setAsyncDataState(AsyncDataState.FULFILLED)
+      } catch (error) {
+        setAsyncDataState(AsyncDataState.REJECTED)
+      }
+    },
+    [
+      getAsyncData,
+      paginationState?.pageIndex,
+      paginationState?.pageSize,
+      sorting,
+      globalFilter
+    ]
   )
 
-  const applyPagination = React.useCallback(() => {
-    setIsPaginated(true)
-  }, [])
+  React.useEffect(() => {
+    runAsyncData({})
+  }, [runAsyncData])
 
-  const getTotalRows = () => data.length
+  useDeepCompareEffect(() => {
+    if (!dataProp) return
+
+    setData({ results: dataProp, total: dataProp.length })
+  }, [dataProp])
+
+  const getTotalRows = () => data.total
 
   const table = useReactTable<unknown>({
     columns,
-    data: data,
+    data: data.results,
+    pageCount: paginationState
+      ? Math.ceil(getTotalRows() / paginationState.pageSize)
+      : -1,
+    initialState: initialState,
+    state: {
+      sorting,
+      globalFilter,
+      pagination: paginationState
+    },
+    manualPagination: getAsyncData && isPaginated,
+    manualSorting: getAsyncData && isPaginated,
+    enableSorting: asyncDataState !== AsyncDataState.PENDING,
+    enableGlobalFilter: !getAsyncData,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
-    initialState: initialState,
-    state: {
-      sorting
-    },
-
+    getFilteredRowModel: getFilteredRowModel(),
+    onPaginationChange: isPaginated ? setPaginationState : undefined,
     onSortingChange: setSorting,
-    getFilteredRowModel: getFilteredRowModel()
+    onGlobalFilterChange: setGlobalFilter
   })
 
-  const value = React.useMemo(() => {
+  const value: DataTableContextType = React.useMemo(() => {
     return {
       ...table,
-
+      data,
+      setData,
       setIsSortable,
       applyPagination,
       getTotalRows,
-      isSortable
+      isSortable,
+      asyncDataState,
+      runAsyncData
     }
   }, [table, applyPagination, getTotalRows, isSortable])
 

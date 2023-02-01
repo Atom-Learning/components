@@ -1,13 +1,16 @@
 import * as React from 'react'
 
 import { DataTableBody } from './DataTableBody'
-import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableProvider } from './DataTableContext'
+import { DataTableDataCell } from './DataTableDataCell'
+import { DataTableError } from './DataTableError'
+import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableHead } from './DataTableHead'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
+import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
-import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableTable } from './DataTableTable'
+import { DragAndDropContainer, DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
@@ -23,6 +26,10 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    */
   DataCell: typeof DataTableDataCell
+  /**
+   * Used in place of `DataTable.Table` to render a table with rows that the user can sort by drag-and-drop
+   */
+  DragAndDropTable: typeof DragAndDropTable
   /** Default global search implementation for `DataTable`
    *
    * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
@@ -70,6 +77,28 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    */
   Table: typeof DataTableTable
+
+  /** Default loading implementation for remote data
+   *
+   * Renders a loading component while fetching the paginated data using `getAsyncData`.
+   *
+   * If you need more customisation, you can compose your own implentation, `asyncDataState`
+   * can be retrieved from `useDataTable`
+   */
+  Loading: typeof DataTableLoading
+
+  /** Default error implementation for remote data
+   *
+   * Renders an error component when `getAsyncData` promise rejects.
+   * Children are rendered as a function, it exposes a `runAsyncData` function to the children component.
+   * `runAsyncData()` can be used to retry fetching the paginated data with the current pageIndex, pageSize
+   * and sorting parameters or your own custom paginated options.
+   *
+   * If you need more customisation, you can compose your own implentation, `asyncDataState` and `runAsyncData()`
+   * can be retrieved from `useDataTable`
+   *
+   */
+  Error: typeof DataTableError
 }
 
 /** Context provider for DataTable state and logic.
@@ -81,9 +110,12 @@ export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
 
 DataTable.Body = DataTableBody
 DataTable.DataCell = DataTableDataCell
+DataTable.DragAndDropTable = DragAndDropTable
 DataTable.Head = DataTableHead
 DataTable.HeaderCell = DataTableHeaderCell
 DataTable.Pagination = Pagination
 DataTable.Row = DataTableRow
 DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable
+DataTable.Loading = DataTableLoading
+DataTable.Error = DataTableError

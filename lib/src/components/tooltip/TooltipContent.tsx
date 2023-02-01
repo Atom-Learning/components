@@ -1,7 +1,7 @@
 import { Arrow, Content } from '@radix-ui/react-tooltip'
 import * as React from 'react'
-import { TOOLTIP_Z_INDEX } from '~/constants/zIndices'
 
+import { TOOLTIP_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
 import {
   slideDownAndFade,

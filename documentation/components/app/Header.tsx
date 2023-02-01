@@ -1,4 +1,4 @@
-import { Badge, Image, styled, ActionIcon, Icon } from '@atom-learning/components'
+import { Badge, Image, styled, ActionIcon, Icon, ColorScheme } from '@atom-learning/components'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
@@ -6,7 +6,6 @@ import * as React from 'react'
 import buildConstants from '~/lib/build/constants.json'
 import { Navigation } from '~/components/app'
 
-import { ColorScheme } from '@atom-learning/color-scheme'
 import { Hamburger } from '@atom-learning/icons'
 
 

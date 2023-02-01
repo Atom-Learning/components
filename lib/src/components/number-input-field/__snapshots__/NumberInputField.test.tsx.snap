@@ -12,6 +12,10 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -34,6 +38,36 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -122,15 +156,14 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-right: var(--space-2);
   }
 
-  .c-fIXJvv {
-    color: var(--colors-tonal600);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
     font-weight: 400;
     margin: 0;
   }
 
-  .c-fIXJvv > .c-fIXJvv:before,
-  .c-fIXJvv > .c-fIXJvv:after {
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
 }
@@ -192,18 +225,18 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-width: 1.5;
   }
 
-  .c-fIXJvv-bndJoy-size-sm {
+  .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::before {
+  .c-dyvMgW-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fIXJvv-bndJoy-size-sm::after {
+  .c-dyvMgW-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -240,6 +273,12 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -250,63 +289,18 @@ exports[`NumberInputField component renders a field in error state - has no prog
     pointer-events: none;
   }
 
-  .c-dhzjXW-ijkHUQU-css {
-    margin-top: var(--space-2);
-  }
-
-  .c-fIXJvv-igszWir-css {
-    color: inherit;
-    transform: translateY(var(--space-0));
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
   .c-fPoCzx-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+  }
+
+  .c-dhzjXW-ijkHUQU-css {
+    margin-top: var(--space-2);
+  }
+
+  .c-dyvMgW-iiTbKsx-css {
+    transform: translateY(var(--space-0));
   }
 }
 
@@ -418,7 +412,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           />
         </svg>
         <span
-          class="c-fIXJvv c-fIXJvv-bndJoy-size-sm c-fIXJvv-igszWir-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
         >
           Cannot enter values less than 7
         </span>
@@ -445,6 +439,10 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -467,6 +465,36 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -625,6 +653,12 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -633,50 +667,6 @@ exports[`NumberInputField component renders a field with a disabled input - has 
   .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .c-fPoCzx-ihgsOSq-css {
@@ -792,6 +782,10 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -814,6 +808,36 @@ exports[`NumberInputField component renders a field with a number input - has no
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -972,6 +996,12 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -980,50 +1010,6 @@ exports[`NumberInputField component renders a field with a number input - has no
   .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .c-fPoCzx-ihgsOSq-css {

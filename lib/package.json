@@ -11,20 +11,19 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "dev": "yarn build:local-deps && NODE_ENV=development rollup -c -w",
-    "build:lib": "yarn build:local-deps && NODE_ENV=production rollup -c",
-    "build:types": "yarn build:local-deps && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
+    "dev": "NODE_ENV=development rollup -c -w",
+    "build:lib": "NODE_ENV=production rollup -c",
+    "build:types": "NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
     "build:proptypes": "node ./scripts/generate-component-props.mjs",
-    "build:local-deps": "cd .. && yarn build:color-scheme",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
     "add-component": "node ./scripts/add-component.mjs",
     "prepublishOnly": "run-s clean build:lib build:types build:proptypes",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
-    "test": "yarn build:local-deps && jest --coverage",
-    "test:watch": "yarn build:local-deps && jest --watch",
-    "test:ci": "yarn build:local-deps && jest --silent --ci",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --silent --ci",
     "validate": "run-p validate:**",
     "validate:linting": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "validate:size": "yarn build:lib && size-limit",
@@ -59,9 +58,9 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/icons": "1.5.0",
+    "@atom-learning/icons": "1.14.0",
     "@atom-learning/jest-stitches": "1.0.10",
-    "@atom-learning/theme": "1.1.0",
+    "@atom-learning/theme": "1.1.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@radix-ui/react-id": "0.1.5",
@@ -108,6 +107,7 @@
     "react-docgen-typescript": "2.1.0",
     "rollup": "^2.39.0",
     "rollup-plugin-esbuild": "^4.8.2",
+    "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-summary": "^1.3.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "^4.2.2",
@@ -127,8 +127,11 @@
     "react-dom": "^17"
   },
   "dependencies": {
-    "@atom-learning/color-scheme": "0.0.0-semantically-released",
-    "@atom-learning/theme": "1.1.0",
+    "@atom-learning/theme": "1.1.1",
+    "@dnd-kit/core": "^6.0.5",
+    "@dnd-kit/modifiers": "^6.0.0",
+    "@dnd-kit/sortable": "^7.0.1",
+    "@dnd-kit/utilities": "^3.2.0",
     "@radix-ui/react-accordion": "^1.0.0",
     "@radix-ui/react-alert-dialog": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.0",
@@ -146,7 +149,7 @@
     "@radix-ui/react-tooltip": "^1.0.0",
     "@radix-ui/react-visually-hidden": "^1.0.0",
     "@reach/combobox": "^0.16.1",
-    "@stitches/react": "^1.2.8",
+    "@stitches/react": "1.3.1-1",
     "@tanstack/react-table": "^8.5.11",
     "@types/react": "^17.0.30",
     "color2k": "^2.0.0",
@@ -163,12 +166,13 @@
     "react-hot-toast": "^1.0.2",
     "react-player": "^2.9.0",
     "throttle-debounce": "^3.0.1",
-    "uid": "^2.0.0"
+    "uid": "^2.0.0",
+    "use-deep-compare-effect": "^1.8.1"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "bash scripts/prevent-commit.sh && lint-staged"
+      "pre-commit": "bash ../scripts/prevent-commit.sh && lint-staged"
     }
   },
   "commitlint": {

@@ -8,7 +8,7 @@ import { TableFooter } from './TableFooter'
 import { TableFooterCell } from './TableFooterCell'
 import { TableHeader } from './TableHeader'
 import { TableHeaderCell } from './TableHeaderCell'
-import { TableRow } from './TableRow'
+import { StyledRow, TableRow } from './TableRow'
 
 type TableSubComponents = {
   Body: typeof TableBody
@@ -45,7 +45,7 @@ const StyledTable = styled('table', {
           '&:first-of-type': { borderTopLeftRadius: '$0' },
           '&:last-of-type': { borderTopRightRadius: '$0' }
         },
-        [`${TableRow}:last-child`]: {
+        [`${StyledRow}:last-child`]: {
           [`${TableCell}:first-child`]: { borderBottomLeftRadius: '$0' },
           [`${TableCell}:last-child`]: { borderBottomRightRadius: '$0' }
         }

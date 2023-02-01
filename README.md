@@ -6,13 +6,12 @@ More information on each area lives in its own `README.md`:
 
 - **`./lib`**: source for the `@atom-learning/components` package; [for more information on `./lib` see `./lib/README.md`](https://github.com/Atom-Learning/components/tree/main/lib#readme)
 - **`./documentation`**: source for the documentation [website](https://design.atomlearning.technology/) ; [for more information on `./documentation` see `./documentation/README.md`](https://github.com/Atom-Learning/components/tree/main/documentation#readme)
-- **`./color-sceme`**: _local only_ `@atom-learning/color-sceme` package; [for more information on `./color-sceme` see `./color-sceme/README.md`](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme)
 
 ## Working with the repo for local development
 
 (!) Don't forget to run `yarn install` to get all needed dependencies downloaded.
 
-When developing, you will always want to be running the **library** for development: `yarn dev:lib`. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
+When developing, you will always want to be running the **library** for development: `yarn dev:lib`. If not developing the library just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
 
 To view your changes you can use either of the two ways as explained below. Regardless of which option you choose, make sure to update or add (for new components) the appropriate documentation in the NetlifyCMS website (`./documentation`) as part of your PR!
 
