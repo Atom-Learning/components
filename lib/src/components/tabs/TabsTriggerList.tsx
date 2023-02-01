@@ -44,7 +44,7 @@ export const TabsTriggerList: React.FC<
   const [listRef, setListRefCallback] = useCallbackRefState()
 
   const { width } = useSize({ element: listRef, delay: 500 })
-  const { left } = useScrollPosition({ element: listRef, delay: 100 })
+  const { left } = useScrollPosition({ element: listRef, delay: 100, delayMethod: 'debounce' })
 
   const canScrollXAxis = React.useMemo(() => {
     if (!listRef) return false
