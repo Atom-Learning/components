@@ -168,7 +168,15 @@ exports[`ToggleGroup renders 1`] = `
         tabindex="-1"
         type="button"
       >
-         button A 
+        <span>
+           
+        </span>
+        <span>
+          button A
+        </span>
+        <span>
+           
+        </span>
       </button>
       <button
         aria-pressed="false"

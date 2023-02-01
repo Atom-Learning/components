@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
     "outDir": "./dist",
     "strictNullChecks": true,
     "module": "ESNext",

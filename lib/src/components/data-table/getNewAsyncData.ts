@@ -1,7 +1,7 @@
 import type {
   PaginationState,
-  SortingState,
-  SortDirection
+  SortDirection,
+  SortingState
 } from '@tanstack/react-table'
 import invariant from 'invariant'
 

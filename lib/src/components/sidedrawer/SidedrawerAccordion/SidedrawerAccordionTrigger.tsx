@@ -1,9 +1,11 @@
 import { ChevronDown } from '@atom-learning/icons'
-import React from 'react'
 import { Header, Trigger } from '@radix-ui/react-accordion'
+import React from 'react'
+
 import { styled } from '~/stitches'
-import { Icon } from '../../icon/Icon'
+
 import { Flex } from '../../flex/Flex'
+import { Icon } from '../../icon/Icon'
 import { sidedrawerItemStyles } from '../Sidedrawer.styles'
 
 const StyledTrigger = styled(Trigger, {
