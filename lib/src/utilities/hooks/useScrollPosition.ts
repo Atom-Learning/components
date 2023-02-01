@@ -1,16 +1,20 @@
 import { useEffect, useState } from 'react'
 import { debounce } from 'throttle-debounce'
 
+type TUseScrollPositionOptions = {
+  element?: HTMLElement | null
+  delay?: number
+}
+
+type TUseScrollPositionOutput = {
+  left: number
+  top: number
+}
+
 export const useScrollPosition = ({
   element,
   delay = 500
-}: {
-  element?: HTMLElement | null
-  delay?: number
-}): {
-  left: number
-  top: number
-} => {
+}: TUseScrollPositionOptions): TUseScrollPositionOutput => {
   const [scrollPosition, setScrollPosition] = useState({ left: 0, top: 0 })
 
   useEffect(() => {
@@ -25,7 +29,7 @@ export const useScrollPosition = ({
     return () => {
       element.removeEventListener('scroll', handleScroll)
     }
-  }, [element])
+  }, [element, delay])
 
   return scrollPosition
 }

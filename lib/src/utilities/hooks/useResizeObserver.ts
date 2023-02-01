@@ -1,6 +1,14 @@
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
+type TUseResizeObserverOptions = {
+  elements: (HTMLElement | undefined | null)[]
+  onResize: (entries: ResizeObserverEntry[]) => void
+  delay?: number
+}
+
+type TUseResizeObserverOutput = ResizeObserver | null
+
 const createResizeObserver = (callback: () => void) => {
   try {
     return new ResizeObserver(callback)
@@ -13,11 +21,7 @@ export const useResizeObserver = ({
   delay = 500,
   elements,
   onResize
-}: {
-  elements: (HTMLElement | undefined | null)[]
-  onResize: (entries: ResizeObserverEntry[]) => void
-  delay?: number
-}): ResizeObserver | null => {
+}: TUseResizeObserverOptions): TUseResizeObserverOutput => {
   const observer = React.useMemo(
     () => createResizeObserver(debounce(delay, onResize)),
     [delay, onResize]
