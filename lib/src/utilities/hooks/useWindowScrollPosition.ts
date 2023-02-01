@@ -29,7 +29,7 @@ export const useWindowScrollPosition = ({ delay = 500, delayMethod = 'throttle' 
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [delayMethodFn])
+  }, [delayMethodFn, delay])
 
   return scrollPosition
 }
