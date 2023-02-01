@@ -1,10 +1,17 @@
 import { useEffect, useState, useMemo } from 'react'
 import { debounce, throttle } from 'throttle-debounce'
 
-export const useWindowScrollPosition = ({ delay = 500, delayMethod = 'throttle' }: { delay?: number, delayMethod?: 'throttle' | 'debounce' } = {}): {
+type TUseWindowScrollPositionOptions = {
+  delay?: number
+  delayMethod?: 'throttle' | 'debounce'
+}
+
+type TUseWindowScrollPositionOutput = {
   x: number
   y: number
-} => {
+}
+
+export const useWindowScrollPosition = ({ delay = 500, delayMethod = 'throttle' }: TUseWindowScrollPositionOptions = {}): TUseWindowScrollPositionOutput => {
   const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 })
 
   const delayMethodFn = useMemo(() => {
