@@ -31,7 +31,9 @@ You can read more about the components included in `@atom-learning/components` a
 
 We can run the documentation site locally, with hot-reloading triggered by changes in the library. This offers a low-friction dev environment where we can see the effects of any local changes when applied to all existing components. (Note: hot reloading is currently only supported for changes to Typescript/.tsx files, not markdown files.)
 
-First, run `yarn build:lib && yarn build:docs`. `yarn build:docs` collects the markdown documentation files for each component in `lib` into its `dist` directory, where the documentation site can find them. `yarn build:docs` compiles the documentation and extract the component props.
+First, run `yarn build:lib && yarn build:docs`. `yarn build:lib` exports all its components into `dist` and `yarn build:docs` uses the exported components to generate the markdown documentation files for each component also into the `lib/dist` directory, where the documentation site can find them.
+
+When that's done run `yarn dev:lib` to watch `lib` for code changes.
 
 In another terminal, run `yarn dev:site` to run the documentation site at `http://localhost:3000`, taking the output as the previous commands as its input.
 

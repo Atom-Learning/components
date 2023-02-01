@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
+import { OptionallyVisuallyHiddenContainer } from '../../utilities/optionally-visually-hidden-container'
+import { Label } from '../label'
 import { SearchInput } from '../search-input'
 import { useDataTable } from './DataTableContext'
-import { Label } from '../label'
-import { OptionallyVisuallyHiddenContainer } from '../../utilities/optionally-visually-hidden-container'
 
 type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {
   label: string

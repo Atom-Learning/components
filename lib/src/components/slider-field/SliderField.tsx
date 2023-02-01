@@ -2,8 +2,8 @@ import React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
 
 import {
-  FieldWrapper,
-  FieldElementWrapperProps
+  FieldElementWrapperProps,
+  FieldWrapper
 } from '~/components/field-wrapper'
 import { Slider, SliderProps } from '~/components/slider'
 import { SliderStepsType } from '~/components/slider/SliderSteps'

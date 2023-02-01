@@ -1,7 +1,8 @@
-import * as React from 'react'
-import { Table } from '../table'
 import type { Cell } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
+import * as React from 'react'
+
+import { Table } from '../table'
 
 type DataTableDataCellProps = {
   cell: Cell<Record<string, unknown>, unknown>
