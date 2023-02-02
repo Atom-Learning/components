@@ -1,0 +1,215 @@
+---
+slug: sidedrawer
+title: Sidedrawer
+links:
+  viewSource: components/sidedrawer
+  showReportAnIssue: true
+tabs:
+  - title: Main
+    content: >-
+      `Sidedrawer` exports components that combine to build complex side navigation.
+
+
+      ## The `Sidedrawer` root
+
+
+      Sidedrawer exposes few main elements to build foundations. The core element is a `Sidedrawer` which wraps entire components composition. `Sidedrawer` has build-in state, but also allows you to pass props to control if from the outside. The Sidedrawer root is made in top of the [radix dialog](https://www.radix-ui.com/docs/primitives/components/dialog)
+
+
+      Optional `Sidedrawer` props
+
+
+      * `isOpen` property determines if the whole `Sidedrawer` is visible or not.
+
+      * `onOpenChange` prop should be a function which updates `isOpen` state. This function is triggered automatically when click on `Sidedrawer.Overlay`, `Sidedrawer.Close` or press `Escape` key.
+
+
+      ### Fundamental root componenents
+
+
+      * `Sidedrawer.Trigger` - It's the main `trigger element` responsible for opening the whole `Sidedrawer.Content`. This component is build on top of [radix dialog trigger](https://www.radix-ui.com/docs/primitives/components/dialog#trigger)
+
+      * `Sidedrawer.Content` - This is whe wrapper for whole content (`Sidedrawer.Header`, `Sidedrawer.Body`, `Sidedrawer.Footer` and other nested elements). This component is build on top of [radix dialog content](https://www.radix-ui.com/docs/primitives/components/dialog#content)
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer>
+        <Sidedrawer.Trigger asChild>
+          <Button>Open the navigation</Button>
+        </Sidedrawer.Trigger>
+        <Sidedrawer.Content>the sidedrawer content</Sidedrawer.Content>
+      </Sidedrawer>`} language={"tsx"} />
+
+
+      ### The `Sidedrawer.Content` children building blocks
+
+
+      * `Sidedrawer.Header` - It's based on `TopBar` component, so it plays really well with all `TopBar` subcomponents. This component is flexible, so you can render anything you need inside of it (for example app logo, Sidedrawer.Close etc.)
+
+      * `Sidedrawer.Close` - It's an `"close" ActionIcon` which triggers `Sidedrawer.Content` closing.
+
+      * `Sidedrawer.Body` - This is the wrapper for all `Sidedrawer.Item` items. The content is scrollable.
+
+      * `Sidedrawer.Footer` - Optional part of the `Sidedrawer`. It's fixed to the botton. You can pass whatever you need as it's children.
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer>
+        <Sidedrawer.Trigger asChild>
+          <Button>Open the navigation</Button>
+        </Sidedrawer.Trigger>
+        <Sidedrawer.Content>
+          <Sidedrawer.Header>
+            <Sidedrawer.Close />
+          </Sidedrawer.Header>
+          <Sidedrawer.Body>Sidedrawer items and Accordions here</Sidedrawer.Body>
+          <Sidedrawer.Footer>Footer items here</Sidedrawer.Footer>
+        </Sidedrawer.Content>
+      </Sidedrawer>`} language={"tsx"} />
+
+
+      ## Sidedrawer.Body children
+
+
+      You most likely want to use `Sidedrawer.Item` or `Sidedrawer.Accordion` inside of `Sidedrawer.Body`
+
+
+      ### Sidedrawer.Item
+
+
+      Sidedrawer exposes `Item` component to build a navigation elements. `Sidedrawer.Item` is renderes as a `link` or a `button` depends on passed props.
+
+
+      * `href` prop determine a link render
+
+      * `onClick` prop determines a button render
+
+
+      **Link item:**
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Item href={'/'}>
+        <Icon is={Apps} />
+        Dashboard
+      </Sidedrawer.Item>`} language={"tsx"} />
+
+
+      **Button item:**
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Item onClick={logout}>
+        <Icon is={Exit} />
+        Log out
+      </Sidedrawer.Item>`} language={"tsx"} />
+
+
+      ### Sidedrawer.Accordion
+
+
+      **Accordion item:**
+
+
+      Accordion item requires few elements to work properly:
+
+
+      * `value` property is a unique identifier needed to expand accordion content. [read more](https://www.radix-ui.com/docs/primitives/components/accordion#item)
+
+      * `Sidedrawer.AccordionTrigger` - This component is a trigger which expand/collapse Accordion content. You can pass a text or components composition as its children.
+
+      * `Sidedrawer.AccordionContent` - This component contains whole accorion content. Most likely you would like to pass few another `Sidedrawer.Item` items inside. Accordion content is collapsed until you click the `Sidedrawer.AccordionTrigger` to expand it.
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Accordion value="your_unique_identifier">
+        <Sidedrawer.AccordionTrigger>
+          <Icon is={New} css={{ mr: '$2' }} />
+          Set work
+        </Sidedrawer.AccordionTrigger>
+        <Sidedrawer.AccordionContent>
+          <Sidedrawer.Item href={'/practice'}>
+            <Icon is={Feed} css={{ mr: '$2' }} />
+            Practice
+          </Sidedrawer.Item>
+          <Sidedrawer.Item href={'/test'}>
+            <Icon is={Inbox} css={{ mr: '$2' }} />
+            Test
+          </Sidedrawer.Item>
+        </Sidedrawer.AccordionContent>
+      </Sidedrawer.Accordion>`} language={"tsx"} />
+
+
+      ## Whole Sidedrawer components composition
+
+
+      <CodeBlock live={true} preview={true} code={`<Sidedrawer>
+        <Sidedrawer.Trigger asChild>
+          <Button>Open the Sidedrawer</Button>
+        </Sidedrawer.Trigger>
+        <Sidedrawer.Content>
+          <Sidedrawer.Header>
+            <Sidedrawer.Close />
+            <TopBar.BrandLogo
+              src={'https://atomlearning.co.uk/_next/static/media/logo.e9276284.svg'}
+            />
+          </Sidedrawer.Header>
+          <Sidedrawer.Body>
+            <Sidedrawer.Item href={'/'} active>
+              Dashboard
+            </Sidedrawer.Item>
+            <Sidedrawer.Accordion value="1" disabled>
+              <Sidedrawer.AccordionTrigger>Set work</Sidedrawer.AccordionTrigger>
+              <Sidedrawer.AccordionContent>
+                <Sidedrawer.Item href={'/'}>Set Practice</Sidedrawer.Item>
+                <Sidedrawer.Item href={'/'}>Mock Tests</Sidedrawer.Item>
+              </Sidedrawer.AccordionContent>
+            </Sidedrawer.Accordion>
+            <Sidedrawer.Accordion value="2">
+              <Sidedrawer.AccordionTrigger>Resources</Sidedrawer.AccordionTrigger>
+              <Sidedrawer.AccordionContent>
+                <Sidedrawer.Item onClick={() => console.log('clicked!')}>
+                  I am a button
+                </Sidedrawer.Item>
+                <Sidedrawer.Item href="/">I am a link</Sidedrawer.Item>
+              </Sidedrawer.AccordionContent>
+            </Sidedrawer.Accordion>
+          </Sidedrawer.Body>
+          <Sidedrawer.Footer>The footer content</Sidedrawer.Footer>
+        </Sidedrawer.Content>
+      </Sidedrawer>`} language={"tsx"} />
+
+
+      ## API Reference
+
+
+      <ComponentProps component="Sidedrawer" />
+
+
+      <ComponentProps component="Sidedrawer.AccordionContent" />
+
+
+      <ComponentProps component="Sidedrawer.AccordionTrigger" />
+
+
+      <ComponentProps component="Sidedrawer.Body" />
+
+
+      <ComponentProps component="Sidedrawer.Close" />
+
+
+      <ComponentProps component="Sidedrawer.Content" />
+
+
+      <ComponentProps component="Sidedrawer.Footer" />
+
+
+      <ComponentProps component="Sidedrawer.Header" />
+
+
+      <ComponentProps component="Sidedrawer.Item" />
+
+
+      <ComponentProps component="Sidedrawer.Trigger" />
+parent: 95SvEwV7BznSChttFanpW
+uuid: 96eOG7OojxOpfsmMB-rCr
+nestedSlug:
+  - components
+  - navigation
+  - sidedrawer
+---
