@@ -1,7 +1,6 @@
-import { Stack } from '@atom-learning/components'
+import { Stack, styled } from '@atom-learning/components'
 
 import * as React from 'react'
-import { TokenListItem } from './TokenListItem'
 
 type TokenListRootProps = React.ComponentProps<typeof Stack> & {
   ItemComponent: any, // typeof TokenListItem,
@@ -9,6 +8,8 @@ type TokenListRootProps = React.ComponentProps<typeof Stack> & {
   specificTokens?: { token: string }[],
   filter?: ({ key, value }) => boolean
 }
+
+const StyledTokenList = styled('ul', { padding: 0, listStyle: 'none' })
 
 export const TokenListRoot: React.FC<TokenListRootProps> = ({
   allTokens,
@@ -41,7 +42,7 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
   if (!listItems.length) return null;
 
   return (
-    <Stack as="ul" gap={false} css={{ padding: 0, listStyle: 'none' }} {...rest}>
+    <Stack as={StyledTokenList} gap={false} {...rest}>
       {listItems}
     </Stack>
   )
