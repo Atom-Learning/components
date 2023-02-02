@@ -33,7 +33,7 @@ const NavigationLink: React.FC<{ href: string }> = ({
   const isCurrentPage = href === currentPage
 
   return (
-    <NextLink href={href} passHref replace={true} shallow={true}>
+    <NextLink href={href} passHref replace={true}>
       <Link css={{ position: 'relative', color: 'currentColor !important', display: 'block', mb: '$3' }}>
         {children}
         {isCurrentPage && <Icon size="sm" css={{ position: 'absolute', right: '0', top: '50%', transform: 'translateY(-50%)' }} is={ArrowRight} />}
