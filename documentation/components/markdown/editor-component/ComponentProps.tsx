@@ -17,7 +17,7 @@ const sizeOrder = ['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl']
 const getComponentProps = (name)/*: ComponentDoc */ =>
   docgen
     .filter(Boolean)
-    .find((component) => component.displayName === pascalcase(name))
+    .find((component) => component.displayName === name || component.displayName === pascalcase(name))
 
 const columns = ['Prop', 'Type', 'Default', 'Required']
 
