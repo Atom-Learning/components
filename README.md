@@ -11,7 +11,9 @@ More information on each area lives in its own `README.md`:
 
 (!) Don't forget to run `yarn install` to get all needed dependencies downloaded.
 
-When developing, you will always want to be running the **library** for development: `yarn dev:lib`. If not developing the library just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
+(!) Build or watch the library.
+When _developing_, you will always want to be running the **library** for development: `yarn dev:lib`.
+If _not developing_ the library just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
 
 To view your changes you can use either of the two ways as explained below. Regardless of which option you choose, make sure to update or add (for new components) the appropriate documentation in the NetlifyCMS website (`./documentation`) as part of your PR!
 
@@ -21,6 +23,12 @@ Open a new terminal for each of the below:
 
 - `yarn server:docs` then uncomment `local_backend: true` in `/documentation/public/admin/config.yml`
 - `yarn dev:docs`
+
+(!) You will need to stop and rerun `yarn dev:docs` to see your changes on the website if you:
+
+- Make a brand new page via the CMS
+- Change the parent page of an existing page via the CMS
+  This is because of how building the navigation and routing currently is being handled in a custom node script which runs as part of `dev:docs`.
 
 #### Explanation
 
