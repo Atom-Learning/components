@@ -14,7 +14,7 @@ import { pascalcase } from 'pascalcase'
 
 const sizeOrder = ['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl']
 
-const getComponentProps = (name)/*: ComponentDoc */ =>
+const getComponentProps = (name) =>
   docgen
     .filter(Boolean)
     .find((component) => component.displayName === name || component.displayName === pascalcase(name))

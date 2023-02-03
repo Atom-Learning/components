@@ -9,5 +9,3 @@ export const updateFrontMatter = async (filePath, updateFieldsFunction) => {
   const newContent = `---\n${stringify(newFrontMatter)}---\n${content}`;
   await writeFile(filePath, newContent);
 };
-
-// try/catch?

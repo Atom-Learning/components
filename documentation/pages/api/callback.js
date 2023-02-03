@@ -29,7 +29,7 @@ const fn = async (req, res, next) => {
 
   let message, content;
   try {
-    const accessToken = await client.getToken(tokenParams); // used to be await
+    const accessToken = await client.getToken(tokenParams);
     message = "success";
     content = {
       token: accessToken.token.access_token,

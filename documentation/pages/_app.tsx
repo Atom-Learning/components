@@ -13,14 +13,11 @@ globalCss({
   body: { margin: 0 }
 })()
 
-
-// TODO: Test in build.
-// This placement of `<Layout />` at this level should make it 
+// This placement of `<Layout />` at this level should make it
 // so the page, inc `nav` is not refreshed when navigating.
 // When in dev mode the whole app rebuilds on navigation.
 // https://stackoverflow.com/questions/56817613/next-js-links-refresh-the-page
 // https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/
-
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   // https://stackoverflow.com/questions/71706064/react-18-hydration-failed-because-the-initial-ui-does-not-match-what-was-render
   const isMounted = useIsMounted();
