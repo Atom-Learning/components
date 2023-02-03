@@ -9,7 +9,7 @@ backend:
 # local_backend: true
 
 media_folder: "documentation/public/admin/images" # Media files will be stored in the repo under images/uploads
-public_folder: "/public/admin/images"
+public_folder: "/admin/images"
 
 collections:
   - name: static
@@ -65,7 +65,6 @@ collections:
                 name: "custom",
                 widget: "list",
                 summary: "{{fields.name}}",
-                required: false,
                 fields:
                   [
                     { label: "Name", name: "name", widget: "string" },
@@ -74,6 +73,7 @@ collections:
                       label: "Is External",
                       name: "isExternal",
                       widget: "boolean",
+                      required: false,
                     },
                   ],
               },
