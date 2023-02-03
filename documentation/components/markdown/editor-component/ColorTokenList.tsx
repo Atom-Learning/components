@@ -6,8 +6,8 @@ import * as React from 'react'
 
 const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
   const color = parseToHsl(String(value))
-  // @ts-ignore
-  const hasAlpha = color?.alpha
+
+  const hasAlpha = color.hasOwnProperty('alpha')
   return (
     <Flex css={{ alignItems: 'center' }} {...rest}>
       <Box
