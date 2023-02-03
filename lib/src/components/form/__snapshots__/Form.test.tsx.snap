@@ -51,7 +51,7 @@ exports[`Form component renders a form 1`] = `
 
 .sxfigyv[disabled] {
   background-color: var(--colors-tonal300);
-  color: var(--colors-tonal600);
+  color: var(--colors-tonal700);
   cursor: not-allowed;
 }
 
