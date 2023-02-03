@@ -60,7 +60,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({
           {navigationStructureLevel.map(({ title, href, children }) => {
             if (!title) return;
             return (
-              <Box as="li" css={{ mb: [1].includes(level) ? '$6' : 0 }} key={href}>
+              <Box as="li" css={{ mb: level === 1 ? '$6' : 0 }} key={href}>
                 <NavigationLink href={href}>
                   <NavigationTitle level={level} css={{ color: 'currentColor' }} >
                     {title}
