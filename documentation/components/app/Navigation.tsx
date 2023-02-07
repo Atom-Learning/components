@@ -12,14 +12,14 @@ type NavigationProps = {
   onNavigate?: (pathname) => void
 }
 
-const NavigationTitle = ({ level, css, ...rest }) => {
+const NavigationTitle: React.FC<{ level: number }> = ({ level, children }) => {
   switch (level) {
     case 1:
-      return <Heading as="h2" size="sm" css={css} {...rest} />
+      return <Heading as="h2" size="sm" children={children} />
     case 2:
-      return <Text as="h3" size="sm" css={{ fontWeight: 'bold', ...css }} {...rest} />
+      return <Text as="h3" size="sm" css={{ fontWeight: 'bold' }} children={children} />
     default:
-      return <Text size="sm" css={css} {...rest} />
+      return <Text size="sm" children={children} />
   }
 }
 
@@ -62,7 +62,7 @@ export const Navigation: React.FC<NavigationProps> = React.memo(({
             return (
               <Box as="li" css={{ mb: level === 1 ? '$6' : 0 }} key={href}>
                 <NavigationLink href={href}>
-                  <NavigationTitle level={level} css={{ color: 'currentColor' }} >
+                  <NavigationTitle level={level} >
                     {title}
                   </NavigationTitle>
                 </NavigationLink>
