@@ -14,6 +14,7 @@ tabs:
       It adds default styling and the `css` prop. Provide `orientation` as `horizontal` or `vertical` to achieve desirable output
 
 
+
       <CodeBlock live={true} preview={true} code={`<Divider orientation="vertical"/>`} language={"tsx"} />
 
 

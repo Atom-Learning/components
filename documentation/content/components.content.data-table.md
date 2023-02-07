@@ -152,13 +152,16 @@ tabs:
         }}
       </DataTable>`} language={"tsx"} />
 
+
       ### Server-side pagination and sorting
+
 
       `DataTable` can be used with local pagination or server-side pagination (getting only the data needed for the current page). To use one or the other, you have to use the `data` or `getAsyncData` prop respectively.
 
       The `getAsyncData` function accepts an object with the necessary parameters to get the relevant piece of data for the current page and order. All the parameters are optional, with these defaults:
 
-      <CodeBlock live={false} preview={false} code={` {
+
+      <CodeBlock live={false} preview={false} code={`{
         pageIndex: 0,
         pageSize: 10,
         sortBy: undefined,
@@ -168,16 +171,18 @@ tabs:
 
       The response from the `getAsyncData` function must match the following schema:
 
-      <CodeBlock live={false} preview={false} code={` {
+
+      <CodeBlock live={false} preview={false} code={`{
         results: Array<Record<string, unknown>> // your current page data, sorted if specified
         total: number // the total number of elements in your data
-      } `} language={"ts"} />
+      }`} language={"ts"} />
 
       A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `getAsyncData` promise is pending.
 
       You can use `DataTable.Error` to display your own error component when the `getAsyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
 
-      <CodeBlock live={false} preview={false} code={` <DataTable
+
+      <CodeBlock live={false} preview={false} code={`<DataTable
         columns={columns}
         defaultPageSize={10}
         defaultSort={{ column: 'name', direction: 'asc' }}
@@ -196,7 +201,7 @@ tabs:
             dir: sortDirection,
             search: globalFilter
           })
-          const response = await fetch(\`https://your-api?$\{params.toString()\}\`)
+          const response = await fetch(\`https://your-api?$\{params.toString()}\`)
           const { results, total } = await response.json()
 
           return { results, total }
@@ -207,9 +212,10 @@ tabs:
           {(retry) => <Button onClick={retry}>Try again</Button>}
         </DataTable.Error>
         <DataTable.Pagination />
-      </DataTable> `} language={"tsx"} />
+      </DataTable>`} language={"tsx"} />
 
-      `DataTable.Error` provides a `retry` function to the children which allows you to recall the `getAsyncData` function. The `retry` function can be called with all the paginated parameters as an optional object. If no parameters are provided, `retry` will be called with the last paginated options.
+      `DataTable.Error`provides a`retry`function to the children which allows you to recall the`getAsyncData`function. The`retry`function can be called with all the paginated parameters as an optional object. If no parameters are provided,`retry`will be called with the last paginated options.
+
 
       <CodeBlock live={false} preview={false} code={` <DataTable.Error>
         {(retry) => (
@@ -262,17 +268,22 @@ tabs:
 
       `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.
 
+
       ### Drag and drop
+
 
       The `DataTable.DragAndDropTable` can be rendered in place of `DataTable.Table` to allow users to reorder table rows via drag and drop. It takes an optional `onDragAndDrop` prop which is a function that fires when rows have been re-ordered via drag-and-drop. Use this to sync those changes with external data sources.
 
       Note that column sorting conflicts with drag and drop behaviour. In any context where you allow drag and drop reordering, you probably want to disable column sorting (see User Sorting above). Similarly, you should probably disable pagination because users won't be able to drag rows across page boundaries.
 
+
       #### Row IDs
+
 
       Drag-and-drop functionality relies on each table row having a unique ID. `DataTable.DragAndDropContainer` will throw an error if your don't provide unique IDs for each row in the `data` provided to `DataTable`, so you should consider wrapping your table in an `ErrorBoundary` to reduce the impact on your user if there is a problem with your data. By default, `DataTable.DragAndDropContainer` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
 
-      <CodeBlock live={false} preview={false} code={` const data = [
+
+      <CodeBlock live={false} preview={false} code={`const data = [
         { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
         { name: 'agatha', hobby: 'crossfit', id: 2 },
         { name: 'betty', hobby: 'acting', id: 3 }
@@ -280,11 +291,12 @@ tabs:
 
       <DataTable data={data} columns={columns}>
         <DataTable.DragAndDropTable onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}/>
-      </DataTable> `} language={"tsx"} />
+      </DataTable>`} language={"tsx"} />
 
       Or you could provide this data and specify the id column accordingly:
 
-      <CodeBlock live={false} preview={false} code={` const data = [
+
+      <CodeBlock live={false} preview={false} code={`const data = [
         { name: 'chrissy', hobby: 'bare-knuckle boxing', userId: 1 },
         { name: 'agatha', hobby: 'crossfit', userId: 2 },
         { name: 'betty', hobby: 'acting', userId: 3 }
@@ -292,7 +304,7 @@ tabs:
 
       <DataTable data={data} columns={columns}>
         <DataTable.DragAndDropTable idColumn="userId" onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)} />
-      </DataTable> `} language={"tsx"} />
+      </DataTable>`} language={"tsx"} />
 
 
       ## API Reference
@@ -300,21 +312,30 @@ tabs:
 
       <ComponentProps component="DataTable" />
 
+
       <ComponentProps component="DataTable.Table" />
+
 
       <ComponentProps component="DataTable.Head" />
 
+
       <ComponentProps component="DataTable.HeaderCell" />
+
 
       <ComponentProps component="DataTable.Body" />
 
+
       <ComponentProps component="DataTable.Row" />
+
 
       <ComponentProps component="DataTable.DataCell" />
 
+
       <ComponentProps component="DataTable.GlobalFilter" />
 
+
       <ComponentProps component="DataTable.Loading" />
+
 
       <ComponentProps component="DataTable.Error" />
 parent: A4GgFCvNbHBt9iaKdB7Kv

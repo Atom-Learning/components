@@ -10,6 +10,7 @@ tabs:
       simple text that inform the user of relevant information, revealed in
       context.
 
+
       <CodeBlock live={true} preview={true} code={`
         <InlineMessage>This is an Inline Message</InlineMessage>
       `} language={"tsx"} />

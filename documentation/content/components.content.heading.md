@@ -13,6 +13,7 @@ tabs:
 
       `Heading`’s `as` prop defaults to `h2` but also accepts `h1`, `h3`, `h4`, `h5`, `h6`. Follow [semantic HTML guidelines](https://webaim.org/techniques/semanticstructure/) when deciding which element to use. Also note that the size of a heading is controlled separately to which element is used. The sizes available are: `xs`, `sm`, `md`, `lg`, `xl`, `xxl`.
 
+
       <CodeBlock live={true} preview={true} code={`<Heading as="h2" size="xs">This is a heading</Heading>`} language={"tsx"} />
 
 

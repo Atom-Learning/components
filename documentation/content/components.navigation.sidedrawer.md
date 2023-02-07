@@ -139,6 +139,7 @@ tabs:
       ## Whole Sidedrawer components composition
 
 
+
       <CodeBlock live={true} preview={true} code={`<Sidedrawer>
         <Sidedrawer.Trigger asChild>
           <Button>Open the Sidedrawer</Button>

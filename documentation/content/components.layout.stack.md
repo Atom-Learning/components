@@ -28,6 +28,7 @@ tabs:
 
       `gap={0 | 1 | 2 | ... | 9}`
 
+
       <CodeBlock live={true} preview={true} code={`<Stack gap={2}>
         <Box css={{ bg: '$primary', size: '$5' }} />
         <Box css={{ bg: '$primary', size: '$5' }} />
