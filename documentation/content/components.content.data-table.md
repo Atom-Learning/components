@@ -167,7 +167,8 @@ tabs:
         sortBy: undefined,
         sortDirection: undefined,
         globalFilter: ''
-      }` } language={"ts"} />
+      }`} language={"ts"} />
+
 
       The response from the `getAsyncData` function must match the following schema:
 
@@ -176,6 +177,7 @@ tabs:
         results: Array<Record<string, unknown>> // your current page data, sorted if specified
         total: number // the total number of elements in your data
       }`} language={"ts"} />
+
 
       A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `getAsyncData` promise is pending.
 
@@ -213,6 +215,7 @@ tabs:
         </DataTable.Error>
         <DataTable.Pagination />
       </DataTable>`} language={"tsx"} />
+
 
       `DataTable.Error`provides a`retry`function to the children which allows you to recall the`getAsyncData`function. The`retry`function can be called with all the paginated parameters as an optional object. If no parameters are provided,`retry`will be called with the last paginated options.
 
@@ -292,6 +295,7 @@ tabs:
       <DataTable data={data} columns={columns}>
         <DataTable.DragAndDropTable onDragAndDrop={(oldIndex, newIndex, newData) => console.log(oldIndex, newIndex, newData)}/>
       </DataTable>`} language={"tsx"} />
+
 
       Or you could provide this data and specify the id column accordingly:
 
