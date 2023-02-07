@@ -6,11 +6,13 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      Inline messages consist of an inline feedback message in the form of simple text that inform the user of relevant information, revealed in context.
+      Inline messages consist of an inline feedback message in the form of
+      simple text that inform the user of relevant information, revealed in
+      context.
 
-
-      <InlineMessage>This is an Inline Message</InlineMessage>
-
+      <CodeBlock live={true} preview={true} code={`
+        <InlineMessage>This is an Inline Message</InlineMessage>
+      `} language={"tsx"} />
 
       ## Theme
 

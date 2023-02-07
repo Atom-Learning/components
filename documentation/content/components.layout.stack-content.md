@@ -7,7 +7,10 @@ links:
 tabs:
   - title: Main
     content: >-
-      `StackContent` applies an opinionated set of vertical spacing rules around its child components. It also applies a maximum width to `Heading`, `Text` and `List` to ensure optimal line length is preserved for readability.
+      `StackContent` applies an opinionated set of vertical spacing rules
+      around its child components. It also applies a maximum width
+      to `Heading`, `Text` and `List` to ensure optimal line length is preserved
+      for readability.
 
 
       <CodeBlock live={true} preview={true} code={`<StackContent>

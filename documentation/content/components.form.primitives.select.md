@@ -7,7 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      Select is a light wrapper around the HTML select element. It adds default styling and the `css` prop.
+      Select is a light wrapper around the HTML select element. It adds
+      default styling and the `css` prop.
 
 
       A `Select` needs to be associated with a label for accessibility purposes, so rather than using the `Select` component directly in a UI, consider using a `SelectField`, which provides a `Label` and displays validation errors. Use this `Select` to compose more complex `Field` type components.

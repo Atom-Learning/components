@@ -9,10 +9,7 @@ tabs:
     content: >-
       Label is a light wrapper around the basic HTML label element.
 
-      Labels are associated with controls like `input` or `checkbox`, however
-      before using this component consider using one of the
-      provided `Field` components that are available. Use this `Label` to
-      compose more complex `Field` type components.
+      Labels are associated with controls like `input` or `checkbox`, however before using this component consider using one of the provided `Field` components that are available. Use this `Label` to compose more complex `Field` type components.
 
 
       ## Accessibility

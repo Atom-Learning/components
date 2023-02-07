@@ -7,7 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      `Sidedrawer` exports components that combine to build complex side navigation.
+      `Sidedrawer` exports components that combine to build complex side
+      navigation.
 
 
       ## The `Sidedrawer` root
@@ -86,7 +87,7 @@ tabs:
       **Link item:**
 
 
-      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Item href={'/'}>
+      <CodeBlock live={false} preview={false} code={`<Sidedrawer.Item href={'/'}>
         <Icon is={Apps} />
         Dashboard
       </Sidedrawer.Item>`} language={"tsx"} />
@@ -95,7 +96,7 @@ tabs:
       **Button item:**
 
 
-      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Item onClick={logout}>
+      <CodeBlock live={false} preview={false} code={`<Sidedrawer.Item onClick={logout}>
         <Icon is={Exit} />
         Log out
       </Sidedrawer.Item>`} language={"tsx"} />
@@ -117,7 +118,7 @@ tabs:
       * `Sidedrawer.AccordionContent` - This component contains whole accorion content. Most likely you would like to pass few another `Sidedrawer.Item` items inside. Accordion content is collapsed until you click the `Sidedrawer.AccordionTrigger` to expand it.
 
 
-      <CodeBlock live={true} preview={true} code={`<Sidedrawer.Accordion value="your_unique_identifier">
+      <CodeBlock live={false} preview={false} code={`<Sidedrawer.Accordion value="your_unique_identifier">
         <Sidedrawer.AccordionTrigger>
           <Icon is={New} css={{ mr: '$2' }} />
           Set work

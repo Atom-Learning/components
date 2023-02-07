@@ -6,7 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      TextareaField renders a field composed of a Textarea, a Label and a InlineMessage. It is the preferred way to render a form field for
+      TextareaField renders a field composed of a Textarea, a Label and a
+      InlineMessage. It is the preferred way to render a form field for
       multi-line text.
 
 

@@ -7,7 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      `NavigationMenu` exports many components that combine to form a navigation menu.
+      `NavigationMenu` exports many components that combine to form a
+      navigation menu.
 
 
       <CodeBlock live={true} preview={true} code={`<NavigationMenu>

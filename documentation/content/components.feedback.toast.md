@@ -29,7 +29,6 @@ tabs:
       ## API Reference
 
       <ComponentProps component="ToastProvider" />
-
     title: Main
 parent: HGItoEG3XVs9DpOLugTot
 uuid: P6daKkk_E0jehDkN0So_A

@@ -25,7 +25,7 @@ tabs:
       Ensure that you pair the imported icon (in this case `Brightness`) with the `Icon` component to render in a consistent and reliable way. Review the available icons on the [icon listing page](https://design.atomlearning.technology/theme/icons)
 
 
-      <CodeBlock live={true} preview={true} code={`import { Icon } from '@atom-learning/components'
+      <CodeBlock live={false} preview={false} code={`import { Icon } from '@atom-learning/components'
 
       import { Brightness } from '@atom-learning/icons'
 

@@ -7,7 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      The `Video` component supports playing Vimeo hosted videos by setting the `id`.
+      The `Video` component supports playing Vimeo hosted videos by setting
+      the `id`.
 
 
       <CodeBlock live={true} preview={true} code={`<Video id="453650357" />`} language={"tsx"} />

@@ -7,7 +7,12 @@ links:
 tabs:
   - title: Main
     content: >-
-      Popover provides a styled actionable popup. It exports 3 components that combine to create our popover. The `Popover.Trigger` renders a `<button>` by default, but this can be overridden with the `asChild` prop, which will instead add all the functional and accessibility requirements to the child component instead (see the below example).
+      Popover provides a styled actionable popup. It exports 3 components
+      that combine to create our popover. The `Popover.Trigger` renders
+      a `<button>` by default, but this can be overridden with
+      the `asChild` prop, which will instead add all the functional and
+      accessibility requirements to the child component instead (see the below
+      example).
 
 
       Also, note that the component must accept a `ref`.
@@ -41,7 +46,6 @@ tabs:
       <ComponentProps component="Popover.Content" />
 
       <ComponentProps component="Popover.Portal" />
-
 parent: jAvRQoZ2NuRO-VGZiJ0a0
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:

@@ -45,7 +45,6 @@ tabs:
       <ComponentProps component="Tooltip.Provider" />
 
       <ComponentProps component="Tooltip.Portal" />
-
 parent: jAvRQoZ2NuRO-VGZiJ0a0
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:

@@ -14,7 +14,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<DismissibleGroup
         onDismiss={(value) => {
-          alert(`dismiss ${value}`)
+          alert(\`dismiss $\{value}\`)
         }}
       >
         <DismissibleGroup.Item value="a">
