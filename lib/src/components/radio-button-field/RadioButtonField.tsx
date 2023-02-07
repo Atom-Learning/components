@@ -29,46 +29,48 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   label,
   name,
   validation,
-  onValueChange
+  onValueChange,
+  ...remainingProps
 }) => {
-  const { control } = useFormContext()
-  const { error } = useFieldError(name)
+    const { control } = useFormContext()
+    const { error } = useFieldError(name)
 
-  return (
-    <Fieldset css={css}>
-      <Label
-        as="legend"
-        css={{ p: 0, mb: '$3' }}
-        required={Boolean(validation?.required)}
-      >
-        {label}
-      </Label>
-      {description && (
-        <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
-      )}
-      <Controller
-        control={control}
-        name={name}
-        rules={validation}
-        defaultValue={defaultValue}
-        render={({ onChange, value }) => (
-          <RadioButtonGroup
-            direction={direction}
-            defaultValue={defaultValue}
-            onValueChange={(value) => {
-              onChange(value)
-              onValueChange?.(value)
-            }}
-            value={value}
-          >
-            {children}
-          </RadioButtonGroup>
+    return (
+      <Fieldset css={css}>
+        <Label
+          as="legend"
+          css={{ p: 0, mb: '$3' }}
+          required={Boolean(validation?.required)}
+        >
+          {label}
+        </Label>
+        {description && (
+          <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
         )}
-      />
-      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
-    </Fieldset>
-  )
-}
+        <Controller
+          control={control}
+          name={name}
+          rules={validation}
+          defaultValue={defaultValue}
+          render={({ onChange, value }) => (
+            <RadioButtonGroup
+              direction={direction}
+              defaultValue={defaultValue}
+              onValueChange={(value) => {
+                onChange(value)
+                onValueChange?.(value)
+              }}
+              value={value}
+              {...remainingProps}
+            >
+              {children}
+            </RadioButtonGroup>
+          )}
+        />
+        {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+      </Fieldset>
+    )
+  }
 
 RadioButtonField.Item = RadioField
 
