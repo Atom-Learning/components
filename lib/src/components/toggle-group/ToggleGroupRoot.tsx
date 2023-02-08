@@ -115,33 +115,38 @@ const orientationToDirection = (orientation) =>
 
 export const ToggleGroupRoot: React.ForwardRefExoticComponent<
   React.ComponentProps<typeof StyledRoot> & RootType
-> = React.forwardRef(({
-  orientation = 'horizontal',
-  gap = false,
-  isFullWidth,
-  children,
-  wrap = 'no-wrap',
-  ...rest
-}, ref) => {
-  const hasGap = typeof gap === 'number'
-  const direction = orientationToDirection(orientation)
-  return (
-    <StyledRoot
-      ref={ref}
-      direction={direction}
-      hasGap={hasGap}
-      isFullWidth={isFullWidth}
-      orientation={orientation}
-      {...rest}
-    >
-      <Stack
+> = React.forwardRef(
+  (
+    {
+      orientation = 'horizontal',
+      gap = false,
+      isFullWidth,
+      children,
+      wrap = 'no-wrap',
+      ...rest
+    },
+    ref
+  ) => {
+    const hasGap = typeof gap === 'number'
+    const direction = orientationToDirection(orientation)
+    return (
+      <StyledRoot
+        ref={ref}
         direction={direction}
-        gap={hasGap && gap}
-        align={false}
-        wrap={wrap}
+        hasGap={hasGap}
+        isFullWidth={isFullWidth}
+        orientation={orientation}
+        {...rest}
       >
-        {children}
-      </Stack>
-    </StyledRoot>
-  )
-})
+        <Stack
+          direction={direction}
+          gap={hasGap && gap}
+          align={false}
+          wrap={wrap}
+        >
+          {children}
+        </Stack>
+      </StyledRoot>
+    )
+  }
+)

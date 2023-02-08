@@ -1,5 +1,5 @@
-import { fireEvent, render } from '@testing-library/react'
 import { BatteryMedium } from '@atom-learning/icons'
+import { fireEvent, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 

@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '~/stitches'
 import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'

@@ -25,7 +25,10 @@ const slideOut = keyframes({
 
 const StyledDialogOverlay = styled(Overlay, {
   backgroundColor: '$alpha600',
-  inset: 0,
+  top: 0,
+  right: 0,
+  bottom: 0,
+  left: 0,
   position: 'fixed',
   overflowY: 'auto',
   zIndex: DIALOG_Z_INDEX,

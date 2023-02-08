@@ -1,51 +1,17 @@
-import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { List } from '@radix-ui/react-tabs'
-import { opacify } from 'color2k'
-import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { debounce } from 'throttle-debounce'
+import React from 'react'
+import { styled } from '~/stitches'
+import { ColorScheme } from '~/experiments/color-scheme'
+import { useWindowSize } from '~/utilities/hooks/useWindowSize'
+import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
+import { ActionIcon } from '../action-icon'
+import { Icon } from '../icon'
+import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 
-import { ActionIcon } from '~/components/action-icon'
-import { Flex } from '~/components/flex'
-import { Icon } from '~/components/icon'
-import { styled, theme } from '~/stitches'
-
-import { TabTrigger } from './TabTrigger'
-import { passPropsToChildren } from './utils'
-
-interface ListProps extends React.ComponentProps<typeof StyledTriggerList> {
-  enableTabScrolling?: boolean
-  scrollPercentage?: number
-}
-
-const fadedWhite = opacify('white', -0.2)
-const fadedPrimaryDark = opacify(theme.colors.primaryDark.value, -0.2)
-
-const StyledChevronIcon = styled(ActionIcon, {
-  position: 'absolute',
-  transition: 'all 125ms',
-  variants: {
-    theme: {
-      light: {
-        bg: `${fadedWhite} !important`
-      },
-      dark: {
-        bg: `${fadedPrimaryDark} !important`,
-        color: 'currentColor !important'
-      }
-    },
-    visible: {
-      true: {
-        opacity: 1,
-        visibility: 'visible',
-        pointerEvents: 'all'
-      },
-      false: {
-        opacity: 0,
-        visibility: 'hidden',
-        pointerEvents: 'none'
-      }
-    }
-  }
+const StyledContainer = styled(ColorScheme, {
+  position: 'relative',
+  borderBottom: '1px solid $base3',
+  width: '100%'
 })
 
 const StyledTriggerList = styled(List, {
@@ -54,43 +20,40 @@ const StyledTriggerList = styled(List, {
   width: '100%',
   overflowX: 'auto',
   '&::-webkit-scrollbar': { display: 'none' },
-  scrollbarWidth: 'none',
-  variants: {
-    theme: {
-      light: {
-        borderBottom: '1px solid $tonal300'
-      },
-      dark: {
-        bg: '$primaryDark',
-        borderBottom: '1px solid $tonal200'
-      }
-    },
-    appearance: {
-      uppercase: {
-        '& button': { textTransform: 'uppercase' }
-      }
-    }
-  }
+  scrollbarWidth: 'none'
 })
 
-export const TriggerListWrapper: React.FC<ListProps> = ({
-  children,
-  theme,
-  appearance,
-  enableTabScrolling,
-  scrollPercentage = 10,
-  ...rest
-}) => {
-  const triggerListRef = useRef<HTMLDivElement>(null)
-  const [showLeftScroller, setShowLeftScroller] = useState<boolean>(false)
-  const [showRightScroller, setShowRightScroller] = useState<boolean>(false)
-  const [screenWidth, setScreenWidth] = useState<number>()
+const StyledChevronActionIcon = styled(ActionIcon, {
+  height: '100% !important',
+  position: 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  cursor: 'pointer',
+  background: '$background !important',
+  color: '$interactive1 !important',
+  borderRadius: 0,
+  opacity: 0.9
+})
 
-  const scrollTriggerListTo = useCallback((direction: 'left' | 'right') => {
-    const triggerList = triggerListRef.current
-    if (triggerList) {
-      const { scrollWidth, scrollLeft, offsetWidth } = triggerList
-      const scrollAmount = Math.round(scrollWidth * (scrollPercentage / 100))
+const SCROLL_PERCENTAGE = 10
+export const TabsTriggerList: React.FC<
+  React.ComponentProps<typeof StyledTriggerList> & {
+    colorScheme?: typeof ColorScheme
+  }
+> = ({ children, colorScheme = {}, ...rest }) => {
+  const [listRef, setListRefCallback] = useCallbackRefState()
+
+  const { width: screenWidth } = useWindowSize()
+
+  const [showLeftScroller, setShowLeftScroller] = React.useState<boolean>(false)
+  const [showRightScroller, setShowRightScroller] =
+    React.useState<boolean>(false)
+
+  const scrollTriggerListTo = React.useCallback(
+    (direction: 'left' | 'right') => {
+      if (!listRef) return
+      const { scrollWidth, scrollLeft, offsetWidth } = listRef
+      const scrollAmount = Math.round(scrollWidth * (SCROLL_PERCENTAGE / 100))
       let left = scrollLeft
       if (direction === 'right') {
         const newScrollAmount = scrollLeft + scrollAmount
@@ -103,14 +66,14 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
         left = newScrollAmount > 0 ? newScrollAmount : 0
       }
 
-      triggerList.scroll({
+      listRef.scroll({
         left,
         behavior: 'smooth'
       })
 
       // Relying on setTimeout since scroll does not have a callback / doesn't return a promise :(
       setTimeout(() => {
-        const { scrollWidth, scrollLeft, offsetWidth } = triggerList
+        const { scrollWidth, scrollLeft, offsetWidth } = listRef
         const scrollDistance = scrollWidth - (scrollLeft + offsetWidth)
         if (scrollLeft === 0) {
           setShowLeftScroller(false)
@@ -124,82 +87,61 @@ export const TriggerListWrapper: React.FC<ListProps> = ({
           setShowRightScroller(true)
         }
       }, 500)
-    }
-  }, [])
+    },
+    [listRef]
+  )
 
-  useEffect(() => {
-    const onResize = debounce(500, () => {
-      setScreenWidth(window.innerWidth)
+  React.useEffect(() => {
+    if (!listRef) return
+    const { offsetWidth, scrollWidth } = listRef
+
+    const shouldShowScroller = scrollWidth > offsetWidth
+
+    // Scroll to left on resize, hide left scroll button and then decide if right scroll button should be visible or not
+    listRef.scroll?.({
+      left: 0
     })
-    window.addEventListener('resize', onResize)
-
-    return () => {
-      window.removeEventListener('resize', onResize)
-    }
-  }, [])
-
-  useEffect(() => {
-    const triggerList = triggerListRef.current
-    if (triggerList) {
-      const { offsetWidth, scrollWidth } = triggerList
-
-      const shouldShowScroller = scrollWidth > offsetWidth
-
-      // Scroll to left on resize, hide left scroll button and then decide if right scroll button should be visible or not
-      triggerList.scroll?.({
-        left: 0
-      })
-      setShowLeftScroller(false)
-      setShowRightScroller(shouldShowScroller)
-    }
-  }, [screenWidth])
-
-  const showScroller =
-    showLeftScroller || showRightScroller || enableTabScrolling
-
-  if (showScroller) {
-    return (
-      <Flex css={{ position: 'relative' }}>
-        <StyledChevronIcon
-          size="lg"
-          label="Scroll Left"
-          theme={theme}
-          onClick={() => scrollTriggerListTo('left')}
-          visible={showLeftScroller}
-          css={{ left: 0 }}
-        >
-          <Icon is={ChevronLeft} />
-        </StyledChevronIcon>
-        <StyledTriggerList
-          {...rest}
-          ref={triggerListRef}
-          appearance={appearance}
-          theme={theme}
-        >
-          {passPropsToChildren(children, { theme }, [TabTrigger])}
-        </StyledTriggerList>
-        <StyledChevronIcon
-          size="lg"
-          label="Scroll right"
-          theme={theme}
-          onClick={() => scrollTriggerListTo('right')}
-          visible={showRightScroller}
-          css={{ right: 0 }}
-        >
-          <Icon is={ChevronRight} />
-        </StyledChevronIcon>
-      </Flex>
-    )
-  }
+    setShowLeftScroller(false)
+    setShowRightScroller(shouldShowScroller)
+  }, [listRef, screenWidth])
 
   return (
-    <StyledTriggerList
-      theme={theme}
+    <StyledContainer
+      base="slate"
+      accent="blue"
+      interactive="hiContrast1"
+      {...colorScheme}
       {...rest}
-      appearance={appearance}
-      ref={triggerListRef}
     >
-      {passPropsToChildren(children, { theme }, [TabTrigger])}
-    </StyledTriggerList>
+      {showLeftScroller && (
+        <StyledChevronActionIcon
+          label="scroll left"
+          size="md"
+          css={{
+            left: 0
+          }}
+          onClick={() => scrollTriggerListTo('left')}
+        >
+          <Icon is={ChevronLeft} />
+        </StyledChevronActionIcon>
+      )}
+
+      <StyledTriggerList ref={setListRefCallback}>{children}</StyledTriggerList>
+
+      {showRightScroller && (
+        <StyledChevronActionIcon
+          label="scroll right"
+          size="md"
+          css={{
+            right: 0
+          }}
+          onClick={() => scrollTriggerListTo('right')}
+        >
+          <Icon is={ChevronRight} />
+        </StyledChevronActionIcon>
+      )}
+    </StyledContainer>
   )
 }
+
+TabsTriggerList.displayName = 'TabsTriggerList'
