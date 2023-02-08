@@ -11,15 +11,16 @@ More information on each area lives in its own `README.md`:
 
 (!) Don't forget to run `yarn install` to get all needed dependencies downloaded.
 
-(!) Build or watch the library.
-When _developing_, you will always want to be running the **library** for development: `yarn dev:lib`.
-If _not developing_ the library just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
-
 To view your changes you can use either of the two ways as explained below. Regardless of which option you choose, make sure to update or add (for new components) the appropriate documentation in the NetlifyCMS website (`./documentation`) as part of your PR!
 
 ### 1: Documentation site (http://localhost:3000, http://localhost:3000/admin)
 
-Open a new terminal for each of the below:
+Fistly, get the library output:
+
+When _developing_ you will always want to be running the **library** for development: `yarn dev:lib`.
+If _not developing_ the library, just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
+
+Then for the site itself, open a new terminal for each of the below:
 
 - `yarn server:docs` then uncomment `local_backend: true` in `/documentation/public/admin/config.yml`
 - `yarn dev:docs`
@@ -52,6 +53,8 @@ In a new terminal:
 #### Explanation
 
 You will also be able to work on developing components via the basic sandbox; which is still available instead of adding to the NetlifyCMS documentation. Use only when developing locally and do not commit changes to the sandbox file. To run the sandbox for development: `yarn dev:sandbox`
+
+Note that you don't need to be watching for library changes when developing via the sandbox as the command itself handles it.
 
 ## Tests
 
