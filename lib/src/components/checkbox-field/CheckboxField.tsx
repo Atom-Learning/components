@@ -22,7 +22,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   name,
   validation,
   description,
-  defaultChecked,
+  defaultChecked = false,
   checked,
   ...remainingProps
 }) => {
