@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Controller, useFormContext } from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import { FieldElementWrapperProps } from '~/components/field-wrapper'
 import { Description as FieldDescription } from '~/components/field-wrapper/FieldDescription'
@@ -25,6 +25,7 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   css,
   direction = 'column',
   defaultValue,
+  value,
   description,
   label,
   name,
@@ -32,45 +33,53 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   onValueChange,
   ...remainingProps
 }) => {
-    const { control } = useFormContext()
-    const { error } = useFieldError(name)
+  const { control } = useFormContext()
+  const {
+    field: { ref, onChange, value: innerValue, name: innerName }
+  } = useController({
+    name,
+    control,
+    rules: validation,
+    defaultValue
+  })
+  const { error } = useFieldError(name)
 
-    return (
-      <Fieldset css={css}>
-        <Label
-          as="legend"
-          css={{ p: 0, mb: '$3' }}
-          required={Boolean(validation?.required)}
-        >
-          {label}
-        </Label>
-        {description && (
-          <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
-        )}
-        <Controller
-          control={control}
-          name={name}
-          rules={validation}
-          defaultValue={defaultValue}
-          render={({ onChange, value }) => (
-            <RadioButtonGroup
-              direction={direction}
-              defaultValue={defaultValue}
-              onValueChange={(value) => {
-                onChange(value)
-                onValueChange?.(value)
-              }}
-              value={value}
-              {...remainingProps}
-            >
-              {children}
-            </RadioButtonGroup>
-          )}
-        />
-        {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
-      </Fieldset>
-    )
-  }
+  React.useEffect(() => {
+    // Update the react-hook-form inner value to match what is passed in.
+    if (typeof value !== 'undefined') onChange(value)
+  }, [value])
+
+  return (
+    <Fieldset css={css}>
+      <Label
+        as="legend"
+        css={{ p: 0, mb: '$3' }}
+        required={Boolean(validation?.required)}
+      >
+        {label}
+      </Label>
+      {description && (
+        <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
+      )}
+
+      <RadioButtonGroup
+        ref={ref}
+        direction={direction}
+        defaultValue={defaultValue}
+        onValueChange={(newValue) => {
+          onChange(newValue)
+          onValueChange?.(newValue)
+        }}
+        value={innerValue}
+        {...remainingProps}
+      >
+        {children}
+      </RadioButtonGroup>
+
+      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+    </Fieldset>
+  )
+}
 
 RadioButtonField.Item = RadioField
 
