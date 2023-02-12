@@ -65,12 +65,14 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
     ref
   ) => {
     const [inputElRef, setInputElRef] = useCallbackRef()
+    const [innerValue, setInnerValue] = React.useState(defaultValue)
     const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
       defaultValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
     )
     React.useEffect(() => {
-      if (typeof value !== 'undefined')
-        setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
+      if (typeof value === 'undefined') return
+      setInnerValue(value)
+      setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
     }, [value])
 
     React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
@@ -97,6 +99,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       onChange?.(event)
 
       const newValue = event.target.value
+      setInnerValue(newValue)
       onValueChange?.(newValue)
       setActiveIcon(newValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
     }
@@ -131,7 +134,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           size={size}
           type="search"
           {...remainingProps}
-          value={value}
+          value={innerValue}
           onChange={handleOnChange}
           css={{ pr: size === 'sm' ? '$5' : '$6' }}
         />
