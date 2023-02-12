@@ -12,6 +12,8 @@ export type SearchInputProps = React.ComponentProps<typeof Input> & {
   size?: 'sm' | 'md'
   css?: CSS
   value?: string
+  defaultValue?: string
+  onValueChange?: (newValue: string) => void
   clearText?: string
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
@@ -54,6 +56,8 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       size = 'md',
       css,
       value,
+      defaultValue = '',
+      onValueChange,
       clearText = 'Clear',
       onChange,
       ...remainingProps
@@ -61,12 +65,13 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
     ref
   ) => {
     const [inputElRef, setInputElRef] = useCallbackRef()
-    const [inputValue, setInputValue] = React.useState<string | number>(
-      value || ''
-    )
     const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
-      value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
+      defaultValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
     )
+    React.useEffect(() => {
+      if (typeof value !== 'undefined')
+        setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
+    }, [value])
 
     React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
 
@@ -85,12 +90,15 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       })
       inputEl.dispatchEvent(ev2)
       inputEl.focus()
+      onValueChange?.('')
     }
 
     const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      setInputValue(event.target.value)
-      setActiveIcon(event.target.value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
       onChange?.(event)
+
+      const newValue = event.target.value
+      onValueChange?.(newValue)
+      setActiveIcon(newValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
     }
 
     const getIcon = () => {
@@ -123,7 +131,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           size={size}
           type="search"
           {...remainingProps}
-          value={inputValue}
+          value={value}
           onChange={handleOnChange}
           css={{ pr: size === 'sm' ? '$5' : '$6' }}
         />
