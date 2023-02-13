@@ -83,31 +83,6 @@ exports[`FieldWrapper component renders 1`] = `
     color: var(--colors-tonal300);
     opacity: 1;
   }
-
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
-  }
-
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
-    margin: 0;
-  }
-
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
-    display: none;
-  }
 }
 
 @media  {
@@ -154,33 +129,6 @@ exports[`FieldWrapper component renders 1`] = `
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
-
-  .c-PJLV-iymbh-theme-error {
-    color: var(--colors-danger);
-  }
-
-  .c-dbrbZt-cyeZeh-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 1.5;
-  }
-
-  .c-dyvMgW-bndJoy-size-sm {
-    font-size: var(--fontSizes-sm);
-    line-height: 1.53;
-  }
-
-  .c-dyvMgW-bndJoy-size-sm::before {
-    content: '';
-    margin-bottom: -0.4056em;
-    display: table;
-  }
-
-  .c-dyvMgW-bndJoy-size-sm::after {
-    content: '';
-    margin-top: -0.4056em;
-    display: table;
-  }
 }
 
 @media  {
@@ -189,72 +137,39 @@ exports[`FieldWrapper component renders 1`] = `
     align-items: center;
     margin-bottom: var(--space-3);
   }
-
-  .c-dhzjXW-ijkHUQU-css {
-    margin-top: var(--space-2);
-  }
-
-  .c-dyvMgW-iiTbKsx-css {
-    transform: translateY(var(--space-0));
-  }
 }
 
 <div>
-  <div
+  <form
+    aria-label="form"
     class="c-PJLV"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      class="c-PJLV"
     >
-      <label
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
-        for="example"
+      <div
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
-        Example Field
-      </label>
-      <a
-        class="c-fucOQC c-fucOQC-bndJoy-size-sm"
-        href="https://example.com"
-      >
-        Example prompt
-      </a>
+        <label
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          for="example"
+        >
+          Example Field
+        </label>
+        <a
+          class="c-fucOQC c-fucOQC-bndJoy-size-sm"
+          href="https://example.com"
+        >
+          Example prompt
+        </a>
+      </div>
+      <input
+        class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
+        id="example"
+        name="example"
+        type="text"
+      />
     </div>
-    <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
-      id="example"
-      name="example"
-      type="text"
-    />
-    <div
-      class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
-    >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 8v5"
-        />
-        <line
-          x1="12"
-          x2="12"
-          y1="16"
-          y2="16"
-        />
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-        />
-      </svg>
-      <span
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
-      >
-        Example error
-      </span>
-    </div>
-  </div>
+  </form>
 </div>
 `;

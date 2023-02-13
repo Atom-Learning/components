@@ -19,12 +19,12 @@ export const InputField: React.FC<InputFieldProps> = ({
   prompt,
   description,
   feedbackMode,
+  // required,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
-  const ref = validation ? register(validation) : register
-
   const { error } = useFieldError(name)
+  const ref = validation ? register(validation) : register
 
   return (
     <FieldWrapper
@@ -34,6 +34,7 @@ export const InputField: React.FC<InputFieldProps> = ({
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
+      // required={Boolean(validation?.required || required)}
       feedbackMode={feedbackMode}
     >
       <Input

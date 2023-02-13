@@ -75,6 +75,14 @@ exports[`DateField component renders a field in error state 1`] = `
     font-weight: 400;
   }
 
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
   .c-fzYfTW {
     flex-shrink: 0;
     margin-right: var(--space-2);
@@ -133,6 +141,28 @@ exports[`DateField component renders a field in error state 1`] = `
 
   .c-fZTBsJ-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
+  }
+
+  .c-jgdwfn-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 {
+    margin-top: calc(var(--space-3)*-1);
+    margin-left: calc(var(--space-3)*-1);
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 > * {
+    margin-top: var(--space-3);
+    margin-left: var(--space-3);
   }
 
   .c-PJLV-iymbh-theme-error {
@@ -201,8 +231,8 @@ exports[`DateField component renders a field in error state 1`] = `
     right: 0;
   }
 
-  .c-dhzjXW-ijkHUQU-css {
-    margin-top: var(--space-2);
+  .c-PJLV-ihbpKWx-css {
+    margin-top: var(--space-3);
   }
 
   .c-dyvMgW-iiTbKsx-css {
@@ -272,34 +302,42 @@ exports[`DateField component renders a field in error state 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
+        class="c-PJLV c-PJLV-ihbpKWx-css"
       >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dlytZv-gap-3"
         >
-          <path
-            d="M12 8v5"
-          />
-          <line
-            x1="12"
-            x2="12"
-            y1="16"
-            y2="16"
-          />
-          <circle
-            cx="12"
-            cy="12"
-            r="10"
-          />
-        </svg>
-        <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
-        >
-          This field is required
-        </span>
+          <div
+            class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 8v5"
+              />
+              <line
+                x1="12"
+                x2="12"
+                y1="16"
+                y2="16"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+            <span
+              class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
+            >
+              This field is required
+            </span>
+          </div>
+        </div>
       </div>
     </div>
     <button

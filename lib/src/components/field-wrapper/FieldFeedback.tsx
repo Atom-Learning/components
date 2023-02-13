@@ -25,7 +25,7 @@ export const FieldFeedback: React.FC<IFieldFeedbackProps> = ({
   // `types` is an object containing all current validation errors, keyed by the validation type
   const { message, types } = error || {}
 
-  if (!types) return null
+  if (!types && !message) return null
 
   // For some reason, some errors generate a type but no message in
   // firstError mode, so we need to check for that

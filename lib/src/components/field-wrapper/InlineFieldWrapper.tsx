@@ -6,7 +6,7 @@ import { InlineMessage } from '~/components/inline-message'
 import { Label } from '~/components/label'
 import { RadioButton } from '~/components/radio-button'
 import type { CSS } from '~/stitches'
-
+import { FieldFeedback } from './FieldFeedback'
 import { Description } from './FieldDescription'
 
 type InlineFieldWrapperProps = {
@@ -25,7 +25,6 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
   css,
   description,
   direction = 'row',
-  error,
   label,
   required
 }) => (
@@ -51,7 +50,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       ))}
       {label}
     </Label>
-    {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+
     {description && (
       <Description
         css={{

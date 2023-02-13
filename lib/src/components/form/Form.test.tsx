@@ -33,7 +33,7 @@ describe(`Form component`, () => {
 
   it('passes error messages to fields', async () => {
     render(
-      <Form onSubmit={jest.fn()}>
+      <Form onSubmit={jest.fn()} novalidate>
         <InputField
           name="name"
           label="Name"
@@ -50,6 +50,7 @@ describe(`Form component`, () => {
     )
 
     userEvent.click(screen.getByText('Submit'))
+    userEvent.click(screen.getByRole('textbox', { name: 'Name' }))
 
     expect(await screen.findByText('Name is required'))
     expect(await screen.findByText('Password is required'))
