@@ -5,7 +5,7 @@ import {
   FieldWrapper,
   FieldElementWrapperProps
 } from '~/components/field-wrapper'
-import { useFieldError } from '~/components/form'
+
 import { PasswordInput } from '~/components/password-input'
 import { CSS } from '~/stitches'
 
@@ -21,10 +21,10 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   prompt = undefined,
   description,
   validation,
+  feedbackMode,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
-  const { error } = useFieldError(name)
 
   const ref = validation ? register(validation) : register
 
@@ -32,7 +32,6 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
     <FieldWrapper
       css={{ ...css, position: 'relative' } as CSS}
       description={description}
-      error={error}
       fieldId={name}
       label={label}
       prompt={prompt}

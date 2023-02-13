@@ -17,6 +17,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
   validation,
   prompt,
   description,
+  feedbackMode,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -28,7 +29,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
     <FieldWrapper
       css={css}
       description={description}
-      error={error}
+      feedbackMode={feedbackMode}
       fieldId={name}
       label={label}
       prompt={prompt}

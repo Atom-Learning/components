@@ -15,6 +15,7 @@ export interface NumberInputFieldProps extends NumberInputProps {
   name: string
   prompt?: { link: string; label: string }
   validation?: ValidationOptions
+  feedbackMode?: 'all' | 'firstError'
 }
 
 export const NumberInputField: React.FC<NumberInputFieldProps> = ({
@@ -24,6 +25,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   validation,
   prompt,
   description,
+  feedbackMode,
   ...remainingProps
 }) => {
   const { register, trigger } = useFormContext()
@@ -34,11 +36,11 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
     <FieldWrapper
       css={css}
       description={description}
-      error={error}
       fieldId={name}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
+      feedbackMode={feedbackMode}
     >
       <NumberInput
         id={name}

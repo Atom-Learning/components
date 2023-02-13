@@ -5,21 +5,24 @@ import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
 import { InlineMessage } from '~/components/inline-message'
+import { InlineMessageTheme } from '../inline-message/InlineMessage.types'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import type { CSS } from '~/stitches'
-
+import { FieldFeedback } from './FieldFeedback'
 import { Description } from './FieldDescription'
+import { Stack } from '../stack'
 
 export type FieldWrapperProps = {
   css?: CSS
-  error?: string
   fieldId: string
   label: string
   prompt?: { link: string; label: string }
   description?: string
   required?: boolean
   hideLabel?: boolean
+  feedbackDirection?: 'column' | 'row'
+  feedbackMode?: 'firstError' | 'all'
 }
 
 export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
@@ -30,13 +33,14 @@ export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
 export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   css,
   children,
-  error,
   fieldId,
   label,
   prompt,
   description,
   required,
-  hideLabel
+  hideLabel,
+  feedbackDirection = 'column',
+  feedbackMode = 'firstError'
 }) => {
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
 
@@ -62,7 +66,12 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         <Description css={{ mb: '$3' }}>{description}</Description>
       )}
       {children}
-      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+      <FieldFeedback
+        fieldName={fieldId}
+        direction={feedbackDirection}
+        css={{ mt: '$3' }}
+        validationMode={feedbackMode}
+      />
     </Box>
   )
 }

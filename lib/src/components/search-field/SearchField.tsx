@@ -17,6 +17,7 @@ export const SearchField: React.FC<SearchFieldProps> = ({
   validation,
   prompt,
   description,
+  feedbackMode,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -27,11 +28,11 @@ export const SearchField: React.FC<SearchFieldProps> = ({
     <FieldWrapper
       css={css}
       description={description}
-      error={error}
       fieldId={name}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
+      feedbackMode={feedbackMode}
     >
       <SearchInput
         id={name}
