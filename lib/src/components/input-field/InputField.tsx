@@ -3,8 +3,7 @@ import { useFormContext } from 'react-hook-form'
 
 import {
   FieldElementWrapperProps,
-  FieldWrapper,
-  useFieldMessages
+  FieldWrapper
 } from '~/components/field-wrapper'
 import { Input, InputProps } from '~/components/input'
 import { useFieldError } from '../form'
@@ -19,7 +18,6 @@ export const InputField: React.FC<InputFieldProps> = ({
   prompt,
   description,
   feedbackMode,
-  // required,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -34,7 +32,6 @@ export const InputField: React.FC<InputFieldProps> = ({
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
-      // required={Boolean(validation?.required || required)}
       feedbackMode={feedbackMode}
     >
       <Input
