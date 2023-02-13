@@ -41,6 +41,7 @@ export type FormValues = {
   defaultValues?: { [key: string]: string | number }
   onSubmit: (data: any) => void | any
   onError?: (errors: any) => void
+  criteriaMode?: 'firstError' | 'all'
   validationMode?: Mode
   persist?: PersistOptions
 } & (

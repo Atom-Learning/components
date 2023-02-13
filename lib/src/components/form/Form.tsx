@@ -85,6 +85,7 @@ export const Form: React.FC<FormProps> = ({
   validationMode = 'onBlur',
   render,
   persist,
+  criteriaMode = 'firstError',
   ...remainingProps
 }) => {
   invariant(
@@ -94,7 +95,8 @@ export const Form: React.FC<FormProps> = ({
 
   const formMethods = useForm({
     defaultValues,
-    mode: validationMode
+    mode: validationMode,
+    criteriaMode
   })
   const { handleSubmit, watch, setValue } = formMethods
 

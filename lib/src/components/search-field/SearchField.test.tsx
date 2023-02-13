@@ -49,7 +49,7 @@ describe(`SearchField component`, () => {
     const { container, findByText, getByRole } = render(
       <Form>
         <SearchField
-          llabel="Search Field"
+          label="Search Field"
           name="searchField"
           placeholder="Search Field"
           validation={{ required: errorText }}
@@ -58,6 +58,7 @@ describe(`SearchField component`, () => {
       </Form>
     )
     userEvent.click(getByRole('button'))
+    userEvent.click(await screen.findByPlaceholderText('Search Field'))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()
