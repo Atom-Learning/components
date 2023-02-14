@@ -15,7 +15,7 @@ export interface NumberInputFieldProps extends NumberInputProps {
   name: string
   prompt?: { link: string; label: string }
   validation?: ValidationOptions
-  criteriaMode?: 'all' | 'firstError'
+  feedbackDirection?: 'row' | 'column'
 }
 
 export const NumberInputField: React.FC<NumberInputFieldProps> = ({
