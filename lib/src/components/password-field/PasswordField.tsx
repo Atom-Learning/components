@@ -21,6 +21,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
   prompt = undefined,
   description,
   validation,
+  feedbackDirection,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -36,6 +37,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
       prompt={prompt}
       required={Boolean(validation?.required)}
       criteriaMode={validation?.criteriaMode}
+      feedbackDirection={feedbackDirection}
     >
       <PasswordInput
         autoComplete="current-password"

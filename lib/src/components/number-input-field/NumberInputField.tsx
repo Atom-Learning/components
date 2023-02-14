@@ -25,6 +25,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   validation,
   prompt,
   description,
+  feedbackDirection,
   ...remainingProps
 }) => {
   const { register, trigger } = useFormContext()
@@ -40,6 +41,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
       prompt={prompt}
       required={Boolean(validation?.required)}
       criteriaMode={validation?.criteriaMode}
+      feedbackDirection={feedbackDirection}
     >
       <NumberInput
         id={name}

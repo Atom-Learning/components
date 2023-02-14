@@ -17,6 +17,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
   validation,
   prompt,
   description,
+  feedbackDirection,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -33,6 +34,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
       prompt={prompt}
       required={Boolean(validation?.required)}
       criteriaMode={validation?.criteriaMode}
+      feedbackDirection={feedbackDirection}
     >
       <Textarea
         id={name}
