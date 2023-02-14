@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const fetch = require('node-fetch')
 
 const requestGithubTags = async () => {
   const resp = await fetch(
@@ -10,7 +10,9 @@ const requestGithubTags = async () => {
   );
 };
 
-export const getLibraryVersion = async () => {
+const getLibraryVersion = async () => {
   const tags = await requestGithubTags();
   return tags?.[0]?.name;
 };
+
+module.exports = { getLibraryVersion }

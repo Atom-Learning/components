@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 
-import { getPageByFilename, getAllPages } from '~/lib/api'
+const { getPageByFilename, getAllPages } = require('~/lib/api.cjs')
 import { TDynamicPage } from '~/lib/types/DynamicPage'
 import remarkGfm from 'remark-gfm'
 

@@ -1,13 +1,13 @@
-import path from "path";
-import kebabCase from "lodash.kebabcase";
-import { updateFrontMatter } from "./utility/updateFrontMatter.js";
-import {
+const path = require("path");
+const kebabCase = require("lodash.kebabcase");
+const { updateFrontMatter } = require("./utility/updateFrontMatter.cjs");
+const {
   pagesDirectory,
   getPageFilenames,
   getPageByFilename,
-} from "../../api.js";
+} = require("../../api.cjs");
 
-export const kebabSlug = async () => {
+const kebabSlug = async () => {
   let pageFilenames = getPageFilenames();
   await Promise.all(
     pageFilenames.map(async (currPageFilename) => {
@@ -21,3 +21,5 @@ export const kebabSlug = async () => {
     })
   );
 };
+
+module.exports = { kebabSlug }

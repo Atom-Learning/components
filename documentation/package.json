@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "provision": "node ./lib/build/provision",
+    "provision": "node ./lib/build/provision/index.cjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

@@ -25,7 +25,7 @@
     "**/*.ts",
     "**/*.tsx",
     "lib/get-lib-version.js",
-    "lib/api.js",
+    "lib/api.cjs",
     "lib/deps/build-navigation-structure.js",
     "lib/deps/build-navigation-structure.js",
     "lib/deps/index.js"

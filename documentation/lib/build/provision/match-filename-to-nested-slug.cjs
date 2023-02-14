@@ -1,12 +1,12 @@
-import fs from "fs";
-import path from "path";
-import {
+const fs = require("fs")
+const path = require("path")
+const {
   pagesDirectory,
   getPageFilenames,
   getPageByFilename,
-} from "../../api.js";
+} = require("../../api.cjs")
 
-export const matchFilenameToNestedSlug = async () => {
+const matchFilenameToNestedSlug = async () => {
   // Pass #1: Rename files
   let pageFilenames = getPageFilenames();
   await Promise.all(
@@ -28,3 +28,5 @@ export const matchFilenameToNestedSlug = async () => {
     })
   );
 };
+
+module.exports = { matchFilenameToNestedSlug }

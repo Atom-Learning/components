@@ -1,16 +1,16 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
 
-export const pagesDirectory = path.join(process.cwd(), "content");
+const pagesDirectory = path.join(process.cwd(), "content");
 
-export const getPageFilenames = () => {
+const getPageFilenames = () => {
   return fs
     .readdirSync(pagesDirectory)
     .filter((file) => path.extname(file) === ".md");
 };
 
-export const getPageByFilename = (filename, fields = []) => {
+const getPageByFilename = (filename, fields = []) => {
   const filenameNoExtension = filename.replace(/\.md$/, "");
   const fullPath = path.join(pagesDirectory, `${filenameNoExtension}.md`);
 
@@ -37,10 +37,17 @@ export const getPageByFilename = (filename, fields = []) => {
   return items;
 };
 
-export const getAllPages = (fields = []) => {
+const getAllPages = (fields = []) => {
   const filenames = getPageFilenames();
   const pages = filenames.map((filename) =>
     getPageByFilename(filename, fields)
   );
   return pages;
 };
+
+module.exports = {
+  pagesDirectory,
+  getPageFilenames,
+  getPageByFilename,
+  getAllPages
+}

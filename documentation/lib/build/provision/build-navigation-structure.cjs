@@ -1,6 +1,6 @@
-import { pagesDirectory, getAllPages } from "../../api.js";
-import { updateFrontMatter } from "./utility/updateFrontMatter.js";
-import path from "path";
+const { pagesDirectory, getAllPages } = require('../../api.cjs')
+const { updateFrontMatter } = require('./utility/updateFrontMatter.cjs')
+const path = require('path')
 
 //https://stackoverflow.com/a/71709765
 function findByUuid(array, uuid) {
@@ -28,7 +28,7 @@ function recursiveSort(array, compareFunction) {
   return fn(array);
 }
 
-export const buildNavigationStructure = async () => {
+const buildNavigationStructure = async () => {
   const allPages = getAllPages(["filename", "slug", "title", "parent", "uuid"]);
   let toProcessPages = [...allPages];
   const processedPages = [];
@@ -72,3 +72,5 @@ export const buildNavigationStructure = async () => {
     return a.title > b.title ? 1 : -1; // Comparing strings!
   });
 };
+
+module.exports = { buildNavigationStructure }
