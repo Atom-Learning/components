@@ -2,6 +2,7 @@ export type ValidationOptions = {
   required?: Option<boolean> | string
   min?: Option<number>
   max?: Option<number>
+  criteriaMode?: 'all' | 'firstError'
   minLength?: Option<number>
   maxLength?: Option<number>
   pattern?: Option<RegExp>

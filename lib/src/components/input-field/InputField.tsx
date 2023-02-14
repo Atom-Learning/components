@@ -17,7 +17,6 @@ export const InputField: React.FC<InputFieldProps> = ({
   validation,
   prompt,
   description,
-  feedbackMode,
   ...remainingProps
 }) => {
   const { register } = useFormContext()
@@ -32,7 +31,7 @@ export const InputField: React.FC<InputFieldProps> = ({
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
-      feedbackMode={feedbackMode}
+      criteriaMode={validation?.criteriaMode}
     >
       <Input
         id={name}

@@ -22,10 +22,13 @@ export type FieldWrapperProps = {
   required?: boolean
   hideLabel?: boolean
   feedbackDirection?: 'column' | 'row'
-  feedbackMode?: 'firstError' | 'all'
+  criteriaMode?: 'firstError' | 'all'
 }
 
-export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
+export type FieldElementWrapperProps = Omit<
+  FieldWrapperProps,
+  'fieldId' | 'criteriaMode'
+> & {
   name: string
   validation?: ValidationOptions
 }
@@ -40,7 +43,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   required,
   hideLabel,
   feedbackDirection = 'column',
-  feedbackMode = 'firstError'
+  criteriaMode = 'firstError'
 }) => {
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
 
@@ -70,7 +73,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         fieldName={fieldId}
         direction={feedbackDirection}
         css={{ mt: '$3' }}
-        validationMode={feedbackMode}
+        validationMode={criteriaMode}
       />
     </Box>
   )

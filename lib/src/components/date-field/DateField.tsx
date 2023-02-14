@@ -17,7 +17,6 @@ export const DateField: React.FC<DateFieldProps> = ({
   validation,
   prompt,
   description,
-  feedbackMode,
   ...remainingProps
 }) => {
   const { register, trigger } = useFormContext()
@@ -32,7 +31,7 @@ export const DateField: React.FC<DateFieldProps> = ({
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
-      feedbackMode={feedbackMode}
+      criteriaMode={validation?.criteriaMode}
     >
       <DateInput
         id={name}

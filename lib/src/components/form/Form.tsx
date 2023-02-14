@@ -85,7 +85,7 @@ export const Form: React.FC<FormProps> = ({
   validationMode = 'onBlur',
   render,
   persist,
-  criteriaMode = 'firstError',
+  criteriaMode = 'all',
   ...remainingProps
 }) => {
   invariant(
