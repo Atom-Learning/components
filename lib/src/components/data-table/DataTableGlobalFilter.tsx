@@ -38,7 +38,7 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
       </OptionallyVisuallyHiddenContainer>
       <SearchInput
         {...props}
-        value={globalFilter}
+        defaultValue={globalFilter}
         onChange={handleChange}
         name={label}
       />
