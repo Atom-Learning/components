@@ -121,7 +121,7 @@ exports[`SearchInput component renders 1`] = `
 </div>
 `;
 
-exports[`SearchInput component renders clear button 1`] = `
+exports[`SearchInput component renders clear button when non-empty defaultValue 1`] = `
 @media  {
   .c-fZTBsJ {
     -webkit-appearance: none;
@@ -268,10 +268,10 @@ exports[`SearchInput component renders clear button 1`] = `
     <input
       class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
-      value="testing"
+      value="testingWhenDefaultValue"
     />
     <button
-      aria-label="Clear"
+      aria-label="clearWhenDefaultValue"
       class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ifWWfIb-css"
       type="button"
     >
