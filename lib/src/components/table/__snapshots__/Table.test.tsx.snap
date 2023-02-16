@@ -88,7 +88,7 @@ exports[`Table component renders 1`] = `
     class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -101,7 +101,7 @@ exports[`Table component renders 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -228,7 +228,7 @@ exports[`Table component renders with a themed header 1`] = `
     class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gmYsCp-theme-primary c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-gmYsCp-theme-primary"
     >
       <tr
         class="c-hjAYDb"
@@ -241,7 +241,7 @@ exports[`Table component renders with a themed header 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -364,7 +364,7 @@ exports[`Table component renders with size set to lg 1`] = `
     class="c-cwQMhQ c-cwQMhQ-goJwcl-size-lg c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -377,7 +377,7 @@ exports[`Table component renders with size set to lg 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -500,7 +500,7 @@ exports[`Table component renders with square corners 1`] = `
     class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -513,7 +513,7 @@ exports[`Table component renders with square corners 1`] = `
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true c-PJLV-iPJLV-css"
+      class="c-PJLV c-PJLV-gdcSSw-striped-true"
     >
       <tr
         class="c-hjAYDb"
@@ -634,40 +634,39 @@ exports[`Table component renders with sticky columns 1`] = `
     width: 400px;
   }
 
-  .c-PJLV-iiisqbM-css {
+  .c-PJLV-icieWDT-css {
     overflow: auto;
     max-width: 100%;
+  }
+
+  .c-PJLV-icieWDT-css td:nth-of-type(1),
+  .c-PJLV-icieWDT-css th:nth-of-type(1) {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  .c-PJLV-icieWDT-css td {
+    background: inherit;
   }
 
   .c-cwQMhQ-idVpojG-css {
     height: 100px;
     width: 300px;
   }
-
-  .c-PJLV-ifwqPNX-css th:nth-of-type(1) {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-  }
-
-  .c-PJLV-icnOYPJ-css td:nth-of-type(1) {
-    background: inherit;
-    position: sticky;
-    left: 0;
-    z-index: 2;
-  }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-iiisqbM-css"
+    class="c-PJLV c-PJLV-icieWDT-css"
     role="scrollbar"
   >
     <table
       class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
-        class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark c-PJLV-ifwqPNX-css"
+        class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+        numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"
@@ -690,7 +689,8 @@ exports[`Table component renders with sticky columns 1`] = `
         </tr>
       </thead>
       <tbody
-        class="c-PJLV c-PJLV-gdcSSw-striped-true c-PJLV-icnOYPJ-css"
+        class="c-PJLV c-PJLV-gdcSSw-striped-true"
+        numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"

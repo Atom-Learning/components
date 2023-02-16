@@ -16,7 +16,10 @@ export const TableStickyColumnsContainer: React.FC<
   const [isScrolling, setIsScrolling] = React.useState<boolean>(false)
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
-    setIsScrolling(event.target.scrollLeft > 0)
+    const newIsScrolling = event.currentTarget.scrollLeft > 0
+    if (newIsScrolling !== isScrolling) {
+      setIsScrolling(newIsScrolling)
+    }
   }
 
   return (
@@ -26,12 +29,21 @@ export const TableStickyColumnsContainer: React.FC<
       css={{
         overflow: 'auto',
         maxWidth: '100%',
-        ...(isScrolling && {
-          [`& th,td:nth-of-type(${numberOfStickyColumns})`]: {
-            boxShadow: '$colors$alpha200 -2px -3px 9px 1px',
-            clipPath: 'inset(0px -10px 0px 0px)'
-          }
-        }),
+        [`& td:nth-of-type(${numberOfStickyColumns}), th:nth-of-type(${numberOfStickyColumns})`]:
+          {
+            ...(isScrolling && {
+              boxShadow: '$colors$alpha200 -2px -3px 9px 1px',
+              clipPath: 'inset(0px -10px 0px 0px)'
+            }),
+            ...(numberOfStickyColumns === 1 && {
+              position: 'sticky',
+              left: '0',
+              zIndex: '2'
+            })
+          },
+        '& td': {
+          bg: 'inherit'
+        },
         ...css
       }}
       {...restProps}

@@ -69,13 +69,17 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
 }: TableProps) => {
   const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
 
-  return numberOfStickyColumns ? (
-    <TableStickyColumnsContainer numberOfStickyColumns={numberOfStickyColumns}>
-      {tableComponent}
-    </TableStickyColumnsContainer>
-  ) : (
-    tableComponent
-  )
+  if (numberOfStickyColumns) {
+    return (
+      <TableStickyColumnsContainer
+        numberOfStickyColumns={numberOfStickyColumns}
+      >
+        {tableComponent}
+      </TableStickyColumnsContainer>
+    )
+  }
+
+  return tableComponent
 }
 
 Table.Body = TableBody

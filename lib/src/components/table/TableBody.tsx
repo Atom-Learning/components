@@ -22,33 +22,11 @@ const StyledTableBody = styled('tbody', {
   }
 })
 
-type TableBodyProps = React.ComponentProps<typeof StyledTableBody> & {
-  numberOfStickyColumns?: number
-}
+type TableBodyProps = React.ComponentProps<typeof StyledTableBody>
 
 export const TableBody: React.FC<TableBodyProps> = ({
   striped = true,
-  numberOfStickyColumns = 0,
-  css,
   ...rest
-}) => {
-  return (
-    <StyledTableBody
-      striped={striped}
-      css={{
-        ...(numberOfStickyColumns === 1 && {
-          [`& td:nth-of-type(${numberOfStickyColumns})`]: {
-            bg: 'inherit',
-            position: 'sticky',
-            left: '0',
-            zIndex: '2'
-          }
-        }),
-        ...css
-      }}
-      {...rest}
-    />
-  )
-}
+}) => <StyledTableBody striped={striped} {...rest} />
 
 TableBody.displayName = 'TableBody'

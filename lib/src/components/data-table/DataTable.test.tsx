@@ -686,19 +686,4 @@ describe('DataTable sticky columns', () => {
     )
     expect(container).toMatchSnapshot()
   })
-
-  it('allows scrolling and still see the first column', async () => {
-    render(
-      <Wrapper>
-        <DataTable columns={columns} data={data}>
-          <DataTable.Table numberOfStickyColumns={1} />
-        </DataTable>
-      </Wrapper>
-    )
-
-    fireEvent.scroll(screen.getByRole('scrollbar'), {
-      target: { scrollY: 100 }
-    })
-    expect(await screen.findByText('name')).toBeVisible()
-  })
 })

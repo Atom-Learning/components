@@ -41,15 +41,8 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
           })
         }}
       >
-        <DataTable.Head
-          theme={theme}
-          sortable={sortable}
-          numberOfStickyColumns={numberOfStickyColumns}
-        />
-        <DataTable.Body
-          striped={striped}
-          numberOfStickyColumns={numberOfStickyColumns}
-        />
+        <DataTable.Head theme={theme} sortable={sortable} />
+        <DataTable.Body striped={striped} />
       </Table>
     </>
   )
