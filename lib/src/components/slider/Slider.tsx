@@ -67,40 +67,48 @@ const StyledThumb = styled(Thumb, {
 
 export type SliderProps = React.ComponentProps<typeof StyledSlider>
 
-export const Slider: React.FC<SliderProps> & {
+type SliderType = React.ForwardRefExoticComponent<SliderProps> & {
   Value: typeof SliderValue
   Steps: typeof SliderSteps
-} = ({
-  value,
-  defaultValue,
-  min = 0,
-  max = 100,
-  theme = 'tonal',
-  css,
-  children,
-  ...remainingProps
-}) => {
-  const values = value || defaultValue
-  return (
-    <CSSWrapper css={css}>
-      <StyledSlider
-        theme={theme}
-        defaultValue={defaultValue}
-        value={value}
-        min={min}
-        max={max}
-        {...remainingProps}
-      >
-        <StyledTrack>
-          <StyledRange />
-        </StyledTrack>
-        {values?.length &&
-          values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
-      </StyledSlider>
-      {children}
-    </CSSWrapper>
-  )
 }
+
+export const Slider: SliderType = React.forwardRef(
+  (
+    {
+      value,
+      defaultValue,
+      min = 0,
+      max = 100,
+      theme = 'tonal',
+      css,
+      children,
+      ...remainingProps
+    },
+    ref
+  ) => {
+    const values = value || defaultValue
+    return (
+      <CSSWrapper css={css}>
+        <StyledSlider
+          theme={theme}
+          defaultValue={defaultValue}
+          value={value}
+          min={min}
+          max={max}
+          ref={ref}
+          {...remainingProps}
+        >
+          <StyledTrack>
+            <StyledRange />
+          </StyledTrack>
+          {values?.length &&
+            values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
+        </StyledSlider>
+        {children}
+      </CSSWrapper>
+    )
+  }
+) as SliderType
 
 Slider.Value = SliderValue
 Slider.Steps = SliderSteps
