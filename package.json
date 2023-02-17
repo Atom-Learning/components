@@ -3,19 +3,20 @@
   "name": "design-system",
   "workspaces": [
     "lib",
-    "site"
+    "documentation"
   ],
   "scripts": {
-    "dev:lib": "cd lib && NODE_ENV=development rollup -c -w",
-    "build:lib": "cd lib && NODE_ENV=production rollup -c",
+    "dev:lib": "cd lib && yarn build:proptypes && yarn dev",
+    "build:lib": "cd lib && yarn build:proptypes && yarn build:lib",
+    "test:lib": "cd lib && yarn test",
+    "server:docs": "npx netlify-cms-proxy-server",
+    "dev:docs": "cd documentation && yarn provision && yarn dev",
+    "build:docs": "cd documentation && yarn provision && yarn build",
+    "start:docs": "cd documentation && yarn provision && yarn start",
+    "dev:sandbox": "cd lib && yarn start:sandbox",
     "build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
-    "build:docs": "cd lib && node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
-    "dev:site": "cd site && next",
-    "build:site": "cd site && next build",
-    "start:site": "cd site && next start",
-    "lint-staged": "cd site && yarn run precommit && cd ../lib && yarn run precommit",
-    "build-all": "run-s build:*",
-    "start:sandbox": "cd lib && vite -c ./sandbox/vite.config.js"
+    "lint-staged": "cd lib && yarn run precommit",
+    "build-all": "run-s build:*"
   },
   "devDependencies": {
     "husky": "^4.3.8",
@@ -41,5 +42,9 @@
         "always"
       ]
     }
+  },
+  "resolutions": {
+    "**/react": "17.0.2",
+    "**/react-dom": "17.0.2"
   }
 }

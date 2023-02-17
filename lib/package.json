@@ -14,10 +14,10 @@
     "dev": "NODE_ENV=development rollup -c -w",
     "build:lib": "NODE_ENV=production rollup -c",
     "build:types": "NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
-    "build:docs": "node ./scripts/generate-component-props.mjs && node ./scripts/export-documentation.mjs",
+    "build:proptypes": "node ./scripts/generate-component-props.mjs",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
     "add-component": "node ./scripts/add-component.mjs",
-    "prepublishOnly": "run-s clean build:lib build:types build:docs",
+    "prepublishOnly": "run-s clean build:lib build:types build:proptypes",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
@@ -104,7 +104,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
     "prompts": "^2.4.0",
-    "react-docgen-typescript": "2.1.0",
     "rollup": "^2.39.0",
     "rollup-plugin-esbuild": "^4.8.2",
     "rollup-plugin-json": "^4.0.0",
@@ -123,8 +122,8 @@
   "peerDependencies": {
     "@atom-learning/icons": "^1.0.0",
     "@atom-learning/theme": "^1.0.0",
-    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
+    "react": "^17",
+    "react-dom": "^17"
   },
   "dependencies": {
     "@atom-learning/theme": "1.1.1",
@@ -161,6 +160,7 @@
     "mdast-util-from-markdown": "0.8.5",
     "micromark-extension-directive": "1.4.0",
     "pure-react-carousel": "^1.27.6",
+    "react-docgen-typescript": "2.1.0",
     "react-hook-form": "^6.15.4",
     "react-hook-form-persist": "^2.0.0",
     "react-hot-toast": "^1.0.2",

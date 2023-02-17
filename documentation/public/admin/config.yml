@@ -1,0 +1,105 @@
+backend:
+  name: github
+  repo: Atom-Learning/components
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://design.atomlearning.technology/ #Change to EXACT match for deployment url
+  api_root: https://api.github.com # Shouldn't be necessary
+  auth_endpoint: api/auth
+
+# local_backend: true
+
+media_folder: "documentation/public/admin/images" # Media files will be stored in the repo under images/uploads
+public_folder: "/admin/images"
+
+collections:
+  - name: static
+    label: "Static Pages"
+    files:
+      - label: "Landing Page"
+        name: landing
+        file: "documentation/content/landing/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Tabs"
+            name: "tabs"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - {
+                  label: "Content",
+                  name: "content",
+                  widget: "markdown",
+                  sanitize_preview: true,
+                } # editor_components (custom: Colours, Shadows, Icons, Space, etc., Api Ref)
+
+  - name: dynamic
+    label: "Dynamic Pages"
+    folder: "documentation/content"
+    create: true
+    identifier_field: slug
+    fields:
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Links",
+          name: "links",
+          widget: "object",
+          collapsed: true,
+          fields:
+            [
+              {
+                label: "View source",
+                name: "viewSource",
+                widget: "string",
+                required: false,
+              },
+              {
+                label: 'Show "Report An Issue"',
+                name: "showReportAnIssue",
+                widget: "boolean",
+                required: false,
+              },
+              {
+                label: "Custom Links",
+                name: "custom",
+                widget: "list",
+                summary: "{{fields.name}}",
+                fields:
+                  [
+                    { label: "Name", name: "name", widget: "string" },
+                    { label: "href", name: "href", widget: "string" },
+                    {
+                      label: "Is External",
+                      name: "isExternal",
+                      widget: "boolean",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
+        }
+      - label: "Tabs"
+        name: "tabs"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              sanitize_preview: true,
+            }
+      - {
+          label: "Parent",
+          name: "parent",
+          widget: "relation",
+          collection: "dynamic",
+          value_field: "{{uuid}}",
+          search_fields: ["title"],
+          display_fields: ["{{title}} --- {{nestedSlug}}"],
+          required: false,
+          multiple: false,
+        }
+      - { label: "UUID", name: "uuid", widget: "uuid" }
