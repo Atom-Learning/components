@@ -14,7 +14,7 @@ export const textVariants = {
   },
   noCapsize: {
     true: {
-      '&::before, &::after': { display: 'none' }
+      '&::before, &::after': { display: 'none !important' }
     }
   }
 }
