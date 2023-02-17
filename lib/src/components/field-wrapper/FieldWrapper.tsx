@@ -4,15 +4,13 @@ import * as React from 'react'
 import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
-import { InlineMessage } from '~/components/inline-message'
-import { InlineMessageTheme } from '../inline-message/InlineMessage.types'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
 import type { CSS } from '~/stitches'
 import { FieldFeedback } from './FieldFeedback'
 import { Description } from './FieldDescription'
-import { Stack } from '../stack'
 
+import type { FieldWrapperMessages } from './useFieldMessages'
 export type FieldWrapperProps = {
   css?: CSS
   fieldId: string
@@ -23,6 +21,7 @@ export type FieldWrapperProps = {
   hideLabel?: boolean
   feedbackDirection?: 'column' | 'row'
   criteriaMode?: 'firstError' | 'all'
+  messages?: FieldWrapperMessages
 }
 
 export type FieldElementWrapperProps = Omit<
@@ -43,7 +42,8 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   required,
   hideLabel,
   feedbackDirection = 'column',
-  criteriaMode = 'firstError'
+  criteriaMode = 'firstError',
+  messages
 }) => {
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
 
@@ -74,6 +74,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         direction={feedbackDirection}
         css={{ mt: '$3' }}
         validationMode={criteriaMode}
+        messages={messages}
       />
     </Box>
   )

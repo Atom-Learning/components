@@ -29,7 +29,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   ...remainingProps
 }) => {
   const { register, trigger } = useFormContext()
-  const { error } = useFieldError(name)
+  const error = useFieldError(name)
   const ref = validation ? register(validation) : register
 
   return (
