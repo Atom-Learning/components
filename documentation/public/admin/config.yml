@@ -1,8 +1,8 @@
 backend:
   name: github
   repo: Atom-Learning/components
-  branch: feat/site-cms-content # Branch to update (optional; defaults to master)
-  base_url: http://localhost:3000/ #Change to EXACT match for deployment url
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://design.atomlearning.technology/ #Change to EXACT match for deployment url
   api_root: https://api.github.com # Shouldn't be necessary
   auth_endpoint: api/auth
 
