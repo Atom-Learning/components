@@ -15,11 +15,11 @@ type NavigationProps = {
 const NavigationTitle: React.FC<{ level: number }> = ({ level, children }) => {
   switch (level) {
     case 1:
-      return <Heading as="h2" size="sm" children={children} />
+      return <Heading as="h2" size="sm">{children}</Heading>
     case 2:
-      return <Text as="h3" size="sm" css={{ fontWeight: 'bold' }} children={children} />
+      return <Text as="h3" size="sm" css={{ fontWeight: 'bold' }}>{children}</Text>
     default:
-      return <Text size="sm" children={children} />
+      return <Text size="sm">{children}</Text>
   }
 }
 
