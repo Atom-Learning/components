@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Atom-Learning/components
-  branch: main # Branch to update (optional; defaults to master)
+  branch: documentation-content # Branch to update (optional; defaults to master)
   base_url: https://atomlearning.design/ #Change to EXACT match for deployment url
   api_root: https://api.github.com # Shouldn't be necessary
   auth_endpoint: api/auth
