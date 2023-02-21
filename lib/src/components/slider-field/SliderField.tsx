@@ -1,5 +1,5 @@
 import React from 'react'
-import { Controller, useFormContext } from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import {
   FieldElementWrapperProps,
@@ -20,6 +20,8 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   label,
   name,
   defaultValue,
+  value,
+  validation,
   outputLabel,
   min = 0,
   max = 100,
@@ -27,32 +29,35 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   ...remainingProps
 }) => {
   const { control } = useFormContext()
+  const {
+    field: { ref, onChange, value: innerValue, name: innerName }
+  } = useController({
+    name,
+    control,
+    rules: validation,
+    defaultValue
+  })
+
+  React.useEffect(() => {
+    // Update the react-hook-form inner value to match what is passed in.
+    if (value?.length) onChange(value)
+  }, [JSON.stringify(value)])
 
   return (
     <FieldWrapper css={css} fieldId={name} label={label}>
-      <Controller
-        control={control}
-        name={name}
-        defaultValue={defaultValue}
-        render={({ onChange, value }) => (
-          <Slider
-            name={name}
-            defaultValue={defaultValue}
-            onValueChange={onChange}
-            value={value}
-            min={min}
-            max={max}
-            {...remainingProps}
-          >
-            <Slider.Steps min={min} max={max} steps={steps} />
+      <Slider
+        ref={ref}
+        name={innerName}
+        onValueChange={onChange}
+        value={innerValue}
+        min={min}
+        max={max}
+        {...remainingProps}
+      >
+        <Slider.Steps min={min} max={max} steps={steps} />
 
-            <Slider.Value
-              value={value || defaultValue}
-              outputLabel={outputLabel}
-            />
-          </Slider>
-        )}
-      />
+        <Slider.Value value={innerValue} outputLabel={outputLabel} />
+      </Slider>
     </FieldWrapper>
   )
 }
