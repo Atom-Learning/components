@@ -6,6 +6,14 @@ backend:
   api_root: https://api.github.com # Shouldn't be necessary
   auth_endpoint: api/auth
 
+  commit_messages:
+    create: "[NetlifyCMS] Create {{collection}} “{{slug}}”"
+    update: "[NetlifyCMS] Update {{collection}} “{{slug}}”"
+    delete: "[NetlifyCMS] Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[NetlifyCMS] Upload “{{path}}”"
+    deleteMedia: "[NetlifyCMS] Delete “{{path}}”"
+    openAuthoring: "[NetlifyCMS] {{message}}"
+
 # local_backend: true
 
 media_folder: "documentation/public/admin/images" # Media files will be stored in the repo under images/uploads
