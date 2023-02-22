@@ -37,7 +37,8 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
     {...props}
     ref={forwardedRef}
     onPointerMove={preventHover}
-    onPointerLeave={preventHover}>
+    onPointerLeave={preventHover}
+  >
     {children}
     <Icon
       is={ChevronDown}

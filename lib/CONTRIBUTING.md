@@ -35,7 +35,7 @@ yarn install
 - `dev`: Builds the libary in dev mode and watches for changes
 - `start:sandbox`: Starts up a simple sandbox to test changes
 - `build:lib`: Builds the library and populates the `dist` folder
-- `build:docs`: Builds the documentation and exports it to be consumed by the `documentation` project.
+- `build:proptypes`: Builds the proptypes and exports it to be consumed by the `documentation` project.
 - `clean`: Deletes the `dist` folder to ensure a clean build
 - `format`: Formats the code using `Prettier`
 - `lint`: Lints and fixes syntax issues with the code using `ESLint`

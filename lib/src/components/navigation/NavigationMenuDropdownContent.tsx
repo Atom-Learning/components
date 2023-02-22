@@ -19,10 +19,7 @@ const StyledContent = styled(NavigationMenuPrimitive.Content, {
 })
 
 export const NavigationMenuDropdownContent: React.FC = ({ children }) => (
-  <StyledContent
-    onPointerMove={preventHover}
-    onPointerLeave={preventHover}
-  >
+  <StyledContent onPointerMove={preventHover} onPointerLeave={preventHover}>
     <StyledList>{children}</StyledList>
   </StyledContent>
 )

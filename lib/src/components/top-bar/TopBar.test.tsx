@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import { TopBar } from '.'
 
-const ExampleTopBar = ({size}) => (
+const ExampleTopBar = ({ size }) => (
   <TopBar size={size}>
     <TopBar.Brand href="atomlearning.co.uk">
       <TopBar.BrandName>Admin Panel</TopBar.BrandName>

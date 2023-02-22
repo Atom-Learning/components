@@ -1,0 +1,37 @@
+{
+  "name": "@atom-learning/documentation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "provision": "node ./lib/build/provision/index.cjs",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@atom-learning/components": "0.0.0-semantically-released",
+    "@atom-learning/icons": "^1.14.0",
+    "@atom-learning/theme": "^1.2.0",
+    "@lukeed/uuid": "^2.0.0",
+    "netlify-cms-app": "^2.15.72",
+    "next": "12.2.3",
+    "next-mdx-remote": "^4.1.0",
+    "pascalcase": "^2.0.0",
+    "polished": "^4.2.2",
+    "randomstring": "^1.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-live": "3.1.1",
+    "simple-oauth2": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint": "8.21.0",
+    "eslint-config-next": "12.2.3",
+    "lodash.kebabcase": "^4.1.1",
+    "node-fetch": "^2",
+    "typescript": "^4.7.4",
+    "yaml": "^2.1.1"
+  }
+}
