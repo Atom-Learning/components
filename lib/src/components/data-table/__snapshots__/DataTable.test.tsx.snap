@@ -3757,26 +3757,36 @@ exports[`DataTable sticky columns renders 1`] = `
     transition: opacity 250ms linear 150ms;
   }
 
-  .c-PJLV-icieWDT-css {
+  .c-PJLV-iiXkAWq-css {
     overflow: auto;
     max-width: 100%;
   }
 
-  .c-PJLV-icieWDT-css td:nth-of-type(1),
-  .c-PJLV-icieWDT-css th:nth-of-type(1) {
+  .c-PJLV-iiXkAWq-css td {
+    background: inherit;
+  }
+
+  .c-PJLV-igbAmsf-css {
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  .c-PJLV-igbAmsf-css td:nth-of-type(1),
+  .c-PJLV-igbAmsf-css th:nth-of-type(1) {
     position: sticky;
-    left: 0;
+    left: 0px;
+    min-width: 0px;
     z-index: 2;
   }
 
-  .c-PJLV-icieWDT-css td {
+  .c-PJLV-igbAmsf-css td {
     background: inherit;
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icieWDT-css"
+    class="c-PJLV c-PJLV-igbAmsf-css"
     role="scrollbar"
   >
     <table
