@@ -13,12 +13,13 @@ interface ITableStickyColumnsContainerProps {
 export const TableStickyColumnsContainer: React.FC<
   ITableStickyColumnsContainerProps
 > = ({ children, numberOfStickyColumns = 0, css, ...restProps }) => {
-  const [isScrolling, setIsScrolling] = React.useState<boolean>(false)
+  const [hasScroll, setHasScroll] = React.useState<boolean>(false)
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
-    const newIsScrolling = event.currentTarget.scrollLeft > 0
-    if (newIsScrolling !== isScrolling) {
-      setIsScrolling(newIsScrolling)
+    const newHasScroll =
+      event.currentTarget.scrollWidth > event.currentTarget.clientWidth
+    if (newHasScroll !== hasScroll) {
+      setHasScroll(newHasScroll)
     }
   }
 
@@ -31,7 +32,7 @@ export const TableStickyColumnsContainer: React.FC<
         maxWidth: '100%',
         [`& td:nth-of-type(${numberOfStickyColumns}), th:nth-of-type(${numberOfStickyColumns})`]:
           {
-            ...(isScrolling && {
+            ...(hasScroll && {
               boxShadow: '$colors$alpha200 -2px -3px 9px 1px',
               clipPath: 'inset(0px -10px 0px 0px)'
             }),
