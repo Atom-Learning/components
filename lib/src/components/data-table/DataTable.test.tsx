@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {
+  fireEvent,
   render,
   screen,
   waitFor,
@@ -671,5 +672,18 @@ describe('DataTable server-side', () => {
       sortDirection: SORT_DIRECTION,
       globalFilter: ''
     })
+  })
+})
+
+describe('DataTable sticky columns', () => {
+  it('renders', () => {
+    const { container } = render(
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table numberOfStickyColumns={1} />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(container).toMatchSnapshot()
   })
 })
