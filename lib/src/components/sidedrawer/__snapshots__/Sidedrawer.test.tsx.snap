@@ -102,6 +102,54 @@ exports[`Sidedrawer renders 1`] = `
     vertical-align: middle;
   }
 
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
   .c-buzpRz {
     align-items: center;
     background: white;
@@ -260,6 +308,18 @@ exports[`Sidedrawer renders 1`] = `
       animation: k-kSYzSh 250ms ease-out;
     }
 }
+
+  .c-kfLCww {
+    fill: var(--colors-tonal500);
+  }
+
+  [data-align="end"] .c-kfLCww {
+    margin-right: var(--space-2);
+  }
+
+  [data-align="start"] .c-kfLCww {
+    margin-left: var(--space-2);
+  }
 }
 
 @media  {
@@ -289,6 +349,10 @@ exports[`Sidedrawer renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
   }
 
   .c-buzpRz-ctpDzU-active-true {
@@ -411,8 +475,10 @@ exports[`Sidedrawer renders 1`] = `
         Count is: 
         0
         <button
+          aria-describedby="radix-5"
           aria-label="close"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+          data-state="instant-open"
           type="button"
         >
           <svg
@@ -426,6 +492,43 @@ exports[`Sidedrawer renders 1`] = `
             />
           </svg>
         </button>
+        <div
+          data-radix-popper-content-wrapper=""
+          style="position: fixed; left: 0px; top: 0px; transform: translate3d(0px, -4px, 0); min-width: max-content; --radix-popper-transform-origin: 0px 0px;"
+        >
+          <div
+            class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
+            data-align="center"
+            data-side="top"
+            data-state="instant-open"
+            style="pointer-events: auto; --radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin);"
+          >
+            close
+            <span
+              style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+            >
+              <svg
+                class="c-kfLCww"
+                height="5"
+                preserveAspectRatio="none"
+                style="display: block;"
+                viewBox="0 0 30 10"
+                width="10"
+              >
+                <polygon
+                  points="0,0 30,0 15,10"
+                />
+              </svg>
+            </span>
+            <span
+              id="radix-5"
+              role="tooltip"
+              style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+            >
+              close
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -606,6 +709,54 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     vertical-align: middle;
   }
 
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
   .c-buzpRz {
     align-items: center;
     background: white;
@@ -764,6 +915,18 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
       animation: k-kSYzSh 250ms ease-out;
     }
 }
+
+  .c-kfLCww {
+    fill: var(--colors-tonal500);
+  }
+
+  [data-align="end"] .c-kfLCww {
+    margin-right: var(--space-2);
+  }
+
+  [data-align="start"] .c-kfLCww {
+    margin-left: var(--space-2);
+  }
 }
 
 @media  {
@@ -793,6 +956,10 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
   }
 
   .c-buzpRz-ctpDzU-active-true {
@@ -904,11 +1071,11 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
 }
 
 <div
-  aria-describedby="radix-24"
-  aria-labelledby="radix-23"
+  aria-describedby="radix-28"
+  aria-labelledby="radix-27"
   class="c-lnkIfg"
   data-state="open"
-  id="radix-22"
+  id="radix-26"
   role="navigation"
   style="pointer-events: auto;"
   tabindex="-1"
@@ -925,8 +1092,10 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
         Count is: 
         0
         <button
+          aria-describedby="radix-29"
           aria-label="close"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+          data-state="instant-open"
           type="button"
         >
           <svg
@@ -940,6 +1109,43 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
             />
           </svg>
         </button>
+        <div
+          data-radix-popper-content-wrapper=""
+          style="position: fixed; left: 0px; top: 0px; transform: translate3d(0px, -4px, 0); min-width: max-content; --radix-popper-transform-origin: 0px 0px;"
+        >
+          <div
+            class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
+            data-align="center"
+            data-side="top"
+            data-state="instant-open"
+            style="pointer-events: auto; --radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin);"
+          >
+            close
+            <span
+              style="position: absolute; bottom: 0px; transform: translateY(100%); left: 0px;"
+            >
+              <svg
+                class="c-kfLCww"
+                height="5"
+                preserveAspectRatio="none"
+                style="display: block;"
+                viewBox="0 0 30 10"
+                width="10"
+              >
+                <polygon
+                  points="0,0 30,0 15,10"
+                />
+              </svg>
+            </span>
+            <span
+              id="radix-29"
+              role="tooltip"
+              style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+            >
+              close
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -968,13 +1174,13 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
           data-state="open"
         >
           <button
-            aria-controls="radix-20"
+            aria-controls="radix-24"
             aria-disabled="true"
             aria-expanded="true"
             class="c-kAYqTI"
             data-radix-collection-item=""
             data-state="open"
-            id="radix-21"
+            id="radix-25"
             type="button"
           >
             <div
@@ -995,10 +1201,10 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
           </button>
         </h3>
         <div
-          aria-labelledby="radix-21"
+          aria-labelledby="radix-25"
           class="c-igwAPi"
           data-state="open"
-          id="radix-20"
+          id="radix-24"
           role="region"
           style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
         >
