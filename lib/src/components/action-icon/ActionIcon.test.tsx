@@ -10,6 +10,7 @@ import { Tooltip } from '../tooltip'
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>
 )
+
 describe('ActionIcon component', () => {
   it('renders', async () => {
     const { container } = render(
