@@ -1,0 +1,49 @@
+name: Sync from documentation to main
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - documentation-content
+    paths:
+      - documentation/content/**
+      - documentation/public/admin/images/**
+
+jobs:
+  sync:
+    if: "startsWith(github.event.head_commit.message, '[NetlifyCMS]')"
+    name: Sync only the documentation content relevant folders from documentation-content into the main branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Get changed files excluding the docs
+        id: changed-files-excluded
+        uses: tj-actions/changed-files@v35
+        with:
+          base_sha: ${{ github.sha }}
+          files_ignore: |
+            documentation/content/**
+            documentation/public/admin/images/**
+
+      - name: Fail if files other than docs are changed
+        if: steps.changed-files-excluded.outputs.any_changed == 'true'
+        run: |
+          echo "Non-documentation files have been changed:"
+          for file in ${{ steps.changed-files-excluded.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
+          echo "This action is exiting as a safety feature! Revert files before trying again!"
+          exit 1
+
+      - uses: everlytic/branch-merge@1.1.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_ref: "documentation-content"
+          target_branch: "main"
+          commit_message_template: "[Automated] Merged {source_ref} into target {target_branch}"
