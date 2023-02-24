@@ -43,7 +43,7 @@ jobs:
 
       - uses: everlytic/branch-merge@1.1.2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.BOT_ACCESS_TOKEN }}
           source_ref: "documentation-content"
           target_branch: "main"
           commit_message_template: "[Automated] Merged {source_ref} into target {target_branch}"
