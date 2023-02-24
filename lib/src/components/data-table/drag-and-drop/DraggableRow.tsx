@@ -1,13 +1,13 @@
+import type { UniqueIdentifier } from '@dnd-kit/core'
+import { useSortable } from '@dnd-kit/sortable'
+import { CSS } from '@dnd-kit/utilities'
 import type { Row } from '@tanstack/react-table'
+import { flexRender } from '@tanstack/react-table'
 import * as React from 'react'
+
 import { Table } from '../../table'
 import { DataTableDataCell } from '../DataTableDataCell'
 import { Handle, useDragAndDropTable } from './'
-import { CSS } from '@dnd-kit/utilities'
-import { useSortable } from '@dnd-kit/sortable'
-import type { UniqueIdentifier } from '@dnd-kit/core'
-
-import { flexRender } from '@tanstack/react-table'
 export type DataTableDraggableRowProps = React.ComponentProps<
   typeof Table.Row
 > & {

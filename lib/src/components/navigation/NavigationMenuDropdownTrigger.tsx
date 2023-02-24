@@ -1,6 +1,7 @@
 import { ChevronDown } from '@atom-learning/icons'
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
+import { preventHover } from './preventHover'
 
 import { styled } from '~/stitches'
 
@@ -31,7 +32,13 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
   HTMLButtonElement,
   React.PropsWithChildren<{ active?: boolean }>
 >(({ children, active, ...props }, forwardedRef) => (
-  <StyledTrigger active={active} {...props} ref={forwardedRef}>
+  <StyledTrigger
+    active={active}
+    {...props}
+    ref={forwardedRef}
+    onPointerMove={preventHover}
+    onPointerLeave={preventHover}
+  >
     {children}
     <Icon
       is={ChevronDown}

@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '~/stitches'
 import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
@@ -54,6 +54,7 @@ export const NumberInputStepper: React.ForwardRefExoticComponent<NumberInputStep
         <Tooltip.Trigger asChild>
           <StyledSpan tabIndex={-1}>
             <StyledStepperButton
+              hasTooltip={false}
               tabIndex={-1}
               appearance="outline"
               ref={forwardedRef}

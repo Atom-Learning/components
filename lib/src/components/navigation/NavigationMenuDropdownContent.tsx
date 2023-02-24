@@ -1,12 +1,13 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
+import { preventHover } from './preventHover'
 
 import { styled } from '~/stitches'
 
 const StyledList = styled('ul', {
   listStyle: 'none',
   m: 0,
-  p: 0,
+  p: 0
 })
 
 const StyledContent = styled(NavigationMenuPrimitive.Content, {
@@ -18,7 +19,7 @@ const StyledContent = styled(NavigationMenuPrimitive.Content, {
 })
 
 export const NavigationMenuDropdownContent: React.FC = ({ children }) => (
-  <StyledContent>
+  <StyledContent onPointerMove={preventHover} onPointerLeave={preventHover}>
     <StyledList>{children}</StyledList>
   </StyledContent>
 )

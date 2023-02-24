@@ -1,50 +1,61 @@
 # Atom Learning Design System
 
-![badge](https://img.shields.io/npm/v/@atom-learning/components)
-![badge](https://img.shields.io/github/workflow/status/Atom-Learning/components/Test%20&%20validate)
-![badge](https://img.shields.io/bundlephobia/minzip/@atom-learning/components)
+This repository contains a variety packages relevant to the Atom Learning Design System.
 
-This repo contains both the Design System (`./lib`) and its documentation site (`./site`).
+More information on each area lives in its own `README.md`:
 
-`lib/`, released as `@atom-learning/components`, is a collection of generic React components built using [stitches](https://stitches.dev), it includes components that cover layout, content, data collection, media and a host of other UI concerns. It uses `@atom-learning/theme` to provide the design tokens for color, typography, spacing and layout.
+- **`./lib`**: source for the `@atom-learning/components` package; [for more information on `./lib` see `./lib/README.md`](https://github.com/Atom-Learning/components/tree/main/lib#readme)
+- **`./documentation`**: source for the documentation [website](https://design.atomlearning.technology/) ; [for more information on `./documentation` see `./documentation/README.md`](https://github.com/Atom-Learning/components/tree/main/documentation#readme)
 
-```
-yarn add @atom-learning/components @atom-learning/theme
-```
+## Working with the repo for local development
 
-```jsx
-import { Box, Heading, Text } from "@atom-learning/components";
+(!) Don't forget to run `yarn install` to get all needed dependencies downloaded.
 
-const Component = () => {
-  return (
-    <Box as="article">
-      <Heading css={{ mb: "$3" }}>This is a heading</Heading>
-      <Text>This is a paragraph of text</Text>
-    </Box>
-  );
-};
-```
+To view your changes you can use either of the two ways as explained below. Regardless of which option you choose, make sure to update or add (for new components) the appropriate documentation in the NetlifyCMS website (`./documentation`) as part of your PR!
 
-You can read more about the components included in `@atom-learning/components` at [https://design.atomlearning.technology](https://design.atomlearning.technology)
+### 1: Documentation site (http://localhost:3000, http://localhost:3000/admin)
 
-## Working with the repo locally ft. useful scripts
+Fistly, get the library output:
 
-We can run the documentation site locally, with hot-reloading triggered by changes in the library. This offers a low-friction dev environment where we can see the effects of any local changes when applied to all existing components. (Note: hot reloading is currently only supported for changes to Typescript/.tsx files, not markdown files.)
+When _developing_ you will always want to be running the **library** for development: `yarn dev:lib`.
+If _not developing_ the library, just run `yarn build:lib` to generate the dist output once. Wait until this finishes building and you see a table in the terminal output before proceeding to any following steps!
 
-First, run `yarn build:lib && yarn build:docs`. `yarn build:lib` exports all its components into `dist` and `yarn build:docs` uses the exported components to generate the markdown documentation files for each component also into the `lib/dist` directory, where the documentation site can find them.
+Then for the site itself, open a new terminal for each of the below:
 
-When that's done run `yarn dev:lib` to watch `lib` for code changes.
+- `yarn server:docs` then uncomment `local_backend: true` in `/documentation/public/admin/config.yml`
+- `yarn dev:docs`
 
-In another terminal, run `yarn dev:site` to run the documentation site at `http://localhost:3000`, taking the output as the previous commands as its input.
+(!) You will need to stop and rerun `yarn dev:docs` to see your changes on the website if you:
 
-In the future, you only need to rerun `yarn build:docs` after you either delete the content of `lib/dist` or you add/update some markdown files inside `lib`.
+- Make a brand new page via the CMS
+- Change the parent page of an existing page via the CMS
+  This is because of how building the navigation and routing currently is being handled in a custom node script which runs as part of `dev:docs`.
 
-### Running the sandbox
+#### Explanation
 
-The library offers sandbox capabilities to ease the development process. This runs with the following command
+We can run the **documentation** site locally, with hot-reloading triggered by changes in the library. This offers a low-friction dev environment where we can see the effects of any local changes when applied to all existing components.
 
-`yarn start:sandbox`
+However, when working locally, the documentation site will not be able to authenticate you to log in. This is because the OAuth endpoint which is hit on authentication is not the `localhost` one but the live one `design.atomlearning.technology`.
 
-### Tests
+This is fine, you can still log in to the documentation site by enabling local backend-end and commiting any changes manually after you finish your changes and opening a pull request.
+To do that you need to uncomment `local_backend: true` in `/documentation/public/admin/config.yml` and in a terminal run `yarn server:docs` which will start the local backend node process.
 
-Make sure you run test commands for `lib` components from _within the `lib` directory_, otherwise Jest won't run with the correct configuration and it won't be able to interpret JSX.
+Editing locally like this is faster than editing in the CMS on the live documentation site but might introduce conflicts if other editors are modifying the same files at the same time; you will need to resolve such conflicts if they exist as you would with conflicts in a regular pull request.
+
+If, for some reason, you don't want to use the CMS you can make changes in files in `documentation/content` manually. It is not recommended as it would usually be easier to do via the CMS but it is an option. To run the documentation website for development run `yarn dev:docs`
+
+### 2. Basic sandbox (http://localhost:1234)
+
+In a new terminal:
+
+- `yarn dev:sandbox`
+
+#### Explanation
+
+You will also be able to work on developing components via the basic sandbox; which is still available instead of adding to the NetlifyCMS documentation. Use only when developing locally and do not commit changes to the sandbox file. To run the sandbox for development: `yarn dev:sandbox`
+
+Note that you don't need to be watching for library changes when developing via the sandbox as the command itself handles it.
+
+## Tests
+
+Currently tests only exist for `/lib` and a basic version of them can be run with `yarn test:lib`. More specific test options can be found in `/lib/package.json` and if used should be run from the `/lib` directory directly.

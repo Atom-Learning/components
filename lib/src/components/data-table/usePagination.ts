@@ -1,6 +1,5 @@
-import React from 'react'
-
 import type { PaginationState } from '@tanstack/react-table'
+import React from 'react'
 
 const defaultPaginationState: PaginationState = { pageIndex: 0, pageSize: 10 }
 export const usePagination = (

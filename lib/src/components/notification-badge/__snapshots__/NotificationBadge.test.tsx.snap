@@ -51,6 +51,54 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
 }
 
 @media  {
@@ -67,6 +115,10 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     height: var(--sizes-3);
     width: var(--sizes-3);
     stroke-width: 2;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
   }
 }
 
@@ -105,7 +157,8 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     </div>
     <button
       aria-label="testing"
-      class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv"
+      class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+      data-state="closed"
       type="button"
     >
       <svg

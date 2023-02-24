@@ -14,7 +14,9 @@ const StyledTableBody = styled('tbody', {
         }
       },
       false: {
-        bg: 'white'
+        [`${StyledRow}`]: {
+          bg: 'white'
+        }
       }
     }
   }

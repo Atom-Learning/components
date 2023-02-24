@@ -6,7 +6,9 @@ interface Size {
   height: number | undefined
 }
 
-export const useWindowSize = ({ delay = 500 } = {}) => {
+export const useWindowSize = ({
+  delay = 500
+}: { delay?: number } = {}): Size => {
   const [windowSize, setWindowSize] = useState<Size>({
     width: undefined,
     height: undefined

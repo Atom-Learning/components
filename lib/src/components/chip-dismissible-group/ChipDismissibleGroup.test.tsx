@@ -5,24 +5,27 @@ import { Icon } from '~/components/icon'
 import { Upload } from '@atom-learning/icons'
 
 import { ChipDismissibleGroup } from '.'
+import { Tooltip } from '../tooltip'
 
 const ChipDismissibleGroupImplementation = () => (
-  <ChipDismissibleGroup
-    onDismiss={(value) => {
-      console.log(`dismiss: ${value}`)
-    }}
-  >
-    <ChipDismissibleGroup.Item value="a" dismissActionLabel="Dismiss 'A'">
-      A
-    </ChipDismissibleGroup.Item>
-    <ChipDismissibleGroup.Item
-      value="b"
-      dismissActionLabel="Dismiss 'B'"
-      disabled
+  <Tooltip.Provider>
+    <ChipDismissibleGroup
+      onDismiss={(value) => {
+        console.log(`dismiss: ${value}`)
+      }}
     >
-      <Icon is={Upload} />B
-    </ChipDismissibleGroup.Item>
-  </ChipDismissibleGroup>
+      <ChipDismissibleGroup.Item value="a" dismissActionLabel="Dismiss 'A'">
+        A
+      </ChipDismissibleGroup.Item>
+      <ChipDismissibleGroup.Item
+        value="b"
+        dismissActionLabel="Dismiss 'B'"
+        disabled
+      >
+        <Icon is={Upload} />B
+      </ChipDismissibleGroup.Item>
+    </ChipDismissibleGroup>
+  </Tooltip.Provider>
 )
 
 describe('ChipDismissibleGroup component', () => {

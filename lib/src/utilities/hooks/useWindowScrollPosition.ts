@@ -1,14 +1,26 @@
-import { useEffect, useState } from 'react'
-import { debounce } from 'throttle-debounce'
+import { useEffect, useState, useMemo } from 'react'
+import { debounce, throttle } from 'throttle-debounce'
 
-export const useWindowScrollPosition = ({ delay = 500 } = {}): {
+type TUseWindowScrollPositionOptions = {
+  delay?: number
+  delayMethod?: 'throttle' | 'debounce'
+}
+
+type TUseWindowScrollPositionOutput = {
   x: number
   y: number
-} => {
+}
+
+export const useWindowScrollPosition = ({ delay = 500, delayMethod = 'throttle' }: TUseWindowScrollPositionOptions = {}): TUseWindowScrollPositionOutput => {
   const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 })
 
+  const delayMethodFn = useMemo(() => {
+    if (delayMethod === 'throttle') return throttle
+    if (delayMethod === 'debounce') return debounce
+  }, [delayMethod])
+
   useEffect(() => {
-    const handleScroll = debounce(delay, () => {
+    const handleScroll = delayMethodFn(delay, () => {
       setScrollPosition({ x: window.scrollX, y: window.scrollY })
     })
 
@@ -17,7 +29,7 @@ export const useWindowScrollPosition = ({ delay = 500 } = {}): {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [delayMethodFn, delay])
 
   return scrollPosition
 }

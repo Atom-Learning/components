@@ -4,16 +4,19 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { TopBar } from '.'
+import { Tooltip } from '../tooltip'
 
-const ExampleTopBar = ({size}) => (
-  <TopBar size={size}>
-    <TopBar.Brand href="atomlearning.co.uk">
-      <TopBar.BrandName>Admin Panel</TopBar.BrandName>
-    </TopBar.Brand>
-    <TopBar.ActionIcon icon={Search} label="Search" />
-    <TopBar.Divider />
-    <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
-  </TopBar>
+const ExampleTopBar = ({ size }) => (
+  <Tooltip.Provider>
+    <TopBar size={size}>
+      <TopBar.Brand href="atomlearning.co.uk">
+        <TopBar.BrandName>Admin Panel</TopBar.BrandName>
+      </TopBar.Brand>
+      <TopBar.ActionIcon icon={Search} label="Search" />
+      <TopBar.Divider />
+      <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
+    </TopBar>
+  </Tooltip.Provider>
 )
 
 describe('TopBar component', () => {

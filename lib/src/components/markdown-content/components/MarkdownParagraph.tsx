@@ -1,5 +1,6 @@
 import { Content, Paragraph } from 'mdast'
 import * as React from 'react'
+
 import { Text } from '../../text'
 
 type MarkdownParagraphProps = {

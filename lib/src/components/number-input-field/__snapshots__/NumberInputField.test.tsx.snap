@@ -12,6 +12,10 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -34,6 +38,36 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -239,6 +273,12 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -249,62 +289,18 @@ exports[`NumberInputField component renders a field in error state - has no prog
     pointer-events: none;
   }
 
+  .c-fPoCzx-ihgsOSq-css {
+    border-left: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
   .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
   }
 
   .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .c-fPoCzx-ihgsOSq-css {
-    border-left: none;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
   }
 }
 
@@ -334,24 +330,26 @@ exports[`NumberInputField component renders a field in error state - has no prog
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-invalid="true"
@@ -372,23 +370,25 @@ exports[`NumberInputField component renders a field in error state - has no prog
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
       <div
@@ -443,6 +443,10 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -465,6 +469,36 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -623,6 +657,12 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -631,50 +671,6 @@ exports[`NumberInputField component renders a field with a disabled input - has 
   .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .c-fPoCzx-ihgsOSq-css {
@@ -710,24 +706,26 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-valuemax="9007199254740991"
@@ -748,24 +746,26 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
     </div>
@@ -790,6 +790,10 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin: 0;
   }
 
+  .c-jVLVTy {
+    z-index: 1;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -812,6 +816,36 @@ exports[`NumberInputField component renders a field with a number input - has no
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-fPoCzx {
+    border-color: var(--colors-tonal400) !important;
+    z-index: 1;
+  }
+
+  .c-fPoCzx:hover {
+    background: var(--colors-tonal50);
+  }
+
+  .c-fPoCzx:hover svg {
+    color: var(--colors-tonal400);
+  }
+
+  .c-fPoCzx svg {
+    color: var(--colors-tonal300);
+  }
+
+  .c-fPoCzx:active {
+    background: var(--colors-tonal100);
+  }
+
+  .c-fPoCzx:active svg {
+    color: var(--colors-tonal500);
+  }
+
+  .c-fPoCzx:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 
   .c-hVoQtf {
@@ -970,6 +1004,12 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
+  .c-fPoCzx-iwWtoZ-css {
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .c-fZTBsJ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
@@ -978,50 +1018,6 @@ exports[`NumberInputField component renders a field with a number input - has no
   .c-fZTBsJ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
-  }
-}
-
-@media  {
-  .c-jVLVTy {
-    z-index: 1;
-  }
-
-  .c-fPoCzx {
-    border-color: var(--colors-tonal400) !important;
-    z-index: 1;
-  }
-
-  .c-fPoCzx:hover {
-    bg: var(--tonal50);
-  }
-
-  .c-fPoCzx:hover svg {
-    color: var(--colors-tonal400);
-  }
-
-  .c-fPoCzx svg {
-    color: var(--colors-tonal300);
-  }
-
-  .c-fPoCzx:active {
-    bg: var(--tonal100);
-  }
-
-  .c-fPoCzx:active svg {
-    color: var(--colors-tonal500);
-  }
-
-  .c-fPoCzx:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-}
-
-@media  {
-  .c-fPoCzx-iwWtoZ-css {
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
   }
 
   .c-fPoCzx-ihgsOSq-css {
@@ -1057,24 +1053,26 @@ exports[`NumberInputField component renders a field with a number input - has no
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-valuemax="9007199254740991"
@@ -1094,23 +1092,25 @@ exports[`NumberInputField component renders a field with a number input - has no
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
     </div>

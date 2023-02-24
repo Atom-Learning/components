@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {
+  fireEvent,
   render,
   screen,
   waitFor,
@@ -128,9 +129,11 @@ describe('DataTable component', () => {
 
   it('Renders drag handles for draggable table rows', () => {
     const { container } = render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.DragAndDropTable />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.DragAndDropTable />
+        </DataTable>
+      </Wrapper>
     )
 
     expect(container).toMatchSnapshot()
@@ -170,17 +173,19 @@ describe('DataTable component', () => {
       )
     }
     render(
-      <DataTable
-        columns={columns}
-        data={[
-          { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-          { name: 'agatha', hobby: 'crossfit', id: 2 },
-          { name: 'betty', hobby: 'acting', id: 3 }
-        ]}
-      >
-        <DataTable.DragAndDropTable />
-        <DragAndDropMock />
-      </DataTable>
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={[
+            { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
+            { name: 'agatha', hobby: 'crossfit', id: 2 },
+            { name: 'betty', hobby: 'acting', id: 3 }
+          ]}
+        >
+          <DataTable.DragAndDropTable />
+          <DragAndDropMock />
+        </DataTable>
+      </Wrapper>
     )
 
     act(() =>
@@ -286,10 +291,12 @@ describe('DataTable.Pagination component', () => {
 describe('DataTable Search component', () => {
   it('Filters table based on any column', async () => {
     render(
-      <DataTable columns={columns} data={data}>
-        <DataTable.GlobalFilter label="Search" />
-        <DataTable.Table sortable />
-      </DataTable>
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.GlobalFilter label="Search" />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
     )
 
     const search = screen.getByRole('searchbox')
@@ -566,7 +573,7 @@ describe('DataTable server-side', () => {
     expect(await screen.findByText(error)).toBeVisible()
   })
 
-  it('Retrys fetching the data when clicking retry from the error component', async () => {
+  it('Retries fetching the data when clicking retry from the error component', async () => {
     getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
     render(
@@ -671,5 +678,18 @@ describe('DataTable server-side', () => {
       sortDirection: SORT_DIRECTION,
       globalFilter: ''
     })
+  })
+})
+
+describe('DataTable sticky columns', () => {
+  it('renders', () => {
+    const { container } = render(
+      <Wrapper>
+        <DataTable columns={columns} data={data}>
+          <DataTable.Table numberOfStickyColumns={1} />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(container).toMatchSnapshot()
   })
 })

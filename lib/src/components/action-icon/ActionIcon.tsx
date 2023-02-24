@@ -1,4 +1,4 @@
-import type * as Stitches from '@stitches/react'
+import type { VariantProps } from '@stitches/react'
 import { darken } from 'color2k'
 import invariant from 'invariant'
 import * as React from 'react'
@@ -7,6 +7,7 @@ import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import { ActionIconSizeMap } from './ActionIcon.constants'
+import { Tooltip } from '../tooltip/Tooltip'
 
 import { Icon } from '../icon/Icon'
 
@@ -24,6 +25,7 @@ const getSimpleVariant = (base: string, interact: string, active: string) => ({
     cursor: 'not-allowed'
   }
 })
+
 const getSolidVariant = (base: string, interact: string, active: string) => ({
   bg: base,
   color: 'white',
@@ -195,12 +197,36 @@ const StyledButton = styled('button', {
   ]
 })
 
+type ConditionallyWrapWithTooltipProps = {
+  hasTooltip: boolean
+  label: string
+  tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
+  children: React.ReactNode
+}
+
+const ConditionallyWrapWithTooltip: React.FC<
+  ConditionallyWrapWithTooltipProps
+> = ({ hasTooltip, label, tooltipSide, children }) => {
+  if (hasTooltip) {
+    return (
+      <Tooltip>
+        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
+        <Tooltip.Content side={tooltipSide}>{label}</Tooltip.Content>
+      </Tooltip>
+    )
+  }
+
+  return <span>{children}</span>
+}
+
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
-  Stitches.VariantProps<typeof StyledButton> & {
+  VariantProps<typeof StyledButton> & {
     as?: string | React.ReactNode
     children: React.ReactNode
     label: string
+    hasTooltip?: boolean
+    tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
   } & NavigatorActions
 >
 
@@ -214,6 +240,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       label,
       href,
       disabled,
+      hasTooltip = true,
+      tooltipSide,
       ...remainingProps
     },
     ref
@@ -232,34 +260,40 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       : ({ type: 'button' } as const)
 
     return (
-      <StyledButton
-        {...remainingProps}
-        {...optionalLinkProps}
-        aria-label={label}
-        theme={theme}
-        appearance={appearance}
-        size={size}
-        ref={ref}
-        disabled={disabled}
+      <ConditionallyWrapWithTooltip
+        hasTooltip={hasTooltip}
+        label={label}
+        tooltipSide={tooltipSide}
       >
-        {React.Children.map(children, (child) => {
-          // TS needs this check for any following code to access child.type
-          // even with optional chaining
-          if (!React.isValidElement(child)) {
-            throw new Error(INVALID_CHILDREN_MESSAGE)
-          }
+        <StyledButton
+          {...remainingProps}
+          {...optionalLinkProps}
+          aria-label={label}
+          theme={theme}
+          appearance={appearance}
+          size={size}
+          ref={ref}
+          disabled={disabled}
+        >
+          {React.Children.map(children, (child) => {
+            // TS needs this check for any following code to access child.type
+            // even with optional chaining
+            if (!React.isValidElement(child)) {
+              throw new Error(INVALID_CHILDREN_MESSAGE)
+            }
 
-          invariant(
-            child.type === Icon,
-            `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-          )
+            invariant(
+              child.type === Icon,
+              `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+            )
 
-          return React.cloneElement(child, {
-            size: ActionIconSizeMap[size as string],
-            css: { ...(child.props.css ? child.props.css : {}) }
-          })
-        })}
-      </StyledButton>
+            return React.cloneElement(child, {
+              size: ActionIconSizeMap[size as string],
+              css: { ...(child.props.css ? child.props.css : {}) }
+            })
+          })}
+        </StyledButton>
+      </ConditionallyWrapWithTooltip>
     )
   }
 )

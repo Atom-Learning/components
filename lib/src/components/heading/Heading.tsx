@@ -45,7 +45,7 @@ export const StyledHeading = styled('h2', {
     },
     noCapsize: {
       true: {
-        '&::before, &::after': { display: 'none' }
+        '&::before, &::after': { display: 'none !important' }
       }
     }
   }

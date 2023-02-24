@@ -43,7 +43,7 @@ const ChipContent = ({ children, ...rest }) => {
   return (
     <StyledChipContent {...rest}>
       {
-        childrenArray.map((child) => {
+        childrenArray.map((child, index) => {
           if (!isSingleChild && typeof child === 'string')
             return (
               <Box as="span" css={overflowElipsis} key={child}>
@@ -51,7 +51,7 @@ const ChipContent = ({ children, ...rest }) => {
               </Box>
             )
           if (React.isValidElement(child) && child.type === Icon) {
-            return <ChipIcon {...child.props} />
+            return <ChipIcon key={`icon-${index}`} {...child.props} />
           }
           return child
         }) as React.ReactElement[]

@@ -541,3 +541,178 @@ exports[`Table component renders with square corners 1`] = `
   </table>
 </div>
 `;
+
+exports[`Table component renders with sticky columns 1`] = `
+@media  {
+  .c-cwQMhQ {
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--fonts-sans);
+    font-size: var(--fontSizes-sm);
+    width: 100%;
+  }
+
+  .c-hjAYDb {
+    background: unset;
+  }
+
+  .c-GSaiK {
+    color: white;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-cCZzXk {
+    border-bottom: 1px solid var(--colors-tonal100);
+    box-sizing: border-box;
+    color: var(--colors-tonal400);
+    font-family: var(--fonts-body);
+    line-height: 1.5;
+    padding: var(--space-2) var(--space-3);
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .c-cCZzXk:first-child {
+    font-weight: bold;
+  }
+}
+
+@media  {
+  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
+  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
+  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+    height: var(--sizes-4);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+    border-top-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+    border-bottom-left-radius: var(--radii-0);
+  }
+
+  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+    background: var(--colors-primaryDark);
+  }
+
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+    background: white;
+  }
+
+  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-tonal50);
+  }
+
+  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
+  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
+  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
+    height: var(--sizes-5);
+  }
+
+  .c-PJLV-gmYsCp-theme-primary .c-GSaiK {
+    background: var(--colors-primary);
+  }
+}
+
+@media  {
+  .c-cwQMhQ-icnGIKd-css {
+    height: 100px;
+    width: 400px;
+  }
+
+  .c-PJLV-icieWDT-css {
+    overflow: auto;
+    max-width: 100%;
+  }
+
+  .c-PJLV-icieWDT-css td:nth-of-type(1),
+  .c-PJLV-icieWDT-css th:nth-of-type(1) {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  .c-PJLV-icieWDT-css td {
+    background: inherit;
+  }
+
+  .c-cwQMhQ-idVpojG-css {
+    height: 100px;
+    width: 300px;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-icieWDT-css"
+    role="scrollbar"
+  >
+    <table
+      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-idVpojG-css"
+    >
+      <thead
+        class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+        numberofstickycolumns="1"
+      >
+        <tr
+          class="c-hjAYDb"
+        >
+          <th
+            class="c-GSaiK"
+          >
+            Column A
+          </th>
+          <th
+            class="c-GSaiK"
+          >
+            Column B
+          </th>
+          <th
+            class="c-GSaiK"
+          >
+            Column C
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="c-PJLV c-PJLV-gdcSSw-striped-true"
+        numberofstickycolumns="1"
+      >
+        <tr
+          class="c-hjAYDb"
+        >
+          <td
+            class="c-cCZzXk"
+          >
+            This is text
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
+            This is text
+          </td>
+          <td
+            class="c-cCZzXk"
+          >
+            This is text
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

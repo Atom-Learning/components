@@ -1,10 +1,10 @@
 import * as React from 'react'
-import { Controller, useFormContext } from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import { Checkbox } from '~/components/checkbox'
 import {
-  InlineFieldWrapper,
-  FieldElementWrapperProps
+  FieldElementWrapperProps,
+  InlineFieldWrapper
 } from '~/components/field-wrapper'
 import { useFieldError } from '~/components/form'
 
@@ -18,43 +18,48 @@ enum CheckboxValue {
 
 export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   css,
-  defaultChecked = false,
   label,
   name,
   validation,
   description,
+  defaultChecked = false,
+  checked,
   ...remainingProps
 }) => {
   const { control } = useFormContext()
   const { error } = useFieldError(name)
+  const {
+    field: { ref, onChange, value: innerChecked, name: innerName }
+  } = useController({
+    name,
+    control,
+    rules: validation,
+    defaultValue: defaultChecked
+  })
+
+  React.useEffect(() => {
+    // Update the react-hook-form inner checked to match what is passed in.
+    if (typeof checked !== 'undefined') onChange(checked)
+  }, [checked])
 
   return (
-    <Controller
-      control={control}
-      name={name}
-      defaultValue={defaultChecked}
-      rules={validation}
-      render={({ onChange, value, name: innerName }) => (
-        <InlineFieldWrapper
-          css={css}
-          description={description}
-          error={error}
-          label={label}
-          required={Boolean(validation?.required)}
-        >
-          <Checkbox
-            defaultChecked={defaultChecked}
-            defaultValue={defaultChecked ? CheckboxValue.ON : CheckboxValue.OFF}
-            checked={value}
-            name={innerName}
-            onCheckedChange={onChange}
-            value={value ? CheckboxValue.ON : CheckboxValue.OFF}
-            {...(error && { state: 'error' })}
-            {...remainingProps}
-          />
-        </InlineFieldWrapper>
-      )}
-    />
+    <InlineFieldWrapper
+      css={css}
+      description={description}
+      error={error}
+      label={label}
+      required={Boolean(validation?.required)}
+    >
+      <Checkbox
+        ref={ref}
+        name={innerName}
+        {...remainingProps}
+        onCheckedChange={onChange}
+        value={innerChecked ? CheckboxValue.ON : CheckboxValue.OFF}
+        checked={innerChecked}
+        {...(error && { state: 'error' })}
+      />
+    </InlineFieldWrapper>
   )
 }
 
