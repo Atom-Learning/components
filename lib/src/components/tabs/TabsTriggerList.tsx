@@ -36,6 +36,8 @@ const StyledChevronActionIcon = styled(ActionIcon, {
   opacity: 0.9
 })
 
+const SCROLL_STEP = 0.8 // Used to scroll 80% of clientWidth
+
 export const TabsTriggerList: React.FC<
   React.ComponentProps<typeof StyledTriggerList> & {
     colorScheme?: typeof ColorScheme
@@ -44,7 +46,11 @@ export const TabsTriggerList: React.FC<
   const [listRef, setListRefCallback] = useCallbackRefState()
 
   const { width } = useSize({ element: listRef, delay: 500 })
-  const { left } = useScrollPosition({ element: listRef, delay: 100, delayMethod: 'debounce' })
+  const { left } = useScrollPosition({
+    element: listRef,
+    delay: 100,
+    delayMethod: 'debounce'
+  })
 
   const canScrollXAxis = React.useMemo(() => {
     if (!listRef) return false
@@ -87,7 +93,7 @@ export const TabsTriggerList: React.FC<
           css={{
             left: 0
           }}
-          onClick={() => scrollList(-0.8)}
+          onClick={() => scrollList(-SCROLL_STEP)}
         >
           <Icon is={ChevronLeft} />
         </StyledChevronActionIcon>
@@ -102,7 +108,7 @@ export const TabsTriggerList: React.FC<
           css={{
             right: 0
           }}
-          onClick={() => scrollList(0.8)}
+          onClick={() => scrollList(SCROLL_STEP)}
         >
           <Icon is={ChevronRight} />
         </StyledChevronActionIcon>
