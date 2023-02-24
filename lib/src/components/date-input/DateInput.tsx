@@ -77,6 +77,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
               label={updatedLabels.open}
               size={size}
               theme="neutral"
+              hasTooltip={false}
             >
               <Icon is={CalendarEvent} />
             </ActionIcon>

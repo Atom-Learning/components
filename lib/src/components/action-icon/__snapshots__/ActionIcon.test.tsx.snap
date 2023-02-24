@@ -25,6 +25,54 @@ exports[`ActionIcon component renders 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
 }
 
 @media  {
@@ -37,6 +85,10 @@ exports[`ActionIcon component renders 1`] = `
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
   }
 }
 
@@ -64,7 +116,8 @@ exports[`ActionIcon component renders 1`] = `
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv"
+    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV"
+    data-state="closed"
     type="button"
   >
     <svg />
