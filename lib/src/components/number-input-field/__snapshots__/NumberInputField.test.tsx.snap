@@ -330,24 +330,26 @@ exports[`NumberInputField component renders a field in error state - has no prog
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-invalid="true"
@@ -368,23 +370,25 @@ exports[`NumberInputField component renders a field in error state - has no prog
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
       <div
@@ -702,24 +706,26 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-valuemax="9007199254740991"
@@ -740,24 +746,26 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
     </div>
@@ -1045,24 +1053,26 @@ exports[`NumberInputField component renders a field with a number input - has no
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-            disabled=""
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="decrement"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+              disabled=""
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
         <input
           aria-valuemax="9007199254740991"
@@ -1082,23 +1092,25 @@ exports[`NumberInputField component renders a field with a number input - has no
           data-state="closed"
           tabindex="-1"
         >
-          <button
-            aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-            tabindex="-1"
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+          <span>
+            <button
+              aria-label="increment"
+              class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+              tabindex="-1"
+              type="button"
             >
-              <path
-                d="M20 12H4m8-8v16"
-              />
-            </svg>
-          </button>
+              <svg
+                aria-hidden="true"
+                class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 12H4m8-8v16"
+                />
+              </svg>
+            </button>
+          </span>
         </span>
       </div>
     </div>

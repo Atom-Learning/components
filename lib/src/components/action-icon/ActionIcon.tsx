@@ -197,15 +197,26 @@ const StyledButton = styled('button', {
   ]
 })
 
-const ConditionallyWrapWithTooltip = ({ hasTooltip, label, children }) => {
-  return !hasTooltip ? (
-    children
-  ) : (
-    <Tooltip>
-      <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
-      <Tooltip.Content>{label}</Tooltip.Content>
-    </Tooltip>
-  )
+type ConditionallyWrapWithTooltipProps = {
+  hasTooltip: boolean
+  label: string
+  tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
+  children: React.ReactNode
+}
+
+const ConditionallyWrapWithTooltip: React.FC<
+  ConditionallyWrapWithTooltipProps
+> = ({ hasTooltip, label, tooltipSide, children }) => {
+  if (hasTooltip) {
+    return (
+      <Tooltip>
+        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
+        <Tooltip.Content side={tooltipSide}>{label}</Tooltip.Content>
+      </Tooltip>
+    )
+  }
+
+  return <span>{children}</span>
 }
 
 type ActionIconProps = Override<
@@ -215,6 +226,7 @@ type ActionIconProps = Override<
     children: React.ReactNode
     label: string
     hasTooltip?: boolean
+    tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
   } & NavigatorActions
 >
 
@@ -229,6 +241,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       href,
       disabled,
       hasTooltip = true,
+      tooltipSide,
       ...remainingProps
     },
     ref
@@ -247,7 +260,11 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       : ({ type: 'button' } as const)
 
     return (
-      <ConditionallyWrapWithTooltip hasTooltip={hasTooltip} label={label}>
+      <ConditionallyWrapWithTooltip
+        hasTooltip={hasTooltip}
+        label={label}
+        tooltipSide={tooltipSide}
+      >
         <StyledButton
           {...remainingProps}
           {...optionalLinkProps}
