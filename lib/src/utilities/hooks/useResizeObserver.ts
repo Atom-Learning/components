@@ -12,7 +12,7 @@ type TUseResizeObserverOutput = ResizeObserver | null
 const createResizeObserver = (callback: () => void) => {
   try {
     return new ResizeObserver(callback)
-  } catch (error) {
+  } catch {
     return null
   }
 }
