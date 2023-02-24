@@ -1,22 +1,32 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-
+import { Tooltip } from '../tooltip'
 import { SearchInput } from '.'
+
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
+)
 
 describe('SearchInput component', () => {
   it('renders', async () => {
-    const { container } = render(<SearchInput />)
+    const { container } = render(
+      <Wrapper>
+        <SearchInput />
+      </Wrapper>
+    )
 
     expect(container).toMatchSnapshot()
   })
 
   it('renders clear button when non-empty defaultValue', async () => {
     const { container } = render(
-      <SearchInput
-        defaultValue="testingWhenDefaultValue"
-        clearText="clearWhenDefaultValue"
-      />
+      <Wrapper>
+        <SearchInput
+          defaultValue="testingWhenDefaultValue"
+          clearText="clearWhenDefaultValue"
+        />
+      </Wrapper>
     )
     expect(container).toMatchSnapshot()
 
@@ -27,7 +37,11 @@ describe('SearchInput component', () => {
   })
 
   it('renders clear button when non-empty value', async () => {
-    render(<SearchInput value="testingWhenValue" clearText="clearWhenValue" />)
+    render(
+      <Wrapper>
+        <SearchInput value="testingWhenValue" clearText="clearWhenValue" />
+      </Wrapper>
+    )
     expect(
       await screen.queryByDisplayValue('testingWhenValue')
     ).toBeInTheDocument()
@@ -39,11 +53,13 @@ describe('SearchInput component', () => {
     const mockOnValueChange = jest.fn()
 
     render(
-      <SearchInput
-        placeholder="Search"
-        onChange={mockOnChange}
-        onValueChange={mockOnValueChange}
-      />
+      <Wrapper>
+        <SearchInput
+          placeholder="Search"
+          onChange={mockOnChange}
+          onValueChange={mockOnValueChange}
+        />
+      </Wrapper>
     )
 
     const input = screen.getByPlaceholderText('Search')
@@ -54,7 +70,11 @@ describe('SearchInput component', () => {
   })
 
   it('clears text on button click', async () => {
-    render(<SearchInput value="testing" />)
+    render(
+      <Wrapper>
+        <SearchInput value="testing" />
+      </Wrapper>
+    )
 
     act(() => {
       fireEvent.click(screen.getByRole('button'))
@@ -65,7 +85,11 @@ describe('SearchInput component', () => {
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<SearchInput aria-label="Search" />)
+    const { container } = render(
+      <Wrapper>
+        <SearchInput aria-label="Search" />
+      </Wrapper>
+    )
 
     expect(await axe(container)).toHaveNoViolations()
   })

@@ -3,14 +3,21 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Popover } from '.'
+import { Tooltip } from '../tooltip'
+
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
+)
 
 describe(`Popover component`, () => {
   it('renders the trigger with the popover hidden by default', async () => {
     const { container } = render(
-      <Popover>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
@@ -20,10 +27,12 @@ describe(`Popover component`, () => {
 
   it('opens the popover once trigger is clicked', async () => {
     render(
-      <Popover>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     const trigger = screen.getByText('TRIGGER')
@@ -39,10 +48,12 @@ describe(`Popover component`, () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Popover defaultOpen>
-        <Popover.Trigger>TRIGGER</Popover.Trigger>
-        <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
-      </Popover>
+      <Wrapper>
+        <Popover defaultOpen>
+          <Popover.Trigger>TRIGGER</Popover.Trigger>
+          <Popover.Content aria-label="test popover">CONTENT</Popover.Content>
+        </Popover>
+      </Wrapper>
     )
 
     expect(
