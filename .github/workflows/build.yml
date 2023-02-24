@@ -1,0 +1,51 @@
+name: Build what you need when you need it
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - feat/control-documentation-via-documentation-content-branch
+
+jobs:
+  sync:
+    name: Build what is needed only (and deploy?)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: "14"
+
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 0
+
+      - name: Get changed documentation files
+        id: changed-files-documentation
+        uses: tj-actions/changed-files@v35
+        with:
+          files: documentation/**
+
+      - name: Get changed library files
+        id: changed-files-library
+        uses: tj-actions/changed-files@v35
+        with:
+          files: lib/**
+
+      - run: yarn install
+        if: steps.changed-files-documentation.outputs.any_changed == 'true' || steps.changed-files-library.outputs.any_changed == 'true'
+
+      - name: Build docs
+        if: steps.changed-files-documentation.outputs.any_changed == 'true'
+        run: yarn build:docs
+
+      - name: Build library
+        if: steps.changed-files-library.outputs.any_changed == 'true'
+        run: yarn build:lib & yarn build:types
+
+      # - name: Commit changes
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: "[Automatic] build: run and commit builds"
