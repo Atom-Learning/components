@@ -59,21 +59,6 @@ tabs:
       </Stack>`} language={"tsx"} />
 
 
-      It is recommended to pair `ActionIcon` with `Tooltip` to provide a clear visual description of the action the user is about to perform.
-
-
-      <CodeBlock live={true} preview={true} code={`<Tooltip>
-        <Tooltip.Trigger asChild>
-           <span>
-            <ActionIcon size="lg" label="Add to basket">
-              <Icon is={Basket} />
-            </ActionIcon>
-          </span>
-        </Tooltip.Trigger>
-        <Tooltip.Content>Add to basket</Tooltip.Content>
-      </Tooltip>`} language={"tsx"} />
-
-
       ## Polymorphism
 
 
@@ -91,6 +76,10 @@ tabs:
         </ActionIcon>
       </Stack>`} language={"tsx"} />
 
+
+      ## Tooltip
+
+      The `ActionIcon` shows a tooltip by default. If the tooltip needs to be turned off it can by passing `hasTooltip=false`. It is not advisable to turn off the tooltip option as it may reduce the user experience.
 
       ## API Reference
 

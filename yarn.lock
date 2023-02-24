@@ -28,15 +28,10 @@
     chalk "^4.1.0"
     css "^3.0.0"
 
-"@atom-learning/theme@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.1.1.tgz#8944c731c6778d6881cf8c8a14dd76c3d1de219c"
-  integrity sha512-L3Fhd9rG+AWRqW6NFoVeriDcBjKpGpt1jwBMWt68kT7pnFBaOdAW/4cl5Kc5OJye9Z64mlR502XSBfMu2wCyCw==
-
-"@atom-learning/theme@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.1.0.tgz#dde9ea78393bba9b9fbce01107a9c36eedfa262f"
-  integrity sha512-Pz4VpmQy1OllkNpsT4bT7Fah7hANiooI/kkQJuIMTTHwwQ3JyNIadxpomGvz0Pqfjnk2RRZbjPFGkWhLymdOOg==
+"@atom-learning/theme@1.2.0", "@atom-learning/theme@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-1.2.0.tgz#311eb0246b7f4815d83e35f383590301498ecdb5"
+  integrity sha512-bkv+c5CRTWk9JhxPDzywpxAbsWZYcSbKFAxFHmkvBACG/A6Fy33yef823V75O7IQTzL5+1ssIFKXckbnNJ9Wzg==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

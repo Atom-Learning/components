@@ -4,16 +4,22 @@ import * as React from 'react'
 
 import { Form } from '../'
 import { PasswordField } from '.'
+import { Tooltip } from '../tooltip'
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>
+    <Form onSubmit={() => null}>{children}</Form>
+  </Tooltip.Provider>
+)
 
-describe(`Password component`, () => {
+describe(`PasswordField component`, () => {
   it('renders a password field', async () => {
     const { container } = render(
-      <Form>
+      <Wrapper>
         <PasswordField
           name="password"
           css={{ m: 'auto', height: 100, width: 100 }}
         />
-      </Form>
+      </Wrapper>
     )
 
     expect(container).toMatchSnapshot()
@@ -21,9 +27,9 @@ describe(`Password component`, () => {
 
   it('renders a password field - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Form>
+      <Wrapper>
         <PasswordField name="password" />
-      </Form>
+      </Wrapper>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -31,12 +37,12 @@ describe(`Password component`, () => {
 
   it('renders with a prompt', async () => {
     const { container } = render(
-      <Form>
+      <Wrapper>
         <PasswordField
           name="password"
           prompt={{ label: 'Hello', link: '/somewhere' }}
         />
-      </Form>
+      </Wrapper>
     )
 
     expect(screen.getByRole('link')).toBeInTheDocument()
