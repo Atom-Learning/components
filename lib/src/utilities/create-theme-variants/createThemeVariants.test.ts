@@ -8,6 +8,7 @@ describe('createThemeVariants', () => {
       0: { p: '$space$0' },
       1: { p: '$space$1' },
       2: { p: '$space$2' },
+      24: { p: '$space$24' },
       3: { p: '$space$3' },
       4: { p: '$space$4' },
       5: { p: '$space$5' },
