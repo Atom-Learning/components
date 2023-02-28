@@ -42,6 +42,7 @@ const getSolidVariant = (base: string, interact: string, active: string) => ({
     cursor: 'not-allowed'
   }
 })
+
 const getOutlineVariant = (base: string, interact: string, active: string) => ({
   border: '1px solid',
   borderColor: 'currentColor',
@@ -216,7 +217,9 @@ const ConditionallyWrapWithTooltip: React.FC<
     )
   }
 
-  return <span>{children}</span>
+  // Ignore fragment error as this is the one place we will allow it
+  // eslint-disable-next-line
+  return <>{children}</>
 }
 
 type ActionIconProps = Override<

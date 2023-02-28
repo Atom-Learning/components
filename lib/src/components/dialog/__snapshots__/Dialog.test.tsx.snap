@@ -139,24 +139,22 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
   style="pointer-events: auto;"
   tabindex="-1"
 >
-  <span>
-    <button
-      aria-label="Close dialog"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
-      type="button"
+  <button
+    aria-label="Close dialog"
+    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-        />
-      </svg>
-    </button>
-  </span>
+      <path
+        d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+      />
+    </svg>
+  </button>
   CONTENT
 </div>
 `;
@@ -332,24 +330,22 @@ exports[`Dialog component with custom background renders 1`] = `
     style="pointer-events: auto;"
     tabindex="-1"
   >
-    <span>
-      <button
-        aria-label="Close dialog"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
-        type="button"
+    <button
+      aria-label="Close dialog"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-          />
-        </svg>
-      </button>
-    </span>
+        <path
+          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+        />
+      </svg>
+    </button>
     CONTENT
   </div>
 </div>
