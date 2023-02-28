@@ -26,54 +26,6 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     vertical-align: middle;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
-    border-radius: var(--radii-0);
-    box-shadow: var(--shadows-0);
-    color: white;
-    font-family: var(--fonts-body);
-    font-size: var(--fontSizes-sm);
-    line-height: 1.5;
-    white-space: normal;
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-    z-index: 10;
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
-      animation-duration: 75ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
-
   .c-bnQNAg {
     background: white;
     border-radius: var(--radii-1);
@@ -128,18 +80,6 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
       animation: k-bHbNKp 550ms ease-out;
     }
 }
-
-  .c-kfLCww {
-    fill: var(--colors-tonal500);
-  }
-
-  [data-align="end"] .c-kfLCww {
-    margin-right: var(--space-2);
-  }
-
-  [data-align="start"] .c-kfLCww {
-    margin-left: var(--space-2);
-  }
 }
 
 @media  {
@@ -152,10 +92,6 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hVoQtf-gWQnqe-size-md {
-    max-width: 250px;
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -203,61 +139,24 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
   style="pointer-events: auto;"
   tabindex="-1"
 >
-  <button
-    aria-describedby="radix-9"
-    aria-label="Close dialog"
-    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css c-PJLV"
-    data-state="instant-open"
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+  <span>
+    <button
+      aria-label="Close dialog"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+      type="button"
     >
-      <path
-        d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-      />
-    </svg>
-  </button>
-  <div
-    data-radix-popper-content-wrapper=""
-    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
-  >
-    <div
-      class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
-      data-align="center"
-      data-side="top"
-      data-state="instant-open"
-      style="pointer-events: auto; --radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); animation: none;"
-    >
-      Close dialog
-      <span
-        style="position: absolute; bottom: 0px; transform: translateY(100%); visibility: hidden;"
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          class="c-kfLCww"
-          height="5"
-          preserveAspectRatio="none"
-          style="display: block;"
-          viewBox="0 0 30 10"
-          width="10"
-        >
-          <polygon
-            points="0,0 30,0 15,10"
-          />
-        </svg>
-      </span>
-      <span
-        id="radix-9"
-        role="tooltip"
-        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-      >
-        Close dialog
-      </span>
-    </div>
-  </div>
+        <path
+          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+        />
+      </svg>
+    </button>
+  </span>
   CONTENT
 </div>
 `;
@@ -301,54 +200,6 @@ exports[`Dialog component with custom background renders 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
-
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
-    border-radius: var(--radii-0);
-    box-shadow: var(--shadows-0);
-    color: white;
-    font-family: var(--fonts-body);
-    font-size: var(--fontSizes-sm);
-    line-height: 1.5;
-    white-space: normal;
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-    z-index: 10;
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
-      animation-duration: 75ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
 
   .c-bnQNAg {
     background: white;
@@ -405,18 +256,6 @@ exports[`Dialog component with custom background renders 1`] = `
     }
 }
 
-  .c-kfLCww {
-    fill: var(--colors-tonal500);
-  }
-
-  [data-align="end"] .c-kfLCww {
-    margin-right: var(--space-2);
-  }
-
-  [data-align="start"] .c-kfLCww {
-    margin-left: var(--space-2);
-  }
-
   .c-kNieLL {
     width: 100vw;
     height: 100vh;
@@ -433,10 +272,6 @@ exports[`Dialog component with custom background renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-hVoQtf-gWQnqe-size-md {
-    max-width: 250px;
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -487,71 +322,34 @@ exports[`Dialog component with custom background renders 1`] = `
     CUSTOM BACKGROUND
   </div>
   <div
-    aria-describedby="radix-22"
+    aria-describedby="radix-20"
     aria-label="Dialog"
-    aria-labelledby="radix-21"
+    aria-labelledby="radix-19"
     class="c-bnQNAg c-bnQNAg-lgqbzh-size-sm"
     data-state="open"
-    id="radix-20"
+    id="radix-18"
     role="dialog"
     style="pointer-events: auto;"
     tabindex="-1"
   >
-    <button
-      aria-describedby="radix-23"
-      aria-label="Close dialog"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css c-PJLV"
-      data-state="instant-open"
-      type="button"
-    >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+    <span>
+      <button
+        aria-label="Close dialog"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+        type="button"
       >
-        <path
-          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-        />
-      </svg>
-    </button>
-    <div
-      data-radix-popper-content-wrapper=""
-      style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
-    >
-      <div
-        class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
-        data-align="center"
-        data-side="top"
-        data-state="instant-open"
-        style="pointer-events: auto; --radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); animation: none;"
-      >
-        Close dialog
-        <span
-          style="position: absolute; bottom: 0px; transform: translateY(100%); visibility: hidden;"
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            class="c-kfLCww"
-            height="5"
-            preserveAspectRatio="none"
-            style="display: block;"
-            viewBox="0 0 30 10"
-            width="10"
-          >
-            <polygon
-              points="0,0 30,0 15,10"
-            />
-          </svg>
-        </span>
-        <span
-          id="radix-23"
-          role="tooltip"
-          style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
-        >
-          Close dialog
-        </span>
-      </div>
-    </div>
+          <path
+            d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
+    </span>
     CONTENT
   </div>
 </div>
@@ -582,54 +380,6 @@ exports[`Dialog component without close button renders 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
-
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
-    border-radius: var(--radii-0);
-    box-shadow: var(--shadows-0);
-    color: white;
-    font-family: var(--fonts-body);
-    font-size: var(--fontSizes-sm);
-    line-height: 1.5;
-    white-space: normal;
-    padding-left: var(--space-3);
-    padding-right: var(--space-3);
-    padding-top: var(--space-2);
-    padding-bottom: var(--space-2);
-    z-index: 10;
-  }
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
-      animation-duration: 75ms;
-      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform, opacity;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
-      animation-name: k-ftcNPK;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
-      animation-name: k-hbaHED;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
-      animation-name: k-daNevH;
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
-      animation-name: k-fvyGIa;
-    }
-}
 
   .c-bnQNAg {
     background: white;
@@ -685,18 +435,6 @@ exports[`Dialog component without close button renders 1`] = `
       animation: k-bHbNKp 550ms ease-out;
     }
 }
-
-  .c-kfLCww {
-    fill: var(--colors-tonal500);
-  }
-
-  [data-align="end"] .c-kfLCww {
-    margin-right: var(--space-2);
-  }
-
-  [data-align="start"] .c-kfLCww {
-    margin-left: var(--space-2);
-  }
 }
 
 @media  {
@@ -711,22 +449,18 @@ exports[`Dialog component without close button renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
-    max-width: 250px;
-  }
-
   .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
 }
 
 <div
-  aria-describedby="radix-19"
+  aria-describedby="radix-17"
   aria-label="Dialog"
-  aria-labelledby="radix-18"
+  aria-labelledby="radix-16"
   class="c-bnQNAg c-bnQNAg-lgqbzh-size-sm"
   data-state="open"
-  id="radix-17"
+  id="radix-15"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
