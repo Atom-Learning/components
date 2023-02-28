@@ -8,7 +8,7 @@ interface IUseStickyColumnsCss {
 
 export const useStickyColumnsCss = (
   numberOfStickyColumns: number,
-  wrapperRef?: React.RefObject<HTMLTableSectionElement>
+  wrapperRef: React.RefObject<HTMLTableSectionElement>
 ): IUseStickyColumnsCss => {
   const [columnsCss, setColumnsCss] = React.useState<CSS>({})
 
@@ -16,33 +16,33 @@ export const useStickyColumnsCss = (
     if (!numberOfStickyColumns) return
 
     let accWidth = 0
-    const newElements: HTMLTableCellElement[] = []
-    wrapperRef?.current
-      ?.querySelectorAll('th')
-      .forEach((element) => newElements.push(element))
-    setColumnsCss(
-      newElements
-        .slice(0, numberOfStickyColumns)
-        .reduce((acc: CSS, column, index) => {
-          const elementNumber = index + 1
-          const cssObject = {
-            ...acc,
-            [`& td:nth-of-type(${elementNumber}), th:nth-of-type(${elementNumber})`]:
-              {
-                position: 'sticky',
-                left: `${accWidth}px`,
-                minWidth: `${column.offsetWidth}px`, // fixing width for sticky columns
-                zIndex: '2'
-              }
+    const tableHeaderElements: HTMLTableCellElement[] = []
+
+    const tableHeaderCells = wrapperRef.current?.querySelectorAll('th')
+
+    tableHeaderCells?.forEach((element) => tableHeaderElements.push(element))
+
+    const stickyColumns = tableHeaderElements.slice(0, numberOfStickyColumns)
+
+    const newColumnsCss = stickyColumns.reduce((acc: CSS, column, index) => {
+      const elementNumber = index + 1
+      const cssObject = {
+        ...acc,
+        [`& td:nth-of-type(${elementNumber}), th:nth-of-type(${elementNumber})`]:
+          {
+            position: 'sticky',
+            left: `${accWidth}px`,
+            minWidth: `${column.offsetWidth}px`, // fixing width for sticky columns
+            zIndex: '2'
           }
+      }
 
-          accWidth +=
-            wrapperRef?.current?.querySelectorAll('th')?.item(index)
-              .clientWidth || 0
+      accWidth += tableHeaderCells?.item(index).clientWidth || 0
 
-          return cssObject
-        }, {} as CSS)
-    )
+      return cssObject
+    }, {} as CSS)
+
+    setColumnsCss(newColumnsCss)
   }, [])
 
   return {
