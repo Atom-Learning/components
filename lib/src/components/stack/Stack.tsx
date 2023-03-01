@@ -4,33 +4,19 @@ import { CSS, styled } from '~/stitches'
 import { createThemeVariants } from '~/utilities'
 import { CSSWrapper } from '~/utilities/css-wrapper'
 
-const StyledStack = styled('div', {
-  display: 'flex',
-  '& > *': {
-    m: 0
-  },
+import { isFlexGapSupported } from './utilities'
+
+const sharedVariants = {
   variants: {
     direction: {
-      row: {
-        flexDirection: 'row'
-      },
-      'row-reverse': {
-        flexDirection: 'row-reverse'
-      },
-      column: {
-        flexDirection: 'column'
-      }
+      row: { flexDirection: 'row' },
+      'row-reverse': { flexDirection: 'row-reverse' },
+      column: { flexDirection: 'column' }
     },
     wrap: {
-      wrap: {
-        flexWrap: 'wrap'
-      },
-      'no-wrap': {
-        flexWrap: 'no-wrap'
-      },
-      'wrap-reverse': {
-        flexWrap: 'wrap-reverse'
-      }
+      wrap: { flexWrap: 'wrap' },
+      'no-wrap': { flexWrap: 'no-wrap' },
+      'wrap-reverse': { flexWrap: 'wrap-reverse' }
     },
     justify: {
       start: { justifyContent: 'flex-start' },
@@ -43,25 +29,48 @@ const StyledStack = styled('div', {
       center: { alignItems: 'center' },
       end: { alignItems: 'flex-end' },
       false: {}
-    },
-    gap: {
-      ...createThemeVariants('space', {
-        mt: '-$key',
-        ml: '-$key',
-        '& > *': {
-          mt: '$key',
-          ml: '$key'
-        }
-      }),
-      false: {}
     }
   }
-})
+}
+
+const StyledStack = styled(
+  'div',
+  {
+    display: 'flex',
+    variants: {
+      gap: createThemeVariants('space', { gap: '$key' })
+    }
+  },
+  sharedVariants
+)
+
+const StyledStackLegacy = styled(
+  'div',
+  {
+    display: 'flex',
+    '& > *': { m: 0 },
+    variants: {
+      gap: {
+        ...createThemeVariants('space', {
+          mt: '-$key',
+          ml: '-$key',
+          '& > *': {
+            mt: '$key',
+            ml: '$key'
+          }
+        }),
+        false: {}
+      }
+    }
+  },
+  sharedVariants
+)
 
 type StackPropsType = React.ComponentProps<typeof StyledStack> & {
   css?: CSS
-  as?: any
-} // (!) `css` and `as` are both props that come from `stitches`. It would be better to figure out and export the appropriate type for them in stitches!
+}
+
+// const usesGap =
 
 export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
   React.forwardRef(
@@ -77,20 +86,35 @@ export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
       },
       ref
     ) => {
-      return (
-        <CSSWrapper css={css}>
+      const alignDefault =
+        typeof align === 'undefined' && direction !== 'column'
+          ? 'center'
+          : align
+
+      if ( isFlexGapSupported()) {
+        return (
           <StyledStack
+            {...remainingProps}
             ref={ref}
             direction={direction}
             gap={gap}
             wrap={wrap}
             justify={justify}
-            align={
-              typeof align === 'undefined' && direction !== 'column'
-                ? 'center'
-                : align
-            }
+            align={alignDefault}
+            css={css}
+          />
+        )
+      }
+      return (
+        <CSSWrapper css={css}>
+          <StyledStackLegacy
             {...remainingProps}
+            ref={ref}
+            direction={direction}
+            gap={gap}
+            wrap={wrap}
+            justify={justify}
+            align={alignDefault}
           />
         </CSSWrapper>
       )
