@@ -1,7 +1,7 @@
 name: Sync from main to documentation
 
 permissions:
-  contents: write
+  contents: read
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
     name: Sync everything from main into the documentation-content branch
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: everlytic/branch-merge@1.1.2
+      - uses: actions/checkout@v3
+      - uses: everlytic/branch-merge@1.1.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           source_ref: "main"
