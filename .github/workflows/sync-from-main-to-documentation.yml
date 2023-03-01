@@ -1,0 +1,22 @@
+name: Sync from main to documentation
+
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync:
+    name: Sync everything from main into the documentation-content branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: everlytic/branch-merge@1.1.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_ref: "main"
+          target_branch: "documentation-content"
+          commit_message_template: "[Automated] Merged {source_ref} into target {target_branch}"
