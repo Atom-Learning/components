@@ -8,5 +8,5 @@ nestedSlug:
   - form
 tabs:
   - title: Main
-    content: Test
+    content: Test 123
 ---
