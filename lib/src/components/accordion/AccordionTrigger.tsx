@@ -1,13 +1,12 @@
 import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
-import { focusVisibleStyleBlock } from '~/utilities'
 import React from 'react'
 
+import { ColorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
+import { focusVisibleStyleBlock } from '~/utilities'
 
 import { Icon } from '../icon'
-
-import { ColorScheme } from '~/experiments/color-scheme'
 
 const RotatingIcon = styled(Icon, {
   transition: 'transform 300ms',

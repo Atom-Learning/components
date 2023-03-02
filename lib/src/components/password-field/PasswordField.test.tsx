@@ -3,8 +3,8 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Form } from '../'
-import { PasswordField } from '.'
 import { Tooltip } from '../tooltip'
+import { PasswordField } from '.'
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>
     <Form onSubmit={() => null}>{children}</Form>

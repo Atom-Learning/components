@@ -1,8 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-import { Tooltip } from '../tooltip'
 
+import { Tooltip } from '../tooltip'
 import { toast, ToastProvider } from '.'
 
 const Wrapper = ({ children }) => (

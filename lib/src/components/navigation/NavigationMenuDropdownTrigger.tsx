@@ -1,7 +1,6 @@
 import { ChevronDown } from '@atom-learning/icons'
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
-import { preventHover } from './preventHover'
 
 import { styled } from '~/stitches'
 
@@ -10,6 +9,7 @@ import {
   navigationMenuActiveItemStyles,
   navigationMenuBaseItemStyles
 } from './NavigationMenu.styles'
+import { preventHover } from './preventHover'
 
 const StyledTrigger = styled(
   NavigationMenuPrimitive.Trigger,

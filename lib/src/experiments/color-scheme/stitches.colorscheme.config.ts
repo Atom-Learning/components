@@ -1,8 +1,9 @@
 import { createStitches } from '@stitches/react'
+
+import { media, utils } from '../../stitches'
 import blue from './blue.json'
-import slate from './slate.json'
 import { generateAlphaColors } from './generateAlphaColors'
-import { utils, media } from '../../stitches'
+import slate from './slate.json'
 
 export const colorSchemes = {}
 

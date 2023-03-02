@@ -3,8 +3,8 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { TopBar } from '.'
 import { Tooltip } from '../tooltip'
+import { TopBar } from '.'
 
 const ExampleTopBar = ({ size }) => (
   <Tooltip.Provider>

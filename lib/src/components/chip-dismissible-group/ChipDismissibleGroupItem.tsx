@@ -1,10 +1,12 @@
+import { Close } from '@atom-learning/icons'
 import * as React from 'react'
-import { styled } from '~/stitches'
+
 import { Chip } from '~/components/chip'
 import { DismissibleGroup } from '~/components/dismissible-group'
+import { styled } from '~/stitches'
+
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { Close } from '@atom-learning/icons'
 
 const StyledChipDismissibleGroupItem = styled(Chip, { px: '$1' })
 

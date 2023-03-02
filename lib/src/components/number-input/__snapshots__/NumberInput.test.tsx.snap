@@ -224,26 +224,24 @@ exports[`NumberInput component renders number input  1`] = `
       data-state="closed"
       tabindex="-1"
     >
-      <span>
-        <button
-          aria-label="decrement"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
-          disabled=""
-          tabindex="-1"
-          type="button"
+      <button
+        aria-label="decrement"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+        disabled=""
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20 12H4"
-            />
-          </svg>
-        </button>
-      </span>
+          <path
+            d="M20 12H4"
+          />
+        </svg>
+      </button>
     </span>
     <input
       aria-label="test"
@@ -263,25 +261,23 @@ exports[`NumberInput component renders number input  1`] = `
       data-state="closed"
       tabindex="-1"
     >
-      <span>
-        <button
-          aria-label="increment"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
-          tabindex="-1"
-          type="button"
+      <button
+        aria-label="increment"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20 12H4m8-8v16"
-            />
-          </svg>
-        </button>
-      </span>
+          <path
+            d="M20 12H4m8-8v16"
+          />
+        </svg>
+      </button>
     </span>
   </div>
 </div>

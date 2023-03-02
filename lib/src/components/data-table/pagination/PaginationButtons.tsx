@@ -1,12 +1,13 @@
-import type { CSS } from '~/stitches'
-
 import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import React from 'react'
+
+import type { CSS } from '~/stitches'
+
+import { ActionIcon } from '../../action-icon'
 import { Flex } from '../../flex'
+import { Icon } from '../../icon'
 import { Select } from '../../select'
 import { Text } from '../../text'
-import { ActionIcon } from '../../action-icon'
-import { Icon } from '../../icon'
 
 export const DirectionButton: React.FC<{
   css?: CSS
@@ -25,7 +26,7 @@ export const DirectionButton: React.FC<{
       size="md"
       {...remainingProps}
     >
-      <Icon is={isNext ? ChevronRight : ChevronLeft}></Icon>
+      <Icon is={isNext ? ChevronRight : ChevronLeft} />
     </ActionIcon>
   )
 }
