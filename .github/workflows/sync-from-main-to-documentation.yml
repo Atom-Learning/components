@@ -1,8 +1,5 @@
 name: Sync from main to documentation
 
-permissions:
-  contents: write
-
 on:
   push:
     branches:
