@@ -3,7 +3,6 @@ import React from 'react'
 import { CSS } from '~/stitches'
 
 import { Box } from '../box'
-
 import { useStickyColumnsCss } from './useStickyColumnsCss'
 interface ITableStickyColumnsContainerProps {
   children: React.ReactNode
