@@ -16,12 +16,12 @@ export const useStickyColumnsCss = (
     if (!numberOfStickyColumns) return
 
     let accWidth = 0
-    const tableHeaderElements: HTMLTableCellElement[] = []
 
+    // Getting the table header cells elements to use their width to set the left position in the sticky columns.
     const tableHeaderCells = wrapperRef.current?.querySelectorAll('th')
+    const tableHeaderElements = Array.from(tableHeaderCells || [])
 
-    tableHeaderCells?.forEach((element) => tableHeaderElements.push(element))
-
+    // Getting only the number of sticky columns from the elements array that is what we are interested in.
     const stickyColumns = tableHeaderElements.slice(0, numberOfStickyColumns)
 
     const newColumnsCss = stickyColumns.reduce((acc: CSS, column, index) => {
@@ -43,7 +43,7 @@ export const useStickyColumnsCss = (
     }, {} as CSS)
 
     setColumnsCss(newColumnsCss)
-  }, [])
+  }, [numberOfStickyColumns, wrapperRef])
 
   return {
     columnsCss
