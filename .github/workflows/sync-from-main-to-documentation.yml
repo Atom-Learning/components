@@ -1,7 +1,7 @@
 name: Sync from main to documentation
 
 permissions:
-  contents: read
+  contents: write
 
 on:
   push:
