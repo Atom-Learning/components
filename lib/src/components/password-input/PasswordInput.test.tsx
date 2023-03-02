@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { PasswordInput } from '.'
 import { Tooltip } from '../tooltip'
+import { PasswordInput } from '.'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>

@@ -1,6 +1,7 @@
 import { act, fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
+
 import { Tooltip } from '../tooltip'
 import { SearchInput } from '.'
 

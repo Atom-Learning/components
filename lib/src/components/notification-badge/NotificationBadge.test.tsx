@@ -5,8 +5,8 @@ import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { NotificationBadge } from '.'
 import { Tooltip } from '../tooltip'
+import { NotificationBadge } from '.'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>

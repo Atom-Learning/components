@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Calendar } from '.'
 import { Tooltip } from '../tooltip'
+import { Calendar } from '.'
 // NOTE: We need to set the date or the 'isToday' class on individual
 // dates will cause these snapshots to fail every new day this test is
 // run. Setting this system time means this is kept consistent.

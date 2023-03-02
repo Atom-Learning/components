@@ -1,4 +1,5 @@
-import { useCallback, useState, useMemo } from 'react'
+import { useCallback, useMemo, useState } from 'react'
+
 import { useResizeObserver } from './useResizeObserver'
 
 interface Size {

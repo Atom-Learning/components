@@ -1,24 +1,25 @@
-import * as React from 'react'
+import type { DragEndEvent } from '@dnd-kit/core'
+import { createColumnHelper } from '@tanstack/react-table'
 import {
+  act,
   fireEvent,
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved,
-  act
+  waitForElementToBeRemoved
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { createColumnHelper } from '@tanstack/react-table'
-import { DataTable, useDataTable } from '.'
-import { Tooltip } from '../tooltip'
-import { Text } from '../text'
+import * as React from 'react'
+
 import { Button } from '../button'
-import {
-  processDragEndEvent,
-  getRowOrder
-} from './drag-and-drop/DragAndDropContainer'
-import type { DragEndEvent } from '@dnd-kit/core'
+import { Text } from '../text'
+import { Tooltip } from '../tooltip'
+import { DataTable, useDataTable } from '.'
 import { TAsyncDataResult } from './DataTable.types'
+import {
+  getRowOrder,
+  processDragEndEvent
+} from './drag-and-drop/DragAndDropContainer'
 
 const columnHelper = createColumnHelper<{
   id: number

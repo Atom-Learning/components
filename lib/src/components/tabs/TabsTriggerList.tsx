@@ -1,13 +1,15 @@
+import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { List } from '@radix-ui/react-tabs'
 import React from 'react'
-import { styled } from '~/stitches'
+
 import { ColorScheme } from '~/experiments/color-scheme'
-import { useSize } from '~/utilities/hooks/useSize'
-import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
+import { styled } from '~/stitches'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
+import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
+import { useSize } from '~/utilities/hooks/useSize'
+
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 
 const StyledContainer = styled(ColorScheme, {
   position: 'relative',

@@ -4,8 +4,8 @@ import * as React from 'react'
 
 import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
 import { Icon } from '../icon/Icon'
-import { ActionIcon } from '.'
 import { Tooltip } from '../tooltip'
+import { ActionIcon } from '.'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>

@@ -2,8 +2,8 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Popover } from '.'
 import { Tooltip } from '../tooltip'
+import { Popover } from '.'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>

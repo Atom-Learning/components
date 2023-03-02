@@ -6,10 +6,10 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
-import { ActionIconSizeMap } from './ActionIcon.constants'
-import { Tooltip } from '../tooltip/Tooltip'
 
 import { Icon } from '../icon/Icon'
+import { Tooltip } from '../tooltip/Tooltip'
+import { ActionIconSizeMap } from './ActionIcon.constants'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',

@@ -1,8 +1,9 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
-import { preventHover } from './preventHover'
 
 import { styled } from '~/stitches'
+
+import { preventHover } from './preventHover'
 
 const StyledList = styled('ul', {
   listStyle: 'none',

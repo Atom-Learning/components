@@ -1,11 +1,12 @@
+import { Upload } from '@atom-learning/icons'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-import { Icon } from '~/components/icon'
-import { Upload } from '@atom-learning/icons'
 
-import { ChipDismissibleGroup } from '.'
+import { Icon } from '~/components/icon'
+
 import { Tooltip } from '../tooltip'
+import { ChipDismissibleGroup } from '.'
 
 const ChipDismissibleGroupImplementation = () => (
   <Tooltip.Provider>

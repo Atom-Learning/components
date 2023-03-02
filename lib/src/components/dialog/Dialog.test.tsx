@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { Dialog } from '.'
 import { Tooltip } from '../tooltip'
+import { Dialog } from '.'
 
 const DialogTest = (props) => (
   <Tooltip.Provider>

@@ -2,9 +2,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { Button } from '../button/Button'
+import { Tooltip } from '../tooltip'
 import { TopBar } from '../top-bar/TopBar'
 import { Sidedrawer } from './Sidedrawer'
-import { Tooltip } from '../tooltip'
 interface TestingComponentProps {
   initialOpen?: boolean
   initialCount?: number

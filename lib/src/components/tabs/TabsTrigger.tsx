@@ -1,7 +1,9 @@
 import { Trigger } from '@radix-ui/react-tabs'
 import * as React from 'react'
+
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
+
 import { Text } from '../text'
 
 const StyledTabsTrigger = styled(Trigger, {
