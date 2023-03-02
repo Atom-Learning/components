@@ -53,7 +53,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
           {label}
         </Label>
         {prompt && (
-          <Link href={prompt.link} onClick={prompt.onClick} size="sm">
+          <Link href={prompt?.link} onClick={prompt?.onClick} size="sm">
             {prompt.label}
           </Link>
         )}
