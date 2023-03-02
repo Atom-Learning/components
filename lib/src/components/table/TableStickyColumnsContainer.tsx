@@ -4,6 +4,7 @@ import { CSS } from '~/stitches'
 
 import { Box } from '../box'
 
+import { useStickyColumnsCss } from './useStickyColumnsCss'
 interface ITableStickyColumnsContainerProps {
   children: React.ReactNode
   numberOfStickyColumns?: number
@@ -14,6 +15,11 @@ export const TableStickyColumnsContainer: React.FC<
   ITableStickyColumnsContainerProps
 > = ({ children, numberOfStickyColumns = 0, css, ...restProps }) => {
   const [hasScroll, setHasScroll] = React.useState<boolean>(false)
+  const scrollContainerRef = React.useRef(null)
+  const { columnsCss } = useStickyColumnsCss(
+    numberOfStickyColumns,
+    scrollContainerRef
+  )
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
     const newHasScroll =
@@ -27,19 +33,16 @@ export const TableStickyColumnsContainer: React.FC<
     <Box
       onScroll={handleScroll}
       role="scrollbar"
+      ref={scrollContainerRef}
       css={{
         overflow: 'auto',
         maxWidth: '100%',
-        [`& td:nth-of-type(${numberOfStickyColumns}), th:nth-of-type(${numberOfStickyColumns})`]:
+        ...columnsCss,
+        [`& td:nth-child(${numberOfStickyColumns}), th:nth-child(${numberOfStickyColumns})`]:
           {
             ...(hasScroll && {
               boxShadow: '$colors$alpha200 -2px -3px 9px 1px',
               clipPath: 'inset(0px -10px 0px 0px)'
-            }),
-            ...(numberOfStickyColumns === 1 && {
-              position: 'sticky',
-              left: '0',
-              zIndex: '2'
             })
           },
         '& td': {
