@@ -5,16 +5,23 @@ import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
+import { Tooltip } from '../tooltip'
 import { NotificationBadge } from '.'
+
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
+)
 
 describe('NotificationBadge component', () => {
   it('renders a NotificationBadge', async () => {
     const { container } = render(
-      <NotificationBadge value={3}>
-        <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
-          <Icon is={Controls} />
-        </ActionIcon>
-      </NotificationBadge>
+      <Wrapper>
+        <NotificationBadge value={3}>
+          <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
+            <Icon is={Controls} />
+          </ActionIcon>
+        </NotificationBadge>
+      </Wrapper>
     )
 
     expect(container).toMatchSnapshot()
@@ -22,11 +29,13 @@ describe('NotificationBadge component', () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <NotificationBadge value={3}>
-        <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
-          <Icon is={Controls} />
-        </ActionIcon>
-      </NotificationBadge>
+      <Wrapper>
+        <NotificationBadge value={3}>
+          <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
+            <Icon is={Controls} />
+          </ActionIcon>
+        </NotificationBadge>
+      </Wrapper>
     )
 
     expect(
@@ -36,11 +45,13 @@ describe('NotificationBadge component', () => {
 
   it('value is rendered in component', async () => {
     render(
-      <NotificationBadge value={3}>
-        <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
-          <Icon is={Controls} />
-        </ActionIcon>
-      </NotificationBadge>
+      <Wrapper>
+        <NotificationBadge value={3}>
+          <ActionIcon appearance="outline" label="testing" size="lg" isRounded>
+            <Icon is={Controls} />
+          </ActionIcon>
+        </NotificationBadge>
+      </Wrapper>
     )
 
     const badge = await screen.findByText('3')

@@ -1,4 +1,5 @@
 import { Content } from '@radix-ui/react-tabs'
+
 import { styled } from '~/stitches'
 
 const StyledTabsContent = styled(Content, {

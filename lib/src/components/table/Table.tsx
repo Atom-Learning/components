@@ -9,6 +9,7 @@ import { TableFooterCell } from './TableFooterCell'
 import { TableHeader } from './TableHeader'
 import { TableHeaderCell } from './TableHeaderCell'
 import { StyledRow, TableRow } from './TableRow'
+import { TableStickyColumnsContainer } from './TableStickyColumnsContainer'
 
 type TableSubComponents = {
   Body: typeof TableBody
@@ -18,6 +19,7 @@ type TableSubComponents = {
   Header: typeof TableHeader
   HeaderCell: typeof TableHeaderCell
   Row: typeof TableRow
+  StickyColumnsContainer: typeof TableStickyColumnsContainer
 }
 
 const StyledTable = styled('table', {
@@ -55,13 +57,30 @@ const StyledTable = styled('table', {
   }
 })
 
-type TableProps = React.ComponentProps<typeof StyledTable>
+type TableProps = React.ComponentProps<typeof StyledTable> & {
+  numberOfStickyColumns?: number
+}
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
   corners = 'round',
+  numberOfStickyColumns = 0,
   ...rest
-}: TableProps) => <StyledTable size={size} corners={corners} {...rest} />
+}: TableProps) => {
+  const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
+
+  if (numberOfStickyColumns) {
+    return (
+      <TableStickyColumnsContainer
+        numberOfStickyColumns={numberOfStickyColumns}
+      >
+        {tableComponent}
+      </TableStickyColumnsContainer>
+    )
+  }
+
+  return tableComponent
+}
 
 Table.Body = TableBody
 Table.Cell = TableCell
@@ -70,5 +89,6 @@ Table.FooterCell = TableFooterCell
 Table.Header = TableHeader
 Table.HeaderCell = TableHeaderCell
 Table.Row = TableRow
+Table.StickyColumnsContainer = TableStickyColumnsContainer
 
 Table.displayName = 'Table'

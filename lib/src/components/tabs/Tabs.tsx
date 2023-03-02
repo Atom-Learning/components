@@ -3,9 +3,9 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { TabsTriggerList } from './TabsTriggerList'
-import { TabsTrigger } from './TabsTrigger'
 import { TabsContent } from './TabsContent'
+import { TabsTrigger } from './TabsTrigger'
+import { TabsTriggerList } from './TabsTriggerList'
 
 type TabsProps = React.ComponentProps<typeof StyledRoot>
 

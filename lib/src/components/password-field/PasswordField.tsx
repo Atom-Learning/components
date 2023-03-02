@@ -2,8 +2,8 @@ import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 
 import {
-  FieldWrapper,
-  FieldElementWrapperProps
+  FieldElementWrapperProps,
+  FieldWrapper
 } from '~/components/field-wrapper'
 import { useFieldError } from '~/components/form'
 import { PasswordInput } from '~/components/password-input'

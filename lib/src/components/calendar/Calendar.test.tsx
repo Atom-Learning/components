@@ -2,8 +2,8 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Tooltip } from '../tooltip'
 import { Calendar } from '.'
-
 // NOTE: We need to set the date or the 'isToday' class on individual
 // dates will cause these snapshots to fail every new day this test is
 // run. Setting this system time means this is kept consistent.
@@ -11,24 +11,41 @@ Date.now = jest.fn(() => Date.parse('2021-12-14'))
 
 const props = {
   onDateSelected: jest.fn(),
-  date: new Date('12/25/21')
+  date: new Date('12/25/21'),
+  setYear: jest.fn()
 }
+
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>{children}</Tooltip.Provider>
+)
 
 describe('Calendar component', () => {
   it('renders', async () => {
-    const { container } = render(<Calendar {...props} />)
+    const { container } = render(
+      <Wrapper>
+        <Calendar {...props} />
+      </Wrapper>
+    )
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<Calendar {...props} />)
+    const { container } = render(
+      <Wrapper>
+        <Calendar {...props} />
+      </Wrapper>
+    )
 
     expect(await axe(container)).toHaveNoViolations()
   })
 
   it('changes month when change month arrows are pressed', async () => {
-    render(<Calendar {...props} />)
+    render(
+      <Wrapper>
+        <Calendar {...props} />
+      </Wrapper>
+    )
 
     const arrow = await screen.findByLabelText('Next month')
     fireEvent.click(arrow)
@@ -37,7 +54,11 @@ describe('Calendar component', () => {
   })
 
   it('opens the change year view when year is clicked', async () => {
-    render(<Calendar {...props} />)
+    render(
+      <Wrapper>
+        <Calendar {...props} />
+      </Wrapper>
+    )
 
     const yearButton = await screen.findByText('Dec 2021')
     fireEvent.click(yearButton)
@@ -47,7 +68,11 @@ describe('Calendar component', () => {
   })
 
   it('changes year when change year arrows are pressed', async () => {
-    render(<Calendar {...props} />)
+    render(
+      <Wrapper>
+        <Calendar {...props} />
+      </Wrapper>
+    )
 
     const yearButton = await screen.findByText('Dec 2021')
     fireEvent.click(yearButton)
@@ -60,7 +85,11 @@ describe('Calendar component', () => {
   })
 
   it('cannot select year later than max date year', async () => {
-    render(<Calendar {...props} maxDate={new Date('2025-01-01')} />)
+    render(
+      <Wrapper>
+        <Calendar {...props} maxDate={new Date('2025-01-01')} />
+      </Wrapper>
+    )
 
     const yearButton = await screen.findByText('Dec 2021')
     fireEvent.click(yearButton)
@@ -74,7 +103,11 @@ describe('Calendar component', () => {
   })
 
   it('cannot select year earlier than min date year', async () => {
-    render(<Calendar {...props} minDate={new Date('2000-01-01')} />)
+    render(
+      <Wrapper>
+        <Calendar {...props} minDate={new Date('2000-01-01')} />
+      </Wrapper>
+    )
 
     const yearButton = await screen.findByText('Dec 2021')
     fireEvent.click(yearButton)
@@ -89,18 +122,20 @@ describe('Calendar component', () => {
 
   it('renders translated weekday names', async () => {
     render(
-      <Calendar
-        {...props}
-        weekdayNames={[
-          'Måndag',
-          'Tisdag',
-          'Onsdag',
-          'Torsdag',
-          'Fredag',
-          'Lördag',
-          'Söndag'
-        ]}
-      />
+      <Wrapper>
+        <Calendar
+          {...props}
+          weekdayNames={[
+            'Måndag',
+            'Tisdag',
+            'Onsdag',
+            'Torsdag',
+            'Fredag',
+            'Lördag',
+            'Söndag'
+          ]}
+        />
+      </Wrapper>
     )
 
     expect(await screen.findByText('Måndag')).toBeVisible()
@@ -108,24 +143,26 @@ describe('Calendar component', () => {
 
   it('renders translated month names', async () => {
     render(
-      <Calendar
-        {...props}
-        date={new Date('08/01/21')}
-        monthNames={[
-          'Januri',
-          'Februari',
-          'Mars',
-          'April',
-          'Maj',
-          'Juni',
-          'Juli',
-          'Augusti',
-          'September',
-          'Oktober',
-          'November',
-          'December'
-        ]}
-      />
+      <Wrapper>
+        <Calendar
+          {...props}
+          date={new Date('08/01/21')}
+          monthNames={[
+            'Januri',
+            'Februari',
+            'Mars',
+            'April',
+            'Maj',
+            'Juni',
+            'Juli',
+            'Augusti',
+            'September',
+            'Oktober',
+            'November',
+            'December'
+          ]}
+        />
+      </Wrapper>
     )
 
     expect(await screen.findByText('Augusti 2021')).toBeVisible()

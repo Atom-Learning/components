@@ -4,18 +4,25 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Form } from '..'
+import { Tooltip } from '../tooltip'
 import { DateField } from '.'
+
+const Wrapper = ({ children }) => (
+  <Tooltip.Provider>
+    <Form onSubmit={() => null}>{children}</Form>
+  </Tooltip.Provider>
+)
 
 describe(`DateField component`, () => {
   it('renders a field with a text input', async () => {
     const { container } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"
         />
-      </Form>
+      </Wrapper>
     )
 
     await screen.getByPlaceholderText('DATE FIELD')
@@ -25,13 +32,13 @@ describe(`DateField component`, () => {
 
   it('renders a field with a text input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"
         />
-      </Form>
+      </Wrapper>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -39,14 +46,14 @@ describe(`DateField component`, () => {
 
   it('renders a field with a disabled input', async () => {
     const { findByPlaceholderText } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"
           disabled
         />
-      </Form>
+      </Wrapper>
     )
 
     const input = await findByPlaceholderText('DATE FIELD')
@@ -56,14 +63,14 @@ describe(`DateField component`, () => {
 
   it('renders a field with a disabled input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"
           disabled
         />
-      </Form>
+      </Wrapper>
     )
 
     expect(await axe(container)).toHaveNoViolations()
@@ -73,15 +80,16 @@ describe(`DateField component`, () => {
     const errorText = 'This field is required'
 
     const { container, findByText, getByRole } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           validation={{ required: errorText }}
         />
         <button type="submit">Submit</button>
-      </Form>
+      </Wrapper>
     )
+
     userEvent.click(getByRole('button', { name: /submit/i }))
     await findByText(errorText)
 
@@ -92,14 +100,14 @@ describe(`DateField component`, () => {
     const errorText = 'This field is required'
 
     const { container, findByText, getByRole } = render(
-      <Form onSubmit={() => null}>
+      <Wrapper>
         <DateField
           label="DATE FIELD"
           name="DATE FIELD"
           validation={{ required: errorText }}
         />
         <button type="submit">Submit</button>
-      </Form>
+      </Wrapper>
     )
 
     userEvent.click(getByRole('button', { name: /submit/i }))

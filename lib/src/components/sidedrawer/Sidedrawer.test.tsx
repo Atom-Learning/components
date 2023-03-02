@@ -2,9 +2,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { Button } from '../button/Button'
+import { Tooltip } from '../tooltip'
 import { TopBar } from '../top-bar/TopBar'
 import { Sidedrawer } from './Sidedrawer'
-
 interface TestingComponentProps {
   initialOpen?: boolean
   initialCount?: number
@@ -21,46 +21,52 @@ const TestingComponent: React.FC<TestingComponentProps> = ({
   const onOpenChange = () => setIsOpen((prevState) => !prevState)
 
   return (
-    <TopBar>
-      <Sidedrawer open={isOpen} onOpenChange={onOpenChange}>
-        <Sidedrawer.Trigger asChild>
-          <Button>Open Sidedrawer</Button>
-        </Sidedrawer.Trigger>
-        <Sidedrawer.Content>
-          <Sidedrawer.Header>
-            Count is: {count}
-            <Sidedrawer.Close />
-          </Sidedrawer.Header>
-          <Sidedrawer.Body>
-            <Sidedrawer.Item href="/" active>
-              Dashboard
-            </Sidedrawer.Item>
-            <Sidedrawer.Item onClick={increase}>Button Count</Sidedrawer.Item>
-            <Sidedrawer.Accordion value="1">
-              <Sidedrawer.AccordionTrigger>
-                Set Work
-              </Sidedrawer.AccordionTrigger>
-              <Sidedrawer.AccordionContent>
-                <Sidedrawer.Item href="/practice">Set Practice</Sidedrawer.Item>
-                <Sidedrawer.Item href="/mock-tests">Mock Tests</Sidedrawer.Item>
-                <Sidedrawer.Item onClick={increase}>
-                  Accordion Count
-                </Sidedrawer.Item>
-              </Sidedrawer.AccordionContent>
-            </Sidedrawer.Accordion>
-          </Sidedrawer.Body>
-          <Sidedrawer.Footer>
-            <Button
-              fullWidth
-              theme="danger"
-              onClick={() => console.log('Legged out!')}
-            >
-              Log out
-            </Button>
-          </Sidedrawer.Footer>
-        </Sidedrawer.Content>
-      </Sidedrawer>
-    </TopBar>
+    <Tooltip.Provider>
+      <TopBar>
+        <Sidedrawer open={isOpen} onOpenChange={onOpenChange}>
+          <Sidedrawer.Trigger asChild>
+            <Button>Open Sidedrawer</Button>
+          </Sidedrawer.Trigger>
+          <Sidedrawer.Content>
+            <Sidedrawer.Header>
+              Count is: {count}
+              <Sidedrawer.Close />
+            </Sidedrawer.Header>
+            <Sidedrawer.Body>
+              <Sidedrawer.Item href="/" active>
+                Dashboard
+              </Sidedrawer.Item>
+              <Sidedrawer.Item onClick={increase}>Button Count</Sidedrawer.Item>
+              <Sidedrawer.Accordion value="1">
+                <Sidedrawer.AccordionTrigger>
+                  Set Work
+                </Sidedrawer.AccordionTrigger>
+                <Sidedrawer.AccordionContent>
+                  <Sidedrawer.Item href="/practice">
+                    Set Practice
+                  </Sidedrawer.Item>
+                  <Sidedrawer.Item href="/mock-tests">
+                    Mock Tests
+                  </Sidedrawer.Item>
+                  <Sidedrawer.Item onClick={increase}>
+                    Accordion Count
+                  </Sidedrawer.Item>
+                </Sidedrawer.AccordionContent>
+              </Sidedrawer.Accordion>
+            </Sidedrawer.Body>
+            <Sidedrawer.Footer>
+              <Button
+                fullWidth
+                theme="danger"
+                onClick={() => console.log('Legged out!')}
+              >
+                Log out
+              </Button>
+            </Sidedrawer.Footer>
+          </Sidedrawer.Content>
+        </Sidedrawer>
+      </TopBar>
+    </Tooltip.Provider>
   )
 }
 
