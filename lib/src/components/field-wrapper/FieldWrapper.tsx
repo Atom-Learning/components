@@ -16,7 +16,7 @@ export type FieldWrapperProps = {
   error?: string
   fieldId: string
   label: string
-  prompt?: { link: string; label: string }
+  prompt?: { link?: string; label: string; onClick?: () => void }
   description?: string
   required?: boolean
   hideLabel?: boolean
@@ -53,7 +53,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
           {label}
         </Label>
         {prompt && (
-          <Link href={prompt.link} size="sm">
+          <Link href={prompt.link} onClick={prompt.onClick} size="sm">
             {prompt.label}
           </Link>
         )}
