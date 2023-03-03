@@ -51,4 +51,26 @@ describe('FieldWrapper component', () => {
     expect(link).toHaveTextContent('Example prompt')
     expect(link).toHaveAttribute('href', 'https://example.com')
   })
+
+  it('links renders provided prompt with an onClick', async () => {
+    const promptClickMock = jest.fn()
+
+    render(
+      <FieldWrapper
+        label="Example Field"
+        fieldId="example"
+        error="Example error"
+        prompt={{ label: 'Example prompt', onClick: promptClickMock }}
+      >
+        <Input name="example" id="example" />
+      </FieldWrapper>
+    )
+    const button = await screen.findByRole('button')
+
+    expect(button).toHaveTextContent('Example prompt')
+
+    userEvent.click(button)
+
+    expect(promptClickMock).toHaveBeenCalledTimes(1)
+  })
 })
