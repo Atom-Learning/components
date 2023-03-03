@@ -6,7 +6,5 @@ uuid: UqGOzrY8wxQXlGLTIyUQz
 nestedSlug:
   - components
   - form
-tabs:
-  - title: Main
-    content: Test 123
+tabs: []
 ---
