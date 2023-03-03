@@ -24,6 +24,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   description,
   defaultChecked = false,
   checked,
+  onCheckedChange,
   ...remainingProps
 }) => {
   const { control } = useFormContext()
@@ -54,7 +55,10 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
         ref={ref}
         name={innerName}
         {...remainingProps}
-        onCheckedChange={onChange}
+        onCheckedChange={(newChecked) => {
+          onChange(newChecked)
+          onCheckedChange?.(newChecked)
+        }}
         value={innerChecked ? CheckboxValue.ON : CheckboxValue.OFF}
         checked={innerChecked}
         {...(error && { state: 'error' })}
