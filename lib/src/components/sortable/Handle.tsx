@@ -41,9 +41,10 @@ export const Handle: React.ForwardRefExoticComponent<THandleProps> =
         isDragging={isDragging}
         appearance="simple"
         hasTooltip={false}
+        size={size}
         {...rest}
       >
-        <Icon is={DragHandle} size={size} />
+        <Icon is={DragHandle} />
       </StyledHandle>
     )
   })
