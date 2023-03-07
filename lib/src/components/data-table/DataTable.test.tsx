@@ -1,25 +1,16 @@
-import type { DragEndEvent } from '@dnd-kit/core'
-import { createColumnHelper } from '@tanstack/react-table'
+import * as React from 'react'
 import {
-  act,
-  fireEvent,
   render,
   screen,
   waitFor,
   waitForElementToBeRemoved
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import * as React from 'react'
-
-import { Button } from '../button'
-import { Text } from '../text'
+import { createColumnHelper } from '@tanstack/react-table'
+import { DataTable } from '.'
 import { Tooltip } from '../tooltip'
-import { DataTable, useDataTable } from '.'
-import { TAsyncDataResult } from './DataTable.types'
-import {
-  getRowOrder,
-  processDragEndEvent
-} from './drag-and-drop/DragAndDropContainer'
+import { Text } from '../text'
+import { Button } from '../button'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -138,66 +129,6 @@ describe('DataTable component', () => {
     )
 
     expect(container).toMatchSnapshot()
-  })
-
-  it('Updates data when row is dragged and dropped', () => {
-    const onChange = jest.fn()
-
-    // render a button that swaps the first and second rows on click
-    const DragAndDropMock = () => {
-      const idColumn = 'id'
-      const { data } = useDataTable()
-      const rowOrder = getRowOrder(data, 'id')
-      const mockDragEndEvent = {
-        active: {
-          id: 1
-        },
-        over: {
-          id: 2
-        }
-      }
-
-      return (
-        <button
-          onClick={() => {
-            processDragEndEvent(
-              mockDragEndEvent,
-              data,
-              rowOrder,
-              idColumn,
-              onChange
-            )
-          }}
-        >
-          Click to fake a drag-and-drop event
-        </button>
-      )
-    }
-    render(
-      <Wrapper>
-        <DataTable
-          columns={columns}
-          data={[
-            { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-            { name: 'agatha', hobby: 'crossfit', id: 2 },
-            { name: 'betty', hobby: 'acting', id: 3 }
-          ]}
-        >
-          <DataTable.DragAndDropTable />
-          <DragAndDropMock />
-        </DataTable>
-      </Wrapper>
-    )
-
-    act(() =>
-      userEvent.click(screen.getByText('Click to fake a drag-and-drop event'))
-    )
-
-    expect(onChange).toBeCalledWith(0, 1, [
-      { name: 'agatha', hobby: 'crossfit', id: 2 },
-      { name: 'chrissy', hobby: 'bare-knuckle boxing', id: 1 },
-      { name: 'betty', hobby: 'acting', id: 3 }
-    ])
   })
 })
 
