@@ -1,9 +1,10 @@
-import { Slot } from '@radix-ui/react-slot'
-import * as React from 'react'
-import { Box } from '../box'
-import { useSortable } from '@dnd-kit/sortable'
 import type { UniqueIdentifier } from '@dnd-kit/core'
+import { useSortable } from '@dnd-kit/sortable'
+import { Slot } from '@radix-ui/react-slot'
 import { CSS, styled } from '@stitches/react'
+import * as React from 'react'
+
+import { Box } from '../box'
 
 export type TSortableItemProps = {
   id: UniqueIdentifier

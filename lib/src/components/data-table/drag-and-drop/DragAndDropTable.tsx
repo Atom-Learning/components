@@ -1,12 +1,12 @@
+import { arrayMove } from '@dnd-kit/sortable'
 import * as React from 'react'
 
-import { Table } from '../../table'
 import { Sortable } from '../../sortable'
+import { Table } from '../../table'
 import { DataTable } from '../DataTable'
 import { AsyncDataState, TAsyncDataResult } from '../DataTable.types'
 import { useDataTable } from '../DataTableContext'
 import { DataTableLoading } from '../DataTableLoading'
-import { arrayMove } from '@dnd-kit/sortable'
 import type { DataTableTableProps } from '../DataTableTable'
 import { DragAndDropTableBody } from './DragAndDropTableBody'
 

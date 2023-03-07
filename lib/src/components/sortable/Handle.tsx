@@ -1,9 +1,9 @@
 import { DragHandle } from '@atom-learning/icons'
 import * as React from 'react'
 
+import { styled } from '../../stitches'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { styled } from '../../stitches'
 
 export const StyledHandle = styled(ActionIcon, {
   color: 'inherit !important',

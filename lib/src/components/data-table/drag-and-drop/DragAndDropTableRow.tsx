@@ -1,9 +1,11 @@
 import type { Row } from '@tanstack/react-table'
+import { flexRender } from '@tanstack/react-table'
 import * as React from 'react'
+
+import { Sortable } from '~/components/sortable'
+
 import { Table } from '../../table'
 import { DataTableDataCell } from '../DataTableDataCell'
-import { flexRender } from '@tanstack/react-table'
-import { Sortable } from '~/components/sortable'
 export type DataTableDraggableRowProps = React.ComponentProps<
   typeof Table.Row
 > & {
