@@ -60,11 +60,74 @@ tabs:
 
       <ComponentProps component="InlineMessage" />
     title: Code
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      Simple text and optional icon to inform the user of relevant information, revealed in context.
+
+
+      There are two sizes for inline messages. The message can appear by itself, icons are optional.
+
+
+      When the text is too long for the available horizontal space, it wraps to form another line. The optional icon stays aligned to the top-left corner.
+
+
+      ![inline messages structure specs](/admin/images/inline-messages-structure-specs.png "inline messages structure specs")
+
+
+      | Property - element | Token                   | Pixel | Rem |
+
+      | ------------------ | ----------------------- | ----- | --- |
+
+      | Size icon          | $1 (variant: size="sm") | 16px  | 1   |
+
+      | Margin-right icon  | space $2                | 8px   | 0.5 |
+
+
+      ## Typography
+
+
+      ![Typography specs for Inline messages](/admin/images/typography-specs-for-inline-messages.png "Typography specs for Inline messages")
+
+
+
+
+      | Element          | Family | Weight | Size | rem      | px  |
+
+      | ---------------- | ------ | ------ | ---- | -------- | --- |
+
+      | XSmall text font | $body  | 400    | $xs  | 0.75rem  | 12  |
+
+      | Small text font  | $body  | 400    | $sm  | 0.875rem | 14  |
+
+      | Medium text font | $body  | 400    | $md  | 1rem     | 16  |
+
+
+      ## Color
+
+
+      ![color specs for inline messages](/admin/images/color-specs-for-inline-messages.png "color specs for inline messages")
+
+
+      | Property - State - Element | Token        | Hex      |
+
+      | -------------------------- | ------------ | -------- |
+
+      | Error - icon/text          | $danger      | \#EE0505 |
+
+      | Warning - icon             | $warningDark | \#D08E00 |
+
+      | Warning - text             | $warningText | \#BD4B00 |
+
+      | Success - icon/text        | $success     | \#028A00 |
+
+      | Neutral/help - icon/text   | $grey800     | \#545454 |
+
+      | Info - icon/text           | $blue800     | \#0F67F5 |
   - title: Usage
     content: >-
-      # \[ ✍️ Work in progress ]
-
-
       ## Overview
 
 
@@ -102,6 +165,53 @@ tabs:
 
 
       **Information messages**: may offer additional assistance or information to let the user know why we are asking for particular information.
+
+
+      ![example of information messages (inline messages)](/admin/images/information-messages-inline-messages-.png "example of information messages (inline messages)")
+
+
+      **Error**: when the system cannot load content, or when a form field is problematic.\
+
+      E.g. When text input isn’t accepted, an error message can display instructions on how to fix it. Error messages are displayed below the input line. It can include an icon with color and replace hint text until fixed.
+
+
+      ![example of Error (inline messages)](/admin/images/error-inline-messages-.png "example of Error (inline messages)")
+
+
+      **Informational warning**: when an item has an atypical status, e.g. duplicates.
+
+
+      ![example of informational warning (inline messages)](/admin/images/informational-warning-inline-messages-.png "example of informational warning (inline messages)")
+
+
+      **Success**: make obvious to users that their interaction with the application was successful.
+
+
+      ![example of success (inline messages)](/admin/images/success-inline-messages-.png "example of success (inline messages)")
+
+
+      **Transitional**: when the system is processing an action, e.g. uploading, saving, loading, sending email, etc\
+
+      Text will have an ellipsis at the end, showing a small delay and it will be combined with a loading component with animation.\
+
+      Word should be related to the action as much as possible. For example “mapping” while loading a map.\
+
+      When the effect of finishing the transition is subtle, provide confirmation success feedback.
+
+
+      ![example of transitional (inline messages)](/admin/images/transactional-inline-messages-.png "example of transitional (inline messages)")
+
+
+      ## Do’s and Don’ts
+
+
+      ![do and dont 1](/admin/images/do-and-dont-1.png "do and dont 1")
+
+
+      ![do and dont 2](/admin/images/do-and-dont-2.png "do and dont 2")
+
+
+      ![do and dont 3](/admin/images/do-and-dont-3.png "do and dont 3")
 parent: HGItoEG3XVs9DpOLugTot
 uuid: P6daKkk_E0jehDkN0So_A
 nestedSlug:
