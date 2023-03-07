@@ -1,6 +1,7 @@
-import * as React from 'react'
-import { Handle as DragHandle, THandleProps } from './Handle'
 import { useSortable } from '@dnd-kit/sortable'
+import * as React from 'react'
+
+import { Handle as DragHandle, THandleProps } from './Handle'
 
 export type TSortableHandleProps = {
   targetId: React.ReactText

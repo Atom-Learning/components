@@ -1,3 +1,4 @@
+import type { DragEndEvent, UniqueIdentifier } from '@dnd-kit/core'
 import {
   closestCenter,
   DndContext,
@@ -6,12 +7,10 @@ import {
   useSensor,
   useSensors
 } from '@dnd-kit/core'
-import type { UniqueIdentifier, DragEndEvent } from '@dnd-kit/core'
-
 import {
   arrayMove,
-  sortableKeyboardCoordinates,
-  SortableContext
+  SortableContext,
+  sortableKeyboardCoordinates
 } from '@dnd-kit/sortable'
 import * as React from 'react'
 

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { createColumnHelper } from '@tanstack/react-table'
 import {
   render,
   screen,
@@ -6,11 +6,12 @@ import {
   waitForElementToBeRemoved
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import { createColumnHelper } from '@tanstack/react-table'
-import { DataTable } from '.'
-import { Tooltip } from '../tooltip'
-import { Text } from '../text'
+import * as React from 'react'
+
 import { Button } from '../button'
+import { Text } from '../text'
+import { Tooltip } from '../tooltip'
+import { DataTable } from '.'
 
 const columnHelper = createColumnHelper<{
   id: number
