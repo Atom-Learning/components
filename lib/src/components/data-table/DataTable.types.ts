@@ -1,4 +1,3 @@
-import type { UniqueIdentifier } from '@dnd-kit/core'
 import type {
   ColumnOrderTableState,
   ColumnPinningTableState,
@@ -6,11 +5,9 @@ import type {
   ExpandedTableState,
   FiltersTableState,
   GroupingTableState,
-  PaginationState,
   PaginationTableState,
   RowSelectionTableState,
   SortDirection,
-  SortingState,
   SortingTableState,
   Table,
   VisibilityTableState

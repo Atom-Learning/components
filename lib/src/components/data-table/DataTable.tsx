@@ -10,7 +10,7 @@ import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
 import { DataTableTable } from './DataTableTable'
-import { DragAndDropContainer, DragAndDropTable } from './drag-and-drop'
+import { DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
 
 type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
