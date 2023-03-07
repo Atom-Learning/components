@@ -222,9 +222,18 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     }
 }
 
-  .c-dlcCnN {
+  .c-ecNzKx {
     color: inherit !important;
     fill: currentColor;
+  }
+
+  .c-ecNzKx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ecNzKx[disabled] * {
+    pointer-events: none;
   }
 }
 
@@ -350,7 +359,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     width: var(--sizes-3);
   }
 
-  .c-dlcCnN-kbKHjH-isDragging-false {
+  .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
   }
 }
@@ -458,13 +467,27 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     left: var(--space-1);
   }
 
-  .c-hjAYDb-iPJLV-css {
-    transform: ;
+  .c-ecNzKx-iAsWAM-css {
+    display: inline-block;
+  }
+}
+
+@media  {
+  .PJLV-iDuHyI-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
     z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
   }
 
-  .c-dlcCnN-iAsWAM-css {
-    display: inline-block;
+  .PJLV-iDuHyI-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .PJLV-iDuHyI-css[disabled] * {
+    pointer-events: none;
   }
 }
 
@@ -520,7 +543,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
       class="c-PJLV c-PJLV-cevUCR-striped-false"
     >
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -528,10 +552,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -571,7 +594,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -579,10 +603,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -622,7 +645,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -630,10 +654,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -673,7 +696,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -681,10 +705,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -724,7 +747,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -732,10 +756,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -775,7 +798,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -783,10 +807,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -826,7 +849,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -834,10 +858,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -877,7 +900,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -885,10 +909,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -928,7 +951,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -936,10 +960,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -979,7 +1002,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -987,10 +1011,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1030,7 +1053,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1038,10 +1062,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1081,7 +1104,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1089,10 +1113,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1132,7 +1155,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1140,10 +1164,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1183,7 +1206,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1191,10 +1215,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1234,7 +1257,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1242,10 +1266,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1285,7 +1308,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1293,10 +1317,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1336,7 +1359,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1344,10 +1368,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -1387,7 +1410,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         </td>
       </tr>
       <tr
-        class="c-hjAYDb c-hjAYDb-iPJLV-css"
+        class="c-hjAYDb PJLV PJLV-iDuHyI-css"
+        data-dragging="false"
       >
         <td
           class="c-cCZzXk"
@@ -1395,10 +1419,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <button
             aria-describedby="DndDescribedBy-0"
             aria-disabled="false"
-            aria-label="drag and drop"
+            aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV c-dlcCnN c-dlcCnN-kbKHjH-isDragging-false c-dlcCnN-iAsWAM-css"
-            data-state="closed"
+            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
@@ -2511,9 +2534,18 @@ exports[`DataTable server-side renders 1`] = `
     }
 }
 
-  .c-dlcCnN {
+  .c-ecNzKx {
     color: inherit !important;
     fill: currentColor;
+  }
+
+  .c-ecNzKx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ecNzKx[disabled] * {
+    pointer-events: none;
   }
 
   .c-jBOHFZ {
@@ -2669,7 +2701,7 @@ exports[`DataTable server-side renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dlcCnN-kbKHjH-isDragging-false {
+  .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
   }
 
@@ -2803,12 +2835,7 @@ exports[`DataTable server-side renders 1`] = `
     left: var(--space-1);
   }
 
-  .c-hjAYDb-iPJLV-css {
-    transform: ;
-    z-index: ;
-  }
-
-  .c-dlcCnN-iAsWAM-css {
+  .c-ecNzKx-iAsWAM-css {
     display: inline-block;
   }
 
@@ -3472,9 +3499,18 @@ exports[`DataTable sticky columns renders 1`] = `
     }
 }
 
-  .c-dlcCnN {
+  .c-ecNzKx {
     color: inherit !important;
     fill: currentColor;
+  }
+
+  .c-ecNzKx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ecNzKx[disabled] * {
+    pointer-events: none;
   }
 
   .c-jBOHFZ {
@@ -3647,7 +3683,7 @@ exports[`DataTable sticky columns renders 1`] = `
     width: var(--sizes-3);
   }
 
-  .c-dlcCnN-kbKHjH-isDragging-false {
+  .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
   }
 
@@ -3745,12 +3781,7 @@ exports[`DataTable sticky columns renders 1`] = `
     left: var(--space-1);
   }
 
-  .c-hjAYDb-iPJLV-css {
-    transform: ;
-    z-index: ;
-  }
-
-  .c-dlcCnN-iAsWAM-css {
+  .c-ecNzKx-iAsWAM-css {
     display: inline-block;
   }
 
