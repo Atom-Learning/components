@@ -5,7 +5,7 @@ links:
   viewSource: components/avatar
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       The `Avatar` component can be used to show a visual representation of a
       user or entity. It helps to quickly identify users or objects. An image,
@@ -94,13 +94,221 @@ tabs:
 
       <ComponentProps component="Avatar" />
 
+
       <ComponentProps component="Avatar.Image" />
+
 
       <ComponentProps component="Avatar.Initial" />
 
+
       <ComponentProps component="Avatar.Placeholder" />
 
+
       <ComponentProps component="Avatar.Icon" />
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      Avatars are used to show a thumbnail representation of an individual or entity in the interface.
+
+
+      Avatars can be interactive, in which case has interactive states (hover, focus, etc), or read only, with no interactive states.
+
+
+      ![avatar structure](/admin/images/avatar-01-structure.png "avatar structure")
+
+
+      For avatars representing the user, the user picture is displayed. If there is an error loading the src of the avatar, there are 2 fallbacks:
+
+
+      * If there's a name prop, we use it to generate the initials
+
+      * If there's no name prop, we use a placeholder image.
+
+
+      ### Size
+
+
+      ![avatar size](/admin/images/avatar-02-size.png "avatar size")
+
+
+      | Property       | xxl       | xl        | lg        | md        | sm        | xs        |
+
+      | -------------- | --------- | --------- | --------- | --------- | --------- | --------- |
+
+      | container size | $7 96px   | $6 64px   | $5 48px   | $4 40px   | $3 32px   | $2 24px   |
+
+      | Icon size      | "lg" 32px | "lg" 32px | "md" 24px | "md" 24px | "sm" 16px | "sm" 16px |
+
+
+      | Property                       | Token       | Pixel |
+
+      | ------------------------------ | ----------- | ----- |
+
+      | Border stroke                  | not-defined | 1px   |
+
+      | Border stroke: selected, focus | not-defined | 2px   |
+
+
+      ### Avatar groups
+
+
+      In some cases, you might need to stack avatars as a group. To limit the amount of avatars to show, use the max prop. It'll truncate the avatars and show a "+X" label (where X is the remaining avatars).
+
+
+      ![avatar groups](/admin/images/avatar-03-groups.png "avatar groups")
+
+
+      | Property         | xxl     | xl      | lg      | md      | sm      | xs      |
+
+      | ---------------- | ------- | ------- | ------- | ------- | ------- | ------- |
+
+      | Distance between | $9 64px | $7 40px | $6 32px | $5 24px | $4 16px | $3 12px |
+
+
+      ## Typography
+
+
+      ![avatar typography](/admin/images/avatar-04-typography.png "avatar typography")
+
+
+      | Font size | px  | weight   | size |
+
+      | --------- | --- | -------- | ---- |
+
+      | xs        | 12  | 0.750rem | $xs  |
+
+      | sm, md    | 14  | 0.875    | $sm  |
+
+      | lg        | 16  | 1        | $md  |
+
+      | xl, xxl   | 21  | 1.3125   | $lg  |
+
+
+      ## Color
+
+
+      ![avatar color](/admin/images/avatar-05-color.png "avatar color")
+
+
+      | Property, element - state                        | Token     | Hex      |
+
+      | ------------------------------------------------ | --------- | -------- |
+
+      | Bg color - default, focus, disabled              | $white    | \#ffffff |
+
+      | Bg color - hover                                 | $grey100  | \#       |
+
+      | Bg color - selected/pressed                      | $grey200  | \#       |
+
+      | Border-color - default, focus, disabled          | $grey200  | \#       |
+
+      | Border-color - hover                             | $grey800  | \#       |
+
+      | Border-color - selected/pressed                  | $blue800  | \#       |
+
+      | Icon-color/font-color - default, focus, disabled | $grey800  | \#       |
+
+      | Icon-color/font-color - hover, selected          | $grey1000 | \#       |
+  - title: Usage
+    content: >-
+      ## Overview
+
+
+      An avatar is a component that visually represents a user or entity. It helps to identify users or objects quickly.
+
+
+      ![avatar overview](/admin/images/avatar-01-overview.png "avatar overview")
+
+
+      For avatars representing the user, the user picture is displayed. If there is an error loading the src of the avatar, there are 2 fallbacks:
+
+
+      * If there's a name prop, we use it to generate the initials
+
+      * If there's no name prop, we use a placeholder image.
+
+
+      ### Anatomy
+
+
+      ![avatar anatomy](/admin/images/avatar-02-anatomy.png "avatar anatomy")
+
+
+      **Image** 
+
+
+      A circular container with grey border that wraps an image of the user.
+
+
+      **Initial** 
+
+
+      The user's name initial appear in the component's center with white background and border.
+
+
+      **Icon** 
+
+
+      White background and border with an icon representing users or entities.
+
+
+      ### Behaviour
+
+
+      In addition to providing access to a user's profile, the Avatar can be used as a way to link a user to a specific set of data like for example an overlay menu.
+
+
+      ![avatar behaviour](/admin/images/avatar-03-behaviour.png "avatar behaviour")
+
+
+      ### Accessibility
+
+
+      Whenever you use an image to communicate a concept, it’s important to use descriptive alt text for accessibility because it allows screen readers to describe what’s in the image to people who may not be able to see it.
+
+
+      For avatars, we recommend using a format that describes what will show in the image:
+
+
+      * alt="Person’s name" if the avatar represents a person.
+
+      * alt="Product’s name" if the avatar represents a product.
+
+      * alt="" if the name of the person/product appears next to the avatar as text.
+
+
+      ### Usage
+
+
+      To provide context, avatars are often combined with status. Users usually upload their own images; otherwise, their initials appear.\
+
+      Use:
+
+
+      * to display an avatar for a user
+
+      * profile images expand to 100% of their container width by default
+
+      * according to accessibility, it is important to remember to use descriptive alt text for avatars,
+
+      * automatically adjust avatar sizes based on the size of the screen circular avatars for quick identification
+
+      * a status indicator to indicate the presence for a single user
+
+      * avatars with badges to show reminders and notifications
+
+      * tap on the avatar to reveal its details on mobile.
+
+
+      ## Do's and Don'ts
+
+
+      ![avatar do's and don'ts 1](/admin/images/avatar-04-dos-and-donts.png "avatar do's and don'ts 1")
+
+
+      ![avatar do's and don'ts 2](/admin/images/avatar-05-dos-and-donts.png "avatar do's and don'ts 2")
 parent: XPLFvowY8sBRhG2IUn5Zk
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
