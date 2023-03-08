@@ -14,56 +14,55 @@ exports[`Table component renders 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 }
 
 @media  {
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
     background: var(--colors-primaryDark);
   }
 
@@ -85,16 +84,16 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK"
+          class="c-jhJxGZ"
         >
           Column A
         </th>
@@ -107,7 +106,7 @@ exports[`Table component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           This is text
         </td>
@@ -120,7 +119,7 @@ exports[`Table component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           Footer 1
         </td>
@@ -144,56 +143,55 @@ exports[`Table component renders with a themed header 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 }
 
 @media  {
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
     background: var(--colors-primaryDark);
   }
 
@@ -205,13 +203,14 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-tonal50);
   }
 
-  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
-  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
-  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
+  .c-cwQMhQ-jzCEki-size-lg .c-ihQtuj,
+  .c-cwQMhQ-jzCEki-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-jzCEki-size-lg .c-jwhJBv {
     height: var(--sizes-5);
+    padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-gmYsCp-theme-primary .c-GSaiK {
+  .c-PJLV-jSYITb-theme-primary .c-jhJxGZ {
     background: var(--colors-primary);
   }
 }
@@ -225,16 +224,16 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gmYsCp-theme-primary"
+      class="c-PJLV c-PJLV-jSYITb-theme-primary"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK"
+          class="c-jhJxGZ"
         >
           Column A
         </th>
@@ -247,7 +246,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           This is text
         </td>
@@ -260,7 +259,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           Footer 1
         </td>
@@ -284,56 +283,55 @@ exports[`Table component renders with size set to lg 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 }
 
 @media  {
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
     background: var(--colors-primaryDark);
   }
 
@@ -345,10 +343,11 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-tonal50);
   }
 
-  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
-  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
-  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
+  .c-cwQMhQ-jzCEki-size-lg .c-ihQtuj,
+  .c-cwQMhQ-jzCEki-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-jzCEki-size-lg .c-jwhJBv {
     height: var(--sizes-5);
+    padding: var(--space-2) var(--space-3);
   }
 }
 
@@ -361,16 +360,16 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-goJwcl-size-lg c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-jzCEki-size-lg c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK"
+          class="c-jhJxGZ"
         >
           Column A
         </th>
@@ -383,7 +382,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           This is text
         </td>
@@ -396,7 +395,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           Footer 1
         </td>
@@ -420,56 +419,55 @@ exports[`Table component renders with square corners 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 }
 
 @media  {
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
     background: var(--colors-primaryDark);
   }
 
@@ -481,10 +479,11 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-tonal50);
   }
 
-  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
-  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
-  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
+  .c-cwQMhQ-jzCEki-size-lg .c-ihQtuj,
+  .c-cwQMhQ-jzCEki-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-jzCEki-size-lg .c-jwhJBv {
     height: var(--sizes-5);
+    padding: var(--space-2) var(--space-3);
   }
 }
 
@@ -497,16 +496,16 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK"
+          class="c-jhJxGZ"
         >
           Column A
         </th>
@@ -519,7 +518,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           This is text
         </td>
@@ -532,7 +531,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           Footer 1
         </td>
@@ -556,56 +555,55 @@ exports[`Table component renders with sticky columns 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 }
 
 @media  {
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jEDwTF-theme-primaryDark .c-GSaiK {
+  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
     background: var(--colors-primaryDark);
   }
 
@@ -617,13 +615,14 @@ exports[`Table component renders with sticky columns 1`] = `
     background: var(--colors-tonal50);
   }
 
-  .c-cwQMhQ-goJwcl-size-lg .c-cCZzXk,
-  .c-cwQMhQ-goJwcl-size-lg .c-GSaiK,
-  .c-cwQMhQ-goJwcl-size-lg .c-hYjVQ {
+  .c-cwQMhQ-jzCEki-size-lg .c-ihQtuj,
+  .c-cwQMhQ-jzCEki-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-jzCEki-size-lg .c-jwhJBv {
     height: var(--sizes-5);
+    padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-gmYsCp-theme-primary .c-GSaiK {
+  .c-PJLV-jSYITb-theme-primary .c-jhJxGZ {
     background: var(--colors-primary);
   }
 }
@@ -672,27 +671,27 @@ exports[`Table component renders with sticky columns 1`] = `
     role="scrollbar"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-idVpojG-css"
+      class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
-        class="c-PJLV c-PJLV-jEDwTF-theme-primaryDark"
+        class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
         numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"
         >
           <th
-            class="c-GSaiK"
+            class="c-jhJxGZ"
           >
             Column A
           </th>
           <th
-            class="c-GSaiK"
+            class="c-jhJxGZ"
           >
             Column B
           </th>
           <th
-            class="c-GSaiK"
+            class="c-jhJxGZ"
           >
             Column C
           </th>
@@ -706,17 +705,17 @@ exports[`Table component renders with sticky columns 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             This is text
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             This is text
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             This is text
           </td>
