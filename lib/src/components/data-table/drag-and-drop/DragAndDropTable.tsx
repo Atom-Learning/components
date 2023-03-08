@@ -19,11 +19,6 @@ type DragAndDropTableProps = DataTableTableProps & {
   }) => void
 }
 
-export const getRowOrder = (data: TAsyncDataResult, idColumn: string) =>
-  data.results.map((row) => {
-    return row[idColumn]
-  })
-
 export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
   idColumn = 'id',
   onDragAndDrop,
@@ -68,7 +63,7 @@ export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
         }}
       >
         <DataTable.Head theme={theme} sortable={sortable} />
-        <DragAndDropTableBody striped={striped} />
+        <DragAndDropTableBody striped={striped} idColumn={idColumn} />
       </Table>
     </Sortable.Root>
   )
