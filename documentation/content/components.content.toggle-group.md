@@ -283,7 +283,8 @@ tabs:
       It can be used as single or multi-select, and displayed vertically or horizontally.
 
 
-      Toggle Group is an alternative for Radios and Checkboxes. A set of two-state buttons that can be toggled on or off.\
+      Toggle Group is an alternative for Radios and Checkboxes. A set of two-state buttons that can be toggled on or off.
+
 
       They clearly present all available options in the viewport at the same time, reducing cognitive load, and are easy to use on mobile devices. Therefore It's recommended to use it when there are 6 options or fewer available. For a larger amount of options, use radio, checkbox, combo box, or select.
 
