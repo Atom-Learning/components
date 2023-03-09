@@ -110,7 +110,7 @@ tabs:
       <ComponentProps component="ToggleGroup.Item" />
   - title: Visual
     content: >-
-      ## Structure
+      ## Structure res
 
 
       A component that lets users toggle between a group of 2-6 options.
@@ -264,8 +264,6 @@ tabs:
       | Font-color - Selected, Selected focus | $blue800 | \#       |
 
       | Font-color - Hover                    | $blue900 | \#       |
-
-
 
 
       | State                  | Value       |
