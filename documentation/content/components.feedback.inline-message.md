@@ -62,7 +62,7 @@ tabs:
     title: Code
   - title: Visual
     content: >-
-      ## Structure re
+      ## Structure
 
 
       Simple text and optional icon to inform the user of relevant information, revealed in context.
