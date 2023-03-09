@@ -110,7 +110,7 @@ tabs:
       <ComponentProps component="ToggleGroup.Item" />
   - title: Visual
     content: >-
-      ## Structure res
+      ## Structure
 
 
       A component that lets users toggle between a group of 2-6 options.
