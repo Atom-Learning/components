@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      The `Table` component displays a collection of data grouped into rows.
-      Its structure mirrors that of a regular HTML table, with the
+      The `Table` component displays a collection of data grouped into rows. Its
+      structure mirrors that of a regular HTML table, with the
       smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table
       Row` components corresponding to
       the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags,
@@ -106,30 +106,54 @@ tabs:
       ## Variants
 
 
-      The `Table` component has 2 size variants that control the row height. The two available sizes are `md`(default) and `lg` which should be used when the table needs to show more than just text, ie: `Button(s)` and `ActionIcon(s)`. The increased height helps keep the elements clickable on smaller screensizes.
+      The `Table` component has 3 size variants that control the row height and cells padding. The three available sizes are `md`(default), `lg` and `xl`.
 
 
-      <CodeBlock live={true} preview={true} code={`<Table size="lg" css={{ width: '500px', mt: '100px', ml: '100px' }}>
-        <Table.Header>
-          <Table.Row>
-            <Table.HeaderCell>First Name</Table.HeaderCell>
-            <Table.HeaderCell>Last Name</Table.HeaderCell>
-            <Table.HeaderCell>Age</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>Rakim</Table.Cell>
-            <Table.Cell>Jackson</Table.Cell>
-            <Table.Cell>35</Table.Cell>
-          </Table.Row>
-          <Table.Row>
-            <Table.Cell>Evelyn</Table.Cell>
-            <Table.Cell>Smith</Table.Cell>
-            <Table.Cell>27</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table>`} language={"tsx"} />
+      <CodeBlock live={true} preview={true} code={`<>
+        <Table size="lg" css={{ width: '500px', mt: '100px', ml: '100px' }}>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>First Name</Table.HeaderCell>
+              <Table.HeaderCell>Last Name</Table.HeaderCell>
+              <Table.HeaderCell>Age</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>Rakim</Table.Cell>
+              <Table.Cell>Jackson</Table.Cell>
+              <Table.Cell>35</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Evelyn</Table.Cell>
+              <Table.Cell>Smith</Table.Cell>
+              <Table.Cell>27</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+
+        <Table size="xl" css={{ width: '500px', mt: '100px', ml: '100px' }}>
+          <Table.Header>
+            <Table.Row>
+              <Table.HeaderCell>First Name</Table.HeaderCell>
+              <Table.HeaderCell>Last Name</Table.HeaderCell>
+              <Table.HeaderCell>Age</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>Rakim</Table.Cell>
+              <Table.Cell>Jackson</Table.Cell>
+              <Table.Cell>35</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Evelyn</Table.Cell>
+              <Table.Cell>Smith</Table.Cell>
+              <Table.Cell>27</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+      </>`} language={"tsx"} />
 
 
       The `Table` component by default renders with a slight border radius. If you want to remove this, for example if you are rendering the `Table` inside another component that has border radius, you can remove this by setting `corners="square"`. The default is `corners="round"`.

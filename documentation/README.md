@@ -7,4 +7,4 @@ The documentation itself is added via a NetlifyCMS website. You will need to log
 ## Working with documentation locally.
 
 You can also work with the documentation locally by installing this repo as seen in [the main `README.md`](https://github.com/Atom-Learning/components/tree/main#readme)
-This will a faster way to work and see changes but it will require opening a PR in the end and is not recommended for users not comfortable with working with `git`.
+This is a faster way to work and see changes but requires opening a PR in the end and is not recommended for users not comfortable with working with `git`.
