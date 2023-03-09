@@ -169,15 +169,21 @@ tabs:
       Each case will be unique and should be thought of as a problem to solve. 
 
 
-      The primary goals should be to:
+      **The primary goals should be to:**
 
 
       * Improve learnability and feature discovery.  
 
       * Increase feature adoption.  
 
-      * Improve usability.\
-        Examples of use:  
+      * Improve usability. 
+
+
+
+
+      **Examples of use:**
+
+
       * When no results are found after a search or filter.  
 
       * When no content or items exists on a page.  
