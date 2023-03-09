@@ -14,6 +14,8 @@ backend:
     deleteMedia: "[NetlifyCMS] Delete “{{path}}”"
     openAuthoring: "[NetlifyCMS] {{message}}"
 
+publish_mode: editorial_workflow
+
 # local_backend: true
 
 media_folder: "documentation/public/admin/images" # Media files will be stored in the repo under images/uploads
