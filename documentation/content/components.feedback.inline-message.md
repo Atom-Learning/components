@@ -62,7 +62,7 @@ tabs:
     title: Code
   - title: Visual
     content: >-
-      ## Structure
+      ## Structure re
 
 
       Simple text and optional icon to inform the user of relevant information, revealed in context.
@@ -90,8 +90,6 @@ tabs:
 
 
       ![Typography specs for Inline messages](/admin/images/typography-specs-for-inline-messages.png "Typography specs for Inline messages")
-
-
 
 
       | Element          | Family | Weight | Size | rem      | px  |
