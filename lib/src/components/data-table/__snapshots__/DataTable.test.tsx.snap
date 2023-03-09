@@ -75,12 +75,11 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
@@ -89,18 +88,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: flex;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 
@@ -278,29 +276,30 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     width: 20px;
   }
 
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gzzGYN-theme-light .c-GSaiK {
+  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
     color: var(--colors-tonal600);
   }
@@ -429,7 +428,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     margin-bottom: var(--space-4);
   }
 
-  .c-GSaiK-ifYtQLP-css {
+  .c-jhJxGZ-ifYtQLP-css {
     cursor: initial;
   }
 
@@ -453,7 +452,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     margin-right: var(--space-4);
   }
 
-  .c-GSaiK-igsmDXe-css {
+  .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
@@ -493,16 +492,16 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-iPJLV-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gzzGYN-theme-light"
+      class="c-PJLV c-PJLV-gJBDLb-theme-light"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -511,7 +510,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -520,7 +519,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -529,7 +528,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-ifYtQLP-css"
+          class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -547,7 +546,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -576,17 +575,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           1
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           chrissy
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -598,7 +597,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -627,17 +626,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           2
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           agatha
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -649,7 +648,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -678,17 +677,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           3
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           betty
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -700,7 +699,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -729,17 +728,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           4
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           denise
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -751,7 +750,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -780,17 +779,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           5
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           charlie
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -802,7 +801,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -831,17 +830,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           6
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           xena
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -853,7 +852,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -882,17 +881,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           7
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           rick
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -904,7 +903,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -933,17 +932,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           8
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           phillip
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -955,7 +954,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -984,17 +983,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           9
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           maurice
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1006,7 +1005,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1035,17 +1034,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           10
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           peter
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1057,7 +1056,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1086,17 +1085,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           11
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           velma
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1108,7 +1107,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1137,17 +1136,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           12
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           max
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1159,7 +1158,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1188,17 +1187,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           13
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           maxine
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1210,7 +1209,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1239,17 +1238,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           14
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           siobhan
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1261,7 +1260,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1290,17 +1289,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           15
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           nelly
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1312,7 +1311,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1341,17 +1340,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           16
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           kris
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1363,7 +1362,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1392,17 +1391,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           17
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           tony
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1414,7 +1413,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
         data-dragging="false"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button
             aria-describedby="DndDescribedBy-0"
@@ -1443,17 +1442,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           18
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           tina
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -1557,12 +1556,11 @@ exports[`DataTable component renders 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
@@ -1571,18 +1569,17 @@ exports[`DataTable component renders 1`] = `
     display: flex;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 
@@ -1746,29 +1743,30 @@ exports[`DataTable component renders 1`] = `
     width: 20px;
   }
 
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gzzGYN-theme-light .c-GSaiK {
+  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
     color: var(--colors-tonal600);
   }
@@ -1863,7 +1861,7 @@ exports[`DataTable component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-GSaiK-ifYtQLP-css {
+  .c-jhJxGZ-ifYtQLP-css {
     cursor: initial;
   }
 
@@ -1887,7 +1885,7 @@ exports[`DataTable component renders 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-GSaiK-igsmDXe-css {
+  .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 }
@@ -1925,16 +1923,16 @@ exports[`DataTable component renders 1`] = `
     </svg>
   </div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gzzGYN-theme-light"
+      class="c-PJLV c-PJLV-gJBDLb-theme-light"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -1943,7 +1941,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -1952,7 +1950,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -1961,7 +1959,7 @@ exports[`DataTable component renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-ifYtQLP-css"
+          class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -1978,22 +1976,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           1
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           chrissy
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2004,22 +2002,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           2
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           agatha
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2030,22 +2028,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           3
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           betty
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2056,22 +2054,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           4
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           denise
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2082,22 +2080,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           5
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           charlie
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2108,22 +2106,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           6
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           xena
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2134,22 +2132,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           7
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           rick
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2160,22 +2158,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           8
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           phillip
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2186,22 +2184,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           9
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           maurice
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2212,22 +2210,22 @@ exports[`DataTable component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           10
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           peter
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2387,12 +2385,11 @@ exports[`DataTable server-side renders 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
@@ -2401,18 +2398,17 @@ exports[`DataTable server-side renders 1`] = `
     display: flex;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 
@@ -2620,29 +2616,30 @@ exports[`DataTable server-side renders 1`] = `
     width: 20px;
   }
 
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gzzGYN-theme-light .c-GSaiK {
+  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
     color: var(--colors-tonal600);
   }
@@ -2797,7 +2794,7 @@ exports[`DataTable server-side renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-GSaiK-ifYtQLP-css {
+  .c-jhJxGZ-ifYtQLP-css {
     cursor: initial;
   }
 
@@ -2821,7 +2818,7 @@ exports[`DataTable server-side renders 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-GSaiK-igsmDXe-css {
+  .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
@@ -2890,16 +2887,16 @@ exports[`DataTable server-side renders 1`] = `
     </svg>
   </div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-illIiIE-css"
+    class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gzzGYN-theme-light"
+      class="c-PJLV c-PJLV-gJBDLb-theme-light"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -2908,7 +2905,7 @@ exports[`DataTable server-side renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -2917,7 +2914,7 @@ exports[`DataTable server-side renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-igsmDXe-css"
+          class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -2926,7 +2923,7 @@ exports[`DataTable server-side renders 1`] = `
           </div>
         </th>
         <th
-          class="c-GSaiK c-GSaiK-ifYtQLP-css"
+          class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -2943,22 +2940,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           1
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           chrissy
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2969,22 +2966,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           2
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           agatha
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -2995,22 +2992,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           3
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           betty
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3021,22 +3018,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           4
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           denise
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3047,22 +3044,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           5
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           charlie
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3073,22 +3070,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           6
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           xena
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3099,22 +3096,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           7
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           rick
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3125,22 +3122,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           8
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           phillip
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           crossfit
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3151,22 +3148,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           9
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           maurice
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           acting
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3177,22 +3174,22 @@ exports[`DataTable server-side renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           10
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           peter
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           bare-knuckle boxing
         </td>
         <td
-          class="c-cCZzXk"
+          class="c-ihQtuj"
         >
           <button>
             do something
@@ -3352,12 +3349,11 @@ exports[`DataTable sticky columns renders 1`] = `
     background: unset;
   }
 
-  .c-GSaiK {
+  .c-jhJxGZ {
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
@@ -3366,18 +3362,17 @@ exports[`DataTable sticky columns renders 1`] = `
     display: flex;
   }
 
-  .c-cCZzXk {
+  .c-ihQtuj {
     border-bottom: 1px solid var(--colors-tonal100);
     box-sizing: border-box;
     color: var(--colors-tonal400);
     font-family: var(--fonts-body);
     line-height: 1.5;
-    padding: var(--space-2) var(--space-3);
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-cCZzXk:first-child {
+  .c-ihQtuj:first-child {
     font-weight: bold;
   }
 
@@ -3602,29 +3597,30 @@ exports[`DataTable sticky columns renders 1`] = `
     width: 20px;
   }
 
-  .c-cwQMhQ-gWDrUk-size-md .c-cCZzXk,
-  .c-cwQMhQ-gWDrUk-size-md .c-GSaiK,
-  .c-cwQMhQ-gWDrUk-size-md .c-hYjVQ {
+  .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
+  .c-cwQMhQ-urYIk-size-md .c-jhJxGZ,
+  .c-cwQMhQ-urYIk-size-md .c-jwhJBv {
     height: var(--sizes-4);
+    padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:first-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-GSaiK:last-of-type {
+  .c-cwQMhQ-fplEaP-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:first-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-fofZjp-corners-round .c-hjAYDb:last-child .c-cCZzXk:last-child {
+  .c-cwQMhQ-fplEaP-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gzzGYN-theme-light .c-GSaiK {
+  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
     color: var(--colors-tonal600);
   }
@@ -3743,7 +3739,7 @@ exports[`DataTable sticky columns renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-GSaiK-ifYtQLP-css {
+  .c-jhJxGZ-ifYtQLP-css {
     cursor: initial;
   }
 
@@ -3767,7 +3763,7 @@ exports[`DataTable sticky columns renders 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-GSaiK-igsmDXe-css {
+  .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
@@ -3839,16 +3835,16 @@ exports[`DataTable sticky columns renders 1`] = `
     role="scrollbar"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-gWDrUk-size-md c-cwQMhQ-fofZjp-corners-round c-cwQMhQ-iPJLV-css"
+      class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
     >
       <thead
-        class="c-PJLV c-PJLV-gzzGYN-theme-light"
+        class="c-PJLV c-PJLV-gJBDLb-theme-light"
       >
         <tr
           class="c-hjAYDb"
         >
           <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
+            class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
               class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -3857,7 +3853,7 @@ exports[`DataTable sticky columns renders 1`] = `
             </div>
           </th>
           <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
+            class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
               class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -3866,7 +3862,7 @@ exports[`DataTable sticky columns renders 1`] = `
             </div>
           </th>
           <th
-            class="c-GSaiK c-GSaiK-igsmDXe-css"
+            class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
               class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -3875,7 +3871,7 @@ exports[`DataTable sticky columns renders 1`] = `
             </div>
           </th>
           <th
-            class="c-GSaiK c-GSaiK-ifYtQLP-css"
+            class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
           >
             <div
               class="c-dhzjXW c-dhzjXW-ijroWjL-css"
@@ -3892,22 +3888,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             1
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             chrissy
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -3918,22 +3914,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             2
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             agatha
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -3944,22 +3940,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             3
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             betty
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -3970,22 +3966,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             4
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             denise
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -3996,22 +3992,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             5
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             charlie
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4022,22 +4018,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             6
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             xena
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4048,22 +4044,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             7
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             rick
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4074,22 +4070,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             8
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             phillip
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4100,22 +4096,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             9
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             maurice
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4126,22 +4122,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             10
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             peter
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4152,22 +4148,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             11
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             velma
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4178,22 +4174,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             12
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             max
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4204,22 +4200,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             13
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             maxine
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4230,22 +4226,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             14
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             siobhan
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4256,22 +4252,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             15
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             nelly
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4282,22 +4278,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             16
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             kris
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             bare-knuckle boxing
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4308,22 +4304,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             17
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             tony
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             crossfit
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something
@@ -4334,22 +4330,22 @@ exports[`DataTable sticky columns renders 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             18
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             tina
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             acting
           </td>
           <td
-            class="c-cCZzXk"
+            class="c-ihQtuj"
           >
             <button>
               do something

@@ -4,7 +4,6 @@ export const TableFooterCell = styled('td', {
   color: '$tonal400',
   fontFamily: '$body',
   fontWeight: 600,
-  p: '$2 $3',
   textAlign: 'left',
   verticalAlign: 'middle'
 })
