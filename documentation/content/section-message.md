@@ -230,5 +230,6 @@ tabs:
 
 
       ![section message dos and donts 4](/admin/images/14-section-message-dos-and-donts.png "section message dos and donts 4")
+parent: HGItoEG3XVs9DpOLugTot
 uuid: 0820a98e-0682-4c11-bed0-d6b751d98c7e
 ---
