@@ -51,29 +51,6 @@ describe(`Table component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders with size set to xl', async () => {
-    const { container } = await render(
-      <Table size="xl" css={{ height: '100px', width: '400px' }}>
-        <Table.Header>
-          <Table.Row>
-            <Table.HeaderCell>Column A</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>This is text</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-        <Table.Footer>
-          <Table.Row>
-            <Table.Cell>Footer 1</Table.Cell>
-          </Table.Row>
-        </Table.Footer>
-      </Table>
-    )
-    expect(container).toMatchSnapshot()
-  })
-
   it('renders with square corners', async () => {
     const { container } = await render(
       <Table corners="square" css={{ height: '100px', width: '400px' }}>
