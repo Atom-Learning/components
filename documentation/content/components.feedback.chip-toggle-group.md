@@ -40,15 +40,13 @@ tabs:
     title: Code
   - title: Visual
     content: >-
-      
-
       ## Structure
 
 
       A component in the shape of a pill providing visual cues to prompt users to enter information or filter content.
 
 
-      ![chip structure](/admin/images/01-chip-structure.png "chip structure")
+      ![chip structure](/admin/images/02-chip-anatomy.png "chip structure")
 
 
       ### Anatony
