@@ -126,7 +126,17 @@ export const DataTableProvider = ({
     getFilteredRowModel: getFilteredRowModel(),
     onPaginationChange: isPaginated ? setPaginationState : undefined,
     onSortingChange: setSorting,
-    onGlobalFilterChange: setGlobalFilter
+    onGlobalFilterChange: setGlobalFilter,
+    globalFilterFn: (row, columnId, filterValue) => {
+      const search = filterValue.toLowerCase()
+
+      let value = row.getValue(columnId) as string
+      const valueType = typeof value
+      if (valueType === 'number' || valueType === 'boolean')
+        value = String(value)
+
+      return value?.toLowerCase().includes(search)
+    }
   })
 
   const value: DataTableContextType = React.useMemo(() => {
