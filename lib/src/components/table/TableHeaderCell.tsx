@@ -5,7 +5,6 @@ export const TableHeaderCell = styled('th', {
   fontFamily: '$body',
   fontWeight: 600,
   lineHeight: 1.5,
-  p: '$2 $3',
   textAlign: 'left',
   verticalAlign: 'middle'
 })

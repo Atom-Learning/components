@@ -92,8 +92,6 @@ tabs:
       ![Typography specs for Inline messages](/admin/images/typography-specs-for-inline-messages.png "Typography specs for Inline messages")
 
 
-
-
       | Element          | Family | Weight | Size | rem      | px  |
 
       | ---------------- | ------ | ------ | ---- | -------- | --- |
