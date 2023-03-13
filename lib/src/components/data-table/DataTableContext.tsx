@@ -126,7 +126,22 @@ export const DataTableProvider = ({
     getFilteredRowModel: getFilteredRowModel(),
     onPaginationChange: isPaginated ? setPaginationState : undefined,
     onSortingChange: setSorting,
-    onGlobalFilterChange: setGlobalFilter
+    onGlobalFilterChange: setGlobalFilter,
+    globalFilterFn: (row, columnId, filterValue) => {
+      const checkFilterMatchesCell = (cellValue: string) =>
+        cellValue.toLowerCase().includes(filterValue.toLowerCase())
+
+      const value = row.getValue(columnId)
+      switch (typeof value) {
+        case 'string':
+          return checkFilterMatchesCell(value)
+        case 'boolean':
+        case 'number':
+          return checkFilterMatchesCell(String(value))
+        default:
+          return false
+      }
+    }
   })
 
   const value: DataTableContextType = React.useMemo(() => {
