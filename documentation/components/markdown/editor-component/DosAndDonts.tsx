@@ -41,7 +41,10 @@ export const DosAndDonts: React.FC<DosAndDontsProps> = ({ items }) => {
 
   return (
     <Grid
+      as="ul"
       css={{
+        p: 0,
+        m: 0,
         gap: '$5 $4',
         gridTemplateColumns: '1fr',
         '@sm': { gridTemplateColumns: '1fr 1fr' },
