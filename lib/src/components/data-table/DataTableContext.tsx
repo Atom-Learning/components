@@ -128,14 +128,19 @@ export const DataTableProvider = ({
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter,
     globalFilterFn: (row, columnId, filterValue) => {
-      const search = filterValue.toLowerCase()
+      const checkFilterMatchesCell = (cellValue: string) =>
+        cellValue.toLowerCase().includes(filterValue.toLowerCase())
 
-      let value = row.getValue(columnId) as string
-      const valueType = typeof value
-      if (valueType === 'number' || valueType === 'boolean')
-        value = String(value)
-
-      return value?.toLowerCase().includes(search)
+      const value = row.getValue(columnId)
+      switch (typeof value) {
+        case 'string':
+          return checkFilterMatchesCell(value)
+        case 'boolean':
+        case 'number':
+          return checkFilterMatchesCell(String(value))
+        default:
+          return false
+      }
     }
   })
 
