@@ -15,7 +15,6 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({ image, type, descrip
   return (
     <Box as="li" css={{ listStyle: 'none' }}>
       <Box css={{
-        aspectRatio: "332/192",
         background: '$base1',
         display: 'flex',
         alignItems: 'center',
@@ -23,7 +22,10 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({ image, type, descrip
         borderBottom: '4px solid',
         borderColor: typeBorderColor,
         mb: '$2',
-        p: '$2'
+        p: '$2',
+        // Aspect ratio numbers directly copied from Figma component with an additional 4px on the height to account for the border. This is resulting to a 16/9 for the image.
+        // Box-sizing can't be used as anything other than `border-box` as we need it to include paddings.
+        aspectRatio: "332/192",
       }}>
         <Image src={image} />
       </Box>
