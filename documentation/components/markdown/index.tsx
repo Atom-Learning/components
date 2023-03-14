@@ -14,6 +14,7 @@ import { FontFamilyTokenList } from './editor-component/FontFamilyTokenList'
 import { FontSizeTokenList } from './editor-component/FontSizeTokenList'
 import { RadiusTokenList } from './editor-component/RadiusTokenList'
 import { ShadowTokenList } from './editor-component/ShadowTokenList'
+import { DosAndDonts } from './editor-component/DosAndDonts'
 
 export const components = {
   h2: (props) => (
@@ -74,5 +75,6 @@ export const components = {
   FontFamilyTokenList,
   FontSizeTokenList,
   RadiusTokenList,
-  ShadowTokenList
+  ShadowTokenList,
+  DosAndDonts
 }

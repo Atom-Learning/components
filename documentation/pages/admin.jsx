@@ -10,6 +10,7 @@ import { FontFamilyTokenListEditorComponent } from "~/components/admin/editor-co
 import { FontSizeTokenListEditorComponent } from "~/components/admin/editor-component/FontSizeTokenListEditorComponent";
 import { RadiusTokenListEditorComponent } from "~/components/admin/editor-component/RadiusTokenListEditorComponent";
 import { ShadowTokenListEditorComponent } from "~/components/admin/editor-component/ShadowTokenListEditorComponent";
+import { DosAndDontsEditorComponent } from "~/components/admin/editor-component/DosAndDontsEditorComponent";
 import { UuidWidget } from "~/components/admin/widget/UuidWidget";
 
 const Admin = () => {
@@ -39,6 +40,8 @@ const Admin = () => {
       CMS.registerEditorComponent(RadiusTokenListEditorComponent);
 
       CMS.registerEditorComponent(ShadowTokenListEditorComponent);
+
+      CMS.registerEditorComponent(DosAndDontsEditorComponent);
     })();
   }, []);
 
@@ -47,8 +50,8 @@ const Admin = () => {
       <Head>
         {/* (!) Style needed because of NetlifyCMS bug: https://github.com/netlify/netlify-cms/issues/5092#issuecomment-1246525269 */}
         <style>
-          {`[data-slate-editor] { 
-            -webkit-user-modify: read-write !important; 
+          {`[data-slate-editor] {
+            -webkit-user-modify: read-write !important;
           }`}
         </style>
       </Head>
