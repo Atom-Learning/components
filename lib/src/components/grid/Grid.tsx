@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 import { createThemeVariants } from '~/utilities'
 
 const GridContainer = styled('div', {
@@ -13,7 +13,10 @@ const GridContainer = styled('div', {
 type GridProps = React.ComponentProps<typeof GridContainer> & {
   minItemSize?: string
   maxItemSize?: string
-}
+} & {
+  css?: CSS
+  as?: any
+} // (!) `css` and `as` are both props that come from `stitches`. It would be better to figure out and export the appropriate type for them in stitches!
 
 export const Grid: React.FC<GridProps> = ({
   css,
