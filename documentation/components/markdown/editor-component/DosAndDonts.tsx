@@ -27,7 +27,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({ image, type, descrip
         // Box-sizing can't be used as anything other than `border-box` as we need it to include paddings.
         aspectRatio: "332/192",
       }}>
-        <Image src={image} />
+        <Image src={image} alt="" />
       </Box>
       <Heading as="h3" size="xs" css={{ mb: '$3' }}>{typeText}</Heading>
       <Text>{description}</Text>
@@ -51,7 +51,7 @@ export const DosAndDonts: React.FC<DosAndDontsProps> = ({ items }) => {
         gridTemplateColumns: '1fr',
         '@sm': { gridTemplateColumns: '1fr 1fr' },
       }}>
-      {items.map((props) => <DosAndDontsItem {...props} />)}
+      {items.map((props) => <DosAndDontsItem key={props.description} {...props} />)}
     </Grid>
   )
 }
