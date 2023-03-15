@@ -9,13 +9,13 @@ tabs:
       ## Structure
 
 
-      The pagination component is used whenever a user needs to navigate through a list of items that is too long to fit on one page.  
+      The pagination component is used whenever a user needs to navigate through a list of items that is too long to fit on one page.
 
 
       It includes a "previous" and "next" chevron button, and several numbered buttons that correspond to different pages of the data.
 
 
-      ### Anatony
+      ### Anatomy
 
 
       * The pagination component typically consists of several buttons that allow the user to navigate to different pages of the data.
@@ -207,8 +207,6 @@ tabs:
       ![Pagination overview](/admin/images/12-pagination-overview.png "Pagination overview")
 
 
-
-
       ## When to use
 
 
@@ -219,8 +217,6 @@ tabs:
       * Used whenever a user needs to navigate through a large set of data that is too long to fit on one page. This can include lists of items, search results, or any other data that is divided into multiple pages.
 
       * Used in conjunction with other components such as a list or a card grid, to allow users to easily navigate to different pages of the data.
-
-
 
 
       #### Placement
@@ -237,8 +233,6 @@ tabs:
       Pagination component allowing the user to navigate through a list of Mock test.
 
 
-
-
       #### Truncation
 
 
@@ -246,8 +240,6 @@ tabs:
 
 
       ![Pagination truncation](/admin/images/14-pagination-truncation.png "Pagination truncation")
-
-
 
 
       #### Completed
@@ -265,8 +257,6 @@ tabs:
       * The buttons in the pagination component should be labeled clearly with the page number or with "previous" or "next" to indicate the action that will occur when the button is clicked.
 
       * The current page should be indicated clearly to the user.
-
-
 
 
       #### Behaviors
@@ -296,8 +286,6 @@ tabs:
       What would be a good default? max 8 elements?\
 
       The number of items shown should respond according to the parent container available space.
-
-
 
 
       ![Pagination max elements](/admin/images/16-pagination-number-of-elements.png "Pagination max elements")
@@ -332,15 +320,15 @@ tabs:
 
       * Action icons inside the component must have accessible names for assistive technologies. For example: “Next”, “Previous”.
 
-      * Place the pager in a <nav> element when you can.
+      * Place the pager in a `<nav>` element when you can.
 
-      * If you do not use a <nav> element, you need to add role="navigation" to the markup. Note: this role is implied when you use the <nav> element so it is a bit redundant to use both at the same time.
+      * If you do not use a `<nav>` element, you need to add `role="navigation"` to the markup. Note: this role is implied when you use the `<nav>` element so it is a bit redundant to use both at the same time.
 
-      * The markup includes an aria-label="pagination" to describe the type of navigation.
+      * The markup includes an `aria-label="pagination"` to describe the type of navigation.
 
-      * Add aria-current="page" to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.
+      * Add `aria-current="page"` to the link that points to the current page. This will tell AT that the focused link is pointing to the current page.
 
-      * Add aria-disabled="true" to the link when the link is disabled.
+      * Add `aria-disabled="true"` to the link when the link is disabled.
 
 
       ## Do's and Don'ts
