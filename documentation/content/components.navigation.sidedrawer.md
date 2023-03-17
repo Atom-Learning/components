@@ -5,7 +5,7 @@ links:
   viewSource: components/sidedrawer
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       `Sidedrawer` exports components that combine to build complex side
       navigation.
@@ -139,7 +139,6 @@ tabs:
       ## Whole Sidedrawer components composition
 
 
-
       <CodeBlock live={true} preview={true} code={`<Sidedrawer>
         <Sidedrawer.Trigger asChild>
           <Button>Open the Sidedrawer</Button>
@@ -208,6 +207,188 @@ tabs:
 
 
       <ComponentProps component="Sidedrawer.Trigger" />
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      A side panel on the left side of the screen, which lets users navigate the content of a product. It is collapsed and appears overlaid on top of a page and slides in from the side triggered by the hamburguer menu button.
+
+
+      ![sidedrawer structure](/admin/images/01-sidedrawer-structre.png "sidedrawer structure")
+
+
+      ### Overlay
+
+
+      When a Sidedrawer is triggered, an overlay is displayed behind it in order to visually differentiate the panel from the rest of the view. Clicking or tapping on the overlay is one way to dismiss the panel.
+
+
+      ![sidedrawer overlay](/admin/images/02-sidedrawer-overlay.png "sidedrawer overlay")
+
+
+      ### Sections and scroll
+
+
+      By design, a drawer's height will never exceed 100% of its container. As such, drawers will not scroll with the page to ensure the header and footer are always accessible to the user. Background (app) is not scrollable while drawer is open (position: fixed).
+
+
+      The header and content are always needed but the fixed footer is optional for each product to decide if they need one.\
+
+      Header and footer display a shadow after scroll (see Topbar component).
+
+
+      ![sidedrawer sections](/admin/images/03-sidedrawer-sections.png "sidedrawer sections")
+
+
+      ## Size
+
+
+      ![sidedrawer size](/admin/images/04-sidedrawer-size.png "sidedrawer size")
+
+
+      | Property - element     | Token     | px    | rem |
+
+      | ---------------------- | --------- | ----- | --- |
+
+      | min-height - Menu item | size $5   | 48px  | \-  |
+
+      | size - Icons           | size 'md' | 24px  | \-  |
+
+      | width - drawer panel   | \-        | 304px | \-  |
+
+
+      ### Margins and paddings
+
+
+      ![sidedrawer margins and paddings](/admin/images/05-sidedrawer-margins-and-paddings.png "sidedrawer margins and paddings")
+
+
+      | Property - element                                 | Token    | px   | rem  |
+
+      | -------------------------------------------------- | -------- | ---- | ---- |
+
+      | Padding left & right                               | space $4 | 16px | 1    |
+
+      | Padding left - Children                            | space $5 | 32px | 2    |
+
+      | Margin right - Icon                                | space $3 | 12px | 0.75 |
+
+      | padding top & bottom - divider                     | space $1 | 4px  | 0.25 |
+
+      | padding top & bottom - container                   | space $2 | 8px  | 0.5  |
+
+      | Padding top & bottom - elements (button, input...) | space $2 | 8px  | 0.5  |
+
+
+      ![sidedrawer card paddings](/admin/images/06-sidedrawer-avatar.png "sidedrawer card paddings")
+
+
+      | Property & element    | Token    | px   | rem |
+
+      | --------------------- | -------- | ---- | --- |
+
+      | Padding - all         | space $4 | 16px | 1   |
+
+      | Margin-right - Avatar | space $2 | 8px  | 0.5 |
+
+
+      #### Accordion (Submenu)
+
+
+      When a menu item have children it acts as an accordion. Styles are consistent with regular menu items except when specified.
+
+
+      ![Sidedrawer accordion menu](/admin/images/07-sidedrawer-menu.png "Sidedrawer accordion menu")
+
+
+      ## Typography
+
+
+      ![sidedrawer typography](/admin/images/08-sidedrawer-typography.png "sidedrawer typography")
+
+
+      | Element - state                | Family | Weight | Size | Rem      | px  |
+
+      | ------------------------------ | ------ | ------ | ---- | -------- | --- |
+
+      | Group header                   | $body  | 600    | $sm  | 0.875rem | 14  |
+
+      | Menu item                      | $body  | 400    | $md  | 1rem     | 16  |
+
+      | Menu item (selected, expanded) | $body  | 600    | $md  | 1rem     | 16  |
+
+      | User name                      | $body  | 400    | $md  | 1rem     | 16  |
+
+      | User description               | $body  | 400    | $sm  | 0.875rem | 14  |
+
+
+      ## Color
+
+
+      ![sidedrawer color](/admin/images/09-sidedrawer-color.png "sidedrawer color")
+
+
+      | Property & Element - State                   | Token     | Hex |
+
+      | -------------------------------------------- | --------- | --- |
+
+      | Font color - group header & menu item        | $grey900  | \#  |
+
+      | Font color - menu item selected (all states) | $blue800  | \#  |
+
+      | Font color - User name                       | $grey1000 | \#  |
+
+      | Font color - User description                | $grey600  | \#  |
+
+
+      ![sidedrawer color sections](/admin/images/10-sidedrawer-color-2.png "sidedrawer color sections")
+
+
+      | Property & Element - State            | Token    | Hex |
+
+      | ------------------------------------- | -------- | --- |
+
+      | Border-color - Footer (1px top)       | $grey200 | \#  |
+
+      | Border-color - User card (1px bottom) | $grey200 | \#  |
+
+
+      ![sidedrawer menu items color](/admin/images/11-sidedrawer-color-3.png "sidedrawer menu items color")
+
+
+      | Property & Element - State                     | Token    | Hex |
+
+      | ---------------------------------------------- | -------- | --- |
+
+      | Bg color - Container                           | $white   | \#  |
+
+      | Bg color - Menu item - default, focus          | $white   | \#  |
+
+      | Bg color - Menu item - hover                   | $grey100 | \#  |
+
+      | Bg color - Menu item - pressed                 | $grey200 | \#  |
+
+      | Bg color - Menu item - Selected default, focus | $blue100 | \#  |
+
+      | Border-color - Menu item - focus 2px           | $blue800 | \#  |
+
+      | Icon-color - default                           | $grey800 | \#  |
+
+      | Icon-color - selected                          | $blue800 | \#  |
+
+
+
+
+
+
+      **\_\_\_\_\_\_\_\_\_\_**
+
+
+      **This is just a test to see how svgs look**
+
+
+      <DosAndDonts items={[{"image":"/admin/images/menu-2-test.svg","type":"do","description":"this is a test for svgs"},{"description":"this is a test for svgs","type":"avoid","image":"/admin/images/menu-test.svg"}]} />
 parent: 95SvEwV7BznSChttFanpW
 uuid: 96eOG7OojxOpfsmMB-rCr
 nestedSlug:
