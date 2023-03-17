@@ -12,6 +12,7 @@ import { RadiusTokenListEditorComponent } from "~/components/admin/editor-compon
 import { ShadowTokenListEditorComponent } from "~/components/admin/editor-component/ShadowTokenListEditorComponent";
 import { DosAndDontsEditorComponent } from "~/components/admin/editor-component/DosAndDontsEditorComponent";
 import { UuidWidget } from "~/components/admin/widget/UuidWidget";
+import { CreatableSelectWidget } from "~/components/admin/widget/CreatableSelectWidget";
 
 const Admin = () => {
   React.useEffect(() => {
@@ -20,6 +21,8 @@ const Admin = () => {
       CMS.init();
 
       CMS.registerWidget([UuidWidget()]);
+
+      CMS.registerWidget([CreatableSelectWidget()]);
 
       CMS.registerEditorComponent(ComponentPropsEditorComponent);
 
