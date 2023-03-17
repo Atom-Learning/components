@@ -84,7 +84,7 @@ export const IconTokenList: React.FC<IconTokenListProps> = ({ icons: specificIco
         name="icon-search"
         placeholder="Search for an icon"
         css={{
-          maxWidth: 300,
+          maxWidth: 400,
           mx: 'auto',
           width: '100%',
           mb: '$4'
