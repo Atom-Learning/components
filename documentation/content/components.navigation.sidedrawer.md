@@ -378,17 +378,54 @@ tabs:
       | Icon-color - selected                          | $blue800 | \#  |
 
 
+      | State - element         | Value       |
+
+      | ----------------------- | ----------- |
+
+      | Disabled - all elements | 30% opacity |
 
 
+      | Property - element         | Token     |
+
+      | -------------------------- | --------- |
+
+      | Effects shadow - container | shadow $2 |
 
 
-      **\_\_\_\_\_\_\_\_\_\_**
+      ![sidedrawer color menu expanded](/admin/images/12-sidedrawer-color-4.png "sidedrawer color menu expanded")
 
 
-      **This is just a test to see how svgs look**
+      | Property & Element - State                     | Token    | Hex |
+
+      | ---------------------------------------------- | -------- | --- |
+
+      | Bg color - Container                           | $white   | \#  |
+
+      | Bg color - Menu item - default, focus          | $white   | \#  |
+
+      | Bg color - Menu item - hover                   | $grey100 | \#  |
+
+      | Bg color - Menu item - pressed                 | $grey200 | \#  |
+
+      | Bg color - Menu item - Selected default, focus | $blue100 | \#  |
+
+      | Border-color - Menu item - focus 2px           | $blue800 | \#  |
+
+      | Icon-color                                     | $grey800 |     |
 
 
-      <DosAndDonts items={[{"image":"/admin/images/menu-2-test.svg","type":"do","description":"this is a test for svgs"},{"description":"this is a test for svgs","type":"avoid","image":"/admin/images/menu-test.svg"}]} />
+      | State - element         | Value       |
+
+      | ----------------------- | ----------- |
+
+      | Disabled - all elements | 30% opacity |
+
+
+      | Property - element         | Token     |
+
+      | -------------------------- | --------- |
+
+      | Effects shadow - container | shadow $2 |
 parent: 95SvEwV7BznSChttFanpW
 uuid: 96eOG7OojxOpfsmMB-rCr
 nestedSlug:
