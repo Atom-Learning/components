@@ -5,7 +5,7 @@ links:
   viewSource: components/badge
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       The `Badge` component can be used to highlight a short piece of
       information, like a status.
@@ -54,6 +54,98 @@ tabs:
 
 
       <ComponentProps component="Badge" />
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      Badges are visual indicators for labels, useful to emphasize information to the user. Works best with single word values.
+
+
+      ![Badges structure](/admin/images/01-badges-structure.png "Badges structure")
+
+
+      | Property      | Token    | px   | rem |
+
+      | ------------- | -------- | ---- | --- |
+
+      | Border radius | radii $1 | 8px  | 0.5 |
+
+      | Padding       | space $5 | 32px | 2   |
+
+      | Margin-bottom | space $5 | 32px | 2   |
+
+
+      ![Badges size and margins](/admin/images/02-badges-paddings.png "Badges size and margins")
+
+
+      | Property - variant            | Token    | px   | rem  |
+
+      | ----------------------------- | -------- | ---- | ---- |
+
+      | Height - sm                   | size $2  | 24px | \-   |
+
+      | Height - md                   | size $3  | 32px | 2    |
+
+      | Height - lg                   | size $4  | 40px | 2.5  |
+
+      | Padding - lg                  | space $2 | 8px  | 0.5  |
+
+      | Padding - sm & md             | space $1 | 4px  | 0.25 |
+
+      | Icon margin-right, sm, md, lg | space $1 | 4px  | 0.25 |
+
+
+      ## Typography
+
+
+      ![Badges typography](/admin/images/03-badges-typography.png "Badges typography")
+
+
+      | Element  | Family | Weight | Size | Rem      | px  |
+
+      | -------- | ------ | ------ | ---- | -------- | --- |
+
+      | badge sm | $body  | 400    | $sm  | 0.875rem | 14  |
+
+      | badge md | $body  | 400    | $md  | 1rem     | 16  |
+
+      | badge md | $body  | 400    | $md  | 1rem     | 16  |
+
+
+      ## Color
+
+
+      ![](/admin/images/04-badges-color.png)
+
+
+      | Property & Element - State              | Token     | Hex |
+
+      | --------------------------------------- | --------- | --- |
+
+      | Icon & Text - Info              | $blue800  | \#  |
+
+      | Icon & Text - Neutral           | $grey800  | \#  |
+
+      | Icon & Text - Success           | $successMid  | \#  |
+
+      | Icon & Text - Danger            | $dangerMid  | \#  |
+
+      | Icon & Text - Warning           | $warningMid  | \#  |
+
+      | Icon & Text - Purple            | $brandPurpleAccent | \#  |
+
+      | Bg - Info                       | $blue100  | \#  |
+
+      | Bg - Neutral                    | $grey200    | \#  |
+
+      | Bg - Success                    | $successLight  | \#  |
+
+      | Bg - Danger                     | $dangerLight | \#  |
+
+      | Bg - Warning                    | $warningLight  | \#  |
+
+      | Bg - Purple                     | $brandPurpleLight (new)| \#  |
 parent: HGItoEG3XVs9DpOLugTot
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
