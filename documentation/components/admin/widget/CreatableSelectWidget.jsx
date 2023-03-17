@@ -119,7 +119,6 @@ export default class CreatableSelectControlComponent extends React.Component {
       const options = selectedOption.map(optionToString);
       onChange(fromJS(options));
     } else {
-      console.log({ selectedOption }, optionToString(selectedOption));
       onChange(optionToString(selectedOption));
     }
   };
@@ -158,12 +157,14 @@ export default class CreatableSelectControlComponent extends React.Component {
     const isPersistOptions = field.get("persist_options", false);
     if (isPersistOptions) {
       const fieldName = field.get("name");
-      appendToWindowVariable(fieldName, [
-        ...defaultOptions,
-        ...(Array.isArray(selectedOptions)
-          ? selectedOptions
-          : [selectedOptions]),
-      ]);
+      if (selectedOptions) {
+        appendToWindowVariable(fieldName, [
+          ...defaultOptions,
+          ...(Array.isArray(selectedOptions)
+            ? selectedOptions
+            : [selectedOptions]),
+        ]);
+      }
       options = getWindowVariable(fieldName);
     }
 
