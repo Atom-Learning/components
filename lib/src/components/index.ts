@@ -72,3 +72,7 @@ export { ToggleGroup } from './toggle-group'
 export { Tooltip } from './tooltip'
 export { TopBar } from './top-bar'
 export { Video } from './video'
+
+export { Tile, TileGroup } from './tile'
+export { TileInteractive } from './tile-interactive'
+export { TileToggleGroup } from './tile-toggle-group'

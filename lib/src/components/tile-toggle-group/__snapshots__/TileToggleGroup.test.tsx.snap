@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TileToggleGroup component renders 1`] = `
+@media  {
+  :root,
+  .t-cyussq {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 76%);
+    --colors-grey600: hsl(0, 0%, 71%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(212, 100%, 88%);
+    --colors-blue500: hsl(212, 87%, 84%);
+    --colors-blue600: hsl(216, 96%, 79%);
+    --colors-blue700: hsl(214, 92%, 63%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 78%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(228, 63%, 20%);
+    --colors-purple100: hsl(281, 100%, 98%);
+    --colors-purple200: hsl(270, 100%, 95%);
+    --colors-purple300: hsl(270, 100%, 92%);
+    --colors-purple400: hsl(270, 100%, 89%);
+    --colors-purple500: hsl(270, 87%, 84%);
+    --colors-purple600: hsl(264, 96%, 79%);
+    --colors-purple700: hsl(275, 100%, 51%);
+    --colors-purple800: hsl(273, 94%, 48%);
+    --colors-purple900: hsl(268, 78%, 42%);
+    --colors-purple1000: hsl(266, 82%, 32%);
+    --colors-purple1100: hsl(265, 63%, 23%);
+    --colors-purple1200: hsl(265, 63%, 20%);
+    --colors-tonal50: hsl(0, 0%, 96%);
+    --colors-tonal100: hsl(0, 0%, 92%);
+    --colors-tonal200: hsl(0, 0%, 71%);
+    --colors-tonal300: hsl(0, 0%, 46%);
+    --colors-tonal400: hsl(0, 0%, 33%);
+    --colors-tonal500: hsl(0, 0%, 20%);
+    --colors-tonal600: hsl(0, 0%, 12%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-primaryLight: hsl(215, 100%, 98%);
+    --colors-primary: hsl(217, 92%, 51%);
+    --colors-primaryMid: hsl(223, 78%, 44%);
+    --colors-primaryDark: hsl(228, 82%, 35%);
+    --colors-secondary: hsl(204, 100%, 72%);
+    --colors-brandRed: hsl(0, 91%, 64%);
+    --colors-brandRedAccent: hsl(14, 100%, 71%);
+    --colors-brandGreen: hsl(128, 47%, 53%);
+    --colors-brandGreenAccent: hsl(168, 100%, 20%);
+    --colors-brandPurple: hsl(256, 65%, 62%);
+    --colors-brandPurpleAccent: hsl(256, 93%, 35%);
+    --colors-brandYellow: hsl(41, 100%, 55%);
+    --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(0, 91%, 64%);
+    --colors-subjectMaths: hsl(217, 92%, 51%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(128, 47%, 53%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(33, 100%, 50%);
+    --colors-subjectExamSkills: hsl(256, 93%, 35%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'Space Grotesk', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+  }
+
+  .interactive-loContrast {
+    --colors-interactiveForeground: var(--colors-foreground);
+    --colors-interactive1: var(--colors-accent1);
+    --colors-interactive2: var(--colors-accent2);
+    --colors-interactive3: var(--colors-accent3);
+  }
+
+  .accent-blue2 {
+    --colors-accent1: var(--colors-blue100);
+    --colors-accent2: var(--colors-blue200);
+    --colors-accent3: var(--colors-blue300);
+    --colors-accent4: var(--colors-blue400);
+    --colors-accent5: var(--colors-blue500);
+    --colors-accent6: var(--colors-blue600);
+    --colors-accent7: var(--colors-blue700);
+    --colors-accent8: var(--colors-blue800);
+    --colors-accent9: var(--colors-blue900);
+    --colors-accent10: var(--colors-blue1000);
+    --colors-accent11: var(--colors-blue1100);
+  }
+
+  .base-grey1 {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-grey100);
+    --colors-base3: var(--colors-grey200);
+    --colors-base4: var(--colors-grey300);
+    --colors-base5: var(--colors-grey400);
+    --colors-base6: var(--colors-grey500);
+    --colors-base7: var(--colors-grey600);
+    --colors-base8: var(--colors-grey700);
+    --colors-base9: var(--colors-grey800);
+    --colors-base10: var(--colors-grey900);
+    --colors-base11: var(--colors-grey1000);
+  }
+}
+
+@media  {
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-htDHry {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid;
+    background: var(--colors-base1);
+    color: var(--colors-foreground);
+    border-color: transparent;
+  }
+
+  .c-bZTcGT[data-disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-bZTcGT:not([data-disabled]) {
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 250ms ease;
+  }
+
+  .c-bZTcGT:not([data-disabled])::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: var(--shadows-2);
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+    border-radius: inherit;
+  }
+
+  .c-bZTcGT:not([data-disabled]):hover {
+    transform: translateY(calc(var(--space-0)*-1));
+  }
+
+  .c-bZTcGT:not([data-disabled]):hover::after {
+    opacity: 1;
+  }
+
+  .c-bZTcGT:not([data-disabled]):active {
+    background: var(--colors-base2);
+  }
+
+  .c-bZTcGT:not([data-disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-SVNbK:not([disabled])[data-state="on"]:hover {
+    background: var(--colors-interactive2);
+  }
+
+  .c-SVNbK:not([disabled])[data-state="on"]:active {
+    background: var(--colors-interactive3);
+  }
+
+  .c-SVNbK[data-state="on"] {
+    background: var(--colors-interactive1);
+    border-color: var(--colors-accent8);
+  }
+
+  .c-SVNbK[data-state="on"]::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    box-shadow: inset var(--colors-accent8) 0px 0px 0px 2px;
+    border-radius: inherit;
+    z-index: 1;
+  }
+}
+
+@media  {
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+}
+
+<div>
+  <div
+    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+    data-orientation="horizontal"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-pressed="true"
+      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="on"
+      tabindex="-1"
+      type="button"
+    >
+      A
+    </button>
+    <button
+      aria-pressed="true"
+      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      data-disabled=""
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="on"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      B
+    </button>
+    <button
+      aria-pressed="false"
+      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="off"
+      tabindex="-1"
+      type="button"
+    >
+      C
+    </button>
+    <button
+      aria-pressed="false"
+      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      data-disabled=""
+      data-orientation="horizontal"
+      data-radix-collection-item=""
+      data-state="off"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      D
+    </button>
+  </div>
+</div>
+`;
