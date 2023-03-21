@@ -49,8 +49,8 @@ export const components = {
       as="blockquote"
       css={{
         pl: '$5',
-        color: '$base7',
-        borderLeft: '2px solid $colors$base3'
+        color: '$base8',
+        borderLeft: '2px solid $colors$base4'
       }}
     >
       {props.children}

@@ -1,106 +1,74 @@
-import { createStitches } from '@stitches/react'
-
-import { media, utils } from '../../stitches'
-import blue from './blue.json'
-import { generateAlphaColors } from './generateAlphaColors'
-import slate from './slate.json'
+import { createTheme } from '~/stitches'
 
 export const colorSchemes = {}
 
-const generateColors = (tokenPrefix, colorName) => {
+const generateColors = ({ prefix, colorName, color0 = '' }) => {
   const colors = {}
-  for (let i = 1; i <= 10; i++) {
-    colors[`${tokenPrefix}${i}`] = `$${colorName}${i}`
-    colors[`${tokenPrefix}A${i}`] = `$${colorName}A${i}`
+  let i = 1
+  if (color0) {
+    colors[`${prefix}${i}`] = color0
+    i++
+  }
+  let k = 1
+  for (i; i <= 11; i++) {
+    colors[`${prefix}${i}`] = `$${colorName}${k * 100}`
+    k++
   }
   return colors
 }
 
-export const { styled, createTheme } = createStitches({
-  theme: {
-    colors: {
-      background: 'white',
-      foreground: slate.slate9,
-      foreground6plus: 'white',
-      ...blue,
-      ...generateAlphaColors('blue', blue),
-      ...slate,
-      ...generateAlphaColors('slate', slate)
-    }
-  },
-  utils,
-  media
+colorSchemes['interactive-loContrast'] = createTheme('interactive-loContrast', {
+  colors: {
+    interactiveForeground: '$foreground',
+    interactive1: '$accent1',
+    interactive2: '$accent2',
+    interactive3: '$accent3'
+  }
 })
 
-colorSchemes['interactive-loContrast1'] = createTheme(
-  'interactive-loContrast1',
-  {
-    colors: {
-      interactiveForeground: '$foreground',
-      interactive1: 'white',
-      interactive2: '$accent1',
-      interactive3: '$accent2'
-    }
+colorSchemes['interactive-hiContrast'] = createTheme('interactive-hiContrast', {
+  colors: {
+    interactiveForeground: '$foreground7plus',
+    interactive1: '$accent9',
+    interactive2: '$accent10',
+    interactive3: '$accent11'
   }
-)
-
-colorSchemes['interactive-loContrast2'] = createTheme(
-  'interactive-loContrast2',
-  {
-    colors: {
-      interactiveForeground: '$foreground',
-      interactive1: '$accent1',
-      interactive2: '$accent2',
-      interactive3: '$accent3'
-    }
-  }
-)
-
-colorSchemes['interactive-hiContrast1'] = createTheme(
-  'interactive-hiContrast1',
-  {
-    colors: {
-      interactiveForeground: '$foreground6plus',
-      interactive1: '$accent7',
-      interactive2: '$accent8',
-      interactive3: '$accent9'
-    }
-  }
-)
-
-colorSchemes['interactive-hiContrast2'] = createTheme(
-  'interactive-hiContrast2',
-  {
-    colors: {
-      interactiveForeground: '$foreground6plus',
-      interactive1: '$accent8',
-      interactive2: '$accent9',
-      interactive3: '$accent10'
-    }
-  }
-)
+})
 
 export const bases = {
-  slate: 'slate'
+  grey1: { colorName: 'grey', color0: '#FFFFFF' },
+  grey2: { colorName: 'grey' },
+  blue1: { colorName: 'blue', color0: '#FFFFFF' },
+  blue2: { colorName: 'blue' },
+  purple1: { colorName: 'purple', color0: '#FFFFFF' },
+  purple2: { colorName: 'purple' }
 }
 const generateBase = () => {
-  Object.entries(bases).forEach(([themeName, colorName]) => {
-    const baseThemeName = `base-${themeName}`
-    colorSchemes[baseThemeName] = createTheme(baseThemeName, {
-      colors: generateColors('base', colorName)
+  Object.entries(bases).forEach(([name, { colorName, color0 = '' }]) => {
+    const themeName = `base-${name}`
+    colorSchemes[themeName] = createTheme(themeName, {
+      colors: {
+        foreground: '$grey1000',
+        foreground7plus: '#FFFFFF',
+        ...generateColors({ prefix: 'base', colorName, color0 })
+      }
     })
   })
 }
 
 export const accents = {
-  slate: 'slate',
-  blue: 'blue'
+  grey1: { colorName: 'grey', color0: '#FFFFFF' },
+  grey2: { colorName: 'grey' },
+  blue1: { colorName: 'blue', color0: '#FFFFFF' },
+  blue2: { colorName: 'blue' },
+  purple1: { colorName: 'purple', color0: '#FFFFFF' },
+  purple2: { colorName: 'purple' }
 }
 const generateAccent = () => {
-  Object.entries(accents).forEach(([themeName, colorName]) => {
-    const accentThemeName = `accent-${themeName}`
-    colorSchemes[accentThemeName] = createTheme(accentThemeName, {
-      colors: generateColors('accent', colorName)
+  Object.entries(accents).forEach(([name, { colorName, color0 = '' }]) => {
+    const themeName = `accent-${name}`
+    colorSchemes[themeName] = createTheme(themeName, {
+      colors: generateColors({ prefix: 'accent', colorName, color0 })
     })
   })
 }

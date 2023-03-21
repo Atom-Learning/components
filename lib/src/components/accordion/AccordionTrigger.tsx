@@ -2,7 +2,7 @@ import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
 import React from 'react'
 
-import { ColorScheme } from '~/experiments/color-scheme'
+import { TcolorScheme, ColorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
 
@@ -50,7 +50,7 @@ const StyledTrigger = styled(Trigger, {
 })
 
 type AccordionTriggerProps = React.ComponentProps<typeof StyledTrigger> & {
-  colorScheme?: typeof ColorScheme
+  colorScheme?: TcolorScheme
 }
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
@@ -58,12 +58,7 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({
   colorScheme = {},
   ...remainingProps
 }) => (
-  <ColorScheme
-    asChild
-    accent="slate"
-    interactive="loContrast1"
-    {...colorScheme}
-  >
+  <ColorScheme asChild accent="grey1" interactive="loContrast" {...colorScheme}>
     <StyledTrigger {...remainingProps}>
       {children}
       <RotatingIcon is={ChevronDown} />
