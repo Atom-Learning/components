@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      The `Table` component displays a collection of data grouped into rows. Its
-      structure mirrors that of a regular HTML table, with the
+      The `Table` component displays a collection of data grouped into rows.
+      Its structure mirrors that of a regular HTML table, with the
       smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table
       Row` components corresponding to
       the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags,

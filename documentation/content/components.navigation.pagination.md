@@ -337,4 +337,8 @@ tabs:
       <DosAndDonts items={[{"image":"/admin/images/pagination-do-01.png","type":"do","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"image":"/admin/images/pagination-do-01.png","type":"avoid","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"type":"dont","image":"/admin/images/pagination-do-01.png","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."}]} />
 parent: 95SvEwV7BznSChttFanpW
 uuid: d9e3b0af-6a46-4168-96db-c98bac9ee6d1
+nestedSlug:
+  - components
+  - navigation
+  - pagination
 ---

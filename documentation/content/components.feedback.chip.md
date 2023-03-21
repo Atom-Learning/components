@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      A component in the shape of a pill providing visual cues to prompt users
-      to enter information or filter content.
+      A component in the shape of a pill providing visual cues to prompt
+      users to enter information or filter content.
 
       `Chip` itself is a primitive. It has no functional logic in itself, however, it is used to provide common styles for all the `Chip`-based components.
 

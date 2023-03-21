@@ -60,12 +60,12 @@ tabs:
       ## Color Scheme
 
 
-      You can pass in a `colorScheme` object to the TriggerList to customise the colours of the component. Defaults to `{ base: "slate", accent: "blue", interactive: "hiContrast1"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
+      You can pass in a `colorScheme` object to the TriggerList to customise the colours of the component. Defaults to `{ base: "grey1", accent: "blue1", interactive: "hiContrast"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
 
 
       <CodeBlock live={true} preview={true} code={`<Tabs defaultValue="tab2">
         <Tabs.TriggerList
-          colorScheme={{ base: 'slate', accent: 'slate', interactive: 'hiContrast2' }}
+          colorScheme={{ base: 'grey1', accent: 'grey1', interactive: 'hiContrast' }}
         >
           <Tabs.Trigger value="tab1">Tab 1</Tabs.Trigger>
           <Tabs.Trigger value="tab2">Tab 2</Tabs.Trigger>

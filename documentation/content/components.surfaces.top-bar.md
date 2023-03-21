@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      The top bar provides content and actions related to the current screen. It
-      is used for branding, screen titles, navigation, and actions.
+      The top bar provides content and actions related to the current screen.
+      It is used for branding, screen titles, navigation, and actions.
 
 
       `TopBar` exports components that combine to form the elements that you would expect to commonly see in a TopBar. However, the `TopBar` is not limited to these components, as any components may sit within the `TopBar` to create a flexible and custom UI.
@@ -315,7 +315,7 @@ tabs:
       #### Breakpoints
 
 
-      The topbar will adapt it’s content according to the different breakpoints. Consider the tools you need for your app and what’s the best way to display them in the different breakpoints. Here’s an example: Notice how, in this case, the navigation elements on the tabs in bigger breakpoints become hidden under the hamburguer menu in smaller devices. Also the search bar becomes an action button on small breakpoints.
+      The topbar will adapt it’s content according to the different breakpoints. Consider the tools you need for your app and what’s the best way to display them in the different breakpoints. Here’s an example:Notice how, in this case, the navigation elements on the tabs in bigger breakpoints become hidden under the hamburguer menu in smaller devices. Also the search bar becomes an action button on small breakpoints.
 
 
       ![Navigation topbar breakpoints](/admin/images/03-navigation-topbar-breakpoints.png "Navigation topbar breakpoints")

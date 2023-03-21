@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      An accessible interactive wrapper around Icon. `ActionIcon` should be used
-      alongside `Icon` when you require a user interaction.
+      An accessible interactive wrapper around Icon. `ActionIcon` should be
+      used alongside `Icon` when you require a user interaction.
 
 
       <CodeBlock live={true} preview={true} code={`<Stack>
@@ -158,7 +158,7 @@ tabs:
       #### By shape
 
 
-      Action icons can be rounded or non-rounded, depending on the styling of the other components they’re used around.   
+      Action icons can be rounded or non-rounded, depending on the styling of the other components they’re used around. 
 
 
       The non-rounded variant can be used when the action icon is positioned next to a normal button or other components, while the rounded one can be used when the icon is on its own without other rectangular components nearby.
