@@ -61,7 +61,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = React.memo(({
         <StyledLiveError />
       </>)}
       <StyledCode>
-        <StyledLiveEditor />
+        <StyledLiveEditor tabMode="focus" />
       </StyledCode>
     </LiveProvider>
   )
