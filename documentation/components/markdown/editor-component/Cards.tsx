@@ -24,7 +24,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({ image, heading, description, lin
       target: link.isExternal ? '_blank' : '_self',
       rel: link.isExternal ? 'noopener noreferrer nofollow' : false
     }
-    : { as: 'div' }
+    : {}
 
   return (
     <Box {...elementSpecificProps} css={{ color: 'inherit', textDecoration: 'none', display: 'block' }}>
@@ -35,7 +35,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({ image, heading, description, lin
         justifyContent: 'center',
         mb: '$2',
         p: '$2',
-        aspectRatio: "16/9"
+        aspectRatio: '16/9'
       }}>
         {image && <Image src={image} alt='' css={{ maxHeight: '100%' }} />}
       </Box>
@@ -85,6 +85,7 @@ export const Cards: React.FC<CardsProps> = ({ showSearch, showTagsFilter, items 
 
     // Remove "All" from the tags array if other values have been selected
     if (newSelectedTags.length > 1) return setSelectedTags(newSelectedTags.filter((tag) => tag !== 'all'))
+
     setSelectedTags(newSelectedTags)
   }, [])
 
