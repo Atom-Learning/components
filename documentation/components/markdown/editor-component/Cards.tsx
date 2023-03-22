@@ -57,7 +57,7 @@ type CardsProps = {
 }
 
 const checkIfMatchingTags = (itemTags, selectedTags) => {
-  const isAllValueSelected = selectedTags?.includes('')
+  const isAllValueSelected = selectedTags?.includes('all')
   if (isAllValueSelected) return true;
   if (typeof itemTags === 'string') { return selectedTags?.includes(itemTags) }
   if (Array.isArray(itemTags)) { return intersection(itemTags, selectedTags).length }
@@ -74,17 +74,17 @@ export const Cards: React.FC<CardsProps> = ({ showSearch, showTagsFilter, items 
   const handleSetSearchValue = React.useCallback(debounce(500, (value) => setSearchValue(value.toLowerCase())), [])
 
 
-  const [selectedTags, setSelectedTags] = React.useState([''])
+  const [selectedTags, setSelectedTags] = React.useState(['all'])
   const handleSelectedTagsValueChange = React.useCallback((newSelectedTags) => {
     // "All" unselects all other tags
-    const hasJustToggledAll = newSelectedTags[newSelectedTags.length - 1] === ''
-    if (hasJustToggledAll) return setSelectedTags([''])
+    const hasJustToggledAll = newSelectedTags[newSelectedTags.length - 1] === 'all'
+    if (hasJustToggledAll) return setSelectedTags(['all'])
 
     // Always keep "All" selected as a fallback if no value selected
-    if (newSelectedTags.length === 0) return setSelectedTags([''])
+    if (newSelectedTags.length === 0) return setSelectedTags(['all'])
 
     // Remove "All" from the tags array if other values have been selected
-    if (newSelectedTags.length > 1) return setSelectedTags(newSelectedTags.filter(Boolean))
+    if (newSelectedTags.length > 1) return setSelectedTags(newSelectedTags.filter((tag) => tag !== 'all'))
     setSelectedTags(newSelectedTags)
   }, [])
 
@@ -126,7 +126,7 @@ export const Cards: React.FC<CardsProps> = ({ showSearch, showTagsFilter, items 
             value={selectedTags}
             onValueChange={handleSelectedTagsValueChange}
           >
-            <ChipToggleGroup.Item value="">All</ChipToggleGroup.Item>
+            <ChipToggleGroup.Item value="all">All</ChipToggleGroup.Item>
             {tags.map((tag) => <ChipToggleGroup.Item key={tag} value={tag}>{tag}</ChipToggleGroup.Item>)}
           </ChipToggleGroup>
         </Box>
