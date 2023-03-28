@@ -101,14 +101,14 @@ export const ComponentProps: React.FC<{ component }> = ({ component }) => {
       <Text as="figcaption" size='xs' css={{ mb: '$2', fontWeight: 'bold' }}>{component}</Text>
       <Box css={{ width: '100%', overflow: 'auto' }}>
         <Table css={{ width: '100%' }}>
-          <Table.Header>
+          <Table.Header theme="light">
             <Table.Row>
               {columns.map((column) => (
                 <Table.HeaderCell key={column}>{column}</Table.HeaderCell>
               ))}
             </Table.Row>
           </Table.Header>
-          <Table.Body>
+          <Table.Body striped={false}>
             {Object.entries(componentProps.props).map(([key, { name, type, defaultValue, required }]) => {
               if (type.name === 'never') return null
 
