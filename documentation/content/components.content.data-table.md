@@ -181,7 +181,7 @@ tabs:
 
       A loading state using `<DataTable.Loading>` is automatically included in `DataTable` which is visible while the `getAsyncData` promise is pending.
 
-      You can use `DataTable.Error` to display your own error component when the `getAsyncData` function promise rejects. Notice `DataTable.Error` doesn't render anything on its own, but whatever is passed as childern.
+      You can use `DataTable.Error` to display your own error component when the `getAsyncData` function promise rejects. Notice: `DataTable.Error` doesn't render anything on its own, but whatever is passed as children.
 
 
       <CodeBlock live={false} preview={false} code={`<DataTable
@@ -217,7 +217,7 @@ tabs:
       </DataTable>`} language={"tsx"} />
 
 
-      `DataTable.Error`provides a`retry`function to the children which allows you to recall the`getAsyncData`function. The`retry`function can be called with all the paginated parameters as an optional object. If no parameters are provided,`retry`will be called with the last paginated options.
+      `DataTable.Error`provides a`retry`function to the children, which allows you to recall the`getAsyncData`function. The`retry`function can be called with all the paginated parameters as an optional object. If no parameters are provided,`retry`will be called with the last paginated options.
 
 
       <CodeBlock live={false} preview={false} code={` <DataTable.Error>
@@ -245,8 +245,20 @@ tabs:
       ### Search
 
 
-      `DataTable.Search` renders a search input that filters the whole table by matching the input against values from any table column.
+      `DataTable.GlobalFilter` renders a search input that filters the whole table by matching the input against values from any table column.
 
+
+      ##### Note:
+
+
+      If a column is rendering a value that isn't directly accessible on the data (i.e.: nested in an object `{name: {first: 'a'}}` the value needs to be converted to a string in the accessor. For example:
+
+
+      <CodeBlock live={false} preview={false} code={` columnHelper.accessor((row) => String(row.first), {
+              header: 'first',
+              id: 'firstname',
+              cell: (row) => (row.getValue())
+            }),`} language={"undefined"} />
 
       ### Sorting
 
@@ -277,13 +289,13 @@ tabs:
 
       The `DataTable.DragAndDropTable` can be rendered in place of `DataTable.Table` to allow users to reorder table rows via drag and drop. It takes an optional `onDragAndDrop` prop which is a function that fires when rows have been re-ordered via drag-and-drop. Use this to sync those changes with external data sources.
 
-      Note that column sorting conflicts with drag and drop behaviour. In any context where you allow drag and drop reordering, you probably want to disable column sorting (see User Sorting above). Similarly, you should probably disable pagination because users won't be able to drag rows across page boundaries.
+      Note that column sorting conflicts with drag and drop behaviour. In any context where you allow drag-and-drop reordering, you probably want to disable column sorting (see User Sorting above). Similarly, you should probably disable pagination because users won't be able to drag rows across page boundaries.
 
 
       #### Row IDs
 
 
-      Drag-and-drop functionality relies on each table row having a unique ID. `DataTable.DragAndDropContainer` will throw an error if your don't provide unique IDs for each row in the `data` provided to `DataTable`, so you should consider wrapping your table in an `ErrorBoundary` to reduce the impact on your user if there is a problem with your data. By default, `DataTable.DragAndDropContainer` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data so that you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
+      Drag-and-drop functionality relies on each table row having a unique ID. `DataTable.DragAndDropContainer` will throw an error if you don't provide unique IDs for each row in the `data` provided to `DataTable`, so you should consider wrapping your table in an `ErrorBoundary` to reduce the impact on your user if there is a problem with your data. By default, `DataTable.DragAndDropContainer` will look for this id in an `id` property on each object in `data`. You can use the `idColumn` prop to provide the name of a different property, e.g. `userId`, that already exists on your data, so you don't have to generate new IDs just for the table. For example, you could provide data like this with no additional configuration:
 
 
       <CodeBlock live={false} preview={false} code={`const data = [
