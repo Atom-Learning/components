@@ -23,11 +23,9 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({ image, type, descrip
         borderColor: typeBorderColor,
         mb: '$2',
         p: '$2',
-        // Aspect ratio numbers directly copied from Figma component with an additional 4px on the height to account for the border. This is resulting to a 16/9 for the image.
-        // Box-sizing can't be used as anything other than `border-box` as we need it to include paddings.
-        aspectRatio: "332/192",
+        aspectRatio: "16/9",
       }}>
-        <Image src={image} alt="" />
+        {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
       </Box>
       <Heading as="h3" size="xs" css={{ mb: '$3' }}>{typeText}</Heading>
       <Text>{description}</Text>

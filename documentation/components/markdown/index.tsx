@@ -15,6 +15,7 @@ import { FontSizeTokenList } from './editor-component/FontSizeTokenList'
 import { RadiusTokenList } from './editor-component/RadiusTokenList'
 import { ShadowTokenList } from './editor-component/ShadowTokenList'
 import { DosAndDonts } from './editor-component/DosAndDonts'
+import { Cards } from './editor-component/Cards'
 
 export const components = {
   h2: (props) => (
@@ -76,5 +77,6 @@ export const components = {
   FontSizeTokenList,
   RadiusTokenList,
   ShadowTokenList,
-  DosAndDonts
+  DosAndDonts,
+  Cards
 }
