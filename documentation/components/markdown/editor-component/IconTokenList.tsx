@@ -74,8 +74,7 @@ type IconTokenListProps = {
 
 export const IconTokenList: React.FC<IconTokenListProps> = ({ icons: specificIconNames, showSearch }) => {
   const [searchValue, setSearchValue] = React.useState('')
-  const handleSetSearchValue = React.useCallback(debounce(500, (value) => setSearchValue(value.toLowerCase())), [])
-
+  const handleSetSearchValue = React.useMemo(() => debounce(500, (value) => setSearchValue(value.toLowerCase())), [])
 
   return (
     <>
