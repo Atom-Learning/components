@@ -11,7 +11,9 @@ import { FontSizeTokenListEditorComponent } from "~/components/admin/editor-comp
 import { RadiusTokenListEditorComponent } from "~/components/admin/editor-component/RadiusTokenListEditorComponent";
 import { ShadowTokenListEditorComponent } from "~/components/admin/editor-component/ShadowTokenListEditorComponent";
 import { DosAndDontsEditorComponent } from "~/components/admin/editor-component/DosAndDontsEditorComponent";
+import { CardsEditorComponent } from "~/components/admin/editor-component/CardsEditorComponent";
 import { UuidWidget } from "~/components/admin/widget/UuidWidget";
+import { CreatableSelectWidget } from "~/components/admin/widget/CreatableSelectWidget";
 
 const Admin = () => {
   React.useEffect(() => {
@@ -20,6 +22,8 @@ const Admin = () => {
       CMS.init();
 
       CMS.registerWidget([UuidWidget()]);
+
+      CMS.registerWidget([CreatableSelectWidget()]);
 
       CMS.registerEditorComponent(ComponentPropsEditorComponent);
 
@@ -42,6 +46,8 @@ const Admin = () => {
       CMS.registerEditorComponent(ShadowTokenListEditorComponent);
 
       CMS.registerEditorComponent(DosAndDontsEditorComponent);
+
+      CMS.registerEditorComponent(CardsEditorComponent);
     })();
   }, []);
 
