@@ -12,6 +12,7 @@ import { Button } from '../button'
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
 import { DataTable } from '.'
+import { EmptyState } from '../empty-state'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -134,6 +135,24 @@ describe('DataTable component', () => {
 })
 
 describe('DataTable.Pagination component', () => {
+  it("doesn't render if table is empty", () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={[]}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
+          <DataTable.Table sortable />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+
+    const nextPageButton = screen.queryByLabelText('Next page')
+    expect(nextPageButton).not.toBeInTheDocument()
+  })
+
   it('Displays the correct page number', async () => {
     render(
       <Wrapper>
@@ -221,7 +240,21 @@ describe('DataTable.Pagination component', () => {
   })
 })
 
-describe('DataTable Search component', () => {
+describe('DataTable GlobalFilter component', () => {
+  it("doesn't render if data is empty", () => {
+    render(
+      <Wrapper>
+        <DataTable columns={columns} data={[]}>
+          <DataTable.GlobalFilter label="Search" />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
+    )
+
+    const nextPageButton = screen.queryByLabelText('Next page')
+    expect(nextPageButton).not.toBeInTheDocument()
+  })
+
   it('Filters table based on any column', async () => {
     render(
       <Wrapper>
@@ -620,6 +653,26 @@ describe('DataTable sticky columns', () => {
       <Wrapper>
         <DataTable columns={columns} data={data}>
           <DataTable.Table numberOfStickyColumns={1} />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(container).toMatchSnapshot()
+  })
+})
+
+describe('DataTable EmptyState', () => {
+  it('renders custom empty state', () => {
+    const { container } = render(
+      <Wrapper>
+        <DataTable columns={columns} data={[]}>
+          <DataTable.GlobalFilter label="User search" css={{ mb: '$4' }} />
+          <DataTable.Table sortable css={{ mb: '$4' }} />
+          <DataTable.EmptyState>
+            <EmptyState.Title>No data available</EmptyState.Title>
+            <EmptyState.Body>Something is missing</EmptyState.Body>
+            <Button>Click here</Button>
+          </DataTable.EmptyState>
+          <DataTable.Pagination />
         </DataTable>
       </Wrapper>
     )

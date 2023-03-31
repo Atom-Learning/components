@@ -37,6 +37,8 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
 
   const { pagination: paginationState } = getState()
 
+  if (getTotalRows() === 0) return null
+
   const recordsCountFrom =
     paginationState.pageIndex * paginationState.pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1

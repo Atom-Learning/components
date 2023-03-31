@@ -16,8 +16,11 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   hideLabel = false,
   ...props
 }) => {
-  const { setGlobalFilter, getState, resetPagination } = useDataTable()
+  const { setGlobalFilter, getState, resetPagination, getTotalRows } =
+    useDataTable()
   const { globalFilter } = getState()
+
+  if (getTotalRows() === 0) return null
 
   const handleChange = debounce(250, (event) => {
     const {
