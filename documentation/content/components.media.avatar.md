@@ -16,7 +16,7 @@ tabs:
         <Avatar name="Alice Smith">
           <Avatar.Image
             alt="Alice Smith's avatar"
-            src="https://thispersondoesnotexist.com/image"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=100&q=80"
           />
         </Avatar>
          <Avatar name="Alice Smith">
@@ -85,7 +85,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`  <Avatar size="xs" name="Alice Smith">
           <Avatar.Image
             alt="Alice Smith's avatar"
-            src="https://thispersondoesnotexist.com/image"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&w=100&q=80"
           />
         </Avatar>`} language={"tsx"} />
 
