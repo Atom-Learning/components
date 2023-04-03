@@ -19,7 +19,6 @@ type PaginationProps = React.ComponentProps<typeof StyledNav>
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
 export const Pagination: React.FC<PaginationProps> = (props) => {
-  // TODO: MS fix `React does not recognize the `pageSize` prop on a DOM element.`
   const {
     applyPagination,
     getState,
@@ -37,7 +36,6 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
   }, [applyPagination])
 
   const { pagination: paginationState } = getState()
-  console.log('pagination', asyncDataState)
 
   if (asyncDataState !== AsyncDataState.PENDING && getTotalRows() === 0)
     return null
