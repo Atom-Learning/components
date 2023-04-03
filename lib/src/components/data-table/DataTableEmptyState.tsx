@@ -11,9 +11,10 @@ export const DataTableEmptyState: React.FC<DataTableEmptyStateProps> = ({
   ...rest
 }) => {
   const { asyncDataState, getTotalRows } = useDataTable()
+  const rowCount = getTotalRows()
+  const isPending = asyncDataState === AsyncDataState.PENDING
 
-  if (asyncDataState !== AsyncDataState.PENDING && getTotalRows() !== 0)
-    return null
+  if ((!isPending && rowCount !== 0) || isPending) return null
 
   return <EmptyState {...rest}>{children}</EmptyState>
 }
