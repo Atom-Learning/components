@@ -1,17 +1,19 @@
 import * as React from 'react'
 
 import { EmptyState } from '../empty-state'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
+
 type DataTableEmptyStateProps = React.ComponentProps<typeof EmptyState>
 
 export const DataTableEmptyState: React.FC<DataTableEmptyStateProps> = ({
-  children
+  children,
+  ...rest
 }) => {
-  const { getTotalRows } = useDataTable()
+  const { asyncDataState, getTotalRows } = useDataTable()
 
-  if (getTotalRows() !== 0) return null
+  if (asyncDataState !== AsyncDataState.PENDING && getTotalRows() !== 0)
+    return null
 
-  return <EmptyState>
-    {children}
-  </EmptyState>
+  return <EmptyState {...rest}>{children}</EmptyState>
 }
