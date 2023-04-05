@@ -251,8 +251,8 @@ describe('DataTable GlobalFilter component', () => {
       </Wrapper>
     )
 
-    const nextPageButton = screen.queryByLabelText('Next page')
-    expect(nextPageButton).not.toBeInTheDocument()
+    const searchField = screen.queryByLabelText('Search')
+    expect(searchField).not.toBeInTheDocument()
   })
 
   it('Filters table based on any column', async () => {
