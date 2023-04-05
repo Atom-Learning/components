@@ -23,8 +23,11 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   numberOfStickyColumns = 0,
   ...props
 }) => {
-  const { asyncDataState } = useDataTable()
+  const { asyncDataState, getTotalRows } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
+  const isEmpty = !isPending && getTotalRows() === 0
+
+  if (isEmpty) return null
 
   return (
     <>
