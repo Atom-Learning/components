@@ -3,6 +3,7 @@ import * as React from 'react'
 import { DataTableBody } from './DataTableBody'
 import { DataTableProvider } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
+import { DataTableEmptyState } from './DataTableEmptyState'
 import { DataTableError } from './DataTableError'
 import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableHead } from './DataTableHead'
@@ -99,6 +100,12 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    */
   Error: typeof DataTableError
+
+  /** Empty state implementation for `DataTable`.
+   *
+   * Extends the EmptyState component
+   */
+  EmptyState: typeof DataTableEmptyState
 }
 
 /** Context provider for DataTable state and logic.
@@ -119,3 +126,4 @@ DataTable.GlobalFilter = DataTableGlobalFilter
 DataTable.Table = DataTableTable
 DataTable.Loading = DataTableLoading
 DataTable.Error = DataTableError
+DataTable.EmptyState = DataTableEmptyState

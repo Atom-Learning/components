@@ -4,6 +4,7 @@ import { debounce } from 'throttle-debounce'
 import { OptionallyVisuallyHiddenContainer } from '../../utilities/optionally-visually-hidden-container'
 import { Label } from '../label'
 import { SearchInput } from '../search-input'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {
@@ -16,8 +17,19 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   hideLabel = false,
   ...props
 }) => {
-  const { setGlobalFilter, getState, resetPagination } = useDataTable()
+  const {
+    setGlobalFilter,
+    getState,
+    resetPagination,
+    getTotalRows,
+    asyncDataState
+  } = useDataTable()
   const { globalFilter } = getState()
+
+  const isPending = asyncDataState === AsyncDataState.PENDING
+  const isEmpty = !isPending && getTotalRows() === 0
+
+  if (isEmpty) return null
 
   const handleChange = debounce(250, (event) => {
     const {
