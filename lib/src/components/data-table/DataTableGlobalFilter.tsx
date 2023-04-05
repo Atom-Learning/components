@@ -26,8 +26,10 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   } = useDataTable()
   const { globalFilter } = getState()
 
-  if (asyncDataState !== AsyncDataState.PENDING && getTotalRows() === 0)
-    return null
+  const isPending = asyncDataState === AsyncDataState.PENDING
+  const isEmpty = !isPending && getTotalRows() === 0
+
+  if (isEmpty) return null
 
   const handleChange = debounce(250, (event) => {
     const {
