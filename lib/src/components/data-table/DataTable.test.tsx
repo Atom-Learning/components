@@ -9,10 +9,10 @@ import userEvent from '@testing-library/user-event'
 import * as React from 'react'
 
 import { Button } from '../button'
+import { EmptyState } from '../empty-state'
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
 import { DataTable } from '.'
-import { EmptyState } from '../empty-state'
 
 const columnHelper = createColumnHelper<{
   id: number
