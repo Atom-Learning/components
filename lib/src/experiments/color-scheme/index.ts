@@ -1,1 +1,2 @@
-export { type TcolorScheme, ColorScheme } from './ColorScheme'
+export { ColorScheme } from './ColorScheme'
+export type { TcolorScheme } from './ColorScheme'

@@ -35,6 +35,11 @@ colorSchemes['interactive-hiContrast'] = createTheme('interactive-hiContrast', {
   }
 })
 
+type TcolorSetup = {
+  colorName: string
+  color0?: string
+}
+
 export const bases = {
   grey1: { colorName: 'grey', color0: '#FFFFFF' },
   grey2: { colorName: 'grey' },
@@ -44,16 +49,18 @@ export const bases = {
   purple2: { colorName: 'purple' }
 }
 const generateBase = () => {
-  Object.entries(bases).forEach(([name, { colorName, color0 = '' }]) => {
-    const themeName = `base-${name}`
-    colorSchemes[themeName] = createTheme(themeName, {
-      colors: {
-        foreground: '$grey1000',
-        foreground7plus: '#FFFFFF',
-        ...generateColors({ prefix: 'base', colorName, color0 })
-      }
-    })
-  })
+  Object.entries(bases).forEach(
+    ([name, { colorName, color0 = '' }]: [string, TcolorSetup]) => {
+      const themeName = `base-${name}`
+      colorSchemes[themeName] = createTheme(themeName, {
+        colors: {
+          foreground: '$grey1000',
+          foreground7plus: '#FFFFFF',
+          ...generateColors({ prefix: 'base', colorName, color0 })
+        }
+      })
+    }
+  )
 }
 
 export const accents = {
@@ -65,12 +72,14 @@ export const accents = {
   purple2: { colorName: 'purple' }
 }
 const generateAccent = () => {
-  Object.entries(accents).forEach(([name, { colorName, color0 = '' }]) => {
-    const themeName = `accent-${name}`
-    colorSchemes[themeName] = createTheme(themeName, {
-      colors: generateColors({ prefix: 'accent', colorName, color0 })
-    })
-  })
+  Object.entries(accents).forEach(
+    ([name, { colorName, color0 = '' }]: [string, TcolorSetup]) => {
+      const themeName = `accent-${name}`
+      colorSchemes[themeName] = createTheme(themeName, {
+        colors: generateColors({ prefix: 'accent', colorName, color0 })
+      })
+    }
+  )
 }
 
 generateBase()
