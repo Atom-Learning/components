@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { List } from '@radix-ui/react-tabs'
 import React from 'react'
 
-import { TcolorScheme, ColorScheme } from '~/experiments/color-scheme'
+import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'

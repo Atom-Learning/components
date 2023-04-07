@@ -2,7 +2,7 @@ import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-accordion'
 import React from 'react'
 
-import { TcolorScheme, ColorScheme } from '~/experiments/color-scheme'
+import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { focusVisibleStyleBlock } from '~/utilities'
 
