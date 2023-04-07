@@ -6,7 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      Combines the Toggle Group radix component with the Chip primitive styling
+      Combines the Toggle Group radix component with the Chip primitive
+      styling
 
 
       Used as a method for filtering a collection of data. Acts like multiple or single selection. Each chip toggles between selected and unselected. When selected, a checkmark appears as the leading icon.

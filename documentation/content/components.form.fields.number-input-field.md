@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `NumberInputField` renders a field composed of an NumberInput, a Label and
-      a InlineMessage. It is the preferred way to render a form field for a
+      `NumberInputField` renders a field composed of an NumberInput, a Label
+      and a InlineMessage. It is the preferred way to render a form field for a
       number input.
 
 

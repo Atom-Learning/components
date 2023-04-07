@@ -90,7 +90,7 @@ export const Header: React.FC = (props) => {
   useOnClickOutside(ref, () => setMenuOpen(false))
 
   return (
-    <ColorScheme interactive="hiContrast1">
+    <ColorScheme interactive="hiContrast">
       <HeaderTrigger onClick={() => setMenuOpen(true)} />
       <StyledHeader ref={ref} open={menuOpen} {...props}>
         <NextLink href="/">

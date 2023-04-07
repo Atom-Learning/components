@@ -1,17 +1,17 @@
 import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 
-import {
-  accents,
-  bases,
-  colorSchemes,
-  styled
-} from './stitches.colorscheme.config'
+import { styled } from '~/stitches'
 
-type TColorSchemeOwnProps = {
+import { accents, bases, colorSchemes } from './stitches.colorscheme.config'
+
+export type TcolorScheme = {
   base?: keyof typeof bases
   accent?: keyof typeof accents
-  interactive?: 'loContrast1' | 'loContrast2' | 'hiContrast1' | 'hiContrast2'
+  interactive?: 'loContrast' | 'hiContrast'
+}
+
+type TColorSchemeOwnProps = TcolorScheme & {
   asChild?: boolean
 }
 
