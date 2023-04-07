@@ -6,6 +6,14 @@ import { focusVisibleStyleBlock } from '~/utilities'
 
 import { Text } from '../text'
 
+const StyledTabsTriggerHoverBackground = styled('div', {
+  position: 'absolute',
+  inset: 0,
+  height: 'calc(100% + 2px)',
+  opacity: 0,
+  bg: '$interactive1'
+})
+
 const StyledTabsTrigger = styled(Trigger, {
   background: 'none',
   border: 'none',
@@ -14,6 +22,7 @@ const StyledTabsTrigger = styled(Trigger, {
   p: '$4',
   userSelect: 'none',
   borderBottom: '2px solid transparent',
+  position: 'relative',
   '&[data-state="active"]': {
     color: '$interactive1',
     fontWeight: 600,
@@ -27,7 +36,9 @@ const StyledTabsTrigger = styled(Trigger, {
   '&:not([data-disabled])': {
     '&:hover, &:focus-visible': {
       color: '$interactive2',
-      bg: '$accentA1'
+      [`& ${StyledTabsTriggerHoverBackground}`]: {
+        opacity: 0.07
+      }
     },
     '&:active': {
       color: '$interactive3'
@@ -47,10 +58,11 @@ export const TabsTrigger: React.FC<TabsTriggerProps> = ({
   children,
   ...rest
 }) => (
-  <StyledTabsTrigger asChild {...rest}>
-    <Text size="sm" as="button">
+  <StyledTabsTrigger {...rest}>
+    <Text size="sm" as="span">
       {children}
     </Text>
+    <StyledTabsTriggerHoverBackground />
   </StyledTabsTrigger>
 )
 

@@ -2,7 +2,7 @@ import { ChevronLeft, ChevronRight } from '@atom-learning/icons'
 import { List } from '@radix-ui/react-tabs'
 import React from 'react'
 
-import { ColorScheme } from '~/experiments/color-scheme'
+import { TcolorScheme, ColorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { useScrollPosition } from '~/utilities/hooks/useScrollPosition'
@@ -13,7 +13,7 @@ import { Icon } from '../icon'
 
 const StyledContainer = styled(ColorScheme, {
   position: 'relative',
-  borderBottom: '1px solid $base3',
+  borderBottom: '1px solid $base4',
   width: '100%'
 })
 
@@ -32,7 +32,7 @@ const StyledChevronActionIcon = styled(ActionIcon, {
   top: '50%',
   transform: 'translateY(-50%)',
   cursor: 'pointer',
-  background: '$background !important',
+  background: '$base1 !important',
   color: '$interactive1 !important',
   borderRadius: 0,
   opacity: 0.9
@@ -42,7 +42,7 @@ const SCROLL_STEP = 0.8 // Used to scroll 80% of clientWidth
 
 export const TabsTriggerList: React.FC<
   React.ComponentProps<typeof StyledTriggerList> & {
-    colorScheme?: typeof ColorScheme
+    colorScheme?: TcolorScheme
   }
 > = ({ children, colorScheme = {}, ...rest }) => {
   const [listRef, setListRefCallback] = useCallbackRefState()
@@ -82,9 +82,9 @@ export const TabsTriggerList: React.FC<
 
   return (
     <StyledContainer
-      base="slate"
-      accent="blue"
-      interactive="hiContrast1"
+      base="grey1"
+      accent="blue1"
+      interactive="hiContrast"
       {...colorScheme}
       {...rest}
     >

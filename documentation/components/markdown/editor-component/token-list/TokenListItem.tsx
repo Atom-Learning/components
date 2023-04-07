@@ -5,7 +5,7 @@ const TokenListItemToken = ({ token }: { token: string }) => (
   <Text
     size="md"
     css={{
-      color: '$base8',
+      color: '$base10',
       fontWeight: 600
     }}
   >
@@ -16,14 +16,14 @@ const TokenListItemToken = ({ token }: { token: string }) => (
 const TokenListItemValue: React.FC<React.ComponentProps<typeof Text>> = ({ css, ...rest }) => (
   <Text
     size="sm"
-    css={{ color: '$base6', ...css }}
+    css={{ color: '$base8', ...css }}
     {...rest} />
 )
 
 const StyledTokenListItem = styled(Box, {
   py: '$5',
   '&:not(:last-child)': {
-    borderBottom: '1px solid $base3'
+    borderBottom: '1px solid $base4'
   }
 })
 

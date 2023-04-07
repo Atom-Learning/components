@@ -7,9 +7,9 @@ links:
 tabs:
   - title: Code
     content: >-
-      Stepper provides a bullet list of steps and forward/backwards navigation
-      buttons. It exports multiple components that combine to create a stepped
-      progress view.
+      Stepper provides a bullet list of steps and forward/backwards
+      navigation buttons. It exports multiple components that combine to create
+      a stepped progress view.
 
 
       `Stepper.StepBack` represents the backwards navigation element. It can receive either a child text node or a `label` prop as a function that receives `activeStep` as an argument in order to possibly render different labels based on the current step the user is on. It is automatically disabled while the user is viewing the first step.

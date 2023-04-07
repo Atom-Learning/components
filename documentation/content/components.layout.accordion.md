@@ -86,15 +86,15 @@ tabs:
       ## Color Scheme
 
 
-      You can pass in a `colorScheme` object to the Accordion.Trigger to customise the colours of the component. Defaults to `{ accent: "slate", interactive: "loContrast1"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
+      You can pass in a `colorScheme` object to the Accordion.Trigger to customise the colours of the component. Defaults to `{ accent: "grey1", interactive: "loContrast"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
 
 
       <CodeBlock live={true} preview={true} code={`<Accordion type="single" defaultValue="1">
         <Accordion.Item value="1">
           <Accordion.Trigger
             colorScheme={{
-              accent: 'blue',
-              interactive: 'hiContrast2'
+              accent: 'blue1',
+              interactive: 'hiContrast'
             }}
           >
             Accordion Header 1

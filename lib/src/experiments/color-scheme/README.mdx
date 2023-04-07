@@ -9,9 +9,9 @@ This `<ColorScheme />` component allows for `base` (`var(--baseX)`) and `accent`
 
 The props are:
 
-- `base` is used for the base colours of the wrapped component: different tones of background and text. It currently only supports the `slate` (grey) colour but can be extended for different base colors.
-- `accent` is used for highlighted elements and interactive elements of the color scheme. It can be used directly but should be used with an interactive theme for interactive elements - see `<Button />`, `Accordion.Trigger` etc. Currently allowed accents are `slate` and `blue`.
-- `interactive` supports 4 versions `loContrast1` and `loContrast2` which on light color schemes are lighter and on a dark mode they would be darker (so low contrast in comparison to the background), and `hiContrast1`, `hiContrast2` which are used for the opposite.
+- `base` is used for the base colours of the wrapped component: different tones of background and text. It currently supports the `grey1`, `grey2`, `blue1`, `blue2`, `purple1`, `purple2` colours and can be extended for even more base colors.
+- `accent` is used for highlighted elements and interactive elements of the color scheme. It can be used directly but should be used with an interactive theme for interactive elements - see `<Button />`, `Accordion.Trigger` etc. Currently allowed accents are `grey1`, `grey2`, `blue1`, `blue2`, `purple1`, `purple2` colours.
+- `interactive` supports 2 versions `loContrast`, which on light color schemes are lighter and on a dark mode they would be darker (so low contrast in comparison to the background), and `hiContrast`, which is used for the opposite.
 
 All the color scheme configurations setup used in the component can be found in `color-scheme/src/stitches.colorscheme.config.ts`
 
@@ -22,23 +22,23 @@ Currently in use by a couple of components in library and the full documentation
 ### Examples
 
 ```jsx
-<ColorScheme base="slate" accent="blue" interactive="hiContrast1">
-  <Box css={{ background: '$background', color: '$foreground' }}>
+<ColorScheme base="grey2" accent="blue1" interactive="hiContrast">
+  <Box css={{ background: '$base1', color: '$foreground' }}>
     Off-black text over a white background
   </Box>
   <Box css={{ background: '$base1', color: '$foreground' }}>
     Off-black text over very slightly grey background
   </Box>
-  <Box css={{ background: '$base7', color: '$foreground6plus' }}>
+  <Box css={{ background: '$base7', color: '$foreground7plus' }}>
     White text over darker grey background
   </Box>
   <Box css={{ background: '$accent1', color: '$foreground' }}>
     Off-black text over a slightly blue background
   </Box>
-  <Box css={{ background: '$accent7', color: '$foreground6plus' }}>
+  <Box css={{ background: '$accent7', color: '$foreground7plus' }}>
     White text over darker blue background
   </Box>
-  <Box css={{ background: '$accent9', color: '$foreground6plus' }}>
+  <Box css={{ background: '$accent9', color: '$foreground7plus' }}>
     White text over much darker blue background
   </Box>
   <Button
@@ -52,7 +52,8 @@ Currently in use by a couple of components in library and the full documentation
     Blue button with white text
   </Button>
   <ColorScheme
-    interactive="hiContrast2"
+    accent="blue2"
+    interactive="hiContrast"
     as={Button}
     css={{
       background: '$interactive1',
@@ -64,7 +65,8 @@ Currently in use by a couple of components in library and the full documentation
     Darker blue button with white text
   </ColorScheme>
   <ColorScheme
-    interactive="loContrast2"
+    accent="blue2"
+    interactive="loContrast"
     as={Button}
     css={{
       background: '$interactive1',

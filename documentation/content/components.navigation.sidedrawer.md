@@ -230,7 +230,7 @@ tabs:
       ### Sections and scroll
 
 
-      By design, a drawer's height will never exceed 100% of its container. As such, drawers will not scroll with the page to ensure the header and footer are always accessible to the user. Background (app) is not scrollable while drawer is open (position: fixed).
+      By design, a drawer's height will never exceed 100% of its container. As such, drawers will not scroll with the page to ensure the header and footer are always accessible to the user.Background (app) is not scrollable while drawer is open (position: fixed).
 
 
       The header and content are always needed but the fixed footer is optional for each product to decide if they need one.\

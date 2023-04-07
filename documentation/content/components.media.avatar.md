@@ -236,19 +236,19 @@ tabs:
       ![avatar anatomy](/admin/images/avatar-02-anatomy.png "avatar anatomy")
 
 
-      **Image** 
+      **Image**
 
 
       A circular container with grey border that wraps an image of the user.
 
 
-      **Initial** 
+      **Initial**
 
 
       The user's name initial appear in the component's center with white background and border.
 
 
-      **Icon** 
+      **Icon**
 
 
       White background and border with an icon representing users or entities.
