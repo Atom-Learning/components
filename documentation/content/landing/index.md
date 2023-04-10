@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Atom's Design System
 tabs:
   - content: "<Cards showSearch={true} showTagsFilter={true}
       items={[{\"description\":\"An accordion vertically stacked group of
