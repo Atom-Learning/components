@@ -38,7 +38,7 @@ tabs:
       You can pass in a `colorScheme` object to the `Tile` to customise the colours of the component. Defaults to `{ base: "grey1", accent: "blue2", interactive: "loContrast"}` 
 
 
-      ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options on the repository's github.
+      ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
 
       <CodeBlock live={true} preview={true} code={`<TileGroup>
