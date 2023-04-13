@@ -1,14 +1,31 @@
 import * as React from 'react'
 
+import { Box } from '../box'
 import { Flex } from '../flex'
 import { Image } from '../image'
 
-export const BannerImage: React.FC<React.ComponentProps<typeof Image>> = (
-  props
-) => {
+export const BannerImage: React.FC<
+  Pick<React.ComponentProps<typeof Image>, 'src'>
+> = ({ src }) => {
   return (
-    <Flex>
-      <Image {...props} />
+    <Flex
+      css={{
+        alignItems: 'center',
+        justifyContent: 'center',
+        maxWidth: '156px',
+        minWidth: '156px'
+      }}
+    >
+      <Box
+        css={{
+          backgroundImage: `url(${src})`,
+          height: '100%',
+          width: '100%',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
     </Flex>
   )
 }
