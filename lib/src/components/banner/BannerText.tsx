@@ -5,3 +5,5 @@ import { Text } from '../text'
 export const BannerText: React.ComponentProps<typeof Text> = (props) => (
   <Text {...props} />
 )
+
+BannerText.displayName = 'BannerText'

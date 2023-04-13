@@ -5,3 +5,5 @@ import { Heading } from '../heading'
 export const BannerHeading: React.ComponentProps<typeof Heading> = (props) => (
   <Heading {...props} />
 )
+
+BannerHeading.displayName = 'BannerHeading'
