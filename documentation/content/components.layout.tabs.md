@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      Tabs is a component that provides different sections of content that
-      are displayed one at a time.
+      Tabs is a component that provides different sections of content that are
+      displayed one at a time.
 
       Functionality based on the [`Tab`](https://www.radix-ui.com/docs/primitives/components/tabs) radix component, which already allows for: controlled/uncontrolled tabbing, disabling or partly disabling options, adds keyboard navigation and orientation and more.
 
@@ -60,7 +60,7 @@ tabs:
       ## Color Scheme
 
 
-      You can pass in a `colorScheme` object to the TriggerList to customise the colours of the component. Defaults to `{ base: "grey1", accent: "blue1", interactive: "hiContrast"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/color-scheme#readme).
+      You can pass in a `colorScheme` object to the TriggerList to customise the colours of the component. Defaults to `{ base: "grey1", accent: "blue1", interactive: "hiContrast"}` ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
 
       <CodeBlock live={true} preview={true} code={`<Tabs defaultValue="tab2">
