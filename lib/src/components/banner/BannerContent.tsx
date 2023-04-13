@@ -7,7 +7,7 @@ import { BannerActions } from './BannerActions'
 import { BannerHeading } from './BannerHeading'
 import { BannerText } from './BannerText'
 
-export const BannerContent: React.ComponentProps<typeof Flex> = ({
+export const BannerContent: React.FC<React.ComponentProps<typeof Flex>> = ({
   css,
   children,
   ...props

@@ -9,7 +9,7 @@ import { BannerHeading } from './BannerHeading'
 import { BannerImage } from './BannerImage'
 import { BannerText } from './BannerText'
 
-export const BannerRegular: React.ComponentProps<typeof Flex> & {
+export const BannerRegular: React.FC<React.ComponentProps<typeof Flex>> & {
   Content: typeof BannerContent
   Heading: typeof BannerHeading
   Text: typeof BannerText
