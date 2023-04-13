@@ -1,7 +1,7 @@
 import React from 'react'
 
+import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
-import { TcolorScheme, ColorScheme } from '~/experiments/color-scheme'
 
 export const StyledTile = styled('div', {
   all: 'unset', // important for buttons etc

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { styled } from '~/stitches'
 import { Box } from '~/components/box'
+import { styled } from '~/stitches'
 
 export const NoOverflowContainer = styled(Box, {
   size: '100%',

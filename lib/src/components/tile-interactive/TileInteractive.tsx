@@ -1,8 +1,9 @@
 import React from 'react'
-import { styled } from '~/stitches'
+
 import { Tile } from '~/components/tile'
-import { focusVisibleStyleBlock } from '~/utilities'
+import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
+import { focusVisibleStyleBlock } from '~/utilities'
 
 const StyledTileInteractive = styled(Tile, {
   '&[data-disabled]': {
