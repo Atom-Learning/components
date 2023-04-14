@@ -21,7 +21,7 @@ const Container = styled(Flex, {
   borderRadius: '$0',
   overflow: 'hidden',
   '& > :first-child': {
-    flex: 1
+    flex: 2
   },
   '& > :last-child': {
     flex: 'auto'
