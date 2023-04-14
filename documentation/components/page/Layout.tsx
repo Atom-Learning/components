@@ -5,7 +5,7 @@ import { Container, Header, Footer, Links, Pagination } from '.'
 import { components } from '~/components/markdown/index'
 import { MDXRemote } from 'next-mdx-remote'
 import { TDynamicPage } from '~/lib/types/DynamicPage'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export const Layout: React.FC<TDynamicPage> = (props) => {
   const { links, slug, tabs, title } = props
@@ -13,10 +13,6 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
   const hasContent = !!tabsLength
 
   const [activeTab, setactiveTab] = useState('tab0')
-
-  useEffect(() => {
-    setactiveTab('tab0')
-  }, [slug])
 
   return (
     <Tabs value={activeTab} onValueChange={setactiveTab}>
