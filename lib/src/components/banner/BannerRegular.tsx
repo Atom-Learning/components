@@ -7,6 +7,7 @@ import { findChildByType } from '~/utilities'
 import { Flex } from '../flex'
 import { IBannerContextValue } from './Banner.types'
 import { BannerActions } from './BannerActions'
+import { BannerButton } from './BannerButton'
 import { BannerContent } from './BannerContent'
 import { BannerContext } from './BannerContext'
 import { BannerHeading } from './BannerHeading'
@@ -17,6 +18,14 @@ type TBannerRegularProps = React.ComponentProps<typeof Container> &
   IBannerContextValue
 
 const Container = styled(Flex, {
+  borderRadius: '$0',
+  overflow: 'hidden',
+  '& > :first-child': {
+    flex: 1
+  },
+  '& > :last-child': {
+    flex: 'auto'
+  },
   variants: {
     size: {
       sm: {},
@@ -31,17 +40,14 @@ export const BannerRegular: React.FC<TBannerRegularProps> & {
   Text: typeof BannerText
   Actions: typeof BannerActions
   Image: typeof BannerImage
+  Button: typeof BannerButton
 } = ({ css, children, size = 'md', colorScheme, emphasis, ...props }) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
     <BannerContext.Provider value={{ colorScheme, size, emphasis }}>
       <ColorScheme {...colorScheme}>
-        <Container
-          size={size}
-          css={{ borderRadius: '$0', overflow: 'hidden', ...css }}
-          {...props}
-        >
+        <Container size={size} css={{ ...css }} {...props}>
           {content}
           {image}
         </Container>
@@ -55,5 +61,6 @@ BannerRegular.Heading = BannerHeading
 BannerRegular.Text = BannerText
 BannerRegular.Actions = BannerActions
 BannerRegular.Image = BannerImage
+BannerRegular.Button = BannerButton
 
 BannerRegular.displayName = 'BannerRegular'

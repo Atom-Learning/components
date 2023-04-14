@@ -1,8 +1,8 @@
 import invariant from 'invariant'
 import * as React from 'react'
 
-import { Button } from '../button'
 import { Flex } from '../flex'
+import { BannerButton } from './BannerButton'
 
 const MAX_ALLOWED_CHILDREN = 2
 
@@ -11,7 +11,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   css,
   ...props
 }) => {
-  const INVALID_CHILDREN_MESSAGE = `A maximum of ${MAX_ALLOWED_CHILDREN} ${Button.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
+  const INVALID_CHILDREN_MESSAGE = `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
 
   invariant(
     React.Children.count(children) <= MAX_ALLOWED_CHILDREN,
@@ -20,17 +20,25 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
 
   return (
     <Flex css={{ gap: '$4', ...css }} {...props}>
-      {React.Children.map(children, (child) => {
+      {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
           throw new Error(INVALID_CHILDREN_MESSAGE)
         }
 
         invariant(
-          child.type === Button,
-          `Children of type ${child?.type} aren't permitted. Only an ${Button.displayName} component is allowed in ${BannerActions.displayName}`
+          child.type === BannerButton,
+          `Children of type ${child?.type} aren't permitted. Only an ${BannerButton.displayName} component is allowed in ${BannerActions.displayName}`
         )
 
-        return child
+        // Override button appearance - make the second button outlined
+        return index === 0
+          ? child
+          : React.cloneElement(
+              child as React.ReactElement<
+                React.ComponentProps<typeof BannerButton>
+              >,
+              { appearance: 'outline' }
+            )
       })}
     </Flex>
   )

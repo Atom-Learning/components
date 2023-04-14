@@ -11,9 +11,7 @@ export const BannerImage: React.FC<
     <Flex
       css={{
         alignItems: 'center',
-        justifyContent: 'center',
-        maxWidth: '156px',
-        minWidth: '156px'
+        justifyContent: 'center'
       }}
     >
       <Box
