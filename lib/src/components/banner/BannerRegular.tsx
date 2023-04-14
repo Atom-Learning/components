@@ -1,28 +1,52 @@
 import * as React from 'react'
 
+import { ColorScheme } from '~/experiments/color-scheme'
+import { styled } from '~/stitches'
 import { findChildByType } from '~/utilities'
 
 import { Flex } from '../flex'
+import { IBannerContextValue } from './Banner.types'
 import { BannerActions } from './BannerActions'
 import { BannerContent } from './BannerContent'
+import { BannerContext } from './BannerContext'
 import { BannerHeading } from './BannerHeading'
 import { BannerImage } from './BannerImage'
 import { BannerText } from './BannerText'
 
-export const BannerRegular: React.FC<React.ComponentProps<typeof Flex>> & {
+type TBannerRegularProps = React.ComponentProps<typeof Container> &
+  IBannerContextValue
+
+const Container = styled(Flex, {
+  variants: {
+    size: {
+      sm: {},
+      md: {}
+    }
+  }
+})
+
+export const BannerRegular: React.FC<TBannerRegularProps> & {
   Content: typeof BannerContent
   Heading: typeof BannerHeading
   Text: typeof BannerText
   Actions: typeof BannerActions
   Image: typeof BannerImage
-} = ({ css, children, ...props }) => {
+} = ({ css, children, size = 'md', colorScheme, emphasis, ...props }) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
-    <Flex css={{ ...css }} {...props}>
-      {content}
-      {image}
-    </Flex>
+    <BannerContext.Provider value={{ colorScheme, size, emphasis }}>
+      <ColorScheme {...colorScheme}>
+        <Container
+          size={size}
+          css={{ borderRadius: '$0', overflow: 'hidden', ...css }}
+          {...props}
+        >
+          {content}
+          {image}
+        </Container>
+      </ColorScheme>
+    </BannerContext.Provider>
   )
 }
 
