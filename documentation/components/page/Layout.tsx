@@ -5,17 +5,14 @@ import { Container, Header, Footer, Links, Pagination } from '.'
 import { components } from '~/components/markdown/index'
 import { MDXRemote } from 'next-mdx-remote'
 import { TDynamicPage } from '~/lib/types/DynamicPage'
-import { useState } from 'react'
 
 export const Layout: React.FC<TDynamicPage> = (props) => {
   const { links, slug, tabs, title } = props
   const tabsLength = tabs?.length
   const hasContent = !!tabsLength
 
-  const [activeTab, setactiveTab] = useState('tab0')
-
   return (
-    <Tabs value={activeTab} onValueChange={setactiveTab}>
+    <Tabs defaultValue="tab0">
       <Head>
         <title>{title ? `${title} | ` : ''}Atom Learning Design System</title>
       </Head>
