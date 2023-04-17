@@ -19,7 +19,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   )
 
   return (
-    <Flex css={{ gap: '$4', ...css }} {...props}>
+    <Flex css={{ gap: 'calc($4 + $1)', ...css }} {...props}>
       {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
           throw new Error(INVALID_CHILDREN_MESSAGE)
