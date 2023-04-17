@@ -7,16 +7,18 @@ export const BannerButton: React.FC<React.ComponentProps<typeof Button>> = ({
   appearance,
   ...props
 }) => {
-  const { emphasis } = useBannerContext()
+  const { emphasis, size } = useBannerContext()
 
   return appearance === 'outline' ? (
     <Button
+      size={size}
       appearance={appearance}
       theme={emphasis === 'hiContrast' ? 'neutral' : 'primary'}
       {...props}
     />
   ) : (
     <Button
+      size={size}
       theme={emphasis === 'hiContrast' ? 'neutral' : 'primary'}
       {...props}
     />

@@ -11,7 +11,7 @@ export const BannerHeading: React.FC<React.ComponentProps<typeof Heading>> = ({
   const { emphasis } = useBannerContext()
   const color = resolveEmphasis('title', emphasis)
 
-  return <Heading css={{ color, ...css }} {...props} />
+  return <Heading size="sm" css={{ color, mb: '16px', ...css }} {...props} />
 }
 
 BannerHeading.displayName = 'BannerHeading'
