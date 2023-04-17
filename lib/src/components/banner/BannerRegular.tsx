@@ -28,8 +28,12 @@ const Container = styled(Flex, {
   },
   variants: {
     size: {
-      sm: {},
-      md: {}
+      sm: {
+        maxWidth: '736px'
+      },
+      md: {
+        minWidth: '737px'
+      }
     }
   }
 })
