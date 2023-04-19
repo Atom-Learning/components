@@ -5,7 +5,7 @@ const { getPageByFilename, getAllPages } = require('~/lib/api.cjs')
 import { TDynamicPage } from '~/lib/types/DynamicPage'
 import remarkGfm from 'remark-gfm'
 
-import { serialize } from "next-mdx-remote/serialize";
+import { serialize } from 'next-mdx-remote/serialize'
 
 import { Layout as PageLayout } from '~/components/page/Layout'
 
@@ -15,7 +15,7 @@ type Props = {
 }
 
 export default function Page({ Page, preview }: Props) {
-  const { slug } = Page;
+  const { slug } = Page
 
   const router = useRouter()
 
@@ -23,9 +23,8 @@ export default function Page({ Page, preview }: Props) {
 
   if (router.isFallback) return <div>Loading…</div>
 
-  if (preview) return null;
-  return <PageLayout {...Page} />
-
+  if (preview) return null
+  return <PageLayout key={slug} {...Page} />
 }
 
 type Params = {
@@ -43,10 +42,16 @@ export const getStaticProps = async ({ params }: Params) => {
     'tabs'
   ])
 
-  const tabs = Page?.tabs ? await Promise.all(Page.tabs.map(async ({ content, ...rest }) => {
-    const serializedContent = await serialize(content || '', { mdxOptions: { remarkPlugins: [remarkGfm] } })
-    return { content: serializedContent, ...rest }
-  })) : []
+  const tabs = Page?.tabs
+    ? await Promise.all(
+        Page.tabs.map(async ({ content, ...rest }) => {
+          const serializedContent = await serialize(content || '', {
+            mdxOptions: { remarkPlugins: [remarkGfm] }
+          })
+          return { content: serializedContent, ...rest }
+        })
+      )
+    : []
 
   return {
     props: {
@@ -54,8 +59,8 @@ export const getStaticProps = async ({ params }: Params) => {
         ...Page,
         tabs,
         nestedSlug: nestedSlug
-      },
-    },
+      }
+    }
   }
 }
 
@@ -67,9 +72,9 @@ export const getStaticPaths = async () => {
       return {
         params: {
           slug: Page.nestedSlug
-        },
+        }
       }
     }),
-    fallback: false,
+    fallback: false
   }
 }
