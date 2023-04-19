@@ -69,7 +69,9 @@ const Dismiss = styled(ActionIcon, {
         '&:not(:disabled)': {
           color: 'white'
         }
-      }
+      },
+      midContrast: {},
+      loContrast: {}
     }
   }
 })
