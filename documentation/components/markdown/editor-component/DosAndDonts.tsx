@@ -19,7 +19,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({
     <Box as="li" css={{ listStyle: 'none' }}>
       <Box
         css={{
-          background: '$grey100',
+          background: '$base2',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

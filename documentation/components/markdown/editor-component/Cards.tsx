@@ -44,7 +44,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({
     >
       <Box
         css={{
-          background: '$grey100',
+          background: '$base2',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
