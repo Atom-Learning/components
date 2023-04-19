@@ -4,6 +4,7 @@ import { styled } from '~/stitches'
 import { findChildByType } from '~/utilities'
 
 import { Flex } from '../flex'
+import { Stack } from '../stack'
 import { resolveEmphasis } from './Banner.utils'
 import { BannerActions } from './BannerActions'
 import { useBannerContext } from './BannerContext'
@@ -40,8 +41,10 @@ export const BannerContent: React.FC<
       css={{ flexDirection: 'column', background, ...css }}
       {...props}
     >
-      {heading}
-      {text}
+      <Stack direction="column" css={{ pr: 'calc($5 + $4)' }}>
+        {heading}
+        {text}
+      </Stack>
       {actions}
     </Container>
   )
