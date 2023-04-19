@@ -1,16 +1,37 @@
 import invariant from 'invariant'
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { Flex } from '../flex'
 import { BannerButton } from './BannerButton'
+import { useBannerContext } from './BannerContext'
 
 const MAX_ALLOWED_CHILDREN = 2
 
+const StyledActionsContainer = styled(Flex, {
+  variants: {
+    containerSize: {
+      sm: {
+        flexDirection: 'column',
+        gap: '$2',
+        '& > button': {
+          width: '100%'
+        }
+      },
+      md: {
+        flexDirection: 'row',
+        gap: 'calc($4 + $1)'
+      }
+    }
+  }
+})
+
 export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   children,
-  css,
   ...props
 }) => {
+  const { size } = useBannerContext()
   const INVALID_CHILDREN_MESSAGE = `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
 
   invariant(
@@ -19,7 +40,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   )
 
   return (
-    <Flex css={{ gap: 'calc($4 + $1)', ...css }} {...props}>
+    <StyledActionsContainer containerSize={size} {...props}>
       {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
           throw new Error(INVALID_CHILDREN_MESSAGE)
@@ -40,7 +61,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
               { appearance: 'outline' }
             )
       })}
-    </Flex>
+    </StyledActionsContainer>
   )
 }
 
