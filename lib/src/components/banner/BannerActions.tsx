@@ -32,18 +32,20 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   ...props
 }) => {
   const { size } = useBannerContext()
-  const INVALID_CHILDREN_MESSAGE = `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
+  const INVALID_NUMBER_OF_CHILDREN = `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
 
   invariant(
     React.Children.count(children) <= MAX_ALLOWED_CHILDREN,
-    INVALID_CHILDREN_MESSAGE
+    INVALID_NUMBER_OF_CHILDREN
   )
 
   return (
     <StyledActionsContainer containerSize={size} {...props}>
       {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
-          throw new Error(INVALID_CHILDREN_MESSAGE)
+          throw new Error(
+            `Child passed to ${BannerActions.displayName} is not a valid element`
+          )
         }
 
         invariant(
