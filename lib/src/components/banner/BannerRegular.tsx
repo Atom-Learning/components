@@ -24,6 +24,10 @@ type TBannerRegularProps = React.ComponentProps<typeof Container> &
     dismissible?: boolean
   }
 
+interface IBannerRegularProps extends IBannerContextValue {
+  size: 'sm' | 'md'
+  dismissible?: React.ComponentProps<typeof Dismissible>
+}
 const Container = styled(Flex, {
   borderRadius: '$0',
   overflow: 'hidden',
@@ -76,28 +80,19 @@ const Dismiss = styled(ActionIcon, {
   }
 })
 
-export const BannerRegular: React.FC<TBannerRegularProps> & {
+export const BannerRegular: React.FC<IBannerRegularProps> & {
   Content: typeof BannerContent
   Heading: typeof BannerHeading
   Text: typeof BannerText
   Actions: typeof BannerActions
   Image: typeof BannerImage
   Button: typeof BannerButton
-} = ({
-  children,
-  size = 'md',
-  colorScheme,
-  emphasis,
-  dismissible,
-  value = 'dismiss-banner-regular',
-  onDismiss,
-  ...props
-}) => {
+} = ({ children, size = 'md', colorScheme, emphasis, dismissible, type }) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
     <ColorScheme {...colorScheme} css={{ position: 'relative' }}>
-      <Dismissible value={value} onDismiss={onDismiss}>
+      <Dismissible value="dismiss-banner-regular" {...dismissible}>
         {dismissible && (
           <Dismissible.Trigger asChild>
             <Dismiss
@@ -117,7 +112,7 @@ export const BannerRegular: React.FC<TBannerRegularProps> & {
         <BannerContext.Provider
           value={{ colorScheme, size, emphasis, type: 'regular' }}
         >
-          <Container size={size} {...props}>
+          <Container size={size}>
             {content}
             {image}
           </Container>
