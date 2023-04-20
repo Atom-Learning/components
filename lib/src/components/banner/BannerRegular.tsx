@@ -91,32 +91,34 @@ export const BannerRegular: React.FC<IBannerRegularProps> & {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
-    <ColorScheme {...colorScheme} css={{ position: 'relative' }}>
-      <Dismissible value="dismiss-banner-regular" {...dismissible}>
-        {dismissible && (
-          <Dismissible.Trigger asChild>
-            <Dismiss
-              size={size === 'sm' ? 'md' : 'sm'}
-              label="dismiss"
-              hasTooltip={false}
-              isRounded
-              containerSize={size}
-              emphasis={emphasis}
-              theme="neutral"
-              appearance="solid"
-            >
-              <Icon is={Close} />
-            </Dismiss>
-          </Dismissible.Trigger>
-        )}
-        <BannerContext.Provider
-          value={{ colorScheme, size, emphasis, type: 'regular' }}
-        >
-          <Container size={size}>
-            {content}
-            {image}
-          </Container>
-        </BannerContext.Provider>
+    <ColorScheme {...colorScheme} css={{ position: 'relative' }} role="banner">
+      <Dismissible value="dismiss-banner-regular" asChild {...dismissible}>
+        <>
+          {dismissible && (
+            <Dismissible.Trigger asChild>
+              <Dismiss
+                size={size === 'sm' ? 'md' : 'sm'}
+                label="dismiss"
+                hasTooltip={false}
+                isRounded
+                containerSize={size}
+                emphasis={emphasis}
+                theme="neutral"
+                appearance="solid"
+              >
+                <Icon is={Close} />
+              </Dismiss>
+            </Dismissible.Trigger>
+          )}
+          <BannerContext.Provider
+            value={{ colorScheme, size, emphasis, type: 'regular' }}
+          >
+            <Container size={size}>
+              {content}
+              {image}
+            </Container>
+          </BannerContext.Provider>
+        </>
       </Dismissible>
     </ColorScheme>
   )
