@@ -84,7 +84,6 @@ export const BannerRegular: React.FC<TBannerRegularProps> & {
   Image: typeof BannerImage
   Button: typeof BannerButton
 } = ({
-  css,
   children,
   size = 'md',
   colorScheme,
@@ -118,7 +117,7 @@ export const BannerRegular: React.FC<TBannerRegularProps> & {
         <BannerContext.Provider
           value={{ colorScheme, size, emphasis, type: 'regular' }}
         >
-          <Container size={size} css={{ ...css }} {...props}>
+          <Container size={size} {...props}>
             {content}
             {image}
           </Container>
