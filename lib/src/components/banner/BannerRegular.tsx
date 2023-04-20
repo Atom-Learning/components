@@ -20,6 +20,7 @@ import { BannerText } from './BannerText'
 import { Box } from '../box'
 
 type TBannerRegularProps = React.ComponentProps<typeof Container> &
+  React.ComponentProps<typeof Dismissible> &
   IBannerContextValue & {
     dismissible?: boolean
   }
@@ -90,13 +91,15 @@ export const BannerRegular: React.FC<TBannerRegularProps> & {
   colorScheme,
   emphasis,
   dismissible,
+  value = 'dismiss-banner-regular',
+  onDismiss,
   ...props
 }) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
     <Box css={{ position: 'relative' }}>
-      <Dismissible value="dismiss-banner-regular">
+      <Dismissible value={value} onDismiss={onDismiss}>
         {dismissible && (
           <Dismissible.Trigger asChild>
             <Dismiss
