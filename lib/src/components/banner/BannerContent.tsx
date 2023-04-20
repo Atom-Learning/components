@@ -18,7 +18,7 @@ const Container = styled(Flex, {
         p: '$4'
       },
       md: {
-        p: 'calc($4 + $2)',
+        p: '$24',
         pr: '$5'
       }
     }

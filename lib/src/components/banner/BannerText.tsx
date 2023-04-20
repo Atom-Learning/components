@@ -13,7 +13,7 @@ const StyledText = styled(Text, {
         mb: '$4'
       },
       md: {
-        mb: 'calc($4 + $2)'
+        mb: '$24'
       }
     }
   }
