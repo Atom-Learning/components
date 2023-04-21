@@ -641,6 +641,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
       >
         <div
           class="c-PJLV c-PJLV-ijfHRjp-css"
+          role="img"
         />
       </div>
     </div>
@@ -1752,6 +1753,7 @@ exports[`BannerRegular component renders md variant 1`] = `
       >
         <div
           class="c-PJLV c-PJLV-ijfHRjp-css"
+          role="img"
         />
       </div>
     </div>

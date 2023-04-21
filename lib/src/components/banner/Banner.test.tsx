@@ -37,6 +37,9 @@ describe(`BannerRegular component`, () => {
       />
     )
     expect(container).toMatchSnapshot()
+
+    const image = screen.queryByRole('img')
+    expect(image).not.toBeInTheDocument()
   })
 
   it('renders dismissible sm variant', () => {
@@ -71,6 +74,9 @@ describe(`BannerRegular component`, () => {
       />
     )
     expect(container).toMatchSnapshot()
+
+    const image = screen.queryByRole('img')
+    expect(image).toBeInTheDocument()
   })
 
   it('renders dismissible md variant', () => {

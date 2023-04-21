@@ -16,6 +16,7 @@ export const BannerImage: React.FC<{ src: string }> = ({ src }) => {
       }}
     >
       <Box
+        role="img"
         css={{
           backgroundImage: `url(${src})`,
           height: '100%',
