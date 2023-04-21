@@ -41,7 +41,7 @@ export const BannerContent: React.FC<
       css={{ flexDirection: 'column', background, ...css }}
       {...props}
     >
-      <Stack direction="column" css={{ pr: 'calc($5 + $4)' }}>
+      <Stack direction="column" css={{ pr: '$7' }}>
         {heading}
         {text}
       </Stack>

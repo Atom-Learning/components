@@ -532,8 +532,8 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iilZecv-css {
-    padding-right: calc(var(--space-5) + var(--space-4));
+  .c-PJLV-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-jryFOR-ikcBoOs-css {
@@ -602,7 +602,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
         class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ijkmDJi-css"
       >
         <div
-          class="c-PJLV c-PJLV-iilZecv-css"
+          class="c-PJLV c-PJLV-iIFRSO-css"
         >
           <div
             class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
@@ -1062,8 +1062,8 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iilZecv-css {
-    padding-right: calc(var(--space-5) + var(--space-4));
+  .c-PJLV-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-jryFOR-ikcBoOs-css {
@@ -1104,7 +1104,7 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
         class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
       >
         <div
-          class="c-PJLV c-PJLV-iilZecv-css"
+          class="c-PJLV c-PJLV-iIFRSO-css"
         >
           <div
             class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
@@ -1659,8 +1659,8 @@ exports[`BannerRegular component renders md variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iilZecv-css {
-    padding-right: calc(var(--space-5) + var(--space-4));
+  .c-PJLV-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-jryFOR-ikcBoOs-css {
@@ -1713,7 +1713,7 @@ exports[`BannerRegular component renders md variant 1`] = `
         class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ifwbbOv-css"
       >
         <div
-          class="c-PJLV c-PJLV-iilZecv-css"
+          class="c-PJLV c-PJLV-iIFRSO-css"
         >
           <div
             class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
@@ -2119,8 +2119,8 @@ exports[`BannerRegular component renders sm variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iilZecv-css {
-    padding-right: calc(var(--space-5) + var(--space-4));
+  .c-PJLV-iIFRSO-css {
+    padding-right: var(--space-7);
   }
 
   .c-jryFOR-ikcBoOs-css {
@@ -2145,7 +2145,7 @@ exports[`BannerRegular component renders sm variant 1`] = `
         class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
       >
         <div
-          class="c-PJLV c-PJLV-iilZecv-css"
+          class="c-PJLV c-PJLV-iIFRSO-css"
         >
           <div
             class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
