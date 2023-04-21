@@ -478,6 +478,25 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     color: rgba(255, 255, 255, 0.65);
   }
 
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
   .c-fkUJsw-gsycxF-cv {
     background: var(--colors-primary);
     color: white;
@@ -581,7 +600,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
   >
     <button
       aria-label="dismiss"
-      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-kNhgel-containerSize-md c-dtdDpa-hEESoL-emphasis-highContrast"
+      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-dtdDpa c-dtdDpa-kNhgel-containerSize-md c-dtdDpa-hEESoL-emphasis-highContrast"
       type="button"
     >
       <svg
@@ -1051,6 +1070,25 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
   .c-fkUJsw-bznQva-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
+
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
 }
 
 @media  {
@@ -1084,7 +1122,7 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
   >
     <button
       aria-label="dismiss"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-hoNdng-containerSize-sm c-dtdDpa-hEESoL-emphasis-highContrast"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-dtdDpa c-dtdDpa-hoNdng-containerSize-sm c-dtdDpa-hEESoL-emphasis-highContrast"
       type="button"
     >
       <svg
@@ -1604,6 +1642,25 @@ exports[`BannerRegular component renders md variant 1`] = `
 
   .c-fkUJsw-bznQva-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
+  }
+
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
   }
 
   .c-fkUJsw-gsycxF-cv {

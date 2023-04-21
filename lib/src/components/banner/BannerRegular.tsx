@@ -104,7 +104,6 @@ export const BannerRegular: React.FC<IBannerRegularProps> & {
                 containerSize={size}
                 emphasis={emphasis}
                 theme="neutral"
-                appearance="solid"
               >
                 <Icon is={Close} />
               </Dismiss>
