@@ -153,12 +153,11 @@ export const Cards: React.FC<CardsProps> = ({
         <Box
           css={{
             maxWidth: '100%',
-            mx: 'auto',
-            overflowX: 'auto'
+            mx: 'auto'
           }}
         >
           <ChipToggleGroup
-            wrap="nowrap"
+            justify="center"
             type="multiple"
             value={selectedTags}
             onValueChange={handleSelectedTagsValueChange}
