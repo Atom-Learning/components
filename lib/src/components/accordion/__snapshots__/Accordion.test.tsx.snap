@@ -160,6 +160,22 @@ exports[`Accordion component renders an accordion 1`] = `
     --colors-accent10: var(--colors-grey900);
     --colors-accent11: var(--colors-grey1000);
   }
+
+  .base-grey1 {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-grey100);
+    --colors-base3: var(--colors-grey200);
+    --colors-base4: var(--colors-grey300);
+    --colors-base5: var(--colors-grey400);
+    --colors-base6: var(--colors-grey500);
+    --colors-base7: var(--colors-grey600);
+    --colors-base8: var(--colors-grey700);
+    --colors-base9: var(--colors-grey800);
+    --colors-base10: var(--colors-grey900);
+    --colors-base11: var(--colors-grey1000);
+  }
 }
 
 @media  {
@@ -281,7 +297,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-dkSJnW interactive-loContrast accent-grey1"
+        class="c-dkSJnW interactive-loContrast accent-grey1 base-grey1"
         data-radix-collection-item=""
         data-state="open"
         id="radix-1"
@@ -317,7 +333,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-2"
         aria-expanded="false"
-        class="c-dkSJnW interactive-loContrast accent-grey1"
+        class="c-dkSJnW interactive-loContrast accent-grey1 base-grey1"
         data-radix-collection-item=""
         data-state="closed"
         id="radix-3"
