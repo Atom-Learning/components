@@ -88,6 +88,8 @@ export const TabsTriggerList: React.FC<
       {...colorScheme}
       {...rest}
     >
+      <StyledTriggerList ref={setListRefCallback}>{children}</StyledTriggerList>
+
       {canScrollLeft && (
         <StyledChevronActionIcon
           label="scroll left"
@@ -96,12 +98,11 @@ export const TabsTriggerList: React.FC<
             left: 0
           }}
           onClick={() => scrollList(-SCROLL_STEP)}
+          tabIndex={-1}
         >
           <Icon is={ChevronLeft} />
         </StyledChevronActionIcon>
       )}
-
-      <StyledTriggerList ref={setListRefCallback}>{children}</StyledTriggerList>
 
       {canScrollRight && (
         <StyledChevronActionIcon
@@ -111,6 +112,7 @@ export const TabsTriggerList: React.FC<
             right: 0
           }}
           onClick={() => scrollList(SCROLL_STEP)}
+          tabIndex={-1}
         >
           <Icon is={ChevronRight} />
         </StyledChevronActionIcon>
