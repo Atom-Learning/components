@@ -21,7 +21,7 @@ const StyledActionsContainer = styled(Flex, {
       },
       md: {
         flexDirection: 'row',
-        gap: 'calc($4 + $1)'
+        gap: '$4'
       }
     }
   }

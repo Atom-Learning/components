@@ -404,9 +404,9 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     margin-bottom: var(--space-24);
   }
 
-  .c-PJLV-iaNfcR-containerSize-md {
+  .c-PJLV-bzyRwj-containerSize-md {
     flex-direction: row;
-    gap: calc(var(--space-4) + var(--space-1));
+    gap: var(--space-4);
   }
 
   .c-fkUJsw-elrwsr-size-md {
@@ -620,7 +620,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
           </div>
         </div>
         <div
-          class="c-dhzjXW c-PJLV c-PJLV-iaNfcR-containerSize-md"
+          class="c-dhzjXW c-PJLV c-PJLV-bzyRwj-containerSize-md"
         >
           <button
             class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-iRJCoR-cv"
@@ -1547,9 +1547,9 @@ exports[`BannerRegular component renders md variant 1`] = `
     margin-bottom: var(--space-24);
   }
 
-  .c-PJLV-iaNfcR-containerSize-md {
+  .c-PJLV-bzyRwj-containerSize-md {
     flex-direction: row;
-    gap: calc(var(--space-4) + var(--space-1));
+    gap: var(--space-4);
   }
 
   .c-fkUJsw-elrwsr-size-md {
@@ -1731,7 +1731,7 @@ exports[`BannerRegular component renders md variant 1`] = `
           </div>
         </div>
         <div
-          class="c-dhzjXW c-PJLV c-PJLV-iaNfcR-containerSize-md"
+          class="c-dhzjXW c-PJLV c-PJLV-bzyRwj-containerSize-md"
         >
           <button
             class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
