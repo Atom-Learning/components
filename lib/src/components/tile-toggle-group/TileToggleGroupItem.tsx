@@ -17,12 +17,12 @@ const StyledTileToggleGroupItem = styled(TileInteractive, {
   },
   '&[data-state="on"]': {
     bg: '$interactive1',
-    borderColor: '$accent8',
+    borderColor: '$accent9',
     '&::before': {
       content: '',
       position: 'absolute',
       inset: -1, // account for 1px Tile border
-      boxShadow: 'inset $colors$accent8 0px 0px 0px 2px',
+      boxShadow: 'inset $colors$accent9 0px 0px 0px 2px',
       borderRadius: 'inherit',
       zIndex: 1 // so it's over anything nested which touches sides
     }

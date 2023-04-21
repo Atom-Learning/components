@@ -147,18 +147,18 @@ exports[`TileToggleGroup component renders 1`] = `
     --colors-interactive3: var(--colors-accent3);
   }
 
-  .accent-blue2 {
-    --colors-accent1: var(--colors-blue100);
-    --colors-accent2: var(--colors-blue200);
-    --colors-accent3: var(--colors-blue300);
-    --colors-accent4: var(--colors-blue400);
-    --colors-accent5: var(--colors-blue500);
-    --colors-accent6: var(--colors-blue600);
-    --colors-accent7: var(--colors-blue700);
-    --colors-accent8: var(--colors-blue800);
-    --colors-accent9: var(--colors-blue900);
-    --colors-accent10: var(--colors-blue1000);
-    --colors-accent11: var(--colors-blue1100);
+  .accent-blue1 {
+    --colors-accent1: #FFFFFF;
+    --colors-accent2: var(--colors-blue100);
+    --colors-accent3: var(--colors-blue200);
+    --colors-accent4: var(--colors-blue300);
+    --colors-accent5: var(--colors-blue400);
+    --colors-accent6: var(--colors-blue500);
+    --colors-accent7: var(--colors-blue600);
+    --colors-accent8: var(--colors-blue700);
+    --colors-accent9: var(--colors-blue800);
+    --colors-accent10: var(--colors-blue900);
+    --colors-accent11: var(--colors-blue1000);
   }
 
   .base-grey1 {
@@ -239,24 +239,24 @@ exports[`TileToggleGroup component renders 1`] = `
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-SVNbK:not([disabled])[data-state="on"]:hover {
+  .c-hMHzrK:not([disabled])[data-state="on"]:hover {
     background: var(--colors-interactive2);
   }
 
-  .c-SVNbK:not([disabled])[data-state="on"]:active {
+  .c-hMHzrK:not([disabled])[data-state="on"]:active {
     background: var(--colors-interactive3);
   }
 
-  .c-SVNbK[data-state="on"] {
+  .c-hMHzrK[data-state="on"] {
     background: var(--colors-interactive1);
-    border-color: var(--colors-accent8);
+    border-color: var(--colors-accent9);
   }
 
-  .c-SVNbK[data-state="on"]::before {
+  .c-hMHzrK[data-state="on"]::before {
     content: "";
     position: absolute;
     inset: -1px;
-    box-shadow: inset var(--colors-accent8) 0px 0px 0px 2px;
+    box-shadow: inset var(--colors-accent9) 0px 0px 0px 2px;
     border-radius: inherit;
     z-index: 1;
   }
@@ -296,7 +296,7 @@ exports[`TileToggleGroup component renders 1`] = `
   >
     <button
       aria-pressed="true"
-      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      class="c-htDHry interactive-loContrast accent-blue1 base-grey1 c-bZTcGT c-hMHzrK"
       data-radix-collection-item=""
       data-state="on"
       tabindex="-1"
@@ -306,7 +306,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="true"
-      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      class="c-htDHry interactive-loContrast accent-blue1 base-grey1 c-bZTcGT c-hMHzrK"
       data-disabled=""
       data-radix-collection-item=""
       data-state="on"
@@ -318,7 +318,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      class="c-htDHry interactive-loContrast accent-blue1 base-grey1 c-bZTcGT c-hMHzrK"
       data-radix-collection-item=""
       data-state="off"
       tabindex="-1"
@@ -328,7 +328,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-SVNbK"
+      class="c-htDHry interactive-loContrast accent-blue1 base-grey1 c-bZTcGT c-hMHzrK"
       data-disabled=""
       data-radix-collection-item=""
       data-state="off"

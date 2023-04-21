@@ -147,18 +147,18 @@ exports[`TileInteractive component renders 1`] = `
     --colors-interactive3: var(--colors-accent3);
   }
 
-  .accent-blue2 {
-    --colors-accent1: var(--colors-blue100);
-    --colors-accent2: var(--colors-blue200);
-    --colors-accent3: var(--colors-blue300);
-    --colors-accent4: var(--colors-blue400);
-    --colors-accent5: var(--colors-blue500);
-    --colors-accent6: var(--colors-blue600);
-    --colors-accent7: var(--colors-blue700);
-    --colors-accent8: var(--colors-blue800);
-    --colors-accent9: var(--colors-blue900);
-    --colors-accent10: var(--colors-blue1000);
-    --colors-accent11: var(--colors-blue1100);
+  .accent-blue1 {
+    --colors-accent1: #FFFFFF;
+    --colors-accent2: var(--colors-blue100);
+    --colors-accent3: var(--colors-blue200);
+    --colors-accent4: var(--colors-blue300);
+    --colors-accent5: var(--colors-blue400);
+    --colors-accent6: var(--colors-blue500);
+    --colors-accent7: var(--colors-blue600);
+    --colors-accent8: var(--colors-blue700);
+    --colors-accent9: var(--colors-blue800);
+    --colors-accent10: var(--colors-blue900);
+    --colors-accent11: var(--colors-blue1000);
   }
 
   .base-grey1 {
@@ -242,7 +242,7 @@ exports[`TileInteractive component renders 1`] = `
 
 <div>
   <button
-    class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-bZTcGT-iMShsb-css"
+    class="c-htDHry interactive-loContrast accent-blue1 base-grey1 c-bZTcGT c-bZTcGT-iMShsb-css"
     type="button"
   >
     A
