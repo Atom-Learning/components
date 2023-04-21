@@ -370,7 +370,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     color: var(--colors-grey800);
   }
 
-  .c-dtdDpa-hEESoL-emphasis-hiContrast:not(:disabled) {
+  .c-dtdDpa-hEESoL-emphasis-highContrast:not(:disabled) {
     color: white;
   }
 
@@ -581,7 +581,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
   >
     <button
       aria-label="dismiss"
-      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-kNhgel-containerSize-md c-dtdDpa-hEESoL-emphasis-hiContrast"
+      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-kNhgel-containerSize-md c-dtdDpa-hEESoL-emphasis-highContrast"
       type="button"
     >
       <svg
@@ -1002,7 +1002,7 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     color: var(--colors-grey800);
   }
 
-  .c-dtdDpa-hEESoL-emphasis-hiContrast:not(:disabled) {
+  .c-dtdDpa-hEESoL-emphasis-highContrast:not(:disabled) {
     color: white;
   }
 }
@@ -1083,7 +1083,7 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
   >
     <button
       aria-label="dismiss"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-hoNdng-containerSize-sm c-dtdDpa-hEESoL-emphasis-hiContrast"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-dtdDpa c-dtdDpa-hoNdng-containerSize-sm c-dtdDpa-hEESoL-emphasis-highContrast"
       type="button"
     >
       <svg
@@ -1513,7 +1513,7 @@ exports[`BannerRegular component renders md variant 1`] = `
     color: var(--colors-grey800);
   }
 
-  .c-dtdDpa-hEESoL-emphasis-hiContrast:not(:disabled) {
+  .c-dtdDpa-hEESoL-emphasis-highContrast:not(:disabled) {
     color: white;
   }
 

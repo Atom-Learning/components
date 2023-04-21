@@ -31,7 +31,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularComponent
         colorScheme={{ base: 'purple1' }}
-        emphasis="hiContrast"
+        emphasis="highContrast"
         size="sm"
         type="regular"
       />
@@ -44,7 +44,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularComponent
         colorScheme={{ base: 'purple1' }}
-        emphasis="hiContrast"
+        emphasis="highContrast"
         size="sm"
         type="regular"
         dismissible={{
@@ -65,7 +65,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularComponent
         colorScheme={{ base: 'blue1' }}
-        emphasis="loContrast"
+        emphasis="lowContrast"
         size="md"
         type="regular"
       />
@@ -78,7 +78,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularComponent
         colorScheme={{ base: 'purple1' }}
-        emphasis="hiContrast"
+        emphasis="highContrast"
         size="md"
         type="regular"
         dismissible={{
@@ -99,7 +99,7 @@ describe(`BannerRegular component`, () => {
     render(
       <BannerRegularComponent
         colorScheme={{ base: 'purple1' }}
-        emphasis="hiContrast"
+        emphasis="highContrast"
         size="sm"
         type="regular"
       />

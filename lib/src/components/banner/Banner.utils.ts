@@ -4,12 +4,12 @@ const elementEmphasisMap: Record<
   TBannerEmphasis,
   Record<TBannerElements, string>
 > = {
-  hiContrast: {
+  highContrast: {
     background: '$base11',
     title: '$base1',
     description: '$grey100'
   },
-  loContrast: {
+  lowContrast: {
     background: '$base1',
     description: '$tonal900',
     title: '$grey1000'

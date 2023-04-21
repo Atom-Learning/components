@@ -11,7 +11,7 @@ export const BannerButton: React.FC<React.ComponentProps<typeof Button>> = (
   return (
     <Button
       size={size}
-      theme={emphasis === 'hiContrast' ? 'neutral' : 'primary'}
+      theme={emphasis === 'highContrast' ? 'neutral' : 'primary'}
       {...props}
     />
   )

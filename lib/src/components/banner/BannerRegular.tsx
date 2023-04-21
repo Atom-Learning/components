@@ -69,13 +69,13 @@ const Dismiss = styled(ActionIcon, {
       }
     },
     emphasis: {
-      hiContrast: {
+      highContrast: {
         '&:not(:disabled)': {
           color: 'white'
         }
       },
       midContrast: {},
-      loContrast: {}
+      lowContrast: {}
     }
   }
 })
