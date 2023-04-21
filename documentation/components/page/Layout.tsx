@@ -22,7 +22,7 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
 
   const isShowingTabs = tabs.length > 1
   useEffect(() => {
-    if (isShowingTabs) updateQueryParams({ tab }, { method: 'replace', debounce: 0 })
+    if (isShowingTabs) updateQueryParams({ tab }, { method: 'replace' })
   }, [isShowingTabs, tab, updateQueryParams])
 
   return (
