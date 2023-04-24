@@ -58,7 +58,7 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/icons": "1.14.0",
+    "@atom-learning/icons": "1.16.0",
     "@atom-learning/jest-stitches": "1.0.10",
     "@atom-learning/theme": "1.2.0",
     "@commitlint/cli": "^11.0.0",
@@ -120,7 +120,7 @@
     "yargs": "^16.2.0"
   },
   "peerDependencies": {
-    "@atom-learning/icons": "^1.0.0",
+    "@atom-learning/icons": "^1.16.0",
     "@atom-learning/theme": "^1.2.0",
     "react": "^17",
     "react-dom": "^17"
