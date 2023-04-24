@@ -191,14 +191,6 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     flex: auto;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -273,28 +265,6 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-jgdwfn-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
   .c-jryFOR-dtbHih-size-sm {
     font-size: var(--fontSizes-lg);
     line-height: 1.14;
@@ -333,13 +303,9 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-PJLV-cUCkvz-containerSize-sm {
+  .c-PJLV-bjjJAZ-containerSize-sm {
     flex-direction: column;
     gap: var(--space-2);
-  }
-
-  .c-PJLV-cUCkvz-containerSize-sm > button {
-    width: 100%;
   }
 
   .c-fkUJsw-eYnvrx-size-sm {
@@ -348,6 +314,10 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -374,8 +344,8 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     color: white;
   }
 
-  .c-dEcWCe-oFCfk-size-md {
-    min-width: 737px;
+  .c-dEcWCe-isEXbR-size-md {
+    min-width: 736px;
   }
 
   .c-PJLV-gwWsyo-size-md {
@@ -415,6 +385,10 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+  }
+
+  .c-fkUJsw-djDtlJ-fullWidth-false {
+    width: max-content;
   }
 
   .c-fDzwZw-elrktp-size-sm {
@@ -551,10 +525,6 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iIFRSO-css {
-    padding-right: var(--space-7);
-  }
-
   .c-jryFOR-ikcBoOs-css {
     color: var(--colors-base1);
     margin-bottom: 16px;
@@ -615,40 +585,32 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
       </svg>
     </button>
     <div
-      class="c-dhzjXW c-dEcWCe c-dEcWCe-oFCfk-size-md"
+      class="c-dhzjXW c-dEcWCe c-dEcWCe-isEXbR-size-md"
     >
       <div
         class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ijkmDJi-css"
       >
-        <div
-          class="c-PJLV c-PJLV-iIFRSO-css"
+        <h2
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
         >
-          <div
-            class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
-          >
-            <h2
-              class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
-            >
-              Get ready for entrance exams
-            </h2>
-            <p
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-ifgLDMq-css"
-            >
-              Talk to our admissions experts on to learn how to support your child. This is an example lor!
-            </p>
-          </div>
-        </div>
+          Get ready for entrance exams
+        </h2>
+        <p
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-ifgLDMq-css"
+        >
+          Talk to our admissions experts on to learn how to support your child. This is an example lor!
+        </p>
         <div
           class="c-dhzjXW c-PJLV c-PJLV-bzyRwj-containerSize-md"
         >
           <button
-            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-iRJCoR-cv"
+            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-djDtlJ-fullWidth-false c-fkUJsw-iRJCoR-cv"
             type="button"
           >
             Contact an expert
           </button>
           <button
-            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-bznQva-cv"
+            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-djDtlJ-fullWidth-false c-fkUJsw-bznQva-cv"
             type="button"
           >
             Secondary
@@ -843,14 +805,6 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     flex: auto;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -925,28 +879,6 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-jgdwfn-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
   .c-jryFOR-dtbHih-size-sm {
     font-size: var(--fontSizes-lg);
     line-height: 1.14;
@@ -985,13 +917,9 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-PJLV-cUCkvz-containerSize-sm {
+  .c-PJLV-bjjJAZ-containerSize-sm {
     flex-direction: column;
     gap: var(--space-2);
-  }
-
-  .c-PJLV-cUCkvz-containerSize-sm > button {
-    width: 100%;
   }
 
   .c-fkUJsw-eYnvrx-size-sm {
@@ -1000,6 +928,10 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -1101,10 +1033,6 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iIFRSO-css {
-    padding-right: var(--space-7);
-  }
-
   .c-jryFOR-ikcBoOs-css {
     color: var(--colors-base1);
     margin-bottom: 16px;
@@ -1142,35 +1070,27 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
       <div
         class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
       >
-        <div
-          class="c-PJLV c-PJLV-iIFRSO-css"
+        <h2
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
         >
-          <div
-            class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
-          >
-            <h2
-              class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
-            >
-              Get ready for entrance exams
-            </h2>
-            <p
-              class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
-            >
-              Talk to our admissions experts on to learn how to support your child. This is an example lor!
-            </p>
-          </div>
-        </div>
+          Get ready for entrance exams
+        </h2>
+        <p
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
+        >
+          Talk to our admissions experts on to learn how to support your child. This is an example lor!
+        </p>
         <div
-          class="c-dhzjXW c-PJLV c-PJLV-cUCkvz-containerSize-sm"
+          class="c-dhzjXW c-PJLV c-PJLV-bjjJAZ-containerSize-sm"
         >
           <button
-            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-iRJCoR-cv"
+            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iRJCoR-cv"
             type="button"
           >
             Contact an expert
           </button>
           <button
-            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-bznQva-cv"
+            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-bznQva-cv"
             type="button"
           >
             Secondary
@@ -1373,14 +1293,6 @@ exports[`BannerRegular component renders md variant 1`] = `
     flex: auto;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -1455,28 +1367,6 @@ exports[`BannerRegular component renders md variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-jgdwfn-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
   .c-jryFOR-dtbHih-size-sm {
     font-size: var(--fontSizes-lg);
     line-height: 1.14;
@@ -1515,13 +1405,9 @@ exports[`BannerRegular component renders md variant 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-PJLV-cUCkvz-containerSize-sm {
+  .c-PJLV-bjjJAZ-containerSize-sm {
     flex-direction: column;
     gap: var(--space-2);
-  }
-
-  .c-PJLV-cUCkvz-containerSize-sm > button {
-    width: 100%;
   }
 
   .c-fkUJsw-eYnvrx-size-sm {
@@ -1530,6 +1416,10 @@ exports[`BannerRegular component renders md variant 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -1556,8 +1446,8 @@ exports[`BannerRegular component renders md variant 1`] = `
     color: white;
   }
 
-  .c-dEcWCe-oFCfk-size-md {
-    min-width: 737px;
+  .c-dEcWCe-isEXbR-size-md {
+    min-width: 736px;
   }
 
   .c-PJLV-gwWsyo-size-md {
@@ -1597,6 +1487,10 @@ exports[`BannerRegular component renders md variant 1`] = `
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+  }
+
+  .c-fkUJsw-djDtlJ-fullWidth-false {
+    width: max-content;
   }
 }
 
@@ -1717,10 +1611,6 @@ exports[`BannerRegular component renders md variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iIFRSO-css {
-    padding-right: var(--space-7);
-  }
-
   .c-jryFOR-ikcBoOs-css {
     color: var(--colors-base1);
     margin-bottom: 16px;
@@ -1765,40 +1655,32 @@ exports[`BannerRegular component renders md variant 1`] = `
     role="banner"
   >
     <div
-      class="c-dhzjXW c-dEcWCe c-dEcWCe-oFCfk-size-md"
+      class="c-dhzjXW c-dEcWCe c-dEcWCe-isEXbR-size-md"
     >
       <div
         class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ifwbbOv-css"
       >
-        <div
-          class="c-PJLV c-PJLV-iIFRSO-css"
+        <h2
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ifdDLRs-css"
         >
-          <div
-            class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
-          >
-            <h2
-              class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ifdDLRs-css"
-            >
-              Get ready for entrance exams
-            </h2>
-            <p
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-idkXaeX-css"
-            >
-              Talk to our admissions experts on to learn how to support your child. This is an example lor!
-            </p>
-          </div>
-        </div>
+          Get ready for entrance exams
+        </h2>
+        <p
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-idkXaeX-css"
+        >
+          Talk to our admissions experts on to learn how to support your child. This is an example lor!
+        </p>
         <div
           class="c-dhzjXW c-PJLV c-PJLV-bzyRwj-containerSize-md"
         >
           <button
-            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-djDtlJ-fullWidth-false c-fkUJsw-gsycxF-cv"
             type="button"
           >
             Contact an expert
           </button>
           <button
-            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fSssiS-cv"
+            class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-djDtlJ-fullWidth-false c-fkUJsw-fSssiS-cv"
             type="button"
           >
             Secondary
@@ -1993,14 +1875,6 @@ exports[`BannerRegular component renders sm variant 1`] = `
     flex: auto;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -2045,28 +1919,6 @@ exports[`BannerRegular component renders sm variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-jgdwfn-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
   .c-jryFOR-dtbHih-size-sm {
     font-size: var(--fontSizes-lg);
     line-height: 1.14;
@@ -2105,13 +1957,9 @@ exports[`BannerRegular component renders sm variant 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-PJLV-cUCkvz-containerSize-sm {
+  .c-PJLV-bjjJAZ-containerSize-sm {
     flex-direction: column;
     gap: var(--space-2);
-  }
-
-  .c-PJLV-cUCkvz-containerSize-sm > button {
-    width: 100%;
   }
 
   .c-fkUJsw-eYnvrx-size-sm {
@@ -2120,6 +1968,10 @@ exports[`BannerRegular component renders sm variant 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
   }
 }
 
@@ -2178,10 +2030,6 @@ exports[`BannerRegular component renders sm variant 1`] = `
     background: var(--colors-base11);
   }
 
-  .c-PJLV-iIFRSO-css {
-    padding-right: var(--space-7);
-  }
-
   .c-jryFOR-ikcBoOs-css {
     color: var(--colors-base1);
     margin-bottom: 16px;
@@ -2203,35 +2051,27 @@ exports[`BannerRegular component renders sm variant 1`] = `
       <div
         class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
       >
-        <div
-          class="c-PJLV c-PJLV-iIFRSO-css"
+        <h2
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
         >
-          <div
-            class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
-          >
-            <h2
-              class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
-            >
-              Get ready for entrance exams
-            </h2>
-            <p
-              class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
-            >
-              Talk to our admissions experts on to learn how to support your child. This is an example lor!
-            </p>
-          </div>
-        </div>
+          Get ready for entrance exams
+        </h2>
+        <p
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
+        >
+          Talk to our admissions experts on to learn how to support your child. This is an example lor!
+        </p>
         <div
-          class="c-dhzjXW c-PJLV c-PJLV-cUCkvz-containerSize-sm"
+          class="c-dhzjXW c-PJLV c-PJLV-bjjJAZ-containerSize-sm"
         >
           <button
-            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-iRJCoR-cv"
+            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iRJCoR-cv"
             type="button"
           >
             Contact an expert
           </button>
           <button
-            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-bznQva-cv"
+            class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-bznQva-cv"
             type="button"
           >
             Secondary

@@ -18,15 +18,11 @@ import { BannerHeading } from './BannerHeading'
 import { BannerImage } from './BannerImage'
 import { BannerText } from './BannerText'
 
-type TBannerRegularProps = React.ComponentProps<typeof Container> &
-  React.ComponentProps<typeof Dismissible> &
-  IBannerContextValue & {
-    dismissible?: boolean
-  }
-
 interface IBannerRegularProps extends IBannerContextValue {
   size: 'sm' | 'md'
-  dismissible?: React.ComponentProps<typeof Dismissible>
+  dismissible?: boolean
+  dismissibleValue?: React.ComponentProps<typeof Dismissible>['value']
+  onDismiss?: React.ComponentProps<typeof Dismissible>['onDismiss']
 }
 const Container = styled(Flex, {
   borderRadius: '$0',
@@ -43,7 +39,7 @@ const Container = styled(Flex, {
         maxWidth: '736px'
       },
       md: {
-        minWidth: '737px'
+        minWidth: '736px'
       }
     }
   }
@@ -87,12 +83,20 @@ export const BannerRegular: React.FC<IBannerRegularProps> & {
   Actions: typeof BannerActions
   Image: typeof BannerImage
   Button: typeof BannerButton
-} = ({ children, size = 'md', colorScheme, emphasis, dismissible, type }) => {
+} = ({
+  children,
+  size = 'md',
+  colorScheme,
+  emphasis,
+  dismissible,
+  dismissibleValue = 'dismiss-banner-regular',
+  onDismiss
+}) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
   return (
     <ColorScheme {...colorScheme} css={{ position: 'relative' }} role="banner">
-      <Dismissible value="dismiss-banner-regular" asChild {...dismissible}>
+      <Dismissible value={dismissibleValue} asChild onDismiss={onDismiss}>
         <>
           {dismissible && (
             <Dismissible.Trigger asChild>
@@ -109,9 +113,7 @@ export const BannerRegular: React.FC<IBannerRegularProps> & {
               </Dismiss>
             </Dismissible.Trigger>
           )}
-          <BannerContext.Provider
-            value={{ colorScheme, size, emphasis, type: 'regular' }}
-          >
+          <BannerContext.Provider value={{ colorScheme, size, emphasis }}>
             <Container size={size}>
               {content}
               {image}

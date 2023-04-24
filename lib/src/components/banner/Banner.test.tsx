@@ -33,7 +33,6 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         size="sm"
-        type="regular"
       />
     )
     expect(container).toMatchSnapshot()
@@ -49,11 +48,9 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         size="sm"
-        type="regular"
-        dismissible={{
-          value: 'dismissible-sm-variant',
-          onDismiss
-        }}
+        dismissible
+        dismissibleValue="dismissible-sm-variant"
+        onDismiss={onDismiss}
       />
     )
     expect(container).toMatchSnapshot()
@@ -70,7 +67,6 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'blue1' }}
         emphasis="lowContrast"
         size="md"
-        type="regular"
       />
     )
     expect(container).toMatchSnapshot()
@@ -86,11 +82,9 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         size="md"
-        type="regular"
-        dismissible={{
-          value: 'dismissible-sm-variant',
-          onDismiss
-        }}
+        dismissible
+        dismissibleValue="dismissible-sm-variant"
+        onDismiss={onDismiss}
       />
     )
     expect(container).toMatchSnapshot()
@@ -107,7 +101,6 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         size="sm"
-        type="regular"
       />
     )
 
