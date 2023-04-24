@@ -191,6 +191,10 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     flex: auto;
   }
 
+  .c-hLMfHx {
+    color: var(--colors-foreground);
+  }
+
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -206,6 +210,10 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
   .c-dyvMgW > .c-dyvMgW:before,
   .c-dyvMgW > .c-dyvMgW:after {
     display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
   }
 
   .c-fkUJsw {
@@ -261,8 +269,13 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     max-width: 736px;
   }
 
-  .c-PJLV-lppGPL-size-sm {
+  .c-hLMfHx-lppGPL-size-sm {
     padding: var(--space-4);
+  }
+
+  .c-hLMfHx-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
   }
 
   .c-jryFOR-dtbHih-size-sm {
@@ -299,8 +312,12 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-llIiIE-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
   }
 
   .c-PJLV-bjjJAZ-containerSize-sm {
@@ -348,9 +365,13 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     min-width: 736px;
   }
 
-  .c-PJLV-gwWsyo-size-md {
+  .c-hLMfHx-gwWsyo-size-md {
     padding: var(--space-24);
     padding-right: var(--space-5);
+  }
+
+  .c-hLMfHx-cnTmsp-emphasis-lowContrast {
+    background: var(--colors-base1);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -370,7 +391,7 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-fXxrna-containerSize-md {
+  .c-bDwMAO-fXxrna-containerSize-md {
     margin-bottom: var(--space-24);
   }
 
@@ -520,32 +541,12 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
     position: relative;
   }
 
-  .c-dhzjXW-ijkmDJi-css {
+  .c-dhzjXW-iiTKOFX-css {
     flex-direction: column;
-    background: var(--colors-base11);
   }
 
-  .c-jryFOR-ikcBoOs-css {
-    color: var(--colors-base1);
+  .c-jryFOR-ieAvGVT-css {
     margin-bottom: 16px;
-  }
-
-  .c-PJLV-ifgLDMq-css {
-    color: var(--colors-grey100);
-  }
-
-  .c-dhzjXW-ifwbbOv-css {
-    flex-direction: column;
-    background: var(--colors-base1);
-  }
-
-  .c-jryFOR-ifdDLRs-css {
-    color: var(--colors-grey1000);
-    margin-bottom: 16px;
-  }
-
-  .c-PJLV-idkXaeX-css {
-    color: var(--colors-tonal900);
   }
 
   .c-dhzjXW-ihvwPrF-css {
@@ -588,15 +589,15 @@ exports[`BannerRegular component renders dismissible md variant 1`] = `
       class="c-dhzjXW c-dEcWCe c-dEcWCe-isEXbR-size-md"
     >
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ijkmDJi-css"
+        class="c-dhzjXW c-hLMfHx c-hLMfHx-gwWsyo-size-md c-hLMfHx-gsNHYh-emphasis-highContrast c-dhzjXW-iiTKOFX-css"
       >
         <h2
-          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ieAvGVT-css"
         >
           Get ready for entrance exams
         </h2>
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-ifgLDMq-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-bDwMAO c-bDwMAO-fXxrna-containerSize-md c-bDwMAO-fgLDMq-emphasis-highContrast"
         >
           Talk to our admissions experts on to learn how to support your child. This is an example lor!
         </p>
@@ -805,6 +806,10 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     flex: auto;
   }
 
+  .c-hLMfHx {
+    color: var(--colors-foreground);
+  }
+
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -820,6 +825,10 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
   .c-dyvMgW > .c-dyvMgW:before,
   .c-dyvMgW > .c-dyvMgW:after {
     display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
   }
 
   .c-fkUJsw {
@@ -875,8 +884,13 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     max-width: 736px;
   }
 
-  .c-PJLV-lppGPL-size-sm {
+  .c-hLMfHx-lppGPL-size-sm {
     padding: var(--space-4);
+  }
+
+  .c-hLMfHx-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
   }
 
   .c-jryFOR-dtbHih-size-sm {
@@ -913,8 +927,12 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-llIiIE-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
   }
 
   .c-PJLV-bjjJAZ-containerSize-sm {
@@ -1028,18 +1046,12 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
     position: relative;
   }
 
-  .c-dhzjXW-ijkmDJi-css {
+  .c-dhzjXW-iiTKOFX-css {
     flex-direction: column;
-    background: var(--colors-base11);
   }
 
-  .c-jryFOR-ikcBoOs-css {
-    color: var(--colors-base1);
+  .c-jryFOR-ieAvGVT-css {
     margin-bottom: 16px;
-  }
-
-  .c-PJLV-ifgLDMq-css {
-    color: var(--colors-grey100);
   }
 }
 
@@ -1068,15 +1080,15 @@ exports[`BannerRegular component renders dismissible sm variant 1`] = `
       class="c-dhzjXW c-dEcWCe c-dEcWCe-iqVFbn-size-sm"
     >
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
+        class="c-dhzjXW c-hLMfHx c-hLMfHx-lppGPL-size-sm c-hLMfHx-gsNHYh-emphasis-highContrast c-dhzjXW-iiTKOFX-css"
       >
         <h2
-          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ieAvGVT-css"
         >
           Get ready for entrance exams
         </h2>
         <p
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast"
         >
           Talk to our admissions experts on to learn how to support your child. This is an example lor!
         </p>
@@ -1293,6 +1305,10 @@ exports[`BannerRegular component renders md variant 1`] = `
     flex: auto;
   }
 
+  .c-hLMfHx {
+    color: var(--colors-foreground);
+  }
+
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -1308,6 +1324,10 @@ exports[`BannerRegular component renders md variant 1`] = `
   .c-dyvMgW > .c-dyvMgW:before,
   .c-dyvMgW > .c-dyvMgW:after {
     display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
   }
 
   .c-fkUJsw {
@@ -1363,8 +1383,13 @@ exports[`BannerRegular component renders md variant 1`] = `
     max-width: 736px;
   }
 
-  .c-PJLV-lppGPL-size-sm {
+  .c-hLMfHx-lppGPL-size-sm {
     padding: var(--space-4);
+  }
+
+  .c-hLMfHx-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
   }
 
   .c-jryFOR-dtbHih-size-sm {
@@ -1401,8 +1426,12 @@ exports[`BannerRegular component renders md variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-llIiIE-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
   }
 
   .c-PJLV-bjjJAZ-containerSize-sm {
@@ -1450,9 +1479,13 @@ exports[`BannerRegular component renders md variant 1`] = `
     min-width: 736px;
   }
 
-  .c-PJLV-gwWsyo-size-md {
+  .c-hLMfHx-gwWsyo-size-md {
     padding: var(--space-24);
     padding-right: var(--space-5);
+  }
+
+  .c-hLMfHx-cnTmsp-emphasis-lowContrast {
+    background: var(--colors-base1);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -1472,7 +1505,7 @@ exports[`BannerRegular component renders md variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-fXxrna-containerSize-md {
+  .c-bDwMAO-fXxrna-containerSize-md {
     margin-bottom: var(--space-24);
   }
 
@@ -1606,32 +1639,12 @@ exports[`BannerRegular component renders md variant 1`] = `
     position: relative;
   }
 
-  .c-dhzjXW-ijkmDJi-css {
+  .c-dhzjXW-iiTKOFX-css {
     flex-direction: column;
-    background: var(--colors-base11);
   }
 
-  .c-jryFOR-ikcBoOs-css {
-    color: var(--colors-base1);
+  .c-jryFOR-ieAvGVT-css {
     margin-bottom: 16px;
-  }
-
-  .c-PJLV-ifgLDMq-css {
-    color: var(--colors-grey100);
-  }
-
-  .c-dhzjXW-ifwbbOv-css {
-    flex-direction: column;
-    background: var(--colors-base1);
-  }
-
-  .c-jryFOR-ifdDLRs-css {
-    color: var(--colors-grey1000);
-    margin-bottom: 16px;
-  }
-
-  .c-PJLV-idkXaeX-css {
-    color: var(--colors-tonal900);
   }
 
   .c-dhzjXW-ihvwPrF-css {
@@ -1658,15 +1671,15 @@ exports[`BannerRegular component renders md variant 1`] = `
       class="c-dhzjXW c-dEcWCe c-dEcWCe-isEXbR-size-md"
     >
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-gwWsyo-size-md c-dhzjXW-ifwbbOv-css"
+        class="c-dhzjXW c-hLMfHx c-hLMfHx-gwWsyo-size-md c-hLMfHx-cnTmsp-emphasis-lowContrast c-dhzjXW-iiTKOFX-css"
       >
         <h2
-          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ifdDLRs-css"
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ieAvGVT-css"
         >
           Get ready for entrance exams
         </h2>
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-PJLV c-PJLV-fXxrna-containerSize-md c-PJLV-idkXaeX-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-bDwMAO c-bDwMAO-fXxrna-containerSize-md"
         >
           Talk to our admissions experts on to learn how to support your child. This is an example lor!
         </p>
@@ -1875,6 +1888,10 @@ exports[`BannerRegular component renders sm variant 1`] = `
     flex: auto;
   }
 
+  .c-hLMfHx {
+    color: var(--colors-foreground);
+  }
+
   .c-jryFOR {
     font-family: var(--fonts-display);
     font-weight: 700;
@@ -1890,6 +1907,10 @@ exports[`BannerRegular component renders sm variant 1`] = `
   .c-dyvMgW > .c-dyvMgW:before,
   .c-dyvMgW > .c-dyvMgW:after {
     display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
   }
 
   .c-fkUJsw {
@@ -1915,8 +1936,13 @@ exports[`BannerRegular component renders sm variant 1`] = `
     max-width: 736px;
   }
 
-  .c-PJLV-lppGPL-size-sm {
+  .c-hLMfHx-lppGPL-size-sm {
     padding: var(--space-4);
+  }
+
+  .c-hLMfHx-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
   }
 
   .c-jryFOR-dtbHih-size-sm {
@@ -1953,8 +1979,12 @@ exports[`BannerRegular component renders sm variant 1`] = `
     display: table;
   }
 
-  .c-PJLV-llIiIE-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
   }
 
   .c-PJLV-bjjJAZ-containerSize-sm {
@@ -2025,18 +2055,12 @@ exports[`BannerRegular component renders sm variant 1`] = `
     position: relative;
   }
 
-  .c-dhzjXW-ijkmDJi-css {
+  .c-dhzjXW-iiTKOFX-css {
     flex-direction: column;
-    background: var(--colors-base11);
   }
 
-  .c-jryFOR-ikcBoOs-css {
-    color: var(--colors-base1);
+  .c-jryFOR-ieAvGVT-css {
     margin-bottom: 16px;
-  }
-
-  .c-PJLV-ifgLDMq-css {
-    color: var(--colors-grey100);
   }
 }
 
@@ -2049,15 +2073,15 @@ exports[`BannerRegular component renders sm variant 1`] = `
       class="c-dhzjXW c-dEcWCe c-dEcWCe-iqVFbn-size-sm"
     >
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-lppGPL-size-sm c-dhzjXW-ijkmDJi-css"
+        class="c-dhzjXW c-hLMfHx c-hLMfHx-lppGPL-size-sm c-hLMfHx-gsNHYh-emphasis-highContrast c-dhzjXW-iiTKOFX-css"
       >
         <h2
-          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ikcBoOs-css"
+          class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ieAvGVT-css"
         >
           Get ready for entrance exams
         </h2>
         <p
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-ifgLDMq-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast"
         >
           Talk to our admissions experts on to learn how to support your child. This is an example lor!
         </p>

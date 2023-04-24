@@ -3,10 +3,10 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { Text } from '../text'
-import { resolveEmphasis } from './Banner.utils'
 import { useBannerContext } from './BannerContext'
 
 const StyledText = styled(Text, {
+  color: '$grey900',
   variants: {
     containerSize: {
       sm: {
@@ -15,22 +15,27 @@ const StyledText = styled(Text, {
       md: {
         mb: '$24'
       }
+    },
+    emphasis: {
+      highContrast: {
+        color: '$grey100'
+      },
+      midContrast: {},
+      lowContrast: {}
     }
   }
 })
 
-export const BannerText: React.FC<React.ComponentProps<typeof Text>> = ({
-  css,
-  ...props
-}) => {
+export const BannerText: React.FC<React.ComponentProps<typeof Text>> = (
+  props
+) => {
   const { emphasis, size } = useBannerContext()
-  const color = resolveEmphasis('description', emphasis)
 
   return (
     <StyledText
       size={size}
       containerSize={size}
-      css={{ color, ...css }}
+      emphasis={emphasis}
       {...props}
     />
   )

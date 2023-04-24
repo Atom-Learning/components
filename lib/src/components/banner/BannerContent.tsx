@@ -3,10 +3,10 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
-import { resolveEmphasis } from './Banner.utils'
 import { useBannerContext } from './BannerContext'
 
 const Container = styled(Flex, {
+  color: '$foreground',
   variants: {
     size: {
       sm: {
@@ -16,6 +16,18 @@ const Container = styled(Flex, {
         p: '$24',
         pr: '$5'
       }
+    },
+    emphasis: {
+      highContrast: {
+        background: '$base11',
+        color: '$foreground7plus'
+      },
+      midContrast: {
+        background: '$base3'
+      },
+      lowContrast: {
+        background: '$base1'
+      }
     }
   }
 })
@@ -23,13 +35,13 @@ const Container = styled(Flex, {
 export const BannerContent: React.FC<
   React.ComponentProps<typeof Container>
 > = ({ css, children, ...props }) => {
-  const { emphasis, size } = useBannerContext()
-  const background = resolveEmphasis('background', emphasis)
+  const { size, emphasis } = useBannerContext()
 
   return (
     <Container
       size={size}
-      css={{ flexDirection: 'column', background, ...css }}
+      css={{ flexDirection: 'column', ...css }}
+      emphasis={emphasis}
       {...props}
     >
       {children}
