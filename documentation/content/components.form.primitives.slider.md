@@ -18,7 +18,7 @@ tabs:
       Please note: the `value` or `defaultValue` passed in should always be an array.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} css={{ width: '320px' }} />`} language={"tsx"} />
+      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} />`} language={"tsx"} />
 
 
       ## Multiple Values
@@ -27,7 +27,7 @@ tabs:
       Should you wish to have more than one control on the slider, you can pass those values in the array.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[25, 75]} css={{ width: '320px' }} />`} language={"tsx"} />
+      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[25, 75]} />`} language={"tsx"} />
 
 
       ## Slider.Steps
@@ -42,7 +42,7 @@ tabs:
       Note: it is likely better to create steps as a constant and pass in with `steps={steps}` or similar, but this preview code cannot see values outside of JSX.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} css={{ width: '320px' }}>
+      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]}>
         <Slider.Steps
           min={0}
           max={100}
@@ -61,7 +61,7 @@ tabs:
       `Slider.Steps` work well with the built in `step` property, which defaults to 1 and changes the size of each movement. For example, this would limit the slider to three values only.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} min={10} max={20} step={5}>
+      <CodeBlock live={true} preview={true} code={`<Slider min={10} max={20} step={5}>
         <Slider.Steps
           min={10}
           max={20}
@@ -80,7 +80,7 @@ tabs:
       A separate component exists to output the value from a slider. This is most commonly used within the `SliderField`, but is here in case you need to compose your own complex component.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} css={{ width: '320px' }}>
+      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]}>
         {/*
          \* The Slider.Value value must be manually controlled using onValueChange
          \* from Slider. This is a visual example of how would render Slider.Value
@@ -96,7 +96,7 @@ tabs:
       You can also use this is in more complex ways, for example to set empty states and pluralisation, like below.
 
 
-      <CodeBlock live={false} preview={false} code={`<Slider defaultValue={[50]} css={{ width: '320px' }}>
+      <CodeBlock live={false} preview={false} code={`<Slider defaultValue={[50]}>
         <Slider.Value
           value={[50]}
           outputLabel={(value) =>  value === 0
@@ -123,7 +123,7 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Box css={{ p: '$5', bg: '$tonal100' }}>
-        <Slider theme="light" defaultValue={[50]} css={{ width: '320px' }} />
+        <Slider theme="light" defaultValue={[50]} />
       </Box>`} language={"tsx"} />
 
 

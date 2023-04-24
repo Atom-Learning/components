@@ -49,7 +49,7 @@ export const SliderSteps: React.FC<SliderStepsProps> = ({
             position: 'absolute',
             color: '$tonal300'
           }}
-          style={{
+          style={{ // This only works for horizontal AND requires double the props passing down. ugh
             left: `${getPercentValue(step.value, min, max)}%`,
             transform: `translateX(-${getTransformValue(
               step.value,

@@ -1,8 +1,9 @@
 import { Range, Root, Thumb, Track } from '@radix-ui/react-slider'
 import * as React from 'react'
+import { focusVisibleStyleBlock } from '~/utilities'
 
 import { styled } from '~/stitches'
-import { CSSWrapper } from '~/utilities'
+import { Box } from '~/components/box'
 
 import { SliderSteps } from './SliderSteps'
 import { SliderValue } from './SliderValue'
@@ -16,6 +17,7 @@ const StyledTrack = styled(Track, {
 })
 
 const StyledSlider = styled(Root, {
+  background: 'red',
   alignItems: 'center',
   display: 'flex',
   position: 'relative',
@@ -23,13 +25,18 @@ const StyledSlider = styled(Root, {
   userSelect: 'none',
   cursor: 'pointer',
   '&[data-orientation="horizontal"]': {
-    height: '$1'
+    height: '$1',
+    width: '100%'
   },
   '&[data-orientation="vertical"]': {
     flexDirection: 'column',
-    width: '$1'
+    width: '$1',
+    height: '100%'
   },
-  '&[data-disabled]': { cursor: 'not-allowed', bg: '$tonal100' },
+  '&[data-disabled]': {
+    opacity: 0.3,
+    cursor: 'not-allowed'
+  },
   variants: {
     theme: {
       light: {
@@ -46,8 +53,7 @@ const StyledRange = styled(Range, {
   bg: '$primary',
   borderRadius: '$round',
   height: '100%',
-  position: 'absolute',
-  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
+  position: 'absolute'
 })
 
 const StyledThumb = styled(Thumb, {
@@ -58,11 +64,9 @@ const StyledThumb = styled(Thumb, {
   '&:hover': {
     bg: '$primaryDark'
   },
-  '&:focus': {
-    outline: '2px solid $primaryMid',
-    outlineOffset: '2px'
-  },
-  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
+  '&:focus-visible': {
+    ...focusVisibleStyleBlock()
+  }
 })
 
 export type SliderProps = React.ComponentProps<typeof StyledSlider>
@@ -82,13 +86,18 @@ export const Slider: SliderType = React.forwardRef(
       theme = 'tonal',
       css,
       children,
+      orientation,
       ...remainingProps
     },
     ref
   ) => {
     const values = value || defaultValue
     return (
-      <CSSWrapper css={css}>
+      <Box css={{
+        width: orientation !== 'vertical' ? 100 : 'auto',
+        height: orientation === 'vertical' ? 100 : 'auto',
+        ...css
+      }}>
         <StyledSlider
           theme={theme}
           defaultValue={defaultValue}
@@ -96,6 +105,7 @@ export const Slider: SliderType = React.forwardRef(
           min={min}
           max={max}
           ref={ref}
+          orientation={orientation}
           {...remainingProps}
         >
           <StyledTrack>
@@ -105,7 +115,7 @@ export const Slider: SliderType = React.forwardRef(
             values.map((_, i) => <StyledThumb key={`thumb${i}`} />)}
         </StyledSlider>
         {children}
-      </CSSWrapper>
+      </Box>
     )
   }
 ) as SliderType

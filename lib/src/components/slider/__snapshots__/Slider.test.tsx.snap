@@ -2,16 +2,11 @@
 
 exports[`Slider component renders 1`] = `
 @media  {
-  .c-bOJGDH {
+  .c-kpcewD {
     background: var(--colors-primary);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
-  }
-
-  .c-bOJGDH[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
   }
 
   .c-nJgcq {
@@ -28,7 +23,7 @@ exports[`Slider component renders 1`] = `
     width: var(--space-1);
   }
 
-  .c-gCMpHY {
+  .c-fulXRN {
     background: var(--colors-primaryMid);
     border-radius: var(--radii-round);
     display: block;
@@ -36,21 +31,19 @@ exports[`Slider component renders 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-gCMpHY:hover {
+  .c-fulXRN:hover {
     background: var(--colors-primaryDark);
   }
 
-  .c-gCMpHY:focus {
-    outline: 2px solid var(--colors-primaryMid);
-    outline-offset: 2px;
+  .c-fulXRN:focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-gCMpHY[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
-  }
-
-  .c-eqsMSy {
+  .c-kLXlVQ {
+    background: red;
     align-items: center;
     display: flex;
     position: relative;
@@ -60,77 +53,85 @@ exports[`Slider component renders 1`] = `
     cursor: pointer;
   }
 
-  .c-eqsMSy[data-orientation="horizontal"] {
+  .c-kLXlVQ[data-orientation="horizontal"] {
     height: var(--sizes-1);
+    width: 100%;
   }
 
-  .c-eqsMSy[data-orientation="vertical"] {
+  .c-kLXlVQ[data-orientation="vertical"] {
     flex-direction: column;
     width: var(--sizes-1);
+    height: 100%;
   }
 
-  .c-eqsMSy[data-disabled] {
+  .c-kLXlVQ[data-disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
-    background: var(--colors-tonal100);
   }
 }
 
 @media  {
-  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
+  .c-kLXlVQ-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
   }
 }
 
+@media  {
+  .c-PJLV-ihXBgCy-css {
+    width: 100px;
+    height: auto;
+  }
+}
+
 <div>
-  <span
-    aria-disabled="false"
-    class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
-    data-orientation="horizontal"
-    dir="ltr"
-    style="--radix-slider-thumb-transform: translateX(-50%);"
+  <div
+    class="c-PJLV c-PJLV-ihXBgCy-css"
   >
     <span
-      class="c-nJgcq"
+      aria-disabled="false"
+      class="c-kLXlVQ c-kLXlVQ-dOexvR-theme-tonal"
       data-orientation="horizontal"
+      dir="ltr"
+      style="--radix-slider-thumb-transform: translateX(-50%);"
     >
       <span
-        class="c-bOJGDH"
+        class="c-nJgcq"
         data-orientation="horizontal"
-        style="left: 0%; right: 50%;"
-      />
-    </span>
-    <span
-      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
-    >
+      >
+        <span
+          class="c-kpcewD"
+          data-orientation="horizontal"
+          style="left: 0%; right: 50%;"
+        />
+      </span>
       <span
-        aria-orientation="horizontal"
-        aria-valuemax="100"
-        aria-valuemin="0"
-        aria-valuenow="50"
-        class="c-gCMpHY"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        role="slider"
-        style=""
-        tabindex="0"
-      />
+        style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
+      >
+        <span
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="50"
+          class="c-fulXRN"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          role="slider"
+          style=""
+          tabindex="0"
+        />
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Slider component renders with a steps list 1`] = `
 @media  {
-  .c-bOJGDH {
+  .c-kpcewD {
     background: var(--colors-primary);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
-  }
-
-  .c-bOJGDH[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
   }
 
   .c-nJgcq {
@@ -147,7 +148,7 @@ exports[`Slider component renders with a steps list 1`] = `
     width: var(--space-1);
   }
 
-  .c-gCMpHY {
+  .c-fulXRN {
     background: var(--colors-primaryMid);
     border-radius: var(--radii-round);
     display: block;
@@ -155,21 +156,19 @@ exports[`Slider component renders with a steps list 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-gCMpHY:hover {
+  .c-fulXRN:hover {
     background: var(--colors-primaryDark);
   }
 
-  .c-gCMpHY:focus {
-    outline: 2px solid var(--colors-primaryMid);
-    outline-offset: 2px;
+  .c-fulXRN:focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-gCMpHY[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
-  }
-
-  .c-eqsMSy {
+  .c-kLXlVQ {
+    background: red;
     align-items: center;
     display: flex;
     position: relative;
@@ -179,78 +178,86 @@ exports[`Slider component renders with a steps list 1`] = `
     cursor: pointer;
   }
 
-  .c-eqsMSy[data-orientation="horizontal"] {
+  .c-kLXlVQ[data-orientation="horizontal"] {
     height: var(--sizes-1);
+    width: 100%;
   }
 
-  .c-eqsMSy[data-orientation="vertical"] {
+  .c-kLXlVQ[data-orientation="vertical"] {
     flex-direction: column;
     width: var(--sizes-1);
+    height: 100%;
   }
 
-  .c-eqsMSy[data-disabled] {
+  .c-kLXlVQ[data-disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
-    background: var(--colors-tonal100);
   }
 }
 
 @media  {
-  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
+  .c-kLXlVQ-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
   }
 }
 
+@media  {
+  .c-PJLV-ihXBgCy-css {
+    width: 100px;
+    height: auto;
+  }
+}
+
 <div>
-  <span
-    aria-disabled="false"
-    class="c-eqsMSy c-eqsMSy-dOexvR-theme-tonal"
-    data-orientation="horizontal"
-    dir="ltr"
-    steps="[object Object],[object Object],[object Object]"
-    style="--radix-slider-thumb-transform: translateX(-50%);"
+  <div
+    class="c-PJLV c-PJLV-ihXBgCy-css"
   >
     <span
-      class="c-nJgcq"
+      aria-disabled="false"
+      class="c-kLXlVQ c-kLXlVQ-dOexvR-theme-tonal"
       data-orientation="horizontal"
+      dir="ltr"
+      steps="[object Object],[object Object],[object Object]"
+      style="--radix-slider-thumb-transform: translateX(-50%);"
     >
       <span
-        class="c-bOJGDH"
+        class="c-nJgcq"
         data-orientation="horizontal"
-        style="left: 0%; right: 50%;"
-      />
-    </span>
-    <span
-      style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
-    >
+      >
+        <span
+          class="c-kpcewD"
+          data-orientation="horizontal"
+          style="left: 0%; right: 50%;"
+        />
+      </span>
       <span
-        aria-orientation="horizontal"
-        aria-valuemax="100"
-        aria-valuemin="0"
-        aria-valuenow="50"
-        class="c-gCMpHY"
-        data-orientation="horizontal"
-        data-radix-collection-item=""
-        role="slider"
-        style=""
-        tabindex="0"
-      />
+        style="transform: var(--radix-slider-thumb-transform); position: absolute; left: calc(50% + 0px);"
+      >
+        <span
+          aria-orientation="horizontal"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow="50"
+          class="c-fulXRN"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          role="slider"
+          style=""
+          tabindex="0"
+        />
+      </span>
     </span>
-  </span>
+  </div>
 </div>
 `;
 
 exports[`Slider.Value component renders 1`] = `
 @media  {
-  .c-bOJGDH {
+  .c-kpcewD {
     background: var(--colors-primary);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
-  }
-
-  .c-bOJGDH[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
   }
 
   .c-nJgcq {
@@ -267,7 +274,7 @@ exports[`Slider.Value component renders 1`] = `
     width: var(--space-1);
   }
 
-  .c-gCMpHY {
+  .c-fulXRN {
     background: var(--colors-primaryMid);
     border-radius: var(--radii-round);
     display: block;
@@ -275,21 +282,19 @@ exports[`Slider.Value component renders 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-gCMpHY:hover {
+  .c-fulXRN:hover {
     background: var(--colors-primaryDark);
   }
 
-  .c-gCMpHY:focus {
-    outline: 2px solid var(--colors-primaryMid);
-    outline-offset: 2px;
+  .c-fulXRN:focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-gCMpHY[data-disabled] {
-    background: var(--colors-tonal200);
-    cursor: not-allowed;
-  }
-
-  .c-eqsMSy {
+  .c-kLXlVQ {
+    background: red;
     align-items: center;
     display: flex;
     position: relative;
@@ -299,18 +304,20 @@ exports[`Slider.Value component renders 1`] = `
     cursor: pointer;
   }
 
-  .c-eqsMSy[data-orientation="horizontal"] {
+  .c-kLXlVQ[data-orientation="horizontal"] {
     height: var(--sizes-1);
+    width: 100%;
   }
 
-  .c-eqsMSy[data-orientation="vertical"] {
+  .c-kLXlVQ[data-orientation="vertical"] {
     flex-direction: column;
     width: var(--sizes-1);
+    height: 100%;
   }
 
-  .c-eqsMSy[data-disabled] {
+  .c-kLXlVQ[data-disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
-    background: var(--colors-tonal100);
   }
 
   .c-dyvMgW {
@@ -326,7 +333,7 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-eqsMSy-dOexvR-theme-tonal .c-nJgcq {
+  .c-kLXlVQ-dOexvR-theme-tonal .c-nJgcq {
     background: var(--colors-tonal200);
   }
 
@@ -349,6 +356,11 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
+  .c-PJLV-ihXBgCy-css {
+    width: 100px;
+    height: auto;
+  }
+
   .c-dyvMgW-iQwDky-css {
     margin-top: var(--space-4);
     color: var(--colors-tonal300);
