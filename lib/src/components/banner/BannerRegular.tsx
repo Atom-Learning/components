@@ -1,14 +1,11 @@
 import * as React from 'react'
-import { Close } from '@atom-learning/icons'
 
 import { ColorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { findChildByType } from '~/utilities'
-import { ActionIcon } from '../action-icon'
 import { Dismissible } from '../dismissible'
 
 import { Flex } from '../flex'
-import { Icon } from '../icon'
 import { IBannerContextValue } from './Banner.types'
 import { BannerActions } from './BannerActions'
 import { BannerButton } from './BannerButton'
@@ -17,10 +14,10 @@ import { BannerContext } from './BannerContext'
 import { BannerHeading } from './BannerHeading'
 import { BannerImage } from './BannerImage'
 import { BannerText } from './BannerText'
+import { BannerDismiss } from './BannerDismiss'
 
 interface IBannerRegularProps extends IBannerContextValue {
   size: 'sm' | 'md'
-  dismissible?: boolean
   dismissibleValue?: React.ComponentProps<typeof Dismissible>['value']
   onDismiss?: React.ComponentProps<typeof Dismissible>['onDismiss']
 }
@@ -45,37 +42,6 @@ const Container = styled(Flex, {
   }
 })
 
-const Dismiss = styled(ActionIcon, {
-  position: 'absolute',
-  top: '12px',
-  right: '12px',
-  variants: {
-    containerSize: {
-      sm: {
-        '&:not(:disabled)': {
-          bg: 'transparent',
-          color: '$grey800'
-        }
-      },
-      md: {
-        '&:not(:disabled)': {
-          bg: 'white',
-          color: '$grey800'
-        }
-      }
-    },
-    emphasis: {
-      highContrast: {
-        '&:not(:disabled)': {
-          color: 'white'
-        }
-      },
-      midContrast: {},
-      lowContrast: {}
-    }
-  }
-})
-
 export const BannerRegular: React.FC<IBannerRegularProps> & {
   Content: typeof BannerContent
   Heading: typeof BannerHeading
@@ -83,43 +49,29 @@ export const BannerRegular: React.FC<IBannerRegularProps> & {
   Actions: typeof BannerActions
   Image: typeof BannerImage
   Button: typeof BannerButton
+  Dismiss: typeof BannerDismiss
 } = ({
   children,
   size = 'md',
   colorScheme,
   emphasis,
-  dismissible,
   dismissibleValue = 'dismiss-banner-regular',
   onDismiss
 }) => {
   const content = findChildByType(children, BannerContent)
   const image = findChildByType(children, BannerImage)
+  const dismiss = findChildByType(children, BannerDismiss)
+
   return (
     <ColorScheme {...colorScheme} css={{ position: 'relative' }} role="banner">
       <Dismissible value={dismissibleValue} asChild onDismiss={onDismiss}>
-        <>
-          {dismissible && (
-            <Dismissible.Trigger asChild>
-              <Dismiss
-                size={size === 'sm' ? 'md' : 'sm'}
-                label="dismiss"
-                hasTooltip={false}
-                isRounded
-                containerSize={size}
-                emphasis={emphasis}
-                theme="neutral"
-              >
-                <Icon is={Close} />
-              </Dismiss>
-            </Dismissible.Trigger>
-          )}
-          <BannerContext.Provider value={{ colorScheme, size, emphasis }}>
-            <Container size={size}>
-              {content}
-              {image}
-            </Container>
-          </BannerContext.Provider>
-        </>
+        <BannerContext.Provider value={{ colorScheme, size, emphasis }}>
+          {dismiss}
+          <Container size={size}>
+            {content}
+            {image}
+          </Container>
+        </BannerContext.Provider>
       </Dismissible>
     </ColorScheme>
   )
@@ -131,5 +83,6 @@ BannerRegular.Text = BannerText
 BannerRegular.Actions = BannerActions
 BannerRegular.Image = BannerImage
 BannerRegular.Button = BannerButton
+BannerRegular.Dismiss = BannerDismiss
 
 BannerRegular.displayName = 'BannerRegular'
