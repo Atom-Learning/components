@@ -1,1 +1,0 @@
-export { findChildByType } from './findChildByType'
