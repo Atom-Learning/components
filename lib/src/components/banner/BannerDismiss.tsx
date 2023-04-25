@@ -1,65 +1,50 @@
 import * as React from 'react'
 import { Close } from '@atom-learning/icons'
 
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+
 import { styled } from '~/stitches'
 
 import { ActionIcon } from '../action-icon'
-import { Dismissible } from '../dismissible'
+import { Banner } from './Banner'
 import { Icon } from '../icon'
 import { useBannerContext } from './BannerContext'
 
-const Dismiss = styled(ActionIcon, {
+const toActionIconSize = {
+  sm: 'md',
+  md: 'sm'
+}
+
+const StyledDismiss = styled(ActionIcon, {
   position: 'absolute',
-  top: '12px',
-  right: '12px',
-  variants: {
-    containerSize: {
-      sm: {
-        '&:not(:disabled)': {
-          bg: 'transparent',
-          color: '$grey800'
-        }
-      },
-      md: {
-        '&:not(:disabled)': {
-          bg: 'white',
-          color: '$grey800'
-        }
-      }
-    },
-    emphasis: {
-      highContrast: {
-        '&:not(:disabled)': {
-          color: 'white'
-        }
-      },
-      midContrast: {},
-      lowContrast: {}
-    }
-  }
+  top: '$3',
+  right: '$3'
 })
 
-export const BannerDismiss: React.FC<React.ComponentProps<typeof Dismiss>> = ({
-  label = 'dismiss',
-  ...props
-}) => {
-  const { emphasis, size } = useBannerContext()
+export const BannerDismiss: React.FC<
+  React.ComponentProps<typeof ActionIcon>
+> = ({ label = 'dismiss', ...rest }) => {
+  const { size } = useBannerContext()
+
+  const actionIconSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toActionIconSize[s]),
+    [size]
+  )
 
   return (
-    <Dismissible.Trigger asChild>
-      <Dismiss
-        size={size === 'sm' ? 'md' : 'sm'}
+    <Banner.Dismiss asChild>
+      <StyledDismiss
+        label={label}
+        size={actionIconSize}
         hasTooltip={false}
         isRounded
-        containerSize={size}
-        emphasis={emphasis}
         theme="neutral"
-        label={label}
-        {...props}
+        appearance="solid"
+        {...rest}
       >
         <Icon is={Close} />
-      </Dismiss>
-    </Dismissible.Trigger>
+      </StyledDismiss>
+    </Banner.Dismiss>
   )
 }
 

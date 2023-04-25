@@ -2,11 +2,12 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Flex } from '../flex'
-import { resolveEmphasis } from './Banner.utils'
+import { Box } from '../box'
 import { useBannerContext } from './BannerContext'
 
-const Container = styled(Flex, {
+const Container = styled(Box, {
+  width: '62%',
+  flexGrow: 1,
   variants: {
     size: {
       sm: {
@@ -20,21 +21,12 @@ const Container = styled(Flex, {
   }
 })
 
-export const BannerContent: React.FC<
-  React.ComponentProps<typeof Container>
-> = ({ css, children, ...props }) => {
-  const { emphasis, size } = useBannerContext()
-  const background = resolveEmphasis('background', emphasis)
+export const BannerContent: React.FC<React.ComponentProps<typeof Container>> = (
+  props
+) => {
+  const { size } = useBannerContext()
 
-  return (
-    <Container
-      size={size}
-      css={{ flexDirection: 'column', background, ...css }}
-      {...props}
-    >
-      {children}
-    </Container>
-  )
+  return <Container size={size} {...props} />
 }
 
 BannerContent.displayName = 'BannerContent'

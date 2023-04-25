@@ -1,17 +1,30 @@
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { Heading } from '../heading'
-import { resolveEmphasis } from './Banner.utils'
 import { useBannerContext } from './BannerContext'
 
-export const BannerHeading: React.FC<React.ComponentProps<typeof Heading>> = ({
-  css,
-  ...props
-}) => {
-  const { emphasis } = useBannerContext()
-  const color = resolveEmphasis('title', emphasis)
+const StyledHeading = styled(Heading, {
+  mb: '$4',
+  variants: {
+    containerSize: {
+      sm: {
+        mr: '$6'
+      },
+      md: {
+        mr: 0
+      }
+    }
+  }
+})
 
-  return <Heading size="sm" css={{ color, mb: '16px', ...css }} {...props} />
+export const BannerHeading: React.FC<React.ComponentProps<typeof Heading>> = (
+  props
+) => {
+  const { size } = useBannerContext()
+
+  return <StyledHeading size="sm" containerSize={size} {...props} />
 }
 
 BannerHeading.displayName = 'BannerHeading'
