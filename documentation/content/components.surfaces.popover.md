@@ -30,8 +30,7 @@ tabs:
             Popover
           </Heading>
           <Text size="sm">
-            The `Popover` can display any type of element as a trigger and has the
-            content hidden by default
+            The "Popover" can display any type of element as a trigger and has the content hidden by default
           </Text>
         </Popover.Content>
       </Popover>`} language={"tsx"} />
