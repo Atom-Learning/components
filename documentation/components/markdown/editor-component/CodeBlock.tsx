@@ -42,28 +42,33 @@ const StyledLiveError = styled(LiveError, {
   fontSize: '$sm'
 })
 
-export const CodeBlock: React.FC<CodeBlockProps> = React.memo(({
-  code,
-  language,
-  live,
-  preview
-}) => {
-  if (!code) return null
+export const CodeBlock: React.FC<CodeBlockProps> = React.memo(
+  ({ code, language, live, preview }) => {
+    if (!code) return null
 
-  const scope = { ...Icons, ...Components }
+    const scope = { ...Icons, ...Components }
 
-  const isEditorDisabled = !(live && preview)
+    const isEditorDisabled = !(live && preview)
 
-  return (
-    <LiveProvider code={code} scope={scope} theme={theme} language={language} disabled={isEditorDisabled}>
-      {preview && (<>
-        <StyledLivePreview />
-        <StyledLiveError />
-      </>)}
-      <StyledCode>
-        <StyledLiveEditor tabMode="focus" />
-      </StyledCode>
-    </LiveProvider>
-  )
-})
-CodeBlock.displayName = "CodeBlock"
+    return (
+      <LiveProvider
+        code={code}
+        scope={scope}
+        theme={theme}
+        language={language}
+        disabled={isEditorDisabled}
+      >
+        {preview && (
+          <>
+            <StyledLivePreview />
+            <StyledLiveError />
+          </>
+        )}
+        <StyledCode>
+          <StyledLiveEditor tabMode="focus" />
+        </StyledCode>
+      </LiveProvider>
+    )
+  }
+)
+CodeBlock.displayName = 'CodeBlock'

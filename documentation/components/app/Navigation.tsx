@@ -15,18 +15,23 @@ type NavigationProps = {
 const NavigationTitle: React.FC<{ level: number }> = ({ level, children }) => {
   switch (level) {
     case 1:
-      return <Heading as="h2" size="sm">{children}</Heading>
+      return (
+        <Heading as="h2" size="sm">
+          {children}
+        </Heading>
+      )
     case 2:
-      return <Text as="h3" size="sm" css={{ fontWeight: 'bold' }}>{children}</Text>
+      return (
+        <Text as="h3" size="sm" css={{ fontWeight: 'bold' }}>
+          {children}
+        </Text>
+      )
     default:
       return <Text size="sm">{children}</Text>
   }
 }
 
-const NavigationLink: React.FC<{ href: string }> = ({
-  href,
-  children
-}) => {
+const NavigationLink: React.FC<{ href: string }> = ({ href, children }) => {
   const { asPath: currentPage } = useRouter()
 
   if (!children) return
@@ -34,53 +39,71 @@ const NavigationLink: React.FC<{ href: string }> = ({
 
   return (
     <NextLink href={href} passHref replace={true}>
-      <Link css={{ position: 'relative', color: 'currentColor !important', display: 'block', mb: '$3' }}>
+      <Link
+        css={{
+          position: 'relative',
+          color: 'currentColor !important',
+          display: 'block',
+          mb: '$3'
+        }}
+      >
         {children}
-        {isCurrentPage && <Icon size="sm" css={{ position: 'absolute', right: '0', top: '50%', transform: 'translateY(-50%)' }} is={ArrowRight} />}
+        {isCurrentPage && (
+          <Icon
+            size="sm"
+            css={{
+              position: 'absolute',
+              right: '0',
+              top: '50%',
+              transform: 'translateY(-50%)'
+            }}
+            is={ArrowRight}
+          />
+        )}
       </Link>
     </NextLink>
   )
 }
 
-export const Navigation: React.FC<NavigationProps> = React.memo(({
-  onNavigate
-}) => {
+export const Navigation: React.FC<NavigationProps> = React.memo(
+  ({ onNavigate }) => {
+    const { pathname } = useRouter()
+    React.useEffect(() => {
+      onNavigate?.(pathname)
+    }, [pathname, onNavigate])
 
-  const { pathname } = useRouter()
-  React.useEffect(() => {
-    onNavigate?.(pathname)
-  }, [pathname, onNavigate])
+    const renderRecursive = React.useMemo(() => {
+      const render = (navigationStructureLevel, level) => {
+        if (!navigationStructureLevel?.length) return null
+        return (
+          <Box
+            as="ul"
+            css={{
+              listStyleType: 'none',
+              m: 0,
+              mb: '$4',
+              p: 0,
+              pl: [1, 2].includes(level) ? 0 : '$4'
+            }}
+          >
+            {navigationStructureLevel.map(({ title, href, children }) => {
+              if (!title) return
+              return (
+                <Box as="li" css={{ mb: level === 1 ? '$6' : 0 }} key={href}>
+                  <NavigationLink href={href}>
+                    <NavigationTitle level={level}>{title}</NavigationTitle>
+                  </NavigationLink>
+                  {render(children, level + 1)}
+                </Box>
+              )
+            })}
+          </Box>
+        )
+      }
+      return render(navigationStructure, 1)
+    }, [])
 
-
-  const renderRecursive = React.useMemo(() => {
-    const render = (navigationStructureLevel, level) => {
-      if (!navigationStructureLevel?.length) return null;
-      return (
-        <Box as="ul" css={{ listStyleType: 'none', m: 0, mb: '$4', p: 0, pl: [1, 2].includes(level) ? 0 : '$4' }}>
-          {navigationStructureLevel.map(({ title, href, children }) => {
-            if (!title) return;
-            return (
-              <Box as="li" css={{ mb: level === 1 ? '$6' : 0 }} key={href}>
-                <NavigationLink href={href}>
-                  <NavigationTitle level={level} >
-                    {title}
-                  </NavigationTitle>
-                </NavigationLink>
-                {render(children, level + 1)}
-              </Box>
-            )
-          })}
-
-        </Box>
-      )
-    }
-    return render(navigationStructure, 1);
-  }, [])
-
-  return (
-    <nav>
-      {renderRecursive}
-    </nav>
-  )
-})
+    return <nav>{renderRecursive}</nav>
+  }
+)
 Navigation.displayName = 'Navigation'

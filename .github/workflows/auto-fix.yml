@@ -24,16 +24,19 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run ESLint
+      - name: Run ESLint: Library
         working-directory: lib
         run: yarn lint
 
-      - name: Run Prettier
+      - name: Run Prettier: Library
         working-directory: lib
+        run: yarn format
+
+      - name: Run Prettier: Documentation
+        working-directory: documentation
         run: yarn format
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          
           commit_message: 'chore: apply auto-fix changes'

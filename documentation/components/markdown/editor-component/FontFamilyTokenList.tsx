@@ -4,7 +4,11 @@ import { TokenList } from './token-list'
 
 import * as React from 'react'
 
-const FontFamilyExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
+const FontFamilyExample: typeof TokenList.Item = ({
+  token,
+  value,
+  ...rest
+}) => {
   return (
     <TokenList.Item token={token} value={value} {...rest}>
       <Text css={{ fontFamily: value, fontSize: '$xl' }}>Abc-Xyz</Text>
@@ -13,7 +17,7 @@ const FontFamilyExample: typeof TokenList.Item = ({ token, value, ...rest }) => 
 }
 
 type FontFamilyTokenListProps = {
-  fontFamilies?: { token: string, name: string }[]
+  fontFamilies?: { token: string; name: string }[]
 }
 
 export const FontFamilyTokenList: React.FC<FontFamilyTokenListProps> = ({
@@ -22,7 +26,12 @@ export const FontFamilyTokenList: React.FC<FontFamilyTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.fonts} specificTokens={specificFontFamilies} ItemComponent={FontFamilyExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={atomTheme.fonts}
+      specificTokens={specificFontFamilies}
+      ItemComponent={FontFamilyExample}
+      {...rest}
+    />
   )
 }
-

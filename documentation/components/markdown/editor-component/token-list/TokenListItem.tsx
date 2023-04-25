@@ -13,12 +13,10 @@ const TokenListItemToken = ({ token }: { token: string }) => (
   </Text>
 )
 
-const TokenListItemValue: React.FC<React.ComponentProps<typeof Text>> = ({ css, ...rest }) => (
-  <Text
-    size="sm"
-    css={{ color: '$base8', ...css }}
-    {...rest} />
-)
+const TokenListItemValue: React.FC<React.ComponentProps<typeof Text>> = ({
+  css,
+  ...rest
+}) => <Text size="sm" css={{ color: '$base8', ...css }} {...rest} />
 
 const StyledTokenListItem = styled(Box, {
   py: '$5',
@@ -41,14 +39,8 @@ export const TokenListItem: React.FC<TTokenListItemProps> = ({
   const valueWithoutRem = value.split('rem')[0]
   const isValueInRem = valueWithoutRem !== value
   return (
-    <StyledTokenListItem
-      {...rest}>
-      <Stack
-        key={token}
-        gap={5}
-        align="center"
-        wrap="no-wrap"
-      >
+    <StyledTokenListItem {...rest}>
+      <Stack key={token} gap={5} align="center" wrap="no-wrap">
         <Box>
           <TokenListItemToken token={String(token)} />
         </Box>
@@ -56,13 +48,15 @@ export const TokenListItem: React.FC<TTokenListItemProps> = ({
         <Box css={{ flexGrow: 1 }}>
           <Stack gap="1" direction="column" justify="center">
             <TokenListItemValue>{value}</TokenListItemValue>
-            {isValueInRem && <TokenListItemValue>{`${+(valueWithoutRem) * 16}px`}</TokenListItemValue>}
+            {isValueInRem && (
+              <TokenListItemValue>{`${
+                +valueWithoutRem * 16
+              }px`}</TokenListItemValue>
+            )}
           </Stack>
         </Box>
 
-        <Box css={{ flexShrink: 0 }}>
-          {children}
-        </Box>
+        <Box css={{ flexShrink: 0 }}>{children}</Box>
       </Stack>
     </StyledTokenListItem>
   )
