@@ -6,8 +6,151 @@ links:
   showReportAnIssue: true
 tabs:
   - title: Code
-    content: This component has not been built yet. You can check Visual and Usage
-      for now.
+    content: >-
+      A section message displays a contextual feedback message in a
+      particular section of the page. They’re persistent and nonmodal. It can
+      include a ‘close’ button to be dismissed, allowing the user to either
+      ignore them or interact with them at any time.
+
+      <CodeBlock live={true} preview={true} code={`<SectionMessage>
+        <SectionMessage.Icon />
+        <SectionMessage.Content>
+          <Box>
+            <SectionMessage.Title>Title message</SectionMessage.Title>
+            <SectionMessage.Description>
+              This is the description
+            </SectionMessage.Description>
+          </Box>
+        </SectionMessage.Content>
+        <SectionMessage.Close />
+      </SectionMessage>`} language={"tsx"} />
+
+
+      ## Theme
+
+      These are the available `theme`s for this component: `success`, `warning`, `error`, `neutral` and `info`. The default is `info` (due to most frequent context).
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={`
+          <Stack direction="column" css={{ width: 325 }} gap={3}>
+            <SectionMessage theme="error">
+              <SectionMessage.Icon />
+                <Box>
+                  <SectionMessage.Title>Title message</SectionMessage.Title>
+                  <SectionMessage.Description>
+                    This is the description
+                  </SectionMessage.Description>
+                </Box>
+              <SectionMessage.Close />
+            </SectionMessage>
+
+            <SectionMessage theme="warning">
+              <SectionMessage.Icon />
+                <Box>
+                  <SectionMessage.Title>Title message</SectionMessage.Title>
+                  <SectionMessage.Description>
+                    This is the description
+                  </SectionMessage.Description>
+                </Box>
+              <SectionMessage.Close />
+            </SectionMessage>
+
+            <SectionMessage theme="success">
+              <SectionMessage.Icon />
+                <Box>
+                  <SectionMessage.Title>Title message</SectionMessage.Title>
+                  <SectionMessage.Description>
+                    This is the description
+                  </SectionMessage.Description>
+                </Box>
+              <SectionMessage.Close />
+            </SectionMessage>
+
+            <SectionMessage theme="info">
+              <SectionMessage.Icon />
+                <Box>
+                  <SectionMessage.Title>Title message</SectionMessage.Title>
+                  <SectionMessage.Description>
+                    This is the description
+                  </SectionMessage.Description>
+                </Box>
+              <SectionMessage.Close />
+            </SectionMessage>
+
+            <SectionMessage theme="neutral">
+              <SectionMessage.Icon />
+                <Box>
+                  <SectionMessage.Title>Title message</SectionMessage.Title>
+                  <SectionMessage.Description>
+                    This is the description
+                  </SectionMessage.Description>
+                </Box>
+              <SectionMessage.Close />
+            </SectionMessage>
+          </Stack>
+        `} 
+      />
+
+      ## Composition
+
+      `SectionMessage` ships with smaller components to allow for flexibility in creating all kinds of layouts. The below example shows a very basic layout.
+
+      ### Simple layout
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={`
+          <SectionMessage>
+            <SectionMessage.Icon />
+            This is the description
+            <SectionMessage.Close />
+          </SectionMessage>
+        `} 
+      />
+
+      ### Complex layout
+
+
+      Note that elements contained within `SectionMessage.Content` will be displayed inline if there is enough space and automatically wrap when there isn't. 
+
+
+      `SectionMessage.Actions` will always align to the right when contained within `SectionMessage.Content` and shown inline.
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={`
+          <SectionMessage css={{ width: 500 }}>
+            <SectionMessage.Icon />
+            <SectionMessage.Content>
+              <Box>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </Box>
+              <SectionMessage.Actions>
+                <Button size="sm">Button</Button>
+                <Button size="sm" appearance="outline">
+                  Button
+                </Button>
+              </SectionMessage.Actions>
+            </SectionMessage.Content>
+            <SectionMessage.Close />
+          </SectionMessage>
+        `} 
+      />
+
+
+      ## API Reference
+
+      <ComponentProps component="SectionMessage" />
   - title: Visual
     content: >-
       ## Structure
