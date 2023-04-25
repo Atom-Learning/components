@@ -5,9 +5,9 @@ import * as React from 'react'
 
 import { BannerRegular } from './'
 
-const BannerRegularComponent: React.FC<
+const BannerRegularImplementation: React.FC<
   React.ComponentProps<typeof BannerRegular>
-> = (props) => (
+> = ({ children, ...props }) => (
   <BannerRegular {...props}>
     <BannerRegular.Content>
       <BannerRegular.Heading>
@@ -22,106 +22,55 @@ const BannerRegularComponent: React.FC<
         <BannerRegular.Button>Secondary</BannerRegular.Button>
       </BannerRegular.Actions>
     </BannerRegular.Content>
-    <BannerRegular.Image src="http://placekitten.com/200/300" />
+    <BannerRegular.Image alt="kitten" src="http://placekitten.com/200/300" />
+    {children}
   </BannerRegular>
 )
 
-const BannerRegularDismissibleComponent: React.FC<
+const BannerRegularDismissibleImplementation: React.FC<
   React.ComponentProps<typeof BannerRegular>
 > = (props) => (
-  <BannerRegular {...props}>
-    <BannerRegular.Content>
-      <BannerRegular.Heading>
-        Get ready for entrance exams
-      </BannerRegular.Heading>
-      <BannerRegular.Text>
-        Talk to our admissions experts on to learn how to support your child.
-        This is an example lor!
-      </BannerRegular.Text>
-      <BannerRegular.Actions>
-        <BannerRegular.Button>Contact an expert</BannerRegular.Button>
-        <BannerRegular.Button>Secondary</BannerRegular.Button>
-      </BannerRegular.Actions>
-    </BannerRegular.Content>
-    <BannerRegular.Image src="http://placekitten.com/200/300" />
-    <BannerRegular.Dismiss />
-  </BannerRegular>
+  <BannerRegularImplementation {...props}>
+    <BannerRegular.Dismiss data-testid="dismiss" label="dismiss banner" />
+  </BannerRegularImplementation>
 )
 
 describe(`BannerRegular component`, () => {
-  it('renders sm variant', () => {
+  it('renders', () => {
     const { container } = render(
-      <BannerRegularComponent
+      <BannerRegularImplementation
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
-        size="sm"
       />
     )
     expect(container).toMatchSnapshot()
-
-    const image = screen.queryByRole('img')
-    expect(image).not.toBeInTheDocument()
   })
 
-  it('renders dismissible sm variant', () => {
+  it('renders dismissible variant', () => {
     const onDismiss = jest.fn()
     const { container } = render(
-      <BannerRegularDismissibleComponent
+      <BannerRegularDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
-        size="sm"
-        dismissibleValue="dismissible-sm-variant"
+        value="dismissible-sm-variant"
         onDismiss={onDismiss}
       />
     )
     expect(container).toMatchSnapshot()
 
-    const dismissButton = screen.getAllByRole('button')[0]
-    userEvent.click(dismissButton)
-
-    expect(onDismiss).toHaveBeenCalled()
-  })
-
-  it('renders md variant', () => {
-    const { container } = render(
-      <BannerRegularComponent
-        colorScheme={{ base: 'blue1' }}
-        emphasis="lowContrast"
-        size="md"
-      />
-    )
-    expect(container).toMatchSnapshot()
-
-    const image = screen.queryByRole('img')
-    expect(image).toBeInTheDocument()
-  })
-
-  it('renders dismissible md variant', () => {
-    const onDismiss = jest.fn()
-    const { container } = render(
-      <BannerRegularDismissibleComponent
-        colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
-        size="md"
-        dismissibleValue="dismissible-sm-variant"
-        onDismiss={onDismiss}
-      />
-    )
-    expect(container).toMatchSnapshot()
-
-    const dismissButton = screen.getAllByRole('button')[0]
-    userEvent.click(dismissButton)
+    const dismissTrigger = screen.getByTestId('dismiss')
+    if (dismissTrigger) userEvent.click(dismissTrigger)
 
     expect(onDismiss).toHaveBeenCalled()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
     render(
-      <BannerRegularDismissibleComponent
+      <BannerRegularDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         size="sm"
-        dismissibleValue="dismissible-sm-variant"
+        value="dismissible-sm-variant"
         onDismiss={jest.fn()}
       />
     )

@@ -1,32 +1,44 @@
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { Box } from '../box'
-import { Flex } from '../flex'
+import { Image } from '../image'
 import { useBannerContext } from './BannerContext'
 
-export const BannerImage: React.FC<{ src: string }> = ({ src }) => {
+const Container = styled(Box, {
+  position: 'relative',
+  overflow: 'hidden',
+  width: '38%',
+  variants: {
+    size: {
+      sm: {
+        display: 'none'
+      },
+      md: {
+        display: 'block'
+      }
+    }
+  }
+})
+
+const StyledImage = styled(Image, {
+  position: 'absolute',
+  maxWidth: 'auto',
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover'
+})
+
+export const BannerImage: React.FC<React.ComponentProps<typeof Image>> = (
+  props
+) => {
   const { size } = useBannerContext()
-  if (size === 'sm') return null
 
   return (
-    <Flex
-      css={{
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}
-    >
-      <Box
-        role="img"
-        css={{
-          backgroundImage: `url(${src})`,
-          height: '100%',
-          width: '100%',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        }}
-      />
-    </Flex>
+    <Container size={size}>
+      <StyledImage {...props} />
+    </Container>
   )
 }
 

@@ -1,43 +1,37 @@
 import invariant from 'invariant'
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
-import { Flex } from '../flex'
+import { Stack } from '../stack'
 import { BannerButton } from './BannerButton'
 import { useBannerContext } from './BannerContext'
 
 const MAX_ALLOWED_CHILDREN = 2
 
-const StyledActionsContainer = styled(Flex, {
-  variants: {
-    containerSize: {
-      sm: {
-        flexDirection: 'column',
-        gap: '$2'
-      },
-      md: {
-        flexDirection: 'row',
-        gap: '$4'
-      }
-    }
-  }
-})
+const toGap = {
+  sm: 2,
+  md: 4
+}
 
-export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
+export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
   children,
   ...props
 }) => {
   const { size } = useBannerContext()
-  const INVALID_NUMBER_OF_CHILDREN = `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
+
+  const gap = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toGap[s]),
+    [size]
+  )
 
   invariant(
     React.Children.count(children) <= MAX_ALLOWED_CHILDREN,
-    INVALID_NUMBER_OF_CHILDREN
+    `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
   )
 
   return (
-    <StyledActionsContainer containerSize={size} {...props}>
+    <Stack gap={gap} {...props}>
       {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
           throw new Error(
@@ -54,11 +48,9 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
           React.ComponentProps<typeof BannerButton>
         > = {
           // Override button appearance - make the second button outlined
-          appearance: index > 0 ? 'outline' : undefined,
-          fullWidth: size === 'sm'
+          appearance: index > 0 ? 'outline' : undefined
         }
 
-        // Override button appearance - make the second button outlined
         return React.cloneElement(
           child as React.ReactElement<
             React.ComponentProps<typeof BannerButton>
@@ -66,7 +58,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Flex>> = ({
           propsToInject
         )
       })}
-    </StyledActionsContainer>
+    </Stack>
   )
 }
 

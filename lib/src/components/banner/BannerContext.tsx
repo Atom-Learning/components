@@ -1,12 +1,12 @@
 import * as React from 'react'
 
-import { IBannerContextValue } from './Banner.types'
+import { TBannerContextValue } from './Banner.types'
 
 export const BannerContext = React.createContext<
-  IBannerContextValue | undefined
+  TBannerContextValue | undefined
 >(undefined)
 
-export const useBannerContext = (): Partial<IBannerContextValue> => {
+export const useBannerContext = (): Partial<TBannerContextValue> => {
   const context = React.useContext(BannerContext)
 
   if (context === undefined) {

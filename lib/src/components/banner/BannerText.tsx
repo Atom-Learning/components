@@ -10,10 +10,12 @@ const StyledText = styled(Text, {
   variants: {
     containerSize: {
       sm: {
-        mb: '$4'
+        mb: '$4',
+        mr: '$6'
       },
       md: {
-        mb: '$24'
+        mb: '$24',
+        mr: 0
       }
     },
     emphasis: {

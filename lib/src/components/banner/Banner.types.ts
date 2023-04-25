@@ -1,11 +1,17 @@
-import type { TcolorScheme } from '~/experiments/color-scheme'
+import { styled } from 'stitches'
 
-export type TBannerEmphasis = 'highContrast' | 'midContrast' | 'lowContrast'
-export type TBannerSizes = 'sm' | 'md'
-export type TBannerElements = 'background' | 'title' | 'description'
+const StyledProperties = styled(() => null, {
+  variants: {
+    emphasis: {
+      highContrast: {},
+      midContrast: {},
+      lowContrast: {}
+    },
+    size: {
+      sm: {},
+      md: {}
+    }
+  }
+})
 
-export interface IBannerContextValue {
-  colorScheme: TcolorScheme
-  emphasis: TBannerEmphasis
-  size: TBannerSizes
-}
+export type TBannerContextValue = React.ComponentProps<typeof StyledProperties>
