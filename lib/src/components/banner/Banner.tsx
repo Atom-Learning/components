@@ -23,7 +23,7 @@ export const Banner: React.FC<IBannerProps> & {
     '@md': 'md'
   },
   colorScheme,
-  emphasis,
+  emphasis = 'lowContrast',
   value = 'dismiss-banner-regular',
   onDismiss
 }) => {
