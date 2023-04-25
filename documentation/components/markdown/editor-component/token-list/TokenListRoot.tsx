@@ -4,8 +4,8 @@ import * as React from 'react'
 
 type TokenListRootProps = React.ComponentProps<typeof Stack> & {
   ItemComponent: any // typeof TokenListItem,
-  allTokens?: Record<string, string>,
-  specificTokens?: { token: string }[],
+  allTokens?: Record<string, string>
+  specificTokens?: { token: string }[]
   filter?: ({ key, value }) => boolean
 }
 
@@ -19,14 +19,14 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
   ...rest
 }) => {
   const tokens = React.useMemo(() => {
-    if (!Object.keys(allTokens || {})?.length) return [];
+    if (!Object.keys(allTokens || {})?.length) return []
     if (!specificTokens?.length) return allTokens
     return specificTokens.reduce((obj, { token }) => {
-      const valueForToken = allTokens[token];
-      if (!valueForToken) return obj;
+      const valueForToken = allTokens[token]
+      if (!valueForToken) return obj
       return Object.assign(obj, {
         [token]: valueForToken
-      });
+      })
     }, {})
   }, [allTokens, specificTokens])
 
@@ -34,12 +34,14 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
     const filteredListItems = []
     Object.entries(tokens).forEach(([key, value]) => {
       if (!filter?.({ key, value })) return
-      filteredListItems.push(<ItemComponent as="li" key={key} token={key} value={value} />)
+      filteredListItems.push(
+        <ItemComponent as="li" key={key} token={key} value={value} />
+      )
     })
     return filteredListItems
   }, [filter, tokens, ItemComponent])
 
-  if (!listItems.length) return null;
+  if (!listItems.length) return null
 
   return (
     <Stack as={StyledTokenList} gap={false} {...rest}>
@@ -47,4 +49,3 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
     </Stack>
   )
 }
-

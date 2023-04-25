@@ -17,7 +17,7 @@ const SpaceExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type SpaceTokenListProps = {
-  spaces?: { token: string, name: string }[]
+  spaces?: { token: string; name: string }[]
 }
 
 export const SpaceTokenList: React.FC<SpaceTokenListProps> = ({
@@ -26,7 +26,12 @@ export const SpaceTokenList: React.FC<SpaceTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.space} specificTokens={specificSpaces} ItemComponent={SpaceExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={atomTheme.space}
+      specificTokens={specificSpaces}
+      ItemComponent={SpaceExample}
+      {...rest}
+    />
   )
 }
-

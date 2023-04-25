@@ -10,15 +10,10 @@ const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
   const hasAlpha = color.hasOwnProperty('alpha')
   return (
     <Flex css={{ alignItems: 'center' }} {...rest}>
-      <Box
-        css={{ borderRadius: '$round', bg: `$${token}`, size: '$6' }}
-      />
+      <Box css={{ borderRadius: '$round', bg: `$${token}`, size: '$6' }} />
       <Flex css={{ pl: '$3', flexDirection: 'column' }}>
         <Text css={{ fontWeight: 600, mb: '$3' }}>{`$${token}`}</Text>
-        <Text
-          size="sm"
-          css={{ color: '$base8', mb: !hasAlpha ? '$3' : 0 }}
-        >
+        <Text size="sm" css={{ color: '$base8', mb: !hasAlpha ? '$3' : 0 }}>
           {value}
         </Text>
         {!hasAlpha && (
@@ -32,7 +27,7 @@ const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type ColorTokenListProps = {
-  colors?: { token: string, name: string }[]
+  colors?: { token: string; name: string }[]
 }
 
 export const ColorTokenList: React.FC<ColorTokenListProps> = ({
@@ -41,7 +36,13 @@ export const ColorTokenList: React.FC<ColorTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList gap={3} direction="column" allTokens={atomTheme.colors} specificTokens={specificColors} ItemComponent={ColorExample} {...rest} />
+    <TokenList
+      gap={3}
+      direction="column"
+      allTokens={atomTheme.colors}
+      specificTokens={specificColors}
+      ItemComponent={ColorExample}
+      {...rest}
+    />
   )
 }
-

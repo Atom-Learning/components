@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 const { getPageByFilename } = require('~/lib/api.cjs')
 import { TDynamicPage } from '~/lib/types/DynamicPage'
 
-import { serialize } from "next-mdx-remote/serialize";
+import { serialize } from 'next-mdx-remote/serialize'
 
 import { Layout as PageLayout } from '~/components/page/Layout'
 
@@ -17,27 +17,28 @@ export default function Page({ Page, preview }: Props) {
 
   if (router.isFallback) return <div>Loading…</div>
 
-  if (preview) return null;
+  if (preview) return null
   return <PageLayout {...Page} />
 }
 
 export const getStaticProps = async () => {
-  const Page = getPageByFilename('landing/index', [
-    'title',
-    'tabs'
-  ])
+  const Page = getPageByFilename('landing/index', ['title', 'tabs'])
 
-  const tabs = Page?.tabs ? await Promise.all(Page.tabs.map(async ({ content, ...rest }) => {
-    const serializedContent = await serialize(content || '')
-    return { content: serializedContent, ...rest }
-  })) : []
+  const tabs = Page?.tabs
+    ? await Promise.all(
+        Page.tabs.map(async ({ content, ...rest }) => {
+          const serializedContent = await serialize(content || '')
+          return { content: serializedContent, ...rest }
+        })
+      )
+    : []
 
   return {
     props: {
       Page: {
         ...Page,
         tabs
-      },
-    },
+      }
+    }
   }
 }
