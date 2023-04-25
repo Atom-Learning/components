@@ -1,6 +1,8 @@
 import * as React from 'react'
 
-import { TBannerContextValue } from './Banner.types'
+import { TBannerContainerProps } from './BannerContainer'
+
+type TBannerContextValue = Pick<TBannerContainerProps, 'size' | 'emphasis'>
 
 export const BannerContext = React.createContext<
   TBannerContextValue | undefined

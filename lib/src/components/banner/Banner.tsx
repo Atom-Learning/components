@@ -1,42 +1,20 @@
 import * as React from 'react'
 
 import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
-import { styled } from '~/stitches'
 
 import { Dismissible } from '../dismissible'
-import { Flex } from '../flex'
-import { TBannerContextValue } from './Banner.types'
+import { BannerContainer, TBannerContainerProps } from './BannerContainer'
 import { BannerContext } from './BannerContext'
 
-const StyledBanner = styled(Flex, {
-  position: 'relative',
-  width: '100%',
-  borderRadius: '$0',
-  overflow: 'hidden',
-  color: '$foreground',
-  variants: {
-    emphasis: {
-      highContrast: {
-        background: '$base11',
-        color: '$foreground7plus'
-      },
-      midContrast: {
-        background: '$base3'
-      },
-      lowContrast: {
-        background: '$base1'
-      }
-    }
-  }
-})
+type TDismissibleProps = React.ComponentProps<typeof Dismissible>
 
-type TBannerProps = TBannerContextValue &
-  React.ComponentProps<typeof StyledBanner> &
-  React.ComponentProps<typeof Dismissible> & {
-    colorScheme: TcolorScheme
-  }
+interface IBannerProps extends TBannerContainerProps {
+  colorScheme: TcolorScheme
+  value?: TDismissibleProps['value']
+  onDismiss?: TDismissibleProps['onDismiss']
+}
 
-export const Banner: React.FC<TBannerProps> & {
+export const Banner: React.FC<IBannerProps> & {
   Dismiss: typeof Dismissible.Trigger
 } = ({
   children,
@@ -52,11 +30,11 @@ export const Banner: React.FC<TBannerProps> & {
   return (
     <ColorScheme {...colorScheme} asChild>
       <Dismissible asChild value={value} onDismiss={onDismiss}>
-        <StyledBanner role="banner" emphasis={emphasis}>
-          <BannerContext.Provider value={{ size, emphasis }}>
+        <BannerContainer role="banner" emphasis={emphasis}>
+          <BannerContext.Provider value={{ emphasis, size }}>
             {children}
           </BannerContext.Provider>
-        </StyledBanner>
+        </BannerContainer>
       </Dismissible>
     </ColorScheme>
   )
