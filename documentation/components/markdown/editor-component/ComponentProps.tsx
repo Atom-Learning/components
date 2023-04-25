@@ -17,10 +17,13 @@ const sizeOrder = ['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl']
 const getComponentProps = (name) =>
   docgen
     .filter(Boolean)
-    .find((component) => component.displayName === name || component.displayName === pascalcase(name))
+    .find(
+      (component) =>
+        component.displayName === name ||
+        component.displayName === pascalcase(name)
+    )
 
 const columns = ['Prop', 'Type', 'Default', 'Required']
-
 
 const WithTooltip = ({ children, text }) => (
   <Tooltip>
@@ -98,7 +101,9 @@ export const ComponentProps: React.FC<{ component }> = ({ component }) => {
 
   return (
     <Box as="figure" css={{ width: '100%', p: 0, m: 0 }}>
-      <Text as="figcaption" size='xs' css={{ mb: '$2', fontWeight: 'bold' }}>{component}</Text>
+      <Text as="figcaption" size="xs" css={{ mb: '$2', fontWeight: 'bold' }}>
+        {component}
+      </Text>
       <Box css={{ width: '100%', overflow: 'auto' }}>
         <Table css={{ width: '100%' }}>
           <Table.Header theme="light">
@@ -109,26 +114,36 @@ export const ComponentProps: React.FC<{ component }> = ({ component }) => {
             </Table.Row>
           </Table.Header>
           <Table.Body striped={false}>
-            {Object.entries(componentProps.props).map(([key, { name, type, defaultValue, required }]) => {
-              if (type.name === 'never') return null
+            {Object.entries(componentProps.props).map(
+              ([key, { name, type, defaultValue, required }]) => {
+                if (type.name === 'never') return null
 
-              return (
-                <Table.Row key={key}>
-                  <Table.Cell><code>{name}</code></Table.Cell>
-                  <Table.Cell><PropType name={name} type={type} /></Table.Cell>
-                  <Table.Cell>
-                    {defaultValue && defaultValue.value !== 'undefined' ? (
-                      <code>{defaultValue.value}</code>
-                    ) : "-"}
-                  </Table.Cell>
-                  <Table.Cell>
-                    {required && name !== 'as' && name !== 'css' ? (
-                      <Icon is={Ok} size="sm" />
-                    ) : "-"}
-                  </Table.Cell>
-                </Table.Row>
-              )
-            })}
+                return (
+                  <Table.Row key={key}>
+                    <Table.Cell>
+                      <code>{name}</code>
+                    </Table.Cell>
+                    <Table.Cell>
+                      <PropType name={name} type={type} />
+                    </Table.Cell>
+                    <Table.Cell>
+                      {defaultValue && defaultValue.value !== 'undefined' ? (
+                        <code>{defaultValue.value}</code>
+                      ) : (
+                        '-'
+                      )}
+                    </Table.Cell>
+                    <Table.Cell>
+                      {required && name !== 'as' && name !== 'css' ? (
+                        <Icon is={Ok} size="sm" />
+                      ) : (
+                        '-'
+                      )}
+                    </Table.Cell>
+                  </Table.Row>
+                )
+              }
+            )}
           </Table.Body>
         </Table>
       </Box>

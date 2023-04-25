@@ -1,4 +1,11 @@
-import { Badge, Image, styled, ActionIcon, Icon, ColorScheme } from '@atom-learning/components'
+import {
+  Badge,
+  Image,
+  styled,
+  ActionIcon,
+  Icon,
+  ColorScheme
+} from '@atom-learning/components'
 import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
 import { default as NextLink } from 'next/link'
 import * as React from 'react'
@@ -7,7 +14,6 @@ import buildConstants from '~/lib/build/constants.json'
 import { Navigation } from '~/components/app'
 
 import { Hamburger } from '@atom-learning/icons'
-
 
 type HeaderTriggerProps = {
   onClick: () => void
@@ -28,7 +34,11 @@ export const HeaderTrigger: React.FC<HeaderTriggerProps> = (props) => (
         display: 'none'
       }
     }}
-    label="View Navigation" {...props}><Icon is={Hamburger} /></ActionIcon>
+    label="View Navigation"
+    {...props}
+  >
+    <Icon is={Hamburger} />
+  </ActionIcon>
 )
 
 const useOnClickOutside = (ref, handler) => {

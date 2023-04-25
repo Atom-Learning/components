@@ -12,7 +12,7 @@ const RadiusExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type RadiusTokenListProps = {
-  radii?: { token: string, name: string }[]
+  radii?: { token: string; name: string }[]
 }
 
 export const RadiusTokenList: React.FC<RadiusTokenListProps> = ({
@@ -21,7 +21,12 @@ export const RadiusTokenList: React.FC<RadiusTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.radii} specificTokens={specificRadii} ItemComponent={RadiusExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={atomTheme.radii}
+      specificTokens={specificRadii}
+      ItemComponent={RadiusExample}
+      {...rest}
+    />
   )
 }
-
