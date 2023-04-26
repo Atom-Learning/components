@@ -24,15 +24,15 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run ESLint: Library
+      - name: Run ESLint (Library)
         working-directory: lib
         run: yarn lint
 
-      - name: Run Prettier: Library
+      - name: Run Prettier (Library)
         working-directory: lib
         run: yarn format
 
-      - name: Run Prettier: Documentation
+      - name: Run Prettier (Documentation)
         working-directory: documentation
         run: yarn format
 
