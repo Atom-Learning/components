@@ -16,7 +16,7 @@ export const SectionMessageTitle = ({
         fontWeight: 600,
         fontSize: '$md',
         mb: '$2',
-        whiteSpace: 'nowrap',
+        pt: '1px',
         color: THEMES[theme].color,
         ...css
       }}

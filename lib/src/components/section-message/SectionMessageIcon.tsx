@@ -12,7 +12,10 @@ export const SectionMessageIcon = ({
   const { theme } = useSectionMessageContext()
 
   return (
-    <Box css={{ mr: '$2', color: THEMES[theme].color, ...css }} {...rest}>
+    <Box
+      css={{ mr: '$2', mt: '-1px', color: THEMES[theme].color, ...css }}
+      {...rest}
+    >
       <Icon is={THEMES[theme].icon} size="sm" />
     </Box>
   )

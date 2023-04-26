@@ -157,8 +157,9 @@ exports[`renders SectionMessage component and has no programmatically detectable
     background: var(--colors-dangerLight);
   }
 
-  .c-PJLV-ihGpHru-css {
+  .c-PJLV-ijPPIYB-css {
     margin-right: var(--space-2);
+    margin-top: -1px;
     color: var(--colors-dangerDark);
   }
 
@@ -171,11 +172,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
     justify-content: space-between;
   }
 
-  .c-dyvMgW-ibCNdJQ-css {
+  .c-dyvMgW-ifbbGuT-css {
     font-weight: 600;
     font-size: var(--fontSizes-md);
     margin-bottom: var(--space-2);
-    white-space: nowrap;
+    padding-top: 1px;
     color: var(--colors-dangerDark);
   }
 
@@ -185,7 +186,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-fDzwZw-iMUsZT-css {
+  .c-PJLV-iMUsZT-css {
     margin-left: auto;
     margin-top: calc(var(--space-2)*-1);
     margin-right: calc(var(--space-2)*-1);
@@ -199,7 +200,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     class="c-PJLV c-PJLV-icCMPWT-css"
   >
     <div
-      class="c-PJLV c-PJLV-ihGpHru-css"
+      class="c-PJLV c-PJLV-ijPPIYB-css"
     >
       <svg
         aria-hidden="true"
@@ -230,7 +231,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
         class="c-PJLV"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibCNdJQ-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ifbbGuT-css"
         >
           Title message
         </p>
@@ -241,23 +242,27 @@ exports[`renders SectionMessage component and has no programmatically detectable
         </p>
       </div>
     </div>
-    <button
-      aria-label="Dismiss"
-      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iMUsZT-css c-PJLV"
-      data-state="closed"
-      type="button"
+    <div
+      class="c-PJLV c-PJLV-iMUsZT-css"
     >
-      <svg
-        aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
+      <button
+        aria-label="Dismiss"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iPJLV-css c-PJLV"
+        data-state="closed"
+        type="button"
       >
-        <path
-          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-        />
-      </svg>
-    </button>
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </div>
 `;

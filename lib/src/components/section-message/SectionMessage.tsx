@@ -35,8 +35,8 @@ export const THEMES = {
     icon: Error
   },
   neutral: {
-    bg: '$tonal100',
-    color: '$tonal900',
+    bg: '$grey100',
+    color: '$grey1000',
     icon: Info
   },
   info: {
