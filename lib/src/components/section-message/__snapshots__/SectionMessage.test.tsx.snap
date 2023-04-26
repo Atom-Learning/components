@@ -92,6 +92,19 @@ exports[`renders SectionMessage component and has no programmatically detectable
       animation-name: k-fvyGIa;
     }
 }
+
+  .c-flbHeh {
+    flex-grow: 1;
+    justify-content: space-between !important;
+  }
+
+  .c-iikTjs {
+    position: relative;
+    border-radius: var(--radii-0);
+    display: flex;
+    padding: var(--space-4);
+    border: 1px solid white;
+  }
 }
 
 @media  {
@@ -152,6 +165,19 @@ exports[`renders SectionMessage component and has no programmatically detectable
   .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
+
+  .c-iikTjs-jtgfr-theme-error {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerDark);
+  }
+
+  .c-iikTjs-cSgxUp-hasIcon-true {
+    padding-left: var(--space-6);
+  }
+
+  .c-iikTjs-IFRSO-hasDismiss-true {
+    padding-right: var(--space-7);
+  }
 }
 
 @media  {
@@ -176,29 +202,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-PJLV-iboLTQx-css {
-    position: relative;
-    font-family: var(--fonts-body);
-    border-radius: var(--radii-0);
-    font-size: var(--fontSizes-sm);
-    color: var(--colors-grey900);
-    display: flex;
-    padding: var(--space-4) var(--space-7) var(--space-4) var(--space-6);
-    border: 1px solid white;
-    background: var(--colors-dangerLight);
-  }
-
-  .c-PJLV-iboLTQx-css > * {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .c-dbrbZt-izgtgt-css {
+  .c-dbrbZt-ihCBfwK-css {
     margin: auto;
     position: absolute;
     left: var(--space-4);
     top: var(--space-4);
-    color: var(--colors-dangerDark);
+    color: currentColor;
   }
 
   .c-PJLV-iduWbFV-css {
@@ -206,11 +215,10 @@ exports[`renders SectionMessage component and has no programmatically detectable
     flex-shrink: 0;
   }
 
-  .c-dyvMgW-ijlNrJk-css {
+  .c-dyvMgW-ijgfvds-css {
     font-weight: 600;
     font-size: var(--fontSizes-md);
     margin-bottom: var(--space-2);
-    color: var(--colors-dangerDark);
   }
 
   .c-dyvMgW-ifUdxDN-css {
@@ -219,7 +227,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-PJLV-iefwZNm-css {
+  .c-fDzwZw-iefwZNm-css {
     margin: auto;
     position: absolute;
     top: var(--space-2);
@@ -229,14 +237,14 @@ exports[`renders SectionMessage component and has no programmatically detectable
 
 <div>
   <div
-    class="c-PJLV c-PJLV-iboLTQx-css"
+    class="c-iikTjs c-iikTjs-jtgfr-theme-error c-iikTjs-cSgxUp-hasIcon-true c-iikTjs-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3"
+      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-izgtgt-css"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihCBfwK-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -259,7 +267,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
         class="c-PJLV c-PJLV-iduWbFV-css"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ijlNrJk-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ijgfvds-css"
         >
           Title message
         </p>
@@ -269,27 +277,23 @@ exports[`renders SectionMessage component and has no programmatically detectable
           This is the description
         </p>
       </div>
-      <div
-        class="c-PJLV c-PJLV-iefwZNm-css"
+      <button
+        aria-label="Dismiss"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
+        data-state="closed"
+        type="button"
       >
-        <button
-          aria-label="Dismiss"
-          class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iPJLV-css c-PJLV"
-          data-state="closed"
-          type="button"
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
-            />
-          </svg>
-        </button>
-      </div>
+          <path
+            d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
     </div>
   </div>
 </div>
