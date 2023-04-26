@@ -5,15 +5,15 @@ import * as React from 'react'
 import buildConstants from '~/lib/build/constants.json'
 
 function flat(array) {
-  var result = [];
+  var result = []
   if (!Array.isArray(array)) return result
   array.forEach(function (a) {
-    result.push(a);
+    result.push(a)
     if (Array.isArray(a.children)) {
-      result = result.concat(flat(a.children));
+      result = result.concat(flat(a.children))
     }
-  });
-  return result;
+  })
+  return result
 }
 
 const navigationStructure = buildConstants['navigation-structure']
@@ -25,11 +25,7 @@ type TPaginationItem = {
   page: Record<string, string>
 }
 
-const PaginationItem = ({
-  align,
-  label,
-  page
-}: TPaginationItem) => (
+const PaginationItem = ({ align, label, page }: TPaginationItem) => (
   <Box css={{ textAlign: align, [align === 'left' ? 'mr' : 'ml']: 'auto' }}>
     <Text css={{ color: '$base8' }} size="sm">
       {label}
@@ -47,9 +43,7 @@ type TPaginationProps = {
   slug: string
 }
 
-export const Pagination: React.FC<TPaginationProps> = ({
-  slug: currSlug,
-}) => {
+export const Pagination: React.FC<TPaginationProps> = ({ slug: currSlug }) => {
   const currentPageIndex = navigationStructureFlat.findIndex(
     ({ slug }) => slug === currSlug
   )

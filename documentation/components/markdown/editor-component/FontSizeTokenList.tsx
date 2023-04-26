@@ -13,7 +13,7 @@ const FontSizeExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type FontSizeTokenListProps = {
-  fontSizes?: { token: string, name: string }[]
+  fontSizes?: { token: string; name: string }[]
 }
 
 export const FontSizeTokenList: React.FC<FontSizeTokenListProps> = ({
@@ -22,7 +22,12 @@ export const FontSizeTokenList: React.FC<FontSizeTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.fontSizes} specificTokens={specificFontSizes} ItemComponent={FontSizeExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={atomTheme.fontSizes}
+      specificTokens={specificFontSizes}
+      ItemComponent={FontSizeExample}
+      {...rest}
+    />
   )
 }
-
