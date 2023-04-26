@@ -1,29 +1,22 @@
 import React from 'react'
 
-import { Flex } from '../flex'
+import { Box } from '../box'
+import { Stack } from '../stack'
 
 export const SectionMessageContent = ({
   css,
   ...rest
-}: React.ComponentProps<typeof Flex>): JSX.Element => {
-  return (
-    <Flex
-      css={{
-        columnGap: '$2',
-        rowGap: '$4',
-        flexWrap: 'wrap',
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-      }}
-      {...rest}
-    />
-  )
+}: React.ComponentProps<typeof Box>): JSX.Element => {
+  return <Box css={{ maxWidth: '100%', flexShrink: 0, ...css }} {...rest} />
 }
 
 export const SectionMessageActions = ({
   css,
   ...rest
-}: React.ComponentProps<typeof Flex>): JSX.Element => {
-  return <Flex css={{ flexWrap: 'wrap', gap: '$3', ...css }} {...rest} />
+}: React.ComponentProps<typeof Stack>): JSX.Element => {
+  return (
+    <Box css={{ maxWidth: '100%', flexShrink: 0, ...css }}>
+      <Stack wrap="wrap" gap={3} {...rest} />
+    </Box>
+  )
 }

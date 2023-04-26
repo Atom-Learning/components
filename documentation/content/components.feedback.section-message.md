@@ -15,12 +15,10 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<SectionMessage>
         <SectionMessage.Icon />
         <SectionMessage.Content>
-          <Box>
-            <SectionMessage.Title>Title message</SectionMessage.Title>
-            <SectionMessage.Description>
-              This is the description
-            </SectionMessage.Description>
-          </Box>
+          <SectionMessage.Title>Title message</SectionMessage.Title>
+          <SectionMessage.Description>
+            This is the description
+          </SectionMessage.Description>
         </SectionMessage.Content>
         <SectionMessage.Close />
       </SectionMessage>`} language={"tsx"} />
@@ -38,56 +36,56 @@ tabs:
           <Stack direction="column" css={{ width: 325 }} gap={3}>
             <SectionMessage theme="error">
               <SectionMessage.Icon />
-                <Box>
-                  <SectionMessage.Title>Title message</SectionMessage.Title>
-                  <SectionMessage.Description>
-                    This is the description
-                  </SectionMessage.Description>
-                </Box>
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
               <SectionMessage.Close />
             </SectionMessage>
 
             <SectionMessage theme="warning">
               <SectionMessage.Icon />
-                <Box>
-                  <SectionMessage.Title>Title message</SectionMessage.Title>
-                  <SectionMessage.Description>
-                    This is the description
-                  </SectionMessage.Description>
-                </Box>
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
               <SectionMessage.Close />
             </SectionMessage>
 
             <SectionMessage theme="success">
               <SectionMessage.Icon />
-                <Box>
-                  <SectionMessage.Title>Title message</SectionMessage.Title>
-                  <SectionMessage.Description>
-                    This is the description
-                  </SectionMessage.Description>
-                </Box>
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
               <SectionMessage.Close />
             </SectionMessage>
 
             <SectionMessage theme="info">
               <SectionMessage.Icon />
-                <Box>
-                  <SectionMessage.Title>Title message</SectionMessage.Title>
-                  <SectionMessage.Description>
-                    This is the description
-                  </SectionMessage.Description>
-                </Box>
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
               <SectionMessage.Close />
             </SectionMessage>
 
             <SectionMessage theme="neutral">
               <SectionMessage.Icon />
-                <Box>
-                  <SectionMessage.Title>Title message</SectionMessage.Title>
-                  <SectionMessage.Description>
-                    This is the description
-                  </SectionMessage.Description>
-                </Box>
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
               <SectionMessage.Close />
             </SectionMessage>
           </Stack>
@@ -129,19 +127,17 @@ tabs:
           <SectionMessage css={{ width: 500 }}>
             <SectionMessage.Icon />
             <SectionMessage.Content>
-              <Box>
-                <SectionMessage.Title>Title message</SectionMessage.Title>
-                <SectionMessage.Description>
-                  This is the description
-                </SectionMessage.Description>
-              </Box>
-              <SectionMessage.Actions>
+              <SectionMessage.Title>Title message</SectionMessage.Title>
+              <SectionMessage.Description>
+                This is the description
+              </SectionMessage.Description>
+            </SectionMessage.Content>
+            <SectionMessage.Actions>
                 <Button size="sm">Button</Button>
                 <Button size="sm" appearance="outline">
                   Button
                 </Button>
               </SectionMessage.Actions>
-            </SectionMessage.Content>
             <SectionMessage.Close />
           </SectionMessage>
         `} 

@@ -2,7 +2,6 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import { Box } from '../box'
 import { SectionMessage } from '.'
 
 it('renders SectionMessage component and has no programmatically detectable a11y issues', async () => {
@@ -10,12 +9,10 @@ it('renders SectionMessage component and has no programmatically detectable a11y
     <SectionMessage theme="error">
       <SectionMessage.Icon />
       <SectionMessage.Content>
-        <Box>
-          <SectionMessage.Title>Title message</SectionMessage.Title>
-          <SectionMessage.Description>
-            This is the description
-          </SectionMessage.Description>
-        </Box>
+        <SectionMessage.Title>Title message</SectionMessage.Title>
+        <SectionMessage.Description>
+          This is the description
+        </SectionMessage.Description>
       </SectionMessage.Content>
       <SectionMessage.Close />
     </SectionMessage>

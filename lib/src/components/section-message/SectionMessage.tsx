@@ -4,7 +4,7 @@ import React from 'react'
 
 import { CSS } from '~/stitches'
 
-import { Box } from '../box'
+import { Stack } from '../stack'
 import { Dismissible } from '../dismissible'
 import { SectionMessageClose } from './SectionMessageClose'
 import { SectionMessageContext } from './SectionMessageContext'
@@ -68,21 +68,28 @@ const SectionMessage = ({
     <TooltipProvider>
       <SectionMessageContext.Provider value={{ theme }}>
         <Dismissible value={value} onDismiss={onDismiss} asChild>
-          <Box
+          <Stack
+            gap={3}
             css={{
+              position: 'relative',
               fontFamily: '$body',
               borderRadius: '$0',
               fontSize: '$sm',
               color: '$grey900',
               display: 'flex',
-              p: '$4',
+              p: '$4 $7 $4 $6',
               border: '1px solid white',
               bg: THEMES[theme].bg,
+              ['& > * ']: {
+                // Need to target direct children as there's an issue with Stack being 2 levels (CSSWrapper -> Actual Stack) and justify-content needed for the nested level
+                width: '100%',
+                justifyContent: 'space-between'
+              },
               ...css
             }}
           >
             {children}
-          </Box>
+          </Stack>
         </Dismissible>
       </SectionMessageContext.Provider>
     </TooltipProvider>

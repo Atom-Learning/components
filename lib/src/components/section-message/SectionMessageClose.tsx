@@ -12,7 +12,7 @@ export const SectionMessageClose = ({
 }: React.ComponentProps<typeof ActionIcon>): JSX.Element => {
   return (
     <Dismissible.Trigger asChild>
-      <Box css={{ ml: 'auto', mt: '-$2', mr: '-$2', mb: '-$2', pl: '$4' }}>
+      <Box css={{ m: 'auto', position: 'absolute', top: '$2', right: '$2' }}>
         <ActionIcon
           label={label}
           css={{}}

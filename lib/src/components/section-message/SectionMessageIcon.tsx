@@ -8,15 +8,22 @@ import { useSectionMessageContext } from './SectionMessageContext'
 export const SectionMessageIcon = ({
   css,
   ...rest
-}: React.ComponentProps<typeof Box>): JSX.Element => {
+}: React.ComponentProps<typeof Icon>): JSX.Element => {
   const { theme } = useSectionMessageContext()
 
   return (
-    <Box
-      css={{ mr: '$2', mt: '-1px', color: THEMES[theme].color, ...css }}
+    <Icon
       {...rest}
-    >
-      <Icon is={THEMES[theme].icon} size="sm" />
-    </Box>
+      css={{
+        m: 'auto',
+        position: 'absolute',
+        left: '$4',
+        top: '$4',
+        color: THEMES[theme].color,
+        ...css
+      }}
+      is={THEMES[theme].icon}
+      size="sm"
+    />
   )
 }
