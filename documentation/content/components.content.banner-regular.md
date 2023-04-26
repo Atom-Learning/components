@@ -1,32 +1,31 @@
 ---
-slug: banner
-title: Banner
+slug: banner-regular
+title: BannerRegular
 links:
   viewSource: components/banner
   showReportAnIssue: true
 tabs:
   - title: Main
     content: >-
-      `Banner` has two primary variations - `BannerRegular` & `BannerSlim`
-      (Coming Soon).
+      
+      The `BannerRegular` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
 
-
-      The `Banner` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
+      You can pass in a `colorScheme` object to the `BannerRegular` to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
 
       ## Anatomy
 
 
-      The root `Banner` component manages the banner's configuration and exposes it via the React Context API. This state can be accessed by any child components by calling `useBannerContext` hook. The sub components call this hook to refer to the core configuration and render accordingly.
+      The root `BannerRegular` component manages the banner's configuration and exposes it via the React Context API. This state can be accessed by any child components by calling `useBannerContext` hook. The sub components call this hook to refer to the core configuration and render accordingly.
 
 
-      ### Examples
+      ## Examples
 
-      We have several configuration with which `Banner` can be rendered
+      We have several configuration with which `BannerRegular` can be rendered
 
-      #### `sm` Variant
+      ### `sm` Variant
 
-      <CodeBlock live={false} preview={true} code={`
+      <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
         colorScheme={{ base: 'purple1' }}
@@ -48,9 +47,9 @@ tabs:
 
       `} language={"tsx"} />
 
-      #### `md` Variant
+      ### `md` Variant
 
-      <CodeBlock live={false} preview={true} code={`
+      <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
         colorScheme={{ base: 'blue1' }}
@@ -72,11 +71,11 @@ tabs:
 
       `} language={"tsx"} />
 
-      #### Dismissble Variant
+      ### Dismissble Variant
 
       It's possible to render it as a dissmissble component as well. Just add `<BannerRegular.Dismiss />` as a sibling to `BannerRegular.Content`.
 
-      <CodeBlock live={false} preview={true} code={`
+      <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
         colorScheme={{ base: 'blue2' }}
@@ -105,10 +104,24 @@ tabs:
 
 
       <ComponentProps component="BannerRegular" />
+
+      <ComponentProps component="BannerRegular.Content" />
+
+      <ComponentProps component="BannerRegular.Heading" />
+
+      <ComponentProps component="BannerRegular.Text" />
+
+      <ComponentProps component="BannerRegular.Actions" />
+
+      <ComponentProps component="BannerRegular.Image" />
+
+      <ComponentProps component="BannerRegular.Button" />
+
+      <ComponentProps component="BannerRegular.Dismiss" />
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: fdff513a0ebd40bcb5f58
 nestedSlug:
   - components
   - content
-  - banner
+  - banner-regular
 ---
