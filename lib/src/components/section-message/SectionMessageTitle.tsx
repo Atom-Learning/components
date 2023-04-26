@@ -14,29 +14,12 @@ export const SectionMessageTitle = ({
     <Text
       css={{
         fontWeight: 600,
-        fontSize: '$md',
         mb: '$2',
         pt: '1px',
         color: THEMES[theme].color,
         ...css
       }}
-      {...rest}
-    />
-  )
-}
-
-export const SectionMessageDescription = ({
-  css,
-  ...rest
-}: React.ComponentProps<typeof Text>): JSX.Element => {
-  return (
-    <Text
-      css={{
-        fontWeight: 400,
-        fontSize: '$sm',
-        color: '$grey900',
-        ...css
-      }}
+      size="md"
       {...rest}
     />
   )

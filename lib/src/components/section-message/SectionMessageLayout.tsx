@@ -1,17 +1,16 @@
 import React from 'react'
 
 import { Flex } from '../flex'
+import { Stack } from '../stack'
 
 export const SectionMessageContent = ({
   css,
   ...rest
 }: React.ComponentProps<typeof Flex>): JSX.Element => {
   return (
-    <Flex
+    <Stack
+      direction="column"
       css={{
-        columnGap: '$2',
-        rowGap: '$4',
-        flexWrap: 'wrap',
         width: '100%',
         alignItems: 'center',
         justifyContent: 'space-between'

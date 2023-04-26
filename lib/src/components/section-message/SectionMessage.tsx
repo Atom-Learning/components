@@ -4,19 +4,17 @@ import React from 'react'
 
 import { CSS } from '~/stitches'
 
-import { Box } from '../box'
 import { Dismissible } from '../dismissible'
+import { Flex } from '../flex'
 import { SectionMessageClose } from './SectionMessageClose'
 import { SectionMessageContext } from './SectionMessageContext'
+import { SectionMessageDescription } from './SectionMessageDescription'
 import { SectionMessageIcon } from './SectionMessageIcon'
 import {
   SectionMessageActions,
   SectionMessageContent
 } from './SectionMessageLayout'
-import {
-  SectionMessageDescription,
-  SectionMessageTitle
-} from './SectionMessageText'
+import { SectionMessageTitle } from './SectionMessageTitle'
 
 export const THEMES = {
   success: {
@@ -68,13 +66,12 @@ const SectionMessage = ({
     <TooltipProvider>
       <SectionMessageContext.Provider value={{ theme }}>
         <Dismissible value={value} onDismiss={onDismiss} asChild>
-          <Box
+          <Flex
             css={{
               fontFamily: '$body',
               borderRadius: '$0',
               fontSize: '$sm',
-              color: '$grey900',
-              display: 'flex',
+              color: THEMES[theme].color,
               p: '$4',
               border: '1px solid white',
               bg: THEMES[theme].bg,
@@ -82,7 +79,7 @@ const SectionMessage = ({
             }}
           >
             {children}
-          </Box>
+          </Flex>
         </Dismissible>
       </SectionMessageContext.Provider>
     </TooltipProvider>
