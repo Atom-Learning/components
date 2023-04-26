@@ -1,3 +1,4 @@
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 import { DemoBox } from './DemoBox'
@@ -23,7 +24,7 @@ export const RadiusTokenList: React.FC<RadiusTokenListProps> = ({
     // @ts-ignore
     <TokenList
       direction="column"
-      allTokens={atomTheme.radii}
+      allTokens={(atomTheme as Theme).radii}
       specificTokens={specificRadii}
       ItemComponent={RadiusExample}
       {...rest}
