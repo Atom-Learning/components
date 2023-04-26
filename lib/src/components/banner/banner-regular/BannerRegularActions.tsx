@@ -3,9 +3,9 @@ import * as React from 'react'
 
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
-import { Stack } from '../stack'
-import { BannerButton } from './BannerButton'
-import { useBannerContext } from './BannerContext'
+import { Stack } from '../../stack'
+import { useBannerContext } from '../BannerContext'
+import { BannerRegularButton } from './BannerRegularButton'
 
 const MAX_ALLOWED_CHILDREN = 2
 
@@ -14,10 +14,9 @@ const toGap = {
   md: 4
 }
 
-export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
-  children,
-  ...props
-}) => {
+export const BannerRegularActions: React.FC<
+  React.ComponentProps<typeof Stack>
+> = ({ children, ...props }) => {
   const { size } = useBannerContext()
 
   const gap = React.useMemo(
@@ -27,7 +26,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
 
   invariant(
     React.Children.count(children) <= MAX_ALLOWED_CHILDREN,
-    `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerButton.displayName} component(s) are permitted as children of ${BannerActions.displayName}`
+    `A maximum of ${MAX_ALLOWED_CHILDREN} ${BannerRegularButton.displayName} component(s) are permitted as children of ${BannerRegularActions.displayName}`
   )
 
   return (
@@ -35,17 +34,17 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
       {React.Children.map(children, (child, index) => {
         if (!React.isValidElement(child)) {
           throw new Error(
-            `Child passed to ${BannerActions.displayName} is not a valid element`
+            `Child passed to ${BannerRegularActions.displayName} is not a valid element`
           )
         }
 
         invariant(
-          child.type === BannerButton,
-          `Children of type ${child?.type} aren't permitted. Only an ${BannerButton.displayName} component is allowed in ${BannerActions.displayName}`
+          child.type === BannerRegularButton,
+          `Children of type ${child?.type} aren't permitted. Only an ${BannerRegularButton.displayName} component is allowed in ${BannerRegularActions.displayName}`
         )
 
         const propsToInject: Partial<
-          React.ComponentProps<typeof BannerButton>
+          React.ComponentProps<typeof BannerRegularButton>
         > = {
           // Override button appearance - make the second button outlined
           appearance: index > 0 ? 'outline' : undefined
@@ -53,7 +52,7 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
 
         return React.cloneElement(
           child as React.ReactElement<
-            React.ComponentProps<typeof BannerButton>
+            React.ComponentProps<typeof BannerRegularButton>
           >,
           propsToInject
         )
@@ -62,4 +61,4 @@ export const BannerActions: React.FC<React.ComponentProps<typeof Stack>> = ({
   )
 }
 
-BannerActions.displayName = 'BannerActions'
+BannerRegularActions.displayName = 'BannerRegularActions'

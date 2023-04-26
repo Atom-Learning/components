@@ -5,10 +5,10 @@ import { overrideStitchesVariantValue } from '~/utilities/override-stitches-vari
 
 import { styled } from '~/stitches'
 
-import { ActionIcon } from '../action-icon'
-import { Banner } from './Banner'
-import { Icon } from '../icon'
-import { useBannerContext } from './BannerContext'
+import { ActionIcon } from '../../action-icon'
+import { Banner } from '../Banner'
+import { Icon } from '../../icon'
+import { useBannerContext } from '../BannerContext'
 
 const toActionIconSize = {
   sm: 'md',
@@ -21,7 +21,7 @@ const StyledDismiss = styled(ActionIcon, {
   right: '$3'
 })
 
-export const BannerDismiss: React.FC<
+export const BannerRegularDismiss: React.FC<
   React.ComponentProps<typeof ActionIcon>
 > = ({ label = 'dismiss', ...rest }) => {
   const { size } = useBannerContext()
@@ -48,4 +48,4 @@ export const BannerDismiss: React.FC<
   )
 }
 
-BannerDismiss.displayName = 'BannerDismiss'
+BannerRegularDismiss.displayName = 'BannerRegularDismiss'

@@ -1,1 +1,1 @@
-export { BannerRegular } from './BannerRegular'
+export * from './banner-regular'

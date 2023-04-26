@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Box } from '../box'
-import { useBannerContext } from './BannerContext'
+import { Box } from '../../box'
+import { useBannerContext } from '../BannerContext'
 
 const Container = styled(Box, {
   width: '62%',
@@ -21,12 +21,12 @@ const Container = styled(Box, {
   }
 })
 
-export const BannerContent: React.FC<React.ComponentProps<typeof Container>> = (
-  props
-) => {
+export const BannerRegularContent: React.FC<
+  React.ComponentProps<typeof Container>
+> = (props) => {
   const { size } = useBannerContext()
 
   return <Container size={size} {...props} />
 }
 
-BannerContent.displayName = 'BannerContent'
+BannerRegularContent.displayName = 'BannerRegularContent'

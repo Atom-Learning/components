@@ -2,9 +2,9 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Box } from '../box'
-import { Image } from '../image'
-import { useBannerContext } from './BannerContext'
+import { Box } from '../../box'
+import { Image } from '../../image'
+import { useBannerContext } from '../BannerContext'
 
 const Container = styled(Box, {
   position: 'relative',
@@ -30,9 +30,9 @@ const StyledImage = styled(Image, {
   objectFit: 'cover'
 })
 
-export const BannerImage: React.FC<React.ComponentProps<typeof Image>> = (
-  props
-) => {
+export const BannerRegularImage: React.FC<
+  React.ComponentProps<typeof Image>
+> = (props) => {
   const { size } = useBannerContext()
 
   return (
@@ -42,4 +42,4 @@ export const BannerImage: React.FC<React.ComponentProps<typeof Image>> = (
   )
 }
 
-BannerImage.displayName = 'BannerImage'
+BannerRegularImage.displayName = 'BannerRegularImage'

@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Text } from '../text'
-import { useBannerContext } from './BannerContext'
+import { Text } from '../../text'
+import { useBannerContext } from '../BannerContext'
 
 const StyledText = styled(Text, {
   color: '$grey900',
@@ -28,7 +28,7 @@ const StyledText = styled(Text, {
   }
 })
 
-export const BannerText: React.FC<React.ComponentProps<typeof Text>> = (
+export const BannerRegularText: React.FC<React.ComponentProps<typeof Text>> = (
   props
 ) => {
   const { emphasis, size } = useBannerContext()
@@ -43,4 +43,4 @@ export const BannerText: React.FC<React.ComponentProps<typeof Text>> = (
   )
 }
 
-BannerText.displayName = 'BannerText'
+BannerRegularText.displayName = 'BannerRegularText'

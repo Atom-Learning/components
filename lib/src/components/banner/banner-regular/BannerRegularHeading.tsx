@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Heading } from '../heading'
-import { useBannerContext } from './BannerContext'
+import { Heading } from '../../heading'
+import { useBannerContext } from '../BannerContext'
 
 const StyledHeading = styled(Heading, {
   mb: '$4',
@@ -19,12 +19,12 @@ const StyledHeading = styled(Heading, {
   }
 })
 
-export const BannerHeading: React.FC<React.ComponentProps<typeof Heading>> = (
-  props
-) => {
+export const BannerRegularHeading: React.FC<
+  React.ComponentProps<typeof Heading>
+> = (props) => {
   const { size } = useBannerContext()
 
   return <StyledHeading size="sm" containerSize={size} {...props} />
 }
 
-BannerHeading.displayName = 'BannerHeading'
+BannerRegularHeading.displayName = 'BannerRegularHeading'
