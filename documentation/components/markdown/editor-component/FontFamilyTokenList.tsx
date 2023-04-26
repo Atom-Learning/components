@@ -1,4 +1,5 @@
 import { Text } from '@atom-learning/components'
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 
@@ -28,7 +29,7 @@ export const FontFamilyTokenList: React.FC<FontFamilyTokenListProps> = ({
     // @ts-ignore
     <TokenList
       direction="column"
-      allTokens={atomTheme.fonts}
+      allTokens={(atomTheme as Theme).fonts}
       specificTokens={specificFontFamilies}
       ItemComponent={FontFamilyExample}
       {...rest}

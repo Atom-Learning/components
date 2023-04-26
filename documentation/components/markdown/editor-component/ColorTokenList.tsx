@@ -1,5 +1,6 @@
 import { Box, Flex, Text } from '@atom-learning/components'
 import { hsl, parseToHsl } from 'polished'
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 import * as React from 'react'
@@ -39,7 +40,7 @@ export const ColorTokenList: React.FC<ColorTokenListProps> = ({
     <TokenList
       gap={3}
       direction="column"
-      allTokens={atomTheme.colors}
+      allTokens={(atomTheme as Theme).colors}
       specificTokens={specificColors}
       ItemComponent={ColorExample}
       {...rest}
