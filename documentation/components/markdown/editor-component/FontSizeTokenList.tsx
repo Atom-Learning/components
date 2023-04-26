@@ -1,5 +1,6 @@
 import { Text } from '@atom-learning/components'
 import * as atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme'
 import { TokenList } from './token-list'
 
 import * as React from 'react'
@@ -24,7 +25,7 @@ export const FontSizeTokenList: React.FC<FontSizeTokenListProps> = ({
     // @ts-ignore
     <TokenList
       direction="column"
-      allTokens={atomTheme.fontSizes}
+      allTokens={(atomTheme as Theme).fontSizes}
       specificTokens={specificFontSizes}
       ItemComponent={FontSizeExample}
       {...rest}

@@ -1,3 +1,4 @@
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 
@@ -24,7 +25,7 @@ export const SizeTokenList: React.FC<SizeTokenListProps> = ({
     // @ts-ignore
     <TokenList
       direction="column"
-      allTokens={atomTheme.sizes}
+      allTokens={(atomTheme as Theme).sizes}
       specificTokens={specificSizes}
       ItemComponent={SizeExample}
       {...rest}
