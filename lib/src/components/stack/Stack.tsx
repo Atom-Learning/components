@@ -83,7 +83,7 @@ export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
             ref={ref}
             direction={direction}
             gap={gap}
-            wrap={wrap}
+            wrap={direction === 'column' ? 'no-wrap' : wrap}
             justify={justify}
             align={
               typeof align === 'undefined' && direction !== 'column'
