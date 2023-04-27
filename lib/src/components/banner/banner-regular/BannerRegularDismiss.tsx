@@ -1,13 +1,12 @@
-import * as React from 'react'
 import { Close } from '@atom-learning/icons'
-
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { ActionIcon } from '../../action-icon'
-import { Banner } from '../Banner'
 import { Icon } from '../../icon'
+import { Banner } from '../Banner'
 import { useBannerContext } from '../BannerContext'
 
 const toActionIconSize = {
