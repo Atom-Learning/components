@@ -2,6 +2,14 @@
 
 exports[`renders SectionMessage component and has no programmatically detectable a11y issues 1`] = `
 @media  {
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -9,10 +17,6 @@ exports[`renders SectionMessage component and has no programmatically detectable
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-dyvMgW {
@@ -88,9 +92,48 @@ exports[`renders SectionMessage component and has no programmatically detectable
       animation-name: k-fvyGIa;
     }
 }
+
+  .c-flbHeh {
+    flex-grow: 1;
+    justify-content: space-between !important;
+  }
+
+  .c-iikTjs {
+    position: relative;
+    border-radius: var(--radii-0);
+    display: flex;
+    padding: var(--space-4);
+    border: 1px solid white;
+  }
 }
 
 @media  {
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 {
+    margin-top: calc(var(--space-3)*-1);
+    margin-left: calc(var(--space-3)*-1);
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 > * {
+    margin-top: var(--space-3);
+    margin-left: var(--space-3);
+  }
+
   .c-dbrbZt-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -122,6 +165,19 @@ exports[`renders SectionMessage component and has no programmatically detectable
   .c-hVoQtf-gWQnqe-size-md {
     max-width: 250px;
   }
+
+  .c-iikTjs-jtgfr-theme-error {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerDark);
+  }
+
+  .c-iikTjs-cSgxUp-hasIcon-true {
+    padding-left: var(--space-6);
+  }
+
+  .c-iikTjs-IFRSO-hasDismiss-true {
+    padding-right: var(--space-7);
+  }
 }
 
 @media  {
@@ -146,38 +202,23 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-PJLV-icCMPWT-css {
-    font-family: var(--fonts-body);
-    border-radius: var(--radii-0);
-    font-size: var(--fontSizes-sm);
-    color: var(--colors-grey900);
-    display: flex;
-    padding: var(--space-4);
-    border: 1px solid white;
-    background: var(--colors-dangerLight);
+  .c-dbrbZt-ihCBfwK-css {
+    margin: auto;
+    position: absolute;
+    left: var(--space-4);
+    top: var(--space-4);
+    color: currentColor;
   }
 
-  .c-PJLV-ijPPIYB-css {
-    margin-right: var(--space-2);
-    margin-top: -1px;
-    color: var(--colors-dangerDark);
+  .c-PJLV-iduWbFV-css {
+    max-width: 100%;
+    flex-shrink: 0;
   }
 
-  .c-dhzjXW-ijwwQRy-css {
-    column-gap: var(--space-2);
-    row-gap: var(--space-4);
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .c-dyvMgW-ifbbGuT-css {
+  .c-dyvMgW-ijgfvds-css {
     font-weight: 600;
     font-size: var(--fontSizes-md);
     margin-bottom: var(--space-2);
-    padding-top: 1px;
-    color: var(--colors-dangerDark);
   }
 
   .c-dyvMgW-ifUdxDN-css {
@@ -186,25 +227,24 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-PJLV-iMUsZT-css {
-    margin-left: auto;
-    margin-top: calc(var(--space-2)*-1);
-    margin-right: calc(var(--space-2)*-1);
-    margin-bottom: calc(var(--space-2)*-1);
-    padding-left: var(--space-4);
+  .c-fDzwZw-iefwZNm-css {
+    margin: auto;
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icCMPWT-css"
+    class="c-iikTjs c-iikTjs-jtgfr-theme-error c-iikTjs-cSgxUp-hasIcon-true c-iikTjs-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-PJLV c-PJLV-ijPPIYB-css"
+      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihCBfwK-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -223,15 +263,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
           r="10"
         />
       </svg>
-    </div>
-    <div
-      class="c-dhzjXW c-dhzjXW-ijwwQRy-css"
-    >
       <div
-        class="c-PJLV"
+        class="c-PJLV c-PJLV-iduWbFV-css"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ifbbGuT-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ijgfvds-css"
         >
           Title message
         </p>
@@ -241,13 +277,9 @@ exports[`renders SectionMessage component and has no programmatically detectable
           This is the description
         </p>
       </div>
-    </div>
-    <div
-      class="c-PJLV c-PJLV-iMUsZT-css"
-    >
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iPJLV-css c-PJLV"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
         data-state="closed"
         type="button"
       >

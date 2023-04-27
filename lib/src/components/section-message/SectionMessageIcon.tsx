@@ -1,22 +1,41 @@
-import React from 'react'
+import { Danger, Error, Info, OkCircle } from '@atom-learning/icons'
+import React, { useEffect } from 'react'
 
-import { Box } from '../box'
 import { Icon } from '../icon'
-import { THEMES } from './SectionMessage'
 import { useSectionMessageContext } from './SectionMessageContext'
 
+const toIconSVG = {
+  success: OkCircle,
+  warning: Danger,
+  error: Error,
+  neutral: Info,
+  info: Info
+}
 export const SectionMessageIcon = ({
   css,
+  is,
   ...rest
-}: React.ComponentProps<typeof Box>): JSX.Element => {
-  const { theme } = useSectionMessageContext()
+}: React.ComponentProps<typeof Icon>): JSX.Element => {
+  const { theme, setHasIcon } = useSectionMessageContext()
+
+  useEffect(() => {
+    setHasIcon(true)
+    return () => setHasIcon(false)
+  }, [setHasIcon])
 
   return (
-    <Box
-      css={{ mr: '$2', mt: '-1px', color: THEMES[theme].color, ...css }}
+    <Icon
+      css={{
+        m: 'auto',
+        position: 'absolute',
+        left: '$4',
+        top: '$4',
+        color: 'currentColor',
+        ...css
+      }}
+      is={is || toIconSVG[theme]}
+      size="sm"
       {...rest}
-    >
-      <Icon is={THEMES[theme].icon} size="sm" />
-    </Box>
+    />
   )
 }
