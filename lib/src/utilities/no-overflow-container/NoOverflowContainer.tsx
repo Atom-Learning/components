@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { Box } from '~/components/box'
 import { styled } from '~/stitches'
 
