@@ -12,11 +12,12 @@ type TBannerContextValue = TBannerProviderProps & {
   setHasDismiss: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export const BannerContext = React.createContext<
-  TBannerContextValue | undefined
->(undefined)
+export const BannerContext = React.createContext<TBannerContextValue>({
+  hasDismiss: false,
+  setHasDismiss: () => null
+})
 
-export const useBannerContext = (): Partial<TBannerContextValue> => {
+export const useBannerContext = (): TBannerContextValue => {
   const context = React.useContext(BannerContext)
 
   if (context === undefined) {
