@@ -23,7 +23,14 @@ const StyledDismiss = styled(ActionIcon, {
 export const BannerRegularDismiss: React.FC<
   React.ComponentProps<typeof ActionIcon>
 > = ({ label = 'dismiss', ...rest }) => {
-  const { size } = useBannerContext()
+  const { size, setHasDismiss } = useBannerContext()
+
+  React.useEffect(() => {
+    setHasDismiss(true)
+    return () => {
+      setHasDismiss(false)
+    }
+  }, [setHasDismiss])
 
   const actionIconSize = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toActionIconSize[s]),
