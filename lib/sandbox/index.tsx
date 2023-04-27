@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Flex, globalCss } from '../src'
+import { Box, Button, Flex, globalCss, SectionMessage } from '../src'
 
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
@@ -15,6 +15,22 @@ const App = () => (
       flexDirection: 'column'
     }}
   >
+    <SectionMessage css={{ width: 300 }}>
+      <SectionMessage.Content>
+        <SectionMessage.Title>Title message</SectionMessage.Title>
+        <SectionMessage.Description>
+          This is the description
+        </SectionMessage.Description>
+      </SectionMessage.Content>
+      <SectionMessage.Actions>
+        <Button size="sm">Button</Button>
+        <Button size="sm" appearance="outline">
+          Button
+        </Button>
+      </SectionMessage.Actions>
+      <SectionMessage.Icon />
+      <SectionMessage.Close />
+    </SectionMessage>
     <Box />
   </Flex>
 )

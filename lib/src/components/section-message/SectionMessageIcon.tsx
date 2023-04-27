@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react'
 import { Danger, Error, Info, OkCircle } from '@atom-learning/icons'
+import React, { useEffect } from 'react'
+
 import { Icon } from '../icon'
 import { useSectionMessageContext } from './SectionMessageContext'
 
@@ -12,9 +13,11 @@ const toIconSVG = {
 }
 export const SectionMessageIcon = ({
   css,
+  is,
   ...rest
 }: React.ComponentProps<typeof Icon>): JSX.Element => {
   const { theme, setHasIcon } = useSectionMessageContext()
+
   useEffect(() => {
     setHasIcon(true)
     return () => setHasIcon(false)
@@ -22,7 +25,6 @@ export const SectionMessageIcon = ({
 
   return (
     <Icon
-      {...rest}
       css={{
         m: 'auto',
         position: 'absolute',
@@ -31,8 +33,9 @@ export const SectionMessageIcon = ({
         color: 'currentColor',
         ...css
       }}
-      is={toIconSVG[theme]}
+      is={is || toIconSVG[theme]}
       size="sm"
+      {...rest}
     />
   )
 }

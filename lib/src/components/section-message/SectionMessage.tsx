@@ -3,8 +3,8 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Stack } from '../stack'
 import { Dismissible } from '../dismissible'
+import { Stack } from '../stack'
 import { SectionMessageClose } from './SectionMessageClose'
 import {
   SectionMessageProvider,
