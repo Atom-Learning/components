@@ -43,7 +43,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({
       border
       borderRadius="md"
       {...elementSpecificProps}
-      css={{ color: 'inherit', textDecoration: 'none', display: 'block' }}
+      css={{ color: 'inherit', textDecoration: 'none', display: 'block', height: '100%' }}
     >
       <TileNoOverflowContainer>
         <Box
