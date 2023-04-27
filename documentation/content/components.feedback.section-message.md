@@ -9,7 +9,7 @@ tabs:
     content: >-
       A section message displays a contextual feedback message in a
       particular section of the page. They’re persistent and nonmodal. It can
-      include a ‘close’ button to be dismissed, allowing the user to either
+      include a dismiss button, allowing the user to either
       ignore them or interact with them at any time.
 
       <CodeBlock live={true} preview={true} code={`<SectionMessage>
@@ -20,7 +20,7 @@ tabs:
             This is the description
           </SectionMessage.Description>
         </SectionMessage.Content>
-        <SectionMessage.Close />
+        <SectionMessage.Dismiss />
       </SectionMessage>`} language={"tsx"} />
 
 
@@ -42,7 +42,7 @@ tabs:
                   This is the description
                 </SectionMessage.Description>
               </SectionMessage.Content>
-              <SectionMessage.Close />
+              <SectionMessage.Dismiss />
             </SectionMessage>
 
             <SectionMessage theme="warning">
@@ -53,7 +53,7 @@ tabs:
                   This is the description
                 </SectionMessage.Description>
               </SectionMessage.Content>
-              <SectionMessage.Close />
+              <SectionMessage.Dismiss />
             </SectionMessage>
 
             <SectionMessage theme="success">
@@ -64,7 +64,7 @@ tabs:
                   This is the description
                 </SectionMessage.Description>
               </SectionMessage.Content>
-              <SectionMessage.Close />
+              <SectionMessage.Dismiss />
             </SectionMessage>
 
             <SectionMessage theme="info">
@@ -75,7 +75,7 @@ tabs:
                   This is the description
                 </SectionMessage.Description>
               </SectionMessage.Content>
-              <SectionMessage.Close />
+              <SectionMessage.Dismiss />
             </SectionMessage>
 
             <SectionMessage theme="neutral">
@@ -86,7 +86,7 @@ tabs:
                   This is the description
                 </SectionMessage.Description>
               </SectionMessage.Content>
-              <SectionMessage.Close />
+              <SectionMessage.Dismiss />
             </SectionMessage>
           </Stack>
         `} 
@@ -94,30 +94,9 @@ tabs:
 
       ## Composition
 
-      `SectionMessage` ships with smaller components to allow for flexibility in creating all kinds of layouts. The below example shows a very basic layout.
-
-      ### Simple layout
-
-      <CodeBlock 
-        live={true} 
-        preview={true} 
-        language={"tsx"}
-        code={`
-          <SectionMessage>
-            <SectionMessage.Icon />
-            This is the description
-            <SectionMessage.Close />
-          </SectionMessage>
-        `} 
-      />
-
-      ### Complex layout
-
+      `SectionMessage` ships with smaller components to allow for flexibility in creating all kinds of layouts. 
 
       Note that elements contained within `SectionMessage.Content` will be displayed inline if there is enough space and automatically wrap when there isn't. 
-
-
-      `SectionMessage.Actions` will always align to the right when contained within `SectionMessage.Content` and shown inline.
 
       <CodeBlock 
         live={true} 
@@ -138,7 +117,7 @@ tabs:
                   Button
                 </Button>
               </SectionMessage.Actions>
-            <SectionMessage.Close />
+            <SectionMessage.Dismiss />
           </SectionMessage>
         `} 
       />
@@ -147,6 +126,12 @@ tabs:
       ## API Reference
 
       <ComponentProps component="SectionMessage" />
+      <ComponentProps component="SectionMessage.Icon" />
+      <ComponentProps component="SectionMessage.Content" />
+      <ComponentProps component="SectionMessage.Title" />
+      <ComponentProps component="SectionMessage.Description" />
+      <ComponentProps component="SectionMessage.Actions" />
+      <ComponentProps component="SectionMessage.Dismiss" />
   - title: Visual
     content: >-
       ## Structure

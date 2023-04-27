@@ -14,7 +14,7 @@ it('renders SectionMessage component and has no programmatically detectable a11y
           This is the description
         </SectionMessage.Description>
       </SectionMessage.Content>
-      <SectionMessage.Close />
+      <SectionMessage.Dismiss />
     </SectionMessage>
   )
 

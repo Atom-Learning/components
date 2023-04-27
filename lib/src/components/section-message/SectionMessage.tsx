@@ -4,11 +4,13 @@ import React from 'react'
 import { styled } from '~/stitches'
 
 import { Dismissible } from '../dismissible'
+import { Stack } from '../stack'
 import {
   SectionMessageProvider,
   useSectionMessageContext
 } from './SectionMessageContext'
 import { SectionMessageDescription } from './SectionMessageDescription'
+import { SectionMessageDismiss } from './SectionMessageDismiss'
 import { SectionMessageIcon } from './SectionMessageIcon'
 import {
   SectionMessageActions,
@@ -81,13 +83,19 @@ const SectionMessageRoot = ({
   )
 }
 
-export type SectionMessageProps = React.ComponentProps<
-  typeof SectionMessageRoot
-> & {
-  theme: 'success' | 'warning' | 'error' | 'neutral' | 'info'
+export type SectionMessageTheme =
+  | 'success'
+  | 'warning'
+  | 'error'
+  | 'neutral'
+  | 'info'
+
+export interface SectionMessageProps
+  extends React.ComponentProps<typeof SectionMessageRoot> {
+  theme?: SectionMessageTheme
 }
 
-const SectionMessage = ({
+export const SectionMessage = ({
   theme = 'info',
   ...rest
 }: SectionMessageProps): JSX.Element => {
@@ -103,8 +111,6 @@ const SectionMessage = ({
 SectionMessage.Title = SectionMessageTitle
 SectionMessage.Description = SectionMessageDescription
 SectionMessage.Icon = SectionMessageIcon
-SectionMessage.Close = SectionMessageClose
+SectionMessage.Dismiss = SectionMessageDismiss
 SectionMessage.Content = SectionMessageContent
 SectionMessage.Actions = SectionMessageActions
-
-export { SectionMessage }

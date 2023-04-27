@@ -1,31 +1,34 @@
 import React from 'react'
 
-import type { SectionMessageProps } from './SectionMessage'
+import type { SectionMessageTheme } from './SectionMessage'
 
-export type TSectionMessageContext = {
-  theme: SectionMessageProps['theme']
+export type SectionMessageContextValue = {
+  theme: SectionMessageTheme
   hasIcon: boolean
   setHasIcon: React.Dispatch<React.SetStateAction<boolean>>
   hasDismiss: boolean
   setHasDismiss: React.Dispatch<React.SetStateAction<boolean>>
 }
-export type TSectionMessageProviderProps = {
-  theme: TSectionMessageContext['theme']
+export type SectionMessageProviderProps = {
+  theme: SectionMessageTheme
+  children: React.ReactNode
 }
 
 export const SectionMessageContext =
-  React.createContext<TSectionMessageContext>({})
+  React.createContext<SectionMessageContextValue | null>(null)
 
-export const SectionMessageProvider: React.FC<TSectionMessageProviderProps> = ({
+export const SectionMessageProvider = ({
   theme = 'info',
   children
-}) => {
+}: SectionMessageProviderProps): JSX.Element => {
   const [hasIcon, setHasIcon] = React.useState(false)
   const [hasDismiss, setHasDismiss] = React.useState(false)
-  const value = React.useMemo<TSectionMessageContext>(
+
+  const value = React.useMemo<SectionMessageContextValue>(
     () => ({ theme, hasIcon, setHasIcon, hasDismiss, setHasDismiss }),
     [theme, hasIcon, setHasIcon, hasDismiss, setHasDismiss]
   )
+
   return (
     <SectionMessageContext.Provider value={value}>
       {children}
@@ -33,10 +36,10 @@ export const SectionMessageProvider: React.FC<TSectionMessageProviderProps> = ({
   )
 }
 
-export const useSectionMessageContext = (): TSectionMessageContext => {
+export const useSectionMessageContext = (): SectionMessageContextValue => {
   const context = React.useContext(SectionMessageContext)
 
-  if (context === undefined) {
+  if (!context) {
     throw new Error(
       'useSectionMessageContext must be used within a SectionMessageProvider'
     )

@@ -157,6 +157,23 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: table;
   }
 
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
   .c-fDzwZw-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
@@ -215,15 +232,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
     flex-shrink: 0;
   }
 
-  .c-dyvMgW-ijgfvds-css {
+  .c-dyvMgW-ikMtawB-css {
     font-weight: 600;
-    font-size: var(--fontSizes-md);
     margin-bottom: var(--space-2);
   }
 
-  .c-dyvMgW-ifUdxDN-css {
-    font-weight: 400;
-    font-size: var(--fontSizes-sm);
+  .c-dyvMgW-ibDwMAO-css {
     color: var(--colors-grey900);
   }
 
@@ -267,12 +281,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
         class="c-PJLV c-PJLV-iduWbFV-css"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ijgfvds-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ikMtawB-css"
         >
           Title message
         </p>
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ifUdxDN-css"
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-ibDwMAO-css"
         >
           This is the description
         </p>

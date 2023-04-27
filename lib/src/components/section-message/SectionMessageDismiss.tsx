@@ -6,7 +6,7 @@ import { Dismissible } from '../dismissible'
 import { Icon } from '../icon'
 import { useSectionMessageContext } from './SectionMessageContext'
 
-export const SectionMessageClose = ({
+export const SectionMessageDismiss = ({
   label = 'Dismiss',
   css,
   ...rest

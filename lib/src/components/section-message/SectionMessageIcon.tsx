@@ -4,18 +4,21 @@ import React, { useEffect } from 'react'
 import { Icon } from '../icon'
 import { useSectionMessageContext } from './SectionMessageContext'
 
-const toIconSVG = {
+const themeIcons = {
   success: OkCircle,
   warning: Danger,
   error: Error,
   neutral: Info,
   info: Info
 }
+
+type SectionMessageIconProps = Partial<React.ComponentProps<typeof Icon>>
+
 export const SectionMessageIcon = ({
   css,
   is,
   ...rest
-}: React.ComponentProps<typeof Icon>): JSX.Element => {
+}: SectionMessageIconProps): JSX.Element => {
   const { theme, setHasIcon } = useSectionMessageContext()
 
   useEffect(() => {
@@ -33,7 +36,7 @@ export const SectionMessageIcon = ({
         color: 'currentColor',
         ...css
       }}
-      is={is || toIconSVG[theme]}
+      is={is || themeIcons[theme]}
       size="sm"
       {...rest}
     />
