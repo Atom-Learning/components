@@ -39,6 +39,8 @@ const CardsItem: React.FC<TCardsItemProps> = ({
 
   return (
     <TileInteractive
+      border
+      borderRadius="md"
       {...elementSpecificProps}
       css={{ color: 'inherit', textDecoration: 'none', display: 'block' }}
     >
@@ -48,14 +50,13 @@ const CardsItem: React.FC<TCardsItemProps> = ({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          mb: '$2',
           p: '$2',
           aspectRatio: '16/9'
         }}
       >
         {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
       </Box>
-      <Box css={{ p: '$4 $2' }}>
+      <Box css={{ p: '$4' }}>
         <Heading as="h3" size="xs" css={{ mb: '$3' }}>{heading}</Heading>
         <Text size="xs">{description}</Text>
       </Box>
