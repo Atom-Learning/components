@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      Tabs is a component that provides different sections of content that are
-      displayed one at a time.
+      Tabs is a component that provides different sections of content that
+      are displayed one at a time.
 
       Functionality based on the [`Tab`](https://www.radix-ui.com/docs/primitives/components/tabs) radix component, which already allows for: controlled/uncontrolled tabbing, disabling or partly disabling options, adds keyboard navigation and orientation and more.
 
