@@ -4,7 +4,7 @@ import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 
 import { Dismissible } from '../dismissible'
 import { BannerContainer, TBannerContainerProps } from './BannerContainer'
-import { BannerContext } from './BannerContext'
+import { BannerProvider } from './BannerContext'
 
 type TDismissibleProps = React.ComponentProps<typeof Dismissible>
 
@@ -31,9 +31,9 @@ export const Banner: React.FC<IBannerProps> & {
     <ColorScheme {...colorScheme} asChild>
       <Dismissible asChild value={value} onDismiss={onDismiss}>
         <BannerContainer role="banner" emphasis={emphasis}>
-          <BannerContext.Provider value={{ emphasis, size }}>
+          <BannerProvider emphasis={emphasis} size={size}>
             {children}
-          </BannerContext.Provider>
+          </BannerProvider>
         </BannerContainer>
       </Dismissible>
     </ColorScheme>

@@ -9,22 +9,37 @@ const StyledHeading = styled(Heading, {
   mb: '$4',
   variants: {
     containerSize: {
-      sm: {
+      sm: {},
+      md: {}
+    },
+    hasDismiss: {
+      true: {}
+    }
+  },
+  compoundVariants: [
+    {
+      containerSize: 'sm',
+      hasDismiss: true,
+      css: {
         mr: '$6'
-      },
-      md: {
-        mr: 0
       }
     }
-  }
+  ]
 })
 
 export const BannerRegularHeading: React.FC<
   React.ComponentProps<typeof Heading>
 > = (props) => {
-  const { size } = useBannerContext()
+  const { size, hasDismiss } = useBannerContext()
 
-  return <StyledHeading size="sm" containerSize={size} {...props} />
+  return (
+    <StyledHeading
+      size="sm"
+      containerSize={size}
+      hasDismiss={hasDismiss}
+      {...props}
+    />
+  )
 }
 
 BannerRegularHeading.displayName = 'BannerRegularHeading'
