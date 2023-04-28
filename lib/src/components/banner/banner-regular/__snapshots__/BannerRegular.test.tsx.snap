@@ -1,0 +1,1092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BannerRegular component renders 1`] = `
+@media  {
+  :root,
+  .t-cyussq {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 76%);
+    --colors-grey600: hsl(0, 0%, 71%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(212, 100%, 88%);
+    --colors-blue500: hsl(212, 87%, 84%);
+    --colors-blue600: hsl(216, 96%, 79%);
+    --colors-blue700: hsl(214, 92%, 63%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 78%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(228, 63%, 20%);
+    --colors-purple100: hsl(281, 100%, 98%);
+    --colors-purple200: hsl(270, 100%, 95%);
+    --colors-purple300: hsl(270, 100%, 92%);
+    --colors-purple400: hsl(270, 100%, 89%);
+    --colors-purple500: hsl(270, 87%, 84%);
+    --colors-purple600: hsl(264, 96%, 79%);
+    --colors-purple700: hsl(275, 100%, 51%);
+    --colors-purple800: hsl(273, 94%, 48%);
+    --colors-purple900: hsl(268, 78%, 42%);
+    --colors-purple1000: hsl(266, 82%, 32%);
+    --colors-purple1100: hsl(265, 63%, 23%);
+    --colors-purple1200: hsl(265, 63%, 20%);
+    --colors-tonal50: hsl(0, 0%, 96%);
+    --colors-tonal100: hsl(0, 0%, 92%);
+    --colors-tonal200: hsl(0, 0%, 71%);
+    --colors-tonal300: hsl(0, 0%, 46%);
+    --colors-tonal400: hsl(0, 0%, 33%);
+    --colors-tonal500: hsl(0, 0%, 20%);
+    --colors-tonal600: hsl(0, 0%, 12%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-primaryLight: hsl(215, 100%, 98%);
+    --colors-primary: hsl(217, 92%, 51%);
+    --colors-primaryMid: hsl(223, 78%, 44%);
+    --colors-primaryDark: hsl(228, 82%, 35%);
+    --colors-secondary: hsl(204, 100%, 72%);
+    --colors-brandRed: hsl(0, 91%, 64%);
+    --colors-brandRedAccent: hsl(14, 100%, 71%);
+    --colors-brandGreen: hsl(128, 47%, 53%);
+    --colors-brandGreenAccent: hsl(168, 100%, 20%);
+    --colors-brandPurple: hsl(256, 65%, 62%);
+    --colors-brandPurpleAccent: hsl(256, 93%, 35%);
+    --colors-brandYellow: hsl(41, 100%, 55%);
+    --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(0, 91%, 64%);
+    --colors-subjectMaths: hsl(217, 92%, 51%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(128, 47%, 53%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(33, 100%, 50%);
+    --colors-subjectExamSkills: hsl(256, 93%, 35%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'Space Grotesk', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+  }
+
+  .base-purple1 {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-purple100);
+    --colors-base3: var(--colors-purple200);
+    --colors-base4: var(--colors-purple300);
+    --colors-base5: var(--colors-purple400);
+    --colors-base6: var(--colors-purple500);
+    --colors-base7: var(--colors-purple600);
+    --colors-base8: var(--colors-purple700);
+    --colors-base9: var(--colors-purple800);
+    --colors-base10: var(--colors-purple900);
+    --colors-base11: var(--colors-purple1000);
+  }
+}
+
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bSYoqs {
+    position: relative;
+    width: 100%;
+    border-radius: var(--radii-0);
+    overflow: hidden;
+    color: var(--colors-foreground);
+  }
+
+  .c-gjbGPV {
+    width: 62%;
+    flex-grow: 1;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-llIiIE {
+    margin-bottom: var(--space-4);
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
+  }
+
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-eEYQKA {
+    position: relative;
+    overflow: hidden;
+    width: 38%;
+  }
+
+  .c-iSBxEZ {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-jQKlgO {
+    position: absolute;
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media  {
+  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
+  }
+
+  .c-gjbGPV-lppGPL-size-sm {
+    padding: var(--space-4);
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-bDwMAO-llIiIE-containerSize-sm {
+    margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
+  }
+
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-fkUJsw-eYnvrx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+    height: var(--sizes-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
+  }
+
+  .c-eEYQKA-kBYYkb-size-sm {
+    display: none;
+  }
+}
+
+@media  {
+@media (min-width: 800px) {
+    .c-gjbGPV-iOglxG-size-md {
+      padding: var(--space-24);
+      padding-right: var(--space-5);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md {
+      font-size: var(--fontSizes-md);
+      line-height: 1.5;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md::before {
+      content: '';
+      margin-bottom: -0.3864em;
+      display: table;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md::after {
+      content: '';
+      margin-top: -0.3864em;
+      display: table;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-bDwMAO-gyGikE-containerSize-md {
+      margin-bottom: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-jgdwfn-hAgpth-gap-4 {
+      margin-top: calc(var(--space-4)*-1);
+      margin-left: calc(var(--space-4)*-1);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-jgdwfn-hAgpth-gap-4 > * {
+      margin-top: var(--space-4);
+      margin-left: var(--space-4);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-fkUJsw-hnmcil-size-md {
+      font-size: var(--fontSizes-md);
+      line-height: 1.5;
+      height: var(--sizes-4);
+      padding-left: var(--space-5);
+      padding-right: var(--space-5);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-fkUJsw-fXTFOn-fullWidth-false {
+      width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-eEYQKA-cwmvBm-size-md {
+      display: block;
+    }
+}
+}
+
+@media  {
+  .c-fkUJsw-iRJCoR-cv {
+    background: white;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .c-fkUJsw-bznQva-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-fkUJsw-bznQva-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
+  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    role="banner"
+  >
+    <div
+      class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
+    >
+      <h2
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE"
+      >
+        Get ready for entrance exams
+      </h2>
+      <p
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md"
+      >
+        Talk to our admissions experts on to learn how to support your child. This is an example lor!
+      </p>
+      <div
+        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+      >
+        <button
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          type="button"
+        >
+          Contact an expert
+        </button>
+        <button
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          type="button"
+        >
+          Secondary
+        </button>
+      </div>
+    </div>
+    <div
+      class="c-PJLV c-eEYQKA c-eEYQKA-kBYYkb-size-sm c-eEYQKA-cwmvBm-size-md"
+    >
+      <img
+        alt="kitten"
+        class="c-iSBxEZ c-jQKlgO"
+        src="http://placekitten.com/200/300"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BannerRegular component renders dismissible variant 1`] = `
+@media  {
+  :root,
+  .t-cyussq {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 76%);
+    --colors-grey600: hsl(0, 0%, 71%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(212, 100%, 88%);
+    --colors-blue500: hsl(212, 87%, 84%);
+    --colors-blue600: hsl(216, 96%, 79%);
+    --colors-blue700: hsl(214, 92%, 63%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 78%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(228, 63%, 20%);
+    --colors-purple100: hsl(281, 100%, 98%);
+    --colors-purple200: hsl(270, 100%, 95%);
+    --colors-purple300: hsl(270, 100%, 92%);
+    --colors-purple400: hsl(270, 100%, 89%);
+    --colors-purple500: hsl(270, 87%, 84%);
+    --colors-purple600: hsl(264, 96%, 79%);
+    --colors-purple700: hsl(275, 100%, 51%);
+    --colors-purple800: hsl(273, 94%, 48%);
+    --colors-purple900: hsl(268, 78%, 42%);
+    --colors-purple1000: hsl(266, 82%, 32%);
+    --colors-purple1100: hsl(265, 63%, 23%);
+    --colors-purple1200: hsl(265, 63%, 20%);
+    --colors-tonal50: hsl(0, 0%, 96%);
+    --colors-tonal100: hsl(0, 0%, 92%);
+    --colors-tonal200: hsl(0, 0%, 71%);
+    --colors-tonal300: hsl(0, 0%, 46%);
+    --colors-tonal400: hsl(0, 0%, 33%);
+    --colors-tonal500: hsl(0, 0%, 20%);
+    --colors-tonal600: hsl(0, 0%, 12%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-primaryLight: hsl(215, 100%, 98%);
+    --colors-primary: hsl(217, 92%, 51%);
+    --colors-primaryMid: hsl(223, 78%, 44%);
+    --colors-primaryDark: hsl(228, 82%, 35%);
+    --colors-secondary: hsl(204, 100%, 72%);
+    --colors-brandRed: hsl(0, 91%, 64%);
+    --colors-brandRedAccent: hsl(14, 100%, 71%);
+    --colors-brandGreen: hsl(128, 47%, 53%);
+    --colors-brandGreenAccent: hsl(168, 100%, 20%);
+    --colors-brandPurple: hsl(256, 65%, 62%);
+    --colors-brandPurpleAccent: hsl(256, 93%, 35%);
+    --colors-brandYellow: hsl(41, 100%, 55%);
+    --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(0, 91%, 64%);
+    --colors-subjectMaths: hsl(217, 92%, 51%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(128, 47%, 53%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(33, 100%, 50%);
+    --colors-subjectExamSkills: hsl(256, 93%, 35%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'Space Grotesk', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+  }
+
+  .base-purple1 {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-purple100);
+    --colors-base3: var(--colors-purple200);
+    --colors-base4: var(--colors-purple300);
+    --colors-base5: var(--colors-purple400);
+    --colors-base6: var(--colors-purple500);
+    --colors-base7: var(--colors-purple600);
+    --colors-base8: var(--colors-purple700);
+    --colors-base9: var(--colors-purple800);
+    --colors-base10: var(--colors-purple900);
+    --colors-base11: var(--colors-purple1000);
+  }
+}
+
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-bSYoqs {
+    position: relative;
+    width: 100%;
+    border-radius: var(--radii-0);
+    overflow: hidden;
+    color: var(--colors-foreground);
+  }
+
+  .c-gjbGPV {
+    width: 62%;
+    flex-grow: 1;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-llIiIE {
+    margin-bottom: var(--space-4);
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-bDwMAO {
+    color: var(--colors-grey900);
+  }
+
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-eEYQKA {
+    position: relative;
+    overflow: hidden;
+    width: 38%;
+  }
+
+  .c-iSBxEZ {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+
+  .c-jQKlgO {
+    position: absolute;
+    max-width: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-iQtYBa {
+    position: absolute;
+    top: var(--space-3);
+    right: var(--space-3);
+  }
+}
+
+@media  {
+  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
+  }
+
+  .c-gjbGPV-lppGPL-size-sm {
+    padding: var(--space-4);
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-bDwMAO-llIiIE-containerSize-sm {
+    margin-bottom: var(--space-4);
+  }
+
+  .c-bDwMAO-fgLDMq-emphasis-highContrast {
+    color: var(--colors-grey100);
+  }
+
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 {
+    margin-top: calc(var(--space-2)*-1);
+    margin-left: calc(var(--space-2)*-1);
+  }
+
+  .c-jgdwfn-dPMagj-gap-2 > * {
+    margin-top: var(--space-2);
+    margin-left: var(--space-2);
+  }
+
+  .c-fkUJsw-eYnvrx-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+    height: var(--sizes-3);
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .c-fkUJsw-fGHEql-fullWidth-true {
+    width: 100%;
+  }
+
+  .c-eEYQKA-kBYYkb-size-sm {
+    display: none;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-fDzwZw-rloUt-isRounded-true {
+    border-radius: var(--radii-round);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+}
+
+@media  {
+@media (min-width: 800px) {
+    .c-gjbGPV-iOglxG-size-md {
+      padding: var(--space-24);
+      padding-right: var(--space-5);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md {
+      font-size: var(--fontSizes-md);
+      line-height: 1.5;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md::before {
+      content: '';
+      margin-bottom: -0.3864em;
+      display: table;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dyvMgW-flAohk-size-md::after {
+      content: '';
+      margin-top: -0.3864em;
+      display: table;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-bDwMAO-gyGikE-containerSize-md {
+      margin-bottom: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-jgdwfn-hAgpth-gap-4 {
+      margin-top: calc(var(--space-4)*-1);
+      margin-left: calc(var(--space-4)*-1);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-jgdwfn-hAgpth-gap-4 > * {
+      margin-top: var(--space-4);
+      margin-left: var(--space-4);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-fkUJsw-hnmcil-size-md {
+      font-size: var(--fontSizes-md);
+      line-height: 1.5;
+      height: var(--sizes-4);
+      padding-left: var(--space-5);
+      padding-right: var(--space-5);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-fkUJsw-fXTFOn-fullWidth-false {
+      width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-eEYQKA-cwmvBm-size-md {
+      display: block;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-fDzwZw-fpPlqP-size-sm {
+      height: var(--sizes-3);
+      width: var(--sizes-3);
+    }
+}
+}
+
+@media  {
+  .c-fkUJsw-iRJCoR-cv {
+    background: white;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .c-fkUJsw-bznQva-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-fkUJsw-bznQva-cv[disabled] {
+    border-color: var(--colors-tonal400);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
+  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .c-llIiIE-cRYaBy-cv {
+    margin-right: var(--space-6);
+  }
+
+  .c-bDwMAO-cRYaBy-cv {
+    margin-right: var(--space-6);
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    role="banner"
+  >
+    <div
+      class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
+    >
+      <h2
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-cv"
+      >
+        Get ready for entrance exams
+      </h2>
+      <p
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md c-bDwMAO-cRYaBy-cv"
+      >
+        Talk to our admissions experts on to learn how to support your child. This is an example lor!
+      </p>
+      <div
+        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+      >
+        <button
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          type="button"
+        >
+          Contact an expert
+        </button>
+        <button
+          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          type="button"
+        >
+          Secondary
+        </button>
+      </div>
+    </div>
+    <div
+      class="c-PJLV c-eEYQKA c-eEYQKA-kBYYkb-size-sm c-eEYQKA-cwmvBm-size-md"
+    >
+      <img
+        alt="kitten"
+        class="c-iSBxEZ c-jQKlgO"
+        src="http://placekitten.com/200/300"
+      />
+    </div>
+    <button
+      aria-label="dismiss banner"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-fpPlqP-size-sm c-iQtYBa"
+      data-testid="dismiss"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

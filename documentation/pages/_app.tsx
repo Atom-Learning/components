@@ -5,8 +5,7 @@ import Head from 'next/head'
 import * as React from 'react'
 import { useIsMounted } from '~/utilities/hooks/useIsMounted'
 
-import { Layout as AppLayout } from "~/components/app";
-
+import { Layout as AppLayout } from '~/components/app'
 
 globalCss({
   '*': { boxSizing: 'border-box' },
@@ -20,12 +19,12 @@ globalCss({
 // https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   // https://stackoverflow.com/questions/71706064/react-18-hydration-failed-because-the-initial-ui-does-not-match-what-was-render
-  const isMounted = useIsMounted();
-  if (!isMounted) return null;
+  const isMounted = useIsMounted()
+  if (!isMounted) return null
 
-  if (typeof window === 'undefined') return null;
+  if (typeof window === 'undefined') return null
 
-  let Layout = AppLayout;
+  let Layout = AppLayout
   if (Component.displayName === 'Admin') Layout = React.Fragment
 
   return (

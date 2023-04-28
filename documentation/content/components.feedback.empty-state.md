@@ -40,7 +40,7 @@ tabs:
       The message can include Title and/or Body and sometimes they appear together with an illustration and actionable buttons.
 
 
-      ![empty state structure](/admin/images/01-empty-state-structure.png "empty state structure")
+      ![empty state structure](/assets/images/01-empty-state-structure.png "empty state structure")
 
 
       | Element & Property                      | Token     | Pixel | Rem  |
@@ -68,7 +68,7 @@ tabs:
       “md” and “lg” share the same illustration size but “lg” adds a semicircle on the background that comes from the logo of Atom making the total illustration bigger (also for “xl”).
 
 
-      ![empty state size](/admin/images/02-empty-state-size.png "empty state size")
+      ![empty state size](/assets/images/02-empty-state-size.png "empty state size")
 
 
       | Illustration container size | Width x Height (pixels)        |
@@ -89,7 +89,7 @@ tabs:
       ## Typography
 
 
-      ![empty state typography](/admin/images/03-empty-state-typography.png "empty state typography")
+      ![empty state typography](/assets/images/03-empty-state-typography.png "empty state typography")
 
 
       All text is centered aligned.
@@ -113,10 +113,10 @@ tabs:
 
       We use a minimal and simple approach to colour for empty states, using a muted greyscale that makes it clear that it’s an unactive illustration communicating that something is missing or doesn’t fully work yet. It also helps to bring users attention to the primary action instead of the illustration.\
 
-      We have two different background colours for our apps:  
+      We have two different background colours for our apps:
 
 
-      * White   
+      * White
 
       * Light-blue
 
@@ -124,7 +124,7 @@ tabs:
       The semicircle colour in lg and xl images would change from grey to white when placed within a light-blue background. That means we have 2 images for each illustration.
 
 
-      ![empty state color](/admin/images/04-empty-state-color.png "empty state color")
+      ![empty state color](/assets/images/04-empty-state-color.png "empty state color")
 
 
       | Property & Element | Token    | Hex |
@@ -145,17 +145,17 @@ tabs:
       Commonly seen the first time a user interacts with a product or page, but can be used when content has been deleted or is unavailable. An empty state is an opportunity to engage, help, and educate users adding an informative message and actionable buttons.
 
 
-      ![empty state overview](/admin/images/05-empty-state-overview.png "empty state overview")
+      ![empty state overview](/assets/images/05-empty-state-overview.png "empty state overview")
 
 
       None of the elements are required. In cases where the space is very limited, only a body text would be needed to provide the message. Just try to always be informative and provide enought information to orient the user.
 
 
-      1. **Illustration**: A non-interactive image that is relevant to the message and context.  
+      1. **Illustration**: A non-interactive image that is relevant to the message and context.
 
-      2. **Title**: A short and concise description.  
+      2. **Title**: A short and concise description.
 
-      3. **Body**: A short message that clearly explain why the space is empty and what to do next. Direct the user to a primary action button positioned underneath the copy or to a specific UI element.   
+      3. **Body**: A short message that clearly explain why the space is empty and what to do next. Direct the user to a primary action button positioned underneath the copy or to a specific UI element.
 
       4. **Call to action**: The primary call to action referenced in the message above. There could be one or multiple buttons styled as primary, secondary or ghost.
 
@@ -163,20 +163,20 @@ tabs:
       ## When to use
 
        Use Empty states when there’s an absence of content or data to provide explanation or to help and educate users.\
-      They can appear anywhere your app can display data, including but not limited to panels, tables, cards, modals and full pages.  
+      They can appear anywhere your app can display data, including but not limited to panels, tables, cards, modals and full pages.
 
 
-      Each case will be unique and should be thought of as a problem to solve. 
+      Each case will be unique and should be thought of as a problem to solve.
 
 
       **The primary goals should be to:**
 
 
-      * Improve learnability and feature discovery.  
+      * Improve learnability and feature discovery.
 
-      * Increase feature adoption.  
+      * Increase feature adoption.
 
-      * Improve usability. 
+      * Improve usability.
 
 
 
@@ -184,26 +184,26 @@ tabs:
       **Examples of use:**
 
 
-      * When no results are found after a search or filter.  
+      * When no results are found after a search or filter.
 
-      * When no content or items exists on a page.  
+      * When no content or items exists on a page.
 
-      * When a certain feature isn‘t available under the current tier.  
+      * When a certain feature isn‘t available under the current tier.
 
-      * When data is missing.  
+      * When data is missing.
 
-      * When there are features that need to be configured first, before having the ability to show or create content.  
+      * When there are features that need to be configured first, before having the ability to show or create content.
 
       * When something is amiss or there is some error.
 
 
-      ![empty state when to use size](/admin/images/06-empty-state-when-to-use.png "empty state when to use size")
+      ![empty state when to use size](/assets/images/06-empty-state-when-to-use.png "empty state when to use size")
 
 
-      You should choose the size of the image acording to the context and size of the space for the empty state.  
+      You should choose the size of the image acording to the context and size of the space for the empty state.
 
 
-      Large illustrations are likeley to be the only thing on the page or big containers. For example full-screen messages.  
+      Large illustrations are likeley to be the only thing on the page or big containers. For example full-screen messages.
 
 
       Small illustrations will be more commonly used for smaller containers and when there could be multiple empty states on the same page.
@@ -212,25 +212,25 @@ tabs:
       If space is limited, use just text. Also in a dashboard with panels that could show multiple empty states at the same time consider using just text to avoid repetition.
 
 
-      ![empty state when to use limited space](/admin/images/07-empty-state-when-to-use-2.png "empty state when to use limited space")
+      ![empty state when to use limited space](/assets/images/07-empty-state-when-to-use-2.png "empty state when to use limited space")
 
 
       When choosing the type of button that you are going to use for the empty state consider what other content might appear on the same screen and if there could be other empty states shown at once, in that case we recommend using ghost or link buttons. This avoid scenarios with multiple primary buttons in the UI.
 
 
-      ![empty state when to use button](/admin/images/08-empty-state-when-to-use-3.png "empty state when to use button")
+      ![empty state when to use button](/assets/images/08-empty-state-when-to-use-3.png "empty state when to use button")
 
 
       ## Do's and Don'ts
 
 
-      ![dos and donts 1](/admin/images/09-empty-state-do-s-and-dont-s-1.png "dos and donts 1")
+      ![dos and donts 1](/assets/images/09-empty-state-do-s-and-dont-s-1.png "dos and donts 1")
 
 
-      ![dos and donts 2](/admin/images/10-empty-state-do-s-and-dont-s-2.png "dos and donts 2")
+      ![dos and donts 2](/assets/images/10-empty-state-do-s-and-dont-s-2.png "dos and donts 2")
 
 
-      ![dos and donts 3](/admin/images/11-empty-state-do-s-and-dont-s-3.png "dos and donts 3")
+      ![dos and donts 3](/assets/images/11-empty-state-do-s-and-dont-s-3.png "dos and donts 3")
 parent: HGItoEG3XVs9DpOLugTot
 uuid: bTeUsimX8-KTOKy95aqze
 nestedSlug:

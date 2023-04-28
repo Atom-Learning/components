@@ -140,17 +140,17 @@ tabs:
       A section message displays a contextual feedback message in a particular section of the page. They’re persistent and nonmodal. It can include a ‘close’ button to be dismissed, allowing the user to either ignore them or interact with them at any time.
 
 
-      ![section message structure](/admin/images/01-section-message-structure.png "section message structure")
+      ![section message structure](/assets/images/01-section-message-structure.png "section message structure")
 
 
       **Anatony**
 
 
-      * **Icon**: The icon and section colour pairing signifies the message type and is available in pre-defined styles for each message type.  
+      * **Icon**: The icon and section colour pairing signifies the message type and is available in pre-defined styles for each message type.
 
-      * **Title**: The title should be a clear and concise representation of the message's purpose.   
+      * **Title**: The title should be a clear and concise representation of the message's purpose.
 
-      * **Description**: This should detail the message and any necessary actions for the user to take, if any. The message should remain as brief as possible.   
+      * **Description**: This should detail the message and any necessary actions for the user to take, if any. The message should remain as brief as possible.
 
       * **Actions** (optional): One or more buttons that allows the user to take action.
 
@@ -160,7 +160,7 @@ tabs:
       ### Paddings and margins
 
 
-      ![section message paddings and margins](/admin/images/02-section-message-paddings-and-margins.png "section message paddings and margins")
+      ![section message paddings and margins](/assets/images/02-section-message-paddings-and-margins.png "section message paddings and margins")
 
 
       | Component           | Theme   | Appearance | Size | isRounded |
@@ -183,7 +183,7 @@ tabs:
       | Corner radius container             | radii $0 | 4px   | 0.25 |
 
 
-      ![section message buttons](/admin/images/03-section-message-margin-buttons.png "section message buttons")
+      ![section message buttons](/assets/images/03-section-message-margin-buttons.png "section message buttons")
 
 
       | Property & element  | Token    | px  | rem |
@@ -193,7 +193,7 @@ tabs:
       | Margin-left actions | space $2 | 8px | 0.5 |
 
 
-      ![](/admin/images/04-section-message-margins.png)
+      ![](/assets/images/04-section-message-margins.png)
 
 
       | Property & element     | Token    | px   | rem |
@@ -212,7 +212,7 @@ tabs:
       ## Typography
 
 
-      ![section message margins](/admin/images/05-section-message-typography.png "section message margins")
+      ![section message margins](/assets/images/05-section-message-typography.png "section message margins")
 
 
       | Element   | Family | Weight | Size | Rem      | px  |
@@ -227,7 +227,7 @@ tabs:
       ## Color
 
 
-      ![section message color](/admin/images/06-section-message-color.png "section message color")
+      ![section message color](/assets/images/06-section-message-color.png "section message color")
 
 
       | Property & Element - State      | Token         | Hex |
@@ -264,32 +264,32 @@ tabs:
       ## Overview
 
 
-      A section message displays a contextual notification message for communicating with the user in a particular section of the page, attracting user’s attention without interrupting the user’s task.  
+      A section message displays a contextual notification message for communicating with the user in a particular section of the page, attracting user’s attention without interrupting the user’s task.
 
 
       They are persistent and non-modal. They can include a ‘close’ button to be dismissed, allowing the user to either ignore them or interact with them at any time.
 
 
-      ![section message overview](/admin/images/07-section-message-overview.png "section message overview")
+      ![section message overview](/assets/images/07-section-message-overview.png "section message overview")
 
 
       ## When to use
 
 
-      Use Section messages when:  
+      Use Section messages when:
 
 
-      * Conveying important information to users within a section of a page without blocking any other part of the interface or disrupting the flow. 
+      * Conveying important information to users within a section of a page without blocking any other part of the interface or disrupting the flow.
 
       * Displaying surface-level information to the user.
 
-      * Providing persistent, non-blocking feedback. 
+      * Providing persistent, non-blocking feedback.
 
 
-      Don’t use Section messages when:  
+      Don’t use Section messages when:
 
 
-      * Displaying information that is intented for promotional/marketing purposes. Use Promo banner instead.   
+      * Displaying information that is intented for promotional/marketing purposes. Use Promo banner instead.
 
       * When interacting with the message is required for the user to proceed with a task or flow. Use Dialog instead.
 
@@ -297,7 +297,7 @@ tabs:
       ## Types
 
 
-      Section messages can be of different type and severity. Usually, you’ll want to differentiate between at least five types of messages:  
+      Section messages can be of different type and severity. Usually, you’ll want to differentiate between at least five types of messages:
 
 
       • **Error** messages are used to inform users that something went wrong and help them out.\
@@ -311,19 +311,19 @@ tabs:
       • **Neutral** messages inform the user of general events and important information related to a page or section.
 
 
-      ![section message types](/admin/images/08-section-message-types.png "section message types")
+      ![section message types](/assets/images/08-section-message-types.png "section message types")
 
 
       ## Actions
 
 
-      Section messages can have multiple actions following the message. These actions can be links when referencing to a separate site, by specifying the href property, or Buttons, when no href is supplied.  
+      Section messages can have multiple actions following the message. These actions can be links when referencing to a separate site, by specifying the href property, or Buttons, when no href is supplied.
 
 
       If needed, actions can become disabled after clicking by setting disabled: true in the action data.
 
 
-      ![section message actions](/admin/images/09-section-message-actions.png "section message actions")
+      ![section message actions](/assets/images/09-section-message-actions.png "section message actions")
 
 
       ## Content guidelines
@@ -338,22 +338,22 @@ tabs:
       * Active verbs should be used to direct users towards any necessary actions.
 
 
-      ![section message content guidelines](/admin/images/10-section-message-content.png "section message content guidelines")
+      ![section message content guidelines](/assets/images/10-section-message-content.png "section message content guidelines")
 
 
       ## Do's and Don'ts
 
 
-      ![section message dos and donts 1](/admin/images/11-section-message-dos-and-donts.png "section message dos and donts 1")
+      ![section message dos and donts 1](/assets/images/11-section-message-dos-and-donts.png "section message dos and donts 1")
 
 
-      ![section message dos and donts 2](/admin/images/12-section-message-dos-and-donts.png "section message dos and donts 2")
+      ![section message dos and donts 2](/assets/images/12-section-message-dos-and-donts.png "section message dos and donts 2")
 
 
-      ![section message dos and donts 3](/admin/images/13-section-message-dos-and-donts.png "section message dos and donts 3")
+      ![section message dos and donts 3](/assets/images/13-section-message-dos-and-donts.png "section message dos and donts 3")
 
 
-      ![section message dos and donts 4](/admin/images/14-section-message-dos-and-donts.png "section message dos and donts 4")
+      ![section message dos and donts 4](/assets/images/14-section-message-dos-and-donts.png "section message dos and donts 4")
 parent: HGItoEG3XVs9DpOLugTot
 uuid: 0820a98e-0682-4c11-bed0-d6b751d98c7e
 nestedSlug:

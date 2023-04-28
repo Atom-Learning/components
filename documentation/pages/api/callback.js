@@ -1,44 +1,44 @@
 // Props: https://github.com/vencax/netlify-cms-github-oauth-provider
-const { AuthorizationCode } = require("simple-oauth2");
-import config from "~/oauth.config.js";
+const { AuthorizationCode } = require('simple-oauth2')
+import config from '~/oauth.config.js'
 
-const client = new AuthorizationCode(config);
+const client = new AuthorizationCode(config)
 
-const oauthProvider = process.env.OAUTH_PROVIDER || "github";
+const oauthProvider = process.env.OAUTH_PROVIDER || 'github'
 
-const originPattern = process.env.ORIGIN || "";
-if ("".match(originPattern)) {
+const originPattern = process.env.ORIGIN || ''
+if (''.match(originPattern)) {
   console.warn(
-    "Insecure ORIGIN pattern used. This can give unauthorized users access to your repository."
-  );
-  if (process.env.NODE_ENV === "production") {
-    console.error("Will not run without a safe ORIGIN pattern in production.");
-    process.exit();
+    'Insecure ORIGIN pattern used. This can give unauthorized users access to your repository.'
+  )
+  if (process.env.NODE_ENV === 'production') {
+    console.error('Will not run without a safe ORIGIN pattern in production.')
+    process.exit()
   }
 }
 
 const fn = async (req, res, next) => {
-  const code = req.query.code;
-  const scope = req.query.scope;
+  const code = req.query.code
+  const scope = req.query.scope
 
   const tokenParams = {
     code: code,
     redirect_uri: process.env.REDIRECT_URL,
-    scope: scope,
-  };
+    scope: scope
+  }
 
-  let message, content;
+  let message, content
   try {
-    const accessToken = await client.getToken(tokenParams);
-    message = "success";
+    const accessToken = await client.getToken(tokenParams)
+    message = 'success'
     content = {
       token: accessToken.token.access_token,
-      provider: oauthProvider,
-    };
-    console.log(accessToken.token);
+      provider: oauthProvider
+    }
+    console.log(accessToken.token)
   } catch (error) {
-    console.log("Access Token Error", error.message);
-    message = "error";
+    console.log('Access Token Error', error.message)
+    message = 'error'
   }
 
   const script = `
@@ -63,7 +63,7 @@ const fn = async (req, res, next) => {
             console.log("Sending message: %o", "${oauthProvider}")
             window.opener.postMessage("authorizing:${oauthProvider}", "*")
           })()
-          </script>`;
-  return res.send(script);
-};
-export default fn;
+          </script>`
+  return res.send(script)
+}
+export default fn

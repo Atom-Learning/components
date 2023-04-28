@@ -1,3 +1,4 @@
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 
@@ -13,7 +14,7 @@ const ShadowExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type ShadowTokenListProps = {
-  shadows?: { token: string, name: string }[]
+  shadows?: { token: string; name: string }[]
 }
 
 export const ShadowTokenList: React.FC<ShadowTokenListProps> = ({
@@ -22,7 +23,12 @@ export const ShadowTokenList: React.FC<ShadowTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.shadows} specificTokens={specificShadows} ItemComponent={ShadowExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={(atomTheme as Theme).shadows}
+      specificTokens={specificShadows}
+      ItemComponent={ShadowExample}
+      {...rest}
+    />
   )
 }
-

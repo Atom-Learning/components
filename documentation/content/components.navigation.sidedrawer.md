@@ -215,7 +215,7 @@ tabs:
       A side panel on the left side of the screen, which lets users navigate the content of a product. It is collapsed and appears overlaid on top of a page and slides in from the side triggered by the hamburguer menu button.
 
 
-      ![sidedrawer structure](/admin/images/01-sidedrawer-structre.png "sidedrawer structure")
+      ![sidedrawer structure](/assets/images/01-sidedrawer-structre.png "sidedrawer structure")
 
 
       ### Overlay
@@ -224,7 +224,7 @@ tabs:
       When a Sidedrawer is triggered, an overlay is displayed behind it in order to visually differentiate the panel from the rest of the view. Clicking or tapping on the overlay is one way to dismiss the panel.
 
 
-      ![sidedrawer overlay](/admin/images/02-sidedrawer-overlay.png "sidedrawer overlay")
+      ![sidedrawer overlay](/assets/images/02-sidedrawer-overlay.png "sidedrawer overlay")
 
 
       ### Sections and scroll
@@ -238,13 +238,13 @@ tabs:
       Header and footer display a shadow after scroll (see Topbar component).
 
 
-      ![sidedrawer sections](/admin/images/03-sidedrawer-sections.png "sidedrawer sections")
+      ![sidedrawer sections](/assets/images/03-sidedrawer-sections.png "sidedrawer sections")
 
 
       ## Size
 
 
-      ![sidedrawer size](/admin/images/04-sidedrawer-size.png "sidedrawer size")
+      ![sidedrawer size](/assets/images/04-sidedrawer-size.png "sidedrawer size")
 
 
       | Property - element     | Token     | px    | rem |
@@ -261,7 +261,7 @@ tabs:
       ### Margins and paddings
 
 
-      ![sidedrawer margins and paddings](/admin/images/05-sidedrawer-margins-and-paddings.png "sidedrawer margins and paddings")
+      ![sidedrawer margins and paddings](/assets/images/05-sidedrawer-margins-and-paddings.png "sidedrawer margins and paddings")
 
 
       | Property - element                                 | Token    | px   | rem  |
@@ -281,7 +281,7 @@ tabs:
       | Padding top & bottom - elements (button, input...) | space $2 | 8px  | 0.5  |
 
 
-      ![sidedrawer card paddings](/admin/images/06-sidedrawer-avatar.png "sidedrawer card paddings")
+      ![sidedrawer card paddings](/assets/images/06-sidedrawer-avatar.png "sidedrawer card paddings")
 
 
       | Property & element    | Token    | px   | rem |
@@ -299,13 +299,13 @@ tabs:
       When a menu item have children it acts as an accordion. Styles are consistent with regular menu items except when specified.
 
 
-      ![Sidedrawer accordion menu](/admin/images/07-sidedrawer-menu.png "Sidedrawer accordion menu")
+      ![Sidedrawer accordion menu](/assets/images/07-sidedrawer-menu.png "Sidedrawer accordion menu")
 
 
       ## Typography
 
 
-      ![sidedrawer typography](/admin/images/08-sidedrawer-typography.png "sidedrawer typography")
+      ![sidedrawer typography](/assets/images/08-sidedrawer-typography.png "sidedrawer typography")
 
 
       | Element - state                | Family | Weight | Size | Rem      | px  |
@@ -326,7 +326,7 @@ tabs:
       ## Color
 
 
-      ![sidedrawer color](/admin/images/09-sidedrawer-color.png "sidedrawer color")
+      ![sidedrawer color](/assets/images/09-sidedrawer-color.png "sidedrawer color")
 
 
       | Property & Element - State                   | Token     | Hex |
@@ -342,7 +342,7 @@ tabs:
       | Font color - User description                | $grey600  | \#  |
 
 
-      ![sidedrawer color sections](/admin/images/10-sidedrawer-color-2.png "sidedrawer color sections")
+      ![sidedrawer color sections](/assets/images/10-sidedrawer-color-2.png "sidedrawer color sections")
 
 
       | Property & Element - State            | Token    | Hex |
@@ -354,7 +354,7 @@ tabs:
       | Border-color - User card (1px bottom) | $grey200 | \#  |
 
 
-      ![sidedrawer menu items color](/admin/images/11-sidedrawer-color-3.png "sidedrawer menu items color")
+      ![sidedrawer menu items color](/assets/images/11-sidedrawer-color-3.png "sidedrawer menu items color")
 
 
       | Property & Element - State                     | Token    | Hex |
@@ -392,7 +392,7 @@ tabs:
       | Effects shadow - container | shadow $2 |
 
 
-      ![sidedrawer color menu expanded](/admin/images/12-sidedrawer-color-4.png "sidedrawer color menu expanded")
+      ![sidedrawer color menu expanded](/assets/images/12-sidedrawer-color-4.png "sidedrawer color menu expanded")
 
 
       | Property & Element - State                     | Token    | Hex |

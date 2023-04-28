@@ -13,7 +13,11 @@ const Document = () => {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap"
           rel="stylesheet"
         />
-        <link href="admin/config.yml" type="text/yaml" rel="cms-config-url"></link>
+        <link
+          href="admin/config.yml"
+          type="text/yaml"
+          rel="cms-config-url"
+        ></link>
         <style
           id="stitches"
           dangerouslySetInnerHTML={{ __html: getCssText() }}

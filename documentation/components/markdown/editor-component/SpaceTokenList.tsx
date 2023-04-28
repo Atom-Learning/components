@@ -1,4 +1,5 @@
 import { Stack } from '@atom-learning/components'
+import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
 
@@ -17,7 +18,7 @@ const SpaceExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
 }
 
 type SpaceTokenListProps = {
-  spaces?: { token: string, name: string }[]
+  spaces?: { token: string; name: string }[]
 }
 
 export const SpaceTokenList: React.FC<SpaceTokenListProps> = ({
@@ -26,7 +27,12 @@ export const SpaceTokenList: React.FC<SpaceTokenListProps> = ({
 }) => {
   return (
     // @ts-ignore
-    <TokenList direction="column" allTokens={atomTheme.space} specificTokens={specificSpaces} ItemComponent={SpaceExample} {...rest} />
+    <TokenList
+      direction="column"
+      allTokens={(atomTheme as Theme).space}
+      specificTokens={specificSpaces}
+      ItemComponent={SpaceExample}
+      {...rest}
+    />
   )
 }
-
