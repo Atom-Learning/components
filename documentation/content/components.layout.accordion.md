@@ -127,7 +127,7 @@ tabs:
       Accordions allow you to display large amounts and multiple sections of content in a small space. It typically consists of a series of headers or tags that, when clicked, expand or collapse their associated content below.
 
 
-      ![Accordion anatomy](/admin/images/01-accordion-anatomy.png "Accordion anatomy")
+      ![Accordion anatomy](/assets/images/01-accordion-anatomy.png "Accordion anatomy")
 
 
 
@@ -145,7 +145,7 @@ tabs:
       Use the accordion component when you have content that can be organized into categories or sections and you want to present it in a way that is easy to navigate and consume. For example use the component in a form with several sections or a list of frequently asked questions.
 
 
-      ![Accordion when to use](/admin/images/02-accordion-when-to-use-faqs.png "Accordion when to use")
+      ![Accordion when to use](/assets/images/02-accordion-when-to-use-faqs.png "Accordion when to use")
 
 
       #### Behaviour
@@ -160,7 +160,7 @@ tabs:
 
 
 
-      ![Accordion behaviour](/admin/images/03-accordion-behaviour.png "Accordion behaviour")
+      ![Accordion behaviour](/assets/images/03-accordion-behaviour.png "Accordion behaviour")
 
 
       #### Usability guidance
@@ -196,7 +196,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/admin/images/04-accordion-do-1.png","type":"do","description":"Accordion behaviour"},{"image":"/admin/images/05-accordion-dont-2.png","type":"dont","description":"Accordion behaviour"},{"image":"/admin/images/06-accordion-do-3.png","type":"do","description":"Use different size of  typography to differentiate between the accordion headings and the content, making it easier for users to distinguish between the two."},{"image":"/admin/images/07-accordion-avoid-4.png","type":"avoid","description":"Using other colors that are not provided with the component."}]} />
+      <DosAndDonts items={[{"image":"/assets/images/04-accordion-do-1.png","type":"do","description":"Accordion behaviour"},{"image":"/assets/images/05-accordion-dont-2.png","type":"dont","description":"Accordion behaviour"},{"image":"/assets/images/06-accordion-do-3.png","type":"do","description":"Use different size of  typography to differentiate between the accordion headings and the content, making it easier for users to distinguish between the two."},{"image":"/assets/images/07-accordion-avoid-4.png","type":"avoid","description":"Using other colors that are not provided with the component."}]} />
 parent: UtnFsFtDrPgQNFrm3NcAP
 nestedSlug:
   - components
