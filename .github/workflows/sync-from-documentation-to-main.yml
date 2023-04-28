@@ -6,7 +6,7 @@ on:
       - documentation-content
     paths:
       - documentation/content/**
-      - documentation/public/admin/images/**
+      - documentation/public/assets/images/**
 
 jobs:
   sync:
@@ -25,7 +25,7 @@ jobs:
           base_sha: ${{ github.sha }}
           files_ignore: |
             documentation/content/**
-            documentation/public/admin/images/**
+            documentation/public/assets/images/**
 
       - name: Fail if files other than docs are changed
         if: steps.changed-files-excluded.outputs.any_changed == 'true'
