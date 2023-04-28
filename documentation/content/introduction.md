@@ -38,4 +38,6 @@ tabs:
 
       We welcome feedback so please provide comments or bug reports on our [Github repository](https://github.com/Atom-Learning/components/issues).
 uuid: 913bda18-a8ad-4f2e-8eae-85c5fd80b872
+nestedSlug:
+  - introduction
 ---

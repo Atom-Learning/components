@@ -62,7 +62,7 @@ tabs:
       Badges are visual indicators for labels, useful to emphasize information to the user. Works best with single word values.
 
 
-      ![Badges structure](/admin/images/01-badges-structure.png "Badges structure")
+      ![Badges structure](/assets/images/01-badges-structure.png "Badges structure")
 
 
       | Property      | Token    | px   | rem |
@@ -76,7 +76,7 @@ tabs:
       | Margin-bottom | space $5 | 32px | 2   |
 
 
-      ![Badges size and margins](/admin/images/02-badges-paddings.png "Badges size and margins")
+      ![Badges size and margins](/assets/images/02-badges-paddings.png "Badges size and margins")
 
 
       | Property - variant            | Token    | px   | rem  |
@@ -99,7 +99,7 @@ tabs:
       ## Typography
 
 
-      ![Badges typography](/admin/images/03-badges-typography.png "Badges typography")
+      ![Badges typography](/assets/images/03-badges-typography.png "Badges typography")
 
 
       | Element  | Family | Weight | Size | Rem      | px  |
@@ -116,7 +116,7 @@ tabs:
       ## Color
 
 
-      ![](/admin/images/04-badges-color.png)
+      ![](/assets/images/04-badges-color.png)
 
 
       | Property & Element - State              | Token     | Hex |

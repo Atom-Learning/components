@@ -130,7 +130,7 @@ tabs:
       All components contained within the top navbar can be rearanged/positioned in any way.
 
 
-      ![Navigation topbar structure](/admin/images/01-navigation-topbar-structure.png "Navigation topbar structure")
+      ![Navigation topbar structure](/assets/images/01-navigation-topbar-structure.png "Navigation topbar structure")
 
 
       | Property - element           | Token        | px   | rem  |
@@ -150,7 +150,7 @@ tabs:
       | Distance avatar - divider    | space $4     | 16px | 1    |
 
 
-      ![Navigation menu router links](/admin/images/02-navigation-topbar-size.png "Navigation menu router links")
+      ![Navigation menu router links](/assets/images/02-navigation-topbar-size.png "Navigation menu router links")
 
 
       | Property                     | Token     | px      | rem  |
@@ -206,7 +206,7 @@ tabs:
       | Disabled: all elements     | 30% opacity |
 
 
-      ![Navigation topbar margins](/admin/images/03-navigation-topbar-margins.png "Navigation topbar margins")
+      ![Navigation topbar margins](/assets/images/03-navigation-topbar-margins.png "Navigation topbar margins")
 
 
       In order to align Action icons visually with the rest of the interface, when they are placed as the first or last element we rest 8px so that is the actual icon that is aligned and not the parent container. This is because the action icon has a margin itself
@@ -220,19 +220,19 @@ tabs:
       The topbar is always fixed while scrolling down the page. This is the default option and very convenient in general, as it allows the user to access the navigation and tools at any point within the page.
 
 
-      ![Navigation topbar scroll behaviour](/admin/images/04-navigation-topbar-scroll.png "Navigation topbar scroll behaviour")
+      ![Navigation topbar scroll behaviour](/assets/images/04-navigation-topbar-scroll.png "Navigation topbar scroll behaviour")
 
 
       After scrool the topbar shows a subtle shadow indicating elevation and the content will scroll beneath.
 
 
-      ![Navigation topbar after scroll behaviour](/admin/images/05-navigation-topbar-after-scroll.png "Navigation topbar after scroll behaviour")
+      ![Navigation topbar after scroll behaviour](/assets/images/05-navigation-topbar-after-scroll.png "Navigation topbar after scroll behaviour")
 
 
       All actions besides the menu are right-aligned with a maxium of 3 actions. A kebab (3 dots) menu is also recommended to group actions when there’s enought options to keep the topbar uncluttered.
 
 
-      ![Navigation topbar action menu](/admin/images/06-navigation-topbar-actions-menu.png "Navigation topbar action menu")
+      ![Navigation topbar action menu](/assets/images/06-navigation-topbar-actions-menu.png "Navigation topbar action menu")
 
 
       #### Detail page
@@ -241,13 +241,13 @@ tabs:
       In small devices the topbar changes a little bit once you navigate to a detail page. It displays the page title, page actions and a back button to go back to the previous page.
 
 
-      ![Navigation topbar detail page](/admin/images/07-navigation-topbar-detail-page.png "Navigation topbar detail page")
+      ![Navigation topbar detail page](/assets/images/07-navigation-topbar-detail-page.png "Navigation topbar detail page")
 
 
       ## Typography
 
 
-      ![Navigation topbar typography](/admin/images/08-navigation-topbar-typography.png "Navigation topbar typography")
+      ![Navigation topbar typography](/assets/images/08-navigation-topbar-typography.png "Navigation topbar typography")
 
 
       | Element       | Family | Weight | Size | Rem  | px  |
@@ -262,7 +262,7 @@ tabs:
       ## Color
 
 
-      ![Navigation topbar color](/admin/images/09-navigation-topbar-color.png "Navigation topbar color")
+      ![Navigation topbar color](/assets/images/09-navigation-topbar-color.png "Navigation topbar color")
 
 
       | Property & Element - State    | Token     | Hex |
@@ -289,7 +289,7 @@ tabs:
       Topbars display information and actions relating to the current screen. Since they are present in most pages of a product, it is paramount they are designed effectively.
 
 
-      ![Navigation topbar overview](/admin/images/01-navigation-topbar-overview.png "Navigation topbar overview")
+      ![Navigation topbar overview](/assets/images/01-navigation-topbar-overview.png "Navigation topbar overview")
 
 
       Navigation topbar overview
@@ -309,7 +309,7 @@ tabs:
       The Atom logo and the app name behave not only as branding touchpoints but also as landmarks and should therefore be applied consistently within all products and if possible in most pages to facilitate orientation. Detail pages on small devices don’t include the logo because of limitation of space.
 
 
-      ![Navigation topbar logo](/admin/images/02-navigation-topbar-logo.png "Navigation topbar logo")
+      ![Navigation topbar logo](/assets/images/02-navigation-topbar-logo.png "Navigation topbar logo")
 
 
       #### Breakpoints
@@ -318,7 +318,7 @@ tabs:
       The topbar will adapt it’s content according to the different breakpoints. Consider the tools you need for your app and what’s the best way to display them in the different breakpoints. Here’s an example:Notice how, in this case, the navigation elements on the tabs in bigger breakpoints become hidden under the hamburguer menu in smaller devices. Also the search bar becomes an action button on small breakpoints.
 
 
-      ![Navigation topbar breakpoints](/admin/images/03-navigation-topbar-breakpoints.png "Navigation topbar breakpoints")
+      ![Navigation topbar breakpoints](/assets/images/03-navigation-topbar-breakpoints.png "Navigation topbar breakpoints")
 
 
       Image rescaled 50%
@@ -327,7 +327,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/admin/images/04-navigation-topbar-do-1.png","type":"do","description":"Organize the navigation and toolbar elements by hierarchy, following a information arquitecture’s structure."},{"image":"/admin/images/05-navigation-topbar-avoid-2.png","type":"avoid","description":"Using more than 3 tools in mobile as space is limited, use dropdown menu instead."},{"image":"/admin/images/06-navigation-topbar-do-3.png","type":"do","description":"Keep navigation menu link labels clear and concise. Prefer max 1-2 word long labels. "},{"image":"/admin/images/07-navigation-topbar-avoid-4.png","type":"avoid","description":"Avoid starting multiple menu link labels with the same word."}]} />
+      <DosAndDonts items={[{"image":"/assets/images/04-navigation-topbar-do-1.png","type":"do","description":"Organize the navigation and toolbar elements by hierarchy, following a information arquitecture’s structure."},{"image":"/assets/images/05-navigation-topbar-avoid-2.png","type":"avoid","description":"Using more than 3 tools in mobile as space is limited, use dropdown menu instead."},{"image":"/assets/images/06-navigation-topbar-do-3.png","type":"do","description":"Keep navigation menu link labels clear and concise. Prefer max 1-2 word long labels. "},{"image":"/assets/images/07-navigation-topbar-avoid-4.png","type":"avoid","description":"Avoid starting multiple menu link labels with the same word."}]} />
 parent: jAvRQoZ2NuRO-VGZiJ0a0
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
