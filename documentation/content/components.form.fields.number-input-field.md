@@ -44,7 +44,7 @@ tabs:
       An Input control for editing a numeric/quantity value with increment and decrement buttons next to it.
 
 
-      ![number input structure](/admin/images/01-number-input-structure.png "number input structure")
+      ![number input structure](/assets/images/01-number-input-structure.png "number input structure")
 
 
       | Property             | Token    | Pixel | Rem  |
@@ -62,7 +62,7 @@ tabs:
       Number input has the same height as a regular Input Field. The buttons also correspond to the size of Action Icons “sm” and “md”.
 
 
-      ![number input size](/admin/images/02-number-input-size.png "number input size")
+      ![number input size](/assets/images/02-number-input-size.png "number input size")
 
 
       | Property  | sm           | md           | lg  |
@@ -93,13 +93,13 @@ tabs:
       \*Input same as Input Field
 
 
-      ![number input color](/admin/images/03-number-input-color-input.png "number input color")
+      ![number input color](/assets/images/03-number-input-color-input.png "number input color")
 
 
       Buttons
 
 
-      ![number input color buttons](/admin/images/04-number-input-color-buttons.png "number input color buttons")
+      ![number input color buttons](/assets/images/04-number-input-color-buttons.png "number input color buttons")
 
 
       | Property & Element - State     | Token    | Hex |
@@ -130,28 +130,28 @@ tabs:
       The buttons requires less effort from the user than selecting the input field, tapping the digit “2” on the keypad, and hitting Enter or dismissing the keyboard. For example, to increase the number of students from 1 to 2 in a form, the user only needs one tap on the plus button.
 
 
-      ![number input overview](/admin/images/05-number-input-overview.png "number input overview")
+      ![number input overview](/assets/images/05-number-input-overview.png "number input overview")
 
 
       ## When to use
 
 
-      To make the already laborious task of filling out forms as easy and intuitive as possible we have designed this input field to reduce input effort for fields with values that deviate little from the default by allowing users to increase or decrease the number in a single button press.  
+      To make the already laborious task of filling out forms as easy and intuitive as possible we have designed this input field to reduce input effort for fields with values that deviate little from the default by allowing users to increase or decrease the number in a single button press.
 
 
-      * Use when you need to incrementally change a value.  
+      * Use when you need to incrementally change a value.
 
-      * Use when values are tied to a unit of measure.   
+      * Use when values are tied to a unit of measure.
 
-      * Don't use for binary settings.  
+      * Don't use for binary settings.
 
       * Don't use for a range of three values or less (use toggle group instead).
 
 
-      The user can choose to type or click to their desired number. 
+      The user can choose to type or click to their desired number.
 
 
-      The buttons work best for numbers between 0 and ~10. More than that, and it can get very laborious for the user to click through, and it’s better to use the input.  
+      The buttons work best for numbers between 0 and ~10. More than that, and it can get very laborious for the user to click through, and it’s better to use the input.
 
 
       If you expect the user to deviate substantially from the default, use a regular input without buttons.
@@ -165,25 +165,25 @@ tabs:
       The default state allows the user change the number using the buttons.
 
 
-      ![number input state](/admin/images/06-number-input-state.png "number input state")
+      ![number input state](/assets/images/06-number-input-state.png "number input state")
 
 
       Disabled means that the numeric stepper is disabled and that you can’t change its value. It may be disabled due to business rules or because the user needs to select something else first.
 
 
-      ![number input disabled](/admin/images/07-number-input-state-disabled.png "number input disabled")
+      ![number input disabled](/assets/images/07-number-input-state-disabled.png "number input disabled")
 
 
       ## Do's and Don'ts
 
 
-      ![number input dos and donts](/admin/images/08-number-input-dos-and-dont-s.png "number input dos and donts")
+      ![number input dos and donts](/assets/images/08-number-input-dos-and-dont-s.png "number input dos and donts")
 
 
-      ![number input dos and donts 2](/admin/images/09-number-input-dos-and-dont-s.png "number input dos and donts 2")
+      ![number input dos and donts 2](/assets/images/09-number-input-dos-and-dont-s.png "number input dos and donts 2")
 
 
-      ![number input dos and donts 3](/admin/images/10-number-input-dos-and-dont-s.png "number input dos and donts 3")
+      ![number input dos and donts 3](/assets/images/10-number-input-dos-and-dont-s.png "number input dos and donts 3")
 parent: ru0Ovr_U82kdQX8m3WahL
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:

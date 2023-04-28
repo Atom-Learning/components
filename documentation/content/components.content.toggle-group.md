@@ -118,7 +118,7 @@ tabs:
       It can be set as single select or multiple select and displayed vertically or horizontally.
 
 
-      ![toggle group structure](/admin/images/toggle-group-01-structure.png "toggle group structure")
+      ![toggle group structure](/assets/images/toggle-group-01-structure.png "toggle group structure")
 
 
       | Property             | Token   | Pixel | Rem  |
@@ -130,7 +130,7 @@ tabs:
       | Border radius merged | none    | 0     | 0    |
 
 
-      ![toggle group gap](/admin/images/toggle-group-02-gap.png "toggle group gap")
+      ![toggle group gap](/assets/images/toggle-group-02-gap.png "toggle group gap")
 
 
       | Property             | Token    | Pixel | Rem  |
@@ -146,7 +146,7 @@ tabs:
       | spacing xl           | space $5 | 32    | 2    |
 
 
-      ![toggle group states](/admin/images/toggle-group-03-states.png "toggle group states")
+      ![toggle group states](/assets/images/toggle-group-03-states.png "toggle group states")
 
 
       | Property                                           | pixel |
@@ -175,7 +175,7 @@ tabs:
       There’s an option that sets the button-group to fullwidth and every child to grow with same width to fill the available space of the parent container.
 
 
-      ![toggle group size](/admin/images/toggle-group-04-size.png "toggle group size")
+      ![toggle group size](/assets/images/toggle-group-04-size.png "toggle group size")
 
 
       | Property  | sm      | md      | lg      |
@@ -207,7 +207,7 @@ tabs:
       ### Icon only
 
 
-      ![toggle icon only](/admin/images/toggle-group-05-icon-only.png "toggle icon only")
+      ![toggle icon only](/assets/images/toggle-group-05-icon-only.png "toggle icon only")
 
 
       | Property   | Token    | Pixel | Rem  |
@@ -224,7 +224,7 @@ tabs:
       ## Typography
 
 
-      ![toggle group typography](/admin/images/toggle-group-06-typography.png "toggle group typography")
+      ![toggle group typography](/assets/images/toggle-group-06-typography.png "toggle group typography")
 
 
       | Font | Family | Weight | Size | Rem    | Px  |
@@ -244,7 +244,7 @@ tabs:
       By default the segmented control has a height of 32px (the same as a button). You should however keep things on the 8px grid or in some cases the 4px grid. You should only need the following recommended heights.
 
 
-      ![toggle group color](/admin/images/toggle-group-07-color.png "toggle group color")
+      ![toggle group color](/assets/images/toggle-group-07-color.png "toggle group color")
 
 
       | Property, Element & State             | Token    | Hex      |
@@ -287,7 +287,7 @@ tabs:
       They clearly present all available options in the viewport at the same time, reducing cognitive load, and are easy to use on mobile devices. Therefore It's recommended to use it when there are 6 options or fewer available. For a larger amount of options, use radio, checkbox, combo box, or select.
 
 
-      ![toggle group overview](/admin/images/toggle-group-08-overview.png "toggle group overview")
+      ![toggle group overview](/assets/images/toggle-group-08-overview.png "toggle group overview")
 
 
       For avatars representing the user, the user picture is displayed. If there is an error loading the src of the avatar, there are 2 fallbacks:
@@ -301,7 +301,7 @@ tabs:
       ## When to use
 
 
-      * If you need to emphasize context of similar actions.   
+      * If you need to emphasize context of similar actions.
 
       * If a single option or multiple options of the set may be selected.
 
@@ -312,7 +312,7 @@ tabs:
       ### Button Groups as Switch
 
 
-      Use a toggle button group as a switch between different views. For example, use the component to allow users to switch between a list view and gallery view.  
+      Use a toggle button group as a switch between different views. For example, use the component to allow users to switch between a list view and gallery view.
 
 
       * Blue indicates an option is selected, grey indicates an unselected
@@ -320,13 +320,13 @@ tabs:
         option deselects all other options.   It is always configured with a
         preselected option
 
-      ![toggle group as switch](/admin/images/toggle-group-09-button-group-switch.png "toggle group as switch")
+      ![toggle group as switch](/assets/images/toggle-group-09-button-group-switch.png "toggle group as switch")
 
 
       ### Button Groups as Checkboxes
 
 
-      Use when a small list of options can be selected from, similar to the Checkbox component  
+      Use when a small list of options can be selected from, similar to the Checkbox component
 
 
       * Blue indicates an option is selected, grey indicates an unselected option
@@ -336,7 +336,7 @@ tabs:
       * Can be configured with preselected options
 
 
-      ![toggle group as checkboxes](/admin/images/toggle-group-10-button-group-as-checkboxes.png "toggle group as checkboxes")
+      ![toggle group as checkboxes](/assets/images/toggle-group-10-button-group-as-checkboxes.png "toggle group as checkboxes")
 
 
       ### Button Groups as Radio buttons
@@ -352,7 +352,7 @@ tabs:
       * Can be configured with preselected options.
 
 
-      ![toggle group as radio buttons](/admin/images/toggle-group-11-radio-buttons.png "toggle group as radio buttons")
+      ![toggle group as radio buttons](/assets/images/toggle-group-11-radio-buttons.png "toggle group as radio buttons")
 
 
       ### Label
@@ -363,7 +363,7 @@ tabs:
       Use single words or succinct phrases to support quick scanning and interpretation. Use sentence case in the display of the button label text.
 
 
-      ![toggle group label](/admin/images/toggle-group-11-label.png "toggle group label")
+      ![toggle group label](/assets/images/toggle-group-11-label.png "toggle group label")
 
 
       ### Icons
@@ -372,19 +372,19 @@ tabs:
       Icons may be used in combination with button group text labels to further reinforce the explanation of the setting or view associated with interacting with the button. Icons may also be used instead of text labels in button groups.
 
 
-      ![toggle group icons](/admin/images/toggle-group-12-icons.png "toggle group icons")
+      ![toggle group icons](/assets/images/toggle-group-12-icons.png "toggle group icons")
 
 
       ## Do's and Don'ts
 
 
-      ![toggle group do's and don'ts 01](/admin/images/toggle-group-13-do-s-and-dont-s-01.png "toggle group do's and don'ts 01")
+      ![toggle group do's and don'ts 01](/assets/images/toggle-group-13-do-s-and-dont-s-01.png "toggle group do's and don'ts 01")
 
 
-      ![toggle group do's and don'ts 02](/admin/images/toggle-group-15-do-s-and-dont-s-02.png "toggle group do's and don'ts 03")
+      ![toggle group do's and don'ts 02](/assets/images/toggle-group-15-do-s-and-dont-s-02.png "toggle group do's and don'ts 03")
 
 
-      ![toggle group do's and don'ts 03](/admin/images/toggle-group-14-do-s-and-dont-s-03.png "toggle group do's and don'ts 03")
+      ![toggle group do's and don'ts 03](/assets/images/toggle-group-14-do-s-and-dont-s-03.png "toggle group do's and don'ts 03")
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: owSewZQY17sWMc7HPp134
 nestedSlug:

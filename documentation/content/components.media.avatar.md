@@ -116,7 +116,7 @@ tabs:
       Avatars can be interactive, in which case has interactive states (hover, focus, etc), or read only, with no interactive states.
 
 
-      ![avatar structure](/admin/images/avatar-01-structure.png "avatar structure")
+      ![avatar structure](/assets/images/avatar-01-structure.png "avatar structure")
 
 
       For avatars representing the user, the user picture is displayed. If there is an error loading the src of the avatar, there are 2 fallbacks:
@@ -130,7 +130,7 @@ tabs:
       ### Size
 
 
-      ![avatar size](/admin/images/avatar-02-size.png "avatar size")
+      ![avatar size](/assets/images/avatar-02-size.png "avatar size")
 
 
       | Property       | xxl       | xl        | lg        | md        | sm        | xs        |
@@ -157,7 +157,7 @@ tabs:
       In some cases, you might need to stack avatars as a group. To limit the amount of avatars to show, use the max prop. It'll truncate the avatars and show a "+X" label (where X is the remaining avatars).
 
 
-      ![avatar groups](/admin/images/avatar-03-groups.png "avatar groups")
+      ![avatar groups](/assets/images/avatar-03-groups.png "avatar groups")
 
 
       | Property         | xxl     | xl      | lg      | md      | sm      | xs      |
@@ -170,7 +170,7 @@ tabs:
       ## Typography
 
 
-      ![avatar typography](/admin/images/avatar-04-typography.png "avatar typography")
+      ![avatar typography](/assets/images/avatar-04-typography.png "avatar typography")
 
 
       | Font size | px  | weight   | size |
@@ -189,7 +189,7 @@ tabs:
       ## Color
 
 
-      ![avatar color](/admin/images/avatar-05-color.png "avatar color")
+      ![avatar color](/assets/images/avatar-05-color.png "avatar color")
 
 
       | Property, element - state                        | Token     | Hex      |
@@ -219,7 +219,7 @@ tabs:
       An avatar is a component that visually represents a user or entity. It helps to identify users or objects quickly.
 
 
-      ![avatar overview](/admin/images/avatar-01-overview.png "avatar overview")
+      ![avatar overview](/assets/images/avatar-01-overview.png "avatar overview")
 
 
       For avatars representing the user, the user picture is displayed. If there is an error loading the src of the avatar, there are 2 fallbacks:
@@ -233,7 +233,7 @@ tabs:
       ### Anatomy
 
 
-      ![avatar anatomy](/admin/images/avatar-02-anatomy.png "avatar anatomy")
+      ![avatar anatomy](/assets/images/avatar-02-anatomy.png "avatar anatomy")
 
 
       **Image**
@@ -260,7 +260,7 @@ tabs:
       In addition to providing access to a user's profile, the Avatar can be used as a way to link a user to a specific set of data like for example an overlay menu.
 
 
-      ![avatar behaviour](/admin/images/avatar-03-behaviour.png "avatar behaviour")
+      ![avatar behaviour](/assets/images/avatar-03-behaviour.png "avatar behaviour")
 
 
       ### Accessibility
@@ -305,10 +305,10 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![avatar do's and don'ts 1](/admin/images/avatar-04-dos-and-donts.png "avatar do's and don'ts 1")
+      ![avatar do's and don'ts 1](/assets/images/avatar-04-dos-and-donts.png "avatar do's and don'ts 1")
 
 
-      ![avatar do's and don'ts 2](/admin/images/avatar-05-dos-and-donts.png "avatar do's and don'ts 2")
+      ![avatar do's and don'ts 2](/assets/images/avatar-05-dos-and-donts.png "avatar do's and don'ts 2")
 parent: XPLFvowY8sBRhG2IUn5Zk
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
