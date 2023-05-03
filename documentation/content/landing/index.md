@@ -120,11 +120,11 @@ tabs:
       m/primitives/label\"},\"tags\":[\"Inputs\"],\"image\":\"/assets/images/la\
       bel.svg\"},{\"heading\":\"Link\",\"description\":\"A link is a reference
       to a resource. This can be external or
-      internal.\",\"tags\":[\"Actions\",\"Layout/Structure\"],\"link\":{\"href\
-      \":\"https://atomlearning.design/components/navigation/link\"},\"image\":\
-      \"/assets/images/link.svg\"},{\"heading\":\"List\",\"description\":\"Lists
-      are used for grouping a collection of related items. There are unordered
-      and ordered lists.\",\"tags\":[\"List and
+      internal.\",\"tags\":[\"Actions\",\"Navigation\"],\"link\":{\"href\":\"ht\
+      tps://atomlearning.design/components/navigation/link\"},\"image\":\"/asse\
+      ts/images/link.svg\"},{\"heading\":\"List\",\"description\":\"Lists are
+      used for grouping a collection of related items. There are unordered and
+      ordered lists.\",\"tags\":[\"List and
       tables\"],\"link\":{\"href\":\"https://atomlearning.design/components/con\
       tent/list\"},\"image\":\"/assets/images/list.svg\"},{\"description\":\"A
       visual indicator that a process is happening in the
