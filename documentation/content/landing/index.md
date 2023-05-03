@@ -252,7 +252,12 @@ tabs:
       age\":\"/assets/images/video.svg\",\"heading\":\"Video\",\"description\":\
       \"Video component supports playing Vimeo hosted
       videos.\",\"link\":{\"href\":\"https://atomlearning.design/components/med\
-      ia/video\"},\"tags\":[\"Media\"]}]} />"
+      ia/video\"},\"tags\":[\"Media\"]},{\"heading\":\"Banner\",\"description\":\
+      \"A container with a short message, a call-to-action, and an image, used
+      to push the user towards an
+      action.\",\"link\":{\"href\":\"https://atomlearning.design/components/con\
+      tent/banner-regular\"},\"tags\":[\"Feedback\",\"Layout/Structure\",\"Acti\
+      ons\"],\"image\":\"/assets/images/banner-thumbnail.svg\"}]} />"
     title: Main
 slug: landing
 nestedSlug:
