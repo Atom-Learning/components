@@ -25,19 +25,13 @@ tabs:
       The chip acts a container of different functions and elements such as an avatar, text, or an icon. They can also be closed or removed.
 
 
-
-
-      \*code preview goes here
-
-
+      `*code preview goes here`
 
 
       ![Aspect ratio examples](/assets/images/aspect-ratios.svg "Aspect ratio examples")
 
 
       Common aspect ratios we support by default.
-
-
 
 
       Regardless of its child's dimensions, the element will maintain the specified aspect ratio or calculate and maintain an aspect ratio based on a provided width and height. It prevents skewing, cropping, etc.\
@@ -78,8 +72,6 @@ tabs:
 
 
       Custom illustrations and marketing images, as well as one-off images, can use aspect ratios that are specific to their design requirements and don't necessarily need to conform to these standard ratios.
-
-
 
 
       ## Do's and Don'ts
