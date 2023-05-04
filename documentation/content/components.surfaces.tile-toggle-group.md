@@ -96,7 +96,7 @@ tabs:
       ![Tile when to use](/assets/images/tile02_when-to-use.svg "Tile when to use")
 
 
-      Default non-interactive tile. {base: "grey1"}
+      Default non-interactive tile. `{base: "grey1"}`
 
 
       ![tile button](/assets/images/tile03_button.svg "tile button")
