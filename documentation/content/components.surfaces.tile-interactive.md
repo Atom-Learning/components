@@ -109,11 +109,11 @@ tabs:
 
       \
 
-      In a nutshell, colorScheme introduces a component that allows for base and accent theme properties, as well as an interactive contrast mode that affects all interactive components. The "base" property is used for the base colors of the wrapped component, while "accent" is used for highlighted and interactive elements.\
+      In a nutshell, colorScheme introduces a component that allows for base and accent theme properties, as well as an interactive contrast mode that affects all interactive components. The 'base' property is used for the base colors of the wrapped component, while "accent" is used for highlighted and interactive elements.\
 
       \
 
-      Tile defaults to {base: "grey1", accent: "blue2"} and both ‘Base’ and ‘Accent’ currently accept any of the following options: grey1, grey2, blue1, blue2, purple1, purple2...\
+      Tile defaults to `{base: "grey1", accent: "blue2"}` and both ‘Base’ and ‘Accent’ currently accept any of the following options: grey1, grey2, blue1, blue2, purple1, purple2...\
 
       \
 
