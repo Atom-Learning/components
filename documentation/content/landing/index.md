@@ -257,7 +257,13 @@ tabs:
       to push the user towards an
       action.\",\"link\":{\"href\":\"https://atomlearning.design/components/con\
       tent/banner-regular\"},\"tags\":[\"Feedback\",\"Layout/Structure\",\"Acti\
-      ons\"],\"image\":\"/assets/images/banner-thumbnail.svg\"}]} />"
+      ons\"],\"image\":\"/assets/images/banner-thumbnail.svg\"},{\"heading\":\"\
+      Tile\",\"description\":\"Tile is a fundamental layout component used as a
+      generic container to build the base of panels, cards, lists and other
+      content
+      components.\",\"link\":{\"href\":\"https://atomlearning.design/components\
+      /surfaces/tile\"},\"tags\":[\"Layout/Structure\",\"Navigation\",\"Inputs\
+      \"],\"image\":\"/assets/images/tile-thumbnail.svg\"}]} />"
     title: Main
 slug: landing
 nestedSlug:
