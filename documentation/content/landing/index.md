@@ -16,9 +16,9 @@ tabs:
       response.\",\"heading\":\"Alert
       dialog\",\"tags\":[\"Feedback\",\"Overlays\"],\"link\":{\"href\":\"https:\
       //atomlearning.design/components/feedback/alert-dialog\"},\"image\":\"/as\
-      sets/images/action-icon.svg\"},{\"heading\":\"Avatar\",\"description\":\"\
-      An avatar is a component that offers a visual representation of a user or
-      entity. It helps to quickly identify users or
+      sets/images/alert-dialog.svg\"},{\"heading\":\"Avatar\",\"description\":\
+      \"An avatar is a component that offers a visual representation of a user
+      or entity. It helps to quickly identify users or
       objects.\",\"link\":{\"href\":\"https://atomlearning.design/components/me\
       dia/avatar\"},\"tags\":[\"Media\",\"Actions\",\"Images and
       icons\"],\"image\":\"/assets/images/avatar.svg\"},{\"heading\":\"Badge\",\
