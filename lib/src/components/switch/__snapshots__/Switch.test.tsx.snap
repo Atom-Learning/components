@@ -2,21 +2,15 @@
 
 exports[`Switch component renders a Switch in "on" state 1`] = `
 @media  {
-  .c-JOzIh {
+  .c-invHbC {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
     transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
+  .c-LcsSW {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -25,41 +19,55 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     cursor: pointer;
     display: flex;
     overflow: hidden;
-    padding: var(--space-0);
     position: relative;
     transition: all 50ms ease-out;
-    width: var(--sizes-4);
   }
 
-  .c-biUdic:hover {
+  .c-LcsSW:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-biUdic:focus {
+  .c-LcsSW:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-biUdic[data-state="checked"] {
+  .c-LcsSW[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-biUdic[data-state="checked"]:hover {
+  .c-LcsSW[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+}
+
+@media  {
+  .c-invHbC-hjcbRK-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-invHbC-hjcbRK-size-md[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
+  .c-LcsSW-dYgJcL-size-md {
+    padding: var(--space-0);
+    width: var(--sizes-4);
   }
 }
 
 <div>
   <button
     aria-checked="true"
-    class="c-biUdic"
+    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
     data-state="checked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="c-JOzIh"
+      class="c-invHbC c-invHbC-hjcbRK-size-md"
       data-state="checked"
     />
   </button>
@@ -68,21 +76,15 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 
 exports[`Switch component renders a disabled switch 1`] = `
 @media  {
-  .c-JOzIh {
+  .c-invHbC {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
     transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
+  .c-LcsSW {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -91,34 +93,48 @@ exports[`Switch component renders a disabled switch 1`] = `
     cursor: pointer;
     display: flex;
     overflow: hidden;
-    padding: var(--space-0);
     position: relative;
     transition: all 50ms ease-out;
-    width: var(--sizes-4);
   }
 
-  .c-biUdic:hover {
+  .c-LcsSW:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-biUdic:focus {
+  .c-LcsSW:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-biUdic[data-state="checked"] {
+  .c-LcsSW[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-biUdic[data-state="checked"]:hover {
+  .c-LcsSW[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+}
+
+@media  {
+  .c-invHbC-hjcbRK-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-invHbC-hjcbRK-size-md[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
+  .c-LcsSW-dYgJcL-size-md {
+    padding: var(--space-0);
+    width: var(--sizes-4);
   }
 }
 
 <div>
   <button
     aria-checked="false"
-    class="c-biUdic"
+    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -127,7 +143,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     value="on"
   >
     <span
-      class="c-JOzIh"
+      class="c-invHbC c-invHbC-hjcbRK-size-md"
       data-disabled=""
       data-state="unchecked"
     />
@@ -135,23 +151,17 @@ exports[`Switch component renders a disabled switch 1`] = `
 </div>
 `;
 
-exports[`Switch component renders a switch 1`] = `
+exports[`Switch component renders a large switch 1`] = `
 @media  {
-  .c-JOzIh {
+  .c-invHbC {
     background-color: white;
     border-radius: var(--radii-round);
     display: block;
-    height: var(--sizes-1);
-    width: var(--sizes-1);
     transition: transform 50ms;
     will-change: transform;
   }
 
-  .c-JOzIh[data-state="checked"] {
-    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
-  }
-
-  .c-biUdic {
+  .c-LcsSW {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -160,41 +170,143 @@ exports[`Switch component renders a switch 1`] = `
     cursor: pointer;
     display: flex;
     overflow: hidden;
-    padding: var(--space-0);
     position: relative;
     transition: all 50ms ease-out;
-    width: var(--sizes-4);
   }
 
-  .c-biUdic:hover {
+  .c-LcsSW:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-biUdic:focus {
+  .c-LcsSW:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-biUdic[data-state="checked"] {
+  .c-LcsSW[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-biUdic[data-state="checked"]:hover {
+  .c-LcsSW[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+}
+
+@media  {
+  .c-invHbC-hjcbRK-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-invHbC-hjcbRK-size-md[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
+  .c-LcsSW-dYgJcL-size-md {
+    padding: var(--space-0);
+    width: var(--sizes-4);
+  }
+
+  .c-invHbC-jjpZVw-size-lg {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+  }
+
+  .c-invHbC-jjpZVw-size-lg[data-state="checked"] {
+    transform: translateX(var(--space-5));
+  }
+
+  .c-LcsSW-fhqySU-size-lg {
+    padding: var(--space-1);
+    width: var(--sizes-6);
   }
 }
 
 <div>
   <button
     aria-checked="false"
-    class="c-biUdic"
+    class="c-LcsSW c-LcsSW-fhqySU-size-lg"
     data-state="unchecked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="c-JOzIh"
+      class="c-invHbC c-invHbC-jjpZVw-size-lg"
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;
+
+exports[`Switch component renders a switch 1`] = `
+@media  {
+  .c-invHbC {
+    background-color: white;
+    border-radius: var(--radii-round);
+    display: block;
+    transition: transform 50ms;
+    will-change: transform;
+  }
+
+  .c-LcsSW {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--colors-tonal200);
+    border: none;
+    border-radius: var(--radii-round);
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    transition: all 50ms ease-out;
+  }
+
+  .c-LcsSW:hover {
+    background-color: var(--colors-tonal300);
+  }
+
+  .c-LcsSW:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-LcsSW[data-state="checked"] {
+    background-color: var(--colors-primary);
+  }
+
+  .c-LcsSW[data-state="checked"]:hover {
+    background-color: var(--colors-primaryMid);
+  }
+}
+
+@media  {
+  .c-invHbC-hjcbRK-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-invHbC-hjcbRK-size-md[data-state="checked"] {
+    transform: translateX(calc(var(--sizes-2) - var(--space-1)));
+  }
+
+  .c-LcsSW-dYgJcL-size-md {
+    padding: var(--space-0);
+    width: var(--sizes-4);
+  }
+}
+
+<div>
+  <button
+    aria-checked="false"
+    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
+    data-state="unchecked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="c-invHbC c-invHbC-hjcbRK-size-md"
       data-state="unchecked"
     />
   </button>
