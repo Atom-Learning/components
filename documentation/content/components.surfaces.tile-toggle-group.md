@@ -80,11 +80,7 @@ tabs:
       The tile itself doesn’t include any sizing or paddings applied.
 
 
-
-
       ![tile overview](/assets/images/tile01_overview.svg "tile overview")
-
-
 
 
       ## When to use
@@ -97,33 +93,25 @@ tabs:
       Using Tile will help us ensure we build UIs consistently and save time when designers are deciding styles and when developers are building them.
 
 
-
-
-      ![Tile - when to use](/assets/images/tile02_when-to-use.svg "Tile - when to use")
+      ![Tile when to use](/assets/images/tile02_when-to-use.svg "Tile when to use")
 
 
       Default non-interactive tile. {base: "grey1"}
 
 
-
-
       ![tile button](/assets/images/tile03_button.svg "tile button")
 
 
-      Tile button example. {base: "grey1", accent: "blue2"}
-
-
+      Tile button example. `{base: "grey1", accent: "blue2"}`
 
 
       ![Tile toggle](/assets/images/tile04_toggle1.svg "Tile toggle")
 
 
-      ![Tile toggle (single select example)](/assets/images/tile05_toggle2.svg "Tile toggle (single select example)")
+      ![Tile toggle single select example](/assets/images/tile05_toggle2.svg "Tile toggle single select example")
 
 
-      Tile toggle (single select example). {base: "grey1", accent: "blue2"}
-
-
+      Tile toggle (single select example). `{base: "grey1", accent: "blue2"}`
 
 
       ## Color Scheme (experimental)
@@ -144,7 +132,7 @@ tabs:
       For tile, ‘Base’ determines the colour of the tile in a default/resting state (including its hover, pressed, focus), and ‘Accent’ determines the colour when the tile is selected (including its hover, pressed, focus).
 
 
-      ![Tile: all colorScheme options](/assets/images/tile06_color.svg "Tile: all colorScheme options")
+      ![Tile all colorScheme options](/assets/images/tile06_color.svg "Tile all colorScheme options")
 
 
       Tile: all colorScheme options
@@ -175,17 +163,13 @@ tabs:
       ![Tile states](/assets/images/tile09_states.svg "Tile states")
 
 
-      States for Tile button {base: "grey1", accent: "blue2"}
-
-
+      States for Tile button `{base: "grey1", accent: "blue2"}`
 
 
       ### Elevation
 
 
       When the user hovers over an interactive Tile, it has an elevation defined by a shadow and a position change.
-
-
 
 
       ## Do's and Don'ts
