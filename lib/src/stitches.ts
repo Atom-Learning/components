@@ -1,11 +1,12 @@
 import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
+import { themeMap } from '@atom-learning/theme/theme-map'
 import type {
   CSS as StitchesCSS,
   PropertyValue,
   ScaleValue
 } from '@stitches/react'
-import { createStitches } from '@stitches/react'
+import { createStitches, defaultThemeMap } from '@stitches/react'
 
 export const utils = {
   bg: (value: PropertyValue<'background'>) => ({
@@ -78,6 +79,10 @@ export const media = {
 
 const stitchesConfig = createStitches({
   theme: atomTheme as Theme,
+  themeMap: {
+    ...defaultThemeMap,
+    ...themeMap
+  },
   utils,
   media
 })
