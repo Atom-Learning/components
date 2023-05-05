@@ -32,19 +32,19 @@ tabs:
       The default/basic component:
 
 
-      ![Pagination default basic component](/admin/images/01-pagination-structure.png "Pagination default basic component")
+      ![Pagination default basic component](/assets/images/01-pagination-structure.png "Pagination default basic component")
 
 
       A special variant for Mock tests that display a blue dot and different font color when the question has been answered:
 
 
-      ![Pagination mock tests](/admin/images/02-pagination-structure-mock-tests.png "Pagination mock tests")
+      ![Pagination mock tests](/assets/images/02-pagination-structure-mock-tests.png "Pagination mock tests")
 
 
       ### Spacing and sizing
 
 
-      ![Pagination size](/admin/images/03-pagination-sizing.png "Pagination size")
+      ![Pagination size](/assets/images/03-pagination-sizing.png "Pagination size")
 
 
       | Property                 | Token   | px   | rem  |
@@ -60,7 +60,7 @@ tabs:
       | Dot size                 | :(      | 4px  | 0.25 |
 
 
-      ![Pagination spacing](/admin/images/04-pagination-spacing.png "Pagination spacing")
+      ![Pagination spacing](/assets/images/04-pagination-spacing.png "Pagination spacing")
 
 
       | Property            | Token    | px  | rem  |
@@ -72,7 +72,7 @@ tabs:
       | Border-radious      | radii $0 | 4px | 0.25 |
 
 
-      ![Pagination action icon](/admin/images/05-pagination-action-icon.png "Pagination action icon")
+      ![Pagination action icon](/assets/images/05-pagination-action-icon.png "Pagination action icon")
 
 
       | Property & element | Size            | Appearance | Theme     | isRounded |
@@ -82,7 +82,7 @@ tabs:
       | Action Icon        | ‘sm’, ‘md, ‘lg’ | 'simple'   | 'neutral' | 'no'      |
 
 
-      ![Pagination popover padding](/admin/images/06-pagination-padding-popup.png "Pagination popover padding")
+      ![Pagination popover padding](/assets/images/06-pagination-padding-popup.png "Pagination popover padding")
 
 
       | Property      | Token     | px   | rem |
@@ -96,7 +96,7 @@ tabs:
       | Shadow        | shadow $2 | \-   | \-  |
 
 
-      ![Pagination typography](/admin/images/07-pagination-typography.png "Pagination typography")
+      ![Pagination typography](/assets/images/07-pagination-typography.png "Pagination typography")
 
 
       | Element                                 | Family | Weight | Size | Rem  | px  |
@@ -111,7 +111,7 @@ tabs:
       ## Color
 
 
-      ![Pagination color default](/admin/images/08-pagination-color-default.png "Pagination color default")
+      ![Pagination color default](/assets/images/08-pagination-color-default.png "Pagination color default")
 
 
       | Property & Element - State                          | Token       | Hex |
@@ -135,7 +135,7 @@ tabs:
       | Font-color - Hover, pressed                         | $grey1000   | \#  |
 
 
-      ![Pagination color completed](/admin/images/09-pagination-color-completed.png "Pagination color completed")
+      ![Pagination color completed](/assets/images/09-pagination-color-completed.png "Pagination color completed")
 
 
       | Property & Element - State                          | Token       | Hex |
@@ -161,7 +161,7 @@ tabs:
       | Font-color - Pressed                                | $blue1000   | \#  |
 
 
-      ![Pagination color selected default](/admin/images/10-pagination-color-selected.png "Pagination color selected default")
+      ![Pagination color selected default](/assets/images/10-pagination-color-selected.png "Pagination color selected default")
 
 
       Same as the one above with the addition of border-color
@@ -182,7 +182,7 @@ tabs:
 
 
 
-      ![Pagination color completed](/admin/images/11-pagination-color-selected-completed.png "Pagination color completed")
+      ![Pagination color completed](/assets/images/11-pagination-color-selected-completed.png "Pagination color completed")
 
 
       | Property & Element - State           | Token       | Hex |
@@ -204,7 +204,7 @@ tabs:
       A component used whenever a user needs to navigate through sets of data that are too long to fit on one page.
 
 
-      ![Pagination overview](/admin/images/12-pagination-overview.png "Pagination overview")
+      ![Pagination overview](/assets/images/12-pagination-overview.png "Pagination overview")
 
 
       ## When to use
@@ -227,7 +227,7 @@ tabs:
       * It should be placed in a consistent location on the page to make it easy for users to find and use.
 
 
-      ![Pagination placemente](/admin/images/13-pagination-placement.png "Pagination placemente")
+      ![Pagination placemente](/assets/images/13-pagination-placement.png "Pagination placemente")
 
 
       Pagination component allowing the user to navigate through a list of Mock test.
@@ -239,7 +239,7 @@ tabs:
       When a threshold of pages is reached, the list is truncated using an ellipsis button. This button triggers a popup containing allowing the user to navigate through the different pages.
 
 
-      ![Pagination truncation](/admin/images/14-pagination-truncation.png "Pagination truncation")
+      ![Pagination truncation](/assets/images/14-pagination-truncation.png "Pagination truncation")
 
 
       #### Completed
@@ -248,7 +248,7 @@ tabs:
       A special variant for Mock tests that display a blue dot and different font color when the question has been answered:
 
 
-      ![Pagination completed mock tests](/admin/images/15-pagination-completed.png "Pagination completed mock tests")
+      ![Pagination completed mock tests](/assets/images/15-pagination-completed.png "Pagination completed mock tests")
 
 
       #### Content
@@ -288,13 +288,13 @@ tabs:
       The number of items shown should respond according to the parent container available space.
 
 
-      ![Pagination max elements](/admin/images/16-pagination-number-of-elements.png "Pagination max elements")
+      ![Pagination max elements](/assets/images/16-pagination-number-of-elements.png "Pagination max elements")
 
 
       When you're on the first page the left chevron is disabled. When you're on the last page the right chevron is disabled.
 
 
-      ![Pagination chevron disabled](/admin/images/17-pagination-disabled-buttons.png "Pagination chevron disabled")
+      ![Pagination chevron disabled](/assets/images/17-pagination-disabled-buttons.png "Pagination chevron disabled")
 
 
       The selected page will be in the middle except for the pages that are at the start and end of the set (this is how it currently works).\
@@ -302,7 +302,7 @@ tabs:
       The ellipsis button will always be the one before the last item (this is new).
 
 
-      ![Pagination ellipsis button placement](/admin/images/18-pagination-selected.png "Pagination ellipsis button placement")
+      ![Pagination ellipsis button placement](/assets/images/18-pagination-selected.png "Pagination ellipsis button placement")
 
 
       ## Accessibility
@@ -334,7 +334,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/admin/images/pagination-do-01.png","type":"do","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"image":"/admin/images/pagination-do-01.png","type":"avoid","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"type":"dont","image":"/admin/images/pagination-do-01.png","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."}]} />
+      <DosAndDonts items={[{"image":"/assets/images/pagination-do-01.png","type":"do","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"image":"/assets/images/pagination-do-01.png","type":"avoid","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."},{"type":"dont","image":"/assets/images/pagination-do-01.png","description":"If there's only a small number of pages, show all the page buttons without an ellipsis."}]} />
 parent: 95SvEwV7BznSChttFanpW
 uuid: d9e3b0af-6a46-4168-96db-c98bac9ee6d1
 nestedSlug:

@@ -188,7 +188,7 @@ tabs:
       A stepper is a visual representation of a user’s progress through a set of steps, indicating how much the user has completed or how far they are from completing a task.
 
 
-      ![Stepper overview](/admin/images/01-stepper-overview.png "Stepper overview")
+      ![Stepper overview](/assets/images/01-stepper-overview.png "Stepper overview")
 
 
       ### Anatony
@@ -208,10 +208,10 @@ tabs:
       ### Size
 
 
-      ![Stepper vertical vs horizontal](/admin/images/02-stepper.png "Stepper vertical vs horizontal")
+      ![Stepper vertical vs horizontal](/assets/images/02-stepper.png "Stepper vertical vs horizontal")
 
 
-      ![Stepper size and margins](/admin/images/03-stepper.png "Stepper size and margins")
+      ![Stepper size and margins](/assets/images/03-stepper.png "Stepper size and margins")
 
 
       | Property              | Token    | px   | rem  |
@@ -230,13 +230,13 @@ tabs:
       ### States
 
 
-      ![Stepper states](/admin/images/04-stepper.png "Stepper states")
+      ![Stepper states](/assets/images/04-stepper.png "Stepper states")
 
 
       ## Typography
 
 
-      ![](/admin/images/05-stepper.png)
+      ![](/assets/images/05-stepper.png)
 
 
       | Element - status                         | Family | Weight | Size | Rem      | px  |
@@ -258,7 +258,7 @@ tabs:
       We also use color to communicate the status of the steps.
 
 
-      ![Stepper color states](/admin/images/06-stepper.png "Stepper color states")
+      ![Stepper color states](/assets/images/06-stepper.png "Stepper color states")
 
 
       | Property & Element - Completed | Token    | Hex |
@@ -349,7 +349,7 @@ tabs:
       Component to indicate progress during more than one step processes.
 
 
-      ![Stepper overview](/admin/images/07-stepper.png "Stepper overview")
+      ![Stepper overview](/assets/images/07-stepper.png "Stepper overview")
 
 
       Steppers are flexible to be placed in different containers such as panels or dialog modals. Placement depends on each use case but the general guideline is for them to sit at the top of the container, taking full-width space and close to related information in the page.
@@ -368,7 +368,7 @@ tabs:
       Use in processes that involve more than one step and you want the user to see their progress and how much is left.
 
 
-      ![Stepper when to use](/admin/images/08-stepper-when-to-use.png "Stepper when to use")
+      ![Stepper when to use](/assets/images/08-stepper-when-to-use.png "Stepper when to use")
 
 
       Sign up proccess
@@ -377,7 +377,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/admin/images/09-stepper-do-1.png","type":"do","description":"Use in proccesses that involve more than one step and you want the user to see their progress and how much is left."},{"image":"/admin/images/10-stepper-don-t-2.png","type":"dont","description":"Show error via color on the stepper. Use other components within the page."},{"image":"/admin/images/11-stepper-do-3.png","type":"do","description":"Adapt for mobile version "},{"image":"/admin/images/12-stepper-avoid-4.png","type":"avoid","description":"Using long or unclear copies"},{"image":"/admin/images/13-stepper-do-5.png","type":"do","description":"Show success with a microinteractions"}]} />
+      <DosAndDonts items={[{"image":"/assets/images/09-stepper-do-1.png","type":"do","description":"Use in proccesses that involve more than one step and you want the user to see their progress and how much is left."},{"image":"/assets/images/10-stepper-don-t-2.png","type":"dont","description":"Show error via color on the stepper. Use other components within the page."},{"image":"/assets/images/11-stepper-do-3.png","type":"do","description":"Adapt for mobile version "},{"image":"/assets/images/12-stepper-avoid-4.png","type":"avoid","description":"Using long or unclear copies"},{"image":"/assets/images/13-stepper-do-5.png","type":"do","description":"Show success with a microinteractions"}]} />
 parent: 95SvEwV7BznSChttFanpW
 uuid: 2dFVvw4YSnn_Ab-Z9-gLw
 nestedSlug:

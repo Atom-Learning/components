@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders SectionMessage component and has no programmatically detectable a11y issues 1`] = `
+@media  {
+  .c-jgdwfn {
+    display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-flbHeh {
+    flex-grow: 1;
+    justify-content: space-between !important;
+  }
+
+  .c-iikTjs {
+    position: relative;
+    border-radius: var(--radii-0);
+    display: flex;
+    padding: var(--space-4);
+    border: 1px solid white;
+  }
+}
+
+@media  {
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 {
+    margin-top: calc(var(--space-3)*-1);
+    margin-left: calc(var(--space-3)*-1);
+  }
+
+  .c-jgdwfn-dlytZv-gap-3 > * {
+    margin-top: var(--space-3);
+    margin-left: var(--space-3);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-fDzwZw-elrktp-size-sm {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-iikTjs-jtgfr-theme-error {
+    background: var(--colors-dangerLight);
+    color: var(--colors-dangerDark);
+  }
+
+  .c-iikTjs-cSgxUp-hasIcon-true {
+    padding-left: var(--space-6);
+  }
+
+  .c-iikTjs-IFRSO-hasDismiss-true {
+    padding-right: var(--space-7);
+  }
+}
+
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-dbrbZt-ihCBfwK-css {
+    margin: auto;
+    position: absolute;
+    left: var(--space-4);
+    top: var(--space-4);
+    color: currentColor;
+  }
+
+  .c-PJLV-iduWbFV-css {
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+
+  .c-dyvMgW-ikMtawB-css {
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .c-dyvMgW-ibDwMAO-css {
+    color: var(--colors-grey900);
+  }
+
+  .c-fDzwZw-iefwZNm-css {
+    margin: auto;
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+  }
+}
+
+<div>
+  <div
+    class="c-iikTjs c-iikTjs-jtgfr-theme-error c-iikTjs-cSgxUp-hasIcon-true c-iikTjs-IFRSO-hasDismiss-true"
+  >
+    <div
+      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihCBfwK-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 8v5"
+        />
+        <line
+          x1="12"
+          x2="12"
+          y1="16"
+          y2="16"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+        />
+      </svg>
+      <div
+        class="c-PJLV c-PJLV-iduWbFV-css"
+      >
+        <p
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ikMtawB-css"
+        >
+          Title message
+        </p>
+        <p
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-ibDwMAO-css"
+        >
+          This is the description
+        </p>
+      </div>
+      <button
+        aria-label="Dismiss"
+        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
+        data-state="closed"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6.343 6.343 11.314 11.314m-11.314 0L17.657 6.343"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;

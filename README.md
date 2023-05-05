@@ -22,7 +22,7 @@ If _not developing_ the library, just run `yarn build:lib` to generate the dist 
 
 Then for the site itself, open a new terminal for each of the below:
 
-- `yarn server:docs` then uncomment `local_backend: true` in `/documentation/public/admin/config.yml`
+- `yarn server:docs` then uncomment (if you need to log into http://localhost:3000/admin) `local_backend: true` in `/documentation/public/admin/config.yml`
 - `yarn dev:docs`
 
 (!) You will need to stop and rerun `yarn dev:docs` to see your changes on the website if you:

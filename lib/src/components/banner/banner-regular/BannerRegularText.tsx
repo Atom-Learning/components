@@ -10,12 +10,10 @@ const StyledText = styled(Text, {
   variants: {
     containerSize: {
       sm: {
-        mb: '$4',
-        mr: '$6'
+        mb: '$4'
       },
       md: {
-        mb: '$24',
-        mr: 0
+        mb: '$24'
       }
     },
     emphasis: {
@@ -24,20 +22,33 @@ const StyledText = styled(Text, {
       },
       midContrast: {},
       lowContrast: {}
+    },
+    hasDismiss: {
+      true: {}
     }
-  }
+  },
+  compoundVariants: [
+    {
+      containerSize: 'sm',
+      hasDismiss: true,
+      css: {
+        mr: '$6'
+      }
+    }
+  ]
 })
 
 export const BannerRegularText: React.FC<React.ComponentProps<typeof Text>> = (
   props
 ) => {
-  const { emphasis, size } = useBannerContext()
+  const { emphasis, size, hasDismiss } = useBannerContext()
 
   return (
     <StyledText
       size={size}
       containerSize={size}
       emphasis={emphasis}
+      hasDismiss={hasDismiss}
       {...props}
     />
   )
