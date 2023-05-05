@@ -1,4 +1,5 @@
 export * from './create-theme-variants'
 export * from './css-wrapper'
+export { NoOverflowWrapper, noOverflowStyleBlock } from './no-overflow-wrapper'
 export * from './style'
 export * from './types'

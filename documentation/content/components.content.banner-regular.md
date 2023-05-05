@@ -7,7 +7,7 @@ links:
 tabs:
   - title: Main
     content: >-
-
+      
       The `BannerRegular` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
 
       You can pass in a `colorScheme` object to the `BannerRegular` to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
