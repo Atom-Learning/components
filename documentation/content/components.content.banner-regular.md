@@ -221,7 +221,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/assets/images/banner04_do.svg","type":"do","description":"The copy used in the title and description of each promo banner should be short and concise, making sure that the message is clear to the user without any unnecessary information.  Copy length should be checked on the smallest possible size of the promo banner to ensure the component has a reasonable size and doesn’t overwhelm, compared to the other components on the page."},{"type":"dont","description":"Never use the promo banner to communicate unimportant information or messages that require other context"},{"description":"Always use the relevant size and colour variant that fits the message you want to communicate","type":"do"},{"type":"avoid","description":"Avoid having overly long copy within a banner"}]} />
+      <DosAndDonts items={[{"image":"/assets/images/banner04_do.svg","type":"do","description":"Make sure to show only one promo banner per page at a time"},{"type":"dont","description":"Never use the promo banner to communicate unimportant information or messages that require other context"},{"description":"Always use the relevant size and colour variant that fits the message you want to communicate","type":"do"},{"type":"avoid","description":"Avoid having overly long copy within a banner"}]} />
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: fdff513a0ebd40bcb5f58
 nestedSlug:
