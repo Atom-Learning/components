@@ -101,7 +101,7 @@ tabs:
 
 
 
-      ![Action icon overview](/admin/images/01-action-icon-overview.png "Action icon overview")
+      ![Action icon overview](/assets/images/01-action-icon-overview.png "Action icon overview")
 
 
       Action icon used to edit an ite
@@ -127,7 +127,7 @@ tabs:
       Each action icon has a tooltip enabled by default, which is available on hover. The tooltip can clarify the action the component would take, but should not be necessary to its understanding, as hover states are not available on all devices.
 
 
-      ![Action icon when to use](/admin/images/02-action-icon-when-to-use.png "Action icon when to use")
+      ![Action icon when to use](/assets/images/02-action-icon-when-to-use.png "Action icon when to use")
 
 
       Action icon with a tooltip
@@ -149,7 +149,7 @@ tabs:
       When used on its own, the action icon can use the Solid variant if it’s the primary action within that part of the layout. If it signifies a secondary action or is used in a combination with other buttons, it should use the Outline or Simple variants.
 
 
-      ![Action icon solid, outline, simple](/admin/images/03-action-icon-types-of-buttons.png "Action icon solid, outline, simple")
+      ![Action icon solid, outline, simple](/assets/images/03-action-icon-types-of-buttons.png "Action icon solid, outline, simple")
 
 
       Action icon solid, outline, simple
@@ -158,7 +158,7 @@ tabs:
       #### By shape
 
 
-      Action icons can be rounded or non-rounded, depending on the styling of the other components they’re used around. 
+      Action icons can be rounded or non-rounded, depending on the styling of the other components they’re used around.
 
 
       The non-rounded variant can be used when the action icon is positioned next to a normal button or other components, while the rounded one can be used when the icon is on its own without other rectangular components nearby.
@@ -173,7 +173,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"image":"/admin/images/06-action-icon-do-1.png","type":"do","description":"Use an icon that follows common patterns known by users within each app"},{"image":"/admin/images/07-action-icon-dont-2.png","type":"dont","description":"Use icons that have abstract meanings within the page they’re used in"},{"image":"/admin/images/08-action-icon-do-3.png","type":"do","description":"Use the appropriate variant of the action icon that fits the component hierarchy of your layout"},{"image":"/admin/images/09-action-icon-dont-4.png","type":"dont","description":"Use the appropriate variant of the action icon that fits the component hierarchy of your layout"}]} />
+      <DosAndDonts items={[{"image":"/assets/images/06-action-icon-do-1.png","type":"do","description":"Use an icon that follows common patterns known by users within each app"},{"image":"/assets/images/07-action-icon-dont-2.png","type":"dont","description":"Use icons that have abstract meanings within the page they’re used in"},{"image":"/assets/images/08-action-icon-do-3.png","type":"do","description":"Use the appropriate variant of the action icon that fits the component hierarchy of your layout"},{"image":"/assets/images/09-action-icon-dont-4.png","type":"dont","description":"Use the appropriate variant of the action icon that fits the component hierarchy of your layout"}]} />
 uuid: j5A5xPpfwS7VeubRlEZbl
 nestedSlug:
   - components
