@@ -8,7 +8,7 @@ import {
   ChipToggleGroup,
   SearchInput,
   styled,
-  TileNoOverflowContainer,
+  NoOverflowWrapper,
   TileInteractive
 } from '@atom-learning/components'
 import { intersection } from 'lodash'
@@ -45,7 +45,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({
       {...elementSpecificProps}
       css={{ color: 'inherit', textDecoration: 'none', display: 'block', height: '100%' }}
     >
-      <TileNoOverflowContainer>
+      <NoOverflowWrapper>
         <Box
           css={{
             background: '$base2',
@@ -62,7 +62,7 @@ const CardsItem: React.FC<TCardsItemProps> = ({
           <Heading as="h3" size="xs" css={{ mb: '$3' }}>{heading}</Heading>
           <Text size="xs">{description}</Text>
         </Box>
-      </TileNoOverflowContainer>
+      </NoOverflowWrapper>
     </TileInteractive >
   )
 }

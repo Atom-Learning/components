@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NoOverflowContainer component renders 1`] = `
+exports[`NoOverflowWrapper component renders 1`] = `
 @media  {
   .c-edXhKp {
     height: 100%;
