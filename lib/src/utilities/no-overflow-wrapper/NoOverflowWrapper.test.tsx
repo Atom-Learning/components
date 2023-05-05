@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react'
 import * as React from 'react'
 
-import { NoOverflowContainer } from '.'
+import { NoOverflowWrapper } from '.'
 
-describe(`NoOverflowContainer component`, () => {
+describe(`NoOverflowWrapper component`, () => {
   it('renders', async () => {
-    const { container } = render(<NoOverflowContainer />)
+    const { container } = render(<NoOverflowWrapper />)
     expect(container).toMatchSnapshot()
   })
 })
