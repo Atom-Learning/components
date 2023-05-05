@@ -45,7 +45,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
   borderRadius: '$round',
   display: 'block',
   transition: 'transform 50ms',
-  willChange: 'transform',  
+  willChange: 'transform',
   variants: {
     size: {
       md: {
@@ -58,7 +58,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
         size: '$2',
         '&[data-state="checked"]': {
           transform: 'translateX($space$5)'
-        },
+        }
       }
     }
   }
