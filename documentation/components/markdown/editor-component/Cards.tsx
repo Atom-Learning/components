@@ -32,10 +32,10 @@ const CardsItem: React.FC<TCardsItemProps> = ({
   const isLink = !!link?.href
   const elementSpecificProps = isLink
     ? {
-      href: link.href,
-      target: link.isExternal ? '_blank' : '_self',
-      rel: link.isExternal ? 'noopener noreferrer nofollow' : ''
-    }
+        href: link.href,
+        target: link.isExternal ? '_blank' : '_self',
+        rel: link.isExternal ? 'noopener noreferrer nofollow' : ''
+      }
     : {}
 
   return (
@@ -43,7 +43,12 @@ const CardsItem: React.FC<TCardsItemProps> = ({
       border
       borderRadius="md"
       {...elementSpecificProps}
-      css={{ color: 'inherit', textDecoration: 'none', display: 'block', height: '100%' }}
+      css={{
+        color: 'inherit',
+        textDecoration: 'none',
+        display: 'block',
+        height: '100%'
+      }}
     >
       <NoOverflowWrapper>
         <Box
@@ -59,11 +64,13 @@ const CardsItem: React.FC<TCardsItemProps> = ({
           {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
         </Box>
         <Box css={{ p: '$4' }}>
-          <Heading as="h3" size="xs" css={{ mb: '$3' }}>{heading}</Heading>
+          <Heading as="h3" size="xs" css={{ mb: '$3' }}>
+            {heading}
+          </Heading>
           <Text size="xs">{description}</Text>
         </Box>
       </NoOverflowWrapper>
-    </TileInteractive >
+    </TileInteractive>
   )
 }
 
