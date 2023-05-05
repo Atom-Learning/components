@@ -22,7 +22,8 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
 
   const isShowingTabs = tabs.length > 1
   useEffect(() => {
-    if (isShowingTabs) updateQueryParams({ tab }, { method: 'replace', debounce: 100 }) // (!) Note: Debounce is necessary for tabs or endless url update loop glitch
+    if (isShowingTabs)
+      updateQueryParams({ tab }, { method: 'replace', debounce: 100 }) // (!) Note: Debounce is necessary for tabs or endless url update loop glitch
   }, [isShowingTabs, tab, updateQueryParams])
 
   return (
