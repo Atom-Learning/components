@@ -19,11 +19,19 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<Switch />`} language={"tsx"} />
 
+      ## Size
+
+
+      The `size` property can be set to either `md` or `lg`. Default is `md`.
+
+
+      <CodeBlock live={true} preview={true} code={`<Switch size="lg" />`} language={"tsx"} />
+
 
       ## Disabled state
 
 
-      The `disabled` stated can be set using the `disabled` property.
+      The `disabled` state can be set using the `disabled` property.
 
 
       <CodeBlock live={true} preview={true} code={`<Switch disabled />`} language={"tsx"} />
