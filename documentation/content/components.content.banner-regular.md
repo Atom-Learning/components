@@ -155,22 +155,17 @@ tabs:
       ![banner example](/assets/images/banner01.svg "banner example")
 
 
-
-
       ## When to use
 
 
-      The promo banner should communicate an actionable message to the user in a short and concise manner. The title, description, illustration and CTA should all clearly explain the goal of the banner and motivate the user to complete the desired action.\
+      The promo banner should communicate an actionable message to the user in a short and concise manner. The title, description, illustration and CTA should all clearly explain the goal of the banner and motivate the user to complete the desired action.
 
-      \
 
-      Banners should be used sparingly and only in situations when the message has a suitable importance, in order to maintain a logical hierarchy within a layout and to avoid overwhelming the user.\
+      Banners should be used sparingly and only in situations when the message has a suitable importance, in order to maintain a logical hierarchy within a layout and to avoid overwhelming the user.
 
-      \
 
-      Only one promo banner should be shown per page at a time. When multiple banners need to be used in the same place, only the most important one should be displayed (or the one that can be currently actioned).\
+      Only one promo banner should be shown per page at a time. When multiple banners need to be used in the same place, only the most important one should be displayed (or the one that can be currently actioned).
 
-      \
 
       If the message of the banner is not actionable or important to the context of the product, consider using another component to communicate it to the user, such as an in-line or a [section message](https://atomlearning.design/components/feedback/section-message?tab=usage).
 
@@ -187,9 +182,7 @@ tabs:
       For a more visually engaging design that attracts the user’s attention, the Default variant of the banner is more suitable, allowing for a larger illustration and bigger-sized typography. If the message is lower in priority compared to the rest of the content, or does not need to engage with an illustration, use the Slim variant.
 
 
-      ### \
-
-      Color
+      ### Color
 
 
       The promo banners also have three variants in terms of colour, which offer different levels of contrast within each layout. 
@@ -204,31 +197,25 @@ tabs:
         Finally, the ‘low’ emphasis variant is designed to blend with the rest of the containers within the app, so should be used only when it doesn’t require a lot of attention. In such cases, consider the message you want to communicate and if the promo banner is the most suitable component for your goals (e.g. is the message actionable, is it related to a particular component on the page or is it more general, etc.).
 
 
-      ![toggle group as switch](/assets/images/banner02_color.svg "toggle group as switch")
+      ![banner color](/assets/images/banner02_color.svg "banner color")
 
 
-      ### Interactions 
+      ### Interactions
 
 
       As the promo banner component itself is not interactive, the only interactions with the user it allows are through its CTAs and close button.
 
 
-      \
-
       The user should always have the ability to dismiss the component when they don’t want to see it via the close button (with some exceptions mentioned below). Suitable logic for each use case can be utilised to show the banner again after some time has passed, but it’s important that the user is not overwhelmed by notifications and marketing content on the platform.
 
-
-      \
 
       In some existing product-related scenarios, where the message of the banner is of extreme importance to the user and an immediate action is required, the banner may be non-dismissable. Such use cases should be considered carefully and used very sparingly - for example, this is suitable for when a teacher requires an action from their student, but not when Atom suggests that a parent upgrades their account.
 
 
-      \
-
       Promo banners may have either 1 or 2 CTAs. These buttons should follow the existing DS button guidelines in terms of hierarchy, colour and contrast and should have short and clear copy.
 
 
-      ### Copy 
+      ### Copy
 
 
       The copy used in the title and description of each promo banner should be short and concise, making sure that the message is clear to the user without any unnecessary information.
