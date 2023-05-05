@@ -7,7 +7,9 @@ import {
   Stack,
   ChipToggleGroup,
   SearchInput,
-  styled
+  styled,
+  NoOverflowWrapper,
+  TileInteractive
 } from '@atom-learning/components'
 import { intersection } from 'lodash'
 import * as React from 'react'
@@ -30,36 +32,38 @@ const CardsItem: React.FC<TCardsItemProps> = ({
   const isLink = !!link?.href
   const elementSpecificProps = isLink
     ? {
-        as: 'a',
-        href: link.href,
-        target: link.isExternal ? '_blank' : '_self',
-        rel: link.isExternal ? 'noopener noreferrer nofollow' : false
-      }
+      href: link.href,
+      target: link.isExternal ? '_blank' : '_self',
+      rel: link.isExternal ? 'noopener noreferrer nofollow' : ''
+    }
     : {}
 
   return (
-    <Box
+    <TileInteractive
+      border
+      borderRadius="md"
       {...elementSpecificProps}
-      css={{ color: 'inherit', textDecoration: 'none', display: 'block' }}
+      css={{ color: 'inherit', textDecoration: 'none', display: 'block', height: '100%' }}
     >
-      <Box
-        css={{
-          background: '$base2',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          mb: '$2',
-          p: '$2',
-          aspectRatio: '16/9'
-        }}
-      >
-        {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
-      </Box>
-      <Heading as="h3" size="xs" css={{ mb: '$3' }}>
-        {heading}
-      </Heading>
-      <Text size="xs">{description}</Text>
-    </Box>
+      <NoOverflowWrapper>
+        <Box
+          css={{
+            background: '$base2',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            p: '$2',
+            aspectRatio: '16/9'
+          }}
+        >
+          {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
+        </Box>
+        <Box css={{ p: '$4' }}>
+          <Heading as="h3" size="xs" css={{ mb: '$3' }}>{heading}</Heading>
+          <Text size="xs">{description}</Text>
+        </Box>
+      </NoOverflowWrapper>
+    </TileInteractive >
   )
 }
 
@@ -153,12 +157,11 @@ export const Cards: React.FC<CardsProps> = ({
         <Box
           css={{
             maxWidth: '100%',
-            mx: 'auto',
-            overflowX: 'auto'
+            mx: 'auto'
           }}
         >
           <ChipToggleGroup
-            wrap="nowrap"
+            justify="center"
             type="multiple"
             value={selectedTags}
             onValueChange={handleSelectedTagsValueChange}
