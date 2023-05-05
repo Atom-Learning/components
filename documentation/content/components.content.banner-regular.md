@@ -82,6 +82,7 @@ tabs:
 
       It's possible to render it as a dissmissble component as well. Just add `<BannerRegular.Dismiss />` as a sibling to `BannerRegular.Content`.
 
+
       <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
@@ -89,25 +90,16 @@ tabs:
         emphasis="midContrast"
         size="md"
         value=""
-        onDismiss={() => console.log('Dismissed')}
+        onDismiss={() => console.log('Dismissed')}>
 
-      >   <BannerRegular.Content>
-
-
-      ```
-
-      <BannerRegular.Heading>Example Heading</BannerRegular.Heading>
-
-      <BannerRegular.Text>
-        This is an example text
-      </BannerRegular.Text>
-
-      <BannerRegular.Actions>
-        <BannerRegular.Button>Primary CTA</BannerRegular.Button>
-      </BannerRegular.Actions>
-
-      ```
-
+        <BannerRegular.Content>
+          <BannerRegular.Heading>Example Heading</BannerRegular.Heading>
+          <BannerRegular.Text>
+            This is an example text
+          </BannerRegular.Text>
+          <BannerRegular.Actions>
+            <BannerRegular.Button>Primary CTA</BannerRegular.Button>
+          </BannerRegular.Actions> 
         </BannerRegular.Content>
         <BannerRegular.Image src="https://picsum.photos/400/300" />
         <BannerRegular.Dismiss />
