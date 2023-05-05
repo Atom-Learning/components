@@ -3,7 +3,7 @@
 exports[`BannerRegular component renders 1`] = `
 @media  {
   :root,
-  .t-cyussq {
+  .t-kgHKNm {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -11,6 +11,7 @@ exports[`BannerRegular component renders 1`] = `
     --default-sizes: [object Object];
     --default-radii: [object Object];
     --default-shadows: [object Object];
+    --default-ratios: [object Object];
     --colors-textForeground: hsl(0, 0%, 12%);
     --colors-textSubtle: hsl(0, 0%, 33%);
     --colors-textPlaceholder: hsl(0, 0%, 46%);
@@ -138,6 +139,11 @@ exports[`BannerRegular component renders 1`] = `
     --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
   }
 
   .base-purple1 {
@@ -510,7 +516,7 @@ exports[`BannerRegular component renders 1`] = `
 exports[`BannerRegular component renders dismissible variant 1`] = `
 @media  {
   :root,
-  .t-cyussq {
+  .t-kgHKNm {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -518,6 +524,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --default-sizes: [object Object];
     --default-radii: [object Object];
     --default-shadows: [object Object];
+    --default-ratios: [object Object];
     --colors-textForeground: hsl(0, 0%, 12%);
     --colors-textSubtle: hsl(0, 0%, 33%);
     --colors-textPlaceholder: hsl(0, 0%, 46%);
@@ -645,6 +652,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
   }
 
   .base-purple1 {
