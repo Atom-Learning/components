@@ -104,7 +104,12 @@ export const Header: React.FC = (props) => {
       <HeaderTrigger onClick={() => setMenuOpen(true)} />
       <StyledHeader ref={ref} open={menuOpen} {...props}>
         <NextLink href="/">
-          <Image src={logo.src} width={80} alt="" css={{ mb: '$7', cursor: 'pointer' }} />
+          <Image
+            src={logo.src}
+            width={80}
+            alt=""
+            css={{ mb: '$7', cursor: 'pointer' }}
+          />
         </NextLink>
         <Badge
           theme="success"
