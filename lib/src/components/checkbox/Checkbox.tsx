@@ -7,13 +7,15 @@ import { styled } from '~/stitches'
 import { Icon } from '../icon'
 
 const StyledIndicator = styled(RadixCheckbox.Indicator, {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translateX(-50%) translateY(-50%)'
 })
 
 const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
+  position: 'relative',
   backgroundColor: 'transparent',
   border: '1px solid $colors$tonal400',
   borderRadius: '3px',
@@ -57,12 +59,10 @@ type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
   (props, ref) => (
     <StyledCheckbox {...props} ref={ref}>
-      <StyledIndicator>
+      <StyledIndicator asChild>
         <Icon
           is={props.checked === 'indeterminate' ? Minus : Ok}
           css={{
-            pointerEvents: 'none',
-            position: 'absolute',
             strokeWidth: '3',
             size: 14
           }}
