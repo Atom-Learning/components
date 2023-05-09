@@ -11,10 +11,8 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   cursor: 'pointer',
   display: 'flex',
   overflow: 'hidden',
-  p: '$0',
   position: 'relative',
   transition: 'all 50ms ease-out',
-  width: '$4',
   '&:hover': {
     backgroundColor: '$tonal300'
   },
@@ -27,6 +25,18 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   },
   '&[data-state="checked"]:hover': {
     backgroundColor: '$primaryMid'
+  },
+  variants: {
+    size: {
+      md: {
+        p: '$0',
+        width: '$4'
+      },
+      lg: {
+        p: '$1',
+        width: '$6'
+      }
+    }
   }
 })
 
@@ -34,19 +44,31 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
   backgroundColor: 'white',
   borderRadius: '$round',
   display: 'block',
-  size: '$1',
   transition: 'transform 50ms',
   willChange: 'transform',
-  '&[data-state="checked"]': {
-    transform: 'translateX(calc($sizes$2 - $space$1))'
+  variants: {
+    size: {
+      md: {
+        size: '$1',
+        '&[data-state="checked"]': {
+          transform: 'translateX(calc($sizes$2 - $space$1))'
+        }
+      },
+      lg: {
+        size: '$2',
+        '&[data-state="checked"]': {
+          transform: 'translateX($space$5)'
+        }
+      }
+    }
   }
 })
 
 type SwitchProps = React.ComponentProps<typeof StyledSwitch>
 
-export const Switch: React.FC<SwitchProps> = (props) => (
-  <StyledSwitch {...props}>
-    <StyledThumb />
+export const Switch: React.FC<SwitchProps> = ({ size = 'md', ...rest }) => (
+  <StyledSwitch size={size} {...rest}>
+    <StyledThumb size={size} />
   </StyledSwitch>
 )
 

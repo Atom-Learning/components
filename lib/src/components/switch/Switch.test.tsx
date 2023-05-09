@@ -39,4 +39,19 @@ describe(`Switch component`, () => {
     )
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders a large switch', async () => {
+    const { container } = render(<Switch size="lg" />)
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders a large Switch - has no programmatically detectable a11y issues', async () => {
+    const { container } = render(
+      <label>
+        <Switch title="switch" size="lg" />
+      </label>
+    )
+    expect(await axe(container)).toHaveNoViolations()
+  })
 })
