@@ -2,15 +2,17 @@
 
 exports[`Checkbox component renders a checkbox 1`] = `
 @media  {
-  .c-eOfRZm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
-  .c-emNREM {
+  .c-lhbScT {
     -webkit-appearance: none;
     appearance: none;
+    position: relative;
     background-color: transparent;
     border: 1px solid var(--colors-tonal400);
     border-radius: 3px;
@@ -25,22 +27,22 @@ exports[`Checkbox component renders a checkbox 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-emNREM[data-state="checked"] {
+  .c-lhbScT[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-emNREM[data-state="indeterminate"] {
+  .c-lhbScT[data-state="indeterminate"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-emNREM:focus {
+  .c-lhbScT:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-emNREM[disabled] {
+  .c-lhbScT[disabled] {
     background-color: var(--colors-tonal100);
     border-color: var(--colors-tonal400);
     cursor: not-allowed;
@@ -52,7 +54,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
   <label>
     <button
       aria-checked="false"
-      class="c-emNREM"
+      class="c-lhbScT"
       data-state="unchecked"
       role="checkbox"
       title="test"
