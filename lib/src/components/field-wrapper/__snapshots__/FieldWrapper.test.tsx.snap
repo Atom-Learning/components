@@ -150,9 +150,10 @@ exports[`FieldWrapper component renders 1`] = `
     display: table;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-PJLV-iymbh-theme-error {
@@ -220,7 +221,7 @@ exports[`FieldWrapper component renders 1`] = `
       </a>
     </div>
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
       id="example"
       name="example"
       type="text"

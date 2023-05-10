@@ -33,11 +33,13 @@ const StyledInput = styled('input', {
     size: {
       sm: {
         height: '$3',
-        fontSize: '$sm'
+        fontSize: '$sm',
+        lineHeight: 1.7
       },
       md: {
         height: '$4',
-        fontSize: '$md'
+        fontSize: '$md',
+        lineHeight: 2
       }
     },
     state: {
