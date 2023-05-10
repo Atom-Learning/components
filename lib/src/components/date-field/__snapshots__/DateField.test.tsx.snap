@@ -115,9 +115,10 @@ exports[`DateField component renders a field in error state 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -238,7 +239,7 @@ exports[`DateField component renders a field in error state 1`] = `
         class="c-PJLV c-PJLV-icmpvrW-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error"
           id="DATE FIELD"
           name="DATE FIELD"
           type="text"
@@ -404,9 +405,10 @@ exports[`DateField component renders a field with a text input 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -482,7 +484,7 @@ exports[`DateField component renders a field with a text input 1`] = `
         class="c-PJLV c-PJLV-icmpvrW-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
           id="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"

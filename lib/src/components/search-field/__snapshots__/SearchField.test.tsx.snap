@@ -113,9 +113,10 @@ exports[`SearchField component renders a field in error state - has no programma
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -219,7 +220,7 @@ exports[`SearchField component renders a field in error state - has no programma
         class="c-PJLV c-PJLV-icmpvrW-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
           id="searchField"
           llabel="Search Field"
           name="searchField"
@@ -374,9 +375,10 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -436,7 +438,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         class="c-PJLV c-PJLV-icmpvrW-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
           disabled=""
           id="searchField"
           name="searchField"
@@ -556,9 +558,10 @@ exports[`SearchField component renders a field with a search input - has no prog
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -618,7 +621,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         class="c-PJLV c-PJLV-icmpvrW-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
           id="searchField"
           name="searchField"
           placeholder="Search Field"

@@ -59,9 +59,10 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -98,7 +99,7 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
@@ -243,9 +244,10 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -318,7 +320,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value="testingWhenDefaultValue"
     />

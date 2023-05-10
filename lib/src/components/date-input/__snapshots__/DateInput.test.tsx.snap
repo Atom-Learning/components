@@ -61,9 +61,10 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -117,7 +118,7 @@ exports[`DateInput component renders 1`] = `
   >
     <input
       aria-label="test"
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
       name="date"
       type="text"
       value=""
