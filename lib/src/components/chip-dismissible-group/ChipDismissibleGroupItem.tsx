@@ -31,7 +31,7 @@ export const ChipDismissibleGroupItem: React.FC<TChipDismissibleGroupItem> = ({
           <ActionIcon
             label={dismissActionLabel}
             css={{ color: '$tonal200' }}
-            size={size === 'sm' ? 'xs' : 'sm'}
+            size={size === 'sm' ? 'xs' : 'sm'} // AAAAAAAA
           >
             <Icon is={Close} />
           </ActionIcon>

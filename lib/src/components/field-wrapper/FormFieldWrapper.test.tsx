@@ -4,21 +4,24 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Input } from '../input'
-import { FieldWrapper } from '.'
+import { FormFieldWrapper } from '.'
+import { Form } from '../form'
 
 const ExampleField = (props) => (
-  <FieldWrapper
-    label="Example Field"
-    name="example"
-    feedback={[{ type: 'error', message: 'Example error' }]}
-    prompt={{ label: 'Example prompt', link: 'https://example.com' }}
-    {...props}
-  >
-    <Input name="example" id="example" />
-  </FieldWrapper>
+  <Form onSubmit={(_data) => { }}>
+    <FormFieldWrapper
+      label="Example Field"
+      name="example"
+      feedback={[{ type: 'error', message: 'Example error' }]}
+      prompt={{ label: 'Example prompt', link: 'https://example.com' }}
+      {...props}
+    >
+      <Input name="example" id="example" />
+    </FormFieldWrapper>
+  </Form>
 )
 
-describe('FieldWrapper component', () => {
+describe('FormFieldWrapper component', () => {
   it('renders', async () => {
     const { container } = render(<ExampleField />)
 

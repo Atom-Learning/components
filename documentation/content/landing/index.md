@@ -173,7 +173,7 @@ tabs:
       button.svg\",\"heading\":\"Radio button\",\"description\":\"Radio buttons
       allow a user to select a single option from a list of predefined
       options.\",\"tags\":[\"Inputs\"],\"link\":{\"href\":\"https://atomlearnin\
-      g.design/components/form/fields/radio-button-field\"}},{\"image\":\"/asse\
+      g.design/components/form/fields/radio-button-group-field\"}},{\"image\":\"/asse\
       ts/images/radio-card.svg\",\"heading\":\"Radio card\",\"description\":\"A
       Radio Button that enables extra emphasis and descriptive
       capability.\",\"link\":{\"href\":\"https://atomlearning.design/components\

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldWrapper component renders 1`] = `
+@media  {
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dyvMgW-ibsbHzT-css {
+    display: flex;
+    font-weight: 400;
+    max-width: max-content;
+  }
+
+  .c-PJLV-ibiiNGi-css {
+    margin-left: var(--space-3);
+    margin-top: calc(var(--space-1)*-1);
+  }
+}
+
+<div>
+  <label
+    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ibsbHzT-css"
+    for="example"
+  >
+    <input
+      id="example"
+      name="example"
+      type="checkbox"
+    />
+    <div
+      class="c-PJLV c-PJLV-ibiiNGi-css"
+    >
+      Example Field
+      <br />
+    </div>
+  </label>
+</div>
+`;

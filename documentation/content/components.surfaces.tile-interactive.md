@@ -4,8 +4,8 @@ title: Tile Interactive
 tabs:
   - title: Code
     content: >-
-      <CodeBlock live={true} preview={true} code={`<TileGroup css={{background:
-      '$grey100', p: '$3', width: '100%'}} justify="center">
+      <CodeBlock live={true} preview={true} code={`<TileGroup
+      css={{background: '$grey100', p: '$3', width: '100%'}} justify="center">
         <TileInteractive onClick={() => alert('onClick')} css={{size: 100 }} borderRadius="md" />
         <TileInteractive href='/' css={{size: 100 }} borderRadius="md" border />
       </TileGroup>`} language={"tsx"} />
@@ -61,7 +61,7 @@ tabs:
 
       \
 
-       Tile has styles but no functional logic in itself, and it is also used to provide common styles for [Tile button](https://atomlearning.design/components/surfaces/tile-interactive) and [Tile toggle](https://atomlearning.design/components/surfaces/tile-toggle-group) which are interactive elements.\
+      Tile has styles but no functional logic in itself, and it is also used to provide common styles for [Tile button](https://atomlearning.design/components/surfaces/tile-interactive) and [Tile toggle](https://atomlearning.design/components/surfaces/tile-toggle-group) which are interactive elements.\
 
       \
 

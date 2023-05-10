@@ -1,32 +1,34 @@
 import * as React from 'react'
 
+import { useFieldWrapperContext, useFormFieldWrapperContext } from '~/components/field-wrapper'
 import { styled } from '~/stitches'
+import { focusVisibleStyleBlock } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
   appearance: 'none',
-  border: '1px solid $tonal400',
+  border: '1px solid $grey800',
   borderRadius: '$0',
   boxShadow: 'none', // prevent default iOS default styling
   boxSizing: 'border-box',
-  color: '$tonal600',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
   px: '$3',
   transition: 'all 100ms ease-out',
   width: '100%',
-  '&:focus': {
-    borderColor: '$primary',
-    outline: 'none'
+  '&:not([disabled])': {
+    '&:hover': {
+      borderColor: '$blue900',
+    },
+    '&:focus-visible': focusVisibleStyleBlock(),
   },
   '&[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
+    opacity: 0.3,
     cursor: 'not-allowed'
   },
   '&::placeholder': {
-    color: '$tonal300',
+    color: '$grey700',
     opacity: 1
   },
   variants: {
@@ -53,28 +55,48 @@ const StyledInput = styled('input', {
 export type InputProps = Override<
   React.ComponentProps<typeof StyledInput>,
   {
-    name: string
     as?: never
     type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url' | 'search'
+    onValueChange?: (newValue: React.ReactText) => void
   }
 >
 
 export const Input: React.FC<InputProps> = React.forwardRef(
-  ({ type = 'text', size = 'md', ...rest }, ref) => {
+  ({ type = 'text', size = 'md', onValueChange, ...rest }, ref) => {
+
+    const { name, state } = useFieldWrapperContext()
+
+    const { updateValue, fieldRef } = useFormFieldWrapperContext()
+
+    React.useImperativeHandle(ref, () => { // Interesting that this... just works.
+      return fieldRef?.current as HTMLInputElement
+    }, [fieldRef]);
+
+
+    let typeSpecificProps = {}
     if (type === 'number') {
-      return (
-        <StyledInput
-          type="text"
-          inputMode="numeric"
-          pattern="[0-9]*"
-          size={size}
-          {...rest}
-          ref={ref}
-        />
-      )
+      typeSpecificProps = {
+        inputMode: "numeric",
+        pattern: "[0-9]*"
+      }
     }
 
-    return <StyledInput type={type} size={size} {...rest} ref={ref} />
+    return (
+      <StyledInput
+        ref={fieldRef || ref}
+        name={name}
+        id={name}
+        type={type}
+        size={size}
+        state={state === 'error' ? state : undefined}
+        onChange={(e) => {
+          const newValue = e.target.value
+          updateValue?.(newValue)
+          onValueChange?.(newValue)
+        }}
+        {...typeSpecificProps}
+        {...rest}
+      />)
   }
 )
 

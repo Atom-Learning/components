@@ -3,54 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import type { Override } from '~/utilities/types'
 
-import { getTextVariant } from '../text'
-
-const StyledLabel = styled('label', {
-  color: '$tonal500',
-  fontFamily: '$body',
-  m: 0,
-  variants: {
-    size: {
-      sm: getTextVariant({ size: 'sm' }),
-      md: getTextVariant({ size: 'md' })
-    },
-    type: {
-      block: {
-        display: 'block',
-        fontWeight: 600
-      },
-      inline: {
-        display: 'flex',
-        fontWeight: 400,
-        maxWidth: 'max-content'
-      }
-    },
-    align: { start: {}, center: {} },
-    direction: { reverse: {}, row: {} }
-  },
-  compoundVariants: [
-    {
-      type: 'inline',
-      align: 'start',
-      css: { alignItems: 'flex-start' }
-    },
-    {
-      type: 'inline',
-      align: 'center',
-      css: { alignItems: 'center' }
-    },
-    {
-      type: 'inline',
-      direction: 'reverse',
-      css: { flexDirection: 'row-reverse' }
-    },
-    {
-      type: 'inline',
-      direction: 'row',
-      css: { flexDirection: 'row' }
-    }
-  ]
-})
+import { Text } from '../text'
 
 const StyledAsterisk = styled('span', {
   color: '$danger',
@@ -59,34 +12,46 @@ const StyledAsterisk = styled('span', {
 })
 
 type LabelProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledLabel>,
+  React.ComponentPropsWithoutRef<typeof Text>,
   {
     as?: 'label' | 'legend'
-    required?: boolean
+    required?: boolean,
+    size?: 'sm' | 'md',
+    htmlFor?: string,
+    type?: 'block' | 'inline'
   }
 >
 
 export const Label: React.FC<LabelProps> = ({
-  align = 'start',
   as = 'label',
-  direction = 'row',
+  htmlFor,
   size = 'md',
   type = 'block',
   children,
   required,
+  css,
   ...rest
 }) => (
-  <StyledLabel
+  <Text
     as={as}
     size={size}
-    type={type}
-    align={align}
-    direction={direction}
+    css={{
+      ...(type === 'block' ? {
+        display: 'block',
+        fontWeight: 600
+      } : {
+        display: 'flex',
+        fontWeight: 400,
+        maxWidth: 'max-content'
+      }),
+      ...css
+    }}
+    {...(as === 'label' ? { htmlFor } : {})}
     {...rest}
   >
     {children}
     {required && <StyledAsterisk aria-hidden>*</StyledAsterisk>}
-  </StyledLabel>
+  </Text >
 )
 
 Label.displayName = 'Label'

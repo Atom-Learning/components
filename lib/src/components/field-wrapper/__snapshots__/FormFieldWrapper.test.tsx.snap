@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FieldWrapper component renders 1`] = `
+exports[`FormFieldWrapper component renders 1`] = `
 @media  {
   .c-dhzjXW {
     display: flex;
@@ -236,69 +236,74 @@ exports[`FieldWrapper component renders 1`] = `
 }
 
 <div>
-  <div
+  <form
+    aria-label="form"
     class="c-PJLV"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-iwHglP-css"
-    >
-      <label
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-igrKRUr-css"
-        for="example"
-      >
-        Example Field
-      </label>
-      <a
-        class="c-fucOQC c-fucOQC-bndJoy-size-sm c-fucOQC-ijkNVrQ-css"
-        href="https://example.com"
-      >
-        Example prompt
-      </a>
-    </div>
-    <input
-      class="c-eavxzI c-eavxzI-pHZal-size-md"
-      id="example"
-      name="example"
-      type="text"
-    />
-    <div
-      class="c-PJLV c-PJLV-ijkHUQU-css"
+      class="c-PJLV"
     >
       <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3"
+        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+      >
+        <label
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-igrKRUr-css"
+          for="example"
+        >
+          Example Field
+        </label>
+        <a
+          class="c-fucOQC c-fucOQC-bndJoy-size-sm c-fucOQC-ijkNVrQ-css"
+          href="https://example.com"
+        >
+          Example prompt
+        </a>
+      </div>
+      <input
+        class="c-eavxzI c-eavxzI-pHZal-size-md"
+        id="example"
+        name="example"
+        type="text"
+      />
+      <div
+        class="c-PJLV c-PJLV-ijkHUQU-css"
       >
         <div
-          class="c-dhzjXW c-PJLV c-PJLV-ldsiYK-theme-neutral"
+          class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3"
         >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c-dhzjXW c-PJLV c-PJLV-ldsiYK-theme-neutral"
           >
-            <path
-              d="M12 12v3"
-            />
-            <line
-              x1="12"
-              x2="12"
-              y1="9"
-              y2="9"
-            />
-            <circle
-              cx="12"
-              cy="12"
-              r="10"
-            />
-          </svg>
-          <span
-            class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
-          >
-            Example error
-          </span>
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 12v3"
+              />
+              <line
+                x1="12"
+                x2="12"
+                y1="9"
+                y2="9"
+              />
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+            <span
+              class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
+            >
+              Example error
+            </span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </div>
 `;

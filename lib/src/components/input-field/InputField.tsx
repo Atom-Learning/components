@@ -1,47 +1,37 @@
 import * as React from 'react'
-import { useFormContext } from 'react-hook-form'
 
-import {
-  FieldElementWrapperProps,
-  FieldWrapper
-} from '~/components/field-wrapper'
-import { useFieldError } from '~/components/form'
-import { Input, InputProps } from '~/components/input'
+import { FieldWrapper } from '~/components/field-wrapper'
+import { Input } from '~/components/input'
 
-type InputFieldProps = InputProps & FieldElementWrapperProps
+type TInputFieldProps = React.ComponentProps<typeof Input> & React.ComponentProps<typeof FieldWrapper>
 
-export const InputField: React.FC<InputFieldProps> = ({
-  css,
-  label,
+export const InputField = React.forwardRef<HTMLElement, TInputFieldProps>(({
   name,
-  validation,
+  label,
   prompt,
+  required,
+  feedback,
   description,
-  ...remainingProps
-}) => {
-  const { register } = useFormContext()
-  const { error } = useFieldError(name)
-  const ref = validation ? register(validation) : register
+  hideLabel,
+  css,
+  ...rest
+}, ref) => {
+  const wrapperProps = {
+    name,
+    label,
+    prompt,
+    required,
+    feedback,
+    description,
+    hideLabel,
+    css
+  }
 
   return (
-    <FieldWrapper
-      css={css}
-      description={description}
-      error={error}
-      fieldId={name}
-      label={label}
-      prompt={prompt}
-      required={Boolean(validation?.required)}
-    >
-      <Input
-        id={name}
-        name={name}
-        ref={ref}
-        {...(error && { state: 'error' })}
-        {...remainingProps}
-      />
+    <FieldWrapper ref={ref} {...wrapperProps}>
+      <Input {...rest} />
     </FieldWrapper>
   )
-}
+})
 
 InputField.displayName = 'InputField'

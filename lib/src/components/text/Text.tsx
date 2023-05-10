@@ -42,17 +42,17 @@ type TextProps = Override<
   React.ComponentProps<typeof StyledText>,
   {
     as?:
-      | 'blockquote'
-      | 'caption'
-      | 'dd'
-      | 'dt'
-      | 'figcaption'
-      | 'li'
-      | 'p'
-      | 'span'
-      | 'legend'
-      | React.ComponentType
-      | React.ElementType
+    | 'blockquote'
+    | 'caption'
+    | 'dd'
+    | 'dt'
+    | 'figcaption'
+    | 'li'
+    | 'p'
+    | 'span'
+    | 'legend'
+    | React.ComponentType
+    | React.ElementType
   }
 >
 

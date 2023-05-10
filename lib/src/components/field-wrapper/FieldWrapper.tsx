@@ -2,69 +2,77 @@ import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
+import { Stack } from '~/components/stack'
 import { Flex } from '~/components/flex'
-import { ValidationOptions } from '~/components/form'
 import { InlineMessage } from '~/components/inline-message'
+import type { TInlineMessage } from '~/components/inline-message'
 import { Label } from '~/components/label'
 import { Link } from '~/components/link'
-import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
+import { FieldWrapperProvider } from './FieldWrapperContext'
+import { styled } from '~/stitches'
 
-export type FieldWrapperProps = {
-  css?: CSS
-  error?: string
-  fieldId: string
-  label: string
-  prompt?: { link?: string; label: string; onClick?: () => void }
-  description?: string
-  required?: boolean
-  hideLabel?: boolean
-}
-
-export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
+export type TFieldWrapperProps = {
   name: string
-  validation?: ValidationOptions
+  label: React.ReactNode
+  required?: boolean
+  description?: string
+  feedback?: (TInlineMessage & { message: React.ReactText })[]
+  hideLabel?: boolean,
+  prompt?: { link?: string; label: React.ReactNode; onClick?: () => void },
+  type?: 'field' | 'fieldset'
+  children?: React.ReactNode
 }
 
-export const FieldWrapper: React.FC<FieldWrapperProps> = ({
-  css,
+const Fieldset = styled('fieldset', { all: 'unset' })
+
+export const FieldWrapper = React.forwardRef<HTMLElement, TFieldWrapperProps>(({
   children,
-  error,
-  fieldId,
+  type = 'field',
+  name,
   label,
   prompt,
-  description,
   required,
-  hideLabel
-}) => {
+  feedback,
+  description,
+  hideLabel,
+  ...rest
+}, ref) => {
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
+  const FieldContainer = (type === 'fieldset' ? Fieldset : Box) as React.ElementType
 
   return (
-    <Box css={css}>
-      <LabelContainer
-        css={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          mb: '$3'
-        }}
-      >
-        <Label htmlFor={fieldId} required={required}>
-          {label}
-        </Label>
-        {prompt && (
-          <Link href={prompt?.link} onClick={prompt?.onClick} size="sm">
-            {prompt.label}
-          </Link>
+    <FieldWrapperProvider name={name} feedback={feedback} >
+      <FieldContainer ref={ref} {...rest}>
+        <LabelContainer
+          css={{
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            mb: '$3'
+          }}
+        >
+          <Label htmlFor={name} required={required} type='block' as={type === 'fieldset' ? 'legend' : 'label'}>
+            {label}
+          </Label>
+          {prompt && (
+            <Link href={prompt?.link} onClick={prompt?.onClick} size="sm" css={{ ml: '$2' }}>
+              {prompt.label}
+            </Link>
+          )}
+        </LabelContainer>
+        {description && (
+          <Description css={{ mb: '$3' }}>{description}</Description>
         )}
-      </LabelContainer>
-      {description && (
-        <Description css={{ mb: '$3' }}>{description}</Description>
-      )}
-      {children}
-      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
-    </Box>
+        {children}
+        {!!feedback?.length && (
+          <Stack css={{ mt: '$2' }} gap={3}>
+            {feedback.map((f) => <InlineMessage theme={f.theme} key={`${f.theme} ${f.message}`}>{f.message}</InlineMessage>)}
+          </Stack>
+        )}
+      </FieldContainer>
+    </FieldWrapperProvider>
   )
-}
+})
 
 FieldWrapper.displayName = 'FieldWrapper'

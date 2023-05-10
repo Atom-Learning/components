@@ -4,13 +4,13 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Form } from '..'
-import { InputField } from '.'
+import { InputFormField } from '.'
 
 describe(`InputField component`, () => {
   it('renders a field with a text input', async () => {
     const { container } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           css={{ m: 'auto', height: 100, width: 100 }}
@@ -27,7 +27,7 @@ describe(`InputField component`, () => {
   it('renders a field with a text input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           placeholder="INPUT FIELD"
@@ -41,7 +41,7 @@ describe(`InputField component`, () => {
   it('renders a field with a number input', async () => {
     const { container, findByPlaceholderText } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           css={{ m: 'auto', height: 100, width: 100 }}
@@ -61,7 +61,7 @@ describe(`InputField component`, () => {
   it('renders a field with a number input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           type="number"
@@ -76,7 +76,7 @@ describe(`InputField component`, () => {
   it('renders a field with a disabled input', async () => {
     const { findByPlaceholderText } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           css={{ m: 'auto', height: 100, width: 100 }}
@@ -94,7 +94,7 @@ describe(`InputField component`, () => {
   it('renders a field with a disabled input - has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           placeholder="INPUT FIELD"
@@ -111,7 +111,7 @@ describe(`InputField component`, () => {
 
     const { container, findByText, getByRole } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           validation={{ required: errorText }}
@@ -130,7 +130,7 @@ describe(`InputField component`, () => {
 
     const { container, findByText, getByRole } = render(
       <Form>
-        <InputField
+        <InputFormField
           label="INPUT FIELD"
           name="INPUT FIELD"
           validation={{ required: errorText }}

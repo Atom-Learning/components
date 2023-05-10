@@ -433,10 +433,15 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
+    font-weight: 400;
     margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
   }
 
   .c-jVLVTy {
@@ -545,14 +550,13 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     }
 }
 
-  .c-fZTBsJ {
+  .c-eSLCzr {
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -562,44 +566,44 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
-    outline: none;
+  .c-eSLCzr:not([disabled]):hover {
+    border-color: var(--colors-blue900);
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-eSLCzr:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-eSLCzr[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
-    color: var(--colors-tonal300);
+  .c-eSLCzr::placeholder {
+    color: var(--colors-grey700);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
-  }
-
-  .c-cVSpVL-grKRUr-type-block {
-    display: block;
-    font-weight: 600;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -617,7 +621,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-eSLCzr-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
@@ -653,18 +657,23 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
+  .c-dyvMgW-igrKRUr-css {
+    display: block;
+    font-weight: 600;
+  }
+
   .c-fPoCzx-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-eSLCzr-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-eSLCzr-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -683,13 +692,13 @@ exports[`NumberInputField component renders a field with a disabled input - has 
   >
     <div
       class="c-PJLV"
+      fieldid="numberInputField"
     >
       <div
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
-          for="numberInputField"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-igrKRUr-css"
         >
           Number Input
         </label>
@@ -725,14 +734,14 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          class="c-eSLCzr c-eSLCzr-pHZal-size-md c-eSLCzr-ibwGleD-css"
           disabled=""
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
           pattern="[0-9]*"
           role="spinbutton"
-          type="text"
+          type="number"
           value="0"
         />
         <span
@@ -776,10 +785,15 @@ exports[`NumberInputField component renders a field with a number input - has no
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dyvMgW {
     font-family: var(--fonts-body);
+    font-weight: 400;
     margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
   }
 
   .c-jVLVTy {
@@ -888,14 +902,13 @@ exports[`NumberInputField component renders a field with a number input - has no
     }
 }
 
-  .c-fZTBsJ {
+  .c-eSLCzr {
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: var(--radii-0);
     box-shadow: none;
     box-sizing: border-box;
-    color: var(--colors-tonal600);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -905,44 +918,44 @@ exports[`NumberInputField component renders a field with a number input - has no
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
-    outline: none;
+  .c-eSLCzr:not([disabled]):hover {
+    border-color: var(--colors-blue900);
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-eSLCzr:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-eSLCzr[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
-    color: var(--colors-tonal300);
+  .c-eSLCzr::placeholder {
+    color: var(--colors-grey700);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dyvMgW-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dyvMgW-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
-  }
-
-  .c-cVSpVL-grKRUr-type-block {
-    display: block;
-    font-weight: 600;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -960,7 +973,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-eSLCzr-pHZal-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
   }
@@ -996,18 +1009,23 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
+  .c-dyvMgW-igrKRUr-css {
+    display: block;
+    font-weight: 600;
+  }
+
   .c-fPoCzx-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-eSLCzr-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-eSLCzr-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -1026,13 +1044,13 @@ exports[`NumberInputField component renders a field with a number input - has no
   >
     <div
       class="c-PJLV"
+      fieldid="numberInputField"
     >
       <div
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
-          for="numberInputField"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-igrKRUr-css"
         >
           Number Input
         </label>
@@ -1068,13 +1086,13 @@ exports[`NumberInputField component renders a field with a number input - has no
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          class="c-eSLCzr c-eSLCzr-pHZal-size-md c-eSLCzr-ibwGleD-css"
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
           pattern="[0-9]*"
           role="spinbutton"
-          type="text"
+          type="number"
           value="0"
         />
         <span

@@ -7,14 +7,14 @@ links:
 tabs:
   - title: Main
     content: >-
-      The RadioButton component implements the Radio component from Radix
-      with default styling and the css prop.
+      The RadioButtonGroupItem component implements the Radio component from
+      Radix with default styling and the css prop.
 
 
-      It needs to be wrapped with the `RadioButtonGroup` as it will not load without it. If only one `RadioButton` is needed please consider using a checkbox instead.
+      It needs to be wrapped with the `RadioButtonGroup` as it will not load without it. If only one `RadioButtonGroupItem` is needed please consider using a checkbox instead.
 
 
-      A `RadioButton` needs to be associated with a label for accessibility purposes and to display the text for it. So rather than using the `RadioButton` component directly in a UI, consider using a `RadioButtonField`, which provides a `Label` and displays validation errors. Use this `RadioButton` to compose more complex `Field` type components.
+      A `RadioButtonGroupItem` needs to be associated with a label for accessibility purposes and to display the text for it. So rather than using the `RadioButtonGroupItem` component directly in a UI, consider using a `RadioButtonGroupField`, which provides a `Label` and displays validation errors. Use this `RadioButtonGroupItem` to compose more complex `Field` type components.
 
 
       ## API Reference
@@ -23,7 +23,7 @@ tabs:
       <ComponentProps component="RadioButtonGroup" />
 
 
-      <ComponentProps component="RadioButton" />
+      <ComponentProps component="RadioButtonGroup.Item" />
 parent: E7irFEo7JeV-MtxTony9G
 uuid: MaluK3EUZD9XWwYEkv3ty
 nestedSlug:

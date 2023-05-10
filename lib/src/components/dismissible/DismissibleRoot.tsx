@@ -41,7 +41,7 @@ export interface IDismissibleGroupItemProps {
 
 const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
   asChild = false,
-  value,
+  value, // I don't like that we have to do this here. Maybe delete and move to Chip.
   onDismiss,
   ...rest
 }) => {
