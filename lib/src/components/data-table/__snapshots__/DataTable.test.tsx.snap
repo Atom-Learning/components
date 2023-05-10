@@ -327,9 +327,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -955,9 +956,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -2422,9 +2424,10 @@ exports[`DataTable component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -2598,7 +2601,7 @@ exports[`DataTable component renders 1`] = `
     class="c-PJLV c-PJLV-ieyRoAv-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       name="User search"
       type="search"
       value=""
@@ -3295,9 +3298,10 @@ exports[`DataTable server-side renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {
@@ -3563,7 +3567,7 @@ exports[`DataTable server-side renders 1`] = `
     class="c-PJLV c-PJLV-icmpvrW-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
@@ -4276,9 +4280,10 @@ exports[`DataTable sticky columns renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-dbrbZt-dMrjnF-size-md {

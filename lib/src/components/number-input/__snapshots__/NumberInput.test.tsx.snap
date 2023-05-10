@@ -162,9 +162,10 @@ exports[`NumberInput component renders number input  1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 }
 
@@ -248,7 +249,7 @@ exports[`NumberInput component renders number input  1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"

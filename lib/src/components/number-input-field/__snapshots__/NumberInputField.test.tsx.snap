@@ -206,9 +206,10 @@ exports[`NumberInputField component renders a field in error state - has no prog
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 
   .c-fZTBsJ-bXVTjQ-state-error {
@@ -354,7 +355,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-bXVTjQ-state-error c-fZTBsJ-ibwGleD-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error c-fZTBsJ-ibwGleD-css"
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
@@ -617,9 +618,10 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 }
 
@@ -725,7 +727,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ibwGleD-css"
           disabled=""
           id="numberInputField"
           inputmode="numeric"
@@ -960,9 +962,10 @@ exports[`NumberInputField component renders a field with a number input - has no
     max-width: 250px;
   }
 
-  .c-fZTBsJ-pHZal-size-md {
+  .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
+    line-height: 2;
   }
 }
 
@@ -1068,7 +1071,7 @@ exports[`NumberInputField component renders a field with a number input - has no
           aria-valuemax="9007199254740991"
           aria-valuemin="0"
           aria-valuenow="0"
-          class="c-fZTBsJ c-fZTBsJ-pHZal-size-md c-fZTBsJ-ibwGleD-css"
+          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ibwGleD-css"
           id="numberInputField"
           inputmode="numeric"
           name="numberInputField"
