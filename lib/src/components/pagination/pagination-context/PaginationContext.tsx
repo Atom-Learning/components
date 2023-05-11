@@ -5,8 +5,16 @@ interface PaginationProviderProps {
   onPageChange: (pageNumber: number) => void
 }
 
-const PaginationContext = React.createContext({
-  goToPage: (index) => null,
+type Context = {
+  goToPage: (pagenumber: number) => void
+  goToPreviousPage: () => void
+  goToNextPage: () => void
+  currentPage: number
+  numOfPages: number
+}
+
+const PaginationContext = React.createContext<Context>({
+  goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 0,
@@ -58,7 +66,7 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   )
 }
 
-export const usePagination = () => {
+export const usePagination = (): Context => {
   const context = React.useContext(PaginationContext)
 
   if (!context) {
