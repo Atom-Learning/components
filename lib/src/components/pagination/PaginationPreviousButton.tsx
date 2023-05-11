@@ -1,14 +1,14 @@
 import { ChevronLeft } from '@atom-learning/icons'
 import * as React from 'react'
 
-import { CSS, styled } from '../../stitches'
+import { CSS } from '../../stitches'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { usePagination } from './pagination-context/PaginationContext'
 
 export const PaginationPreviousButton: React.FC<{
   onClick?: (callback: () => void) => void
-  css: CSS
+  css?: CSS
 }> = ({ onClick, css }) => {
   const { goToPreviousPage, currentPage } = usePagination()
 
