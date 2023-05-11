@@ -192,6 +192,15 @@ tabs:
       ![banner color](/assets/images/banner02_color.svg "banner color")
 
 
+      ### Image
+
+
+      \* Guidelines to be defined
+
+
+      ![Banner image example](/assets/images/banner-image-referrals.png "Banner image example")
+
+
       ### Interactions
 
 
