@@ -17,7 +17,7 @@ tabs:
       ## Theme
 
 
-      These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral` and `info`. The default is `info`
+      These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral`, `info` and `purple`. The default is `info`
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
@@ -26,6 +26,7 @@ tabs:
         <Badge theme="success">Success</Badge>
         <Badge theme="warning">Warning</Badge>
         <Badge theme="danger">Danger</Badge>
+        <Badge theme="purple">Purple</Badge>
       </Stack>`} language={"tsx"} />
 
 

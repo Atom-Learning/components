@@ -37,6 +37,10 @@ const StyledBadge = styled(Flex, {
       info: {
         bg: '$primaryLight',
         color: '$primaryMid'
+      },
+      purple: {
+        bg: '$purple200',
+        color: '$purple1000'
       }
     },
     size: {
