@@ -10,6 +10,7 @@ import { FontFamilyTokenListEditorComponent } from "~/components/admin/editor-co
 import { FontSizeTokenListEditorComponent } from "~/components/admin/editor-component/FontSizeTokenListEditorComponent";
 import { RadiusTokenListEditorComponent } from "~/components/admin/editor-component/RadiusTokenListEditorComponent";
 import { ShadowTokenListEditorComponent } from "~/components/admin/editor-component/ShadowTokenListEditorComponent";
+import { AspectRatioTokenListEditorComponent } from "~/components/admin/editor-component/AspectRatioTokenListEditorComponent";
 import { DosAndDontsEditorComponent } from "~/components/admin/editor-component/DosAndDontsEditorComponent";
 import { CardsEditorComponent } from "~/components/admin/editor-component/CardsEditorComponent";
 import { UuidWidget } from "~/components/admin/widget/UuidWidget";
@@ -44,6 +45,8 @@ const Admin = () => {
       CMS.registerEditorComponent(RadiusTokenListEditorComponent);
 
       CMS.registerEditorComponent(ShadowTokenListEditorComponent);
+
+      CMS.registerEditorComponent(AspectRatioTokenListEditorComponent);
 
       CMS.registerEditorComponent(DosAndDontsEditorComponent);
 
