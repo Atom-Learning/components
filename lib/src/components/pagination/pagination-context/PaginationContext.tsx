@@ -1,8 +1,13 @@
 import * as React from 'react'
 
+import { mockTestQuestions } from '../types'
+
+type numOfElements = 6 | 8
 interface PaginationProviderProps {
   numOfPages: number
-  onPageChange: (pageNumber: number) => void
+  onPageChange?: (pageNumber: number) => void
+  numOfElements?: numOfElements
+  mockTestQuestions?: mockTestQuestions[]
 }
 
 type Context = {
@@ -10,26 +15,35 @@ type Context = {
   goToPreviousPage: () => void
   goToNextPage: () => void
   currentPage: number
-  numOfPages: number
+  numOfPages?: number
+  numOfElements?: numOfElements
+  mockTestQuestions?: mockTestQuestions[]
+  isMockTestVariant?: boolean
 }
 
 const PaginationContext = React.createContext<Context>({
   goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
-  currentPage: 0,
-  numOfPages: 0
+  currentPage: 1,
+  numOfPages: 0,
+  numOfElements: 8,
+  mockTestQuestions: [],
+  isMockTestVariant: false
 })
 
 export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   numOfPages,
   onPageChange,
+  numOfElements,
+  mockTestQuestions,
   children
 }) => {
   const [currentPage, setCurrentPage] = React.useState(1)
+  const isMockTestVariant = Boolean(mockTestQuestions?.length)
 
   React.useEffect(() => {
-    onPageChange(currentPage)
+    onPageChange?.(currentPage)
   }, [currentPage, onPageChange])
 
   const goToPage = (index: number) => {
@@ -44,7 +58,10 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   }
 
   const goToNextPage = () => {
-    if (currentPage === numOfPages) {
+    if (
+      currentPage ===
+      (isMockTestVariant ? mockTestQuestions.length : numOfPages)
+    ) {
       return
     }
 
@@ -58,7 +75,10 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
         goToPreviousPage,
         goToPage,
         currentPage,
-        numOfPages
+        numOfPages,
+        numOfElements,
+        mockTestQuestions,
+        isMockTestVariant
       }}
     >
       {children}

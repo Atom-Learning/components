@@ -9,24 +9,41 @@ import { usePagination } from './pagination-context/PaginationContext'
 export const PaginationNextButton: React.FC<{
   onClick?: (callback: () => void) => void
   css?: CSS
-}> = ({ onClick, css }) => {
-  const { goToNextPage, currentPage, numOfPages } = usePagination()
+  label?: string
+}> = ({ onClick, css, label = 'Next page' }) => {
+  const {
+    goToNextPage,
+    currentPage,
+    numOfPages,
+    isMockTestVariant,
+    mockTestQuestions
+  } = usePagination()
 
   const handleClick = () => {
     if (onClick) {
-      onClick(goToNextPage)
+      return onClick(goToNextPage)
     }
+
     goToNextPage?.()
   }
 
   return (
     <ActionIcon
       hasTooltip={false}
+      label={label}
       size="md"
       theme="neutral"
       onClick={handleClick}
-      disabled={currentPage === numOfPages}
-      css={css}
+      disabled={
+        currentPage ===
+        (isMockTestVariant ? mockTestQuestions?.length : numOfPages)
+      }
+      css={{
+        '&:disabled': {
+          opacity: '0.4'
+        },
+        ...css
+      }}
     >
       <Icon is={ChevronRight} />
     </ActionIcon>

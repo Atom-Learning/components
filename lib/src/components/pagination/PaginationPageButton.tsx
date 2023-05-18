@@ -12,14 +12,23 @@ const StyledButton = styled(Button, {
   color: '$grey800 !important',
   bg: '$base1 !important',
   '&:hover': {
-    bg: '$base2 !important'
+    bg: '$base2 !important',
+    color: '$grey900 !important'
   },
   '&:focus': {
     bg: '$base1',
     border: '2px solid $blue800',
     boxShadow: 'inset 0 0 0 2px $white'
   },
+  '&:disabled': {
+    opacity: '0.2'
+  },
   variants: {
+    popover: {
+      true: {
+        bg: '$white !important'
+      }
+    },
     size: {
       md: {
         width: '$4'
@@ -28,8 +37,18 @@ const StyledButton = styled(Button, {
     selected: {
       true: {
         border: '1px solid $accent9',
+        fontWeight: 600,
         '&:hover': {
           borderColor: '$accent10'
+        }
+      }
+    },
+    isCompleted: {
+      true: {
+        fontWeight: 600,
+        color: '$accent9 !important',
+        '&:hover': {
+          color: '$accent10 !important'
         }
       }
     }
@@ -39,25 +58,49 @@ const StyledButton = styled(Button, {
 const Dot = styled(Box, {
   borderRadius: '$round',
   size: '4px',
-  background: '$accent9'
+  bg: '$accent9',
+  '&:hover': {
+    bg: '$accent10'
+  },
+  '&:focus': {
+    bg: '$accent9'
+  }
 })
 
 export const PaginationPageButton: React.FC<{
   pageNumber: number
   css?: CSS
-}> = ({ pageNumber, css }) => {
+  isPopoverButton?: boolean
+  isCompleted?: boolean
+  isDisabled?: boolean
+  onClick?: (callback: () => void) => void
+}> = ({
+  pageNumber,
+  css,
+  isPopoverButton = false,
+  isCompleted,
+  isDisabled
+}) => {
   const { currentPage, goToPage } = usePagination()
 
   const isButtonSelected = currentPage === pageNumber
+  const currentPageLabel = isButtonSelected ? { 'aria-current': 'page' } : {}
+  const isDisabledLabel = { 'aria-disabled': isDisabled }
+
   return (
     <StyledButton
       selected={isButtonSelected}
       size="md"
       onClick={() => goToPage(pageNumber)}
       css={css}
+      popover={isPopoverButton}
+      isCompleted={isCompleted}
+      disabled={isDisabled}
+      {...currentPageLabel}
+      {...isDisabledLabel}
     >
       {pageNumber}
-      <Dot />
+      {isCompleted && <Dot />}
     </StyledButton>
   )
 }

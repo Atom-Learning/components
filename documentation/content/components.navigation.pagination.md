@@ -3,7 +3,80 @@ slug: pagination
 title: Pagination
 tabs:
   - title: Code
-    content: This component is not built yet. Please check Visual and Usage.
+    content: >- 
+    
+    The `Pagination` component comes with 3 components that combine to make the Pagination. The parent Pagination contains Pagination.PreviousButton, Pagination.Pages, Pagination.NextButton components. Currently only the `md` variant has been implemented.
+
+    The `Pagination` component also takes in a `colorScheme` object to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
+
+
+    The root `Pagination` component also allows the user to pass in a `numOfPages` prop which is a number that tells the component how many pages to render, or it can take in a `mockTestQuestions` prop which is an array that contains objects with properties relating to the question number, wether the question number is answered or even disabled, this prop is used for the case when we wish to handle navigation with in the non-adaptive mock tests. It also takes in a `numOfElements` prop it can take 6 or 8, which dictates how many elements in the pagination we wish to render inluding the navigation buttons, by default it is set to 8. 
+
+    `Pagination.PreviousButton` represents the backwards navigation element. It has a default label of `Previous page` but it can also receive a `label` prop to override the default one. It can receive an onClick prop to override its default behaviour in case some logic or validation needs to be applied before going to the next page. It is automatically disabled while the user is viewing the first page.
+
+    `Pagination.NextButton` represents the forwards navigation element. It has a default label of `Next page` but it can also receive a `label` prop to override the default one. It can receive an onClick prop to override its default behaviour in case some logic or validation needs to be applied before going to the next page. It is automatically disabled while the user is viewing the last page.
+
+    `Pagination.Pages` holds the list of pages and the action icon to trigger the popover, where we render all the page numbers.
+
+    Below is an example of passing in a number to the `numOfPages` prop that will render 6 pages the `numOfElements` prop is set to 8 by default. So the user will see two navigation buttons, an action button to trigger the popoever and five page numbers.
+
+    <CodeBlock live={true} preview={true} code={`
+      <Pagination
+      numOfPages={6}
+      colorScheme={{ base: 'purple2', accent: 'purple1'}}
+      css={{ display: 'flex' }}
+    >
+      <Pagination.PreviousButton />
+      <Pagination.Pages />
+      <Pagination.NextButton />
+    </Pagination>
+    `} language={"tsx"} />
+
+    Below is an example of passing `numOfElements` prop and setting it to 6. The user will see two navigation buttons, an action button to trigger the popoever and three page numbers.
+
+    <CodeBlock live={true} preview={true} code={`
+      <Pagination
+      numOfPages={6}
+      numOfElements={6}
+      colorScheme={{ base: 'grey2', accent: 'blue1'}}
+      css={{ display: 'flex' }}
+    >
+      <Pagination.PreviousButton />
+      <Pagination.Pages />
+      <Pagination.NextButton />
+    </Pagination>
+    `} language={"tsx"} />
+
+    Below is an example of the mock test variation of the `Pagination` component were we use `mockTestQuestions` instead of `numOfPages` to render the page numbers.
+    
+    <CodeBlock live={true} preview={true} code={`
+      <Pagination
+      colorScheme={{ base: 'grey2', accent: 'blue1'}}
+      css={{ display: 'flex' }}
+      mockTestQuestions = {[{questionNumber: 1, isCompleted: false},{questionNumber: 2, isCompleted: false}, {questionNumber: 3, isCompleted: false}, {questionNumber: 4, isCompleted: false, isDisabled: true},{questionNumber: 5, isCompleted: true}]}
+    >
+      <Pagination.PreviousButton />
+      <Pagination.Pages />
+      <Pagination.NextButton />
+    </Pagination>
+    `} language={"tsx"} /> 
+    
+
+     ## API Reference
+
+
+      <ComponentProps component="Pagination" />
+
+
+      <ComponentProps component="Pagination.PreviousButton" />
+
+
+      <ComponentProps component="Pagination.Pages" />
+
+
+      <ComponentProps component="Pagination.NextButton" />
+
+
   - title: Visual
     content: >-
       ## Structure

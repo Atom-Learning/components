@@ -1,18 +1,21 @@
 import * as React from 'react'
 
 import { ColorScheme, TcolorScheme } from '../../experiments/color-scheme'
+import { CSS } from '../../stitches'
 import { Box } from '..'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
-import { CSS } from '../../stitches'
+import { mockTestQuestions, numOfElements } from './types'
 
 interface PaginationProps {
-  numOfPages: number
-  onPageChange: (pageNumber: number) => void
-  colorScheme: TcolorScheme
-  css: CSS
+  numOfPages?: number
+  colorScheme?: TcolorScheme
+  onPageChange?: (pageNumber: number) => void
+  css?: CSS
+  numOfElements?: numOfElements
+  mockTestQuestions?: mockTestQuestions[]
 }
 
 type PaginationType = React.FC<PaginationProps> & {
@@ -26,12 +29,19 @@ export const Pagination: PaginationType = ({
   onPageChange,
   colorScheme,
   css,
+  numOfElements = 8,
+  mockTestQuestions = [],
   children
 }) => {
   return (
     <ColorScheme {...colorScheme}>
       <Box css={css}>
-        <PaginationProvider numOfPages={numOfPages} onPageChange={onPageChange}>
+        <PaginationProvider
+          numOfPages={numOfPages}
+          onPageChange={onPageChange}
+          numOfElements={numOfElements}
+          mockTestQuestions={mockTestQuestions}
+        >
           {children}
         </PaginationProvider>
       </Box>

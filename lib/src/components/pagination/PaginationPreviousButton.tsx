@@ -9,12 +9,13 @@ import { usePagination } from './pagination-context/PaginationContext'
 export const PaginationPreviousButton: React.FC<{
   onClick?: (callback: () => void) => void
   css?: CSS
-}> = ({ onClick, css }) => {
+  label?: string
+}> = ({ onClick, css, label = 'Previous page' }) => {
   const { goToPreviousPage, currentPage } = usePagination()
 
   const handleClick = () => {
     if (onClick) {
-      onClick(goToPreviousPage)
+      return onClick(goToPreviousPage)
     }
     goToPreviousPage?.()
   }
@@ -22,11 +23,17 @@ export const PaginationPreviousButton: React.FC<{
   return (
     <ActionIcon
       hasTooltip={false}
+      label={label}
       size="md"
       theme="neutral"
       onClick={handleClick}
-      css={css}
       disabled={currentPage === 1}
+      css={{
+        '&:disabled': {
+          opacity: '0.4'
+        },
+        ...css
+      }}
     >
       <Icon is={ChevronLeft} />
     </ActionIcon>
