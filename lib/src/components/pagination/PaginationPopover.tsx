@@ -19,7 +19,7 @@ export const PaginationPopover = () => {
           hasTooltip={false}
           size="md"
           theme="neutral"
-          aria-label="trigger"
+          label="trigger"
         >
           <Icon is={Ellypsis} />
         </ActionIcon>

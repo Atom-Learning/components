@@ -14,12 +14,19 @@ const mockTestQuestions = [
   { questionNumber: 7, isCompleted: true, isDisabled: true }
 ]
 
-const PaginationComponent = ({ numOfPages }: { numOfPages: number }) => {
+const PaginationComponent = ({
+  numOfPages,
+  onPageChange
+}: {
+  numOfPages: number
+  onPageChange?: (pageNumber: number) => void
+}) => {
   return (
     <Pagination
       numOfPages={numOfPages}
       colorScheme={{ base: 'purple2', accent: 'purple1' }}
       css={{ display: 'flex' }}
+      onPageChange={onPageChange}
     >
       <Pagination.PreviousButton />
       <Pagination.Pages />
@@ -78,12 +85,18 @@ describe('Pagination component', () => {
   })
 
   it('can change the current page by clicking on a page button', async () => {
-    await render(<PaginationComponent numOfPages={6} />)
+    const pageChangeSpy = jest.fn()
+    await render(
+      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+    )
 
     expect(await screen.findByText(1)).toBeVisible()
     fireEvent.click(screen.getByRole('button', { name: '2' }))
 
-    // we need a way to get the current page
+    // We don't need to get the current page here as that is out of scope of this component
+    // We however do need to check why this function is being called twice instead of once.
+    // Fixing that will make this test pass
+    expect(pageChangeSpy).toHaveBeenNthCalledWith(1, 2)
   })
 
   it.skip('opens the popover when the trigger is clicked', async () => {
@@ -95,12 +108,11 @@ describe('Pagination component', () => {
     // need a way to grab the trigger icon to check the popover appears, the tried to add a label so we could grab it still didn't work
   })
 
-  it.skip('has no programmatically detectable a11y issues', async () => {
+  it('has no programmatically detectable a11y issues', async () => {
     const { container } = await render(<PaginationComponent numOfPages={6} />)
 
     expect(await screen.findByText(1)).toBeVisible()
 
-    // errors with a violation found on $('button[aria-haspopup="dialog"]') ('"Buttons must have discernible text (button-name)"')
     expect(
       await waitFor(() => axe(container), { timeout: 5000 })
     ).toHaveNoViolations()
