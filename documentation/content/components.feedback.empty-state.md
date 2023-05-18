@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      Empty states are messages that provide an explanation of an interface
-      in absence of content.
+      Empty states are messages that provide an explanation of an interface in
+      absence of content.
 
 
       `EmptyState` exports a number of components that can be composed together to create a message. The message can include Title and/or Body and sometimes they appear together with an illustration and actionable buttons. There are 5 different size variants of `EmptyState` ( 'xs', 'sm', 'md', 'lg' and 'xl').
@@ -179,8 +179,6 @@ tabs:
       * Improve usability.
 
 
-
-
       **Examples of use:**
 
 
@@ -224,13 +222,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![dos and donts 1](/assets/images/09-empty-state-do-s-and-dont-s-1.png "dos and donts 1")
-
-
-      ![dos and donts 2](/assets/images/10-empty-state-do-s-and-dont-s-2.png "dos and donts 2")
-
-
-      ![dos and donts 3](/assets/images/11-empty-state-do-s-and-dont-s-3.png "dos and donts 3")
+      <DosAndDonts items={[{"image":"/assets/images/empty-state-dos-and-donts-01.svg","type":"do","description":"Include a relevant call to action for a possible next step."},{"image":"/assets/images/empty-state-dos-and-donts-02.svg","type":"dont","description":"Include too many primary CTA buttons on one page."},{"image":"/assets/images/empty-state-dos-and-donts-03.svg","type":"do","description":"Limit the number of words in the message as much as possible."},{"image":"/assets/images/empty-state-dos-and-donts-04.svg","type":"avoid","description":"Using negative tone for images or message. Choose an image that has neutral tone."},{"image":"/assets/images/empty-state-dos-and-donts-05.svg","type":"do","description":"Use sentence case for messages and no punctuation on Titles."},{"image":"/assets/images/empty-state-dos-and-donts-06.svg","type":"avoid","description":"Avoid repeating content from the title. "}]} />
 parent: HGItoEG3XVs9DpOLugTot
 uuid: bTeUsimX8-KTOKy95aqze
 nestedSlug:
