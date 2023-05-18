@@ -3,7 +3,7 @@
 exports[`BannerRegular component renders 1`] = `
 @media  {
   :root,
-  .t-cyussq {
+  .t-kgHKNm {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -11,6 +11,7 @@ exports[`BannerRegular component renders 1`] = `
     --default-sizes: [object Object];
     --default-radii: [object Object];
     --default-shadows: [object Object];
+    --default-ratios: [object Object];
     --colors-textForeground: hsl(0, 0%, 12%);
     --colors-textSubtle: hsl(0, 0%, 33%);
     --colors-textPlaceholder: hsl(0, 0%, 46%);
@@ -138,6 +139,11 @@ exports[`BannerRegular component renders 1`] = `
     --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
   }
 
   .base-purple1 {
@@ -272,10 +278,6 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-llIiIE-cRYaBy-containerSize-sm {
-    margin-right: var(--space-6);
-  }
-
   .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
@@ -293,9 +295,8 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-exzTSD-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-    margin-right: var(--space-6);
   }
 
   .c-bDwMAO-fgLDMq-emphasis-highContrast {
@@ -354,12 +355,6 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-llIiIE-gMxKqK-containerSize-md {
-      margin-right: 0;
-    }
-}
-
-@media (min-width: 800px) {
     .c-dyvMgW-flAohk-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
@@ -383,9 +378,8 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-famHDl-containerSize-md {
+    .c-bDwMAO-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
-      margin-right: 0;
     }
 }
 
@@ -480,12 +474,12 @@ exports[`BannerRegular component renders 1`] = `
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-containerSize-sm c-llIiIE-gMxKqK-containerSize-md"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-exzTSD-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-famHDl-containerSize-md"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -522,7 +516,7 @@ exports[`BannerRegular component renders 1`] = `
 exports[`BannerRegular component renders dismissible variant 1`] = `
 @media  {
   :root,
-  .t-cyussq {
+  .t-kgHKNm {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -530,6 +524,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --default-sizes: [object Object];
     --default-radii: [object Object];
     --default-shadows: [object Object];
+    --default-ratios: [object Object];
     --colors-textForeground: hsl(0, 0%, 12%);
     --colors-textSubtle: hsl(0, 0%, 33%);
     --colors-textPlaceholder: hsl(0, 0%, 46%);
@@ -657,6 +652,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
     --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
   }
 
   .base-purple1 {
@@ -821,10 +821,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-llIiIE-cRYaBy-containerSize-sm {
-    margin-right: var(--space-6);
-  }
-
   .c-dyvMgW-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
@@ -842,9 +838,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-exzTSD-containerSize-sm {
+  .c-bDwMAO-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-    margin-right: var(--space-6);
   }
 
   .c-bDwMAO-fgLDMq-emphasis-highContrast {
@@ -918,12 +913,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-llIiIE-gMxKqK-containerSize-md {
-      margin-right: 0;
-    }
-}
-
-@media (min-width: 800px) {
     .c-dyvMgW-flAohk-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
@@ -947,9 +936,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-famHDl-containerSize-md {
+    .c-bDwMAO-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
-      margin-right: 0;
     }
 }
 
@@ -1040,6 +1028,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
   .c-fkUJsw-bznQva-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
+
+  .c-llIiIE-cRYaBy-cv {
+    margin-right: var(--space-6);
+  }
+
+  .c-bDwMAO-cRYaBy-cv {
+    margin-right: var(--space-6);
+  }
 }
 
 <div>
@@ -1051,12 +1047,12 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-containerSize-sm c-llIiIE-gMxKqK-containerSize-md"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-cv"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-exzTSD-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-famHDl-containerSize-md"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md c-bDwMAO-cRYaBy-cv"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>

@@ -17,7 +17,7 @@ tabs:
       ## Theme
 
 
-      These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral` and `info`. The default is `info`
+      These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral`, `info` and `purple`. The default is `info`
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
@@ -26,6 +26,7 @@ tabs:
         <Badge theme="success">Success</Badge>
         <Badge theme="warning">Warning</Badge>
         <Badge theme="danger">Danger</Badge>
+        <Badge theme="purple">Purple</Badge>
       </Stack>`} language={"tsx"} />
 
 
@@ -116,36 +117,36 @@ tabs:
       ## Color
 
 
-      ![](/assets/images/04-badges-color.png)
+      ![badges color examples](/assets/images/04-badges-color.png "badges color examples")
 
 
-      | Property & Element - State              | Token     | Hex |
+      | Property & Element - State | Token         | Hex |
 
-      | --------------------------------------- | --------- | --- |
+      | -------------------------- | ------------- | --- |
 
-      | Icon & Text - Info              | $blue800  | \#  |
+      | Icon & Text - Info         | $blue800      | \#  |
 
-      | Icon & Text - Neutral           | $grey800  | \#  |
+      | Icon & Text - Neutral      | $grey800      | \#  |
 
-      | Icon & Text - Success           | $successMid  | \#  |
+      | Icon & Text - Success      | $successMid   | \#  |
 
-      | Icon & Text - Danger            | $dangerMid  | \#  |
+      | Icon & Text - Danger       | $dangerMid    | \#  |
 
-      | Icon & Text - Warning           | $warningMid  | \#  |
+      | Icon & Text - Warning      | $warningMid   | \#  |
 
-      | Icon & Text - Purple            | $brandPurpleAccent | \#  |
+      | Icon & Text - Purple       | $purple1000   | \#  |
 
-      | Bg - Info                       | $blue100  | \#  |
+      | Bg - Info                  | $blue100      | \#  |
 
-      | Bg - Neutral                    | $grey200    | \#  |
+      | Bg - Neutral               | $grey200      | \#  |
 
-      | Bg - Success                    | $successLight  | \#  |
+      | Bg - Success               | $successLight | \#  |
 
-      | Bg - Danger                     | $dangerLight | \#  |
+      | Bg - Danger                | $dangerLight  | \#  |
 
-      | Bg - Warning                    | $warningLight  | \#  |
+      | Bg - Warning               | $warningLight | \#  |
 
-      | Bg - Purple                     | $brandPurpleLight (new)| \#  |
+      | Bg - Purple                | $purple200    | \#  |
 parent: HGItoEG3XVs9DpOLugTot
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:

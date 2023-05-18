@@ -6,8 +6,132 @@ links:
   showReportAnIssue: true
 tabs:
   - title: Code
-    content: This component has not been built yet. You can check Visual and Usage
-      for now.
+    content: >-
+      A section message displays a contextual feedback message in a
+      particular section of the page. They’re persistent and nonmodal. It can
+      include a dismiss button, allowing the user to either
+      ignore them or interact with them at any time.
+
+      <CodeBlock live={true} preview={true} code={`<SectionMessage>
+        <SectionMessage.Icon />
+        <SectionMessage.Content>
+          <SectionMessage.Title>Title message</SectionMessage.Title>
+          <SectionMessage.Description>
+            This is the description
+          </SectionMessage.Description>
+        </SectionMessage.Content>
+        <SectionMessage.Dismiss />
+      </SectionMessage>`} language={"tsx"} />
+
+
+      ## Theme
+
+      These are the available `theme`s for this component: `success`, `warning`, `error`, `neutral` and `info`. The default is `info` (due to most frequent context).
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={`
+          <Stack direction="column" css={{ width: 325 }} gap={3}>
+            <SectionMessage theme="error">
+              <SectionMessage.Icon />
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
+              <SectionMessage.Dismiss />
+            </SectionMessage>
+
+            <SectionMessage theme="warning">
+              <SectionMessage.Icon />
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
+              <SectionMessage.Dismiss />
+            </SectionMessage>
+
+            <SectionMessage theme="success">
+              <SectionMessage.Icon />
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
+              <SectionMessage.Dismiss />
+            </SectionMessage>
+
+            <SectionMessage theme="info">
+              <SectionMessage.Icon />
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
+              <SectionMessage.Dismiss />
+            </SectionMessage>
+
+            <SectionMessage theme="neutral">
+              <SectionMessage.Icon />
+              <SectionMessage.Content>
+                <SectionMessage.Title>Title message</SectionMessage.Title>
+                <SectionMessage.Description>
+                  This is the description
+                </SectionMessage.Description>
+              </SectionMessage.Content>
+              <SectionMessage.Dismiss />
+            </SectionMessage>
+          </Stack>
+        `} 
+      />
+
+      ## Composition
+
+      `SectionMessage` ships with smaller components to allow for flexibility in creating all kinds of layouts. 
+
+      Note that elements contained within `SectionMessage.Content` will be displayed inline if there is enough space and automatically wrap when there isn't. 
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={`
+          <SectionMessage css={{ width: 500 }}>
+            <SectionMessage.Icon />
+            <SectionMessage.Content>
+              <SectionMessage.Title>Title message</SectionMessage.Title>
+              <SectionMessage.Description>
+                This is the description
+              </SectionMessage.Description>
+            </SectionMessage.Content>
+            <SectionMessage.Actions>
+                <Button size="sm">Button</Button>
+                <Button size="sm" appearance="outline">
+                  Button
+                </Button>
+              </SectionMessage.Actions>
+            <SectionMessage.Dismiss />
+          </SectionMessage>
+        `} 
+      />
+
+
+      ## API Reference
+
+      <ComponentProps component="SectionMessage" />
+      <ComponentProps component="SectionMessage.Icon" />
+      <ComponentProps component="SectionMessage.Content" />
+      <ComponentProps component="SectionMessage.Title" />
+      <ComponentProps component="SectionMessage.Description" />
+      <ComponentProps component="SectionMessage.Actions" />
+      <ComponentProps component="SectionMessage.Dismiss" />
   - title: Visual
     content: >-
       ## Structure

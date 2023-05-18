@@ -269,8 +269,8 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
         tooltipSide={tooltipSide}
       >
         <StyledButton
-          {...remainingProps}
           {...optionalLinkProps}
+          {...remainingProps}
           aria-label={label}
           theme={theme}
           appearance={appearance}

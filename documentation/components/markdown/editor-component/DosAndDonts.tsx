@@ -1,4 +1,11 @@
-import { Image, Text, Grid, Box, Heading } from '@atom-learning/components'
+import {
+  Image,
+  Text,
+  Grid,
+  Box,
+  Heading,
+  Tile
+} from '@atom-learning/components'
 import * as React from 'react'
 
 type TDosAndDontsItemProps = {
@@ -16,7 +23,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({
     type === 'do' ? '$success' : type === 'dont' ? '$danger' : '$warning'
   const typeText = type === 'do' ? 'Do' : type === 'dont' ? "Don't" : 'Avoid'
   return (
-    <Box as="li" css={{ listStyle: 'none' }}>
+    <Tile as="li" css={{ listStyle: 'none' }}>
       <Box
         css={{
           background: '$base2',
@@ -36,7 +43,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({
         {typeText}
       </Heading>
       <Text>{description}</Text>
-    </Box>
+    </Tile>
   )
 }
 
