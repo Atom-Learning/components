@@ -7,10 +7,10 @@ links:
 tabs:
   - title: Code
     content: >-
-      A section message displays a contextual feedback message in a
-      particular section of the page. They’re persistent and nonmodal. It can
-      include a dismiss button, allowing the user to either ignore them or
-      interact with them at any time.
+      A section message displays a contextual feedback message in a particular
+      section of the page. They’re persistent and nonmodal. It can include a
+      dismiss button, allowing the user to either ignore them or interact with
+      them at any time.
 
       <CodeBlock live={true} preview={true} code={`<SectionMessage>
         <SectionMessage.Icon />
@@ -338,16 +338,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![section message dos and donts 1](/assets/images/11-section-message-dos-and-donts.png "section message dos and donts 1")
-
-
-      ![section message dos and donts 2](/assets/images/12-section-message-dos-and-donts.png "section message dos and donts 2")
-
-
-      ![section message dos and donts 3](/assets/images/13-section-message-dos-and-donts.png "section message dos and donts 3")
-
-
-      ![section message dos and donts 4](/assets/images/14-section-message-dos-and-donts.png "section message dos and donts 4")
+      <DosAndDonts items={[{"description":"use for messages that appear after an event takes place, see Toasts.","type":"do","image":"/assets/images/section-message-dos-and-donts-01.svg"},{"image":"/assets/images/section-message-dos-and-donts-02.svg","description":"use for messages with information affecting the whole site, see Banners and Toast.","type":"dont"},{"image":"/assets/images/section-message-dos-and-donts-03.svg","description":"Place the Section message visually closer to the action or section it relates to","type":"do"},{"image":"/assets/images/section-message-dos-and-donts-04.svg","description":"use for smaller contextual messages about a specific part of the UI, see inline messages.","type":"dont"},{"image":"/assets/images/section-message-dos-and-donts-05.svg","type":"do","description":"Keep actions short and simple."},{"image":"/assets/images/section-message-dos-and-donts-06.svg","type":"avoid","description":"In general, avoid using more than two actions."},{"image":"/assets/images/section-message-dos-and-donts-07.svg","type":"do","description":"Place the Section message visually closer to the action or section it relates to"},{"image":"/assets/images/section-message-dos-and-donts-08.svg","type":"dont","description":"Use Section Messages for marketing new products or features. Use Promo banner instead."}]} />
 parent: HGItoEG3XVs9DpOLugTot
 uuid: 0820a98e-0682-4c11-bed0-d6b751d98c7e
 nestedSlug:
