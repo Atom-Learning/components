@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      A component in the shape of a pill providing visual cues to prompt
-      users to enter information or filter content.
+      A component in the shape of a pill providing visual cues to prompt users
+      to enter information or filter content.
 
       `Chip` itself is a primitive. It has no functional logic in itself, however, it is used to provide common styles for all the `Chip`-based components.
 
@@ -380,13 +380,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![chip dos and dont's 1](/assets/images/19-chip-dos-and-dont-s-1.png "chip dos and dont's 1")
-
-
-      ![chip dos and dont's 2](/assets/images/20-chip-dos-and-dont-s-2.png "chip dos and dont's 2")
-
-
-      ![chip dos and dont's 3](/assets/images/21-chip-dos-and-dont-s-3.png "chip dos and dont's 3")
+      <DosAndDonts items={[{"image":"/assets/images/chips-dos-and-donts-01.svg","type":"do","description":"Truncate text when overflowing the max box width of the parent container’s available horizontal space."},{"image":"/assets/images/chips-dos-and-donts-02.svg","type":"dont","description":"Use for status information, tallies or counts. Use badges instead."},{"image":"/assets/images/chips-dos-and-donts-03.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-04.svg","type":"dont","description":"Chips toggle should not present only a single option."},{"image":"/assets/images/chips-dos-and-donts-05.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-06.svg","type":"dont","description":"Mix Input chips and dismissible Filter chips."}]} />
 parent: HGItoEG3XVs9DpOLugTot
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
