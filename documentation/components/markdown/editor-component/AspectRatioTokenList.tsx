@@ -5,7 +5,11 @@ import { TokenList } from './token-list'
 import { DemoBox } from './DemoBox'
 import * as React from 'react'
 
-const AspectRatioExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
+const AspectRatioExample: typeof TokenList.Item = ({
+  token,
+  value,
+  ...rest
+}) => {
   return (
     <TokenList.Item token={token} value={value} {...rest}>
       <DemoBox css={{ aspectRatio: value, width: 'auto' }} />
