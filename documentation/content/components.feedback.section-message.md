@@ -9,8 +9,8 @@ tabs:
     content: >-
       A section message displays a contextual feedback message in a
       particular section of the page. They’re persistent and nonmodal. It can
-      include a dismiss button, allowing the user to either
-      ignore them or interact with them at any time.
+      include a dismiss button, allowing the user to either ignore them or
+      interact with them at any time.
 
       <CodeBlock live={true} preview={true} code={`<SectionMessage>
         <SectionMessage.Icon />
@@ -125,13 +125,7 @@ tabs:
 
       ## API Reference
 
-      <ComponentProps component="SectionMessage" />
-      <ComponentProps component="SectionMessage.Icon" />
-      <ComponentProps component="SectionMessage.Content" />
-      <ComponentProps component="SectionMessage.Title" />
-      <ComponentProps component="SectionMessage.Description" />
-      <ComponentProps component="SectionMessage.Actions" />
-      <ComponentProps component="SectionMessage.Dismiss" />
+      <ComponentProps component="SectionMessage" /> <ComponentProps component="SectionMessage.Icon" /> <ComponentProps component="SectionMessage.Content" /> <ComponentProps component="SectionMessage.Title" /> <ComponentProps component="SectionMessage.Description" /> <ComponentProps component="SectionMessage.Actions" /> <ComponentProps component="SectionMessage.Dismiss" />
   - title: Visual
     content: >-
       ## Structure

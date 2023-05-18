@@ -20,6 +20,7 @@ import { FontFamilyTokenList } from './editor-component/FontFamilyTokenList'
 import { FontSizeTokenList } from './editor-component/FontSizeTokenList'
 import { RadiusTokenList } from './editor-component/RadiusTokenList'
 import { ShadowTokenList } from './editor-component/ShadowTokenList'
+import { AspectRatioTokenList } from './editor-component/AspectRatioTokenList'
 import { DosAndDonts } from './editor-component/DosAndDonts'
 import { Cards } from './editor-component/Cards'
 
@@ -75,6 +76,7 @@ export const components = {
   FontSizeTokenList,
   RadiusTokenList,
   ShadowTokenList,
+  AspectRatioTokenList,
   DosAndDonts,
   Cards
 }
