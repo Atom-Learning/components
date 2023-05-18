@@ -7,40 +7,50 @@ import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
-import { mockTestQuestions, numOfElements } from './types'
+import { numOfElements, pages } from './types'
+import {
+  RENDER_SIX_ELEMENTS,
+  RENDER_EIGHT_ELEMENTS
+} from './pagination.helpers'
 
 interface PaginationProps {
   numOfPages?: number
   colorScheme?: TcolorScheme
-  onPageChange?: (pageNumber: number) => void
+  onPageChange: (pageNumber: number) => void
   css?: CSS
   numOfElements?: numOfElements
-  mockTestQuestions?: mockTestQuestions[]
+  pages?: pages[]
 }
 
-type PaginationType = React.FC<PaginationProps> & {
+export const Pagination: React.FC<PaginationProps> & {
   PreviousButton: typeof PaginationPreviousButton
   NextButton: typeof PaginationNextButton
   Pages: typeof PaginationPages
-}
-
-export const Pagination: PaginationType = ({
+} = ({
   numOfPages,
   onPageChange,
   colorScheme,
   css,
   numOfElements = 8,
-  mockTestQuestions = [],
+  pages = [],
   children
 }) => {
+  if (
+    numOfElements === undefined &&
+    numOfElements !== (RENDER_SIX_ELEMENTS || RENDER_EIGHT_ELEMENTS)
+  )
+    throw new Error(
+      "The Pagination Component only takes the values 8 or 6 when passing 'numOfElements' as a prop"
+    )
+
   return (
-    <ColorScheme {...colorScheme}>
+    <ColorScheme base="grey1" accent="blue1" {...colorScheme}>
       <Box css={css}>
         <PaginationProvider
           numOfPages={numOfPages}
           onPageChange={onPageChange}
           numOfElements={numOfElements}
-          mockTestQuestions={mockTestQuestions}
+          pages={pages}
         >
           {children}
         </PaginationProvider>

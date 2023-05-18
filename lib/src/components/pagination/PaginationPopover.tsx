@@ -5,12 +5,28 @@ import { ActionIcon, Icon, Popover } from '..'
 import { usePagination } from './pagination-context/PaginationContext'
 import { getPageDetails } from './pagination.helpers'
 import { PaginationPageButton } from './PaginationPageButton'
+import { pages as pageTypes } from './types'
 
-export const PaginationPopover = () => {
-  const { numOfPages, isMockTestVariant, mockTestQuestions } = usePagination()
-  const pages = isMockTestVariant
-    ? mockTestQuestions
-    : Array.from({ length: numOfPages }, (_, i) => i + 1)
+const generateListOfPages = (
+  pages?: pageTypes[],
+  numOfPages?: number
+): pageTypes[] | number[] | [] => {
+  if (pages && pages.length) return pages
+
+  if (numOfPages) {
+    return Array.from({ length: numOfPages }, (_, i) => i + 1)
+  }
+
+  return []
+}
+
+export const PaginationPopover: React.FC<{
+  onClick?: (callback: () => void) => void
+}> = ({ onClick }) => {
+  const { numOfPages, pages: enrichedPages } = usePagination()
+
+  const isEnrichedPages = Boolean(enrichedPages?.length)
+  const pages = generateListOfPages(enrichedPages, numOfPages)
 
   return (
     <Popover>
@@ -19,7 +35,8 @@ export const PaginationPopover = () => {
           hasTooltip={false}
           size="md"
           theme="neutral"
-          label="trigger"
+          label="Open popover pagination"
+          data-testid="popover_trigger"
         >
           <Icon is={Ellypsis} />
         </ActionIcon>
@@ -32,7 +49,7 @@ export const PaginationPopover = () => {
         {pages.map((page) => {
           const [pageNumber, completed, disabled] = getPageDetails(
             page,
-            isMockTestVariant
+            isEnrichedPages
           )
 
           return (
@@ -42,6 +59,7 @@ export const PaginationPopover = () => {
               pageNumber={pageNumber}
               isCompleted={completed}
               isDisabled={disabled}
+              onClick={onClick}
             />
           )
         })}

@@ -79,7 +79,8 @@ export const PaginationPageButton: React.FC<{
   css,
   isPopoverButton = false,
   isCompleted,
-  isDisabled
+  isDisabled,
+  onClick
 }) => {
   const { currentPage, goToPage } = usePagination()
 
@@ -87,11 +88,19 @@ export const PaginationPageButton: React.FC<{
   const currentPageLabel = isButtonSelected ? { 'aria-current': 'page' } : {}
   const isDisabledLabel = { 'aria-disabled': isDisabled }
 
+  const handleClick = () => {
+    if (onClick) {
+      return onClick(() => goToPage(pageNumber))
+    }
+
+    goToPage(pageNumber)
+  }
+
   return (
     <StyledButton
       selected={isButtonSelected}
       size="md"
-      onClick={() => goToPage(pageNumber)}
+      onClick={handleClick}
       css={css}
       popover={isPopoverButton}
       isCompleted={isCompleted}

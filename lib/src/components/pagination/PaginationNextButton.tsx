@@ -11,13 +11,9 @@ export const PaginationNextButton: React.FC<{
   css?: CSS
   label?: string
 }> = ({ onClick, css, label = 'Next page' }) => {
-  const {
-    goToNextPage,
-    currentPage,
-    numOfPages,
-    isMockTestVariant,
-    mockTestQuestions
-  } = usePagination()
+  const { goToNextPage, currentPage, numOfPages, pages } = usePagination()
+
+  const isEnrichedPages = Boolean(pages?.length)
 
   const handleClick = () => {
     if (onClick) {
@@ -34,10 +30,7 @@ export const PaginationNextButton: React.FC<{
       size="md"
       theme="neutral"
       onClick={handleClick}
-      disabled={
-        currentPage ===
-        (isMockTestVariant ? mockTestQuestions?.length : numOfPages)
-      }
+      disabled={currentPage === (isEnrichedPages ? pages?.length : numOfPages)}
       css={{
         '&:disabled': {
           opacity: '0.4'

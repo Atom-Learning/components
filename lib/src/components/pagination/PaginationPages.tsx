@@ -2,54 +2,63 @@ import * as React from 'react'
 
 import { Flex } from '..'
 import { usePagination } from '../pagination/pagination-context/PaginationContext'
-import { getPageDetails } from './pagination.helpers'
+import {
+  generateSliceOfPages,
+  getPageDetails,
+  RENDER_EIGHT_ELEMENTS,
+  shouldTruncate
+} from './pagination.helpers'
 import { PaginationPageButton } from './PaginationPageButton'
 import { PaginationPopover } from './PaginationPopover'
-import { mockTestQuestions, numOfElements } from './types'
+import { numOfElements, pages as pagesType } from './types'
 
 const TRUNCATED_THRESHOLD = 4
 
 const numOfPagesToRender = (
   currentPage: number,
-  listOfPages: number[] | mockTestQuestions[],
-  numOfElements: numOfElements
-): number[] | mockTestQuestions[] => {
-  const isMaxNumOfEl = numOfElements === 8
+  listOfPages: number[] | pagesType[],
+  numOfElements?: numOfElements
+): number[] | pagesType[] => {
+  // We use this boolean to decide how much of the list of pages we have to slice
+  const isMaxNumOfEl = numOfElements === RENDER_EIGHT_ELEMENTS
 
+  // If the current page is less than the truncated threshold minus 1
   if (currentPage < TRUNCATED_THRESHOLD - 1) {
-    return listOfPages.slice(0, isMaxNumOfEl ? 4 : 2)
+    return listOfPages.slice(0, isMaxNumOfEl ? 4 : 2) // Return a portion of the list of pages
   } else if (currentPage >= listOfPages.length - (isMaxNumOfEl ? 3 : 1)) {
+    // Return a portion of the last pages in the list of pages
     return listOfPages.slice(isMaxNumOfEl ? -4 : -2)
   }
-
+  // Return a portion of the list based of the current page and if we are rendering max number of elements (8)
   return listOfPages.slice(
     currentPage + (isMaxNumOfEl ? -3 : -2),
     currentPage + (isMaxNumOfEl ? 1 : 0)
   )
 }
 
-export const PaginationPages: React.FC = () => {
+export const PaginationPages: React.FC<{
+  onClick?: (callback: () => void) => void
+}> = ({ onClick }) => {
   const {
     numOfPages,
     currentPage,
     numOfElements,
-    mockTestQuestions,
-    isMockTestVariant
+    pages: enrichedPages
   } = usePagination()
 
-  const lastMockTestQuestion = isMockTestVariant && mockTestQuestions.slice(-1)
+  const isEnrichedPages = Boolean(enrichedPages?.length)
+  const lastEnrichedPage = isEnrichedPages && enrichedPages?.slice(-1)
 
-  const lastQuestionNumber = lastMockTestQuestion?.[0]?.questionNumber
-  const isLastQuestionCompleted = lastMockTestQuestion?.[0]?.isCompleted
-  const isLastQuesitonDisabled = lastMockTestQuestion?.[0]?.isDisabled
+  const lastPageNumber = lastEnrichedPage?.[0]?.pageNumber
+  const isLastPageCompleted = lastEnrichedPage?.[0]?.isCompleted
+  const isLastPageDisabled = lastEnrichedPage?.[0]?.isDisabled
 
-  const listOfPages = isMockTestVariant
-    ? mockTestQuestions.slice(0, mockTestQuestions.length - 1)
-    : Array.from({ length: numOfPages - 1 }, (_, i) => i + 1)
-
-  const isTruncated = isMockTestVariant
-    ? mockTestQuestions?.length > TRUNCATED_THRESHOLD
-    : numOfPages > TRUNCATED_THRESHOLD
+  const listOfPages = generateSliceOfPages(enrichedPages, numOfPages)
+  const isTruncated = shouldTruncate(
+    TRUNCATED_THRESHOLD,
+    enrichedPages,
+    numOfPages
+  )
 
   const pages = isTruncated
     ? numOfPagesToRender(currentPage, listOfPages, numOfElements)
@@ -57,10 +66,10 @@ export const PaginationPages: React.FC = () => {
 
   return (
     <Flex css={{ gap: '$1' }}>
-      {pages.map((page) => {
+      {pages?.map((page) => {
         const [pageNumber, completed, disabled] = getPageDetails(
           page,
-          isMockTestVariant
+          isEnrichedPages
         )
 
         return (
@@ -69,14 +78,16 @@ export const PaginationPages: React.FC = () => {
             pageNumber={pageNumber}
             isCompleted={completed}
             isDisabled={disabled}
+            onClick={onClick}
           />
         )
       })}
-      {isTruncated && <PaginationPopover />}
+      {isTruncated && <PaginationPopover onClick={onClick} />}
       <PaginationPageButton
-        pageNumber={isMockTestVariant ? lastQuestionNumber : numOfPages}
-        isCompleted={isLastQuestionCompleted}
-        isDisabled={isLastQuesitonDisabled}
+        pageNumber={isEnrichedPages ? lastPageNumber : numOfPages}
+        isCompleted={isLastPageCompleted}
+        isDisabled={isLastPageDisabled}
+        onClick={onClick}
       />
     </Flex>
   )

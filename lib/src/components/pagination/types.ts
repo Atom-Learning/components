@@ -1,5 +1,5 @@
-export type mockTestQuestions = {
-  questionNumber: number
+export type pages = {
+  pageNumber: number
   isCompleted: boolean
   isDisabled?: boolean
 }
