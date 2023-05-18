@@ -378,13 +378,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![toggle group do's and don'ts 01](/assets/images/toggle-group-13-do-s-and-dont-s-01.png "toggle group do's and don'ts 01")
-
-
-      ![toggle group do's and don'ts 02](/assets/images/toggle-group-15-do-s-and-dont-s-02.png "toggle group do's and don'ts 03")
-
-
-      ![toggle group do's and don'ts 03](/assets/images/toggle-group-14-do-s-and-dont-s-03.png "toggle group do's and don'ts 03")
+      <DosAndDonts items={[{"type":"do","description":"Wrap button groups onto rows for “Spaced” variant.","image":"/assets/images/toggle-group-do-and-dont-01.svg"},{"image":"/assets/images/toggle-group-do-and-dont-02.svg","type":"dont","description":"Wrap button groups onto rows for “Merged” variant. Instead display them vertically."},{"image":"/assets/images/toggle-group-do-and-dont-03.svg","type":"do","description":"Start with a capital letter and use sentence case, but don’t add full stops."},{"image":"/assets/images/toggle-group-do-and-dont-04.svg","type":"avoid","description":"Wrap button group label text onto 2 lines."},{"image":"/assets/images/toggle-group-do-and-dont-05.svg","type":"do","description":"Use multiple groups when you want similar actions to be grouped together and separated from others."},{"description":"Mix icons and text.","image":"/assets/images/toggle-group-do-and-dont-06.svg","type":"dont"}]} />
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: owSewZQY17sWMc7HPp134
 nestedSlug:
