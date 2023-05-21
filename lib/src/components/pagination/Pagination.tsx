@@ -3,23 +3,23 @@ import * as React from 'react'
 import { ColorScheme, TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
 import { Box } from '..'
+import {
+  RENDER_EIGHT_ELEMENTS,
+  RENDER_SIX_ELEMENTS
+} from './pagination.helpers'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
-import { numOfElements, pages } from './types'
-import {
-  RENDER_SIX_ELEMENTS,
-  RENDER_EIGHT_ELEMENTS
-} from './pagination.helpers'
+import { pages, visibleElementsCount } from './types'
 
 interface PaginationProps {
-  numOfPages?: number
+  selectedPage?: number
+  onSelectedPageChange: (pageNumber: number) => void
   colorScheme?: TcolorScheme
-  onPageChange: (pageNumber: number) => void
   css?: CSS
-  numOfElements?: numOfElements
-  pages?: pages[]
+  visibleElementsCount?: visibleElementsCount
+  pages: pages[] | number
 }
 
 export const Pagination: React.FC<PaginationProps> & {
@@ -27,30 +27,37 @@ export const Pagination: React.FC<PaginationProps> & {
   NextButton: typeof PaginationNextButton
   Pages: typeof PaginationPages
 } = ({
-  numOfPages,
-  onPageChange,
+  onSelectedPageChange,
+  selectedPage,
   colorScheme,
   css,
-  numOfElements = 8,
-  pages = [],
+  visibleElementsCount = 6,
+  pages,
   children
 }) => {
   if (
-    numOfElements === undefined &&
-    numOfElements !== (RENDER_SIX_ELEMENTS || RENDER_EIGHT_ELEMENTS)
+    visibleElementsCount === undefined &&
+    visibleElementsCount !== (RENDER_SIX_ELEMENTS || RENDER_EIGHT_ELEMENTS)
   )
     throw new Error(
-      "The Pagination Component only takes the values 8 or 6 when passing 'numOfElements' as a prop"
+      "The Pagination Component only takes the values 8 or 6 when passing 'visibleElementsCount' as a prop"
     )
+
+  // Throw error if pages is 0 or undefined
+  if (!pages) {
+    throw new Error(
+      "The Pagination Component requires the 'page' prop it can be a numerical value above 0 or an array of objects with a 'pageNumber' property"
+    )
+  }
 
   return (
     <ColorScheme base="grey1" accent="blue1" {...colorScheme}>
       <Box css={css}>
         <PaginationProvider
-          numOfPages={numOfPages}
-          onPageChange={onPageChange}
-          numOfElements={numOfElements}
+          onSelectedPageChange={onSelectedPageChange}
+          visibleElementsCount={visibleElementsCount}
           pages={pages}
+          selectedPage={selectedPage}
         >
           {children}
         </PaginationProvider>

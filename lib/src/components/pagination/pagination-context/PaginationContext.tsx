@@ -1,12 +1,12 @@
 import * as React from 'react'
 
-import { pages, numOfElements } from '../types'
+import { pages, visibleElementsCount } from '../types'
 
 interface PaginationProviderProps {
-  numOfPages?: number
-  onPageChange: (pageNumber: number) => void
-  numOfElements?: numOfElements
-  pages?: pages[]
+  onSelectedPageChange: (pageNumber: number) => void
+  selectedPage?: number
+  visibleElementsCount?: visibleElementsCount
+  pages: pages[] | number
 }
 
 type Context = {
@@ -14,9 +14,8 @@ type Context = {
   goToPreviousPage: () => void
   goToNextPage: () => void
   currentPage: number
-  numOfPages?: number
-  numOfElements?: numOfElements
-  pages?: pages[]
+  visibleElementsCount?: visibleElementsCount
+  pages: pages[] | number
 }
 
 const PaginationContext = React.createContext<Context>({
@@ -24,42 +23,40 @@ const PaginationContext = React.createContext<Context>({
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 1,
-  numOfPages: 0,
-  numOfElements: 8,
+  visibleElementsCount: 8,
   pages: []
 })
 
 export const PaginationProvider: React.FC<PaginationProviderProps> = ({
-  numOfPages,
-  onPageChange,
-  numOfElements,
+  onSelectedPageChange,
+  selectedPage,
+  visibleElementsCount,
   pages,
   children
 }) => {
-  const [currentPage, setCurrentPage] = React.useState(1)
-  const isEnrichedPages = Boolean(pages?.length)
+  const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
 
-  React.useEffect(() => {
-    onPageChange?.(currentPage)
-  }, [currentPage, onPageChange])
+  const currentPage = selectedPage || internalCurrentPage
 
-  const goToPage = (index: number) => {
-    setCurrentPage(index)
+  const goToPage = (pageNumber: number) => {
+    setInternalCurrentPage(pageNumber)
+    onSelectedPageChange?.(pageNumber)
   }
 
   const goToPreviousPage = () => {
-    if (currentPage === 1) {
+    if (internalCurrentPage === 1) {
       return
     }
-    setCurrentPage((currentPage) => currentPage - 1)
+    goToPage(internalCurrentPage - 1)
   }
 
   const goToNextPage = () => {
-    if (currentPage === (isEnrichedPages ? pages?.length : numOfPages)) {
+    const isNumber = typeof pages === 'number'
+
+    if (internalCurrentPage === (isNumber ? pages : pages?.length)) {
       return
     }
-
-    setCurrentPage((currentPage) => currentPage + 1)
+    goToPage(internalCurrentPage + 1)
   }
 
   return (
@@ -69,8 +66,7 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
         goToPreviousPage,
         goToPage,
         currentPage,
-        numOfPages,
-        numOfElements,
+        visibleElementsCount,
         pages
       }}
     >
