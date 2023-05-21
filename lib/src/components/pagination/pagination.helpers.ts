@@ -1,34 +1,15 @@
 import { pages } from './types'
 
-export const getPageDetails = (
-  page: pages | number,
-  isEnrichedPage: boolean
-): [number, boolean, boolean] => {
-  let pageNum
-  let completed = false
-  let disabled = false
-
-  if (isEnrichedPage) {
-    const { pageNumber, isCompleted, isDisabled } = page as pages
-    pageNum = pageNumber
-    completed = isCompleted
-    disabled = Boolean(isDisabled)
-    return [pageNum, completed, disabled]
-  }
-
-  return [page as number, completed, disabled]
-}
-
 export const generateSliceOfPages = (
-  pages?: pages[],
-  numOfPages?: number
+  pages: pages[] | number
 ): pages[] | number[] | [] => {
-  if (pages?.length) {
+  const isArray = Array.isArray(pages)
+  if (isArray) {
     return pages.slice(0, pages.length - 1)
   }
 
-  if (numOfPages) {
-    return Array.from({ length: numOfPages - 1 }, (_, i) => i + 1)
+  if (!isArray) {
+    return Array.from({ length: pages - 1 }, (_, i) => ({ pageNumber: i + 1 }))
   }
 
   return []
@@ -36,15 +17,15 @@ export const generateSliceOfPages = (
 
 export const shouldTruncate = (
   truncateThreshold: number,
-  pages?: pages[],
-  numOfPages?: number
+  pages: pages[] | number
 ): boolean => {
-  if (pages?.length) {
+  const isArray = Array.isArray(pages)
+  if (isArray) {
     return pages.length > truncateThreshold
   }
 
-  if (numOfPages) {
-    return numOfPages > truncateThreshold
+  if (!isArray) {
+    return pages > truncateThreshold
   }
   return false
 }

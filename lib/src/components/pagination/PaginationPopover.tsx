@@ -3,18 +3,15 @@ import React from 'react'
 
 import { ActionIcon, Icon, Popover } from '..'
 import { usePagination } from './pagination-context/PaginationContext'
-import { getPageDetails } from './pagination.helpers'
-import { PaginationPageButton } from './PaginationPageButton'
+import { PaginationItem } from './PaginationItem'
 import { pages as pageTypes } from './types'
 
-const generateListOfPages = (
-  pages?: pageTypes[],
-  numOfPages?: number
-): pageTypes[] | number[] | [] => {
-  if (pages && pages.length) return pages
+const generateListOfPages = (pages: pageTypes[] | number): pageTypes[] | [] => {
+  const isArray = Array.isArray(pages)
+  if (isArray) return pages
 
-  if (numOfPages) {
-    return Array.from({ length: numOfPages }, (_, i) => i + 1)
+  if (!isArray) {
+    return Array.from({ length: pages }, (_, i) => ({ pageNumber: i + 1 }))
   }
 
   return []
@@ -23,10 +20,9 @@ const generateListOfPages = (
 export const PaginationPopover: React.FC<{
   onClick?: (callback: () => void) => void
 }> = ({ onClick }) => {
-  const { numOfPages, pages: enrichedPages } = usePagination()
+  const { pages } = usePagination()
 
-  const isEnrichedPages = Boolean(enrichedPages?.length)
-  const pages = generateListOfPages(enrichedPages, numOfPages)
+  const paginationItems = generateListOfPages(pages)
 
   return (
     <Popover>
@@ -46,19 +42,16 @@ export const PaginationPopover: React.FC<{
         showCloseButton={false}
         css={{ p: '$4', display: 'flex', flexWrap: 'wrap', gap: '$1' }}
       >
-        {pages.map((page) => {
-          const [pageNumber, completed, disabled] = getPageDetails(
-            page,
-            isEnrichedPages
-          )
+        {paginationItems.map((page) => {
+          const { pageNumber, isCompleted, isDisabled } = page
 
           return (
-            <PaginationPageButton
+            <PaginationItem
               key={pageNumber}
               isPopoverButton={true}
               pageNumber={pageNumber}
-              isCompleted={completed}
-              isDisabled={disabled}
+              isCompleted={isCompleted}
+              isDisabled={isDisabled}
               onClick={onClick}
             />
           )

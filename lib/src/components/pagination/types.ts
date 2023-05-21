@@ -1,6 +1,6 @@
 export type pages = {
   pageNumber: number
-  isCompleted: boolean
+  isCompleted?: boolean
   isDisabled?: boolean
 }
-export type numOfElements = 6 | 8
+export type visibleElementsCount = 6 | 8

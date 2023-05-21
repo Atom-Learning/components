@@ -11,15 +11,14 @@ export const PaginationNextButton: React.FC<{
   css?: CSS
   label?: string
 }> = ({ onClick, css, label = 'Next page' }) => {
-  const { goToNextPage, currentPage, numOfPages, pages } = usePagination()
+  const { goToNextPage, currentPage, pages } = usePagination()
 
-  const isEnrichedPages = Boolean(pages?.length)
+  const isNumber = typeof pages === 'number'
 
   const handleClick = () => {
     if (onClick) {
       return onClick(goToNextPage)
     }
-
     goToNextPage?.()
   }
 
@@ -30,7 +29,7 @@ export const PaginationNextButton: React.FC<{
       size="md"
       theme="neutral"
       onClick={handleClick}
-      disabled={currentPage === (isEnrichedPages ? pages?.length : numOfPages)}
+      disabled={currentPage === (isNumber ? pages : pages?.length)}
       css={{
         '&:disabled': {
           opacity: '0.4'

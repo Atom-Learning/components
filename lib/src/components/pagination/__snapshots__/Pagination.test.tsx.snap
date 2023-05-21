@@ -421,14 +421,12 @@ exports[`Pagination component renders 1`] = `
       >
         <button
           aria-current="page"
-          aria-disabled="false"
           class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md c-llBIre-hpqEAt-selected-true"
           type="button"
         >
           1
         </button>
         <button
-          aria-disabled="false"
           class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
           type="button"
         >
@@ -916,14 +914,12 @@ exports[`Pagination component renders when an array of pages is passed in as a p
       >
         <button
           aria-current="page"
-          aria-disabled="false"
           class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md c-llBIre-hpqEAt-selected-true"
           type="button"
         >
           1
         </button>
         <button
-          aria-disabled="false"
           class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
           type="button"
         >
