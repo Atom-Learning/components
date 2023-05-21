@@ -67,7 +67,7 @@ const Dot = styled(Box, {
   }
 })
 
-export const PaginationPageButton: React.FC<{
+export const PaginationItem: React.FC<{
   pageNumber: number
   css?: CSS
   isPopoverButton?: boolean
