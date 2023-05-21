@@ -10,29 +10,29 @@ import {
 } from '@testing-library/react'
 import { axe } from 'jest-axe'
 
-const enrichedPages = [
+const arrayOfPages = [
   { pageNumber: 1, isCompleted: false },
   { pageNumber: 2, isCompleted: false },
   { pageNumber: 3, isCompleted: false },
   { pageNumber: 4, isCompleted: false },
   { pageNumber: 5, isCompleted: false },
-  { pageNumber: 6, isCompleted: false },
-  { pageNumber: 7, isCompleted: true, isDisabled: true }
+  { pageNumber: 6, isCompleted: true },
+  { pageNumber: 7, isCompleted: false, isDisabled: true }
 ]
 
 const PaginationComponent = ({
-  numOfPages,
-  onPageChange
+  pages,
+  onSelectedPageChange
 }: {
-  numOfPages: number
-  onPageChange: (pageNumber: number) => void
+  pages: number
+  onSelectedPageChange: (pageNumber: number) => void
 }) => {
   return (
     <Pagination
-      numOfPages={numOfPages}
+      pages={pages}
       colorScheme={{ base: 'purple2', accent: 'purple1' }}
       css={{ display: 'flex' }}
-      onPageChange={onPageChange}
+      onSelectedPageChange={onSelectedPageChange}
     >
       <Pagination.PreviousButton />
       <Pagination.Pages />
@@ -42,16 +42,16 @@ const PaginationComponent = ({
 }
 
 const PaginationComponentWithEnrichedPages = ({
-  onPageChange
+  onSelectedPageChange
 }: {
-  onPageChange: (pageNumber: number) => void
+  onSelectedPageChange: (pageNumber: number) => void
 }) => {
   return (
     <Pagination
       colorScheme={{ base: 'purple2', accent: 'purple1' }}
       css={{ display: 'flex' }}
-      pages={enrichedPages}
-      onPageChange={onPageChange}
+      pages={arrayOfPages}
+      onSelectedPageChange={onSelectedPageChange}
     >
       <Pagination.PreviousButton />
       <Pagination.Pages />
@@ -68,7 +68,7 @@ describe('Pagination component', () => {
 
   it('renders', async () => {
     const { container } = await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -76,9 +76,11 @@ describe('Pagination component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders the enriched pages variant', async () => {
+  it('renders when an array of pages is passed in as a prop', async () => {
     const { container } = await render(
-      <PaginationComponentWithEnrichedPages onPageChange={pageChangeSpy} />
+      <PaginationComponentWithEnrichedPages
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -88,22 +90,32 @@ describe('Pagination component', () => {
 
   it('renders the previous button as disabled when on the first page', async () => {
     await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
+
+    expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
 
     expect(screen.getByRole('button', { name: 'Previous page' })).toBeDisabled()
   })
 
   it('renders the Next button as disabled when on the last page', async () => {
     await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
 
     fireEvent.click(screen.getByRole('button', { name: '6' }))
+
+    expect(screen.getByRole('button', { name: '6' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
 
     expect(screen.getByRole('button', { name: 'Next page' })).toBeDisabled()
   })
@@ -111,7 +123,7 @@ describe('Pagination component', () => {
   it('can change the current page by clicking on a page button', async () => {
     const pageChangeSpy = jest.fn()
     await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -134,7 +146,7 @@ describe('Pagination component', () => {
 
   it('opens the popover when the trigger is clicked', async () => {
     await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -146,9 +158,9 @@ describe('Pagination component', () => {
     expect(within(dialog).getByText('3')).toBeVisible()
   })
 
-  it('renders no popover trigger when we have 4 or less numOfPages', async () => {
+  it('renders no popover trigger when we have 4 or less pages', async () => {
     await render(
-      <PaginationComponent numOfPages={4} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={4} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -158,7 +170,9 @@ describe('Pagination component', () => {
 
   it('can render a page button as disabled', async () => {
     await render(
-      <PaginationComponentWithEnrichedPages onPageChange={pageChangeSpy} />
+      <PaginationComponentWithEnrichedPages
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -166,9 +180,29 @@ describe('Pagination component', () => {
     expect(screen.getByRole('button', { name: '7' })).toBeDisabled()
   })
 
+  it("throws an error when 0 is passed in as 'pages' prop", async () => {
+    const pageChangeSpy = jest.fn()
+    expect(() =>
+      render(
+        <Pagination
+          colorScheme={{ base: 'purple2', accent: 'purple1' }}
+          css={{ display: 'flex' }}
+          onSelectedPageChange={pageChangeSpy}
+          pages={0}
+        >
+          <Pagination.PreviousButton />
+          <Pagination.Pages />
+          <Pagination.NextButton />
+        </Pagination>
+      )
+    ).toThrow(
+      "The Pagination Component requires the 'page' prop it can be a numerical value above 0 or an array of objects with a 'pageNumber' property"
+    )
+  })
+
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = await render(
-      <PaginationComponent numOfPages={6} onPageChange={pageChangeSpy} />
+      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
     )
 
     expect(await screen.findByText(1)).toBeVisible()

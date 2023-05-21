@@ -435,20 +435,6 @@ exports[`Pagination component renders 1`] = `
           2
         </button>
         <button
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          3
-        </button>
-        <button
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          4
-        </button>
-        <button
           aria-controls="radix-0"
           aria-expanded="false"
           aria-haspopup="dialog"
@@ -509,7 +495,7 @@ exports[`Pagination component renders 1`] = `
 </div>
 `;
 
-exports[`Pagination component renders the enriched pages variant 1`] = `
+exports[`Pagination component renders when an array of pages is passed in as a prop 1`] = `
 @media  {
   :root,
   .t-kgHKNm {
@@ -798,21 +784,6 @@ exports[`Pagination component renders the enriched pages variant 1`] = `
       animation-name: k-fvyGIa;
     }
 }
-
-  .c-kYReMo {
-    border-radius: var(--radii-round);
-    height: 4px;
-    width: 4px;
-    background: var(--colors-accent9);
-  }
-
-  .c-kYReMo:hover {
-    background: var(--colors-accent10);
-  }
-
-  .c-kYReMo:focus {
-    background: var(--colors-accent9);
-  }
 }
 
 @media  {
@@ -850,15 +821,6 @@ exports[`Pagination component renders the enriched pages variant 1`] = `
 
   .c-iKnjyA-kUaMfZ-size-md {
     max-width: 400px;
-  }
-
-  .c-llBIre-dyAWok-isCompleted-true {
-    font-weight: 600;
-    color: var(--colors-accent9) !important;
-  }
-
-  .c-llBIre-dyAWok-isCompleted-true:hover {
-    color: var(--colors-accent10) !important;
   }
 }
 
@@ -968,20 +930,6 @@ exports[`Pagination component renders the enriched pages variant 1`] = `
           2
         </button>
         <button
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          3
-        </button>
-        <button
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          4
-        </button>
-        <button
           aria-controls="radix-1"
           aria-expanded="false"
           aria-haspopup="dialog"
@@ -1016,14 +964,11 @@ exports[`Pagination component renders the enriched pages variant 1`] = `
         </button>
         <button
           aria-disabled="true"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md c-llBIre-dyAWok-isCompleted-true"
+          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
           disabled=""
           type="button"
         >
           7
-          <div
-            class="c-PJLV c-kYReMo"
-          />
         </button>
       </div>
       <button
