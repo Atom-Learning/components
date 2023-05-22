@@ -1,16 +1,14 @@
 import { ChevronRight } from '@atom-learning/icons'
 import * as React from 'react'
 
-import { CSS } from '../../stitches'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { usePagination } from './pagination-context/PaginationContext'
+import { PaginationNavigationButtonProps } from './types'
 
-export const PaginationNextButton: React.FC<{
-  onClick?: (callback: () => void) => void
-  css?: CSS
-  label?: string
-}> = ({ onClick, css, label = 'Next page' }) => {
+export const PaginationNextButton: React.FC<
+  PaginationNavigationButtonProps
+> = ({ onClick, css, label = 'Next page' }) => {
   const { goToNextPage, currentPage, pages } = usePagination()
 
   const isNumber = typeof pages === 'number'

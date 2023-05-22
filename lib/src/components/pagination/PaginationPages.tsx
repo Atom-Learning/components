@@ -2,11 +2,7 @@ import * as React from 'react'
 
 import { Flex } from '..'
 import { usePagination } from '../pagination/pagination-context/PaginationContext'
-import {
-  generateSliceOfPages,
-  RENDER_EIGHT_ELEMENTS,
-  shouldTruncate
-} from './pagination.helpers'
+import { RENDER_EIGHT_ELEMENTS } from './pagination.constants'
 import { PaginationItem } from './PaginationItem'
 import { PaginationPopover } from './PaginationPopover'
 import { pages as pagesType, visibleElementsCount } from './types'
@@ -15,10 +11,11 @@ const TRUNCATED_THRESHOLD = 4
 
 const numOfPaginationItemsToRender = (
   currentPage: number,
-  listOfPages: number[] | pagesType[],
+  listOfPages: pagesType[],
   visibleElementsCount?: visibleElementsCount
-): number[] | pagesType[] => {
+): pagesType[] => {
   // We use this boolean to decide how much of the list of pages we have to slice
+
   const isMaxVisibleElementCount =
     visibleElementsCount === RENDER_EIGHT_ELEMENTS
 
@@ -46,46 +43,36 @@ export const PaginationPages: React.FC<{
 }> = ({ onClick }) => {
   const { currentPage, visibleElementsCount, pages } = usePagination()
 
-  const isArray = Array.isArray(pages)
-  const lastPage = isArray && pages?.slice(-1)
+  const copyOfPages = [...pages]
 
-  const lastPageNumber = isArray ? lastPage?.[0]?.pageNumber : pages
-  const isLastPageCompleted = lastPage?.[0]?.isCompleted
-  const isLastPageDisabled = lastPage?.[0]?.isDisabled
+  const lastPage = copyOfPages?.splice(-1)
+  const lastPageNumber = lastPage?.[0]?.pageNumber
 
-  const listOfPages = generateSliceOfPages(pages)
-  const isTruncated = shouldTruncate(TRUNCATED_THRESHOLD, pages)
+  const isTruncated = pages.length > TRUNCATED_THRESHOLD
 
   const paginationItems = isTruncated
     ? numOfPaginationItemsToRender(
         currentPage,
-        listOfPages,
+        copyOfPages,
         visibleElementsCount
       )
-    : listOfPages
+    : copyOfPages
 
   return (
     <Flex css={{ gap: '$1' }}>
       {paginationItems?.map((page) => {
-        const { pageNumber, isCompleted, isDisabled } = page
+        const { pageNumber } = page
 
         return (
           <PaginationItem
             key={pageNumber}
             pageNumber={pageNumber}
-            isCompleted={isCompleted}
-            isDisabled={isDisabled}
             onClick={onClick}
           />
         )
       })}
       {isTruncated && <PaginationPopover onClick={onClick} />}
-      <PaginationItem
-        pageNumber={lastPageNumber}
-        isCompleted={isLastPageCompleted}
-        isDisabled={isLastPageDisabled}
-        onClick={onClick}
-      />
+      <PaginationItem pageNumber={lastPageNumber} onClick={onClick} />
     </Flex>
   )
 }

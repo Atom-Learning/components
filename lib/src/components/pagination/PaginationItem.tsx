@@ -1,8 +1,9 @@
 import * as React from 'react'
 
-import { CSS, styled } from '../../stitches'
+import { styled } from '../../stitches'
 import { Box, Button } from '..'
 import { usePagination } from './pagination-context/PaginationContext'
+import { PaginationItemProps } from './types'
 
 const StyledButton = styled(Button, {
   display: 'flex',
@@ -67,26 +68,21 @@ const Dot = styled(Box, {
   }
 })
 
-export const PaginationItem: React.FC<{
-  pageNumber: number
-  css?: CSS
-  isPopoverButton?: boolean
-  isCompleted?: boolean
-  isDisabled?: boolean
-  onClick?: (callback: () => void) => void
-}> = ({
+export const PaginationItem: React.FC<PaginationItemProps> = ({
   pageNumber,
   css,
   isPopoverButton = false,
-  isCompleted,
-  isDisabled,
   onClick
 }) => {
-  const { currentPage, goToPage } = usePagination()
+  const { currentPage, goToPage, indicatedPages, disabledPages } =
+    usePagination()
+
+  const isPaginationItemIndicated = Boolean(
+    indicatedPages?.includes(pageNumber)
+  )
+  const isPaginationItemDisabled = Boolean(disabledPages?.includes(pageNumber))
 
   const isButtonSelected = currentPage === pageNumber
-  const currentPageLabel = isButtonSelected ? { 'aria-current': 'page' } : {}
-  const isDisabledLabel = { 'aria-disabled': isDisabled }
 
   const handleClick = () => {
     if (onClick) {
@@ -103,13 +99,13 @@ export const PaginationItem: React.FC<{
       onClick={handleClick}
       css={css}
       popover={isPopoverButton}
-      isCompleted={isCompleted}
-      disabled={isDisabled}
-      {...currentPageLabel}
-      {...isDisabledLabel}
+      isCompleted={isPaginationItemIndicated}
+      disabled={isPaginationItemDisabled}
+      aria-current={isButtonSelected && 'page'}
+      aria-disabled={isPaginationItemDisabled}
     >
       {pageNumber}
-      {isCompleted && <Dot />}
+      {isPaginationItemIndicated && <Dot />}
     </StyledButton>
   )
 }

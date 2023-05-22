@@ -1,22 +1,6 @@
 import * as React from 'react'
 
-import { pages, visibleElementsCount } from '../types'
-
-interface PaginationProviderProps {
-  onSelectedPageChange: (pageNumber: number) => void
-  selectedPage?: number
-  visibleElementsCount?: visibleElementsCount
-  pages: pages[] | number
-}
-
-type Context = {
-  goToPage: (pagenumber: number) => void
-  goToPreviousPage: () => void
-  goToNextPage: () => void
-  currentPage: number
-  visibleElementsCount?: visibleElementsCount
-  pages: pages[] | number
-}
+import { Context, PaginationProviderProps } from '../types'
 
 const PaginationContext = React.createContext<Context>({
   goToPage: () => null,
@@ -31,12 +15,19 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   onSelectedPageChange,
   selectedPage,
   visibleElementsCount,
-  pages,
+  pagesCount,
+  indicatedPages,
+  disabledPages,
   children
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
 
   const currentPage = selectedPage || internalCurrentPage
+
+  const pages = React.useMemo(
+    () => Array.from({ length: pagesCount }, (_, i) => ({ pageNumber: i + 1 })),
+    [pagesCount]
+  )
 
   const goToPage = (pageNumber: number) => {
     setInternalCurrentPage(pageNumber)
@@ -44,19 +35,17 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   }
 
   const goToPreviousPage = () => {
-    if (internalCurrentPage === 1) {
+    if (currentPage === 1) {
       return
     }
-    goToPage(internalCurrentPage - 1)
+    goToPage(currentPage - 1)
   }
 
   const goToNextPage = () => {
-    const isNumber = typeof pages === 'number'
-
-    if (internalCurrentPage === (isNumber ? pages : pages?.length)) {
+    if (currentPage === pages?.length) {
       return
     }
-    goToPage(internalCurrentPage + 1)
+    goToPage(currentPage + 1)
   }
 
   return (
@@ -67,7 +56,9 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
         goToPage,
         currentPage,
         visibleElementsCount,
-        pages
+        pages,
+        indicatedPages,
+        disabledPages
       }}
     >
       {children}

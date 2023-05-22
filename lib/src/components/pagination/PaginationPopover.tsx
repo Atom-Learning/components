@@ -4,25 +4,11 @@ import React from 'react'
 import { ActionIcon, Icon, Popover } from '..'
 import { usePagination } from './pagination-context/PaginationContext'
 import { PaginationItem } from './PaginationItem'
-import { pages as pageTypes } from './types'
-
-const generateListOfPages = (pages: pageTypes[] | number): pageTypes[] | [] => {
-  const isArray = Array.isArray(pages)
-  if (isArray) return pages
-
-  if (!isArray) {
-    return Array.from({ length: pages }, (_, i) => ({ pageNumber: i + 1 }))
-  }
-
-  return []
-}
 
 export const PaginationPopover: React.FC<{
   onClick?: (callback: () => void) => void
 }> = ({ onClick }) => {
   const { pages } = usePagination()
-
-  const paginationItems = generateListOfPages(pages)
 
   return (
     <Popover>
@@ -42,16 +28,14 @@ export const PaginationPopover: React.FC<{
         showCloseButton={false}
         css={{ p: '$4', display: 'flex', flexWrap: 'wrap', gap: '$1' }}
       >
-        {paginationItems.map((page) => {
-          const { pageNumber, isCompleted, isDisabled } = page
+        {pages?.map((page) => {
+          const { pageNumber } = page
 
           return (
             <PaginationItem
               key={pageNumber}
               isPopoverButton={true}
               pageNumber={pageNumber}
-              isCompleted={isCompleted}
-              isDisabled={isDisabled}
               onClick={onClick}
             />
           )

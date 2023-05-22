@@ -4,7 +4,7 @@ title: Pagination
 tabs:
   - title: Code
     content: >-
-
+      
       The `Pagination` component comes with 3 components that combine to make the `Pagination`. The parent Pagination contains `Pagination.PreviousButton`, `Pagination.Pages`, `Pagination.NextButton` components.
 
 
@@ -17,13 +17,16 @@ tabs:
       # Anatomy
 
 
-      The root `Pagination` component allows the user to pass in a `pages` prop, it can be a number that tells the component how many pagination items to render, or it can take an array that contains objects with properties relating to the page number, whether the page has been is completed or even disabled. This will be helpful when it comes to making use of the `Pagination` component for navigating non-adaptive mock tests.
+      The root `Pagination` component allows the user to pass in a `pagesCount` prop, it can be a number that tells the component how many pagination items to render.
 
 
       It also takes in a `visibleElementsCount` prop it can take a value 6 or 8, which dictates how many elements in the pagination we wish to render including the navigation buttons, by default, it is set to 6. This component can also takes in an `onSelectedPageChange` prop which is a function that can allow the parent component to have access to the selected page set on the `pagination` component.
 
 
       It can also take in a `selectedPage` prop which allows the parent component to pass in a numerical value indicating which page the parent component is currently showing, if the `selectedPage` prop is not passed in, the `Pagination` component as an internal state to keep track of the current page, by default this state is set to the first page.
+
+
+      The `Pagination` component also takes in a `disabledPages` props which is an array of numbers, which indicate which pagination items should be disabled, and it also takes in a `indicatedPages` prop which is also an array of numbers to indicate which pagination item should be display a dot under the page number, which represents the page as completed.
 
 
       `Pagination.PreviousButton` represents the backwards navigation element. It has a default label of `Previous page` but it can also receive a `label` prop to override the default one. This is important for providing translated strings to the component. It can receive an onClick prop to override its default behaviour in case some logic or validation needs to be applied before going to the next page. It is automatically disabled while the user is viewing the first page.
@@ -42,7 +45,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`
 
       <Pagination
-        pages={6}
+        pagesCount={6}
         colorScheme={{ base: 'purple2', accent: 'purple1'}}
         css={{ display: 'flex' }}
       >
@@ -51,13 +54,13 @@ tabs:
         <Pagination.NextButton />
       </Pagination> `} language={"tsx"} />
 
-      Above is an example of passing in a number to the `pages` prop that will render 6 pages, the `visibleElementsCount` prop is set to 6 by default. So the user will see two navigation buttons, an action button to trigger the popover and 3 page numbers.
+      Above is an example of passing in a number to the `pagesCount` prop that will render 6 pagination items, the `visibleElementsCount` prop is set to 6 by default. So the user will see two navigation buttons, an action button to trigger the popover and 3 page numbers.
 
 
       <CodeBlock live={true} preview={true} code={`
 
       <Pagination
-        pages={6}
+        pagesCount={6}
         css={{ display: 'flex' }}
         visibleElementsCount={8}
         colorScheme={{ base: 'grey2', accent: 'blue1'}}
@@ -75,7 +78,9 @@ tabs:
       <Pagination
         colorScheme={{ base: 'grey2', accent: 'blue1'}}
         css={{ display: 'flex' }}
-        pages={[{pageNumber: 1, isCompleted: false}, {pageNumber: 2, isCompleted: false},{pageNumber: 3, isCompleted: true}, {pageNumber: 4, isCompleted: false, isDisabled: true}]}
+        disabledPages={[1,2]}
+        indicatedPages={[4,5]}
+        pagesCount={5}
       >
         <Pagination.PreviousButton />
         <Pagination.Pages />
@@ -83,7 +88,7 @@ tabs:
       </Pagination> `} language={"tsx"} /> 
 
 
-      Above is an example of when an array of objects is passed into the `pages` prop instead of a number. The objects contain additional data about and how the pagination items should be rendered, whether they should be disabled or marked as completed by the use of a dot under the page number.
+      Above is an example of when we `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` to mark pages 4 and 5 as completed.
 
 
       ## API Reference
