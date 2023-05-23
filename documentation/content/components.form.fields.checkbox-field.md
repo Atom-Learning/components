@@ -66,19 +66,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![checkbox do's and dont's 1](/assets/images/03-checkbox-do-s-and-dont-s.png "checkbox do's and dont's 1")
-
-
-      ![checkbox do's and dont's 2](/assets/images/04-checkbox-do-s-and-dont-s.png "checkbox do's and dont's 2")
-
-
-      ![checkbox do's and dont's 3](/assets/images/05-checkbox-do-s-and-dont-s.png "checkbox do's and dont's 3")
-
-
-      ![checkbox do's and dont's 4](/assets/images/06-checkbox-do-s-and-dont-s.png "checkbox do's and dont's 4")
-
-
-      ![checkbox do's and dont's 5](/assets/images/07-checkbox-do-s-and-dont-s.png "checkbox do's and dont's 5")
+      <DosAndDonts items={[{"image":"/assets/images/checkbox-dos-and-donts-01.svg","type":"do","description":"In groups, allow users to select more than one choice. "},{"image":"/assets/images/checkbox-dos-and-donts-02.svg","type":"dont","description":"Use for mutually exclusive options, in that case use a radio button instead."},{"image":"/assets/images/checkbox-dos-and-donts-03.svg","type":"do","description":"Label should be short, descriptive, and possitive. Users should know what will happen if they check a particular box, and what will happen if not."},{"image":"/assets/images/checkbox-dos-and-donts-04.svg","type":"dont","description":"Use negative wording that may confuse the user. If you need to do this is better to have two radio buttons with each of the two cases."},{"image":"/assets/images/checkbox-dos-and-donts-05.svg","type":"do","description":"Start labels with a capital letter"},{"image":"/assets/images/checkbox-dos-and-donts-06.svg","type":"dont","description":"Include punctuation after checkbox labels"},{"image":"/assets/images/checkbox-dos-and-donts-07.svg","type":"do","description":"Leave the checkboxes blank by default, so users must actively click to activate it."},{"image":"/assets/images/checkbox-dos-and-donts-08.svg","type":"dont","description":"Use the selection of a check box to perform commands or display other windows"},{"image":"/assets/images/checkbox-dos-and-donts-09.svg","type":"do","description":"Include both the box and label in the selection target so users have larger target area to interact with."}]} />
 parent: ru0Ovr_U82kdQX8m3WahL
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:
