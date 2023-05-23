@@ -2,8 +2,16 @@ import * as React from 'react'
 
 import { styled } from '../../stitches'
 import { Box, Button } from '..'
-import { usePagination } from './pagination-context/PaginationContext'
-import { PaginationItemProps } from './types'
+import { usePagination } from './usePagination'
+import type { IPaginationItemProps } from './types'
+import { debounce } from 'throttle-debounce'
+import { focusVisibleStyleBlock } from '~/utilities'
+
+const Dot = styled(Box, {
+  borderRadius: '$round',
+  size: '4px',
+  bg: '$accent9'
+})
 
 const StyledButton = styled(Button, {
   display: 'flex',
@@ -12,24 +20,30 @@ const StyledButton = styled(Button, {
   fontWeight: 400,
   color: '$grey800 !important',
   bg: '$base1 !important',
-  '&:hover': {
-    bg: '$base2 !important',
-    color: '$grey900 !important'
-  },
-  '&:focus': {
-    bg: '$base1',
-    border: '2px solid $blue800',
-    boxShadow: 'inset 0 0 0 2px $white'
-  },
-  '&:disabled': {
-    opacity: '0.2'
-  },
-  variants: {
-    popover: {
-      true: {
-        bg: '$white !important'
+  '&:not(:disabled)': {
+    '&:hover': {
+      bg: '$base2 !important',
+      color: '$grey900 !important',
+      [`& ${Dot}`]: {
+        bg: '$accent10'
       }
     },
+    '&:focus-visible': {
+      bg: '$base1',
+      [`& ${Dot}`]: {
+        bg: '$accent9'
+      },
+      ...focusVisibleStyleBlock(),
+      border: '2px solid $blue800',
+      boxShadow: 'inset 0 0 0 2px $white',
+      outline: 'unset'
+    }
+  },
+  '&:disabled': {
+    opacity: '0.3',
+    cursor: 'not-allowed'
+  },
+  variants: {
     size: {
       md: {
         width: '$4'
@@ -44,7 +58,7 @@ const StyledButton = styled(Button, {
         }
       }
     },
-    isCompleted: {
+    indicated: {
       true: {
         fontWeight: 600,
         color: '$accent9 !important',
@@ -56,56 +70,37 @@ const StyledButton = styled(Button, {
   }
 })
 
-const Dot = styled(Box, {
-  borderRadius: '$round',
-  size: '4px',
-  bg: '$accent9',
-  '&:hover': {
-    bg: '$accent10'
-  },
-  '&:focus': {
-    bg: '$accent9'
-  }
-})
-
-export const PaginationItem: React.FC<PaginationItemProps> = ({
+export const PaginationItem: React.FC<IPaginationItemProps> = ({
   pageNumber,
-  css,
-  isPopoverButton = false,
-  onClick
+  css
 }) => {
-  const { currentPage, goToPage, indicatedPages, disabledPages } =
+  const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
-  const isPaginationItemIndicated = Boolean(
-    indicatedPages?.includes(pageNumber)
-  )
-  const isPaginationItemDisabled = Boolean(disabledPages?.includes(pageNumber))
+  const isIndicated = Boolean(indicatedPages?.includes(pageNumber))
+  const isDisabled = Boolean(disabledPages?.includes(pageNumber))
 
-  const isButtonSelected = currentPage === pageNumber
+  const isSelected = currentPage === pageNumber
 
-  const handleClick = () => {
-    if (onClick) {
-      return onClick(() => goToPage(pageNumber))
-    }
-
-    goToPage(pageNumber)
+  const handleOnHover = () => {
+    if (isSelected) return
+    debounce(1000, () => onItemHover?.(pageNumber))
   }
 
   return (
     <StyledButton
-      selected={isButtonSelected}
+      selected={isSelected}
       size="md"
-      onClick={handleClick}
+      onClick={() => goToPage(pageNumber)}
       css={css}
-      popover={isPopoverButton}
-      isCompleted={isPaginationItemIndicated}
-      disabled={isPaginationItemDisabled}
-      aria-current={isButtonSelected && 'page'}
-      aria-disabled={isPaginationItemDisabled}
+      indicated={isIndicated}
+      disabled={isDisabled}
+      aria-current={isSelected && 'page'}
+      aria-disabled={isDisabled}
+      onMouseOver={handleOnHover}
     >
       {pageNumber}
-      {isPaginationItemIndicated && <Dot />}
+      {isIndicated && <Dot />}
     </StyledButton>
   )
 }

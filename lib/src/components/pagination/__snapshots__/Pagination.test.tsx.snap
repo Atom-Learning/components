@@ -178,6 +178,10 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-fDzwZw {
     align-items: center;
     -webkit-appearance: none;
@@ -202,8 +206,12 @@ exports[`Pagination component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-dhzjXW {
+  .c-jgdwfn {
     display: flex;
+  }
+
+  .c-jgdwfn > * {
+    margin: 0;
   }
 
   .c-fkUJsw {
@@ -223,7 +231,7 @@ exports[`Pagination component renders 1`] = `
     width: max-content;
   }
 
-  .c-llBIre {
+  .c-fEmMQV {
     display: flex;
     flex-direction: column;
     padding: 0 !important;
@@ -232,19 +240,34 @@ exports[`Pagination component renders 1`] = `
     background: var(--colors-base1) !important;
   }
 
-  .c-llBIre:hover {
+  .c-fEmMQV:not(:disabled):hover {
     background: var(--colors-base2) !important;
     color: var(--colors-grey900) !important;
   }
 
-  .c-llBIre:focus {
-    background: var(--colors-base1);
-    border: 2px solid var(--colors-blue800);
-    box-shadow: inset 0 0 0 2px var(--shadows-white);
+  .c-fEmMQV:not(:disabled):hover .c-PJLV:where(.c-bFgYuK) {
+    background: var(--colors-accent10);
   }
 
-  .c-llBIre:disabled {
-    opacity: 0.2;
+  .c-fEmMQV:not(:disabled):focus-visible {
+    background: var(--colors-base1);
+  }
+
+  .c-fEmMQV:not(:disabled):focus-visible .c-PJLV:where(.c-bFgYuK) {
+    background: var(--colors-accent9);
+  }
+
+  .c-fEmMQV:not(:disabled):focus-visible {
+    outline: unset;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset 0 0 0 2px var(--shadows-white);
+    border: 2px solid var(--colors-blue800);
+  }
+
+  .c-fEmMQV:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-iKnjyA {
@@ -303,6 +326,32 @@ exports[`Pagination component renders 1`] = `
     stroke-width: 1.75;
   }
 
+  .c-jgdwfn-ejCoEP-direction-row {
+    flex-direction: row;
+  }
+
+  .c-jgdwfn-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-jgdwfn-awKDG-justify-start {
+    justify-content: flex-start;
+  }
+
+  .c-jgdwfn-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-jgdwfn-crcQiH-gap-1 {
+    margin-top: calc(var(--space-1)*-1);
+    margin-left: calc(var(--space-1)*-1);
+  }
+
+  .c-jgdwfn-crcQiH-gap-1 > * {
+    margin-top: var(--space-1);
+    margin-left: var(--space-1);
+  }
+
   .c-fkUJsw-elrwsr-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -311,16 +360,16 @@ exports[`Pagination component renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-llBIre-igvUvR-size-md {
+  .c-fEmMQV-igvUvR-size-md {
     width: var(--sizes-4);
   }
 
-  .c-llBIre-hpqEAt-selected-true {
+  .c-fEmMQV-hpqEAt-selected-true {
     border: 1px solid var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-llBIre-hpqEAt-selected-true:hover {
+  .c-fEmMQV-hpqEAt-selected-true:hover {
     border-color: var(--colors-accent10);
   }
 
@@ -372,37 +421,63 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-idhzjXW-css {
-    display: flex;
+  .c-fDzwZw-idmknQf-css:disabled {
+    opacity: 0.3;
   }
 
-  .c-fDzwZw-iiHIFEs-css:disabled {
-    opacity: 0.4;
-  }
-
-  .c-dhzjXW-illVfQI-css {
-    gap: var(--space-1);
-  }
-
-  .c-iKnjyA-ihiLPRQ-css {
-    padding: var(--space-4);
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1);
+  .c-iKnjyA-ifBQDyP-css {
+    padding: 0;
   }
 }
 
 <div>
   <div
-    class="PJLV accent-purple1 base-purple2"
+    class="c-dhzjXW accent-purple1 base-purple2"
   >
+    <button
+      aria-label="Previous page"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-idmknQf-css"
+      disabled=""
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="14 18 8 12 14 6 14 6"
+        />
+      </svg>
+    </button>
     <div
-      class="c-PJLV c-PJLV-idhzjXW-css"
+      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-crcQiH-gap-1"
     >
       <button
-        aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iiHIFEs-css"
-        disabled=""
+        aria-current="page"
+        aria-disabled="false"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fEmMQV c-fEmMQV-igvUvR-size-md c-fEmMQV-hpqEAt-selected-true"
+        type="button"
+      >
+        1
+      </button>
+      <button
+        aria-current="false"
+        aria-disabled="false"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fEmMQV c-fEmMQV-igvUvR-size-md"
+        type="button"
+      >
+        2
+      </button>
+      <button
+        aria-controls="radix-0"
+        aria-expanded="false"
+        aria-haspopup="dialog"
+        aria-label="Open pagination popover"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+        data-state="closed"
+        data-testid="pagination_popover_trigger"
         type="button"
       >
         <svg
@@ -411,89 +486,48 @@ exports[`Pagination component renders 1`] = `
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <polyline
-            points="14 18 8 12 14 6 14 6"
+          <circle
+            cx="12"
+            cy="12"
+            r="1"
+          />
+          <circle
+            cx="6"
+            cy="12"
+            r="1"
+          />
+          <circle
+            cx="18"
+            cy="12"
+            r="1"
           />
         </svg>
       </button>
-      <div
-        class="c-dhzjXW c-dhzjXW-illVfQI-css"
-      >
-        <button
-          aria-current="page"
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md c-llBIre-hpqEAt-selected-true"
-          type="button"
-        >
-          1
-        </button>
-        <button
-          aria-current="false"
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          2
-        </button>
-        <button
-          aria-controls="radix-0"
-          aria-expanded="false"
-          aria-haspopup="dialog"
-          aria-label="Open popover pagination"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
-          data-state="closed"
-          data-testid="popover_trigger"
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="12"
-              cy="12"
-              r="1"
-            />
-            <circle
-              cx="6"
-              cy="12"
-              r="1"
-            />
-            <circle
-              cx="18"
-              cy="12"
-              r="1"
-            />
-          </svg>
-        </button>
-        <button
-          aria-current="false"
-          aria-disabled="false"
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-llBIre c-llBIre-igvUvR-size-md"
-          type="button"
-        >
-          6
-        </button>
-      </div>
       <button
-        aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iiHIFEs-css"
+        aria-current="false"
+        aria-disabled="false"
+        class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv c-fEmMQV c-fEmMQV-igvUvR-size-md"
         type="button"
       >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <polyline
-            points="10 6 16 12 10 18 10 18"
-          />
-        </svg>
+        6
       </button>
     </div>
+    <button
+      aria-label="Next page"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-idmknQf-css"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polyline
+          points="10 6 16 12 10 18 10 18"
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;

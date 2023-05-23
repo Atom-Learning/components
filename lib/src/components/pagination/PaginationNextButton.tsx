@@ -3,34 +3,25 @@ import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { usePagination } from './pagination-context/PaginationContext'
-import { PaginationNavigationButtonProps } from './types'
+import { usePagination } from './usePagination'
+import type { IPaginationNavigationButtonProps } from './types'
 
 export const PaginationNextButton: React.FC<
-  PaginationNavigationButtonProps
-> = ({ onClick, css, label = 'Next page' }) => {
-  const { goToNextPage, currentPage, pages } = usePagination()
-
-  const isNumber = typeof pages === 'number'
-
-  const handleClick = () => {
-    if (onClick) {
-      return onClick(goToNextPage)
-    }
-    goToNextPage?.()
-  }
+  IPaginationNavigationButtonProps
+> = ({ css }) => {
+  const { goToNextPage, currentPage, pagesCount, labels } = usePagination()
 
   return (
     <ActionIcon
       hasTooltip={false}
-      label={label}
+      label={labels?.nextPageButtonLabel || 'Next page'}
       size="md"
       theme="neutral"
-      onClick={handleClick}
-      disabled={currentPage === (isNumber ? pages : pages?.length)}
+      onClick={goToNextPage}
+      disabled={currentPage === pagesCount}
       css={{
         '&:disabled': {
-          opacity: '0.4'
+          opacity: '0.3'
         },
         ...css
       }}

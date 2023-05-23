@@ -3,32 +3,25 @@ import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { usePagination } from './pagination-context/PaginationContext'
-import { PaginationNavigationButtonProps } from './types'
+import { usePagination } from './usePagination'
+import type { IPaginationNavigationButtonProps } from './types'
 
 export const PaginationPreviousButton: React.FC<
-  PaginationNavigationButtonProps
-> = ({ onClick, css, label = 'Previous page' }) => {
-  const { goToPreviousPage, currentPage } = usePagination()
-
-  const handleClick = () => {
-    if (onClick) {
-      return onClick(goToPreviousPage)
-    }
-    goToPreviousPage?.()
-  }
+  IPaginationNavigationButtonProps
+> = ({ css }) => {
+  const { goToPreviousPage, currentPage, labels } = usePagination()
 
   return (
     <ActionIcon
       hasTooltip={false}
-      label={label}
+      label={labels?.previousPageButtonLabel || 'Previous page'}
       size="md"
       theme="neutral"
-      onClick={handleClick}
+      onClick={goToPreviousPage}
       disabled={currentPage === 1}
       css={{
         '&:disabled': {
-          opacity: '0.4'
+          opacity: '0.3'
         },
         ...css
       }}

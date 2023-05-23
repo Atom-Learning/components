@@ -1,50 +1,35 @@
 import * as React from 'react'
 
 import { ColorScheme } from '../../experiments/color-scheme'
-import { Box } from '..'
-import {
-  RENDER_EIGHT_ELEMENTS,
-  RENDER_SIX_ELEMENTS
-} from './pagination.constants'
+import { Flex } from '..'
+import { RENDER_SIX_ELEMENTS } from './pagination.constants'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
-import { PaginationProps } from './types'
+import type { TPaginationProps } from './types'
 
-export const Pagination: React.FC<PaginationProps> & {
-  PreviousButton: typeof PaginationPreviousButton
-  NextButton: typeof PaginationNextButton
-  Pages: typeof PaginationPages
-} = ({
+export const Pagination: React.FC<TPaginationProps> = ({
   onSelectedPageChange,
   selectedPage,
+  onItemHover,
   colorScheme,
-  css,
-  visibleElementsCount = 6,
+  visibleElementsCount = RENDER_SIX_ELEMENTS,
   pagesCount,
   indicatedPages,
   disabledPages,
-  children
+  labels,
+  children,
+  ...rest
 }) => {
-  if (
-    visibleElementsCount === undefined &&
-    visibleElementsCount !== (RENDER_SIX_ELEMENTS || RENDER_EIGHT_ELEMENTS)
-  )
-    throw new Error(
-      "The Pagination Component only takes the values 8 or 6 when passing 'visibleElementsCount' as a prop"
-    )
-
-  // Throw error if pages is 0 or undefined
+  // Return null if pages is 0 or undefined
   if (!pagesCount) {
-    throw new Error(
-      "The Pagination Component requires the 'pagesCount' prop it can be a numerical value above 0"
-    )
+    return null
   }
 
   return (
-    <ColorScheme base="grey1" accent="blue1" {...colorScheme}>
-      <Box css={css}>
+    <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
+      <Flex {...rest}>
         <PaginationProvider
           onSelectedPageChange={onSelectedPageChange}
           visibleElementsCount={visibleElementsCount}
@@ -52,16 +37,16 @@ export const Pagination: React.FC<PaginationProps> & {
           selectedPage={selectedPage}
           indicatedPages={indicatedPages}
           disabledPages={disabledPages}
+          onItemHover={onItemHover}
+          labels={labels}
         >
-          {children}
+          <PaginationPreviousButton />
+          <PaginationPages />
+          <PaginationNextButton />
         </PaginationProvider>
-      </Box>
+      </Flex>
     </ColorScheme>
   )
 }
-
-Pagination.PreviousButton = PaginationPreviousButton
-Pagination.NextButton = PaginationNextButton
-Pagination.Pages = PaginationPages
 
 Pagination.displayName = 'Pagination'

@@ -1,33 +1,33 @@
 import * as React from 'react'
 
-import { Context, PaginationProviderProps } from '../types'
+import { RENDER_SIX_ELEMENTS } from '../pagination.constants'
+import type { TPaginationContext, TPaginationProviderProps } from '../types'
 
-const PaginationContext = React.createContext<Context>({
+export const PaginationContext = React.createContext<TPaginationContext>({
   goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 1,
-  visibleElementsCount: 8,
-  pages: []
+  visibleElementsCount: RENDER_SIX_ELEMENTS,
+  pagesCount: 0,
+  onItemHover: () => null,
+  labels: {}
 })
 
-export const PaginationProvider: React.FC<PaginationProviderProps> = ({
+export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   onSelectedPageChange,
   selectedPage,
   visibleElementsCount,
   pagesCount,
   indicatedPages,
   disabledPages,
+  onItemHover,
+  labels,
   children
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
 
   const currentPage = selectedPage || internalCurrentPage
-
-  const pages = React.useMemo(
-    () => Array.from({ length: pagesCount }, (_, i) => ({ pageNumber: i + 1 })),
-    [pagesCount]
-  )
 
   const goToPage = (pageNumber: number) => {
     setInternalCurrentPage(pageNumber)
@@ -42,7 +42,7 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   }
 
   const goToNextPage = () => {
-    if (currentPage === pages?.length) {
+    if (currentPage === pagesCount) {
       return
     }
     goToPage(currentPage + 1)
@@ -56,24 +56,14 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
         goToPage,
         currentPage,
         visibleElementsCount,
-        pages,
         indicatedPages,
-        disabledPages
+        disabledPages,
+        pagesCount,
+        onItemHover,
+        labels
       }}
     >
       {children}
     </PaginationContext.Provider>
   )
-}
-
-export const usePagination = (): Context => {
-  const context = React.useContext(PaginationContext)
-
-  if (!context) {
-    throw new Error(
-      'Ensure that you wrap any components with the PaginationProvider component'
-    )
-  }
-
-  return context
 }
