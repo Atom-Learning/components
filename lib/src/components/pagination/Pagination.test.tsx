@@ -11,17 +11,17 @@ import {
 import { axe } from 'jest-axe'
 
 const PaginationComponent = ({
-  pages,
+  pagesCount,
   onSelectedPageChange,
   disabledPages
 }: {
-  pages: number
+  pagesCount: number
   onSelectedPageChange: (pageNumber: number) => void
   disabledPages?: number[]
 }) => {
   return (
     <Pagination
-      pagesCount={pages}
+      pagesCount={pagesCount}
       colorScheme={{ base: 'purple2', accent: 'purple1' }}
       css={{ display: 'flex' }}
       onSelectedPageChange={onSelectedPageChange}
@@ -43,7 +43,10 @@ describe('Pagination component', () => {
 
   it('renders', async () => {
     const { container } = await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -53,7 +56,10 @@ describe('Pagination component', () => {
 
   it('renders the previous button as disabled when on the first page', async () => {
     await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -68,7 +74,10 @@ describe('Pagination component', () => {
 
   it('renders the Next button as disabled when on the last page', async () => {
     await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -86,7 +95,10 @@ describe('Pagination component', () => {
   it('can change the current page by clicking on a page button', async () => {
     const pageChangeSpy = jest.fn()
     await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -109,7 +121,10 @@ describe('Pagination component', () => {
 
   it('opens the popover when the trigger is clicked', async () => {
     await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -123,7 +138,10 @@ describe('Pagination component', () => {
 
   it('renders no popover trigger when we have 4 or less pages', async () => {
     await render(
-      <PaginationComponent pages={4} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={4}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
@@ -134,7 +152,7 @@ describe('Pagination component', () => {
   it('can render a pagination item as disabled', async () => {
     await render(
       <PaginationComponent
-        pages={10}
+        pagesCount={10}
         disabledPages={[2]}
         onSelectedPageChange={pageChangeSpy}
       />
@@ -167,7 +185,10 @@ describe('Pagination component', () => {
 
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = await render(
-      <PaginationComponent pages={6} onSelectedPageChange={pageChangeSpy} />
+      <PaginationComponent
+        pagesCount={6}
+        onSelectedPageChange={pageChangeSpy}
+      />
     )
 
     expect(await screen.findByText(1)).toBeVisible()
