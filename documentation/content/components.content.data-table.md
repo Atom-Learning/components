@@ -377,9 +377,7 @@ tabs:
       * **Responsive** - data table components should be designed to work on a variety of devices and screen sizes.
 
 
-      ![Data table overview](/assets/images/data-table-overview-01.svg "Data table overview")
-
-
+      ![Data table overview](/assets/images/table-01-overview.svg "Data table overview")
 
 
       ## When to use
@@ -394,13 +392,13 @@ tabs:
       Use data table component when you need to manipulate or view large amounts of data in a tabular format.
 
 
-      ![Large amount of data in a table](/assets/images/data-table-large-amount-of-data-02.svg "Large amount of data in a table")
+      ![Large amount of data in a table](/assets/images/table-02-large-amount-of-data.svg "Large amount of data in a table")
 
 
       ### Sorting
 
 
-      ![Sorting by default, with a possibility to sort each column](/assets/images/data-table-03-sorting-by-default.svg "Sorting by default, with a possibility to sort each column")
+      ![Sorting by default, with a possibility to sort each column](/assets/images/table-03-sorting.svg "Sorting by default, with a possibility to sort each column")
 
 
       Sorting by default, with a possibility to sort each column
@@ -409,7 +407,7 @@ tabs:
       ### Bulk actions
 
 
-      ![Multiple row selection + bulk actions](/assets/images/data-table-04-bulk-actions.svg "Multiple row selection + bulk actions")
+      ![Multiple row selection + bulk actions](/assets/images/table-04-bulk-actions.svg "Multiple row selection + bulk actions")
 
 
       Multiple row selection + bulk actions
@@ -429,36 +427,40 @@ tabs:
       ### Empty states
 
 
-      ![data table empty states](/assets/images/data-table-05-empty-states.svg "data table empty states")
+      ![data table empty states](/assets/images/table-05-empty-states.svg "data table empty states")
 
 
       ### Horizontal scrolling
 
 
-      ![Table horizontal scroll](/assets/images/data-table-06-horizontal-scroll.svg "Table horizontal scroll")
+      ![Table horizontal scroll](/assets/images/table-06-horizontal-scroll.svg "Table horizontal scroll")
 
 
       ### Overflow menu
 
 
-      ![table overflow menu](/assets/images/data-table-07-overflow-menu.svg "table overflow menu")
+      ![table overflow menu](/assets/images/table-07-overflow-menu.svg "table overflow menu")
 
 
       ### Filtering
 
 
-      ![table filtering](/assets/images/data-table-08-filtering.svg "table filtering")
+      ![table filtering](/assets/images/table-09-filtering.svg "table filtering")
 
 
       Filtering allows users to drill down on data and extract insights more efficiently. Users can filter by entering specific text in the search bar or selecting already defined keywords. For example, in Atom Prime, in Manage Student Table, the teacher can reduce the amount of data by filtering by class and get the desired results faster.
 
 
+      ### Pagination
+
+
+      ![table pagination](/assets/images/table-10-pagination.svg "table pagination")
 
 
       ## Do's and Don'ts
 
 
-      <DosAndDonts items={[{"type":"do","description":"always provide clear labels for table’s headings and content.","image":"/assets/images/data-table-10-dos-and-donts.svg"},{"image":"/assets/images/data-table-11-dos-and-donts.svg","description":"provide inappropriate labels, that don’t reflect the content.","type":"dont"},{"type":"do","image":"/assets/images/data-table-12-dos-and-donts.svg","description":"align content top-left in each row’s cell (except for numeric values)."},{"image":"/assets/images/data-table-13-dos-and-donts.svg","type":"dont","description":"use different alignments inside a row cell."},{"image":"/assets/images/data-table-14-dos-and-donts.svg","type":"do","description":"prioritise the columns and sort the most important information starting from left to right."},{"type":"avoid","description":"placing columns in random order.","image":"/assets/images/data-table-15-dos-and-donts.svg"},{"type":"do","description":"use the same row size.","image":"/assets/images/data-table-16-dos-and-donts.svg"},{"type":"dont","description":"mix the row sizes.","image":"/assets/images/data-table-17-dos-and-donts.svg"},{"type":"do","description":"use the same format of dates everywhere.","image":"/assets/images/data-table-18-dos-and-donts.svg"},{"type":"do","description":"mix format of dates.","image":"/assets/images/data-table-19-dos-and-donts.svg"},{"type":"do","description":"use responsive pagination on smaller breakpoints.","image":"/assets/images/data-table-20-dos-and-donts.svg"},{"type":"do","description":"use the first fixed column for complex tables that require horizontal scrolling.","image":"/assets/images/data-table-21-dos-and-donts.svg"}]} />
+      <DosAndDonts items={[{"type":"do","description":"always provide clear labels for table’s headings and content.","image":"/assets/images/table-11-dos-and-donts.svg"},{"image":"/assets/images/table-12-dos-and-donts.svg","description":"provide inappropriate labels, that don’t reflect the content.","type":"dont"},{"type":"do","image":"/assets/images/table-13-dos-and-donts.svg","description":"align content top-left in each row’s cell (except for numeric values)."},{"image":"/assets/images/table-14-dos-and-donts.svg","type":"dont","description":"use different alignments inside a row cell."},{"image":"/assets/images/table-15-dos-and-donts.svg","type":"do","description":"prioritise the columns and sort the most important information starting from left to right."},{"type":"avoid","description":"placing columns in random order.","image":"/assets/images/table-16-dos-and-donts.svg"},{"type":"do","description":"use the same row size.","image":"/assets/images/table-17-dos-and-donts.svg"},{"type":"dont","description":"mix the row sizes.","image":"/assets/images/table-18-dos-and-donts.svg"},{"type":"do","description":"use the same format of dates everywhere.","image":"/assets/images/table-19-dos-and-donts.svg"},{"type":"do","description":"mix format of dates.","image":"/assets/images/table-20-dos-and-donts.svg"},{"type":"do","description":"use responsive pagination on smaller breakpoints.","image":"/assets/images/table-21-dos-and-donts.svg"},{"type":"do","description":"use the first fixed column for complex tables that require horizontal scrolling.","image":"/assets/images/table-22-dos-and-donts.svg"}]} />
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: cagh7LpcbxiyLCvvU3T8m
 nestedSlug:
