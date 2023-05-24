@@ -1,9 +1,6 @@
 import * as React from 'react'
 
-import {
-  RENDER_EIGHT_ELEMENTS,
-  RENDER_SIX_ELEMENTS
-} from '../pagination.constants'
+import { VisibleElementsAmount } from '../pagination.constants'
 import {
   findNextAvailablePage,
   findPreviousAvailablePage
@@ -15,7 +12,7 @@ export const PaginationContext = React.createContext<TPaginationContext>({
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 1,
-  visibleElementsCount: RENDER_SIX_ELEMENTS,
+  visibleElementsCount: VisibleElementsAmount.LESS,
   pagesCount: 0,
   onItemHover: () => null,
   labels: {},
@@ -25,7 +22,7 @@ export const PaginationContext = React.createContext<TPaginationContext>({
 export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   onSelectedPageChange,
   selectedPage,
-  visibleElementsCount = RENDER_SIX_ELEMENTS,
+  visibleElementsCount = VisibleElementsAmount.LESS,
   pagesCount,
   indicatedPages,
   disabledPages,
@@ -35,7 +32,7 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
   const isMaxVisibleElementCount =
-    visibleElementsCount === RENDER_EIGHT_ELEMENTS
+    visibleElementsCount === VisibleElementsAmount.MORE
 
   const currentPage = selectedPage || internalCurrentPage
 

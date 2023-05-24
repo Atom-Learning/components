@@ -1,3 +1,6 @@
-export const RENDER_SIX_ELEMENTS = 6
-export const RENDER_EIGHT_ELEMENTS = 8
 export const TRUNCATED_THRESHOLD = 4
+
+export enum VisibleElementsAmount {
+  LESS = 6,
+  MORE = 8
+}
