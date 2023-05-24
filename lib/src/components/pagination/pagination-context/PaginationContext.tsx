@@ -16,7 +16,9 @@ export const PaginationContext = React.createContext<TPaginationContext>({
   pagesCount: 0,
   onItemHover: () => null,
   labels: {},
-  isMaxVisibleElementCount: false
+  isMaxVisibleElementCount: false,
+  indicatedPages: [],
+  disabledPages: []
 })
 
 export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
@@ -24,8 +26,8 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   selectedPage,
   visibleElementsCount = VisibleElementsAmount.LESS,
   pagesCount,
-  indicatedPages,
-  disabledPages,
+  indicatedPages = [],
+  disabledPages = [],
   onItemHover,
   labels,
   children
@@ -64,7 +66,7 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
 
     if (nextAvailablePage > pagesCount) return
     goToPage(nextAvailablePage)
-  }, [currentPage, disabledPages, goToPage])
+  }, [currentPage, disabledPages, goToPage, pagesCount])
 
   const value = React.useMemo(() => {
     return {

@@ -9,9 +9,9 @@ interface ILabels {
 }
 
 interface TBasePaginationType {
-  visibleElementsCount?: TVisibleElementsCount
-  indicatedPages?: number[]
-  disabledPages?: number[]
+  visibleElementsCount: TVisibleElementsCount
+  indicatedPages: number[]
+  disabledPages: number[]
   onItemHover?: (pageNumber: number) => void
   labels?: ILabels
 }
@@ -21,6 +21,9 @@ export type TVisibleElementsCount = 6 | 8
 export type TPaginationProps = React.ComponentProps<typeof Box> &
   TPaginationProviderProps & {
     colorScheme?: TcolorScheme
+    indicatedPages?: number[]
+    disabledPages?: number[]
+    visibleElementsCount?: TVisibleElementsCount
   }
 
 export type TPaginationProviderProps = {
@@ -42,9 +45,4 @@ export interface IPaginationItemProps {
   pageNumber: number
   css?: CSS
   onItemHover?: (pageNumber: number) => void
-}
-
-export interface IPaginationNavigationButtonProps {
-  css?: CSS
-  label?: string
 }

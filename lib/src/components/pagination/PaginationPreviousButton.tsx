@@ -5,12 +5,19 @@ import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import { getPaginationItemsToRender } from './pagination.helper'
-import type { IPaginationNavigationButtonProps } from './types'
 import { usePagination } from './usePagination'
+import { styled } from '~/stitches'
 
-export const PaginationPreviousButton: React.FC<
-  IPaginationNavigationButtonProps
-> = ({ css }) => {
+const StyledActionIcon = styled(ActionIcon, {
+  mr: '$1',
+  '&:disabled': {
+    opacity: '0.3'
+  }
+})
+
+export const PaginationPreviousButton = (
+  props: React.ComponentProps<typeof StyledActionIcon>
+) => {
   const {
     goToPreviousPage,
     currentPage,
@@ -29,25 +36,19 @@ export const PaginationPreviousButton: React.FC<
   // Check if we are on the first page or if the first page is disabled and the page number is rendered
   const isDisabled =
     currentPage === 1 ||
-    (Boolean(disabledPages?.includes(1)) && paginationItemsInview?.includes(1))
+    (disabledPages.includes(1) && paginationItemsInview.includes(1))
 
   return (
-    <ActionIcon
+    <StyledActionIcon
       hasTooltip={false}
-      label={labels?.previousPageButtonLabel || 'Previous page'}
       size="md"
       theme="neutral"
       onClick={goToPreviousPage}
       disabled={isDisabled}
-      css={{
-        mr: '$1',
-        '&:disabled': {
-          opacity: '0.3'
-        },
-        ...css
-      }}
+      {...props}
+      label={labels?.previousPageButtonLabel || 'Previous page'}
     >
       <Icon is={ChevronLeft} />
-    </ActionIcon>
+    </StyledActionIcon>
   )
 }

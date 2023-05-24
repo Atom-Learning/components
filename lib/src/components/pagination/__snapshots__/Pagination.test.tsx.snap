@@ -206,6 +206,14 @@ exports[`Pagination component renders 1`] = `
     vertical-align: middle;
   }
 
+  .c-bVZtAj {
+    margin-right: var(--space-1);
+  }
+
+  .c-bVZtAj:disabled {
+    opacity: 0.3;
+  }
+
   .c-jgdwfn {
     display: flex;
   }
@@ -307,6 +315,14 @@ exports[`Pagination component renders 1`] = `
       animation-name: k-fvyGIa;
     }
 }
+
+  .c-bVVNNd {
+    margin-left: var(--space-1);
+  }
+
+  .c-bVVNNd:disabled {
+    opacity: 0.3;
+  }
 }
 
 @media  {
@@ -402,35 +418,13 @@ exports[`Pagination component renders 1`] = `
   }
 }
 
-@media  {
-  .c-fDzwZw-ibVZtAj-css {
-    margin-right: var(--space-1);
-  }
-
-  .c-fDzwZw-ibVZtAj-css:disabled {
-    opacity: 0.3;
-  }
-
-  .c-iKnjyA-ifBQDyP-css {
-    padding: 0;
-  }
-
-  .c-fDzwZw-ibVVNNd-css {
-    margin-left: var(--space-1);
-  }
-
-  .c-fDzwZw-ibVVNNd-css:disabled {
-    opacity: 0.3;
-  }
-}
-
 <div>
   <div
     class="c-dhzjXW accent-purple1 base-purple2"
   >
     <button
       aria-label="Previous page"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ibVZtAj-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVZtAj"
       disabled=""
       type="button"
     >
@@ -505,7 +499,7 @@ exports[`Pagination component renders 1`] = `
     </div>
     <button
       aria-label="Next page"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ibVVNNd-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVVNNd"
       type="button"
     >
       <svg
