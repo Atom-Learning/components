@@ -3,13 +3,33 @@ import * as React from 'react'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { usePagination } from './usePagination'
+import { TRUNCATED_THRESHOLD } from './pagination.constants'
+import { numOfPaginationItemsToRender } from './pagination.helper'
 import type { IPaginationNavigationButtonProps } from './types'
+import { usePagination } from './usePagination'
 
 export const PaginationPreviousButton: React.FC<
   IPaginationNavigationButtonProps
 > = ({ css }) => {
-  const { goToPreviousPage, currentPage, labels } = usePagination()
+  const {
+    goToPreviousPage,
+    currentPage,
+    labels,
+    disabledPages,
+    pagesCount,
+    isMaxVisibleElementCount
+  } = usePagination()
+
+  const paginationItemsInview = numOfPaginationItemsToRender(
+    currentPage,
+    pagesCount,
+    TRUNCATED_THRESHOLD,
+    isMaxVisibleElementCount
+  )
+  // Check if we are on the first page or if the first page is disabled and the page number is rendered
+  const isDisabled =
+    currentPage === 1 ||
+    (Boolean(disabledPages?.includes(1)) && paginationItemsInview?.includes(1))
 
   return (
     <ActionIcon
@@ -18,8 +38,9 @@ export const PaginationPreviousButton: React.FC<
       size="md"
       theme="neutral"
       onClick={goToPreviousPage}
-      disabled={currentPage === 1}
+      disabled={isDisabled}
       css={{
+        mr: '$1',
         '&:disabled': {
           opacity: '0.3'
         },

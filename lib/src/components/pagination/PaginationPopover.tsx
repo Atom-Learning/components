@@ -1,10 +1,9 @@
 import { Ellypsis } from '@atom-learning/icons'
 import React from 'react'
-import { Stack } from '~/index'
 
-import { ActionIcon, Icon, Popover } from '..'
-import { usePagination } from './usePagination'
+import { ActionIcon, Icon, Popover, Stack } from '..'
 import { PaginationItem } from './PaginationItem'
+import { usePagination } from './usePagination'
 
 export const PaginationPopover = () => {
   const { pagesCount, labels } = usePagination()
@@ -33,7 +32,7 @@ export const PaginationPopover = () => {
               <PaginationItem
                 key={pageNumber}
                 pageNumber={pageNumber}
-                css={{ bg: '$white !important' }}
+                css={{ bg: '$white' }}
               />
             )
           })}

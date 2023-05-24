@@ -1,6 +1,6 @@
-import { Box } from '..'
 import { TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
+import { Box } from '..'
 
 export type TPages = {
   pageNumber: number
@@ -38,6 +38,7 @@ export type TPaginationContext = {
   goToNextPage: () => void
   currentPage: number
   pagesCount: number
+  isMaxVisibleElementCount: boolean
 } & TBasePaginationType
 
 export interface IPaginationItemProps {

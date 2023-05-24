@@ -1,11 +1,11 @@
 import * as React from 'react'
 
-import { styled } from '../../stitches'
-import { Box, Button } from '..'
-import { usePagination } from './usePagination'
-import type { IPaginationItemProps } from './types'
-import { debounce } from 'throttle-debounce'
 import { focusVisibleStyleBlock } from '~/utilities'
+
+import { styled } from '../../stitches'
+import { Box } from '..'
+import type { IPaginationItemProps } from './types'
+import { usePagination } from './usePagination'
 
 const Dot = styled(Box, {
   borderRadius: '$round',
@@ -13,17 +13,28 @@ const Dot = styled(Box, {
   bg: '$accent9'
 })
 
-const StyledButton = styled(Button, {
+const StyledButton = styled('button', {
+  alignItems: 'center',
+  border: 'unset',
+  borderRadius: '$0',
+  cursor: 'pointer',
+  fontFamily: '$body',
+  justifyContent: 'center',
+  whiteSpace: 'nowrap',
+  width: 'max-content',
   display: 'flex',
   flexDirection: 'column',
-  p: '0 !important',
+  p: '0',
   fontWeight: 400,
-  color: '$grey800 !important',
-  bg: '$base1 !important',
+  color: '$grey800',
+  bg: '$base1',
   '&:not(:disabled)': {
+    '&:active': {
+      bg: '$base3'
+    },
     '&:hover': {
-      bg: '$base2 !important',
-      color: '$grey900 !important',
+      bg: '$base2',
+      color: '$accent10',
       [`& ${Dot}`]: {
         bg: '$accent10'
       }
@@ -35,7 +46,7 @@ const StyledButton = styled(Button, {
       },
       ...focusVisibleStyleBlock(),
       border: '2px solid $blue800',
-      boxShadow: 'inset 0 0 0 2px $white',
+      boxShadow: 'inset white 0px 0px 0px 2px',
       outline: 'unset'
     }
   },
@@ -46,24 +57,35 @@ const StyledButton = styled(Button, {
   variants: {
     size: {
       md: {
-        width: '$4'
+        width: '$4',
+        height: '$4'
       }
     },
     selected: {
       true: {
         border: '1px solid $accent9',
+        color: '$accent9',
         fontWeight: 600,
         '&:hover': {
-          borderColor: '$accent10'
+          borderColor: '$accent10',
+          color: '$accent10'
+        },
+        '&:active': {
+          borderColor: '$accent11',
+          fontColor: '$accent11'
+        },
+        '&:focus-visible': {
+          ...focusVisibleStyleBlock(),
+          border: '2px solid $blue800'
         }
       }
     },
     indicated: {
       true: {
         fontWeight: 600,
-        color: '$accent9 !important',
+        color: '$accent9',
         '&:hover': {
-          color: '$accent10 !important'
+          color: '$accent10'
         }
       }
     }
@@ -84,7 +106,7 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
 
   const handleOnHover = () => {
     if (isSelected) return
-    debounce(1000, () => onItemHover?.(pageNumber))
+    onItemHover?.(pageNumber)
   }
 
   return (

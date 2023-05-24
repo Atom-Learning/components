@@ -1,5 +1,9 @@
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
-import { numOfPaginationItemsToRender } from './pagination.helper'
+import {
+  numOfPaginationItemsToRender,
+  findNextAvailablePage,
+  findPreviousAvailablePage
+} from './pagination.helper'
 
 describe('numOfPaginationItemsToRender', () => {
   it('should render the correct array if pagesCount is less than or equal to the truncated threshold', async () => {
@@ -98,5 +102,47 @@ describe('numOfPaginationItemsToRender', () => {
     )
 
     expect(array).toEqual([6, 7, 8, 9])
+  })
+})
+
+describe('findNextAvailablePage', () => {
+  it('should return the next available page when there are disabled pages', async () => {
+    const disabledPages = [1, 2, 3, 5]
+    const startPage = 1
+    const nextAvailablePage = findNextAvailablePage(startPage, disabledPages)
+
+    expect(nextAvailablePage).toBe(4)
+  })
+
+  it('should return the start page when there are no disabled pages', () => {
+    const disabledPages = []
+    const startPage = 1
+    const nextAvailablePage = findNextAvailablePage(startPage, disabledPages)
+
+    expect(nextAvailablePage).toBe(startPage)
+  })
+})
+
+describe('findPreviousAvailablePage', () => {
+  it('should return the previous available page when there are disabled pages', () => {
+    const disabledPages = [2, 3, 5, 6]
+    const startPage = 6
+    const previousAvailablePage = findPreviousAvailablePage(
+      startPage,
+      disabledPages
+    )
+
+    expect(previousAvailablePage).toBe(4)
+  })
+
+  it('should return the start page when there are no disabled pages', () => {
+    const disabledPages = []
+    const startPage = 1
+    const previousAvailablePage = findPreviousAvailablePage(
+      startPage,
+      disabledPages
+    )
+
+    expect(previousAvailablePage).toBe(startPage)
   })
 })

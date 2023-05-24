@@ -1,6 +1,13 @@
 import * as React from 'react'
 
-import { RENDER_SIX_ELEMENTS } from '../pagination.constants'
+import {
+  RENDER_EIGHT_ELEMENTS,
+  RENDER_SIX_ELEMENTS
+} from '../pagination.constants'
+import {
+  findNextAvailablePage,
+  findPreviousAvailablePage
+} from '../pagination.helper'
 import type { TPaginationContext, TPaginationProviderProps } from '../types'
 
 export const PaginationContext = React.createContext<TPaginationContext>({
@@ -11,7 +18,8 @@ export const PaginationContext = React.createContext<TPaginationContext>({
   visibleElementsCount: RENDER_SIX_ELEMENTS,
   pagesCount: 0,
   onItemHover: () => null,
-  labels: {}
+  labels: {},
+  isMaxVisibleElementCount: false
 })
 
 export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
@@ -26,43 +34,71 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   children
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
+  const isMaxVisibleElementCount =
+    visibleElementsCount === RENDER_EIGHT_ELEMENTS
 
   const currentPage = selectedPage || internalCurrentPage
 
-  const goToPage = (pageNumber: number) => {
+  const goToPage = React.useCallback((pageNumber: number) => {
     setInternalCurrentPage(pageNumber)
     onSelectedPageChange?.(pageNumber)
-  }
+  }, [])
 
-  const goToPreviousPage = () => {
+  const goToPreviousPage = React.useCallback(() => {
     if (currentPage === 1) {
       return
     }
-    goToPage(currentPage - 1)
-  }
+    const previousPage = currentPage - 1
+    const previousAvailablePage = findPreviousAvailablePage(
+      previousPage,
+      disabledPages
+    )
 
-  const goToNextPage = () => {
+    if (previousAvailablePage < 1) return
+    goToPage(previousAvailablePage)
+  }, [currentPage, disabledPages, goToPage])
+
+  const goToNextPage = React.useCallback(() => {
     if (currentPage === pagesCount) {
       return
     }
-    goToPage(currentPage + 1)
-  }
+    const nextPage = currentPage + 1
+    const nextAvailablePage = findNextAvailablePage(nextPage, disabledPages)
+
+    if (nextAvailablePage > pagesCount) return
+    goToPage(nextAvailablePage)
+  }, [currentPage, disabledPages, goToPage])
+
+  const value = React.useMemo(() => {
+    return {
+      goToNextPage,
+      goToPreviousPage,
+      goToPage,
+      currentPage,
+      visibleElementsCount,
+      indicatedPages,
+      disabledPages,
+      pagesCount,
+      onItemHover,
+      labels,
+      isMaxVisibleElementCount
+    }
+  }, [
+    goToNextPage,
+    goToPreviousPage,
+    goToPage,
+    currentPage,
+    visibleElementsCount,
+    indicatedPages,
+    disabledPages,
+    pagesCount,
+    onItemHover,
+    labels,
+    isMaxVisibleElementCount
+  ])
 
   return (
-    <PaginationContext.Provider
-      value={{
-        goToNextPage,
-        goToPreviousPage,
-        goToPage,
-        currentPage,
-        visibleElementsCount,
-        indicatedPages,
-        disabledPages,
-        pagesCount,
-        onItemHover,
-        labels
-      }}
-    >
+    <PaginationContext.Provider value={value}>
       {children}
     </PaginationContext.Provider>
   )

@@ -1,6 +1,3 @@
-import * as React from 'react'
-
-import { Pagination } from './index'
 import {
   fireEvent,
   render,
@@ -9,6 +6,9 @@ import {
   within
 } from '@testing-library/react'
 import { axe } from 'jest-axe'
+import * as React from 'react'
+
+import { Pagination } from './index'
 
 const pageChangeSpy = jest.fn()
 
@@ -128,6 +128,68 @@ describe('Pagination component', () => {
     expect(screen.getByRole('button', { name: '2' })).toBeDisabled()
   })
 
+  it('skips disabled pagination items as we navigate, and show 8 visible elements', async () => {
+    await render(
+      <Pagination
+        pagesCount={10}
+        disabledPages={[2, 4, 5]}
+        onSelectedPageChange={pageChangeSpy}
+        visibleElementsCount={8}
+      />
+    )
+
+    expect(await screen.findByText(1)).toBeVisible()
+
+    // By default the first page button is the active button
+    expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+
+    fireEvent.click(screen.getByRole('button', { name: 'Next page' }))
+
+    // As page 2 is disabled we should have been skipped and we should be on page 3
+    expect(screen.getByRole('button', { name: '3' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+  })
+
+  it('skips disabled pagination items as we navigate, and show 6 visible elements', async () => {
+    await render(
+      <Pagination
+        pagesCount={10}
+        disabledPages={[3, 5, 6]}
+        onSelectedPageChange={pageChangeSpy}
+      />
+    )
+
+    expect(await screen.findByText(1)).toBeVisible()
+
+    // By default the first page button is the active button
+    expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+
+    // Navigate to the second page
+    const nextPageButton = screen.getByRole('button', { name: 'Next page' })
+    fireEvent.click(nextPageButton)
+
+    expect(screen.getByRole('button', { name: '2' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+
+    fireEvent.click(nextPageButton)
+
+    // As page 3 is disabled we should have been skipped and we should be on page 4
+    expect(screen.getByRole('button', { name: '4' })).toHaveAttribute(
+      'aria-current',
+      'page'
+    )
+  })
+
   it('renders the correct pagination items as we navigate when we show 8 visible elements', async () => {
     await render(
       <Pagination
@@ -136,6 +198,8 @@ describe('Pagination component', () => {
         visibleElementsCount={8}
       />
     )
+
+    expect(await screen.findByText(1)).toBeVisible()
 
     // Click the Next Page button three times
     const nextPageButton = screen.getByRole('button', { name: 'Next page' })

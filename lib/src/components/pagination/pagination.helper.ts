@@ -29,3 +29,25 @@ export const numOfPaginationItemsToRender = (
     currentPage + (isMaxVisibleElementCount ? 1 : 0)
   )
 }
+
+export const findNextAvailablePage = (
+  startPage: number,
+  disabledPages?: number[]
+): number => {
+  let nextPage = startPage
+  while (disabledPages?.includes(nextPage)) {
+    nextPage++
+  }
+  return nextPage
+}
+
+export const findPreviousAvailablePage = (
+  startPage: number,
+  disabledPages?: number[]
+): number => {
+  let previousPage = startPage
+  while (disabledPages?.includes(previousPage)) {
+    previousPage--
+  }
+  return previousPage
+}
