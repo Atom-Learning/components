@@ -5,7 +5,7 @@ links:
   viewSource: components/data-table
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       `DataTable` provides complex features for tables, like sorting and
       pagination. 
@@ -357,6 +357,108 @@ tabs:
 
 
       Test
+  - title: Usage
+    content: >-
+      ## Overview
+
+
+      A data table is a graphical **representation of data in a tabular format** that is typically used to display large amounts of information in a condensed and organised manner.
+
+
+      When designing data table with users in mind, it's important to follow some key factors:
+
+
+      * **Scannability** - users should be able to quickly and easily scan the data table to find the information they are looking for. This can be accomplished by using clear and concise headings and labels, as well as alternating row colours or bold text to differentiate between rows.
+
+      * **Interactive** - data table components should be interactive and allow users to sort, filter, and search the data to find the information they need.
+
+      * **Contextual Information** - users may need additional context to fully understand the data presented in the table. This can be accomplished by providing explanatory text or tooltips that provide additional information about the data being displayed.
+
+      * **Responsive** - data table components should be designed to work on a variety of devices and screen sizes.
+
+
+      ![Data table overview](/assets/images/data-table-overview-01.svg "Data table overview")
+
+
+
+
+      ## When to use
+
+
+      Data tables are often used in applications that require users to sort, filter, search or view large data sets, such as financial applications, data analysis tools, and content management systems.\
+
+      \
+
+      Data tables are a great way to present and organise data in a way that allows users to scan and look for patterns, as well as develop insights from the actual data. \
+
+      Use data table component when you need to manipulate or view large amounts of data in a tabular format.
+
+
+      ![Large amount of data in a table](/assets/images/data-table-large-amount-of-data-02.svg "Large amount of data in a table")
+
+
+      ### Sorting
+
+
+      ![Sorting by default, with a possibility to sort each column](/assets/images/data-table-03-sorting-by-default.svg "Sorting by default, with a possibility to sort each column")
+
+
+      Sorting by default, with a possibility to sort each column
+
+
+      ### Bulk actions
+
+
+      ![Multiple row selection + bulk actions](/assets/images/data-table-04-bulk-actions.svg "Multiple row selection + bulk actions")
+
+
+      Multiple row selection + bulk actions
+
+
+      Bulk actions in a table refer to performing a single action on multiple items simultaneously, rather than individually performing the action on each item separately. It allows users to efficiently manage and manipulate large sets of data within a table or list.\
+
+      \
+
+      Bulk actions can be used to modify, update, or delete multiple data entries at once. For example, in Atom Prime, this feature may allow the teacher to delete multiple old homework instead of deleting them individually.\
+
+      \
+
+      To utilize bulk actions users can select multiple items by checking the checkboxes and then trigger the desired action from a toolbar that appears temporarily above the table while items are selected.
+
+
+      ### Empty states
+
+
+      ![data table empty states](/assets/images/data-table-05-empty-states.svg "data table empty states")
+
+
+      ### Horizontal scrolling
+
+
+      ![Table horizontal scroll](/assets/images/data-table-06-horizontal-scroll.svg "Table horizontal scroll")
+
+
+      ### Overflow menu
+
+
+      ![table overflow menu](/assets/images/data-table-07-overflow-menu.svg "table overflow menu")
+
+
+      ### Filtering
+
+
+      ![table filtering](/assets/images/data-table-08-filtering.svg "table filtering")
+
+
+      Filtering allows users to drill down on data and extract insights more efficiently. Users can filter by entering specific text in the search bar or selecting already defined keywords. For example, in Atom Prime, in Manage Student Table, the teacher can reduce the amount of data by filtering by class and get the desired results faster.
+
+
+
+
+      ## Do's and Don'ts
+
+
+      <DosAndDonts items={[{"type":"do","description":"always provide clear labels for table’s headings and content.","image":"/assets/images/data-table-10-dos-and-donts.svg"},{"image":"/assets/images/data-table-11-dos-and-donts.svg","description":"provide inappropriate labels, that don’t reflect the content.","type":"dont"},{"type":"do","image":"/assets/images/data-table-12-dos-and-donts.svg","description":"align content top-left in each row’s cell (except for numeric values)."},{"image":"/assets/images/data-table-13-dos-and-donts.svg","type":"dont","description":"use different alignments inside a row cell."},{"image":"/assets/images/data-table-14-dos-and-donts.svg","type":"do","description":"prioritise the columns and sort the most important information starting from left to right."},{"type":"avoid","description":"placing columns in random order.","image":"/assets/images/data-table-15-dos-and-donts.svg"},{"type":"do","description":"use the same row size.","image":"/assets/images/data-table-16-dos-and-donts.svg"},{"type":"dont","description":"mix the row sizes.","image":"/assets/images/data-table-17-dos-and-donts.svg"},{"type":"do","description":"use the same format of dates everywhere.","image":"/assets/images/data-table-18-dos-and-donts.svg"},{"type":"do","description":"mix format of dates.","image":"/assets/images/data-table-19-dos-and-donts.svg"},{"type":"do","description":"use responsive pagination on smaller breakpoints.","image":"/assets/images/data-table-20-dos-and-donts.svg"},{"type":"do","description":"use the first fixed column for complex tables that require horizontal scrolling.","image":"/assets/images/data-table-21-dos-and-donts.svg"}]} />
 parent: A4GgFCvNbHBt9iaKdB7Kv
 uuid: cagh7LpcbxiyLCvvU3T8m
 nestedSlug:
