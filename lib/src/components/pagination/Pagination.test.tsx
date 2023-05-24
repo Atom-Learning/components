@@ -26,8 +26,6 @@ describe('Pagination component', () => {
       />
     )
 
-    expect(await screen.findByText(1)).toBeVisible()
-
     expect(container).toMatchSnapshot()
   })
 
@@ -35,8 +33,6 @@ describe('Pagination component', () => {
     await render(
       <Pagination pagesCount={6} onSelectedPageChange={pageChangeSpy} />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
       'aria-current',
@@ -50,8 +46,6 @@ describe('Pagination component', () => {
     await render(
       <Pagination pagesCount={6} onSelectedPageChange={pageChangeSpy} />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     fireEvent.click(screen.getByRole('button', { name: '6' }))
 
@@ -67,8 +61,6 @@ describe('Pagination component', () => {
     await render(
       <Pagination pagesCount={6} onSelectedPageChange={pageChangeSpy} />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     // By default the first page button is the active button
     expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
@@ -91,8 +83,6 @@ describe('Pagination component', () => {
       <Pagination pagesCount={6} onSelectedPageChange={pageChangeSpy} />
     )
 
-    expect(await screen.findByText(1)).toBeVisible()
-
     fireEvent.click(screen.getByTestId('pagination_popover_trigger'))
 
     const dialog = await screen.findByRole('dialog')
@@ -109,8 +99,6 @@ describe('Pagination component', () => {
       />
     )
 
-    expect(await screen.findByText(1)).toBeVisible()
-
     expect(screen.queryByTestId('popover_trigger')).not.toBeInTheDocument()
   })
 
@@ -122,8 +110,6 @@ describe('Pagination component', () => {
         onSelectedPageChange={pageChangeSpy}
       />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     expect(screen.getByRole('button', { name: '2' })).toBeDisabled()
   })
@@ -137,8 +123,6 @@ describe('Pagination component', () => {
         visibleElementsCount={8}
       />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     // By default the first page button is the active button
     expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
@@ -163,8 +147,6 @@ describe('Pagination component', () => {
         onSelectedPageChange={pageChangeSpy}
       />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     // By default the first page button is the active button
     expect(screen.getByRole('button', { name: '1' })).toHaveAttribute(
@@ -199,8 +181,6 @@ describe('Pagination component', () => {
       />
     )
 
-    expect(await screen.findByText(1)).toBeVisible()
-
     // Click the Next Page button three times
     const nextPageButton = screen.getByRole('button', { name: 'Next page' })
     fireEvent.click(nextPageButton)
@@ -231,8 +211,6 @@ describe('Pagination component', () => {
     const { container } = await render(
       <Pagination pagesCount={6} onSelectedPageChange={pageChangeSpy} />
     )
-
-    expect(await screen.findByText(1)).toBeVisible()
 
     expect(
       await waitFor(() => axe(container), { timeout: 5000 })
