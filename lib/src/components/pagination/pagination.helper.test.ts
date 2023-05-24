@@ -1,16 +1,16 @@
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import {
-  numOfPaginationItemsToRender,
+  getPaginationItemsToRender,
   findNextAvailablePage,
   findPreviousAvailablePage
 } from './pagination.helper'
 
-describe('numOfPaginationItemsToRender', () => {
+describe('getPaginationItemsToRender', () => {
   it('should render the correct array if pagesCount is less than or equal to the truncated threshold', async () => {
     const currentPage = 1
     const pagesCount = 4
     const isMaxVisibleElementCount = false
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -25,7 +25,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 1
     const pagesCount = 8
     const isMaxVisibleElementCount = false
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -38,7 +38,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 4
     const pagesCount = 8
     const isMaxVisibleElementCount = false
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -52,7 +52,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 8
     const pagesCount = 8
     const isMaxVisibleElementCount = false
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -66,7 +66,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 1
     const pagesCount = 10
     const isMaxVisibleElementCount = true
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -80,7 +80,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 5
     const pagesCount = 10
     const isMaxVisibleElementCount = true
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,
@@ -94,7 +94,7 @@ describe('numOfPaginationItemsToRender', () => {
     const currentPage = 10
     const pagesCount = 10
     const isMaxVisibleElementCount = true
-    const array = numOfPaginationItemsToRender(
+    const array = getPaginationItemsToRender(
       currentPage,
       pagesCount,
       TRUNCATED_THRESHOLD,

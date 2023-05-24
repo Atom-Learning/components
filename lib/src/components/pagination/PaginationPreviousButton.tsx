@@ -4,7 +4,7 @@ import * as React from 'react'
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
-import { numOfPaginationItemsToRender } from './pagination.helper'
+import { getPaginationItemsToRender } from './pagination.helper'
 import type { IPaginationNavigationButtonProps } from './types'
 import { usePagination } from './usePagination'
 
@@ -20,7 +20,7 @@ export const PaginationPreviousButton: React.FC<
     isMaxVisibleElementCount
   } = usePagination()
 
-  const paginationItemsInview = numOfPaginationItemsToRender(
+  const paginationItemsInview = getPaginationItemsToRender(
     currentPage,
     pagesCount,
     TRUNCATED_THRESHOLD,

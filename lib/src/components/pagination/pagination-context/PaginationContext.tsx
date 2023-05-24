@@ -25,7 +25,7 @@ export const PaginationContext = React.createContext<TPaginationContext>({
 export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   onSelectedPageChange,
   selectedPage,
-  visibleElementsCount,
+  visibleElementsCount = RENDER_SIX_ELEMENTS,
   pagesCount,
   indicatedPages,
   disabledPages,

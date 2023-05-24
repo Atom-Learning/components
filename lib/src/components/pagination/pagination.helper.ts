@@ -1,4 +1,4 @@
-export const numOfPaginationItemsToRender = (
+export const getPaginationItemsToRender = (
   currentPage: number,
   pagesCount: number,
   truncatedThreshold: number,

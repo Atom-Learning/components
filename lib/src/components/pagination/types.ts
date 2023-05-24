@@ -2,9 +2,6 @@ import { TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
 import { Box } from '..'
 
-export type TPages = {
-  pageNumber: number
-}
 interface ILabels {
   popoverTriggerLabel?: string
   nextPageButtonLabel?: string
