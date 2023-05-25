@@ -1,5 +1,6 @@
 import { ChevronRight } from '@atom-learning/icons'
 import * as React from 'react'
+
 import { styled } from '~/stitches'
 
 import { ActionIcon } from '../action-icon'
