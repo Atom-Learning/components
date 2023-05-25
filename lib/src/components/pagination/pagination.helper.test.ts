@@ -1,8 +1,8 @@
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import {
-  getPaginationItemsToRender,
   findNextAvailablePage,
-  findPreviousAvailablePage
+  findPreviousAvailablePage,
+  getPaginationItemsToRender
 } from './pagination.helper'
 
 describe('getPaginationItemsToRender', () => {

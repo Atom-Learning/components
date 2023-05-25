@@ -1,12 +1,13 @@
 import { ChevronLeft } from '@atom-learning/icons'
 import * as React from 'react'
 
+import { styled } from '~/stitches'
+
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import { getPaginationItemsToRender } from './pagination.helper'
 import { usePagination } from './usePagination'
-import { styled } from '~/stitches'
 
 const StyledActionIcon = styled(ActionIcon, {
   mr: '$1',
