@@ -3,7 +3,73 @@ slug: pagination
 title: Pagination
 tabs:
   - title: Code
-    content: This component is not built yet. Please check Visual and Usage.
+    content: >-
+      
+      NOTE: Currently, only the `md` variant has been implemented.
+
+
+      The `Pagination` component takes in a `colorScheme` object to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
+
+
+      # Anatomy
+
+
+      The root `Pagination` component allows the user to pass in a `pagesCount` prop, it is a number that tells the component how many pagination items to render. It also takes in a `labels`  prop which is an object which has this shape  `{ popoverTiggerLabel: string, nextPageButtonLabel: string, previousPageButtonLabel: string }`, this prop is responsible for adding labels to the next/previous buttons and the popover trigger, if this prop is not added the default labels are  "Next page" for the next page button, "Previous page" for the previous page button and "Open pagination popover" for the popover trigger.
+
+
+      It also takes in a `visibleElementsCount` prop it can take a value 6 or 8, which dictates how many elements in the pagination we wish to render including the navigation buttons, by default, it is set to 6. This component can also takes in an `onSelectedPageChange` prop which is a function that can allow the parent component to have access to the selected page set on the `pagination` component. There is also an `onItemHover` prop which is a function that take a page number as argument and is triggered when a pagination item has been hovered over, we advise you debounce you call back function to prevent function calls.
+
+
+      It can also take in a `selectedPage` prop which allows the parent component to pass in a numerical value indicating which page the parent component is currently showing, if the `selectedPage` prop is not passed in, the `Pagination` component as an internal state to keep track of the current page, by default this state is set to the first page.
+
+
+
+      The `Pagination` component also takes in a `disabledPages` props which is an array of numbers, which indicate which pagination items should be disabled, and it also takes in a `indicatedPages` prop which is also an array of numbers to indicate which pagination item should be display a dot under the page number, which represents the page as completed.
+
+
+
+            
+      # Examples 
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <Pagination
+        pagesCount={6}
+        colorScheme={{ base: 'purple2', accent: 'purple1'}}
+      /> `} language={"tsx"} />
+
+      Above is an example of passing in a number to the `pagesCount` prop that will render 6 pagination items, the `visibleElementsCount` prop is set to 6 by default. So the user will see two navigation buttons, an action button to trigger the popover and 3 page numbers.
+
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <Pagination
+        pagesCount={6}
+        visibleElementsCount={8}
+        colorScheme={{ base: 'grey2', accent: 'blue1'}}
+      /> `} language={"tsx"} />
+
+      Above is an example of passing `visibleElementsCount` prop and setting it to 8. The user will see two navigation buttons, an action button to trigger the popover and five page numbers.
+
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <Pagination
+        colorScheme={{ base: 'grey2', accent: 'blue1'}}
+        disabledPages={[1,2]}
+        indicatedPages={[4,5]}
+        pagesCount={5}
+        labels={{ popoverTiggerLabel: 'popover label', nextPageButtonLabel: 'next page label', previousPageButtonLabel: 'previous page label' }}
+      />`} language={"tsx"} /> 
+
+
+      Above is an example of when we use the `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` prop which renders a dot under the page numbers 4 and 5,  and adding custom labels to the next/previous button and popover trigger.
+
+
+      ## API Reference
+
+
+      <ComponentProps component="Pagination" />
   - title: Visual
     content: >-
       ## Structure
