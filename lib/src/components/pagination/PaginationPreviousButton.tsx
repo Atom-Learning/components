@@ -16,7 +16,7 @@ const StyledActionIcon = styled(ActionIcon, {
 })
 
 export const PaginationPreviousButton = (
-  props: React.ComponentProps<typeof StyledActionIcon>
+  props: Partial<React.ComponentProps<typeof StyledActionIcon>>
 ) => {
   const {
     goToPreviousPage,

@@ -222,7 +222,7 @@ exports[`Pagination component renders 1`] = `
     margin: 0;
   }
 
-  .c-hjhDAF {
+  .c-dgBaxS {
     align-items: center;
     border: unset;
     border-radius: var(--radii-0);
@@ -239,36 +239,24 @@ exports[`Pagination component renders 1`] = `
     background: var(--colors-base1);
   }
 
-  .c-hjhDAF:not(:disabled):active {
-    background: var(--colors-base3);
-  }
-
-  .c-hjhDAF:not(:disabled):hover {
-    background: var(--colors-base2);
+  .c-dgBaxS:not(:disabled):hover {
     color: var(--colors-accent10);
+    background: var(--colors-base2);
   }
 
-  .c-hjhDAF:not(:disabled):hover .c-PJLV:where(.c-bFgYuK) {
-    background: var(--colors-accent10);
+  .c-dgBaxS:not(:disabled):active {
+    background: var(--colors-base3);
+    color: var(--colors-grey1000);
   }
 
-  .c-hjhDAF:not(:disabled):focus-visible {
-    background: var(--colors-base1);
-  }
-
-  .c-hjhDAF:not(:disabled):focus-visible .c-PJLV:where(.c-bFgYuK) {
-    background: var(--colors-accent9);
-  }
-
-  .c-hjhDAF:not(:disabled):focus-visible {
-    outline: unset;
+  .c-dgBaxS:not(:disabled):focus-visible {
+    outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: inset white 0px 0px 0px 2px;
-    border: 2px solid var(--colors-blue800);
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-hjhDAF:disabled {
+  .c-dgBaxS:disabled {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -363,33 +351,25 @@ exports[`Pagination component renders 1`] = `
     margin-left: var(--space-1);
   }
 
-  .c-hjhDAF-cVoMNQ-size-md {
+  .c-dgBaxS-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-hjhDAF-ckhtCU-selected-true {
+  .c-dgBaxS-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-hjhDAF-ckhtCU-selected-true:hover {
+  .c-dgBaxS-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-hjhDAF-ckhtCU-selected-true:active {
+  .c-dgBaxS-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
-  }
-
-  .c-hjhDAF-ckhtCU-selected-true:focus-visible {
-    outline: none;
-    position: relative;
-    z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
-    border: 2px solid var(--colors-blue800);
   }
 
   .c-iKnjyA-kUaMfZ-size-md {
@@ -445,14 +425,14 @@ exports[`Pagination component renders 1`] = `
       <button
         aria-current="page"
         aria-disabled="false"
-        class="c-hjhDAF c-hjhDAF-cVoMNQ-size-md c-hjhDAF-ckhtCU-selected-true"
+        class="c-dgBaxS c-dgBaxS-cVoMNQ-size-md c-dgBaxS-bxzneo-selected-true"
       >
         1
       </button>
       <button
         aria-current="false"
         aria-disabled="false"
-        class="c-hjhDAF c-hjhDAF-cVoMNQ-size-md"
+        class="c-dgBaxS c-dgBaxS-cVoMNQ-size-md"
       >
         2
       </button>
@@ -492,7 +472,7 @@ exports[`Pagination component renders 1`] = `
       <button
         aria-current="false"
         aria-disabled="false"
-        class="c-hjhDAF c-hjhDAF-cVoMNQ-size-md"
+        class="c-dgBaxS c-dgBaxS-cVoMNQ-size-md"
       >
         6
       </button>

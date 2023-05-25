@@ -29,25 +29,16 @@ const StyledButton = styled('button', {
   color: '$grey800',
   bg: '$base1',
   '&:not(:disabled)': {
-    '&:active': {
-      bg: '$base3'
-    },
     '&:hover': {
-      bg: '$base2',
       color: '$accent10',
-      [`& ${Dot}`]: {
-        bg: '$accent10'
-      }
+      bg: '$base2'
+    },
+    '&:active': {
+      bg: '$base3',
+      color: '$grey1000'
     },
     '&:focus-visible': {
-      bg: '$base1',
-      [`& ${Dot}`]: {
-        bg: '$accent9'
-      },
-      ...focusVisibleStyleBlock(),
-      border: '2px solid $blue800',
-      boxShadow: 'inset white 0px 0px 0px 2px',
-      outline: 'unset'
+      ...focusVisibleStyleBlock()
     }
   },
   '&:disabled': {
@@ -66,17 +57,15 @@ const StyledButton = styled('button', {
         border: '1px solid $accent9',
         color: '$accent9',
         fontWeight: 600,
-        '&:hover': {
-          borderColor: '$accent10',
-          color: '$accent10'
-        },
-        '&:active': {
-          borderColor: '$accent11',
-          fontColor: '$accent11'
-        },
-        '&:focus-visible': {
-          ...focusVisibleStyleBlock(),
-          border: '2px solid $blue800'
+        '&:not(:disabled)': {
+          '&:hover': {
+            borderColor: '$accent10',
+            color: '$accent10'
+          },
+          '&:active': {
+            borderColor: '$accent11',
+            fontColor: '$accent11'
+          }
         }
       }
     },
@@ -84,8 +73,19 @@ const StyledButton = styled('button', {
       true: {
         fontWeight: 600,
         color: '$accent9',
-        '&:hover': {
-          color: '$accent10'
+        '&:not(:disabled)': {
+          '&:hover': {
+            color: '$accent10',
+            [`& ${Dot}`]: {
+              bg: '$accent10'
+            }
+          },
+          '&:active': {
+            color: '$accent11',
+            [`& ${Dot}`]: {
+              bg: '$accent11'
+            }
+          }
         }
       }
     }
