@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `NumberInputField` renders a field composed of an NumberInput, a Label
-      and a InlineMessage. It is the preferred way to render a form field for a
+      `NumberInputField` renders a field composed of an NumberInput, a Label and
+      a InlineMessage. It is the preferred way to render a form field for a
       number input.
 
 
@@ -177,13 +177,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![number input dos and donts](/assets/images/08-number-input-dos-and-dont-s.png "number input dos and donts")
-
-
-      ![number input dos and donts 2](/assets/images/09-number-input-dos-and-dont-s.png "number input dos and donts 2")
-
-
-      ![number input dos and donts 3](/assets/images/10-number-input-dos-and-dont-s.png "number input dos and donts 3")
+      <DosAndDonts items={[{"image":"/assets/images/number-input-dos-and-donts-01.svg","type":"do","description":"Your numeric indicator should always be paired with a label so that users know how to complete the field."},{"image":"/assets/images/number-input-dos-and-donts-02.svg","type":"dont","description":"Allow other characters than numeric values."},{"image":"/assets/images/number-input-dos-and-donts-03.svg","type":"do","description":"When a button is disabled show a tooltip on hover explaining why."},{"image":"/assets/images/number-input-dos-and-donts-04.svg","type":"avoid","description":"Avoid this control for values with large range. Use a slider or regular input without buttons instead."},{"image":"/assets/images/number-input-dos-and-donts-05.svg","type":"do","description":"Clarify the step value and the stepper range."},{"image":"/assets/images/number-input-dos-and-donts-06.svg","type":"dont","description":"Allow users enter a bigger than the max value if there's one. "}]} />
 parent: ru0Ovr_U82kdQX8m3WahL
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:

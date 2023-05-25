@@ -6,8 +6,7 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      Combines the Toggle Group radix component with the Chip primitive
-      styling
+      Combines the Toggle Group radix component with the Chip primitive styling
 
 
       Used as a method for filtering a collection of data. Acts like multiple or single selection. Each chip toggles between selected and unselected. When selected, a checkmark appears as the leading icon.
@@ -287,13 +286,7 @@ tabs:
       ## Do's and Don'ts
 
 
-      ![chip dos and dont's 1](/assets/images/19-chip-dos-and-dont-s-1.png "chip dos and dont's 1")
-
-
-      ![chip dos and dont's 2](/assets/images/20-chip-dos-and-dont-s-2.png "chip dos and dont's 2")
-
-
-      ![chip dos and dont's 3](/assets/images/21-chip-dos-and-dont-s-3.png "chip dos and dont's 3")
+      <DosAndDonts items={[{"image":"/assets/images/chips-dos-and-donts-01.svg","type":"do","description":"Truncate text when overflowing the max box width of the parent container’s available horizontal space."},{"image":"/assets/images/chips-dos-and-donts-02.svg","type":"dont","description":"Use for status information, tallies or counts. Use badges instead."},{"image":"/assets/images/chips-dos-and-donts-03.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-04.svg","type":"dont","description":"Chips toggle should not present only a single option."},{"image":"/assets/images/chips-dos-and-donts-05.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-06.svg","type":"dont","description":"Mix Input chips and dismissible Filter chips."}]} />
 parent: HGItoEG3XVs9DpOLugTot
 uuid: P6daKkk_E0jehDkN0So_A
 nestedSlug:

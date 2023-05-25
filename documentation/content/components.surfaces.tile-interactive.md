@@ -4,8 +4,8 @@ title: Tile Interactive
 tabs:
   - title: Code
     content: >-
-      <CodeBlock live={true} preview={true} code={`<TileGroup css={{background:
-      '$grey100', p: '$3', width: '100%'}} justify="center">
+      <CodeBlock live={true} preview={true} code={`<TileGroup
+      css={{background: '$grey100', p: '$3', width: '100%'}} justify="center">
         <TileInteractive onClick={() => alert('onClick')} css={{size: 100 }} borderRadius="md" />
         <TileInteractive href='/' css={{size: 100 }} borderRadius="md" border />
       </TileGroup>`} language={"tsx"} />
