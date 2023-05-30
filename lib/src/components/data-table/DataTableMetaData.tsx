@@ -19,7 +19,7 @@ export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
 
   const getColumnDisplayName = (id: string) => {
     const sortedColumn = columns.find((col) => col.id === id)
-    return sortedColumn?.header
+    return sortedColumn?.header || id
   }
 
   const getSortingString = (sorting) => {
