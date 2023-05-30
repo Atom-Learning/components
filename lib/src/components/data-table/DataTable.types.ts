@@ -5,7 +5,10 @@ import type {
   ExpandedTableState,
   FiltersTableState,
   GroupingTableState,
+  OnChangeFn,
   PaginationTableState,
+  Row,
+  RowSelectionState,
   RowSelectionTableState,
   SortDirection,
   SortingTableState,
@@ -44,6 +47,8 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
+  allowRowSelection?: boolean | ((row: Row<unknown>) => boolean)
+  rowSelection: RowSelectionState
   data: TAsyncDataResult
   /**
    * Directly update the data array that the table rows are built from.

@@ -1,5 +1,4 @@
-import type { UniqueIdentifier } from '@dnd-kit/core'
-import type { PaginationState } from '@tanstack/react-table'
+import { PaginationState, Row, RowSelectionState } from '@tanstack/react-table'
 import {
   getCoreRowModel,
   getFilteredRowModel,
@@ -32,6 +31,7 @@ type DataTableProviderProps = {
   defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
+  allowRowSelection?: boolean | ((row: Row<unknown>) => boolean)
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -43,13 +43,18 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
+  allowRowSelection,
   children
 }: DataTableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
     total: dataProp?.length ?? 0
   })
-  const { isPaginated, applyPagination, paginationState, setPaginationState } =
+
+  const [rowSelection, setRowSelection] =
+    React.useState<RowSelectionState>({})
+
+    const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
 
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
@@ -113,12 +118,15 @@ export const DataTableProvider = ({
     state: {
       sorting,
       globalFilter,
-      pagination: paginationState
+      pagination: paginationState,
+      rowSelection
     },
     manualPagination: getAsyncData && isPaginated,
     manualSorting: getAsyncData && isPaginated,
     enableSorting: asyncDataState !== AsyncDataState.PENDING,
     enableGlobalFilter: !getAsyncData,
+    enableRowSelection: allowRowSelection,
+    onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
@@ -154,9 +162,11 @@ export const DataTableProvider = ({
       getTotalRows,
       isSortable,
       asyncDataState,
-      runAsyncData
+      runAsyncData,
+      allowRowSelection,
+      rowSelection
     }
-  }, [table, applyPagination, getTotalRows, isSortable])
+  }, [table, applyPagination, getTotalRows, isSortable, allowRowSelection])
 
   return (
     <DataTableContext.Provider value={value}>

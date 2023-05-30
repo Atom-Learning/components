@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { DataTableBody } from './DataTableBody'
+import { DataTableBulkActions } from './DataTableBulkActions'
 import { DataTableProvider } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableEmptyState } from './DataTableEmptyState'
@@ -10,6 +11,8 @@ import { DataTableHead } from './DataTableHead'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableLoading } from './DataTableLoading'
 import { DataTableRow } from './DataTableRow'
+import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
+import { DataTableSelectAllRowsCheckbox } from './DataTableSelectAllRowsCheckbox'
 import { DataTableTable } from './DataTableTable'
 import { DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
@@ -106,6 +109,24 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * Extends the EmptyState component
    */
   EmptyState: typeof DataTableEmptyState
+
+  /** Empty state implementation for `DataTable`.
+   *
+   * Renders a checkbox on the header, allowing for bulk selection/deselection of all selectable rows
+   */
+  SelectAllRowsCheckbox: typeof DataTableSelectAllRowsCheckbox
+
+  /** Empty state implementation for `DataTable`.
+   *
+   * Renders a checkbox on the header, allowing for individual selection/deselection of any selectable row
+   */
+  RowSelectionCheckbox: typeof DataTableRowSelectionCheckbox
+
+  /** Empty state implementation for `DataTable`.
+   *
+   * Renders a checkbox on the header, allowing for individual selection/deselection of any selectable row
+   */
+  BulkActions: typeof DataTableBulkActions
 }
 
 /** Context provider for DataTable state and logic.
@@ -127,3 +148,6 @@ DataTable.Table = DataTableTable
 DataTable.Loading = DataTableLoading
 DataTable.Error = DataTableError
 DataTable.EmptyState = DataTableEmptyState
+DataTable.SelectAllRowsCheckbox = DataTableSelectAllRowsCheckbox
+DataTable.RowSelectionCheckbox = DataTableRowSelectionCheckbox
+DataTable.BulkActions = DataTableBulkActions
