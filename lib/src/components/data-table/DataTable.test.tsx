@@ -697,7 +697,6 @@ describe('DataTable MetaData', () => {
         </DataTable>
       </Wrapper>
     )
-    screen.logTestingPlaygroundURL()
     expect(
       screen.getByText('18 items - Sorted by Name ascending')
     ).toBeInTheDocument()
@@ -715,5 +714,24 @@ describe('DataTable MetaData', () => {
     await waitFor(() => {
       expect(screen.findByText('6 items - Sorted by hobby ascending'))
     })
+  })
+
+  it('overwrites custom sorting label', async () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data}
+          defaultSort={{ column: 'name', direction: 'asc' }}
+        >
+          <DataTable.GlobalFilter />
+          <DataTable.MetaData sortLabel="Ordered by" />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(
+      screen.getByText('18 items - Ordered by Name ascending')
+    ).toBeInTheDocument()
   })
 })
