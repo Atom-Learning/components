@@ -5,12 +5,25 @@ import { Text } from '../text'
 import { useDataTable } from './index'
 
 interface IDataTableMetaDataProps {
+  copy?: {
+    sorted_by?: string
+    ascending?: string
+    descending?: string
+    separator?: string
+  }
   sortLabel?: string
   css?: CSS
 }
 
+const defaultCopy = {
+  sorted_by: 'Sorted by',
+  ascending: 'ascending',
+  descending: 'descending',
+  separator: '-'
+}
+
 export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
-  sortLabel,
+  copy,
   css
 }) => {
   const { getState, columns, getRowModel } = useDataTable()
@@ -19,15 +32,19 @@ export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
 
   const totalRows = getRowModel()?.rows?.length
 
+  const copyMerged = { ...defaultCopy, ...copy }
+
   const getColumnDisplayName = (id: string) => {
     const sortedColumn = columns.find((col) => col.id === id)
     return sortedColumn?.header || id
   }
 
   const getSortingString = (sorting) => {
-    return `- ${sortLabel || 'Sorted by'} ${getColumnDisplayName(
-      sorting[0].id
-    )} ${sorting[0].desc ? 'descending' : 'ascending'}`
+    return `${copyMerged.separator} ${
+      copyMerged.sorted_by
+    } ${getColumnDisplayName(sorting[0].id)} ${
+      sorting[0].desc ? copyMerged.descending : copyMerged.ascending
+    }`
   }
 
   return (

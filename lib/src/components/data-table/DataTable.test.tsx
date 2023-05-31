@@ -716,7 +716,7 @@ describe('DataTable MetaData', () => {
     })
   })
 
-  it('overwrites custom sorting label', async () => {
+  it('overwrites custom copy', async () => {
     render(
       <Wrapper>
         <DataTable
@@ -725,13 +725,15 @@ describe('DataTable MetaData', () => {
           defaultSort={{ column: 'name', direction: 'asc' }}
         >
           <DataTable.GlobalFilter />
-          <DataTable.MetaData sortLabel="Ordered by" />
+          <DataTable.MetaData
+            copy={{ sorted_by: 'Ordered by', ascending: 'going up' }}
+          />
           <DataTable.Table sortable />
         </DataTable>
       </Wrapper>
     )
     expect(
-      screen.getByText('18 items - Ordered by Name ascending')
+      screen.getByText('18 items - Ordered by Name going up')
     ).toBeInTheDocument()
   })
 })
