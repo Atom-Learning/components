@@ -1214,7 +1214,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            name
+            Name
           </div>
         </th>
         <th
@@ -2646,7 +2646,7 @@ exports[`DataTable component renders 1`] = `
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            name
+            Name
           </div>
         </th>
         <th
@@ -3611,7 +3611,7 @@ exports[`DataTable server-side renders 1`] = `
           <div
             class="c-dhzjXW c-dhzjXW-ijroWjL-css"
           >
-            name
+            Name
           </div>
         </th>
         <th
@@ -4560,7 +4560,7 @@ exports[`DataTable sticky columns renders 1`] = `
             <div
               class="c-dhzjXW c-dhzjXW-ijroWjL-css"
             >
-              name
+              Name
             </div>
           </th>
           <th

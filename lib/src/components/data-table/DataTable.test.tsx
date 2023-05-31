@@ -25,6 +25,8 @@ const columns = [
     cell: (info) => info.getValue()
   }),
   columnHelper.accessor('name', {
+    id: 'name',
+    header: 'Name',
     cell: (info) => info.getValue()
   }),
   columnHelper.accessor('hobby', {
@@ -110,7 +112,7 @@ describe('DataTable component', () => {
         </DataTable>
       </Wrapper>
     )
-    const nameHeader = screen.getByText('name')
+    const nameHeader = screen.getByText('Name')
 
     userEvent.click(nameHeader) // Sorts ascending
     expect(screen.getByText('agatha')).toBeVisible()
@@ -400,7 +402,7 @@ describe('DataTable server-side', () => {
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
-    const nameHeader = screen.getByText('name')
+    const nameHeader = screen.getByText('Name')
 
     userEvent.click(nameHeader)
 
@@ -430,7 +432,7 @@ describe('DataTable server-side', () => {
     )
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
-    const nameHeader = screen.getByText('name')
+    const nameHeader = screen.getByText('Name')
 
     userEvent.click(nameHeader)
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
@@ -512,7 +514,7 @@ describe('DataTable server-side', () => {
 
     userEvent.click(screen.getByLabelText('Next page'))
     userEvent.click(screen.getByLabelText('Previous page'))
-    userEvent.click(screen.getByText('name'))
+    userEvent.click(screen.getByText('Name'))
 
     expect(screen.getByRole('combobox')).toBeDisabled()
     expect(getAsyncData).toHaveBeenCalledTimes(1)
@@ -677,5 +679,61 @@ describe('DataTable EmptyState', () => {
       </Wrapper>
     )
     expect(container).toMatchSnapshot()
+  })
+})
+
+describe('DataTable MetaData', () => {
+  it('renders row count and sorting', async () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data}
+          defaultSort={{ column: 'name', direction: 'asc' }}
+        >
+          <DataTable.GlobalFilter />
+          <DataTable.MetaData />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(
+      screen.getByText('18 items - Sorted by Name ascending')
+    ).toBeInTheDocument()
+
+    const search = screen.getByRole('searchbox')
+    userEvent.clear(search)
+    userEvent.type(search, 'crossfit')
+    await waitFor(() => {
+      expect(screen.findByText('6 items - Sorted by Name ascending'))
+    })
+
+    const hobbyHeader = screen.getByText('hobby')
+
+    userEvent.click(hobbyHeader)
+    await waitFor(() => {
+      expect(screen.findByText('6 items - Sorted by hobby ascending'))
+    })
+  })
+
+  it('overwrites custom copy', async () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data}
+          defaultSort={{ column: 'name', direction: 'asc' }}
+        >
+          <DataTable.GlobalFilter />
+          <DataTable.MetaData
+            copy={{ sorted_by: 'Ordered by', ascending: 'going up' }}
+          />
+          <DataTable.Table sortable />
+        </DataTable>
+      </Wrapper>
+    )
+    expect(
+      screen.getByText('18 items - Ordered by Name going up')
+    ).toBeInTheDocument()
   })
 })
