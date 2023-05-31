@@ -147,6 +147,7 @@ export const DataTableProvider = ({
   const value: DataTableContextType = React.useMemo(() => {
     return {
       ...table,
+      columns,
       data,
       setData,
       setIsSortable,
