@@ -18,7 +18,7 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Form>
-        <SliderField name="slider" label="Select a value" defaultValue={[50]} />
+        <SliderField name="slider" label="Select a value" defaultValue={[50]} css={{ width: '260px' }} />
       </Form>`} language={"tsx"} />
 
 
