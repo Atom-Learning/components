@@ -61,7 +61,7 @@ tabs:
       `Slider.Steps` work well with the built in `step` property, which defaults to 1 and changes the size of each movement. For example, this would limit the slider to three values only.
 
 
-      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} min={10} max={20} step={5}>
+      <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[15]} min={10} max={20} step={5} css={{ width: '320px' }}>
         <Slider.Steps
           min={10}
           max={20}
