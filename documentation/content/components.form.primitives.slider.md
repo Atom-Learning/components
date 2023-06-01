@@ -18,6 +18,9 @@ tabs:
       Please note: the `value` or `defaultValue` passed in should always be an array.
 
 
+      Please note: the slider or its container need to have a width to be displayed correctly.
+
+
       <CodeBlock live={true} preview={true} code={`<Slider defaultValue={[50]} css={{ width: '320px' }} />`} language={"tsx"} />
 
 
