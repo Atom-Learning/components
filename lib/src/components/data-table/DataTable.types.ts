@@ -50,6 +50,7 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   allowRowSelection?: boolean | ((row: Row<unknown>) => boolean)
   rowSelection: RowSelectionState
   data: TAsyncDataResult
+  columns: any
   /**
    * Directly update the data array that the table rows are built from.
    * This is useful when re-ordering rows, but is high-risk if you're not sure what you're doing!

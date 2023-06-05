@@ -10,6 +10,7 @@ import { DataTableGlobalFilter } from './DataTableGlobalFilter'
 import { DataTableHead } from './DataTableHead'
 import { DataTableHeaderCell } from './DataTableHeaderCell'
 import { DataTableLoading } from './DataTableLoading'
+import { DataTableMetaData } from './DataTableMetaData'
 import { DataTableRow } from './DataTableRow'
 import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
 import { DataTableSelectAllRowsCheckbox } from './DataTableSelectAllRowsCheckbox'
@@ -59,6 +60,11 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    *
    * Can navigate forward, backward, or to any specific page. If you need more customisation options,
    * you can build your own implementation with `useDataTable` and other UI components.
+   *
+   */
+
+  MetaData: typeof DataTableMetaData
+  /** Default display of amount of items and current sorting status for 'DataTable'
    *
    */
 
@@ -141,6 +147,7 @@ DataTable.DataCell = DataTableDataCell
 DataTable.DragAndDropTable = DragAndDropTable
 DataTable.Head = DataTableHead
 DataTable.HeaderCell = DataTableHeaderCell
+DataTable.MetaData = DataTableMetaData
 DataTable.Pagination = Pagination
 DataTable.Row = DataTableRow
 DataTable.GlobalFilter = DataTableGlobalFilter
