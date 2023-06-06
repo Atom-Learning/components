@@ -1,4 +1,8 @@
-import { PaginationState, Row, RowSelectionState } from '@tanstack/react-table'
+import type {
+  PaginationState,
+  Row,
+  RowSelectionState
+} from '@tanstack/react-table'
 import {
   getCoreRowModel,
   getFilteredRowModel,
@@ -51,10 +55,9 @@ export const DataTableProvider = ({
     total: dataProp?.length ?? 0
   })
 
-  const [rowSelection, setRowSelection] =
-    React.useState<RowSelectionState>({})
+  const [rowSelection, setRowSelection] = React.useState<RowSelectionState>({})
 
-    const { isPaginated, applyPagination, paginationState, setPaginationState } =
+  const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
 
   const [asyncDataState, setAsyncDataState] = React.useState<AsyncDataState>(
