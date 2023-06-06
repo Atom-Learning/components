@@ -7,7 +7,7 @@ interface ILabels {
   previousPageButtonLabel?: string
 }
 
-interface TBasePaginationType {
+interface IBasePaginationType {
   pagesCount: number
   onSelectedPageChange?: (pageNumber: number) => void
   selectedPage?: number
@@ -23,9 +23,9 @@ export type TVisibleElementsCount = 6 | 8
 export type TPaginationProps = {
   colorScheme?: TcolorScheme
   css?: CSS
-} & TBasePaginationType
+} & IBasePaginationType
 
-export type TPaginationProviderProps = TBasePaginationType
+export type TPaginationProviderProps = IBasePaginationType
 
 export type TPaginationContext = {
   goToPage: (pagenumber: number) => void
@@ -34,7 +34,7 @@ export type TPaginationContext = {
   currentPage: number
   pagesCount: number
   isMaxVisibleElementCount: boolean
-} & TBasePaginationType
+} & IBasePaginationType
 
 export interface IPaginationItemProps {
   pageNumber: number
