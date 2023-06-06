@@ -6,6 +6,7 @@ interface ILabels {
   nextPageButtonLabel?: string
   previousPageButtonLabel?: string
 }
+
 interface IBasePagination {
   pagesCount: number
   visibleElementsCount: TVisibleElementsCount
