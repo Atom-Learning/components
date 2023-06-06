@@ -103,13 +103,13 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
-  const isIndicated = indicatedPages?.includes(pageNumber)
-  const isDisabled = disabledPages?.includes(pageNumber)
+  const isIndicated = indicatedPages.includes(pageNumber)
+  const isDisabled = disabledPages.includes(pageNumber)
 
   const isSelected = currentPage === pageNumber
 
   const handleOnHover = () => {
-    if (isSelected) return
+    if (isSelected || isDisabled) return
     onItemHover?.(pageNumber)
   }
 

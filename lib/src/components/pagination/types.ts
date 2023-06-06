@@ -6,38 +6,36 @@ interface ILabels {
   nextPageButtonLabel?: string
   previousPageButtonLabel?: string
 }
-
-interface IBasePaginationType {
+interface IBasePagination {
   pagesCount: number
-  onSelectedPageChange?: (pageNumber: number) => void
-  selectedPage?: number
-  visibleElementsCount?: TVisibleElementsCount
-  indicatedPages?: number[]
-  disabledPages?: number[]
-  onItemHover?: (pageNumber: number) => void
-  labels?: ILabels
+  visibleElementsCount: TVisibleElementsCount
+  indicatedPages: number[]
+  disabledPages: number[]
+  labels: ILabels
+  onItemHover: (pageNumber: number) => void
 }
 
 export type TVisibleElementsCount = 6 | 8
 
-export type TPaginationProps = {
-  colorScheme?: TcolorScheme
-  css?: CSS
-} & IBasePaginationType
-
-export type TPaginationProviderProps = IBasePaginationType
-
-export type TPaginationContext = {
-  goToPage: (pagenumber: number) => void
-  goToPreviousPage: () => void
-  goToNextPage: () => void
-  currentPage: number
-  pagesCount: number
-  isMaxVisibleElementCount: boolean
-} & IBasePaginationType
-
 export interface IPaginationItemProps {
   pageNumber: number
   css?: CSS
-  onItemHover?: (pageNumber: number) => void
+}
+export interface IPaginationContext extends IBasePagination {
+  currentPage: number
+  isMaxVisibleElementCount: boolean
+  goToPage: (pagenumber: number) => void
+  goToPreviousPage: () => void
+  goToNextPage: () => void
+}
+
+export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
+  Partial<IBasePagination> & {
+    selectedPage?: number
+    onSelectedPageChange?: (pageNumber: number) => void
+  }
+
+export interface IPaginationProps extends TPaginationProviderProps {
+  colorScheme?: TcolorScheme
+  css?: CSS
 }
