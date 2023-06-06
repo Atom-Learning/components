@@ -28,7 +28,11 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
-            {allowRowSelection && <DataTableSelectAllRowsCheckbox />}
+            {allowRowSelection && (
+              <Table.HeaderCell css={{ width: '$4' }}>
+                <DataTableSelectAllRowsCheckbox />
+              </Table.HeaderCell>
+            )}
             {headerGroup.headers.map((header) => (
               <DataTable.HeaderCell header={header} key={header.id} />
             ))}

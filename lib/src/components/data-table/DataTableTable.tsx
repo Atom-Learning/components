@@ -5,7 +5,6 @@ import { DataTable } from './DataTable'
 import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 import { DataTableLoading } from './DataTableLoading'
-import { Row } from '@tanstack/react-table'
 
 export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
@@ -24,7 +23,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   numberOfStickyColumns = 0,
   ...props
 }) => {
-  const { asyncDataState, getTotalRows, rowSelection } = useDataTable()
+  const { asyncDataState, getTotalRows } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
 
@@ -33,7 +32,6 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   return (
     <>
       <DataTableLoading />
-      {Object.keys(rowSelection || {}).length > 0 &&  <DataTable.BulkActions />}
 
       <Table
         {...props}

@@ -14,10 +14,12 @@ export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
   return (
     <Table.Row>
       {allowRowSelection && row.getCanSelect() && (
-        <DataTableRowSelectionCheckbox
-          isChecked={row.getIsSelected()}
-          onCheckedChange={row.toggleSelected}
-        />
+        <Table.Cell css={{ width: '$4' }}>
+          <DataTableRowSelectionCheckbox
+            isChecked={row.getIsSelected()}
+            onCheckedChange={row.toggleSelected}
+          />
+        </Table.Cell>
       )}
       {row.getVisibleCells().map((cell, i) => {
         return <DataTableDataCell key={cell.id} cell={cell} />

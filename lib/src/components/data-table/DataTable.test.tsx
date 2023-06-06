@@ -12,7 +12,7 @@ import { Button } from '../button'
 import { EmptyState } from '../empty-state'
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
-import { DataTable } from '.'
+import { DataTable, useDataTable } from '.'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -735,5 +735,83 @@ describe('DataTable MetaData', () => {
     expect(
       screen.getByText('18 items - Ordered by Name going up')
     ).toBeInTheDocument()
+  })
+})
+
+describe('DataTable row selection', () => {
+  const clickSpy = jest.fn()
+
+  const TableHead = () => {
+    return (
+      <DataTable.BulkActions>
+        <Button onClick={clickSpy}>Test</Button>
+      </DataTable.BulkActions>
+    )
+  }
+
+  const customRender = () => {
+    return render(
+      <DataTable columns={columns} data={data} allowRowSelection>
+        <TableHead />
+        <DataTable.Table sortable />
+      </DataTable>
+    )
+  }
+
+  it('renders the table with checkboxes on each row', () => {
+    customRender()
+
+    const checkboxes = screen.getAllByRole('checkbox')
+    expect(checkboxes.length).toBe(data.length + 1)
+
+    checkboxes.every((item) => expect(item).not.toBeChecked())
+  })
+
+  it('renders the header checkbox partially checked if just some of the rows are selected', () => {
+    customRender()
+    const checkboxes = screen.getAllByRole('checkbox')
+    userEvent.click(checkboxes[1])
+    expect(checkboxes[0]).toBePartiallyChecked()
+
+    expect(screen.getByText('1 item selected')).toBeVisible()
+  })
+
+  it('adjusts the copy in the bulk actions bar if multiple rows are selected', () => {
+    customRender()
+    const checkboxes = screen.getAllByRole('checkbox')
+    userEvent.click(checkboxes[1])
+    userEvent.click(checkboxes[2])
+    expect(checkboxes[0]).toBePartiallyChecked()
+
+    expect(screen.getByText('2 items selected')).toBeVisible()
+  })
+
+  it('deselects all rows and hides the bulk actions bar when clicking the Cancel button', () => {
+    customRender()
+    const checkboxes = screen.getAllByRole('checkbox')
+    userEvent.click(checkboxes[1])
+    userEvent.click(checkboxes[2])
+    expect(checkboxes[0]).toBePartiallyChecked()
+
+    expect(screen.getByText('2 items selected')).toBeVisible()
+
+    userEvent.click(screen.getByText('Cancel'))
+
+    expect(screen.queryByText('2 items selected')).not.toBeInTheDocument()
+    expect(checkboxes[0]).not.toBeChecked()
+  })
+
+  it('calls the click handler on the custom button action', () => {
+    customRender()
+    const checkboxes = screen.getAllByRole('checkbox')
+    userEvent.click(checkboxes[1])
+    userEvent.click(checkboxes[2])
+    expect(checkboxes[0]).toBePartiallyChecked()
+
+    expect(screen.getByText('2 items selected')).toBeVisible()
+
+    userEvent.click(screen.getByText('Test'))
+
+    expect(clickSpy).toHaveBeenCalled()
   })
 })

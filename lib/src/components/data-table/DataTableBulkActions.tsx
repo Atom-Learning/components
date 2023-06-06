@@ -1,16 +1,30 @@
 import * as React from 'react'
 
+import { Box } from '../box'
 import { Button } from '../button'
+import { DataTable } from '../data-table'
 import { Flex } from '../flex'
 import { useDataTable } from './DataTableContext'
-import { Box } from '../box'
 
-export const DataTableBulkActions: React.FC = ({ children }) => {
-  const { rowSelection, toggleAllPageRowsSelected } = useDataTable()
+interface DataTableBulkActionsProps {
+  copy?: {
+    cancel?: string
+  }
+}
 
-  const selectedRowCount = Object.keys(rowSelection).length
+export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> = ({
+  children,
+  copy = {
+    cancel: 'Cancel'
+  }
+}) => {
+  const { toggleAllPageRowsSelected, rowSelection } = useDataTable()
 
   const handleDeselectAllPageRows = () => toggleAllPageRowsSelected(false)
+
+  if (Object.keys(rowSelection || {}).length === 0) {
+    return null
+  }
 
   return (
     <Flex
@@ -23,14 +37,14 @@ export const DataTableBulkActions: React.FC = ({ children }) => {
         alignItems: 'center'
       }}
     >
-      {selectedRowCount}
+      <DataTable.MetaData />
       <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
         {children}
         {React.Children.count(children) > 0 && (
           <Box css={{ width: '1px', height: '$2', bg: 'black', mx: '$2' }} />
         )}
         <Button theme="neutral" onClick={handleDeselectAllPageRows}>
-          Cancel
+          {copy.cancel}
         </Button>
       </Flex>
     </Flex>
