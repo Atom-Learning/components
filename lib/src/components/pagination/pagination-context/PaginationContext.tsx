@@ -38,10 +38,13 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
 
   const currentPage = selectedPage || internalCurrentPage
 
-  const goToPage = React.useCallback((pageNumber: number) => {
-    setInternalCurrentPage(pageNumber)
-    onSelectedPageChange?.(pageNumber)
-  }, [])
+  const goToPage = React.useCallback(
+    (pageNumber: number) => {
+      setInternalCurrentPage(pageNumber)
+      onSelectedPageChange?.(pageNumber)
+    },
+    [onSelectedPageChange]
+  )
 
   const goToPreviousPage = React.useCallback(() => {
     if (currentPage === 1) {
