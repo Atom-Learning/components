@@ -37,7 +37,7 @@ export const PaginationPreviousButton = (
   // Check if we are on the first page or if the first page is disabled and the page number is rendered
   const isDisabled =
     currentPage === 1 ||
-    (disabledPages.includes(1) && paginationItemsInview.includes(1))
+    (disabledPages?.includes(1) && paginationItemsInview.includes(1))
 
   return (
     <StyledActionIcon

@@ -1,6 +1,5 @@
 import { TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
-import { Box } from '..'
 
 interface ILabels {
   popoverTriggerLabel?: string
@@ -9,28 +8,24 @@ interface ILabels {
 }
 
 interface TBasePaginationType {
-  visibleElementsCount: TVisibleElementsCount
-  indicatedPages: number[]
-  disabledPages: number[]
+  pagesCount: number
+  onSelectedPageChange?: (pageNumber: number) => void
+  selectedPage?: number
+  visibleElementsCount?: TVisibleElementsCount
+  indicatedPages?: number[]
+  disabledPages?: number[]
   onItemHover?: (pageNumber: number) => void
   labels?: ILabels
 }
 
 export type TVisibleElementsCount = 6 | 8
 
-export type TPaginationProps = React.ComponentProps<typeof Box> &
-  TPaginationProviderProps & {
-    colorScheme?: TcolorScheme
-    indicatedPages?: number[]
-    disabledPages?: number[]
-    visibleElementsCount?: TVisibleElementsCount
-  }
-
-export type TPaginationProviderProps = {
-  onSelectedPageChange: (pageNumber: number) => void
-  pagesCount: number
-  selectedPage?: number
+export type TPaginationProps = {
+  colorScheme?: TcolorScheme
+  css?: CSS
 } & TBasePaginationType
+
+export type TPaginationProviderProps = TBasePaginationType
 
 export type TPaginationContext = {
   goToPage: (pagenumber: number) => void

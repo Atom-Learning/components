@@ -8,12 +8,15 @@ import type { IPaginationItemProps } from './types'
 import { usePagination } from './usePagination'
 
 const Dot = styled(Box, {
+  position: 'absolute',
+  bottom: '6px',
   borderRadius: '$round',
   size: '4px',
   bg: '$accent9'
 })
 
 const StyledButton = styled('button', {
+  position: 'relative',
   alignItems: 'center',
   border: 'unset',
   borderRadius: '$0',
@@ -57,6 +60,11 @@ const StyledButton = styled('button', {
         border: '1px solid $accent9',
         color: '$accent9',
         fontWeight: 600,
+        [`& ${Dot}`]: {
+          // Account for the 1px border added when the Pagination Item is selected so the Dot
+          // Doesn't move up and down
+          bottom: '5px'
+        },
         '&:not(:disabled)': {
           '&:hover': {
             borderColor: '$accent10',
@@ -99,8 +107,8 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
-  const isIndicated = indicatedPages.includes(pageNumber)
-  const isDisabled = disabledPages.includes(pageNumber)
+  const isIndicated = indicatedPages?.includes(pageNumber)
+  const isDisabled = disabledPages?.includes(pageNumber)
 
   const isSelected = currentPage === pageNumber
 
