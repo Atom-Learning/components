@@ -35,7 +35,7 @@ export const findNextAvailablePage = (
   disabledPages: number[]
 ): number => {
   let nextPage = startPage
-  while (disabledPages?.includes(nextPage)) {
+  while (disabledPages.includes(nextPage)) {
     nextPage++
   }
   return nextPage
@@ -46,7 +46,7 @@ export const findPreviousAvailablePage = (
   disabledPages: number[]
 ): number => {
   let previousPage = startPage
-  while (disabledPages?.includes(previousPage)) {
+  while (disabledPages.includes(previousPage)) {
     previousPage--
   }
   return previousPage

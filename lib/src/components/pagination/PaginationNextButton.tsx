@@ -37,7 +37,7 @@ export const PaginationNextButton = (
   // Check if we are on the last page or if the last page is disabled and the if the second to last page number is rendered
   const isDisabled =
     currentPage === pagesCount ||
-    (disabledPages?.includes(pagesCount) &&
+    (disabledPages.includes(pagesCount) &&
       paginationItemsInview.includes(pagesCount - 1))
 
   return (
