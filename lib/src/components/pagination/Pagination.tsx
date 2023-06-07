@@ -6,9 +6,9 @@ import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
-import type { TPaginationProps } from './types'
+import type { IPaginationProps } from './types'
 
-export const Pagination: React.FC<TPaginationProps> = ({
+export const Pagination: React.FC<IPaginationProps> = ({
   colorScheme,
   css,
   ...paginationProps
