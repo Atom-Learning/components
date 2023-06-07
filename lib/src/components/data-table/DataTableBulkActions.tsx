@@ -7,16 +7,12 @@ import { Flex } from '../flex'
 import { useDataTable } from './DataTableContext'
 
 interface DataTableBulkActionsProps {
-  copy?: {
-    cancel?: string
-  }
+  cancelLabel?: string
 }
 
 export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> = ({
   children,
-  copy = {
-    cancel: 'Cancel'
-  }
+  cancelLabel = 'Cancel'
 }) => {
   const { toggleAllPageRowsSelected, rowSelection } = useDataTable()
 
@@ -44,7 +40,7 @@ export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> = ({
           <Box css={{ width: '1px', height: '$2', bg: 'black', mx: '$2' }} />
         )}
         <Button theme="neutral" onClick={handleDeselectAllPageRows}>
-          {copy.cancel}
+          {cancelLabel}
         </Button>
       </Flex>
     </Flex>
