@@ -5,9 +5,9 @@ import {
   findNextAvailablePage,
   findPreviousAvailablePage
 } from '../pagination.helper'
-import type { TPaginationContext, TPaginationProviderProps } from '../types'
+import type { IPaginationContext, TPaginationProviderProps } from '../types'
 
-export const PaginationContext = React.createContext<TPaginationContext>({
+export const PaginationContext = React.createContext<IPaginationContext>({
   goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
@@ -28,8 +28,8 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   pagesCount,
   indicatedPages = [],
   disabledPages = [],
-  onItemHover,
-  labels,
+  onItemHover = () => null,
+  labels = {},
   children
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
@@ -38,10 +38,13 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
 
   const currentPage = selectedPage || internalCurrentPage
 
-  const goToPage = React.useCallback((pageNumber: number) => {
-    setInternalCurrentPage(pageNumber)
-    onSelectedPageChange?.(pageNumber)
-  }, [])
+  const goToPage = React.useCallback(
+    (pageNumber: number) => {
+      setInternalCurrentPage(pageNumber)
+      onSelectedPageChange?.(pageNumber)
+    },
+    [onSelectedPageChange]
+  )
 
   const goToPreviousPage = React.useCallback(() => {
     if (currentPage === 1) {

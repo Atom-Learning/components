@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 import { PaginationContext } from './pagination-context/PaginationContext'
-import type { TPaginationContext } from './types'
+import type { IPaginationContext } from './types'
 
-export const usePagination = (): TPaginationContext => {
+export const usePagination = (): IPaginationContext => {
   const context = React.useContext(PaginationContext)
 
   if (!context) {
