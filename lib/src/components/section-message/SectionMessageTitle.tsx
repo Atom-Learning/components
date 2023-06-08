@@ -9,7 +9,6 @@ export const SectionMessageTitle = ({
   <Text
     css={{
       fontWeight: 600,
-      mb: '$2',
       ...css
     }}
     size="md"
