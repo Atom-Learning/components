@@ -1,48 +1,73 @@
 import * as React from 'react'
 
-import { Flex } from '~/components/flex'
+import { Heading } from '~/components/heading'
+import { Image } from '~/components/image'
+import { Stack } from '~/components/stack'
+import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 
-import { EmptyStateBody } from './EmptyStateBody'
-import { EmptyStateImage } from './EmptyStateImage'
-import { EmptyStateTitle } from './EmptyStateTitle'
-
-const EmptyStateContainer = styled(Flex, {
-  flexDirection: 'column',
-  alignItems: 'center',
-  textAlign: 'center',
-  '& > *:last-child': {
-    mb: 0
-  },
+export const EmptyStateTitle = styled(Heading, {
+  color: '$tonal400',
+  fontFamily: '$body',
+  fontWeight: '600',
   variants: {
     size: {
-      xs: {
-        p: '$2'
-      },
-      sm: {
-        p: '$3'
-      },
-      md: {
-        p: '$4'
-      },
-      lg: {
-        p: '$5'
-      },
-      xl: {
-        p: '$6'
-      }
+      xs: { fontSize: '$md' },
+      sm: { fontSize: '$md' },
+      md: { fontSize: '$md' },
+      lg: { fontSize: '$lg' },
+      xl: { fontSize: '$lg' }
     }
   }
 })
 
-type EmptyStateProps = React.ComponentProps<typeof EmptyStateContainer>
+export const EmptyStateImage = styled(Image, {
+  variants: {
+    size: {
+      xs: { maxWidth: '56px', maxHeight: '32px' },
+      sm: { maxWidth: '84px', maxHeight: '48px' },
+      md: { maxWidth: '126px', maxHeight: '72px' },
+      lg: { maxWidth: '190px', maxHeight: '142px' },
+      xl: { maxWidth: '285px', maxHeight: '213px' }
+    }
+  }
+})
 
-export const EmptyState: React.FC<EmptyStateProps> & {
-  Image: typeof EmptyStateImage
-  Title: typeof EmptyStateTitle
-  Body: typeof EmptyStateBody
-} = ({ size = 'sm', children, ...props }) => (
-  <EmptyStateContainer size={size} {...props}>
+export const EmptyStateBody = styled(Text, {
+  color: '$tonal400',
+  fontWeight: '400',
+  variants: {
+    size: {
+      xs: { fontSize: '$sm' },
+      sm: { fontSize: '$sm' },
+      md: { fontSize: '$sm' },
+      lg: { fontSize: '$md' },
+      xl: { fontSize: '$md' }
+    }
+  }
+})
+
+const EmptyStateContainer = styled(Stack, {
+  textAlign: 'center',
+  variants: {
+    size: {
+      xs: { p: '$2' },
+      sm: { p: '$3' },
+      md: { p: '$4' },
+      lg: { p: '$5' },
+      xl: { p: '$6' }
+    }
+  }
+})
+
+export const EmptyState = ({
+  size = 'sm',
+  children,
+  ...props
+}: React.PropsWithChildren<
+  React.ComponentPropsWithoutRef<typeof EmptyStateContainer>
+>) => (
+  <EmptyStateContainer {...props} direction="column" gap="3" size={size}>
     {React.Children.map(children, (child) => {
       if (!React.isValidElement(child)) return child
 
@@ -59,7 +84,8 @@ export const EmptyState: React.FC<EmptyStateProps> & {
   </EmptyStateContainer>
 )
 
-EmptyState.displayName = 'EmptyState'
 EmptyState.Image = EmptyStateImage
 EmptyState.Title = EmptyStateTitle
 EmptyState.Body = EmptyStateBody
+
+EmptyState.displayName = 'EmptyState'

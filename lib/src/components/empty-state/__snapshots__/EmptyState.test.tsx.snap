@@ -6,14 +6,15 @@ exports[`EmptyState component renders a component 1`] = `
     display: flex;
   }
 
-  .c-QtuIU {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
   }
 
-  .c-QtuIU > *:last-child {
-    margin-bottom: 0;
+  .c-gjdJOs {
+    text-align: center;
   }
 
   .c-eyOYLV {
@@ -41,13 +42,20 @@ exports[`EmptyState component renders a component 1`] = `
 }
 
 @media  {
-  .c-QtuIU-gtyVWU-size-sm {
+  .c-kZPaUL-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-kZPaUL-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-gjdJOs-gtyVWU-size-sm {
     padding: var(--space-3);
   }
 
-  .c-eyOYLV-gNjhJG-size-sm {
+  .c-eyOYLV-kWyXas-size-sm {
     font-size: var(--fontSizes-md);
-    margin-bottom: var(--space-3);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -67,23 +75,22 @@ exports[`EmptyState component renders a component 1`] = `
     display: table;
   }
 
-  .c-cXdTNb-kSBam-size-sm {
+  .c-cXdTNb-fAKXXr-size-sm {
     font-size: var(--fontSizes-sm);
-    margin-bottom: var(--space-4);
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
+    class="c-dhzjXW c-kZPaUL c-gjdJOs c-kZPaUL-iTKOFX-direction-column c-kZPaUL-dvnNgW-gap-3 c-gjdJOs-gtyVWU-size-sm"
   >
     <h2
-      class="c-eyOYLV c-eyOYLV-gNjhJG-size-sm"
+      class="c-eyOYLV c-eyOYLV-kWyXas-size-sm"
     >
       No users found!
     </h2>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-fAKXXr-size-sm"
     >
       You need to add some users before you can use this feature
     </p>
