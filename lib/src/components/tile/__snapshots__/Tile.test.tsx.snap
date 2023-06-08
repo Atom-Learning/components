@@ -185,12 +185,8 @@ exports[`Tile component renders 1`] = `
 }
 
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 
   .c-htDHry {
@@ -207,30 +203,24 @@ exports[`Tile component renders 1`] = `
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
+  .c-PJLV-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
+  .c-PJLV-XefLA-wrap-wrap {
     flex-wrap: wrap;
   }
 
-  .c-jgdwfn-awKDG-justify-start {
+  .c-PJLV-awKDG-justify-start {
     justify-content: flex-start;
   }
 
-  .c-jgdwfn-jroWjL-align-center {
+  .c-PJLV-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-jgdwfn-dlytZv-gap-3 {
-    margin-top: calc(var(--space-3)*-1);
-    margin-left: calc(var(--space-3)*-1);
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 > * {
-    margin-top: var(--space-3);
-    margin-left: var(--space-3);
+  .c-PJLV-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 }
 
@@ -243,7 +233,7 @@ exports[`Tile component renders 1`] = `
 
 <div>
   <div
-    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3"
+    class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-dvnNgW-gap-3"
   >
     <div
       class="c-htDHry c-htDHry-ieZrHbP-css interactive-loContrast accent-blue2 base-grey1"

@@ -2,12 +2,8 @@
 
 exports[`renders SectionMessage component and has no programmatically detectable a11y issues 1`] = `
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 
   .c-dbrbZt {
@@ -109,30 +105,24 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
+  .c-PJLV-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
+  .c-PJLV-XefLA-wrap-wrap {
     flex-wrap: wrap;
   }
 
-  .c-jgdwfn-awKDG-justify-start {
+  .c-PJLV-awKDG-justify-start {
     justify-content: flex-start;
   }
 
-  .c-jgdwfn-jroWjL-align-center {
+  .c-PJLV-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-jgdwfn-dlytZv-gap-3 {
-    margin-top: calc(var(--space-3)*-1);
-    margin-left: calc(var(--space-3)*-1);
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 > * {
-    margin-top: var(--space-3);
-    margin-left: var(--space-3);
+  .c-PJLV-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-dbrbZt-cyeZeh-size-sm {
@@ -258,7 +248,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     class="c-fdAfLq c-fdAfLq-jtgfr-theme-error c-fdAfLq-cSgxUp-hasIcon-true c-fdAfLq-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
+      class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-dvnNgW-gap-3 c-flbHeh"
     >
       <svg
         aria-hidden="true"

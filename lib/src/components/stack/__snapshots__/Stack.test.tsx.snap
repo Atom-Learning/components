@@ -2,46 +2,54 @@
 
 exports[`Stack component renders 1`] = `
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
+  .c-PJLV-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
+  .c-PJLV-XefLA-wrap-wrap {
     flex-wrap: wrap;
   }
 
-  .c-jgdwfn-awKDG-justify-start {
+  .c-PJLV-awKDG-justify-start {
     justify-content: flex-start;
   }
 
-  .c-jgdwfn-jroWjL-align-center {
+  .c-PJLV-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
+  .c-PJLV-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
+}
 
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+@media  {
+  .c-PJLV-iiLmqTj-css {
+    height: 100px;
+    width: 100px;
+    background: red;
   }
 }
 
 <div>
   <div
-    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2"
-  />
+    class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-kaVYFn-gap-2"
+  >
+    <div
+      class="c-PJLV c-PJLV-iiLmqTj-css"
+    />
+    <div
+      class="c-PJLV c-PJLV-iiLmqTj-css"
+    />
+    <div
+      class="c-PJLV c-PJLV-iiLmqTj-css"
+    />
+  </div>
 </div>
 `;

@@ -20,7 +20,9 @@ const StyledStack = styled(Flex, {
     justify: {
       start: { justifyContent: 'flex-start' },
       center: { justifyContent: 'center' },
-      end: { justifyContent: 'flex-end' }
+      end: { justifyContent: 'flex-end' },
+      'space-between': { justifyContent: 'space-between' },
+      'space-around': { justifyContent: 'space-around' }
     },
     align: {
       start: { alignItems: 'flex-start' },
