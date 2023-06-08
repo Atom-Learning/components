@@ -8,6 +8,10 @@ import type { IPaginationItemProps } from './types'
 import { usePagination } from './usePagination'
 
 const Dot = styled(Box, {
+  position: 'absolute',
+  bottom: '-$1',
+  left: '0',
+  transform: 'translateX(50%)',
   borderRadius: '$round',
   size: '4px',
   bg: '$accent9'
@@ -105,7 +109,7 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
   const isSelected = currentPage === pageNumber
 
   const handleOnHover = () => {
-    if (isSelected) return
+    if (isSelected || isDisabled) return
     onItemHover?.(pageNumber)
   }
 
@@ -121,8 +125,14 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
       aria-disabled={isDisabled}
       onMouseOver={handleOnHover}
     >
-      {pageNumber}
-      {isIndicated && <Dot />}
+      {isIndicated ? (
+        <Box css={{ position: 'relative' }}>
+          {pageNumber}
+          <Dot />
+        </Box>
+      ) : (
+        pageNumber
+      )}
     </StyledButton>
   )
 }
