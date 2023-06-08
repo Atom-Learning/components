@@ -6,6 +6,13 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     display: flex;
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-bvauNG {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
@@ -122,19 +129,11 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-ejCoEP-direction-row {
+  .c-kZPaUL-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
+  .c-kZPaUL-kaVYFn-gap-2 {
     gap: var(--space-2);
   }
 
@@ -207,7 +206,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-kaVYFn-gap-2"
+    class="c-dhzjXW c-kZPaUL c-kZPaUL-ejCoEP-direction-row c-kZPaUL-kaVYFn-gap-2"
   >
     <div
       class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"

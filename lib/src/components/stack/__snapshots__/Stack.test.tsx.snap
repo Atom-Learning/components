@@ -5,27 +5,12 @@ exports[`Stack component renders 1`] = `
   .c-dhzjXW {
     display: flex;
   }
-}
 
-@media  {
-  .c-PJLV-ejCoEP-direction-row {
+  .c-kZPaUL {
     flex-direction: row;
-  }
-
-  .c-PJLV-XefLA-wrap-wrap {
     flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
     gap: var(--space-2);
+    justify-content: flex-start;
   }
 }
 
@@ -39,7 +24,7 @@ exports[`Stack component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-kaVYFn-gap-2"
+    class="c-dhzjXW c-kZPaUL"
   >
     <div
       class="c-PJLV c-PJLV-iiLmqTj-css"

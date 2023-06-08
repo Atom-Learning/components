@@ -6,6 +6,13 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     display: flex;
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-jCXneY {
     align-items: center;
     -webkit-appearance: none;
@@ -52,23 +59,11 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
 }
 
 @media  {
-  .c-PJLV-ejCoEP-direction-row {
+  .c-kZPaUL-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-PJLV-dvnNgW-gap-3 {
+  .c-kZPaUL-dvnNgW-gap-3 {
     gap: var(--space-3);
   }
 
@@ -101,7 +96,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     tabindex="0"
   >
     <div
-      class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-dvnNgW-gap-3"
+      class="c-dhzjXW c-kZPaUL c-kZPaUL-ejCoEP-direction-row c-kZPaUL-dvnNgW-gap-3"
     >
       <button
         aria-checked="false"

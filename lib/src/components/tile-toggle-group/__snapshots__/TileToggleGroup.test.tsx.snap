@@ -189,6 +189,13 @@ exports[`TileToggleGroup component renders 1`] = `
     display: flex;
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-htDHry {
     all: unset;
     box-sizing: border-box;
@@ -264,27 +271,9 @@ exports[`TileToggleGroup component renders 1`] = `
   }
 }
 
-@media  {
-  .c-PJLV-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
-    gap: var(--space-2);
-  }
-}
-
 <div>
   <div
-    class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-kaVYFn-gap-2"
+    class="c-dhzjXW c-kZPaUL"
     dir="ltr"
     role="group"
     style="outline: none;"

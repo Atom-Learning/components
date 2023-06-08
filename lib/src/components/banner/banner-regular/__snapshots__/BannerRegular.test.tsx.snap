@@ -206,6 +206,13 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--colors-grey900);
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -295,23 +302,7 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-PJLV-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
+  .c-kZPaUL-kaVYFn-gap-2 {
     gap: var(--space-2);
   }
 
@@ -370,7 +361,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-PJLV-ecwQUv-gap-4 {
+    .c-kZPaUL-ecwQUv-gap-4 {
       gap: var(--space-4);
     }
 }
@@ -462,7 +453,7 @@ exports[`BannerRegular component renders 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-kaVYFn-gap-2 c-PJLV-ecwQUv-gap-4"
+        class="c-dhzjXW c-kZPaUL c-kZPaUL-kaVYFn-gap-2 c-kZPaUL-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
@@ -697,6 +688,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--colors-grey900);
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -816,23 +814,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-PJLV-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
+  .c-kZPaUL-kaVYFn-gap-2 {
     gap: var(--space-2);
   }
 
@@ -906,7 +888,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-PJLV-ecwQUv-gap-4 {
+    .c-kZPaUL-ecwQUv-gap-4 {
       gap: var(--space-4);
     }
 }
@@ -1013,7 +995,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-kaVYFn-gap-2 c-PJLV-ecwQUv-gap-4"
+        class="c-dhzjXW c-kZPaUL c-kZPaUL-kaVYFn-gap-2 c-kZPaUL-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"

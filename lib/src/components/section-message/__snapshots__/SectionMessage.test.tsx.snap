@@ -6,6 +6,18 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: flex;
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
+  .c-flbHeh {
+    flex-grow: 1;
+    justify-content: space-between !important;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -89,11 +101,6 @@ exports[`renders SectionMessage component and has no programmatically detectable
     }
 }
 
-  .c-flbHeh {
-    flex-grow: 1;
-    justify-content: space-between !important;
-  }
-
   .c-fdAfLq {
     position: relative;
     border-radius: var(--radii-0);
@@ -105,23 +112,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-PJLV-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-PJLV-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-PJLV-dvnNgW-gap-3 {
+  .c-kZPaUL-dvnNgW-gap-3 {
     gap: var(--space-3);
   }
 
@@ -248,7 +239,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     class="c-fdAfLq c-fdAfLq-jtgfr-theme-error c-fdAfLq-cSgxUp-hasIcon-true c-fdAfLq-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-dhzjXW c-PJLV c-PJLV-ejCoEP-direction-row c-PJLV-XefLA-wrap-wrap c-PJLV-awKDG-justify-start c-PJLV-jroWjL-align-center c-PJLV-dvnNgW-gap-3 c-flbHeh"
+      class="c-dhzjXW c-kZPaUL c-flbHeh c-kZPaUL-dvnNgW-gap-3"
     >
       <svg
         aria-hidden="true"

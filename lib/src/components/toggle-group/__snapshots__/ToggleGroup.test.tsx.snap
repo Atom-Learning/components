@@ -6,6 +6,13 @@ exports[`ToggleGroup renders 1`] = `
     display: flex;
   }
 
+  .c-kZPaUL {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: flex-start;
+  }
+
   .c-iVViNQ {
     background: white;
     color: var(--colors-tonal400);
@@ -84,19 +91,15 @@ exports[`ToggleGroup renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-iTKOFX-direction-column {
+  .c-kZPaUL-iTKOFX-direction-column {
     flex-direction: column;
   }
 
-  .c-PJLV-hjymVw-wrap-no-wrap {
+  .c-kZPaUL-hjymVw-wrap-no-wrap {
     flex-wrap: no-wrap;
   }
 
-  .c-PJLV-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-PJLV-kaVYFn-gap-2 {
+  .c-kZPaUL-kaVYFn-gap-2 {
     gap: var(--space-2);
   }
 
@@ -132,7 +135,7 @@ exports[`ToggleGroup renders 1`] = `
     tabindex="0"
   >
     <div
-      class="c-dhzjXW c-PJLV c-PJLV-iTKOFX-direction-column c-PJLV-hjymVw-wrap-no-wrap c-PJLV-awKDG-justify-start c-PJLV-kaVYFn-gap-2"
+      class="c-dhzjXW c-kZPaUL c-kZPaUL-iTKOFX-direction-column c-kZPaUL-hjymVw-wrap-no-wrap c-kZPaUL-kaVYFn-gap-2"
     >
       <button
         aria-pressed="true"
