@@ -1,11 +1,13 @@
-import * as React from 'react'
-
 import { styled } from '~/stitches'
 import { createThemeVariants } from '~/utilities'
 
 import { Flex } from '../flex'
 
-const StyledStack = styled(Flex, {
+export const Stack = styled(Flex, {
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+  gap: '$2',
+  justifyContent: 'flex-start',
   variants: {
     direction: {
       row: { flexDirection: 'row' },
@@ -27,41 +29,12 @@ const StyledStack = styled(Flex, {
     align: {
       start: { alignItems: 'flex-start' },
       center: { alignItems: 'center' },
-      end: { alignItems: 'flex-end' }
+      end: { alignItems: 'flex-end' },
+      'space-between': { alignItems: 'space-between' },
+      'space-around': { alignItems: 'space-around' }
     },
     gap: createThemeVariants('space', { gap: '$key' })
   }
 })
-
-export const Stack = React.forwardRef<
-  HTMLDivElement,
-  React.ComponentProps<typeof StyledStack>
->(
-  (
-    {
-      gap = 2,
-      direction = 'row',
-      wrap = 'wrap',
-      justify = 'start',
-      align,
-      ...remainingProps
-    },
-    ref
-  ) => (
-    <StyledStack
-      ref={ref}
-      direction={direction}
-      gap={gap}
-      wrap={wrap}
-      justify={justify}
-      align={
-        typeof align === 'undefined' && direction !== 'column'
-          ? 'center'
-          : align
-      }
-      {...remainingProps}
-    />
-  )
-)
 
 Stack.displayName = 'Stack'
