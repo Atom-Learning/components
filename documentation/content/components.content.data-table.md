@@ -338,6 +338,9 @@ tabs:
       <ComponentProps component="DataTable.HeaderCell" />
 
 
+      <ComponentProps component="DataTable.MetaData" />
+
+
       <ComponentProps component="DataTable.Body" />
 
 
