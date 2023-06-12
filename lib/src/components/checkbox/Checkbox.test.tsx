@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-
+import userEvent from '@testing-library/user-event'
 import { Checkbox } from '.'
 
 describe(`Checkbox component`, () => {
@@ -31,5 +31,21 @@ describe(`Checkbox component`, () => {
     )
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('toggles the checkbox on click', async () => {
+    render(
+      <label>
+        <Checkbox title="test" />
+      </label>
+    )
+    const checkbox = screen.getByRole('checkbox')
+    expect(checkbox).not.toBeChecked()
+
+    userEvent.click(checkbox)
+    expect(checkbox).toBeChecked()
+
+    userEvent.click(checkbox)
+    expect(checkbox).not.toBeChecked()
   })
 })

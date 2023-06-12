@@ -2,6 +2,7 @@ import { Minus, Ok } from '@atom-learning/icons'
 import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
+import { Override } from '~/utilities/types'
 import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
@@ -50,21 +51,39 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
       error: {
         borderColor: '$danger'
       }
+    },
+    size: {
+      md: {
+        size: '$1'
+      },
+      lg: {
+        size: '$2'
+      }
     }
   }
 })
 
-type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
+type CheckboxSize = 'md' | 'lg'
+
+const getIconSize = (size: CheckboxSize) => {
+  if (size === 'md') return 14
+  if (size === 'lg') return 22
+  return 14
+}
+
+type CheckboxProps = React.ComponentProps<typeof StyledCheckbox> & {
+  size?: CheckboxSize
+}
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  (props, ref) => (
-    <StyledCheckbox {...props} ref={ref}>
+  ({ size, ...props }, ref) => (
+    <StyledCheckbox {...props} size={size} ref={ref}>
       <StyledIndicator asChild>
         <Icon
           is={props.checked === 'indeterminate' ? Minus : Ok}
           css={{
             strokeWidth: '3',
-            size: 14
+            size: size ? getIconSize(size) : 14
           }}
         />
       </StyledIndicator>
