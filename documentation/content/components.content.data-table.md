@@ -338,6 +338,9 @@ tabs:
       <ComponentProps component="DataTable.HeaderCell" />
 
 
+      <ComponentProps component="DataTable.MetaData" />
+
+
       <ComponentProps component="DataTable.Body" />
 
 
@@ -402,6 +405,12 @@ tabs:
 
 
       Sorting by default, with a possibility to sort each column
+
+
+      ### Meta data
+
+
+      ![Meta data showing number of items and sorting](/assets/images/metadata.png "Meta data showing number of items and sorting")
 
 
       ### Bulk actions
