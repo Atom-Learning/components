@@ -39,7 +39,7 @@ tabs:
 
       \
 
-      To ensure proper resizing, the Aspect Ratio should have only one child element that completely fits within its bounding box. This can be accomplished by utilizing an absolutely positioned [Box primitive](https://atomlearning.design/components/layout/box).\
+      To ensure proper resizing, the Aspect Ratio should have only one child element that completely fits within its bounding box. This can be accomplished by utilizing an absolutely positioned [Box primitive](/components/layout/box).\
 
       \
 

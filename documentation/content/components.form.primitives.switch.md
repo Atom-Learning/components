@@ -71,7 +71,7 @@ tabs:
       Chips Toggle are typically displayed horizontally under the title or next to it. More than one row of chips can wrap to the next row.
 
 
-      ![](blob:https://atomlearning.design/3e5680ad-41f0-474f-9e4e-f1c713456859)
+      ![](blob:/3e5680ad-41f0-474f-9e4e-f1c713456859)
 
 
       ## When to use
