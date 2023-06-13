@@ -410,7 +410,7 @@ tabs:
       ### Meta data
 
 
-      ![Meta data showing number of items and sorting](/assets/images/metadata.png "Meta data showing number of items and sorting")
+      ![Meta data showing number of items and sorting](/assets/images/metadata-1-.png "Meta data showing number of items and sorting")
 
 
       ### Bulk actions
