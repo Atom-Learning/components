@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import { Box } from '../box'
 import { Button } from '../button'
 import { DataTable } from '../data-table'
+import { Divider } from '../divider'
 import { Flex } from '../flex'
 import { useDataTable } from './DataTableContext'
 
@@ -18,9 +18,7 @@ export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> = ({
 
   const handleDeselectAllPageRows = () => toggleAllPageRowsSelected(false)
 
-  if (Object.keys(rowSelection || {}).length === 0) {
-    return null
-  }
+  const isRowsSelected = Object.keys(rowSelection || {}).length > 0
 
   return (
     <Flex
@@ -30,19 +28,22 @@ export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> = ({
         width: '100%',
         mb: '$2',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        minHeight: '$6'
       }}
     >
       <DataTable.MetaData />
-      <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
-        {children}
-        {React.Children.count(children) > 0 && (
-          <Box css={{ width: '1px', height: '$2', bg: 'black', mx: '$2' }} />
-        )}
-        <Button theme="neutral" onClick={handleDeselectAllPageRows}>
-          {cancelLabel}
-        </Button>
-      </Flex>
+      {isRowsSelected && (
+        <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
+          {children}
+          {React.Children.count(children) > 0 && (
+            <Divider orientation="vertical" css={{ mx: '$4' }} />
+          )}
+          <Button theme="neutral" onClick={handleDeselectAllPageRows}>
+            {cancelLabel}
+          </Button>
+        </Flex>
+      )}
     </Flex>
   )
 }
