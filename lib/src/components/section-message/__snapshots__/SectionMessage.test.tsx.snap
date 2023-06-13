@@ -98,10 +98,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
     justify-content: space-between !important;
   }
 
-  .c-iikTjs {
+  .c-fdAfLq {
     position: relative;
     border-radius: var(--radii-0);
     display: flex;
+    min-height: var(--sizes-5);
     padding: var(--space-4);
     border: 1px solid white;
   }
@@ -183,16 +184,16 @@ exports[`renders SectionMessage component and has no programmatically detectable
     max-width: 250px;
   }
 
-  .c-iikTjs-jtgfr-theme-error {
+  .c-fdAfLq-jtgfr-theme-error {
     background: var(--colors-dangerLight);
     color: var(--colors-dangerDark);
   }
 
-  .c-iikTjs-cSgxUp-hasIcon-true {
+  .c-fdAfLq-cSgxUp-hasIcon-true {
     padding-left: var(--space-6);
   }
 
-  .c-iikTjs-IFRSO-hasDismiss-true {
+  .c-fdAfLq-IFRSO-hasDismiss-true {
     padding-right: var(--space-7);
   }
 }
@@ -227,14 +228,17 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: currentColor;
   }
 
-  .c-PJLV-iduWbFV-css {
+  .c-PJLV-iCOfVx-css {
     max-width: 100%;
     flex-shrink: 0;
   }
 
-  .c-dyvMgW-ikMtawB-css {
-    font-weight: 600;
+  .c-PJLV-iCOfVx-css > *:not(:last-child) {
     margin-bottom: var(--space-2);
+  }
+
+  .c-dyvMgW-iecBjWS-css {
+    font-weight: 600;
   }
 
   .c-dyvMgW-ibDwMAO-css {
@@ -251,7 +255,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
 
 <div>
   <div
-    class="c-iikTjs c-iikTjs-jtgfr-theme-error c-iikTjs-cSgxUp-hasIcon-true c-iikTjs-IFRSO-hasDismiss-true"
+    class="c-fdAfLq c-fdAfLq-jtgfr-theme-error c-fdAfLq-cSgxUp-hasIcon-true c-fdAfLq-IFRSO-hasDismiss-true"
   >
     <div
       class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
@@ -278,10 +282,10 @@ exports[`renders SectionMessage component and has no programmatically detectable
         />
       </svg>
       <div
-        class="c-PJLV c-PJLV-iduWbFV-css"
+        class="c-PJLV c-PJLV-iCOfVx-css"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ikMtawB-css"
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iecBjWS-css"
         >
           Title message
         </p>

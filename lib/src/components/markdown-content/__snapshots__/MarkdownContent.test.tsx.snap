@@ -2,40 +2,40 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-NbSdr > *:not(:first-child) {
+  .c-gvpzZh > *:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-NbSdr > *:not(:last-child) {
+  .c-gvpzZh > *:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-NbSdr > .c-jryFOR {
+  .c-gvpzZh > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-NbSdr > .c-dyvMgW {
+  .c-gvpzZh > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-NbSdr > .c-iQukjL {
+  .c-gvpzZh > .c-bBdCwN {
     max-width: 75ch;
   }
 
-  .c-NbSdr > .c-fNKiiB {
+  .c-gvpzZh > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-NbSdr > .c-iSBxEZ {
+  .c-gvpzZh > .c-iSBxEZ {
     display: block;
   }
 
-  .c-NbSdr > .c-iSBxEZ:not(:first-child) {
+  .c-gvpzZh > .c-iSBxEZ:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-NbSdr > .c-iSBxEZ:not(:last-child) {
+  .c-gvpzZh > .c-iSBxEZ:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -69,17 +69,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-style: italic;
   }
 
-  .c-iQukjL {
+  .c-bBdCwN {
+    list-style-position: inside;
     font-family: var(--fonts-body);
     margin: unset;
     padding: unset;
   }
 
-  .c-iQukjL > .c-PJLV:not(:last-child) {
+  .c-bBdCwN > .c-PJLV:not(:last-child) {
     margin-bottom: var(--space-2);
   }
 
-  .c-iQukjL > .c-PJLV:last-child {
+  .c-bBdCwN > .c-PJLV:last-child {
     margin-bottom: 0;
   }
 
@@ -260,52 +261,52 @@ exports[`MarkdownContent component renders 1`] = `
     display: table;
   }
 
-  .c-iQukjL-gvmVBy-size-md {
+  .c-bBdCwN-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-iQukjL-gvmVBy-size-md::before {
+  .c-bBdCwN-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-iQukjL-gvmVBy-size-md::after {
+  .c-bBdCwN-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-iQukjL-fmPQHp-noCapsize-true::before,
-  .c-iQukjL-fmPQHp-noCapsize-true::after {
+  .c-bBdCwN-fmPQHp-noCapsize-true::before,
+  .c-bBdCwN-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
-  .c-iQukjL-DlQlZ-as-ul {
+  .c-bBdCwN-ldmvkx-as-ul {
     padding-left: var(--space-3);
   }
 
-  .c-iQukjL-DlQlZ-as-ul > .c-PJLV {
+  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV {
     padding-left: var(--space-2);
   }
 
-  .c-iQukjL-DlQlZ-as-ul > .c-PJLV::marker {
-    content: "•";
+  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV::marker {
+    content: "• ";
     font-weight: bold;
   }
 
-  .c-iQukjL-jrjcGe-as-ol {
+  .c-bBdCwN-bEVto-as-ol {
     padding-left: var(--space-4);
-    list-style: decimal;
+    list-style-type: decimal;
   }
 
-  .c-iQukjL-jrjcGe-as-ol > .c-PJLV {
+  .c-bBdCwN-bEVto-as-ol > .c-PJLV {
     padding-left: var(--space-1);
   }
 
-  .c-iQukjL-jrjcGe-as-ol > .c-PJLV::marker {
-    font-size: var(--fontSizes-sm);
+  .c-bBdCwN-bEVto-as-ol > .c-PJLV::marker {
+    font-size: .875em;
     font-weight: bold;
   }
 
@@ -332,15 +333,15 @@ exports[`MarkdownContent component renders 1`] = `
     width: 100%;
   }
 
-  .c-iQukjL-igZTZYS-css p:before,
-  .c-iQukjL-igZTZYS-css p:after {
+  .c-bBdCwN-igZTZYS-css p:before,
+  .c-bBdCwN-igZTZYS-css p:after {
     display: none;
   }
 }
 
 <div>
   <div
-    class="c-NbSdr"
+    class="c-gvpzZh"
   >
     <hr
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
@@ -458,7 +459,7 @@ exports[`MarkdownContent component renders 1`] = `
       Unordered
     </h3>
     <ul
-      class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
     >
       <li
         class="c-PJLV"
@@ -495,7 +496,7 @@ exports[`MarkdownContent component renders 1`] = `
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
+          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
         >
           <li
             class="c-PJLV"
@@ -506,7 +507,7 @@ exports[`MarkdownContent component renders 1`] = `
               Marker character change forces new list start:
             </p>
             <ul
-              class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
             >
               <li
                 class="c-PJLV"
@@ -519,7 +520,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
             >
               <li
                 class="c-PJLV"
@@ -532,7 +533,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-DlQlZ-as-ul c-iQukjL-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
             >
               <li
                 class="c-PJLV"
@@ -563,7 +564,7 @@ exports[`MarkdownContent component renders 1`] = `
       Ordered
     </h3>
     <ol
-      class="c-iQukjL c-iQukjL-gvmVBy-size-md c-iQukjL-fmPQHp-noCapsize-true c-iQukjL-jrjcGe-as-ol c-iQukjL-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-igZTZYS-css"
     >
       <li
         class="c-PJLV"
