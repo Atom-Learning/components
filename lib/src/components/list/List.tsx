@@ -29,7 +29,7 @@ export const StyledList = styled('ul', {
         pl: '$3',
         [`& > ${StyledLi}`]: {
           pl: '$2',
-          '&::marker': { content: '•', fontWeight: 'bold' }
+          '&::marker': { content: '• ', fontWeight: 'bold' }
         }
       }
     },
