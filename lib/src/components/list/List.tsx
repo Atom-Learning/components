@@ -22,7 +22,7 @@ export const StyledList = styled('ul', {
         listStyle: 'decimal',
         [`& > ${StyledLi}`]: {
           pl: '$1',
-          '&::marker': { fontSize: '$sm', fontWeight: 'bold' }
+          '&::marker': { fontSize: '.875em', fontWeight: 'bold' }
         }
       },
       ul: {
