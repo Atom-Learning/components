@@ -7,6 +7,7 @@ import { textVariants } from '../text'
 export const StyledLi = styled('li', {})
 
 export const StyledList = styled('ul', {
+  listStylePosition: 'inside',
   fontFamily: '$body',
   m: 'unset',
   p: 'unset',
@@ -19,7 +20,7 @@ export const StyledList = styled('ul', {
     as: {
       ol: {
         pl: '$4',
-        listStyle: 'decimal',
+        listStyleType: 'decimal',
         [`& > ${StyledLi}`]: {
           pl: '$1',
           '&::marker': { fontSize: '.875em', fontWeight: 'bold' }
