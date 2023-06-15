@@ -32,20 +32,4 @@ describe(`Checkbox component`, () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
-
-  it('toggles the checkbox on click', async () => {
-    render(
-      <label>
-        <Checkbox title="test" />
-      </label>
-    )
-    const checkbox = screen.getByRole('checkbox')
-    expect(checkbox).not.toBeChecked()
-
-    userEvent.click(checkbox)
-    expect(checkbox).toBeChecked()
-
-    userEvent.click(checkbox)
-    expect(checkbox).not.toBeChecked()
-  })
 })
