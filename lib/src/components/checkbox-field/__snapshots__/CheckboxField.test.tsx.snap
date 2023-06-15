@@ -79,11 +79,6 @@ exports[`CheckboxField component renders 1`] = `
     font-weight: 400;
     max-width: max-content;
   }
-
-  .c-lhbScT-kupcZn-size-md {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-  }
 }
 
 @media  {
@@ -119,7 +114,7 @@ exports[`CheckboxField component renders 1`] = `
         >
           <button
             aria-checked="false"
-            class="c-lhbScT c-lhbScT-kupcZn-size-md"
+            class="c-lhbScT"
             data-state="unchecked"
             role="checkbox"
             type="button"

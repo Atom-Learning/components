@@ -79,7 +79,7 @@ type CheckboxProps = React.ComponentProps<typeof StyledCheckbox> & {
 }
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size = 'md', ...props }, ref) => {
+  ({ size, ...props }, ref) => {
     const checkboxSize = React.useMemo(
       () => overrideStitchesVariantValue(size, (s) => toCheckboxSize[s]),
       [size]
@@ -98,7 +98,7 @@ export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
             css={{
               strokeWidth: '3'
             }}
-            size={iconSize}
+            size={iconSize || 'sm'}
           />
         </StyledIndicator>
       </StyledCheckbox>
