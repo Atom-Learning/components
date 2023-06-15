@@ -6,6 +6,7 @@ import { Override } from '~/utilities/types'
 import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 const StyledIndicator = styled(RadixCheckbox.Indicator, {
   position: 'absolute',
@@ -63,32 +64,46 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   }
 })
 
-type CheckboxSize = 'md' | 'lg'
+const toCheckboxSize = {
+  md: 'md',
+  lg: 'lg'
+}
 
-const getIconSize = (size: CheckboxSize) => {
-  if (size === 'md') return 14
-  if (size === 'lg') return 22
-  return 14
+const toIconSize = {
+  md: 'sm',
+  lg: 'md'
 }
 
 type CheckboxProps = React.ComponentProps<typeof StyledCheckbox> & {
-  size?: CheckboxSize
+  size?: 'md' | 'lg'
 }
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size, ...props }, ref) => (
-    <StyledCheckbox {...props} size={size} ref={ref}>
-      <StyledIndicator asChild>
-        <Icon
-          is={props.checked === 'indeterminate' ? Minus : Ok}
-          css={{
-            strokeWidth: '3',
-            size: size ? getIconSize(size) : 14
-          }}
-        />
-      </StyledIndicator>
-    </StyledCheckbox>
-  )
+  ({ size = 'md', ...props }, ref) => {
+    const checkboxSize = React.useMemo(
+      () => overrideStitchesVariantValue(size, (s) => toCheckboxSize[s]),
+      [size]
+    )
+
+    const iconSize = React.useMemo(
+      () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+      [size]
+    )
+
+    return (
+      <StyledCheckbox {...props} size={checkboxSize} ref={ref}>
+        <StyledIndicator asChild>
+          <Icon
+            is={props.checked === 'indeterminate' ? Minus : Ok}
+            css={{
+              strokeWidth: '3'
+            }}
+            size={iconSize}
+          />
+        </StyledIndicator>
+      </StyledCheckbox>
+    )
+  }
 )
 
 Checkbox.displayName = 'Checkbox'
