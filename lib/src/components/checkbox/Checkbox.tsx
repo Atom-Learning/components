@@ -2,7 +2,6 @@ import { Minus, Ok } from '@atom-learning/icons'
 import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
-import { Override } from '~/utilities/types'
 import { styled } from '~/stitches'
 
 import { Icon } from '../icon'
@@ -79,7 +78,7 @@ type CheckboxProps = React.ComponentProps<typeof StyledCheckbox> & {
 }
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size, ...props }, ref) => {
+  ({ size = 'md', ...props }, ref) => {
     const checkboxSize = React.useMemo(
       () => overrideStitchesVariantValue(size, (s) => toCheckboxSize[s]),
       [size]
@@ -98,7 +97,7 @@ export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
             css={{
               strokeWidth: '3'
             }}
-            size={iconSize || 'sm'}
+            size={iconSize}
           />
         </StyledIndicator>
       </StyledCheckbox>

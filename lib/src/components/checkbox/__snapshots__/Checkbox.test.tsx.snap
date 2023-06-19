@@ -50,11 +50,18 @@ exports[`Checkbox component renders a checkbox 1`] = `
   }
 }
 
+@media  {
+  .c-lhbScT-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+}
+
 <div>
   <label>
     <button
       aria-checked="false"
-      class="c-lhbScT"
+      class="c-lhbScT c-lhbScT-kupcZn-size-md"
       data-state="unchecked"
       role="checkbox"
       title="test"
