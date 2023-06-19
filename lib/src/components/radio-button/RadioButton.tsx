@@ -23,8 +23,7 @@ const StyledRadioButton = styled(RadioGroup.Item, {
       },
       lg: {
         size: '$2',
-        mt: 'calc($1 * -1)',
-        mb: '$3'
+        mt: '-$1'
       }
     }
   },
@@ -66,7 +65,6 @@ type RadioButtonProps = Override<
   React.ComponentPropsWithoutRef<typeof StyledRadioButton>,
   {
     as?: never
-    size?: 'md' | 'lg'
   } & {
     'aria-label'?: string
   }
