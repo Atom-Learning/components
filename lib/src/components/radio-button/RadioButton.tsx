@@ -16,6 +16,17 @@ const StyledRadioButton = styled(RadioGroup.Item, {
   justifyContent: 'center',
   p: 0,
   size: '$1',
+  variants: {
+    size: {
+      md: {
+        size: '$1'
+      },
+      lg: {
+        size: '$2',
+        mt: '-$1'
+      }
+    }
+  },
   transition: 'all 50ms ease-out',
   '&:focus': {
     outline: '2px solid $primary',
@@ -37,7 +48,17 @@ const StyledIndicator = styled(RadioGroup.Indicator, {
   size: '6px',
   borderRadius: '$round',
   backgroundColor: 'currentcolor',
-  position: 'absolute'
+  position: 'absolute',
+  variants: {
+    size: {
+      md: {
+        size: '6px'
+      },
+      lg: {
+        size: '12px'
+      }
+    }
+  }
 })
 
 type RadioButtonProps = Override<
@@ -49,10 +70,12 @@ type RadioButtonProps = Override<
   }
 >
 
-export const RadioButton: React.FC<RadioButtonProps> = (props) => (
-  <StyledRadioButton {...props}>
-    <StyledIndicator />
-  </StyledRadioButton>
-)
+export const RadioButton: React.FC<RadioButtonProps> = ({ size, ...props }) => {
+  return (
+    <StyledRadioButton {...props} size={size}>
+      <StyledIndicator size={size} />
+    </StyledRadioButton>
+  )
+}
 
 RadioButton.displayName = 'RadioButton'

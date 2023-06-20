@@ -91,7 +91,7 @@ tabs:
 
       \
 
-       Tile has styles but no functional logic in itself, and it is also used to provide common styles for [Tile button](https://atomlearning.design/components/surfaces/tile-interactive) and [Tile toggle](https://atomlearning.design/components/surfaces/tile-toggle-group) which are interactive elements.\
+      Tile has styles but no functional logic in itself, and it is also used to provide common styles for [Tile button](/components/surfaces/tile-interactive) and [Tile toggle](/components/surfaces/tile-toggle-group) which are interactive elements.\
 
       \
 
