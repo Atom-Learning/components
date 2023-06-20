@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useFormContext } from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
 
 import { FieldWrapper } from '~/components/field-wrapper'
 import { useFieldError, ValidationOptions } from '~/components/form'
@@ -19,16 +19,31 @@ export interface NumberInputFieldProps extends NumberInputProps {
 
 export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   css,
+  defaultValue = 0,
+  value,
+  prompt,
+  description,
   label,
   name,
   validation,
-  prompt,
-  description,
+  onValueChange,
   ...remainingProps
 }) => {
-  const { register, trigger } = useFormContext()
+  const { control } = useFormContext()
+  const {
+    field: { ref, onChange, value: innerValue, name: innerName }
+  } = useController({
+    name,
+    control,
+    rules: validation,
+    defaultValue
+  })
   const { error } = useFieldError(name)
-  const ref = validation ? register(validation) : register
+
+  React.useEffect(() => {
+    // Update the react-hook-form inner value to match what is passed in.
+    if (typeof value !== 'undefined') onChange(value)
+  }, [value])
 
   return (
     <FieldWrapper
@@ -42,11 +57,16 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
     >
       <NumberInput
         id={name}
-        name={name}
+        name={innerName}
         ref={ref}
         {...(error && { state: 'error', 'aria-invalid': true })}
+        defaultValue={defaultValue}
+        onValueChange={(newValue) => {
+          onChange(newValue)
+          onValueChange?.(newValue)
+        }}
+        value={innerValue}
         {...remainingProps}
-        onChange={trigger}
       />
     </FieldWrapper>
   )
