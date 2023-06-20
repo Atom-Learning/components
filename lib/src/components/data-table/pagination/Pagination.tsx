@@ -12,7 +12,9 @@ const StyledNav = styled('nav', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  fontVariantNumeric: 'tabular-nums'
+  fontVariantNumeric: 'tabular-nums',
+  flexWrap: 'wrap',
+  rowGap: '$4'
 })
 
 type PaginationProps = React.ComponentProps<typeof StyledNav>
@@ -50,32 +52,46 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
 
   return (
     <StyledNav {...props}>
-      <Text size="sm">
+      <Text
+        size="sm"
+        css={{
+          pr: '$4',
+          '@sm': { flexBasis: '50%' }
+        }}
+      >
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
 
-      <GotoPageSelect
-        gotoPage={setPageIndex}
-        pageCount={getPageCount()}
-        pageIndex={paginationState.pageIndex}
-        disabled={isPaginationDisabled}
-      />
+      <Flex
+        css={{
+          justifyContent: 'space-between',
+          width: '100%',
+          '@sm': { flexBasis: '50%' }
+        }}
+      >
+        <GotoPageSelect
+          gotoPage={setPageIndex}
+          pageCount={getPageCount()}
+          pageIndex={paginationState.pageIndex}
+          disabled={isPaginationDisabled}
+        />
 
-      <Flex css={{ justifyContent: 'flex-end' }}>
-        <DirectionButton
-          direction="previous"
-          disabled={paginationState.pageIndex === 0 || isPaginationDisabled}
-          onClick={previousPage}
-          css={{ mr: '$4' }}
-        />
-        <DirectionButton
-          direction="next"
-          disabled={
-            paginationState.pageIndex === getPageCount() - 1 ||
-            isPaginationDisabled
-          }
-          onClick={nextPage}
-        />
+        <Flex>
+          <DirectionButton
+            direction="previous"
+            disabled={paginationState.pageIndex === 0 || isPaginationDisabled}
+            onClick={previousPage}
+            css={{ mr: '$4' }}
+          />
+          <DirectionButton
+            direction="next"
+            disabled={
+              paginationState.pageIndex === getPageCount() - 1 ||
+              isPaginationDisabled
+            }
+            onClick={nextPage}
+          />
+        </Flex>
       </Flex>
     </StyledNav>
   )
