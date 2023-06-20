@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      The `Table` component displays a collection of data grouped into rows. Its
-      structure mirrors that of a regular HTML table, with the
+      The `Table` component displays a collection of data grouped into rows.
+      Its structure mirrors that of a regular HTML table, with the
       smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table
       Row` components corresponding to
       the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags,
@@ -246,7 +246,7 @@ tabs:
 
       \
 
-      Data tables are a great way to present and organise data in a way that allows users to scan and look for patterns, as well as develop insights from the actual data. \
+      Data tables are a great way to present and organise data in a way that allows users to scan and look for patterns, as well as develop insights from the actual data.\
 
       Use data table component when you need to manipulate or view large amounts of data in a tabular format.
 
