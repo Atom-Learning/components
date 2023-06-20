@@ -46,7 +46,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       value || defaultValue
     )
     React.useEffect(() => {
-      // Update the react-hook-form inner value to match what is passed in.
+      // Update the internal value to match what is passed in.
       if (typeof value !== 'undefined') setInternalValue(value)
     }, [value])
 
