@@ -3,9 +3,9 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { Icon } from '../icon'
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 const StyledIndicator = styled(RadixCheckbox.Indicator, {
   position: 'absolute',
