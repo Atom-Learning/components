@@ -12,41 +12,42 @@ export interface NumberInputProps {
   min?: number
   max?: number
   step?: number
-  initialValue?: number
+  value?: number
+  defaultValue?: number
   disabled?: boolean
   readonly?: boolean
   size?: 'sm' | 'md'
-  onChange?: (value: number) => void
+  onValueChange?: (value: number) => void
   stepperButtonLabels?: { increment?: string; decrement?: string }
   disabledTooltipContent?: { increment?: string; decrement?: string }
   css?: CSS
 }
 
 export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
-  (props: NumberInputProps, forwardedRef): JSX.Element => {
-    const {
-      name,
+  (
+    {
+      value,
+      defaultValue = 0,
+      onValueChange,
       min = 0,
       max = Number.MAX_SAFE_INTEGER,
       step = 1,
-      initialValue = 0,
       disabled: isDisabled = false,
       readonly: isReadOnly = false,
       size = 'md',
-      onChange,
       stepperButtonLabels: stepperButtonLabelsProp,
       disabledTooltipContent: disabledTooltipContentProp,
       css,
       ...rest
-    } = props
-
-    const [value, setValue] = React.useState<number | string>(initialValue)
+    },
+    ref
+  ): JSX.Element => {
+    const [internalValue, setInternalValue] = React.useState<number>(
+      value || defaultValue
+    )
     const inputRef = React.useRef<HTMLInputElement | null>(null)
 
-    React.useImperativeHandle(
-      forwardedRef,
-      () => inputRef.current as HTMLInputElement
-    )
+    React.useImperativeHandle(ref, () => inputRef.current as HTMLInputElement)
 
     const stepperButtonLabels = {
       increment: 'increment',
@@ -60,25 +61,25 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       ...disabledTooltipContentProp
     }
 
-    const isAtMax = value >= max
-    const isAtMin = value <= min
+    const isAtMax = internalValue >= max
+    const isAtMin = internalValue <= min
 
     const clamp = React.useCallback(
-      (value: number) => Math.min(Math.max(value, min), max),
+      (internalValue: number) => Math.min(Math.max(internalValue, min), max),
       [max, min]
     )
 
     const updateValue = React.useCallback(
-      (next: string | number) => {
-        setValue(next)
-        onChange?.(Number(next))
+      (newValue: number) => {
+        onValueChange?.(newValue)
+        setInternalValue(newValue)
       },
-      [onChange]
+      [onValueChange]
     )
 
     const onInputChange = React.useCallback(
       (event: React.ChangeEvent<HTMLInputElement>) => {
-        const parsedValue = event.target.value.replace(/\D/g, '')
+        const parsedValue = Number(event.target.value.replace(/\D/g, ''))
         updateValue(parsedValue)
       },
       [updateValue]
@@ -87,30 +88,16 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     const increment = React.useCallback(() => {
       if (isAtMax || isReadOnly) return
       inputRef?.current?.focus()
-      let next: string | number
-
-      if (value === '') {
-        next = step
-      } else {
-        next = Number(value) + step
-      }
-
-      updateValue(clamp(next))
-    }, [clamp, isAtMax, isReadOnly, step, updateValue, value])
+      const newValue = Number(internalValue) + step
+      updateValue(clamp(newValue))
+    }, [clamp, isAtMax, isReadOnly, step, updateValue, internalValue])
 
     const decrement = React.useCallback(() => {
       if (isAtMin || isReadOnly) return
       inputRef?.current?.focus()
-      let next: string | number
-
-      if (value === '') {
-        next = min
-      } else {
-        next = Number(value) - step
-      }
-
-      updateValue(clamp(next))
-    }, [clamp, isAtMin, isReadOnly, min, step, updateValue, value])
+      const newValue = Number(internalValue) - step
+      updateValue(clamp(newValue))
+    }, [clamp, isAtMin, isReadOnly, min, step, updateValue, internalValue])
 
     const onKeyDown = React.useCallback(
       (event: React.KeyboardEvent) => {
@@ -146,9 +133,8 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     )
 
     const inputProps: React.ComponentProps<typeof Input> = {
-      name,
       type: 'number',
-      value,
+      value: internalValue,
       ...rest,
       onChange: onInputChange,
       onKeyDown,
@@ -163,7 +149,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
       disabled: isDisabled,
       'aria-valuemin': min,
       'aria-valuemax': max,
-      'aria-valuenow': Number(value),
+      'aria-valuenow': internalValue,
       role: 'spinbutton'
     }
 
