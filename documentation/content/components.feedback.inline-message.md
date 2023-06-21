@@ -148,7 +148,7 @@ tabs:
       Inline messages are always displayed inline, inside or next to another UI component and can use motion (ease in/out) to grab user’s attention when they appear and disappear.
 
 
-      There's the option to add a [Tooltip](https://atomlearning.design/components/surfaces/tooltip) for extended information. The user can click/hover the title of the alert to read more details of the message.
+      There's the option to add a [Tooltip](/components/surfaces/tooltip) for extended information. The user can click/hover the title of the alert to read more details of the message.
 
 
       ### Examples
