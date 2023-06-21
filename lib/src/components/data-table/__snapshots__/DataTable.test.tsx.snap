@@ -281,15 +281,14 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     width: max-content;
   }
 
-  .c-kZPaUL {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    justify-content: flex-start;
+  .c-QtuIU {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .c-gjdJOs {
-    text-align: center;
+  .c-QtuIU > *:last-child {
+    margin-bottom: 0;
   }
 
   .c-eyOYLV {
@@ -465,24 +464,18 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-kZPaUL-iTKOFX-direction-column {
-    flex-direction: column;
-  }
-
-  .c-kZPaUL-dvnNgW-gap-3 {
-    gap: var(--space-3);
-  }
-
-  .c-gjdJOs-gtyVWU-size-sm {
+  .c-QtuIU-gtyVWU-size-sm {
     padding: var(--space-3);
   }
 
-  .c-eyOYLV-kWyXas-size-sm {
+  .c-eyOYLV-gNjhJG-size-sm {
     font-size: var(--fontSizes-md);
+    margin-bottom: var(--space-3);
   }
 
-  .c-cXdTNb-fAKXXr-size-sm {
+  .c-cXdTNb-kSBam-size-sm {
     font-size: var(--fontSizes-sm);
+    margin-bottom: var(--space-4);
   }
 }
 
@@ -683,15 +676,15 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kZPaUL c-gjdJOs c-kZPaUL-iTKOFX-direction-column c-kZPaUL-dvnNgW-gap-3 c-gjdJOs-gtyVWU-size-sm"
+    class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
   >
     <h2
-      class="c-eyOYLV c-eyOYLV-kWyXas-size-sm"
+      class="c-eyOYLV c-eyOYLV-gNjhJG-size-sm"
     >
       No data available
     </h2>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-fAKXXr-size-sm"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
     >
       Something is missing
     </p>
