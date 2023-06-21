@@ -3,6 +3,7 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { Icon } from '../icon'
 
@@ -50,26 +51,47 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
       error: {
         borderColor: '$danger'
       }
+    },
+    size: {
+      md: {
+        size: '$1'
+      },
+      lg: {
+        size: '$2',
+        mt: '-$1'
+      }
     }
   }
 })
 
+const toIconSize = {
+  md: 'sm',
+  lg: 'md'
+}
+
 type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  (props, ref) => (
-    <StyledCheckbox {...props} ref={ref}>
-      <StyledIndicator asChild>
-        <Icon
-          is={props.checked === 'indeterminate' ? Minus : Ok}
-          css={{
-            strokeWidth: '3',
-            size: 14
-          }}
-        />
-      </StyledIndicator>
-    </StyledCheckbox>
-  )
+  ({ size = 'md', ...props }, ref) => {
+    const iconSize = React.useMemo(
+      () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+      [size]
+    )
+
+    return (
+      <StyledCheckbox {...props} size={size} ref={ref}>
+        <StyledIndicator asChild>
+          <Icon
+            is={props.checked === 'indeterminate' ? Minus : Ok}
+            css={{
+              strokeWidth: '3'
+            }}
+            size={iconSize}
+          />
+        </StyledIndicator>
+      </StyledCheckbox>
+    )
+  }
 )
 
 Checkbox.displayName = 'Checkbox'
