@@ -739,12 +739,18 @@ describe('DataTable MetaData', () => {
 })
 
 describe('DataTable row selection', () => {
-  const clickSpy = jest.fn()
+  const addClickSpy = jest.fn()
+  const deleteClickSpy = jest.fn()
 
   const TableHead = () => {
     return (
       <DataTable.BulkActions>
-        <Button onClick={clickSpy}>Test</Button>
+        <DataTable.BulkActions.DefaultActions>
+          <Button onClick={addClickSpy}>Add rows</Button>
+        </DataTable.BulkActions.DefaultActions>
+        <DataTable.BulkActions.SelectedRowActions>
+          <Button onClick={deleteClickSpy}>Delete rows</Button>
+        </DataTable.BulkActions.SelectedRowActions>
       </DataTable.BulkActions>
     )
   }
@@ -801,7 +807,7 @@ describe('DataTable row selection', () => {
     expect(checkboxes[0]).not.toBeChecked()
   })
 
-  it('calls the click handler on the custom button action', () => {
+  it('calls the click handler on the custom button action when rows are selected', () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
     userEvent.click(checkboxes[1])
@@ -810,8 +816,21 @@ describe('DataTable row selection', () => {
 
     expect(screen.getByText('2 items selected')).toBeVisible()
 
-    userEvent.click(screen.getByText('Test'))
+    userEvent.click(screen.getByText('Delete rows'))
 
-    expect(clickSpy).toHaveBeenCalled()
+    expect(deleteClickSpy).toHaveBeenCalled()
+  })
+
+  it('calls the click handler on the custom button action when no rows are selected', () => {
+    customRender()
+    const checkboxes = screen.getAllByRole('checkbox')
+
+    expect(checkboxes[0]).not.toBeChecked()
+
+    expect(screen.getByText('18 items')).toBeVisible()
+
+    userEvent.click(screen.getByText('Add rows'))
+
+    expect(addClickSpy).toHaveBeenCalled()
   })
 })
