@@ -28,6 +28,8 @@ const StyledContainer = styled(Flex, {
   justifyContent: 'space-between',
   alignItems: 'center',
   minHeight: '$6',
+  borderTopLeftRadius: '$0',
+  borderTopRightRadius: '$0',
   variants: {
     isRowSelected: {
       true: {
