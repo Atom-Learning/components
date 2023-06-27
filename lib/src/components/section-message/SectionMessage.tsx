@@ -22,6 +22,7 @@ const StyledSectionMessage = styled(Dismissible, {
   position: 'relative',
   borderRadius: '$0',
   display: 'flex',
+  minHeight: '$5',
   p: '$4',
   border: '1px solid white',
   variants: {

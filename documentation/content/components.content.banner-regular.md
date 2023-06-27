@@ -138,7 +138,7 @@ tabs:
       ## Overview
 
 
-      The promo banner is a component used to display an important message with the goal of pushing the user towards a promotional or product-related action.  
+      The promo banner is a component used to display an important message with the goal of pushing the user towards a promotional or product-related action.
 
 
       By using illustrations and bold typography, the banner is useful to capture the attention of the user and communicate key information in an engaging way without interrupting their flow.
@@ -159,7 +159,7 @@ tabs:
       Only one promo banner should be shown per page at a time. When multiple banners need to be used in the same place, only the most important one should be displayed (or the one that can be currently actioned).
 
 
-      If the message of the banner is not actionable or important to the context of the product, consider using another component to communicate it to the user, such as an in-line or a [section message](https://atomlearning.design/components/feedback/section-message?tab=usage).
+      If the message of the banner is not actionable or important to the context of the product, consider using another component to communicate it to the user, such as an in-line or a [section message](/components/feedback/section-message?tab=usage).
 
 
       # Use of banner variants
@@ -180,13 +180,13 @@ tabs:
       The promo banners also have three variants in terms of colour, which offer different levels of contrast within each layout. 
 
 
-        Banners with a ’high’ emphasis use darker background colours and are meant to stand out from the rest of the content, so should only be used to communicate highly important messages.  
+      Banners with a ’high’ emphasis use darker background colours and are meant to stand out from the rest of the content, so should only be used to communicate highly important messages. 
 
 
       The ‘mid’ variant should be suitable for most scenarios, as it offers a comparatively lower level of contrast, while still standing out from most of the content within the app. 
 
 
-        Finally, the ‘low’ emphasis variant is designed to blend with the rest of the containers within the app, so should be used only when it doesn’t require a lot of attention. In such cases, consider the message you want to communicate and if the promo banner is the most suitable component for your goals (e.g. is the message actionable, is it related to a particular component on the page or is it more general, etc.).
+      Finally, the ‘low’ emphasis variant is designed to blend with the rest of the containers within the app, so should be used only when it doesn’t require a lot of attention. In such cases, consider the message you want to communicate and if the promo banner is the most suitable component for your goals (e.g. is the message actionable, is it related to a particular component on the page or is it more general, etc.).
 
 
       ![banner color](/assets/images/banner02_color.svg "banner color")

@@ -1,6 +1,5 @@
 import { TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
-import { Box } from '..'
 
 interface ILabels {
   popoverTriggerLabel?: string
@@ -8,41 +7,36 @@ interface ILabels {
   previousPageButtonLabel?: string
 }
 
-interface TBasePaginationType {
+interface IBasePagination {
+  pagesCount: number
   visibleElementsCount: TVisibleElementsCount
   indicatedPages: number[]
   disabledPages: number[]
-  onItemHover?: (pageNumber: number) => void
-  labels?: ILabels
+  labels: ILabels
+  onItemHover: (pageNumber: number) => void
 }
 
 export type TVisibleElementsCount = 6 | 8
 
-export type TPaginationProps = React.ComponentProps<typeof Box> &
-  TPaginationProviderProps & {
-    colorScheme?: TcolorScheme
-    indicatedPages?: number[]
-    disabledPages?: number[]
-    visibleElementsCount?: TVisibleElementsCount
-  }
-
-export type TPaginationProviderProps = {
-  onSelectedPageChange: (pageNumber: number) => void
-  pagesCount: number
-  selectedPage?: number
-} & TBasePaginationType
-
-export type TPaginationContext = {
-  goToPage: (pagenumber: number) => void
-  goToPreviousPage: () => void
-  goToNextPage: () => void
-  currentPage: number
-  pagesCount: number
-  isMaxVisibleElementCount: boolean
-} & TBasePaginationType
-
 export interface IPaginationItemProps {
   pageNumber: number
   css?: CSS
-  onItemHover?: (pageNumber: number) => void
+}
+export interface IPaginationContext extends IBasePagination {
+  currentPage: number
+  isMaxVisibleElementCount: boolean
+  goToPage: (pagenumber: number) => void
+  goToPreviousPage: () => void
+  goToNextPage: () => void
+}
+
+export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
+  Partial<IBasePagination> & {
+    selectedPage?: number
+    onSelectedPageChange?: (pageNumber: number) => void
+  }
+
+export interface IPaginationProps extends TPaginationProviderProps {
+  colorScheme?: TcolorScheme
+  css?: CSS
 }

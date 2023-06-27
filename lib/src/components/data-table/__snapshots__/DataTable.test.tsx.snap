@@ -106,11 +106,13 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     background: initial;
   }
 
-  .c-eIXSIu {
+  .c-dcdOyh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-variant-numeric: tabular-nums;
+    flex-wrap: wrap;
+    row-gap: var(--space-4);
   }
 
   .c-dyvMgW {
@@ -596,16 +598,33 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     align-items: center;
   }
 
+  .c-dyvMgW-iwvqwk-css {
+    padding-right: var(--space-4);
+  }
+
+@media (min-width: 550px) {
+    .c-dyvMgW-iwvqwk-css {
+      flex-basis: 50%;
+    }
+}
+
+  .c-dhzjXW-icVHJya-css {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icVHJya-css {
+      flex-basis: 50%;
+    }
+}
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-dhzjXW-ibZmKkd-css {
-    justify-content: flex-end;
   }
 
   .c-fDzwZw-illEebI-css {
@@ -808,11 +827,13 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     background: initial;
   }
 
-  .c-eIXSIu {
+  .c-dcdOyh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-variant-numeric: tabular-nums;
+    flex-wrap: wrap;
+    row-gap: var(--space-4);
   }
 
   .c-dyvMgW {
@@ -1143,16 +1164,33 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     align-items: center;
   }
 
+  .c-dyvMgW-iwvqwk-css {
+    padding-right: var(--space-4);
+  }
+
+@media (min-width: 550px) {
+    .c-dyvMgW-iwvqwk-css {
+      flex-basis: 50%;
+    }
+}
+
+  .c-dhzjXW-icVHJya-css {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icVHJya-css {
+      flex-basis: 50%;
+    }
+}
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-dhzjXW-ibZmKkd-css {
-    justify-content: flex-end;
   }
 
   .c-fDzwZw-illEebI-css {
@@ -2294,11 +2332,13 @@ exports[`DataTable component renders 1`] = `
     background: initial;
   }
 
-  .c-eIXSIu {
+  .c-dcdOyh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-variant-numeric: tabular-nums;
+    flex-wrap: wrap;
+    row-gap: var(--space-4);
   }
 
   .c-dyvMgW {
@@ -2581,16 +2621,33 @@ exports[`DataTable component renders 1`] = `
     align-items: center;
   }
 
+  .c-dyvMgW-iwvqwk-css {
+    padding-right: var(--space-4);
+  }
+
+@media (min-width: 550px) {
+    .c-dyvMgW-iwvqwk-css {
+      flex-basis: 50%;
+    }
+}
+
+  .c-dhzjXW-icVHJya-css {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icVHJya-css {
+      flex-basis: 50%;
+    }
+}
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-dhzjXW-ibZmKkd-css {
-    justify-content: flex-end;
   }
 
   .c-fDzwZw-illEebI-css {
@@ -2947,76 +3004,80 @@ exports[`DataTable component renders 1`] = `
     </tbody>
   </table>
   <nav
-    class="c-eIXSIu"
+    class="c-dcdOyh"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iwvqwk-css"
     >
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      class="c-dhzjXW c-dhzjXW-icVHJya-css"
     >
-      <select
-        class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
       >
-        <option
-          value="0"
+        <select
+          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
         >
-          1
-        </option>
-        <option
-          value="1"
+          <option
+            value="0"
+          >
+            1
+          </option>
+          <option
+            value="1"
+          >
+            2
+          </option>
+        </select>
+        <p
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
         >
-          2
-        </option>
-      </select>
-      <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
+          of 2 pages
+        </p>
+      </div>
+      <div
+        class="c-dhzjXW"
       >
-        of 2 pages
-      </p>
-    </div>
-    <div
-      class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
-    >
-      <button
-        aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
-        data-state="closed"
-        disabled=""
-        name="Previous page"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        <button
+          aria-label="Previous page"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+          data-state="closed"
+          disabled=""
+          name="Previous page"
+          type="button"
         >
-          <polyline
-            points="14 18 8 12 14 6 14 6"
-          />
-        </svg>
-      </button>
-      <button
-        aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
-        data-state="closed"
-        name="Next page"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="14 18 8 12 14 6 14 6"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Next page"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+          data-state="closed"
+          name="Next page"
+          type="button"
         >
-          <polyline
-            points="10 6 16 12 10 18 10 18"
-          />
-        </svg>
-      </button>
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="10 6 16 12 10 18 10 18"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 </div>
@@ -3128,11 +3189,13 @@ exports[`DataTable server-side renders 1`] = `
     background: initial;
   }
 
-  .c-eIXSIu {
+  .c-dcdOyh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-variant-numeric: tabular-nums;
+    flex-wrap: wrap;
+    row-gap: var(--space-4);
   }
 
   .c-dyvMgW {
@@ -3519,16 +3582,33 @@ exports[`DataTable server-side renders 1`] = `
     align-items: center;
   }
 
+  .c-dyvMgW-iwvqwk-css {
+    padding-right: var(--space-4);
+  }
+
+@media (min-width: 550px) {
+    .c-dyvMgW-iwvqwk-css {
+      flex-basis: 50%;
+    }
+}
+
+  .c-dhzjXW-icVHJya-css {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icVHJya-css {
+      flex-basis: 50%;
+    }
+}
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-dhzjXW-ibZmKkd-css {
-    justify-content: flex-end;
   }
 
   .c-fDzwZw-illEebI-css {
@@ -3916,76 +3996,80 @@ exports[`DataTable server-side renders 1`] = `
     </tbody>
   </table>
   <nav
-    class="c-eIXSIu"
+    class="c-dcdOyh"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm"
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iwvqwk-css"
     >
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+      class="c-dhzjXW c-dhzjXW-icVHJya-css"
     >
-      <select
-        class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
+      <div
+        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
       >
-        <option
-          value="0"
+        <select
+          class="c-beXZpM c-beXZpM-cGAtlD-size-sm c-beXZpM-ihbpiMz-css"
         >
-          1
-        </option>
-        <option
-          value="1"
+          <option
+            value="0"
+          >
+            1
+          </option>
+          <option
+            value="1"
+          >
+            2
+          </option>
+        </select>
+        <p
+          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
         >
-          2
-        </option>
-      </select>
-      <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-igbZjeK-css"
+          of 2 pages
+        </p>
+      </div>
+      <div
+        class="c-dhzjXW"
       >
-        of 2 pages
-      </p>
-    </div>
-    <div
-      class="c-dhzjXW c-dhzjXW-ibZmKkd-css"
-    >
-      <button
-        aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
-        data-state="closed"
-        disabled=""
-        name="Previous page"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+        <button
+          aria-label="Previous page"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-fDzwZw-illEebI-css c-PJLV"
+          data-state="closed"
+          disabled=""
+          name="Previous page"
+          type="button"
         >
-          <polyline
-            points="14 18 8 12 14 6 14 6"
-          />
-        </svg>
-      </button>
-      <button
-        aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
-        data-state="closed"
-        name="Next page"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="14 18 8 12 14 6 14 6"
+            />
+          </svg>
+        </button>
+        <button
+          aria-label="Next page"
+          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+          data-state="closed"
+          name="Next page"
+          type="button"
         >
-          <polyline
-            points="10 6 16 12 10 18 10 18"
-          />
-        </svg>
-      </button>
+          <svg
+            aria-hidden="true"
+            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polyline
+              points="10 6 16 12 10 18 10 18"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </nav>
 </div>
@@ -4097,11 +4181,13 @@ exports[`DataTable sticky columns renders 1`] = `
     background: initial;
   }
 
-  .c-eIXSIu {
+  .c-dcdOyh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-variant-numeric: tabular-nums;
+    flex-wrap: wrap;
+    row-gap: var(--space-4);
   }
 
   .c-dyvMgW {
@@ -4469,16 +4555,33 @@ exports[`DataTable sticky columns renders 1`] = `
     align-items: center;
   }
 
+  .c-dyvMgW-iwvqwk-css {
+    padding-right: var(--space-4);
+  }
+
+@media (min-width: 550px) {
+    .c-dyvMgW-iwvqwk-css {
+      flex-basis: 50%;
+    }
+}
+
+  .c-dhzjXW-icVHJya-css {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+@media (min-width: 550px) {
+    .c-dhzjXW-icVHJya-css {
+      flex-basis: 50%;
+    }
+}
+
   .c-beXZpM-ihbpiMz-css {
     margin-right: var(--space-3);
   }
 
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-dhzjXW-ibZmKkd-css {
-    justify-content: flex-end;
   }
 
   .c-fDzwZw-illEebI-css {
