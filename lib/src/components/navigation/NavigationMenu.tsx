@@ -57,12 +57,10 @@ const ViewportPosition = styled('div', {
   justifyContent: 'center'
 })
 
-type NavigationMenuProps = {
-  css?: CSS
-}
+type NavigationMenuProps = React.ComponentProps<typeof StyledMenu>
 
 export const NavigationMenu: React.FC<NavigationMenuProps> &
-  NavigationMenuSubComponents = ({ children, css }) => {
+  NavigationMenuSubComponents = ({ children, css, ...props }) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
@@ -110,7 +108,7 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
 
   return (
     <NavigationMenuContext.Provider value={{ onNodeUpdate }}>
-      <StyledMenu onValueChange={setActiveItem} css={css}>
+      <StyledMenu onValueChange={setActiveItem} css={css} {...props}>
         <StyledList ref={listRef}>{children}</StyledList>
         <ViewportPosition>
           <StyledViewport
