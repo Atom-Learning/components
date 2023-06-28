@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
 import { useDataTable } from './DataTableContext'
+import { OptionallyVisuallyHiddenContainer } from '~/utilities/optionally-visually-hidden-container'
+import { Label } from '../label'
 
 export const DataTableSelectAllRowsCheckbox: React.FC = () => {
   const {
@@ -24,9 +26,15 @@ export const DataTableSelectAllRowsCheckbox: React.FC = () => {
   }
 
   return (
-    <Checkbox
-      checked={getCheckedState()}
-      onCheckedChange={updateCheckedState}
-    />
+    <>
+      <OptionallyVisuallyHiddenContainer hidden>
+        <Label htmlFor="allRowsSelection">All rows selection</Label>
+      </OptionallyVisuallyHiddenContainer>
+      <Checkbox
+        checked={getCheckedState()}
+        onCheckedChange={updateCheckedState}
+        name="allRowsSelection"
+      />
+    </>
   )
 }

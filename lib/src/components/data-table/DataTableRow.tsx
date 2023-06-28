@@ -16,7 +16,10 @@ const StyledRow = styled(Table.Row, {
   variants: {
     isSelected: {
       true: {
-        [`${StyledTableBody} &, ${StyledTableBody} &:nth-child(2n), 
+        // this rule needs to be formatted this way in order to avoid using !important to set the bg.
+        // the bg property is set elsewhere and it's more specific than this one would be without targetting it this way.
+        // the :nth-child ones are needed to catch the rows in striped tables, for which the original bg rules are even more specific (due to the pseudo-selectors)
+        [`${StyledTableBody} &, ${StyledTableBody} &:nth-child(2n),
         ${StyledTableBody} &:nth-child(2n+1)`]: {
           bg: '$blue100'
         }
@@ -26,14 +29,15 @@ const StyledRow = styled(Table.Row, {
 })
 
 export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
-  const { allowRowSelection } = useDataTable()
+  const { enableRowSelection } = useDataTable()
 
   return (
     <StyledRow isSelected={row.getIsSelected()}>
-      {allowRowSelection && row.getCanSelect() && (
+      {enableRowSelection && row.getCanSelect() && (
         <Table.Cell css={{ width: '$4' }}>
           <DataTableRowSelectionCheckbox
-            isChecked={row.getIsSelected()}
+            rowIndex={row.index}
+            checked={row.getIsSelected()}
             onCheckedChange={row.toggleSelected}
           />
         </Table.Cell>

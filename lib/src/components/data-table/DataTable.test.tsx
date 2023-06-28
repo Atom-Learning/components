@@ -12,7 +12,7 @@ import { Button } from '../button'
 import { EmptyState } from '../empty-state'
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
-import { DataTable, useDataTable } from '.'
+import { DataTable } from '.'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -757,7 +757,7 @@ describe('DataTable row selection', () => {
 
   const customRender = () => {
     return render(
-      <DataTable columns={columns} data={data} allowRowSelection>
+      <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
         <DataTable.Table sortable />
       </DataTable>

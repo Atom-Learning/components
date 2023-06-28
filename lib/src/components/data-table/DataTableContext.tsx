@@ -35,7 +35,7 @@ type DataTableProviderProps = {
   defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
-  allowRowSelection?: boolean | ((row: Row<unknown>) => boolean)
+  enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -47,7 +47,7 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
-  allowRowSelection,
+  enableRowSelection,
   children
 }: DataTableProviderProps): JSX.Element => {
   const [data, setData] = React.useState<TAsyncDataResult>({
@@ -128,7 +128,7 @@ export const DataTableProvider = ({
     manualSorting: getAsyncData && isPaginated,
     enableSorting: asyncDataState !== AsyncDataState.PENDING,
     enableGlobalFilter: !getAsyncData,
-    enableRowSelection: allowRowSelection,
+    enableRowSelection,
     onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
@@ -167,10 +167,10 @@ export const DataTableProvider = ({
       isSortable,
       asyncDataState,
       runAsyncData,
-      allowRowSelection,
+      enableRowSelection,
       rowSelection
     }
-  }, [table, applyPagination, getTotalRows, isSortable, allowRowSelection])
+  }, [table, applyPagination, getTotalRows, isSortable, enableRowSelection])
 
   return (
     <DataTableContext.Provider value={value}>

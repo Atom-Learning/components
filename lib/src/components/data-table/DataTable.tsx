@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { DataTableBulkActions } from './bulk-actions'
+import { DataTableBulkActions } from './DataTableBulkActions'
 import { DataTableBody } from './DataTableBody'
 import { DataTableProvider } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
