@@ -27,6 +27,8 @@ import { getNewAsyncData } from './getNewAsyncData'
 import { usePagination } from './usePagination'
 import { useSortByColumn } from './useSorting'
 
+import { v4 as uuid } from '@lukeed/uuid'
+
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
@@ -50,6 +52,8 @@ export const DataTableProvider = ({
   enableRowSelection,
   children
 }: DataTableProviderProps): JSX.Element => {
+  const tableId = React.useRef(uuid())
+
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
     total: dataProp?.length ?? 0
@@ -168,9 +172,17 @@ export const DataTableProvider = ({
       asyncDataState,
       runAsyncData,
       enableRowSelection,
-      rowSelection
+      rowSelection,
+      tableId: tableId.current
     }
-  }, [table, applyPagination, getTotalRows, isSortable, enableRowSelection])
+  }, [
+    table,
+    applyPagination,
+    getTotalRows,
+    isSortable,
+    enableRowSelection,
+    tableId
+  ])
 
   return (
     <DataTableContext.Provider value={value}>

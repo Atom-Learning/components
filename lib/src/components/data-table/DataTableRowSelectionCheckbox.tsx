@@ -1,31 +1,34 @@
 import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
-import { OptionallyVisuallyHiddenContainer } from '~/utilities/optionally-visually-hidden-container'
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import { Label } from '../label'
+import { useDataTable } from './DataTableContext'
 
 interface DataTableRowSelectionCheckboxProps {
   checked: boolean
   onCheckedChange: (value: boolean) => void
-  rowIndex: number
+  rowId: string
+  label?: string
 }
 
 export const DataTableRowSelectionCheckbox = ({
-  rowIndex,
+  rowId,
   checked,
-  onCheckedChange
+  onCheckedChange,
+  label = `Row ${rowId} selection`
 }: DataTableRowSelectionCheckboxProps): React.ReactElement => {
+  const { tableId } = useDataTable()
+
   return (
     <>
-      <OptionallyVisuallyHiddenContainer hidden>
-        <Label htmlFor={`row${rowIndex}Selection`}>
-          {`Row ${rowIndex} selection`}
-        </Label>
-      </OptionallyVisuallyHiddenContainer>
+      <VisuallyHidden.Root>
+        <Label htmlFor={`${tableId}_row_${rowId}_selection`}>{label}</Label>
+      </VisuallyHidden.Root>
       <Checkbox
         checked={checked}
         onCheckedChange={onCheckedChange}
-        name={`row${rowIndex}Selection`}
+        name={`${tableId}_row_${rowId}_selection`}
       />
     </>
   )

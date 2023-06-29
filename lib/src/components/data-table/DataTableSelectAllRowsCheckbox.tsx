@@ -2,14 +2,21 @@ import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
 import { useDataTable } from './DataTableContext'
-import { OptionallyVisuallyHiddenContainer } from '~/utilities/optionally-visually-hidden-container'
 import { Label } from '../label'
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 
-export const DataTableSelectAllRowsCheckbox: React.FC = () => {
+interface DataTableSelectAllRowsCheckboxProps {
+  label?: string
+}
+
+export const DataTableSelectAllRowsCheckbox = ({
+  label = 'All rows selection'
+}: DataTableSelectAllRowsCheckboxProps) => {
   const {
     getIsAllPageRowsSelected,
     getIsSomePageRowsSelected,
-    toggleAllPageRowsSelected
+    toggleAllPageRowsSelected,
+    tableId
   } = useDataTable()
 
   const getCheckedState = () => {
@@ -27,13 +34,14 @@ export const DataTableSelectAllRowsCheckbox: React.FC = () => {
 
   return (
     <>
-      <OptionallyVisuallyHiddenContainer hidden>
-        <Label htmlFor="allRowsSelection">All rows selection</Label>
-      </OptionallyVisuallyHiddenContainer>
+      <VisuallyHidden.Root>
+        <Label htmlFor={`${tableId}_all_rows_selection`}>{label}</Label>
+      </VisuallyHidden.Root>
+
       <Checkbox
         checked={getCheckedState()}
         onCheckedChange={updateCheckedState}
-        name="allRowsSelection"
+        name={`${tableId}_allRowsSelection`}
       />
     </>
   )
