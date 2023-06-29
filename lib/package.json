@@ -57,6 +57,9 @@
       "import": "{  useAlert, AlertProvider }"
     }
   ],
+  "dependency": {
+    "@lukeed/uuid": "^2.0.0"
+  },
   "devDependencies": {
     "@atom-learning/icons": "1.14.0",
     "@atom-learning/jest-stitches": "1.0.10",
