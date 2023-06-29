@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 import { StyledRow } from './TableRow'
 
-export const StyledTableBody = styled('tbody', {
+const StyledTableBody = styled('tbody', {
   variants: {
     striped: {
       true: {

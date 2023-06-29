@@ -1,7 +1,7 @@
 import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 
-import { Table, StyledTableBody } from '../table'
+import { Table } from '../table'
 import { DataTableDataCell } from './DataTableDataCell'
 import { useDataTable } from './DataTableContext'
 import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
