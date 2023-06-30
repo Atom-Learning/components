@@ -6,6 +6,8 @@ import type {
   FiltersTableState,
   GroupingTableState,
   PaginationTableState,
+  Row,
+  RowSelectionState,
   RowSelectionTableState,
   SortDirection,
   SortingTableState,
@@ -44,8 +46,11 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
+  enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
+  rowSelection: RowSelectionState
   data: TAsyncDataResult
   columns: any
+  tableId: string
   /**
    * Directly update the data array that the table rows are built from.
    * This is useful when re-ordering rows, but is high-risk if you're not sure what you're doing!

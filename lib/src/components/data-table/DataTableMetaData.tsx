@@ -26,11 +26,13 @@ export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
   copy,
   css
 }) => {
-  const { getState, columns, getRowModel } = useDataTable()
+  const { getState, columns, getRowModel, rowSelection } = useDataTable()
   const { sorting } = getState()
   const isSorted = sorting.length > 0
 
   const totalRows = getRowModel()?.rows?.length
+
+  const selectedRows = Object.keys(rowSelection || {}).length
 
   const copyMerged = { ...defaultCopy, ...copy }
 
@@ -48,7 +50,9 @@ export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
   }
 
   return (
-    <Text css={{ fontWeight: 600, ...css }}>{`${totalRows} items ${
+    <Text css={{ fontWeight: 600, ...css }}>{`${selectedRows || totalRows} ${
+      (selectedRows || totalRows) === 1 ? 'item' : 'items'
+    } ${selectedRows ? 'selected' : ''} ${
       isSorted ? getSortingString(sorting) : ''
     }`}</Text>
   )
