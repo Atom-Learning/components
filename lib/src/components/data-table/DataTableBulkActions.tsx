@@ -1,12 +1,12 @@
 import * as React from 'react'
 
+import { Button } from '~/components/button'
+import { Divider } from '~/components/divider'
 import { CSS, styled } from '~/stitches'
 
 import { Flex } from '../flex'
 import { DataTable } from '.'
 import { useDataTable } from './DataTableContext'
-import { Divider } from '~/components/divider'
-import { Button } from '~/components/button'
 
 interface DataTableBulkActionsProps {
   css?: CSS

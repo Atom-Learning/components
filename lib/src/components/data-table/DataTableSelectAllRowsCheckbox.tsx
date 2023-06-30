@@ -1,9 +1,9 @@
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
-import { useDataTable } from './DataTableContext'
 import { Label } from '../label'
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
+import { useDataTable } from './DataTableContext'
 
 interface DataTableSelectAllRowsCheckboxProps {
   label?: string
