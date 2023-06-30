@@ -3,23 +3,12 @@ import * as React from 'react'
 import { focusVisibleStyleBlock } from '~/utilities'
 
 import { styled } from '../../stitches'
-import { Box } from '..'
 import type { IPaginationItemProps } from './types'
 import { usePagination } from './usePagination'
 
-const Dot = styled(Box, {
-  position: 'absolute',
-  bottom: '-$1',
-  left: '0',
-  transform: 'translateX(50%)',
-  borderRadius: '$round',
-  size: '4px',
-  bg: '$accent9'
-})
-
 const StyledButton = styled('button', {
   alignItems: 'center',
-  border: 'unset',
+  border: '1px solid transparent',
   borderRadius: '$0',
   cursor: 'pointer',
   fontFamily: '$body',
@@ -32,6 +21,7 @@ const StyledButton = styled('button', {
   fontWeight: 400,
   color: '$grey800',
   bg: '$base1',
+  position: 'relative',
   '&:not(:disabled)': {
     '&:hover': {
       color: '$accent10',
@@ -77,16 +67,26 @@ const StyledButton = styled('button', {
       true: {
         fontWeight: 600,
         color: '$accent9',
+        '&:after': {
+          content: '',
+          position: 'absolute',
+          bottom: '$1',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          borderRadius: '$round',
+          size: '4px',
+          bg: '$accent9'
+        },
         '&:not(:disabled)': {
           '&:hover': {
             color: '$accent10',
-            [`& ${Dot}`]: {
+            '&:after': {
               bg: '$accent10'
             }
           },
           '&:active': {
             color: '$accent11',
-            [`& ${Dot}`]: {
+            '&:after': {
               bg: '$accent11'
             }
           }
@@ -125,14 +125,7 @@ export const PaginationItem: React.FC<IPaginationItemProps> = ({
       aria-disabled={isDisabled}
       onMouseOver={handleOnHover}
     >
-      {isIndicated ? (
-        <Box css={{ position: 'relative' }}>
-          {pageNumber}
-          <Dot />
-        </Box>
-      ) : (
-        pageNumber
-      )}
+      {pageNumber}
     </StyledButton>
   )
 }
