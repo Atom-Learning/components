@@ -72,7 +72,7 @@ const StyledButton = styled('button', {
           position: 'absolute',
           bottom: '$1',
           left: '50%',
-          ml: '-2px',
+          transform: 'translateX(-50%)',
           borderRadius: '$round',
           size: '4px',
           bg: '$accent9'
