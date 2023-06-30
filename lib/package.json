@@ -131,6 +131,7 @@
     "@dnd-kit/modifiers": "^6.0.0",
     "@dnd-kit/sortable": "^7.0.1",
     "@dnd-kit/utilities": "^3.2.0",
+    "@lukeed/uuid": "^2.0.0",
     "@radix-ui/react-accordion": "^1.0.0",
     "@radix-ui/react-alert-dialog": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.0",

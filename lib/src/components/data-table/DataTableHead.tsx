@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { Table } from '../table'
+import { DataTableSelectAllRowsCheckbox } from './DataTableSelectAllRowsCheckbox'
 import { DataTable, useDataTable } from './index'
 
 type DataTableHeadProps = Omit<
@@ -15,7 +16,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   theme = 'light',
   ...props
 }) => {
-  const { getHeaderGroups, setIsSortable } = useDataTable()
+  const { getHeaderGroups, setIsSortable, enableRowSelection } = useDataTable()
 
   React.useEffect(() => {
     setIsSortable(sortable)
@@ -26,6 +27,11 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
+            {enableRowSelection && (
+              <Table.HeaderCell css={{ width: '$4' }}>
+                <DataTableSelectAllRowsCheckbox />
+              </Table.HeaderCell>
+            )}
             {headerGroup.headers.map((header) => (
               <DataTable.HeaderCell header={header} key={header.id} />
             ))}

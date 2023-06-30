@@ -1,5 +1,8 @@
-import type { UniqueIdentifier } from '@dnd-kit/core'
-import type { PaginationState } from '@tanstack/react-table'
+import type {
+  PaginationState,
+  Row,
+  RowSelectionState
+} from '@tanstack/react-table'
 import {
   getCoreRowModel,
   getFilteredRowModel,
@@ -24,6 +27,8 @@ import { getNewAsyncData } from './getNewAsyncData'
 import { usePagination } from './usePagination'
 import { useSortByColumn } from './useSorting'
 
+import { v4 as uuid } from '@lukeed/uuid'
+
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
 
@@ -32,6 +37,7 @@ type DataTableProviderProps = {
   defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
+  enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -43,12 +49,18 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
+  enableRowSelection,
   children
 }: DataTableProviderProps): JSX.Element => {
+  const tableId = React.useRef(uuid())
+
   const [data, setData] = React.useState<TAsyncDataResult>({
     results: dataProp ?? [],
     total: dataProp?.length ?? 0
   })
+
+  const [rowSelection, setRowSelection] = React.useState<RowSelectionState>({})
+
   const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
 
@@ -113,12 +125,15 @@ export const DataTableProvider = ({
     state: {
       sorting,
       globalFilter,
-      pagination: paginationState
+      pagination: paginationState,
+      rowSelection
     },
     manualPagination: getAsyncData && isPaginated,
     manualSorting: getAsyncData && isPaginated,
     enableSorting: asyncDataState !== AsyncDataState.PENDING,
     enableGlobalFilter: !getAsyncData,
+    enableRowSelection,
+    onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
@@ -155,9 +170,19 @@ export const DataTableProvider = ({
       getTotalRows,
       isSortable,
       asyncDataState,
-      runAsyncData
+      runAsyncData,
+      enableRowSelection,
+      rowSelection,
+      tableId: tableId.current
     }
-  }, [table, applyPagination, getTotalRows, isSortable])
+  }, [
+    table,
+    applyPagination,
+    getTotalRows,
+    isSortable,
+    enableRowSelection,
+    tableId
+  ])
 
   return (
     <DataTableContext.Provider value={value}>

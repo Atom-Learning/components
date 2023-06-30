@@ -32,6 +32,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   return (
     <>
       <DataTableLoading />
+
       <Table
         {...props}
         numberOfStickyColumns={numberOfStickyColumns}
