@@ -1,7 +1,7 @@
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
-import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import { Label } from '../label'
 import { useDataTable } from './DataTableContext'
 

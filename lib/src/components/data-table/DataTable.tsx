@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { DataTableBulkActions } from './DataTableBulkActions'
 import { DataTableBody } from './DataTableBody'
+import { DataTableBulkActions } from './DataTableBulkActions'
 import { DataTableProvider } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableEmptyState } from './DataTableEmptyState'

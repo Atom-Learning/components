@@ -1,11 +1,12 @@
 import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 
-import { Table } from '../table'
-import { DataTableDataCell } from './DataTableDataCell'
-import { useDataTable } from './DataTableContext'
-import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
 import { styled } from '~/stitches'
+
+import { Table } from '../table'
+import { useDataTable } from './DataTableContext'
+import { DataTableDataCell } from './DataTableDataCell'
+import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
 
 export type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>

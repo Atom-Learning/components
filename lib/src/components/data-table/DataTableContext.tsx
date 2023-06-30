@@ -1,3 +1,4 @@
+import { v4 as uuid } from '@lukeed/uuid'
 import type {
   PaginationState,
   Row,
@@ -26,8 +27,6 @@ import {
 import { getNewAsyncData } from './getNewAsyncData'
 import { usePagination } from './usePagination'
 import { useSortByColumn } from './useSorting'
-
-import { v4 as uuid } from '@lukeed/uuid'
 
 const DataTableContext =
   React.createContext<DataTableContextType<unknown> | null>(null)
