@@ -323,6 +323,113 @@ tabs:
       </DataTable>`} language={"tsx"} />
 
 
+      #### Row selection and bulk actions
+
+
+      The component supports multiple-row selection. To activate the feature, \`enableRowSelection\` needs to be passed into the \`DataTable\` provider. This will activate an extra column containing checkboxes, one for each row, and a main one that toggles all-row selection.
+
+
+      In addition to this, you will also need to build the \`BulkActions\` bar, which will be composed by using 2 subcomponents, which represent the 2 possible states that relate to row selection:\
+
+
+      * The \`DefaultActions\` component will be rendered when no rows are currently being selected
+
+      * The \`SelectedRowActions\` component will be rendered when at least one row is currently selected.
+
+
+      The difference between the 2 is the fact that the \`SelectedRowActions\` component contains a default \`Cancel\` button which simply deselects everything and returns the table to the "default" state.
+
+
+      Both components can take custom elements, like buttons or links, with custom actions. This allows us to do whatever we want to with the currently selected data. For instance, the \`DefaultActions\` component could contain a button that adds extra rows to the table. The \`SelectedRowActions\` component could, instead, contain a button that deletes the selected rows.
+
+
+      Here's what it would all look like when put together:
+
+
+      <CodeBlock live={false} preview={false} code={`const columnHelper = createColumnHelper<{
+        firstName: string
+        lastName: string
+        age: string
+      }>()
+
+
+      const columns = [
+        columnHelper.accessor('firstName', {
+          header: 'First name',
+          id: 'firstName',
+          cell: (data) => data.getValue()
+        }),
+        columnHelper.accessor('lastName', {
+          header: 'Last name',
+          id: 'lastName',
+          cell: (data) => data.getValue()
+        }),
+        columnHelper.accessor('age', {
+          header: 'Age',
+          id: 'age',
+          cell: (data) => data.getValue()
+        })
+      ]
+
+
+      const data = [
+        {
+          firstName: 'John',
+          lastName: 'Doe',
+          age: 34
+        },
+        {
+          firstName: 'Jane',
+          lastName: 'Doe',
+          age: 33
+        },
+        {
+          firstName: 'Tina',
+          lastName: 'Doe',
+          age: 2
+        }
+      ]
+
+
+      const TableHead = () => {
+        const { rowSelection, setData } = useDataTable()
+
+        const handleIncreaseAge = () => {
+          const selectedRows = Object.keys(rowSelection)
+
+          const updatedData = data.results.map((row, index) => {
+            if (selectedRows.includes(index.toString())) {
+              row.age += 10
+            }
+            return row
+          })
+
+          setData((current) => ({
+            ...current,
+            results: updatedData
+          }))
+        }
+        
+        return (
+          <DataTable.BulkActions>
+            <DataTable.BulkActions.DefaultActions>
+              <Button onClick={() => console.log('clicked')}>Add row</Button>
+            </DataTable.BulkActions.DefaultActions>
+            <DataTable.BulkActions.SelectedRowActions>
+              <Button onClick={handleIncreaseAge}>Make older</Button>
+            </DataTable.BulkActions.SelectedRowActions>
+          </DataTable.BulkActions>
+        )
+      }
+        
+
+        
+      <DataTable columns={columns} data={data} enableRowSelection>
+        <TableHead />
+        <DataTable.Table />
+      </DataTable>`} language={"jsx"} />
+
+
       ## API Reference
 
 
@@ -339,6 +446,9 @@ tabs:
 
 
       <ComponentProps component="DataTable.MetaData" />
+
+
+      <ComponentProps component="DataTable.BulkActions" />
 
 
       <ComponentProps component="DataTable.Body" />
