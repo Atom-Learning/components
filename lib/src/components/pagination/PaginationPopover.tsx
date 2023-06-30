@@ -1,7 +1,7 @@
 import { Ellypsis } from '@atom-learning/icons'
 import React from 'react'
 
-import { ActionIcon, Icon, Popover, Stack } from '..'
+import { ActionIcon, Flex, Icon, Popover } from '..'
 import { PaginationItem } from './PaginationItem'
 import { usePagination } from './usePagination'
 
@@ -26,7 +26,15 @@ export const PaginationPopover = () => {
         </ActionIcon>
       </Popover.Trigger>
       <Popover.Content size="md" showCloseButton={false} css={{ p: 0 }}>
-        <Stack css={{ p: '$4', display: 'flex', flexWrap: 'wrap' }} gap={1}>
+        <Flex
+          css={{
+            p: '$4',
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: 1,
+            justifyContent: 'center'
+          }}
+        >
           {paginationItems?.map((pageNumber) => {
             return (
               <PaginationItem
@@ -36,7 +44,7 @@ export const PaginationPopover = () => {
               />
             )
           })}
-        </Stack>
+        </Flex>
       </Popover.Content>
     </Popover>
   )
