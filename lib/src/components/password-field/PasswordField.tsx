@@ -43,6 +43,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         name={name}
         id={name}
         ref={ref}
+        {...(error !== undefined && { state: 'error' })}
         {...remainingProps}
       />
     </FieldWrapper>
