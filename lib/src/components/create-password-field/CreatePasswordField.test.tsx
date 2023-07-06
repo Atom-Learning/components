@@ -80,4 +80,12 @@ describe(`CreatePasswordField component`, () => {
 
     expect(await screen.findByText('7+ characters')).toBeVisible()
   })
+
+  it('displays validation styling to the input when the value is not valid', () => {
+    const { container } = customRender()
+
+    userEvent.click(screen.getByRole('button', { name: 'Submit' }))
+
+    expect(container).toMatchSnapshot()
+  })
 })
