@@ -66,6 +66,12 @@ export const CreatePasswordField = ({
     validatePassword
   ])
 
+  const getMessageTheme = (result: boolean, isFocused: boolean) => {
+    if (result) return 'success'
+
+    return isFocused ? 'neutral' : 'error'
+  }
+
   return (
     <Box css={css}>
       <PasswordField
@@ -90,7 +96,7 @@ export const CreatePasswordField = ({
           {Object.entries(validationResult).map(([message, result]) => (
             <InlineMessage
               key={message}
-              theme={result ? 'success' : isFocused ? 'neutral' : 'error'}
+              theme={getMessageTheme(result, isFocused)}
             >
               {message}
             </InlineMessage>
