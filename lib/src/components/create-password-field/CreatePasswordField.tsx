@@ -53,7 +53,7 @@ export const CreatePasswordField = ({
         )
 
         setValidationResult(result)
-        return Object.entries(result).every(([_, isValid]) => isValid)
+        return Object.values(result).every((isValid) => isValid)
       }
 
       return false
@@ -83,7 +83,7 @@ export const CreatePasswordField = ({
             mt: '$2',
             mb: '$4',
             gap: '$2',
-            flexDirection: messageDirection,
+            flexDirection: messageDirection
           }}
         >
           {Object.entries(validationResult).map(([message, result]) => (
