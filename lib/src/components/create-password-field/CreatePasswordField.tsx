@@ -10,6 +10,7 @@ import { Flex } from '../flex'
 import { InlineMessage } from '../inline-message'
 import { PasswordField } from '../password-field'
 import { PasswordInput } from '../password-input'
+import { Box } from '../box'
 
 type ValidationResult = Record<string, boolean>
 
@@ -66,11 +67,10 @@ export const CreatePasswordField = ({
   ])
 
   return (
-    <>
+    <Box css={css}>
       <PasswordField
         label={label}
         name={name}
-        css={css}
         onChange={(e) => handleChange(e.target.value)}
         onBlur={() => setIsFocused(false)}
         onFocus={() => setIsFocused(true)}
@@ -83,6 +83,7 @@ export const CreatePasswordField = ({
             mt: '$2',
             mb: '$4',
             gap: '$2',
+            flexWrap: 'wrap',
             flexDirection: messageDirection
           }}
         >
@@ -96,7 +97,7 @@ export const CreatePasswordField = ({
           ))}
         </Flex>
       )}
-    </>
+    </Box>
   )
 }
 
