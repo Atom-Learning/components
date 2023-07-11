@@ -1,16 +1,16 @@
+import invariant from 'invariant'
 import * as React from 'react'
 import { useFormContext } from 'react-hook-form'
 import { throttle } from 'throttle-debounce'
-import invariant from 'invariant'
 
 import type { CSS } from '~/stitches'
 
+import { Box } from '../box'
 import { FieldElementWrapperProps } from '../field-wrapper'
 import { Flex } from '../flex'
 import { InlineMessage } from '../inline-message'
 import { PasswordField } from '../password-field'
 import { PasswordInput } from '../password-input'
-import { Box } from '../box'
 
 type ValidationResult = Record<string, boolean>
 

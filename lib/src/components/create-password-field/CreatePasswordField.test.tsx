@@ -3,10 +3,10 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { Button } from '../button'
 import { Form } from '../form'
 import { Tooltip } from '../tooltip'
 import { CreatePasswordField } from '.'
-import { Button } from '../button'
 
 const props: React.ComponentProps<typeof CreatePasswordField> = {
   name: 'password',
