@@ -40,6 +40,10 @@
       "body-max-line-length": [
         0,
         "always"
+      ],
+      "type-enum": [
+        2,
+        "always", ["feat", "fix", "perf"]
       ]
     }
   },
