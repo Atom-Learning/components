@@ -87,7 +87,6 @@ export const CreatePasswordField = ({
         <Flex
           css={{
             mt: '$2',
-            mb: '$4',
             gap: '$2',
             flexWrap: 'wrap',
             flexDirection: messageDirection
