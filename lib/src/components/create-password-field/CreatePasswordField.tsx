@@ -11,11 +11,13 @@ import { Flex } from '../flex'
 import { InlineMessage } from '../inline-message'
 import { PasswordField } from '../password-field'
 import { PasswordInput } from '../password-input'
+import { Override } from '~/utilities'
 
 type ValidationResult = Record<string, boolean>
 
-type CreatePasswordFieldProps = React.ComponentProps<typeof PasswordInput> &
-  Omit<FieldElementWrapperProps, 'label' | 'name'> & {
+type CreatePasswordFieldProps = Override<
+  React.ComponentProps<typeof PasswordInput> & FieldElementWrapperProps,
+  {
     label?: string
     name?: string
     validate: (
@@ -24,6 +26,7 @@ type CreatePasswordFieldProps = React.ComponentProps<typeof PasswordInput> &
     defaultValidation: ValidationResult
     messageDirection?: CSS['flexDirection']
   }
+>
 
 export const CreatePasswordField = ({
   validate,
