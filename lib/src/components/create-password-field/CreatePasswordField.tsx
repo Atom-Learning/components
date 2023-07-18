@@ -4,6 +4,7 @@ import { useFormContext } from 'react-hook-form'
 import { throttle } from 'throttle-debounce'
 
 import type { CSS } from '~/stitches'
+import { Override } from '~/utilities'
 
 import { Box } from '../box'
 import { FieldElementWrapperProps } from '../field-wrapper'
@@ -11,7 +12,6 @@ import { Flex } from '../flex'
 import { InlineMessage } from '../inline-message'
 import { PasswordField } from '../password-field'
 import { PasswordInput } from '../password-input'
-import { Override } from '~/utilities'
 
 type ValidationResult = Record<string, boolean>
 
