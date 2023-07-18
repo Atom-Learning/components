@@ -11,6 +11,7 @@ const StyledSpan = styled('span', { zIndex: 1 })
 const StyledStepperButton = styled(ActionIcon, {
   borderColor: '$tonal400 !important',
   zIndex: 1,
+  height: '100% !important',
   '&:hover': {
     bg: '$tonal50',
     svg: {

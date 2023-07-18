@@ -7,9 +7,10 @@ import { Icon } from '~/components/icon/'
 import { Input } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
+import { getFieldIconSize } from '~/utilities'
 
 export type SearchInputProps = React.ComponentProps<typeof Input> & {
-  size?: 'sm' | 'md'
+  size?: 'sm' | 'md' | 'lg'
   css?: CSS
   value?: string
   defaultValue?: string
@@ -36,6 +37,11 @@ const StyledIcon = styled(Icon, {
       },
       md: {
         top: 10,
+        right: 10,
+        size: 20
+      },
+      lg: {
+        top: 14,
         right: 10,
         size: 20
       }
@@ -74,6 +80,8 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       setInnerValue(value)
       setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
     }, [value])
+
+    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
 
     React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
 
@@ -118,8 +126,12 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
         <ActionIcon
           label={clearText}
           theme="neutral"
-          size={size}
-          css={{ position: 'absolute', top: '0', right: '$1' }}
+          size={iconSize}
+          css={{
+            position: 'absolute',
+            top: size === 'lg' ? '4px' : '0',
+            right: '$1'
+          }}
           onClick={handleClear}
         >
           <Icon is={Close} />

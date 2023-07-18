@@ -13,13 +13,14 @@ import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
+import { getFieldIconSize } from '~/utilities'
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {
     initialDate?: Date
     dateFormat?: string
     disabled?: boolean
-    size?: 'sm' | 'md'
+    size?: 'sm' | 'md' | 'lg'
     revalidate?: () => Promise<boolean>
     onChange?: (value?: Date) => void
   }
@@ -54,6 +55,8 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     const refDateToday = React.useRef<HTMLButtonElement>(null)
     const refDateSelected = React.useRef<HTMLButtonElement>(null)
 
+    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
+
     React.useEffect(() => {
       onChange?.(date)
     }, [date, onChange])
@@ -72,10 +75,14 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
           <Popover.Trigger asChild>
             <ActionIcon
-              css={{ position: 'absolute', top: '0', right: '0' }}
+              css={{
+                position: 'absolute',
+                top: size === 'lg' ? '4px' : '0',
+                right: '0'
+              }}
               disabled={disabled}
               label={updatedLabels.open}
-              size={size}
+              size={iconSize}
               theme="neutral"
               hasTooltip={false}
             >

@@ -344,3 +344,216 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
   </div>
 </div>
 `;
+
+exports[`SearchInput component renders lg size 1`] = `
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-cNcGUX::-webkit-search-decoration,
+  .c-cNcGUX::-webkit-search-cancel-button,
+  .c-cNcGUX::-webkit-search-results-button,
+  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+}
+
+@media  {
+  .c-fZTBsJ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hvMhuR-OveXb-size-md {
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fZTBsJ-jAZHIx-size-lg {
+    height: var(--sizes-5);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hvMhuR-cQgunn-size-lg {
+    top: 14px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media  {
+  .c-PJLV-icmpvrW-css {
+    position: relative;
+  }
+
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
+  .c-hvMhuR-ihFPSGE-css {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fDzwZw-ifWWfIb-css {
+    position: absolute;
+    top: 0;
+    right: var(--space-1);
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-icmpvrW-css"
+  >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
+      type="search"
+      value=""
+    />
+    <svg
+      aria-hidden="true"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-cQgunn-size-lg c-hvMhuR-ihFPSGE-css"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.412 14.412 20 20"
+      />
+      <circle
+        cx="10"
+        cy="10"
+        r="6"
+      />
+    </svg>
+  </div>
+</div>
+`;

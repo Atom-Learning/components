@@ -50,6 +50,14 @@ const StyledSelect = styled('select', {
         height: '$4',
         pl: '$3',
         pr: '$6'
+      },
+      lg: {
+        backgroundPosition: 'right $space$3 top 50%, 0 0',
+        backgroundSize: '20px auto, 100%',
+        fontSize: '$md',
+        height: '$5',
+        pl: '$3',
+        pr: '$6'
       }
     },
     state: {

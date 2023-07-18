@@ -1,9 +1,12 @@
+import * as React from 'react'
+
 import { ComboboxInput as BaseComboboxInput } from '@reach/combobox'
 
 import { styled, theme } from '~/stitches'
+import { Override } from '~/utilities/types'
 import { encodeBackgroundIcon } from '~/utilities'
 
-export const ComboboxInput = styled(BaseComboboxInput, {
+export const StyledComboboxInput = styled(BaseComboboxInput, {
   boxShadow: 'none', // prevent default iOS default styling
   fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
@@ -37,6 +40,23 @@ export const ComboboxInput = styled(BaseComboboxInput, {
     cursor: 'not-allowed'
   },
   variants: {
+    size: {
+      sm: {
+        height: '$3',
+        fontSize: '$sm',
+        lineHeight: 1.7
+      },
+      md: {
+        height: '$4',
+        fontSize: '$md',
+        lineHeight: 2
+      },
+      lg: {
+        height: '$5',
+        fontSize: '$md',
+        lineHeight: 2
+      }
+    },
     state: {
       error: {
         border: '1px solid $danger'
@@ -44,3 +64,16 @@ export const ComboboxInput = styled(BaseComboboxInput, {
     }
   }
 })
+
+export type ComboboxInputProps = Override<
+  React.ComponentProps<typeof StyledComboboxInput>,
+  {
+    name: string
+  }
+>
+
+export const ComboboxInput: React.FC<ComboboxInputProps> = React.forwardRef(
+  ({ size = 'md', ...rest }, ref) => {
+    return <StyledComboboxInput size={size} {...rest} ref={ref} />
+  }
+)

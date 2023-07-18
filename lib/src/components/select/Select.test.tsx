@@ -123,4 +123,10 @@ describe(`Select component`, () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders lg size', async () => {
+    const { container } = render(<Select aria-label="dropdown" size="lg" />)
+
+    expect(container).toMatchSnapshot()
+  })
 })

@@ -41,4 +41,19 @@ describe('Combobox component', () => {
 
     expect(combobox).toHaveValue('Apple')
   })
+
+  it('renders with lg size', async () => {
+    const { container } = render(
+      <Combobox openOnFocus aria-label="Favourite fruit">
+        <Combobox.Input id="fruit" size="lg" />
+        <Combobox.Popover>
+          <Combobox.List>
+            <Combobox.Option value="Apple" />
+          </Combobox.List>
+        </Combobox.Popover>
+      </Combobox>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })
