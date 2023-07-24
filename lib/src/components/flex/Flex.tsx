@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 import { CSS, styled } from '~/stitches'
 import { createThemeVariants } from '~/utilities'
 
@@ -20,8 +18,7 @@ const globalValues = ['inherit', 'initial', 'revert', 'revert-layer', 'unset'] a
 type GlobalValue = typeof globalValues[number] | string & {}
 
 
-const StyledFlex = styled('div', {
-  unset: 'all',
+export const Flex = styled('div', {
   display: 'flex',
   variants: {
     direction: createVariants([...globalValues, 'row', 'row-reverse', 'column', 'column-reverse'], (v) => { return { flexDirection: v } }),
@@ -32,11 +29,5 @@ const StyledFlex = styled('div', {
     gap: createThemeVariants('space', { gap: '$key' })
   }
 })
-
-type TFlexProps = React.ComponentProps<typeof StyledFlex>
-
-export const Flex = React.forwardRef<HTMLDivElement, TFlexProps>(
-  (props, ref) => <StyledFlex ref={ref} {...props} />
-)
 
 Flex.displayName = 'Flex'
