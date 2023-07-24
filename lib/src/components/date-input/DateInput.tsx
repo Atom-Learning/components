@@ -77,7 +77,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         const parsedInputDate = dayjs(newDate)
         setDate(newDate)
         setDateString(parsedInputDate.format(dateFormat))
-        setInputRefreshKey(Math.random()) // Remount the Input
+        setInputRefreshKey((prevKey) => prevKey + 1) // Remount the Input
       },
       [dateFormat]
     )
