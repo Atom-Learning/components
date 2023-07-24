@@ -11,7 +11,9 @@ const StyledChipToggleIcon = styled(Icon, {
   display: 'none'
 })
 
-const StyledChipToggleGroupItem = styled(Chip, {
+const StyledChipToggleGroupItem = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Chip, {
   '&:not([disabled])': {
     cursor: 'pointer',
     '&:hover': {

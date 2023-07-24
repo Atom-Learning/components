@@ -14,12 +14,11 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     display: flex;
   }
 
-  .c-bvauNG {
+  .c-bTwmDw {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     border: 1px solid;
     border-radius: var(--radii-0);
-    align-items: center;
     font-family: var(--fonts-body);
     max-width: 100%;
     border-color: var(--colors-primary);
@@ -27,7 +26,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     background: var(--colors-primaryLight);
   }
 
-  .c-bvauNG[data-disabled] {
+  .c-bTwmDw[data-disabled] {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -152,19 +151,27 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     margin-left: var(--space-2);
   }
 
-  .c-bvauNG-kIEsaE-size-md {
+  .c-dhzjXW-kVNAnR-wrap-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-bTwmDw-kIEsaE-size-md {
     height: var(--sizes-3);
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-bvauNG-kIEsaE-size-md::before {
+  .c-bTwmDw-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-bvauNG-kIEsaE-size-md::after {
+  .c-bTwmDw-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -224,7 +231,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
   >
     <div
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-bTwmDw c-dhzjXW-kVNAnR-wrap-nowrap c-dhzjXW-jroWjL-align-center c-bTwmDw-kIEsaE-size-md c-efCiES"
     >
       <span
         class="c-eOdeXL"
@@ -250,7 +257,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </button>
     </div>
     <div
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-bTwmDw c-dhzjXW-kVNAnR-wrap-nowrap c-dhzjXW-jroWjL-align-center c-bTwmDw-kIEsaE-size-md c-efCiES"
       data-disabled=""
     >
       <span

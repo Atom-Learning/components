@@ -108,16 +108,19 @@ export const ChipRootProvider: React.FC<TChipRootProviderProps> = ({
   )
 }
 
-// Myrto: asWorkaround is such a hack. We really should not be needing it. If we can fix it in stitches it would be best.
-export type TChipRootProps = TChipRootProviderProps & {
-  // asWorkaround?: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
-}
+export type TChipRootProps = TChipRootProviderProps
 
 const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =
   React.forwardRef(({ size = 'md', ...rest }, ref) => {
     return (
       <ChipRootProvider size={size}>
-        <StyledRoot ref={ref} size={size} wrap="nowrap" align="center" {...rest} />
+        <StyledRoot
+          ref={ref}
+          size={size}
+          wrap="nowrap"
+          align="center"
+          {...rest}
+        />
       </ChipRootProvider>
     )
   })
