@@ -71,8 +71,7 @@ exports[`SearchInput component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -80,23 +79,26 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -105,7 +107,7 @@ exports[`SearchInput component renders 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -256,8 +258,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -295,29 +296,33 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .c-fDzwZw-ifWWfIb-css {
+  .c-fDzwZw-igyKUXm-css {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: var(--space-1);
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -326,7 +331,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     />
     <button
       aria-label="clearWhenDefaultValue"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ifWWfIb-css c-PJLV"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igyKUXm-css c-PJLV"
       data-state="closed"
       type="button"
     >
@@ -479,8 +484,7 @@ exports[`SearchInput component renders lg size 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -501,8 +505,7 @@ exports[`SearchInput component renders lg size 1`] = `
     line-height: 2;
   }
 
-  .c-hvMhuR-cQgunn-size-lg {
-    top: 14px;
+  .c-hvMhuR-koUlob-size-lg {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -510,29 +513,33 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  .c-fDzwZw-ifWWfIb-css {
+  .c-fDzwZw-igyKUXm-css {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: var(--space-1);
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -541,7 +548,7 @@ exports[`SearchInput component renders lg size 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-cQgunn-size-lg c-hvMhuR-ihFPSGE-css"
+      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

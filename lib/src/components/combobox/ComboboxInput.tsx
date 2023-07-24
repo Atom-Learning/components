@@ -8,7 +8,6 @@ import { encodeBackgroundIcon } from '~/utilities'
 
 export const StyledComboboxInput = styled(BaseComboboxInput, {
   boxShadow: 'none', // prevent default iOS default styling
-  fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
   backgroundImage: encodeBackgroundIcon(theme.colors.tonal300.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
@@ -65,11 +64,8 @@ export const StyledComboboxInput = styled(BaseComboboxInput, {
   }
 })
 
-export type ComboboxInputProps = Override<
-  React.ComponentProps<typeof StyledComboboxInput>,
-  {
-    name: string
-  }
+export type ComboboxInputProps = React.ComponentProps<
+  typeof StyledComboboxInput
 >
 
 export const ComboboxInput: React.FC<ComboboxInputProps> = React.forwardRef(

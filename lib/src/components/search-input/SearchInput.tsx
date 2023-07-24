@@ -31,17 +31,14 @@ const StyledIcon = styled(Icon, {
   variants: {
     size: {
       sm: {
-        top: '$2',
         right: '$2',
         size: '$1'
       },
       md: {
-        top: 10,
         right: 10,
         size: 20
       },
       lg: {
-        top: 14,
         right: 10,
         size: 20
       }
@@ -118,7 +115,11 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           <StyledIcon
             is={Search}
             size={size}
-            css={{ size: size == 'sm' ? '$1' : 20 }}
+            css={{
+              size: size == 'sm' ? '$1' : 20,
+              top: '50%',
+              transform: 'translateY(-50%)'
+            }}
           />
         )
 
@@ -129,7 +130,8 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           size={iconSize}
           css={{
             position: 'absolute',
-            top: size === 'lg' ? '4px' : '0',
+            top: '50%',
+            transform: 'translateY(-50%)',
             right: '$1'
           }}
           onClick={handleClear}
@@ -140,7 +142,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
     }
 
     return (
-      <Box css={{ position: 'relative', ...css }}>
+      <Box css={{ position: 'relative', height: 'max-content', ...css }}>
         <StyledSearchInput
           ref={setInputElRef}
           size={size}

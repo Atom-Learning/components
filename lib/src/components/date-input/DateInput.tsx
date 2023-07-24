@@ -62,7 +62,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     }, [date, onChange])
 
     return (
-      <Box css={{ position: 'relative' }}>
+      <Box css={{ position: 'relative', height: 'max-content' }}>
         <Input
           name="date"
           disabled={disabled}
@@ -77,7 +77,8 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
             <ActionIcon
               css={{
                 position: 'absolute',
-                top: size === 'lg' ? '4px' : '0',
+                top: '50%',
+                transform: 'translateY(-50%)',
                 right: '0'
               }}
               disabled={disabled}

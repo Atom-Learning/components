@@ -2,9 +2,8 @@
 
 exports[`Combobox component renders 1`] = `
 @media  {
-  .c-bYKHLS {
+  .c-ciFqjz {
     box-shadow: none;
-    font-size: var(--fontSizes-md);
     -webkit-appearance: none;
     appearance: none;
     background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
@@ -25,17 +24,17 @@ exports[`Combobox component renders 1`] = `
     width: 100%;
   }
 
-  .c-bYKHLS::placeholder {
+  .c-ciFqjz::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-bYKHLS:focus-within {
+  .c-ciFqjz:focus-within {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-bYKHLS[disabled] {
+  .c-ciFqjz[disabled] {
     background-color: var(--colors-tonal100);
     color: var(--colors-tonal400);
     cursor: not-allowed;
@@ -81,7 +80,7 @@ exports[`Combobox component renders 1`] = `
 }
 
 @media  {
-  .c-bYKHLS-fwoCmE-size-md {
+  .c-ciFqjz-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -100,7 +99,7 @@ exports[`Combobox component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="c-bYKHLS c-bYKHLS-fwoCmE-size-md"
+      class="c-ciFqjz c-ciFqjz-fwoCmE-size-md"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"
@@ -113,9 +112,8 @@ exports[`Combobox component renders 1`] = `
 
 exports[`Combobox component renders with lg size 1`] = `
 @media  {
-  .c-bYKHLS {
+  .c-ciFqjz {
     box-shadow: none;
-    font-size: var(--fontSizes-md);
     -webkit-appearance: none;
     appearance: none;
     background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20stroke%3D%22%23757575%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%20color%3D%22%23757575%22%3E%3Cpolyline%20points%3D%226%2010%2012%2016%2018%2010%22%2F%3E%3C%2Fsvg%3E);
@@ -136,17 +134,17 @@ exports[`Combobox component renders with lg size 1`] = `
     width: 100%;
   }
 
-  .c-bYKHLS::placeholder {
+  .c-ciFqjz::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-bYKHLS:focus-within {
+  .c-ciFqjz:focus-within {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-bYKHLS[disabled] {
+  .c-ciFqjz[disabled] {
     background-color: var(--colors-tonal100);
     color: var(--colors-tonal400);
     cursor: not-allowed;
@@ -192,13 +190,13 @@ exports[`Combobox component renders with lg size 1`] = `
 }
 
 @media  {
-  .c-bYKHLS-fwoCmE-size-md {
+  .c-ciFqjz-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-bYKHLS-jAZHIx-size-lg {
+  .c-ciFqjz-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -217,7 +215,7 @@ exports[`Combobox component renders with lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="c-bYKHLS c-bYKHLS-jAZHIx-size-lg"
+      class="c-ciFqjz c-ciFqjz-jAZHIx-size-lg"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"

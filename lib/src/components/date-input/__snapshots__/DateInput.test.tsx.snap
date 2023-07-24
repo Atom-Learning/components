@@ -101,20 +101,22 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
-  .c-fDzwZw-iewRRYK-css {
+  .c-fDzwZw-igEsmBj-css {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       aria-label="test"
@@ -128,7 +130,7 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
       data-state="closed"
       type="button"
     >
@@ -501,13 +503,15 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
-  .c-fDzwZw-iewRRYK-css {
+  .c-fDzwZw-igEsmBj-css {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
   }
 
@@ -548,17 +552,11 @@ exports[`DateInput component renders lg size 1`] = `
     padding-right: var(--sizes-2);
     z-index: 1147483646;
   }
-
-  .c-fDzwZw-ieTzcsO-css {
-    position: absolute;
-    top: 4px;
-    right: 0;
-  }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
@@ -571,7 +569,7 @@ exports[`DateInput component renders lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ieTzcsO-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
       data-state="closed"
       type="button"
     >

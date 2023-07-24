@@ -125,8 +125,7 @@ exports[`SearchField component renders a field in error state - has no programma
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -171,17 +170,20 @@ exports[`SearchField component renders a field in error state - has no programma
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .c-dhzjXW-ijkHUQU-css {
@@ -217,7 +219,7 @@ exports[`SearchField component renders a field in error state - has no programma
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-icmpvrW-css"
+        class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
           class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -230,7 +232,7 @@ exports[`SearchField component renders a field in error state - has no programma
         />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -387,8 +389,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -402,17 +403,20 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -435,7 +439,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-icmpvrW-css"
+        class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
           class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -448,7 +452,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -570,8 +574,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-OveXb-size-md {
-    top: 10px;
+  .c-hvMhuR-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -585,17 +588,20 @@ exports[`SearchField component renders a field with a search input - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
   .c-cNcGUX-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-ihFPSGE-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -618,7 +624,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-icmpvrW-css"
+        class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
           class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
@@ -630,7 +636,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-OveXb-size-md c-hvMhuR-ihFPSGE-css"
+          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
