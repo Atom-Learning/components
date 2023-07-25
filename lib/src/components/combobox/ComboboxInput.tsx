@@ -1,10 +1,9 @@
+import { ComboboxInput as BaseComboboxInput } from '@reach/combobox'
 import * as React from 'react'
 
-import { ComboboxInput as BaseComboboxInput } from '@reach/combobox'
-
 import { styled, theme } from '~/stitches'
-import { Override } from '~/utilities/types'
 import { encodeBackgroundIcon } from '~/utilities'
+import { Override } from '~/utilities/types'
 
 export const StyledComboboxInput = styled(BaseComboboxInput, {
   boxShadow: 'none', // prevent default iOS default styling

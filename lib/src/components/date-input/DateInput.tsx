@@ -3,6 +3,7 @@ import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
+import { getFieldIconSize } from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
@@ -13,7 +14,6 @@ import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
 import { DEFAULT_DATE_FORMAT } from './constants'
 import { useDate } from './use-date'
-import { getFieldIconSize } from '~/utilities'
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {

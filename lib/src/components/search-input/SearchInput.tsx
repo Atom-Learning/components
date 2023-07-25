@@ -6,8 +6,8 @@ import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
 import { Input } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
-import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 import { getFieldIconSize } from '~/utilities'
+import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 
 export type SearchInputProps = React.ComponentProps<typeof Input> & {
   size?: 'sm' | 'md' | 'lg'
