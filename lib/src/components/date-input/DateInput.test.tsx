@@ -58,4 +58,14 @@ describe('DateInput component', () => {
     fireEvent.click(screen.getByText('15'))
     await waitFor(() => expect(changeSpy).toHaveBeenCalled())
   })
+
+  it('renders lg size', async () => {
+    const { container } = render(
+      <Wrapper>
+        <DateInput size="lg" />
+      </Wrapper>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })

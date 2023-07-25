@@ -40,32 +40,33 @@ exports[`NumberInputField component renders a field in error state - has no prog
     vertical-align: middle;
   }
 
-  .c-fPoCzx {
+  .c-dWvLOH {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
+    height: 100% !important;
   }
 
-  .c-fPoCzx:hover {
+  .c-dWvLOH:hover {
     background: var(--colors-tonal50);
   }
 
-  .c-fPoCzx:hover svg {
+  .c-dWvLOH:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-fPoCzx svg {
+  .c-dWvLOH svg {
     color: var(--colors-tonal300);
   }
 
-  .c-fPoCzx:active {
+  .c-dWvLOH:active {
     background: var(--colors-tonal100);
   }
 
-  .c-fPoCzx:active svg {
+  .c-dWvLOH:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-fPoCzx:disabled {
+  .c-dWvLOH:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -274,7 +275,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-fPoCzx-iwWtoZ-css {
+  .c-dWvLOH-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -290,7 +291,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     pointer-events: none;
   }
 
-  .c-fPoCzx-ihgsOSq-css {
+  .c-dWvLOH-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -333,7 +334,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -371,7 +372,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >
@@ -468,32 +469,33 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     vertical-align: middle;
   }
 
-  .c-fPoCzx {
+  .c-dWvLOH {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
+    height: 100% !important;
   }
 
-  .c-fPoCzx:hover {
+  .c-dWvLOH:hover {
     background: var(--colors-tonal50);
   }
 
-  .c-fPoCzx:hover svg {
+  .c-dWvLOH:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-fPoCzx svg {
+  .c-dWvLOH svg {
     color: var(--colors-tonal300);
   }
 
-  .c-fPoCzx:active {
+  .c-dWvLOH:active {
     background: var(--colors-tonal100);
   }
 
-  .c-fPoCzx:active svg {
+  .c-dWvLOH:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-fPoCzx:disabled {
+  .c-dWvLOH:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -655,7 +657,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
-  .c-fPoCzx-iwWtoZ-css {
+  .c-dWvLOH-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -671,7 +673,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     pointer-events: none;
   }
 
-  .c-fPoCzx-ihgsOSq-css {
+  .c-dWvLOH-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -706,7 +708,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -744,7 +746,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -812,32 +814,33 @@ exports[`NumberInputField component renders a field with a number input - has no
     vertical-align: middle;
   }
 
-  .c-fPoCzx {
+  .c-dWvLOH {
     border-color: var(--colors-tonal400) !important;
     z-index: 1;
+    height: 100% !important;
   }
 
-  .c-fPoCzx:hover {
+  .c-dWvLOH:hover {
     background: var(--colors-tonal50);
   }
 
-  .c-fPoCzx:hover svg {
+  .c-dWvLOH:hover svg {
     color: var(--colors-tonal400);
   }
 
-  .c-fPoCzx svg {
+  .c-dWvLOH svg {
     color: var(--colors-tonal300);
   }
 
-  .c-fPoCzx:active {
+  .c-dWvLOH:active {
     background: var(--colors-tonal100);
   }
 
-  .c-fPoCzx:active svg {
+  .c-dWvLOH:active svg {
     color: var(--colors-tonal500);
   }
 
-  .c-fPoCzx:disabled {
+  .c-dWvLOH:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -999,7 +1002,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
-  .c-fPoCzx-iwWtoZ-css {
+  .c-dWvLOH-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -1015,7 +1018,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     pointer-events: none;
   }
 
-  .c-fPoCzx-ihgsOSq-css {
+  .c-dWvLOH-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1050,7 +1053,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label="decrement"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-iwWtoZ-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -1087,7 +1090,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label="increment"
-            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-fPoCzx c-fPoCzx-ihgsOSq-css"
+            class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >

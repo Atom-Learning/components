@@ -101,20 +101,22 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-icmpvrW-css {
+  .c-PJLV-ieFlhpX-css {
     position: relative;
+    height: max-content;
   }
 
-  .c-fDzwZw-iewRRYK-css {
+  .c-fDzwZw-igEsmBj-css {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-icmpvrW-css"
+    class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
       aria-label="test"
@@ -128,7 +130,446 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-iewRRYK-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 5h18v16H3V5Zm18 4H3m4-4V3m10 2V3"
+        />
+        <rect
+          height="2"
+          width="2"
+          x="15"
+          y="15"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`DateInput component renders lg size 1`] = `
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+
+  .c-fDzwZw {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-fkUJsw {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-fPxPMR {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: var(--space-1) var(--space-2);
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-gNRHdp {
+    background: transparent;
+    border: none;
+    border-radius: var(--radii-round);
+    color: var(--colors-tonal900);
+    cursor: pointer;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+    padding: 0;
+    transition: all 75ms;
+  }
+
+  .c-gNRHdp:hover {
+    background: var(--colors-tonal100);
+  }
+
+  .c-gNRHdp:active {
+    color: white;
+    background: var(--colors-primary);
+  }
+
+  .c-gNRHdp:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 2px;
+  }
+
+  .c-fARQYB {
+    fill: white;
+    z-index: 1;
+  }
+
+  [data-align="end"] .c-fARQYB {
+    margin-right: var(--sizes-2);
+  }
+
+  [data-align="start"] .c-fARQYB {
+    margin-left: var(--sizes-2);
+  }
+
+  .c-iKnjyA {
+    background: white;
+    border-radius: var(--radii-1);
+    box-shadow: var(--shadows-2);
+    max-width: 90vw;
+    padding: var(--sizes-2);
+    padding-right: var(--space-6);
+    position: relative;
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iKnjyA {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iKnjyA[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iKnjyA[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iKnjyA[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-iKnjyA[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+}
+
+@media  {
+  .c-fZTBsJ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-fDzwZw-PrXKS-size-md {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
+  }
+
+  .c-dbrbZt-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-fkUJsw-elrwsr-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+  }
+
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-gNRHdp-huXVXM-isOutsideMonth-true {
+    color: var(--colors-tonal200);
+  }
+
+  .c-gNRHdp-hztIub-isToday-true {
+    background: var(--colors-tonal100);
+  }
+
+  .c-iKnjyA-kUaMfZ-size-md {
+    max-width: 400px;
+  }
+
+  .c-gNRHdp-habrnX-isSelected-true {
+    background: var(--colors-primary);
+    color: white;
+  }
+
+  .c-gNRHdp-habrnX-isSelected-true:hover {
+    background: var(--colors-primary);
+  }
+
+  .c-fZTBsJ-jAZHIx-size-lg {
+    height: var(--sizes-5);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+}
+
+@media  {
+  .c-fDzwZw-otpKd-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
+  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+
+  .c-fDzwZw-otpKd-cv[disabled] {
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iRJCoR-cv {
+    background: white;
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv[disabled] {
+    background: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary);
+  }
+
+  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media  {
+  .c-PJLV-ieFlhpX-css {
+    position: relative;
+    height: max-content;
+  }
+
+  .c-fDzwZw-igEsmBj-css {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+
+  .c-PJLV-ijkIlaT-css {
+    position: relative;
+    width: min-content;
+    margin-top: calc(var(--space-1)*-1);
+  }
+
+  .c-dhzjXW-ihOOvbW-css {
+    position: absolute;
+    top: 0;
+    right: calc(var(--space-1)*-1);
+  }
+
+  .c-dhzjXW-iePfWBT-css {
+    height: var(--sizes-4);
+    align-items: center;
+    margin-bottom: var(--space-4);
+  }
+
+  .c-fkUJsw-ikwYYXS-css {
+    padding-left: 0;
+    padding-right: 0;
+    color: var(--colors-tonal600);
+  }
+
+  .c-fPxPMR-ihbtntv-css {
+    margin-bottom: var(--space-3);
+  }
+
+  .c-dyvMgW-idQvJRf-css {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .c-iKnjyA-ijdzfXb-css {
+    padding-right: var(--sizes-2);
+    z-index: 1147483646;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV c-PJLV-ieFlhpX-css"
+  >
+    <input
+      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
+      name="date"
+      type="text"
+      value=""
+    />
+    <button
+      aria-controls="radix-8"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      aria-label="Open calendar"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
       data-state="closed"
       type="button"
     >
