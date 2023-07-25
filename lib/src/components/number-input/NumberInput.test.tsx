@@ -105,4 +105,10 @@ describe(`NumberInput component`, () => {
     expect(onValueChange).toBeCalled()
     expect(onValueChange).toBeCalledWith(1)
   })
+
+  it('renders lg size', async () => {
+    const { container } = renderComponent({ size: 'lg' })
+
+    expect(container).toMatchSnapshot()
+  })
 })

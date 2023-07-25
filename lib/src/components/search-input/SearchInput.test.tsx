@@ -94,4 +94,14 @@ describe('SearchInput component', () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders lg size', async () => {
+    const { container } = render(
+      <Wrapper>
+        <SearchInput size="lg" />
+      </Wrapper>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
 })
