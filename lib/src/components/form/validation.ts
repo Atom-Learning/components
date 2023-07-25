@@ -24,7 +24,7 @@ export type ValidationError = {
 }
 
 // Returns `true` if a value passes validation, or a string with the error if not
-type Validator = (value: any) => boolean | string
+type Validator = (value: any) => boolean | string | Promise<boolean | string>
 
 // Processes a value after validation
 type Processor = (value: any) => any
