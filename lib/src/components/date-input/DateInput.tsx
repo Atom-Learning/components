@@ -3,6 +3,7 @@ import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
+import { getFieldIconSize } from '~/utilities'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
@@ -19,7 +20,7 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     initialDate?: Date
     dateFormat?: string
     disabled?: boolean
-    size?: 'sm' | 'md'
+    size?: 'sm' | 'md' | 'lg'
     revalidate?: () => Promise<boolean>
     onChange?: (value?: Date) => void
   }
@@ -54,12 +55,14 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     const refDateToday = React.useRef<HTMLButtonElement>(null)
     const refDateSelected = React.useRef<HTMLButtonElement>(null)
 
+    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
+
     React.useEffect(() => {
       onChange?.(date)
     }, [date, onChange])
 
     return (
-      <Box css={{ position: 'relative' }}>
+      <Box css={{ position: 'relative', height: 'max-content' }}>
         <Input
           name="date"
           disabled={disabled}
@@ -72,10 +75,15 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
           <Popover.Trigger asChild>
             <ActionIcon
-              css={{ position: 'absolute', top: '0', right: '0' }}
+              css={{
+                position: 'absolute',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                right: '0'
+              }}
               disabled={disabled}
               label={updatedLabels.open}
-              size={size}
+              size={iconSize}
               theme="neutral"
               hasTooltip={false}
             >

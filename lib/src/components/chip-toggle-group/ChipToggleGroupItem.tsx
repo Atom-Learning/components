@@ -11,7 +11,9 @@ const StyledChipToggleIcon = styled(Icon, {
   display: 'none'
 })
 
-const StyledChipToggleGroupItem = styled(Chip, {
+const StyledChipToggleGroupItem = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Chip, {
   '&:not([disabled])': {
     cursor: 'pointer',
     '&:hover': {
@@ -51,7 +53,7 @@ export const ChipToggleGroupItem: React.FC<TChipToggleGroupItem> = ({
 }) => {
   return (
     <ToggleGroup.Item {...rest} asChild>
-      <StyledChipToggleGroupItem asWorkaround="button">
+      <StyledChipToggleGroupItem as="button">
         <StyledChipToggleIcon is={Ok} size={size === 'lg' ? 'md' : 'sm'} />
         <Chip.Content>{children}</Chip.Content>
       </StyledChipToggleGroupItem>

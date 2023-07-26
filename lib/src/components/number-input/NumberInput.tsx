@@ -2,6 +2,7 @@ import { Minus, Plus } from '@atom-learning/icons'
 import * as React from 'react'
 
 import type { CSS } from '~/stitches'
+import { getFieldIconSize } from '~/utilities'
 
 import { Flex } from '../flex'
 import { Input } from '../input'
@@ -16,7 +17,7 @@ export interface NumberInputProps {
   defaultValue?: number
   disabled?: boolean
   readonly?: boolean
-  size?: 'sm' | 'md'
+  size?: 'sm' | 'md' | 'lg'
   onValueChange?: (value: number) => void
   stepperButtonLabels?: { increment?: string; decrement?: string }
   disabledTooltipContent?: { increment?: string; decrement?: string }
@@ -53,6 +54,8 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
     const inputRef = React.useRef<HTMLInputElement | null>(null)
 
     React.useImperativeHandle(ref, () => inputRef.current as HTMLInputElement)
+
+    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
 
     const stepperButtonLabels = {
       increment: 'increment',
@@ -168,7 +171,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
             borderTopRightRadius: '0px',
             borderBottomRightRadius: '0px'
           }}
-          size={size}
+          size={iconSize}
           disabled={isAtMin || isDisabled}
           showTooltip={isAtMin && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.decrement}
@@ -183,7 +186,7 @@ export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
             borderTopLeftRadius: '0px',
             borderBottomLeftRadius: '0px'
           }}
-          size={size}
+          size={iconSize}
           disabled={isAtMax || isDisabled}
           showTooltip={isAtMax && !isDisabled}
           disabledTooltipContent={disabledTooltipContent.increment}

@@ -6,10 +6,11 @@ import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
 import { Input } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
+import { getFieldIconSize } from '~/utilities'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 
 export type SearchInputProps = React.ComponentProps<typeof Input> & {
-  size?: 'sm' | 'md'
+  size?: 'sm' | 'md' | 'lg'
   css?: CSS
   value?: string
   defaultValue?: string
@@ -30,12 +31,14 @@ const StyledIcon = styled(Icon, {
   variants: {
     size: {
       sm: {
-        top: '$2',
         right: '$2',
         size: '$1'
       },
       md: {
-        top: 10,
+        right: 10,
+        size: 20
+      },
+      lg: {
         right: 10,
         size: 20
       }
@@ -75,6 +78,8 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
       setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
     }, [value])
 
+    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
+
     React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
 
     const handleClear = () => {
@@ -110,7 +115,11 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           <StyledIcon
             is={Search}
             size={size}
-            css={{ size: size == 'sm' ? '$1' : 20 }}
+            css={{
+              size: size == 'sm' ? '$1' : 20,
+              top: '50%',
+              transform: 'translateY(-50%)'
+            }}
           />
         )
 
@@ -118,8 +127,13 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
         <ActionIcon
           label={clearText}
           theme="neutral"
-          size={size}
-          css={{ position: 'absolute', top: '0', right: '$1' }}
+          size={iconSize}
+          css={{
+            position: 'absolute',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            right: '$1'
+          }}
           onClick={handleClear}
         >
           <Icon is={Close} />
@@ -128,7 +142,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
     }
 
     return (
-      <Box css={{ position: 'relative', ...css }}>
+      <Box css={{ position: 'relative', height: 'max-content', ...css }}>
         <StyledSearchInput
           ref={setInputElRef}
           size={size}

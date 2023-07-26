@@ -62,4 +62,10 @@ describe(`Input component`, () => {
 
     expect(await axe(container)).toHaveNoViolations()
   })
+
+  it('renders lg size', async () => {
+    const { container } = render(<Input size="lg" />)
+
+    expect(container).toMatchSnapshot()
+  })
 })

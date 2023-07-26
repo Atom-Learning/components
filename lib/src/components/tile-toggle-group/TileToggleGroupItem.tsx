@@ -4,7 +4,9 @@ import * as React from 'react'
 import { TileInteractive } from '~/components/tile-interactive'
 import { styled } from '~/stitches'
 
-const StyledTileToggleGroupItem = styled(TileInteractive, {
+const StyledTileToggleGroupItem = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(TileInteractive, {
   '&:not([disabled])': {
     '&[data-state="on"]': {
       '&:hover': {
@@ -38,7 +40,7 @@ export const TileToggleGroupItem: React.FC<TTileToggleGroupItem> = ({
 }) => {
   return (
     <ToggleGroup.Item {...rest} asChild>
-      <StyledTileToggleGroupItem asWorkaround="button">
+      <StyledTileToggleGroupItem as="button">
         {children}
       </StyledTileToggleGroupItem>
     </ToggleGroup.Item>

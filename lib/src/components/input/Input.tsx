@@ -40,6 +40,11 @@ const StyledInput = styled('input', {
         height: '$4',
         fontSize: '$md',
         lineHeight: 2
+      },
+      lg: {
+        height: '$5',
+        fontSize: '$md',
+        lineHeight: 2
       }
     },
     state: {

@@ -123,3 +123,69 @@ exports[`Input component renders a text input 1`] = `
   />
 </div>
 `;
+
+exports[`Input component renders lg size 1`] = `
+@media  {
+  .c-fZTBsJ {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: var(--radii-0);
+    box-shadow: none;
+    box-sizing: border-box;
+    color: var(--colors-tonal600);
+    cursor: text;
+    display: block;
+    font-family: var(--fonts-body);
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    transition: all 100ms ease-out;
+    width: 100%;
+  }
+
+  .c-fZTBsJ:focus {
+    border-color: var(--colors-primary);
+    outline: none;
+  }
+
+  .c-fZTBsJ[disabled] {
+    background-color: var(--colors-tonal100);
+    color: var(--colors-tonal400);
+    cursor: not-allowed;
+  }
+
+  .c-fZTBsJ::placeholder {
+    color: var(--colors-tonal300);
+    opacity: 1;
+  }
+}
+
+@media  {
+  .c-fZTBsJ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-fZTBsJ-jAZHIx-size-lg {
+    height: var(--sizes-5);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+}
+
+@media  {
+  .c-fZTBsJ-ikLAKdM-css {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+<div>
+  <input
+    class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
+    type="text"
+  />
+</div>
+`;
