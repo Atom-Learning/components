@@ -26,12 +26,11 @@ export const StyledTile = styled('div', {
 })
 
 type TTileProps = React.ComponentProps<typeof StyledTile> & {
-  asWorkaround?: React.ElementType // (!?) `asWorkaround` rather than `as` because, it seems, when we extend this via `styled()` stitches overrides this component from the first argument for the value in `as`
   colorScheme?: TcolorScheme
 }
 
-export const Tile = React.forwardRef<HTMLButtonElement, TTileProps>(
-  ({ children, asWorkaround, colorScheme = {}, ...rest }, ref) => (
+export const Tile = React.forwardRef<HTMLDivElement, TTileProps>(
+  ({ children, colorScheme = {}, ...rest }, ref) => (
     <ColorScheme
       asChild
       base="grey1"
@@ -39,7 +38,7 @@ export const Tile = React.forwardRef<HTMLButtonElement, TTileProps>(
       interactive="loContrast"
       {...colorScheme}
     >
-      <StyledTile ref={ref} as={asWorkaround} {...rest}>
+      <StyledTile ref={ref} {...rest}>
         {children}
       </StyledTile>
     </ColorScheme>
