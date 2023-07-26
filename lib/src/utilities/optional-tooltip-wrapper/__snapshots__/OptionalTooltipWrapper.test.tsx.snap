@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionalTooltipWrapper component renders with tooltip 1`] = `
+<div>
+  <p
+    class="c-PJLV"
+    data-state="closed"
+  >
+    hello
+  </p>
+</div>
+`;
+
+exports[`OptionalTooltipWrapper component renders without tooltip 1`] = `
+<div>
+  <p>
+    hello
+  </p>
+</div>
+`;
