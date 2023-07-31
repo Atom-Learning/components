@@ -63,6 +63,9 @@ type StackPropsType = React.ComponentProps<typeof StyledStack> & {
   as?: any
 } // (!) `css` and `as` are both props that come from `stitches`. It would be better to figure out and export the appropriate type for them in stitches!
 
+/**
+ * @deprecated Stack is being deprecated. Use Flex instead!
+ */
 export const Stack: React.ForwardRefExoticComponent<StackPropsType> =
   React.forwardRef(
     (
