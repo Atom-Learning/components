@@ -8,18 +8,20 @@ exports[`Flex component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ikLAKdM-css {
-    margin: auto;
-    height: 100px;
-    width: 100px;
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-dhzjXW-ikLAKdM-css"
+    class="c-dhzjXW c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center"
   >
-    FLEX
+    Flex
   </div>
 </div>
 `;
