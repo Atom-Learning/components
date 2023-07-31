@@ -66,7 +66,7 @@ const BadgeInner = React.forwardRef<HTMLDivElement, TBadgeInnerProps>(
   ({ theme = 'non-semantic', emphasis = 'subtle', children, ...rest }, ref) => {
     const { size, overflow, isOverflowing } = React.useContext(BadgeContext)
     const [badgeElRef, setBadgeElRef] = useCallbackRefState()
-    React.useImperativeHandle(ref, () => badgeElRef as HTMLInputElement)
+    React.useImperativeHandle(ref, () => badgeElRef as HTMLDivElement)
 
     const isSemanticTheme = [
       'info',
