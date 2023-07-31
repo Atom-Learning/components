@@ -46,7 +46,23 @@ export const bases = {
   blue1: { colorName: 'blue', color0: '#FFFFFF' },
   blue2: { colorName: 'blue' },
   purple1: { colorName: 'purple', color0: '#FFFFFF' },
-  purple2: { colorName: 'purple' }
+  purple2: { colorName: 'purple' },
+  cyan1: { colorName: 'cyan', color0: '#FFFFFF' },
+  cyan2: { colorName: 'cyan' },
+  green1: { colorName: 'green', color0: '#FFFFFF' },
+  green2: { colorName: 'green' },
+  magenta1: { colorName: 'magenta', color0: '#FFFFFF' },
+  magenta2: { colorName: 'magenta' },
+  red1: { colorName: 'red', color0: '#FFFFFF' },
+  red2: { colorName: 'red' },
+  teal1: { colorName: 'teal', color0: '#FFFFFF' },
+  teal2: { colorName: 'teal' },
+  orange1: { colorName: 'orange', color0: '#FFFFFF' },
+  orange2: { colorName: 'orange' },
+  yellow1: { colorName: 'yellow', color0: '#FFFFFF' },
+  yellow2: { colorName: 'yellow' },
+  lime1: { colorName: 'lime', color0: '#FFFFFF' },
+  lime2: { colorName: 'lime' }
 }
 const generateBase = () => {
   Object.entries(bases).forEach(
@@ -69,7 +85,23 @@ export const accents = {
   blue1: { colorName: 'blue', color0: '#FFFFFF' },
   blue2: { colorName: 'blue' },
   purple1: { colorName: 'purple', color0: '#FFFFFF' },
-  purple2: { colorName: 'purple' }
+  purple2: { colorName: 'purple' },
+  cyan1: { colorName: 'cyan', color0: '#FFFFFF' },
+  cyan2: { colorName: 'cyan' },
+  green1: { colorName: 'green', color0: '#FFFFFF' },
+  green2: { colorName: 'green' },
+  magenta1: { colorName: 'magenta', color0: '#FFFFFF' },
+  magenta2: { colorName: 'magenta' },
+  red1: { colorName: 'red', color0: '#FFFFFF' },
+  red2: { colorName: 'red' },
+  teal1: { colorName: 'teal', color0: '#FFFFFF' },
+  teal2: { colorName: 'teal' },
+  orange1: { colorName: 'orange', color0: '#FFFFFF' },
+  orange2: { colorName: 'orange' },
+  yellow1: { colorName: 'yellow', color0: '#FFFFFF' },
+  yellow2: { colorName: 'yellow' },
+  lime1: { colorName: 'lime', color0: '#FFFFFF' },
+  lime2: { colorName: 'lime' }
 }
 const generateAccent = () => {
   Object.entries(accents).forEach(
