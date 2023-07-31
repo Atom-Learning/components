@@ -5,7 +5,9 @@ import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { focusVisibleStyleBlock } from '~/utilities'
 
-const StyledTileInteractive = styled(Tile, {
+const StyledTileInteractive = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Tile, {
   '&[data-disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
@@ -49,11 +51,11 @@ export const TileInteractive = React.forwardRef<
   const isLink = !!href
   const elementSpecificProps = isLink
     ? {
-        asWorkaround: 'a' as React.ElementType,
+        as: 'a' as React.ElementType,
         href,
         onClick: undefined
       }
-    : { asWorkaround: 'button' as React.ElementType, type, onClick }
+    : { as: 'button' as React.ElementType, type, onClick }
 
   return <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />
 })
