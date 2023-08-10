@@ -1,4 +1,2 @@
-export {
-  OptionalTooltipWrapper,
-  type TOptionalTooltipWrapperProps
-} from './OptionalTooltipWrapper'
+export { OptionalTooltipWrapper } from './OptionalTooltipWrapper'
+export type { TOptionalTooltipWrapperProps } from './OptionalTooltipWrapper'
