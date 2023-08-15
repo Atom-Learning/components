@@ -250,9 +250,9 @@ tabs:
       s/tile-thumbnail.svg\"},{\"heading\":\"Create Password
       Input\",\"description\":\"An input that allows users to privately enter
       their password when creating new
-      ones.\",\"link\":{\"href\":\"https://atomlearning.design/components/form/\
-      fields/create-password-field\"},\"tags\":[\"Inputs\"],\"image\":\"/assets\
-      /images/create-password-input.svg\"}]} />"
+      ones.\",\"link\":{\"href\":\"/components/form/fields/create-password-field\
+      \"},\"tags\":[\"Inputs\"],\"image\":\"/assets/images/create-password-inpu\
+      t.svg\"}]} />"
     title: Main
 slug: landing
 nestedSlug:
