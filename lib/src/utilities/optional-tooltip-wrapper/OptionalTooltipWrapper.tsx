@@ -5,7 +5,7 @@ import { Tooltip } from '~/components/tooltip'
 export type TOptionalTooltipWrapperProps = {
   hasTooltip?: boolean
   label?: React.ReactNode
-  tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
+  tooltipSide?: React.ComponentProps<typeof Tooltip.Content>['side']
 }
 
 export const OptionalTooltipWrapper: React.FC<TOptionalTooltipWrapperProps> = ({
