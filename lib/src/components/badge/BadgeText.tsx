@@ -55,7 +55,11 @@ const toTextSize = {
   md: 'md'
 }
 
-export const BadgeText = ({ children, ...rest }: TBadgeTextProps) => {
+export const BadgeText = ({
+  children,
+  ...rest
+}: TBadgeTextProps): JSX.Element => {
+  // We need the return type here. Otherwise typsecript breaks when this type is used in Badge. Do not remove unless you want to tackle that issue again.
   const { size: badgeSize, overflow } = React.useContext(BadgeContext)
 
   const size = React.useMemo(
