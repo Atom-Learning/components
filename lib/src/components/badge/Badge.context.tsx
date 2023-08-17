@@ -14,11 +14,11 @@ type TBadgeContext = TBadgeProviderProps & {
 
 export const BadgeContext = React.createContext<TBadgeContext>({})
 
-export const BadgeProvider: React.FC<TBadgeProviderProps> = ({
+export const BadgeProvider = ({
   size,
   overflow,
   children
-}) => {
+}: React.PropsWithChildren<TBadgeProviderProps>) => {
   const [isOverflowing, setIsOverflowing] = React.useState(false)
 
   const value = React.useMemo<TBadgeContext>(
