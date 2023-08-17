@@ -55,7 +55,7 @@ const toTextSize = {
   md: 'md'
 }
 
-export const BadgeText: React.FC<TBadgeTextProps> = ({ children, ...rest }) => {
+export const BadgeText = ({ children, ...rest }: TBadgeTextProps) => {
   const { size: badgeSize, overflow } = React.useContext(BadgeContext)
 
   const size = React.useMemo(
