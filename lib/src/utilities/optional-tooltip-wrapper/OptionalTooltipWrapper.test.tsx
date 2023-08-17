@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import * as React from 'react'
 
 import { OptionalTooltipWrapper } from '.'
@@ -12,7 +12,7 @@ const OptionalTooltipWrapperImplementation = (props) => {
         tooltipSide="right"
         {...props}
       >
-        <p>hello</p>
+        <p data-testid="tooltip-trigger">hello</p>
       </OptionalTooltipWrapper>
     </Tooltip.Provider>
   )
@@ -24,11 +24,15 @@ describe('OptionalTooltipWrapper component', () => {
       <OptionalTooltipWrapperImplementation hasTooltip />
     )
 
+    fireEvent.focus(screen.getByTestId('tooltip-trigger'))
+
     expect(container).toMatchSnapshot()
   })
 
   it('renders without tooltip', async () => {
     const { container } = render(<OptionalTooltipWrapperImplementation />)
+
+    fireEvent.focus(screen.getByTestId('tooltip-trigger'))
 
     expect(container).toMatchSnapshot()
   })
