@@ -25,8 +25,8 @@ tabs:
       ## Emphasis
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
-        <Badge emphasis="subtle">Badge</Badge>
-        <Badge emphasis="bold">Badge</Badge>
+        <Badge emphasis="subtle">Subtle</Badge>
+        <Badge emphasis="bold">Bold</Badge>
       </Stack>`} language={"tsx"} />
 
 
