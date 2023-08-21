@@ -138,20 +138,20 @@ exports[`Link component can be nested within Text and Heading 1`] = `
   <p
     class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
   >
-    <button
-      class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-fmPQHp-noCapsize-true"
+    <a
+      class="c-fucOQC c-fucOQC-gvmVBy-size-md"
     >
       TEXT LINK
-    </button>
+    </a>
   </p>
   <h2
     class="c-jryFOR c-jryFOR-fOoUdm-size-md"
   >
-    <button
-      class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-fmPQHp-noCapsize-true"
+    <a
+      class="c-fucOQC c-fucOQC-gvmVBy-size-md"
     >
       HEADING LINK
-    </button>
+    </a>
   </h2>
 </div>
 `;
@@ -221,6 +221,8 @@ exports[`Link component renders an anchor 1`] = `
   <a
     class="c-fucOQC c-fucOQC-gvmVBy-size-md"
     href="https://google.com/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     GOOGLE
   </a>
@@ -309,6 +311,8 @@ exports[`Link component renders an large anchor 1`] = `
   <a
     class="c-fucOQC c-fucOQC-jvTRJO-size-lg"
     href="https://google.com/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     GOOGLE
   </a>

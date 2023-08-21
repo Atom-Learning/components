@@ -1,13 +1,13 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { isExternalLink, isMailLink, isTelLink } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
 import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
+import { Slot } from '@radix-ui/react-slot'
 
 export const StyledLink = styled('a', {
   bg: 'unset',
@@ -35,23 +35,21 @@ export const StyledLink = styled('a', {
   variants: textVariants
 })
 
-type LinkProps = Override<
-  React.ComponentProps<typeof StyledLink>,
-  {
-    as?: React.ComponentType | React.ElementType
-  } & NavigatorActions
->
+export const Link = React.forwardRef<
+  HTMLAnchorElement,
+  React.ComponentProps<typeof StyledLink> & { asChild?: boolean }
+>(({ asChild, size = 'md', href, ...rest }, ref) => {
+  if (asChild) {
+    return <StyledLink {...rest} as={Slot} noCapsize size={size} ref={ref} />
+  }
 
-export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', href, ...props }, ref) => (
-    <StyledLink
-      {...(!href && { as: 'button', noCapsize: true })}
-      size={size}
-      href={href}
-      {...props}
-      ref={ref}
-    />
-  )
-) as React.FC<LinkProps>
+  const props = { href, size, ref, ...rest }
+
+  if (href && isExternalLink(href) && !isMailLink(href) && !isTelLink(href)) {
+    return <StyledLink target="_blank" rel="noopener noreferrer" {...props} />
+  }
+
+  return <StyledLink {...props} />
+})
 
 Link.displayName = 'Link'

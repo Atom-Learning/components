@@ -135,8 +135,8 @@ describe(`Button component`, () => {
 
   it('is polymorphic', async () => {
     render(
-      <Button as="a" href="https://app.atomlearning.co.uk">
-        BUTTON
+      <Button asChild>
+        <a href="https://app.atomlearning.co.uk">BUTTON</a>
       </Button>
     )
 
@@ -182,15 +182,6 @@ describe(`Button component`, () => {
       fireEvent.click(screen.getByRole('button'))
 
       expect(handleClick).toHaveBeenCalledTimes(0)
-    })
-
-    it('renders an anchor if provided a link', async () => {
-      render(<Button href="https://atomlearning.co.uk">ATOM</Button>)
-
-      expect(await screen.findByRole('link')).toHaveAttribute(
-        'href',
-        'https://atomlearning.co.uk'
-      )
     })
   })
 })
