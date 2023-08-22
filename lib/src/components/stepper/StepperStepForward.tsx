@@ -10,6 +10,7 @@ export const StepperStepForward: React.FC<
   const { goToNextStep, activeStep } = useStepper()
 
   const handleClick = () => {
+    if (!goToNextStep) return
     if (onClick) {
       return onClick(goToNextStep)
     }

@@ -4,9 +4,9 @@ import { Context, StepperProviderProps } from '../types'
 
 const StepperContext = React.createContext<Context>({
   steps: [],
-  goToPreviousStep: () => undefined,
-  goToNextStep: () => undefined,
-  goToStep: () => undefined,
+  goToPreviousStep: () => null,
+  goToNextStep: () => null,
+  goToStep: () => null,
   activeStep: 0,
   viewedSteps: [],
   allowSkip: false,
@@ -72,9 +72,9 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
     <StepperContext.Provider
       value={{
         steps: steps || Array(stepCount).fill(''),
-        goToPreviousStep: isControlled ? () => undefined : goToPreviousStep,
-        goToNextStep: isControlled ? () => undefined : goToNextStep,
-        goToStep: isControlled ? () => undefined : goToStep,
+        goToPreviousStep: isControlled ? undefined : goToPreviousStep,
+        goToNextStep: isControlled ? undefined : goToNextStep,
+        goToStep: isControlled ? undefined : goToStep,
         activeStep,
         viewedSteps,
         completedSteps,
