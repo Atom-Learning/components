@@ -41,19 +41,15 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
         {cancelActionText && (
           <Button
             appearance="outline"
-            as={AlertDialog.Cancel}
             onClick={() => onAction(false)}
             size="sm"
+            asChild
           >
-            {cancelActionText}
+            <AlertDialog.Cancel>{cancelActionText}</AlertDialog.Cancel>
           </Button>
         )}
-        <Button
-          as={AlertDialog.Action}
-          onClick={() => onAction(true)}
-          size="sm"
-        >
-          {confirmActionText}
+        <Button onClick={() => onAction(true)} size="sm" asChild>
+          <AlertDialog.Action>{confirmActionText}</AlertDialog.Action>
         </Button>
       </Stack>
     </AlertDialog.Content>

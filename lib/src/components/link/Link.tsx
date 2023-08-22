@@ -1,3 +1,4 @@
+import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
@@ -7,7 +8,6 @@ import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
 import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
-import { Slot } from '@radix-ui/react-slot'
 
 export const StyledLink = styled('a', {
   bg: 'unset',
@@ -37,8 +37,11 @@ export const StyledLink = styled('a', {
 
 export const Link = React.forwardRef<
   HTMLAnchorElement,
-  React.ComponentProps<typeof StyledLink> & { asChild?: boolean }
->(({ asChild, size = 'md', href, ...rest }, ref) => {
+  React.ComponentProps<typeof StyledLink> & {
+    asChild?: boolean
+    as?: never
+  }
+>(({ as, asChild, size = 'md', href, ...rest }, ref) => {
   if (asChild) {
     return <StyledLink {...rest} as={Slot} noCapsize size={size} ref={ref} />
   }

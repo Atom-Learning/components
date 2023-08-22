@@ -1,3 +1,4 @@
+import { Slot } from '@radix-ui/react-slot'
 import type { VariantProps } from '@stitches/react'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
@@ -7,7 +8,6 @@ import { Icon, StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
 import { Override } from '~/utilities'
-import { Slot } from '@radix-ui/react-slot'
 
 const getButtonOutlineVariant = (
   base: string,
@@ -196,10 +196,10 @@ export const StyledButton = styled('button', {
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
-    as?: React.ComponentType | React.ElementType
+    as?: never
+    asChild?: boolean
     children: React.ReactNode
     isLoading?: boolean
-    asChild?: boolean
   }
 >
 
@@ -207,6 +207,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
+      as,
       asChild,
       isLoading,
       onClick,
@@ -227,7 +228,14 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     }
 
     if (asChild) {
-      return <StyledButton {...props} as={Slot} />
+      return (
+        <StyledButton
+          isLoading={isLoading || false}
+          onClick={!isLoading ? onClick : undefined}
+          {...props}
+          as={Slot}
+        />
+      )
     }
 
     return (
