@@ -24,18 +24,16 @@ export const FileInput: React.FC<FileInputProps> = ({
   }
 
   return (
-    <Button {...rest} asChild>
-      <label>
-        <Icon is={Upload} />
-        {children}
-        <input
-          type="file"
-          onChange={handleFileSelect}
-          accept={accept}
-          multiple={multiple}
-          hidden
-        />
-      </label>
+    <Button {...rest} as="label">
+      <Icon is={Upload} />
+      {children}
+      <input
+        type="file"
+        onChange={handleFileSelect}
+        accept={accept}
+        multiple={multiple}
+        hidden
+      />
     </Button>
   )
 }

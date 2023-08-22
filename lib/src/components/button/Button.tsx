@@ -1,4 +1,4 @@
-import { Slot } from '@radix-ui/react-slot'
+// import { Slot } from '@radix-ui/react-slot'
 import type { VariantProps } from '@stitches/react'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
@@ -190,7 +190,12 @@ export const StyledButton = styled('button', {
         darken(theme.colors.primaryDark.value, 0.15)
       )
     }
-  ]
+  ],
+  defaultVariants: {
+    theme: 'primary',
+    size: 'md',
+    appearance: 'solid'
+  }
 })
 
 const ButtonContent = ({
@@ -220,54 +225,47 @@ const ButtonContent = ({
   )
 }
 
-type ButtonProps = Override<
-  React.ComponentProps<typeof StyledButton>,
-  VariantProps<typeof StyledButton> & {
-    as?: never
-    asChild?: boolean
-    children: React.ReactNode
-    isLoading?: boolean
-  }
->
+type SharedProps = Omit<React.ComponentProps<typeof StyledButton>, 'ref'> & {
+  as?: React.ElementType
+}
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      children,
-      as,
-      asChild,
-      isLoading,
-      onClick,
-      appearance = 'solid',
-      size = 'md',
-      theme = 'primary',
-      ...rest
-    },
-    ref
-  ) => {
-    const props = {
-      ...rest,
-      appearance,
-      size,
-      theme,
-      children,
-      ref,
-      // Note: button is not disabled when loading for accessibility purposes.
-      // Instead the click action is not fired and the button looks faded
-      isLoading: isLoading || false,
-      onClick: !isLoading ? onClick : undefined
-    }
+type ButtonProps = JSX.IntrinsicElements['button'] &
+  SharedProps & { href?: undefined }
 
-    if (asChild) {
-      return <StyledButton {...props} as={Slot} />
-    }
+type AnchorProps = JSX.IntrinsicElements['a'] & SharedProps & { href: string }
 
+type PolymorphicButton = {
+  (props: AnchorProps): JSX.Element
+  (props: ButtonProps): JSX.Element
+}
+
+const isAnchor = (props: ButtonProps | AnchorProps): props is AnchorProps =>
+  !!props.href
+
+export const Button = React.forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps | AnchorProps
+>((props, ref) => {
+  if (isAnchor(props)) {
     return (
-      <StyledButton type="button" {...props}>
-        <ButtonContent isLoading={isLoading}>{children}</ButtonContent>
-      </StyledButton>
+      <StyledButton
+        as="a"
+        {...props}
+        onClick={!props.isLoading ? props.onClick : undefined}
+        ref={ref as React.ForwardedRef<HTMLAnchorElement>}
+      />
     )
   }
-)
 
-Button.displayName = 'Button'
+  return (
+    <StyledButton
+      {...props}
+      onClick={!props.isLoading ? props.onClick : undefined}
+      ref={ref as React.ForwardedRef<HTMLButtonElement>}
+    >
+      <ButtonContent isLoading={props.isLoading}>
+        {props.children}
+      </ButtonContent>
+    </StyledButton>
+  )
+}) as PolymorphicButton
