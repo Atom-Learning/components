@@ -52,16 +52,11 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
         <Label htmlFor={fieldId} required={required}>
           {label}
         </Label>
-        {prompt &&
-          (prompt?.link ? (
-            <Link href={prompt?.link} onClick={prompt?.onClick} size="sm">
-              {prompt.label}
-            </Link>
-          ) : (
-            <Link onClick={prompt?.onClick} size="sm" asChild>
-              <button>{prompt.label}</button>
-            </Link>
-          ))}
+        {prompt && (
+          <Link onClick={prompt?.onClick} size="sm" asChild={!prompt?.link}>
+            {!prompt?.link ? <button>{prompt.label}</button> : prompt.label}
+          </Link>
+        )}
       </LabelContainer>
       {description && (
         <Description css={{ mb: '$3' }}>{description}</Description>

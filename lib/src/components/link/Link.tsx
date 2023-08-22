@@ -35,24 +35,32 @@ export const StyledLink = styled('a', {
   variants: textVariants
 })
 
-export const Link = React.forwardRef<
-  HTMLAnchorElement,
-  React.ComponentProps<typeof StyledLink> & {
-    asChild?: boolean
-    as?: never
-  }
->(({ as, asChild, size = 'md', href, ...rest }, ref) => {
-  if (asChild) {
-    return <StyledLink {...rest} as={Slot} noCapsize size={size} ref={ref} />
-  }
+type LinkProps = React.ComponentProps<typeof StyledLink> & {
+  asChild?: boolean
+  as?: never
+}
 
-  const props = { href, size, ref, ...rest }
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ as, asChild, size = 'md', href, ...rest }, ref) => {
+    if (asChild) {
+      return <StyledLink noCapsize {...rest} as={Slot} size={size} ref={ref} />
+    }
 
-  if (href && isExternalLink(href) && !isMailLink(href) && !isTelLink(href)) {
-    return <StyledLink target="_blank" rel="noopener noreferrer" {...props} />
+    const isExternal =
+      href && isExternalLink(href) && !isMailLink(href) && !isTelLink(href)
+
+    return (
+      <StyledLink
+        {...(isExternal
+          ? { target: '_blank', rel: 'noopener noreferrer' }
+          : {})}
+        {...rest}
+        href={href}
+        size={size}
+        ref={ref}
+      />
+    )
   }
-
-  return <StyledLink {...props} />
-})
+)
 
 Link.displayName = 'Link'
