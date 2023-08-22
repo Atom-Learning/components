@@ -2,7 +2,7 @@ import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { isExternalLink, isMailLink, isTelLink } from '~/utilities'
+import { isExternalLink } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -46,12 +46,9 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       return <StyledLink noCapsize {...rest} as={Slot} size={size} ref={ref} />
     }
 
-    const isExternal =
-      href && isExternalLink(href) && !isMailLink(href) && !isTelLink(href)
-
     return (
       <StyledLink
-        {...(isExternal
+        {...(isExternalLink(href)
           ? { target: '_blank', rel: 'noopener noreferrer' }
           : {})}
         {...rest}
