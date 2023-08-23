@@ -4,12 +4,12 @@ import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
 import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
-import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
-import { BadgeText } from './BadgeText'
-import { BadgeIcon } from './BadgeIcon'
-import { BadgeContext, BadgeProvider } from './Badge.context'
+import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
 
+import { BadgeContext, BadgeProvider } from './Badge.context'
+import { BadgeIcon } from './BadgeIcon'
+import { BadgeText } from './BadgeText'
 import { colorSchemes as badgeColorSchemes } from './stitches.badge.colorscheme.config'
 
 const StyledBadge = styled(Flex, {

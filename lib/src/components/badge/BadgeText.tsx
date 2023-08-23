@@ -1,11 +1,12 @@
 import * as React from 'react'
 
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
-import { BadgeContext } from './Badge.context'
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { useResizeObserver } from '~/utilities/hooks/useResizeObserver'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+
+import { BadgeContext } from './Badge.context'
 
 /*
  * Instead of sticking a resize observer on every `BadgeText`

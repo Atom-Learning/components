@@ -1,8 +1,9 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import * as React from 'react'
 
-import { OptionalTooltipWrapper } from '.'
 import { Tooltip } from '~/components/tooltip'
+
+import { OptionalTooltipWrapper } from '.'
 
 const OptionalTooltipWrapperImplementation = (props) => {
   return (
