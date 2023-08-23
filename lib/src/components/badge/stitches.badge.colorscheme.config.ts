@@ -1,8 +1,6 @@
 import { createTheme } from '~/stitches'
 
-export const colorSchemes = {}
-
-colorSchemes['non-semantic'] = createTheme('non-semantic', {
+const nonSemantic = createTheme('non-semantic', {
   colors: {
     textSubtle: '$accent10',
     backgroundSubtle: '$accent2',
@@ -11,7 +9,7 @@ colorSchemes['non-semantic'] = createTheme('non-semantic', {
   }
 })
 
-colorSchemes['info'] = createTheme('info', {
+const info = createTheme('info', {
   colors: {
     textSubtle: '$blue900',
     backgroundSubtle: '$blue100',
@@ -20,7 +18,7 @@ colorSchemes['info'] = createTheme('info', {
   }
 })
 
-colorSchemes['neutral'] = createTheme('neutral', {
+const neutral = createTheme('neutral', {
   colors: {
     textSubtle: '$grey900',
     backgroundSubtle: '$grey100',
@@ -29,7 +27,7 @@ colorSchemes['neutral'] = createTheme('neutral', {
   }
 })
 
-colorSchemes['success'] = createTheme('success', {
+const success = createTheme('success', {
   colors: {
     textSubtle: '$successMid',
     backgroundSubtle: '$successLight',
@@ -38,7 +36,7 @@ colorSchemes['success'] = createTheme('success', {
   }
 })
 
-colorSchemes['danger'] = createTheme('danger', {
+const danger = createTheme('danger', {
   colors: {
     textSubtle: '$dangerMid',
     backgroundSubtle: '$dangerLight',
@@ -47,7 +45,7 @@ colorSchemes['danger'] = createTheme('danger', {
   }
 })
 
-colorSchemes['warning'] = createTheme('warning', {
+const warning = createTheme('warning', {
   colors: {
     textSubtle: '$warningText',
     backgroundSubtle: '$warningLight',
@@ -55,3 +53,12 @@ colorSchemes['warning'] = createTheme('warning', {
     backgroundBold: '$warning'
   }
 })
+
+export const colorSchemes = {
+  'non-semantic': nonSemantic,
+  info,
+  neutral,
+  success,
+  danger,
+  warning
+}
