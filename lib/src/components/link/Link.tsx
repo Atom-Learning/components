@@ -3,6 +3,7 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
+import { isExternalLink } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -45,6 +46,9 @@ type LinkProps = Override<
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
   ({ size = 'md', href, ...props }, ref) => (
     <StyledLink
+      {...(isExternalLink(href)
+        ? { target: '_blank', rel: 'noopener noreferrer' }
+        : {})}
       {...(!href && { as: 'button', noCapsize: true })}
       size={size}
       href={href}
