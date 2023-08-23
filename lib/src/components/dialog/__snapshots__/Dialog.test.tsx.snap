@@ -26,6 +26,16 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     vertical-align: middle;
   }
 
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-bnQNAg {
     background: white;
     border-radius: var(--radii-1);
@@ -94,6 +104,27 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     stroke-width: 1.75;
   }
 
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
+  }
+
   .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
@@ -121,10 +152,26 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-ikHqHwu-css {
+  .c-fDzwZw-ifOCxRY-css {
     position: absolute;
     right: var(--space-4);
     top: var(--space-4);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-jryFOR-ijkrzPY-css {
+    border-bottom: 1px solid var(--colors-tonal100);
+    font-family: var(--fonts-body);
+    padding: 0 var(--space-5) var(--space-5) var(--space-5);
+    margin-bottom: var(--space-5);
+    margin-left: calc(var(--space-5)*-1);
+    margin-right: calc(var(--space-5)*-1);
+    box-sizing: content-box;
+  }
+
+  .c-dhzjXW-illFGmD-css {
+    padding-top: var(--space-4);
   }
 }
 
@@ -141,7 +188,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ifOCxRY-css"
     type="button"
   >
     <svg
@@ -155,7 +202,17 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
       />
     </svg>
   </button>
+  <h2
+    class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ijkrzPY-css"
+  >
+    TITLE
+  </h2>
   CONTENT
+  <div
+    class="c-dhzjXW c-dhzjXW-hmJoPD-justify-end c-dhzjXW-illFGmD-css"
+  >
+    FOOTER
+  </div>
 </div>
 `;
 
@@ -197,6 +254,16 @@ exports[`Dialog component with custom background renders 1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-bnQNAg {
@@ -272,6 +339,27 @@ exports[`Dialog component with custom background renders 1`] = `
     stroke-width: 1.75;
   }
 
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
+  }
+
   .c-bnQNAg-lgqbzh-size-sm {
     width: 480px;
   }
@@ -299,10 +387,26 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-ikHqHwu-css {
+  .c-fDzwZw-ifOCxRY-css {
     position: absolute;
     right: var(--space-4);
     top: var(--space-4);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-jryFOR-ijkrzPY-css {
+    border-bottom: 1px solid var(--colors-tonal100);
+    font-family: var(--fonts-body);
+    padding: 0 var(--space-5) var(--space-5) var(--space-5);
+    margin-bottom: var(--space-5);
+    margin-left: calc(var(--space-5)*-1);
+    margin-right: calc(var(--space-5)*-1);
+    box-sizing: content-box;
+  }
+
+  .c-dhzjXW-illFGmD-css {
+    padding-top: var(--space-4);
   }
 }
 
@@ -332,7 +436,7 @@ exports[`Dialog component with custom background renders 1`] = `
   >
     <button
       aria-label="Close dialog"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ifOCxRY-css"
       type="button"
     >
       <svg
@@ -375,6 +479,16 @@ exports[`Dialog component without close button renders 1`] = `
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-bnQNAg {
@@ -443,6 +557,27 @@ exports[`Dialog component without close button renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
