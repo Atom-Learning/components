@@ -14,19 +14,77 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<Badge>New Data</Badge>`} language={"tsx"} />
 
 
-      ## Theme
+      ## Text overflow
+
+      <CodeBlock live={true} preview={true} code={`<Tooltip.Provider>
+        <Badge css={{width: 100}} overflow="ellipsis">
+        <Icon is={Wifi} /> New Data New Data New Data New Data New Data</Badge>
+      </Tooltip.Provider>`} language={"tsx"} />
 
 
-      These are the available `theme`s for this component: `success`, `warning`, `danger`, `neutral`, `info` and `purple`. The default is `info`
-
+      ## Emphasis
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
-        <Badge>Info</Badge>
-        <Badge theme="neutral">Neutral</Badge>
-        <Badge theme="success">Success</Badge>
-        <Badge theme="warning">Warning</Badge>
-        <Badge theme="danger">Danger</Badge>
-        <Badge theme="purple">Purple</Badge>
+        <Badge emphasis="subtle">Subtle</Badge>
+        <Badge emphasis="bold">Bold</Badge>
+      </Stack>`} language={"tsx"} />
+
+
+      ## Theme
+
+      The following `theme`s semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
+
+
+      Moreover, any colour that has been set up as a ColorScheme accent is also available to use.  Currently the available non-semantic colours are `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
+
+
+      If NO theme is passed in. The badge will attempt to pick up a colour based on the accent of the closest parent with a `ColorScheme`.
+
+
+      <CodeBlock live={true} preview={true} code={`<Stack gap={3} direction="column" align="center">
+        <Badge>Picks up from ColorScheme</Badge>
+        <Stack gap={3}>
+          <Badge theme="info">Info</Badge>
+          <Badge theme="neutral">Neutral</Badge>
+          <Badge theme="success">Success</Badge>
+          <Badge theme="warning">Warning</Badge>
+          <Badge theme="danger">Danger</Badge>
+        </Stack>
+        <Stack gap={3}>
+          <Badge theme="grey">Grey</Badge>
+          <Badge theme="blue">Blue</Badge>
+          <Badge theme="purple">Purple</Badge>
+          <Badge theme="cyan">Cyan</Badge>
+          <Badge theme="green">Green</Badge>
+          <Badge theme="magenta">Magenta</Badge>
+          <Badge theme="red">Red</Badge>
+          <Badge theme="teal">Teal</Badge>
+          <Badge theme="orange">Orange</Badge>
+          <Badge theme="yellow">Yellow</Badge>
+          <Badge theme="lime">Lime</Badge>
+        </Stack>
+        <Badge emphasis="bold">Picks up from ColorScheme</Badge>
+
+        <Stack gap={3}>
+          <Badge theme="info" emphasis="bold">Info</Badge>
+          <Badge theme="neutral" emphasis="bold">Neutral</Badge>
+          <Badge theme="success" emphasis="bold">Success</Badge>
+          <Badge theme="warning" emphasis="bold">Warning</Badge>
+          <Badge theme="danger" emphasis="bold">Danger</Badge>
+          </Stack>
+        <Stack gap={3}>
+          <Badge theme="grey" emphasis="bold">Grey</Badge>
+          <Badge theme="blue" emphasis="bold">Blue</Badge>
+          <Badge theme="purple" emphasis="bold">Purple</Badge>
+          <Badge theme="cyan" emphasis="bold">Cyan</Badge>
+          <Badge theme="green" emphasis="bold">Green</Badge>
+          <Badge theme="magenta" emphasis="bold">Magenta</Badge>
+          <Badge theme="red" emphasis="bold">Red</Badge>
+          <Badge theme="teal" emphasis="bold">Teal</Badge>
+          <Badge theme="orange" emphasis="bold">Orange</Badge>
+          <Badge theme="yellow" emphasis="bold">Yellow</Badge>
+          <Badge theme="lime" emphasis="bold">Lime</Badge>
+        </Stack>
       </Stack>`} language={"tsx"} />
 
 
@@ -55,6 +113,12 @@ tabs:
 
 
       <ComponentProps component="Badge" />
+
+
+      <ComponentProps component="Badge.Icon" />
+
+
+      <ComponentProps component="Badge.Text" />
   - title: Visual
     content: >-
       ## Structure

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
-import { OptionallyVisuallyHiddenContainer } from '../../utilities/optionally-visually-hidden-container'
+import { OptionalVisuallyHiddenWrapper } from '../../utilities/optional-visually-hidden-wrapper'
 import { Label } from '../label'
 import { SearchInput } from '../search-input'
 import { AsyncDataState } from './DataTable.types'
@@ -43,11 +43,11 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
 
   return (
     <>
-      <OptionallyVisuallyHiddenContainer hidden={hideLabel}>
+      <OptionalVisuallyHiddenWrapper hidden={hideLabel}>
         <Label css={{ mb: '$3' }} htmlFor={label}>
           {label}
         </Label>
-      </OptionallyVisuallyHiddenContainer>
+      </OptionalVisuallyHiddenWrapper>
       <SearchInput
         {...props}
         defaultValue={globalFilter}

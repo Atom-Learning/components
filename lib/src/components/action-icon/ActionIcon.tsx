@@ -6,9 +6,10 @@ import * as React from 'react'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
+import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
+import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 
 import { Icon } from '../icon/Icon'
-import { Tooltip } from '../tooltip/Tooltip'
 import { ActionIconSizeMap } from './ActionIcon.constants'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
@@ -198,39 +199,14 @@ const StyledButton = styled('button', {
   ]
 })
 
-type ConditionallyWrapWithTooltipProps = {
-  hasTooltip: boolean
-  label: string
-  tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
-  children: React.ReactNode
-}
-
-const ConditionallyWrapWithTooltip: React.FC<
-  ConditionallyWrapWithTooltipProps
-> = ({ hasTooltip, label, tooltipSide, children }) => {
-  if (hasTooltip) {
-    return (
-      <Tooltip>
-        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
-        <Tooltip.Content side={tooltipSide}>{label}</Tooltip.Content>
-      </Tooltip>
-    )
-  }
-
-  // Ignore fragment error as this is the one place we will allow it
-  // eslint-disable-next-line
-  return <>{children}</>
-}
-
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
     as?: string | React.ReactNode
     children: React.ReactNode
     label: string
-    hasTooltip?: boolean
-    tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
-  } & NavigatorActions
+  } & Omit<TOptionalTooltipWrapperProps, 'label'> &
+    NavigatorActions
 >
 
 export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
@@ -263,7 +239,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       : ({ type: 'button' } as const)
 
     return (
-      <ConditionallyWrapWithTooltip
+      <OptionalTooltipWrapper
         hasTooltip={hasTooltip}
         label={label}
         tooltipSide={tooltipSide}
@@ -296,7 +272,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
             })
           })}
         </StyledButton>
-      </ConditionallyWrapWithTooltip>
+      </OptionalTooltipWrapper>
     )
   }
 )
