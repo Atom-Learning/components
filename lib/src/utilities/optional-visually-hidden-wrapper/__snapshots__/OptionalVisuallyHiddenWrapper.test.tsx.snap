@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopBar component renders hidden content 1`] = `
+exports[`OptionalVisuallyHidden component renders hidden content 1`] = `
 <div>
   <span
     style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
@@ -12,7 +12,7 @@ exports[`TopBar component renders hidden content 1`] = `
 </div>
 `;
 
-exports[`TopBar component renders visible content 1`] = `
+exports[`OptionalVisuallyHidden component renders visible content 1`] = `
 <div>
   <p>
     hello
