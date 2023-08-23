@@ -60,12 +60,18 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-fkUJsw-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -272,7 +278,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
       disabled=""
       type="button"
     >
@@ -317,7 +323,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
       type="button"
     >
       Next
@@ -399,12 +405,18 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-fkUJsw-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -639,7 +651,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
       disabled=""
       type="button"
     >
@@ -696,7 +708,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
       type="button"
     >
       Next
@@ -765,12 +777,18 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-fkUJsw-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -894,7 +912,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
       disabled=""
       type="button"
     >
@@ -939,7 +957,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
       type="button"
     >
       Next
