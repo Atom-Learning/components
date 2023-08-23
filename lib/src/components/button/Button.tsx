@@ -3,11 +3,12 @@ import { darken, opacify } from 'color2k'
 import * as React from 'react'
 
 import { Box } from '~/components/box'
-import { Icon } from '~/components/icon'
+import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
+import { isExternalLink } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
   base: string,
@@ -86,19 +87,24 @@ export const StyledButton = styled('button', {
         fontSize: '$sm',
         lineHeight: 1.53,
         height: '$3',
-        px: '$4'
+        px: '$4',
+        gap: '$2',
+        [`& ${StyledIcon}`]: { size: 16 }
       },
       md: {
         fontSize: '$md',
         lineHeight: 1.5,
         height: '$4',
-        px: '$5'
+        px: '$5',
+        gap: '$3',
+        [`& ${StyledIcon}`]: { size: 20 }
       },
       lg: {
         fontSize: '$lg',
         lineHeight: 1.5,
         height: '$5',
-        px: '$5'
+        px: '$5',
+        [`& ${StyledIcon}`]: { size: 22 }
       }
     },
     isLoading: {
@@ -189,55 +195,35 @@ export const StyledButton = styled('button', {
   ]
 })
 
-const WithLoader = ({ isLoading, children }) => (
-  <>
-    <Loader
-      css={{
-        opacity: isLoading ? 1 : 0,
-        position: 'absolute',
-        transition: 'opacity 150ms'
-      }}
-    />
-    <Box
-      as="span"
-      css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
-    >
-      {children}
-    </Box>
-  </>
-)
-
-const getIconSize = (size) => {
-  switch (size) {
-    case 'lg':
-      return 22
-    case 'md':
-      return 20
-    case 'sm':
-    default:
-      return 16
+const WithLoader = ({ isLoading, children }) => {
+  if (typeof isLoading !== 'boolean') {
+    return children
   }
+  return (
+    <>
+      <Loader
+        css={{
+          opacity: isLoading ? 1 : 0,
+          position: 'absolute',
+          transition: 'opacity 150ms'
+        }}
+      />
+      <Box
+        as="span"
+        css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
+      >
+        {children}
+      </Box>
+    </>
+  )
 }
-
-const getChildren = (children, size) =>
-  React.Children.map(children, (child, i) => {
-    if (child?.type === Icon) {
-      return React.cloneElement(child, {
-        css: {
-          [i === 0 ? 'mr' : 'ml']: size === 'sm' ? '$2' : '$3',
-          size: getIconSize(size),
-          ...(child.props.css ? child.props.css : {})
-        }
-      })
-    }
-    return child
-  })
 
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
     as?: React.ComponentType | React.ElementType
     children: React.ReactNode
+    href?: string
     isLoading?: boolean
   } & NavigatorActions
 >
@@ -261,11 +247,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ? {
           as: 'a',
           href,
-          onClick: undefined
+          ...(isExternalLink(href)
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})
         }
       : {}
-
-    const buttonSpecificProps = href ? {} : { type }
+    const buttonSpecificProps = !href ? { type } : {}
 
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
@@ -281,13 +268,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...buttonSpecificProps}
         ref={ref}
       >
-        {typeof isLoading === 'boolean' ? (
-          <WithLoader isLoading={isLoading}>
-            {getChildren(children, size)}
-          </WithLoader>
-        ) : (
-          getChildren(children, size)
-        )}
+        <WithLoader isLoading={isLoading}>{children}</WithLoader>
       </StyledButton>
     )
   }
