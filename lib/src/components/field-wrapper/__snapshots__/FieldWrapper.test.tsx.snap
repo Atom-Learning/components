@@ -216,6 +216,8 @@ exports[`FieldWrapper component renders 1`] = `
       <a
         class="c-fucOQC c-fucOQC-bndJoy-size-sm"
         href="https://example.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         Example prompt
       </a>
