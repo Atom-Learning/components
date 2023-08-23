@@ -221,6 +221,8 @@ exports[`Link component renders an anchor 1`] = `
   <a
     class="c-fucOQC c-fucOQC-gvmVBy-size-md"
     href="https://google.com/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     GOOGLE
   </a>
@@ -309,6 +311,8 @@ exports[`Link component renders an large anchor 1`] = `
   <a
     class="c-fucOQC c-fucOQC-jvTRJO-size-lg"
     href="https://google.com/"
+    rel="noopener noreferrer"
+    target="_blank"
   >
     GOOGLE
   </a>

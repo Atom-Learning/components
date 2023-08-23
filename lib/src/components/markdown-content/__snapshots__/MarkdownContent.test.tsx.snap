@@ -683,6 +683,8 @@ line 3 of code
       <a
         class="c-fucOQC c-fucOQC-gvmVBy-size-md"
         href="http://dev.nodeca.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         link text
       </a>
@@ -693,6 +695,8 @@ line 3 of code
       <a
         class="c-fucOQC c-fucOQC-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
+        rel="noopener noreferrer"
+        target="_blank"
         title="title text!"
       >
         link with title
