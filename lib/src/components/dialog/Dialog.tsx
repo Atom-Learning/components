@@ -6,8 +6,8 @@ import { styled } from '~/stitches'
 import { DialogBackground } from './DialogBackground'
 import { DialogClose } from './DialogClose'
 import { DialogContent } from './DialogContent'
-import { DialogHeading } from './DialogHeading'
 import { DialogFooter } from './DialogFooter'
+import { DialogHeading } from './DialogHeading'
 
 const StyledDialog = styled(Root, {})
 

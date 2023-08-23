@@ -1,5 +1,6 @@
-import { Heading } from '../heading'
 import * as React from 'react'
+
+import { Heading } from '../heading'
 
 export const DialogHeading = ({
   css,
