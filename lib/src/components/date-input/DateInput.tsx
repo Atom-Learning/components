@@ -51,9 +51,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       initialDate ? dayjs(initialDate).toDate() : undefined
     )
 
-    const [dateString, setDateString] = React.useState(
-      initialDate ? dayjs(initialDate).format(dateFormat) : ''
-    )
+    const formatDateToString = (date?: Date) =>
+      date ? dayjs(date).format(dateFormat) : ''
+    const dateString = formatDateToString(date)
 
     React.useEffect(() => {
       onChange?.(date)
@@ -66,7 +66,6 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
         setDate(
           parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined
         )
-        setDateString(newDateString)
       },
       [dateFormat]
     )
@@ -74,9 +73,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     const [inputRefreshKey, setInputRefreshKey] = React.useState(0)
     const handleCalendarChange = React.useCallback(
       (newDate) => {
-        const parsedInputDate = dayjs(newDate)
         setDate(newDate)
-        setDateString(parsedInputDate.format(dateFormat))
         setInputRefreshKey((prevKey) => prevKey + 1) // Remount the Input
       },
       [dateFormat]
