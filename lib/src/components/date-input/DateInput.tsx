@@ -4,6 +4,7 @@ import * as React from 'react'
 
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 import { getFieldIconSize } from '~/utilities'
+import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
@@ -28,6 +29,9 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     onChange?: (value?: Date) => void
   }
 
+const formatDateToString = (date?: Date, dateFormat = DEFAULT_DATE_FORMAT) =>
+  date ? dayjs(date).format(dateFormat) : ''
+
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
   (
     {
@@ -51,9 +55,10 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       initialDate ? dayjs(initialDate).toDate() : undefined
     )
 
-    const formatDateToString = (date?: Date) =>
-      date ? dayjs(date).format(dateFormat) : ''
-    const dateString = formatDateToString(date)
+    const [inputElRef, setInputElRef] = useCallbackRefState()
+    React.useImperativeHandle(ref, () => inputElRef as HTMLInputElement)
+
+    const dateString = formatDateToString(date, dateFormat)
 
     React.useEffect(() => {
       onChange?.(date)
@@ -70,13 +75,26 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       [dateFormat]
     )
 
-    const [inputRefreshKey, setInputRefreshKey] = React.useState(0)
     const handleCalendarChange = React.useCallback(
       (newDate) => {
         setDate(newDate)
-        setInputRefreshKey((prevKey) => prevKey + 1) // Remount the Input
+
+        const mirrorChangeToInputElement = () => {
+          if (!inputElRef) return
+          const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+            window.HTMLInputElement.prototype,
+            'value'
+          )?.set
+          nativeInputValueSetter?.call(
+            inputElRef,
+            formatDateToString(newDate, dateFormat)
+          )
+          const event = new Event('input', { bubbles: true })
+          inputElRef.dispatchEvent(event)
+        }
+        mirrorChangeToInputElement()
       },
-      [dateFormat]
+      [dateFormat, inputElRef]
     )
 
     const updatedLabels = {
@@ -99,18 +117,7 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
           size={size}
           {...remainingProps}
           onChange={handleInputChange}
-          ref={ref}
-          /* (!)
-           * There appears to be some weird side effect of using `value` + `onChange` + `validation`
-           * (a combination which implementation sometimes uses)
-           * which eats the onChange effect, thus leaving the value not being set into the state appropriately;
-           * Causing the field to appear to be glitching and not typing/backspacing.
-           *
-           * The following is a hack/workaround to tackle this.
-           * We are basically working instead of with a controlled `value` - with an uncontrolled input using `defaultValue`.
-           * But because we need this value to match any changes from the calendar - we are requesting a remount of the component when the calernar `onChange` runs, so the input is defaulted and set to the new internal state value.
-           */
-          key={inputRefreshKey}
+          ref={setInputElRef}
           defaultValue={dateString}
         />
         <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
