@@ -332,12 +332,18 @@ exports[`Sidedrawer renders 1`] = `
     width: auto;
   }
 
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-dXsdwv-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+    height: 20px;
+    width: 20px;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -598,7 +604,7 @@ exports[`Sidedrawer renders 1`] = `
     class="c-dtVmmL"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
       type="button"
     >
       Log out
@@ -939,12 +945,18 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     width: auto;
   }
 
-  .c-fkUJsw-elrwsr-size-md {
+  .c-fkUJsw-dXsdwv-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+    height: 20px;
+    width: 20px;
   }
 
   .c-fDzwZw-PrXKS-size-md {
@@ -1245,7 +1257,7 @@ exports[`Sidedrawer should expand an accordion by clicking on trigger and displa
     class="c-dtVmmL"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
+      class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iSsXry-cv"
       type="button"
     >
       Log out
