@@ -32,17 +32,17 @@ tabs:
 
       ## Theme
 
-      The following `theme`s semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
+      The following semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
 
 
-      Moreover, any colour that has been set up as a ColorScheme accent is also available to use.  Currently the available non-semantic colours are `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
+      The following non-semantic themes are available `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
 
 
-      If NO theme is passed in. The badge will attempt to pick up a colour based on the accent of the closest parent with a `ColorScheme`.
+      If no theme is passed in. The badge theme defaults to "info".
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3} direction="column" align="center">
-        <Badge>Picks up from ColorScheme</Badge>
+        <Badge>Defaults to: "info"</Badge>
         <Stack gap={3}>
           <Badge theme="info">Info</Badge>
           <Badge theme="neutral">Neutral</Badge>
@@ -63,7 +63,7 @@ tabs:
           <Badge theme="yellow">Yellow</Badge>
           <Badge theme="lime">Lime</Badge>
         </Stack>
-        <Badge emphasis="bold">Picks up from ColorScheme</Badge>
+        <Badge emphasis="bold">Defaults to: "info"</Badge>
 
         <Stack gap={3}>
           <Badge theme="info" emphasis="bold">Info</Badge>
