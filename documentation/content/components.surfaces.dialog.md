@@ -25,16 +25,18 @@ tabs:
           <Button>Open Dialog</Button>
         </Dialog.Trigger>
         <Dialog.Content>
-          <Heading size="sm" css={{ mb: '$3' }}>
+          <Dialog.Heading>
             Dialog
-          </Heading>
+          </Dialog.Heading>
           <Text size="sm" css={{ mb: '$3' }}>
             The \`Dialog\` can display any type of element as a trigger and has the
             content hidden by default
           </Text>
-          <Button appearance="outline" size="sm" as={Dialog.Close}>
-            Close Dialog
-          </Button>
+          <Dialog.Footer>
+            <Button appearance="outline" size="sm" as={Dialog.Close}>
+              Close Dialog
+            </Button>
+          </Dialog.Footer>
         </Dialog.Content>
       </Dialog>`} language={"tsx"} />
 
@@ -49,7 +51,9 @@ tabs:
             Dialog.Close is used below to retain the correct accessible roles and
             related logic
           </Text>
-          <Button as={Dialog.Close}>Close</Button>
+          <Dialog.Footer>
+            <Button as={Dialog.Close}>Close</Button>
+          </Dialog.Footer>
         </Dialog.Content>
       </Dialog>`} language={"tsx"} />
 
