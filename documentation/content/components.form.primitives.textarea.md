@@ -39,7 +39,7 @@ tabs:
       A textarea component is typically used in situations where users need to input or edit multi-line text.
 
 
-      ![02 textarea usage](/assets/images/textarea-01-usage.svg "02 textarea usage")
+      ![02 textarea usage](/assets/images/textarea-usage.svg "02 textarea usage")
 
 
       Textareas are commonly used in comment sections or feedback forms where users can express their thoughts or opinions.
