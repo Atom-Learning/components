@@ -111,7 +111,7 @@ export const DialogContent: React.FC<DialogContentProps> = ({
         {showCloseButton && (
           <ActionIcon
             as={Close}
-            css={{ position: 'absolute', right: '$4', top: '$4' }}
+            css={{ position: 'absolute', right: '$4', top: '$4', size: '$5' }}
             label={closeDialogText}
             hasTooltip={false}
             size="md"
