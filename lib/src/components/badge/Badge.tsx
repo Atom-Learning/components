@@ -2,7 +2,6 @@ import * as React from 'react'
 
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
-import { ColorScheme, TcolorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
@@ -52,7 +51,6 @@ const StyledBadge = styled(Flex, {
 export type TBadgeProps = React.ComponentProps<typeof StyledBadge> & {
   theme?: keyof typeof badgeColorSchemes
   overflow?: React.ComponentProps<typeof BadgeText>['overflow']
-  colorScheme?: TcolorScheme
 }
 
 type TBadge = React.ForwardRefExoticComponent<TBadgeProps> & {
@@ -63,18 +61,10 @@ type TBadge = React.ForwardRefExoticComponent<TBadgeProps> & {
 type TBadgeInnerProps = Omit<Omit<TBadgeProps, 'size'>, 'overflow'>
 
 const BadgeInner = React.forwardRef<HTMLDivElement, TBadgeInnerProps>(
-  ({ theme = 'non-semantic', emphasis = 'subtle', children, ...rest }, ref) => {
+  ({ theme = 'info', emphasis = 'subtle', children, ...rest }, ref) => {
     const { size, overflow, isOverflowing } = React.useContext(BadgeContext)
     const [badgeElRef, setBadgeElRef] = useCallbackRefState()
     React.useImperativeHandle(ref, () => badgeElRef as HTMLDivElement)
-
-    const isSemanticTheme = [
-      'info',
-      'success',
-      'neutral',
-      'warning',
-      'danger'
-    ].includes(theme)
 
     const label = badgeElRef?.textContent
 
@@ -83,35 +73,24 @@ const BadgeInner = React.forwardRef<HTMLDivElement, TBadgeInnerProps>(
         hasTooltip={overflow === 'ellipsis' && isOverflowing}
         label={label}
       >
-        <ColorScheme
-          className={
-            badgeColorSchemes[isSemanticTheme ? theme : 'non-semantic']
-          }
-          accent={
-            isSemanticTheme || !theme
-              ? undefined
-              : (`${theme}2` as TcolorScheme['accent'])
-          }
-          asChild
+        <StyledBadge
+          role="status"
+          emphasis={emphasis}
+          size={size}
+          {...rest}
+          className={badgeColorSchemes[theme]}
+          ref={setBadgeElRef}
         >
-          <StyledBadge
-            role="status"
-            emphasis={emphasis}
-            size={size}
-            {...rest}
-            ref={setBadgeElRef}
-          >
-            {React.Children.map(children, (child) => {
-              if (typeof child === 'string' || typeof child === 'number') {
-                return <BadgeText>{child}</BadgeText>
-              }
-              if (React.isValidElement(child) && child.type === Icon) {
-                return <BadgeIcon {...child.props} />
-              }
-              return child
-            })}
-          </StyledBadge>
-        </ColorScheme>
+          {React.Children.map(children, (child) => {
+            if (typeof child === 'string' || typeof child === 'number') {
+              return <BadgeText>{child}</BadgeText>
+            }
+            if (React.isValidElement(child) && child.type === Icon) {
+              return <BadgeIcon {...child.props} />
+            }
+            return child
+          })}
+        </StyledBadge>
       </OptionalTooltipWrapper>
     )
   }
