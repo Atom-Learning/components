@@ -78,7 +78,7 @@ tabs:
 
       <DosAndDonts items={[{"image":"/assets/images/textarea-01-do.svg","type":"do","description":"Use textarea as an affordance to input longer-form text content."},{"description":"Use placeholder as a replacement for label, as this creates accessibility and usability issues.","type":"dont","image":"/assets/images/textarea-02-dont.svg"},{"description":"Set the min-height of the textarea row to ensure that the text entered is visible without scrolling.","type":"do","image":"/assets/images/textarea-01-do.svg"},{"description":"Change the textarea's min-height to a smaller value.","type":"dont","image":"/assets/images/textarea-03-dont.svg"},{"image":"/assets/images/textarea-04-do.svg","description":"Be specific to help users understand the context of their input.","type":"do"},{"description":"Use vague labels, like \"Enter text here\". ","type":"dont","image":"/assets/images/textarea-05-dont.svg"},{"type":"do","image":"/assets/images/textarea-6-do.svg","description":"If the field is required use * to highlight it."},{"description":"Add a description if you are concerned that textarea is not clear enough to the user.","type":"do","image":"/assets/images/textarea-7-do.svg"}]} />
   - title: Visual
-    content: >
+    content: >-
       ## Structure
 
 
@@ -107,7 +107,6 @@ tabs:
       | Margin        | space $3 | 12  | 0.75 |
 
 
-
       ## Typography
 
 
@@ -128,11 +127,96 @@ tabs:
       | Description font | $body  | 400    | $md  | 1     | 16  |
 
 
-
       ## Variants & Color
 
 
       Color in a textarea component refers to the visual appearance of the text and background within the input area. It involves selecting appropriate text and background colors to ensure readability, visual contrast, and alignment with the overall design aesthetics of the user interface.
+
+
+      ![textarea default variant](/assets/images/textarea-variant-1.svg "textarea default variant")
+
+
+      | Property               | Token     | Hex      |
+
+      | ---------------------- | --------- | -------- |
+
+      | Bg color               | $white    | \#ffffff |
+
+      | Border-color           | $tonal400 | \#545454 |
+
+      | Label font-color       | $tonal500 | \#333333 |
+
+      | Description font-color | $tonal300 | \#757575 |
+
+      | Text font-color        | $tonal600 | \#1F1F1F |
+
+
+      ![textarea placeholder variant](/assets/images/textarea-variant-2.svg "textarea placeholder variant")
+
+
+      | Property               | Token     | Hex      |
+
+      | ---------------------- | --------- | -------- |
+
+      | Bg color               | $white    | \#ffffff |
+
+      | Border-color           | $tonal400 | \#545454 |
+
+      | Label font-color       | $tonal500 | \#333333 |
+
+      | Description font-color | $tonal300 | \#757575 |
+
+      | Placeholder font-color | $tonal300 | \#757575 |
+
+
+      ![textarea focus variant](/assets/images/textarea-variant-3.svg "textarea focus variant")
+
+
+      | Property         | Token     | Hex      |
+
+      | ---------------- | --------- | -------- |
+
+      | Bg color         | $white    | \#ffffff |
+
+      | Border-color     | $primary  | \#0F67F5 |
+
+      | Label font-color | $tonal500 | \#333333 |
+
+      | Text font-color  | $tonal600 | \#1F1F1F |
+
+
+      ![textarea disabled variant](/assets/images/textarea-variant-4.svg "textarea disabled variant")
+
+
+      | Property         | Token     | Hex      |
+
+      | ---------------- | --------- | -------- |
+
+      | Bg color         | $tonal100 | \#EEEEEE |
+
+      | Border-color     | $tonal400 | \#545454 |
+
+      | Label font-color | $tonal500 | \#333333 |
+
+      | Text font-color  | $tonal600 | \#1F1F1F |
+
+
+      ![textarea error variant](/assets/images/textarea-variant-5.svg "textarea error variant")
+
+
+      | Property                  | Token     | Hex      |
+
+      | ----------------------    | --------- | -------- |
+
+      | Bg color                  | $tonal100 | \#EEEEEE |
+
+      | Border-color              | $danger   | \#EE0505 |
+
+      | Label font-color          | $tonal500 | \#333333 |
+
+      | Text font-color           | $danger   | \#EE0505 |
+
+      | Error message font-color  | $danger   | \#EE0505 |
 parent: E7irFEo7JeV-MtxTony9G
 uuid: 9HM9e4pqy4oAnboi8xRQi
 nestedSlug:
