@@ -77,6 +77,62 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/textarea-01-do.svg","type":"do","description":"Use textarea as an affordance to input longer-form text content."},{"description":"Use placeholder as a replacement for label, as this creates accessibility and usability issues.","type":"dont","image":"/assets/images/textarea-02-dont.svg"},{"description":"Set the min-height of the textarea row to ensure that the text entered is visible without scrolling.","type":"do","image":"/assets/images/textarea-01-do.svg"},{"description":"Change the textarea's min-height to a smaller value.","type":"dont","image":"/assets/images/textarea-03-dont.svg"},{"image":"/assets/images/textarea-04-do.svg","description":"Be specific to help users understand the context of their input.","type":"do"},{"description":"Use vague labels, like \"Enter text here\". ","type":"dont","image":"/assets/images/textarea-05-dont.svg"},{"type":"do","image":"/assets/images/textarea-6-do.svg","description":"If the field is required use * to highlight it."},{"description":"Add a description if you are concerned that textarea is not clear enough to the user.","type":"do","image":"/assets/images/textarea-7-do.svg"}]} />
+  - title: Visual
+    content: >
+      ## Structure
+
+
+      The text represents a multi-line plain text, useful when you want to allow users to enter a sizeable amount of free-form text, for example, a comment on a review or feedback form.
+
+
+      ![textarea structure](/assets/images/textarea-structure.svg "textarea structure")
+
+
+      ## Anatomy
+
+
+      ![textarea anatomy](/assets/images/textarea-01-anatomy.svg "textarea anatomy")
+
+
+      | Property      | Token    | px  | rem  |
+
+      | ------------- | -------- | --- | ---- |
+
+      | Border radius | radii-0  | 4   | 0.25 |
+
+      | Padding top   | space $2 | 8   | 0.5  |
+
+      | Padding left  | space $3 | 12  | 0.75 |
+
+      | Margin        | space $3 | 12  | 0.75 |
+
+
+
+      ## Typography
+
+
+      Typography refers to the visual presentation and arrangement of text within a textarea component. It involves decisions about font styles, sizes, line spacing, and other text-related properties that ensure readability and a harmonious visual appearance of the text within the input area.
+
+
+      ![textarea typography](/assets/images/textarea-typography-01.svg "textarea typography")
+
+
+      | Element          | Family | Weight | Size | Rem   | px  |
+
+      | ---------------- | ------ | ------ | ---- | ----- | --- |
+
+      | Label font       | $body  | 600    | $sm  | 0.875 | 14  |
+
+      | Description font | $body  | 400    | $sm  | 0.875 | 14  |
+
+      | Description font | $body  | 400    | $md  | 1     | 16  |
+
+
+
+      ## Variants & Color
+
+
+      Color in a textarea component refers to the visual appearance of the text and background within the input area. It involves selecting appropriate text and background colors to ensure readability, visual contrast, and alignment with the overall design aesthetics of the user interface.
 parent: E7irFEo7JeV-MtxTony9G
 uuid: 9HM9e4pqy4oAnboi8xRQi
 nestedSlug:
