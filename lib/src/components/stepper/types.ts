@@ -17,9 +17,9 @@ export type Direction = 'vertical' | 'horizontal'
 
 export type Context = {
   steps: Step[]
-  goToPreviousStep?: () => void
-  goToNextStep?: () => void
-  goToStep?: (index: number) => void
+  goToPreviousStep: () => void | undefined
+  goToNextStep: () => void | undefined
+  goToStep: (index: number) => void | undefined
   activeStep: number
   viewedSteps: number[]
   completedSteps: number[]

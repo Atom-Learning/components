@@ -326,6 +326,11 @@ exports[`MarkdownContent component renders 1`] = `
     margin-top: -0.3864em;
     display: table;
   }
+
+  .c-fucOQC-fmPQHp-noCapsize-true::before,
+  .c-fucOQC-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
 }
 
 @media  {
@@ -681,7 +686,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-fmPQHp-noCapsize-true"
         href="http://dev.nodeca.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -693,7 +698,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-fucOQC c-fucOQC-gvmVBy-size-md c-fucOQC-fmPQHp-noCapsize-true"
         href="http://nodeca.github.io/pica/demo/"
         rel="noopener noreferrer"
         target="_blank"

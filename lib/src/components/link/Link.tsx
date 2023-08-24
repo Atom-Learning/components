@@ -1,9 +1,8 @@
+import { Slot } from '@radix-ui/react-slot'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
-import { isExternalLink } from '~/utilities/uri'
+import { isExternalLink } from '~/utilities'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -26,36 +25,33 @@ export const StyledLink = styled('a', {
     color: '$primaryDark'
   },
   [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &, ${StyledMarkdownEmphasis} > &`]:
-    {
-      fontSize: '100%',
-      lineHeight: 1,
-      '&::before, &::after': {
-        content: 'none'
-      }
-    },
+  {
+    fontSize: '100%',
+    lineHeight: 1,
+    '&::before, &::after': {
+      content: 'none'
+    }
+  },
   variants: textVariants
 })
 
-type LinkProps = Override<
-  React.ComponentProps<typeof StyledLink>,
-  {
-    as?: React.ComponentType | React.ElementType
-  } & NavigatorActions
->
+const StyledSlot = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Slot, {
+})
 
-export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', href, ...props }, ref) => (
-    <StyledLink
-      {...(isExternalLink(href)
-        ? { target: '_blank', rel: 'noopener noreferrer' }
-        : {})}
-      {...(!href && { as: 'button', noCapsize: true })}
-      size={size}
-      href={href}
-      {...props}
-      ref={ref}
-    />
-  )
-) as React.FC<LinkProps>
+export const Link = React.forwardRef<
+  HTMLAnchorElement,
+  React.ComponentProps<typeof StyledLink> & {
+    asChild?: boolean
+    as?: React.ComponentType | React.ElementType
+  }
+>(({ asChild, href, size = 'md', ...rest }, ref) => {
+
+  const linkProps = { ...rest, href, ref, ...(href && isExternalLink(href) ? { target: "_blank", rel: "noopener noreferrer" } : {}) }
+  if (asChild) return (<StyledSlot {...linkProps} as="a" type={undefined} />)
+
+  return (<StyledLink {...linkProps} size={size} noCapsize />)
+})
 
 Link.displayName = 'Link'

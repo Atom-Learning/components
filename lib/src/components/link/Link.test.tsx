@@ -44,7 +44,11 @@ describe(`Link component`, () => {
   })
 
   it('is polymorphic', async () => {
-    render(<Link as="button">See more</Link>)
+    render(
+      <Link asChild>
+        <button>See more</button>
+      </Link>
+    )
 
     expect(screen.getByRole('button')).toBeInTheDocument()
   })

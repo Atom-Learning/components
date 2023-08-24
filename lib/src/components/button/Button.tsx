@@ -1,4 +1,4 @@
-import type { VariantProps } from '@stitches/react'
+import { Slot } from '@radix-ui/react-slot'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
 
@@ -6,9 +6,6 @@ import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
-import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
-import { isExternalLink } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
   base: string,
@@ -123,7 +120,6 @@ export const StyledButton = styled('button', {
       }
     }
   },
-
   compoundVariants: [
     {
       theme: 'primary',
@@ -195,83 +191,64 @@ export const StyledButton = styled('button', {
   ]
 })
 
-const WithLoader = ({ isLoading, children }) => {
-  if (typeof isLoading !== 'boolean') {
-    return children
-  }
-  return (
-    <>
-      <Loader
-        css={{
-          opacity: isLoading ? 1 : 0,
-          position: 'absolute',
-          transition: 'opacity 150ms'
-        }}
-      />
-      <Box
-        as="span"
-        css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
-      >
-        {children}
-      </Box>
-    </>
-  )
+type ButtonProps = React.PropsWithChildren<React.ComponentProps<typeof StyledButton>> & {
+  as?: React.ComponentType | React.ElementType,
+  asChild?: boolean
+  isLoading?: boolean
 }
 
-type ButtonProps = Override<
-  React.ComponentProps<typeof StyledButton>,
-  VariantProps<typeof StyledButton> & {
-    as?: React.ComponentType | React.ElementType
-    children: React.ReactNode
-    href?: string
-    isLoading?: boolean
-  } & NavigatorActions
->
+
+const OptionalLoadingWrapper = ({ isLoading = false, children }) => {
+  if (isLoading) {
+    return (
+      <>
+        <Loader css={{ position: 'absolute' }} />
+        <Box as="span" css={{ opacity: 0 }}>
+          {children}
+        </Box>
+      </>
+    )
+  }
+
+  return <>{children}</>
+}
+
+const StyledSlot = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Slot, {})
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
-      isLoading,
+      asChild,
+      isLoading = false,
       onClick,
-      href,
       appearance = 'solid',
       size = 'md',
       theme = 'primary',
-      type = 'button',
       ...rest
     },
     ref
   ) => {
-    const linkSpecificProps = href
-      ? {
-          as: 'a',
-          href,
-          ...(isExternalLink(href)
-            ? { target: '_blank', rel: 'noopener noreferrer' }
-            : {})
-        }
-      : {}
-    const buttonSpecificProps = !href ? { type } : {}
 
-    // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the click action is not fired and the button looks faded
+    const onClickWhenNotLoading = !isLoading ? onClick : undefined
+    const buttonProps = { ...rest, ref, onClick: onClickWhenNotLoading }
+    if (asChild) return (<StyledSlot as="button" type="button" {...buttonProps}>{children}</StyledSlot>)
     return (
       <StyledButton
-        isLoading={isLoading || false}
-        onClick={!isLoading ? onClick : undefined}
+        isLoading={isLoading}
         appearance={appearance}
         size={size}
         theme={theme}
-        {...rest}
-        {...linkSpecificProps}
-        {...buttonSpecificProps}
-        ref={ref}
+        type="button"
+        {...buttonProps}
       >
-        <WithLoader isLoading={isLoading}>{children}</WithLoader>
-      </StyledButton>
-    )
+        <OptionalLoadingWrapper {...(asChild ? {} : { isLoading })}>
+          {children}
+        </OptionalLoadingWrapper>
+      </StyledButton>)
   }
-) as React.FC<ButtonProps>
+)
 
 Button.displayName = 'Button'

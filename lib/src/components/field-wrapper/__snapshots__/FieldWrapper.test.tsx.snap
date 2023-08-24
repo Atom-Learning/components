@@ -150,6 +150,11 @@ exports[`FieldWrapper component renders 1`] = `
     display: table;
   }
 
+  .c-fucOQC-fmPQHp-noCapsize-true::before,
+  .c-fucOQC-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
   .c-fZTBsJ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
@@ -214,7 +219,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-fucOQC c-fucOQC-bndJoy-size-sm"
+        class="c-fucOQC c-fucOQC-bndJoy-size-sm c-fucOQC-fmPQHp-noCapsize-true"
         href="https://example.com"
         rel="noopener noreferrer"
         target="_blank"

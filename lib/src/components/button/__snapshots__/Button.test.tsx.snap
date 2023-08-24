@@ -158,16 +158,13 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ihMdMjL-css {
+  .c-dhzjXW-icXxGAL-css {
     justify-content: center;
-    opacity: 1;
     position: absolute;
-    transition: opacity 150ms;
   }
 
-  .c-PJLV-ikHJJOk-css {
+  .c-PJLV-icCitdK-css {
     opacity: 0;
-    transition: opacity 150ms;
   }
 }
 
@@ -177,7 +174,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
     type="button"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-ihMdMjL-css"
+      class="c-dhzjXW c-dhzjXW-icXxGAL-css"
       role="alert"
     >
       <span
@@ -196,7 +193,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
       />
     </div>
     <span
-      class="c-PJLV c-PJLV-ikHJJOk-css"
+      class="c-PJLV c-PJLV-icCitdK-css"
     >
       BUTTON
     </span>
