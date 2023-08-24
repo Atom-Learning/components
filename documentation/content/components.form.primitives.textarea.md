@@ -113,7 +113,7 @@ tabs:
       Typography refers to the visual presentation and arrangement of text within a textarea component. It involves decisions about font styles, sizes, line spacing, and other text-related properties that ensure readability and a harmonious visual appearance of the text within the input area.
 
 
-      ![textarea typography](/assets/images/textarea-typography-01.svg "textarea typography")
+      ![textarea typography](/assets/images/textarea-typography.svg "textarea typography")
 
 
       | Element          | Family | Weight | Size | Rem   | px  |
@@ -204,19 +204,19 @@ tabs:
       ![textarea error variant](/assets/images/textarea-variant-5.svg "textarea error variant")
 
 
-      | Property                  | Token     | Hex      |
+      | Property                 | Token     | Hex      |
 
-      | ----------------------    | --------- | -------- |
+      | ------------------------ | --------- | -------- |
 
-      | Bg color                  | $tonal100 | \#EEEEEE |
+      | Bg color                 | $tonal100 | \#EEEEEE |
 
-      | Border-color              | $danger   | \#EE0505 |
+      | Border-color             | $danger   | \#EE0505 |
 
-      | Label font-color          | $tonal500 | \#333333 |
+      | Label font-color         | $tonal500 | \#333333 |
 
-      | Text font-color           | $danger   | \#EE0505 |
+      | Text font-color          | $danger   | \#EE0505 |
 
-      | Error message font-color  | $danger   | \#EE0505 |
+      | Error message font-color | $danger   | \#EE0505 |
 parent: E7irFEo7JeV-MtxTony9G
 uuid: 9HM9e4pqy4oAnboi8xRQi
 nestedSlug:
