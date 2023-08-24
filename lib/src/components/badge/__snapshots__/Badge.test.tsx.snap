@@ -245,11 +245,11 @@ exports[`Badge component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .non-semantic {
-    --colors-textSubtle: var(--colors-accent10);
-    --colors-backgroundSubtle: var(--colors-accent2);
-    --colors-textBold: var(--colors-foreground7plus);
-    --colors-backgroundBold: var(--colors-accent9);
+  .info {
+    --colors-textSubtle: var(--colors-blue900);
+    --colors-backgroundSubtle: var(--colors-blue100);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-blue800);
   }
 }
 
@@ -330,7 +330,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm non-semantic"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm info"
     role="status"
   >
     <p
@@ -587,11 +587,11 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .non-semantic {
-    --colors-textSubtle: var(--colors-accent10);
-    --colors-backgroundSubtle: var(--colors-accent2);
-    --colors-textBold: var(--colors-foreground7plus);
-    --colors-backgroundBold: var(--colors-accent9);
+  .info {
+    --colors-textSubtle: var(--colors-blue900);
+    --colors-backgroundSubtle: var(--colors-blue100);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-blue800);
   }
 
   .danger {
@@ -943,11 +943,11 @@ exports[`Badge component renders with an icon 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .non-semantic {
-    --colors-textSubtle: var(--colors-accent10);
-    --colors-backgroundSubtle: var(--colors-accent2);
-    --colors-textBold: var(--colors-foreground7plus);
-    --colors-backgroundBold: var(--colors-accent9);
+  .info {
+    --colors-textSubtle: var(--colors-blue900);
+    --colors-backgroundSubtle: var(--colors-blue100);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-blue800);
   }
 
   .danger {
@@ -1061,7 +1061,7 @@ exports[`Badge component renders with an icon 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm non-semantic"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm info"
     role="status"
   >
     <svg
