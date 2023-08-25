@@ -245,7 +245,7 @@ exports[`Badge component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .info {
+  .t-bYtrHU {
     --colors-textSubtle: var(--colors-blue900);
     --colors-backgroundSubtle: var(--colors-blue100);
     --colors-textBold: #FFF;
@@ -330,7 +330,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm info"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
     role="status"
   >
     <p
@@ -587,14 +587,14 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .info {
+  .t-bYtrHU {
     --colors-textSubtle: var(--colors-blue900);
     --colors-backgroundSubtle: var(--colors-blue100);
     --colors-textBold: #FFF;
     --colors-backgroundBold: var(--colors-blue800);
   }
 
-  .danger {
+  .t-dgJqaz {
     --colors-textSubtle: var(--colors-dangerMid);
     --colors-backgroundSubtle: var(--colors-dangerLight);
     --colors-textBold: #FFF;
@@ -686,7 +686,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-iPuTML-size-md danger"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-iPuTML-size-md t-dgJqaz"
     role="status"
   >
     <p
@@ -943,14 +943,14 @@ exports[`Badge component renders with an icon 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .info {
+  .t-bYtrHU {
     --colors-textSubtle: var(--colors-blue900);
     --colors-backgroundSubtle: var(--colors-blue100);
     --colors-textBold: #FFF;
     --colors-backgroundBold: var(--colors-blue800);
   }
 
-  .danger {
+  .t-dgJqaz {
     --colors-textSubtle: var(--colors-dangerMid);
     --colors-backgroundSubtle: var(--colors-dangerLight);
     --colors-textBold: #FFF;
@@ -1061,7 +1061,7 @@ exports[`Badge component renders with an icon 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm info"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
     role="status"
   >
     <svg
