@@ -105,36 +105,34 @@ exports[`DropdownMenu component renders 1`] = `
     tabindex="0"
   />
   <button
-    aria-controls="radix-1"
+    aria-controls="radix-4"
     aria-expanded="true"
     aria-haspopup="menu"
     aria-hidden="true"
     class="c-PJLV"
     data-aria-hidden="true"
     data-state="open"
-    id="radix-0"
+    id="radix-3"
     type="button"
   >
     TRIGGER
   </button>
   <div
     data-radix-popper-content-wrapper=""
-    dir="ltr"
-    style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;"
+    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
   >
     <div
-      aria-labelledby="radix-0"
+      aria-labelledby="radix-3"
       aria-orientation="vertical"
       class="c-ghAfvs"
       data-align="center"
       data-orientation="vertical"
-      data-radix-menu-content=""
       data-side="bottom"
       data-state="open"
       dir="ltr"
-      id="radix-1"
+      id="radix-4"
       role="menu"
-      style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); --radix-dropdown-menu-content-available-width: var(--radix-popper-available-width); --radix-dropdown-menu-content-available-height: var(--radix-popper-available-height); --radix-dropdown-menu-trigger-width: var(--radix-popper-anchor-width); --radix-dropdown-menu-trigger-height: var(--radix-popper-anchor-height); animation: none; pointer-events: auto;"
+      style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
       tabindex="-1"
     >
       <div
