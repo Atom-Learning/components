@@ -245,14 +245,14 @@ exports[`Accordion component renders an accordion 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .interactive-loContrast {
+  .t-dVJiaJ {
     --colors-interactiveForeground: var(--colors-foreground);
     --colors-interactive1: var(--colors-accent1);
     --colors-interactive2: var(--colors-accent2);
     --colors-interactive3: var(--colors-accent3);
   }
 
-  .accent-grey1 {
+  .t-hwCMvs {
     --colors-accent1: #FFFFFF;
     --colors-accent2: var(--colors-grey100);
     --colors-accent3: var(--colors-grey200);
@@ -386,7 +386,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-0"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-dkSJnW interactive-loContrast accent-grey1"
+        class="c-dkSJnW t-dVJiaJ t-hwCMvs"
         data-radix-collection-item=""
         data-state="open"
         id="radix-1"
@@ -422,7 +422,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-2"
         aria-expanded="false"
-        class="c-dkSJnW interactive-loContrast accent-grey1"
+        class="c-dkSJnW t-dVJiaJ t-hwCMvs"
         data-radix-collection-item=""
         data-state="closed"
         id="radix-3"
