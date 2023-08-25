@@ -135,6 +135,9 @@ tabs:
 
       ![textarea default variant](/assets/images/textarea-variant-1.svg "textarea default variant")
 
+      Default
+
+
 
       | Property               | Token     | Hex      |
 
@@ -152,6 +155,9 @@ tabs:
 
 
       ![textarea placeholder variant](/assets/images/textarea-variant-2.svg "textarea placeholder variant")
+
+      Placeholder
+
 
 
       | Property               | Token     | Hex      |
@@ -171,6 +177,8 @@ tabs:
 
       ![textarea focus variant](/assets/images/textarea-variant-3.svg "textarea focus variant")
 
+      Focus
+
 
       | Property         | Token     | Hex      |
 
@@ -187,6 +195,8 @@ tabs:
 
       ![textarea disabled variant](/assets/images/textarea-variant-4.svg "textarea disabled variant")
 
+      Disabled
+
 
       | Property         | Token     | Hex      |
 
@@ -202,6 +212,8 @@ tabs:
 
 
       ![textarea error variant](/assets/images/textarea-variant-5.svg "textarea error variant")
+
+      Error
 
 
       | Property                 | Token     | Hex      |
