@@ -9,6 +9,28 @@ import { StyledLi } from '../list/List'
 import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
 import type { CSS, VariantProps } from '@stitches/react'
+import { StyledIcon } from '../icon'
+
+const iconSizeVariants = {
+  xs: { size: 14, mt: '-2px' },
+  sm: { size: 16, mt: '-3px' },
+  md: { size: 20, mt: '-2px' },
+  lg: { size: 24, mt: '-4px' },
+  xl: { size: 30, mt: '-5px' }
+}
+
+const linkSizeVariants = Object.keys(textVariants.size).reduce(
+  (prev, key, i) => ({
+    ...prev,
+    [key]: {
+      ...textVariants.size[key],
+      [`& ${StyledIcon}`]: iconSizeVariants[key],
+      [`& ${StyledIcon}:first-child`]: { mr: '$1' },
+      [`& ${StyledIcon}:last-child`]: { ml: '$1' }
+    }
+  }),
+  {}
+)
 
 export const StyledLink = styled('a', {
   bg: 'unset',
@@ -33,7 +55,9 @@ export const StyledLink = styled('a', {
         content: 'none'
       }
     },
-  variants: textVariants,
+  variants: {
+    size: linkSizeVariants
+  },
   defaultVariants: {
     size: 'md'
   }
