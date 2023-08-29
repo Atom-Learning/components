@@ -53,6 +53,13 @@ exports[`Button component Loading state renders a loading button 1`] = `
   .c-jBOHFZ:nth-child(3) {
     animation-delay: 0;
   }
+
+  .c-gTMqnE {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+  }
 }
 
 @media  {
@@ -87,6 +94,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
     width: 6px;
     margin-left: 2px;
     margin-right: 2px;
+  }
+
+  .c-gTMqnE-fVlWzK-size-md {
+    gap: var(--space-3);
   }
 }
 
@@ -158,16 +169,9 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ihMdMjL-css {
+  .c-dhzjXW-icXxGAL-css {
     justify-content: center;
-    opacity: 1;
     position: absolute;
-    transition: opacity 150ms;
-  }
-
-  .c-PJLV-ikHJJOk-css {
-    opacity: 0;
-    transition: opacity 150ms;
   }
 }
 
@@ -177,7 +181,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
     type="button"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-ihMdMjL-css"
+      class="c-dhzjXW c-dhzjXW-icXxGAL-css"
       role="alert"
     >
       <span
@@ -196,7 +200,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
       />
     </div>
     <span
-      class="c-PJLV c-PJLV-ikHJJOk-css"
+      class="c-gTMqnE c-gTMqnE-fVlWzK-size-md"
     >
       BUTTON
     </span>

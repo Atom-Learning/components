@@ -10,6 +10,30 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
+const LoaderContentsWrapper = styled('span', {
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  visibility: 'hidden',
+  variants: {
+    size: {
+      sm: { gap: '$2' },
+      md: { gap: '$3' },
+      lg: { gap: '$3' }
+    }
+  }
+})
+
+const WithLoader = ({
+  size,
+  children
+}: React.ComponentProps<typeof LoaderContentsWrapper>) => (
+  <>
+    <Loader css={{ position: 'absolute' }} />
+    <LoaderContentsWrapper size={size}>{children}</LoaderContentsWrapper>
+  </>
+)
+
 const getButtonOutlineVariant = (
   base: string,
   interact: string,
@@ -104,6 +128,7 @@ export const StyledButton = styled('button', {
         lineHeight: 1.5,
         height: '$5',
         px: '$5',
+        gap: '$3',
         [`& ${StyledIcon}`]: { size: 22 }
       }
     },
@@ -195,29 +220,6 @@ export const StyledButton = styled('button', {
   ]
 })
 
-const WithLoader = ({ isLoading, children }) => {
-  if (typeof isLoading !== 'boolean') {
-    return children
-  }
-  return (
-    <>
-      <Loader
-        css={{
-          opacity: isLoading ? 1 : 0,
-          position: 'absolute',
-          transition: 'opacity 150ms'
-        }}
-      />
-      <Box
-        as="span"
-        css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
-      >
-        {children}
-      </Box>
-    </>
-  )
-}
-
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
@@ -232,7 +234,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       children,
-      isLoading,
+      isLoading = false,
       onClick,
       href,
       appearance = 'solid',
@@ -258,7 +260,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
-        isLoading={isLoading || false}
+        isLoading={isLoading}
         onClick={!isLoading ? onClick : undefined}
         appearance={appearance}
         size={size}
@@ -268,7 +270,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...buttonSpecificProps}
         ref={ref}
       >
-        <WithLoader isLoading={isLoading}>{children}</WithLoader>
+        {isLoading ? <WithLoader size={size}>{children}</WithLoader> : children}
       </StyledButton>
     )
   }
