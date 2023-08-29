@@ -11,7 +11,7 @@ export const StepperStepForward: React.FC<
 
   const handleClick = () => {
     if (onClick) {
-      return onClick(goToNextStep)
+      return onClick(() => goToNextStep?.())
     }
     goToNextStep?.()
   }

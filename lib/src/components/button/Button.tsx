@@ -1,6 +1,6 @@
+import type { CSS, VariantProps } from '@stitches/react'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
-import type { CSS, VariantProps } from '@stitches/react'
 
 import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
