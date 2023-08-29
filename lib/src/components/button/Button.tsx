@@ -211,6 +211,9 @@ const LoaderContentsWrapper = styled('span', {
       md: { gap: '$3' },
       lg: { gap: '$3' }
     }
+  },
+  defaultVariants: {
+    size: 'md'
   }
 })
 
@@ -246,7 +249,14 @@ export const Button: <
     H extends string | undefined = undefined,
     C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
   >(
-    { children, as, href, isLoading = false, onClick, ...rest }: ButtonProps<H, C>,
+    {
+      children,
+      as,
+      href,
+      isLoading = false,
+      onClick,
+      ...rest
+    }: ButtonProps<H, C>,
     ref?: ButtonProps<H, C>['ref']
   ) => {
     const externalLinkProps = isExternalLink(href)
@@ -264,7 +274,11 @@ export const Button: <
         {...externalLinkProps}
         ref={ref}
       >
-        {isLoading ? <WithLoader size={size}>{children}</WithLoader> : children}
+        {isLoading ? (
+          <WithLoader size={rest.size}>{children}</WithLoader>
+        ) : (
+          children
+        )}
       </StyledButton>
     )
   }
