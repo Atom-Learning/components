@@ -245,14 +245,14 @@ exports[`TileInteractive component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .interactive-loContrast {
+  .t-dVJiaJ {
     --colors-interactiveForeground: var(--colors-foreground);
     --colors-interactive1: var(--colors-accent1);
     --colors-interactive2: var(--colors-accent2);
     --colors-interactive3: var(--colors-accent3);
   }
 
-  .accent-blue2 {
+  .t-ctbriF {
     --colors-accent1: var(--colors-blue100);
     --colors-accent2: var(--colors-blue200);
     --colors-accent3: var(--colors-blue300);
@@ -266,7 +266,7 @@ exports[`TileInteractive component renders 1`] = `
     --colors-accent11: var(--colors-blue1100);
   }
 
-  .base-grey1 {
+  .t-dmfxVJ {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -347,7 +347,7 @@ exports[`TileInteractive component renders 1`] = `
 
 <div>
   <button
-    class="c-htDHry interactive-loContrast accent-blue2 base-grey1 c-bZTcGT c-bZTcGT-iMShsb-css"
+    class="c-htDHry t-dVJiaJ t-ctbriF t-dmfxVJ c-bZTcGT c-bZTcGT-iMShsb-css"
     type="button"
   >
     A

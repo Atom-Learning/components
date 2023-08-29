@@ -4,7 +4,7 @@ import { createTheme } from '~/stitches'
  * Semantic themes
  */
 
-const info = createTheme('info', {
+const info = createTheme({
   colors: {
     textSubtle: '$blue900',
     backgroundSubtle: '$blue100',
@@ -13,7 +13,7 @@ const info = createTheme('info', {
   }
 })
 
-const neutral = createTheme('neutral', {
+const neutral = createTheme({
   colors: {
     textSubtle: '$grey900',
     backgroundSubtle: '$grey100',
@@ -22,7 +22,7 @@ const neutral = createTheme('neutral', {
   }
 })
 
-const success = createTheme('success', {
+const success = createTheme({
   colors: {
     textSubtle: '$successMid',
     backgroundSubtle: '$successLight',
@@ -31,7 +31,7 @@ const success = createTheme('success', {
   }
 })
 
-const danger = createTheme('danger', {
+const danger = createTheme({
   colors: {
     textSubtle: '$dangerMid',
     backgroundSubtle: '$dangerLight',
@@ -40,7 +40,7 @@ const danger = createTheme('danger', {
   }
 })
 
-const warning = createTheme('warning', {
+const warning = createTheme({
   colors: {
     textSubtle: '$warningText',
     backgroundSubtle: '$warningLight',
@@ -53,7 +53,7 @@ const warning = createTheme('warning', {
  * Non-semantic themes
  */
 
-const grey = createTheme('grey', {
+const grey = createTheme({
   colors: {
     textSubtle: '$grey1000',
     backgroundSubtle: '$grey200',
@@ -62,7 +62,7 @@ const grey = createTheme('grey', {
   }
 })
 
-const blue = createTheme('blue', {
+const blue = createTheme({
   colors: {
     textSubtle: '$blue1000',
     backgroundSubtle: '$blue200',
@@ -71,7 +71,7 @@ const blue = createTheme('blue', {
   }
 })
 
-const purple = createTheme('purple', {
+const purple = createTheme({
   colors: {
     textSubtle: '$purple1000',
     backgroundSubtle: '$purple200',
@@ -80,7 +80,7 @@ const purple = createTheme('purple', {
   }
 })
 
-const cyan = createTheme('cyan', {
+const cyan = createTheme({
   colors: {
     textSubtle: '$cyan1000',
     backgroundSubtle: '$cyan200',
@@ -89,7 +89,7 @@ const cyan = createTheme('cyan', {
   }
 })
 
-const green = createTheme('green', {
+const green = createTheme({
   colors: {
     textSubtle: '$green1000',
     backgroundSubtle: '$green200',
@@ -98,7 +98,7 @@ const green = createTheme('green', {
   }
 })
 
-const magenta = createTheme('magenta', {
+const magenta = createTheme({
   colors: {
     textSubtle: '$magenta1000',
     backgroundSubtle: '$magenta200',
@@ -107,7 +107,7 @@ const magenta = createTheme('magenta', {
   }
 })
 
-const red = createTheme('red', {
+const red = createTheme({
   colors: {
     textSubtle: '$red1000',
     backgroundSubtle: '$red200',
@@ -116,7 +116,7 @@ const red = createTheme('red', {
   }
 })
 
-const teal = createTheme('teal', {
+const teal = createTheme({
   colors: {
     textSubtle: '$teal1000',
     backgroundSubtle: '$teal200',
@@ -125,7 +125,7 @@ const teal = createTheme('teal', {
   }
 })
 
-const orange = createTheme('orange', {
+const orange = createTheme({
   colors: {
     textSubtle: '$orange1000',
     backgroundSubtle: '$orange200',
@@ -134,7 +134,7 @@ const orange = createTheme('orange', {
   }
 })
 
-const yellow = createTheme('yellow', {
+const yellow = createTheme({
   colors: {
     textSubtle: '$yellow1000',
     backgroundSubtle: '$yellow200',
@@ -143,7 +143,7 @@ const yellow = createTheme('yellow', {
   }
 })
 
-const lime = createTheme('lime', {
+const lime = createTheme({
   colors: {
     textSubtle: '$lime1000',
     backgroundSubtle: '$lime200',

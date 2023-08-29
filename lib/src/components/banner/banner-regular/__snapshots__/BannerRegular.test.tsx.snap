@@ -245,7 +245,7 @@ exports[`BannerRegular component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .base-purple1 {
+  .t-grLKLB {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -580,7 +580,7 @@ exports[`BannerRegular component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
@@ -871,7 +871,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .base-purple1 {
+  .t-grLKLB {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -1266,7 +1266,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
