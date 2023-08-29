@@ -236,13 +236,13 @@ type ButtonProps<
 >
 
 export const Button: <
-  H extends string | undefined,
+  H extends string | undefined = undefined,
   C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
 >(
   props: ButtonProps<H, C>
 ) => React.ReactElement | null = React.forwardRef(
   <
-    H extends string | undefined,
+    H extends string | undefined = undefined,
     C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
   >(
     { children, as, href, isLoading, onClick, ...rest }: ButtonProps<H, C>,
