@@ -9,30 +9,6 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
-const LoaderContentsWrapper = styled('span', {
-  alignItems: 'center',
-  display: 'flex',
-  justifyContent: 'center',
-  visibility: 'hidden',
-  variants: {
-    size: {
-      sm: { gap: '$2' },
-      md: { gap: '$3' },
-      lg: { gap: '$3' }
-    }
-  }
-})
-
-const WithLoader = ({
-  size,
-  children
-}: React.ComponentProps<typeof LoaderContentsWrapper>) => (
-  <>
-    <Loader css={{ position: 'absolute' }} />
-    <LoaderContentsWrapper size={size}>{children}</LoaderContentsWrapper>
-  </>
-)
-
 const getButtonOutlineVariant = (
   base: string,
   interact: string,
@@ -218,6 +194,30 @@ export const StyledButton = styled('button', {
     }
   ]
 })
+
+const LoaderContentsWrapper = styled('span', {
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  visibility: 'hidden',
+  variants: {
+    size: {
+      sm: { gap: '$2' },
+      md: { gap: '$3' },
+      lg: { gap: '$3' }
+    }
+  }
+})
+
+const WithLoader = ({
+  size,
+  children
+}: React.ComponentProps<typeof LoaderContentsWrapper>) => (
+  <>
+    <Loader css={{ position: 'absolute' }} />
+    <LoaderContentsWrapper size={size}>{children}</LoaderContentsWrapper>
+  </>
+)
 
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
