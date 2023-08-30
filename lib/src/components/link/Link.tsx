@@ -1,3 +1,4 @@
+import type { CSS, VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
@@ -5,18 +6,17 @@ import { PolymorphicComponentPropWithRef } from '~/types'
 import { isExternalLink } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
+import { StyledIcon } from '../icon'
 import { StyledLi } from '../list/List'
 import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
-import type { CSS, VariantProps } from '@stitches/react'
-import { StyledIcon } from '../icon'
 
 const iconSizeVariants = {
   xs: { size: 14, mt: '-2px' },
-  sm: { size: 16, mt: '-3px' },
-  md: { size: 20, mt: '-2px' },
+  sm: { size: 16, mt: '-2px' },
+  md: { size: 20, mt: '-4px' },
   lg: { size: 24, mt: '-4px' },
-  xl: { size: 30, mt: '-5px' }
+  xl: { size: 30, mt: '-4px' }
 }
 
 const linkSizeVariants = Object.keys(textVariants.size).reduce(
@@ -56,6 +56,7 @@ export const StyledLink = styled('a', {
       }
     },
   variants: {
+    ...textVariants,
     size: linkSizeVariants
   },
   defaultVariants: {
