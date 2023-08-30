@@ -5,39 +5,30 @@ import {
   VisibleElementsAmount
 } from './pagination.constants'
 
-const getMaxPaginationItems = (visibleElementsCount) =>
+const getMaxPaginationItems = (visibleElementsCount: VisibleElementsAmount) =>
   visibleElementsCount === VisibleElementsAmount.MORE
     ? MAX_PAGINATION_ITEMS
     : MIN_PAGINATION_ITEMS
 
-export const getPaginationAlignment = ({
-  currentPage,
-  pagesCount,
-  visibleElementsCount
-}: {
-  currentPage: number
-  pagesCount: number
+export const getPaginationAlignment = (
+  currentPage: number,
+  pagesCount: number,
   visibleElementsCount: VisibleElementsAmount
-}) => {
-  return currentPage > pagesCount - getMaxPaginationItems(visibleElementsCount)
+) =>
+  currentPage > pagesCount - getMaxPaginationItems(visibleElementsCount)
     ? 'start'
     : 'end'
-}
 
-export const getPaginationItemsToRender = ({
-  currentPage,
-  pagesCount,
-  visibleElementsCount
-}: {
-  currentPage: number
-  pagesCount: number
-  visibleElementsCount: VisibleElementsAmount
-}): number[] => {
+export const getPaginationItemsToRender = (
+  currentPage: number,
+  pagesCount: number,
+  visibleElementsCount = VisibleElementsAmount.LESS
+): number[] => {
+  const maxPaginationItemsCount = getMaxPaginationItems(visibleElementsCount)
   const paginationItems = Array.from(
     { length: pagesCount },
     (_, index) => index + 1
   )
-  const maxPaginationItemsCount = getMaxPaginationItems(visibleElementsCount)
 
   /**
    * If there are fewer pages than our threshold for truncating,

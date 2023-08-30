@@ -1,3 +1,4 @@
+import { VisibleElementsAmount } from './pagination.constants'
 import {
   findNextAvailablePage,
   findPreviousAvailablePage,
@@ -43,9 +44,9 @@ describe('getPaginationItemsToRender', () => {
     ]
 
     it.each([1, 2, 3, 4, 5, 6, 7, 8])('on page %p of 8', async (page) => {
-      expect(getPaginationItemsToRender(page, 8, true)).toEqual(
-        expectedItems[page - 1]
-      )
+      expect(
+        getPaginationItemsToRender(page, 8, VisibleElementsAmount.MORE)
+      ).toEqual(expectedItems[page - 1])
     })
   })
 })

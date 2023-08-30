@@ -2,12 +2,12 @@ import * as React from 'react'
 
 import { ColorScheme } from '../../experiments/color-scheme'
 import { Flex } from '..'
+import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
 import { PaginationPreviousButton } from './PaginationPreviousButton'
 import type { IPaginationProps } from './types'
-import { TRUNCATED_THRESHOLD } from './pagination.constants'
 
 export const Pagination: React.FC<IPaginationProps> = ({
   colorScheme,
