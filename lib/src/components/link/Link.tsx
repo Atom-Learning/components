@@ -24,9 +24,7 @@ const linkSizeVariants = Object.keys(textVariants.size).reduce(
     ...prev,
     [key]: {
       ...textVariants.size[key],
-      [`& ${StyledIcon}`]: iconSizeVariants[key],
-      [`& ${StyledIcon}:first-child`]: { mr: '$1' },
-      [`& ${StyledIcon}:last-child`]: { ml: '$1' }
+      [`& ${StyledIcon}`]: iconSizeVariants[key]
     }
   }),
   {}
@@ -55,6 +53,8 @@ export const StyledLink = styled('a', {
         content: 'none'
       }
     },
+  [`& ${StyledIcon}:first-child`]: { mr: '$1' },
+  [`& ${StyledIcon}:last-child`]: { ml: '$1' },
   variants: {
     ...textVariants,
     size: linkSizeVariants
