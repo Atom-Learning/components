@@ -1,15 +1,43 @@
-import { TRUNCATED_THRESHOLD } from './pagination.constants'
+import {
+  MAX_PAGINATION_ITEMS,
+  MIN_PAGINATION_ITEMS,
+  TRUNCATED_THRESHOLD,
+  VisibleElementsAmount
+} from './pagination.constants'
 
-export const getPaginationItemsToRender = (
-  currentPage: number,
-  pagesCount: number,
-  isMaxVisibleElementCount = false
-): number[] => {
+const getMaxPaginationItems = (visibleElementsCount) =>
+  visibleElementsCount === VisibleElementsAmount.MORE
+    ? MAX_PAGINATION_ITEMS
+    : MIN_PAGINATION_ITEMS
+
+export const getPaginationAlignment = ({
+  currentPage,
+  pagesCount,
+  visibleElementsCount
+}: {
+  currentPage: number
+  pagesCount: number
+  visibleElementsCount: VisibleElementsAmount
+}) => {
+  return currentPage > pagesCount - getMaxPaginationItems(visibleElementsCount)
+    ? 'start'
+    : 'end'
+}
+
+export const getPaginationItemsToRender = ({
+  currentPage,
+  pagesCount,
+  visibleElementsCount
+}: {
+  currentPage: number
+  pagesCount: number
+  visibleElementsCount: VisibleElementsAmount
+}): number[] => {
   const paginationItems = Array.from(
     { length: pagesCount },
     (_, index) => index + 1
   )
-  const maxPaginationItems = isMaxVisibleElementCount ? 4 : 2
+  const maxPaginationItemsCount = getMaxPaginationItems(visibleElementsCount)
 
   /**
    * If there are fewer pages than our threshold for truncating,
@@ -41,7 +69,7 @@ export const getPaginationItemsToRender = (
    *  +---+  +---+  +---+  +---+  +---+  +---+
    */
   if ([1, 2].includes(currentPage)) {
-    return paginationItems.slice(0, maxPaginationItems)
+    return paginationItems.slice(0, maxPaginationItemsCount)
   }
 
   /**
@@ -62,8 +90,8 @@ export const getPaginationItemsToRender = (
    *  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  if (currentPage > pagesCount - maxPaginationItems) {
-    return paginationItems.slice(-maxPaginationItems)
+  if (currentPage > pagesCount - maxPaginationItemsCount) {
+    return paginationItems.slice(-maxPaginationItemsCount)
   }
 
   /**
@@ -86,7 +114,9 @@ export const getPaginationItemsToRender = (
    */
   return paginationItems.slice(
     currentPage - 2,
-    isMaxVisibleElementCount ? currentPage + 2 : currentPage
+    visibleElementsCount === VisibleElementsAmount.MORE
+      ? currentPage + 2
+      : currentPage
   )
 }
 

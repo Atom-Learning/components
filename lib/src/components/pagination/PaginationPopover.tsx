@@ -5,9 +5,7 @@ import { ActionIcon, Flex, Icon, Popover } from '..'
 import { PaginationItem } from './PaginationItem'
 import { usePagination } from './usePagination'
 
-export const PaginationPopover = (
-  props: React.ComponentProps<typeof ActionIcon>
-) => {
+export const PaginationPopover = () => {
   const { pagesCount, labels } = usePagination()
   const paginationItems = Array.from(
     { length: pagesCount },
@@ -18,7 +16,6 @@ export const PaginationPopover = (
     <Popover>
       <Popover.Trigger asChild>
         <ActionIcon
-          {...props}
           hasTooltip={false}
           size="md"
           theme="neutral"
