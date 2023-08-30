@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import { ColorScheme } from '../../experiments/color-scheme'
-import { Flex } from '..'
-import { TRUNCATED_THRESHOLD } from './pagination.constants'
+import { Flex } from '../flex'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
@@ -19,15 +18,13 @@ export const Pagination: React.FC<IPaginationProps> = ({
     return null
   }
 
-  const isTruncated = paginationProps?.pagesCount > TRUNCATED_THRESHOLD
-
   return (
     <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
       <Flex css={css}>
         <PaginationProvider {...paginationProps}>
-          {isTruncated && <PaginationPreviousButton />}
+          <PaginationPreviousButton />
           <PaginationPages />
-          {isTruncated && <PaginationNextButton />}
+          <PaginationNextButton />
         </PaginationProvider>
       </Flex>
     </ColorScheme>
