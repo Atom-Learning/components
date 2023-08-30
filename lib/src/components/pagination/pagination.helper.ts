@@ -4,6 +4,7 @@ import {
   TRUNCATED_THRESHOLD,
   VisibleElementsAmount
 } from './pagination.constants'
+import { IPaginationAlignment } from './types'
 
 const getMaxPaginationItems = (visibleElementsCount: VisibleElementsAmount) =>
   visibleElementsCount === VisibleElementsAmount.MORE
@@ -14,7 +15,7 @@ export const getPaginationAlignment = (
   currentPage: number,
   pagesCount: number,
   visibleElementsCount: VisibleElementsAmount
-) =>
+): IPaginationAlignment =>
   currentPage > pagesCount - getMaxPaginationItems(visibleElementsCount)
     ? 'start'
     : 'end'
@@ -46,20 +47,25 @@ export const getPaginationItemsToRender = (
    * If we're truncating and current page is at the start of the page list,
    * render the initial truncated page list, e.g.
    *
-   *  visibleElementsCount: 6
+   *  currentPage: 1/2
+   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [1, 2]
    *  +---+  +---+  +---+  +---+
    *  | 1 |  | 2 |  | … |  | 6 |
    *  +---+  +---+  +---+  +---+
    *
-   *  isMaxVisibleElementCount: true
-   *  visibleElementsCount: 8
+   *  currentPage: 1/2/3
+   *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [1, 2, 3, 4]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  if ([1, 2].includes(currentPage)) {
+  if (
+    visibleElementsCount === VisibleElementsAmount.MORE
+      ? [1, 2, 3].includes(currentPage)
+      : [1, 2].includes(currentPage)
+  ) {
     return paginationItems.slice(0, maxPaginationItemsCount)
   }
 
@@ -68,14 +74,15 @@ export const getPaginationItemsToRender = (
    * page list (depending on visibleElementsCount),
    * render a truncated page list from the end, e.g.
    *
-   *  visibleElementsCount: 6
+   *  currentPage: 7
+   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [7, 8]
    *  +---+  +---+  +---+  +---+
    *  | 1 |  | … |  | 5 |  | 6 |
    *  +---+  +---+  +---+  +---+
    *
-   *  isMaxVisibleElementCount: true
-   *  visibleElementsCount: 8
+   *  currentPage: 7
+   *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [7, 8, 9, 10]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |
@@ -90,23 +97,26 @@ export const getPaginationItemsToRender = (
    * (we're in the middle)
    * render a truncated page list from a specific index relative to `currentPage`, e.g.
    *
-   *  visibleElementsCount: 6
+   *  currentPage: 4
+   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [3, 4]
    *  +---+  +---+  +---+  +---+
    *  | 3 |  | 4 |  | … |  | 6 |
    *  +---+  +---+  +---+  +---+
    *
-   *  isMaxVisibleElementCount: true
-   *  visibleElementsCount: 8
+   *  currentPage: 6
+   *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [4, 5, 6, 7]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    */
   return paginationItems.slice(
-    currentPage - 2,
     visibleElementsCount === VisibleElementsAmount.MORE
-      ? currentPage + 2
+      ? currentPage - 3
+      : currentPage - 2,
+    visibleElementsCount === VisibleElementsAmount.MORE
+      ? currentPage + 1
       : currentPage
   )
 }

@@ -12,10 +12,12 @@ interface IBasePagination {
   indicatedPages: number[]
   disabledPages: number[]
   paginationItems: number[]
-  paginationAlignment: 'start' | 'end'
+  paginationAlignment: IPaginationAlignment
   labels: ILabels
   onItemHover: (pageNumber: number) => void
 }
+
+export type IPaginationAlignment = 'start' | 'end'
 
 export type TVisibleElementsCount = 6 | 8
 
@@ -34,7 +36,7 @@ export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
   Partial<IBasePagination> & {
     selectedPage?: number
     onSelectedPageChange?: (pageNumber: number) => void
-    visibleElementsCount: TVisibleElementsCount
+    visibleElementsCount?: TVisibleElementsCount
   }
 
 export interface IPaginationProps extends TPaginationProviderProps {
