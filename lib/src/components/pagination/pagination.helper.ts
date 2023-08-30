@@ -1,32 +1,92 @@
+import { TRUNCATED_THRESHOLD } from './pagination.constants'
+
 export const getPaginationItemsToRender = (
   currentPage: number,
   pagesCount: number,
-  truncatedThreshold: number,
-  isMaxVisibleElementCount: boolean
+  isMaxVisibleElementCount = false
 ): number[] => {
-  const listOfPages = Array.from(
-    { length: pagesCount - 1 },
+  const paginationItems = Array.from(
+    { length: pagesCount },
     (_, index) => index + 1
   )
+  const maxPaginationItems = isMaxVisibleElementCount ? 4 : 2
 
-  if (pagesCount <= truncatedThreshold) return listOfPages
-
-  // If the current page is before the 3rd page
-  // Render pagination items from 1 to 4 or 1 to 2
-  if (currentPage < truncatedThreshold - 1) {
-    return listOfPages.slice(0, isMaxVisibleElementCount ? 4 : 2)
-  } else if (
-    currentPage >=
-    listOfPages.length - (isMaxVisibleElementCount ? 3 : 1)
-  ) {
-    // If the current page is within the last 3 pages or the last page
-    // Render the last 4 or 2 pagination items
-    return listOfPages.slice(isMaxVisibleElementCount ? -4 : -2)
+  /**
+   * If there are fewer pages than our threshold for truncating,
+   * render the entire page list
+   *
+   *  +---+  +---+  +---+  +---+
+   *  | 1 |  | 2 |  | 3 |  | 4 |
+   *  +---+  +---+  +---+  +---+
+   */
+  if (pagesCount <= TRUNCATED_THRESHOLD) {
+    return paginationItems
   }
-  // Otherwise render pagination items from the range of n-3 to n+1 or n-2 to n
-  return listOfPages.slice(
-    currentPage + (isMaxVisibleElementCount ? -3 : -2),
-    currentPage + (isMaxVisibleElementCount ? 1 : 0)
+
+  /**
+   * If we're truncating and current page is at the start of the page list,
+   * render the initial truncated page list, e.g.
+   *
+   *  visibleElementsCount: 6
+   *  returns [1, 2]
+   *  +---+  +---+  +---+  +---+
+   *  | 1 |  | 2 |  | … |  | 6 |
+   *  +---+  +---+  +---+  +---+
+   *
+   *  isMaxVisibleElementCount: true
+   *  visibleElementsCount: 8
+   *  returns [1, 2, 3, 4]
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   */
+  if ([1, 2].includes(currentPage)) {
+    return paginationItems.slice(0, maxPaginationItems)
+  }
+
+  /**
+   * If we're truncating and the current page is towards the end of the
+   * page list (depending on visibleElementsCount),
+   * render a truncated page list from the end, e.g.
+   *
+   *  visibleElementsCount: 6
+   *  returns [7, 8]
+   *  +---+  +---+  +---+  +---+
+   *  | 1 |  | … |  | 5 |  | 6 |
+   *  +---+  +---+  +---+  +---+
+   *
+   *  isMaxVisibleElementCount: true
+   *  visibleElementsCount: 8
+   *  returns [7, 8, 9, 10]
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   */
+  if (currentPage > pagesCount - maxPaginationItems) {
+    return paginationItems.slice(-maxPaginationItems)
+  }
+
+  /**
+   * If we're truncating and the current page doesn't meet either previous condition
+   * (we're in the middle)
+   * render a truncated page list from a specific index relative to `currentPage`, e.g.
+   *
+   *  visibleElementsCount: 6
+   *  returns [3, 4]
+   *  +---+  +---+  +---+  +---+
+   *  | 3 |  | 4 |  | … |  | 6 |
+   *  +---+  +---+  +---+  +---+
+   *
+   *  isMaxVisibleElementCount: true
+   *  visibleElementsCount: 8
+   *  returns [4, 5, 6, 7]
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   */
+  return paginationItems.slice(
+    currentPage - 2,
+    isMaxVisibleElementCount ? currentPage + 2 : currentPage
   )
 }
 

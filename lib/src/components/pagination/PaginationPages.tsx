@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Stack } from '..'
+import { Flex } from '../flex'
 import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import { getPaginationItemsToRender } from './pagination.helper'
 import { PaginationItem } from './PaginationItem'
@@ -8,24 +8,35 @@ import { PaginationPopover } from './PaginationPopover'
 import { usePagination } from './usePagination'
 
 export const PaginationPages = () => {
-  const { currentPage, pagesCount, isMaxVisibleElementCount } = usePagination()
-
-  const paginationItems = getPaginationItemsToRender(
-    currentPage,
-    pagesCount,
-    TRUNCATED_THRESHOLD,
-    isMaxVisibleElementCount
-  )
+  const { currentPage, pagesCount, isMaxVisibleElementCount, paginationItems } =
+    usePagination()
 
   const isTruncated = pagesCount > TRUNCATED_THRESHOLD
+  const renderPopoverOnLeft =
+    currentPage > pagesCount - (isMaxVisibleElementCount ? 4 : 2)
 
   return (
-    <Stack gap={1}>
-      {paginationItems?.map((pageNumber) => {
-        return <PaginationItem key={pageNumber} pageNumber={pageNumber} />
-      })}
-      {isTruncated && <PaginationPopover />}
-      <PaginationItem pageNumber={pagesCount} />
-    </Stack>
+    <Flex gap={1}>
+      {paginationItems?.map((pageNumber, index) => (
+        <PaginationItem
+          key={pageNumber}
+          pageNumber={pageNumber}
+          css={{ order: index + 1 }}
+        />
+      ))}
+      {isTruncated && (
+        <>
+          <PaginationItem
+            pageNumber={renderPopoverOnLeft ? 1 : pagesCount}
+            css={{ order: renderPopoverOnLeft ? 0 : pagesCount }}
+          />
+          <PaginationPopover
+            css={{
+              order: renderPopoverOnLeft ? 0 : isMaxVisibleElementCount ? 4 : 2
+            }}
+          />
+        </>
+      )}
+    </Flex>
   )
 }

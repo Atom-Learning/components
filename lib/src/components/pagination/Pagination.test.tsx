@@ -188,10 +188,10 @@ describe('Pagination component', () => {
     fireEvent.click(nextPageButton)
 
     // Check we are showing the correct page numbers
-    expect(await screen.findByText(2)).toBeVisible()
     expect(await screen.findByText(3)).toBeVisible()
     expect(await screen.findByText(4)).toBeVisible()
     expect(await screen.findByText(5)).toBeVisible()
+    expect(await screen.findByText(6)).toBeVisible()
 
     // Click the Previous Page button
     const previousPageButton = screen.getByRole('button', {

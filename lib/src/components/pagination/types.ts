@@ -12,6 +12,7 @@ interface IBasePagination {
   visibleElementsCount: TVisibleElementsCount
   indicatedPages: number[]
   disabledPages: number[]
+  paginationItems: number[]
   labels: ILabels
   onItemHover: (pageNumber: number) => void
 }

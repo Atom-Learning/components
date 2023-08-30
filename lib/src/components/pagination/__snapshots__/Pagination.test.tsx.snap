@@ -313,14 +313,6 @@ exports[`Pagination component renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-fznDru {
     align-items: center;
     border: 1px solid transparent;
@@ -425,30 +417,8 @@ exports[`Pagination component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
   }
 
   .c-fznDru-cVoMNQ-size-md {
@@ -498,6 +468,28 @@ exports[`Pagination component renders 1`] = `
   }
 }
 
+@media  {
+  .c-fznDru-ihhyRYU-css {
+    order: 1;
+  }
+
+  .c-fznDru-ilhKMMn-css {
+    order: 2;
+  }
+
+  .c-fznDru-ildoqSX-css {
+    order: 6;
+  }
+
+  .c-fDzwZw-ilhKMMn-css {
+    order: 2;
+  }
+
+  .c-iKnjyA-ifBQDyP-css {
+    padding: 0;
+  }
+}
+
 <div>
   <div
     class="c-dhzjXW t-foghYE t-eGEuHI"
@@ -520,28 +512,35 @@ exports[`Pagination component renders 1`] = `
       </svg>
     </button>
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-crcQiH-gap-1"
+      class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1"
     >
       <button
         aria-current="page"
         aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
+        class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true c-fznDru-ihhyRYU-css"
       >
         1
       </button>
       <button
         aria-current="false"
         aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md"
+        class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-ilhKMMn-css"
       >
         2
+      </button>
+      <button
+        aria-current="false"
+        aria-disabled="false"
+        class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-ildoqSX-css"
+      >
+        6
       </button>
       <button
         aria-controls="radix-0"
         aria-expanded="false"
         aria-haspopup="dialog"
         aria-label="Open pagination popover"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ilhKMMn-css"
         data-state="closed"
         data-testid="pagination_popover_trigger"
         type="button"
@@ -568,13 +567,6 @@ exports[`Pagination component renders 1`] = `
             r="1"
           />
         </svg>
-      </button>
-      <button
-        aria-current="false"
-        aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md"
-      >
-        6
       </button>
     </div>
     <button

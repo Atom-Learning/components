@@ -3,7 +3,8 @@ import * as React from 'react'
 import { VisibleElementsAmount } from '../pagination.constants'
 import {
   findNextAvailablePage,
-  findPreviousAvailablePage
+  findPreviousAvailablePage,
+  getPaginationItemsToRender
 } from '../pagination.helper'
 import type { IPaginationContext, TPaginationProviderProps } from '../types'
 
@@ -15,6 +16,7 @@ export const PaginationContext = React.createContext<IPaginationContext>({
   visibleElementsCount: VisibleElementsAmount.LESS,
   pagesCount: 0,
   onItemHover: () => null,
+  paginationItems: [],
   labels: {},
   isMaxVisibleElementCount: false,
   indicatedPages: [],
@@ -71,12 +73,19 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
     goToPage(nextAvailablePage)
   }, [currentPage, disabledPages, goToPage, pagesCount])
 
+  const paginationItems = getPaginationItemsToRender(
+    currentPage,
+    pagesCount,
+    isMaxVisibleElementCount
+  )
+
   const value = React.useMemo(() => {
     return {
       goToNextPage,
       goToPreviousPage,
       goToPage,
       currentPage,
+      paginationItems,
       visibleElementsCount,
       indicatedPages,
       disabledPages,
@@ -92,6 +101,7 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
     currentPage,
     visibleElementsCount,
     indicatedPages,
+    paginationItems,
     disabledPages,
     pagesCount,
     onItemHover,
