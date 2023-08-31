@@ -1,3 +1,4 @@
+import type { CSS, VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
@@ -8,7 +9,6 @@ import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
 import { StyledMarkdownEmphasis } from '../markdown-content/components'
 import { StyledText, textVariants } from '../text/Text'
-import type { CSS, VariantProps } from '@stitches/react'
 
 export const StyledLink = styled('a', {
   bg: 'unset',
