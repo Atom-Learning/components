@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { ColorScheme } from '../../experiments/color-scheme'
-import { Flex } from '..'
+import { Flex } from '../flex'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationNextButton } from './PaginationNextButton'
 import { PaginationPages } from './PaginationPages'
