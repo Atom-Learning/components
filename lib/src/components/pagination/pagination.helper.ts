@@ -1,22 +1,27 @@
 import {
-  MAX_PAGINATION_ITEMS,
-  MIN_PAGINATION_ITEMS,
   TRUNCATED_THRESHOLD,
   VisibleElementsAmount
 } from './pagination.constants'
 import { IPaginationAlignment } from './types'
 
-const getMaxPaginationItems = (visibleElementsCount: VisibleElementsAmount) =>
-  visibleElementsCount === VisibleElementsAmount.MORE
-    ? MAX_PAGINATION_ITEMS
-    : MIN_PAGINATION_ITEMS
+/**
+ * Return the maximum number of pagination items required, dependent
+ * on the total visible elements.
+ *
+ * Excludes the 1st and last page as they are rendered separately.
+ *
+ * So if `visibleElementsCount` is `MORE` (`8`), when we exclude the following 4 buttons,
+ * previous, next, popup, and _either_ 1st/last page items, we'll get `4` remaining to render.
+ */
+const getPaginationItemsLimit = (visibleElementsCount: VisibleElementsAmount) =>
+  visibleElementsCount === VisibleElementsAmount.MORE ? 4 : 2
 
 export const getPaginationAlignment = (
   currentPage: number,
   pagesCount: number,
   visibleElementsCount: VisibleElementsAmount
 ): IPaginationAlignment =>
-  currentPage > pagesCount - getMaxPaginationItems(visibleElementsCount)
+  currentPage > pagesCount - getPaginationItemsLimit(visibleElementsCount)
     ? 'start'
     : 'end'
 
@@ -25,7 +30,7 @@ export const getPaginationItemsToRender = (
   pagesCount: number,
   visibleElementsCount = VisibleElementsAmount.LESS
 ): number[] => {
-  const maxPaginationItemsCount = getMaxPaginationItems(visibleElementsCount)
+  const paginationItemsLimit = getPaginationItemsLimit(visibleElementsCount)
   const paginationItems = Array.from(
     { length: pagesCount },
     (_, index) => index + 1
@@ -57,16 +62,16 @@ export const getPaginationItemsToRender = (
    *  currentPage: 1/2/3
    *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [1, 2, 3, 4]
-   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +----+
    *  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |
-   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +----+
    */
   if (
     visibleElementsCount === VisibleElementsAmount.MORE
       ? [1, 2, 3].includes(currentPage)
       : [1, 2].includes(currentPage)
   ) {
-    return paginationItems.slice(0, maxPaginationItemsCount)
+    return paginationItems.slice(0, paginationItemsLimit)
   }
 
   /**
@@ -78,7 +83,7 @@ export const getPaginationItemsToRender = (
    *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [7, 8]
    *  +---+  +---+  +---+  +---+
-   *  | 1 |  | … |  | 5 |  | 6 |
+   *  | 1 |  | … |  | 7 |  | 8 |
    *  +---+  +---+  +---+  +---+
    *
    *  currentPage: 7
@@ -88,8 +93,8 @@ export const getPaginationItemsToRender = (
    *  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  if (currentPage > pagesCount - maxPaginationItemsCount) {
-    return paginationItems.slice(-maxPaginationItemsCount)
+  if (currentPage > pagesCount - paginationItemsLimit) {
+    return paginationItems.slice(-paginationItemsLimit)
   }
 
   /**
