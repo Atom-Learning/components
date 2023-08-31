@@ -5,8 +5,6 @@ import { styled } from '~/stitches'
 
 import { ActionIcon } from '../action-icon'
 import { Icon } from '../icon'
-import { TRUNCATED_THRESHOLD } from './pagination.constants'
-import { getPaginationItemsToRender } from './pagination.helper'
 import { usePagination } from './usePagination'
 
 const StyledActionIcon = styled(ActionIcon, {
@@ -25,20 +23,14 @@ export const PaginationNextButton = (
     pagesCount,
     labels,
     disabledPages,
-    isMaxVisibleElementCount
+    paginationItems
   } = usePagination()
 
-  const paginationItemsInview = getPaginationItemsToRender(
-    currentPage,
-    pagesCount,
-    TRUNCATED_THRESHOLD,
-    isMaxVisibleElementCount
-  )
   // Check if we are on the last page or if the last page is disabled and the if the second to last page number is rendered
   const isDisabled =
     currentPage === pagesCount ||
     (disabledPages.includes(pagesCount) &&
-      paginationItemsInview.includes(pagesCount - 1))
+      paginationItems.includes(pagesCount - 1))
 
   return (
     <StyledActionIcon

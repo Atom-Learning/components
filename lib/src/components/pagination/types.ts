@@ -9,12 +9,15 @@ interface ILabels {
 
 interface IBasePagination {
   pagesCount: number
-  visibleElementsCount: TVisibleElementsCount
   indicatedPages: number[]
   disabledPages: number[]
+  paginationItems: number[]
+  paginationAlignment: IPaginationAlignment
   labels: ILabels
   onItemHover: (pageNumber: number) => void
 }
+
+export type IPaginationAlignment = 'start' | 'end'
 
 export type TVisibleElementsCount = 6 | 8
 
@@ -24,7 +27,6 @@ export interface IPaginationItemProps {
 }
 export interface IPaginationContext extends IBasePagination {
   currentPage: number
-  isMaxVisibleElementCount: boolean
   goToPage: (pagenumber: number) => void
   goToPreviousPage: () => void
   goToNextPage: () => void
@@ -34,6 +36,7 @@ export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
   Partial<IBasePagination> & {
     selectedPage?: number
     onSelectedPageChange?: (pageNumber: number) => void
+    visibleElementsCount?: TVisibleElementsCount
   }
 
 export interface IPaginationProps extends TPaginationProviderProps {
