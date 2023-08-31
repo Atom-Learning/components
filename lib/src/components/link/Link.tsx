@@ -27,7 +27,7 @@ const linkSizeVariants = Object.keys(textVariants.size).reduce(
       [`& ${StyledIcon}`]: iconSizeVariants[key]
     }
   }),
-  {}
+  {} as Record<keyof typeof textVariants.size, CSS>
 )
 
 export const StyledLink = styled('a', {
