@@ -3,7 +3,9 @@ import * as React from 'react'
 import { VisibleElementsAmount } from '../pagination.constants'
 import {
   findNextAvailablePage,
-  findPreviousAvailablePage
+  findPreviousAvailablePage,
+  getPaginationAlignment,
+  getPaginationItemsToRender
 } from '../pagination.helper'
 import type { IPaginationContext, TPaginationProviderProps } from '../types'
 
@@ -12,13 +14,13 @@ export const PaginationContext = React.createContext<IPaginationContext>({
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 1,
-  visibleElementsCount: VisibleElementsAmount.LESS,
   pagesCount: 0,
   onItemHover: () => null,
+  paginationItems: [],
   labels: {},
-  isMaxVisibleElementCount: false,
   indicatedPages: [],
-  disabledPages: []
+  disabledPages: [],
+  paginationAlignment: 'end'
 })
 
 export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
@@ -33,8 +35,6 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   children
 }) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
-  const isMaxVisibleElementCount =
-    visibleElementsCount === VisibleElementsAmount.MORE
 
   const currentPage = selectedPage || internalCurrentPage
 
@@ -71,32 +71,43 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
     goToPage(nextAvailablePage)
   }, [currentPage, disabledPages, goToPage, pagesCount])
 
+  const paginationItems = getPaginationItemsToRender(
+    currentPage,
+    pagesCount,
+    visibleElementsCount
+  )
+  const paginationAlignment = getPaginationAlignment(
+    currentPage,
+    pagesCount,
+    visibleElementsCount
+  )
+
   const value = React.useMemo(() => {
     return {
       goToNextPage,
       goToPreviousPage,
       goToPage,
       currentPage,
-      visibleElementsCount,
+      paginationItems,
       indicatedPages,
       disabledPages,
       pagesCount,
       onItemHover,
       labels,
-      isMaxVisibleElementCount
+      paginationAlignment
     }
   }, [
     goToNextPage,
     goToPreviousPage,
     goToPage,
     currentPage,
-    visibleElementsCount,
     indicatedPages,
+    paginationItems,
     disabledPages,
     pagesCount,
     onItemHover,
     labels,
-    isMaxVisibleElementCount
+    paginationAlignment
   ])
 
   return (
