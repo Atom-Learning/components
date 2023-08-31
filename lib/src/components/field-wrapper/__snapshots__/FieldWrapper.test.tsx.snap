@@ -12,7 +12,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-fucOQC {
+  .c-fSptPg {
     background: unset;
     border: unset;
     padding: unset;
@@ -22,33 +22,41 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fucOQC:focus,
-  .c-fucOQC:hover {
+  .c-fSptPg:focus,
+  .c-fSptPg:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fucOQC:active {
+  .c-fSptPg:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dyvMgW > .c-fucOQC,
-  .c-jryFOR > .c-fucOQC,
-  .c-PJLV > .c-fucOQC,
-  .c-bYNGXt > .c-fucOQC {
+  .c-dyvMgW > .c-fSptPg,
+  .c-jryFOR > .c-fSptPg,
+  .c-PJLV > .c-fSptPg,
+  .c-bYNGXt > .c-fSptPg {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-fucOQC::before,
-  .c-dyvMgW > .c-fucOQC::after,
-  .c-jryFOR > .c-fucOQC::before,
-  .c-jryFOR > .c-fucOQC::after,
-  .c-PJLV > .c-fucOQC::before,
-  .c-PJLV > .c-fucOQC::after,
-  .c-bYNGXt > .c-fucOQC::before,
-  .c-bYNGXt > .c-fucOQC::after {
+  .c-dyvMgW > .c-fSptPg::before,
+  .c-dyvMgW > .c-fSptPg::after,
+  .c-jryFOR > .c-fSptPg::before,
+  .c-jryFOR > .c-fSptPg::after,
+  .c-PJLV > .c-fSptPg::before,
+  .c-PJLV > .c-fSptPg::after,
+  .c-bYNGXt > .c-fSptPg::before,
+  .c-bYNGXt > .c-fSptPg::after {
     content: none;
+  }
+
+  .c-fSptPg .c-dbrbZt:first-child {
+    margin-right: var(--space-1);
+  }
+
+  .c-fSptPg .c-dbrbZt:last-child {
+    margin-left: var(--space-1);
   }
 
   .c-fZTBsJ {
@@ -133,21 +141,27 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fucOQC-bndJoy-size-sm {
+  .c-fSptPg-dEvqJY-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fucOQC-bndJoy-size-sm::before {
+  .c-fSptPg-dEvqJY-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fucOQC-bndJoy-size-sm::after {
+  .c-fSptPg-dEvqJY-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
+  }
+
+  .c-fSptPg-dEvqJY-size-sm .c-dbrbZt {
+    height: 16px;
+    width: 16px;
+    margin-top: -2px;
   }
 
   .c-fZTBsJ-fwoCmE-size-md {
@@ -214,7 +228,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-fucOQC c-fucOQC-bndJoy-size-sm"
+        class="c-fSptPg c-fSptPg-dEvqJY-size-sm"
         href="https://example.com"
         rel="noopener noreferrer"
         target="_blank"

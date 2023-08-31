@@ -1,8 +1,10 @@
+import { Ok } from '@atom-learning/icons'
 import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
 import { Heading } from '../heading/Heading'
+import { Icon } from '../icon'
 import { Text } from '../text/Text'
 import { Link } from './'
 
@@ -59,6 +61,18 @@ describe(`Link component`, () => {
           <Link>HEADING LINK</Link>
         </Heading>
       </>
+    )
+
+    expect(container).toMatchSnapshot()
+  })
+
+  it('renders Icons correctly', async () => {
+    const { container } = render(
+      <Link>
+        <Icon is={Ok} />
+        TEXT LINK
+        <Icon is={Ok} />
+      </Link>
     )
 
     expect(container).toMatchSnapshot()

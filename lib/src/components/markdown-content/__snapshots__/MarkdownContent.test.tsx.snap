@@ -106,7 +106,7 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-fucOQC {
+  .c-fSptPg {
     background: unset;
     border: unset;
     padding: unset;
@@ -116,33 +116,41 @@ exports[`MarkdownContent component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fucOQC:focus,
-  .c-fucOQC:hover {
+  .c-fSptPg:focus,
+  .c-fSptPg:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fucOQC:active {
+  .c-fSptPg:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dyvMgW > .c-fucOQC,
-  .c-jryFOR > .c-fucOQC,
-  .c-PJLV > .c-fucOQC,
-  .c-bYNGXt > .c-fucOQC {
+  .c-dyvMgW > .c-fSptPg,
+  .c-jryFOR > .c-fSptPg,
+  .c-PJLV > .c-fSptPg,
+  .c-bYNGXt > .c-fSptPg {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-fucOQC::before,
-  .c-dyvMgW > .c-fucOQC::after,
-  .c-jryFOR > .c-fucOQC::before,
-  .c-jryFOR > .c-fucOQC::after,
-  .c-PJLV > .c-fucOQC::before,
-  .c-PJLV > .c-fucOQC::after,
-  .c-bYNGXt > .c-fucOQC::before,
-  .c-bYNGXt > .c-fucOQC::after {
+  .c-dyvMgW > .c-fSptPg::before,
+  .c-dyvMgW > .c-fSptPg::after,
+  .c-jryFOR > .c-fSptPg::before,
+  .c-jryFOR > .c-fSptPg::after,
+  .c-PJLV > .c-fSptPg::before,
+  .c-PJLV > .c-fSptPg::after,
+  .c-bYNGXt > .c-fSptPg::before,
+  .c-bYNGXt > .c-fSptPg::after {
     content: none;
+  }
+
+  .c-fSptPg .c-dbrbZt:first-child {
+    margin-right: var(--space-1);
+  }
+
+  .c-fSptPg .c-dbrbZt:last-child {
+    margin-left: var(--space-1);
   }
 
   .c-iSBxEZ {
@@ -310,21 +318,27 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-fucOQC-gvmVBy-size-md {
+  .c-fSptPg-kajBpT-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fucOQC-gvmVBy-size-md::before {
+  .c-fSptPg-kajBpT-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fucOQC-gvmVBy-size-md::after {
+  .c-fSptPg-kajBpT-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-fSptPg-kajBpT-size-md .c-dbrbZt {
+    height: 20px;
+    width: 20px;
+    margin-top: -4px;
   }
 }
 
@@ -681,7 +695,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-fSptPg c-fSptPg-kajBpT-size-md"
         href="http://dev.nodeca.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -693,7 +707,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-fSptPg c-fSptPg-kajBpT-size-md"
         href="http://nodeca.github.io/pica/demo/"
         rel="noopener noreferrer"
         target="_blank"
