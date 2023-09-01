@@ -32,6 +32,10 @@ export const BannerRegularActions: React.FC<
   return (
     <Stack gap={gap} {...props}>
       {React.Children.map(children, (child, index) => {
+        // if child is undefined or null, React.isValidElement returns false and hence error is thrown.
+        // This line will prevent that from happening
+        if (child == null) return child
+
         if (!React.isValidElement(child)) {
           throw new Error(
             `Child passed to ${BannerRegularActions.displayName} is not a valid element`
