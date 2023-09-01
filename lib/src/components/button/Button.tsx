@@ -1,11 +1,13 @@
-import type { CSS, VariantProps } from '@stitches/react'
+import type { VariantProps } from '@stitches/react'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
-import { PolymorphicComponentPropWithRef } from '~/types'
+import { NavigatorActions } from '~/types'
+import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
@@ -227,38 +229,18 @@ const WithLoader = ({
   </>
 )
 
-type ButtonProps<
-  H extends string | undefined,
-  C extends React.ElementType
-> = PolymorphicComponentPropWithRef<
-  C,
+type ButtonProps = Override<
+  React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
-    css?: CSS
-    href?: H
+    as?: React.ComponentType | React.ElementType
+    children: React.ReactNode
+    href?: string
     isLoading?: boolean
-  }
+  } & NavigatorActions
 >
 
-export const Button: <
-  H extends string | undefined = undefined,
-  C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
->(
-  props: ButtonProps<H, C>
-) => React.ReactElement | null = React.forwardRef(
-  <
-    H extends string | undefined = undefined,
-    C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
-  >(
-    {
-      children,
-      as,
-      href,
-      isLoading = false,
-      onClick,
-      ...rest
-    }: ButtonProps<H, C>,
-    ref?: ButtonProps<H, C>['ref']
-  ) => {
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
     const externalLinkProps = isExternalLink(href)
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
@@ -282,4 +264,6 @@ export const Button: <
       </StyledButton>
     )
   }
-)
+) as React.FC<ButtonProps>
+
+Button.displayName = 'Button'

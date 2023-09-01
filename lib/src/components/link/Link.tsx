@@ -1,8 +1,8 @@
-import type { CSS, VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { PolymorphicComponentPropWithRef } from '~/types'
+import { NavigatorActions } from '~/types'
+import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
@@ -39,32 +39,15 @@ export const StyledLink = styled('a', {
   }
 })
 
-type LinkProps<
-  H extends string | undefined,
-  C extends React.ElementType
-> = PolymorphicComponentPropWithRef<
-  C,
-  VariantProps<typeof StyledLink> & {
-    css?: CSS
-    href?: H
-  }
+type LinkProps = Override<
+  React.ComponentProps<typeof StyledLink>,
+  {
+    as?: React.ComponentType | React.ElementType
+  } & NavigatorActions
 >
 
-export const Link: <
-  H extends string | undefined = undefined,
-  C extends React.ElementType = H extends string ? typeof StyledLink : 'button'
->(
-  props: LinkProps<H, C>
-) => React.ReactElement | null = React.forwardRef(
-  <
-    H extends string | undefined = undefined,
-    C extends React.ElementType = H extends string
-      ? typeof StyledLink
-      : 'button'
-  >(
-    { as, href, ...rest }: LinkProps<H, C>,
-    ref?: LinkProps<H, C>['ref']
-  ) => {
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ as, href, ...rest }, ref) => {
     const externalLinkProps = isExternalLink(href)
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
@@ -80,4 +63,6 @@ export const Link: <
       />
     )
   }
-)
+) as React.FC<LinkProps>
+
+Link.displayName = 'Link'
