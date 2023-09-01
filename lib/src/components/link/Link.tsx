@@ -1,8 +1,8 @@
-import type { CSS, VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { PolymorphicComponentPropWithRef } from '~/types'
+import { NavigatorActions } from '~/types'
+import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
@@ -33,51 +33,29 @@ export const StyledLink = styled('a', {
         content: 'none'
       }
     },
-  variants: textVariants,
-  defaultVariants: {
-    size: 'md'
-  }
+  variants: textVariants
 })
 
-type LinkProps<
-  H extends string | undefined,
-  C extends React.ElementType
-> = PolymorphicComponentPropWithRef<
-  C,
-  VariantProps<typeof StyledLink> & {
-    css?: CSS
-    href?: H
-  }
+type LinkProps = Override<
+  React.ComponentProps<typeof StyledLink>,
+  {
+    as?: React.ComponentType | React.ElementType
+  } & NavigatorActions
 >
 
-export const Link: <
-  H extends string | undefined = undefined,
-  C extends React.ElementType = H extends string ? typeof StyledLink : 'button'
->(
-  props: LinkProps<H, C>
-) => React.ReactElement | null = React.forwardRef(
-  <
-    H extends string | undefined = undefined,
-    C extends React.ElementType = H extends string
-      ? typeof StyledLink
-      : 'button'
-  >(
-    { as, href, ...rest }: LinkProps<H, C>,
-    ref?: LinkProps<H, C>['ref']
-  ) => {
-    const externalLinkProps = isExternalLink(href)
-      ? { target: '_blank', rel: 'noopener noreferrer' }
-      : {}
+export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ size = 'md', href, ...props }, ref) => (
+    <StyledLink
+      {...(isExternalLink(href)
+        ? { target: '_blank', rel: 'noopener noreferrer' }
+        : {})}
+      {...(!href && { as: 'button', noCapsize: true })}
+      size={size}
+      href={href}
+      {...props}
+      ref={ref}
+    />
+  )
+) as React.FC<LinkProps>
 
-    return (
-      <StyledLink
-        as={as || (!href ? 'button' : undefined)}
-        noCapsize={!href ? true : undefined}
-        href={href}
-        {...rest}
-        {...externalLinkProps}
-        ref={ref}
-      />
-    )
-  }
-)
+Link.displayName = 'Link'

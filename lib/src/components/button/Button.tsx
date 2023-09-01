@@ -1,11 +1,13 @@
-import type { CSS, VariantProps } from '@stitches/react'
+import type { VariantProps } from '@stitches/react'
 import { darken, opacify } from 'color2k'
 import * as React from 'react'
 
+import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
-import { PolymorphicComponentPropWithRef } from '~/types'
+import { NavigatorActions } from '~/types'
+import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
@@ -122,7 +124,6 @@ export const StyledButton = styled('button', {
       }
     }
   },
-
   compoundVariants: [
     {
       theme: 'primary',
@@ -191,13 +192,7 @@ export const StyledButton = styled('button', {
         darken(theme.colors.primaryDark.value, 0.15)
       )
     }
-  ],
-
-  defaultVariants: {
-    appearance: 'solid',
-    size: 'md',
-    theme: 'primary'
-  }
+  ]
 })
 
 const LoaderContentsWrapper = styled('span', {
@@ -211,9 +206,6 @@ const LoaderContentsWrapper = styled('span', {
       md: { gap: '$3' },
       lg: { gap: '$3' }
     }
-  },
-  defaultVariants: {
-    size: 'md'
   }
 })
 
@@ -227,59 +219,60 @@ const WithLoader = ({
   </>
 )
 
-type ButtonProps<
-  H extends string | undefined,
-  C extends React.ElementType
-> = PolymorphicComponentPropWithRef<
-  C,
+type ButtonProps = Override<
+  React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
-    css?: CSS
-    href?: H
+    as?: React.ComponentType | React.ElementType
+    children: React.ReactNode
+    href?: string
     isLoading?: boolean
-  }
+  } & NavigatorActions
 >
 
-export const Button: <
-  H extends string | undefined = undefined,
-  C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
->(
-  props: ButtonProps<H, C>
-) => React.ReactElement | null = React.forwardRef(
-  <
-    H extends string | undefined = undefined,
-    C extends React.ElementType = H extends string ? 'a' : typeof StyledButton
-  >(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  (
     {
       children,
-      as,
-      href,
-      isLoading = false,
+      isLoading,
       onClick,
+      href,
+      appearance = 'solid',
+      size = 'md',
+      theme = 'primary',
+      type = 'button',
       ...rest
-    }: ButtonProps<H, C>,
-    ref?: ButtonProps<H, C>['ref']
+    },
+    ref
   ) => {
-    const externalLinkProps = isExternalLink(href)
-      ? { target: '_blank', rel: 'noopener noreferrer' }
+    const linkSpecificProps = href
+      ? {
+          as: 'a',
+          href,
+          ...(isExternalLink(href)
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})
+        }
       : {}
+    const buttonSpecificProps = !href ? { type } : {}
 
+    // Note: button is not disabled when loading for accessibility purposes.
+    // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
-        as={as || (href ? 'a' : undefined)}
-        href={href}
         isLoading={isLoading}
         onClick={!isLoading ? onClick : undefined}
-        type={!href ? 'button' : undefined}
+        appearance={appearance}
+        size={size}
+        theme={theme}
         {...rest}
-        {...externalLinkProps}
+        {...linkSpecificProps}
+        {...buttonSpecificProps}
         ref={ref}
       >
-        {isLoading ? (
-          <WithLoader size={rest.size}>{children}</WithLoader>
-        ) : (
-          children
-        )}
+        {isLoading ? <WithLoader size={size}>{children}</WithLoader> : children}
       </StyledButton>
     )
   }
-)
+) as React.FC<ButtonProps>
+
+Button.displayName = 'Button'
