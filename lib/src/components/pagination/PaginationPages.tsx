@@ -1,7 +1,6 @@
 import * as React from 'react'
 
 import { Flex } from '../flex'
-import { TRUNCATED_THRESHOLD } from './pagination.constants'
 import { PaginationItem } from './PaginationItem'
 import { PaginationPopover } from './PaginationPopover'
 import { usePagination } from './usePagination'
@@ -9,7 +8,7 @@ import { usePagination } from './usePagination'
 export const PaginationPages = () => {
   const { pagesCount, paginationItems, paginationAlignment } = usePagination()
 
-  const isTruncated = pagesCount > TRUNCATED_THRESHOLD
+  const isTruncated = pagesCount > paginationItems.length
 
   return (
     <Flex gap={1}>
