@@ -124,6 +124,7 @@ export const StyledButton = styled('button', {
       }
     }
   },
+
   compoundVariants: [
     {
       theme: 'primary',
@@ -193,6 +194,7 @@ export const StyledButton = styled('button', {
       )
     }
   ],
+
   defaultVariants: {
     appearance: 'solid',
     size: 'md',
@@ -243,8 +245,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
 
-    // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
         as={as || (href ? 'a' : undefined)}

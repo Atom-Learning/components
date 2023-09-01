@@ -51,6 +51,7 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
     const externalLinkProps = isExternalLink(href)
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
+
     return (
       <StyledLink
         as={as || (!href ? 'button' : undefined)}
