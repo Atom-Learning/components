@@ -192,7 +192,12 @@ export const StyledButton = styled('button', {
         darken(theme.colors.primaryDark.value, 0.15)
       )
     }
-  ]
+  ],
+  defaultVariants: {
+    appearance: 'solid',
+    size: 'md',
+    theme: 'primary'
+  }
 })
 
 const LoaderContentsWrapper = styled('span', {
@@ -206,6 +211,9 @@ const LoaderContentsWrapper = styled('span', {
       md: { gap: '$3' },
       lg: { gap: '$3' }
     }
+  },
+  defaultVariants: {
+    size: 'md'
   }
 })
 
@@ -230,46 +238,29 @@ type ButtonProps = Override<
 >
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      children,
-      isLoading,
-      onClick,
-      href,
-      appearance = 'solid',
-      size = 'md',
-      theme = 'primary',
-      type = 'button',
-      ...rest
-    },
-    ref
-  ) => {
-    const linkSpecificProps = href
-      ? {
-          as: 'a',
-          href,
-          ...(isExternalLink(href)
-            ? { target: '_blank', rel: 'noopener noreferrer' }
-            : {})
-        }
+  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
+    const externalLinkProps = isExternalLink(href)
+      ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
-    const buttonSpecificProps = !href ? { type } : {}
 
     // Note: button is not disabled when loading for accessibility purposes.
     // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
+        as={as || (href ? 'a' : undefined)}
+        href={href}
         isLoading={isLoading}
         onClick={!isLoading ? onClick : undefined}
-        appearance={appearance}
-        size={size}
-        theme={theme}
+        type={!href ? 'button' : undefined}
         {...rest}
-        {...linkSpecificProps}
-        {...buttonSpecificProps}
+        {...externalLinkProps}
         ref={ref}
       >
-        {isLoading ? <WithLoader size={size}>{children}</WithLoader> : children}
+        {isLoading ? (
+          <WithLoader size={rest.size}>{children}</WithLoader>
+        ) : (
+          children
+        )}
       </StyledButton>
     )
   }
