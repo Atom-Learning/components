@@ -1,7 +1,4 @@
-import {
-  TRUNCATED_THRESHOLD,
-  VisibleElementsAmount
-} from './pagination.constants'
+import { VisibleElementsAmount } from './pagination.constants'
 import { IPaginationAlignment } from './types'
 
 /**
@@ -38,13 +35,16 @@ export const getPaginationItemsToRender = (
 
   /**
    * If there are fewer pages than our threshold for truncating,
-   * render the entire page list
+   * render the entire page list.
+   *
+   * We need to remove `2` from `visibleElementsCount` to account
+   * for the previous & next buttons
    *
    *  +---+  +---+  +---+  +---+
    *  | 1 |  | 2 |  | 3 |  | 4 |
    *  +---+  +---+  +---+  +---+
    */
-  if (pagesCount <= TRUNCATED_THRESHOLD) {
+  if (pagesCount <= visibleElementsCount - 2) {
     return paginationItems
   }
 
