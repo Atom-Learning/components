@@ -1,7 +1,4 @@
-import {
-  TRUNCATED_THRESHOLD,
-  VisibleElementsAmount
-} from './pagination.constants'
+import { VisibleElementsAmount } from './pagination.constants'
 import { IPaginationAlignment } from './types'
 
 /**
@@ -38,13 +35,26 @@ export const getPaginationItemsToRender = (
 
   /**
    * If there are fewer pages than our threshold for truncating,
-   * render the entire page list
+   * render the entire page list.
    *
-   *  +---+  +---+  +---+  +---+
-   *  | 1 |  | 2 |  | 3 |  | 4 |
-   *  +---+  +---+  +---+  +---+
+   * We need to remove `2` from `visibleElementsCount` to account
+   * for the previous & next buttons
+   *
+   *  pagesCount: 4
+   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
+   *  returns [1, 2, 3, 4]
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *
+   *  pagesCount: 6
+   *  visibleElementsCount:8 // VisibleElementsAmount.MORE
+   *  returns [1, 2, 3, 4, 5, 6]
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | 5 |  | 6 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  if (pagesCount <= TRUNCATED_THRESHOLD) {
+  if (pagesCount <= visibleElementsCount - 2) {
     return paginationItems
   }
 
@@ -55,16 +65,16 @@ export const getPaginationItemsToRender = (
    *  currentPage: 1/2
    *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [1, 2]
-   *  +---+  +---+  +---+  +---+
-   *  | 1 |  | 2 |  | … |  | 6 |
-   *  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 1 |  | 2 |  | … |  | 6 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
    *
    *  currentPage: 1/2/3
    *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [1, 2, 3, 4]
-   *  +---+  +---+  +---+  +---+  +---+  +----+
-   *  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |
-   *  +---+  +---+  +---+  +---+  +---+  +----+
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
+   *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
    */
   if (
     visibleElementsCount === VisibleElementsAmount.MORE
@@ -82,16 +92,16 @@ export const getPaginationItemsToRender = (
    *  currentPage: 7
    *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [7, 8]
-   *  +---+  +---+  +---+  +---+
-   *  | 1 |  | … |  | 7 |  | 8 |
-   *  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 1 |  | … |  | 7 |  | 8 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
    *
    *  currentPage: 7
    *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [7, 8, 9, 10]
-   *  +---+  +---+  +---+  +---+  +---+  +---+
-   *  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |
-   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
+   *  | < |  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
    */
   if (currentPage > pagesCount - paginationItemsLimit) {
     return paginationItems.slice(-paginationItemsLimit)
@@ -105,16 +115,16 @@ export const getPaginationItemsToRender = (
    *  currentPage: 4
    *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
    *  returns [3, 4]
-   *  +---+  +---+  +---+  +---+
-   *  | 3 |  | 4 |  | … |  | 6 |
-   *  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 3 |  | 4 |  | … |  | 6 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+
    *
    *  currentPage: 6
    *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
    *  returns [4, 5, 6, 7]
-   *  +---+  +---+  +---+  +---+  +---+  +---+
-   *  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 |
-   *  +---+  +---+  +---+  +---+  +---+  +---+
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
+   *  | < |  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 |  | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
    */
   return paginationItems.slice(
     visibleElementsCount === VisibleElementsAmount.MORE
