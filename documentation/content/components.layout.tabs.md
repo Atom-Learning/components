@@ -133,6 +133,137 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/01-tabs-do.svg","type":"do","description":"Use sentence case."},{"description":"Use all caps for tab labels.","type":"dont","image":"/assets/images/02-tabs-dont.svg"},{"description":"Ensure that tab labels clearly communicate the content they represent.","type":"do","image":"/assets/images/03-tabs-do.svg"},{"description":"Use super long labels.","type":"dont","image":"/assets/images/04-tabs-dont.svg"},{"image":"/assets/images/05-tabs-do.svg","description":"Use tabs with at least 2 buttons.","type":"do"},{"description":"Use tabs with only 1 button.","type":"dont","image":"/assets/images/06-tabs-dont.svg"},{"type":"do","image":"/assets/images/07-tabs-do.svg","description":"Use visual cues, such as color changes or underlines, to indicate the active tab and respond to user interactions."},{"description":"Use tabs when you need to compare information in different tabs - memorizing information and switching backwards and forwards can be frustrating.","type":"dont","image":"/assets/images/08-tabs-dont.svg"}]} />
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      Organize tabs logically based on content categories or user tasks. Maintain consistent tab sizes for a balanced layout. Use clear labels that succinctly describe the tab's content. Prioritize user experience by considering responsive design, ensuring tabs adapt well to different screen sizes.
+
+
+      ![tabs structure](/assets/images/01-tabs-visual.svg "tabs structure")
+
+      Tabs
+
+
+      ![tabs paddings](/assets/images/02-tabs-visual.svg "tabs paddings")
+
+      Paddings
+
+
+      | Property             | Token    | rem | px  |
+
+      | -------------------- | -------- | --- | --- |
+
+      | Padding left & right | space $4 | 1   | 16  |
+
+      | Padding top & bottom | space $4 | 1   | 16  |
+
+
+      ## Typography
+
+
+      Maintain a consistent font size and style for tab labels to create visual hierarchy.
+
+
+      ![textarea typography](/assets/images/03-tabs-visual.svg "textarea typography")
+
+      Tabs typography
+
+
+      | Property            | Token | Weight | Size | rem | px  |
+
+      | ------------------- | ----- | ------ | ---- | --- | --- |
+
+      | Active tab font     | $body | 600    | $md  | 1   | 16  |
+
+      | Not active tab font | $body | 400    | $md  | 1   | 16  |
+
+
+      ## Colors & Variants
+
+
+      Tabs can be preselected, unselected, or disabled. One tab can be selected at a time, and if a user navigates away from a tab, a user should return to the last tab selected.
+
+
+      ![Active tabs](/assets/images/04-tabs-visual.svg "Active tabs")
+
+
+      Active
+
+
+      | Property                    | Token     | Hex      |
+
+      | --------------------------- | --------- | -------- |
+
+      | Bg color                    | $white    | \#FFFFFF |
+
+      | Active tab font-color       | $primary  | \#0F67F5 |
+
+      | Active tab bottom line      | $primary  | \#0F67F5 |
+
+      | Not active tab font-color   | $tonal500 | \#333333 |
+
+      | Not active tabs bottom line | $tonal100 | \#EEEEEE |
+
+
+      ![Hover tabs](/assets/images/05-tabs-visual.svg "Hover tabs")
+
+
+      Hover
+
+
+      | Property             | Token    | Hex      |
+
+      | -------------------- | -------- | -------- |
+
+      | Hover tab bg color   | $blue200 | \#E8F1FE |
+
+      | Hover tab font-color | $blue900 | \#184BC8 |
+
+
+      ![Focus tabs](/assets/images/06-tabs-visual.svg "Focus tabs")
+
+
+      Focus
+
+
+      | Property              | Token    | Hex      |
+
+      | --------------------- | -------- | -------- |
+
+      | Focus tab bg color    | $white   | \#FFFFFF |
+
+      | Focus tab font-color  | $blue900 | \#184BC8 |
+
+      | Focus tab bottom line | $blue900 | \#184BC8 |
+
+
+      ![Disabled tabs](/assets/images/07-tabs-visual.svg "Disabled tabs")
+
+
+      Disabled
+
+
+      | Property                | Token    | Hex      |
+
+      | ----------------------- | -------- | -------- |
+
+      | Diasbled tab bg color   | $white   | \#FFFFFF |
+
+      | Disabled tab font-color | $grey600 | \#9E9E9E |
+
+
+      ## Mobile
+
+
+      Use buttons to communicate actions users can take and to allow them to interact with the content.
+
+
+      ![Mobile tabs](/assets/images/08-tabs-visual.svg "Mobile tabs")
+
+
+      Mobile
 parent: UtnFsFtDrPgQNFrm3NcAP
 uuid: JNymd_5n-zALi2KcmUEtq
 nestedSlug:
