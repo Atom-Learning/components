@@ -196,7 +196,7 @@ tabs:
 
       | --------------------------- | --------- | -------- |
 
-      | Bg color                    | $white    | \#ffffff |
+      | Bg color                    | $white    | \#FFFFFF |
 
       | Active tab font-color       | $primary  | \#0F67F5 |
 
