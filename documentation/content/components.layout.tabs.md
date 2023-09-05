@@ -232,7 +232,7 @@ tabs:
 
       | --------------------- | -------- | -------- |
 
-      | Focus tab bg color    | $white   | \#E8F1FE |
+      | Focus tab bg color    | $white   | \#FFFFFF |
 
       | Focus tab font-color  | $blue900 | \#184BC8 |
 
@@ -249,7 +249,7 @@ tabs:
 
       | ----------------------- | -------- | -------- |
 
-      | Diasbled tab bg color   | $white   | \#E8F1FE |
+      | Diasbled tab bg color   | $white   | \#FFFFFF |
 
       | Disabled tab font-color | $grey600 | \#9E9E9E |
 
