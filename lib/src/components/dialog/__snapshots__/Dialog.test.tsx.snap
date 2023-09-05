@@ -125,8 +125,8 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     justify-content: end;
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -213,7 +213,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
   </h2>
   CONTENT
   <div
-    class="c-dhzjXW c-dhzjXW-hmJoPD-justify-end c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-illFGmD-css"
+    class="c-dhzjXW c-dhzjXW-hmJoPD-justify-end c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-illFGmD-css"
   >
     FOOTER
   </div>
@@ -364,8 +364,8 @@ exports[`Dialog component with custom background renders 1`] = `
     justify-content: end;
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -588,8 +588,8 @@ exports[`Dialog component without close button renders 1`] = `
     justify-content: end;
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
