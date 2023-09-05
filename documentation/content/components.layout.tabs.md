@@ -206,7 +206,6 @@ tabs:
 
       | Not active tabs bottom line | $tonal100 | \#EEEEEE |
 
-      <br><br>
 
 
       ![Hover tabs](/assets/images/05-tabs-visual.svg "Hover tabs")
@@ -223,9 +222,6 @@ tabs:
 
       | Hover tab font-color | $blue900 | \#184BC8 |
 
-      <br>
-
-      <br>
 
 
       ![Focus tabs](/assets/images/06-tabs-visual.svg "Focus tabs")
@@ -244,9 +240,6 @@ tabs:
 
       | Focus tab bottom line | $blue900 | \#184BC8 |
 
-      <br>
-
-      <br>
 
 
       ![Disabled tabs](/assets/images/07-tabs-visual.svg "Disabled tabs")
