@@ -171,7 +171,7 @@ tabs:
       Tabs typography
 
 
-      | Property            | Token | Weight | Size | Rem | px  |
+      | Property            | Token | Weight | Size | rem | px  |
 
       | ------------------- | ----- | ------ | ---- | --- | --- |
 
