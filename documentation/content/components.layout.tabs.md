@@ -206,6 +206,10 @@ tabs:
 
       | Not active tabs bottom line | $tonal100 | \#EEEEEE |
 
+      <br>
+
+      <br>
+
 
       ![Hover tabs](/assets/images/05-tabs-visual.svg "Hover tabs")
 
