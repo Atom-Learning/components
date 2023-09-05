@@ -225,6 +225,10 @@ tabs:
 
       | Hover tab font-color | $blue900 | \#184BC8 |
 
+      <br>
+
+      <br>
+
 
       ![Focus tabs](/assets/images/06-tabs-visual.svg "Focus tabs")
 
@@ -241,6 +245,10 @@ tabs:
       | Focus tab font-color  | $blue900 | \#184BC8 |
 
       | Focus tab bottom line | $blue900 | \#184BC8 |
+
+      <br>
+
+      <br>
 
 
       ![Disabled tabs](/assets/images/07-tabs-visual.svg "Disabled tabs")
