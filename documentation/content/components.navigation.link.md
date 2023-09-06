@@ -74,7 +74,7 @@ tabs:
       <DosAndDonts items={[{"image":"/assets/images/01-link-do.svg","type":"do","description":"Match Link to the text size and font-weight of the content they are accompanying for consistency and visual balance."},{"description":"Apply multiple text styles, when using links paired with text, as this can create inconsistency.","type":"dont","image":"/assets/images/02-link-dont.svg"},{"description":"Give the link a meaningful description that clearly indicates its destination.","type":"do","image":"/assets/images/03-link-do.svg"},{"description":"Use generic phrases like \"click here\" or \"go to\" on links.","type":"dont","image":"/assets/images/04-link-dont.svg"},{"image":"/assets/images/05-link-do.svg","description":"Provide an external icon (e.g.\"new-window\" icon) when the link text needs to refer to an external domain.","type":"do"},{"description":"Overuse icons, especially when they are part of text content.","type":"dont","image":"/assets/images/06-link-dont.svg"},{"type":"do","description":"Use the linked text with the default DS colour.","image":"/assets/images/07-link-do.svg"},{"description":"Change the colour of the linked text.","type":"dont","image":"/assets/images/08-link-dont.svg"},{"image":"/assets/images/09-link-dont.svg","description":"Replace link text with URL.","type":"dont"}]} />
     title: Usage
   - title: Visuals
-    content: >-
+    content: >
       ## Structure
 
 
@@ -108,6 +108,21 @@ tabs:
       Sizes
 
 
+      | Property  | Family | Size | rem    | px   | 
+
+      | ----------| ------ | -----| -------| -----|
+
+      | Link xs   | $body  | $xs  | 0.75   | 12   |
+
+      | Link sm   | $body  | $sm  | 0.875  | 14   |
+
+      | Link md   | $body  | $md  | 1      | 16   |
+
+      | Link lg   | $body  | $lg  | 1.3125 | 21   |
+
+      | Link xl   | $body  | $xl  | 1.75   | 28   |
+
+
       ## Variants & Color
 
 
@@ -115,6 +130,21 @@ tabs:
 
 
       Variants
+
+
+      | Property       | Token                 | Hex      |
+
+      | ---------------| ----------------------| -------- |
+
+      | Link default   | $blue800              | \#0f67f5 |
+
+      | Link hover     | $blue900              | \#194ac8 |
+
+      | Link pressed   | $blue1000             | \#102da2 |
+
+      | Link focus     | $blue1000             | \#102da2 |
+
+      | Link disabled  | $blue800, opacity 30% | \#0f67f5 |
 parent: 95SvEwV7BznSChttFanpW
 uuid: yO-SuTjsVIBo9FkHt5v44
 nestedSlug:
