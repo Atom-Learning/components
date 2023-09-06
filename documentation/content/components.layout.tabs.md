@@ -180,7 +180,7 @@ tabs:
       | Not active tab font | $body | 400    | $md  | 1   | 16  |
 
 
-      ## Colors & Variants
+      ## Colours & Variants
 
 
       Tabs can be preselected, unselected, or disabled. One tab can be selected at a time, and if a user navigates away from a tab, a user should return to the last tab selected.
