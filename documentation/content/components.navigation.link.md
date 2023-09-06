@@ -99,7 +99,7 @@ tabs:
       ## Sizes & Typography
 
 
-      There are three size variants for the link component: small, medium, and large. It is recommended that the link size matches the type size of the text it is inline with. Link sizes should match the page's default body copy size if they are used apart from other content.
+      There are five size variants for the link component: extra small, small, medium, large, and extra large. It is recommended that the link size matches the type size of the text it is inline with. Link sizes should match the page's default body copy size if they are used apart from other content.
 
 
       ![Link sizes](/assets/images/04-link-sizes-typography.svg "Link sizes")
