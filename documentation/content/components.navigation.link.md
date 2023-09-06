@@ -123,7 +123,7 @@ tabs:
       | Link xl   | $body  | $xl  | 1.75   | 28   |
 
 
-      ## Variants & Color
+      ## Variants & colour
 
 
       ![Link variants](/assets/images/05-link-variants.svg "Link variants")
