@@ -5,7 +5,7 @@ links:
   viewSource: components/link
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       Link is a light wrapper around the HTML anchor element. It adds default
       styling and the `css` prop.
