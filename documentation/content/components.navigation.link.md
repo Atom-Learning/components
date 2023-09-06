@@ -5,7 +5,7 @@ links:
   viewSource: components/link
   showReportAnIssue: true
 tabs:
-  - title: Main
+  - title: Code
     content: >-
       Link is a light wrapper around the HTML anchor element. It adds default
       styling and the `css` prop.
@@ -41,6 +41,38 @@ tabs:
 
 
       <ComponentProps component="Link" />
+  - content: >-
+      ## Overview
+
+
+      Links allow users to navigate between different locations. They can be used as standalone (optionally with an icon) or inline within text.
+
+
+      Also known as Anchor, Text Link or Hyperlink .
+
+
+      ![01 link overview](/assets/images/01-link-usage.svg "01 link overview")
+
+
+
+
+      ## When to use
+
+
+      Link is mainly used as a navigational element and usually appear within or directly following a paragraph or sentence. Use a hyperlink when linking to another document or URL.
+
+
+      ![02 link usage examples](/assets/images/02-link-usage.svg "02 link usage examples")
+
+
+      Usage examples
+
+
+      ## Do's and Don'ts
+
+
+      <DosAndDonts items={[{"image":"/assets/images/01-link-do.svg","type":"do","description":"Match Link to the text size and font-weight of the content they are accompanying for consistency and visual balance."},{"description":"Apply multiple text styles, when using links paired with text, as this can create inconsistency.","type":"dont","image":"/assets/images/02-link-dont.svg"},{"description":"Give the link a meaningful description that clearly indicates its destination.","type":"do","image":"/assets/images/03-link-do.svg"},{"description":"Use generic phrases like \"click here\" or \"go to\" on links.","type":"dont","image":"/assets/images/04-link-dont.svg"},{"image":"/assets/images/05-link-do.svg","description":"Provide an external icon (e.g.\"new-window\" icon) when the link text needs to refer to an external domain.","type":"do"},{"description":"Overuse icons, especially when they are part of text content.","type":"dont","image":"/assets/images/06-link-dont.svg"},{"type":"do","description":"Use the linked text with the default DS colour.","image":"/assets/images/07-link-do.svg"},{"description":"Change the colour of the linked text.","type":"dont","image":"/assets/images/08-link-dont.svg"},{"image":"/assets/images/09-link-dont.svg","description":"Replace link text with URL.","type":"dont"}]} />
+    title: Usage
 parent: 95SvEwV7BznSChttFanpW
 uuid: yO-SuTjsVIBo9FkHt5v44
 nestedSlug:
