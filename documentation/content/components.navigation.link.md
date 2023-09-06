@@ -94,6 +94,27 @@ tabs:
 
 
       Bold link with icon
+
+
+      ## Sizes & Typography
+
+
+      There are three size variants for the link component: small, medium, and large. It is recommended that the link size matches the type size of the text it is inline with. Link sizes should match the page's default body copy size if they are used apart from other content.
+
+
+      ![Link sizes](/assets/images/04-link-sizes-typography.svg "Link sizes")
+
+
+      Sizes
+
+
+      ## Variants & Color
+
+
+      ![Link variants](/assets/images/05-link-variants.svg "Link variants")
+
+
+      Variants
 parent: 95SvEwV7BznSChttFanpW
 uuid: yO-SuTjsVIBo9FkHt5v44
 nestedSlug:
