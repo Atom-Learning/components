@@ -3,24 +3,34 @@ import * as React from 'react'
 
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
-import { Stack } from '../../stack'
+import { Flex } from '../../flex'
 import { useBannerContext } from '../BannerContext'
 import { BannerRegularButton } from './BannerRegularButton'
 
 const MAX_ALLOWED_CHILDREN = 2
 
 const toGap = {
-  sm: 2,
-  md: 4
+  sm: '$2',
+  md: '$4'
+}
+
+const toDirection = {
+  sm: 'column',
+  md: 'row'
 }
 
 export const BannerRegularActions: React.FC<
-  React.ComponentProps<typeof Stack>
-> = ({ children, ...props }) => {
+  React.ComponentProps<typeof Flex>
+> = ({ children, css, ...props }) => {
   const { size } = useBannerContext()
 
   const gap = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toGap[s]),
+    [size]
+  )
+
+  const direction = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toDirection[s]),
     [size]
   )
 
@@ -30,7 +40,14 @@ export const BannerRegularActions: React.FC<
   )
 
   return (
-    <Stack gap={gap} {...props}>
+    <Flex
+      css={{
+        gap,
+        flexDirection: direction,
+        ...css
+      }}
+      {...props}
+    >
       {React.Children.map(children, (child, index) => {
         // if child is undefined or null, React.isValidElement returns false and hence error is thrown.
         // This line will prevent that from happening
@@ -61,7 +78,7 @@ export const BannerRegularActions: React.FC<
           propsToInject
         )
       })}
-    </Stack>
+    </Flex>
   )
 }
 
