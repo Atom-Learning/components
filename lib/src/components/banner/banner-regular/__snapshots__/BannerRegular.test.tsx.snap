@@ -305,14 +305,6 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--colors-grey900);
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -402,30 +394,12 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
   .c-fkUJsw-jMTgOB-size-sm {
@@ -489,16 +463,14 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 {
-      margin-top: calc(var(--space-4)*-1);
-      margin-left: calc(var(--space-4)*-1);
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 > * {
-      margin-top: var(--space-4);
-      margin-left: var(--space-4);
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
@@ -597,7 +569,7 @@ exports[`BannerRegular component renders 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
@@ -931,14 +903,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--colors-grey900);
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -1058,30 +1022,12 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
   .c-fkUJsw-jMTgOB-size-sm {
@@ -1160,16 +1106,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 {
-      margin-top: calc(var(--space-4)*-1);
-      margin-left: calc(var(--space-4)*-1);
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 > * {
-      margin-top: var(--space-4);
-      margin-left: var(--space-4);
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
@@ -1283,7 +1227,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
