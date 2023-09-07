@@ -347,8 +347,12 @@ exports[`MarkdownContent component renders 1`] = `
     width: 100%;
   }
 
-  .c-bBdCwN-igZTZYS-css p:before,
-  .c-bBdCwN-igZTZYS-css p:after {
+  .c-bBdCwN-idpBzHh-css p {
+    display: inline;
+  }
+
+  .c-bBdCwN-idpBzHh-css p:before,
+  .c-bBdCwN-idpBzHh-css p:after {
     display: none;
   }
 }
@@ -473,7 +477,7 @@ exports[`MarkdownContent component renders 1`] = `
       Unordered
     </h3>
     <ul
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
     >
       <li
         class="c-PJLV"
@@ -510,7 +514,7 @@ exports[`MarkdownContent component renders 1`] = `
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
         >
           <li
             class="c-PJLV"
@@ -521,7 +525,7 @@ exports[`MarkdownContent component renders 1`] = `
               Marker character change forces new list start:
             </p>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -534,7 +538,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -547,7 +551,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -578,7 +582,7 @@ exports[`MarkdownContent component renders 1`] = `
       Ordered
     </h3>
     <ol
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-idpBzHh-css"
     >
       <li
         class="c-PJLV"

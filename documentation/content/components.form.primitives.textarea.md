@@ -127,10 +127,10 @@ tabs:
       | Description font | $body  | 400    | $md  | 1     | 16  |
 
 
-      ## Variants & Color
+      ## Variants & colour
 
 
-      Color in a textarea component refers to the visual appearance of the text and background within the input area. It involves selecting appropriate text and background colors to ensure readability, visual contrast, and alignment with the overall design aesthetics of the user interface.
+      Colour in a textarea component refers to the visual appearance of the text and background within the input area. It involves selecting appropriate text and background colors to ensure readability, visual contrast, and alignment with the overall design aesthetics of the user interface.
 
 
       ![textarea default variant](/assets/images/textarea-variant-1.svg "textarea default variant")
