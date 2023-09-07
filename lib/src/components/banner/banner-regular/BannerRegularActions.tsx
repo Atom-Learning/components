@@ -29,7 +29,7 @@ export const BannerRegularActions: React.FC<
     [size]
   )
 
-  const direction = React.useMemo(
+  const flexDirection = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toDirection[s]),
     [size]
   )
@@ -43,7 +43,7 @@ export const BannerRegularActions: React.FC<
     <Flex
       css={{
         gap,
-        flexDirection: direction,
+        flexDirection,
         ...css
       }}
       {...props}
