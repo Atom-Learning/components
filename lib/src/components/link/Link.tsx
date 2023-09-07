@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+import type { CSS } from '~/stitches'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
