@@ -10,8 +10,8 @@ import { BannerRegularButton } from './BannerRegularButton'
 const MAX_ALLOWED_CHILDREN = 2
 
 const toGap = {
-  sm: '$2',
-  md: '$4'
+  sm: 2,
+  md: 4
 }
 
 const toDirection = {
@@ -21,7 +21,7 @@ const toDirection = {
 
 export const BannerRegularActions: React.FC<
   React.ComponentProps<typeof Flex>
-> = ({ children, css, ...props }) => {
+> = ({ children, ...props }) => {
   const { size } = useBannerContext()
 
   const gap = React.useMemo(
@@ -29,7 +29,7 @@ export const BannerRegularActions: React.FC<
     [size]
   )
 
-  const flexDirection = React.useMemo(
+  const direction = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toDirection[s]),
     [size]
   )
@@ -40,14 +40,7 @@ export const BannerRegularActions: React.FC<
   )
 
   return (
-    <Flex
-      css={{
-        gap,
-        flexDirection,
-        ...css
-      }}
-      {...props}
-    >
+    <Flex gap={gap} direction={direction} {...props}>
       {React.Children.map(children, (child, index) => {
         // if child is undefined or null, React.isValidElement returns false and hence error is thrown.
         // This line will prevent that from happening

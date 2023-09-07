@@ -394,6 +394,14 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--colors-grey100);
   }
 
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
   .c-fkUJsw-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
@@ -451,6 +459,18 @@ exports[`BannerRegular component renders 1`] = `
 @media (min-width: 800px) {
     .c-bDwMAO-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
@@ -549,7 +569,7 @@ exports[`BannerRegular component renders 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-dhzjXW c-dhzjXW-icZRXpv-css"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
@@ -1002,6 +1022,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--colors-grey100);
   }
 
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
   .c-fkUJsw-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
@@ -1074,6 +1102,18 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 @media (min-width: 800px) {
     .c-bDwMAO-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
@@ -1187,7 +1227,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-dhzjXW c-dhzjXW-icZRXpv-css"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
           class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
