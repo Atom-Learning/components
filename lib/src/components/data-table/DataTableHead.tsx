@@ -16,7 +16,12 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   theme = 'light',
   ...props
 }) => {
-  const { getHeaderGroups, setIsSortable, enableRowSelection } = useDataTable()
+  const {
+    getHeaderGroups,
+    setIsSortable,
+    enableRowSelection,
+    getCanSomeRowsExpand
+  } = useDataTable()
 
   React.useEffect(() => {
     setIsSortable(sortable)
@@ -27,6 +32,9 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
+            {getCanSomeRowsExpand() && (
+              <Table.HeaderCell css={{ width: '$4' }}></Table.HeaderCell>
+            )}
             {enableRowSelection && (
               <Table.HeaderCell css={{ width: '$4' }}>
                 <DataTableSelectAllRowsCheckbox />

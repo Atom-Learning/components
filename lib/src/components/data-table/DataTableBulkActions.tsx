@@ -10,12 +10,19 @@ import { useDataTable } from './DataTableContext'
 
 interface DataTableBulkActionsProps {
   css?: CSS
-  children: [
-    React.ReactElement<React.ComponentProps<typeof BulkActionsDefaultActions>>,
-    React.ReactElement<
-      React.ComponentProps<typeof BulkActionsSelectedRowActions>
-    >
-  ]
+  children:
+    | React.ReactElement<React.ComponentProps<typeof BulkActionsDefaultActions>>
+    | React.ReactElement<
+        React.ComponentProps<typeof BulkActionsSelectedRowActions>
+      >
+    | [
+        React.ReactElement<
+          React.ComponentProps<typeof BulkActionsDefaultActions>
+        >,
+        React.ReactElement<
+          React.ComponentProps<typeof BulkActionsSelectedRowActions>
+        >
+      ]
 }
 
 interface BulkActionsSelectedRowActionsProps {
@@ -48,7 +55,7 @@ const BulkActionsDefaultActions = ({
 }): React.ReactElement | null => {
   const { rowSelection } = useDataTable()
 
-  if (Object.keys(rowSelection).length > 0) return null
+  if (Object.keys(rowSelection || {}).length > 0) return null
 
   return children
 }
@@ -60,7 +67,7 @@ const BulkActionsSelectedRowActions: React.FC<
 
   const handleDeselectAllPageRows = () => toggleAllPageRowsSelected(false)
 
-  if (Object.keys(rowSelection).length === 0) return null
+  if (Object.keys(rowSelection || {}).length === 0) return null
 
   return (
     <>
