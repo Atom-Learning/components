@@ -245,7 +245,7 @@ exports[`Pagination component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .accent-purple1 {
+  .t-foghYE {
     --colors-accent1: #FFFFFF;
     --colors-accent2: var(--colors-purple100);
     --colors-accent3: var(--colors-purple200);
@@ -259,7 +259,7 @@ exports[`Pagination component renders 1`] = `
     --colors-accent11: var(--colors-purple1000);
   }
 
-  .base-purple2 {
+  .t-eGEuHI {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: var(--colors-purple100);
@@ -311,14 +311,6 @@ exports[`Pagination component renders 1`] = `
 
   .c-bVZtAj:disabled {
     opacity: 0.3;
-  }
-
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 
   .c-fznDru {
@@ -425,30 +417,8 @@ exports[`Pagination component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
   }
 
   .c-fznDru-cVoMNQ-size-md {
@@ -500,7 +470,7 @@ exports[`Pagination component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW accent-purple1 base-purple2"
+    class="c-dhzjXW t-foghYE t-eGEuHI"
   >
     <button
       aria-label="Previous page"
@@ -520,7 +490,7 @@ exports[`Pagination component renders 1`] = `
       </svg>
     </button>
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-crcQiH-gap-1"
+      class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1"
     >
       <button
         aria-current="page"

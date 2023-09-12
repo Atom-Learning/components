@@ -4,7 +4,7 @@ title: Pagination
 tabs:
   - title: Code
     content: >-
-      
+
       NOTE: Currently, only the `md` variant has been implemented.
 
 
@@ -17,7 +17,7 @@ tabs:
       The root `Pagination` component allows the user to pass in a `pagesCount` prop, it is a number that tells the component how many pagination items to render. It also takes in a `labels`  prop which is an object which has this shape  `{ popoverTiggerLabel: string, nextPageButtonLabel: string, previousPageButtonLabel: string }`, this prop is responsible for adding labels to the next/previous buttons and the popover trigger, if this prop is not added the default labels are  "Next page" for the next page button, "Previous page" for the previous page button and "Open pagination popover" for the popover trigger.
 
 
-      It also takes in a `visibleElementsCount` prop it can take a value 6 or 8, which dictates how many elements in the pagination we wish to render including the navigation buttons, by default, it is set to 6. This component can also takes in an `onSelectedPageChange` prop which is a function that can allow the parent component to have access to the selected page set on the `pagination` component. There is also an `onItemHover` prop which is a function that take a page number as argument and is triggered when a pagination item has been hovered over, we advise you debounce you call back function to prevent function calls.
+      It also takes in a `visibleElementsCount` prop it can take a value 6 or 8, which dictates how many elements in the pagination we wish to render, inclusive of the next, previous, and popup buttons. For example, with `visibleElementsCount` set to `6`, it will display a previous page button, a next page button, a popup button, and 3 more page buttons. With `visibleElementsCount` set to `8` it may display up to 5 page buttons. By default, it is set to 6. This component can also takes in an `onSelectedPageChange` prop which is a function that can allow the parent component to have access to the selected page set on the `pagination` component. There is also an `onItemHover` prop which is a function that take a page number as argument and is triggered when a pagination item has been hovered over, we advise you debounce you call back function to prevent function calls.
 
 
       It can also take in a `selectedPage` prop which allows the parent component to pass in a numerical value indicating which page the parent component is currently showing, if the `selectedPage` prop is not passed in, the `Pagination` component as an internal state to keep track of the current page, by default this state is set to the first page.

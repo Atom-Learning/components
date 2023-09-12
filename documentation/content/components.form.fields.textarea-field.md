@@ -87,6 +87,158 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/textarea-1-do.svg","type":"do","description":"Use textarea as an affordance to input longer-form text content."},{"description":"Use placeholder as a replacement for label, as this creates accessibility and usability issues.","type":"dont","image":"/assets/images/textarea-2-dont.svg"},{"description":"Set the min-height of the textarea row to ensure that the text entered is visible without scrolling.","type":"do","image":"/assets/images/textarea-1-do.svg"},{"description":"Change the textarea's min-height to a smaller value.","type":"dont","image":"/assets/images/textarea-3-dont.svg"},{"image":"/assets/images/textarea-4-do.svg","description":"Be specific to help users understand the context of their input.","type":"do"},{"description":"Use vague labels, like \"Enter text here\". ","type":"dont","image":"/assets/images/textarea-5-dont.svg"},{"type":"do","image":"/assets/images/textarea-6-do.svg","description":"If the field is required use * to highlight it."},{"description":"Add a description if you are concerned that textarea is not clear enough to the user.","type":"do","image":"/assets/images/textarea-7-do.svg"}]} />
+  - title: Visual
+    content: >-
+      ## Structure
+
+
+      The text represents a multi-line plain text, useful when you want to allow users to enter a sizeable amount of free-form text, for example, a comment on a review or feedback form.
+
+
+      ![textarea structure](/assets/images/textarea-structure.svg "textarea structure")
+
+
+      ## Anatomy
+
+
+      ![textarea anatomy](/assets/images/textarea-01-anatomy.svg "textarea anatomy")
+
+
+      | Property      | Token    | px  | rem  |
+
+      | ------------- | -------- | --- | ---- |
+
+      | Border radius | radii-0  | 4   | 0.25 |
+
+      | Padding top   | space $2 | 8   | 0.5  |
+
+      | Padding left  | space $3 | 12  | 0.75 |
+
+      | Margin        | space $3 | 12  | 0.75 |
+
+
+      ## Typography
+
+
+      Typography refers to the visual presentation and arrangement of text within a textarea component. It involves decisions about font styles, sizes, line spacing, and other text-related properties that ensure readability and a harmonious visual appearance of the text within the input area.
+
+
+      ![textarea typography](/assets/images/textarea-typography.svg "textarea typography")
+
+
+      | Element          | Family | Weight | Size | Rem   | px  |
+
+      | ---------------- | ------ | ------ | ---- | ----- | --- |
+
+      | Label font       | $body  | 600    | $sm  | 0.875 | 14  |
+
+      | Description font | $body  | 400    | $sm  | 0.875 | 14  |
+
+      | Description font | $body  | 400    | $md  | 1     | 16  |
+
+
+      ## Variants & colour
+
+
+      Colour in a textarea component refers to the visual appearance of the text and background within the input area. It involves selecting appropriate text and background colors to ensure readability, visual contrast, and alignment with the overall design aesthetics of the user interface.
+
+
+      ![textarea default variant](/assets/images/textarea-variant-1.svg "textarea default variant")
+
+      Default
+
+
+
+      | Property               | Token     | Hex      |
+
+      | ---------------------- | --------- | -------- |
+
+      | Bg color               | $white    | \#ffffff |
+
+      | Border-color           | $tonal400 | \#545454 |
+
+      | Label font-color       | $tonal500 | \#333333 |
+
+      | Description font-color | $tonal300 | \#757575 |
+
+      | Text font-color        | $tonal600 | \#1F1F1F |
+
+
+      ![textarea placeholder variant](/assets/images/textarea-variant-2.svg "textarea placeholder variant")
+
+      Placeholder
+
+
+
+      | Property               | Token     | Hex      |
+
+      | ---------------------- | --------- | -------- |
+
+      | Bg color               | $white    | \#ffffff |
+
+      | Border-color           | $tonal400 | \#545454 |
+
+      | Label font-color       | $tonal500 | \#333333 |
+
+      | Description font-color | $tonal300 | \#757575 |
+
+      | Placeholder font-color | $tonal300 | \#757575 |
+
+
+      ![textarea focus variant](/assets/images/textarea-variant-3.svg "textarea focus variant")
+
+      Focus
+
+
+      | Property         | Token     | Hex      |
+
+      | ---------------- | --------- | -------- |
+
+      | Bg color         | $white    | \#ffffff |
+
+      | Border-color     | $primary  | \#0F67F5 |
+
+      | Label font-color | $tonal500 | \#333333 |
+
+      | Text font-color  | $tonal600 | \#1F1F1F |
+
+
+      ![textarea disabled variant](/assets/images/textarea-variant-4.svg "textarea disabled variant")
+
+      Disabled
+
+
+      | Property         | Token     | Hex      |
+
+      | ---------------- | --------- | -------- |
+
+      | Bg color         | $tonal100 | \#EEEEEE |
+
+      | Border-color     | $tonal400 | \#545454 |
+
+      | Label font-color | $tonal500 | \#333333 |
+
+      | Text font-color  | $tonal600 | \#1F1F1F |
+
+
+      ![textarea error variant](/assets/images/textarea-variant-5.svg "textarea error variant")
+
+      Error
+
+
+      | Property                 | Token     | Hex      |
+
+      | ------------------------ | --------- | -------- |
+
+      | Bg color                 | $tonal100 | \#EEEEEE |
+
+      | Border-color             | $danger   | \#EE0505 |
+
+      | Label font-color         | $tonal500 | \#333333 |
+
+      | Text font-color          | $danger   | \#EE0505 |
+
+      | Error message font-color | $danger   | \#EE0505 |
 parent: ru0Ovr_U82kdQX8m3WahL
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:

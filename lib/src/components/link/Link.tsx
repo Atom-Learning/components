@@ -33,7 +33,10 @@ export const StyledLink = styled('a', {
         content: 'none'
       }
     },
-  variants: textVariants
+  variants: textVariants,
+  defaultVariants: {
+    size: 'md'
+  }
 })
 
 type LinkProps = Override<
@@ -44,18 +47,22 @@ type LinkProps = Override<
 >
 
 export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', href, ...props }, ref) => (
-    <StyledLink
-      {...(isExternalLink(href)
-        ? { target: '_blank', rel: 'noopener noreferrer' }
-        : {})}
-      {...(!href && { as: 'button', noCapsize: true })}
-      size={size}
-      href={href}
-      {...props}
-      ref={ref}
-    />
-  )
+  ({ as, href, ...rest }, ref) => {
+    const externalLinkProps = isExternalLink(href)
+      ? { target: '_blank', rel: 'noopener noreferrer' }
+      : {}
+
+    return (
+      <StyledLink
+        as={as || (!href ? 'button' : undefined)}
+        noCapsize={!href ? true : undefined}
+        href={href}
+        {...rest}
+        {...externalLinkProps}
+        ref={ref}
+      />
+    )
+  }
 ) as React.FC<LinkProps>
 
 Link.displayName = 'Link'

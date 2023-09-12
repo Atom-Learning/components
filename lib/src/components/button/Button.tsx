@@ -104,6 +104,7 @@ export const StyledButton = styled('button', {
         lineHeight: 1.5,
         height: '$5',
         px: '$5',
+        gap: '$3',
         [`& ${StyledIcon}`]: { size: 22 }
       }
     },
@@ -192,31 +193,41 @@ export const StyledButton = styled('button', {
         darken(theme.colors.primaryDark.value, 0.15)
       )
     }
-  ]
+  ],
+
+  defaultVariants: {
+    appearance: 'solid',
+    size: 'md',
+    theme: 'primary'
+  }
 })
 
-const WithLoader = ({ isLoading, children }) => {
-  if (typeof isLoading !== 'boolean') {
-    return children
+const LoaderContentsWrapper = styled('span', {
+  alignItems: 'center',
+  display: 'flex',
+  justifyContent: 'center',
+  visibility: 'hidden',
+  variants: {
+    size: {
+      sm: { gap: '$2' },
+      md: { gap: '$3' },
+      lg: { gap: '$3' }
+    }
+  },
+  defaultVariants: {
+    size: 'md'
   }
-  return (
-    <>
-      <Loader
-        css={{
-          opacity: isLoading ? 1 : 0,
-          position: 'absolute',
-          transition: 'opacity 150ms'
-        }}
-      />
-      <Box
-        as="span"
-        css={isLoading ? { opacity: 0, transition: 'opacity 150ms' } : {}}
-      >
-        {children}
-      </Box>
-    </>
-  )
-}
+})
+
+const WithLoader = ({
+  size,
+  children
+}: React.ComponentProps<typeof LoaderContentsWrapper>) => (
+  <>
+    <Loader css={{ position: 'absolute' }} />
+    <LoaderContentsWrapper size={size}>{children}</LoaderContentsWrapper>
+  </>
+)
 
 type ButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
@@ -229,46 +240,27 @@ type ButtonProps = Override<
 >
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      children,
-      isLoading,
-      onClick,
-      href,
-      appearance = 'solid',
-      size = 'md',
-      theme = 'primary',
-      type = 'button',
-      ...rest
-    },
-    ref
-  ) => {
-    const linkSpecificProps = href
-      ? {
-          as: 'a',
-          href,
-          ...(isExternalLink(href)
-            ? { target: '_blank', rel: 'noopener noreferrer' }
-            : {})
-        }
+  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
+    const externalLinkProps = isExternalLink(href)
+      ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
-    const buttonSpecificProps = !href ? { type } : {}
 
-    // Note: button is not disabled when loading for accessibility purposes.
-    // Instead the click action is not fired and the button looks faded
     return (
       <StyledButton
-        isLoading={isLoading || false}
+        as={as || (href ? 'a' : undefined)}
+        href={href}
+        isLoading={isLoading}
         onClick={!isLoading ? onClick : undefined}
-        appearance={appearance}
-        size={size}
-        theme={theme}
+        type={!href ? 'button' : undefined}
         {...rest}
-        {...linkSpecificProps}
-        {...buttonSpecificProps}
+        {...externalLinkProps}
         ref={ref}
       >
-        <WithLoader isLoading={isLoading}>{children}</WithLoader>
+        {isLoading ? (
+          <WithLoader size={rest.size}>{children}</WithLoader>
+        ) : (
+          children
+        )}
       </StyledButton>
     )
   }
