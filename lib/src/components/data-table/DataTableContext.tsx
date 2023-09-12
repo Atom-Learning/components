@@ -1,7 +1,7 @@
 import { v4 as uuid } from '@lukeed/uuid'
 import type {
-  PaginationState,
   ExpandedState,
+  PaginationState,
   Row,
   RowSelectionState
 } from '@tanstack/react-table'
