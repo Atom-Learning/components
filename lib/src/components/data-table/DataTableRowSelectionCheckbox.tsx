@@ -6,13 +6,15 @@ import { Label } from '../label'
 import { useDataTable } from './DataTableContext'
 
 interface DataTableRowSelectionCheckboxProps {
-  checked: boolean
+  checked: boolean | 'indeterminate'
   onCheckedChange: (value: boolean) => void
   rowId: string
   label?: string
+  rowDepth: number
 }
 
 export const DataTableRowSelectionCheckbox = ({
+  rowDepth,
   rowId,
   checked,
   onCheckedChange,
@@ -26,6 +28,7 @@ export const DataTableRowSelectionCheckbox = ({
         <Label htmlFor={`${tableId}_row_${rowId}_selection`}>{label}</Label>
       </VisuallyHidden.Root>
       <Checkbox
+        css={{ ml: rowDepth ? `$${rowDepth * 2}` : 0 }}
         checked={checked}
         onCheckedChange={onCheckedChange}
         name={`${tableId}_row_${rowId}_selection`}

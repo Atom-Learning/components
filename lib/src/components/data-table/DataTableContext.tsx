@@ -1,11 +1,13 @@
 import { v4 as uuid } from '@lukeed/uuid'
 import type {
   PaginationState,
+  ExpandedState,
   Row,
   RowSelectionState
 } from '@tanstack/react-table'
 import {
   getCoreRowModel,
+  getExpandedRowModel,
   getFilteredRowModel,
   getPaginationRowModel,
   getSortedRowModel,
@@ -59,6 +61,7 @@ export const DataTableProvider = ({
   })
 
   const [rowSelection, setRowSelection] = React.useState<RowSelectionState>({})
+  const [expanded, setExpanded] = React.useState<ExpandedState>({})
 
   const { isPaginated, applyPagination, paginationState, setPaginationState } =
     usePagination(initialState?.pagination)
@@ -125,19 +128,23 @@ export const DataTableProvider = ({
       sorting,
       globalFilter,
       pagination: paginationState,
-      rowSelection
+      rowSelection,
+      expanded
     },
     manualPagination: getAsyncData && isPaginated,
     manualSorting: getAsyncData && isPaginated,
     enableSorting: asyncDataState !== AsyncDataState.PENDING,
     enableGlobalFilter: !getAsyncData,
     enableRowSelection,
+    onExpandedChange: setExpanded,
+    getSubRows: (row) => row.subRows,
     onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
       isSortable || sorting.length ? getSortedRowModel() : undefined,
     getFilteredRowModel: getFilteredRowModel(),
+    getExpandedRowModel: getExpandedRowModel(),
     onPaginationChange: isPaginated ? setPaginationState : undefined,
     onSortingChange: setSorting,
     onGlobalFilterChange: setGlobalFilter,
