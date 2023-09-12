@@ -786,6 +786,11 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin-left: 0;
   }
 
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
+  }
+
   .c-lhbScT-ijkNVrQ-css {
     margin-left: var(--space-2);
   }
@@ -3989,6 +3994,11 @@ exports[`DataTable server-side renders 1`] = `
     margin-left: 0;
   }
 
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
+  }
+
   .c-lhbScT-ijkNVrQ-css {
     margin-left: var(--space-2);
   }
@@ -5091,6 +5101,11 @@ exports[`DataTable sticky columns renders 1`] = `
 
   .c-lhbScT-ibVyrVm-css {
     margin-left: 0;
+  }
+
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
   }
 
   .c-lhbScT-ijkNVrQ-css {

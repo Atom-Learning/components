@@ -42,7 +42,7 @@ export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
       {getCanSomeRowsExpand() && (
         <Table.Cell
           data-testid={`expand-icon-${row.id}`}
-          css={{ width: '$4', cursor: 'pointer' }}
+          css={{ width: '$4', cursor: row.getCanExpand() ? 'pointer' : 'auto' }}
           onClick={toggleExpandHandler}
         >
           {row.getCanExpand() && (
