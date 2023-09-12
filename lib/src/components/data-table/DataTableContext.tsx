@@ -137,7 +137,7 @@ export const DataTableProvider = ({
     enableGlobalFilter: !getAsyncData,
     enableRowSelection,
     onExpandedChange: setExpanded,
-    getSubRows: (row) => row.subRows,
+    getSubRows: (row: Row<unknown>) => row.subRows,
     onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
