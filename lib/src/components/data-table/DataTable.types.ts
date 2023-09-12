@@ -48,6 +48,7 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
   rowSelection: RowSelectionState
+  hasStickyHeader: boolean
   data: TAsyncDataResult
   columns: any
   tableId: string

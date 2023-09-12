@@ -20,7 +20,8 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
     getHeaderGroups,
     setIsSortable,
     enableRowSelection,
-    getCanSomeRowsExpand
+    getCanSomeRowsExpand,
+    hasStickyHeader
   } = useDataTable()
 
   React.useEffect(() => {
@@ -28,7 +29,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   }, [sortable, setIsSortable])
 
   return (
-    <Table.Header theme={theme} {...props}>
+    <Table.Header theme={theme} hasStickyHeader={hasStickyHeader} {...props}>
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
