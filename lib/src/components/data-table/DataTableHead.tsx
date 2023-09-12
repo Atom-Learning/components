@@ -33,7 +33,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
         return (
           <Table.Row key={headerGroup.id}>
             {getCanSomeRowsExpand() && (
-              <Table.HeaderCell css={{ width: '$4' }}></Table.HeaderCell>
+              <Table.HeaderCell css={{ width: '$4' }} />
             )}
             {enableRowSelection && (
               <Table.HeaderCell css={{ width: '$4' }}>
