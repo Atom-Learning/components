@@ -16,6 +16,7 @@ type PasswordFieldProps = React.ComponentProps<typeof PasswordInput> &
 
 export const PasswordField: React.FC<PasswordFieldProps> = ({
   css = {},
+  hideLabel,
   label = 'Password',
   name,
   prompt = undefined,
@@ -34,6 +35,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
