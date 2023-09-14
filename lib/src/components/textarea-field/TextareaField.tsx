@@ -12,6 +12,7 @@ type TextareaFieldProps = TextareaProps & FieldElementWrapperProps
 
 export const TextareaField: React.FC<TextareaFieldProps> = ({
   css = undefined,
+  hideLabel,
   label,
   name,
   validation,
@@ -30,6 +31,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}

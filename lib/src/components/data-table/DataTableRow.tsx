@@ -1,14 +1,15 @@
+import { ChevronDown, ChevronRight } from '@atom-learning/icons'
 import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
-import { ChevronRight, ChevronDown } from '@atom-learning/icons'
+
 import { styled } from '~/stitches'
 
+import { Box } from '../box'
+import { Icon } from '../icon'
 import { Table } from '../table'
 import { useDataTable } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
 import { DataTableRowSelectionCheckbox } from './DataTableRowSelectionCheckbox'
-import { Icon } from '../icon'
-import { Box } from '../box'
 
 export type DataTableRowProps = React.ComponentProps<typeof Table.Row> & {
   row: Row<Record<string, unknown>>

@@ -10,6 +10,7 @@ import { NumberInput } from '../number-input/NumberInput'
 
 export interface NumberInputFieldProps extends NumberInputProps {
   css?: CSS
+  hideLabel?: boolean
   description?: string
   label: string
   name: string
@@ -20,6 +21,7 @@ export interface NumberInputFieldProps extends NumberInputProps {
 export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   css,
   defaultValue = 0,
+  hideLabel,
   value,
   prompt,
   description,
@@ -51,6 +53,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}
