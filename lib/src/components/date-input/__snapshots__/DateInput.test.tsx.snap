@@ -565,6 +565,7 @@ exports[`DateInput component renders lg size 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
+      aria-label="test"
       class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
       name="date"
       type="text"
