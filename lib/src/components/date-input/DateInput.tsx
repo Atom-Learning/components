@@ -81,6 +81,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
 
         const mirrorChangeToInputElement = () => {
           if (!inputElRef) return
+
+          // Call the `set` function on the input value directly to mirror the change.
+          // Props to: https://stackoverflow.com/a/46012210
           const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
             window.HTMLInputElement.prototype,
             'value'
