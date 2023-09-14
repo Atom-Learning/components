@@ -1,12 +1,11 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import dayjs from 'dayjs'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Tooltip } from '../tooltip'
 import { DateInput } from '.'
-import dayjs from 'dayjs'
-import customParseFormat from 'dayjs/plugin/customParseFormat'
-
 import { DEFAULT_DATE_FORMAT } from './constants'
 
 dayjs.extend(customParseFormat)
