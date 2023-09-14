@@ -4,38 +4,34 @@ import * as React from 'react'
 
 import { Tooltip } from '../tooltip'
 import { DateInput } from '.'
+import dayjs from 'dayjs'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
 
-const Wrapper = ({ children }) => (
-  <Tooltip.Provider>{children}</Tooltip.Provider>
+import { DEFAULT_DATE_FORMAT } from './constants'
+
+dayjs.extend(customParseFormat)
+
+const DateInputImplementation = (props) => (
+  <Tooltip.Provider>
+    <DateInput aria-label="test" {...props} />
+  </Tooltip.Provider>
 )
 
 describe('DateInput component', () => {
   it('renders', async () => {
-    const { container } = render(
-      <Wrapper>
-        <DateInput aria-label="test" />
-      </Wrapper>
-    )
+    const { container } = render(<DateInputImplementation />)
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(
-      <Wrapper>
-        <DateInput aria-label="test" />
-      </Wrapper>
-    )
+    const { container } = render(<DateInputImplementation />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
 
   it('opens date picker when clicked', async () => {
-    render(
-      <Wrapper>
-        <DateInput aria-label="test" />
-      </Wrapper>
-    )
+    render(<DateInputImplementation />)
 
     const button = await screen.findByRole('button')
     fireEvent.click(button)
@@ -46,9 +42,10 @@ describe('DateInput component', () => {
   it('allows an external change handler to be passed to the component', async () => {
     const changeSpy = jest.fn()
     render(
-      <Wrapper>
-        <DateInput aria-label="test" onChange={changeSpy} />
-      </Wrapper>
+      <DateInputImplementation
+        onChange={changeSpy}
+        initialDate={dayjs('14/09/2023', DEFAULT_DATE_FORMAT)}
+      />
     )
 
     const button = await screen.findByRole('button')
@@ -56,15 +53,15 @@ describe('DateInput component', () => {
 
     expect(await screen.findByRole('dialog')).toBeVisible()
     fireEvent.click(screen.getByText('15'))
-    await waitFor(() => expect(changeSpy).toHaveBeenCalled())
+    await waitFor(() =>
+      expect(changeSpy).toHaveBeenCalledWith(
+        dayjs('15/09/2023', DEFAULT_DATE_FORMAT).toDate()
+      )
+    )
   })
 
   it('renders lg size', async () => {
-    const { container } = render(
-      <Wrapper>
-        <DateInput size="lg" />
-      </Wrapper>
-    )
+    const { container } = render(<DateInputImplementation size="lg" />)
 
     expect(container).toMatchSnapshot()
   })

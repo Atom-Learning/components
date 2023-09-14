@@ -4,6 +4,7 @@ import * as React from 'react'
 
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 import { getFieldIconSize } from '~/utilities'
+import { useCallbackRefState } from '~/utilities/hooks/useCallbackRef'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Box } from '../box/Box'
@@ -12,8 +13,11 @@ import { DEFAULT_LABELS } from '../calendar/constants'
 import { Icon } from '../icon/Icon'
 import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
+
 import { DEFAULT_DATE_FORMAT } from './constants'
-import { useDate } from './use-date'
+import dayjs from 'dayjs'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
+dayjs.extend(customParseFormat)
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
   CalendarTranslationProps & {
@@ -24,6 +28,9 @@ export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
     revalidate?: () => Promise<boolean>
     onChange?: (value?: Date) => void
   }
+
+const formatDateToString = (date?: Date, dateFormat = DEFAULT_DATE_FORMAT) =>
+  date ? dayjs(date).format(dateFormat) : ''
 
 export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
   (
@@ -44,7 +51,51 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
     },
     ref
   ) => {
-    const { date, dateString, setDate } = useDate(initialDate, dateFormat)
+    const [date, setDate] = React.useState(
+      initialDate ? dayjs(initialDate).toDate() : undefined
+    )
+
+    const [inputElRef, setInputElRef] = useCallbackRefState()
+    React.useImperativeHandle(ref, () => inputElRef as HTMLInputElement)
+
+    const dateString = formatDateToString(date, dateFormat)
+
+    const handleInputChange = React.useCallback(
+      (event) => {
+        const newDateString = event.target.value
+        const parsedInputDate = dayjs(newDateString, dateFormat)
+        const newDate = parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined
+        setDate(newDate)
+        onChange?.(newDate)
+      },
+      [dateFormat, onChange]
+    )
+
+    const handleCalendarChange = React.useCallback(
+      (newDate) => {
+        setDate(newDate)
+
+        const mirrorChangeToInputElement = () => {
+          if (!inputElRef) return
+
+          // Call the `set` function on the input value directly to mirror the change.
+          // Props to: https://stackoverflow.com/a/46012210
+          const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+            window.HTMLInputElement.prototype,
+            'value'
+          )?.set
+          nativeInputValueSetter?.call(
+            inputElRef,
+            formatDateToString(newDate, dateFormat)
+          )
+          const event = new Event('input', { bubbles: true })
+          inputElRef.dispatchEvent(event)
+        }
+        mirrorChangeToInputElement()
+      },
+      [dateFormat, inputElRef]
+    )
+
     const updatedLabels = {
       ...DEFAULT_LABELS,
       ...labels
@@ -57,10 +108,6 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
 
     const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
 
-    React.useEffect(() => {
-      onChange?.(date)
-    }, [date, onChange])
-
     return (
       <Box css={{ position: 'relative', height: 'max-content' }}>
         <Input
@@ -68,9 +115,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
           disabled={disabled}
           size={size}
           {...remainingProps}
-          onChange={(event) => setDate(event.target.value, true)}
-          value={dateString}
-          ref={ref}
+          onChange={handleInputChange}
+          ref={setInputElRef}
+          defaultValue={dateString}
         />
         <Popover modal open={calendarOpen} onOpenChange={setCalendarOpen}>
           <Popover.Trigger asChild>
@@ -110,11 +157,11 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
                 selected={date}
                 onDateSelected={async (date) => {
                   setCalendarOpen(false)
-                  await setDate(date.date, false)
+                  await handleCalendarChange(date.date)
                   if (revalidate) revalidate()
                 }}
                 setYear={async (date) => {
-                  await setDate(date, false)
+                  await handleCalendarChange(date)
                   if (revalidate) revalidate()
                 }}
                 minDate={minDate}
