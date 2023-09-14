@@ -60,19 +60,15 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
 
     const dateString = formatDateToString(date, dateFormat)
 
-    React.useEffect(() => {
-      onChange?.(date)
-    }, [date, onChange])
-
     const handleInputChange = React.useCallback(
       (event) => {
         const newDateString = event.target.value
         const parsedInputDate = dayjs(newDateString, dateFormat)
-        setDate(
-          parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined
-        )
+        const newDate = parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined
+        setDate(newDate)
+        onChange?.(newDate)
       },
-      [dateFormat]
+      [dateFormat, onChange]
     )
 
     const handleCalendarChange = React.useCallback(
