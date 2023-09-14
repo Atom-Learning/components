@@ -1,4 +1,6 @@
 import { CalendarEvent } from '@atom-learning/icons'
+import dayjs from 'dayjs'
+import customParseFormat from 'dayjs/plugin/customParseFormat'
 import type { Props as DayzedInterface } from 'dayzed'
 import * as React from 'react'
 
@@ -13,10 +15,7 @@ import { DEFAULT_LABELS } from '../calendar/constants'
 import { Icon } from '../icon/Icon'
 import { Input } from '../input/Input'
 import { Popover } from '../popover/Popover'
-
 import { DEFAULT_DATE_FORMAT } from './constants'
-import dayjs from 'dayjs'
-import customParseFormat from 'dayjs/plugin/customParseFormat'
 dayjs.extend(customParseFormat)
 
 export type DateInputProps = Omit<DayzedInterface, 'onDateSelected'> &
@@ -64,7 +63,9 @@ export const DateInput = React.forwardRef<HTMLInputElement, DateInputProps>(
       (event) => {
         const newDateString = event.target.value
         const parsedInputDate = dayjs(newDateString, dateFormat)
-        const newDate = parsedInputDate.isValid() ? parsedInputDate.toDate() : undefined
+        const newDate = parsedInputDate.isValid()
+          ? parsedInputDate.toDate()
+          : undefined
         setDate(newDate)
         onChange?.(newDate)
       },
