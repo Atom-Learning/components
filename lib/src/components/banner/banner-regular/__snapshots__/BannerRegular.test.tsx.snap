@@ -267,9 +267,8 @@ exports[`BannerRegular component renders 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-llpMEE {
     position: relative;
-    width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
@@ -343,9 +342,13 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-llpMEE-gsNHYh-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+  }
+
+  .c-llpMEE-fGHEql-fullWidth-true {
+    width: 100%;
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -552,7 +555,7 @@ exports[`BannerRegular component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-llpMEE c-llpMEE-gsNHYh-emphasis-highContrast c-llpMEE-fGHEql-fullWidth-true t-grLKLB"
     role="banner"
   >
     <div
@@ -865,9 +868,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-llpMEE {
     position: relative;
-    width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
@@ -971,9 +973,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-llpMEE-gsNHYh-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+  }
+
+  .c-llpMEE-fGHEql-fullWidth-true {
+    width: 100%;
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -1210,7 +1216,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-llpMEE c-llpMEE-gsNHYh-emphasis-highContrast c-llpMEE-fGHEql-fullWidth-true t-grLKLB"
     role="banner"
   >
     <div
