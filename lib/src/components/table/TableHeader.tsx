@@ -30,7 +30,7 @@ const StyledTableHeader = styled('thead', {
         }
       }
     },
-    hasStickyHeader: {
+    isSticky: {
       true: {
         position: 'sticky',
         top: 0,
@@ -44,16 +44,10 @@ type TableHeaderProps = React.ComponentProps<typeof StyledTableHeader>
 
 export const TableHeader: React.FC<TableHeaderProps> = ({
   theme = 'primaryDark',
-  hasStickyHeader = false,
+  isSticky = false,
   ...rest
 }: TableHeaderProps) => {
-  return (
-    <StyledTableHeader
-      theme={theme}
-      hasStickyHeader={hasStickyHeader}
-      {...rest}
-    />
-  )
+  return <StyledTableHeader theme={theme} isSticky={isSticky} {...rest} />
 }
 
 TableHeader.displayName = 'TableHeader'
