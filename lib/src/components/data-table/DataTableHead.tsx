@@ -1,9 +1,10 @@
 import * as React from 'react'
 
+import { CSS } from '~/stitches'
+
 import { Table } from '../table'
 import { DataTableSelectAllRowsCheckbox } from './DataTableSelectAllRowsCheckbox'
 import { DataTable, useDataTable } from './index'
-import { CSS } from '~/stitches'
 
 type DataTableHeadProps = Omit<
   React.ComponentProps<typeof Table.Header>,
