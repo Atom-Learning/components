@@ -39,7 +39,6 @@ type DataTableProviderProps = {
   children: React.ReactNode
   initialState?: InitialState
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
-  hasStickyHeader?: boolean
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -52,7 +51,6 @@ export const DataTableProvider = ({
   defaultSort,
   initialState = undefined,
   enableRowSelection,
-  hasStickyHeader = false,
   children
 }: DataTableProviderProps): JSX.Element => {
   const tableId = React.useRef(uuid())
@@ -180,7 +178,6 @@ export const DataTableProvider = ({
       asyncDataState,
       runAsyncData,
       enableRowSelection,
-      hasStickyHeader,
       rowSelection,
       tableId: tableId.current
     }
@@ -190,8 +187,7 @@ export const DataTableProvider = ({
     getTotalRows,
     isSortable,
     enableRowSelection,
-    tableId,
-    hasStickyHeader
+    tableId
   ])
 
   return (
