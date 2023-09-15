@@ -11,14 +11,14 @@ type DataTableHeadProps = Omit<
   'children'
 > & {
   sortable?: boolean
-  hasStickyHeader?: boolean
+  isSticky?: boolean
   headerCss?: CSS
 }
 
 export const DataTableHead: React.FC<DataTableHeadProps> = ({
   sortable = true,
   theme = 'light',
-  hasStickyHeader = false,
+  isSticky = false,
   ...props
 }) => {
   const {
@@ -33,7 +33,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   }, [sortable, setIsSortable])
 
   return (
-    <Table.Header theme={theme} hasStickyHeader={hasStickyHeader} {...props}>
+    <Table.Header theme={theme} isSticky={isSticky} {...props}>
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>
