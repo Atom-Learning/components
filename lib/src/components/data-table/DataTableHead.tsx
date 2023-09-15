@@ -3,17 +3,21 @@ import * as React from 'react'
 import { Table } from '../table'
 import { DataTableSelectAllRowsCheckbox } from './DataTableSelectAllRowsCheckbox'
 import { DataTable, useDataTable } from './index'
+import { CSS } from '~/stitches'
 
 type DataTableHeadProps = Omit<
   React.ComponentProps<typeof Table.Header>,
   'children'
 > & {
   sortable?: boolean
+  hasStickyHeader?: boolean
+  headerCss?: CSS
 }
 
 export const DataTableHead: React.FC<DataTableHeadProps> = ({
   sortable = true,
   theme = 'light',
+  hasStickyHeader = false,
   ...props
 }) => {
   const {
@@ -28,7 +32,7 @@ export const DataTableHead: React.FC<DataTableHeadProps> = ({
   }, [sortable, setIsSortable])
 
   return (
-    <Table.Header theme={theme} {...props}>
+    <Table.Header theme={theme} hasStickyHeader={hasStickyHeader} {...props}>
       {getHeaderGroups().map((headerGroup) => {
         return (
           <Table.Row key={headerGroup.id}>

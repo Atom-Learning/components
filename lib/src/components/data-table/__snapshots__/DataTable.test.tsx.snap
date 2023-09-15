@@ -827,29 +827,27 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     transition: opacity 250ms linear 150ms;
   }
 
-  .c-PJLV-iiXkAWq-css {
-    overflow: auto;
+  .c-PJLV-iixGFrr-css {
     max-width: 100%;
   }
 
-  .c-PJLV-iiXkAWq-css td {
+  .c-PJLV-iixGFrr-css td {
     background: inherit;
   }
 
-  .c-PJLV-igbAmsf-css {
-    overflow: auto;
+  .c-PJLV-ieWFZoG-css {
     max-width: 100%;
   }
 
-  .c-PJLV-igbAmsf-css td:nth-of-type(1),
-  .c-PJLV-igbAmsf-css th:nth-of-type(1) {
+  .c-PJLV-ieWFZoG-css td:nth-of-type(1),
+  .c-PJLV-ieWFZoG-css th:nth-of-type(1) {
     position: sticky;
     left: 0px;
     min-width: 0px;
     z-index: 2;
   }
 
-  .c-PJLV-igbAmsf-css td {
+  .c-PJLV-ieWFZoG-css td {
     background: inherit;
   }
 }
@@ -5144,36 +5142,34 @@ exports[`DataTable sticky columns renders 1`] = `
     transition: opacity 250ms linear 150ms;
   }
 
-  .c-PJLV-iiXkAWq-css {
-    overflow: auto;
+  .c-PJLV-iixGFrr-css {
     max-width: 100%;
   }
 
-  .c-PJLV-iiXkAWq-css td {
+  .c-PJLV-iixGFrr-css td {
     background: inherit;
   }
 
-  .c-PJLV-igbAmsf-css {
-    overflow: auto;
+  .c-PJLV-ieWFZoG-css {
     max-width: 100%;
   }
 
-  .c-PJLV-igbAmsf-css td:nth-of-type(1),
-  .c-PJLV-igbAmsf-css th:nth-of-type(1) {
+  .c-PJLV-ieWFZoG-css td:nth-of-type(1),
+  .c-PJLV-ieWFZoG-css th:nth-of-type(1) {
     position: sticky;
     left: 0px;
     min-width: 0px;
     z-index: 2;
   }
 
-  .c-PJLV-igbAmsf-css td {
+  .c-PJLV-ieWFZoG-css td {
     background: inherit;
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-igbAmsf-css"
+    class="c-PJLV c-PJLV-ieWFZoG-css"
     role="scrollbar"
   >
     <table
