@@ -12,6 +12,7 @@ type SearchFieldProps = SearchInputProps & FieldElementWrapperProps
 
 export const SearchField: React.FC<SearchFieldProps> = ({
   css,
+  hideLabel,
   label,
   name,
   validation,
@@ -29,6 +30,7 @@ export const SearchField: React.FC<SearchFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}

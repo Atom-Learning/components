@@ -11,9 +11,14 @@ export type DataTableTableProps = Omit<
   'children'
 > &
   Partial<
-    Pick<React.ComponentProps<typeof DataTable.Head>, 'theme' | 'sortable'>
+    Pick<
+      React.ComponentProps<typeof DataTable.Head>,
+      'theme' | 'sortable' | 'headerCss'
+    >
   > &
-  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>>
+  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>> & {
+    hasStickyHeader?: boolean
+  }
 
 export const DataTableTable: React.FC<DataTableTableProps> = ({
   sortable,
@@ -21,6 +26,8 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
   theme,
   css,
   numberOfStickyColumns = 0,
+  hasStickyHeader = false,
+  headerCss,
   ...props
 }) => {
   const { asyncDataState, getTotalRows } = useDataTable()
@@ -45,7 +52,12 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
           })
         }}
       >
-        <DataTable.Head theme={theme} sortable={sortable} />
+        <DataTable.Head
+          theme={theme}
+          sortable={sortable}
+          isSticky={hasStickyHeader}
+          css={headerCss}
+        />
         <DataTable.Body striped={striped} />
       </Table>
     </>
