@@ -45,6 +45,86 @@ tabs:
       <ComponentProps component="Tooltip.Provider" />
 
       <ComponentProps component="Tooltip.Portal" />
+  - content: >-
+      ## Structure
+
+
+      ![Tooltip structure](/assets/images/tooltip-structure.svg "Tooltip structure")
+
+
+      Tooltip structure
+
+
+      | Property             | Token     | Pixel | Rem  |
+
+      | -------------------- | --------- | ----- | ---- |
+
+      | Border radius        | radius $0 | 4     | 0.25 |
+
+      | Padding top & bottom | space $2  | 8     | 0.5  |
+
+      | Padding left & right | space $3  | 12    | 0.75 |
+
+
+      ## Size
+
+
+      ![Tooltip size (width)](/assets/images/02-tooltip-size.svg "Tooltip size (width)")
+
+      Tooltip size (width)
+
+
+      | Property              | Pixel |
+
+      | --------------------  | ----- |
+
+      | maxWidth sm           | 100   |
+
+      | maxWidth md (default) | 250   |
+
+      | smaxWidth lg          | 400   |
+
+
+      ## Variants
+
+
+      ![Tooltip arrow alignment variants](/assets/images/tooltip-variants.svg "Tooltip arrow alignment variants")
+
+
+      ## Typography
+
+
+      | Element     | Family | Weight | Size | Pixel | Rem   |
+
+      | ----------- | ------ | ------ | ---- | ----- | ----- |
+
+      | Description | $body  | 400    | $sm  | 14    | 0.875 |
+
+
+      ## Color
+
+
+      ![Tooltip colors](/assets/images/tooltip-color.svg "Tooltip colors")
+
+
+      | Property               | Token    | Hex     |
+
+      | ---------------------- | -------- | ------- |
+
+      | Bg color               | $grey900 | \#33333 |
+
+      | Border-color - Default | $white   | \#fffff |
+
+
+      ## Shadow
+
+
+      | Property - state | Token |
+
+      | ---------------- | ----- |
+
+      | Box shadow       | $0    |
+    title: Visual
   - title: Usage
     content: >-
       ## Overview
