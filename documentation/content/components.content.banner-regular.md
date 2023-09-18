@@ -77,7 +77,7 @@ tabs:
       `} language={"tsx"} />
 
 
-      ### Dismissble Variant
+      ### Dismissible Variant
 
 
       It's possible to render it as a dissmissble component as well. Just add `<BannerRegular.Dismiss />` as a sibling to `BannerRegular.Content`.
