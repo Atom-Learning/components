@@ -403,9 +403,9 @@ exports[`BannerSlim component renders 1`] = `
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-bjtNuc-size-md {
+    .c-fMpkJT-gLTEll-size-md {
       padding-left: var(--space-24);
-      min-width: 737px;
+      width: 100%;
       align-items: center;
     }
 }
@@ -450,9 +450,8 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ikvfUnz-css {
+  .c-dhzjXW-ijUYBCp-css {
     padding: var(--space-4);
-    width: 100%;
   }
 
   .c-fkUJsw-icKSZB-css {
@@ -466,7 +465,7 @@ exports[`BannerSlim component renders 1`] = `
     role="banner"
   >
     <div
-      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-bjtNuc-size-md"
+      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-gLTEll-size-md"
     >
       <div
         class="c-PJLV c-JuFRF c-JuFRF-jYLHup-size-sm c-JuFRF-CkaRH-size-md"
@@ -484,7 +483,7 @@ exports[`BannerSlim component renders 1`] = `
       </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ikvfUnz-css"
+      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ijUYBCp-css"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -945,9 +944,9 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-bjtNuc-size-md {
+    .c-fMpkJT-gLTEll-size-md {
       padding-left: var(--space-24);
-      min-width: 737px;
+      width: 100%;
       align-items: center;
     }
 }
@@ -1015,9 +1014,8 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ikvfUnz-css {
+  .c-dhzjXW-ijUYBCp-css {
     padding: var(--space-4);
-    width: 100%;
   }
 
   .c-fkUJsw-icKSZB-css {
@@ -1031,7 +1029,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     role="banner"
   >
     <div
-      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-bjtNuc-size-md"
+      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-gLTEll-size-md"
     >
       <div
         class="c-PJLV c-JuFRF c-JuFRF-jYLHup-size-sm c-JuFRF-CkaRH-size-md"
@@ -1049,7 +1047,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ikvfUnz-css"
+      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ijUYBCp-css"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -1531,9 +1529,9 @@ exports[`BannerSlim component renders sm variant 1`] = `
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-bjtNuc-size-md {
+    .c-fMpkJT-gLTEll-size-md {
       padding-left: var(--space-24);
-      min-width: 737px;
+      width: 100%;
       align-items: center;
     }
 }
@@ -1601,13 +1599,17 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ikvfUnz-css {
+  .c-dhzjXW-ijUYBCp-css {
     padding: var(--space-4);
-    width: 100%;
   }
 
   .c-fkUJsw-icKSZB-css {
     margin-left: auto;
+  }
+
+  .c-dhzjXW-ikvfUnz-css {
+    padding: var(--space-4);
+    width: 100%;
   }
 }
 

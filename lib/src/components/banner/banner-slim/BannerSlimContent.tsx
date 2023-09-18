@@ -13,7 +13,7 @@ const Container = styled(Flex, {
       sm: { maxWidth: '736px', pb: 0 },
       md: {
         pl: '$24',
-        minWidth: '737px',
+        width: '100%',
         alignItems: 'center'
       }
     }
