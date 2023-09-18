@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+
 import { Banner } from '../Banner'
 import { BannerSlimActions } from './BannerSlimActions'
 import { BannerSlimButton } from './BannerSlimButton'
@@ -22,7 +24,11 @@ export const BannerSlim: React.FC<React.ComponentProps<typeof Banner>> & {
   Actions: typeof BannerSlimActions
 } = (props) => {
   const { size } = props
-  const direction = toDirection[size]
+
+  const direction = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toDirection[s]),
+    [size]
+  )
 
   return (
     <Banner direction={direction} fullWidth={false} align="center" {...props} />
