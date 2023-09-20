@@ -25,6 +25,31 @@ tabs:
 
       This component can render a string message by default. However, it can be overriden to show more complex component structure [Render more than a string](https://react-hot-toast.com/docs/toast). For more information on other configuration options and props, please read about the underlying behaviour at [react-hot-toast](https://react-hot-toast.com/)
 
+      We can create a custom toast UI by passing in a function (which renders a component) to the `toast` function. The `ToastDismissButton` can be used in conjunction with our custom UI. For example:
+
+      <CodeBlock 
+        live={true} 
+        preview={true} 
+        language={"tsx"}
+        code={
+          `<ToastProvider>
+             <Button
+                onClick={() => toast((toast) => (
+                  <Flex align="center">
+                    <Icon size="sm" is={Info} />
+                    <Text css={{ p: '$2' }}>This is my custom toast</Text>
+                    <ToastDismissButton id={toast.id} onDismiss={() => alert('Toast has been dismissed.')}/>
+                  </Flex>
+                ))
+              }
+              >
+                Click for custom toast
+              </Button>
+            </ToastProvider>`
+          }
+        />
+
+
 
       ## API Reference
 
