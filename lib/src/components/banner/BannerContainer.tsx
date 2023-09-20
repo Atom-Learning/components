@@ -4,6 +4,7 @@ import { Flex } from '../flex'
 
 export const BannerContainer = styled(Flex, {
   position: 'relative',
+  width: '100%',
   borderRadius: '$0',
   overflow: 'hidden',
   color: '$foreground',
@@ -23,11 +24,6 @@ export const BannerContainer = styled(Flex, {
     size: {
       sm: {},
       md: {}
-    },
-    fullWidth: {
-      true: {
-        width: '100%'
-      }
     }
   }
 })

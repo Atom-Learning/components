@@ -267,8 +267,9 @@ exports[`BannerSlim component renders 1`] = `
     display: flex;
   }
 
-  .c-llpMEE {
+  .c-bSYoqs {
     position: relative;
+    width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
@@ -335,7 +336,7 @@ exports[`BannerSlim component renders 1`] = `
     align-items: center;
   }
 
-  .c-llpMEE-gsNHYh-emphasis-highContrast {
+  .c-bSYoqs-gsNHYh-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
   }
@@ -461,7 +462,7 @@ exports[`BannerSlim component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-llpMEE c-dhzjXW-jroWjL-align-center c-llpMEE-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bSYoqs c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
@@ -763,8 +764,9 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     display: flex;
   }
 
-  .c-llpMEE {
+  .c-bSYoqs {
     position: relative;
+    width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
@@ -855,7 +857,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     align-items: center;
   }
 
-  .c-llpMEE-gsNHYh-emphasis-highContrast {
+  .c-bSYoqs-gsNHYh-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
   }
@@ -1025,7 +1027,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-llpMEE c-dhzjXW-jroWjL-align-center c-llpMEE-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bSYoqs c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
@@ -1344,8 +1346,9 @@ exports[`BannerSlim component renders sm variant 1`] = `
     display: flex;
   }
 
-  .c-llpMEE {
+  .c-bSYoqs {
     position: relative;
+    width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
@@ -1436,7 +1439,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     align-items: center;
   }
 
-  .c-llpMEE-gsNHYh-emphasis-highContrast {
+  .c-bSYoqs-gsNHYh-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
   }
@@ -1615,7 +1618,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-llpMEE c-dhzjXW-iTKOFX-direction-column c-dhzjXW-jroWjL-align-center c-llpMEE-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bSYoqs c-dhzjXW-iTKOFX-direction-column c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div

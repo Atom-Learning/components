@@ -12,7 +12,6 @@ interface IBannerProps extends TBannerContainerProps {
   colorScheme: TcolorScheme
   value?: TDismissibleProps['value']
   onDismiss?: TDismissibleProps['onDismiss']
-  fullWidth?: boolean
 }
 
 export const Banner: React.FC<IBannerProps> & {
@@ -27,18 +26,12 @@ export const Banner: React.FC<IBannerProps> & {
   emphasis = 'lowContrast',
   value = 'dismiss-banner-regular',
   onDismiss,
-  fullWidth = true,
   ...props
 }) => {
   return (
     <ColorScheme {...colorScheme} asChild>
       <Dismissible asChild value={value} onDismiss={onDismiss}>
-        <BannerContainer
-          role="banner"
-          emphasis={emphasis}
-          fullWidth={fullWidth}
-          {...props}
-        >
+        <BannerContainer role="banner" emphasis={emphasis} {...props}>
           <BannerProvider emphasis={emphasis} size={size}>
             {children}
           </BannerProvider>

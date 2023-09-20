@@ -30,9 +30,7 @@ export const BannerSlim: React.FC<React.ComponentProps<typeof Banner>> & {
     [size]
   )
 
-  return (
-    <Banner direction={direction} fullWidth={false} align="center" {...props} />
-  )
+  return <Banner direction={direction} align="center" {...props} />
 }
 
 BannerSlim.Content = BannerSlimContent
