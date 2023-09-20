@@ -6,7 +6,6 @@ import { Text } from '../../text'
 import { useBannerContext } from '../BannerContext'
 
 const StyledText = styled(Text, {
-  color: '$grey900',
   variants: {
     containerSize: {
       sm: {
@@ -15,13 +14,6 @@ const StyledText = styled(Text, {
       md: {
         mb: '$24'
       }
-    },
-    emphasis: {
-      highContrast: {
-        color: '$grey100'
-      },
-      midContrast: {},
-      lowContrast: {}
     },
     hasDismiss: {
       true: {}

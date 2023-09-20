@@ -301,10 +301,6 @@ exports[`BannerRegular component renders 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
-  }
-
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -386,12 +382,8 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-PJLV-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-  }
-
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
   }
 
   .c-dhzjXW-iTKOFX-direction-column {
@@ -457,7 +449,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-PJLV-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
@@ -564,7 +556,8 @@ exports[`BannerRegular component renders 1`] = `
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-gyGikE-containerSize-md"
+        emphasis="highContrast"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -899,10 +892,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
-  }
-
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -1014,12 +1003,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-PJLV-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-  }
-
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
   }
 
   .c-dhzjXW-iTKOFX-direction-column {
@@ -1100,7 +1085,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-PJLV-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
@@ -1203,7 +1188,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     margin-right: var(--space-6);
   }
 
-  .c-bDwMAO-cRYaBy-cv {
+  .c-PJLV-cRYaBy-cv {
     margin-right: var(--space-6);
   }
 }
@@ -1222,7 +1207,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md c-bDwMAO-cRYaBy-cv"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-PJLV c-PJLV-llIiIE-containerSize-sm c-PJLV-gyGikE-containerSize-md c-PJLV-cRYaBy-cv"
+        emphasis="highContrast"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
