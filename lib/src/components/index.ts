@@ -70,7 +70,12 @@ export { Tabs } from './tabs'
 export { Text } from './text'
 export { Textarea } from './textarea'
 export { TextareaField } from './textarea-field'
-export { ToastProvider, toast } from './toast'
+export {
+  ToastProvider,
+  toast,
+  ToastDismissButton,
+  type ToastProps
+} from './toast'
 export { ToggleGroup } from './toggle-group'
 export { Tooltip } from './tooltip'
 export { TopBar } from './top-bar'

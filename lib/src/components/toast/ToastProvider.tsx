@@ -3,31 +3,34 @@ import { useToaster } from 'react-hot-toast'
 
 import { styled } from '~/stitches'
 
-import { Toast, TOAST_WIDTH } from './Toast'
+import { Toast } from './Toast'
 
 export { default as toast } from 'react-hot-toast'
 import { MAX_Z_INDEX } from '~/constants/zIndices'
+import { CSS } from '@stitches/react'
+
+const DEFAULT_OFFSET = '$2'
 
 const Container = styled('div', {
-  left: '$2',
   position: 'fixed',
-  top: '$2',
-  right: '$2',
   zIndex: MAX_Z_INDEX,
+  top: DEFAULT_OFFSET,
+  left: DEFAULT_OFFSET,
+  right: DEFAULT_OFFSET,
+  bottom: DEFAULT_OFFSET,
+  pointerEvents: 'none',
   '@sm': {
-    top: '$3',
-    right: 'auto',
-    left: `calc(50% - ${TOAST_WIDTH / 2}px)`
+    top: '$3'
   }
 })
 
-export const ToastProvider: React.FC = ({ children }) => {
+export const ToastProvider: React.FC<{ css?: CSS }> = ({ children, css }) => {
   const { toasts, handlers } = useToaster()
   const { startPause, endPause, calculateOffset, updateHeight } = handlers
 
   return (
     <>
-      <Container onMouseEnter={startPause} onMouseLeave={endPause}>
+      <Container onMouseEnter={startPause} onMouseLeave={endPause} css={css}>
         {toasts.map((toast) => (
           <Toast
             key={toast.id}
