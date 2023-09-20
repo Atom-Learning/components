@@ -313,6 +313,11 @@ exports[`BannerSlim component renders 1`] = `
     font-weight: 600;
   }
 
+  .c-gMYpYr {
+    gap: var(--space-4);
+    padding: var(--space-4);
+  }
+
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -379,8 +384,8 @@ exports[`BannerSlim component renders 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-gMYpYr-fGHEql-size-sm {
+    width: 100%;
   }
 
   .c-fkUJsw-dXsdwv-size-md {
@@ -421,6 +426,12 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media (min-width: 800px) {
+    .c-gMYpYr-bwtSeY-size-md {
+      width: auto;
+    }
+}
+
+@media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
     }
@@ -451,10 +462,6 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ijUYBCp-css {
-    padding: var(--space-4);
-  }
-
   .c-fkUJsw-icKSZB-css {
     margin-left: auto;
   }
@@ -484,7 +491,7 @@ exports[`BannerSlim component renders 1`] = `
       </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ijUYBCp-css"
+      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm c-gMYpYr-bwtSeY-size-md"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -810,6 +817,11 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     font-weight: 600;
   }
 
+  .c-gMYpYr {
+    gap: var(--space-4);
+    padding: var(--space-4);
+  }
+
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -900,8 +912,8 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-gMYpYr-fGHEql-size-sm {
+    width: 100%;
   }
 
   .c-fkUJsw-dXsdwv-size-md {
@@ -963,6 +975,12 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
+    .c-gMYpYr-bwtSeY-size-md {
+      width: auto;
+    }
+}
+
+@media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
     }
@@ -1016,10 +1034,6 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ijUYBCp-css {
-    padding: var(--space-4);
-  }
-
   .c-fkUJsw-icKSZB-css {
     margin-left: auto;
   }
@@ -1049,7 +1063,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ijUYBCp-css"
+      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm c-gMYpYr-bwtSeY-size-md"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -1392,6 +1406,11 @@ exports[`BannerSlim component renders sm variant 1`] = `
     font-weight: 600;
   }
 
+  .c-gMYpYr {
+    gap: var(--space-4);
+    padding: var(--space-4);
+  }
+
   .c-fkUJsw {
     align-items: center;
     background: unset;
@@ -1482,8 +1501,8 @@ exports[`BannerSlim component renders sm variant 1`] = `
     color: var(--colors-grey100);
   }
 
-  .c-dhzjXW-gkvzBZ-gap-4 {
-    gap: var(--space-4);
+  .c-gMYpYr-fGHEql-size-sm {
+    width: 100%;
   }
 
   .c-fkUJsw-dXsdwv-size-md {
@@ -1549,6 +1568,12 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media (min-width: 800px) {
+    .c-gMYpYr-bwtSeY-size-md {
+      width: auto;
+    }
+}
+
+@media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
     }
@@ -1602,17 +1627,8 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-ijUYBCp-css {
-    padding: var(--space-4);
-  }
-
   .c-fkUJsw-icKSZB-css {
     margin-left: auto;
-  }
-
-  .c-dhzjXW-ikvfUnz-css {
-    padding: var(--space-4);
-    width: 100%;
   }
 }
 
@@ -1640,7 +1656,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       </p>
     </div>
     <div
-      class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ikvfUnz-css"
+      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"

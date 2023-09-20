@@ -1,29 +1,31 @@
 import * as React from 'react'
 
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+import { styled } from '~/stitches'
 
 import { Flex } from '../../flex'
 import { useBannerContext } from '../BannerContext'
 
-const toWidth = {
-  sm: '100%',
-  md: 'auto'
-}
+const StyledContainer = styled(Flex, {
+  gap: '$4',
+  p: '$4',
+  variants: {
+    size: {
+      sm: { width: '100%' },
+      md: { width: 'auto' }
+    }
+  }
+})
 
 export const BannerSlimActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   children,
-  css,
   ...props
 }) => {
   const { size } = useBannerContext()
-  const width = React.useMemo(
-    () => overrideStitchesVariantValue(size, (s) => toWidth[s]),
-    [size]
-  )
+
   return (
-    <Flex gap="4" css={{ p: '$4', width, ...css }} {...props}>
+    <StyledContainer size={size} {...props}>
       {children}
-    </Flex>
+    </StyledContainer>
   )
 }
 
