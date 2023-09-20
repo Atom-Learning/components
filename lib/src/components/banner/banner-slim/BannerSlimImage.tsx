@@ -29,8 +29,7 @@ const Container = styled(Box, {
 
 const StyledImage = styled(Image, {
   maxWidth: 'auto',
-  width: '100%',
-  height: '100%',
+  size: '100%',
   objectFit: 'cover'
 })
 

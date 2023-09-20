@@ -290,10 +290,10 @@ exports[`BannerSlim component renders 1`] = `
     max-width: 100%;
   }
 
-  .c-ifFBdC {
+  .c-jMnFRQ {
     max-width: auto;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -480,7 +480,7 @@ exports[`BannerSlim component renders 1`] = `
       >
         <img
           alt="image"
-          class="c-iSBxEZ c-ifFBdC"
+          class="c-iSBxEZ c-jMnFRQ"
           src="https://picsum.photos/400/400"
         />
       </div>
@@ -794,10 +794,10 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     max-width: 100%;
   }
 
-  .c-ifFBdC {
+  .c-jMnFRQ {
     max-width: auto;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -1052,7 +1052,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       >
         <img
           alt="image"
-          class="c-iSBxEZ c-ifFBdC"
+          class="c-iSBxEZ c-jMnFRQ"
           src="https://picsum.photos/400/400"
         />
       </div>
@@ -1383,10 +1383,10 @@ exports[`BannerSlim component renders sm variant 1`] = `
     max-width: 100%;
   }
 
-  .c-ifFBdC {
+  .c-jMnFRQ {
     max-width: auto;
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -1645,7 +1645,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       >
         <img
           alt="image"
-          class="c-iSBxEZ c-ifFBdC"
+          class="c-iSBxEZ c-jMnFRQ"
           src="https://picsum.photos/400/400"
         />
       </div>
