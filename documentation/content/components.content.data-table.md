@@ -424,6 +424,7 @@ tabs:
         
 
 
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -434,7 +435,7 @@ tabs:
       #### Sticky header
 
 
-      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can pass the \`hasStickyHeader\` prop to the \`<DataTable.Table>\` component. This should be enough for simple use cases, but if you maybe have another sticky element above the table, and will need some sort of offset on your table's header, there's also a \`headerCss\` prop that you can use. Pass this and feel free to customise the header's CSS. 
+      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can pass the \`hasStickyHeader\` prop to the \`DataTable.Table\` component. This should be enough for simple use cases, but if you maybe have another sticky element above the table, and will need some sort of offset on your table's header, there's also a \`headerCss\` prop that you can use. Pass this and feel free to customise the header's CSS. 
 
 
       <CodeBlock live={false} preview={false} code={`<DataTable columns={columns} data={data}>
