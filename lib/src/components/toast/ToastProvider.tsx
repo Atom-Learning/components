@@ -127,9 +127,7 @@ export const useToastContext = () => {
   const context = React.useContext(ToastContext)
 
   if (!context) {
-    throw new Error(
-      'useSectionMessageContext must be used within a SectionMessageProvider'
-    )
+    throw new Error('useToastContext must be used within a ToastProvider')
   }
 
   return context
