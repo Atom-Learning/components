@@ -1,45 +1,136 @@
 import * as React from 'react'
 import { useToaster } from 'react-hot-toast'
 
-import { styled } from '~/stitches'
-
-import { Toast, TOAST_WIDTH } from './Toast'
-
+import { keyframes, styled, CSS } from '~/stitches'
+import { Error } from '@atom-learning/icons'
 export { default as toast } from 'react-hot-toast'
 import { MAX_Z_INDEX } from '~/constants/zIndices'
+import { Flex } from '../flex'
+import { Text } from '../text'
+import type { Toast as ToastType } from 'react-hot-toast/dist/core/types'
+import { Spacer } from '../spacer'
+import { Toast } from './Toast'
 
-const Container = styled('div', {
-  left: '$2',
+const DEFAULT_OFFSET = '$2'
+const TOAST_WIDTH = 400
+
+const ToastProviderBase = styled('div', {
   position: 'fixed',
-  top: '$2',
-  right: '$2',
   zIndex: MAX_Z_INDEX,
+  inset: DEFAULT_OFFSET,
+  pointerEvents: 'none',
   '@sm': {
-    top: '$3',
-    right: 'auto',
-    left: `calc(50% - ${TOAST_WIDTH / 2}px)`
+    top: '$3'
   }
 })
 
-export const ToastProvider: React.FC = ({ children }) => {
+const slideIn = keyframes({
+  '0%': { transform: 'translateY(-100%)', opacity: 0 },
+  '100%': { transform: `translateY(0)`, opacity: 1 }
+})
+
+const slideOut = keyframes({
+  '0%': { transform: `translateY(0)`, opacity: 1 },
+  '100%': { transform: `translateY(-100%)`, opacity: 0 }
+})
+
+const ToastWrapper = styled('div', {
+  position: 'absolute',
+  width: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  pointerEvents: 'auto',
+  alignItems: 'center',
+  borderRadius: '$0',
+  boxSizing: 'border-box',
+  minHeight: '$5',
+  variants: {
+    visible: {
+      true: {
+        '@allowMotion': {
+          animation: `${slideIn} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+        }
+      },
+      false: {
+        opacity: 0,
+        '@allowMotion': {
+          animation: `${slideOut} 250ms cubic-bezier(0.22, 1, 0.36, 1)`
+        }
+      }
+    }
+  }
+})
+
+const ToastContext = React.createContext<Pick<
+  ToastType,
+  'type' | 'id' | 'message'
+> | null>(null)
+
+export const ToastProvider: React.FC<{ css?: CSS }> = ({ children, css }) => {
   const { toasts, handlers } = useToaster()
   const { startPause, endPause, calculateOffset, updateHeight } = handlers
 
   return (
     <>
-      <Container onMouseEnter={startPause} onMouseLeave={endPause}>
-        {toasts.map((toast) => (
-          <Toast
-            key={toast.id}
-            calculateOffset={calculateOffset}
-            updateHeight={updateHeight}
-            {...toast}
-          />
-        ))}
-      </Container>
+      <ToastProviderBase
+        onMouseEnter={startPause}
+        onMouseLeave={endPause}
+        css={css}
+      >
+        {toasts.map((toast) => {
+          const { message: children } = toast
+
+          const offset = calculateOffset(toast.id, {
+            reverseOrder: true,
+            margin: 8
+          })
+
+          const ref = (el: HTMLDivElement | null) => {
+            if (el && toast.height === undefined) {
+              updateHeight(toast.id, el.getBoundingClientRect().height)
+            }
+          }
+
+          return (
+            <ToastWrapper
+              key={toast.id}
+              ref={ref}
+              visible={toast.visible}
+              role={toast.role}
+              aria-live={toast.ariaLive}
+              css={{ top: offset }}
+            >
+              <ToastContext.Provider value={toast}>
+                {typeof children === 'function' ? (
+                  children(toast)
+                ) : React.isValidElement(children) ? (
+                  children
+                ) : (
+                  <Toast css={{ width: TOAST_WIDTH }}>
+                    {toast.type === 'error' && <Toast.Icon is={Error} />}
+                    <Text>{children}</Text>
+                    <Spacer />
+                    <Toast.Close />
+                  </Toast>
+                )}
+              </ToastContext.Provider>
+            </ToastWrapper>
+          )
+        })}
+      </ToastProviderBase>
       {children}
     </>
   )
+}
+
+export const useToastContext = () => {
+  const context = React.useContext(ToastContext)
+
+  if (!context) {
+    throw new Error('useToastContext must be used within a ToastProvider')
+  }
+
+  return context
 }
 
 ToastProvider.displayName = 'ToastProvider'
