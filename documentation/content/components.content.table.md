@@ -196,7 +196,7 @@ tabs:
       If you wish your table had a sticky header that sticks to the top of the viewport when scrolling, you can add an `isSticky` flag to the `Table.Header` subcomponent.
 
 
-      <CodeBlock live={true} preview={true} code={`<Box css={{height: '120px', overflowY: 'auto'}}>
+      <CodeBlock live={true} preview={true} code={`<Box css={{width: '100%', height: '120px', overflowY: 'auto'}}>
         <Table>
           <Table.Header isSticky>
             <Table.Row>
