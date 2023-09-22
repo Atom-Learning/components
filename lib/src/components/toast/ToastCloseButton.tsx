@@ -5,26 +5,27 @@ import type { Toast } from 'react-hot-toast/dist/core/types'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
+import { useToastContext } from './ToastProvider'
 
-interface ToastDismissButtonProps
+export interface ToastCloseButtonProps
   extends Omit<React.ComponentProps<typeof ActionIcon>, 'label' | 'children'> {
-  id: Toast['id']
   onDismiss?: () => void
   label?: string
 }
 
-export const ToastDismissButton = ({
-  id,
+export const ToastCloseButton = ({
   onDismiss,
   label = 'Close alert',
   ...rest
-}: ToastDismissButtonProps) => {
+}: ToastCloseButtonProps): JSX.Element => {
+  const { id } = useToastContext()
+
   return (
     <ActionIcon
       css={{
         color: 'white',
         mr: '-$2',
-        '&:hover,&:focus': { color: 'white', opacity: 0.9 }
+        '&:hover,&:focus': { color: 'white', opacity: 0.8 }
       }}
       label={label}
       onClick={() => {
