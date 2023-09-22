@@ -426,6 +426,7 @@ tabs:
 
 
 
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -461,7 +462,7 @@ tabs:
       Structuring the data this way will enable \`Chevron\` icons next to the first column. These are clickable and upon clicking them, they rotate 90 degrees, indicating whether or not the row is expanded. You can have many nesting levels.
 
 
-      <CodeBlock live={true} preview={true} code={`const columnHelper = createColumnHelper()
+      <CodeBlock live={false} preview={false} code={`const columnHelper = createColumnHelper()
 
 
       const columns = [
