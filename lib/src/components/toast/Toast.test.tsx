@@ -1,17 +1,18 @@
+import { Info } from '@atom-learning/icons'
 import {
+  act,
   render,
   screen,
   waitFor,
-  act,
   waitForElementToBeRemoved
 } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
-import { Info } from '@atom-learning/icons'
-import { Tooltip } from '../tooltip'
+
 import { Text } from '../text'
+import { Tooltip } from '../tooltip'
 import { Toast, toast, ToastProvider } from '.'
-import userEvent from '@testing-library/user-event'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>
