@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 import { keyframes, styled } from '~/stitches'
-import { fadeIn, fadeOut } from '~/utilities'
+import { backdropOverlay } from '~/utilities/style/backdrop-overlay'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
@@ -23,24 +23,7 @@ const slideOut = keyframes({
   '100%': { transform: contentOffScreen }
 })
 
-const StyledDialogOverlay = styled(Overlay, {
-  backgroundColor: '$alpha600',
-  top: 0,
-  right: 0,
-  bottom: 0,
-  left: 0,
-  position: 'fixed',
-  overflowY: 'auto',
-  zIndex: DIALOG_Z_INDEX,
-  '@allowMotion': {
-    '&[data-state="open"]': {
-      animation: `${fadeIn} 250ms ease-out`
-    },
-    '&[data-state="closed"]': {
-      animation: `${fadeOut} 550ms ease-out`
-    }
-  }
-})
+const StyledDialogOverlay = styled(Overlay, backdropOverlay())
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
