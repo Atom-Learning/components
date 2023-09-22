@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationMenuVertical renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-ixvUrA {
+    font-weight: var(--navigation-menu-vertical-item-font-weight);
+  }
+
+  .c-ijNrdV {
+    padding: var(--space-2);
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    text-decoration: unset;
+    cursor: pointer;
+    border-radius: var(--radii-2);
+    display: flex;
+    align-items: center;
+    padding-left: var(--navigation-menu-vertical-item-pl);
+    width: 100%;
+    --navigation-menu-vertical-item-font-weight: 400;
+  }
+
+  .c-ijNrdV[data-active] {
+    background: var(--colors-accent2);
+    color: var(--colors-accent9);
+    --navigation-menu-vertical-item-font-weight: 600;
+  }
+
+  .c-ijNrdV[data-state=open] {
+    --navigation-menu-vertical-item-font-weight: 600;
+  }
+
+  .c-ijNrdV[data-disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ijNrdV:not([data-disabled]):hover {
+    background: var(--colors-base2);
+  }
+
+  .c-ijNrdV:not([data-disabled]):active {
+    background: var(--colors-base3);
+  }
+
+  .c-ijNrdV:not([data-disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-hYRCfV {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    --navigation-menu-vertical-item-pl: var(--space-4);
+  }
+
+  .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-5);
+  }
+
+  .c-hYRCfV .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-7);
+  }
+
+  .c-hYRCfV .c-hYRCfV .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-8);
+  }
+
+  .c-hYRCfV > *:not(:first-child) {
+    margin-top: var(--space-0);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+}
+
+@media  {
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-ijNrdV-fpZSlG-size-md {
+    min-height: var(--sizes-4);
+  }
+}
+
+<nav
+  aria-label="Main"
+  class="c-fGHEql"
+  data-orientation="vertical"
+  dir="ltr"
+>
+  <div
+    style="position: relative;"
+  >
+    <ul
+      class="c-hYRCfV"
+      data-orientation="vertical"
+      dir="ltr"
+    >
+      <li
+        class="c-PJLV"
+      >
+        <button
+          aria-current="page"
+          class="c-ijNrdV c-ijNrdV-fpZSlG-size-md"
+          data-active=""
+          data-radix-collection-item=""
+          type="button"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <span
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+            >
+              Button
+            </span>
+          </div>
+        </button>
+      </li>
+      <li
+        class="c-PJLV"
+      >
+        <a
+          class="c-ijNrdV c-ijNrdV-fpZSlG-size-md"
+          data-radix-collection-item=""
+          href="google.com"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <span
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+            >
+              Link
+            </span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
+
+exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-ixvUrA {
+    font-weight: var(--navigation-menu-vertical-item-font-weight);
+  }
+
+  .c-ijNrdV {
+    padding: var(--space-2);
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    text-decoration: unset;
+    cursor: pointer;
+    border-radius: var(--radii-2);
+    display: flex;
+    align-items: center;
+    padding-left: var(--navigation-menu-vertical-item-pl);
+    width: 100%;
+    --navigation-menu-vertical-item-font-weight: 400;
+  }
+
+  .c-ijNrdV[data-active] {
+    background: var(--colors-accent2);
+    color: var(--colors-accent9);
+    --navigation-menu-vertical-item-font-weight: 600;
+  }
+
+  .c-ijNrdV[data-state=open] {
+    --navigation-menu-vertical-item-font-weight: 600;
+  }
+
+  .c-ijNrdV[data-disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-ijNrdV:not([data-disabled]):hover {
+    background: var(--colors-base2);
+  }
+
+  .c-ijNrdV:not([data-disabled]):active {
+    background: var(--colors-base3);
+  }
+
+  .c-ijNrdV:not([data-disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  }
+
+  .c-hYRCfV {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    --navigation-menu-vertical-item-pl: var(--space-4);
+  }
+
+  .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-5);
+  }
+
+  .c-hYRCfV .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-7);
+  }
+
+  .c-hYRCfV .c-hYRCfV .c-hYRCfV .c-hYRCfV {
+    --navigation-menu-vertical-item-pl: var(--space-8);
+  }
+
+  .c-hYRCfV > *:not(:first-child) {
+    margin-top: var(--space-0);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-dbrbZt {
+    display: inline-block;
+    fill: none;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTrYmp {
+    flex-shrink: 0;
+    transition: transform 300ms;
+  }
+
+  [data-state="open"] > .c-jTrYmp {
+    transform: rotate(180deg);
+  }
+}
+
+@media  {
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-ijNrdV-fpZSlG-size-md {
+    min-height: var(--sizes-4);
+  }
+
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-dbrbZt-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+<div>
+  <nav
+    aria-label="Main"
+    class="c-fGHEql"
+    data-orientation="vertical"
+    dir="ltr"
+  >
+    <div
+      style="position: relative;"
+    >
+      <ul
+        class="c-hYRCfV"
+        data-orientation="vertical"
+        dir="ltr"
+      >
+        <li
+          class="c-PJLV"
+        >
+          <button
+            aria-current="page"
+            class="c-ijNrdV c-ijNrdV-fpZSlG-size-md"
+            data-active=""
+            data-radix-collection-item=""
+            type="button"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <span
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              >
+                Button
+              </span>
+            </div>
+          </button>
+        </li>
+        <li
+          class="c-PJLV"
+        >
+          <a
+            class="c-ijNrdV c-ijNrdV-fpZSlG-size-md"
+            data-radix-collection-item=""
+            href="google.com"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <span
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              >
+                Link
+              </span>
+            </div>
+          </a>
+        </li>
+        <li
+          class="c-PJLV"
+          data-state="open"
+        >
+          <button
+            aria-controls="radix-0"
+            aria-expanded="true"
+            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-ijNrdV c-ijNrdV-fpZSlG-size-md"
+            data-radix-collection-item=""
+            data-state="open"
+            data-testid="accordion-trigger"
+            type="button"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <span
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              >
+                Accordion Trigger
+              </span>
+            </div>
+            <svg
+              aria-hidden="true"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-jTrYmp"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+          <div
+            class="c-PJLV"
+            data-state="open"
+            data-testid="accordion-content"
+            id="radix-0"
+            style="transition-duration: 0s; animation-name: none;"
+          >
+            <div
+              style="position: relative;"
+            >
+              <ul
+                class="c-hYRCfV"
+                data-orientation="vertical"
+                dir="ltr"
+              >
+                Accordion Content
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+`;
