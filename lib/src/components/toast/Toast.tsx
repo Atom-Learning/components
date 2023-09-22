@@ -3,8 +3,8 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { Flex } from '../flex'
-import { ToastIcon } from './ToastIcon'
 import { ToastCloseButton } from './ToastCloseButton'
+import { ToastIcon } from './ToastIcon'
 import { useToastContext } from './ToastProvider'
 
 const toastVariants = {

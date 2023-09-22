@@ -1,14 +1,16 @@
+import { Error } from '@atom-learning/icons'
 import * as React from 'react'
 import { useToaster } from 'react-hot-toast'
 
-import { keyframes, styled, CSS } from '~/stitches'
-import { Error } from '@atom-learning/icons'
+import { CSS, keyframes, styled } from '~/stitches'
 export { default as toast } from 'react-hot-toast'
-import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { Flex } from '../flex'
-import { Text } from '../text'
 import type { Toast as ToastType } from 'react-hot-toast/dist/core/types'
+
+import { MAX_Z_INDEX } from '~/constants/zIndices'
+
+import { Flex } from '../flex'
 import { Spacer } from '../spacer'
+import { Text } from '../text'
 import { Toast } from './Toast'
 
 const DEFAULT_OFFSET = '$2'
