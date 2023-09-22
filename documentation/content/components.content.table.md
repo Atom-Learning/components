@@ -228,7 +228,7 @@ tabs:
             </Table.Row>
           </Table.Body>
         </Table>
-       <Box>`} language={"jsx"} />
+       </Box>`} language={"jsx"} />
 
       ## API Reference
 
