@@ -423,9 +423,79 @@ tabs:
       }
         
 
+
+
+
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
+        <DataTable.Table />
+      </DataTable>`} language={"jsx"} />
+
+
+      #### Sticky header
+
+
+      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can pass the \`hasStickyHeader\` prop to the \`DataTable.Table\` component. This should be enough for simple use cases, but if you maybe have another sticky element above the table, and will need some sort of offset on your table's header, there's also a \`headerCss\` prop that you can use. Pass this and feel free to customise the header's CSS. 
+
+
+      <CodeBlock live={false} preview={false} code={`<DataTable columns={columns} data={data}>
+        <DataTable.Table 
+          hasStickyHeader
+          headerCss={{
+            top: '100px',
+            zIndex: 10
+          }}
+          />
+      </DataTable>
+
+      `} language={"jsx"} />
+
+
+      #### Subrows and row expansion
+
+
+      You may wish to render your data as nested rows. Maybe you have a list of classes and students, and wish to render each student nested under their respective class. To achieve this, all you need to do is structure your data so that the nested rows are added as an array under the \`subRows\` property of the \`data\` object that is then passed into the table provider.
+
+
+      Structuring the data this way will enable \`Chevron\` icons next to the first column. These are clickable and upon clicking them, they rotate 90 degrees, indicating whether or not the row is expanded. You can have many nesting levels.
+
+
+      <CodeBlock live={false} preview={false} code={`const columnHelper = createColumnHelper()
+
+
+      const columns = [
+        columnHelper.accessor('name', {
+          header: 'Name',
+          id: 'name',
+          cell: (data) => data.getValue() || ''
+        }),
+        columnHelper.accessor('age', {
+          header: 'Age',
+          id: 'age',
+          cell: (data) => data.getValue() || ''
+        })
+      ]
+
+
+      const data = [
+        {
+          name: 'John',
+          age: 30,
+          subRows: [
+            {
+              name: 'Jim',
+              age: 12
+            },
+            {
+              name: 'Jane',
+              age: 5
+            }
+          ]
+      ]
+          
+      <DataTable data={data} columns={columns} enableRowSelection>
         <DataTable.Table />
       </DataTable>`} language={"jsx"} />
 

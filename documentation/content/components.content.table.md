@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      The `Table` component displays a collection of data grouped into rows.
-      Its structure mirrors that of a regular HTML table, with the
+      The `Table` component displays a collection of data grouped into rows. Its
+      structure mirrors that of a regular HTML table, with the
       smaller `Table.Body`, `Table.Cell`, `Table.Footer`, `Table.Header`, `Table.HeaderCell` and `Table
       Row` components corresponding to
       the `<tbody>`, `<td>`, `<tfoot>`, `<thead>`, `<th>` and `<tr>` tags,
@@ -189,6 +189,46 @@ tabs:
 
       ```
 
+
+      ## Sticky headers
+
+
+      If you wish your table had a sticky header that sticks to the top of the viewport when scrolling, you can add an `isSticky` flag to the `Table.Header` subcomponent.
+
+
+      <CodeBlock live={true} preview={true} code={`<Box css={{width: '100%', height: '120px', overflowY: 'auto'}}>
+        <Table>
+          <Table.Header isSticky>
+            <Table.Row>
+              <Table.HeaderCell>First Name</Table.HeaderCell>
+              <Table.HeaderCell>Last Name</Table.HeaderCell>
+              <Table.HeaderCell>Age</Table.HeaderCell>
+            </Table.Row>
+          </Table.Header>
+          <Table.Body>
+            <Table.Row>
+              <Table.Cell>Rakim</Table.Cell>
+              <Table.Cell>Jackson</Table.Cell>
+              <Table.Cell>35</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Evelyn</Table.Cell>
+              <Table.Cell>Smith</Table.Cell>
+              <Table.Cell>27</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>John</Table.Cell>
+              <Table.Cell>Smith</Table.Cell>
+              <Table.Cell>21</Table.Cell>
+            </Table.Row>
+            <Table.Row>
+              <Table.Cell>Jane</Table.Cell>
+              <Table.Cell>Smith</Table.Cell>
+              <Table.Cell>15</Table.Cell>
+            </Table.Row>
+          </Table.Body>
+        </Table>
+       </Box>`} language={"jsx"} />
 
       ## API Reference
 
