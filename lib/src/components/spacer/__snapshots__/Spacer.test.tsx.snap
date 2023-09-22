@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer component renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+}
+
+@media  {
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+}
+
+@media  {
+  .c-dhzjXW-ilgjzAj-css {
+    width: 600px;
+  }
+}
+
+@media  {
+  .c-gJAAjO {
+    flex: 1;
+    justify-self: stretch;
+    align-self: stretch;
+  }
+}
+
+<div>
+  <div
+    class="c-dhzjXW c-dhzjXW-ilgjzAj-css"
+  >
+    <p
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
+    >
+      flex item left
+    </p>
+    <div
+      class="c-gJAAjO"
+    />
+    <p
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
+    >
+      flex item right
+    </p>
+  </div>
+</div>
+`;

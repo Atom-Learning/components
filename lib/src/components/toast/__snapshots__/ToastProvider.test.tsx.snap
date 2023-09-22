@@ -2,26 +2,23 @@
 
 exports[`Toast component renders 1`] = `
 @media  {
-  .c-knRjyP {
-    left: var(--space-2);
+  .c-dgroeR {
     position: fixed;
-    top: var(--space-2);
-    right: var(--space-2);
     z-index: 2147483647;
+    inset: var(--space-2);
+    pointer-events: none;
   }
 
 @media (min-width: 550px) {
-    .c-knRjyP {
+    .c-dgroeR {
       top: var(--space-3);
-      right: auto;
-      left: calc(50% - 200px);
     }
 }
 }
 
 <div>
   <div
-    class="c-knRjyP"
+    class="c-dgroeR"
   />
 </div>
 `;
