@@ -6,10 +6,13 @@ import { Error } from '@atom-learning/icons'
 export { default as toast } from 'react-hot-toast'
 import { MAX_Z_INDEX } from '~/constants/zIndices'
 import { Flex } from '../flex'
-import { ToastBadge } from './ToastBadge'
+import { Text } from '../text'
 import type { Toast as ToastType } from 'react-hot-toast/dist/core/types'
+import { Spacer } from '../spacer'
+import { Toast } from './Toast'
 
 const DEFAULT_OFFSET = '$2'
+const TOAST_WIDTH = 400
 
 const ToastProviderBase = styled('div', {
   position: 'fixed',
@@ -22,13 +25,13 @@ const ToastProviderBase = styled('div', {
 })
 
 const slideIn = keyframes({
-  '0%': { transform: `translate3d(0,-100%,0)`, opacity: 0 },
-  '100%': { transform: `translate3d(0,0,0)`, opacity: 1 }
+  '0%': { transform: 'translateY(-100%)', opacity: 0 },
+  '100%': { transform: `translateY(0)`, opacity: 1 }
 })
 
 const slideOut = keyframes({
-  '0%': { transform: `translate3d(0,0,0)`, opacity: 1 },
-  '100%': { transform: `translate3d(0,-100%,0)`, opacity: 0 }
+  '0%': { transform: `translateY(0)`, opacity: 1 },
+  '100%': { transform: `translateY(-100%)`, opacity: 0 }
 })
 
 const ToastWrapper = styled('div', {
@@ -36,6 +39,11 @@ const ToastWrapper = styled('div', {
   width: '100%',
   display: 'flex',
   justifyContent: 'center',
+  pointerEvents: 'auto',
+  alignItems: 'center',
+  borderRadius: '$0',
+  boxSizing: 'border-box',
+  minHeight: '$5',
   variants: {
     visible: {
       true: {
@@ -70,7 +78,7 @@ export const ToastProvider: React.FC<{ css?: CSS }> = ({ children, css }) => {
         css={css}
       >
         {toasts.map((toast) => {
-          const children = toast.message
+          const { message: children } = toast
 
           const offset = calculateOffset(toast.id, {
             reverseOrder: true,
@@ -84,36 +92,28 @@ export const ToastProvider: React.FC<{ css?: CSS }> = ({ children, css }) => {
           }
 
           return (
-            <ToastWrapper key={toast.id} visible={toast.visible}>
-              <Flex
-                ref={ref}
-                role={toast.role}
-                aria-live={toast.ariaLive}
-                css={{
-                  transform: `translateY(${offset}px)`,
-                  pointerEvents: 'auto',
-                  alignItems: 'center',
-                  borderRadius: '$0',
-                  boxSizing: 'border-box',
-                  minHeight: '$5',
-                  position: 'relative',
-                  transition: 'background-color 50ms ease-out',
-                  '@allowMotion': {
-                    transition:
-                      'background-color 50ms ease-out, transform 150ms ease-out'
-                  }
-                }}
-              >
-                <ToastContext.Provider value={toast}>
-                  {typeof children === 'function' ? (
-                    children(toast)
-                  ) : React.isValidElement(children) ? (
-                    children
-                  ) : (
-                    <ToastBadge />
-                  )}
-                </ToastContext.Provider>
-              </Flex>
+            <ToastWrapper
+              key={toast.id}
+              ref={ref}
+              visible={toast.visible}
+              role={toast.role}
+              aria-live={toast.ariaLive}
+              css={{ top: offset }}
+            >
+              <ToastContext.Provider value={toast}>
+                {typeof children === 'function' ? (
+                  children(toast)
+                ) : React.isValidElement(children) ? (
+                  children
+                ) : (
+                  <Toast css={{ width: TOAST_WIDTH }}>
+                    {toast.type === 'error' && <Toast.Icon is={Error} />}
+                    <Text>{children}</Text>
+                    <Spacer />
+                    <Toast.Close />
+                  </Toast>
+                )}
+              </ToastContext.Provider>
             </ToastWrapper>
           )
         })}
