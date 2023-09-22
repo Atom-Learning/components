@@ -180,8 +180,8 @@ tabs:
       inform the user in a particular section of the
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
-      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Sidedrawer\",\"li\
-      nk\":{\"href\":\"/components/navigation/sidedrawer\"},\"description\":\"A
+      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Drawer\",\"li\
+      nk\":{\"href\":\"/components/navigation/drawer\"},\"description\":\"A
       side panel to navigate the content of a product. Appears overlaid on top
       of a page and when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\"]},{\"description\":\"A form control for
