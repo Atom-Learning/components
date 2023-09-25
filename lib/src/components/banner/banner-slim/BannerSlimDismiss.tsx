@@ -11,8 +11,8 @@ import { useBannerContext } from '../BannerContext'
 const StyledDismiss = styled(ActionIcon, {
   variants: {
     containerSize: {
-      sm: { position: 'absolute', top: '$4', right: '$4' },
-      md: {}
+      sm: { position: 'absolute', top: '$3', right: '$3' },
+      md: { position: 'static' }
     }
   }
 })

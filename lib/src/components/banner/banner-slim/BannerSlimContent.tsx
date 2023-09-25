@@ -3,29 +3,15 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 
 import { Flex } from '../../flex'
-import { useBannerContext } from '../BannerContext'
 
-const Container = styled(Flex, {
-  p: '$4',
-  gap: '$4',
-  variants: {
-    size: {
-      sm: { maxWidth: '736px', pb: 0 },
-      md: {
-        pl: '$24',
-        width: '100%',
-        alignItems: 'center'
-      }
-    }
-  }
+const StyledBannerSlimContent = styled(Flex, {
+  width: '100%'
 })
 
 export const BannerSlimContent: React.FC<
-  React.ComponentProps<typeof Container>
+  React.ComponentProps<typeof StyledBannerSlimContent>
 > = (props) => {
-  const { size } = useBannerContext()
-
-  return <Container size={size} {...props} />
+  return <StyledBannerSlimContent align="center" gap={4} {...props} />
 }
 
 BannerSlimContent.displayName = 'BannerSlimContent'

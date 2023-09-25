@@ -5,9 +5,7 @@ import { styled } from '~/stitches'
 import { Flex } from '../../flex'
 import { useBannerContext } from '../BannerContext'
 
-const StyledContainer = styled(Flex, {
-  gap: '$4',
-  p: '$4',
+const StyledBannerSlimActions = styled(Flex, {
   variants: {
     size: {
       sm: { width: '100%' },
@@ -21,11 +19,10 @@ export const BannerSlimActions: React.FC<React.ComponentProps<typeof Flex>> = ({
   ...props
 }) => {
   const { size } = useBannerContext()
-
   return (
-    <StyledContainer size={size} {...props}>
+    <StyledBannerSlimActions size={size} gap={4} {...props}>
       {children}
-    </StyledContainer>
+    </StyledBannerSlimActions>
   )
 }
 

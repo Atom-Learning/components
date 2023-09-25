@@ -6,19 +6,12 @@ import { Text } from '../../text'
 import { useBannerContext } from '../BannerContext'
 
 const StyledText = styled(Text, {
-  color: '$grey900',
+  color: 'var(--banner-heading-color)',
   fontWeight: '600',
   variants: {
     containerSize: {
       sm: {},
       md: {}
-    },
-    emphasis: {
-      highContrast: {
-        color: '$grey100'
-      },
-      midContrast: {},
-      lowContrast: {}
     },
     hasDismiss: {
       true: {}
@@ -29,7 +22,7 @@ const StyledText = styled(Text, {
       containerSize: 'sm',
       hasDismiss: true,
       css: {
-        mr: '$7'
+        mr: '$6'
       }
     }
   ]
@@ -38,13 +31,12 @@ const StyledText = styled(Text, {
 export const BannerSlimText: React.FC<React.ComponentProps<typeof Text>> = (
   props
 ) => {
-  const { emphasis, size, hasDismiss } = useBannerContext()
+  const { size, hasDismiss } = useBannerContext()
 
   return (
     <StyledText
       size="md"
       containerSize={size}
-      emphasis={emphasis}
       hasDismiss={hasDismiss}
       noCapsize
       {...props}

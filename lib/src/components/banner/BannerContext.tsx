@@ -13,6 +13,11 @@ type TBannerContextValue = TBannerProviderProps & {
 }
 
 export const BannerContext = React.createContext<TBannerContextValue>({
+  emphasis: 'lowContrast',
+  size: {
+    '@initial': 'sm',
+    '@md': 'md'
+  },
   hasDismiss: false,
   setHasDismiss: () => null
 })
@@ -28,8 +33,11 @@ export const useBannerContext = (): TBannerContextValue => {
 }
 
 export const BannerProvider: React.FC<TBannerProviderProps> = ({
-  emphasis,
-  size,
+  emphasis = 'lowContrast',
+  size = {
+    '@initial': 'sm',
+    '@md': 'md'
+  },
   children
 }) => {
   const [hasDismiss, setHasDismiss] = React.useState(false)
