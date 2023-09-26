@@ -7,6 +7,7 @@ import { useBannerContext } from '../BannerContext'
 
 const StyledHeading = styled(Heading, {
   mb: '$4',
+  color: 'var(--banner-heading-color)',
   variants: {
     containerSize: {
       sm: {},

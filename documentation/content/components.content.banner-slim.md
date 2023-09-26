@@ -24,6 +24,30 @@ tabs:
 
       We have several configuration with which `BannerSlim` can be rendered
 
+      ### default variant
+
+      By default sizing is breakpoint based with the following format:  `size: { '@initial': 'sm', '@md': 'md' }`
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <BannerSlim
+        colorScheme={{ base: 'purple1' }}
+        emphasis="highContrast"
+        value=""
+      >
+        <BannerSlim.Content>
+          <BannerSlim.Image src="https://picsum.photos/400/400" />
+          <BannerSlim.Text>
+            This is the default variant of BannerSlim.
+          </BannerSlim.Text>
+        </BannerSlim.Content>
+        <BannerSlim.Actions>
+          <BannerSlim.Button>Primary CTA</BannerSlim.Button>
+        </BannerSlim.Actions>
+        <BannerSlim.Dismiss />
+      </BannerSlim>
+
+      `} language={"tsx"} />
 
       ### `sm` Variant
 

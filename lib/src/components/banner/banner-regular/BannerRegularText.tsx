@@ -6,6 +6,7 @@ import { Text } from '../../text'
 import { useBannerContext } from '../BannerContext'
 
 const StyledText = styled(Text, {
+  color: 'var(--banner-text-color)',
   variants: {
     containerSize: {
       sm: {

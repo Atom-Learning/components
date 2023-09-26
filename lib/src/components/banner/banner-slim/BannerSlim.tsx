@@ -1,36 +1,36 @@
 import * as React from 'react'
 
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
-
 import { Banner } from '../Banner'
+import { BannerContainer } from '../BannerContainer'
 import { BannerSlimActions } from './BannerSlimActions'
 import { BannerSlimButton } from './BannerSlimButton'
+import { BannerSlimContainer } from './BannerSlimContainer'
 import { BannerSlimContent } from './BannerSlimContent'
 import { BannerSlimDismiss } from './BannerSlimDismiss'
 import { BannerSlimImage } from './BannerSlimImage'
 import { BannerSlimText } from './BannerSlimText'
 
-const toDirection = {
-  sm: 'column',
-  md: 'row'
-}
-
-export const BannerSlim: React.FC<React.ComponentProps<typeof Banner>> & {
+export const BannerSlim: React.FC<
+  React.ComponentProps<typeof Banner> &
+    React.ComponentProps<typeof BannerContainer>
+> & {
   Content: typeof BannerSlimContent
   Text: typeof BannerSlimText
   Image: typeof BannerSlimImage
   Button: typeof BannerSlimButton
   Dismiss: typeof BannerSlimDismiss
   Actions: typeof BannerSlimActions
-} = (props) => {
-  const { size } = props
-
-  const direction = React.useMemo(
-    () => overrideStitchesVariantValue(size, (s) => toDirection[s]),
-    [size]
+} = ({ colorScheme, size, emphasis, value, onDismiss, ...rest }) => {
+  return (
+    <Banner size={size} emphasis={emphasis}>
+      <BannerSlimContainer
+        colorScheme={colorScheme}
+        value={value}
+        onDismiss={onDismiss}
+        {...rest}
+      />
+    </Banner>
   )
-
-  return <Banner direction={direction} align="center" {...props} />
 }
 
 BannerSlim.Content = BannerSlimContent

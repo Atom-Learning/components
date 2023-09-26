@@ -24,6 +24,31 @@ tabs:
 
       We have several configuration with which `BannerRegular` can be rendered
 
+      ### default variant
+
+      By default sizing is breakpoint based with the following format:  `size: { '@initial': 'sm', '@md': 'md' }`
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <BannerRegular
+        colorScheme={{ base: 'purple1' }}
+        emphasis="highContrast"
+        value=""
+      >
+        <BannerRegular.Content>
+          <BannerRegular.Text>
+            This is the default variant of BannerRegular.
+          </BannerRegular.Text>
+          <BannerRegular.Actions>
+            <BannerRegular.Button>Primary CTA</BannerRegular.Button>
+          </BannerRegular.Actions>
+        </BannerRegular.Content>
+        <BannerRegular.Dismiss />
+        <BannerRegular.Image src="https://picsum.photos/400/400" />
+      </BannerRegular>
+
+      `} language={"tsx"} />
+
 
       ### `sm` Variant
 

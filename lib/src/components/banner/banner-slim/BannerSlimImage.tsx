@@ -9,19 +9,15 @@ import { useBannerContext } from '../BannerContext'
 const Container = styled(Box, {
   overflow: 'hidden',
   borderRadius: '$round',
+  alignSelf: 'flex-start',
+  flexShrink: 0,
   variants: {
     size: {
       sm: {
-        minHeight: '$4',
-        maxHeight: '$4',
-        minWidth: '$4',
-        maxWidth: '$4'
+        size: '$4'
       },
       md: {
-        minHeight: '$5',
-        maxHeight: '$5',
-        minWidth: '$5',
-        maxWidth: '$5'
+        size: '$5'
       }
     }
   }

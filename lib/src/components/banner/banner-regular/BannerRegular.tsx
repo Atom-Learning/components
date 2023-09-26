@@ -3,13 +3,16 @@ import * as React from 'react'
 import { Banner } from '../Banner'
 import { BannerRegularActions } from './BannerRegularActions'
 import { BannerRegularButton } from './BannerRegularButton'
+import { BannerRegularContainer } from './BannerRegularContainer'
 import { BannerRegularContent } from './BannerRegularContent'
 import { BannerRegularDismiss } from './BannerRegularDismiss'
 import { BannerRegularHeading } from './BannerRegularHeading'
 import { BannerRegularImage } from './BannerRegularImage'
 import { BannerRegularText } from './BannerRegularText'
 
-export const BannerRegular: React.FC<React.ComponentProps<typeof Banner>> & {
+export const BannerRegular: React.FC<
+  React.ComponentProps<typeof BannerRegularContainer>
+> & {
   Content: typeof BannerRegularContent
   Heading: typeof BannerRegularHeading
   Text: typeof BannerRegularText
@@ -17,8 +20,17 @@ export const BannerRegular: React.FC<React.ComponentProps<typeof Banner>> & {
   Image: typeof BannerRegularImage
   Button: typeof BannerRegularButton
   Dismiss: typeof BannerRegularDismiss
-} = (props) => {
-  return <Banner {...props} />
+} = ({ colorScheme, size, emphasis, value, onDismiss, ...rest }) => {
+  return (
+    <Banner size={size} emphasis={emphasis}>
+      <BannerRegularContainer
+        colorScheme={colorScheme}
+        value={value}
+        onDismiss={onDismiss}
+        {...rest}
+      />
+    </Banner>
+  )
 }
 
 BannerRegular.Content = BannerRegularContent

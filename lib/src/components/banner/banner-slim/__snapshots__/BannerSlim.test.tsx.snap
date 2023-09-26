@@ -267,22 +267,25 @@ exports[`BannerSlim component renders 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
-  .c-fMpkJT {
-    padding: var(--space-4);
-    gap: var(--space-4);
+  .c-fGHEql {
+    width: 100%;
   }
 
-  .c-JuFRF {
+  .c-ccQsZg {
     overflow: hidden;
     border-radius: var(--radii-round);
+    align-self: flex-start;
+    flex-shrink: 0;
   }
 
   .c-iSBxEZ {
@@ -308,14 +311,9 @@ exports[`BannerSlim component renders 1`] = `
     display: none;
   }
 
-  .c-bxFfGZ {
-    color: var(--colors-grey900);
+  .c-cBoNQA {
+    color: var(--banner-heading-color);
     font-weight: 600;
-  }
-
-  .c-gMYpYr {
-    gap: var(--space-4);
-    padding: var(--space-4);
   }
 
   .c-fkUJsw {
@@ -334,28 +332,43 @@ exports[`BannerSlim component renders 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-lppGPL {
+    padding: var(--space-4);
+  }
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-dhzjXW-JrrAq-align-flex-start {
+    align-items: flex-start;
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
+  }
+
+  .c-bRupYu-cobKBi-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
+  }
+
   .c-dhzjXW-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
-    background: var(--colors-base11);
-    color: var(--colors-foreground7plus);
-  }
-
-  .c-fMpkJT-hRtRPb-size-sm {
-    max-width: 736px;
-    padding-bottom: 0;
-  }
-
-  .c-JuFRF-jYLHup-size-sm {
-    min-height: var(--sizes-4);
-    max-height: var(--sizes-4);
-    min-width: var(--sizes-4);
-    max-width: var(--sizes-4);
+  .c-ccQsZg-PrXKS-size-sm {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -380,11 +393,7 @@ exports[`BannerSlim component renders 1`] = `
     display: none !important;
   }
 
-  .c-bxFfGZ-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
-  }
-
-  .c-gMYpYr-fGHEql-size-sm {
+  .c-PJLV-fGHEql-size-sm {
     width: 100%;
   }
 
@@ -409,24 +418,32 @@ exports[`BannerSlim component renders 1`] = `
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-gLTEll-size-md {
-      padding-left: var(--space-24);
-      width: 100%;
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-CfEHP-wrap-nowrap {
+      flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-fhqUHx-align-center {
       align-items: center;
     }
 }
 
 @media (min-width: 800px) {
-    .c-JuFRF-CkaRH-size-md {
-      min-height: var(--sizes-5);
-      max-height: var(--sizes-5);
-      min-width: var(--sizes-5);
-      max-width: var(--sizes-5);
+    .c-ccQsZg-fFqqF-size-md {
+      height: var(--sizes-5);
+      width: var(--sizes-5);
     }
 }
 
 @media (min-width: 800px) {
-    .c-gMYpYr-bwtSeY-size-md {
+    .c-PJLV-bwtSeY-size-md {
       width: auto;
     }
 }
@@ -434,6 +451,13 @@ exports[`BannerSlim component renders 1`] = `
 @media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-lppGPL-jUZcer-sizeWorkaround-md {
+      padding-left: var(--space-24);
+      padding-right: var(--space-24);
     }
 }
 }
@@ -469,14 +493,14 @@ exports[`BannerSlim component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
-      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-gLTEll-size-md"
+      class="c-dhzjXW c-fGHEql c-dhzjXW-jroWjL-align-center c-dhzjXW-gkvzBZ-gap-4"
     >
       <div
-        class="c-PJLV c-JuFRF c-JuFRF-jYLHup-size-sm c-JuFRF-CkaRH-size-md"
+        class="c-PJLV c-ccQsZg c-ccQsZg-PrXKS-size-sm c-ccQsZg-fFqqF-size-md"
       >
         <img
           alt="image"
@@ -485,13 +509,13 @@ exports[`BannerSlim component renders 1`] = `
         />
       </div>
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bxFfGZ c-bxFfGZ-fgLDMq-emphasis-highContrast"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-cBoNQA"
       >
         Link your Prime and Nucleus accounts to see all your information in one place.
       </p>
     </div>
     <div
-      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm c-gMYpYr-bwtSeY-size-md"
+      class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -771,22 +795,25 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
-  .c-fMpkJT {
-    padding: var(--space-4);
-    gap: var(--space-4);
+  .c-fGHEql {
+    width: 100%;
   }
 
-  .c-JuFRF {
+  .c-ccQsZg {
     overflow: hidden;
     border-radius: var(--radii-round);
+    align-self: flex-start;
+    flex-shrink: 0;
   }
 
   .c-iSBxEZ {
@@ -812,14 +839,9 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-bxFfGZ {
-    color: var(--colors-grey900);
+  .c-cBoNQA {
+    color: var(--banner-heading-color);
     font-weight: 600;
-  }
-
-  .c-gMYpYr {
-    gap: var(--space-4);
-    padding: var(--space-4);
   }
 
   .c-fkUJsw {
@@ -837,6 +859,10 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-lppGPL {
+    padding: var(--space-4);
   }
 
   .c-fDzwZw {
@@ -862,28 +888,43 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-dhzjXW-JrrAq-align-flex-start {
+    align-items: flex-start;
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
+  }
+
+  .c-bRupYu-cobKBi-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
+  }
+
   .c-dhzjXW-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
-    background: var(--colors-base11);
-    color: var(--colors-foreground7plus);
-  }
-
-  .c-fMpkJT-hRtRPb-size-sm {
-    max-width: 736px;
-    padding-bottom: 0;
-  }
-
-  .c-JuFRF-jYLHup-size-sm {
-    min-height: var(--sizes-4);
-    max-height: var(--sizes-4);
-    min-width: var(--sizes-4);
-    max-width: var(--sizes-4);
+  .c-ccQsZg-PrXKS-size-sm {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -908,11 +949,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     display: none !important;
   }
 
-  .c-bxFfGZ-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
-  }
-
-  .c-gMYpYr-fGHEql-size-sm {
+  .c-PJLV-fGHEql-size-sm {
     width: 100%;
   }
 
@@ -949,7 +986,11 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-PJLV-jWCfIe-containerSize-sm {
+  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+    color: white !important;
+  }
+
+  .c-cCfVEt-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
@@ -958,24 +999,32 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-gLTEll-size-md {
-      padding-left: var(--space-24);
-      width: 100%;
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-CfEHP-wrap-nowrap {
+      flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-fhqUHx-align-center {
       align-items: center;
     }
 }
 
 @media (min-width: 800px) {
-    .c-JuFRF-CkaRH-size-md {
-      min-height: var(--sizes-5);
-      max-height: var(--sizes-5);
-      min-width: var(--sizes-5);
-      max-width: var(--sizes-5);
+    .c-ccQsZg-fFqqF-size-md {
+      height: var(--sizes-5);
+      width: var(--sizes-5);
     }
 }
 
 @media (min-width: 800px) {
-    .c-gMYpYr-bwtSeY-size-md {
+    .c-PJLV-bwtSeY-size-md {
       width: auto;
     }
 }
@@ -983,6 +1032,19 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 @media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-lppGPL-jUZcer-sizeWorkaround-md {
+      padding-left: var(--space-24);
+      padding-right: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-cCfVEt-iNjdzM-containerSize-md {
+      position: static;
     }
 }
 }
@@ -1028,8 +1090,8 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     cursor: not-allowed;
   }
 
-  .c-bxFfGZ-IFQHb-cv {
-    margin-right: var(--space-7);
+  .c-cBoNQA-cRYaBy-cv {
+    margin-right: var(--space-6);
   }
 }
 
@@ -1041,14 +1103,14 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
-      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm c-fMpkJT-gLTEll-size-md"
+      class="c-dhzjXW c-fGHEql c-dhzjXW-jroWjL-align-center c-dhzjXW-gkvzBZ-gap-4"
     >
       <div
-        class="c-PJLV c-JuFRF c-JuFRF-jYLHup-size-sm c-JuFRF-CkaRH-size-md"
+        class="c-PJLV c-ccQsZg c-ccQsZg-PrXKS-size-sm c-ccQsZg-fFqqF-size-md"
       >
         <img
           alt="image"
@@ -1057,13 +1119,13 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
         />
       </div>
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bxFfGZ c-bxFfGZ-fgLDMq-emphasis-highContrast c-bxFfGZ-IFQHb-cv"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-cBoNQA c-cBoNQA-cRYaBy-cv"
       >
         Link your Prime and Nucleus accounts to see all your information in one place.
       </p>
     </div>
     <div
-      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm c-gMYpYr-bwtSeY-size-md"
+      class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
@@ -1073,7 +1135,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-PJLV c-PJLV-jWCfIe-containerSize-sm"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-highContrast c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
@@ -1360,22 +1422,25 @@ exports[`BannerSlim component renders sm variant 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
-  .c-fMpkJT {
-    padding: var(--space-4);
-    gap: var(--space-4);
+  .c-fGHEql {
+    width: 100%;
   }
 
-  .c-JuFRF {
+  .c-ccQsZg {
     overflow: hidden;
     border-radius: var(--radii-round);
+    align-self: flex-start;
+    flex-shrink: 0;
   }
 
   .c-iSBxEZ {
@@ -1401,14 +1466,9 @@ exports[`BannerSlim component renders sm variant 1`] = `
     display: none;
   }
 
-  .c-bxFfGZ {
-    color: var(--colors-grey900);
+  .c-cBoNQA {
+    color: var(--banner-heading-color);
     font-weight: 600;
-  }
-
-  .c-gMYpYr {
-    gap: var(--space-4);
-    padding: var(--space-4);
   }
 
   .c-fkUJsw {
@@ -1426,6 +1486,10 @@ exports[`BannerSlim component renders sm variant 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-lppGPL {
+    padding: var(--space-4);
   }
 
   .c-fDzwZw {
@@ -1451,28 +1515,43 @@ exports[`BannerSlim component renders sm variant 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
+  .c-dhzjXW-JrrAq-align-flex-start {
+    align-items: flex-start;
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
+  }
+
+  .c-bRupYu-cobKBi-emphasis-highContrast {
+    background: var(--colors-base11);
+    color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
+  }
+
   .c-dhzjXW-jroWjL-align-center {
     align-items: center;
   }
 
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
-    background: var(--colors-base11);
-    color: var(--colors-foreground7plus);
-  }
-
-  .c-fMpkJT-hRtRPb-size-sm {
-    max-width: 736px;
-    padding-bottom: 0;
-  }
-
-  .c-JuFRF-jYLHup-size-sm {
-    min-height: var(--sizes-4);
-    max-height: var(--sizes-4);
-    min-width: var(--sizes-4);
-    max-width: var(--sizes-4);
+  .c-ccQsZg-PrXKS-size-sm {
+    height: var(--sizes-4);
+    width: var(--sizes-4);
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -1497,11 +1576,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     display: none !important;
   }
 
-  .c-bxFfGZ-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
-  }
-
-  .c-gMYpYr-fGHEql-size-sm {
+  .c-PJLV-fGHEql-size-sm {
     width: 100%;
   }
 
@@ -1538,37 +1613,45 @@ exports[`BannerSlim component renders sm variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-PJLV-jWCfIe-containerSize-sm {
+  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+    color: white !important;
+  }
+
+  .c-cCfVEt-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
-  }
-
-  .c-dhzjXW-iTKOFX-direction-column {
-    flex-direction: column;
   }
 }
 
 @media  {
 @media (min-width: 800px) {
-    .c-fMpkJT-gLTEll-size-md {
-      padding-left: var(--space-24);
-      width: 100%;
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-CfEHP-wrap-nowrap {
+      flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-dhzjXW-fhqUHx-align-center {
       align-items: center;
     }
 }
 
 @media (min-width: 800px) {
-    .c-JuFRF-CkaRH-size-md {
-      min-height: var(--sizes-5);
-      max-height: var(--sizes-5);
-      min-width: var(--sizes-5);
-      max-width: var(--sizes-5);
+    .c-ccQsZg-fFqqF-size-md {
+      height: var(--sizes-5);
+      width: var(--sizes-5);
     }
 }
 
 @media (min-width: 800px) {
-    .c-gMYpYr-bwtSeY-size-md {
+    .c-PJLV-bwtSeY-size-md {
       width: auto;
     }
 }
@@ -1576,6 +1659,19 @@ exports[`BannerSlim component renders sm variant 1`] = `
 @media (min-width: 800px) {
     .c-fkUJsw-fXTFOn-fullWidth-false {
       width: max-content;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-lppGPL-jUZcer-sizeWorkaround-md {
+      padding-left: var(--space-24);
+      padding-right: var(--space-24);
+    }
+}
+
+@media (min-width: 800px) {
+    .c-cCfVEt-iNjdzM-containerSize-md {
+      position: static;
     }
 }
 }
@@ -1621,8 +1717,8 @@ exports[`BannerSlim component renders sm variant 1`] = `
     cursor: not-allowed;
   }
 
-  .c-bxFfGZ-IFQHb-cv {
-    margin-right: var(--space-7);
+  .c-cBoNQA-cRYaBy-cv {
+    margin-right: var(--space-6);
   }
 }
 
@@ -1634,14 +1730,14 @@ exports[`BannerSlim component renders sm variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-dhzjXW-iTKOFX-direction-column c-dhzjXW-jroWjL-align-center c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL"
     role="banner"
   >
     <div
-      class="c-dhzjXW c-fMpkJT c-fMpkJT-hRtRPb-size-sm"
+      class="c-dhzjXW c-fGHEql c-dhzjXW-jroWjL-align-center c-dhzjXW-gkvzBZ-gap-4"
     >
       <div
-        class="c-PJLV c-JuFRF c-JuFRF-jYLHup-size-sm"
+        class="c-PJLV c-ccQsZg c-ccQsZg-PrXKS-size-sm"
       >
         <img
           alt="image"
@@ -1650,13 +1746,13 @@ exports[`BannerSlim component renders sm variant 1`] = `
         />
       </div>
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bxFfGZ c-bxFfGZ-fgLDMq-emphasis-highContrast"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-cBoNQA"
       >
         Link your Prime and Nucleus accounts to see all your information in one place.
       </p>
     </div>
     <div
-      class="c-dhzjXW c-gMYpYr c-gMYpYr-fGHEql-size-sm"
+      class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm"
     >
       <button
         class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
