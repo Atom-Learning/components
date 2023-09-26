@@ -45,6 +45,124 @@ tabs:
       <ComponentProps component="Tooltip.Provider" />
 
       <ComponentProps component="Tooltip.Portal" />
+  - content: >-
+      ## Structure
+
+
+      ![Tooltip structure](/assets/images/tooltip-structure.svg "Tooltip structure")
+
+
+      Tooltip structure
+
+
+      | Property             | Token     | Pixel | Rem  |
+
+      | -------------------- | --------- | ----- | ---- |
+
+      | Border radius        | radius $0 | 4     | 0.25 |
+
+      | Padding top & bottom | space $2  | 8     | 0.5  |
+
+      | Padding left & right | space $3  | 12    | 0.75 |
+
+
+      ## Size
+
+
+      ![Tooltip size (width)](/assets/images/02-tooltip-size.svg "Tooltip size (width)")
+
+      Tooltip size (width)
+
+
+      | Property              | Pixel |
+
+      | --------------------  | ----- |
+
+      | maxWidth sm           | 100   |
+
+      | maxWidth md (default) | 250   |
+
+      | smaxWidth lg          | 400   |
+
+
+      ## Variants
+
+
+      ![Tooltip arrow alignment variants](/assets/images/tooltip-variants.svg "Tooltip arrow alignment variants")
+
+
+      ## Typography
+
+
+      | Element     | Family | Weight | Size | Pixel | Rem   |
+
+      | ----------- | ------ | ------ | ---- | ----- | ----- |
+
+      | Description | $body  | 400    | $sm  | 14    | 0.875 |
+
+
+      ## Color
+
+
+      ![Tooltip colors](/assets/images/tooltip-color.svg "Tooltip colors")
+
+
+      | Property               | Token    | Hex     |
+
+      | ---------------------- | -------- | ------- |
+
+      | Bg color               | $grey900 | \#33333 |
+
+      | Border-color - Default | $white   | \#fffff |
+
+
+      ## Shadow
+
+
+      | Property - state | Token |
+
+      | ---------------- | ----- |
+
+      | Box shadow       | $0    |
+    title: Visual
+  - title: Usage
+    content: >-
+      ## Overview
+
+
+      The Tooltip component is a user interface element that displays additional information when the user hovers over or clicks on a specific element. Tooltips are typically used to provide users with context or additional details about an element, such as the purpose of a button or the meaning of an icon.
+
+
+      ![01 tooltip overview](/assets/images/01-tooltip-usage.svg "01 tooltip overview")
+
+
+      ## When to use
+
+
+      Tooltips are typically used to provide additional information on a specific term or item, or to clarify a confusing element on a webpage or application. They can help to improve the user experience by providing quick access to relevant information without cluttering the main interface.
+
+
+      ## Content guidelines
+
+
+      * Keep the content concise and focused on the most important information.
+
+      * Use plain language that is easy to understand.
+
+      * Avoid technical jargon or industry-specific terms.
+
+      * Make sure the content is accurate and up-to-date.
+
+      * Use a consistent tone and style throughout the tooltips.
+
+
+      Usage examples
+
+
+      ## Do's and Don'ts
+
+
+      <DosAndDonts items={[{"image":"/assets/images/01-tooltip-do.svg","type":"do","description":"Ensure that the tooltip's content is clear and concise."},{"description":"Overload tooltips with excessive information.","type":"dont","image":"/assets/images/02-tooltip-dont.svg"},{"description":"Choose appropriate tooltip placements that don't obstruct critical content and are contextually relevant.","type":"do","image":"/assets/images/03-tooltip-do.svg"},{"description":"Position tooltips in a way that obscures the content or makes it difficult for users to interact with the elements they're hovering over.","type":"dont","image":"/assets/images/04-tooltip-dont.svg"},{"image":"/assets/images/05-tooltip-do.svg","description":"Use tooltip if the content is cut off with an ellipsis or overflows.","type":"do"},{"description":"Use tooltips excessively. Reserve them for situations where additional context or information is genuinely needed.","type":"dont","image":"/assets/images/06-tooltip-dont.svg"}]} />
 parent: jAvRQoZ2NuRO-VGZiJ0a0
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
