@@ -35,18 +35,18 @@ describe('Drawer', () => {
   })
 
   it('renders the trigger with the popover hidden by default', async () => {
-    expect(await screen.queryByText('BODY')).not.toBeInTheDocument()
+    expect(screen.queryByText('BODY')).not.toBeInTheDocument()
     expect(rendered.container).toMatchSnapshot()
   })
 
   it('opens the popover once trigger is clicked', async () => {
     expect(await trigger).toBeInTheDocument()
-    expect(await screen.queryByText('BODY')).not.toBeInTheDocument()
+    expect(screen.queryByText('BODY')).not.toBeInTheDocument()
 
     trigger.focus()
     userEvent.click(trigger)
 
-    expect(await screen.queryByText('BODY')).toBeInTheDocument()
+    expect(screen.queryByText('BODY')).toBeInTheDocument()
 
     const dialog = await screen.getByRole('dialog')
     expect(dialog).toMatchSnapshot()

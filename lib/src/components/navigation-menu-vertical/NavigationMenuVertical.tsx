@@ -17,20 +17,21 @@ const StyledRoot = styled(Root, {
   width: '100%'
 })
 
-type TNavigationVerticalProps = React.ComponentProps<typeof StyledRoot> & {
-  /*
-   * (!)
-   * NavigationMenu vertical behaviour was buggy so had to build the
-   * opening/closing nested Content(Accordion) based on `Collapsible` instead.
-   * This means that the below `value` based props and `Trigger`/`Content`
-   * animations do nothing, so removing them from typescript
-   */
-  delayDuration: never
-  skipDelayDuration: never
-  defaultValue: never
-  value: never
-  onValueChange: never
-}
+/*
+ * (!)
+ * NavigationMenu vertical behaviour was buggy so had to build the
+ * opening/closing nested Content(Accordion) based on `Collapsible` instead.
+ * This means that the below `value` based props and `Trigger`/`Content`
+ * animations do nothing, so removing them from typescript
+ */
+type TNavigationVerticalProps = Omit<
+  React.ComponentProps<typeof StyledRoot>,
+  | 'delayDuration'
+  | 'skipDelayDuration'
+  | 'defaultValue'
+  | 'value'
+  | 'onValueChange'
+>
 
 type TNavigationVerticalType =
   React.ForwardRefExoticComponent<TNavigationVerticalProps> & {

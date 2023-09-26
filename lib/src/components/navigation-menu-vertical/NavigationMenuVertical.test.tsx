@@ -1,4 +1,5 @@
-import { fireEvent, render } from '@testing-library/react'
+import { render } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import React from 'react'
 
 import { NavigationMenuVertical } from './NavigationMenuVertical'
@@ -58,7 +59,7 @@ describe('NavigationMenuVertical', () => {
     const accordionContent = getByTestId('accordion-content')
     expect(accordionContent).toBeVisible()
 
-    fireEvent.click(accordionTrigger)
+    userEvent.click(accordionTrigger)
 
     expect(mockOnOpenChange).toBeCalledWith(false)
     expect(accordionTrigger).toHaveAttribute('data-state', 'closed')

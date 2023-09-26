@@ -15,7 +15,7 @@ const animationTop = slideInOut({ outPosition: { x: 0, y: '-100%' } })
 const animationRight = slideInOut({ outPosition: { x: '100%', y: 0 } })
 const animationBottom = slideInOut({ outPosition: { x: 0, y: '100%' } })
 const animationLeft = slideInOut({ outPosition: { x: '-100%', y: 0 } })
-const setupAnimation = (animation) => {
+const setupAnimation = (animation: ReturnType<typeof slideInOut>) => {
   return {
     '&[data-state="open"]': {
       animationName: animation.in
@@ -98,7 +98,7 @@ export const DrawerContent: React.FC<
 
   return (
     <Portal>
-      <DrawerOverlay data-testid="drawer_overlay" />
+      <DrawerOverlay />
       <ColorScheme base="grey1" accent="blue1" asChild>
         <StyledContent size="lg" position={position} {...rest} asChild>
           <Flex direction="column">{children}</Flex>

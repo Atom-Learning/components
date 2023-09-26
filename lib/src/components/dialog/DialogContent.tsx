@@ -23,7 +23,7 @@ const slideOut = keyframes({
   '100%': { transform: contentOffScreen }
 })
 
-const StyledDialogOverlay = styled(Overlay, backdropOverlay())
+const StyledDialogOverlay = styled(Overlay, backdropOverlay)
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
