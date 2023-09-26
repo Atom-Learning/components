@@ -4,7 +4,8 @@ export const resetButtonStyles = {
   outline: 'none',
   font: 'inherit',
   color: 'inherit',
-  background: 'none'
+  background: 'none',
+  textAlign: 'inherit'
 }
 
 export const resetLinkStyles = {
