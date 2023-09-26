@@ -1,58 +1,14 @@
 import type { VariantProps } from '@stitches/react'
-import { darken, opacify } from 'color2k'
 import * as React from 'react'
 
-import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
-import { styled, theme } from '~/stitches'
+import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import { isExternalLink } from '~/utilities/uri'
-
-const getButtonOutlineVariant = (
-  base: string,
-  interact: string,
-  active: string
-) => ({
-  border: '1px solid',
-  borderColor: 'currentColor',
-  color: base,
-  '&[disabled]': {
-    borderColor: '$tonal400',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    textDecoration: 'none',
-    color: interact
-  },
-  '&:not([disabled]):active': {
-    color: active
-  }
-})
-
-const getButtonSolidVariant = (
-  base: string,
-  interact: string,
-  active: string,
-  text = 'white'
-) => ({
-  bg: base,
-  color: text,
-  '&[disabled]': {
-    bg: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    bg: interact,
-    color: text
-  },
-  '&:not([disabled]):active': {
-    bg: active
-  }
-})
+import { colorSchemes as buttonColorSchemes } from './stitches.button.colorscheme.config'
+import { focusVisibleStyleBlock } from '~/utilities'
 
 export const StyledButton = styled('button', {
   alignItems: 'center',
@@ -69,18 +25,45 @@ export const StyledButton = styled('button', {
   transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
+  '&[disabled]': {
+    pointerEvents: 'none',
+    opacity: 0.3,
+    cursor: 'not-allowed'
+  },
+  '&:not([disabled])': {
+    '&:focus-visible': focusVisibleStyleBlock()
+  },
   variants: {
-    theme: {
-      primary: {},
-      secondary: {},
-      success: {},
-      warning: {},
-      danger: {},
-      neutral: {}
-    },
     appearance: {
-      solid: {},
-      outline: {}
+      solid: {
+        bg: '$backgroundSolid',
+        color: '$textSolid',
+        '&:not([disabled])': {
+          '&:hover, &:focus-visible': {
+            bg: '$backgroundSolidHover',
+            color: '$textSolidHover',
+          },
+          '&:active': {
+            bg: '$backgroundSolidActive',
+            color: '$textSolidActive',
+          }
+        }
+      },
+      outline: {
+        border: '1px solid',
+        bg: '$backgroundOutline',
+        color: '$textOutline',
+        '&:not([disabled])': {
+          '&:hover, &:focus-visible': {
+            color: '$textOutlineHover',
+            bg: '$backgroundOutlineHover',
+          },
+          '&:active': {
+            bg: '$backgroundOutlineActive',
+            color: '$textOutlineActive',
+          }
+        }
+      }
     },
     size: {
       sm: {
@@ -123,82 +106,6 @@ export const StyledButton = styled('button', {
         width: '100%'
       }
     }
-  },
-
-  compoundVariants: [
-    {
-      theme: 'primary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$warning',
-        '$warningMid',
-        '$warningDark',
-        '$tonal500'
-      )
-    },
-    {
-      theme: 'danger',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$danger', '$dangerMid', '$dangerDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        'white',
-        opacify('white', -0.1),
-        opacify('white', -0.25),
-        '$primary'
-      )
-    },
-    {
-      theme: 'primary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        'white',
-        opacify('white', -0.2),
-        opacify('white', -0.35)
-      )
-    },
-    {
-      theme: 'secondary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    }
-  ],
-
-  defaultVariants: {
-    appearance: 'solid',
-    size: 'md',
-    theme: 'primary'
   }
 })
 
@@ -229,7 +136,7 @@ const WithLoader = ({
   </>
 )
 
-type ButtonProps = Override<
+export type TButtonProps = Override<
   React.ComponentProps<typeof StyledButton>,
   VariantProps<typeof StyledButton> & {
     as?: React.ComponentType | React.ElementType
@@ -237,10 +144,19 @@ type ButtonProps = Override<
     href?: string
     isLoading?: boolean
   } & NavigatorActions
->
+> & {
+  theme?: keyof typeof buttonColorSchemes
+  // overflow?: React.ComponentProps<typeof BadgeText>['overflow']
+}
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
+export const Button = React.forwardRef<HTMLButtonElement, TButtonProps>(
+  ({ theme = 'primary', appearance = 'solid', size = 'md', children, as, href, isLoading = false, onClick, ...rest }, ref) => {
+    // const { size, overflow, isOverflowing } = React.useContext(BadgeContext)
+    // const [badgeElRef, setBadgeElRef] = useCallbackRefState()
+    // React.useImperativeHandle(ref, () => badgeElRef as HTMLDivElement)
+
+    // const label = badgeElRef?.textContent
+
     const externalLinkProps = isExternalLink(href)
       ? { target: '_blank', rel: 'noopener noreferrer' }
       : {}
@@ -248,22 +164,25 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <StyledButton
         as={as || (href ? 'a' : undefined)}
+        appearance={appearance}
+        size={size}
+        className={buttonColorSchemes[theme]}
         href={href}
         isLoading={isLoading}
         onClick={!isLoading ? onClick : undefined}
         type={!href ? 'button' : undefined}
-        {...rest}
         {...externalLinkProps}
+        {...rest}
         ref={ref}
       >
         {isLoading ? (
-          <WithLoader size={rest.size}>{children}</WithLoader>
+          <WithLoader size={size}>{children}</WithLoader>
         ) : (
           children
         )}
       </StyledButton>
     )
   }
-) as React.FC<ButtonProps>
+) as React.FC<TButtonProps>
 
 Button.displayName = 'Button'
