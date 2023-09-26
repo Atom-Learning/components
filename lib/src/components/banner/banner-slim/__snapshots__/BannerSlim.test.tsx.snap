@@ -888,6 +888,10 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
 }
 
 @media  {
@@ -982,10 +986,14 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-PJLV-iQtYBa-containerSize-sm {
+  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+    color: white !important;
+  }
+
+  .c-cCfVEt-jWCfIe-containerSize-sm {
     position: absolute;
-    top: var(--space-3);
-    right: var(--space-3);
+    top: var(--space-4);
+    right: var(--space-4);
   }
 }
 
@@ -1035,7 +1043,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-PJLV-iNjdzM-containerSize-md {
+    .c-cCfVEt-iNjdzM-containerSize-md {
       position: static;
     }
 }
@@ -1127,7 +1135,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-PJLV c-PJLV-iQtYBa-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
+        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-highContrast c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
@@ -1507,6 +1515,10 @@ exports[`BannerSlim component renders sm variant 1`] = `
     stroke-linejoin: round;
     vertical-align: middle;
   }
+
+  .c-cCfVEt {
+    flex-shrink: 0;
+  }
 }
 
 @media  {
@@ -1601,10 +1613,14 @@ exports[`BannerSlim component renders sm variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-PJLV-iQtYBa-containerSize-sm {
+  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+    color: white !important;
+  }
+
+  .c-cCfVEt-jWCfIe-containerSize-sm {
     position: absolute;
-    top: var(--space-3);
-    right: var(--space-3);
+    top: var(--space-4);
+    right: var(--space-4);
   }
 }
 
@@ -1654,7 +1670,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-PJLV-iNjdzM-containerSize-md {
+    .c-cCfVEt-iNjdzM-containerSize-md {
       position: static;
     }
 }
