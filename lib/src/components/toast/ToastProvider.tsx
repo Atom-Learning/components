@@ -41,7 +41,6 @@ const ToastWrapper = styled('div', {
   width: '100%',
   display: 'flex',
   justifyContent: 'center',
-  pointerEvents: 'auto',
   alignItems: 'center',
   borderRadius: '$0',
   boxSizing: 'border-box',
