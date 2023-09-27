@@ -2,12 +2,12 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Heading } from '../../heading'
+import { Text } from '../../text'
 import { useBannerContext } from '../BannerContext'
 
-const StyledHeading = styled(Heading, {
-  mb: '$4',
+const StyledText = styled(Text, {
   color: 'var(--banner-heading-color)',
+  fontWeight: '600',
   variants: {
     containerSize: {
       sm: {},
@@ -28,19 +28,20 @@ const StyledHeading = styled(Heading, {
   ]
 })
 
-export const BannerRegularHeading: React.FC<
-  React.ComponentProps<typeof Heading>
-> = (props) => {
+export const BannerSlimText: React.FC<React.ComponentProps<typeof Text>> = (
+  props
+) => {
   const { size, hasDismiss } = useBannerContext()
 
   return (
-    <StyledHeading
-      size="sm"
+    <StyledText
+      size="md"
       containerSize={size}
       hasDismiss={hasDismiss}
+      noCapsize
       {...props}
     />
   )
 }
 
-BannerRegularHeading.displayName = 'BannerRegularHeading'
+BannerSlimText.displayName = 'BannerSlimText'

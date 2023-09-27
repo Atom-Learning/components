@@ -2,29 +2,34 @@ import { Close } from '@atom-learning/icons'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { ActionIcon } from '../../action-icon'
 import { Icon } from '../../icon'
 import { Banner } from '../Banner'
 import { useBannerContext } from '../BannerContext'
 
-const toActionIconSize = {
-  sm: 'md',
-  md: 'sm'
-}
-
 const StyledDismiss = styled(ActionIcon, {
-  zIndex: 1,
-  position: 'absolute',
-  top: '$3',
-  right: '$3'
+  flexShrink: 0,
+  variants: {
+    emphasis: {
+      highContrast: {
+        color: 'white !important'
+      }
+    },
+    containerSize: {
+      sm: { position: 'absolute', top: '$4', right: '$4' },
+      md: { position: 'static' }
+    }
+  }
 })
 
-export const BannerRegularDismiss: React.FC<
-  React.ComponentProps<typeof ActionIcon>
-> = ({ label = 'dismiss', ...rest }) => {
-  const { size, setHasDismiss } = useBannerContext()
+type TBannerSlimDismissProps = React.ComponentProps<typeof StyledDismiss>
+
+export const BannerSlimDismiss = ({
+  label = 'dismiss',
+  ...rest
+}: TBannerSlimDismissProps): JSX.Element => {
+  const { size, setHasDismiss, emphasis } = useBannerContext()
 
   React.useEffect(() => {
     setHasDismiss(true)
@@ -33,20 +38,16 @@ export const BannerRegularDismiss: React.FC<
     }
   }, [setHasDismiss])
 
-  const actionIconSize = React.useMemo(
-    () => overrideStitchesVariantValue(size, (s) => toActionIconSize[s]),
-    [size]
-  )
-
   return (
     <Banner.Dismiss asChild>
       <StyledDismiss
         label={label}
-        size={actionIconSize}
+        size="md"
         hasTooltip={false}
         isRounded
         theme="neutral"
-        appearance="solid"
+        containerSize={size}
+        emphasis={emphasis as TBannerSlimDismissProps['emphasis']}
         {...rest}
       >
         <Icon is={Close} />
@@ -55,4 +56,4 @@ export const BannerRegularDismiss: React.FC<
   )
 }
 
-BannerRegularDismiss.displayName = 'BannerRegularDismiss'
+BannerSlimDismiss.displayName = 'BannerSlimDismiss'
