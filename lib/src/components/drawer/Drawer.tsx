@@ -1,13 +1,13 @@
 import { Root } from '@radix-ui/react-dialog'
 import React from 'react'
 
+import { DrawerProvider } from './Drawer.context'
 import { DrawerClose } from './DrawerClose'
 import { DrawerContent } from './DrawerContent'
-import { DrawerTrigger } from './DrawerTrigger'
-import { DrawerMain } from './DrawerMain'
-import { DrawerHeader } from './DrawerHeader'
 import { DrawerFooter } from './DrawerFooter'
-import { DrawerProvider } from './Drawer.context'
+import { DrawerHeader } from './DrawerHeader'
+import { DrawerMain } from './DrawerMain'
+import { DrawerTrigger } from './DrawerTrigger'
 
 type TDrawerProps = React.ComponentProps<typeof Root> &
   React.ComponentProps<typeof DrawerProvider>

@@ -38,7 +38,7 @@ describe('NavigationMenuVertical', () => {
       <NavigationMenuVerticalImplementation>
         <NavigationMenuVertical.Accordion
           onOpenChange={mockOnOpenChange}
-          defaultOpen={true}
+          defaultOpen
         >
           <NavigationMenuVertical.AccordionTrigger data-testid="accordion-trigger">
             Accordion Trigger
