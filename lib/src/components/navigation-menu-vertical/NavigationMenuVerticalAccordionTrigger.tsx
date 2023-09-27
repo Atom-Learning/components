@@ -3,15 +3,13 @@ import { Trigger } from '@radix-ui/react-collapsible'
 import { Link } from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
-import { styled } from '~/stitches'
-
 import { Flex } from '~/components/flex'
 import { Icon } from '~/components/icon'
-
-import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemContent'
-import { NavigationMenuVerticalAccordionContext } from './NavigationMenuVerticalAccordion'
+import { styled } from '~/stitches'
 
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
+import { NavigationMenuVerticalAccordionContext } from './NavigationMenuVerticalAccordion'
+import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemContent'
 
 const StyledNavigationMenuVerticalAccordionTrigger = styled(
   Trigger,

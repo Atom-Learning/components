@@ -3,13 +3,13 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { preventEvent } from '~/utilities/event'
 
 import { Icon } from '../icon'
 import {
   navigationMenuActiveItemStyles,
   navigationMenuBaseItemStyles
 } from './NavigationMenu.styles'
-import { preventEvent } from '~/utilities/event'
 
 const StyledTrigger = styled(
   NavigationMenuPrimitive.Trigger,

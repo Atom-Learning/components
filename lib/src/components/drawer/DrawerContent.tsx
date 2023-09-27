@@ -1,15 +1,14 @@
 import { Content, Portal } from '@radix-ui/react-dialog'
 import React from 'react'
 
+import { Flex } from '~/components/flex'
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
+import { ColorScheme } from '~/experiments/color-scheme'
 import { styled } from '~/stitches'
 import { slideInOut } from '~/utilities'
 
-import { DrawerOverlay } from './DrawerOverlay'
 import { DrawerContext } from './Drawer.context'
-import { Flex } from '~/components/flex'
-
-import { ColorScheme } from '~/experiments/color-scheme'
+import { DrawerOverlay } from './DrawerOverlay'
 
 const animationTop = slideInOut({ outPosition: { x: 0, y: '-100%' } })
 const animationRight = slideInOut({ outPosition: { x: '100%', y: 0 } })
