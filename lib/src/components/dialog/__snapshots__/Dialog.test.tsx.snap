@@ -68,25 +68,21 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
@@ -302,25 +298,21 @@ exports[`Dialog component with custom background renders 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
@@ -419,7 +411,7 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 <div
-  class="c-fYlVmN"
+  class="c-fWhrtB"
   data-state="open"
   id="modal_overlay"
   style="pointer-events: auto;"
@@ -531,25 +523,21 @@ exports[`Dialog component without close button renders 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }

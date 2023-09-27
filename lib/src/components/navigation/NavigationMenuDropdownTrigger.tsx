@@ -9,7 +9,7 @@ import {
   navigationMenuActiveItemStyles,
   navigationMenuBaseItemStyles
 } from './NavigationMenu.styles'
-import { preventHover } from './preventHover'
+import { preventEvent } from '~/utilities/event'
 
 const StyledTrigger = styled(
   NavigationMenuPrimitive.Trigger,
@@ -36,8 +36,8 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
     active={active}
     {...props}
     ref={forwardedRef}
-    onPointerMove={preventHover}
-    onPointerLeave={preventHover}
+    onPointerMove={preventEvent}
+    onPointerLeave={preventEvent}
   >
     {children}
     <Icon

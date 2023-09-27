@@ -5,23 +5,16 @@ import React from 'react'
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 
-export const SidedrawerClose: React.FC<
-  React.ComponentProps<typeof ActionIcon>
-> = ({
-  appearance = 'simple',
-  label = 'close',
-  size = 'md',
-  theme = 'neutral',
-
-  ...remainingProps
-}) => (
+export const DrawerClose: React.FC<React.ComponentProps<typeof ActionIcon>> = (
+  props
+) => (
   <DialogClose asChild>
     <ActionIcon
-      theme={theme}
-      appearance={appearance}
-      size={size}
-      label={label}
-      {...remainingProps}
+      theme="neutral"
+      appearance="simple"
+      size="md"
+      hasTooltip={false}
+      {...props}
     >
       <Icon is={Close} />
     </ActionIcon>
