@@ -40,7 +40,7 @@ describe('Drawer', () => {
   })
 
   it('opens the popover once trigger is clicked', async () => {
-    expect(await trigger).toBeInTheDocument()
+    expect(trigger).toBeInTheDocument()
     expect(screen.queryByText('BODY')).not.toBeInTheDocument()
 
     trigger.focus()
@@ -48,7 +48,7 @@ describe('Drawer', () => {
 
     expect(screen.queryByText('BODY')).toBeInTheDocument()
 
-    const dialog = await screen.getByRole('dialog')
+    const dialog = screen.getByRole('dialog')
     expect(dialog).toMatchSnapshot()
   })
 
