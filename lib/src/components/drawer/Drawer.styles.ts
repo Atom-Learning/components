@@ -1,5 +1,4 @@
 export const drawerSection = {
-  py: '$4',
-  px: '$2',
+  p: '$4',
   width: '100%'
 }

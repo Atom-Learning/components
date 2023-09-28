@@ -5,8 +5,8 @@ import React from 'react'
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 
-export const DrawerClose: React.FC<React.ComponentProps<typeof ActionIcon>> = (
-  props
+export const DrawerClose = (
+  props: Omit<React.ComponentProps<typeof ActionIcon>, 'children'>
 ) => (
   <DialogClose asChild>
     <ActionIcon
