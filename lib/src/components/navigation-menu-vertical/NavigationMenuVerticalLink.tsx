@@ -23,7 +23,7 @@ export const NavigationMenuVerticalLink: React.FC<
   return (
     <NavigationMenuVerticalItem>
       <StyledNavigationMenuVerticalLink
-        size="md"
+        size="lg"
         {...rest}
         onSelect={preventEvent}
         asChild

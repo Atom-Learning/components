@@ -38,7 +38,7 @@ export const NavigationMenuVerticalAccordionTrigger = ({
 
   return (
     <Link asChild>
-      <StyledNavigationMenuVerticalAccordionTrigger size="md" {...rest} asChild>
+      <StyledNavigationMenuVerticalAccordionTrigger size="lg" {...rest} asChild>
         <Flex
           as="button"
           type="button"
