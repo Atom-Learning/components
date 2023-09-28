@@ -33,17 +33,16 @@ type TNavigationVerticalProps = Omit<
   | 'onValueChange'
 >
 
-type TNavigationVerticalType =
-  React.ForwardRefExoticComponent<TNavigationVerticalProps> & {
-    Link: typeof NavigationMenuVerticalLink
-    Accordion: typeof NavigationMenuVerticalAccordion
-    AccordionContent: typeof NavigationMenuVerticalAccordionContent
-    AccordionTrigger: typeof NavigationMenuVerticalAccordionTrigger
-    Item: typeof NavigationMenuVerticalItem
-    ItemContent: typeof NavigationMenuVerticalItemContent
-    Icon: typeof NavigationMenuVerticalIcon
-    Text: typeof NavigationMenuVerticalText
-  }
+type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
+  Link: typeof NavigationMenuVerticalLink
+  Accordion: typeof NavigationMenuVerticalAccordion
+  AccordionContent: typeof NavigationMenuVerticalAccordionContent
+  AccordionTrigger: typeof NavigationMenuVerticalAccordionTrigger
+  Item: typeof NavigationMenuVerticalItem
+  ItemContent: typeof NavigationMenuVerticalItemContent
+  Icon: typeof NavigationMenuVerticalIcon
+  Text: typeof NavigationMenuVerticalText
+}
 
 export const NavigationMenuVertical = (({ children, ...rest }) => {
   return (

@@ -300,12 +300,10 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
     display: flex;
   }
 
-  .c-fTmeBd {
-    padding-top: var(--space-4);
-    padding-bottom: var(--space-4);
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
+  .c-ljxqHl {
+    padding: var(--space-4);
     width: 100%;
+    min-height: var(--sizes-6);
     border-bottom: 1px solid var(--colors-base3);
   }
 
@@ -333,21 +331,15 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
     vertical-align: middle;
   }
 
-  .c-hhmfgL {
-    padding-top: var(--space-4);
-    padding-bottom: var(--space-4);
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
+  .c-gMZPby {
+    padding: var(--space-4);
     width: 100%;
     flex-grow: 1;
     overflow-y: auto;
   }
 
-  .c-WGKTx {
-    padding-top: var(--space-4);
-    padding-bottom: var(--space-4);
-    padding-left: var(--space-2);
-    padding-right: var(--space-2);
+  .c-dOWjeQ {
+    padding: var(--space-4);
     width: 100%;
     border-top: 1px solid var(--colors-base3);
   }
@@ -436,7 +428,7 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
   tabindex="-1"
 >
   <div
-    class="c-fTmeBd"
+    class="c-ljxqHl"
   >
     HEADER
     <button
@@ -457,12 +449,12 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
     </button>
   </div>
   <div
-    class="c-hhmfgL"
+    class="c-gMZPby"
   >
     BODY
   </div>
   <div
-    class="c-WGKTx"
+    class="c-dOWjeQ"
   >
     FOOTER
   </div>

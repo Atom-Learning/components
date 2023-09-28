@@ -3,6 +3,7 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 import { preventEvent } from '~/utilities/event'
+import { isExternalLink } from '~/utilities/uri'
 
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
 import { NavigationMenuVerticalItem } from './NavigationMenuVerticalItem'
@@ -15,32 +16,39 @@ const StyledNavigationMenuVerticalLink = styled(
 
 type NavigationMenuVerticalItemProps = React.ComponentProps<
   typeof StyledNavigationMenuVerticalLink
->
+> & {
+  as?: React.ComponentType | React.ElementType
+}
 
 export const NavigationMenuVerticalLink: React.FC<
   NavigationMenuVerticalItemProps
-> = ({ href, children, ...rest }) => {
+> = ({ as, href, children, ...rest }) => {
+  const linkProps = isExternalLink(href)
+    ? { target: '_blank', rel: 'noopener noreferrer' }
+    : {}
+
+  const buttonProps = {
+    type: 'button'
+  }
+
+  const Component = as || (href ? 'a' : 'button')
+  const componentProps = as ? {} : href ? linkProps : buttonProps
+
   return (
     <NavigationMenuVerticalItem>
       <StyledNavigationMenuVerticalLink
-        size="md"
+        size="lg"
+        href={href}
         {...rest}
+        {...componentProps}
         onSelect={preventEvent}
-        asChild
+        asChild // ?: Can't use `as` for this as we lose `data-active` etc. attributes when we try to. Using `asChild` and `Component` as a workaround.
       >
-        {href ? (
-          <a href={href}>
-            <NavigationMenuVerticalItemContent>
-              {children}
-            </NavigationMenuVerticalItemContent>
-          </a>
-        ) : (
-          <button type="button">
-            <NavigationMenuVerticalItemContent>
-              {children}
-            </NavigationMenuVerticalItemContent>
-          </button>
-        )}
+        <Component>
+          <NavigationMenuVerticalItemContent>
+            {children}
+          </NavigationMenuVerticalItemContent>
+        </Component>
       </StyledNavigationMenuVerticalLink>
     </NavigationMenuVerticalItem>
   )

@@ -123,8 +123,8 @@ exports[`NavigationMenuVertical renders 1`] = `
     display: table;
   }
 
-  .c-jgcFYa-fpZSlG-size-md {
-    min-height: var(--sizes-4);
+  .c-jgcFYa-jLELKD-size-lg {
+    min-height: var(--sizes-5);
   }
 }
 
@@ -147,7 +147,7 @@ exports[`NavigationMenuVertical renders 1`] = `
       >
         <button
           aria-current="page"
-          class="c-jgcFYa c-jgcFYa-fpZSlG-size-md"
+          class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
           data-active=""
           data-radix-collection-item=""
           type="button"
@@ -167,7 +167,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         class="c-PJLV"
       >
         <a
-          class="c-jgcFYa c-jgcFYa-fpZSlG-size-md"
+          class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
           data-radix-collection-item=""
           href="google.com"
         >
@@ -328,8 +328,8 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     display: table;
   }
 
-  .c-jgcFYa-fpZSlG-size-md {
-    min-height: var(--sizes-4);
+  .c-jgcFYa-jLELKD-size-lg {
+    min-height: var(--sizes-5);
   }
 
   .c-dhzjXW-knmidH-justify-space-between {
@@ -367,7 +367,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
         >
           <button
             aria-current="page"
-            class="c-jgcFYa c-jgcFYa-fpZSlG-size-md"
+            class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
             data-active=""
             data-radix-collection-item=""
             type="button"
@@ -387,7 +387,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           class="c-PJLV"
         >
           <a
-            class="c-jgcFYa c-jgcFYa-fpZSlG-size-md"
+            class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
             data-radix-collection-item=""
             href="google.com"
           >
@@ -409,7 +409,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           <button
             aria-controls="radix-0"
             aria-expanded="true"
-            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-jgcFYa c-jgcFYa-fpZSlG-size-md"
+            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-jgcFYa c-jgcFYa-jLELKD-size-lg"
             data-radix-collection-item=""
             data-state="open"
             data-testid="accordion-trigger"
