@@ -96,7 +96,7 @@ const StyledButton = styled('button', {
   }
 })
 
-export const PaginationItem: React.FC<IPaginationItemProps> = ({
+export const PaginationPage: React.FC<IPaginationItemProps> = ({
   pageNumber,
   css
 }) => {

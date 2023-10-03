@@ -2,32 +2,44 @@ import * as React from 'react'
 
 import { ColorScheme } from '../../experiments/color-scheme'
 import { Flex } from '../flex'
+import { VisibleElementsAmount } from './pagination.constants'
 import { PaginationProvider } from './pagination-context/PaginationContext'
-import { PaginationNextButton } from './PaginationNextButton'
-import { PaginationPages } from './PaginationPages'
-import { PaginationPreviousButton } from './PaginationPreviousButton'
+import { PaginationItems } from './PaginationItems'
 import type { IPaginationProps } from './types'
 
 export const Pagination: React.FC<IPaginationProps> = ({
   colorScheme,
-  css,
-  ...paginationProps
+  onSelectedPageChange,
+  selectedPage,
+  visibleElementsCount = VisibleElementsAmount.LESS,
+  pagesCount,
+  indicatedPages = [],
+  disabledPages = [],
+  onItemHover = () => null,
+  labels = {},
+  ...rest
 }) => {
-  // Return null if pages is 0 or undefined
-  if (!paginationProps?.pagesCount) {
-    return null
+  if (!pagesCount) return null
+
+  const paginationProviderProps = {
+    onSelectedPageChange,
+    selectedPage,
+    visibleElementsCount,
+    pagesCount,
+    indicatedPages,
+    disabledPages,
+    onItemHover,
+    labels
   }
 
   return (
-    <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
-      <Flex css={css}>
-        <PaginationProvider {...paginationProps}>
-          <PaginationPreviousButton />
-          <PaginationPages />
-          <PaginationNextButton />
-        </PaginationProvider>
-      </Flex>
-    </ColorScheme>
+    <PaginationProvider {...paginationProviderProps}>
+      <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
+        <Flex gap={1} {...rest}>
+          <PaginationItems />
+        </Flex>
+      </ColorScheme>
+    </PaginationProvider>
   )
 }
 
