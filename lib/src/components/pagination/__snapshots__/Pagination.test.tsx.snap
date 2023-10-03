@@ -406,6 +406,10 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
   .c-fDzwZw-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -415,10 +419,6 @@ exports[`Pagination component renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-dhzjXW-hAhhEs-gap-1 {
-    gap: var(--space-1);
   }
 
   .c-fznDru-cVoMNQ-size-md {
@@ -470,7 +470,7 @@ exports[`Pagination component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW t-foghYE t-eGEuHI"
+    class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1 t-foghYE t-eGEuHI"
   >
     <button
       aria-label="Previous page"
@@ -489,64 +489,60 @@ exports[`Pagination component renders 1`] = `
         />
       </svg>
     </button>
-    <div
-      class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1"
+    <button
+      aria-current="page"
+      aria-disabled="false"
+      class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
     >
-      <button
-        aria-current="page"
-        aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
+      1
+    </button>
+    <button
+      aria-current="false"
+      aria-disabled="false"
+      class="c-fznDru c-fznDru-cVoMNQ-size-md"
+    >
+      2
+    </button>
+    <button
+      aria-controls="radix-0"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+      aria-label="Open pagination popover"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+      data-state="closed"
+      data-testid="pagination_popover_trigger"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        1
-      </button>
-      <button
-        aria-current="false"
-        aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md"
-      >
-        2
-      </button>
-      <button
-        aria-controls="radix-0"
-        aria-expanded="false"
-        aria-haspopup="dialog"
-        aria-label="Open pagination popover"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
-        data-state="closed"
-        data-testid="pagination_popover_trigger"
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle
-            cx="12"
-            cy="12"
-            r="1"
-          />
-          <circle
-            cx="6"
-            cy="12"
-            r="1"
-          />
-          <circle
-            cx="18"
-            cy="12"
-            r="1"
-          />
-        </svg>
-      </button>
-      <button
-        aria-current="false"
-        aria-disabled="false"
-        class="c-fznDru c-fznDru-cVoMNQ-size-md"
-      >
-        6
-      </button>
-    </div>
+        <circle
+          cx="12"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="6"
+          cy="12"
+          r="1"
+        />
+        <circle
+          cx="18"
+          cy="12"
+          r="1"
+        />
+      </svg>
+    </button>
+    <button
+      aria-current="false"
+      aria-disabled="false"
+      class="c-fznDru c-fznDru-cVoMNQ-size-md"
+    >
+      6
+    </button>
     <button
       aria-label="Next page"
       class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVVNNd"
