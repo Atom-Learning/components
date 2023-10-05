@@ -196,7 +196,7 @@ type ActionIconProps = Override<
     children: React.ReactNode
     label: string
   } & Omit<TOptionalTooltipWrapperProps, 'label'> &
-    NavigatorActions
+  NavigatorActions
 >
 
 export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
@@ -221,11 +221,11 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
 
     const optionalLinkProps = href
       ? ({
-          as: 'a',
-          href: disabled ? null : href,
-          onClick: undefined,
-          'aria-disabled': !!disabled
-        } as const)
+        as: 'a',
+        href: disabled ? null : href,
+        onClick: undefined,
+        'aria-disabled': !!disabled
+      } as const)
       : ({ type: 'button' } as const)
 
     return (
