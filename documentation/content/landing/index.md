@@ -253,7 +253,7 @@ tabs:
       ones.\",\"link\":{\"href\":\"/components/form/fields/create-password-field\
       \"},\"tags\":[\"Inputs\"],\"image\":\"/assets/images/create-password-inpu\
       t.svg\"},{\"image\":\"/assets/images/datatable.svg\",\"heading\":\"Datata\
-      ble\",\"description\":\"DataTable provides complex features for tables,
+      ble\",\"description\":\"Data Table provides complex features for tables,
       like sorting and
       pagination.\",\"link\":{\"href\":\"/components/content/data-table?tab=code\
       \"},\"tags\":[\"List and tables\"]}]} />"
