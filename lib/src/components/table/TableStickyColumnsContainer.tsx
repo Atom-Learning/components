@@ -34,6 +34,7 @@ export const TableStickyColumnsContainer: React.FC<
       role="scrollbar"
       ref={scrollContainerRef}
       css={{
+        overflow: 'auto',
         maxWidth: '100%',
         ...columnsCss,
         [`& td:nth-child(${numberOfStickyColumns}), th:nth-child(${numberOfStickyColumns})`]:
