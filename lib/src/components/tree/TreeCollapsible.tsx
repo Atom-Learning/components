@@ -3,8 +3,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
-import { TreeItem } from './TreeItem'
 
+import { TreeListItem } from './TreeListItem'
 
 type TTreeCollapsibleContextValue = {
   triggerRef?: React.MutableRefObject<HTMLElement | null>
@@ -29,10 +29,10 @@ type TTreeCollapsibleProps = React.ComponentProps<typeof Root> &
   React.ComponentProps<typeof StyledCollapsibleTreeItemRoot>
 export const TreeCollapsible = (props: TTreeCollapsibleProps): JSX.Element => {
   return (
-    <TreeCollapsibleProvider>
-      <TreeItem>
+    <TreeListItem>
+      <TreeCollapsibleProvider>
         <StyledCollapsibleTreeItemRoot {...props} />
-      </TreeItem>
-    </TreeCollapsibleProvider>
+      </TreeCollapsibleProvider>
+    </TreeListItem>
   )
 }

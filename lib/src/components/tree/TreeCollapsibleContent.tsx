@@ -6,7 +6,14 @@ import { styled } from '~/stitches'
 import { TreeCollapsibleContext } from './TreeCollapsible'
 import { TreeList } from './TreeList'
 
-const StyledTreeCollapsibleContent = styled(Content, {})
+const StyledTreeCollapsibleContent = styled(Content, {
+  '&[data-state="open"]': {
+  },
+  '&[data-state="closed"]': {
+    display: 'none'
+  }
+
+})
 
 type TTreeCollapsibleContentProps = React.ComponentProps<
   typeof StyledTreeCollapsibleContent
@@ -32,7 +39,7 @@ export const TreeCollapsibleContent = ({
   }
 
   return (
-    <StyledTreeCollapsibleContent onKeyDown={handleOnKeydown} {...rest}>
+    <StyledTreeCollapsibleContent onKeyDown={handleOnKeydown} {...rest} asChild>
       <TreeList>{children}</TreeList>
     </StyledTreeCollapsibleContent>
   )

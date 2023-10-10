@@ -1,0 +1,33 @@
+import * as React from 'react'
+
+import { Flex } from '~/components/flex'
+import { Tree } from '~/components/tree'
+import { styled } from '~/stitches'
+import { Icon } from '~/components/icon'
+
+
+const StyledItemContent = styled(Flex, {})
+
+type TCheckboxTreeItemContentProps = React.ComponentProps<typeof Flex>
+
+
+export const CheckboxTreeItemContent = ({ children,
+  ...rest }: TCheckboxTreeItemContentProps): JSX.Element => {
+  return (
+    <StyledItemContent gap={2} align="center" as="label" {...rest}>
+      {
+        React.Children.map(children, (child) => {
+          if (typeof child === 'string' || typeof child === 'number') {
+            return (
+              <Tree.Text>{child}</Tree.Text>
+            )
+          }
+          if (React.isValidElement(child) && child.type === Icon) {
+            return <Tree.Icon {...child.props} />
+          }
+          return child
+        }) as React.ReactElement[]
+      }
+    </StyledItemContent>
+  )
+}

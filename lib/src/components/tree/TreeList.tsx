@@ -1,25 +1,30 @@
 import * as React from 'react'
-import { styled } from '~/stitches'
 
 import { Flex } from '~/components/flex'
+import { styled } from '~/stitches'
 
 const StyledList = styled(Flex, {
+  width: '100%',
   p: 0,
   m: 0,
   listStyle: 'none',
-  '--navigation-menu-vertical-item-pl': '$space$4',
   '& &': {
-    '--navigation-menu-vertical-item-pl': '$space$5'
+    pl: '$space$4',
   },
   '& & &': {
-    '--navigation-menu-vertical-item-pl': '$space$7'
+    pl: '$space$5'
   },
   '& & & &': {
-    '--navigation-menu-vertical-item-pl': '$space$8'
+    pl: '$space$7'
+  },
+  '& & & & &': {
+    pl: '$space$8'
   },
   '& > *:not(:first-child)': {
     mt: '$0'
   }
 })
 
-export const TreeList = (props) => <StyledList as='ul' {...props} gap={2} direction='column' />
+type TreeListProps = Omit<React.ComponentPropsWithoutRef<typeof Flex>, 'direction'>
+
+export const TreeList = (props: TreeListProps): JSX.Element => <StyledList as='ul' gap={1} {...props} direction='column' />

@@ -66,6 +66,47 @@ const App = () => (
         </Tree>
       </Box>
       <Divider />
+      <Box css={{ width: 300 }}>
+        <CheckboxTree>
+          <CheckboxTree.Item value={1}>One</CheckboxTree.Item>
+          <CheckboxTree.Item value={2}>Two</CheckboxTree.Item>
+          <CheckboxTree.Collapsible>
+            <CheckboxTree.CollapsibleTrigger>Trigger 1</CheckboxTree.CollapsibleTrigger>
+            <CheckboxTree.CollapsibleContent>
+              <CheckboxTree.Item value={3}>Nested: One</CheckboxTree.Item>
+              <CheckboxTree.Item value={4}>Nested: Two</CheckboxTree.Item>
+            </CheckboxTree.CollapsibleContent>
+          </CheckboxTree.Collapsible>
+          <CheckboxTree.Collapsible defaultOpen={true}>
+            <CheckboxTree.CollapsibleTrigger>Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2</CheckboxTree.CollapsibleTrigger>
+            <CheckboxTree.CollapsibleContent>
+              <CheckboxTree.Item value={5}>Nested: Three</CheckboxTree.Item>
+              <CheckboxTree.Item value={6}>Nested: Four</CheckboxTree.Item>
+            </CheckboxTree.CollapsibleContent>
+          </CheckboxTree.Collapsible>
+          <CheckboxTree.Collapsible>
+            <CheckboxTree.CollapsibleTrigger>Trigger With Submenu</CheckboxTree.CollapsibleTrigger>
+            <CheckboxTree.CollapsibleContent>
+              <CheckboxTree.Item value={7}>Nested: #1</CheckboxTree.Item>
+              <CheckboxTree.Item value={8}>Nested: #2</CheckboxTree.Item>
+              <CheckboxTree.Item value={9}>Nested: #3</CheckboxTree.Item>
+              <CheckboxTree.Collapsible>
+                <CheckboxTree.CollapsibleTrigger >Nested</CheckboxTree.CollapsibleTrigger>
+                <CheckboxTree.CollapsibleContent>
+                  <CheckboxTree.Item value={10}>Nested: #4</CheckboxTree.Item>
+                  <CheckboxTree.Collapsible>
+                    <CheckboxTree.CollapsibleTrigger>Nested Nested</CheckboxTree.CollapsibleTrigger>
+                    <CheckboxTree.CollapsibleContent>
+                      <CheckboxTree.Item value={11}>Nested: #5</CheckboxTree.Item>
+                    </CheckboxTree.CollapsibleContent>
+                  </CheckboxTree.Collapsible>
+                </CheckboxTree.CollapsibleContent>
+              </CheckboxTree.Collapsible>
+            </CheckboxTree.CollapsibleContent>
+          </CheckboxTree.Collapsible>
+        </CheckboxTree>
+      </Box>
+      <Divider />
       <CheckboxGroup>
         <InlineFieldWrapper label='All'><CheckboxGroup.AllItem /></InlineFieldWrapper>
         <InlineFieldWrapper label='1'><CheckboxGroup.Item value={1} /></InlineFieldWrapper>

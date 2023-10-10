@@ -1,27 +1,28 @@
-import * as React from 'react'
-import { Checkbox } from '../checkbox'
-import { CheckboxTreeRootContext } from './CheckboxTreeRoot'
-// import { useIsMounted } from '~/utilities/hooks/useIsMounted'
+import React from 'react'
+
+import { CheckboxGroup } from '../checkbox-group'
+import { Tree } from '../tree'
+import { Label } from '~/components/label'
+import { CheckboxTreeItemContent } from './CheckboxTreeItemContent'
 
 
-export const CheckboxTreeItem = ({ value, onCheckedChange, ...rest }) => {
-  const { checked: checkedContext, handleCheckedChange: handleCheckedChangeContext, handleMountedChange } = React.useContext(CheckboxTreeRootContext)
+import { styled } from '~/stitches'
 
+type TCheckboxTreeItemProps = React.ComponentProps<
+  typeof Tree.Item
+>
 
-  const handleCheckedChange = (newChecked) => {
-    handleCheckedChangeContext(newChecked, value);
-    onCheckedChange?.(newChecked)
-  }
-
-  React.useEffect(() => {
-    handleMountedChange(true, value)
-    return () => {
-      handleMountedChange(false, value)
-    }
-  }, [])
-
-  return <Checkbox
-    onCheckedChange={handleCheckedChange}
-    checked={checkedContext.includes(value)}
-    {...rest} />
+export const CheckboxTreeItem = ({
+  value,
+  children,
+  ...rest
+}: TCheckboxTreeItemProps) => {
+  return (
+    <Tree.Item {...rest}>
+      <CheckboxTreeItemContent>
+        <CheckboxGroup.Item value={value} css={{ alignSelf: 'flex-start' }} />
+        {children}
+      </CheckboxTreeItemContent>
+    </Tree.Item>
+  )
 }

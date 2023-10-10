@@ -11,10 +11,10 @@ const TreeImplementation = ({
 }) => {
   return (
     <Tree defaultValue="trigger">
-      <Tree.Link active>Button</Tree.Link>
-      <Tree.Link href="google.com">
-        Link
-      </Tree.Link>
+      <Tree.Item active>Button</Tree.Item>
+      <Tree.Item href="google.com">
+        Item
+      </Tree.Item>
       {children}
     </Tree>
   )

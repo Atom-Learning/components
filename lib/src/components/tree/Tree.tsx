@@ -11,9 +11,7 @@ import { TreeItemContent } from './TreeItemContent'
 import { TreeList } from './TreeList'
 import { TreeText } from './TreeText'
 
-const StyledRoot = styled(TreeList, {
-  width: '100%'
-})
+const StyledRoot = styled(TreeList, {})
 
 type TTreeProps = React.ComponentProps<typeof StyledRoot>
 

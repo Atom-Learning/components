@@ -29,6 +29,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all 50ms ease-out',
+  flexShrink: 0,
   '&[data-state="checked"]': {
     backgroundColor: '$primary',
     borderColor: '$primary'

@@ -1,21 +1,13 @@
 import React from 'react'
 
-import { styled } from '~/stitches'
-import { Flex } from '~/components/flex'
 import { TreeItemContent } from './TreeItemContent'
+import { TreeListItem } from './TreeListItem'
 
 
-const StyledTreeItem = styled('li', {
-  position: 'relative',
-  // p: '$2',
-  pl: `var(--navigation-menu-vertical-item-pl)`,
-  width: '100%'
-})
-
-type TTreeItemProps = React.ComponentProps<typeof StyledTreeItem>
+type TTreeItemProps = React.ComponentProps<typeof TreeItemContent>
 
 export const TreeItem = (
   { children, ...rest }: TTreeItemProps
 ): JSX.Element => {
-  return <StyledTreeItem {...rest}><TreeItemContent>{children}</TreeItemContent></StyledTreeItem>
+  return <TreeListItem><TreeItemContent {...rest}>{children}</TreeItemContent></TreeListItem>
 }
