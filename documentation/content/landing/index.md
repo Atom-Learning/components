@@ -180,12 +180,12 @@ tabs:
       inform the user in a particular section of the
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
-      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Drawer\",\"li\
-      nk\":{\"href\":\"/components/navigation/drawer\"},\"description\":\"A
-      side panel to navigate the content of a product. Appears overlaid on top
-      of a page and when triggered by the hamburguer
-      menu.\",\"tags\":[\"Navigation\"]},{\"description\":\"A form control for
-      choosing a value within a preset range of
+      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Drawer\",\"link\"\
+      :{\"href\":\"components/surfaces/drawer\"},\"description\":\"A side panel
+      to navigate the content of a product. Appears overlaid on top of a page
+      and when triggered by the hamburguer
+      menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"]},{\"description\":\
+      \"A form control for choosing a value within a preset range of
       values.\",\"heading\":\"Slider\",\"image\":\"/assets/images/slider.svg\",\
       \"link\":{\"href\":\"/components/form/fields/slider-field\"},\"tags\":[\"\
       Inputs\"]},{\"description\":\"Stack is a layout component that provides an
@@ -252,7 +252,11 @@ tabs:
       their password when creating new
       ones.\",\"link\":{\"href\":\"/components/form/fields/create-password-field\
       \"},\"tags\":[\"Inputs\"],\"image\":\"/assets/images/create-password-inpu\
-      t.svg\"}]} />"
+      t.svg\"},{\"image\":\"/assets/images/datatable.svg\",\"heading\":\"Datata\
+      ble\",\"description\":\"Data Table provides complex features for tables,
+      like sorting and
+      pagination.\",\"link\":{\"href\":\"/components/content/data-table?tab=code\
+      \"},\"tags\":[\"List and tables\"]}]} />"
     title: Main
 slug: landing
 nestedSlug:
