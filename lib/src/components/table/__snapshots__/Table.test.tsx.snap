@@ -633,11 +633,12 @@ exports[`Table component renders with sticky columns 1`] = `
     width: 400px;
   }
 
-  .c-PJLV-iixGFrr-css {
+  .c-PJLV-iiXkAWq-css {
+    overflow: auto;
     max-width: 100%;
   }
 
-  .c-PJLV-iixGFrr-css td {
+  .c-PJLV-iiXkAWq-css td {
     background: inherit;
   }
 
@@ -646,26 +647,27 @@ exports[`Table component renders with sticky columns 1`] = `
     width: 300px;
   }
 
-  .c-PJLV-ieWFZoG-css {
+  .c-PJLV-igbAmsf-css {
+    overflow: auto;
     max-width: 100%;
   }
 
-  .c-PJLV-ieWFZoG-css td:nth-of-type(1),
-  .c-PJLV-ieWFZoG-css th:nth-of-type(1) {
+  .c-PJLV-igbAmsf-css td:nth-of-type(1),
+  .c-PJLV-igbAmsf-css th:nth-of-type(1) {
     position: sticky;
     left: 0px;
     min-width: 0px;
     z-index: 2;
   }
 
-  .c-PJLV-ieWFZoG-css td {
+  .c-PJLV-igbAmsf-css td {
     background: inherit;
   }
 }
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieWFZoG-css"
+    class="c-PJLV c-PJLV-igbAmsf-css"
     role="scrollbar"
   >
     <table

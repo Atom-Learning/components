@@ -777,7 +777,7 @@ describe('DataTable sticky columns', () => {
     const { container } = render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
-          <DataTable.Table numberOfStickyColumns={1} />
+          <DataTable.Table scrollOptions={{ numberOfStickyColumns: 1 }} />
         </DataTable>
       </Wrapper>
     )
