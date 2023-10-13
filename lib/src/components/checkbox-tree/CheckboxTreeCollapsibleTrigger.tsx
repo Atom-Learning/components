@@ -19,7 +19,7 @@ export const CheckboxTreeCollapsibleTrigger = ({
   return (
     <Tree.CollapsibleTrigger {...rest}>
       <CheckboxTreeItemContent>
-        <CheckboxGroup.AllItem css={{ alignSelf: 'flex-start' }} />
+        <CheckboxGroup.AllItem />
         {children}
       </CheckboxTreeItemContent>
     </Tree.CollapsibleTrigger>

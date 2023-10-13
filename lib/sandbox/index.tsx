@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
-import { ArrowRight } from '@atom-learning/icons'
+import { ArrowRight, Person } from '@atom-learning/icons'
 import { Root, Trigger, Content } from '@radix-ui/react-collapsible'
 
 import { styled } from '~/stitches'
@@ -68,17 +68,17 @@ const App = () => (
       <Divider />
       <Box css={{ width: 300 }}>
         <CheckboxTree>
-          <CheckboxTree.Item value={1}>One</CheckboxTree.Item>
+          <CheckboxTree.Item value={1}><Icon is={Person} />One</CheckboxTree.Item>
           <CheckboxTree.Item value={2}>Two</CheckboxTree.Item>
           <CheckboxTree.Collapsible>
-            <CheckboxTree.CollapsibleTrigger>Trigger 1</CheckboxTree.CollapsibleTrigger>
+            <CheckboxTree.CollapsibleTrigger><Icon is={Person} />Trigger 1</CheckboxTree.CollapsibleTrigger>
             <CheckboxTree.CollapsibleContent>
-              <CheckboxTree.Item value={3}>Nested: One</CheckboxTree.Item>
+              <CheckboxTree.Item value={3}><Icon is={Person} />Nested: One</CheckboxTree.Item>
               <CheckboxTree.Item value={4}>Nested: Two</CheckboxTree.Item>
             </CheckboxTree.CollapsibleContent>
           </CheckboxTree.Collapsible>
           <CheckboxTree.Collapsible defaultOpen={true}>
-            <CheckboxTree.CollapsibleTrigger>Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2</CheckboxTree.CollapsibleTrigger>
+            <CheckboxTree.CollapsibleTrigger><Icon is={Person} />Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2</CheckboxTree.CollapsibleTrigger>
             <CheckboxTree.CollapsibleContent>
               <CheckboxTree.Item value={5}>Nested: Three</CheckboxTree.Item>
               <CheckboxTree.Item value={6}>Nested: Four</CheckboxTree.Item>
@@ -91,7 +91,7 @@ const App = () => (
               <CheckboxTree.Item value={8}>Nested: #2</CheckboxTree.Item>
               <CheckboxTree.Item value={9}>Nested: #3</CheckboxTree.Item>
               <CheckboxTree.Collapsible>
-                <CheckboxTree.CollapsibleTrigger >Nested</CheckboxTree.CollapsibleTrigger>
+                <CheckboxTree.CollapsibleTrigger ><Icon is={Person} />Nested</CheckboxTree.CollapsibleTrigger>
                 <CheckboxTree.CollapsibleContent>
                   <CheckboxTree.Item value={10}>Nested: #4</CheckboxTree.Item>
                   <CheckboxTree.Collapsible>

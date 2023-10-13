@@ -5,7 +5,8 @@ import { styled } from '~/stitches'
 
 const StyledTreeIcon = styled(Icon, {
   flexShrink: 0,
-  alignSelf: 'start'
+  alignSelf: 'start',
+  my: '4px'
 })
 export const TreeIcon = (
   props: React.ComponentProps<typeof StyledTreeIcon>

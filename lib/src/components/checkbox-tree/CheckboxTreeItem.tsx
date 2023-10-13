@@ -8,19 +8,17 @@ import { CheckboxTreeItemContent } from './CheckboxTreeItemContent'
 
 import { styled } from '~/stitches'
 
-type TCheckboxTreeItemProps = React.ComponentProps<
-  typeof Tree.Item
->
+type TCheckboxTreeItemProps = React.ComponentProps<typeof Tree.Item> & React.ComponentProps<typeof CheckboxGroup.Item>
 
 export const CheckboxTreeItem = ({
   value,
   children,
   ...rest
-}: TCheckboxTreeItemProps) => {
+}: TCheckboxTreeItemProps): JSX.Element => {
   return (
     <Tree.Item {...rest}>
       <CheckboxTreeItemContent>
-        <CheckboxGroup.Item value={value} css={{ alignSelf: 'flex-start' }} />
+        <CheckboxGroup.Item value={value} />
         {children}
       </CheckboxTreeItemContent>
     </Tree.Item>

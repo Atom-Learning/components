@@ -10,7 +10,7 @@ import { TreeText } from './TreeText'
 const StyledItemContent = styled(Flex, {
   position: 'relative',
   minHeight: '$3',
-  pl: '$6',
+  pl: '$6'
 })
 
 type TTreeItemContentProps = React.ComponentProps<typeof Flex>

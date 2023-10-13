@@ -23,7 +23,10 @@ const TreeCollapsibleProvider = ({ children }) => {
   )
 }
 
-const StyledCollapsibleTreeItemRoot = styled(Root, {})
+const StyledCollapsibleTreeItemRoot = styled(Root, {
+  width: '100%',
+  bg: 'red'
+})
 
 type TTreeCollapsibleProps = React.ComponentProps<typeof Root> &
   React.ComponentProps<typeof StyledCollapsibleTreeItemRoot>

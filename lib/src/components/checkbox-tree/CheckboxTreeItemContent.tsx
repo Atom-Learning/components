@@ -1,12 +1,15 @@
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
+import { Icon } from '~/components/icon'
 import { Tree } from '~/components/tree'
 import { styled } from '~/stitches'
-import { Icon } from '~/components/icon'
 
 
-const StyledItemContent = styled(Flex, {})
+const StyledItemContent = styled(Flex, {
+  width: 0,
+  flexGrow: 1
+})
 
 type TCheckboxTreeItemContentProps = React.ComponentProps<typeof Flex>
 

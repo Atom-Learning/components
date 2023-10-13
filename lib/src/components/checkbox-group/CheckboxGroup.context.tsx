@@ -53,7 +53,7 @@ export const CheckboxGroupProvider: React.FC<TCheckboxGroupContextProps> = ({
       const newMounted = Array.from(newMountedSet)
       return newMounted
     })
-  }, [])
+  }, [handleItemMountedChangeFurtherUpContext])
 
   const value = React.useMemo<TCheckboxGroupContextValue>(
     () => ({ checked, handleItemCheckedChange, mounted, handleItemMountedChange }),
