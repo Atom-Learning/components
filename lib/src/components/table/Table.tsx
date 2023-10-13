@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { TableBody } from './TableBody'
 import { TableCell } from './TableCell'
@@ -67,12 +67,14 @@ const StyledTable = styled('table', {
 
 type TableProps = React.ComponentProps<typeof StyledTable> & {
   numberOfStickyColumns?: number
+  scrollContainerCss?: CSS
 }
 
 export const Table: React.FC<TableProps> & TableSubComponents = ({
   size = 'md',
   corners = 'round',
   numberOfStickyColumns = 0,
+  scrollContainerCss,
   ...rest
 }: TableProps) => {
   const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
@@ -80,6 +82,7 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
   if (numberOfStickyColumns) {
     return (
       <TableStickyColumnsContainer
+        css={scrollContainerCss}
         numberOfStickyColumns={numberOfStickyColumns}
       >
         {tableComponent}
