@@ -428,6 +428,7 @@ tabs:
 
 
 
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -485,8 +486,6 @@ tabs:
 
 
       Keep in mind that this will add a vertical scrollbar to the table.
-
-
 
 
       Here's how your DataTable component might look like:
