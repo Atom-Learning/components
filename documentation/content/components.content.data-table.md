@@ -427,6 +427,8 @@ tabs:
 
 
 
+
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -434,20 +436,75 @@ tabs:
       </DataTable>`} language={"jsx"} />
 
 
-      #### Sticky header
+      #### Scrolling behaviour
 
 
-      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can pass the \`hasStickyHeader\` prop to the \`DataTable.Table\` component. This should be enough for simple use cases, but if you maybe have another sticky element above the table, and will need some sort of offset on your table's header, there's also a \`headerCss\` prop that you can use. Pass this and feel free to customise the header's CSS. 
+      You might need to display your table on smaller devices. Or you may have a lot of data loaded at once in your table. Or you might have a large table that you wish to display on smaller screens. 
+
+
+      In either case, one possible solution would be to add scrolling behaviour. Horizontally or vertically. Or both.
+
+
+      You can pass `scrollOptions` as a prop to enable either. `scrollOptions` is an object which can have a number of key-value pairs, as follows:
+
+
+      <CodeBlock live={false} preview={false} code={`{
+        hasStickyHeader: true,
+        headerCss: {
+          top: '100px',
+          zIndex: 12  
+        },
+        numberOfStickyColumns: 2,
+        scrollContainerCss: {
+          height: '250px'
+        }
+      }`} language={"javascript"} />
+
+
+      #### hasStickyHeader
+
+
+      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can add `hasStickyHeader: true` to the `scrollOptions` object. 
+
+
+      #### headerCss
+
+
+      `hasStickyHeader` should be enough for simple use cases, but if you maybe have another sticky element above the table, and will need some sort of offset on your table's header, there's also  `headerCss` which you can use. Add this and feel free to customise the header's CSS. 
+
+
+      #### numberOfStickyColumns
+
+
+      If your table has many columns and you wish to make sure it displays nicely on smaller screens, one option would be to have some columns which "stick" to the left side of the table and have the rest scroll horizontally. Keep in mind that if you are also using `enableRowSelection`, your table will have an extra column, containing the selection checkbox. So if you wish for your first data column to stick, you will need to pass `numberOfStickyColumns: 2`.
+
+
+      #### scrollContainerCss
+
+
+      Sometimes you might have a table with many columns and rows, and you might also wish to have it display nicely on smaller devices. In this case, you will perhaps think about adding both `hasStickyHeader` and `numberOfStickyColumns`. The problem is that when `numberOfStickyColumns` is passed along side `hasStickyHeader`, the "stickyness" of the header is lost. We're going to need to add a fixed height to our table, which will now be wrapped in a scrollbox. Use `scrollContainerCss` for this.
+
+
+      Keep in mind that this will add a vertical scrollbar to the table.
+
+
+      Here's how your DataTable component might look like:
 
 
       <CodeBlock live={false} preview={false} code={`<DataTable columns={columns} data={data}>
         <DataTable.Table 
-          hasStickyHeader
-          headerCss={{
-            top: '100px',
-            zIndex: 10
+          scrollOptions={{
+            hasStickyHeader: true,
+            headerCss: {
+              top: '100px',
+              zIndex: 10
+            },
+            numberOfStickyColumns: 2,
+            scrollContainerCss: {
+              height: '250px'
+            }  
           }}
-          />
+        />
       </DataTable>
 
       `} language={"jsx"} />
