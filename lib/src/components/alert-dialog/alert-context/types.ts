@@ -9,7 +9,7 @@ export type alert = {
   size?: React.ComponentProps<typeof AlertDialogContent>['size']
   theme?: AlertDialogTheme
   description?: string
-  onAction: (result: boolean) => void
+  onAction?: (result: boolean) => void
   confirmActionText: string
   cancelActionText?: string
   showCloseButton?: boolean

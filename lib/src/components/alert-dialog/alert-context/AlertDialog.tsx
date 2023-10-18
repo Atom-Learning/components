@@ -52,7 +52,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           <Button
             appearance="outline"
             as={AlertDialog.Cancel}
-            onClick={() => onAction(false)}
+            onClick={() => onAction?.(false)}
             size="sm"
           >
             {cancelActionText}
@@ -60,7 +60,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
         )}
         <Button
           as={AlertDialog.Action}
-          onClick={() => onAction(true)}
+          onClick={() => onAction?.(true)}
           size="sm"
         >
           {confirmActionText}
