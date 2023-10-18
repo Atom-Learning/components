@@ -7,6 +7,7 @@ import { Heading } from '../../heading'
 import { Stack } from '../../stack'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
+import { AlertDialogClose } from './AlertDialogClose'
 import type { alert } from './types'
 
 type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
@@ -22,6 +23,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
   cancelActionText,
   confirmActionText,
   onClose,
+  showCloseButton = true,
   ...remainingProps
 }) => (
   <AlertDialog defaultOpen>
@@ -31,9 +33,10 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       onCloseAutoFocus={onClose}
       {...remainingProps}
     >
-      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$5' }}>
+      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$5', mr: '$4' }}>
         {title}
       </Heading>
+      {showCloseButton && <AlertDialogClose />}
       {description && (
         <Text as={AlertDialog.Description} css={{ mb: '$5' }}>
           {description}

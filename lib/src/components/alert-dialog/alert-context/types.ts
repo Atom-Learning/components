@@ -9,4 +9,5 @@ export type alert = {
   onAction: (result: boolean) => void
   confirmActionText: string
   cancelActionText?: string
+  showCloseButton?: boolean
 }
