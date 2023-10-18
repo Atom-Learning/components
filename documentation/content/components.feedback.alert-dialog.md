@@ -11,21 +11,29 @@ tabs:
       expects a response
 
 
-      `AlertDialog` exports a number of components that can be composed together to create a modal pop up that expects a response from the user. `AlertDialog` also exports a custom hook that can be used to dynamically render an alert based on some content and a callback; you can see an example of this below.
+      `AlertDialog` exports a number of components that can be composed together to create a modal pop up that expects a response from the user.
 
 
-      <CodeBlock live={false} preview={false} code={`import { AlertProvider, Button, useAlert } from '@atom-learning/components'
+      `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a few props allowing the `AlertDialog` to be customised in a number of ways; you can see an example of this below.
 
 
-      const Component = () => {
+      <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
         const { showAlert } = useAlert()
 
         const handleClick = () => {
           showAlert({
+            id: 'my-alert',
+            theme: 'warning',
+            size: 'md',
+            showCloseButton: true,
             title: 'Are you sure you want to delete this school?',
             description: 'This will remove all restrictions from your school',
             confirmActionText: 'Delete school',
+            confirmButtonTheme: 'warning',
+            confirmButtonAppearance: 'solid',
             cancelActionText: 'Cancel',
+            cancelButtonTheme: 'primary',
+            cancelButtonAppearance: 'outline',
             onAction: (result) => {
               if (result) console.log('Confirmation')
             }
@@ -38,9 +46,11 @@ tabs:
 
       const App = () => (
         <AlertProvider>
-          <Component />
+          <MyComponent />
         </AlertProvider>
-      )`} language={"tsx"} />
+      )
+
+      render(<App />)`} language={"tsx"} />
 
 
       ## Accessibility
