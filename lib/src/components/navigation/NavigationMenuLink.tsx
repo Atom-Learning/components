@@ -8,6 +8,7 @@ import {
   navigationMenuBaseItemStyles,
   navigationMenuDisabledItemStyles
 } from './NavigationMenu.styles'
+import { isExternalLink } from '~/utilities/uri'
 
 const DisabledButton = styled('button', {
   ...navigationMenuBaseItemStyles,
@@ -60,25 +61,31 @@ export const NavigationMenuLink = React.forwardRef<
   (
     { children, href, disabled, css, variant = 'link', ...props },
     forwardedRef
-  ) => (
-    <ListItem>
-      {disabled ? (
-        <DisabledButton disabled {...props}>
-          {children}
-        </DisabledButton>
-      ) : (
-        <StyledLink
-          href={href}
-          ref={forwardedRef}
-          elementType={variant}
-          css={css}
-          {...props}
-        >
-          {children}
-        </StyledLink>
-      )}
-    </ListItem>
-  )
+  ) => {
+    const externalLinkProps = isExternalLink(href)
+      ? { target: '_blank', rel: 'noopener noreferrer' }
+      : {}
+    return (
+      <ListItem>
+        {disabled ? (
+          <DisabledButton disabled {...props}>
+            {children}
+          </DisabledButton>
+        ) : (
+          <StyledLink
+            href={href}
+            ref={forwardedRef}
+            elementType={variant}
+            css={css}
+            {...externalLinkProps}
+            {...props}
+          >
+            {children}
+          </StyledLink>
+        )}
+      </ListItem>
+    )
+  }
 )
 
 NavigationMenuLink.displayName = 'NavigationMenuLink'
