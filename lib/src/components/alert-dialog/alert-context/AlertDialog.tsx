@@ -37,6 +37,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       size={size}
       onEscapeKeyDown={(e) => e.preventDefault()}
       onCloseAutoFocus={onClose}
+      css={{ display: 'flex', flexDirection: 'column', maxHeight: '90vh' }}
       {...remainingProps}
     >
       <Flex css={{ alignItems: 'center', mb: '$5' }}>
@@ -47,7 +48,10 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       </Flex>
       {showCloseButton && <AlertDialogClose />}
       {description && (
-        <Text as={AlertDialog.Description} css={{ mb: '$5' }}>
+        <Text
+          as={AlertDialog.Description}
+          css={{ display: 'flex', overflowY: 'scroll', mb: '$5' }}
+        >
           {description}
         </Text>
       )}
