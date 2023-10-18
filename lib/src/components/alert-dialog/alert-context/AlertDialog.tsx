@@ -26,6 +26,10 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
   confirmActionText,
   onClose,
   showCloseButton = true,
+  confirmButtonTheme = 'primary',
+  confirmButtonAppearance = 'solid',
+  cancelButtonTheme = 'primary',
+  cancelButtonAppearance = 'outline',
   ...remainingProps
 }) => (
   <AlertDialog defaultOpen>
@@ -50,10 +54,11 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       <Flex gap="2" justify="end">
         {cancelActionText && (
           <Button
-            appearance="outline"
             as={AlertDialog.Cancel}
             onClick={() => onAction?.(false)}
             size="sm"
+            theme={cancelButtonTheme}
+            appearance={cancelButtonAppearance}
           >
             {cancelActionText}
           </Button>
@@ -62,6 +67,8 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           as={AlertDialog.Action}
           onClick={() => onAction?.(true)}
           size="sm"
+          theme={confirmButtonTheme}
+          appearance={confirmButtonAppearance}
         >
           {confirmActionText}
         </Button>
