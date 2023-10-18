@@ -4,7 +4,7 @@ import { CSS } from '~/stitches'
 
 import { Button } from '../../button'
 import { Heading } from '../../heading'
-import { Stack } from '../../stack'
+import { Flex } from '../../flex'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
 import { AlertDialogClose } from './AlertDialogClose'
@@ -42,7 +42,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           {description}
         </Text>
       )}
-      <Stack gap="2" justify="end">
+      <Flex gap="2" justify="end">
         {cancelActionText && (
           <Button
             appearance="outline"
@@ -60,7 +60,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
         >
           {confirmActionText}
         </Button>
-      </Stack>
+      </Flex>
     </AlertDialog.Content>
   </AlertDialog>
 )
