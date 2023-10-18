@@ -8,6 +8,7 @@ import { Flex } from '../../flex'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
 import { AlertDialogClose } from './AlertDialogClose'
+import { AlertDialogIcon } from './AlertDialogIcon'
 import type { alert } from './types'
 
 type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
@@ -18,6 +19,7 @@ type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
 export const Alert: React.FC<AlertDialogContentProps> = ({
   title,
   size,
+  theme,
   description,
   onAction,
   cancelActionText,
@@ -33,9 +35,12 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       onCloseAutoFocus={onClose}
       {...remainingProps}
     >
-      <Heading as={AlertDialog.Title} size="sm" css={{ mb: '$5', mr: '$4' }}>
-        {title}
-      </Heading>
+      <Flex css={{ alignItems: 'center', mb: '$5' }}>
+        {theme && <AlertDialogIcon theme={theme} />}
+        <Heading as={AlertDialog.Title} size="sm" css={{ mr: '$4' }}>
+          {title}
+        </Heading>
+      </Flex>
       {showCloseButton && <AlertDialogClose />}
       {description && (
         <Text as={AlertDialog.Description} css={{ mb: '$5' }}>
