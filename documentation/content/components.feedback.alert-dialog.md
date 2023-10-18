@@ -25,7 +25,6 @@ tabs:
             id: 'my-alert',
             theme: 'warning',
             size: 'md',
-            showCloseButton: true,
             title: 'Are you sure you want to delete this school?',
             description: 'This will remove all restrictions from your school',
             confirmActionText: 'Delete school',

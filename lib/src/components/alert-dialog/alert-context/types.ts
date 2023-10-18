@@ -2,7 +2,7 @@ import { uid } from 'uid'
 import { Button } from '~/components/button'
 
 import { AlertDialogContent } from '../AlertDialogContent'
-import { type AlertDialogTheme } from './AlertDialogIcon'
+import { AlertDialogTheme } from './AlertDialogIcon'
 
 type ButtonTheme = React.ComponentProps<typeof Button>['theme']
 type ButtonAppearance = React.ComponentProps<typeof Button>['appearance']
@@ -16,7 +16,6 @@ export type alert = {
   onAction?: (result: boolean) => void
   confirmActionText: string
   cancelActionText?: string
-  showCloseButton?: boolean
   confirmButtonTheme?: ButtonTheme
   confirmButtonAppearance?: ButtonAppearance
   cancelButtonTheme?: ButtonTheme

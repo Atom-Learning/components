@@ -7,7 +7,6 @@ import { Heading } from '../../heading'
 import { Flex } from '../../flex'
 import { Text } from '../../text'
 import { AlertDialog } from '../AlertDialog'
-import { AlertDialogClose } from './AlertDialogClose'
 import { AlertDialogIcon } from './AlertDialogIcon'
 import type { alert } from './types'
 
@@ -25,7 +24,6 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
   cancelActionText,
   confirmActionText,
   onClose,
-  showCloseButton = true,
   confirmButtonTheme = 'primary',
   confirmButtonAppearance = 'solid',
   cancelButtonTheme = 'primary',
@@ -46,7 +44,6 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           {title}
         </Heading>
       </Flex>
-      {showCloseButton && <AlertDialogClose />}
       {description && (
         <Text
           as={AlertDialog.Description}
