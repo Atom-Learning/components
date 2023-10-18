@@ -16,6 +16,7 @@ type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
 
 export const Alert: React.FC<AlertDialogContentProps> = ({
   title,
+  size,
   description,
   onAction,
   cancelActionText,
@@ -25,6 +26,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
 }) => (
   <AlertDialog defaultOpen>
     <AlertDialog.Content
+      size={size}
       onEscapeKeyDown={(e) => e.preventDefault()}
       onCloseAutoFocus={onClose}
       {...remainingProps}
