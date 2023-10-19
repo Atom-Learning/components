@@ -7,7 +7,6 @@ import { Icon } from '../../icon'
 export type AlertDialogTheme = 'info' | 'warning' | 'danger' | 'success'
 
 const StyledIcon = styled(Icon, {
-  mr: '$2',
   flexShrink: 0,
   alignSelf: 'flex-start',
   color: '$blue1100',
