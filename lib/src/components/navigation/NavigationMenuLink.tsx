@@ -8,6 +8,7 @@ import {
   navigationMenuBaseItemStyles,
   navigationMenuDisabledItemStyles
 } from './NavigationMenu.styles'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 const DisabledButton = styled('button', {
   ...navigationMenuBaseItemStyles,
@@ -72,6 +73,7 @@ export const NavigationMenuLink = React.forwardRef<
           ref={forwardedRef}
           elementType={variant}
           css={css}
+          {...getExternalAnchorProps(href)}
           {...props}
         >
           {children}

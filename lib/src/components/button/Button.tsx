@@ -8,7 +8,7 @@ import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
-import { isExternalLink } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
   base: string,
@@ -240,30 +240,24 @@ type ButtonProps = Override<
 >
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
-    const externalLinkProps = isExternalLink(href)
-      ? { target: '_blank', rel: 'noopener noreferrer' }
-      : {}
-
-    return (
-      <StyledButton
-        as={as || (href ? 'a' : undefined)}
-        href={href}
-        isLoading={isLoading}
-        onClick={!isLoading ? onClick : undefined}
-        type={!href ? 'button' : undefined}
-        {...rest}
-        {...externalLinkProps}
-        ref={ref}
-      >
-        {isLoading ? (
-          <WithLoader size={rest.size}>{children}</WithLoader>
-        ) : (
-          children
-        )}
-      </StyledButton>
-    )
-  }
+  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => (
+    <StyledButton
+      as={as || (href ? 'a' : undefined)}
+      href={href}
+      isLoading={isLoading}
+      onClick={!isLoading ? onClick : undefined}
+      type={!href ? 'button' : undefined}
+      {...rest}
+      {...getExternalAnchorProps(href)}
+      ref={ref}
+    >
+      {isLoading ? (
+        <WithLoader size={rest.size}>{children}</WithLoader>
+      ) : (
+        children
+      )}
+    </StyledButton>
+  )
 ) as React.FC<ButtonProps>
 
 Button.displayName = 'Button'

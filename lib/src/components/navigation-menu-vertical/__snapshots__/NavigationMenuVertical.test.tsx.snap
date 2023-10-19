@@ -169,7 +169,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         <a
           class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
           data-radix-collection-item=""
-          href="google.com"
+          href="/somewhere"
         >
           <div
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -177,7 +177,28 @@ exports[`NavigationMenuVertical renders 1`] = `
             <span
               class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
             >
-              Link
+              Relative Link
+            </span>
+          </div>
+        </a>
+      </li>
+      <li
+        class="c-PJLV"
+      >
+        <a
+          class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
+          data-radix-collection-item=""
+          href="http://google.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <span
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+            >
+              External Link
             </span>
           </div>
         </a>
@@ -389,7 +410,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           <a
             class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
             data-radix-collection-item=""
-            href="google.com"
+            href="/somewhere"
           >
             <div
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -397,7 +418,28 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               <span
                 class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
               >
-                Link
+                Relative Link
+              </span>
+            </div>
+          </a>
+        </li>
+        <li
+          class="c-PJLV"
+        >
+          <a
+            class="c-jgcFYa c-jgcFYa-jLELKD-size-lg"
+            data-radix-collection-item=""
+            href="http://google.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <span
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              >
+                External Link
               </span>
             </div>
           </a>
