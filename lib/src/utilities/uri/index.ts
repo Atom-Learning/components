@@ -1,6 +1,9 @@
-export const isExternalLink = (link = '') => {
-  if (typeof window === 'undefined') return false
+export const isExternalUrl = (url?: string) => {
+  if (typeof window === 'undefined' || !url) return false
 
-  const isAbsolute = /^https?:\/\//.test(link)
-  return isAbsolute && new URL(link).origin !== window.location.origin
+  const isAbsoluteUrl = /^https?:\/\//.test(url)
+  return isAbsoluteUrl && new URL(url).origin !== window.location.origin
 }
+
+export const getExternalAnchorProps = (url?: string) =>
+  isExternalUrl(url) ? { target: '_blank', rel: 'noopener noreferrer' } : {}
