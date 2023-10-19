@@ -52,7 +52,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
           {description}
         </Text>
       )}
-      <Flex gap="2" justify="end">
+      <Flex gap="2" justify="end" wrap="wrap">
         {cancelActionText && (
           <Button
             as={AlertDialog.Cancel}
