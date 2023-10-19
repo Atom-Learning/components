@@ -8,10 +8,10 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
-import { getExternalAnchorProps } from '~/utilities/uri'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
