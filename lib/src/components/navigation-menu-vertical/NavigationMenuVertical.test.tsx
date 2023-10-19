@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 
@@ -12,8 +12,11 @@ const NavigationMenuVerticalImplementation = ({
   return (
     <NavigationMenuVertical defaultValue="trigger">
       <NavigationMenuVertical.Link active>Button</NavigationMenuVertical.Link>
-      <NavigationMenuVertical.Link href="google.com">
-        Link
+      <NavigationMenuVertical.Link href="/somewhere">
+        Relative Link
+      </NavigationMenuVertical.Link>
+      <NavigationMenuVertical.Link href="http://google.com">
+        External Link
       </NavigationMenuVertical.Link>
       {children}
     </NavigationMenuVertical>
@@ -24,17 +27,18 @@ const mockOnOpenChange = jest.fn((_value) => null)
 
 describe('NavigationMenuVertical', () => {
   it('renders', async () => {
-    const { findByRole } = render(<NavigationMenuVerticalImplementation />)
+    render(<NavigationMenuVerticalImplementation />)
 
-    const navigation = await findByRole('navigation')
-    await findByRole('link', { name: 'Link' })
-    await findByRole('button', { name: 'Button' })
+    const navigation = await screen.findByRole('navigation')
+    await screen.findByRole('link', { name: 'Relative Link' })
+    await screen.findByRole('link', { name: 'External Link' })
+    await screen.findByRole('button', { name: 'Button' })
 
     expect(navigation).toMatchSnapshot()
   })
 
   it('renders accordion and interacts correctly', async () => {
-    const { findByRole, container, getByTestId } = render(
+    const { container } = render(
       <NavigationMenuVerticalImplementation>
         <NavigationMenuVertical.Accordion
           onOpenChange={mockOnOpenChange}
@@ -52,11 +56,11 @@ describe('NavigationMenuVertical', () => {
 
     expect(container).toMatchSnapshot()
 
-    const accordionTrigger = await findByRole('button', {
+    const accordionTrigger = await screen.findByRole('button', {
       name: 'Accordion Trigger'
     })
     expect(accordionTrigger).toHaveAttribute('data-state', 'open')
-    const accordionContent = getByTestId('accordion-content')
+    const accordionContent = screen.getByTestId('accordion-content')
     expect(accordionContent).toBeVisible()
 
     userEvent.click(accordionTrigger)
