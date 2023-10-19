@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { DropdownMenuItem } from './DropdownMenuItem'
-import { getExternalAnchorProps } from '~/utilities/uri'
 
 const StyledLink = styled('a', {
   textDecoration: 'none'

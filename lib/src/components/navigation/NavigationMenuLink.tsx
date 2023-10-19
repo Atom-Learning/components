@@ -2,13 +2,13 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { CSS, styled } from '~/stitches'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import {
   navigationMenuActiveItemStyles,
   navigationMenuBaseItemStyles,
   navigationMenuDisabledItemStyles
 } from './NavigationMenu.styles'
-import { getExternalAnchorProps } from '~/utilities/uri'
 
 const DisabledButton = styled('button', {
   ...navigationMenuBaseItemStyles,
