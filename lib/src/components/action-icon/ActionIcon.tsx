@@ -11,7 +11,7 @@ import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
 
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
-import { isExternalLink } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 const getSimpleVariant = (base: string, interact: string, active: string) => ({
   bg: 'transparent',
@@ -238,9 +238,6 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
           'aria-disabled': !!disabled
         } as const)
       : ({ type: 'button' } as const)
-    const externalLinkProps = isExternalLink(href)
-      ? { target: '_blank', rel: 'noopener noreferrer' }
-      : {}
 
     return (
       <OptionalTooltipWrapper
@@ -250,7 +247,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       >
         <StyledButton
           {...optionalLinkProps}
-          {...externalLinkProps}
+          {...getExternalAnchorProps(href)}
           {...remainingProps}
           aria-label={label}
           theme={theme}
