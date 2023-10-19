@@ -1,23 +1,31 @@
+import * as React from 'react'
 import { uid } from 'uid'
-import { Button } from '~/components/button'
 
 import { AlertDialogContent } from '../AlertDialogContent'
 import { AlertDialogTheme } from './AlertDialogIcon'
 
-type ButtonTheme = React.ComponentProps<typeof Button>['theme']
-type ButtonAppearance = React.ComponentProps<typeof Button>['appearance']
-
-export type alert = {
+type AlertCommonProps = {
   id: ReturnType<typeof uid>
   title: string
   size?: React.ComponentProps<typeof AlertDialogContent>['size']
   theme?: AlertDialogTheme
   description?: string
-  onAction?: (result: boolean) => void
-  confirmActionText: string
-  cancelActionText?: string
-  confirmButtonTheme?: ButtonTheme
-  confirmButtonAppearance?: ButtonAppearance
-  cancelButtonTheme?: ButtonTheme
-  cancelButtonAppearance?: ButtonAppearance
 }
+
+type AlertActions =
+  | {
+      onAction?: (result: boolean) => void
+      confirmActionText: string
+      cancelActionText?: string
+      confirmElement?: never
+      cancelElement?: never
+    }
+  | {
+      onAction?: never
+      confirmActionText?: never
+      cancelActionText?: never
+      confirmElement: React.ReactNode
+      cancelElement?: React.ReactNode
+    }
+
+export type alert = AlertCommonProps & AlertActions

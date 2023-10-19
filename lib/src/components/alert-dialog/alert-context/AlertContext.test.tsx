@@ -4,8 +4,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { AlertProvider, useAlert } from './AlertContext'
+import { Button } from '../../button'
 
-const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
+const ComponentTest = ({ showSecondAlert, onAction = () => null, ...rest }) => {
   const { showAlert } = useAlert()
 
   return (
@@ -17,7 +18,8 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
           description: 'DESCRIPTION',
           cancelActionText: 'CANCEL',
           confirmActionText: 'CONFIRM',
-          onAction
+          onAction,
+          ...rest
         })
         if (showSecondAlert) {
           showAlert({
@@ -109,5 +111,24 @@ describe('Alert context', () => {
 
     expect(screen.queryByText('TITLE')).not.toBeInTheDocument()
     expect(await screen.findByText('DESCRIPTION 2')).toBeInTheDocument()
+  })
+
+  it('it renders confirm and cancel elements', () => {
+    render(
+      <AlertContextTest
+        confirmElement={<Button>Yes, please delete</Button>}
+        cancelElement={<Button>No, don't delete</Button>}
+      />
+    )
+
+    const trigger = screen.getByText('TRIGGER')
+    fireEvent.click(trigger)
+
+    expect(screen.queryByText('TITLE')).toBeInTheDocument()
+    expect(screen.queryByText('Yes, please delete')).toBeInTheDocument()
+    expect(screen.queryByText("No, don't delete")).toBeInTheDocument()
+
+    expect(screen.queryByText('CONFIRM')).not.toBeInTheDocument()
+    expect(screen.queryByText('CANCEL')).not.toBeInTheDocument()
   })
 })

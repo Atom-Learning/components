@@ -14,7 +14,7 @@ tabs:
       `AlertDialog` exports a number of components that can be composed together to create a modal pop up that expects a response from the user.
 
 
-      `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a few props allowing the `AlertDialog` to be customised in a number of ways; you can see an example of this below.
+      `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a `theme` and `size` prop which can be used to customise the `AlertDialog`
 
 
       <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
@@ -28,11 +28,7 @@ tabs:
             title: 'Are you sure you want to delete this school?',
             description: 'This will remove all restrictions from your school',
             confirmActionText: 'Delete school',
-            confirmButtonTheme: 'warning',
-            confirmButtonAppearance: 'solid',
-            cancelActionText: 'Cancel',
-            cancelButtonTheme: 'primary',
-            cancelButtonAppearance: 'outline',
+            cancelActionText: 'No',
             onAction: (result) => {
               if (result) console.log('Confirmation')
             }
@@ -40,6 +36,34 @@ tabs:
         }
 
         return <Button onClick={handleClick}>Delete school</Button>
+      }
+
+      const App = () => (
+        <AlertProvider>
+          <MyComponent />
+        </AlertProvider>
+      )
+
+      render(<App />)`} language={"tsx"} />
+
+      Instead of supplying the action text, `showAlert` accepts `confirmElement` and `cancelElement`:
+
+      <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
+        const { showAlert } = useAlert()
+
+        const handleClick = () => {
+          showAlert({
+            id: 'my-alert',
+            theme: 'danger',
+            size: 'lg',
+            title: 'Delete student',
+            description: 'You are going to delete this student. Are you sure?',
+            confirmElement: <Button theme="danger" size="sm">Yes, delete them please</Button>,
+            cancelElement: <Button appearance="outline" size="sm">Nah, don't do that</Button>
+          })
+        }
+
+        return <Button onClick={handleClick}>Delete student</Button>
       }
 
 
