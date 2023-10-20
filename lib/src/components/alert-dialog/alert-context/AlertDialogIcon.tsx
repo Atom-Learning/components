@@ -9,7 +9,6 @@ export type AlertDialogTheme = 'info' | 'warning' | 'danger' | 'success'
 const StyledIcon = styled(Icon, {
   flexShrink: 0,
   alignSelf: 'flex-start',
-  color: '$blue1100',
   variants: {
     theme: {
       info: { color: '$blue800' },
