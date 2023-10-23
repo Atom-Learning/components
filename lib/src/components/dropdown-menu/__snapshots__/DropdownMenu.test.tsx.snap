@@ -41,15 +41,15 @@ exports[`DropdownMenu component renders 1`] = `
     text-decoration: underline;
   }
 
+  .c-cIdiJW {
+    text-decoration: none;
+  }
+
   .c-gBsmUO {
     height: 1px;
     background-color: var(--colors-tonal200);
     margin-top: var(--space-2);
     margin-bottom: var(--space-2);
-  }
-
-  .c-cIdiJW {
-    text-decoration: none;
   }
 
   .c-ghAfvs {
@@ -105,14 +105,14 @@ exports[`DropdownMenu component renders 1`] = `
     tabindex="0"
   />
   <button
-    aria-controls="radix-4"
+    aria-controls="radix-5"
     aria-expanded="true"
     aria-haspopup="menu"
     aria-hidden="true"
     class="c-PJLV"
     data-aria-hidden="true"
     data-state="open"
-    id="radix-3"
+    id="radix-4"
     type="button"
   >
     TRIGGER
@@ -122,7 +122,7 @@ exports[`DropdownMenu component renders 1`] = `
     style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
   >
     <div
-      aria-labelledby="radix-3"
+      aria-labelledby="radix-4"
       aria-orientation="vertical"
       class="c-ghAfvs"
       data-align="center"
@@ -130,7 +130,7 @@ exports[`DropdownMenu component renders 1`] = `
       data-side="bottom"
       data-state="open"
       dir="ltr"
-      id="radix-4"
+      id="radix-5"
       role="menu"
       style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
       tabindex="-1"
@@ -153,6 +153,18 @@ exports[`DropdownMenu component renders 1`] = `
       >
         Item 2
       </div>
+      <a
+        class="c-cIdiJW c-iLVhIC"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        href="http://google.com"
+        rel="noopener noreferrer"
+        role="menuitem"
+        tabindex="-1"
+        target="_blank"
+      >
+        Item 3
+      </a>
       <div
         aria-orientation="horizontal"
         class="c-gBsmUO"

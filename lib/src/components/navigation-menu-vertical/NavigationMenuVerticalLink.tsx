@@ -3,7 +3,7 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 import { preventEvent } from '~/utilities/event'
-import { isExternalLink } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
 import { NavigationMenuVerticalItem } from './NavigationMenuVerticalItem'
@@ -23,16 +23,12 @@ type NavigationMenuVerticalItemProps = React.ComponentProps<
 export const NavigationMenuVerticalLink: React.FC<
   NavigationMenuVerticalItemProps
 > = ({ as, href, children, ...rest }) => {
-  const linkProps = isExternalLink(href)
-    ? { target: '_blank', rel: 'noopener noreferrer' }
-    : {}
-
-  const buttonProps = {
-    type: 'button'
-  }
-
   const Component = as || (href ? 'a' : 'button')
-  const componentProps = as ? {} : href ? linkProps : buttonProps
+  const componentProps = as
+    ? {}
+    : href
+    ? getExternalAnchorProps(href)
+    : { type: 'button' }
 
   return (
     <NavigationMenuVerticalItem>

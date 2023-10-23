@@ -8,6 +8,7 @@ import { NavigatorActions } from '~/types'
 import { Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
@@ -246,6 +247,7 @@ export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
       >
         <StyledButton
           {...optionalLinkProps}
+          {...getExternalAnchorProps(href)}
           {...remainingProps}
           aria-label={label}
           theme={theme}

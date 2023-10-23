@@ -2,6 +2,7 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { CSS, styled } from '~/stitches'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import {
   navigationMenuActiveItemStyles,
@@ -72,6 +73,7 @@ export const NavigationMenuLink = React.forwardRef<
           ref={forwardedRef}
           elementType={variant}
           css={css}
+          {...getExternalAnchorProps(href)}
           {...props}
         >
           {children}

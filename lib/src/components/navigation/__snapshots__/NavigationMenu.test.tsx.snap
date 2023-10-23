@@ -343,6 +343,8 @@ exports[`Nav component renders 1`] = `
                 class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/colours"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <div
                   class="c-dhzjXW c-dhzjXW-iiTKOFX-css"
@@ -367,6 +369,8 @@ exports[`Nav component renders 1`] = `
                 class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/effects"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Effects
               </a>
@@ -378,6 +382,8 @@ exports[`Nav component renders 1`] = `
                 class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/icons"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Icons
               </a>
