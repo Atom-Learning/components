@@ -4,8 +4,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { AlertProvider, useAlert } from './AlertContext'
+import { Button } from '../../button'
 
-const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
+const ComponentTest = ({ showSecondAlert, onAction = () => null, ...rest }) => {
   const { showAlert } = useAlert()
 
   return (
@@ -17,7 +18,8 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
           description: 'DESCRIPTION',
           cancelActionText: 'CANCEL',
           confirmActionText: 'CONFIRM',
-          onAction
+          onAction,
+          ...rest
         })
         if (showSecondAlert) {
           showAlert({
@@ -35,6 +37,7 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null }) => {
     </button>
   )
 }
+
 const AlertContextTest = (props) => (
   <AlertProvider>
     <ComponentTest {...props} />
@@ -42,41 +45,41 @@ const AlertContextTest = (props) => (
 )
 
 describe('Alert context', () => {
-  it('renders the trigger with the dialog hidden by default', async () => {
+  it('renders the trigger with the dialog hidden by default', () => {
     render(<AlertContextTest />)
-    expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).not.toBeInTheDocument()
   })
 
-  it('opens the dialog once showAlert is called', async () => {
+  it('opens the dialog once showAlert is called', () => {
     render(<AlertContextTest />)
     const trigger = screen.getByText('TRIGGER')
 
-    expect(await trigger).toBeInTheDocument()
-    expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()
+    expect(trigger).toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).not.toBeInTheDocument()
 
     fireEvent.click(trigger)
 
-    expect(await screen.queryByText('TITLE')).toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).toBeInTheDocument()
   })
 
-  it('onAction is called correctly', async () => {
+  it('onAction is called correctly', () => {
     const onActionMock = jest.fn()
     render(<AlertContextTest onAction={onActionMock} />)
     const trigger = screen.getByText('TRIGGER')
 
     fireEvent.click(trigger)
 
-    fireEvent.click(await screen.findByText('CONFIRM'))
+    fireEvent.click(screen.getByText('CONFIRM'))
 
     expect(onActionMock).toHaveBeenCalledWith(true)
   })
 
-  it('dialog is not closed with ESC', async () => {
+  it('dialog is not closed with ESC', () => {
     const { container } = render(<AlertContextTest />)
     const trigger = screen.getByText('TRIGGER')
 
-    expect(await trigger).toBeInTheDocument()
-    expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()
+    expect(trigger).toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).not.toBeInTheDocument()
 
     fireEvent.click(trigger)
 
@@ -87,7 +90,7 @@ describe('Alert context', () => {
       charCode: 27
     })
 
-    expect(await screen.queryByText('TITLE')).toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).toBeInTheDocument()
   })
 
   it('opens second dialog once first dialog is closed', async () => {
@@ -100,15 +103,32 @@ describe('Alert context', () => {
 
     fireEvent.click(trigger)
 
-    expect(await screen.queryByText('TITLE')).toBeInTheDocument()
-    expect(await screen.queryByText('TITLE 2')).not.toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).toBeInTheDocument()
+    expect(screen.queryByText('TITLE 2')).not.toBeInTheDocument()
 
     const cancelButton = screen.getByText('CANCEL')
-    await fireEvent.click(cancelButton)
+    fireEvent.click(cancelButton)
 
-    expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()
-
-    expect(await screen.queryByText('TITLE')).not.toBeInTheDocument()
+    expect(screen.queryByText('TITLE')).not.toBeInTheDocument()
     expect(await screen.findByText('DESCRIPTION 2')).toBeInTheDocument()
+  })
+
+  it('it renders confirm and cancel elements', () => {
+    render(
+      <AlertContextTest
+        confirmElement={<Button>Yes, please delete</Button>}
+        cancelElement={<Button>No, don't delete</Button>}
+      />
+    )
+
+    const trigger = screen.getByText('TRIGGER')
+    fireEvent.click(trigger)
+
+    expect(screen.queryByText('TITLE')).toBeInTheDocument()
+    expect(screen.queryByText('Yes, please delete')).toBeInTheDocument()
+    expect(screen.queryByText("No, don't delete")).toBeInTheDocument()
+
+    expect(screen.queryByText('CONFIRM')).not.toBeInTheDocument()
+    expect(screen.queryByText('CANCEL')).not.toBeInTheDocument()
   })
 })
