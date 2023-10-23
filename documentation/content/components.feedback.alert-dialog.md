@@ -58,8 +58,16 @@ tabs:
             size: 'lg',
             title: 'Delete student',
             description: 'You are going to delete this student. Are you sure?',
-            confirmElement: <Button theme="danger" size="sm">Yes, delete them please</Button>,
-            cancelElement: <Button appearance="outline" size="sm">Nah, don't do that</Button>
+            confirmElement: (
+              <Button theme="danger" size="sm" onClick={() => console.log("Delete user")}>
+                Yes, delete them please
+              </Button>
+            ),
+            cancelElement: (
+              <Button appearance="outline" size="sm" onClick={() => console.log("Don't delete user")}>
+                Nah, don't do that
+              </Button>
+            )
           })
         }
 
