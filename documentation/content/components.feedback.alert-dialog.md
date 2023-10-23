@@ -14,7 +14,7 @@ tabs:
       `AlertDialog` exports a number of components that can be composed together to create a modal pop up that expects a response from the user.
 
 
-      `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a `theme` and `size` prop which can be used to customise the `AlertDialog`
+      `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a `theme` and `size` prop which can be used to customise the `AlertDialog`.
 
 
       <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
@@ -46,7 +46,7 @@ tabs:
 
       render(<App />)`} language={"tsx"} />
 
-      Instead of supplying the action text, `showAlert` accepts `confirmElement` and `cancelElement`:
+      It is recommended to use the `confirmActionText` and `cancelActionText` options to specify button labels in the alert dialog. This approach ensures a consistent look and feel while simplifying the setup process. However, if you require more granular control, you can opt for the custom button elements using the `confirmElement` and `cancelElement` options:
 
       <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
         const { showAlert } = useAlert()
