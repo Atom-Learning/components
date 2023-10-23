@@ -1,5 +1,6 @@
+import { Danger, Info, OkCircle } from '@atom-learning/icons'
 import * as React from 'react'
-import { Info, Danger, OkCircle } from '@atom-learning/icons'
+
 import { styled } from '~/stitches'
 
 import { Icon } from '../../icon'

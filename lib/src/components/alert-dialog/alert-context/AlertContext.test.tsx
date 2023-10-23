@@ -3,8 +3,8 @@ import '@testing-library/jest-dom/extend-expect'
 import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
-import { AlertProvider, useAlert } from './AlertContext'
 import { Button } from '../../button'
+import { AlertProvider, useAlert } from './AlertContext'
 
 const ComponentTest = ({ showSecondAlert, onAction = () => null, ...rest }) => {
   const { showAlert } = useAlert()
