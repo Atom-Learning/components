@@ -50,7 +50,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       {description && (
         <Text
           as={AlertDialog.Description}
-          css={{ display: 'flex', overflowY: 'scroll' }}
+          css={{ display: 'flex', overflowY: 'auto' }}
         >
           {description}
         </Text>
