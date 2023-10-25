@@ -54,8 +54,8 @@ tabs:
       svg\",\"tags\":[\"List and
       tables\",\"Layout/Structure\"],\"link\":{\"href\":\"/components/content/t\
       able\"}},{\"description\":\"A form component that provides a styled date
-      selector.\",\"heading\":\"Date
-      input\",\"link\":{\"href\":\"/components/form/fields/date-field\"},\"tags\
+      selector.\",\"heading\":\"Date input
+      field\",\"link\":{\"href\":\"/components/form/fields/date-field\"},\"tags\
       \":[\"Inputs\"],\"image\":\"/assets/images/date-field.svg\"},{\"descripti\
       on\":\"The Dialog component renders its children inside a modal and puts a
       dimmer over the rest of the
