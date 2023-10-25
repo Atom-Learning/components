@@ -180,10 +180,10 @@ tabs:
       inform the user in a particular section of the
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
-      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Drawer\",\"link\"\
-      :{\"href\":\"components/surfaces/drawer\"},\"description\":\"A side panel
-      to navigate the content of a product. Appears overlaid on top of a page
-      and when triggered by the hamburguer
+      image\":\"/assets/images/drawer.svg\",\"heading\":\"Drawer\",\"link\":{\"\
+      href\":\"components/surfaces/drawer\"},\"description\":\"A side panel to
+      navigate the content of a product. Appears overlaid on top of a page and
+      when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"]},{\"description\":\
       \"A form control for choosing a value within a preset range of
       values.\",\"heading\":\"Slider\",\"image\":\"/assets/images/slider.svg\",\
