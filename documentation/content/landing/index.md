@@ -38,7 +38,7 @@ tabs:
       that can be swiped between or selected directly via
       buttons\",\"heading\":\"Carousel\",\"tags\":[\"Media\",\"Images and
       icons\"],\"image\":\"/assets/images/carousel.svg\"},{\"heading\":\"Checkb\
-      ox\",\"description\":\"A toggle input for choosing from predefined
+      ox field\",\"description\":\"A toggle input for choosing from predefined
       options.\",\"link\":{\"href\":\"/components/form/fields/checkbox-field\"},\
       \"image\":\"/assets/images/checkbox-field.svg\",\"tags\":[\"Inputs\"]},{\
       \"heading\":\"Chip\",\"description\":\"A component in the shape of a pill
