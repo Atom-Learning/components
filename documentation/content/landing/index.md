@@ -180,10 +180,10 @@ tabs:
       inform the user in a particular section of the
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
-      image\":\"/assets/images/sidedrawer.svg\",\"heading\":\"Drawer\",\"link\"\
-      :{\"href\":\"components/surfaces/drawer\"},\"description\":\"A side panel
-      to navigate the content of a product. Appears overlaid on top of a page
-      and when triggered by the hamburguer
+      image\":\"/assets/images/drawer.svg\",\"heading\":\"Drawer\",\"link\":{\"\
+      href\":\"components/surfaces/drawer\"},\"description\":\"A side panel to
+      navigate the content of a product. Appears overlaid on top of a page and
+      when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"]},{\"description\":\
       \"A form control for choosing a value within a preset range of
       values.\",\"heading\":\"Slider\",\"image\":\"/assets/images/slider.svg\",\
@@ -238,8 +238,9 @@ tabs:
       o.svg\",\"heading\":\"Video\",\"description\":\"Video component supports
       playing Vimeo hosted
       videos.\",\"link\":{\"href\":\"/components/media/video\"},\"tags\":[\"Med\
-      ia\"]},{\"heading\":\"Banner\",\"description\":\"A container with a short
-      message, a call-to-action, and an image, used to push the user towards an
+      ia\"]},{\"heading\":\"Banner Regular\",\"description\":\"A container with
+      a short message, a call-to-action, and an image, used to push the user
+      towards an
       action.\",\"link\":{\"href\":\"/components/content/banner-regular\"},\"ta\
       gs\":[\"Feedback\",\"Layout/Structure\",\"Actions\"],\"image\":\"/assets/\
       images/banner-thumbnail.svg\"},{\"heading\":\"Tile\",\"description\":\"Ti\
@@ -256,7 +257,33 @@ tabs:
       ble\",\"description\":\"Data Table provides complex features for tables,
       like sorting and
       pagination.\",\"link\":{\"href\":\"/components/content/data-table?tab=code\
-      \"},\"tags\":[\"List and tables\"]}]} />"
+      \"},\"tags\":[\"List and tables\"]},{\"heading\":\"Banner
+      Slim\",\"description\":\"Slim variant. A container with a short message, a
+      call-to-action, and an image, used to push the user towards an
+      action.\",\"link\":{\"href\":\"/components/content/banner-slim\"},\"tags\
+      \":[\"Feedback\",\"Layout/Structure\",\"Actions\"],\"image\":\"/assets/im\
+      ages/banner-slim.svg\"},{\"image\":\"/assets/images/chip-dismissible-grou\
+      p.svg\",\"heading\":\"Chip dismissible group\",\"description\":\"A
+      dismissible component in the shape of a pill providing visual cues to
+      prompt users to enter information or filter
+      content.\",\"link\":{\"href\":\"/components/feedback/chip-dismissible-gro\
+      up?tab=code\"},\"tags\":[\"Inputs\",\"Filter\"]},{\"image\":\"/assets/ima\
+      ges/chip-toggle-group.svg\",\"heading\":\"Chip toggle
+      group\",\"description\":\"A selectable toggle component in the shape of a
+      pill providing visual cues to prompt users to enter information or filter
+      content.\",\"link\":{\"href\":\"/components/feedback/chip-toggle-group?ta\
+      b=code\"},\"tags\":[\"Inputs\",\"Filter\"]},{\"link\":{\"href\":\"/compon\
+      ents/surfaces/tile-interactive?tab=code\"},\"heading\":\"Tile
+      interactive\",\"image\":\"/assets/images/tile-interactive.svg\",\"descrip\
+      tion\":\"An interactive layout component used as a generic container to
+      build the base of panels, cards, lists and other content
+      components.\",\"tags\":[\"Layout/Structure\",\"Navigation\",\"Inputs\"]},{\
+      \"description\":\"A selectable toggle layout component used as a generic
+      container to build the base of panels, cards, lists and other content
+      components.\",\"heading\":\"Tile toggle
+      group\",\"image\":\"/assets/images/tile-togge-group.svg\",\"link\":{\"href\
+      \":\"/components/surfaces/tile-toggle-group?tab=code\"},\"tags\":[\"Layou\
+      t/Structure\",\"Navigation\",\"Inputs\"]}]} />"
     title: Main
 slug: landing
 nestedSlug:
