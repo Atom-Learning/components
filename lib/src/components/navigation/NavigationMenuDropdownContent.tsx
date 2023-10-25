@@ -18,8 +18,16 @@ const StyledContent = styled(NavigationMenuPrimitive.Content, {
   borderRadius: '$1'
 })
 
-export const NavigationMenuDropdownContent: React.FC = ({ children }) => (
-  <StyledContent onPointerMove={preventEvent} onPointerLeave={preventEvent}>
+type NavigationMenuDropdownContentProps = typeof StyledContent
+
+export const NavigationMenuDropdownContent: React.FC<
+  NavigationMenuDropdownContentProps
+> = ({ children, ...rest }) => (
+  <StyledContent
+    onPointerMove={preventEvent}
+    onPointerLeave={preventEvent}
+    {...rest}
+  >
     <StyledList>{children}</StyledList>
   </StyledContent>
 )
