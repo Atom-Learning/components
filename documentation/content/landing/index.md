@@ -40,8 +40,8 @@ tabs:
       icons\"],\"image\":\"/assets/images/carousel.svg\"},{\"heading\":\"Checkb\
       ox\",\"description\":\"A toggle input for choosing from predefined
       options.\",\"link\":{\"href\":\"/components/form/fields/checkbox-field\"},\
-      \"image\":\"/assets/images/checkbox.svg\",\"tags\":[\"Inputs\"]},{\"headi\
-      ng\":\"Chip\",\"description\":\"A component in the shape of a pill
+      \"image\":\"/assets/images/checkbox-field.svg\",\"tags\":[\"Inputs\"]},{\
+      \"heading\":\"Chip\",\"description\":\"A component in the shape of a pill
       providing visual cues to prompt users to enter information or filter
       content.\",\"link\":{\"href\":\"/components/feedback/chip\"},\"tags\":[\"\
       Inputs\",\"Filter\"],\"image\":\"/assets/images/chips.svg\"},{\"descripti\
@@ -56,7 +56,7 @@ tabs:
       able\"}},{\"description\":\"A form component that provides a styled date
       selector.\",\"heading\":\"Date
       input\",\"link\":{\"href\":\"/components/form/fields/date-field\"},\"tags\
-      \":[\"Inputs\"],\"image\":\"/assets/images/date-input.svg\"},{\"descripti\
+      \":[\"Inputs\"],\"image\":\"/assets/images/date-field.svg\"},{\"descripti\
       on\":\"The Dialog component renders its children inside a modal and puts a
       dimmer over the rest of the
       screen.\",\"heading\":\"Dialog\",\"link\":{\"href\":\"/components/surface\
@@ -137,8 +137,8 @@ tabs:
       wraps content and displays a numeric
       notification.\",\"link\":{\"href\":\"/components/feedback/notification-ba\
       dge\"},\"tags\":[\"Feedback\"],\"image\":\"/assets/images/notification-ba\
-      dge.svg\"},{\"image\":\"/assets/images/number-input.svg\",\"heading\":\"N\
-      umber input\",\"description\":\"An Input control for editing a
+      dge.svg\"},{\"image\":\"/assets/images/number-input-field.svg\",\"heading\
+      \":\"Number input field\",\"description\":\"An Input control for editing a
       numeric/quantity value with increment and decrement buttons next to
       it.\",\"link\":{\"href\":\"/components/form/fields/number-input-field\"},\
       \"tags\":[\"Inputs\"]},{\"image\":\"/assets/images/pagination.svg\",\"hea\
@@ -148,8 +148,8 @@ tabs:
       \",\"link\":{\"href\":\"/components/navigation/pagination\"},\"tags\":[\"\
       Navigation\",\"List and tables\"]},{\"description\":\"An input for
       passwords with visibility toggle functionality.\",\"heading\":\"Password
-      input\",\"link\":{\"href\":\"/components/form/fields/password-field\"},\"\
-      tags\":[\"Inputs\"],\"image\":\"/assets/images/password-input.svg\"},{\"i\
+      field\",\"link\":{\"href\":\"/components/form/fields/password-field\"},\"\
+      tags\":[\"Inputs\"],\"image\":\"/assets/images/password-field.svg\"},{\"i\
       mage\":\"/assets/images/popover.svg\",\"description\":\"The Popover
       component displays floating informative and actionable content in relation
       to a
@@ -160,24 +160,26 @@ tabs:
       horizontal bar indicating the current completion status of a task, updated
       as the task
       progresses.\",\"tags\":[\"Feedback\"]},{\"image\":\"/assets/images/radio-\
-      button.svg\",\"heading\":\"Radio button\",\"description\":\"Radio buttons
-      allow a user to select a single option from a list of predefined
+      button-field.svg\",\"heading\":\"Radio button
+      field\",\"description\":\"Radio buttons allow a user to select a single
+      option from a list of predefined
       options.\",\"tags\":[\"Inputs\"],\"link\":{\"href\":\"/components/form/fi\
       elds/radio-button-field\"}},{\"image\":\"/assets/images/radio-card.svg\",\
       \"heading\":\"Radio card\",\"description\":\"A Radio Button that enables
       extra emphasis and descriptive
       capability.\",\"link\":{\"href\":\"/components/form/primitives/radio-card\
-      \"},\"tags\":[\"Inputs\"]},{\"image\":\"/assets/images/search-input.svg\",\
-      \"heading\":\"Search input\",\"description\":\"Search inputs allow users
+      \"},\"tags\":[\"Inputs\"]},{\"image\":\"/assets/images/search-field.svg\",\
+      \"heading\":\"Search field\",\"description\":\"Search inputs allow users
       to find content by entering a search
       term.\",\"link\":{\"href\":\"/components/form/fields/search-field\"},\"ta\
-      gs\":[\"Inputs\",\"Filter\"]},{\"image\":\"/assets/images/selectmenu.svg\
+      gs\":[\"Inputs\",\"Filter\"]},{\"image\":\"/assets/images/select-field.svg\
       \",\"description\":\"A form input used for selecting a value. It shows a
       list of predefined options for the user to choose
-      from.\",\"heading\":\"Select\",\"link\":{\"href\":\"/components/form/fiel\
-      ds/select-field\"},\"tags\":[\"Inputs\"]},{\"heading\":\"Section
-      message\",\"description\":\"A contextual feedback message displayed to
-      inform the user in a particular section of the
+      from.\",\"heading\":\"Select
+      field\",\"link\":{\"href\":\"/components/form/fields/select-field\"},\"ta\
+      gs\":[\"Inputs\"]},{\"heading\":\"Section message\",\"description\":\"A
+      contextual feedback message displayed to inform the user in a particular
+      section of the
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
       image\":\"/assets/images/drawer.svg\",\"heading\":\"Drawer\",\"link\":{\"\
@@ -186,10 +188,11 @@ tabs:
       when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"]},{\"description\":\
       \"A form control for choosing a value within a preset range of
-      values.\",\"heading\":\"Slider\",\"image\":\"/assets/images/slider.svg\",\
-      \"link\":{\"href\":\"/components/form/fields/slider-field\"},\"tags\":[\"\
-      Inputs\"]},{\"description\":\"Stack is a layout component that provides an
-      abstraction over the flexbox gap
+      values.\",\"heading\":\"Slider
+      field\",\"image\":\"/assets/images/slider-field.svg\",\"link\":{\"href\":\
+      \"/components/form/fields/slider-field\"},\"tags\":[\"Inputs\"]},{\"descr\
+      iption\":\"Stack is a layout component that provides an abstraction over
+      the flexbox gap
       property\",\"heading\":\"Stack\",\"image\":\"/assets/images/stack.svg\",\
       \"link\":{\"href\":\"/components/layout/stack\"},\"tags\":[\"Layout/Struc\
       ture\"]},{\"image\":\"/assets/images/stack-content.svg\",\"heading\":\"St\
@@ -213,12 +216,13 @@ tabs:
       component for rendering text, use it for any non-heading
       text.\",\"link\":{\"href\":\"/components/content/text\"},\"tags\":[\"Titl\
       es and text\"]},{\"description\":\"A form control for editing multi-line
-      text.\",\"heading\":\"Textarea\",\"link\":{\"href\":\"/components/form/fi\
-      elds/textarea-field\"},\"tags\":[\"Inputs\"],\"image\":\"/assets/images/t\
-      ext-area.svg\"},{\"image\":\"/assets/images/toast.svg\",\"heading\":\"Toa\
-      st\",\"description\":\"A floating alert which appears in a layer above
-      other content providing immediate feedback. Disappear automatically or can
-      be dismissed by the
+      text.\",\"heading\":\"Textarea
+      field\",\"link\":{\"href\":\"/components/form/fields/textarea-field\"},\"\
+      tags\":[\"Inputs\"],\"image\":\"/assets/images/text-area-field.svg\"},{\"\
+      image\":\"/assets/images/toast.svg\",\"heading\":\"Toast\",\"description\
+      \":\"A floating alert which appears in a layer above other content
+      providing immediate feedback. Disappear automatically or can be dismissed
+      by the
       user.\",\"link\":{\"href\":\"/components/feedback/toast\"},\"tags\":[\"Fe\
       edback\",\"Overlays\"]},{\"description\":\"A component that lets users
       toggle between a group of options. It can be used as single or
@@ -283,7 +287,82 @@ tabs:
       components.\",\"heading\":\"Tile toggle
       group\",\"image\":\"/assets/images/tile-togge-group.svg\",\"link\":{\"href\
       \":\"/components/surfaces/tile-toggle-group?tab=code\"},\"tags\":[\"Layou\
-      t/Structure\",\"Navigation\",\"Inputs\"]}]} />"
+      t/Structure\",\"Navigation\",\"Inputs\"]},{\"image\":\"/assets/images/for\
+      m.svg\",\"heading\":\"Form\",\"description\":\"A wrapper around HTML form
+      element that abstracts form validation logic away from the view
+      code.\",\"link\":{\"href\":\"/components/form/fields/form\"},\"tags\":[\"\
+      Layout/Structure\",\"Inputs\"]},{\"heading\":\"Field
+      wrapper\",\"image\":\"/assets/images/fieldwrapper.png\",\"description\":\
+      \"A utility component to help with composing consistent form
+      fields.\",\"link\":{\"href\":\"/components/form/primitives/field-wrapper\
+      \"},\"tags\":[\"Inputs\",\"Primitives\"]},{\"image\":\"/assets/images/che\
+      ckbox.svg\",\"description\":\"A [primitive] toggle input for choosing from
+      predefined
+      options.\",\"heading\":\"Checkbox\",\"link\":{\"href\":\"/components/form\
+      /primitives/checkbox\"},\"tags\":[\"Primitives\",\"Inputs\"]},{\"image\":\
+      \"/assets/images/date-input.svg\",\"heading\":\"Date
+      input\",\"description\":\"A [primitive] form component that provides a
+      styled date
+      selector.\",\"link\":{\"href\":\"/components/form/primitives/date-input\"\
+      },\"tags\":[\"Primitives\",\"Inputs\"]},{\"image\":\"/assets/images/input\
+      .svg\",\"heading\":\"Input\",\"description\":\"A [primitive] form control
+      that accepts a single line of text and
+      numbers.\",\"link\":{\"href\":\"/components/form/primitives/input\"},\"ta\
+      gs\":[\"Inputs\",\"Primitives\"]},{\"heading\":\"Number
+      input\",\"description\":\"A [primitive] input control for editing a
+      numeric/quantity value with increment and decrement buttons next to
+      it.\",\"link\":{\"href\":\"/components/form/primitives/number-input\"},\"\
+      image\":\"/assets/images/number-input.svg\",\"tags\":[\"Inputs\",\"Primit\
+      ives\"]},{\"image\":\"/assets/images/password-input.svg\",\"heading\":\"P\
+      assword input\",\"description\":\"A [primitive] input for passwords with
+      visibility toggle
+      functionality.\",\"link\":{\"href\":\"/components/form/primitives/passwor\
+      d-input\"},\"tags\":[\"Inputs\",\"Primitives\"]},{\"image\":\"/assets/ima\
+      ges/radio-button.svg\",\"heading\":\"Radio button\",\"description\":\"A
+      [primitive] radio button that allow a user to select a single option from
+      a list of predefined
+      options.\",\"link\":{\"href\":\"/components/form/primitives/radio-button\
+      \"},\"tags\":[\"Inputs\",\"Primitives\"]},{\"image\":\"/assets/images/sea\
+      rch-input.svg\",\"heading\":\"Search input\",\"description\":\"A
+      [primitive] search input that allow users to find content by entering a
+      search
+      term.\",\"tags\":[\"Inputs\",\"Primitives\",\"Filter\"],\"link\":{\"href\
+      \":\"/components/form/primitives/search-input\"}},{\"image\":\"/assets/im\
+      ages/select.svg\",\"description\":\"A [primitive] form input used for
+      selecting a value. It shows a list of predefined options for the user to
+      choose
+      from.\",\"heading\":\"Select\",\"tags\":[\"Inputs\",\"Primitives\"],\"link\
+      \":{\"href\":\"/components/form/primitives/select\"}},{\"image\":\"/asset\
+      s/images/slider.svg\",\"heading\":\"Slider\",\"description\":\"A
+      [primitive] form control for choosing a value within a preset range of
+      values.\",\"link\":{\"href\":\"/components/form/primitives/slider\"},\"ta\
+      gs\":[\"Inputs\",\"Primitives\"]},{\"image\":\"/assets/images/text-area.s\
+      vg\",\"heading\":\"Text area\",\"description\":\"A [primitive] form
+      control for choosing a value within a preset range of
+      values.\",\"link\":{\"href\":\"/components/form/primitives/textarea\"},\"\
+      tags\":[\"Inputs\",\"Primitives\"]},{\"image\":\"/assets/images/spacer.svg\
+      \",\"heading\":\"Spacer\",\"description\":\"A flexible flex spacer that
+      expands along the major axis of its containing flex
+      layout.\",\"link\":{\"href\":\"/components/layout/spacer\"},\"tags\":[\"L\
+      ayout/Structure\"]},{\"image\":\"/assets/images/navigationmenuvertical.svg\
+      \",\"description\":\"Navigation menu items meant to be used in sidedrawers
+      and similar panels for vertical navigation. \",\"heading\":\"Navigation
+      menu
+      vertical\",\"link\":{\"href\":\"/components/navigation/navigation-menu-ve\
+      rtical\"},\"tags\":[\"Navigation\"]},{\"image\":\"/assets/images/dismissi\
+      ble.svg\",\"description\":\"A primitive that works as a dismiss button
+      which removes the element from the view.
+      \",\"heading\":\"Dismissible\",\"link\":{\"href\":\"/components/primitive\
+      s/dismissible\"},\"tags\":[\"Primitives\"]},{\"image\":\"/assets/images/d\
+      ismissible-group.svg\",\"heading\":\"Dismissible
+      group\",\"description\":\"A set of dismissible elements (primitives) which
+      remove the elements from the
+      view.\",\"link\":{\"href\":\"/components/primitives/dismissible-group\"},\
+      \"tags\":[\"Primitives\"]},{\"image\":\"/assets/images/sortable.svg\",\"h\
+      eading\":\"Sortable\",\"description\":\"A primitive that let users sort an
+      array of sibling elements via drag and
+      drop.\",\"link\":{\"href\":\"/components/primitives/sortable\"},\"tags\":[\
+      \"Primitives\"]}]} />"
     title: Main
 slug: landing
 nestedSlug:
