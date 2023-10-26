@@ -477,13 +477,13 @@ tabs:
       #### numberOfStickyColumns
 
 
-      If your table has many columns and you wish to make sure it displays nicely on smaller screens, one option would be to have some columns which "stick" to the left side of the table and have the rest scroll horizontally. Keep in mind that if you are also using `enableRowSelection`, your table will have an extra column, containing the selection checkbox. So if you wish for your first data column to stick, you will need to pass `numberOfStickyColumns: 2`.
+      If your table has many columns and you wish to make sure it displays nicely on smaller screens, one option would be to have some columns which 'stick' to the left side of the table and have the rest scroll horizontally. Keep in mind that if you are also using `enableRowSelection`, your table will have an extra column, containing the selection checkbox. So if you wish for your first data column to stick, you will need to pass `numberOfStickyColumns: 2`.
 
 
       #### scrollContainerCss
 
 
-      Sometimes you might have a table with many columns and rows, and you might also wish to have it display nicely on smaller devices. In this case, you will perhaps think about adding both `hasStickyHeader` and `numberOfStickyColumns`. The problem is that when `numberOfStickyColumns` is passed along side `hasStickyHeader`, the "stickyness" of the header is lost. We're going to need to add a fixed height to our table, which will now be wrapped in a scrollbox. Use `scrollContainerCss` for this.
+      Sometimes you might have a table with many columns and rows, and you might also wish to have it display nicely on smaller devices. In this case, you will perhaps think about adding both `hasStickyHeader` and `numberOfStickyColumns`. The problem is that when `numberOfStickyColumns` is passed along side `hasStickyHeader`, the 'stickyness' of the header is lost. We're going to need to add a fixed height to our table, which will now be wrapped in a scrollbox. Use `scrollContainerCss` for this.
 
 
       Keep in mind that this will add a vertical scrollbar to the table.
