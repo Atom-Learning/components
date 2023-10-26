@@ -7,7 +7,7 @@ links:
 tabs:
   - title: Code
     content: >-
-      > #### ℹ️ **Related components** 
+      > #### **Related components** 
 
       >
 
