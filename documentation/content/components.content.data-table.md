@@ -337,7 +337,7 @@ tabs:
       * The \`SelectedRowActions\` component will be rendered when at least one row is currently selected.
 
 
-      The difference between the 2 is the fact that the \`SelectedRowActions\` component contains a default \`Cancel\` button which simply deselects everything and returns the table to the "default" state.
+      The difference between the 2 is the fact that the \`SelectedRowActions\` component contains a default \`Cancel\` button which simply deselects everything and returns the table to the 'default' state.
 
 
       Both components can take custom elements, like buttons or links, with custom actions. This allows us to do whatever we want to with the currently selected data. For instance, the \`DefaultActions\` component could contain a button that adds extra rows to the table. The \`SelectedRowActions\` component could, instead, contain a button that deletes the selected rows.
