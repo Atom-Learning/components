@@ -7,16 +7,13 @@ links:
 tabs:
   - title: Code
     content: >-
-      > #### **Related components** 
-
-      >
-
-      > [Banner slim](https://atomlearning.design/components/content/banner-slim)
+      #### **Related components**
 
 
-      \
+      [Banner slim](https://atomlearning.design/components/content/banner-slim)
 
-      \
+
+
 
       The `BannerRegular` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
 
