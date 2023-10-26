@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Code
     content: >-
-      The `BannerRegular` component ships with multiple building blocks which
-      can be put together in a composable manner to get the desired result.
+      #### Related components
+
+
+      [Banner slim](https://atomlearning.design/components/content/banner-slim)  
+
+
+      \-
+
+
+      The `BannerRegular` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
 
       You can pass in a `colorScheme` object to the `BannerRegular` to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
@@ -32,7 +40,7 @@ tabs:
 
 
 
-      <CodeBlock live={false} preview={false} code={`<BannerRegular
+      <CodeBlock live={true} preview={true} code={`<BannerRegular
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         value=""
@@ -47,7 +55,7 @@ tabs:
         </BannerRegular.Content>
         <BannerRegular.Dismiss />
         <BannerRegular.Image src="https://picsum.photos/400/400" />
-      </BannerRegular>`} language={"undefined"} />
+      </BannerRegular>`} language={"tsx"} />
 
 
       ### `sm` Variant
