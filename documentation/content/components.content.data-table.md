@@ -429,6 +429,7 @@ tabs:
 
 
 
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -464,7 +465,7 @@ tabs:
       #### hasStickyHeader
 
 
-      If you want your table to have a sticky header row (one that "sticks" to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can add `hasStickyHeader: true` to the `scrollOptions` object. 
+      If you want your table to have a sticky header row (one that 'sticks' to the top of the viewport as you scroll down - very useful for tables with many rows and columns), you can add `hasStickyHeader: true` to the `scrollOptions` object. 
 
 
       #### headerCss
