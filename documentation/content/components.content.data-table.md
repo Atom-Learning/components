@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Code
     content: >-
-      `DataTable` provides complex features for tables, like sorting and
-      pagination. 
+      Related components
+
+
+      [Table](https://atomlearning.design/components/content/table)
+
+
+      ·
+
+
+      `DataTable` provides complex features for tables, like sorting and pagination. 
 
 
       It's built around the `@tanstack/react-table` library and exposes the `table` state from that library directly. All util functions from the library are also compatible with `DataTable`. It's worth a good read of [`@tanstack/react-table`'s documentation](https://tanstack.com/table/v8/docs/guide/introduction) too, since we won't be repeating much of it here.
@@ -422,6 +430,7 @@ tabs:
         )
       }
         
+
 
 
 
