@@ -7,6 +7,15 @@ links:
 tabs:
   - title: Main
     content: >-
+      **Related components**
+
+
+      [Input field](https://atomlearning.design/components/form/fields/input-field)
+
+
+      <br/>
+
+
       Input is the lowest-level input component for text and number types.
 
 
