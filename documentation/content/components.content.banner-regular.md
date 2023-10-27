@@ -13,7 +13,7 @@ tabs:
       [Banner slim](https://atomlearning.design/components/content/banner-slim)  
 
 
-      \-
+      <br />
 
 
       The `BannerRegular` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
@@ -37,7 +37,6 @@ tabs:
 
 
       By default sizing is breakpoint based with the following format:  `size: { '@initial': 'sm', '@md': 'md' }`
-
 
 
       <CodeBlock live={true} preview={true} code={`<BannerRegular
