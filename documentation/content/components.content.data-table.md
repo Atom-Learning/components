@@ -7,7 +7,7 @@ links:
 tabs:
   - title: Code
     content: >-
-      Related components
+      #### Related components
 
 
       [Table](https://atomlearning.design/components/content/table)
