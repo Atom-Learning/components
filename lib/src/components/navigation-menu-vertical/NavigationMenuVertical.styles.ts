@@ -11,10 +11,12 @@ export const navigationMenuVerticalItemStyles = {
   p: '$2',
   pl: `var(--navigation-menu-vertical-item-pl)`,
   width: '100%',
+  color: '$text',
+  bg: '$background',
   '--navigation-menu-vertical-item-font-weight': 400,
   '&[data-active]': {
-    background: '$accent2',
-    color: '$accent9',
+    bg: '$backgroundSelected',
+    color: '$textSelected',
     '--navigation-menu-vertical-item-font-weight': 600
   },
   '&[data-state=open]': {
@@ -26,10 +28,10 @@ export const navigationMenuVerticalItemStyles = {
   },
   '&:not([data-disabled])': {
     '&:hover': {
-      background: '$base2'
+      bg: '$backgroundHover'
     },
     '&:active': {
-      background: '$base3'
+      bg: '$backgroundActive'
     },
     '&:focus-visible': focusVisibleStyleBlock()
   },
