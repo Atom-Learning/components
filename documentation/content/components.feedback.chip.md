@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Code
     content: >-
-      A component in the shape of a pill providing visual cues to prompt users
-      to enter information or filter content.
+      **Related components**
+
+
+      [Chip dismissible group](https://atomlearning.design/components/feedback/chip-dismissible-group) and [Chip toggle group](https://atomlearning.design/components/feedback/chip-toggle-group)
+
+
+      <br/>
+
+
+      A component in the shape of a pill providing visual cues to prompt users to enter information or filter content.
 
       `Chip` itself is a primitive. It has no functional logic in itself, however, it is used to provide common styles for all the `Chip`-based components.
 
