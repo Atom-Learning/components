@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Main
     content: >-
-      The Dialog component renders its children inside a modal and puts a
-      dimmer over the rest of the screen.
+      #### Related components
+
+
+      [Alert dialog](https://atomlearning.design/components/feedback/alert-dialog)
+
+
+      ·
+
+
+      The Dialog component renders its children inside a modal and puts a dimmer over the rest of the screen.
 
 
       `Dialog` exports many components that combine to create a modal. The `Dialog.Trigger` renders a `<button>` by default, but this can be overridden with the `asChild` prop, which will instead add all the functional and accessibility requirements to the child component instead (see the below example).
