@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Code
     content: >-
-      The `BannerSlim` component ships with multiple building blocks which
-      can be put together in a composable manner to get the desired result.
+      #### Related component
+
+
+      [Banner regular](https://atomlearning.design/components/content/banner-regular)
+
+
+      \-
+
+
+      The `BannerSlim` component ships with multiple building blocks which can be put together in a composable manner to get the desired result.
 
       You can pass in a `colorScheme` object to the `BannerSlim` to customise the colours of the component. ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
@@ -24,7 +32,9 @@ tabs:
 
       We have several configuration with which `BannerSlim` can be rendered
 
+
       ### default variant
+
 
       By default sizing is breakpoint based with the following format:  `size: { '@initial': 'sm', '@md': 'md' }`
 
@@ -34,12 +44,20 @@ tabs:
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         value=""
-      >
-        <BannerSlim.Content>
-          <BannerSlim.Image src="https://picsum.photos/400/400" />
-          <BannerSlim.Text>
-            This is the default variant of BannerSlim.
-          </BannerSlim.Text>
+
+      >   <BannerSlim.Content>
+
+
+      ```
+
+      <BannerSlim.Image src="https://picsum.photos/400/400" />
+
+      <BannerSlim.Text>
+        This is the default variant of BannerSlim.
+      </BannerSlim.Text>
+
+      ```
+
         </BannerSlim.Content>
         <BannerSlim.Actions>
           <BannerSlim.Button>Primary CTA</BannerSlim.Button>
@@ -48,6 +66,7 @@ tabs:
       </BannerSlim>
 
       `} language={"tsx"} />
+
 
       ### `sm` Variant
 
@@ -130,6 +149,7 @@ tabs:
 
 
       ### Dismissible "sm" Variant
+
 
       <CodeBlock live={true} preview={true} code={`
 
