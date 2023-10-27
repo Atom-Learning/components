@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Main
     content: >-
-      `NumberInput` wraps `Input` set to a numeric value, along with
-      two `ActionIcon` buttons for decrementing and incrementing the value.
+      **Related components**
+
+
+      [Number input field](https://atomlearning.design/components/form/fields/number-input-field)
+
+
+      <br/>
+
+
+      `NumberInput` wraps `Input` set to a numeric value, along with two `ActionIcon` buttons for decrementing and incrementing the value.
 
 
       <CodeBlock live={true} preview={true} code={`<NumberInput name="age" />`} language={"tsx"} />
