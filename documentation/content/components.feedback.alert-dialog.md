@@ -7,8 +7,16 @@ links:
 tabs:
   - title: Main
     content: >-
-      A modal dialog that interrupts the user with important content and
-      expects a response
+      #### Related components
+
+
+      [Dialog](https://atomlearning.design/components/surfaces/dialog)
+
+
+      ·
+
+
+      A modal dialog that interrupts the user with important content and expects a response
 
 
       `AlertDialog` exports a number of components that can be composed together to create a modal pop up that expects a response from the user.
@@ -46,7 +54,7 @@ tabs:
 
       render(<App />)`} language={"tsx"} />
 
-      It is recommended to use the `confirmActionText` and `cancelActionText` options to specify button labels in the alert dialog. This approach ensures a consistent look and feel while simplifying the setup process. However, if you require more granular control, you can opt for the custom button elements using the `confirmElement` and `cancelElement` options:
+      It is recommended to use the`confirmActionText`and`cancelActionText`options to specify button labels in the alert dialog. This approach ensures a consistent look and feel while simplifying the setup process. However, if you require more granular control, you can opt for the custom button elements using the`confirmElement`and`cancelElement`options:
 
       <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
         const { showAlert } = useAlert()
@@ -92,17 +100,24 @@ tabs:
 
       ## API Reference
 
+
       <ComponentProps component="AlertDialog" />
+
 
       <ComponentProps component="AlertDialog.Description" />
 
+
       <ComponentProps component="AlertDialog.Title" />
+
 
       <ComponentProps component="AlertDialog.Action" />
 
+
       <ComponentProps component="AlertDialog.Cancel" />
 
+
       <ComponentProps component="AlertDialog.Content" />
+
 
       <ComponentProps component="AlertDialog.Trigger" />
 parent: HGItoEG3XVs9DpOLugTot
