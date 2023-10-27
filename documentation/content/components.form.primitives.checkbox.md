@@ -7,6 +7,15 @@ links:
 tabs:
   - title: Main
     content: >-
+      **Related components**
+
+
+      [Checkbox field](https://atomlearning.design/components/form/fields/checkbox-field)
+
+
+      <br/>
+
+
       Checkbox provides a styled checkbox without a label.
 
 
@@ -20,6 +29,7 @@ tabs:
 
 
       ## API Reference
+
 
       <ComponentProps component="Checkbox" />
 parent: E7irFEo7JeV-MtxTony9G
