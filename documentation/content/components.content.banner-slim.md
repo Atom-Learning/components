@@ -39,7 +39,7 @@ tabs:
       By default sizing is breakpoint based with the following format:  `size: { '@initial': 'sm', '@md': 'md' }`
 
 
-      <CodeBlock live={false} preview={false} code={`<BannerSlim
+      <CodeBlock live={true} preview={true} code={`<BannerSlim
         colorScheme={{ base: 'purple1' }}
         emphasis="highContrast"
         value=""
