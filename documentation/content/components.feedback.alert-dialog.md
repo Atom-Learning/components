@@ -13,7 +13,7 @@ tabs:
       [Dialog](https://atomlearning.design/components/surfaces/dialog)
 
 
-      ·
+      <br /><br /><br />
 
 
       A modal dialog that interrupts the user with important content and expects a response
@@ -25,7 +25,7 @@ tabs:
       `AlertDialog` also exports a custom hook `useAlert`, that can be used to dynamically render an alert based on some content and a callback. `showAlert` accepts a `theme` and `size` prop which can be used to customise the `AlertDialog`.
 
 
-      <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
+      <CodeBlock live={true} preview={true} code={`const MyComponent = () =>{
         const { showAlert } = useAlert()
 
         const handleClick = () => {
@@ -54,9 +54,11 @@ tabs:
 
       render(<App />)`} language={"tsx"} />
 
-      It is recommended to use the`confirmActionText`and`cancelActionText`options to specify button labels in the alert dialog. This approach ensures a consistent look and feel while simplifying the setup process. However, if you require more granular control, you can opt for the custom button elements using the`confirmElement`and`cancelElement`options:
 
-      <CodeBlock live={true} preview={true} noInline code={`const MyComponent = () =>{
+      It is recommended to use the `confirmActionText`and `cancelActionText`options to specify button labels in the alert dialog. This approach ensures a consistent look and feel while simplifying the setup process. However, if you require more granular control, you can opt for the custom button elements using the `confirmElement` and `cancelElement` options:
+
+
+      <CodeBlock live={true} preview={true} code={`const MyComponent = () =>{
         const { showAlert } = useAlert()
 
         const handleClick = () => {
