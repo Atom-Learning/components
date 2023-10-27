@@ -6,8 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      DateField renders a field composed of an DateInput, a Label and a
-      InlineMessage. It is the preferred way to render a form field for dates.
+      **Related components**
+
+
+      [Date input](https://atomlearning.design/components/form/primitives/date-input)
+
+
+      <br/>
+
+
+      DateField renders a field composed of an DateInput, a Label and a InlineMessage. It is the preferred way to render a form field for dates.
 
 
       In addition to text `Label` (required) and a validation error (optional), `DateField` accepts all the same props as `DateInput` and will pass them on to the `DateInput` it renders. However, as with all our composed components, `DateField`’s `css` prop will be applied to a containing `Box`—the styling of the individual components inside `DateField` cannot be altered.
