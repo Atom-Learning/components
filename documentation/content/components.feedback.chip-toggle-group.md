@@ -6,6 +6,15 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
+      **Related components**
+
+
+      [Chip](https://atomlearning.design/components/feedback/chip) and [Chip dismissible group](https://atomlearning.design/components/feedback/chip-dismissible-group)
+
+
+      <br/>
+
+
       Combines the Toggle Group radix component with the Chip primitive styling
 
 
