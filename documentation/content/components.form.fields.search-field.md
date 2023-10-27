@@ -6,9 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `SearchField` renders a field composed of an SearchInput, a Label and a
-      InlineMessage. It is the preferred way to render a form field for search
-      inputs.
+      **Related components**
+
+
+      [Search input](https://atomlearning.design/components/form/primitives/search-input)
+
+
+      <br/>
+
+
+      `SearchField` renders a field composed of an SearchInput, a Label and a InlineMessage. It is the preferred way to render a form field for search inputs.
 
 
       In addition to text `Label` (required) and a validation error (optional), `SearchField` accepts all the same props as `SearchInput` and will pass them on to the `SearchInput` it renders. However, as with all our composed components, `SearchField`’s `css` prop will be applied to a containing `Box`—the styling of the individual components inside `SearchField` cannot be altered.
