@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Select field](https://atomlearning.design/components/form/fields/select-field)
+      [Select](https://atomlearning.design/components/form/primitives/select)
 
 
       <br/>
