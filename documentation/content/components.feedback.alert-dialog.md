@@ -13,7 +13,7 @@ tabs:
       [Dialog](https://atomlearning.design/components/surfaces/dialog)
 
 
-      <br /><br /><br />
+      <br />
 
 
       A modal dialog that interrupts the user with important content and expects a response
