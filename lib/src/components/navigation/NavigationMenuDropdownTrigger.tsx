@@ -20,7 +20,7 @@ const StyledTrigger = styled(
     borderRadius: '$1',
     justifyContent: 'space-between',
     '&[data-state="open"]': {
-      background: '$tonal100'
+      background: '$triggerOpenBackground'
     },
     variants: {
       active: { true: { ...navigationMenuActiveItemStyles } }

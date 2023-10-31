@@ -12,13 +12,15 @@ const StyledList = styled('ul', {
 
 const StyledContent = styled(NavigationMenuPrimitive.Content, {
   p: '$3',
-  bg: 'white',
+  bg: '$navigationDropdown',
   mt: '4px',
   boxShadow: '$1',
   borderRadius: '$1'
 })
 
-type NavigationMenuDropdownContentProps = typeof StyledContent
+type NavigationMenuDropdownContentProps = React.ComponentProps<
+  typeof StyledContent
+>
 
 export const NavigationMenuDropdownContent: React.FC<
   NavigationMenuDropdownContentProps

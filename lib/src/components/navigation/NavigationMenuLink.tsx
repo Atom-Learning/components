@@ -28,13 +28,19 @@ const StyledLink = styled(
       elementType: {
         dropdownItem: {
           '&[data-active]': {
-            background: '$primaryLight',
-            color: '$primary',
-            '*': { color: '$primary' },
-            '&:hover': { background: '$tonal50' },
-            '&:active': { background: '$tonal100' },
+            background: '$backgroundDataActive',
+            color: '$dataActiveText',
+            '&:hover': {
+              background: '$dataActiveBackgroundHover',
+              color: '$dataActiveTextHover'
+            },
+            '&:active': {
+              background: '$dataActiveBackground',
+              color: '$dataActivePressedText'
+            },
             '&:focus-visible': {
-              boxShadow: '0 0 0 2px $colors$primary'
+              boxShadow: '0 0 0 2px $colors$primary',
+              color: '$dataActiveFocus'
             }
           }
         },

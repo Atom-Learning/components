@@ -11,19 +11,6 @@ const light = createTheme({
   }
 })
 
-// @TODO: This should go into the Marketing website instead!
-const dark = createTheme({
-  colors: {
-    text: 'white',
-    background: '$blue1200',
-    backgroundHover: '$blue1100',
-    backgroundActive: '$blue1000',
-    textSelected: 'white',
-    backgroundSelected: '$blue1100'
-  }
-})
-
 export const colorSchemes = {
-  light,
-  dark
+  light
 }

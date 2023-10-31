@@ -14,6 +14,7 @@ import {
 } from './NavigationMenuDropdownItem'
 import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
 import { NavigationMenuLink } from './NavigationMenuLink'
+import { colorSchemes as navigationMenuColorSchemes } from './stitches.navigationMenu.colorscheme.config'
 
 type NavigationMenuSubComponents = {
   Link: typeof NavigationMenuLink
@@ -108,7 +109,12 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
 
   return (
     <NavigationMenuContext.Provider value={{ onNodeUpdate }}>
-      <StyledMenu onValueChange={setActiveItem} css={css} {...props}>
+      <StyledMenu
+        className={navigationMenuColorSchemes['light']}
+        onValueChange={setActiveItem}
+        css={css}
+        {...props}
+      >
         <StyledList ref={listRef}>{children}</StyledList>
         <ViewportPosition>
           <StyledViewport
