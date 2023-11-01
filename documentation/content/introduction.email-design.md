@@ -43,6 +43,9 @@ tabs:
       #### Saved sections
 
 
+      When creating an email in Hubspot try to use some of the recent saved sections we’ve created. These already have styles applied to them and should make it easy to build out emails with simple layouts. They can be found on the ‘content’ menu on the left panel when you scroll down.
+
+
       ![saved-sections-hubspot](/assets/images/saved-sections.svg "saved-sections-hubspot")
 
 
