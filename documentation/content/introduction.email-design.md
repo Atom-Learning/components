@@ -45,7 +45,7 @@ tabs:
       #### Saved sections
 
 
-      ![saved-sections-hubspot](/assets/images/01-saved-setions.png "saved-sections-hubspot")
+      ![saved-sections-hubspot](/assets/images/01-saved-sections.jpg "saved-sections-hubspot")
 
 
       <br/>
@@ -67,7 +67,7 @@ tabs:
       * **Hero image with title:** A prominent hero image, coupled with a compelling title, immediately captures recipients' attention and sets the tone for the email.
 
 
-      ![header](/assets/images/02-header.jpg "header")
+      ![header](/assets/images/02-header.svg "header")
 
 
       #### Body
@@ -93,7 +93,7 @@ tabs:
       * **Call to Action (CTA)**: CTAs in the content section guide recipients toward taking specific actions, such as clicking a link or button.
 
 
-      ![body](/assets/images/03-body.png "body")
+      ![body](/assets/images/03-body.svg "body")
 
 
       #### Footer
@@ -111,7 +111,7 @@ tabs:
       * **Signature + Preferences**: A signature containing contact information and any provided preferences ensures recipients can manage their subscription.
 
 
-      ![footer](/assets/images/04-footer.png "footer")
+      ![footer](/assets/images/04-footer.svg "footer")
 
 
       <br/>
@@ -143,25 +143,25 @@ tabs:
       We have two pre-styled CTA button types to drop into your email design. Try to avoid using any other style, if you need to change the styles, then contact a designer.
 
 
-      ![cta buttons](/assets/images/05-cta.png "cta buttons")
+      ![cta buttons](/assets/images/05-cta.svg "cta buttons")
 
 
       Use **primary** button as the main CTA.
 
 
-      ![primary button](/assets/images/06-primary.png "primary button")
+      ![primary button](/assets/images/06-primary-cta.svg "primary button")
 
 
       Use **secondary** button when you have a CTA that is not the primary action.
 
 
-      ![secondary button](/assets/images/07-secondary.png "secondary button")
+      ![secondary button](/assets/images/07-secondary-cta.svg "secondary button")
 
 
       Avoid using dark backgrounds when possible, but if necessary, then use **secondary** CTA styles.
 
 
-      ![buttons on dark bg](/assets/images/08-dark-bg.png "buttons on dark bg")
+      ![buttons on dark bg](/assets/images/08-secondary-dark-bg.svg "buttons on dark bg")
 
 
       <br/>
@@ -173,10 +173,10 @@ tabs:
       When creating email templates try to keep in mind the **70, 20, 10 rule**. We want to keep backgrounds light to make the content easy to navigate and accessible and use colour for imagery, CTAs, and to highlight certain areas of the content.
 
 
-      ![color](/assets/images/09-color.png "color")
+      ![color](/assets/images/09-color-balance.svg "color")
 
 
-      ![70-20-10 rule](/assets/images/10-70-20-10-rule.png "70-20-10 rule")
+      ![70-20-10 rule](/assets/images/10-70-20-10-rule.svg "70-20-10 rule")
 
 
 
@@ -205,7 +205,7 @@ tabs:
       The following colours can be used in Hubspot for customising UI elements like buttons, backgrounds, text, etc. and stay consistent with our branding.
 
 
-      ![color](/assets/images/01-color.svg "color")
+      ![color](/assets/images/color.svg "color")
 
 
       | Property     | Hex      | Use                            |
@@ -229,8 +229,6 @@ tabs:
       | GreyDark     | \#333333 | Text regular (body, headlines) |
 
 
-
-
       <br/>
 
 
@@ -240,9 +238,7 @@ tabs:
       Use CTA buttons to communicate actions users can take and to allow them to navigate.
 
 
-      ![cta](/assets/images/02-buttons.svg "cta")
-
-
+      ![cta](/assets/images/cta-buttons.svg "cta")
 
 
       | Property         | Primary        | Secondary      |
@@ -268,32 +264,12 @@ tabs:
       | Padding          | 12, 12, 24, 24 | 12, 12, 24, 24 |
 
 
-
-
       <br/>
   - title: Content
     content: "# Overview"
   - title: Layout
     content: >-
       # Layout
-
-
-      # This is H1
-
-
-      ## This is H2
-
-
-      ### This is H3
-
-
-      #### This is H4
-
-
-      ##### This is H5
-
-
-      ###### This is H6
 
 
       A well-designed email layout enhances readability, engagement, and the overall user experience. The choice of layout depends on your content and goals. Let's dive into the most common layout types that you can use to inspire your email design:
@@ -311,7 +287,7 @@ tabs:
       * Use compelling visuals and concise text to maintain user interest.
 
 
-      ![single column](/assets/images/01-single-column.svg "single column")
+      ![single column](/assets/images/01single-column.svg "single column")
 
 
       #### Zig-zag
@@ -324,7 +300,7 @@ tabs:
       * Place key messages and calls to action (CTAs) strategically to balance visual interest and readability.
 
 
-      ![zig zag](/assets/images/02-zigzag.svg "zig zag")
+      ![zig zag](/assets/images/02zigzag.svg "zig zag")
 
 
       #### F-pattern
@@ -337,7 +313,7 @@ tabs:
       * Use headings, bullet points, and concise text to cater to users who skim-read.
 
 
-      ![F-pattern](/assets/images/03-fpattern.svg "F-pattern")
+      ![F-pattern](/assets/images/03fpattern.svg "F-pattern")
 
 
       #### Multicolumn
@@ -350,7 +326,7 @@ tabs:
       * Ensure each column remains scannable and doesn't overwhelm the reader.
 
 
-      ![multicolumn](/assets/images/04-multicolumn.svg "multicolumn")
+      ![multicolumn](/assets/images/04multicolumn.svg "multicolumn")
 
 
       #### Inverted pyramid
@@ -363,7 +339,7 @@ tabs:
       * Use a bold headline, concise subheading, and a clear CTA centred aligned to guide the user's attention.
 
 
-      ![Inverted pyramid](/assets/images/05-multipyramid.svg "Inverted pyramid")
+      ![Inverted pyramid](/assets/images/05invertedpyramid.svg "Inverted pyramid")
 
 
       #### Hybrid
@@ -374,7 +350,7 @@ tabs:
       * Keep the design cohesive and ensure a seamless transition between different screen sizes.
 
 
-      ![Hybrid](/assets/images/06-hybrid.svg "Hybrid")
+      ![Hybrid](/assets/images/06hybrid.svg "Hybrid")
 
 
       #### Double column
@@ -387,7 +363,7 @@ tabs:
       * Maintain a balanced visual hierarchy to avoid overwhelming the reader.
 
 
-      ![double column](/assets/images/07-double-column.svg "double column")
+      ![double column](/assets/images/07doublecolumn.svg "double column")
 parent: 913bda18-a8ad-4f2e-8eae-85c5fd80b872
 uuid: d0b53dad-3e2a-4c97-aa25-1e4f370616aa
 nestedSlug:
