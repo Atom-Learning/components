@@ -364,7 +364,7 @@ tabs:
 
 
       ![double column](/assets/images/07doublecolumn.svg "double column")
-parent: 913bda18-a8ad-4f2e-8eae-85c5fd80b872
+parent: 5265ee0d-991b-4af8-bcc3-1533e8c908dd
 uuid: d0b53dad-3e2a-4c97-aa25-1e4f370616aa
 nestedSlug:
   - introduction
