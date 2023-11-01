@@ -245,7 +245,7 @@ exports[`Nav component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cXoNrd {
+  .t-eWhWlr {
     --colors-text: var(--colors-textSubtle);
     --colors-background: white;
     --colors-backgroundHover: var(--colors-grey100);
@@ -261,8 +261,8 @@ exports[`Nav component renders 1`] = `
     --colors-backgroundSelectedPressed: var(--colors-grey200);
     --colors-itemTextSelected: var(--colors-grey900);
     --colors-itemBackgroundSelected: var(--colors-grey900);
-    --colors-triggerOpenBackground: var(--colors-grey200);
-    --colors-navigationDropdownBackground: white;
+    --colors-triggerBackgroundOpen: var(--colors-grey200);
+    --colors-dropdownBackground: white;
   }
 }
 
@@ -317,20 +317,20 @@ exports[`Nav component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-efUzPc {
+  .c-lfFbYU {
     display: flex;
     align-items: center;
     border-radius: var(--radii-1);
     justify-content: space-between;
   }
 
-  .c-efUzPc[data-state="open"] {
-    background: var(--colors-triggerOpenBackground);
+  .c-lfFbYU[data-state="open"] {
+    background: var(--colors-triggerBackgroundOpen);
   }
 
-  .c-icuOvE {
+  .c-dblJlC {
     padding: var(--space-3);
-    background: var(--colors-navigationDropdownBackground);
+    background: var(--colors-dropdownBackground);
     margin-top: 4px;
     box-shadow: var(--shadows-1);
     border-radius: var(--radii-1);
@@ -528,7 +528,7 @@ exports[`Nav component renders 1`] = `
 <body>
   <nav
     aria-label="Main"
-    class="c-eZxssT t-cXoNrd"
+    class="c-eZxssT t-eWhWlr"
     data-orientation="horizontal"
     dir="ltr"
   >
@@ -555,7 +555,7 @@ exports[`Nav component renders 1`] = `
           <button
             aria-controls="radix-2-content-1"
             aria-expanded="true"
-            class="c-gvhYwV c-efUzPc"
+            class="c-gvhYwV c-lfFbYU"
             data-radix-collection-item=""
             data-state="open"
             id="radix-2-trigger-1"
@@ -593,7 +593,7 @@ exports[`Nav component renders 1`] = `
       >
         <div
           aria-labelledby="radix-2-trigger-1"
-          class="c-icuOvE"
+          class="c-dblJlC"
           data-orientation="horizontal"
           dir="ltr"
           id="radix-2-content-1"

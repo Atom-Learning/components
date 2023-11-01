@@ -17,8 +17,8 @@ const light = createTheme({
     backgroundSelectedPressed: '$grey200',
     itemTextSelected: '$grey900',
     itemBackgroundSelected: '$grey900',
-    triggerOpenBackground: '$grey200',
-    navigationDropdownBackground: 'white'
+    triggerBackgroundOpen: '$grey200',
+    dropdownBackground: 'white'
   }
 })
 

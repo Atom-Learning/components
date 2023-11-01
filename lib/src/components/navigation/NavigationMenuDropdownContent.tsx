@@ -12,7 +12,7 @@ const StyledList = styled('ul', {
 
 const StyledContent = styled(NavigationMenuPrimitive.Content, {
   p: '$3',
-  bg: '$navigationDropdownBackground',
+  bg: '$dropdownBackground',
   mt: '4px',
   boxShadow: '$1',
   borderRadius: '$1'
