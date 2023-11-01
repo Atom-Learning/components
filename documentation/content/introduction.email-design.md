@@ -10,8 +10,6 @@ tabs:
       Email recipients often scan information and abandon emails that don't offer them value or simply appear to be too dense. Having great email design is so important to help capture the attention of, and engage, your email recipients.
 
 
-
-
       ### Best practices
 
 
@@ -21,7 +19,7 @@ tabs:
 
       * Be concise
 
-      *  Keep your email on-brand
+      * Keep your email on-brand
 
       * Think about your layout
 
@@ -45,7 +43,7 @@ tabs:
       #### Saved sections
 
 
-      ![saved-sections-hubspot](/assets/images/01-saved-sections.jpg "saved-sections-hubspot")
+      ![saved-sections-hubspot](/assets/images/saved-sections.svg "saved-sections-hubspot")
 
 
       <br/>
@@ -179,13 +177,7 @@ tabs:
       ![70-20-10 rule](/assets/images/10-70-20-10-rule.svg "70-20-10 rule")
 
 
-
-
-
-
       <DosAndDonts items={[{"type":"do","description":"Write using sentence case","image":""}]} />
-
-
 
 
       <DosAndDonts items={[{"type":"dont","description":"distract the recipients from completing a CTA by including too many offers, graphics, etc.","image":""}]} />
