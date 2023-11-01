@@ -190,11 +190,204 @@ tabs:
 
       <DosAndDonts items={[{"type":"dont","description":"distract the recipients from completing a CTA by including too many offers, graphics, etc.","image":""}]} />
   - title: Style
-    content: "# Color"
+    content: >-
+      # Color
+
+
+      Color is a powerful tool in design that can evoke emotions, convey information, establish branding, and guide user actions. In email design, color plays a crucial role in creating a visually appealing and effective communication piece.\
+
+      \
+
+      The use of colour in our emails is mostly reserved for the content (illustrations, photography, icons...) that the creative team provides.\
+
+      \
+
+      The following colours can be used in Hubspot for customising UI elements like buttons, backgrounds, text, etc. and stay consistent with our branding.
+
+
+      ![color](/assets/images/01-color.svg "color")
+
+
+      | Property     | Hex      | Use                            |
+
+      | ------------ | -------- | ------------------------------ |
+
+      | PrimaryLight | \#0F67F5 | Background secondary           |
+
+      | Primary      | \#0F67F5 | Primary brand                  |
+
+      | PrimaryMid   | \#184BC8 | Secondary brand                |
+
+      | PrimaryDark  | \#102DA3 | Footer background              |
+
+      | White        | \#FFFFFF | Content Background             |
+
+      | Grey         | \#757575 | Text minimal                   |
+
+      | GreyMid      | \#545454 | Text subtle                    |
+
+      | GreyDark     | \#333333 | Text regular (body, headlines) |
+
+
+
+
+      <br/>
+
+
+      # CTA Buttons
+
+
+      Use CTA buttons to communicate actions users can take and to allow them to navigate.
+
+
+      ![cta](/assets/images/02-buttons.svg "cta")
+
+
+
+
+      | Property         | Primary        | Secondary      |
+
+      | ---------------- | -------------- | -------------- |
+
+      | Font             | Arial          | Arial          |
+
+      | Font size        | 16px           | 16px           |
+
+      | Font color       | \#FFFFFF       | \#0F67F5       |
+
+      | Background color | \#0F67F5       | \#FFFFFF       |
+
+      | Border width     | \-             | 2px            |
+
+      | Border color     | \-             | \#0F67F5       |
+
+      | Corner radius    | 4px            | 4px            |
+
+      | Alignment        | Center         | center         |
+
+      | Padding          | 12, 12, 24, 24 | 12, 12, 24, 24 |
+
+
+
+
+      <br/>
   - title: Content
     content: "# Overview"
   - title: Layout
-    content: "# Layout"
+    content: >-
+      # Layout
+
+
+      # This is H1
+
+
+      ## This is H2
+
+
+      ### This is H3
+
+
+      #### This is H4
+
+
+      ##### This is H5
+
+
+      ###### This is H6
+
+
+      A well-designed email layout enhances readability, engagement, and the overall user experience. The choice of layout depends on your content and goals. Let's dive into the most common layout types that you can use to inspire your email design:
+
+
+      #### Single column
+
+
+      * This layout is simple and mobile-friendly.
+
+      * Recommended for emails with minimal content, like newsletters, announcements, or transactional messages.
+
+      * Place important information at the top to ensure it's seen immediately.
+
+      * Use compelling visuals and concise text to maintain user interest.
+
+
+      ![single column](/assets/images/01-single-column.svg "single column")
+
+
+      #### Zig-zag
+
+
+      * This layout alternates content between left and right-aligned sections.
+
+      * Suitable for breaking up content and guiding the reader's eye through the email.
+
+      * Place key messages and calls to action (CTAs) strategically to balance visual interest and readability.
+
+
+      ![zig zag](/assets/images/02-zigzag.svg "zig zag")
+
+
+      #### F-pattern
+
+
+      * Based on the natural scanning pattern of users (first scanning horizontally, then vertically).
+
+      * Place the most critical content (such as headlines and CTAs) along the top and left sides.
+
+      * Use headings, bullet points, and concise text to cater to users who skim-read.
+
+
+      ![F-pattern](/assets/images/03-fpattern.svg "F-pattern")
+
+
+      #### Multicolumn
+
+
+      * Offers flexibility to showcase various content side by side.
+
+      * Use this layout when you have multiple related sections or content pieces.
+
+      * Ensure each column remains scannable and doesn't overwhelm the reader.
+
+
+      ![multicolumn](/assets/images/04-multicolumn.svg "multicolumn")
+
+
+      #### Inverted pyramid
+
+
+      * Similar to journalism, present the most important content first.
+
+      * Ideal for time-sensitive messages or emails requiring immediate action.
+
+      * Use a bold headline, concise subheading, and a clear CTA centred aligned to guide the user's attention.
+
+
+      ![Inverted pyramid](/assets/images/05-multipyramid.svg "Inverted pyramid")
+
+
+      #### Hybrid
+
+
+      * Combines elements of different layouts for variety and engagement.
+
+      * Keep the design cohesive and ensure a seamless transition between different screen sizes.
+
+
+      ![Hybrid](/assets/images/06-hybrid.svg "Hybrid")
+
+
+      #### Double column
+
+
+      * Similar to a multi-column layout, but with just two columns.
+
+      * Effective for showcasing two contrasting pieces of content, such as images and text.
+
+      * Maintain a balanced visual hierarchy to avoid overwhelming the reader.
+
+
+      ![double column](/assets/images/07-double-column.svg "double column")
 parent: 913bda18-a8ad-4f2e-8eae-85c5fd80b872
 uuid: d0b53dad-3e2a-4c97-aa25-1e4f370616aa
 nestedSlug:
