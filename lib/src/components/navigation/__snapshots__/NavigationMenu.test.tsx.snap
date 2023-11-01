@@ -2,10 +2,275 @@
 
 exports[`Nav component renders 1`] = `
 @media  {
-  .c-dIYQCX {
+  :root,
+  .t-kAUxbu {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --default-ratios: [object Object];
+    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 73%);
+    --colors-grey600: hsl(0, 0%, 62%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(211, 100%, 88%);
+    --colors-blue500: hsl(212, 100%, 80%);
+    --colors-blue600: hsl(213, 100%, 71%);
+    --colors-blue700: hsl(214, 100%, 58%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 78%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(227, 57%, 11%);
+    --colors-purple100: hsl(282, 100%, 98%);
+    --colors-purple200: hsl(270, 100%, 95%);
+    --colors-purple300: hsl(271, 100%, 92%);
+    --colors-purple400: hsl(270, 100%, 89%);
+    --colors-purple500: hsl(270, 90%, 81%);
+    --colors-purple600: hsl(271, 97%, 69%);
+    --colors-purple700: hsl(273, 84%, 47%);
+    --colors-purple800: hsl(273, 94%, 48%);
+    --colors-purple900: hsl(268, 79%, 42%);
+    --colors-purple1000: hsl(266, 82%, 32%);
+    --colors-purple1100: hsl(265, 63%, 23%);
+    --colors-purple1200: hsl(265, 61%, 14%);
+    --colors-cyan100: hsl(198, 100%, 97%);
+    --colors-cyan200: hsl(199, 100%, 94%);
+    --colors-cyan300: hsl(201, 100%, 89%);
+    --colors-cyan400: hsl(200, 100%, 84%);
+    --colors-cyan500: hsl(201, 96%, 73%);
+    --colors-cyan600: hsl(202, 85%, 60%);
+    --colors-cyan700: hsl(204, 81%, 46%);
+    --colors-cyan800: hsl(205, 100%, 38%);
+    --colors-cyan900: hsl(206, 100%, 30%);
+    --colors-cyan1000: hsl(205, 100%, 21%);
+    --colors-cyan1100: hsl(206, 97%, 15%);
+    --colors-cyan1200: hsl(207, 73%, 9%);
+    --colors-green100: hsl(135, 80%, 96%);
+    --colors-green200: hsl(135, 72%, 92%);
+    --colors-green300: hsl(135, 68%, 83%);
+    --colors-green400: hsl(135, 65%, 76%);
+    --colors-green500: hsl(136, 56%, 62%);
+    --colors-green600: hsl(137, 42%, 49%);
+    --colors-green700: hsl(138, 51%, 35%);
+    --colors-green800: hsl(138, 68%, 29%);
+    --colors-green900: hsl(138, 74%, 21%);
+    --colors-green1000: hsl(138, 89%, 14%);
+    --colors-green1100: hsl(135, 91%, 9%);
+    --colors-green1200: hsl(123, 56%, 6%);
+    --colors-magenta100: hsl(330, 100%, 99%);
+    --colors-magenta200: hsl(329, 100%, 96%);
+    --colors-magenta300: hsl(332, 100%, 92%);
+    --colors-magenta400: hsl(333, 100%, 90%);
+    --colors-magenta500: hsl(333, 90%, 80%);
+    --colors-magenta600: hsl(333, 87%, 72%);
+    --colors-magenta700: hsl(333, 75%, 59%);
+    --colors-magenta800: hsl(333, 69%, 49%);
+    --colors-magenta900: hsl(333, 74%, 36%);
+    --colors-magenta1000: hsl(333, 86%, 25%);
+    --colors-magenta1100: hsl(333, 95%, 16%);
+    --colors-magenta1200: hsl(334, 62%, 10%);
+    --colors-red100: hsl(0, 100%, 99%);
+    --colors-red200: hsl(0, 100%, 96%);
+    --colors-red300: hsl(357, 100%, 93%);
+    --colors-red400: hsl(356, 100%, 90%);
+    --colors-red500: hsl(356, 96%, 83%);
+    --colors-red600: hsl(357, 90%, 73%);
+    --colors-red700: hsl(357, 80%, 59%);
+    --colors-red800: hsl(357, 76%, 49%);
+    --colors-red900: hsl(357, 73%, 37%);
+    --colors-red1000: hsl(357, 79%, 26%);
+    --colors-red1100: hsl(357, 91%, 17%);
+    --colors-red1200: hsl(357, 73%, 10%);
+    --colors-teal100: hsl(180, 83%, 95%);
+    --colors-teal200: hsl(180, 75%, 88%);
+    --colors-teal300: hsl(180, 71%, 78%);
+    --colors-teal400: hsl(179, 70%, 71%);
+    --colors-teal500: hsl(179, 65%, 52%);
+    --colors-teal600: hsl(179, 76%, 41%);
+    --colors-teal700: hsl(179, 91%, 31%);
+    --colors-teal800: hsl(178, 100%, 25%);
+    --colors-teal900: hsl(180, 100%, 18%);
+    --colors-teal1000: hsl(183, 100%, 13%);
+    --colors-teal1100: hsl(187, 92%, 10%);
+    --colors-teal1200: hsl(186, 56%, 7%);
+    --colors-orange100: hsl(38, 100%, 95%);
+    --colors-orange200: hsl(38, 100%, 90%);
+    --colors-orange300: hsl(37, 100%, 84%);
+    --colors-orange400: hsl(36, 96%, 78%);
+    --colors-orange500: hsl(33, 100%, 67%);
+    --colors-orange600: hsl(31, 97%, 57%);
+    --colors-orange700: hsl(30, 92%, 46%);
+    --colors-orange800: hsl(29, 100%, 43%);
+    --colors-orange900: hsl(27, 100%, 36%);
+    --colors-orange1000: hsl(24, 100%, 26%);
+    --colors-orange1100: hsl(20, 97%, 15%);
+    --colors-orange1200: hsl(20, 96%, 11%);
+    --colors-yellow100: hsl(53, 94%, 93%);
+    --colors-yellow200: hsl(54, 92%, 85%);
+    --colors-yellow300: hsl(54, 92%, 75%);
+    --colors-yellow400: hsl(52, 97%, 63%);
+    --colors-yellow500: hsl(51, 100%, 46%);
+    --colors-yellow600: hsl(49, 100%, 39%);
+    --colors-yellow700: hsl(48, 100%, 35%);
+    --colors-yellow800: hsl(46, 100%, 30%);
+    --colors-yellow900: hsl(44, 100%, 22%);
+    --colors-yellow1000: hsl(44, 100%, 18%);
+    --colors-yellow1100: hsl(41, 100%, 11%);
+    --colors-yellow1200: hsl(39, 100%, 8%);
+    --colors-lime100: hsl(73, 94%, 93%);
+    --colors-lime200: hsl(73, 94%, 87%);
+    --colors-lime300: hsl(73, 90%, 77%);
+    --colors-lime400: hsl(74, 82%, 69%);
+    --colors-lime500: hsl(74, 68%, 58%);
+    --colors-lime600: hsl(74, 77%, 41%);
+    --colors-lime700: hsl(75, 100%, 31%);
+    --colors-lime800: hsl(75, 100%, 27%);
+    --colors-lime900: hsl(75, 100%, 19%);
+    --colors-lime1000: hsl(75, 100%, 15%);
+    --colors-lime1100: hsl(75, 100%, 9%);
+    --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-tonal50: hsl(0, 0%, 96%);
+    --colors-tonal100: hsl(0, 0%, 92%);
+    --colors-tonal200: hsl(0, 0%, 62%);
+    --colors-tonal300: hsl(0, 0%, 46%);
+    --colors-tonal400: hsl(0, 0%, 33%);
+    --colors-tonal500: hsl(0, 0%, 20%);
+    --colors-tonal600: hsl(0, 0%, 12%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-primaryLight: hsl(215, 100%, 98%);
+    --colors-primary: hsl(217, 92%, 51%);
+    --colors-primaryMid: hsl(223, 78%, 44%);
+    --colors-primaryDark: hsl(228, 82%, 35%);
+    --colors-secondary: hsl(204, 100%, 72%);
+    --colors-brandRed: hsl(0, 91%, 64%);
+    --colors-brandRedAccent: hsl(14, 100%, 71%);
+    --colors-brandGreen: hsl(128, 47%, 53%);
+    --colors-brandGreenAccent: hsl(168, 100%, 20%);
+    --colors-brandPurple: hsl(256, 65%, 62%);
+    --colors-brandPurpleAccent: hsl(256, 93%, 35%);
+    --colors-brandYellow: hsl(41, 100%, 55%);
+    --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(0, 91%, 64%);
+    --colors-subjectMaths: hsl(217, 92%, 51%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(128, 47%, 53%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(33, 100%, 50%);
+    --colors-subjectExamSkills: hsl(256, 93%, 35%);
+    --colors-glBlueLight: hsl(222, 68%, 78%);
+    --colors-glBluePrimary: hsl(222, 56%, 55%);
+    --colors-glBlueDark: hsl(222, 35%, 43%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'Space Grotesk', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
+  }
+
+  .t-eWhWlr {
+    --colors-text: var(--colors-textSubtle);
+    --colors-background: white;
+    --colors-backgroundHover: var(--colors-grey100);
+    --colors-textHover: var(--colors-textForeground);
+    --colors-backgroundActive: var(--colors-grey200);
+    --colors-textActive: var(--colors-grey1000);
+    --colors-backgroundSelected: var(--colors-blue100);
+    --colors-textSelected: var(--colors-blue800);
+    --colors-textSelectedHover: var(--colors-blue800);
+    --colors-textSelectedPressed: var(--colors-blue800);
+    --colors-textSelectedFocus: var(--colors-blue800);
+    --colors-backgroundSelectedHover: var(--colors-grey100);
+    --colors-backgroundSelectedPressed: var(--colors-grey200);
+    --colors-itemTextSelected: var(--colors-grey900);
+    --colors-itemBackgroundSelected: var(--colors-grey900);
+    --colors-triggerBackgroundOpen: var(--colors-grey200);
+    --colors-dropdownBackground: white;
+  }
+}
+
+@media  {
+  .c-gvhYwV {
     all: unset;
     position: relative;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     outline: none;
     cursor: pointer;
     font-family: var(--fonts-body);
@@ -13,25 +278,26 @@ exports[`Nav component renders 1`] = `
     user-select: none;
     padding: var(--space-3);
     border-radius: var(--radii-1);
+    background: var(--colors-background);
   }
 
-  .c-dIYQCX:hover {
-    background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+  .c-gvhYwV:hover {
+    background: var(--colors-backgroundHover);
+    color: var(--colors-textHover);
   }
 
-  .c-dIYQCX:active {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+  .c-gvhYwV:active {
+    background: var(--colors-backgroundActive);
+    color: var(--colors-textActive);
   }
 
-  .c-dIYQCX:focus-visible {
+  .c-gvhYwV:focus-visible {
     box-shadow: inset 0 0 0 2px var(--colors-primary);
   }
 
-  .c-dIYQCX:disabled {
+  .c-gvhYwV:disabled {
     background: none;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     opacity: 30%;
     cursor: default;
   }
@@ -51,20 +317,20 @@ exports[`Nav component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-DeiGT {
+  .c-lfFbYU {
     display: flex;
     align-items: center;
     border-radius: var(--radii-1);
     justify-content: space-between;
   }
 
-  .c-DeiGT[data-state="open"] {
-    background: var(--colors-tonal100);
+  .c-lfFbYU[data-state="open"] {
+    background: var(--colors-triggerBackgroundOpen);
   }
 
-  .c-jYBZds {
+  .c-dblJlC {
     padding: var(--space-3);
-    background: white;
+    background: var(--colors-dropdownBackground);
     margin-top: 4px;
     box-shadow: var(--shadows-1);
     border-radius: var(--radii-1);
@@ -124,10 +390,10 @@ exports[`Nav component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-iXImxE {
+  .c-kYWBdY {
     all: unset;
     position: relative;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     outline: none;
     cursor: default;
     font-family: var(--fonts-body);
@@ -135,43 +401,43 @@ exports[`Nav component renders 1`] = `
     user-select: none;
     padding: var(--space-3);
     border-radius: var(--radii-1);
+    background: none;
   }
 
-  .c-iXImxE:hover {
-    background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+  .c-kYWBdY:hover {
+    background: var(--colors-backgroundHover);
+    color: var(--colors-textHover);
   }
 
-  .c-iXImxE:active {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal600);
+  .c-kYWBdY:active {
+    background: var(--colors-backgroundActive);
+    color: var(--colors-textActive);
   }
 
-  .c-iXImxE:focus-visible {
+  .c-kYWBdY:focus-visible {
     box-shadow: inset 0 0 0 2px var(--colors-primary);
   }
 
-  .c-iXImxE:disabled {
+  .c-kYWBdY:disabled {
     background: none;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     opacity: 30%;
     cursor: default;
   }
 
-  .c-iXImxE {
-    background: none;
+  .c-kYWBdY {
     opacity: 30%;
   }
 }
 
 @media  {
-  .c-govTNd-icyDJD-elementType-link[data-active] {
+  .c-govTNd-dvXUYs-elementType-link[data-active] {
     font-weight: 600;
-    color: var(--colors-tonal500);
+    color: var(--colors-itemTextSelected);
   }
 
-  .c-govTNd-icyDJD-elementType-link[data-active]::after {
-    background-color: var(--colors-tonal500);
+  .c-govTNd-dvXUYs-elementType-link[data-active]::after {
+    background-color: var(--colors-itemBackgroundSelected);
     border-radius: var(--radii-1);
     bottom: 0;
     content: "";
@@ -206,25 +472,24 @@ exports[`Nav component renders 1`] = `
     display: table;
   }
 
-  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active] {
-    background: var(--colors-primaryLight);
-    color: var(--colors-primary);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active] {
+    background: var(--colors-backgroundSelected);
+    color: var(--colors-textSelected);
   }
 
-  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active] * {
-    color: var(--colors-primary);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:hover {
+    background: var(--colors-backgroundSelectedHover);
+    color: var(--colors-textSelectedHover);
   }
 
-  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:hover {
-    background: var(--colors-tonal50);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:active {
+    background: var(--colors-backgroundSelectedPressed);
+    color: var(--colors-textSelectedPressed);
   }
 
-  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:active {
-    background: var(--colors-tonal100);
-  }
-
-  .c-govTNd-gkgtJA-elementType-dropdownItem[data-active]:focus-visible {
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:focus-visible {
     box-shadow: 0 0 0 2px var(--colors-primary);
+    color: var(--colors-textSelectedFocus);
   }
 }
 
@@ -263,7 +528,7 @@ exports[`Nav component renders 1`] = `
 <body>
   <nav
     aria-label="Main"
-    class="c-eZxssT"
+    class="c-eZxssT t-eWhWlr"
     data-orientation="horizontal"
     dir="ltr"
   >
@@ -279,7 +544,7 @@ exports[`Nav component renders 1`] = `
           class="PJLV"
         >
           <a
-            class="c-dIYQCX c-govTNd c-govTNd-icyDJD-elementType-link"
+            class="c-gvhYwV c-govTNd c-govTNd-dvXUYs-elementType-link"
             data-radix-collection-item=""
             href="/introduction"
           >
@@ -290,7 +555,7 @@ exports[`Nav component renders 1`] = `
           <button
             aria-controls="radix-2-content-1"
             aria-expanded="true"
-            class="c-dIYQCX c-DeiGT"
+            class="c-gvhYwV c-lfFbYU"
             data-radix-collection-item=""
             data-state="open"
             id="radix-2-trigger-1"
@@ -328,7 +593,7 @@ exports[`Nav component renders 1`] = `
       >
         <div
           aria-labelledby="radix-2-trigger-1"
-          class="c-jYBZds"
+          class="c-dblJlC"
           data-orientation="horizontal"
           dir="ltr"
           id="radix-2-content-1"
@@ -340,7 +605,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/colours"
                 rel="noopener noreferrer"
@@ -366,7 +631,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/effects"
                 rel="noopener noreferrer"
@@ -379,7 +644,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-dIYQCX c-govTNd c-govTNd-gkgtJA-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/icons"
                 rel="noopener noreferrer"
@@ -392,7 +657,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <button
-                class="c-iXImxE"
+                class="c-kYWBdY"
                 disabled=""
               >
                 Icons

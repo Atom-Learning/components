@@ -2,6 +2,7 @@ import { Root } from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
 
 import { NavigationMenuVerticalAccordion } from './NavigationMenuVerticalAccordion'
 import { NavigationMenuVerticalAccordionContent } from './NavigationMenuVerticalAccordionContent'
@@ -46,7 +47,11 @@ type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
 
 export const NavigationMenuVertical = (({ children, ...rest }) => {
   return (
-    <StyledRoot {...rest} orientation="vertical">
+    <StyledRoot
+      className={navigationMenuVerticalColorSchemes['light']}
+      {...rest}
+      orientation="vertical"
+    >
       <NavigationMenuVerticalList>{children}</NavigationMenuVerticalList>
     </StyledRoot>
   )
