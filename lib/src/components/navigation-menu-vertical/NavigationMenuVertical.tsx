@@ -2,7 +2,6 @@ import { Root } from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'
-import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
 
 import { NavigationMenuVerticalAccordion } from './NavigationMenuVerticalAccordion'
 import { NavigationMenuVerticalAccordionContent } from './NavigationMenuVerticalAccordionContent'
@@ -13,6 +12,7 @@ import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemC
 import { NavigationMenuVerticalLink } from './NavigationMenuVerticalLink'
 import { NavigationMenuVerticalList } from './NavigationMenuVerticalList'
 import { NavigationMenuVerticalText } from './NavigationMenuVerticalText'
+import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
 
 const StyledRoot = styled(Root, {
   width: '100%'
