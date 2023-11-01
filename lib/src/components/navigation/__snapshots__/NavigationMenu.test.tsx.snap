@@ -245,24 +245,24 @@ exports[`Nav component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-iIBSzF {
-    --colors-text: var(--colors-tonal400);
+  .t-cXoNrd {
+    --colors-text: var(--colors-textSubtle);
     --colors-background: white;
-    --colors-backgroundHover: var(--colors-tonal50);
-    --colors-textHover: var(--colors-tonal600);
-    --colors-backgroundActive: var(--colors-tonal100);
-    --colors-textActive: var(--colors-tonal600);
-    --colors-backgroundDataActive: var(--colors-primaryLight);
-    --colors-dataActiveText: var(--colors-primary);
-    --colors-dataActiveTextHover: var(--colors-primary);
-    --colors-dataActivePressedText: var(--colors-primary);
-    --colors-dataActiveFocus: var(--colors-primary);
-    --colors-dataActiveBackgroundHover: var(--colors-tonal50);
-    --colors-dataActiveBackground: var(--colors-tonal100);
-    --colors-activeItemColor: var(--colors-tonal500);
-    --colors-activeItemBackgroundColor: var(--colors-tonal500);
-    --colors-triggerOpenBackground: var(--colors-tonal100);
-    --colors-navigationDropdown: white;
+    --colors-backgroundHover: var(--colors-grey100);
+    --colors-textHover: var(--colors-textForeground);
+    --colors-backgroundActive: var(--colors-grey200);
+    --colors-textActive: var(--colors-grey1000);
+    --colors-backgroundSelected: var(--colors-blue100);
+    --colors-textSelected: var(--colors-blue800);
+    --colors-textSelectedHover: var(--colors-blue800);
+    --colors-textSelectedPressed: var(--colors-blue800);
+    --colors-textSelectedFocus: var(--colors-blue800);
+    --colors-backgroundSelectedHover: var(--colors-grey100);
+    --colors-backgroundSelectedPressed: var(--colors-grey200);
+    --colors-itemTextSelected: var(--colors-grey900);
+    --colors-itemBackgroundSelected: var(--colors-grey900);
+    --colors-triggerOpenBackground: var(--colors-grey200);
+    --colors-navigationDropdownBackground: white;
   }
 }
 
@@ -328,9 +328,9 @@ exports[`Nav component renders 1`] = `
     background: var(--colors-triggerOpenBackground);
   }
 
-  .c-WZtCm {
+  .c-icuOvE {
     padding: var(--space-3);
-    background: var(--colors-navigationDropdown);
+    background: var(--colors-navigationDropdownBackground);
     margin-top: 4px;
     box-shadow: var(--shadows-1);
     border-radius: var(--radii-1);
@@ -431,13 +431,13 @@ exports[`Nav component renders 1`] = `
 }
 
 @media  {
-  .c-govTNd-cVGRl-elementType-link[data-active] {
+  .c-govTNd-dvXUYs-elementType-link[data-active] {
     font-weight: 600;
-    color: var(--colors-activeItemColor);
+    color: var(--colors-itemTextSelected);
   }
 
-  .c-govTNd-cVGRl-elementType-link[data-active]::after {
-    background-color: var(--colors-activeItemBackgroundColor);
+  .c-govTNd-dvXUYs-elementType-link[data-active]::after {
+    background-color: var(--colors-itemBackgroundSelected);
     border-radius: var(--radii-1);
     bottom: 0;
     content: "";
@@ -472,24 +472,24 @@ exports[`Nav component renders 1`] = `
     display: table;
   }
 
-  .c-govTNd-lLlCt-elementType-dropdownItem[data-active] {
-    background: var(--colors-backgroundDataActive);
-    color: var(--colors-dataActiveText);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active] {
+    background: var(--colors-backgroundSelected);
+    color: var(--colors-textSelected);
   }
 
-  .c-govTNd-lLlCt-elementType-dropdownItem[data-active]:hover {
-    background: var(--colors-dataActiveBackgroundHover);
-    color: var(--colors-dataActiveTextHover);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:hover {
+    background: var(--colors-backgroundSelectedHover);
+    color: var(--colors-textSelectedHover);
   }
 
-  .c-govTNd-lLlCt-elementType-dropdownItem[data-active]:active {
-    background: var(--colors-dataActiveBackground);
-    color: var(--colors-dataActivePressedText);
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:active {
+    background: var(--colors-backgroundSelectedPressed);
+    color: var(--colors-textSelectedPressed);
   }
 
-  .c-govTNd-lLlCt-elementType-dropdownItem[data-active]:focus-visible {
+  .c-govTNd-vbUZb-elementType-dropdownItem[data-active]:focus-visible {
     box-shadow: 0 0 0 2px var(--colors-primary);
-    color: var(--colors-dataActiveFocus);
+    color: var(--colors-textSelectedFocus);
   }
 }
 
@@ -528,7 +528,7 @@ exports[`Nav component renders 1`] = `
 <body>
   <nav
     aria-label="Main"
-    class="c-eZxssT t-iIBSzF"
+    class="c-eZxssT t-cXoNrd"
     data-orientation="horizontal"
     dir="ltr"
   >
@@ -544,7 +544,7 @@ exports[`Nav component renders 1`] = `
           class="PJLV"
         >
           <a
-            class="c-gvhYwV c-govTNd c-govTNd-cVGRl-elementType-link"
+            class="c-gvhYwV c-govTNd c-govTNd-dvXUYs-elementType-link"
             data-radix-collection-item=""
             href="/introduction"
           >
@@ -593,7 +593,7 @@ exports[`Nav component renders 1`] = `
       >
         <div
           aria-labelledby="radix-2-trigger-1"
-          class="c-WZtCm"
+          class="c-icuOvE"
           data-orientation="horizontal"
           dir="ltr"
           id="radix-2-content-1"
@@ -605,7 +605,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-gvhYwV c-govTNd c-govTNd-lLlCt-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/colours"
                 rel="noopener noreferrer"
@@ -631,7 +631,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-gvhYwV c-govTNd c-govTNd-lLlCt-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/effects"
                 rel="noopener noreferrer"
@@ -644,7 +644,7 @@ exports[`Nav component renders 1`] = `
               class="PJLV"
             >
               <a
-                class="c-gvhYwV c-govTNd c-govTNd-lLlCt-elementType-dropdownItem"
+                class="c-gvhYwV c-govTNd c-govTNd-vbUZb-elementType-dropdownItem"
                 data-radix-collection-item=""
                 href="https://app.atomlearning.co.uk/icons"
                 rel="noopener noreferrer"

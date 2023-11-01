@@ -18,10 +18,7 @@ interface TopBarSubComponents {
 }
 
 const TopBarDivider = () => (
-  <Divider
-    orientation="vertical"
-    css={{ height: '$2', bg: '$dividerBackground' }}
-  />
+  <Divider orientation="vertical" css={{ height: '$2', bg: '$divider' }} />
 )
 
 const StyledRoot = styled('div', {
@@ -32,7 +29,7 @@ const StyledRoot = styled('div', {
   width: '100vw',
   top: '0',
   zIndex: 1,
-  borderBottom: '1px solid $borderBottomBackground',
+  borderBottom: '1px solid $borderBottom',
   transition: 'box-shadow .2s ease-out',
   variants: {
     hasScrolled: {

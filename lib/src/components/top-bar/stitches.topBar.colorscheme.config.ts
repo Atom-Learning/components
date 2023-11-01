@@ -3,8 +3,8 @@ import { createTheme } from '~/stitches'
 const light = createTheme({
   colors: {
     background: 'white',
-    dividerBackground: '$tonal100',
-    borderBottomBackground: '$tonal100'
+    divider: '$grey200',
+    borderBottom: '$grey200'
   }
 })
 

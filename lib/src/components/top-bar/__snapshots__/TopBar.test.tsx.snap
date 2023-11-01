@@ -245,15 +245,15 @@ exports[`TopBar component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cOULKG {
+  .t-fvKGSq {
     --colors-background: white;
-    --colors-dividerBackground: var(--colors-tonal100);
-    --colors-borderBottomBackground: var(--colors-tonal100);
+    --colors-divider: var(--colors-grey200);
+    --colors-borderBottom: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-bhzmuu {
+  .c-eplmKA {
     background: var(--colors-background);
     position: sticky;
     display: flex;
@@ -261,7 +261,7 @@ exports[`TopBar component renders 1`] = `
     width: 100vw;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid var(--colors-borderBottomBackground);
+    border-bottom: 1px solid var(--colors-borderBottom);
     transition: box-shadow .2s ease-out;
   }
 
@@ -390,11 +390,11 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-bhzmuu-daNQNf-size-md {
+  .c-eplmKA-daNQNf-size-md {
     height: var(--sizes-6);
   }
 
-  .c-bhzmuu-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+  .c-eplmKA-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
     height: 24px;
     width: auto;
   }
@@ -460,15 +460,15 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-fNKiiB-ihKiNay-css {
+  .c-fNKiiB-ijUXxeg-css {
     height: var(--sizes-2);
-    background: var(--colors-dividerBackground);
+    background: var(--colors-divider);
   }
 }
 
 <body>
   <div
-    class="c-bhzmuu c-bhzmuu-daNQNf-size-md t-cOULKG"
+    class="c-eplmKA c-eplmKA-daNQNf-size-md t-fvKGSq"
   >
     <div
       class="c-dhzjXW c-ftiHlK"
@@ -506,7 +506,7 @@ exports[`TopBar component renders 1`] = `
         </svg>
       </button>
       <hr
-        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ihKiNay-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ijUXxeg-css"
       />
       <button
         aria-label="Light/Dark mode"
@@ -780,15 +780,15 @@ exports[`TopBar component renders the lg variant 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cOULKG {
+  .t-fvKGSq {
     --colors-background: white;
-    --colors-dividerBackground: var(--colors-tonal100);
-    --colors-borderBottomBackground: var(--colors-tonal100);
+    --colors-divider: var(--colors-grey200);
+    --colors-borderBottom: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-bhzmuu {
+  .c-eplmKA {
     background: var(--colors-background);
     position: sticky;
     display: flex;
@@ -796,7 +796,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     width: 100vw;
     top: 0;
     z-index: 1;
-    border-bottom: 1px solid var(--colors-borderBottomBackground);
+    border-bottom: 1px solid var(--colors-borderBottom);
     transition: box-shadow .2s ease-out;
   }
 
@@ -925,11 +925,11 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-bhzmuu-daNQNf-size-md {
+  .c-eplmKA-daNQNf-size-md {
     height: var(--sizes-6);
   }
 
-  .c-bhzmuu-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
+  .c-eplmKA-daNQNf-size-md .topbar-brand-logo[src$=".svg"] {
     height: 24px;
     width: auto;
   }
@@ -972,11 +972,11 @@ exports[`TopBar component renders the lg variant 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-bhzmuu-lcsdih-size-lg {
+  .c-eplmKA-lcsdih-size-lg {
     height: var(--sizes-7);
   }
 
-  .c-bhzmuu-lcsdih-size-lg .topbar-brand-logo[src$=".svg"] {
+  .c-eplmKA-lcsdih-size-lg .topbar-brand-logo[src$=".svg"] {
     height: 32px;
     width: auto;
   }
@@ -1004,15 +1004,15 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-fNKiiB-ihKiNay-css {
+  .c-fNKiiB-ijUXxeg-css {
     height: var(--sizes-2);
-    background: var(--colors-dividerBackground);
+    background: var(--colors-divider);
   }
 }
 
 <body>
   <div
-    class="c-bhzmuu c-bhzmuu-lcsdih-size-lg t-cOULKG"
+    class="c-eplmKA c-eplmKA-lcsdih-size-lg t-fvKGSq"
   >
     <div
       class="c-dhzjXW c-ftiHlK"
@@ -1050,7 +1050,7 @@ exports[`TopBar component renders the lg variant 1`] = `
         </svg>
       </button>
       <hr
-        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ihKiNay-css"
+        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ijUXxeg-css"
       />
       <button
         aria-label="Light/Dark mode"

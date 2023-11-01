@@ -31,9 +31,9 @@ export const navigationMenuBaseItemStyles = {
 
 export const navigationMenuActiveItemStyles = {
   fontWeight: '600',
-  color: '$activeItemColor',
+  color: '$itemTextSelected',
   '&::after': {
-    backgroundColor: '$activeItemBackgroundColor',
+    backgroundColor: '$itemBackgroundSelected',
     borderRadius: '$1',
     bottom: 0,
     content: '',

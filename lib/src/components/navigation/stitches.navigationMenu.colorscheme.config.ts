@@ -2,23 +2,23 @@ import { createTheme } from '~/stitches'
 
 const light = createTheme({
   colors: {
-    text: '$tonal400',
+    text: '$textSubtle',
     background: 'white',
-    backgroundHover: '$tonal50',
-    textHover: '$tonal600',
-    backgroundActive: '$tonal100',
-    textActive: '$tonal600',
-    backgroundDataActive: '$primaryLight',
-    dataActiveText: '$primary',
-    dataActiveTextHover: '$primary',
-    dataActivePressedText: '$primary',
-    dataActiveFocus: '$primary',
-    dataActiveBackgroundHover: '$tonal50',
-    dataActiveBackground: '$tonal100',
-    activeItemColor: '$tonal500',
-    activeItemBackgroundColor: '$tonal500',
-    triggerOpenBackground: '$tonal100',
-    navigationDropdown: 'white'
+    backgroundHover: '$grey100',
+    textHover: '$textForeground',
+    backgroundActive: '$grey200',
+    textActive: '$grey1000',
+    backgroundSelected: '$blue100',
+    textSelected: '$blue800',
+    textSelectedHover: '$blue800',
+    textSelectedPressed: '$blue800',
+    textSelectedFocus: '$blue800',
+    backgroundSelectedHover: '$grey100',
+    backgroundSelectedPressed: '$grey200',
+    itemTextSelected: '$grey900',
+    itemBackgroundSelected: '$grey900',
+    triggerOpenBackground: '$grey200',
+    navigationDropdownBackground: 'white'
   }
 })
 
