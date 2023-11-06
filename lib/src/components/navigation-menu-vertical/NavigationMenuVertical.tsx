@@ -1,5 +1,5 @@
 import { Root } from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
 
@@ -15,7 +15,21 @@ import { NavigationMenuVerticalText } from './NavigationMenuVerticalText'
 import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
 
 const StyledRoot = styled(Root, {
-  width: '100%'
+  zIndex: 1
+})
+
+const StyledCollapsible = styled('div', {
+  p: '$4',
+  transition: 'width 150ms, border-color 150ms',
+  height: '100%',
+  bg: 'white',
+  borderRight: 'inset $grey200 1px',
+  variants: {
+    expanded: {
+      true: { width: '256px' },
+      false: { width: '88px', overflow: 'hidden' }
+    }
+  }
 })
 
 /*
@@ -32,7 +46,9 @@ type TNavigationVerticalProps = Omit<
   | 'defaultValue'
   | 'value'
   | 'onValueChange'
->
+> & {
+  collapsible?: boolean
+}
 
 type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Link: typeof NavigationMenuVerticalLink
@@ -45,7 +61,29 @@ type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Text: typeof NavigationMenuVerticalText
 }
 
-export const NavigationMenuVertical = (({ children, ...rest }) => {
+export const NavigationMenuVertical = (({ children, collapsible, ...rest }) => {
+  const [expanded, setExpanded] = React.useState(false)
+
+  if (collapsible) {
+    return (
+      <StyledRoot
+        className={navigationMenuVerticalColorSchemes['light']}
+        {...rest}
+        orientation="vertical"
+        css={{ width: 88 }}
+      >
+        <StyledCollapsible
+          onPointerEnter={() => setExpanded(true)}
+          onPointerLeave={() => setExpanded(false)}
+          expanded={expanded}
+          aria-expanded={expanded}
+        >
+          <NavigationMenuVerticalList>{children}</NavigationMenuVerticalList>
+        </StyledCollapsible>
+      </StyledRoot>
+    )
+  }
+
   return (
     <StyledRoot
       className={navigationMenuVerticalColorSchemes['light']}
