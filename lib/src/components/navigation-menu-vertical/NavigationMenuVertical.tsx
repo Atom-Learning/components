@@ -13,23 +13,10 @@ import { NavigationMenuVerticalLink } from './NavigationMenuVerticalLink'
 import { NavigationMenuVerticalList } from './NavigationMenuVerticalList'
 import { NavigationMenuVerticalText } from './NavigationMenuVerticalText'
 import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
+import { NavigationMenuVerticalCollapsible } from './NavigationMenuVerticalCollapsible'
 
 const StyledRoot = styled(Root, {
   zIndex: 1
-})
-
-const StyledCollapsible = styled('div', {
-  p: '$4',
-  transition: 'width 150ms, border-color 150ms',
-  height: '100%',
-  bg: 'white',
-  borderRight: 'inset $grey200 1px',
-  variants: {
-    expanded: {
-      true: { width: '256px' },
-      false: { width: '88px', overflow: 'hidden' }
-    }
-  }
 })
 
 /*
@@ -46,9 +33,7 @@ type TNavigationVerticalProps = Omit<
   | 'defaultValue'
   | 'value'
   | 'onValueChange'
-> & {
-  collapsible?: boolean
-}
+> & { collapsible?: boolean }
 
 type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Link: typeof NavigationMenuVerticalLink
@@ -62,9 +47,7 @@ type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
 }
 
 export const NavigationMenuVertical = (({ children, collapsible, ...rest }) => {
-  const [expanded, setExpanded] = React.useState(false)
-
-  if (collapsible) {
+  if (collapsible)
     return (
       <StyledRoot
         className={navigationMenuVerticalColorSchemes['light']}
@@ -72,18 +55,11 @@ export const NavigationMenuVertical = (({ children, collapsible, ...rest }) => {
         orientation="vertical"
         css={{ width: 88 }}
       >
-        <StyledCollapsible
-          onPointerEnter={() => setExpanded(true)}
-          onPointerLeave={() => setExpanded(false)}
-          expanded={expanded}
-          aria-expanded={expanded}
-        >
+        <NavigationMenuVerticalCollapsible>
           <NavigationMenuVerticalList>{children}</NavigationMenuVerticalList>
-        </StyledCollapsible>
+        </NavigationMenuVerticalCollapsible>
       </StyledRoot>
     )
-  }
-
   return (
     <StyledRoot
       className={navigationMenuVerticalColorSchemes['light']}
