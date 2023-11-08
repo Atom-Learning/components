@@ -15,6 +15,7 @@ import {
   SideBarHeader,
   SideBarMain
 } from './SideBarComponents'
+import { SideBarExpandableContext } from './SideBarExpandableContext'
 
 const SIZE_COLLAPSED = '88px'
 const SIZE_EXPANDED = '256px'
@@ -26,7 +27,7 @@ const light = createTheme({
   }
 })
 
-const Container = styled('div', {
+const Root = styled('div', {
   height: '100svh',
   position: 'sticky',
   top: '0',
@@ -38,15 +39,15 @@ const Container = styled('div', {
   }
 })
 
-const Content = styled('div', {
-  bg: '$background',
+const Wrapper = styled('div', {
   borderRight: '1px solid $border',
-  display: 'flex',
-  flexDirection: 'column',
+  boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0)',
   height: '100%',
   overflow: 'hidden',
-  transition: 'width 150ms ease-out, box-shadow 150ms ease-out',
   willChange: 'width',
+  '@allowMotion': {
+    transition: 'width 125ms ease-out, box-shadow 125ms ease-out'
+  },
   variants: {
     type: {
       static: {},
@@ -61,9 +62,17 @@ const Content = styled('div', {
     {
       isExpanded: true,
       type: 'expandable',
-      css: { boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1);' }
+      css: { boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1)' }
     }
   ]
+})
+
+const Content = styled('div', {
+  bg: '$background',
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
+  width: SIZE_EXPANDED
 })
 
 const PointerBlocker = styled('div', {
@@ -81,7 +90,7 @@ const PointerBlocker = styled('div', {
   }
 })
 
-type SideBarProps = React.ComponentProps<typeof Container> & {
+type SideBarProps = React.ComponentProps<typeof Root> & {
   type: 'expandable' | 'static'
 }
 
@@ -122,14 +131,18 @@ export const SideBar = ({
       : {}
 
   return (
-    <Container {...props} className={className} type={type}>
-      <Content {...expandableProps} isExpanded={isExpanded} type={type}>
-        {children}
-        {type === 'expandable' && (
-          <PointerBlocker isVisible={!isHovered && !isExpanded} />
-        )}
-      </Content>
-    </Container>
+    <SideBarExpandableContext.Provider value={{ isExpanded }}>
+      <Root {...props} className={className} type={type}>
+        <Wrapper {...expandableProps} isExpanded={isExpanded} type={type}>
+          <Content>
+            {children}
+            {type === 'expandable' && (
+              <PointerBlocker isVisible={!isHovered && !isExpanded} />
+            )}
+          </Content>
+        </Wrapper>
+      </Root>
+    </SideBarExpandableContext.Provider>
   )
 }
 
