@@ -121,13 +121,7 @@ export const SideBar = ({
 
   const expandableProps =
     type === 'expandable'
-      ? {
-          ...focusWithinProps,
-          ...hoverProps,
-          ...pressProps,
-          'aria-expanded': isExpanded,
-          ref
-        }
+      ? { ...focusWithinProps, ...hoverProps, ...pressProps, ref }
       : {}
 
   return (
