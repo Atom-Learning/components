@@ -1,1 +1,1 @@
-export { SideBar } from './SideBar'
+export { SideBar, useExpandable } from './SideBar'

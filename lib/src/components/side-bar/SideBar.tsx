@@ -9,34 +9,77 @@ import {
   usePress
 } from 'react-aria'
 import { colorSchemes as topBarColorSchemes } from './stitches.topBar.colorscheme.config'
+import { Text } from '../text'
+import { Image } from '../image'
+
+export const BrandLogo = ({ src, alt = 'Atom Learning logo', ...props }) => (
+  <Image src={src} alt={alt} {...props} />
+)
+
+export const BrandName = styled(Text, {
+  color: '$tonal400'
+})
+
+export const Brand = styled('a', {
+  display: 'flex',
+  alignItems: 'center',
+  textDecoration: 'none',
+  color: '$tonal400',
+  '&:hover, &:focus': { textDecoration: 'none' }
+})
+
+export const Main = styled('div', {
+  p: '$4',
+  width: '100%',
+  flexGrow: 1,
+  overflowY: 'auto',
+  overflowX: 'hidden'
+})
+export const Header = styled('div', {
+  p: '$4',
+  width: '100%',
+  borderBottom: '1px solid $base3'
+})
+export const Footer = styled('div', {
+  p: '$4',
+  width: '100%',
+  borderTop: '1px solid $base3'
+})
 
 const Container = styled('div', {
   height: '100vh',
   position: 'sticky',
   top: '0',
-  width: '88px',
-  zIndex: 1
+  zIndex: 1,
+  variants: {
+    type: { expandable: { width: '88px' } }
+  }
 })
 
 const Content = styled('div', {
   bg: '$background',
   borderRight: '1px solid $grey200',
   display: 'flex',
+  flexDirection: 'column',
   height: '100%',
   overflow: 'hidden',
-  p: '$4',
   transition: 'width 150ms ease-out, box-shadow 150ms ease-out',
   variants: {
+    type: { static: {}, expandable: {} },
     isExpanded: {
-      true: {
-        width: '256px',
+      true: { width: '256px' },
+      false: { width: '88px' }
+    }
+  },
+  compoundVariants: [
+    {
+      isExpanded: true,
+      type: 'expandable',
+      css: {
         boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1);'
-      },
-      false: {
-        width: '88px'
       }
     }
-  }
+  ]
 })
 
 const PointerBlocker = styled('div', {
@@ -45,7 +88,6 @@ const PointerBlocker = styled('div', {
   position: 'absolute',
   right: 0,
   top: 0,
-  bg: 'rgba(255,0,0,0.2)',
   transition: 'all',
   variants: {
     isVisible: {
@@ -55,16 +97,26 @@ const PointerBlocker = styled('div', {
   }
 })
 
+const ExpandableContext = React.createContext<{ isExpanded?: boolean }>({
+  isExpanded: undefined
+})
+
 export const SideBar = ({
   className = topBarColorSchemes['light'],
   children,
+  type = 'expandable',
   ...props
-}: React.ComponentProps<typeof Container>) => {
-  const [isExpanded, setIsExpanded] = React.useState(false)
+}: React.ComponentProps<typeof Container> & {
+  type: 'expandable' | 'static'
+}) => {
+  const [isExpanded, setIsExpanded] = React.useState(type === 'static')
   const ref = React.useRef<HTMLDivElement>(null)
 
   const { focusWithinProps } = useFocusWithin({
-    onFocusWithin: () => setIsExpanded(true),
+    onFocusWithin: (e) => {
+      console.log({ e })
+      setIsExpanded(true)
+    },
     onBlurWithin: () => setIsExpanded(false)
   })
   let { hoverProps, isHovered } = useHover({
@@ -72,7 +124,7 @@ export const SideBar = ({
     onHoverEnd: () => setIsExpanded(false)
   })
   let { pressProps } = usePress({
-    onPress: (e) => setIsExpanded(!isExpanded)
+    onPress: (e) => setIsExpanded(true)
   })
 
   useInteractOutside({
@@ -80,21 +132,40 @@ export const SideBar = ({
     onInteractOutside: (e) => setIsExpanded(false)
   })
 
+  const expandableProps =
+    type === 'expandable'
+      ? {
+          ...focusWithinProps,
+          ...hoverProps,
+          ...pressProps,
+          'aria-expanded': isExpanded,
+          ref
+        }
+      : {}
+
   return (
-    <Container className={className} {...props}>
-      <Content
-        {...focusWithinProps}
-        {...hoverProps}
-        {...pressProps}
-        isExpanded={isExpanded}
-        aria-expanded={isExpanded}
-        ref={ref}
-      >
-        {children}
-        <PointerBlocker isVisible={!isHovered && !isExpanded} />
-      </Content>
-    </Container>
+    <ExpandableContext.Provider value={{ isExpanded }}>
+      <Container {...props} className={className} type={type}>
+        <Content {...expandableProps} isExpanded={isExpanded} type={type}>
+          {children}
+          {type === 'expandable' && (
+            <PointerBlocker isVisible={!isHovered && !isExpanded} />
+          )}
+        </Content>
+      </Container>
+    </ExpandableContext.Provider>
   )
 }
 
-SideBar.displayName = 'TopBar'
+SideBar.Header = Header
+SideBar.Main = Main
+SideBar.Footer = Footer
+SideBar.BrandLogo = BrandLogo
+SideBar.Brand = Brand
+SideBar.BrandName = BrandName
+
+export const useExpandable = () => {
+  return React.useContext(ExpandableContext)
+}
+
+SideBar.displayName = 'SideBar'
