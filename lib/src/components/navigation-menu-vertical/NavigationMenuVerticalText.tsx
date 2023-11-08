@@ -9,9 +9,9 @@ const StyledNavigationMenuVerticalText = styled.withConfig({
   fontWeight: 'var(--navigation-menu-vertical-item-font-weight)',
   ['[aria-expanded] &']: {
     opacity: 0,
-    transition: 'opacity 150ms, transform 150ms',
+    transition: 'opacity 150ms ease-out, transform 150ms ease-out',
     transform: 'translate(8px)',
-    width: '200px'
+    whiteSpace: 'nowrap'
   },
   ['[aria-expanded="true"] &']: {
     opacity: 1,

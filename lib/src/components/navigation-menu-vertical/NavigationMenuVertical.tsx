@@ -2,7 +2,6 @@ import { Root } from '@radix-ui/react-navigation-menu'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-
 import { NavigationMenuVerticalAccordion } from './NavigationMenuVerticalAccordion'
 import { NavigationMenuVerticalAccordionContent } from './NavigationMenuVerticalAccordionContent'
 import { NavigationMenuVerticalAccordionTrigger } from './NavigationMenuVerticalAccordionTrigger'
@@ -13,10 +12,14 @@ import { NavigationMenuVerticalLink } from './NavigationMenuVerticalLink'
 import { NavigationMenuVerticalList } from './NavigationMenuVerticalList'
 import { NavigationMenuVerticalText } from './NavigationMenuVerticalText'
 import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
-import { NavigationMenuVerticalCollapsible } from './NavigationMenuVerticalCollapsible'
 
 const StyledRoot = styled(Root, {
-  zIndex: 1
+  width: '100%',
+  variants: {
+    isCollapsed: {
+      true: { width: '88px' }
+    }
+  }
 })
 
 /*
@@ -46,20 +49,7 @@ type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Text: typeof NavigationMenuVerticalText
 }
 
-export const NavigationMenuVertical = (({ children, collapsible, ...rest }) => {
-  if (collapsible)
-    return (
-      <StyledRoot
-        className={navigationMenuVerticalColorSchemes['light']}
-        {...rest}
-        orientation="vertical"
-        css={{ width: 88 }}
-      >
-        <NavigationMenuVerticalCollapsible>
-          <NavigationMenuVerticalList>{children}</NavigationMenuVerticalList>
-        </NavigationMenuVerticalCollapsible>
-      </StyledRoot>
-    )
+export const NavigationMenuVertical = (({ children, isCollapsed, ...rest }) => {
   return (
     <StyledRoot
       className={navigationMenuVerticalColorSchemes['light']}
