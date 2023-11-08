@@ -14,12 +14,7 @@ import { NavigationMenuVerticalText } from './NavigationMenuVerticalText'
 import { colorSchemes as navigationMenuVerticalColorSchemes } from './stitches.navigationMenuVertical.colorscheme.config'
 
 const StyledRoot = styled(Root, {
-  width: '100%',
-  variants: {
-    isCollapsed: {
-      true: { width: '88px' }
-    }
-  }
+  width: '100%'
 })
 
 /*
@@ -36,7 +31,7 @@ type TNavigationVerticalProps = Omit<
   | 'defaultValue'
   | 'value'
   | 'onValueChange'
-> & { collapsible?: boolean }
+>
 
 type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Link: typeof NavigationMenuVerticalLink
@@ -49,7 +44,7 @@ type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
   Text: typeof NavigationMenuVerticalText
 }
 
-export const NavigationMenuVertical = (({ children, isCollapsed, ...rest }) => {
+export const NavigationMenuVertical = (({ children, ...rest }) => {
   return (
     <StyledRoot
       className={navigationMenuVerticalColorSchemes['light']}
