@@ -29,7 +29,7 @@ const App = () => (
   <ColorScheme base="grey1" accent="blue1" interactive="loContrast">
     <TopBar>sdofinsdg</TopBar>
     <Flex css={{ minHeight: '100vh' }}>
-      <SideBar type="static">
+      <SideBar>
         <SideBar.Header
           css={{
             px: '$2',

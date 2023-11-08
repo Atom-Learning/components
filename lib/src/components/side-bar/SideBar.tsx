@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { styled } from '~/stitches'
+import { createTheme, styled } from '~/stitches'
 
 import {
   useFocusWithin,
@@ -8,9 +8,19 @@ import {
   useInteractOutside,
   usePress
 } from 'react-aria'
-import { colorSchemes as topBarColorSchemes } from './stitches.topBar.colorscheme.config'
 import { Text } from '../text'
 import { Image } from '../image'
+
+const SIZE_COLLAPSED = '88px'
+const SIZE_EXPANDED = '256px'
+
+const light = createTheme({
+  colors: {
+    background: 'white',
+    divider: '$grey200',
+    borderBottom: '$grey200'
+  }
+})
 
 export const BrandLogo = ({ src, alt = 'Atom Learning logo', ...props }) => (
   <Image src={src} alt={alt} {...props} />
@@ -52,7 +62,7 @@ const Container = styled('div', {
   top: '0',
   zIndex: 1,
   variants: {
-    type: { expandable: { width: '88px' } }
+    type: { expandable: { width: SIZE_COLLAPSED } }
   }
 })
 
@@ -67,17 +77,15 @@ const Content = styled('div', {
   variants: {
     type: { static: {}, expandable: {} },
     isExpanded: {
-      true: { width: '256px' },
-      false: { width: '88px' }
+      true: { width: SIZE_EXPANDED },
+      false: { width: SIZE_COLLAPSED }
     }
   },
   compoundVariants: [
     {
       isExpanded: true,
       type: 'expandable',
-      css: {
-        boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1);'
-      }
+      css: { boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1);' }
     }
   ]
 })
@@ -102,7 +110,7 @@ const ExpandableContext = React.createContext<{ isExpanded?: boolean }>({
 })
 
 export const SideBar = ({
-  className = topBarColorSchemes['light'],
+  className = light,
   children,
   type = 'expandable',
   ...props
@@ -113,10 +121,7 @@ export const SideBar = ({
   const ref = React.useRef<HTMLDivElement>(null)
 
   const { focusWithinProps } = useFocusWithin({
-    onFocusWithin: (e) => {
-      console.log({ e })
-      setIsExpanded(true)
-    },
+    onFocusWithin: (e) => setIsExpanded(true),
     onBlurWithin: () => setIsExpanded(false)
   })
   let { hoverProps, isHovered } = useHover({
