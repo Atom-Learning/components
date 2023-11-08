@@ -1,7 +1,8 @@
 import { Root } from '@radix-ui/react-navigation-menu'
-import * as React from 'react'
+import React from 'react'
 
 import { styled } from '~/stitches'
+
 import { NavigationMenuVerticalAccordion } from './NavigationMenuVerticalAccordion'
 import { NavigationMenuVerticalAccordionContent } from './NavigationMenuVerticalAccordionContent'
 import { NavigationMenuVerticalAccordionTrigger } from './NavigationMenuVerticalAccordionTrigger'
