@@ -7,6 +7,14 @@ import {
   useInteractOutside,
   usePress
 } from 'react-aria'
+import {
+  SideBarBrand,
+  SideBarBrandLogo,
+  SideBarBrandName,
+  SideBarFooter,
+  SideBarHeader,
+  SideBarMain
+} from './SideBarComponents'
 
 const SIZE_COLLAPSED = '88px'
 const SIZE_EXPANDED = '256px'
@@ -124,5 +132,12 @@ export const SideBar = ({
     </Container>
   )
 }
+
+SideBar.Brand = SideBarBrand
+SideBar.BrandLogo = SideBarBrandLogo
+SideBar.BrandName = SideBarBrandName
+SideBar.Footer = SideBarFooter
+SideBar.Header = SideBarHeader
+SideBar.Main = SideBarMain
 
 SideBar.displayName = 'SideBar'
