@@ -1,12 +1,13 @@
 import React from 'react'
-
-import { styled, createTheme } from '~/stitches'
 import {
   useFocusWithin,
   useHover,
   useInteractOutside,
   usePress
 } from 'react-aria'
+
+import { createTheme,styled } from '~/stitches'
+
 import {
   SideBarBrand,
   SideBarBrandLogo,
@@ -111,11 +112,11 @@ export const SideBar = ({
     onFocusWithin: (e) => setIsExpanded(true),
     onBlurWithin: () => setIsExpanded(false)
   })
-  let { hoverProps, isHovered } = useHover({
+  const { hoverProps, isHovered } = useHover({
     onHoverStart: () => setIsExpanded(true),
     onHoverEnd: () => setIsExpanded(false)
   })
-  let { pressProps } = usePress({
+  const { pressProps } = usePress({
     onPress: (e) => setIsExpanded(true)
   })
 

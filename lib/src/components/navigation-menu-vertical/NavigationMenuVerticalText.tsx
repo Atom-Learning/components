@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
+
 import { useExpandableSidebar } from '../side-bar/SideBarExpandableContext'
 
 const StyledNavigationMenuVerticalText = styled.withConfig({
