@@ -183,12 +183,11 @@ tabs:
       page.\",\"link\":{\"href\":\"/components/feedback/section-message\"},\"ta\
       gs\":[\"Feedback\"],\"image\":\"/assets/images/section-message.svg\"},{\"\
       image\":\"/assets/images/drawer.svg\",\"heading\":\"Drawer\",\"link\":{\"\
-      href\":\"components/surfaces/drawer\"},\"description\":\"A side panel to
-      navigate the content of a product. Appears overlaid on top of a page and
-      when triggered by the hamburguer
-      menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"]},{\"description\":\
-      \"A form control for choosing a value within a preset range of
-      values.\",\"heading\":\"Slider
+      href\":\"components/surfaces/drawer\"},\"description\":\"An structural
+      panel that appears overlaid on top of a page when triggered by an
+      element.\",\"tags\":[\"Navigation\",\"Layout/Structure\",\"Overlays\"]},{\
+      \"description\":\"A form control for choosing a value within a preset
+      range of values.\",\"heading\":\"Slider
       field\",\"image\":\"/assets/images/slider-field.svg\",\"link\":{\"href\":\
       \"/components/form/fields/slider-field\"},\"tags\":[\"Inputs\"]},{\"descr\
       iption\":\"Stack is a layout component that provides an abstraction over
@@ -362,7 +361,12 @@ tabs:
       eading\":\"Sortable\",\"description\":\"A primitive that let users sort an
       array of sibling elements via drag and
       drop.\",\"link\":{\"href\":\"/components/primitives/sortable\"},\"tags\":[\
-      \"Primitives\"]}]} />"
+      \"Primitives\"]},{\"heading\":\"Sidebar\",\"description\":\"A side panel
+      to navigate the content of a product. Appears overlaid on top of a page
+      and when triggered by the hamburguer
+      menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"],\"image\":\"/asset\
+      s/images/sidebar.svg\",\"link\":{\"href\":\"/components/navigation/sidebar\
+      \"}}]} />"
     title: Main
 slug: landing
 nestedSlug:
