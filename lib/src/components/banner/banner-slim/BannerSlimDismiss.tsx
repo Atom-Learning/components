@@ -25,7 +25,7 @@ const StyledDismiss = styled(ActionIcon, {
 
 type TBannerSlimDismissProps = Omit<
   React.ComponentProps<typeof StyledDismiss>,
-  'children'
+  'children' | 'onClick' | 'href'
 >
 
 export const BannerSlimDismiss = ({
