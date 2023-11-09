@@ -9,12 +9,12 @@ import {
 import { createTheme, styled } from '~/stitches'
 
 import {
+  SideBarBody,
   SideBarBrand,
   SideBarBrandLogo,
   SideBarBrandName,
   SideBarFooter,
-  SideBarHeader,
-  SideBarMain
+  SideBarHeader
 } from './SideBarComponents'
 import { SideBarContext } from './SideBarContext'
 
@@ -148,8 +148,8 @@ export const SideBar = ({
 SideBar.Brand = SideBarBrand
 SideBar.BrandLogo = SideBarBrandLogo
 SideBar.BrandName = SideBarBrandName
-SideBar.Footer = SideBarFooter
 SideBar.Header = SideBarHeader
-SideBar.Main = SideBarMain
+SideBar.Body = SideBarBody
+SideBar.Footer = SideBarFooter
 
 SideBar.displayName = 'SideBar'

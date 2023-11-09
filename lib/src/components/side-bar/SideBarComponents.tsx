@@ -9,7 +9,7 @@ export const SideBarHeader = styled('div', {
   width: '100%'
 })
 
-export const SideBarMain = styled('div', {
+export const SideBarBody = styled('div', {
   flexGrow: 1,
   overflowY: 'auto',
   overflowX: 'hidden',
