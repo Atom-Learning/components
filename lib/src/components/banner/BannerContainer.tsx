@@ -17,16 +17,16 @@ const StyledBannerContainer = styled(Flex, {
   '--banner-text-color': '$colors$grey900',
   variants: {
     emphasis: {
-      highContrast: {
+      bold: {
         background: '$base11',
         color: '$foreground7plus',
         '--banner-heading-color': '$colors$foreground7plus',
         '--banner-text-color': '$colors$grey100'
       },
-      midContrast: {
+      subtle: {
         background: '$base3'
       },
-      lowContrast: {
+      minimal: {
         background: '$base1'
       }
     },

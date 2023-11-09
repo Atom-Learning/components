@@ -41,7 +41,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<BannerSlim
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         value=""
       >
         <BannerSlim.Content>
@@ -64,7 +64,7 @@ tabs:
 
       <BannerSlim
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         size="sm"
         value=""
       >
@@ -89,7 +89,7 @@ tabs:
 
       <BannerSlim
         colorScheme={{ base: 'blue1' }}
-        emphasis="midContrast"
+        emphasis="subtle"
         size="md"
         value=""
       >
@@ -117,7 +117,7 @@ tabs:
 
       <BannerSlim
         colorScheme={{ base: 'blue2' }}
-        emphasis="midContrast"
+        emphasis="subtle"
         size="md"
         value=""
         onDismiss={() => console.log('Dismissed')}
@@ -144,7 +144,7 @@ tabs:
 
       <BannerSlim
         colorScheme={{ base: 'blue2' }}
-        emphasis="midContrast"
+        emphasis="subtle"
         size="sm"
         value=""
         onDismiss={() => console.log('Dismissed')}

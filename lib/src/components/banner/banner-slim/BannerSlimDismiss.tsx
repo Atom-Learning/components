@@ -12,7 +12,7 @@ const StyledDismiss = styled(ActionIcon, {
   flexShrink: 0,
   variants: {
     emphasis: {
-      highContrast: {
+      bold: {
         color: 'white !important'
       }
     },
