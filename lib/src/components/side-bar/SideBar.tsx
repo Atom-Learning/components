@@ -6,7 +6,7 @@ import {
   usePress
 } from 'react-aria'
 
-import { createTheme,styled } from '~/stitches'
+import { createTheme, styled } from '~/stitches'
 
 import {
   SideBarBrand,
@@ -16,7 +16,7 @@ import {
   SideBarHeader,
   SideBarMain
 } from './SideBarComponents'
-import { SideBarExpandableContext } from './SideBarExpandableContext'
+import { SideBarContext } from './SideBarContext'
 
 const SIZE_COLLAPSED = '88px'
 const SIZE_EXPANDED = '256px'
@@ -24,25 +24,28 @@ const SIZE_EXPANDED = '256px'
 const light = createTheme({
   colors: {
     background: 'white',
+    text: '$grey400',
     border: '$grey200'
   }
 })
 
 const Root = styled('div', {
-  height: '100svh',
   position: 'sticky',
-  top: '0',
   zIndex: 1,
   variants: {
     type: {
+      static: {},
       expandable: { width: SIZE_COLLAPSED }
     }
   }
 })
 
-const Wrapper = styled('div', {
+const Content = styled('div', {
+  bg: '$background',
   borderRight: '1px solid $border',
   boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0)',
+  display: 'flex',
+  flexDirection: 'column',
   height: '100%',
   overflow: 'hidden',
   willChange: 'width',
@@ -68,14 +71,6 @@ const Wrapper = styled('div', {
   ]
 })
 
-const Content = styled('div', {
-  bg: '$background',
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  width: SIZE_EXPANDED
-})
-
 const PointerBlocker = styled('div', {
   bottom: 0,
   left: 0,
@@ -92,14 +87,16 @@ const PointerBlocker = styled('div', {
 })
 
 type SideBarProps = React.ComponentProps<typeof Root> & {
-  type: 'expandable' | 'static'
+  offset?: number | string
 }
 
 export const SideBar = ({
   className = light,
   children,
   type = 'expandable',
-  ...props
+  offset,
+  css,
+  ...rest
 }: SideBarProps) => {
   const [isExpanded, setIsExpanded] = React.useState(type === 'static')
   const ref = React.useRef<HTMLDivElement>(null)
@@ -126,18 +123,25 @@ export const SideBar = ({
       : {}
 
   return (
-    <SideBarExpandableContext.Provider value={{ isExpanded }}>
-      <Root {...props} className={className} type={type}>
-        <Wrapper {...expandableProps} isExpanded={isExpanded} type={type}>
-          <Content>
-            {children}
-            {type === 'expandable' && (
-              <PointerBlocker isVisible={!isHovered && !isExpanded} />
-            )}
-          </Content>
-        </Wrapper>
+    <SideBarContext.Provider value={{ isExpanded }}>
+      <Root
+        {...rest}
+        className={className}
+        css={{ height: `calc(100svh - ${offset})`, top: offset, ...css }}
+        type={type}
+      >
+        <Content {...expandableProps} isExpanded={isExpanded} type={type}>
+          {children}
+          {/**
+           * When the SideBar is collapsed, ensure that the initial tap event
+           * is used to expand the nav first before making the items available
+           */}
+          {type === 'expandable' && (
+            <PointerBlocker isVisible={!isHovered && !isExpanded} />
+          )}
+        </Content>
       </Root>
-    </SideBarExpandableContext.Provider>
+    </SideBarContext.Provider>
   )
 }
 
