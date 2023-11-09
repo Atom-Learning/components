@@ -23,7 +23,10 @@ const StyledDismiss = styled(ActionIcon, {
   }
 })
 
-type TBannerSlimDismissProps = React.ComponentProps<typeof StyledDismiss>
+type TBannerSlimDismissProps = Omit<
+  React.ComponentProps<typeof StyledDismiss>,
+  'children'
+>
 
 export const BannerSlimDismiss = ({
   label = 'dismiss',
