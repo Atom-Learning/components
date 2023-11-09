@@ -40,11 +40,11 @@ const StyledBannerContainer = styled(Flex, {
 export type TBannerContainerProps = React.ComponentProps<
   typeof StyledBannerContainer
 > & {
-  colorScheme: TcolorScheme
+  colorScheme?: TcolorScheme
 } & React.ComponentProps<typeof Dismissible>
 
 export const BannerContainer = ({
-  colorScheme,
+  colorScheme = {},
   value,
   onDismiss,
   ...props
