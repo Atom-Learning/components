@@ -3,34 +3,32 @@ import React from 'react'
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 
-import { useSidebar } from '../side-bar'
+import { useExpandableContext } from '../expandable'
 
 const SIZE_EXPANDED_MAX = '160px'
 
+/*
+'@allowMotion': {
+    transition: 'maxWidth 125ms ease-out'
+  },
+  */
 const StyledNavigationMenuVerticalText = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
 })(Text, {
   fontWeight: 'var(--navigation-menu-vertical-item-font-weight)',
   lineHeight: 1.2,
+  willChange: 'width',
+
+  transition: 'width 125ms ease-out',
+
   variants: {
     isExpanded: {
       true: {
-        width: 'max-content',
-        maxWidth: SIZE_EXPANDED_MAX,
-        '@allowMotion': {
-          opacity: 1,
-          transform: 'translate(0)',
-          transition: 'opacity 125ms ease-out, transform 125ms ease-out'
-        }
+        width: SIZE_EXPANDED_MAX
       },
       false: {
-        '@allowMotion': {
-          width: 'max-content',
-          maxWidth: SIZE_EXPANDED_MAX,
-          opacity: 0,
-          transform: 'translate(8px)',
-          transition: 'opacity 125ms ease-out, transform 0ms ease-out 125ms'
-        }
+        width: 0,
+        textWrap: 'nowrap'
       }
     }
   }
@@ -43,7 +41,8 @@ type TStyledNavigationMenuVerticalTextProps = React.ComponentProps<
 export const NavigationMenuVerticalText = (
   props: TStyledNavigationMenuVerticalTextProps
 ): JSX.Element => {
-  const { isExpanded } = useSidebar()
+  const { isExpanded } = useExpandableContext()
+  console.log({ isExpanded })
   return (
     <StyledNavigationMenuVerticalText
       size="md"
