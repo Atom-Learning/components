@@ -6,12 +6,9 @@ import * as React from 'react'
 import { Tooltip } from '../tooltip'
 import { TopBar } from '.'
 
-const ExampleTopBar = ({ size }) => (
+const ExampleTopBar = (props) => (
   <Tooltip.Provider>
-    <TopBar size={size}>
-      <TopBar.Brand href="atomlearning.co.uk">
-        <TopBar.BrandName>Admin Panel</TopBar.BrandName>
-      </TopBar.Brand>
+    <TopBar {...props}>
       <TopBar.ActionIcon icon={Search} label="Search" />
       <TopBar.Divider />
       <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />

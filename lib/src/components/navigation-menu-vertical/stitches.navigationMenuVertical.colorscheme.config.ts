@@ -3,11 +3,11 @@ import { createTheme } from '~/stitches'
 const light = createTheme({
   colors: {
     text: '$foreground',
-    background: '$base1',
-    backgroundHover: '$base2',
-    backgroundActive: '$base3',
-    textSelected: '$accent9',
-    backgroundSelected: '$accent2'
+    background: 'white',
+    backgroundHover: '$grey100',
+    backgroundActive: '$grey200',
+    textSelected: '$blue800',
+    backgroundSelected: '$blue100'
   }
 })
 

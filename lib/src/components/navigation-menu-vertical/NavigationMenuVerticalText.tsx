@@ -1,17 +1,10 @@
 import React from 'react'
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 
 import { useExpandableContext } from '../expandable'
-
-const SIZE_EXPANDED_MAX = '160px'
-
-/*
-'@allowMotion': {
-    transition: 'maxWidth 125ms ease-out'
-  },
-  */
 const StyledNavigationMenuVerticalText = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
 })(Text, {
@@ -20,18 +13,6 @@ const StyledNavigationMenuVerticalText = styled.withConfig({
   willChange: 'width',
 
   transition: 'width 125ms ease-out',
-
-  variants: {
-    isExpanded: {
-      true: {
-        width: SIZE_EXPANDED_MAX
-      },
-      false: {
-        width: 0,
-        textWrap: 'nowrap'
-      }
-    }
-  }
 })
 
 type TStyledNavigationMenuVerticalTextProps = React.ComponentProps<
@@ -42,13 +23,13 @@ export const NavigationMenuVerticalText = (
   props: TStyledNavigationMenuVerticalTextProps
 ): JSX.Element => {
   const { isExpanded } = useExpandableContext()
-  console.log({ isExpanded })
+
+  if (!isExpanded) return <VisuallyHidden {...props} />
   return (
     <StyledNavigationMenuVerticalText
       size="md"
       as="span"
       {...props}
-      isExpanded={isExpanded}
     />
   )
 }

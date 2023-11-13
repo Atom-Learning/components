@@ -2,7 +2,8 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { reset } from 'stitches-reset'
 
-import { Box, Flex, globalCss, SideBar, Expandable, useExpandableContext, NavigationMenuVertical } from '../src'
+import { Close } from '@atom-learning/icons'
+import { Box, Flex, globalCss, SideBar, Expandable, NavigationMenuVertical, Icon, Brand } from '../src'
 
 globalCss({ ...reset, '*': { boxSizing: 'border-box' } })()
 
@@ -19,22 +20,41 @@ const App = () => (
     <Box css={{ bg: 'orange' }}>
       <Expandable>
         <SideBar css={{ maxWidth: 200 }}>
+          <SideBar.Header>
+            <Brand href="atomlearning.co.uk">
+              <Brand.Logo />
+              <Brand.Text>Eyo</Brand.Text>
+            </Brand>
+          </SideBar.Header>
+          <SideBar.Main>
+            <NavigationMenuVertical>
+              <NavigationMenuVertical.Link active onClick={() => { console.log(1) }}><Icon is={Close} />One</NavigationMenuVertical.Link>
+              <NavigationMenuVertical.Link href="google.com"><Icon is={Close} />Two</NavigationMenuVertical.Link>
+            </NavigationMenuVertical>
+          </SideBar.Main>
+          <SideBar.Footer></SideBar.Footer>
+        </SideBar>
+      </Expandable>
+    </Box>
+    <Box css={{ bg: 'orange' }}>
+      <Expandable>
+        <SideBar css={{ maxWidth: 200 }}>
           <SideBar.Header></SideBar.Header>
           <SideBar.Main>
             <NavigationMenuVertical>
-              <NavigationMenuVertical.Link active onClick={() => { console.log(1) }}>One</NavigationMenuVertical.Link>
-              <NavigationMenuVertical.Link href="google.com">Two</NavigationMenuVertical.Link>
+              <NavigationMenuVertical.Link active onClick={() => { console.log(1) }}><Icon is={Close} />One</NavigationMenuVertical.Link>
+              <NavigationMenuVertical.Link href="google.com"><Icon is={Close} />Two</NavigationMenuVertical.Link>
               <NavigationMenuVertical.Accordion>
-                <NavigationMenuVertical.AccordionTrigger>Trigger 1</NavigationMenuVertical.AccordionTrigger>
+                <NavigationMenuVertical.AccordionTrigger><Icon is={Close} />Trigger 1</NavigationMenuVertical.AccordionTrigger>
                 <NavigationMenuVertical.AccordionContent>
-                  <NavigationMenuVertical.Link onClick={() => { console.log(1) }}>Nested: One</NavigationMenuVertical.Link>
-                  <NavigationMenuVertical.Link onClick={() => { console.log(2) }}>Nested: Two</NavigationMenuVertical.Link>
+                  <NavigationMenuVertical.Link onClick={() => { console.log(1) }}><Icon is={Close} />Nested: One</NavigationMenuVertical.Link>
+                  <NavigationMenuVertical.Link onClick={() => { console.log(2) }}><Icon is={Close} />Nested: Two</NavigationMenuVertical.Link>
                 </NavigationMenuVertical.AccordionContent>
               </NavigationMenuVertical.Accordion>
               <NavigationMenuVertical.Accordion defaultOpen={true}>
                 <NavigationMenuVertical.AccordionTrigger>Trigger 2</NavigationMenuVertical.AccordionTrigger>
                 <NavigationMenuVertical.AccordionContent>
-                  <NavigationMenuVertical.Link onClick={() => { console.log(3) }}>Nested: Three</NavigationMenuVertical.Link>
+                  <NavigationMenuVertical.Link onClick={() => { console.log(3) }}><Icon is={Close} />Nested: Three</NavigationMenuVertical.Link>
                   <NavigationMenuVertical.Link onClick={() => { console.log(4) }}>Nested: Four</NavigationMenuVertical.Link>
                 </NavigationMenuVertical.AccordionContent>
               </NavigationMenuVertical.Accordion>

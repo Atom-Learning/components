@@ -21,9 +21,9 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<TopBar>
-        <TopBar.Brand href="atomlearning.co.uk">
-          <TopBar.BrandName>Admin Panel</TopBar.BrandName>
-        </TopBar.Brand>
+        <Brand href="atomlearning.co.uk">
+          <Brand.Name>Admin Panel</Brand.Name>
+        </Brand>
         <Flex css={{ flex: 1, justifySelf: 'stretch', alignSelf: 'stretch' }} />
         <Stack gap="2" direction="row">
           <TopBar.ActionIcon icon={Search} label="Search" />
@@ -39,24 +39,24 @@ tabs:
       TopBar has a default size of `md` which means that the default height of the component is 64px and the `Topbar.BrandLogo` is 24px.
 
 
-      If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar.BrandLogo` will be 32px in height.
+      If size `lg` is passed to the `TopBar` it will be 96px in height and the `Brand.Logo` will be 32px in height.
 
 
       <CodeBlock live={true} preview={true} code={`<TopBar>
-        <TopBar.Brand href="atomlearning.co.uk">
-          <TopBar.BrandLogo
+        <Brand href="atomlearning.co.uk">
+          <Brand.Logo
             src={
               'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg'
             }
           />
-        </TopBar.Brand>
+        </Brand>
       </TopBar>`} language={"tsx"} />
 
 
-      ## TopBar.Brand
+      ## Brand.
 
 
-      `TopBar.Brand` renders a styled link.
+      `Brand.` renders a styled link.
 
 
       <CodeBlock live={false} preview={false} code={`// You'll import the logo like this in practice, but it doesn't work
@@ -70,29 +70,29 @@ tabs:
       const App = () => {
         return (
           <TopBar>
-            <TopBar.Brand href="atomlearning.co.uk">
-              <TopBar.BrandLogo
+            <Brand href="atomlearning.co.uk">
+              <Brand.Logo
                 src={
                   'https://space-1.atomlearning.com/static/f61e49cfb245016e612a34818e27dcfb.svg'
                 }
               />
-              <TopBar.BrandName>Admin Panel</TopBar.BrandName>
-            </TopBar.Brand>
+              <Brand.Name>Admin Panel</Brand.Name>
+            </Brand>
           </TopBar>
         )
       }`} language={"tsx"} />
 
 
-      ## TopBar.BrandLogo
+      ## Brand.Logo
 
 
-      `TopBar.BrandLogo` renders an image with set styles and is primarily intended for the Atom logo.
+      `Brand.Logo` renders an image with set styles and is primarily intended for the Atom logo.
 
 
-      ## TopBar.BrandName
+      ## Brand.Name
 
 
-      `TopBar.BrandName` renders a `Text` component with set styles and is primarily intended to display the name of the current app.
+      `Brand.Name` renders a `Text` component with set styles and is primarily intended to display the name of the current app.
 
 
       ## TopBar.ActionIcon

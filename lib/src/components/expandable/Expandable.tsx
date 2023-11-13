@@ -8,41 +8,7 @@ import {
 } from 'react-aria'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
 
-import { styled } from '~/stitches'
-
 import { ExpandableContext, useExpandableContext } from './ExpandableContext'
-
-const SIZE_COLLAPSED = '88px'
-const SIZE_EXPANDED = '256px'
-
-// const Root = styled('div', {
-//   // willChange: 'width',
-//   // '@allowMotion': {
-//   //   transition: 'width 125ms ease-out, box-shadow 125ms ease-out'
-//   // },
-//   variants: {
-//     isExpanded: {
-//       true: {
-//         boxShadow: '4px 0 4px -2px rgba(31, 31, 31, 0.1)', // ughhhh
-//         width: SIZE_EXPANDED
-//       },
-//       false: { width: SIZE_COLLAPSED }
-//     }
-//   }
-// })
-
-const PointerBlocker = styled('div', {
-  position: 'absolute',
-  inset: 0,
-  transition: 'visibility',
-  variants: {
-    isVisible: {
-      true: { visibility: 'visible', transitionDelay: '0s' },
-      false: { visibility: 'hidden', transitionDelay: '50ms' }
-    }
-  }
-})
-
 
 export const ExpandableProvider: React.FC<ExpandableContextProps> = ({
   disabled,
@@ -72,6 +38,7 @@ const withExpandableProvider = (WrappedComponent) => ({ disabled, expanded, defa
     </ExpandableProvider>
   )
 }
+
 export const Expandable = withExpandableProvider(({
   asChild,
   children,
@@ -98,17 +65,11 @@ export const Expandable = withExpandableProvider(({
 
   const expandableProps = disabled ? {} : { ...focusWithinProps, ...hoverProps, ...pressProps, ref: setElRef }
 
-  console.log({ children: React.Children.toArray(children) })
-  {/**
-    * When the Expandable is collapsed, ensure that the initial tap event
-    * is used to expand the nav first before making the items available
-    */}
   const props = {
     children,
     ...rest,
     ...(disabled && {
-      [`data-disabled`]: '',
-      // children: React.Children.toArray(children)[0].props.children.push(<PointerBlocker isVisible={!isHovered && !isExpanded} />)
+      [`data-disabled`]: ''
     }),
     [`aria-expanded`]: isExpanded,
     ...expandableProps,

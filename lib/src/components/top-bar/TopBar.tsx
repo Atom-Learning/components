@@ -7,12 +7,8 @@ import { Divider } from '../divider'
 import { Flex } from '../flex'
 import { colorSchemes as topBarColorSchemes } from './stitches.topBar.colorscheme.config'
 import { TopBarActionIcon } from './TopBarActionIcon'
-import { TopBarBrand, TopBarBrandLogo, TopBarBrandName } from './TopBarBrand'
 
 interface TopBarSubComponents {
-  Brand: typeof TopBarBrand
-  BrandLogo: typeof TopBarBrandLogo
-  BrandName: typeof TopBarBrandName
   ActionIcon: typeof TopBarActionIcon
   Divider: typeof TopBarDivider
 }
@@ -39,22 +35,10 @@ const StyledRoot = styled('div', {
     },
     size: {
       md: {
-        height: '$6',
-        [`& ${TopBarBrandLogo}`]: {
-          '&[src$=".svg"]': {
-            height: 24,
-            width: 'auto'
-          }
-        }
+        height: '$6'
       },
       lg: {
-        height: '$7',
-        [`& ${TopBarBrandLogo}`]: {
-          '&[src$=".svg"]': {
-            height: 32,
-            width: 'auto'
-          }
-        }
+        height: '$7'
       }
     }
   }
@@ -95,9 +79,6 @@ export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
   )
 }
 
-TopBar.Brand = TopBarBrand
-TopBar.BrandLogo = TopBarBrandLogo
-TopBar.BrandName = TopBarBrandName
 TopBar.ActionIcon = TopBarActionIcon
 TopBar.Divider = TopBarDivider
 

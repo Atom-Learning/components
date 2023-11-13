@@ -8,6 +8,7 @@ import { getExternalAnchorProps } from '~/utilities/uri'
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
 import { NavigationMenuVerticalItem } from './NavigationMenuVerticalItem'
 import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemContent'
+import { useExpandableContext } from '../expandable'
 
 const StyledNavigationMenuVerticalLink = styled(
   Link,
@@ -23,13 +24,22 @@ type NavigationMenuVerticalItemProps = React.ComponentProps<
 export const NavigationMenuVerticalLink: React.FC<
   NavigationMenuVerticalItemProps
 > = ({ as, href, children, ...rest }) => {
+  const { isExpanded } = useExpandableContext()
+  const [clickEnabled, setClickEnabled] = React.useState(isExpanded)
+  React.useEffect(() => {
+    setTimeout(() => {
+      setClickEnabled(isExpanded)
+    }, 100)
+  }, [isExpanded])
+
   const Component = as || (href ? 'a' : 'button')
   const componentProps = as
     ? {}
     : href
-    ? getExternalAnchorProps(href)
-    : { type: 'button' }
+      ? getExternalAnchorProps(href)
+      : { type: 'button' }
 
+  console.log(clickEnabled)
   return (
     <NavigationMenuVerticalItem>
       <StyledNavigationMenuVerticalLink
@@ -39,6 +49,7 @@ export const NavigationMenuVerticalLink: React.FC<
         {...componentProps}
         onSelect={preventEvent}
         asChild // ?: Can't use `as` for this as we lose `data-active` etc. attributes when we try to. Using `asChild` and `Component` as a workaround.
+        {...(clickEnabled ? {} : { onClick: undefined, href: undefined })}
       >
         <Component>
           <NavigationMenuVerticalItemContent>
