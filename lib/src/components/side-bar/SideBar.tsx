@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  useFocusWithin,
-  useHover,
-  useInteractOutside,
-  usePress
-} from 'react-aria'
+import { useFocusWithin, useHover, useInteractOutside } from 'react-aria'
 
 import { createTheme, styled } from '~/stitches'
 
@@ -94,7 +89,7 @@ export const SideBar = ({
   className = light,
   children,
   type = 'expandable',
-  offset,
+  offset = '0px',
   css,
   ...rest
 }: SideBarProps) => {
@@ -113,13 +108,18 @@ export const SideBar = ({
     onHoverStart: () => setIsExpanded(true),
     onHoverEnd: () => setIsExpanded(false)
   })
-  const { pressProps } = usePress({
-    onPress: (e) => setIsExpanded(true)
-  })
+  const touchProps = {
+    onTouchEnd: () => setIsExpanded(true)
+  }
 
   const expandableProps =
     type === 'expandable'
-      ? { ...focusWithinProps, ...hoverProps, ...pressProps, ref }
+      ? {
+          ...focusWithinProps,
+          ...hoverProps,
+          ...touchProps,
+          ref
+        }
       : {}
 
   return (
