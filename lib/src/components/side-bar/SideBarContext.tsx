@@ -6,4 +6,4 @@ export const SideBarContext = React.createContext<{
   isExpanded: undefined
 })
 
-export const useSidebar = () => React.useContext(SideBarContext)
+export const useSidebarState = () => React.useContext(SideBarContext)

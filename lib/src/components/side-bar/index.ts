@@ -1,2 +1,2 @@
 export { SideBar } from './SideBar'
-export { useSidebar } from './SideBarContext'
+export { useSidebarState } from './SideBarContext'

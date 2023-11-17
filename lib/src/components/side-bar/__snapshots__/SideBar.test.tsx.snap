@@ -245,41 +245,35 @@ exports[`SideBar component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cFsYUV {
+  .t-juoHqL {
     --colors-background: white;
+    --colors-text: var(--colors-grey400);
     --colors-border: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-cLmdxi {
-    height: 100svh;
+  .c-dRaEfy {
     position: sticky;
-    top: 0;
     z-index: 1;
   }
 
-  .c-fVTVlf {
+  .c-eDzOyH {
+    background: var(--colors-background);
     border-right: 1px solid var(--colors-border);
     box-shadow: 4px 0 4px -2px rgba(31, 31, 31, 0);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     overflow: hidden;
     will-change: width;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fVTVlf {
+    .c-eDzOyH {
       transition: width 125ms ease-out, box-shadow 125ms ease-out;
     }
 }
-
-  .c-MIsql {
-    background: var(--colors-background);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 256px;
-  }
 
   .c-chyCIC {
     border-bottom: 1px solid var(--colors-border);
@@ -287,15 +281,15 @@ exports[`SideBar component renders 1`] = `
     width: 100%;
   }
 
-  .c-bUeDEt {
+  .c-gYyeDg {
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     display: flex;
     text-decoration: none;
   }
 
-  .c-bUeDEt:hover,
-  .c-bUeDEt:focus {
+  .c-gYyeDg:hover,
+  .c-gYyeDg:focus {
     text-decoration: none;
   }
 
@@ -329,12 +323,12 @@ exports[`SideBar component renders 1`] = `
 }
 
 @media  {
-  .c-cLmdxi-lbYIZB-type-expandable {
-    width: 88px;
+  .c-dRaEfy-jFjAiR-type-expandable {
+    width: 5.5rem;
   }
 
-  .c-fVTVlf-lbYIZB-isExpanded-false {
-    width: 88px;
+  .c-eDzOyH-jFjAiR-isExpanded-false {
+    width: 5.5rem;
   }
 
   .c-GVJXm-gQAERc-isVisible-true {
@@ -343,49 +337,52 @@ exports[`SideBar component renders 1`] = `
   }
 }
 
+@media  {
+  .c-dRaEfy-iLCDI-css {
+    height: calc(100svh - 0px);
+    top: 0px;
+  }
+}
+
 <div>
   <div
-    class="c-cLmdxi c-cLmdxi-lbYIZB-type-expandable t-cFsYUV"
+    class="c-dRaEfy c-dRaEfy-jFjAiR-type-expandable c-dRaEfy-iLCDI-css t-juoHqL"
   >
     <div
-      class="c-fVTVlf c-fVTVlf-lbYIZB-isExpanded-false"
+      class="c-eDzOyH c-eDzOyH-jFjAiR-isExpanded-false"
     >
       <div
-        class="c-MIsql"
+        class="c-chyCIC"
       >
-        <div
-          class="c-chyCIC"
+        <a
+          class="c-gYyeDg"
         >
-          <a
-            class="c-bUeDEt"
-          >
-            <img
-              alt="Logo"
-              class="c-iSBxEZ"
-              src=""
-            />
-          </a>
-        </div>
-        <div
-          class="c-jRBAGK"
-        >
-          Main content
-        </div>
-        <div
-          class="c-brxpsO"
-        >
-          Footer content
-        </div>
-        <div
-          class="c-GVJXm c-GVJXm-gQAERc-isVisible-true"
-        />
+          <img
+            alt="Logo"
+            class="c-iSBxEZ"
+            src=""
+          />
+        </a>
       </div>
+      <div
+        class="c-jRBAGK"
+      >
+        Main content
+      </div>
+      <div
+        class="c-brxpsO"
+      >
+        Footer content
+      </div>
+      <div
+        class="c-GVJXm c-GVJXm-gQAERc-isVisible-true"
+      />
     </div>
   </div>
 </div>
 `;
 
-exports[`SideBar component renders 2`] = `
+exports[`SideBar component renders as expanded 1`] = `
 @media  {
   :root,
   .t-kAUxbu {
@@ -630,41 +627,35 @@ exports[`SideBar component renders 2`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cFsYUV {
+  .t-juoHqL {
     --colors-background: white;
+    --colors-text: var(--colors-grey400);
     --colors-border: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-cLmdxi {
-    height: 100svh;
+  .c-dRaEfy {
     position: sticky;
-    top: 0;
     z-index: 1;
   }
 
-  .c-fVTVlf {
+  .c-eDzOyH {
+    background: var(--colors-background);
     border-right: 1px solid var(--colors-border);
     box-shadow: 4px 0 4px -2px rgba(31, 31, 31, 0);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     overflow: hidden;
     will-change: width;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fVTVlf {
+    .c-eDzOyH {
       transition: width 125ms ease-out, box-shadow 125ms ease-out;
     }
 }
-
-  .c-MIsql {
-    background: var(--colors-background);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 256px;
-  }
 
   .c-chyCIC {
     border-bottom: 1px solid var(--colors-border);
@@ -672,15 +663,15 @@ exports[`SideBar component renders 2`] = `
     width: 100%;
   }
 
-  .c-bUeDEt {
+  .c-gYyeDg {
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     display: flex;
     text-decoration: none;
   }
 
-  .c-bUeDEt:hover,
-  .c-bUeDEt:focus {
+  .c-gYyeDg:hover,
+  .c-gYyeDg:focus {
     text-decoration: none;
   }
 
@@ -714,12 +705,12 @@ exports[`SideBar component renders 2`] = `
 }
 
 @media  {
-  .c-cLmdxi-lbYIZB-type-expandable {
-    width: 88px;
+  .c-dRaEfy-jFjAiR-type-expandable {
+    width: 5.5rem;
   }
 
-  .c-fVTVlf-lbYIZB-isExpanded-false {
-    width: 88px;
+  .c-eDzOyH-jFjAiR-isExpanded-false {
+    width: 5.5rem;
   }
 
   .c-GVJXm-gQAERc-isVisible-true {
@@ -727,49 +718,52 @@ exports[`SideBar component renders 2`] = `
     transition-delay: 0s;
   }
 
-  .c-fVTVlf-cniUqM-isExpanded-true {
-    width: 256px;
+  .c-eDzOyH-kLsFIQ-isExpanded-true {
+    width: 16rem;
+  }
+}
+
+@media  {
+  .c-dRaEfy-iLCDI-css {
+    height: calc(100svh - 0px);
+    top: 0px;
   }
 }
 
 <div>
   <div
-    class="c-cLmdxi c-cLmdxi-lbYIZB-type-expandable t-cFsYUV"
+    class="c-dRaEfy c-dRaEfy-jFjAiR-type-expandable c-dRaEfy-iLCDI-css t-juoHqL"
     role="navigation"
   >
     <div
-      class="c-fVTVlf c-fVTVlf-lbYIZB-isExpanded-false"
+      class="c-eDzOyH c-eDzOyH-jFjAiR-isExpanded-false"
     >
       <div
-        class="c-MIsql"
+        class="c-chyCIC"
       >
-        <div
-          class="c-chyCIC"
+        <a
+          class="c-gYyeDg"
         >
-          <a
-            class="c-bUeDEt"
-          >
-            <img
-              alt="Logo"
-              class="c-iSBxEZ"
-              src=""
-            />
-          </a>
-        </div>
-        <div
-          class="c-jRBAGK"
-        >
-          Main content
-        </div>
-        <div
-          class="c-brxpsO"
-        >
-          Footer content
-        </div>
-        <div
-          class="c-GVJXm c-GVJXm-gQAERc-isVisible-true"
-        />
+          <img
+            alt="Logo"
+            class="c-iSBxEZ"
+            src=""
+          />
+        </a>
       </div>
+      <div
+        class="c-jRBAGK"
+      >
+        Main content
+      </div>
+      <div
+        class="c-brxpsO"
+      >
+        Footer content
+      </div>
+      <div
+        class="c-GVJXm c-GVJXm-gQAERc-isVisible-true"
+      />
     </div>
   </div>
 </div>
@@ -1020,41 +1014,35 @@ exports[`SideBar component renders as static type 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-cFsYUV {
+  .t-juoHqL {
     --colors-background: white;
+    --colors-text: var(--colors-grey400);
     --colors-border: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-cLmdxi {
-    height: 100svh;
+  .c-dRaEfy {
     position: sticky;
-    top: 0;
     z-index: 1;
   }
 
-  .c-fVTVlf {
+  .c-eDzOyH {
+    background: var(--colors-background);
     border-right: 1px solid var(--colors-border);
     box-shadow: 4px 0 4px -2px rgba(31, 31, 31, 0);
+    display: flex;
+    flex-direction: column;
     height: 100%;
     overflow: hidden;
     will-change: width;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fVTVlf {
+    .c-eDzOyH {
       transition: width 125ms ease-out, box-shadow 125ms ease-out;
     }
 }
-
-  .c-MIsql {
-    background: var(--colors-background);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 256px;
-  }
 
   .c-chyCIC {
     border-bottom: 1px solid var(--colors-border);
@@ -1062,15 +1050,15 @@ exports[`SideBar component renders as static type 1`] = `
     width: 100%;
   }
 
-  .c-bUeDEt {
+  .c-gYyeDg {
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-text);
     display: flex;
     text-decoration: none;
   }
 
-  .c-bUeDEt:hover,
-  .c-bUeDEt:focus {
+  .c-gYyeDg:hover,
+  .c-gYyeDg:focus {
     text-decoration: none;
   }
 
@@ -1104,12 +1092,12 @@ exports[`SideBar component renders as static type 1`] = `
 }
 
 @media  {
-  .c-cLmdxi-lbYIZB-type-expandable {
-    width: 88px;
+  .c-dRaEfy-jFjAiR-type-expandable {
+    width: 5.5rem;
   }
 
-  .c-fVTVlf-lbYIZB-isExpanded-false {
-    width: 88px;
+  .c-eDzOyH-jFjAiR-isExpanded-false {
+    width: 5.5rem;
   }
 
   .c-GVJXm-gQAERc-isVisible-true {
@@ -1117,44 +1105,47 @@ exports[`SideBar component renders as static type 1`] = `
     transition-delay: 0s;
   }
 
-  .c-fVTVlf-cniUqM-isExpanded-true {
-    width: 256px;
+  .c-eDzOyH-kLsFIQ-isExpanded-true {
+    width: 16rem;
+  }
+}
+
+@media  {
+  .c-dRaEfy-iLCDI-css {
+    height: calc(100svh - 0px);
+    top: 0px;
   }
 }
 
 <div>
   <div
-    class="c-cLmdxi t-cFsYUV"
+    class="c-dRaEfy c-dRaEfy-iLCDI-css t-juoHqL"
   >
     <div
-      class="c-fVTVlf c-fVTVlf-cniUqM-isExpanded-true"
+      class="c-eDzOyH c-eDzOyH-kLsFIQ-isExpanded-true"
     >
       <div
-        class="c-MIsql"
+        class="c-chyCIC"
       >
-        <div
-          class="c-chyCIC"
+        <a
+          class="c-gYyeDg"
         >
-          <a
-            class="c-bUeDEt"
-          >
-            <img
-              alt="Logo"
-              class="c-iSBxEZ"
-              src=""
-            />
-          </a>
-        </div>
-        <div
-          class="c-jRBAGK"
-        >
-          Main content
-        </div>
-        <div
-          class="c-brxpsO"
-        >
-          Footer content
-        </div>
+          <img
+            alt="Logo"
+            class="c-iSBxEZ"
+            src=""
+          />
+        </a>
+      </div>
+      <div
+        class="c-jRBAGK"
+      >
+        Main content
+      </div>
+      <div
+        class="c-brxpsO"
+      >
+        Footer content
       </div>
     </div>
   </div>

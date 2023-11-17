@@ -13,8 +13,8 @@ import {
 } from './SideBarComponents'
 import { SideBarContext } from './SideBarContext'
 
-const SIZE_COLLAPSED = '88px'
-const SIZE_EXPANDED = '256px'
+const SIZE_COLLAPSED = '5.5rem'
+const SIZE_EXPANDED = '16rem'
 
 const light = createTheme({
   colors: {
@@ -98,10 +98,10 @@ export const SideBar = ({
 
   useInteractOutside({
     ref,
-    onInteractOutside: (e) => setIsExpanded(false)
+    onInteractOutside: () => setIsExpanded(false)
   })
   const { focusWithinProps } = useFocusWithin({
-    onFocusWithin: (e) => setIsExpanded(true),
+    onFocusWithin: () => setIsExpanded(true),
     onBlurWithin: () => setIsExpanded(false)
   })
   const { hoverProps, isHovered } = useHover({

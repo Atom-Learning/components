@@ -12,7 +12,7 @@ const ExampleSideBar = (props) => (
         <SideBar.BrandLogo alt="Logo" src="" />
       </SideBar.Brand>
     </SideBar.Header>
-    <SideBar.Main>Main content</SideBar.Main>
+    <SideBar.Body>Main content</SideBar.Body>
     <SideBar.Footer>Footer content</SideBar.Footer>
   </SideBar>
 )
@@ -33,7 +33,7 @@ describe('SideBar component', () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('renders', async () => {
+  it('renders as expanded', async () => {
     const { container } = render(<ExampleSideBar role="navigation" />)
 
     const sidebar = screen.getByRole('navigation')

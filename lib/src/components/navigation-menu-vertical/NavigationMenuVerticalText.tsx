@@ -3,9 +3,9 @@ import React from 'react'
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 
-import { useSidebar } from '../side-bar'
+import { useSidebarState } from '../side-bar'
 
-const SIZE_EXPANDED_MAX = '160px'
+const SIZE_EXPANDED_MAX = '10rem'
 
 const StyledNavigationMenuVerticalText = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
@@ -43,7 +43,7 @@ type TStyledNavigationMenuVerticalTextProps = React.ComponentProps<
 export const NavigationMenuVerticalText = (
   props: TStyledNavigationMenuVerticalTextProps
 ): JSX.Element => {
-  const { isExpanded } = useSidebar()
+  const { isExpanded } = useSidebarState()
   return (
     <StyledNavigationMenuVerticalText
       size="md"
