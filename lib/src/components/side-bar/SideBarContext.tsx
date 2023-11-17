@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 export const SideBarContext = React.createContext<{
-  isExpanded?: boolean
+  isExpanded: boolean
 }>({
-  isExpanded: undefined
+  isExpanded: false
 })
 
 export const useSidebarState = () => React.useContext(SideBarContext)
