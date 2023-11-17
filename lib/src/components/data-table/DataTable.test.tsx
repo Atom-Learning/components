@@ -3,7 +3,8 @@ import {
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved
+  waitForElementToBeRemoved,
+  within
 } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import * as React from 'react'
@@ -12,7 +13,7 @@ import { Button } from '../button'
 import { EmptyState } from '../empty-state'
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
-import { DataTable } from '.'
+import { DataTable, useDataTable } from '.'
 
 const columnHelper = createColumnHelper<{
   id: number
@@ -133,6 +134,128 @@ describe('DataTable component', () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('renders subRows correctly and performs actions only on selected ones', () => {
+    const columnHelper = createColumnHelper<{
+      firstName: string
+      lastName: string
+      age: string
+    }>()
+
+    const columns = [
+      columnHelper.accessor('firstName', {
+        header: 'First name',
+        id: 'firstName',
+        cell: (data) => data.getValue()
+      }),
+      columnHelper.accessor('lastName', {
+        header: 'Last name',
+        id: 'lastName',
+        cell: (data) => data.getValue()
+      }),
+      columnHelper.accessor('age', {
+        header: 'Age',
+        id: 'age',
+        cell: (data) => data.getValue()
+      })
+    ]
+
+    const data = [
+      {
+        firstName: 'John',
+        lastName: 'Doe',
+        age: 34,
+        subRows: [
+          {
+            firstName: 'John2',
+            lastName: 'Doe',
+            age: 35
+          },
+          {
+            firstName: 'John3',
+            lastName: 'Doe',
+            age: 36
+          }
+        ]
+      },
+      {
+        firstName: 'Jane',
+        lastName: 'Doe',
+        age: 33
+      }
+    ]
+
+    const TableHead = () => {
+      const { data, rowSelection, setData, getRowModel, getGroupedRowModel } =
+        useDataTable()
+
+      const handleIncreaseAge = () => {
+        const selectedRows = Object.keys(rowSelection)
+        const rowModel = getGroupedRowModel().rows
+
+        const updateData = (rows) => {
+          const updatedData = rows.map((row) => {
+            if (selectedRows.includes(row.id)) {
+              row.original.age += 10
+            }
+
+            if (!row.subRows.length) {
+              return row.original
+            }
+
+            return { ...row.original, subRows: updateData(row.subRows) }
+          })
+
+          return updatedData
+        }
+
+        const updatedData = updateData(rowModel)
+
+        setData((current) => ({
+          ...current,
+          results: updatedData
+        }))
+      }
+
+      return (
+        <DataTable.BulkActions>
+          <DataTable.BulkActions.SelectedRowActions>
+            <Button onClick={handleIncreaseAge}>Make older</Button>
+          </DataTable.BulkActions.SelectedRowActions>
+        </DataTable.BulkActions>
+      )
+    }
+
+    const { container } = render(
+      <Wrapper>
+        <DataTable columns={columns} data={data} enableRowSelection>
+          <TableHead />
+          <DataTable.Table />
+        </DataTable>
+      </Wrapper>
+    )
+
+    const firstDataRow = screen.getAllByRole('row')[1]
+
+    expect(screen.getByText('John')).toBeVisible()
+    expect(firstDataRow.textContent).toMatch(/34/)
+    expect(screen.queryByText('John2')).not.toBeInTheDocument()
+
+    userEvent.click(within(firstDataRow).getByTestId('expand-icon-0'))
+
+    const firstNestedRow = screen.getAllByRole('row')[2]
+
+    expect(within(firstNestedRow).getByText('John2')).toBeVisible()
+
+    userEvent.click(within(firstNestedRow).getByRole('checkbox'))
+
+    expect(screen.getByText('Make older')).toBeVisible()
+
+    userEvent.click(screen.getByText('Make older'))
+
+    expect(firstDataRow.textContent).toMatch(/34/)
+    expect(firstNestedRow.textContent).toMatch(/45/)
   })
 })
 
@@ -654,7 +777,7 @@ describe('DataTable sticky columns', () => {
     const { container } = render(
       <Wrapper>
         <DataTable columns={columns} data={data}>
-          <DataTable.Table numberOfStickyColumns={1} />
+          <DataTable.Table scrollOptions={{ numberOfStickyColumns: 1 }} />
         </DataTable>
       </Wrapper>
     )

@@ -267,12 +267,14 @@ exports[`BannerRegular component renders 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
   .c-gjbGPV {
@@ -286,8 +288,9 @@ exports[`BannerRegular component renders 1`] = `
     margin: 0;
   }
 
-  .c-llIiIE {
+  .c-kHdlDu {
     margin-bottom: var(--space-4);
+    color: var(--banner-heading-color);
   }
 
   .c-dyvMgW {
@@ -301,8 +304,8 @@ exports[`BannerRegular component renders 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
+  .c-bYxtOe {
+    color: var(--banner-text-color);
   }
 
   .c-fkUJsw {
@@ -343,9 +346,11 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -386,12 +391,8 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-bYxtOe-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-  }
-
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
   }
 
   .c-dhzjXW-iTKOFX-direction-column {
@@ -457,7 +458,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-bYxtOe-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
@@ -552,19 +553,20 @@ exports[`BannerRegular component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-kHdlDu"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
+        emphasis="highContrast"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -865,12 +867,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
   .c-gjbGPV {
@@ -884,8 +888,9 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     margin: 0;
   }
 
-  .c-llIiIE {
+  .c-kHdlDu {
     margin-bottom: var(--space-4);
+    color: var(--banner-heading-color);
   }
 
   .c-dyvMgW {
@@ -899,8 +904,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
+  .c-bYxtOe {
+    color: var(--banner-text-color);
   }
 
   .c-fkUJsw {
@@ -963,7 +968,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     vertical-align: middle;
   }
 
-  .c-iQtYBa {
+  .c-gLBWZd {
+    z-index: 1;
     position: absolute;
     top: var(--space-3);
     right: var(--space-3);
@@ -971,9 +977,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-highContrast {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -1014,12 +1022,8 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-bYxtOe-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
-  }
-
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
   }
 
   .c-dhzjXW-iTKOFX-direction-column {
@@ -1100,7 +1104,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-bYxtOe-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
@@ -1199,30 +1203,31 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: rgba(255, 255, 255, 0.65);
   }
 
-  .c-llIiIE-cRYaBy-cv {
+  .c-kHdlDu-cRYaBy-cv {
     margin-right: var(--space-6);
   }
 
-  .c-bDwMAO-cRYaBy-cv {
+  .c-bYxtOe-cRYaBy-cv {
     margin-right: var(--space-6);
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB"
     role="banner"
   >
     <div
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-cv"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-kHdlDu c-kHdlDu-cRYaBy-cv"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md c-bDwMAO-cRYaBy-cv"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
+        emphasis="highContrast"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -1254,7 +1259,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     </div>
     <button
       aria-label="dismiss banner"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-fpPlqP-size-sm c-iQtYBa"
+      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-fpPlqP-size-sm c-gLBWZd"
       data-testid="dismiss"
       type="button"
     >

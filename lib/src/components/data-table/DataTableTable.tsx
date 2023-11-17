@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { CSS } from '~/stitches'
+
 import { Table } from '../table'
 import { DataTable } from './DataTable'
 import { AsyncDataState } from './DataTable.types'
@@ -8,19 +10,29 @@ import { DataTableLoading } from './DataTableLoading'
 
 export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
-  'children'
+  'children' | 'numberOfStickyColumns'
 > &
   Partial<
     Pick<React.ComponentProps<typeof DataTable.Head>, 'theme' | 'sortable'>
   > &
-  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>>
+  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>> & {
+    scrollOptions?: {
+      hasStickyHeader?: boolean
+      headerCss?: CSS
+      numberOfStickyColumns?: number
+      scrollContainerCss?: CSS
+    }
+  }
 
 export const DataTableTable: React.FC<DataTableTableProps> = ({
   sortable,
   striped,
   theme,
   css,
-  numberOfStickyColumns = 0,
+  scrollOptions = {
+    numberOfStickyColumns: 0,
+    hasStickyHeader: false
+  },
   ...props
 }) => {
   const { asyncDataState, getTotalRows } = useDataTable()
@@ -35,7 +47,8 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
 
       <Table
         {...props}
-        numberOfStickyColumns={numberOfStickyColumns}
+        numberOfStickyColumns={scrollOptions.numberOfStickyColumns}
+        scrollContainerCss={scrollOptions.scrollContainerCss}
         css={{
           ...css,
           ...(isPending && {
@@ -45,7 +58,12 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
           })
         }}
       >
-        <DataTable.Head theme={theme} sortable={sortable} />
+        <DataTable.Head
+          theme={theme}
+          sortable={sortable}
+          isSticky={scrollOptions.hasStickyHeader}
+          css={scrollOptions.headerCss}
+        />
         <DataTable.Body striped={striped} />
       </Table>
     </>

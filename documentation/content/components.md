@@ -1,6 +1,6 @@
 ---
 slug: components
-title: Components
+title: 3 Components
 links:
   viewSource: components
 tabs:

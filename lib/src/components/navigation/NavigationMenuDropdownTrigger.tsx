@@ -3,13 +3,13 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { styled } from '~/stitches'
+import { preventEvent } from '~/utilities/event'
 
 import { Icon } from '../icon'
 import {
   navigationMenuActiveItemStyles,
   navigationMenuBaseItemStyles
 } from './NavigationMenu.styles'
-import { preventHover } from './preventHover'
 
 const StyledTrigger = styled(
   NavigationMenuPrimitive.Trigger,
@@ -20,7 +20,7 @@ const StyledTrigger = styled(
     borderRadius: '$1',
     justifyContent: 'space-between',
     '&[data-state="open"]': {
-      background: '$tonal100'
+      background: '$triggerBackgroundOpen'
     },
     variants: {
       active: { true: { ...navigationMenuActiveItemStyles } }
@@ -36,8 +36,8 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
     active={active}
     {...props}
     ref={forwardedRef}
-    onPointerMove={preventHover}
-    onPointerLeave={preventHover}
+    onPointerMove={preventEvent}
+    onPointerLeave={preventEvent}
   >
     {children}
     <Icon

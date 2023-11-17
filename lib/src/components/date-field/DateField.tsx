@@ -12,6 +12,7 @@ type DateFieldProps = DateInputProps & FieldElementWrapperProps
 
 export const DateField: React.FC<DateFieldProps> = ({
   css,
+  hideLabel,
   label,
   name,
   validation,
@@ -29,6 +30,7 @@ export const DateField: React.FC<DateFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}

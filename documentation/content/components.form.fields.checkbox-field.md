@@ -6,9 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `CheckboxField` renders a `Checkbox` inside an `InlineFieldWrapper`,
-      providing a consistent layout for a checkbox, label and, when applicable,
-      an error.
+      **Related components**
+
+
+      [Checkbox](https://atomlearning.design/components/form/primitives/checkbox)
+
+
+      <br/>
+
+
+      `CheckboxField` renders a `Checkbox` inside an `InlineFieldWrapper`, providing a consistent layout for a checkbox, label and, when applicable, an error.
 
 
       <CodeBlock live={true} preview={true} code={`<Form>

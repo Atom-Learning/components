@@ -6,8 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `SelectField` wraps a `Select` with a `Label` and a `InlineMessage` to
-      provide consistent behaviour and layout.
+      **Related components**
+
+
+      [Select](https://atomlearning.design/components/form/primitives/select)
+
+
+      <br/>
+
+
+      `SelectField` wraps a `Select` with a `Label` and a `InlineMessage` to provide consistent behaviour and layout.
 
 
       <CodeBlock live={true} preview={true} code={`<Form>

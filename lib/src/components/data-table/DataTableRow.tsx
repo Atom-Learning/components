@@ -1,8 +1,11 @@
+import { ChevronDown, ChevronRight } from '@atom-learning/icons'
 import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { Box } from '../box'
+import { Icon } from '../icon'
 import { Table } from '../table'
 import { useDataTable } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
@@ -25,16 +28,37 @@ const StyledRow = styled(Table.Row, {
 })
 
 export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
-  const { enableRowSelection } = useDataTable()
+  const { enableRowSelection, getCanSomeRowsExpand } = useDataTable()
+
+  const toggleExpandHandler = row.getToggleExpandedHandler()
+  const toggleSelectHandler = row.getToggleSelectedHandler()
+
+  const getCheckedState = (): boolean | 'indeterminate' => {
+    if (row.getIsSomeSelected()) return 'indeterminate'
+    return row.getIsSelected()
+  }
 
   return (
     <StyledRow isSelected={row.getIsSelected()}>
+      {getCanSomeRowsExpand() && (
+        <Table.Cell
+          data-testid={`expand-icon-${row.id}`}
+          css={{ width: '$4', cursor: row.getCanExpand() ? 'pointer' : 'auto' }}
+          onClick={toggleExpandHandler}
+        >
+          {row.getCanExpand() && (
+            <Icon is={row.getIsExpanded() ? ChevronDown : ChevronRight} />
+          )}
+        </Table.Cell>
+      )}
+
       {enableRowSelection && row.getCanSelect() && (
         <Table.Cell css={{ width: '$4' }}>
           <DataTableRowSelectionCheckbox
+            rowDepth={row.depth}
             rowId={row.id}
-            checked={row.getIsSelected()}
-            onCheckedChange={row.toggleSelected}
+            checked={getCheckedState()}
+            onCheckedChange={toggleSelectHandler}
           />
         </Table.Cell>
       )}

@@ -6,9 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `NumberInputField` renders a field composed of an NumberInput, a Label and
-      a InlineMessage. It is the preferred way to render a form field for a
-      number input.
+      **Related components**
+
+
+      [Number input](https://atomlearning.design/components/form/primitives/number-input)
+
+
+      <br/>
+
+
+      `NumberInputField` renders a field composed of an NumberInput, a Label and a InlineMessage. It is the preferred way to render a form field for a number input.
 
 
       In addition to text `Label` (required) and a validation error (optional), `NumberInputField` accepts all the same props as `NumberInput` and will pass them on to the `NumberInput` it renders.

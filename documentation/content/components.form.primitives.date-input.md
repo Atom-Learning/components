@@ -6,6 +6,15 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
+      **Related components**
+
+
+      [Date field](https://atomlearning.design/components/form/fields/date-field)
+
+
+      <br/>
+
+
       A form component that provides a styled date selector.
 
 

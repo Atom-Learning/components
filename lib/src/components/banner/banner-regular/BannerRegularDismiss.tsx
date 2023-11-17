@@ -15,6 +15,7 @@ const toActionIconSize = {
 }
 
 const StyledDismiss = styled(ActionIcon, {
+  zIndex: 1,
   position: 'absolute',
   top: '$3',
   right: '$3'

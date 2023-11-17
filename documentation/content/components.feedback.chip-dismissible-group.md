@@ -6,8 +6,16 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      Combines the DismissibleGroup logic together with the Chip primitive
-      styling
+      **Related components**
+
+
+      [Chip](https://atomlearning.design/components/feedback/chip) and [Chip toggle group](https://atomlearning.design/components/feedback/chip-toggle-group)
+
+
+      <br/>
+
+
+      Combines the DismissibleGroup logic together with the Chip primitive styling
 
 
       Used to visualise groups of dismissible information, in fields such as an entity or different attributes. Can also be used to represent removable filtering criteria.

@@ -15,6 +15,7 @@ describe(`Link component`, () => {
     const link = await screen.getByText('GOOGLE')
 
     expect(link).toHaveAttribute('href', 'https://google.com/')
+    expect(link).toHaveAttribute('target', '_blank')
     expect(link).toHaveTextContent('GOOGLE')
     expect(container).toMatchSnapshot()
   })

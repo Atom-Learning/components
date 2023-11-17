@@ -17,6 +17,7 @@ type SliderFieldProps = SliderProps &
 
 export const SliderField: React.FC<SliderFieldProps> = ({
   css,
+  hideLabel,
   label,
   name,
   defaultValue,
@@ -44,7 +45,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   }, [JSON.stringify(value)])
 
   return (
-    <FieldWrapper css={css} fieldId={name} label={label}>
+    <FieldWrapper css={css} fieldId={name} label={label} hideLabel={hideLabel}>
       <Slider
         ref={ref}
         name={innerName}
