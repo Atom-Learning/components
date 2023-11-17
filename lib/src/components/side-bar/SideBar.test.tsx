@@ -7,6 +7,7 @@ import { SideBar, useSidebarState } from '.'
 
 const ExampleSideBarContent = () => {
   const { isExpanded } = useSidebarState()
+  // eslint-disable-next-line react/jsx-no-useless-fragment
   return <>{isExpanded ? 'isExpanded' : 'isNotExpanded'}</>
 }
 
