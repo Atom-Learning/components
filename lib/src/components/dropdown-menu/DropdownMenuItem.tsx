@@ -1,6 +1,7 @@
 import { Item } from '@radix-ui/react-dropdown-menu'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 
 export const itemStyles = {
   alignItems: 'center',
@@ -12,8 +13,8 @@ export const itemStyles = {
   position: 'relative',
   px: '$3',
   py: '$2',
-  '&[data-disabled]': {
-    color: '$tonal200',
+  '&[disabled]': {
+    ...disabledStyle(),
     pointerEvents: 'none'
   },
   '&[aria-current="page"], &:focus': {

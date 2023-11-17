@@ -4,6 +4,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
+import { disabledStyle } from '~/utilities'
 
 import { Icon } from '../icon'
 
@@ -41,10 +42,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
     outlineOffset: '1px'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal100',
-    borderColor: '$tonal400',
-    cursor: 'not-allowed',
-    color: '$tonal400'
+    ...disabledStyle()
   },
   variants: {
     state: {

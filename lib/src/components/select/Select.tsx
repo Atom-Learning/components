@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { styled, theme } from '~/stitches'
-import { encodeBackgroundIcon } from '~/utilities'
+import { disabledStyle, encodeBackgroundIcon } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledSelect = styled('select', {
@@ -29,9 +29,7 @@ const StyledSelect = styled('select', {
     display: 'none'
   },
   '&[disabled], > option[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
+    ...disabledStyle()
   },
   variants: {
     size: {

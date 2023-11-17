@@ -2,7 +2,7 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,18 +19,17 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -59,7 +58,7 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -101,7 +100,7 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
@@ -126,7 +125,7 @@ exports[`SearchInput component renders 1`] = `
 
 exports[`SearchInput component renders clear button when non-empty defaultValue 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -143,18 +142,17 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -181,7 +179,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     pointer-events: none;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -194,6 +192,11 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -246,7 +249,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -264,7 +267,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 20px;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -275,23 +278,18 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -312,7 +310,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     transform: translateY(-50%);
   }
 
-  .c-fDzwZw-igyKUXm-css {
+  .c-iPabyW-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -325,13 +323,13 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value="testingWhenDefaultValue"
     />
     <button
       aria-label="clearWhenDefaultValue"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igyKUXm-css c-PJLV"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igyKUXm-css c-PJLV"
       data-state="closed"
       type="button"
     >
@@ -352,7 +350,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 exports[`SearchInput component renders lg size 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -369,18 +367,17 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -407,7 +404,7 @@ exports[`SearchInput component renders lg size 1`] = `
     pointer-events: none;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -420,6 +417,11 @@ exports[`SearchInput component renders lg size 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -472,7 +474,7 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -490,7 +492,7 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 20px;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -499,7 +501,7 @@ exports[`SearchInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -529,7 +531,7 @@ exports[`SearchInput component renders lg size 1`] = `
     transform: translateY(-50%);
   }
 
-  .c-fDzwZw-igyKUXm-css {
+  .c-iPabyW-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -542,7 +544,7 @@ exports[`SearchInput component renders lg size 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
