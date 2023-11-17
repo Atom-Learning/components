@@ -11,8 +11,6 @@ tabs:
       Try to always use one of these utils to format dates in the app, and only use other ways of formatting when there is a specific use case that these three utils don’t cover.
 
 
-
-
       ## `formatRelative`
 
 
@@ -26,7 +24,7 @@ tabs:
 
       * There is enough space in the UI.
 
-
+      * When showing dates to younger students
 
 
       ## `formatLong`
@@ -41,8 +39,6 @@ tabs:
       * The day of the week can help the user find the correct information. For example, when displaying mock tests in a score card.
 
       * There is enough space in the UI.
-
-
 
 
       ## `formatShort`
