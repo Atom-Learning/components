@@ -245,9 +245,9 @@ exports[`SideBar component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-juoHqL {
+  .t-dqPYmP {
     --colors-background: white;
-    --colors-text: var(--colors-grey400);
+    --colors-text: var(--colors-grey800);
     --colors-border: var(--colors-grey200);
   }
 }
@@ -281,15 +281,16 @@ exports[`SideBar component renders 1`] = `
     width: 100%;
   }
 
-  .c-gYyeDg {
-    align-items: center;
+  .c-fjkDee {
+    align-items: flex-end;
     color: var(--colors-text);
     display: flex;
+    gap: var(--space-4);
     text-decoration: none;
   }
 
-  .c-gYyeDg:hover,
-  .c-gYyeDg:focus {
+  .c-fjkDee:hover,
+  .c-fjkDee:focus {
     text-decoration: none;
   }
 
@@ -346,7 +347,7 @@ exports[`SideBar component renders 1`] = `
 
 <div>
   <div
-    class="c-dRaEfy c-dRaEfy-jFjAiR-type-expandable c-dRaEfy-iLCDI-css t-juoHqL"
+    class="c-dRaEfy c-dRaEfy-jFjAiR-type-expandable c-dRaEfy-iLCDI-css t-dqPYmP"
   >
     <div
       class="c-eDzOyH c-eDzOyH-jFjAiR-isExpanded-false"
@@ -355,7 +356,7 @@ exports[`SideBar component renders 1`] = `
         class="c-chyCIC"
       >
         <a
-          class="c-gYyeDg"
+          class="c-fjkDee"
         >
           <img
             alt="Logo"
@@ -632,9 +633,9 @@ exports[`SideBar component renders as static type 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-juoHqL {
+  .t-dqPYmP {
     --colors-background: white;
-    --colors-text: var(--colors-grey400);
+    --colors-text: var(--colors-grey800);
     --colors-border: var(--colors-grey200);
   }
 }
@@ -668,15 +669,16 @@ exports[`SideBar component renders as static type 1`] = `
     width: 100%;
   }
 
-  .c-gYyeDg {
-    align-items: center;
+  .c-fjkDee {
+    align-items: flex-end;
     color: var(--colors-text);
     display: flex;
+    gap: var(--space-4);
     text-decoration: none;
   }
 
-  .c-gYyeDg:hover,
-  .c-gYyeDg:focus {
+  .c-fjkDee:hover,
+  .c-fjkDee:focus {
     text-decoration: none;
   }
 
@@ -737,7 +739,7 @@ exports[`SideBar component renders as static type 1`] = `
 
 <div>
   <div
-    class="c-dRaEfy c-dRaEfy-iLCDI-css t-juoHqL"
+    class="c-dRaEfy c-dRaEfy-iLCDI-css t-dqPYmP"
   >
     <div
       class="c-eDzOyH c-eDzOyH-kLsFIQ-isExpanded-true"
@@ -746,7 +748,7 @@ exports[`SideBar component renders as static type 1`] = `
         class="c-chyCIC"
       >
         <a
-          class="c-gYyeDg"
+          class="c-fjkDee"
         >
           <img
             alt="Logo"
