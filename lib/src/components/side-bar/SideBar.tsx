@@ -19,7 +19,7 @@ const SIZE_EXPANDED = '16rem'
 const light = createTheme({
   colors: {
     background: 'white',
-    text: '$grey400',
+    text: '$grey800',
     border: '$grey200'
   }
 })

@@ -24,9 +24,10 @@ export const SideBarFooter = styled('div', {
 })
 
 export const SideBarBrand = styled('a', {
-  alignItems: 'center',
+  alignItems: 'flex-end',
   color: '$text',
   display: 'flex',
+  gap: '$4',
   textDecoration: 'none',
   '&:hover, &:focus': {
     textDecoration: 'none'
@@ -36,5 +37,6 @@ export const SideBarBrand = styled('a', {
 export const SideBarBrandLogo = Image
 
 export const SideBarBrandName = styled(Text, {
-  color: '$text'
+  color: '$text',
+  whiteSpace: 'nowrap'
 })
