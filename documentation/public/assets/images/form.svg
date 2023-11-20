@@ -1,12 +1,1 @@
-<svg width="217" height="195" viewBox="0 0 217 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="59" height="11" rx="5.5" fill="#545454"/>
-<rect x="0.370307" y="20.2578" width="216.259" height="34.8089" rx="2.59215" fill="white"/>
-<rect x="8.8877" y="32.1077" width="65.1741" height="11.1092" rx="5.55461" fill="#CECECE"/>
-<rect x="0.370307" y="20.2578" width="216.259" height="34.8089" rx="2.59215" stroke="#545454" stroke-width="0.740614"/>
-<rect y="79.1912" width="57.0273" height="11.1092" rx="5.55461" fill="#545454"/>
-<rect x="0.370307" y="99.5583" width="216.259" height="34.8089" rx="2.59215" fill="white"/>
-<rect x="8.8877" y="111.408" width="65.1741" height="11.1092" rx="5.55461" fill="#CECECE"/>
-<rect x="0.370307" y="99.5583" width="216.259" height="34.8089" rx="2.59215" stroke="#545454" stroke-width="0.740614"/>
-<path d="M0 161.454C0 159.818 1.32634 158.491 2.96246 158.491H109.611C111.247 158.491 112.573 159.818 112.573 161.454V191.078C112.573 192.715 111.247 194.041 109.611 194.041H2.96245C1.32633 194.041 0 192.715 0 191.078V161.454Z" fill="#545454"/>
-<rect x="23.6992" y="170.711" width="65.1741" height="11.1092" rx="5.55461" fill="white"/>
-</svg>
+<svg width="217" height="195" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="59" height="11" rx="5.5" fill="#545454"/><rect x=".37" y="20.26" width="216.26" height="34.81" rx="2.59" fill="#fff"/><rect x="8.89" y="32.11" width="65.17" height="11.11" rx="5.55" fill="#CECECE"/><rect x=".37" y="20.26" width="216.26" height="34.81" rx="2.59" stroke="#545454" stroke-width=".74"/><rect y="79.19" width="57.03" height="11.11" rx="5.55" fill="#545454"/><rect x=".37" y="99.56" width="216.26" height="34.81" rx="2.59" fill="#fff"/><rect x="8.89" y="111.41" width="65.17" height="11.11" rx="5.55" fill="#CECECE"/><rect x=".37" y="99.56" width="216.26" height="34.81" rx="2.59" stroke="#545454" stroke-width=".74"/><path d="M0 161.45a2.96 2.96 0 0 1 2.96-2.96h106.65a2.96 2.96 0 0 1 2.96 2.96v29.63a2.96 2.96 0 0 1-2.96 2.96H2.96A2.96 2.96 0 0 1 0 191.08v-29.63Z" fill="#545454"/><rect x="23.7" y="170.71" width="65.17" height="11.11" rx="5.55" fill="#fff"/></svg>
