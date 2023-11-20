@@ -2,7 +2,7 @@
 
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
-  .c-gyuptP {
+  .c-gPnNdI {
     background: unset;
     border: unset;
     padding: unset;
@@ -12,41 +12,38 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     text-decoration: none;
   }
 
-  .c-gyuptP:focus,
-  .c-gyuptP:hover {
+  .c-gPnNdI:focus,
+  .c-gPnNdI:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gyuptP:active {
+  .c-gPnNdI:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-gyuptP[disabled] disabledStyle {
+  .c-gPnNdI[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
-  }
-
-  .c-gyuptP[disabled] {
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gyuptP,
-  .c-jryFOR > .c-gyuptP,
-  .c-PJLV > .c-gyuptP,
-  .c-bYNGXt > .c-gyuptP {
+  .c-dyvMgW > .c-gPnNdI,
+  .c-jryFOR > .c-gPnNdI,
+  .c-PJLV > .c-gPnNdI,
+  .c-bYNGXt > .c-gPnNdI {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gyuptP::before,
-  .c-dyvMgW > .c-gyuptP::after,
-  .c-jryFOR > .c-gyuptP::before,
-  .c-jryFOR > .c-gyuptP::after,
-  .c-PJLV > .c-gyuptP::before,
-  .c-PJLV > .c-gyuptP::after,
-  .c-bYNGXt > .c-gyuptP::before,
-  .c-bYNGXt > .c-gyuptP::after {
+  .c-dyvMgW > .c-gPnNdI::before,
+  .c-dyvMgW > .c-gPnNdI::after,
+  .c-jryFOR > .c-gPnNdI::before,
+  .c-jryFOR > .c-gPnNdI::after,
+  .c-PJLV > .c-gPnNdI::before,
+  .c-PJLV > .c-gPnNdI::after,
+  .c-bYNGXt > .c-gPnNdI::before,
+  .c-bYNGXt > .c-gPnNdI::after {
     content: none;
   }
 
@@ -69,42 +66,42 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 }
 
 @media  {
-  .c-gyuptP-gvmVBy-size-md {
+  .c-gPnNdI-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gyuptP-gvmVBy-size-md::before {
+  .c-gPnNdI-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gyuptP-gvmVBy-size-md::after {
+  .c-gPnNdI-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-gyuptP-jvTRJO-size-lg {
+  .c-gPnNdI-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-gyuptP-jvTRJO-size-lg::before {
+  .c-gPnNdI-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-gyuptP-jvTRJO-size-lg::after {
+  .c-gPnNdI-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
   }
 
-  .c-gyuptP-fmPQHp-noCapsize-true::before,
-  .c-gyuptP-fmPQHp-noCapsize-true::after {
+  .c-gPnNdI-fmPQHp-noCapsize-true::before,
+  .c-gPnNdI-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
@@ -148,7 +145,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
   >
     <button
-      class="c-gyuptP c-gyuptP-gvmVBy-size-md c-gyuptP-fmPQHp-noCapsize-true"
+      class="c-gPnNdI c-gPnNdI-gvmVBy-size-md c-gPnNdI-fmPQHp-noCapsize-true"
     >
       TEXT LINK
     </button>
@@ -157,7 +154,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-jryFOR c-jryFOR-fOoUdm-size-md"
   >
     <button
-      class="c-gyuptP c-gyuptP-gvmVBy-size-md c-gyuptP-fmPQHp-noCapsize-true"
+      class="c-gPnNdI c-gPnNdI-gvmVBy-size-md c-gPnNdI-fmPQHp-noCapsize-true"
     >
       HEADING LINK
     </button>
@@ -167,7 +164,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 
 exports[`Link component renders an anchor 1`] = `
 @media  {
-  .c-gyuptP {
+  .c-gPnNdI {
     background: unset;
     border: unset;
     padding: unset;
@@ -177,58 +174,55 @@ exports[`Link component renders an anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-gyuptP:focus,
-  .c-gyuptP:hover {
+  .c-gPnNdI:focus,
+  .c-gPnNdI:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gyuptP:active {
+  .c-gPnNdI:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-gyuptP[disabled] disabledStyle {
+  .c-gPnNdI[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
-  }
-
-  .c-gyuptP[disabled] {
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gyuptP,
-  .c-jryFOR > .c-gyuptP,
-  .c-PJLV > .c-gyuptP,
-  .c-bYNGXt > .c-gyuptP {
+  .c-dyvMgW > .c-gPnNdI,
+  .c-jryFOR > .c-gPnNdI,
+  .c-PJLV > .c-gPnNdI,
+  .c-bYNGXt > .c-gPnNdI {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gyuptP::before,
-  .c-dyvMgW > .c-gyuptP::after,
-  .c-jryFOR > .c-gyuptP::before,
-  .c-jryFOR > .c-gyuptP::after,
-  .c-PJLV > .c-gyuptP::before,
-  .c-PJLV > .c-gyuptP::after,
-  .c-bYNGXt > .c-gyuptP::before,
-  .c-bYNGXt > .c-gyuptP::after {
+  .c-dyvMgW > .c-gPnNdI::before,
+  .c-dyvMgW > .c-gPnNdI::after,
+  .c-jryFOR > .c-gPnNdI::before,
+  .c-jryFOR > .c-gPnNdI::after,
+  .c-PJLV > .c-gPnNdI::before,
+  .c-PJLV > .c-gPnNdI::after,
+  .c-bYNGXt > .c-gPnNdI::before,
+  .c-bYNGXt > .c-gPnNdI::after {
     content: none;
   }
 }
 
 @media  {
-  .c-gyuptP-gvmVBy-size-md {
+  .c-gPnNdI-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gyuptP-gvmVBy-size-md::before {
+  .c-gPnNdI-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gyuptP-gvmVBy-size-md::after {
+  .c-gPnNdI-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -237,7 +231,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="c-gyuptP c-gyuptP-gvmVBy-size-md"
+    class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
     href="https://google.com/"
     rel="noopener noreferrer"
     target="_blank"
@@ -249,7 +243,7 @@ exports[`Link component renders an anchor 1`] = `
 
 exports[`Link component renders an large anchor 1`] = `
 @media  {
-  .c-gyuptP {
+  .c-gPnNdI {
     background: unset;
     border: unset;
     padding: unset;
@@ -259,75 +253,72 @@ exports[`Link component renders an large anchor 1`] = `
     text-decoration: none;
   }
 
-  .c-gyuptP:focus,
-  .c-gyuptP:hover {
+  .c-gPnNdI:focus,
+  .c-gPnNdI:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gyuptP:active {
+  .c-gPnNdI:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-gyuptP[disabled] disabledStyle {
+  .c-gPnNdI[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
-  }
-
-  .c-gyuptP[disabled] {
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gyuptP,
-  .c-jryFOR > .c-gyuptP,
-  .c-PJLV > .c-gyuptP,
-  .c-bYNGXt > .c-gyuptP {
+  .c-dyvMgW > .c-gPnNdI,
+  .c-jryFOR > .c-gPnNdI,
+  .c-PJLV > .c-gPnNdI,
+  .c-bYNGXt > .c-gPnNdI {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gyuptP::before,
-  .c-dyvMgW > .c-gyuptP::after,
-  .c-jryFOR > .c-gyuptP::before,
-  .c-jryFOR > .c-gyuptP::after,
-  .c-PJLV > .c-gyuptP::before,
-  .c-PJLV > .c-gyuptP::after,
-  .c-bYNGXt > .c-gyuptP::before,
-  .c-bYNGXt > .c-gyuptP::after {
+  .c-dyvMgW > .c-gPnNdI::before,
+  .c-dyvMgW > .c-gPnNdI::after,
+  .c-jryFOR > .c-gPnNdI::before,
+  .c-jryFOR > .c-gPnNdI::after,
+  .c-PJLV > .c-gPnNdI::before,
+  .c-PJLV > .c-gPnNdI::after,
+  .c-bYNGXt > .c-gPnNdI::before,
+  .c-bYNGXt > .c-gPnNdI::after {
     content: none;
   }
 }
 
 @media  {
-  .c-gyuptP-gvmVBy-size-md {
+  .c-gPnNdI-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gyuptP-gvmVBy-size-md::before {
+  .c-gPnNdI-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gyuptP-gvmVBy-size-md::after {
+  .c-gPnNdI-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-gyuptP-jvTRJO-size-lg {
+  .c-gPnNdI-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-gyuptP-jvTRJO-size-lg::before {
+  .c-gPnNdI-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-gyuptP-jvTRJO-size-lg::after {
+  .c-gPnNdI-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
@@ -336,7 +327,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="c-gyuptP c-gyuptP-jvTRJO-size-lg"
+    class="c-gPnNdI c-gPnNdI-jvTRJO-size-lg"
     href="https://google.com/"
     rel="noopener noreferrer"
     target="_blank"

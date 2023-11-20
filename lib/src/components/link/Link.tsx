@@ -26,7 +26,7 @@ export const StyledLink = styled('a', {
     color: '$primaryDark'
   },
   '&[disabled]': {
-    disabledStyle,
+    ...disabledStyle,
     pointerEvents: 'none'
   },
 
