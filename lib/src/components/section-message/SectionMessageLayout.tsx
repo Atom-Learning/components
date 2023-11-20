@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Box } from '../box'
-import { Stack } from '../stack'
+import { Flex } from '../flex'
 
 export const SectionMessageContent = ({
   css,
@@ -21,8 +21,8 @@ export const SectionMessageContent = ({
 export const SectionMessageActions = ({
   css,
   ...rest
-}: React.ComponentProps<typeof Stack>): JSX.Element => (
+}: React.ComponentProps<typeof Flex>): JSX.Element => (
   <Box css={{ maxWidth: '100%', flexShrink: 0, ...css }}>
-    <Stack wrap="wrap" gap={3} {...rest} />
+    <Flex wrap="wrap" gap={3} {...rest} />
   </Box>
 )

@@ -1,7 +1,7 @@
 import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import * as React from 'react'
 
-import { Stack } from '~/components/stack'
+import { Flex } from '~/components/flex'
 import { styled } from '~/stitches'
 
 import { StyledItem } from './ToggleGroupItem'
@@ -10,7 +10,7 @@ type RootType = {
   orientation?: 'horizontal' | 'vertical'
   gap?: number
   isFullWidth?: boolean
-  wrap?: 'wrap' | 'no-wrap' | 'wrap-reverse'
+  wrap?: 'wrap' | 'nowrap' | 'wrap-reverse'
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
@@ -122,7 +122,7 @@ export const ToggleGroupRoot: React.ForwardRefExoticComponent<
       gap = false,
       isFullWidth,
       children,
-      wrap = 'no-wrap',
+      wrap = 'nowrap',
       ...rest
     },
     ref
@@ -138,14 +138,9 @@ export const ToggleGroupRoot: React.ForwardRefExoticComponent<
         orientation={orientation}
         {...rest}
       >
-        <Stack
-          direction={direction}
-          gap={hasGap && gap}
-          align={false}
-          wrap={wrap}
-        >
+        <Flex direction={direction} gap={hasGap ? gap : 0} wrap={wrap}>
           {children}
-        </Stack>
+        </Flex>
       </StyledRoot>
     )
   }
