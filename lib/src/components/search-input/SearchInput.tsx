@@ -25,21 +25,21 @@ enum INPUT_ICON {
 }
 
 const StyledIcon = styled(Icon, {
-  color: '$tonal300',
+  color: '$grey700',
   position: 'absolute',
   pointerEvents: 'none',
   variants: {
     size: {
       sm: {
-        right: '$2',
+        left: '$2',
         size: '$1'
       },
       md: {
-        right: 10,
+        left: 10,
         size: 20
       },
       lg: {
-        right: 10,
+        left: 10,
         size: 20
       }
     }
@@ -131,8 +131,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           css={{
             position: 'absolute',
             top: '50%',
-            transform: 'translateY(-50%)',
-            right: '$1'
+            transform: 'translateY(-50%)'
           }}
           onClick={handleClear}
         >
@@ -143,6 +142,7 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
 
     return (
       <Box css={{ position: 'relative', height: 'max-content', ...css }}>
+        {getIcon()}
         <StyledSearchInput
           ref={setInputElRef}
           size={size}
@@ -150,9 +150,8 @@ export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
           {...remainingProps}
           value={innerValue}
           onChange={handleOnChange}
-          css={{ pr: size === 'sm' ? '$5' : '$6' }}
+          css={{ pl: size === 'sm' ? '$5' : '$6' }}
         />
-        {getIcon()}
       </Box>
     )
   }
