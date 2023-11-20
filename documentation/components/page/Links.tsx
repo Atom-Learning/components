@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Stack } from '@atom-learning/components'
+import { Flex } from '@atom-learning/components'
 import { Link } from '~/components/app'
 
 const DS_LIB_GITHUB_URL = 'https://github.com/Atom-Learning/components'
@@ -21,12 +21,12 @@ export const Links = ({ viewSource, showReportAnIssue, custom, ...rest }) => {
   if (custom) links.push(...custom)
   if (!links.length) return null
   return (
-    <Stack gap="3" {...rest}>
+    <Flex gap="3" {...rest}>
       {links.map(({ name, ...rest }) => (
         <Link key={name} {...rest}>
           {name}
         </Link>
       ))}
-    </Stack>
+    </Flex>
   )
 }

@@ -4,7 +4,7 @@ import {
   Grid,
   Box,
   Heading,
-  Stack,
+  Flex,
   ChipToggleGroup,
   SearchInput,
   styled,
@@ -146,7 +146,7 @@ export const Cards: React.FC<CardsProps> = ({
   }, [items])
 
   return (
-    <Stack gap={4} direction="column">
+    <Flex gap={4} direction="column">
       {showSearch && (
         <SearchInput
           size="md"
@@ -204,6 +204,6 @@ export const Cards: React.FC<CardsProps> = ({
           )
         })}
       </Grid>
-    </Stack>
+    </Flex>
   )
 }

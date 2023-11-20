@@ -1,8 +1,8 @@
-import { Stack, styled } from '@atom-learning/components'
+import { Flex, styled } from '@atom-learning/components'
 
 import * as React from 'react'
 
-type TokenListRootProps = React.ComponentProps<typeof Stack> & {
+type TokenListRootProps = React.ComponentProps<typeof Flex> & {
   ItemComponent: any // typeof TokenListItem,
   allTokens?: Record<string, string>
   specificTokens?: { token: string }[]
@@ -44,8 +44,8 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
   if (!listItems.length) return null
 
   return (
-    <Stack as={StyledTokenList} gap={false} {...rest}>
+    <Flex as={StyledTokenList} {...rest}>
       {listItems}
-    </Stack>
+    </Flex>
   )
 }

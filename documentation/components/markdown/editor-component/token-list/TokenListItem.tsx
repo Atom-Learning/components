@@ -1,4 +1,4 @@
-import { Stack, Box, styled, Text } from '@atom-learning/components'
+import { Flex, Box, styled, Text } from '@atom-learning/components'
 import * as React from 'react'
 
 const TokenListItemToken = ({ token }: { token: string }) => (
@@ -40,24 +40,24 @@ export const TokenListItem: React.FC<TTokenListItemProps> = ({
   const isValueInRem = valueWithoutRem !== value
   return (
     <StyledTokenListItem {...rest}>
-      <Stack key={token} gap={5} align="center" wrap="no-wrap">
+      <Flex key={token} gap={5} align="center" wrap="nowrap">
         <Box>
           <TokenListItemToken token={String(token)} />
         </Box>
 
         <Box css={{ flexGrow: 1 }}>
-          <Stack gap="1" direction="column" justify="center">
+          <Flex gap="1" direction="column" justify="center">
             <TokenListItemValue>{value}</TokenListItemValue>
             {isValueInRem && (
               <TokenListItemValue>{`${
                 +valueWithoutRem * 16
               }px`}</TokenListItemValue>
             )}
-          </Stack>
+          </Flex>
         </Box>
 
         <Box css={{ flexShrink: 0 }}>{children}</Box>
-      </Stack>
+      </Flex>
     </StyledTokenListItem>
   )
 }

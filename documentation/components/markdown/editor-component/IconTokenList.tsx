@@ -4,7 +4,7 @@ import {
   Text,
   Button,
   focusVisibleStyleBlock,
-  Stack,
+  Flex,
   Box,
   Tooltip
 } from '@atom-learning/components'
@@ -43,11 +43,11 @@ const IconItem: React.FC<TIconItemProps> = ({ token, value: Component }) => {
             onClick={() => copyIcon(token)}
             aria-label={`Click to copy: ${token}`}
           >
-            <Stack gap={1} css={{ mb: '$4' }} align="center" justify="center">
+            <Flex gap={1} css={{ mb: '$4' }} align="center" justify="center">
               <Icon is={Component} size="sm" />
               <Icon is={Component} size="md" />
               <Icon is={Component} size="lg" />
-            </Stack>
+            </Flex>
             <Text size="sm">{token}</Text>
           </Button>
         </Tooltip.Trigger>

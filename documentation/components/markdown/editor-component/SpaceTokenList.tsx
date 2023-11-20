@@ -1,4 +1,4 @@
-import { Stack } from '@atom-learning/components'
+import { Flex } from '@atom-learning/components'
 import type { Theme } from '@atom-learning/theme'
 import * as atomTheme from '@atom-learning/theme'
 import { TokenList } from './token-list'
@@ -9,10 +9,10 @@ import * as React from 'react'
 const SpaceExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
   return (
     <TokenList.Item token={token} value={value} {...rest}>
-      <Stack gap={Number(token.replace(/^\$+/, ''))}>
+      <Flex gap={Number(token.replace(/^\$+/, ''))}>
         <DemoBox />
         <DemoBox />
-      </Stack>
+      </Flex>
     </TokenList.Item>
   )
 }
