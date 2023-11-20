@@ -19,7 +19,7 @@ tabs:
         <Icon is={Paperclip} />
         <Icon is={Sun} />
         <Icon is={Wheelchair} />
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       Ensure that you pair the imported icon (in this case `Brightness`) with the `Icon` component to render in a consistent and reliable way. Review the available icons on the [icon listing page](https://design.atomlearning.technology/theme/icons)

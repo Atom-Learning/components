@@ -2,14 +2,6 @@
 
 exports[`ChipDismissibleGroup component renders 1`] = `
 @media  {
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
   .c-dhzjXW {
     display: flex;
   }
@@ -130,26 +122,12 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
+  .c-dhzjXW-ejCoEP-direction-row {
     flex-direction: row;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
   .c-bvauNG-kIEsaE-size-md {
@@ -221,7 +199,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 
 <div>
   <div
-    class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+    class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-kaVYFn-gap-2"
   >
     <div
       class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-efCiES"

@@ -1,3 +1,3 @@
-import { Stack } from '~/components/stack'
+import { Flex } from '~/components/flex'
 
-export const TileGroup = Stack
+export const TileGroup = Flex

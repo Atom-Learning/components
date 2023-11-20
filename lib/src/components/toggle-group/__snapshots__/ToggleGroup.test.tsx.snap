@@ -2,12 +2,8 @@
 
 exports[`ToggleGroup renders 1`] = `
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 
   .c-iVViNQ {
@@ -88,26 +84,16 @@ exports[`ToggleGroup renders 1`] = `
 }
 
 @media  {
-  .c-jgdwfn-iTKOFX-direction-column {
+  .c-dhzjXW-iTKOFX-direction-column {
     flex-direction: column;
   }
 
-  .c-jgdwfn-hjymVw-wrap-no-wrap {
-    flex-wrap: no-wrap;
+  .c-dhzjXW-kVNAnR-wrap-nowrap {
+    flex-wrap: nowrap;
   }
 
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
   .c-gxXeKS-fKibdn-size-sm {
@@ -142,7 +128,7 @@ exports[`ToggleGroup renders 1`] = `
     tabindex="0"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-hjymVw-wrap-no-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+      class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kVNAnR-wrap-nowrap c-dhzjXW-kaVYFn-gap-2"
     >
       <button
         aria-pressed="true"

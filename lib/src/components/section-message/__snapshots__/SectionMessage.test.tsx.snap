@@ -2,12 +2,8 @@
 
 exports[`renders SectionMessage component and has no programmatically detectable a11y issues 1`] = `
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
   }
 
   .c-dbrbZt {
@@ -93,11 +89,6 @@ exports[`renders SectionMessage component and has no programmatically detectable
     }
 }
 
-  .c-flbHeh {
-    flex-grow: 1;
-    justify-content: space-between !important;
-  }
-
   .c-fdAfLq {
     position: relative;
     border-radius: var(--radii-0);
@@ -109,30 +100,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 {
-    margin-top: calc(var(--space-3)*-1);
-    margin-left: calc(var(--space-3)*-1);
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 > * {
-    margin-top: var(--space-3);
-    margin-left: var(--space-3);
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-dbrbZt-cyeZeh-size-sm {
@@ -220,6 +193,10 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
+  .c-dhzjXW-ieGaVeY-css {
+    flex-grow: 1;
+  }
+
   .c-dbrbZt-ihCBfwK-css {
     margin: auto;
     position: absolute;
@@ -258,7 +235,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     class="c-fdAfLq c-fdAfLq-jtgfr-theme-error c-fdAfLq-cSgxUp-hasIcon-true c-fdAfLq-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
+      class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-ieGaVeY-css"
     >
       <svg
         aria-hidden="true"
