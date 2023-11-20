@@ -11,7 +11,7 @@ tabs:
       used alongside `Icon` when you require a user interaction.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <ActionIcon label="Attach a file" appearance="simple">
           <Icon is={Clip} />
         </ActionIcon>
@@ -21,7 +21,7 @@ tabs:
         <ActionIcon label="Attach a file" appearance="solid">
           <Icon is={Clip} />
         </ActionIcon>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Rounded Variant
@@ -30,14 +30,14 @@ tabs:
       Setting `isRounded` makes the Action circular when paired with the options "outline" and "solid" for the `appearance` prop
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <ActionIcon label="Attach a file" appearance="outline" isRounded>
           <Icon is={Bell} />
         </ActionIcon>
         <ActionIcon label="Attach a file" appearance="solid" isRounded>
           <Icon is={Bell} />
         </ActionIcon>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Disabled state
@@ -46,7 +46,7 @@ tabs:
       Passing `disabled` makes the Action Icon take a disabled appearance, where any cursor interaction with the component will not render any changes in its UI.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <ActionIcon label="Attach a file" appearance="simple" disabled>
           <Icon is={Bell} />
         </ActionIcon>
@@ -56,7 +56,7 @@ tabs:
         <ActionIcon label="Attach a file" appearance="solid" disabled>
           <Icon is={Bell} />
         </ActionIcon>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Polymorphism
@@ -65,7 +65,7 @@ tabs:
       The `ActionIcon` component supports polymorphism, therefore depending on whether it receives an `onClick`/`href` as a prop, it will produce a `button` or `link` respectively
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <ActionIcon label="Shuffle selection" onClick={() => console.log('clicked')}>
           <Icon is={Shuffle} />
         </ActionIcon>
@@ -74,7 +74,7 @@ tabs:
         <ActionIcon label="Add a new folder" href="/directory/add">
           <Icon is={FolderAdd} />
         </ActionIcon>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Tooltip

@@ -12,7 +12,7 @@ tabs:
       passed into the `is` prop.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <Icon is={BatteryMedium} />
         <Icon is={Crossing} />
         <Icon is={EyeCrossed} />

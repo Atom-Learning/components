@@ -24,10 +24,10 @@ tabs:
 
       ## Emphasis
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <Badge emphasis="subtle">Subtle</Badge>
         <Badge emphasis="bold">Bold</Badge>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Theme
@@ -41,16 +41,16 @@ tabs:
       If no theme is passed in. The badge theme defaults to "info".
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3} direction="column" align="center">
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3" direction="column" align="center">
         <Badge>Defaults to: "info"</Badge>
-        <Stack gap={3}>
+        <Flex gap="3">
           <Badge theme="info">Info</Badge>
           <Badge theme="neutral">Neutral</Badge>
           <Badge theme="success">Success</Badge>
           <Badge theme="warning">Warning</Badge>
           <Badge theme="danger">Danger</Badge>
-        </Stack>
-        <Stack gap={3}>
+        </Flex>
+        <Flex gap="3">
           <Badge theme="grey">Grey</Badge>
           <Badge theme="blue">Blue</Badge>
           <Badge theme="purple">Purple</Badge>
@@ -62,17 +62,17 @@ tabs:
           <Badge theme="orange">Orange</Badge>
           <Badge theme="yellow">Yellow</Badge>
           <Badge theme="lime">Lime</Badge>
-        </Stack>
+        </Flex>
         <Badge emphasis="bold">Defaults to: "info"</Badge>
 
-        <Stack gap={3}>
+        <Flex gap="3">
           <Badge theme="info" emphasis="bold">Info</Badge>
           <Badge theme="neutral" emphasis="bold">Neutral</Badge>
           <Badge theme="success" emphasis="bold">Success</Badge>
           <Badge theme="warning" emphasis="bold">Warning</Badge>
           <Badge theme="danger" emphasis="bold">Danger</Badge>
-          </Stack>
-        <Stack gap={3}>
+        </Flex>
+        <Flex gap="3">
           <Badge theme="grey" emphasis="bold">Grey</Badge>
           <Badge theme="blue" emphasis="bold">Blue</Badge>
           <Badge theme="purple" emphasis="bold">Purple</Badge>
@@ -84,8 +84,8 @@ tabs:
           <Badge theme="orange" emphasis="bold">Orange</Badge>
           <Badge theme="yellow" emphasis="bold">Yellow</Badge>
           <Badge theme="lime" emphasis="bold">Lime</Badge>
-        </Stack>
-      </Stack>`} language={"tsx"} />
+        </Flex>
+      </Flex>`} language={"tsx"} />
 
 
       ## With icons

@@ -59,4 +59,7 @@ tabs:
       * There is *not* enough space in the UI to use `formatRelative` or `formatLong`.
 parent: 5265ee0d-991b-4af8-bcc3-1533e8c908dd
 uuid: 1e9f77e1-9002-46dc-9bf4-08ae04e29d1b
+nestedSlug:
+  - guidelines
+  - date-formatting
 ---

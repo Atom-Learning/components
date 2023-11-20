@@ -189,12 +189,7 @@ tabs:
       \"description\":\"A form control for choosing a value within a preset
       range of values.\",\"heading\":\"Slider
       field\",\"image\":\"/assets/images/slider-field.svg\",\"link\":{\"href\":\
-      \"/components/form/fields/slider-field\"},\"tags\":[\"Inputs\"]},{\"descr\
-      iption\":\"Stack is a layout component that provides an abstraction over
-      the flexbox gap
-      property\",\"heading\":\"Stack\",\"image\":\"/assets/images/stack.svg\",\
-      \"link\":{\"href\":\"/components/layout/stack\"},\"tags\":[\"Layout/Struc\
-      ture\"]},{\"image\":\"/assets/images/stack-content.svg\",\"heading\":\"St\
+      \"/components/form/fields/slider-field\"},\"tags\":[\"Inputs\"]},{\"image\":\"/assets/images/stack-content.svg\",\"heading\":\"St\
       ack content\",\"description\":\"A layout component to provide internal
       spacing between content
       components.\",\"link\":{\"href\":\"/components/layout/stack-content\"},\"\
@@ -361,11 +356,11 @@ tabs:
       eading\":\"Sortable\",\"description\":\"A primitive that let users sort an
       array of sibling elements via drag and
       drop.\",\"link\":{\"href\":\"/components/primitives/sortable\"},\"tags\":[\
-      \"Primitives\"]},{\"heading\":\"Sidebar\",\"description\":\"A side panel
+      \"Primitives\"]},{\"heading\":\"Side Bar\",\"description\":\"A side panel
       to navigate the content of a product. Appears overlaid on top of a page
       and when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"],\"image\":\"/asset\
-      s/images/sidebar.svg\",\"link\":{\"href\":\"/components/navigation/sidebar\
+      s/images/sidebar.svg\",\"link\":{\"href\":\"/components/surfaces/side-bar\
       \"}}]} />"
     title: Main
 slug: landing

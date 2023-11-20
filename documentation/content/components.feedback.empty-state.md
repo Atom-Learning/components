@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      Empty states are messages that provide an explanation of an interface in
-      absence of content.
+      Empty states are messages that provide an explanation of an interface
+      in absence of content.
 
 
       `EmptyState` exports a number of components that can be composed together to create a message. The message can include Title and/or Body and sometimes they appear together with an illustration and actionable buttons. There are 5 different size variants of `EmptyState` ( 'xs', 'sm', 'md', 'lg' and 'xl').

@@ -7,10 +7,10 @@ links:
 tabs:
   - title: Code
     content: >-
-      A section message displays a contextual feedback message in a particular
-      section of the page. They’re persistent and nonmodal. It can include a
-      dismiss button, allowing the user to either ignore them or interact with
-      them at any time.
+      A section message displays a contextual feedback message in a
+      particular section of the page. They’re persistent and nonmodal. It can
+      include a dismiss button, allowing the user to either ignore them or
+      interact with them at any time.
 
 
       <CodeBlock live={true} preview={true} code={`<SectionMessage>
@@ -31,7 +31,7 @@ tabs:
       These are the available `theme`s for this component: `success`, `warning`, `error`, `neutral` and `info`. The default is `info` (due to most frequent context).
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack direction="column" css={{ width: 325 }} gap={3}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3" direction="column" css={{ width: 325 }}>
         <SectionMessage theme="error">
           <SectionMessage.Icon />
           <SectionMessage.Content>
@@ -86,7 +86,7 @@ tabs:
           </SectionMessage.Content>
           <SectionMessage.Dismiss />
         </SectionMessage>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Composition

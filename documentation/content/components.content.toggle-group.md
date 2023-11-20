@@ -14,7 +14,7 @@ tabs:
       Functionality based on the [`ToggleGroup`](https://www.radix-ui.com/docs/primitives/components/toggle-group) radix component, which already allows for: single/multiple select, disabling or partly disabling options, adds keyboard navigation and orientation and more.
 
 
-      Extends visually by allowing for different sizing, vertical/horizontal display and gaps using the Stack component. When there is no gap, rounds the border for *only* the edge/outer corners.
+      Extends visually by allowing for different sizing, vertical/horizontal display and gaps using the Flex component. When there is no gap, rounds the border for *only* the edge/outer corners.
 
 
       ## Orientation

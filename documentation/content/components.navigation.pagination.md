@@ -4,7 +4,7 @@ title: Pagination
 tabs:
   - title: Code
     content: >-
-
+      
       NOTE: Currently, only the `md` variant has been implemented.
 
 

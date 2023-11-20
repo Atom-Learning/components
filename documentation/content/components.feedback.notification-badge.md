@@ -26,7 +26,7 @@ tabs:
       Whilst you would normally want to display a number, the `value` prop also supports strings. Here are some usage examples:
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <NotificationBadge value={88}>
           <ActionIcon appearance="outline" size="lg">
             <Icon is={Controls} />
@@ -35,7 +35,7 @@ tabs:
         <NotificationBadge value="hi">
           <Button theme="warning">I'm a button!</Button>
         </NotificationBadge>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## API Reference

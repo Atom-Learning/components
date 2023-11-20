@@ -362,6 +362,6 @@ tabs:
 parent: 5265ee0d-991b-4af8-bcc3-1533e8c908dd
 uuid: d0b53dad-3e2a-4c97-aa25-1e4f370616aa
 nestedSlug:
-  - introduction
+  - guidelines
   - email-design
 ---
