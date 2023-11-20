@@ -29,7 +29,7 @@ const StyledSlider = styled(Root, {
     flexDirection: 'column',
     width: '$1'
   },
-  '&[data-disabled]': { ...disabledStyle() },
+  '&[data-disabled]': disabledStyle,
   variants: {
     theme: {
       light: {
@@ -47,7 +47,7 @@ const StyledRange = styled(Range, {
   borderRadius: '$round',
   height: '100%',
   position: 'absolute',
-  '&[data-disabled]': { ...disabledStyle() }
+  '&[data-disabled]': disabledStyle
 })
 
 const StyledThumb = styled(Thumb, {
@@ -62,7 +62,7 @@ const StyledThumb = styled(Thumb, {
     outline: '2px solid $primaryMid',
     outlineOffset: '2px'
   },
-  '&[data-disabled]': { ...disabledStyle() }
+  '&[data-disabled]': disabledStyle
 })
 
 export type SliderProps = React.ComponentProps<typeof StyledSlider>

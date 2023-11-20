@@ -106,7 +106,7 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-gPnNdI {
+  .c-gyuptP {
     background: unset;
     border: unset;
     padding: unset;
@@ -116,38 +116,41 @@ exports[`MarkdownContent component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-gPnNdI:focus,
-  .c-gPnNdI:hover {
+  .c-gyuptP:focus,
+  .c-gyuptP:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-gPnNdI:active {
+  .c-gyuptP:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-gPnNdI[disabled] {
+  .c-gyuptP[disabled] disabledStyle {
     opacity: 0.3;
     cursor: not-allowed;
+  }
+
+  .c-gyuptP[disabled] {
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gPnNdI,
-  .c-jryFOR > .c-gPnNdI,
-  .c-PJLV > .c-gPnNdI,
-  .c-bYNGXt > .c-gPnNdI {
+  .c-dyvMgW > .c-gyuptP,
+  .c-jryFOR > .c-gyuptP,
+  .c-PJLV > .c-gyuptP,
+  .c-bYNGXt > .c-gyuptP {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gPnNdI::before,
-  .c-dyvMgW > .c-gPnNdI::after,
-  .c-jryFOR > .c-gPnNdI::before,
-  .c-jryFOR > .c-gPnNdI::after,
-  .c-PJLV > .c-gPnNdI::before,
-  .c-PJLV > .c-gPnNdI::after,
-  .c-bYNGXt > .c-gPnNdI::before,
-  .c-bYNGXt > .c-gPnNdI::after {
+  .c-dyvMgW > .c-gyuptP::before,
+  .c-dyvMgW > .c-gyuptP::after,
+  .c-jryFOR > .c-gyuptP::before,
+  .c-jryFOR > .c-gyuptP::after,
+  .c-PJLV > .c-gyuptP::before,
+  .c-PJLV > .c-gyuptP::after,
+  .c-bYNGXt > .c-gyuptP::before,
+  .c-bYNGXt > .c-gyuptP::after {
     content: none;
   }
 
@@ -316,18 +319,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-gPnNdI-gvmVBy-size-md {
+  .c-gyuptP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::before {
+  .c-gyuptP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::after {
+  .c-gyuptP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -691,7 +694,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
+        class="c-gyuptP c-gyuptP-gvmVBy-size-md"
         href="http://dev.nodeca.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -703,7 +706,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
+        class="c-gyuptP c-gyuptP-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
         rel="noopener noreferrer"
         target="_blank"

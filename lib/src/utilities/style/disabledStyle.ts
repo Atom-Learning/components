@@ -2,14 +2,9 @@
   Disabled styling for elements.
 */
 
-type disabledStyleReturnType = {
-  opacity: number
-  cursor: 'not-allowed'
-}
+import type { CSS } from '~/stitches'
 
-export const disabledStyle = (): disabledStyleReturnType => {
-  return {
-    opacity: 0.3,
-    cursor: 'not-allowed'
-  }
-}
+export const disabledStyle = {
+  opacity: 0.3,
+  cursor: 'not-allowed'
+} as CSS

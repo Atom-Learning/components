@@ -41,9 +41,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
     outline: '2px solid $primary',
     outlineOffset: '1px'
   },
-  '&[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled]': disabledStyle,
   variants: {
     state: {
       error: {

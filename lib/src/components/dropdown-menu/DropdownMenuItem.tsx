@@ -13,10 +13,7 @@ export const itemStyles = {
   position: 'relative',
   px: '$3',
   py: '$2',
-  '&[disabled]': {
-    ...disabledStyle(),
-    pointerEvents: 'none'
-  },
+  '&[disabled]': { disabledStyle, pointerEvents: 'none' },
   '&[aria-current="page"], &:focus': {
     '&::before': {
       borderLeft: '2px solid currentColor',

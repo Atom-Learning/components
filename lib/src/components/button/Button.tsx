@@ -18,9 +18,7 @@ const getButtonOutlineVariant = (
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
-  '&[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled]': disabledStyle,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
     color: interact
@@ -38,9 +36,7 @@ const getButtonSolidVariant = (
 ) => ({
   bg: base,
   color: text,
-  '&[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled]': disabledStyle,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: interact,
     color: text
@@ -65,7 +61,7 @@ export const StyledButton = styled('button', {
   transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
-  '&[disabled]': { ...disabledStyle() },
+  '&[disabled]': disabledStyle,
   variants: {
     theme: {
       primary: {},

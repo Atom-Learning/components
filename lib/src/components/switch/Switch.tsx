@@ -27,7 +27,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   '&[data-state="checked"]:hover': {
     backgroundColor: '$primaryMid'
   },
-  '&[disabled]': { ...disabledStyle() },
+  '&[disabled]': disabledStyle,
   variants: {
     size: {
       md: {

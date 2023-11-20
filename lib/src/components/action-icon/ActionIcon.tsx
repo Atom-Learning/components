@@ -60,9 +60,7 @@ const StyledButton = styled('button', {
   justifyContent: 'center',
   p: 'unset',
   transition: 'all 100ms ease-out',
-  '&[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled]': disabledStyle,
   variants: {
     theme: {
       neutral: {},

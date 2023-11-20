@@ -21,9 +21,7 @@ const StyledInput = styled('input', {
     borderColor: '$primary',
     outline: 'none'
   },
-  '&[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled]': disabledStyle,
   '&::placeholder': {
     color: '$tonal300',
     opacity: 1

@@ -28,9 +28,7 @@ const StyledSelect = styled('select', {
   '&::-ms-expand': {
     display: 'none'
   },
-  '&[disabled], > option[disabled]': {
-    ...disabledStyle()
-  },
+  '&[disabled], > option[disabled]': disabledStyle,
   variants: {
     size: {
       sm: {
