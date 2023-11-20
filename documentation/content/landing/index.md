@@ -356,12 +356,12 @@ tabs:
       eading\":\"Sortable\",\"description\":\"A primitive that let users sort an
       array of sibling elements via drag and
       drop.\",\"link\":{\"href\":\"/components/primitives/sortable\"},\"tags\":[\
-      \"Primitives\"]},{\"heading\":\"Side Bar\",\"description\":\"A side panel
+      \"Primitives\"]},{\"heading\":\"Side bar\",\"description\":\"A side panel
       to navigate the content of a product. Appears overlaid on top of a page
       and when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"],\"image\":\"/asset\
-      s/images/sidebar.svg\",\"link\":{\"href\":\"/components/surfaces/side-bar\
-      \"}}]} />"
+      s/images/sidebar.svg\",\"link\":{\"href\":\"/components/navigation/side-b\
+      ar\"}}]} />"
     title: Main
 slug: landing
 nestedSlug:
