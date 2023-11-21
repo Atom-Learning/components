@@ -2,7 +2,7 @@
 
 exports[`Sortable component renders 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -15,6 +15,11 @@ exports[`Sortable component renders 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -42,7 +47,7 @@ exports[`Sortable component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-sm {
+  .c-iPabyW-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -59,23 +64,18 @@ exports[`Sortable component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-cmVfvW-cv {
+  .c-iPabyW-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
+  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -127,7 +127,7 @@ exports[`Sortable component renders 1`] = `
   >
     <button
       aria-label="drag handle"
-      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       disabled=""
       type="button"
     >
@@ -164,7 +164,7 @@ exports[`Sortable component renders 1`] = `
       aria-disabled="false"
       aria-label="drag handle"
       aria-roledescription="sortable"
-      class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       role="button"
       tabindex="0"
       type="button"

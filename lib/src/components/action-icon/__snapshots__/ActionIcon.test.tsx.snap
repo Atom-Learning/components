@@ -2,7 +2,7 @@
 
 exports[`ActionIcon component renders 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -15,6 +15,11 @@ exports[`ActionIcon component renders 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -76,7 +81,7 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-sm {
+  .c-iPabyW-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -93,30 +98,25 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-cmVfvW-cv {
+  .c-iPabyW-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
+  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV"
+    class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-PJLV"
     data-state="closed"
     type="button"
   >
@@ -127,7 +127,7 @@ exports[`ActionIcon component renders 1`] = `
 
 exports[`ActionIcon component renders an external link with the correct attributes 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -140,6 +140,11 @@ exports[`ActionIcon component renders an external link with the correct attribut
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -201,7 +206,7 @@ exports[`ActionIcon component renders an external link with the correct attribut
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-sm {
+  .c-iPabyW-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -218,23 +223,18 @@ exports[`ActionIcon component renders an external link with the correct attribut
 }
 
 @media  {
-  .c-fDzwZw-cmVfvW-cv {
+  .c-iPabyW-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
+  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -242,7 +242,7 @@ exports[`ActionIcon component renders an external link with the correct attribut
   <a
     aria-disabled="false"
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV"
+    class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-PJLV"
     data-state="closed"
     href="https://www.google.com"
     rel="noopener noreferrer"

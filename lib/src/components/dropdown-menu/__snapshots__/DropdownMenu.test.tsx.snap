@@ -2,7 +2,12 @@
 
 exports[`DropdownMenu component renders 1`] = `
 @media  {
-  .c-iLVhIC {
+  .c-gEZhyT[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-dOviKI {
     align-items: center;
     color: var(--colors-tonal600);
     cursor: pointer;
@@ -16,13 +21,14 @@ exports[`DropdownMenu component renders 1`] = `
     padding-bottom: var(--space-2);
   }
 
-  .c-iLVhIC[data-disabled] {
-    color: var(--colors-tonal200);
+  .c-dOviKI[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-iLVhIC[aria-current="page"]::before,
-  .c-iLVhIC:focus::before {
+  .c-dOviKI[aria-current="page"]::before,
+  .c-dOviKI:focus::before {
     border-left: 2px solid currentColor;
     content: "";
     height: var(--sizes-2);
@@ -32,12 +38,12 @@ exports[`DropdownMenu component renders 1`] = `
     transform: scale(1);
   }
 
-  .c-iLVhIC:focus {
+  .c-dOviKI:focus {
     color: var(--colors-primaryMid);
     outline: none;
   }
 
-  .c-iLVhIC:hover {
+  .c-dOviKI:hover {
     text-decoration: underline;
   }
 
@@ -109,7 +115,7 @@ exports[`DropdownMenu component renders 1`] = `
     aria-expanded="true"
     aria-haspopup="menu"
     aria-hidden="true"
-    class="c-PJLV"
+    class="c-gEZhyT"
     data-aria-hidden="true"
     data-state="open"
     id="radix-4"
@@ -136,7 +142,7 @@ exports[`DropdownMenu component renders 1`] = `
       tabindex="-1"
     >
       <div
-        class="c-iLVhIC"
+        class="c-dOviKI"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -145,7 +151,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 1
       </div>
       <div
-        class="c-iLVhIC"
+        class="c-dOviKI"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -154,7 +160,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 2
       </div>
       <a
-        class="c-cIdiJW c-iLVhIC"
+        class="c-cIdiJW c-dOviKI"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="http://google.com"
@@ -171,7 +177,7 @@ exports[`DropdownMenu component renders 1`] = `
         role="separator"
       />
       <a
-        class="c-cIdiJW c-iLVhIC"
+        class="c-cIdiJW c-dOviKI"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="/logout"

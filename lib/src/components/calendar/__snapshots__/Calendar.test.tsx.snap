@@ -6,7 +6,7 @@ exports[`Calendar component renders 1`] = `
     display: flex;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -19,6 +19,11 @@ exports[`Calendar component renders 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -78,7 +83,7 @@ exports[`Calendar component renders 1`] = `
     }
 }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -93,6 +98,11 @@ exports[`Calendar component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-fPxPMR {
@@ -142,7 +152,7 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -157,7 +167,7 @@ exports[`Calendar component renders 1`] = `
     max-width: 250px;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-dXsdwv-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -166,7 +176,7 @@ exports[`Calendar component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
     height: 20px;
     width: 20px;
   }
@@ -198,43 +208,37 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 }
@@ -258,7 +262,7 @@ exports[`Calendar component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-fkUJsw-ikwYYXS-css {
+  .c-kaaUSm-ikwYYXS-css {
     padding-left: 0;
     padding-right: 0;
     color: var(--colors-tonal600);
@@ -283,7 +287,7 @@ exports[`Calendar component renders 1`] = `
     >
       <button
         aria-label="Previous month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -300,7 +304,7 @@ exports[`Calendar component renders 1`] = `
       </button>
       <button
         aria-label="Next month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -323,7 +327,7 @@ exports[`Calendar component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-iRJCoR-cv c-fkUJsw-ikwYYXS-css"
+          class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-jlrmAu-cv c-kaaUSm-ikwYYXS-css"
           type="button"
         >
           Dec

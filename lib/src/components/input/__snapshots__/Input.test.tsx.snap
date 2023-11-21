@@ -2,7 +2,7 @@
 
 exports[`Input component renders a number input 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,25 +19,24 @@ exports[`Input component renders a number input 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -45,7 +44,7 @@ exports[`Input component renders a number input 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-ikLAKdM-css {
+  .c-cHbqOs-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -54,7 +53,7 @@ exports[`Input component renders a number input 1`] = `
 
 <div>
   <input
-    class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ikLAKdM-css"
+    class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-ikLAKdM-css"
     inputmode="numeric"
     pattern="[0-9]*"
     placeholder="001"
@@ -65,7 +64,7 @@ exports[`Input component renders a number input 1`] = `
 
 exports[`Input component renders a text input 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -82,25 +81,24 @@ exports[`Input component renders a text input 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -108,7 +106,7 @@ exports[`Input component renders a text input 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-ikLAKdM-css {
+  .c-cHbqOs-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -117,7 +115,7 @@ exports[`Input component renders a text input 1`] = `
 
 <div>
   <input
-    class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ikLAKdM-css"
+    class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-ikLAKdM-css"
     placeholder="INPUT"
     type="text"
   />
@@ -126,7 +124,7 @@ exports[`Input component renders a text input 1`] = `
 
 exports[`Input component renders lg size 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -143,31 +141,30 @@ exports[`Input component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -175,7 +172,7 @@ exports[`Input component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-ikLAKdM-css {
+  .c-cHbqOs-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -184,7 +181,7 @@ exports[`Input component renders lg size 1`] = `
 
 <div>
   <input
-    class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
+    class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg"
     type="text"
   />
 </div>
