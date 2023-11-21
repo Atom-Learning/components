@@ -271,8 +271,9 @@ exports[`NavigationMenuVertical renders 1`] = `
     display: none;
   }
 
-  .c-ixvUrA {
+  .c-dfGGHW {
     font-weight: var(--navigation-menu-vertical-item-font-weight);
+    line-height: 1.2;
   }
 
   .c-bcEwPX {
@@ -410,7 +411,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
             >
               Button
             </span>
@@ -429,7 +430,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
             >
               Relative Link
             </span>
@@ -450,7 +451,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
             >
               External Link
             </span>
@@ -733,8 +734,9 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     display: none;
   }
 
-  .c-ixvUrA {
+  .c-dfGGHW {
     font-weight: var(--navigation-menu-vertical-item-font-weight);
+    line-height: 1.2;
   }
 
   .c-bcEwPX {
@@ -905,7 +907,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
               >
                 Button
               </span>
@@ -924,7 +926,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
               >
                 Relative Link
               </span>
@@ -945,7 +947,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
               >
                 External Link
               </span>
@@ -969,7 +971,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-ixvUrA"
+                class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dfGGHW"
               >
                 Accordion Trigger
               </span>
