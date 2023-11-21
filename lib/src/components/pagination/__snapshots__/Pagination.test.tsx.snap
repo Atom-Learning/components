@@ -281,7 +281,7 @@ exports[`Pagination component renders 1`] = `
     display: flex;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -294,6 +294,11 @@ exports[`Pagination component renders 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -406,7 +411,7 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -448,23 +453,18 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -474,7 +474,7 @@ exports[`Pagination component renders 1`] = `
   >
     <button
       aria-label="Previous page"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVZtAj"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVZtAj"
       disabled=""
       type="button"
     >
@@ -511,7 +511,7 @@ exports[`Pagination component renders 1`] = `
         aria-expanded="false"
         aria-haspopup="dialog"
         aria-label="Open pagination popover"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv"
         data-state="closed"
         data-testid="pagination_popover_trigger"
         type="button"
@@ -549,7 +549,7 @@ exports[`Pagination component renders 1`] = `
     </div>
     <button
       aria-label="Next page"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVVNNd"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVVNNd"
       type="button"
     >
       <svg

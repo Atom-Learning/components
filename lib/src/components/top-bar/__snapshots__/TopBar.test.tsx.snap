@@ -311,7 +311,7 @@ exports[`TopBar component renders 1`] = `
     color: var(--colors-tonal400);
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -324,6 +324,11 @@ exports[`TopBar component renders 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -416,7 +421,7 @@ exports[`TopBar component renders 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -439,23 +444,18 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -485,7 +485,7 @@ exports[`TopBar component renders 1`] = `
       </a>
       <button
         aria-label="Search"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -510,7 +510,7 @@ exports[`TopBar component renders 1`] = `
       />
       <button
         aria-label="Light/Dark mode"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -846,7 +846,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     color: var(--colors-tonal400);
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -859,6 +859,11 @@ exports[`TopBar component renders the lg variant 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -951,7 +956,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -983,23 +988,18 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -1029,7 +1029,7 @@ exports[`TopBar component renders the lg variant 1`] = `
       </a>
       <button
         aria-label="Search"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -1054,7 +1054,7 @@ exports[`TopBar component renders the lg variant 1`] = `
       />
       <button
         aria-label="Light/Dark mode"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >

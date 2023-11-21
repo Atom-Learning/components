@@ -30,7 +30,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -43,6 +43,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -175,7 +180,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: table;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-iPabyW-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -199,23 +204,18 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -245,7 +245,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-fDzwZw-iefwZNm-css {
+  .c-iPabyW-iefwZNm-css {
     margin: auto;
     position: absolute;
     top: var(--space-2);
@@ -297,7 +297,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
       </div>
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
+        class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-hXLsaq-cv c-iPabyW-iefwZNm-css c-PJLV"
         data-state="closed"
         type="button"
       >

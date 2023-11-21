@@ -10,7 +10,7 @@ exports[`NumberInput component renders lg size 1`] = `
     z-index: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -23,6 +23,11 @@ exports[`NumberInput component renders lg size 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -113,7 +118,7 @@ exports[`NumberInput component renders lg size 1`] = `
     }
 }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -130,18 +135,17 @@ exports[`NumberInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -160,7 +164,7 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -175,13 +179,13 @@ exports[`NumberInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -189,25 +193,19 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-iPabyW-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
+  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -218,12 +216,12 @@ exports[`NumberInput component renders lg size 1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-cHbqOs-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-cHbqOs-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -246,7 +244,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -268,7 +266,7 @@ exports[`NumberInput component renders lg size 1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-fZTBsJ-ibwGleD-css"
+      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cHbqOs-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -283,7 +281,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="increment"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >
@@ -313,7 +311,7 @@ exports[`NumberInput component renders number input  1`] = `
     z-index: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -326,6 +324,11 @@ exports[`NumberInput component renders number input  1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -416,7 +419,7 @@ exports[`NumberInput component renders number input  1`] = `
     }
 }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -433,25 +436,24 @@ exports[`NumberInput component renders number input  1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -466,7 +468,7 @@ exports[`NumberInput component renders number input  1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -474,25 +476,19 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-iPabyW-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
+  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -503,12 +499,12 @@ exports[`NumberInput component renders number input  1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-cHbqOs-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-cHbqOs-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -531,7 +527,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -553,7 +549,7 @@ exports[`NumberInput component renders number input  1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ibwGleD-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -568,7 +564,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="increment"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >

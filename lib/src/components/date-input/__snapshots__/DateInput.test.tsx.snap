@@ -2,7 +2,7 @@
 
 exports[`DateInput component renders 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,23 +19,22 @@ exports[`DateInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -50,6 +49,11 @@ exports[`DateInput component renders 1`] = `
     transition: all 100ms ease-out;
   }
 
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -61,13 +65,13 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -80,23 +84,18 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -106,7 +105,7 @@ exports[`DateInput component renders 1`] = `
     height: max-content;
   }
 
-  .c-fDzwZw-igEsmBj-css {
+  .c-iPabyW-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -120,7 +119,7 @@ exports[`DateInput component renders 1`] = `
   >
     <input
       aria-label="test"
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
       name="date"
       type="text"
       value=""
@@ -130,7 +129,7 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
       data-state="closed"
       type="button"
     >
@@ -157,7 +156,7 @@ exports[`DateInput component renders 1`] = `
 
 exports[`DateInput component renders lg size 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -174,23 +173,22 @@ exports[`DateInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -203,6 +201,11 @@ exports[`DateInput component renders lg size 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -266,7 +269,7 @@ exports[`DateInput component renders lg size 1`] = `
     }
 }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -281,6 +284,11 @@ exports[`DateInput component renders lg size 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-fPxPMR {
@@ -386,13 +394,13 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -407,7 +415,7 @@ exports[`DateInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-dXsdwv-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -416,7 +424,7 @@ exports[`DateInput component renders lg size 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
     height: 20px;
     width: 20px;
   }
@@ -459,7 +467,7 @@ exports[`DateInput component renders lg size 1`] = `
     background: var(--colors-primary);
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -467,43 +475,37 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 }
@@ -514,7 +516,7 @@ exports[`DateInput component renders lg size 1`] = `
     height: max-content;
   }
 
-  .c-fDzwZw-igEsmBj-css {
+  .c-iPabyW-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -539,7 +541,7 @@ exports[`DateInput component renders lg size 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-fkUJsw-ikwYYXS-css {
+  .c-kaaUSm-ikwYYXS-css {
     padding-left: 0;
     padding-right: 0;
     color: var(--colors-tonal600);
@@ -566,7 +568,7 @@ exports[`DateInput component renders lg size 1`] = `
   >
     <input
       aria-label="test"
-      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg"
+      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg"
       name="date"
       type="text"
       value=""
@@ -576,7 +578,7 @@ exports[`DateInput component renders lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
       data-state="closed"
       type="button"
     >

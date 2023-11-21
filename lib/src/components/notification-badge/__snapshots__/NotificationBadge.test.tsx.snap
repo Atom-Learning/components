@@ -28,7 +28,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     background: var(--colors-primary);
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -41,6 +41,11 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -102,12 +107,12 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-kMhpXP-size-lg {
+  .c-iPabyW-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-iPabyW-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -123,25 +128,19 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-iPabyW-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
+  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -157,7 +156,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     </div>
     <button
       aria-label="testing"
-      class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+      class="c-iPabyW c-iPabyW-kMhpXP-size-lg c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-PJLV"
       data-state="closed"
       type="button"
     >
