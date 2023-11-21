@@ -3,8 +3,8 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 import { disabledStyle } from '~/utilities'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { Icon } from '../icon'
 

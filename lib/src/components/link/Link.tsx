@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override, disabledStyle } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
