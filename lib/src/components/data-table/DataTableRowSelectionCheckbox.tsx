@@ -1,10 +1,10 @@
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
+import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 
 import { Checkbox } from '../checkbox'
 import { Label } from '../label'
 import { useDataTable } from './DataTableContext'
-import type { Row } from '@tanstack/react-table'
 
 interface DataTableRowSelectionCheckboxProps {
   row: Row<Record<string, unknown>>
