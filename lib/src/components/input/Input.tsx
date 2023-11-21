@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
@@ -20,11 +21,7 @@ const StyledInput = styled('input', {
     borderColor: '$primary',
     outline: 'none'
   },
-  '&[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
+  '&[disabled]': disabledStyle,
   '&::placeholder': {
     color: '$tonal300',
     opacity: 1

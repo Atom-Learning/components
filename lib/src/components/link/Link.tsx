@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { Override, disabledStyle } from '~/utilities'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
@@ -25,6 +25,11 @@ export const StyledLink = styled('a', {
   '&:active': {
     color: '$primaryDark'
   },
+  '&[disabled]': {
+    ...disabledStyle,
+    pointerEvents: 'none'
+  },
+
   [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &, ${StyledMarkdownEmphasis} > &`]:
     {
       fontSize: '100%',

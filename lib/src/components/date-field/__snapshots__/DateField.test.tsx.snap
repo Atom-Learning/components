@@ -12,7 +12,7 @@ exports[`DateField component renders a field in error state 1`] = `
     margin: 0;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -29,23 +29,22 @@ exports[`DateField component renders a field in error state 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -58,6 +57,11 @@ exports[`DateField component renders a field in error state 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -115,13 +119,13 @@ exports[`DateField component renders a field in error state 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -132,7 +136,7 @@ exports[`DateField component renders a field in error state 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-fZTBsJ-bXVTjQ-state-error {
+  .c-cHbqOs-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
   }
 
@@ -165,23 +169,18 @@ exports[`DateField component renders a field in error state 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -197,7 +196,7 @@ exports[`DateField component renders a field in error state 1`] = `
     height: max-content;
   }
 
-  .c-fDzwZw-igEsmBj-css {
+  .c-iPabyW-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -241,7 +240,7 @@ exports[`DateField component renders a field in error state 1`] = `
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error"
+          class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-bXVTjQ-state-error"
           id="DATE FIELD"
           name="DATE FIELD"
           type="text"
@@ -252,7 +251,7 @@ exports[`DateField component renders a field in error state 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
+          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
           data-state="closed"
           type="button"
         >
@@ -326,7 +325,7 @@ exports[`DateField component renders a field with a text input 1`] = `
     margin: 0;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -343,23 +342,22 @@ exports[`DateField component renders a field with a text input 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -372,6 +370,11 @@ exports[`DateField component renders a field with a text input 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -407,13 +410,13 @@ exports[`DateField component renders a field with a text input 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -426,23 +429,18 @@ exports[`DateField component renders a field with a text input 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-iPabyW-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
+  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -458,7 +456,7 @@ exports[`DateField component renders a field with a text input 1`] = `
     height: max-content;
   }
 
-  .c-fDzwZw-igEsmBj-css {
+  .c-iPabyW-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -488,7 +486,7 @@ exports[`DateField component renders a field with a text input 1`] = `
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
-          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
+          class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
           id="DATE FIELD"
           name="DATE FIELD"
           placeholder="DATE FIELD"
@@ -500,7 +498,7 @@ exports[`DateField component renders a field with a text input 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igEsmBj-css"
+          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
           data-state="closed"
           type="button"
         >

@@ -12,7 +12,7 @@ exports[`SelectField component renders 1`] = `
     margin: 0;
   }
 
-  .c-beXZpM {
+  .c-hqoSmB {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -29,23 +29,22 @@ exports[`SelectField component renders 1`] = `
     width: 100%;
   }
 
-  .c-beXZpM:hover {
+  .c-hqoSmB:hover {
     cursor: pointer;
   }
 
-  .c-beXZpM:focus {
+  .c-hqoSmB:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-beXZpM::-ms-expand {
+  .c-hqoSmB::-ms-expand {
     display: none;
   }
 
-  .c-beXZpM[disabled],
-  .c-beXZpM > option[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-hqoSmB[disabled],
+  .c-hqoSmB > option[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 }
@@ -73,7 +72,7 @@ exports[`SelectField component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-beXZpM-ggkvuX-size-md {
+  .c-hqoSmB-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -110,7 +109,7 @@ exports[`SelectField component renders 1`] = `
         </label>
       </div>
       <select
-        class="c-beXZpM c-beXZpM-ggkvuX-size-md"
+        class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
         id="example"
         name="example"
       >
