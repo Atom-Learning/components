@@ -12,10 +12,10 @@ export const ChipToggleGroupRoot = React.forwardRef<
 >((props, ref) => {
   return (
     <ChipGroup
-      ref={ref}
-      as={ToggleGroup.Root}
       orientation="horizontal"
       {...props}
+      as={ToggleGroup.Root}
+      ref={ref}
     />
   )
 })

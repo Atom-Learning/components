@@ -8,9 +8,7 @@ import { StyledItem } from './ToggleGroupItem'
 
 type RootType = {
   orientation?: 'horizontal' | 'vertical'
-  gap?: number
   isFullWidth?: boolean
-  wrap?: 'wrap' | 'nowrap' | 'wrap-reverse'
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
@@ -114,17 +112,12 @@ const orientationToDirection = (orientation) =>
   orientation === 'horizontal' ? 'row' : 'column'
 
 export const ToggleGroupRoot: React.ForwardRefExoticComponent<
-  React.ComponentProps<typeof StyledRoot> & RootType
+  Pick<React.ComponentProps<typeof Flex>, 'gap' | 'wrap'> &
+    React.ComponentProps<typeof StyledRoot> &
+    RootType
 > = React.forwardRef(
   (
-    {
-      orientation = 'horizontal',
-      gap = false,
-      isFullWidth,
-      children,
-      wrap = 'nowrap',
-      ...rest
-    },
+    { orientation = 'horizontal', gap, isFullWidth, children, wrap, ...rest },
     ref
   ) => {
     const hasGap = typeof gap === 'number'
@@ -138,7 +131,11 @@ export const ToggleGroupRoot: React.ForwardRefExoticComponent<
         orientation={orientation}
         {...rest}
       >
-        <Flex direction={direction} gap={hasGap ? gap : 0} wrap={wrap}>
+        <Flex
+          direction={direction}
+          gap={hasGap ? gap : undefined}
+          wrap={wrap || 'nowrap'}
+        >
           {children}
         </Flex>
       </StyledRoot>
