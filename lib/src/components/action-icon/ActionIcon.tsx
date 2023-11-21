@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override, disabledStyle } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
 import { getExternalAnchorProps } from '~/utilities/uri'
