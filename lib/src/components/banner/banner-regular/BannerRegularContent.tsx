@@ -1,22 +1,19 @@
 import * as React from 'react'
+import { Flex } from '../../flex'
 
 import { styled } from '~/stitches'
 
-import { Box } from '../../box'
 import { useBannerContext } from '../BannerContext'
 
-const Container = styled(Box, {
+const Container = styled(Flex, {
+  flexDirection: 'column',
+  gap: '$4',
   width: '62%',
   flexGrow: 1,
   variants: {
     size: {
-      sm: {
-        p: '$4'
-      },
-      md: {
-        p: '$24',
-        pr: '$5'
-      }
+      sm: { p: '$4' },
+      md: { p: '$24', gap: '$24', pr: '$5' }
     }
   }
 })

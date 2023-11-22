@@ -5,30 +5,9 @@ import { CSS, styled } from '~/stitches'
 import { Image } from '../image'
 import { Text } from '../text'
 
-type TopBarBrandLogoProps = {
-  src: string
-  alt?: string
-  css?: CSS
-}
-
-export const TopBarBrandLogo = ({
-  src,
-  alt = 'Atom Learning logo',
-  css
-}: TopBarBrandLogoProps): JSX.Element => {
-  return (
-    <Image
-      className="topbar-brand-logo"
-      src={src}
-      alt={alt}
-      css={{
-        mr: '$3',
-        mb: '5px',
-        ...css
-      }}
-    />
-  )
-}
+export const TopBarBrandLogo = (props: React.ComponentProps<typeof Image>) => (
+  <Image className="topbar-brand-logo" {...props} />
+)
 
 TopBarBrandLogo.toString = () => '.topbar-brand-logo'
 
@@ -41,5 +20,6 @@ export const TopBarBrand = styled('a', {
   alignItems: 'center',
   textDecoration: 'none',
   color: '$tonal400',
+  gap: '$3',
   '&:hover, &:focus': { textDecoration: 'none' }
 })

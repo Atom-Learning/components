@@ -7,26 +7,11 @@ export const EmptyStateTitle = styled('h2', {
   m: 0,
   variants: {
     size: {
-      xs: {
-        fontSize: '$md',
-        mb: '$3'
-      },
-      sm: {
-        fontSize: '$md',
-        mb: '$3'
-      },
-      md: {
-        fontSize: '$md',
-        mb: '$3'
-      },
-      lg: {
-        fontSize: '$lg',
-        mb: '$4'
-      },
-      xl: {
-        fontSize: '$lg',
-        mb: '$4'
-      }
+      xs: { fontSize: '$md' },
+      sm: { fontSize: '$md' },
+      md: { fontSize: '$md' },
+      lg: { fontSize: '$lg' },
+      xl: { fontSize: '$lg' }
     }
   }
 })

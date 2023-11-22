@@ -6,6 +6,7 @@ import { Description as FieldDescription } from '~/components/field-wrapper/Fiel
 import { useFieldError } from '~/components/form'
 import { InlineMessage } from '~/components/inline-message'
 import { Label } from '~/components/label'
+import { Flex } from '~/components/flex'
 import { RadioButtonGroup } from '~/components/radio-button'
 import { styled } from '~/stitches'
 
@@ -51,32 +52,32 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
 
   return (
     <Fieldset css={css}>
-      <Label
-        as="legend"
-        css={{ p: 0, mb: '$3' }}
-        required={Boolean(validation?.required)}
-      >
-        {label}
-      </Label>
-      {description && (
-        <FieldDescription css={{ mb: '$3' }}>{description}</FieldDescription>
-      )}
+      <Flex direction="column" gap="3">
+        <Label
+          as="legend"
+          css={{ p: 0 }}
+          required={Boolean(validation?.required)}
+        >
+          {label}
+        </Label>
+        {description && <FieldDescription>{description}</FieldDescription>}
 
-      <RadioButtonGroup
-        ref={ref}
-        direction={direction}
-        defaultValue={defaultValue}
-        onValueChange={(newValue) => {
-          onChange(newValue)
-          onValueChange?.(newValue)
-        }}
-        value={innerValue}
-        {...remainingProps}
-      >
-        {children}
-      </RadioButtonGroup>
+        <RadioButtonGroup
+          ref={ref}
+          direction={direction}
+          defaultValue={defaultValue}
+          onValueChange={(newValue) => {
+            onChange(newValue)
+            onValueChange?.(newValue)
+          }}
+          value={innerValue}
+          {...remainingProps}
+        >
+          {children}
+        </RadioButtonGroup>
 
-      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+        {error && <InlineMessage>{error}</InlineMessage>}
+      </Flex>
     </Fieldset>
   )
 }

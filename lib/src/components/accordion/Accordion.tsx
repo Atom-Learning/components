@@ -8,6 +8,9 @@ import { AccordionItem } from './AccordionItem'
 import { AccordionTrigger } from './AccordionTrigger'
 
 const StyledRoot = styled(Root, {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '$1',
   width: '100%'
 })
 

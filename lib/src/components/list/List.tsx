@@ -9,12 +9,11 @@ export const StyledLi = styled('li', {})
 export const StyledList = styled('ul', {
   listStylePosition: 'inside',
   fontFamily: '$body',
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '$2',
   m: 'unset',
   p: 'unset',
-  [`& > ${StyledLi}`]: {
-    '&:not(:last-child)': { mb: '$2' },
-    '&:last-child': { mb: 0 }
-  },
   variants: {
     ...textVariants,
     as: {

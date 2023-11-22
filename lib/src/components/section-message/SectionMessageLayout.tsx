@@ -1,22 +1,15 @@
 import React from 'react'
-
+import { styled } from '~/stitches'
+import { Flex } from '../flex'
 import { Box } from '../box'
 import { Stack } from '../stack'
 
-export const SectionMessageContent = ({
-  css,
-  ...rest
-}: React.ComponentProps<typeof Box>): JSX.Element => (
-  <Box
-    css={{
-      maxWidth: '100%',
-      flexShrink: 0,
-      ['& > *:not(:last-child)']: { mb: '$2' },
-      ...css
-    }}
-    {...rest}
-  />
-)
+export const SectionMessageContent = styled(Flex, {
+  maxWidth: '100%',
+  flexShrink: 0,
+  flexDirection: 'column',
+  gap: '$2'
+})
 
 export const SectionMessageActions = ({
   css,

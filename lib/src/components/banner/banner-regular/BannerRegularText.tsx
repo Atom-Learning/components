@@ -8,43 +8,18 @@ import { useBannerContext } from '../BannerContext'
 const StyledText = styled(Text, {
   color: 'var(--banner-text-color)',
   variants: {
-    containerSize: {
-      sm: {
-        mb: '$4'
-      },
-      md: {
-        mb: '$24'
-      }
-    },
     hasDismiss: {
-      true: {}
+      true: { mr: '$6' }
     }
-  },
-  compoundVariants: [
-    {
-      containerSize: 'sm',
-      hasDismiss: true,
-      css: {
-        mr: '$6'
-      }
-    }
-  ]
+  }
 })
 
 export const BannerRegularText: React.FC<React.ComponentProps<typeof Text>> = (
   props
 ) => {
-  const { emphasis, size, hasDismiss } = useBannerContext()
+  const { size, hasDismiss } = useBannerContext()
 
-  return (
-    <StyledText
-      size={size}
-      containerSize={size}
-      emphasis={emphasis}
-      hasDismiss={hasDismiss}
-      {...props}
-    />
-  )
+  return <StyledText {...props} size={size} hasDismiss={hasDismiss} />
 }
 
 BannerRegularText.displayName = 'BannerRegularText'

@@ -4,11 +4,7 @@ import React from 'react'
 import { styled } from '~/stitches'
 
 const StyledItem = styled(Item, {
-  width: '100%',
-
-  '&:not(:last-child)': {
-    mb: '$1'
-  }
+  width: '100%'
 })
 
 type AccordionItemProps = React.ComponentProps<typeof StyledItem>

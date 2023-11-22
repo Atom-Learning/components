@@ -178,8 +178,8 @@ export const Calendar: React.FC<CalendarProps> = ({
       )}
       {!showYears &&
         calendars.map(({ month, year, weeks }) => (
-          <Box key={`${month}${year}`}>
-            <Flex css={{ height: '$4', alignItems: 'center', mb: '$4' }}>
+          <Flex direction="column" gap="4" key={`${month}${year}`}>
+            <Flex align="center" css={{ height: '$4' }}>
               <Button
                 theme="neutral"
                 css={{ px: '0', color: '$tonal600' }}
@@ -188,7 +188,7 @@ export const Calendar: React.FC<CalendarProps> = ({
                 {monthNames[month]} {year}
               </Button>
             </Flex>
-            <Grid css={{ mb: '$3' }}>
+            <Grid>
               {offsetWeekdayNames(weekdayNames, firstDayOfWeek).map(
                 (weekday) => (
                   <Text
@@ -230,7 +230,7 @@ export const Calendar: React.FC<CalendarProps> = ({
                 })
               )}
             </Grid>
-          </Box>
+          </Flex>
         ))}
     </Box>
   )

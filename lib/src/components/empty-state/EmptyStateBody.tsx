@@ -6,26 +6,11 @@ export const EmptyStateBody = styled(Text, {
   fontWeight: '400',
   variants: {
     size: {
-      xs: {
-        fontSize: '$sm',
-        mb: '$4'
-      },
-      sm: {
-        fontSize: '$sm',
-        mb: '$4'
-      },
-      md: {
-        fontSize: '$sm',
-        mb: '$4'
-      },
-      lg: {
-        fontSize: '$md',
-        mb: 'calc($4 + $2)'
-      },
-      xl: {
-        fontSize: '$md',
-        mb: 'calc($4 + $2)'
-      }
+      xs: { fontSize: '$sm' },
+      sm: { fontSize: '$sm' },
+      md: { fontSize: '$sm' },
+      lg: { fontSize: '$md' },
+      xl: { fontSize: '$md' }
     }
   }
 })

@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
-import { OptionalVisuallyHiddenWrapper } from '../../utilities/optional-visually-hidden-wrapper'
-import { Label } from '../label'
-import { SearchInput } from '../search-input'
 import { AsyncDataState } from './DataTable.types'
+import { Flex } from '../flex'
+import { Label } from '../label'
+import { OptionalVisuallyHiddenWrapper } from '../../utilities/optional-visually-hidden-wrapper'
+import { SearchInput } from '../search-input'
 import { useDataTable } from './DataTableContext'
 
 type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {
@@ -42,11 +43,9 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
   })
 
   return (
-    <>
+    <Flex direction="column" gap="3">
       <OptionalVisuallyHiddenWrapper hidden={hideLabel}>
-        <Label css={{ mb: '$3' }} htmlFor={label}>
-          {label}
-        </Label>
+        <Label htmlFor={label}>{label}</Label>
       </OptionalVisuallyHiddenWrapper>
       <SearchInput
         {...props}
@@ -54,6 +53,6 @@ export const DataTableGlobalFilter: React.FC<DataTableSearchProps> = ({
         onChange={handleChange}
         name={label}
       />
-    </>
+    </Flex>
   )
 }

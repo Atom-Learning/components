@@ -8,28 +8,23 @@ const StyledEmptyStateImage = styled(Image, {
     size: {
       xs: {
         maxWidth: '56px',
-        maxHeight: '32px',
-        mb: '$4'
+        maxHeight: '32px'
       },
       sm: {
         maxWidth: '84px',
-        maxHeight: '48px',
-        mb: '$4'
+        maxHeight: '48px'
       },
       md: {
         maxWidth: '126px',
-        maxHeight: '72px',
-        mb: '$4'
+        maxHeight: '72px'
       },
       lg: {
         maxWidth: '190px',
-        maxHeight: '142px',
-        mb: 'calc($4 + $2)'
+        maxHeight: '142px'
       },
       xl: {
         maxWidth: '285px',
-        maxHeight: '213px',
-        mb: 'calc($4 + $2)'
+        maxHeight: '213px'
       }
     }
   }

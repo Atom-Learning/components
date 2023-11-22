@@ -11,26 +11,14 @@ const EmptyStateContainer = styled(Flex, {
   flexDirection: 'column',
   alignItems: 'center',
   textAlign: 'center',
-  '& > *:last-child': {
-    mb: 0
-  },
+  gap: '$4',
   variants: {
     size: {
-      xs: {
-        p: '$2'
-      },
-      sm: {
-        p: '$3'
-      },
-      md: {
-        p: '$4'
-      },
-      lg: {
-        p: '$5'
-      },
-      xl: {
-        p: '$6'
-      }
+      xs: { p: '$2' },
+      sm: { p: '$3' },
+      md: { p: '$4' },
+      lg: { gap: '$24', p: '$5' },
+      xl: { gap: '$24', p: '$6' }
     }
   }
 })

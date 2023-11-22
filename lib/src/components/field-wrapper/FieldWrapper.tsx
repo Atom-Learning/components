@@ -1,7 +1,6 @@
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
-import { Box } from '~/components/box'
 import { Flex } from '~/components/flex'
 import { ValidationOptions } from '~/components/form'
 import { InlineMessage } from '~/components/inline-message'
@@ -41,14 +40,8 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
 
   return (
-    <Box css={css}>
-      <LabelContainer
-        css={{
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          mb: '$3'
-        }}
-      >
+    <Flex direction="column" gap="3" css={css}>
+      <LabelContainer justify="space-between" align="center">
         <Label htmlFor={fieldId} required={required}>
           {label}
         </Label>
@@ -58,12 +51,10 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
           </Link>
         )}
       </LabelContainer>
-      {description && (
-        <Description css={{ mb: '$3' }}>{description}</Description>
-      )}
+      {description && <Description>{description}</Description>}
       {children}
-      {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
-    </Box>
+      {error && <InlineMessage>{error}</InlineMessage>}
+    </Flex>
   )
 }
 
