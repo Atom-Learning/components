@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import { BannerContainer } from '../BannerContainer'
 
 type TBannerRegularContainerProps = Omit<
@@ -6,4 +7,6 @@ type TBannerRegularContainerProps = Omit<
   'direction' | 'align' | 'wrap' | 'gap' | 'justify'
 >
 
-export const BannerRegularContainer = (props: TBannerRegularContainerProps) => <BannerContainer {...props} />
+export const BannerRegularContainer = (props: TBannerRegularContainerProps) => (
+  <BannerContainer {...props} />
+)
