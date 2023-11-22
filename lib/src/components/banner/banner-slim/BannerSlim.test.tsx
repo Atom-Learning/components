@@ -36,7 +36,7 @@ describe(`BannerSlim component`, () => {
     const { container } = render(
       <BannerSlimImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
       />
     )
     expect(container).toMatchSnapshot()
@@ -47,7 +47,7 @@ describe(`BannerSlim component`, () => {
     const { container } = render(
       <BannerSlimDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         value="dismissible-sm-variant"
         onDismiss={onDismiss}
       />
@@ -65,7 +65,7 @@ describe(`BannerSlim component`, () => {
       <BannerSlimImplementation
         colorScheme={{ base: 'purple1' }}
         size="sm"
-        emphasis="highContrast"
+        emphasis="bold"
         value="sm-variant"
       />
     )
@@ -76,7 +76,7 @@ describe(`BannerSlim component`, () => {
     render(
       <BannerSlimDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         size="sm"
         value="dismissible-sm-variant"
         onDismiss={jest.fn()}

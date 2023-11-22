@@ -351,7 +351,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -556,7 +556,7 @@ exports[`BannerRegular component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-bold t-grLKLB"
     role="banner"
   >
     <div
@@ -569,7 +569,7 @@ exports[`BannerRegular component renders 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
-        emphasis="highContrast"
+        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -990,7 +990,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -1225,7 +1225,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-bold t-grLKLB"
     role="banner"
   >
     <div
@@ -1238,7 +1238,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
-        emphasis="highContrast"
+        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>

@@ -13,7 +13,7 @@ type TBannerContextValue = TBannerProviderProps & {
 }
 
 export const BannerContext = React.createContext<TBannerContextValue>({
-  emphasis: 'lowContrast',
+  emphasis: 'minimal',
   size: {
     '@initial': 'sm',
     '@md': 'md'
@@ -33,7 +33,7 @@ export const useBannerContext = (): TBannerContextValue => {
 }
 
 export const BannerProvider: React.FC<TBannerProviderProps> = ({
-  emphasis = 'lowContrast',
+  emphasis = 'minimal',
   size = {
     '@initial': 'sm',
     '@md': 'md'

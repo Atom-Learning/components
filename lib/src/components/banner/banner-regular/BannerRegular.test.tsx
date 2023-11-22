@@ -40,7 +40,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
       />
     )
     expect(container).toMatchSnapshot()
@@ -51,7 +51,7 @@ describe(`BannerRegular component`, () => {
     const { container } = render(
       <BannerRegularDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         value="dismissible-sm-variant"
         onDismiss={onDismiss}
       />
@@ -68,7 +68,7 @@ describe(`BannerRegular component`, () => {
     render(
       <BannerRegularDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         size="sm"
         value="dismissible-sm-variant"
         onDismiss={jest.fn()}
