@@ -4,7 +4,6 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Box } from '../box'
 import { Icon } from '../icon'
 import { Table } from '../table'
 import { useDataTable } from './DataTableContext'
@@ -52,11 +51,10 @@ export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
         </Table.Cell>
       )}
 
-      {enableRowSelection && row.getCanSelect() && (
+      {enableRowSelection && (
         <Table.Cell css={{ width: '$4' }}>
           <DataTableRowSelectionCheckbox
-            rowDepth={row.depth}
-            rowId={row.id}
+            row={row}
             checked={getCheckedState()}
             onCheckedChange={toggleSelectHandler}
           />

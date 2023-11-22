@@ -308,7 +308,7 @@ exports[`BannerRegular component renders 1`] = `
     color: var(--banner-text-color);
   }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -323,6 +323,11 @@ exports[`BannerRegular component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-eEYQKA {
@@ -403,7 +408,7 @@ exports[`BannerRegular component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm {
+  .c-kaaUSm-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -412,12 +417,12 @@ exports[`BannerRegular component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-jMTgOB-size-sm .c-dbrbZt {
     height: 16px;
     width: 16px;
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
@@ -476,7 +481,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-dbnTtJ-size-md {
+    .c-kaaUSm-dbnTtJ-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
@@ -487,14 +492,14 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-dbnTtJ-size-md .c-dbrbZt {
+    .c-kaaUSm-dbnTtJ-size-md .c-dbrbZt {
       height: 20px;
       width: 20px;
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -507,46 +512,44 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fkUJsw-bznQva-cv {
+  .c-kaaUSm-bSkyfM-cv {
     border: 1px solid;
     border-color: currentColor;
     color: white;
   }
 
-  .c-fkUJsw-bznQva-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
-  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
 }
@@ -574,13 +577,13 @@ exports[`BannerRegular component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -908,7 +911,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     color: var(--banner-text-color);
   }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -923,6 +926,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-eEYQKA {
@@ -944,7 +952,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     object-fit: cover;
   }
 
-  .c-fDzwZw {
+  .c-iPabyW {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -957,6 +965,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-iPabyW[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dbrbZt {
@@ -1034,7 +1047,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm {
+  .c-kaaUSm-jMTgOB-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -1043,12 +1056,12 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-jMTgOB-size-sm .c-dbrbZt {
     height: 16px;
     width: 16px;
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
@@ -1056,12 +1069,12 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-iPabyW-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -1122,7 +1135,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-dbnTtJ-size-md {
+    .c-kaaUSm-dbnTtJ-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
@@ -1133,14 +1146,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-dbnTtJ-size-md .c-dbrbZt {
+    .c-kaaUSm-dbnTtJ-size-md .c-dbrbZt {
       height: 20px;
       width: 20px;
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -1152,7 +1165,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fDzwZw-fpPlqP-size-sm {
+    .c-iPabyW-fpPlqP-size-sm {
       height: var(--sizes-3);
       width: var(--sizes-3);
     }
@@ -1160,46 +1173,44 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fkUJsw-bznQva-cv {
+  .c-kaaUSm-bSkyfM-cv {
     border: 1px solid;
     border-color: currentColor;
     color: white;
   }
 
-  .c-fkUJsw-bznQva-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
-  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
 
@@ -1235,13 +1246,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-dbnTtJ-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -1259,7 +1270,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     </div>
     <button
       aria-label="dismiss banner"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-fpPlqP-size-sm c-gLBWZd"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-fpPlqP-size-sm c-gLBWZd"
       data-testid="dismiss"
       type="button"
     >

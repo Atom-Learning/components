@@ -2,6 +2,7 @@ import * as RadixSwitch from '@radix-ui/react-switch'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 
 const StyledSwitch = styled(RadixSwitch.Root, {
   appearance: 'none',
@@ -26,6 +27,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   '&[data-state="checked"]:hover': {
     backgroundColor: '$primaryMid'
   },
+  '&[disabled]': disabledStyle,
   variants: {
     size: {
       md: {

@@ -2,7 +2,7 @@ import { Trigger } from '@radix-ui/react-tabs'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { focusVisibleStyleBlock } from '~/utilities'
+import { disabledStyle, focusVisibleStyleBlock } from '~/utilities'
 
 import { Text } from '../text'
 
@@ -29,10 +29,7 @@ const StyledTabsTrigger = styled(Trigger, {
     letterSpacing: '-0.005em',
     borderColor: 'currentColor'
   },
-  '&[data-disabled]': {
-    opacity: 0.3,
-    cursor: 'not-allowed'
-  },
+  '&[data-disabled]': disabledStyle,
   '&:not([data-disabled])': {
     '&:hover, &:focus-visible': {
       color: '$interactive2',
