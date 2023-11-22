@@ -41,7 +41,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<BannerRegular
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         value=""
       >
         <BannerRegular.Content>
@@ -64,7 +64,7 @@ tabs:
 
       <BannerRegular
         colorScheme={{ base: 'purple1' }}
-        emphasis="highContrast"
+        emphasis="bold"
         size="sm"
         value=""
       >
@@ -90,7 +90,7 @@ tabs:
 
       <BannerRegular
         colorScheme={{ base: 'blue1' }}
-        emphasis="midContrast"
+        emphasis="subtle"
         size="md"
         value=""
       >
@@ -119,7 +119,7 @@ tabs:
 
       <BannerRegular
         colorScheme={{ base: 'blue2' }}
-        emphasis="midContrast"
+        emphasis="subtle"
         size="md"
         value=""
         onDismiss={() => console.log('Dismissed')}>

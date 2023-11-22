@@ -360,7 +360,7 @@ exports[`BannerSlim component renders 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -497,7 +497,7 @@ exports[`BannerSlim component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
@@ -925,7 +925,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -1000,7 +1000,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+  .c-cCfVEt-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
@@ -1111,7 +1111,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
@@ -1143,7 +1143,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hXLsaq-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-highContrast c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
+        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hXLsaq-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-bold c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
@@ -1556,7 +1556,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -1631,7 +1631,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+  .c-cCfVEt-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
@@ -1742,7 +1742,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL"
     role="banner"
   >
     <div
