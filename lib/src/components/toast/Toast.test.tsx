@@ -12,7 +12,7 @@ import * as React from 'react'
 
 import { Text } from '../text'
 import { Tooltip } from '../tooltip'
-import { Toast, toast, ToastProvider } from '.'
+import { Toast, toast } from '.'
 
 const Wrapper = ({ children }) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>
@@ -24,7 +24,7 @@ describe('Toast component', () => {
   it('renders', async () => {
     render(
       <Wrapper>
-        <ToastProvider>TEST</ToastProvider>
+        <Toast.Provider>TEST</Toast.Provider>
       </Wrapper>
     )
 
@@ -43,7 +43,7 @@ describe('Toast component', () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(
       <Wrapper>
-        <ToastProvider />
+        <Toast.Provider />
       </Wrapper>
     )
 
@@ -57,7 +57,7 @@ describe('Toast component', () => {
 
     render(
       <Wrapper>
-        <ToastProvider />
+        <Toast.Provider />
       </Wrapper>
     )
 

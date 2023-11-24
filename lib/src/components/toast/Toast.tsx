@@ -5,6 +5,7 @@ import { styled } from '~/stitches'
 import { Flex } from '../flex'
 import { ToastCloseButton } from './ToastCloseButton'
 import { ToastIcon } from './ToastIcon'
+import { ToastProvider } from './ToastProvider'
 import { useToastContext } from './ToastProvider'
 
 const toastVariants = {
@@ -44,3 +45,4 @@ export const Toast = (props: ToastProps): JSX.Element => {
 
 Toast.Icon = ToastIcon
 Toast.Close = ToastCloseButton
+Toast.Provider = ToastProvider
