@@ -4,7 +4,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import React from 'react'
 
 import { Button } from '../../button'
-import { AlertProvider, useAlert } from './AlertContext'
+import { Alert, useAlert } from './AlertContext'
 
 const ComponentTest = ({ showSecondAlert, onAction = () => null, ...rest }) => {
   const { showAlert } = useAlert()
@@ -39,9 +39,9 @@ const ComponentTest = ({ showSecondAlert, onAction = () => null, ...rest }) => {
 }
 
 const AlertContextTest = (props) => (
-  <AlertProvider>
+  <Alert.Provider>
     <ComponentTest {...props} />
-  </AlertProvider>
+  </Alert.Provider>
 )
 
 describe('Alert context', () => {
@@ -95,9 +95,9 @@ describe('Alert context', () => {
 
   it('opens second dialog once first dialog is closed', async () => {
     render(
-      <AlertProvider>
+      <Alert.Provider>
         <ComponentTest showSecondAlert />
-      </AlertProvider>
+      </Alert.Provider>
     )
     const trigger = screen.getByText('TRIGGER')
 

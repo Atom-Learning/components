@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { useIsMountedRef } from '~/utilities/hooks/useIsMountedRef'
 
-import { Alert } from './AlertDialog'
+import { Alert as AlertDialog } from './AlertDialog'
 import { initialState, reducer } from './reducer'
 import type { alert } from './types'
 
@@ -14,7 +14,7 @@ const AlertContext = React.createContext<context>({
   showAlert: () => null
 })
 
-export const AlertProvider: React.FC = ({ children }) => {
+const AlertProvider = ({ children }) => {
   const [alerts, dispatch] = React.useReducer(reducer, initialState)
   const isMountedRef = useIsMountedRef()
 
@@ -29,7 +29,7 @@ export const AlertProvider: React.FC = ({ children }) => {
       }}
     >
       {Boolean(alerts.length) && (
-        <Alert
+        <AlertDialog
           {...alerts[0]}
           key={alerts[0].id}
           onClose={() => {
@@ -54,4 +54,8 @@ export const useAlert = (): context => {
   }
 
   return context
+}
+
+export const Alert: { Provider: typeof AlertProvider } = {
+  Provider: AlertProvider
 }
