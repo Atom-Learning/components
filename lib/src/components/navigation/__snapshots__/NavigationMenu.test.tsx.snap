@@ -308,9 +308,10 @@ exports[`Nav component renders 1`] = `
     line-height: 1;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -449,7 +450,7 @@ exports[`Nav component renders 1`] = `
     width: var(--sizes-2);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -494,16 +495,16 @@ exports[`Nav component renders 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-ihxkArn-css {
+  .c-hMRxhp-ihxkArn-css {
     margin-left: var(--space-1);
   }
 
-  [data-state=open] .c-dbrbZt-ihxkArn-css {
+  [data-state=open] .c-hMRxhp-ihxkArn-css {
     transform: rotate(-180deg);
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-dbrbZt-ihxkArn-css {
+    .c-hMRxhp-ihxkArn-css {
       transition: transform .2s ease;
     }
 }
@@ -563,7 +564,7 @@ exports[`Nav component renders 1`] = `
             Theme
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihxkArn-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ihxkArn-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

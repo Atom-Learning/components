@@ -281,7 +281,7 @@ exports[`Pagination component renders 1`] = `
     display: flex;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -291,19 +291,21 @@ exports[`Pagination component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -411,12 +413,12 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -453,17 +455,17 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -474,13 +476,13 @@ exports[`Pagination component renders 1`] = `
   >
     <button
       aria-label="Previous page"
-      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVZtAj"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-bVZtAj"
       disabled=""
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -511,14 +513,14 @@ exports[`Pagination component renders 1`] = `
         aria-expanded="false"
         aria-haspopup="dialog"
         aria-label="Open pagination popover"
-        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv"
         data-state="closed"
         data-testid="pagination_popover_trigger"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -549,12 +551,12 @@ exports[`Pagination component renders 1`] = `
     </div>
     <button
       aria-label="Next page"
-      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVVNNd"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-bVVNNd"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

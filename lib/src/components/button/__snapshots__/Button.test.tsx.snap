@@ -24,9 +24,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -68,7 +69,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -77,12 +78,12 @@ exports[`Button component Loading state renders a loading button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -179,7 +180,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-DdIlq-isLoading-true c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-DdIlq-isLoading-true c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     <div
@@ -236,7 +237,7 @@ exports[`Button component renders a button 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -245,7 +246,7 @@ exports[`Button component renders a button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -275,7 +276,7 @@ exports[`Button component renders a button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     BUTTON
@@ -307,9 +308,10 @@ exports[`Button component renders a button with an icon 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -318,7 +320,7 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -327,12 +329,12 @@ exports[`Button component renders a button with an icon 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -405,13 +407,13 @@ exports[`Button component renders a button with an icon 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -449,7 +451,7 @@ exports[`Button component renders a disabled button 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -458,7 +460,7 @@ exports[`Button component renders a disabled button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -509,7 +511,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     disabled=""
     type="button"
   >
@@ -544,7 +546,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -553,7 +555,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -604,7 +606,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md"
     disabled=""
     type="button"
   >
@@ -639,7 +641,7 @@ exports[`Button component renders a outline button 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -648,7 +650,7 @@ exports[`Button component renders a outline button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -699,7 +701,7 @@ exports[`Button component renders a outline button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-fAhdck-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fAhdck-cv"
     type="button"
   >
     BUTTON
@@ -733,7 +735,7 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -742,7 +744,7 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -814,7 +816,7 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-ctZbUF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-ctZbUF-cv"
     type="button"
   >
     BUTTON

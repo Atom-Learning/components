@@ -2,7 +2,7 @@
 
 exports[`Sortable component renders 1`] = `
 @media  {
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -12,19 +12,21 @@ exports[`Sortable component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -47,12 +49,12 @@ exports[`Sortable component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -64,17 +66,17 @@ exports[`Sortable component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-dQMrZR-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
-  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -127,13 +129,13 @@ exports[`Sortable component renders 1`] = `
   >
     <button
       aria-label="drag handle"
-      class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       disabled=""
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -164,14 +166,14 @@ exports[`Sortable component renders 1`] = `
       aria-disabled="false"
       aria-label="drag handle"
       aria-roledescription="sortable"
-      class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       role="button"
       tabindex="0"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
