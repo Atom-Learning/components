@@ -41,7 +41,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
       }}
       {...remainingProps}
     >
-      <Flex css={{ alignItems: 'center', gap: '$2' }}>
+      <Flex align="center" gap="2">
         {theme && <AlertDialogIcon theme={theme} />}
         <Heading as={AlertDialog.Title} size="sm" css={{ mr: '$4' }}>
           {title}

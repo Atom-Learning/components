@@ -12,14 +12,14 @@ import {
 import { InlineMessageTheme } from './InlineMessage.types'
 
 const InlineMessageContainer = styled(Flex, {
+  gap: '$2',
   variants: {
     theme: INLINE_MESSAGE_THEMES
   }
 })
 
 const InlineMessageIcon = styled(Icon, {
-  flexShrink: '0',
-  mr: '$2'
+  flexShrink: '0'
 })
 
 type TInlineMessageProps = React.ComponentProps<

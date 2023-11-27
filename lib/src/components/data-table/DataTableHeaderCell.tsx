@@ -48,10 +48,10 @@ export const DataTableHeaderCell: React.FC<DataTableHeaderProps> = ({
       }}
       {...props}
     >
-      <Flex css={{ alignItems: 'center' }}>
+      <Flex align="center">
         {flexRender(header.column.columnDef.header, header.getContext())}
         {sortDirection && isSortableTable && (
-          <Flex css={{ position: 'relative', alignItems: 'center' }}>
+          <Flex align="center" css={{ position: 'relative' }}>
             <SortIcon direction={sortDirection} />
           </Flex>
         )}

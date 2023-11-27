@@ -38,11 +38,10 @@ export const GotoPageSelect: React.FC<{
   disabled: boolean
 }> = ({ gotoPage, pageCount, pageIndex, disabled }) => {
   return (
-    <Flex css={{ alignItems: 'center' }}>
+    <Flex align="center" gap="3">
       <Select
         value={pageIndex}
         size="sm"
-        css={{ mr: '$3' }}
         disabled={disabled}
         onChange={(e) => {
           gotoPage(Number(e.target.value))

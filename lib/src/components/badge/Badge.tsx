@@ -18,9 +18,7 @@ const StyledBadge = styled(Flex, {
   minWidth: 0,
   border: '1px solid #FFFFFF',
   fontFamily: '$body',
-  '& > *:not(:last-child)': {
-    mr: '$1'
-  },
+  gap: '$1',
   variants: {
     emphasis: {
       subtle: {
@@ -33,17 +31,9 @@ const StyledBadge = styled(Flex, {
       }
     },
     size: {
-      xs: {
-        px: '$1'
-      },
-      sm: {
-        px: '$1',
-        py: '$0'
-      },
-      md: {
-        px: '$2',
-        py: '$1'
-      }
+      xs: { px: '$1' },
+      sm: { px: '$1', py: '$0' },
+      md: { px: '$2', py: '$1' }
     }
   }
 })

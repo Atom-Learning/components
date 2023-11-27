@@ -18,6 +18,7 @@ const StyledTrigger = styled(
     display: 'flex',
     alignItems: 'center',
     borderRadius: '$1',
+    gap: '$1',
     justifyContent: 'space-between',
     '&[data-state="open"]': {
       background: '$triggerBackgroundOpen'
@@ -43,8 +44,9 @@ export const NavigationMenuDropdownTrigger = React.forwardRef<
     <Icon
       is={ChevronDown}
       css={{
-        ml: '$1',
-        '[data-state=open] &': { transform: 'rotate(-180deg)' },
+        '[data-state=open] &': {
+          transform: 'rotate(-180deg)'
+        },
         '@media (prefers-reduced-motion: no-preference)': {
           transition: 'transform .2s ease'
         }

@@ -13,6 +13,7 @@ export const StyledRadioCard = styled(RadioGroup.Item, {
   cursor: 'pointer',
   display: 'flex',
   textAlign: 'left',
+  gap: '$4',
   '&[data-state="checked"]': {
     outline: '2px solid $primary',
     outlineOffset: '-2px'
@@ -50,28 +51,11 @@ const RadioButton = styled('div', {
     borderColor: '$primary'
   },
   variants: {
-    containerIsFullWidth: {
-      true: {},
-      false: {}
-    },
     align: {
-      left: { mr: '$4' },
-      right: {}
+      left: {},
+      right: { ml: 'auto' }
     }
-  },
-
-  compoundVariants: [
-    {
-      containerIsFullWidth: true,
-      align: 'right',
-      css: { ml: 'auto' }
-    },
-    {
-      containerIsFullWidth: false,
-      align: 'right',
-      css: { ml: '$4' }
-    }
-  ]
+  }
 })
 
 const Indicator = styled(RadioGroup.Indicator, {
@@ -96,7 +80,7 @@ export const RadioCard: React.FC<RadioCardProps> = ({
     isFullWidth={isFullWidth}
     size={size}
   >
-    <RadioButton align={align} containerIsFullWidth={isFullWidth}>
+    <RadioButton align={align}>
       <Indicator />
     </RadioButton>
     <Box>{children}</Box>

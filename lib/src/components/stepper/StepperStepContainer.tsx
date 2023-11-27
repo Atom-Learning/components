@@ -8,6 +8,7 @@ export const StepperStepContainer = styled(Flex, {
   fontWeight: 600,
   fontSize: '$md',
   alignItems: 'center',
+  gap: '$3',
   '&:not(:last-child)::after': {
     content: '',
     position: 'absolute'

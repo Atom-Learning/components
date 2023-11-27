@@ -10,8 +10,6 @@ const StyledBannerSlimContent = styled(Flex, {
 
 export const BannerSlimContent: React.FC<
   React.ComponentProps<typeof StyledBannerSlimContent>
-> = (props) => {
-  return <StyledBannerSlimContent align="center" gap={4} {...props} />
-}
+> = (props) => <StyledBannerSlimContent align="center" gap="4" {...props} />
 
 BannerSlimContent.displayName = 'BannerSlimContent'

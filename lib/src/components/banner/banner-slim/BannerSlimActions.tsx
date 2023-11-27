@@ -20,7 +20,7 @@ export const BannerSlimActions: React.FC<React.ComponentProps<typeof Flex>> = ({
 }) => {
   const { size } = useBannerContext()
   return (
-    <StyledBannerSlimActions size={size} gap={4} {...props}>
+    <StyledBannerSlimActions size={size} gap="4" {...props}>
       {children}
     </StyledBannerSlimActions>
   )

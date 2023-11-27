@@ -12,7 +12,7 @@ const ToggleGroupImplementation = () => (
     disabled={false}
     type="multiple"
     orientation="vertical"
-    gap={2}
+    gap="2"
     defaultValue={['item_a', 'button_a']}
   >
     <ToggleGroup.Item disabled value="item_a">

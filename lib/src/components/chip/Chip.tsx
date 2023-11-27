@@ -17,10 +17,8 @@ export const StyledChipContent = styled('span', {
   alignItems: 'center',
   px: '$1',
   flexGrow: 1,
-  ...overflowElipsis,
-  '& > *:not(:last-child)': {
-    mr: '$1'
-  }
+  gap: '$1',
+  ...overflowElipsis
 })
 
 const toIconSize = { sm: 'sm', md: 'sm', lg: 'md' }

@@ -26,24 +26,14 @@ export const PaginationPopover = () => {
         </ActionIcon>
       </Popover.Trigger>
       <Popover.Content size="md" showCloseButton={false} css={{ p: 0 }}>
-        <Flex
-          css={{
-            p: '$4',
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: 1,
-            justifyContent: 'center'
-          }}
-        >
-          {paginationItems?.map((pageNumber) => {
-            return (
-              <PaginationItem
-                key={pageNumber}
-                pageNumber={pageNumber}
-                css={{ bg: '$white' }}
-              />
-            )
-          })}
+        <Flex wrap="wrap" gap="1" justify="center" css={{ p: '$4' }}>
+          {paginationItems?.map((pageNumber) => (
+            <PaginationItem
+              key={pageNumber}
+              pageNumber={pageNumber}
+              css={{ bg: '$white' }}
+            />
+          ))}
         </Flex>
       </Popover.Content>
     </Popover>

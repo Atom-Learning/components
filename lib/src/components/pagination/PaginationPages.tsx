@@ -11,7 +11,7 @@ export const PaginationPages = () => {
   const isTruncated = pagesCount > paginationItems.length
 
   return (
-    <Flex gap={1}>
+    <Flex gap="1">
       {isTruncated && paginationAlignment === 'start' && (
         <>
           <PaginationItem pageNumber={1} />

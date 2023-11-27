@@ -8,7 +8,6 @@ import { Icon } from '../icon'
 import { usePagination } from './usePagination'
 
 const StyledActionIcon = styled(ActionIcon, {
-  ml: '$1',
   '&:disabled': {
     opacity: '0.3'
   }

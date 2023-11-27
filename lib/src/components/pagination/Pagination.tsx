@@ -20,7 +20,7 @@ export const Pagination: React.FC<IPaginationProps> = ({
 
   return (
     <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
-      <Flex css={css}>
+      <Flex gap="1" css={css}>
         <PaginationProvider {...paginationProps}>
           <PaginationPreviousButton />
           <PaginationPages />

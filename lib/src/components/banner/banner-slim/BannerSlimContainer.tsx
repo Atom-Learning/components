@@ -26,9 +26,7 @@ const StyledBannerSlimContainer = styled(BannerContainer, {
   variants: {
     sizeWorkaround: {
       sm: {},
-      md: {
-        px: '$24'
-      }
+      md: { px: '$24' }
     }
   }
 })
@@ -63,7 +61,7 @@ export const BannerSlimContainer = (
       direction={direction}
       align={align}
       sizeWorkaround={size}
-      gap={4}
+      gap="4"
       wrap={wrap}
       {...props}
     />

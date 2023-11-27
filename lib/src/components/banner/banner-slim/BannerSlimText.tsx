@@ -9,23 +9,10 @@ const StyledText = styled(Text, {
   color: 'var(--banner-heading-color)',
   fontWeight: '600',
   variants: {
-    containerSize: {
-      sm: {},
-      md: {}
-    },
     hasDismiss: {
-      true: {}
+      true: { mr: '$6' }
     }
-  },
-  compoundVariants: [
-    {
-      containerSize: 'sm',
-      hasDismiss: true,
-      css: {
-        mr: '$6'
-      }
-    }
-  ]
+  }
 })
 
 export const BannerSlimText: React.FC<React.ComponentProps<typeof Text>> = (
@@ -33,15 +20,7 @@ export const BannerSlimText: React.FC<React.ComponentProps<typeof Text>> = (
 ) => {
   const { size, hasDismiss } = useBannerContext()
 
-  return (
-    <StyledText
-      size="md"
-      containerSize={size}
-      hasDismiss={hasDismiss}
-      noCapsize
-      {...props}
-    />
-  )
+  return <StyledText size="md" hasDismiss={hasDismiss} noCapsize {...props} />
 }
 
 BannerSlimText.displayName = 'BannerSlimText'

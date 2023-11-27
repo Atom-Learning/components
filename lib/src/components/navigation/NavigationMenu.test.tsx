@@ -14,7 +14,7 @@ const ExampleNav = () => (
       <NavigationMenu.DropdownTrigger>Theme</NavigationMenu.DropdownTrigger>
       <NavigationMenu.DropdownContent>
         <NavigationMenu.DropdownItem href="https://app.atomlearning.co.uk/colours">
-          <Flex css={{ flexDirection: 'column' }}>
+          <Flex direction="column">
             <NavigationMenu.DropdownItemTitle>
               Colours
             </NavigationMenu.DropdownItemTitle>

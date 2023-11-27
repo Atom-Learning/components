@@ -16,6 +16,6 @@ export const SectionMessageActions = ({
   ...rest
 }: React.ComponentProps<typeof Stack>): JSX.Element => (
   <Box css={{ maxWidth: '100%', flexShrink: 0, ...css }}>
-    <Stack wrap="wrap" gap={3} {...rest} />
+    <Stack wrap="wrap" gap="3" {...rest} />
   </Box>
 )

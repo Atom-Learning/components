@@ -22,6 +22,7 @@ export const StyledToast = styled(Flex, {
   color: 'white',
   minHeight: '$5',
   position: 'relative',
+  gap: '$3',
   px: '$4',
   py: '$1',
   transition: 'background-color 50ms ease-out',

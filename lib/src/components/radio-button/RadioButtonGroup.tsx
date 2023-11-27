@@ -7,10 +7,7 @@ export const RadioButtonGroup = styled(RadioGroup.Root, {
   flexWrap: 'wrap',
   variants: {
     direction: {
-      row: {
-        flexDirection: 'row',
-        '& > *:not(:last-child)': { mr: '$5' }
-      },
+      row: { flexDirection: 'row', gap: '$5' },
       column: { flexDirection: 'column' }
     }
   }

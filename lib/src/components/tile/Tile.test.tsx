@@ -5,7 +5,7 @@ import * as React from 'react'
 import { Tile, TileGroup } from '.'
 
 const TileImplementation = () => (
-  <TileGroup gap={3}>
+  <TileGroup gap="3">
     <Tile css={{ size: 100 }} />
     <Tile css={{ size: 100 }} />
   </TileGroup>

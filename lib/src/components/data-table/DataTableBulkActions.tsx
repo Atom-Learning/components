@@ -93,8 +93,7 @@ export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> & {
   return (
     <StyledContainer isRowSelected={isRowSelected} {...rest}>
       <DataTable.MetaData />
-
-      <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
+      <Flex justify="flex-end" align="center">
         {children}
       </Flex>
     </StyledContainer>

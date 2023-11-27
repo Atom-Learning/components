@@ -76,7 +76,7 @@ export const CreatePasswordField = ({
   }
 
   return (
-    <Box css={css}>
+    <Flex direction="column" gap="2" css={css}>
       <PasswordField
         label={label}
         name={name}
@@ -87,14 +87,7 @@ export const CreatePasswordField = ({
         {...remainingProps}
       />
       {(touched || isFocused || error) && (
-        <Flex
-          css={{
-            mt: '$2',
-            gap: '$2',
-            flexWrap: 'wrap',
-            flexDirection: messageDirection
-          }}
-        >
+        <Flex wrap="wrap" direction="column" gap="2">
           {Object.entries(validationResult).map(([message, result]) => (
             <InlineMessage
               key={message}
@@ -105,7 +98,7 @@ export const CreatePasswordField = ({
           ))}
         </Flex>
       )}
-    </Box>
+    </Flex>
   )
 }
 

@@ -2,7 +2,7 @@ import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
-import { CSS, keyframes, styled } from '~/stitches'
+import { keyframes, styled } from '~/stitches'
 
 const FadeInOut = keyframes({
   '0%': { opacity: 0 },
@@ -42,25 +42,14 @@ const Dot = styled('div', {
 type LoaderProps = {
   message?: string
   size?: 'sm' | 'md' | 'lg'
-  css?: CSS
-}
+} & React.ComponentProps<typeof Flex>
 
 export const Loader: React.FC<LoaderProps> = ({
-  css = {},
   message = 'Loading',
   size = 'md',
   ...props
 }) => (
-  <Flex
-    css={{
-      justifyContent: 'center',
-      // Stitches doesn't recognise CSS as the right type here. The Modulz team doesn't know why.
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      ...(css as any)
-    }}
-    role="alert"
-    {...props}
-  >
+  <Flex justify="center" role="alert" {...props}>
     <VisuallyHidden.Root>{message}</VisuallyHidden.Root>
     <Dot size={size} />
     <Dot size={size} />

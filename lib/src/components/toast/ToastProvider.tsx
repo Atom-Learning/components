@@ -8,7 +8,6 @@ import type { Toast as ToastType } from 'react-hot-toast/dist/core/types'
 
 import { MAX_Z_INDEX } from '~/constants/zIndices'
 
-import { Flex } from '../flex'
 import { Spacer } from '../spacer'
 import { Text } from '../text'
 import { Toast } from './Toast'

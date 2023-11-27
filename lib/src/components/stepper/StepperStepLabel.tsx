@@ -6,8 +6,8 @@ export const StepperStepLabel = styled(Text, {
   fontWeight: 600,
   variants: {
     direction: {
-      vertical: { ml: '$3', textAlign: 'left' },
-      horizontal: { mt: '$3', textAlign: 'center' }
+      vertical: { textAlign: 'left' },
+      horizontal: { textAlign: 'center' }
     },
     status: {
       default: { color: '$tonal300', fontWeight: 400 },

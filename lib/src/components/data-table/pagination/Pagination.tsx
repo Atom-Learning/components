@@ -63,11 +63,8 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
       </Text>
 
       <Flex
-        css={{
-          justifyContent: 'space-between',
-          width: '100%',
-          '@sm': { flexBasis: '50%' }
-        }}
+        justify="space-between"
+        css={{ width: '100%', '@sm': { flexBasis: '50%' } }}
       >
         <GotoPageSelect
           gotoPage={setPageIndex}
@@ -76,12 +73,11 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
           disabled={isPaginationDisabled}
         />
 
-        <Flex>
+        <Flex gap="4">
           <DirectionButton
             direction="previous"
             disabled={paginationState.pageIndex === 0 || isPaginationDisabled}
             onClick={previousPage}
-            css={{ mr: '$4' }}
           />
           <DirectionButton
             direction="next"

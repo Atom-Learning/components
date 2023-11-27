@@ -27,9 +27,7 @@ const getSizeVariant = (size) => ({
   fontSize: `$${size}`,
   px: px[size],
   minHeight: minHeight[size],
-  '& > *:not(:last-child)': {
-    mr: spacingBetweenElements[size]
-  }
+  gap: spacingBetweenElements[size]
 })
 
 export const StyledButton = styled(StyledItem, {

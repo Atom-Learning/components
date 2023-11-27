@@ -13,7 +13,7 @@ export const NavigationMenuVerticalItemContent = ({
   ...rest
 }: TNavigationMenuVerticalItemContentProps): JSX.Element => {
   return (
-    <Flex gap={2} align="center" {...rest}>
+    <Flex gap="2" align="center" {...rest}>
       {
         React.Children.map(children, (child) => {
           if (typeof child === 'string' || typeof child === 'number') {

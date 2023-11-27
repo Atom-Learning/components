@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { Box } from '~/components/box'
+import { Flex } from '~/components/flex'
 import { Checkbox } from '~/components/checkbox'
 import { InlineMessage } from '~/components/inline-message'
 import { Label } from '~/components/label'
@@ -29,7 +30,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
   label,
   required
 }) => (
-  <Box css={css}>
+  <Flex gap="2" direction="column" css={css}>
     <Label
       align={align}
       direction={direction}
@@ -51,11 +52,10 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
       ))}
       {label}
     </Label>
-    {error && <InlineMessage css={{ mt: '$2' }}>{error}</InlineMessage>}
+    {error && <InlineMessage>{error}</InlineMessage>}
     {description && (
       <Description
         css={{
-          mt: '$2',
           // calc required to get correct offset value
           [direction === 'reverse' ? 'mr' : 'ml']: 'calc($space$3 + $sizes$1)'
         }}
@@ -63,7 +63,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
         {description}
       </Description>
     )}
-  </Box>
+  </Flex>
 )
 
 InlineFieldWrapper.displayName = 'InlineFieldWrapper'

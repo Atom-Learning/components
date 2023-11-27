@@ -44,7 +44,7 @@ export const NavigationMenuVerticalAccordionTrigger = ({
           type="button"
           align="center"
           justify="space-between"
-          gap={3}
+          gap="3"
           ref={setTriggerRef}
         >
           <NavigationMenuVerticalItemContent>
