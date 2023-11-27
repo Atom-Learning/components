@@ -50,6 +50,22 @@ exports[`SelectField component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -82,24 +98,16 @@ exports[`SelectField component renders 1`] = `
   }
 }
 
-@media  {
-  .c-dhzjXW-iwHglP-css {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-3);
-  }
-}
-
 <div>
   <form
     aria-label="form"
     class="c-PJLV"
   >
     <div
-      class="c-PJLV"
+      class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+        class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"

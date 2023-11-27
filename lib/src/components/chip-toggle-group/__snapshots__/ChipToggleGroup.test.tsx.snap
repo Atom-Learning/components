@@ -45,19 +45,16 @@ exports[`ChipToggleGroup component renders 1`] = `
     display: none;
   }
 
-  .c-eOdeXL {
+  .c-dDnSgp {
     display: inline-flex;
     align-items: center;
     padding-left: var(--space-1);
     padding-right: var(--space-1);
     flex-grow: 1;
+    gap: var(--space-1);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .c-eOdeXL > *:not(:last-child) {
-    margin-right: var(--space-1);
   }
 
   .c-inNjp:not([disabled]) {
@@ -170,7 +167,7 @@ exports[`ChipToggleGroup component renders 1`] = `
         />
       </svg>
       <span
-        class="c-eOdeXL"
+        class="c-dDnSgp"
       >
         A
       </span>
@@ -197,7 +194,7 @@ exports[`ChipToggleGroup component renders 1`] = `
         />
       </svg>
       <span
-        class="c-eOdeXL"
+        class="c-dDnSgp"
       >
         B
       </span>
@@ -222,7 +219,7 @@ exports[`ChipToggleGroup component renders 1`] = `
         />
       </svg>
       <span
-        class="c-eOdeXL"
+        class="c-dDnSgp"
       >
         C
       </span>
@@ -249,7 +246,7 @@ exports[`ChipToggleGroup component renders 1`] = `
         />
       </svg>
       <span
-        class="c-eOdeXL"
+        class="c-dDnSgp"
       >
         D
       </span>

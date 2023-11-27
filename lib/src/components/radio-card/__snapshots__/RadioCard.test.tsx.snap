@@ -39,7 +39,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     width: 6px;
   }
 
-  .c-cgoenp {
+  .c-dOAWKZ {
     align-items: center;
     background: white;
     border: 1px solid var(--colors-tonal200);
@@ -47,9 +47,10 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     cursor: pointer;
     display: flex;
     text-align: left;
+    gap: var(--space-4);
   }
 
-  .c-cgoenp[data-state="checked"] {
+  .c-dOAWKZ[data-state="checked"] {
     outline: 2px solid var(--colors-primary);
     outline-offset: -2px;
   }
@@ -82,22 +83,18 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     margin-left: var(--space-3);
   }
 
-  .c-jCXneY-llEebI-align-left {
-    margin-right: var(--space-4);
-  }
-
-  .c-cgoenp-ejCoEP-align-left {
+  .c-dOAWKZ-ejCoEP-align-left {
     flex-direction: row;
   }
 
-  .c-cgoenp-fJrRuP-size-md {
+  .c-dOAWKZ-fJrRuP-size-md {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
   }
 
-  .c-cgoenp-djDtlJ-isFullWidth-false {
+  .c-dOAWKZ-djDtlJ-isFullWidth-false {
     width: max-content;
   }
 }
@@ -115,7 +112,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     >
       <button
         aria-checked="false"
-        class="c-cgoenp c-cgoenp-ejCoEP-align-left c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
+        class="c-dOAWKZ c-dOAWKZ-ejCoEP-align-left c-dOAWKZ-fJrRuP-size-md c-dOAWKZ-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="unchecked"
         role="radio"
@@ -124,7 +121,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         value="1"
       >
         <div
-          class="c-jCXneY c-jCXneY-llEebI-align-left"
+          class="c-jCXneY"
         />
         <div
           class="c-PJLV"
@@ -134,7 +131,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
       </button>
       <button
         aria-checked="true"
-        class="c-cgoenp c-cgoenp-ejCoEP-align-left c-cgoenp-fJrRuP-size-md c-cgoenp-djDtlJ-isFullWidth-false"
+        class="c-dOAWKZ c-dOAWKZ-ejCoEP-align-left c-dOAWKZ-fJrRuP-size-md c-dOAWKZ-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="checked"
         role="radio"
@@ -143,7 +140,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         value="2"
       >
         <div
-          class="c-jCXneY c-jCXneY-llEebI-align-left"
+          class="c-jCXneY"
         >
           <span
             class="c-iumWEe"

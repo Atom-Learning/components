@@ -415,6 +415,18 @@ exports[`DateInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-kaaUSm-dXsdwv-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -535,20 +547,14 @@ exports[`DateInput component renders lg size 1`] = `
     right: calc(var(--space-1)*-1);
   }
 
-  .c-dhzjXW-iePfWBT-css {
+  .c-dhzjXW-idNqCDY-css {
     height: var(--sizes-4);
-    align-items: center;
-    margin-bottom: var(--space-4);
   }
 
   .c-kaaUSm-ikwYYXS-css {
     padding-left: 0;
     padding-right: 0;
     color: var(--colors-tonal600);
-  }
-
-  .c-fPxPMR-ihbtntv-css {
-    margin-bottom: var(--space-3);
   }
 
   .c-dyvMgW-idQvJRf-css {

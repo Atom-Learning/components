@@ -1,11 +1,11 @@
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
-import { AsyncDataState } from './DataTable.types'
+import { OptionalVisuallyHiddenWrapper } from '../../utilities/optional-visually-hidden-wrapper'
 import { Flex } from '../flex'
 import { Label } from '../label'
-import { OptionalVisuallyHiddenWrapper } from '../../utilities/optional-visually-hidden-wrapper'
 import { SearchInput } from '../search-input'
+import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 
 type DataTableSearchProps = React.ComponentProps<typeof SearchInput> & {

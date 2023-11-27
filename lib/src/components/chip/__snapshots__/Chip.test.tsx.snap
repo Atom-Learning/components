@@ -24,19 +24,16 @@ exports[`Chip component renders 1`] = `
     pointer-events: none;
   }
 
-  .c-eOdeXL {
+  .c-dDnSgp {
     display: inline-flex;
     align-items: center;
     padding-left: var(--space-1);
     padding-right: var(--space-1);
     flex-grow: 1;
+    gap: var(--space-1);
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .c-eOdeXL > *:not(:last-child) {
-    margin-right: var(--space-1);
   }
 
   .c-dbrbZt {
@@ -92,7 +89,7 @@ exports[`Chip component renders 1`] = `
     class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md"
   >
     <span
-      class="c-eOdeXL"
+      class="c-dDnSgp"
     >
       <svg
         aria-hidden="true"

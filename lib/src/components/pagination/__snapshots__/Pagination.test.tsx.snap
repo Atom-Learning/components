@@ -310,11 +310,7 @@ exports[`Pagination component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-bVZtAj {
-    margin-right: var(--space-1);
-  }
-
-  .c-bVZtAj:disabled {
+  .c-dmknQf:disabled {
     opacity: 0.3;
   }
 
@@ -400,17 +396,13 @@ exports[`Pagination component renders 1`] = `
       animation-name: k-fvyGIa;
     }
 }
-
-  .c-bVVNNd {
-    margin-left: var(--space-1);
-  }
-
-  .c-bVVNNd:disabled {
-    opacity: 0.3;
-  }
 }
 
 @media  {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
   .c-iPabyW-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
@@ -420,10 +412,6 @@ exports[`Pagination component renders 1`] = `
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
-  }
-
-  .c-dhzjXW-hAhhEs-gap-1 {
-    gap: var(--space-1);
   }
 
   .c-fznDru-cVoMNQ-size-md {
@@ -470,11 +458,11 @@ exports[`Pagination component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW t-foghYE t-eGEuHI"
+    class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1 t-foghYE t-eGEuHI"
   >
     <button
       aria-label="Previous page"
-      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVZtAj"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-dmknQf"
       disabled=""
       type="button"
     >
@@ -549,7 +537,7 @@ exports[`Pagination component renders 1`] = `
     </div>
     <button
       aria-label="Next page"
-      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-bVVNNd"
+      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-dmknQf"
       type="button"
     >
       <svg

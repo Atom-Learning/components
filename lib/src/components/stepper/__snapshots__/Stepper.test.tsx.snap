@@ -32,20 +32,21 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     justify-content: space-between;
   }
 
-  .c-boNUgq {
+  .c-IpvYN {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
     align-items: center;
+    gap: var(--space-3);
   }
 
-  .c-boNUgq:not(:last-child)::after {
+  .c-IpvYN:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-boNUgq:focus-visible {
+  .c-IpvYN:focus-visible {
     outline: none;
   }
 
@@ -83,20 +84,20 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     flex-direction: row;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal {
+  .c-IpvYN-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-IpvYN-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
+  .c-IpvYN-eoIvAE-separator-default:not(:last-child)::after {
     background: var(--colors-tonal100);
   }
 
@@ -117,7 +118,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: white;
   }
 
-  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
+  .c-IpvYN-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
   }
 
@@ -132,7 +133,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
+  .c-IpvYN-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
@@ -145,13 +146,13 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     flex-direction: column;
   }
 
-  .c-boNUgq-bQZyjU-direction-vertical {
+  .c-IpvYN-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
   }
 
-  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
+  .c-IpvYN-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
@@ -201,49 +202,49 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-IpvYN-jCkdlW-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-IpvYN-jCkdlW-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
+  .c-IpvYN-jCkdlW-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :first-child {
+  .c-IpvYN-dKQwO-cv:hover :first-child {
     background: var(--colors-primaryMid);
     color: white !important;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :last-child {
+  .c-IpvYN-dKQwO-cv:hover :last-child {
     color: var(--colors-primaryMid);
   }
 
-  .c-boNUgq-dKQwO-cv:focus-visible :first-child {
+  .c-IpvYN-dKQwO-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
+  .c-IpvYN-iIblYT-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-IpvYN-fCshQK-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-IpvYN-fCshQK-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
+  .c-IpvYN-fCshQK-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -291,7 +292,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-boNUgq-jCkdlW-cv c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-bQZyjU-direction-vertical c-IpvYN-eoIvAE-separator-default c-IpvYN-jCkdlW-cv c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -303,7 +304,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-bQZyjU-direction-vertical c-IpvYN-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -314,7 +315,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-bQZyjU-direction-vertical c-IpvYN-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
@@ -367,20 +368,21 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     justify-content: space-between;
   }
 
-  .c-boNUgq {
+  .c-IpvYN {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
     align-items: center;
+    gap: var(--space-3);
   }
 
-  .c-boNUgq:not(:last-child)::after {
+  .c-IpvYN:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-boNUgq:focus-visible {
+  .c-IpvYN:focus-visible {
     outline: none;
   }
 
@@ -431,20 +433,20 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     flex-direction: row;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal {
+  .c-IpvYN-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-IpvYN-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
+  .c-IpvYN-eoIvAE-separator-default:not(:last-child)::after {
     background: var(--colors-tonal100);
   }
 
@@ -465,7 +467,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: white;
   }
 
-  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
+  .c-IpvYN-dGwPMl-separator-active:not(:last-child)::after {
     background: var(--colors-primary);
   }
 
@@ -480,7 +482,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
+  .c-IpvYN-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
@@ -493,21 +495,20 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     flex-direction: column;
   }
 
-  .c-boNUgq-bQZyjU-direction-vertical {
+  .c-IpvYN-bQZyjU-direction-vertical {
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
     flex-direction: row;
   }
 
-  .c-boNUgq-bQZyjU-direction-vertical:not(:last-child)::after {
+  .c-IpvYN-bQZyjU-direction-vertical:not(:last-child)::after {
     height: 100%;
     width: 4px;
     left: 14px;
     top: 50%;
   }
 
-  .c-ecBjWS-iwHyEI-direction-horizontal {
-    margin-top: var(--space-3);
+  .c-ecBjWS-gjdJOs-direction-horizontal {
     text-align: center;
   }
 
@@ -573,49 +574,49 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-IpvYN-jCkdlW-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-IpvYN-jCkdlW-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
+  .c-IpvYN-jCkdlW-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :first-child {
+  .c-IpvYN-dKQwO-cv:hover :first-child {
     background: var(--colors-primaryMid);
     color: white !important;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :last-child {
+  .c-IpvYN-dKQwO-cv:hover :last-child {
     color: var(--colors-primaryMid);
   }
 
-  .c-boNUgq-dKQwO-cv:focus-visible :first-child {
+  .c-IpvYN-dKQwO-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
+  .c-IpvYN-iIblYT-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-IpvYN-fCshQK-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-IpvYN-fCshQK-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
+  .c-IpvYN-fCshQK-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary) !important;
     outline-offset: 2px !important;
   }
@@ -667,7 +668,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-fruqQw-direction-horizontal c-IpvYN-fpjjDi-separator-success c-dhzjXW-ikOanEY-css"
         tabindex="0"
       >
         <div
@@ -688,14 +689,14 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           </svg>
         </div>
         <span
-          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-byQUqd-status-success"
+          class="c-ecBjWS c-ecBjWS-gjdJOs-direction-horizontal c-ecBjWS-byQUqd-status-success"
           id="step-0"
         >
           Step 1
         </span>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-fruqQw-direction-horizontal c-IpvYN-eoIvAE-separator-default c-dhzjXW-ikOanEY-css"
         tabindex="0"
       >
         <div
@@ -706,7 +707,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           2
         </div>
         <span
-          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-cDiHrO-status-active"
+          class="c-ecBjWS c-ecBjWS-gjdJOs-direction-horizontal c-ecBjWS-cDiHrO-status-active"
           id="step-1"
         >
           Step 2
@@ -755,20 +756,21 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     justify-content: space-between;
   }
 
-  .c-boNUgq {
+  .c-IpvYN {
     position: relative;
     font-family: var(--fonts-body);
     font-weight: 600;
     font-size: var(--fontSizes-md);
     align-items: center;
+    gap: var(--space-3);
   }
 
-  .c-boNUgq:not(:last-child)::after {
+  .c-IpvYN:not(:last-child)::after {
     content: "";
     position: absolute;
   }
 
-  .c-boNUgq:focus-visible {
+  .c-IpvYN:focus-visible {
     outline: none;
   }
 
@@ -806,20 +808,20 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     flex-direction: row;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal {
+  .c-IpvYN-fruqQw-direction-horizontal {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     flex-direction: column;
   }
 
-  .c-boNUgq-fruqQw-direction-horizontal:not(:last-child)::after {
+  .c-IpvYN-fruqQw-direction-horizontal:not(:last-child)::after {
     width: 100%;
     height: 4px;
     left: 50%;
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
+  .c-IpvYN-eoIvAE-separator-default:not(:last-child)::after {
     background: var(--colors-tonal100);
   }
 
@@ -878,16 +880,16 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     background: var(--colors-primaryDark);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-IpvYN-jCkdlW-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-IpvYN-jCkdlW-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
+  .c-IpvYN-jCkdlW-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary);
     outline-offset: 2px;
   }
@@ -931,7 +933,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-boNUgq-jCkdlW-cv c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-fruqQw-direction-horizontal c-IpvYN-eoIvAE-separator-default c-IpvYN-jCkdlW-cv c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
@@ -943,7 +945,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-fruqQw-direction-horizontal c-IpvYN-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
@@ -954,7 +956,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-IpvYN c-IpvYN-fruqQw-direction-horizontal c-IpvYN-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button

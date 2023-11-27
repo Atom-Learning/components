@@ -353,15 +353,14 @@ exports[`Accordion component renders an accordion 1`] = `
     }
 }
 
-  .c-lglaXW {
+  .c-fGHEql {
     width: 100%;
   }
 
-  .c-lglaXW:not(:last-child) {
-    margin-bottom: var(--space-1);
-  }
-
-  .c-fGHEql {
+  .c-dtKMix {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
     width: 100%;
   }
 }
@@ -376,10 +375,10 @@ exports[`Accordion component renders an accordion 1`] = `
 
 <div>
   <div
-    class="c-fGHEql"
+    class="c-dtKMix"
   >
     <div
-      class="c-lglaXW"
+      class="c-fGHEql"
       data-state="open"
     >
       <button
@@ -416,7 +415,7 @@ exports[`Accordion component renders an accordion 1`] = `
       </div>
     </div>
     <div
-      class="c-lglaXW"
+      class="c-fGHEql"
       data-state="closed"
     >
       <button

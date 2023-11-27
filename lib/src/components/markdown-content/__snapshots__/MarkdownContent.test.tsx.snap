@@ -2,40 +2,40 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-gvpzZh > *:not(:first-child) {
+  .c-kSPWtE > *:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-gvpzZh > *:not(:last-child) {
+  .c-kSPWtE > *:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-gvpzZh > .c-jryFOR {
+  .c-kSPWtE > .c-jryFOR {
     max-width: 65ch;
   }
 
-  .c-gvpzZh > .c-dyvMgW {
+  .c-kSPWtE > .c-dyvMgW {
     max-width: 75ch;
   }
 
-  .c-gvpzZh > .c-bBdCwN {
+  .c-kSPWtE > .c-iTpJUe {
     max-width: 75ch;
   }
 
-  .c-gvpzZh > .c-fNKiiB {
+  .c-kSPWtE > .c-fNKiiB {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-gvpzZh > .c-iSBxEZ {
+  .c-kSPWtE > .c-iSBxEZ {
     display: block;
   }
 
-  .c-gvpzZh > .c-iSBxEZ:not(:first-child) {
+  .c-kSPWtE > .c-iSBxEZ:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-gvpzZh > .c-iSBxEZ:not(:last-child) {
+  .c-kSPWtE > .c-iSBxEZ:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
@@ -69,19 +69,14 @@ exports[`MarkdownContent component renders 1`] = `
     font-style: italic;
   }
 
-  .c-bBdCwN {
+  .c-iTpJUe {
     list-style-position: inside;
     font-family: var(--fonts-body);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
     margin: unset;
     padding: unset;
-  }
-
-  .c-bBdCwN > .c-PJLV:not(:last-child) {
-    margin-bottom: var(--space-2);
-  }
-
-  .c-bBdCwN > .c-PJLV:last-child {
-    margin-bottom: 0;
   }
 
   .c-bUqGCm {
@@ -267,51 +262,51 @@ exports[`MarkdownContent component renders 1`] = `
     display: table;
   }
 
-  .c-bBdCwN-gvmVBy-size-md {
+  .c-iTpJUe-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::before {
+  .c-iTpJUe-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::after {
+  .c-iTpJUe-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-fmPQHp-noCapsize-true::before,
-  .c-bBdCwN-fmPQHp-noCapsize-true::after {
+  .c-iTpJUe-fmPQHp-noCapsize-true::before,
+  .c-iTpJUe-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
-  .c-bBdCwN-ldmvkx-as-ul {
+  .c-iTpJUe-ldmvkx-as-ul {
     padding-left: var(--space-3);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV {
     padding-left: var(--space-2);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV::marker {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV::marker {
     content: "• ";
     font-weight: bold;
   }
 
-  .c-bBdCwN-bEVto-as-ol {
+  .c-iTpJUe-bEVto-as-ol {
     padding-left: var(--space-4);
     list-style-type: decimal;
   }
 
-  .c-bBdCwN-bEVto-as-ol > .c-PJLV {
+  .c-iTpJUe-bEVto-as-ol > .c-PJLV {
     padding-left: var(--space-1);
   }
 
-  .c-bBdCwN-bEVto-as-ol > .c-PJLV::marker {
+  .c-iTpJUe-bEVto-as-ol > .c-PJLV::marker {
     font-size: .875em;
     font-weight: bold;
   }
@@ -339,19 +334,19 @@ exports[`MarkdownContent component renders 1`] = `
     width: 100%;
   }
 
-  .c-bBdCwN-idpBzHh-css p {
+  .c-iTpJUe-idpBzHh-css p {
     display: inline;
   }
 
-  .c-bBdCwN-idpBzHh-css p:before,
-  .c-bBdCwN-idpBzHh-css p:after {
+  .c-iTpJUe-idpBzHh-css p:before,
+  .c-iTpJUe-idpBzHh-css p:after {
     display: none;
   }
 }
 
 <div>
   <div
-    class="c-gvpzZh"
+    class="c-kSPWtE"
   >
     <hr
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
@@ -469,7 +464,7 @@ exports[`MarkdownContent component renders 1`] = `
       Unordered
     </h3>
     <ul
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
+      class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-idpBzHh-css"
     >
       <li
         class="c-PJLV"
@@ -506,7 +501,7 @@ exports[`MarkdownContent component renders 1`] = `
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
+          class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-idpBzHh-css"
         >
           <li
             class="c-PJLV"
@@ -517,7 +512,7 @@ exports[`MarkdownContent component renders 1`] = `
               Marker character change forces new list start:
             </p>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
+              class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -530,7 +525,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
+              class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -543,7 +538,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
+              class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -574,7 +569,7 @@ exports[`MarkdownContent component renders 1`] = `
       Ordered
     </h3>
     <ol
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-idpBzHh-css"
+      class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-bEVto-as-ol c-iTpJUe-idpBzHh-css"
     >
       <li
         class="c-PJLV"

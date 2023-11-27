@@ -2,6 +2,10 @@
 
 exports[`DataTable EmptyState renders custom empty state 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -81,10 +85,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-ihQtuj {
@@ -356,14 +356,11 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     z-index: 1;
   }
 
-  .c-QtuIU {
+  .c-dBYKYU {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  .c-QtuIU > *:last-child {
-    margin-bottom: 0;
+    gap: var(--space-4);
   }
 
   .c-eyOYLV {
@@ -380,6 +377,14 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -448,6 +453,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     color: var(--colors-tonal600);
   }
 
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
@@ -469,6 +478,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
   .c-hqoSmB-cGAtlD-size-sm {
     background-position: right var(--space-2) top 50%, 0 0;
     background-size: 18px auto, 100%;
@@ -476,6 +489,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-2);
     padding-right: var(--space-5);
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
   }
 
   .c-iPabyW-PrXKS-size-md {
@@ -523,6 +540,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-bZmKkd-justify-flex-end {
+    justify-content: flex-end;
+  }
+
   .c-jMrbLF-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -556,6 +577,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     background: var(--colors-blue100) !important;
   }
 
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -563,18 +588,16 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin-right: 2px;
   }
 
-  .c-QtuIU-gtyVWU-size-sm {
+  .c-dBYKYU-gtyVWU-size-sm {
     padding: var(--space-3);
   }
 
-  .c-eyOYLV-gNjhJG-size-sm {
+  .c-eyOYLV-kWyXas-size-sm {
     font-size: var(--fontSizes-md);
-    margin-bottom: var(--space-3);
   }
 
-  .c-cXdTNb-kSBam-size-sm {
+  .c-cXdTNb-fAKXXr-size-sm {
     font-size: var(--fontSizes-sm);
-    margin-bottom: var(--space-4);
   }
 }
 
@@ -664,10 +687,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-ihbtntv-css {
-    margin-bottom: var(--space-3);
-  }
-
   .c-PJLV-ihDGYkC-css {
     position: relative;
     height: max-content;
@@ -693,10 +712,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     cursor: initial;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
   .c-dyvMgW-iwvqwk-css {
     padding-right: var(--space-4);
   }
@@ -707,36 +722,26 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     }
 }
 
-  .c-dhzjXW-icVHJya-css {
-    justify-content: space-between;
+  .c-dhzjXW-iiNiZFg-css {
     width: 100%;
   }
 
 @media (min-width: 550px) {
-    .c-dhzjXW-icVHJya-css {
+    .c-dhzjXW-iiNiZFg-css {
       flex-basis: 50%;
     }
 }
 
-  .c-hqoSmB-ihbpiMz-css {
-    margin-right: var(--space-3);
-  }
-
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-iPabyW-illEebI-css {
-    margin-right: var(--space-4);
   }
 
   .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
-  .c-dhzjXW-iczouOI-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    align-items: center;
   }
 
   .c-dbrbZt-ifwENwN-css {
@@ -750,11 +755,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
   .c-dyvMgW-iecBjWS-css {
     font-weight: 600;
-  }
-
-  .c-dhzjXW-ijTlYpr-css {
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .c-jhJxGZ-iigvUvR-css {
@@ -804,10 +804,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     right: var(--space-1);
   }
 
-  .c-dhzjXW-ibICGYT-css {
-    justify-content: center;
-  }
-
   .c-cwQMhQ-igyXmJO-css {
     margin-bottom: var(--space-4);
     opacity: 0.5;
@@ -844,15 +840,15 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
+    class="c-dhzjXW c-dBYKYU c-dBYKYU-gtyVWU-size-sm"
   >
     <h2
-      class="c-eyOYLV c-eyOYLV-gNjhJG-size-sm"
+      class="c-eyOYLV c-eyOYLV-kWyXas-size-sm"
     >
       No data available
     </h2>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-fAKXXr-size-sm"
     >
       Something is missing
     </p>
@@ -868,6 +864,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
 exports[`DataTable component Renders drag handles for draggable table rows 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -947,10 +947,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-ihQtuj {
@@ -1111,6 +1107,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -1179,6 +1183,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     color: var(--colors-tonal600);
   }
 
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
@@ -1200,6 +1208,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: table;
   }
 
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
   .c-hqoSmB-cGAtlD-size-sm {
     background-position: right var(--space-2) top 50%, 0 0;
     background-size: 18px auto, 100%;
@@ -1207,6 +1219,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     height: var(--sizes-3);
     padding-left: var(--space-2);
     padding-right: var(--space-5);
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
   }
 
   .c-iPabyW-PrXKS-size-md {
@@ -1270,10 +1286,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 }
 
 @media  {
-  .c-cVSpVL-ihbtntv-css {
-    margin-bottom: var(--space-3);
-  }
-
   .c-PJLV-ihDGYkC-css {
     position: relative;
     height: max-content;
@@ -1299,10 +1311,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     cursor: initial;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
   .c-dyvMgW-iwvqwk-css {
     padding-right: var(--space-4);
   }
@@ -1313,36 +1321,26 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     }
 }
 
-  .c-dhzjXW-icVHJya-css {
-    justify-content: space-between;
+  .c-dhzjXW-iiNiZFg-css {
     width: 100%;
   }
 
 @media (min-width: 550px) {
-    .c-dhzjXW-icVHJya-css {
+    .c-dhzjXW-iiNiZFg-css {
       flex-basis: 50%;
     }
 }
 
-  .c-hqoSmB-ihbpiMz-css {
-    margin-right: var(--space-3);
-  }
-
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-iPabyW-illEebI-css {
-    margin-right: var(--space-4);
   }
 
   .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
-  .c-dhzjXW-iczouOI-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    align-items: center;
   }
 
   .c-dbrbZt-ifwENwN-css {
@@ -1388,7 +1386,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             id
           </div>
@@ -1397,7 +1395,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Name
           </div>
@@ -1406,7 +1404,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             hobby
           </div>
@@ -1415,7 +1413,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
           class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Actions
           </div>
@@ -2367,6 +2365,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 
 exports[`DataTable component renders 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -2446,10 +2448,6 @@ exports[`DataTable component renders 1`] = `
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-ihQtuj {
@@ -2596,6 +2594,14 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -2664,6 +2670,10 @@ exports[`DataTable component renders 1`] = `
     color: var(--colors-tonal600);
   }
 
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
@@ -2685,6 +2695,10 @@ exports[`DataTable component renders 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
   .c-hqoSmB-cGAtlD-size-sm {
     background-position: right var(--space-2) top 50%, 0 0;
     background-size: 18px auto, 100%;
@@ -2692,6 +2706,10 @@ exports[`DataTable component renders 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-2);
     padding-right: var(--space-5);
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
   }
 
   .c-iPabyW-PrXKS-size-md {
@@ -2726,10 +2744,6 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-ihbtntv-css {
-    margin-bottom: var(--space-3);
-  }
-
   .c-PJLV-ihDGYkC-css {
     position: relative;
     height: max-content;
@@ -2755,10 +2769,6 @@ exports[`DataTable component renders 1`] = `
     cursor: initial;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
   .c-dyvMgW-iwvqwk-css {
     padding-right: var(--space-4);
   }
@@ -2769,27 +2779,18 @@ exports[`DataTable component renders 1`] = `
     }
 }
 
-  .c-dhzjXW-icVHJya-css {
-    justify-content: space-between;
+  .c-dhzjXW-iiNiZFg-css {
     width: 100%;
   }
 
 @media (min-width: 550px) {
-    .c-dhzjXW-icVHJya-css {
+    .c-dhzjXW-iiNiZFg-css {
       flex-basis: 50%;
     }
 }
 
-  .c-hqoSmB-ihbpiMz-css {
-    margin-right: var(--space-3);
-  }
-
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-iPabyW-illEebI-css {
-    margin-right: var(--space-4);
   }
 
   .c-jhJxGZ-igsmDXe-css {
@@ -2798,36 +2799,40 @@ exports[`DataTable component renders 1`] = `
 }
 
 <div>
-  <label
-    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
-    for="User search"
-  >
-    User search
-  </label>
   <div
-    class="c-PJLV c-PJLV-ihDGYkC-css"
+    class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3"
   >
-    <input
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-      name="User search"
-      type="search"
-      value=""
-    />
-    <svg
-      aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <label
+      class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+      for="User search"
     >
-      <path
-        d="M14.412 14.412 20 20"
+      User search
+    </label>
+    <div
+      class="c-PJLV c-PJLV-ihDGYkC-css"
+    >
+      <input
+        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+        name="User search"
+        type="search"
+        value=""
       />
-      <circle
-        cx="10"
-        cy="10"
-        r="6"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.412 14.412 20 20"
+        />
+        <circle
+          cx="10"
+          cy="10"
+          r="6"
+        />
+      </svg>
+    </div>
   </div>
   <table
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
@@ -2842,7 +2847,7 @@ exports[`DataTable component renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             id
           </div>
@@ -2851,7 +2856,7 @@ exports[`DataTable component renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Name
           </div>
@@ -2860,7 +2865,7 @@ exports[`DataTable component renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             hobby
           </div>
@@ -2869,7 +2874,7 @@ exports[`DataTable component renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Actions
           </div>
@@ -3150,13 +3155,13 @@ exports[`DataTable component renders 1`] = `
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW c-dhzjXW-icVHJya-css"
+      class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-iiNiZFg-css"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+        class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3"
       >
         <select
-          class="c-hqoSmB c-hqoSmB-cGAtlD-size-sm c-hqoSmB-ihbpiMz-css"
+          class="c-hqoSmB c-hqoSmB-cGAtlD-size-sm"
         >
           <option
             value="0"
@@ -3176,11 +3181,11 @@ exports[`DataTable component renders 1`] = `
         </p>
       </div>
       <div
-        class="c-dhzjXW"
+        class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4"
       >
         <button
           aria-label="Previous page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-iPabyW-illEebI-css c-PJLV"
+          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-PJLV"
           data-state="closed"
           disabled=""
           name="Previous page"
@@ -3223,6 +3228,10 @@ exports[`DataTable component renders 1`] = `
 
 exports[`DataTable server-side renders 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -3302,10 +3311,6 @@ exports[`DataTable server-side renders 1`] = `
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-ihQtuj {
@@ -3579,6 +3584,14 @@ exports[`DataTable server-side renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -3647,6 +3660,10 @@ exports[`DataTable server-side renders 1`] = `
     color: var(--colors-tonal600);
   }
 
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
@@ -3668,6 +3685,10 @@ exports[`DataTable server-side renders 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
   .c-hqoSmB-cGAtlD-size-sm {
     background-position: right var(--space-2) top 50%, 0 0;
     background-size: 18px auto, 100%;
@@ -3675,6 +3696,10 @@ exports[`DataTable server-side renders 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-2);
     padding-right: var(--space-5);
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
   }
 
   .c-iPabyW-PrXKS-size-md {
@@ -3722,6 +3747,10 @@ exports[`DataTable server-side renders 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-bZmKkd-justify-flex-end {
+    justify-content: flex-end;
+  }
+
   .c-jMrbLF-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -3753,6 +3782,10 @@ exports[`DataTable server-side renders 1`] = `
 
   .c-gyYKPo-hHLxyG-isSelected-true {
     background: var(--colors-blue100) !important;
+  }
+
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
   }
 
   .c-jBOHFZ-jIYkAt-size-md {
@@ -3849,10 +3882,6 @@ exports[`DataTable server-side renders 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-ihbtntv-css {
-    margin-bottom: var(--space-3);
-  }
-
   .c-PJLV-ihDGYkC-css {
     position: relative;
     height: max-content;
@@ -3878,10 +3907,6 @@ exports[`DataTable server-side renders 1`] = `
     cursor: initial;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
   .c-dyvMgW-iwvqwk-css {
     padding-right: var(--space-4);
   }
@@ -3892,36 +3917,26 @@ exports[`DataTable server-side renders 1`] = `
     }
 }
 
-  .c-dhzjXW-icVHJya-css {
-    justify-content: space-between;
+  .c-dhzjXW-iiNiZFg-css {
     width: 100%;
   }
 
 @media (min-width: 550px) {
-    .c-dhzjXW-icVHJya-css {
+    .c-dhzjXW-iiNiZFg-css {
       flex-basis: 50%;
     }
 }
 
-  .c-hqoSmB-ihbpiMz-css {
-    margin-right: var(--space-3);
-  }
-
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-iPabyW-illEebI-css {
-    margin-right: var(--space-4);
   }
 
   .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
-  .c-dhzjXW-iczouOI-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    align-items: center;
   }
 
   .c-dbrbZt-ifwENwN-css {
@@ -3935,11 +3950,6 @@ exports[`DataTable server-side renders 1`] = `
 
   .c-dyvMgW-iecBjWS-css {
     font-weight: 600;
-  }
-
-  .c-dhzjXW-ijTlYpr-css {
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .c-jhJxGZ-iigvUvR-css {
@@ -3989,10 +3999,6 @@ exports[`DataTable server-side renders 1`] = `
     right: var(--space-1);
   }
 
-  .c-dhzjXW-ibICGYT-css {
-    justify-content: center;
-  }
-
   .c-cwQMhQ-igyXmJO-css {
     margin-bottom: var(--space-4);
     opacity: 0.5;
@@ -4002,32 +4008,36 @@ exports[`DataTable server-side renders 1`] = `
 }
 
 <div>
-  <label
-    class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
-  />
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3"
   >
-    <input
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-      type="search"
-      value=""
+    <label
+      class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
     />
-    <svg
-      aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      class="c-PJLV c-PJLV-ieFlhpX-css"
     >
-      <path
-        d="M14.412 14.412 20 20"
+      <input
+        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+        type="search"
+        value=""
       />
-      <circle
-        cx="10"
-        cy="10"
-        r="6"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.412 14.412 20 20"
+        />
+        <circle
+          cx="10"
+          cy="10"
+          r="6"
+        />
+      </svg>
+    </div>
   </div>
   <table
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
@@ -4042,7 +4052,7 @@ exports[`DataTable server-side renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             id
           </div>
@@ -4051,7 +4061,7 @@ exports[`DataTable server-side renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Name
           </div>
@@ -4060,7 +4070,7 @@ exports[`DataTable server-side renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             hobby
           </div>
@@ -4069,7 +4079,7 @@ exports[`DataTable server-side renders 1`] = `
           class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
         >
           <div
-            class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+            class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
           >
             Actions
           </div>
@@ -4350,13 +4360,13 @@ exports[`DataTable server-side renders 1`] = `
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW c-dhzjXW-icVHJya-css"
+      class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-iiNiZFg-css"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+        class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3"
       >
         <select
-          class="c-hqoSmB c-hqoSmB-cGAtlD-size-sm c-hqoSmB-ihbpiMz-css"
+          class="c-hqoSmB c-hqoSmB-cGAtlD-size-sm"
         >
           <option
             value="0"
@@ -4376,11 +4386,11 @@ exports[`DataTable server-side renders 1`] = `
         </p>
       </div>
       <div
-        class="c-dhzjXW"
+        class="c-dhzjXW c-dhzjXW-gkvzBZ-gap-4"
       >
         <button
           aria-label="Previous page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-iPabyW-illEebI-css c-PJLV"
+          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-PJLV"
           data-state="closed"
           disabled=""
           name="Previous page"
@@ -4423,6 +4433,10 @@ exports[`DataTable server-side renders 1`] = `
 
 exports[`DataTable sticky columns renders 1`] = `
 @media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -4502,10 +4516,6 @@ exports[`DataTable sticky columns renders 1`] = `
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
-  }
-
-  .c-dhzjXW {
-    display: flex;
   }
 
   .c-ihQtuj {
@@ -4779,6 +4789,14 @@ exports[`DataTable sticky columns renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -4847,6 +4865,10 @@ exports[`DataTable sticky columns renders 1`] = `
     color: var(--colors-tonal600);
   }
 
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
     background: white;
   }
@@ -4868,6 +4890,10 @@ exports[`DataTable sticky columns renders 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
   .c-hqoSmB-cGAtlD-size-sm {
     background-position: right var(--space-2) top 50%, 0 0;
     background-size: 18px auto, 100%;
@@ -4875,6 +4901,10 @@ exports[`DataTable sticky columns renders 1`] = `
     height: var(--sizes-3);
     padding-left: var(--space-2);
     padding-right: var(--space-5);
+  }
+
+  .c-dhzjXW-gkvzBZ-gap-4 {
+    gap: var(--space-4);
   }
 
   .c-iPabyW-PrXKS-size-md {
@@ -4922,6 +4952,10 @@ exports[`DataTable sticky columns renders 1`] = `
     display: table;
   }
 
+  .c-dhzjXW-bZmKkd-justify-flex-end {
+    justify-content: flex-end;
+  }
+
   .c-jMrbLF-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
@@ -4955,6 +4989,10 @@ exports[`DataTable sticky columns renders 1`] = `
     background: var(--colors-blue100) !important;
   }
 
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -4964,10 +5002,6 @@ exports[`DataTable sticky columns renders 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-ihbtntv-css {
-    margin-bottom: var(--space-3);
-  }
-
   .c-PJLV-ihDGYkC-css {
     position: relative;
     height: max-content;
@@ -4993,10 +5027,6 @@ exports[`DataTable sticky columns renders 1`] = `
     cursor: initial;
   }
 
-  .c-dhzjXW-ijroWjL-css {
-    align-items: center;
-  }
-
   .c-dyvMgW-iwvqwk-css {
     padding-right: var(--space-4);
   }
@@ -5007,36 +5037,26 @@ exports[`DataTable sticky columns renders 1`] = `
     }
 }
 
-  .c-dhzjXW-icVHJya-css {
-    justify-content: space-between;
+  .c-dhzjXW-iiNiZFg-css {
     width: 100%;
   }
 
 @media (min-width: 550px) {
-    .c-dhzjXW-icVHJya-css {
+    .c-dhzjXW-iiNiZFg-css {
       flex-basis: 50%;
     }
 }
 
-  .c-hqoSmB-ihbpiMz-css {
-    margin-right: var(--space-3);
-  }
-
   .c-dyvMgW-igbZjeK-css {
     flex: none;
-  }
-
-  .c-iPabyW-illEebI-css {
-    margin-right: var(--space-4);
   }
 
   .c-jhJxGZ-igsmDXe-css {
     cursor: pointer;
   }
 
-  .c-dhzjXW-iczouOI-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    align-items: center;
   }
 
   .c-dbrbZt-ifwENwN-css {
@@ -5050,11 +5070,6 @@ exports[`DataTable sticky columns renders 1`] = `
 
   .c-dyvMgW-iecBjWS-css {
     font-weight: 600;
-  }
-
-  .c-dhzjXW-ijTlYpr-css {
-    justify-content: flex-end;
-    align-items: center;
   }
 
   .c-jhJxGZ-iigvUvR-css {
@@ -5102,10 +5117,6 @@ exports[`DataTable sticky columns renders 1`] = `
     top: 50%;
     transform: translateY(-50%);
     right: var(--space-1);
-  }
-
-  .c-dhzjXW-ibICGYT-css {
-    justify-content: center;
   }
 
   .c-cwQMhQ-igyXmJO-css {
@@ -5160,7 +5171,7 @@ exports[`DataTable sticky columns renders 1`] = `
             class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
             >
               id
             </div>
@@ -5169,7 +5180,7 @@ exports[`DataTable sticky columns renders 1`] = `
             class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
             >
               Name
             </div>
@@ -5178,7 +5189,7 @@ exports[`DataTable sticky columns renders 1`] = `
             class="c-jhJxGZ c-jhJxGZ-igsmDXe-css"
           >
             <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
             >
               hobby
             </div>
@@ -5187,7 +5198,7 @@ exports[`DataTable sticky columns renders 1`] = `
             class="c-jhJxGZ c-jhJxGZ-ifYtQLP-css"
           >
             <div
-              class="c-dhzjXW c-dhzjXW-ijroWjL-css"
+              class="c-dhzjXW c-dhzjXW-jroWjL-align-center"
             >
               Actions
             </div>

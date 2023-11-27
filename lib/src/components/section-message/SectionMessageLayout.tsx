@@ -1,7 +1,9 @@
 import React from 'react'
+
 import { styled } from '~/stitches'
-import { Flex } from '../flex'
+
 import { Box } from '../box'
+import { Flex } from '../flex'
 import { Stack } from '../stack'
 
 export const SectionMessageContent = styled(Flex, {

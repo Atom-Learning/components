@@ -30,6 +30,10 @@ exports[`Loader component renders a loader 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -38,15 +42,9 @@ exports[`Loader component renders a loader 1`] = `
   }
 }
 
-@media  {
-  .c-dhzjXW-ibICGYT-css {
-    justify-content: center;
-  }
-}
-
 <div>
   <div
-    class="c-dhzjXW c-dhzjXW-ibICGYT-css"
+    class="c-dhzjXW c-dhzjXW-bICGYT-justify-center"
     role="alert"
   >
     <span

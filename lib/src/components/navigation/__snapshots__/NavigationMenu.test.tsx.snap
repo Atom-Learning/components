@@ -317,14 +317,15 @@ exports[`Nav component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-lfFbYU {
+  .c-ddkBKt {
     display: flex;
     align-items: center;
     border-radius: var(--radii-1);
+    gap: var(--space-1);
     justify-content: space-between;
   }
 
-  .c-lfFbYU[data-state="open"] {
+  .c-ddkBKt[data-state="open"] {
     background: var(--colors-triggerBackgroundOpen);
   }
 
@@ -455,6 +456,10 @@ exports[`Nav component renders 1`] = `
     stroke-width: 1.5;
   }
 
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
   .c-dyvMgW-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -494,16 +499,12 @@ exports[`Nav component renders 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-ihxkArn-css {
-    margin-left: var(--space-1);
-  }
-
-  [data-state=open] .c-dbrbZt-ihxkArn-css {
+  [data-state=open] .c-dbrbZt-iBlUzV-css {
     transform: rotate(-180deg);
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-dbrbZt-ihxkArn-css {
+    .c-dbrbZt-iBlUzV-css {
       transition: transform .2s ease;
     }
 }
@@ -518,10 +519,6 @@ exports[`Nav component renders 1`] = `
 
   .c-jQFjpB-ikEdNcB-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
-  }
-
-  .c-dhzjXW-iiTKOFX-css {
-    flex-direction: column;
   }
 }
 
@@ -555,7 +552,7 @@ exports[`Nav component renders 1`] = `
           <button
             aria-controls="radix-2-content-1"
             aria-expanded="true"
-            class="c-gvhYwV c-lfFbYU"
+            class="c-gvhYwV c-ddkBKt"
             data-radix-collection-item=""
             data-state="open"
             id="radix-2-trigger-1"
@@ -563,7 +560,7 @@ exports[`Nav component renders 1`] = `
             Theme
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihxkArn-css"
+              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iBlUzV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -612,7 +609,7 @@ exports[`Nav component renders 1`] = `
                 target="_blank"
               >
                 <div
-                  class="c-dhzjXW c-dhzjXW-iiTKOFX-css"
+                  class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column"
                 >
                   <p
                     class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-BFpiU"

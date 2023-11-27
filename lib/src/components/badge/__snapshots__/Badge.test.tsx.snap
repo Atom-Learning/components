@@ -258,17 +258,14 @@ exports[`Badge component renders 1`] = `
     display: flex;
   }
 
-  .c-lkWDnA {
+  .c-fcfKea {
     justify-content: center;
     align-items: center;
     border-radius: var(--radii-0);
     min-width: 0;
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
-  }
-
-  .c-lkWDnA > *:not(:last-child) {
-    margin-right: var(--space-1);
+    gap: var(--space-1);
   }
 
   .c-dyvMgW {
@@ -289,12 +286,12 @@ exports[`Badge component renders 1`] = `
 }
 
 @media  {
-  .c-lkWDnA-gichzl-emphasis-subtle {
+  .c-fcfKea-gichzl-emphasis-subtle {
     color: var(--colors-textSubtle);
     background: var(--colors-backgroundSubtle);
   }
 
-  .c-lkWDnA-dvmlHl-size-sm {
+  .c-fcfKea-dvmlHl-size-sm {
     padding-left: var(--space-1);
     padding-right: var(--space-1);
     padding-top: var(--space-0);
@@ -330,7 +327,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
+    class="c-dhzjXW c-fcfKea c-fcfKea-gichzl-emphasis-subtle c-fcfKea-dvmlHl-size-sm t-bYtrHU"
     role="status"
   >
     <p
@@ -607,17 +604,14 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     display: flex;
   }
 
-  .c-lkWDnA {
+  .c-fcfKea {
     justify-content: center;
     align-items: center;
     border-radius: var(--radii-0);
     min-width: 0;
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
-  }
-
-  .c-lkWDnA > *:not(:last-child) {
-    margin-right: var(--space-1);
+    gap: var(--space-1);
   }
 
   .c-dyvMgW {
@@ -638,12 +632,12 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 }
 
 @media  {
-  .c-lkWDnA-gichzl-emphasis-subtle {
+  .c-fcfKea-gichzl-emphasis-subtle {
     color: var(--colors-textSubtle);
     background: var(--colors-backgroundSubtle);
   }
 
-  .c-lkWDnA-dvmlHl-size-sm {
+  .c-fcfKea-dvmlHl-size-sm {
     padding-left: var(--space-1);
     padding-right: var(--space-1);
     padding-top: var(--space-0);
@@ -676,7 +670,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     white-space: wrap;
   }
 
-  .c-lkWDnA-iPuTML-size-md {
+  .c-fcfKea-iPuTML-size-md {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     padding-top: var(--space-1);
@@ -686,7 +680,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-iPuTML-size-md t-dgJqaz"
+    class="c-dhzjXW c-fcfKea c-fcfKea-gichzl-emphasis-subtle c-fcfKea-iPuTML-size-md t-dgJqaz"
     role="status"
   >
     <p
@@ -963,17 +957,14 @@ exports[`Badge component renders with an icon 1`] = `
     display: flex;
   }
 
-  .c-lkWDnA {
+  .c-fcfKea {
     justify-content: center;
     align-items: center;
     border-radius: var(--radii-0);
     min-width: 0;
     border: 1px solid #FFFFFF;
     font-family: var(--fonts-body);
-  }
-
-  .c-lkWDnA > *:not(:last-child) {
-    margin-right: var(--space-1);
+    gap: var(--space-1);
   }
 
   .c-dyvMgW {
@@ -1007,12 +998,12 @@ exports[`Badge component renders with an icon 1`] = `
 }
 
 @media  {
-  .c-lkWDnA-gichzl-emphasis-subtle {
+  .c-fcfKea-gichzl-emphasis-subtle {
     color: var(--colors-textSubtle);
     background: var(--colors-backgroundSubtle);
   }
 
-  .c-lkWDnA-dvmlHl-size-sm {
+  .c-fcfKea-dvmlHl-size-sm {
     padding-left: var(--space-1);
     padding-right: var(--space-1);
     padding-top: var(--space-0);
@@ -1045,7 +1036,7 @@ exports[`Badge component renders with an icon 1`] = `
     white-space: wrap;
   }
 
-  .c-lkWDnA-iPuTML-size-md {
+  .c-fcfKea-iPuTML-size-md {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     padding-top: var(--space-1);
@@ -1061,7 +1052,7 @@ exports[`Badge component renders with an icon 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
+    class="c-dhzjXW c-fcfKea c-fcfKea-gichzl-emphasis-subtle c-fcfKea-dvmlHl-size-sm t-bYtrHU"
     role="status"
   >
     <svg

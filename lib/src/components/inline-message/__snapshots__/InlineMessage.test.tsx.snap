@@ -6,6 +6,10 @@ exports[`InlineMessage component renders an inline message 1`] = `
     display: flex;
   }
 
+  .c-kdofoX {
+    gap: var(--space-2);
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -15,9 +19,8 @@ exports[`InlineMessage component renders an inline message 1`] = `
     vertical-align: middle;
   }
 
-  .c-fzYfTW {
+  .c-lnwwct {
     flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -33,7 +36,7 @@ exports[`InlineMessage component renders an inline message 1`] = `
 }
 
 @media  {
-  .c-PJLV-iymbh-theme-error {
+  .c-kdofoX-iymbh-theme-error {
     color: var(--colors-danger);
   }
 
@@ -69,11 +72,11 @@ exports[`InlineMessage component renders an inline message 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error"
+    class="c-dhzjXW c-kdofoX c-kdofoX-iymbh-theme-error"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-lnwwct"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

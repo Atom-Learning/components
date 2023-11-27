@@ -50,6 +50,10 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 400;
   }
 
+  .c-kdofoX {
+    gap: var(--space-2);
+  }
+
   .c-dbrbZt {
     display: inline-block;
     fill: none;
@@ -59,9 +63,8 @@ exports[`InputField component renders a field in error state 1`] = `
     vertical-align: middle;
   }
 
-  .c-fzYfTW {
+  .c-lnwwct {
     flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -77,6 +80,22 @@ exports[`InputField component renders a field in error state 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -109,7 +128,7 @@ exports[`InputField component renders a field in error state 1`] = `
     border: 1px solid var(--colors-danger);
   }
 
-  .c-PJLV-iymbh-theme-error {
+  .c-kdofoX-iymbh-theme-error {
     color: var(--colors-danger);
   }
 
@@ -138,20 +157,10 @@ exports[`InputField component renders a field in error state 1`] = `
 }
 
 @media  {
-  .c-PJLV-ikLAKdM-css {
+  .c-dhzjXW-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
-  }
-
-  .c-dhzjXW-iwHglP-css {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-3);
-  }
-
-  .c-dhzjXW-ijkHUQU-css {
-    margin-top: var(--space-2);
   }
 
   .c-dyvMgW-iiTbKsx-css {
@@ -165,10 +174,10 @@ exports[`InputField component renders a field in error state 1`] = `
     class="c-PJLV"
   >
     <div
-      class="c-PJLV"
+      class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+        class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
@@ -190,11 +199,11 @@ exports[`InputField component renders a field in error state 1`] = `
         type="text"
       />
       <div
-        class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
+        class="c-dhzjXW c-kdofoX c-kdofoX-iymbh-theme-error"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-lnwwct"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -275,6 +284,22 @@ exports[`InputField component renders a field with a number input 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -305,16 +330,10 @@ exports[`InputField component renders a field with a number input 1`] = `
 }
 
 @media  {
-  .c-PJLV-ikLAKdM-css {
+  .c-dhzjXW-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
-  }
-
-  .c-dhzjXW-iwHglP-css {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-3);
   }
 }
 
@@ -324,10 +343,10 @@ exports[`InputField component renders a field with a number input 1`] = `
     class="c-PJLV"
   >
     <div
-      class="c-PJLV c-PJLV-ikLAKdM-css"
+      class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-ikLAKdM-css"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+        class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
@@ -396,6 +415,22 @@ exports[`InputField component renders a field with a text input 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -426,16 +461,10 @@ exports[`InputField component renders a field with a text input 1`] = `
 }
 
 @media  {
-  .c-PJLV-ikLAKdM-css {
+  .c-dhzjXW-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
-  }
-
-  .c-dhzjXW-iwHglP-css {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-3);
   }
 }
 
@@ -445,10 +474,10 @@ exports[`InputField component renders a field with a text input 1`] = `
     class="c-PJLV"
   >
     <div
-      class="c-PJLV c-PJLV-ikLAKdM-css"
+      class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-ikLAKdM-css"
     >
       <div
-        class="c-dhzjXW c-dhzjXW-iwHglP-css"
+        class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center"
       >
         <label
           class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"

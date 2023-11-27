@@ -1009,6 +1009,10 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     top: var(--space-4);
     right: var(--space-4);
   }
+
+  .c-cBoNQA-cRYaBy-hasDismiss-true {
+    margin-right: var(--space-6);
+  }
 }
 
 @media  {
@@ -1097,10 +1101,6 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
   .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
-
-  .c-cBoNQA-cRYaBy-cv {
-    margin-right: var(--space-6);
-  }
 }
 
 @media  {
@@ -1127,7 +1127,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
         />
       </div>
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-cBoNQA c-cBoNQA-cRYaBy-cv"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-cBoNQA c-cBoNQA-cRYaBy-hasDismiss-true"
       >
         Link your Prime and Nucleus accounts to see all your information in one place.
       </p>
@@ -1640,6 +1640,10 @@ exports[`BannerSlim component renders sm variant 1`] = `
     top: var(--space-4);
     right: var(--space-4);
   }
+
+  .c-cBoNQA-cRYaBy-hasDismiss-true {
+    margin-right: var(--space-6);
+  }
 }
 
 @media  {
@@ -1727,10 +1731,6 @@ exports[`BannerSlim component renders sm variant 1`] = `
 
   .c-iPabyW-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-cBoNQA-cRYaBy-cv {
-    margin-right: var(--space-6);
   }
 }
 

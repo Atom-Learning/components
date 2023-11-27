@@ -100,25 +100,12 @@ exports[`ToggleGroup renders 1`] = `
     justify-content: flex-start;
   }
 
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
-  .c-gxXeKS-fKibdn-size-sm {
+  .c-gxXeKS-hLnLbd-size-sm {
     font-size: var(--fontSizes-sm);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     min-height: 32px;
-  }
-
-  .c-gxXeKS-fKibdn-size-sm > *:not(:last-child) {
-    margin-right: var(--space-2);
+    gap: var(--space-2);
   }
 
   .c-dbrbZt-cyeZeh-size-sm {
@@ -127,14 +114,54 @@ exports[`ToggleGroup renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-flWDnm-epWAHO-hasGap-true .c-iVViNQ {
+  .c-flWDnm-kmHjkX-hasGap-false {
     border-radius: var(--radii-0);
+    background: white;
+  }
+
+  .c-flWDnm-kmHjkX-hasGap-false .c-iVViNQ {
+    background: transparent;
+    border-radius: 0;
+    position: relative;
+  }
+
+  .c-flWDnm-kmHjkX-hasGap-false .c-iVViNQ:not(:last-child)::before {
+    content: "";
+    position: absolute;
+  }
+}
+
+@media  {
+  .c-flWDnm-DFvBS-cv .c-iVViNQ:not(:last-child)::before {
+    bottom: 0;
+    left: -1px;
+    height: 1px;
+    width: calc(100% + 2px);
+    transform: translateY(150%);
+  }
+
+  .c-flWDnm-DFvBS-cv .c-iVViNQ:first-child {
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-flWDnm-DFvBS-cv .c-iVViNQ:last-child {
+    border-bottom-left-radius: var(--radii-0);
+    border-bottom-right-radius: var(--radii-0);
+  }
+
+  .c-flWDnm-DFvBS-cv .c-iVViNQ:not(:first-child) {
+    border-top-color: transparent;
+  }
+
+  .c-flWDnm-DFvBS-cv .c-iVViNQ:not(:last-child) {
+    border-bottom-color: transparent;
   }
 }
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-epWAHO-hasGap-true"
+    class="c-flWDnm c-flWDnm-kmHjkX-hasGap-false c-flWDnm-DFvBS-cv"
     data-orientation="vertical"
     dir="ltr"
     role="group"
@@ -142,7 +169,7 @@ exports[`ToggleGroup renders 1`] = `
     tabindex="0"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-hjymVw-wrap-no-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-dPMagj-gap-2"
+      class="c-jgdwfn c-jgdwfn-iTKOFX-direction-column c-jgdwfn-hjymVw-wrap-no-wrap c-jgdwfn-awKDG-justify-start"
     >
       <button
         aria-pressed="true"
@@ -159,7 +186,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-hLnLbd-size-sm"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -180,7 +207,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-hLnLbd-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
@@ -191,7 +218,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-gxXeKS c-gxXeKS-hLnLbd-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"

@@ -2,54 +2,49 @@
 
 exports[`List component renders a list 1`] = `
 @media  {
-  .c-bBdCwN {
+  .c-iTpJUe {
     list-style-position: inside;
     font-family: var(--fonts-body);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
     margin: unset;
     padding: unset;
-  }
-
-  .c-bBdCwN > .c-PJLV:not(:last-child) {
-    margin-bottom: var(--space-2);
-  }
-
-  .c-bBdCwN > .c-PJLV:last-child {
-    margin-bottom: 0;
   }
 }
 
 @media  {
-  .c-bBdCwN-gvmVBy-size-md {
+  .c-iTpJUe-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::before {
+  .c-iTpJUe-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::after {
+  .c-iTpJUe-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-fmPQHp-noCapsize-true::before,
-  .c-bBdCwN-fmPQHp-noCapsize-true::after {
+  .c-iTpJUe-fmPQHp-noCapsize-true::before,
+  .c-iTpJUe-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
-  .c-bBdCwN-ldmvkx-as-ul {
+  .c-iTpJUe-ldmvkx-as-ul {
     padding-left: var(--space-3);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV {
     padding-left: var(--space-2);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV::marker {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV::marker {
     content: "• ";
     font-weight: bold;
   }
@@ -57,7 +52,7 @@ exports[`List component renders a list 1`] = `
 
 <div>
   <ul
-    class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul"
+    class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul"
   >
     <li
       class="c-PJLV"
@@ -75,80 +70,75 @@ exports[`List component renders a list 1`] = `
 
 exports[`List component renders an unordered list with a primary theme 1`] = `
 @media  {
-  .c-bBdCwN {
+  .c-iTpJUe {
     list-style-position: inside;
     font-family: var(--fonts-body);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
     margin: unset;
     padding: unset;
-  }
-
-  .c-bBdCwN > .c-PJLV:not(:last-child) {
-    margin-bottom: var(--space-2);
-  }
-
-  .c-bBdCwN > .c-PJLV:last-child {
-    margin-bottom: 0;
   }
 }
 
 @media  {
-  .c-bBdCwN-gvmVBy-size-md {
+  .c-iTpJUe-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::before {
+  .c-iTpJUe-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-gvmVBy-size-md::after {
+  .c-iTpJUe-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-bBdCwN-fmPQHp-noCapsize-true::before,
-  .c-bBdCwN-fmPQHp-noCapsize-true::after {
+  .c-iTpJUe-fmPQHp-noCapsize-true::before,
+  .c-iTpJUe-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
-  .c-bBdCwN-ldmvkx-as-ul {
+  .c-iTpJUe-ldmvkx-as-ul {
     padding-left: var(--space-3);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV {
     padding-left: var(--space-2);
   }
 
-  .c-bBdCwN-ldmvkx-as-ul > .c-PJLV::marker {
+  .c-iTpJUe-ldmvkx-as-ul > .c-PJLV::marker {
     content: "• ";
     font-weight: bold;
   }
 
-  .c-bBdCwN-bEVto-as-ol {
+  .c-iTpJUe-bEVto-as-ol {
     padding-left: var(--space-4);
     list-style-type: decimal;
   }
 
-  .c-bBdCwN-bEVto-as-ol > .c-PJLV {
+  .c-iTpJUe-bEVto-as-ol > .c-PJLV {
     padding-left: var(--space-1);
   }
 
-  .c-bBdCwN-bEVto-as-ol > .c-PJLV::marker {
+  .c-iTpJUe-bEVto-as-ol > .c-PJLV::marker {
     font-size: .875em;
     font-weight: bold;
   }
 
-  .c-bBdCwN-gvBFgi-theme-primary > .c-PJLV::marker {
+  .c-iTpJUe-gvBFgi-theme-primary > .c-PJLV::marker {
     color: var(--colors-primary);
   }
 }
 
 <div>
   <ul
-    class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-gvBFgi-theme-primary"
+    class="c-iTpJUe c-iTpJUe-gvmVBy-size-md c-iTpJUe-fmPQHp-noCapsize-true c-iTpJUe-ldmvkx-as-ul c-iTpJUe-gvBFgi-theme-primary"
   >
     <li
       class="c-PJLV"

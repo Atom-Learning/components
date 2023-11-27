@@ -94,6 +94,10 @@ exports[`Button component Loading state renders a loading button 1`] = `
     pointer-events: none;
   }
 
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
   .c-jBOHFZ-jIYkAt-size-md {
     height: 6px;
     width: 6px;
@@ -171,8 +175,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-icXxGAL-css {
-    justify-content: center;
+  .c-dhzjXW-ibMCfDd-css {
     position: absolute;
   }
 }
@@ -183,7 +186,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
     type="button"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-icXxGAL-css"
+      class="c-dhzjXW c-dhzjXW-bICGYT-justify-center c-dhzjXW-ibMCfDd-css"
       role="alert"
     >
       <span

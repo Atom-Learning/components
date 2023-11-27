@@ -6,6 +6,10 @@ exports[`RadioButtonField component renders 1`] = `
     all: unset;
   }
 
+  .c-dhzjXW {
+    display: flex;
+  }
+
   .c-cVSpVL {
     color: var(--colors-tonal500);
     font-family: var(--fonts-body);
@@ -61,6 +65,14 @@ exports[`RadioButtonField component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
+  }
+
   .c-cVSpVL-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -81,6 +93,10 @@ exports[`RadioButtonField component renders 1`] = `
   .c-cVSpVL-grKRUr-type-block {
     display: block;
     font-weight: 600;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
   .c-cVSpVL-bsbHzT-type-inline {
@@ -105,9 +121,8 @@ exports[`RadioButtonField component renders 1`] = `
 }
 
 @media  {
-  .c-cVSpVL-igrvbIF-css {
+  .c-cVSpVL-ifBQDyP-css {
     padding: 0;
-    margin-bottom: var(--space-3);
   }
 
   .c-PJLV-ihmIibS-css {
@@ -124,84 +139,88 @@ exports[`RadioButtonField component renders 1`] = `
     <fieldset
       class="c-leHWbT"
     >
-      <legend
-        class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-igrvbIF-css"
-      >
-        Example options
-      </legend>
       <div
-        aria-required="false"
-        class="c-iSwBqf c-iSwBqf-iTKOFX-direction-column"
-        dir="ltr"
-        role="radiogroup"
-        style="outline: none;"
-        tabindex="0"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-dvnNgW-gap-3"
       >
-        <div
-          class="c-PJLV"
+        <legend
+          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ifBQDyP-css"
         >
-          <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
+          Example options
+        </legend>
+        <div
+          aria-required="false"
+          class="c-iSwBqf c-iSwBqf-iTKOFX-direction-column"
+          dir="ltr"
+          role="radiogroup"
+          style="outline: none;"
+          tabindex="0"
+        >
+          <div
+            class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2"
           >
-            <div
-              class="c-PJLV c-PJLV-ihmIibS-css"
+            <label
+              class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
             >
-              <button
-                aria-checked="true"
-                class="c-hXfYPB"
-                data-radix-collection-item=""
-                data-state="checked"
-                role="radio"
-                tabindex="-1"
-                type="button"
-                value="1"
+              <div
+                class="c-PJLV c-PJLV-ihmIibS-css"
               >
-                <span
-                  class="c-jHqXTB"
+                <button
+                  aria-checked="true"
+                  class="c-hXfYPB"
+                  data-radix-collection-item=""
                   data-state="checked"
+                  role="radio"
+                  tabindex="-1"
+                  type="button"
+                  value="1"
+                >
+                  <span
+                    class="c-jHqXTB"
+                    data-state="checked"
+                  />
+                </button>
+                <input
+                  aria-hidden="true"
+                  checked=""
+                  style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
+                  tabindex="-1"
+                  type="radio"
+                  value="1"
                 />
-              </button>
-              <input
-                aria-hidden="true"
-                checked=""
-                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
-                tabindex="-1"
-                type="radio"
-                value="1"
-              />
-            </div>
-            1
-          </label>
-        </div>
-        <div
-          class="c-PJLV"
-        >
-          <label
-            class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
+              </div>
+              1
+            </label>
+          </div>
+          <div
+            class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2"
           >
-            <div
-              class="c-PJLV c-PJLV-ihmIibS-css"
+            <label
+              class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-bsbHzT-type-inline c-cVSpVL-JrrAq-cv c-cVSpVL-ejCoEP-cv"
             >
-              <button
-                aria-checked="false"
-                class="c-hXfYPB"
-                data-radix-collection-item=""
-                data-state="unchecked"
-                role="radio"
-                tabindex="-1"
-                type="button"
-                value="2"
-              />
-              <input
-                aria-hidden="true"
-                style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
-                tabindex="-1"
-                type="radio"
-                value="2"
-              />
-            </div>
-            2
-          </label>
+              <div
+                class="c-PJLV c-PJLV-ihmIibS-css"
+              >
+                <button
+                  aria-checked="false"
+                  class="c-hXfYPB"
+                  data-radix-collection-item=""
+                  data-state="unchecked"
+                  role="radio"
+                  tabindex="-1"
+                  type="button"
+                  value="2"
+                />
+                <input
+                  aria-hidden="true"
+                  style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 0px; height: 0px;"
+                  tabindex="-1"
+                  type="radio"
+                  value="2"
+                />
+              </div>
+              2
+            </label>
+          </div>
         </div>
       </div>
     </fieldset>

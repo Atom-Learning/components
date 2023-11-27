@@ -284,15 +284,16 @@ exports[`TopBar component renders 1`] = `
     }
 }
 
-  .c-dbEDIJ {
+  .c-iNhUfi {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--colors-tonal400);
+    gap: var(--space-3);
   }
 
-  .c-dbEDIJ:hover,
-  .c-dbEDIJ:focus {
+  .c-iNhUfi:hover,
+  .c-iNhUfi:focus {
     text-decoration: none;
   }
 
@@ -474,7 +475,7 @@ exports[`TopBar component renders 1`] = `
       class="c-dhzjXW c-ftiHlK"
     >
       <a
-        class="c-dbEDIJ"
+        class="c-iNhUfi"
         href="atomlearning.co.uk"
       >
         <p
@@ -819,15 +820,16 @@ exports[`TopBar component renders the lg variant 1`] = `
     }
 }
 
-  .c-dbEDIJ {
+  .c-iNhUfi {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: var(--colors-tonal400);
+    gap: var(--space-3);
   }
 
-  .c-dbEDIJ:hover,
-  .c-dbEDIJ:focus {
+  .c-iNhUfi:hover,
+  .c-iNhUfi:focus {
     text-decoration: none;
   }
 
@@ -1018,7 +1020,7 @@ exports[`TopBar component renders the lg variant 1`] = `
       class="c-dhzjXW c-ftiHlK"
     >
       <a
-        class="c-dbEDIJ"
+        class="c-iNhUfi"
         href="atomlearning.co.uk"
       >
         <p

@@ -1,8 +1,8 @@
 import * as React from 'react'
-import { Flex } from '../../flex'
 
 import { styled } from '~/stitches'
 
+import { Flex } from '../../flex'
 import { useBannerContext } from '../BannerContext'
 
 const Container = styled(Flex, {
