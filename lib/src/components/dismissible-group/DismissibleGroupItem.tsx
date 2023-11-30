@@ -27,8 +27,8 @@ export const DismissibleGroupItem: React.FC<TDismissibleGroupItemProps> = ({
   return (
     <Dismissible
       disabled={groupDisabled || itemDisabled}
-      onDismiss={() => onDismiss(value)}
       {...rest}
+      onDismiss={() => onDismiss(value)}
     >
       {children}
     </Dismissible>
