@@ -24,10 +24,11 @@ export const DismissibleTrigger: React.FC<IDismissibleTriggerProps> = ({
     )
   }
 
-  const { setIsDismissed, disabled } = context
+  const { setIsDismissed, disabled, onDismiss } = context
 
   const handleDismiss = () => {
     setIsDismissed(true)
+    onDismiss?.()
   }
 
   const props = {
