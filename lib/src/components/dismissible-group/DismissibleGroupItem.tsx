@@ -7,11 +7,13 @@ import { DismissibleGroupContext } from './DismissibleGroupRoot'
 export type TDismissibleGroupItemProps = React.ComponentProps<
   typeof Dismissible
 > & {
+  value: React.ReactText
   disabled?: boolean
 }
 
 export const DismissibleGroupItem: React.FC<TDismissibleGroupItemProps> = ({
   children,
+  value,
   disabled: itemDisabled = false,
   ...rest
 }) => {
@@ -25,7 +27,7 @@ export const DismissibleGroupItem: React.FC<TDismissibleGroupItemProps> = ({
   return (
     <Dismissible
       disabled={groupDisabled || itemDisabled}
-      onDismiss={onDismiss}
+      onDismiss={() => onDismiss(value)}
       {...rest}
     >
       {children}
