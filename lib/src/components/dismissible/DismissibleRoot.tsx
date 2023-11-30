@@ -35,13 +35,11 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
 
 export interface IDismissibleGroupItemProps {
   asChild?: boolean
-  value: React.ReactText
-  onDismiss?: (value: React.ReactText) => void
+  onDismiss?: () => void
 }
 
 const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
   asChild = false,
-  value,
   onDismiss,
   ...rest
 }) => {
@@ -50,7 +48,7 @@ const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
   const { isDismissed, disabled } = rootContext
 
   React.useEffect(() => {
-    if (isDismissed) onDismiss?.(value)
+    if (isDismissed) onDismiss?.()
   }, [isDismissed])
 
   if (isDismissed) return null

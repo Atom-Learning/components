@@ -13,9 +13,8 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Dismissible
-        value="a"
-        onDismiss={(value) => {
-          alert(\`dismiss $\{value\}\`)
+        onDismiss={() => {
+          alert(\`dismiss a\`)
         }}
       >
         Press the trigger to dismiss this ->
@@ -24,9 +23,8 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Dismissible
-        value="custom"
-        onDismiss={(value) => {
-          alert(\`dismiss $\{value\}\`)
+        onDismiss={() => {
+          alert(\`dismiss custom\`)
         }}
         asChild
       >
