@@ -34,13 +34,12 @@ const StyledText = styled(Text, {
 export const BannerRegularText: React.FC<React.ComponentProps<typeof Text>> = (
   props
 ) => {
-  const { emphasis, size, hasDismiss } = useBannerContext()
+  const { size, hasDismiss } = useBannerContext()
 
   return (
     <StyledText
       size={size}
       containerSize={size}
-      emphasis={emphasis}
       hasDismiss={hasDismiss}
       {...props}
     />

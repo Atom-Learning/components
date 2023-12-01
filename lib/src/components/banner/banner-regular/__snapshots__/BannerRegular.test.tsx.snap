@@ -569,7 +569,6 @@ exports[`BannerRegular component renders 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
-        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -1238,7 +1237,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
-        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
