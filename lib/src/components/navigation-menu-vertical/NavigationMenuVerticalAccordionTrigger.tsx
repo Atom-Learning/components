@@ -17,7 +17,6 @@ const StyledNavigationMenuVerticalAccordionTrigger = styled(
 )
 
 const StyledIcon = styled(Icon, {
-  flexShrink: 0,
   transition: 'transform 300ms',
   '[data-state="open"] > &': {
     transform: 'rotate(180deg)'

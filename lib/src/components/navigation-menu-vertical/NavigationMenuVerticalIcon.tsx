@@ -4,7 +4,6 @@ import { Icon } from '~/components/icon'
 import { styled } from '~/stitches'
 
 const StyledNavigationMenuVerticalIcon = styled(Icon, {
-  flexShrink: 0,
   alignSelf: 'start'
 })
 export const NavigationMenuVerticalIcon = (

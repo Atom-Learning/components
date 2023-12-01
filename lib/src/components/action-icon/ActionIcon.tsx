@@ -57,6 +57,7 @@ const StyledButton = styled('button', {
   boxSizing: 'border-box',
   cursor: 'pointer',
   display: 'flex',
+  flexShrink: 0,
   justifyContent: 'center',
   p: 'unset',
   transition: 'all 100ms ease-out',

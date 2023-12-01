@@ -992,17 +992,14 @@ exports[`Badge component renders with an icon 1`] = `
     padding-bottom: var(--space-0);
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-cCfVEt {
-    flex-shrink: 0;
   }
 }
 
@@ -1052,7 +1049,7 @@ exports[`Badge component renders with an icon 1`] = `
     padding-bottom: var(--space-1);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -1066,7 +1063,7 @@ exports[`Badge component renders with an icon 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-cCfVEt"
+      class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm PJLV"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

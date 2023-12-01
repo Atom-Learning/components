@@ -44,7 +44,7 @@ exports[`DateField component renders a field in error state 1`] = `
     opacity: 1;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -54,19 +54,21 @@ exports[`DateField component renders a field in error state 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -77,11 +79,6 @@ exports[`DateField component renders a field in error state 1`] = `
     color: var(--colors-danger);
     margin-left: var(--space-1);
     font-weight: 400;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -125,12 +122,12 @@ exports[`DateField component renders a field in error state 1`] = `
     line-height: 2;
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -144,7 +141,7 @@ exports[`DateField component renders a field in error state 1`] = `
     color: var(--colors-danger);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -169,17 +166,17 @@ exports[`DateField component renders a field in error state 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -196,7 +193,7 @@ exports[`DateField component renders a field in error state 1`] = `
     height: max-content;
   }
 
-  .c-iPabyW-igEsmBj-css {
+  .c-oUmPa-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -205,6 +202,10 @@ exports[`DateField component renders a field in error state 1`] = `
 
   .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
+  }
+
+  .c-hMRxhp-ijkHsGW-css {
+    margin-right: var(--space-2);
   }
 
   .c-dyvMgW-iiTbKsx-css {
@@ -251,13 +252,13 @@ exports[`DateField component renders a field in error state 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igEsmBj-css"
           data-state="closed"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -278,7 +279,7 @@ exports[`DateField component renders a field in error state 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ijkHsGW-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -357,7 +358,7 @@ exports[`DateField component renders a field with a text input 1`] = `
     opacity: 1;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -367,19 +368,21 @@ exports[`DateField component renders a field with a text input 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -416,12 +419,12 @@ exports[`DateField component renders a field with a text input 1`] = `
     line-height: 2;
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -429,17 +432,17 @@ exports[`DateField component renders a field with a text input 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -456,7 +459,7 @@ exports[`DateField component renders a field with a text input 1`] = `
     height: max-content;
   }
 
-  .c-iPabyW-igEsmBj-css {
+  .c-oUmPa-igEsmBj-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -498,13 +501,13 @@ exports[`DateField component renders a field with a text input 1`] = `
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-iPabyW-igEsmBj-css"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igEsmBj-css"
           data-state="closed"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -402,7 +402,7 @@ exports[`BannerSlim component renders 1`] = `
     width: 100%;
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -411,7 +411,7 @@ exports[`BannerSlim component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -522,7 +522,7 @@ exports[`BannerSlim component renders 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
@@ -874,7 +874,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -884,27 +884,25 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-cCfVEt {
-    flex-shrink: 0;
   }
 }
 
@@ -967,7 +965,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     width: 100%;
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -976,7 +974,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -985,26 +983,26 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     width: 100%;
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-bold {
+  .c-PJLV-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
-  .c-cCfVEt-jWCfIe-containerSize-sm {
+  .c-PJLV-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
@@ -1057,7 +1055,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-cCfVEt-iNjdzM-containerSize-md {
+    .c-PJLV-iNjdzM-containerSize-md {
       position: static;
     }
 }
@@ -1084,17 +1082,17 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
@@ -1136,20 +1134,20 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hXLsaq-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-bold c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hXLsaq-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1505,7 +1503,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     padding: var(--space-4);
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -1515,27 +1513,25 @@ exports[`BannerSlim component renders sm variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-cCfVEt {
-    flex-shrink: 0;
   }
 }
 
@@ -1598,7 +1594,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     width: 100%;
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -1607,7 +1603,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -1616,26 +1612,26 @@ exports[`BannerSlim component renders sm variant 1`] = `
     width: 100%;
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-bold {
+  .c-PJLV-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
-  .c-cCfVEt-jWCfIe-containerSize-sm {
+  .c-PJLV-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
@@ -1688,7 +1684,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-cCfVEt-iNjdzM-containerSize-md {
+    .c-PJLV-iNjdzM-containerSize-md {
       position: static;
     }
 }
@@ -1715,17 +1711,17 @@ exports[`BannerSlim component renders sm variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
@@ -1767,7 +1763,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
