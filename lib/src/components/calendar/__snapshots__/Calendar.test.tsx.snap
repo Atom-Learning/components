@@ -6,7 +6,7 @@ exports[`Calendar component renders 1`] = `
     display: flex;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -16,19 +16,21 @@ exports[`Calendar component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -152,12 +154,12 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -167,7 +169,7 @@ exports[`Calendar component renders 1`] = `
     max-width: 250px;
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -176,7 +178,7 @@ exports[`Calendar component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -208,17 +210,17 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
@@ -287,13 +289,13 @@ exports[`Calendar component renders 1`] = `
     >
       <button
         aria-label="Previous month"
-        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -304,13 +306,13 @@ exports[`Calendar component renders 1`] = `
       </button>
       <button
         aria-label="Next month"
-        class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-hXLsaq-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -327,7 +329,7 @@ exports[`Calendar component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-jlrmAu-cv c-kaaUSm-ikwYYXS-css"
+          class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-jlrmAu-cv c-kaaUSm-ikwYYXS-css"
           type="button"
         >
           Dec

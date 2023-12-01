@@ -24,9 +24,10 @@ exports[`FileInput component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -35,7 +36,7 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -44,12 +45,12 @@ exports[`FileInput component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -80,12 +81,12 @@ exports[`FileInput component renders 1`] = `
 
 <div>
   <label
-    class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

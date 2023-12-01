@@ -50,18 +50,14 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 400;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -113,7 +109,7 @@ exports[`InputField component renders a field in error state 1`] = `
     color: var(--colors-danger);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -152,6 +148,10 @@ exports[`InputField component renders a field in error state 1`] = `
 
   .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
+  }
+
+  .c-hMRxhp-ijkHsGW-css {
+    margin-right: var(--space-2);
   }
 
   .c-dyvMgW-iiTbKsx-css {
@@ -194,7 +194,7 @@ exports[`InputField component renders a field in error state 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ijkHsGW-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

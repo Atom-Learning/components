@@ -35,9 +35,10 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -73,7 +74,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     width: var(--sizes-2);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -108,7 +109,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     width: 100%;
   }
 
-  .c-dbrbZt-ijiyhIq-css {
+  .c-hMRxhp-ijiyhIq-css {
     height: 100%;
     width: 100%;
   }
@@ -123,7 +124,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijiyhIq-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-ijiyhIq-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -177,9 +178,10 @@ exports[`Avatar component renders an icon avatar 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -215,7 +217,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
     width: var(--sizes-2);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -250,7 +252,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
     width: 100%;
   }
 
-  .c-dbrbZt-ijiyhIq-css {
+  .c-hMRxhp-ijiyhIq-css {
     height: 100%;
     width: 100%;
   }
@@ -262,7 +264,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -354,9 +356,10 @@ exports[`Avatar component renders an inital avatar 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -392,7 +395,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     width: var(--sizes-2);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -427,7 +430,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     width: 100%;
   }
 
-  .c-dbrbZt-ijiyhIq-css {
+  .c-hMRxhp-ijiyhIq-css {
     height: 100%;
     width: 100%;
   }
@@ -481,9 +484,10 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -519,7 +523,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     width: var(--sizes-2);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -537,7 +541,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     width: 100%;
   }
 
-  .c-dbrbZt-ijiyhIq-css {
+  .c-hMRxhp-ijiyhIq-css {
     height: 100%;
     width: 100%;
   }
@@ -552,7 +556,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-ijiyhIq-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-ijiyhIq-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

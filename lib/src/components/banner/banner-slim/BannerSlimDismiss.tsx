@@ -9,7 +9,6 @@ import { Banner } from '../Banner'
 import { useBannerContext } from '../BannerContext'
 
 const StyledDismiss = styled(ActionIcon, {
-  flexShrink: 0,
   variants: {
     emphasis: {
       bold: {

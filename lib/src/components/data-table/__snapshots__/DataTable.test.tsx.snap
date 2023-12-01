@@ -47,9 +47,10 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -161,7 +162,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     cursor: not-allowed;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -171,12 +172,13 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -408,7 +410,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -478,12 +480,12 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -491,13 +493,13 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     max-width: 250px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-iPabyW-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -532,7 +534,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     background: var(--colors-blue100);
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -541,7 +543,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -579,32 +581,32 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hMqgPB-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
-  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-iPabyW-dQMrZR-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
-  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
@@ -648,17 +650,17 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -726,7 +728,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     flex: none;
   }
 
-  .c-iPabyW-illEebI-css {
+  .c-oUmPa-illEebI-css {
     margin-right: var(--space-4);
   }
 
@@ -739,7 +741,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -788,7 +790,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-dbrbZt-igiJmlC-css {
+  .c-hMRxhp-igiJmlC-css {
     stroke-width: 3;
   }
 
@@ -797,7 +799,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     height: max-content;
   }
 
-  .c-iPabyW-igyKUXm-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -857,7 +859,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
       Something is missing
     </p>
     <button
-      class="c-kaaUSm c-kaaUSm-dXsdwv-size-md c-kaaUSm-dfkxSu-cv"
+      class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
       type="button"
     >
       Click here
@@ -913,9 +915,10 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -1027,7 +1030,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     cursor: not-allowed;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -1037,12 +1040,13 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -1139,7 +1143,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -1209,12 +1213,12 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     padding-right: var(--space-5);
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -1222,13 +1226,13 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     max-width: 250px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-iPabyW-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -1239,32 +1243,32 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 }
 
 @media  {
-  .c-iPabyW-hMqgPB-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
-  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-iPabyW-dQMrZR-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
-  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -1332,7 +1336,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     flex: none;
   }
 
-  .c-iPabyW-illEebI-css {
+  .c-oUmPa-illEebI-css {
     margin-right: var(--space-4);
   }
 
@@ -1345,7 +1349,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -1437,14 +1441,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1488,14 +1492,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1539,14 +1543,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1590,14 +1594,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1641,14 +1645,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1692,14 +1696,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1743,14 +1747,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1794,14 +1798,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1845,14 +1849,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1896,14 +1900,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1947,14 +1951,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1998,14 +2002,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2049,14 +2053,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2100,14 +2104,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2151,14 +2155,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2202,14 +2206,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2253,14 +2257,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2304,14 +2308,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-iPabyW c-iPabyW-elrktp-size-sm c-iPabyW-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2412,9 +2416,10 @@ exports[`DataTable component renders 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -2526,7 +2531,7 @@ exports[`DataTable component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -2536,12 +2541,13 @@ exports[`DataTable component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -2624,7 +2630,7 @@ exports[`DataTable component renders 1`] = `
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -2694,12 +2700,12 @@ exports[`DataTable component renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -2709,18 +2715,18 @@ exports[`DataTable component renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hMqgPB-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
-  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -2788,7 +2794,7 @@ exports[`DataTable component renders 1`] = `
     flex: none;
   }
 
-  .c-iPabyW-illEebI-css {
+  .c-oUmPa-illEebI-css {
     margin-right: var(--space-4);
   }
 
@@ -2815,7 +2821,7 @@ exports[`DataTable component renders 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -3180,7 +3186,7 @@ exports[`DataTable component renders 1`] = `
       >
         <button
           aria-label="Previous page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-iPabyW-illEebI-css c-PJLV"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hMqgPB-cv c-oUmPa-illEebI-css c-PJLV"
           data-state="closed"
           disabled=""
           name="Previous page"
@@ -3188,7 +3194,7 @@ exports[`DataTable component renders 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3199,14 +3205,14 @@ exports[`DataTable component renders 1`] = `
         </button>
         <button
           aria-label="Next page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-PJLV"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hMqgPB-cv c-PJLV"
           data-state="closed"
           name="Next page"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -3268,9 +3274,10 @@ exports[`DataTable server-side renders 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -3382,7 +3389,7 @@ exports[`DataTable server-side renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -3392,12 +3399,13 @@ exports[`DataTable server-side renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -3607,7 +3615,7 @@ exports[`DataTable server-side renders 1`] = `
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -3677,12 +3685,12 @@ exports[`DataTable server-side renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -3690,13 +3698,13 @@ exports[`DataTable server-side renders 1`] = `
     max-width: 250px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-iPabyW-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -3731,7 +3739,7 @@ exports[`DataTable server-side renders 1`] = `
     background: var(--colors-blue100);
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -3740,7 +3748,7 @@ exports[`DataTable server-side renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -3764,32 +3772,32 @@ exports[`DataTable server-side renders 1`] = `
 }
 
 @media  {
-  .c-iPabyW-hMqgPB-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):hover,
-  .c-iPabyW-hMqgPB-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hMqgPB-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-iPabyW-dQMrZR-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):hover,
-  .c-iPabyW-dQMrZR-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-dQMrZR-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
@@ -3833,17 +3841,17 @@ exports[`DataTable server-side renders 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-iPabyW-hXLsaq-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):hover,
-  .c-iPabyW-hXLsaq-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-iPabyW-hXLsaq-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 }
@@ -3911,7 +3919,7 @@ exports[`DataTable server-side renders 1`] = `
     flex: none;
   }
 
-  .c-iPabyW-illEebI-css {
+  .c-oUmPa-illEebI-css {
     margin-right: var(--space-4);
   }
 
@@ -3924,7 +3932,7 @@ exports[`DataTable server-side renders 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -3973,7 +3981,7 @@ exports[`DataTable server-side renders 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-dbrbZt-igiJmlC-css {
+  .c-hMRxhp-igiJmlC-css {
     stroke-width: 3;
   }
 
@@ -3982,7 +3990,7 @@ exports[`DataTable server-side renders 1`] = `
     height: max-content;
   }
 
-  .c-iPabyW-igyKUXm-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -4015,7 +4023,7 @@ exports[`DataTable server-side renders 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -4380,7 +4388,7 @@ exports[`DataTable server-side renders 1`] = `
       >
         <button
           aria-label="Previous page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-iPabyW-illEebI-css c-PJLV"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hMqgPB-cv c-oUmPa-illEebI-css c-PJLV"
           data-state="closed"
           disabled=""
           name="Previous page"
@@ -4388,7 +4396,7 @@ exports[`DataTable server-side renders 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -4399,14 +4407,14 @@ exports[`DataTable server-side renders 1`] = `
         </button>
         <button
           aria-label="Next page"
-          class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-hMqgPB-cv c-PJLV"
+          class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hMqgPB-cv c-PJLV"
           data-state="closed"
           name="Next page"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -4468,9 +4476,10 @@ exports[`DataTable sticky columns renders 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -4582,7 +4591,7 @@ exports[`DataTable sticky columns renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -4592,12 +4601,13 @@ exports[`DataTable sticky columns renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -4807,7 +4817,7 @@ exports[`DataTable sticky columns renders 1`] = `
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -4877,12 +4887,12 @@ exports[`DataTable sticky columns renders 1`] = `
     padding-right: var(--space-5);
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
@@ -4890,13 +4900,13 @@ exports[`DataTable sticky columns renders 1`] = `
     max-width: 250px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-iPabyW-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -4931,7 +4941,7 @@ exports[`DataTable sticky columns renders 1`] = `
     background: var(--colors-blue100);
   }
 
-  .c-kaaUSm-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -4940,7 +4950,7 @@ exports[`DataTable sticky columns renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-kaaUSm-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -5026,7 +5036,7 @@ exports[`DataTable sticky columns renders 1`] = `
     flex: none;
   }
 
-  .c-iPabyW-illEebI-css {
+  .c-oUmPa-illEebI-css {
     margin-right: var(--space-4);
   }
 
@@ -5039,7 +5049,7 @@ exports[`DataTable sticky columns renders 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -5088,7 +5098,7 @@ exports[`DataTable sticky columns renders 1`] = `
     margin-right: var(--space-4);
   }
 
-  .c-dbrbZt-igiJmlC-css {
+  .c-hMRxhp-igiJmlC-css {
     stroke-width: 3;
   }
 
@@ -5097,7 +5107,7 @@ exports[`DataTable sticky columns renders 1`] = `
     height: max-content;
   }
 
-  .c-iPabyW-igyKUXm-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
