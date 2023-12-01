@@ -1227,7 +1227,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
   <div
     class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-bold t-grLKLB"
     role="banner"
-    value="dismissible-sm-variant"
   >
     <div
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"

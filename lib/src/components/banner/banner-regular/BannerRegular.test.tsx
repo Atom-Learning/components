@@ -52,7 +52,6 @@ describe(`BannerRegular component`, () => {
       <BannerRegularDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
-        value="dismissible-sm-variant"
         onDismiss={onDismiss}
       />
     )
@@ -70,7 +69,6 @@ describe(`BannerRegular component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
         size="sm"
-        value="dismissible-sm-variant"
         onDismiss={jest.fn()}
       />
     )
