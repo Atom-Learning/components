@@ -33,7 +33,9 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
     const isControlled = typeof controlledIsDismissed === 'boolean'
     return {
       disabled,
-      isDismissed: isControlled ? controlledIsDismissed : isDismissed,
+      isDismissed: isControlled
+        ? (controlledIsDismissed as boolean)
+        : isDismissed,
       setIsDismissed: isControlled ? () => null : setIsDismissed,
       onDismiss
     }
@@ -46,12 +48,12 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
   )
 }
 
-export interface IDismissibleGroupItemProps {
+export interface IDismissibleProps {
   asChild?: boolean
   onDismiss?: () => void
 }
 
-const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
+const DismissibleRootInternal: React.FC<IDismissibleProps> = ({
   asChild = false,
   ...rest
 }) => {
@@ -67,7 +69,7 @@ const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
 }
 
 export const DismissibleRoot: React.FC<
-  IDismissibleGroupItemProps & IDismissibleRootProps
+  IDismissibleProps & IDismissibleRootProps
 > = ({ disabled = false, dismissed, onDismiss, ...rest }) => (
   <DismissibleRootProvider
     dismissed={dismissed}
