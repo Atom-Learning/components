@@ -14,6 +14,7 @@ export const ChipToggleGroupRoot = React.forwardRef<
     <ChipGroup
       orientation="horizontal"
       {...props}
+      // @ts-ignore
       as={ToggleGroup.Root}
       ref={ref}
     />
