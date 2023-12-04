@@ -6,7 +6,7 @@ exports[`Calendar component renders 1`] = `
     display: flex;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -16,14 +16,21 @@ exports[`Calendar component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -78,7 +85,7 @@ exports[`Calendar component renders 1`] = `
     }
 }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -93,6 +100,11 @@ exports[`Calendar component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-fPxPMR {
@@ -142,12 +154,12 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -157,7 +169,7 @@ exports[`Calendar component renders 1`] = `
     max-width: 250px;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -166,7 +178,7 @@ exports[`Calendar component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
@@ -198,43 +210,37 @@ exports[`Calendar component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 }
@@ -258,7 +264,7 @@ exports[`Calendar component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-fkUJsw-ikwYYXS-css {
+  .c-kaaUSm-ikwYYXS-css {
     padding-left: 0;
     padding-right: 0;
     color: var(--colors-tonal600);
@@ -283,13 +289,13 @@ exports[`Calendar component renders 1`] = `
     >
       <button
         aria-label="Previous month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -300,13 +306,13 @@ exports[`Calendar component renders 1`] = `
       </button>
       <button
         aria-label="Next month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -323,7 +329,7 @@ exports[`Calendar component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-iRJCoR-cv c-fkUJsw-ikwYYXS-css"
+          class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-jlrmAu-cv c-kaaUSm-ikwYYXS-css"
           type="button"
         >
           Dec

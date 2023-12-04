@@ -19,7 +19,7 @@ export const BannerRegularButton: React.FC<
     <Button
       size={size}
       fullWidth={fullWidth}
-      theme={emphasis === 'highContrast' ? 'neutral' : 'primary'}
+      theme={emphasis === 'bold' ? 'neutral' : 'primary'}
       {...props}
     />
   )

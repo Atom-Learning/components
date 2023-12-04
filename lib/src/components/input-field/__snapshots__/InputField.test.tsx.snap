@@ -12,7 +12,7 @@ exports[`InputField component renders a field in error state 1`] = `
     margin: 0;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -29,18 +29,17 @@ exports[`InputField component renders a field in error state 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -51,18 +50,14 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 400;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -100,13 +95,13 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fZTBsJ-bXVTjQ-state-error {
+  .c-cHbqOs-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
   }
 
@@ -114,7 +109,7 @@ exports[`InputField component renders a field in error state 1`] = `
     color: var(--colors-danger);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -155,6 +150,10 @@ exports[`InputField component renders a field in error state 1`] = `
     margin-top: var(--space-2);
   }
 
+  .c-hMRxhp-ijkHsGW-css {
+    margin-right: var(--space-2);
+  }
+
   .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
@@ -185,7 +184,7 @@ exports[`InputField component renders a field in error state 1`] = `
         </label>
       </div>
       <input
-        class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error"
+        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-bXVTjQ-state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
@@ -195,7 +194,7 @@ exports[`InputField component renders a field in error state 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ijkHsGW-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -242,7 +241,7 @@ exports[`InputField component renders a field with a number input 1`] = `
     margin: 0;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -259,18 +258,17 @@ exports[`InputField component renders a field with a number input 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -299,7 +297,7 @@ exports[`InputField component renders a field with a number input 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -339,7 +337,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         </label>
       </div>
       <input
-        class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
+        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -364,7 +362,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     margin: 0;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -381,18 +379,17 @@ exports[`InputField component renders a field with a text input 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -421,7 +418,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     font-weight: 600;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -461,7 +458,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         </label>
       </div>
       <input
-        class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
+        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

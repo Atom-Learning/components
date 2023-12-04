@@ -2,9 +2,10 @@
 
 exports[`Carousel component renders 1`] = `
 @media  {
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -95,7 +96,7 @@ exports[`Carousel component renders 1`] = `
 }
 
 @media  {
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -180,7 +181,7 @@ exports[`Carousel component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -196,7 +197,7 @@ exports[`Carousel component renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

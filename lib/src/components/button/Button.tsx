@@ -7,7 +7,7 @@ import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
@@ -18,11 +18,7 @@ const getButtonOutlineVariant = (
   border: '1px solid',
   borderColor: 'currentColor',
   color: base,
-  '&[disabled]': {
-    borderColor: '$tonal400',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
+  '&[disabled]': disabledStyle,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     textDecoration: 'none',
     color: interact
@@ -40,11 +36,7 @@ const getButtonSolidVariant = (
 ) => ({
   bg: base,
   color: text,
-  '&[disabled]': {
-    bg: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
+  '&[disabled]': disabledStyle,
   '&:not([disabled]):hover, &:not([disabled]):focus': {
     bg: interact,
     color: text
@@ -69,6 +61,7 @@ export const StyledButton = styled('button', {
   transition: 'all 100ms ease-out',
   whiteSpace: 'nowrap',
   width: 'max-content',
+  '&[disabled]': disabledStyle,
   variants: {
     theme: {
       primary: {},

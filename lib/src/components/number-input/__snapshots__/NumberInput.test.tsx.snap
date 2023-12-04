@@ -10,7 +10,7 @@ exports[`NumberInput component renders lg size 1`] = `
     z-index: 1;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -20,14 +20,21 @@ exports[`NumberInput component renders lg size 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -113,7 +120,7 @@ exports[`NumberInput component renders lg size 1`] = `
     }
 }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -130,18 +137,17 @@ exports[`NumberInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -160,12 +166,12 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -175,13 +181,13 @@ exports[`NumberInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -189,25 +195,19 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -218,12 +218,12 @@ exports[`NumberInput component renders lg size 1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-cHbqOs-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-cHbqOs-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -246,14 +246,14 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -268,7 +268,7 @@ exports[`NumberInput component renders lg size 1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-fZTBsJ-ibwGleD-css"
+      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cHbqOs-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -283,13 +283,13 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="increment"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -313,7 +313,7 @@ exports[`NumberInput component renders number input  1`] = `
     z-index: 1;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -323,14 +323,21 @@ exports[`NumberInput component renders number input  1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -416,7 +423,7 @@ exports[`NumberInput component renders number input  1`] = `
     }
 }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -433,30 +440,29 @@ exports[`NumberInput component renders number input  1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -466,7 +472,7 @@ exports[`NumberInput component renders number input  1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -474,25 +480,19 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-oUmPa-hMqgPB-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
+  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
+  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -503,12 +503,12 @@ exports[`NumberInput component renders number input  1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-fZTBsJ-ibwGleD-css {
+  .c-cHbqOs-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-fZTBsJ-ibwGleD-css:disabled {
+  .c-cHbqOs-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -531,14 +531,14 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -553,7 +553,7 @@ exports[`NumberInput component renders number input  1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-ibwGleD-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -568,13 +568,13 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="increment"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-jpgoGt-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

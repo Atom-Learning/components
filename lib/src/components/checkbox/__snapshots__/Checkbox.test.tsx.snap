@@ -9,7 +9,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .c-lhbScT {
+  .c-jMrbLF {
     -webkit-appearance: none;
     appearance: none;
     position: relative;
@@ -27,31 +27,29 @@ exports[`Checkbox component renders a checkbox 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-lhbScT[data-state="checked"] {
+  .c-jMrbLF[data-state="checked"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-lhbScT[data-state="indeterminate"] {
+  .c-jMrbLF[data-state="indeterminate"] {
     background-color: var(--colors-primary);
     border-color: var(--colors-primary);
   }
 
-  .c-lhbScT:focus {
+  .c-jMrbLF:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-lhbScT[disabled] {
-    background-color: var(--colors-tonal100);
-    border-color: var(--colors-tonal400);
+  .c-jMrbLF[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
-    color: var(--colors-tonal400);
   }
 }
 
 @media  {
-  .c-lhbScT-kupcZn-size-md {
+  .c-jMrbLF-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
@@ -61,7 +59,7 @@ exports[`Checkbox component renders a checkbox 1`] = `
   <label>
     <button
       aria-checked="false"
-      class="c-lhbScT c-lhbScT-kupcZn-size-md"
+      class="c-jMrbLF c-jMrbLF-kupcZn-size-md"
       data-state="unchecked"
       role="checkbox"
       title="test"

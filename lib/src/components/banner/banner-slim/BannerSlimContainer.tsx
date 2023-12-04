@@ -33,8 +33,13 @@ const StyledBannerSlimContainer = styled(BannerContainer, {
   }
 })
 
+type TBannerSlimContainerProps = Omit<
+  React.ComponentProps<typeof StyledBannerSlimContainer>,
+  'direction' | 'align' | 'wrap' | 'gap' | 'justify'
+>
+
 export const BannerSlimContainer = (
-  props: React.ComponentProps<typeof StyledBannerSlimContainer>
+  props: TBannerSlimContainerProps
 ): JSX.Element => {
   const { size } = useBannerContext()
 

@@ -54,7 +54,7 @@ exports[`ToggleGroup renders 1`] = `
     box-shadow: inset currentColor 0px 0px 0px 1px;
   }
 
-  .c-gxXeKS {
+  .c-cepAPw {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -65,13 +65,10 @@ exports[`ToggleGroup renders 1`] = `
     padding-bottom: var(--space-1);
   }
 
-  .c-gxXeKS .c-dbrbZt {
-    flex-shrink: 0;
-  }
-
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -96,18 +93,18 @@ exports[`ToggleGroup renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-gxXeKS-fKibdn-size-sm {
+  .c-cepAPw-fKibdn-size-sm {
     font-size: var(--fontSizes-sm);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     min-height: 32px;
   }
 
-  .c-gxXeKS-fKibdn-size-sm > *:not(:last-child) {
+  .c-cepAPw-fKibdn-size-sm > *:not(:last-child) {
     margin-right: var(--space-2);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -145,7 +142,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -166,7 +163,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
@@ -177,7 +174,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-gxXeKS c-gxXeKS-fKibdn-size-sm"
+        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
@@ -186,7 +183,7 @@ exports[`ToggleGroup renders 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

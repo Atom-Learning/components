@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import { styled, theme } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
 import { getExternalAnchorProps } from '~/utilities/uri'
@@ -21,10 +21,6 @@ const getSimpleVariant = (base: string, interact: string, active: string) => ({
   },
   '&:not(:disabled):active': {
     color: active
-  },
-  '&[disabled]': {
-    color: '$tonal400',
-    cursor: 'not-allowed'
   }
 })
 
@@ -37,11 +33,6 @@ const getSolidVariant = (base: string, interact: string, active: string) => ({
   },
   '&:not(:disabled):active': {
     bg: active
-  },
-  '&[disabled]': {
-    bg: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
   }
 })
 
@@ -54,11 +45,6 @@ const getOutlineVariant = (base: string, interact: string, active: string) => ({
   },
   '&:not(:disabled):active': {
     color: active
-  },
-  '&[disabled]': {
-    borderColor: '$tonal400',
-    color: '$tonal400',
-    cursor: 'not-allowed'
   }
 })
 
@@ -71,9 +57,11 @@ const StyledButton = styled('button', {
   boxSizing: 'border-box',
   cursor: 'pointer',
   display: 'flex',
+  flexShrink: 0,
   justifyContent: 'center',
   p: 'unset',
   transition: 'all 100ms ease-out',
+  '&[disabled]': disabledStyle,
   variants: {
     theme: {
       neutral: {},
@@ -99,6 +87,7 @@ const StyledButton = styled('button', {
       }
     }
   },
+
   compoundVariants: [
     // Appearance Simple
     {

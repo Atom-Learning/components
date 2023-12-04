@@ -19,7 +19,7 @@ export const BannerSlimButton: React.FC<
     <Button
       size="md"
       fullWidth={fullWidth}
-      theme={emphasis === 'highContrast' ? 'neutral' : 'primary'}
+      theme={emphasis === 'bold' ? 'neutral' : 'primary'}
       css={{ ml: 'auto', ...css }}
       {...props}
     />

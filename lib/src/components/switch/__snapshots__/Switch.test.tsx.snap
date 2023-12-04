@@ -10,7 +10,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     will-change: transform;
   }
 
-  .c-LcsSW {
+  .c-bWJMkk {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -23,21 +23,26 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-LcsSW:hover {
+  .c-bWJMkk:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-LcsSW:focus {
+  .c-bWJMkk:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-LcsSW[data-state="checked"] {
+  .c-bWJMkk[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-LcsSW[data-state="checked"]:hover {
+  .c-bWJMkk[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+
+  .c-bWJMkk[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
@@ -51,7 +56,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-LcsSW-dYgJcL-size-md {
+  .c-bWJMkk-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -60,7 +65,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 <div>
   <button
     aria-checked="true"
-    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
+    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
     data-state="checked"
     role="switch"
     type="button"
@@ -84,7 +89,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     will-change: transform;
   }
 
-  .c-LcsSW {
+  .c-bWJMkk {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -97,21 +102,26 @@ exports[`Switch component renders a disabled switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-LcsSW:hover {
+  .c-bWJMkk:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-LcsSW:focus {
+  .c-bWJMkk:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-LcsSW[data-state="checked"] {
+  .c-bWJMkk[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-LcsSW[data-state="checked"]:hover {
+  .c-bWJMkk[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+
+  .c-bWJMkk[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
@@ -125,7 +135,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-LcsSW-dYgJcL-size-md {
+  .c-bWJMkk-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -134,7 +144,7 @@ exports[`Switch component renders a disabled switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
+    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -161,7 +171,7 @@ exports[`Switch component renders a large switch 1`] = `
     will-change: transform;
   }
 
-  .c-LcsSW {
+  .c-bWJMkk {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -174,21 +184,26 @@ exports[`Switch component renders a large switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-LcsSW:hover {
+  .c-bWJMkk:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-LcsSW:focus {
+  .c-bWJMkk:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-LcsSW[data-state="checked"] {
+  .c-bWJMkk[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-LcsSW[data-state="checked"]:hover {
+  .c-bWJMkk[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+
+  .c-bWJMkk[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
@@ -202,7 +217,7 @@ exports[`Switch component renders a large switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-LcsSW-dYgJcL-size-md {
+  .c-bWJMkk-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -216,7 +231,7 @@ exports[`Switch component renders a large switch 1`] = `
     transform: translateX(var(--space-5));
   }
 
-  .c-LcsSW-fhqySU-size-lg {
+  .c-bWJMkk-fhqySU-size-lg {
     padding: var(--space-1);
     width: var(--sizes-6);
   }
@@ -225,7 +240,7 @@ exports[`Switch component renders a large switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-LcsSW c-LcsSW-fhqySU-size-lg"
+    class="c-bWJMkk c-bWJMkk-fhqySU-size-lg"
     data-state="unchecked"
     role="switch"
     type="button"
@@ -249,7 +264,7 @@ exports[`Switch component renders a switch 1`] = `
     will-change: transform;
   }
 
-  .c-LcsSW {
+  .c-bWJMkk {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -262,21 +277,26 @@ exports[`Switch component renders a switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-LcsSW:hover {
+  .c-bWJMkk:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-LcsSW:focus {
+  .c-bWJMkk:focus {
     outline: 2px solid var(--colors-primary);
     outline-offset: 1px;
   }
 
-  .c-LcsSW[data-state="checked"] {
+  .c-bWJMkk[data-state="checked"] {
     background-color: var(--colors-primary);
   }
 
-  .c-LcsSW[data-state="checked"]:hover {
+  .c-bWJMkk[data-state="checked"]:hover {
     background-color: var(--colors-primaryMid);
+  }
+
+  .c-bWJMkk[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
@@ -290,7 +310,7 @@ exports[`Switch component renders a switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-LcsSW-dYgJcL-size-md {
+  .c-bWJMkk-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -299,7 +319,7 @@ exports[`Switch component renders a switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-LcsSW c-LcsSW-dYgJcL-size-md"
+    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
     data-state="unchecked"
     role="switch"
     type="button"

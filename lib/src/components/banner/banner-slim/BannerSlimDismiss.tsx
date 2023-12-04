@@ -9,10 +9,9 @@ import { Banner } from '../Banner'
 import { useBannerContext } from '../BannerContext'
 
 const StyledDismiss = styled(ActionIcon, {
-  flexShrink: 0,
   variants: {
     emphasis: {
-      highContrast: {
+      bold: {
         color: 'white !important'
       }
     },
@@ -23,7 +22,10 @@ const StyledDismiss = styled(ActionIcon, {
   }
 })
 
-type TBannerSlimDismissProps = React.ComponentProps<typeof StyledDismiss>
+type TBannerSlimDismissProps = Omit<
+  React.ComponentProps<typeof StyledDismiss>,
+  'children' | 'onClick' | 'href'
+>
 
 export const BannerSlimDismiss = ({
   label = 'dismiss',

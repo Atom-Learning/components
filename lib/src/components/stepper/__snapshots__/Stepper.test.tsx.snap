@@ -2,7 +2,7 @@
 
 exports[`Stepper renders correctly with default direction changed 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -17,6 +17,11 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -60,7 +65,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-jMTgOB-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -69,7 +74,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
     height: 16px;
     width: 16px;
   }
@@ -155,46 +160,44 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
@@ -259,7 +262,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -278,7 +281,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fAhdck-cv"
       disabled=""
       type="button"
     >
@@ -323,7 +326,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-dfkxSu-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -334,7 +337,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 
 exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -349,6 +352,11 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -394,9 +402,10 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -405,7 +414,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-jMTgOB-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -414,7 +423,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
     height: 16px;
     width: 16px;
   }
@@ -512,7 +521,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     font-weight: 400;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -524,46 +533,44 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
@@ -628,7 +635,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -651,7 +658,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fAhdck-cv"
       disabled=""
       type="button"
     >
@@ -672,7 +679,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -708,7 +715,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-dfkxSu-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -719,7 +726,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 
 exports[`Stepper renders the correct number of bullets 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -734,6 +741,11 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -777,7 +789,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-jMTgOB-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -786,7 +798,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     gap: var(--space-2);
   }
 
-  .c-fkUJsw-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
     height: 16px;
     width: 16px;
   }
@@ -826,46 +838,44 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
@@ -897,7 +907,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -912,7 +922,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fAhdck-cv"
       disabled=""
       type="button"
     >
@@ -957,7 +967,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-jMTgOB-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-dfkxSu-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next

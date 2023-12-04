@@ -12,7 +12,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-fucOQC {
+  .c-gPnNdI {
     background: unset;
     border: unset;
     padding: unset;
@@ -22,36 +22,42 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fucOQC:focus,
-  .c-fucOQC:hover {
+  .c-gPnNdI:focus,
+  .c-gPnNdI:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fucOQC:active {
+  .c-gPnNdI:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dyvMgW > .c-fucOQC,
-  .c-jryFOR > .c-fucOQC,
-  .c-PJLV > .c-fucOQC,
-  .c-bYNGXt > .c-fucOQC {
+  .c-gPnNdI[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .c-dyvMgW > .c-gPnNdI,
+  .c-jryFOR > .c-gPnNdI,
+  .c-PJLV > .c-gPnNdI,
+  .c-bYNGXt > .c-gPnNdI {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-fucOQC::before,
-  .c-dyvMgW > .c-fucOQC::after,
-  .c-jryFOR > .c-fucOQC::before,
-  .c-jryFOR > .c-fucOQC::after,
-  .c-PJLV > .c-fucOQC::before,
-  .c-PJLV > .c-fucOQC::after,
-  .c-bYNGXt > .c-fucOQC::before,
-  .c-bYNGXt > .c-fucOQC::after {
+  .c-dyvMgW > .c-gPnNdI::before,
+  .c-dyvMgW > .c-gPnNdI::after,
+  .c-jryFOR > .c-gPnNdI::before,
+  .c-jryFOR > .c-gPnNdI::after,
+  .c-PJLV > .c-gPnNdI::before,
+  .c-PJLV > .c-gPnNdI::after,
+  .c-bYNGXt > .c-gPnNdI::before,
+  .c-bYNGXt > .c-gPnNdI::after {
     content: none;
   }
 
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -68,34 +74,29 @@ exports[`FieldWrapper component renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -133,24 +134,24 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fucOQC-bndJoy-size-sm {
+  .c-gPnNdI-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-fucOQC-bndJoy-size-sm::before {
+  .c-gPnNdI-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-fucOQC-bndJoy-size-sm::after {
+  .c-gPnNdI-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -160,7 +161,7 @@ exports[`FieldWrapper component renders 1`] = `
     color: var(--colors-danger);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -195,6 +196,10 @@ exports[`FieldWrapper component renders 1`] = `
     margin-top: var(--space-2);
   }
 
+  .c-hMRxhp-ijkHsGW-css {
+    margin-right: var(--space-2);
+  }
+
   .c-dyvMgW-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
@@ -214,7 +219,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-fucOQC c-fucOQC-bndJoy-size-sm"
+        class="c-gPnNdI c-gPnNdI-bndJoy-size-sm"
         href="https://example.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -223,7 +228,7 @@ exports[`FieldWrapper component renders 1`] = `
       </a>
     </div>
     <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
       id="example"
       name="example"
       type="text"
@@ -233,7 +238,7 @@ exports[`FieldWrapper component renders 1`] = `
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ijkHsGW-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

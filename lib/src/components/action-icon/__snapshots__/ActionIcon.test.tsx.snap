@@ -2,7 +2,7 @@
 
 exports[`ActionIcon component renders 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -12,14 +12,21 @@ exports[`ActionIcon component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -76,12 +83,12 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -93,30 +100,25 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-cmVfvW-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV"
+    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-PJLV"
     data-state="closed"
     type="button"
   >
@@ -127,7 +129,7 @@ exports[`ActionIcon component renders 1`] = `
 
 exports[`ActionIcon component renders an external link with the correct attributes 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -137,14 +139,21 @@ exports[`ActionIcon component renders an external link with the correct attribut
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -201,12 +210,12 @@ exports[`ActionIcon component renders an external link with the correct attribut
 }
 
 @media  {
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -218,23 +227,18 @@ exports[`ActionIcon component renders an external link with the correct attribut
 }
 
 @media  {
-  .c-fDzwZw-cmVfvW-cv {
+  .c-oUmPa-dQMrZR-cv {
     background: transparent;
     color: var(--colors-primary);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
+  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
+  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -242,7 +246,7 @@ exports[`ActionIcon component renders an external link with the correct attribut
   <a
     aria-disabled="false"
     aria-label="Mark as complete"
-    class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-PJLV"
+    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-PJLV"
     data-state="closed"
     href="https://www.google.com"
     rel="noopener noreferrer"

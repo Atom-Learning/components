@@ -2,7 +2,7 @@
 
 exports[`Button component Loading state renders a loading button 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -19,9 +19,15 @@ exports[`Button component Loading state renders a loading button 1`] = `
     width: max-content;
   }
 
-  .c-dbrbZt {
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -63,7 +69,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -72,18 +78,18 @@ exports[`Button component Loading state renders a loading button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
-  .c-fkUJsw-DdIlq-isLoading-true {
+  .c-kaaUSm-DdIlq-isLoading-true {
     cursor: not-allowed;
     opacity: 0.6;
     pointer-events: none;
@@ -102,68 +108,65 @@ exports[`Button component Loading state renders a loading button 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv {
+  .c-kaaUSm-ctZbUF-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ctZbUF-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):hover,
-  .c-fkUJsw-skNNT-cv:not([disabled]):focus {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):hover,
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):focus {
     text-decoration: none;
     color: hsla(228, 82%, 25%, 1);
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):active {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):active {
     color: hsla(228, 82%, 20%, 1);
   }
 }
@@ -177,7 +180,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-DdIlq-isLoading-true c-fkUJsw-gsycxF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-DdIlq-isLoading-true c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     <div
@@ -210,7 +213,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 exports[`Button component renders a button 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -226,10 +229,15 @@ exports[`Button component renders a button 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -238,38 +246,37 @@ exports[`Button component renders a button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-gsycxF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     BUTTON
@@ -279,7 +286,7 @@ exports[`Button component renders a button 1`] = `
 
 exports[`Button component renders a button with an icon 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -296,9 +303,15 @@ exports[`Button component renders a button with an icon 1`] = `
     width: max-content;
   }
 
-  .c-dbrbZt {
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -307,7 +320,7 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -316,12 +329,12 @@ exports[`Button component renders a button with an icon 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -329,81 +342,78 @@ exports[`Button component renders a button with an icon 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv {
+  .c-kaaUSm-ctZbUF-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ctZbUF-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):hover,
-  .c-fkUJsw-skNNT-cv:not([disabled]):focus {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):hover,
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):focus {
     text-decoration: none;
     color: hsla(228, 82%, 25%, 1);
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):active {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):active {
     color: hsla(228, 82%, 20%, 1);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-gsycxF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     type="button"
   >
     BUTTON 
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -417,7 +427,7 @@ exports[`Button component renders a button with an icon 1`] = `
 
 exports[`Button component renders a disabled button 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -433,10 +443,15 @@ exports[`Button component renders a disabled button 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -445,60 +460,58 @@ exports[`Button component renders a disabled button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-gsycxF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
     disabled=""
     type="button"
   >
@@ -509,7 +522,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 exports[`Button component renders a disabled warning outline button 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -525,10 +538,15 @@ exports[`Button component renders a disabled warning outline button 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -537,60 +555,58 @@ exports[`Button component renders a disabled warning outline button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md"
     disabled=""
     type="button"
   >
@@ -601,7 +617,7 @@ exports[`Button component renders a disabled warning outline button 1`] = `
 
 exports[`Button component renders a outline button 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -617,10 +633,15 @@ exports[`Button component renders a outline button 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -629,60 +650,58 @@ exports[`Button component renders a outline button 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fSssiS-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fAhdck-cv"
     type="button"
   >
     BUTTON
@@ -692,7 +711,7 @@ exports[`Button component renders a outline button 1`] = `
 
 exports[`Button component renders a outline button with secondary theme 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -708,10 +727,15 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
     white-space: nowrap;
     width: max-content;
   }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
 }
 
 @media  {
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -720,82 +744,79 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
+  .c-kaaUSm-dfkxSu-cv {
     background: var(--colors-primary);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-dfkxSu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
     background: var(--colors-primaryMid);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
+  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
     background: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-fAhdck-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-fAhdck-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):hover,
+  .c-kaaUSm-fAhdck-cv:not([disabled]):focus {
     text-decoration: none;
     color: var(--colors-primaryMid);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
+  .c-kaaUSm-fAhdck-cv:not([disabled]):active {
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv {
+  .c-kaaUSm-ctZbUF-cv {
     border: 1px solid;
     border-color: currentColor;
     color: var(--colors-primaryDark);
   }
 
-  .c-fkUJsw-skNNT-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ctZbUF-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):hover,
-  .c-fkUJsw-skNNT-cv:not([disabled]):focus {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):hover,
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):focus {
     text-decoration: none;
     color: hsla(228, 82%, 25%, 1);
   }
 
-  .c-fkUJsw-skNNT-cv:not([disabled]):active {
+  .c-kaaUSm-ctZbUF-cv:not([disabled]):active {
     color: hsla(228, 82%, 20%, 1);
   }
 }
 
 <div>
   <button
-    class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-skNNT-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-ctZbUF-cv"
     type="button"
   >
     BUTTON

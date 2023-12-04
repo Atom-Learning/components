@@ -106,7 +106,7 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-fucOQC {
+  .c-gPnNdI {
     background: unset;
     border: unset;
     padding: unset;
@@ -116,32 +116,38 @@ exports[`MarkdownContent component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-fucOQC:focus,
-  .c-fucOQC:hover {
+  .c-gPnNdI:focus,
+  .c-gPnNdI:hover {
     color: var(--colors-primaryMid);
     text-decoration: underline;
   }
 
-  .c-fucOQC:active {
+  .c-gPnNdI:active {
     color: var(--colors-primaryDark);
   }
 
-  .c-dyvMgW > .c-fucOQC,
-  .c-jryFOR > .c-fucOQC,
-  .c-PJLV > .c-fucOQC,
-  .c-bYNGXt > .c-fucOQC {
+  .c-gPnNdI[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .c-dyvMgW > .c-gPnNdI,
+  .c-jryFOR > .c-gPnNdI,
+  .c-PJLV > .c-gPnNdI,
+  .c-bYNGXt > .c-gPnNdI {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-fucOQC::before,
-  .c-dyvMgW > .c-fucOQC::after,
-  .c-jryFOR > .c-fucOQC::before,
-  .c-jryFOR > .c-fucOQC::after,
-  .c-PJLV > .c-fucOQC::before,
-  .c-PJLV > .c-fucOQC::after,
-  .c-bYNGXt > .c-fucOQC::before,
-  .c-bYNGXt > .c-fucOQC::after {
+  .c-dyvMgW > .c-gPnNdI::before,
+  .c-dyvMgW > .c-gPnNdI::after,
+  .c-jryFOR > .c-gPnNdI::before,
+  .c-jryFOR > .c-gPnNdI::after,
+  .c-PJLV > .c-gPnNdI::before,
+  .c-PJLV > .c-gPnNdI::after,
+  .c-bYNGXt > .c-gPnNdI::before,
+  .c-bYNGXt > .c-gPnNdI::after {
     content: none;
   }
 
@@ -310,18 +316,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-fucOQC-gvmVBy-size-md {
+  .c-gPnNdI-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fucOQC-gvmVBy-size-md::before {
+  .c-gPnNdI-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fucOQC-gvmVBy-size-md::after {
+  .c-gPnNdI-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -685,7 +691,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
         href="http://dev.nodeca.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -697,7 +703,7 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
         rel="noopener noreferrer"
         target="_blank"

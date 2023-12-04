@@ -316,7 +316,7 @@ exports[`BannerSlim component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -331,6 +331,11 @@ exports[`BannerSlim component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-lppGPL {
@@ -355,7 +360,7 @@ exports[`BannerSlim component renders 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -397,7 +402,7 @@ exports[`BannerSlim component renders 1`] = `
     width: 100%;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -406,12 +411,12 @@ exports[`BannerSlim component renders 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 }
@@ -449,7 +454,7 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -463,37 +468,36 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 }
 
 @media  {
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
@@ -518,7 +522,7 @@ exports[`BannerSlim component renders 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
@@ -844,7 +848,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     font-weight: 600;
   }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -861,11 +865,16 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     width: max-content;
   }
 
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
   .c-lppGPL {
     padding: var(--space-4);
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -875,22 +884,25 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-cCfVEt {
-    flex-shrink: 0;
   }
 }
 
@@ -911,7 +923,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -953,7 +965,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     width: 100%;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -962,35 +974,35 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+  .c-PJLV-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
-  .c-cCfVEt-jWCfIe-containerSize-sm {
+  .c-PJLV-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
@@ -1030,7 +1042,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -1043,51 +1055,45 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-cCfVEt-iNjdzM-containerSize-md {
+    .c-PJLV-iNjdzM-containerSize-md {
       position: static;
     }
 }
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 
   .c-cBoNQA-cRYaBy-cv {
@@ -1096,14 +1102,14 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-CfEHP-wrap-nowrap c-dhzjXW-fhqUHx-align-center c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL c-lppGPL-jUZcer-sizeWorkaround-md"
     role="banner"
   >
     <div
@@ -1128,20 +1134,20 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-otpKd-cv c-cCfVEt c-cCfVEt-jaxTMC-emphasis-highContrast c-cCfVEt-jWCfIe-containerSize-sm c-cCfVEt-iNjdzM-containerSize-md"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hXLsaq-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1471,7 +1477,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     font-weight: 600;
   }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -1488,11 +1494,16 @@ exports[`BannerSlim component renders sm variant 1`] = `
     width: max-content;
   }
 
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
   .c-lppGPL {
     padding: var(--space-4);
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -1502,22 +1513,25 @@ exports[`BannerSlim component renders sm variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
-  }
-
-  .c-cCfVEt {
-    flex-shrink: 0;
   }
 }
 
@@ -1538,7 +1552,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     gap: var(--space-4);
   }
 
-  .c-bRupYu-cobKBi-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
     --banner-heading-color: var(--colors-foreground7plus);
@@ -1580,7 +1594,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
     width: 100%;
   }
 
-  .c-fkUJsw-dXsdwv-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
@@ -1589,35 +1603,35 @@ exports[`BannerSlim component renders sm variant 1`] = `
     gap: var(--space-3);
   }
 
-  .c-fkUJsw-dXsdwv-size-md .c-dbrbZt {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
     height: 20px;
     width: 20px;
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
   }
 
-  .c-cCfVEt-jaxTMC-emphasis-highContrast {
+  .c-PJLV-jaxTMC-emphasis-bold {
     color: white !important;
   }
 
-  .c-cCfVEt-jWCfIe-containerSize-sm {
+  .c-PJLV-jWCfIe-containerSize-sm {
     position: absolute;
     top: var(--space-4);
     right: var(--space-4);
@@ -1657,7 +1671,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -1670,51 +1684,45 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-cCfVEt-iNjdzM-containerSize-md {
+    .c-PJLV-iNjdzM-containerSize-md {
       position: static;
     }
 }
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-jlrmAu-cv {
     background: white;
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-jlrmAu-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
     color: var(--colors-primary);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 
   .c-cBoNQA-cRYaBy-cv {
@@ -1723,14 +1731,14 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-bRupYu-cobKBi-emphasis-highContrast t-grLKLB c-lppGPL"
+    class="c-dhzjXW c-bRupYu c-dhzjXW-iTKOFX-direction-column c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-JrrAq-align-flex-start c-dhzjXW-gkvzBZ-gap-4 c-bRupYu-cobKBi-emphasis-bold t-grLKLB c-lppGPL"
     role="banner"
   >
     <div
@@ -1755,7 +1763,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm"
     >
       <button
-        class="c-fkUJsw c-fkUJsw-dXsdwv-size-md c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-iRJCoR-cv c-fkUJsw-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA

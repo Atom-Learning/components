@@ -2,7 +2,7 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,18 +19,17 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -42,9 +41,10 @@ exports[`SearchInput component renders 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -59,13 +59,13 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -101,13 +101,13 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -126,7 +126,7 @@ exports[`SearchInput component renders 1`] = `
 
 exports[`SearchInput component renders clear button when non-empty defaultValue 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -143,18 +143,17 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -166,9 +165,10 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -181,7 +181,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     pointer-events: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -191,9 +191,15 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -246,13 +252,13 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -264,7 +270,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 20px;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -275,23 +281,18 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -312,7 +313,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     transform: translateY(-50%);
   }
 
-  .c-fDzwZw-igyKUXm-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -325,19 +326,19 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value="testingWhenDefaultValue"
     />
     <button
       aria-label="clearWhenDefaultValue"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-igyKUXm-css c-PJLV"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igyKUXm-css c-PJLV"
       data-state="closed"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -352,7 +353,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 exports[`SearchInput component renders lg size 1`] = `
 @media  {
-  .c-fZTBsJ {
+  .c-cHbqOs {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -369,18 +370,17 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
+  .c-cHbqOs:focus {
     border-color: var(--colors-primary);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-cHbqOs[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-cHbqOs::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -392,9 +392,10 @@ exports[`SearchInput component renders lg size 1`] = `
     display: none;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -407,7 +408,7 @@ exports[`SearchInput component renders lg size 1`] = `
     pointer-events: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -417,9 +418,15 @@ exports[`SearchInput component renders lg size 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -472,13 +479,13 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-fZTBsJ-fwoCmE-size-md {
+  .c-cHbqOs-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -490,7 +497,7 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 20px;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
@@ -499,7 +506,7 @@ exports[`SearchInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-fZTBsJ-jAZHIx-size-lg {
+  .c-cHbqOs-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -529,7 +536,7 @@ exports[`SearchInput component renders lg size 1`] = `
     transform: translateY(-50%);
   }
 
-  .c-fDzwZw-igyKUXm-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -542,13 +549,13 @@ exports[`SearchInput component renders lg size 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-fZTBsJ c-fZTBsJ-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -6,9 +6,10 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: flex;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -26,7 +27,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -36,9 +37,15 @@ exports[`renders SectionMessage component and has no programmatically detectable
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -108,7 +115,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     gap: var(--space-3);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -148,7 +155,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: table;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -172,23 +179,18 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-hXLsaq-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
     color: var(--colors-primaryMid);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
     color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
   }
 }
 
@@ -197,7 +199,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     flex-grow: 1;
   }
 
-  .c-dbrbZt-ihCBfwK-css {
+  .c-hMRxhp-ihCBfwK-css {
     margin: auto;
     position: absolute;
     left: var(--space-4);
@@ -222,7 +224,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-fDzwZw-iefwZNm-css {
+  .c-oUmPa-iefwZNm-css {
     margin: auto;
     position: absolute;
     top: var(--space-2);
@@ -239,7 +241,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihCBfwK-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ihCBfwK-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -274,13 +276,13 @@ exports[`renders SectionMessage component and has no programmatically detectable
       </div>
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
+        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-oUmPa-iefwZNm-css c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
