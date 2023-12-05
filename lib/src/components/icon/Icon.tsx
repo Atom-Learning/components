@@ -6,6 +6,7 @@ import { Override } from '~/utilities/types'
 export const StyledIcon = styled('svg', {
   display: 'inline-block',
   fill: 'none',
+  flexShrink: 0,
   stroke: 'currentcolor',
   strokeLinecap: 'round',
   strokeLinejoin: 'round',

@@ -814,21 +814,21 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     width: 100%;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
   }
 
-  .c-jTrYmp {
-    flex-shrink: 0;
+  .c-cqsEVF {
     transition: transform 300ms;
   }
 
-  [data-state="open"] > .c-jTrYmp {
+  [data-state="open"] > .c-cqsEVF {
     transform: rotate(180deg);
   }
 }
@@ -871,7 +871,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     gap: var(--space-3);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -978,7 +978,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
             </div>
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-jTrYmp"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-cqsEVF"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >

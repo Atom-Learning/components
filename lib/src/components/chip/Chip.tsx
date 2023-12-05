@@ -24,9 +24,7 @@ export const StyledChipContent = styled('span', {
 })
 
 const toIconSize = { sm: 'sm', md: 'sm', lg: 'md' }
-export const StyledChipIcon = styled(Icon, {
-  flexShrink: 0
-})
+
 export const ChipIcon: typeof Icon = ({ ...props }) => {
   const rootContext = React.useContext(ChipRootContext)
   const { size } = rootContext
@@ -34,7 +32,7 @@ export const ChipIcon: typeof Icon = ({ ...props }) => {
     () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
     [size]
   )
-  return <StyledChipIcon {...props} size={iconSize} />
+  return <Icon {...props} size={iconSize} />
 }
 
 const ChipContent = ({ children, ...rest }) => {

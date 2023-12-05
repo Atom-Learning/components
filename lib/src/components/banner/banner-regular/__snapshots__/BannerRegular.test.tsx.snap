@@ -408,7 +408,7 @@ exports[`BannerRegular component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-kaaUSm-jMTgOB-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -417,7 +417,7 @@ exports[`BannerRegular component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-kaaUSm-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
     height: 16px;
     width: 16px;
   }
@@ -481,7 +481,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-kaaUSm-dbnTtJ-size-md {
+    .c-kaaUSm-jiYjGq-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
@@ -492,7 +492,7 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-kaaUSm-dbnTtJ-size-md .c-dbrbZt {
+    .c-kaaUSm-jiYjGq-size-md .c-hMRxhp {
       height: 20px;
       width: 20px;
     }
@@ -569,7 +569,6 @@ exports[`BannerRegular component renders 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
-        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -577,13 +576,13 @@ exports[`BannerRegular component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -952,7 +951,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     object-fit: cover;
   }
 
-  .c-iPabyW {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -962,19 +961,21 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-iPabyW[disabled] {
+  .c-oUmPa[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -1047,7 +1048,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     gap: var(--space-2);
   }
 
-  .c-kaaUSm-jMTgOB-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
@@ -1056,7 +1057,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     gap: var(--space-2);
   }
 
-  .c-kaaUSm-jMTgOB-size-sm .c-dbrbZt {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
     height: 16px;
     width: 16px;
   }
@@ -1069,16 +1070,16 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-iPabyW-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-iPabyW-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -1135,7 +1136,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-kaaUSm-dbnTtJ-size-md {
+    .c-kaaUSm-jiYjGq-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
@@ -1146,7 +1147,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-kaaUSm-dbnTtJ-size-md .c-dbrbZt {
+    .c-kaaUSm-jiYjGq-size-md .c-hMRxhp {
       height: 20px;
       width: 20px;
     }
@@ -1165,7 +1166,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-iPabyW-fpPlqP-size-sm {
+    .c-oUmPa-fpPlqP-size-sm {
       height: var(--sizes-3);
       width: var(--sizes-3);
     }
@@ -1238,7 +1239,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
       </h2>
       <p
         class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
-        emphasis="bold"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -1246,13 +1246,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-kaaUSm c-kaaUSm-jMTgOB-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-dbnTtJ-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -1270,13 +1270,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     </div>
     <button
       aria-label="dismiss banner"
-      class="c-iPabyW c-iPabyW-PrXKS-size-md c-iPabyW-rloUt-isRounded-true c-iPabyW-fpPlqP-size-sm c-gLBWZd"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-fpPlqP-size-sm c-gLBWZd"
       data-testid="dismiss"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
