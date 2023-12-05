@@ -45,15 +45,15 @@ export type TBannerContainerProps = React.ComponentProps<
 
 export const BannerContainer = ({
   colorScheme = {},
-  value,
   onDismiss,
+  dismissed,
   ...props
 }: TBannerContainerProps): JSX.Element => {
   const { emphasis } = useBannerContext()
 
   return (
     <ColorScheme {...colorScheme} asChild>
-      <Dismissible asChild value={value} onDismiss={onDismiss}>
+      <Dismissible asChild onDismiss={onDismiss} dismissed={dismissed}>
         <StyledBannerContainer role="banner" emphasis={emphasis} {...props} />
       </Dismissible>
     </ColorScheme>

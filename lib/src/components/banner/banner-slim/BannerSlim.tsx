@@ -20,12 +20,11 @@ export const BannerSlim: React.FC<
   Button: typeof BannerSlimButton
   Dismiss: typeof BannerSlimDismiss
   Actions: typeof BannerSlimActions
-} = ({ colorScheme, size, emphasis, value, onDismiss, ...rest }) => {
+} = ({ colorScheme, size, emphasis, onDismiss, ...rest }) => {
   return (
     <Banner size={size} emphasis={emphasis}>
       <BannerSlimContainer
         colorScheme={colorScheme}
-        value={value}
         onDismiss={onDismiss}
         {...rest}
       />
