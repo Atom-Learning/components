@@ -42,7 +42,6 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<BannerSlim
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
-        value=""
       >
         <BannerSlim.Content>
           <BannerSlim.Image src="https://picsum.photos/400/400" />
@@ -66,7 +65,6 @@ tabs:
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
         size="sm"
-        value=""
       >
         <BannerSlim.Content>
           <BannerSlim.Image src="https://picsum.photos/400/400" />
@@ -91,7 +89,6 @@ tabs:
         colorScheme={{ base: 'blue1' }}
         emphasis="subtle"
         size="md"
-        value=""
       >
         <BannerSlim.Content>
           <BannerSlim.Image src="https://picsum.photos/400/400" />
@@ -119,7 +116,6 @@ tabs:
         colorScheme={{ base: 'blue2' }}
         emphasis="subtle"
         size="md"
-        value=""
         onDismiss={() => console.log('Dismissed')}
       >
         <BannerSlim.Content>
@@ -146,7 +142,6 @@ tabs:
         colorScheme={{ base: 'blue2' }}
         emphasis="subtle"
         size="sm"
-        value=""
         onDismiss={() => console.log('Dismissed')}
       >
         <BannerSlim.Content>

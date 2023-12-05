@@ -5,27 +5,42 @@ export interface IDismissibleRootContext {
   disabled?: boolean
   isDismissed: boolean
   setIsDismissed: (boolean) => void
+  onDismiss: () => void
 }
 
 export const DismissibleRootContext =
   React.createContext<IDismissibleRootContext>({
     isDismissed: false,
-    setIsDismissed: () => null
+    setIsDismissed: () => undefined,
+    onDismiss: () => undefined
   })
 
 export interface IDismissibleRootProps {
   disabled?: boolean
+  dismissed?: boolean
+  onDismiss: () => void
 }
 
 export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
+  dismissed: controlledIsDismissed,
   children,
-  disabled
+  disabled,
+  onDismiss
 }) => {
   const [isDismissed, setIsDismissed] = React.useState(false)
-  const value = React.useMemo<IDismissibleRootContext>(
-    () => ({ disabled, isDismissed, setIsDismissed }),
-    [disabled, isDismissed]
-  )
+
+  const value = React.useMemo<IDismissibleRootContext>(() => {
+    const isControlled = typeof controlledIsDismissed === 'boolean'
+    return {
+      disabled,
+      isDismissed: isControlled
+        ? (controlledIsDismissed as boolean)
+        : isDismissed,
+      setIsDismissed: isControlled ? () => null : setIsDismissed,
+      onDismiss
+    }
+  }, [disabled, isDismissed, onDismiss, controlledIsDismissed])
+
   return (
     <DismissibleRootContext.Provider value={value}>
       {children}
@@ -33,25 +48,18 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
   )
 }
 
-export interface IDismissibleGroupItemProps {
+export interface IDismissibleProps {
   asChild?: boolean
-  value: React.ReactText
-  onDismiss?: (value: React.ReactText) => void
+  onDismiss?: () => void
 }
 
-const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
+const DismissibleRootInternal: React.FC<IDismissibleProps> = ({
   asChild = false,
-  value,
-  onDismiss,
   ...rest
 }) => {
   const rootContext = React.useContext(DismissibleRootContext)
 
   const { isDismissed, disabled } = rootContext
-
-  React.useEffect(() => {
-    if (isDismissed) onDismiss?.(value)
-  }, [isDismissed])
 
   if (isDismissed) return null
 
@@ -61,9 +69,13 @@ const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
 }
 
 export const DismissibleRoot: React.FC<
-  IDismissibleGroupItemProps & IDismissibleRootProps
-> = ({ disabled = false, ...rest }) => (
-  <DismissibleRootProvider disabled={disabled}>
+  IDismissibleProps & IDismissibleRootProps
+> = ({ disabled = false, dismissed, onDismiss, ...rest }) => (
+  <DismissibleRootProvider
+    dismissed={dismissed}
+    disabled={disabled}
+    onDismiss={onDismiss}
+  >
     <DismissibleRootInternal {...rest} />
   </DismissibleRootProvider>
 )
