@@ -1,10 +1,11 @@
 import * as React from 'react'
+import type { CheckboxGroupItemValue } from '../CheckboxGroup.types'
 
 type CheckboxGroupCheckedContextValue = {
-  checked: React.ReactText[]
+  checked: CheckboxGroupItemValue[]
   handleItemCheckedChange: (
     newItemChecked: boolean,
-    itemValue: React.ReactText
+    itemValue: CheckboxGroupItemValue
   ) => void
 }
 

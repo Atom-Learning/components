@@ -6,8 +6,10 @@ import {
   CheckboxGroupMountedContext
 } from './CheckboxGroup.context'
 
-type CheckboxGroupItemProps = {
-  value: React.ReactText
+type CheckboxGroupItemProps = Omit<
+  React.ComponentProps<typeof Checkbox>,
+  'onCheckedChange' | 'checked' | 'defaultChecked'
+> & {
   onCheckedChange?: (newChecked: boolean) => void
 }
 
@@ -40,6 +42,7 @@ export const CheckboxGroupItem = ({
     <Checkbox
       onCheckedChange={handleItemCheckedChange}
       checked={checkedItems.includes(value)}
+      title={String(value)}
       {...rest}
     />
   )

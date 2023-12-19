@@ -1,10 +1,11 @@
 import * as React from 'react'
+import type { CheckboxGroupItemValue } from '../CheckboxGroup.types'
 
 type CheckboxGroupMountedContextValue = {
-  mounted: React.ReactText[]
+  mounted: CheckboxGroupItemValue[]
   handleItemMountedChange: (
     newItemMounted: boolean,
-    itemValue: React.ReactText
+    itemValue: CheckboxGroupItemValue
   ) => void
 }
 
@@ -18,7 +19,7 @@ export const CheckboxGroupMountedProvider = (props) => {
   const { handleItemMountedChange: handleItemMountedChangeFurtherUpContext } =
     React.useContext(CheckboxGroupMountedContext)
 
-  const [mounted, setMounted] = React.useState<React.ReactText[]>([])
+  const [mounted, setMounted] = React.useState<CheckboxGroupItemValue[]>([])
   const handleItemMountedChange = React.useCallback(
     (newItemMounted, itemValue) => {
       handleItemMountedChangeFurtherUpContext?.(newItemMounted, itemValue)

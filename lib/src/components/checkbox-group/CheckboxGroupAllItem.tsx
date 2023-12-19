@@ -6,12 +6,14 @@ import {
   CheckboxGroupMountedContext
 } from './CheckboxGroup.context'
 
-type CheckboxGroupAllItemProps = {
-  onCheckedChange?: (newChecked: boolean | 'indeterminate') => void
-}
+type CheckboxGroupAllItemProps = Omit<
+  React.ComponentProps<typeof Checkbox>,
+  'checked' | 'defaultChecked'
+>
 
 export const CheckboxGroupAllItem = ({
   onCheckedChange,
+  title = 'all',
   ...rest
 }: CheckboxGroupAllItemProps): JSX.Element => {
   const {
@@ -31,26 +33,20 @@ export const CheckboxGroupAllItem = ({
   }
 
   const isAllChecked = (() => {
-    if (
-      mountedItems.every((mountedItem) => checkedItems.includes(mountedItem))
-    ) {
+    if (mountedItems.every((mountedItem) => checkedItems.includes(mountedItem)))
       return true
-    }
 
-    if (
-      mountedItems.some((mountedItem) => checkedItems.includes(mountedItem))
-    ) {
+    if (mountedItems.some((mountedItem) => checkedItems.includes(mountedItem)))
       return 'indeterminate'
-    }
 
     return false
   })()
 
   return (
     <Checkbox
-      onClick={(e) => e.stopPropagation()}
       onCheckedChange={handleItemCheckedChange}
       checked={isAllChecked}
+      title={title}
       {...rest}
     />
   )
