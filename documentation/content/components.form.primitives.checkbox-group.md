@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      `CheckboxGroup` is a combination of checkbox input controls that enables
-      the user to select or deselect values in a group.
+      `CheckboxGroup` is a combination of checkbox input controls that
+      enables the user to select or deselect values in a group.
 
 
       Can be used controlled or uncontrolled.
@@ -31,8 +31,8 @@ tabs:
             <CheckboxGroup.Item value={3} />
             <CheckboxGroup.Sub>
             <Flex direction="column" gap={1} css={{ paddingLeft: '$4' }}>
-              <CheckboxGroup.AllItem />
-              <CheckboxGroup.Item value='1 but nested' />
+              <CheckboxGroup.AllItem title="all nested" defaultChecked={true} />
+              <CheckboxGroup.Item value='1 but nested' defaultChecked={true} />
               <CheckboxGroup.Item value='2 but nested' />
             </Flex>
           </CheckboxGroup.Sub>
