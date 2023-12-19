@@ -29,6 +29,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all 50ms ease-out',
+  flexShrink: 0,
   '&[data-state="checked"]': {
     backgroundColor: '$primary',
     borderColor: '$primary'
@@ -68,17 +69,17 @@ const toIconSize = {
 type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
 
 export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size = 'md', ...props }, ref) => {
+  ({ size = 'md', checked, ...rest }, ref) => {
     const iconSize = React.useMemo(
       () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
       [size]
     )
-
+    console.log({ rest })
     return (
-      <StyledCheckbox {...props} size={size} ref={ref}>
+      <StyledCheckbox ref={ref} checked={checked} size={size} {...rest}>
         <StyledIndicator asChild>
           <Icon
-            is={props.checked === 'indeterminate' ? Minus : Ok}
+            is={checked === 'indeterminate' ? Minus : Ok}
             css={{
               strokeWidth: '3'
             }}
