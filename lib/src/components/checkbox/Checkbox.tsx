@@ -74,7 +74,7 @@ export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
       () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
       [size]
     )
-    console.log({ rest })
+
     return (
       <StyledCheckbox ref={ref} checked={checked} size={size} {...rest}>
         <StyledIndicator asChild>
