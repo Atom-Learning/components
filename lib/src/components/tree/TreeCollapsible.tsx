@@ -27,12 +27,17 @@ const StyledCollapsibleTreeItemRoot = styled(Root, {
 
 type TreeCollapsibleProps = React.ComponentProps<typeof Root> &
   React.ComponentProps<typeof StyledCollapsibleTreeItemRoot>
-export const TreeCollapsible = (props: TreeCollapsibleProps): JSX.Element => {
-  return (
-    <TreeListItem>
-      <TreeCollapsibleProvider>
-        <StyledCollapsibleTreeItemRoot {...props} />
-      </TreeCollapsibleProvider>
-    </TreeListItem>
-  )
-}
+export const TreeCollapsible = React.forwardRef(
+  (
+    props: TreeCollapsibleProps,
+    ref: React.ForwardedRef<HTMLLIElement>
+  ): JSX.Element => {
+    return (
+      <TreeListItem ref={ref}>
+        <TreeCollapsibleProvider>
+          <StyledCollapsibleTreeItemRoot {...props} />
+        </TreeCollapsibleProvider>
+      </TreeListItem>
+    )
+  }
+)

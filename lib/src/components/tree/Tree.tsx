@@ -15,24 +15,25 @@ const StyledRoot = styled(TreeList, {})
 
 type TreeProps = React.ComponentProps<typeof StyledRoot>
 
-type TreeType = React.FC<TreeProps> & {
-  Collapsible: typeof TreeCollapsible
-  CollapsibleContent: typeof TreeCollapsibleContent
-  CollapsibleTrigger: typeof TreeCollapsibleTrigger
-  Item: typeof TreeItem
-  ItemContent: typeof TreeItemContent
-  Icon: typeof TreeIcon
-  Text: typeof TreeText
-}
+export const TreeRoot = React.forwardRef(
+  (
+    { children, ...rest }: TreeProps,
+    ref: React.ForwardedRef<HTMLUListElement>
+  ) => {
+    return (
+      <StyledRoot {...rest} ref={ref}>
+        {children}
+      </StyledRoot>
+    )
+  }
+)
 
-export const Tree = (({ children, ...rest }) => {
-  return <StyledRoot {...rest}>{children}</StyledRoot>
-}) as TreeType
-
-Tree.Collapsible = TreeCollapsible
-Tree.CollapsibleContent = TreeCollapsibleContent
-Tree.CollapsibleTrigger = TreeCollapsibleTrigger
-Tree.Item = TreeItem
-Tree.ItemContent = TreeItemContent
-Tree.Icon = TreeIcon
-Tree.Text = TreeText
+export const Tree = Object.assign(TreeRoot, {
+  Collapsible: TreeCollapsible,
+  CollapsibleContent: TreeCollapsibleContent,
+  CollapsibleTrigger: TreeCollapsibleTrigger,
+  Item: TreeItem,
+  ItemContent: TreeItemContent,
+  Icon: TreeIcon,
+  Text: TreeText
+})

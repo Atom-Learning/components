@@ -18,25 +18,31 @@ type TreeCollapsibleContentProps = React.ComponentProps<
 > &
   React.ComponentProps<typeof TreeList>
 
-export const TreeCollapsibleContent = ({
-  children,
-  ...rest
-}: TreeCollapsibleContentProps): JSX.Element => {
-  const { triggerRef } = React.useContext(TreeCollapsibleContext)
+export const TreeCollapsibleContent = React.forwardRef(
+  (
+    { children, ...rest }: TreeCollapsibleContentProps,
+    ref: React.ForwardedRef<HTMLUListElement>
+  ): JSX.Element => {
+    const { triggerRef } = React.useContext(TreeCollapsibleContext)
 
-  const handleOnKeydown = (e) => {
-    if (!triggerRef?.current) return
-    if (e.key === 'Escape') {
-      e.stopPropagation()
-      e.preventDefault()
-      triggerRef.current.focus()
-      triggerRef.current.click()
+    const handleOnKeydown = (e) => {
+      if (!triggerRef?.current) return
+      if (e.key === 'Escape') {
+        e.stopPropagation()
+        e.preventDefault()
+        triggerRef.current.focus()
+        triggerRef.current.click()
+      }
     }
-  }
 
-  return (
-    <StyledTreeCollapsibleContent onKeyDown={handleOnKeydown} {...rest} asChild>
-      <TreeList>{children}</TreeList>
-    </StyledTreeCollapsibleContent>
-  )
-}
+    return (
+      <StyledTreeCollapsibleContent
+        onKeyDown={handleOnKeydown}
+        {...rest}
+        asChild
+      >
+        <TreeList ref={ref}>{children}</TreeList>
+      </StyledTreeCollapsibleContent>
+    )
+  }
+)

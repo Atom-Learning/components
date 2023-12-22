@@ -6,34 +6,34 @@ exports[`Tree renders 1`] = `
     display: flex;
   }
 
-  .c-YdvNk {
+  .c-lbSwXg {
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-  .c-YdvNk .c-YdvNk {
+  .c-lbSwXg .c-lbSwXg {
     padding-left: var(--space-4);
   }
 
-  .c-YdvNk .c-YdvNk .c-YdvNk {
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg {
     padding-left: var(--space-5);
   }
 
-  .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk {
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
     padding-left: var(--space-7);
   }
 
-  .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk {
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
     padding-left: var(--space-8);
   }
 
-  .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk .c-YdvNk {
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
     padding-left: var(--space-9);
   }
 
-  .c-YdvNk > *:not(:first-child) {
+  .c-jiJsop:not(:first-child) {
     margin-top: var(--space-0);
   }
 
@@ -130,10 +130,6 @@ exports[`Tree renders 1`] = `
     flex-direction: column;
   }
 
-  .c-dhzjXW-hAhhEs-gap-1 {
-    gap: var(--space-1);
-  }
-
   .c-dhzjXW-jroWjL-align-center {
     align-items: center;
   }
@@ -194,10 +190,10 @@ exports[`Tree renders 1`] = `
 
 <div>
   <ul
-    class="c-dhzjXW c-YdvNk c-dhzjXW-iTKOFX-direction-column c-dhzjXW-hAhhEs-gap-1 c-PJLV"
+    class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-PJLV"
   >
     <li
-      class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
     >
       <div
         class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -210,7 +206,7 @@ exports[`Tree renders 1`] = `
       </div>
     </li>
     <li
-      class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
     >
       <div
         class="c-fGHEql"

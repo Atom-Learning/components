@@ -22,9 +22,6 @@ const StyledList = styled(Flex, {
   },
   '& & & & & &': {
     pl: '$space$9'
-  },
-  '& > *:not(:first-child)': {
-    mt: '$0'
   }
 })
 
@@ -38,6 +35,8 @@ export const TreeList = React.forwardRef(
     props: TreeListProps,
     ref: React.ForwardedRef<HTMLUListElement>
   ): JSX.Element => (
-    <StyledList as="ul" ref={ref} gap={1} {...props} direction="column" />
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore: Stitches polymorphic components issue due to `as="ul"`
+    <StyledList as="ul" ref={ref} {...props} direction="column" />
   )
 )
