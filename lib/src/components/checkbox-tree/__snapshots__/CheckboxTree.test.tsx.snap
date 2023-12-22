@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxTree component renders a checkbox 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-lbSwXg {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .c-lbSwXg .c-lbSwXg {
+    padding-left: var(--space-4);
+  }
+
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg {
+    padding-left: var(--space-5);
+  }
+
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
+    padding-left: var(--space-7);
+  }
+
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
+    padding-left: var(--space-8);
+  }
+
+  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
+    padding-left: var(--space-9);
+  }
+
+  .c-jiJsop:not(:first-child) {
+    margin-top: var(--space-0);
+  }
+
+  .c-lYTUW {
+    position: relative;
+    min-height: var(--sizes-3);
+    padding-left: var(--space-6);
+  }
+
+  .c-cFpcyF {
+    max-width: 100%;
+  }
+
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .c-bULSRl {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+    flex-shrink: 0;
+  }
+
+  .c-bULSRl[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-bULSRl[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-bULSRl:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-bULSRl[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-bWcumU {
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .c-oUmPa {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hBEOJc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+
+  .c-hBEOJc .c-hMRxhp {
+    transition: transform 300ms;
+  }
+
+  .c-hBEOJc[data-state="closed"] > .c-hMRxhp {
+    transform: rotate(-90deg);
+  }
+
+  .c-hBEOJc[data-state="open"] > .c-hMRxhp {
+    transform: rotate(0deg);
+  }
+
+  .c-gsmDXe {
+    cursor: pointer;
+  }
+
+  .c-rvbcR[data-state="closed"] {
+    display: none;
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-bULSRl-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-fmPQHp-noCapsize-true::before,
+  .c-dyvMgW-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
+  .c-oUmPa-elrktp-size-sm {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  .c-oUmPa-hXLsaq-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+}
+
+@media  {
+  .c-hMRxhp-igiJmlC-css {
+    stroke-width: 3;
+  }
+}
+
+<div>
+  <ul
+    class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-PJLV PJLV"
+  >
+    <li
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+    >
+      <div
+        class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      >
+        <label
+          class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+        >
+          <button
+            aria-checked="false"
+            class="c-bULSRl c-bULSRl-kupcZn-size-md"
+            data-state="unchecked"
+            role="checkbox"
+            title="top level"
+            type="button"
+            value="on"
+          />
+          <span
+            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+          >
+            Top level
+          </span>
+        </label>
+      </div>
+    </li>
+    <li
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+    >
+      <div
+        class="c-fGHEql PJLV"
+        data-state="closed"
+      >
+        <div
+          class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+        >
+          <button
+            aria-controls="radix-1"
+            aria-expanded="false"
+            aria-label="Open: Top level trigger"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+            data-state="closed"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+          <label
+            class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <button
+              aria-checked="false"
+              class="c-bULSRl c-bULSRl-kupcZn-size-md"
+              data-state="unchecked"
+              role="checkbox"
+              title="top level all item"
+              type="button"
+              value="on"
+            />
+            <span
+              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+            >
+              Trigger With Submenu
+            </span>
+          </label>
+        </div>
+        <ul
+          class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
+          data-state="closed"
+          id="radix-1"
+          style="transition-duration: 0s; animation-name: none;"
+        >
+          <li
+            class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <div
+              class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <label
+                class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+              >
+                <button
+                  aria-checked="false"
+                  class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                  data-state="unchecked"
+                  role="checkbox"
+                  title="1"
+                  type="button"
+                  value="on"
+                />
+                <span
+                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                >
+                  1
+                </span>
+              </label>
+            </div>
+          </li>
+          <li
+            class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <div
+              class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            >
+              <label
+                class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+              >
+                <button
+                  aria-checked="false"
+                  class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                  data-state="unchecked"
+                  role="checkbox"
+                  title="2"
+                  type="button"
+                  value="on"
+                />
+                <span
+                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                >
+                  2
+                </span>
+              </label>
+            </div>
+          </li>
+          <li
+            class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+          >
+            <div
+              class="c-fGHEql PJLV"
+              data-state="closed"
+            >
+              <div
+                class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+              >
+                <button
+                  aria-controls="radix-0"
+                  aria-expanded="false"
+                  aria-label="Open: Second level trigger"
+                  class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+                  data-state="closed"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline
+                      points="6 10 12 16 18 10"
+                    />
+                  </svg>
+                </button>
+                <label
+                  class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                >
+                  <button
+                    aria-checked="false"
+                    class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                    data-state="unchecked"
+                    role="checkbox"
+                    title="all but nested a"
+                    type="button"
+                    value="on"
+                  />
+                  <span
+                    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                  >
+                    All but nested
+                  </span>
+                </label>
+              </div>
+              <ul
+                class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
+                data-state="closed"
+                id="radix-0"
+                style="transition-duration: 0s; animation-name: none;"
+              >
+                <li
+                  class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                >
+                  <div
+                    class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                  >
+                    <label
+                      class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                    >
+                      <button
+                        aria-checked="false"
+                        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                        data-state="unchecked"
+                        role="checkbox"
+                        title="1 nested"
+                        type="button"
+                        value="on"
+                      />
+                      <span
+                        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                      >
+                        Nested: #1
+                      </span>
+                    </label>
+                  </div>
+                </li>
+                <li
+                  class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                >
+                  <div
+                    class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                  >
+                    <label
+                      class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                    >
+                      <button
+                        aria-checked="false"
+                        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                        data-state="unchecked"
+                        role="checkbox"
+                        title="2 nested"
+                        type="button"
+                        value="on"
+                      />
+                      <span
+                        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                      >
+                        Nested: #2
+                      </span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
