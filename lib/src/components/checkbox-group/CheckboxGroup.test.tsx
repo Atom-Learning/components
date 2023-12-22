@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { CheckboxGroup } from '.'
 
-const CheckboxImplementation = (props) => {
+const CheckboxGroupImplementation = (props) => {
   return (
     <CheckboxGroup {...props}>
       <CheckboxGroup.AllItem title="top level all item" />
@@ -13,8 +13,8 @@ const CheckboxImplementation = (props) => {
 
       <CheckboxGroup.Sub>
         <CheckboxGroup.AllItem title="all but nested" />
-        <CheckboxGroup.Item value='1 nested' />
-        <CheckboxGroup.Item value='2 nested' />
+        <CheckboxGroup.Item value="1 nested" />
+        <CheckboxGroup.Item value="2 nested" />
       </CheckboxGroup.Sub>
     </CheckboxGroup>
   )
@@ -22,21 +22,21 @@ const CheckboxImplementation = (props) => {
 
 const mockOnCheckedChange = jest.fn()
 
-describe(`Checkbox component`, () => {
+describe(`CheckboxGroup component`, () => {
   it('renders a checkbox', async () => {
-    const { container } = render(<CheckboxImplementation />)
+    const { container } = render(<CheckboxGroupImplementation />)
 
     expect(container).toMatchSnapshot()
   })
 
   it('has no programmatically detectable a11y issues', async () => {
-    const { container } = render(<CheckboxImplementation />)
+    const { container } = render(<CheckboxGroupImplementation />)
 
     expect(await axe(container)).toHaveNoViolations()
   })
 
   it('respects defaultChecked', async () => {
-    render(<CheckboxImplementation defaultChecked={[1, '2 nested']} />)
+    render(<CheckboxGroupImplementation defaultChecked={[1, '2 nested']} />)
     const checkboxItem1 = screen.getByTitle('1')
     expect(checkboxItem1).toBeChecked()
 
@@ -48,7 +48,7 @@ describe(`Checkbox component`, () => {
   })
 
   it('respects checked', async () => {
-    render(<CheckboxImplementation checked={[2, '1 nested']} />)
+    render(<CheckboxGroupImplementation checked={[2, '1 nested']} />)
     const checkboxItem1 = screen.getByTitle('1')
     expect(checkboxItem1).not.toBeChecked()
 
@@ -60,21 +60,31 @@ describe(`Checkbox component`, () => {
   })
 
   it('calls onCheckedChange correctly when used uncontrolled', async () => {
-    render(<CheckboxImplementation defaultChecked={[1, '2 nested']} onCheckedChange={mockOnCheckedChange} />)
+    render(
+      <CheckboxGroupImplementation
+        defaultChecked={[1, '2 nested']}
+        onCheckedChange={mockOnCheckedChange}
+      />
+    )
     screen.getByTitle(1).click()
 
     expect(mockOnCheckedChange).toHaveBeenCalledWith(['2 nested'])
   })
 
   it('calls onCheckedChange correctly when used controlled', async () => {
-    render(<CheckboxImplementation checked={[2, '1 nested']} onCheckedChange={mockOnCheckedChange} />)
+    render(
+      <CheckboxGroupImplementation
+        checked={[2, '1 nested']}
+        onCheckedChange={mockOnCheckedChange}
+      />
+    )
     screen.getByTitle('1').click()
 
     expect(mockOnCheckedChange).toHaveBeenCalledWith([2, '1 nested', 1])
   })
 
   it('.AllItem components work as expected', async () => {
-    render(<CheckboxImplementation />)
+    render(<CheckboxGroupImplementation />)
 
     const checkboxAllItemTopLevel = screen.getByTitle('top level all item')
     const checkboxItem1 = screen.getByTitle('1')
@@ -84,6 +94,12 @@ describe(`Checkbox component`, () => {
     const checkboxItem1Nested = screen.getByTitle('1 nested')
     const checkboxItem2Nested = screen.getByTitle('2 nested')
     const nestedCheckboxes = [checkboxItem1Nested, checkboxItem2Nested]
+    const allCheckboxes = [
+      checkboxAllItemTopLevel,
+      ...topLevelCheckboxes,
+      checkboxAllItemNested,
+      ...nestedCheckboxes
+    ]
 
     expect(checkboxAllItemTopLevel).not.toBeChecked()
 
@@ -99,25 +115,10 @@ describe(`Checkbox component`, () => {
 
     checkboxAllItemTopLevel.click()
 
-    new Array(
-      checkboxAllItemTopLevel,
-      ...topLevelCheckboxes,
-      checkboxAllItemNested,
-      ...nestedCheckboxes
-    ).forEach((element) =>
-      expect(element).toBeChecked()
-    )
+    allCheckboxes.forEach((element) => expect(element).toBeChecked())
 
     checkboxAllItemTopLevel.click()
 
-    new Array(
-      checkboxAllItemTopLevel,
-      ...topLevelCheckboxes,
-      checkboxAllItemNested,
-      ...nestedCheckboxes
-    ).forEach((element) =>
-      expect(element).not.toBeChecked()
-    )
-
+    allCheckboxes.forEach((element) => expect(element).not.toBeChecked())
   })
 })
