@@ -25,7 +25,6 @@ export const CheckboxGroupAllItem = ({
   )
 
   const handleItemCheckedChange = (newChecked) => {
-    console.log({ mountedItems })
     mountedItems.forEach((value) => {
       handleItemCheckedChangeContext(newChecked, value)
     })

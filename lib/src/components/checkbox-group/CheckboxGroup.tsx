@@ -5,6 +5,8 @@ import {
 } from './CheckboxGroup.context'
 import type { CheckboxGroupItemValue } from './CheckboxGroup.types'
 import { Box } from '../box'
+import { Slot } from '@radix-ui/react-slot'
+import { styled } from '~/stitches'
 
 import { CheckboxGroupItem } from './CheckboxGroupItem'
 import { CheckboxGroupAllItem } from './CheckboxGroupAllItem'
@@ -14,24 +16,32 @@ type CheckboxGroupRootProps = React.ComponentProps<typeof Box> & {
   checked?: CheckboxGroupItemValue[]
   onCheckedChange?: (checked: CheckboxGroupItemValue[]) => void
   defaultChecked?: CheckboxGroupItemValue[]
+  asChild?: boolean
 }
+
+const StyledSlot = styled(Slot)
 
 const CheckboxGroupRoot = ({
   checked,
   defaultChecked,
   onCheckedChange,
+  asChild = false,
   ...rest
-}: CheckboxGroupRootProps) => (
-  <CheckboxGroupCheckedProvider
-    checked={checked}
-    defaultChecked={defaultChecked}
-    onCheckedChange={onCheckedChange}
-  >
-    <CheckboxGroupMountedProvider>
-      <Box {...rest} />
-    </CheckboxGroupMountedProvider>
-  </CheckboxGroupCheckedProvider>
-)
+}: CheckboxGroupRootProps) => {
+  const Component = asChild ? StyledSlot : Box
+
+  return (
+    <CheckboxGroupCheckedProvider
+      checked={checked}
+      defaultChecked={defaultChecked}
+      onCheckedChange={onCheckedChange}
+    >
+      <CheckboxGroupMountedProvider>
+        <Component {...rest} />
+      </CheckboxGroupMountedProvider>
+    </CheckboxGroupCheckedProvider>
+  )
+}
 
 export const CheckboxGroup = Object.assign(CheckboxGroupRoot, {
   Item: CheckboxGroupItem,

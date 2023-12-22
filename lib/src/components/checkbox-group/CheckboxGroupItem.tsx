@@ -15,6 +15,7 @@ type CheckboxGroupItemProps = Omit<
 
 export const CheckboxGroupItem = ({
   value,
+  title,
   onCheckedChange,
   ...rest
 }: CheckboxGroupItemProps): JSX.Element => {
@@ -42,7 +43,7 @@ export const CheckboxGroupItem = ({
     <Checkbox
       onCheckedChange={handleItemCheckedChange}
       checked={checkedItems.includes(value)}
-      title={String(value)}
+      title={title ?? String(value)}
       {...rest}
     />
   )

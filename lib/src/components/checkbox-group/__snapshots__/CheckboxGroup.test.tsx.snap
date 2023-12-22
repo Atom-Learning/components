@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox component renders a checkbox 1`] = `
+exports[`CheckboxGroup component renders a checkbox 1`] = `
 @media  {
   .c-hMRxhp {
     display: inline-block;
