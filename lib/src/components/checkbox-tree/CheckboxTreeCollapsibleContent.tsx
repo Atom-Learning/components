@@ -3,8 +3,9 @@ import React from 'react'
 import { Tree } from '../tree'
 import { CheckboxGroup } from '../checkbox-group'
 
-type CheckboxTreeCollapsibleContentProps = React.ComponentProps<
-  typeof Tree.CollapsibleContent
+type CheckboxTreeCollapsibleContentProps = Omit<
+  React.ComponentProps<typeof Tree.CollapsibleContent>,
+  'asChild'
 >
 
 export const CheckboxTreeCollapsibleContent = ({

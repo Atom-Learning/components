@@ -6,8 +6,11 @@ import { CheckboxTreeCollapsibleContent } from './CheckboxTreeCollapsibleContent
 import { CheckboxTreeCollapsibleTrigger } from './CheckboxTreeCollapsibleTrigger'
 import { CheckboxTreeItem } from './CheckboxTreeItem'
 
-type CheckboxTreeRootProps = React.ComponentProps<typeof CheckboxGroup> &
-  React.ComponentProps<typeof Tree>
+type CheckboxTreeRootProps = Omit<
+  React.ComponentProps<typeof CheckboxGroup> &
+    React.ComponentProps<typeof Tree>,
+  'asChild'
+>
 
 export const CheckboxTreeRoot = ({
   checked,
