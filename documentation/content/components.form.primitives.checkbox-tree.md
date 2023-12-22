@@ -3,7 +3,7 @@ slug: checkbox-tree
 title: Checkbox Tree
 links:
   showReportAnIssue: true
-  viewSource: components/checkbox-group
+  viewSource: components/checkbox-tree
 tabs:
   - title: Code
     content: >-
