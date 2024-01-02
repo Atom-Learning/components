@@ -450,12 +450,12 @@ exports[`DateInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-gNRHdp-huXVXM-isOutsideMonth-true {
-    color: var(--colors-tonal200);
-  }
-
   .c-gNRHdp-hztIub-isToday-true {
     background: var(--colors-tonal100);
+  }
+
+  .c-gNRHdp-huXVXM-isOutsideMonth-true {
+    color: var(--colors-tonal200);
   }
 
   .c-iKnjyA-kUaMfZ-size-md {
