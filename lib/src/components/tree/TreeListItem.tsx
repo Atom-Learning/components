@@ -17,13 +17,13 @@ export const TreeListItem = React.forwardRef(
     ref: React.ForwardedRef<HTMLLIElement>
   ): JSX.Element => {
     return (
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore: Stitches polymorphic components issue due to `as="li"`
       <StyledTreeListItem
         as="li"
         gap={2}
         align="center"
         {...props}
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore: Stitches polymorphic components issue due to `as="li"`
         ref={ref}
         role="treeitem"
       />
