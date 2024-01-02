@@ -45,7 +45,10 @@ export const TreeCollapsibleTrigger = ({
   return (
     <StyledTreeCollapsibleTrigger
       {...rest}
-      onClick={() => triggerRef?.current?.click()}
+      onClick={(event) => {
+        rest.onClick?.(event)
+        triggerRef?.current?.click()
+      }}
     >
       <Trigger asChild>
         <StyledActionIcon
