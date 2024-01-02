@@ -20,7 +20,7 @@ export const TreeRoot = React.forwardRef(
     ref: React.ForwardedRef<HTMLUListElement>
   ) => {
     return (
-      <StyledRoot {...rest} ref={ref}>
+      <StyledRoot {...rest} ref={ref} role="tree">
         {children}
       </StyledRoot>
     )

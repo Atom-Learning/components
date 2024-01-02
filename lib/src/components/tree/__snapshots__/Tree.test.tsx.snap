@@ -191,9 +191,11 @@ exports[`Tree renders 1`] = `
 <div>
   <ul
     class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-PJLV"
+    role="tree"
   >
     <li
       class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
     >
       <div
         class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -207,6 +209,7 @@ exports[`Tree renders 1`] = `
     </li>
     <li
       class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
     >
       <div
         class="c-fGHEql"
