@@ -30,7 +30,7 @@ interface BasePaginationProps {
 
 export type TVisibleElementsCount = 6 | 8
 
-export interface PaginationItemProps {
+export interface PaginationPageProps {
   pageNumber: number
   css?: CSS
 }

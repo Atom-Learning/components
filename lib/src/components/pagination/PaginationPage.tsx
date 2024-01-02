@@ -3,7 +3,7 @@ import * as React from 'react'
 import { focusVisibleStyleBlock } from '~/utilities'
 
 import { styled } from '../../stitches'
-import type { PaginationItemProps } from './types'
+import type { PaginationPageProps } from './types'
 import { usePagination } from './usePagination'
 
 const StyledButton = styled('button', {
@@ -96,7 +96,7 @@ const StyledButton = styled('button', {
   }
 })
 
-export const PaginationPage: React.FC<PaginationItemProps> = ({
+export const PaginationPage: React.FC<PaginationPageProps> = ({
   pageNumber,
   css
 }) => {
