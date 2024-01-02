@@ -7,7 +7,6 @@ import { TreeCollapsibleContent } from './TreeCollapsibleContent'
 import { TreeCollapsibleTrigger } from './TreeCollapsibleTrigger'
 import { TreeIcon } from './TreeIcon'
 import { TreeItem } from './TreeItem'
-import { TreeItemContent } from './TreeItemContent'
 import { TreeList } from './TreeList'
 import { TreeText } from './TreeText'
 
@@ -33,7 +32,6 @@ export const Tree = Object.assign(TreeRoot, {
   CollapsibleContent: TreeCollapsibleContent,
   CollapsibleTrigger: TreeCollapsibleTrigger,
   Item: TreeItem,
-  ItemContent: TreeItemContent,
   Icon: TreeIcon,
   Text: TreeText
 })
