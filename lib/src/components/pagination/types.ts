@@ -6,35 +6,35 @@ import {
   VIEW_ALL_POPOVER
 } from './pagination.constants'
 
-export type TPaginationItemsToRender = (
+export type PaginationItemsToRender = (
   | number
   | typeof VIEW_ALL_POPOVER
   | typeof GO_TO_PREVIOUS_PAGE
   | typeof GO_TO_NEXT_PAGE
 )[]
 
-interface ILabels {
+interface Labels {
   popoverTriggerLabel?: string
   nextPageButtonLabel?: string
   previousPageButtonLabel?: string
 }
 
-interface IBasePagination {
+interface BasePaginationProps {
   pagesCount: number
   indicatedPages: number[]
   disabledPages: number[]
-  paginationItems: TPaginationItemsToRender
-  labels: ILabels
+  paginationItems: PaginationItemsToRender
+  labels: Labels
   onItemHover: (pageNumber: number) => void
 }
 
 export type TVisibleElementsCount = 6 | 8
 
-export interface IPaginationItemProps {
+export interface PaginationItemProps {
   pageNumber: number
   css?: CSS
 }
-export interface IPaginationContext extends IBasePagination {
+export interface PaginationContextValue extends BasePaginationProps {
   currentPage: number
   goToPage: (pagenumber: number) => void
   goToPreviousPage: () => void
@@ -43,14 +43,14 @@ export interface IPaginationContext extends IBasePagination {
   previousAvailablePage?: number
 }
 
-export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
-  Partial<IBasePagination> & {
+export type PaginationProviderProps = Pick<BasePaginationProps, 'pagesCount'> &
+  Partial<BasePaginationProps> & {
     selectedPage?: number
     onSelectedPageChange?: (pageNumber: number) => void
     visibleElementsCount?: TVisibleElementsCount
   }
 
-export interface IPaginationProps extends TPaginationProviderProps {
+export interface PaginationProps extends PaginationProviderProps {
   colorScheme?: TcolorScheme
   css?: CSS
 }

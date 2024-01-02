@@ -3,13 +3,13 @@ import {
   GO_TO_PREVIOUS_PAGE,
   VIEW_ALL_POPOVER
 } from './pagination.constants'
-import { TPaginationItemsToRender } from './types'
+import { PaginationItemsToRender } from './types'
 
 export const getPaginationElementsToRender = (
   currentPage: number,
   pagesCount: number,
   visibleElementsCount: number
-): TPaginationItemsToRender => {
+): PaginationItemsToRender => {
   const paginationPages = Array.from(
     { length: pagesCount },
     (_, index) => index + 1
@@ -76,7 +76,7 @@ export const getPaginationElementsToRender = (
    *
    */
   if (currentPage < visiblePagesCount) {
-    const newPaginationItems = [] as TPaginationItemsToRender
+    const newPaginationItems = [] as PaginationItemsToRender
     if (canFitPages) {
       newPaginationItems.push(...paginationPages.slice(0, visiblePagesCount))
     }
@@ -104,7 +104,7 @@ export const getPaginationElementsToRender = (
    *
    */
   if (currentPage > pagesCount - visiblePagesCount) {
-    const newPaginationItems = [] as TPaginationItemsToRender
+    const newPaginationItems = [] as PaginationItemsToRender
     if (canFitEdgePage) {
       newPaginationItems.push(firstPage)
     }
@@ -143,7 +143,7 @@ export const getPaginationElementsToRender = (
   const canFitCurrentPageAndPreviousPageAndNextPage = visibleElementsCount >= 7
   const canFitLastPage = canFitEdgePage
 
-  const newPaginationItems = [] as TPaginationItemsToRender
+  const newPaginationItems = [] as PaginationItemsToRender
   if (canFitCurrentPageAndPreviousPageAndNextPage) {
     newPaginationItems.push(
       ...paginationPages.slice(

@@ -5,9 +5,9 @@ import { Flex } from '../flex'
 import { VisibleElementsAmount } from './pagination.constants'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationItems } from './PaginationItems'
-import type { IPaginationProps } from './types'
+import type { PaginationProps } from './types'
 
-export const Pagination: React.FC<IPaginationProps> = ({
+export const Pagination: React.FC<PaginationProps> = ({
   colorScheme,
   onSelectedPageChange,
   selectedPage,

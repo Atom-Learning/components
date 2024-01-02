@@ -6,9 +6,9 @@ import {
   findPreviousAvailablePage,
   getPaginationElementsToRender
 } from '../pagination.helper'
-import type { IPaginationContext, TPaginationProviderProps } from '../types'
+import type { PaginationContextValue, PaginationProviderProps } from '../types'
 
-export const PaginationContext = React.createContext<IPaginationContext>({
+export const PaginationContext = React.createContext<PaginationContextValue>({
   goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
@@ -21,7 +21,7 @@ export const PaginationContext = React.createContext<IPaginationContext>({
   disabledPages: []
 })
 
-export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
+export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   onSelectedPageChange,
   selectedPage,
   visibleElementsCount = VisibleElementsAmount.LESS,
