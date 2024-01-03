@@ -21,7 +21,7 @@ tabs:
       ## Examples
 
 
-      <CodeBlock live={true} preview={true} code={`<CheckboxTree>
+      <CodeBlock live={true} preview={true} code={`<CheckboxTree css={{ width: 300}}>
                 <CheckboxTree.Item value={1}><Icon is={Person} /> One</CheckboxTree.Item>
                 <CheckboxTree.Item value={2}>Two</CheckboxTree.Item>
                 <CheckboxTree.Collapsible>
@@ -32,26 +32,26 @@ tabs:
                   </CheckboxTree.CollapsibleContent>
                 </CheckboxTree.Collapsible>
                 <CheckboxTree.Collapsible defaultOpen={true}>
-                  <CheckboxTree.CollapsibleTrigger title="trigger 2" label="Open: Trigger 2"><Icon is={Person} />Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2 Trigger 2</CheckboxTree.CollapsibleTrigger>
+                  <CheckboxTree.CollapsibleTrigger title="All administrators" label="Open: Show individual administrators"><Icon is={Person} />Administrators</CheckboxTree.CollapsibleTrigger>
                   <CheckboxTree.CollapsibleContent>
-                    <CheckboxTree.Item value={5}>Nested: Three</CheckboxTree.Item>
-                    <CheckboxTree.Item value={6}>Nested: Four</CheckboxTree.Item>
-                  </CheckboxTree.CollapsibleContent>
-                </CheckboxTree.Collapsible>
-                <CheckboxTree.Collapsible>
-                  <CheckboxTree.CollapsibleTrigger  title="trigger with submenu" label="Open: Trigger with submenu">Trigger With Submenu</CheckboxTree.CollapsibleTrigger>
-                  <CheckboxTree.CollapsibleContent>
-                    <CheckboxTree.Item value={7}>Nested: #1</CheckboxTree.Item>
-                    <CheckboxTree.Item value={8}>Nested: #2</CheckboxTree.Item>
-                    <CheckboxTree.Item value="nine">Nested: #3</CheckboxTree.Item>
+                    <CheckboxTree.Item value="bob">Bob</CheckboxTree.Item>
+                    <CheckboxTree.Item value="alice">Alice</CheckboxTree.Item>
                     <CheckboxTree.Collapsible>
-                      <CheckboxTree.CollapsibleTrigger title="further nested all checkbox" label="Open: Nested"><Icon is={Person} />Nested</CheckboxTree.CollapsibleTrigger>
+                      <CheckboxTree.CollapsibleTrigger title="All special admins" label="Open: Show special admins">Special Admins</CheckboxTree.CollapsibleTrigger>
                       <CheckboxTree.CollapsibleContent>
-                        <CheckboxTree.Item value={10}>Nested: #4</CheckboxTree.Item>
+                        <CheckboxTree.Item value={7}>Admin 7</CheckboxTree.Item>
+                        <CheckboxTree.Item value={8}>Admin 8</CheckboxTree.Item>
+                        <CheckboxTree.Item value="nine">Admin 9</CheckboxTree.Item>
                         <CheckboxTree.Collapsible>
-                          <CheckboxTree.CollapsibleTrigger title="even further nested all checkbox" label="Open: Nested nested">Nested Nested</CheckboxTree.CollapsibleTrigger>
+                          <CheckboxTree.CollapsibleTrigger title="further nested all checkbox" label="Open: Nested"><Icon is={Person} />Nested</CheckboxTree.CollapsibleTrigger>
                           <CheckboxTree.CollapsibleContent>
-                            <CheckboxTree.Item value="nested 5">Nested: #5</CheckboxTree.Item>
+                            <CheckboxTree.Item value={10}>Longname Willget Truncated</CheckboxTree.Item>
+                            <CheckboxTree.Collapsible>
+                              <CheckboxTree.CollapsibleTrigger title="even further nested all checkbox" label="Open: Nested nested">Nested Nested</CheckboxTree.CollapsibleTrigger>
+                              <CheckboxTree.CollapsibleContent>
+                                <CheckboxTree.Item value="nested 5">Nested: #5</CheckboxTree.Item>
+                              </CheckboxTree.CollapsibleContent>
+                            </CheckboxTree.Collapsible>
                           </CheckboxTree.CollapsibleContent>
                         </CheckboxTree.Collapsible>
                       </CheckboxTree.CollapsibleContent>
