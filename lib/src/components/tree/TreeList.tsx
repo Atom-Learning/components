@@ -10,18 +10,6 @@ const StyledList = styled(Flex, {
   listStyle: 'none',
   '& &': {
     pl: '$space$4'
-  },
-  '& & &': {
-    pl: '$space$5'
-  },
-  '& & & &': {
-    pl: '$space$7'
-  },
-  '& & & & &': {
-    pl: '$space$8'
-  },
-  '& & & & & &': {
-    pl: '$space$9'
   }
 })
 

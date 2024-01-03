@@ -8,6 +8,7 @@ import { TreeIcon } from './TreeIcon'
 import { TreeText } from './TreeText'
 
 const StyledItemContent = styled(Flex, {
+  width: '100%',
   position: 'relative',
   minHeight: '$3',
   pl: '$6'

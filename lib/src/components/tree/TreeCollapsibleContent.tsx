@@ -41,7 +41,9 @@ export const TreeCollapsibleContent = React.forwardRef(
         {...rest}
         asChild
       >
-        <TreeList ref={ref}>{children}</TreeList>
+        <TreeList ref={ref} role="group">
+          {children}
+        </TreeList>
       </StyledTreeCollapsibleContent>
     )
   }
