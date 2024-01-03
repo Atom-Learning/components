@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import type { CheckboxGroupItemValue } from '../CheckboxGroup.types'
 
 type CheckboxGroupCheckedContextValue = {
@@ -65,13 +66,15 @@ export const CheckboxGroupCheckedProvider: React.FC<
         return newChecked
       })
     },
-    [onCheckedChange, controlledChecked]
+    [onCheckedChange]
   )
 
   const value = React.useMemo<CheckboxGroupCheckedContextValue>(() => {
     const isControlled = Array.isArray(controlledChecked)
     return {
-      checked: isControlled ? controlledChecked : checked,
+      checked: isControlled
+        ? (controlledChecked as CheckboxGroupCheckedContextValue['checked']) // We're literally JUST checking it above but TS still flags it, wrongly, so casting
+        : checked,
       handleItemCheckedChange: isControlled
         ? handleItemControlledCheckedChange
         : handleItemCheckedChange

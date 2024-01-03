@@ -1,7 +1,7 @@
-import { styled } from '~/stitches'
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
+import { styled } from '~/stitches'
 
 type TreeListItemProps = React.ComponentProps<typeof Flex>
 
@@ -16,10 +16,17 @@ export const TreeListItem = React.forwardRef(
     props: TreeListItemProps,
     ref: React.ForwardedRef<HTMLLIElement>
   ): JSX.Element => {
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore: Stitches polymorphic components issue due to `as="li"`
     return (
-      <StyledTreeListItem as="li" gap={2} align="center" {...props} ref={ref} />
+      <StyledTreeListItem
+        as="li"
+        gap={2}
+        align="center"
+        {...props}
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore: Stitches polymorphic components issue due to `as="li"`
+        ref={ref}
+        role="treeitem"
+      />
     )
   }
 )

@@ -75,9 +75,6 @@ tabs:
       <ComponentProps component="Tree.Item" />
 
 
-      <ComponentProps component="Tree.ItemContent" />
-
-
       <ComponentProps component="Tree.Icon" />
 
 
