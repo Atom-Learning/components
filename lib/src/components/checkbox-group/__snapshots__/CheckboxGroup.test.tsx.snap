@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxGroup component renders a checkbox 1`] = `
+@media  {
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .c-bULSRl {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+    flex-shrink: 0;
+  }
+
+  .c-bULSRl[data-state="checked"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-bULSRl[data-state="indeterminate"] {
+    background-color: var(--colors-primary);
+    border-color: var(--colors-primary);
+  }
+
+  .c-bULSRl:focus {
+    outline: 2px solid var(--colors-primary);
+    outline-offset: 1px;
+  }
+
+  .c-bULSRl[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+@media  {
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-bULSRl-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV"
+  >
+    <button
+      aria-checked="false"
+      class="c-bULSRl c-bULSRl-kupcZn-size-md"
+      data-state="unchecked"
+      role="checkbox"
+      title="top level all item"
+      type="button"
+      value="on"
+    />
+    <button
+      aria-checked="false"
+      class="c-bULSRl c-bULSRl-kupcZn-size-md"
+      data-state="unchecked"
+      role="checkbox"
+      title="1"
+      type="button"
+      value="on"
+    />
+    <button
+      aria-checked="false"
+      class="c-bULSRl c-bULSRl-kupcZn-size-md"
+      data-state="unchecked"
+      role="checkbox"
+      title="2"
+      type="button"
+      value="on"
+    />
+    <div
+      class="c-PJLV"
+    >
+      <button
+        aria-checked="false"
+        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+        data-state="unchecked"
+        role="checkbox"
+        title="all but nested"
+        type="button"
+        value="on"
+      />
+      <button
+        aria-checked="false"
+        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+        data-state="unchecked"
+        role="checkbox"
+        title="1 nested"
+        type="button"
+        value="on"
+      />
+      <button
+        aria-checked="false"
+        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+        data-state="unchecked"
+        role="checkbox"
+        title="2 nested"
+        type="button"
+        value="on"
+      />
+    </div>
+  </div>
+</div>
+`;

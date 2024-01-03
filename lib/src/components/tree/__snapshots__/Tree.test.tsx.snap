@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree renders 1`] = `
+@media  {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-gkooaz {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .c-gkooaz .c-gkooaz {
+    padding-left: var(--space-4);
+  }
+
+  .c-jiJsop:not(:first-child) {
+    margin-top: var(--space-0);
+  }
+
+  .c-rbNxa {
+    width: 100%;
+    position: relative;
+    min-height: var(--sizes-3);
+    padding-left: var(--space-6);
+  }
+
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-bWcumU {
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .c-oUmPa {
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    border: unset;
+    border-radius: var(--radii-0);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: unset;
+    transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-hBEOJc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+
+  .c-hBEOJc .c-hMRxhp {
+    transition: transform 300ms;
+  }
+
+  .c-hBEOJc[data-state="closed"] > .c-hMRxhp {
+    transform: rotate(-90deg);
+  }
+
+  .c-hBEOJc[data-state="open"] > .c-hMRxhp {
+    transform: rotate(0deg);
+  }
+
+  .c-gsmDXe {
+    cursor: pointer;
+  }
+
+  .c-rvbcR[data-state="closed"] {
+    display: none;
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-fmPQHp-noCapsize-true::before,
+  .c-dyvMgW-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
+  .c-oUmPa-elrktp-size-sm {
+    height: var(--sizes-3);
+    width: var(--sizes-3);
+  }
+
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+}
+
+@media  {
+  .c-oUmPa-hXLsaq-cv {
+    background: transparent;
+    color: var(--colors-tonal300);
+  }
+
+  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
+  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
+    color: var(--colors-primaryMid);
+  }
+
+  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
+    color: var(--colors-primaryDark);
+  }
+}
+
+<div>
+  <ul
+    class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-PJLV"
+    role="tree"
+  >
+    <li
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
+    >
+      <div
+        class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      >
+        <span
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+        >
+          #1
+        </span>
+      </div>
+    </li>
+    <li
+      class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
+    >
+      <div
+        class="c-fGHEql"
+        data-state="closed"
+      >
+        <div
+          class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+          data-testid="collapsible-trigger"
+        >
+          <button
+            aria-controls="radix-0"
+            aria-expanded="false"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+            data-state="closed"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="6 10 12 16 18 10"
+              />
+            </svg>
+          </button>
+          <span
+            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+          >
+            Trigger With Submenu
+          </span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
