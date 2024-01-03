@@ -6,38 +6,23 @@ exports[`Tree renders 1`] = `
     display: flex;
   }
 
-  .c-lbSwXg {
+  .c-gkooaz {
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-  .c-lbSwXg .c-lbSwXg {
+  .c-gkooaz .c-gkooaz {
     padding-left: var(--space-4);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-5);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-7);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-8);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-9);
   }
 
   .c-jiJsop:not(:first-child) {
     margin-top: var(--space-0);
   }
 
-  .c-lYTUW {
+  .c-rbNxa {
+    width: 100%;
     position: relative;
     min-height: var(--sizes-3);
     padding-left: var(--space-6);
@@ -190,7 +175,7 @@ exports[`Tree renders 1`] = `
 
 <div>
   <ul
-    class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-PJLV"
+    class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-PJLV"
     role="tree"
   >
     <li
@@ -198,7 +183,7 @@ exports[`Tree renders 1`] = `
       role="treeitem"
     >
       <div
-        class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+        class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
       >
         <span
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
@@ -216,7 +201,7 @@ exports[`Tree renders 1`] = `
         data-state="closed"
       >
         <div
-          class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+          class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
           data-testid="collapsible-trigger"
         >
           <button
