@@ -2,8 +2,8 @@ import { ChevronDown } from '@atom-learning/icons'
 import { Trigger } from '@radix-ui/react-collapsible'
 import React from 'react'
 
-import { Icon, StyledIcon } from '~/components/icon'
 import { ActionIcon } from '~/components/action-icon'
+import { Icon, StyledIcon } from '~/components/icon'
 import { styled } from '~/stitches'
 
 import { TreeCollapsibleContext } from './TreeCollapsible'
