@@ -1,8 +1,10 @@
-import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
+import * as React from 'react'
+
 import { styled } from '~/stitches'
-import { CheckboxGroupMountedProvider } from './CheckboxGroup.context'
+
 import { Box } from '../box'
+import { CheckboxGroupMountedProvider } from './CheckboxGroup.context'
 
 type CheckboxGroupSubProps = React.ComponentProps<typeof Box> & {
   asChild?: boolean
