@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { CheckboxGroup } from '../checkbox-group'
 import { Tree } from '../tree'
 import { CheckboxTreeCollapsible } from './CheckboxTreeCollapsible'
