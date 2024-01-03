@@ -23,15 +23,15 @@ tabs:
       ## Examples
 
 
-      <CodeBlock live={true} preview={true} code={`  <CheckboxGroup>
+      <CodeBlock live={true} preview={true} code={`  <CheckboxGroup asChild>
           <Flex direction="column" gap={1}>
-            <CheckboxGroup.AllItem />
+            <CheckboxGroup.AllItem title="Check all"  />
             <CheckboxGroup.Item value={1} />
             <CheckboxGroup.Item value={2} />
             <CheckboxGroup.Item value={3} />
             <CheckboxGroup.Sub>
             <Flex direction="column" gap={1} css={{ paddingLeft: '$4' }}>
-              <CheckboxGroup.AllItem title="all nested" defaultChecked={true} />
+              <CheckboxGroup.AllItem title="Check all nested" defaultChecked={true} asChild />
               <CheckboxGroup.Item value='1 but nested' defaultChecked={true} />
               <CheckboxGroup.Item value='2 but nested' />
             </Flex>
