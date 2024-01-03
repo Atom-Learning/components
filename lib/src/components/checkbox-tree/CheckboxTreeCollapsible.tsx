@@ -1,6 +1,7 @@
 import React from 'react'
-import { Tree } from '../tree'
+
 import { CheckboxGroup } from '../checkbox-group'
+import { Tree } from '../tree'
 
 type CheckboxTreeCollapsibleProps = Omit<
   React.ComponentProps<typeof Tree.Collapsible> &
