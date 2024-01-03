@@ -237,9 +237,11 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
 <div>
   <ul
     class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-PJLV PJLV"
+    role="tree"
   >
     <li
       class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
     >
       <div
         class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -266,6 +268,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     </li>
     <li
       class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+      role="treeitem"
     >
       <div
         class="c-fGHEql PJLV"
@@ -316,10 +319,12 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
           class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
           data-state="closed"
           id="radix-1"
+          role="group"
           style="transition-duration: 0s; animation-name: none;"
         >
           <li
             class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            role="treeitem"
           >
             <div
               class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -346,6 +351,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
           </li>
           <li
             class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            role="treeitem"
           >
             <div
               class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -372,6 +378,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
           </li>
           <li
             class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+            role="treeitem"
           >
             <div
               class="c-fGHEql PJLV"
@@ -422,10 +429,12 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                 class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
                 data-state="closed"
                 id="radix-0"
+                role="group"
                 style="transition-duration: 0s; animation-name: none;"
               >
                 <li
                   class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                  role="treeitem"
                 >
                   <div
                     class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -452,6 +461,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                 </li>
                 <li
                   class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                  role="treeitem"
                 >
                   <div
                     class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
