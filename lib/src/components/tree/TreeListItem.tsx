@@ -1,7 +1,7 @@
-import { styled } from '~/stitches'
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
+import { styled } from '~/stitches'
 
 type TreeListItemProps = React.ComponentProps<typeof Flex>
 
