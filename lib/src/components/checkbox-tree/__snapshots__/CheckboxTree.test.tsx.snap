@@ -6,38 +6,23 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     display: flex;
   }
 
-  .c-lbSwXg {
+  .c-gkooaz {
     width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
   }
 
-  .c-lbSwXg .c-lbSwXg {
+  .c-gkooaz .c-gkooaz {
     padding-left: var(--space-4);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-5);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-7);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-8);
-  }
-
-  .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg .c-lbSwXg {
-    padding-left: var(--space-9);
   }
 
   .c-jiJsop:not(:first-child) {
     margin-top: var(--space-0);
   }
 
-  .c-lYTUW {
+  .c-rbNxa {
+    width: 100%;
     position: relative;
     min-height: var(--sizes-3);
     padding-left: var(--space-6);
@@ -251,13 +236,13 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
 
 <div>
   <ul
-    class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-PJLV PJLV"
+    class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-PJLV PJLV"
   >
     <li
       class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
     >
       <div
-        class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+        class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
       >
         <label
           class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -287,7 +272,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
         data-state="closed"
       >
         <div
-          class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+          class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
         >
           <button
             aria-controls="radix-1"
@@ -328,7 +313,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
           </label>
         </div>
         <ul
-          class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
+          class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
           data-state="closed"
           id="radix-1"
           style="transition-duration: 0s; animation-name: none;"
@@ -337,7 +322,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
             class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <div
-              class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+              class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <label
                 class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -363,7 +348,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
             class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <div
-              class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+              class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <label
                 class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -393,7 +378,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
               data-state="closed"
             >
               <div
-                class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
+                class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2 c-gsmDXe"
               >
                 <button
                   aria-controls="radix-0"
@@ -434,7 +419,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                 </label>
               </div>
               <ul
-                class="c-dhzjXW c-lbSwXg c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
+                class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-rvbcR PJLV"
                 data-state="closed"
                 id="radix-0"
                 style="transition-duration: 0s; animation-name: none;"
@@ -443,7 +428,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                   class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
                 >
                   <div
-                    class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                    class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
                   >
                     <label
                       class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
@@ -469,7 +454,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                   class="c-dhzjXW c-jiJsop c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
                 >
                   <div
-                    class="c-dhzjXW c-lYTUW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
+                    class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
                   >
                     <label
                       class="c-dhzjXW c-cFpcyF c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
