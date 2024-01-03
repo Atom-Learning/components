@@ -1,15 +1,16 @@
-import * as React from 'react'
-import {
-  CheckboxGroupMountedProvider,
-  CheckboxGroupCheckedProvider
-} from './CheckboxGroup.context'
-import type { CheckboxGroupItemValue } from './CheckboxGroup.types'
-import { Box } from '../box'
 import { Slot } from '@radix-ui/react-slot'
+import * as React from 'react'
+
 import { styled } from '~/stitches'
 
-import { CheckboxGroupItem } from './CheckboxGroupItem'
+import { Box } from '../box'
+import {
+  CheckboxGroupCheckedProvider,
+  CheckboxGroupMountedProvider
+} from './CheckboxGroup.context'
+import type { CheckboxGroupItemValue } from './CheckboxGroup.types'
 import { CheckboxGroupAllItem } from './CheckboxGroupAllItem'
+import { CheckboxGroupItem } from './CheckboxGroupItem'
 import { CheckboxGroupSub } from './CheckboxGroupSub'
 
 type CheckboxGroupRootProps = React.ComponentProps<typeof Box> & {
