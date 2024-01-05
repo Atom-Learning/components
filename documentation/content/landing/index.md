@@ -366,7 +366,20 @@ tabs:
       and when triggered by the hamburguer
       menu.\",\"tags\":[\"Navigation\",\"Layout/Structure\"],\"image\":\"/asset\
       s/images/sidebar.svg\",\"link\":{\"href\":\"/components/navigation/side-b\
-      ar\"}}]} />"
+      ar\"}},{\"image\":\"/assets/images/checkbox-group.svg\",\"heading\":\"Che\
+      ckbox
+      group\",\"link\":{\"href\":\"components/form/primitives/checkbox-group\"},\
+      \"description\":\"Allows user to select multiple items from a list of
+      options.\",\"tags\":[\"Inputs\"]},{\"image\":\"/assets/images/checkbox-tr\
+      ee.svg\",\"heading\":\"Checkbox tree\",\"description\":\"Input with a tree
+      structure that allows multiple selections across various levels of a
+      hierarchy.\",\"link\":{\"href\":\"/components/form/primitives/checkbox-tr\
+      ee\"},\"tags\":[\"Inputs\",\"Filter\"]},{\"image\":\"/assets/images/tree.\
+      svg\",\"heading\":\"Tree\",\"description\":\"Represents data in a
+      hierarchical or tree-like structure, where items are organized into parent
+      and child
+      nodes.\",\"link\":{\"href\":\"/components/navigation/tree\"},\"tags\":[\"\
+      List and tables\"]}]} />"
     title: Main
 slug: landing
 nestedSlug:
