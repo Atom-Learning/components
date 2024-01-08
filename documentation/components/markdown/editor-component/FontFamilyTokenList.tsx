@@ -1,6 +1,6 @@
 import { Text } from '@atom-learning/components'
-import type { Theme } from '@atom-learning/theme'
-import * as atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme/lib/theme-atom'
+import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
 import { TokenList } from './token-list'
 
 import * as React from 'react'

@@ -8,7 +8,7 @@ import {
   Flex,
   Drawer
 } from '@atom-learning/components'
-import logo from '@atom-learning/theme/lib/assets/logo.svg'
+import logo from '@atom-learning/theme/lib/assets/atom/logo.svg'
 import * as React from 'react'
 
 import buildConstants from '~/lib/build/constants.json'
