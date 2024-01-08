@@ -3,7 +3,7 @@
 exports[`TileInteractive component renders 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-bhCeAW {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -161,11 +161,6 @@ exports[`TileInteractive component renders 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -174,6 +169,10 @@ exports[`TileInteractive component renders 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -197,6 +196,18 @@ exports[`TileInteractive component renders 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -252,18 +263,18 @@ exports[`TileInteractive component renders 1`] = `
     --colors-interactive3: var(--colors-accent3);
   }
 
-  .t-ctbriF {
-    --colors-accent1: var(--colors-blue100);
-    --colors-accent2: var(--colors-blue200);
-    --colors-accent3: var(--colors-blue300);
-    --colors-accent4: var(--colors-blue400);
-    --colors-accent5: var(--colors-blue500);
-    --colors-accent6: var(--colors-blue600);
-    --colors-accent7: var(--colors-blue700);
-    --colors-accent8: var(--colors-blue800);
-    --colors-accent9: var(--colors-blue900);
-    --colors-accent10: var(--colors-blue1000);
-    --colors-accent11: var(--colors-blue1100);
+  .t-bFCOZb {
+    --colors-accent1: var(--colors-primary100);
+    --colors-accent2: var(--colors-primary200);
+    --colors-accent3: var(--colors-primary300);
+    --colors-accent4: var(--colors-primary400);
+    --colors-accent5: var(--colors-primary500);
+    --colors-accent6: var(--colors-primary600);
+    --colors-accent7: var(--colors-primary700);
+    --colors-accent8: var(--colors-primary800);
+    --colors-accent9: var(--colors-primary900);
+    --colors-accent10: var(--colors-primary1000);
+    --colors-accent11: var(--colors-primary1100);
   }
 
   .t-dmfxVJ {
@@ -347,7 +358,7 @@ exports[`TileInteractive component renders 1`] = `
 
 <div>
   <button
-    class="c-htDHry t-dVJiaJ t-ctbriF t-dmfxVJ c-bZTcGT c-bZTcGT-iMShsb-css"
+    class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZTcGT c-bZTcGT-iMShsb-css"
     type="button"
   >
     A

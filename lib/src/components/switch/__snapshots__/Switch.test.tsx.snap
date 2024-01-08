@@ -10,7 +10,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     will-change: transform;
   }
 
-  .c-bWJMkk {
+  .c-dShxNV {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -23,24 +23,24 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-bWJMkk:hover {
+  .c-dShxNV:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-bWJMkk:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dShxNV:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bWJMkk[data-state="checked"] {
-    background-color: var(--colors-primary);
+  .c-dShxNV[data-state="checked"] {
+    background-color: var(--colors-primary800);
   }
 
-  .c-bWJMkk[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
+  .c-dShxNV[data-state="checked"]:hover {
+    background-color: var(--colors-primary900);
   }
 
-  .c-bWJMkk[disabled] {
+  .c-dShxNV[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -56,7 +56,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-bWJMkk-dYgJcL-size-md {
+  .c-dShxNV-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -65,7 +65,7 @@ exports[`Switch component renders a Switch in "on" state 1`] = `
 <div>
   <button
     aria-checked="true"
-    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
+    class="c-dShxNV c-dShxNV-dYgJcL-size-md"
     data-state="checked"
     role="switch"
     type="button"
@@ -89,7 +89,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     will-change: transform;
   }
 
-  .c-bWJMkk {
+  .c-dShxNV {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -102,24 +102,24 @@ exports[`Switch component renders a disabled switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-bWJMkk:hover {
+  .c-dShxNV:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-bWJMkk:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dShxNV:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bWJMkk[data-state="checked"] {
-    background-color: var(--colors-primary);
+  .c-dShxNV[data-state="checked"] {
+    background-color: var(--colors-primary800);
   }
 
-  .c-bWJMkk[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
+  .c-dShxNV[data-state="checked"]:hover {
+    background-color: var(--colors-primary900);
   }
 
-  .c-bWJMkk[disabled] {
+  .c-dShxNV[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -135,7 +135,7 @@ exports[`Switch component renders a disabled switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-bWJMkk-dYgJcL-size-md {
+  .c-dShxNV-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -144,7 +144,7 @@ exports[`Switch component renders a disabled switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
+    class="c-dShxNV c-dShxNV-dYgJcL-size-md"
     data-disabled=""
     data-state="unchecked"
     disabled=""
@@ -171,7 +171,7 @@ exports[`Switch component renders a large switch 1`] = `
     will-change: transform;
   }
 
-  .c-bWJMkk {
+  .c-dShxNV {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -184,24 +184,24 @@ exports[`Switch component renders a large switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-bWJMkk:hover {
+  .c-dShxNV:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-bWJMkk:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dShxNV:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bWJMkk[data-state="checked"] {
-    background-color: var(--colors-primary);
+  .c-dShxNV[data-state="checked"] {
+    background-color: var(--colors-primary800);
   }
 
-  .c-bWJMkk[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
+  .c-dShxNV[data-state="checked"]:hover {
+    background-color: var(--colors-primary900);
   }
 
-  .c-bWJMkk[disabled] {
+  .c-dShxNV[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -217,7 +217,7 @@ exports[`Switch component renders a large switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-bWJMkk-dYgJcL-size-md {
+  .c-dShxNV-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -231,7 +231,7 @@ exports[`Switch component renders a large switch 1`] = `
     transform: translateX(var(--space-5));
   }
 
-  .c-bWJMkk-fhqySU-size-lg {
+  .c-dShxNV-fhqySU-size-lg {
     padding: var(--space-1);
     width: var(--sizes-6);
   }
@@ -240,7 +240,7 @@ exports[`Switch component renders a large switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-bWJMkk c-bWJMkk-fhqySU-size-lg"
+    class="c-dShxNV c-dShxNV-fhqySU-size-lg"
     data-state="unchecked"
     role="switch"
     type="button"
@@ -264,7 +264,7 @@ exports[`Switch component renders a switch 1`] = `
     will-change: transform;
   }
 
-  .c-bWJMkk {
+  .c-dShxNV {
     -webkit-appearance: none;
     appearance: none;
     background-color: var(--colors-tonal200);
@@ -277,24 +277,24 @@ exports[`Switch component renders a switch 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-bWJMkk:hover {
+  .c-dShxNV:hover {
     background-color: var(--colors-tonal300);
   }
 
-  .c-bWJMkk:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dShxNV:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bWJMkk[data-state="checked"] {
-    background-color: var(--colors-primary);
+  .c-dShxNV[data-state="checked"] {
+    background-color: var(--colors-primary800);
   }
 
-  .c-bWJMkk[data-state="checked"]:hover {
-    background-color: var(--colors-primaryMid);
+  .c-dShxNV[data-state="checked"]:hover {
+    background-color: var(--colors-primary900);
   }
 
-  .c-bWJMkk[disabled] {
+  .c-dShxNV[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -310,7 +310,7 @@ exports[`Switch component renders a switch 1`] = `
     transform: translateX(calc(var(--sizes-2) - var(--space-1)));
   }
 
-  .c-bWJMkk-dYgJcL-size-md {
+  .c-dShxNV-dYgJcL-size-md {
     padding: var(--space-0);
     width: var(--sizes-4);
   }
@@ -319,7 +319,7 @@ exports[`Switch component renders a switch 1`] = `
 <div>
   <button
     aria-checked="false"
-    class="c-bWJMkk c-bWJMkk-dYgJcL-size-md"
+    class="c-dShxNV c-dShxNV-dYgJcL-size-md"
     data-state="unchecked"
     role="switch"
     type="button"

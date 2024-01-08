@@ -2,7 +2,7 @@
 
 exports[`SearchInput component renders 1`] = `
 @media  {
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,17 +19,17 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -59,7 +59,7 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -101,7 +101,7 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />
@@ -126,7 +126,7 @@ exports[`SearchInput component renders 1`] = `
 
 exports[`SearchInput component renders clear button when non-empty defaultValue 1`] = `
 @media  {
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -143,17 +143,17 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -252,7 +252,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -281,18 +281,18 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-oUmPa-hXLsaq-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -326,13 +326,13 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value="testingWhenDefaultValue"
     />
     <button
       aria-label="clearWhenDefaultValue"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igyKUXm-css c-PJLV"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igyKUXm-css c-PJLV"
       data-state="closed"
       type="button"
     >
@@ -353,7 +353,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 exports[`SearchInput component renders lg size 1`] = `
 @media  {
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -370,17 +370,17 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -479,7 +479,7 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -506,7 +506,7 @@ exports[`SearchInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-cHbqOs-jAZHIx-size-lg {
+  .c-lfQsGQ-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -549,7 +549,7 @@ exports[`SearchInput component renders lg size 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <input
-      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
+      class="c-lfQsGQ c-lfQsGQ-jAZHIx-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
       type="search"
       value=""
     />

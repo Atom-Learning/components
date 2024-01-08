@@ -158,18 +158,18 @@ exports[`Tree renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hXLsaq-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -207,7 +207,7 @@ exports[`Tree renders 1`] = `
           <button
             aria-controls="radix-0"
             aria-expanded="false"
-            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-jCxibG-cv c-hBEOJc"
             data-state="closed"
             type="button"
           >

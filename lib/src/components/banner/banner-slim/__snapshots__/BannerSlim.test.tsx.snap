@@ -3,7 +3,7 @@
 exports[`BannerSlim component renders 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-bhCeAW {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -161,11 +161,6 @@ exports[`BannerSlim component renders 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -174,6 +169,10 @@ exports[`BannerSlim component renders 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -197,6 +196,18 @@ exports[`BannerSlim component renders 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -468,24 +479,45 @@ exports[`BannerSlim component renders 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-jlrmAu-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv[disabled] {
+  .c-kaaUSm-klvXVG-cv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
+  }
+
+  .c-kaaUSm-bSkyfM-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
   }
 }
 
@@ -522,7 +554,7 @@ exports[`BannerSlim component renders 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
@@ -535,7 +567,7 @@ exports[`BannerSlim component renders 1`] = `
 exports[`BannerSlim component renders dismissible variant 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-bhCeAW {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -693,11 +725,6 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -706,6 +733,10 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -729,6 +760,18 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -1062,38 +1105,59 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-jlrmAu-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv[disabled] {
+  .c-kaaUSm-klvXVG-cv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-oUmPa-hXLsaq-cv {
+  .c-kaaUSm-bSkyfM-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
   .c-cBoNQA-cRYaBy-cv {
@@ -1134,14 +1198,14 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-hXLsaq-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-jCxibG-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
@@ -1164,7 +1228,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
 exports[`BannerSlim component renders sm variant 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-bhCeAW {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -1322,11 +1386,6 @@ exports[`BannerSlim component renders sm variant 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -1335,6 +1394,10 @@ exports[`BannerSlim component renders sm variant 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -1358,6 +1421,18 @@ exports[`BannerSlim component renders sm variant 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -1691,38 +1766,59 @@ exports[`BannerSlim component renders sm variant 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-jlrmAu-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv[disabled] {
+  .c-kaaUSm-klvXVG-cv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-oUmPa-hXLsaq-cv {
+  .c-kaaUSm-bSkyfM-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
   .c-cBoNQA-cRYaBy-cv {
@@ -1763,7 +1859,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jlrmAu-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA

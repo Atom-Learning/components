@@ -2,7 +2,7 @@
 
 exports[`DateInput component renders 1`] = `
 @media  {
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -19,17 +19,17 @@ exports[`DateInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -67,7 +67,7 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -86,18 +86,18 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hXLsaq-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -121,7 +121,7 @@ exports[`DateInput component renders 1`] = `
   >
     <input
       aria-label="test"
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md"
       name="date"
       type="text"
       value=""
@@ -131,7 +131,7 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igEsmBj-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igEsmBj-css"
       data-state="closed"
       type="button"
     >
@@ -158,7 +158,7 @@ exports[`DateInput component renders 1`] = `
 
 exports[`DateInput component renders lg size 1`] = `
 @media  {
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -175,17 +175,17 @@ exports[`DateInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -312,7 +312,7 @@ exports[`DateInput component renders lg size 1`] = `
     display: none;
   }
 
-  .c-gNRHdp {
+  .c-dOwGHN {
     background: transparent;
     border: none;
     border-radius: var(--radii-round);
@@ -326,17 +326,17 @@ exports[`DateInput component renders lg size 1`] = `
     transition: all 75ms;
   }
 
-  .c-gNRHdp:hover {
+  .c-dOwGHN:hover {
     background: var(--colors-tonal100);
   }
 
-  .c-gNRHdp:active {
+  .c-dOwGHN:active {
     color: white;
-    background: var(--colors-primary);
+    background: var(--colors-primary800);
   }
 
-  .c-gNRHdp:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dOwGHN:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
@@ -398,7 +398,7 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -450,11 +450,11 @@ exports[`DateInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-gNRHdp-hztIub-isToday-true {
+  .c-dOwGHN-hztIub-isToday-true {
     background: var(--colors-tonal100);
   }
 
-  .c-gNRHdp-huXVXM-isOutsideMonth-true {
+  .c-dOwGHN-huXVXM-isOutsideMonth-true {
     color: var(--colors-tonal200);
   }
 
@@ -462,16 +462,16 @@ exports[`DateInput component renders lg size 1`] = `
     max-width: 400px;
   }
 
-  .c-gNRHdp-habrnX-isSelected-true {
-    background: var(--colors-primary);
+  .c-dOwGHN-hewsLb-isSelected-true {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-gNRHdp-habrnX-isSelected-true:hover {
-    background: var(--colors-primary);
+  .c-dOwGHN-hewsLb-isSelected-true:hover {
+    background: var(--colors-primary800);
   }
 
-  .c-cHbqOs-jAZHIx-size-lg {
+  .c-lfQsGQ-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -479,38 +479,59 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hXLsaq-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-kaaUSm-jlrmAu-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv[disabled] {
+  .c-kaaUSm-klvXVG-cv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):hover,
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-kaaUSm-jlrmAu-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
+  }
+
+  .c-kaaUSm-bSkyfM-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: white;
+  }
+
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
+    color: rgba(255, 255, 255, 0.65);
   }
 }
 
@@ -572,7 +593,7 @@ exports[`DateInput component renders lg size 1`] = `
   >
     <input
       aria-label="test"
-      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg"
+      class="c-lfQsGQ c-lfQsGQ-jAZHIx-size-lg"
       name="date"
       type="text"
       value=""
@@ -582,7 +603,7 @@ exports[`DateInput component renders lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hXLsaq-cv c-oUmPa-igEsmBj-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igEsmBj-css"
       data-state="closed"
       type="button"
     >

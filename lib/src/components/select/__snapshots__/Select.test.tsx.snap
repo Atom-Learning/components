@@ -2,7 +2,7 @@
 
 exports[`Select component renders a select with 3 options 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -19,28 +19,28 @@ exports[`Select component renders a select with 3 options 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -53,7 +53,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
+    class="c-jfeXUl c-jfeXUl-ggkvuX-size-md"
   >
     <option
       value="value1"
@@ -76,7 +76,7 @@ exports[`Select component renders a select with 3 options 1`] = `
 
 exports[`Select component renders an disabled select 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -93,28 +93,28 @@ exports[`Select component renders an disabled select 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -127,7 +127,7 @@ exports[`Select component renders an disabled select 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
+    class="c-jfeXUl c-jfeXUl-ggkvuX-size-md"
     disabled=""
   />
 </div>
@@ -135,7 +135,7 @@ exports[`Select component renders an disabled select 1`] = `
 
 exports[`Select component renders lg size 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -152,28 +152,28 @@ exports[`Select component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -182,7 +182,7 @@ exports[`Select component renders lg size 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-hqoSmB-sUrCW-size-lg {
+  .c-jfeXUl-sUrCW-size-lg {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -195,14 +195,14 @@ exports[`Select component renders lg size 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-sUrCW-size-lg"
+    class="c-jfeXUl c-jfeXUl-sUrCW-size-lg"
   />
 </div>
 `;
 
 exports[`Select component renders select with a default option 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -219,28 +219,28 @@ exports[`Select component renders select with a default option 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -253,7 +253,7 @@ exports[`Select component renders select with a default option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
+    class="c-jfeXUl c-jfeXUl-ggkvuX-size-md"
   >
     <option
       disabled=""
@@ -284,7 +284,7 @@ exports[`Select component renders select with a default option 1`] = `
 
 exports[`Select component renders select with a disabled option 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -301,28 +301,28 @@ exports[`Select component renders select with a disabled option 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -335,7 +335,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
+    class="c-jfeXUl c-jfeXUl-ggkvuX-size-md"
   >
     <option
       value="value1"
@@ -364,7 +364,7 @@ exports[`Select component renders select with a disabled option 1`] = `
 
 exports[`Select component renders select with no options 1`] = `
 @media  {
-  .c-hqoSmB {
+  .c-jfeXUl {
     -webkit-appearance: none;
     appearance: none;
     background-color: white;
@@ -381,28 +381,28 @@ exports[`Select component renders select with no options 1`] = `
     width: 100%;
   }
 
-  .c-hqoSmB:hover {
+  .c-jfeXUl:hover {
     cursor: pointer;
   }
 
-  .c-hqoSmB:focus {
-    border-color: var(--colors-primary);
+  .c-jfeXUl:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-hqoSmB::-ms-expand {
+  .c-jfeXUl::-ms-expand {
     display: none;
   }
 
-  .c-hqoSmB[disabled],
-  .c-hqoSmB > option[disabled] {
+  .c-jfeXUl[disabled],
+  .c-jfeXUl > option[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-hqoSmB-ggkvuX-size-md {
+  .c-jfeXUl-ggkvuX-size-md {
     background-position: right var(--space-3) top 50%, 0 0;
     background-size: 20px auto, 100%;
     font-size: var(--fontSizes-md);
@@ -415,7 +415,7 @@ exports[`Select component renders select with no options 1`] = `
 <div>
   <select
     aria-label="dropdown"
-    class="c-hqoSmB c-hqoSmB-ggkvuX-size-md"
+    class="c-jfeXUl c-jfeXUl-ggkvuX-size-md"
   />
 </div>
 `;
