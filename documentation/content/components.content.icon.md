@@ -31,7 +31,7 @@ tabs:
 
 
       const Component = () => (
-        <Icon is={Brightness} size="md" css={{ color: '$primary' }} />
+        <Icon is={Brightness} size="md" css={{ color: '$primary800' }} />
       )`} language={"tsx"} />
 
 

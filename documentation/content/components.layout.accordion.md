@@ -93,7 +93,7 @@ tabs:
         <Accordion.Item value="1">
           <Accordion.Trigger
             colorScheme={{
-              accent: 'blue1',
+              accent: 'primary1',
               interactive: 'hiContrast'
             }}
           >

@@ -87,7 +87,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
-        colorScheme={{ base: 'blue1' }}
+        colorScheme={{ base: 'primary1' }}
         emphasis="subtle"
         size="md"
       >
@@ -115,7 +115,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`
 
       <BannerRegular
-        colorScheme={{ base: 'blue2' }}
+        colorScheme={{ base: 'primary2' }}
         emphasis="subtle"
         size="md"
         onDismiss={() => console.log('Dismissed')}>
