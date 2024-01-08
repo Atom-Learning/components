@@ -1,5 +1,5 @@
-import type { Theme } from '@atom-learning/theme'
-import * as atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme/lib/theme-atom'
+import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
 import { themeMap } from '@atom-learning/theme/theme-map'
 import type {
   CSS as StitchesCSS,
