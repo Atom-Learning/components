@@ -20,7 +20,7 @@ const StyledRow = styled(Table.Row, {
     isSelected: {
       true: {
         // the !important rule is needed because the bg property is set elsewhere and it's more specific than this one would be without the !important modifier.
-        bg: '$blue100 !important'
+        bg: '$primary100 !important'
       }
     }
   }

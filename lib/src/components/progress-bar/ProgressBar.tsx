@@ -13,6 +13,7 @@ const StyledProgressBar = styled(Progress.Root, {
   variants: {
     theme: {
       primary: { color: '$primary800' },
+      info: { color: '$info' },
       success: { color: '$success' },
       warning: { color: '$warning' },
       danger: { color: '$danger' }
