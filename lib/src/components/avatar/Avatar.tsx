@@ -39,7 +39,7 @@ const StyledButton = styled('button', {
       backgroundColor: '$tonal50'
     },
     '&:active': {
-      borderColor: '$primary',
+      borderColor: '$primary800',
       backgroundColor: '$tonal100'
     },
     '&:focus-visible': focusVisibleStyleBlock()

@@ -65,9 +65,9 @@ export const StyledRoot = styled(Flex, {
   alignItems: 'center',
   fontFamily: '$body',
   maxWidth: '100%',
-  borderColor: '$primary',
-  color: '$primaryMid',
-  bg: '$primaryLight',
+  borderColor: '$primary800',
+  color: '$primary900',
+  bg: '$primary100',
   '&[data-disabled]': {
     opacity: '0.3',
     pointerEvents: 'none'

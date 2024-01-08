@@ -29,12 +29,12 @@ const StyledRadioButton = styled(RadioGroup.Item, {
   },
   transition: 'all 50ms ease-out',
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '1px'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   '&[disabled]': {
     backgroundColor: '$tonal100',

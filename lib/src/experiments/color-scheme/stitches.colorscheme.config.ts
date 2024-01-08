@@ -41,6 +41,8 @@ type TcolorSetup = {
 }
 
 export const bases = {
+  primary1: { colorName: 'primary', color0: '#FFFFFF' },
+  primary2: { colorName: 'primary' },
   grey1: { colorName: 'grey', color0: '#FFFFFF' },
   grey2: { colorName: 'grey' },
   blue1: { colorName: 'blue', color0: '#FFFFFF' },
@@ -80,6 +82,8 @@ const generateBase = () => {
 }
 
 export const accents = {
+  primary1: { colorName: 'primary', color0: '#FFFFFF' },
+  primary2: { colorName: 'primary' },
   grey1: { colorName: 'grey', color0: '#FFFFFF' },
   grey2: { colorName: 'grey' },
   blue1: { colorName: 'blue', color0: '#FFFFFF' },

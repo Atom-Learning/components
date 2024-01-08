@@ -8,10 +8,10 @@ import { ToastIcon } from './ToastIcon'
 import { useToastContext } from './ToastProvider'
 
 const toastVariants = {
-  blank: { bg: '$primary' },
-  error: { bg: '$danger' },
-  loading: { bg: '$primary' },
-  success: { bg: '$success' }
+  loading: { bg: '$info' },
+  blank: { bg: '$info' },
+  success: { bg: '$success' },
+  error: { bg: '$danger' }
 } as const
 
 export const StyledToast = styled(Flex, {
