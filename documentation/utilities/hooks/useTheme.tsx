@@ -4,9 +4,11 @@ import * as React from 'react'
 
 const createdTheme = createTheme(questTheme)
 
+type Theme = 'atom' | 'quest'
+
 interface ThemeContext {
-  theme: 'atom' | 'quest'
-  setTheme: React.Dispatch<React.SetStateAction<'atom' | 'quest'>>
+  theme: Theme
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>
 }
 
 const ThemeContext = React.createContext<ThemeContext>({
@@ -17,7 +19,7 @@ const ThemeContext = React.createContext<ThemeContext>({
 export const useTheme = () => React.useContext(ThemeContext)
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = React.useState()
+  const [theme, setTheme] = React.useState<Theme>('atom')
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
