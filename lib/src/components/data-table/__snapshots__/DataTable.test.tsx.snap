@@ -531,8 +531,8 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-vRLgs-jzocfZ-isRowSelected-true {
-    background: var(--colors-blue100);
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
   }
 
   .c-kaaUSm-jyNkKc-size-md {
@@ -555,8 +555,8 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-gyYKPo-hHLxyG-isSelected-true {
-    background: var(--colors-blue100) !important;
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
   }
 
   .c-jBOHFZ-jIYkAt-size-md {
@@ -3779,8 +3779,8 @@ exports[`DataTable server-side renders 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-vRLgs-jzocfZ-isRowSelected-true {
-    background: var(--colors-blue100);
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
   }
 
   .c-kaaUSm-jyNkKc-size-md {
@@ -3803,8 +3803,8 @@ exports[`DataTable server-side renders 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-gyYKPo-hHLxyG-isSelected-true {
-    background: var(--colors-blue100) !important;
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
   }
 
   .c-jBOHFZ-jIYkAt-size-md {
@@ -5024,8 +5024,8 @@ exports[`DataTable sticky columns renders 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-vRLgs-jzocfZ-isRowSelected-true {
-    background: var(--colors-blue100);
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
   }
 
   .c-kaaUSm-jyNkKc-size-md {
@@ -5048,8 +5048,8 @@ exports[`DataTable sticky columns renders 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-gyYKPo-hHLxyG-isSelected-true {
-    background: var(--colors-blue100) !important;
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
   }
 
   .c-jBOHFZ-jIYkAt-size-md {

@@ -3,7 +3,7 @@
 exports[`Nav component renders 1`] = `
 @media  {
   :root,
-  .t-bhCeAW {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -12,9 +12,10 @@ exports[`Nav component renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -256,18 +257,18 @@ exports[`Nav component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-eWhWlr {
+  .t-cmtmTT {
     --colors-text: var(--colors-textSubtle);
     --colors-background: white;
     --colors-backgroundHover: var(--colors-grey100);
-    --colors-textHover: var(--colors-textForeground);
+    --colors-textHover: var(--colors-grey1000);
     --colors-backgroundActive: var(--colors-grey200);
     --colors-textActive: var(--colors-grey1000);
-    --colors-backgroundSelected: var(--colors-blue100);
-    --colors-textSelected: var(--colors-blue800);
-    --colors-textSelectedHover: var(--colors-blue800);
-    --colors-textSelectedPressed: var(--colors-blue800);
-    --colors-textSelectedFocus: var(--colors-blue800);
+    --colors-backgroundSelected: var(--colors-primary100);
+    --colors-textSelected: var(--colors-primary800);
+    --colors-textSelectedHover: var(--colors-primary800);
+    --colors-textSelectedPressed: var(--colors-primary800);
+    --colors-textSelectedFocus: var(--colors-primary800);
     --colors-backgroundSelectedHover: var(--colors-grey100);
     --colors-backgroundSelectedPressed: var(--colors-grey200);
     --colors-itemTextSelected: var(--colors-grey900);
@@ -540,7 +541,7 @@ exports[`Nav component renders 1`] = `
 <body>
   <nav
     aria-label="Main"
-    class="c-eZxssT t-eWhWlr"
+    class="c-eZxssT t-cmtmTT"
     data-orientation="horizontal"
     dir="ltr"
   >

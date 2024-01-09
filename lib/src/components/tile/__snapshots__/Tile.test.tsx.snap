@@ -3,7 +3,7 @@
 exports[`Tile component renders 1`] = `
 @media  {
   :root,
-  .t-bhCeAW {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -12,9 +12,10 @@ exports[`Tile component renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);

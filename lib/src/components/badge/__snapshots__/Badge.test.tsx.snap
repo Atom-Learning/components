@@ -3,7 +3,7 @@
 exports[`Badge component renders 1`] = `
 @media  {
   :root,
-  .t-bhCeAW {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -12,9 +12,10 @@ exports[`Badge component renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -256,11 +257,11 @@ exports[`Badge component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-bYtrHU {
-    --colors-textSubtle: var(--colors-blue900);
-    --colors-backgroundSubtle: var(--colors-blue100);
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
     --colors-textBold: #FFF;
-    --colors-backgroundBold: var(--colors-blue800);
+    --colors-backgroundBold: var(--colors-info);
   }
 }
 
@@ -341,7 +342,7 @@ exports[`Badge component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-hxgSuC"
     role="status"
   >
     <p
@@ -356,7 +357,7 @@ exports[`Badge component renders 1`] = `
 exports[`Badge component renders a md size and danger theme 1`] = `
 @media  {
   :root,
-  .t-bhCeAW {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -365,9 +366,10 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -609,11 +611,11 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-bYtrHU {
-    --colors-textSubtle: var(--colors-blue900);
-    --colors-backgroundSubtle: var(--colors-blue100);
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
     --colors-textBold: #FFF;
-    --colors-backgroundBold: var(--colors-blue800);
+    --colors-backgroundBold: var(--colors-info);
   }
 
   .t-dgJqaz {
@@ -723,7 +725,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
 exports[`Badge component renders with an icon 1`] = `
 @media  {
   :root,
-  .t-bhCeAW {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -732,9 +734,10 @@ exports[`Badge component renders with an icon 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -976,11 +979,11 @@ exports[`Badge component renders with an icon 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .t-bYtrHU {
-    --colors-textSubtle: var(--colors-blue900);
-    --colors-backgroundSubtle: var(--colors-blue100);
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
     --colors-textBold: #FFF;
-    --colors-backgroundBold: var(--colors-blue800);
+    --colors-backgroundBold: var(--colors-info);
   }
 
   .t-dgJqaz {
@@ -1091,7 +1094,7 @@ exports[`Badge component renders with an icon 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-bYtrHU"
+    class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm t-hxgSuC"
     role="status"
   >
     <svg
