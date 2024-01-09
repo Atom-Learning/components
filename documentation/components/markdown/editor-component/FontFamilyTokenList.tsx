@@ -1,9 +1,11 @@
 import { Text } from '@atom-learning/components'
 import type { Theme } from '@atom-learning/theme/lib/theme-atom'
 import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
+import * as questTheme from '@atom-learning/theme/lib/theme-quest'
 import { TokenList } from './token-list'
 
 import * as React from 'react'
+import { useTheme } from '~/utilities/hooks/useTheme'
 
 const FontFamilyExample: typeof TokenList.Item = ({
   token,
@@ -25,11 +27,13 @@ export const FontFamilyTokenList: React.FC<FontFamilyTokenListProps> = ({
   fontFamilies: specificFontFamilies,
   ...rest
 }) => {
+  const { theme } = useTheme()
+  const tokens = theme === 'atom' ? atomTheme : questTheme
   return (
     // @ts-ignore
     <TokenList
       direction="column"
-      allTokens={(atomTheme as Theme).fonts}
+      allTokens={(tokens as Theme).fonts}
       specificTokens={specificFontFamilies}
       ItemComponent={FontFamilyExample}
       {...rest}
