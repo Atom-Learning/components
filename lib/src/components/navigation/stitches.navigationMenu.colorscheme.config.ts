@@ -5,7 +5,7 @@ const light = createTheme({
     text: '$textSubtle',
     background: 'white',
     backgroundHover: '$grey100',
-    textHover: '$textForeground',
+    textHover: '$grey1000',
     backgroundActive: '$grey200',
     textActive: '$grey1000',
     backgroundSelected: '$primary100',
