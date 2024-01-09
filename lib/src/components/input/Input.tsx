@@ -18,7 +18,7 @@ const StyledInput = styled('input', {
   transition: 'all 100ms ease-out',
   width: '100%',
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&[disabled]': disabledStyle,

@@ -31,15 +31,15 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   transition: 'all 50ms ease-out',
   flexShrink: 0,
   '&[data-state="checked"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   '&[data-state="indeterminate"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '1px'
   },
   '&[disabled]': disabledStyle,

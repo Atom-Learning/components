@@ -12,52 +12,52 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-gPnNdI {
+  .c-bmSGqY {
     background: unset;
     border: unset;
     padding: unset;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
     cursor: pointer;
     font-family: var(--fonts-body);
     text-decoration: none;
   }
 
-  .c-gPnNdI:focus,
-  .c-gPnNdI:hover {
-    color: var(--colors-primaryMid);
+  .c-bmSGqY:focus,
+  .c-bmSGqY:hover {
+    color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-gPnNdI:active {
-    color: var(--colors-primaryDark);
+  .c-bmSGqY:active {
+    color: var(--colors-primary1000);
   }
 
-  .c-gPnNdI[disabled] {
+  .c-bmSGqY[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gPnNdI,
-  .c-jryFOR > .c-gPnNdI,
-  .c-PJLV > .c-gPnNdI,
-  .c-bYNGXt > .c-gPnNdI {
+  .c-dyvMgW > .c-bmSGqY,
+  .c-jryFOR > .c-bmSGqY,
+  .c-PJLV > .c-bmSGqY,
+  .c-bYNGXt > .c-bmSGqY {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gPnNdI::before,
-  .c-dyvMgW > .c-gPnNdI::after,
-  .c-jryFOR > .c-gPnNdI::before,
-  .c-jryFOR > .c-gPnNdI::after,
-  .c-PJLV > .c-gPnNdI::before,
-  .c-PJLV > .c-gPnNdI::after,
-  .c-bYNGXt > .c-gPnNdI::before,
-  .c-bYNGXt > .c-gPnNdI::after {
+  .c-dyvMgW > .c-bmSGqY::before,
+  .c-dyvMgW > .c-bmSGqY::after,
+  .c-jryFOR > .c-bmSGqY::before,
+  .c-jryFOR > .c-bmSGqY::after,
+  .c-PJLV > .c-bmSGqY::before,
+  .c-PJLV > .c-bmSGqY::after,
+  .c-bYNGXt > .c-bmSGqY::before,
+  .c-bYNGXt > .c-bmSGqY::after {
     content: none;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -74,17 +74,17 @@ exports[`FieldWrapper component renders 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -134,24 +134,24 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-gPnNdI-bndJoy-size-sm {
+  .c-bmSGqY-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-gPnNdI-bndJoy-size-sm::before {
+  .c-bmSGqY-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-gPnNdI-bndJoy-size-sm::after {
+  .c-bmSGqY-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -219,7 +219,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-gPnNdI c-gPnNdI-bndJoy-size-sm"
+        class="c-bmSGqY c-bmSGqY-bndJoy-size-sm"
         href="https://example.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -228,7 +228,7 @@ exports[`FieldWrapper component renders 1`] = `
       </a>
     </div>
     <input
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md"
       id="example"
       name="example"
       type="text"

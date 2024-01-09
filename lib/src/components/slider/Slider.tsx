@@ -43,7 +43,7 @@ const StyledSlider = styled(Root, {
 })
 
 const StyledRange = styled(Range, {
-  bg: '$primary',
+  bg: '$primary800',
   borderRadius: '$round',
   height: '100%',
   position: 'absolute',
@@ -51,15 +51,15 @@ const StyledRange = styled(Range, {
 })
 
 const StyledThumb = styled(Thumb, {
-  bg: '$primaryMid',
+  bg: '$primary900',
   borderRadius: '$round',
   display: 'block',
   size: '$1',
   '&:hover': {
-    bg: '$primaryDark'
+    bg: '$primary1000'
   },
   '&:focus': {
-    outline: '2px solid $primaryMid',
+    outline: '2px solid $primary900',
     outlineOffset: '2px'
   },
   '&[data-disabled]': disabledStyle

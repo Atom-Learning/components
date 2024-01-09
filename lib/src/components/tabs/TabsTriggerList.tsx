@@ -83,7 +83,7 @@ export const TabsTriggerList: React.FC<
   return (
     <StyledContainer
       base="grey1"
-      accent="blue1"
+      accent="primary1"
       interactive="hiContrast"
       {...colorScheme}
       {...rest}

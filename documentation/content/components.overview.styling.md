@@ -59,8 +59,8 @@ tabs:
       <Text
         css={{
           color: '$tonal300',
-          '@md': { color: '$primary' },
-          '@lg': { color: '$primaryDark' }
+          '@md': { color: '$primary800' },
+          '@lg': { color: '$primary1000' }
         }}
       >
         Hello World
@@ -106,7 +106,7 @@ tabs:
 
       ```tsx
 
-      <Box css={{ bg: '$primary', size: 100 }} />
+      <Box css={{ bg: '$primary800', size: 100 }} />
 
       ```
 

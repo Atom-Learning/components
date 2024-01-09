@@ -7,7 +7,7 @@ exports[`DropdownMenu component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dOviKI {
+  .c-iPAADh {
     align-items: center;
     color: var(--colors-tonal600);
     cursor: pointer;
@@ -21,14 +21,14 @@ exports[`DropdownMenu component renders 1`] = `
     padding-bottom: var(--space-2);
   }
 
-  .c-dOviKI[disabled] {
+  .c-iPAADh[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dOviKI[aria-current="page"]::before,
-  .c-dOviKI:focus::before {
+  .c-iPAADh[aria-current="page"]::before,
+  .c-iPAADh:focus::before {
     border-left: 2px solid currentColor;
     content: "";
     height: var(--sizes-2);
@@ -38,12 +38,12 @@ exports[`DropdownMenu component renders 1`] = `
     transform: scale(1);
   }
 
-  .c-dOviKI:focus {
-    color: var(--colors-primaryMid);
+  .c-iPAADh:focus {
+    color: var(--colors-primary900);
     outline: none;
   }
 
-  .c-dOviKI:hover {
+  .c-iPAADh:hover {
     text-decoration: underline;
   }
 
@@ -142,7 +142,7 @@ exports[`DropdownMenu component renders 1`] = `
       tabindex="-1"
     >
       <div
-        class="c-dOviKI"
+        class="c-iPAADh"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -151,7 +151,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 1
       </div>
       <div
-        class="c-dOviKI"
+        class="c-iPAADh"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -160,7 +160,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 2
       </div>
       <a
-        class="c-cIdiJW c-dOviKI"
+        class="c-cIdiJW c-iPAADh"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="http://google.com"
@@ -177,7 +177,7 @@ exports[`DropdownMenu component renders 1`] = `
         role="separator"
       />
       <a
-        class="c-cIdiJW c-dOviKI"
+        class="c-cIdiJW c-iPAADh"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="/logout"

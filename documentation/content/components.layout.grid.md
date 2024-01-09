@@ -17,7 +17,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<Grid minItemSize="10em" gap="3" css={{ width: '100%' }}>
         {Array.from(Array(6)).map((_, i) => (
-          <Box key={i} css={{ bg: '$primary', height: '10em' }} />
+          <Box key={i} css={{ bg: '$primary800', height: '10em' }} />
         ))}
       </Grid>`} language={"tsx"} />
 
@@ -27,7 +27,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<Grid minItemSize="10em" maxItemSize="10em" gap="3" css={{ width: '100%' }}>
         {Array.from(Array(3)).map((_, i) => (
-          <Box key={i} css={{ bg: '$primary', height: '10em' }} />
+          <Box key={i} css={{ bg: '$primary800', height: '10em' }} />
         ))}
       </Grid>`} language={"tsx"} />
 

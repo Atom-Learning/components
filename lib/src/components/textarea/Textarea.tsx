@@ -20,7 +20,7 @@ const StyledTextarea = styled('textarea', {
   transition: 'all 75ms ease-out',
   width: '100%',
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&[disabled]': {

@@ -2,7 +2,7 @@
 
 exports[`Textarea component renders a textarea 1`] = `
 @media  {
-  .c-dIDWeX {
+  .c-dMfLxD {
     box-shadow: none;
     font-size: var(--fontSizes-md);
     -webkit-appearance: none;
@@ -24,25 +24,25 @@ exports[`Textarea component renders a textarea 1`] = `
     width: 100%;
   }
 
-  .c-dIDWeX:focus {
-    border-color: var(--colors-primary);
+  .c-dMfLxD:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-dIDWeX[disabled] {
+  .c-dMfLxD[disabled] {
     background-color: var(--colors-tonal100);
     color: var(--colors-tonal400);
     cursor: not-allowed;
   }
 
-  .c-dIDWeX::placeholder {
+  .c-dMfLxD::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-dIDWeX-ikLAKdM-css {
+  .c-dMfLxD-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -51,7 +51,7 @@ exports[`Textarea component renders a textarea 1`] = `
 
 <div>
   <textarea
-    class="c-dIDWeX c-dIDWeX-ikLAKdM-css"
+    class="c-dMfLxD c-dMfLxD-ikLAKdM-css"
     placeholder="DESCRIPTION"
   />
 </div>

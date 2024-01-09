@@ -15,7 +15,7 @@ exports[`CheckboxField component renders 1`] = `
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .c-bULSRl {
+  .c-dScekx {
     -webkit-appearance: none;
     appearance: none;
     position: relative;
@@ -34,22 +34,22 @@ exports[`CheckboxField component renders 1`] = `
     flex-shrink: 0;
   }
 
-  .c-bULSRl[data-state="checked"] {
-    background-color: var(--colors-primary);
-    border-color: var(--colors-primary);
+  .c-dScekx[data-state="checked"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
   }
 
-  .c-bULSRl[data-state="indeterminate"] {
-    background-color: var(--colors-primary);
-    border-color: var(--colors-primary);
+  .c-dScekx[data-state="indeterminate"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
   }
 
-  .c-bULSRl:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dScekx:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bULSRl[disabled] {
+  .c-dScekx[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -79,7 +79,7 @@ exports[`CheckboxField component renders 1`] = `
     max-width: max-content;
   }
 
-  .c-bULSRl-kupcZn-size-md {
+  .c-dScekx-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
@@ -118,7 +118,7 @@ exports[`CheckboxField component renders 1`] = `
         >
           <button
             aria-checked="false"
-            class="c-bULSRl c-bULSRl-kupcZn-size-md"
+            class="c-dScekx c-dScekx-kupcZn-size-md"
             data-state="unchecked"
             role="checkbox"
             type="button"

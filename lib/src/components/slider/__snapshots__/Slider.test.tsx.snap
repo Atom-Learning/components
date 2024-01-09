@@ -2,14 +2,14 @@
 
 exports[`Slider component renders 1`] = `
 @media  {
-  .c-iBUlyQ {
-    background: var(--colors-primary);
+  .c-hNIRsQ {
+    background: var(--colors-primary800);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
   }
 
-  .c-iBUlyQ[data-disabled] {
+  .c-hNIRsQ[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -28,24 +28,24 @@ exports[`Slider component renders 1`] = `
     width: var(--space-1);
   }
 
-  .c-kLcOQb {
-    background: var(--colors-primaryMid);
+  .c-ccaAMC {
+    background: var(--colors-primary900);
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
 
-  .c-kLcOQb:hover {
-    background: var(--colors-primaryDark);
+  .c-ccaAMC:hover {
+    background: var(--colors-primary1000);
   }
 
-  .c-kLcOQb:focus {
-    outline: 2px solid var(--colors-primaryMid);
+  .c-ccaAMC:focus {
+    outline: 2px solid var(--colors-primary900);
     outline-offset: 2px;
   }
 
-  .c-kLcOQb[data-disabled] {
+  .c-ccaAMC[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -94,7 +94,7 @@ exports[`Slider component renders 1`] = `
       data-orientation="horizontal"
     >
       <span
-        class="c-iBUlyQ"
+        class="c-hNIRsQ"
         data-orientation="horizontal"
         style="left: 0%; right: 50%;"
       />
@@ -107,7 +107,7 @@ exports[`Slider component renders 1`] = `
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="50"
-        class="c-kLcOQb"
+        class="c-ccaAMC"
         data-orientation="horizontal"
         data-radix-collection-item=""
         role="slider"
@@ -121,14 +121,14 @@ exports[`Slider component renders 1`] = `
 
 exports[`Slider component renders with a steps list 1`] = `
 @media  {
-  .c-iBUlyQ {
-    background: var(--colors-primary);
+  .c-hNIRsQ {
+    background: var(--colors-primary800);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
   }
 
-  .c-iBUlyQ[data-disabled] {
+  .c-hNIRsQ[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -147,24 +147,24 @@ exports[`Slider component renders with a steps list 1`] = `
     width: var(--space-1);
   }
 
-  .c-kLcOQb {
-    background: var(--colors-primaryMid);
+  .c-ccaAMC {
+    background: var(--colors-primary900);
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
 
-  .c-kLcOQb:hover {
-    background: var(--colors-primaryDark);
+  .c-ccaAMC:hover {
+    background: var(--colors-primary1000);
   }
 
-  .c-kLcOQb:focus {
-    outline: 2px solid var(--colors-primaryMid);
+  .c-ccaAMC:focus {
+    outline: 2px solid var(--colors-primary900);
     outline-offset: 2px;
   }
 
-  .c-kLcOQb[data-disabled] {
+  .c-ccaAMC[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -214,7 +214,7 @@ exports[`Slider component renders with a steps list 1`] = `
       data-orientation="horizontal"
     >
       <span
-        class="c-iBUlyQ"
+        class="c-hNIRsQ"
         data-orientation="horizontal"
         style="left: 0%; right: 50%;"
       />
@@ -227,7 +227,7 @@ exports[`Slider component renders with a steps list 1`] = `
         aria-valuemax="100"
         aria-valuemin="0"
         aria-valuenow="50"
-        class="c-kLcOQb"
+        class="c-ccaAMC"
         data-orientation="horizontal"
         data-radix-collection-item=""
         role="slider"
@@ -241,14 +241,14 @@ exports[`Slider component renders with a steps list 1`] = `
 
 exports[`Slider.Value component renders 1`] = `
 @media  {
-  .c-iBUlyQ {
-    background: var(--colors-primary);
+  .c-hNIRsQ {
+    background: var(--colors-primary800);
     border-radius: var(--radii-round);
     height: 100%;
     position: absolute;
   }
 
-  .c-iBUlyQ[data-disabled] {
+  .c-hNIRsQ[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -267,24 +267,24 @@ exports[`Slider.Value component renders 1`] = `
     width: var(--space-1);
   }
 
-  .c-kLcOQb {
-    background: var(--colors-primaryMid);
+  .c-ccaAMC {
+    background: var(--colors-primary900);
     border-radius: var(--radii-round);
     display: block;
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
 
-  .c-kLcOQb:hover {
-    background: var(--colors-primaryDark);
+  .c-ccaAMC:hover {
+    background: var(--colors-primary1000);
   }
 
-  .c-kLcOQb:focus {
-    outline: 2px solid var(--colors-primaryMid);
+  .c-ccaAMC:focus {
+    outline: 2px solid var(--colors-primary900);
     outline-offset: 2px;
   }
 
-  .c-kLcOQb[data-disabled] {
+  .c-ccaAMC[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }

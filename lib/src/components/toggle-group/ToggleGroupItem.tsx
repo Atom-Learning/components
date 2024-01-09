@@ -19,7 +19,7 @@ export const StyledItem = styled(ToggleGroup.Item, {
     },
     '&:hover': {
       borderColor: 'currentColor !important',
-      color: '$primaryMid'
+      color: '$primary900'
     },
     '&:focus-visible': {
       ...focusVisibleStyleBlock(),
@@ -38,7 +38,7 @@ export const StyledItem = styled(ToggleGroup.Item, {
     cursor: 'not-allowed'
   },
   '&[data-state="on"]': {
-    color: '$primary',
+    color: '$primary800',
     borderColor: 'currentColor !important',
     boxShadow: 'inset currentColor 0px 0px 0px 1px'
   }

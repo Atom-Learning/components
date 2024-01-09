@@ -39,7 +39,7 @@ const StyledLink = styled(
               color: '$textSelectedPressed'
             },
             '&:focus-visible': {
-              boxShadow: '0 0 0 2px $colors$primary',
+              boxShadow: '0 0 0 2px $colors$primary800',
               color: '$textSelectedFocus'
             }
           }
