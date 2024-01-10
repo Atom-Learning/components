@@ -10,7 +10,7 @@ tabs:
       #### Related components
 
 
-      [Banner slim](https://atomlearning.design/components/content/banner-slim)  
+      [Banner slim](/components/banner-slim)  
 
 
       <br />
