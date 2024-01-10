@@ -134,7 +134,7 @@ tabs:
 
 
       <ComponentProps component="Slider" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
   - components
