@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      `PasswordField` is the preferred way to render a form field for a
-      current password (not necessarily for creating a new password).
+      `PasswordField` is the preferred way to render a form field for a current
+      password (not necessarily for creating a new password).
 
 
       `PasswordField` accepts the same props as `InputField` but provides default values for some of them (e.g. `label` defaults to `"Password"` and `name` defaults to `password`).
@@ -31,7 +31,7 @@ tabs:
 
       <ComponentProps component="PasswordField" />
     title: Main
-parent: ru0Ovr_U82kdQX8m3WahL
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:
   - components
