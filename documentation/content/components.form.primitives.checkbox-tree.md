@@ -142,7 +142,7 @@ tabs:
 
 
       <DosAndDonts items={[]} />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: c9fe80d8-1052-45a9-9497-b505fe08727b
 nestedSlug:
   - components
