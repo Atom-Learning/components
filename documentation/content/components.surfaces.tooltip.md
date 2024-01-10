@@ -38,11 +38,15 @@ tabs:
 
       <ComponentProps component="Tooltip" />
 
+
       <ComponentProps component="Tooltip.Trigger" />
+
 
       <ComponentProps component="Tooltip.Content" />
 
+
       <ComponentProps component="Tooltip.Provider" />
+
 
       <ComponentProps component="Tooltip.Portal" />
   - content: >-
@@ -163,7 +167,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/01-tooltip-do.svg","type":"do","description":"Ensure that the tooltip's content is clear and concise."},{"description":"Overload tooltips with excessive information.","type":"dont","image":"/assets/images/02-tooltip-dont.svg"},{"description":"Choose appropriate tooltip placements that don't obstruct critical content and are contextually relevant.","type":"do","image":"/assets/images/03-tooltip-do.svg"},{"description":"Position tooltips in a way that obscures the content or makes it difficult for users to interact with the elements they're hovering over.","type":"dont","image":"/assets/images/04-tooltip-dont.svg"},{"image":"/assets/images/05-tooltip-do.svg","description":"Use tooltip if the content is cut off with an ellipsis or overflows.","type":"do"},{"description":"Use tooltips excessively. Reserve them for situations where additional context or information is genuinely needed.","type":"dont","image":"/assets/images/06-tooltip-dont.svg"}]} />
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
