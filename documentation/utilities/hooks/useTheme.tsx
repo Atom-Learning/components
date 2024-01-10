@@ -8,21 +8,30 @@ type Theme = 'atom' | 'quest'
 
 interface ThemeContext {
   theme: Theme
-  setTheme: React.Dispatch<React.SetStateAction<Theme>>
+  updateTheme: React.Dispatch<React.SetStateAction<Theme>>
 }
 
 const ThemeContext = React.createContext<ThemeContext>({
   theme: 'atom',
-  setTheme: () => null
+  updateTheme: (theme: Theme) => null
 })
+
+const getInitialTheme = () => {
+  return (window?.sessionStorage.getItem('theme') as Theme) || 'atom'
+}
 
 export const useTheme = () => React.useContext(ThemeContext)
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = React.useState<Theme>('atom')
+  const [theme, setTheme] = React.useState<Theme>(getInitialTheme())
+
+  const updateTheme = (theme) => {
+    setTheme(theme)
+    window?.sessionStorage.setItem('theme', theme)
+  }
 
   return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, updateTheme }}>
       <Box
         className={theme === 'quest' ? createdTheme : undefined}
         css={{ display: 'contents' }}

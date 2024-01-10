@@ -4,7 +4,7 @@ import {
   Text,
   Button,
   focusVisibleStyleBlock,
-  Stack,
+  Flex,
   Box,
   Tooltip
 } from '@atom-learning/components'
@@ -30,26 +30,30 @@ const IconItem: React.FC<TIconItemProps> = ({ token, value: Component }) => {
     <Box as="li" css={{ listStyle: 'none' }}>
       <Tooltip>
         <Tooltip.Trigger asChild>
-          <Button
+          <Flex
+            as="button"
+            direction="column"
+            gap="4"
             css={{
-              size: '140px',
-              display: 'flex',
-              p: '8px',
-              flexDirection: 'column',
-              '&:focus-visible': {
-                ...focusVisibleStyleBlock()
-              }
+              bg: 'unset',
+              border: 'unset',
+              cursor: 'pointer',
+              width: '140px',
+              p: '$4',
+              '&:focus-visible': focusVisibleStyleBlock()
             }}
             onClick={() => copyIcon(token)}
             aria-label={`Click to copy: ${token}`}
           >
-            <Stack gap={1} css={{ mb: '$4' }} align="center" justify="center">
-              <Icon is={Component} size="sm" />
-              <Icon is={Component} size="md" />
-              <Icon is={Component} size="lg" />
-            </Stack>
-            <Text size="sm">{token}</Text>
-          </Button>
+            <Flex gap={3} align="center" justify="center">
+              <Icon is={Component} size="sm" css={{ color: '$primary700' }} />
+              <Icon is={Component} size="md" css={{ color: '$primary700' }} />
+              <Icon is={Component} size="lg" css={{ color: '$primary800' }} />
+            </Flex>
+            <Text css={{ color: '$textSubtle' }} size="sm">
+              {token}
+            </Text>
+          </Flex>
         </Tooltip.Trigger>
         <Tooltip.Content>Click to copy: {token}</Tooltip.Content>
       </Tooltip>
@@ -89,7 +93,8 @@ export const IconTokenList: React.FC<IconTokenListProps> = ({
         />
       )}
       <TokenList
-        gap={3}
+        css={{ mx: '-$4', '@xl': { mx: '-176px' } }}
+        gap={24}
         allTokens={atomIcons}
         specificTokens={specificIconNames}
         ItemComponent={IconItem}
