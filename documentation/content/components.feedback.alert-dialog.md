@@ -10,7 +10,7 @@ tabs:
       #### Related components
 
 
-      [Dialog](https://atomlearning.design/components/surfaces/dialog)
+      [Dialog](/components/dialog)
 
 
       <br />
