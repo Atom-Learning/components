@@ -16,6 +16,7 @@ tabs:
 
       ## Text overflow
 
+
       <CodeBlock live={true} preview={true} code={`<Tooltip.Provider>
         <Badge css={{width: 100}} overflow="ellipsis">
         <Icon is={Wifi} /> New Data New Data New Data New Data New Data</Badge>
@@ -24,6 +25,7 @@ tabs:
 
       ## Emphasis
 
+
       <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
         <Badge emphasis="subtle">Subtle</Badge>
         <Badge emphasis="bold">Bold</Badge>
@@ -31,6 +33,7 @@ tabs:
 
 
       ## Theme
+
 
       The following semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
 
@@ -211,7 +214,7 @@ tabs:
       | Bg - Warning               | $warningLight | \#  |
 
       | Bg - Purple                | $purple200    | \#  |
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
