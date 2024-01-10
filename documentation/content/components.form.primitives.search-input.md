@@ -27,7 +27,7 @@ tabs:
 
 
       <ComponentProps component="SearchInput" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: Y_jV1SJTz4R0AumFQre0E
 nestedSlug:
   - components
