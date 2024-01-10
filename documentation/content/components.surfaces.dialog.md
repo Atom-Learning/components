@@ -98,7 +98,7 @@ tabs:
 
 
       <ComponentProps component="Dialog.Close" />
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
