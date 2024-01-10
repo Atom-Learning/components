@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      `CheckboxGroup` is a combination of checkbox input controls that
-      enables the user to select or deselect values in a group.
+      `CheckboxGroup` is a combination of checkbox input controls that enables
+      the user to select or deselect values in a group.
 
 
       Can be used controlled or uncontrolled.
@@ -53,7 +53,7 @@ tabs:
 
 
       <ComponentProps component="CheckboxGroup.Item" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: c9fe80d8-1052-45a9-9497-b505fe08727b
 nestedSlug:
   - components
