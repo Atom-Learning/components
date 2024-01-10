@@ -48,7 +48,7 @@ tabs:
 
 
       <ComponentProps component="List" />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 0dDh777AyFvsKcVV-lyeI
 nestedSlug:
   - components
