@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      `StackContent` applies an opinionated set of vertical spacing rules
-      around its child components. It also applies a maximum width
+      `StackContent` applies an opinionated set of vertical spacing rules around
+      its child components. It also applies a maximum width
       to `Heading`, `Text` and `List` to ensure optimal line length is preserved
       for readability.
 
@@ -40,7 +40,7 @@ tabs:
 
 
       <ComponentProps component="StackContent" />
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: hPn2VDH3V0jh9P7KxQB3a
 nestedSlug:
   - components

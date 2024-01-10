@@ -14,16 +14,19 @@ tabs:
 
       ## Usage with `<Flex />`
 
+
       <CodeBlock live={true} preview={true} code={`<Flex css={{ width: '600px' }}>
         <Box css={{ bg: '$primary800', size: '$6' }} />
         <Spacer />
         <Box css={{ bg: '$primary800', size: '$6' }} />
       </Flex>`} language={"tsx"} />
 
+
       ## API Reference
 
+
       <ComponentProps component="Spacer" />
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: ilLINfG8dohXNR1xpJiFY
 nestedSlug:
   - components
