@@ -73,7 +73,7 @@ tabs:
 
 
       <ComponentProps component="RadioCard" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: hlhPaSzso2dYs2BWOoauk
 nestedSlug:
   - components
