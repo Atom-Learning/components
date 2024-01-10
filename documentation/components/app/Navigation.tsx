@@ -42,13 +42,16 @@ export const Navigation: React.FC<NavigationProps> = React.memo(
 
           if (!children) {
             return (
-              <NavigationLink href={href}>
+              <NavigationLink href={href} key={title}>
                 {removeStartingNumber(title)}
               </NavigationLink>
             )
           } else {
             return (
-              <NavigationMenuVertical.Accordion defaultOpen={level < 3}>
+              <NavigationMenuVertical.Accordion
+                defaultOpen={level < 3}
+                key={title}
+              >
                 <NavigationMenuVertical.AccordionTrigger>
                   {removeStartingNumber(title)}
                 </NavigationMenuVertical.AccordionTrigger>
