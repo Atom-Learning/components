@@ -23,6 +23,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({
     type === 'do' ? '$success' : type === 'dont' ? '$danger' : '$warning'
   const typeText = type === 'do' ? 'Do' : type === 'dont' ? "Don't" : 'Avoid'
   return (
+    // @ts-expect-error: Property 'as' does not exist on type. It should.
     <Tile as="li" css={{ listStyle: 'none' }}>
       <Box
         css={{
