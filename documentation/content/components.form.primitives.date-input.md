@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Date field](https://atomlearning.design/components/form/fields/date-field)
+      [Date field](/components/date-field)
 
 
       <br/>
