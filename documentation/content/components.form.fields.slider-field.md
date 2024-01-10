@@ -127,7 +127,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/slider-08-do-and-dont-1.svg","type":"do","description":"Provide a label to describe value."},{"image":"/assets/images/slider-09-do-and-dont-2.svg","type":"dont","description":"Provide a label to describe value."},{"image":"/assets/images/slider-10-do-and-dont-3.svg","type":"do","description":"Always use a slider with a label for better accessibility."},{"image":"/assets/images/slider-11-do-and-dont-4.svg","type":"avoid","description":"Using slider without label."},{"image":"/assets/images/slider-12-do-and-dont-5.svg","type":"do","description":"Remember to add enough space, while using this component on smaller screens, to enhance usability."},{"image":"/assets/images/slider-13-do-and-dont-6.svg","type":"dont","description":"Use small spaces around slider components on smaller screens."},{"image":"/assets/images/slider-14-do-and-dont-7.svg","type":"dont","description":"Use for extremely large ranges, e.g. 1-1000."},{"image":"/assets/images/slider-15-do-and-dont-8.svg","type":"dont","description":"Use for ranges, that are too small, e.g. 1-3."}]} />
-parent: ru0Ovr_U82kdQX8m3WahL
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:
   - components
