@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      The RadioButton component implements the Radio component from Radix
-      with default styling and the css prop.
+      The RadioButton component implements the Radio component from Radix with
+      default styling and the css prop.
 
 
       It needs to be wrapped with the `RadioButtonGroup` as it will not load without it. If only one `RadioButton` is needed please consider using a checkbox instead.
@@ -24,7 +24,7 @@ tabs:
 
 
       <ComponentProps component="RadioButton" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: MaluK3EUZD9XWwYEkv3ty
 nestedSlug:
   - components
