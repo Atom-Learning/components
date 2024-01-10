@@ -94,7 +94,7 @@ tabs:
 
 
       <ComponentProps component="Sortable.Handle" />
-parent: DTp2m8Cs7Kzg_CL4F5zd_
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 2b24a8cc-ea59-4288-a1ef-c5fd541cd507
 nestedSlug:
   - components
