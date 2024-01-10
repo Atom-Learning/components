@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      The `Drawer` component renders its children inside an Overlay Drawer
-      and puts a dimmer over the rest of the screen.
+      The `Drawer` component renders its children inside an Overlay Drawer and
+      puts a dimmer over the rest of the screen.
 
       Functionality based on the [`Dialog`](https://www.radix-ui.com/docs/primitives/components/dialog) radix component, which already allows for: `defaultOpen` (uncontrolled), `open` (controlled) and `onOpenChange` props. 
 
@@ -17,6 +17,7 @@ tabs:
 
 
       ## Position
+
 
       `position="top" | "right" | "bottom" | "left"` (default: `"left"`)
 
@@ -43,6 +44,7 @@ tabs:
 
 
       ## API Reference
+
 
       <ComponentProps component="Drawer" />
 
@@ -282,7 +284,7 @@ tabs:
       | -------------------------- | --------- |
 
       | Effects shadow - container | shadow $2 |
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 96eOG7OojxOpfsmMB-rCr
 nestedSlug:
   - components
