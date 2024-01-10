@@ -37,7 +37,7 @@ tabs:
 
       <ComponentProps component="Grid" />
     title: Main
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: qVRcaD27FqnJb1hWFhwE-
 nestedSlug:
   - components
