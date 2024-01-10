@@ -44,8 +44,8 @@ const StyledSectionMessage = styled(Dismissible, {
         color: '$grey1000'
       },
       info: {
-        bg: '$blue100',
-        color: '$blue1000'
+        bg: '$infoLight',
+        color: '$infoDark'
       }
     },
     hasIcon: {

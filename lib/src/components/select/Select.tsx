@@ -22,7 +22,7 @@ const StyledSelect = styled('select', {
     cursor: 'pointer'
   },
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&::-ms-expand': {

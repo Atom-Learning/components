@@ -1,48 +1,53 @@
 import type { VariantProps } from '@stitches/react'
-import { darken, opacify } from 'color2k'
+import { opacify } from 'color2k'
 import * as React from 'react'
 
-import { Box } from '~/components/box'
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
-import { styled, theme } from '~/stitches'
+import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
+  theme: string,
   base: string,
   interact: string,
   active: string
 ) => ({
-  border: '1px solid',
-  borderColor: 'currentColor',
-  color: base,
-  '&[disabled]': disabledStyle,
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    textDecoration: 'none',
-    color: interact
-  },
-  '&:not([disabled]):active': {
-    color: active
+  theme,
+  appearance: 'solid',
+  css: {
+    border: '1px solid',
+    borderColor: 'currentColor',
+    color: base,
+    '&[disabled]': disabledStyle,
+    '&:not([disabled]):hover, &:not([disabled]):focus': {
+      textDecoration: 'none',
+      color: interact
+    },
+    '&:not([disabled]):active': { color: active }
   }
 })
 
 const getButtonSolidVariant = (
+  theme: string,
   base: string,
   interact: string,
   active: string,
   text = 'white'
 ) => ({
-  bg: base,
-  color: text,
-  '&[disabled]': disabledStyle,
-  '&:not([disabled]):hover, &:not([disabled]):focus': {
-    bg: interact,
-    color: text
-  },
-  '&:not([disabled]):active': {
-    bg: active
+  theme,
+  appearance: 'solid',
+  css: {
+    bg: base,
+    color: text,
+    '&[disabled]': disabledStyle,
+    '&:not([disabled]):hover, &:not([disabled]):focus': {
+      bg: interact,
+      color: text
+    },
+    '&:not([disabled]):active': { bg: active }
   }
 })
 
@@ -109,83 +114,23 @@ export const StyledButton = styled('button', {
       }
     },
     fullWidth: {
-      false: {
-        width: 'max-content'
-      },
-      true: {
-        width: '100%'
-      }
+      true: { width: '100%' },
+      false: { width: 'max-content' }
     }
   },
 
+  // prettier-ignore
   compoundVariants: [
-    {
-      theme: 'primary',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'secondary',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        '$warning',
-        '$warningMid',
-        '$warningDark',
-        '$tonal500'
-      )
-    },
-    {
-      theme: 'danger',
-      appearance: 'solid',
-      css: getButtonSolidVariant('$danger', '$dangerMid', '$dangerDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'solid',
-      css: getButtonSolidVariant(
-        'white',
-        opacify('white', -0.1),
-        opacify('white', -0.25),
-        '$primary'
-      )
-    },
-    {
-      theme: 'primary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'neutral',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        'white',
-        opacify('white', -0.2),
-        opacify('white', -0.35)
-      )
-    },
-    {
-      theme: 'secondary',
-      appearance: 'outline',
-      css: getButtonOutlineVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    }
+    getButtonSolidVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getButtonSolidVariant('secondary', '$primary1000', '$primary1100', '$primary1200'),
+    getButtonSolidVariant('success', '$success', '$successMid', '$successDark'),
+    getButtonSolidVariant('warning', '$warning', '$warningMid', '$warningDark', '$tonal500'),
+    getButtonSolidVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
+    getButtonSolidVariant('neutral', 'white', opacify('white', -0.1), opacify('white', -0.25), '$primary800'),
+    
+    getButtonOutlineVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getButtonOutlineVariant('secondary', '$primary1000', '$primary1100', '$primary1200'),
+    getButtonOutlineVariant('neutral', 'white', opacify('white', -0.2), opacify('white', -0.35))
   ],
 
   defaultVariants: {

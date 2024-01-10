@@ -1,125 +1,103 @@
 import {
   Badge,
-  Image,
-  styled,
   ActionIcon,
   Icon,
-  ColorScheme
+  SideBar,
+  ToggleGroup,
+  Text,
+  Flex,
+  Drawer
 } from '@atom-learning/components'
-import logo from '@atom-learning/theme/lib/assets/logo-light.svg'
-import { default as NextLink } from 'next/link'
+import logo from '@atom-learning/theme/lib/assets/atom/logo.svg'
 import * as React from 'react'
 
 import buildConstants from '~/lib/build/constants.json'
 import { Navigation } from '~/components/app'
 
 import { Hamburger } from '@atom-learning/icons'
+import { useTheme } from '~/utilities/hooks/useTheme'
 
-type HeaderTriggerProps = {
-  onClick: () => void
-}
-
-export const HeaderTrigger: React.FC<HeaderTriggerProps> = (props) => (
-  <ActionIcon
-    appearance="solid"
-    size="lg"
-    css={{
-      background: '$interactive1',
-      color: '$interactiveForeground',
-      position: 'fixed',
-      top: '$2',
-      left: '$2',
-      zIndex: 1,
-      '@lg': {
-        display: 'none'
-      }
-    }}
-    label="View Navigation"
-    {...props}
-  >
-    <Icon is={Hamburger} />
-  </ActionIcon>
+const NavigationHeader = () => (
+  <SideBar.Brand>
+    <SideBar.BrandLogo src={logo.src} css={{ width: 80 }} />
+    <Badge
+      theme="neutral"
+      size="xs"
+      css={{ position: 'absolute', right: '$3', top: '$4' }}
+    >
+      {buildConstants['version']}
+    </Badge>
+  </SideBar.Brand>
 )
 
-const useOnClickOutside = (ref, handler) => {
-  React.useEffect(() => {
-    const listener = (event) => {
-      if (!ref.current || ref.current.contains(event.target)) {
-        return
-      }
-      handler(event)
-    }
-
-    document.addEventListener('mousedown', listener)
-    document.addEventListener('touchstart', listener)
-
-    return () => {
-      document.removeEventListener('mousedown', listener)
-      document.removeEventListener('touchstart', listener)
-    }
-  }, [ref, handler])
-}
-
-const StyledHeader = styled('header', {
-  background: '$interactive1',
-  color: '$interactiveForeground',
-  boxShadow: '$1',
-  height: '100vh',
-  overflowX: 'hidden',
-  overflowY: 'auto',
-  position: 'fixed',
-  left: 0,
-  top: 0,
-  px: '$3',
-  py: '$4',
-  transform: 'translateX(-100%)',
-  transition: 'transform 175ms ease-out',
-  width: 260,
-  maxWidth: '100%',
-  zIndex: 1,
-  '@lg': {
-    boxShadow: 'none',
-    position: 'sticky',
-    transform: 'none',
-    transition: '0ms'
-  },
-  variants: {
-    open: {
-      true: {
-        transform: 'translateX(0)'
-      }
-    }
-  }
-})
-
-const version = buildConstants['version']
-export const Header: React.FC = (props) => {
-  const ref = React.useRef()
-  const [menuOpen, setMenuOpen] = React.useState(false)
-
-  useOnClickOutside(ref, () => setMenuOpen(false))
-
+const BrandSwitch = () => {
+  const { theme, setTheme } = useTheme()
   return (
-    <ColorScheme interactive="hiContrast">
-      <HeaderTrigger onClick={() => setMenuOpen(true)} />
-      <StyledHeader ref={ref} open={menuOpen} {...props}>
-        <NextLink href="/">
-          <Image
-            src={logo.src}
-            width={80}
-            alt=""
-            css={{ mb: '$7', cursor: 'pointer' }}
-          />
-        </NextLink>
-        <Badge
-          theme="success"
-          size="xs"
-          css={{ position: 'absolute', right: '$3', top: '$4' }}
-        >
-          {version}
-        </Badge>
-        <Navigation />
-      </StyledHeader>
-    </ColorScheme>
+    <Flex gap="3" align="center" justify="center">
+      <Text size="sm" css={{ fontWeight: '600' }}>
+        Brand
+      </Text>
+      <ToggleGroup.Root
+        type="single"
+        orientation="horizontal"
+        value={theme}
+        defaultValue="atom"
+        onValueChange={(value: 'atom' | 'quest') => {
+          if (value) setTheme(value)
+        }}
+      >
+        <ToggleGroup.Button value="atom" size="sm">
+          Atom
+        </ToggleGroup.Button>
+        <ToggleGroup.Button value="quest" size="sm">
+          Quest
+        </ToggleGroup.Button>
+      </ToggleGroup.Root>
+    </Flex>
   )
 }
+
+export const NavigationMobile = () => (
+  <Drawer position="left">
+    <Drawer.Trigger asChild>
+      <ActionIcon
+        size="lg"
+        css={{
+          position: 'fixed',
+          top: '$2',
+          left: '$2',
+          zIndex: 1,
+          '@lg': { display: 'none' }
+        }}
+        label="View Navigation"
+      >
+        <Icon is={Hamburger} />
+      </ActionIcon>
+    </Drawer.Trigger>
+    <Drawer.Content>
+      <Drawer.Header>
+        <NavigationHeader />
+      </Drawer.Header>
+      <Drawer.Main>
+        <Navigation />
+      </Drawer.Main>
+      <Drawer.Footer>
+        <BrandSwitch />
+      </Drawer.Footer>
+    </Drawer.Content>
+  </Drawer>
+)
+
+export const NavigationDesktop = (props) => (
+  <SideBar type="static">
+    <SideBar.Header>
+      <NavigationHeader />
+    </SideBar.Header>
+    <SideBar.Body>
+      <Navigation />
+    </SideBar.Body>
+    <SideBar.Footer>
+      <BrandSwitch />
+    </SideBar.Footer>
+  </SideBar>
+)

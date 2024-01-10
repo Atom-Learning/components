@@ -14,7 +14,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     display: flex;
   }
 
-  .c-bvauNG {
+  .c-cDmpis {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     border: 1px solid;
@@ -22,12 +22,12 @@ exports[`ChipToggleGroup component renders 1`] = `
     align-items: center;
     font-family: var(--fonts-body);
     max-width: 100%;
-    border-color: var(--colors-primary);
-    color: var(--colors-primaryMid);
-    background: var(--colors-primaryLight);
+    border-color: var(--colors-primary800);
+    color: var(--colors-primary900);
+    background: var(--colors-primary100);
   }
 
-  .c-bvauNG[data-disabled] {
+  .c-cDmpis[data-disabled] {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -61,35 +61,35 @@ exports[`ChipToggleGroup component renders 1`] = `
     margin-right: var(--space-1);
   }
 
-  .c-inNjp:not([disabled]) {
+  .c-bJgJhs:not([disabled]) {
     cursor: pointer;
   }
 
-  .c-inNjp:not([disabled]):hover {
+  .c-bJgJhs:not([disabled]):hover {
     background: var(--colors-tonal100);
     color: var(--colors-tonal600);
     border-color: currentColor;
   }
 
-  .c-inNjp:not([disabled]):focus-visible {
+  .c-bJgJhs:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-inNjp:not([disabled])[data-state="on"]:hover {
+  .c-bJgJhs:not([disabled])[data-state="on"]:hover {
     background: var(--colors-white);
-    color: var(--colors-primaryDark);
+    color: var(--colors-primary1000);
   }
 
-  .c-inNjp[data-state="off"] {
+  .c-bJgJhs[data-state="off"] {
     color: var(--colors-tonal400);
     background: var(--colors-tonal50);
     border-color: var(--colors-tonal200);
   }
 
-  .c-inNjp[data-state="on"] .c-kBYYkb {
+  .c-bJgJhs[data-state="on"] .c-kBYYkb {
     display: block;
   }
 }
@@ -117,19 +117,19 @@ exports[`ChipToggleGroup component renders 1`] = `
     margin-left: var(--space-2);
   }
 
-  .c-bvauNG-kIEsaE-size-md {
+  .c-cDmpis-kIEsaE-size-md {
     height: var(--sizes-3);
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-bvauNG-kIEsaE-size-md::before {
+  .c-cDmpis-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-bvauNG-kIEsaE-size-md::after {
+  .c-cDmpis-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -153,7 +153,7 @@ exports[`ChipToggleGroup component renders 1`] = `
   >
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-inNjp"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="on"
@@ -178,7 +178,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-inNjp"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""
@@ -205,7 +205,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-inNjp"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="off"
@@ -230,7 +230,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-bvauNG c-bvauNG-kIEsaE-size-md c-inNjp"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""

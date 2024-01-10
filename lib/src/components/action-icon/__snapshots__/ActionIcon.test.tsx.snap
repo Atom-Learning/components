@@ -100,25 +100,25 @@ exports[`ActionIcon component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-dQMrZR-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
-  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
 <div>
   <button
     aria-label="Mark as complete"
-    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-PJLV"
+    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-PJLV"
     data-state="closed"
     type="button"
   >
@@ -227,18 +227,18 @@ exports[`ActionIcon component renders an external link with the correct attribut
 }
 
 @media  {
-  .c-oUmPa-dQMrZR-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
-  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -246,7 +246,7 @@ exports[`ActionIcon component renders an external link with the correct attribut
   <a
     aria-disabled="false"
     aria-label="Mark as complete"
-    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-PJLV"
+    class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-PJLV"
     data-state="closed"
     href="https://www.google.com"
     rel="noopener noreferrer"

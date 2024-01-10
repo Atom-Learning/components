@@ -1,9 +1,8 @@
 import type { VariantProps } from '@stitches/react'
-import { darken } from 'color2k'
 import invariant from 'invariant'
 import * as React from 'react'
 
-import { styled, theme } from '~/stitches'
+import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
@@ -13,38 +12,55 @@ import { getExternalAnchorProps } from '~/utilities/uri'
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
 
-const getSimpleVariant = (base: string, interact: string, active: string) => ({
-  bg: 'transparent',
-  color: base,
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    color: interact
-  },
-  '&:not(:disabled):active': {
-    color: active
+const getSimpleVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'simple',
+  css: {
+    bg: 'transparent',
+    color: base,
+    '&:not(:disabled):hover, &:not(:disabled):focus': { color: interact },
+    '&:not(:disabled):active': { color: active }
   }
 })
 
-const getSolidVariant = (base: string, interact: string, active: string) => ({
-  bg: base,
-  color: 'white',
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    bg: interact,
-    color: 'white'
-  },
-  '&:not(:disabled):active': {
-    bg: active
+const getSolidVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'solid',
+  css: {
+    bg: base,
+    color: 'white',
+    '&:not(:disabled):hover, &:not(:disabled):focus': {
+      bg: interact,
+      color: 'white'
+    },
+    '&:not(:disabled):active': { bg: active }
   }
 })
 
-const getOutlineVariant = (base: string, interact: string, active: string) => ({
-  border: '1px solid',
-  borderColor: 'currentColor',
-  color: base,
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    color: interact
-  },
-  '&:not(:disabled):active': {
-    color: active
+const getOutlineVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'outline',
+  css: {
+    border: '1px solid',
+    borderColor: 'currentColor',
+    color: base,
+    '&:not(:disabled):hover, &:not(:disabled):focus': { color: interact },
+    '&:not(:disabled):active': { color: active }
   }
 })
 
@@ -88,104 +104,26 @@ const StyledButton = styled('button', {
     }
   },
 
+  // prettier-ignore
   compoundVariants: [
-    // Appearance Simple
-    {
-      theme: 'neutral',
-      appearance: 'simple',
-      css: getSimpleVariant('$tonal300', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primary',
-      appearance: 'simple',
-      css: getSimpleVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'simple',
-      css: getSimpleVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'simple',
-      css: getSimpleVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'simple',
-      css: getSimpleVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'simple',
-      css: getSimpleVariant('$danger', '$dangerMid', '$dangerDark')
-    },
+    getSimpleVariant('neutral', '$tonal300', '$primary900', '$primary1000'),
+    getSimpleVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getSimpleVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getSimpleVariant('success', '$success', '$successMid', '$successDark'),
+    getSimpleVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getSimpleVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
 
-    // Appearance Solid
-    {
-      theme: 'primary',
-      appearance: 'solid',
-      css: getSolidVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'solid',
-      css: getSolidVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'solid',
-      css: getSolidVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'solid',
-      css: getSolidVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'solid',
-      css: getSolidVariant('$danger', '$dangerMid', '$dangerDark')
-    },
+    getSolidVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getSolidVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getSolidVariant('success', '$success', '$successMid', '$successDark'),
+    getSolidVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getSolidVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
 
-    // Appearance Outline
-    {
-      theme: 'primary',
-      appearance: 'outline',
-      css: getOutlineVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'outline',
-      css: getOutlineVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'outline',
-      css: getOutlineVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'outline',
-      css: getOutlineVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'outline',
-      css: getOutlineVariant('$danger', '$dangerMid', '$dangerDark')
-    }
+    getOutlineVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getOutlineVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getOutlineVariant('success', '$success', '$successMid', '$successDark'),
+    getOutlineVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getOutlineVariant('danger', '$danger', '$dangerMid', '$dangerDark')
   ]
 })
 

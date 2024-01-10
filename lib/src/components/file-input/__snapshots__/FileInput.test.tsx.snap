@@ -58,30 +58,51 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-dfkxSu-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-kaaUSm-dfkxSu-cv[disabled] {
+  .c-kaaUSm-cygQAa-cv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-kaaUSm-dfkxSu-cv:not([disabled]):hover,
-  .c-kaaUSm-dfkxSu-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-kaaUSm-dfkxSu-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-ebjJvk-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary800);
+  }
+
+  .c-kaaUSm-ebjJvk-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primary900);
+  }
+
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
+    color: var(--colors-primary1000);
   }
 }
 
 <div>
   <label
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-dfkxSu-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
     type="button"
   >
     <svg

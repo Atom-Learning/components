@@ -29,13 +29,13 @@ tabs:
 
         <Carousel.Slider aria-label="Example carousel" css={{ mb: '$4' }}>
           <Carousel.Slide index={1} aria-label="Slide 1">
-            <Box css={{ bg: '$primary', size: 200 }} />
+            <Box css={{ bg: '$primary800', size: 200 }} />
           </Carousel.Slide>
           <Carousel.Slide index={2} aria-label="Slide 2">
-            <Box css={{ bg: '$primary', size: 200 }} />
+            <Box css={{ bg: '$primary800', size: 200 }} />
           </Carousel.Slide>
           <Carousel.Slide index={3} aria-label="Slide 3">
-            <Box css={{ bg: '$primary', size: 200 }} />
+            <Box css={{ bg: '$primary800', size: 200 }} />
           </Carousel.Slide>
         </Carousel.Slider>
 

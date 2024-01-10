@@ -25,10 +25,11 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3} css={{width: '100%'}}>
-        <ProgressBar value={20} />
-        <ProgressBar theme="success" value={20} aria-label="Completion rate" />
-        <ProgressBar theme="warning" value={20} aria-label="Completion rate" />
-        <ProgressBar theme="danger" value={20} aria-label="Completion rate" />
+        <ProgressBar value={10} />
+        <ProgressBar theme="info" value={20} aria-label="Completion rate" />
+        <ProgressBar theme="success" value={30} aria-label="Completion rate" />
+        <ProgressBar theme="warning" value={40} aria-label="Completion rate" />
+        <ProgressBar theme="danger" value={50} aria-label="Completion rate" />
       </Stack>`} language={"tsx"} />
 
 
@@ -39,25 +40,11 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={3} css={{width: '100%'}}>
-        <ProgressBar appearance="solid" value={20} aria-label="Completion rate" />
-        <ProgressBar
-          appearance="solid"
-          theme="success"
-          value={20}
-          aria-label="Completion rate"
-        />
-        <ProgressBar
-          appearance="solid"
-          theme="warning"
-          value={20}
-          aria-label="Completion rate"
-        />
-        <ProgressBar
-          appearance="solid"
-          theme="danger"
-          value={20}
-          aria-label="Completion rate"
-        />
+        <ProgressBar appearance="solid" value={10} aria-label="Completion rate" />
+        <ProgressBar appearance="info" theme="info" value={20} aria-label="Completion rate" />
+        <ProgressBar appearance="solid" theme="success" value={30} aria-label="Completion rate" />
+        <ProgressBar appearance="solid" theme="warning" value={40} aria-label="Completion rate" />
+        <ProgressBar appearance="solid" theme="danger" value={50} aria-label="Completion rate" />
       </Stack>`} language={"tsx"} />
 
 

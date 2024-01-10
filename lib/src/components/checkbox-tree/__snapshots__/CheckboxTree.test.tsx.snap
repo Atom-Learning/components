@@ -39,7 +39,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .c-bULSRl {
+  .c-dScekx {
     -webkit-appearance: none;
     appearance: none;
     position: relative;
@@ -58,22 +58,22 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     flex-shrink: 0;
   }
 
-  .c-bULSRl[data-state="checked"] {
-    background-color: var(--colors-primary);
-    border-color: var(--colors-primary);
+  .c-dScekx[data-state="checked"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
   }
 
-  .c-bULSRl[data-state="indeterminate"] {
-    background-color: var(--colors-primary);
-    border-color: var(--colors-primary);
+  .c-dScekx[data-state="indeterminate"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
   }
 
-  .c-bULSRl:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dScekx:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-bULSRl[disabled] {
+  .c-dScekx[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -173,7 +173,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     gap: var(--space-2);
   }
 
-  .c-bULSRl-kupcZn-size-md {
+  .c-dScekx-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
@@ -213,18 +213,18 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hXLsaq-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):hover,
-  .c-oUmPa-hXLsaq-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hXLsaq-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -251,7 +251,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
         >
           <button
             aria-checked="false"
-            class="c-bULSRl c-bULSRl-kupcZn-size-md"
+            class="c-dScekx c-dScekx-kupcZn-size-md"
             data-state="unchecked"
             role="checkbox"
             title="top level"
@@ -281,7 +281,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
             aria-controls="radix-1"
             aria-expanded="false"
             aria-label="Open: Top level trigger"
-            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-jCxibG-cv c-hBEOJc"
             data-state="closed"
             type="button"
           >
@@ -301,7 +301,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
           >
             <button
               aria-checked="false"
-              class="c-bULSRl c-bULSRl-kupcZn-size-md"
+              class="c-dScekx c-dScekx-kupcZn-size-md"
               data-state="unchecked"
               role="checkbox"
               title="top level all item"
@@ -334,7 +334,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
               >
                 <button
                   aria-checked="false"
-                  class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                  class="c-dScekx c-dScekx-kupcZn-size-md"
                   data-state="unchecked"
                   role="checkbox"
                   title="1"
@@ -361,7 +361,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
               >
                 <button
                   aria-checked="false"
-                  class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                  class="c-dScekx c-dScekx-kupcZn-size-md"
                   data-state="unchecked"
                   role="checkbox"
                   title="2"
@@ -391,7 +391,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                   aria-controls="radix-0"
                   aria-expanded="false"
                   aria-label="Open: Second level trigger"
-                  class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-hXLsaq-cv c-hBEOJc"
+                  class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-jCxibG-cv c-hBEOJc"
                   data-state="closed"
                   type="button"
                 >
@@ -411,7 +411,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                 >
                   <button
                     aria-checked="false"
-                    class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                    class="c-dScekx c-dScekx-kupcZn-size-md"
                     data-state="unchecked"
                     role="checkbox"
                     title="all but nested a"
@@ -444,7 +444,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                     >
                       <button
                         aria-checked="false"
-                        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                        class="c-dScekx c-dScekx-kupcZn-size-md"
                         data-state="unchecked"
                         role="checkbox"
                         title="1 nested"
@@ -471,7 +471,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                     >
                       <button
                         aria-checked="false"
-                        class="c-bULSRl c-bULSRl-kupcZn-size-md"
+                        class="c-dScekx c-dScekx-kupcZn-size-md"
                         data-state="unchecked"
                         role="checkbox"
                         title="2 nested"

@@ -1,10 +1,9 @@
-import { Icon, Text, Box, Heading } from '@atom-learning/components'
-import { ArrowRight } from '@atom-learning/icons'
+import { NavigationMenuVertical } from '@atom-learning/components'
 import { default as NextLink } from 'next/link'
 import { useRouter } from 'next/router'
 import buildConstants from '~/lib/build/constants.json'
 import * as React from 'react'
-import { Link } from '.'
+import { removeStartingNumber } from '~/utilities/removeStartingNumber'
 
 const navigationStructure = buildConstants['navigation-structure']
 
@@ -12,55 +11,17 @@ type NavigationProps = {
   onNavigate?: (pathname) => void
 }
 
-const NavigationTitle: React.FC<{ level: number }> = ({ level, children }) => {
-  switch (level) {
-    case 1:
-      return (
-        <Heading as="h2" size="sm">
-          {children}
-        </Heading>
-      )
-    case 2:
-      return (
-        <Text as="h3" size="sm" css={{ fontWeight: 'bold' }}>
-          {children}
-        </Text>
-      )
-    default:
-      return <Text size="sm">{children}</Text>
-  }
-}
-
 const NavigationLink: React.FC<{ href: string }> = ({ href, children }) => {
   const { asPath: currentPage } = useRouter()
+  const isCurrentPage = href === currentPage.split('?')[0]
 
-  if (!children) return
-  const isCurrentPage = href === currentPage
+  if (!children) return null
 
   return (
     <NextLink href={href} passHref replace={true}>
-      <Link
-        css={{
-          position: 'relative',
-          color: 'currentColor !important',
-          display: 'block',
-          mb: '$3'
-        }}
-      >
+      <NavigationMenuVertical.Link size="md" active={isCurrentPage}>
         {children}
-        {isCurrentPage && (
-          <Icon
-            size="sm"
-            css={{
-              position: 'absolute',
-              right: '0',
-              top: '50%',
-              transform: 'translateY(-50%)'
-            }}
-            is={ArrowRight}
-          />
-        )}
-      </Link>
+      </NavigationMenuVertical.Link>
     </NextLink>
   )
 }
@@ -75,35 +36,34 @@ export const Navigation: React.FC<NavigationProps> = React.memo(
     const renderRecursive = React.useMemo(() => {
       const render = (navigationStructureLevel, level) => {
         if (!navigationStructureLevel?.length) return null
-        return (
-          <Box
-            as="ul"
-            css={{
-              listStyleType: 'none',
-              m: 0,
-              mb: '$4',
-              p: 0,
-              pl: [1, 2].includes(level) ? 0 : '$4'
-            }}
-          >
-            {navigationStructureLevel.map(({ title, href, children }) => {
-              if (!title) return
-              return (
-                <Box as="li" css={{ mb: level === 1 ? '$6' : 0 }} key={href}>
-                  <NavigationLink href={href}>
-                    <NavigationTitle level={level}>{title}</NavigationTitle>
-                  </NavigationLink>
+
+        return navigationStructureLevel.map(({ title, href, children }) => {
+          if (!title) return
+
+          if (!children) {
+            return (
+              <NavigationLink href={href}>
+                {removeStartingNumber(title)}
+              </NavigationLink>
+            )
+          } else {
+            return (
+              <NavigationMenuVertical.Accordion defaultOpen={level < 3}>
+                <NavigationMenuVertical.AccordionTrigger>
+                  {removeStartingNumber(title)}
+                </NavigationMenuVertical.AccordionTrigger>
+                <NavigationMenuVertical.AccordionContent>
                   {render(children, level + 1)}
-                </Box>
-              )
-            })}
-          </Box>
-        )
+                </NavigationMenuVertical.AccordionContent>
+              </NavigationMenuVertical.Accordion>
+            )
+          }
+        })
       }
       return render(navigationStructure, 1)
     }, [])
 
-    return <nav>{renderRecursive}</nav>
+    return <NavigationMenuVertical>{renderRecursive}</NavigationMenuVertical>
   }
 )
 Navigation.displayName = 'Navigation'

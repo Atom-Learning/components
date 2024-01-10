@@ -18,14 +18,14 @@ const StyledSwitch = styled(RadixSwitch.Root, {
     backgroundColor: '$tonal300'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '1px'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$primary'
+    backgroundColor: '$primary800'
   },
   '&[data-state="checked"]:hover': {
-    backgroundColor: '$primaryMid'
+    backgroundColor: '$primary900'
   },
   '&[disabled]': disabledStyle,
   variants: {
