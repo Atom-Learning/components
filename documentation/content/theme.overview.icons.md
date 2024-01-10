@@ -19,6 +19,6 @@ tabs:
 
 
       <IconTokenList showSearch={true} icons='' />
-parent: lfMACgjU6_Ee5Tw38zwzv
+parent: 2mSiWtCnHVvKUlsAyn628
 uuid: 8XP-eKaa7q8W-pX6FmP_P
 ---
