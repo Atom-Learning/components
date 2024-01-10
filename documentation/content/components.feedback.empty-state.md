@@ -223,7 +223,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/empty-state-dos-and-donts-01.svg","type":"do","description":"Include a relevant call to action for a possible next step."},{"image":"/assets/images/empty-state-dos-and-donts-02.svg","type":"dont","description":"Include too many primary CTA buttons on one page."},{"image":"/assets/images/empty-state-dos-and-donts-03.svg","type":"do","description":"Limit the number of words in the message as much as possible."},{"image":"/assets/images/empty-state-dos-and-donts-04.svg","type":"avoid","description":"Using negative tone for images or message. Choose an image that has neutral tone."},{"image":"/assets/images/empty-state-dos-and-donts-05.svg","type":"do","description":"Use sentence case for messages and no punctuation on Titles."},{"image":"/assets/images/empty-state-dos-and-donts-06.svg","type":"avoid","description":"Avoid repeating content from the title. "}]} />
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: bTeUsimX8-KTOKy95aqze
 nestedSlug:
   - components
