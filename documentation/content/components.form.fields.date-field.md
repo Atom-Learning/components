@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Date input](https://atomlearning.design/components/form/primitives/date-input)
+      [Date input](/components/date-input)
 
 
       <br/>
