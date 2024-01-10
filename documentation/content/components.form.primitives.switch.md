@@ -19,6 +19,7 @@ tabs:
 
       <CodeBlock live={true} preview={true} code={`<Switch />`} language={"tsx"} />
 
+
       ## Size
 
 
@@ -106,7 +107,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/switch-01-do.svg","type":"do","description":"Switches are best for instant activation or deactivation."},{"image":"/assets/images/switch-02-dont.svg","type":"dont","description":"Communicate selection (for that purpose checkbox will be better choice)."},{"image":"/assets/images/switch-03-do.svg","type":"do","description":"Use labels if the context is not clear."},{"image":"/assets/images/switch-04-dont.svg","type":"dont","description":"Use verb phrases related to activity states in a switch label. A switch is naturally either in a state of being on or off, so repeating in the label that something is “on” or “off” is redundant and clutters an interface."},{"image":"/assets/images/switch-05-do.svg","type":"do","description":"Use sentence case."},{"image":"/assets/images/switch-06-dont.svg","type":"dont","description":"Use title case. Labels for switches should be written in sentence case unless they contain words that are branded terms."},{"image":"/assets/images/switch-07-do.svg","type":"do","description":"Use switches to quickly activate needed functions."},{"image":"/assets/images/switch-08-avoid.svg","type":"avoid","description":"Using negative tone for labels."}]} />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 9JrOEIMhJCc71cFGiLg2J
 nestedSlug:
   - components
