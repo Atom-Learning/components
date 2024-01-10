@@ -37,6 +37,7 @@ tabs:
         I'm a link
       </Link>`} language={"tsx"} />
 
+
       ## API Reference
 
 
@@ -145,7 +146,7 @@ tabs:
       | Link focus     | $blue1000             | \#102da2 |
 
       | Link disabled  | $blue800, opacity 30% | \#0f67f5 |
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: yO-SuTjsVIBo9FkHt5v44
 nestedSlug:
   - components
