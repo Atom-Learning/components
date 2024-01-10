@@ -306,7 +306,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/avatar-dos-and-donts-01.svg","type":"do","description":"Use avatars with circular shapes"},{"image":"/assets/images/avatar-dos-and-donts-02.svg","type":"avoid","description":"To use avatars with square shapes"},{"image":"/assets/images/avatar-dos-and-donts-03.svg","type":"do","description":"Avatars can have different types; image, letter, icon"},{"image":"/assets/images/avatar-dos-and-donts-04.svg","description":"Use shadows or other decoration","type":"dont"},{"image":"/assets/images/avatar-dos-and-donts-05.svg","type":"do","description":"Use Avatars to navigate users to user profiles, or to associate users with a set of information."}]} />
-parent: XPLFvowY8sBRhG2IUn5Zk
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
   - components
