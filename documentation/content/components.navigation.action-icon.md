@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      An accessible interactive wrapper around Icon. `ActionIcon` should be
-      used alongside `Icon` when you require a user interaction.
+      An accessible interactive wrapper around Icon. `ActionIcon` should be used
+      alongside `Icon` when you require a user interaction.
 
 
       <CodeBlock live={true} preview={true} code={`<Stack>
@@ -179,5 +179,5 @@ nestedSlug:
   - components
   - navigation
   - action-icon
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 ---

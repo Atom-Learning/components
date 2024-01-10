@@ -81,7 +81,7 @@ tabs:
 
 
       <ComponentProps component="Button" />
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: eeAXjJecBw5lp1uQooPiG
 nestedSlug:
   - components
