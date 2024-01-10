@@ -34,7 +34,7 @@ export const Pagination: React.FC<PaginationProps> = ({
 
   return (
     <PaginationProvider {...paginationProviderProps}>
-      <ColorScheme base="grey1" accent="blue1" {...colorScheme} asChild>
+      <ColorScheme base="grey1" accent="primary1" {...colorScheme} asChild>
         <Flex gap={1} {...rest}>
           <PaginationItems />
         </Flex>

@@ -1,9 +1,11 @@
 import { Box, Flex, Text } from '@atom-learning/components'
 import { hsl, parseToHsl } from 'polished'
-import type { Theme } from '@atom-learning/theme'
-import * as atomTheme from '@atom-learning/theme'
+import type { Theme } from '@atom-learning/theme/lib/theme-atom'
+import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
+import * as questTheme from '@atom-learning/theme/lib/theme-quest'
 import { TokenList } from './token-list'
 import * as React from 'react'
+import { useTheme } from '~/utilities/hooks/useTheme'
 
 const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
   const color = parseToHsl(String(value))
@@ -35,12 +37,14 @@ export const ColorTokenList: React.FC<ColorTokenListProps> = ({
   colors: specificColors,
   ...rest
 }) => {
+  const { theme } = useTheme()
+  const tokens = theme === 'atom' ? atomTheme : questTheme
   return (
     // @ts-ignore
     <TokenList
       gap={3}
       direction="column"
-      allTokens={(atomTheme as Theme).colors}
+      allTokens={(tokens as Theme).colors}
       specificTokens={specificColors}
       ItemComponent={ColorExample}
       {...rest}

@@ -19,9 +19,9 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Stack direction="column">
-        <Box css={{ bg: '$primary', size: '$5' }} />
-        <Box css={{ bg: '$primary', size: '$5' }} />
-        <Box css={{ bg: '$primary', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
       </Stack>`} language={"tsx"} />
 
       ## Gap
@@ -30,9 +30,9 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Stack gap={2}>
-        <Box css={{ bg: '$primary', size: '$5' }} />
-        <Box css={{ bg: '$primary', size: '$5' }} />
-        <Box css={{ bg: '$primary', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
+        <Box css={{ bg: '$primary800', size: '$5' }} />
       </Stack>`} language={"tsx"} />
 
 

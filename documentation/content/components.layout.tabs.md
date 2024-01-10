@@ -192,19 +192,19 @@ tabs:
       Active
 
 
-      | Property                    | Token     | Hex      |
+      | Property                    | Token        | Hex      |
 
-      | --------------------------- | --------- | -------- |
+      | --------------------------- | ------------ | -------- |
 
-      | Bg color                    | $white    | \#FFFFFF |
+      | Bg color                    | $white       | \#FFFFFF |
 
-      | Active tab font-color       | $primary  | \#0F67F5 |
+      | Active tab font-color       | $primary800  | \#0F67F5 |
 
-      | Active tab bottom line      | $primary  | \#0F67F5 |
+      | Active tab bottom line      | $primary800  | \#0F67F5 |
 
-      | Not active tab font-color   | $tonal500 | \#333333 |
+      | Not active tab font-color   | $tonal500    | \#333333 |
 
-      | Not active tabs bottom line | $tonal100 | \#EEEEEE |
+      | Not active tabs bottom line | $tonal100    | \#EEEEEE |
 
 
 

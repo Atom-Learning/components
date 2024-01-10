@@ -122,17 +122,17 @@ tabs:
       Focus
 
 
-      | Property         | Token     | Hex      |
+      | Property         | Token        | Hex      |
 
-      | ---------------- | --------- | -------- |
+      | ---------------- | ------------ | -------- |
 
-      | Bg color         | $white    | \#ffffff |
+      | Bg color         | $white       | \#ffffff |
 
-      | Border-color     | $primary  | \#0F67F5 |
+      | Border-color     | $primary800  | \#0F67F5 |
 
-      | Label font-color | $tonal500 | \#333333 |
+      | Label font-color | $tonal500    | \#333333 |
 
-      | Text font-color  | $tonal600 | \#1F1F1F |
+      | Text font-color  | $tonal600    | \#1F1F1F |
 
 
       ![textarea disabled variant](/assets/images/textarea-variant-4.svg "textarea disabled variant")

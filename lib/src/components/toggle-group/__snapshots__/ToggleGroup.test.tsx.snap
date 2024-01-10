@@ -10,50 +10,50 @@ exports[`ToggleGroup renders 1`] = `
     margin: 0;
   }
 
-  .c-iVViNQ {
+  .c-fdTLEV {
     background: white;
     color: var(--colors-tonal400);
     border: 1px solid var(--colors-tonal200);
     cursor: pointer;
   }
 
-  .c-iVViNQ::before {
+  .c-fdTLEV::before {
     background: var(--colors-tonal200);
   }
 
-  .c-iVViNQ:not([disabled]):hover::before,
-  .c-iVViNQ:not([disabled]):focus-visible::before,
-  .c-iVViNQ:not([disabled])[data-state="on"]::before {
+  .c-fdTLEV:not([disabled]):hover::before,
+  .c-fdTLEV:not([disabled]):focus-visible::before,
+  .c-fdTLEV:not([disabled])[data-state="on"]::before {
     background: none;
   }
 
-  .c-iVViNQ:not([disabled]):hover {
+  .c-fdTLEV:not([disabled]):hover {
     border-color: currentColor !important;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
   }
 
-  .c-iVViNQ:not([disabled]):focus-visible {
+  .c-fdTLEV:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-iVViNQ:not([disabled]):focus-visible[data-state="off"] {
+  .c-fdTLEV:not([disabled]):focus-visible[data-state="off"] {
     border-color: var(--colors-tonal200) !important;
   }
 
-  .c-iVViNQ:not([disabled]):focus-visible[data-state="on"] {
+  .c-fdTLEV:not([disabled]):focus-visible[data-state="on"] {
     box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
   }
 
-  .c-iVViNQ[disabled] {
+  .c-fdTLEV[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-iVViNQ[data-state="on"] {
-    color: var(--colors-primary);
+  .c-fdTLEV[data-state="on"] {
+    color: var(--colors-primary800);
     border-color: currentColor !important;
     box-shadow: inset currentColor 0px 0px 0px 1px;
   }
@@ -124,14 +124,14 @@ exports[`ToggleGroup renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-flWDnm-epWAHO-hasGap-true .c-iVViNQ {
+  .c-flWDnm-SpZMc-hasGap-true .c-fdTLEV {
     border-radius: var(--radii-0);
   }
 }
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-epWAHO-hasGap-true"
+    class="c-flWDnm c-flWDnm-SpZMc-hasGap-true"
     data-orientation="vertical"
     dir="ltr"
     role="group"
@@ -143,7 +143,7 @@ exports[`ToggleGroup renders 1`] = `
     >
       <button
         aria-pressed="true"
-        class="c-iVViNQ"
+        class="c-fdTLEV"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -156,7 +156,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -177,7 +177,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
@@ -188,7 +188,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-iVViNQ c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"

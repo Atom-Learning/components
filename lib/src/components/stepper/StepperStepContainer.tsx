@@ -41,7 +41,7 @@ export const StepperStepContainer = styled(Flex, {
     },
     separator: {
       default: { '&:not(:last-child)::after': { bg: '$tonal100' } },
-      active: { '&:not(:last-child)::after': { bg: '$primary' } },
+      active: { '&:not(:last-child)::after': { bg: '$primary800' } },
       success: { '&:not(:last-child)::after': { bg: '$success' } },
       viewed: { '&:not(:last-child)::after': { bg: '$tonal200' } }
     },
@@ -60,12 +60,12 @@ export const StepperStepContainer = styled(Flex, {
       status: 'completed',
       css: {
         '&:hover': {
-          '& :first-child': { bg: '$primaryMid', color: 'white !important' },
-          '& :last-child': { color: '$primaryMid' }
+          '& :first-child': { bg: '$primary900', color: 'white !important' },
+          '& :last-child': { color: '$primary900' }
         },
         '&:focus-visible': {
           '& :first-child': {
-            outline: '2px solid $primary',
+            outline: '2px solid $primary800',
             outlineOffset: '2px'
           }
         }
@@ -81,7 +81,7 @@ export const StepperStepContainer = styled(Flex, {
         },
         '&:focus-visible': {
           '& :first-child': {
-            outline: '2px solid $primary',
+            outline: '2px solid $primary800',
             outlineOffset: '2px'
           }
         }

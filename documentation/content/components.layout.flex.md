@@ -15,9 +15,9 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<Flex css={{ justifyContent: 'space-between', width: '100%' }}>
-        <Box css={{ bg: '$primary', size: '$6' }} />
-        <Box css={{ bg: '$primary', size: '$6' }} />
-        <Box css={{ bg: '$primary', size: '$6' }} />
+        <Box css={{ bg: '$primary800', size: '$6' }} />
+        <Box css={{ bg: '$primary800', size: '$6' }} />
+        <Box css={{ bg: '$primary800', size: '$6' }} />
       </Flex>`} language={"tsx"} />
 
 
