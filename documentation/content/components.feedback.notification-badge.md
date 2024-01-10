@@ -6,8 +6,8 @@ links:
   showReportAnIssue: true
 tabs:
   - content: >-
-      The NotificationBadge component is a lightweight wrapper for content
-      such as ActionIcons, but can be wrapped around any block-level element.
+      The NotificationBadge component is a lightweight wrapper for content such
+      as ActionIcons, but can be wrapped around any block-level element.
 
 
       It displays a badge in top right of the content it is wrapping, which displays a `value` passed in as a prop. This could be, for example, the number of filters selected on a select filters badge.
@@ -43,7 +43,7 @@ tabs:
 
       <ComponentProps component="NotificationBadge" />
     title: Main
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: P6daKkk_E0jehDkN0So_A
 nestedSlug:
   - components
