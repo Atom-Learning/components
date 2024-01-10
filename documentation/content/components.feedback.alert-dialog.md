@@ -122,7 +122,7 @@ tabs:
 
 
       <ComponentProps component="AlertDialog.Trigger" />
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
