@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      The Flex component is a light abstraction over Box that sets its
-      rendering context to flex
+      The Flex component is a light abstraction over Box that sets its rendering
+      context to flex
 
 
       `Flex` shares the same API as `Box`, so you can access `as` and `css` to apply the correct semantic element and contextually relevant styles.
@@ -25,7 +25,7 @@ tabs:
 
 
       <ComponentProps component="Flex" />
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: ilLINfG8dohXNR1xpJiFY
 nestedSlug:
   - components

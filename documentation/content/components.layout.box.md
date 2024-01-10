@@ -64,7 +64,7 @@ tabs:
 
 
       <ComponentProps component="Box" />
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: LSX_efYT0S3yg7MTDiGL2
 nestedSlug:
   - components
