@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Datatable](/components/content/data-table)
+      [Datatable](/components/data-table)
 
 
       <br/>
