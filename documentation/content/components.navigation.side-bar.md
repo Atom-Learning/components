@@ -228,7 +228,7 @@ tabs:
 
 
       <DosAndDonts items={[{"description":"Navigation must be clear and purposeful. Opt for descriptive titles that convey the intended destination, as vague or irrelevant titles can hinder usability.","type":"do"},{"type":"avoid","description":"Avoid"}]} />
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: eabbca8c-fe43-4c32-a2d2-7e575c0bb6ce
 nestedSlug:
   - components
