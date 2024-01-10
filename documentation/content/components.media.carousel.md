@@ -80,13 +80,22 @@ tabs:
         slideHeight={200}
         numSlides={2}
         css={{ position: 'relative' }}
-      >
-        <Carousel.ArrowPrevious />
-        <Carousel.ArrowNext />
-        <CarouselSliderImplementation>
-          <Carousel.Slider>
-            // slides
-          </Carousel.Slider>
+
+      >   <Carousel.ArrowPrevious />
+
+      >   <Carousel.ArrowNext />
+
+      >   <CarouselSliderImplementation>
+
+
+      ```
+
+      <Carousel.Slider>
+        // slides
+      </Carousel.Slider>
+
+      ```
+
         </CarouselSliderImplementation>
       </Carousel>`} language={"tsx"} />
 
@@ -96,16 +105,21 @@ tabs:
 
       <ComponentProps component="Carousel" />
 
+
       <ComponentProps component="Carousel.Slider" />
+
 
       <ComponentProps component="Carousel.Slide" />
 
+
       <ComponentProps component="Carousel.Pagination" />
+
 
       <ComponentProps component="Carousel.ArrowPrevious" />
 
+
       <ComponentProps component="Carousel.ArrowNext" />
-parent: XPLFvowY8sBRhG2IUn5Zk
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
   - components
