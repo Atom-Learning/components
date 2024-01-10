@@ -54,16 +54,21 @@ tabs:
 
       <ComponentProps component="Combobox" />
 
+
       <ComponentProps component="Combobox.Input" />
+
 
       <ComponentProps component="Combobox.Popover" />
 
+
       <ComponentProps component="Combobox.List" />
+
 
       <ComponentProps component="Combobox.Option" />
 
+
       <ComponentProps component="Combobox.OptionText" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: mFC4abD3jeQzUcsYbhPtm
 nestedSlug:
   - components
