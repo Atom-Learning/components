@@ -631,27 +631,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     background: var(--colors-primary1000);
   }
 
-  .c-kaaUSm-ebjJvk-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: var(--colors-primary800);
-  }
-
-  .c-kaaUSm-ebjJvk-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: var(--colors-primary900);
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
-    color: var(--colors-primary1000);
-  }
-
   .c-kaaUSm-klvXVG-cv {
     background: white;
     color: var(--colors-primary800);
@@ -670,27 +649,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
   .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
-  }
-
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
   }
 
   .c-oUmPa-jCxibG-cv {
@@ -902,7 +860,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
       Something is missing
     </p>
     <button
-      class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
+      class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
       type="button"
     >
       Click here
@@ -3865,27 +3823,6 @@ exports[`DataTable server-side renders 1`] = `
     background: var(--colors-primary1000);
   }
 
-  .c-kaaUSm-ebjJvk-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: var(--colors-primary800);
-  }
-
-  .c-kaaUSm-ebjJvk-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: var(--colors-primary900);
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
-    color: var(--colors-primary1000);
-  }
-
   .c-kaaUSm-klvXVG-cv {
     background: white;
     color: var(--colors-primary800);
@@ -3904,27 +3841,6 @@ exports[`DataTable server-side renders 1`] = `
 
   .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
-  }
-
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
   }
 
   .c-oUmPa-jCxibG-cv {

@@ -160,26 +160,6 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-cygQAa-cv {
-    background: var(--colors-primary800);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
-  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
-    background: var(--colors-primary900);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
-    background: var(--colors-primary1000);
-  }
-
   .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
@@ -199,6 +179,26 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
   .c-boNUgq-YMpfq-cv:hover :first-child {
@@ -281,7 +281,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -326,7 +326,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       </div>
     </div>
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv c-kaaUSm-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -533,26 +533,6 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-cygQAa-cv {
-    background: var(--colors-primary800);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
-  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
-    background: var(--colors-primary900);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
-    background: var(--colors-primary1000);
-  }
-
   .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
@@ -572,6 +552,26 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
   .c-boNUgq-YMpfq-cv:hover :first-child {
@@ -658,7 +658,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -715,7 +715,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       </div>
     </div>
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv c-kaaUSm-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -838,26 +838,6 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-kaaUSm-cygQAa-cv {
-    background: var(--colors-primary800);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
-  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
-    background: var(--colors-primary900);
-    color: white;
-  }
-
-  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
-    background: var(--colors-primary1000);
-  }
-
   .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
@@ -877,6 +857,26 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
   .c-boNUgq-YMpfq-cv:hover :first-child {
@@ -922,7 +922,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -967,7 +967,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       </div>
     </div>
     <button
-      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv c-kaaUSm-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
