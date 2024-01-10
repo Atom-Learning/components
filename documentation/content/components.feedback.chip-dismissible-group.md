@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Chip](https://atomlearning.design/components/feedback/chip) and [Chip toggle group](https://atomlearning.design/components/feedback/chip-toggle-group)
+      [Chip](/components/chip) and [Chip toggle group](/components/chip-toggle-group)
 
 
       <br/>
