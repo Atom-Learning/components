@@ -389,7 +389,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/chips-dos-and-donts-01.svg","type":"do","description":"Truncate text when overflowing the max box width of the parent container’s available horizontal space."},{"image":"/assets/images/chips-dos-and-donts-02.svg","type":"dont","description":"Use for status information, tallies or counts. Use badges instead."},{"image":"/assets/images/chips-dos-and-donts-03.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-04.svg","type":"dont","description":"Chips toggle should not present only a single option."},{"image":"/assets/images/chips-dos-and-donts-05.svg","type":"do","description":"Be consistent with the size of chips in a set."},{"image":"/assets/images/chips-dos-and-donts-06.svg","type":"dont","description":"Mix Input chips and dismissible Filter chips."}]} />
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
