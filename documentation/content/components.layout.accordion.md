@@ -197,7 +197,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/04-accordion-do-1.png","type":"do","description":"Accordion behaviour"},{"image":"/assets/images/05-accordion-dont-2.png","type":"dont","description":"Accordion behaviour"},{"image":"/assets/images/06-accordion-do-3.png","type":"do","description":"Use different size of  typography to differentiate between the accordion headings and the content, making it easier for users to distinguish between the two."},{"image":"/assets/images/07-accordion-avoid-4.png","type":"avoid","description":"Using other colors that are not provided with the component."}]} />
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 nestedSlug:
   - components
   - layout
