@@ -49,11 +49,13 @@ tabs:
 
       ## API Reference
 
+
       <ComponentProps component="Dismissible" />
+
 
       <ComponentProps component="Dismissible.Trigger" />
     title: Main
-parent: DTp2m8Cs7Kzg_CL4F5zd_
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: v4twQAMJWi-lU3cmUkxKh
 nestedSlug:
   - components
