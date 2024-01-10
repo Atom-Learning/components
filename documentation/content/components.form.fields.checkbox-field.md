@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Checkbox](https://atomlearning.design/components/form/primitives/checkbox)
+      [Checkbox](/components/checkbox)
 
 
       <br/>
