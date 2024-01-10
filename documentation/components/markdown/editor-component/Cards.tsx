@@ -39,7 +39,6 @@ const CardsItem: React.FC<TCardsItemProps> = ({
     : {}
 
   return (
-    // @ts-expect-error: is missing the following properties from type (252).
     <TileInteractive
       border
       borderRadius="md"
@@ -172,7 +171,6 @@ export const Cards: React.FC<CardsProps> = ({
             justify="center"
             type="multiple"
             value={selectedTags}
-            gap={2}
             onValueChange={handleSelectedTagsValueChange}
           >
             <ChipToggleGroup.Item value="all">All</ChipToggleGroup.Item>
