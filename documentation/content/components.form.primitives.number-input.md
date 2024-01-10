@@ -60,7 +60,7 @@ tabs:
 
 
       <ComponentProps component="NumberInput" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 3CtQsGQfWEO-KC6VMWb10
 nestedSlug:
   - components
