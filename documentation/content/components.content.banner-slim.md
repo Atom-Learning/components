@@ -10,7 +10,7 @@ tabs:
       **Related components**
 
 
-      [Banner regular](/components/content/banner-regular)[](https://atomlearning.design/components/feedback/alert-dialog)
+      [Banner regular](/components/banner-regular)[](https://atomlearning.design/components/feedback/alert-dialog)
 
 
       <br/>
