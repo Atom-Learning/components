@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      The top bar provides content and actions related to the current screen.
-      It is used for branding, screen titles, navigation, and actions.
+      The top bar provides content and actions related to the current screen. It
+      is used for branding, screen titles, navigation, and actions.
 
 
       `TopBar` exports components that combine to form the elements that you would expect to commonly see in a TopBar. However, the `TopBar` is not limited to these components, as any components may sit within the `TopBar` to create a flexible and custom UI.
@@ -328,7 +328,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/04-navigation-topbar-do-1.png","type":"do","description":"Organize the navigation and toolbar elements by hierarchy, following a information arquitecture’s structure."},{"image":"/assets/images/05-navigation-topbar-avoid-2.png","type":"avoid","description":"Using more than 3 tools in mobile as space is limited, use dropdown menu instead."},{"image":"/assets/images/06-navigation-topbar-do-3.png","type":"do","description":"Keep navigation menu link labels clear and concise. Prefer max 1-2 word long labels. "},{"image":"/assets/images/07-navigation-topbar-avoid-4.png","type":"avoid","description":"Avoid starting multiple menu link labels with the same word."}]} />
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
