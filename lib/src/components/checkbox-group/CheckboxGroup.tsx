@@ -13,7 +13,7 @@ import { CheckboxGroupAllItem } from './CheckboxGroupAllItem'
 import { CheckboxGroupItem } from './CheckboxGroupItem'
 import { CheckboxGroupSub } from './CheckboxGroupSub'
 
-type CheckboxGroupRootProps = React.ComponentProps<typeof Box> & {
+type CheckboxGroupRootProps = Omit<React.ComponentProps<typeof Box>, 'defaultChecked'> & {
   checked?: CheckboxGroupItemValue[]
   onCheckedChange?: (checked: CheckboxGroupItemValue[]) => void
   defaultChecked?: CheckboxGroupItemValue[]
