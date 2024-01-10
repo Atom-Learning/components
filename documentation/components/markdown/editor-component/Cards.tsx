@@ -4,7 +4,7 @@ import {
   Grid,
   Box,
   Heading,
-  Stack,
+  Flex,
   ChipToggleGroup,
   SearchInput,
   styled,
@@ -51,18 +51,13 @@ const CardsItem: React.FC<TCardsItemProps> = ({
       }}
     >
       <NoOverflowWrapper>
-        <Box
-          css={{
-            background: '$base2',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            p: '$2',
-            aspectRatio: '16/9'
-          }}
+        <Flex
+          align="center"
+          justify="center"
+          css={{ bg: '$base2', p: '$2', aspectRatio: '$16-9' }}
         >
           {image && <Image src={image} alt="" css={{ maxHeight: '100%' }} />}
-        </Box>
+        </Flex>
         <Box css={{ p: '$4' }}>
           <Heading as="h3" size="xs" css={{ mb: '$3' }}>
             {heading}
@@ -146,27 +141,22 @@ export const Cards: React.FC<CardsProps> = ({
   }, [items])
 
   return (
-    <Stack gap={4} direction="column">
+    <Flex
+      gap={4}
+      direction="column"
+      css={{ maxWidth: 1280, mx: 'auto', px: '$4' }}
+    >
       {showSearch && (
         <SearchInput
           size="md"
           name="cards-search"
           placeholder="Search"
-          css={{
-            maxWidth: 400,
-            mx: 'auto',
-            width: '100%'
-          }}
+          css={{ maxWidth: 400, mx: 'auto', width: '100%' }}
           onValueChange={handleSetSearchValue}
         />
       )}
       {showTagsFilter && (
-        <Box
-          css={{
-            maxWidth: '100%',
-            mx: 'auto'
-          }}
-        >
+        <Box css={{ width: '100%', maxWidth: 750, mx: 'auto' }}>
           <ChipToggleGroup
             justify="center"
             type="multiple"
@@ -188,7 +178,9 @@ export const Cards: React.FC<CardsProps> = ({
           width: '100%',
           gap: '$5 $4',
           gridTemplateColumns: '1fr',
-          '@sm': { gridTemplateColumns: '1fr 1fr' }
+          '@sm': { gridTemplateColumns: '1fr 1fr' },
+          '@lg': { gridTemplateColumns: '1fr 1fr 1fr' },
+          '@xl': { gridTemplateColumns: '1fr 1fr 1fr 1fr' }
         }}
       >
         {items.map((props) => {
@@ -204,6 +196,6 @@ export const Cards: React.FC<CardsProps> = ({
           )
         })}
       </Grid>
-    </Stack>
+    </Flex>
   )
 }

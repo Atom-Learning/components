@@ -18,7 +18,7 @@ import { Hamburger } from '@atom-learning/icons'
 import { useTheme } from '~/utilities/hooks/useTheme'
 
 const NavigationHeader = () => (
-  <SideBar.Brand>
+  <SideBar.Brand href="/">
     <SideBar.BrandLogo src={logo.src} css={{ width: 80 }} />
     <Badge
       theme="neutral"
@@ -31,7 +31,7 @@ const NavigationHeader = () => (
 )
 
 const BrandSwitch = () => {
-  const { theme, setTheme } = useTheme()
+  const { theme, updateTheme } = useTheme()
   return (
     <Flex gap="3" align="center" justify="center">
       <Text size="sm" css={{ fontWeight: '600' }}>
@@ -42,9 +42,7 @@ const BrandSwitch = () => {
         orientation="horizontal"
         value={theme}
         defaultValue="atom"
-        onValueChange={(value: 'atom' | 'quest') => {
-          if (value) setTheme(value)
-        }}
+        onValueChange={(value: 'atom' | 'quest') => value && updateTheme(value)}
       >
         <ToggleGroup.Button value="atom" size="sm">
           Atom
@@ -88,7 +86,7 @@ export const NavigationMobile = () => (
   </Drawer>
 )
 
-export const NavigationDesktop = (props) => (
+export const NavigationDesktop = () => (
   <SideBar type="static">
     <SideBar.Header>
       <NavigationHeader />
