@@ -21,7 +21,7 @@ tabs:
 
 
       <ComponentProps component="Heading" />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: sS0zstE8tnezkiNJYOLDd
 nestedSlug:
   - components
