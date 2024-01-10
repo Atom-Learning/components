@@ -499,27 +499,6 @@ exports[`BannerSlim component renders 1`] = `
   .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
-
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
-  }
 }
 
 @media  {
@@ -555,7 +534,7 @@ exports[`BannerSlim component renders 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
@@ -1127,27 +1106,6 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
-  }
-
   .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
@@ -1200,7 +1158,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm c-PJLV-bwtSeY-size-md"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA
@@ -1789,27 +1747,6 @@ exports[`BannerSlim component renders sm variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
-  }
-
   .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
@@ -1862,7 +1799,7 @@ exports[`BannerSlim component renders sm variant 1`] = `
       class="c-dhzjXW c-PJLV c-dhzjXW-gkvzBZ-gap-4 c-PJLV-fGHEql-size-sm"
     >
       <button
-        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-icKSZB-css"
+        class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-klvXVG-cv c-kaaUSm-icKSZB-css"
         type="button"
       >
         Primary CTA

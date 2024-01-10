@@ -148,6 +148,27 @@ exports[`Button component Loading state renders a loading button 1`] = `
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
   }
+
+  .c-kaaUSm-BeIdG-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-BeIdG-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):hover,
+  .c-kaaUSm-BeIdG-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primary1100);
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):active {
+    color: var(--colors-primary1200);
+  }
 }
 
 @media  {
@@ -159,7 +180,7 @@ exports[`Button component Loading state renders a loading button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-DdIlq-isLoading-true c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-DdIlq-isLoading-true c-kaaUSm-cygQAa-cv"
     type="button"
   >
     <div
@@ -251,32 +272,11 @@ exports[`Button component renders a button 1`] = `
   .c-kaaUSm-cygQAa-cv:not([disabled]):active {
     background: var(--colors-primary1000);
   }
-
-  .c-kaaUSm-ebjJvk-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: var(--colors-primary800);
-  }
-
-  .c-kaaUSm-ebjJvk-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: var(--colors-primary900);
-  }
-
-  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
-    color: var(--colors-primary1000);
-  }
 }
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
     type="button"
   >
     BUTTON
@@ -382,11 +382,32 @@ exports[`Button component renders a button with an icon 1`] = `
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
   }
+
+  .c-kaaUSm-BeIdG-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-BeIdG-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):hover,
+  .c-kaaUSm-BeIdG-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primary1100);
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):active {
+    color: var(--colors-primary1200);
+  }
 }
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
     type="button"
   >
     BUTTON 
@@ -490,7 +511,7 @@ exports[`Button component renders a disabled button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv c-kaaUSm-ebjJvk-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
     disabled=""
     type="button"
   >
@@ -680,7 +701,7 @@ exports[`Button component renders a outline button 1`] = `
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-ebjJvk-cv"
     type="button"
   >
     BUTTON
@@ -770,11 +791,32 @@ exports[`Button component renders a outline button with secondary theme 1`] = `
   .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
     color: var(--colors-primary1000);
   }
+
+  .c-kaaUSm-BeIdG-cv {
+    border: 1px solid;
+    border-color: currentColor;
+    color: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-BeIdG-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):hover,
+  .c-kaaUSm-BeIdG-cv:not([disabled]):focus {
+    text-decoration: none;
+    color: var(--colors-primary1100);
+  }
+
+  .c-kaaUSm-BeIdG-cv:not([disabled]):active {
+    color: var(--colors-primary1200);
+  }
 }
 
 <div>
   <button
-    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-BeIdG-cv"
     type="button"
   >
     BUTTON
