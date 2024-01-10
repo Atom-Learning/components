@@ -41,7 +41,7 @@ tabs:
 
 
       <ComponentProps component="InlineFieldWrapper" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 8Gr1xzA4TxMnz0TquABA3
 nestedSlug:
   - components
