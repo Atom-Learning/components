@@ -108,7 +108,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/input-08-do-and-dont-01.svg","type":"do","description":"Clearly show which input isn’t allowing users to move on."},{"image":"/assets/images/input-09-do-and-dont-02.svg","description":"Show an error in the form without indicating what specific input it’s about.","type":"dont"},{"image":"/assets/images/input-10-do-and-dont-03.svg","description":"Use a clear label or an example placeholder so users can easily understand what’s being asked from them","type":"do"},{"image":"/assets/images/input-11-do-and-dont-04.svg","description":"Generic and unclear inputs","type":"avoid"},{"description":"Use clear and visible labels aligned to the left","type":"do","image":"/assets/images/input-12-do-and-dont-05.svg"},{"image":"/assets/images/input-13-do-and-dont-06.svg","description":"Provide the demanded format in the placeholder","type":"do"}]} />
-parent: ru0Ovr_U82kdQX8m3WahL
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:
   - components
