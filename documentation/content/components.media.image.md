@@ -7,9 +7,9 @@ links:
 tabs:
   - title: Main
     content: >-
-      The `Image` component renders an `img` element with basic styling to
-      stop it from overflowing its parent element or expanding beyond its
-      natural size and distorting.
+      The `Image` component renders an `img` element with basic styling to stop
+      it from overflowing its parent element or expanding beyond its natural
+      size and distorting.
 
 
       <CodeBlock live={true} preview={true} code={`<Image
@@ -22,7 +22,7 @@ tabs:
 
 
       <ComponentProps component="Image" />
-parent: XPLFvowY8sBRhG2IUn5Zk
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 1tFvJEHLzSO0EKyC-RGIM
 nestedSlug:
   - components
