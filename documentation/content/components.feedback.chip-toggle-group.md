@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Chip](https://atomlearning.design/components/feedback/chip) and [Chip dismissible group](https://atomlearning.design/components/feedback/chip-dismissible-group)
+      [Chip](/components/chip) and [Chip dismissible group](https://atomlearning.design/components/feedback/chip-dismissible-group)
 
 
       <br/>
