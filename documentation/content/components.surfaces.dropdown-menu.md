@@ -7,11 +7,11 @@ links:
 tabs:
   - title: Main
     content: >-
-      `DropdownMenu` exports many components that combine to create a
-      dropdown menu. The `DropdownMenu.Trigger` renders a `<button>` by default,
-      but this can be overridden with the `asChild` prop, which will instead add
-      all the functional and accessibility requirements to the child component
-      instead (see the below example).
+      `DropdownMenu` exports many components that combine to create a dropdown
+      menu. The `DropdownMenu.Trigger` renders a `<button>` by default, but this
+      can be overridden with the `asChild` prop, which will instead add all the
+      functional and accessibility requirements to the child component instead
+      (see the below example).
 
 
       Also, note that the component must accept a `ref`.
@@ -54,7 +54,7 @@ tabs:
 
 
       <ComponentProps component="DropdownMenu.Separator" />
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: _pSBDRT9MHelOD0qIL5yq
 nestedSlug:
   - components
