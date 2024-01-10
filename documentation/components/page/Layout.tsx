@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 import kebabCase from 'lodash.kebabcase'
 
 import { removeStartingNumber } from '~/utilities/removeStartingNumber'
+
 export const Layout: React.FC<TDynamicPage> = (props) => {
   const { links, slug, tabs, title } = props
   const tabsLength = tabs?.length
@@ -17,11 +18,13 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
   const { queryParams, updateQueryParams } = useQueryParams()
 
   const [tab, setTab] = useState(kebabCase(tabs?.[0]?.title))
+  const isShowingTabs = tabs.length > 1
+  const isFullWidth = !slug
+
   useEffect(() => {
     if (queryParams.tab) setTab(queryParams.tab)
   }, [queryParams.tab])
 
-  const isShowingTabs = tabs.length > 1
   useEffect(() => {
     if (isShowingTabs)
       updateQueryParams({ tab }, { method: 'replace', debounce: 100 }) // (!) Note: Debounce is necessary for tabs or endless url update loop glitch
@@ -58,7 +61,7 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
         </Header>
 
         {hasContent && (
-          <Container css={{ py: '$5' }}>
+          <Container css={{ py: '$5' }} isFullWidth={isFullWidth}>
             {tabs.map((tab) => (
               <Tabs.Content key={tab.title} value={kebabCase(tab.title)}>
                 <StackContent>
