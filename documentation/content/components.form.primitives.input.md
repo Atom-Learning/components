@@ -48,7 +48,7 @@ tabs:
 
 
       <ComponentProps component="Input" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: y4w3HqtJPe50KidHmfbry
 nestedSlug:
   - components
