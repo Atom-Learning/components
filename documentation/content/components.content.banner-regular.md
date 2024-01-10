@@ -259,7 +259,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/banner04_do.svg","type":"do","description":"Make sure to show only one promo banner per page at a time"},{"type":"dont","description":"Never use the promo banner to communicate unimportant information or messages that require other context"},{"description":"Always use the relevant size and colour variant that fits the message you want to communicate","type":"do"},{"type":"avoid","description":"Avoid having overly long copy within a banner"}]} />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: fdff513a0ebd40bcb5f58
 nestedSlug:
   - components
