@@ -364,7 +364,7 @@ tabs:
 
 
       <DosAndDonts items={[{"type":"do","description":"always provide clear labels for table’s headings and content.","image":"/assets/images/table-11-dos-and-donts.svg"},{"image":"/assets/images/table-12-dos-and-donts.svg","description":"provide inappropriate labels, that don’t reflect the content.","type":"dont"},{"type":"do","image":"/assets/images/table-13-dos-and-donts.svg","description":"align content top-left in each row’s cell (except for numeric values)."},{"image":"/assets/images/table-14-dos-and-donts.svg","type":"dont","description":"use different alignments inside a row cell."},{"image":"/assets/images/table-15-dos-and-donts.svg","type":"do","description":"prioritise the columns and sort the most important information starting from left to right."},{"type":"avoid","description":"placing columns in random order.","image":"/assets/images/table-16-dos-and-donts.svg"},{"type":"do","description":"use the same row size.","image":"/assets/images/table-17-dos-and-donts.svg"},{"type":"dont","description":"mix the row sizes.","image":"/assets/images/table-18-dos-and-donts.svg"},{"type":"do","description":"use the same format of dates everywhere.","image":"/assets/images/table-19-dos-and-donts.svg"},{"type":"do","description":"mix format of dates.","image":"/assets/images/table-20-dos-and-donts.svg"},{"type":"do","description":"use responsive pagination on smaller breakpoints.","image":"/assets/images/table-21-dos-and-donts.svg"},{"type":"do","description":"use the first fixed column for complex tables that require horizontal scrolling.","image":"/assets/images/table-22-dos-and-donts.svg"}]} />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: gx7H_JrjyRIZ907nCE-Li
 nestedSlug:
   - components
