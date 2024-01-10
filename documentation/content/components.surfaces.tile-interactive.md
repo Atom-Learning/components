@@ -4,8 +4,8 @@ title: Tile Interactive
 tabs:
   - title: Code
     content: >-
-      <CodeBlock live={true} preview={true} code={`<TileGroup css={{background:
-      '$grey100', p: '$3', width: '100%'}} justify="center">
+      <CodeBlock live={true} preview={true} code={`<TileGroup
+      css={{background: '$grey100', p: '$3', width: '100%'}} justify="center">
         <TileInteractive onClick={() => alert('onClick')} css={{size: 100 }} borderRadius="md" />
         <TileInteractive href='/' css={{size: 100 }} borderRadius="md" border />
       </TileGroup>`} language={"tsx"} />
@@ -164,7 +164,7 @@ tabs:
 
 
       <DosAndDonts items={[{"type":"do","description":"When possible, user border colour to separate the tile from the background.","image":"/assets/images/tile11_do.svg"},{"type":"dont","description":"Don't use too pale text inside tiles to avoid accessibility issues.","image":"/assets/images/tile12_dont.svg"},{"type":"do","description":"Group Tiles by theme using the same colorScheme and consistent styles.","image":"/assets/images/tile13_do.svg"},{"type":"avoid","description":"Using mismatching tiles with different styles when they are part of the same group."}]} />
-parent: J3bsmpB7-_uuqm05peuTA
+parent: jAvRQoZ2NuRO-VGZiJ0a0
 uuid: 3b9bb9a0-12e5-4fbe-bb18-9f700dc91003
 nestedSlug:
   - components
