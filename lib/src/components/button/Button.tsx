@@ -16,7 +16,7 @@ const getButtonOutlineVariant = (
   active: string
 ) => ({
   theme,
-  appearance: 'solid',
+  appearance: 'outline',
   css: {
     border: '1px solid',
     borderColor: 'currentColor',
