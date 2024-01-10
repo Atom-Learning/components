@@ -10,7 +10,7 @@ tabs:
       #### Related components
 
 
-      [Table](https://atomlearning.design/components/content/table)
+      [Table](/components/table)
 
 
       ·
@@ -430,6 +430,7 @@ tabs:
         )
       }
         
+
 
 
 
