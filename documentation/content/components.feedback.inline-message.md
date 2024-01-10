@@ -204,7 +204,7 @@ tabs:
 
 
       <DosAndDonts items={[{"image":"/assets/images/inline-message-dos-and-donts-01.svg","type":"do","description":"Keep messages as short as possible."},{"image":"/assets/images/inline-message-dos-and-donts-02.svg","type":"dont","description":"Use when user action is required before continuing any further, then use Alert dialogs."},{"image":"/assets/images/inline-message-dos-and-donts-03.svg","type":"do","description":"Use when user action is required before continuing any further, then use Alert dialogs."},{"image":"/assets/images/inline-message-dos-and-donts-04.svg","type":"dont","description":"Use when user action is required before continuing any further, then use Alert dialogs."},{"image":"/assets/images/inline-message-dos-and-donts-05.svg","type":"do","description":"Use inline messages within input fields as hint text to guide the user or to support error prevention."},{"image":"/assets/images/inline-message-dos-and-donts-06.svg","type":"do","description":"Use to state the general problem with the user’s input, to alert tUse to state the general problem with the user’s input, to alert them to a required action, errors, etc.hem to a required action, errors, etc."}]} />
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: P6daKkk_E0jehDkN0So_A
 nestedSlug:
   - components
