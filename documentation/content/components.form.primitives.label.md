@@ -30,7 +30,6 @@ tabs:
       To denote a required field, the `required` prop will add an `*` suffix to the label text.
 
 
-
       <CodeBlock live={true} preview={true} code={`<Label required>A normal label</Label>`} language={"tsx"} />
 
 
@@ -38,7 +37,7 @@ tabs:
 
 
       <ComponentProps component="Label" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: g0eB4TgWpO2blk0Bq-dju
 nestedSlug:
   - components
