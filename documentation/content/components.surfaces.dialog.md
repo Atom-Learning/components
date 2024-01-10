@@ -10,7 +10,7 @@ tabs:
       #### Related components
 
 
-      [Alert dialog](https://atomlearning.design/components/feedback/alert-dialog)
+      [Alert dialog](/components/alert-dialog)
 
 
       ·
