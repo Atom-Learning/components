@@ -39,7 +39,7 @@ tabs:
 
 
       <ComponentProps component="Icon" />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: lk6zpZ0zUgwTAH3l-2GkO
 nestedSlug:
   - components
