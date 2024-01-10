@@ -332,7 +332,7 @@ tabs:
 
 
       <DosAndDonts items={[{"description":"use for messages that appear after an event takes place, see Toasts.","type":"do","image":"/assets/images/section-message-dos-and-donts-01.svg"},{"image":"/assets/images/section-message-dos-and-donts-02.svg","description":"use for messages with information affecting the whole site, see Banners and Toast.","type":"dont"},{"image":"/assets/images/section-message-dos-and-donts-03.svg","description":"Place the Section message visually closer to the action or section it relates to","type":"do"},{"image":"/assets/images/section-message-dos-and-donts-04.svg","description":"use for smaller contextual messages about a specific part of the UI, see inline messages.","type":"dont"},{"image":"/assets/images/section-message-dos-and-donts-05.svg","type":"do","description":"Keep actions short and simple."},{"image":"/assets/images/section-message-dos-and-donts-06.svg","type":"avoid","description":"In general, avoid using more than two actions."},{"image":"/assets/images/section-message-dos-and-donts-07.svg","type":"do","description":"Place the Section message visually closer to the action or section it relates to"},{"image":"/assets/images/section-message-dos-and-donts-08.svg","type":"dont","description":"Use Section Messages for marketing new products or features. Use Promo banner instead."}]} />
-parent: HGItoEG3XVs9DpOLugTot
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 0820a98e-0682-4c11-bed0-d6b751d98c7e
 nestedSlug:
   - components
