@@ -31,7 +31,7 @@ tabs:
 
       <ComponentProps component="SelectField" />
     title: Main
-parent: ru0Ovr_U82kdQX8m3WahL
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: MD1mmrf40ecDo4z16-bco
 nestedSlug:
   - components
