@@ -76,7 +76,7 @@ tabs:
 
 
       <ComponentProps component="Select" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 42RS86lq4lG51PRtdQSpn
 nestedSlug:
   - components
