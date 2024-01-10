@@ -60,7 +60,7 @@ tabs:
 
 
       <ComponentProps component="FileInput" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: xCCHe_ZmprcpoIz0526gr
 nestedSlug:
   - components
