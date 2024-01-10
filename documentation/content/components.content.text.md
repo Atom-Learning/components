@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      Text is our basic component for rendering text, use it for any
-      non-heading text
+      Text is our basic component for rendering text, use it for any non-heading
+      text
 
 
       ## Sizes
@@ -28,7 +28,7 @@ tabs:
 
 
       <ComponentProps component="Text" />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: owSewZQY17sWMc7HPp134
 nestedSlug:
   - components
