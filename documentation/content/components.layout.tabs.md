@@ -267,7 +267,7 @@ tabs:
 
 
       Mobile
-parent: UtnFsFtDrPgQNFrm3NcAP
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: JNymd_5n-zALi2KcmUEtq
 nestedSlug:
   - components
