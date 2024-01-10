@@ -36,7 +36,7 @@ tabs:
       </Box>
 
       ```
-parent: lfMACgjU6_Ee5Tw38zwzv
+parent: 2mSiWtCnHVvKUlsAyn628
 uuid: 76_opNal5DEJmStcOQ0ea
 nestedSlug:
   - theme
