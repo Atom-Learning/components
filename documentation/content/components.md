@@ -1,6 +1,6 @@
 ---
-slug: components
-title: 3 Components
+slug: getting-started
+title: Getting started
 links:
   viewSource: components
 tabs:
@@ -54,5 +54,6 @@ tabs:
       Refer to the individual component documentation for recommended usage and API references for each component, as well as the theme documentation to understand the design token usage.
 nestedSlug:
   - components
+parent: CJspWBO-6KLOSzVOdevgR
 uuid: J3bsmpB7-_uuqm05peuTA
 ---
