@@ -588,13 +588,13 @@ exports[`BannerRegular component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -1270,13 +1270,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary

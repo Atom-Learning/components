@@ -243,27 +243,6 @@ exports[`Calendar component renders 1`] = `
   .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
-
-  .c-kaaUSm-bSkyfM-cv {
-    border: 1px solid;
-    border-color: currentColor;
-    color: white;
-  }
-
-  .c-kaaUSm-bSkyfM-cv[disabled] {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
-    color: rgba(255, 255, 255, 0.65);
-  }
 }
 
 @media  {
@@ -350,7 +329,7 @@ exports[`Calendar component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
         <button
-          class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-klvXVG-cv c-kaaUSm-bSkyfM-cv c-kaaUSm-ikwYYXS-css"
+          class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-klvXVG-cv c-kaaUSm-ikwYYXS-css"
           type="button"
         >
           Dec
