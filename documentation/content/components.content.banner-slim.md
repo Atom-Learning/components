@@ -181,7 +181,7 @@ tabs:
 
 
       <ComponentProps component="BannerSlim.Dismiss" />
-parent: A4GgFCvNbHBt9iaKdB7Kv
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: fdff513a0ebd40bcb5f67
 nestedSlug:
   - components
