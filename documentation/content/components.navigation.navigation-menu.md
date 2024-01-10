@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Main
     content: >-
-      `NavigationMenu` exports many components that combine to form a
-      navigation menu.
+      `NavigationMenu` exports many components that combine to form a navigation
+      menu.
 
 
       <CodeBlock live={true} preview={true} code={`<NavigationMenu>
@@ -119,14 +119,20 @@ tabs:
           css={{
             gridTemplateColumns: '1fr 7fr'
           }}
-        >
-          <Icon is={Feed} size={'md'} />
-          <Flex css={{ flexDirection: 'column' }}>
-            <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
-              Example title
-            </NavigationMenu.DropdownItemTitle>
-            <Text>This is example subtitle</Text>
-          </Flex>
+
+      ```
+
+      <Icon is={Feed} size={'md'} />
+
+      <Flex css={{ flexDirection: 'column' }}>
+        <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
+          Example title
+        </NavigationMenu.DropdownItemTitle>
+        <Text>This is example subtitle</Text>
+      </Flex>
+
+      ```
+
         </Grid>
       </NavigationMenu.DropdownItem>`} language={"tsx"} />
 
@@ -169,7 +175,7 @@ tabs:
 
 
       <ComponentProps component="NavigationMenu.DropdownItem" />
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: VnOUwVVSylN-gmDVJ1Yes
 nestedSlug:
   - components

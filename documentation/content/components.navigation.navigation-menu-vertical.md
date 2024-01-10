@@ -7,8 +7,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      The `NavigationMenuVertical` component is _almost_ a vertical version
-      of the `NavigationMenu` component. It is meant to be used the same way as
+      The `NavigationMenuVertical` component is *almost* a vertical version of
+      the `NavigationMenu` component. It is meant to be used the same way as
       `NavigationMenu` - but in sidedrawers and similar narrow panels where the
       horizontal navigation wouldn't work. 
 
@@ -95,7 +95,7 @@ tabs:
 
 
       <ComponentProps component="NavigationMenuVertical.Text" />
-parent: 95SvEwV7BznSChttFanpW
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 96eOG7OAjxOpfsmMD-rCr
 nestedSlug:
   - components
