@@ -10,7 +10,7 @@ tabs:
       **Related components**
 
 
-      [Input field](https://atomlearning.design/components/form/fields/input-field)
+      [Input field](/components/input-field)
 
 
       <br/>
