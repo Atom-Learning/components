@@ -41,7 +41,7 @@ tabs:
       ### Example using React Router
 
 
-      <CodeBlock code={`const Link = ({ href, ...props }) => {
+      <CodeBlock live={false} preview={false} code={`const Link = ({ href, ...props }) => {
         const { pathname } = useLocation()
         const isActive = path === href
 
@@ -56,7 +56,7 @@ tabs:
       ### Example using Next JS
 
 
-      <CodeBlock code={`const Link = ({ href, ...props }) => {
+      <CodeBlock live={false} preview={false} code={`const Link = ({ href, ...props }) => {
         const router = useRouter()
         const isActive = router.asPath === href
 
@@ -114,25 +114,19 @@ tabs:
       DropdownItem gives a lot of flexibility. It's an easy to compose it for own purposes.
 
 
-      <CodeBlock code={`<NavigationMenu.DropdownItem href="/" active>
+      <CodeBlock live={false} preview={false} code={`<NavigationMenu.DropdownItem href="/" active>
         <Grid
           css={{
             gridTemplateColumns: '1fr 7fr'
           }}
-
-      ```
-
-      <Icon is={Feed} size={'md'} />
-
-      <Flex css={{ flexDirection: 'column' }}>
-        <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
-          Example title
-        </NavigationMenu.DropdownItemTitle>
-        <Text>This is example subtitle</Text>
-      </Flex>
-
-      ```
-
+        >
+          <Icon is={Feed} size={'md'} />
+          <Flex css={{ flexDirection: 'column' }}>
+            <NavigationMenu.DropdownItemTitle bold css={{ mb: '$3' }}>
+              Example title
+            </NavigationMenu.DropdownItemTitle>
+            <Text>This is example subtitle</Text>
+          </Flex>
         </Grid>
       </NavigationMenu.DropdownItem>`} language={"tsx"} />
 
@@ -143,7 +137,7 @@ tabs:
       NavigationMenu.Dropdown gives you the way to pass your own trigger component inside the `NavigationMenu.DropdownTrigger`. The children of NavigationMenu.DropdownTrigger can be a plain text or more complex component.
 
 
-      <CodeBlock code={`<NavigationMenu.Dropdown id="1">
+      <CodeBlock live={false} preview={false} code={`<NavigationMenu.Dropdown id="1">
         <NavigationMenu.DropdownTrigger>
           <Avatar />
         </NavigationMenu.DropdownTrigger>
