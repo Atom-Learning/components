@@ -9,7 +9,7 @@ tabs:
       **Related components**
 
 
-      [Input](https://atomlearning.design/components/form/primitives/input)
+      [Input](/components/input)
 
 
       <br/>
