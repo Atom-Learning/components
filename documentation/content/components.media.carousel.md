@@ -52,9 +52,9 @@ tabs:
       [Documentation about the hook usage.](https://github.com/express-labs/pure-react-carousel#hooks-and-usecontext)
 
 
-      <CodeBlock code={`const CarouselSliderImplementation = ({ children }) => {
+      <CodeBlock live={false} preview={false} code={`const CarouselSliderImplementation = ({ children }) => {
         const carouselContext = useCarousel()
-        const \[currentSlide, setCurrentSlide] = React.useState(
+        const [currentSlide, setCurrentSlide] = React.useState(
           carouselContext.state.currentSlide
         )
 
@@ -64,7 +64,7 @@ tabs:
           }
           carouselContext.subscribe(onChange)
           return () => carouselContext.unsubscribe(onChange)
-        }, \[carouselContext])
+        }, [carouselContext])
 
         return (
           <>
@@ -75,26 +75,22 @@ tabs:
       }`} language={"tsx"} />
 
 
-      <CodeBlock code={`<Carousel
+      .
+
+
+      <CodeBlock live={true} preview={true} code={`<Carousel
         slideWidth={200}
         slideHeight={200}
         numSlides={2}
         css={{ position: 'relative' }}
 
-      >   <Carousel.ArrowPrevious />
-
-      >   <Carousel.ArrowNext />
-
-      >   <CarouselSliderImplementation>
-
-
-      ```
+         <Carousel.ArrowPrevious />
+         <Carousel.ArrowNext />
+         <CarouselSliderImplementation>
 
       <Carousel.Slider>
         // slides
       </Carousel.Slider>
-
-      ```
 
         </CarouselSliderImplementation>
       </Carousel>`} language={"tsx"} />
