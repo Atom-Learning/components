@@ -1,6 +1,6 @@
 ---
 slug: banner-regular
-title: BannerRegular
+title: Banner Regular
 links:
   viewSource: components/banner/banner-regular
   showReportAnIssue: true
