@@ -1,6 +1,6 @@
 ---
 slug: markdown-content
-title: MarkdownContent
+title: Markdown Content
 links:
   viewSource: components/markdown-content
   showReportAnIssue: true

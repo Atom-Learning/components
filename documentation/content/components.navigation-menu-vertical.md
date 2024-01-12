@@ -1,6 +1,6 @@
 ---
 slug: navigation-menu-vertical
-title: NavigationMenuVertical
+title: Navigation Menu Vertical
 links:
   viewSource: components/navigation-menu-vertical
   showReportAnIssue: true
