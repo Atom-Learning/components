@@ -1,0 +1,15 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/thomasdigby/Projects/components"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NPM_LOCKFILE_NOT_FOUND",
+    "err": {
+      "name": "Error",
+      "message": "No package-lock.json or npm-shrinkwrap.json found",
+      "code": "ERR_PNPM_NPM_LOCKFILE_NOT_FOUND",
+      "stack": "Error: No package-lock.json or npm-shrinkwrap.json found\n    at readNpmLockfile (/Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:113988:13)\n    at async Object.handler [as import] (/Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:113960:30)\n    at async /Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125614:20\n    at async run (/Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125589:34)\n    at async runPnpm (/Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125799:5)\n    at async /Users/thomasdigby/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125791:7"
+    }
+  }
+}

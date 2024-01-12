@@ -983,7 +983,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           data-state="open"
         >
           <button
-            aria-controls="radix-0"
+            aria-controls="radix-8"
             aria-expanded="true"
             class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-bcEwPX c-bcEwPX-jLELKD-size-lg"
             data-radix-collection-item=""
@@ -1015,7 +1015,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
             class="c-PJLV"
             data-state="open"
             data-testid="accordion-content"
-            id="radix-0"
+            id="radix-8"
             style="transition-duration: 0s; animation-name: none;"
           >
             <div
