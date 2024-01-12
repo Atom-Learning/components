@@ -7,7 +7,7 @@ type TChipGroupProps = {
 }
 
 export const ChipGroup: React.ForwardRefExoticComponent<
-  React.ComponentProps<typeof Flex> & TChipGroupProps
+  React.ComponentProps<typeof Flex> & TChipGroupProps & { as?: any }
 > = React.forwardRef(({ gap, ...rest }, ref) => (
   <Flex direction="row" gap={gap || '2'} {...rest} ref={ref} />
 ))
