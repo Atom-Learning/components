@@ -15,7 +15,7 @@ tabs:
       ## Border
 
 
-      <CodeBlock live={true} preview={true} code={`<TileGroup css={{background: '$grey100', p: '$3', width: '100%'}} justify="center">
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3" justify="center" css={{ bg: '$grey100', p: '$3', width: '100%' }}>
         <Tile css={{size: 100 }} />
         <Tile css={{size: 100 }} border />
       </TileGroup>`} language={"tsx"} />
@@ -24,7 +24,7 @@ tabs:
       ## Border Radius
 
 
-      <CodeBlock live={true} preview={true} code={`<TileGroup>
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3">
         <Tile css={{size: 100 }} border />
         <Tile borderRadius="sm" css={{size: 100 }} border />
         <Tile borderRadius="md" css={{size: 100 }} border />
@@ -41,11 +41,11 @@ tabs:
       ColorScheme is experimental and has been implemented only locally but you can read more about how it currently works and available options [on the repository's github](https://github.com/Atom-Learning/components/tree/main/lib/src/experiments/color-scheme#readme).
 
 
-      <CodeBlock live={true} preview={true} code={`<TileGroup>
-        <Tile css={{size: 100 }} border colorScheme={{ base: 'blue1' }} />
-        <Tile css={{size: 100 }} border colorScheme={{ base: 'blue2' }} />
-        <Tile css={{size: 100 }} border colorScheme={{ base: 'purple2' }} />
-        <Tile css={{size: 100 }} border colorScheme={{ base: 'grey2' }} />
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3">
+        <Tile css={{ size: 100 }} border colorScheme={{ base: 'blue1' }} />
+        <Tile css={{ size: 100 }} border colorScheme={{ base: 'blue2' }} />
+        <Tile css={{ size: 100 }} border colorScheme={{ base: 'purple2' }} />
+        <Tile css={{ size: 100 }} border colorScheme={{ base: 'grey2' }} />
       </TileGroup>`} language={"tsx"} />
 
 
@@ -59,7 +59,7 @@ tabs:
       >
         <NoOverflowWrapper as="article">
             <Image src="http://placekitten.com/320/200" alt="" />
-            <Flex gap="4" css={{ px: '$3', py: '$4' }}>
+            <Flex direction="column" gap="4" css={{ px: '$3', py: '$4' }}>
               <Heading as="h2" size="sm">
                 Cat
               </Heading>

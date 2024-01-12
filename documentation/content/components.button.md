@@ -22,7 +22,7 @@ tabs:
       These are the available `themes` for the `Button` component: `primary` (default), `secondary`, `success`, `warning`, `danger`, and `neutral`.
 
 
-      <CodeBlock live={true} preview={true} code={`<Flex gap="3" css={{ bg: '$tonal200', p: '$1' }}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3" css={{ bg: '$grey100', p: '$4' }}>
         <Button>Primary</Button>
         <Button theme="secondary">Secondary</Button>
         <Button theme="success">Success</Button>
@@ -47,7 +47,7 @@ tabs:
       Each variation has an `disabled` stated, by setting the `disabled` property.
 
 
-      <CodeBlock live={true} preview={true} code={`<Flex gap={3} css={{ bg: '$tonal200', p: '$1' }}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap={3} css={{ bg: '$grey100', p: '$4' }}>
         <Button disabled>Basic</Button>
         <Button theme="success" disabled>
           Themed

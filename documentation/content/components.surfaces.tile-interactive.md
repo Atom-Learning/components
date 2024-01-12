@@ -4,8 +4,7 @@ title: Tile Interactive
 tabs:
   - title: Code
     content: >-
-      <CodeBlock live={true} preview={true} code={`<TileGroup
-      css={{background: '$grey100', p: '$3', width: '100%'}} justify="center">
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3" justify="center" css={{ bg: '$grey100', p: '$3', width: '100%' }}>
         <TileInteractive onClick={() => alert('onClick')} css={{size: 100 }} borderRadius="md" />
         <TileInteractive href='/' css={{size: 100 }} borderRadius="md" border />
       </TileGroup>`} language={"tsx"} />
@@ -14,7 +13,7 @@ tabs:
       ## Color Scheme
 
 
-      <CodeBlock live={true} preview={true} code={`<TileGroup>
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3">
         <TileInteractive onClick={()=>alert('1')} css={{size: 100 }} borderRadius="md" border colorScheme={{ base: 'blue1' }} />
         <TileInteractive onClick={()=>alert('2')} css={{size: 100 }} borderRadius="md" border colorScheme={{ base: 'purple2' }} />
         <TileInteractive onClick={()=>alert('3')} css={{size: 100 }} borderRadius="md" border colorScheme={{ base: 'grey2' }} />
@@ -32,7 +31,7 @@ tabs:
       >
         <NoOverflowWrapper as="article">
             <Image src="http://placekitten.com/320/200" alt="" />
-            <Flex gap="4" css={{ px: '$3', py: '$4' }}>
+            <Flex direction="column" gap="4" css={{ px: '$3', py: '$4' }}>
               <Heading as="h2" size="sm">
                 Cat
               </Heading>

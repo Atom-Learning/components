@@ -49,7 +49,7 @@ tabs:
             Here is a cute cat
           </Text>
         </Box>
-        <Flex gap="4" css={{ px: '$3', py: '$4' }}>
+        <Flex direction="column" gap="4" css={{ px: '$3', py: '$4' }}>
           <Heading as="h2" size="sm">
             Cat
           </Heading>

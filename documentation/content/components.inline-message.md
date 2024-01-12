@@ -22,7 +22,7 @@ tabs:
       These are the available `theme`s for this component: `success`, `warning`, `error`, `neutral` and `info`. The default is `error` (due to most frequent context).
 
 
-      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3" wrap="wrap" justify="center">
         <InlineMessage theme="error">This is an error Inline Message</InlineMessage>
         <InlineMessage theme="warning">
           This is a warning Inline Message
