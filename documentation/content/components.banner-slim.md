@@ -1,6 +1,6 @@
 ---
 slug: banner-slim
-title: BannerSlim
+title: Banner Slim
 links:
   viewSource: components/banner/banner-slim
   showReportAnIssue: true

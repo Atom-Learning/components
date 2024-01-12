@@ -1,6 +1,6 @@
 ---
 slug: stack-content
-title: StackContent
+title: Stack Content
 links:
   viewSource: components/stack-content
   showReportAnIssue: true
