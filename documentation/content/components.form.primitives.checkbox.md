@@ -32,7 +32,7 @@ tabs:
 
 
       <ComponentProps component="Checkbox" />
-parent: E7irFEo7JeV-MtxTony9G
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 2Y0C1wqUjjKktp-oi7G8d
 nestedSlug:
   - components

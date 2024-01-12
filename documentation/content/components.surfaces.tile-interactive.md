@@ -163,7 +163,7 @@ tabs:
 
 
       <DosAndDonts items={[{"type":"do","description":"When possible, user border colour to separate the tile from the background.","image":"/assets/images/tile11_do.svg"},{"type":"dont","description":"Don't use too pale text inside tiles to avoid accessibility issues.","image":"/assets/images/tile12_dont.svg"},{"type":"do","description":"Group Tiles by theme using the same colorScheme and consistent styles.","image":"/assets/images/tile13_do.svg"},{"type":"avoid","description":"Using mismatching tiles with different styles when they are part of the same group."}]} />
-parent: jAvRQoZ2NuRO-VGZiJ0a0
+parent: J3bsmpB7-_uuqm05peuTA
 uuid: 3b9bb9a0-12e5-4fbe-bb18-9f700dc91003
 nestedSlug:
   - components
