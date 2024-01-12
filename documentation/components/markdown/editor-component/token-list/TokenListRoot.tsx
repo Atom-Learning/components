@@ -9,7 +9,7 @@ type TokenListRootProps = React.ComponentProps<typeof Flex> & {
   filter?: ({ key, value }) => boolean
 }
 
-const StyledTokenList = styled('ul', { padding: 0, listStyle: 'none' })
+const StyledTokenList = styled(Flex, { padding: 0, listStyle: 'none' })
 
 export const TokenListRoot: React.FC<TokenListRootProps> = ({
   allTokens,
@@ -44,8 +44,8 @@ export const TokenListRoot: React.FC<TokenListRootProps> = ({
   if (!listItems.length) return null
 
   return (
-    <Flex as={StyledTokenList} {...rest}>
+    <StyledTokenList wrap="wrap" {...rest}>
       {listItems}
-    </Flex>
+    </StyledTokenList>
   )
 }

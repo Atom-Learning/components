@@ -8,7 +8,7 @@ import { InlineMessageTheme } from './InlineMessage.types'
 export const INLINE_MESSAGE_THEMES: Record<InlineMessageTheme, CSS> = {
   success: { color: '$success' },
   warning: { color: '$warningText', '& svg': { color: '$warningDark' } },
-  info: { color: '$primary' },
+  info: { color: '$info' },
   neutral: { color: '$tonal400' },
   error: { color: '$danger' }
 }

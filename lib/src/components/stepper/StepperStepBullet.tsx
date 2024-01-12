@@ -18,7 +18,7 @@ export const StepperStepBullet = styled(Flex, {
       default: { bg: '$tonal100', color: '$tonal300' },
       active: {
         bg: 'white',
-        color: '$primaryMid',
+        color: '$primary900',
         border: '2px solid',
         borderColor: 'currentColor'
       },
@@ -27,8 +27,8 @@ export const StepperStepBullet = styled(Flex, {
         border: '2px solid $tonal200',
         color: '$tonal600'
       },
-      completed: { bg: '$primary', color: 'white' },
-      reviewed: { bg: '$primaryMid', color: 'white' },
+      completed: { bg: '$primary800', color: 'white' },
+      reviewed: { bg: '$primary900', color: 'white' },
       success: { bg: '$success', color: 'white' }
     }
   }

@@ -17,18 +17,9 @@ const StyledActionIcon = styled(ActionIcon, {
 export const PaginationPreviousButton = (
   props: Partial<React.ComponentProps<typeof StyledActionIcon>>
 ) => {
-  const {
-    goToPreviousPage,
-    currentPage,
-    labels,
-    disabledPages,
-    paginationItems
-  } = usePagination()
+  const { goToPreviousPage, labels, previousAvailablePage } = usePagination()
 
-  // Check if we are on the first page or if the first page is disabled and the page number is rendered
-  const isDisabled =
-    currentPage === 1 ||
-    (disabledPages.includes(1) && paginationItems.includes(1))
+  const isDisabled = !previousAvailablePage
 
   return (
     <StyledActionIcon

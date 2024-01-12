@@ -20,12 +20,11 @@ export const BannerRegular: React.FC<
   Image: typeof BannerRegularImage
   Button: typeof BannerRegularButton
   Dismiss: typeof BannerRegularDismiss
-} = ({ colorScheme, size, emphasis, value, onDismiss, ...rest }) => {
+} = ({ colorScheme, size, emphasis, onDismiss, ...rest }) => {
   return (
     <Banner size={size} emphasis={emphasis}>
       <BannerRegularContainer
         colorScheme={colorScheme}
-        value={value}
         onDismiss={onDismiss}
         {...rest}
       />

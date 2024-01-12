@@ -42,7 +42,7 @@ const StyledContainer = styled(Flex, {
   variants: {
     isRowSelected: {
       true: {
-        bg: '$blue100'
+        bg: '$primary100'
       }
     }
   }

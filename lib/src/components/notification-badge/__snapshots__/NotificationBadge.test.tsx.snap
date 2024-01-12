@@ -10,7 +10,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     display: flex;
   }
 
-  .c-cLwhcN {
+  .c-deftwF {
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     flex-direction: column;
@@ -25,7 +25,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     min-width: var(--sizes-2);
     text-align: center;
     color: #fff;
-    background: var(--colors-primary);
+    background: var(--colors-primary800);
   }
 
   .c-oUmPa {
@@ -130,19 +130,19 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hMqgPB-cv {
+  .c-oUmPa-fboUUB-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
-  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-fboUUB-cv:not(:disabled):hover,
+  .c-oUmPa-fboUUB-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-fboUUB-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -151,14 +151,14 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     class="c-PJLV c-cmpvrW"
   >
     <div
-      class="c-dhzjXW c-cLwhcN"
+      class="c-dhzjXW c-deftwF"
       role="status"
     >
       3
     </div>
     <button
       aria-label="testing"
-      class="c-oUmPa c-oUmPa-kMhpXP-size-lg c-oUmPa-rloUt-isRounded-true c-oUmPa-hMqgPB-cv c-PJLV"
+      class="c-oUmPa c-oUmPa-kMhpXP-size-lg c-oUmPa-rloUt-isRounded-true c-oUmPa-fboUUB-cv c-PJLV"
       data-state="closed"
       type="button"
     >

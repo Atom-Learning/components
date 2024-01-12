@@ -2,48 +2,48 @@
 
 exports[`Link component can be nested within Text and Heading 1`] = `
 @media  {
-  .c-gPnNdI {
+  .c-bmSGqY {
     background: unset;
     border: unset;
     padding: unset;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
     cursor: pointer;
     font-family: var(--fonts-body);
     text-decoration: none;
   }
 
-  .c-gPnNdI:focus,
-  .c-gPnNdI:hover {
-    color: var(--colors-primaryMid);
+  .c-bmSGqY:focus,
+  .c-bmSGqY:hover {
+    color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-gPnNdI:active {
-    color: var(--colors-primaryDark);
+  .c-bmSGqY:active {
+    color: var(--colors-primary1000);
   }
 
-  .c-gPnNdI[disabled] {
+  .c-bmSGqY[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gPnNdI,
-  .c-jryFOR > .c-gPnNdI,
-  .c-PJLV > .c-gPnNdI,
-  .c-bYNGXt > .c-gPnNdI {
+  .c-dyvMgW > .c-bmSGqY,
+  .c-jryFOR > .c-bmSGqY,
+  .c-PJLV > .c-bmSGqY,
+  .c-bYNGXt > .c-bmSGqY {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gPnNdI::before,
-  .c-dyvMgW > .c-gPnNdI::after,
-  .c-jryFOR > .c-gPnNdI::before,
-  .c-jryFOR > .c-gPnNdI::after,
-  .c-PJLV > .c-gPnNdI::before,
-  .c-PJLV > .c-gPnNdI::after,
-  .c-bYNGXt > .c-gPnNdI::before,
-  .c-bYNGXt > .c-gPnNdI::after {
+  .c-dyvMgW > .c-bmSGqY::before,
+  .c-dyvMgW > .c-bmSGqY::after,
+  .c-jryFOR > .c-bmSGqY::before,
+  .c-jryFOR > .c-bmSGqY::after,
+  .c-PJLV > .c-bmSGqY::before,
+  .c-PJLV > .c-bmSGqY::after,
+  .c-bYNGXt > .c-bmSGqY::before,
+  .c-bYNGXt > .c-bmSGqY::after {
     content: none;
   }
 
@@ -66,42 +66,42 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 }
 
 @media  {
-  .c-gPnNdI-gvmVBy-size-md {
+  .c-bmSGqY-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::before {
+  .c-bmSGqY-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::after {
+  .c-bmSGqY-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg {
+  .c-bmSGqY-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg::before {
+  .c-bmSGqY-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg::after {
+  .c-bmSGqY-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
   }
 
-  .c-gPnNdI-fmPQHp-noCapsize-true::before,
-  .c-gPnNdI-fmPQHp-noCapsize-true::after {
+  .c-bmSGqY-fmPQHp-noCapsize-true::before,
+  .c-bmSGqY-fmPQHp-noCapsize-true::after {
     display: none !important;
   }
 
@@ -145,7 +145,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
   >
     <button
-      class="c-gPnNdI c-gPnNdI-gvmVBy-size-md c-gPnNdI-fmPQHp-noCapsize-true"
+      class="c-bmSGqY c-bmSGqY-gvmVBy-size-md c-bmSGqY-fmPQHp-noCapsize-true"
     >
       TEXT LINK
     </button>
@@ -154,7 +154,7 @@ exports[`Link component can be nested within Text and Heading 1`] = `
     class="c-jryFOR c-jryFOR-fOoUdm-size-md"
   >
     <button
-      class="c-gPnNdI c-gPnNdI-gvmVBy-size-md c-gPnNdI-fmPQHp-noCapsize-true"
+      class="c-bmSGqY c-bmSGqY-gvmVBy-size-md c-bmSGqY-fmPQHp-noCapsize-true"
     >
       HEADING LINK
     </button>
@@ -164,65 +164,65 @@ exports[`Link component can be nested within Text and Heading 1`] = `
 
 exports[`Link component renders an anchor 1`] = `
 @media  {
-  .c-gPnNdI {
+  .c-bmSGqY {
     background: unset;
     border: unset;
     padding: unset;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
     cursor: pointer;
     font-family: var(--fonts-body);
     text-decoration: none;
   }
 
-  .c-gPnNdI:focus,
-  .c-gPnNdI:hover {
-    color: var(--colors-primaryMid);
+  .c-bmSGqY:focus,
+  .c-bmSGqY:hover {
+    color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-gPnNdI:active {
-    color: var(--colors-primaryDark);
+  .c-bmSGqY:active {
+    color: var(--colors-primary1000);
   }
 
-  .c-gPnNdI[disabled] {
+  .c-bmSGqY[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gPnNdI,
-  .c-jryFOR > .c-gPnNdI,
-  .c-PJLV > .c-gPnNdI,
-  .c-bYNGXt > .c-gPnNdI {
+  .c-dyvMgW > .c-bmSGqY,
+  .c-jryFOR > .c-bmSGqY,
+  .c-PJLV > .c-bmSGqY,
+  .c-bYNGXt > .c-bmSGqY {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gPnNdI::before,
-  .c-dyvMgW > .c-gPnNdI::after,
-  .c-jryFOR > .c-gPnNdI::before,
-  .c-jryFOR > .c-gPnNdI::after,
-  .c-PJLV > .c-gPnNdI::before,
-  .c-PJLV > .c-gPnNdI::after,
-  .c-bYNGXt > .c-gPnNdI::before,
-  .c-bYNGXt > .c-gPnNdI::after {
+  .c-dyvMgW > .c-bmSGqY::before,
+  .c-dyvMgW > .c-bmSGqY::after,
+  .c-jryFOR > .c-bmSGqY::before,
+  .c-jryFOR > .c-bmSGqY::after,
+  .c-PJLV > .c-bmSGqY::before,
+  .c-PJLV > .c-bmSGqY::after,
+  .c-bYNGXt > .c-bmSGqY::before,
+  .c-bYNGXt > .c-bmSGqY::after {
     content: none;
   }
 }
 
 @media  {
-  .c-gPnNdI-gvmVBy-size-md {
+  .c-bmSGqY-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::before {
+  .c-bmSGqY-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::after {
+  .c-bmSGqY-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -231,7 +231,7 @@ exports[`Link component renders an anchor 1`] = `
 
 <div>
   <a
-    class="c-gPnNdI c-gPnNdI-gvmVBy-size-md"
+    class="c-bmSGqY c-bmSGqY-gvmVBy-size-md"
     href="https://google.com/"
     rel="noopener noreferrer"
     target="_blank"
@@ -243,82 +243,82 @@ exports[`Link component renders an anchor 1`] = `
 
 exports[`Link component renders an large anchor 1`] = `
 @media  {
-  .c-gPnNdI {
+  .c-bmSGqY {
     background: unset;
     border: unset;
     padding: unset;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
     cursor: pointer;
     font-family: var(--fonts-body);
     text-decoration: none;
   }
 
-  .c-gPnNdI:focus,
-  .c-gPnNdI:hover {
-    color: var(--colors-primaryMid);
+  .c-bmSGqY:focus,
+  .c-bmSGqY:hover {
+    color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-gPnNdI:active {
-    color: var(--colors-primaryDark);
+  .c-bmSGqY:active {
+    color: var(--colors-primary1000);
   }
 
-  .c-gPnNdI[disabled] {
+  .c-bmSGqY[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-gPnNdI,
-  .c-jryFOR > .c-gPnNdI,
-  .c-PJLV > .c-gPnNdI,
-  .c-bYNGXt > .c-gPnNdI {
+  .c-dyvMgW > .c-bmSGqY,
+  .c-jryFOR > .c-bmSGqY,
+  .c-PJLV > .c-bmSGqY,
+  .c-bYNGXt > .c-bmSGqY {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-gPnNdI::before,
-  .c-dyvMgW > .c-gPnNdI::after,
-  .c-jryFOR > .c-gPnNdI::before,
-  .c-jryFOR > .c-gPnNdI::after,
-  .c-PJLV > .c-gPnNdI::before,
-  .c-PJLV > .c-gPnNdI::after,
-  .c-bYNGXt > .c-gPnNdI::before,
-  .c-bYNGXt > .c-gPnNdI::after {
+  .c-dyvMgW > .c-bmSGqY::before,
+  .c-dyvMgW > .c-bmSGqY::after,
+  .c-jryFOR > .c-bmSGqY::before,
+  .c-jryFOR > .c-bmSGqY::after,
+  .c-PJLV > .c-bmSGqY::before,
+  .c-PJLV > .c-bmSGqY::after,
+  .c-bYNGXt > .c-bmSGqY::before,
+  .c-bYNGXt > .c-bmSGqY::after {
     content: none;
   }
 }
 
 @media  {
-  .c-gPnNdI-gvmVBy-size-md {
+  .c-bmSGqY-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::before {
+  .c-bmSGqY-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-gvmVBy-size-md::after {
+  .c-bmSGqY-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg {
+  .c-bmSGqY-jvTRJO-size-lg {
     font-size: var(--fontSizes-lg);
     line-height: 1.52;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg::before {
+  .c-bmSGqY-jvTRJO-size-lg::before {
     content: '';
     margin-bottom: -0.3983em;
     display: table;
   }
 
-  .c-gPnNdI-jvTRJO-size-lg::after {
+  .c-bmSGqY-jvTRJO-size-lg::after {
     content: '';
     margin-top: -0.3983em;
     display: table;
@@ -327,7 +327,7 @@ exports[`Link component renders an large anchor 1`] = `
 
 <div>
   <a
-    class="c-gPnNdI c-gPnNdI-jvTRJO-size-lg"
+    class="c-bmSGqY c-bmSGqY-jvTRJO-size-lg"
     href="https://google.com/"
     rel="noopener noreferrer"
     target="_blank"

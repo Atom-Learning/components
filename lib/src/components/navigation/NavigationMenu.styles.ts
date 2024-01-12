@@ -22,7 +22,7 @@ export const navigationMenuBaseItemStyles = {
     color: '$textActive'
   },
   '&:focus-visible': {
-    boxShadow: 'inset 0 0 0 2px $colors$primary'
+    boxShadow: 'inset 0 0 0 2px $colors$primary800'
   },
   '&:disabled': {
     ...navigationMenuDisabledItemStyles

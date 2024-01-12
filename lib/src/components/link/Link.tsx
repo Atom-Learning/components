@@ -14,16 +14,16 @@ export const StyledLink = styled('a', {
   bg: 'unset',
   border: 'unset',
   p: 'unset',
-  color: '$primary',
+  color: '$primary800',
   cursor: 'pointer',
   fontFamily: '$body',
   textDecoration: 'none',
   '&:focus, &:hover': {
-    color: '$primaryMid',
+    color: '$primary900',
     textDecoration: 'underline'
   },
   '&:active': {
-    color: '$primaryDark'
+    color: '$primary1000'
   },
   '&[disabled]': {
     ...disabledStyle,

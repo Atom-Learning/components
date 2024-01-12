@@ -16,18 +16,18 @@ export const Day = styled('button', {
   },
   '&:active': {
     color: 'white',
-    bg: '$primary'
+    bg: '$primary800'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '2px'
   },
   variants: {
     isSelected: {
       true: {
-        bg: '$primary',
+        bg: '$primary800',
         color: 'white',
-        '&:hover': { bg: '$primary' }
+        '&:hover': { bg: '$primary800' }
       }
     },
     isToday: {

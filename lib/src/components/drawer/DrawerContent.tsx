@@ -98,7 +98,7 @@ export const DrawerContent: React.FC<
   return (
     <Portal>
       <DrawerOverlay />
-      <ColorScheme base="grey1" accent="blue1" asChild>
+      <ColorScheme base="grey1" accent="primary1" asChild>
         <StyledContent size="lg" position={position} {...rest} asChild>
           <Flex direction="column">{children}</Flex>
         </StyledContent>

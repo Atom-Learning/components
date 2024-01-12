@@ -1,45 +1,56 @@
 import { TcolorScheme } from '../../experiments/color-scheme'
 import { CSS } from '../../stitches'
+import {
+  GO_TO_NEXT_PAGE,
+  GO_TO_PREVIOUS_PAGE,
+  VIEW_ALL_POPOVER
+} from './pagination.constants'
 
-interface ILabels {
+export type PaginationItemsToRender = (
+  | number
+  | typeof VIEW_ALL_POPOVER
+  | typeof GO_TO_PREVIOUS_PAGE
+  | typeof GO_TO_NEXT_PAGE
+)[]
+
+interface Labels {
   popoverTriggerLabel?: string
   nextPageButtonLabel?: string
   previousPageButtonLabel?: string
 }
 
-interface IBasePagination {
+interface BasePaginationProps {
   pagesCount: number
   indicatedPages: number[]
   disabledPages: number[]
-  paginationItems: number[]
-  paginationAlignment: IPaginationAlignment
-  labels: ILabels
+  paginationItems: PaginationItemsToRender
+  labels: Labels
   onItemHover: (pageNumber: number) => void
 }
 
-export type IPaginationAlignment = 'start' | 'end'
-
 export type TVisibleElementsCount = 6 | 8
 
-export interface IPaginationItemProps {
+export interface PaginationPageProps {
   pageNumber: number
   css?: CSS
 }
-export interface IPaginationContext extends IBasePagination {
+export interface PaginationContextValue extends BasePaginationProps {
   currentPage: number
   goToPage: (pagenumber: number) => void
   goToPreviousPage: () => void
   goToNextPage: () => void
+  nextAvailablePage?: number
+  previousAvailablePage?: number
 }
 
-export type TPaginationProviderProps = Pick<IBasePagination, 'pagesCount'> &
-  Partial<IBasePagination> & {
+export type PaginationProviderProps = Pick<BasePaginationProps, 'pagesCount'> &
+  Partial<BasePaginationProps> & {
     selectedPage?: number
     onSelectedPageChange?: (pageNumber: number) => void
     visibleElementsCount?: TVisibleElementsCount
   }
 
-export interface IPaginationProps extends TPaginationProviderProps {
+export interface PaginationProps extends PaginationProviderProps {
   colorScheme?: TcolorScheme
   css?: CSS
 }

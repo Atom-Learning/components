@@ -12,7 +12,7 @@ exports[`SearchField component renders a field in error state - has no programma
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -29,17 +29,17 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -108,7 +108,7 @@ exports[`SearchField component renders a field in error state - has no programma
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -126,7 +126,7 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 20px;
   }
 
-  .c-cHbqOs-bXVTjQ-state-error {
+  .c-lfQsGQ-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
   }
 
@@ -221,7 +221,7 @@ exports[`SearchField component renders a field in error state - has no programma
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
-          class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-lfQsGQ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
           id="searchField"
           llabel="Search Field"
           name="searchField"
@@ -297,7 +297,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -314,17 +314,17 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -376,7 +376,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -441,7 +441,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
-          class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
           disabled=""
           id="searchField"
           name="searchField"
@@ -482,7 +482,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -499,17 +499,17 @@ exports[`SearchField component renders a field with a search input - has no prog
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -561,7 +561,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -626,7 +626,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <input
-          class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
           id="searchField"
           name="searchField"
           placeholder="Search Field"

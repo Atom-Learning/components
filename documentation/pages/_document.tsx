@@ -14,6 +14,10 @@ const Document = () => {
           rel="stylesheet"
         />
         <link
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap"
+          rel="stylesheet"
+        />
+        <link
           href="admin/config.yml"
           type="text/yaml"
           rel="cms-config-url"

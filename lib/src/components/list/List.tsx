@@ -37,7 +37,7 @@ export const StyledList = styled('ul', {
     theme: {
       primary: {
         [`& > ${StyledLi}`]: {
-          '&::marker': { color: '$primary' }
+          '&::marker': { color: '$primary800' }
         }
       }
     }

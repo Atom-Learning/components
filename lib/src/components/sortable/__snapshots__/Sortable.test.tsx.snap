@@ -66,18 +66,18 @@ exports[`Sortable component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-dQMrZR-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):hover,
-  .c-oUmPa-dQMrZR-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-dQMrZR-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -129,7 +129,7 @@ exports[`Sortable component renders 1`] = `
   >
     <button
       aria-label="drag handle"
-      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       disabled=""
       type="button"
     >
@@ -166,7 +166,7 @@ exports[`Sortable component renders 1`] = `
       aria-disabled="false"
       aria-label="drag handle"
       aria-roledescription="sortable"
-      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-dQMrZR-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
+      class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false"
       role="button"
       tabindex="0"
       type="button"

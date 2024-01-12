@@ -8,7 +8,7 @@ import { BannerSlim } from './'
 const BannerSlimImplementation: React.FC<
   React.ComponentProps<typeof BannerSlim>
 > = ({ children, ...props }) => (
-  <BannerSlim value="" {...props}>
+  <BannerSlim {...props}>
     <BannerSlim.Content>
       <BannerSlim.Image src="https://picsum.photos/400/400" alt="image" />
       <BannerSlim.Text>
@@ -48,7 +48,6 @@ describe(`BannerSlim component`, () => {
       <BannerSlimDismissibleImplementation
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
-        value="dismissible-sm-variant"
         onDismiss={onDismiss}
       />
     )
@@ -66,7 +65,6 @@ describe(`BannerSlim component`, () => {
         colorScheme={{ base: 'purple1' }}
         size="sm"
         emphasis="bold"
-        value="sm-variant"
       />
     )
     expect(container).toMatchSnapshot()
@@ -78,7 +76,6 @@ describe(`BannerSlim component`, () => {
         colorScheme={{ base: 'purple1' }}
         emphasis="bold"
         size="sm"
-        value="dismissible-sm-variant"
         onDismiss={jest.fn()}
       />
     )

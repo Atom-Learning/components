@@ -12,7 +12,7 @@ exports[`InputField component renders a field in error state 1`] = `
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -29,17 +29,17 @@ exports[`InputField component renders a field in error state 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -95,13 +95,13 @@ exports[`InputField component renders a field in error state 1`] = `
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-cHbqOs-bXVTjQ-state-error {
+  .c-lfQsGQ-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
   }
 
@@ -184,7 +184,7 @@ exports[`InputField component renders a field in error state 1`] = `
         </label>
       </div>
       <input
-        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-bXVTjQ-state-error"
+        class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-lfQsGQ-bXVTjQ-state-error"
         id="INPUT FIELD"
         name="INPUT FIELD"
         type="text"
@@ -241,7 +241,7 @@ exports[`InputField component renders a field with a number input 1`] = `
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -258,17 +258,17 @@ exports[`InputField component renders a field with a number input 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -297,7 +297,7 @@ exports[`InputField component renders a field with a number input 1`] = `
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -337,7 +337,7 @@ exports[`InputField component renders a field with a number input 1`] = `
         </label>
       </div>
       <input
-        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
+        class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md"
         id="INPUT FIELD"
         inputmode="numeric"
         name="INPUT FIELD"
@@ -362,7 +362,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     margin: 0;
   }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -379,17 +379,17 @@ exports[`InputField component renders a field with a text input 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -418,7 +418,7 @@ exports[`InputField component renders a field with a text input 1`] = `
     font-weight: 600;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -458,7 +458,7 @@ exports[`InputField component renders a field with a text input 1`] = `
         </label>
       </div>
       <input
-        class="c-cHbqOs c-cHbqOs-fwoCmE-size-md"
+        class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md"
         id="INPUT FIELD"
         name="INPUT FIELD"
         placeholder="INPUT FIELD"

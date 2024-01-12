@@ -15,12 +15,12 @@ const StyledTableHeader = styled('thead', {
     theme: {
       [TABLE_HEADER_THEMES.PRIMARY]: {
         [`${TableHeaderCell}`]: {
-          bg: '$primary'
+          bg: '$primary800'
         }
       },
       [TABLE_HEADER_THEMES.PRIMARY_DARK]: {
         [`${TableHeaderCell}`]: {
-          bg: '$primaryDark'
+          bg: '$primary1000'
         }
       },
       [TABLE_HEADER_THEMES.LIGHT]: {

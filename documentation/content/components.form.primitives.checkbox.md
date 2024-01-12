@@ -10,7 +10,7 @@ tabs:
       **Related components**
 
 
-      [Checkbox field](https://atomlearning.design/components/form/fields/checkbox-field)
+      [Checkbox field](/components/checkbox-field)
 
 
       <br/>

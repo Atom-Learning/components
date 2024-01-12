@@ -26,7 +26,7 @@ export const itemStyles = {
     }
   },
   '&:focus': {
-    color: '$primaryMid',
+    color: '$primary900',
     outline: 'none'
   },
   '&:hover': { textDecoration: 'underline' }

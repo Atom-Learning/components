@@ -29,7 +29,7 @@ export const StyledComboboxInput = styled(BaseComboboxInput, {
     opacity: 1
   },
   '&:focus-within': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&[disabled]': {

@@ -24,7 +24,7 @@ const StyledBadge = styled(Flex, {
   minWidth: '$2',
   textAlign: 'center',
   color: '#fff',
-  bg: '$primary'
+  bg: '$primary800'
 })
 
 type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {

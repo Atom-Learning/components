@@ -34,7 +34,7 @@ export const Tile = React.forwardRef<HTMLDivElement, TTileProps>(
     <ColorScheme
       asChild
       base="grey1"
-      accent="blue2"
+      accent="primary2"
       interactive="loContrast"
       {...colorScheme}
     >

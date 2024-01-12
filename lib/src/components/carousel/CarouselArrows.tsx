@@ -12,7 +12,7 @@ const buttonStyles = {
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
-  color: '$primary',
+  color: '$primary800',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
@@ -22,10 +22,10 @@ const buttonStyles = {
   transform: 'translateY(-50%)',
   transition: 'color 0.15s ease-in-out',
   '&:hover': {
-    color: '$primaryMid'
+    color: '$primary900'
   },
   '&:active': {
-    color: '$primaryDark'
+    color: '$primary1000'
   },
   '&:disabled': {
     color: '$tonal100'

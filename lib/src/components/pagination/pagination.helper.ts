@@ -1,87 +1,92 @@
-import { VisibleElementsAmount } from './pagination.constants'
-import { IPaginationAlignment } from './types'
+import {
+  GO_TO_NEXT_PAGE,
+  GO_TO_PREVIOUS_PAGE,
+  VIEW_ALL_POPOVER
+} from './pagination.constants'
+import { PaginationItemsToRender } from './types'
 
-/**
- * Return the maximum number of pagination items required, dependent
- * on the total visible elements.
- *
- * Excludes the 1st and last page as they are rendered separately.
- *
- * So if `visibleElementsCount` is `MORE` (`8`), when we exclude the following 4 buttons,
- * previous, next, popup, and _either_ 1st/last page items, we'll get `4` remaining to render.
- */
-const getPaginationItemsLimit = (visibleElementsCount: VisibleElementsAmount) =>
-  visibleElementsCount === VisibleElementsAmount.MORE ? 4 : 2
-
-export const getPaginationAlignment = (
+export const getPaginationElementsToRender = (
   currentPage: number,
   pagesCount: number,
-  visibleElementsCount: VisibleElementsAmount
-): IPaginationAlignment =>
-  currentPage > pagesCount - getPaginationItemsLimit(visibleElementsCount)
-    ? 'start'
-    : 'end'
-
-export const getPaginationItemsToRender = (
-  currentPage: number,
-  pagesCount: number,
-  visibleElementsCount = VisibleElementsAmount.LESS
-): number[] => {
-  const paginationItemsLimit = getPaginationItemsLimit(visibleElementsCount)
-  const paginationItems = Array.from(
+  visibleElementsCount: number
+): PaginationItemsToRender => {
+  const paginationPages = Array.from(
     { length: pagesCount },
     (_, index) => index + 1
   )
 
+  /*
+   * As we always show the `<` `>` arrows,
+   * subtract 2 from `visibleElementsCount` (one for each of the GO_TO_PREVIOUS/NEXT_PAGE arrows)
+   * to get the `visiblePagesCount`
+   */
+  let visiblePagesCount = visibleElementsCount - 2
+  const withPreviousNextPageArrows = (paginationPages) => [
+    GO_TO_PREVIOUS_PAGE,
+    ...paginationPages,
+    GO_TO_NEXT_PAGE
+  ]
+
   /**
-   * If there are fewer pages than our threshold for truncating,
-   * render the entire page list.
+   * If fewer pages than threshold for truncating render them all.
    *
-   * We need to remove `2` from `visibleElementsCount` to account
-   * for the previous & next buttons
-   *
-   *  pagesCount: 4
-   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
-   *  returns [1, 2, 3, 4]
+   * pagesCount: 6
+   * visibleElementsCount: >=6
+   * returns [GO_TO_PREVIOUS_PAGE, 1, 2, 3, 4, GO_TO_NEXT_PAGE]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | > |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *
-   *  pagesCount: 6
-   *  visibleElementsCount:8 // VisibleElementsAmount.MORE
-   *  returns [1, 2, 3, 4, 5, 6]
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
-   *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | 5 |  | 6 |  | > |
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  if (pagesCount <= visibleElementsCount - 2) {
-    return paginationItems
+  if (pagesCount <= visiblePagesCount) {
+    return withPreviousNextPageArrows(paginationPages)
   }
+
+  /**
+   * If current page is either at the very start or at the very end of the pages
+   */
+  const canFitEdgePage = visibleElementsCount >= 5
+  const canFitViewAllPopover = visibleElementsCount >= 4
+  const canFitPages = visibleElementsCount >= 3
+
+  if (canFitViewAllPopover) {
+    // Subtract one from visiblePagesCount to accomodate for us adding the `[…]` VIEW_ALL_POPOVER
+    visiblePagesCount -= 1
+  }
+
+  if (canFitEdgePage) {
+    // Subtract one more from visiblePagesCount to accomodate for us adding the GO_TO_PREVIOUS/NEXT_PAGE arrows
+    visiblePagesCount -= 1
+  }
+
+  const firstPage = paginationPages[0]
+  const lastPage = paginationPages[paginationPages.length - 1]
 
   /**
    * If we're truncating and current page is at the start of the page list,
    * render the initial truncated page list, e.g.
    *
+   *  pagesCount: 8
    *  currentPage: 1/2
-   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
-   *  returns [1, 2]
+   *  visibleElementsCount: 6
+   *  returns [GO_TO_PREVIOUS_PAGE, 1, 2, VIEW_ALL_POPOVER, 6, GO_TO_NEXT_PAGE]
    *  +---+  +---+  +---+  +---+  +---+  +---+
-   *  | < |  | 1 |  | 2 |  | … |  | 6 |  | > |
+   *  | < |  | 1 |  | 2 |  | … |  | 8 |  | > |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *
-   *  currentPage: 1/2/3
-   *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
-   *  returns [1, 2, 3, 4]
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
-   *  | < |  | 1 |  | 2 |  | 3 |  | 4 |  | … |  | 10 |  | > |
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
    */
-  if (
-    visibleElementsCount === VisibleElementsAmount.MORE
-      ? [1, 2, 3].includes(currentPage)
-      : [1, 2].includes(currentPage)
-  ) {
-    return paginationItems.slice(0, paginationItemsLimit)
+  if (currentPage < visiblePagesCount) {
+    const newPaginationItems = [] as PaginationItemsToRender
+    if (canFitPages) {
+      newPaginationItems.push(...paginationPages.slice(0, visiblePagesCount))
+    }
+    if (canFitViewAllPopover) {
+      newPaginationItems.push(VIEW_ALL_POPOVER)
+    }
+    if (canFitEdgePage) {
+      newPaginationItems.push(lastPage)
+    }
+    return withPreviousNextPageArrows(newPaginationItems)
   }
 
   /**
@@ -89,57 +94,87 @@ export const getPaginationItemsToRender = (
    * page list (depending on visibleElementsCount),
    * render a truncated page list from the end, e.g.
    *
-   *  currentPage: 7
-   *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
-   *  returns [7, 8]
+   *  pagesCount: 8
+   *  currentPage: 7/8
+   *  visibleElementsCount: 6
+   *  returns [GO_TO_PREVIOUS_PAGE, 1, VIEW_ALL_POPOVER, 7, 8, GO_TO_NEXT_PAGE]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | < |  | 1 |  | … |  | 7 |  | 8 |  | > |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *
-   *  currentPage: 7
-   *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
-   *  returns [7, 8, 9, 10]
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
-   *  | < |  | 1 |  | … |  | 7 |  | 8 |  | 9 |  | 10 |  | > |
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
    */
-  if (currentPage > pagesCount - paginationItemsLimit) {
-    return paginationItems.slice(-paginationItemsLimit)
+  if (currentPage > pagesCount - visiblePagesCount) {
+    const newPaginationItems = [] as PaginationItemsToRender
+    if (canFitEdgePage) {
+      newPaginationItems.push(firstPage)
+    }
+    if (canFitViewAllPopover) {
+      newPaginationItems.push(VIEW_ALL_POPOVER)
+    }
+    if (canFitPages) {
+      newPaginationItems.push(
+        ...paginationPages.slice(pagesCount - visiblePagesCount, pagesCount)
+      )
+    }
+    return withPreviousNextPageArrows(newPaginationItems)
   }
 
   /**
-   * If we're truncating and the current page doesn't meet either previous condition
+   * If we're truncating and the current page doesn't meet any of the previous conditions
    * (we're in the middle)
    * render a truncated page list from a specific index relative to `currentPage`, e.g.
    *
    *  currentPage: 4
    *  visibleElementsCount: 6 // VisibleElementsAmount.LESS
-   *  returns [3, 4]
+   *  returns [GO_TO_PREVIOUS_PAGE, 3, 4, VIEW_ALL_POPOVER, 6, GO_TO_NEXT_PAGE]
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *  | < |  | 3 |  | 4 |  | … |  | 6 |  | > |
    *  +---+  +---+  +---+  +---+  +---+  +---+
    *
    *  currentPage: 6
    *  visibleElementsCount: 8 // VisibleElementsAmount.MORE
-   *  returns [4, 5, 6, 7]
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
-   *  | < |  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 |  | > |
-   *  +---+  +---+  +---+  +---+  +---+  +---+  +----+  +---+
+   *  returns [GO_TO_PREVIOUS_PAGE, 4, 5, 6, 7, VIEW_ALL_POPOVER, 10, GO_TO_NEXT_PAGE]
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
+   *  | < |  | 4 |  | 5 |  | 6 |  | 7 |  | … |  | 10 | | > |
+   *  +---+  +---+  +---+  +---+  +---+  +---+  +---+  +---+
    */
-  return paginationItems.slice(
-    visibleElementsCount === VisibleElementsAmount.MORE
-      ? currentPage - 3
-      : currentPage - 2,
-    visibleElementsCount === VisibleElementsAmount.MORE
-      ? currentPage + 1
-      : currentPage
-  )
+  const canFitCurrentPage = canFitPages
+  const canFitCurrentPageAndPreviousPage = visibleElementsCount >= 6
+  const canFitCurrentPageAndPreviousPageAndNextPage = visibleElementsCount >= 7
+  const canFitLastPage = canFitEdgePage
+
+  const newPaginationItems = [] as PaginationItemsToRender
+  if (canFitCurrentPageAndPreviousPageAndNextPage) {
+    newPaginationItems.push(
+      ...paginationPages.slice(
+        currentPage + 1 - visiblePagesCount,
+        currentPage + 1
+      )
+    )
+  } else if (canFitCurrentPageAndPreviousPage) {
+    newPaginationItems.push(
+      ...paginationPages.slice(currentPage - visiblePagesCount, currentPage)
+    )
+  } else if (canFitCurrentPage) {
+    newPaginationItems.push(
+      ...paginationPages.slice(currentPage - 1, currentPage - 1 + 1)
+    )
+  }
+  if (canFitViewAllPopover) {
+    newPaginationItems.push(VIEW_ALL_POPOVER)
+  }
+  if (canFitLastPage) {
+    newPaginationItems.push(lastPage)
+  }
+  return withPreviousNextPageArrows(newPaginationItems)
 }
 
 export const findNextAvailablePage = (
   startPage: number,
-  disabledPages: number[]
-): number => {
+  disabledPages: number[],
+  pagesCount: number
+): number | undefined => {
+  if (startPage > pagesCount) return
   let nextPage = startPage
   while (disabledPages.includes(nextPage)) {
     nextPage++
@@ -150,7 +185,8 @@ export const findNextAvailablePage = (
 export const findPreviousAvailablePage = (
   startPage: number,
   disabledPages: number[]
-): number => {
+): number | undefined => {
+  if (startPage < 1) return
   let previousPage = startPage
   while (disabledPages.includes(previousPage)) {
     previousPage--

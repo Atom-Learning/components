@@ -120,7 +120,7 @@ exports[`NumberInput component renders lg size 1`] = `
     }
 }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -137,17 +137,17 @@ exports[`NumberInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -181,13 +181,13 @@ exports[`NumberInput component renders lg size 1`] = `
     max-width: 250px;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-cHbqOs-jAZHIx-size-lg {
+  .c-lfQsGQ-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -195,19 +195,19 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-oUmPa-hMqgPB-cv {
+  .c-oUmPa-fboUUB-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
-  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-fboUUB-cv:not(:disabled):hover,
+  .c-oUmPa-fboUUB-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-fboUUB-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -218,12 +218,12 @@ exports[`NumberInput component renders lg size 1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-cHbqOs-ibwGleD-css {
+  .c-lfQsGQ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-cHbqOs-ibwGleD-css:disabled {
+  .c-lfQsGQ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -246,7 +246,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -268,7 +268,7 @@ exports[`NumberInput component renders lg size 1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-cHbqOs c-cHbqOs-jAZHIx-size-lg c-cHbqOs-ibwGleD-css"
+      class="c-lfQsGQ c-lfQsGQ-jAZHIx-size-lg c-lfQsGQ-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -283,7 +283,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="increment"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >
@@ -423,7 +423,7 @@ exports[`NumberInput component renders number input  1`] = `
     }
 }
 
-  .c-cHbqOs {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -440,17 +440,17 @@ exports[`NumberInput component renders number input  1`] = `
     width: 100%;
   }
 
-  .c-cHbqOs:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-cHbqOs[disabled] {
+  .c-lfQsGQ[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHbqOs::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -472,7 +472,7 @@ exports[`NumberInput component renders number input  1`] = `
     max-width: 250px;
   }
 
-  .c-cHbqOs-fwoCmE-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -480,19 +480,19 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
-  .c-oUmPa-hMqgPB-cv {
+  .c-oUmPa-fboUUB-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):hover,
-  .c-oUmPa-hMqgPB-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-fboUUB-cv:not(:disabled):hover,
+  .c-oUmPa-fboUUB-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-oUmPa-hMqgPB-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-fboUUB-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -503,12 +503,12 @@ exports[`NumberInput component renders number input  1`] = `
     border-bottom-right-radius: 0px;
   }
 
-  .c-cHbqOs-ibwGleD-css {
+  .c-lfQsGQ-ibwGleD-css {
     border-radius: 0px;
     width: var(--sizes-6);
   }
 
-  .c-cHbqOs-ibwGleD-css:disabled {
+  .c-lfQsGQ-ibwGleD-css:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -531,7 +531,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -553,7 +553,7 @@ exports[`NumberInput component renders number input  1`] = `
       aria-valuemax="9007199254740991"
       aria-valuemin="0"
       aria-valuenow="0"
-      class="c-cHbqOs c-cHbqOs-fwoCmE-size-md c-cHbqOs-ibwGleD-css"
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-lfQsGQ-ibwGleD-css"
       inputmode="numeric"
       name="test"
       pattern="[0-9]*"
@@ -568,7 +568,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="increment"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-hMqgPB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >

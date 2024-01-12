@@ -6,10 +6,10 @@ import { createTheme } from '~/stitches'
 
 const info = createTheme({
   colors: {
-    textSubtle: '$blue900',
-    backgroundSubtle: '$blue100',
+    textSubtle: '$infoMid',
+    backgroundSubtle: '$infoLight',
     textBold: '#FFF',
-    backgroundBold: '$blue800'
+    backgroundBold: '$info'
   }
 })
 

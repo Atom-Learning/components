@@ -11,7 +11,7 @@ const StyledIcon = styled(Icon, {
   alignSelf: 'flex-start',
   variants: {
     theme: {
-      info: { color: '$blue800' },
+      info: { color: '$info' },
       warning: { color: '$warningMid' },
       danger: { color: '$danger', transform: 'rotate(180deg)' },
       success: { color: '$success' }
