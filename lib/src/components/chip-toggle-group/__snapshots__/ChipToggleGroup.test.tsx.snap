@@ -91,6 +91,10 @@ exports[`ChipToggleGroup component renders 1`] = `
     flex-direction: row;
   }
 
+  .c-dhzjXW-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
   .c-dhzjXW-kaVYFn-gap-2 {
     gap: var(--space-2);
   }
@@ -122,7 +126,7 @@ exports[`ChipToggleGroup component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-kaVYFn-gap-2"
+    class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-kaVYFn-gap-2"
     data-orientation="horizontal"
     dir="ltr"
     role="group"

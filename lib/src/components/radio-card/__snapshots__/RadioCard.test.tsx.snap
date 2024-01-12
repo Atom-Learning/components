@@ -56,6 +56,10 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     flex-direction: row;
   }
 
+  .c-dhzjXW-XefLA-wrap-wrap {
+    flex-wrap: wrap;
+  }
+
   .c-dhzjXW-dvnNgW-gap-3 {
     gap: var(--space-3);
   }
@@ -89,7 +93,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     tabindex="0"
   >
     <div
-      class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-dvnNgW-gap-3"
+      class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-dvnNgW-gap-3"
     >
       <button
         aria-checked="false"
