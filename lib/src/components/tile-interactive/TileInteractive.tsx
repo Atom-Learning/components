@@ -23,7 +23,8 @@ const StyledTileInteractive = styled.withConfig({
       boxShadow: '$2',
       opacity: 0,
       transition: 'opacity 250ms ease-out',
-      borderRadius: 'inherit'
+      borderRadius: 'inherit',
+      pointerEvents: 'none'
     },
     '&:hover': {
       transform: 'translateY(-$space$0)',

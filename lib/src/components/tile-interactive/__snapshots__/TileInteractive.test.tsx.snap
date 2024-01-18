@@ -308,18 +308,18 @@ exports[`TileInteractive component renders 1`] = `
     border-color: transparent;
   }
 
-  .c-bZdTZj[data-disabled] {
+  .c-iOZDKn[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-bZdTZj:not([data-disabled]) {
+  .c-iOZDKn:not([data-disabled]) {
     cursor: pointer;
     transform: translateY(0);
     transition: transform 250ms ease;
   }
 
-  .c-bZdTZj:not([data-disabled])::after {
+  .c-iOZDKn:not([data-disabled])::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -327,21 +327,22 @@ exports[`TileInteractive component renders 1`] = `
     opacity: 0;
     transition: opacity 250ms ease-out;
     border-radius: inherit;
+    pointer-events: none;
   }
 
-  .c-bZdTZj:not([data-disabled]):hover {
+  .c-iOZDKn:not([data-disabled]):hover {
     transform: translateY(calc(var(--space-0)*-1));
   }
 
-  .c-bZdTZj:not([data-disabled]):hover::after {
+  .c-iOZDKn:not([data-disabled]):hover::after {
     opacity: 1;
   }
 
-  .c-bZdTZj:not([data-disabled]):active {
+  .c-iOZDKn:not([data-disabled]):active {
     background: var(--colors-base2);
   }
 
-  .c-bZdTZj:not([data-disabled]):focus-visible {
+  .c-iOZDKn:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
@@ -350,7 +351,7 @@ exports[`TileInteractive component renders 1`] = `
 }
 
 @media  {
-  .c-bZdTZj-iMShsb-css {
+  .c-iOZDKn-iMShsb-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -359,7 +360,7 @@ exports[`TileInteractive component renders 1`] = `
 
 <div>
   <button
-    class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZdTZj c-bZdTZj-iMShsb-css"
+    class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-iOZDKn c-iOZDKn-iMShsb-css"
     type="button"
   >
     A
