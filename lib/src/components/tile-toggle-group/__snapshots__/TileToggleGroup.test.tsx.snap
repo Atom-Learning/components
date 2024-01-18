@@ -316,18 +316,18 @@ exports[`TileToggleGroup component renders 1`] = `
     border-color: transparent;
   }
 
-  .c-bZTcGT[data-disabled] {
+  .c-bSALsD[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-bZTcGT:not([data-disabled]) {
+  .c-bSALsD:not([data-disabled]) {
     cursor: pointer;
     transform: translateY(0);
     transition: transform 250ms ease;
   }
 
-  .c-bZTcGT:not([data-disabled])::after {
+  .c-bSALsD:not([data-disabled])::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -335,21 +335,22 @@ exports[`TileToggleGroup component renders 1`] = `
     opacity: 0;
     transition: opacity 250ms ease-out;
     border-radius: inherit;
+    pointer-events: none;
   }
 
-  .c-bZTcGT:not([data-disabled]):hover {
+  .c-bSALsD:not([data-disabled]):hover {
     transform: translateY(calc(var(--space-0)*-1));
   }
 
-  .c-bZTcGT:not([data-disabled]):hover::after {
+  .c-bSALsD:not([data-disabled]):hover::after {
     opacity: 1;
   }
 
-  .c-bZTcGT:not([data-disabled]):active {
+  .c-bSALsD:not([data-disabled]):active {
     background: var(--colors-base2);
   }
 
-  .c-bZTcGT:not([data-disabled]):focus-visible {
+  .c-bSALsD:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
@@ -413,7 +414,7 @@ exports[`TileToggleGroup component renders 1`] = `
   >
     <button
       aria-pressed="true"
-      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZTcGT c-SVNbK"
+      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bSALsD c-SVNbK"
       data-radix-collection-item=""
       data-state="on"
       tabindex="-1"
@@ -423,7 +424,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="true"
-      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZTcGT c-SVNbK"
+      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bSALsD c-SVNbK"
       data-disabled=""
       data-radix-collection-item=""
       data-state="on"
@@ -435,7 +436,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZTcGT c-SVNbK"
+      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bSALsD c-SVNbK"
       data-radix-collection-item=""
       data-state="off"
       tabindex="-1"
@@ -445,7 +446,7 @@ exports[`TileToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bZTcGT c-SVNbK"
+      class="c-htDHry t-dVJiaJ t-bFCOZb t-dmfxVJ c-bSALsD c-SVNbK"
       data-disabled=""
       data-radix-collection-item=""
       data-state="off"
