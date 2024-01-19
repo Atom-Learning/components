@@ -6,49 +6,49 @@ exports[`ToggleGroup renders 1`] = `
     display: flex;
   }
 
-  .c-fdTLEV {
+  .c-kpcTGN {
     background: white;
     color: var(--colors-tonal400);
     border: 1px solid var(--colors-tonal200);
     cursor: pointer;
   }
 
-  .c-fdTLEV::before {
+  .c-kpcTGN::before {
     background: var(--colors-tonal200);
   }
 
-  .c-fdTLEV:not([disabled]):hover::before,
-  .c-fdTLEV:not([disabled]):focus-visible::before,
-  .c-fdTLEV:not([disabled])[data-state="on"]::before {
+  .c-kpcTGN:not([disabled]):hover::before,
+  .c-kpcTGN:not([disabled]):focus-visible::before,
+  .c-kpcTGN:not([disabled])[data-state="on"]::before {
     background: none;
   }
 
-  .c-fdTLEV:not([disabled]):hover {
+  .c-kpcTGN:not([disabled]):hover {
     border-color: currentColor !important;
     color: var(--colors-primary900);
   }
 
-  .c-fdTLEV:not([disabled]):focus-visible {
+  .c-kpcTGN:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fdTLEV:not([disabled]):focus-visible[data-state="off"] {
+  .c-kpcTGN:not([disabled]):focus-visible[data-state="off"] {
     border-color: var(--colors-tonal200) !important;
   }
 
-  .c-fdTLEV:not([disabled]):focus-visible[data-state="on"] {
-    box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+  .c-kpcTGN:not([disabled]):focus-visible[data-state="on"] {
+    box-shadow: inset currentColor 0px 0px 0px 1px, white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fdTLEV[disabled] {
+  .c-kpcTGN[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fdTLEV[data-state="on"] {
+  .c-kpcTGN[data-state="on"] {
     color: var(--colors-primary800);
     border-color: currentColor !important;
     box-shadow: inset currentColor 0px 0px 0px 1px;
@@ -110,14 +110,14 @@ exports[`ToggleGroup renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-flWDnm-SpZMc-hasGap-true .c-fdTLEV {
+  .c-flWDnm-TsEJk-hasGap-true .c-kpcTGN {
     border-radius: var(--radii-0);
   }
 }
 
 <div>
   <div
-    class="c-flWDnm c-flWDnm-SpZMc-hasGap-true"
+    class="c-flWDnm c-flWDnm-TsEJk-hasGap-true"
     data-orientation="vertical"
     dir="ltr"
     role="group"
@@ -129,7 +129,7 @@ exports[`ToggleGroup renders 1`] = `
     >
       <button
         aria-pressed="true"
-        class="c-fdTLEV"
+        class="c-kpcTGN"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -142,7 +142,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="true"
-        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-kpcTGN c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-disabled=""
         data-orientation="vertical"
         data-radix-collection-item=""
@@ -163,7 +163,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-kpcTGN c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"
@@ -174,7 +174,7 @@ exports[`ToggleGroup renders 1`] = `
       </button>
       <button
         aria-pressed="false"
-        class="c-fdTLEV c-cepAPw c-cepAPw-fKibdn-size-sm"
+        class="c-kpcTGN c-cepAPw c-cepAPw-fKibdn-size-sm"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="off"

@@ -315,7 +315,7 @@ exports[`Tabs component renders 1`] = `
     background: var(--colors-interactive1);
   }
 
-  .c-fxTTrv {
+  .c-cDgrSH {
     background: none;
     border: none;
     cursor: pointer;
@@ -327,37 +327,37 @@ exports[`Tabs component renders 1`] = `
     position: relative;
   }
 
-  .c-fxTTrv[data-state="active"] {
+  .c-cDgrSH[data-state="active"] {
     color: var(--colors-interactive1);
     font-weight: 600;
     letter-spacing: -0.005em;
     border-color: currentColor;
   }
 
-  .c-fxTTrv[data-disabled] {
+  .c-cDgrSH[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fxTTrv:not([data-disabled]):hover,
-  .c-fxTTrv:not([data-disabled]):focus-visible {
+  .c-cDgrSH:not([data-disabled]):hover,
+  .c-cDgrSH:not([data-disabled]):focus-visible {
     color: var(--colors-interactive2);
   }
 
-  .c-fxTTrv:not([data-disabled]):hover .c-iPskiL,
-  .c-fxTTrv:not([data-disabled]):focus-visible .c-iPskiL {
+  .c-cDgrSH:not([data-disabled]):hover .c-iPskiL,
+  .c-cDgrSH:not([data-disabled]):focus-visible .c-iPskiL {
     opacity: 0.07;
   }
 
-  .c-fxTTrv:not([data-disabled]):active {
+  .c-cDgrSH:not([data-disabled]):active {
     color: var(--colors-interactive3);
   }
 
-  .c-fxTTrv:not([data-disabled]):focus-visible {
+  .c-cDgrSH:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
   .c-gZZKZD {
@@ -430,7 +430,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab1"
           aria-selected="true"
-          class="c-fxTTrv"
+          class="c-cDgrSH"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -451,7 +451,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab2"
           aria-selected="false"
-          class="c-fxTTrv"
+          class="c-cDgrSH"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
@@ -472,7 +472,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab3"
           aria-selected="false"
-          class="c-fxTTrv"
+          class="c-cDgrSH"
           data-disabled=""
           data-orientation="horizontal"
           data-radix-collection-item=""

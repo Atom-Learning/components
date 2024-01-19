@@ -53,35 +53,35 @@ exports[`ChipToggleGroup component renders 1`] = `
     margin-right: var(--space-1);
   }
 
-  .c-bJgJhs:not([disabled]) {
+  .c-bxUhlk:not([disabled]) {
     cursor: pointer;
   }
 
-  .c-bJgJhs:not([disabled]):hover {
+  .c-bxUhlk:not([disabled]):hover {
     background: var(--colors-tonal100);
     color: var(--colors-tonal600);
     border-color: currentColor;
   }
 
-  .c-bJgJhs:not([disabled]):focus-visible {
+  .c-bxUhlk:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-bJgJhs:not([disabled])[data-state="on"]:hover {
+  .c-bxUhlk:not([disabled])[data-state="on"]:hover {
     background: var(--colors-white);
     color: var(--colors-primary1000);
   }
 
-  .c-bJgJhs[data-state="off"] {
+  .c-bxUhlk[data-state="off"] {
     color: var(--colors-tonal400);
     background: var(--colors-tonal50);
     border-color: var(--colors-tonal200);
   }
 
-  .c-bJgJhs[data-state="on"] .c-kBYYkb {
+  .c-bxUhlk[data-state="on"] .c-kBYYkb {
     display: block;
   }
 }
@@ -135,7 +135,7 @@ exports[`ChipToggleGroup component renders 1`] = `
   >
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bxUhlk"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="on"
@@ -160,7 +160,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bxUhlk"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""
@@ -187,7 +187,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bxUhlk"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="off"
@@ -212,7 +212,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bJgJhs"
+      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-bxUhlk"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""
