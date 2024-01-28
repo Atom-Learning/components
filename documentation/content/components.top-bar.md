@@ -25,11 +25,11 @@ tabs:
           <TopBar.BrandName>Admin Panel</TopBar.BrandName>
         </TopBar.Brand>
         <Flex css={{ flex: 1, justifySelf: 'stretch', alignSelf: 'stretch' }} />
-        <Stack gap="2" direction="row">
+        <Flex gap="2">
           <TopBar.ActionIcon icon={Search} label="Search" />
           <TopBar.Divider />
           <TopBar.ActionIcon icon={SwitchOff} label="Light/Dark mode" />
-        </Stack>
+        </Flex>
       </TopBar>`} language={"tsx"} />
 
 

@@ -288,11 +288,7 @@ tabs:
       description\":\"A flexible flex spacer that expands along the major axis
       of its containing flex
       layout.\",\"link\":{\"href\":\"/components/spacer\"},\"tags\":[\"Layout/S\
-      tructure\"]},{\"description\":\"Stack is a layout component that provides
-      an abstraction over the flexbox gap
-      property\",\"heading\":\"Stack\",\"image\":\"/assets/images/stack.svg\",\
-      \"link\":{\"href\":\"/components/stack\"},\"tags\":[\"Layout/Structure\"]\
-      },{\"image\":\"/assets/images/stack-content.svg\",\"heading\":\"Stack
+      tructure\"]},{\"image\":\"/assets/images/stack-content.svg\",\"heading\":\"Stack
       content\",\"description\":\"A layout component to provide internal spacing
       between content
       components.\",\"link\":{\"href\":\"/components/stack-content\"},\"tags\":[\

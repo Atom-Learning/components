@@ -24,13 +24,13 @@ tabs:
       These are the available `themes` for this component: `Primary` (default), `Success`, `Warning`, `Danger`
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3} css={{width: '100%'}}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap={3} direction="column" css={{ width: 325 }}>
         <ProgressBar value={10} />
         <ProgressBar theme="info" value={20} aria-label="Completion rate" />
         <ProgressBar theme="success" value={30} aria-label="Completion rate" />
         <ProgressBar theme="warning" value={40} aria-label="Completion rate" />
         <ProgressBar theme="danger" value={50} aria-label="Completion rate" />
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Appearance
@@ -39,13 +39,13 @@ tabs:
       There two options for the `appearance` property: `solid` and `outline(default)`. These are the available `outline` variations for all the `themes`.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3} css={{width: '100%'}}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap={3} direction="column" css={{ width: 325 }}>
         <ProgressBar appearance="solid" value={10} aria-label="Completion rate" />
         <ProgressBar appearance="info" theme="info" value={20} aria-label="Completion rate" />
         <ProgressBar appearance="solid" theme="success" value={30} aria-label="Completion rate" />
         <ProgressBar appearance="solid" theme="warning" value={40} aria-label="Completion rate" />
         <ProgressBar appearance="solid" theme="danger" value={50} aria-label="Completion rate" />
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## API Reference

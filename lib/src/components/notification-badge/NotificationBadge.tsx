@@ -27,7 +27,7 @@ const StyledBadge = styled(Flex, {
   bg: '$primary800'
 })
 
-type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {
+type NotificationBadgeProps = {
   value: number | string
 }
 

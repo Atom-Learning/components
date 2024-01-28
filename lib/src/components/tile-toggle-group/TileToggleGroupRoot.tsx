@@ -23,7 +23,8 @@ export const TileToggleGroupRoot = React.forwardRef<
       ref={ref}
       as={ToggleGroup.Root}
       direction={direction}
-      align={false}
+      gap="2"
+      wrap="wrap"
       {...props}
     />
   )
