@@ -4,7 +4,7 @@ import React from 'react'
 import { styled } from '~/stitches'
 
 import { Dismissible } from '../dismissible'
-import { Stack } from '../stack'
+import { Flex } from '../flex'
 import {
   SectionMessageProvider,
   useSectionMessageContext
@@ -61,11 +61,6 @@ const StyledSectionMessage = styled(Dismissible, {
   }
 })
 
-const StyledStack = styled(Stack, {
-  flexGrow: 1,
-  justifyContent: 'space-between !important'
-})
-
 const SectionMessageRoot = ({
   children,
   ...rest
@@ -79,7 +74,9 @@ const SectionMessageRoot = ({
       hasIcon={hasIcon}
       hasDismiss={hasDismiss}
     >
-      <StyledStack gap={3}>{children}</StyledStack>
+      <Flex gap={3} justify="space-between" css={{ flexGrow: 1 }}>
+        {children}
+      </Flex>
     </StyledSectionMessage>
   )
 }

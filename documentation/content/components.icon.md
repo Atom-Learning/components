@@ -12,14 +12,14 @@ tabs:
       passed into the `is` prop.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <Icon is={BatteryMedium} />
         <Icon is={Crossing} />
         <Icon is={EyeCrossed} />
         <Icon is={Paperclip} />
         <Icon is={Sun} />
         <Icon is={Wheelchair} />
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       Ensure that you pair the imported icon (in this case `Brightness`) with the `Icon` component to render in a consistent and reliable way. Review the available icons on the [icon listing page](https://design.atomlearning.technology/theme/icons)

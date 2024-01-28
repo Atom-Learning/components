@@ -12,7 +12,7 @@ tabs:
       the initial of the name or a placeholder icon can be used.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <Avatar name="Alice Smith">
           <Avatar.Image
             alt="Alice Smith's avatar"
@@ -25,7 +25,7 @@ tabs:
         <Avatar>
           <Avatar.Placeholder />
         </Avatar>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## Fallback behaviour
@@ -42,7 +42,7 @@ tabs:
       When the name is also missing it will fallback to the placeholder icon.
 
 
-      <CodeBlock live={true} preview={true} code={`<Stack gap={3}>
+      <CodeBlock live={true} preview={true} code={`<Flex gap="3">
         <Avatar name="">
           <Avatar.Image alt="Alice Smith's avatar" src="" />
         </Avatar>
@@ -50,7 +50,7 @@ tabs:
         <Avatar name="">
           <Avatar.Initial />
         </Avatar>
-      </Stack>`} language={"tsx"} />
+      </Flex>`} language={"tsx"} />
 
 
       ## onClick
