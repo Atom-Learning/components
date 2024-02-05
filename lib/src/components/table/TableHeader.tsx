@@ -10,7 +10,7 @@ export const TABLE_HEADER_THEMES = {
   PRIMARY_LIGHT: 'primaryLight',
   LIGHT: 'light',
   WHITE: 'white'
-}
+} as const
 
 const StyledTableHeader = styled('thead', {
   variants: {
