@@ -446,9 +446,9 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -1179,9 +1179,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -1384,7 +1384,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -2666,9 +2666,9 @@ exports[`DataTable component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -2840,7 +2840,7 @@ exports[`DataTable component renders 1`] = `
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -3652,9 +3652,9 @@ exports[`DataTable server-side renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -4043,7 +4043,7 @@ exports[`DataTable server-side renders 1`] = `
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -4855,9 +4855,9 @@ exports[`DataTable sticky columns renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -5164,7 +5164,7 @@ exports[`DataTable sticky columns renders 1`] = `
       class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
     >
       <thead
-        class="c-PJLV c-PJLV-gJBDLb-theme-light"
+        class="c-PJLV c-PJLV-eSDNKZ-theme-light"
       >
         <tr
           class="c-hjAYDb"

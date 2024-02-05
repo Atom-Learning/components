@@ -7,7 +7,9 @@ import { TableHeaderCell } from './TableHeaderCell'
 export const TABLE_HEADER_THEMES = {
   PRIMARY: 'primary',
   PRIMARY_DARK: 'primaryDark',
-  LIGHT: 'light'
+  PRIMARY_LIGHT: 'primaryLight',
+  LIGHT: 'light',
+  WHITE: 'white'
 }
 
 const StyledTableHeader = styled('thead', {
@@ -23,10 +25,22 @@ const StyledTableHeader = styled('thead', {
           bg: '$primary1000'
         }
       },
+      [TABLE_HEADER_THEMES.PRIMARY_LIGHT]: {
+        [`${TableHeaderCell}`]: {
+          bg: '$primary200',
+          color: '$grey1000'
+        }
+      },
       [TABLE_HEADER_THEMES.LIGHT]: {
         [`${TableHeaderCell}`]: {
           bg: '$tonal50',
-          color: '$tonal600'
+          color: '$grey1000'
+        }
+      },
+      [TABLE_HEADER_THEMES.WHITE]: {
+        [`${TableHeaderCell}`]: {
+          bg: '$white',
+          color: '$grey1000'
         }
       }
     },
