@@ -170,7 +170,7 @@ tabs:
       ```
 
 
-      `Table.Header` accepts a theme prop, the current available options are `primary`, `primaryDark`, and `light`. The default is `primaryDark`.
+      `Table.Header` accepts a theme prop, the current available options are `primary`, `primaryDark`, `primaryLight`, `white` and `light`. The default is `primaryDark`.
 
 
       ```
