@@ -32,7 +32,7 @@ export const SectionMessageIcon = ({
         m: 'auto',
         position: 'absolute',
         left: '$4',
-        top: '$4',
+        top: 'calc($4 - 2px)',
         color: 'currentColor',
         ...css
       }}

@@ -199,11 +199,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
     flex-grow: 1;
   }
 
-  .c-hMRxhp-ihCBfwK-css {
+  .c-hMRxhp-ifRusCN-css {
     margin: auto;
     position: absolute;
     left: var(--space-4);
-    top: var(--space-4);
+    top: calc(var(--space-4) - 2px);
     color: currentColor;
   }
 
@@ -241,7 +241,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     >
       <svg
         aria-hidden="true"
-        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ihCBfwK-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ifRusCN-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
