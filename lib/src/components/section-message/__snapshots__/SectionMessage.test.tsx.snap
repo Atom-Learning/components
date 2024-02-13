@@ -199,20 +199,21 @@ exports[`renders SectionMessage component and has no programmatically detectable
     flex-grow: 1;
   }
 
-  .c-hMRxhp-ifRusCN-css {
+  .c-hMRxhp-ihCBfwK-css {
     margin: auto;
     position: absolute;
     left: var(--space-4);
-    top: calc(var(--space-4) - 2px);
+    top: var(--space-4);
     color: currentColor;
   }
 
-  .c-PJLV-iCOfVx-css {
+  .c-PJLV-ihLIGwZ-css {
     max-width: 100%;
     flex-shrink: 0;
+    padding-top: var(--space-0);
   }
 
-  .c-PJLV-iCOfVx-css > *:not(:last-child) {
+  .c-PJLV-ihLIGwZ-css > *:not(:last-child) {
     margin-bottom: var(--space-2);
   }
 
@@ -241,7 +242,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     >
       <svg
         aria-hidden="true"
-        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ifRusCN-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ihCBfwK-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -261,7 +262,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
         />
       </svg>
       <div
-        class="c-PJLV c-PJLV-iCOfVx-css"
+        class="c-PJLV c-PJLV-ihLIGwZ-css"
       >
         <p
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iecBjWS-css"
