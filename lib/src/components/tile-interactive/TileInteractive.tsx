@@ -8,11 +8,11 @@ import { focusVisibleStyleBlock } from '~/utilities'
 const StyledTileInteractive = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
 })(Tile, {
-  '&[data-disabled]': {
+  '&[disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
   },
-  '&:not([data-disabled])': {
+  '&:not([disabled])': {
     cursor: 'pointer',
     transform: 'translateY(0)',
     transition: 'transform 250ms ease',
@@ -51,10 +51,10 @@ export const TileInteractive = React.forwardRef<
   const isLink = !!href
   const elementSpecificProps = isLink
     ? {
-        as: 'a' as React.ElementType,
-        href,
-        onClick: undefined
-      }
+      as: 'a' as React.ElementType,
+      href,
+      onClick: undefined
+    }
     : { as: 'button' as React.ElementType, type, onClick }
 
   return <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />
