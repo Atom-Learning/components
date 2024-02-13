@@ -97,7 +97,7 @@ export const StepperStepContainer = styled(Flex, {
         },
         '&:focus-visible': {
           '& :first-child': {
-            outline: '2px solid $primary !important',
+            outline: '2px solid $primary800 !important',
             outlineOffset: '2px !important'
           }
         }
@@ -109,7 +109,7 @@ export const StepperStepContainer = styled(Flex, {
       css: {
         '&:focus-visible': {
           '& :first-child': {
-            outline: '2px solid $primary !important',
+            outline: '2px solid $primary800 !important',
             outlineOffset: '2px !important'
           }
         }

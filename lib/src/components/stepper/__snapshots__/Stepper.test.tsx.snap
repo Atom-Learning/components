@@ -229,22 +229,22 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-hfecOD-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-boNUgq-gAJIna-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-boNUgq-gAJIna-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 }
@@ -602,22 +602,22 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-hfecOD-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-boNUgq-gAJIna-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-boNUgq-gAJIna-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 }

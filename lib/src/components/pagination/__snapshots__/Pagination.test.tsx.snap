@@ -332,7 +332,7 @@ exports[`Pagination component renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-fznDru {
+  .c-fmWFdu {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -350,24 +350,24 @@ exports[`Pagination component renders 1`] = `
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
+  .c-fmWFdu:not(:disabled):hover {
     color: var(--colors-accent10);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-fmWFdu:not(:disabled):active {
     background: var(--colors-base3);
     color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-fmWFdu:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-fmWFdu:disabled {
     opacity: 0.3;
     cursor: not-allowed;
   }
@@ -440,23 +440,23 @@ exports[`Pagination component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-fznDru-cVoMNQ-size-md {
+  .c-fmWFdu-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-fmWFdu-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-fmWFdu-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-fmWFdu-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
@@ -506,14 +506,14 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="page"
       aria-disabled="false"
-      class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md c-fmWFdu-bxzneo-selected-true"
     >
       1
     </button>
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-fznDru c-fznDru-cVoMNQ-size-md"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md"
     >
       2
     </button>
@@ -553,7 +553,7 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-fznDru c-fznDru-cVoMNQ-size-md"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md"
     >
       6
     </button>
