@@ -288,7 +288,7 @@ exports[`NavigationMenuVertical renders 1`] = `
     line-height: 1.2;
   }
 
-  .c-bcEwPX {
+  .c-rTOZb {
     padding: var(--space-2);
     border: none;
     outline: none;
@@ -306,34 +306,34 @@ exports[`NavigationMenuVertical renders 1`] = `
     --navigation-menu-vertical-item-font-weight: 400;
   }
 
-  .c-bcEwPX[data-active] {
+  .c-rTOZb[data-active] {
     background: var(--colors-backgroundSelected);
     color: var(--colors-textSelected);
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-bcEwPX[data-state=open] {
+  .c-rTOZb[data-state=open] {
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-bcEwPX[data-disabled] {
+  .c-rTOZb[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-bcEwPX:not([data-disabled]):hover {
+  .c-rTOZb:not([data-disabled]):hover {
     background: var(--colors-backgroundHover);
   }
 
-  .c-bcEwPX:not([data-disabled]):active {
+  .c-rTOZb:not([data-disabled]):active {
     background: var(--colors-backgroundActive);
   }
 
-  .c-bcEwPX:not([data-disabled]):focus-visible {
+  .c-rTOZb:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
   .c-hYRCfV {
@@ -390,7 +390,7 @@ exports[`NavigationMenuVertical renders 1`] = `
     display: table;
   }
 
-  .c-bcEwPX-jLELKD-size-lg {
+  .c-rTOZb-jLELKD-size-lg {
     min-height: var(--sizes-5);
   }
 }
@@ -414,7 +414,7 @@ exports[`NavigationMenuVertical renders 1`] = `
       >
         <button
           aria-current="page"
-          class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
           data-active=""
           data-radix-collection-item=""
           type="button"
@@ -434,7 +434,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         class="c-PJLV"
       >
         <a
-          class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
           data-radix-collection-item=""
           href="/somewhere"
         >
@@ -453,7 +453,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         class="c-PJLV"
       >
         <a
-          class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
           data-radix-collection-item=""
           href="http://google.com"
           rel="noopener noreferrer"
@@ -763,7 +763,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     line-height: 1.2;
   }
 
-  .c-bcEwPX {
+  .c-rTOZb {
     padding: var(--space-2);
     border: none;
     outline: none;
@@ -781,34 +781,34 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     --navigation-menu-vertical-item-font-weight: 400;
   }
 
-  .c-bcEwPX[data-active] {
+  .c-rTOZb[data-active] {
     background: var(--colors-backgroundSelected);
     color: var(--colors-textSelected);
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-bcEwPX[data-state=open] {
+  .c-rTOZb[data-state=open] {
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-bcEwPX[data-disabled] {
+  .c-rTOZb[data-disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-bcEwPX:not([data-disabled]):hover {
+  .c-rTOZb:not([data-disabled]):hover {
     background: var(--colors-backgroundHover);
   }
 
-  .c-bcEwPX:not([data-disabled]):active {
+  .c-rTOZb:not([data-disabled]):active {
     background: var(--colors-backgroundActive);
   }
 
-  .c-bcEwPX:not([data-disabled]):focus-visible {
+  .c-rTOZb:not([data-disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
   .c-hYRCfV {
@@ -883,7 +883,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     display: table;
   }
 
-  .c-bcEwPX-jLELKD-size-lg {
+  .c-rTOZb-jLELKD-size-lg {
     min-height: var(--sizes-5);
   }
 
@@ -922,7 +922,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
         >
           <button
             aria-current="page"
-            class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
             data-active=""
             data-radix-collection-item=""
             type="button"
@@ -942,7 +942,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           class="c-PJLV"
         >
           <a
-            class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
             data-radix-collection-item=""
             href="/somewhere"
           >
@@ -961,7 +961,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           class="c-PJLV"
         >
           <a
-            class="c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
             data-radix-collection-item=""
             href="http://google.com"
             rel="noopener noreferrer"
@@ -985,7 +985,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           <button
             aria-controls="radix-0"
             aria-expanded="true"
-            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-bcEwPX c-bcEwPX-jLELKD-size-lg"
+            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-rTOZb c-rTOZb-jLELKD-size-lg"
             data-radix-collection-item=""
             data-state="open"
             data-testid="accordion-trigger"
