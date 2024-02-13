@@ -11,6 +11,7 @@ export const SectionMessageContent = ({
     css={{
       maxWidth: '100%',
       flexShrink: 0,
+      paddingTop: '$0',
       ['& > *:not(:last-child)']: { mb: '$2' },
       ...css
     }}

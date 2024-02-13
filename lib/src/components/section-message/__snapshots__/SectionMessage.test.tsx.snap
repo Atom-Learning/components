@@ -207,12 +207,13 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: currentColor;
   }
 
-  .c-PJLV-iCOfVx-css {
+  .c-PJLV-ihLIGwZ-css {
     max-width: 100%;
     flex-shrink: 0;
+    padding-top: var(--space-0);
   }
 
-  .c-PJLV-iCOfVx-css > *:not(:last-child) {
+  .c-PJLV-ihLIGwZ-css > *:not(:last-child) {
     margin-bottom: var(--space-2);
   }
 
@@ -261,7 +262,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
         />
       </svg>
       <div
-        class="c-PJLV c-PJLV-iCOfVx-css"
+        class="c-PJLV c-PJLV-ihLIGwZ-css"
       >
         <p
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iecBjWS-css"
