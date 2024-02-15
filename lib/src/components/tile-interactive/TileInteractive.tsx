@@ -8,11 +8,11 @@ import { focusVisibleStyleBlock } from '~/utilities'
 const StyledTileInteractive = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
 })(Tile, {
-  '&[data-disabled]': {
+  '&[disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
   },
-  '&:not([data-disabled])': {
+  '&:not([disabled])': {
     cursor: 'pointer',
     transform: 'translateY(0)',
     transition: 'transform 250ms ease',
