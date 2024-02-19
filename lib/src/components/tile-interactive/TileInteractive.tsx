@@ -43,7 +43,9 @@ const StyledTileInteractive = styled.withConfig({
 
 type TTileInteractiveProps = React.ComponentProps<
   typeof StyledTileInteractive
-> & { type?: string } & NavigatorActions
+> &
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+  NavigatorActions
 
 export const TileInteractive = React.forwardRef<
   HTMLButtonElement,
