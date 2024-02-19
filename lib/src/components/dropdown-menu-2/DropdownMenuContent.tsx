@@ -1,9 +1,8 @@
-import * as React from 'react'
 import { Content } from '@radix-ui/react-dropdown-menu'
-import { DropdownMenuContext } from './DropdownMenu.context'
+import * as React from 'react'
+
 import { DROPDOWN_Z_INDEX } from '~/constants/zIndices'
 import { styled } from '~/stitches'
-import { Box } from '../box'
 import {
   slideDownAndFade,
   slideLeftAndFade,
@@ -11,8 +10,12 @@ import {
   slideUpAndFade
 } from '~/utilities'
 
+import { Menu } from '../menu'
+import { Box } from '../box'
+import { DropdownMenuContext } from './DropdownMenu.context'
+
 const StyledDropdownMenuContent = styled(Content, {
-  bg: '$base1',
+  background: '$base1',
   color: '$foreground',
   borderRadius: '$0',
   boxShadow: '$0',
@@ -39,7 +42,7 @@ export const DropdownMenuContent = ({ children, ...rest }) => {
 
   // If we need header and footer split this out
   return (
-    <StyledDropdownMenuContent ref={setContentRef} {...rest}>
+    <StyledDropdownMenuContent ref={setContentRef} {...rest} asChild>
       <Box css={{ flexGrow: 1, overflow: 'scroll' }}>{children}</Box>
     </StyledDropdownMenuContent>
   )
