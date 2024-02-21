@@ -70,7 +70,7 @@ type RadioButtonProps = Override<
   }
 >
 
-export const RadioButton: React.FC<RadioButtonProps> = ({ size, ...props }) => {
+export const RadioButton = ({ size, ...props }: RadioButtonProps) => {
   return (
     <StyledRadioButton {...props} size={size}>
       <StyledIndicator size={size} />

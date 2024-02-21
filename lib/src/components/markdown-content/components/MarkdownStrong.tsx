@@ -10,9 +10,6 @@ type MarkdownStrongProps = {
 
 const StyledMarkdownStrong = styled('strong', { fontWeight: 600 })
 
-export const MarkdownStrong: React.FC<MarkdownStrongProps> = ({
-  node,
-  handleNode
-}) => (
+export const MarkdownStrong = ({ node, handleNode }: MarkdownStrongProps) => (
   <StyledMarkdownStrong>{node.children?.map(handleNode)}</StyledMarkdownStrong>
 )

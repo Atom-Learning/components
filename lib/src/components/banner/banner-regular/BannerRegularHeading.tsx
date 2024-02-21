@@ -28,9 +28,9 @@ const StyledHeading = styled(Heading, {
   ]
 })
 
-export const BannerRegularHeading: React.FC<
-  React.ComponentProps<typeof Heading>
-> = (props) => {
+export const BannerRegularHeading = (
+  props: React.ComponentProps<typeof Heading>
+) => {
   const { size, hasDismiss } = useBannerContext()
 
   return (

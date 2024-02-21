@@ -10,7 +10,7 @@ import { Select, SelectProps } from '~/components/select'
 
 type SelectFieldProps = SelectProps & FieldElementWrapperProps
 
-export const SelectField: React.FC<SelectFieldProps> = ({
+export const SelectField = ({
   css = undefined,
   hideLabel,
   children,
@@ -20,7 +20,7 @@ export const SelectField: React.FC<SelectFieldProps> = ({
   prompt,
   description,
   ...remainingProps
-}) => {
+}: SelectFieldProps) => {
   const { register } = useFormContext()
   const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register

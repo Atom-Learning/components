@@ -62,6 +62,6 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       ref={ref}
     />
   )
-) as React.FC<LinkProps>
+)
 
 Link.displayName = 'Link'

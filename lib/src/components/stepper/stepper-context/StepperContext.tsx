@@ -16,7 +16,7 @@ const StepperContext = React.createContext<Context>({
   showCompletedIcons: false
 })
 
-export const StepperProvider: React.FC<StepperProviderProps> = ({
+export const StepperProvider = ({
   children,
   stepCount,
   allowSkip,
@@ -26,7 +26,7 @@ export const StepperProvider: React.FC<StepperProviderProps> = ({
   steps,
   hideLabels,
   showCompletedIcons
-}) => {
+}: React.PropsWithChildren<StepperProviderProps>) => {
   const [activeStep, setActiveStep] = React.useState(0)
 
   const [viewedSteps, setviewedSteps] = React.useState<number[]>([0])

@@ -13,7 +13,7 @@ type RadioCardGroupProps = Override<
   React.ComponentProps<typeof RadioGroup.Root>
 >
 
-export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
+export const RadioCardGroup = ({
   css,
   children,
   size,
@@ -22,7 +22,7 @@ export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
   gap = '3',
   justify,
   ...rest
-}) => (
+}: RadioCardGroupProps) => (
   <RadioGroup.Root {...rest}>
     <Flex direction="row" justify={justify} gap={gap} wrap="wrap" css={css}>
       {React.Children.map(children, (child) => {

@@ -5,9 +5,10 @@ import * as React from 'react'
 
 import { BannerRegular } from './'
 
-const BannerRegularImplementation: React.FC<
-  React.ComponentProps<typeof BannerRegular>
-> = ({ children, ...props }) => (
+const BannerRegularImplementation = ({
+  children,
+  ...props
+}: React.ComponentProps<typeof BannerRegular>) => (
   <BannerRegular {...props}>
     <BannerRegular.Content>
       <BannerRegular.Heading>
@@ -27,9 +28,9 @@ const BannerRegularImplementation: React.FC<
   </BannerRegular>
 )
 
-const BannerRegularDismissibleImplementation: React.FC<
-  React.ComponentProps<typeof BannerRegular>
-> = (props) => (
+const BannerRegularDismissibleImplementation = (
+  props: React.ComponentProps<typeof BannerRegular>
+) => (
   <BannerRegularImplementation {...props}>
     <BannerRegular.Dismiss data-testid="dismiss" label="dismiss banner" />
   </BannerRegularImplementation>

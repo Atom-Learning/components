@@ -14,9 +14,9 @@ const PendingState = styled(Loader, {
   zIndex: 1
 })
 
-export const DataTableLoading: React.FC<
-  React.ComponentProps<typeof PendingState>
-> = (props) => {
+export const DataTableLoading = (
+  props: React.ComponentProps<typeof PendingState>
+) => {
   const { asyncDataState } = useDataTable()
 
   if (asyncDataState !== AsyncDataState.PENDING) return null

@@ -8,6 +8,6 @@ type MarkdownThematicBreakProps = {
   css?: CSS
 }
 
-export const MarkdownThematicBreak: React.FC<MarkdownThematicBreakProps> = ({
-  css
-}) => <Divider css={{ width: '100%', ...css } as CSS} />
+export const MarkdownThematicBreak = ({ css }: MarkdownThematicBreakProps) => (
+  <Divider css={{ width: '100%', ...css }} />
+)

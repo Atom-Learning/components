@@ -18,13 +18,13 @@ type GridProps = React.ComponentProps<typeof GridContainer> & {
   as?: any
 } // (!) `css` and `as` are both props that come from `stitches`. It would be better to figure out and export the appropriate type for them in stitches!
 
-export const Grid: React.FC<GridProps> = ({
+export const Grid = ({
   css,
   gap = 2,
   minItemSize,
   maxItemSize = '1fr',
   ...remainingProps
-}) => (
+}: GridProps) => (
   <GridContainer
     css={{
       ...(minItemSize && {

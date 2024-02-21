@@ -66,29 +66,28 @@ const toIconSize = {
   lg: 'md'
 }
 
-type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
+export const Checkbox = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof StyledCheckbox>
+>(({ size = 'md', checked, ...rest }, ref) => {
+  const iconSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+    [size]
+  )
 
-export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size = 'md', checked, ...rest }, ref) => {
-    const iconSize = React.useMemo(
-      () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
-      [size]
-    )
-
-    return (
-      <StyledCheckbox ref={ref} checked={checked} size={size} {...rest}>
-        <StyledIndicator asChild>
-          <Icon
-            is={checked === 'indeterminate' ? Minus : Ok}
-            css={{
-              strokeWidth: '3'
-            }}
-            size={iconSize}
-          />
-        </StyledIndicator>
-      </StyledCheckbox>
-    )
-  }
-)
+  return (
+    <StyledCheckbox ref={ref} checked={checked} size={size} {...rest}>
+      <StyledIndicator asChild>
+        <Icon
+          is={checked === 'indeterminate' ? Minus : Ok}
+          css={{
+            strokeWidth: '3'
+          }}
+          size={iconSize}
+        />
+      </StyledIndicator>
+    </StyledCheckbox>
+  )
+})
 
 Checkbox.displayName = 'Checkbox'

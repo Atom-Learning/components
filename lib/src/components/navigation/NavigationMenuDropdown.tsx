@@ -15,11 +15,11 @@ type NavigationMenuDropdownProps = {
 
 type DropdownTriggerProps = ComponentProps<typeof NavigationMenuDropdownTrigger>
 
-export const NavigationMenuDropdown: React.FC<NavigationMenuDropdownProps> = ({
+export const NavigationMenuDropdown = ({
   children,
   id,
   ...props
-}) => {
+}: NavigationMenuDropdownProps) => {
   const { onNodeUpdate } = useNavigationMenuContext()
 
   return (

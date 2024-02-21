@@ -53,7 +53,7 @@ const StyledSearchInput = styled(Input, {
     }
 })
 
-export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
+export const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
   (
     {
       size = 'md',

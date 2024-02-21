@@ -3,15 +3,8 @@ import * as React from 'react'
 import { Dismissible } from '../dismissible'
 import { BannerProvider } from './BannerContext'
 
-export const Banner: React.FC<React.ComponentProps<typeof BannerProvider>> & {
-  Dismiss: typeof Dismissible.Trigger
-} = ({ children, size, emphasis }) => {
-  return (
-    <BannerProvider emphasis={emphasis} size={size}>
-      {children}
-    </BannerProvider>
-  )
-}
+export const Banner = Object.assign(BannerProvider, {
+  Dismiss: Dismissible.Trigger
+})
 
-Banner.Dismiss = Dismissible.Trigger
 Banner.displayName = 'Banner'

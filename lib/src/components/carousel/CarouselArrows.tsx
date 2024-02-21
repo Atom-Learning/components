@@ -36,12 +36,12 @@ const StyledButtonBack = styled(BaseButtonBack, buttonStyles)
 
 const StyledButtonNext = styled(BaseButtonNext, buttonStyles)
 
-export const CarouselArrowPrevious: React.FC<{ css: CSS }> = (props) => (
+export const CarouselArrowPrevious = (props: { css: CSS }) => (
   <StyledButtonBack {...props}>
     <Icon is={ChevronLeft} />
   </StyledButtonBack>
 )
-export const CarouselArrowNext: React.FC<{ css: CSS }> = (props) => (
+export const CarouselArrowNext = (props: { css: CSS }) => (
   <StyledButtonNext {...props}>
     <Icon is={ChevronRight} />
   </StyledButtonNext>

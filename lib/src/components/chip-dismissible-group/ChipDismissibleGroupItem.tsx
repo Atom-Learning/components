@@ -17,12 +17,12 @@ export type TChipDismissibleGroupItem = React.ComponentProps<
     dismissActionLabel: string
   }
 
-export const ChipDismissibleGroupItem: React.FC<TChipDismissibleGroupItem> = ({
+export const ChipDismissibleGroupItem = ({
   size = 'md',
   children,
   dismissActionLabel = 'Dismiss',
   ...rest
-}) => {
+}: TChipDismissibleGroupItem) => {
   return (
     <DismissibleGroup.Item asChild {...rest}>
       <StyledChipDismissibleGroupItem size={size}>

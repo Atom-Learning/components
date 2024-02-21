@@ -10,7 +10,7 @@ import { useFieldError } from '~/components/form'
 
 type DateFieldProps = DateInputProps & FieldElementWrapperProps
 
-export const DateField: React.FC<DateFieldProps> = ({
+export const DateField = ({
   css,
   hideLabel,
   label,
@@ -19,7 +19,7 @@ export const DateField: React.FC<DateFieldProps> = ({
   prompt,
   description,
   ...remainingProps
-}) => {
+}: DateFieldProps) => {
   const { register, trigger } = useFormContext()
   const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register

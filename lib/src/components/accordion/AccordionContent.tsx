@@ -27,13 +27,11 @@ const StyledContent = styled(Content, {
   }
 })
 
-type AccordionContentProps = React.ComponentProps<typeof StyledContent>
-
-export const AccordionContent: React.FC<AccordionContentProps> = ({
+export const AccordionContent = ({
   children,
   css,
   ...remainingProps
-}) => (
+}: React.ComponentProps<typeof StyledContent>) => (
   <StyledContent {...remainingProps}>
     <CSSWrapper css={css}>{children}</CSSWrapper>
   </StyledContent>

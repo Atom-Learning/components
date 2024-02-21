@@ -32,14 +32,14 @@ export const useBannerContext = (): TBannerContextValue => {
   return context
 }
 
-export const BannerProvider: React.FC<TBannerProviderProps> = ({
+export const BannerProvider = ({
   emphasis = 'minimal',
   size = {
     '@initial': 'sm',
     '@md': 'md'
   },
   children
-}) => {
+}: React.PropsWithChildren<TBannerProviderProps>) => {
   const [hasDismiss, setHasDismiss] = React.useState(false)
   const value = React.useMemo<TBannerContextValue>(
     () => ({ emphasis, size, hasDismiss, setHasDismiss }),

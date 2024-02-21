@@ -26,7 +26,7 @@ const StyledRow = styled(Table.Row, {
   }
 })
 
-export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
+export const DataTableRow = ({ row }: DataTableRowProps) => {
   const { enableRowSelection, getCanSomeRowsExpand } = useDataTable()
 
   const toggleExpandHandler = row.getToggleExpandedHandler()

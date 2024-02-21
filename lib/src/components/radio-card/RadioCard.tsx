@@ -83,13 +83,13 @@ const Indicator = styled(RadioGroup.Indicator, {
 
 type RadioCardProps = React.ComponentProps<typeof StyledRadioCard>
 
-export const RadioCard: React.FC<RadioCardProps> = ({
+export const RadioCard = ({
   children,
   isFullWidth = false,
   size = 'md',
   align = 'left',
   ...rest
-}) => (
+}: RadioCardProps) => (
   <StyledRadioCard
     {...rest}
     align={align}

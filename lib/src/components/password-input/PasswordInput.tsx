@@ -15,7 +15,10 @@ type PasswordInputProps = Omit<InputProps, 'type'> & {
   showPasswordText?: string
 }
 
-export const PasswordInput: React.FC<PasswordInputProps> = React.forwardRef(
+export const PasswordInput = React.forwardRef<
+  HTMLInputElement,
+  PasswordInputProps
+>(
   (
     {
       css,

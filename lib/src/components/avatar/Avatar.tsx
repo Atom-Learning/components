@@ -70,11 +70,7 @@ export const AvatarRootContext = React.createContext<TAvatarRootContext>({
   size: 'lg'
 })
 
-export const AvatarRootProvider: React.FC<TAvatarProps> = ({
-  children,
-  name,
-  size
-}) => {
+export const AvatarRootProvider = ({ children, name, size }: TAvatarProps) => {
   const value = React.useMemo<TAvatarRootContext>(
     () => ({ name, size }),
     [name, size]
@@ -87,13 +83,13 @@ export const AvatarRootProvider: React.FC<TAvatarProps> = ({
   )
 }
 
-export const AvatarRoot: React.FC<TAvatarProps> = ({
+export const AvatarRoot = ({
   children,
   size = 'lg',
   name,
   disabled = false,
   onClick
-}) => (
+}: TAvatarProps) => (
   <AvatarRootProvider name={name} size={size}>
     {onClick ? (
       <StyledButton

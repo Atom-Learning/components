@@ -28,7 +28,7 @@ type IconProps = Override<
   }
 >
 
-export const Icon: React.FC<IconProps> = React.forwardRef(
+export const Icon = React.forwardRef<SVGSVGElement, IconProps>(
   ({ is: SVG, size = 'md', ...remainingProps }, ref) => (
     <StyledIcon
       size={size}

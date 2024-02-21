@@ -26,10 +26,7 @@ type HandleNode = (node) => JSX.Element | null
 type MarkdownContentProps = {
   content: string
   customComponents?: {
-    [key: string]: React.FC<{
-      node: any
-      handleNode: HandleNode
-    }>
+    [key: string]: (props: { node: any; handleNode: HandleNode }) => JSX.Element
   }
   css?: CSS
 }
@@ -58,11 +55,11 @@ const generateNodeKey = (node) => {
   return `${node.type}${+new Date()}`
 }
 
-export const MarkdownContent: React.FC<MarkdownContentProps> = ({
+export const MarkdownContent = ({
   content,
   customComponents = {},
   css
-}) => {
+}: MarkdownContentProps) => {
   const AST = fromMarkdown(content, {
     extensions: [syntax()],
     mdastExtensions: [directive.fromMarkdown]

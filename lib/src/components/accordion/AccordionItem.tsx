@@ -3,22 +3,10 @@ import React from 'react'
 
 import { styled } from '~/stitches'
 
-const StyledItem = styled(Item, {
+export const AccordionItem = styled(Item, {
   width: '100%',
 
   '&:not(:last-child)': {
     mb: '$1'
   }
 })
-
-type AccordionItemProps = React.ComponentProps<typeof StyledItem>
-
-export const AccordionItem: React.FC<AccordionItemProps> = ({
-  children,
-  value,
-  ...remainingProps
-}) => (
-  <StyledItem value={value} {...remainingProps}>
-    {children}
-  </StyledItem>
-)

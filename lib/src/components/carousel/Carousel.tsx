@@ -14,43 +14,30 @@ type CarouselProps = {
   numSlides: number
 }
 
-type CarouselSubComponents = {
-  ArrowNext: typeof CarouselArrowNext
-  ArrowPrevious: typeof CarouselArrowPrevious
-  Pagination: typeof CarouselPagination
-  Slide: typeof CarouselSlide
-  Slider: typeof CarouselSlider
-}
-
-export const Carousel: React.FC<
-  CarouselProps &
-    Omit<
-      React.ComponentProps<typeof CarouselProvider>,
-      'naturalSlideWidth' | 'naturalSlideHeight' | 'totalSlides'
-    > &
-    React.ComponentProps<typeof CSSWrapper>
-> &
-  CarouselSubComponents = ({
+export const CarouselComponent = ({
   children,
   css,
   slideHeight,
   slideWidth,
   numSlides,
   ...props
-}) => {
-  return (
-    <CSSWrapper css={css}>
-      <CarouselProvider
-        naturalSlideWidth={slideWidth}
-        naturalSlideHeight={slideHeight}
-        totalSlides={numSlides}
-        {...props}
-      >
-        {children}
-      </CarouselProvider>
-    </CSSWrapper>
-  )
-}
+}: CarouselProps &
+  Omit<
+    React.ComponentProps<typeof CarouselProvider>,
+    'naturalSlideWidth' | 'naturalSlideHeight' | 'totalSlides'
+  > &
+  React.ComponentProps<typeof CSSWrapper>) => (
+  <CSSWrapper css={css}>
+    <CarouselProvider
+      naturalSlideWidth={slideWidth}
+      naturalSlideHeight={slideHeight}
+      totalSlides={numSlides}
+      {...props}
+    >
+      {children}
+    </CarouselProvider>
+  </CSSWrapper>
+)
 
 /**
  * Documentation about the hook usage
@@ -58,10 +45,12 @@ export const Carousel: React.FC<
  */
 export const useCarousel = () => React.useContext(CarouselContext)
 
-Carousel.ArrowNext = CarouselArrowNext
-Carousel.ArrowPrevious = CarouselArrowPrevious
-Carousel.Pagination = CarouselPagination
-Carousel.Slide = CarouselSlide
-Carousel.Slider = CarouselSlider
+export const Carousel = Object.assign(CarouselComponent, {
+  ArrowNext: CarouselArrowNext,
+  ArrowPrevious: CarouselArrowPrevious,
+  Pagination: CarouselPagination,
+  Slide: CarouselSlide,
+  Slider: CarouselSlider
+})
 
-Carousel.displayName = 'Carousel'
+CarouselComponent.displayName = 'Carousel'

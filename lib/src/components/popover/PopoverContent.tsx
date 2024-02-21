@@ -56,7 +56,7 @@ type PopoverContentProps = React.ComponentProps<typeof StyledContent> &
     showCloseButton?: boolean
   }
 
-export const PopoverContent: React.FC<PopoverContentProps> = ({
+export const PopoverContent = ({
   children,
   side = 'top',
   sideOffset = 8,
@@ -64,7 +64,7 @@ export const PopoverContent: React.FC<PopoverContentProps> = ({
   showCloseButton = true,
   size = 'md',
   ...remainingProps
-}) => (
+}: PopoverContentProps) => (
   <StyledContent
     size={size}
     side={side}

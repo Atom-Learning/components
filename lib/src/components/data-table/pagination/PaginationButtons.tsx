@@ -9,12 +9,15 @@ import { Icon } from '../../icon'
 import { Select } from '../../select'
 import { Text } from '../../text'
 
-export const DirectionButton: React.FC<{
+export const DirectionButton = ({
+  direction,
+  ...remainingProps
+}: {
   css?: CSS
   direction: 'next' | 'previous'
   disabled: boolean
   onClick: () => void
-}> = ({ direction, ...remainingProps }) => {
+}) => {
   const isNext = direction === 'next'
 
   return (
@@ -31,12 +34,17 @@ export const DirectionButton: React.FC<{
   )
 }
 
-export const GotoPageSelect: React.FC<{
+export const GotoPageSelect = ({
+  gotoPage,
+  pageCount,
+  pageIndex,
+  disabled
+}: {
   pageIndex: number
   pageCount: number
   gotoPage: (pageNumber: number) => void
   disabled: boolean
-}> = ({ gotoPage, pageCount, pageIndex, disabled }) => {
+}) => {
   return (
     <Flex css={{ alignItems: 'center' }}>
       <Select

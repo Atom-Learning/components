@@ -11,12 +11,12 @@ export type TDismissibleGroupItemProps = React.ComponentProps<
   disabled?: boolean
 }
 
-export const DismissibleGroupItem: React.FC<TDismissibleGroupItemProps> = ({
+export const DismissibleGroupItem = ({
   children,
   value,
   disabled: itemDisabled = false,
   ...rest
-}) => {
+}: React.PropsWithChildren<TDismissibleGroupItemProps>) => {
   const groupContext = React.useContext(DismissibleGroupContext)
   if (groupContext === undefined) {
     throw new Error(

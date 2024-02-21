@@ -95,10 +95,10 @@ export type TChipRootProviderProps = TChipRootContext
 
 export const ChipRootContext = React.createContext<TChipRootContext>({})
 
-export const ChipRootProvider: React.FC<TChipRootProviderProps> = ({
+export const ChipRootProvider = ({
   size,
   children
-}) => {
+}: TChipRootProviderProps) => {
   const value = React.useMemo<TChipRootContext>(() => ({ size }), [size])
   return (
     <ChipRootContext.Provider value={value}>

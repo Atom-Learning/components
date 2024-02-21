@@ -10,13 +10,13 @@ export type FileInputProps = React.ComponentProps<typeof Button> & {
   multiple?: boolean
 }
 
-export const FileInput: React.FC<FileInputProps> = ({
+export const FileInput = ({
   accept,
   children,
   multiple = false,
   onFileSelect,
   ...rest
-}) => {
+}: FileInputProps) => {
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = event.target
 

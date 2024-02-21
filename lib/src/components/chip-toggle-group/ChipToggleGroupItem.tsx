@@ -46,11 +46,11 @@ const StyledChipToggleGroupItem = styled.withConfig({
 type TChipToggleGroupItem = React.ComponentProps<typeof ToggleGroup.Item> &
   React.ComponentProps<typeof StyledChipToggleGroupItem>
 
-export const ChipToggleGroupItem: React.FC<TChipToggleGroupItem> = ({
+export const ChipToggleGroupItem = ({
   size = 'md',
   children,
   ...rest
-}) => {
+}: TChipToggleGroupItem) => {
   return (
     <ToggleGroup.Item {...rest} asChild>
       <StyledChipToggleGroupItem as="button">

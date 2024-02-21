@@ -7,7 +7,7 @@ import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationItems } from './PaginationItems'
 import type { PaginationProps } from './types'
 
-export const Pagination: React.FC<PaginationProps> = ({
+export const Pagination = ({
   colorScheme,
   onSelectedPageChange,
   selectedPage,
@@ -18,7 +18,7 @@ export const Pagination: React.FC<PaginationProps> = ({
   onItemHover = () => null,
   labels = {},
   ...rest
-}) => {
+}: PaginationProps) => {
   if (!pagesCount) return null
 
   const paginationProviderProps = {

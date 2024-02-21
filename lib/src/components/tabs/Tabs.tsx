@@ -11,16 +11,10 @@ type TabsProps = React.ComponentProps<typeof StyledRoot>
 
 const StyledRoot = styled(Root, { width: '100%' })
 
-export const Tabs: React.FC<TabsProps> & {
-  TriggerList: typeof TabsTriggerList
-  Trigger: typeof TabsTrigger
-  Content: typeof TabsContent
-} = ({ children, ...remainingProps }) => {
-  return <StyledRoot {...remainingProps}>{children}</StyledRoot>
-}
+export const Tabs = Object.assign(StyledRoot, {
+  TriggerList: TabsTriggerList,
+  Trigger: TabsTrigger,
+  Content: TabsContent
+})
 
-Tabs.TriggerList = TabsTriggerList
-Tabs.Trigger = TabsTrigger
-Tabs.Content = TabsContent
-
-Tabs.displayName = 'Tabs'
+StyledRoot.displayName = 'Tabs'

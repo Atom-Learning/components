@@ -24,14 +24,14 @@ type TInlineMessageProps = React.ComponentProps<
   size?: 'xs' | 'sm' | 'md'
 }
 
-export const InlineMessage: React.FC<TInlineMessageProps> = ({
+export const InlineMessage = ({
   css,
   showIcon = true,
   theme = 'error',
   size = 'sm',
   children,
   ...rest
-}) => (
+}: TInlineMessageProps) => (
   <InlineMessageContainer theme={theme} css={css} {...rest}>
     {showIcon && (
       <Icon

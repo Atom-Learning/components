@@ -6,19 +6,17 @@ import { Checkbox } from '../checkbox'
 import { Label } from '../label'
 import { useDataTable } from './DataTableContext'
 
-interface DataTableRowSelectionCheckboxProps {
-  row: Row<Record<string, unknown>>
-  checked: boolean | 'indeterminate'
-  onCheckedChange: (value: boolean) => void
-  label?: string
-}
-
 export const DataTableRowSelectionCheckbox = ({
   row,
   checked,
   onCheckedChange,
   label = `Row ${row.id} selection`
-}: DataTableRowSelectionCheckboxProps): React.ReactElement => {
+}: {
+  row: Row<Record<string, unknown>>
+  checked: boolean | 'indeterminate'
+  onCheckedChange: (value: boolean) => void
+  label?: string
+}): React.ReactElement => {
   const { tableId } = useDataTable()
 
   return (

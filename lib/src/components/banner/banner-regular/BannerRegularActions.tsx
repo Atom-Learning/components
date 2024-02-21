@@ -19,9 +19,10 @@ const toDirection = {
   md: 'row'
 }
 
-export const BannerRegularActions: React.FC<
-  React.ComponentProps<typeof Flex>
-> = ({ children, ...props }) => {
+export const BannerRegularActions = ({
+  children,
+  ...props
+}: React.ComponentProps<typeof Flex>) => {
   const { size } = useBannerContext()
 
   const gap = React.useMemo(

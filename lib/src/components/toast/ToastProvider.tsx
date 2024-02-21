@@ -67,7 +67,10 @@ const ToastContext = React.createContext<Pick<
   'type' | 'id' | 'message'
 > | null>(null)
 
-export const ToastProvider: React.FC<{ css?: CSS }> = ({ children, css }) => {
+export const ToastProvider = ({
+  children,
+  css
+}: React.PropsWithChildren<{ css?: CSS }>) => {
   const { toasts, handlers } = useToaster()
   const { startPause, endPause, calculateOffset, updateHeight } = handlers
 

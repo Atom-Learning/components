@@ -10,10 +10,10 @@ type SliderValueProps = SliderValueType & {
   value?: number[]
 }
 
-export const SliderValue: React.FC<SliderValueProps> = ({
+export const SliderValue = ({
   value = [],
   outputLabel = (value) => `Current value is ${value}`
-}) => {
+}: SliderValueProps) => {
   return (
     <Text css={{ mt: '$4', color: '$tonal300', width: '100%' }}>
       {outputLabel(value.length === 1 ? value[0] : value)}

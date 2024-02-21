@@ -15,12 +15,12 @@ type DataTableHeadProps = Omit<
   headerCss?: CSS
 }
 
-export const DataTableHead: React.FC<DataTableHeadProps> = ({
+export const DataTableHead = ({
   sortable = true,
   theme = 'light',
   isSticky = false,
   ...props
-}) => {
+}: DataTableHeadProps) => {
   const {
     getHeaderGroups,
     setIsSortable,

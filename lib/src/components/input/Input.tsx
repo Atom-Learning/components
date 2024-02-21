@@ -63,7 +63,7 @@ export type InputProps = Override<
   }
 >
 
-export const Input: React.FC<InputProps> = React.forwardRef(
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ type = 'text', size = 'md', ...rest }, ref) => {
     if (type === 'number') {
       return (

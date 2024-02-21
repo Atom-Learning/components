@@ -21,12 +21,12 @@ export interface IDismissibleRootProps {
   onDismiss?: () => void
 }
 
-export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
+export const DismissibleRootProvider = ({
   dismissed: controlledIsDismissed,
   children,
   disabled,
   onDismiss = () => null
-}) => {
+}: React.PropsWithChildren<IDismissibleRootProps>) => {
   const [isDismissed, setIsDismissed] = React.useState(false)
 
   const value = React.useMemo<IDismissibleRootContext>(() => {
@@ -52,10 +52,10 @@ export interface IDismissibleRootInternalProps {
   asChild?: boolean
 }
 
-const DismissibleRootInternal: React.FC<IDismissibleRootInternalProps> = ({
+const DismissibleRootInternal = ({
   asChild = false,
   ...rest
-}) => {
+}: React.PropsWithChildren<IDismissibleRootInternalProps>) => {
   const rootContext = React.useContext(DismissibleRootContext)
 
   const { isDismissed, disabled } = rootContext
@@ -67,9 +67,12 @@ const DismissibleRootInternal: React.FC<IDismissibleRootInternalProps> = ({
   return <Component {...props} />
 }
 
-export const DismissibleRoot: React.FC<
-  IDismissibleRootInternalProps & IDismissibleRootProps
-> = ({ disabled = false, dismissed, onDismiss, ...rest }) => (
+export const DismissibleRoot = ({
+  disabled = false,
+  dismissed,
+  onDismiss,
+  ...rest
+}: IDismissibleRootInternalProps & IDismissibleRootProps) => (
   <DismissibleRootProvider
     dismissed={dismissed}
     disabled={disabled}

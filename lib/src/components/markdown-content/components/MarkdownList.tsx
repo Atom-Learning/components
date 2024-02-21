@@ -11,11 +11,7 @@ type MarkdownListProps = {
   css?: CSS
 }
 
-export const MarkdownList: React.FC<MarkdownListProps> = ({
-  node,
-  handleNode,
-  css
-}) => (
+export const MarkdownList = ({ node, handleNode, css }: MarkdownListProps) => (
   <List
     css={
       {

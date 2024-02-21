@@ -31,9 +31,7 @@ const StyledText = styled(Text, {
   ]
 })
 
-export const BannerRegularText: React.FC<React.ComponentProps<typeof Text>> = (
-  props
-) => {
+export const BannerRegularText = (props: React.ComponentProps<typeof Text>) => {
   const { size, hasDismiss } = useBannerContext()
 
   return (

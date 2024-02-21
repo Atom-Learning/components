@@ -68,7 +68,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
 
 type SwitchProps = React.ComponentProps<typeof StyledSwitch>
 
-export const Switch: React.FC<SwitchProps> = ({ size = 'md', ...rest }) => (
+export const Switch = ({ size = 'md', ...rest }: SwitchProps) => (
   <StyledSwitch size={size} {...rest}>
     <StyledThumb size={size} />
   </StyledSwitch>

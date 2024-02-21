@@ -37,14 +37,12 @@ const generateNewCheckedFn = (
   }
 }
 
-export const CheckboxGroupCheckedProvider: React.FC<
-  CheckboxGroupCheckedContextProps
-> = ({
+export const CheckboxGroupCheckedProvider = ({
   checked: controlledChecked,
   defaultChecked = [],
   onCheckedChange,
   ...rest
-}) => {
+}: CheckboxGroupCheckedContextProps) => {
   const [checked, setChecked] = React.useState(defaultChecked)
 
   const handleItemControlledCheckedChange = React.useCallback(

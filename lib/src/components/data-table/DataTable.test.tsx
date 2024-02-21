@@ -64,7 +64,7 @@ const data = [
  * In practice, `Tooltip.Provider` is rendered once at the root of an app,
  * but this wrapper provides it for these tests.
  */
-const Wrapper: React.FC = ({ children }) => (
+const Wrapper = ({ children }: React.PropsWithChildren<unknown>) => (
   <Tooltip.Provider>{children}</Tooltip.Provider>
 )
 
