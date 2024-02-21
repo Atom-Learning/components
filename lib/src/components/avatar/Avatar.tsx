@@ -106,16 +106,11 @@ export const AvatarRoot = ({
   </AvatarRootProvider>
 )
 
-type TAvatar = typeof AvatarRoot & {
-  Image: typeof AvatarImage
-  Initial: typeof AvatarInitial
-  Placeholder: typeof AvatarPlaceholder
-  Icon: typeof AvatarIcon
-}
+export const Avatar = Object.assign(AvatarRoot, {
+  Image: AvatarImage,
+  Initial: AvatarInitial,
+  Placeholder: AvatarPlaceholder,
+  Icon: AvatarIcon
+})
 
-export const Avatar = AvatarRoot as TAvatar
-Avatar.Image = AvatarImage
-Avatar.Initial = AvatarInitial
-Avatar.Placeholder = AvatarPlaceholder
-Avatar.Icon = AvatarIcon
-Avatar.displayName = 'Avatar'
+AvatarRoot.displayName = 'Avatar'

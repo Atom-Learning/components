@@ -49,3 +49,5 @@ export const BannerProvider = ({
     <BannerContext.Provider value={value}>{children}</BannerContext.Provider>
   )
 }
+
+BannerProvider.displayName = 'Banner'

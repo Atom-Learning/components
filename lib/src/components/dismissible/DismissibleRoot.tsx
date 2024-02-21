@@ -72,7 +72,9 @@ export const DismissibleRoot = ({
   dismissed,
   onDismiss,
   ...rest
-}: IDismissibleRootInternalProps & IDismissibleRootProps) => (
+}: React.PropsWithChildren<
+  IDismissibleRootInternalProps & IDismissibleRootProps
+>) => (
   <DismissibleRootProvider
     dismissed={dismissed}
     disabled={disabled}
@@ -81,3 +83,5 @@ export const DismissibleRoot = ({
     <DismissibleRootInternal {...rest} />
   </DismissibleRootProvider>
 )
+
+DismissibleRoot.displayName = 'Dismissible'

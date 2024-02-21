@@ -23,7 +23,7 @@ export const SortableItem = ({
   isDragHandle = false,
   disabled,
   ...rest
-}: TSortableItemProps) => {
+}: React.PropsWithChildren<TSortableItemProps>) => {
   const { transform, setNodeRef, isDragging, listeners, attributes } =
     useSortable({ id })
 

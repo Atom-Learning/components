@@ -42,7 +42,7 @@ export const CheckboxGroupCheckedProvider = ({
   defaultChecked = [],
   onCheckedChange,
   ...rest
-}: CheckboxGroupCheckedContextProps) => {
+}: React.PropsWithChildren<CheckboxGroupCheckedContextProps>) => {
   const [checked, setChecked] = React.useState(defaultChecked)
 
   const handleItemControlledCheckedChange = React.useCallback(

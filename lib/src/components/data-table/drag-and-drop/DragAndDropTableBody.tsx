@@ -4,6 +4,11 @@ import { Table } from '../../table'
 import { useDataTable } from '../DataTableContext'
 import { DragAndDropTableRow } from './DragAndDropTableRow'
 
+type DataTableBodyProps = Omit<
+  React.ComponentProps<typeof Table.Body>,
+  'children'
+> & { idColumn?: string }
+
 export const DragAndDropTableBody = ({
   striped = false,
   idColumn = 'id',

@@ -46,3 +46,5 @@ export const DismissibleGroupRoot = ({
     </DismissibleGroupProvider>
   )
 }
+
+DismissibleGroupRoot.displayName = 'DismissibleGroup'
