@@ -7,8 +7,8 @@ import { TableBody } from '../table/TableBody'
 import { DataTable } from './DataTable'
 import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
-import { DataTableLoading } from './DataTableLoading'
 import { DataTableHead } from './DataTableHead'
+import { DataTableLoading } from './DataTableLoading'
 
 export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
