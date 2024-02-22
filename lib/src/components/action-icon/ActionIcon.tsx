@@ -137,73 +137,74 @@ type ActionIconProps = Override<
     NavigatorActions
 >
 
-export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
-  (
-    {
-      children,
-      theme = 'primary',
-      appearance = 'simple',
-      size = 'sm',
-      label,
-      href,
-      disabled,
-      hasTooltip = true,
-      tooltipSide,
-      ...remainingProps
-    },
-    ref
-  ) => {
-    const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
+export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
+  React.forwardRef(
+    (
+      {
+        children,
+        theme = 'primary',
+        appearance = 'simple',
+        size = 'sm',
+        label,
+        href,
+        disabled,
+        hasTooltip = true,
+        tooltipSide,
+        ...remainingProps
+      },
+      ref
+    ) => {
+      const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 
-    invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
+      invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
-    const optionalLinkProps = href
-      ? ({
-          as: 'a',
-          href: disabled ? null : href,
-          onClick: undefined,
-          'aria-disabled': !!disabled
-        } as const)
-      : ({ type: 'button' } as const)
+      const optionalLinkProps = href
+        ? ({
+            as: 'a',
+            href: disabled ? null : href,
+            onClick: undefined,
+            'aria-disabled': !!disabled
+          } as const)
+        : ({ type: 'button' } as const)
 
-    return (
-      <OptionalTooltipWrapper
-        hasTooltip={hasTooltip}
-        label={label}
-        tooltipSide={tooltipSide}
-      >
-        <StyledButton
-          {...optionalLinkProps}
-          {...getExternalAnchorProps(href)}
-          {...remainingProps}
-          aria-label={label}
-          theme={theme}
-          appearance={appearance}
-          size={size}
-          ref={ref}
-          disabled={disabled}
+      return (
+        <OptionalTooltipWrapper
+          hasTooltip={hasTooltip}
+          label={label}
+          tooltipSide={tooltipSide}
         >
-          {React.Children.map(children, (child) => {
-            // TS needs this check for any following code to access child.type
-            // even with optional chaining
-            if (!React.isValidElement(child)) {
-              throw new Error(INVALID_CHILDREN_MESSAGE)
-            }
+          <StyledButton
+            {...optionalLinkProps}
+            {...getExternalAnchorProps(href)}
+            {...remainingProps}
+            aria-label={label}
+            theme={theme}
+            appearance={appearance}
+            size={size}
+            ref={ref}
+            disabled={disabled}
+          >
+            {React.Children.map(children, (child) => {
+              // TS needs this check for any following code to access child.type
+              // even with optional chaining
+              if (!React.isValidElement(child)) {
+                throw new Error(INVALID_CHILDREN_MESSAGE)
+              }
 
-            invariant(
-              child.type === Icon,
-              `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-            )
+              invariant(
+                child.type === Icon,
+                `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+              )
 
-            return React.cloneElement(child, {
-              size: ActionIconSizeMap[size as string],
-              css: { ...(child.props.css ? child.props.css : {}) }
-            })
-          })}
-        </StyledButton>
-      </OptionalTooltipWrapper>
-    )
-  }
-)
+              return React.cloneElement(child, {
+                size: ActionIconSizeMap[size as string],
+                css: { ...(child.props.css ? child.props.css : {}) }
+              })
+            })}
+          </StyledButton>
+        </OptionalTooltipWrapper>
+      )
+    }
+  )
 
 ActionIcon.displayName = 'ActionIcon'

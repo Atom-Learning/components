@@ -63,8 +63,8 @@ export type InputProps = Override<
   }
 >
 
-export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ type = 'text', size = 'md', ...rest }, ref) => {
+export const Input: React.ForwardRefExoticComponent<InputProps> =
+  React.forwardRef(({ type = 'text', size = 'md', ...rest }, ref) => {
     if (type === 'number') {
       return (
         <StyledInput
@@ -79,7 +79,6 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     }
 
     return <StyledInput type={type} size={size} {...rest} ref={ref} />
-  }
-)
+  })
 
 Input.displayName = 'Input'

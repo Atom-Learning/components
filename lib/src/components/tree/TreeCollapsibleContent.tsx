@@ -18,11 +18,8 @@ type TreeCollapsibleContentProps = React.ComponentProps<
 > &
   React.ComponentProps<typeof TreeList>
 
-export const TreeCollapsibleContent = React.forwardRef(
-  (
-    { children, ...rest }: TreeCollapsibleContentProps,
-    ref: React.ForwardedRef<HTMLUListElement>
-  ): JSX.Element => {
+export const TreeCollapsibleContent: React.ForwardRefExoticComponent<TreeCollapsibleContentProps> =
+  React.forwardRef(({ children, ...rest }, ref): JSX.Element => {
     const { triggerRef } = React.useContext(TreeCollapsibleContext)
 
     const handleOnKeydown = (e) => {
@@ -46,5 +43,4 @@ export const TreeCollapsibleContent = React.forwardRef(
         </TreeList>
       </StyledTreeCollapsibleContent>
     )
-  }
-)
+  })

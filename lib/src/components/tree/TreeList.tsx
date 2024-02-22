@@ -13,18 +13,11 @@ const StyledList = styled(Flex, {
   }
 })
 
-type TreeListProps = Omit<
-  React.ComponentPropsWithoutRef<typeof Flex>,
-  'direction'
->
+type TreeListProps = Omit<React.ComponentProps<typeof Flex>, 'direction'>
 
-export const TreeList = React.forwardRef(
-  (
-    props: TreeListProps,
-    ref: React.ForwardedRef<HTMLUListElement>
-  ): JSX.Element => (
+export const TreeList: React.ForwardRefExoticComponent<TreeListProps> =
+  React.forwardRef((props, ref) => (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore: Stitches polymorphic components issue due to `as="ul"`
     <StyledList as="ul" ref={ref} {...props} direction="column" />
-  )
-)
+  ))

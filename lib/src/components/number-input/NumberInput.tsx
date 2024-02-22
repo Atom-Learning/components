@@ -24,7 +24,7 @@ export interface NumberInputProps {
   css?: CSS
 }
 
-export const NumberInput = React.forwardRef<HTMLInputElement, NumberInputProps>(
+export const NumberInput: React.ForwardRefExoticComponent<NumberInputProps & { ref: React.Ref<HTMLInputElement>}> = React.forwardRef(
   (
     {
       value,

@@ -6,9 +6,8 @@ export const StyledRow = styled('tr', {
   bg: 'unset'
 })
 
-export const TableRow = React.forwardRef<
-  HTMLTableRowElement,
+export const TableRow: React.ForwardRefExoticComponent<
   React.ComponentProps<typeof StyledRow>
->((props, ref) => <StyledRow {...props} ref={ref} />)
+> = React.forwardRef((props, ref) => <StyledRow {...props} ref={ref} />)
 
 TableRow.displayName = 'TableRow'

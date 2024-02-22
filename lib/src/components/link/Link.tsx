@@ -51,8 +51,8 @@ type LinkProps = Override<
   } & NavigatorActions
 >
 
-export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ as, href, ...rest }, ref) => (
+export const Link: React.ForwardRefExoticComponent<LinkProps> =
+  React.forwardRef(({ as, href, ...rest }, ref) => (
     <StyledLink
       as={as || (!href ? 'button' : undefined)}
       noCapsize={!href ? true : undefined}
@@ -61,7 +61,6 @@ export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
       {...getExternalAnchorProps(href)}
       ref={ref}
     />
-  )
-)
+  ))
 
 Link.displayName = 'Link'

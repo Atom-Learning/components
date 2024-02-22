@@ -5,10 +5,9 @@ import { styled } from '~/stitches'
 import { Text } from '../text'
 import { NavigationMenuLink } from './NavigationMenuLink'
 
-export const NavigationMenuDropdownItem = React.forwardRef<
-  HTMLAnchorElement,
+export const NavigationMenuDropdownItem: React.ForwardRefExoticComponent<
   React.PropsWithChildren<React.ComponentProps<typeof NavigationMenuLink>>
->((props, forwardedRef) => {
+> = React.forwardRef((props, forwardedRef) => {
   return (
     <NavigationMenuLink ref={forwardedRef} variant="dropdownItem" {...props} />
   )
