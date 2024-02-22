@@ -34,10 +34,10 @@ const StyledTileToggleGroupItem = styled.withConfig({
 type TTileToggleGroupItem = React.ComponentProps<typeof ToggleGroup.Item> &
   React.ComponentProps<typeof StyledTileToggleGroupItem>
 
-export const TileToggleGroupItem: React.FC<TTileToggleGroupItem> = ({
+export const TileToggleGroupItem = ({
   children,
   ...rest
-}) => {
+}: TTileToggleGroupItem) => {
   return (
     <ToggleGroup.Item {...rest} asChild>
       <StyledTileToggleGroupItem as="button">

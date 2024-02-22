@@ -18,7 +18,7 @@ export interface NumberInputFieldProps extends NumberInputProps {
   validation?: ValidationOptions
 }
 
-export const NumberInputField: React.FC<NumberInputFieldProps> = ({
+export const NumberInputField = ({
   css,
   defaultValue = 0,
   hideLabel,
@@ -30,7 +30,7 @@ export const NumberInputField: React.FC<NumberInputFieldProps> = ({
   validation,
   onValueChange,
   ...remainingProps
-}) => {
+}: NumberInputFieldProps) => {
   const { control } = useFormContext()
   const {
     field: { ref, onChange, value: innerValue, name: innerName }

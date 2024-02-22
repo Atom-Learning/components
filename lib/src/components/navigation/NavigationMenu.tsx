@@ -2,7 +2,7 @@ import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
 import { MAX_Z_INDEX } from '~/constants/zIndices'
-import { CSS, keyframes, styled } from '~/stitches'
+import { keyframes, styled } from '~/stitches'
 import { fadeOut } from '~/utilities/style/keyframe-animations'
 
 import { NavigationMenuContext } from './NavigationMenuContext'
@@ -15,15 +15,6 @@ import {
 import { NavigationMenuDropdownTrigger } from './NavigationMenuDropdownTrigger'
 import { NavigationMenuLink } from './NavigationMenuLink'
 import { colorSchemes as navigationMenuColorSchemes } from './stitches.navigationMenu.colorscheme.config'
-
-type NavigationMenuSubComponents = {
-  Link: typeof NavigationMenuLink
-  Dropdown: typeof NavigationMenuDropdown
-  DropdownContent: typeof NavigationMenuDropdownContent
-  DropdownItem: typeof NavigationMenuDropdownItem
-  DropdownItemTitle: typeof NavigationMenuDropdownItemTitle
-  DropdownTrigger: typeof NavigationMenuDropdownTrigger
-}
 
 const delayedFadeIn = keyframes({
   '0%, 50%': { opacity: 0 },
@@ -58,10 +49,11 @@ const ViewportPosition = styled('div', {
   justifyContent: 'center'
 })
 
-type NavigationMenuProps = React.ComponentProps<typeof StyledMenu>
-
-export const NavigationMenu: React.FC<NavigationMenuProps> &
-  NavigationMenuSubComponents = ({ children, css, ...props }) => {
+const NavigationMenuComponent = ({
+  children,
+  css,
+  ...props
+}: React.ComponentProps<typeof StyledMenu>) => {
   const [offset, setOffset] = React.useState<number | null | undefined>()
   const [activeItem, setActiveItem] = React.useState<string | undefined>()
   const [listWidth, setListWidth] = React.useState(0)
@@ -134,11 +126,13 @@ export const NavigationMenu: React.FC<NavigationMenuProps> &
   )
 }
 
-NavigationMenu.Link = NavigationMenuLink
-NavigationMenu.Dropdown = NavigationMenuDropdown
-NavigationMenu.DropdownContent = NavigationMenuDropdownContent
-NavigationMenu.DropdownItem = NavigationMenuDropdownItem
-NavigationMenu.DropdownItemTitle = NavigationMenuDropdownItemTitle
-NavigationMenu.DropdownTrigger = NavigationMenuDropdownTrigger
+export const NavigationMenu = Object.assign(NavigationMenuComponent, {
+  Link: NavigationMenuLink,
+  Dropdown: NavigationMenuDropdown,
+  DropdownContent: NavigationMenuDropdownContent,
+  DropdownItem: NavigationMenuDropdownItem,
+  DropdownItemTitle: NavigationMenuDropdownItemTitle,
+  DropdownTrigger: NavigationMenuDropdownTrigger
+})
 
-NavigationMenu.displayName = 'NavigationMenu'
+NavigationMenuComponent.displayName = 'NavigationMenu'

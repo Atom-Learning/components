@@ -10,7 +10,7 @@ import { Textarea, TextareaProps } from '~/components/textarea'
 
 type TextareaFieldProps = TextareaProps & FieldElementWrapperProps
 
-export const TextareaField: React.FC<TextareaFieldProps> = ({
+export const TextareaField = ({
   css = undefined,
   hideLabel,
   label,
@@ -19,7 +19,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
   prompt,
   description,
   ...remainingProps
-}) => {
+}: TextareaFieldProps) => {
   const { register } = useFormContext()
   const { error } = useFieldError(name)
 

@@ -11,17 +11,6 @@ import { TableHeaderCell } from './TableHeaderCell'
 import { StyledRow, TableRow } from './TableRow'
 import { TableStickyColumnsContainer } from './TableStickyColumnsContainer'
 
-type TableSubComponents = {
-  Body: typeof TableBody
-  Cell: typeof TableCell
-  Footer: typeof TableFooter
-  FooterCell: typeof TableFooterCell
-  Header: typeof TableHeader
-  HeaderCell: typeof TableHeaderCell
-  Row: typeof TableRow
-  StickyColumnsContainer: typeof TableStickyColumnsContainer
-}
-
 const StyledTable = styled('table', {
   borderCollapse: 'separate',
   borderSpacing: 0,
@@ -70,7 +59,7 @@ type TableProps = React.ComponentProps<typeof StyledTable> & {
   scrollContainerCss?: CSS
 }
 
-export const Table: React.FC<TableProps> & TableSubComponents = ({
+const TableComponent = ({
   size = 'md',
   corners = 'round',
   numberOfStickyColumns = 0,
@@ -93,13 +82,15 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
   return tableComponent
 }
 
-Table.Body = TableBody
-Table.Cell = TableCell
-Table.Footer = TableFooter
-Table.FooterCell = TableFooterCell
-Table.Header = TableHeader
-Table.HeaderCell = TableHeaderCell
-Table.Row = TableRow
-Table.StickyColumnsContainer = TableStickyColumnsContainer
+export const Table = Object.assign(TableComponent, {
+  Body: TableBody,
+  Cell: TableCell,
+  Footer: TableFooter,
+  FooterCell: TableFooterCell,
+  Header: TableHeader,
+  HeaderCell: TableHeaderCell,
+  Row: TableRow,
+  StickyColumnsContainer: TableStickyColumnsContainer
+})
 
-Table.displayName = 'Table'
+TableComponent.displayName = 'Table'

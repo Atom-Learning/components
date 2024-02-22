@@ -20,9 +20,12 @@ type NavigationMenuVerticalItemProps = React.ComponentProps<
   as?: React.ComponentType | React.ElementType
 }
 
-export const NavigationMenuVerticalLink: React.FC<
-  NavigationMenuVerticalItemProps
-> = ({ as, href, children, ...rest }) => {
+export const NavigationMenuVerticalLink = ({
+  as,
+  href,
+  children,
+  ...rest
+}: NavigationMenuVerticalItemProps) => {
   const Component = as || (href ? 'a' : 'button')
   const componentProps = as
     ? {}

@@ -16,14 +16,14 @@ export type TSortableItemProps = {
 
 const StyledSlot = styled(Slot)
 
-export const SortableItem: React.FC<TSortableItemProps> = ({
+export const SortableItem = ({
   id,
   asChild = false,
   css,
   isDragHandle = false,
   disabled,
   ...rest
-}) => {
+}: React.PropsWithChildren<TSortableItemProps>) => {
   const { transform, setNodeRef, isDragging, listeners, attributes } =
     useSortable({ id })
 

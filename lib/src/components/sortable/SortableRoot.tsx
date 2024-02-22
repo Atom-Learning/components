@@ -23,11 +23,11 @@ type TSortableRootProps = {
   }) => void
 }
 
-export const SortableRoot: React.FC<TSortableRootProps> = ({
+export const SortableRoot = ({
   sortableIds,
   onSortChange,
   children
-}) => {
+}: React.PropsWithChildren<TSortableRootProps>) => {
   const [order, setOrder] = React.useState<React.ReactText[]>(sortableIds)
   React.useEffect(() => {
     setOrder(sortableIds)

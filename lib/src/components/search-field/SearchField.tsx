@@ -10,7 +10,7 @@ import { SearchInput, SearchInputProps } from '~/components/search-input'
 
 type SearchFieldProps = SearchInputProps & FieldElementWrapperProps
 
-export const SearchField: React.FC<SearchFieldProps> = ({
+export const SearchField = ({
   css,
   hideLabel,
   label,
@@ -19,7 +19,7 @@ export const SearchField: React.FC<SearchFieldProps> = ({
   prompt,
   description,
   ...remainingProps
-}) => {
+}: SearchFieldProps) => {
   const { register } = useFormContext()
   const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register

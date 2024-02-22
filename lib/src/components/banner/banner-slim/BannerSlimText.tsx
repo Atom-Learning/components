@@ -28,9 +28,7 @@ const StyledText = styled(Text, {
   ]
 })
 
-export const BannerSlimText: React.FC<React.ComponentProps<typeof Text>> = (
-  props
-) => {
+export const BannerSlimText = (props: React.ComponentProps<typeof Text>) => {
   const { size, hasDismiss } = useBannerContext()
 
   return (

@@ -10,6 +10,6 @@ type MarkdownImageProps = {
   css?: CSS
 }
 
-export const MarkdownImage: React.FC<MarkdownImageProps> = ({ node, css }) => (
+export const MarkdownImage = ({ node, css }: MarkdownImageProps) => (
   <Image src={node.url} alt={node.alt ?? undefined} css={css} />
 )

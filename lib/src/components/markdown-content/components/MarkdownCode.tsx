@@ -20,6 +20,6 @@ const StyledMarkdownCode = styled(Box, {
   p: '$3'
 })
 
-export const MarkdownCode: React.FC<MarkdownCodeProps> = ({ node }) => (
+export const MarkdownCode = ({ node }: MarkdownCodeProps) => (
   <StyledMarkdownCode as="pre">{node.value}</StyledMarkdownCode>
 )

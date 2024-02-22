@@ -5,13 +5,11 @@ import { Checkbox } from '../checkbox'
 import { Label } from '../label'
 import { useDataTable } from './DataTableContext'
 
-interface DataTableSelectAllRowsCheckboxProps {
-  label?: string
-}
-
 export const DataTableSelectAllRowsCheckbox = ({
   label = 'All rows selection'
-}: DataTableSelectAllRowsCheckboxProps) => {
+}: {
+  label?: string
+}) => {
   const {
     getIsAllPageRowsSelected,
     getIsSomePageRowsSelected,

@@ -27,7 +27,7 @@ export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
   validation?: ValidationOptions
 }
 
-export const FieldWrapper: React.FC<FieldWrapperProps> = ({
+export const FieldWrapper = ({
   css,
   children,
   error,
@@ -37,7 +37,7 @@ export const FieldWrapper: React.FC<FieldWrapperProps> = ({
   description,
   required,
   hideLabel
-}) => {
+}: React.PropsWithChildren<FieldWrapperProps>) => {
   const LabelContainer = hideLabel ? VisuallyHidden.Root : Flex
 
   return (

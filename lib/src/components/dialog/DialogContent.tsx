@@ -66,13 +66,13 @@ type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
   showCloseButton?: boolean
 }
 
-export const DialogContent: React.FC<DialogContentProps> = ({
+export const DialogContent = ({
   size = 'sm',
   children,
   closeDialogText = 'Close dialog',
   showCloseButton = true,
   ...remainingProps
-}) => (
+}: DialogContentProps) => (
   <Portal>
     <StyledDialogOverlay id={modalOverlayId}>
       {React.Children.map(

@@ -25,11 +25,11 @@ const getHeadingProps = (depth: number): HeadingProps => {
   }
 }
 
-export const MarkdownHeading: React.FC<MarkdownHeadingProps> = ({
+export const MarkdownHeading = ({
   node,
   handleNode,
   ...rest
-}) => {
+}: MarkdownHeadingProps) => {
   const { as, size } = getHeadingProps(node.depth)
 
   return (

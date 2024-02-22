@@ -56,7 +56,7 @@ const StyledTableHeader = styled('thead', {
 
 type TableHeaderProps = React.ComponentProps<typeof StyledTableHeader>
 
-export const TableHeader: React.FC<TableHeaderProps> = ({
+export const TableHeader = ({
   theme = 'primaryDark',
   isSticky = false,
   ...rest

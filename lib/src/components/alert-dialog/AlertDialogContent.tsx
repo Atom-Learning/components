@@ -67,14 +67,10 @@ const StyledAlertDialogContent = styled(Content, {
   }
 })
 
-type AlertDialogContentProps = React.ComponentProps<
-  typeof StyledAlertDialogContent
->
-
-export const AlertDialogContent: React.FC<AlertDialogContentProps> = ({
+export const AlertDialogContent = ({
   size = 'sm',
   ...remainingProps
-}) => (
+}: React.ComponentProps<typeof StyledAlertDialogContent>) => (
   <Portal>
     <StyledAlertDialogOverlay />
     <StyledAlertDialogContent size={size} {...remainingProps} />

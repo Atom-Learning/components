@@ -38,6 +38,6 @@ const StyledEmptyStateImage = styled(Image, {
 type EmptyStateImageProps = React.ComponentProps<typeof StyledEmptyStateImage> &
   React.ComponentProps<typeof Image>
 
-export const EmptyStateImage: React.FC<EmptyStateImageProps> = (props) => (
+export const EmptyStateImage = (props: EmptyStateImageProps) => (
   <StyledEmptyStateImage {...props} />
 )

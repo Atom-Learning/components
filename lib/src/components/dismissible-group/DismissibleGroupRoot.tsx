@@ -14,11 +14,11 @@ export interface IDismissibleGroupProps {
   onDismiss: (value: React.ReactText) => void
 }
 
-export const DismissibleGroupProvider: React.FC<IDismissibleGroupProps> = ({
+export const DismissibleGroupProvider = ({
   children,
   disabled,
   onDismiss
-}) => {
+}: React.PropsWithChildren<IDismissibleGroupProps>) => {
   const value = React.useMemo<IDismissibleGroupContext>(
     () => ({ disabled, onDismiss }),
     [disabled, onDismiss]
@@ -31,18 +31,20 @@ export const DismissibleGroupProvider: React.FC<IDismissibleGroupProps> = ({
 }
 
 export interface IDismissibleGroupRootProps extends IDismissibleGroupProps {
-  as?: React.ComponentType
+  as?: React.ElementType
 }
 
-export const DismissibleGroupRoot: React.FC<IDismissibleGroupRootProps> = ({
+export const DismissibleGroupRoot = ({
   as: Component = 'div',
   disabled,
   onDismiss,
   ...rest
-}) => {
+}: React.PropsWithChildren<IDismissibleGroupRootProps>) => {
   return (
     <DismissibleGroupProvider disabled={disabled} onDismiss={onDismiss}>
       <Component {...rest} />
     </DismissibleGroupProvider>
   )
 }
+
+DismissibleGroupRoot.displayName = 'DismissibleGroup'

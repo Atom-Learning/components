@@ -96,10 +96,7 @@ const StyledButton = styled('button', {
   }
 })
 
-export const PaginationPage: React.FC<PaginationPageProps> = ({
-  pageNumber,
-  css
-}) => {
+export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 

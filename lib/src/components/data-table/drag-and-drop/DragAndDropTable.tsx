@@ -19,7 +19,7 @@ type DragAndDropTableProps = DataTableTableProps & {
   }) => void
 }
 
-export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
+export const DragAndDropTable = ({
   idColumn = 'id',
   onDragAndDrop,
   sortable,
@@ -27,7 +27,7 @@ export const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
   theme,
   css,
   ...props
-}) => {
+}: DragAndDropTableProps) => {
   const { asyncDataState, data, setData } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
 

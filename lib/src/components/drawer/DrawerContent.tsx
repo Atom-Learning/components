@@ -90,9 +90,10 @@ export const StyledContent = styled(Content, {
   }
 })
 
-export const DrawerContent: React.FC<
-  React.ComponentProps<typeof StyledContent>
-> = ({ children, ...rest }) => {
+export const DrawerContent = ({
+  children,
+  ...rest
+}: React.ComponentProps<typeof StyledContent>) => {
   const { position } = React.useContext(DrawerContext)
 
   return (

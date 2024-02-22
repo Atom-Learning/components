@@ -21,7 +21,7 @@ export const PaginationContext = React.createContext<PaginationContextValue>({
   disabledPages: []
 })
 
-export const PaginationProvider: React.FC<PaginationProviderProps> = ({
+export const PaginationProvider = ({
   onSelectedPageChange,
   selectedPage,
   visibleElementsCount = VisibleElementsAmount.LESS,
@@ -31,7 +31,7 @@ export const PaginationProvider: React.FC<PaginationProviderProps> = ({
   onItemHover = () => null,
   labels = {},
   children
-}) => {
+}: React.PropsWithChildren<PaginationProviderProps>) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
 
   const currentPage = selectedPage || internalCurrentPage

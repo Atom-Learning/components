@@ -10,7 +10,7 @@ import { Input, InputProps } from '~/components/input'
 
 type InputFieldProps = InputProps & FieldElementWrapperProps
 
-export const InputField: React.FC<InputFieldProps> = ({
+export const InputField = ({
   css,
   label,
   name,
@@ -19,7 +19,7 @@ export const InputField: React.FC<InputFieldProps> = ({
   description,
   hideLabel,
   ...remainingProps
-}) => {
+}: InputFieldProps) => {
   const { register } = useFormContext()
   const { error } = useFieldError(name)
   const ref = validation ? register(validation) : register

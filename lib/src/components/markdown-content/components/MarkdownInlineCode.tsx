@@ -19,8 +19,6 @@ const StyledMarkdownInlineCode = styled(Box, {
   p: '$0 $1'
 })
 
-export const MarkdownInlineCode: React.FC<MarkdownInlineCodeProps> = ({
-  node
-}) => (
+export const MarkdownInlineCode = ({ node }: MarkdownInlineCodeProps) => (
   <StyledMarkdownInlineCode as="code">{node.value}</StyledMarkdownInlineCode>
 )

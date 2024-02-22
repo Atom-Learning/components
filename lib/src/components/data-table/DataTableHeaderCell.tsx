@@ -16,7 +16,7 @@ const sortIcons = {
   desc: SortDown
 }
 
-const SortIcon: React.FC<{ direction: 'asc' | 'desc' }> = ({ direction }) => (
+const SortIcon = ({ direction }: { direction: 'asc' | 'desc' }) => (
   <Icon
     is={sortIcons[direction]}
     size="sm"
@@ -24,12 +24,12 @@ const SortIcon: React.FC<{ direction: 'asc' | 'desc' }> = ({ direction }) => (
   />
 )
 
-export const DataTableHeaderCell: React.FC<DataTableHeaderProps> = ({
+export const DataTableHeaderCell = ({
   header,
   children,
   css,
   ...props
-}) => {
+}: DataTableHeaderProps) => {
   const sortDirection = header.column.getIsSorted()
   const { isSortable: isSortableTable } = useDataTable()
   // false for display columns, e.g. "Actions"

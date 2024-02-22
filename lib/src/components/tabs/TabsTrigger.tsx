@@ -51,10 +51,7 @@ interface TabsTriggerProps
   value: string
 }
 
-export const TabsTrigger: React.FC<TabsTriggerProps> = ({
-  children,
-  ...rest
-}) => (
+export const TabsTrigger = ({ children, ...rest }: TabsTriggerProps) => (
   <StyledTabsTrigger {...rest}>
     <Text size="sm" as="span">
       {children}

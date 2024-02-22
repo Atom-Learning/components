@@ -66,7 +66,7 @@ type LabelProps = Override<
   }
 >
 
-export const Label: React.FC<LabelProps> = ({
+export const Label = ({
   align = 'start',
   as = 'label',
   direction = 'row',
@@ -75,7 +75,7 @@ export const Label: React.FC<LabelProps> = ({
   children,
   required,
   ...rest
-}) => (
+}: LabelProps) => (
   <StyledLabel
     as={as}
     size={size}

@@ -33,6 +33,6 @@ type ImageProps = Override<
   }
 >
 
-export const Image: React.FC<ImageProps> = StyledImage
+export const Image = (props: ImageProps) => <StyledImage {...props} />
 
 Image.displayName = 'Image'
