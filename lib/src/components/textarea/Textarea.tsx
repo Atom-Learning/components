@@ -43,8 +43,7 @@ const StyledTextarea = styled('textarea', {
 
 export type TextareaProps = React.ComponentProps<typeof StyledTextarea>
 
-export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
-  (props, ref) => <StyledTextarea {...props} ref={ref} />
-)
+export const Textarea: React.ForwardRefExoticComponent<TextareaProps> =
+  React.forwardRef((props, ref) => <StyledTextarea {...props} ref={ref} />)
 
 Textarea.displayName = 'Textarea'

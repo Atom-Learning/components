@@ -62,7 +62,7 @@ const StyledIndicator = styled(RadioGroup.Indicator, {
 })
 
 type RadioButtonProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledRadioButton>,
+  React.ComponentProps<typeof StyledRadioButton>,
   {
     as?: never
   } & {

@@ -28,10 +28,9 @@ const StyledTrigger = styled(
   }
 )
 
-export const NavigationMenuDropdownTrigger = React.forwardRef<
-  HTMLButtonElement,
-  React.PropsWithChildren<{ active?: boolean }>
->(({ children, active, ...props }, forwardedRef) => (
+export const NavigationMenuDropdownTrigger: React.ForwardRefExoticComponent<
+  React.ComponentProps<typeof StyledTrigger>
+> = React.forwardRef(({ children, active, ...props }, forwardedRef) => (
   <StyledTrigger
     active={active}
     {...props}

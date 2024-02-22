@@ -177,25 +177,26 @@ type ButtonProps = Override<
   } & NavigatorActions
 >
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => (
-    <StyledButton
-      as={as || (href ? 'a' : undefined)}
-      href={href}
-      isLoading={isLoading}
-      onClick={!isLoading ? onClick : undefined}
-      type={!href ? 'button' : undefined}
-      {...rest}
-      {...getExternalAnchorProps(href)}
-      ref={ref}
-    >
-      {isLoading ? (
-        <WithLoader size={rest.size}>{children}</WithLoader>
-      ) : (
-        children
-      )}
-    </StyledButton>
+export const Button: React.ForwardRefExoticComponent<ButtonProps> =
+  React.forwardRef(
+    ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => (
+      <StyledButton
+        as={as || (href ? 'a' : undefined)}
+        href={href}
+        isLoading={isLoading}
+        onClick={!isLoading ? onClick : undefined}
+        type={!href ? 'button' : undefined}
+        {...rest}
+        {...getExternalAnchorProps(href)}
+        ref={ref}
+      >
+        {isLoading ? (
+          <WithLoader size={rest.size}>{children}</WithLoader>
+        ) : (
+          children
+        )}
+      </StyledButton>
+    )
   )
-)
 
 Button.displayName = 'Button'

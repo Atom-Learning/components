@@ -10,7 +10,7 @@ import { Override } from '~/utilities/types'
 const StyledVideo = styled(ReactPlayer, {})
 
 type VideoProps = Override<
-  React.ComponentPropsWithoutRef<typeof StyledVideo>,
+  React.ComponentProps<typeof StyledVideo>,
   {
     id: string
     ratio?: number
@@ -18,8 +18,8 @@ type VideoProps = Override<
   }
 >
 
-export const Video = React.forwardRef<typeof StyledVideo, VideoProps>(
-  ({ id, ratio = 9 / 16, css, ...remainingProps }, ref) => (
+export const Video: React.ForwardRefExoticComponent<VideoProps> =
+  React.forwardRef(({ id, ratio = 9 / 16, css, ...remainingProps }, ref) => (
     <CSSWrapper css={css}>
       <Box
         css={{
@@ -42,7 +42,6 @@ export const Video = React.forwardRef<typeof StyledVideo, VideoProps>(
         />
       </Box>
     </CSSWrapper>
-  )
-)
+  ))
 
 Video.displayName = 'Video'

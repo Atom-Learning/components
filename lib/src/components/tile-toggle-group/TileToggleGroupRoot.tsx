@@ -13,19 +13,17 @@ const orientationToDirection = (orientation) =>
     ? 'column'
     : undefined
 
-export const TileToggleGroupRoot = React.forwardRef<
-  HTMLDivElement,
-  TTileToggleGroupRootProps
->((props, ref) => {
-  const direction = orientationToDirection(props.orientation)
-  return (
-    <TileGroup
-      ref={ref}
-      as={ToggleGroup.Root}
-      direction={direction}
-      gap="2"
-      wrap="wrap"
-      {...props}
-    />
-  )
-})
+export const TileToggleGroupRoot: React.ForwardRefExoticComponent<TTileToggleGroupRootProps> =
+  React.forwardRef((props, ref) => {
+    const direction = orientationToDirection(props.orientation)
+    return (
+      <TileGroup
+        ref={ref}
+        as={ToggleGroup.Root}
+        direction={direction}
+        gap="2"
+        wrap="wrap"
+        {...props}
+      />
+    )
+  })

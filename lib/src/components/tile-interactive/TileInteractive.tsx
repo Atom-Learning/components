@@ -47,20 +47,20 @@ type TTileInteractiveProps = React.ComponentProps<
   React.ButtonHTMLAttributes<HTMLButtonElement> &
   NavigatorActions
 
-export const TileInteractive = React.forwardRef<
-  HTMLButtonElement,
-  TTileInteractiveProps
->(({ onClick, href, type = 'button', ...rest }, ref) => {
-  const isLink = !!href
-  const elementSpecificProps = isLink
-    ? {
-        as: 'a' as React.ElementType,
-        href,
-        onClick: undefined
-      }
-    : { as: 'button' as React.ElementType, type, onClick }
+export const TileInteractive: React.ForwardRefExoticComponent<TTileInteractiveProps> =
+  React.forwardRef(({ onClick, href, type = 'button', ...rest }, ref) => {
+    const isLink = !!href
+    const elementSpecificProps = isLink
+      ? {
+          as: 'a' as React.ElementType,
+          href,
+          onClick: undefined
+        }
+      : { as: 'button' as React.ElementType, type, onClick }
 
-  return <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />
-})
+    return (
+      <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />
+    )
+  })
 
 TileInteractive.displayName = 'TileInteractive'
