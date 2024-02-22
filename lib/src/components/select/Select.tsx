@@ -78,29 +78,30 @@ export type SelectProps = Override<
   // )
 >
 
-export const Select: React.ForwardRefExoticComponent<SelectProps> = React.forwardRef(
-  ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
-    const props = { size, ref, ...remainingProps }
+export const Select: React.ForwardRefExoticComponent<SelectProps> =
+  React.forwardRef(
+    ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
+      const props = { size, ref, ...remainingProps }
 
-    if (
-      [remainingProps.value, remainingProps.defaultValue].every(
-        (value) => value === undefined
+      if (
+        [remainingProps.value, remainingProps.defaultValue].every(
+          (value) => value === undefined
+        )
+      ) {
+        props.defaultValue = ''
+      }
+
+      return (
+        <StyledSelect {...props}>
+          {placeholder && (
+            <option disabled hidden value="">
+              {placeholder}
+            </option>
+          )}
+          {children}
+        </StyledSelect>
       )
-    ) {
-      props.defaultValue = ''
     }
-
-    return (
-      <StyledSelect {...props}>
-        {placeholder && (
-          <option disabled hidden value="">
-            {placeholder}
-          </option>
-        )}
-        {children}
-      </StyledSelect>
-    )
-  }
-)
+  )
 
 Select.displayName = 'Select'
