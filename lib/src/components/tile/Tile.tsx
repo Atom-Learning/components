@@ -29,8 +29,8 @@ type TTileProps = React.ComponentProps<typeof StyledTile> & {
   colorScheme?: TcolorScheme
 }
 
-export const Tile: React.ForwardRefExoticComponent<TTileProps> = React.forwardRef(
-  ({ children, colorScheme = {}, ...rest }, ref) => (
+export const Tile: React.ForwardRefExoticComponent<TTileProps> =
+  React.forwardRef(({ children, colorScheme = {}, ...rest }, ref) => (
     <ColorScheme
       asChild
       base="grey1"
@@ -42,7 +42,6 @@ export const Tile: React.ForwardRefExoticComponent<TTileProps> = React.forwardRe
         {children}
       </StyledTile>
     </ColorScheme>
-  )
-)
+  ))
 
 Tile.displayName = 'Tile'
