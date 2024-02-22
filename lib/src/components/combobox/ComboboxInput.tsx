@@ -67,9 +67,7 @@ export type ComboboxInputProps = React.ComponentProps<
   typeof StyledComboboxInput
 >
 
-export const ComboboxInput = React.forwardRef<
-  HTMLInputElement,
-  ComboboxInputProps
->(({ size = 'md', ...rest }, ref) => (
-  <StyledComboboxInput size={size} {...rest} ref={ref} />
-))
+export const ComboboxInput: React.ForwardRefExoticComponent<ComboboxInputProps> =
+  React.forwardRef(({ size = 'md', ...rest }, ref) => (
+    <StyledComboboxInput size={size} {...rest} ref={ref} />
+  ))

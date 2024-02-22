@@ -78,7 +78,7 @@ export type SelectProps = Override<
   // )
 >
 
-export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
+export const Select: React.ForwardRefExoticComponent<SelectProps> = React.forwardRef(
   ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
     const props = { size, ref, ...remainingProps }
 

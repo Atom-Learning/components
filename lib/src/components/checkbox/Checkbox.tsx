@@ -66,10 +66,9 @@ const toIconSize = {
   lg: 'md'
 }
 
-export const Checkbox = React.forwardRef<
-  HTMLButtonElement,
+export const Checkbox: React.ForwardRefExoticComponent<
   React.ComponentProps<typeof StyledCheckbox>
->(({ size = 'md', checked, ...rest }, ref) => {
+> = React.forwardRef(({ size = 'md', checked, ...rest }, ref) => {
   const iconSize = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
     [size]

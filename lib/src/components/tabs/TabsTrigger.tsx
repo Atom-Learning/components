@@ -46,12 +46,10 @@ const StyledTabsTrigger = styled(Trigger, {
   }
 })
 
-interface TabsTriggerProps
-  extends React.ComponentProps<typeof StyledTabsTrigger> {
-  value: string
-}
-
-export const TabsTrigger = ({ children, ...rest }: TabsTriggerProps) => (
+export const TabsTrigger = ({
+  children,
+  ...rest
+}: React.ComponentProps<typeof StyledTabsTrigger> & { value: string }) => (
   <StyledTabsTrigger {...rest}>
     <Text size="sm" as="span">
       {children}

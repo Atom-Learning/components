@@ -14,18 +14,14 @@ const StyledRoot = styled(TreeList, {})
 
 type TreeProps = React.ComponentProps<typeof StyledRoot>
 
-export const TreeRoot = React.forwardRef(
-  (
-    { children, ...rest }: TreeProps,
-    ref: React.ForwardedRef<HTMLUListElement>
-  ) => {
+export const TreeRoot: React.ForwardRefExoticComponent<TreeProps> =
+  React.forwardRef(({ children, ...rest }, ref) => {
     return (
       <StyledRoot {...rest} ref={ref} role="tree">
         {children}
       </StyledRoot>
     )
-  }
-)
+  })
 
 export const Tree = Object.assign(TreeRoot, {
   Collapsible: TreeCollapsible,

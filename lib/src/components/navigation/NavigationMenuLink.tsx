@@ -1,7 +1,7 @@
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu'
 import React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
 import {
@@ -52,25 +52,19 @@ const StyledLink = styled(
   }
 )
 
-type NavigationMenuLinkProps = {
-  href: string
-  active?: boolean
-  disabled?: boolean
-  variant?: 'link' | 'dropdownItem'
-  css?: CSS
-}
-
-export const NavigationMenuLink = React.forwardRef<
-  HTMLAnchorElement,
-  React.PropsWithChildren<NavigationMenuLinkProps>
->(
+export const NavigationMenuLink: React.ForwardRefExoticComponent<
+  Omit<React.ComponentProps<typeof StyledLink>, 'elementType'> & {
+    disabled?: boolean
+    variant?: React.ComponentProps<typeof StyledLink>['elementType']
+  }
+> = React.forwardRef(
   (
-    { children, href, disabled, css, variant = 'link', ...props },
+    { children, href, disabled, css, variant = 'link', ref, ...props },
     forwardedRef
   ) => (
     <ListItem>
       {disabled ? (
-        <DisabledButton disabled {...props}>
+        <DisabledButton disabled css={css}>
           {children}
         </DisabledButton>
       ) : (

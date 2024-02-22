@@ -28,8 +28,8 @@ type IconProps = Override<
   }
 >
 
-export const Icon = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ is: SVG, size = 'md', ...remainingProps }, ref) => (
+export const Icon: React.ForwardRefExoticComponent<IconProps> =
+  React.forwardRef(({ is: SVG, size = 'md', ...remainingProps }, ref) => (
     <StyledIcon
       size={size}
       aria-hidden="true"
@@ -37,5 +37,4 @@ export const Icon = React.forwardRef<SVGSVGElement, IconProps>(
       as={SVG}
       ref={ref}
     />
-  )
-)
+  ))

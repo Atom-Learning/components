@@ -53,59 +53,57 @@ export type TBadgeProps = React.ComponentProps<typeof StyledBadge> & {
   overflow?: React.ComponentProps<typeof BadgeText>['overflow']
 }
 
-type TBadge = React.ForwardRefExoticComponent<TBadgeProps> & {
-  Icon: typeof BadgeIcon
-  Text: typeof BadgeText
-}
+type TBadgeInnerProps = Omit<TBadgeProps, 'size' | 'overflow'>
 
-type TBadgeInnerProps = Omit<Omit<TBadgeProps, 'size'>, 'overflow'>
+const BadgeInner: React.ForwardRefExoticComponent<TBadgeInnerProps> =
+  React.forwardRef(
+    ({ theme = 'info', emphasis = 'subtle', children, ...rest }, ref) => {
+      const { size, overflow, isOverflowing } = React.useContext(BadgeContext)
+      const [badgeElRef, setBadgeElRef] = useCallbackRefState()
+      React.useImperativeHandle(ref, () => badgeElRef as HTMLDivElement)
 
-const BadgeInner = React.forwardRef<HTMLDivElement, TBadgeInnerProps>(
-  ({ theme = 'info', emphasis = 'subtle', children, ...rest }, ref) => {
-    const { size, overflow, isOverflowing } = React.useContext(BadgeContext)
-    const [badgeElRef, setBadgeElRef] = useCallbackRefState()
-    React.useImperativeHandle(ref, () => badgeElRef as HTMLDivElement)
+      const label = badgeElRef?.textContent
 
-    const label = badgeElRef?.textContent
-
-    return (
-      <OptionalTooltipWrapper
-        hasTooltip={overflow === 'ellipsis' && isOverflowing}
-        label={label}
-      >
-        <StyledBadge
-          role="status"
-          emphasis={emphasis}
-          size={size}
-          {...rest}
-          className={badgeColorSchemes[theme]}
-          ref={setBadgeElRef}
+      return (
+        <OptionalTooltipWrapper
+          hasTooltip={overflow === 'ellipsis' && isOverflowing}
+          label={label}
         >
-          {React.Children.map(children, (child) => {
-            if (typeof child === 'string' || typeof child === 'number') {
-              return <BadgeText>{child}</BadgeText>
-            }
-            if (React.isValidElement(child) && child.type === Icon) {
-              return <BadgeIcon {...child.props} />
-            }
-            return child
-          })}
-        </StyledBadge>
-      </OptionalTooltipWrapper>
-    )
-  }
-)
+          <StyledBadge
+            role="status"
+            emphasis={emphasis}
+            size={size}
+            {...rest}
+            className={badgeColorSchemes[theme]}
+            ref={setBadgeElRef}
+          >
+            {React.Children.map(children, (child) => {
+              if (typeof child === 'string' || typeof child === 'number') {
+                return <BadgeText>{child}</BadgeText>
+              }
+              if (React.isValidElement(child) && child.type === Icon) {
+                return <BadgeIcon {...child.props} />
+              }
+              return child
+            })}
+          </StyledBadge>
+        </OptionalTooltipWrapper>
+      )
+    }
+  )
 
-export const Badge = React.forwardRef<HTMLDivElement, TBadgeProps>(
-  ({ size = 'sm', overflow = 'wrap', ...rest }, ref) => {
+const BadgeComponent: React.ForwardRefExoticComponent<TBadgeProps> =
+  React.forwardRef(({ size = 'sm', overflow = 'wrap', ...rest }, ref) => {
     return (
       <BadgeProvider size={size} overflow={overflow}>
         <BadgeInner {...rest} ref={ref} />
       </BadgeProvider>
     )
-  }
-) as TBadge
+  })
 
-Badge.displayName = 'Badge'
-Badge.Icon = BadgeIcon
-Badge.Text = BadgeText
+export const Badge = Object.assign(BadgeComponent, {
+  Icon: BadgeIcon,
+  Text: BadgeText
+})
+
+BadgeComponent.displayName = 'Badge'
