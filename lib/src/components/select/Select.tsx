@@ -78,7 +78,7 @@ export type SelectProps = Override<
   // )
 >
 
-export const Select: React.FC<SelectProps> = React.forwardRef(
+export const Select = React.forwardRef<HTMLSelectElement, SelectProps>(
   ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
     const props = { size, ref, ...remainingProps }
 

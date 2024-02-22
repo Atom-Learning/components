@@ -22,9 +22,10 @@ type NavigationMenuDropdownContentProps = React.ComponentProps<
   typeof StyledContent
 >
 
-export const NavigationMenuDropdownContent: React.FC<
-  NavigationMenuDropdownContentProps
-> = ({ children, ...rest }) => (
+export const NavigationMenuDropdownContent = ({
+  children,
+  ...rest
+}: NavigationMenuDropdownContentProps) => (
   <StyledContent
     onPointerMove={preventEvent}
     onPointerLeave={preventEvent}

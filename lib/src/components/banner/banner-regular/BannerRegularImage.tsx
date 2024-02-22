@@ -30,9 +30,9 @@ const StyledImage = styled(Image, {
   objectFit: 'cover'
 })
 
-export const BannerRegularImage: React.FC<
-  React.ComponentProps<typeof Image>
-> = (props) => {
+export const BannerRegularImage = (
+  props: React.ComponentProps<typeof Image>
+) => {
   const { size } = useBannerContext()
 
   return (

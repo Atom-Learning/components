@@ -21,7 +21,7 @@ const StepperStepsContainer = styled(Flex, {
   }
 })
 
-export const StepperSteps: React.FC<IStepperStepsProps> = ({ css }) => {
+export const StepperSteps = ({ css }: IStepperStepsProps) => {
   const {
     steps,
     goToStep,

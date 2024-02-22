@@ -4,15 +4,16 @@ import { CSS } from '~/stitches'
 
 import { Box } from '../box'
 import { useStickyColumnsCss } from './useStickyColumnsCss'
-interface ITableStickyColumnsContainerProps {
-  children: React.ReactNode
+
+export const TableStickyColumnsContainer = ({
+  children,
+  numberOfStickyColumns = 0,
+  css,
+  ...restProps
+}: React.PropsWithChildren<{
   numberOfStickyColumns?: number
   css?: CSS
-}
-
-export const TableStickyColumnsContainer: React.FC<
-  ITableStickyColumnsContainerProps
-> = ({ children, numberOfStickyColumns = 0, css, ...restProps }) => {
+}>) => {
   const [hasScroll, setHasScroll] = React.useState<boolean>(false)
   const scrollContainerRef = React.useRef(null)
   const { columnsCss } = useStickyColumnsCss(

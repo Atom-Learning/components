@@ -10,33 +10,30 @@ import { BannerSlimDismiss } from './BannerSlimDismiss'
 import { BannerSlimImage } from './BannerSlimImage'
 import { BannerSlimText } from './BannerSlimText'
 
-export const BannerSlim: React.FC<
-  React.ComponentProps<typeof Banner> &
-    React.ComponentProps<typeof BannerContainer>
-> & {
-  Content: typeof BannerSlimContent
-  Text: typeof BannerSlimText
-  Image: typeof BannerSlimImage
-  Button: typeof BannerSlimButton
-  Dismiss: typeof BannerSlimDismiss
-  Actions: typeof BannerSlimActions
-} = ({ colorScheme, size, emphasis, onDismiss, ...rest }) => {
-  return (
-    <Banner size={size} emphasis={emphasis}>
-      <BannerSlimContainer
-        colorScheme={colorScheme}
-        onDismiss={onDismiss}
-        {...rest}
-      />
-    </Banner>
-  )
-}
+const BannerSlimComponent = ({
+  colorScheme,
+  size,
+  emphasis,
+  onDismiss,
+  ...rest
+}: React.ComponentProps<typeof Banner> &
+  React.ComponentProps<typeof BannerContainer>) => (
+  <Banner size={size} emphasis={emphasis}>
+    <BannerSlimContainer
+      colorScheme={colorScheme}
+      onDismiss={onDismiss}
+      {...rest}
+    />
+  </Banner>
+)
 
-BannerSlim.Content = BannerSlimContent
-BannerSlim.Text = BannerSlimText
-BannerSlim.Image = BannerSlimImage
-BannerSlim.Button = BannerSlimButton
-BannerSlim.Dismiss = BannerSlimDismiss
-BannerSlim.Actions = BannerSlimActions
+export const BannerSlim = Object.assign(BannerSlimComponent, {
+  Content: BannerSlimContent,
+  Text: BannerSlimText,
+  Image: BannerSlimImage,
+  Button: BannerSlimButton,
+  Dismiss: BannerSlimDismiss,
+  Actions: BannerSlimActions
+})
 
-BannerSlim.displayName = 'BannerSlim'
+BannerSlimComponent.displayName = 'BannerSlim'

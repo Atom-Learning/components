@@ -18,9 +18,7 @@ const Fieldset = styled('fieldset', {
 type RadioButtonFieldProps = React.ComponentProps<typeof RadioButtonGroup> &
   FieldElementWrapperProps
 
-export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
-  Item: typeof RadioField
-} = ({
+const RadioButtonFieldComponent = ({
   children,
   css,
   direction = 'column',
@@ -32,7 +30,7 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   validation,
   onValueChange,
   ...remainingProps
-}) => {
+}: RadioButtonFieldProps) => {
   const { control } = useFormContext()
   const {
     field: { ref, onChange, value: innerValue, name: innerName }
@@ -81,6 +79,8 @@ export const RadioButtonField: React.FC<RadioButtonFieldProps> & {
   )
 }
 
-RadioButtonField.Item = RadioField
+export const RadioButtonField = Object.assign(RadioButtonFieldComponent, {
+  Item: RadioField
+})
 
-RadioButtonField.displayName = 'RadioButtonField'
+RadioButtonFieldComponent.displayName = 'RadioButtonField'

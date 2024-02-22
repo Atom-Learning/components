@@ -9,14 +9,6 @@ import { colorSchemes as topBarColorSchemes } from './stitches.topBar.colorschem
 import { TopBarActionIcon } from './TopBarActionIcon'
 import { TopBarBrand, TopBarBrandLogo, TopBarBrandName } from './TopBarBrand'
 
-interface TopBarSubComponents {
-  Brand: typeof TopBarBrand
-  BrandLogo: typeof TopBarBrandLogo
-  BrandName: typeof TopBarBrandName
-  ActionIcon: typeof TopBarActionIcon
-  Divider: typeof TopBarDivider
-}
-
 const TopBarDivider = () => (
   <Divider orientation="vertical" css={{ height: '$2', bg: '$divider' }} />
 )
@@ -77,11 +69,11 @@ interface TopBarProps extends StyledRootProps {
   className?: string
 }
 
-export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
+const TopBarComponent = ({
   size = 'md',
   className = topBarColorSchemes['light'],
   ...props
-}) => {
+}: TopBarProps) => {
   const { y: scrollPositionY } = useWindowScrollPosition()
 
   return (
@@ -95,10 +87,12 @@ export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
   )
 }
 
-TopBar.Brand = TopBarBrand
-TopBar.BrandLogo = TopBarBrandLogo
-TopBar.BrandName = TopBarBrandName
-TopBar.ActionIcon = TopBarActionIcon
-TopBar.Divider = TopBarDivider
+export const TopBar = Object.assign(TopBarComponent, {
+  Brand: TopBarBrand,
+  BrandLogo: TopBarBrandLogo,
+  BrandName: TopBarBrandName,
+  ActionIcon: TopBarActionIcon,
+  Divider: TopBarDivider
+})
 
-TopBar.displayName = 'TopBar'
+TopBarComponent.displayName = 'TopBar'

@@ -40,11 +40,13 @@ const StyledChevronActionIcon = styled(ActionIcon, {
 
 const SCROLL_STEP = 0.8 // Used to scroll 80% of clientWidth
 
-export const TabsTriggerList: React.FC<
-  React.ComponentProps<typeof StyledTriggerList> & {
-    colorScheme?: TcolorScheme
-  }
-> = ({ children, colorScheme = {}, ...rest }) => {
+export const TabsTriggerList = ({
+  children,
+  colorScheme = {},
+  ...rest
+}: React.ComponentProps<typeof StyledTriggerList> & {
+  colorScheme?: TcolorScheme
+}) => {
   const [listRef, setListRefCallback] = useCallbackRefState()
 
   const { width } = useSize({ element: listRef, delay: 500 })

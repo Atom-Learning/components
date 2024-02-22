@@ -13,10 +13,10 @@ export type DataTableDraggableRowProps = React.ComponentProps<
   idColumn?: string
 }
 
-export const DragAndDropTableRow: React.FC<DataTableDraggableRowProps> = ({
+export const DragAndDropTableRow = ({
   row,
   idColumn = 'id'
-}) => {
+}: DataTableDraggableRowProps) => {
   const rowId = row.original[idColumn] as React.ReactText
   return (
     <Sortable.Item id={rowId} asChild>

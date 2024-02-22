@@ -10,12 +10,7 @@ const StyledImage = styled(Image, {
   objectFit: 'cover'
 })
 
-type TAvatarImageProps = {
-  src: string
-  alt: string
-}
-
-export const AvatarImage: React.FC<TAvatarImageProps> = ({ src, alt }) => {
+export const AvatarImage = ({ src, alt }: { src: string; alt: string }) => {
   if (!src) {
     return <AvatarInitial />
   }

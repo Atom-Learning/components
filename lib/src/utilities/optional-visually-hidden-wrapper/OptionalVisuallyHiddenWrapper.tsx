@@ -1,9 +1,12 @@
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 import * as React from 'react'
 
-export const OptionalVisuallyHiddenWrapper: React.FC<{
+export const OptionalVisuallyHiddenWrapper = ({
+  children,
+  hidden = false
+}: React.PropsWithChildren<{
   hidden?: boolean
-}> = ({ children, hidden = false }) => {
+}>) => {
   if (hidden) return <VisuallyHidden.Root>{children}</VisuallyHidden.Root>
 
   return children ? (

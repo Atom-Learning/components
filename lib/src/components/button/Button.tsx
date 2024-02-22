@@ -196,6 +196,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       )}
     </StyledButton>
   )
-) as React.FC<ButtonProps>
+)
 
 Button.displayName = 'Button'

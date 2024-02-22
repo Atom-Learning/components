@@ -9,9 +9,11 @@ const StyledLink = styled('a', {
   textDecoration: 'none'
 })
 
-export const DropdownMenuLinkItem: React.FC<
-  React.ComponentProps<typeof DropdownMenuItem> & { href: string }
-> = ({ children, href, ...props }) => (
+export const DropdownMenuLinkItem = ({
+  children,
+  href,
+  ...props
+}: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => (
   <DropdownMenuItem {...props} asChild>
     <StyledLink href={href} role="menuitem" {...getExternalAnchorProps(href)}>
       {children}

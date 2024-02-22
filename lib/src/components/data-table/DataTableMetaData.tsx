@@ -4,7 +4,17 @@ import * as React from 'react'
 import { Text } from '../text'
 import { useDataTable } from './index'
 
-interface IDataTableMetaDataProps {
+const defaultCopy = {
+  sorted_by: 'Sorted by',
+  ascending: 'ascending',
+  descending: 'descending',
+  separator: '-'
+}
+
+export const DataTableMetaData = ({
+  copy,
+  css
+}: {
   copy?: {
     sorted_by?: string
     ascending?: string
@@ -13,18 +23,6 @@ interface IDataTableMetaDataProps {
   }
   sortLabel?: string
   css?: CSS
-}
-
-const defaultCopy = {
-  sorted_by: 'Sorted by',
-  ascending: 'ascending',
-  descending: 'descending',
-  separator: '-'
-}
-
-export const DataTableMetaData: React.FC<IDataTableMetaDataProps> = ({
-  copy,
-  css
 }) => {
   const { getState, columns, getRowModel, rowSelection } = useDataTable()
   const { sorting } = getState()

@@ -15,7 +15,7 @@ type AlertDialogContentProps = React.ComponentProps<typeof AlertDialog> & {
   onClose: () => void
 } & alert
 
-export const Alert: React.FC<AlertDialogContentProps> = ({
+export const Alert = ({
   title,
   size,
   theme,
@@ -27,7 +27,7 @@ export const Alert: React.FC<AlertDialogContentProps> = ({
   confirmElement,
   cancelElement,
   ...remainingProps
-}) => (
+}: AlertDialogContentProps) => (
   <AlertDialog defaultOpen>
     <AlertDialog.Content
       size={size}

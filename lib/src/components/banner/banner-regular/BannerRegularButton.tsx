@@ -5,9 +5,9 @@ import { overrideStitchesVariantValue } from '~/utilities/override-stitches-vari
 import { Button } from '../../button'
 import { useBannerContext } from '../BannerContext'
 
-export const BannerRegularButton: React.FC<
-  React.ComponentProps<typeof Button>
-> = (props) => {
+export const BannerRegularButton = (
+  props: React.ComponentProps<typeof Button>
+) => {
   const { emphasis, size } = useBannerContext()
 
   const fullWidth = React.useMemo(

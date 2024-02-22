@@ -38,12 +38,12 @@ type ProgressBarProps = React.ComponentPropsWithoutRef<
     | { 'aria-label': string; id?: string }
   )
 
-export const ProgressBar: React.FC<ProgressBarProps> = ({
+export const ProgressBar = ({
   value,
   max = 100,
   theme = 'primary',
   ...remainingProps
-}) => (
+}: ProgressBarProps) => (
   <StyledProgressBar value={value} max={max} theme={theme} {...remainingProps}>
     <StyledIndicator
       style={{

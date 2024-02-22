@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 import { DataTableBody } from './DataTableBody'
 import { DataTableBulkActions } from './DataTableBulkActions'
 import { DataTableProvider } from './DataTableContext'
@@ -18,28 +16,35 @@ import { DataTableTable } from './DataTableTable'
 import { DragAndDropTable } from './drag-and-drop'
 import { Pagination } from './pagination'
 
-type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
+/** Context provider for DataTable state and logic.
+ *
+ * Children can call `useDataTable` to access everything provided by `@tanstack/react-table` plus
+ * the functionality we've built on top.
+ */
+export const DataTable = Object.assign(DataTableProvider, {
   /** Default table body implementation for `DataTable`.
    *
    * Can be configured with alternating colours of rows. If you need more customisation options,
    * you can build your own implementation with `useDataTable()` and the UI-only `Table` components.
    */
-  Body: typeof DataTableBody
+  Body: DataTableBody,
 
   /** Default table data cell implementation for `DataTable`
    *
    *
    */
-  DataCell: typeof DataTableDataCell
+  DataCell: DataTableDataCell,
+
   /**
    * Used in place of `DataTable.Table` to render a table with rows that the user can sort by drag-and-drop
    */
-  DragAndDropTable: typeof DragAndDropTable
+  DragAndDropTable: DragAndDropTable,
+
   /** Default global search implementation for `DataTable`
    *
    * If you need more customisation options, you can compose your own implementation with our UI-only input components and `useDataTable`.
    */
-  GlobalFilter: typeof DataTableGlobalFilter
+  GlobalFilter: DataTableGlobalFilter,
 
   /** Default table head implementation
    *
@@ -47,35 +52,34 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * If you need more customisation options, you can build your own implementation
    * with `useDataTable` and the UI-only `Table` components.
    */
+  Head: DataTableHead,
 
-  Head: typeof DataTableHead
   /** Default header implementation for `DataTable`
    *
    * Can be configured to make the column sortable. If you need more customisation options,
    * you can build your own implementation with the UI-only `Table` components.
    */
+  HeaderCell: DataTableHeaderCell,
 
-  HeaderCell: typeof DataTableHeaderCell
   /** Default pagination implementation for `DataTable`
    *
    * Can navigate forward, backward, or to any specific page. If you need more customisation options,
    * you can build your own implementation with `useDataTable` and other UI components.
    *
    */
+  MetaData: DataTableMetaData,
 
-  MetaData: typeof DataTableMetaData
   /** Default display of amount of items and current sorting status for 'DataTable'
    *
    */
+  Pagination: Pagination,
 
-  Pagination: typeof Pagination
   /** Default row implementation for `DataTable`
    *
    * Renders all visible cells as `Table.Cell`. If you need more customisation options,
    * you can build your own implementation with the UI-only `Table` components.
    */
-
-  Row: typeof DataTableRow
+  Row: DataTableRow,
 
   /** Default table implementation for `DataTable`.
    *
@@ -86,7 +90,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * scratch with `useDataTable` and the UI-only `Table` components.
    *
    */
-  Table: typeof DataTableTable
+  Table: DataTableTable,
 
   /** Default loading implementation for remote data
    *
@@ -95,7 +99,7 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * If you need more customisation, you can compose your own implentation, `asyncDataState`
    * can be retrieved from `useDataTable`
    */
-  Loading: typeof DataTableLoading
+  Loading: DataTableLoading,
 
   /** Default error implementation for remote data
    *
@@ -108,53 +112,29 @@ type TDataTable = React.FC<React.ComponentProps<typeof DataTableProvider>> & {
    * can be retrieved from `useDataTable`
    *
    */
-  Error: typeof DataTableError
+  Error: DataTableError,
 
   /** Empty state implementation for `DataTable`.
    *
    * Extends the EmptyState component
    */
-  EmptyState: typeof DataTableEmptyState
+  EmptyState: DataTableEmptyState,
 
   /** Empty state implementation for `DataTable`.
    *
    * Renders a checkbox on the header, allowing for bulk selection/deselection of all selectable rows
    */
-  SelectAllRowsCheckbox: typeof DataTableSelectAllRowsCheckbox
+  SelectAllRowsCheckbox: DataTableSelectAllRowsCheckbox,
 
   /** Empty state implementation for `DataTable`.
    *
    * Renders a checkbox on the header, allowing for individual selection/deselection of any selectable row
    */
-  RowSelectionCheckbox: typeof DataTableRowSelectionCheckbox
+  RowSelectionCheckbox: DataTableRowSelectionCheckbox,
 
   /** Empty state implementation for `DataTable`.
    *
    * Renders a checkbox on the header, allowing for individual selection/deselection of any selectable row
    */
-  BulkActions: typeof DataTableBulkActions
-}
-
-/** Context provider for DataTable state and logic.
- *
- * Children can call `useDataTable` to access everything provided by `@tanstack/react-table` plus
- * the functionality we've built on top.
- */
-export const DataTable: TDataTable = (props) => <DataTableProvider {...props} />
-
-DataTable.Body = DataTableBody
-DataTable.DataCell = DataTableDataCell
-DataTable.DragAndDropTable = DragAndDropTable
-DataTable.Head = DataTableHead
-DataTable.HeaderCell = DataTableHeaderCell
-DataTable.MetaData = DataTableMetaData
-DataTable.Pagination = Pagination
-DataTable.Row = DataTableRow
-DataTable.GlobalFilter = DataTableGlobalFilter
-DataTable.Table = DataTableTable
-DataTable.Loading = DataTableLoading
-DataTable.Error = DataTableError
-DataTable.EmptyState = DataTableEmptyState
-DataTable.SelectAllRowsCheckbox = DataTableSelectAllRowsCheckbox
-DataTable.RowSelectionCheckbox = DataTableRowSelectionCheckbox
-DataTable.BulkActions = DataTableBulkActions
+  BulkActions: DataTableBulkActions
+})

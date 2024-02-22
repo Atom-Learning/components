@@ -3,19 +3,21 @@ import * as React from 'react'
 import { CSS } from '~/stitches'
 
 import { Table } from '../table'
+import { TableBody } from '../table/TableBody'
 import { DataTable } from './DataTable'
 import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
 import { DataTableLoading } from './DataTableLoading'
+import { DataTableHead } from './DataTableHead'
 
 export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
   'children' | 'numberOfStickyColumns'
 > &
   Partial<
-    Pick<React.ComponentProps<typeof DataTable.Head>, 'theme' | 'sortable'>
+    Pick<React.ComponentProps<typeof DataTableHead>, 'theme' | 'sortable'>
   > &
-  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>> & {
+  Partial<Pick<React.ComponentProps<typeof TableBody>, 'striped'>> & {
     scrollOptions?: {
       hasStickyHeader?: boolean
       headerCss?: CSS
@@ -24,7 +26,7 @@ export type DataTableTableProps = Omit<
     }
   }
 
-export const DataTableTable: React.FC<DataTableTableProps> = ({
+export const DataTableTable = ({
   sortable,
   striped,
   theme,
@@ -34,7 +36,7 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
     hasStickyHeader: false
   },
   ...props
-}) => {
+}: DataTableTableProps) => {
   const { asyncDataState, getTotalRows } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0

@@ -6,12 +6,10 @@ import { styled } from '~/stitches'
 
 const StyledSlide = styled(BaseSlide, {})
 
-type SlideProps = React.ComponentProps<typeof StyledSlide> & { index: number }
-
-export const CarouselSlide: React.FC<SlideProps> = ({
+export const CarouselSlide = ({
   children,
   ...remainingProps
-}) => (
+}: React.ComponentProps<typeof StyledSlide> & { index: number }) => (
   <StyledSlide {...remainingProps} tag="div">
     {/* padding to create the gap between slides */}
     <Box css={{ px: '$3' }}>{children}</Box>

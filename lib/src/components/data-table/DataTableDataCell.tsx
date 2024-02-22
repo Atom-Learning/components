@@ -8,9 +8,7 @@ type DataTableDataCellProps = {
   cell: Cell<Record<string, unknown>, unknown>
 }
 
-export const DataTableDataCell: React.FC<DataTableDataCellProps> = ({
-  cell
-}) => {
+export const DataTableDataCell = ({ cell }: DataTableDataCellProps) => {
   return (
     <Table.Cell key={cell.id}>
       {flexRender(cell.column.columnDef.cell, cell.getContext())}

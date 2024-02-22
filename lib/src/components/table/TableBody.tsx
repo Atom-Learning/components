@@ -24,9 +24,8 @@ const StyledTableBody = styled('tbody', {
 
 type TableBodyProps = React.ComponentProps<typeof StyledTableBody>
 
-export const TableBody: React.FC<TableBodyProps> = ({
-  striped = true,
-  ...rest
-}) => <StyledTableBody striped={striped} {...rest} />
+export const TableBody = ({ striped = true, ...rest }: TableBodyProps) => (
+  <StyledTableBody striped={striped} {...rest} />
+)
 
 TableBody.displayName = 'TableBody'

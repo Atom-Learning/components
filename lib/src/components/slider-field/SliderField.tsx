@@ -15,7 +15,7 @@ type SliderFieldProps = SliderProps &
   SliderValueType &
   FieldElementWrapperProps
 
-export const SliderField: React.FC<SliderFieldProps> = ({
+export const SliderField = ({
   css,
   hideLabel,
   label,
@@ -28,7 +28,7 @@ export const SliderField: React.FC<SliderFieldProps> = ({
   max = 100,
   steps = [],
   ...remainingProps
-}) => {
+}: SliderFieldProps) => {
   const { control } = useFormContext()
   const {
     field: { ref, onChange, value: innerValue, name: innerName }

@@ -8,12 +8,12 @@ export type TOptionalTooltipWrapperProps = {
   tooltipSide?: React.ComponentProps<typeof Tooltip.Content>['side']
 }
 
-export const OptionalTooltipWrapper: React.FC<TOptionalTooltipWrapperProps> = ({
+export const OptionalTooltipWrapper = ({
   hasTooltip,
   label,
   tooltipSide,
   children
-}) => {
+}: React.PropsWithChildren<TOptionalTooltipWrapperProps>) => {
   if (hasTooltip) {
     return (
       <Tooltip>

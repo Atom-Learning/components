@@ -8,10 +8,7 @@ type MarkdownLinkProps = {
   handleNode: (node: Content) => React.ReactElement
 }
 
-export const MarkdownLink: React.FC<MarkdownLinkProps> = ({
-  node,
-  handleNode
-}) => (
+export const MarkdownLink = ({ node, handleNode }: MarkdownLinkProps) => (
   <Link title={node.title ?? undefined} href={node.url}>
     {node.children?.map(handleNode)}
   </Link>

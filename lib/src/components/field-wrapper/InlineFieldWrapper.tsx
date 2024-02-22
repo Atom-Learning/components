@@ -19,7 +19,7 @@ type InlineFieldWrapperProps = {
   description?: string
 }
 
-export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
+export const InlineFieldWrapper = ({
   align = 'start',
   children,
   css,
@@ -28,7 +28,7 @@ export const InlineFieldWrapper: React.FC<InlineFieldWrapperProps> = ({
   error,
   label,
   required
-}) => (
+}: React.PropsWithChildren<InlineFieldWrapperProps>) => (
   <Box css={css}>
     <Label
       align={align}

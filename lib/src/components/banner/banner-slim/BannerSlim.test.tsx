@@ -5,9 +5,10 @@ import * as React from 'react'
 
 import { BannerSlim } from './'
 
-const BannerSlimImplementation: React.FC<
-  React.ComponentProps<typeof BannerSlim>
-> = ({ children, ...props }) => (
+const BannerSlimImplementation = ({
+  children,
+  ...props
+}: React.ComponentProps<typeof BannerSlim>) => (
   <BannerSlim {...props}>
     <BannerSlim.Content>
       <BannerSlim.Image src="https://picsum.photos/400/400" alt="image" />
@@ -23,9 +24,9 @@ const BannerSlimImplementation: React.FC<
   </BannerSlim>
 )
 
-const BannerSlimDismissibleImplementation: React.FC<
-  React.ComponentProps<typeof BannerSlim>
-> = (props) => (
+const BannerSlimDismissibleImplementation = (
+  props: React.ComponentProps<typeof BannerSlim>
+) => (
   <BannerSlimImplementation {...props}>
     <BannerSlim.Dismiss data-testid="dismiss" label="dismiss banner" />
   </BannerSlimImplementation>

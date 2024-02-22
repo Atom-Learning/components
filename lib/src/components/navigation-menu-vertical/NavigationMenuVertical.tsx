@@ -34,19 +34,8 @@ type TNavigationVerticalProps = Omit<
   | 'onValueChange'
 >
 
-type TNavigationVerticalType = React.FC<TNavigationVerticalProps> & {
-  Link: typeof NavigationMenuVerticalLink
-  Accordion: typeof NavigationMenuVerticalAccordion
-  AccordionContent: typeof NavigationMenuVerticalAccordionContent
-  AccordionTrigger: typeof NavigationMenuVerticalAccordionTrigger
-  Item: typeof NavigationMenuVerticalItem
-  ItemContent: typeof NavigationMenuVerticalItemContent
-  Icon: typeof NavigationMenuVerticalIcon
-  Text: typeof NavigationMenuVerticalText
-}
-
-export const NavigationMenuVertical = (({ children, ...rest }) => {
-  return (
+export const NavigationMenuVertical = Object.assign(
+  ({ children, ...rest }: TNavigationVerticalProps) => (
     <StyledRoot
       className={navigationMenuVerticalColorSchemes['light']}
       {...rest}
@@ -54,14 +43,15 @@ export const NavigationMenuVertical = (({ children, ...rest }) => {
     >
       <NavigationMenuVerticalList>{children}</NavigationMenuVerticalList>
     </StyledRoot>
-  )
-}) as TNavigationVerticalType
-
-NavigationMenuVertical.Link = NavigationMenuVerticalLink
-NavigationMenuVertical.Accordion = NavigationMenuVerticalAccordion
-NavigationMenuVertical.AccordionContent = NavigationMenuVerticalAccordionContent
-NavigationMenuVertical.AccordionTrigger = NavigationMenuVerticalAccordionTrigger
-NavigationMenuVertical.Item = NavigationMenuVerticalItem
-NavigationMenuVertical.ItemContent = NavigationMenuVerticalItemContent
-NavigationMenuVertical.Icon = NavigationMenuVerticalIcon
-NavigationMenuVertical.Text = NavigationMenuVerticalText
+  ),
+  {
+    Link: NavigationMenuVerticalLink,
+    Accordion: NavigationMenuVerticalAccordion,
+    AccordionContent: NavigationMenuVerticalAccordionContent,
+    AccordionTrigger: NavigationMenuVerticalAccordionTrigger,
+    Item: NavigationMenuVerticalItem,
+    ItemContent: NavigationMenuVerticalItemContent,
+    Icon: NavigationMenuVerticalIcon,
+    Text: NavigationMenuVerticalText
+  }
+)

@@ -15,7 +15,7 @@ const toTextSize = {
   xxl: 'lg'
 }
 
-export const AvatarInitial: React.FC<Record<string, never>> = () => {
+export const AvatarInitial = () => {
   const rootContext = React.useContext(AvatarRootContext)
   const { name, size } = rootContext
   const textSize = React.useMemo(
