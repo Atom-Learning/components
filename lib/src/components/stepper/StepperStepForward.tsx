@@ -9,7 +9,7 @@ export const StepperStepForward = ({
   children,
   onClick,
   ...rest
-}: IStepperNavigateProps & React.ComponentProps<typeof Button>) => {
+}: IStepperNavigateProps & Partial<React.ComponentProps<typeof Button>>) => {
   const { goToNextStep, activeStep } = useStepper()
 
   const handleClick = () => {
