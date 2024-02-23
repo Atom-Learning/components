@@ -8,6 +8,7 @@ const StyledDropdownMenu = styled(Root, {})
 
 const DropdownMenuInternal = (props) => {
   const { isOpen, setIsOpen } = React.useContext(DropdownMenuContext)
+  console.log(props, isOpen)
   return <StyledDropdownMenu open={isOpen} onOpenChange={setIsOpen} {...props} />
 }
 
