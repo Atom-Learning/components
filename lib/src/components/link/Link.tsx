@@ -48,15 +48,16 @@ type LinkProps = Override<
   React.ComponentProps<typeof StyledLink>,
   {
     as?: React.ComponentType | React.ElementType
-  } & NavigatorActions
+  } & NavigatorActions & { disabled: boolean }
 >
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
-  React.forwardRef(({ as, href, ...rest }, ref) => (
+  React.forwardRef(({ as, disabled, href, ...rest }, ref) => (
     <StyledLink
       as={as || (!href ? 'button' : undefined)}
       noCapsize={!href ? true : undefined}
       href={href}
+      disabled={disabled}
       {...rest}
       {...getExternalAnchorProps(href)}
       ref={ref}
