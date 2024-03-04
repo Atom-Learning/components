@@ -122,8 +122,8 @@
   "peerDependencies": {
     "@atom-learning/icons": "^1.0.0",
     "@atom-learning/theme": "^3.0.0",
-    "react": "^17",
-    "react-dom": "^17"
+    "react": "^17 || ^18",
+    "react-dom": "^17 || ^18"
   },
   "dependencies": {
     "@atom-learning/theme": "3.0.1",

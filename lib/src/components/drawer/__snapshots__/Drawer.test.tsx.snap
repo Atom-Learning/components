@@ -432,11 +432,11 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
 }
 
 <div
-  aria-describedby="radix-5"
-  aria-labelledby="radix-4"
+  aria-describedby="radix-:r5:"
+  aria-labelledby="radix-:r4:"
   class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-ktARzF c-ktARzF-UVOXS-position-left c-ktARzF-knFHFI-size-lg t-gMkhEo t-dmfxVJ"
   data-state="open"
-  id="radix-3"
+  id="radix-:r3:"
   role="dialog"
   style="pointer-events: auto;"
   tabindex="-1"
@@ -478,7 +478,7 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
 exports[`Drawer renders the trigger with the popover hidden by default 1`] = `
 <div>
   <button
-    aria-controls="radix-0"
+    aria-controls="radix-:r0:"
     aria-expanded="false"
     aria-haspopup="dialog"
     class="c-PJLV"
