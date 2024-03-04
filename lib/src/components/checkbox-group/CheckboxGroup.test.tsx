@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
@@ -89,10 +90,11 @@ describe(`CheckboxGroup component`, () => {
     const checkboxAllItemTopLevel = screen.getByTitle('top level all item')
     const checkboxItem1 = screen.getByTitle('1')
     const checkboxItem2 = screen.getByTitle('2')
-    const topLevelCheckboxes = [checkboxItem1, checkboxItem2]
     const checkboxAllItemNested = screen.getByTitle('all but nested')
     const checkboxItem1Nested = screen.getByTitle('1 nested')
     const checkboxItem2Nested = screen.getByTitle('2 nested')
+
+    const topLevelCheckboxes = [checkboxItem1, checkboxItem2]
     const nestedCheckboxes = [checkboxItem1Nested, checkboxItem2Nested]
     const allCheckboxes = [
       checkboxAllItemTopLevel,
@@ -105,19 +107,22 @@ describe(`CheckboxGroup component`, () => {
 
     expect(checkboxAllItemNested).not.toBeChecked()
 
-    nestedCheckboxes.forEach((checkbox) => {
+    nestedCheckboxes.forEach(async (checkbox) =>
       expect(checkbox).not.toBeChecked()
-      checkbox.click()
-    })
+    )
 
-    expect(checkboxAllItemNested).toBeChecked()
-    expect(checkboxAllItemTopLevel).toBePartiallyChecked()
+    nestedCheckboxes.forEach(
+      async (checkbox) => await userEvent.click(checkbox)
+    )
 
-    checkboxAllItemTopLevel.click()
+    await waitFor(() => expect(checkboxAllItemNested).toBeChecked())
+    await waitFor(() => expect(checkboxAllItemTopLevel).toBePartiallyChecked())
+
+    await userEvent.click(checkboxAllItemTopLevel)
 
     allCheckboxes.forEach((element) => expect(element).toBeChecked())
 
-    checkboxAllItemTopLevel.click()
+    await userEvent.click(checkboxAllItemTopLevel)
 
     allCheckboxes.forEach((element) => expect(element).not.toBeChecked())
   })

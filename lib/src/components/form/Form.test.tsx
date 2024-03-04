@@ -46,7 +46,7 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    userEvent.click(screen.getByText('Submit'))
+    await userEvent.click(screen.getByText('Submit'))
 
     expect(await screen.findByText('Name is required'))
   })
@@ -117,7 +117,7 @@ describe(`Form component`, () => {
     )
     const input = screen.getByRole('textbox', { name: 'Name' })
 
-    userEvent.type(input, 'Kyle Lowry')
+    await userEvent.type(input, 'Kyle Lowry')
     expect(input).toHaveValue('Kyle Lowry')
     expect(JSON.parse(sessionStorage.getItem('nameForm')).name).toEqual(
       'Kyle Lowry'
@@ -151,8 +151,8 @@ describe(`Form component`, () => {
     const nameInput = screen.getByRole('textbox', { name: 'Name' })
     const secretInput = screen.getByRole('textbox', { name: 'Secret' })
 
-    userEvent.type(nameInput, 'Kawhi Leonard')
-    userEvent.type(secretInput, 'Very secret secret')
+    await userEvent.type(nameInput, 'Kawhi Leonard')
+    await userEvent.type(secretInput, 'Very secret secret')
 
     const parsedStorage = JSON.parse(sessionStorage.getItem('nameAndSecret'))
     expect(parsedStorage).toEqual(expect.anything())
@@ -213,7 +213,7 @@ describe(`Form component`, () => {
 
     const input = screen.getByRole('textbox')
 
-    userEvent.type(input, 'test5')
+    await userEvent.type(input, 'test5')
 
     await waitFor(() => screen.getByRole('button').click())
 

@@ -603,6 +603,7 @@ exports[`Nav component renders 1`] = `
         class="c-jQFjpB c-jQFjpB-ikEdNcB-css"
         data-orientation="horizontal"
         data-state="open"
+        style="--radix-navigation-menu-viewport-width: 0px; --radix-navigation-menu-viewport-height: 0px;"
       >
         <div
           aria-labelledby="radix-:r0:-trigger-1"

@@ -48,17 +48,17 @@ describe('SideBar component', () => {
     const sidebar = screen.getByRole('navigation').firstChild as HTMLElement
     const link = screen.getByRole('link')
 
-    userEvent.hover(sidebar)
+    await userEvent.hover(sidebar)
     expect(screen.getByText('isExpanded'))
 
-    userEvent.unhover(sidebar)
+    await userEvent.unhover(sidebar)
     expect(screen.getByText('isNotExpanded'))
 
-    userEvent.tab()
+    await userEvent.tab()
     expect(link).toHaveFocus()
     expect(screen.getByText('isExpanded'))
 
-    userEvent.tab()
+    await userEvent.tab()
     expect(link).not.toHaveFocus()
     expect(screen.getByText('isNotExpanded'))
   })

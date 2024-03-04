@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/react'
+import { render, screen, waitFor, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
@@ -41,7 +41,15 @@ describe('Nav component', () => {
       container: document.body
     })
 
-    userEvent.click(screen.getByRole('button', { name: /theme/i }))
+    await userEvent.click(screen.getByRole('button', { name: /theme/i }))
+
+    await waitFor(() =>
+      // Have to query directly because there is no accessible way to access. The `style` attribute is added async and causes flakiness.
+      // eslint-disable-next-line testing-library/no-container, testing-library/no-node-access
+      expect(container.querySelector('div[data-state=open]')).toHaveAttribute(
+        'style'
+      )
+    )
 
     expect(container).toMatchSnapshot()
   })
@@ -62,7 +70,7 @@ describe('Nav component', () => {
   it('displays links when nav dropdown trigger is clicked', async () => {
     render(<ExampleNav />)
 
-    userEvent.click(screen.getByRole('button', { name: /theme/i }))
+    await userEvent.click(screen.getByRole('button', { name: /theme/i }))
 
     const dropdownList = within(
       screen.getByLabelText(/Theme/i, { selector: 'div' })
