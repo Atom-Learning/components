@@ -228,12 +228,6 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
   }
 }
 
-@media  {
-  .c-hMRxhp-igiJmlC-css {
-    stroke-width: 3;
-  }
-}
-
 <div>
   <ul
     class="c-dhzjXW c-gkooaz c-dhzjXW-iTKOFX-direction-column c-PJLV PJLV"

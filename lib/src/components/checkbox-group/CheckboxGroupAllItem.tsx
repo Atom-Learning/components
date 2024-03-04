@@ -32,6 +32,8 @@ export const CheckboxGroupAllItem = ({
   }
 
   const isAllChecked = (() => {
+    if (!checkedItems.length || !mountedItems.length) return false
+
     if (mountedItems.every((mountedItem) => checkedItems.includes(mountedItem)))
       return true
 
