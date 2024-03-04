@@ -2,16 +2,6 @@
 
 exports[`CheckboxGroup component renders a checkbox 1`] = `
 @media  {
-  .c-hMRxhp {
-    display: inline-block;
-    fill: none;
-    flex-shrink: 0;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
   .c-jgUzPy {
     position: absolute;
     top: 50%;
@@ -60,12 +50,6 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
 }
 
 @media  {
-  .c-hMRxhp-cyeZeh-size-sm {
-    height: var(--sizes-1);
-    width: var(--sizes-1);
-    stroke-width: 1.5;
-  }
-
   .c-dScekx-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
