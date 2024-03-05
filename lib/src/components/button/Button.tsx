@@ -135,7 +135,6 @@ export const StyledButton = styled('button', {
     getButtonSolidVariant('warning', '$warning', '$warningMid', '$warningDark', '$tonal500'),
     getButtonSolidVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
     getButtonSolidVariant('neutral', 'white', opacify('white', -0.1), opacify('white', -0.25), '$primary800'),
-
     getButtonOutlineVariant('primary', '$primary800', '$primary900', '$primary1000'),
     getButtonOutlineVariant('secondary', '$primary1000', '$primary1100', '$primary1200'),
     getButtonOutlineVariant('neutral', 'white', opacify('white', -0.2), opacify('white', -0.35))
