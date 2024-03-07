@@ -42,6 +42,11 @@ const StyledInput = styled('input', {
         height: '$5',
         fontSize: '$md',
         lineHeight: 2
+      },
+      xl: {
+        height: '$6',
+        fontSize: '$lg',
+        lineHeight: 2
       }
     },
     state: {
