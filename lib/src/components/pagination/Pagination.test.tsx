@@ -12,6 +12,8 @@ import { Pagination } from './index'
 import { Flex } from '../flex'
 import { Text } from '../text'
 import userEvent from '@testing-library/user-event'
+import { Icon } from '../icon'
+import { ChevronDown } from '@atom-learning/icons'
 
 const pageChangeSpy = jest.fn()
 
@@ -226,6 +228,7 @@ describe('Pagination component', () => {
         <Pagination.Popover>
           <Flex gap={1} align="center" css={{ cursor: 'pointer' }}>
             <Text>{`Question 1 / 10`}</Text>
+            <Icon is={ChevronDown} size="sm" />
           </Flex>
         </Pagination.Popover>
       </Pagination>
