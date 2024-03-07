@@ -53,4 +53,5 @@ export type PaginationProviderProps = Pick<BasePaginationProps, 'pagesCount'> &
 export interface PaginationProps extends PaginationProviderProps {
   colorScheme?: TcolorScheme
   css?: CSS
+  children?: React.ReactNode
 }
