@@ -5,7 +5,9 @@ import { ActionIcon, Flex, Icon, Popover } from '..'
 import { PaginationPage } from './PaginationPage'
 import { usePagination } from './usePagination'
 
-export const PaginationPopover = () => {
+export const PaginationPopover = ({
+  children
+}: React.PropsWithChildren<unknown>) => {
   const { pagesCount, labels } = usePagination()
   const paginationItems = Array.from(
     { length: pagesCount },
@@ -15,15 +17,19 @@ export const PaginationPopover = () => {
   return (
     <Popover>
       <Popover.Trigger asChild>
-        <ActionIcon
-          hasTooltip={false}
-          size="md"
-          theme="neutral"
-          label={labels?.popoverTriggerLabel || 'Open pagination popover'}
-          data-testid="pagination_popover_trigger"
-        >
-          <Icon is={Ellypsis} />
-        </ActionIcon>
+        {children ? (
+          children
+        ) : (
+          <ActionIcon
+            hasTooltip={false}
+            size="md"
+            theme="neutral"
+            label={labels?.popoverTriggerLabel || 'Open pagination popover'}
+            data-testid="pagination_popover_trigger"
+          >
+            <Icon is={Ellypsis} />
+          </ActionIcon>
+        )}
       </Popover.Trigger>
       <Popover.Content size="md" showCloseButton={false} css={{ p: 0 }}>
         <Flex
