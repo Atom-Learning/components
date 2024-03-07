@@ -17,9 +17,7 @@ export const PaginationPopover = ({
   return (
     <Popover>
       <Popover.Trigger asChild>
-        {children ? (
-          children
-        ) : (
+        {children || (
           <ActionIcon
             hasTooltip={false}
             size="md"

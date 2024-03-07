@@ -222,16 +222,13 @@ describe('Pagination component', () => {
 
   it('renders with custom popover trigger if turned on', async () => {
     await render(
-      <Pagination
-        pagesCount={10}
-        selectedPage={1}
-        showPopoverTrigger={true}
-        popoverTriggerLabel={
+      <Pagination pagesCount={10} selectedPage={1}>
+        <Pagination.Popover>
           <Flex gap={1} align="center" css={{ cursor: 'pointer' }}>
             <Text>{`Question 1 / 10`}</Text>
           </Flex>
-        }
-      />
+        </Pagination.Popover>
+      </Pagination>
     )
 
     expect(screen.queryByRole('button', { name: '1' })).not.toBeInTheDocument()

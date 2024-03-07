@@ -53,6 +53,5 @@ export type PaginationProviderProps = Pick<BasePaginationProps, 'pagesCount'> &
 export interface PaginationProps extends PaginationProviderProps {
   colorScheme?: TcolorScheme
   css?: CSS
-  showPopoverTrigger?: boolean
-  popoverTriggerLabel?: React.ReactNode
+  children?: React.ReactNode
 }
