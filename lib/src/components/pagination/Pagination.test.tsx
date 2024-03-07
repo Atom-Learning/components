@@ -9,6 +9,11 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { Pagination } from './index'
+import { Flex } from '../flex'
+import { Text } from '../text'
+import userEvent from '@testing-library/user-event'
+import { Icon } from '../icon'
+import { ChevronDown } from '@atom-learning/icons'
 
 const pageChangeSpy = jest.fn()
 
@@ -215,5 +220,27 @@ describe('Pagination component', () => {
     expect(
       await waitFor(() => axe(container), { timeout: 5000 })
     ).toHaveNoViolations()
+  })
+
+  it('renders with custom popover trigger if turned on', async () => {
+    await render(
+      <Pagination pagesCount={10} selectedPage={1}>
+        <Pagination.Popover>
+          <Flex gap={1} align="center" css={{ cursor: 'pointer' }}>
+            <Text>{`Question 1 / 10`}</Text>
+            <Icon is={ChevronDown} size="sm" />
+          </Flex>
+        </Pagination.Popover>
+      </Pagination>
+    )
+
+    expect(screen.queryByRole('button', { name: '1' })).not.toBeInTheDocument()
+    expect(screen.getByText('Question 1 / 10')).toBeVisible()
+
+    userEvent.click(screen.getByText('Question 1 / 10'))
+
+    const dialog = await screen.findByRole('dialog')
+
+    expect(within(dialog).getByText('1')).toBeVisible()
   })
 })
