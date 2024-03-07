@@ -28,13 +28,14 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<Input placeholder="Placeholder text" css={{ width: 300 }} />`} language={"tsx"} />
 
 
-      All components that use input accept three size variants- "sm" | "md" | "lg"
+      All components that use input accept four size variants- "sm" | "md" | "lg" | "xl"
 
 
       <CodeBlock live={true} preview={true} code={`<Flex css={{ flexDirection: 'column' }}>
         <Input placeholder="Small variant" css={{ width: 300 }} size="sm" />
         <Input placeholder="Medium variant" css={{ width: 300, mt: '$2' }} size="md" />
         <Input placeholder="Large variant" css={{ width: 300, mt: '$2' }} size="lg" />
+        <Input placeholder="XL variant" css={{ width: 300, mt: '$2' }} size="xl" />
       </Flex>`} language={"tsx"} />
 
 
