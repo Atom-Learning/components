@@ -28,7 +28,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<Input placeholder="Placeholder text" css={{ width: 300 }} />`} language={"tsx"} />
 
 
-      All components that use input accept four size variants- "sm" | "md" | "lg" | "xl"
+      All components that use input accept four size variants: "sm" | "md" | "lg" | "xl"
 
 
       <CodeBlock live={true} preview={true} code={`<Flex css={{ flexDirection: 'column' }}>
