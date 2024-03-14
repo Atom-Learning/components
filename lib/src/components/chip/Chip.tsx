@@ -68,7 +68,7 @@ export const StyledRoot = styled(Flex, {
   borderColor: '$primary800',
   color: '$primary900',
   bg: '$primary100',
-  '&[data-disabled]': {
+  '&[disabled]': {
     opacity: '0.3',
     pointerEvents: 'none'
   },

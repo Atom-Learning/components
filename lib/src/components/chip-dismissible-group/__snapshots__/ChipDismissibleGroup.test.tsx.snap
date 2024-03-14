@@ -6,7 +6,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     display: flex;
   }
 
-  .c-cDmpis {
+  .c-iCmdOp {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     border: 1px solid;
@@ -19,7 +19,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     background: var(--colors-primary100);
   }
 
-  .c-cDmpis[data-disabled] {
+  .c-iCmdOp[disabled] {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -137,19 +137,19 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-cDmpis-kIEsaE-size-md {
+  .c-iCmdOp-kIEsaE-size-md {
     height: var(--sizes-3);
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-cDmpis-kIEsaE-size-md::before {
+  .c-iCmdOp-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-cDmpis-kIEsaE-size-md::after {
+  .c-iCmdOp-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -204,7 +204,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     class="c-dhzjXW c-dhzjXW-ejCoEP-direction-row c-dhzjXW-XefLA-wrap-wrap c-dhzjXW-kaVYFn-gap-2"
   >
     <div
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-efCiES"
     >
       <span
         class="c-eOdeXL"
@@ -230,7 +230,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </button>
     </div>
     <div
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-efCiES"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-efCiES"
       data-disabled=""
     >
       <span

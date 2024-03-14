@@ -22,11 +22,11 @@ export const navigationMenuVerticalItemStyles = {
   '&[data-state=open]': {
     '--navigation-menu-vertical-item-font-weight': 600
   },
-  '&[data-disabled]': {
+  '&[disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
   },
-  '&:not([data-disabled])': {
+  '&:not([disabled])': {
     '&:hover': {
       bg: '$backgroundHover'
     },

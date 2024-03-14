@@ -29,11 +29,11 @@ const StyledTrigger = styled(Trigger, {
   cursor: 'pointer',
   bg: '$interactive2',
   color: '$interactiveForeground',
-  '&[data-disabled]': {
+  '&[disabled]': {
     opacity: 0.3,
     cursor: 'not-allowed'
   },
-  '&:not([data-disabled])': {
+  '&:not([disabled])': {
     '&:active, &:hover, &:focus-visible': {
       bg: '$interactive3'
     },
