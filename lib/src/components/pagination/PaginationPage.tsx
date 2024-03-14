@@ -96,7 +96,11 @@ const StyledButton = styled('button', {
   }
 })
 
-export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
+export const PaginationPage = ({
+  pageNumber,
+  css,
+  indicatedCSS
+}: PaginationPageProps) => {
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
@@ -115,7 +119,7 @@ export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
       selected={isSelected}
       size="md"
       onClick={() => goToPage(pageNumber)}
-      css={css}
+      css={{ ...css, ...(isIndicated ? { ...indicatedCSS } : {}) }}
       indicated={isIndicated}
       disabled={isDisabled}
       aria-current={isSelected && 'page'}

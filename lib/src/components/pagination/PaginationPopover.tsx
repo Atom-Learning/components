@@ -4,10 +4,19 @@ import React from 'react'
 import { ActionIcon, Flex, Icon, Popover } from '..'
 import { PaginationPage } from './PaginationPage'
 import { usePagination } from './usePagination'
+import { CSS } from '@stitches/react'
+
+interface PaginationPopoverProps {
+  pageCSS?: CSS
+  indicatedPageCSS?: CSS
+  children: React.ReactNode
+}
 
 export const PaginationPopover = ({
+  pageCSS,
+  indicatedPageCSS,
   children
-}: React.PropsWithChildren<unknown>) => {
+}: PaginationPopoverProps) => {
   const { pagesCount, labels } = usePagination()
   const paginationItems = Array.from(
     { length: pagesCount },
@@ -44,7 +53,8 @@ export const PaginationPopover = ({
               <PaginationPage
                 key={pageNumber}
                 pageNumber={pageNumber}
-                css={{ bg: '$white' }}
+                css={{ bg: '$white', ...pageCSS }}
+                indicatedCSS={indicatedPageCSS}
               />
             )
           })}

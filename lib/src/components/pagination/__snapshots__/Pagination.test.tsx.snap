@@ -506,14 +506,14 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="page"
       aria-disabled="false"
-      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md c-fmWFdu-bxzneo-selected-true"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md c-fmWFdu-bxzneo-selected-true c-fmWFdu-iPJLV-css"
     >
       1
     </button>
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md c-fmWFdu-iPJLV-css"
     >
       2
     </button>
@@ -553,7 +553,7 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md"
+      class="c-fmWFdu c-fmWFdu-cVoMNQ-size-md c-fmWFdu-iPJLV-css"
     >
       6
     </button>
