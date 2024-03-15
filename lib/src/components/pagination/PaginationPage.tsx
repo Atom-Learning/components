@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { focusVisibleStyleBlock } from '~/utilities'
+import { disabledStyle, focusVisibleStyleBlock } from '~/utilities'
 
 import { styled } from '../../stitches'
 import type { PaginationPageProps } from './types'
@@ -20,24 +20,25 @@ const StyledButton = styled('button', {
   p: '0',
   fontWeight: 400,
   color: '$grey800',
-  bg: '$base1',
+  bg: 'white',
   position: 'relative',
+
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$accent10',
-      bg: '$base2'
+      color: '$grey900',
+      bg: '$grey100'
     },
     '&:active': {
-      bg: '$base3',
+      bg: '$grey200',
       color: '$grey1000'
     },
     '&:focus-visible': {
       ...focusVisibleStyleBlock()
     }
   },
-  '&:disabled': {
-    opacity: '0.3',
-    cursor: 'not-allowed'
+  '&[disabled]': {
+    ...disabledStyle,
+    pointerEvents: 'none'
   },
   variants: {
     size: {
@@ -48,17 +49,17 @@ const StyledButton = styled('button', {
     },
     selected: {
       true: {
-        border: '1px solid $accent9',
-        color: '$accent9',
+        border: '1px solid $primary800',
+        color: '$primary800',
         fontWeight: 600,
         '&:not(:disabled)': {
           '&:hover': {
-            borderColor: '$accent10',
-            color: '$accent10'
+            borderColor: '$primary900',
+            color: '$primary900'
           },
           '&:active': {
-            borderColor: '$accent11',
-            fontColor: '$accent11'
+            borderColor: '$primary1000',
+            fontColor: '$primary1000'
           }
         }
       }
@@ -66,34 +67,53 @@ const StyledButton = styled('button', {
     indicated: {
       true: {
         fontWeight: 600,
-        color: '$accent9',
-        '&:after': {
-          content: '',
-          position: 'absolute',
-          bottom: '$1',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          borderRadius: '$round',
-          size: '4px',
-          bg: '$accent9'
-        },
+        color: 'white',
+        bg: '$primary800',
         '&:not(:disabled)': {
           '&:hover': {
-            color: '$accent10',
-            '&:after': {
-              bg: '$accent10'
-            }
+            color: 'white',
+            bg: '$primary900'
           },
           '&:active': {
-            color: '$accent11',
-            '&:after': {
-              bg: '$accent11'
-            }
+            color: 'white',
+            bg: '$primary1000'
           }
         }
       }
     }
-  }
+  },
+
+  compoundVariants: [
+    {
+      selected: true,
+      indicated: true,
+      css: {
+        fontWeight: 600,
+        color: 'white',
+        bg: '$primary800',
+        '&:before': {
+          content: '',
+          position: 'absolute',
+          zIndex: '-1',
+          inset: '-3px',
+          border: '1px solid $primary800',
+          borderRadius: '$0',
+          bg: 'transparent'
+        },
+
+        '&:not(:disabled)': {
+          '&:hover': {
+            color: 'white',
+            bg: '$primary900'
+          },
+          '&:active': {
+            color: 'white',
+            bg: '$primary1000'
+          }
+        }
+      }
+    }
+  ]
 })
 
 export const PaginationPage = ({

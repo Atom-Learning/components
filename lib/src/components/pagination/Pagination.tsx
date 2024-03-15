@@ -37,11 +37,9 @@ const PaginationComponent = ({
   return (
     <PaginationProvider {...paginationProviderProps}>
       <ColorScheme base="grey1" accent="primary1" {...colorScheme} asChild>
-        {children || (
-          <Flex gap={1} {...rest}>
-            <PaginationItems />
-          </Flex>
-        )}
+        <Flex gap={1} {...rest}>
+          {children || <PaginationItems />}
+        </Flex>
       </ColorScheme>
     </PaginationProvider>
   )
