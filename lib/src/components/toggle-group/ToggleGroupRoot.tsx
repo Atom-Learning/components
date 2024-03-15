@@ -9,7 +9,6 @@ import { StyledItem } from './ToggleGroupItem'
 type RootType = {
   orientation?: 'horizontal' | 'vertical'
   isFullWidth?: boolean
-  disableDeselect?: boolean
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
