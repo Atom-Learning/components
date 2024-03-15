@@ -332,7 +332,7 @@ exports[`Pagination component renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-dnHkjA {
+  .c-bGrWdo {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -346,28 +346,28 @@ exports[`Pagination component renders 1`] = `
     padding: 0;
     font-weight: 400;
     color: var(--colors-grey800);
-    background: white;
+    background: var(--colors-white);
     position: relative;
   }
 
-  .c-dnHkjA:not(:disabled):hover {
+  .c-bGrWdo:not(:disabled):hover {
     color: var(--colors-grey900);
     background: var(--colors-grey100);
   }
 
-  .c-dnHkjA:not(:disabled):active {
+  .c-bGrWdo:not(:disabled):active {
     background: var(--colors-grey200);
     color: var(--colors-grey1000);
   }
 
-  .c-dnHkjA:not(:disabled):focus-visible {
+  .c-bGrWdo:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-dnHkjA[disabled] {
+  .c-bGrWdo[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
@@ -441,23 +441,23 @@ exports[`Pagination component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dnHkjA-cVoMNQ-size-md {
+  .c-bGrWdo-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-dnHkjA-eqDSSE-selected-true {
+  .c-bGrWdo-eqDSSE-selected-true {
     border: 1px solid var(--colors-primary800);
     color: var(--colors-primary800);
     font-weight: 600;
   }
 
-  .c-dnHkjA-eqDSSE-selected-true:not(:disabled):hover {
+  .c-bGrWdo-eqDSSE-selected-true:not(:disabled):hover {
     border-color: var(--colors-primary900);
     color: var(--colors-primary900);
   }
 
-  .c-dnHkjA-eqDSSE-selected-true:not(:disabled):active {
+  .c-bGrWdo-eqDSSE-selected-true:not(:disabled):active {
     border-color: var(--colors-primary1000);
     font-color: var(--primary1000);
   }
@@ -507,14 +507,14 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="page"
       aria-disabled="false"
-      class="c-dnHkjA c-dnHkjA-cVoMNQ-size-md c-dnHkjA-eqDSSE-selected-true"
+      class="c-bGrWdo c-bGrWdo-cVoMNQ-size-md c-bGrWdo-eqDSSE-selected-true"
     >
       1
     </button>
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-dnHkjA c-dnHkjA-cVoMNQ-size-md"
+      class="c-bGrWdo c-bGrWdo-cVoMNQ-size-md"
     >
       2
     </button>
@@ -554,7 +554,7 @@ exports[`Pagination component renders 1`] = `
     <button
       aria-current="false"
       aria-disabled="false"
-      class="c-dnHkjA c-dnHkjA-cVoMNQ-size-md"
+      class="c-bGrWdo c-bGrWdo-cVoMNQ-size-md"
     >
       6
     </button>

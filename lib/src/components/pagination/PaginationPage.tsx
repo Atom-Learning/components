@@ -20,7 +20,7 @@ const StyledButton = styled('button', {
   p: '0',
   fontWeight: 400,
   color: '$grey800',
-  bg: 'white',
+  bg: '$white',
   position: 'relative',
 
   '&:not(:disabled)': {
@@ -67,15 +67,15 @@ const StyledButton = styled('button', {
     indicated: {
       true: {
         fontWeight: 600,
-        color: 'white',
+        color: '$white',
         bg: '$primary800',
         '&:not(:disabled)': {
           '&:hover': {
-            color: 'white',
+            color: '$white',
             bg: '$primary900'
           },
           '&:active': {
-            color: 'white',
+            color: '$white',
             bg: '$primary1000'
           }
         }
@@ -89,7 +89,7 @@ const StyledButton = styled('button', {
       indicated: true,
       css: {
         fontWeight: 600,
-        color: 'white',
+        color: '$white',
         bg: '$primary800',
         '&:before': {
           content: '',
@@ -103,11 +103,11 @@ const StyledButton = styled('button', {
 
         '&:not(:disabled)': {
           '&:hover': {
-            color: 'white',
+            color: '$white',
             bg: '$primary900'
           },
           '&:active': {
-            color: 'white',
+            color: '$white',
             bg: '$primary1000'
           }
         }
