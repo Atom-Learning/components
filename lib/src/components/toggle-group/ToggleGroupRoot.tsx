@@ -1,14 +1,15 @@
-import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import * as React from 'react'
 
 import { Flex } from '~/components/flex'
 import { styled } from '~/stitches'
+import { ToggleGroup } from '~/utilities/radix-overrides/toggle-group'
 
 import { StyledItem } from './ToggleGroupItem'
 
 type RootType = {
   orientation?: 'horizontal' | 'vertical'
   isFullWidth?: boolean
+  disableDeselect?: boolean
 }
 
 export const StyledRoot = styled(ToggleGroup.Root, {
