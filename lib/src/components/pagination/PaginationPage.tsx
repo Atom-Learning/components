@@ -96,7 +96,11 @@ const StyledButton = styled('button', {
   }
 })
 
-export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
+export const PaginationPage = ({
+  pageNumber,
+  css,
+  onClick
+}: PaginationPageProps) => {
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
@@ -110,11 +114,16 @@ export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
     onItemHover?.(pageNumber)
   }
 
+  const handleOnClick = (pageNumber) => {
+    onClick?.()
+    goToPage(pageNumber)
+  }
+
   return (
     <StyledButton
       selected={isSelected}
       size="md"
-      onClick={() => goToPage(pageNumber)}
+      onClick={() => handleOnClick(pageNumber)}
       css={css}
       indicated={isIndicated}
       disabled={isDisabled}
