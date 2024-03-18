@@ -19,18 +19,18 @@ const StyledButton = styled('button', {
   flexDirection: 'column',
   p: '0',
   fontWeight: 400,
-  color: '$grey800',
+  color: '$base9',
   bg: '$base1',
   position: 'relative',
 
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$accent10',
+      color: '$base10',
       bg: '$base2'
     },
     '&:active': {
       bg: '$base3',
-      color: '$grey1000'
+      color: '$base11'
     },
     '&:focus-visible': {
       ...focusVisibleStyleBlock()
@@ -68,15 +68,15 @@ const StyledButton = styled('button', {
       true: {
         fontWeight: 600,
         color: 'white',
-        bg: '$primary800',
+        bg: '$accent9',
         '&:not(:disabled)': {
           '&:hover': {
             color: 'white',
-            bg: '$primary900'
+            bg: '$accent10'
           },
           '&:active': {
             color: 'white',
-            bg: '$primary1000'
+            bg: '$accent11'
           }
         }
       }
@@ -90,25 +90,18 @@ const StyledButton = styled('button', {
       css: {
         fontWeight: 600,
         color: 'white',
-        bg: '$primary800',
-        '&:before': {
-          content: '',
-          position: 'absolute',
-          zIndex: '-1',
-          inset: '-3px',
-          border: '1px solid $primary800',
-          borderRadius: '$0',
-          bg: 'transparent'
-        },
+        bg: '$accent9',
+        boxShadow:
+          'white 0px 0px 0px 1px, var(--colors-accent9) 0px 0px 0px 2px',
 
         '&:not(:disabled)': {
           '&:hover': {
             color: 'white',
-            bg: '$primary900'
+            bg: '$accent10'
           },
           '&:active': {
             color: 'white',
-            bg: '$primary1000'
+            bg: '$accent11'
           }
         }
       }
