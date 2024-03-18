@@ -20,16 +20,16 @@ const StyledButton = styled('button', {
   p: '0',
   fontWeight: 400,
   color: '$grey800',
-  bg: '$white',
+  bg: '$base1',
   position: 'relative',
 
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$grey900',
-      bg: '$grey100'
+      color: '$accent10',
+      bg: '$base2'
     },
     '&:active': {
-      bg: '$grey200',
+      bg: '$base3',
       color: '$grey1000'
     },
     '&:focus-visible': {
@@ -49,17 +49,17 @@ const StyledButton = styled('button', {
     },
     selected: {
       true: {
-        border: '1px solid $primary800',
-        color: '$primary800',
+        border: '1px solid $accent9',
+        color: '$accent9',
         fontWeight: 600,
         '&:not(:disabled)': {
           '&:hover': {
-            borderColor: '$primary900',
-            color: '$primary900'
+            borderColor: '$accent10',
+            color: '$accent10'
           },
           '&:active': {
-            borderColor: '$primary1000',
-            fontColor: '$primary1000'
+            borderColor: '$accent11',
+            fontColor: '$accent11'
           }
         }
       }
@@ -67,15 +67,15 @@ const StyledButton = styled('button', {
     indicated: {
       true: {
         fontWeight: 600,
-        color: '$white',
+        color: 'white',
         bg: '$primary800',
         '&:not(:disabled)': {
           '&:hover': {
-            color: '$white',
+            color: 'white',
             bg: '$primary900'
           },
           '&:active': {
-            color: '$white',
+            color: 'white',
             bg: '$primary1000'
           }
         }
@@ -89,7 +89,7 @@ const StyledButton = styled('button', {
       indicated: true,
       css: {
         fontWeight: 600,
-        color: '$white',
+        color: 'white',
         bg: '$primary800',
         '&:before': {
           content: '',
@@ -103,11 +103,11 @@ const StyledButton = styled('button', {
 
         '&:not(:disabled)': {
           '&:hover': {
-            color: '$white',
+            color: 'white',
             bg: '$primary900'
           },
           '&:active': {
-            color: '$white',
+            color: 'white',
             bg: '$primary1000'
           }
         }
