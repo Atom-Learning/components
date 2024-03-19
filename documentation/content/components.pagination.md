@@ -27,7 +27,9 @@ tabs:
 
       # Examples
 
+
       #### Number of visible elements
+
 
       <CodeBlock live={true} preview={true} code={`
 
@@ -39,18 +41,20 @@ tabs:
 
       Above is an example of passing in a number to the `pagesCount` prop that will render 6 pagination items, the `visibleElementsCount` prop is set to 6 by default. So the user will see two navigation buttons, an action button to trigger the popover and 3 page numbers.
 
-      <CodeBlock live={true} preview={true} code={`
-
-      <Pagination
+      <CodeBlock live={true} preview={true} code={`<Pagination
         pagesCount={6}
         visibleElementsCount={8}
         colorScheme={{ base: 'grey1', accent: 'primary1'}}
-      /> `} language={"tsx"} />
+      />`} language={"tsx"} />
 
 
       Above is an example of passing `visibleElementsCount` prop and setting it to 8. The user will see two navigation buttons, an action button to trigger the popover and five page numbers.
 
+
+
+
       #### Disabled and indicated pages
+
 
       <CodeBlock live={true} preview={true} code={`
 
@@ -67,7 +71,10 @@ tabs:
       Above is an example of when we use the `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` prop which colours the background of page numbers 4 and 5,  and adding custom labels to the next/previous button and popover trigger.
 
 
+
+
       #### Color Scheme
+
 
       <CodeBlock live={true} preview={true} code={`
 
@@ -85,24 +92,27 @@ tabs:
       The number (eg. primary1, primary2) refers to the darkness of the palette. A scheme with 1 has a default background of white, and hover of pale colour. A scheme with 2 has a default shifted one level darker, so starts with that pale colour rather than white.
 
 
+
+
       #### Custom popover trigger
 
 
       The pagination can also be displayed just using the popover, no number list, with a custom trigger.
 
-      <CodeBlock live={true} preview={true} code={`
 
-      <Pagination
-        pagesCount={24}
-        selectedPage={1}
-        indicatedPages={[4,5]}
-      >
-        <Pagination.Popover>
-          <Button>
-            <Text>Question 1/24</Text>
-          </Button>
-        </Pagination.Popover>
-      </Pagination> `} language={"tsx"} />
+
+      <CodeBlock live={true} preview={true} code={`<Pagination
+              pagesCount={24}
+              selectedPage={1}
+              indicatedPages={[4,5]}
+            >
+              <Pagination.Popover>
+                <Button>
+                  <Text>Question 1/24</Text>
+                </Button>
+              </Pagination.Popover>
+            </Pagination>`} language={"undefined"} />
+
 
 
       ## API Reference
@@ -110,8 +120,8 @@ tabs:
 
       <ComponentProps component="Pagination" />
 
-      <ComponentProps component="PaginationProvider" />
 
+      <ComponentProps component="PaginationProvider" />
   - title: Visual
     content: >-
       ## Structure
