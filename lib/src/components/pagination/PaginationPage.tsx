@@ -19,17 +19,17 @@ const StyledButton = styled('button', {
   flexDirection: 'column',
   p: '0',
   fontWeight: 400,
-  color: '$grey800',
+  color: '$textSubtle',
   bg: '$base1',
   position: 'relative',
 
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$grey900',
+      color: '$textRegular',
       bg: '$base2'
     },
     '&:active': {
-      color: '$grey1000',
+      color: '$textBold',
       bg: '$base3'
     },
     '&:focus-visible': {
