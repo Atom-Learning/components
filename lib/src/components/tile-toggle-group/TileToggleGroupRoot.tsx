@@ -1,7 +1,7 @@
-import * as ToggleGroup from '@radix-ui/react-toggle-group'
 import * as React from 'react'
 
 import { TileGroup } from '~/components/tile'
+import { ToggleGroup } from '~/utilities/radix-overrides/toggle-group'
 
 type TTileToggleGroupRootProps = React.ComponentProps<typeof TileGroup> &
   React.ComponentProps<typeof ToggleGroup.Root>
