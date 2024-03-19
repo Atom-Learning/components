@@ -22,7 +22,7 @@ tabs:
       It can also take in a `selectedPage` prop which allows the parent component to pass in a numerical value indicating which page the parent component is currently showing, if the `selectedPage` prop is not passed in, the `Pagination` component as an internal state to keep track of the current page, by default this state is set to the first page.
 
 
-      The `Pagination` component also takes in a `disabledPages` props which is an array of numbers, which indicate which pagination items should be disabled, and it also takes in a `indicatedPages` prop which is also an array of numbers to indicate which pagination item should be display a dot under the page number, which represents the page as completed.
+      The `Pagination` component also takes in a `disabledPages` props which is an array of numbers, which indicate which pagination items should be disabled, and it also takes in a `indicatedPages` prop which is also an array of numbers to indicate which pagination item should be highlighted in the accent colour, which represents the page as completed.
 
 
       # Examples
@@ -44,31 +44,69 @@ tabs:
       <Pagination
         pagesCount={6}
         visibleElementsCount={8}
-        colorScheme={{ base: 'grey2', accent: 'blue1'}}
+        colorScheme={{ base: 'grey1', accent: 'primary1'}}
       /> `} language={"tsx"} />
 
 
       Above is an example of passing `visibleElementsCount` prop and setting it to 8. The user will see two navigation buttons, an action button to trigger the popover and five page numbers.
 
-
       <CodeBlock live={true} preview={true} code={`
 
       <Pagination
-        colorScheme={{ base: 'grey2', accent: 'blue1'}}
+        colorScheme={{ base: 'grey1', accent: 'primary1'}}
         disabledPages={[1,2]}
         indicatedPages={[4,5]}
+        visibleElementsCount={8}
         pagesCount={5}
         labels={{ popoverTiggerLabel: 'popover label', nextPageButtonLabel: 'next page label', previousPageButtonLabel: 'previous page label' }}
       />`} language={"tsx"} />
 
 
-      Above is an example of when we use the `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` prop which renders a dot under the page numbers 4 and 5,  and adding custom labels to the next/previous button and popover trigger.
+      Above is an example of when we use the `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` prop which colours the background of page numbers 4 and 5,  and adding custom labels to the next/previous button and popover trigger.
+
+
+      **Color Scheme** 
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <Pagination
+        pagesCount={6}
+        visibleElementsCount={8}
+        indicatedPages={[3]}
+        colorScheme={{ base: 'primary2', accent: 'purple1'}}
+      /> `} language={"tsx"} />
+
+
+      Above is an example of using the colorScheme property. Base is the unselected & unindicated state, and accent is used for the "highlighted" selection and indicated states. The default is `base: 'grey1' accent: 'primary1'`
+
+
+      The number (eg. primary1, primary2) refers to the darkness of the palette. A scheme with 1 has a default background of white, and hover of pale colour. A scheme with 2 has a default shifted one level darker, so starts with that pale colour rather than white.
+
+
+      **Custom popover trigger**
+
+
+      The pagination can also be displayed just using the popover, no number list, with a custom trigger.
+
+      <CodeBlock live={true} preview={true} code={`
+
+      <Pagination
+        pagesCount={24}
+        selectedPage={1}
+        indicatedPages={[4,5]}
+      >
+        <Pagination.Popover>
+          <Button>
+            <Text>Question 1/24</Text>
+          </Button>
+        </Pagination.Popover>
+      </Pagination> `} language={"tsx"} />
 
 
       ## API Reference
 
 
-      <ComponentProps component="Pagination" />
+      <ComponentProps component="Pagination" /> <ComponentProps component="PaginationProvider" />
   - title: Visual
     content: >-
       ## Structure
