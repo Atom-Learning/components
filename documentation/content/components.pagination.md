@@ -108,7 +108,10 @@ tabs:
       ## API Reference
 
 
-      <ComponentProps component="Pagination" /> <ComponentProps component="PaginationProvider" />
+      <ComponentProps component="Pagination" />
+
+      <ComponentProps component="PaginationProvider" />
+
   - title: Visual
     content: >-
       ## Structure

@@ -19,18 +19,18 @@ const StyledButton = styled('button', {
   flexDirection: 'column',
   p: '0',
   fontWeight: 400,
-  color: '$base9',
+  color: '$grey800',
   bg: '$base1',
   position: 'relative',
 
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$base10',
+      color: '$grey900',
       bg: '$base2'
     },
     '&:active': {
-      bg: '$base3',
-      color: '$base11'
+      color: '$grey1000',
+      bg: '$base3'
     },
     '&:focus-visible': {
       ...focusVisibleStyleBlock()
@@ -91,9 +91,10 @@ const StyledButton = styled('button', {
         fontWeight: 600,
         color: 'white',
         bg: '$accent9',
-        boxShadow:
-          'white 0px 0px 0px 1px, var(--colors-accent9) 0px 0px 0px 2px',
-
+        boxShadow: '$colors$accent9 0px 0px 0px 1px',
+        '&:not(:focus-visible)': {
+          borderColor: 'white !important'
+        },
         '&:not(:disabled)': {
           '&:hover': {
             color: 'white',
