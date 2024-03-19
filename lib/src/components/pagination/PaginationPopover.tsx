@@ -14,8 +14,10 @@ export const PaginationPopover = ({
     (_, index) => index + 1
   )
 
+  const [isOpen, setIsOpen] = React.useState<boolean>(false)
+
   return (
-    <Popover>
+    <Popover open={isOpen} onOpenChange={setIsOpen} defaultOpen={false}>
       <Popover.Trigger asChild>
         {children || (
           <ActionIcon
@@ -35,7 +37,7 @@ export const PaginationPopover = ({
             p: '$4',
             display: 'flex',
             flexWrap: 'wrap',
-            gap: 1,
+            gap: '$1',
             justifyContent: 'center'
           }}
         >
@@ -44,7 +46,7 @@ export const PaginationPopover = ({
               <PaginationPage
                 key={pageNumber}
                 pageNumber={pageNumber}
-                css={{ bg: '$white' }}
+                onClick={() => setIsOpen(false)}
               />
             )
           })}

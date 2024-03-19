@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { focusVisibleStyleBlock } from '~/utilities'
+import { disabledStyle, focusVisibleStyleBlock } from '~/utilities'
 
 import { styled } from '../../stitches'
 import type { PaginationPageProps } from './types'
@@ -19,25 +19,26 @@ const StyledButton = styled('button', {
   flexDirection: 'column',
   p: '0',
   fontWeight: 400,
-  color: '$grey800',
+  color: '$textSubtle',
   bg: '$base1',
   position: 'relative',
+
   '&:not(:disabled)': {
     '&:hover': {
-      color: '$accent10',
+      color: '$textRegular',
       bg: '$base2'
     },
     '&:active': {
-      bg: '$base3',
-      color: '$grey1000'
+      color: '$textBold',
+      bg: '$base3'
     },
     '&:focus-visible': {
       ...focusVisibleStyleBlock()
     }
   },
-  '&:disabled': {
-    opacity: '0.3',
-    cursor: 'not-allowed'
+  '&[disabled]': {
+    ...disabledStyle,
+    pointerEvents: 'none'
   },
   variants: {
     size: {
@@ -66,37 +67,54 @@ const StyledButton = styled('button', {
     indicated: {
       true: {
         fontWeight: 600,
-        color: '$accent9',
-        '&:after': {
-          content: '',
-          position: 'absolute',
-          bottom: '$1',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          borderRadius: '$round',
-          size: '4px',
-          bg: '$accent9'
-        },
+        color: 'white',
+        bg: '$accent9',
         '&:not(:disabled)': {
           '&:hover': {
-            color: '$accent10',
-            '&:after': {
-              bg: '$accent10'
-            }
+            color: 'white',
+            bg: '$accent10'
           },
           '&:active': {
-            color: '$accent11',
-            '&:after': {
-              bg: '$accent11'
-            }
+            color: 'white',
+            bg: '$accent11'
           }
         }
       }
     }
-  }
+  },
+
+  compoundVariants: [
+    {
+      selected: true,
+      indicated: true,
+      css: {
+        fontWeight: 600,
+        color: 'white',
+        bg: '$accent9',
+        boxShadow: '$colors$accent9 0px 0px 0px 1px',
+        '&:not(:focus-visible)': {
+          borderColor: 'white !important'
+        },
+        '&:not(:disabled)': {
+          '&:hover': {
+            color: 'white',
+            bg: '$accent10'
+          },
+          '&:active': {
+            color: 'white',
+            bg: '$accent11'
+          }
+        }
+      }
+    }
+  ]
 })
 
-export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
+export const PaginationPage = ({
+  pageNumber,
+  css,
+  onClick
+}: PaginationPageProps) => {
   const { currentPage, goToPage, indicatedPages, disabledPages, onItemHover } =
     usePagination()
 
@@ -110,11 +128,16 @@ export const PaginationPage = ({ pageNumber, css }: PaginationPageProps) => {
     onItemHover?.(pageNumber)
   }
 
+  const handleOnClick = (pageNumber) => {
+    onClick?.()
+    goToPage(pageNumber)
+  }
+
   return (
     <StyledButton
       selected={isSelected}
       size="md"
-      onClick={() => goToPage(pageNumber)}
+      onClick={() => handleOnClick(pageNumber)}
       css={css}
       indicated={isIndicated}
       disabled={isDisabled}
