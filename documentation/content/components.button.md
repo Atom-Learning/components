@@ -35,7 +35,7 @@ tabs:
       ## Sizing
 
 
-      The `Button` component accepts 4 size variants: "sm" | "md" | "lg" | "xl"
+      The `Button` component accepts four size variants: "sm" | "md" | "lg" | "xl"
 
 
       <CodeBlock live={true} preview={true} code={`<Flex gap="3" css={{ bg: '$grey100', p: '$4' }}>
