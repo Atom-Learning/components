@@ -10,10 +10,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Generate restricted GH API token for Atom CI app
+        id: generate_token
+        uses: tibdex/github-app-token@v1.8.0
+        with:
+          app_id: ${{ secrets.ATOM_CI_APP_ID }}
+          private_key: ${{ secrets.ATOM_CI_APP_PRIVATE_KEY }}
+          repository: Atom-Learning/components
+          permissions: >-
+            {"contents": "write"}
+
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          token: ${{ steps.generate_token.outputs.token }}
           ref: ${{ github.head_ref }}
 
       - name: Setup environment

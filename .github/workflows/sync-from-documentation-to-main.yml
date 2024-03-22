@@ -10,7 +10,7 @@ on:
 
 jobs:
   sync:
-    if: "startsWith(github.event.head_commit.message, '[NetlifyCMS]')"
+    if: startsWith(github.event.head_commit.message, '[NetlifyCMS]')
     name: Sync only the documentation content relevant folders from documentation-content into the main branch
     runs-on: ubuntu-latest
     steps:
@@ -37,9 +37,19 @@ jobs:
           echo "This action is exiting as a safety feature! Revert files before trying again!"
           exit 1
 
+      - name: Generate restricted GH API token for Atom CI app
+        id: generate_token
+        uses: tibdex/github-app-token@v1.8.0
+        with:
+          app_id: ${{ secrets.ATOM_CI_APP_ID }}
+          private_key: ${{ secrets.ATOM_CI_APP_PRIVATE_KEY }}
+          repository: Atom-Learning/components
+          permissions: >-
+            {"contents": "write"}
+
       - uses: everlytic/branch-merge@1.1.5
         with:
-          github_token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          github_token: ${{ steps.generate_token.outputs.token }}
           source_ref: "documentation-content"
           target_branch: "main"
           commit_message_template: "[Automated] Merged {source_ref} into target {target_branch}"
