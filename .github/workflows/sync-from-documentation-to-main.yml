@@ -20,7 +20,7 @@ jobs:
 
       - name: Get changed files excluding the docs
         id: changed-files-excluded
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v41
         with:
           base_sha: ${{ github.sha }}
           files_ignore: |
