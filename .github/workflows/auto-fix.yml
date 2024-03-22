@@ -16,9 +16,6 @@ jobs:
         with:
           app_id: ${{ secrets.ATOM_CI_APP_ID }}
           private_key: ${{ secrets.ATOM_CI_APP_PRIVATE_KEY }}
-          repository: Atom-Learning/components
-          permissions: >-
-            {"contents": "write"}
 
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -49,4 +46,6 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
+          commit_user_name: "atom-ci-actions[bot]"
+          commit_user_email: "129779914+atom-ci-actions[bot]@users.noreply.github.com"
           commit_message: 'chore: apply auto-fix changes'
