@@ -51,8 +51,6 @@ tabs:
       Above is an example of passing `visibleElementsCount` prop and setting it to 8. The user will see two navigation buttons, an action button to trigger the popover and five page numbers.
 
 
-
-
       #### Disabled and indicated pages
 
 
@@ -69,8 +67,6 @@ tabs:
 
 
       Above is an example of when we use the `disabledPages` prop allowing us to render the pagination items for page 1 and 2 as disabled, and using the `indicatedPages` prop which colours the background of page numbers 4 and 5,  and adding custom labels to the next/previous button and popover trigger.
-
-
 
 
       #### Color Scheme
@@ -92,13 +88,10 @@ tabs:
       The number (eg. primary1, primary2) refers to the darkness of the palette. A scheme with 1 has a default background of white, and hover of pale colour. A scheme with 2 has a default shifted one level darker, so starts with that pale colour rather than white.
 
 
-
-
       #### Custom popover trigger
 
 
       The pagination can also be displayed just using the popover, no number list, with a custom trigger.
-
 
 
       <CodeBlock live={true} preview={true} code={`<Pagination
@@ -112,8 +105,6 @@ tabs:
                 </Button>
               </Pagination.Popover>
             </Pagination>`} language={"undefined"} />
-
-
 
       ## API Reference
 
@@ -153,7 +144,7 @@ tabs:
       ![Pagination default basic component](/assets/images/01-pagination-structure.png "Pagination default basic component")
 
 
-      A special variant for Mock tests that display a blue dot and different font color when the question has been answered:
+      A special variant for Mock tests that display adds color fill when the question has been answered:
 
 
       ![Pagination mock tests](/assets/images/02-pagination-structure-mock-tests.png "Pagination mock tests")
@@ -296,8 +287,6 @@ tabs:
       | Border-color - pressed                  | $blue1000 | \#  |
 
       | Border-color - focus (2px)              | $blue800  | \#  |
-
-
 
 
       ![Pagination color completed](/assets/images/11-pagination-color-selected-completed.png "Pagination color completed")
