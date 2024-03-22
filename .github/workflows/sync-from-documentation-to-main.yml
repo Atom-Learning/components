@@ -43,9 +43,6 @@ jobs:
         with:
           app_id: ${{ secrets.ATOM_CI_APP_ID }}
           private_key: ${{ secrets.ATOM_CI_APP_PRIVATE_KEY }}
-          repository: Atom-Learning/components
-          permissions: >-
-            {"contents": "write"}
 
       - uses: everlytic/branch-merge@1.1.5
         with:
