@@ -352,7 +352,7 @@ tabs:
       #### Completed
 
 
-      A special variant for Mock tests that display a blue dot and different font color when the question has been answered:
+      A special variant for Mock tests that display a color fill when the question has been answered:
 
 
       ![Pagination completed mock tests](/assets/images/15-pagination-completed.png "Pagination completed mock tests")
