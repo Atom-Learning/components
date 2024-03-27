@@ -1,6 +1,7 @@
 import { v4 as uuid } from '@lukeed/uuid'
 import type {
   ExpandedState,
+  OnChangeFn,
   PaginationState,
   Row,
   RowSelectionState
@@ -39,6 +40,7 @@ type DataTableProviderProps = {
   children: React.ReactNode
   initialState?: InitialState
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
+  onRowSelectionChange?: OnChangeFn<RowSelectionState>
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -51,6 +53,7 @@ export const DataTableProvider = ({
   defaultSort,
   initialState = undefined,
   enableRowSelection,
+  onRowSelectionChange,
   children
 }: DataTableProviderProps): JSX.Element => {
   const tableId = React.useRef(uuid())
@@ -138,7 +141,10 @@ export const DataTableProvider = ({
     enableRowSelection,
     onExpandedChange: setExpanded,
     getSubRows: (row: Row<unknown>) => row.subRows,
-    onRowSelectionChange: setRowSelection,
+    onRowSelectionChange: (updaterOrValue) => {
+      if (onRowSelectionChange) onRowSelectionChange(updaterOrValue)
+      setRowSelection(updaterOrValue)
+    },
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
