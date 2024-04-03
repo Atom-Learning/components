@@ -56,7 +56,14 @@ const StyledDialogContent = styled(Content, {
       sm: { width: '480px' },
       md: { width: '600px' },
       lg: { width: '800px' },
-      xl: { width: '1100px' }
+      xl: { width: '1100px' },
+      fullscreen: {
+        width: '100vw',
+        height: '100svh',
+        maxWidth: '100vw',
+        maxHeight: '100svh',
+        borderRadius: 'unset'
+      }
     }
   }
 })
