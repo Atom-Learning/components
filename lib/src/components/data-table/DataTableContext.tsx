@@ -39,6 +39,7 @@ type DataTableProviderProps = {
   defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
+  disabledRows?: Record<string, boolean>
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
   onRowSelectionChange?: OnChangeFn<RowSelectionState>
 } & (
@@ -52,6 +53,7 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
+  disabledRows,
   enableRowSelection,
   onRowSelectionChange,
   children
@@ -158,6 +160,10 @@ export const DataTableProvider = ({
       const checkFilterMatchesCell = (cellValue: string) =>
         cellValue.toLowerCase().includes(filterValue.toLowerCase())
 
+      const isSubRow = row.depth === 1
+
+      if (isSubRow) return true
+
       const value = row.getValue(columnId)
       switch (typeof value) {
         case 'string':
@@ -183,6 +189,7 @@ export const DataTableProvider = ({
       isSortable,
       asyncDataState,
       runAsyncData,
+      disabledRows,
       enableRowSelection,
       rowSelection,
       tableId: tableId.current
