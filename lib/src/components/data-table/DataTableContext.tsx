@@ -160,7 +160,7 @@ export const DataTableProvider = ({
       const checkFilterMatchesCell = (cellValue: string) =>
         cellValue.toLowerCase().includes(filterValue.toLowerCase())
 
-      const isSubRow = row.depth === 1
+      const isSubRow = row.depth > 0
 
       if (isSubRow) return true
 
