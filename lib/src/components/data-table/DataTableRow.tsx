@@ -22,12 +22,20 @@ const StyledRow = styled(Table.Row, {
         // the !important rule is needed because the bg property is set elsewhere and it's more specific than this one would be without the !important modifier.
         bg: '$primary100 !important'
       }
+    },
+    isDisabled: {
+      true: {
+        opacity: '30%'
+      }
     }
   }
 })
 
 export const DataTableRow = ({ row }: DataTableRowProps) => {
-  const { enableRowSelection, getCanSomeRowsExpand } = useDataTable()
+  const { enableRowSelection, disabledRows, getCanSomeRowsExpand } =
+    useDataTable()
+
+  const isDisabled = !!disabledRows?.[row.id]
 
   const toggleExpandHandler = row.getToggleExpandedHandler()
   const toggleSelectHandler = row.getToggleSelectedHandler()
@@ -38,7 +46,7 @@ export const DataTableRow = ({ row }: DataTableRowProps) => {
   }
 
   return (
-    <StyledRow isSelected={row.getIsSelected()}>
+    <StyledRow isSelected={row.getIsSelected()} isDisabled={isDisabled}>
       {getCanSomeRowsExpand() && (
         <Table.Cell
           data-testid={`expand-icon-${row.id}`}
