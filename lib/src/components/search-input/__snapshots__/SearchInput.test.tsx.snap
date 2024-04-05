@@ -512,8 +512,8 @@ exports[`SearchInput component renders lg size 1`] = `
     line-height: 2;
   }
 
-  .c-hvMhuR-kCbngQ-size-lg {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-lg {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -555,7 +555,7 @@ exports[`SearchInput component renders lg size 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-kCbngQ-size-lg c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

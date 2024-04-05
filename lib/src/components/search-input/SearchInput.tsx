@@ -39,7 +39,7 @@ const StyledIcon = styled(Icon, {
         size: 20
       },
       lg: {
-        left: 10,
+        right: 10,
         size: 20
       }
     }
