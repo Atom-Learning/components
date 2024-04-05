@@ -59,10 +59,14 @@ const StyledDialogContent = styled(Content, {
       xl: { width: '1100px' },
       fullscreen: {
         width: '100vw',
-        height: '100svh',
+        height: '100vh',
         maxWidth: '100vw',
-        maxHeight: '100svh',
-        borderRadius: 'unset'
+        maxHeight: '100vh',
+        borderRadius: 'unset',
+        '@supports (height: 100svh)': {
+          height: '100svh',
+          maxHeight: '100svh'
+        }
       }
     }
   }
