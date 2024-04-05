@@ -62,7 +62,7 @@ tabs:
           color: 'red',
 
           // we can also access design tokens
-          backgroundColor: '$primary',
+          backgroundColor: '$primary800',
           padding: '$3',
 
           // utilise shorthand utilities

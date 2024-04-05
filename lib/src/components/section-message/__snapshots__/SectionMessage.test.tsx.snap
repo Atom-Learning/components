@@ -2,17 +2,14 @@
 
 exports[`renders SectionMessage component and has no programmatically detectable a11y issues 1`] = `
 @media  {
-  .c-jgdwfn {
+  .c-dhzjXW {
     display: flex;
   }
 
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -30,7 +27,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -40,9 +37,15 @@ exports[`renders SectionMessage component and has no programmatically detectable
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-hVoQtf {
@@ -93,11 +96,6 @@ exports[`renders SectionMessage component and has no programmatically detectable
     }
 }
 
-  .c-flbHeh {
-    flex-grow: 1;
-    justify-content: space-between !important;
-  }
-
   .c-fdAfLq {
     position: relative;
     border-radius: var(--radii-0);
@@ -109,33 +107,15 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-knmidH-justify-space-between {
+    justify-content: space-between;
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 {
-    margin-top: calc(var(--space-3)*-1);
-    margin-left: calc(var(--space-3)*-1);
-  }
-
-  .c-jgdwfn-dlytZv-gap-3 > * {
-    margin-top: var(--space-3);
-    margin-left: var(--space-3);
-  }
-
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -175,7 +155,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: table;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -199,28 +179,27 @@ exports[`renders SectionMessage component and has no programmatically detectable
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
 @media  {
-  .c-dbrbZt-ihCBfwK-css {
+  .c-dhzjXW-ieGaVeY-css {
+    flex-grow: 1;
+  }
+
+  .c-hMRxhp-ihCBfwK-css {
     margin: auto;
     position: absolute;
     left: var(--space-4);
@@ -228,12 +207,13 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: currentColor;
   }
 
-  .c-PJLV-iCOfVx-css {
+  .c-PJLV-ihLIGwZ-css {
     max-width: 100%;
     flex-shrink: 0;
+    padding-top: var(--space-0);
   }
 
-  .c-PJLV-iCOfVx-css > *:not(:last-child) {
+  .c-PJLV-ihLIGwZ-css > *:not(:last-child) {
     margin-bottom: var(--space-2);
   }
 
@@ -245,7 +225,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     color: var(--colors-grey900);
   }
 
-  .c-fDzwZw-iefwZNm-css {
+  .c-oUmPa-iefwZNm-css {
     margin: auto;
     position: absolute;
     top: var(--space-2);
@@ -258,11 +238,11 @@ exports[`renders SectionMessage component and has no programmatically detectable
     class="c-fdAfLq c-fdAfLq-jtgfr-theme-error c-fdAfLq-cSgxUp-hasIcon-true c-fdAfLq-IFRSO-hasDismiss-true"
   >
     <div
-      class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dlytZv-gap-3 c-flbHeh"
+      class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-ieGaVeY-css"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-ihCBfwK-css"
+        class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ihCBfwK-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -282,7 +262,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
         />
       </svg>
       <div
-        class="c-PJLV c-PJLV-iCOfVx-css"
+        class="c-PJLV c-PJLV-ihLIGwZ-css"
       >
         <p
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iecBjWS-css"
@@ -297,13 +277,13 @@ exports[`renders SectionMessage component and has no programmatically detectable
       </div>
       <button
         aria-label="Dismiss"
-        class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-otpKd-cv c-fDzwZw-iefwZNm-css c-PJLV"
+        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-jCxibG-cv c-oUmPa-iefwZNm-css c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

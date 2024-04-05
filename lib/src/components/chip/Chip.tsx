@@ -24,17 +24,15 @@ export const StyledChipContent = styled('span', {
 })
 
 const toIconSize = { sm: 'sm', md: 'sm', lg: 'md' }
-export const StyledChipIcon = styled(Icon, {
-  flexShrink: 0
-})
-export const ChipIcon: typeof Icon = ({ ...props }) => {
+
+export const ChipIcon = (props: React.ComponentProps<typeof Icon>) => {
   const rootContext = React.useContext(ChipRootContext)
   const { size } = rootContext
   const iconSize = React.useMemo(
     () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
     [size]
   )
-  return <StyledChipIcon {...props} size={iconSize} />
+  return <Icon {...props} size={iconSize} />
 }
 
 const ChipContent = ({ children, ...rest }) => {
@@ -67,9 +65,9 @@ export const StyledRoot = styled(Flex, {
   alignItems: 'center',
   fontFamily: '$body',
   maxWidth: '100%',
-  borderColor: '$primary',
-  color: '$primaryMid',
-  bg: '$primaryLight',
+  borderColor: '$primary800',
+  color: '$primary900',
+  bg: '$primary100',
   '&[data-disabled]': {
     opacity: '0.3',
     pointerEvents: 'none'
@@ -97,10 +95,10 @@ export type TChipRootProviderProps = TChipRootContext
 
 export const ChipRootContext = React.createContext<TChipRootContext>({})
 
-export const ChipRootProvider: React.FC<TChipRootProviderProps> = ({
+export const ChipRootProvider = ({
   size,
   children
-}) => {
+}: TChipRootProviderProps) => {
   const value = React.useMemo<TChipRootContext>(() => ({ size }), [size])
   return (
     <ChipRootContext.Provider value={value}>
@@ -120,12 +118,9 @@ const ChipRoot: React.ForwardRefExoticComponent<TChipRootProps> =
     )
   })
 
-type TChipType = typeof ChipRoot & {
-  Content: typeof ChipContent
-  Icon: typeof ChipIcon
-}
+export const Chip = Object.assign(ChipRoot, {
+  Content: ChipContent,
+  Icon: ChipIcon
+})
 
-export const Chip = ChipRoot as TChipType
-Chip.Content = ChipContent
-Chip.Icon = ChipIcon
-Chip.displayName = 'Chip'
+ChipRoot.displayName = 'Chip'

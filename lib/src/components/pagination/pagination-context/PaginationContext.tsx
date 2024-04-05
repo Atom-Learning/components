@@ -3,25 +3,25 @@ import * as React from 'react'
 import { VisibleElementsAmount } from '../pagination.constants'
 import {
   findNextAvailablePage,
-  findPreviousAvailablePage
+  findPreviousAvailablePage,
+  getPaginationElementsToRender
 } from '../pagination.helper'
-import type { IPaginationContext, TPaginationProviderProps } from '../types'
+import type { PaginationContextValue, PaginationProviderProps } from '../types'
 
-export const PaginationContext = React.createContext<IPaginationContext>({
+export const PaginationContext = React.createContext<PaginationContextValue>({
   goToPage: () => null,
   goToPreviousPage: () => null,
   goToNextPage: () => null,
   currentPage: 1,
-  visibleElementsCount: VisibleElementsAmount.LESS,
   pagesCount: 0,
   onItemHover: () => null,
+  paginationItems: [],
   labels: {},
-  isMaxVisibleElementCount: false,
   indicatedPages: [],
   disabledPages: []
 })
 
-export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
+export const PaginationProvider = ({
   onSelectedPageChange,
   selectedPage,
   visibleElementsCount = VisibleElementsAmount.LESS,
@@ -31,10 +31,8 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
   onItemHover = () => null,
   labels = {},
   children
-}) => {
+}: React.PropsWithChildren<PaginationProviderProps>) => {
   const [internalCurrentPage, setInternalCurrentPage] = React.useState(1)
-  const isMaxVisibleElementCount =
-    visibleElementsCount === VisibleElementsAmount.MORE
 
   const currentPage = selectedPage || internalCurrentPage
 
@@ -46,30 +44,31 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
     [onSelectedPageChange]
   )
 
+  const previousPage = currentPage - 1
+  const previousAvailablePage = findPreviousAvailablePage(
+    previousPage,
+    disabledPages
+  )
+
   const goToPreviousPage = React.useCallback(() => {
-    if (currentPage === 1) {
-      return
-    }
-    const previousPage = currentPage - 1
-    const previousAvailablePage = findPreviousAvailablePage(
-      previousPage,
-      disabledPages
-    )
+    if (previousAvailablePage) goToPage(previousAvailablePage)
+  }, [goToPage, previousAvailablePage])
 
-    if (previousAvailablePage < 1) return
-    goToPage(previousAvailablePage)
-  }, [currentPage, disabledPages, goToPage])
-
+  const nextPage = currentPage + 1
+  const nextAvailablePage = findNextAvailablePage(
+    nextPage,
+    disabledPages,
+    pagesCount
+  )
   const goToNextPage = React.useCallback(() => {
-    if (currentPage === pagesCount) {
-      return
-    }
-    const nextPage = currentPage + 1
-    const nextAvailablePage = findNextAvailablePage(nextPage, disabledPages)
+    if (nextAvailablePage) goToPage(nextAvailablePage)
+  }, [goToPage, nextAvailablePage])
 
-    if (nextAvailablePage > pagesCount) return
-    goToPage(nextAvailablePage)
-  }, [currentPage, disabledPages, goToPage, pagesCount])
+  const paginationItems = getPaginationElementsToRender(
+    currentPage,
+    pagesCount,
+    visibleElementsCount
+  )
 
   const value = React.useMemo(() => {
     return {
@@ -77,26 +76,28 @@ export const PaginationProvider: React.FC<TPaginationProviderProps> = ({
       goToPreviousPage,
       goToPage,
       currentPage,
-      visibleElementsCount,
+      paginationItems,
       indicatedPages,
       disabledPages,
       pagesCount,
       onItemHover,
-      labels,
-      isMaxVisibleElementCount
+      previousAvailablePage,
+      nextAvailablePage,
+      labels
     }
   }, [
     goToNextPage,
     goToPreviousPage,
     goToPage,
     currentPage,
-    visibleElementsCount,
     indicatedPages,
+    paginationItems,
     disabledPages,
     pagesCount,
     onItemHover,
-    labels,
-    isMaxVisibleElementCount
+    previousAvailablePage,
+    nextAvailablePage,
+    labels
   ])
 
   return (

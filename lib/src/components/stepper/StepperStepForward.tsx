@@ -4,14 +4,17 @@ import { Button } from '../button'
 import { useStepper } from './stepper-context/StepperContext'
 import { IStepperNavigateProps } from './types'
 
-export const StepperStepForward: React.FC<
-  IStepperNavigateProps & Omit<React.ComponentProps<typeof Button>, 'children'>
-> = ({ label, children, onClick, ...rest }) => {
+export const StepperStepForward = ({
+  label,
+  children,
+  onClick,
+  ...rest
+}: IStepperNavigateProps & Partial<React.ComponentProps<typeof Button>>) => {
   const { goToNextStep, activeStep } = useStepper()
 
   const handleClick = () => {
     if (onClick) {
-      return onClick(goToNextStep)
+      return onClick(() => goToNextStep?.())
     }
     goToNextStep?.()
   }

@@ -144,7 +144,19 @@ describe(`Button component`, () => {
 
     expect(link).toBeInTheDocument()
     expect(link).toHaveAttribute('href', 'https://app.atomlearning.co.uk')
+    expect(link).toHaveAttribute('target', '_blank')
+    expect(link).toHaveAttribute('rel', 'noopener noreferrer')
     expect(link).not.toHaveAttribute('type', 'button')
+  })
+
+  it('renders an anchor if provided a link', async () => {
+    render(<Button href="/somewhere">ATOM</Button>)
+
+    const link = screen.getByRole('link')
+
+    expect(link).toHaveAttribute('href', '/somewhere')
+    expect(link).not.toHaveAttribute('target')
+    expect(link).not.toHaveAttribute('rel')
   })
 
   describe('Loading state', () => {
@@ -182,15 +194,6 @@ describe(`Button component`, () => {
       fireEvent.click(screen.getByRole('button'))
 
       expect(handleClick).toHaveBeenCalledTimes(0)
-    })
-
-    it('renders an anchor if provided a link', async () => {
-      render(<Button href="https://atomlearning.co.uk">ATOM</Button>)
-
-      expect(await screen.findByRole('link')).toHaveAttribute(
-        'href',
-        'https://atomlearning.co.uk'
-      )
     })
   })
 })

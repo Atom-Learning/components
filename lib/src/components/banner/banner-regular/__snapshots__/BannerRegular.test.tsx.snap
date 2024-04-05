@@ -3,7 +3,7 @@
 exports[`BannerRegular component renders 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -12,9 +12,10 @@ exports[`BannerRegular component renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -161,11 +162,6 @@ exports[`BannerRegular component renders 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -174,6 +170,10 @@ exports[`BannerRegular component renders 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -197,6 +197,18 @@ exports[`BannerRegular component renders 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -245,7 +257,7 @@ exports[`BannerRegular component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .base-purple1 {
+  .t-grLKLB {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -267,12 +279,14 @@ exports[`BannerRegular component renders 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
   .c-gjbGPV {
@@ -286,8 +300,9 @@ exports[`BannerRegular component renders 1`] = `
     margin: 0;
   }
 
-  .c-llIiIE {
+  .c-kHdlDu {
     margin-bottom: var(--space-4);
+    color: var(--banner-heading-color);
   }
 
   .c-dyvMgW {
@@ -301,19 +316,11 @@ exports[`BannerRegular component renders 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
+  .c-bYxtOe {
+    color: var(--banner-text-color);
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -328,6 +335,11 @@ exports[`BannerRegular component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-eEYQKA {
@@ -351,9 +363,11 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -394,49 +408,33 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-bYxtOe-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
   }
 
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
+    height: 16px;
+    width: 16px;
+  }
+
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
@@ -477,37 +475,43 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-bYxtOe-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 {
-      margin-top: calc(var(--space-4)*-1);
-      margin-left: calc(var(--space-4)*-1);
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 > * {
-      margin-top: var(--space-4);
-      margin-left: var(--space-4);
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-hnmcil-size-md {
+    .c-kaaUSm-jiYjGq-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
       padding-left: var(--space-5);
       padding-right: var(--space-5);
+      gap: var(--space-3);
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-jiYjGq-size-md .c-hMRxhp {
+      height: 20px;
+      width: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -520,79 +524,77 @@ exports[`BannerRegular component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-klvXVG-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fkUJsw-bznQva-cv {
+  .c-kaaUSm-bSkyfM-cv {
     border: 1px solid;
     border-color: currentColor;
     color: white;
   }
 
-  .c-fkUJsw-bznQva-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
-  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-bold t-grLKLB"
     role="banner"
   >
     <div
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-kHdlDu"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -615,7 +617,7 @@ exports[`BannerRegular component renders 1`] = `
 exports[`BannerRegular component renders dismissible variant 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -624,9 +626,10 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -773,11 +776,6 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -786,6 +784,10 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -809,6 +811,18 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -857,7 +871,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .base-purple1 {
+  .t-grLKLB {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -879,12 +893,14 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: flex;
   }
 
-  .c-bSYoqs {
+  .c-bRupYu {
     position: relative;
     width: 100%;
     border-radius: var(--radii-0);
     overflow: hidden;
     color: var(--colors-foreground);
+    --banner-heading-color: var(--colors-foreground);
+    --banner-text-color: var(--colors-grey900);
   }
 
   .c-gjbGPV {
@@ -898,8 +914,9 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     margin: 0;
   }
 
-  .c-llIiIE {
+  .c-kHdlDu {
     margin-bottom: var(--space-4);
+    color: var(--banner-heading-color);
   }
 
   .c-dyvMgW {
@@ -913,19 +930,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-bDwMAO {
-    color: var(--colors-grey900);
+  .c-bYxtOe {
+    color: var(--banner-text-color);
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -940,6 +949,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-eEYQKA {
@@ -961,7 +975,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     object-fit: cover;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -971,21 +985,29 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
   }
 
-  .c-iQtYBa {
+  .c-gLBWZd {
+    z-index: 1;
     position: absolute;
     top: var(--space-3);
     right: var(--space-3);
@@ -993,9 +1015,11 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-bSYoqs-gsNHYh-emphasis-highContrast {
+  .c-bRupYu-cobKBi-emphasis-bold {
     background: var(--colors-base11);
     color: var(--colors-foreground7plus);
+    --banner-heading-color: var(--colors-foreground7plus);
+    --banner-text-color: var(--colors-grey100);
   }
 
   .c-gjbGPV-lppGPL-size-sm {
@@ -1036,49 +1060,33 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-bDwMAO-llIiIE-containerSize-sm {
+  .c-bYxtOe-llIiIE-containerSize-sm {
     margin-bottom: var(--space-4);
   }
 
-  .c-bDwMAO-fgLDMq-emphasis-highContrast {
-    color: var(--colors-grey100);
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
+  .c-dhzjXW-kaVYFn-gap-2 {
+    gap: var(--space-2);
   }
 
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 {
-    margin-top: calc(var(--space-2)*-1);
-    margin-left: calc(var(--space-2)*-1);
-  }
-
-  .c-jgdwfn-dPMagj-gap-2 > * {
-    margin-top: var(--space-2);
-    margin-left: var(--space-2);
-  }
-
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
   }
 
-  .c-fkUJsw-fGHEql-fullWidth-true {
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
+    height: 16px;
+    width: 16px;
+  }
+
+  .c-kaaUSm-fGHEql-fullWidth-true {
     width: 100%;
   }
 
@@ -1086,16 +1094,16 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: none;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -1134,37 +1142,43 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-bDwMAO-gyGikE-containerSize-md {
+    .c-bYxtOe-gyGikE-containerSize-md {
       margin-bottom: var(--space-24);
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 {
-      margin-top: calc(var(--space-4)*-1);
-      margin-left: calc(var(--space-4)*-1);
+    .c-dhzjXW-ioYFCt-direction-row {
+      flex-direction: row;
     }
 }
 
 @media (min-width: 800px) {
-    .c-jgdwfn-hAgpth-gap-4 > * {
-      margin-top: var(--space-4);
-      margin-left: var(--space-4);
+    .c-dhzjXW-ecwQUv-gap-4 {
+      gap: var(--space-4);
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-hnmcil-size-md {
+    .c-kaaUSm-jiYjGq-size-md {
       font-size: var(--fontSizes-md);
       line-height: 1.5;
       height: var(--sizes-4);
       padding-left: var(--space-5);
       padding-right: var(--space-5);
+      gap: var(--space-3);
     }
 }
 
 @media (min-width: 800px) {
-    .c-fkUJsw-fXTFOn-fullWidth-false {
+    .c-kaaUSm-jiYjGq-size-md .c-hMRxhp {
+      height: 20px;
+      width: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    .c-kaaUSm-fXTFOn-fullWidth-false {
       width: max-content;
     }
 }
@@ -1176,7 +1190,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media (min-width: 800px) {
-    .c-fDzwZw-fpPlqP-size-sm {
+    .c-oUmPa-fpPlqP-size-sm {
       height: var(--sizes-3);
       width: var(--sizes-3);
     }
@@ -1184,87 +1198,85 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-klvXVG-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-fkUJsw-bznQva-cv {
+  .c-kaaUSm-bSkyfM-cv {
     border: 1px solid;
     border-color: currentColor;
     color: white;
   }
 
-  .c-fkUJsw-bznQva-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-bSkyfM-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):hover,
-  .c-fkUJsw-bznQva-cv:not([disabled]):focus {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):hover,
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):focus {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
   }
 
-  .c-fkUJsw-bznQva-cv:not([disabled]):active {
+  .c-kaaUSm-bSkyfM-cv:not([disabled]):active {
     color: rgba(255, 255, 255, 0.65);
   }
 
-  .c-llIiIE-cRYaBy-cv {
+  .c-kHdlDu-cRYaBy-cv {
     margin-right: var(--space-6);
   }
 
-  .c-bDwMAO-cRYaBy-cv {
+  .c-bYxtOe-cRYaBy-cv {
     margin-right: var(--space-6);
   }
 }
 
 <div>
   <div
-    class="c-dhzjXW c-bSYoqs c-bSYoqs-gsNHYh-emphasis-highContrast base-purple1"
+    class="c-dhzjXW c-bRupYu c-bRupYu-cobKBi-emphasis-bold t-grLKLB"
     role="banner"
   >
     <div
       class="c-PJLV c-gjbGPV c-gjbGPV-lppGPL-size-sm c-gjbGPV-iOglxG-size-md"
     >
       <h2
-        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-llIiIE c-llIiIE-cRYaBy-cv"
+        class="c-jryFOR c-jryFOR-dtbHih-size-sm c-kHdlDu c-kHdlDu-cRYaBy-cv"
       >
         Get ready for entrance exams
       </h2>
       <p
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bDwMAO c-bDwMAO-llIiIE-containerSize-sm c-bDwMAO-fgLDMq-emphasis-highContrast c-bDwMAO-gyGikE-containerSize-md c-bDwMAO-cRYaBy-cv"
+        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
       <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-dPMagj-gap-2 c-jgdwfn-hAgpth-gap-4"
+        class="c-dhzjXW c-dhzjXW-iTKOFX-direction-column c-dhzjXW-kaVYFn-gap-2 c-dhzjXW-ioYFCt-direction-row c-dhzjXW-ecwQUv-gap-4"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-iRJCoR-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-klvXVG-cv"
           type="button"
         >
           Contact an expert
         </button>
         <button
-          class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fGHEql-fullWidth-true c-fkUJsw-hnmcil-size-md c-fkUJsw-fXTFOn-fullWidth-false c-fkUJsw-bznQva-cv"
+          class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-fGHEql-fullWidth-true c-kaaUSm-jiYjGq-size-md c-kaaUSm-fXTFOn-fullWidth-false c-kaaUSm-bSkyfM-cv"
           type="button"
         >
           Secondary
@@ -1282,13 +1294,13 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     </div>
     <button
       aria-label="dismiss banner"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-rloUt-isRounded-true c-fDzwZw-fpPlqP-size-sm c-iQtYBa"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-fpPlqP-size-sm c-gLBWZd"
       data-testid="dismiss"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

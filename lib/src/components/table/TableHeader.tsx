@@ -7,27 +7,48 @@ import { TableHeaderCell } from './TableHeaderCell'
 export const TABLE_HEADER_THEMES = {
   PRIMARY: 'primary',
   PRIMARY_DARK: 'primaryDark',
-  LIGHT: 'light'
-}
+  PRIMARY_LIGHT: 'primaryLight',
+  LIGHT: 'light',
+  WHITE: 'white'
+} as const
 
 const StyledTableHeader = styled('thead', {
   variants: {
     theme: {
       [TABLE_HEADER_THEMES.PRIMARY]: {
         [`${TableHeaderCell}`]: {
-          bg: '$primary'
+          bg: '$primary800'
         }
       },
       [TABLE_HEADER_THEMES.PRIMARY_DARK]: {
         [`${TableHeaderCell}`]: {
-          bg: '$primaryDark'
+          bg: '$primary1000'
+        }
+      },
+      [TABLE_HEADER_THEMES.PRIMARY_LIGHT]: {
+        [`${TableHeaderCell}`]: {
+          bg: '$primary200',
+          color: '$grey1000'
         }
       },
       [TABLE_HEADER_THEMES.LIGHT]: {
         [`${TableHeaderCell}`]: {
           bg: '$tonal50',
-          color: '$tonal600'
+          color: '$grey1000'
         }
+      },
+      [TABLE_HEADER_THEMES.WHITE]: {
+        [`${TableHeaderCell}`]: {
+          bg: 'white',
+          color: '$grey1000'
+        }
+      }
+    },
+    isSticky: {
+      true: {
+        position: 'sticky',
+        top: 0,
+        zIndex: 3
       }
     }
   }
@@ -35,9 +56,12 @@ const StyledTableHeader = styled('thead', {
 
 type TableHeaderProps = React.ComponentProps<typeof StyledTableHeader>
 
-export const TableHeader: React.FC<TableHeaderProps> = ({
+export const TableHeader = ({
   theme = 'primaryDark',
+  isSticky = false,
   ...rest
-}: TableHeaderProps) => <StyledTableHeader theme={theme} {...rest} />
+}: TableHeaderProps) => {
+  return <StyledTableHeader theme={theme} isSticky={isSticky} {...rest} />
+}
 
 TableHeader.displayName = 'TableHeader'

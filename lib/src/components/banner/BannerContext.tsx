@@ -13,6 +13,11 @@ type TBannerContextValue = TBannerProviderProps & {
 }
 
 export const BannerContext = React.createContext<TBannerContextValue>({
+  emphasis: 'minimal',
+  size: {
+    '@initial': 'sm',
+    '@md': 'md'
+  },
   hasDismiss: false,
   setHasDismiss: () => null
 })
@@ -27,11 +32,14 @@ export const useBannerContext = (): TBannerContextValue => {
   return context
 }
 
-export const BannerProvider: React.FC<TBannerProviderProps> = ({
-  emphasis,
-  size,
+export const BannerProvider = ({
+  emphasis = 'minimal',
+  size = {
+    '@initial': 'sm',
+    '@md': 'md'
+  },
   children
-}) => {
+}: React.PropsWithChildren<TBannerProviderProps>) => {
   const [hasDismiss, setHasDismiss] = React.useState(false)
   const value = React.useMemo<TBannerContextValue>(
     () => ({ emphasis, size, hasDismiss, setHasDismiss }),
@@ -41,3 +49,5 @@ export const BannerProvider: React.FC<TBannerProviderProps> = ({
     <BannerContext.Provider value={value}>{children}</BannerContext.Provider>
   )
 }
+
+BannerProvider.displayName = 'Banner'

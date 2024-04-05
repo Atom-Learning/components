@@ -3,6 +3,7 @@ import * as RadixCheckbox from '@radix-ui/react-checkbox'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 
 import { Icon } from '../icon'
@@ -28,24 +29,20 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all 50ms ease-out',
+  flexShrink: 0,
   '&[data-state="checked"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   '&[data-state="indeterminate"]': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '1px'
   },
-  '&[disabled]': {
-    backgroundColor: '$tonal100',
-    borderColor: '$tonal400',
-    cursor: 'not-allowed',
-    color: '$tonal400'
-  },
+  '&[disabled]': disabledStyle,
   variants: {
     state: {
       error: {
@@ -69,29 +66,27 @@ const toIconSize = {
   lg: 'md'
 }
 
-type CheckboxProps = React.ComponentProps<typeof StyledCheckbox>
+export const Checkbox: React.ForwardRefExoticComponent<
+  React.ComponentProps<typeof StyledCheckbox>
+> = React.forwardRef(({ size = 'md', checked, ...rest }, ref) => {
+  const iconSize = React.useMemo(
+    () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
+    [size]
+  )
 
-export const Checkbox: React.FC<CheckboxProps> = React.forwardRef(
-  ({ size = 'md', ...props }, ref) => {
-    const iconSize = React.useMemo(
-      () => overrideStitchesVariantValue(size, (s) => toIconSize[s]),
-      [size]
-    )
-
-    return (
-      <StyledCheckbox {...props} size={size} ref={ref}>
-        <StyledIndicator asChild>
-          <Icon
-            is={props.checked === 'indeterminate' ? Minus : Ok}
-            css={{
-              strokeWidth: '3'
-            }}
-            size={iconSize}
-          />
-        </StyledIndicator>
-      </StyledCheckbox>
-    )
-  }
-)
+  return (
+    <StyledCheckbox ref={ref} checked={checked} size={size} {...rest}>
+      <StyledIndicator asChild>
+        <Icon
+          is={checked === 'indeterminate' ? Minus : Ok}
+          css={{
+            strokeWidth: '3'
+          }}
+          size={iconSize}
+        />
+      </StyledIndicator>
+    </StyledCheckbox>
+  )
+})
 
 Checkbox.displayName = 'Checkbox'

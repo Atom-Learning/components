@@ -14,7 +14,9 @@ const AlertContext = React.createContext<context>({
   showAlert: () => null
 })
 
-export const AlertProvider: React.FC = ({ children }) => {
+export const AlertProvider = ({
+  children
+}: React.PropsWithChildren<unknown>) => {
   const [alerts, dispatch] = React.useReducer(reducer, initialState)
   const isMountedRef = useIsMountedRef()
 

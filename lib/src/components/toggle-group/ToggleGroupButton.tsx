@@ -40,9 +40,6 @@ export const StyledButton = styled(StyledItem, {
   fontWeight: 600,
   lineHeight: 1,
   py: '$1',
-  [`& ${StyledIcon}`]: {
-    flexShrink: 0
-  },
   variants: {
     size: {
       sm: getSizeVariant('sm'),

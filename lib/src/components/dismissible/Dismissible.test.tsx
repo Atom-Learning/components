@@ -5,17 +5,17 @@ import * as React from 'react'
 
 import { Dismissible } from '.'
 
-const mockOnDismiss = jest.fn((value) => null)
+const mockOnDismiss = jest.fn(() => null)
 
 const DismissibleImplementation = () => (
-  <Dismissible value="a" onDismiss={mockOnDismiss} data-testid="root">
+  <Dismissible onDismiss={mockOnDismiss} data-testid="root">
     A
     <Dismissible.Trigger data-testid="trigger" />
   </Dismissible>
 )
 
 const DismissibleImplementationCustomOverrides = () => (
-  <Dismissible value="a" onDismiss={mockOnDismiss} asChild>
+  <Dismissible onDismiss={mockOnDismiss} asChild>
     <div data-testid="custom-root">
       A
       <Dismissible.Trigger asChild>
@@ -56,13 +56,13 @@ describe('Dismissible component', () => {
     expect(root).not.toBeVisible()
   })
 
-  it('when dismissed calls the onDismiss function with the correct value', async () => {
+  it('when dismissed calls the onDismiss function', async () => {
     render(<DismissibleImplementation />)
 
     const trigger = screen.getByTestId('trigger')
     if (trigger) fireEvent.click(trigger)
 
-    expect(mockOnDismiss).toBeCalledWith('a')
+    expect(mockOnDismiss).toBeCalled()
   })
 
   describe('when it is using custom component overrides', () => {

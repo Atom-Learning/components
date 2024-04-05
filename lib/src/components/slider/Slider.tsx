@@ -2,7 +2,7 @@ import { Range, Root, Thumb, Track } from '@radix-ui/react-slider'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
-import { CSSWrapper } from '~/utilities'
+import { CSSWrapper, disabledStyle } from '~/utilities'
 
 import { SliderSteps } from './SliderSteps'
 import { SliderValue } from './SliderValue'
@@ -29,7 +29,7 @@ const StyledSlider = styled(Root, {
     flexDirection: 'column',
     width: '$1'
   },
-  '&[data-disabled]': { cursor: 'not-allowed', bg: '$tonal100' },
+  '&[data-disabled]': disabledStyle,
   variants: {
     theme: {
       light: {
@@ -43,26 +43,26 @@ const StyledSlider = styled(Root, {
 })
 
 const StyledRange = styled(Range, {
-  bg: '$primary',
+  bg: '$primary800',
   borderRadius: '$round',
   height: '100%',
   position: 'absolute',
-  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
+  '&[data-disabled]': disabledStyle
 })
 
 const StyledThumb = styled(Thumb, {
-  bg: '$primaryMid',
+  bg: '$primary900',
   borderRadius: '$round',
   display: 'block',
   size: '$1',
   '&:hover': {
-    bg: '$primaryDark'
+    bg: '$primary1000'
   },
   '&:focus': {
-    outline: '2px solid $primaryMid',
+    outline: '2px solid $primary900',
     outlineOffset: '2px'
   },
-  '&[data-disabled]': { bg: '$tonal200', cursor: 'not-allowed' }
+  '&[data-disabled]': disabledStyle
 })
 
 export type SliderProps = React.ComponentProps<typeof StyledSlider>

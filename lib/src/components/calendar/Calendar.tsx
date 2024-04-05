@@ -69,7 +69,7 @@ const offsetWeekdayNames = (
   return end.concat(start)
 }
 
-export const Calendar: React.FC<CalendarProps> = ({
+export const Calendar = ({
   css,
   refDateSelected,
   refDateToday,
@@ -82,7 +82,7 @@ export const Calendar: React.FC<CalendarProps> = ({
   maxDate,
   setYear,
   ...remainingProps
-}) => {
+}: CalendarProps) => {
   const [showYears, setShowYears] = React.useState<boolean>(false)
   const [currentYear, setCurrentYear] = React.useState<number>(
     date?.getFullYear()

@@ -24,17 +24,17 @@ const StyledBadge = styled(Flex, {
   minWidth: '$2',
   textAlign: 'center',
   color: '#fff',
-  bg: '$primary'
+  bg: '$primary800'
 })
 
-type NotificationBadgeProps = React.ComponentProps<typeof StyledBadge> & {
+type NotificationBadgeProps = {
   value: number | string
 }
 
-export const NotificationBadge: React.FC<NotificationBadgeProps> = ({
+export const NotificationBadge = ({
   value,
   children
-}) => (
+}: React.PropsWithChildren<NotificationBadgeProps>) => (
   <StyledWrapper>
     {!!value && <StyledBadge role="status">{value}</StyledBadge>}
     {children}

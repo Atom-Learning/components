@@ -8,15 +8,12 @@ import {
 } from '~/components/field-wrapper'
 import { useFieldError } from '~/components/form'
 
-type CheckboxFieldProps = React.ComponentProps<typeof Checkbox> &
-  FieldElementWrapperProps
-
 enum CheckboxValue {
   ON = 'on',
   OFF = 'off'
 }
 
-export const CheckboxField: React.FC<CheckboxFieldProps> = ({
+export const CheckboxField = ({
   css,
   label,
   name,
@@ -26,7 +23,7 @@ export const CheckboxField: React.FC<CheckboxFieldProps> = ({
   checked,
   onCheckedChange,
   ...remainingProps
-}) => {
+}: React.ComponentProps<typeof Checkbox> & FieldElementWrapperProps) => {
   const { control } = useFormContext()
   const { error } = useFieldError(name)
   const {

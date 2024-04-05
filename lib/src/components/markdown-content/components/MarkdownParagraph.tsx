@@ -8,8 +8,10 @@ type MarkdownParagraphProps = {
   handleNode: (node: Content) => React.ReactElement
 }
 
-export const MarkdownParagraph: React.FC<MarkdownParagraphProps> = ({
+export const MarkdownParagraph = ({
   node,
   handleNode,
   ...rest
-}) => <Text {...rest}>{node.children?.map(handleNode)}</Text>
+}: MarkdownParagraphProps) => (
+  <Text {...rest}>{node.children?.map(handleNode)}</Text>
+)

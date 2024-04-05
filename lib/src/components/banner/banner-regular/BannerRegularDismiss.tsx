@@ -15,14 +15,21 @@ const toActionIconSize = {
 }
 
 const StyledDismiss = styled(ActionIcon, {
+  zIndex: 1,
   position: 'absolute',
   top: '$3',
   right: '$3'
 })
 
-export const BannerRegularDismiss: React.FC<
-  React.ComponentProps<typeof ActionIcon>
-> = ({ label = 'dismiss', ...rest }) => {
+type BannerRegularDismissProps = Omit<
+  React.ComponentProps<typeof StyledDismiss>,
+  'children' | 'onClick' | 'href'
+>
+
+export const BannerRegularDismiss = ({
+  label = 'dismiss',
+  ...rest
+}: BannerRegularDismissProps) => {
   const { size, setHasDismiss } = useBannerContext()
 
   React.useEffect(() => {

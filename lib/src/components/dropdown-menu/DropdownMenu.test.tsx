@@ -11,6 +11,9 @@ const ExampleDropdownMenu = (props) => (
     <DropdownMenu.Content>
       <DropdownMenu.Item>Item 1</DropdownMenu.Item>
       <DropdownMenu.Item>Item 2</DropdownMenu.Item>
+      <DropdownMenu.LinkItem href="http://google.com">
+        Item 3
+      </DropdownMenu.LinkItem>
       <DropdownMenu.Separator />
       <DropdownMenu.LinkItem href="/logout">Log Out</DropdownMenu.LinkItem>
     </DropdownMenu.Content>

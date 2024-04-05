@@ -8,11 +8,7 @@ import { StepperStepForward } from './StepperStepForward'
 import { StepperSteps } from './StepperSteps'
 import { IStepperProps } from './types'
 
-export const Stepper: React.FC<IStepperProps> & {
-  StepBack: typeof StepperStepBack
-  StepForward: typeof StepperStepForward
-  Steps: typeof StepperSteps
-} = ({
+const StepperComponent = ({
   children,
   stepCount,
   allowSkip,
@@ -23,7 +19,7 @@ export const Stepper: React.FC<IStepperProps> & {
   hideLabels = false,
   showCompletedIcons = false,
   css
-}) => {
+}: React.PropsWithChildren<IStepperProps>) => {
   invariant(
     !(stepCount && steps),
     '`Stepper` should only be given one of `stepCount` or `steps`. When both are provided, `steps` will be used and `stepCount` will be ignored.'
@@ -55,8 +51,10 @@ export const Stepper: React.FC<IStepperProps> & {
   )
 }
 
-Stepper.StepBack = StepperStepBack
-Stepper.StepForward = StepperStepForward
-Stepper.Steps = StepperSteps
+export const Stepper = Object.assign(StepperComponent, {
+  StepBack: StepperStepBack,
+  StepForward: StepperStepForward,
+  Steps: StepperSteps
+})
 
-Stepper.displayName = 'Stepper'
+StepperComponent.displayName = 'Stepper'

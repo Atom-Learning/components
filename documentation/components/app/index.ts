@@ -1,4 +1,4 @@
-export { Header } from './Header'
+export { NavigationMobile, NavigationDesktop } from './Header'
 export { Layout } from './Layout'
 export { Link } from './Link'
 export { Meta } from './Meta'

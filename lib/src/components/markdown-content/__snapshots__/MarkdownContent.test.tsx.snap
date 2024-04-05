@@ -106,42 +106,48 @@ exports[`MarkdownContent component renders 1`] = `
     padding: var(--space-3);
   }
 
-  .c-fucOQC {
+  .c-bmSGqY {
     background: unset;
     border: unset;
     padding: unset;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
     cursor: pointer;
     font-family: var(--fonts-body);
     text-decoration: none;
   }
 
-  .c-fucOQC:focus,
-  .c-fucOQC:hover {
-    color: var(--colors-primaryMid);
+  .c-bmSGqY:focus,
+  .c-bmSGqY:hover {
+    color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-fucOQC:active {
-    color: var(--colors-primaryDark);
+  .c-bmSGqY:active {
+    color: var(--colors-primary1000);
   }
 
-  .c-dyvMgW > .c-fucOQC,
-  .c-jryFOR > .c-fucOQC,
-  .c-PJLV > .c-fucOQC,
-  .c-bYNGXt > .c-fucOQC {
+  .c-bmSGqY[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .c-dyvMgW > .c-bmSGqY,
+  .c-jryFOR > .c-bmSGqY,
+  .c-PJLV > .c-bmSGqY,
+  .c-bYNGXt > .c-bmSGqY {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-fucOQC::before,
-  .c-dyvMgW > .c-fucOQC::after,
-  .c-jryFOR > .c-fucOQC::before,
-  .c-jryFOR > .c-fucOQC::after,
-  .c-PJLV > .c-fucOQC::before,
-  .c-PJLV > .c-fucOQC::after,
-  .c-bYNGXt > .c-fucOQC::before,
-  .c-bYNGXt > .c-fucOQC::after {
+  .c-dyvMgW > .c-bmSGqY::before,
+  .c-dyvMgW > .c-bmSGqY::after,
+  .c-jryFOR > .c-bmSGqY::before,
+  .c-jryFOR > .c-bmSGqY::after,
+  .c-PJLV > .c-bmSGqY::before,
+  .c-PJLV > .c-bmSGqY::after,
+  .c-bYNGXt > .c-bmSGqY::before,
+  .c-bYNGXt > .c-bmSGqY::after {
     content: none;
   }
 
@@ -310,18 +316,18 @@ exports[`MarkdownContent component renders 1`] = `
     font-weight: bold;
   }
 
-  .c-fucOQC-gvmVBy-size-md {
+  .c-bmSGqY-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-fucOQC-gvmVBy-size-md::before {
+  .c-bmSGqY-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-fucOQC-gvmVBy-size-md::after {
+  .c-bmSGqY-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
@@ -333,8 +339,12 @@ exports[`MarkdownContent component renders 1`] = `
     width: 100%;
   }
 
-  .c-bBdCwN-igZTZYS-css p:before,
-  .c-bBdCwN-igZTZYS-css p:after {
+  .c-bBdCwN-idpBzHh-css p {
+    display: inline;
+  }
+
+  .c-bBdCwN-idpBzHh-css p:before,
+  .c-bBdCwN-idpBzHh-css p:after {
     display: none;
   }
 }
@@ -459,7 +469,7 @@ exports[`MarkdownContent component renders 1`] = `
       Unordered
     </h3>
     <ul
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
     >
       <li
         class="c-PJLV"
@@ -496,7 +506,7 @@ exports[`MarkdownContent component renders 1`] = `
           Sub-lists are made by indenting 2 spaces:
         </p>
         <ul
-          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+          class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
         >
           <li
             class="c-PJLV"
@@ -507,7 +517,7 @@ exports[`MarkdownContent component renders 1`] = `
               Marker character change forces new list start:
             </p>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -520,7 +530,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -533,7 +543,7 @@ exports[`MarkdownContent component renders 1`] = `
               </li>
             </ul>
             <ul
-              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-igZTZYS-css"
+              class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-idpBzHh-css"
             >
               <li
                 class="c-PJLV"
@@ -564,7 +574,7 @@ exports[`MarkdownContent component renders 1`] = `
       Ordered
     </h3>
     <ol
-      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-igZTZYS-css"
+      class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-bEVto-as-ol c-bBdCwN-idpBzHh-css"
     >
       <li
         class="c-PJLV"
@@ -681,8 +691,10 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-bmSGqY c-bmSGqY-gvmVBy-size-md"
         href="http://dev.nodeca.com"
+        rel="noopener noreferrer"
+        target="_blank"
       >
         link text
       </a>
@@ -691,8 +703,10 @@ line 3 of code
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
     >
       <a
-        class="c-fucOQC c-fucOQC-gvmVBy-size-md"
+        class="c-bmSGqY c-bmSGqY-gvmVBy-size-md"
         href="http://nodeca.github.io/pica/demo/"
+        rel="noopener noreferrer"
+        target="_blank"
         title="title text!"
       >
         link with title

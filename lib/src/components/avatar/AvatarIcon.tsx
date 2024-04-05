@@ -14,11 +14,7 @@ const toIconSize = {
   xxl: 'lg'
 }
 
-type TAvatarIconProps = {
-  is: typeof Icon
-}
-
-export const AvatarIcon: React.FC<TAvatarIconProps> = ({ is }) => {
+export const AvatarIcon = ({ is }: { is: typeof Icon }) => {
   const rootContext = React.useContext(AvatarRootContext)
   const { size } = rootContext
   const iconSize = React.useMemo(

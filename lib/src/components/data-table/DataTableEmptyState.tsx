@@ -6,10 +6,10 @@ import { useDataTable } from './DataTableContext'
 
 type DataTableEmptyStateProps = React.ComponentProps<typeof EmptyState>
 
-export const DataTableEmptyState: React.FC<DataTableEmptyStateProps> = ({
+export const DataTableEmptyState = ({
   children,
   ...rest
-}) => {
+}: DataTableEmptyStateProps) => {
   const { asyncDataState, getTotalRows } = useDataTable()
 
   const isPending = asyncDataState === AsyncDataState.PENDING

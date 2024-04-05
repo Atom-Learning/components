@@ -1,8 +1,10 @@
+import { ChevronDown, ChevronRight } from '@atom-learning/icons'
 import type { Row } from '@tanstack/react-table'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { Icon } from '../icon'
 import { Table } from '../table'
 import { useDataTable } from './DataTableContext'
 import { DataTableDataCell } from './DataTableDataCell'
@@ -18,23 +20,51 @@ const StyledRow = styled(Table.Row, {
     isSelected: {
       true: {
         // the !important rule is needed because the bg property is set elsewhere and it's more specific than this one would be without the !important modifier.
-        bg: '$blue100 !important'
+        bg: '$primary100 !important'
+      }
+    },
+    isDisabled: {
+      true: {
+        opacity: '30%'
       }
     }
   }
 })
 
-export const DataTableRow: React.FC<DataTableRowProps> = ({ row }) => {
-  const { enableRowSelection } = useDataTable()
+export const DataTableRow = ({ row }: DataTableRowProps) => {
+  const { enableRowSelection, disabledRows, getCanSomeRowsExpand } =
+    useDataTable()
+
+  const isDisabled = !!disabledRows?.[row.id]
+
+  const toggleExpandHandler = row.getToggleExpandedHandler()
+  const toggleSelectHandler = row.getToggleSelectedHandler()
+
+  const getCheckedState = (): boolean | 'indeterminate' => {
+    if (row.getIsSomeSelected()) return 'indeterminate'
+    return row.getIsSelected()
+  }
 
   return (
-    <StyledRow isSelected={row.getIsSelected()}>
-      {enableRowSelection && row.getCanSelect() && (
+    <StyledRow isSelected={row.getIsSelected()} isDisabled={isDisabled}>
+      {getCanSomeRowsExpand() && (
+        <Table.Cell
+          data-testid={`expand-icon-${row.id}`}
+          css={{ width: '$4', cursor: row.getCanExpand() ? 'pointer' : 'auto' }}
+          onClick={toggleExpandHandler}
+        >
+          {row.getCanExpand() && (
+            <Icon is={row.getIsExpanded() ? ChevronDown : ChevronRight} />
+          )}
+        </Table.Cell>
+      )}
+
+      {enableRowSelection && (
         <Table.Cell css={{ width: '$4' }}>
           <DataTableRowSelectionCheckbox
-            rowId={row.id}
-            checked={row.getIsSelected()}
-            onCheckedChange={row.toggleSelected}
+            row={row}
+            checked={getCheckedState()}
+            onCheckedChange={toggleSelectHandler}
           />
         </Table.Cell>
       )}

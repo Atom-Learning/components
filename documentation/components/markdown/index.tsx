@@ -5,7 +5,8 @@ import {
   Link,
   List,
   Text,
-  Table
+  Table,
+  Image
 } from '@atom-learning/components'
 import * as React from 'react'
 
@@ -66,6 +67,7 @@ export const components = {
   tr: Table.Row,
   td: Table.Cell,
   tfoot: Table.Footer,
+  img: Image,
   ComponentProps,
   CodeBlock,
   ColorTokenList,

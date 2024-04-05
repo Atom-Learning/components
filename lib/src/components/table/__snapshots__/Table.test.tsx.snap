@@ -62,8 +62,8 @@ exports[`Table component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
-    background: var(--colors-primaryDark);
+  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+    background: var(--colors-primary1000);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -87,7 +87,7 @@ exports[`Table component renders 1`] = `
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
+      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -191,8 +191,8 @@ exports[`Table component renders with a themed header 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
-    background: var(--colors-primaryDark);
+  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+    background: var(--colors-primary1000);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -210,8 +210,8 @@ exports[`Table component renders with a themed header 1`] = `
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-jSYITb-theme-primary .c-jhJxGZ {
-    background: var(--colors-primary);
+  .c-PJLV-bFYmVr-theme-primary .c-jhJxGZ {
+    background: var(--colors-primary800);
   }
 }
 
@@ -227,7 +227,7 @@ exports[`Table component renders with a themed header 1`] = `
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jSYITb-theme-primary"
+      class="c-PJLV c-PJLV-bFYmVr-theme-primary"
     >
       <tr
         class="c-hjAYDb"
@@ -331,8 +331,8 @@ exports[`Table component renders with size set to lg 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
-    background: var(--colors-primaryDark);
+  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+    background: var(--colors-primary1000);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -363,7 +363,7 @@ exports[`Table component renders with size set to lg 1`] = `
     class="c-cwQMhQ c-cwQMhQ-jzCEki-size-lg c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
+      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -467,8 +467,8 @@ exports[`Table component renders with square corners 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
-    background: var(--colors-primaryDark);
+  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+    background: var(--colors-primary1000);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -499,7 +499,7 @@ exports[`Table component renders with square corners 1`] = `
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
+      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
@@ -603,8 +603,8 @@ exports[`Table component renders with sticky columns 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bzJeMb-theme-primaryDark .c-jhJxGZ {
-    background: var(--colors-primaryDark);
+  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+    background: var(--colors-primary1000);
   }
 
   .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
@@ -622,8 +622,8 @@ exports[`Table component renders with sticky columns 1`] = `
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-jSYITb-theme-primary .c-jhJxGZ {
-    background: var(--colors-primary);
+  .c-PJLV-bFYmVr-theme-primary .c-jhJxGZ {
+    background: var(--colors-primary800);
   }
 }
 
@@ -674,7 +674,7 @@ exports[`Table component renders with sticky columns 1`] = `
       class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
-        class="c-PJLV c-PJLV-bzJeMb-theme-primaryDark"
+        class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
         numberofstickycolumns="1"
       >
         <tr

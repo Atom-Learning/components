@@ -14,22 +14,13 @@ import { AlertDialogContent } from './AlertDialogContent'
 
 const StyledAlertDialog = styled(Root, {})
 
-type AlertDialogProps = React.ComponentProps<typeof StyledAlertDialog>
-
-export const AlertDialog: React.FC<AlertDialogProps> & {
-  Content: typeof AlertDialogContent
-  Trigger: typeof Trigger
-  Description: typeof Description
-  Title: typeof Title
-  Action: typeof Action
-  Cancel: typeof Cancel
-} = (props) => <StyledAlertDialog {...props} />
-
-AlertDialog.Description = Description
-AlertDialog.Title = Title
-AlertDialog.Action = Action
-AlertDialog.Cancel = Cancel
-AlertDialog.Content = AlertDialogContent
-AlertDialog.Trigger = Trigger
+export const AlertDialog = Object.assign(StyledAlertDialog, {
+  Description: Description,
+  Title: Title,
+  Action: Action,
+  Cancel: Cancel,
+  Content: AlertDialogContent,
+  Trigger: Trigger
+})
 
 AlertDialog.displayName = 'AlertDialog'

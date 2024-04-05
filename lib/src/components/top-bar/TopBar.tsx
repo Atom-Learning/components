@@ -5,30 +5,23 @@ import { useWindowScrollPosition } from '~/utilities/hooks/useWindowScrollPositi
 
 import { Divider } from '../divider'
 import { Flex } from '../flex'
+import { colorSchemes as topBarColorSchemes } from './stitches.topBar.colorscheme.config'
 import { TopBarActionIcon } from './TopBarActionIcon'
 import { TopBarBrand, TopBarBrandLogo, TopBarBrandName } from './TopBarBrand'
 
-interface TopBarSubComponents {
-  Brand: typeof TopBarBrand
-  BrandLogo: typeof TopBarBrandLogo
-  BrandName: typeof TopBarBrandName
-  ActionIcon: typeof TopBarActionIcon
-  Divider: typeof TopBarDivider
-}
-
 const TopBarDivider = () => (
-  <Divider orientation="vertical" css={{ height: '$2', bg: '$tonal100' }} />
+  <Divider orientation="vertical" css={{ height: '$2', bg: '$divider' }} />
 )
 
 const StyledRoot = styled('div', {
-  bg: 'white',
+  bg: '$background',
   position: 'sticky',
   display: 'flex',
   alignItems: 'center',
   width: '100vw',
   top: '0',
   zIndex: 1,
-  borderBottom: '1px solid $tonal100',
+  borderBottom: '1px solid $borderBottom',
   transition: 'box-shadow .2s ease-out',
   variants: {
     hasScrolled: {
@@ -73,25 +66,33 @@ type StyledRootProps = React.ComponentProps<typeof StyledRoot>
 
 interface TopBarProps extends StyledRootProps {
   css?: CSS
+  className?: string
 }
 
-export const TopBar: React.FC<TopBarProps> & TopBarSubComponents = ({
+const TopBarComponent = ({
   size = 'md',
+  className = topBarColorSchemes['light'],
   ...props
-}) => {
+}: TopBarProps) => {
   const { y: scrollPositionY } = useWindowScrollPosition()
 
   return (
-    <StyledRoot hasScrolled={!!scrollPositionY} size={size}>
+    <StyledRoot
+      className={className}
+      hasScrolled={!!scrollPositionY}
+      size={size}
+    >
       <Container {...props} />
     </StyledRoot>
   )
 }
 
-TopBar.Brand = TopBarBrand
-TopBar.BrandLogo = TopBarBrandLogo
-TopBar.BrandName = TopBarBrandName
-TopBar.ActionIcon = TopBarActionIcon
-TopBar.Divider = TopBarDivider
+export const TopBar = Object.assign(TopBarComponent, {
+  Brand: TopBarBrand,
+  BrandLogo: TopBarBrandLogo,
+  BrandName: TopBarBrandName,
+  ActionIcon: TopBarActionIcon,
+  Divider: TopBarDivider
+})
 
-TopBar.displayName = 'TopBar'
+TopBarComponent.displayName = 'TopBar'

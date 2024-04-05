@@ -1,28 +1,42 @@
 import * as React from 'react'
 
+import { CSS } from '~/stitches'
+
 import { Table } from '../table'
+import { TableBody } from '../table/TableBody'
 import { DataTable } from './DataTable'
 import { AsyncDataState } from './DataTable.types'
 import { useDataTable } from './DataTableContext'
+import { DataTableHead } from './DataTableHead'
 import { DataTableLoading } from './DataTableLoading'
 
 export type DataTableTableProps = Omit<
   React.ComponentProps<typeof Table>,
-  'children'
+  'children' | 'numberOfStickyColumns'
 > &
   Partial<
-    Pick<React.ComponentProps<typeof DataTable.Head>, 'theme' | 'sortable'>
+    Pick<React.ComponentProps<typeof DataTableHead>, 'theme' | 'sortable'>
   > &
-  Partial<Pick<React.ComponentProps<typeof Table.Body>, 'striped'>>
+  Partial<Pick<React.ComponentProps<typeof TableBody>, 'striped'>> & {
+    scrollOptions?: {
+      hasStickyHeader?: boolean
+      headerCss?: CSS
+      numberOfStickyColumns?: number
+      scrollContainerCss?: CSS
+    }
+  }
 
-export const DataTableTable: React.FC<DataTableTableProps> = ({
+export const DataTableTable = ({
   sortable,
   striped,
   theme,
   css,
-  numberOfStickyColumns = 0,
+  scrollOptions = {
+    numberOfStickyColumns: 0,
+    hasStickyHeader: false
+  },
   ...props
-}) => {
+}: DataTableTableProps) => {
   const { asyncDataState, getTotalRows } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
@@ -35,7 +49,8 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
 
       <Table
         {...props}
-        numberOfStickyColumns={numberOfStickyColumns}
+        numberOfStickyColumns={scrollOptions.numberOfStickyColumns}
+        scrollContainerCss={scrollOptions.scrollContainerCss}
         css={{
           ...css,
           ...(isPending && {
@@ -45,7 +60,12 @@ export const DataTableTable: React.FC<DataTableTableProps> = ({
           })
         }}
       >
-        <DataTable.Head theme={theme} sortable={sortable} />
+        <DataTable.Head
+          theme={theme}
+          sortable={sortable}
+          isSticky={scrollOptions.hasStickyHeader}
+          css={scrollOptions.headerCss}
+        />
         <DataTable.Body striped={striped} />
       </Table>
     </>

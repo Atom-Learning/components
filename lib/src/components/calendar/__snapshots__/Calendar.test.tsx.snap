@@ -6,7 +6,7 @@ exports[`Calendar component renders 1`] = `
     display: flex;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -16,14 +16,21 @@ exports[`Calendar component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -78,7 +85,7 @@ exports[`Calendar component renders 1`] = `
     }
 }
 
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -93,6 +100,11 @@ exports[`Calendar component renders 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-fPxPMR {
@@ -112,7 +124,7 @@ exports[`Calendar component renders 1`] = `
     display: none;
   }
 
-  .c-gNRHdp {
+  .c-dOwGHN {
     background: transparent;
     border: none;
     border-radius: var(--radii-round);
@@ -126,28 +138,28 @@ exports[`Calendar component renders 1`] = `
     transition: all 75ms;
   }
 
-  .c-gNRHdp:hover {
+  .c-dOwGHN:hover {
     background: var(--colors-tonal100);
   }
 
-  .c-gNRHdp:active {
+  .c-dOwGHN:active {
     color: white;
-    background: var(--colors-primary);
+    background: var(--colors-primary800);
   }
 
-  .c-gNRHdp:focus {
-    outline: 2px solid var(--colors-primary);
+  .c-dOwGHN:focus {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -157,12 +169,18 @@ exports[`Calendar component renders 1`] = `
     max-width: 250px;
   }
 
-  .c-fkUJsw-elrwsr-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
+    height: 20px;
+    width: 20px;
   }
 
   .c-dyvMgW-bndJoy-size-sm {
@@ -182,53 +200,47 @@ exports[`Calendar component renders 1`] = `
     display: table;
   }
 
-  .c-gNRHdp-huXVXM-isOutsideMonth-true {
+  .c-dOwGHN-huXVXM-isOutsideMonth-true {
     color: var(--colors-tonal200);
   }
 
-  .c-gNRHdp-hztIub-isToday-true {
+  .c-dOwGHN-hztIub-isToday-true {
     background: var(--colors-tonal100);
   }
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fkUJsw-iRJCoR-cv {
+  .c-kaaUSm-klvXVG-cv {
     background: white;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-klvXVG-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):hover,
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):focus {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
     background: rgba(255, 255, 255, 0.9);
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-iRJCoR-cv:not([disabled]):active {
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
     background: rgba(255, 255, 255, 0.75);
   }
 }
@@ -252,7 +264,7 @@ exports[`Calendar component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-fkUJsw-ikwYYXS-css {
+  .c-kaaUSm-ikwYYXS-css {
     padding-left: 0;
     padding-right: 0;
     color: var(--colors-tonal600);
@@ -277,13 +289,13 @@ exports[`Calendar component renders 1`] = `
     >
       <button
         aria-label="Previous month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -294,13 +306,13 @@ exports[`Calendar component renders 1`] = `
       </button>
       <button
         aria-label="Next month"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
         data-state="closed"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -317,7 +329,7 @@ exports[`Calendar component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iePfWBT-css"
       >
         <button
-          class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-iRJCoR-cv c-fkUJsw-ikwYYXS-css"
+          class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-klvXVG-cv c-kaaUSm-ikwYYXS-css"
           type="button"
         >
           Dec
@@ -370,7 +382,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sun Nov 28 2021"
           aria-pressed="false"
-          class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
+          class="c-dOwGHN c-dOwGHN-huXVXM-isOutsideMonth-true"
           role="button"
           type="button"
         >
@@ -379,7 +391,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Nov 29 2021"
           aria-pressed="false"
-          class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
+          class="c-dOwGHN c-dOwGHN-huXVXM-isOutsideMonth-true"
           role="button"
           type="button"
         >
@@ -388,7 +400,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Nov 30 2021"
           aria-pressed="false"
-          class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
+          class="c-dOwGHN c-dOwGHN-huXVXM-isOutsideMonth-true"
           role="button"
           type="button"
         >
@@ -397,7 +409,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Wed Dec 01 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -406,7 +418,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Thu Dec 02 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -415,7 +427,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Fri Dec 03 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -424,7 +436,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sat Dec 04 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -433,7 +445,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sun Dec 05 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -442,7 +454,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Dec 06 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -451,7 +463,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Dec 07 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -460,7 +472,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Wed Dec 08 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -469,7 +481,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Thu Dec 09 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -478,7 +490,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Fri Dec 10 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -487,7 +499,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sat Dec 11 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -496,7 +508,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sun Dec 12 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -505,7 +517,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Dec 13 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -514,7 +526,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Dec 14 2021"
           aria-pressed="false"
-          class="c-gNRHdp c-gNRHdp-hztIub-isToday-true"
+          class="c-dOwGHN c-dOwGHN-hztIub-isToday-true"
           role="button"
           type="button"
         >
@@ -523,7 +535,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Wed Dec 15 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -532,7 +544,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Thu Dec 16 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -541,7 +553,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Fri Dec 17 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -550,7 +562,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sat Dec 18 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -559,7 +571,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sun Dec 19 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -568,7 +580,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Dec 20 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -577,7 +589,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Dec 21 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -586,7 +598,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Wed Dec 22 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -595,7 +607,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Thu Dec 23 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -604,7 +616,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Fri Dec 24 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -613,7 +625,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sat Dec 25 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -622,7 +634,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sun Dec 26 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -631,7 +643,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Mon Dec 27 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -640,7 +652,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Tue Dec 28 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -649,7 +661,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Wed Dec 29 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -658,7 +670,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Thu Dec 30 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -667,7 +679,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Fri Dec 31 2021"
           aria-pressed="false"
-          class="c-gNRHdp"
+          class="c-dOwGHN"
           role="button"
           type="button"
         >
@@ -676,7 +688,7 @@ exports[`Calendar component renders 1`] = `
         <button
           aria-label="Sat Jan 01 2022"
           aria-pressed="false"
-          class="c-gNRHdp c-gNRHdp-huXVXM-isOutsideMonth-true"
+          class="c-dOwGHN c-dOwGHN-huXVXM-isOutsideMonth-true"
           role="button"
           type="button"
         >

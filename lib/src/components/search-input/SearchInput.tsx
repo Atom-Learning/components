@@ -53,108 +53,113 @@ const StyledSearchInput = styled(Input, {
     }
 })
 
-export const SearchInput: React.FC<SearchInputProps> = React.forwardRef(
-  (
-    {
-      size = 'md',
-      css,
-      value,
-      defaultValue = '',
-      onValueChange,
-      clearText = 'Clear',
-      onChange,
-      ...remainingProps
-    },
-    ref
-  ) => {
-    const [inputElRef, setInputElRef] = useCallbackRef()
-    const [innerValue, setInnerValue] = React.useState(defaultValue)
-    const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
-      defaultValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
-    )
-    React.useEffect(() => {
-      if (typeof value === 'undefined') return
-      setInnerValue(value)
-      setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
-    }, [value])
+export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
+  React.forwardRef(
+    (
+      {
+        size = 'md',
+        css,
+        value,
+        defaultValue = '',
+        onValueChange,
+        clearText = 'Clear',
+        onChange,
+        ...remainingProps
+      },
+      ref
+    ) => {
+      const [inputElRef, setInputElRef] = useCallbackRef()
+      const [innerValue, setInnerValue] = React.useState(defaultValue)
+      const [activeIcon, setActiveIcon] = React.useState<INPUT_ICON>(
+        defaultValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH
+      )
+      React.useEffect(() => {
+        if (typeof value === 'undefined') return
+        setInnerValue(value)
+        setActiveIcon(value ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
+      }, [value])
 
-    const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
+      const iconSize = React.useMemo(() => getFieldIconSize(size), [size])
 
-    React.useImperativeHandle(ref, () => inputElRef.current as HTMLInputElement)
+      React.useImperativeHandle(
+        ref,
+        () => inputElRef.current as HTMLInputElement
+      )
 
-    const handleClear = () => {
-      const inputEl = inputElRef.current
-      if (!inputEl) return
+      const handleClear = () => {
+        const inputEl = inputElRef.current
+        if (!inputEl) return
 
-      // https://stackoverflow.com/a/46012210
-      const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
-        window.HTMLInputElement.prototype,
-        'value'
-      )?.set
-      nativeInputValueSetter?.call?.(inputEl, '')
-      const ev2 = new Event('input', {
-        bubbles: true
-      })
-      inputEl.dispatchEvent(ev2)
-      inputEl.focus()
-      onValueChange?.('')
-    }
+        // https://stackoverflow.com/a/46012210
+        const nativeInputValueSetter = Object.getOwnPropertyDescriptor(
+          window.HTMLInputElement.prototype,
+          'value'
+        )?.set
+        nativeInputValueSetter?.call?.(inputEl, '')
+        const ev2 = new Event('input', {
+          bubbles: true
+        })
+        inputEl.dispatchEvent(ev2)
+        inputEl.focus()
+        onValueChange?.('')
+      }
 
-    const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      onChange?.(event)
+      const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        onChange?.(event)
 
-      const newValue = event.target.value
-      setInnerValue(newValue)
-      onValueChange?.(newValue)
-      setActiveIcon(newValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
-    }
+        const newValue = event.target.value
+        setInnerValue(newValue)
+        onValueChange?.(newValue)
+        setActiveIcon(newValue ? INPUT_ICON.CLEAR : INPUT_ICON.SEARCH)
+      }
 
-    const getIcon = () => {
-      if (activeIcon === INPUT_ICON.SEARCH)
+      const getIcon = () => {
+        if (activeIcon === INPUT_ICON.SEARCH)
+          return (
+            <StyledIcon
+              is={Search}
+              size={size}
+              css={{
+                size: size == 'sm' ? '$1' : 20,
+                top: '50%',
+                transform: 'translateY(-50%)'
+              }}
+            />
+          )
+
         return (
-          <StyledIcon
-            is={Search}
-            size={size}
+          <ActionIcon
+            label={clearText}
+            theme="neutral"
+            size={iconSize}
             css={{
-              size: size == 'sm' ? '$1' : 20,
+              position: 'absolute',
               top: '50%',
-              transform: 'translateY(-50%)'
+              transform: 'translateY(-50%)',
+              right: '$1'
             }}
-          />
+            onClick={handleClear}
+          >
+            <Icon is={Close} />
+          </ActionIcon>
         )
+      }
 
       return (
-        <ActionIcon
-          label={clearText}
-          theme="neutral"
-          size={iconSize}
-          css={{
-            position: 'absolute',
-            top: '50%',
-            transform: 'translateY(-50%)'
-          }}
-          onClick={handleClear}
-        >
-          <Icon is={Close} />
-        </ActionIcon>
+        <Box css={{ position: 'relative', height: 'max-content', ...css }}>
+          <StyledSearchInput
+            ref={setInputElRef}
+            size={size}
+            type="search"
+            {...remainingProps}
+            value={innerValue}
+            onChange={handleOnChange}
+            css={{ pr: size === 'sm' ? '$5' : '$6' }}
+          />
+          {getIcon()}
+        </Box>
       )
     }
-
-    return (
-      <Box css={{ position: 'relative', height: 'max-content', ...css }}>
-        {getIcon()}
-        <StyledSearchInput
-          ref={setInputElRef}
-          size={size}
-          type="search"
-          {...remainingProps}
-          value={innerValue}
-          onChange={handleOnChange}
-          css={{ pl: size === 'sm' ? '$5' : '$6' }}
-        />
-      </Box>
-    )
-  }
-)
+  )
 
 SearchInput.displayName = 'SearchInput'

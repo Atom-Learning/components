@@ -1,4 +1,4 @@
-import { Theme } from '@atom-learning/theme'
+import { Theme } from '@atom-learning/theme/lib/theme-atom'
 
 import { CSS, theme } from '../../stitches'
 

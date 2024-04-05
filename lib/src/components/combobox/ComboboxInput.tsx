@@ -29,7 +29,7 @@ export const StyledComboboxInput = styled(BaseComboboxInput, {
     opacity: 1
   },
   '&:focus-within': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&[disabled]': {
@@ -67,8 +67,7 @@ export type ComboboxInputProps = React.ComponentProps<
   typeof StyledComboboxInput
 >
 
-export const ComboboxInput: React.FC<ComboboxInputProps> = React.forwardRef(
-  ({ size = 'md', ...rest }, ref) => {
-    return <StyledComboboxInput size={size} {...rest} ref={ref} />
-  }
-)
+export const ComboboxInput: React.ForwardRefExoticComponent<ComboboxInputProps> =
+  React.forwardRef(({ size = 'md', ...rest }, ref) => (
+    <StyledComboboxInput size={size} {...rest} ref={ref} />
+  ))

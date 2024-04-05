@@ -9,11 +9,11 @@ type DataTableBodyProps = Omit<
   'children'
 > & { idColumn?: string }
 
-export const DragAndDropTableBody: React.FC<DataTableBodyProps> = ({
+export const DragAndDropTableBody = ({
   striped = false,
   idColumn = 'id',
   ...props
-}) => {
+}: DataTableBodyProps) => {
   const { getRowModel } = useDataTable()
   return (
     <Table.Body {...props} striped={striped}>

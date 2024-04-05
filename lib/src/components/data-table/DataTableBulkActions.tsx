@@ -8,21 +8,6 @@ import { Flex } from '../flex'
 import { DataTable } from '.'
 import { useDataTable } from './DataTableContext'
 
-interface DataTableBulkActionsProps {
-  css?: CSS
-  children: [
-    React.ReactElement<React.ComponentProps<typeof BulkActionsDefaultActions>>,
-    React.ReactElement<
-      React.ComponentProps<typeof BulkActionsSelectedRowActions>
-    >
-  ]
-}
-
-interface BulkActionsSelectedRowActionsProps {
-  cancelLabel?: string
-  children: React.ReactNode
-}
-
 const StyledContainer = styled(Flex, {
   p: '$2',
   width: '100%',
@@ -35,7 +20,7 @@ const StyledContainer = styled(Flex, {
   variants: {
     isRowSelected: {
       true: {
-        bg: '$blue100'
+        bg: '$primary100'
       }
     }
   }
@@ -48,19 +33,23 @@ const BulkActionsDefaultActions = ({
 }): React.ReactElement | null => {
   const { rowSelection } = useDataTable()
 
-  if (Object.keys(rowSelection).length > 0) return null
+  if (Object.keys(rowSelection || {}).length > 0) return null
 
   return children
 }
 
-const BulkActionsSelectedRowActions: React.FC<
-  BulkActionsSelectedRowActionsProps
-> = ({ cancelLabel = 'Cancel', children }) => {
+const BulkActionsSelectedRowActions = ({
+  cancelLabel = 'Cancel',
+  children
+}: {
+  cancelLabel?: string
+  children: React.ReactNode
+}) => {
   const { toggleAllPageRowsSelected, rowSelection } = useDataTable()
 
   const handleDeselectAllPageRows = () => toggleAllPageRowsSelected(false)
 
-  if (Object.keys(rowSelection).length === 0) return null
+  if (Object.keys(rowSelection || {}).length === 0) return null
 
   return (
     <>
@@ -75,24 +64,44 @@ const BulkActionsSelectedRowActions: React.FC<
   )
 }
 
-export const DataTableBulkActions: React.FC<DataTableBulkActionsProps> & {
-  DefaultActions: typeof BulkActionsDefaultActions
-  SelectedRowActions: typeof BulkActionsSelectedRowActions
-} = ({ children, ...rest }) => {
-  const { rowSelection } = useDataTable()
+export const DataTableBulkActions = Object.assign(
+  ({
+    children,
+    ...rest
+  }: {
+    css?: CSS
+    children:
+      | React.ReactElement<
+          React.ComponentProps<typeof BulkActionsDefaultActions>
+        >
+      | React.ReactElement<
+          React.ComponentProps<typeof BulkActionsSelectedRowActions>
+        >
+      | [
+          React.ReactElement<
+            React.ComponentProps<typeof BulkActionsDefaultActions>
+          >,
+          React.ReactElement<
+            React.ComponentProps<typeof BulkActionsSelectedRowActions>
+          >
+        ]
+  }) => {
+    const { rowSelection } = useDataTable()
 
-  const isRowSelected = Object.keys(rowSelection || {}).length > 0
+    const isRowSelected = Object.keys(rowSelection || {}).length > 0
 
-  return (
-    <StyledContainer isRowSelected={isRowSelected} {...rest}>
-      <DataTable.MetaData />
+    return (
+      <StyledContainer isRowSelected={isRowSelected} {...rest}>
+        <DataTable.MetaData />
 
-      <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
-        {children}
-      </Flex>
-    </StyledContainer>
-  )
-}
-
-DataTableBulkActions.DefaultActions = BulkActionsDefaultActions
-DataTableBulkActions.SelectedRowActions = BulkActionsSelectedRowActions
+        <Flex css={{ justifyContent: 'flex-end', alignItems: 'center' }}>
+          {children}
+        </Flex>
+      </StyledContainer>
+    )
+  },
+  {
+    DefaultActions: BulkActionsDefaultActions,
+    SelectedRowActions: BulkActionsSelectedRowActions
+  }
+)

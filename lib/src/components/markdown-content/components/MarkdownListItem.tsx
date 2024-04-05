@@ -8,7 +8,9 @@ type MarkdownListItemProps = {
   handleNode: (node: Content) => React.ReactElement
 }
 
-export const MarkdownListItem: React.FC<MarkdownListItemProps> = ({
+export const MarkdownListItem = ({
   node,
   handleNode
-}) => <List.Item>{node.children?.map(handleNode)}</List.Item>
+}: MarkdownListItemProps) => (
+  <List.Item>{node.children?.map(handleNode)}</List.Item>
+)

@@ -6,9 +6,7 @@ import { DismissibleGroup } from '~/components/dismissible-group'
 type TChipDismissibleGroupRootProps = React.ComponentProps<typeof ChipGroup> &
   React.ComponentProps<typeof DismissibleGroup>
 
-export const ChipDismissibleGroupRoot = React.forwardRef<
-  HTMLDivElement,
-  TChipDismissibleGroupRootProps
->((props, ref) => {
-  return <ChipGroup as={DismissibleGroup} ref={ref} {...props} />
-})
+export const ChipDismissibleGroupRoot: React.ForwardRefExoticComponent<TChipDismissibleGroupRootProps> =
+  React.forwardRef((props, ref) => {
+    return <ChipGroup as={DismissibleGroup} ref={ref} {...props} />
+  })

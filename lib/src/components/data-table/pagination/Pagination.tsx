@@ -25,7 +25,7 @@ const StyledNav = styled('nav', {
 type PaginationProps = React.ComponentProps<typeof StyledNav>
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-export const Pagination: React.FC<PaginationProps> = (props) => {
+export const Pagination = (props: PaginationProps) => {
   const {
     applyPagination,
     getState,

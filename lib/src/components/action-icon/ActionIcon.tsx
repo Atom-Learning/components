@@ -1,62 +1,66 @@
 import type { VariantProps } from '@stitches/react'
-import { darken } from 'color2k'
 import invariant from 'invariant'
 import * as React from 'react'
 
-import { styled, theme } from '~/stitches'
+import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
+import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
+import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { Icon } from '../icon/Icon'
-import { Tooltip } from '../tooltip/Tooltip'
 import { ActionIconSizeMap } from './ActionIcon.constants'
 
-const getSimpleVariant = (base: string, interact: string, active: string) => ({
-  bg: 'transparent',
-  color: base,
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    color: interact
-  },
-  '&:not(:disabled):active': {
-    color: active
-  },
-  '&[disabled]': {
-    color: '$tonal400',
-    cursor: 'not-allowed'
+const getSimpleVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'simple',
+  css: {
+    bg: 'transparent',
+    color: base,
+    '&:not(:disabled):hover, &:not(:disabled):focus': { color: interact },
+    '&:not(:disabled):active': { color: active }
   }
 })
 
-const getSolidVariant = (base: string, interact: string, active: string) => ({
-  bg: base,
-  color: 'white',
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    bg: interact,
-    color: 'white'
-  },
-  '&:not(:disabled):active': {
-    bg: active
-  },
-  '&[disabled]': {
-    bg: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
+const getSolidVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'solid',
+  css: {
+    bg: base,
+    color: 'white',
+    '&:not(:disabled):hover, &:not(:disabled):focus': {
+      bg: interact,
+      color: 'white'
+    },
+    '&:not(:disabled):active': { bg: active }
   }
 })
 
-const getOutlineVariant = (base: string, interact: string, active: string) => ({
-  border: '1px solid',
-  borderColor: 'currentColor',
-  color: base,
-  '&:not(:disabled):hover, &:not(:disabled):focus': {
-    color: interact
-  },
-  '&:not(:disabled):active': {
-    color: active
-  },
-  '&[disabled]': {
-    borderColor: '$tonal400',
-    color: '$tonal400',
-    cursor: 'not-allowed'
+const getOutlineVariant = (
+  theme: string,
+  base: string,
+  interact: string,
+  active: string
+) => ({
+  theme,
+  appearance: 'outline',
+  css: {
+    border: '1px solid',
+    borderColor: 'currentColor',
+    color: base,
+    '&:not(:disabled):hover, &:not(:disabled):focus': { color: interact },
+    '&:not(:disabled):active': { color: active }
   }
 })
 
@@ -69,9 +73,11 @@ const StyledButton = styled('button', {
   boxSizing: 'border-box',
   cursor: 'pointer',
   display: 'flex',
+  flexShrink: 0,
   justifyContent: 'center',
   p: 'unset',
   transition: 'all 100ms ease-out',
+  '&[disabled]': disabledStyle,
   variants: {
     theme: {
       neutral: {},
@@ -97,130 +103,29 @@ const StyledButton = styled('button', {
       }
     }
   },
+
+  // prettier-ignore
   compoundVariants: [
-    // Appearance Simple
-    {
-      theme: 'neutral',
-      appearance: 'simple',
-      css: getSimpleVariant('$tonal300', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primary',
-      appearance: 'simple',
-      css: getSimpleVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'simple',
-      css: getSimpleVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'simple',
-      css: getSimpleVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'simple',
-      css: getSimpleVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'simple',
-      css: getSimpleVariant('$danger', '$dangerMid', '$dangerDark')
-    },
+    getSimpleVariant('neutral', '$tonal300', '$primary900', '$primary1000'),
+    getSimpleVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getSimpleVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getSimpleVariant('success', '$success', '$successMid', '$successDark'),
+    getSimpleVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getSimpleVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
 
-    // Appearance Solid
-    {
-      theme: 'primary',
-      appearance: 'solid',
-      css: getSolidVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'solid',
-      css: getSolidVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'solid',
-      css: getSolidVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'solid',
-      css: getSolidVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'solid',
-      css: getSolidVariant('$danger', '$dangerMid', '$dangerDark')
-    },
+    getSolidVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getSolidVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getSolidVariant('success', '$success', '$successMid', '$successDark'),
+    getSolidVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getSolidVariant('danger', '$danger', '$dangerMid', '$dangerDark'),
 
-    // Appearance Outline
-    {
-      theme: 'primary',
-      appearance: 'outline',
-      css: getOutlineVariant('$primary', '$primaryMid', '$primaryDark')
-    },
-    {
-      theme: 'primaryDark',
-      appearance: 'outline',
-      css: getOutlineVariant(
-        '$primaryDark',
-        darken(theme.colors.primaryDark.value, 0.1),
-        darken(theme.colors.primaryDark.value, 0.15)
-      )
-    },
-    {
-      theme: 'success',
-      appearance: 'outline',
-      css: getOutlineVariant('$success', '$successMid', '$successDark')
-    },
-    {
-      theme: 'warning',
-      appearance: 'outline',
-      css: getOutlineVariant('$warning', '$warningMid', '$warningDark')
-    },
-    {
-      theme: 'danger',
-      appearance: 'outline',
-      css: getOutlineVariant('$danger', '$dangerMid', '$dangerDark')
-    }
+    getOutlineVariant('primary', '$primary800', '$primary900', '$primary1000'),
+    getOutlineVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
+    getOutlineVariant('success', '$success', '$successMid', '$successDark'),
+    getOutlineVariant('warning', '$warning', '$warningMid', '$warningDark'),
+    getOutlineVariant('danger', '$danger', '$dangerMid', '$dangerDark')
   ]
 })
-
-type ConditionallyWrapWithTooltipProps = {
-  hasTooltip: boolean
-  label: string
-  tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
-  children: React.ReactNode
-}
-
-const ConditionallyWrapWithTooltip: React.FC<
-  ConditionallyWrapWithTooltipProps
-> = ({ hasTooltip, label, tooltipSide, children }) => {
-  if (hasTooltip) {
-    return (
-      <Tooltip>
-        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
-        <Tooltip.Content side={tooltipSide}>{label}</Tooltip.Content>
-      </Tooltip>
-    )
-  }
-
-  // Ignore fragment error as this is the one place we will allow it
-  // eslint-disable-next-line
-  return <>{children}</>
-}
 
 type ActionIconProps = Override<
   React.ComponentProps<typeof StyledButton>,
@@ -228,77 +133,78 @@ type ActionIconProps = Override<
     as?: string | React.ReactNode
     children: React.ReactNode
     label: string
-    hasTooltip?: boolean
-    tooltipSide?: 'bottom' | 'left' | 'right' | 'top'
-  } & NavigatorActions
+  } & Omit<TOptionalTooltipWrapperProps, 'label'> &
+    NavigatorActions
 >
 
-export const ActionIcon = React.forwardRef<HTMLButtonElement, ActionIconProps>(
-  (
-    {
-      children,
-      theme = 'primary',
-      appearance = 'simple',
-      size = 'sm',
-      label,
-      href,
-      disabled,
-      hasTooltip = true,
-      tooltipSide,
-      ...remainingProps
-    },
-    ref
-  ) => {
-    const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
+export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
+  React.forwardRef(
+    (
+      {
+        children,
+        theme = 'primary',
+        appearance = 'simple',
+        size = 'sm',
+        label,
+        href,
+        disabled,
+        hasTooltip = true,
+        tooltipSide,
+        ...remainingProps
+      },
+      ref
+    ) => {
+      const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 
-    invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
+      invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
-    const optionalLinkProps = href
-      ? ({
-          as: 'a',
-          href: disabled ? null : href,
-          onClick: undefined,
-          'aria-disabled': !!disabled
-        } as const)
-      : ({ type: 'button' } as const)
+      const optionalLinkProps = href
+        ? ({
+            as: 'a',
+            href: disabled ? null : href,
+            onClick: undefined,
+            'aria-disabled': !!disabled
+          } as const)
+        : ({ type: 'button' } as const)
 
-    return (
-      <ConditionallyWrapWithTooltip
-        hasTooltip={hasTooltip}
-        label={label}
-        tooltipSide={tooltipSide}
-      >
-        <StyledButton
-          {...optionalLinkProps}
-          {...remainingProps}
-          aria-label={label}
-          theme={theme}
-          appearance={appearance}
-          size={size}
-          ref={ref}
-          disabled={disabled}
+      return (
+        <OptionalTooltipWrapper
+          hasTooltip={hasTooltip}
+          label={label}
+          tooltipSide={tooltipSide}
         >
-          {React.Children.map(children, (child) => {
-            // TS needs this check for any following code to access child.type
-            // even with optional chaining
-            if (!React.isValidElement(child)) {
-              throw new Error(INVALID_CHILDREN_MESSAGE)
-            }
+          <StyledButton
+            {...optionalLinkProps}
+            {...getExternalAnchorProps(href)}
+            {...remainingProps}
+            aria-label={label}
+            theme={theme}
+            appearance={appearance}
+            size={size}
+            ref={ref}
+            disabled={disabled}
+          >
+            {React.Children.map(children, (child) => {
+              // TS needs this check for any following code to access child.type
+              // even with optional chaining
+              if (!React.isValidElement(child)) {
+                throw new Error(INVALID_CHILDREN_MESSAGE)
+              }
 
-            invariant(
-              child.type === Icon,
-              `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
-            )
+              invariant(
+                child.type === Icon,
+                `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
+              )
 
-            return React.cloneElement(child, {
-              size: ActionIconSizeMap[size as string],
-              css: { ...(child.props.css ? child.props.css : {}) }
-            })
-          })}
-        </StyledButton>
-      </ConditionallyWrapWithTooltip>
-    )
-  }
-)
+              return React.cloneElement(child, {
+                size: ActionIconSizeMap[size as string],
+                css: { ...(child.props.css ? child.props.css : {}) }
+              })
+            })}
+          </StyledButton>
+        </OptionalTooltipWrapper>
+      )
+    }
+  )
 
 ActionIcon.displayName = 'ActionIcon'

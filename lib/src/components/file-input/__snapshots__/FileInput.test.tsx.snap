@@ -2,7 +2,7 @@
 
 exports[`FileInput component renders 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -19,9 +19,15 @@ exports[`FileInput component renders 1`] = `
     width: max-content;
   }
 
-  .c-dbrbZt {
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -30,15 +36,21 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-elrwsr-size-md {
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -46,44 +58,35 @@ exports[`FileInput component renders 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-gsycxF-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
-  }
-}
-
-@media  {
-  .c-dbrbZt-idQgHjC-css {
-    margin-right: var(--space-3);
-    height: 20px;
-    width: 20px;
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 }
 
 <div>
   <label
-    class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+    class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-idQgHjC-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

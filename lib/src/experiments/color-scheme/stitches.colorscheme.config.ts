@@ -17,7 +17,7 @@ const generateColors = ({ prefix, colorName, color0 = '' }) => {
   return colors
 }
 
-colorSchemes['interactive-loContrast'] = createTheme('interactive-loContrast', {
+colorSchemes['interactive-loContrast'] = createTheme({
   colors: {
     interactiveForeground: '$foreground',
     interactive1: '$accent1',
@@ -26,7 +26,7 @@ colorSchemes['interactive-loContrast'] = createTheme('interactive-loContrast', {
   }
 })
 
-colorSchemes['interactive-hiContrast'] = createTheme('interactive-hiContrast', {
+colorSchemes['interactive-hiContrast'] = createTheme({
   colors: {
     interactiveForeground: '$foreground7plus',
     interactive1: '$accent9',
@@ -41,6 +41,8 @@ type TcolorSetup = {
 }
 
 export const bases = {
+  primary1: { colorName: 'primary', color0: '#FFFFFF' },
+  primary2: { colorName: 'primary' },
   grey1: { colorName: 'grey', color0: '#FFFFFF' },
   grey2: { colorName: 'grey' },
   blue1: { colorName: 'blue', color0: '#FFFFFF' },
@@ -68,7 +70,7 @@ const generateBase = () => {
   Object.entries(bases).forEach(
     ([name, { colorName, color0 = '' }]: [string, TcolorSetup]) => {
       const themeName = `base-${name}`
-      colorSchemes[themeName] = createTheme(themeName, {
+      colorSchemes[themeName] = createTheme({
         colors: {
           foreground: '$grey1000',
           foreground7plus: '#FFFFFF',
@@ -80,6 +82,8 @@ const generateBase = () => {
 }
 
 export const accents = {
+  primary1: { colorName: 'primary', color0: '#FFFFFF' },
+  primary2: { colorName: 'primary' },
   grey1: { colorName: 'grey', color0: '#FFFFFF' },
   grey2: { colorName: 'grey' },
   blue1: { colorName: 'blue', color0: '#FFFFFF' },
@@ -107,7 +111,7 @@ const generateAccent = () => {
   Object.entries(accents).forEach(
     ([name, { colorName, color0 = '' }]: [string, TcolorSetup]) => {
       const themeName = `accent-${name}`
-      colorSchemes[themeName] = createTheme(themeName, {
+      colorSchemes[themeName] = createTheme({
         colors: generateColors({ prefix: 'accent', colorName, color0 })
       })
     }

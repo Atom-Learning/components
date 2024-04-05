@@ -11,7 +11,11 @@ const DialogTest = (props) => (
   <Tooltip.Provider>
     <Dialog {...props}>
       <Dialog.Trigger>TRIGGER</Dialog.Trigger>
-      <Dialog.Content>CONTENT</Dialog.Content>
+      <Dialog.Content>
+        <Dialog.Heading>TITLE</Dialog.Heading>
+        CONTENT
+        <Dialog.Footer>FOOTER</Dialog.Footer>
+      </Dialog.Content>
     </Dialog>
   </Tooltip.Provider>
 )

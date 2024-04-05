@@ -39,7 +39,7 @@ const StyledButton = styled('button', {
       backgroundColor: '$tonal50'
     },
     '&:active': {
-      borderColor: '$primary',
+      borderColor: '$primary800',
       backgroundColor: '$tonal100'
     },
     '&:focus-visible': focusVisibleStyleBlock()
@@ -70,11 +70,7 @@ export const AvatarRootContext = React.createContext<TAvatarRootContext>({
   size: 'lg'
 })
 
-export const AvatarRootProvider: React.FC<TAvatarProps> = ({
-  children,
-  name,
-  size
-}) => {
+export const AvatarRootProvider = ({ children, name, size }: TAvatarProps) => {
   const value = React.useMemo<TAvatarRootContext>(
     () => ({ name, size }),
     [name, size]
@@ -87,13 +83,13 @@ export const AvatarRootProvider: React.FC<TAvatarProps> = ({
   )
 }
 
-export const AvatarRoot: React.FC<TAvatarProps> = ({
+export const AvatarRoot = ({
   children,
   size = 'lg',
   name,
   disabled = false,
   onClick
-}) => (
+}: TAvatarProps) => (
   <AvatarRootProvider name={name} size={size}>
     {onClick ? (
       <StyledButton
@@ -110,16 +106,11 @@ export const AvatarRoot: React.FC<TAvatarProps> = ({
   </AvatarRootProvider>
 )
 
-type TAvatar = typeof AvatarRoot & {
-  Image: typeof AvatarImage
-  Initial: typeof AvatarInitial
-  Placeholder: typeof AvatarPlaceholder
-  Icon: typeof AvatarIcon
-}
+export const Avatar = Object.assign(AvatarRoot, {
+  Image: AvatarImage,
+  Initial: AvatarInitial,
+  Placeholder: AvatarPlaceholder,
+  Icon: AvatarIcon
+})
 
-export const Avatar = AvatarRoot as TAvatar
-Avatar.Image = AvatarImage
-Avatar.Initial = AvatarInitial
-Avatar.Placeholder = AvatarPlaceholder
-Avatar.Icon = AvatarIcon
-Avatar.displayName = 'Avatar'
+AvatarRoot.displayName = 'Avatar'

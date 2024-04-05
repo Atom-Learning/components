@@ -6,6 +6,7 @@ import { Override } from '~/utilities/types'
 export const StyledIcon = styled('svg', {
   display: 'inline-block',
   fill: 'none',
+  flexShrink: 0,
   stroke: 'currentcolor',
   strokeLinecap: 'round',
   strokeLinejoin: 'round',
@@ -27,8 +28,8 @@ type IconProps = Override<
   }
 >
 
-export const Icon: React.FC<IconProps> = React.forwardRef(
-  ({ is: SVG, size = 'md', ...remainingProps }, ref) => (
+export const Icon: React.ForwardRefExoticComponent<IconProps> =
+  React.forwardRef(({ is: SVG, size = 'md', ...remainingProps }, ref) => (
     <StyledIcon
       size={size}
       aria-hidden="true"
@@ -36,5 +37,4 @@ export const Icon: React.FC<IconProps> = React.forwardRef(
       as={SVG}
       ref={ref}
     />
-  )
-)
+  ))

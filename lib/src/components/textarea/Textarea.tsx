@@ -20,7 +20,7 @@ const StyledTextarea = styled('textarea', {
   transition: 'all 75ms ease-out',
   width: '100%',
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&[disabled]': {
@@ -43,8 +43,7 @@ const StyledTextarea = styled('textarea', {
 
 export type TextareaProps = React.ComponentProps<typeof StyledTextarea>
 
-export const Textarea: React.FC<TextareaProps> = React.forwardRef(
-  (props, ref) => <StyledTextarea {...props} ref={ref} />
-)
+export const Textarea: React.ForwardRefExoticComponent<TextareaProps> =
+  React.forwardRef((props, ref) => <StyledTextarea {...props} ref={ref} />)
 
 Textarea.displayName = 'Textarea'

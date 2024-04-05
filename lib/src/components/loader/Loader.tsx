@@ -45,12 +45,12 @@ type LoaderProps = {
   css?: CSS
 }
 
-export const Loader: React.FC<LoaderProps> = ({
+export const Loader = ({
   css = {},
   message = 'Loading',
   size = 'md',
   ...props
-}) => (
+}: LoaderProps) => (
   <Flex
     css={{
       justifyContent: 'center',

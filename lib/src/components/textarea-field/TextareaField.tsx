@@ -10,15 +10,16 @@ import { Textarea, TextareaProps } from '~/components/textarea'
 
 type TextareaFieldProps = TextareaProps & FieldElementWrapperProps
 
-export const TextareaField: React.FC<TextareaFieldProps> = ({
+export const TextareaField = ({
   css = undefined,
+  hideLabel,
   label,
   name,
   validation,
   prompt,
   description,
   ...remainingProps
-}) => {
+}: TextareaFieldProps) => {
   const { register } = useFormContext()
   const { error } = useFieldError(name)
 
@@ -30,6 +31,7 @@ export const TextareaField: React.FC<TextareaFieldProps> = ({
       description={description}
       error={error}
       fieldId={name}
+      hideLabel={hideLabel}
       label={label}
       prompt={prompt}
       required={Boolean(validation?.required)}

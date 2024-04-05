@@ -9,12 +9,12 @@ export type TSortableHandleProps = {
   label?: string
 } & Omit<THandleProps, 'label'>
 
-export const SortableHandle: React.FC<TSortableHandleProps> = ({
+export const SortableHandle = ({
   targetId,
   disabled = false,
   label = 'drag handle',
   ...rest
-}) => {
+}: TSortableHandleProps) => {
   const { attributes, listeners, isDragging, setActivatorNodeRef } =
     useSortable({ id: targetId })
 

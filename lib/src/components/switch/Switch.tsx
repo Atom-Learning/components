@@ -2,6 +2,7 @@ import * as RadixSwitch from '@radix-ui/react-switch'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 
 const StyledSwitch = styled(RadixSwitch.Root, {
   appearance: 'none',
@@ -17,15 +18,16 @@ const StyledSwitch = styled(RadixSwitch.Root, {
     backgroundColor: '$tonal300'
   },
   '&:focus': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '1px'
   },
   '&[data-state="checked"]': {
-    backgroundColor: '$primary'
+    backgroundColor: '$primary800'
   },
   '&[data-state="checked"]:hover': {
-    backgroundColor: '$primaryMid'
+    backgroundColor: '$primary900'
   },
+  '&[disabled]': disabledStyle,
   variants: {
     size: {
       md: {
@@ -66,7 +68,7 @@ const StyledThumb = styled(RadixSwitch.Thumb, {
 
 type SwitchProps = React.ComponentProps<typeof StyledSwitch>
 
-export const Switch: React.FC<SwitchProps> = ({ size = 'md', ...rest }) => (
+export const Switch = ({ size = 'md', ...rest }: SwitchProps) => (
   <StyledSwitch size={size} {...rest}>
     <StyledThumb size={size} />
   </StyledSwitch>

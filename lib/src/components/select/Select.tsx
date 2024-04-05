@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { styled, theme } from '~/stitches'
-import { encodeBackgroundIcon } from '~/utilities'
+import { disabledStyle, encodeBackgroundIcon } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledSelect = styled('select', {
@@ -22,17 +22,13 @@ const StyledSelect = styled('select', {
     cursor: 'pointer'
   },
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
   '&::-ms-expand': {
     display: 'none'
   },
-  '&[disabled], > option[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
+  '&[disabled], > option[disabled]': disabledStyle,
   variants: {
     size: {
       sm: {
@@ -82,29 +78,30 @@ export type SelectProps = Override<
   // )
 >
 
-export const Select: React.FC<SelectProps> = React.forwardRef(
-  ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
-    const props = { size, ref, ...remainingProps }
+export const Select: React.ForwardRefExoticComponent<SelectProps> =
+  React.forwardRef(
+    ({ placeholder, children, size = 'md', ...remainingProps }, ref) => {
+      const props = { size, ref, ...remainingProps }
 
-    if (
-      [remainingProps.value, remainingProps.defaultValue].every(
-        (value) => value === undefined
+      if (
+        [remainingProps.value, remainingProps.defaultValue].every(
+          (value) => value === undefined
+        )
+      ) {
+        props.defaultValue = ''
+      }
+
+      return (
+        <StyledSelect {...props}>
+          {placeholder && (
+            <option disabled hidden value="">
+              {placeholder}
+            </option>
+          )}
+          {children}
+        </StyledSelect>
       )
-    ) {
-      props.defaultValue = ''
     }
-
-    return (
-      <StyledSelect {...props}>
-        {placeholder && (
-          <option disabled hidden value="">
-            {placeholder}
-          </option>
-        )}
-        {children}
-      </StyledSelect>
-    )
-  }
-)
+  )
 
 Select.displayName = 'Select'

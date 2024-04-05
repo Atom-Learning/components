@@ -12,7 +12,7 @@ const buttonStyles = {
   alignItems: 'center',
   bg: 'unset',
   border: 'unset',
-  color: '$primary',
+  color: '$primary800',
   cursor: 'pointer',
   display: 'flex',
   justifyContent: 'center',
@@ -22,10 +22,10 @@ const buttonStyles = {
   transform: 'translateY(-50%)',
   transition: 'color 0.15s ease-in-out',
   '&:hover': {
-    color: '$primaryMid'
+    color: '$primary900'
   },
   '&:active': {
-    color: '$primaryDark'
+    color: '$primary1000'
   },
   '&:disabled': {
     color: '$tonal100'
@@ -36,12 +36,12 @@ const StyledButtonBack = styled(BaseButtonBack, buttonStyles)
 
 const StyledButtonNext = styled(BaseButtonNext, buttonStyles)
 
-export const CarouselArrowPrevious: React.FC<{ css: CSS }> = (props) => (
+export const CarouselArrowPrevious = (props: { css: CSS }) => (
   <StyledButtonBack {...props}>
     <Icon is={ChevronLeft} />
   </StyledButtonBack>
 )
-export const CarouselArrowNext: React.FC<{ css: CSS }> = (props) => (
+export const CarouselArrowNext = (props: { css: CSS }) => (
   <StyledButtonNext {...props}>
     <Icon is={ChevronRight} />
   </StyledButtonNext>

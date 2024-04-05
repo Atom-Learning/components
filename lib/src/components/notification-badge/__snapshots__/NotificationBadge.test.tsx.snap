@@ -10,7 +10,7 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     display: flex;
   }
 
-  .c-cLwhcN {
+  .c-deftwF {
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
     flex-direction: column;
@@ -25,10 +25,10 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     min-width: var(--sizes-2);
     text-align: center;
     color: #fff;
-    background: var(--colors-primary);
+    background: var(--colors-primary800);
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -38,14 +38,21 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -102,16 +109,16 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-kMhpXP-size-lg {
+  .c-oUmPa-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-fDzwZw-rloUt-isRounded-true {
+  .c-oUmPa-rloUt-isRounded-true {
     border-radius: var(--radii-round);
   }
 
-  .c-dbrbZt-fLGGKn-size-lg {
+  .c-hMRxhp-fLGGKn-size-lg {
     height: var(--sizes-3);
     width: var(--sizes-3);
     stroke-width: 2;
@@ -123,25 +130,19 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-jpgoGt-cv {
+  .c-oUmPa-fboUUB-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):hover,
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-fboUUB-cv:not(:disabled):hover,
+  .c-oUmPa-fboUUB-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-jpgoGt-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-jpgoGt-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-fboUUB-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -150,20 +151,20 @@ exports[`NotificationBadge component renders a NotificationBadge 1`] = `
     class="c-PJLV c-cmpvrW"
   >
     <div
-      class="c-dhzjXW c-cLwhcN"
+      class="c-dhzjXW c-deftwF"
       role="status"
     >
       3
     </div>
     <button
       aria-label="testing"
-      class="c-fDzwZw c-fDzwZw-kMhpXP-size-lg c-fDzwZw-rloUt-isRounded-true c-fDzwZw-jpgoGt-cv c-PJLV"
+      class="c-oUmPa c-oUmPa-kMhpXP-size-lg c-oUmPa-rloUt-isRounded-true c-oUmPa-fboUUB-cv c-PJLV"
       data-state="closed"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-fLGGKn-size-lg c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-fLGGKn-size-lg c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >

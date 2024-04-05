@@ -8,22 +8,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -40,18 +25,17 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -61,6 +45,22 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-cwQMhQ {
@@ -135,7 +135,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -145,9 +145,15 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-bVZtAj {
@@ -158,15 +164,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fznDru {
+  .c-bPBhYb {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -179,31 +177,32 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     flex-direction: column;
     padding: 0;
     font-weight: 400;
-    color: var(--colors-grey800);
+    color: var(--colors-textSubtle);
     background: var(--colors-base1);
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
-    color: var(--colors-accent10);
+  .c-bPBhYb:not(:disabled):hover {
+    color: var(--colors-textRegular);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-bPBhYb:not(:disabled):active {
+    color: var(--colors-textBold);
     background: var(--colors-base3);
-    color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-bPBhYb:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-bPBhYb[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   .c-bVVNNd {
@@ -269,6 +268,90 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 
   .c-ecNzKx[disabled] * {
     pointer-events: none;
+  }
+
+  .c-vRLgs {
+    padding: var(--space-2);
+    width: 100%;
+    margin-bottom: var(--space-2);
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--sizes-6);
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .c-dScekx {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+    flex-shrink: 0;
+  }
+
+  .c-dScekx[data-state="checked"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx[data-state="indeterminate"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx:focus {
+    outline: 2px solid var(--colors-primary800);
+    outline-offset: 1px;
+  }
+
+  .c-dScekx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-fNKiiB {
+    border: 0;
+    background: var(--colors-tonal100);
   }
 
   .c-hVoQtf {
@@ -349,23 +432,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     z-index: 1;
   }
 
-  .c-fkUJsw {
-    align-items: center;
-    background: unset;
-    border: unset;
-    border-radius: var(--radii-0);
-    cursor: pointer;
-    display: flex;
-    font-family: var(--fonts-body);
-    font-weight: 600;
-    justify-content: center;
-    padding: unset;
-    text-decoration: none;
-    transition: all 100ms ease-out;
-    white-space: nowrap;
-    width: max-content;
-  }
-
   .c-QtuIU {
     flex-direction: column;
     align-items: center;
@@ -412,7 +478,13 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -422,12 +494,6 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 
   .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
@@ -453,9 +519,9 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -479,54 +545,32 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
-  }
-
-  .c-fznDru-cVoMNQ-size-md {
+  .c-bPBhYb-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-bPBhYb-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
@@ -535,30 +579,19 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     max-width: 400px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
   .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
-  }
-
-  .c-hVoQtf-gWQnqe-size-md {
-    max-width: 250px;
-  }
-
-  .c-jBOHFZ-jIYkAt-size-md {
-    height: 6px;
-    width: 6px;
-    margin-left: 2px;
-    margin-right: 2px;
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -578,12 +611,48 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: table;
   }
 
-  .c-fkUJsw-elrwsr-size-md {
+  .c-dScekx-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fNKiiB-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
+  }
+
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-jBOHFZ-jIYkAt-size-md {
+    height: 6px;
+    width: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   .c-QtuIU-gtyVWU-size-sm {
@@ -602,63 +671,72 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fDzwZw-cmVfvW-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fkUJsw-gsycxF-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-klvXVG-cv {
+    background: white;
+    color: var(--colors-primary800);
+  }
+
+  .c-kaaUSm-klvXVG-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary800);
+  }
+
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
@@ -673,15 +751,15 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin-bottom: var(--space-4);
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 
   .c-cwQMhQ-illIiIE-css {
@@ -709,7 +787,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -718,15 +796,60 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: inline-block;
   }
 
+  .c-dyvMgW-iecBjWS-css {
+    font-weight: 600;
+  }
+
+  .c-dhzjXW-ijTlYpr-css {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .c-jhJxGZ-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-ihQtuj-ijIAHBC-css {
+    width: var(--sizes-4);
+    cursor: pointer;
+  }
+
+  .c-ihQtuj-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-dScekx-ibVyrVm-css {
+    margin-left: 0;
+  }
+
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
+  }
+
+  .c-dScekx-ijkNVrQ-css {
+    margin-left: var(--space-2);
+  }
+
+  .c-fNKiiB-illGyZa-css {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+  }
+
+  .c-hMRxhp-igiJmlC-css {
+    stroke-width: 3;
+  }
+
   .c-PJLV-ieFlhpX-css {
     position: relative;
     height: max-content;
   }
 
-  .c-fDzwZw-ijGdhFN-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: var(--space-1);
   }
 
   .c-dhzjXW-ibICGYT-css {
@@ -782,7 +905,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
       Something is missing
     </p>
     <button
-      class="c-fkUJsw c-fkUJsw-elrwsr-size-md c-fkUJsw-gsycxF-cv"
+      class="c-kaaUSm c-kaaUSm-jyNkKc-size-md c-kaaUSm-cygQAa-cv"
       type="button"
     >
       Click here
@@ -799,22 +922,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -831,18 +939,17 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -852,6 +959,22 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-cwQMhQ {
@@ -926,7 +1049,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -936,9 +1059,15 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-bVZtAj {
@@ -949,15 +1078,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fznDru {
+  .c-bPBhYb {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -970,31 +1091,32 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     flex-direction: column;
     padding: 0;
     font-weight: 400;
-    color: var(--colors-grey800);
+    color: var(--colors-textSubtle);
     background: var(--colors-base1);
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
-    color: var(--colors-accent10);
+  .c-bPBhYb:not(:disabled):hover {
+    color: var(--colors-textRegular);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-bPBhYb:not(:disabled):active {
+    color: var(--colors-textBold);
     background: var(--colors-base3);
-    color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-bPBhYb:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-bPBhYb[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   .c-bVVNNd {
@@ -1086,7 +1208,13 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -1096,12 +1224,6 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 
   .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
@@ -1127,9 +1249,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -1153,54 +1275,32 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
-  }
-
-  .c-fznDru-cVoMNQ-size-md {
+  .c-bPBhYb-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-bPBhYb-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
@@ -1209,13 +1309,13 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     max-width: 400px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
@@ -1226,42 +1326,32 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fDzwZw-cmVfvW-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -1276,15 +1366,15 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     margin-bottom: var(--space-4);
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 
   .c-cwQMhQ-illIiIE-css {
@@ -1312,7 +1402,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -1346,7 +1436,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -1404,14 +1494,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1455,14 +1545,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1506,14 +1596,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1557,14 +1647,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1608,14 +1698,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1659,14 +1749,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1710,14 +1800,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1761,14 +1851,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1812,14 +1902,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1863,14 +1953,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1914,14 +2004,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -1965,14 +2055,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2016,14 +2106,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2067,14 +2157,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2118,14 +2208,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2169,14 +2259,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2220,14 +2310,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2271,14 +2361,14 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
             aria-disabled="false"
             aria-label="drag handle"
             aria-roledescription="sortable"
-            class="c-fDzwZw c-fDzwZw-elrktp-size-sm c-fDzwZw-cmVfvW-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-ecNzKx c-ecNzKx-kbKHjH-isDragging-false c-ecNzKx-iAsWAM-css"
             role="button"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-dbrbZt-iPJLV-css"
+              class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-iPJLV-css"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -2335,7 +2425,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
 exports[`DataTable component renders 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -2344,9 +2434,10 @@ exports[`DataTable component renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -2493,11 +2584,6 @@ exports[`DataTable component renders 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -2506,6 +2592,10 @@ exports[`DataTable component renders 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -2529,6 +2619,18 @@ exports[`DataTable component renders 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -2577,21 +2679,21 @@ exports[`DataTable component renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .accent-blue1 {
+  .t-gMkhEo {
     --colors-accent1: #FFFFFF;
-    --colors-accent2: var(--colors-blue100);
-    --colors-accent3: var(--colors-blue200);
-    --colors-accent4: var(--colors-blue300);
-    --colors-accent5: var(--colors-blue400);
-    --colors-accent6: var(--colors-blue500);
-    --colors-accent7: var(--colors-blue600);
-    --colors-accent8: var(--colors-blue700);
-    --colors-accent9: var(--colors-blue800);
-    --colors-accent10: var(--colors-blue900);
-    --colors-accent11: var(--colors-blue1000);
+    --colors-accent2: var(--colors-primary100);
+    --colors-accent3: var(--colors-primary200);
+    --colors-accent4: var(--colors-primary300);
+    --colors-accent5: var(--colors-primary400);
+    --colors-accent6: var(--colors-primary500);
+    --colors-accent7: var(--colors-primary600);
+    --colors-accent8: var(--colors-primary700);
+    --colors-accent9: var(--colors-primary800);
+    --colors-accent10: var(--colors-primary900);
+    --colors-accent11: var(--colors-primary1000);
   }
 
-  .base-grey1 {
+  .t-dmfxVJ {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -2615,22 +2717,7 @@ exports[`DataTable component renders 1`] = `
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -2647,18 +2734,17 @@ exports[`DataTable component renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -2668,6 +2754,22 @@ exports[`DataTable component renders 1`] = `
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-cwQMhQ {
@@ -2742,7 +2844,7 @@ exports[`DataTable component renders 1`] = `
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -2752,9 +2854,15 @@ exports[`DataTable component renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-bVZtAj {
@@ -2765,15 +2873,7 @@ exports[`DataTable component renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fznDru {
+  .c-bPBhYb {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -2786,31 +2886,32 @@ exports[`DataTable component renders 1`] = `
     flex-direction: column;
     padding: 0;
     font-weight: 400;
-    color: var(--colors-grey800);
+    color: var(--colors-textSubtle);
     background: var(--colors-base1);
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
-    color: var(--colors-accent10);
+  .c-bPBhYb:not(:disabled):hover {
+    color: var(--colors-textRegular);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-bPBhYb:not(:disabled):active {
+    color: var(--colors-textBold);
     background: var(--colors-base3);
-    color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-bPBhYb:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-bPBhYb[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   .c-bVVNNd {
@@ -2845,7 +2946,13 @@ exports[`DataTable component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -2855,12 +2962,6 @@ exports[`DataTable component renders 1`] = `
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 
   .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
@@ -2886,9 +2987,9 @@ exports[`DataTable component renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -2912,77 +3013,50 @@ exports[`DataTable component renders 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
-  }
-
-  .c-fznDru-cVoMNQ-size-md {
+  .c-bPBhYb-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-bPBhYb-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
@@ -2997,15 +3071,15 @@ exports[`DataTable component renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 
   .c-cwQMhQ-illIiIE-css {
@@ -3035,9 +3109,15 @@ exports[`DataTable component renders 1`] = `
   <div
     class="c-PJLV c-PJLV-ihDGYkC-css"
   >
+    <input
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      name="User search"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -3050,18 +3130,12 @@ exports[`DataTable component renders 1`] = `
         r="6"
       />
     </svg>
-    <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icSgxUp-css"
-      name="User search"
-      type="search"
-      value=""
-    />
   </div>
   <table
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -3378,17 +3452,17 @@ exports[`DataTable component renders 1`] = `
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW accent-blue1 base-grey1"
+      class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1 t-gMkhEo t-dmfxVJ"
     >
       <button
         aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVZtAj"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVZtAj"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3397,32 +3471,28 @@ exports[`DataTable component renders 1`] = `
           />
         </svg>
       </button>
-      <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-crcQiH-gap-1"
+      <button
+        aria-current="page"
+        aria-disabled="false"
+        class="c-bPBhYb c-bPBhYb-cVoMNQ-size-md c-bPBhYb-bxzneo-selected-true"
       >
-        <button
-          aria-current="page"
-          aria-disabled="false"
-          class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
-        >
-          1
-        </button>
-        <button
-          aria-current="false"
-          aria-disabled="false"
-          class="c-fznDru c-fznDru-cVoMNQ-size-md"
-        >
-          2
-        </button>
-      </div>
+        1
+      </button>
+      <button
+        aria-current="false"
+        aria-disabled="false"
+        class="c-bPBhYb c-bPBhYb-cVoMNQ-size-md"
+      >
+        2
+      </button>
       <button
         aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVVNNd"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVVNNd"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -3439,7 +3509,7 @@ exports[`DataTable component renders 1`] = `
 exports[`DataTable server-side renders 1`] = `
 @media  {
   :root,
-  .t-kAUxbu {
+  .t-gRpxxC {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -3448,9 +3518,10 @@ exports[`DataTable server-side renders 1`] = `
     --default-radii: [object Object];
     --default-shadows: [object Object];
     --default-ratios: [object Object];
-    --colors-textForeground: hsl(0, 0%, 12%);
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
     --colors-textSubtle: hsl(0, 0%, 33%);
-    --colors-textPlaceholder: hsl(0, 0%, 46%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
     --colors-background: hsl(0, 0%, 96%);
     --colors-backgroundAccent: hsl(215, 100%, 98%);
     --colors-grey100: hsl(0, 0%, 96%);
@@ -3597,11 +3668,6 @@ exports[`DataTable server-side renders 1`] = `
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-primaryLight: hsl(215, 100%, 98%);
-    --colors-primary: hsl(217, 92%, 51%);
-    --colors-primaryMid: hsl(223, 78%, 44%);
-    --colors-primaryDark: hsl(228, 82%, 35%);
-    --colors-secondary: hsl(204, 100%, 72%);
     --colors-brandRed: hsl(0, 91%, 64%);
     --colors-brandRedAccent: hsl(14, 100%, 71%);
     --colors-brandGreen: hsl(128, 47%, 53%);
@@ -3610,6 +3676,10 @@ exports[`DataTable server-side renders 1`] = `
     --colors-brandPurpleAccent: hsl(256, 93%, 35%);
     --colors-brandYellow: hsl(41, 100%, 55%);
     --colors-brandYellowAccent: hsl(33, 100%, 50%);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 78%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
     --colors-successLight: hsl(119, 44%, 94%);
     --colors-success: hsl(119, 100%, 27%);
     --colors-successMid: hsl(124, 100%, 22%);
@@ -3633,6 +3703,18 @@ exports[`DataTable server-side renders 1`] = `
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 78%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
     --space-0: 0.125rem;
     --space-1: 0.25rem;
     --space-2: 0.5rem;
@@ -3681,21 +3763,21 @@ exports[`DataTable server-side renders 1`] = `
     --ratios-3-4: 3/4;
   }
 
-  .accent-blue1 {
+  .t-gMkhEo {
     --colors-accent1: #FFFFFF;
-    --colors-accent2: var(--colors-blue100);
-    --colors-accent3: var(--colors-blue200);
-    --colors-accent4: var(--colors-blue300);
-    --colors-accent5: var(--colors-blue400);
-    --colors-accent6: var(--colors-blue500);
-    --colors-accent7: var(--colors-blue600);
-    --colors-accent8: var(--colors-blue700);
-    --colors-accent9: var(--colors-blue800);
-    --colors-accent10: var(--colors-blue900);
-    --colors-accent11: var(--colors-blue1000);
+    --colors-accent2: var(--colors-primary100);
+    --colors-accent3: var(--colors-primary200);
+    --colors-accent4: var(--colors-primary300);
+    --colors-accent5: var(--colors-primary400);
+    --colors-accent6: var(--colors-primary500);
+    --colors-accent7: var(--colors-primary600);
+    --colors-accent8: var(--colors-primary700);
+    --colors-accent9: var(--colors-primary800);
+    --colors-accent10: var(--colors-primary900);
+    --colors-accent11: var(--colors-primary1000);
   }
 
-  .base-grey1 {
+  .t-dmfxVJ {
     --colors-foreground: var(--colors-grey1000);
     --colors-foreground7plus: #FFFFFF;
     --colors-base1: #FFFFFF;
@@ -3719,22 +3801,7 @@ exports[`DataTable server-side renders 1`] = `
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -3751,18 +3818,17 @@ exports[`DataTable server-side renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -3772,6 +3838,22 @@ exports[`DataTable server-side renders 1`] = `
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-cwQMhQ {
@@ -3846,7 +3928,7 @@ exports[`DataTable server-side renders 1`] = `
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -3856,9 +3938,15 @@ exports[`DataTable server-side renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-bVZtAj {
@@ -3869,15 +3957,7 @@ exports[`DataTable server-side renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fznDru {
+  .c-bPBhYb {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -3890,31 +3970,32 @@ exports[`DataTable server-side renders 1`] = `
     flex-direction: column;
     padding: 0;
     font-weight: 400;
-    color: var(--colors-grey800);
+    color: var(--colors-textSubtle);
     background: var(--colors-base1);
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
-    color: var(--colors-accent10);
+  .c-bPBhYb:not(:disabled):hover {
+    color: var(--colors-textRegular);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-bPBhYb:not(:disabled):active {
+    color: var(--colors-textBold);
     background: var(--colors-base3);
-    color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-bPBhYb:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-bPBhYb[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   .c-bVVNNd {
@@ -3980,6 +4061,90 @@ exports[`DataTable server-side renders 1`] = `
 
   .c-ecNzKx[disabled] * {
     pointer-events: none;
+  }
+
+  .c-vRLgs {
+    padding: var(--space-2);
+    width: 100%;
+    margin-bottom: var(--space-2);
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--sizes-6);
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .c-dScekx {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+    flex-shrink: 0;
+  }
+
+  .c-dScekx[data-state="checked"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx[data-state="indeterminate"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx:focus {
+    outline: 2px solid var(--colors-primary800);
+    outline-offset: 1px;
+  }
+
+  .c-dScekx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-fNKiiB {
+    border: 0;
+    background: var(--colors-tonal100);
   }
 
   .c-hVoQtf {
@@ -4084,7 +4249,13 @@ exports[`DataTable server-side renders 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -4094,12 +4265,6 @@ exports[`DataTable server-side renders 1`] = `
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 
   .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
@@ -4125,9 +4290,9 @@ exports[`DataTable server-side renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -4151,54 +4316,32 @@ exports[`DataTable server-side renders 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
-  }
-
-  .c-fznDru-cVoMNQ-size-md {
+  .c-bPBhYb-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-bPBhYb-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
@@ -4207,19 +4350,69 @@ exports[`DataTable server-side renders 1`] = `
     max-width: 400px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
   .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-dyvMgW-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-dScekx-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+    height: var(--sizes-4);
+    padding-left: var(--space-5);
+    padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fNKiiB-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
+  }
+
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
   }
 
   .c-hVoQtf-gWQnqe-size-md {
@@ -4235,42 +4428,72 @@ exports[`DataTable server-side renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
-  }
-
-  .c-fDzwZw-cmVfvW-cv {
+  .c-oUmPa-cPiTxp-cv {
     background: transparent;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):hover,
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):hover,
+  .c-oUmPa-cPiTxp-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-cmVfvW-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
+  .c-oUmPa-cPiTxp-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fDzwZw-cmVfvW-cv[disabled] {
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
+    color: white;
+  }
+
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
+  }
+
+  .c-kaaUSm-klvXVG-cv {
+    background: white;
+    color: var(--colors-primary800);
+  }
+
+  .c-kaaUSm-klvXVG-cv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm-klvXVG-cv:not([disabled]):hover,
+  .c-kaaUSm-klvXVG-cv:not([disabled]):focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--colors-primary800);
+  }
+
+  .c-kaaUSm-klvXVG-cv:not([disabled]):active {
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
@@ -4285,15 +4508,15 @@ exports[`DataTable server-side renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 
   .c-cwQMhQ-illIiIE-css {
@@ -4321,7 +4544,7 @@ exports[`DataTable server-side renders 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -4330,15 +4553,60 @@ exports[`DataTable server-side renders 1`] = `
     display: inline-block;
   }
 
+  .c-dyvMgW-iecBjWS-css {
+    font-weight: 600;
+  }
+
+  .c-dhzjXW-ijTlYpr-css {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .c-jhJxGZ-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-ihQtuj-ijIAHBC-css {
+    width: var(--sizes-4);
+    cursor: pointer;
+  }
+
+  .c-ihQtuj-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-dScekx-ibVyrVm-css {
+    margin-left: 0;
+  }
+
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
+  }
+
+  .c-dScekx-ijkNVrQ-css {
+    margin-left: var(--space-2);
+  }
+
+  .c-fNKiiB-illGyZa-css {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+  }
+
+  .c-hMRxhp-igiJmlC-css {
+    stroke-width: 3;
+  }
+
   .c-PJLV-ieFlhpX-css {
     position: relative;
     height: max-content;
   }
 
-  .c-fDzwZw-ijGdhFN-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: var(--space-1);
   }
 
   .c-dhzjXW-ibICGYT-css {
@@ -4360,9 +4628,14 @@ exports[`DataTable server-side renders 1`] = `
   <div
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
+    <input
+      class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -4375,17 +4648,12 @@ exports[`DataTable server-side renders 1`] = `
         r="6"
       />
     </svg>
-    <input
-      class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icSgxUp-css"
-      type="search"
-      value=""
-    />
   </div>
   <table
     class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-illIiIE-css"
   >
     <thead
-      class="c-PJLV c-PJLV-gJBDLb-theme-light"
+      class="c-PJLV c-PJLV-eSDNKZ-theme-light"
     >
       <tr
         class="c-hjAYDb"
@@ -4702,17 +4970,17 @@ exports[`DataTable server-side renders 1`] = `
       1 - 10 of 18 items
     </p>
     <div
-      class="c-dhzjXW accent-blue1 base-grey1"
+      class="c-dhzjXW c-dhzjXW-hAhhEs-gap-1 t-gMkhEo t-dmfxVJ"
     >
       <button
         aria-label="Previous page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVZtAj"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVZtAj"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -4721,32 +4989,28 @@ exports[`DataTable server-side renders 1`] = `
           />
         </svg>
       </button>
-      <div
-        class="c-jgdwfn c-jgdwfn-ejCoEP-direction-row c-jgdwfn-XefLA-wrap-wrap c-jgdwfn-awKDG-justify-start c-jgdwfn-jroWjL-align-center c-jgdwfn-crcQiH-gap-1"
+      <button
+        aria-current="page"
+        aria-disabled="false"
+        class="c-bPBhYb c-bPBhYb-cVoMNQ-size-md c-bPBhYb-bxzneo-selected-true"
       >
-        <button
-          aria-current="page"
-          aria-disabled="false"
-          class="c-fznDru c-fznDru-cVoMNQ-size-md c-fznDru-bxzneo-selected-true"
-        >
-          1
-        </button>
-        <button
-          aria-current="false"
-          aria-disabled="false"
-          class="c-fznDru c-fznDru-cVoMNQ-size-md"
-        >
-          2
-        </button>
-      </div>
+        1
+      </button>
+      <button
+        aria-current="false"
+        aria-disabled="false"
+        class="c-bPBhYb c-bPBhYb-cVoMNQ-size-md"
+      >
+        2
+      </button>
       <button
         aria-label="Next page"
-        class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-bVVNNd"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVVNNd"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -4768,22 +5032,7 @@ exports[`DataTable sticky columns renders 1`] = `
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -4800,18 +5049,17 @@ exports[`DataTable sticky columns renders 1`] = `
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -4821,6 +5069,22 @@ exports[`DataTable sticky columns renders 1`] = `
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 
   .c-cwQMhQ {
@@ -4895,7 +5159,7 @@ exports[`DataTable sticky columns renders 1`] = `
     display: none;
   }
 
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -4905,9 +5169,15 @@ exports[`DataTable sticky columns renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
+  }
+
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-bVZtAj {
@@ -4918,15 +5188,7 @@ exports[`DataTable sticky columns renders 1`] = `
     opacity: 0.3;
   }
 
-  .c-jgdwfn {
-    display: flex;
-  }
-
-  .c-jgdwfn > * {
-    margin: 0;
-  }
-
-  .c-fznDru {
+  .c-bPBhYb {
     align-items: center;
     border: 1px solid transparent;
     border-radius: var(--radii-0);
@@ -4939,31 +5201,32 @@ exports[`DataTable sticky columns renders 1`] = `
     flex-direction: column;
     padding: 0;
     font-weight: 400;
-    color: var(--colors-grey800);
+    color: var(--colors-textSubtle);
     background: var(--colors-base1);
     position: relative;
   }
 
-  .c-fznDru:not(:disabled):hover {
-    color: var(--colors-accent10);
+  .c-bPBhYb:not(:disabled):hover {
+    color: var(--colors-textRegular);
     background: var(--colors-base2);
   }
 
-  .c-fznDru:not(:disabled):active {
+  .c-bPBhYb:not(:disabled):active {
+    color: var(--colors-textBold);
     background: var(--colors-base3);
-    color: var(--colors-grey1000);
   }
 
-  .c-fznDru:not(:disabled):focus-visible {
+  .c-bPBhYb:not(:disabled):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
-    box-shadow: white 0px 0px 0px 2px, var(--colors-primary) 0px 0px 0px 4px;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-fznDru:disabled {
+  .c-bPBhYb[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
+    pointer-events: none;
   }
 
   .c-bVVNNd {
@@ -5029,6 +5292,90 @@ exports[`DataTable sticky columns renders 1`] = `
 
   .c-ecNzKx[disabled] * {
     pointer-events: none;
+  }
+
+  .c-vRLgs {
+    padding: var(--space-2);
+    width: 100%;
+    margin-bottom: var(--space-2);
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--sizes-6);
+    border-top-left-radius: var(--radii-0);
+    border-top-right-radius: var(--radii-0);
+  }
+
+  .c-jgUzPy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .c-dScekx {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--colors-tonal400);
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 50ms ease-out;
+    flex-shrink: 0;
+  }
+
+  .c-dScekx[data-state="checked"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx[data-state="indeterminate"] {
+    background-color: var(--colors-primary800);
+    border-color: var(--colors-primary800);
+  }
+
+  .c-dScekx:focus {
+    outline: 2px solid var(--colors-primary800);
+    outline-offset: 1px;
+  }
+
+  .c-dScekx[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-kaaUSm {
+    align-items: center;
+    background: unset;
+    border: unset;
+    border-radius: var(--radii-0);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 600;
+    justify-content: center;
+    padding: unset;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+    white-space: nowrap;
+    width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-fNKiiB {
+    border: 0;
+    background: var(--colors-tonal100);
   }
 
   .c-hVoQtf {
@@ -5108,23 +5455,6 @@ exports[`DataTable sticky columns renders 1`] = `
     transform: translate(-50%, -50%);
     z-index: 1;
   }
-
-  .c-fkUJsw {
-    align-items: center;
-    background: unset;
-    border: unset;
-    border-radius: var(--radii-0);
-    cursor: pointer;
-    display: flex;
-    font-family: var(--fonts-body);
-    font-weight: 600;
-    justify-content: center;
-    padding: unset;
-    text-decoration: none;
-    transition: all 100ms ease-out;
-    white-space: nowrap;
-    width: max-content;
-  }
 }
 
 @media  {
@@ -5150,7 +5480,13 @@ exports[`DataTable sticky columns renders 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -5160,12 +5496,6 @@ exports[`DataTable sticky columns renders 1`] = `
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 
   .c-cwQMhQ-urYIk-size-md .c-ihQtuj,
@@ -5191,9 +5521,9 @@ exports[`DataTable sticky columns renders 1`] = `
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-gJBDLb-theme-light .c-jhJxGZ {
+  .c-PJLV-eSDNKZ-theme-light .c-jhJxGZ {
     background: var(--colors-tonal50);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-PJLV-cevUCR-striped-false .c-hjAYDb {
@@ -5217,54 +5547,32 @@ exports[`DataTable sticky columns renders 1`] = `
     display: table;
   }
 
-  .c-fDzwZw-PrXKS-size-md {
+  .c-dhzjXW-hAhhEs-gap-1 {
+    gap: var(--space-1);
+  }
+
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-jgdwfn-ejCoEP-direction-row {
-    flex-direction: row;
-  }
-
-  .c-jgdwfn-XefLA-wrap-wrap {
-    flex-wrap: wrap;
-  }
-
-  .c-jgdwfn-awKDG-justify-start {
-    justify-content: flex-start;
-  }
-
-  .c-jgdwfn-jroWjL-align-center {
-    align-items: center;
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 {
-    margin-top: calc(var(--space-1)*-1);
-    margin-left: calc(var(--space-1)*-1);
-  }
-
-  .c-jgdwfn-crcQiH-gap-1 > * {
-    margin-top: var(--space-1);
-    margin-left: var(--space-1);
-  }
-
-  .c-fznDru-cVoMNQ-size-md {
+  .c-bPBhYb-cVoMNQ-size-md {
     width: var(--sizes-4);
     height: var(--sizes-4);
   }
 
-  .c-fznDru-bxzneo-selected-true {
+  .c-bPBhYb-bxzneo-selected-true {
     border: 1px solid var(--colors-accent9);
     color: var(--colors-accent9);
     font-weight: 600;
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):hover {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):hover {
     border-color: var(--colors-accent10);
     color: var(--colors-accent10);
   }
 
-  .c-fznDru-bxzneo-selected-true:not(:disabled):active {
+  .c-bPBhYb-bxzneo-selected-true:not(:disabled):active {
     border-color: var(--colors-accent11);
     font-color: var(--accent11);
   }
@@ -5273,30 +5581,19 @@ exports[`DataTable sticky columns renders 1`] = `
     max-width: 400px;
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
   }
 
-  .c-fDzwZw-elrktp-size-sm {
+  .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
   }
 
   .c-ecNzKx-kbKHjH-isDragging-false {
     cursor: grab;
-  }
-
-  .c-hVoQtf-gWQnqe-size-md {
-    max-width: 250px;
-  }
-
-  .c-jBOHFZ-jIYkAt-size-md {
-    height: 6px;
-    width: 6px;
-    margin-left: 2px;
-    margin-right: 2px;
   }
 
   .c-dyvMgW-gvmVBy-size-md {
@@ -5316,12 +5613,48 @@ exports[`DataTable sticky columns renders 1`] = `
     display: table;
   }
 
-  .c-fkUJsw-elrwsr-size-md {
+  .c-dScekx-kupcZn-size-md {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+  }
+
+  .c-vRLgs-joNEVz-isRowSelected-true {
+    background: var(--colors-primary100);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
     height: var(--sizes-4);
     padding-left: var(--space-5);
     padding-right: var(--space-5);
+    gap: var(--space-3);
+  }
+
+  .c-kaaUSm-jyNkKc-size-md .c-hMRxhp {
+    height: 20px;
+    width: 20px;
+  }
+
+  .c-fNKiiB-fKZlxR-orientation-vertical {
+    height: 100%;
+    width: 1px;
+    min-height: var(--sizes-3);
+  }
+
+  .c-gyYKPo-kxvvxg-isSelected-true {
+    background: var(--colors-primary100) !important;
+  }
+
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+
+  .c-jBOHFZ-jIYkAt-size-md {
+    height: 6px;
+    width: 6px;
+    margin-left: 2px;
+    margin-right: 2px;
   }
 }
 
@@ -5336,15 +5669,15 @@ exports[`DataTable sticky columns renders 1`] = `
     margin-bottom: var(--space-4);
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 
   .c-cwQMhQ-illIiIE-css {
@@ -5372,7 +5705,7 @@ exports[`DataTable sticky columns renders 1`] = `
     align-items: center;
   }
 
-  .c-dbrbZt-ifwENwN-css {
+  .c-hMRxhp-ifwENwN-css {
     position: absolute;
     left: var(--space-1);
   }
@@ -5381,15 +5714,60 @@ exports[`DataTable sticky columns renders 1`] = `
     display: inline-block;
   }
 
+  .c-dyvMgW-iecBjWS-css {
+    font-weight: 600;
+  }
+
+  .c-dhzjXW-ijTlYpr-css {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .c-jhJxGZ-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-ihQtuj-ijIAHBC-css {
+    width: var(--sizes-4);
+    cursor: pointer;
+  }
+
+  .c-ihQtuj-iigvUvR-css {
+    width: var(--sizes-4);
+  }
+
+  .c-dScekx-ibVyrVm-css {
+    margin-left: 0;
+  }
+
+  .c-ihQtuj-icTOChW-css {
+    width: var(--sizes-4);
+    cursor: auto;
+  }
+
+  .c-dScekx-ijkNVrQ-css {
+    margin-left: var(--space-2);
+  }
+
+  .c-fNKiiB-illGyZa-css {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+  }
+
+  .c-hMRxhp-igiJmlC-css {
+    stroke-width: 3;
+  }
+
   .c-PJLV-ieFlhpX-css {
     position: relative;
     height: max-content;
   }
 
-  .c-fDzwZw-ijGdhFN-css {
+  .c-oUmPa-igyKUXm-css {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: var(--space-1);
   }
 
   .c-dhzjXW-ibICGYT-css {
@@ -5439,7 +5817,7 @@ exports[`DataTable sticky columns renders 1`] = `
       class="c-cwQMhQ c-cwQMhQ-urYIk-size-md c-cwQMhQ-fplEaP-corners-round c-cwQMhQ-iPJLV-css"
     >
       <thead
-        class="c-PJLV c-PJLV-gJBDLb-theme-light"
+        class="c-PJLV c-PJLV-eSDNKZ-theme-light"
       >
         <tr
           class="c-hjAYDb"

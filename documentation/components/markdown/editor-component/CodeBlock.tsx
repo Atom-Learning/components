@@ -12,6 +12,7 @@ type CodeBlockProps = {
   language?: string
   live?: boolean
   preview?: boolean
+  noInline?: boolean
 }
 
 const StyledCode = styled('code', {
@@ -43,7 +44,7 @@ const StyledLiveError = styled(LiveError, {
 })
 
 export const CodeBlock: React.FC<CodeBlockProps> = React.memo(
-  ({ code, language, live, preview }) => {
+  ({ code, language, live, preview, noInline }) => {
     if (!code) return null
 
     const scope = { ...Icons, ...Components }
@@ -55,6 +56,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = React.memo(
         code={code}
         scope={scope}
         theme={theme}
+        noInline={noInline}
         language={language}
         disabled={isEditorDisabled}
       >

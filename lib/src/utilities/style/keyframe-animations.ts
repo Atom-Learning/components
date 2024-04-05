@@ -26,12 +26,36 @@ export const fadeOut = keyframes({
   '100%': { opacity: 0 }
 })
 
-export const slideInLeft = keyframes({
-  '0%': { transform: 'translateX(-100%)' },
-  '100%': { transform: 'translateX(0)' }
-})
+export const slideInOut = ({
+  outPosition = { x: 0, y: 0 },
+  inPosition = { x: 0, y: 0 }
+}: {
+  outPosition?: { x: string | number; y: string | number }
+  inPosition?: { x: string | number; y: string | number }
+}): {
+  in: ReturnType<typeof keyframes>
+  out: ReturnType<typeof keyframes>
+} => {
+  const slideIn = keyframes({
+    '0%': {
+      transform: `translateX(${outPosition.x}) translateY(${outPosition.y})`
+    },
+    '100%': {
+      transform: `translateX(${inPosition.x}) translateY(${inPosition.y})`
+    }
+  })
 
-export const slideOutLeft = keyframes({
-  '0%': { transform: 'translateX(0)' },
-  '100%': { transform: 'translateX(-100%)' }
-})
+  const slideOut = keyframes({
+    '0%': {
+      transform: `translateX(${inPosition.x}) translateY(${inPosition.y})`
+    },
+    '100%': {
+      transform: `translateX(${outPosition.x}) translateY(${outPosition.y})`
+    }
+  })
+
+  return {
+    in: slideIn,
+    out: slideOut
+  }
+}

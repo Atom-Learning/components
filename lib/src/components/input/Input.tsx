@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 import { styled } from '~/stitches'
+import { disabledStyle } from '~/utilities'
 import { Override } from '~/utilities/types'
 
 const StyledInput = styled('input', {
@@ -17,14 +18,10 @@ const StyledInput = styled('input', {
   transition: 'all 100ms ease-out',
   width: '100%',
   '&:focus': {
-    borderColor: '$primary',
+    borderColor: '$primary800',
     outline: 'none'
   },
-  '&[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
-    cursor: 'not-allowed'
-  },
+  '&[disabled]': disabledStyle,
   '&::placeholder': {
     color: '$tonal300',
     opacity: 1
@@ -44,6 +41,11 @@ const StyledInput = styled('input', {
       lg: {
         height: '$5',
         fontSize: '$md',
+        lineHeight: 2
+      },
+      xl: {
+        height: '$6',
+        fontSize: '$lg',
         lineHeight: 2
       }
     },
@@ -66,8 +68,8 @@ export type InputProps = Override<
   }
 >
 
-export const Input: React.FC<InputProps> = React.forwardRef(
-  ({ type = 'text', size = 'md', ...rest }, ref) => {
+export const Input: React.ForwardRefExoticComponent<InputProps> =
+  React.forwardRef(({ type = 'text', size = 'md', ...rest }, ref) => {
     if (type === 'number') {
       return (
         <StyledInput
@@ -82,7 +84,6 @@ export const Input: React.FC<InputProps> = React.forwardRef(
     }
 
     return <StyledInput type={type} size={size} {...rest} ref={ref} />
-  }
-)
+  })
 
 Input.displayName = 'Input'

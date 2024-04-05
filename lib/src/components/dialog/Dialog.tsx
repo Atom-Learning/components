@@ -1,30 +1,25 @@
 import { Description, Root, Title, Trigger } from '@radix-ui/react-dialog'
-import * as React from 'react'
 
 import { styled } from '~/stitches'
 
 import { DialogBackground } from './DialogBackground'
 import { DialogClose } from './DialogClose'
 import { DialogContent } from './DialogContent'
+import { DialogFooter } from './DialogFooter'
+import { DialogHeading } from './DialogHeading'
 
 const StyledDialog = styled(Root, {})
 
-type DialogProps = React.ComponentProps<typeof StyledDialog>
+export const Dialog = Object.assign(StyledDialog, {
+  Background: DialogBackground,
+  Close: DialogClose,
+  Content: DialogContent,
+  Heading: DialogHeading,
+  Footer: DialogFooter,
 
-export const Dialog: React.FC<DialogProps> & {
-  Background: typeof DialogBackground
-  Close: typeof DialogClose
-  Content: typeof DialogContent
-  Description: typeof Description
-  Title: typeof Title
-  Trigger: typeof Trigger
-} = (props) => <StyledDialog {...props} />
-
-Dialog.Background = DialogBackground
-Dialog.Close = DialogClose
-Dialog.Content = DialogContent
-Dialog.Description = Description
-Dialog.Title = Title
-Dialog.Trigger = Trigger
+  Description: Description,
+  Title: Title,
+  Trigger: Trigger
+})
 
 Dialog.displayName = 'Dialog'

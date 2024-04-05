@@ -2,7 +2,7 @@
 
 exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -12,18 +12,35 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-bnQNAg {
@@ -58,40 +75,61 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -100,31 +138,42 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
 @media  {
-  .c-fDzwZw-ikHqHwu-css {
+  .c-oUmPa-ifOCxRY-css {
     position: absolute;
     right: var(--space-4);
     top: var(--space-4);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-jryFOR-ijkrzPY-css {
+    border-bottom: 1px solid var(--colors-tonal100);
+    font-family: var(--fonts-body);
+    padding: 0 var(--space-5) var(--space-5) var(--space-5);
+    margin-bottom: var(--space-5);
+    margin-left: calc(var(--space-5)*-1);
+    margin-right: calc(var(--space-5)*-1);
+    box-sizing: content-box;
+  }
+
+  .c-dhzjXW-illFGmD-css {
+    padding-top: var(--space-4);
   }
 }
 
@@ -141,12 +190,12 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+    class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-ifOCxRY-css"
     type="button"
   >
     <svg
       aria-hidden="true"
-      class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -155,7 +204,17 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
       />
     </svg>
   </button>
+  <h2
+    class="c-jryFOR c-jryFOR-dtbHih-size-sm c-jryFOR-ijkrzPY-css"
+  >
+    TITLE
+  </h2>
   CONTENT
+  <div
+    class="c-dhzjXW c-dhzjXW-hmJoPD-justify-end c-dhzjXW-dvnNgW-gap-3 c-dhzjXW-illFGmD-css"
+  >
+    FOOTER
+  </div>
 </div>
 `;
 
@@ -175,7 +234,7 @@ exports[`Dialog component renders the trigger with the popover hidden by default
 
 exports[`Dialog component with custom background renders 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -185,18 +244,35 @@ exports[`Dialog component with custom background renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-bnQNAg {
@@ -231,25 +307,21 @@ exports[`Dialog component with custom background renders 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
@@ -261,15 +333,40 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {
@@ -278,36 +375,47 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 @media  {
-  .c-fDzwZw-otpKd-cv {
+  .c-oUmPa-jCxibG-cv {
     background: transparent;
     color: var(--colors-tonal300);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):hover,
-  .c-fDzwZw-otpKd-cv:not(:disabled):focus {
-    color: var(--colors-primaryMid);
+  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
+  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+    color: var(--colors-primary900);
   }
 
-  .c-fDzwZw-otpKd-cv:not(:disabled):active {
-    color: var(--colors-primaryDark);
-  }
-
-  .c-fDzwZw-otpKd-cv[disabled] {
-    color: var(--colors-tonal400);
-    cursor: not-allowed;
+  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+    color: var(--colors-primary1000);
   }
 }
 
 @media  {
-  .c-fDzwZw-ikHqHwu-css {
+  .c-oUmPa-ifOCxRY-css {
     position: absolute;
     right: var(--space-4);
     top: var(--space-4);
+    height: var(--sizes-5);
+    width: var(--sizes-5);
+  }
+
+  .c-jryFOR-ijkrzPY-css {
+    border-bottom: 1px solid var(--colors-tonal100);
+    font-family: var(--fonts-body);
+    padding: 0 var(--space-5) var(--space-5) var(--space-5);
+    margin-bottom: var(--space-5);
+    margin-left: calc(var(--space-5)*-1);
+    margin-right: calc(var(--space-5)*-1);
+    box-sizing: content-box;
+  }
+
+  .c-dhzjXW-illFGmD-css {
+    padding-top: var(--space-4);
   }
 }
 
 <div
-  class="c-fYlVmN"
+  class="c-fWhrtB"
   data-state="open"
   id="modal_overlay"
   style="pointer-events: auto;"
@@ -332,12 +440,12 @@ exports[`Dialog component with custom background renders 1`] = `
   >
     <button
       aria-label="Close dialog"
-      class="c-fDzwZw c-fDzwZw-PrXKS-size-md c-fDzwZw-otpKd-cv c-fDzwZw-ikHqHwu-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-ifOCxRY-css"
       type="button"
     >
       <svg
         aria-hidden="true"
-        class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-dbrbZt-iPJLV-css"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -353,7 +461,7 @@ exports[`Dialog component with custom background renders 1`] = `
 
 exports[`Dialog component without close button renders 1`] = `
 @media  {
-  .c-fDzwZw {
+  .c-oUmPa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
@@ -363,18 +471,35 @@ exports[`Dialog component without close button renders 1`] = `
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     padding: unset;
     transition: all 100ms ease-out;
   }
 
-  .c-dbrbZt {
+  .c-oUmPa[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
     vertical-align: middle;
+  }
+
+  .c-jryFOR {
+    font-family: var(--fonts-display);
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-dhzjXW {
+    display: flex;
   }
 
   .c-bnQNAg {
@@ -409,40 +534,61 @@ exports[`Dialog component without close button renders 1`] = `
     }
 }
 
-  .c-fYlVmN {
+  .c-fWhrtB {
     background-color: var(--colors-alpha600);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     position: fixed;
-    overflow-y: auto;
+    inset: 0;
     z-index: 1147483646;
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="open"] {
+    .c-fWhrtB[data-state="open"] {
       animation: k-eyOShd 250ms ease-out;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-fYlVmN[data-state="closed"] {
+    .c-fWhrtB[data-state="closed"] {
       animation: k-bHbNKp 550ms ease-out;
     }
 }
 }
 
 @media  {
-  .c-fDzwZw-PrXKS-size-md {
+  .c-oUmPa-PrXKS-size-md {
     height: var(--sizes-4);
     width: var(--sizes-4);
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
+  }
+
+  .c-jryFOR-dtbHih-size-sm {
+    font-size: var(--fontSizes-lg);
+    line-height: 1.14;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::before {
+    content: '';
+    margin-bottom: -0.2174em;
+    display: table;
+  }
+
+  .c-jryFOR-dtbHih-size-sm::after {
+    content: '';
+    margin-top: -0.2254em;
+    display: table;
+  }
+
+  .c-dhzjXW-hmJoPD-justify-end {
+    justify-content: end;
+  }
+
+  .c-dhzjXW-dvnNgW-gap-3 {
+    gap: var(--space-3);
   }
 
   .c-bnQNAg-lgqbzh-size-sm {

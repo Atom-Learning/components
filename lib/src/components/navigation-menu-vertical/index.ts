@@ -1,0 +1,1 @@
+export { NavigationMenuVertical } from './NavigationMenuVertical'

@@ -17,11 +17,6 @@ const InlineMessageContainer = styled(Flex, {
   }
 })
 
-const InlineMessageIcon = styled(Icon, {
-  flexShrink: '0',
-  mr: '$2'
-})
-
 type TInlineMessageProps = React.ComponentProps<
   typeof InlineMessageContainer
 > & {
@@ -29,17 +24,18 @@ type TInlineMessageProps = React.ComponentProps<
   size?: 'xs' | 'sm' | 'md'
 }
 
-export const InlineMessage: React.FC<TInlineMessageProps> = ({
+export const InlineMessage = ({
   css,
   showIcon = true,
   theme = 'error',
   size = 'sm',
   children,
   ...rest
-}) => (
+}: TInlineMessageProps) => (
   <InlineMessageContainer theme={theme} css={css} {...rest}>
     {showIcon && (
-      <InlineMessageIcon
+      <Icon
+        css={{ mr: '$2' }}
         size="sm"
         is={INLINE_MESSAGE_ICONS[theme as InlineMessageTheme]}
       />

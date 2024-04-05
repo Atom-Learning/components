@@ -21,9 +21,9 @@ const Container = styled(Box, {
   }
 })
 
-export const BannerRegularContent: React.FC<
-  React.ComponentProps<typeof Container>
-> = (props) => {
+export const BannerRegularContent = (
+  props: React.ComponentProps<typeof Container>
+) => {
   const { size } = useBannerContext()
 
   return <Container size={size} {...props} />

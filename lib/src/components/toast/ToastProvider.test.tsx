@@ -5,9 +5,8 @@ import * as React from 'react'
 import { ToastProvider } from '.'
 
 describe('Toast component', () => {
-  it('renders', async () => {
+  it('renders', () => {
     const { container } = render(<ToastProvider />)
-
     expect(container).toMatchSnapshot()
   })
 

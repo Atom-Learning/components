@@ -13,12 +13,12 @@ type RadioFieldProps = {
   validation?: ValidationOptions
 } & React.ComponentProps<typeof RadioButton>
 
-export const RadioField: React.FC<RadioFieldProps> = ({
+export const RadioField = ({
   css,
   label,
   value,
   ...remainingProps
-}) => (
+}: RadioFieldProps) => (
   <InlineFieldWrapper css={css} label={label}>
     <RadioButton value={value} {...remainingProps} />
   </InlineFieldWrapper>

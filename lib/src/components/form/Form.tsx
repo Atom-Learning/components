@@ -25,12 +25,12 @@ type PersistFormWrapperProps = React.ComponentPropsWithoutRef<
 > &
   PersistFormWrapperValues
 
-const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
+const PersistFormWrapper = ({
   persist,
   watch,
   setValue,
   children
-}) => {
+}: PersistFormWrapperProps) => {
   const { id, ...options } = persist
 
   let params: FormPersistParams = {
@@ -58,14 +58,14 @@ const PersistFormWrapper: React.FC<PersistFormWrapperProps> = ({
   return children
 }
 
-const FormContent: React.FC<FormContentProps> = ({
+const FormContent = ({
   formMethods,
   handleSubmit,
   onSubmit,
   onError,
   children,
   ...remainingProps
-}) => (
+}: FormContentProps) => (
   <FormProvider {...formMethods}>
     <StyledForm
       aria-label="form"
@@ -77,7 +77,7 @@ const FormContent: React.FC<FormContentProps> = ({
   </FormProvider>
 )
 
-export const Form: React.FC<FormProps> = ({
+export const Form = ({
   children,
   defaultValues = {},
   onSubmit,
@@ -86,7 +86,7 @@ export const Form: React.FC<FormProps> = ({
   render,
   persist,
   ...remainingProps
-}) => {
+}: FormProps) => {
   invariant(
     !(children && render),
     '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'

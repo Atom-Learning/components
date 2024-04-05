@@ -13,10 +13,10 @@ const DefaultTrigger = (props) => (
   </button>
 )
 
-export const DismissibleTrigger: React.FC<IDismissibleTriggerProps> = ({
+export const DismissibleTrigger = ({
   asChild = false,
   ...rest
-}) => {
+}: React.PropsWithChildren<IDismissibleTriggerProps>) => {
   const context = React.useContext(DismissibleRootContext)
   if (context === undefined) {
     throw new Error(
@@ -24,10 +24,11 @@ export const DismissibleTrigger: React.FC<IDismissibleTriggerProps> = ({
     )
   }
 
-  const { setIsDismissed, disabled } = context
+  const { setIsDismissed, disabled, onDismiss } = context
 
   const handleDismiss = () => {
     setIsDismissed(true)
+    onDismiss?.()
   }
 
   const props = {

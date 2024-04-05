@@ -141,14 +141,14 @@ exports[`List component renders an unordered list with a primary theme 1`] = `
     font-weight: bold;
   }
 
-  .c-bBdCwN-gvBFgi-theme-primary > .c-PJLV::marker {
-    color: var(--colors-primary);
+  .c-bBdCwN-fnHsRS-theme-primary > .c-PJLV::marker {
+    color: var(--colors-primary800);
   }
 }
 
 <div>
   <ul
-    class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-gvBFgi-theme-primary"
+    class="c-bBdCwN c-bBdCwN-gvmVBy-size-md c-bBdCwN-fmPQHp-noCapsize-true c-bBdCwN-ldmvkx-as-ul c-bBdCwN-fnHsRS-theme-primary"
   >
     <li
       class="c-PJLV"

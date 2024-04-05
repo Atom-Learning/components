@@ -4,16 +4,16 @@ import * as React from 'react'
 
 import type { Override } from '~/utilities'
 
-import { Stack } from '../stack/Stack'
+import { Flex } from '../flex'
 import { RadioCard, StyledRadioCard } from './RadioCard'
 
 type RadioCardGroupProps = Override<
-  Pick<React.ComponentProps<typeof Stack>, 'justify' | 'gap' | 'css'> &
+  Pick<React.ComponentProps<typeof Flex>, 'justify' | 'gap' | 'css'> &
     VariantProps<typeof StyledRadioCard>,
   React.ComponentProps<typeof RadioGroup.Root>
 >
 
-export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
+export const RadioCardGroup = ({
   css,
   children,
   size,
@@ -22,15 +22,15 @@ export const RadioCardGroup: React.FC<RadioCardGroupProps> = ({
   gap = '3',
   justify,
   ...rest
-}) => (
+}: RadioCardGroupProps) => (
   <RadioGroup.Root {...rest}>
-    <Stack direction="row" justify={justify} gap={gap} css={css}>
+    <Flex direction="row" justify={justify} gap={gap} wrap="wrap" css={css}>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child?.type === RadioCard) {
           return React.cloneElement(child, { size, isFullWidth, align })
         }
         return child
       })}
-    </Stack>
+    </Flex>
   </RadioGroup.Root>
 )

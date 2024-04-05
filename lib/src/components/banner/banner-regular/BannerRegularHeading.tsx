@@ -7,6 +7,7 @@ import { useBannerContext } from '../BannerContext'
 
 const StyledHeading = styled(Heading, {
   mb: '$4',
+  color: 'var(--banner-heading-color)',
   variants: {
     containerSize: {
       sm: {},
@@ -27,9 +28,9 @@ const StyledHeading = styled(Heading, {
   ]
 })
 
-export const BannerRegularHeading: React.FC<
-  React.ComponentProps<typeof Heading>
-> = (props) => {
+export const BannerRegularHeading = (
+  props: React.ComponentProps<typeof Heading>
+) => {
   const { size, hasDismiss } = useBannerContext()
 
   return (

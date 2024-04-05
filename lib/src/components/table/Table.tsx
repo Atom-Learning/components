@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 
 import { TableBody } from './TableBody'
 import { TableCell } from './TableCell'
@@ -10,17 +10,6 @@ import { TableHeader } from './TableHeader'
 import { TableHeaderCell } from './TableHeaderCell'
 import { StyledRow, TableRow } from './TableRow'
 import { TableStickyColumnsContainer } from './TableStickyColumnsContainer'
-
-type TableSubComponents = {
-  Body: typeof TableBody
-  Cell: typeof TableCell
-  Footer: typeof TableFooter
-  FooterCell: typeof TableFooterCell
-  Header: typeof TableHeader
-  HeaderCell: typeof TableHeaderCell
-  Row: typeof TableRow
-  StickyColumnsContainer: typeof TableStickyColumnsContainer
-}
 
 const StyledTable = styled('table', {
   borderCollapse: 'separate',
@@ -67,12 +56,14 @@ const StyledTable = styled('table', {
 
 type TableProps = React.ComponentProps<typeof StyledTable> & {
   numberOfStickyColumns?: number
+  scrollContainerCss?: CSS
 }
 
-export const Table: React.FC<TableProps> & TableSubComponents = ({
+const TableComponent = ({
   size = 'md',
   corners = 'round',
   numberOfStickyColumns = 0,
+  scrollContainerCss,
   ...rest
 }: TableProps) => {
   const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
@@ -80,6 +71,7 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
   if (numberOfStickyColumns) {
     return (
       <TableStickyColumnsContainer
+        css={scrollContainerCss}
         numberOfStickyColumns={numberOfStickyColumns}
       >
         {tableComponent}
@@ -90,13 +82,15 @@ export const Table: React.FC<TableProps> & TableSubComponents = ({
   return tableComponent
 }
 
-Table.Body = TableBody
-Table.Cell = TableCell
-Table.Footer = TableFooter
-Table.FooterCell = TableFooterCell
-Table.Header = TableHeader
-Table.HeaderCell = TableHeaderCell
-Table.Row = TableRow
-Table.StickyColumnsContainer = TableStickyColumnsContainer
+export const Table = Object.assign(TableComponent, {
+  Body: TableBody,
+  Cell: TableCell,
+  Footer: TableFooter,
+  FooterCell: TableFooterCell,
+  Header: TableHeader,
+  HeaderCell: TableHeaderCell,
+  Row: TableRow,
+  StickyColumnsContainer: TableStickyColumnsContainer
+})
 
-Table.displayName = 'Table'
+TableComponent.displayName = 'Table'

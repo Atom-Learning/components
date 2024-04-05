@@ -14,7 +14,7 @@ export const StyledRadioCard = styled(RadioGroup.Item, {
   display: 'flex',
   textAlign: 'left',
   '&[data-state="checked"]': {
-    outline: '2px solid $primary',
+    outline: '2px solid $primary800',
     outlineOffset: '-2px'
   },
   variants: {
@@ -46,8 +46,8 @@ const RadioButton = styled('div', {
   size: '$1',
   transition: 'all 50ms ease-out',
   '[data-state="checked"] &': {
-    backgroundColor: '$primary',
-    borderColor: '$primary'
+    backgroundColor: '$primary800',
+    borderColor: '$primary800'
   },
   variants: {
     containerIsFullWidth: {
@@ -83,13 +83,13 @@ const Indicator = styled(RadioGroup.Indicator, {
 
 type RadioCardProps = React.ComponentProps<typeof StyledRadioCard>
 
-export const RadioCard: React.FC<RadioCardProps> = ({
+export const RadioCard = ({
   children,
   isFullWidth = false,
   size = 'md',
   align = 'left',
   ...rest
-}) => (
+}: RadioCardProps) => (
   <StyledRadioCard
     {...rest}
     align={align}

@@ -3,6 +3,7 @@ import { default as NextLink } from 'next/link'
 import * as React from 'react'
 
 import buildConstants from '~/lib/build/constants.json'
+import { removeStartingNumber } from '~/utilities/removeStartingNumber'
 
 function flat(array) {
   var result = []
@@ -33,7 +34,7 @@ const PaginationItem = ({ align, label, page }: TPaginationItem) => (
     <NextLink passHref href={`${page.href}`}>
       {/* @ts-ignore */}
       <Link size="lg" css={{ display: 'block', py: '$2' }}>
-        {page.title}
+        {removeStartingNumber(page.title)}
       </Link>
     </NextLink>
   </Box>

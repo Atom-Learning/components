@@ -12,22 +12,7 @@ exports[`SearchField component renders a field in error state - has no programma
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -44,18 +29,17 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -67,15 +51,26 @@ exports[`SearchField component renders a field in error state - has no programma
     display: none;
   }
 
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
+  }
+
   .c-fNCeYG {
     color: var(--colors-danger);
     margin-left: var(--space-1);
     font-weight: 400;
-  }
-
-  .c-fzYfTW {
-    flex-shrink: 0;
-    margin-right: var(--space-2);
   }
 
   .c-dyvMgW {
@@ -113,7 +108,13 @@ exports[`SearchField component renders a field in error state - has no programma
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -125,13 +126,7 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 20px;
   }
 
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
-  }
-
-  .c-fZTBsJ-bXVTjQ-state-error {
+  .c-lfQsGQ-bXVTjQ-state-error {
     border: 1px solid var(--colors-danger);
   }
 
@@ -139,7 +134,7 @@ exports[`SearchField component renders a field in error state - has no programma
     color: var(--colors-danger);
   }
 
-  .c-dbrbZt-cyeZeh-size-sm {
+  .c-hMRxhp-cyeZeh-size-sm {
     height: var(--sizes-1);
     width: var(--sizes-1);
     stroke-width: 1.5;
@@ -175,6 +170,10 @@ exports[`SearchField component renders a field in error state - has no programma
     height: max-content;
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
@@ -182,12 +181,12 @@ exports[`SearchField component renders a field in error state - has no programma
     transform: translateY(-50%);
   }
 
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
-  }
-
   .c-dhzjXW-ijkHUQU-css {
     margin-top: var(--space-2);
+  }
+
+  .c-hMRxhp-ijkHsGW-css {
+    margin-right: var(--space-2);
   }
 
   .c-dyvMgW-iiTbKsx-css {
@@ -221,9 +220,18 @@ exports[`SearchField component renders a field in error state - has no programma
       <div
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
+        <input
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-lfQsGQ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
+          id="searchField"
+          llabel="Search Field"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -236,22 +244,13 @@ exports[`SearchField component renders a field in error state - has no programma
             r="6"
           />
         </svg>
-        <input
-          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-fZTBsJ-bXVTjQ-state-error c-cNcGUX c-cNcGUX-icSgxUp-css"
-          id="searchField"
-          llabel="Search Field"
-          name="searchField"
-          placeholder="Search Field"
-          type="search"
-          value=""
-        />
       </div>
       <div
         class="c-dhzjXW c-PJLV c-PJLV-iymbh-theme-error c-dhzjXW-ijkHUQU-css"
       >
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-cyeZeh-size-sm c-fzYfTW"
+          class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm c-hMRxhp-ijkHsGW-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -298,22 +297,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -330,18 +314,17 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -351,6 +334,22 @@ exports[`SearchField component renders a field with a disabled input - has no pr
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 }
 
@@ -377,7 +376,13 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -387,12 +392,6 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 }
 
@@ -408,15 +407,15 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     height: max-content;
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 }
 
@@ -441,9 +440,18 @@ exports[`SearchField component renders a field with a disabled input - has no pr
       <div
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
+        <input
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          disabled=""
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -456,15 +464,6 @@ exports[`SearchField component renders a field with a disabled input - has no pr
             r="6"
           />
         </svg>
-        <input
-          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icSgxUp-css"
-          disabled=""
-          id="searchField"
-          name="searchField"
-          placeholder="Search Field"
-          type="search"
-          value=""
-        />
       </div>
     </div>
   </form>
@@ -483,22 +482,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     margin: 0;
   }
 
-  .c-dbrbZt {
-    display: inline-block;
-    fill: none;
-    stroke: currentcolor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    vertical-align: middle;
-  }
-
-  .c-jTFaKU {
-    color: var(--colors-grey700);
-    position: absolute;
-    pointer-events: none;
-  }
-
-  .c-fZTBsJ {
+  .c-lfQsGQ {
     -webkit-appearance: none;
     appearance: none;
     border: 1px solid var(--colors-tonal400);
@@ -515,18 +499,17 @@ exports[`SearchField component renders a field with a search input - has no prog
     width: 100%;
   }
 
-  .c-fZTBsJ:focus {
-    border-color: var(--colors-primary);
+  .c-lfQsGQ:focus {
+    border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-fZTBsJ[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-lfQsGQ[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fZTBsJ::placeholder {
+  .c-lfQsGQ::placeholder {
     color: var(--colors-tonal300);
     opacity: 1;
   }
@@ -536,6 +519,22 @@ exports[`SearchField component renders a field with a search input - has no prog
   .c-cNcGUX::-webkit-search-results-button,
   .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
     display: none;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-jTFaKU {
+    color: var(--colors-grey700);
+    position: absolute;
+    pointer-events: none;
   }
 }
 
@@ -562,7 +561,13 @@ exports[`SearchField component renders a field with a search input - has no prog
     font-weight: 600;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-lfQsGQ-fwoCmE-size-md {
+    height: var(--sizes-4);
+    font-size: var(--fontSizes-md);
+    line-height: 2;
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -572,12 +577,6 @@ exports[`SearchField component renders a field with a search input - has no prog
     left: 10px;
     height: 20px;
     width: 20px;
-  }
-
-  .c-fZTBsJ-fwoCmE-size-md {
-    height: var(--sizes-4);
-    font-size: var(--fontSizes-md);
-    line-height: 2;
   }
 }
 
@@ -593,15 +592,15 @@ exports[`SearchField component renders a field with a search input - has no prog
     height: max-content;
   }
 
+  .c-cNcGUX-icRYcAH-css {
+    padding-right: var(--space-6);
+  }
+
   .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .c-cNcGUX-icSgxUp-css {
-    padding-left: var(--space-6);
   }
 }
 
@@ -626,9 +625,17 @@ exports[`SearchField component renders a field with a search input - has no prog
       <div
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
+        <input
+          class="c-lfQsGQ c-lfQsGQ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
-          class="c-dbrbZt c-dbrbZt-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -641,14 +648,6 @@ exports[`SearchField component renders a field with a search input - has no prog
             r="6"
           />
         </svg>
-        <input
-          class="c-fZTBsJ c-fZTBsJ-fwoCmE-size-md c-cNcGUX c-cNcGUX-icSgxUp-css"
-          id="searchField"
-          name="searchField"
-          placeholder="Search Field"
-          type="search"
-          value=""
-        />
       </div>
     </div>
   </form>

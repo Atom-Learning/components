@@ -37,11 +37,11 @@ const EmptyStateContainer = styled(Flex, {
 
 type EmptyStateProps = React.ComponentProps<typeof EmptyStateContainer>
 
-export const EmptyState: React.FC<EmptyStateProps> & {
-  Image: typeof EmptyStateImage
-  Title: typeof EmptyStateTitle
-  Body: typeof EmptyStateBody
-} = ({ size = 'sm', children, ...props }) => (
+const EmptyStateComponent = ({
+  size = 'sm',
+  children,
+  ...props
+}: EmptyStateProps) => (
   <EmptyStateContainer size={size} {...props}>
     {React.Children.map(children, (child) => {
       if (!React.isValidElement(child)) return child
@@ -59,7 +59,10 @@ export const EmptyState: React.FC<EmptyStateProps> & {
   </EmptyStateContainer>
 )
 
-EmptyState.displayName = 'EmptyState'
-EmptyState.Image = EmptyStateImage
-EmptyState.Title = EmptyStateTitle
-EmptyState.Body = EmptyStateBody
+export const EmptyState = Object.assign(EmptyStateComponent, {
+  Image: EmptyStateImage,
+  Title: EmptyStateTitle,
+  Body: EmptyStateBody
+})
+
+EmptyStateComponent.displayName = 'EmptyState'

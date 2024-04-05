@@ -11,18 +11,11 @@ import { DropdownMenuTrigger } from './DropdownMenuTrigger'
 
 const Root = styled(DropdownMenuRoot, {})
 
-export const DropdownMenu: React.FC<React.ComponentProps<typeof Root>> & {
-  Content: typeof DropdownMenuContent
-  Item: typeof DropdownMenuItem
-  LinkItem: typeof DropdownMenuLinkItem
-  Portal: typeof Portal
-  Separator: typeof DropdownMenuSeparator
-  Trigger: typeof DropdownMenuTrigger
-} = (props) => <Root {...props} />
-
-DropdownMenu.Content = DropdownMenuContent
-DropdownMenu.Item = DropdownMenuItem
-DropdownMenu.LinkItem = DropdownMenuLinkItem
-DropdownMenu.Portal = Portal
-DropdownMenu.Separator = DropdownMenuSeparator
-DropdownMenu.Trigger = DropdownMenuTrigger
+export const DropdownMenu = Object.assign(Root, {
+  Content: DropdownMenuContent,
+  Item: DropdownMenuItem,
+  LinkItem: DropdownMenuLinkItem,
+  Portal: Portal,
+  Separator: DropdownMenuSeparator,
+  Trigger: DropdownMenuTrigger
+})

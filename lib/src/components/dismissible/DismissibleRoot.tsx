@@ -5,27 +5,42 @@ export interface IDismissibleRootContext {
   disabled?: boolean
   isDismissed: boolean
   setIsDismissed: (boolean) => void
+  onDismiss: () => void
 }
 
 export const DismissibleRootContext =
   React.createContext<IDismissibleRootContext>({
     isDismissed: false,
-    setIsDismissed: () => null
+    setIsDismissed: () => undefined,
+    onDismiss: () => undefined
   })
 
 export interface IDismissibleRootProps {
   disabled?: boolean
+  dismissed?: boolean
+  onDismiss?: () => void
 }
 
-export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
+export const DismissibleRootProvider = ({
+  dismissed: controlledIsDismissed,
   children,
-  disabled
-}) => {
+  disabled,
+  onDismiss = () => null
+}: React.PropsWithChildren<IDismissibleRootProps>) => {
   const [isDismissed, setIsDismissed] = React.useState(false)
-  const value = React.useMemo<IDismissibleRootContext>(
-    () => ({ disabled, isDismissed, setIsDismissed }),
-    [disabled, isDismissed]
-  )
+
+  const value = React.useMemo<IDismissibleRootContext>(() => {
+    const isControlled = typeof controlledIsDismissed === 'boolean'
+    return {
+      disabled,
+      isDismissed: isControlled
+        ? (controlledIsDismissed as boolean)
+        : isDismissed,
+      setIsDismissed: isControlled ? () => null : setIsDismissed,
+      onDismiss
+    }
+  }, [disabled, isDismissed, onDismiss, controlledIsDismissed])
+
   return (
     <DismissibleRootContext.Provider value={value}>
       {children}
@@ -33,25 +48,17 @@ export const DismissibleRootProvider: React.FC<IDismissibleRootProps> = ({
   )
 }
 
-export interface IDismissibleGroupItemProps {
+export interface IDismissibleRootInternalProps {
   asChild?: boolean
-  value: React.ReactText
-  onDismiss?: (value: React.ReactText) => void
 }
 
-const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
+const DismissibleRootInternal = ({
   asChild = false,
-  value,
-  onDismiss,
   ...rest
-}) => {
+}: React.PropsWithChildren<IDismissibleRootInternalProps>) => {
   const rootContext = React.useContext(DismissibleRootContext)
 
   const { isDismissed, disabled } = rootContext
-
-  React.useEffect(() => {
-    if (isDismissed) onDismiss?.(value)
-  }, [isDismissed])
 
   if (isDismissed) return null
 
@@ -60,10 +67,21 @@ const DismissibleRootInternal: React.FC<IDismissibleGroupItemProps> = ({
   return <Component {...props} />
 }
 
-export const DismissibleRoot: React.FC<
-  IDismissibleGroupItemProps & IDismissibleRootProps
-> = ({ disabled = false, ...rest }) => (
-  <DismissibleRootProvider disabled={disabled}>
+export const DismissibleRoot = ({
+  disabled = false,
+  dismissed,
+  onDismiss,
+  ...rest
+}: React.PropsWithChildren<
+  IDismissibleRootInternalProps & IDismissibleRootProps
+>) => (
+  <DismissibleRootProvider
+    dismissed={dismissed}
+    disabled={disabled}
+    onDismiss={onDismiss}
+  >
     <DismissibleRootInternal {...rest} />
   </DismissibleRootProvider>
 )
+
+DismissibleRoot.displayName = 'Dismissible'

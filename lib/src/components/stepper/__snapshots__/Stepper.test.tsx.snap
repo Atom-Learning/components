@@ -2,7 +2,7 @@
 
 exports[`Stepper renders correctly with default direction changed 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -17,6 +17,11 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -60,12 +65,18 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -89,9 +100,9 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     background: var(--colors-tonal100);
   }
 
-  .c-iXIhNm-gjRYFk-status-active {
+  .c-iXIhNm-ihiEpJ-status-active {
     background: white;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
@@ -101,17 +112,17 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     color: var(--colors-tonal300);
   }
 
-  .c-iXIhNm-lkRQpS-status-completed {
-    background: var(--colors-primary);
+  .c-iXIhNm-FqpDm-status-completed {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
-    background: var(--colors-primary);
+  .c-boNUgq-cCldsZ-separator-active:not(:last-child)::after {
+    background: var(--colors-primary800);
   }
 
-  .c-iXIhNm-bHjIVm-status-reviewed {
-    background: var(--colors-primaryMid);
+  .c-iXIhNm-gsCkBL-status-reviewed {
+    background: var(--colors-primary900);
     color: white;
   }
 
@@ -149,93 +160,91 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ebjJvk-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
-    color: var(--colors-primaryDark);
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fkUJsw-gsycxF-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-boNUgq-YMpfq-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-boNUgq-YMpfq-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary);
+  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :first-child {
-    background: var(--colors-primaryMid);
+  .c-boNUgq-maDFC-cv:hover :first-child {
+    background: var(--colors-primary900);
     color: white !important;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :last-child {
-    color: var(--colors-primaryMid);
+  .c-boNUgq-maDFC-cv:hover :last-child {
+    color: var(--colors-primary900);
   }
 
-  .c-boNUgq-dKQwO-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary);
+  .c-boNUgq-maDFC-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-hfecOD-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-boNUgq-gAJIna-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-boNUgq-gAJIna-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 }
@@ -253,7 +262,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -272,7 +281,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -282,13 +291,13 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-boNUgq-jCkdlW-cv c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-boNUgq-YMpfq-cv c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
@@ -317,7 +326,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -328,7 +337,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
 
 exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -343,6 +352,11 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -388,9 +402,10 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     font-weight: 600;
   }
 
-  .c-dbrbZt {
+  .c-hMRxhp {
     display: inline-block;
     fill: none;
+    flex-shrink: 0;
     stroke: currentcolor;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -399,12 +414,18 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -428,9 +449,9 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     background: var(--colors-tonal100);
   }
 
-  .c-iXIhNm-gjRYFk-status-active {
+  .c-iXIhNm-ihiEpJ-status-active {
     background: white;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
@@ -440,17 +461,17 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-tonal300);
   }
 
-  .c-iXIhNm-lkRQpS-status-completed {
-    background: var(--colors-primary);
+  .c-iXIhNm-FqpDm-status-completed {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-boNUgq-dGwPMl-separator-active:not(:last-child)::after {
-    background: var(--colors-primary);
+  .c-boNUgq-cCldsZ-separator-active:not(:last-child)::after {
+    background: var(--colors-primary800);
   }
 
-  .c-iXIhNm-bHjIVm-status-reviewed {
-    background: var(--colors-primaryMid);
+  .c-iXIhNm-gsCkBL-status-reviewed {
+    background: var(--colors-primary900);
     color: white;
   }
 
@@ -491,8 +512,8 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     text-align: center;
   }
 
-  .c-ecBjWS-cDiHrO-status-active {
-    color: var(--colors-primaryMid);
+  .c-ecBjWS-iBevLH-status-active {
+    color: var(--colors-primary900);
   }
 
   .c-ecBjWS-dlhNdU-status-default {
@@ -500,7 +521,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     font-weight: 400;
   }
 
-  .c-dbrbZt-dMrjnF-size-md {
+  .c-hMRxhp-dMrjnF-size-md {
     height: var(--sizes-2);
     width: var(--sizes-2);
     stroke-width: 1.75;
@@ -512,93 +533,91 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ebjJvk-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
-    color: var(--colors-primaryDark);
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fkUJsw-gsycxF-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-boNUgq-YMpfq-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-boNUgq-YMpfq-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary);
+  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :first-child {
-    background: var(--colors-primaryMid);
+  .c-boNUgq-maDFC-cv:hover :first-child {
+    background: var(--colors-primary900);
     color: white !important;
   }
 
-  .c-boNUgq-dKQwO-cv:hover :last-child {
-    color: var(--colors-primaryMid);
+  .c-boNUgq-maDFC-cv:hover :last-child {
+    color: var(--colors-primary900);
   }
 
-  .c-boNUgq-dKQwO-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary);
+  .c-boNUgq-maDFC-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
-  .c-boNUgq-iIblYT-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-hfecOD-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-fCshQK-cv:hover :first-child {
+  .c-boNUgq-gAJIna-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:hover :last-child {
+  .c-boNUgq-gAJIna-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-fCshQK-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary) !important;
+  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
 }
@@ -616,7 +635,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -639,7 +658,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -660,7 +679,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="c-dbrbZt c-dbrbZt-dMrjnF-size-md"
+            class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -683,12 +702,12 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         <div
           aria-label=""
           aria-labelledby="step-1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-gjRYFk-status-active c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-idGcKFW-css"
         >
           2
         </div>
         <span
-          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-cDiHrO-status-active"
+          class="c-ecBjWS c-ecBjWS-iwHyEI-direction-horizontal c-ecBjWS-iBevLH-status-active"
           id="step-1"
         >
           Step 2
@@ -696,7 +715,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next
@@ -707,7 +726,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
 
 exports[`Stepper renders the correct number of bullets 1`] = `
 @media  {
-  .c-fkUJsw {
+  .c-kaaUSm {
     align-items: center;
     background: unset;
     border: unset;
@@ -722,6 +741,11 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     transition: all 100ms ease-out;
     white-space: nowrap;
     width: max-content;
+  }
+
+  .c-kaaUSm[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 
   .c-dhzjXW {
@@ -765,12 +789,18 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-eYnvrx-size-sm {
+  .c-kaaUSm-cbWAnW-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
     height: var(--sizes-3);
     padding-left: var(--space-4);
     padding-right: var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .c-kaaUSm-cbWAnW-size-sm .c-hMRxhp {
+    height: 16px;
+    width: 16px;
   }
 
   .c-knmidH-ejCoEP-direction-horizontal {
@@ -794,9 +824,9 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     background: var(--colors-tonal100);
   }
 
-  .c-iXIhNm-gjRYFk-status-active {
+  .c-iXIhNm-ihiEpJ-status-active {
     background: white;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
@@ -808,60 +838,58 @@ exports[`Stepper renders the correct number of bullets 1`] = `
 }
 
 @media  {
-  .c-fkUJsw-fSssiS-cv {
+  .c-kaaUSm-ebjJvk-cv {
     border: 1px solid;
     border-color: currentColor;
-    color: var(--colors-primary);
+    color: var(--colors-primary800);
   }
 
-  .c-fkUJsw-fSssiS-cv[disabled] {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-ebjJvk-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):hover,
-  .c-fkUJsw-fSssiS-cv:not([disabled]):focus {
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):hover,
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):focus {
     text-decoration: none;
-    color: var(--colors-primaryMid);
+    color: var(--colors-primary900);
   }
 
-  .c-fkUJsw-fSssiS-cv:not([disabled]):active {
-    color: var(--colors-primaryDark);
+  .c-kaaUSm-ebjJvk-cv:not([disabled]):active {
+    color: var(--colors-primary1000);
   }
 
-  .c-fkUJsw-gsycxF-cv {
-    background: var(--colors-primary);
+  .c-kaaUSm-cygQAa-cv {
+    background: var(--colors-primary800);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv[disabled] {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-kaaUSm-cygQAa-cv[disabled] {
+    opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):hover,
-  .c-fkUJsw-gsycxF-cv:not([disabled]):focus {
-    background: var(--colors-primaryMid);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):hover,
+  .c-kaaUSm-cygQAa-cv:not([disabled]):focus {
+    background: var(--colors-primary900);
     color: white;
   }
 
-  .c-fkUJsw-gsycxF-cv:not([disabled]):active {
-    background: var(--colors-primaryDark);
+  .c-kaaUSm-cygQAa-cv:not([disabled]):active {
+    background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :first-child {
+  .c-boNUgq-YMpfq-cv:hover :first-child {
     border-color: var(--colors-tonal400);
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:hover :last-child {
+  .c-boNUgq-YMpfq-cv:hover :last-child {
     color: var(--colors-tonal600);
   }
 
-  .c-boNUgq-jCkdlW-cv:focus-visible :first-child {
-    outline: 2px solid var(--colors-primary);
+  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+    outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 }
@@ -879,7 +907,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     cursor: auto;
   }
 
-  .c-fkUJsw-icKSZB-css {
+  .c-kaaUSm-icKSZB-css {
     margin-left: auto;
   }
 
@@ -894,7 +922,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     class="c-PJLV c-PJLV-ifGHEql-css"
   >
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-fSssiS-cv"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-ebjJvk-cv"
       disabled=""
       type="button"
     >
@@ -904,13 +932,13 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-boNUgq-jCkdlW-cv c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-boNUgq-YMpfq-cv c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-gjRYFk-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
@@ -939,7 +967,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       </div>
     </div>
     <button
-      class="c-fkUJsw c-fkUJsw-eYnvrx-size-sm c-fkUJsw-gsycxF-cv c-fkUJsw-icKSZB-css"
+      class="c-kaaUSm c-kaaUSm-cbWAnW-size-sm c-kaaUSm-cygQAa-cv c-kaaUSm-icKSZB-css"
       type="button"
     >
       Next

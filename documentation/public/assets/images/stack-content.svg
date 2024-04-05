@@ -1,7 +1,1 @@
-<svg width="153" height="80" viewBox="0 0 153 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="98" height="16" fill="white"/>
-<rect y="25" width="153" height="10" fill="white"/>
-<rect y="40" width="153" height="10" fill="white"/>
-<rect y="55" width="153" height="10" fill="white"/>
-<rect y="70" width="59" height="10" fill="white"/>
-</svg>
+<svg width="153" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h98v16H0zm0 25h153v10H0zm0 15h153v10H0zm0 15h153v10H0zm0 15h59v10H0z"/></svg>

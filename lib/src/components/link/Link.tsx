@@ -2,7 +2,8 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
-import { Override } from '~/utilities'
+import { disabledStyle, Override } from '~/utilities'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -13,17 +14,22 @@ export const StyledLink = styled('a', {
   bg: 'unset',
   border: 'unset',
   p: 'unset',
-  color: '$primary',
+  color: '$primary800',
   cursor: 'pointer',
   fontFamily: '$body',
   textDecoration: 'none',
   '&:focus, &:hover': {
-    color: '$primaryMid',
+    color: '$primary900',
     textDecoration: 'underline'
   },
   '&:active': {
-    color: '$primaryDark'
+    color: '$primary1000'
   },
+  '&[disabled]': {
+    ...disabledStyle,
+    pointerEvents: 'none'
+  },
+
   [`${StyledText} > &, ${StyledHeading} > &, ${StyledLi} > &, ${StyledMarkdownEmphasis} > &`]:
     {
       fontSize: '100%',
@@ -32,7 +38,10 @@ export const StyledLink = styled('a', {
         content: 'none'
       }
     },
-  variants: textVariants
+  variants: textVariants,
+  defaultVariants: {
+    size: 'md'
+  }
 })
 
 type LinkProps = Override<
@@ -42,16 +51,16 @@ type LinkProps = Override<
   } & NavigatorActions
 >
 
-export const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(
-  ({ size = 'md', href, ...props }, ref) => (
+export const Link: React.ForwardRefExoticComponent<LinkProps> =
+  React.forwardRef(({ as, href, ...rest }, ref) => (
     <StyledLink
-      {...(!href && { as: 'button', noCapsize: true })}
-      size={size}
+      as={as || (!href ? 'button' : undefined)}
+      noCapsize={!href ? true : undefined}
       href={href}
-      {...props}
+      {...rest}
+      {...getExternalAnchorProps(href)}
       ref={ref}
     />
-  )
-) as React.FC<LinkProps>
+  ))
 
 Link.displayName = 'Link'

@@ -23,30 +23,31 @@ type TColorSchemeProps = React.ComponentProps<typeof StyledColorScheme> &
 /**
  * @experimental Component has not been finalised. Further design input required. Use with caution.
  */
-export const ColorScheme = React.forwardRef<HTMLDivElement, TColorSchemeProps>(
-  (
-    {
-      base = '',
-      accent = '',
-      interactive = '',
-      className,
-      asChild = false,
-      ...rest
-    },
-    ref
-  ) => {
-    const c = [
-      className,
-      colorSchemes[`interactive-${interactive}`],
-      colorSchemes[`accent-${accent}`],
-      colorSchemes[`base-${base}`]
-    ]
-      .filter(Boolean)
-      .join(' ')
+export const ColorScheme: React.ForwardRefExoticComponent<TColorSchemeProps> =
+  React.forwardRef(
+    (
+      {
+        base = '',
+        accent = '',
+        interactive = '',
+        className,
+        asChild = false,
+        ...rest
+      },
+      ref
+    ) => {
+      const c = [
+        className,
+        colorSchemes[`interactive-${interactive}`],
+        colorSchemes[`accent-${accent}`],
+        colorSchemes[`base-${base}`]
+      ]
+        .filter(Boolean)
+        .join(' ')
 
-    const Component = asChild ? Slot : StyledColorScheme
-    return <Component ref={ref} className={c} {...rest} />
-  }
-)
+      const Component = asChild ? Slot : StyledColorScheme
+      return <Component ref={ref} className={c} {...rest} />
+    }
+  )
 
 ColorScheme.displayName = 'ColorScheme'

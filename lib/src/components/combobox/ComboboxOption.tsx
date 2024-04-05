@@ -12,6 +12,6 @@ export const ComboboxOption = styled(BaseComboboxOption, {
     borderRadius: '$0'
   },
   '[data-user-value]': {
-    color: '$primary'
+    color: '$primary800'
   }
 })

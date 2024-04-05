@@ -12,7 +12,8 @@ const StyledProgressBar = styled(Progress.Root, {
   width: '100%',
   variants: {
     theme: {
-      primary: { color: '$primary' },
+      primary: { color: '$primary800' },
+      info: { color: '$info' },
       success: { color: '$success' },
       warning: { color: '$warning' },
       danger: { color: '$danger' }
@@ -37,12 +38,12 @@ type ProgressBarProps = React.ComponentPropsWithoutRef<
     | { 'aria-label': string; id?: string }
   )
 
-export const ProgressBar: React.FC<ProgressBarProps> = ({
+export const ProgressBar = ({
   value,
   max = 100,
   theme = 'primary',
   ...remainingProps
-}) => (
+}: ProgressBarProps) => (
   <StyledProgressBar value={value} max={max} theme={theme} {...remainingProps}>
     <StyledIndicator
       style={{

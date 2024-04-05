@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionalTooltipWrapper component renders with tooltip 1`] = `
+@media  {
+  .c-hVoQtf {
+    background-color: var(--colors-tonal500);
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    color: white;
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-sm);
+    line-height: 1.5;
+    white-space: normal;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf {
+      animation-duration: 75ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+
+  .c-kfLCww {
+    fill: var(--colors-tonal500);
+  }
+
+  [data-align="end"] .c-kfLCww {
+    margin-right: var(--space-2);
+  }
+
+  [data-align="start"] .c-kfLCww {
+    margin-left: var(--space-2);
+  }
+}
+
+@media  {
+  .c-hVoQtf-gWQnqe-size-md {
+    max-width: 250px;
+  }
+}
+
+<div>
+  <p
+    aria-describedby="radix-0"
+    class="c-PJLV"
+    data-state="instant-open"
+    data-testid="tooltip-trigger"
+  >
+    hello
+  </p>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
+  >
+    <div
+      class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
+      data-align="center"
+      data-side="right"
+      data-state="instant-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); animation: none;"
+    >
+      <p>
+        hello
+      </p>
+      <span
+        style="position: absolute; left: 0px; transform-origin: 0 0; transform: translateY(50%) rotate(90deg) translateX(-50%); visibility: hidden;"
+      >
+        <svg
+          class="c-kfLCww"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-0"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        <p>
+          hello
+        </p>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OptionalTooltipWrapper component renders without tooltip 1`] = `
+<div>
+  <p
+    data-testid="tooltip-trigger"
+  >
+    hello
+  </p>
+</div>
+`;

@@ -32,11 +32,7 @@ const getTransformValue = (value: number, min: number, max: number): number => {
   return 50
 }
 
-export const SliderSteps: React.FC<SliderStepsProps> = ({
-  min,
-  max,
-  steps = []
-}) => {
+export const SliderSteps = ({ min, max, steps = [] }: SliderStepsProps) => {
   if (steps.length === 0) return null
 
   return (
