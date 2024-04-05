@@ -46,6 +46,7 @@ export type DataTableContextType<T = unknown> = Table<T> & {
   isSortable: boolean
   asyncDataState?: AsyncDataState
   runAsyncData?: (options: Partial<TAsyncDataOptions>) => Promise<void>
+  disabledRows?: Record<string, boolean>
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
   rowSelection: RowSelectionState
   data: TAsyncDataResult
