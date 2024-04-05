@@ -44,8 +44,6 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
 
-  console.log({ isEmpty })
-
   if (isEmpty) return null
 
   const recordsCountFrom =
@@ -57,11 +55,8 @@ export const Pagination: React.FC<PaginationProps> = (props) => {
     setPageIndex(index - 1)
   }
 
-  console.log({ paginationState })
-  console.log({ pagesCount: getPageCount() })
-
   return (
-    <StyledNav>
+    <StyledNav {...props}>
       <Text size="sm">
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
