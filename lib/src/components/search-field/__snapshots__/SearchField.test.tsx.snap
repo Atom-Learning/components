@@ -61,8 +61,8 @@ exports[`SearchField component renders a field in error state - has no programma
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -120,8 +120,8 @@ exports[`SearchField component renders a field in error state - has no programma
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -174,7 +174,7 @@ exports[`SearchField component renders a field in error state - has no programma
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -231,7 +231,7 @@ exports[`SearchField component renders a field in error state - has no programma
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -346,8 +346,8 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -388,8 +388,8 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -411,7 +411,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -451,7 +451,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -531,8 +531,8 @@ exports[`SearchField component renders a field with a search input - has no prog
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -573,8 +573,8 @@ exports[`SearchField component renders a field with a search input - has no prog
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -596,7 +596,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -635,7 +635,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

@@ -57,8 +57,8 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -490,8 +490,8 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -755,7 +755,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -971,8 +971,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -1220,8 +1220,8 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -1370,7 +1370,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -2766,8 +2766,8 @@ exports[`DataTable component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -2958,8 +2958,8 @@ exports[`DataTable component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -3075,7 +3075,7 @@ exports[`DataTable component renders 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -3117,7 +3117,7 @@ exports[`DataTable component renders 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -3850,8 +3850,8 @@ exports[`DataTable server-side renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -4261,8 +4261,8 @@ exports[`DataTable server-side renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -4512,7 +4512,7 @@ exports[`DataTable server-side renders 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -4635,7 +4635,7 @@ exports[`DataTable server-side renders 1`] = `
     />
     <svg
       aria-hidden="true"
-      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-kCbngQ-size-md c-jTFaKU-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -5081,8 +5081,8 @@ exports[`DataTable sticky columns renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-jTFaKU {
-    color: var(--colors-grey700);
+  .c-hvMhuR {
+    color: var(--colors-tonal300);
     position: absolute;
     pointer-events: none;
   }
@@ -5492,8 +5492,8 @@ exports[`DataTable sticky columns renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-jTFaKU-kCbngQ-size-md {
-    left: 10px;
+  .c-hvMhuR-koUlob-size-md {
+    right: 10px;
     height: 20px;
     width: 20px;
   }
@@ -5673,7 +5673,7 @@ exports[`DataTable sticky columns renders 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-jTFaKU-icDTsBU-css {
+  .c-hvMhuR-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
