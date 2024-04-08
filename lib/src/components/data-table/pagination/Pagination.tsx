@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
+import { ColorScheme } from '../../../experiments/color-scheme'
 import { Pagination as PaginationComponent } from '../../pagination'
 import { Text } from '../../text'
 import { AsyncDataState } from '../DataTable.types'
@@ -22,10 +23,12 @@ const StyledNav = styled('nav', {
   }
 })
 
-type PaginationProps = React.ComponentProps<typeof StyledNav>
+type PaginationProps = React.ComponentProps<typeof StyledNav> & {
+  colorScheme: ColorScheme
+}
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-export const Pagination = (props: PaginationProps) => {
+export const Pagination = ({ colorScheme, ...props }: PaginationProps) => {
   const {
     applyPagination,
     getState,
@@ -61,6 +64,7 @@ export const Pagination = (props: PaginationProps) => {
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
       <PaginationComponent
+        colorScheme={colorScheme}
         selectedPage={paginationState.pageIndex + 1}
         pagesCount={getPageCount()}
         onSelectedPageChange={setPage}
@@ -68,3 +72,5 @@ export const Pagination = (props: PaginationProps) => {
     </StyledNav>
   )
 }
+
+Pagination.displayName = 'Pagination'
