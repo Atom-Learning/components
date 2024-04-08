@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { ColorScheme } from '../../../experiments/color-scheme'
+import { TcolorScheme } from '../../../experiments/color-scheme'
 import { Pagination as PaginationComponent } from '../../pagination'
 import { Text } from '../../text'
 import { AsyncDataState } from '../DataTable.types'
@@ -24,7 +24,7 @@ const StyledNav = styled('nav', {
 })
 
 type PaginationProps = React.ComponentProps<typeof StyledNav> & {
-  colorScheme: ColorScheme
+  colorScheme: TcolorScheme
 }
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
