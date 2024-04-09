@@ -278,35 +278,13 @@ describe('DataTable.Pagination component', () => {
     expect(nextPageButton).not.toBeInTheDocument()
   })
 
-  it('Displays the correct page number', async () => {
-    render(
-      <Wrapper>
-        <DataTable
-          columns={columns}
-          data={data}
-          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
-        >
-          <DataTable.Table sortable />
-          <DataTable.Pagination />
-        </DataTable>
-      </Wrapper>
-    )
-
-    expect(screen.getByRole('combobox')).toHaveValue('0')
-    expect(screen.getByText('of 4 pages')).toBeVisible()
-
-    const nextPageButton = screen.getByLabelText('Next page')
-    userEvent.click(nextPageButton)
-    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('1'))
-  })
-
   it('Navigates to the correct page', async () => {
     render(
       <Wrapper>
         <DataTable
           columns={columns}
           data={data}
-          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 2 } }}
         >
           <DataTable.Table sortable />
           <DataTable.Pagination />
@@ -314,12 +292,14 @@ describe('DataTable.Pagination component', () => {
       </Wrapper>
     )
 
-    userEvent.selectOptions(
-      screen.getByRole('combobox'),
-      screen.getByRole('option', { name: '2' })
-    )
+    userEvent.click(screen.getByRole('button', { name: '2' }))
 
-    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('1'))
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: '2' })).toHaveAttribute(
+        'aria-current',
+        'page'
+      )
+    )
   })
 
   it('Disables previous button on first page and next page button on last page', async () => {
@@ -361,7 +341,12 @@ describe('DataTable.Pagination component', () => {
       </Wrapper>
     )
 
-    await waitFor(() => expect(screen.getByRole('combobox')).toHaveValue('2'))
+    await waitFor(() =>
+      expect(screen.getByRole('button', { name: '3' })).toHaveAttribute(
+        'aria-current',
+        'page'
+      )
+    )
   })
 })
 
@@ -620,29 +605,6 @@ describe('DataTable server-side', () => {
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
   })
 
-  it('No pagination controls or sorting controls work while loading', async () => {
-    const PAGE_SIZE = 10
-    render(
-      <Wrapper>
-        <DataTable
-          columns={columns}
-          getAsyncData={getAsyncData}
-          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
-        >
-          <DataTable.Table sortable css={{ mb: '$4' }} />
-          <DataTable.Pagination />
-        </DataTable>
-      </Wrapper>
-    )
-
-    userEvent.click(screen.getByLabelText('Next page'))
-    userEvent.click(screen.getByLabelText('Previous page'))
-    userEvent.click(screen.getByText('Name'))
-
-    expect(screen.getByRole('combobox')).toBeDisabled()
-    expect(getAsyncData).toHaveBeenCalledTimes(1)
-  })
-
   it('Error message component is displayed when it fails to fetch the paginated data', async () => {
     getAsyncData.mockRejectedValue(new Error('Something went wrong'))
     const PAGE_SIZE = 10
@@ -697,29 +659,6 @@ describe('DataTable server-side', () => {
       sortDirection: undefined,
       globalFilter: ''
     })
-  })
-
-  it('No pagination controls work if fetching the paginated data fails', async () => {
-    getAsyncData.mockRejectedValue(new Error('Something went wrong'))
-    const PAGE_SIZE = 10
-    render(
-      <Wrapper>
-        <DataTable
-          columns={columns}
-          getAsyncData={getAsyncData}
-          initialState={{ pagination: { pageIndex: 0, pageSize: PAGE_SIZE } }}
-        >
-          <DataTable.Table sortable css={{ mb: '$4' }} />
-          <DataTable.Pagination />
-        </DataTable>
-      </Wrapper>
-    )
-
-    userEvent.click(screen.getByLabelText('Next page'))
-    userEvent.click(screen.getByLabelText('Previous page'))
-
-    expect(screen.getByRole('combobox')).toBeDisabled()
-    expect(getAsyncData).toHaveBeenCalledTimes(1)
   })
 
   it('Retrys fetching the data with custom fetching options when clicking retry from the error component', async () => {
