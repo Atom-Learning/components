@@ -521,15 +521,16 @@ exports[`Nav component renders 1`] = `
     }
 }
 
-  .c-jQFjpB-ikEdNcB-css {
+  .c-jQFjpB-iUhOFK-css {
+    --navigation-menu-viewport-offset: 0px;
     transform: translateX(0px);
   }
 
-  .c-jQFjpB-ikEdNcB-css[data-state="open"] {
+  .c-jQFjpB-iUhOFK-css[data-state="open"] {
     animation: k-brPFuJ 200ms ease;
   }
 
-  .c-jQFjpB-ikEdNcB-css[data-state="closed"] {
+  .c-jQFjpB-iUhOFK-css[data-state="closed"] {
     animation: k-bHbNKp 200ms ease-out;
   }
 
@@ -600,7 +601,7 @@ exports[`Nav component renders 1`] = `
       class="c-dbtMpA"
     >
       <div
-        class="c-jQFjpB c-jQFjpB-ikEdNcB-css"
+        class="c-jQFjpB c-jQFjpB-iUhOFK-css"
         data-orientation="horizontal"
         data-state="open"
       >
