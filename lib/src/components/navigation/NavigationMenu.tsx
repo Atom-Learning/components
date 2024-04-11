@@ -111,6 +111,7 @@ const NavigationMenuComponent = ({
         <ViewportPosition>
           <StyledViewport
             css={{
+              '--navigation-menu-viewport-offset': `${offset || 0}px`,
               transform: `translateX(${offset || 0}px)`,
               '&[data-state="open"]': {
                 animation: `${delayedFadeIn} ${fadeDuration}ms ease`
