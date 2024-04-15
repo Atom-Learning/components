@@ -2,32 +2,38 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 
-import { Flex } from '../../flex'
+import { TcolorScheme } from '../../../experiments/color-scheme'
+import { Pagination as PaginationComponent } from '../../pagination'
 import { Text } from '../../text'
 import { AsyncDataState } from '../DataTable.types'
 import { useDataTable } from '../DataTableContext'
-import { DirectionButton, GotoPageSelect } from './PaginationButtons'
 
 const StyledNav = styled('nav', {
   display: 'flex',
+  flexDirection: 'column',
   justifyContent: 'space-between',
   alignItems: 'center',
   fontVariantNumeric: 'tabular-nums',
   flexWrap: 'wrap',
-  rowGap: '$4'
+  width: '100%',
+  gap: '$4',
+  mt: '$4',
+  '@md': {
+    flexDirection: 'row'
+  }
 })
 
-type PaginationProps = React.ComponentProps<typeof StyledNav>
+type PaginationProps = React.ComponentProps<typeof StyledNav> & {
+  colorScheme?: TcolorScheme
+}
 
 /** Applies pagination to parent DataTableProvider and renders UI to switch pages etc */
-export const Pagination = (props: PaginationProps) => {
+export const Pagination = ({ colorScheme, ...props }: PaginationProps) => {
   const {
     applyPagination,
     getState,
     getRowModel,
     getPageCount,
-    previousPage,
-    nextPage,
     setPageIndex,
     getTotalRows,
     asyncDataState
@@ -46,53 +52,25 @@ export const Pagination = (props: PaginationProps) => {
   const recordsCountFrom =
     paginationState.pageIndex * paginationState.pageSize + 1
   const recordsCountTo = recordsCountFrom + getRowModel().rows.length - 1
-  const isPaginationDisabled =
-    asyncDataState === AsyncDataState.PENDING ||
-    asyncDataState === AsyncDataState.REJECTED
+
+  //indexing for the pagination component is 1 based
+  const setPage = (index: number) => {
+    setPageIndex(index - 1)
+  }
 
   return (
     <StyledNav {...props}>
-      <Text
-        size="sm"
-        css={{
-          pr: '$4',
-          '@sm': { flexBasis: '50%' }
-        }}
-      >
+      <Text size="sm">
         {`${recordsCountFrom.toString()} - ${recordsCountTo.toString()} of ${getTotalRows()} items`}
       </Text>
-
-      <Flex
-        css={{
-          justifyContent: 'space-between',
-          width: '100%',
-          '@sm': { flexBasis: '50%' }
-        }}
-      >
-        <GotoPageSelect
-          gotoPage={setPageIndex}
-          pageCount={getPageCount()}
-          pageIndex={paginationState.pageIndex}
-          disabled={isPaginationDisabled}
-        />
-
-        <Flex>
-          <DirectionButton
-            direction="previous"
-            disabled={paginationState.pageIndex === 0 || isPaginationDisabled}
-            onClick={previousPage}
-            css={{ mr: '$4' }}
-          />
-          <DirectionButton
-            direction="next"
-            disabled={
-              paginationState.pageIndex === getPageCount() - 1 ||
-              isPaginationDisabled
-            }
-            onClick={nextPage}
-          />
-        </Flex>
-      </Flex>
+      <PaginationComponent
+        colorScheme={colorScheme}
+        selectedPage={paginationState.pageIndex + 1}
+        pagesCount={getPageCount()}
+        onSelectedPageChange={setPage}
+      />
     </StyledNav>
   )
 }
+
+Pagination.displayName = 'Pagination'

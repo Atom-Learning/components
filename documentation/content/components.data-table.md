@@ -574,6 +574,49 @@ tabs:
         <DataTable.Table />
       </DataTable>`} language={"jsx"} />
 
+      #### Disabled rows
+
+
+      We can display disabled rows with different layout so users can see the difference between those rows and the enabled ones.
+      To achieve this you need to pass a property \`disabledRows\` that is a Record where the key is the row id (you can get this from the data table hook) and the value is a boolean that if it's true it will show the row as disabled. Note that this is just a visual change, it doesn't disable clickable elements in the table.
+
+
+      <CodeBlock live={false} preview={false} code={`const columnHelper = createColumnHelper()
+
+
+      const columns = [
+        columnHelper.accessor('name', {
+          header: 'Name',
+          id: 'name',
+          cell: (data) => data.getValue() || ''
+        }),
+        columnHelper.accessor('age', {
+          header: 'Age',
+          id: 'age',
+          cell: (data) => data.getValue() || ''
+        })
+      ]
+
+
+      const data = [
+        {
+          name: 'John',
+          age: 30
+        },
+        {
+          name: 'Mark',
+          age: 30
+        },
+        {
+          name: 'Anne',
+          age: 30
+        }
+      ]
+          
+      <DataTable data={data} columns={columns} disabledRows={{ '0': true }}>
+        <DataTable.Table />
+      </DataTable>`} language={"jsx"} />
+
 
       ## API Reference
 
