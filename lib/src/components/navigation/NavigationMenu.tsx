@@ -64,7 +64,7 @@ const NavigationMenuComponent = ({
     if (listRef.current) {
       setListWidth(listRef.current.offsetWidth)
     }
-  }, [])
+  }, [React.Children.toArray(children).length])
 
   React.useEffect(() => {
     let timer: NodeJS.Timer
