@@ -26,7 +26,7 @@ const StyledChipToggleGroupItem = styled.withConfig({
     },
     '&[data-state="on"]': {
       '&:hover': {
-        bg: '$white',
+        bg: 'white',
         color: '$primary1000'
       }
     }
