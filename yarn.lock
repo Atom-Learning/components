@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@atom-learning/icons@1.17.0":
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.17.0.tgz#7575de27e0469ac950276d5c3359a589451a9b9a"
-  integrity sha512-mfhyq5lJZe2JsUMKblPH6S+Lv2xoW4+WnBLmYtAQLTO69BrEJZ3BYnHAynAhNGDlLehg0s8gNFqvXJloHnsiLg==
+"@atom-learning/icons@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.18.0.tgz#33270799afff4a3b411fdccec948cff9c258075c"
+  integrity sha512-S3ws2gpLQLEzFeRjhouRU5SLcU31pc5HEElxSHpnswuFMG6qJIyTGLLJeyXlZgJFrOpp7ujGNgdqTLJA1wF/BA==
 
 "@atom-learning/icons@^1.16.0":
   version "1.16.0"
