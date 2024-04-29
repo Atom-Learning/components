@@ -64,7 +64,7 @@ const NavigationMenuComponent = ({
     if (listRef.current) {
       setListWidth(listRef.current.offsetWidth)
     }
-  }, [])
+  }, [React.Children.toArray(children).length])
 
   React.useEffect(() => {
     let timer: NodeJS.Timer
@@ -111,6 +111,7 @@ const NavigationMenuComponent = ({
         <ViewportPosition>
           <StyledViewport
             css={{
+              '--navigation-menu-viewport-offset': `${offset || 0}px`,
               transform: `translateX(${offset || 0}px)`,
               '&[data-state="open"]': {
                 animation: `${delayedFadeIn} ${fadeDuration}ms ease`

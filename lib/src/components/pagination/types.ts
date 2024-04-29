@@ -33,6 +33,7 @@ export type TVisibleElementsCount = 6 | 8
 export interface PaginationPageProps {
   pageNumber: number
   css?: CSS
+  onClick?: () => void
 }
 export interface PaginationContextValue extends BasePaginationProps {
   currentPage: number
@@ -53,4 +54,5 @@ export type PaginationProviderProps = Pick<BasePaginationProps, 'pagesCount'> &
 export interface PaginationProps extends PaginationProviderProps {
   colorScheme?: TcolorScheme
   css?: CSS
+  children?: React.ReactNode
 }

@@ -1,6 +1,7 @@
 import { v4 as uuid } from '@lukeed/uuid'
 import type {
   ExpandedState,
+  OnChangeFn,
   PaginationState,
   Row,
   RowSelectionState
@@ -38,7 +39,9 @@ type DataTableProviderProps = {
   defaultSort?: TDefaultSort
   children: React.ReactNode
   initialState?: InitialState
+  disabledRows?: Record<string, boolean>
   enableRowSelection?: boolean | ((row: Row<unknown>) => boolean)
+  onRowSelectionChange?: OnChangeFn<RowSelectionState>
 } & (
   | { data: TableData; getAsyncData?: never }
   | { data?: never; getAsyncData: TGetAsyncData }
@@ -50,7 +53,9 @@ export const DataTableProvider = ({
   getAsyncData,
   defaultSort,
   initialState = undefined,
+  disabledRows,
   enableRowSelection,
+  onRowSelectionChange,
   children
 }: DataTableProviderProps): JSX.Element => {
   const tableId = React.useRef(uuid())
@@ -138,7 +143,10 @@ export const DataTableProvider = ({
     enableRowSelection,
     onExpandedChange: setExpanded,
     getSubRows: (row: Row<unknown>) => row.subRows,
-    onRowSelectionChange: setRowSelection,
+    onRowSelectionChange: (updaterOrValue) => {
+      if (onRowSelectionChange) onRowSelectionChange(updaterOrValue)
+      setRowSelection(updaterOrValue)
+    },
     getCoreRowModel: getCoreRowModel(),
     getPaginationRowModel: isPaginated ? getPaginationRowModel() : undefined,
     getSortedRowModel:
@@ -151,6 +159,10 @@ export const DataTableProvider = ({
     globalFilterFn: (row, columnId, filterValue) => {
       const checkFilterMatchesCell = (cellValue: string) =>
         cellValue.toLowerCase().includes(filterValue.toLowerCase())
+
+      const isSubRow = row.depth > 0
+
+      if (isSubRow) return true
 
       const value = row.getValue(columnId)
       switch (typeof value) {
@@ -177,6 +189,7 @@ export const DataTableProvider = ({
       isSortable,
       asyncDataState,
       runAsyncData,
+      disabledRows,
       enableRowSelection,
       rowSelection,
       tableId: tableId.current

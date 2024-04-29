@@ -98,6 +98,22 @@ tabs:
       </ToggleGroup.Root>`} language={"tsx"} />
 
 
+      ## Disable Deselect
+
+
+      `disableDeselect={boolean}`
+
+
+      By default the `ToggleGroup` allows itself to be entirely deselected even after a value has been chosen. This property disables this deselect funcionality, always keeping a value selected after first selection. Similar to how radios work.
+
+
+      <CodeBlock live={true} preview={true} code={`<ToggleGroup.Root type="multiple" disableDeselect>
+        <ToggleGroup.Button value="a">A</ToggleGroup.Button>
+        <ToggleGroup.Button value="b">B</ToggleGroup.Button>
+        <ToggleGroup.Button value="c">C</ToggleGroup.Button>
+      </ToggleGroup.Root>`} language={"tsx"} />
+
+
       ### API Reference
 
 

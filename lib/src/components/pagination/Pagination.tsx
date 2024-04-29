@@ -5,9 +5,10 @@ import { Flex } from '../flex'
 import { VisibleElementsAmount } from './pagination.constants'
 import { PaginationProvider } from './pagination-context/PaginationContext'
 import { PaginationItems } from './PaginationItems'
-import type { PaginationProps } from './types'
+import { PaginationPopover } from './PaginationPopover'
+import type { PaginationProps, PaginationProviderProps } from './types'
 
-export const Pagination = ({
+const PaginationComponent = ({
   colorScheme,
   onSelectedPageChange,
   selectedPage,
@@ -17,11 +18,12 @@ export const Pagination = ({
   disabledPages = [],
   onItemHover = () => null,
   labels = {},
+  children,
   ...rest
 }: PaginationProps) => {
   if (!pagesCount) return null
 
-  const paginationProviderProps = {
+  const paginationProviderProps: PaginationProviderProps = {
     onSelectedPageChange,
     selectedPage,
     visibleElementsCount,
@@ -36,11 +38,15 @@ export const Pagination = ({
     <PaginationProvider {...paginationProviderProps}>
       <ColorScheme base="grey1" accent="primary1" {...colorScheme} asChild>
         <Flex gap={1} {...rest}>
-          <PaginationItems />
+          {children || <PaginationItems />}
         </Flex>
       </ColorScheme>
     </PaginationProvider>
   )
 }
 
-Pagination.displayName = 'Pagination'
+export const Pagination = Object.assign(PaginationComponent, {
+  Popover: PaginationPopover
+})
+
+PaginationComponent.displayName = 'Pagination'
