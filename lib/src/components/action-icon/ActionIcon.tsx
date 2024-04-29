@@ -2,12 +2,13 @@ import type { VariantProps } from '@stitches/react'
 import invariant from 'invariant'
 import * as React from 'react'
 
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
-import { getExternalAnchorProps } from '~/utilities/uri'
+import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
@@ -154,13 +155,15 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
       },
       ref
     ) => {
+      const { Link: ExternalLink } = React.useContext(ComponentsContext)
+
       const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 
       invariant(React.Children.count(children) === 1, INVALID_CHILDREN_MESSAGE)
 
       const optionalLinkProps = href
         ? ({
-            as: 'a',
+            as: isExternalUrl(href) ? 'a' : ExternalLink,
             href: disabled ? null : href,
             onClick: undefined,
             'aria-disabled': !!disabled

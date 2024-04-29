@@ -6,6 +6,7 @@ import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
 import { Icon } from '../icon/Icon'
 import { Tooltip } from '../tooltip'
 import { ActionIcon } from '.'
+import { ComponentsProvider } from '../../context'
 
 const customRender = (children) =>
   render(<Tooltip.Provider>{children}</Tooltip.Provider>)
@@ -90,5 +91,18 @@ describe('ActionIcon component', () => {
     expect(screen.queryByRole('link')).not.toHaveAttribute('href')
     expect(screen.queryByRole('link')).toHaveAttribute('target')
     expect(screen.queryByRole('link')).toHaveAttribute('rel')
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = customRender(
+      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <ActionIcon label="Mark as complete" href="/somewhere">
+          <Icon is={() => <svg />} />
+        </ActionIcon>
+      </ComponentsProvider>
+    )
+
+    expect(screen.queryByRole('link')).not.toBeInTheDocument()
+    expect(container.querySelector('p')).toBeInTheDocument()
   })
 })

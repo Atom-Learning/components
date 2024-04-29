@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { Tile } from '~/components/tile'
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { focusVisibleStyleBlock } from '~/utilities'
+import { isExternalUrl } from '~/utilities/uri'
 
 const StyledTileInteractive = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
@@ -49,14 +51,19 @@ type TTileInteractiveProps = React.ComponentProps<
 
 export const TileInteractive: React.ForwardRefExoticComponent<TTileInteractiveProps> =
   React.forwardRef(({ onClick, href, type = 'button', ...rest }, ref) => {
-    const isLink = !!href
-    const elementSpecificProps = isLink
+    const { Link: ExternalLink } = React.useContext(ComponentsContext)
+
+    const elementSpecificProps = !!href
       ? {
-          as: 'a' as React.ElementType,
+          as: isExternalUrl(href) ? 'a' : ExternalLink,
           href,
           onClick: undefined
         }
-      : { as: 'button' as React.ElementType, type, onClick }
+      : {
+          as: 'button' as React.ElementType,
+          type,
+          onClick
+        }
 
     return (
       <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />

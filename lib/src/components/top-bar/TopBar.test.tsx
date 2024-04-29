@@ -5,6 +5,7 @@ import * as React from 'react'
 
 import { Tooltip } from '../tooltip'
 import { TopBar } from '.'
+import { ComponentsProvider } from '../../context'
 
 const ExampleTopBar = ({ size }) => (
   <Tooltip.Provider>
@@ -46,5 +47,21 @@ describe('TopBar component', () => {
     const { container } = render(<ExampleTopBar size="lg" />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <li {...props} /> }}>
+        <Tooltip.Provider>
+          <TopBar>
+            <TopBar.Brand href="/somewhere">
+              <TopBar.BrandName>Admin Panel</TopBar.BrandName>
+            </TopBar.Brand>
+          </TopBar>
+        </Tooltip.Provider>
+      </ComponentsProvider>
+    )
+
+    expect(container.querySelector('li')).toHaveTextContent('Admin Panel')
   })
 })

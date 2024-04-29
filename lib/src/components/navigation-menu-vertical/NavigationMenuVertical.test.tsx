@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import React from 'react'
 
 import { NavigationMenuVertical } from './NavigationMenuVertical'
+import { ComponentsProvider } from '../../context'
 
 const NavigationMenuVerticalImplementation = ({
   children
@@ -68,5 +69,15 @@ describe('NavigationMenuVertical', () => {
     expect(mockOnOpenChange).toBeCalledWith(false)
     expect(accordionTrigger).toHaveAttribute('data-state', 'closed')
     expect(accordionContent).not.toBeVisible()
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <NavigationMenuVerticalImplementation />
+      </ComponentsProvider>
+    )
+
+    expect(container.querySelector('p')).toHaveTextContent('Relative Link')
   })
 })

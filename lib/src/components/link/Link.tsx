@@ -1,9 +1,10 @@
 import * as React from 'react'
 
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
-import { getExternalAnchorProps } from '~/utilities/uri'
+import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -52,16 +53,22 @@ type LinkProps = Override<
 >
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
-  React.forwardRef(({ as, disabled, href, ...rest }, ref) => (
-    <StyledLink
-      as={as || (!href ? 'button' : undefined)}
-      noCapsize={!href ? true : undefined}
-      href={href}
-      {...(disabled && { disabled: true })}
-      {...rest}
-      {...getExternalAnchorProps(href)}
-      ref={ref}
-    />
-  ))
+  React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
+    const { Link: ExternalLink } = React.useContext(ComponentsContext)
+
+    return (
+      <StyledLink
+        as={
+          as || (href ? (isExternalUrl(href) ? 'a' : ExternalLink) : 'button')
+        }
+        noCapsize={!href ? true : undefined}
+        href={href}
+        {...(disabled && { disabled: true })}
+        {...rest}
+        {...getExternalAnchorProps(href)}
+        ref={ref}
+      />
+    )
+  })
 
 Link.displayName = 'Link'

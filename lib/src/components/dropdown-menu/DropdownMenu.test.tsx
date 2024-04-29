@@ -4,6 +4,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { DropdownMenu } from '.'
+import { ComponentsProvider } from '../../context'
 
 const ExampleDropdownMenu = (props) => (
   <DropdownMenu {...props}>
@@ -46,6 +47,27 @@ describe('DropdownMenu component', () => {
     userEvent.click(trigger)
     waitFor(async () =>
       expect(await screen.queryByText('Item 1')).toBeInTheDocument()
+    )
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <ExampleDropdownMenu />
+      </ComponentsProvider>
+    )
+
+    const trigger = screen.getByText('TRIGGER')
+
+    expect(await trigger).toBeInTheDocument()
+
+    userEvent.click(trigger)
+
+    waitFor(async () =>
+      expect(container.querySelector('p')).toHaveTextContent('Log Out')
+    )
+    waitFor(async () =>
+      expect(container.querySelector('p')).toBeInTheDocument()
     )
   })
 })

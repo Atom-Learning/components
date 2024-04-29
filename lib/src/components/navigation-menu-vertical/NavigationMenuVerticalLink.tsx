@@ -1,13 +1,14 @@
 import { Link } from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { preventEvent } from '~/utilities/event'
-import { getExternalAnchorProps } from '~/utilities/uri'
+import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
 import { NavigationMenuVerticalItem } from './NavigationMenuVerticalItem'
 import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemContent'
+import { ComponentsContext } from '~/context'
 
 const StyledNavigationMenuVerticalLink = styled(
   Link,
@@ -26,7 +27,10 @@ export const NavigationMenuVerticalLink = ({
   children,
   ...rest
 }: NavigationMenuVerticalItemProps) => {
-  const Component = as || (href ? 'a' : 'button')
+  const { Link: ExternalLink } = React.useContext(ComponentsContext)
+
+  const Component =
+    as || (href ? (isExternalUrl(href) ? 'a' : ExternalLink) : 'button')
   const componentProps = as
     ? {}
     : href

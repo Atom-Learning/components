@@ -5,6 +5,7 @@ import React from 'react'
 import { Heading } from '../heading/Heading'
 import { Text } from '../text/Text'
 import { Link } from './'
+import { ComponentsProvider } from '../../context'
 
 describe(`Link component`, () => {
   it('renders an anchor', async () => {
@@ -63,5 +64,17 @@ describe(`Link component`, () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <Link href="https://google.com/">EXTERNAL</Link>
+        <Link href="/hello">INTERNAL</Link>
+      </ComponentsProvider>
+    )
+
+    expect(container.querySelector('p')).toBeInTheDocument()
+    expect(screen.getByRole('link')).toBeInTheDocument()
   })
 })

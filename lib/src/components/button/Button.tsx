@@ -4,6 +4,7 @@ import * as React from 'react'
 
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
@@ -187,24 +188,27 @@ type ButtonProps = Override<
 
 export const Button: React.ForwardRefExoticComponent<ButtonProps> =
   React.forwardRef(
-    ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => (
-      <StyledButton
-        as={as || (href ? 'a' : undefined)}
-        href={href}
-        isLoading={isLoading}
-        onClick={!isLoading ? onClick : undefined}
-        type={!href ? 'button' : undefined}
-        {...rest}
-        {...getExternalAnchorProps(href)}
-        ref={ref}
-      >
-        {isLoading ? (
-          <WithLoader size={rest.size}>{children}</WithLoader>
-        ) : (
-          children
-        )}
-      </StyledButton>
-    )
+    ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
+      const { Link: ExternalLink } = React.useContext(ComponentsContext)
+      return (
+        <StyledButton
+          as={as || (href ? ExternalLink : undefined)}
+          href={href}
+          isLoading={isLoading}
+          onClick={!isLoading ? onClick : undefined}
+          type={!href ? 'button' : undefined}
+          {...rest}
+          {...getExternalAnchorProps(href)}
+          ref={ref}
+        >
+          {isLoading ? (
+            <WithLoader size={rest.size}>{children}</WithLoader>
+          ) : (
+            children
+          )}
+        </StyledButton>
+      )
+    }
   )
 
 Button.displayName = 'Button'

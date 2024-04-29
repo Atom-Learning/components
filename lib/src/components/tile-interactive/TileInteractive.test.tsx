@@ -3,9 +3,12 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { TileInteractive } from '.'
+import { ComponentsProvider } from '../../context'
 
-const TileInteractiveImplementation = () => (
-  <TileInteractive css={{ m: 'auto', size: 100 }}>A</TileInteractive>
+const TileInteractiveImplementation = (props) => (
+  <TileInteractive {...props} css={{ m: 'auto', size: 100 }}>
+    A
+  </TileInteractive>
 )
 
 describe(`TileInteractive component`, () => {
@@ -17,5 +20,15 @@ describe(`TileInteractive component`, () => {
   it('has no programmatically detectable a11y issues', async () => {
     const { container } = render(<TileInteractiveImplementation />)
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <TileInteractiveImplementation href="/somewhere" />
+      </ComponentsProvider>
+    )
+
+    expect(container.querySelector('p')).toHaveTextContent('A')
   })
 })

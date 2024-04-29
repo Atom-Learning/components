@@ -4,6 +4,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { SideBar, useSidebarState } from '.'
+import { ComponentsProvider } from '../../context'
 
 const ExampleSideBarContent = () => {
   const { isExpanded } = useSidebarState()
@@ -61,5 +62,21 @@ describe('SideBar component', () => {
     userEvent.tab()
     expect(link).not.toHaveFocus()
     expect(screen.getByText('isNotExpanded'))
+  })
+
+  it('works with ComponentsProvider', async () => {
+    const { container } = render(
+      <ComponentsProvider value={{ Link: (props) => <li {...props} /> }}>
+        <SideBar>
+          <SideBar.Header>
+            <SideBar.Brand href="/somewhere">
+              <SideBar.BrandLogo alt="Logo" src="" />
+              <SideBar.BrandName>Hello</SideBar.BrandName>
+            </SideBar.Brand>
+          </SideBar.Header>
+        </SideBar>
+      </ComponentsProvider>
+    )
+    expect(container.querySelector('li')).toHaveTextContent('Hello')
   })
 })
