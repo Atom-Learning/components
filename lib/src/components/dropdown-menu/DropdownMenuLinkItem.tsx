@@ -1,10 +1,10 @@
 import React from 'react'
 
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 
 import { DropdownMenuItem } from './DropdownMenuItem'
-import { ComponentsContext } from '~/context'
 
 const StyledLink = styled('a', {
   textDecoration: 'none'

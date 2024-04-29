@@ -3,9 +3,9 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { ComponentsProvider } from '../../context'
 import { Tooltip } from '../tooltip'
 import { TopBar } from '.'
-import { ComponentsProvider } from '../../context'
 
 const ExampleTopBar = ({ size }) => (
   <Tooltip.Provider>

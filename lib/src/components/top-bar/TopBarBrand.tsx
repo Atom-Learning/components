@@ -1,10 +1,10 @@
 import React from 'react'
 
+import { ComponentsContext, ComponentsProvider } from '~/context'
 import { CSS, styled } from '~/stitches'
 
 import { Image } from '../image'
 import { Text } from '../text'
-import { ComponentsContext, ComponentsProvider } from '~/context'
 
 type TopBarBrandLogoProps = {
   src: string

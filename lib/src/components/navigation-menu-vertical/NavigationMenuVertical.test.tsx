@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 
-import { NavigationMenuVertical } from './NavigationMenuVertical'
 import { ComponentsProvider } from '../../context'
+import { NavigationMenuVertical } from './NavigationMenuVertical'
 
 const NavigationMenuVerticalImplementation = ({
   children

@@ -2,8 +2,8 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { TileInteractive } from '.'
 import { ComponentsProvider } from '../../context'
+import { TileInteractive } from '.'
 
 const TileInteractiveImplementation = (props) => (
   <TileInteractive {...props} css={{ m: 'auto', size: 100 }}>

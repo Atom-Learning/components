@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { DropdownMenu } from '.'
 import { ComponentsProvider } from '../../context'
+import { DropdownMenu } from '.'
 
 const ExampleDropdownMenu = (props) => (
   <DropdownMenu {...props}>

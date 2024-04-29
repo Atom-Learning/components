@@ -3,8 +3,8 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { SideBar, useSidebarState } from '.'
 import { ComponentsProvider } from '../../context'
+import { SideBar, useSidebarState } from '.'
 
 const ExampleSideBarContent = () => {
   const { isExpanded } = useSidebarState()

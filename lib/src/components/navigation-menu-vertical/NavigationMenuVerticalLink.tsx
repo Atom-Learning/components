@@ -1,6 +1,7 @@
 import { Link } from '@radix-ui/react-navigation-menu'
 import * as React from 'react'
 
+import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { preventEvent } from '~/utilities/event'
 import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
@@ -8,7 +9,6 @@ import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 import { navigationMenuVerticalItemStyles } from './NavigationMenuVertical.styles'
 import { NavigationMenuVerticalItem } from './NavigationMenuVerticalItem'
 import { NavigationMenuVerticalItemContent } from './NavigationMenuVerticalItemContent'
-import { ComponentsContext } from '~/context'
 
 const StyledNavigationMenuVerticalLink = styled(
   Link,

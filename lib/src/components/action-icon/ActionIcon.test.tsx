@@ -3,10 +3,10 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
+import { ComponentsProvider } from '../../context'
 import { Icon } from '../icon/Icon'
 import { Tooltip } from '../tooltip'
 import { ActionIcon } from '.'
-import { ComponentsProvider } from '../../context'
 
 const customRender = (children) =>
   render(<Tooltip.Provider>{children}</Tooltip.Provider>)

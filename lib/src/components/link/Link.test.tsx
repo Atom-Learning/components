@@ -2,10 +2,10 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
+import { ComponentsProvider } from '../../context'
 import { Heading } from '../heading/Heading'
 import { Text } from '../text/Text'
 import { Link } from './'
-import { ComponentsProvider } from '../../context'
 
 describe(`Link component`, () => {
   it('renders an anchor', async () => {

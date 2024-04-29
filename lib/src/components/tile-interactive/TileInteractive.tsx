@@ -53,7 +53,7 @@ export const TileInteractive: React.ForwardRefExoticComponent<TTileInteractivePr
   React.forwardRef(({ onClick, href, type = 'button', ...rest }, ref) => {
     const { Link: ExternalLink } = React.useContext(ComponentsContext)
 
-    const elementSpecificProps = !!href
+    const elementSpecificProps = href
       ? {
           as: isExternalUrl(href) ? 'a' : ExternalLink,
           href,
