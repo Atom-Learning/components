@@ -15,12 +15,12 @@ export const DropdownMenuLinkItem = ({
   href,
   ...props
 }: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => {
-  const { Link: ExternalLink } = React.useContext(ComponentsContext)
+  const { Link: RouterLink } = React.useContext(ComponentsContext)
 
   return (
     <DropdownMenuItem {...props} asChild>
       <StyledLink
-        as={isExternalUrl(href) ? 'a' : ExternalLink}
+        as={isExternalUrl(href) ? 'a' : RouterLink}
         href={href}
         role="menuitem"
         {...getExternalAnchorProps(href)}

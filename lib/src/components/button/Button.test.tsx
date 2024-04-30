@@ -5,6 +5,7 @@ import * as React from 'react'
 
 import { Icon } from '../icon'
 import { Button } from '.'
+import { ComponentsProvider } from '../../context'
 
 describe(`Button component`, () => {
   const props = { onClick: jest.fn() }
@@ -194,6 +195,18 @@ describe(`Button component`, () => {
       fireEvent.click(screen.getByRole('button'))
 
       expect(handleClick).toHaveBeenCalledTimes(0)
+    })
+
+    it('works with ComponentsProvider', async () => {
+      const { container } = render(
+        <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+          <Button href="https://google.com/">EXTERNAL</Button>
+          <Button href="/hello">INTERNAL</Button>
+        </ComponentsProvider>
+      )
+
+      expect(container.querySelector('p')).toBeInTheDocument()
+      expect(screen.getByRole('link')).toBeInTheDocument()
     })
   })
 })

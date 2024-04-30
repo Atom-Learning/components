@@ -37,8 +37,8 @@ const StyledSideBarBrand = styled('a', {
   }
 })
 export const SideBarBrand = (props) => {
-  const { Link: ExternalLink } = React.useContext(ComponentsContext)
-  return <StyledSideBarBrand as={ExternalLink} {...props} />
+  const { Link: RouterLink } = React.useContext(ComponentsContext)
+  return <StyledSideBarBrand as={RouterLink} {...props} />
 }
 
 export const SideBarBrandLogo = Image

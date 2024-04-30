@@ -54,13 +54,11 @@ type LinkProps = Override<
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
   React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
-    const { Link: ExternalLink } = React.useContext(ComponentsContext)
+    const { Link: RouterLink } = React.useContext(ComponentsContext)
 
     return (
       <StyledLink
-        as={
-          as || (href ? (isExternalUrl(href) ? 'a' : ExternalLink) : 'button')
-        }
+        as={as || (href ? (isExternalUrl(href) ? 'a' : RouterLink) : 'button')}
         noCapsize={!href ? true : undefined}
         href={href}
         {...(disabled && { disabled: true })}

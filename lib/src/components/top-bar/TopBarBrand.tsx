@@ -44,6 +44,6 @@ const StyledTopBarBrand = styled('a', {
 })
 
 export const TopBarBrand = (props) => {
-  const { Link: ExternalLink } = React.useContext(ComponentsContext)
-  return <StyledTopBarBrand as={ExternalLink} {...props} />
+  const { Link: RouterLink } = React.useContext(ComponentsContext)
+  return <StyledTopBarBrand as={RouterLink} {...props} />
 }

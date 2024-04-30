@@ -8,7 +8,7 @@ import { ComponentsContext } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
-import { getExternalAnchorProps } from '~/utilities/uri'
+import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
 
 const getButtonOutlineVariant = (
   theme: string,
@@ -189,10 +189,12 @@ type ButtonProps = Override<
 export const Button: React.ForwardRefExoticComponent<ButtonProps> =
   React.forwardRef(
     ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
-      const { Link: ExternalLink } = React.useContext(ComponentsContext)
+      const { Link: RouterLink } = React.useContext(ComponentsContext)
+      const component =
+        as || (href ? (isExternalUrl(href) ? 'a' : RouterLink) : undefined)
       return (
         <StyledButton
-          as={as || (href ? ExternalLink : undefined)}
+          as={component}
           href={href}
           isLoading={isLoading}
           onClick={!isLoading ? onClick : undefined}

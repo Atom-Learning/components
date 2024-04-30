@@ -27,10 +27,10 @@ export const NavigationMenuVerticalLink = ({
   children,
   ...rest
 }: NavigationMenuVerticalItemProps) => {
-  const { Link: ExternalLink } = React.useContext(ComponentsContext)
+  const { Link: RouterLink } = React.useContext(ComponentsContext)
 
   const Component =
-    as || (href ? (isExternalUrl(href) ? 'a' : ExternalLink) : 'button')
+    as || (href ? (isExternalUrl(href) ? 'a' : RouterLink) : 'button')
   const componentProps = as
     ? {}
     : href

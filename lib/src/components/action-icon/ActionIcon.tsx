@@ -155,7 +155,7 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
       },
       ref
     ) => {
-      const { Link: ExternalLink } = React.useContext(ComponentsContext)
+      const { Link: RouterLink } = React.useContext(ComponentsContext)
 
       const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 
@@ -163,7 +163,7 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
 
       const optionalLinkProps = href
         ? ({
-            as: isExternalUrl(href) ? 'a' : ExternalLink,
+            as: isExternalUrl(href) ? 'a' : RouterLink,
             href: disabled ? null : href,
             onClick: undefined,
             'aria-disabled': !!disabled
