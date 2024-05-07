@@ -58,7 +58,7 @@
     }
   ],
   "devDependencies": {
-    "@atom-learning/icons": "1.18.0",
+    "@atom-learning/icons": "1.19.0",
     "@atom-learning/jest-stitches": "1.0.10",
     "@atom-learning/theme": "3.0.1",
     "@commitlint/cli": "^11.0.0",

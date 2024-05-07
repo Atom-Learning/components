@@ -15,15 +15,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@atom-learning/icons@1.18.0":
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.18.0.tgz#33270799afff4a3b411fdccec948cff9c258075c"
-  integrity sha512-S3ws2gpLQLEzFeRjhouRU5SLcU31pc5HEElxSHpnswuFMG6qJIyTGLLJeyXlZgJFrOpp7ujGNgdqTLJA1wF/BA==
-
-"@atom-learning/icons@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.16.0.tgz#f59d465c6c1a82fdd94901812d7cc75f28a6e649"
-  integrity sha512-6MY4tpd2mdJwW59stIlVXnXCb3iStqYH+/dR70RE6NEMkfzTU78ejYKpqCuFFYzONH6GgJv/rsRQsb3oKMdkUg==
+"@atom-learning/icons@1.19.0", "@atom-learning/icons@^1.19.0":
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.19.0.tgz#fa434440ee35a359b9a1932fdb407a053be7192b"
+  integrity sha512-cHk69eG+aNSkCNwfoelP2YoK912xI2j96/bhKr+his0IgkTC4szokPbjQE5fX5LAb93jP3EW+QCgiVpJrZXyQQ==
 
 "@atom-learning/jest-stitches@1.0.10":
   version "1.0.10"
