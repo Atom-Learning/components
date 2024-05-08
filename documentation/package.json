@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@atom-learning/components": "0.0.0-semantically-released",
-    "@atom-learning/icons": "^1.19.0",
+    "@atom-learning/icons": "^1.20.0",
     "@atom-learning/theme": "3.0.1",
     "@lukeed/uuid": "^2.0.0",
     "lodash.kebabcase": "^4.1.1",
