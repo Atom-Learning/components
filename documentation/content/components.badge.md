@@ -37,7 +37,7 @@ tabs:
       The following semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
 
 
-      The following non-semantic themes are available `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
+      The following non-semantic themes are available `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`, `lapis`, `maroon`, `marsh`, `primary`.
 
 
       If no theme is passed in. The badge theme defaults to "info".
@@ -64,6 +64,10 @@ tabs:
           <Badge theme="orange">Orange</Badge>
           <Badge theme="yellow">Yellow</Badge>
           <Badge theme="lime">Lime</Badge>
+          <Badge theme="lapis">Lapis</Badge>
+          <Badge theme="maroon">Maroon</Badge>
+          <Badge theme="marsh">Marsh</Badge>
+          <Badge theme="primary">Primary</Badge>
         </Flex>
         <Badge emphasis="bold">Defaults to: "info"</Badge>
 
@@ -86,6 +90,10 @@ tabs:
           <Badge theme="orange" emphasis="bold">Orange</Badge>
           <Badge theme="yellow" emphasis="bold">Yellow</Badge>
           <Badge theme="lime" emphasis="bold">Lime</Badge>
+          <Badge theme="lapis" emphasis="bold">Lapis</Badge>
+          <Badge theme="maroon" emphasis="bold">Maroon</Badge>
+          <Badge theme="marsh" emphasis="bold">Marsh</Badge>
+          <Badge theme="primary" emphasis="bold">Primary</Badge>
         </Flex>
       </Flex>`} language={"tsx"} />
 

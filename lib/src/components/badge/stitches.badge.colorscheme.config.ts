@@ -152,6 +152,42 @@ const lime = createTheme({
   }
 })
 
+const lapis = createTheme({
+  colors: {
+    textSubtle: '$lapis1000',
+    backgroundSubtle: '$lapis200',
+    textBold: '#fff',
+    backgroundBold: '$lapis700'
+  }
+})
+
+const maroon = createTheme({
+  colors: {
+    textSubtle: '$maroon1000',
+    backgroundSubtle: '$maroon200',
+    textBold: '#fff',
+    backgroundBold: '$maroon800'
+  }
+})
+
+const marsh = createTheme({
+  colors: {
+    textSubtle: '$marsh1000',
+    backgroundSubtle: '$marsh200',
+    textBold: '#fff',
+    backgroundBold: '$marsh800'
+  }
+})
+
+const primary = createTheme({
+  colors: {
+    textSubtle: '$primary1000',
+    backgroundSubtle: '$primary200',
+    textBold: '#fff',
+    backgroundBold: '$primary800'
+  }
+})
+
 export const colorSchemes = {
   info,
   neutral,
@@ -168,5 +204,9 @@ export const colorSchemes = {
   teal,
   orange,
   yellow,
-  lime
+  lime,
+  lapis,
+  maroon,
+  marsh,
+  primary
 }
