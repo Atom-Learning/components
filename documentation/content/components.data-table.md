@@ -289,7 +289,7 @@ tabs:
       ### Pagination
 
 
-      `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data.
+      `DataTable.Pagination` can be passed as a child to `DataTable` to render the pagination UI and configure the parent `DataTable` to paginate its data. The UI will be visible only if there is more than one page in the `DataTable`
 
 
       ### Drag and drop

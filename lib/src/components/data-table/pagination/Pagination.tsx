@@ -47,7 +47,10 @@ export const Pagination = ({ colorScheme, ...props }: PaginationProps) => {
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
 
-  if (isEmpty) return null
+  // Show pagination only if total pages are more than 1
+  const showPagination = getPageCount() > 1
+
+  if (isEmpty || !showPagination) return null
 
   const recordsCountFrom =
     paginationState.pageIndex * paginationState.pageSize + 1
