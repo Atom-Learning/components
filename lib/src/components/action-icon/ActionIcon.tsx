@@ -2,7 +2,7 @@ import type { VariantProps } from '@stitches/react'
 import invariant from 'invariant'
 import * as React from 'react'
 
-import { ComponentsContext } from '~/context'
+import { useProvidedComponents } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
@@ -155,7 +155,7 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
       },
       ref
     ) => {
-      const { Link: RouterLink } = React.useContext(ComponentsContext)
+      const { RouterLink } = useProvidedComponents(href)
 
       const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 
@@ -163,7 +163,7 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
 
       const optionalLinkProps = href
         ? ({
-            as: isExternalUrl(href) ? 'a' : RouterLink,
+            as: RouterLink,
             href: disabled ? null : href,
             onClick: undefined,
             'aria-disabled': !!disabled

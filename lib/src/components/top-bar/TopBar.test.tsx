@@ -51,7 +51,7 @@ describe('TopBar component', () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = render(
-      <ComponentsProvider value={{ Link: (props) => <li {...props} /> }}>
+      <ComponentsProvider Link={(props) => <li {...props} />}>
         <Tooltip.Provider>
           <TopBar>
             <TopBar.Brand href="/somewhere">

@@ -68,7 +68,7 @@ describe(`Link component`, () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = render(
-      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+      <ComponentsProvider Link={(props) => <p {...props} />}>
         <Link href="https://google.com/">EXTERNAL</Link>
         <Link href="/hello">INTERNAL</Link>
       </ComponentsProvider>

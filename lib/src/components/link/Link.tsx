@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import { ComponentsContext } from '~/context'
+import { useProvidedComponents } from '~/context'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
-import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { StyledHeading } from '../heading/Heading'
 import { StyledLi } from '../list/List'
@@ -54,11 +54,11 @@ type LinkProps = Override<
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
   React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
-    const { Link: RouterLink } = React.useContext(ComponentsContext)
+    const { RouterLink } = useProvidedComponents(href)
 
     return (
       <StyledLink
-        as={as || (href ? (isExternalUrl(href) ? 'a' : RouterLink) : 'button')}
+        as={as || (href ? RouterLink : 'button')}
         noCapsize={!href ? true : undefined}
         href={href}
         {...(disabled && { disabled: true })}

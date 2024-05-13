@@ -66,7 +66,7 @@ describe('SideBar component', () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = render(
-      <ComponentsProvider value={{ Link: (props) => <li {...props} /> }}>
+      <ComponentsProvider Link={(props) => <li {...props} />}>
         <SideBar>
           <SideBar.Header>
             <SideBar.Brand href="/somewhere">

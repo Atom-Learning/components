@@ -95,7 +95,7 @@ describe('ActionIcon component', () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = customRender(
-      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+      <ComponentsProvider Link={(props) => <p {...props} />}>
         <ActionIcon label="Mark as complete" href="/somewhere">
           <Icon is={() => <svg />} />
         </ActionIcon>

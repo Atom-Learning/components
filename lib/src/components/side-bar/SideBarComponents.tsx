@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { ComponentsContext } from '~/context'
+import { useProvidedComponents } from '~/context'
 import { styled } from '~/stitches'
 
 import { Image } from '../image'
@@ -36,9 +36,12 @@ const StyledSideBarBrand = styled('a', {
     textDecoration: 'none'
   }
 })
-export const SideBarBrand = (props) => {
-  const { Link: RouterLink } = React.useContext(ComponentsContext)
-  return <StyledSideBarBrand as={RouterLink} {...props} />
+export const SideBarBrand = ({
+  href,
+  ...props
+}: React.ComponentProps<typeof StyledSideBarBrand>) => {
+  const { RouterLink } = useProvidedComponents(href)
+  return <StyledSideBarBrand as={RouterLink} href={href} {...props} />
 }
 
 export const SideBarBrandLogo = Image

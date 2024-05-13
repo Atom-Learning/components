@@ -73,7 +73,7 @@ describe('NavigationMenuVertical', () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = render(
-      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+      <ComponentsProvider Link={(props) => <p {...props} />}>
         <NavigationMenuVerticalImplementation />
       </ComponentsProvider>
     )

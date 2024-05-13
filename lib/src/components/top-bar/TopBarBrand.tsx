@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ComponentsContext, ComponentsProvider } from '~/context'
+import { useProvidedComponents } from '~/context'
 import { CSS, styled } from '~/stitches'
 
 import { Image } from '../image'
@@ -43,7 +43,10 @@ const StyledTopBarBrand = styled('a', {
   '&:hover, &:focus': { textDecoration: 'none' }
 })
 
-export const TopBarBrand = (props) => {
-  const { Link: RouterLink } = React.useContext(ComponentsContext)
-  return <StyledTopBarBrand as={RouterLink} {...props} />
+export const TopBarBrand = ({
+  href,
+  ...props
+}: React.ComponentProps<typeof StyledTopBarBrand>) => {
+  const { RouterLink } = useProvidedComponents(href)
+  return <StyledTopBarBrand as={RouterLink} href={href} {...props} />
 }

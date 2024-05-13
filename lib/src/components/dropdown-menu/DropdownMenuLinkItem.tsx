@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { ComponentsContext } from '~/context'
+import { useProvidedComponents } from '~/context'
 import { styled } from '~/stitches'
-import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { DropdownMenuItem } from './DropdownMenuItem'
 
@@ -15,12 +15,12 @@ export const DropdownMenuLinkItem = ({
   href,
   ...props
 }: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => {
-  const { Link: RouterLink } = React.useContext(ComponentsContext)
+  const { RouterLink } = useProvidedComponents(href)
 
   return (
     <DropdownMenuItem {...props} asChild>
       <StyledLink
-        as={isExternalUrl(href) ? 'a' : RouterLink}
+        as={RouterLink}
         href={href}
         role="menuitem"
         {...getExternalAnchorProps(href)}

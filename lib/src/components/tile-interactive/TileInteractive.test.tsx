@@ -24,7 +24,7 @@ describe(`TileInteractive component`, () => {
 
   it('works with ComponentsProvider', async () => {
     const { container } = render(
-      <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+      <ComponentsProvider Link={(props) => <p {...props} />}>
         <TileInteractiveImplementation href="/somewhere" />
       </ComponentsProvider>
     )

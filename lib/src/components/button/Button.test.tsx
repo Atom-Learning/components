@@ -199,7 +199,7 @@ describe(`Button component`, () => {
 
     it('works with ComponentsProvider', async () => {
       const { container } = render(
-        <ComponentsProvider value={{ Link: (props) => <p {...props} /> }}>
+        <ComponentsProvider Link={(props) => <p {...props} />}>
           <Button href="https://google.com/">EXTERNAL</Button>
           <Button href="/hello">INTERNAL</Button>
         </ComponentsProvider>
