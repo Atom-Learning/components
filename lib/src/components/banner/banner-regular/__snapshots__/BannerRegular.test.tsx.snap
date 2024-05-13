@@ -3,7 +3,7 @@
 exports[`BannerRegular component renders 1`] = `
 @media  {
   :root,
-  .t-gRpxxC {
+  .t-bgDNai {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -150,6 +150,42 @@ exports[`BannerRegular component renders 1`] = `
     --colors-lime1000: hsl(75, 100%, 15%);
     --colors-lime1100: hsl(75, 100%, 9%);
     --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-lapis100: hsl(214, 100%, 97%);
+    --colors-lapis200: hsl(215, 100%, 95%);
+    --colors-lapis300: hsl(202, 100%, 87%);
+    --colors-lapis400: hsl(212, 100%, 83%);
+    --colors-lapis500: hsl(220, 95%, 76%);
+    --colors-lapis600: hsl(230, 84%, 70%);
+    --colors-lapis700: hsl(240, 79%, 66%);
+    --colors-lapis800: hsl(240, 59%, 52%);
+    --colors-lapis900: hsl(240, 58%, 38%);
+    --colors-lapis1000: hsl(240, 63%, 29%);
+    --colors-lapis1100: hsl(240, 87%, 18%);
+    --colors-lapis1200: hsl(240, 97%, 12%);
+    --colors-maroon100: hsl(15, 100%, 98%);
+    --colors-maroon200: hsl(16, 100%, 93%);
+    --colors-maroon300: hsl(16, 100%, 87%);
+    --colors-maroon400: hsl(16, 100%, 80%);
+    --colors-maroon500: hsl(7, 89%, 70%);
+    --colors-maroon600: hsl(7, 78%, 60%);
+    --colors-maroon700: hsl(7, 67%, 44%);
+    --colors-maroon800: hsl(7, 95%, 32%);
+    --colors-maroon900: hsl(349, 89%, 28%);
+    --colors-maroon1000: hsl(346, 77%, 26%);
+    --colors-maroon1100: hsl(335, 73%, 20%);
+    --colors-maroon1200: hsl(335, 81%, 12%);
+    --colors-marsh100: hsl(147, 50%, 96%);
+    --colors-marsh200: hsl(147, 27%, 88%);
+    --colors-marsh300: hsl(147, 26%, 82%);
+    --colors-marsh400: hsl(147, 25%, 73%);
+    --colors-marsh500: hsl(147, 22%, 60%);
+    --colors-marsh600: hsl(147, 15%, 48%);
+    --colors-marsh700: hsl(147, 15%, 37%);
+    --colors-marsh800: hsl(147, 23%, 29%);
+    --colors-marsh900: hsl(147, 25%, 21%);
+    --colors-marsh1000: hsl(147, 17%, 18%);
+    --colors-marsh1100: hsl(147, 24%, 13%);
+    --colors-marsh1200: hsl(147, 14%, 7%);
     --colors-tonal50: hsl(0, 0%, 96%);
     --colors-tonal100: hsl(0, 0%, 92%);
     --colors-tonal200: hsl(0, 0%, 62%);
@@ -617,7 +653,7 @@ exports[`BannerRegular component renders 1`] = `
 exports[`BannerRegular component renders dismissible variant 1`] = `
 @media  {
   :root,
-  .t-gRpxxC {
+  .t-bgDNai {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -764,6 +800,42 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     --colors-lime1000: hsl(75, 100%, 15%);
     --colors-lime1100: hsl(75, 100%, 9%);
     --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-lapis100: hsl(214, 100%, 97%);
+    --colors-lapis200: hsl(215, 100%, 95%);
+    --colors-lapis300: hsl(202, 100%, 87%);
+    --colors-lapis400: hsl(212, 100%, 83%);
+    --colors-lapis500: hsl(220, 95%, 76%);
+    --colors-lapis600: hsl(230, 84%, 70%);
+    --colors-lapis700: hsl(240, 79%, 66%);
+    --colors-lapis800: hsl(240, 59%, 52%);
+    --colors-lapis900: hsl(240, 58%, 38%);
+    --colors-lapis1000: hsl(240, 63%, 29%);
+    --colors-lapis1100: hsl(240, 87%, 18%);
+    --colors-lapis1200: hsl(240, 97%, 12%);
+    --colors-maroon100: hsl(15, 100%, 98%);
+    --colors-maroon200: hsl(16, 100%, 93%);
+    --colors-maroon300: hsl(16, 100%, 87%);
+    --colors-maroon400: hsl(16, 100%, 80%);
+    --colors-maroon500: hsl(7, 89%, 70%);
+    --colors-maroon600: hsl(7, 78%, 60%);
+    --colors-maroon700: hsl(7, 67%, 44%);
+    --colors-maroon800: hsl(7, 95%, 32%);
+    --colors-maroon900: hsl(349, 89%, 28%);
+    --colors-maroon1000: hsl(346, 77%, 26%);
+    --colors-maroon1100: hsl(335, 73%, 20%);
+    --colors-maroon1200: hsl(335, 81%, 12%);
+    --colors-marsh100: hsl(147, 50%, 96%);
+    --colors-marsh200: hsl(147, 27%, 88%);
+    --colors-marsh300: hsl(147, 26%, 82%);
+    --colors-marsh400: hsl(147, 25%, 73%);
+    --colors-marsh500: hsl(147, 22%, 60%);
+    --colors-marsh600: hsl(147, 15%, 48%);
+    --colors-marsh700: hsl(147, 15%, 37%);
+    --colors-marsh800: hsl(147, 23%, 29%);
+    --colors-marsh900: hsl(147, 25%, 21%);
+    --colors-marsh1000: hsl(147, 17%, 18%);
+    --colors-marsh1100: hsl(147, 24%, 13%);
+    --colors-marsh1200: hsl(147, 14%, 7%);
     --colors-tonal50: hsl(0, 0%, 96%);
     --colors-tonal100: hsl(0, 0%, 92%);
     --colors-tonal200: hsl(0, 0%, 62%);

@@ -15,10 +15,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@atom-learning/icons@1.19.0", "@atom-learning/icons@^1.19.0":
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.19.0.tgz#fa434440ee35a359b9a1932fdb407a053be7192b"
-  integrity sha512-cHk69eG+aNSkCNwfoelP2YoK912xI2j96/bhKr+his0IgkTC4szokPbjQE5fX5LAb93jP3EW+QCgiVpJrZXyQQ==
+"@atom-learning/icons@1.20.0", "@atom-learning/icons@^1.20.0":
+  version "1.20.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/icons/-/icons-1.20.0.tgz#2638bbe32a1ba4df4fa1dd5bf4b2a114dffed520"
+  integrity sha512-SoPCIBTbzLkzlr3F9qthoA0znI1SytyG61dCETPyNOS9lLqJ5JYnGnKKO2lX2M1XREoMu6U+eZdtqWztQurbYA==
 
 "@atom-learning/jest-stitches@1.0.10":
   version "1.0.10"
@@ -28,10 +28,10 @@
     chalk "^4.1.0"
     css "^3.0.0"
 
-"@atom-learning/theme@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-3.0.1.tgz#91a3eef10c2888c0b17c60b122528dbee83b7743"
-  integrity sha512-it7K38RAYvdKG7sGXxa8hqFLXtwYXMg5RIp6eLSEfmdDUeYp0JTB4VuTJ0hL8150fXMkM+7+rjU2s03K6h8WoA==
+"@atom-learning/theme@3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@atom-learning/theme/-/theme-3.1.0.tgz#32a00575833715b142ea2543a9ebc24fb86ba6cc"
+  integrity sha512-TmhGgslOs7j92CYYznzzUS1Qv4+gb0jVyLNIyUn7RWC1tlgf7+66ka1VNWhKmD6W4kiAG0ejZuKdWiOe01eZ4Q==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
