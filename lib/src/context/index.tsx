@@ -12,7 +12,7 @@ export const ComponentsProvider = ({ children, Link }) => (
   </ComponentsContext.Provider>
 )
 
-export const useProvidedComponents = (href?: string) => {
+export const useProvidedComponents = ({ href }: { href?: string }) => {
   const { Link: RouterLink } = React.useContext(ComponentsContext)
 
   return {

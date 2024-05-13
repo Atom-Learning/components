@@ -50,7 +50,7 @@ type TTileInteractiveProps = React.ComponentProps<
 
 export const TileInteractive: React.ForwardRefExoticComponent<TTileInteractiveProps> =
   React.forwardRef(({ onClick, href, type = 'button', ...rest }, ref) => {
-    const { RouterLink } = useProvidedComponents(href)
+    const { RouterLink } = useProvidedComponents({ href })
 
     const elementSpecificProps = href
       ? {

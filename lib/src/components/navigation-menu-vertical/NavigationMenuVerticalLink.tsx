@@ -27,7 +27,7 @@ export const NavigationMenuVerticalLink = ({
   children,
   ...rest
 }: NavigationMenuVerticalItemProps) => {
-  const { RouterLink } = useProvidedComponents(href)
+  const { RouterLink } = useProvidedComponents({ href })
 
   const Component = as || (href ? RouterLink : 'button')
   const componentProps = as

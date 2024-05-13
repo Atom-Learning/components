@@ -47,6 +47,6 @@ export const TopBarBrand = ({
   href,
   ...props
 }: React.ComponentProps<typeof StyledTopBarBrand>) => {
-  const { RouterLink } = useProvidedComponents(href)
+  const { RouterLink } = useProvidedComponents({ href })
   return <StyledTopBarBrand as={RouterLink} href={href} {...props} />
 }

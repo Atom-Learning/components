@@ -54,7 +54,7 @@ type LinkProps = Override<
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
   React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
-    const { RouterLink } = useProvidedComponents(href)
+    const { RouterLink } = useProvidedComponents({ href })
 
     return (
       <StyledLink

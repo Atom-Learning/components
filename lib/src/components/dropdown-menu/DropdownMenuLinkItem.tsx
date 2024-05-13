@@ -15,7 +15,7 @@ export const DropdownMenuLinkItem = ({
   href,
   ...props
 }: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => {
-  const { RouterLink } = useProvidedComponents(href)
+  const { RouterLink } = useProvidedComponents({ href })
 
   return (
     <DropdownMenuItem {...props} asChild>

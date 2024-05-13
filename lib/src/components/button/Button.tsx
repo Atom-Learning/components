@@ -189,7 +189,7 @@ type ButtonProps = Override<
 export const Button: React.ForwardRefExoticComponent<ButtonProps> =
   React.forwardRef(
     ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
-      const { RouterLink } = useProvidedComponents(href)
+      const { RouterLink } = useProvidedComponents({ href })
       const component = as || (href ? RouterLink : undefined)
 
       return (

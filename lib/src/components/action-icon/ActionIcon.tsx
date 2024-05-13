@@ -8,7 +8,7 @@ import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
 import type { TOptionalTooltipWrapperProps } from '~/utilities/optional-tooltip-wrapper'
 import { OptionalTooltipWrapper } from '~/utilities/optional-tooltip-wrapper'
-import { getExternalAnchorProps, isExternalUrl } from '~/utilities/uri'
+import { getExternalAnchorProps } from '~/utilities/uri'
 
 import { Icon } from '../icon/Icon'
 import { ActionIconSizeMap } from './ActionIcon.constants'
@@ -155,7 +155,7 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
       },
       ref
     ) => {
-      const { RouterLink } = useProvidedComponents(href)
+      const { RouterLink } = useProvidedComponents({ href })
 
       const INVALID_CHILDREN_MESSAGE = `A single ${Icon.displayName} component is permitted as a child of ${ActionIcon.displayName}`
 

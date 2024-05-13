@@ -40,7 +40,7 @@ export const SideBarBrand = ({
   href,
   ...props
 }: React.ComponentProps<typeof StyledSideBarBrand>) => {
-  const { RouterLink } = useProvidedComponents(href)
+  const { RouterLink } = useProvidedComponents({ href })
   return <StyledSideBarBrand as={RouterLink} href={href} {...props} />
 }
 
