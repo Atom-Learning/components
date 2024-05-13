@@ -278,6 +278,24 @@ describe('DataTable.Pagination component', () => {
     expect(nextPageButton).not.toBeInTheDocument()
   })
 
+  it("doesn't render if there is only one page in the table", () => {
+    render(
+      <Wrapper>
+        <DataTable
+          columns={columns}
+          data={data.slice(0, 5)}
+          initialState={{ pagination: { pageIndex: 0, pageSize: 5 } }}
+        >
+          <DataTable.Table sortable />
+          <DataTable.Pagination />
+        </DataTable>
+      </Wrapper>
+    )
+
+    const nextPageButton = screen.queryByLabelText('Next page')
+    expect(nextPageButton).not.toBeInTheDocument()
+  })
+
   it('Navigates to the correct page', async () => {
     render(
       <Wrapper>
