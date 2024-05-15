@@ -22,6 +22,10 @@ export const Day = styled('button', {
     outline: '2px solid $primary800',
     outlineOffset: '2px'
   },
+  '&[disabled]': {
+    opacity: '0.3',
+    cursor: 'default'
+  },
   variants: {
     isSelected: {
       true: {
