@@ -312,7 +312,7 @@ exports[`DateInput component renders lg size 1`] = `
     display: none;
   }
 
-  .c-dOwGHN {
+  .c-nNuCY {
     background: transparent;
     border: none;
     border-radius: var(--radii-round);
@@ -326,18 +326,23 @@ exports[`DateInput component renders lg size 1`] = `
     transition: all 75ms;
   }
 
-  .c-dOwGHN:hover {
+  .c-nNuCY:hover {
     background: var(--colors-tonal100);
   }
 
-  .c-dOwGHN:active {
+  .c-nNuCY:active {
     color: white;
     background: var(--colors-primary800);
   }
 
-  .c-dOwGHN:focus {
+  .c-nNuCY:focus {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
+  }
+
+  .c-nNuCY[disabled] {
+    opacity: 0.3;
+    cursor: default;
   }
 
   .c-fARQYB {
@@ -450,11 +455,11 @@ exports[`DateInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-dOwGHN-huXVXM-isOutsideMonth-true {
+  .c-nNuCY-huXVXM-isOutsideMonth-true {
     color: var(--colors-tonal200);
   }
 
-  .c-dOwGHN-hztIub-isToday-true {
+  .c-nNuCY-hztIub-isToday-true {
     background: var(--colors-tonal100);
   }
 
@@ -462,12 +467,12 @@ exports[`DateInput component renders lg size 1`] = `
     max-width: 400px;
   }
 
-  .c-dOwGHN-hewsLb-isSelected-true {
+  .c-nNuCY-hewsLb-isSelected-true {
     background: var(--colors-primary800);
     color: white;
   }
 
-  .c-dOwGHN-hewsLb-isSelected-true:hover {
+  .c-nNuCY-hewsLb-isSelected-true:hover {
     background: var(--colors-primary800);
   }
 
