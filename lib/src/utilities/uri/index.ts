@@ -1,7 +1,8 @@
 export const isExternalUrl = (url?: string) => {
   if (typeof window === 'undefined' || !url) return false
 
-  const isAbsoluteUrl = /^https?:\/\//.test(url)
+  const isAbsoluteUrl =
+    /^https?:\/\//.test(url) || /^tel?:/.test(url) || /^mailto?:/.test(url)
   return isAbsoluteUrl && new URL(url).origin !== window.location.origin
 }
 
