@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useProvidedComponents } from '~/context'
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
@@ -15,7 +15,7 @@ export const DropdownMenuLinkItem = ({
   href,
   ...props
 }: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => {
-  const { RouterLink } = useProvidedComponents({ href })
+  const { RouterLink } = useRouter({ href })
 
   return (
     <DropdownMenuItem {...props} asChild>

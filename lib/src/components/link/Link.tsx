@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { useProvidedComponents } from '~/context'
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
@@ -54,7 +54,7 @@ type LinkProps = Override<
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
   React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
-    const { RouterLink } = useProvidedComponents({ href })
+    const { RouterLink } = useRouter({ href })
 
     return (
       <StyledLink

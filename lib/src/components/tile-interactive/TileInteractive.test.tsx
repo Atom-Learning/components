@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { TileInteractive } from '.'
 
 const TileInteractiveImplementation = (props) => (
@@ -22,11 +22,11 @@ describe(`TileInteractive component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <p {...props} />}>
+      <RouterProvider Link={(props) => <p {...props} />}>
         <TileInteractiveImplementation href="/somewhere" />
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     expect(container.querySelector('p')).toHaveTextContent('A')

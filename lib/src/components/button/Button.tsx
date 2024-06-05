@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { StyledIcon } from '~/components/icon'
 import { Loader } from '~/components/loader'
-import { useProvidedComponents } from '~/context'
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
@@ -189,7 +189,7 @@ type ButtonProps = Override<
 export const Button: React.ForwardRefExoticComponent<ButtonProps> =
   React.forwardRef(
     ({ children, as, href, isLoading = false, onClick, ...rest }, ref) => {
-      const { RouterLink } = useProvidedComponents({ href })
+      const { RouterLink } = useRouter({ href })
       const component = as || (href ? RouterLink : undefined)
 
       return (

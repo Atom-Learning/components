@@ -5,7 +5,7 @@ import * as React from 'react'
 
 import { Icon } from '../icon'
 import { Button } from '.'
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 
 describe(`Button component`, () => {
   const props = { onClick: jest.fn() }
@@ -197,12 +197,12 @@ describe(`Button component`, () => {
       expect(handleClick).toHaveBeenCalledTimes(0)
     })
 
-    it('works with ComponentsProvider', async () => {
+    it('works with RouterProvider', async () => {
       const { container } = render(
-        <ComponentsProvider Link={(props) => <p {...props} />}>
+        <RouterProvider Link={(props) => <p {...props} />}>
           <Button href="https://google.com/">EXTERNAL</Button>
           <Button href="/hello">INTERNAL</Button>
-        </ComponentsProvider>
+        </RouterProvider>
       )
 
       expect(container.querySelector('p')).toBeInTheDocument()

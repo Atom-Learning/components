@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { SideBar, useSidebarState } from '.'
 
 const ExampleSideBarContent = () => {
@@ -64,9 +64,9 @@ describe('SideBar component', () => {
     expect(screen.getByText('isNotExpanded'))
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <li {...props} />}>
+      <RouterProvider Link={(props) => <li {...props} />}>
         <SideBar>
           <SideBar.Header>
             <SideBar.Brand href="/somewhere">
@@ -75,7 +75,7 @@ describe('SideBar component', () => {
             </SideBar.Brand>
           </SideBar.Header>
         </SideBar>
-      </ComponentsProvider>
+      </RouterProvider>
     )
     expect(container.querySelector('li')).toHaveTextContent('Hello')
   })

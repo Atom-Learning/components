@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useProvidedComponents } from '~/context'
+import { useRouter } from '~/context/router'
 import { CSS, styled } from '~/stitches'
 
 import { Image } from '../image'
@@ -47,6 +47,6 @@ export const TopBarBrand = ({
   href,
   ...props
 }: React.ComponentProps<typeof StyledTopBarBrand>) => {
-  const { RouterLink } = useProvidedComponents({ href })
+  const { RouterLink } = useRouter({ href })
   return <StyledTopBarBrand as={RouterLink} href={href} {...props} />
 }

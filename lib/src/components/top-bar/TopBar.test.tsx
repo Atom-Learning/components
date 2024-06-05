@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { Tooltip } from '../tooltip'
 import { TopBar } from '.'
 
@@ -49,9 +49,9 @@ describe('TopBar component', () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <li {...props} />}>
+      <RouterProvider Link={(props) => <li {...props} />}>
         <Tooltip.Provider>
           <TopBar>
             <TopBar.Brand href="/somewhere">
@@ -59,7 +59,7 @@ describe('TopBar component', () => {
             </TopBar.Brand>
           </TopBar>
         </Tooltip.Provider>
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     expect(container.querySelector('li')).toHaveTextContent('Admin Panel')

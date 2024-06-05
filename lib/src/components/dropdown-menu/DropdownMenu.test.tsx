@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { DropdownMenu } from '.'
 
 const ExampleDropdownMenu = (props) => (
@@ -50,11 +50,11 @@ describe('DropdownMenu component', () => {
     )
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <p {...props} />}>
+      <RouterProvider Link={(props) => <p {...props} />}>
         <ExampleDropdownMenu />
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     const trigger = screen.getByText('TRIGGER')

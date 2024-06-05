@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { Heading } from '../heading/Heading'
 import { Text } from '../text/Text'
 import { Link } from './'
@@ -66,12 +66,12 @@ describe(`Link component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <p {...props} />}>
+      <RouterProvider Link={(props) => <p {...props} />}>
         <Link href="https://google.com/">EXTERNAL</Link>
         <Link href="/hello">INTERNAL</Link>
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     expect(container.querySelector('p')).toBeInTheDocument()

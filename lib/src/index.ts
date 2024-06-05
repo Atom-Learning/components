@@ -1,5 +1,5 @@
 export * from './components'
-export { ComponentsProvider } from './context'
+export { RouterProvider } from './context'
 
 export * from './stitches'
 

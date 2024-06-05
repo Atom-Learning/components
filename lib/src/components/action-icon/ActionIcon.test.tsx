@@ -3,7 +3,7 @@ import { axe } from 'jest-axe'
 import * as React from 'react'
 
 import { expectToThrow } from '../../../test/custom-assertions/expect-to-throw'
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { Icon } from '../icon/Icon'
 import { Tooltip } from '../tooltip'
 import { ActionIcon } from '.'
@@ -93,13 +93,13 @@ describe('ActionIcon component', () => {
     expect(screen.queryByRole('link')).toHaveAttribute('rel')
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = customRender(
-      <ComponentsProvider Link={(props) => <p {...props} />}>
+      <RouterProvider Link={(props) => <p {...props} />}>
         <ActionIcon label="Mark as complete" href="/somewhere">
           <Icon is={() => <svg />} />
         </ActionIcon>
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     expect(screen.queryByRole('link')).not.toBeInTheDocument()

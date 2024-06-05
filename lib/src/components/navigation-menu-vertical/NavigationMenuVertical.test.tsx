@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 
-import { ComponentsProvider } from '../../context'
+import { RouterProvider } from '../../context/router'
 import { NavigationMenuVertical } from './NavigationMenuVertical'
 
 const NavigationMenuVerticalImplementation = ({
@@ -71,11 +71,11 @@ describe('NavigationMenuVertical', () => {
     expect(accordionContent).not.toBeVisible()
   })
 
-  it('works with ComponentsProvider', async () => {
+  it('works with RouterProvider', async () => {
     const { container } = render(
-      <ComponentsProvider Link={(props) => <p {...props} />}>
+      <RouterProvider Link={(props) => <p {...props} />}>
         <NavigationMenuVerticalImplementation />
-      </ComponentsProvider>
+      </RouterProvider>
     )
 
     expect(container.querySelector('p')).toHaveTextContent('Relative Link')
