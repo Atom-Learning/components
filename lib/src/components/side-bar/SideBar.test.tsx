@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { SideBar, useSidebarState } from '.'
 
 const ExampleSideBarContent = () => {
@@ -61,5 +62,21 @@ describe('SideBar component', () => {
     userEvent.tab()
     expect(link).not.toHaveFocus()
     expect(screen.getByText('isNotExpanded'))
+  })
+
+  it('works with RouterProvider', async () => {
+    const { container } = render(
+      <RouterProvider Link={(props) => <li {...props} />}>
+        <SideBar>
+          <SideBar.Header>
+            <SideBar.Brand href="/somewhere">
+              <SideBar.BrandLogo alt="Logo" src="" />
+              <SideBar.BrandName>Hello</SideBar.BrandName>
+            </SideBar.Brand>
+          </SideBar.Header>
+        </SideBar>
+      </RouterProvider>
+    )
+    expect(container.querySelector('li')).toHaveTextContent('Hello')
   })
 })

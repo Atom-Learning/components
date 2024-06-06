@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { Heading } from '../heading/Heading'
 import { Text } from '../text/Text'
 import { Link } from './'
@@ -63,5 +64,17 @@ describe(`Link component`, () => {
     )
 
     expect(container).toMatchSnapshot()
+  })
+
+  it('works with RouterProvider', async () => {
+    const { container } = render(
+      <RouterProvider Link={(props) => <p {...props} />}>
+        <Link href="https://google.com/">EXTERNAL</Link>
+        <Link href="/hello">INTERNAL</Link>
+      </RouterProvider>
+    )
+
+    expect(container.querySelector('p')).toBeInTheDocument()
+    expect(screen.getByRole('link')).toBeInTheDocument()
   })
 })

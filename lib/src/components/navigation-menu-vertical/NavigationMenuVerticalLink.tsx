@@ -1,6 +1,7 @@
 import { Link } from '@radix-ui/react-navigation-menu'
-import React from 'react'
+import * as React from 'react'
 
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { preventEvent } from '~/utilities/event'
 import { getExternalAnchorProps } from '~/utilities/uri'
@@ -26,7 +27,9 @@ export const NavigationMenuVerticalLink = ({
   children,
   ...rest
 }: NavigationMenuVerticalItemProps) => {
-  const Component = as || (href ? 'a' : 'button')
+  const { RouterLink } = useRouter({ href })
+
+  const Component = as || (href ? RouterLink : 'button')
   const componentProps = as
     ? {}
     : href

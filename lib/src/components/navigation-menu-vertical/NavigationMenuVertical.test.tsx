@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { NavigationMenuVertical } from './NavigationMenuVertical'
 
 const NavigationMenuVerticalImplementation = ({
@@ -68,5 +69,15 @@ describe('NavigationMenuVertical', () => {
     expect(mockOnOpenChange).toBeCalledWith(false)
     expect(accordionTrigger).toHaveAttribute('data-state', 'closed')
     expect(accordionContent).not.toBeVisible()
+  })
+
+  it('works with RouterProvider', async () => {
+    const { container } = render(
+      <RouterProvider Link={(props) => <p {...props} />}>
+        <NavigationMenuVerticalImplementation />
+      </RouterProvider>
+    )
+
+    expect(container.querySelector('p')).toHaveTextContent('Relative Link')
   })
 })

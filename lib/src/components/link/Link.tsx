@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { NavigatorActions } from '~/types'
 import { disabledStyle, Override } from '~/utilities'
@@ -52,16 +53,20 @@ type LinkProps = Override<
 >
 
 export const Link: React.ForwardRefExoticComponent<LinkProps> =
-  React.forwardRef(({ as, disabled, href, ...rest }, ref) => (
-    <StyledLink
-      as={as || (!href ? 'button' : undefined)}
-      noCapsize={!href ? true : undefined}
-      href={href}
-      {...(disabled && { disabled: true })}
-      {...rest}
-      {...getExternalAnchorProps(href)}
-      ref={ref}
-    />
-  ))
+  React.forwardRef(({ as, disabled, href, ...rest }, ref) => {
+    const { RouterLink } = useRouter({ href })
+
+    return (
+      <StyledLink
+        as={as || (href ? RouterLink : 'button')}
+        noCapsize={!href ? true : undefined}
+        href={href}
+        {...(disabled && { disabled: true })}
+        {...rest}
+        {...getExternalAnchorProps(href)}
+        ref={ref}
+      />
+    )
+  })
 
 Link.displayName = 'Link'

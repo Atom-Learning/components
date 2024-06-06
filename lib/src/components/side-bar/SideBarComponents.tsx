@@ -1,3 +1,6 @@
+import * as React from 'react'
+
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 
 import { Image } from '../image'
@@ -23,7 +26,7 @@ export const SideBarFooter = styled('div', {
   width: '100%'
 })
 
-export const SideBarBrand = styled('a', {
+const StyledSideBarBrand = styled('a', {
   alignItems: 'flex-end',
   color: '$text',
   display: 'flex',
@@ -33,6 +36,13 @@ export const SideBarBrand = styled('a', {
     textDecoration: 'none'
   }
 })
+export const SideBarBrand = ({
+  href,
+  ...props
+}: React.ComponentProps<typeof StyledSideBarBrand>) => {
+  const { RouterLink } = useRouter({ href })
+  return <StyledSideBarBrand as={RouterLink} href={href} {...props} />
+}
 
 export const SideBarBrandLogo = Image
 

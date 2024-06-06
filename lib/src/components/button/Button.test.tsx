@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { Icon } from '../icon'
 import { Button } from '.'
 
@@ -194,6 +195,18 @@ describe(`Button component`, () => {
       fireEvent.click(screen.getByRole('button'))
 
       expect(handleClick).toHaveBeenCalledTimes(0)
+    })
+
+    it('works with RouterProvider', async () => {
+      const { container } = render(
+        <RouterProvider Link={(props) => <p {...props} />}>
+          <Button href="https://google.com/">EXTERNAL</Button>
+          <Button href="/hello">INTERNAL</Button>
+        </RouterProvider>
+      )
+
+      expect(container.querySelector('p')).toBeInTheDocument()
+      expect(screen.getByRole('link')).toBeInTheDocument()
     })
   })
 })

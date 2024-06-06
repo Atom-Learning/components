@@ -3,6 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { Tooltip } from '../tooltip'
 import { TopBar } from '.'
 
@@ -46,5 +47,21 @@ describe('TopBar component', () => {
     const { container } = render(<ExampleTopBar size="lg" />)
 
     expect(await axe(container)).toHaveNoViolations()
+  })
+
+  it('works with RouterProvider', async () => {
+    const { container } = render(
+      <RouterProvider Link={(props) => <li {...props} />}>
+        <Tooltip.Provider>
+          <TopBar>
+            <TopBar.Brand href="/somewhere">
+              <TopBar.BrandName>Admin Panel</TopBar.BrandName>
+            </TopBar.Brand>
+          </TopBar>
+        </Tooltip.Provider>
+      </RouterProvider>
+    )
+
+    expect(container.querySelector('li')).toHaveTextContent('Admin Panel')
   })
 })

@@ -3,6 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { DropdownMenu } from '.'
 
 const ExampleDropdownMenu = (props) => (
@@ -46,6 +47,27 @@ describe('DropdownMenu component', () => {
     userEvent.click(trigger)
     waitFor(async () =>
       expect(await screen.queryByText('Item 1')).toBeInTheDocument()
+    )
+  })
+
+  it('works with RouterProvider', async () => {
+    const { container } = render(
+      <RouterProvider Link={(props) => <p {...props} />}>
+        <ExampleDropdownMenu />
+      </RouterProvider>
+    )
+
+    const trigger = screen.getByText('TRIGGER')
+
+    expect(await trigger).toBeInTheDocument()
+
+    userEvent.click(trigger)
+
+    waitFor(async () =>
+      expect(container.querySelector('p')).toHaveTextContent('Log Out')
+    )
+    waitFor(async () =>
+      expect(container.querySelector('p')).toBeInTheDocument()
     )
   })
 })

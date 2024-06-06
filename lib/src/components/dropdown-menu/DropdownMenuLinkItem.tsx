@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { useRouter } from '~/context/router'
 import { styled } from '~/stitches'
 import { getExternalAnchorProps } from '~/utilities/uri'
 
@@ -13,10 +14,19 @@ export const DropdownMenuLinkItem = ({
   children,
   href,
   ...props
-}: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => (
-  <DropdownMenuItem {...props} asChild>
-    <StyledLink href={href} role="menuitem" {...getExternalAnchorProps(href)}>
-      {children}
-    </StyledLink>
-  </DropdownMenuItem>
-)
+}: React.ComponentProps<typeof DropdownMenuItem> & { href: string }) => {
+  const { RouterLink } = useRouter({ href })
+
+  return (
+    <DropdownMenuItem {...props} asChild>
+      <StyledLink
+        as={RouterLink}
+        href={href}
+        role="menuitem"
+        {...getExternalAnchorProps(href)}
+      >
+        {children}
+      </StyledLink>
+    </DropdownMenuItem>
+  )
+}
