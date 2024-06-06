@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { isExternalUrl } from '~/utilities/uri'
+import { isExternalUrl, isUriScheme } from '~/utilities/uri'
+
+const shouldUseRouter = (url) => !isExternalUrl(url) && !isUriScheme(url)
 
 const RouterContext = React.createContext({
   // eslint-disable-next-line jsx-a11y/anchor-has-content
@@ -14,6 +16,6 @@ export const useRouter = ({ href }: { href?: string }) => {
   const { Link: RouterLink } = React.useContext(RouterContext)
 
   return {
-    RouterLink: isExternalUrl(href) ? 'a' : RouterLink
+    RouterLink: shouldUseRouter(href) ? RouterLink : 'a'
   }
 }
