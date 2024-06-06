@@ -1,5 +1,5 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
+import React from 'react'
 
 import { Link } from '~/components/link/Link'
 
@@ -13,6 +13,7 @@ const TestComponent = ({ href }: { href: string }) => {
 describe('RouterProvider', () => {
   it('should provide a custom Link component', () => {
     const CustomLink = (props: any) => (
+      // eslint-disable-next-line jsx-a11y/anchor-has-content
       <a data-testid="custom-link" {...props} />
     )
     render(

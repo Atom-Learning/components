@@ -3,9 +3,9 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import * as React from 'react'
 
+import { RouterProvider } from '../../context/router'
 import { Icon } from '../icon'
 import { Button } from '.'
-import { RouterProvider } from '../../context/router'
 
 describe(`Button component`, () => {
   const props = { onClick: jest.fn() }

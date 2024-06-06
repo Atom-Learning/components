@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 import { isExternalUrl, isUriScheme } from '~/utilities/uri'
 
 const shouldUseRouter = (url) => !isExternalUrl(url) && !isUriScheme(url)
