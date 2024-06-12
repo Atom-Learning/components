@@ -21,6 +21,56 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<DropdownMenu>
+        <DropdownMenu.TypeaheadTrigger asChild>
+          <Button>Click me</Button>
+        </DropdownMenu.TypeaheadTrigger>
+        <DropdownMenu.ChipDismissibleGroup />
+        <DropdownMenu.Content sideOffset={16}>
+          <DropdownMenu.Group>
+            <DropdownMenu.Label>Item Group Header</DropdownMenu.Label>
+            <DropdownMenu.Item>My profile  <DropdownMenu.ItemShortcut>Cmd+C</DropdownMenu.ItemShortcut></DropdownMenu.Item>
+            <DropdownMenu.Item>Item 2</DropdownMenu.Item>
+          </DropdownMenu.Group>
+
+          <DropdownMenu.Group>
+            <DropdownMenu.Label>Link Item Group Header</DropdownMenu.Label>
+            <DropdownMenu.LinkItem href="/logout">My profile  <DropdownMenu.ItemShortcut>Cmd+C</DropdownMenu.ItemShortcut></DropdownMenu.Item>
+            <DropdownMenu.LinkItem href="/logout">Item 2</DropdownMenu.Item>
+          </DropdownMenu.Group>
+
+          <DropdownMenu.Separator />
+
+          <DropdownMenu.Group>
+            <DropdownMenu.Label>Checkbox Group Header</DropdownMenu.Label>
+            <DropdownMenu.CheckboxItem name="bob" value="1">Option 1 <DropdownMenu.ItemShortcut>Cmd+C</DropdownMenu.ItemShortcut></DropdownMenu.CheckboxItem>
+            <DropdownMenu.CheckboxItem name="bob" value="2">Option 2</DropdownMenu.CheckboxItem>
+          </DropdownMenu.Group>
+
+          <DropdownMenu.Separator />
+
+          <DropdownMenu.Group>
+            <DropdownMenu.Label>CheckboxCheckbox Group Header</DropdownMenu.Label>
+            <DropdownMenu.CheckboxCheckboxItem name="alice" value="1a">Option 1 <DropdownMenu.ItemShortcut>Cmd+C</DropdownMenu.ItemShortcut></DropdownMenu.CheckboxCheckboxItem>
+            <DropdownMenu.CheckboxCheckboxItem name="alice" value="2a">Option 2</DropdownMenu.CheckboxCheckboxItem>
+          </DropdownMenu.Group>
+
+          <DropdownMenu.Separator />
+
+          <DropdownMenu.Group>
+            <DropdownMenu.Label>Radio Group Header</DropdownMenu.Label>
+            <DropdownMenu.RadioGroup name="charlie">
+              <DropdownMenu.RadioItem value="1">RadioItem 1</DropdownMenu.RadioItem>
+              <DropdownMenu.RadioItem value="2">RadioItem 2</DropdownMenu.RadioItem>
+            </DropdownMenu.RadioGroup>
+          </DropdownMenu.Group>
+
+          <DropdownMenu.Separator />
+
+          <DropdownMenu.ButtonItem>Log Out</DropdownMenu.ButtonItem>
+        </DropdownMenu.Content>
+      </DropdownMenu>`} language={"tsx"} />
+
+      <CodeBlock live={true} preview={true} code={`<DropdownMenu>
         <DropdownMenu.Trigger asChild>
           <Button>Click me</Button>
         </DropdownMenu.Trigger>
