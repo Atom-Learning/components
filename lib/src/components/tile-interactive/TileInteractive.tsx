@@ -43,20 +43,21 @@ const StyledTileInteractive = styled.withConfig({
 
 type TTileInteractiveProps = React.ComponentProps<
   typeof StyledTileInteractive
-> &
-  React.ButtonHTMLAttributes<HTMLButtonElement> &
+> & {
+  as?: React.ComponentType | React.ElementType
+} & React.ButtonHTMLAttributes<HTMLButtonElement> &
   NavigatorActions
 
 export const TileInteractive: React.ForwardRefExoticComponent<TTileInteractiveProps> =
-  React.forwardRef(({ onClick, href, type = 'button', ...rest }, ref) => {
+  React.forwardRef(({ onClick, href, type = 'button', as, ...rest }, ref) => {
     const isLink = !!href
     const elementSpecificProps = isLink
       ? {
-          as: 'a' as React.ElementType,
+          as: as || ('a' as React.ElementType),
           href,
           onClick: undefined
         }
-      : { as: 'button' as React.ElementType, type, onClick }
+      : { as: as || ('button' as React.ElementType), type, onClick }
 
     return (
       <StyledTileInteractive {...rest} {...elementSpecificProps} ref={ref} />
