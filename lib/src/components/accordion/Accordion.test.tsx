@@ -60,4 +60,19 @@ describe('Accordion component', () => {
     expect(await screen.findByText('CONTENT1')).toBeVisible()
     expect(await screen.queryByText('CONTENT2')).not.toBeInTheDocument()
   })
+
+  it('does not render the chevron icon when the trigger is used `asChild`', () => {
+    render(
+      <Accordion>
+        <Accordion.Item value="1">
+          <Accordion.Trigger asChild>
+            <button>Trigger</button>
+          </Accordion.Trigger>
+        </Accordion.Item>
+      </Accordion>
+    )
+
+    expect(screen.getByRole('button', { name: 'Trigger' })).toBeVisible()
+    expect(screen.queryByTestId('accordion-chevron')).not.toBeInTheDocument()
+  })
 })
