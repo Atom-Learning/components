@@ -61,7 +61,7 @@ describe('Accordion component', () => {
     expect(await screen.queryByText('CONTENT2')).not.toBeInTheDocument()
   })
 
-  it.only('does not render the chevron icon when the trigger is used `asChild`', () => {
+  it('does not render the chevron icon when the trigger is used `asChild`', () => {
     render(
       <Accordion>
         <Accordion.Item value="1">
