@@ -52,14 +52,19 @@ const StyledTrigger = styled(Trigger, {
 export const AccordionTrigger = ({
   children,
   colorScheme = {},
+  asChild,
   ...remainingProps
 }: React.ComponentProps<typeof StyledTrigger> & {
   colorScheme?: TcolorScheme
 }) => (
   <ColorScheme asChild accent="grey1" interactive="loContrast" {...colorScheme}>
-    <StyledTrigger {...remainingProps}>
-      {children}
-      <RotatingIcon is={ChevronDown} />
+    <StyledTrigger asChild={asChild} {...remainingProps}>
+      <>
+        {children}
+        {!asChild && (
+          <RotatingIcon is={ChevronDown} data-testid="accordion-chevron" />
+        )}
+      </>
     </StyledTrigger>
   </ColorScheme>
 )
