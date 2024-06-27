@@ -59,12 +59,14 @@ export const AccordionTrigger = ({
 }) => (
   <ColorScheme asChild accent="grey1" interactive="loContrast" {...colorScheme}>
     <StyledTrigger asChild={asChild} {...remainingProps}>
-      <>
-        {children}
-        {!asChild && (
+      {asChild ? (
+        children
+      ) : (
+        <>
+          {children}
           <RotatingIcon is={ChevronDown} data-testid="accordion-chevron" />
-        )}
-      </>
+        </>
+      )}
     </StyledTrigger>
   </ColorScheme>
 )
