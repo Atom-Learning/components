@@ -30,7 +30,7 @@ const Document = () => {
       <body>
         <Main />
         <Script
-          src={`https://polyfill.io/v3/polyfill.min.js?features=${encodeURIComponent(
+          src={`https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=${encodeURIComponent(
             polyfills.join(',')
           )}`}
         />
