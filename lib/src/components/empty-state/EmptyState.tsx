@@ -3,6 +3,7 @@ import * as React from 'react'
 import { Flex } from '~/components/flex'
 import { styled } from '~/stitches'
 
+import { EmptyStateProvider } from './EmptyState.context'
 import { EmptyStateBody } from './EmptyStateBody'
 import { EmptyStateImage } from './EmptyStateImage'
 import { EmptyStateTitle } from './EmptyStateTitle'
@@ -35,28 +36,12 @@ const EmptyStateContainer = styled(Flex, {
   }
 })
 
-type EmptyStateProps = React.ComponentProps<typeof EmptyStateContainer>
+export type EmptyStateProps = React.ComponentProps<typeof EmptyStateContainer>
 
-const EmptyStateComponent = ({
-  size = 'sm',
-  children,
-  ...props
-}: EmptyStateProps) => (
-  <EmptyStateContainer size={size} {...props}>
-    {React.Children.map(children, (child) => {
-      if (!React.isValidElement(child)) return child
-
-      if (
-        child.type === EmptyStateImage ||
-        child.type === EmptyStateTitle ||
-        child.type === EmptyStateBody
-      ) {
-        return React.cloneElement(child, { ...child.props, size })
-      }
-
-      return child
-    })}
-  </EmptyStateContainer>
+const EmptyStateComponent = ({ size = 'sm', ...rest }: EmptyStateProps) => (
+  <EmptyStateProvider size={size}>
+    <EmptyStateContainer size={size} {...rest} />
+  </EmptyStateProvider>
 )
 
 export const EmptyState = Object.assign(EmptyStateComponent, {

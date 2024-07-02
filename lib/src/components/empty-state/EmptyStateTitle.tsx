@@ -1,6 +1,10 @@
+import * as React from 'react'
+
 import { styled } from '~/stitches'
 
-export const EmptyStateTitle = styled('h2', {
+import { EmptyStateContext } from './EmptyState.context'
+
+const StyledEmptyStateTitle = styled('h2', {
   color: '$tonal400',
   fontFamily: '$body',
   fontWeight: '600',
@@ -30,3 +34,10 @@ export const EmptyStateTitle = styled('h2', {
     }
   }
 })
+
+type EmptyStateTitleProps = React.ComponentProps<typeof StyledEmptyStateTitle>
+
+export const EmptyStateTitle = (props: EmptyStateTitleProps) => {
+  const { size } = React.useContext(EmptyStateContext)
+  return <StyledEmptyStateTitle size={size} {...props} />
+}

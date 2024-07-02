@@ -3,6 +3,8 @@ import React from 'react'
 import { Image } from '~/components/image'
 import { styled } from '~/stitches'
 
+import { EmptyStateContext } from './EmptyState.context'
+
 const StyledEmptyStateImage = styled(Image, {
   variants: {
     size: {
@@ -35,9 +37,9 @@ const StyledEmptyStateImage = styled(Image, {
   }
 })
 
-type EmptyStateImageProps = React.ComponentProps<typeof StyledEmptyStateImage> &
-  React.ComponentProps<typeof Image>
+type EmptyStateImageProps = React.ComponentProps<typeof StyledEmptyStateImage>
 
-export const EmptyStateImage = (props: EmptyStateImageProps) => (
-  <StyledEmptyStateImage {...props} />
-)
+export const EmptyStateImage = (props: EmptyStateImageProps) => {
+  const { size } = React.useContext(EmptyStateContext)
+  return <StyledEmptyStateImage size={size} {...props} />
+}
