@@ -1,35 +1,30 @@
+import * as React from 'react'
+
 import { Item } from '@radix-ui/react-dropdown-menu'
 
 import { styled } from '~/stitches'
-import { disabledStyle } from '~/utilities'
+import { focusVisibleStyleBlock, disabledStyle } from '~/utilities'
+import { JustItem } from './JustItem'
 
-export const itemStyles = {
-  alignItems: 'center',
-  color: '$tonal600',
-  cursor: 'pointer',
-  display: 'flex',
-  fontFamily: '$body',
-  fontWeight: 400,
-  position: 'relative',
-  px: '$3',
-  py: '$2',
-  '&[disabled]': { ...disabledStyle, pointerEvents: 'none' },
-  '&[aria-current="page"], &:focus': {
-    '&::before': {
-      borderLeft: '2px solid currentColor',
-      content: '',
-      height: '$2',
-      left: 0,
-      outline: 'none',
-      position: 'absolute',
-      transform: 'scale(1)'
+export const dropdownMenuStyleInteractiveItem = {
+  '&:not([data-disabled])': {
+    cursor: 'pointer',
+    '&[tabindex="0"]:focus-visible': focusVisibleStyleBlock(),
+    '&:hover': {
+      background: '$interactive2'
+    },
+    '&:active': {
+      background: '$interactive3'
     }
   },
-  '&:focus': {
-    color: '$primary900',
-    outline: 'none'
-  },
-  '&:hover': { textDecoration: 'underline' }
+  '&[data-disabled]': disabledStyle,
+  '&[data-state="on"]': {
+    background: '$interactive3',
+  }
 }
 
-export const DropdownMenuItem = styled(Item, itemStyles)
+const StyledDropdownMenuItem = styled(Item, dropdownMenuStyleInteractiveItem)
+
+export const DropdownMenuItem = ({ children, ...rest }) => {
+  return <StyledDropdownMenuItem {...rest} asChild><JustItem>{children}</JustItem></StyledDropdownMenuItem>
+}

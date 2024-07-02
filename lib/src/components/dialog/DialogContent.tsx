@@ -23,7 +23,7 @@ const slideOut = keyframes({
   '100%': { transform: contentOffScreen }
 })
 
-const StyledDialogOverlay = styled(Overlay, backdropOverlay)
+const StyledDialogOverlay = styled(Overlay, { ...backdropOverlay, ['&[data-state="closed"]']: { display: 'none' } })
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
@@ -42,6 +42,7 @@ const StyledDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
+  ['&[data-state="closed"]']: { display: 'none' },
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
@@ -77,14 +78,15 @@ type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
   showCloseButton?: boolean
 }
 
-export const DialogContent = ({
+export const DialogContent = React.forwardRef(({
   size = 'sm',
   children,
   closeDialogText = 'Close dialog',
   showCloseButton = true,
+  forceMount,
   ...remainingProps
-}: DialogContentProps) => (
-  <Portal>
+}: DialogContentProps, ref) => (
+  <Portal forceMount={forceMount}>
     <StyledDialogOverlay id={modalOverlayId}>
       {React.Children.map(
         children,
@@ -92,6 +94,7 @@ export const DialogContent = ({
           child?.type === DialogBackground && child
       )}
       <StyledDialogContent
+        ref={ref}
         size={size}
         aria-label="Dialog"
         onPointerDownOutside={(event) => {
@@ -122,4 +125,4 @@ export const DialogContent = ({
       </StyledDialogContent>
     </StyledDialogOverlay>
   </Portal>
-)
+))
