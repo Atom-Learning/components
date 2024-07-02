@@ -6,15 +6,43 @@ interface IUseStickyColumnsCss {
   columnsCss: CSS
 }
 
-export const useStickyColumnsCss = (
-  numberOfStickyColumns: number,
+export const useStickyColumnsCss = ({
+  numberOfStickyColumns,
+  wrapperRef,
+  controlColumnCount = 0,
+  maxRowDepth
+}: {
+  numberOfStickyColumns: number
   wrapperRef: React.RefObject<HTMLTableSectionElement>
-): IUseStickyColumnsCss => {
+  controlColumnCount?: number
+  maxRowDepth?: number
+}): IUseStickyColumnsCss => {
   const [columnsCss, setColumnsCss] = React.useState<CSS>({})
 
-  React.useLayoutEffect(() => {
-    if (!numberOfStickyColumns) return
+  const getColumnWidth = (
+    column: HTMLTableCellElement,
+    columnIndex: number
+  ) => {
+    const elementNumber = columnIndex + 1
 
+    if (
+      controlColumnCount &&
+      elementNumber <= controlColumnCount &&
+      !maxRowDepth
+    ) {
+      return 40
+    }
+    if (
+      controlColumnCount &&
+      elementNumber <= controlColumnCount &&
+      maxRowDepth
+    ) {
+      return 40 + maxRowDepth * 8
+    }
+    return column.offsetWidth
+  }
+
+  const generateColumnsCss = React.useCallback(() => {
     let accWidth = 0
 
     // Getting the table header cells elements to use their width to set the left position in the sticky columns.
@@ -31,19 +59,26 @@ export const useStickyColumnsCss = (
         [`& td:nth-of-type(${elementNumber}), th:nth-of-type(${elementNumber})`]:
           {
             position: 'sticky',
-            left: `${accWidth}px`,
-            minWidth: `${column.offsetWidth}px`, // fixing width for sticky columns
+            left: controlColumnCount && index === 0 ? 0 : `${accWidth}px`,
+            minWidth: `${getColumnWidth(column, index)}px`, // fixing width for sticky columns
             zIndex: '2'
           }
       }
 
-      accWidth += tableHeaderCells?.item(index).clientWidth || 0
+      accWidth += getColumnWidth(column, index)
 
       return cssObject
     }, {} as CSS)
 
+    return newColumnsCss
+  }, [numberOfStickyColumns, wrapperRef, controlColumnCount])
+
+  React.useLayoutEffect(() => {
+    if (!numberOfStickyColumns) return
+    const newColumnsCss = generateColumnsCss()
+
     setColumnsCss(newColumnsCss)
-  }, [numberOfStickyColumns, wrapperRef])
+  }, [numberOfStickyColumns, wrapperRef, generateColumnsCss])
 
   return {
     columnsCss
