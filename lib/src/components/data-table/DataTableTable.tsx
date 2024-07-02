@@ -37,9 +37,33 @@ export const DataTableTable = ({
   },
   ...props
 }: DataTableTableProps) => {
-  const { asyncDataState, getTotalRows } = useDataTable()
+  const {
+    asyncDataState,
+    getTotalRows,
+    getCanSomeRowsExpand,
+    getGroupedRowModel,
+    enableRowSelection
+  } = useDataTable()
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
+
+  const getMaxRowDepth = () => {
+    return getGroupedRowModel().flatRows.reduce((acc, curr) => {
+      if (curr.depth > acc) {
+        acc = curr.depth
+      }
+
+      return acc
+    }, 0)
+  }
+
+  const getControlColumnsCount = (): number => {
+    if (getCanSomeRowsExpand() && !!enableRowSelection) return 2
+
+    if (getCanSomeRowsExpand() || !!enableRowSelection) return 1
+
+    return 0
+  }
 
   if (isEmpty) return null
 
@@ -51,6 +75,8 @@ export const DataTableTable = ({
         {...props}
         numberOfStickyColumns={scrollOptions.numberOfStickyColumns}
         scrollContainerCss={scrollOptions.scrollContainerCss}
+        controlColumnCount={getControlColumnsCount()}
+        maxRowDepth={getMaxRowDepth()}
         css={{
           ...css,
           ...(isPending && {
