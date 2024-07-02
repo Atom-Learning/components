@@ -15,7 +15,7 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<EmptyState size="sm">
-        <EmptyState.Image src="https://app.atomlearning.com/dist/29a378dc127c669808f2.svg" alt="" />
+        <EmptyState.Image src="/assets/images/empty-state-demo.svg" alt="" />
         <EmptyState.Title>No users found!</EmptyState.Title>
         <EmptyState.Body>
           You need to add some users before you can use this feature
@@ -29,7 +29,7 @@ tabs:
       <ComponentProps component="EmptyState" />
   - title: Visual
     content: >-
-      
+
 
       ## Structure
 
