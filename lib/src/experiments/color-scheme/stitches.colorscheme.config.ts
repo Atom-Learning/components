@@ -64,7 +64,13 @@ export const bases = {
   yellow1: { colorName: 'yellow', color0: '#FFFFFF' },
   yellow2: { colorName: 'yellow' },
   lime1: { colorName: 'lime', color0: '#FFFFFF' },
-  lime2: { colorName: 'lime' }
+  lime2: { colorName: 'lime' },
+  lapis1: { colorName: 'lapis', color0: '#FFFFFF' },
+  lapis2: { colorName: 'lapis' },
+  maroon1: { colorName: 'maroon', color0: '#FFFFFF' },
+  maroon2: { colorName: 'maroon' },
+  marsh1: { colorName: 'marsh', color0: '#FFFFFF' },
+  marsh2: { colorName: 'marsh' }
 }
 const generateBase = () => {
   Object.entries(bases).forEach(
@@ -105,7 +111,13 @@ export const accents = {
   yellow1: { colorName: 'yellow', color0: '#FFFFFF' },
   yellow2: { colorName: 'yellow' },
   lime1: { colorName: 'lime', color0: '#FFFFFF' },
-  lime2: { colorName: 'lime' }
+  lime2: { colorName: 'lime' },
+  lapis1: { colorName: 'lapis', color0: '#FFFFFF' },
+  lapis2: { colorName: 'lapis' },
+  maroon1: { colorName: 'maroon', color0: '#FFFFFF' },
+  maroon2: { colorName: 'maroon' },
+  marsh1: { colorName: 'marsh', color0: '#FFFFFF' },
+  marsh2: { colorName: 'marsh' }
 }
 const generateAccent = () => {
   Object.entries(accents).forEach(
