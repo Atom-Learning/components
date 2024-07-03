@@ -34,7 +34,9 @@ const StyledEmptyStateBody = styled(Text, {
   }
 })
 
-type EmptyStateBodyProps = React.ComponentProps<typeof StyledEmptyStateBody>
+type EmptyStateBodyProps = React.ComponentProps<typeof StyledEmptyStateBody> & {
+  as?: React.ComponentType | React.ElementType
+}
 
 export const EmptyStateBody = (props: EmptyStateBodyProps) => {
   const { size } = React.useContext(EmptyStateContext)
