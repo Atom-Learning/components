@@ -35,7 +35,11 @@ const StyledEmptyStateTitle = styled('h2', {
   }
 })
 
-type EmptyStateTitleProps = React.ComponentProps<typeof StyledEmptyStateTitle>
+type EmptyStateTitleProps = React.ComponentProps<
+  typeof StyledEmptyStateTitle
+> & {
+  as?: React.ComponentType | React.ElementType
+}
 
 export const EmptyStateTitle = (props: EmptyStateTitleProps) => {
   const { size } = React.useContext(EmptyStateContext)
