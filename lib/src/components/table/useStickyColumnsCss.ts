@@ -6,6 +6,9 @@ interface IUseStickyColumnsCss {
   columnsCss: CSS
 }
 
+const CONTROL_ELEMENT_WIDTH = 40
+const SUBROW_PROGRESSIVE_OFFSET_STEP = 8
+
 export const useStickyColumnsCss = ({
   numberOfStickyColumns,
   wrapperRef,
@@ -30,14 +33,16 @@ export const useStickyColumnsCss = ({
       elementNumber <= controlColumnCount &&
       !maxRowDepth
     ) {
-      return 40
+      return CONTROL_ELEMENT_WIDTH
     }
     if (
       controlColumnCount &&
       elementNumber <= controlColumnCount &&
       maxRowDepth
     ) {
-      return 40 + maxRowDepth * 8
+      return (
+        CONTROL_ELEMENT_WIDTH + maxRowDepth * SUBROW_PROGRESSIVE_OFFSET_STEP
+      )
     }
     return column.offsetWidth
   }
