@@ -1,7 +1,11 @@
+import * as React from 'react'
+
 import { Text } from '~/components/text'
 import { styled } from '~/stitches'
 
-export const EmptyStateBody = styled(Text, {
+import { EmptyStateContext } from './EmptyState.context'
+
+const StyledEmptyStateBody = styled(Text, {
   color: '$tonal400',
   fontWeight: '400',
   variants: {
@@ -29,3 +33,10 @@ export const EmptyStateBody = styled(Text, {
     }
   }
 })
+
+type EmptyStateBodyProps = React.ComponentProps<typeof StyledEmptyStateBody>
+
+export const EmptyStateBody = (props: EmptyStateBodyProps) => {
+  const { size } = React.useContext(EmptyStateContext)
+  return <StyledEmptyStateBody size={size} {...props} />
+}
