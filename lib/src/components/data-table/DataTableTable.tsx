@@ -41,21 +41,11 @@ export const DataTableTable = ({
     asyncDataState,
     getTotalRows,
     getCanSomeRowsExpand,
-    getGroupedRowModel,
     enableRowSelection
   } = useDataTable()
+
   const isPending = asyncDataState === AsyncDataState.PENDING
   const isEmpty = !isPending && getTotalRows() === 0
-
-  const getMaxRowDepth = () => {
-    return getGroupedRowModel().flatRows.reduce((acc, curr) => {
-      if (curr.depth > acc) {
-        acc = curr.depth
-      }
-
-      return acc
-    }, 0)
-  }
 
   const getControlColumnsCount = (): number => {
     if (getCanSomeRowsExpand() && !!enableRowSelection) return 2
@@ -76,7 +66,6 @@ export const DataTableTable = ({
         numberOfStickyColumns={scrollOptions.numberOfStickyColumns}
         scrollContainerCss={scrollOptions.scrollContainerCss}
         controlColumnCount={getControlColumnsCount()}
-        maxRowDepth={getMaxRowDepth()}
         css={{
           ...css,
           ...(isPending && {
