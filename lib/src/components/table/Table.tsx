@@ -57,7 +57,7 @@ const StyledTable = styled('table', {
 type TableProps = React.ComponentProps<typeof StyledTable> & {
   numberOfStickyColumns?: number
   scrollContainerCss?: CSS
-  controlColumnCount?: number
+  scrollContainerkey?: string
   maxRowDepth?: number
 }
 
@@ -66,7 +66,7 @@ const TableComponent = ({
   corners = 'round',
   numberOfStickyColumns = 0,
   scrollContainerCss,
-  controlColumnCount,
+  scrollContainerkey,
   ...rest
 }: TableProps) => {
   const tableComponent = <StyledTable size={size} corners={corners} {...rest} />
@@ -74,7 +74,7 @@ const TableComponent = ({
   if (numberOfStickyColumns) {
     return (
       <TableStickyColumnsContainer
-        key={`${controlColumnCount}_control_column`}
+        key={scrollContainerkey}
         css={scrollContainerCss}
         numberOfStickyColumns={numberOfStickyColumns}
       >
