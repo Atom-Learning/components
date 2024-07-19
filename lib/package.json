@@ -43,17 +43,17 @@
   "size-limit": [
     {
       "limit": "10kb",
-      "path": "dist/index.js",
+      "path": "dist/lib/src/index.js",
       "import": "{ Box }"
     },
     {
       "limit": "16kb",
-      "path": "dist/index.js",
+      "path": "dist/lib/src/index.js",
       "import": "{ Button }"
     },
     {
       "limit": "75kb",
-      "path": "dist/index.js",
+      "path": "dist/lib/src/index.js",
       "import": "{  useAlert, AlertProvider }"
     }
   ],
