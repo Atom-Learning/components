@@ -22,7 +22,7 @@ tabs:
 
 
 
-      <CodeBlock live={true} preview={true} code={`<Form>
+      <CodeBlock live={true} preview={true} code={`<Form onSubmit={(formData)=>console.log(formData)}>
         <PhoneNumberField name="phone-number" label="Phone number" defaultValue='020 4586 7744' />
       </Form>`} language={"tsx"} />
 
