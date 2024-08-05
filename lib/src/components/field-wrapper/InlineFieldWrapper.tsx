@@ -8,8 +8,10 @@ import { RadioButton } from '~/components/radio-button'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
+import { getFieldWrapperLabelId } from './getFieldWrapperLabelId'
 
 type InlineFieldWrapperProps = {
+  fieldId?: string
   css?: CSS
   error?: string
   label: string
@@ -20,6 +22,7 @@ type InlineFieldWrapperProps = {
 }
 
 export const InlineFieldWrapper = ({
+  fieldId,
   align = 'start',
   children,
   css,
@@ -31,6 +34,7 @@ export const InlineFieldWrapper = ({
 }: React.PropsWithChildren<InlineFieldWrapperProps>) => (
   <Box css={css}>
     <Label
+      {...(fieldId ? { id: getFieldWrapperLabelId(fieldId) } : [])}
       align={align}
       direction={direction}
       required={required}

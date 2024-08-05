@@ -10,6 +10,7 @@ import { Link } from '~/components/link'
 import type { CSS } from '~/stitches'
 
 import { Description } from './FieldDescription'
+import { getFieldWrapperLabelId } from './getFieldWrapperLabelId'
 
 export type FieldWrapperProps = {
   css?: CSS
@@ -26,7 +27,6 @@ export type FieldElementWrapperProps = Omit<FieldWrapperProps, 'fieldId'> & {
   name: string
   validation?: ValidationOptions
 }
-
 export const FieldWrapper = ({
   css,
   children,
@@ -49,7 +49,9 @@ export const FieldWrapper = ({
           mb: '$3'
         }}
       >
-        <Label htmlFor={fieldId} required={required}>
+        <Label
+          id={getFieldWrapperLabelId(fieldId)}
+          htmlFor={fieldId} required={required}>
           {label}
         </Label>
         {prompt && (
