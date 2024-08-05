@@ -2,88 +2,129 @@ import * as React from 'react'
 
 import { styled } from '~/stitches'
 import { disabledStyle } from '~/utilities'
+import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
 import { Override } from '~/utilities/types'
 
-const StyledInput = styled('input', {
-  appearance: 'none',
-  border: '1px solid $tonal400',
+import { Flex } from '../flex'
+import { Text } from '../text'
+
+export const InputBackground = styled(Flex, {
+  background: 'white',
+  color: '$grey1000',
+  border: '1px solid $grey800',
   borderRadius: '$0',
-  boxShadow: 'none', // prevent default iOS default styling
-  boxSizing: 'border-box',
-  color: '$tonal600',
-  cursor: 'text',
-  display: 'block',
-  fontFamily: '$body',
-  px: '$3',
-  transition: 'all 100ms ease-out',
+  transition: 'background 100ms ease-out, borderColor 100ms ease-out',
   width: '100%',
-  '&:focus': {
-    borderColor: '$primary800',
-    outline: 'none'
-  },
-  '&[disabled]': disabledStyle,
-  '&::placeholder': {
-    color: '$tonal300',
-    opacity: 1
+  '&:focus-within': {
+    borderColor: '$blue800'
   },
   variants: {
     size: {
       sm: {
-        height: '$3',
-        fontSize: '$sm',
-        lineHeight: 1.7
+        height: '$3'
       },
       md: {
-        height: '$4',
-        fontSize: '$md',
-        lineHeight: 2
+        height: '$4'
       },
       lg: {
-        height: '$5',
-        fontSize: '$md',
-        lineHeight: 2
+        height: '$5'
       },
       xl: {
-        height: '$6',
-        fontSize: '$lg',
-        lineHeight: 2
+        height: '$6'
       }
+    },
+    disabled: {
+      true: disabledStyle
     },
     state: {
       error: {
-        border: '1px solid $danger'
+        borderColor: '$danger'
       }
     }
   }
 })
 
-// override default 'type' property to prevent Input from being used to render
-// checkboxes, radios etc — we have dedicated components for them
-export type InputProps = Override<
-  React.ComponentProps<typeof StyledInput>,
+const StyledInputText = styled.withConfig({
+  shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
+})(Text as unknown as 'input', {
+  // unsets
+  appearance: 'none',
+  border: 'none',
+  background: 'none',
+  backgroundImage: 'none',
+  backgroundColor: 'transparent',
+  boxShadow: 'none', // prevent default iOS default styling
+  boxSizing: 'border-box',
+  '&:focus': {
+    outline: 'none'
+  },
+  //
+  px: '$3',
+  size: '100%'
+})
+
+export type InputTextProps = Override<
+  React.ComponentProps<typeof StyledInputText>,
   {
-    name: string
-    as?: never
+    size: React.ComponentProps<typeof Text>['size']
+    // override default 'type' property to prevent Input from being used to render
+    // checkboxes, radios etc — we have dedicated components for them
     type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url' | 'search'
+    as?: never
   }
 >
 
-export const Input: React.ForwardRefExoticComponent<InputProps> =
-  React.forwardRef(({ type = 'text', size = 'md', ...rest }, ref) => {
-    if (type === 'number') {
-      return (
-        <StyledInput
-          type="text"
-          inputMode="numeric"
-          pattern="[0-9]*"
-          size={size}
-          {...rest}
-          ref={ref}
-        />
-      )
-    }
+const toTextSize = {
+  sm: 'sm',
+  md: 'md',
+  lg: 'md',
+  xl: 'lg'
+}
 
-    return <StyledInput type={type} size={size} {...rest} ref={ref} />
-  })
+export const InputText = React.forwardRef(
+  (
+    { type = 'text', css, size, ...rest }: InputTextProps,
+    ref: React.ForwardedRef<HTMLInputElement>
+  ) => {
+    const textSize = React.useMemo(
+      () => overrideStitchesVariantValue(size, (s) => toTextSize[s]),
+      [size]
+    )
+
+    return (
+      <StyledInputText
+        ref={ref}
+        as="input"
+        type={type === 'number' ? 'text' : type}
+        inputMode={type === 'number' ? 'numeric' : undefined}
+        pattern={type === 'number' ? '[0-9]*' : undefined}
+        size={textSize}
+        {...rest}
+      />
+    )
+  }
+)
+
+type InputBackgroundProps = React.ComponentProps<typeof InputBackground>
+export type InputProps = Override<
+  React.ComponentProps<typeof InputText>,
+  {
+    size?: InputBackgroundProps['size']
+    state?: InputBackgroundProps['state']
+  }
+>
+
+export const Input = React.forwardRef(
+  (
+    { size = 'md', state, disabled, css, ...rest }: InputProps,
+    ref: React.ForwardedRef<HTMLInputElement>
+  ) => {
+    return (
+      <InputBackground size={size} disabled={disabled} state={state} css={css}>
+        <InputText size={size} ref={ref} disabled={disabled} {...rest} />
+      </InputBackground>
+    )
+  }
+)
 
 Input.displayName = 'Input'
