@@ -3,7 +3,6 @@ import * as React from 'react'
 import { styled } from '~/stitches'
 import { disabledStyle } from '~/utilities'
 import { overrideStitchesVariantValue } from '~/utilities/override-stitches-variant-value/overrideStitchesVariantValue'
-import { Override } from '~/utilities/types'
 
 import { Flex } from '../flex'
 import { Text } from '../text'
@@ -44,6 +43,8 @@ export const InputBackground = styled(Flex, {
   }
 })
 
+InputBackground.displayName = 'InputBackground'
+
 const StyledInputText = styled.withConfig({
   shouldForwardStitchesProp: (propName) => ['as'].includes(propName)
 })(Text as unknown as 'input', {
@@ -63,16 +64,15 @@ const StyledInputText = styled.withConfig({
   size: '100%'
 })
 
-export type InputTextProps = Override<
-  React.ComponentProps<typeof StyledInputText>,
-  {
-    size: React.ComponentProps<typeof Text>['size']
-    // override default 'type' property to prevent Input from being used to render
-    // checkboxes, radios etc — we have dedicated components for them
-    type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url' | 'search'
-    as?: never
-  }
->
+export type InputTextProps = Omit<
+  React.ComponentProps<typeof StyledInputText>, 'size' | 'type' | 'as'> &
+{
+  size: React.ComponentProps<typeof Text>['size']
+  // override default 'type' property to prevent Input from being used to render
+  // checkboxes, radios etc — we have dedicated components for them
+  type?: 'text' | 'number' | 'email' | 'password' | 'tel' | 'url' | 'search'
+  as?: never
+}
 
 const toTextSize = {
   sm: 'sm',
@@ -105,14 +105,15 @@ export const InputText = React.forwardRef(
   }
 )
 
+InputText.displayName = 'InputText'
+
 type InputBackgroundProps = React.ComponentProps<typeof InputBackground>
-export type InputProps = Override<
-  React.ComponentProps<typeof InputText>,
-  {
-    size?: InputBackgroundProps['size']
-    state?: InputBackgroundProps['state']
-  }
->
+export type InputProps = Omit<
+  React.ComponentProps<typeof InputText>, 'size' | 'state'> &
+{
+  size?: InputBackgroundProps['size']
+  state?: InputBackgroundProps['state']
+}
 
 export const Input = React.forwardRef(
   (
