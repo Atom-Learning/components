@@ -8,23 +8,17 @@ import { useStickyColumnsCss } from './useStickyColumnsCss'
 export const TableStickyColumnsContainer = ({
   children,
   numberOfStickyColumns = 0,
-  controlColumnCount,
-  maxRowDepth,
   css,
   ...restProps
 }: React.PropsWithChildren<{
   numberOfStickyColumns?: number
   css?: CSS
-  controlColumnCount?: number
-  maxRowDepth?: number
 }>) => {
   const [hasScroll, setHasScroll] = React.useState<boolean>(false)
   const wrapperRef = React.useRef(null)
   const { columnsCss } = useStickyColumnsCss({
     numberOfStickyColumns,
-    wrapperRef,
-    controlColumnCount,
-    maxRowDepth
+    wrapperRef
   })
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
