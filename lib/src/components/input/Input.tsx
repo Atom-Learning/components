@@ -65,8 +65,9 @@ const StyledInputText = styled.withConfig({
 })
 
 export type InputTextProps = Omit<
-  React.ComponentProps<typeof StyledInputText>, 'size' | 'type' | 'as'> &
-{
+  React.ComponentProps<typeof StyledInputText>,
+  'size' | 'type' | 'as'
+> & {
   size: React.ComponentProps<typeof Text>['size']
   // override default 'type' property to prevent Input from being used to render
   // checkboxes, radios etc — we have dedicated components for them
@@ -109,8 +110,9 @@ InputText.displayName = 'InputText'
 
 type InputBackgroundProps = React.ComponentProps<typeof InputBackground>
 export type InputProps = Omit<
-  React.ComponentProps<typeof InputText>, 'size' | 'state'> &
-{
+  React.ComponentProps<typeof InputText>,
+  'size' | 'state'
+> & {
   size?: InputBackgroundProps['size']
   state?: InputBackgroundProps['state']
 }
