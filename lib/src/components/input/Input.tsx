@@ -82,11 +82,8 @@ const toTextSize = {
   xl: 'lg'
 }
 
-export const InputText = React.forwardRef(
-  (
-    { type = 'text', css, size, ...rest }: InputTextProps,
-    ref: React.ForwardedRef<HTMLInputElement>
-  ) => {
+export const InputText: React.ForwardRefExoticComponent<InputTextProps> =
+  React.forwardRef(({ type = 'text', css, size, ...rest }, ref) => {
     const textSize = React.useMemo(
       () => overrideStitchesVariantValue(size, (s) => toTextSize[s]),
       [size]
@@ -103,8 +100,7 @@ export const InputText = React.forwardRef(
         {...rest}
       />
     )
-  }
-)
+  })
 
 InputText.displayName = 'InputText'
 
@@ -117,17 +113,13 @@ export type InputProps = Omit<
   state?: InputBackgroundProps['state']
 }
 
-export const Input = React.forwardRef(
-  (
-    { size = 'md', state, disabled, css, ...rest }: InputProps,
-    ref: React.ForwardedRef<HTMLInputElement>
-  ) => {
+export const Input: React.ForwardRefExoticComponent<InputProps> =
+  React.forwardRef(({ size = 'md', state, disabled, css, ...rest }, ref) => {
     return (
       <InputBackground size={size} disabled={disabled} state={state} css={css}>
         <InputText size={size} ref={ref} disabled={disabled} {...rest} />
       </InputBackground>
     )
-  }
-)
+  })
 
 Input.displayName = 'Input'
