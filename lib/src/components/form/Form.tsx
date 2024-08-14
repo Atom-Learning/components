@@ -1,122 +1,57 @@
-import invariant from 'invariant'
-import * as React from 'react'
-import { FormProvider, useForm } from 'react-hook-form'
-import useFormPersist from 'react-hook-form-persist'
+import React from 'react'
+import {
+  DefaultValues,
+  FieldErrors,
+  FieldValues,
+  FormProvider,
+  Mode,
+  useForm,
+  UseFormMethods
+} from 'react-hook-form'
 
 import { styled } from '~/stitches'
 
-import type {
-  FormContentValues,
-  FormPersistParams,
-  FormValues,
-  PersistFormWrapperValues
-} from './Form.types'
-import { StorageEnum } from './Form.types'
-
 const StyledForm = styled('form', {})
 
-type FormProps = React.ComponentPropsWithoutRef<typeof StyledForm> & FormValues
+type StyledFormProps = Omit<
+  React.ComponentPropsWithoutRef<typeof StyledForm>,
+  'onSubmit' | 'onError'
+>
 
-type FormContentProps = React.ComponentPropsWithoutRef<typeof StyledForm> &
-  FormContentValues
-
-type PersistFormWrapperProps = React.ComponentPropsWithoutRef<
-  typeof StyledForm
-> &
-  PersistFormWrapperValues
-
-const PersistFormWrapper = ({
-  persist,
-  watch,
-  setValue,
-  children
-}: PersistFormWrapperProps) => {
-  const { id, ...options } = persist
-
-  let params: FormPersistParams = {
-    ...options,
-    storage:
-      options.storage === StorageEnum.LOCAL
-        ? window.localStorage
-        : window.sessionStorage
-  }
-
-  if (options.exclude) {
-    // Workaround for bug in react-hook-form-persist package
-    // package will still read from and save exclude param
-    // so need to send inputs we actually want to read from in include param instead
-    const { exclude, ...rest } = params
-    const allValues = watch()
-    const include = Object.keys(allValues).filter((key) => {
-      if (!options.exclude?.includes(key)) return key
-    })
-    params = { ...rest, include }
-  }
-
-  useFormPersist(id, { watch, setValue }, params)
-
-  return children
+interface FormProps<TFormData extends FieldValues> extends StyledFormProps {
+  defaultValues?: DefaultValues<TFormData>
+  validationMode?: Mode
+  onSubmit: (data: TFormData) => void | any
+  onError?: (errors: FieldErrors<TFormData>) => void
+  children:
+    | React.ReactNode
+    | ((methods: UseFormMethods<TFormData>) => React.ReactNode)
 }
 
-const FormContent = ({
-  formMethods,
-  handleSubmit,
-  onSubmit,
-  onError,
-  children,
-  ...remainingProps
-}: FormContentProps) => (
-  <FormProvider {...formMethods}>
-    <StyledForm
-      aria-label="form"
-      {...remainingProps}
-      onSubmit={handleSubmit(onSubmit, onError)}
-    >
-      {children}
-    </StyledForm>
-  </FormProvider>
-)
+export const Form = <TFormData extends FieldValues>(
+  props: FormProps<TFormData>
+) => {
+  const {
+    children,
+    defaultValues,
+    validationMode = 'onBlur',
+    onSubmit,
+    onError,
+    ...rest
+  } = props
 
-export const Form = ({
-  children,
-  defaultValues = {},
-  onSubmit,
-  onError,
-  validationMode = 'onBlur',
-  render,
-  persist,
-  ...remainingProps
-}: FormProps) => {
-  invariant(
-    !(children && render),
-    '`Form` should only be given one of `children` or `render`. When both are provided, `render` will be used and `children` will be ignored.'
-  )
-
-  const formMethods = useForm({
+  const methods = useForm<TFormData>({
     defaultValues,
     mode: validationMode
   })
-  const { handleSubmit, watch, setValue } = formMethods
 
-  const formContent = render ? render(formMethods) : children
-
-  const props = {
-    formMethods,
-    handleSubmit,
-    onSubmit,
-    onError,
-    ...remainingProps
-  }
-
-  if (persist) {
-    return (
-      <PersistFormWrapper persist={persist} watch={watch} setValue={setValue}>
-        <FormContent {...props}>{formContent}</FormContent>
-      </PersistFormWrapper>
-    )
-  }
-
-  return <FormContent {...props}>{formContent}</FormContent>
+  return (
+    <FormProvider {...methods}>
+      <StyledForm onSubmit={methods.handleSubmit(onSubmit, onError)} {...rest}>
+        {typeof children === 'function' ? children(methods) : children}
+      </StyledForm>
+    </FormProvider>
+  )
 }
 
 Form.displayName = 'Form'

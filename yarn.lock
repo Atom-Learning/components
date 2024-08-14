@@ -12439,11 +12439,6 @@ react-frame-component@^5.2.1:
   resolved "https://registry.yarnpkg.com/react-frame-component/-/react-frame-component-5.2.3.tgz#2d5d1e29b23d5b915c839b44980d03bb9cafc453"
   integrity sha512-r+h0o3r/uqOLNT724z4CRVkxQouKJvoi3OPfjqWACD30Y87rtEmeJrNZf1WYPGknn1Y8200HAjx7hY/dPUGgmA==
 
-react-hook-form-persist@^2.0.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-hook-form-persist/-/react-hook-form-persist-2.1.0.tgz#5032756eeae4f7d8cbeb6fd3c93cdeda90d1add8"
-  integrity sha512-qtzNEktLcmGBagHyHNcRvMTrjgasKSyVw/rO2tI+iEFXsfYFJmXJaINvWM+IvxG5ApTIGya7NI5fqo2WJcmiOg==
-
 react-hook-form@^6.15.4:
   version "6.15.8"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-6.15.8.tgz#725c139d308c431c4611e4b9d85a49f01cfc0e7a"
