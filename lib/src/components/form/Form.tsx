@@ -1,13 +1,12 @@
 import React from 'react'
-import {
+import type {
   DefaultValues,
   FieldErrors,
-  FieldValues,
-  FormProvider,
   Mode,
-  useForm,
-  UseFormMethods
+  UseFormMethods,
+  FieldValues
 } from 'react-hook-form'
+import { useForm, FormProvider } from 'react-hook-form'
 
 import { styled } from '~/stitches'
 
