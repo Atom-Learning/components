@@ -1,10 +1,11 @@
 import React from 'react'
 import type {
   DefaultValues,
-  FieldErrors,
   Mode,
   UseFormMethods,
-  FieldValues
+  FieldValues,
+  SubmitHandler,
+  SubmitErrorHandler
 } from 'react-hook-form'
 import { useForm, FormProvider } from 'react-hook-form'
 
@@ -20,8 +21,8 @@ type StyledFormProps = Omit<
 interface FormProps<TFormData extends FieldValues> extends StyledFormProps {
   defaultValues?: DefaultValues<TFormData>
   validationMode?: Mode
-  onSubmit: (data: TFormData) => void | any
-  onError?: (errors: FieldErrors<TFormData>) => void
+  onSubmit: SubmitHandler<TFormData>
+  onError?: SubmitErrorHandler<TFormData>
   children:
     | React.ReactNode
     | ((methods: UseFormMethods<TFormData>) => React.ReactNode)
