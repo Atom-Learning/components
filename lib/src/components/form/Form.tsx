@@ -47,7 +47,11 @@ export const Form = <TFormData extends FieldValues>(
 
   return (
     <FormProvider {...methods}>
-      <StyledForm onSubmit={methods.handleSubmit(onSubmit, onError)} {...rest}>
+      <StyledForm
+        aria-label="form"
+        onSubmit={methods.handleSubmit(onSubmit, onError)}
+        {...rest}
+      >
         {typeof children === 'function' ? children(methods) : children}
       </StyledForm>
     </FormProvider>
