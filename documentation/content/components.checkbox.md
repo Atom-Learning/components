@@ -36,7 +36,5 @@ parent: J3bsmpB7-_uuqm05peuTA
 uuid: 2Y0C1wqUjjKktp-oi7G8d
 nestedSlug:
   - components
-  - form
-  - primitives
   - checkbox
 ---

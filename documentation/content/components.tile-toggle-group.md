@@ -5,7 +5,8 @@ tabs:
   - title: Code
     content: >-
       <CodeBlock live={true} preview={true} code={` <TileToggleGroup
-      type="multiple" justify="center" css={{ bg: '$grey100', p: '$3', width: '100%' }}>
+      type="multiple" justify="center" css={{ bg: '$grey100', p: '$3', width:
+      '100%' }}>
         <TileToggleGroup.Item value="1" css={{size: 100 }} />
         <TileToggleGroup.Item value="2" css={{size: 100 }} border />
       </TileToggleGroup>`} language={"tsx"} />

@@ -1,4 +1,5 @@
 import { Description, Root, Title, Trigger } from '@radix-ui/react-dialog'
+import * as React from 'react'
 
 import { styled } from '~/stitches'
 
@@ -10,7 +11,36 @@ import { DialogHeading } from './DialogHeading'
 
 const StyledDialog = styled(Root, {})
 
-export const Dialog = Object.assign(StyledDialog, {
+type DialogContextValue = {
+  defaultOpen: React.ComponentProps<typeof StyledDialog>['defaultOpen'],
+  open: React.ComponentProps<typeof StyledDialog>['open'],
+  onOpenChange: React.ComponentProps<typeof StyledDialog>['onOpenChange']
+}
+export const DialogContext = React.createContext<DialogContextValue>({
+  defaultOpen: undefined,
+  open: undefined,
+  onOpenChange: undefined
+})
+
+const DialogComponent = ({
+  defaultOpen,
+  open,
+  onOpenChange,
+  ...rest
+}: React.ComponentProps<typeof StyledDialog>) => {
+  const [internalOpen, setInternalOpen] = React.useState(open || defaultOpen)
+  const handleOnOpenChange = React.useCallback((newOpen) => {
+    setInternalOpen(newOpen)
+    onOpenChange?.(newOpen)
+  }, [onOpenChange])
+  const value = React.useMemo<DialogContextValue>(
+    () => ({ defaultOpen, open: open || internalOpen, onOpenChange: handleOnOpenChange }),
+    [defaultOpen, open, internalOpen, handleOnOpenChange]
+  )
+  return <DialogContext.Provider value={value}><StyledDialog {...value} {...rest} /></DialogContext.Provider>
+}
+
+export const Dialog = Object.assign(DialogComponent, {
   Background: DialogBackground,
   Close: DialogClose,
   Content: DialogContent,

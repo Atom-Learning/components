@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownMenu component renders 1`] = `
+@media  {
+  .c-gEZhyT[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-iPAADh {
+    align-items: center;
+    color: var(--colors-tonal600);
+    cursor: pointer;
+    display: flex;
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    position: relative;
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+  .c-iPAADh[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .c-iPAADh[aria-current="page"]::before,
+  .c-iPAADh:focus::before {
+    border-left: 2px solid currentColor;
+    content: "";
+    height: var(--sizes-2);
+    left: 0;
+    outline: none;
+    position: absolute;
+    transform: scale(1);
+  }
+
+  .c-iPAADh:focus {
+    color: var(--colors-primary900);
+    outline: none;
+  }
+
+  .c-iPAADh:hover {
+    text-decoration: underline;
+  }
+
+  .c-cIdiJW {
+    text-decoration: none;
+  }
+
+  .c-gBsmUO {
+    height: 1px;
+    background-color: var(--colors-tonal200);
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+  }
+
+  .c-ghAfvs {
+    background: white;
+    border-radius: var(--radii-0);
+    box-shadow: var(--shadows-0);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+    z-index: 10;
+  }
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-ghAfvs {
+      animation-duration: 250ms;
+      animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform, opacity;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-ghAfvs[data-state="open"][data-side="top"] {
+      animation-name: k-ftcNPK;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-ghAfvs[data-state="open"][data-side="right"] {
+      animation-name: k-hbaHED;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-ghAfvs[data-state="open"][data-side="bottom"] {
+      animation-name: k-daNevH;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .c-ghAfvs[data-state="open"][data-side="left"] {
+      animation-name: k-fvyGIa;
+    }
+}
+}
+
+<body
+  style="pointer-events: none;"
+>
+  <span
+    aria-hidden="true"
+    data-aria-hidden="true"
+    data-radix-focus-guard=""
+    style="outline: none; opacity: 0; position: fixed; pointer-events: none;"
+    tabindex="0"
+  />
+  <button
+    aria-controls="radix-5"
+    aria-expanded="true"
+    aria-haspopup="menu"
+    aria-hidden="true"
+    class="c-gEZhyT"
+    data-aria-hidden="true"
+    data-state="open"
+    id="radix-4"
+    type="button"
+  >
+    TRIGGER
+  </button>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
+  >
+    <div
+      aria-labelledby="radix-4"
+      aria-orientation="vertical"
+      class="c-ghAfvs"
+      data-align="center"
+      data-orientation="vertical"
+      data-side="bottom"
+      data-state="open"
+      dir="ltr"
+      id="radix-5"
+      role="menu"
+      style="outline: none; --radix-dropdown-menu-content-transform-origin: var(--radix-popper-transform-origin); animation: none; pointer-events: auto;"
+      tabindex="-1"
+    >
+      <div
+        class="c-iPAADh"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        role="menuitem"
+        tabindex="-1"
+      >
+        Item 1
+      </div>
+      <div
+        class="c-iPAADh"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        role="menuitem"
+        tabindex="-1"
+      >
+        Item 2
+      </div>
+      <a
+        class="c-cIdiJW c-iPAADh"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        href="http://google.com"
+        rel="noopener noreferrer"
+        role="menuitem"
+        tabindex="-1"
+        target="_blank"
+      >
+        Item 3
+      </a>
+      <div
+        aria-orientation="horizontal"
+        class="c-gBsmUO"
+        role="separator"
+      />
+      <a
+        class="c-cIdiJW c-iPAADh"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        href="/logout"
+        role="menuitem"
+        tabindex="-1"
+      >
+        Log Out
+      </a>
+    </div>
+  </div>
+  <span
+    aria-hidden="true"
+    data-aria-hidden="true"
+    data-radix-focus-guard=""
+    style="outline: none; opacity: 0; position: fixed; pointer-events: none;"
+    tabindex="0"
+  />
+</body>
+`;

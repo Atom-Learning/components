@@ -8,14 +8,14 @@ import { overrideStitchesVariantValue } from '~/utilities/override-stitches-vari
 
 import { Icon } from '../icon'
 
-const StyledIndicator = styled(RadixCheckbox.Indicator, {
+export const checkboxIndicatorStyles = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translateX(-50%) translateY(-50%)'
-})
+}
 
-const StyledCheckbox = styled(RadixCheckbox.Root, {
+export const checkboxStyles = {
   appearance: 'none',
   position: 'relative',
   backgroundColor: 'transparent',
@@ -59,9 +59,13 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
       }
     }
   }
-})
+}
 
-const toIconSize = {
+const StyledIndicator = styled(RadixCheckbox.Indicator, checkboxIndicatorStyles)
+
+const StyledCheckbox = styled(RadixCheckbox.Root, checkboxStyles)
+
+export const toIconSize = {
   md: 'sm',
   lg: 'md'
 }

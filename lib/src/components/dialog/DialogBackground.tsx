@@ -2,4 +2,4 @@ import { styled } from '~/stitches'
 
 import { Box } from '../box'
 
-export const DialogBackground = styled(Box, { width: '100vw', height: '100vh' })
+export const DialogBackground = styled(Box, { width: '100vw', height: '100vh', ['&[data-state="closed"]']: { display: 'none' } })
