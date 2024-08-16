@@ -25,9 +25,18 @@ const slideOut = keyframes({
 
 const StyledDialogOverlay = styled(Overlay, backdropOverlay)
 
+const sizeReset = {
+  width: 'auto',
+  height: 'auto',
+  maxWidth: 'auto',
+  maxHeight: 'auto',
+  '@supports (height: 100svh)': {
+    height: 'auto',
+    maxHeight: 'auto'
+  }
+}
 const StyledDialogContent = styled(Content, {
   bg: 'white',
-  borderRadius: '$1',
   boxShadow: '$3',
   boxSizing: 'border-box',
   left: '50%',
@@ -52,17 +61,36 @@ const StyledDialogContent = styled(Content, {
   },
   variants: {
     size: {
-      xs: { width: '380px' },
-      sm: { width: '480px' },
-      md: { width: '600px' },
-      lg: { width: '800px' },
-      xl: { width: '1100px' },
+      xs: {
+        ...sizeReset,
+        borderRadius: '$1',
+        width: '380px'
+      },
+      sm: {
+        ...sizeReset,
+        borderRadius: '$1',
+        width: '480px'
+      },
+      md: {
+        ...sizeReset,
+        borderRadius: '$1',
+        width: '600px'
+      },
+      lg: {
+        ...sizeReset,
+        borderRadius: '$1',
+        width: '800px'
+      },
+      xl: {
+        ...sizeReset,
+        borderRadius: '$1',
+        width: '1100px'
+      },
       fullscreen: {
         width: '100vw',
         height: '100vh',
         maxWidth: '100vw',
         maxHeight: '100vh',
-        borderRadius: 'unset',
         '@supports (height: 100svh)': {
           height: '100svh',
           maxHeight: '100svh'
