@@ -1,21 +1,22 @@
-import { Portal, Root as DropdownMenuRoot } from '@radix-ui/react-dropdown-menu'
-import React from 'react'
+import * as React from 'react'
+import { Root } from '@radix-ui/react-dropdown-menu'
+import { DropdownMenuProvider, DropdownMenuContext } from './DropdownMenu.context'
 
 import { styled } from '~/stitches'
 
-import { DropdownMenuContent } from './DropdownMenuContent'
-import { DropdownMenuItem } from './DropdownMenuItem'
-import { DropdownMenuLinkItem } from './DropdownMenuLinkItem'
-import { DropdownMenuSeparator } from './DropdownMenuSeparator'
-import { DropdownMenuTrigger } from './DropdownMenuTrigger'
+const StyledDropdownMenu = styled(Root, {})
 
-const Root = styled(DropdownMenuRoot, {})
 
-export const DropdownMenu = Object.assign(Root, {
-  Content: DropdownMenuContent,
-  Item: DropdownMenuItem,
-  LinkItem: DropdownMenuLinkItem,
-  Portal: Portal,
-  Separator: DropdownMenuSeparator,
-  Trigger: DropdownMenuTrigger
-})
+const DropdownMenuInternal = (props) => {
+  const { isOpen, setIsOpen } = React.useContext(DropdownMenuContext)
+  return <StyledDropdownMenu open={isOpen} onOpenChange={setIsOpen} {...props} />
+}
+
+export const DropdownMenu = ({ defaultOpen, onOpenChange, ...rest }) => (
+  <DropdownMenuProvider defaultOpen={defaultOpen} onOpenChange={onOpenChange}>
+    <DropdownMenuInternal {...rest} />
+  </DropdownMenuProvider>
+)
+
+// This also needs to handle the entire logic of what's selected and what not :)
+// Edit 2024: Or does it?

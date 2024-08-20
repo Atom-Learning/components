@@ -5,10 +5,12 @@ import * as React from 'react'
 import { DIALOG_Z_INDEX } from '~/constants/zIndices'
 import { keyframes, styled } from '~/stitches'
 import { backdropOverlay } from '~/utilities/style/backdrop-overlay'
+import { DialogContext } from './Dialog'
 
 import { ActionIcon } from '../action-icon/ActionIcon'
 import { Icon } from '../icon/Icon'
 import { DialogBackground } from './DialogBackground'
+import { Box } from '../box'
 
 const contentOnScreen = 'translate3d(-50%, -50%, 0)'
 const contentOffScreen = 'translate3d(-50%, 50vh, 0)'
@@ -23,7 +25,7 @@ const slideOut = keyframes({
   '100%': { transform: contentOffScreen }
 })
 
-const StyledDialogOverlay = styled(Overlay, backdropOverlay)
+const StyledDialogOverlay = styled(Overlay, { ...backdropOverlay, ['&[data-state="closed"]']: { display: 'none' } })
 
 const StyledDialogContent = styled(Content, {
   bg: 'white',
@@ -42,6 +44,7 @@ const StyledDialogContent = styled(Content, {
   '&:focus': {
     outline: 'none'
   },
+  ['&[data-state="closed"]']: { display: 'none' },
   '@allowMotion': {
     '&[data-state="open"]': {
       animation: `${slideIn} 550ms cubic-bezier(0.22, 1, 0.36, 1)`
@@ -77,49 +80,61 @@ type DialogContentProps = React.ComponentProps<typeof StyledDialogContent> & {
   showCloseButton?: boolean
 }
 
-export const DialogContent = ({
+export const DialogContent: React.ForwardRefExoticComponent<DialogContentProps> = React.forwardRef(({
   size = 'sm',
   children,
   closeDialogText = 'Close dialog',
   showCloseButton = true,
+  forceMount,
   ...remainingProps
-}: DialogContentProps) => (
-  <Portal>
-    <StyledDialogOverlay id={modalOverlayId}>
-      {React.Children.map(
-        children,
-        (child?: React.ReactElement) =>
-          child?.type === DialogBackground && child
-      )}
-      <StyledDialogContent
-        size={size}
-        aria-label="Dialog"
-        onPointerDownOutside={(event) => {
-          const element = event.target as HTMLElement
-          if (element?.id !== modalOverlayId) {
-            event.preventDefault()
-          }
-        }}
-        {...remainingProps}
-      >
-        {showCloseButton && (
-          <ActionIcon
-            as={Close}
-            css={{ position: 'absolute', right: '$4', top: '$4', size: '$5' }}
-            label={closeDialogText}
-            hasTooltip={false}
-            size="md"
-            theme="neutral"
-          >
-            <Icon is={CloseIcon} />
-          </ActionIcon>
-        )}
-        {React.Children.map(
-          children,
-          (child?: React.ReactElement) =>
-            child?.type !== DialogBackground && child
-        )}
-      </StyledDialogContent>
-    </StyledDialogOverlay>
-  </Portal>
-)
+}, ref) => {
+  const { open } = React.useContext(DialogContext)
+  const dialogBackgrounds: React.ReactChild[] = []
+  const dialogContents: (React.ReactChild | React.ReactFragment)[] = []
+  React.Children.toArray(children).forEach(
+    (child) =>
+      React.isValidElement(child) && child?.type === DialogBackground ? dialogBackgrounds.push(child) : dialogContents.push(child)
+
+  )
+
+  console.log({ open }, forceMount && !open)
+  if (forceMount && !open) return (
+    <Box css={{ display: 'none' }} ref={ref}>
+      {dialogContents}
+    </Box>
+  )
+
+  return (
+    <Portal>
+      <StyledDialogOverlay id={modalOverlayId}>
+        {dialogBackgrounds}
+        <StyledDialogContent
+          ref={ref}
+          size={size}
+          aria-label="Dialog"
+          onPointerDownOutside={(event) => {
+            const element = event.target as HTMLElement
+            if (element?.id !== modalOverlayId) {
+              event.preventDefault()
+            }
+          }}
+          {...remainingProps}
+        >
+          {showCloseButton && (
+            <ActionIcon
+              as={Close}
+              css={{ position: 'absolute', right: '$4', top: '$4', size: '$5' }}
+              label={closeDialogText}
+              hasTooltip={false}
+              size="md"
+              theme="neutral"
+            >
+              <Icon is={CloseIcon} />
+            </ActionIcon>
+          )}
+          {dialogContents}
+        </StyledDialogContent>
+      </StyledDialogOverlay>
+    </Portal>
+  )
+})
