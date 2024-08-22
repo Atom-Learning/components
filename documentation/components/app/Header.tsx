@@ -8,7 +8,7 @@ import {
   Flex,
   Drawer
 } from '@atom-learning/components'
-import logo from '@atom-learning/theme/lib/assets/atom/logo.svg'
+import logo from '@atom-learning/theme/lib/assets/logos/atom/atom-learning-logotype-primary.svg'
 import * as React from 'react'
 
 import buildConstants from '~/lib/build/constants.json'
@@ -19,7 +19,7 @@ import { useTheme } from '~/utilities/hooks/useTheme'
 
 const NavigationHeader = () => (
   <SideBar.Brand href="/">
-    <SideBar.BrandLogo src={logo.src} css={{ width: 80 }} />
+    <SideBar.BrandLogo src={logo.src} css={{ width: 140 }} />
     <Badge
       theme="neutral"
       size="xs"

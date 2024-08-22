@@ -10,7 +10,6 @@ export const DialogHeading = ({
     size="sm"
     css={{
       borderBottom: '1px solid $tonal100',
-      fontFamily: '$body',
       p: `0 $5 $5 $5`,
       mb: '$5',
       mx: '-$5',

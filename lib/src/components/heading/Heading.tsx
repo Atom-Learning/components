@@ -18,29 +18,32 @@ export const StyledHeading = styled('h2', {
         ...capsize(0.3864)
       },
       sm: {
+        fontFamily: '$body',
         fontSize: '$lg',
         lineHeight: 1.14,
-        ...capsize(0.2174, 0.2254)
+        ...capsize(0.2078, 0.2078)
       },
       md: {
         fontSize: '$xl',
         lineHeight: 1.14,
-        ...capsize(0.2174, 0.2254)
+        letterSpacing: '0.015em',
+        ...capsize(0.15, 0.28)
       },
       lg: {
         fontSize: '$2xl',
         lineHeight: 1.08,
-        ...capsize(0.1865, 0.1945)
+        letterSpacing: '0.01em',
+        ...capsize(0.12, 0.27)
       },
       xl: {
         fontSize: '$3xl',
         lineHeight: 1.12,
-        ...capsize(0.206, 0.214)
+        ...capsize(0.16, 0.28)
       },
       xxl: {
         fontSize: '$4xl',
         lineHeight: 1.06,
-        ...capsize(0.1793, 0.1873)
+        ...capsize(0.13, 0.25)
       }
     },
     noCapsize: {
