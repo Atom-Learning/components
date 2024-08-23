@@ -71,6 +71,15 @@ const blue = createTheme({
   }
 })
 
+const pink = createTheme({
+  colors: {
+    textSubtle: '$pink1000',
+    backgroundSubtle: '$pink200',
+    textBold: '#FFF',
+    backgroundBold: '$pink800'
+  }
+})
+
 const purple = createTheme({
   colors: {
     textSubtle: '$purple1000',
@@ -160,6 +169,7 @@ export const colorSchemes = {
   warning,
   grey,
   blue,
+  pink,
   purple,
   cyan,
   green,
