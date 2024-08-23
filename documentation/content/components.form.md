@@ -173,6 +173,43 @@ tabs:
       The `process` property accepts a function of type `(value: any) => any`. It can be used to process the value after validation.
 
 
+      ## Persisting form data
+
+
+      `Form` is integrated with `react-hook-form-persist`'s package to save form data into session storage:
+
+
+      * send `persist` prop to Form component to persist form data in sessionStorage
+
+      * `persist` object has a required `id`, an optional `storage` prop and optional `include` or `exclude` arrays with reference to the input's names
+
+      * `include` will only save the listed inputs to session storage and `exclude` will exclude the listed inputs
+
+      * if both `include` and `exclude` are sent it will ignore `include` and use only `exclude`
+
+      * if no `storage` prop is sent, it will default to use sessionStorage, however you can override this by sending `local` to use localStorage
+
+      * persisted form data in sessionStorage or localStorage will populate form with `defaultValues` on refresh
+
+
+      Here's an example using the `persist` prop:
+
+
+      <CodeBlock code={`<Form persist={{ id: 'nameAndSecret', exclude: \['secret'\], storage: 'local' }}>
+        <InputField
+          name="name"
+          label="Name"
+          validation={{ required: 'Name is required' }}
+        />
+        <InputField
+          name="secret"
+          label="Secret"
+          validation={{ required: 'Secret is required' }}
+        />
+        <Button type="submit">Submit</Button>
+      </Form>`} language={"tsx"} />
+
+
       ## Composing form field components
 
 
@@ -285,8 +322,9 @@ tabs:
       The same object that `useFormContext` returns is available in an optional render prop function, making it easy to use the current form state to determine whether a button should be disabled or read the current value of a specific field. Note that if `render` is provided, `Form` should not be given any children. An error will be thrown if both are provided.
 
 
-      <CodeBlock code={`<Form onSubmit={console.log}>
-        {({ formState }) => (
+      <CodeBlock code={`<Form
+        onSubmit={console.log}
+        render={({ formState }) => (
           <>
             <InputField
               label="Name"
@@ -298,15 +336,17 @@ tabs:
             </Button>
           </>
         )}
-      </Form>`} language={"tsx"} />
+      />`} language={"tsx"} />
 
 
       To access field value, another render prop that can be used is `watch(fieldName: string)`. If there were no default values provided for the form, on the first render, the `watch` function will return undefined.
 
 
-      <CodeBlock code={`<Form onSubmit={console.log}>
-        {({ watch }) => {
+      <CodeBlock code={`<Form
+        onSubmit={console.log}
+        render={({ watch }) => {
           const currentFieldValue = watch('name')
+
 
           return (
             <>
@@ -321,7 +361,7 @@ tabs:
             </>
           )
         }}
-      </Form>`} language={"tsx"} />
+      />`} language={"tsx"} />
 
 
       You can also name your `render` function:
@@ -340,7 +380,7 @@ tabs:
         </>
       )
 
-      const SomeForm = () => <Form onSubmit={console.log}><SomeFormComponent /></Form>`} language={"tsx"} />
+      const SomeForm = () => <Form onSubmit={console.log} render={SomeFormContent} />`} language={"tsx"} />
 
 
       ## Dynamic fields - useFieldArray()
@@ -402,8 +442,7 @@ tabs:
               { field1: 'test2', field2: true }
             ]
           }}
-          >
-          {({ control }) => {
+          render={({ control }) => {
             const { fields, append, remove } = useFieldArray({
               control,
               name: 'testArray'
@@ -435,7 +474,7 @@ tabs:
               </>
             )
           }}
-          </Form>`} language={"tsx"} />
+        />`} language={"tsx"} />
 
       ## API Reference
 
