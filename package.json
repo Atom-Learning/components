@@ -16,11 +16,14 @@
     "dev:sandbox": "cd lib && yarn start:sandbox",
     "build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
     "lint-staged": "cd lib && yarn run precommit",
-    "build-all": "run-s build:*"
+    "build-all": "run-s build:*",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "husky": "^4.3.8",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0"
   },
   "husky": {
     "hooks": {
