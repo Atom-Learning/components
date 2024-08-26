@@ -1,4 +1,4 @@
-import { Content, Heading as HeadingType } from 'mdast'
+import type { Content, Heading as HeadingType } from 'mdast'
 import * as React from 'react'
 
 import { Heading, HeadingProps } from '../../heading/Heading'

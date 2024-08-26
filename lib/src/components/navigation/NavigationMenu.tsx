@@ -67,7 +67,7 @@ const NavigationMenuComponent = ({
   }, [React.Children.toArray(children).length])
 
   React.useEffect(() => {
-    let timer: NodeJS.Timer
+    let timer: ReturnType<typeof setTimeout>
 
     // Delay transitioning back to initial position
     // to allow enough time for fadeOut animation to complete

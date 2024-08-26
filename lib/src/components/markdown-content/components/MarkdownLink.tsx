@@ -1,4 +1,4 @@
-import { Content, Link as LinkType } from 'mdast'
+import type { Content, Link as LinkType } from 'mdast'
 import * as React from 'react'
 
 import { Link } from '../../link'

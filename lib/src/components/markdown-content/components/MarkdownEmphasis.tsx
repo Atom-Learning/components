@@ -1,4 +1,4 @@
-import { Content, Emphasis } from 'mdast'
+import type { Content, Emphasis } from 'mdast'
 import * as React from 'react'
 
 import { styled } from '~/stitches'

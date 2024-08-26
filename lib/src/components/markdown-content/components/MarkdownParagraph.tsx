@@ -1,4 +1,4 @@
-import { Content, Paragraph } from 'mdast'
+import type { Content, Paragraph } from 'mdast'
 import * as React from 'react'
 
 import { Text } from '../../text'

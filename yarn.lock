@@ -71,8 +71,10 @@ __metadata:
     "@testing-library/user-event": "npm:^12.8.1"
     "@types/jest": "npm:^26.0.20"
     "@types/jest-axe": "npm:^3.5.1"
+    "@types/mdast": "npm:^3.0.0"
+    "@types/node": "npm:20.6.0"
     "@types/prop-types": "npm:^15"
-    "@types/react": "npm:17.0.2"
+    "@types/react": "npm:17.0.80"
     "@types/react-dom": "npm:^17.0.11"
     "@typescript-eslint/eslint-plugin": "npm:^4.29.1"
     "@typescript-eslint/parser": "npm:^4.29.1"
@@ -5793,6 +5795,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:20.6.0":
+  version: 20.6.0
+  resolution: "@types/node@npm:20.6.0"
+  checksum: 10c0/0979a218f1862a80ddb7a8ba70498798a72e4861394244657c47bd64ed0c87baa4e0c8ce693bab23e58ec272913438b341de98768dc737491c58e6faff19d955
+  languageName: node
+  linkType: hard
+
 "@types/normalize-package-data@npm:^2.4.0":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
@@ -5878,13 +5887,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.2":
-  version: 17.0.2
-  resolution: "@types/react@npm:17.0.2"
+"@types/react@npm:17.0.80, @types/react@npm:^17":
+  version: 17.0.80
+  resolution: "@types/react@npm:17.0.80"
   dependencies:
     "@types/prop-types": "npm:*"
+    "@types/scheduler": "npm:^0.16"
     csstype: "npm:^3.0.2"
-  checksum: 10c0/6b48673db526015c45a0dc036394cdc7d5fd48388b3f05f8f433e74c08fb4c80e5acfc66baa2c7cc8a091d0d8524bcb00397bc7c6286fcefad4bf4cef959d764
+  checksum: 10c0/c5d2862564212a41a327ea9c7e70b9d3996d9b0f67971d39519d42d1f3ae6ddf76b183457b7b0be9d7b5d6ff0aaeed5711448423406d20018f082077c984eec4
   languageName: node
   linkType: hard
 
@@ -5896,17 +5906,6 @@ __metadata:
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/f0d9aaa493e5a85c30651ac1dd8e92d96263237686b05f9951a92266d067ff932b469696ba5c0dee27befdcc47b77ffa01c0acd065f00252a533352d71d70007
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17":
-  version: 17.0.80
-  resolution: "@types/react@npm:17.0.80"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:^0.16"
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/c5d2862564212a41a327ea9c7e70b9d3996d9b0f67971d39519d42d1f3ae6ddf76b183457b7b0be9d7b5d6ff0aaeed5711448423406d20018f082077c984eec4
   languageName: node
   linkType: hard
 
