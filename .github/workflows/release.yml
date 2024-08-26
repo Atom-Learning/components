@@ -14,7 +14,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/setup-node@v1
         with:
-          node-version: '14'
+          node-version: '20.11'
       - run: yarn install --frozen-lockfile
       - run: npx semantic-release
         working-directory: lib
