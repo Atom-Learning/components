@@ -23,14 +23,12 @@
     "pascalcase": "^2.0.0",
     "polished": "^4.2.2",
     "randomstring": "^1.2.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-live": "3.1.2",
     "simple-oauth2": "^4.3.0"
   },
   "devDependencies": {
-    "@types/node": "^22.5.0",
-    "@types/react": "^18.3.4",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.3",
     "node-fetch": "^2",
