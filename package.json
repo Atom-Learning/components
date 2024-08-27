@@ -48,5 +48,9 @@
     "react-dom": "17.0.2",
     "next/@swc/helpers": "0.4.36",
     "@swc/helpers": "0.4.36"
+  },
+  "packageManager": "yarn@4.4.0",
+  "engines": {
+    "node": "20.x"
   }
 }

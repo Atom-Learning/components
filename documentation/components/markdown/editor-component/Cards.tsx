@@ -11,7 +11,7 @@ import {
   NoOverflowWrapper,
   TileInteractive
 } from '@atom-learning/components'
-import { intersection } from 'lodash'
+import intersection from 'lodash.intersection'
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 

@@ -1,4 +1,4 @@
-import { Content, ListItem } from 'mdast'
+import type { Content, ListItem } from 'mdast'
 import * as React from 'react'
 
 import { List } from '../../list'
