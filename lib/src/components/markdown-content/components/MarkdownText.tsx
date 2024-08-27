@@ -1,4 +1,4 @@
-import { Text as TextType } from 'mdast'
+import type { Text as TextType } from 'mdast'
 import * as React from 'react'
 
 type MarkdownTextProps = {

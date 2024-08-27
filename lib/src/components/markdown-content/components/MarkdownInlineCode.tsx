@@ -1,4 +1,4 @@
-import { InlineCode } from 'mdast'
+import type { InlineCode } from 'mdast'
 import * as React from 'react'
 
 import { styled } from '~/stitches'
