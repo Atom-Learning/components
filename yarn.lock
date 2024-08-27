@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atom-learning/components@npm:0.0.0-semantically-released, @atom-learning/components@workspace:lib":
+"@atom-learning/components@workspace:*, @atom-learning/components@workspace:lib":
   version: 0.0.0-use.local
   resolution: "@atom-learning/components@workspace:lib"
   dependencies:
@@ -132,7 +132,7 @@ __metadata:
     stitches-reset: "npm:^1.0.0"
     throttle-debounce: "npm:^3.0.1"
     tsc-alias: "npm:^1.3.5"
-    typescript: "npm:4.2.2"
+    typescript: "npm:4.2.3"
     uid: "npm:^2.0.0"
     use-deep-compare-effect: "npm:^1.8.1"
     vite: "npm:^2.2.4"
@@ -149,12 +149,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@atom-learning/documentation@workspace:documentation"
   dependencies:
-    "@atom-learning/components": "npm:0.0.0-semantically-released"
+    "@atom-learning/components": "workspace:*"
     "@atom-learning/icons": "npm:^1.20.0"
     "@atom-learning/theme": "npm:3.1.0"
     "@lukeed/uuid": "npm:^2.0.0"
+    "@types/lodash.intersection": "npm:^4"
+    "@types/node": "npm:20.6.0"
+    "@types/react": "npm:17.0.80"
+    "@types/throttle-debounce": "npm:^5"
     eslint: "npm:8.21.0"
     eslint-config-next: "npm:12.2.3"
+    gray-matter: "npm:^4.0.3"
+    lodash.intersection: "npm:^4.4.0"
     lodash.kebabcase: "npm:^4.1.1"
     netlify-cms-app: "npm:^2.15.72"
     next: "npm:12.2.3"
@@ -167,6 +173,7 @@ __metadata:
     react-dom: "npm:17.0.2"
     react-live: "npm:3.1.2"
     simple-oauth2: "npm:^4.3.0"
+    throttle-debounce: "npm:^5.0.2"
     typescript: "npm:^4.7.4"
     yaml: "npm:^2.1.1"
   languageName: unknown
@@ -5812,6 +5819,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.intersection@npm:^4":
+  version: 4.4.9
+  resolution: "@types/lodash.intersection@npm:4.4.9"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 10c0/7440b309849b4ac6564da76835d4b63d0eb79cd5b0a12d3903e4bfa36a708e088ca4f36d5ef1863d98331f345861a0a8133a43a05bc1253c3c46a4b0b55f4570
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.17.7
+  resolution: "@types/lodash@npm:4.17.7"
+  checksum: 10c0/40c965b5ffdcf7ff5c9105307ee08b782da228c01b5c0529122c554c64f6b7168fc8f11dc79aa7bae4e67e17efafaba685dc3a47e294dbf52a65ed2b67100561
+  languageName: node
+  linkType: hard
+
 "@types/mdast@npm:^3.0.0":
   version: 3.0.10
   resolution: "@types/mdast@npm:3.0.10"
@@ -6020,6 +6043,13 @@ __metadata:
   dependencies:
     "@types/jest": "npm:*"
   checksum: 10c0/f4c82418fdc129806d413d48064049ab3b099635dad06c40be2188134d15135b0b053044de7b0e032867b1ec754e7446046d8fdf6863b9454f8f757f1cac702d
+  languageName: node
+  linkType: hard
+
+"@types/throttle-debounce@npm:^5":
+  version: 5.0.2
+  resolution: "@types/throttle-debounce@npm:5.0.2"
+  checksum: 10c0/526084a7b83edd5c008f193a80c1f6851421d44921e874032d63a598047e17c1a5c97fe99a9dbf806e3d0b49a40d8c4171541a32ea1911d45b5216ddf129d51a
   languageName: node
   linkType: hard
 
@@ -10706,7 +10736,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gray-matter@npm:^4.0.2":
+"gray-matter@npm:^4.0.2, gray-matter@npm:^4.0.3":
   version: 4.0.3
   resolution: "gray-matter@npm:4.0.3"
   dependencies:
@@ -13483,6 +13513,13 @@ __metadata:
   version: 4.1.2
   resolution: "lodash.escaperegexp@npm:4.1.2"
   checksum: 10c0/484ad4067fa9119bb0f7c19a36ab143d0173a081314993fe977bd00cf2a3c6a487ce417a10f6bac598d968364f992153315f0dbe25c9e38e3eb7581dd333e087
+  languageName: node
+  linkType: hard
+
+"lodash.intersection@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.intersection@npm:4.4.0"
+  checksum: 10c0/b4c98577367aa9bf37cb69313f0355b4121a8fb0dbf5832232156fef58e8662b8bd67f81000688a802e2ab4e7417723fba3f78b5105d50eab1e84de2648bd834
   languageName: node
   linkType: hard
 
@@ -20209,6 +20246,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"throttle-debounce@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "throttle-debounce@npm:5.0.2"
+  checksum: 10c0/9a10ac51400b353562770721718486847adb5d7287c94a0c0d47df5326e8d47e5d92fcb74dac53d6734efb9344a2d46d68c7f996c2d0aedfd11446522e4bb356
+  languageName: node
+  linkType: hard
+
 "through2@npm:^4.0.0":
   version: 4.0.2
   resolution: "through2@npm:4.0.2"
@@ -20647,17 +20691,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.2.2":
-  version: 4.2.2
-  resolution: "typescript@npm:4.2.2"
+"typescript@npm:4.2.3":
+  version: 4.2.3
+  resolution: "typescript@npm:4.2.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/e67856de6baddc6113171f6e4be04e98f6fad45a93edcae0dc5ffb7e8dcd38e73490c0eb21c83709aa5dc612aa3b0e19e8c6267291ac109482b0c494ffdd1c54
+  checksum: 10c0/5ee3178699da3c0be7c79cd326670d407c3c788b3f3d2794df3ffa8f7ec9dfb52db320cd2c9054ce76047ad0436e1c80e74d0a1b552af490d99d0ff43bf85d3e
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.5.2, typescript@npm:^4.7.4":
+"typescript@npm:^4.5.2":
   version: 4.8.4
   resolution: "typescript@npm:4.8.4"
   bin:
@@ -20667,23 +20711,43 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A4.2.2#optional!builtin<compat/typescript>":
-  version: 4.2.2
-  resolution: "typescript@patch:typescript@npm%3A4.2.2#optional!builtin<compat/typescript>::version=4.2.2&hash=334f98"
+"typescript@npm:^4.7.4":
+  version: 4.9.5
+  resolution: "typescript@npm:4.9.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10c0/64e97f4d0484a5dd526782f0aa293433a3da04e67935f2f3e6d2087a8accb1417f3ee107153eae3fa577e1f316962a370ca6ef94691c634e59d9e68a32115e09
+  checksum: 10c0/5f6cad2e728a8a063521328e612d7876e12f0d8a8390d3b3aaa452a6a65e24e9ac8ea22beb72a924fd96ea0a49ea63bb4e251fb922b12eedfb7f7a26475e5c56
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.5.2#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^4.7.4#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A4.2.3#optional!builtin<compat/typescript>":
+  version: 4.2.3
+  resolution: "typescript@patch:typescript@npm%3A4.2.3#optional!builtin<compat/typescript>::version=4.2.3&hash=334f98"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/cc740a2298d4a8c25b5d24829bb60a8e748263f365bc0ff8c19487130c68c75c1c72af88873028ac71ac86eebf6a368f909c63544f6975a3c166869fc0976904
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^4.5.2#optional!builtin<compat/typescript>":
   version: 4.8.4
   resolution: "typescript@patch:typescript@npm%3A4.8.4#optional!builtin<compat/typescript>::version=4.8.4&hash=1a91c8"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/eecab597a5a8c6e7f14804f1447cfce02e214e32c02efcfe5219c94290e3d572490e8a0d8033fd075ac429d35babf85182541a50c50bfb0c21df33c59fb9bf82
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^4.7.4#optional!builtin<compat/typescript>":
+  version: 4.9.5
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/e3333f887c6829dfe0ab6c1dbe0dd1e3e2aeb56c66460cb85c5440c566f900c833d370ca34eb47558c0c69e78ced4bfe09b8f4f98b6de7afed9b84b8d1dd06a1
   languageName: node
   linkType: hard
 
