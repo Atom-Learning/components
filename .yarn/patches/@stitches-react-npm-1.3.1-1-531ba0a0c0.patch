@@ -1,0 +1,12 @@
+diff --git a/types/css-util.d.ts b/types/css-util.d.ts
+index 5452ca4ada9c93e0e93d50f780d01a6590d7a095..8de19cb78cd7506b096ff24601cf412738c65d21 100644
+--- a/types/css-util.d.ts
++++ b/types/css-util.d.ts
+@@ -98,6 +98,7 @@ export type CSS<
+ 			| CSS<Media, Theme, ThemeMap, Utils>
+ 			| {}
+ 			| undefined
++			| any
+ 		)
+ 	}
+ )

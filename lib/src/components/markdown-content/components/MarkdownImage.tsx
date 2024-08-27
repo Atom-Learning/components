@@ -1,4 +1,4 @@
-import { Image as ImageType } from 'mdast'
+import type { Image as ImageType } from 'mdast'
 import * as React from 'react'
 
 import { CSS } from '~/stitches'
