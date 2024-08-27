@@ -5,7 +5,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import ImmutablePropTypes from "react-immutable-proptypes";
-import { find } from "lodash";
+import find from "lodash.find";
 import { fromJS, List, Map } from "immutable";
 import { reactSelectStyles } from "netlify-cms-ui-default/dist/esm/styles";
 import { validations } from "netlify-cms-lib-widgets/dist/esm/index";
