@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: '20.11'
       - run: yarn install --immutable
-      - run: npx semantic-release
+      - run: yarn semantic-release
         working-directory: lib
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
