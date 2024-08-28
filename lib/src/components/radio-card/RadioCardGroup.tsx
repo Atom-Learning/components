@@ -1,5 +1,5 @@
 import * as RadioGroup from '@radix-ui/react-radio-group'
-import type { VariantProps } from '@stitches/react'
+import type { VariantProps } from '@atom-learning/stitches-react'
 import * as React from 'react'
 
 import type { Override } from '~/utilities'

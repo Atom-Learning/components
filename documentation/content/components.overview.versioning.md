@@ -54,7 +54,7 @@ tabs:
 
         * `@semantic-release/commit-analyzer` - checks commits messages for the required tags
         * `@semantic-release/release-notes-generator` - creates/updates the release notes
-        * `semantic-release-yarn` - publishes version to `npm`
+        * `@semantic-release/npm` - publishes version to `npm`
         * `@semantic-release/github` - publishes version to `GitHub Releases`
       * `husky` - precommit hook to prevent incomplete commit messages
 nestedSlug:

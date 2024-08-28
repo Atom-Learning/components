@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '@atom-learning/stitches-react'
 
 /**
  * A flexible flex spacer that expands along the major axis of its containing flex layout.

@@ -1,4 +1,4 @@
-import { CSS } from '@stitches/react'
+import { CSS } from '@atom-learning/stitches-react'
 import * as React from 'react'
 
 import { Text } from '../text'

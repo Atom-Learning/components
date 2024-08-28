@@ -1,4 +1,4 @@
-import type { VariantProps } from '@stitches/react'
+import type { VariantProps } from '@atom-learning/stitches-react'
 import { opacify } from 'color2k'
 import * as React from 'react'
 
