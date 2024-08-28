@@ -1,7 +1,7 @@
+import { CSS, styled } from '@atom-learning/stitches-react'
 import type { UniqueIdentifier } from '@dnd-kit/core'
 import { useSortable } from '@dnd-kit/sortable'
 import { Slot } from '@radix-ui/react-slot'
-import { CSS, styled } from '@atom-learning/stitches-react'
 import * as React from 'react'
 
 import { Box } from '../box'
