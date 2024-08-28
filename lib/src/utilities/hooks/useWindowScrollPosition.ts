@@ -17,10 +17,10 @@ export const useWindowScrollPosition = ({
 }: TUseWindowScrollPositionOptions = {}): TUseWindowScrollPositionOutput => {
   const [scrollPosition, setScrollPosition] = useState({ x: 0, y: 0 })
 
-  const delayMethodFn = useMemo(() => {
-    if (delayMethod === 'throttle') return throttle
-    if (delayMethod === 'debounce') return debounce
-  }, [delayMethod])
+  const delayMethodFn = useMemo(
+    () => (delayMethod === 'debounce' ? debounce : throttle),
+    [delayMethod]
+  )
 
   useEffect(() => {
     const handleScroll = delayMethodFn(delay, () => {
