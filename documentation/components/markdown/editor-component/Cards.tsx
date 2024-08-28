@@ -158,6 +158,7 @@ export const Cards: React.FC<CardsProps> = ({
       {showTagsFilter && (
         <Box css={{ width: '100%', maxWidth: 750, mx: 'auto' }}>
           <ChipToggleGroup
+            gap={2}
             justify="center"
             type="multiple"
             value={selectedTags}

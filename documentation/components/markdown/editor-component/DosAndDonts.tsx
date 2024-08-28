@@ -23,7 +23,7 @@ const DosAndDontsItem: React.FC<TDosAndDontsItemProps> = ({
     type === 'do' ? '$success' : type === 'dont' ? '$danger' : '$warning'
   const typeText = type === 'do' ? 'Do' : type === 'dont' ? "Don't" : 'Avoid'
   return (
-    <Tile as="li" css={{ listStyle: 'none' }}>
+    <Tile css={{ listStyle: 'none' }}>
       <Box
         css={{
           background: '$base2',

@@ -19,10 +19,10 @@ export const useScrollPosition = ({
 }: TUseScrollPositionOptions): TUseScrollPositionOutput => {
   const [scrollPosition, setScrollPosition] = useState({ left: 0, top: 0 })
 
-  const delayMethodFn = useMemo(() => {
-    if (delayMethod === 'throttle') return throttle
-    if (delayMethod === 'debounce') return debounce
-  }, [delayMethod])
+  const delayMethodFn = useMemo(
+    () => (delayMethod === 'debounce' ? debounce : throttle),
+    [delayMethod]
+  )
 
   useEffect(() => {
     if (!element) return
