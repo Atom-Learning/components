@@ -1,4 +1,4 @@
-import { type CSS, styled } from '~/stitches'
+import { CSS, styled } from '~/stitches'
 import type { UniqueIdentifier } from '@dnd-kit/core'
 import { useSortable } from '@dnd-kit/sortable'
 import { Slot } from '@radix-ui/react-slot'
