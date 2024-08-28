@@ -1,5 +1,6 @@
-import type { CSS } from '~/stitches'
 import * as React from 'react'
+
+import type { CSS } from '~/stitches'
 
 import { Text } from '../text'
 import { useDataTable } from './index'
