@@ -12,7 +12,7 @@
     "format": "prettier '**/*.{js,ts,tsx}' --write"
   },
   "dependencies": {
-    "@atom-learning/components": "workspace:*",
+    "@atom-learning/components": "0.0.0-semantically-released",
     "@atom-learning/icons": "^1.20.0",
     "@atom-learning/theme": "3.1.0",
     "@lukeed/uuid": "^2.0.0",
