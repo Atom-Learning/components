@@ -9,7 +9,9 @@ type TUseResizeObserverOptions = {
 
 type TUseResizeObserverOutput = ResizeObserver | null
 
-const createResizeObserver = (callback: () => void) => {
+const createResizeObserver = (
+  callback: (entries: ResizeObserverEntry[]) => void
+) => {
   try {
     return new ResizeObserver(callback)
   } catch {
