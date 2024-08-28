@@ -5,8 +5,8 @@ import type {
   CSS as StitchesCSS,
   PropertyValue,
   ScaleValue
-} from '@stitches/react'
-import { createStitches, defaultThemeMap } from '@stitches/react'
+} from '@atom-learning/stitches-react'
+import { createStitches, defaultThemeMap } from '@atom-learning/stitches-react'
 
 export const utils = {
   bg: (value: PropertyValue<'background'>) => ({

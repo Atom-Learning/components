@@ -28,6 +28,7 @@ __metadata:
   dependencies:
     "@atom-learning/icons": "npm:1.20.0"
     "@atom-learning/jest-stitches": "npm:1.0.10"
+    "@atom-learning/stitches-react": "npm:^1.4.1"
     "@atom-learning/theme": "npm:3.1.0"
     "@commitlint/cli": "npm:^11.0.0"
     "@commitlint/config-conventional": "npm:^11.0.0"
@@ -62,7 +63,6 @@ __metadata:
     "@semantic-release/npm": "npm:^12.0.1"
     "@semantic-release/release-notes-generator": "npm:^14.0.1"
     "@size-limit/preset-small-lib": "npm:^7.0.5"
-    "@stitches/react": "https://gitpkg.vercel.app/Atom-Learning/stitches/packages/react?canary"
     "@tanstack/react-table": "npm:^8.5.11"
     "@testing-library/dom": "npm:^7.28.1"
     "@testing-library/jest-dom": "npm:^5.11.9"
@@ -207,6 +207,15 @@ __metadata:
     chalk: "npm:^4.1.0"
     css: "npm:^3.0.0"
   checksum: 10c0/b8d5a405db20a9c43555a7de65ecee2eecd52e827f576aa7dce872beb3fb517aceacea4f99f3e45c8f639e7385719cc9db8749340e79c56e105c581d2c097ec4
+  languageName: node
+  linkType: hard
+
+"@atom-learning/stitches-react@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@atom-learning/stitches-react@npm:1.4.1"
+  peerDependencies:
+    react: ">= 16.3.0"
+  checksum: 10c0/96b98527b1173b59d61c808570f4accd267de209578a9fa0c6ff957c7882b052e367e6703b021cb3ce9e14be195e1e3976214044c7c7243ad0d2753d69bb96d9
   languageName: node
   linkType: hard
 
@@ -5475,15 +5484,6 @@ __metadata:
   peerDependencies:
     size-limit: 7.0.8
   checksum: 10c0/8f25dfa62f3ea31fc911139e493081e883b563cbfa69610b879f49524a05dc8c0365b5e6af9553dfd6779ddf38576c8cd2bd18c4ec4d97e5a4ab7af36e30d47b
-  languageName: node
-  linkType: hard
-
-"@stitches/react@https://gitpkg.vercel.app/Atom-Learning/stitches/packages/react?canary":
-  version: 1.3.1-1
-  resolution: "@stitches/react@https://gitpkg.vercel.app/Atom-Learning/stitches/packages/react?canary"
-  peerDependencies:
-    react: ">= 16.3.0"
-  checksum: 10c0/70de3d84f37cfa888dbe3022f6490cb65801563f2ec94d162af6566f8956338e83375fbfd72933f6db14572f634e2717ff17266ef1f9c212a60d5497d5622989
   languageName: node
   linkType: hard
 
