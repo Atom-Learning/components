@@ -1,12 +1,12 @@
-import type { Theme } from '@atom-learning/theme/lib/theme-atom'
-import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
-import { themeMap } from '@atom-learning/theme/theme-map'
 import type {
   CSS as StitchesCSS,
   PropertyValue,
   ScaleValue
-} from '@stitches/react'
-import { createStitches, defaultThemeMap } from '@stitches/react'
+} from '@atom-learning/stitches-react'
+import { createStitches, defaultThemeMap } from '@atom-learning/stitches-react'
+import type { Theme } from '@atom-learning/theme/lib/theme-atom'
+import * as atomTheme from '@atom-learning/theme/lib/theme-atom'
+import { themeMap } from '@atom-learning/theme/theme-map'
 
 export const utils = {
   bg: (value: PropertyValue<'background'>) => ({

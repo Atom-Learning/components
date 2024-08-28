@@ -797,6 +797,23 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: inline-block;
   }
 
+  .PJLV-iDuHyI-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
+    z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
+  }
+
+  .PJLV-iDuHyI-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .PJLV-iDuHyI-css[disabled] * {
+    pointer-events: none;
+  }
+
   .c-dyvMgW-iecBjWS-css {
     font-weight: 600;
   }
@@ -1429,9 +1446,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
   .c-ecNzKx-iAsWAM-css {
     display: inline-block;
   }
-}
 
-@media  {
   .PJLV-iDuHyI-css {
     --scale: 1;
     transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
@@ -4667,6 +4682,23 @@ exports[`DataTable server-side renders 1`] = `
     display: inline-block;
   }
 
+  .PJLV-iDuHyI-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
+    z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
+  }
+
+  .PJLV-iDuHyI-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .PJLV-iDuHyI-css[disabled] * {
+    pointer-events: none;
+  }
+
   .c-dyvMgW-iecBjWS-css {
     font-weight: 600;
   }
@@ -5831,6 +5863,23 @@ exports[`DataTable sticky columns renders 1`] = `
 
   .c-ecNzKx-iAsWAM-css {
     display: inline-block;
+  }
+
+  .PJLV-iDuHyI-css {
+    --scale: 1;
+    transform: translateX(calc(var(--translate-x)  * 1px)) translateY(calc(var(--translate-y)  * 1px)) scale(var(--scale));
+    z-index: ;
+    --translate-x: 0;
+    --translate-y: 0;
+  }
+
+  .PJLV-iDuHyI-css[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .PJLV-iDuHyI-css[disabled] * {
+    pointer-events: none;
   }
 
   .c-dyvMgW-iecBjWS-css {

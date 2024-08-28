@@ -1,4 +1,4 @@
-import type { VariantProps } from '@stitches/react'
+import type { VariantProps } from '@atom-learning/stitches-react'
 import invariant from 'invariant'
 import * as React from 'react'
 
