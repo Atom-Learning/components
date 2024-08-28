@@ -16,6 +16,12 @@ exports[`Spacer component renders 1`] = `
   .c-dyvMgW > .c-dyvMgW:after {
     display: none;
   }
+
+  .c-gJAAjO {
+    flex: 1;
+    justify-self: stretch;
+    align-self: stretch;
+  }
 }
 
 @media  {
@@ -40,14 +46,6 @@ exports[`Spacer component renders 1`] = `
 @media  {
   .c-dhzjXW-ilgjzAj-css {
     width: 600px;
-  }
-}
-
-@media  {
-  .c-gJAAjO {
-    flex: 1;
-    justify-self: stretch;
-    align-self: stretch;
   }
 }
 
