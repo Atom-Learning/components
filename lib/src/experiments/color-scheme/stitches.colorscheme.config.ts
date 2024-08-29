@@ -1,4 +1,5 @@
 import { Theme } from '@atom-learning/theme/lib/theme-atom'
+
 import { createTheme } from '~/stitches'
 
 export const colorSchemes = {}
