@@ -434,14 +434,14 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="open"
     >
       <button
-        aria-controls="radix-0"
+        aria-controls="radix-:r1:"
         aria-disabled="true"
         aria-expanded="true"
         class="c-cHXTzy t-dVJiaJ t-hwCMvs"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="open"
-        id="radix-1"
+        id="radix-:r0:"
         type="button"
       >
         TRIGGER1
@@ -458,11 +458,11 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-1"
+        aria-labelledby="radix-:r0:"
         class="c-hAleka"
         data-orientation="vertical"
         data-state="open"
-        id="radix-0"
+        id="radix-:r1:"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
       >
@@ -475,13 +475,13 @@ exports[`Accordion component renders an accordion 1`] = `
       data-state="closed"
     >
       <button
-        aria-controls="radix-2"
+        aria-controls="radix-:r3:"
         aria-expanded="false"
         class="c-cHXTzy t-dVJiaJ t-hwCMvs"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="closed"
-        id="radix-3"
+        id="radix-:r2:"
         type="button"
       >
         TRIGGER2
@@ -498,12 +498,12 @@ exports[`Accordion component renders an accordion 1`] = `
         </svg>
       </button>
       <div
-        aria-labelledby="radix-3"
+        aria-labelledby="radix-:r2:"
         class="c-hAleka"
         data-orientation="vertical"
         data-state="closed"
         hidden=""
-        id="radix-2"
+        id="radix-:r3:"
         role="region"
         style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
       />
