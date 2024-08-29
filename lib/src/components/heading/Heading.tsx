@@ -5,7 +5,6 @@ import type { Override } from '~/utilities'
 import { capsize } from '~/utilities'
 
 export const StyledHeading = styled('h2', {
-  fontFamily: '$display',
   fontWeight: 700,
   m: 0,
   variants: {
@@ -23,22 +22,26 @@ export const StyledHeading = styled('h2', {
         ...capsize(0.2078, 0.2078)
       },
       md: {
+        fontFamily: '$body',
         fontSize: '$xl',
         lineHeight: 1.14,
         ...capsize(0.15, 0.28)
       },
       lg: {
+        fontFamily: '$display',
         fontSize: '$2xl',
         lineHeight: 1.08,
         letterSpacing: '0.01em',
         ...capsize(0.12, 0.27)
       },
       xl: {
+        fontFamily: '$display',
         fontSize: '$3xl',
         lineHeight: 1.12,
         ...capsize(0.16, 0.28)
       },
       xxl: {
+        fontFamily: '$display',
         fontSize: '$4xl',
         lineHeight: 1.06,
         ...capsize(0.13, 0.25)
