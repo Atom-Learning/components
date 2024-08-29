@@ -29,7 +29,7 @@ tabs:
       <ComponentProps component="EmptyState" />
   - title: Visual
     content: >-
-
+      
 
       ## Structure
 
