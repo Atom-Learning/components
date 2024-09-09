@@ -34,7 +34,7 @@ const BrandSwitch = () => {
   const { theme, updateTheme } = useTheme()
   return (
     <Flex gap="3" align="center" justify="center">
-      <Text size="sm" css={{ fontWeight: '600' }}>
+      <Text size="sm" weight="bold">
         Brand
       </Text>
       <ToggleGroup.Root

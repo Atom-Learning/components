@@ -2,13 +2,7 @@ import { Flex, Box, styled, Text } from '@atom-learning/components'
 import * as React from 'react'
 
 const TokenListItemToken = ({ token }: { token: string }) => (
-  <Text
-    size="md"
-    css={{
-      color: '$base10',
-      fontWeight: 600
-    }}
-  >
+  <Text size="md" weight="bold" css={{ color: '$base10' }}>
     {`$${token}`}
   </Text>
 )
