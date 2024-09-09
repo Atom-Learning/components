@@ -202,9 +202,9 @@ tabs:
 
       | Active tab bottom line      | $primary800  | \#0F67F5 |
 
-      | Not active tab font-color   | $tonal500    | \#333333 |
+      | Not active tab font-color   | $grey900    | \#333333 |
 
-      | Not active tabs bottom line | $tonal100    | \#EEEEEE |
+      | Not active tabs bottom line | $grey200    | \#EEEEEE |
 
 
 

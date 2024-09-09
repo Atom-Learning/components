@@ -125,7 +125,7 @@ tabs:
       Depending on the background of your page, you can change the theme of the track to be either light or tonal using `theme="light"`. Default is `theme="tonal"`.
 
 
-      <CodeBlock live={true} preview={true} code={`<Box css={{ p: '$5', bg: '$tonal100' }}>
+      <CodeBlock live={true} preview={true} code={`<Box css={{ p: '$5', bg: '$grey200' }}>
         <Slider theme="light" defaultValue={[50]} css={{ width: '320px' }} />
       </Box>`} language={"tsx"} />
 
