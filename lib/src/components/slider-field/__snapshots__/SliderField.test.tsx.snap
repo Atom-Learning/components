@@ -84,14 +84,12 @@ exports[`SliderField component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 }
@@ -123,21 +121,29 @@ exports[`SliderField component renders 1`] = `
     background: var(--colors-tonal200);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 }
 
@@ -148,7 +154,7 @@ exports[`SliderField component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-iQwDky-css {
+  .c-ctivzP-iQwDky-css {
     margin-top: var(--space-4);
     color: var(--colors-tonal300);
     width: 100%;
@@ -213,7 +219,7 @@ exports[`SliderField component renders 1`] = `
         value="50"
       />
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iQwDky-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iQwDky-css"
       >
         Current value is 50
       </p>

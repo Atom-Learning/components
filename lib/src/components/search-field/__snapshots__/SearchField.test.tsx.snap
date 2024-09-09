@@ -25,14 +25,12 @@ exports[`SearchField component renders a field in error state - has no programma
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -115,21 +113,29 @@ exports[`SearchField component renders a field in error state - has no programma
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -163,18 +169,18 @@ exports[`SearchField component renders a field in error state - has no programma
     stroke-width: 1.5;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -212,7 +218,7 @@ exports[`SearchField component renders a field in error state - has no programma
     margin-right: var(--space-2);
   }
 
-  .c-dyvMgW-iiTbKsx-css {
+  .c-ctivzP-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -247,7 +253,7 @@ exports[`SearchField component renders a field in error state - has no programma
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-iuasYV-state-error"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             id="searchField"
             llabel="Search Field"
             name="searchField"
@@ -297,7 +303,7 @@ exports[`SearchField component renders a field in error state - has no programma
           />
         </svg>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
         >
           This field is required
         </span>
@@ -337,14 +343,12 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -421,21 +425,29 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -505,7 +517,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-kRqBPT-disabled-true"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             disabled=""
             id="searchField"
             name="searchField"
@@ -560,14 +572,12 @@ exports[`SearchField component renders a field with a search input - has no prog
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -644,21 +654,29 @@ exports[`SearchField component renders a field with a search input - has no prog
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -723,7 +741,7 @@ exports[`SearchField component renders a field with a search input - has no prog
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             id="searchField"
             name="searchField"
             placeholder="Search Field"

@@ -24,14 +24,12 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -52,21 +50,29 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMBZYr-fDXBFo-size-xs {
@@ -80,18 +86,18 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -99,7 +105,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
+  .c-ctivzP-ildsiYK-css {
     color: var(--colors-tonal400);
   }
 
@@ -167,14 +173,12 @@ exports[`Avatar component renders an icon avatar 1`] = `
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -195,21 +199,29 @@ exports[`Avatar component renders an icon avatar 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMBZYr-fDXBFo-size-xs {
@@ -223,18 +235,18 @@ exports[`Avatar component renders an icon avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -242,7 +254,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
+  .c-ctivzP-ildsiYK-css {
     color: var(--colors-tonal400);
   }
 
@@ -345,14 +357,12 @@ exports[`Avatar component renders an inital avatar 1`] = `
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -373,21 +383,29 @@ exports[`Avatar component renders an inital avatar 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMBZYr-fDXBFo-size-xs {
@@ -401,18 +419,18 @@ exports[`Avatar component renders an inital avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -420,7 +438,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
+  .c-ctivzP-ildsiYK-css {
     color: var(--colors-tonal400);
   }
 
@@ -441,7 +459,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-bhKTXb-size-xs c-dyvMgW-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
     >
       A
     </p>
@@ -473,14 +491,12 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -501,21 +517,29 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMBZYr-fDXBFo-size-xs {
@@ -531,7 +555,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
+  .c-ctivzP-ildsiYK-css {
     color: var(--colors-tonal400);
   }
 
@@ -599,14 +623,12 @@ exports[`Avatar component renders the initial of the name when the src of the im
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 }
@@ -617,26 +639,34 @@ exports[`Avatar component renders the initial of the name when the src of the im
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
+  .c-ctivzP-ildsiYK-css {
     color: var(--colors-tonal400);
   }
 }
@@ -646,7 +676,7 @@ exports[`Avatar component renders the initial of the name when the src of the im
     class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
     >
       B
     </p>

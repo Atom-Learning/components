@@ -133,14 +133,12 @@ exports[`NumberInput component renders lg size 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -199,21 +197,29 @@ exports[`NumberInput component renders lg size 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-kOvGWL-hSbHZR-size-lg {
@@ -298,7 +304,7 @@ exports[`NumberInput component renders lg size 1`] = `
         aria-valuemax="9007199254740991"
         aria-valuemin="0"
         aria-valuenow="0"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
         inputmode="numeric"
         name="test"
         pattern="[0-9]*"
@@ -467,14 +473,12 @@ exports[`NumberInput component renders number input  1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -521,21 +525,29 @@ exports[`NumberInput component renders number input  1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 }
 
@@ -616,7 +628,7 @@ exports[`NumberInput component renders number input  1`] = `
         aria-valuemax="9007199254740991"
         aria-valuemin="0"
         aria-valuenow="0"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
         inputmode="numeric"
         name="test"
         pattern="[0-9]*"

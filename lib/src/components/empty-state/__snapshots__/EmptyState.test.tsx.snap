@@ -23,14 +23,12 @@ exports[`EmptyState component renders a component 1`] = `
     margin: 0;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -50,21 +48,29 @@ exports[`EmptyState component renders a component 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-cXdTNb-kSBam-size-sm {
@@ -83,7 +89,7 @@ exports[`EmptyState component renders a component 1`] = `
       No users found!
     </h2>
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
     >
       You need to add some users before you can use this feature
     </p>

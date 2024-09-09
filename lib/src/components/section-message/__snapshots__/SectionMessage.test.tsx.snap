@@ -16,14 +16,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
     vertical-align: middle;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -121,38 +119,50 @@ exports[`renders SectionMessage component and has no programmatically detectable
     stroke-width: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-ecBjWS-weight-bold {
+    font-weight: 600;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
   }
 
   .c-oUmPa-elrktp-size-sm {
@@ -217,11 +227,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
     margin-bottom: var(--space-2);
   }
 
-  .c-dyvMgW-iecBjWS-css {
-    font-weight: 600;
-  }
-
-  .c-dyvMgW-ibDwMAO-css {
+  .c-ctivzP-ibDwMAO-css {
     color: var(--colors-grey900);
   }
 
@@ -265,12 +271,12 @@ exports[`renders SectionMessage component and has no programmatically detectable
         class="c-PJLV c-PJLV-ihLIGwZ-css"
       >
         <p
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iecBjWS-css"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body"
         >
           Title message
         </p>
         <p
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-ibDwMAO-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-ibDwMAO-css"
         >
           This is the description
         </p>

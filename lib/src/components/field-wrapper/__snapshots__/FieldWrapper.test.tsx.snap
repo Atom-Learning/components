@@ -12,7 +12,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin: 0;
   }
 
-  .c-bmSGqY {
+  .c-cVWBGG {
     background: unset;
     border: unset;
     padding: unset;
@@ -22,38 +22,38 @@ exports[`FieldWrapper component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-bmSGqY:focus,
-  .c-bmSGqY:hover {
+  .c-cVWBGG:focus,
+  .c-cVWBGG:hover {
     color: var(--colors-primary900);
     text-decoration: underline;
   }
 
-  .c-bmSGqY:active {
+  .c-cVWBGG:active {
     color: var(--colors-primary1000);
   }
 
-  .c-bmSGqY[disabled] {
+  .c-cVWBGG[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-dyvMgW > .c-bmSGqY,
-  .c-jryFOR > .c-bmSGqY,
-  .c-PJLV > .c-bmSGqY,
-  .c-bYNGXt > .c-bmSGqY {
+  .c-ctivzP > .c-cVWBGG,
+  .c-iUMJTc > .c-cVWBGG,
+  .c-PJLV > .c-cVWBGG,
+  .c-bYNGXt > .c-cVWBGG {
     font-size: 100%;
     line-height: 1;
   }
 
-  .c-dyvMgW > .c-bmSGqY::before,
-  .c-dyvMgW > .c-bmSGqY::after,
-  .c-jryFOR > .c-bmSGqY::before,
-  .c-jryFOR > .c-bmSGqY::after,
-  .c-PJLV > .c-bmSGqY::before,
-  .c-PJLV > .c-bmSGqY::after,
-  .c-bYNGXt > .c-bmSGqY::before,
-  .c-bYNGXt > .c-bmSGqY::after {
+  .c-ctivzP > .c-cVWBGG::before,
+  .c-ctivzP > .c-cVWBGG::after,
+  .c-iUMJTc > .c-cVWBGG::before,
+  .c-iUMJTc > .c-cVWBGG::after,
+  .c-PJLV > .c-cVWBGG::before,
+  .c-PJLV > .c-cVWBGG::after,
+  .c-bYNGXt > .c-cVWBGG::before,
+  .c-bYNGXt > .c-cVWBGG::after {
     content: none;
   }
 
@@ -70,14 +70,12 @@ exports[`FieldWrapper component renders 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -137,18 +135,18 @@ exports[`FieldWrapper component renders 1`] = `
     font-weight: 600;
   }
 
-  .c-bmSGqY-bndJoy-size-sm {
+  .c-cVWBGG-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-bmSGqY-bndJoy-size-sm::before {
+  .c-cVWBGG-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-bmSGqY-bndJoy-size-sm::after {
+  .c-cVWBGG-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -158,21 +156,29 @@ exports[`FieldWrapper component renders 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-PJLV-iymbh-theme-error {
@@ -185,18 +191,18 @@ exports[`FieldWrapper component renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -218,7 +224,7 @@ exports[`FieldWrapper component renders 1`] = `
     margin-right: var(--space-2);
   }
 
-  .c-dyvMgW-iiTbKsx-css {
+  .c-ctivzP-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -237,7 +243,7 @@ exports[`FieldWrapper component renders 1`] = `
         Example Field
       </label>
       <a
-        class="c-bmSGqY c-bmSGqY-bndJoy-size-sm"
+        class="c-cVWBGG c-cVWBGG-bndJoy-size-sm"
         href="https://example.com"
         rel="noopener noreferrer"
         target="_blank"
@@ -249,7 +255,7 @@ exports[`FieldWrapper component renders 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
         id="example"
         name="example"
         type="text"
@@ -280,7 +286,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <span
-        class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
+        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
       >
         Example error
       </span>

@@ -113,14 +113,12 @@ exports[`Calendar component renders 1`] = `
     grid-gap: var(--space-1) var(--space-2);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -188,21 +186,29 @@ exports[`Calendar component renders 1`] = `
     width: 20px;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
+  }
+
+  .c-ctivzP-ecBjWS-weight-bold {
+    font-weight: 600;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-nNuCY-huXVXM-isOutsideMonth-true {
@@ -279,8 +285,7 @@ exports[`Calendar component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-idQvJRf-css {
-    font-weight: 600;
+  .c-ctivzP-igjdJOs-css {
     text-align: center;
   }
 }
@@ -346,37 +351,37 @@ exports[`Calendar component renders 1`] = `
         class="c-fPxPMR c-fPxPMR-ihbtntv-css"
       >
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Sun
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Mon
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Tue
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Wed
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Thu
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Fri
         </span>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-idQvJRf-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-ecBjWS-weight-bold c-ctivzP-cyRcZm-family-body c-ctivzP-igjdJOs-css"
         >
           Sat
         </span>

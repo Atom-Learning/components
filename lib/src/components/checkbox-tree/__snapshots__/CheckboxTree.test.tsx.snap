@@ -78,14 +78,12 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -178,26 +176,34 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
     width: var(--sizes-1);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-fmPQHp-noCapsize-true::before,
-  .c-dyvMgW-fmPQHp-noCapsize-true::after {
+  .c-ctivzP-fmPQHp-noCapsize-true::before,
+  .c-ctivzP-fmPQHp-noCapsize-true::after {
     display: none !important;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-elrktp-size-sm {
@@ -253,7 +259,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
             value="on"
           />
           <span
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
           >
             Top level
           </span>
@@ -303,7 +309,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
               value="on"
             />
             <span
-              class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
             >
               Trigger With Submenu
             </span>
@@ -336,7 +342,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                   value="on"
                 />
                 <span
-                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
                 >
                   1
                 </span>
@@ -363,7 +369,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                   value="on"
                 />
                 <span
-                  class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
                 >
                   2
                 </span>
@@ -413,7 +419,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                     value="on"
                   />
                   <span
-                    class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
                   >
                     All but nested
                   </span>
@@ -446,7 +452,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                         value="on"
                       />
                       <span
-                        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
                       >
                         Nested: #1
                       </span>
@@ -473,7 +479,7 @@ exports[`CheckboxTree component renders a checkbox 1`] = `
                         value="on"
                       />
                       <span
-                        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+                        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
                       >
                         Nested: #2
                       </span>

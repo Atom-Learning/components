@@ -6,14 +6,12 @@ exports[`Spacer component renders 1`] = `
     display: flex;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -25,21 +23,29 @@ exports[`Spacer component renders 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 }
 
@@ -54,7 +60,7 @@ exports[`Spacer component renders 1`] = `
     class="c-dhzjXW c-dhzjXW-ilgjzAj-css"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
     >
       flex item left
     </p>
@@ -62,7 +68,7 @@ exports[`Spacer component renders 1`] = `
       class="c-gJAAjO"
     />
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
     >
       flex item right
     </p>

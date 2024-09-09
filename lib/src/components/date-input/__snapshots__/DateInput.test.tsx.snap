@@ -19,14 +19,12 @@ exports[`DateInput component renders 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -89,21 +87,29 @@ exports[`DateInput component renders 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-PrXKS-size-md {
@@ -157,7 +163,7 @@ exports[`DateInput component renders 1`] = `
     >
       <input
         aria-label="test"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""
@@ -212,14 +218,12 @@ exports[`DateInput component renders lg size 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -447,21 +451,29 @@ exports[`DateInput component renders lg size 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-eMzMJc-weight-regular {
+    font-weight: 400;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-PrXKS-size-md {
@@ -493,21 +505,25 @@ exports[`DateInput component renders lg size 1`] = `
     width: 20px;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
+  }
+
+  .c-ctivzP-ecBjWS-weight-bold {
+    font-weight: 600;
   }
 
   .c-nNuCY-huXVXM-isOutsideMonth-true {
@@ -613,8 +629,7 @@ exports[`DateInput component renders lg size 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-idQvJRf-css {
-    font-weight: 600;
+  .c-ctivzP-igjdJOs-css {
     text-align: center;
   }
 
@@ -633,7 +648,7 @@ exports[`DateInput component renders lg size 1`] = `
     >
       <input
         aria-label="test"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""
