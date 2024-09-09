@@ -28,14 +28,23 @@ export const getTextVariant: (options: {
 })
 
 export const StyledText = styled('p', {
-  fontFamily: '$body',
-  fontWeight: 400,
-  margin: 0,
+  m: 0,
   /** Allow nesting `<Text />` inside `<Text />` without forcing a new line and spacing. */
   '& > &': {
     '&:before, &:after': { display: 'none' }
   },
-  variants: textVariants
+  variants: {
+    ...textVariants,
+    weight: {
+      regular: { fontWeight: 400 },
+      bold: { fontWeight: 600 }
+    },
+    family: {
+      body: { fontFamily: '$body' },
+      display: { fontFamily: '$display' },
+      mono: { fontFamily: '$mono' },
+    }
+  }
 })
 
 type TextProps = Override<
@@ -57,8 +66,19 @@ type TextProps = Override<
 >
 
 export const Text: React.ForwardRefExoticComponent<TextProps> =
-  React.forwardRef(({ size = 'md', ...remainingProps }, ref) => (
-    <StyledText size={size} {...remainingProps} ref={ref} />
+  React.forwardRef(({
+    size = 'md',
+    weight = 'regular',
+    family  = 'body',
+    ...remainingProps
+  }, ref) => (
+    <StyledText
+      size={size}
+      weight={weight}
+      family={family}
+      {...remainingProps}
+      ref={ref}
+    />
   ))
 
 Text.displayName = 'Text'

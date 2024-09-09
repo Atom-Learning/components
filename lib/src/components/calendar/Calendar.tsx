@@ -194,8 +194,9 @@ export const Calendar = ({
                   <Text
                     as="span"
                     size="sm"
+                    weight="bold"
                     key={`${month}${year}${weekday}`}
-                    css={{ fontWeight: 600, textAlign: 'center' }}
+                    css={{ textAlign: 'center' }}
                   >
                     {weekday}
                   </Text>
