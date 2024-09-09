@@ -3,7 +3,7 @@
 exports[`Pagination component renders 1`] = `
 @media  {
   :root,
-  .t-ibLFLe {
+  .t-kqsZfK {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -198,26 +198,11 @@ exports[`Pagination component renders 1`] = `
     --colors-marsh1000: hsl(147, 17%, 18%);
     --colors-marsh1100: hsl(147, 24%, 13%);
     --colors-marsh1200: hsl(147, 14%, 7%);
-    --colors-tonal50: hsl(0, 0%, 96%);
-    --colors-tonal100: hsl(0, 0%, 92%);
-    --colors-tonal200: hsl(0, 0%, 62%);
-    --colors-tonal300: hsl(0, 0%, 46%);
-    --colors-tonal400: hsl(0, 0%, 33%);
-    --colors-tonal500: hsl(0, 0%, 20%);
-    --colors-tonal600: hsl(0, 0%, 12%);
     --colors-alpha100: hsla(0, 0%, 20%, 0.1);
     --colors-alpha150: hsla(0, 0%, 20%, 0.15);
     --colors-alpha200: hsla(0, 0%, 20%, 0.2);
     --colors-alpha250: hsla(0, 0%, 20%, 0.25);
     --colors-alpha600: hsla(0, 0%, 20%, 0.6);
-    --colors-brandRed: hsl(0, 91%, 64%);
-    --colors-brandRedAccent: hsl(14, 100%, 71%);
-    --colors-brandGreen: hsl(128, 47%, 53%);
-    --colors-brandGreenAccent: hsl(168, 100%, 20%);
-    --colors-brandPurple: hsl(256, 65%, 62%);
-    --colors-brandPurpleAccent: hsl(256, 93%, 35%);
-    --colors-brandYellow: hsl(41, 100%, 55%);
-    --colors-brandYellowAccent: hsl(33, 100%, 50%);
     --colors-infoLight: hsl(215, 100%, 98%);
     --colors-info: hsl(217, 92%, 51%);
     --colors-infoMid: hsl(223, 79%, 44%);
