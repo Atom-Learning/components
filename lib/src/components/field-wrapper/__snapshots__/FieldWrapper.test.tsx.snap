@@ -173,7 +173,7 @@ exports[`FieldWrapper component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -255,7 +255,7 @@ exports[`FieldWrapper component renders 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
         id="example"
         name="example"
         type="text"
@@ -286,7 +286,7 @@ exports[`FieldWrapper component renders 1`] = `
         />
       </svg>
       <span
-        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
+        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
       >
         Example error
       </span>

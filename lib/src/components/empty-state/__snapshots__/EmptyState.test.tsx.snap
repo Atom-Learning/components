@@ -65,7 +65,7 @@ exports[`EmptyState component renders a component 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -89,7 +89,7 @@ exports[`EmptyState component renders a component 1`] = `
       No users found!
     </h2>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
     >
       You need to add some users before you can use this feature
     </p>

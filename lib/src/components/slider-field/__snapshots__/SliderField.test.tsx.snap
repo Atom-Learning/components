@@ -138,7 +138,7 @@ exports[`SliderField component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -219,7 +219,7 @@ exports[`SliderField component renders 1`] = `
         value="50"
       />
       <p
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iQwDky-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iQwDky-css"
       >
         Current value is 50
       </p>

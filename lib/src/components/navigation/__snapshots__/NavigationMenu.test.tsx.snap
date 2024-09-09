@@ -531,7 +531,7 @@ exports[`Nav component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -683,12 +683,12 @@ exports[`Nav component renders 1`] = `
                   class="c-dhzjXW c-dhzjXW-iiTKOFX-css"
                 >
                   <p
-                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-BFpiU"
+                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-BFpiU"
                   >
                     Colours
                   </p>
                   <p
-                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
                   >
                     Atom Learning color palette
                   </p>

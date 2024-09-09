@@ -500,7 +500,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -924,7 +924,7 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
       No data available
     </h2>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
     >
       Something is missing
     </p>
@@ -1254,7 +1254,7 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -3062,7 +3062,7 @@ exports[`DataTable component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -3231,7 +3231,7 @@ exports[`DataTable component renders 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
         name="User search"
         type="search"
         value=""
@@ -3569,7 +3569,7 @@ exports[`DataTable component renders 1`] = `
     class="c-kzpziV"
   >
     <p
-      class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       1 - 10 of 18 items
     </p>
@@ -4441,7 +4441,7 @@ exports[`DataTable server-side renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -4826,7 +4826,7 @@ exports[`DataTable server-side renders 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
         type="search"
         value=""
       />
@@ -5163,7 +5163,7 @@ exports[`DataTable server-side renders 1`] = `
     class="c-kzpziV"
   >
     <p
-      class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       1 - 10 of 18 items
     </p>
@@ -5700,7 +5700,7 @@ exports[`DataTable sticky columns renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 

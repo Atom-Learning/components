@@ -73,7 +73,7 @@ exports[`Input component renders a number input 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -95,7 +95,7 @@ exports[`Input component renders a number input 1`] = `
     class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ikLAKdM-css"
   >
     <input
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
       inputmode="numeric"
       pattern="[0-9]*"
       placeholder="001"
@@ -178,7 +178,7 @@ exports[`Input component renders a text input 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -200,7 +200,7 @@ exports[`Input component renders a text input 1`] = `
     class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ikLAKdM-css"
   >
     <input
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
       placeholder="INPUT"
       type="text"
     />
@@ -281,7 +281,7 @@ exports[`Input component renders lg size 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -312,7 +312,7 @@ exports[`Input component renders lg size 1`] = `
     class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg"
   >
     <input
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
       type="text"
     />
   </div>

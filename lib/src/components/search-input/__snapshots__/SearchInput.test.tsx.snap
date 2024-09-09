@@ -96,7 +96,7 @@ exports[`SearchInput component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -143,7 +143,7 @@ exports[`SearchInput component renders 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
         type="search"
         value=""
       />
@@ -332,7 +332,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -411,7 +411,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
       class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
         type="search"
         value="testingWhenDefaultValue"
       />
@@ -602,7 +602,7 @@ exports[`SearchInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -675,7 +675,7 @@ exports[`SearchInput component renders lg size 1`] = `
       class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg"
     >
       <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
         type="search"
         value=""
       />

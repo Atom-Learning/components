@@ -130,7 +130,7 @@ exports[`SearchField component renders a field in error state - has no programma
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -253,7 +253,7 @@ exports[`SearchField component renders a field in error state - has no programma
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-iuasYV-state-error"
         >
           <input
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             id="searchField"
             llabel="Search Field"
             name="searchField"
@@ -303,7 +303,7 @@ exports[`SearchField component renders a field in error state - has no programma
           />
         </svg>
         <span
-          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
         >
           This field is required
         </span>
@@ -442,7 +442,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -517,7 +517,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-kRqBPT-disabled-true"
         >
           <input
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             disabled=""
             id="searchField"
             name="searchField"
@@ -671,7 +671,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -741,7 +741,7 @@ exports[`SearchField component renders a field with a search input - has no prog
           class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
         >
           <input
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
             id="searchField"
             name="searchField"
             placeholder="Search Field"

@@ -454,7 +454,7 @@ exports[`BannerRegular component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -634,7 +634,7 @@ exports[`BannerRegular component renders 1`] = `
         Get ready for entrance exams
       </h2>
       <p
-        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
+        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>
@@ -1160,7 +1160,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -1370,7 +1370,7 @@ exports[`BannerRegular component renders dismissible variant 1`] = `
         Get ready for entrance exams
       </h2>
       <p
-        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
+        class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-flAohk-size-md c-bYxtOe c-bYxtOe-llIiIE-containerSize-sm c-bYxtOe-gyGikE-containerSize-md c-bYxtOe-cRYaBy-cv"
       >
         Talk to our admissions experts on to learn how to support your child. This is an example lor!
       </p>

@@ -268,7 +268,7 @@ exports[`MarkdownContent component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -415,7 +415,7 @@ exports[`MarkdownContent component renders 1`] = `
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <strong
         class="c-ecBjWS"
@@ -424,7 +424,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <strong
         class="c-ecBjWS"
@@ -433,7 +433,7 @@ exports[`MarkdownContent component renders 1`] = `
       </strong>
     </p>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <em
         class="c-bYNGXt"
@@ -442,7 +442,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <em
         class="c-bYNGXt"
@@ -484,7 +484,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Create a list by starting a line with 
           <code
@@ -510,7 +510,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Sub-lists are made by indenting 2 spaces:
         </p>
@@ -521,7 +521,7 @@ exports[`MarkdownContent component renders 1`] = `
             class="c-PJLV"
           >
             <p
-              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
             >
               Marker character change forces new list start:
             </p>
@@ -532,7 +532,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
                 >
                   Ac tristique libero volutpat at
                 </p>
@@ -545,7 +545,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
                 >
                   Facilisis in pretium nisl aliquet
                 </p>
@@ -558,7 +558,7 @@ exports[`MarkdownContent component renders 1`] = `
                 class="c-PJLV"
               >
                 <p
-                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
                 >
                   Nulla volutpat aliquam velit
                 </p>
@@ -571,7 +571,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Very easy!
         </p>
@@ -589,7 +589,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Lorem ipsum dolor sit amet
         </p>
@@ -598,7 +598,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Consectetur adipiscing elit
         </p>
@@ -607,7 +607,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           Integer molestie lorem at massa
         </p>
@@ -616,7 +616,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           You can use sequential numbers...
         </p>
@@ -625,7 +625,7 @@ exports[`MarkdownContent component renders 1`] = `
         class="c-PJLV"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
         >
           ...or keep all the numbers as 
           <code
@@ -653,7 +653,7 @@ exports[`MarkdownContent component renders 1`] = `
       Inline code
     </h3>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       This is inline 
       <code
@@ -697,7 +697,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <a
         class="c-cVWBGG c-cVWBGG-gvmVBy-size-md"
@@ -709,7 +709,7 @@ line 3 of code
       </a>
     </p>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <a
         class="c-cVWBGG c-cVWBGG-gvmVBy-size-md"
@@ -733,7 +733,7 @@ line 3 of code
       class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
     />
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
     >
       <img
         alt="Minion"

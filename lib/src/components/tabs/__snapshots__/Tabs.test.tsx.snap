@@ -455,7 +455,7 @@ exports[`Tabs component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -494,7 +494,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
           >
             Trigger 1
           </span>
@@ -515,7 +515,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
           >
             Trigger 2
           </span>
@@ -538,7 +538,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
           >
             Trigger 3
           </span>

@@ -143,7 +143,7 @@ exports[`Tree renders 1`] = `
     display: none !important;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -192,7 +192,7 @@ exports[`Tree renders 1`] = `
         class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
       >
         <span
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-bWcumU"
         >
           #1
         </span>
@@ -229,7 +229,7 @@ exports[`Tree renders 1`] = `
             </svg>
           </button>
           <span
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-bWcumU"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-bWcumU"
           >
             Trigger With Submenu
           </span>

@@ -36,7 +36,7 @@ export const StyledText = styled('p', {
   variants: {
     ...textVariants,
     weight: {
-      regular: { fontWeight: 400 },
+      normal: { fontWeight: 400 },
       bold: { fontWeight: 600 }
     },
     family: {
@@ -68,7 +68,7 @@ type TextProps = Override<
 export const Text: React.ForwardRefExoticComponent<TextProps> =
   React.forwardRef(({
     size = 'md',
-    weight = 'regular',
+    weight = 'normal',
     family  = 'body',
     ...remainingProps
   }, ref) => (

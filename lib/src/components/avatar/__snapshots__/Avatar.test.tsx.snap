@@ -67,7 +67,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -216,7 +216,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -400,7 +400,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -459,7 +459,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
   >
     <p
-      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
     >
       A
     </p>
@@ -534,7 +534,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -656,7 +656,7 @@ exports[`Avatar component renders the initial of the name when the src of the im
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -676,7 +676,7 @@ exports[`Avatar component renders the initial of the name when the src of the im
     class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
     >
       B
     </p>

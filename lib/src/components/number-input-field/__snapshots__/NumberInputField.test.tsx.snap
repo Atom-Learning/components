@@ -230,7 +230,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -387,7 +387,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
             aria-valuemax="9007199254740991"
             aria-valuemin="0"
             aria-valuenow="0"
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
             id="numberInputField"
             inputmode="numeric"
             name="numberInputField"
@@ -446,7 +446,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
           />
         </svg>
         <span
-          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
         >
           Cannot enter values less than 7
         </span>
@@ -691,7 +691,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -804,7 +804,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
             aria-valuemax="9007199254740991"
             aria-valuemin="0"
             aria-valuenow="0"
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
             disabled=""
             id="numberInputField"
             inputmode="numeric"
@@ -1080,7 +1080,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-regular {
+  .c-ctivzP-eMzMJc-weight-normal {
     font-weight: 400;
   }
 
@@ -1188,7 +1188,7 @@ exports[`NumberInputField component renders a field with a number input - has no
             aria-valuemax="9007199254740991"
             aria-valuemin="0"
             aria-valuenow="0"
-            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-regular c-ctivzP-cyRcZm-family-body c-foJWJd"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
             id="numberInputField"
             inputmode="numeric"
             name="numberInputField"
