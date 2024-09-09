@@ -2,8 +2,8 @@
 
 exports[`Tooltip component renders a tooltip 1`] = `
 @media  {
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -19,7 +19,7 @@ exports[`Tooltip component renders a tooltip 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -27,44 +27,44 @@ exports[`Tooltip component renders a tooltip 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
 
-  .c-kfLCww {
-    fill: var(--colors-tonal500);
+  .c-euCLOJ {
+    fill: var(--colors-grey900);
   }
 
-  [data-align="end"] .c-kfLCww {
+  [data-align="end"] .c-euCLOJ {
     margin-right: var(--space-2);
   }
 
-  [data-align="start"] .c-kfLCww {
+  [data-align="start"] .c-euCLOJ {
     margin-left: var(--space-2);
   }
 }
 
 @media  {
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 }
@@ -82,7 +82,7 @@ exports[`Tooltip component renders a tooltip 1`] = `
     style="position: fixed; left: 0px; top: 0px; transform: translate(0, -200%); min-width: max-content;"
   >
     <div
-      class="c-hVoQtf c-hVoQtf-gWQnqe-size-md"
+      class="c-hkdxUu c-hkdxUu-gWQnqe-size-md"
       data-align="center"
       data-side="top"
       data-state="instant-open"
@@ -93,7 +93,7 @@ exports[`Tooltip component renders a tooltip 1`] = `
         style="position: absolute; bottom: 0px; transform: translateY(100%); visibility: hidden;"
       >
         <svg
-          class="c-kfLCww"
+          class="c-euCLOJ"
           height="5"
           preserveAspectRatio="none"
           style="display: block;"

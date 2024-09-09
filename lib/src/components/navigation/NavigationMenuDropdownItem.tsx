@@ -14,7 +14,7 @@ export const NavigationMenuDropdownItem: React.ForwardRefExoticComponent<
 })
 
 export const NavigationMenuDropdownItemTitle = styled(Text, {
-  color: '$tonal500',
+  color: '$grey900',
   fontWeight: 600
 })
 

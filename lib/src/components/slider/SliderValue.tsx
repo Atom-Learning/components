@@ -15,7 +15,7 @@ export const SliderValue = ({
   outputLabel = (value) => `Current value is ${value}`
 }: SliderValueProps) => {
   return (
-    <Text css={{ mt: '$4', color: '$tonal300', width: '100%' }}>
+    <Text css={{ mt: '$4', color: '$grey700', width: '100%' }}>
       {outputLabel(value.length === 1 ? value[0] : value)}
     </Text>
   )

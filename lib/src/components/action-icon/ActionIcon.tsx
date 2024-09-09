@@ -106,7 +106,7 @@ const StyledButton = styled('button', {
 
   // prettier-ignore
   compoundVariants: [
-    getSimpleVariant('neutral', '$tonal300', '$primary900', '$primary1000'),
+    getSimpleVariant('neutral', '$grey700', '$primary900', '$primary1000'),
     getSimpleVariant('primary', '$primary800', '$primary900', '$primary1000'),
     getSimpleVariant('primaryDark', '$primary1000', '$primary1100', '$primary1200'),
     getSimpleVariant('success', '$success', '$successMid', '$successDark'),

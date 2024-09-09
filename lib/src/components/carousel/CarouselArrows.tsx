@@ -28,7 +28,7 @@ const buttonStyles = {
     color: '$primary1000'
   },
   '&:disabled': {
-    color: '$tonal100'
+    color: '$grey200'
   }
 }
 

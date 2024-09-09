@@ -33,13 +33,13 @@ export const TopBarBrandLogo = ({
 TopBarBrandLogo.toString = () => '.topbar-brand-logo'
 
 export const TopBarBrandName = styled(Text, {
-  color: '$tonal400'
+  color: '$grey800'
 })
 
 export const TopBarBrand = styled('a', {
   display: 'flex',
   alignItems: 'center',
   textDecoration: 'none',
-  color: '$tonal400',
+  color: '$grey800',
   '&:hover, &:focus': { textDecoration: 'none' }
 })

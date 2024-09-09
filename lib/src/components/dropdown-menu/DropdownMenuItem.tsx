@@ -5,7 +5,7 @@ import { disabledStyle } from '~/utilities'
 
 export const itemStyles = {
   alignItems: 'center',
-  color: '$tonal600',
+  color: '$grey1000',
   cursor: 'pointer',
   display: 'flex',
   fontFamily: '$body',

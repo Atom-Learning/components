@@ -6,8 +6,8 @@ exports[`NumberInputField component renders a field in error state - has no prog
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -47,39 +47,39 @@ exports[`NumberInputField component renders a field in error state - has no prog
     vertical-align: middle;
   }
 
-  .c-dWvLOH {
-    border-color: var(--colors-tonal400) !important;
+  .c-euKflc {
+    border-color: var(--colors-grey800) !important;
     z-index: 1;
     height: 100% !important;
   }
 
-  .c-dWvLOH:hover {
-    background: var(--colors-tonal50);
+  .c-euKflc:hover {
+    background: var(--colors-grey100);
   }
 
-  .c-dWvLOH:hover svg {
-    color: var(--colors-tonal400);
+  .c-euKflc:hover svg {
+    color: var(--colors-grey800);
   }
 
-  .c-dWvLOH svg {
-    color: var(--colors-tonal300);
+  .c-euKflc svg {
+    color: var(--colors-grey700);
   }
 
-  .c-dWvLOH:active {
-    background: var(--colors-tonal100);
+  .c-euKflc:active {
+    background: var(--colors-grey200);
   }
 
-  .c-dWvLOH:active svg {
-    color: var(--colors-tonal500);
+  .c-euKflc:active svg {
+    color: var(--colors-grey900);
   }
 
-  .c-dWvLOH:disabled {
+  .c-euKflc:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -95,7 +95,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -103,25 +103,25 @@ exports[`NumberInputField component renders a field in error state - has no prog
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -172,24 +172,24 @@ exports[`NumberInputField component renders a field in error state - has no prog
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -205,7 +205,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -299,7 +299,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-dWvLOH-iwWtoZ-css {
+  .c-euKflc-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -315,7 +315,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
     pointer-events: none;
   }
 
-  .c-dWvLOH-ihgsOSq-css {
+  .c-euKflc-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -346,7 +346,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="numberInputField"
         >
           Number Input
@@ -362,7 +362,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label="decrement"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -404,7 +404,7 @@ exports[`NumberInputField component renders a field in error state - has no prog
         >
           <button
             aria-label="increment"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >
@@ -467,8 +467,8 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -508,39 +508,39 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     vertical-align: middle;
   }
 
-  .c-dWvLOH {
-    border-color: var(--colors-tonal400) !important;
+  .c-euKflc {
+    border-color: var(--colors-grey800) !important;
     z-index: 1;
     height: 100% !important;
   }
 
-  .c-dWvLOH:hover {
-    background: var(--colors-tonal50);
+  .c-euKflc:hover {
+    background: var(--colors-grey100);
   }
 
-  .c-dWvLOH:hover svg {
-    color: var(--colors-tonal400);
+  .c-euKflc:hover svg {
+    color: var(--colors-grey800);
   }
 
-  .c-dWvLOH svg {
-    color: var(--colors-tonal300);
+  .c-euKflc svg {
+    color: var(--colors-grey700);
   }
 
-  .c-dWvLOH:active {
-    background: var(--colors-tonal100);
+  .c-euKflc:active {
+    background: var(--colors-grey200);
   }
 
-  .c-dWvLOH:active svg {
-    color: var(--colors-tonal500);
+  .c-euKflc:active svg {
+    color: var(--colors-grey900);
   }
 
-  .c-dWvLOH:disabled {
+  .c-euKflc:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -556,7 +556,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -564,25 +564,25 @@ exports[`NumberInputField component renders a field with a disabled input - has 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -633,24 +633,24 @@ exports[`NumberInputField component renders a field with a disabled input - has 
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -666,7 +666,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -729,7 +729,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     margin-bottom: var(--space-3);
   }
 
-  .c-dWvLOH-iwWtoZ-css {
+  .c-euKflc-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -745,7 +745,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
     pointer-events: none;
   }
 
-  .c-dWvLOH-ihgsOSq-css {
+  .c-euKflc-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -764,7 +764,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="numberInputField"
         >
           Number Input
@@ -780,7 +780,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label="decrement"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -822,7 +822,7 @@ exports[`NumberInputField component renders a field with a disabled input - has 
         >
           <button
             aria-label="increment"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-ihgsOSq-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -856,8 +856,8 @@ exports[`NumberInputField component renders a field with a number input - has no
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -897,39 +897,39 @@ exports[`NumberInputField component renders a field with a number input - has no
     vertical-align: middle;
   }
 
-  .c-dWvLOH {
-    border-color: var(--colors-tonal400) !important;
+  .c-euKflc {
+    border-color: var(--colors-grey800) !important;
     z-index: 1;
     height: 100% !important;
   }
 
-  .c-dWvLOH:hover {
-    background: var(--colors-tonal50);
+  .c-euKflc:hover {
+    background: var(--colors-grey100);
   }
 
-  .c-dWvLOH:hover svg {
-    color: var(--colors-tonal400);
+  .c-euKflc:hover svg {
+    color: var(--colors-grey800);
   }
 
-  .c-dWvLOH svg {
-    color: var(--colors-tonal300);
+  .c-euKflc svg {
+    color: var(--colors-grey700);
   }
 
-  .c-dWvLOH:active {
-    background: var(--colors-tonal100);
+  .c-euKflc:active {
+    background: var(--colors-grey200);
   }
 
-  .c-dWvLOH:active svg {
-    color: var(--colors-tonal500);
+  .c-euKflc:active svg {
+    color: var(--colors-grey900);
   }
 
-  .c-dWvLOH:disabled {
+  .c-euKflc:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -945,7 +945,7 @@ exports[`NumberInputField component renders a field with a number input - has no
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -953,25 +953,25 @@ exports[`NumberInputField component renders a field with a number input - has no
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -1022,24 +1022,24 @@ exports[`NumberInputField component renders a field with a number input - has no
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -1055,7 +1055,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -1113,7 +1113,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     margin-bottom: var(--space-3);
   }
 
-  .c-dWvLOH-iwWtoZ-css {
+  .c-euKflc-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -1129,7 +1129,7 @@ exports[`NumberInputField component renders a field with a number input - has no
     pointer-events: none;
   }
 
-  .c-dWvLOH-ihgsOSq-css {
+  .c-euKflc-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1148,7 +1148,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="numberInputField"
         >
           Number Input
@@ -1164,7 +1164,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label="decrement"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-iwWtoZ-css"
             disabled=""
             tabindex="-1"
             type="button"
@@ -1205,7 +1205,7 @@ exports[`NumberInputField component renders a field with a number input - has no
         >
           <button
             aria-label="increment"
-            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+            class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-ihgsOSq-css"
             tabindex="-1"
             type="button"
           >

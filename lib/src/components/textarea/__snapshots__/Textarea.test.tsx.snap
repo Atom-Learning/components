@@ -2,15 +2,15 @@
 
 exports[`Textarea component renders a textarea 1`] = `
 @media  {
-  .c-dMfLxD {
+  .c-bhkMIq {
     box-shadow: none;
     font-size: var(--fontSizes-md);
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: var(--radii-0);
     box-sizing: border-box;
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     font-family: var(--fonts-body);
     font-weight: 400;
     line-height: 1.4;
@@ -24,25 +24,25 @@ exports[`Textarea component renders a textarea 1`] = `
     width: 100%;
   }
 
-  .c-dMfLxD:focus {
+  .c-bhkMIq:focus {
     border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-dMfLxD[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-bhkMIq[disabled] {
+    background-color: var(--colors-grey200);
+    color: var(--colors-grey800);
     cursor: not-allowed;
   }
 
-  .c-dMfLxD::placeholder {
-    color: var(--colors-tonal300);
+  .c-bhkMIq::placeholder {
+    color: var(--colors-grey700);
     opacity: 1;
   }
 }
 
 @media  {
-  .c-dMfLxD-ikLAKdM-css {
+  .c-bhkMIq-ikLAKdM-css {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -51,7 +51,7 @@ exports[`Textarea component renders a textarea 1`] = `
 
 <div>
   <textarea
-    class="c-dMfLxD c-dMfLxD-ikLAKdM-css"
+    class="c-bhkMIq c-bhkMIq-ikLAKdM-css"
     placeholder="DESCRIPTION"
   />
 </div>

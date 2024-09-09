@@ -9,7 +9,7 @@ export const DialogHeading = ({
   <Heading
     size="sm"
     css={{
-      borderBottom: '1px solid $tonal100',
+      borderBottom: '1px solid $grey200',
       p: `0 $5 $5 $5`,
       mb: '$5',
       mx: '-$5',

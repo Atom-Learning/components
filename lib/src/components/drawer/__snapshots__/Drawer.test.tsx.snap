@@ -464,17 +464,17 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -495,7 +495,7 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
     HEADER
     <button
       aria-label="Close"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv"
       type="button"
     >
       <svg

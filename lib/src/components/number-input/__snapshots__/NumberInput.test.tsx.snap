@@ -41,39 +41,39 @@ exports[`NumberInput component renders lg size 1`] = `
     vertical-align: middle;
   }
 
-  .c-dWvLOH {
-    border-color: var(--colors-tonal400) !important;
+  .c-euKflc {
+    border-color: var(--colors-grey800) !important;
     z-index: 1;
     height: 100% !important;
   }
 
-  .c-dWvLOH:hover {
-    background: var(--colors-tonal50);
+  .c-euKflc:hover {
+    background: var(--colors-grey100);
   }
 
-  .c-dWvLOH:hover svg {
-    color: var(--colors-tonal400);
+  .c-euKflc:hover svg {
+    color: var(--colors-grey800);
   }
 
-  .c-dWvLOH svg {
-    color: var(--colors-tonal300);
+  .c-euKflc svg {
+    color: var(--colors-grey700);
   }
 
-  .c-dWvLOH:active {
-    background: var(--colors-tonal100);
+  .c-euKflc:active {
+    background: var(--colors-grey200);
   }
 
-  .c-dWvLOH:active svg {
-    color: var(--colors-tonal500);
+  .c-euKflc:active svg {
+    color: var(--colors-grey900);
   }
 
-  .c-dWvLOH:disabled {
+  .c-euKflc:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -89,7 +89,7 @@ exports[`NumberInput component renders lg size 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -97,25 +97,25 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -164,15 +164,15 @@ exports[`NumberInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-kfLCww {
-    fill: var(--colors-tonal500);
+  .c-euCLOJ {
+    fill: var(--colors-grey900);
   }
 
-  [data-align="end"] .c-kfLCww {
+  [data-align="end"] .c-euCLOJ {
     margin-right: var(--space-2);
   }
 
-  [data-align="start"] .c-kfLCww {
+  [data-align="start"] .c-euCLOJ {
     margin-left: var(--space-2);
   }
 }
@@ -189,7 +189,7 @@ exports[`NumberInput component renders lg size 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -245,7 +245,7 @@ exports[`NumberInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-dWvLOH-iwWtoZ-css {
+  .c-euKflc-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -261,7 +261,7 @@ exports[`NumberInput component renders lg size 1`] = `
     pointer-events: none;
   }
 
-  .c-dWvLOH-ihgsOSq-css {
+  .c-euKflc-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -279,7 +279,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -320,7 +320,7 @@ exports[`NumberInput component renders lg size 1`] = `
     >
       <button
         aria-label="increment"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >
@@ -381,39 +381,39 @@ exports[`NumberInput component renders number input  1`] = `
     vertical-align: middle;
   }
 
-  .c-dWvLOH {
-    border-color: var(--colors-tonal400) !important;
+  .c-euKflc {
+    border-color: var(--colors-grey800) !important;
     z-index: 1;
     height: 100% !important;
   }
 
-  .c-dWvLOH:hover {
-    background: var(--colors-tonal50);
+  .c-euKflc:hover {
+    background: var(--colors-grey100);
   }
 
-  .c-dWvLOH:hover svg {
-    color: var(--colors-tonal400);
+  .c-euKflc:hover svg {
+    color: var(--colors-grey800);
   }
 
-  .c-dWvLOH svg {
-    color: var(--colors-tonal300);
+  .c-euKflc svg {
+    color: var(--colors-grey700);
   }
 
-  .c-dWvLOH:active {
-    background: var(--colors-tonal100);
+  .c-euKflc:active {
+    background: var(--colors-grey200);
   }
 
-  .c-dWvLOH:active svg {
-    color: var(--colors-tonal500);
+  .c-euKflc:active svg {
+    color: var(--colors-grey900);
   }
 
-  .c-dWvLOH:disabled {
+  .c-euKflc:disabled {
     opacity: 0.3;
     pointer-events: none;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -429,7 +429,7 @@ exports[`NumberInput component renders number input  1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -437,25 +437,25 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -517,7 +517,7 @@ exports[`NumberInput component renders number input  1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -569,7 +569,7 @@ exports[`NumberInput component renders number input  1`] = `
 }
 
 @media  {
-  .c-dWvLOH-iwWtoZ-css {
+  .c-euKflc-iwWtoZ-css {
     border-right: none;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -585,7 +585,7 @@ exports[`NumberInput component renders number input  1`] = `
     pointer-events: none;
   }
 
-  .c-dWvLOH-ihgsOSq-css {
+  .c-euKflc-ihgsOSq-css {
     border-left: none;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -603,7 +603,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="decrement"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-iwWtoZ-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-iwWtoZ-css"
         disabled=""
         tabindex="-1"
         type="button"
@@ -644,7 +644,7 @@ exports[`NumberInput component renders number input  1`] = `
     >
       <button
         aria-label="increment"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-dWvLOH c-dWvLOH-ihgsOSq-css"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fboUUB-cv c-euKflc c-euKflc-ihgsOSq-css"
         tabindex="-1"
         type="button"
       >

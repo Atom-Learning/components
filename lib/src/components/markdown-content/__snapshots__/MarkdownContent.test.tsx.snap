@@ -2,46 +2,46 @@
 
 exports[`MarkdownContent component renders 1`] = `
 @media  {
-  .c-bJoNOb > *:not(:first-child) {
+  .c-bXVtTm > *:not(:first-child) {
     margin-top: var(--space-5);
   }
 
-  .c-bJoNOb > *:not(:last-child) {
+  .c-bXVtTm > *:not(:last-child) {
     margin-bottom: var(--space-5);
   }
 
-  .c-bJoNOb > .c-iUMJTc {
+  .c-bXVtTm > .c-iUMJTc {
     max-width: 65ch;
   }
 
-  .c-bJoNOb > .c-ctivzP {
+  .c-bXVtTm > .c-ctivzP {
     max-width: 75ch;
   }
 
-  .c-bJoNOb > .c-bBdCwN {
+  .c-bXVtTm > .c-bBdCwN {
     max-width: 75ch;
   }
 
-  .c-bJoNOb > .c-fNKiiB {
+  .c-bXVtTm > .c-fxIenL {
     margin-top: var(--space-5);
     margin-bottom: var(--space-5);
   }
 
-  .c-bJoNOb > .c-iSBxEZ {
+  .c-bXVtTm > .c-iSBxEZ {
     display: block;
   }
 
-  .c-bJoNOb > .c-iSBxEZ:not(:first-child) {
+  .c-bXVtTm > .c-iSBxEZ:not(:first-child) {
     margin-top: var(--space-6);
   }
 
-  .c-bJoNOb > .c-iSBxEZ:not(:last-child) {
+  .c-bXVtTm > .c-iSBxEZ:not(:last-child) {
     margin-bottom: var(--space-6);
   }
 
-  .c-fNKiiB {
+  .c-fxIenL {
     border: 0;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
   }
 
   .c-iUMJTc {
@@ -81,20 +81,20 @@ exports[`MarkdownContent component renders 1`] = `
     margin-bottom: 0;
   }
 
-  .c-bUqGCm {
-    background: var(--colors-tonal100);
+  .c-ldrHKO {
+    background: var(--colors-grey200);
     border-radius: var(--radii-0);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     display: inline-block;
     font-family: var(--fonts-mono);
     font-size: 85%;
     padding: var(--space-0) var(--space-1);
   }
 
-  .c-lopCzs {
-    background: var(--colors-tonal100);
+  .c-kBSZaI {
+    background: var(--colors-grey200);
     border-radius: var(--radii-1);
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     font-family: var(--fonts-mono);
     font-size: var(--fontSizes-sm);
     line-height: 1.4;
@@ -155,7 +155,7 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
-  .c-fNKiiB-jokUAR-orientation-horizontal {
+  .c-fxIenL-jokUAR-orientation-horizontal {
     height: 1px;
     width: 100%;
   }
@@ -344,7 +344,7 @@ exports[`MarkdownContent component renders 1`] = `
 }
 
 @media  {
-  .c-fNKiiB-ifGHEql-css {
+  .c-fxIenL-ifGHEql-css {
     width: 100%;
   }
 
@@ -360,10 +360,10 @@ exports[`MarkdownContent component renders 1`] = `
 
 <div>
   <div
-    class="c-bJoNOb"
+    class="c-bXVtTm"
   >
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -371,7 +371,7 @@ exports[`MarkdownContent component renders 1`] = `
       Headings
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h1
       class="c-iUMJTc c-iUMJTc-gwyVDE-size-xl"
@@ -404,7 +404,7 @@ exports[`MarkdownContent component renders 1`] = `
       h6 Heading
     </h6>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -412,7 +412,7 @@ exports[`MarkdownContent component renders 1`] = `
       Emphasis
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <p
       class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
@@ -451,7 +451,7 @@ exports[`MarkdownContent component renders 1`] = `
       </em>
     </p>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -459,10 +459,10 @@ exports[`MarkdownContent component renders 1`] = `
       Blockquotes
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -470,7 +470,7 @@ exports[`MarkdownContent component renders 1`] = `
       Lists
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h3
       class="c-iUMJTc c-iUMJTc-iEIMJs-size-md"
@@ -488,19 +488,19 @@ exports[`MarkdownContent component renders 1`] = `
         >
           Create a list by starting a line with 
           <code
-            class="c-PJLV c-bUqGCm"
+            class="c-PJLV c-ldrHKO"
           >
             +
           </code>
           , 
           <code
-            class="c-PJLV c-bUqGCm"
+            class="c-PJLV c-ldrHKO"
           >
             -
           </code>
           , or 
           <code
-            class="c-PJLV c-bUqGCm"
+            class="c-PJLV c-ldrHKO"
           >
             *
           </code>
@@ -629,7 +629,7 @@ exports[`MarkdownContent component renders 1`] = `
         >
           ...or keep all the numbers as 
           <code
-            class="c-PJLV c-bUqGCm"
+            class="c-PJLV c-ldrHKO"
           >
             1.
           </code>
@@ -637,7 +637,7 @@ exports[`MarkdownContent component renders 1`] = `
       </li>
     </ol>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -645,7 +645,7 @@ exports[`MarkdownContent component renders 1`] = `
       Code
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h3
       class="c-iUMJTc c-iUMJTc-iEIMJs-size-md"
@@ -657,7 +657,7 @@ exports[`MarkdownContent component renders 1`] = `
     >
       This is inline 
       <code
-        class="c-PJLV c-bUqGCm"
+        class="c-PJLV c-ldrHKO"
       >
         code
       </code>
@@ -668,7 +668,7 @@ exports[`MarkdownContent component renders 1`] = `
       Indented code
     </h3>
     <pre
-      class="c-PJLV c-lopCzs"
+      class="c-PJLV c-kBSZaI"
     >
       // Some comments
 line 1 of code
@@ -681,12 +681,12 @@ line 3 of code
       Block code "fences"
     </h3>
     <pre
-      class="c-PJLV c-lopCzs"
+      class="c-PJLV c-kBSZaI"
     >
       Sample text here...
     </pre>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -694,7 +694,7 @@ line 3 of code
       Links
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <p
       class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
@@ -722,7 +722,7 @@ line 3 of code
       </a>
     </p>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <h2
       class="c-iUMJTc c-iUMJTc-glvsPs-size-lg"
@@ -730,7 +730,7 @@ line 3 of code
       Images
     </h2>
     <hr
-      class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal c-fNKiiB-ifGHEql-css"
+      class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal c-fxIenL-ifGHEql-css"
     />
     <p
       class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"

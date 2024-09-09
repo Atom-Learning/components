@@ -138,17 +138,17 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -162,8 +162,8 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-iUMJTc-ihTftrn-css {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-iUMJTc-ijLZCBh-css {
+    border-bottom: 1px solid var(--colors-grey200);
     padding: 0 var(--space-5) var(--space-5) var(--space-5);
     margin-bottom: var(--space-5);
     margin-left: calc(var(--space-5)*-1);
@@ -189,7 +189,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
 >
   <button
     aria-label="Close dialog"
-    class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-ifOCxRY-css"
+    class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-ifOCxRY-css"
     type="button"
   >
     <svg
@@ -204,7 +204,7 @@ exports[`Dialog component opens the popover once trigger is clicked 1`] = `
     </svg>
   </button>
   <h2
-    class="c-iUMJTc c-iUMJTc-kCkEYj-size-sm c-iUMJTc-ihTftrn-css"
+    class="c-iUMJTc c-iUMJTc-kCkEYj-size-sm c-iUMJTc-ijLZCBh-css"
   >
     TITLE
   </h2>
@@ -374,17 +374,17 @@ exports[`Dialog component with custom background renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -398,8 +398,8 @@ exports[`Dialog component with custom background renders 1`] = `
     width: var(--sizes-5);
   }
 
-  .c-iUMJTc-ihTftrn-css {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-iUMJTc-ijLZCBh-css {
+    border-bottom: 1px solid var(--colors-grey200);
     padding: 0 var(--space-5) var(--space-5) var(--space-5);
     margin-bottom: var(--space-5);
     margin-left: calc(var(--space-5)*-1);
@@ -438,7 +438,7 @@ exports[`Dialog component with custom background renders 1`] = `
   >
     <button
       aria-label="Close dialog"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-ifOCxRY-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-ifOCxRY-css"
       type="button"
     >
       <svg

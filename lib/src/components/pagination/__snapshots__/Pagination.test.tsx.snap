@@ -516,17 +516,17 @@ exports[`Pagination component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -537,7 +537,7 @@ exports[`Pagination component renders 1`] = `
   >
     <button
       aria-label="Previous page"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVZtAj"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-bVZtAj"
       disabled=""
       type="button"
     >
@@ -571,7 +571,7 @@ exports[`Pagination component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open pagination popover"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv"
       data-state="closed"
       data-testid="pagination_popover_trigger"
       type="button"
@@ -608,7 +608,7 @@ exports[`Pagination component renders 1`] = `
     </button>
     <button
       aria-label="Next page"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-bVVNNd"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-bVVNNd"
       type="button"
     >
       <svg

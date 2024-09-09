@@ -28,7 +28,7 @@ export const AvatarInitial = () => {
   }
 
   return (
-    <Text size={textSize} css={{ color: '$tonal400' }}>
+    <Text size={textSize} css={{ color: '$grey800' }}>
       {name[0].toUpperCase()}
     </Text>
   )

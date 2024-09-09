@@ -344,15 +344,15 @@ exports[`TopBar component renders 1`] = `
     }
 }
 
-  .c-dbEDIJ {
+  .c-cmeUbs {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
   }
 
-  .c-dbEDIJ:hover,
-  .c-dbEDIJ:focus {
+  .c-cmeUbs:hover,
+  .c-cmeUbs:focus {
     text-decoration: none;
   }
 
@@ -365,8 +365,8 @@ exports[`TopBar component renders 1`] = `
     display: none;
   }
 
-  .c-ldsiYK {
-    color: var(--colors-tonal400);
+  .c-ksoatv {
+    color: var(--colors-grey800);
   }
 
   .c-oUmPa {
@@ -400,8 +400,8 @@ exports[`TopBar component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -417,7 +417,7 @@ exports[`TopBar component renders 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -425,32 +425,32 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
 
-  .c-fNKiiB {
+  .c-fxIenL {
     border: 0;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
   }
 }
 
@@ -500,11 +500,11 @@ exports[`TopBar component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
-  .c-fNKiiB-fKZlxR-orientation-vertical {
+  .c-fxIenL-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -512,23 +512,23 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
 
 @media  {
-  .c-fNKiiB-ijUXxeg-css {
+  .c-fxIenL-ijUXxeg-css {
     height: var(--sizes-2);
     background: var(--colors-divider);
   }
@@ -542,18 +542,18 @@ exports[`TopBar component renders 1`] = `
       class="c-dhzjXW c-ftiHlK"
     >
       <a
-        class="c-dbEDIJ"
+        class="c-cmeUbs"
         href="atomlearning.co.uk"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ldsiYK"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ksoatv"
         >
           Admin Panel
         </p>
       </a>
       <button
         aria-label="Search"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -574,11 +574,11 @@ exports[`TopBar component renders 1`] = `
         </svg>
       </button>
       <hr
-        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ijUXxeg-css"
+        class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
       />
       <button
         aria-label="Light/Dark mode"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -947,15 +947,15 @@ exports[`TopBar component renders the lg variant 1`] = `
     }
 }
 
-  .c-dbEDIJ {
+  .c-cmeUbs {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
   }
 
-  .c-dbEDIJ:hover,
-  .c-dbEDIJ:focus {
+  .c-cmeUbs:hover,
+  .c-cmeUbs:focus {
     text-decoration: none;
   }
 
@@ -968,8 +968,8 @@ exports[`TopBar component renders the lg variant 1`] = `
     display: none;
   }
 
-  .c-ldsiYK {
-    color: var(--colors-tonal400);
+  .c-ksoatv {
+    color: var(--colors-grey800);
   }
 
   .c-oUmPa {
@@ -1003,8 +1003,8 @@ exports[`TopBar component renders the lg variant 1`] = `
     vertical-align: middle;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -1020,7 +1020,7 @@ exports[`TopBar component renders the lg variant 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -1028,32 +1028,32 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
 
-  .c-fNKiiB {
+  .c-fxIenL {
     border: 0;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
   }
 }
 
@@ -1103,11 +1103,11 @@ exports[`TopBar component renders the lg variant 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
-  .c-fNKiiB-fKZlxR-orientation-vertical {
+  .c-fxIenL-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -1124,23 +1124,23 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
 
 @media  {
-  .c-fNKiiB-ijUXxeg-css {
+  .c-fxIenL-ijUXxeg-css {
     height: var(--sizes-2);
     background: var(--colors-divider);
   }
@@ -1154,18 +1154,18 @@ exports[`TopBar component renders the lg variant 1`] = `
       class="c-dhzjXW c-ftiHlK"
     >
       <a
-        class="c-dbEDIJ"
+        class="c-cmeUbs"
         href="atomlearning.co.uk"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ldsiYK"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ksoatv"
         >
           Admin Panel
         </p>
       </a>
       <button
         aria-label="Search"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -1186,11 +1186,11 @@ exports[`TopBar component renders the lg variant 1`] = `
         </svg>
       </button>
       <hr
-        class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical c-fNKiiB-ijUXxeg-css"
+        class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
       />
       <button
         aria-label="Light/Dark mode"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-PJLV"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
         data-state="closed"
         type="button"
       >

@@ -6,12 +6,12 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     display: flex;
   }
 
-  .c-kPRwHE {
+  .c-jPnep {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal500);
+    border: 1px solid var(--colors-grey900);
     border-radius: var(--radii-round);
     display: flex;
     flex-shrink: 0;
@@ -22,7 +22,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     transition: all 50ms ease-out;
   }
 
-  [data-state="checked"] .c-kPRwHE {
+  [data-state="checked"] .c-jPnep {
     background-color: var(--colors-primary800);
     border-color: var(--colors-primary800);
   }
@@ -35,17 +35,17 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     width: 6px;
   }
 
-  .c-fLfBFV {
+  .c-lgDznQ {
     align-items: center;
     background: white;
-    border: 1px solid var(--colors-tonal200);
+    border: 1px solid var(--colors-grey600);
     border-radius: var(--radii-0);
     cursor: pointer;
     display: flex;
     text-align: left;
   }
 
-  .c-fLfBFV[data-state="checked"] {
+  .c-lgDznQ[data-state="checked"] {
     outline: 2px solid var(--colors-primary800);
     outline-offset: -2px;
   }
@@ -64,22 +64,22 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     gap: var(--space-3);
   }
 
-  .c-kPRwHE-llEebI-align-left {
+  .c-jPnep-llEebI-align-left {
     margin-right: var(--space-4);
   }
 
-  .c-fLfBFV-ejCoEP-align-left {
+  .c-lgDznQ-ejCoEP-align-left {
     flex-direction: row;
   }
 
-  .c-fLfBFV-fJrRuP-size-md {
+  .c-lgDznQ-fJrRuP-size-md {
     padding-left: var(--space-4);
     padding-right: var(--space-4);
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
   }
 
-  .c-fLfBFV-djDtlJ-isFullWidth-false {
+  .c-lgDznQ-djDtlJ-isFullWidth-false {
     width: max-content;
   }
 }
@@ -97,7 +97,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
     >
       <button
         aria-checked="false"
-        class="c-fLfBFV c-fLfBFV-ejCoEP-align-left c-fLfBFV-fJrRuP-size-md c-fLfBFV-djDtlJ-isFullWidth-false"
+        class="c-lgDznQ c-lgDznQ-ejCoEP-align-left c-lgDznQ-fJrRuP-size-md c-lgDznQ-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="unchecked"
         role="radio"
@@ -106,7 +106,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         value="1"
       >
         <div
-          class="c-kPRwHE c-kPRwHE-llEebI-align-left"
+          class="c-jPnep c-jPnep-llEebI-align-left"
         />
         <div
           class="c-PJLV"
@@ -116,7 +116,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
       </button>
       <button
         aria-checked="true"
-        class="c-fLfBFV c-fLfBFV-ejCoEP-align-left c-fLfBFV-fJrRuP-size-md c-fLfBFV-djDtlJ-isFullWidth-false"
+        class="c-lgDznQ c-lgDznQ-ejCoEP-align-left c-lgDznQ-fJrRuP-size-md c-lgDznQ-djDtlJ-isFullWidth-false"
         data-radix-collection-item=""
         data-state="checked"
         role="radio"
@@ -125,7 +125,7 @@ exports[`RadioCardGroup component renders an RadioCardGroup with RadioCards 1`] 
         value="2"
       >
         <div
-          class="c-kPRwHE c-kPRwHE-llEebI-align-left"
+          class="c-jPnep c-jPnep-llEebI-align-left"
         >
           <span
             class="c-iumWEe"

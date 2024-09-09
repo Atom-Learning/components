@@ -22,17 +22,17 @@ const Grid = styled('div', {
 })
 
 const StyledButton = styled(Button, {
-  color: '$tonal600',
+  color: '$grey1000',
   p: '$3',
   width: '$6',
   variants: {
     selected: {
       false: {
-        color: '$tonal600 !important',
+        color: '$grey1000 !important',
         fontWeight: '400',
         '&:hover': {
-          bg: '$tonal100 !important',
-          color: '$tonal600 !important'
+          bg: '$grey200 !important',
+          color: '$grey1000 !important'
         },
         '&[disabled]': { bg: 'white !important' }
       }
@@ -182,7 +182,7 @@ export const Calendar = ({
             <Flex css={{ height: '$4', alignItems: 'center', mb: '$4' }}>
               <Button
                 theme="neutral"
-                css={{ px: '0', color: '$tonal600' }}
+                css={{ px: '0', color: '$grey1000' }}
                 onClick={() => setShowYears(true)}
               >
                 {monthNames[month]} {year}

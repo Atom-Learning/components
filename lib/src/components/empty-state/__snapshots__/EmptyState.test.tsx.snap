@@ -16,8 +16,8 @@ exports[`EmptyState component renders a component 1`] = `
     margin-bottom: 0;
   }
 
-  .c-eyOYLV {
-    color: var(--colors-tonal400);
+  .c-ldIHXk {
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     font-weight: 600;
     margin: 0;
@@ -32,8 +32,8 @@ exports[`EmptyState component renders a component 1`] = `
     display: none;
   }
 
-  .c-cXdTNb {
-    color: var(--colors-tonal400);
+  .c-ipewTC {
+    color: var(--colors-grey800);
     font-weight: 400;
   }
 }
@@ -43,7 +43,7 @@ exports[`EmptyState component renders a component 1`] = `
     padding: var(--space-3);
   }
 
-  .c-eyOYLV-gNjhJG-size-sm {
+  .c-ldIHXk-gNjhJG-size-sm {
     font-size: var(--fontSizes-md);
     margin-bottom: var(--space-3);
   }
@@ -73,7 +73,7 @@ exports[`EmptyState component renders a component 1`] = `
     font-family: var(--fonts-body);
   }
 
-  .c-cXdTNb-kSBam-size-sm {
+  .c-ipewTC-kSBam-size-sm {
     font-size: var(--fontSizes-sm);
     margin-bottom: var(--space-4);
   }
@@ -84,12 +84,12 @@ exports[`EmptyState component renders a component 1`] = `
     class="c-dhzjXW c-QtuIU c-QtuIU-gtyVWU-size-sm"
   >
     <h2
-      class="c-eyOYLV c-eyOYLV-gNjhJG-size-sm"
+      class="c-ldIHXk c-ldIHXk-gNjhJG-size-sm"
     >
       No users found!
     </h2>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-cXdTNb c-cXdTNb-kSBam-size-sm"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ipewTC c-ipewTC-kSBam-size-sm"
     >
       You need to add some users before you can use this feature
     </p>

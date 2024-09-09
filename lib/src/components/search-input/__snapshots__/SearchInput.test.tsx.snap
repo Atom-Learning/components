@@ -67,8 +67,8 @@ exports[`SearchInput component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
@@ -110,7 +110,7 @@ exports[`SearchInput component renders 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -127,7 +127,7 @@ exports[`SearchInput component renders 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -150,7 +150,7 @@ exports[`SearchInput component renders 1`] = `
     </div>
     <svg
       aria-hidden="true"
-      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-md c-jTFaKU-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -234,8 +234,8 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
@@ -261,8 +261,8 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     cursor: not-allowed;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -278,7 +278,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -286,25 +286,25 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -346,7 +346,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -357,23 +357,23 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: var(--sizes-4);
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -388,7 +388,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -418,7 +418,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     </div>
     <button
       aria-label="clearWhenDefaultValue"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igyKUXm-css c-PJLV"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-igyKUXm-css c-PJLV"
       data-state="closed"
       type="button"
     >
@@ -504,8 +504,8 @@ exports[`SearchInput component renders lg size 1`] = `
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
@@ -531,8 +531,8 @@ exports[`SearchInput component renders lg size 1`] = `
     cursor: not-allowed;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -548,7 +548,7 @@ exports[`SearchInput component renders lg size 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -556,25 +556,25 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -616,7 +616,7 @@ exports[`SearchInput component renders lg size 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -627,7 +627,7 @@ exports[`SearchInput component renders lg size 1`] = `
     width: var(--sizes-4);
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -635,7 +635,7 @@ exports[`SearchInput component renders lg size 1`] = `
     height: var(--sizes-5);
   }
 
-  .c-hvMhuR-koUlob-size-lg {
+  .c-jTFaKU-koUlob-size-lg {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -652,7 +652,7 @@ exports[`SearchInput component renders lg size 1`] = `
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -682,7 +682,7 @@ exports[`SearchInput component renders lg size 1`] = `
     </div>
     <svg
       aria-hidden="true"
-      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
+      class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-lg c-jTFaKU-icDTsBU-css"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

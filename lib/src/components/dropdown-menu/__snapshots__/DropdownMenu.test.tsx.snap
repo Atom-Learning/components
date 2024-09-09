@@ -7,9 +7,9 @@ exports[`DropdownMenu component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-iPAADh {
+  .c-jQqNJH {
     align-items: center;
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     cursor: pointer;
     display: flex;
     font-family: var(--fonts-body);
@@ -21,14 +21,14 @@ exports[`DropdownMenu component renders 1`] = `
     padding-bottom: var(--space-2);
   }
 
-  .c-iPAADh[disabled] {
+  .c-jQqNJH[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
     pointer-events: none;
   }
 
-  .c-iPAADh[aria-current="page"]::before,
-  .c-iPAADh:focus::before {
+  .c-jQqNJH[aria-current="page"]::before,
+  .c-jQqNJH:focus::before {
     border-left: 2px solid currentColor;
     content: "";
     height: var(--sizes-2);
@@ -38,12 +38,12 @@ exports[`DropdownMenu component renders 1`] = `
     transform: scale(1);
   }
 
-  .c-iPAADh:focus {
+  .c-jQqNJH:focus {
     color: var(--colors-primary900);
     outline: none;
   }
 
-  .c-iPAADh:hover {
+  .c-jQqNJH:hover {
     text-decoration: underline;
   }
 
@@ -51,9 +51,9 @@ exports[`DropdownMenu component renders 1`] = `
     text-decoration: none;
   }
 
-  .c-gBsmUO {
+  .c-heRWqv {
     height: 1px;
-    background-color: var(--colors-tonal200);
+    background-color: var(--colors-grey600);
     margin-top: var(--space-2);
     margin-bottom: var(--space-2);
   }
@@ -144,7 +144,7 @@ exports[`DropdownMenu component renders 1`] = `
       tabindex="-1"
     >
       <div
-        class="c-iPAADh"
+        class="c-jQqNJH"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -153,7 +153,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 1
       </div>
       <div
-        class="c-iPAADh"
+        class="c-jQqNJH"
         data-orientation="vertical"
         data-radix-collection-item=""
         role="menuitem"
@@ -162,7 +162,7 @@ exports[`DropdownMenu component renders 1`] = `
         Item 2
       </div>
       <a
-        class="c-cIdiJW c-iPAADh"
+        class="c-cIdiJW c-jQqNJH"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="http://google.com"
@@ -175,11 +175,11 @@ exports[`DropdownMenu component renders 1`] = `
       </a>
       <div
         aria-orientation="horizontal"
-        class="c-gBsmUO"
+        class="c-heRWqv"
         role="separator"
       />
       <a
-        class="c-cIdiJW c-iPAADh"
+        class="c-cIdiJW c-jQqNJH"
         data-orientation="vertical"
         data-radix-collection-item=""
         href="/logout"

@@ -33,7 +33,7 @@ const StyledTableHeader = styled('thead', {
       },
       [TABLE_HEADER_THEMES.LIGHT]: {
         [`${TableHeaderCell}`]: {
-          bg: '$tonal50',
+          bg: '$grey100',
           color: '$grey1000'
         }
       },

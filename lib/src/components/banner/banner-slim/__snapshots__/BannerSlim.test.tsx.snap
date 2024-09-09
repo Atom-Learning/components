@@ -1212,17 +1212,17 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 
@@ -1271,7 +1271,7 @@ exports[`BannerSlim component renders dismissible variant 1`] = `
       </button>
       <button
         aria-label="dismiss banner"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-jCxibG-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
+        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-rloUt-isRounded-true c-oUmPa-fVNhqX-cv c-PJLV c-PJLV-jaxTMC-emphasis-bold c-PJLV-jWCfIe-containerSize-sm c-PJLV-iNjdzM-containerSize-md"
         data-testid="dismiss"
         type="button"
       >
@@ -1906,17 +1906,17 @@ exports[`BannerSlim component renders sm variant 1`] = `
     background: rgba(255, 255, 255, 0.75);
   }
 
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 

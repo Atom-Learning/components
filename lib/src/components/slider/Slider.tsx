@@ -36,7 +36,7 @@ const StyledSlider = styled(Root, {
         [`${StyledTrack}`]: { bg: '#fff' }
       },
       tonal: {
-        [`${StyledTrack}`]: { bg: '$tonal200' }
+        [`${StyledTrack}`]: { bg: '$grey600' }
       }
     }
   }

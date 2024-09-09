@@ -5,11 +5,11 @@ import { focusVisibleStyleBlock } from '~/utilities'
 
 export const StyledItem = styled(ToggleGroup.Item, {
   bg: 'white',
-  color: '$tonal400',
-  border: '1px solid $tonal200',
+  color: '$grey800',
+  border: '1px solid $grey600',
   cursor: 'pointer',
   '&::before': {
-    background: '$tonal200'
+    background: '$grey600'
   },
   '&:not([disabled])': {
     '&:hover, &:focus-visible, &[data-state="on"]': {
@@ -24,7 +24,7 @@ export const StyledItem = styled(ToggleGroup.Item, {
     '&:focus-visible': {
       ...focusVisibleStyleBlock(),
       '&[data-state="off"]': {
-        borderColor: '$tonal200 !important'
+        borderColor: '$grey600 !important'
       },
       '&[data-state="on"]': {
         boxShadow: `inset currentColor 0px 0px 0px 1px, ${

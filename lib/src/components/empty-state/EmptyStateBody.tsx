@@ -6,7 +6,7 @@ import { styled } from '~/stitches'
 import { EmptyStateContext } from './EmptyState.context'
 
 const StyledEmptyStateBody = styled(Text, {
-  color: '$tonal400',
+  color: '$grey800',
   fontWeight: '400',
   variants: {
     size: {

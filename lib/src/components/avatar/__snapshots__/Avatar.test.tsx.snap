@@ -2,13 +2,13 @@
 
 exports[`Avatar component renders a fallback icon instead of an initial if name is missing 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -45,7 +45,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -75,7 +75,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     font-family: var(--fonts-body);
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -105,8 +105,8 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-ctivzP-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -123,7 +123,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
@@ -151,13 +151,13 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 
 exports[`Avatar component renders an icon avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -194,7 +194,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -224,7 +224,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
     font-family: var(--fonts-body);
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -254,8 +254,8 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-ctivzP-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -272,7 +272,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <svg
       aria-hidden="true"
@@ -290,13 +290,13 @@ exports[`Avatar component renders an icon avatar 1`] = `
 
 exports[`Avatar component renders an image avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -314,7 +314,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -322,7 +322,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <img
       alt="somobody's avatar"
@@ -335,13 +335,13 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 exports[`Avatar component renders an inital avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -378,7 +378,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -408,7 +408,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     font-family: var(--fonts-body);
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -438,8 +438,8 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-ctivzP-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -456,10 +456,10 @@ exports[`Avatar component renders an inital avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
+    class="c-fmVwAE c-fmVwAE-fDXBFo-size-xs"
   >
     <p
-      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       A
     </p>
@@ -469,13 +469,13 @@ exports[`Avatar component renders an inital avatar 1`] = `
 
 exports[`Avatar component renders an xs size with the fallback icon when src and name are missing 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -512,7 +512,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -542,7 +542,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     font-family: var(--fonts-body);
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -555,8 +555,8 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-ctivzP-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -573,7 +573,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
+    class="c-fmVwAE c-fmVwAE-fDXBFo-size-xs"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
@@ -601,13 +601,13 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 
 exports[`Avatar component renders the initial of the name when the src of the image is not available and a name was provided 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -634,7 +634,7 @@ exports[`Avatar component renders the initial of the name when the src of the im
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -666,17 +666,17 @@ exports[`Avatar component renders the initial of the name when the src of the im
 }
 
 @media  {
-  .c-ctivzP-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 }
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       B
     </p>

@@ -76,15 +76,15 @@ exports[`Slider component renders 1`] = `
 }
 
 @media  {
-  .c-bwqjWK-dOexvR-theme-tonal .c-nJgcq {
-    background: var(--colors-tonal200);
+  .c-bwqjWK-gonssI-theme-tonal .c-nJgcq {
+    background: var(--colors-grey600);
   }
 }
 
 <div>
   <span
     aria-disabled="false"
-    class="c-bwqjWK c-bwqjWK-dOexvR-theme-tonal"
+    class="c-bwqjWK c-bwqjWK-gonssI-theme-tonal"
     data-orientation="horizontal"
     dir="ltr"
     style="--radix-slider-thumb-transform: translateX(-50%);"
@@ -195,15 +195,15 @@ exports[`Slider component renders with a steps list 1`] = `
 }
 
 @media  {
-  .c-bwqjWK-dOexvR-theme-tonal .c-nJgcq {
-    background: var(--colors-tonal200);
+  .c-bwqjWK-gonssI-theme-tonal .c-nJgcq {
+    background: var(--colors-grey600);
   }
 }
 
 <div>
   <span
     aria-disabled="false"
-    class="c-bwqjWK c-bwqjWK-dOexvR-theme-tonal"
+    class="c-bwqjWK c-bwqjWK-gonssI-theme-tonal"
     data-orientation="horizontal"
     dir="ltr"
     steps="[object Object],[object Object],[object Object]"
@@ -324,8 +324,8 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-bwqjWK-dOexvR-theme-tonal .c-nJgcq {
-    background: var(--colors-tonal200);
+  .c-bwqjWK-gonssI-theme-tonal .c-nJgcq {
+    background: var(--colors-grey600);
   }
 
   .c-ctivzP-gvmVBy-size-md {
@@ -355,16 +355,16 @@ exports[`Slider.Value component renders 1`] = `
 }
 
 @media  {
-  .c-ctivzP-iQwDky-css {
+  .c-ctivzP-idynIBj-css {
     margin-top: var(--space-4);
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
     width: 100%;
   }
 }
 
 <div>
   <p
-    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iQwDky-css"
+    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-idynIBj-css"
   >
     Current value is 50
   </p>
