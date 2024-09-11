@@ -1,36 +1,29 @@
 import React from 'react'
 
-import { CSS, styled } from '~/stitches'
+import { styled } from '~/stitches'
 
 import { Image } from '../image'
 import { Text } from '../text'
 
-type TopBarBrandLogoProps = {
-  src: string
-  alt?: string
-  css?: CSS
-}
 
 export const TopBarBrandLogo = ({
   src,
   alt = 'Atom Learning logo',
   css
-}: TopBarBrandLogoProps): JSX.Element => {
+}: Pick<React.ComponentProps<typeof Image>, 'src' | 'alt' | 'css'>): JSX.Element => {
   return (
     <Image
-      className="topbar-brand-logo"
       src={src}
       alt={alt}
       css={{
+        height: '$3',
         mr: '$3',
-        mb: '5px',
+        width: 'auto',
         ...css
       }}
     />
   )
 }
-
-TopBarBrandLogo.toString = () => '.topbar-brand-logo'
 
 export const TopBarBrandName = styled(Text, {
   color: '$grey800'

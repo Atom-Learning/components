@@ -22,14 +22,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atom-learning/components@npm:4.0.0-beta.8, @atom-learning/components@workspace:lib":
+"@atom-learning/components@workspace:*, @atom-learning/components@workspace:lib":
   version: 0.0.0-use.local
   resolution: "@atom-learning/components@workspace:lib"
   dependencies:
     "@atom-learning/icons": "npm:1.20.0"
     "@atom-learning/jest-stitches": "npm:1.0.10"
     "@atom-learning/stitches-react": "npm:^1.4.1"
-    "@atom-learning/theme": "npm:4.0.0-beta.6"
+    "@atom-learning/theme": "npm:4.0.0-beta.7"
     "@commitlint/cli": "npm:^11.0.0"
     "@commitlint/config-conventional": "npm:^11.0.0"
     "@dnd-kit/core": "npm:^6.0.5"
@@ -149,9 +149,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@atom-learning/documentation@workspace:documentation"
   dependencies:
-    "@atom-learning/components": "npm:4.0.0-beta.8"
+    "@atom-learning/components": "workspace:*"
     "@atom-learning/icons": "npm:^1.20.0"
-    "@atom-learning/theme": "npm:4.0.0-beta.6"
+    "@atom-learning/theme": "npm:4.0.0-beta.7"
     "@lukeed/uuid": "npm:^2.0.0"
     "@types/lodash.find": "npm:^4"
     "@types/lodash.intersection": "npm:^4"
@@ -219,10 +219,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atom-learning/theme@npm:4.0.0-beta.6":
-  version: 4.0.0-beta.6
-  resolution: "@atom-learning/theme@npm:4.0.0-beta.6"
-  checksum: 10c0/88204508fd04a3006256c11df16a51302bbd352f8a298bb623eba854927defc045a859e1a7ca507f67261bf3dfd6617c22001e57c39bc24f2b38b78bcd2d3cdb
+"@atom-learning/theme@npm:4.0.0-beta.7":
+  version: 4.0.0-beta.7
+  resolution: "@atom-learning/theme@npm:4.0.0-beta.7"
+  checksum: 10c0/7bb9b55530d365b22e0796b327a76cfa2cf9df1dfc2569802feed076840580924b10626eaf0741699367c5de6e41908e19c16e14811086b2e8c16dca779e31d3
   languageName: node
   linkType: hard
 

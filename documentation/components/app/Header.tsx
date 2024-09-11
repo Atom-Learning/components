@@ -8,7 +8,8 @@ import {
   Flex,
   Drawer
 } from '@atom-learning/components'
-import logo from '@atom-learning/theme/lib/assets/logos/atom/atom-learning-logotype-primary.svg'
+import logoAtom from '@atom-learning/theme/lib/assets/logos/atom/atom-learning-logotype-primary.svg'
+import logoQuest from '@atom-learning/theme/lib/assets/logos/quest/logo.svg'
 import * as React from 'react'
 
 import buildConstants from '~/lib/build/constants.json'
@@ -17,18 +18,22 @@ import { Navigation } from '~/components/app'
 import { Hamburger } from '@atom-learning/icons'
 import { useTheme } from '~/utilities/hooks/useTheme'
 
-const NavigationHeader = () => (
-  <SideBar.Brand href="/">
-    <SideBar.BrandLogo src={logo.src} css={{ width: 140 }} />
+const NavigationHeader = () => {
+
+  const { theme, } = useTheme()
+  return <SideBar.Brand href="/">
+    {theme === 'atom' && <SideBar.BrandLogo src={logoAtom.src} css={{ width: 140 }} />}
+    {theme === 'quest' && <SideBar.BrandLogo src={logoQuest.src} css={{ width: 120 }} />}
     <Badge
       theme="neutral"
       size="xs"
       css={{ position: 'absolute', right: '$3', top: '$4' }}
-    >
+      >
       {buildConstants['version']}
     </Badge>
   </SideBar.Brand>
-)
+
+}
 
 const BrandSwitch = () => {
   const { theme, updateTheme } = useTheme()
