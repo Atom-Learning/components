@@ -5,12 +5,14 @@ import { styled } from '~/stitches'
 import { Image } from '../image'
 import { Text } from '../text'
 
-
 export const TopBarBrandLogo = ({
   src,
   alt = 'Atom Learning logo',
   css
-}: Pick<React.ComponentProps<typeof Image>, 'src' | 'alt' | 'css'>): JSX.Element => {
+}: Pick<
+  React.ComponentProps<typeof Image>,
+  'src' | 'alt' | 'css'
+>): JSX.Element => {
   return (
     <Image
       src={src}

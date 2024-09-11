@@ -42,7 +42,7 @@ export const StyledText = styled('p', {
     family: {
       body: { fontFamily: '$body' },
       display: { fontFamily: '$display' },
-      mono: { fontFamily: '$mono' },
+      mono: { fontFamily: '$mono' }
     }
   }
 })
@@ -66,19 +66,19 @@ type TextProps = Override<
 >
 
 export const Text: React.ForwardRefExoticComponent<TextProps> =
-  React.forwardRef(({
-    size = 'md',
-    weight = 'normal',
-    family  = 'body',
-    ...remainingProps
-  }, ref) => (
-    <StyledText
-      size={size}
-      weight={weight}
-      family={family}
-      {...remainingProps}
-      ref={ref}
-    />
-  ))
+  React.forwardRef(
+    (
+      { size = 'md', weight = 'normal', family = 'body', ...remainingProps },
+      ref
+    ) => (
+      <StyledText
+        size={size}
+        weight={weight}
+        family={family}
+        {...remainingProps}
+        ref={ref}
+      />
+    )
+  )
 
 Text.displayName = 'Text'

@@ -3,7 +3,7 @@
 exports[`Drawer opens the popover once trigger is clicked 1`] = `
 @media  {
   :root,
-  .t-kqsZfK {
+  .t-dfjnAG {
     --default-colors: [object Object];
     --default-space: [object Object];
     --default-fontSizes: [object Object];
@@ -220,13 +220,13 @@ exports[`Drawer opens the popover once trigger is clicked 1`] = `
     --colors-warningMid: hsl(41, 89%, 48%);
     --colors-warningDark: hsl(41, 100%, 41%);
     --colors-warningText: hsl(24, 100%, 37%);
-    --colors-subjectEnglish: hsl(0, 91%, 64%);
-    --colors-subjectMaths: hsl(217, 92%, 51%);
+    --colors-subjectEnglish: hsl(333, 75%, 59%);
+    --colors-subjectMaths: hsl(214, 100%, 58%);
     --colors-subjectScience: hsl(256, 65%, 62%);
-    --colors-subjectVerbalReasoning: hsl(128, 47%, 53%);
+    --colors-subjectVerbalReasoning: hsl(148, 84%, 36%);
     --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
-    --colors-subjectCreativeWriting: hsl(33, 100%, 50%);
-    --colors-subjectExamSkills: hsl(256, 93%, 35%);
+    --colors-subjectCreativeWriting: hsl(35, 95%, 50%);
+    --colors-subjectExamSkills: hsl(257, 53%, 35%);
     --colors-glBlueLight: hsl(222, 68%, 78%);
     --colors-glBluePrimary: hsl(222, 56%, 55%);
     --colors-glBlueDark: hsl(222, 35%, 43%);
