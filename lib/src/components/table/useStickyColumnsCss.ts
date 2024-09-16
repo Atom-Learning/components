@@ -38,7 +38,7 @@ export const useStickyColumnsCss = ({
           }
       }
 
-      accWidth += column.offsetWidth
+      accWidth += tableHeaderCells?.item(index).clientWidth || 0
 
       return cssObject
     }, {} as CSS)
