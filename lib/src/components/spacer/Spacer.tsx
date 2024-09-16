@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '~/stitches'
 
 /**
  * A flexible flex spacer that expands along the major axis of its containing flex layout.

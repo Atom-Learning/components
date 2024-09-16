@@ -11,7 +11,7 @@ import {
   NoOverflowWrapper,
   TileInteractive
 } from '@atom-learning/components'
-import { intersection } from 'lodash'
+import intersection from 'lodash.intersection'
 import * as React from 'react'
 import { debounce } from 'throttle-debounce'
 
@@ -158,6 +158,7 @@ export const Cards: React.FC<CardsProps> = ({
       {showTagsFilter && (
         <Box css={{ width: '100%', maxWidth: 750, mx: 'auto' }}>
           <ChipToggleGroup
+            gap={2}
             justify="center"
             type="multiple"
             value={selectedTags}

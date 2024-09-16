@@ -59,12 +59,17 @@ const PropType = ({ name, type }) => {
       </WithTooltip>
     )
   }
-  if (Array.isArray(type.value)) {
+
+  if (Array.isArray(type.value) && type.value.length) {
     let values = type.value
       .filter(({ value }) => value !== 'undefined')
       .filter(({ value }) => !value.startsWith('{ [x: string]'))
       .filter(({ value }) => !value.startsWith('{ "@sm"'))
       .filter(({ value }) => !value.startsWith('"true"'))
+
+    if (!values?.length) {
+      values = type.value
+    }
 
     if (values[0].value === 'false' && values[1].value === 'true') {
       values = [{ value: 'boolean' }]

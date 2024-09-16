@@ -4,7 +4,8 @@ title: Tile Interactive
 tabs:
   - title: Code
     content: >-
-      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3" justify="center" css={{ bg: '$grey100', p: '$3', width: '100%' }}>
+      <CodeBlock live={true} preview={true} code={`<TileGroup gap="3"
+      justify="center" css={{ bg: '$grey100', p: '$3', width: '100%' }}>
         <TileInteractive onClick={() => alert('onClick')} css={{size: 100 }} borderRadius="md" />
         <TileInteractive href='/' css={{size: 100 }} borderRadius="md" border />
       </TileGroup>`} language={"tsx"} />
@@ -167,7 +168,6 @@ parent: J3bsmpB7-_uuqm05peuTA
 uuid: 3b9bb9a0-12e5-4fbe-bb18-9f700dc91003
 nestedSlug:
   - components
-  - surfaces
   - tile-interactive
 links:
   showReportAnIssue: true

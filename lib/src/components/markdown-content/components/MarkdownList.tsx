@@ -1,4 +1,4 @@
-import { Content, List as ListType } from 'mdast'
+import type { Content, List as ListType } from 'mdast'
 import * as React from 'react'
 
 import { CSS } from '~/stitches'

@@ -1,5 +1,5 @@
+import type { VariantProps } from '@atom-learning/stitches-react'
 import * as RadioGroup from '@radix-ui/react-radio-group'
-import type { VariantProps } from '@stitches/react'
 import * as React from 'react'
 
 import type { Override } from '~/utilities'
@@ -27,7 +27,10 @@ export const RadioCardGroup = ({
     <Flex direction="row" justify={justify} gap={gap} wrap="wrap" css={css}>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child) && child?.type === RadioCard) {
-          return React.cloneElement(child, { size, isFullWidth, align })
+          return React.cloneElement(
+            child as React.ReactElement<React.ComponentProps<typeof RadioCard>>,
+            { size, isFullWidth, align }
+          )
         }
         return child
       })}

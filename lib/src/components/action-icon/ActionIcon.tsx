@@ -1,4 +1,4 @@
-import type { VariantProps } from '@stitches/react'
+import type { VariantProps } from '@atom-learning/stitches-react'
 import invariant from 'invariant'
 import * as React from 'react'
 
@@ -196,10 +196,13 @@ export const ActionIcon: React.ForwardRefExoticComponent<ActionIconProps> =
                 `Children of type ${child?.type} aren't permitted. Only an ${Icon.displayName} component is allowed in ${ActionIcon.displayName}`
               )
 
-              return React.cloneElement(child, {
-                size: ActionIconSizeMap[size as string],
-                css: { ...(child.props.css ? child.props.css : {}) }
-              })
+              return React.cloneElement(
+                child as React.ReactElement<React.ComponentProps<typeof Icon>>,
+                {
+                  size: ActionIconSizeMap[size as string],
+                  css: { ...(child.props.css ? child.props.css : {}) }
+                }
+              )
             })}
           </StyledButton>
         </OptionalTooltipWrapper>
