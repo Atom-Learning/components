@@ -5,6 +5,7 @@
 type focusVisibleStyleBlockPropsType = {
   position?: 'relative' | 'absolute' | 'fixed' | 'sticky'
   zIndex?: number
+  boxShadow?: string
 }
 
 type focusVisibleStyleBlockReturnType = {
@@ -16,7 +17,8 @@ type focusVisibleStyleBlockReturnType = {
 
 export const focusVisibleStyleBlock = ({
   position = 'relative',
-  zIndex = 1
+  zIndex = 1,
+  boxShadow = ''
 }: focusVisibleStyleBlockPropsType = {}): focusVisibleStyleBlockReturnType => {
   return {
     outline: 'none',
@@ -24,6 +26,6 @@ export const focusVisibleStyleBlock = ({
       ? position
       : 'relative',
     zIndex: zIndex > 1 ? zIndex : 1,
-    boxShadow: 'white 0px 0px 0px 2px, $colors$primary800 0px 0px 0px 4px'
+    boxShadow: `white 0px 0px 0px 2px, $colors$primary800 0px 0px 0px 4px${boxShadow ? `, ${boxShadow}` : ''}`
   }
 }
