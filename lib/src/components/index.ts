@@ -2,6 +2,7 @@ export type { ValidationOptions } from './form'
 
 export { Accordion } from './accordion'
 export { ActionIcon } from './action-icon'
+export { AnswerToggleGroup } from './answer-toggle-group'
 export { AlertDialog, useAlert, AlertProvider } from './alert-dialog'
 export { Avatar } from './avatar'
 export { Badge } from './badge'
