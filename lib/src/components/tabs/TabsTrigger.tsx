@@ -29,8 +29,8 @@ const StyledTabsTrigger = styled(Trigger, {
     letterSpacing: '-0.005em',
     borderColor: 'currentColor'
   },
-  '&[data-disabled]': disabledStyle,
-  '&:not([data-disabled])': {
+  '&[disabled]': disabledStyle,
+  '&:not([disabled])': {
     '&:hover, &:focus-visible': {
       color: '$interactive2',
       [`& ${StyledTabsTriggerHoverBackground}`]: {

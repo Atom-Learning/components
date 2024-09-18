@@ -6,7 +6,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     display: flex;
   }
 
-  .c-cDmpis {
+  .c-iCmdOp {
     padding-left: var(--space-2);
     padding-right: var(--space-2);
     border: 1px solid;
@@ -19,7 +19,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     background: var(--colors-primary100);
   }
 
-  .c-cDmpis[data-disabled] {
+  .c-iCmdOp[disabled] {
     opacity: 0.3;
     pointer-events: none;
   }
@@ -99,19 +99,19 @@ exports[`ChipToggleGroup component renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-cDmpis-kIEsaE-size-md {
+  .c-iCmdOp-kIEsaE-size-md {
     height: var(--sizes-3);
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-cDmpis-kIEsaE-size-md::before {
+  .c-iCmdOp-kIEsaE-size-md::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-cDmpis-kIEsaE-size-md::after {
+  .c-iCmdOp-kIEsaE-size-md::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -135,7 +135,7 @@ exports[`ChipToggleGroup component renders 1`] = `
   >
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-ioEXok"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-ioEXok"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="on"
@@ -160,7 +160,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="true"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-ioEXok"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-ioEXok"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""
@@ -187,7 +187,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-ioEXok"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-ioEXok"
       data-orientation="horizontal"
       data-radix-collection-item=""
       data-state="off"
@@ -212,7 +212,7 @@ exports[`ChipToggleGroup component renders 1`] = `
     </button>
     <button
       aria-pressed="false"
-      class="c-dhzjXW c-cDmpis c-cDmpis-kIEsaE-size-md c-ioEXok"
+      class="c-dhzjXW c-iCmdOp c-iCmdOp-kIEsaE-size-md c-ioEXok"
       data-disabled=""
       data-orientation="horizontal"
       data-radix-collection-item=""

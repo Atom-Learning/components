@@ -338,7 +338,7 @@ exports[`Accordion component renders an accordion 1`] = `
     transform: rotate(0deg);
   }
 
-  .c-cHXTzy {
+  .c-cdQaC {
     border: 0;
     padding-top: var(--space-3);
     padding-bottom: var(--space-3);
@@ -353,29 +353,29 @@ exports[`Accordion component renders an accordion 1`] = `
     color: var(--colors-interactiveForeground);
   }
 
-  .c-cHXTzy[data-disabled] {
+  .c-cdQaC[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cHXTzy:not([data-disabled]):active,
-  .c-cHXTzy:not([data-disabled]):hover,
-  .c-cHXTzy:not([data-disabled]):focus-visible {
+  .c-cdQaC:not([disabled]):active,
+  .c-cdQaC:not([disabled]):hover,
+  .c-cdQaC:not([disabled]):focus-visible {
     background: var(--colors-interactive3);
   }
 
-  .c-cHXTzy:not([data-disabled]):focus-visible {
+  .c-cdQaC:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-cHXTzy[data-state="open"] {
+  .c-cdQaC[data-state="open"] {
     border-radius: var(--radii-0) var(--radii-0) 0 0;
   }
 
-  .c-cHXTzy[data-state="closed"] {
+  .c-cdQaC[data-state="closed"] {
     border-radius: var(--radii-0);
   }
 
@@ -437,7 +437,7 @@ exports[`Accordion component renders an accordion 1`] = `
         aria-controls="radix-:r1:"
         aria-disabled="true"
         aria-expanded="true"
-        class="c-cHXTzy t-dVJiaJ t-hwCMvs"
+        class="c-cdQaC t-dVJiaJ t-hwCMvs"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="open"
@@ -477,7 +477,7 @@ exports[`Accordion component renders an accordion 1`] = `
       <button
         aria-controls="radix-:r3:"
         aria-expanded="false"
-        class="c-cHXTzy t-dVJiaJ t-hwCMvs"
+        class="c-cdQaC t-dVJiaJ t-hwCMvs"
         data-orientation="vertical"
         data-radix-collection-item=""
         data-state="closed"
