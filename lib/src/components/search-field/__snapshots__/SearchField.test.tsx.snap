@@ -244,10 +244,10 @@ exports[`SearchField component renders a field in error state - has no programma
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-iuasYV-state-error"
+          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-iuasYV-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
             id="searchField"
             llabel="Search Field"
             name="searchField"
@@ -502,10 +502,10 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-kRqBPT-disabled-true"
+          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-kRqBPT-disabled-true c-cNcGUX c-cNcGUX-icRYcAH-css"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
             disabled=""
             id="searchField"
             name="searchField"
@@ -720,10 +720,10 @@ exports[`SearchField component renders a field with a search input - has no prog
         class="c-PJLV c-PJLV-ieFlhpX-css"
       >
         <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
+          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
         >
           <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
             id="searchField"
             name="searchField"
             placeholder="Search Field"

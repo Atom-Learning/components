@@ -3198,10 +3198,10 @@ exports[`DataTable component renders 1`] = `
     class="c-PJLV c-PJLV-ihDGYkC-css"
   >
     <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
+      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
         name="User search"
         type="search"
         value=""
@@ -4775,10 +4775,10 @@ exports[`DataTable server-side renders 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
+      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
         type="search"
         value=""
       />

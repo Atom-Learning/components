@@ -134,10 +134,10 @@ exports[`SearchInput component renders 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
+      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
         type="search"
         value=""
       />
@@ -396,10 +396,10 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
+      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
         type="search"
         value="testingWhenDefaultValue"
       />
@@ -654,10 +654,10 @@ exports[`SearchInput component renders lg size 1`] = `
     class="c-PJLV c-PJLV-ieFlhpX-css"
   >
     <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg"
+      class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
     >
       <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
+        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
         type="search"
         value=""
       />
