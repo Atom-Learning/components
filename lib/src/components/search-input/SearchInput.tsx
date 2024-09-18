@@ -2,7 +2,6 @@ import { Close, Search } from '@atom-learning/icons'
 import * as React from 'react'
 
 import { ActionIcon } from '~/components/action-icon'
-import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
 import { Input, InputBackground, InputText } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
