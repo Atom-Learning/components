@@ -4,9 +4,7 @@ import { KeyboardShortcut } from '.'
 
 const onKeyboardShortcutMock = jest.fn()
 
-// WIP
 describe(`KeyboardShortcut component`, () => {
-
   it('renders', async () => {
     const { container } = render(<KeyboardShortcut config={[{
       shortcut: { key: 'a' },
