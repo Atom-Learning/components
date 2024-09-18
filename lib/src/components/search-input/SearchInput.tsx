@@ -4,7 +4,7 @@ import * as React from 'react'
 import { ActionIcon } from '~/components/action-icon'
 import { Box } from '~/components/box/'
 import { Icon } from '~/components/icon/'
-import { Input } from '~/components/input/'
+import { Input, InputBackground, InputText } from '~/components/input/'
 import { CSS, styled } from '~/stitches'
 import { getFieldIconSize } from '~/utilities'
 import { useCallbackRef } from '~/utilities/hooks/useCallbackRef'
@@ -46,11 +46,12 @@ const StyledIcon = styled(Icon, {
   }
 })
 
-const StyledSearchInput = styled(Input, {
-  '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, & input[type="search"]::-webkit-search-results-decoration':
-    {
-      display: 'none'
-    }
+
+const StyledSearchInputText = styled(InputText, {
+  '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button':
+  {
+    display: 'none'
+  }
 })
 
 export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
@@ -146,8 +147,11 @@ export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
       }
 
       return (
-        <Box css={{ position: 'relative', height: 'max-content', ...css }}>
-          <StyledSearchInput
+        <InputBackground css={{ position: 'relative', ...css }}
+          size={size}
+
+        >
+          <StyledSearchInputText
             ref={setInputElRef}
             size={size}
             type="search"
@@ -157,7 +161,7 @@ export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
             css={{ pr: size === 'sm' ? '$5' : '$6' }}
           />
           {getIcon()}
-        </Box>
+        </InputBackground>
       )
     }
   )

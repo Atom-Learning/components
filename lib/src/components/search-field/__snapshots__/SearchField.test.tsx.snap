@@ -58,10 +58,9 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -144,15 +143,6 @@ exports[`SearchField component renders a field in error state - has no programma
     width: 20px;
   }
 
-  .c-kOvGWL-kRqBPT-disabled-true {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-
-  .c-kOvGWL-iuasYV-state-error {
-    border-color: var(--colors-danger);
-  }
-
   .c-PJLV-iymbh-theme-error {
     color: var(--colors-danger);
   }
@@ -188,12 +178,11 @@ exports[`SearchField component renders a field in error state - has no programma
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -241,21 +230,18 @@ exports[`SearchField component renders a field in error state - has no programma
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-ieFlhpX-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
       >
-        <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-iuasYV-state-error c-cNcGUX c-cNcGUX-icRYcAH-css"
-        >
-          <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-            id="searchField"
-            llabel="Search Field"
-            name="searchField"
-            placeholder="Search Field"
-            type="search"
-            value=""
-          />
-        </div>
+        <input
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          id="searchField"
+          llabel="Search Field"
+          name="searchField"
+          placeholder="Search Field"
+          state="error"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
           class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
@@ -370,10 +356,9 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -449,11 +434,6 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     height: 20px;
     width: 20px;
   }
-
-  .c-kOvGWL-kRqBPT-disabled-true {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
 }
 
 @media  {
@@ -463,12 +443,11 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -499,21 +478,17 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-ieFlhpX-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
       >
-        <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-kOvGWL-kRqBPT-disabled-true c-cNcGUX c-cNcGUX-icRYcAH-css"
-        >
-          <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-            disabled=""
-            id="searchField"
-            name="searchField"
-            placeholder="Search Field"
-            type="search"
-            value=""
-          />
-        </div>
+        <input
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          disabled=""
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
           class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
@@ -593,10 +568,9 @@ exports[`SearchField component renders a field with a search input - has no prog
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -681,12 +655,11 @@ exports[`SearchField component renders a field with a search input - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -717,20 +690,16 @@ exports[`SearchField component renders a field with a search input - has no prog
         </label>
       </div>
       <div
-        class="c-PJLV c-PJLV-ieFlhpX-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
       >
-        <div
-          class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-        >
-          <input
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-            id="searchField"
-            name="searchField"
-            placeholder="Search Field"
-            type="search"
-            value=""
-          />
-        </div>
+        <input
+          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          id="searchField"
+          name="searchField"
+          placeholder="Search Field"
+          type="search"
+          value=""
+        />
         <svg
           aria-hidden="true"
           class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"

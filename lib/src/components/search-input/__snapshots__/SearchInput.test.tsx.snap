@@ -52,10 +52,9 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -112,12 +111,11 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -131,17 +129,13 @@ exports[`SearchInput component renders 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-    >
-      <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-        type="search"
-        value=""
-      />
-    </div>
+    <input
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
       class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
@@ -213,10 +207,9 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -367,12 +360,11 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -393,17 +385,13 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-cNcGUX c-cNcGUX-icRYcAH-css"
-    >
-      <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-        type="search"
-        value="testingWhenDefaultValue"
-      />
-    </div>
+    <input
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value="testingWhenDefaultValue"
+    />
     <button
       aria-label="clearWhenDefaultValue"
       class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igyKUXm-css c-PJLV"
@@ -477,10 +465,9 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -625,12 +612,11 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-icmpvrW-css {
     position: relative;
-    height: max-content;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -651,17 +637,13 @@ exports[`SearchInput component renders lg size 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-dhzjXW-icmpvrW-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-cNcGUX c-cNcGUX-icRYcAH-css"
-    >
-      <input
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
-        type="search"
-        value=""
-      />
-    </div>
+    <input
+      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
       class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-lg c-hvMhuR-icDTsBU-css"
