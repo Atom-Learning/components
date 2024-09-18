@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyboardShortcut component renders 1`] = `
+@media  {
+  .c-dyvMgW {
+    font-family: var(--fonts-body);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .c-dyvMgW > .c-dyvMgW:before,
+  .c-dyvMgW > .c-dyvMgW:after {
+    display: none;
+  }
+
+  .c-ipiltK {
+    background: var(--colors-grey100);
+    color: var(--colors-textSubtle);
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+    min-width: var(--sizes-2);
+    min-height: var(--sizes-2);
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-1);
+    flex-shrink: 0;
+  }
+}
+
+@media  {
+  .c-dyvMgW-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-dyvMgW-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+}
+
+<div>
+  <div
+    class="c-PJLV"
+  >
+    <kbd
+      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-ipiltK"
+    >
+      Meta + A
+    </kbd>
+  </div>
+</div>
+`;
