@@ -26,6 +26,8 @@ export const focusVisibleStyleBlock = ({
       ? position
       : 'relative',
     zIndex: zIndex > 1 ? zIndex : 1,
-    boxShadow: `white 0px 0px 0px 2px, $colors$primary800 0px 0px 0px 4px${boxShadow ? `, ${boxShadow}` : ''}`
+    boxShadow: `white 0px 0px 0px 2px, $colors$primary800 0px 0px 0px 4px${
+      boxShadow ? `, ${boxShadow}` : ''
+    }`
   }
 }
