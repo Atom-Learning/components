@@ -114,9 +114,9 @@ export type InputProps = Omit<
 }
 
 export const Input: React.ForwardRefExoticComponent<InputProps> =
-  React.forwardRef(({ size = 'md', state, disabled, css, ...rest }, ref) => {
+  React.forwardRef(({ className, size = 'md', state, disabled, css, ...rest }, ref) => {
     return (
-      <InputBackground size={size} disabled={disabled} state={state} css={css}>
+      <InputBackground size={size} disabled={disabled} state={state} css={css} className={className}>
         <InputText size={size} ref={ref} disabled={disabled} {...rest} />
       </InputBackground>
     )
