@@ -41,7 +41,7 @@ describe(`Dialog component`, () => {
     expect(await screen.queryByText('CONTENT')).not.toBeInTheDocument()
 
     trigger.focus()
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     expect(await screen.queryByText('CONTENT')).toBeInTheDocument()
 
@@ -54,8 +54,8 @@ describe(`Dialog component`, () => {
   })
 
   describe(`when open`, () => {
-    beforeEach(() => {
-      userEvent.click(trigger)
+    beforeEach(async () => {
+      await userEvent.click(trigger)
     })
 
     it('has no programmatically detectable a11y issues', async () => {
@@ -77,7 +77,7 @@ describe('Dialog component without close button', () => {
     )
 
     const trigger = await screen.getByText('TRIGGER')
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     const dialog = await screen.getByRole('dialog')
     expect(dialog).toMatchSnapshot()
@@ -100,7 +100,7 @@ describe('Dialog component with custom background', () => {
     )
 
     const trigger = await screen.getByText('TRIGGER')
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     const dialog = await screen.getByRole('dialog')
 

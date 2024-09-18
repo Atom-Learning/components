@@ -67,7 +67,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^5.11.9"
     "@testing-library/react": "npm:^11.2.3"
     "@testing-library/react-hooks": "npm:^7.0.2"
-    "@testing-library/user-event": "npm:^12.8.1"
+    "@testing-library/user-event": "npm:14.5.2"
     "@types/jest": "npm:^26.0.20"
     "@types/jest-axe": "npm:^3.5.1"
     "@types/mdast": "npm:^3.0.0"
@@ -5761,14 +5761,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.8.1":
-  version: 12.8.3
-  resolution: "@testing-library/user-event@npm:12.8.3"
-  dependencies:
-    "@babel/runtime": "npm:^7.12.5"
+"@testing-library/user-event@npm:14.5.2":
+  version: 14.5.2
+  resolution: "@testing-library/user-event@npm:14.5.2"
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: 10c0/fa84dc30313ba22873c6179c8650c3952db583d253eb317891d75f39369ad72e63e1fef9740b9c755d3cabcb58028e7f896113f2cb97ff40c93b9d608d971dc7
+  checksum: 10c0/68a0c2aa28a3c8e6eb05cafee29705438d7d8a9427423ce5064d44f19c29e89b5636de46dd2f28620fb10abba75c67130185bbc3aa23ac1163a227a5f36641e1
   languageName: node
   linkType: hard
 

@@ -47,26 +47,26 @@ describe(`CreatePasswordField component`, () => {
     expect(await axe(container)).toHaveNoViolations()
   })
 
-  it('displays validation messages when focusing on the input', () => {
+  it('displays validation messages when focusing on the input', async () => {
     customRender()
 
     expect(screen.queryByText('7+ characters')).not.toBeInTheDocument()
     expect(screen.queryByText('Contains number')).not.toBeInTheDocument()
     expect(screen.queryByText('Contains symbol')).not.toBeInTheDocument()
 
-    userEvent.click(screen.getByLabelText('Create a password'))
+    await userEvent.click(screen.getByLabelText('Create a password'))
 
     expect(screen.getByText('7+ characters')).toBeVisible()
     expect(screen.getByText('Contains number')).toBeVisible()
     expect(screen.getByText('Contains symbol')).toBeVisible()
   })
 
-  it('displays validation messages on blur after the form has been touched', () => {
+  it('displays validation messages on blur after the form has been touched', async () => {
     customRender()
 
     const passwordInput = screen.getByText('Create a password')
-    userEvent.type(passwordInput, 'password')
-    userEvent.tab()
+    await userEvent.type(passwordInput, 'password')
+    await userEvent.tab()
 
     expect(screen.getByText('7+ characters')).toBeVisible()
     expect(screen.getByText('Contains number')).toBeVisible()
@@ -76,15 +76,15 @@ describe(`CreatePasswordField component`, () => {
   it('displays validation messages when trying to submit the form', async () => {
     customRender()
 
-    userEvent.click(screen.getByRole('button', { name: 'Submit' }))
+    await userEvent.click(screen.getByRole('button', { name: 'Submit' }))
 
     expect(await screen.findByText('7+ characters')).toBeVisible()
   })
 
-  it('displays validation styling to the input when the value is not valid', () => {
+  it('displays validation styling to the input when the value is not valid', async () => {
     const { container } = customRender()
 
-    userEvent.click(screen.getByRole('button', { name: 'Submit' }))
+    await userEvent.click(screen.getByRole('button', { name: 'Submit' }))
 
     expect(container).toMatchSnapshot()
   })

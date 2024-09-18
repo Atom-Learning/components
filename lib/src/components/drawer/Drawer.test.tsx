@@ -44,7 +44,7 @@ describe('Drawer', () => {
     expect(screen.queryByText('BODY')).not.toBeInTheDocument()
 
     trigger.focus()
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
 
     expect(screen.queryByText('BODY')).toBeInTheDocument()
 

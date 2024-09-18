@@ -119,7 +119,7 @@ describe(`InputField component`, () => {
         <button type="submit">Submit</button>
       </Form>
     )
-    userEvent.click(getByRole('button'))
+    await userEvent.click(getByRole('button'))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()
@@ -139,7 +139,7 @@ describe(`InputField component`, () => {
       </Form>
     )
 
-    userEvent.click(getByRole('button'))
+    await userEvent.click(getByRole('button'))
     await findByText(errorText)
 
     expect(await axe(container)).toHaveNoViolations()

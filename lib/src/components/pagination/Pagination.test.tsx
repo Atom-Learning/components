@@ -237,7 +237,7 @@ describe('Pagination component', () => {
     expect(screen.queryByRole('button', { name: '1' })).not.toBeInTheDocument()
     expect(screen.getByText('Question 1 / 10')).toBeVisible()
 
-    userEvent.click(screen.getByText('Question 1 / 10'))
+    await userEvent.click(screen.getByText('Question 1 / 10'))
 
     const dialog = await screen.findByRole('dialog')
 

@@ -31,29 +31,29 @@ describe(`NumberInput component`, () => {
     expect(screen.getByRole('spinbutton')).toHaveValue('0')
   })
 
-  it('should increment value when incremenent button is pressed', () => {
+  it('should increment value when incremenent button is pressed', async () => {
     renderComponent()
 
     const input = screen.getByRole('spinbutton')
     const incrementBtn = screen.getByRole('button', { name: /increment/i })
 
-    userEvent.click(incrementBtn)
+    await userEvent.click(incrementBtn)
     expect(input).toHaveValue('1')
 
-    userEvent.click(incrementBtn)
+    await userEvent.click(incrementBtn)
     expect(input).toHaveValue('2')
   })
 
-  it('should decrement value when decrement button is pressed', () => {
+  it('should decrement value when decrement button is pressed', async () => {
     renderComponent({ defaultValue: 5 })
 
     const input = screen.getByRole('spinbutton')
     const decrementBtn = screen.getByRole('button', { name: /decrement/i })
 
-    userEvent.click(decrementBtn)
+    await userEvent.click(decrementBtn)
     expect(input).toHaveValue('4')
 
-    userEvent.click(decrementBtn)
+    await userEvent.click(decrementBtn)
     expect(input).toHaveValue('3')
   })
 
@@ -95,12 +95,12 @@ describe(`NumberInput component`, () => {
     expect(input).toHaveValue('0')
   })
 
-  it('should call onValueChange prop when value changes', () => {
+  it('should call onValueChange prop when value changes', async () => {
     const onValueChange = jest.fn()
     renderComponent({ onValueChange })
 
     const incrementBtn = screen.getByRole('button', { name: /increment/i })
-    userEvent.click(incrementBtn)
+    await userEvent.click(incrementBtn)
 
     expect(onValueChange).toBeCalled()
     expect(onValueChange).toBeCalledWith(1)
