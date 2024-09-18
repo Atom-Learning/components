@@ -46,7 +46,7 @@ export const KeyboardShortcut: React.ForwardRefExoticComponent<KeyboardShortcutP
 
     const Component = asChild ? StyledSlot : Box
 
-    return (<Component onKeyDown={targetWindow ? () => null : handleOnKeydown} ref={setTargetElRef} {...rest} />)
+    return (<Component onKeyDown={targetWindow ? undefined : handleOnKeydown} ref={setTargetElRef} {...rest} />)
   })
 
 KeyboardShortcut.displayName = 'KeyboardShortcut'
@@ -68,9 +68,9 @@ const StyledKeyboardShortcutIndicator = styled.withConfig({
   flexShrink: 0
 })
 
-type KeyboardShortcutIndicatorProps = React.ComponentProps<typeof Text>
+type KeyboardShortcutIndicatorProps = React.ComponentProps<typeof StyledKeyboardShortcutIndicator>
 
-export const KeyboardShortcutIndicator = (props: KeyboardShortcutIndicatorProps): JSX.Element => {
+export const KeyboardShortcutIndicator = (props: KeyboardShortcutIndicatorProps) => {
   return (<StyledKeyboardShortcutIndicator size="sm" as="kbd" {...props} />)
 }
 
