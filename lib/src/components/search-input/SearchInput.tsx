@@ -47,9 +47,9 @@ const StyledIcon = styled(Icon, {
 
 const StyledSearchInputText = styled(InputText, {
   '&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button':
-    {
-      display: 'none'
-    }
+  {
+    display: 'none'
+  }
 })
 
 export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
@@ -145,7 +145,7 @@ export const SearchInput: React.ForwardRefExoticComponent<SearchInputProps> =
       }
 
       return (
-        <InputBackground css={{ position: 'relative', ...css }} size={size}>
+        <InputBackground css={{ position: 'relative', width: 'auto', ...css }} size={size}>
           <StyledSearchInputText
             ref={setInputElRef}
             size={size}
