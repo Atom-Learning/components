@@ -178,8 +178,9 @@ exports[`SearchField component renders a field in error state - has no programma
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -230,7 +231,7 @@ exports[`SearchField component renders a field in error state - has no programma
         </label>
       </div>
       <div
-        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -443,8 +444,9 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -478,7 +480,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         </label>
       </div>
       <div
-        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -655,8 +657,9 @@ exports[`SearchField component renders a field with a search input - has no prog
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -690,7 +693,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         </label>
       </div>
       <div
-        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+        class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
           class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"

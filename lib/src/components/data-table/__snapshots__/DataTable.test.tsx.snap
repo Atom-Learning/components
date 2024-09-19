@@ -745,8 +745,9 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ieyRoAv-css {
+  .c-dhzjXW-icJWlas-css {
     position: relative;
+    width: auto;
     margin-bottom: var(--space-4);
   }
 
@@ -856,8 +857,9 @@ exports[`DataTable EmptyState renders custom empty state 1`] = `
     stroke-width: 3;
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-oUmPa-igyKUXm-css {
@@ -1392,8 +1394,9 @@ exports[`DataTable component Renders drag handles for draggable table rows 1`] =
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ieyRoAv-css {
+  .c-dhzjXW-icJWlas-css {
     position: relative;
+    width: auto;
     margin-bottom: var(--space-4);
   }
 
@@ -3147,8 +3150,9 @@ exports[`DataTable component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ieyRoAv-css {
+  .c-dhzjXW-icJWlas-css {
     position: relative;
+    width: auto;
     margin-bottom: var(--space-4);
   }
 
@@ -3188,7 +3192,7 @@ exports[`DataTable component renders 1`] = `
     User search
   </label>
   <div
-    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ieyRoAv-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icJWlas-css"
   >
     <input
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -4619,8 +4623,9 @@ exports[`DataTable server-side renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ieyRoAv-css {
+  .c-dhzjXW-icJWlas-css {
     position: relative;
+    width: auto;
     margin-bottom: var(--space-4);
   }
 
@@ -4730,8 +4735,9 @@ exports[`DataTable server-side renders 1`] = `
     stroke-width: 3;
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-oUmPa-igyKUXm-css {
@@ -4758,7 +4764,7 @@ exports[`DataTable server-side renders 1`] = `
     class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block c-cVSpVL-ihbtntv-css"
   />
   <div
-    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
   >
     <input
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -5795,8 +5801,9 @@ exports[`DataTable sticky columns renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dhzjXW-ieyRoAv-css {
+  .c-dhzjXW-icJWlas-css {
     position: relative;
+    width: auto;
     margin-bottom: var(--space-4);
   }
 
@@ -5906,8 +5913,9 @@ exports[`DataTable sticky columns renders 1`] = `
     stroke-width: 3;
   }
 
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-oUmPa-igyKUXm-css {

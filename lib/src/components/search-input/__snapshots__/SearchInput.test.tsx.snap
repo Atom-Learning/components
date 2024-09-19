@@ -111,8 +111,9 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -129,7 +130,7 @@ exports[`SearchInput component renders 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
   >
     <input
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -360,8 +361,9 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -385,7 +387,7 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 <div>
   <div
-    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-icmpvrW-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
   >
     <input
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
@@ -612,8 +614,9 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-icmpvrW-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
+    width: auto;
   }
 
   .c-YEzsq-icRYcAH-css {
@@ -637,7 +640,7 @@ exports[`SearchInput component renders lg size 1`] = `
 
 <div>
   <div
-    class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-dhzjXW-icmpvrW-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-dhzjXW-ibnbbhV-css"
   >
     <input
       class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
