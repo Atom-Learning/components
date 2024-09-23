@@ -12,22 +12,20 @@ const StyledNavigationMenuVerticalText = styled.withConfig({
 })(Text, {
   fontWeight: 'var(--navigation-menu-vertical-item-font-weight)',
   lineHeight: 1.2,
+  width: 'max-content',
+  maxWidth: SIZE_EXPANDED_MAX,
   variants: {
     isExpanded: {
       true: {
-        width: 'max-content',
-        maxWidth: SIZE_EXPANDED_MAX,
+        opacity: 1,
         '@allowMotion': {
-          opacity: 1,
           transform: 'translate(0)',
           transition: 'opacity 125ms ease-out, transform 125ms ease-out'
         }
       },
       false: {
+        opacity: 0,
         '@allowMotion': {
-          width: 'max-content',
-          maxWidth: SIZE_EXPANDED_MAX,
-          opacity: 0,
           transform: 'translate(8px)',
           transition: 'opacity 125ms ease-out, transform 0ms ease-out 125ms'
         }
