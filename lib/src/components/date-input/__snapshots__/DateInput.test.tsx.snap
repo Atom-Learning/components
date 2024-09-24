@@ -104,10 +104,6 @@ exports[`DateInput component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -163,7 +159,7 @@ exports[`DateInput component renders 1`] = `
     >
       <input
         aria-label="test"
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""
@@ -468,10 +464,6 @@ exports[`DateInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -648,7 +640,7 @@ exports[`DateInput component renders lg size 1`] = `
     >
       <input
         aria-label="test"
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""

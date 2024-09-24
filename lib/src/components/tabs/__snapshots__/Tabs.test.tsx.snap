@@ -346,7 +346,7 @@ exports[`Tabs component renders 1`] = `
     background: var(--colors-interactive1);
   }
 
-  .c-cDgrSH {
+  .c-efqMNv {
     background: none;
     border: none;
     cursor: pointer;
@@ -358,33 +358,33 @@ exports[`Tabs component renders 1`] = `
     position: relative;
   }
 
-  .c-cDgrSH[data-state="active"] {
+  .c-efqMNv[data-state="active"] {
     color: var(--colors-interactive1);
     font-weight: 600;
     letter-spacing: -0.005em;
     border-color: currentColor;
   }
 
-  .c-cDgrSH[data-disabled] {
+  .c-efqMNv[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-cDgrSH:not([data-disabled]):hover,
-  .c-cDgrSH:not([data-disabled]):focus-visible {
+  .c-efqMNv:not([disabled]):hover,
+  .c-efqMNv:not([disabled]):focus-visible {
     color: var(--colors-interactive2);
   }
 
-  .c-cDgrSH:not([data-disabled]):hover .c-iPskiL,
-  .c-cDgrSH:not([data-disabled]):focus-visible .c-iPskiL {
+  .c-efqMNv:not([disabled]):hover .c-iPskiL,
+  .c-efqMNv:not([disabled]):focus-visible .c-iPskiL {
     opacity: 0.07;
   }
 
-  .c-cDgrSH:not([data-disabled]):active {
+  .c-efqMNv:not([disabled]):active {
     color: var(--colors-interactive3);
   }
 
-  .c-cDgrSH:not([data-disabled]):focus-visible {
+  .c-efqMNv:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
@@ -440,10 +440,6 @@ exports[`Tabs component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -469,7 +465,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab1"
           aria-selected="true"
-          class="c-cDgrSH"
+          class="c-efqMNv"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -479,7 +475,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
           >
             Trigger 1
           </span>
@@ -490,7 +486,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab2"
           aria-selected="false"
-          class="c-cDgrSH"
+          class="c-efqMNv"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
@@ -500,7 +496,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
           >
             Trigger 2
           </span>
@@ -511,7 +507,7 @@ exports[`Tabs component renders 1`] = `
         <button
           aria-controls="radix-3-content-tab3"
           aria-selected="false"
-          class="c-cDgrSH"
+          class="c-efqMNv"
           data-disabled=""
           data-orientation="horizontal"
           data-radix-collection-item=""
@@ -523,7 +519,7 @@ exports[`Tabs component renders 1`] = `
           type="button"
         >
           <span
-            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
           >
             Trigger 3
           </span>

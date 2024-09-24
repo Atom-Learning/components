@@ -23,7 +23,7 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo {
+  .c-hegdBP {
     border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
     color: var(--colors-grey800);
@@ -33,32 +33,32 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eGIuMz-size-md .c-cOQAgo,
-  .c-cwQMhQ-eGIuMz-size-md .c-jhJxGZ,
-  .c-cwQMhQ-eGIuMz-size-md .c-egnNtq {
+  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
+  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
+  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:first-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:last-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -84,7 +84,7 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eGIuMz-size-md c-cwQMhQ-lnDLgb-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
@@ -106,7 +106,7 @@ exports[`Table component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -119,7 +119,7 @@ exports[`Table component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -152,7 +152,7 @@ exports[`Table component renders with a themed header 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo {
+  .c-hegdBP {
     border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
     color: var(--colors-grey800);
@@ -162,32 +162,32 @@ exports[`Table component renders with a themed header 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eGIuMz-size-md .c-cOQAgo,
-  .c-cwQMhQ-eGIuMz-size-md .c-jhJxGZ,
-  .c-cwQMhQ-eGIuMz-size-md .c-egnNtq {
+  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
+  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
+  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:first-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:last-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -203,9 +203,9 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-djQDV-size-lg .c-cOQAgo,
-  .c-cwQMhQ-djQDV-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-djQDV-size-lg .c-egnNtq {
+  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
+  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -224,7 +224,7 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eGIuMz-size-md c-cwQMhQ-lnDLgb-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-bFYmVr-theme-primary"
@@ -246,7 +246,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -259,7 +259,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -292,7 +292,7 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo {
+  .c-hegdBP {
     border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
     color: var(--colors-grey800);
@@ -302,32 +302,32 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eGIuMz-size-md .c-cOQAgo,
-  .c-cwQMhQ-eGIuMz-size-md .c-jhJxGZ,
-  .c-cwQMhQ-eGIuMz-size-md .c-egnNtq {
+  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
+  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
+  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:first-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:last-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -343,9 +343,9 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-djQDV-size-lg .c-cOQAgo,
-  .c-cwQMhQ-djQDV-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-djQDV-size-lg .c-egnNtq {
+  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
+  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -360,7 +360,7 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-djQDV-size-lg c-cwQMhQ-lnDLgb-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-SggYt-size-lg c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
@@ -382,7 +382,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -395,7 +395,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -428,7 +428,7 @@ exports[`Table component renders with square corners 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo {
+  .c-hegdBP {
     border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
     color: var(--colors-grey800);
@@ -438,32 +438,32 @@ exports[`Table component renders with square corners 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eGIuMz-size-md .c-cOQAgo,
-  .c-cwQMhQ-eGIuMz-size-md .c-jhJxGZ,
-  .c-cwQMhQ-eGIuMz-size-md .c-egnNtq {
+  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
+  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
+  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:first-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:last-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -479,9 +479,9 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-djQDV-size-lg .c-cOQAgo,
-  .c-cwQMhQ-djQDV-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-djQDV-size-lg .c-egnNtq {
+  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
+  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -496,7 +496,7 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eGIuMz-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
       class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
@@ -518,7 +518,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -531,7 +531,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-cOQAgo"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -564,7 +564,7 @@ exports[`Table component renders with sticky columns 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo {
+  .c-hegdBP {
     border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
     color: var(--colors-grey800);
@@ -574,32 +574,32 @@ exports[`Table component renders with sticky columns 1`] = `
     vertical-align: middle;
   }
 
-  .c-cOQAgo:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eGIuMz-size-md .c-cOQAgo,
-  .c-cwQMhQ-eGIuMz-size-md .c-jhJxGZ,
-  .c-cwQMhQ-eGIuMz-size-md .c-egnNtq {
+  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
+  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
+  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:first-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-lnDLgb-corners-round .c-hjAYDb:last-child .c-cOQAgo:last-child {
+  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
@@ -615,9 +615,9 @@ exports[`Table component renders with sticky columns 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-djQDV-size-lg .c-cOQAgo,
-  .c-cwQMhQ-djQDV-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-djQDV-size-lg .c-egnNtq {
+  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
+  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
+  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -671,7 +671,7 @@ exports[`Table component renders with sticky columns 1`] = `
     role="scrollbar"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-eGIuMz-size-md c-cwQMhQ-lnDLgb-corners-round c-cwQMhQ-idVpojG-css"
+      class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
         class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
@@ -705,17 +705,17 @@ exports[`Table component renders with sticky columns 1`] = `
           class="c-hjAYDb"
         >
           <td
-            class="c-cOQAgo"
+            class="c-hegdBP"
           >
             This is text
           </td>
           <td
-            class="c-cOQAgo"
+            class="c-hegdBP"
           >
             This is text
           </td>
           <td
-            class="c-cOQAgo"
+            class="c-hegdBP"
           >
             This is text
           </td>

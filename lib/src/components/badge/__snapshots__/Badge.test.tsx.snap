@@ -366,10 +366,6 @@ exports[`Badge component renders 1`] = `
     display: none !important;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -385,7 +381,7 @@ exports[`Badge component renders 1`] = `
     role="status"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
     >
       Some Text
     </p>
@@ -766,10 +762,6 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     display: none !important;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -792,7 +784,7 @@ exports[`Badge component renders a md size and danger theme 1`] = `
     role="status"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
     >
       Some Text
     </p>
@@ -1183,10 +1175,6 @@ exports[`Badge component renders with an icon 1`] = `
     display: none !important;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -1225,7 +1213,7 @@ exports[`Badge component renders with an icon 1`] = `
       />
     </svg>
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
     >
       Some Text
     </p>

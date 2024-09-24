@@ -29,7 +29,7 @@ const StyledButton = styled(Button, {
     selected: {
       false: {
         color: '$grey1000 !important',
-        fontWeight: '400',
+        fontWeight: 400,
         '&:hover': {
           bg: '$grey200 !important',
           color: '$grey1000 !important'

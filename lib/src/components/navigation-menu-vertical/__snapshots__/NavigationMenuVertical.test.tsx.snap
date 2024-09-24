@@ -314,12 +314,14 @@ exports[`NavigationMenuVertical renders 1`] = `
     display: none;
   }
 
-  .c-dfGGHW {
+  .c-btgszN {
     font-weight: var(--navigation-menu-vertical-item-font-weight);
     line-height: 1.2;
+    width: max-content;
+    max-width: 10rem;
   }
 
-  .c-rTOZb {
+  .c-fcJjQf {
     padding: var(--space-2);
     border: none;
     outline: none;
@@ -337,30 +339,30 @@ exports[`NavigationMenuVertical renders 1`] = `
     --navigation-menu-vertical-item-font-weight: 400;
   }
 
-  .c-rTOZb[data-active] {
+  .c-fcJjQf[data-active] {
     background: var(--colors-backgroundSelected);
     color: var(--colors-textSelected);
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-rTOZb[data-state=open] {
+  .c-fcJjQf[data-state=open] {
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-rTOZb[data-disabled] {
+  .c-fcJjQf[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-rTOZb:not([data-disabled]):hover {
+  .c-fcJjQf:not([disabled]):hover {
     background: var(--colors-backgroundHover);
   }
 
-  .c-rTOZb:not([data-disabled]):active {
+  .c-fcJjQf:not([disabled]):active {
     background: var(--colors-backgroundActive);
   }
 
-  .c-rTOZb:not([data-disabled]):focus-visible {
+  .c-fcJjQf:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
@@ -421,15 +423,11 @@ exports[`NavigationMenuVertical renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
 
-  .c-rTOZb-jLELKD-size-lg {
+  .c-fcJjQf-jLELKD-size-lg {
     min-height: var(--sizes-5);
   }
 }
@@ -453,7 +451,7 @@ exports[`NavigationMenuVertical renders 1`] = `
       >
         <button
           aria-current="page"
-          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+          class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
           data-active=""
           data-radix-collection-item=""
           type="button"
@@ -462,7 +460,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
             >
               Button
             </span>
@@ -473,7 +471,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         class="c-PJLV"
       >
         <a
-          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+          class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
           data-radix-collection-item=""
           href="/somewhere"
         >
@@ -481,7 +479,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
             >
               Relative Link
             </span>
@@ -492,7 +490,7 @@ exports[`NavigationMenuVertical renders 1`] = `
         class="c-PJLV"
       >
         <a
-          class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+          class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
           data-radix-collection-item=""
           href="http://google.com"
           rel="noopener noreferrer"
@@ -502,7 +500,7 @@ exports[`NavigationMenuVertical renders 1`] = `
             class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
           >
             <span
-              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+              class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
             >
               External Link
             </span>
@@ -828,12 +826,14 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     display: none;
   }
 
-  .c-dfGGHW {
+  .c-btgszN {
     font-weight: var(--navigation-menu-vertical-item-font-weight);
     line-height: 1.2;
+    width: max-content;
+    max-width: 10rem;
   }
 
-  .c-rTOZb {
+  .c-fcJjQf {
     padding: var(--space-2);
     border: none;
     outline: none;
@@ -851,30 +851,30 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     --navigation-menu-vertical-item-font-weight: 400;
   }
 
-  .c-rTOZb[data-active] {
+  .c-fcJjQf[data-active] {
     background: var(--colors-backgroundSelected);
     color: var(--colors-textSelected);
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-rTOZb[data-state=open] {
+  .c-fcJjQf[data-state=open] {
     --navigation-menu-vertical-item-font-weight: 600;
   }
 
-  .c-rTOZb[data-disabled] {
+  .c-fcJjQf[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 
-  .c-rTOZb:not([data-disabled]):hover {
+  .c-fcJjQf:not([disabled]):hover {
     background: var(--colors-backgroundHover);
   }
 
-  .c-rTOZb:not([data-disabled]):active {
+  .c-fcJjQf:not([disabled]):active {
     background: var(--colors-backgroundActive);
   }
 
-  .c-rTOZb:not([data-disabled]):focus-visible {
+  .c-fcJjQf:not([disabled]):focus-visible {
     outline: none;
     position: relative;
     z-index: 1;
@@ -953,15 +953,11 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
 
-  .c-rTOZb-jLELKD-size-lg {
+  .c-fcJjQf-jLELKD-size-lg {
     min-height: var(--sizes-5);
   }
 
@@ -1000,7 +996,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
         >
           <button
             aria-current="page"
-            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+            class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
             data-active=""
             data-radix-collection-item=""
             type="button"
@@ -1009,7 +1005,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
               >
                 Button
               </span>
@@ -1020,7 +1016,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           class="c-PJLV"
         >
           <a
-            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+            class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
             data-radix-collection-item=""
             href="/somewhere"
           >
@@ -1028,7 +1024,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
               >
                 Relative Link
               </span>
@@ -1039,7 +1035,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           class="c-PJLV"
         >
           <a
-            class="c-rTOZb c-rTOZb-jLELKD-size-lg"
+            class="c-fcJjQf c-fcJjQf-jLELKD-size-lg"
             data-radix-collection-item=""
             href="http://google.com"
             rel="noopener noreferrer"
@@ -1049,7 +1045,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
               >
                 External Link
               </span>
@@ -1063,7 +1059,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
           <button
             aria-controls="radix-8"
             aria-expanded="true"
-            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-rTOZb c-rTOZb-jLELKD-size-lg"
+            class="c-dhzjXW c-dhzjXW-knmidH-justify-space-between c-dhzjXW-jroWjL-align-center c-dhzjXW-dvnNgW-gap-3 c-fcJjQf c-fcJjQf-jLELKD-size-lg"
             data-radix-collection-item=""
             data-state="open"
             data-testid="accordion-trigger"
@@ -1073,7 +1069,7 @@ exports[`NavigationMenuVertical renders accordion and interacts correctly 1`] = 
               class="c-dhzjXW c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
             >
               <span
-                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-dfGGHW"
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-btgszN"
               >
                 Accordion Trigger
               </span>

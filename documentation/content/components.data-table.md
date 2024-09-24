@@ -447,6 +447,14 @@ tabs:
 
 
 
+
+
+
+
+
+
+
+
         
       <DataTable columns={columns} data={data} enableRowSelection>
         <TableHead />
@@ -577,8 +585,7 @@ tabs:
       #### Disabled rows
 
 
-      We can display disabled rows with different layout so users can see the difference between those rows and the enabled ones.
-      To achieve this you need to pass a property \`disabledRows\` that is a Record where the key is the row id (you can get this from the data table hook) and the value is a boolean that if it's true it will show the row as disabled. Note that this is just a visual change, it doesn't disable clickable elements in the table.
+      We can display disabled rows with different layout so users can see the difference between those rows and the enabled ones. To achieve this you need to pass a property \`disabledRows\` that is a Record where the key is the row id (you can get this from the data table hook) and the value is a boolean that if it's true it will show the row as disabled. Note that this is just a visual change, it doesn't disable clickable elements in the table.
 
 
       <CodeBlock live={false} preview={false} code={`const columnHelper = createColumnHelper()

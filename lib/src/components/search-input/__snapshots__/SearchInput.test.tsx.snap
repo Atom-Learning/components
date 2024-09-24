@@ -50,10 +50,9 @@ exports[`SearchInput component renders 1`] = `
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -96,10 +95,6 @@ exports[`SearchInput component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -118,12 +113,12 @@ exports[`SearchInput component renders 1`] = `
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
-    height: max-content;
+    width: auto;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -137,17 +132,13 @@ exports[`SearchInput component renders 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
-    >
-      <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
-        type="search"
-        value=""
-      />
-    </div>
+    <input
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
       class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-md c-jTFaKU-icDTsBU-css"
@@ -217,10 +208,9 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -332,10 +322,6 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -379,12 +365,12 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
-    height: max-content;
+    width: auto;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -405,17 +391,13 @@ exports[`SearchInput component renders clear button when non-empty defaultValue 
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md"
-    >
-      <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
-        type="search"
-        value="testingWhenDefaultValue"
-      />
-    </div>
+    <input
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value="testingWhenDefaultValue"
+    />
     <button
       aria-label="clearWhenDefaultValue"
       class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-igyKUXm-css c-PJLV"
@@ -487,10 +469,9 @@ exports[`SearchInput component renders lg size 1`] = `
     width: 100%;
   }
 
-  .c-cNcGUX::-webkit-search-decoration,
-  .c-cNcGUX::-webkit-search-cancel-button,
-  .c-cNcGUX::-webkit-search-results-button,
-  .c-cNcGUX input[type="search"]::-webkit-search-results-decoration {
+  .c-YEzsq::-webkit-search-decoration,
+  .c-YEzsq::-webkit-search-cancel-button,
+  .c-YEzsq::-webkit-search-results-button {
     display: none;
   }
 
@@ -602,10 +583,6 @@ exports[`SearchInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -643,12 +620,12 @@ exports[`SearchInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-PJLV-ieFlhpX-css {
+  .c-dhzjXW-ibnbbhV-css {
     position: relative;
-    height: max-content;
+    width: auto;
   }
 
-  .c-cNcGUX-icRYcAH-css {
+  .c-YEzsq-icRYcAH-css {
     padding-right: var(--space-6);
   }
 
@@ -669,17 +646,13 @@ exports[`SearchInput component renders lg size 1`] = `
 
 <div>
   <div
-    class="c-PJLV c-PJLV-ieFlhpX-css"
+    class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg c-dhzjXW-ibnbbhV-css"
   >
-    <div
-      class="c-dhzjXW c-kOvGWL c-kOvGWL-hSbHZR-size-lg"
-    >
-      <input
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd c-cNcGUX c-cNcGUX-icRYcAH-css"
-        type="search"
-        value=""
-      />
-    </div>
+    <input
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+      type="search"
+      value=""
+    />
     <svg
       aria-hidden="true"
       class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-lg c-jTFaKU-icDTsBU-css"

@@ -7,7 +7,7 @@ import { EmptyStateContext } from './EmptyState.context'
 const StyledEmptyStateTitle = styled('h2', {
   color: '$grey800',
   fontFamily: '$body',
-  fontWeight: '600',
+  fontWeight: 600,
   m: 0,
   variants: {
     size: {

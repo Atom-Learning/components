@@ -214,10 +214,6 @@ exports[`NumberInput component renders lg size 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -304,7 +300,7 @@ exports[`NumberInput component renders lg size 1`] = `
         aria-valuemax="9007199254740991"
         aria-valuemin="0"
         aria-valuenow="0"
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         inputmode="numeric"
         name="test"
         pattern="[0-9]*"
@@ -542,10 +538,6 @@ exports[`NumberInput component renders number input  1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -628,7 +620,7 @@ exports[`NumberInput component renders number input  1`] = `
         aria-valuemax="9007199254740991"
         aria-valuemin="0"
         aria-valuenow="0"
-        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         inputmode="numeric"
         name="test"
         pattern="[0-9]*"

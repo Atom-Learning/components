@@ -475,12 +475,12 @@ exports[`Nav component renders 1`] = `
 }
 
 @media  {
-  .c-govTNd-dvXUYs-elementType-link[data-active] {
+  .c-govTNd-ebrYHg-elementType-link[data-active] {
     font-weight: 600;
     color: var(--colors-itemTextSelected);
   }
 
-  .c-govTNd-dvXUYs-elementType-link[data-active]::after {
+  .c-govTNd-ebrYHg-elementType-link[data-active]::after {
     background-color: var(--colors-itemBackgroundSelected);
     border-radius: var(--radii-1);
     bottom: 0;
@@ -514,10 +514,6 @@ exports[`Nav component renders 1`] = `
     content: '';
     margin-top: -0.3864em;
     display: table;
-  }
-
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
   }
 
   .c-ctivzP-cyRcZm-family-body {
@@ -597,7 +593,7 @@ exports[`Nav component renders 1`] = `
           class="PJLV"
         >
           <a
-            class="c-hZAOPl c-govTNd c-govTNd-dvXUYs-elementType-link"
+            class="c-hZAOPl c-govTNd c-govTNd-ebrYHg-elementType-link"
             data-radix-collection-item=""
             href="/introduction"
           >
@@ -668,12 +664,12 @@ exports[`Nav component renders 1`] = `
                   class="c-dhzjXW c-dhzjXW-iiTKOFX-css"
                 >
                   <p
-                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-eGLZSJ"
+                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-eGLZSJ"
                   >
                     Colours
                   </p>
                   <p
-                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+                    class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body"
                   >
                     Atom Learning color palette
                   </p>

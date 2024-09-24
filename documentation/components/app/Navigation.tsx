@@ -18,7 +18,7 @@ const NavigationLink: React.FC<{ href: string }> = ({ href, children }) => {
   if (!children) return null
 
   return (
-    <NextLink href={href} passHref replace={true}>
+    <NextLink href={href} passHref replace={true} legacyBehavior>
       <NavigationMenuVertical.Link size="md" active={isCurrentPage}>
         {children}
       </NavigationMenuVertical.Link>

@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "dev:lib": "cd lib && yarn build:proptypes && yarn dev",
-    "build:lib": "cd lib && yarn build:proptypes && yarn build:lib",
+    "build:lib": "cd lib && yarn build:proptypes && yarn build:lib && yarn build:types",
     "test:lib": "cd lib && yarn test",
     "server:docs": "npx netlify-cms-proxy-server",
     "dev:docs": "cd documentation && yarn provision && yarn dev",
@@ -44,8 +44,8 @@
     }
   },
   "resolutions": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "next/@swc/helpers": "0.4.36",
     "@swc/helpers": "0.4.36"
   },

@@ -8,7 +8,7 @@ export const TableCell = styled('td', {
   lineHeight: 1.5,
   textAlign: 'left',
   verticalAlign: 'middle',
-  '&:first-child': { fontWeight: 'bold' }
+  '&:first-child': { fontWeight: '600' }
 })
 
 TableCell.displayName = 'TableCell'

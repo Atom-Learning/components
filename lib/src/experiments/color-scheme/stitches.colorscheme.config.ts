@@ -1,3 +1,5 @@
+import { Theme } from '@atom-learning/theme/lib/theme-atom'
+
 import { createTheme } from '~/stitches'
 
 export const colorSchemes = {}
@@ -24,7 +26,7 @@ colorSchemes['interactive-loContrast'] = createTheme({
     interactive2: '$accent2',
     interactive3: '$accent3'
   }
-})
+} as unknown as Theme)
 
 colorSchemes['interactive-hiContrast'] = createTheme({
   colors: {
@@ -33,7 +35,7 @@ colorSchemes['interactive-hiContrast'] = createTheme({
     interactive2: '$accent10',
     interactive3: '$accent11'
   }
-})
+} as unknown as Theme)
 
 type TcolorSetup = {
   colorName: string
@@ -78,7 +80,7 @@ const generateBase = () => {
           foreground7plus: '#FFFFFF',
           ...generateColors({ prefix: 'base', colorName, color0 })
         }
-      })
+      } as unknown as Theme)
     }
   )
 }

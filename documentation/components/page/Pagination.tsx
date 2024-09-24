@@ -31,7 +31,7 @@ const PaginationItem = ({ align, label, page }: TPaginationItem) => (
     <Text css={{ color: '$base8' }} size="sm">
       {label}
     </Text>
-    <NextLink passHref href={`${page.href}`}>
+    <NextLink passHref href={`${page.href}`} legacyBehavior>
       {/* @ts-ignore */}
       <Link size="lg" css={{ display: 'block', py: '$2' }}>
         {removeStartingNumber(page.title)}

@@ -7,7 +7,7 @@ import { EmptyStateContext } from './EmptyState.context'
 
 const StyledEmptyStateBody = styled(Text, {
   color: '$grey800',
-  fontWeight: '400',
+  fontWeight: 400,
   variants: {
     size: {
       xs: {

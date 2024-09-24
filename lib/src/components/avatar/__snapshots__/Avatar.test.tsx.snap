@@ -67,10 +67,6 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -214,10 +210,6 @@ exports[`Avatar component renders an icon avatar 1`] = `
     content: '';
     margin-top: -0.3864em;
     display: table;
-  }
-
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
   }
 
   .c-ctivzP-cyRcZm-family-body {
@@ -400,10 +392,6 @@ exports[`Avatar component renders an inital avatar 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -459,7 +447,7 @@ exports[`Avatar component renders an inital avatar 1`] = `
     class="c-fmVwAE c-fmVwAE-fDXBFo-size-xs"
   >
     <p
-      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
+      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       A
     </p>
@@ -532,10 +520,6 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     content: '';
     margin-top: -0.3864em;
     display: table;
-  }
-
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
   }
 
   .c-ctivzP-cyRcZm-family-body {
@@ -656,10 +640,6 @@ exports[`Avatar component renders the initial of the name when the src of the im
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -676,7 +656,7 @@ exports[`Avatar component renders the initial of the name when the src of the im
     class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       B
     </p>

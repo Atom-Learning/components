@@ -40,10 +40,6 @@ exports[`Spacer component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -60,7 +56,7 @@ exports[`Spacer component renders 1`] = `
     class="c-dhzjXW c-dhzjXW-ilgjzAj-css"
   >
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body"
     >
       flex item left
     </p>
@@ -68,7 +64,7 @@ exports[`Spacer component renders 1`] = `
       class="c-gJAAjO"
     />
     <p
-      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body"
     >
       flex item right
     </p>

@@ -161,10 +161,6 @@ exports[`renders SectionMessage component and has no programmatically detectable
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-oUmPa-elrktp-size-sm {
     height: var(--sizes-3);
     width: var(--sizes-3);
@@ -276,7 +272,7 @@ exports[`renders SectionMessage component and has no programmatically detectable
           Title message
         </p>
         <p
-          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ctivzP-ibDwMAO-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body c-ctivzP-ibDwMAO-css"
         >
           This is the description
         </p>

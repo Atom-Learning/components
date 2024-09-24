@@ -461,10 +461,6 @@ exports[`TopBar component renders 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -526,7 +522,7 @@ exports[`TopBar component renders 1`] = `
         href="atomlearning.co.uk"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ksoatv"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
         >
           Admin Panel
         </p>
@@ -1044,10 +1040,6 @@ exports[`TopBar component renders the lg variant 1`] = `
     display: table;
   }
 
-  .c-ctivzP-eMzMJc-weight-normal {
-    font-weight: 400;
-  }
-
   .c-ctivzP-cyRcZm-family-body {
     font-family: var(--fonts-body);
   }
@@ -1113,7 +1105,7 @@ exports[`TopBar component renders the lg variant 1`] = `
         href="atomlearning.co.uk"
       >
         <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-eMzMJc-weight-normal c-ctivzP-cyRcZm-family-body c-ksoatv"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
         >
           Admin Panel
         </p>
