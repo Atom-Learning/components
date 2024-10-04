@@ -4,7 +4,7 @@
   "main": "dist/index.cjs.js",
   "typings": "dist/index.d.ts",
   "module": "dist/index.js",
-  "version": "4.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "",
   "files": [
     "dist"
@@ -17,7 +17,7 @@
     "build:proptypes": "node ./scripts/generate-component-props.mjs",
     "start:sandbox": "vite -c ./sandbox/vite.config.js",
     "add-component": "node ./scripts/add-component.mjs",
-    "prepublishOnly": "run-s clean build:lib build:types build:proptypes",
+    "prepublish": "run-s clean build:lib build:types build:proptypes",
     "clean": "del ./dist/",
     "format": "prettier 'src/**/*.{js,ts,tsx}' --write",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --fix",
