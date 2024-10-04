@@ -6,10 +6,10 @@ const StyledTextarea = styled('textarea', {
   boxShadow: 'none', // remove iOS default styling
   fontSize: '$md', // prevent iOS zooming on focus
   appearance: 'none',
-  border: '1px solid $tonal400',
+  border: '1px solid $grey800',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal600',
+  color: '$grey1000',
   fontFamily: '$body',
   fontWeight: 400,
   lineHeight: 1.4,
@@ -24,12 +24,12 @@ const StyledTextarea = styled('textarea', {
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
+    backgroundColor: '$grey200',
+    color: '$grey800',
     cursor: 'not-allowed'
   },
   '&::placeholder': {
-    color: '$tonal300',
+    color: '$grey700',
     opacity: 1
   },
   variants: {

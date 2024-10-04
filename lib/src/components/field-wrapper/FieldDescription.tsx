@@ -11,7 +11,7 @@ export const Description = ({
   children,
   css
 }: React.PropsWithChildren<DescriptionProps>) => (
-  <Text size="sm" css={{ color: '$tonal300', maxWidth: '80ch', ...css }}>
+  <Text size="sm" css={{ color: '$grey700', maxWidth: '80ch', ...css }}>
     {children}
   </Text>
 )

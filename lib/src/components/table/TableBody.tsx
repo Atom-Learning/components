@@ -10,7 +10,7 @@ const StyledTableBody = styled('tbody', {
       true: {
         [`${StyledRow}`]: {
           '&:nth-child(odd)': { bg: 'white' },
-          '&:nth-child(even)': { bg: '$tonal50' }
+          '&:nth-child(even)': { bg: '$grey100' }
         }
       },
       false: {

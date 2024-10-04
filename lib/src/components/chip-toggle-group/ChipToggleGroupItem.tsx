@@ -17,8 +17,8 @@ const StyledChipToggleGroupItem = styled.withConfig({
   '&:not([disabled])': {
     cursor: 'pointer',
     '&:hover': {
-      bg: '$tonal100',
-      color: '$tonal600',
+      bg: '$grey200',
+      color: '$grey1000',
       borderColor: 'currentColor'
     },
     '&:focus-visible': {
@@ -32,9 +32,9 @@ const StyledChipToggleGroupItem = styled.withConfig({
     }
   },
   '&[data-state="off"]': {
-    color: '$tonal400',
-    bg: '$tonal50',
-    borderColor: '$tonal200'
+    color: '$grey800',
+    bg: '$grey100',
+    borderColor: '$grey600'
   },
   '&[data-state="on"]': {
     [`& ${StyledChipToggleIcon}`]: {

@@ -11,7 +11,7 @@ import {
 } from '~/utilities'
 
 const StyledContent = styled(Content, {
-  backgroundColor: '$tonal500',
+  backgroundColor: '$grey900',
   borderRadius: '$0',
   boxShadow: '$0',
   color: 'white',
@@ -43,7 +43,7 @@ const StyledContent = styled(Content, {
 })
 
 const StyledArrow = styled(Arrow, {
-  fill: '$tonal500',
+  fill: '$grey900',
   '[data-align="end"] &': { mr: '$2' },
   '[data-align="start"] &': { ml: '$2' }
 })

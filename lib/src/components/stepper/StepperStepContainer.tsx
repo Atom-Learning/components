@@ -40,10 +40,10 @@ export const StepperStepContainer = styled(Flex, {
       }
     },
     separator: {
-      default: { '&:not(:last-child)::after': { bg: '$tonal100' } },
+      default: { '&:not(:last-child)::after': { bg: '$grey200' } },
       active: { '&:not(:last-child)::after': { bg: '$primary800' } },
       success: { '&:not(:last-child)::after': { bg: '$success' } },
-      viewed: { '&:not(:last-child)::after': { bg: '$tonal200' } }
+      viewed: { '&:not(:last-child)::after': { bg: '$grey600' } }
     },
     status: {
       completed: {},
@@ -76,8 +76,8 @@ export const StepperStepContainer = styled(Flex, {
       status: 'active',
       css: {
         '&:hover': {
-          '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
-          '& :last-child': { color: '$tonal600' }
+          '& :first-child': { borderColor: '$grey800', color: '$grey1000' },
+          '& :last-child': { color: '$grey1000' }
         },
         '&:focus-visible': {
           '& :first-child': {
@@ -92,8 +92,8 @@ export const StepperStepContainer = styled(Flex, {
       status: 'viewed',
       css: {
         '&:hover': {
-          '& :first-child': { borderColor: '$tonal400', color: '$tonal600' },
-          '& :last-child': { color: '$tonal600' }
+          '& :first-child': { borderColor: '$grey800', color: '$grey1000' },
+          '& :last-child': { color: '$grey1000' }
         },
         '&:focus-visible': {
           '& :first-child': {

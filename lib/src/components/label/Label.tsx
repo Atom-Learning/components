@@ -6,7 +6,7 @@ import type { Override } from '~/utilities/types'
 import { getTextVariant } from '../text'
 
 const StyledLabel = styled('label', {
-  color: '$tonal500',
+  color: '$grey900',
   fontFamily: '$body',
   m: 0,
   variants: {

@@ -49,7 +49,7 @@ export const DataTableMetaData = ({
   }
 
   return (
-    <Text css={{ fontWeight: 600, ...css }}>{`${selectedRows || totalRows} ${
+    <Text weight="bold" css={css}>{`${selectedRows || totalRows} ${
       (selectedRows || totalRows) === 1 ? 'item' : 'items'
     } ${selectedRows ? 'selected' : ''} ${
       isSorted ? getSortingString(sorting) : ''

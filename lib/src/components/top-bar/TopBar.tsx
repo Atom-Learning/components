@@ -25,29 +25,11 @@ const StyledRoot = styled('div', {
   transition: 'box-shadow .2s ease-out',
   variants: {
     hasScrolled: {
-      true: {
-        boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);'
-      }
+      true: { boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);' }
     },
     size: {
-      md: {
-        height: '$6',
-        [`& ${TopBarBrandLogo}`]: {
-          '&[src$=".svg"]': {
-            height: 24,
-            width: 'auto'
-          }
-        }
-      },
-      lg: {
-        height: '$7',
-        [`& ${TopBarBrandLogo}`]: {
-          '&[src$=".svg"]': {
-            height: 32,
-            width: 'auto'
-          }
-        }
-      }
+      md: { height: '$6' },
+      lg: { height: '$7' }
     }
   }
 })

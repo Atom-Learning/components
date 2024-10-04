@@ -43,7 +43,7 @@ export const SliderSteps = ({ min, max, steps = [] }: SliderStepsProps) => {
           key={step.value}
           css={{
             position: 'absolute',
-            color: '$tonal300'
+            color: '$grey700'
           }}
           style={{
             left: `${getPercentValue(step.value, min, max)}%`,

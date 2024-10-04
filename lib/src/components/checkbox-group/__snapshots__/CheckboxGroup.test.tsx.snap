@@ -9,12 +9,12 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .c-dScekx {
+  .c-cVaKZg {
     -webkit-appearance: none;
     appearance: none;
     position: relative;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: 3px;
     color: white;
     cursor: pointer;
@@ -28,29 +28,29 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
     flex-shrink: 0;
   }
 
-  .c-dScekx[data-state="checked"] {
+  .c-cVaKZg[data-state="checked"] {
     background-color: var(--colors-primary800);
     border-color: var(--colors-primary800);
   }
 
-  .c-dScekx[data-state="indeterminate"] {
+  .c-cVaKZg[data-state="indeterminate"] {
     background-color: var(--colors-primary800);
     border-color: var(--colors-primary800);
   }
 
-  .c-dScekx:focus {
+  .c-cVaKZg:focus {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-dScekx[disabled] {
+  .c-cVaKZg[disabled] {
     opacity: 0.3;
     cursor: not-allowed;
   }
 }
 
 @media  {
-  .c-dScekx-kupcZn-size-md {
+  .c-cVaKZg-kupcZn-size-md {
     height: var(--sizes-1);
     width: var(--sizes-1);
   }
@@ -62,7 +62,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
   >
     <button
       aria-checked="false"
-      class="c-dScekx c-dScekx-kupcZn-size-md"
+      class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
       data-state="unchecked"
       role="checkbox"
       title="top level all item"
@@ -71,7 +71,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="c-dScekx c-dScekx-kupcZn-size-md"
+      class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
       data-state="unchecked"
       role="checkbox"
       title="1"
@@ -80,7 +80,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
     />
     <button
       aria-checked="false"
-      class="c-dScekx c-dScekx-kupcZn-size-md"
+      class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
       data-state="unchecked"
       role="checkbox"
       title="2"
@@ -92,7 +92,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
     >
       <button
         aria-checked="false"
-        class="c-dScekx c-dScekx-kupcZn-size-md"
+        class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
         data-state="unchecked"
         role="checkbox"
         title="all but nested"
@@ -101,7 +101,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
       />
       <button
         aria-checked="false"
-        class="c-dScekx c-dScekx-kupcZn-size-md"
+        class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
         data-state="unchecked"
         role="checkbox"
         title="1 nested"
@@ -110,7 +110,7 @@ exports[`CheckboxGroup component renders a checkbox 1`] = `
       />
       <button
         aria-checked="false"
-        class="c-dScekx c-dScekx-kupcZn-size-md"
+        class="c-cVaKZg c-cVaKZg-kupcZn-size-md"
         data-state="unchecked"
         role="checkbox"
         title="2 nested"

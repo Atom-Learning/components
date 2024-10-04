@@ -28,14 +28,12 @@ exports[`Tree renders 1`] = `
     padding-left: var(--space-6);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -123,26 +121,30 @@ exports[`Tree renders 1`] = `
     gap: var(--space-2);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-fmPQHp-noCapsize-true::before,
-  .c-dyvMgW-fmPQHp-noCapsize-true::after {
+  .c-ctivzP-fmPQHp-noCapsize-true::before,
+  .c-ctivzP-fmPQHp-noCapsize-true::after {
     display: none !important;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-elrktp-size-sm {
@@ -158,17 +160,17 @@ exports[`Tree renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -186,7 +188,7 @@ exports[`Tree renders 1`] = `
         class="c-dhzjXW c-rbNxa c-dhzjXW-jroWjL-align-center c-dhzjXW-kaVYFn-gap-2"
       >
         <span
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-bWcumU"
         >
           #1
         </span>
@@ -207,7 +209,7 @@ exports[`Tree renders 1`] = `
           <button
             aria-controls="radix-:r0:"
             aria-expanded="false"
-            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-jCxibG-cv c-hBEOJc"
+            class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-fVNhqX-cv c-hBEOJc"
             data-state="closed"
             type="button"
           >
@@ -223,7 +225,7 @@ exports[`Tree renders 1`] = `
             </svg>
           </button>
           <span
-            class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-fmPQHp-noCapsize-true c-bWcumU"
+            class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-bWcumU"
           >
             Trigger With Submenu
           </span>

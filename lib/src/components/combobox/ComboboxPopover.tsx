@@ -4,7 +4,7 @@ import { styled } from '~/stitches'
 
 export const ComboboxPopover = styled(BaseComboboxPopover, {
   bg: 'white',
-  border: 'solid 1px $tonal100',
+  border: 'solid 1px $grey200',
   borderRadius: '$0',
   boxShadow: '$1',
   boxSizing: 'border-box',

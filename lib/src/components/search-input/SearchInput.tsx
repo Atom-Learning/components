@@ -24,7 +24,7 @@ enum INPUT_ICON {
 }
 
 const StyledIcon = styled(Icon, {
-  color: '$tonal300',
+  color: '$grey700',
   position: 'absolute',
   pointerEvents: 'none',
   variants: {

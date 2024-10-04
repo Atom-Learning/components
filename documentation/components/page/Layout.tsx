@@ -44,7 +44,7 @@ export const Layout: React.FC<TDynamicPage> = (props) => {
       >
         <Header>
           <StackContent>
-            <Heading as="h1" size="lg">
+            <Heading as="h1" size="xl">
               {removeStartingNumber(title)}
             </Heading>
             <Links {...links} />

@@ -70,8 +70,8 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -87,7 +87,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -95,25 +95,25 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -166,7 +166,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
     stroke-width: 1.5;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 }
@@ -188,8 +188,8 @@ exports[`ChipDismissibleGroup component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-ihuXVXM-css {
-    color: var(--colors-tonal200);
+  .c-oUmPa-igDLwLB-css {
+    color: var(--colors-grey600);
   }
 
   .c-PJLV-iiepcqn-css {
@@ -213,7 +213,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </span>
       <button
         aria-label="Dismiss 'A'"
-        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-oUmPa-ihuXVXM-css c-PJLV"
+        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-oUmPa-igDLwLB-css c-PJLV"
         data-state="closed"
         type="button"
       >
@@ -260,7 +260,7 @@ exports[`ChipDismissibleGroup component renders 1`] = `
       </span>
       <button
         aria-label="Dismiss 'B'"
-        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-oUmPa-ihuXVXM-css c-PJLV"
+        class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-cPiTxp-cv c-oUmPa-igDLwLB-css c-PJLV"
         data-state="closed"
         disabled=""
         type="button"

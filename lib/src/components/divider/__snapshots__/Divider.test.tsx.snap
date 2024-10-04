@@ -2,14 +2,14 @@
 
 exports[`Divider component renders horizontal divider 1`] = `
 @media  {
-  .c-fNKiiB {
+  .c-fxIenL {
     border: 0;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-fNKiiB-jokUAR-orientation-horizontal {
+  .c-fxIenL-jokUAR-orientation-horizontal {
     height: 1px;
     width: 100%;
   }
@@ -17,26 +17,26 @@ exports[`Divider component renders horizontal divider 1`] = `
 
 <div>
   <hr
-    class="c-fNKiiB c-fNKiiB-jokUAR-orientation-horizontal"
+    class="c-fxIenL c-fxIenL-jokUAR-orientation-horizontal"
   />
 </div>
 `;
 
 exports[`Divider component renders vertical divider 1`] = `
 @media  {
-  .c-fNKiiB {
+  .c-fxIenL {
     border: 0;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
   }
 }
 
 @media  {
-  .c-fNKiiB-jokUAR-orientation-horizontal {
+  .c-fxIenL-jokUAR-orientation-horizontal {
     height: 1px;
     width: 100%;
   }
 
-  .c-fNKiiB-fKZlxR-orientation-vertical {
+  .c-fxIenL-fKZlxR-orientation-vertical {
     height: 100%;
     width: 1px;
     min-height: var(--sizes-3);
@@ -45,7 +45,7 @@ exports[`Divider component renders vertical divider 1`] = `
 
 <div>
   <hr
-    class="c-fNKiiB c-fNKiiB-fKZlxR-orientation-vertical"
+    class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical"
   />
 </div>
 `;

@@ -10,9 +10,9 @@ type MarkdownInlineCodeProps = {
 }
 
 const StyledMarkdownInlineCode = styled(Box, {
-  bg: '$tonal100',
+  bg: '$grey200',
   borderRadius: '$0',
-  color: '$tonal600',
+  color: '$grey1000',
   display: 'inline-block',
   fontFamily: '$mono',
   fontSize: '85%',

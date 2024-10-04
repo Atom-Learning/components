@@ -106,7 +106,7 @@ export const ComponentProps: React.FC<{ component }> = ({ component }) => {
 
   return (
     <Box as="figure" css={{ width: '100%', p: 0, m: 0 }}>
-      <Text as="figcaption" size="xs" css={{ mb: '$2', fontWeight: 'bold' }}>
+      <Text weight="bold" as="figcaption" size="xs" css={{ mb: '$2' }}>
         {component}
       </Text>
       <Box css={{ width: '100%', overflow: 'auto' }}>

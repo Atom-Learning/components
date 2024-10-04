@@ -10,12 +10,12 @@ exports[`Radio component renders a disabled radio button 1`] = `
     position: absolute;
   }
 
-  .c-iDxksV {
+  .c-jhmwMa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: var(--radii-round);
     color: white;
     cursor: pointer;
@@ -27,20 +27,20 @@ exports[`Radio component renders a disabled radio button 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-iDxksV:focus {
+  .c-jhmwMa:focus {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-iDxksV[data-state="checked"] {
+  .c-jhmwMa[data-state="checked"] {
     background-color: var(--colors-primary800);
     border-color: var(--colors-primary800);
   }
 
-  .c-iDxksV[disabled] {
-    background-color: var(--colors-tonal100);
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-jhmwMa[disabled] {
+    background-color: var(--colors-grey200);
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey800);
     cursor: not-allowed;
   }
 
@@ -62,7 +62,7 @@ exports[`Radio component renders a disabled radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="disabled indicator"
-      class="c-iDxksV"
+      class="c-jhmwMa"
       data-disabled=""
       data-radix-collection-item=""
       data-state="unchecked"
@@ -86,12 +86,12 @@ exports[`Radio component renders a radio button 1`] = `
     position: absolute;
   }
 
-  .c-iDxksV {
+  .c-jhmwMa {
     align-items: center;
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
-    border: 1px solid var(--colors-tonal400);
+    border: 1px solid var(--colors-grey800);
     border-radius: var(--radii-round);
     color: white;
     cursor: pointer;
@@ -103,20 +103,20 @@ exports[`Radio component renders a radio button 1`] = `
     transition: all 50ms ease-out;
   }
 
-  .c-iDxksV:focus {
+  .c-jhmwMa:focus {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 1px;
   }
 
-  .c-iDxksV[data-state="checked"] {
+  .c-jhmwMa[data-state="checked"] {
     background-color: var(--colors-primary800);
     border-color: var(--colors-primary800);
   }
 
-  .c-iDxksV[disabled] {
-    background-color: var(--colors-tonal100);
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal400);
+  .c-jhmwMa[disabled] {
+    background-color: var(--colors-grey200);
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey800);
     cursor: not-allowed;
   }
 
@@ -138,7 +138,7 @@ exports[`Radio component renders a radio button 1`] = `
     <button
       aria-checked="false"
       aria-label="indicator"
-      class="c-iDxksV"
+      class="c-jhmwMa"
       data-radix-collection-item=""
       data-state="unchecked"
       role="radio"

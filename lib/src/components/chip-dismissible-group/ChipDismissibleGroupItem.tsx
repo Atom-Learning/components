@@ -30,7 +30,7 @@ export const ChipDismissibleGroupItem = ({
         <DismissibleGroup.Trigger asChild>
           <ActionIcon
             label={dismissActionLabel}
-            css={{ color: '$tonal200' }}
+            css={{ color: '$grey600' }}
             size={size === 'sm' ? 'xs' : 'sm'}
           >
             <Icon is={Close} />

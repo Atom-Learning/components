@@ -6,7 +6,7 @@ import { disabledStyle } from '~/utilities'
 
 const StyledSwitch = styled(RadixSwitch.Root, {
   appearance: 'none',
-  backgroundColor: '$tonal200',
+  backgroundColor: '$grey600',
   border: 'none',
   borderRadius: '$round',
   cursor: 'pointer',
@@ -15,7 +15,7 @@ const StyledSwitch = styled(RadixSwitch.Root, {
   position: 'relative',
   transition: 'all 50ms ease-out',
   '&:hover': {
-    backgroundColor: '$tonal300'
+    backgroundColor: '$grey700'
   },
   '&:focus': {
     outline: '2px solid $primary800',
