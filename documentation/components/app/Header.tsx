@@ -19,20 +19,24 @@ import { Hamburger } from '@atom-learning/icons'
 import { useTheme } from '~/utilities/hooks/useTheme'
 
 const NavigationHeader = () => {
-
-  const { theme, } = useTheme()
-  return <SideBar.Brand href="/">
-    {theme === 'atom' && <SideBar.BrandLogo src={logoAtom.src} css={{ width: 140 }} />}
-    {theme === 'quest' && <SideBar.BrandLogo src={logoQuest.src} css={{ width: 120 }} />}
-    <Badge
-      theme="neutral"
-      size="xs"
-      css={{ position: 'absolute', right: '$3', top: '$4' }}
+  const { theme } = useTheme()
+  return (
+    <SideBar.Brand href="/">
+      {theme === 'atom' && (
+        <SideBar.BrandLogo src={logoAtom.src} css={{ width: 140 }} />
+      )}
+      {theme === 'quest' && (
+        <SideBar.BrandLogo src={logoQuest.src} css={{ width: 120 }} />
+      )}
+      <Badge
+        theme="neutral"
+        size="xs"
+        css={{ position: 'absolute', right: '$3', top: '$4' }}
       >
-      {buildConstants['version']}
-    </Badge>
-  </SideBar.Brand>
-
+        {buildConstants['version']}
+      </Badge>
+    </SideBar.Brand>
+  )
 }
 
 const BrandSwitch = () => {
