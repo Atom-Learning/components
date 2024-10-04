@@ -19,14 +19,12 @@ exports[`DateInput component renders 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -89,21 +87,25 @@ exports[`DateInput component renders 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-PrXKS-size-md {
@@ -119,17 +121,17 @@ exports[`DateInput component renders 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 }
@@ -157,7 +159,7 @@ exports[`DateInput component renders 1`] = `
     >
       <input
         aria-label="test"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""
@@ -168,7 +170,7 @@ exports[`DateInput component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igEsmBj-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-igEsmBj-css"
       data-state="closed"
       type="button"
     >
@@ -212,14 +214,12 @@ exports[`DateInput component renders lg size 1`] = `
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -276,8 +276,8 @@ exports[`DateInput component renders lg size 1`] = `
     vertical-align: middle;
   }
 
-  .c-hVoQtf {
-    background-color: var(--colors-tonal500);
+  .c-hkdxUu {
+    background-color: var(--colors-grey900);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-0);
     color: white;
@@ -293,7 +293,7 @@ exports[`DateInput component renders lg size 1`] = `
   }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf {
+    .c-hkdxUu {
       animation-duration: 75ms;
       animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
       will-change: transform, opacity;
@@ -301,25 +301,25 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="top"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="top"] {
       animation-name: k-ftcNPK;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="right"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="right"] {
       animation-name: k-hbaHED;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="bottom"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="bottom"] {
       animation-name: k-daNevH;
     }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .c-hVoQtf[data-state="delayed-open"][data-side="left"] {
+    .c-hkdxUu[data-state="delayed-open"][data-side="left"] {
       animation-name: k-fvyGIa;
     }
 }
@@ -352,11 +352,11 @@ exports[`DateInput component renders lg size 1`] = `
     grid-gap: var(--space-1) var(--space-2);
   }
 
-  .c-nNuCY {
+  .c-gZdTaX {
     background: transparent;
     border: none;
     border-radius: var(--radii-round);
-    color: var(--colors-tonal900);
+    color: var(--colors-grey900);
     cursor: pointer;
     font-family: var(--fonts-body);
     font-size: var(--fontSizes-sm);
@@ -366,21 +366,21 @@ exports[`DateInput component renders lg size 1`] = `
     transition: all 75ms;
   }
 
-  .c-nNuCY:hover {
-    background: var(--colors-tonal100);
+  .c-gZdTaX:hover {
+    background: var(--colors-grey200);
   }
 
-  .c-nNuCY:active {
+  .c-gZdTaX:active {
     color: white;
     background: var(--colors-primary800);
   }
 
-  .c-nNuCY:focus {
+  .c-gZdTaX:focus {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
 
-  .c-nNuCY[disabled] {
+  .c-gZdTaX[disabled] {
     opacity: 0.3;
     cursor: default;
   }
@@ -447,21 +447,25 @@ exports[`DateInput component renders lg size 1`] = `
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-oUmPa-PrXKS-size-md {
@@ -475,7 +479,7 @@ exports[`DateInput component renders lg size 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-hVoQtf-gWQnqe-size-md {
+  .c-hkdxUu-gWQnqe-size-md {
     max-width: 250px;
   }
 
@@ -493,41 +497,45 @@ exports[`DateInput component renders lg size 1`] = `
     width: 20px;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
   }
 
-  .c-nNuCY-huXVXM-isOutsideMonth-true {
-    color: var(--colors-tonal200);
+  .c-ctivzP-ecBjWS-weight-bold {
+    font-weight: 600;
   }
 
-  .c-nNuCY-hztIub-isToday-true {
-    background: var(--colors-tonal100);
+  .c-gZdTaX-gDLwLB-isOutsideMonth-true {
+    color: var(--colors-grey600);
+  }
+
+  .c-gZdTaX-eeLzNh-isToday-true {
+    background: var(--colors-grey200);
   }
 
   .c-iKnjyA-kUaMfZ-size-md {
     max-width: 400px;
   }
 
-  .c-nNuCY-hewsLb-isSelected-true {
+  .c-gZdTaX-hewsLb-isSelected-true {
     background: var(--colors-primary800);
     color: white;
   }
 
-  .c-nNuCY-hewsLb-isSelected-true:hover {
+  .c-gZdTaX-hewsLb-isSelected-true:hover {
     background: var(--colors-primary800);
   }
 
@@ -537,17 +545,17 @@ exports[`DateInput component renders lg size 1`] = `
 }
 
 @media  {
-  .c-oUmPa-jCxibG-cv {
+  .c-oUmPa-fVNhqX-cv {
     background: transparent;
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):hover,
-  .c-oUmPa-jCxibG-cv:not(:disabled):focus {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):hover,
+  .c-oUmPa-fVNhqX-cv:not(:disabled):focus {
     color: var(--colors-primary900);
   }
 
-  .c-oUmPa-jCxibG-cv:not(:disabled):active {
+  .c-oUmPa-fVNhqX-cv:not(:disabled):active {
     color: var(--colors-primary1000);
   }
 
@@ -603,18 +611,17 @@ exports[`DateInput component renders lg size 1`] = `
     margin-bottom: var(--space-4);
   }
 
-  .c-kaaUSm-ikwYYXS-css {
+  .c-kaaUSm-iivUivI-css {
     padding-left: 0;
     padding-right: 0;
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
   }
 
   .c-fPxPMR-ihbtntv-css {
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-idQvJRf-css {
-    font-weight: 600;
+  .c-ctivzP-igjdJOs-css {
     text-align: center;
   }
 
@@ -633,7 +640,7 @@ exports[`DateInput component renders lg size 1`] = `
     >
       <input
         aria-label="test"
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd"
         name="date"
         type="text"
         value=""
@@ -644,7 +651,7 @@ exports[`DateInput component renders lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
-      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-jCxibG-cv c-oUmPa-igEsmBj-css"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-oUmPa-igEsmBj-css"
       data-state="closed"
       type="button"
     >

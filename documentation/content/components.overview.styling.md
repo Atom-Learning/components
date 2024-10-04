@@ -58,7 +58,7 @@ tabs:
 
       <Text
         css={{
-          color: '$tonal300',
+          color: '$grey700',
           '@md': { color: '$primary800' },
           '@lg': { color: '$primary1000' }
         }}

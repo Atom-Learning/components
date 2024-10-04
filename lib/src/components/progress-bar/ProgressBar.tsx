@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 
 const StyledProgressBar = styled(Progress.Root, {
   borderRadius: '$round',
-  background: '$tonal100',
+  background: '$grey200',
   height: '$0',
   position: 'relative',
   overflow: 'hidden',

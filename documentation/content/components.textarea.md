@@ -87,13 +87,13 @@ tabs:
 
       | Bg color               | $white    | \#ffffff |
 
-      | Border-color           | $tonal400 | \#545454 |
+      | Border-color           | $grey800 | \#545454 |
 
-      | Label font-color       | $tonal500 | \#333333 |
+      | Label font-color       | $grey900 | \#333333 |
 
-      | Description font-color | $tonal300 | \#757575 |
+      | Description font-color | $grey700 | \#757575 |
 
-      | Text font-color        | $tonal600 | \#1F1F1F |
+      | Text font-color        | $grey1000 | \#1F1F1F |
 
 
       ![textarea placeholder variant](/assets/images/textarea-variant-2.svg "textarea placeholder variant")
@@ -108,13 +108,13 @@ tabs:
 
       | Bg color               | $white    | \#ffffff |
 
-      | Border-color           | $tonal400 | \#545454 |
+      | Border-color           | $grey800 | \#545454 |
 
-      | Label font-color       | $tonal500 | \#333333 |
+      | Label font-color       | $grey900 | \#333333 |
 
-      | Description font-color | $tonal300 | \#757575 |
+      | Description font-color | $grey700 | \#757575 |
 
-      | Placeholder font-color | $tonal300 | \#757575 |
+      | Placeholder font-color | $grey700 | \#757575 |
 
 
       ![textarea focus variant](/assets/images/textarea-variant-3.svg "textarea focus variant")
@@ -130,9 +130,9 @@ tabs:
 
       | Border-color     | $primary800  | \#0F67F5 |
 
-      | Label font-color | $tonal500    | \#333333 |
+      | Label font-color | $grey900    | \#333333 |
 
-      | Text font-color  | $tonal600    | \#1F1F1F |
+      | Text font-color  | $grey1000    | \#1F1F1F |
 
 
       ![textarea disabled variant](/assets/images/textarea-variant-4.svg "textarea disabled variant")
@@ -144,13 +144,13 @@ tabs:
 
       | ---------------- | --------- | -------- |
 
-      | Bg color         | $tonal100 | \#EEEEEE |
+      | Bg color         | $grey200 | \#EEEEEE |
 
-      | Border-color     | $tonal400 | \#545454 |
+      | Border-color     | $grey800 | \#545454 |
 
-      | Label font-color | $tonal500 | \#333333 |
+      | Label font-color | $grey900 | \#333333 |
 
-      | Text font-color  | $tonal600 | \#1F1F1F |
+      | Text font-color  | $grey1000 | \#1F1F1F |
 
 
       ![textarea error variant](/assets/images/textarea-variant-5.svg "textarea error variant")
@@ -162,11 +162,11 @@ tabs:
 
       | ------------------------ | --------- | -------- |
 
-      | Bg color                 | $tonal100 | \#EEEEEE |
+      | Bg color                 | $grey200 | \#EEEEEE |
 
       | Border-color             | $danger   | \#EE0505 |
 
-      | Label font-color         | $tonal500 | \#333333 |
+      | Label font-color         | $grey900 | \#333333 |
 
       | Text font-color          | $danger   | \#EE0505 |
 

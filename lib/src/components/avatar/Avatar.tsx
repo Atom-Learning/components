@@ -12,9 +12,9 @@ const avatarRootStyles = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  color: '$tonal400',
+  color: '$grey800',
   borderRadius: '$round',
-  border: '2px solid $tonal100',
+  border: '2px solid $grey200',
   backgroundColor: '$white',
   overflow: 'hidden',
   variants: {
@@ -35,12 +35,12 @@ const StyledButton = styled('button', {
   ...avatarRootStyles,
   '&:not([disabled])': {
     '&:hover': {
-      borderColor: '$tonal400',
-      backgroundColor: '$tonal50'
+      borderColor: '$grey800',
+      backgroundColor: '$grey100'
     },
     '&:active': {
       borderColor: '$primary800',
-      backgroundColor: '$tonal100'
+      backgroundColor: '$grey200'
     },
     '&:focus-visible': focusVisibleStyleBlock()
   },

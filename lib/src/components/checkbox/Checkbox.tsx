@@ -19,7 +19,7 @@ const StyledCheckbox = styled(RadixCheckbox.Root, {
   appearance: 'none',
   position: 'relative',
   backgroundColor: 'transparent',
-  border: '1px solid $colors$tonal400',
+  border: '1px solid $colors$grey800',
   borderRadius: '3px',
   color: 'white',
   cursor: 'pointer',

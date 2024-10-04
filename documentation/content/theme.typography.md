@@ -29,7 +29,7 @@ tabs:
 
       ```jsx
 
-      <Box css={{ bg: '$tonal100', p: '$5' }}>
+      <Box css={{ bg: '$grey200', p: '$5' }}>
         <Text size="xl" css={{ bg: 'white' }}>
           Hello World
         </Text>

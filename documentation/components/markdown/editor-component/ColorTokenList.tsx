@@ -15,7 +15,7 @@ const ColorExample: typeof TokenList.Item = ({ token, value, ...rest }) => {
     <Flex align="center" {...rest}>
       <Box css={{ borderRadius: '$round', bg: `$${token}`, size: '$6' }} />
       <Flex direction="column" css={{ pl: '$3' }}>
-        <Text css={{ fontWeight: 600, mb: '$3' }}>{`$${token}`}</Text>
+        <Text weight="bold" css={{ mb: '$3' }}>{`$${token}`}</Text>
         <Text size="sm" css={{ color: '$base8', mb: !hasAlpha ? '$3' : 0 }}>
           {value}
         </Text>

@@ -6,8 +6,8 @@ exports[`SliderField component renders 1`] = `
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -84,60 +84,62 @@ exports[`SliderField component renders 1`] = `
     cursor: not-allowed;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
 
-  .c-kydCSz-dOexvR-theme-tonal .c-nJgcq {
-    background: var(--colors-tonal200);
+  .c-kydCSz-gonssI-theme-tonal .c-nJgcq {
+    background: var(--colors-grey600);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 }
 
@@ -148,9 +150,9 @@ exports[`SliderField component renders 1`] = `
     margin-bottom: var(--space-3);
   }
 
-  .c-dyvMgW-iQwDky-css {
+  .c-ctivzP-idynIBj-css {
     margin-top: var(--space-4);
-    color: var(--colors-tonal300);
+    color: var(--colors-grey700);
     width: 100%;
   }
 }
@@ -167,7 +169,7 @@ exports[`SliderField component renders 1`] = `
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="sliderTest"
         >
           Slider Test
@@ -175,7 +177,7 @@ exports[`SliderField component renders 1`] = `
       </div>
       <span
         aria-disabled="false"
-        class="c-kydCSz c-kydCSz-dOexvR-theme-tonal"
+        class="c-kydCSz c-kydCSz-gonssI-theme-tonal"
         data-orientation="horizontal"
         dir="ltr"
         style="--radix-slider-thumb-transform: translateX(-50%);"
@@ -213,7 +215,7 @@ exports[`SliderField component renders 1`] = `
         value="50"
       />
       <p
-        class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-iQwDky-css"
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ctivzP-idynIBj-css"
       >
         Current value is 50
       </p>

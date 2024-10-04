@@ -8,6 +8,11 @@ import { useIsMounted } from '~/utilities/hooks/useIsMounted'
 import { Layout as AppLayout } from '~/components/app'
 
 globalCss({
+  '@font-face': {
+    fontFamily: '"National 2 Condensed"',
+    fontWeight: 700,
+    src: `url(/assets/national-2-condensed-bold.woff2) format('woff2')`
+  },
   '*': { boxSizing: 'border-box' },
   body: { margin: 0 }
 })()

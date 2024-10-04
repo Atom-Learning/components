@@ -4,7 +4,7 @@ export const Day = styled('button', {
   bg: 'transparent',
   border: 'none',
   borderRadius: '$round',
-  color: '$tonal900',
+  color: '$grey900',
   cursor: 'pointer',
   fontFamily: '$body',
   fontSize: '$sm',
@@ -12,7 +12,7 @@ export const Day = styled('button', {
   p: 0,
   transition: 'all 75ms',
   '&:hover': {
-    bg: '$tonal100'
+    bg: '$grey200'
   },
   '&:active': {
     color: 'white',
@@ -35,10 +35,10 @@ export const Day = styled('button', {
       }
     },
     isToday: {
-      true: { bg: '$tonal100' }
+      true: { bg: '$grey200' }
     },
     isOutsideMonth: {
-      true: { color: '$tonal200' }
+      true: { color: '$grey600' }
     }
   }
 })

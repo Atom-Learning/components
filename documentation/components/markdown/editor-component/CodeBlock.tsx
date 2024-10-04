@@ -33,7 +33,7 @@ const StyledLivePreview = styled(LivePreview, {
   flexWrap: 'wrap',
   justifyContent: 'center',
   overflow: 'visible',
-  my: '$5',
+  my: '$7 !important',
   whiteSpace: 'initial'
 })
 const StyledLiveEditor = styled(LiveEditor)

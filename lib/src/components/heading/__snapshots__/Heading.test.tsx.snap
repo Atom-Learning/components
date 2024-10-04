@@ -2,35 +2,35 @@
 
 exports[`Heading component renders a heading 1`] = `
 @media  {
-  .c-jryFOR {
-    font-family: var(--fonts-display);
+  .c-iUMJTc {
     font-weight: 700;
     margin: 0;
   }
 }
 
 @media  {
-  .c-jryFOR-fOoUdm-size-md {
+  .c-iUMJTc-iEIMJs-size-md {
+    font-family: var(--fonts-body);
     font-size: var(--fontSizes-xl);
     line-height: 1.14;
   }
 
-  .c-jryFOR-fOoUdm-size-md::before {
+  .c-iUMJTc-iEIMJs-size-md::before {
     content: '';
-    margin-bottom: -0.2174em;
+    margin-bottom: -0.2078em;
     display: table;
   }
 
-  .c-jryFOR-fOoUdm-size-md::after {
+  .c-iUMJTc-iEIMJs-size-md::after {
     content: '';
-    margin-top: -0.2254em;
+    margin-top: -0.2078em;
     display: table;
   }
 }
 
 <div>
   <h2
-    class="c-jryFOR c-jryFOR-fOoUdm-size-md"
+    class="c-iUMJTc c-iUMJTc-iEIMJs-size-md"
   >
     HEADING
   </h2>

@@ -16,19 +16,19 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<RadioCardGroup>
         <RadioCard value="1">
           <Text css={{ mb: '$2' }}>This is a radio card option</Text>
-          <Text size="sm" css={{ color: '$tonal300' }}>
+          <Text size="sm" css={{ color: '$grey700' }}>
             With some additional text
           </Text>
         </RadioCard>
         <RadioCard value="2">
           <Text css={{ mb: '$2' }}>This is another radio card option</Text>
-          <Text size="sm" css={{ color: '$tonal300' }}>
+          <Text size="sm" css={{ color: '$grey700' }}>
             With some additional text
           </Text>
         </RadioCard>
         <RadioCard value="3">
           <Text css={{ mb: '$2' }}>And a further radio card option</Text>
-          <Text size="sm" css={{ color: '$tonal300' }}>
+          <Text size="sm" css={{ color: '$grey700' }}>
             With some additional text
           </Text>
         </RadioCard>

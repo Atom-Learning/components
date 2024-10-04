@@ -6,8 +6,8 @@ exports[`SearchField component renders a field in error state - has no programma
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -25,14 +25,12 @@ exports[`SearchField component renders a field in error state - has no programma
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -74,8 +72,8 @@ exports[`SearchField component renders a field in error state - has no programma
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
@@ -88,24 +86,24 @@ exports[`SearchField component renders a field in error state - has no programma
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -114,21 +112,25 @@ exports[`SearchField component renders a field in error state - has no programma
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -137,7 +139,7 @@ exports[`SearchField component renders a field in error state - has no programma
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -153,18 +155,18 @@ exports[`SearchField component renders a field in error state - has no programma
     stroke-width: 1.5;
   }
 
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
@@ -187,7 +189,7 @@ exports[`SearchField component renders a field in error state - has no programma
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -202,7 +204,7 @@ exports[`SearchField component renders a field in error state - has no programma
     margin-right: var(--space-2);
   }
 
-  .c-dyvMgW-iiTbKsx-css {
+  .c-ctivzP-iiTbKsx-css {
     transform: translateY(var(--space-0));
   }
 }
@@ -219,7 +221,7 @@ exports[`SearchField component renders a field in error state - has no programma
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="searchField"
         >
           <span
@@ -234,7 +236,7 @@ exports[`SearchField component renders a field in error state - has no programma
         class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
           id="searchField"
           llabel="Search Field"
           name="searchField"
@@ -245,7 +247,7 @@ exports[`SearchField component renders a field in error state - has no programma
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -284,7 +286,7 @@ exports[`SearchField component renders a field in error state - has no programma
           />
         </svg>
         <span
-          class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-dyvMgW-iiTbKsx-css"
+          class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body c-ctivzP-iiTbKsx-css"
         >
           This field is required
         </span>
@@ -305,8 +307,8 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -324,14 +326,12 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -373,32 +373,32 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -407,21 +407,25 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -430,7 +434,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -453,7 +457,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -473,7 +477,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="searchField"
         >
           Search Field
@@ -483,7 +487,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
           disabled=""
           id="searchField"
           name="searchField"
@@ -493,7 +497,7 @@ exports[`SearchField component renders a field with a disabled input - has no pr
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -518,8 +522,8 @@ exports[`SearchField component renders a field with a search input - has no prog
     display: flex;
   }
 
-  .c-cVSpVL {
-    color: var(--colors-tonal500);
+  .c-dpNEPi {
+    color: var(--colors-grey900);
     font-family: var(--fonts-body);
     margin: 0;
   }
@@ -537,14 +541,12 @@ exports[`SearchField component renders a field with a search input - has no prog
     border-color: var(--colors-blue800);
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -586,32 +588,32 @@ exports[`SearchField component renders a field with a search input - has no prog
     vertical-align: middle;
   }
 
-  .c-hvMhuR {
-    color: var(--colors-tonal300);
+  .c-jTFaKU {
+    color: var(--colors-grey700);
     position: absolute;
     pointer-events: none;
   }
 }
 
 @media  {
-  .c-cVSpVL-gvmVBy-size-md {
+  .c-dpNEPi-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::before {
+  .c-dpNEPi-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-gvmVBy-size-md::after {
+  .c-dpNEPi-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-cVSpVL-grKRUr-type-block {
+  .c-dpNEPi-grKRUr-type-block {
     display: block;
     font-weight: 600;
   }
@@ -620,21 +622,25 @@ exports[`SearchField component renders a field with a search input - has no prog
     height: var(--sizes-4);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 
   .c-hMRxhp-dMrjnF-size-md {
@@ -643,7 +649,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     stroke-width: 1.75;
   }
 
-  .c-hvMhuR-koUlob-size-md {
+  .c-jTFaKU-koUlob-size-md {
     right: 10px;
     height: 20px;
     width: 20px;
@@ -666,7 +672,7 @@ exports[`SearchField component renders a field with a search input - has no prog
     padding-right: var(--space-6);
   }
 
-  .c-hvMhuR-icDTsBU-css {
+  .c-jTFaKU-icDTsBU-css {
     height: 20px;
     width: 20px;
     top: 50%;
@@ -686,7 +692,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         class="c-dhzjXW c-dhzjXW-iwHglP-css"
       >
         <label
-          class="c-cVSpVL c-cVSpVL-gvmVBy-size-md c-cVSpVL-grKRUr-type-block"
+          class="c-dpNEPi c-dpNEPi-gvmVBy-size-md c-dpNEPi-grKRUr-type-block"
           for="searchField"
         >
           Search Field
@@ -696,7 +702,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         class="c-dhzjXW c-kOvGWL c-kOvGWL-dNqCDY-size-md c-dhzjXW-ibnbbhV-css"
       >
         <input
-          class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
+          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-foJWJd c-YEzsq c-YEzsq-icRYcAH-css"
           id="searchField"
           name="searchField"
           placeholder="Search Field"
@@ -705,7 +711,7 @@ exports[`SearchField component renders a field with a search input - has no prog
         />
         <svg
           aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hvMhuR c-hvMhuR-koUlob-size-md c-hvMhuR-icDTsBU-css"
+          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-jTFaKU c-jTFaKU-koUlob-size-md c-jTFaKU-icDTsBU-css"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >

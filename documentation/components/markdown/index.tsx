@@ -26,9 +26,7 @@ import { DosAndDonts } from './editor-component/DosAndDonts'
 import { Cards } from './editor-component/Cards'
 
 export const components = {
-  h2: (props) => (
-    <Heading {...props} size="md" as="h2" css={{ fontWeight: 600 }} />
-  ),
+  h2: (props) => <Heading {...props} as="h2" size="sm" />,
   h3: (props) => <Heading {...props} as="h3" size="sm" />,
   h4: (props) => <Heading {...props} as="h4" size="xs" />,
   h5: (props) => <Heading {...props} as="h5" size="xs" />,

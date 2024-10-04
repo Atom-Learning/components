@@ -2,14 +2,12 @@
 
 exports[`KeyboardShortcut component renders 1`] = `
 @media  {
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -32,21 +30,25 @@ exports[`KeyboardShortcut component renders 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-bndJoy-size-sm {
+  .c-ctivzP-bndJoy-size-sm {
     font-size: var(--fontSizes-sm);
     line-height: 1.53;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::before {
+  .c-ctivzP-bndJoy-size-sm::before {
     content: '';
     margin-bottom: -0.4056em;
     display: table;
   }
 
-  .c-dyvMgW-bndJoy-size-sm::after {
+  .c-ctivzP-bndJoy-size-sm::after {
     content: '';
     margin-top: -0.4056em;
     display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
   }
 }
 
@@ -55,7 +57,7 @@ exports[`KeyboardShortcut component renders 1`] = `
     class="c-PJLV"
   >
     <kbd
-      class="c-dyvMgW c-dyvMgW-bndJoy-size-sm c-ipiltK"
+      class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body c-ipiltK"
     >
       Meta + A
     </kbd>

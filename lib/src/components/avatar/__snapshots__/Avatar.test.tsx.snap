@@ -2,13 +2,13 @@
 
 exports[`Avatar component renders a fallback icon instead of an initial if name is missing 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -24,14 +24,12 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -47,29 +45,33 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -80,18 +82,18 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -99,8 +101,8 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -117,7 +119,7 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
@@ -145,13 +147,13 @@ exports[`Avatar component renders a fallback icon instead of an initial if name 
 
 exports[`Avatar component renders an icon avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -167,14 +169,12 @@ exports[`Avatar component renders an icon avatar 1`] = `
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -190,29 +190,33 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -223,18 +227,18 @@ exports[`Avatar component renders an icon avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -242,8 +246,8 @@ exports[`Avatar component renders an icon avatar 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -260,7 +264,7 @@ exports[`Avatar component renders an icon avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <svg
       aria-hidden="true"
@@ -278,13 +282,13 @@ exports[`Avatar component renders an icon avatar 1`] = `
 
 exports[`Avatar component renders an image avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -302,7 +306,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
@@ -310,7 +314,7 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <img
       alt="somobody's avatar"
@@ -323,13 +327,13 @@ exports[`Avatar component renders an image avatar 1`] = `
 
 exports[`Avatar component renders an inital avatar 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -345,14 +349,12 @@ exports[`Avatar component renders an inital avatar 1`] = `
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -368,29 +370,33 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -401,18 +407,18 @@ exports[`Avatar component renders an inital avatar 1`] = `
     stroke-width: 1.75;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs {
+  .c-ctivzP-bhKTXb-size-xs {
     font-size: var(--fontSizes-xs);
     line-height: 1.6;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::before {
+  .c-ctivzP-bhKTXb-size-xs::before {
     content: '';
     margin-bottom: -0.4364em;
     display: table;
   }
 
-  .c-dyvMgW-bhKTXb-size-xs::after {
+  .c-ctivzP-bhKTXb-size-xs::after {
     content: '';
     margin-top: -0.4364em;
     display: table;
@@ -420,8 +426,8 @@ exports[`Avatar component renders an inital avatar 1`] = `
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -438,10 +444,10 @@ exports[`Avatar component renders an inital avatar 1`] = `
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
+    class="c-fmVwAE c-fmVwAE-fDXBFo-size-xs"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-bhKTXb-size-xs c-dyvMgW-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-bhKTXb-size-xs c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       A
     </p>
@@ -451,13 +457,13 @@ exports[`Avatar component renders an inital avatar 1`] = `
 
 exports[`Avatar component renders an xs size with the fallback icon when src and name are missing 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -473,14 +479,12 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 
@@ -496,29 +500,33 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
 
-  .c-hMBZYr-fDXBFo-size-xs {
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-fmVwAE-fDXBFo-size-xs {
     height: var(--sizes-2);
     width: var(--sizes-2);
   }
@@ -531,8 +539,8 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 
   .c-PJLV-ieGSWOZ-css {
@@ -549,7 +557,7 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-fDXBFo-size-xs"
+    class="c-fmVwAE c-fmVwAE-fDXBFo-size-xs"
   >
     <div
       class="c-PJLV c-PJLV-ieGSWOZ-css"
@@ -577,13 +585,13 @@ exports[`Avatar component renders an xs size with the fallback icon when src and
 
 exports[`Avatar component renders the initial of the name when the src of the image is not available and a name was provided 1`] = `
 @media  {
-  .c-hMBZYr {
+  .c-fmVwAE {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     border-radius: var(--radii-round);
-    border: 2px solid var(--colors-tonal100);
+    border: 2px solid var(--colors-grey200);
     background-color: var(--colors-white);
     overflow: hidden;
   }
@@ -599,54 +607,56 @@ exports[`Avatar component renders the initial of the name when the src of the im
     object-fit: cover;
   }
 
-  .c-dyvMgW {
-    font-family: var(--fonts-body);
-    font-weight: 400;
+  .c-ctivzP {
     margin: 0;
   }
 
-  .c-dyvMgW > .c-dyvMgW:before,
-  .c-dyvMgW > .c-dyvMgW:after {
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
     display: none;
   }
 }
 
 @media  {
-  .c-hMBZYr-kMhpXP-size-lg {
+  .c-fmVwAE-kMhpXP-size-lg {
     height: var(--sizes-5);
     width: var(--sizes-5);
   }
 
-  .c-dyvMgW-gvmVBy-size-md {
+  .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::before {
+  .c-ctivzP-gvmVBy-size-md::before {
     content: '';
     margin-bottom: -0.3864em;
     display: table;
   }
 
-  .c-dyvMgW-gvmVBy-size-md::after {
+  .c-ctivzP-gvmVBy-size-md::after {
     content: '';
     margin-top: -0.3864em;
     display: table;
   }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
 }
 
 @media  {
-  .c-dyvMgW-ildsiYK-css {
-    color: var(--colors-tonal400);
+  .c-ctivzP-iksoatv-css {
+    color: var(--colors-grey800);
   }
 }
 
 <div>
   <div
-    class="c-hMBZYr c-hMBZYr-kMhpXP-size-lg"
+    class="c-fmVwAE c-fmVwAE-kMhpXP-size-lg"
   >
     <p
-      class="c-dyvMgW c-dyvMgW-gvmVBy-size-md c-dyvMgW-ildsiYK-css"
+      class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ctivzP-iksoatv-css"
     >
       B
     </p>

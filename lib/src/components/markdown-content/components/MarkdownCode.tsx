@@ -10,9 +10,9 @@ type MarkdownCodeProps = {
 }
 
 const StyledMarkdownCode = styled(Box, {
-  bg: '$tonal100',
+  bg: '$grey200',
   borderRadius: '$1',
-  color: '$tonal600',
+  color: '$grey1000',
   fontFamily: '$mono',
   fontSize: '$sm',
   lineHeight: 1.4,

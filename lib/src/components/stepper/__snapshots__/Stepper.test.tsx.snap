@@ -49,7 +49,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     outline: none;
   }
 
-  .c-iXIhNm {
+  .c-gLjqPg {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -58,7 +58,7 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     width: var(--sizes-3);
     border-radius: 50%;
     border: none;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
     z-index: 1;
     flex: none;
   }
@@ -96,23 +96,23 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
-    background: var(--colors-tonal100);
+  .c-boNUgq-daQNnq-separator-default:not(:last-child)::after {
+    background: var(--colors-grey200);
   }
 
-  .c-iXIhNm-ihiEpJ-status-active {
+  .c-gLjqPg-ihiEpJ-status-active {
     background: white;
     color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-iXIhNm-fkZUVj-status-default {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal300);
+  .c-gLjqPg-eBHJes-status-default {
+    background: var(--colors-grey200);
+    color: var(--colors-grey700);
   }
 
-  .c-iXIhNm-FqpDm-status-completed {
+  .c-gLjqPg-FqpDm-status-completed {
     background: var(--colors-primary800);
     color: white;
   }
@@ -121,22 +121,22 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     background: var(--colors-primary800);
   }
 
-  .c-iXIhNm-gsCkBL-status-reviewed {
+  .c-gLjqPg-gsCkBL-status-reviewed {
     background: var(--colors-primary900);
     color: white;
   }
 
-  .c-iXIhNm-kDTefL-status-viewed {
+  .c-gLjqPg-fiSNlU-status-viewed {
     background: white;
-    border: 2px solid var(--colors-tonal200);
-    color: var(--colors-tonal600);
+    border: 2px solid var(--colors-grey600);
+    color: var(--colors-grey1000);
   }
 
   .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
-  .c-iXIhNm-fpBJZl-status-success {
+  .c-gLjqPg-fpBJZl-status-success {
     background: var(--colors-success);
     color: white;
   }
@@ -201,16 +201,16 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :first-child {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :first-child {
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :last-child {
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :last-child {
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+  .c-boNUgq-iZqvYb-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
@@ -234,16 +234,16 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-gAJIna-cv:hover :first-child {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal600);
+  .c-boNUgq-fumnTf-cv:hover :first-child {
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-gAJIna-cv:hover :last-child {
-    color: var(--colors-tonal600);
+  .c-boNUgq-fumnTf-cv:hover :last-child {
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+  .c-boNUgq-fumnTf-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
@@ -291,35 +291,35 @@ exports[`Stepper renders correctly with default direction changed 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-iTKOFX-direction-vertical"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-boNUgq-YMpfq-cv c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-daQNnq-separator-default c-boNUgq-iZqvYb-cv c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-daQNnq-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-fkZUVj-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-eBHJes-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-eoIvAE-separator-default c-dhzjXW-ieTCIBM-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-bQZyjU-direction-vertical c-boNUgq-daQNnq-separator-default c-dhzjXW-ieTCIBM-css"
         tabindex="0"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-fkZUVj-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-eBHJes-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>
@@ -384,7 +384,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     outline: none;
   }
 
-  .c-iXIhNm {
+  .c-gLjqPg {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -393,7 +393,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     width: var(--sizes-3);
     border-radius: 50%;
     border: none;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
     z-index: 1;
     flex: none;
   }
@@ -445,23 +445,23 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
-    background: var(--colors-tonal100);
+  .c-boNUgq-daQNnq-separator-default:not(:last-child)::after {
+    background: var(--colors-grey200);
   }
 
-  .c-iXIhNm-ihiEpJ-status-active {
+  .c-gLjqPg-ihiEpJ-status-active {
     background: white;
     color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-iXIhNm-fkZUVj-status-default {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal300);
+  .c-gLjqPg-eBHJes-status-default {
+    background: var(--colors-grey200);
+    color: var(--colors-grey700);
   }
 
-  .c-iXIhNm-FqpDm-status-completed {
+  .c-gLjqPg-FqpDm-status-completed {
     background: var(--colors-primary800);
     color: white;
   }
@@ -470,22 +470,22 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     background: var(--colors-primary800);
   }
 
-  .c-iXIhNm-gsCkBL-status-reviewed {
+  .c-gLjqPg-gsCkBL-status-reviewed {
     background: var(--colors-primary900);
     color: white;
   }
 
-  .c-iXIhNm-kDTefL-status-viewed {
+  .c-gLjqPg-fiSNlU-status-viewed {
     background: white;
-    border: 2px solid var(--colors-tonal200);
-    color: var(--colors-tonal600);
+    border: 2px solid var(--colors-grey600);
+    color: var(--colors-grey1000);
   }
 
   .c-boNUgq-fpjjDi-separator-success:not(:last-child)::after {
     background: var(--colors-success);
   }
 
-  .c-iXIhNm-fpBJZl-status-success {
+  .c-gLjqPg-fpBJZl-status-success {
     background: var(--colors-success);
     color: white;
   }
@@ -516,8 +516,8 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     color: var(--colors-primary900);
   }
 
-  .c-ecBjWS-dlhNdU-status-default {
-    color: var(--colors-tonal300);
+  .c-ecBjWS-iJAHjR-status-default {
+    color: var(--colors-grey700);
     font-weight: 400;
   }
 
@@ -574,16 +574,16 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :first-child {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :first-child {
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :last-child {
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :last-child {
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+  .c-boNUgq-iZqvYb-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
@@ -607,16 +607,16 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
     outline-offset: 2px !important;
   }
 
-  .c-boNUgq-gAJIna-cv:hover :first-child {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal600);
+  .c-boNUgq-fumnTf-cv:hover :first-child {
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-gAJIna-cv:hover :last-child {
-    color: var(--colors-tonal600);
+  .c-boNUgq-fumnTf-cv:hover :last-child {
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-gAJIna-cv:focus-visible :first-child {
+  .c-boNUgq-fumnTf-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary800) !important;
     outline-offset: 2px !important;
   }
@@ -675,7 +675,7 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
           aria-current="step"
           aria-label=""
           aria-labelledby="step-0"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-fpBJZl-status-success c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-fpBJZl-status-success c-dhzjXW-idGcKFW-css"
         >
           <svg
             aria-hidden="true"
@@ -696,13 +696,13 @@ exports[`Stepper renders success icon for bullets when step is completed 1`] = `
         </span>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ikOanEY-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-daQNnq-separator-default c-dhzjXW-ikOanEY-css"
         tabindex="0"
       >
         <div
           aria-label=""
           aria-labelledby="step-1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-ihiEpJ-status-active c-dhzjXW-idGcKFW-css"
         >
           2
         </div>
@@ -773,7 +773,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     outline: none;
   }
 
-  .c-iXIhNm {
+  .c-gLjqPg {
     position: relative;
     padding: var(--space-2);
     justify-content: center;
@@ -782,7 +782,7 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     width: var(--sizes-3);
     border-radius: 50%;
     border: none;
-    background: var(--colors-tonal100);
+    background: var(--colors-grey200);
     z-index: 1;
     flex: none;
   }
@@ -820,20 +820,20 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     top: 14px;
   }
 
-  .c-boNUgq-eoIvAE-separator-default:not(:last-child)::after {
-    background: var(--colors-tonal100);
+  .c-boNUgq-daQNnq-separator-default:not(:last-child)::after {
+    background: var(--colors-grey200);
   }
 
-  .c-iXIhNm-ihiEpJ-status-active {
+  .c-gLjqPg-ihiEpJ-status-active {
     background: white;
     color: var(--colors-primary900);
     border: 2px solid;
     border-color: currentColor;
   }
 
-  .c-iXIhNm-fkZUVj-status-default {
-    background: var(--colors-tonal100);
-    color: var(--colors-tonal300);
+  .c-gLjqPg-eBHJes-status-default {
+    background: var(--colors-grey200);
+    color: var(--colors-grey700);
   }
 }
 
@@ -879,16 +879,16 @@ exports[`Stepper renders the correct number of bullets 1`] = `
     background: var(--colors-primary1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :first-child {
-    border-color: var(--colors-tonal400);
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :first-child {
+    border-color: var(--colors-grey800);
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:hover :last-child {
-    color: var(--colors-tonal600);
+  .c-boNUgq-iZqvYb-cv:hover :last-child {
+    color: var(--colors-grey1000);
   }
 
-  .c-boNUgq-YMpfq-cv:focus-visible :first-child {
+  .c-boNUgq-iZqvYb-cv:focus-visible :first-child {
     outline: 2px solid var(--colors-primary800);
     outline-offset: 2px;
   }
@@ -932,35 +932,35 @@ exports[`Stepper renders the correct number of bullets 1`] = `
       class="c-dhzjXW c-knmidH c-knmidH-ejCoEP-direction-horizontal"
     >
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-boNUgq-YMpfq-cv c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-daQNnq-separator-default c-boNUgq-iZqvYb-cv c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
           aria-current="step"
           aria-label="step 1"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-ihiEpJ-status-active c-dhzjXW-igsmDXe-css"
         >
           1
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-daQNnq-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
           aria-label="step 2"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-fkZUVj-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-eBHJes-status-default c-dhzjXW-idGcKFW-css"
         >
           2
         </button>
       </div>
       <div
-        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-eoIvAE-separator-default c-dhzjXW-ibJjasZ-css"
+        class="c-dhzjXW c-boNUgq c-boNUgq-fruqQw-direction-horizontal c-boNUgq-daQNnq-separator-default c-dhzjXW-ibJjasZ-css"
         tabindex="0"
       >
         <button
           aria-label="step 3"
-          class="c-dhzjXW c-iXIhNm c-iXIhNm-fkZUVj-status-default c-dhzjXW-idGcKFW-css"
+          class="c-dhzjXW c-gLjqPg c-gLjqPg-eBHJes-status-default c-dhzjXW-idGcKFW-css"
         >
           3
         </button>

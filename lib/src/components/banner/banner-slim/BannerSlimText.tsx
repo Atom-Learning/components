@@ -7,7 +7,6 @@ import { useBannerContext } from '../BannerContext'
 
 const StyledText = styled(Text, {
   color: 'var(--banner-heading-color)',
-  fontWeight: '600',
   variants: {
     containerSize: {
       sm: {},
@@ -34,6 +33,7 @@ export const BannerSlimText = (props: React.ComponentProps<typeof Text>) => {
   return (
     <StyledText
       size="md"
+      weight="bold"
       containerSize={size}
       hasDismiss={hasDismiss}
       noCapsize

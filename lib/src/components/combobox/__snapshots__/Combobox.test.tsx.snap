@@ -2,7 +2,7 @@
 
 exports[`Combobox component renders 1`] = `
 @media  {
-  .c-jmzWav {
+  .c-eZIHuC {
     box-shadow: none;
     -webkit-appearance: none;
     appearance: none;
@@ -10,10 +10,10 @@ exports[`Combobox component renders 1`] = `
     background-position: right var(--space-3) top 50%, 0 0;
     background-repeat: no-repeat, repeat;
     background-size: 20px auto, 100%;
-    border: 1px solid var(--colors-tonal300);
+    border: 1px solid var(--colors-grey700);
     border-radius: var(--radii-0);
     box-sizing: border-box;
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -24,25 +24,25 @@ exports[`Combobox component renders 1`] = `
     width: 100%;
   }
 
-  .c-jmzWav::placeholder {
-    color: var(--colors-tonal300);
+  .c-eZIHuC::placeholder {
+    color: var(--colors-grey700);
     opacity: 1;
   }
 
-  .c-jmzWav:focus-within {
+  .c-eZIHuC:focus-within {
     border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-jmzWav[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-eZIHuC[disabled] {
+    background-color: var(--colors-grey200);
+    color: var(--colors-grey800);
     cursor: not-allowed;
   }
 
-  .c-jJeEQg {
+  .c-gZqUiC {
     background: white;
-    border: solid 1px var(--colors-tonal100);
+    border: solid 1px var(--colors-grey200);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-1);
     box-sizing: border-box;
@@ -53,20 +53,20 @@ exports[`Combobox component renders 1`] = `
     transform: translateY(var(--space-2));
   }
 
-  .c-fgBvBS {
-    color: var(--colors-tonal500);
+  .c-jipDmG {
+    color: var(--colors-grey900);
     cursor: pointer;
     margin: 0;
     padding: var(--space-2);
   }
 
-  .c-fgBvBS:hover,
-  .c-fgBvBS[aria-selected="true"] {
-    background: var(--colors-tonal50);
+  .c-jipDmG:hover,
+  .c-jipDmG[aria-selected="true"] {
+    background: var(--colors-grey100);
     border-radius: var(--radii-0);
   }
 
-  .c-fgBvBS [data-user-value] {
+  .c-jipDmG [data-user-value] {
     color: var(--colors-primary800);
   }
 
@@ -80,7 +80,7 @@ exports[`Combobox component renders 1`] = `
 }
 
 @media  {
-  .c-jmzWav-fwoCmE-size-md {
+  .c-eZIHuC-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -99,7 +99,7 @@ exports[`Combobox component renders 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="c-jmzWav c-jmzWav-fwoCmE-size-md"
+      class="c-eZIHuC c-eZIHuC-fwoCmE-size-md"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"
@@ -112,7 +112,7 @@ exports[`Combobox component renders 1`] = `
 
 exports[`Combobox component renders with lg size 1`] = `
 @media  {
-  .c-jmzWav {
+  .c-eZIHuC {
     box-shadow: none;
     -webkit-appearance: none;
     appearance: none;
@@ -120,10 +120,10 @@ exports[`Combobox component renders with lg size 1`] = `
     background-position: right var(--space-3) top 50%, 0 0;
     background-repeat: no-repeat, repeat;
     background-size: 20px auto, 100%;
-    border: 1px solid var(--colors-tonal300);
+    border: 1px solid var(--colors-grey700);
     border-radius: var(--radii-0);
     box-sizing: border-box;
-    color: var(--colors-tonal600);
+    color: var(--colors-grey1000);
     cursor: text;
     display: block;
     font-family: var(--fonts-body);
@@ -134,25 +134,25 @@ exports[`Combobox component renders with lg size 1`] = `
     width: 100%;
   }
 
-  .c-jmzWav::placeholder {
-    color: var(--colors-tonal300);
+  .c-eZIHuC::placeholder {
+    color: var(--colors-grey700);
     opacity: 1;
   }
 
-  .c-jmzWav:focus-within {
+  .c-eZIHuC:focus-within {
     border-color: var(--colors-primary800);
     outline: none;
   }
 
-  .c-jmzWav[disabled] {
-    background-color: var(--colors-tonal100);
-    color: var(--colors-tonal400);
+  .c-eZIHuC[disabled] {
+    background-color: var(--colors-grey200);
+    color: var(--colors-grey800);
     cursor: not-allowed;
   }
 
-  .c-jJeEQg {
+  .c-gZqUiC {
     background: white;
-    border: solid 1px var(--colors-tonal100);
+    border: solid 1px var(--colors-grey200);
     border-radius: var(--radii-0);
     box-shadow: var(--shadows-1);
     box-sizing: border-box;
@@ -163,20 +163,20 @@ exports[`Combobox component renders with lg size 1`] = `
     transform: translateY(var(--space-2));
   }
 
-  .c-fgBvBS {
-    color: var(--colors-tonal500);
+  .c-jipDmG {
+    color: var(--colors-grey900);
     cursor: pointer;
     margin: 0;
     padding: var(--space-2);
   }
 
-  .c-fgBvBS:hover,
-  .c-fgBvBS[aria-selected="true"] {
-    background: var(--colors-tonal50);
+  .c-jipDmG:hover,
+  .c-jipDmG[aria-selected="true"] {
+    background: var(--colors-grey100);
     border-radius: var(--radii-0);
   }
 
-  .c-fgBvBS [data-user-value] {
+  .c-jipDmG [data-user-value] {
     color: var(--colors-primary800);
   }
 
@@ -190,13 +190,13 @@ exports[`Combobox component renders with lg size 1`] = `
 }
 
 @media  {
-  .c-jmzWav-fwoCmE-size-md {
+  .c-eZIHuC-fwoCmE-size-md {
     height: var(--sizes-4);
     font-size: var(--fontSizes-md);
     line-height: 2;
   }
 
-  .c-jmzWav-jAZHIx-size-lg {
+  .c-eZIHuC-jAZHIx-size-lg {
     height: var(--sizes-5);
     font-size: var(--fontSizes-md);
     line-height: 2;
@@ -215,7 +215,7 @@ exports[`Combobox component renders with lg size 1`] = `
       aria-expanded="false"
       aria-haspopup="listbox"
       aria-label="Favourite fruit"
-      class="c-jmzWav c-jmzWav-jAZHIx-size-lg"
+      class="c-eZIHuC c-eZIHuC-jAZHIx-size-lg"
       data-reach-combobox-input=""
       data-state="idle"
       id="fruit"

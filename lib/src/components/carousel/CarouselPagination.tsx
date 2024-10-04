@@ -5,7 +5,7 @@ import { styled } from '~/stitches'
 export const CarouselPagination = styled(DotGroup, {
   justifyContent: 'center',
   '& button': {
-    bg: '$tonal200',
+    bg: '$grey600',
     border: 'none',
     borderRadius: '50%',
     cursor: 'pointer',

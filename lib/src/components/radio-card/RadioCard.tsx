@@ -8,7 +8,7 @@ import { Box } from '../box/Box'
 export const StyledRadioCard = styled(RadioGroup.Item, {
   alignItems: 'center',
   bg: 'white',
-  border: '1px solid $tonal200',
+  border: '1px solid $grey600',
   borderRadius: '$0',
   cursor: 'pointer',
   display: 'flex',
@@ -37,7 +37,7 @@ const RadioButton = styled('div', {
   alignItems: 'center',
   appearance: 'none',
   backgroundColor: 'transparent',
-  border: '1px solid $tonal500',
+  border: '1px solid $grey900',
   borderRadius: '$round',
   display: 'flex',
   flexShrink: 0,

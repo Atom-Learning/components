@@ -9,22 +9,22 @@ import { Tooltip } from '../tooltip'
 const StyledSpan = styled('span', { zIndex: 1 })
 
 const StyledStepperButton = styled(ActionIcon, {
-  borderColor: '$tonal400 !important',
+  borderColor: '$grey800 !important',
   zIndex: 1,
   height: '100% !important',
   '&:hover': {
-    bg: '$tonal50',
+    bg: '$grey100',
     svg: {
-      color: '$tonal400'
+      color: '$grey800'
     }
   },
   svg: {
-    color: '$tonal300'
+    color: '$grey700'
   },
   '&:active': {
-    bg: '$tonal100',
+    bg: '$grey200',
     svg: {
-      color: '$tonal500'
+      color: '$grey900'
     }
   },
   '&:disabled': {

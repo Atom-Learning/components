@@ -2,16 +2,6 @@ import React from 'react'
 
 import { Text } from '../text'
 
-export const SectionMessageTitle = ({
-  css,
-  ...rest
-}: React.ComponentProps<typeof Text>): JSX.Element => (
-  <Text
-    css={{
-      fontWeight: 600,
-      ...css
-    }}
-    size="md"
-    {...rest}
-  />
-)
+export const SectionMessageTitle = (
+  props: React.ComponentProps<typeof Text>
+): JSX.Element => <Text size="md" weight="bold" {...props} />

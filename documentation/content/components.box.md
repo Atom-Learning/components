@@ -28,7 +28,7 @@ tabs:
       <CodeBlock live={true} preview={true} code={`<Box
         as="article"
         css={{
-          border: '1px solid $tonal100',
+          border: '1px solid $grey200',
           borderRadius: '$1',
           overflow: 'hidden',
           width: '320px'

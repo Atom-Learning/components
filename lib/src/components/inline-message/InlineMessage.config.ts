@@ -9,7 +9,7 @@ export const INLINE_MESSAGE_THEMES: Record<InlineMessageTheme, CSS> = {
   success: { color: '$success' },
   warning: { color: '$warningText', '& svg': { color: '$warningDark' } },
   info: { color: '$info' },
-  neutral: { color: '$tonal400' },
+  neutral: { color: '$grey800' },
   error: { color: '$danger' }
 }
 

@@ -36,11 +36,7 @@ tabs:
       ## TopBar Size Variant
 
 
-      TopBar has a default size of `md` which means that the default height of the component is 64px and the `Topbar.BrandLogo` is 24px.
-
-
-      If size `lg` is passed to the `TopBar` it will be 96px in height and the `TopBar.BrandLogo` will be 32px in height.
-
+      TopBar has a default size of `md` which means that the default height of the component is 64px. If size `lg` is passed to the `TopBar` it will be 96px in height.
 
       <CodeBlock live={true} preview={true} code={`<TopBar>
         <TopBar.Brand href="atomlearning.co.uk">
@@ -107,10 +103,12 @@ tabs:
       ## API Reference
 
 
-      <ComponentProps component="Tooltip" />
+      <ComponentProps component="TopBar" />
+      <ComponentProps component="TopBar.Brand" />
+      <ComponentProps component="TopBar.BrandLogo" />
+      <ComponentProps component="TopBar.BrandName" />
+      <ComponentProps component="TopBar.ActionIcon" />
 
-
-      <ComponentProps component="Tooltip.Content" />
   - title: Visual
     content: >-
       ## Structure

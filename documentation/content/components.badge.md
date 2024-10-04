@@ -37,7 +37,7 @@ tabs:
       The following semantic themes are available: `success`, `warning`, `danger`, `neutral`, `info`.
 
 
-      The following non-semantic themes are available `grey`, `blue`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
+      The following non-semantic themes are available `grey`, `blue`, `pink`, `purple`, `cyan`,  `green`, `magenta`, `red`, `teal`, `orange`, `yellow`, `lime`.
 
 
       If no theme is passed in. The badge theme defaults to "info".
@@ -55,6 +55,7 @@ tabs:
         <Flex gap="3">
           <Badge theme="grey">Grey</Badge>
           <Badge theme="blue">Blue</Badge>
+          <Badge theme="pink">Pink</Badge>
           <Badge theme="purple">Purple</Badge>
           <Badge theme="cyan">Cyan</Badge>
           <Badge theme="green">Green</Badge>
@@ -77,6 +78,7 @@ tabs:
         <Flex gap="3">
           <Badge theme="grey" emphasis="bold">Grey</Badge>
           <Badge theme="blue" emphasis="bold">Blue</Badge>
+          <Badge theme="pink" emphasis="bold">Pink</Badge>
           <Badge theme="purple" emphasis="bold">Purple</Badge>
           <Badge theme="cyan" emphasis="bold">Cyan</Badge>
           <Badge theme="green" emphasis="bold">Green</Badge>

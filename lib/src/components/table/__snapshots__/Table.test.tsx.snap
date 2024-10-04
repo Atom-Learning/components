@@ -14,8 +14,8 @@ exports[`Table component renders 1`] = `
     background: unset;
   }
 
-  .c-iaIadJ {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-fsGxdb {
+    border-bottom: 1px solid var(--colors-grey200);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -24,55 +24,55 @@ exports[`Table component renders 1`] = `
     vertical-align: middle;
   }
 
-  .c-ihQtuj {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-hegdBP {
+    border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-ihQtuj:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eEycBv-size-md .c-ihQtuj,
-  .c-cwQMhQ-eEycBv-size-md .c-iaIadJ,
-  .c-cwQMhQ-eEycBv-size-md .c-jwhJBv {
+  .c-cwQMhQ-jJvmHK-size-md .c-hegdBP,
+  .c-cwQMhQ-jJvmHK-size-md .c-fsGxdb,
+  .c-cwQMhQ-jJvmHK-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:first-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:last-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
+  .c-PJLV-elvcev-theme-primaryDark .c-fsGxdb {
     background: var(--colors-primary1000);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-grey100);
   }
 }
 
@@ -85,29 +85,29 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eEycBv-size-md c-cwQMhQ-cEGSnM-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-jJvmHK-size-md c-cwQMhQ-dBwSxC-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
+      class="c-PJLV c-PJLV-elvcev-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-iaIadJ"
+          class="c-fsGxdb"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+      class="c-PJLV c-PJLV-duISxx-striped-true"
     >
       <tr
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -120,7 +120,7 @@ exports[`Table component renders 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -144,8 +144,8 @@ exports[`Table component renders with a themed header 1`] = `
     background: unset;
   }
 
-  .c-iaIadJ {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-fsGxdb {
+    border-bottom: 1px solid var(--colors-grey200);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -154,65 +154,65 @@ exports[`Table component renders with a themed header 1`] = `
     vertical-align: middle;
   }
 
-  .c-ihQtuj {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-hegdBP {
+    border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-ihQtuj:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eEycBv-size-md .c-ihQtuj,
-  .c-cwQMhQ-eEycBv-size-md .c-iaIadJ,
-  .c-cwQMhQ-eEycBv-size-md .c-jwhJBv {
+  .c-cwQMhQ-jJvmHK-size-md .c-hegdBP,
+  .c-cwQMhQ-jJvmHK-size-md .c-fsGxdb,
+  .c-cwQMhQ-jJvmHK-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:first-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:last-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
+  .c-PJLV-elvcev-theme-primaryDark .c-fsGxdb {
     background: var(--colors-primary1000);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-hNxUeJ-size-lg .c-ihQtuj,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-iaIadJ,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-jwhJBv {
+  .c-cwQMhQ-fAYKVU-size-lg .c-hegdBP,
+  .c-cwQMhQ-fAYKVU-size-lg .c-fsGxdb,
+  .c-cwQMhQ-fAYKVU-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-iYyppI-theme-primary .c-iaIadJ {
+  .c-PJLV-bwYtDi-theme-primary .c-fsGxdb {
     background: var(--colors-primary800);
   }
 }
@@ -226,29 +226,29 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eEycBv-size-md c-cwQMhQ-cEGSnM-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-jJvmHK-size-md c-cwQMhQ-dBwSxC-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-iYyppI-theme-primary"
+      class="c-PJLV c-PJLV-bwYtDi-theme-primary"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-iaIadJ"
+          class="c-fsGxdb"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+      class="c-PJLV c-PJLV-duISxx-striped-true"
     >
       <tr
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -261,7 +261,7 @@ exports[`Table component renders with a themed header 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -285,8 +285,8 @@ exports[`Table component renders with size set to lg 1`] = `
     background: unset;
   }
 
-  .c-iaIadJ {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-fsGxdb {
+    border-bottom: 1px solid var(--colors-grey200);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -295,60 +295,60 @@ exports[`Table component renders with size set to lg 1`] = `
     vertical-align: middle;
   }
 
-  .c-ihQtuj {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-hegdBP {
+    border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-ihQtuj:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eEycBv-size-md .c-ihQtuj,
-  .c-cwQMhQ-eEycBv-size-md .c-iaIadJ,
-  .c-cwQMhQ-eEycBv-size-md .c-jwhJBv {
+  .c-cwQMhQ-jJvmHK-size-md .c-hegdBP,
+  .c-cwQMhQ-jJvmHK-size-md .c-fsGxdb,
+  .c-cwQMhQ-jJvmHK-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:first-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:last-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
+  .c-PJLV-elvcev-theme-primaryDark .c-fsGxdb {
     background: var(--colors-primary1000);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-hNxUeJ-size-lg .c-ihQtuj,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-iaIadJ,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-jwhJBv {
+  .c-cwQMhQ-fAYKVU-size-lg .c-hegdBP,
+  .c-cwQMhQ-fAYKVU-size-lg .c-fsGxdb,
+  .c-cwQMhQ-fAYKVU-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -363,29 +363,29 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-hNxUeJ-size-lg c-cwQMhQ-cEGSnM-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-fAYKVU-size-lg c-cwQMhQ-dBwSxC-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
+      class="c-PJLV c-PJLV-elvcev-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-iaIadJ"
+          class="c-fsGxdb"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+      class="c-PJLV c-PJLV-duISxx-striped-true"
     >
       <tr
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -398,7 +398,7 @@ exports[`Table component renders with size set to lg 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -422,8 +422,8 @@ exports[`Table component renders with square corners 1`] = `
     background: unset;
   }
 
-  .c-iaIadJ {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-fsGxdb {
+    border-bottom: 1px solid var(--colors-grey200);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -432,60 +432,60 @@ exports[`Table component renders with square corners 1`] = `
     vertical-align: middle;
   }
 
-  .c-ihQtuj {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-hegdBP {
+    border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-ihQtuj:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eEycBv-size-md .c-ihQtuj,
-  .c-cwQMhQ-eEycBv-size-md .c-iaIadJ,
-  .c-cwQMhQ-eEycBv-size-md .c-jwhJBv {
+  .c-cwQMhQ-jJvmHK-size-md .c-hegdBP,
+  .c-cwQMhQ-jJvmHK-size-md .c-fsGxdb,
+  .c-cwQMhQ-jJvmHK-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:first-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:last-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
+  .c-PJLV-elvcev-theme-primaryDark .c-fsGxdb {
     background: var(--colors-primary1000);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-hNxUeJ-size-lg .c-ihQtuj,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-iaIadJ,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-jwhJBv {
+  .c-cwQMhQ-fAYKVU-size-lg .c-hegdBP,
+  .c-cwQMhQ-fAYKVU-size-lg .c-fsGxdb,
+  .c-cwQMhQ-fAYKVU-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -500,29 +500,29 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-eEycBv-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-jJvmHK-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
+      class="c-PJLV c-PJLV-elvcev-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-iaIadJ"
+          class="c-fsGxdb"
         >
           Column A
         </th>
       </tr>
     </thead>
     <tbody
-      class="c-PJLV c-PJLV-gdcSSw-striped-true"
+      class="c-PJLV c-PJLV-duISxx-striped-true"
     >
       <tr
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           This is text
         </td>
@@ -535,7 +535,7 @@ exports[`Table component renders with square corners 1`] = `
         class="c-hjAYDb"
       >
         <td
-          class="c-ihQtuj"
+          class="c-hegdBP"
         >
           Footer 1
         </td>
@@ -559,8 +559,8 @@ exports[`Table component renders with sticky columns 1`] = `
     background: unset;
   }
 
-  .c-iaIadJ {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-fsGxdb {
+    border-bottom: 1px solid var(--colors-grey200);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -569,65 +569,65 @@ exports[`Table component renders with sticky columns 1`] = `
     vertical-align: middle;
   }
 
-  .c-ihQtuj {
-    border-bottom: 1px solid var(--colors-tonal100);
+  .c-hegdBP {
+    border-bottom: 1px solid var(--colors-grey200);
     box-sizing: border-box;
-    color: var(--colors-tonal400);
+    color: var(--colors-grey800);
     font-family: var(--fonts-body);
     line-height: 1.5;
     text-align: left;
     vertical-align: middle;
   }
 
-  .c-ihQtuj:first-child {
-    font-weight: bold;
+  .c-hegdBP:first-child {
+    font-weight: 600;
   }
 }
 
 @media  {
-  .c-cwQMhQ-eEycBv-size-md .c-ihQtuj,
-  .c-cwQMhQ-eEycBv-size-md .c-iaIadJ,
-  .c-cwQMhQ-eEycBv-size-md .c-jwhJBv {
+  .c-cwQMhQ-jJvmHK-size-md .c-hegdBP,
+  .c-cwQMhQ-jJvmHK-size-md .c-fsGxdb,
+  .c-cwQMhQ-jJvmHK-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:first-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-iaIadJ:last-of-type {
+  .c-cwQMhQ-dBwSxC-corners-round .c-fsGxdb:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:first-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-cEGSnM-corners-round .c-hjAYDb:last-child .c-ihQtuj:last-child {
+  .c-cwQMhQ-dBwSxC-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
+  .c-PJLV-elvcev-theme-primaryDark .c-fsGxdb {
     background: var(--colors-primary1000);
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(odd) {
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(odd) {
     background: white;
   }
 
-  .c-PJLV-gdcSSw-striped-true .c-hjAYDb:nth-child(even) {
-    background: var(--colors-tonal50);
+  .c-PJLV-duISxx-striped-true .c-hjAYDb:nth-child(even) {
+    background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-hNxUeJ-size-lg .c-ihQtuj,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-iaIadJ,
-  .c-cwQMhQ-hNxUeJ-size-lg .c-jwhJBv {
+  .c-cwQMhQ-fAYKVU-size-lg .c-hegdBP,
+  .c-cwQMhQ-fAYKVU-size-lg .c-fsGxdb,
+  .c-cwQMhQ-fAYKVU-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-iYyppI-theme-primary .c-iaIadJ {
+  .c-PJLV-bwYtDi-theme-primary .c-fsGxdb {
     background: var(--colors-primary800);
   }
 }
@@ -676,51 +676,51 @@ exports[`Table component renders with sticky columns 1`] = `
     role="scrollbar"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-eEycBv-size-md c-cwQMhQ-cEGSnM-corners-round c-cwQMhQ-idVpojG-css"
+      class="c-cwQMhQ c-cwQMhQ-jJvmHK-size-md c-cwQMhQ-dBwSxC-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
-        class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
+        class="c-PJLV c-PJLV-elvcev-theme-primaryDark"
         numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"
         >
           <th
-            class="c-iaIadJ"
+            class="c-fsGxdb"
           >
             Column A
           </th>
           <th
-            class="c-iaIadJ"
+            class="c-fsGxdb"
           >
             Column B
           </th>
           <th
-            class="c-iaIadJ"
+            class="c-fsGxdb"
           >
             Column C
           </th>
         </tr>
       </thead>
       <tbody
-        class="c-PJLV c-PJLV-gdcSSw-striped-true"
+        class="c-PJLV c-PJLV-duISxx-striped-true"
         numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"
         >
           <td
-            class="c-ihQtuj"
+            class="c-hegdBP"
           >
             This is text
           </td>
           <td
-            class="c-ihQtuj"
+            class="c-hegdBP"
           >
             This is text
           </td>
           <td
-            class="c-ihQtuj"
+            class="c-hegdBP"
           >
             This is text
           </td>

@@ -8,14 +8,14 @@ import { Override } from '~/utilities/types'
 export const StyledComboboxInput = styled(BaseComboboxInput, {
   boxShadow: 'none', // prevent default iOS default styling
   appearance: 'none',
-  backgroundImage: encodeBackgroundIcon(theme.colors.tonal300.value, 'chevron'),
+  backgroundImage: encodeBackgroundIcon(theme.colors.grey700.value, 'chevron'),
   backgroundPosition: 'right $space$3 top 50%, 0 0',
   backgroundRepeat: 'no-repeat, repeat',
   backgroundSize: '20px auto, 100%',
-  border: '1px solid $tonal300',
+  border: '1px solid $grey700',
   borderRadius: '$0',
   boxSizing: 'border-box',
-  color: '$tonal600',
+  color: '$grey1000',
   cursor: 'text',
   display: 'block',
   fontFamily: '$body',
@@ -25,7 +25,7 @@ export const StyledComboboxInput = styled(BaseComboboxInput, {
   transition: 'all 100ms ease-out',
   width: '100%',
   '&::placeholder': {
-    color: '$tonal300',
+    color: '$grey700',
     opacity: 1
   },
   '&:focus-within': {
@@ -33,8 +33,8 @@ export const StyledComboboxInput = styled(BaseComboboxInput, {
     outline: 'none'
   },
   '&[disabled]': {
-    backgroundColor: '$tonal100',
-    color: '$tonal400',
+    backgroundColor: '$grey200',
+    color: '$grey800',
     cursor: 'not-allowed'
   },
   variants: {
