@@ -67,16 +67,8 @@ type TextProps = Override<
 
 export const Text: React.ForwardRefExoticComponent<TextProps> =
   React.forwardRef(
-    (
-      { size = 'md', family = 'body', ...remainingProps },
-      ref
-    ) => (
-      <StyledText
-        size={size}
-        family={family}
-        {...remainingProps}
-        ref={ref}
-      />
+    ({ size = 'md', family = 'body', ...remainingProps }, ref) => (
+      <StyledText size={size} family={family} {...remainingProps} ref={ref} />
     )
   )
 
