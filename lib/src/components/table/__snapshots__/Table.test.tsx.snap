@@ -14,7 +14,8 @@ exports[`Table component renders 1`] = `
     background: unset;
   }
 
-  .c-jhJxGZ {
+  .c-iaIadJ {
+    border-bottom: 1px solid var(--colors-tonal100);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -39,30 +40,30 @@ exports[`Table component renders 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
-  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
-  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
+  .c-cwQMhQ-eezgyA-size-md .c-hegdBP,
+  .c-cwQMhQ-eezgyA-size-md .c-iaIadJ,
+  .c-cwQMhQ-eezgyA-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
     background: var(--colors-primary1000);
   }
 
@@ -84,16 +85,16 @@ exports[`Table component renders 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-eezgyA-size-md c-cwQMhQ-gSJemA-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
+      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-jhJxGZ"
+          class="c-iaIadJ"
         >
           Column A
         </th>
@@ -143,7 +144,8 @@ exports[`Table component renders with a themed header 1`] = `
     background: unset;
   }
 
-  .c-jhJxGZ {
+  .c-iaIadJ {
+    border-bottom: 1px solid var(--colors-tonal100);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -168,30 +170,30 @@ exports[`Table component renders with a themed header 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
-  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
-  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
+  .c-cwQMhQ-eezgyA-size-md .c-hegdBP,
+  .c-cwQMhQ-eezgyA-size-md .c-iaIadJ,
+  .c-cwQMhQ-eezgyA-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
     background: var(--colors-primary1000);
   }
 
@@ -203,14 +205,14 @@ exports[`Table component renders with a themed header 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
-  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
+  .c-cwQMhQ-gAfAui-size-lg .c-hegdBP,
+  .c-cwQMhQ-gAfAui-size-lg .c-iaIadJ,
+  .c-cwQMhQ-gAfAui-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-bFYmVr-theme-primary .c-jhJxGZ {
+  .c-PJLV-iYyppI-theme-primary .c-iaIadJ {
     background: var(--colors-primary800);
   }
 }
@@ -224,16 +226,16 @@ exports[`Table component renders with a themed header 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-eezgyA-size-md c-cwQMhQ-gSJemA-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-bFYmVr-theme-primary"
+      class="c-PJLV c-PJLV-iYyppI-theme-primary"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-jhJxGZ"
+          class="c-iaIadJ"
         >
           Column A
         </th>
@@ -283,7 +285,8 @@ exports[`Table component renders with size set to lg 1`] = `
     background: unset;
   }
 
-  .c-jhJxGZ {
+  .c-iaIadJ {
+    border-bottom: 1px solid var(--colors-tonal100);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -308,30 +311,30 @@ exports[`Table component renders with size set to lg 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
-  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
-  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
+  .c-cwQMhQ-eezgyA-size-md .c-hegdBP,
+  .c-cwQMhQ-eezgyA-size-md .c-iaIadJ,
+  .c-cwQMhQ-eezgyA-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
     background: var(--colors-primary1000);
   }
 
@@ -343,9 +346,9 @@ exports[`Table component renders with size set to lg 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
-  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
+  .c-cwQMhQ-gAfAui-size-lg .c-hegdBP,
+  .c-cwQMhQ-gAfAui-size-lg .c-iaIadJ,
+  .c-cwQMhQ-gAfAui-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -360,16 +363,16 @@ exports[`Table component renders with size set to lg 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-SggYt-size-lg c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-gAfAui-size-lg c-cwQMhQ-gSJemA-corners-round c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
+      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-jhJxGZ"
+          class="c-iaIadJ"
         >
           Column A
         </th>
@@ -419,7 +422,8 @@ exports[`Table component renders with square corners 1`] = `
     background: unset;
   }
 
-  .c-jhJxGZ {
+  .c-iaIadJ {
+    border-bottom: 1px solid var(--colors-tonal100);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -444,30 +448,30 @@ exports[`Table component renders with square corners 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
-  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
-  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
+  .c-cwQMhQ-eezgyA-size-md .c-hegdBP,
+  .c-cwQMhQ-eezgyA-size-md .c-iaIadJ,
+  .c-cwQMhQ-eezgyA-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
     background: var(--colors-primary1000);
   }
 
@@ -479,9 +483,9 @@ exports[`Table component renders with square corners 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
-  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
+  .c-cwQMhQ-gAfAui-size-lg .c-hegdBP,
+  .c-cwQMhQ-gAfAui-size-lg .c-iaIadJ,
+  .c-cwQMhQ-gAfAui-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
@@ -496,16 +500,16 @@ exports[`Table component renders with square corners 1`] = `
 
 <div>
   <table
-    class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-icnGIKd-css"
+    class="c-cwQMhQ c-cwQMhQ-eezgyA-size-md c-cwQMhQ-icnGIKd-css"
   >
     <thead
-      class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
+      class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
     >
       <tr
         class="c-hjAYDb"
       >
         <th
-          class="c-jhJxGZ"
+          class="c-iaIadJ"
         >
           Column A
         </th>
@@ -555,7 +559,8 @@ exports[`Table component renders with sticky columns 1`] = `
     background: unset;
   }
 
-  .c-jhJxGZ {
+  .c-iaIadJ {
+    border-bottom: 1px solid var(--colors-tonal100);
     color: white;
     font-family: var(--fonts-body);
     font-weight: 600;
@@ -580,30 +585,30 @@ exports[`Table component renders with sticky columns 1`] = `
 }
 
 @media  {
-  .c-cwQMhQ-ljrFRn-size-md .c-hegdBP,
-  .c-cwQMhQ-ljrFRn-size-md .c-jhJxGZ,
-  .c-cwQMhQ-ljrFRn-size-md .c-egnNtq {
+  .c-cwQMhQ-eezgyA-size-md .c-hegdBP,
+  .c-cwQMhQ-eezgyA-size-md .c-iaIadJ,
+  .c-cwQMhQ-eezgyA-size-md .c-egnNtq {
     height: var(--sizes-4);
     padding: var(--space-1) var(--space-3);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:first-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:first-of-type {
     border-top-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-jhJxGZ:last-of-type {
+  .c-cwQMhQ-gSJemA-corners-round .c-iaIadJ:last-of-type {
     border-top-right-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:first-child {
     border-bottom-left-radius: var(--radii-0);
   }
 
-  .c-cwQMhQ-jDnPZD-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
+  .c-cwQMhQ-gSJemA-corners-round .c-hjAYDb:last-child .c-hegdBP:last-child {
     border-bottom-right-radius: var(--radii-0);
   }
 
-  .c-PJLV-jLmlfq-theme-primaryDark .c-jhJxGZ {
+  .c-PJLV-bMexXJ-theme-primaryDark .c-iaIadJ {
     background: var(--colors-primary1000);
   }
 
@@ -615,14 +620,14 @@ exports[`Table component renders with sticky columns 1`] = `
     background: var(--colors-grey100);
   }
 
-  .c-cwQMhQ-SggYt-size-lg .c-hegdBP,
-  .c-cwQMhQ-SggYt-size-lg .c-jhJxGZ,
-  .c-cwQMhQ-SggYt-size-lg .c-egnNtq {
+  .c-cwQMhQ-gAfAui-size-lg .c-hegdBP,
+  .c-cwQMhQ-gAfAui-size-lg .c-iaIadJ,
+  .c-cwQMhQ-gAfAui-size-lg .c-egnNtq {
     height: var(--sizes-5);
     padding: var(--space-2) var(--space-3);
   }
 
-  .c-PJLV-bFYmVr-theme-primary .c-jhJxGZ {
+  .c-PJLV-iYyppI-theme-primary .c-iaIadJ {
     background: var(--colors-primary800);
   }
 }
@@ -671,27 +676,27 @@ exports[`Table component renders with sticky columns 1`] = `
     role="scrollbar"
   >
     <table
-      class="c-cwQMhQ c-cwQMhQ-ljrFRn-size-md c-cwQMhQ-jDnPZD-corners-round c-cwQMhQ-idVpojG-css"
+      class="c-cwQMhQ c-cwQMhQ-eezgyA-size-md c-cwQMhQ-gSJemA-corners-round c-cwQMhQ-idVpojG-css"
     >
       <thead
-        class="c-PJLV c-PJLV-jLmlfq-theme-primaryDark"
+        class="c-PJLV c-PJLV-bMexXJ-theme-primaryDark"
         numberofstickycolumns="1"
       >
         <tr
           class="c-hjAYDb"
         >
           <th
-            class="c-jhJxGZ"
+            class="c-iaIadJ"
           >
             Column A
           </th>
           <th
-            class="c-jhJxGZ"
+            class="c-iaIadJ"
           >
             Column B
           </th>
           <th
-            class="c-jhJxGZ"
+            class="c-iaIadJ"
           >
             Column C
           </th>

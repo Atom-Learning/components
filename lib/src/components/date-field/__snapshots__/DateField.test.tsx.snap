@@ -277,7 +277,7 @@ exports[`DateField component renders a field in error state 1`] = `
           />
         </div>
         <button
-          aria-controls="radix-4"
+          aria-controls="radix-:r4:"
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"
@@ -561,7 +561,7 @@ exports[`DateField component renders a field with a text input 1`] = `
           />
         </div>
         <button
-          aria-controls="radix-0"
+          aria-controls="radix-:r0:"
           aria-expanded="false"
           aria-haspopup="dialog"
           aria-label="Open calendar"

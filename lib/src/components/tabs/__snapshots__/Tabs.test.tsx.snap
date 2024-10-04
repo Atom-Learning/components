@@ -463,13 +463,13 @@ exports[`Tabs component renders 1`] = `
         tabindex="0"
       >
         <button
-          aria-controls="radix-3-content-tab1"
+          aria-controls="radix-:r0:-content-tab1"
           aria-selected="true"
           class="c-efqMNv"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
-          id="radix-3-trigger-tab1"
+          id="radix-:r0:-trigger-tab1"
           role="tab"
           tabindex="-1"
           type="button"
@@ -484,13 +484,13 @@ exports[`Tabs component renders 1`] = `
           />
         </button>
         <button
-          aria-controls="radix-3-content-tab2"
+          aria-controls="radix-:r0:-content-tab2"
           aria-selected="false"
           class="c-efqMNv"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
-          id="radix-3-trigger-tab2"
+          id="radix-:r0:-trigger-tab2"
           role="tab"
           tabindex="-1"
           type="button"
@@ -505,7 +505,7 @@ exports[`Tabs component renders 1`] = `
           />
         </button>
         <button
-          aria-controls="radix-3-content-tab3"
+          aria-controls="radix-:r0:-content-tab3"
           aria-selected="false"
           class="c-efqMNv"
           data-disabled=""
@@ -513,7 +513,7 @@ exports[`Tabs component renders 1`] = `
           data-radix-collection-item=""
           data-state="inactive"
           disabled=""
-          id="radix-3-trigger-tab3"
+          id="radix-:r0:-trigger-tab3"
           role="tab"
           tabindex="-1"
           type="button"
@@ -530,11 +530,11 @@ exports[`Tabs component renders 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="radix-3-trigger-tab1"
+      aria-labelledby="radix-:r0:-trigger-tab1"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="active"
-      id="radix-3-content-tab1"
+      id="radix-:r0:-content-tab1"
       role="tabpanel"
       style="animation-duration: 0s;"
       tabindex="0"
@@ -542,22 +542,22 @@ exports[`Tabs component renders 1`] = `
       Important content for tab 1
     </div>
     <div
-      aria-labelledby="radix-3-trigger-tab2"
+      aria-labelledby="radix-:r0:-trigger-tab2"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-3-content-tab2"
+      id="radix-:r0:-content-tab2"
       role="tabpanel"
       tabindex="0"
     />
     <div
-      aria-labelledby="radix-3-trigger-tab3"
+      aria-labelledby="radix-:r0:-trigger-tab3"
       class="c-cWMaKf"
       data-orientation="horizontal"
       data-state="inactive"
       hidden=""
-      id="radix-3-content-tab3"
+      id="radix-:r0:-content-tab3"
       role="tabpanel"
       tabindex="0"
     />

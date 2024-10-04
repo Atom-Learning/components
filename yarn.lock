@@ -29,7 +29,7 @@ __metadata:
     "@atom-learning/icons": "npm:1.20.0"
     "@atom-learning/jest-stitches": "npm:1.0.10"
     "@atom-learning/stitches-react": "npm:^1.4.1"
-    "@atom-learning/theme": "npm:4.0.0-beta.7"
+    "@atom-learning/theme": "npm:^4.0.0"
     "@commitlint/cli": "npm:^11.0.0"
     "@commitlint/config-conventional": "npm:^11.0.0"
     "@dnd-kit/core": "npm:^6.0.5"
@@ -139,7 +139,7 @@ __metadata:
     yargs: "npm:^16.2.0"
   peerDependencies:
     "@atom-learning/icons": ^1.0.0
-    "@atom-learning/theme": ^3 || ^4
+    "@atom-learning/theme": ^4
     react: ^17 || ^18 || ^19
     react-dom: ^17 || ^18 || ^19
   languageName: unknown
@@ -151,7 +151,7 @@ __metadata:
   dependencies:
     "@atom-learning/components": "workspace:*"
     "@atom-learning/icons": "npm:^1.20.0"
-    "@atom-learning/theme": "npm:4.0.0-beta.7"
+    "@atom-learning/theme": "npm:^4.0.0"
     "@lukeed/uuid": "npm:^2.0.0"
     "@types/lodash.find": "npm:^4"
     "@types/lodash.intersection": "npm:^4"
@@ -219,10 +219,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atom-learning/theme@npm:4.0.0-beta.7":
-  version: 4.0.0-beta.7
-  resolution: "@atom-learning/theme@npm:4.0.0-beta.7"
-  checksum: 10c0/7bb9b55530d365b22e0796b327a76cfa2cf9df1dfc2569802feed076840580924b10626eaf0741699367c5de6e41908e19c16e14811086b2e8c16dca779e31d3
+"@atom-learning/theme@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@atom-learning/theme@npm:4.0.0"
+  checksum: 10c0/f03edc86e3a8e9330def76a0164391712abc2afb7885b215b1c3c0a33052a6a6aea5125ebff327ed632463e4d107ea0ff1f44ef77a5c10be11dafd25c17ab4c5
   languageName: node
   linkType: hard
 

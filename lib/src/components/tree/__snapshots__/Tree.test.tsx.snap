@@ -207,7 +207,7 @@ exports[`Tree renders 1`] = `
           data-testid="collapsible-trigger"
         >
           <button
-            aria-controls="radix-0"
+            aria-controls="radix-:r0:"
             aria-expanded="false"
             class="c-oUmPa c-oUmPa-elrktp-size-sm c-oUmPa-fVNhqX-cv c-hBEOJc"
             data-state="closed"

@@ -602,12 +602,12 @@ exports[`Nav component renders 1`] = `
         </li>
         <li>
           <button
-            aria-controls="radix-2-content-1"
+            aria-controls="radix-:r0:-content-1"
             aria-expanded="true"
             class="c-hZAOPl c-lfFbYU"
             data-radix-collection-item=""
             data-state="open"
-            id="radix-2-trigger-1"
+            id="radix-:r0:-trigger-1"
           >
             Theme
             <svg
@@ -627,7 +627,7 @@ exports[`Nav component renders 1`] = `
             tabindex="0"
           />
           <span
-            aria-owns="radix-2-content-1"
+            aria-owns="radix-:r0:-content-1"
           />
         </li>
       </ul>
@@ -641,11 +641,11 @@ exports[`Nav component renders 1`] = `
         data-state="open"
       >
         <div
-          aria-labelledby="radix-2-trigger-1"
+          aria-labelledby="radix-:r0:-trigger-1"
           class="c-dblJlC"
           data-orientation="horizontal"
           dir="ltr"
-          id="radix-2-content-1"
+          id="radix-:r0:-content-1"
         >
           <ul
             class="c-fZCQPN"

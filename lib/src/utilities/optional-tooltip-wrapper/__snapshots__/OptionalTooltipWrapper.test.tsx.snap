@@ -71,7 +71,7 @@ exports[`OptionalTooltipWrapper component renders with tooltip 1`] = `
 
 <div>
   <p
-    aria-describedby="radix-0"
+    aria-describedby="radix-:r0:"
     class="c-PJLV"
     data-state="instant-open"
     data-testid="tooltip-trigger"
@@ -109,7 +109,7 @@ exports[`OptionalTooltipWrapper component renders with tooltip 1`] = `
         </svg>
       </span>
       <span
-        id="radix-0"
+        id="radix-:r0:"
         role="tooltip"
         style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
       >

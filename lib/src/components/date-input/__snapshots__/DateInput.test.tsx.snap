@@ -166,7 +166,7 @@ exports[`DateInput component renders 1`] = `
       />
     </div>
     <button
-      aria-controls="radix-0"
+      aria-controls="radix-:r0:"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
@@ -647,7 +647,7 @@ exports[`DateInput component renders lg size 1`] = `
       />
     </div>
     <button
-      aria-controls="radix-8"
+      aria-controls="radix-:r8:"
       aria-expanded="false"
       aria-haspopup="dialog"
       aria-label="Open calendar"
