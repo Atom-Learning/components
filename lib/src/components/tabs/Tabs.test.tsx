@@ -51,7 +51,7 @@ describe('Tabs component', () => {
     expect(tab1content).toBeVisible()
     expect(tab2content).not.toBeInTheDocument()
 
-    userEvent.click(screen.getByText('Trigger 2'))
+    await userEvent.click(screen.getByText('Trigger 2'))
 
     tab1content = await screen.queryByText('Important content for tab 1')
     tab2content = await screen.findByText('Important content for tab 2')
@@ -68,7 +68,7 @@ describe('Tabs component', () => {
 
     expect(tab1content).toBeVisible()
 
-    userEvent.click(screen.queryByText('Trigger 3'))
+    await userEvent.click(screen.queryByText('Trigger 3'))
 
     expect(tab1content).toBeVisible()
     expect(tab3content).not.toBeInTheDocument()

@@ -57,7 +57,7 @@ describe(`SearchField component`, () => {
         <button type="submit">Submit</button>
       </Form>
     )
-    userEvent.click(getByRole('button'))
+    await userEvent.click(getByRole('button'))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()

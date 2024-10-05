@@ -49,7 +49,7 @@ describe(`NumberInputField component`, () => {
       validation: { min: { value: 7, message: errorText } }
     })
 
-    userEvent.click(getByRole('button', { name: /submit/i }))
+    await userEvent.click(getByRole('button', { name: /submit/i }))
     await findByText(errorText)
 
     expect(container).toMatchSnapshot()

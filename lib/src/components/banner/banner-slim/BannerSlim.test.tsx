@@ -43,7 +43,7 @@ describe(`BannerSlim component`, () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders dismissible variant', () => {
+  it('renders dismissible variant', async () => {
     const onDismiss = jest.fn()
     const { container } = render(
       <BannerSlimDismissibleImplementation
@@ -55,7 +55,7 @@ describe(`BannerSlim component`, () => {
     expect(container).toMatchSnapshot()
 
     const dismissTrigger = screen.getByTestId('dismiss')
-    if (dismissTrigger) userEvent.click(dismissTrigger)
+    if (dismissTrigger) await userEvent.click(dismissTrigger)
 
     expect(onDismiss).toHaveBeenCalled()
   })
