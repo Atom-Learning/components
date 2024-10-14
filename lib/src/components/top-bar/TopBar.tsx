@@ -48,12 +48,14 @@ type StyledRootProps = React.ComponentProps<typeof StyledRoot>
 
 interface TopBarProps extends StyledRootProps {
   css?: CSS
+  wrapperCss?: CSS
   className?: string
 }
 
 const TopBarComponent = ({
   size = 'md',
   className = topBarColorSchemes['light'],
+  wrapperCss,
   ...props
 }: TopBarProps) => {
   const { y: scrollPositionY } = useWindowScrollPosition()
@@ -63,6 +65,7 @@ const TopBarComponent = ({
       className={className}
       hasScrolled={!!scrollPositionY}
       size={size}
+      css={wrapperCss}
     >
       <Container {...props} />
     </StyledRoot>
