@@ -13,16 +13,20 @@ const TopBarDivider = () => (
   <Divider orientation="vertical" css={{ height: '$2', bg: '$divider' }} />
 )
 
-const StyledRoot = styled('div', {
+const StyledRoot = styled(Flex, {
   bg: '$background',
   position: 'sticky',
-  display: 'flex',
   alignItems: 'center',
   width: '100vw',
   top: '0',
   zIndex: 1,
   borderBottom: '1px solid $borderBottom',
   transition: 'box-shadow .2s ease-out',
+  px: '$4',
+  py: '$2',
+  '@md': {
+    px: '$5'
+  },
   variants: {
     hasScrolled: {
       true: { boxShadow: '0px 4px 4px -2px rgba(31, 31, 31, 0.1);' }
@@ -34,28 +38,15 @@ const StyledRoot = styled('div', {
   }
 })
 
-const Container = styled(Flex, {
-  alignItems: 'center',
-  height: '$4',
-  mx: '$4',
-  width: '100%',
-  '@md': {
-    mx: '$5'
-  }
-})
-
 type StyledRootProps = React.ComponentProps<typeof StyledRoot>
 
 interface TopBarProps extends StyledRootProps {
   css?: CSS
-  wrapperCss?: CSS
   className?: string
 }
 
 const TopBarComponent = ({
-  size = 'md',
   className = topBarColorSchemes['light'],
-  wrapperCss,
   ...props
 }: TopBarProps) => {
   const { y: scrollPositionY } = useWindowScrollPosition()
@@ -64,11 +55,8 @@ const TopBarComponent = ({
     <StyledRoot
       className={className}
       hasScrolled={!!scrollPositionY}
-      size={size}
-      css={wrapperCss}
-    >
-      <Container {...props} />
-    </StyledRoot>
+      {...props}
+    />
   )
 }
 

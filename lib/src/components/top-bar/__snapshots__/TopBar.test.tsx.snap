@@ -298,34 +298,29 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-eplmKA {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-LniWm {
     background: var(--colors-background);
     position: sticky;
-    display: flex;
     align-items: center;
     width: 100vw;
     top: 0;
     z-index: 1;
     border-bottom: 1px solid var(--colors-borderBottom);
     transition: box-shadow .2s ease-out;
-  }
-
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-ftiHlK {
-    align-items: center;
-    height: var(--sizes-4);
-    margin-left: var(--space-4);
-    margin-right: var(--space-4);
-    width: 100%;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
   }
 
 @media (min-width: 800px) {
-    .c-ftiHlK {
-      margin-left: var(--space-5);
-      margin-right: var(--space-5);
+    .c-LniWm {
+      padding-left: var(--space-5);
+      padding-right: var(--space-5);
     }
 }
 
@@ -440,10 +435,6 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
-  .c-eplmKA-jigqbG-size-md {
-    height: var(--sizes-6);
-  }
-
   .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -512,69 +503,65 @@ exports[`TopBar component renders 1`] = `
 
 <body>
   <div
-    class="c-eplmKA c-eplmKA-jigqbG-size-md t-fvKGSq"
+    class="c-dhzjXW c-LniWm t-fvKGSq"
   >
-    <div
-      class="c-dhzjXW c-ftiHlK"
+    <a
+      class="c-cmeUbs"
+      href="atomlearning.co.uk"
     >
-      <a
-        class="c-cmeUbs"
-        href="atomlearning.co.uk"
+      <p
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
       >
-        <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
-        >
-          Admin Panel
-        </p>
-      </a>
-      <button
-        aria-label="Search"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
-        data-state="closed"
-        type="button"
+        Admin Panel
+      </p>
+    </a>
+    <button
+      aria-label="Search"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14.412 14.412 20 20"
-          />
-          <circle
-            cx="10"
-            cy="10"
-            r="6"
-          />
-        </svg>
-      </button>
-      <hr
-        class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
-      />
-      <button
-        aria-label="Light/Dark mode"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
-        data-state="closed"
-        type="button"
+        <path
+          d="M14.412 14.412 20 20"
+        />
+        <circle
+          cx="10"
+          cy="10"
+          r="6"
+        />
+      </svg>
+    </button>
+    <hr
+      class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
+    />
+    <button
+      aria-label="Light/Dark mode"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
-            fill-rule="evenodd"
-          />
-          <path
-            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
-          />
-        </svg>
-      </button>
-    </div>
+        <path
+          clip-rule="evenodd"
+          d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
+          fill-rule="evenodd"
+        />
+        <path
+          d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
+        />
+      </svg>
+    </button>
   </div>
 </body>
 `;
@@ -877,34 +864,29 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-eplmKA {
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-LniWm {
     background: var(--colors-background);
     position: sticky;
-    display: flex;
     align-items: center;
     width: 100vw;
     top: 0;
     z-index: 1;
     border-bottom: 1px solid var(--colors-borderBottom);
     transition: box-shadow .2s ease-out;
-  }
-
-  .c-dhzjXW {
-    display: flex;
-  }
-
-  .c-ftiHlK {
-    align-items: center;
-    height: var(--sizes-4);
-    margin-left: var(--space-4);
-    margin-right: var(--space-4);
-    width: 100%;
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
   }
 
 @media (min-width: 800px) {
-    .c-ftiHlK {
-      margin-left: var(--space-5);
-      margin-right: var(--space-5);
+    .c-LniWm {
+      padding-left: var(--space-5);
+      padding-right: var(--space-5);
     }
 }
 
@@ -1019,10 +1001,6 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
-  .c-eplmKA-jigqbG-size-md {
-    height: var(--sizes-6);
-  }
-
   .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -1065,7 +1043,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-eplmKA-bXvLYD-size-lg {
+  .c-LniWm-bXvLYD-size-lg {
     height: var(--sizes-7);
   }
 }
@@ -1095,69 +1073,65 @@ exports[`TopBar component renders the lg variant 1`] = `
 
 <body>
   <div
-    class="c-eplmKA c-eplmKA-bXvLYD-size-lg t-fvKGSq"
+    class="c-dhzjXW c-LniWm c-LniWm-bXvLYD-size-lg t-fvKGSq"
   >
-    <div
-      class="c-dhzjXW c-ftiHlK"
+    <a
+      class="c-cmeUbs"
+      href="atomlearning.co.uk"
     >
-      <a
-        class="c-cmeUbs"
-        href="atomlearning.co.uk"
+      <p
+        class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
       >
-        <p
-          class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-ksoatv"
-        >
-          Admin Panel
-        </p>
-      </a>
-      <button
-        aria-label="Search"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
-        data-state="closed"
-        type="button"
+        Admin Panel
+      </p>
+    </a>
+    <button
+      aria-label="Search"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M14.412 14.412 20 20"
-          />
-          <circle
-            cx="10"
-            cy="10"
-            r="6"
-          />
-        </svg>
-      </button>
-      <hr
-        class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
-      />
-      <button
-        aria-label="Light/Dark mode"
-        class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
-        data-state="closed"
-        type="button"
+        <path
+          d="M14.412 14.412 20 20"
+        />
+        <circle
+          cx="10"
+          cy="10"
+          r="6"
+        />
+      </svg>
+    </button>
+    <hr
+      class="c-fxIenL c-fxIenL-fKZlxR-orientation-vertical c-fxIenL-ijUXxeg-css"
+    />
+    <button
+      aria-label="Light/Dark mode"
+      class="c-oUmPa c-oUmPa-PrXKS-size-md c-oUmPa-fVNhqX-cv c-PJLV"
+      data-state="closed"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          aria-hidden="true"
-          class="c-hMRxhp c-hMRxhp-dMrjnF-size-md c-hMRxhp-iPJLV-css"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
-            fill-rule="evenodd"
-          />
-          <path
-            d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
-          />
-        </svg>
-      </button>
-    </div>
+        <path
+          clip-rule="evenodd"
+          d="M7 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"
+          fill-rule="evenodd"
+        />
+        <path
+          d="M7 17A5 5 0 0 1 7 7h9a5 5 0 0 1 0 10H7Z"
+        />
+      </svg>
+    </button>
   </div>
 </body>
 `;
