@@ -302,10 +302,9 @@ exports[`TopBar component renders 1`] = `
     display: flex;
   }
 
-  .c-LniWm {
+  .c-kVlHDg {
     background: var(--colors-background);
     position: sticky;
-    align-items: center;
     width: 100vw;
     top: 0;
     z-index: 1;
@@ -318,7 +317,7 @@ exports[`TopBar component renders 1`] = `
   }
 
 @media (min-width: 800px) {
-    .c-LniWm {
+    .c-kVlHDg {
       padding-left: var(--space-5);
       padding-right: var(--space-5);
     }
@@ -435,6 +434,10 @@ exports[`TopBar component renders 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -503,7 +506,7 @@ exports[`TopBar component renders 1`] = `
 
 <body>
   <div
-    class="c-dhzjXW c-LniWm t-fvKGSq"
+    class="c-dhzjXW c-kVlHDg c-dhzjXW-jroWjL-align-center t-fvKGSq"
   >
     <a
       class="c-cmeUbs"
@@ -868,10 +871,9 @@ exports[`TopBar component renders the lg variant 1`] = `
     display: flex;
   }
 
-  .c-LniWm {
+  .c-kVlHDg {
     background: var(--colors-background);
     position: sticky;
-    align-items: center;
     width: 100vw;
     top: 0;
     z-index: 1;
@@ -884,7 +886,7 @@ exports[`TopBar component renders the lg variant 1`] = `
   }
 
 @media (min-width: 800px) {
-    .c-LniWm {
+    .c-kVlHDg {
       padding-left: var(--space-5);
       padding-right: var(--space-5);
     }
@@ -1001,6 +1003,10 @@ exports[`TopBar component renders the lg variant 1`] = `
 }
 
 @media  {
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
   .c-ctivzP-gvmVBy-size-md {
     font-size: var(--fontSizes-md);
     line-height: 1.5;
@@ -1043,7 +1049,7 @@ exports[`TopBar component renders the lg variant 1`] = `
     min-height: var(--sizes-3);
   }
 
-  .c-LniWm-bXvLYD-size-lg {
+  .c-kVlHDg-bXvLYD-size-lg {
     height: var(--sizes-7);
   }
 }
@@ -1073,7 +1079,7 @@ exports[`TopBar component renders the lg variant 1`] = `
 
 <body>
   <div
-    class="c-dhzjXW c-LniWm c-LniWm-bXvLYD-size-lg t-fvKGSq"
+    class="c-dhzjXW c-kVlHDg c-dhzjXW-jroWjL-align-center c-kVlHDg-bXvLYD-size-lg t-fvKGSq"
   >
     <a
       class="c-cmeUbs"

@@ -16,7 +16,6 @@ const TopBarDivider = () => (
 const StyledRoot = styled(Flex, {
   bg: '$background',
   position: 'sticky',
-  alignItems: 'center',
   width: '100vw',
   top: '0',
   zIndex: 1,
@@ -53,6 +52,7 @@ const TopBarComponent = ({
 
   return (
     <StyledRoot
+      align="center"
       className={className}
       hasScrolled={!!scrollPositionY}
       {...props}
