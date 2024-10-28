@@ -12,7 +12,7 @@ const StyledSlot = styled(Slot)
 type KeyboardEventWindowOrElement =
   | KeyboardEvent
   | React.KeyboardEvent<HTMLDivElement>
-type ShortcutConfig = Partial<KeyboardEvent> 
+type ShortcutConfig = Partial<KeyboardEvent>
 
 type KeyboardShortcutProps = React.ComponentProps<typeof Box> & {
   asChild?: boolean
