@@ -9,9 +9,9 @@ on:
         type: string
 
 permissions:
-  actions: write # artifacts+cache access
-  contents: read # for Git clone (I think, documentation is unclear)
-  pull-requests: write # to post PR comment
+  actions: write
+  contents: read
+  pull-requests: write
 
 jobs:
   test:
