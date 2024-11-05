@@ -16,7 +16,8 @@
     "dev:sandbox": "cd lib && yarn start:sandbox",
     "build:types": "cd lib && NODE_ENV=production tsc --emitDeclarationOnly && tsc-alias",
     "lint-staged": "cd lib && yarn run precommit",
-    "build-all": "run-s build:*"
+    "build-all": "run-s build:*",
+    "visual-regression": "echo 'vr:chromium'"
   },
   "devDependencies": {
     "husky": "^4.3.8",
