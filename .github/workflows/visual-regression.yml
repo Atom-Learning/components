@@ -5,7 +5,8 @@ on:
     inputs:
       dsDocumentationUrl:
         description: 'URL of environment to run VR tests against. Should include protocol (e.g. https://)'
-        required: true
+        required: false
+        default: ''
         type: string
 
 permissions:
@@ -30,12 +31,15 @@ jobs:
         run: yarn install
 
       - name: Build Library
+        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: yarn build:lib
 
       - name: Build Documentation
+        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: yarn build:docs
 
       - name: Start Web Server as a Daemon
+        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: yarn start:docs &
 
       - name: Install Playwright browsers + dependencies
