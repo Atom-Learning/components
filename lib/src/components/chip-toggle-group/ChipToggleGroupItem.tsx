@@ -33,7 +33,7 @@ const StyledChipToggleGroupItem = styled.withConfig({
   },
   '&[data-state="off"]': {
     color: '$grey800',
-    bg: '$grey100',
+    bg: 'white',
     borderColor: '$grey600'
   },
   '&[data-state="on"]': {
