@@ -63,7 +63,7 @@ describe('NavigationMenuVertical', () => {
     const accordionContent = screen.getByTestId('accordion-content')
     expect(accordionContent).toBeVisible()
 
-    userEvent.click(accordionTrigger)
+    await userEvent.click(accordionTrigger)
 
     expect(mockOnOpenChange).toBeCalledWith(false)
     expect(accordionTrigger).toHaveAttribute('data-state', 'closed')

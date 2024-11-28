@@ -44,7 +44,7 @@ describe('RadioButtonField component', () => {
     const onValueChangeSpy = jest.fn()
     render(<ExampleRadioButtonField onValueChange={onValueChangeSpy} />)
 
-    userEvent.click(screen.getByLabelText('2'))
+    await userEvent.click(screen.getByLabelText('2'))
     await waitFor(() => {
       expect(onValueChangeSpy).toHaveBeenCalledTimes(1)
       expect(onValueChangeSpy).toHaveBeenCalledWith('2')

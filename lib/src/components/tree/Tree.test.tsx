@@ -53,14 +53,14 @@ describe('Tree', () => {
     expect(collapsibleTriggerActionIcon).toHaveAttribute('data-state', 'closed')
     expect(queryByTestId('collapsible-content')).toBeNull()
 
-    userEvent.click(collapsibleTrigger)
+    await userEvent.click(collapsibleTrigger)
 
     expect(mockOnOpenChange).toBeCalledWith(true)
     expect(collapsibleTriggerActionIcon).toHaveAttribute('data-state', 'open')
     const collapsibleContent = getByTestId('collapsible-content')
     expect(collapsibleContent).toBeVisible()
 
-    userEvent.click(collapsibleTriggerActionIcon)
+    await userEvent.click(collapsibleTriggerActionIcon)
 
     expect(mockOnOpenChange).toBeCalledWith(false)
     expect(collapsibleTriggerActionIcon).toHaveAttribute('data-state', 'closed')

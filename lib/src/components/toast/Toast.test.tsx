@@ -36,7 +36,7 @@ describe('Toast component', () => {
     })
 
     expect(await screen.findByText(message)).toBeVisible()
-    userEvent.click(screen.getByRole('button', { name: /close alert/i }))
+    await userEvent.click(screen.getByRole('button', { name: /close alert/i }))
     await waitForElementToBeRemoved(() => screen.queryByText(message))
   })
 
@@ -72,7 +72,7 @@ describe('Toast component', () => {
     })
 
     expect(await screen.findByText(message)).toBeVisible()
-    userEvent.click(screen.getByRole('button', { name: /close alert/i }))
+    await userEvent.click(screen.getByRole('button', { name: /close alert/i }))
     await waitForElementToBeRemoved(() => screen.queryByText(message))
   })
 })

@@ -33,7 +33,7 @@ describe('FieldWrapper component', () => {
   it('links the label to an input', async () => {
     render(<ExampleField />)
 
-    userEvent.click(await screen.findByText('Example Field'))
+    await userEvent.click(await screen.findByText('Example Field'))
 
     expect(await screen.findByRole('textbox')).toHaveFocus()
   })
@@ -69,7 +69,7 @@ describe('FieldWrapper component', () => {
 
     expect(button).toHaveTextContent('Example prompt')
 
-    userEvent.click(button)
+    await userEvent.click(button)
 
     expect(promptClickMock).toHaveBeenCalledTimes(1)
   })

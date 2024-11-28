@@ -100,7 +100,7 @@ describe('DataTable component', () => {
     expect(screen.getByText('xena')).toBeVisible()
   })
 
-  it('Sorts data on click of sortable header cell', () => {
+  it('Sorts data on click of sortable header cell', async () => {
     render(
       <Wrapper>
         <DataTable
@@ -115,11 +115,11 @@ describe('DataTable component', () => {
     )
     const nameHeader = screen.getByText('Name')
 
-    userEvent.click(nameHeader) // Sorts ascending
+    await userEvent.click(nameHeader) // Sorts ascending
     expect(screen.getByText('agatha')).toBeVisible()
     expect(screen.queryByText('xena')).not.toBeInTheDocument()
 
-    userEvent.click(nameHeader) // Sorts descending
+    await userEvent.click(nameHeader) // Sorts descending
     expect(screen.getByText('xena')).toBeVisible()
     expect(screen.queryByText('agatha')).not.toBeInTheDocument()
   })
@@ -136,7 +136,7 @@ describe('DataTable component', () => {
     expect(container).toMatchSnapshot()
   })
 
-  it('renders subRows correctly and performs actions only on selected ones', () => {
+  it('renders subRows correctly and performs actions only on selected ones', async () => {
     const columnHelper = createColumnHelper<{
       firstName: string
       lastName: string
@@ -242,17 +242,17 @@ describe('DataTable component', () => {
     expect(firstDataRow.textContent).toMatch(/34/)
     expect(screen.queryByText('John2')).not.toBeInTheDocument()
 
-    userEvent.click(within(firstDataRow).getByTestId('expand-icon-0'))
+    await userEvent.click(within(firstDataRow).getByTestId('expand-icon-0'))
 
     const firstNestedRow = screen.getAllByRole('row')[2]
 
     expect(within(firstNestedRow).getByText('John2')).toBeVisible()
 
-    userEvent.click(within(firstNestedRow).getByRole('checkbox'))
+    await userEvent.click(within(firstNestedRow).getByRole('checkbox'))
 
     expect(screen.getByText('Make older')).toBeVisible()
 
-    userEvent.click(screen.getByText('Make older'))
+    await userEvent.click(screen.getByText('Make older'))
 
     expect(firstDataRow.textContent).toMatch(/34/)
     expect(firstNestedRow.textContent).toMatch(/45/)
@@ -310,7 +310,7 @@ describe('DataTable.Pagination component', () => {
       </Wrapper>
     )
 
-    userEvent.click(screen.getByRole('button', { name: '2' }))
+    await userEvent.click(screen.getByRole('button', { name: '2' }))
 
     await waitFor(() =>
       expect(screen.getByRole('button', { name: '2' })).toHaveAttribute(
@@ -340,7 +340,7 @@ describe('DataTable.Pagination component', () => {
     expect(previousPageButton).toBeDisabled()
 
     const nextPageButton = screen.getByRole('button', { name: 'Next page' })
-    userEvent.click(nextPageButton)
+    await userEvent.click(nextPageButton)
 
     await waitFor(() => expect(nextPageButton).toBeDisabled())
   })
@@ -400,8 +400,8 @@ describe('DataTable GlobalFilter component', () => {
       expect(screen.getByText('charlie')).toBeVisible()
     })
 
-    userEvent.clear(search)
-    userEvent.type(search, 'crossfit')
+    await userEvent.clear(search)
+    await userEvent.type(search, 'crossfit')
     await waitFor(() => {
       expect(screen.getByText('agatha')).toBeVisible()
       expect(screen.queryByText('chrissy')).toBe(null)
@@ -481,7 +481,7 @@ describe('DataTable server-side', () => {
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
     const nextPageButton = screen.getByLabelText('Next page')
-    userEvent.click(nextPageButton)
+    await userEvent.click(nextPageButton)
     expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 1,
       pageSize: PAGE_SIZE,
@@ -530,7 +530,7 @@ describe('DataTable server-side', () => {
 
     const nameHeader = screen.getByText('Name')
 
-    userEvent.click(nameHeader)
+    await userEvent.click(nameHeader)
 
     expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
@@ -560,9 +560,8 @@ describe('DataTable server-side', () => {
 
     const nameHeader = screen.getByText('Name')
 
-    userEvent.click(nameHeader)
-    await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
-    userEvent.click(nameHeader)
+    await userEvent.click(nameHeader)
+    await userEvent.click(nameHeader)
 
     expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
@@ -592,7 +591,7 @@ describe('DataTable server-side', () => {
     await waitForElementToBeRemoved(() => screen.queryByText('Loading'))
 
     const search = screen.getByRole('searchbox')
-    userEvent.type(search, GLOBAL_FILTER)
+    await userEvent.type(search, GLOBAL_FILTER)
 
     await waitFor(() => {
       expect(getAsyncData).toHaveBeenLastCalledWith({
@@ -668,7 +667,7 @@ describe('DataTable server-side', () => {
       </Wrapper>
     )
 
-    userEvent.click(await screen.findByText('Retry fetch'))
+    await userEvent.click(await screen.findByText('Retry fetch'))
     expect(getAsyncData).toHaveBeenCalledTimes(2)
     expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: 0,
@@ -717,7 +716,7 @@ describe('DataTable server-side', () => {
       </Wrapper>
     )
 
-    userEvent.click(await screen.findByText('Retry fetch'))
+    await userEvent.click(await screen.findByText('Retry fetch'))
     expect(getAsyncData).toHaveBeenCalledTimes(2)
     expect(getAsyncData).toHaveBeenLastCalledWith({
       pageIndex: PAGE_INDEX,
@@ -782,15 +781,15 @@ describe('DataTable MetaData', () => {
     ).toBeInTheDocument()
 
     const search = screen.getByRole('searchbox')
-    userEvent.clear(search)
-    userEvent.type(search, 'crossfit')
+    await userEvent.clear(search)
+    await userEvent.type(search, 'crossfit')
     await waitFor(() => {
       expect(screen.findByText('6 items - Sorted by Name ascending'))
     })
 
     const hobbyHeader = screen.getByText('hobby')
 
-    userEvent.click(hobbyHeader)
+    await userEvent.click(hobbyHeader)
     await waitFor(() => {
       expect(screen.findByText('6 items - Sorted by hobby ascending'))
     })
@@ -853,55 +852,55 @@ describe('DataTable row selection', () => {
     checkboxes.every((item) => expect(item).not.toBeChecked())
   })
 
-  it('renders the header checkbox partially checked if just some of the rows are selected', () => {
+  it('renders the header checkbox partially checked if just some of the rows are selected', async () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
-    userEvent.click(checkboxes[1])
+    await userEvent.click(checkboxes[1])
     expect(checkboxes[0]).toBePartiallyChecked()
 
     expect(screen.getByText('1 item selected')).toBeVisible()
   })
 
-  it('adjusts the copy in the bulk actions bar if multiple rows are selected', () => {
+  it('adjusts the copy in the bulk actions bar if multiple rows are selected', async () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
-    userEvent.click(checkboxes[1])
-    userEvent.click(checkboxes[2])
+    await userEvent.click(checkboxes[1])
+    await userEvent.click(checkboxes[2])
     expect(checkboxes[0]).toBePartiallyChecked()
 
     expect(screen.getByText('2 items selected')).toBeVisible()
   })
 
-  it('deselects all rows and hides the bulk actions bar when clicking the Cancel button', () => {
+  it('deselects all rows and hides the bulk actions bar when clicking the Cancel button', async () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
-    userEvent.click(checkboxes[1])
-    userEvent.click(checkboxes[2])
+    await userEvent.click(checkboxes[1])
+    await userEvent.click(checkboxes[2])
     expect(checkboxes[0]).toBePartiallyChecked()
 
     expect(screen.getByText('2 items selected')).toBeVisible()
 
-    userEvent.click(screen.getByText('Cancel'))
+    await userEvent.click(screen.getByText('Cancel'))
 
     expect(screen.queryByText('2 items selected')).not.toBeInTheDocument()
     expect(checkboxes[0]).not.toBeChecked()
   })
 
-  it('calls the click handler on the custom button action when rows are selected', () => {
+  it('calls the click handler on the custom button action when rows are selected', async () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
-    userEvent.click(checkboxes[1])
-    userEvent.click(checkboxes[2])
+    await userEvent.click(checkboxes[1])
+    await userEvent.click(checkboxes[2])
     expect(checkboxes[0]).toBePartiallyChecked()
 
     expect(screen.getByText('2 items selected')).toBeVisible()
 
-    userEvent.click(screen.getByText('Delete rows'))
+    await userEvent.click(screen.getByText('Delete rows'))
 
     expect(deleteClickSpy).toHaveBeenCalled()
   })
 
-  it('calls the click handler on the custom button action when no rows are selected', () => {
+  it('calls the click handler on the custom button action when no rows are selected', async () => {
     customRender()
     const checkboxes = screen.getAllByRole('checkbox')
 
@@ -909,7 +908,7 @@ describe('DataTable row selection', () => {
 
     expect(screen.getByText('18 items')).toBeVisible()
 
-    userEvent.click(screen.getByText('Add rows'))
+    await userEvent.click(screen.getByText('Add rows'))
 
     expect(addClickSpy).toHaveBeenCalled()
   })
