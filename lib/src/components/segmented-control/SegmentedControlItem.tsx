@@ -1,17 +1,55 @@
 import * as React from 'react'
 
 import { styled } from '../../stitches'
-import { ToggleGroup } from '../toggle-group'
+import { Flex } from '../flex'
+import { Tabs } from '../tabs'
 import { useSegmentedControl } from './SegmentedControlContext'
 
-const StyledItem = styled(ToggleGroup.Item, {
+const StyledItem = styled(Tabs.Trigger, {
   bg: 'transparent',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
   border: 'none',
-  borderRadius: '$2 !important',
-  boxShadow: 'none',
+  borderRadius: '$2',
+  overflow: 'hidden',
+  boxShadow: 'none !important',
+  p: 0,
+  variants: {
+    theme: {
+      primary: {
+        '&[data-state=inactive]:hover': {
+          bg: '$primary300'
+        }
+      },
+      marsh: {
+        '&[data-state=inactive]:hover': {
+          bg: '$marsh300'
+        }
+      }
+    }
+  },
+  '& > div': { display: 'none' },
+  '&[data-state=active]': {
+    bg: 'white',
+    boxShadow: 'none',
+    '& :is(h1,h2,h3,h4,h5,h6)': {
+      fontWeight: 600,
+      color: '$textBold'
+    },
+    '&:hover': {
+      bg: 'white'
+    }
+  },
+  '&[data-state=inactive]': {
+    '& :is(h1,h2,h3,h4,h5,h6)': {
+      fontWeight: 400,
+      color: '$grey900'
+    }
+  },
+  '&[disabled]': {
+    opacity: 0.3
+  }
+})
+
+const StyledContainer = styled(Flex, {
   variants: {
     size: {
       sm: {
@@ -30,29 +68,25 @@ const StyledItem = styled(ToggleGroup.Item, {
         maxWidth: '306px'
       }
     }
-  },
-  '&[data-state=on]': {
-    bg: 'white',
-    boxShadow: 'none'
-  },
-  '&:hover[data-state=off]': {
-    bg: '$primary300'
-  },
-  '$:focus': {
-    boxShadow: '$primary'
-  },
-  '&[disabled]': {
-    opacity: 0.3
-  },
-  '&:active': {
-    bg: '$primary100'
   }
 })
 
-export const SegmentedControlItem = (
-  props: Omit<React.ComponentProps<typeof StyledItem>, 'size'>
-): JSX.Element => {
-  const { size } = useSegmentedControl()
+export const SegmentedControlItem = ({
+  children,
+  ...props
+}: Omit<React.ComponentProps<typeof StyledItem>, 'size'>): JSX.Element => {
+  const { size, theme } = useSegmentedControl()
 
-  return <StyledItem {...props} size={size} />
+  return (
+    <StyledItem {...props} theme={theme}>
+      <StyledContainer
+        size={size}
+        direction="column"
+        align="center"
+        justify="center"
+      >
+        {children}
+      </StyledContainer>
+    </StyledItem>
+  )
 }

@@ -7,6 +7,7 @@ import { useSegmentedControl } from './SegmentedControlContext'
 const StyledText = styled(Text, {
   fontFamily: '$body',
   color: '$textSubtle',
+  fontWeight: 400,
   variants: {
     size: {
       sm: {

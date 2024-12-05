@@ -2,8 +2,11 @@ import * as React from 'react'
 
 import type { SegmentedControlRootProps } from './SegmentedControlRoot'
 
+export type SegmentedControlTheme = 'primary' | 'marsh'
+
 interface SegmentedControlContextValue {
   size: SegmentedControlRootProps['size']
+  theme: SegmentedControlTheme
 }
 
 export interface SegmentedControlProviderProps
@@ -16,11 +19,12 @@ const SegmentedControlContext =
 
 export const SegmentedControlProvider = ({
   size,
+  theme,
   children
 }: SegmentedControlProviderProps): JSX.Element => {
   const value = React.useMemo<SegmentedControlContextValue>(
-    () => ({ size }),
-    [size]
+    () => ({ size, theme }),
+    [size, theme]
   )
 
   return (

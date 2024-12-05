@@ -1,13 +1,17 @@
 import * as React from 'react'
 
 import { styled } from '../../stitches'
-import { ToggleGroup } from '../toggle-group'
-import { SegmentedControlProvider } from './SegmentedControlContext'
+import { Tabs } from '../tabs'
+import { SegmentedControlContent } from './SegmentedControlContent'
+import {
+  SegmentedControlProvider,
+  SegmentedControlTheme
+} from './SegmentedControlContext'
+import { SegmentedControlItem } from './SegmentedControlItem'
 
-const StyledRoot = styled(ToggleGroup.Root, {
-  bg: '$primary200',
-  p: '$1',
-  borderRadius: '$3',
+const StyledTabsRoot = styled(Tabs, {
+  width: 'unset',
+  '& > div': { border: 'none' },
   variants: {
     size: {
       sm: {},
@@ -17,29 +21,37 @@ const StyledRoot = styled(ToggleGroup.Root, {
   }
 })
 
-export type SegmentedControlRootProps = Omit<
-  React.ComponentProps<typeof StyledRoot>,
-  'gap' | 'type' | 'wrap'
->
+export type SegmentedControlRootProps = React.ComponentProps<
+  typeof StyledTabsRoot
+> & {
+  theme?: SegmentedControlTheme
+}
 
 export const SegmentedControlRoot = ({
   size,
   children,
+  theme = 'primary',
   ...props
 }: SegmentedControlRootProps): JSX.Element => {
+  const tabTriggers = React.Children.toArray(children).filter(
+    (child) =>
+      React.isValidElement(child) && child.type === SegmentedControlItem
+  )
+  const tabContents = React.Children.toArray(children).filter(
+    (child) =>
+      React.isValidElement(child) && child.type === SegmentedControlContent
+  )
+
   return (
-    <SegmentedControlProvider size={size}>
-      <StyledRoot
-        {...props}
-        type="single"
-        wrap={false}
-        gap={null}
-        hasGap
-        size={size}
-        orientation="horizontal"
-      >
-        {children}
-      </StyledRoot>
+    <SegmentedControlProvider size={size} theme={theme}>
+      <StyledTabsRoot {...props} size={size}>
+        <Tabs.TriggerList
+          css={{ bg: `$${theme}200`, p: '$1', borderRadius: '$3' }}
+        >
+          {tabTriggers}
+        </Tabs.TriggerList>
+        {tabContents}
+      </StyledTabsRoot>
     </SegmentedControlProvider>
   )
 }

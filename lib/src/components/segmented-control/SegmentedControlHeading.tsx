@@ -6,8 +6,6 @@ import { useSegmentedControl } from './SegmentedControlContext'
 
 const StyledHeading = styled(Heading, {
   fontFamily: '$body',
-  fontWeight: 600,
-  color: '$textBold',
   variants: {
     size: {
       sm: {
