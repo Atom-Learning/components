@@ -13,7 +13,9 @@ const StyledTabsRoot = styled(Tabs, {
   '& > div': { border: 'none' },
   variants: {
     size: {
-      sm: {},
+      sm: {
+        width: 'unset'
+      },
       md: {},
       lg: {}
     }
