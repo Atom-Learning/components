@@ -24,6 +24,17 @@ const StyledItem = styled(Tabs.Trigger, {
           bg: '$marsh300'
         }
       }
+    },
+    size: {
+      sm: {
+        flex: 'unset'
+      },
+      md: {
+        flex: 1
+      },
+      lg: {
+        flex: 1
+      }
     }
   },
   '& > div': { display: 'none' },
@@ -54,18 +65,15 @@ const StyledContainer = styled(Flex, {
     size: {
       sm: {
         p: '$4 $24',
-        gap: '$3',
-        maxWidth: '203px'
+        gap: '$3'
       },
       md: {
         p: '$24 $5',
-        gap: '$4',
-        maxWidth: '256px'
+        gap: '$4'
       },
       lg: {
         p: '$24 $5',
-        gap: '$4',
-        maxWidth: '306px'
+        gap: '$4'
       }
     }
   }
@@ -78,7 +86,7 @@ export const SegmentedControlItem = ({
   const { size, theme } = useSegmentedControl()
 
   return (
-    <StyledItem {...props} theme={theme}>
+    <StyledItem {...props} theme={theme} size={size}>
       <StyledContainer
         size={size}
         direction="column"

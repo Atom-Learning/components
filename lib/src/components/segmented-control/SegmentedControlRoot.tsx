@@ -10,7 +10,6 @@ import {
 import { SegmentedControlItem } from './SegmentedControlItem'
 
 const StyledTabsRoot = styled(Tabs, {
-  width: 'unset',
   '& > div': { border: 'none' },
   variants: {
     size: {
