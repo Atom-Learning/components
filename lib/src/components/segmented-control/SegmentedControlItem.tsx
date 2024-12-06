@@ -7,21 +7,24 @@ import { useSegmentedControl } from './SegmentedControlContext'
 
 const StyledItem = styled(Tabs.Trigger, {
   bg: 'transparent',
-  border: 'none',
   borderRadius: '$2',
-  overflow: 'hidden',
-  boxShadow: 'none !important',
   p: 0,
   variants: {
     theme: {
       primary: {
         '&[data-state=inactive]:hover': {
           bg: '$primary300'
+        },
+        '&:focus': {
+          borderColor: '$primary800'
         }
       },
       marsh: {
         '&[data-state=inactive]:hover': {
           bg: '$marsh300'
+        },
+        '&:focus': {
+          borderColor: '$marsh800'
         }
       }
     },
@@ -41,12 +44,16 @@ const StyledItem = styled(Tabs.Trigger, {
   '&[data-state=active]': {
     bg: 'white',
     boxShadow: 'none',
+    border: '1.25px solid transparent',
     '& :is(h1,h2,h3,h4,h5,h6)': {
       fontWeight: 600,
       color: '$textBold'
     },
     '&:hover': {
       bg: 'white'
+    },
+    '&:focus-visible': {
+      boxShadow: 'none'
     }
   },
   '&[data-state=inactive]': {
