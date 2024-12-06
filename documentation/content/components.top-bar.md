@@ -103,7 +103,12 @@ tabs:
       ## API Reference
 
 
-      <ComponentProps component="TopBar" /> <ComponentProps component="TopBar.Brand" /> <ComponentProps component="TopBar.BrandLogo" /> <ComponentProps component="TopBar.BrandName" /> <ComponentProps component="TopBar.ActionIcon" />
+      <ComponentProps component="TopBar" />
+      <ComponentProps component="TopBar.Brand" />
+      <ComponentProps component="TopBar.BrandLogo" />
+      <ComponentProps component="TopBar.BrandName" />
+      <ComponentProps component="TopBar.ActionIcon" />
+
   - title: Visual
     content: >-
       ## Structure

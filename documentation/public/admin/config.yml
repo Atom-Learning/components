@@ -7,107 +7,107 @@ backend:
   auth_endpoint: api/auth
 
   commit_messages:
-    create: '[NetlifyCMS] Create {{collection}} “{{slug}}”'
-    update: '[NetlifyCMS] Update {{collection}} “{{slug}}”'
-    delete: '[NetlifyCMS] Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[NetlifyCMS] Upload “{{path}}”'
-    deleteMedia: '[NetlifyCMS] Delete “{{path}}”'
-    openAuthoring: '[NetlifyCMS] {{message}}'
+    create: "[NetlifyCMS] Create {{collection}} “{{slug}}”"
+    update: "[NetlifyCMS] Update {{collection}} “{{slug}}”"
+    delete: "[NetlifyCMS] Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[NetlifyCMS] Upload “{{path}}”"
+    deleteMedia: "[NetlifyCMS] Delete “{{path}}”"
+    openAuthoring: "[NetlifyCMS] {{message}}"
 
-local_backend: true
+# local_backend: true
 
-media_folder: 'documentation/public/assets/images' # Media files will be stored in the repo under images/uploads
-public_folder: '/assets/images'
+media_folder: "documentation/public/assets/images" # Media files will be stored in the repo under images/uploads
+public_folder: "/assets/images"
 
 collections:
   - name: static
-    label: 'Static Pages'
+    label: "Static Pages"
     files:
-      - label: 'Landing Page'
+      - label: "Landing Page"
         name: landing
-        file: 'documentation/content/landing/index.md'
+        file: "documentation/content/landing/index.md"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - label: 'Tabs'
-            name: 'tabs'
-            widget: 'list'
-            summary: '{{fields.title}}'
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Tabs"
+            name: "tabs"
+            widget: "list"
+            summary: "{{fields.title}}"
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: "Title", name: "title", widget: "string" }
               - {
-                  label: 'Content',
-                  name: 'content',
-                  widget: 'markdown',
-                  sanitize_preview: true
+                  label: "Content",
+                  name: "content",
+                  widget: "markdown",
+                  sanitize_preview: true,
                 } # editor_components (custom: Colours, Shadows, Icons, Space, etc., Api Ref)
 
   - name: dynamic
-    label: 'Dynamic Pages'
-    folder: 'documentation/content'
+    label: "Dynamic Pages"
+    folder: "documentation/content"
     create: true
     identifier_field: slug
     fields:
-      - { label: 'Slug', name: 'slug', widget: 'string' }
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
       - {
-          label: 'Links',
-          name: 'links',
-          widget: 'object',
+          label: "Links",
+          name: "links",
+          widget: "object",
           collapsed: true,
           fields:
             [
               {
-                label: 'View source',
-                name: 'viewSource',
-                widget: 'string',
-                required: false
+                label: "View source",
+                name: "viewSource",
+                widget: "string",
+                required: false,
               },
               {
                 label: 'Show "Report An Issue"',
-                name: 'showReportAnIssue',
-                widget: 'boolean',
-                required: false
+                name: "showReportAnIssue",
+                widget: "boolean",
+                required: false,
               },
               {
-                label: 'Custom Links',
-                name: 'custom',
-                widget: 'list',
-                summary: '{{fields.name}}',
+                label: "Custom Links",
+                name: "custom",
+                widget: "list",
+                summary: "{{fields.name}}",
                 fields:
                   [
-                    { label: 'Name', name: 'name', widget: 'string' },
-                    { label: 'href', name: 'href', widget: 'string' },
+                    { label: "Name", name: "name", widget: "string" },
+                    { label: "href", name: "href", widget: "string" },
                     {
-                      label: 'Is External',
-                      name: 'isExternal',
-                      widget: 'boolean',
-                      required: false
-                    }
-                  ]
-              }
-            ]
+                      label: "Is External",
+                      name: "isExternal",
+                      widget: "boolean",
+                      required: false,
+                    },
+                  ],
+              },
+            ],
         }
-      - label: 'Tabs'
-        name: 'tabs'
-        widget: 'list'
-        summary: '{{fields.title}}'
+      - label: "Tabs"
+        name: "tabs"
+        widget: "list"
+        summary: "{{fields.title}}"
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: "Title", name: "title", widget: "string" }
           - {
-              label: 'Content',
-              name: 'content',
-              widget: 'markdown',
-              sanitize_preview: true
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              sanitize_preview: true,
             }
       - {
-          label: 'Parent',
-          name: 'parent',
-          widget: 'relation',
-          collection: 'dynamic',
-          value_field: '{{uuid}}',
-          search_fields: ['title'],
-          display_fields: ['{{title}} --- {{nestedSlug}}'],
+          label: "Parent",
+          name: "parent",
+          widget: "relation",
+          collection: "dynamic",
+          value_field: "{{uuid}}",
+          search_fields: ["title"],
+          display_fields: ["{{title}} --- {{nestedSlug}}"],
           required: false,
-          multiple: false
+          multiple: false,
         }
-      - { label: 'UUID', name: 'uuid', widget: 'uuid' }
+      - { label: "UUID", name: "uuid", widget: "uuid" }
