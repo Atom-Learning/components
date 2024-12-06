@@ -1500,12 +1500,6 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     gap: var(--space-4);
   }
 
-  .c-hMRxhp-fLGGKn-size-lg {
-    height: var(--sizes-3);
-    width: var(--sizes-3);
-    stroke-width: 2;
-  }
-
   .c-cyRcZm-eQRsLC-size-lg {
     font-size: var(--fontSizes-lg);
   }
@@ -1581,7 +1575,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="c-hMRxhp c-hMRxhp-fLGGKn-size-lg"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1643,7 +1637,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="c-hMRxhp c-hMRxhp-fLGGKn-size-lg"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
