@@ -6,8 +6,8 @@ links:
 tabs:
   - title: Code
     content: >-
-      Utility component to allow for consistently handling keyDown user
-      events to perform actions.
+      Utility component to allow for consistently handling keyDown user events
+      to perform actions.
 
 
       A `KeyboardShortcut.Indicator` is also exported. This is a simple styled `<Text as="kbd" />` element but the goal is to maintain consistency across uses.
@@ -86,18 +86,6 @@ tabs:
         ]}
         >
         <Text>Press <KeyboardShortcut.Indicator>⌘ + S</KeyboardShortcut.Indicator> to save (anywhere on the window)</Text> 
-
-
-
-
-
-
-
-
-
-
-
-
 
         
       </KeyboardShortcut>`} language={"tsx"} />

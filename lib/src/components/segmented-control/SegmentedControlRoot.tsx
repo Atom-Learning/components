@@ -9,7 +9,7 @@ import {
 } from './SegmentedControlContext'
 import { SegmentedControlItem } from './SegmentedControlItem'
 
-const StyledSegmentControlRoot = styled(Tabs, {
+const StyledSegmentedControlRoot = styled(Tabs, {
   '& > div': { border: 'none' },
   variants: {
     size: {
@@ -23,7 +23,7 @@ const StyledSegmentControlRoot = styled(Tabs, {
 })
 
 export type SegmentedControlRootProps = React.ComponentProps<
-  typeof StyledSegmentControlRoot
+  typeof StyledSegmentedControlRoot
 > & {
   theme?: SegmentedControlTheme
 }
@@ -45,14 +45,14 @@ export const SegmentedControlRoot = ({
 
   return (
     <SegmentedControlProvider size={size} theme={theme}>
-      <StyledSegmentControlRoot {...props} size={size}>
+      <StyledSegmentedControlRoot {...props} size={size}>
         <Tabs.TriggerList
           css={{ bg: `$${theme}200`, p: '$1', borderRadius: '$3' }}
         >
           {tabTriggers}
         </Tabs.TriggerList>
         {tabContents}
-      </StyledSegmentControlRoot>
+      </StyledSegmentedControlRoot>
     </SegmentedControlProvider>
   )
 }
