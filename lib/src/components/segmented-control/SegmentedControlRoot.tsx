@@ -22,9 +22,8 @@ const StyledSegmentedControlRoot = styled(Tabs, {
   }
 })
 
-export type SegmentedControlRootProps = React.ComponentProps<
-  typeof StyledSegmentedControlRoot
-> & {
+export interface SegmentedControlRootProps
+  extends React.ComponentProps<typeof StyledSegmentedControlRoot> {
   theme?: SegmentedControlTheme
 }
 
