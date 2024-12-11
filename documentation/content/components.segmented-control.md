@@ -2,12 +2,15 @@
 slug: segmented-control
 title: Segmented Control
 links:
-  viewSource: ''
+  viewSource: ""
   showReportAnIssue: true
 tabs:
   - title: Code
     content: >-
-      The segmented control is an alternative to Tabs and Toggle groups, which offers more visual prominence in the page and therefore makes it suitable to use at the top level of a page (rather than within a component/section). 
+      The segmented control is an alternative to Tabs and Toggle groups,
+      which offers more visual prominence in the page and therefore makes it
+      suitable to use at the top level of a page (rather than within a
+      component/section). 
 
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
@@ -156,11 +159,64 @@ tabs:
       </SegmentedControl.Root>`} language={"tsx"} />
 
 
+      ## Badge & Icons
+
+      `SegmentedControl` comes with `Badge` and `Icon` components as well. Here is an example of those in action :
+
+
+      <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
+        <SegmentedControl.Item value="one">
+          <SegmentedControl.Icon is={Alarm}/>
+          <SegmentedControl.Badge theme="danger">
+            Due today
+          </SegmentedControl.Description>
+        </SegmentedControl.Item>
+        <SegmentedControl.Item value="two">
+          <SegmentedControl.Icon is={Anchor}/>
+          <SegmentedControl.Badge theme="warning">
+            Due in a month
+          </SegmentedControl.Description>
+        </SegmentedControl.Item>
+        <SegmentedControl.Content value="one">
+          Content one
+        </SegmentedControl.Content>
+        <SegmentedControl.Content value="two">
+          Content two
+        </SegmentedControl.Content>
+      </SegmentedControl.Root>`} language={"tsx"} />
+
+
+      ## Disabled Items
+
+      It is possible to render `SegmentedControl.Item` as `disabled`
+
+
+      <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
+        <SegmentedControl.Item value="one">
+          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+          <SegmentedControl.Description>
+            Description one
+          </SegmentedControl.Description>
+        </SegmentedControl.Item>
+        <SegmentedControl.Item value="two" disabled>
+          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+          <SegmentedControl.Description>
+            Descritpion two
+          </SegmentedControl.Description>
+        </SegmentedControl.Item>
+        <SegmentedControl.Content value="one">
+          Content one
+        </SegmentedControl.Content>
+        <SegmentedControl.Content value="two">
+          Content two
+        </SegmentedControl.Content>
+      </SegmentedControl.Root>`} language={"tsx"} />
+
+
       ## API Reference
 
 
       <ComponentProps component="SegmentedControlRoot" /> <ComponentProps component="SegmentedControlItem" /> <ComponentProps component="SegmentedControlHeading" /> <ComponentProps component="SegmentedControlDescription" /> <ComponentProps component="SegmentedControlIcon" /> <ComponentProps component="SegmentedControlContent" /> <ComponentProps component="SegmentedControlBadge" />
-
   - title: Usage
     content: >-
       ## Overview
@@ -385,7 +441,6 @@ tabs:
       | ----------------------- | ----------- |
 
       | Disabled: all elements  | 30% opacity |
-
 parent: J3bsmpB7-_uuqm05peuTA
 uuid: ca8bf0a0-1161-41b4-abce-a11811a375a2
 nestedSlug:
