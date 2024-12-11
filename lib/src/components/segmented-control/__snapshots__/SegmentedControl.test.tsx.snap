@@ -445,41 +445,41 @@ exports[`SegmentedControl component renders 1`] = `
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-eTsSjM {
+  .c-irsama {
     background: transparent;
     border-radius: var(--radii-2);
     padding: 0;
   }
 
-  .c-eTsSjM > div {
+  .c-irsama > div {
     display: none;
   }
 
-  .c-eTsSjM[data-state=active] {
+  .c-irsama[data-state=active] {
     background: white;
     box-shadow: none;
-    border: 1.25px solid transparent;
+    border: 2px solid transparent;
   }
 
-  .c-eTsSjM[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 600;
     color: var(--colors-textBold);
   }
 
-  .c-eTsSjM[data-state=active]:hover {
+  .c-irsama[data-state=active]:hover {
     background: white;
   }
 
-  .c-eTsSjM[data-state=active]:focus-visible {
+  .c-irsama[data-state=active]:focus-visible {
     box-shadow: none;
   }
 
-  .c-eTsSjM[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 400;
     color: var(--colors-grey900);
   }
 
-  .c-eTsSjM[disabled] {
+  .c-irsama[disabled] {
     opacity: 0.3;
   }
 
@@ -625,15 +625,15 @@ exports[`SegmentedControl component renders 1`] = `
     white-space: wrap;
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh[data-state=inactive]:hover {
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
     background: var(--colors-marsh300);
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh:focus {
+  .c-irsama-hqdqW-theme-marsh:focus {
     border-color: var(--colors-marsh800);
   }
 
-  .c-eTsSjM-cvqpll-size-sm {
+  .c-irsama-cvqpll-size-sm {
     flex: unset;
   }
 
@@ -643,8 +643,9 @@ exports[`SegmentedControl component renders 1`] = `
 }
 
 @media  {
-  .c-dhzjXW-iobFYN-css {
+  .c-dhzjXW-iJNhhT-css {
     border: none;
+    font-weight: normal;
   }
 
   .c-idmIgS-ibRnMsb-css {
@@ -674,7 +675,7 @@ exports[`SegmentedControl component renders 1`] = `
         <button
           aria-controls="radix-:r0:-content-one"
           aria-selected="true"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-hqdqW-theme-marsh c-eTsSjM-cvqpll-size-sm"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-cvqpll-size-sm"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -718,7 +719,7 @@ exports[`SegmentedControl component renders 1`] = `
                 Description One
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p
@@ -736,7 +737,7 @@ exports[`SegmentedControl component renders 1`] = `
         <button
           aria-controls="radix-:r0:-content-two"
           aria-selected="false"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-hqdqW-theme-marsh c-eTsSjM-cvqpll-size-sm"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-cvqpll-size-sm"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
@@ -780,7 +781,7 @@ exports[`SegmentedControl component renders 1`] = `
                 Description Two
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p
@@ -1268,41 +1269,41 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-eTsSjM {
+  .c-irsama {
     background: transparent;
     border-radius: var(--radii-2);
     padding: 0;
   }
 
-  .c-eTsSjM > div {
+  .c-irsama > div {
     display: none;
   }
 
-  .c-eTsSjM[data-state=active] {
+  .c-irsama[data-state=active] {
     background: white;
     box-shadow: none;
-    border: 1.25px solid transparent;
+    border: 2px solid transparent;
   }
 
-  .c-eTsSjM[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 600;
     color: var(--colors-textBold);
   }
 
-  .c-eTsSjM[data-state=active]:hover {
+  .c-irsama[data-state=active]:hover {
     background: white;
   }
 
-  .c-eTsSjM[data-state=active]:focus-visible {
+  .c-irsama[data-state=active]:focus-visible {
     box-shadow: none;
   }
 
-  .c-eTsSjM[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 400;
     color: var(--colors-grey900);
   }
 
-  .c-eTsSjM[disabled] {
+  .c-irsama[disabled] {
     opacity: 0.3;
   }
 
@@ -1448,15 +1449,15 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     white-space: wrap;
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh[data-state=inactive]:hover {
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
     background: var(--colors-marsh300);
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh:focus {
+  .c-irsama-hqdqW-theme-marsh:focus {
     border-color: var(--colors-marsh800);
   }
 
-  .c-eTsSjM-cvqpll-size-sm {
+  .c-irsama-cvqpll-size-sm {
     flex: unset;
   }
 
@@ -1483,15 +1484,15 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     font-size: var(--fontSizes-sm);
   }
 
-  .c-eTsSjM-dFUZFK-theme-primary[data-state=inactive]:hover {
+  .c-irsama-dFUZFK-theme-primary[data-state=inactive]:hover {
     background: var(--colors-primary300);
   }
 
-  .c-eTsSjM-dFUZFK-theme-primary:focus {
+  .c-irsama-dFUZFK-theme-primary:focus {
     border-color: var(--colors-primary800);
   }
 
-  .c-eTsSjM-bPNjhd-size-md {
+  .c-irsama-bPNjhd-size-md {
     flex: 1;
   }
 
@@ -1515,14 +1516,15 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     padding-bottom: var(--space-0);
   }
 
-  .c-eTsSjM-bPNjhd-size-lg {
+  .c-irsama-bPNjhd-size-lg {
     flex: 1;
   }
 }
 
 @media  {
-  .c-dhzjXW-iobFYN-css {
+  .c-dhzjXW-iJNhhT-css {
     border: none;
+    font-weight: normal;
   }
 
   .c-idmIgS-ibRnMsb-css {
@@ -1558,7 +1560,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
         <button
           aria-controls="radix-:r9:-content-one"
           aria-selected="true"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-hqdqW-theme-marsh c-eTsSjM-bPNjhd-size-lg"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-bPNjhd-size-lg"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -1602,7 +1604,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
                 Description One
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p
@@ -1620,7 +1622,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
         <button
           aria-controls="radix-:r9:-content-two"
           aria-selected="false"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-hqdqW-theme-marsh c-eTsSjM-bPNjhd-size-lg"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-bPNjhd-size-lg"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
@@ -1664,7 +1666,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
                 Description Two
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p
@@ -2152,41 +2154,41 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
   }
 
-  .c-eTsSjM {
+  .c-irsama {
     background: transparent;
     border-radius: var(--radii-2);
     padding: 0;
   }
 
-  .c-eTsSjM > div {
+  .c-irsama > div {
     display: none;
   }
 
-  .c-eTsSjM[data-state=active] {
+  .c-irsama[data-state=active] {
     background: white;
     box-shadow: none;
-    border: 1.25px solid transparent;
+    border: 2px solid transparent;
   }
 
-  .c-eTsSjM[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 600;
     color: var(--colors-textBold);
   }
 
-  .c-eTsSjM[data-state=active]:hover {
+  .c-irsama[data-state=active]:hover {
     background: white;
   }
 
-  .c-eTsSjM[data-state=active]:focus-visible {
+  .c-irsama[data-state=active]:focus-visible {
     box-shadow: none;
   }
 
-  .c-eTsSjM[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
     font-weight: 400;
     color: var(--colors-grey900);
   }
 
-  .c-eTsSjM[disabled] {
+  .c-irsama[disabled] {
     opacity: 0.3;
   }
 
@@ -2332,15 +2334,15 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     white-space: wrap;
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh[data-state=inactive]:hover {
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
     background: var(--colors-marsh300);
   }
 
-  .c-eTsSjM-hqdqW-theme-marsh:focus {
+  .c-irsama-hqdqW-theme-marsh:focus {
     border-color: var(--colors-marsh800);
   }
 
-  .c-eTsSjM-cvqpll-size-sm {
+  .c-irsama-cvqpll-size-sm {
     flex: unset;
   }
 
@@ -2367,22 +2369,23 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     font-size: var(--fontSizes-sm);
   }
 
-  .c-eTsSjM-dFUZFK-theme-primary[data-state=inactive]:hover {
+  .c-irsama-dFUZFK-theme-primary[data-state=inactive]:hover {
     background: var(--colors-primary300);
   }
 
-  .c-eTsSjM-dFUZFK-theme-primary:focus {
+  .c-irsama-dFUZFK-theme-primary:focus {
     border-color: var(--colors-primary800);
   }
 
-  .c-eTsSjM-bPNjhd-size-md {
+  .c-irsama-bPNjhd-size-md {
     flex: 1;
   }
 }
 
 @media  {
-  .c-dhzjXW-iobFYN-css {
+  .c-dhzjXW-iJNhhT-css {
     border: none;
+    font-weight: normal;
   }
 
   .c-idmIgS-ibRnMsb-css {
@@ -2418,7 +2421,7 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
         <button
           aria-controls="radix-:r6:-content-one"
           aria-selected="true"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-dFUZFK-theme-primary c-eTsSjM-bPNjhd-size-md"
+          class="c-efqMNv c-irsama c-irsama-dFUZFK-theme-primary c-irsama-bPNjhd-size-md"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="active"
@@ -2462,7 +2465,7 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
                 Description One
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p
@@ -2480,7 +2483,7 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
         <button
           aria-controls="radix-:r6:-content-two"
           aria-selected="false"
-          class="c-efqMNv c-eTsSjM c-eTsSjM-dFUZFK-theme-primary c-eTsSjM-bPNjhd-size-md"
+          class="c-efqMNv c-irsama c-irsama-dFUZFK-theme-primary c-irsama-bPNjhd-size-md"
           data-orientation="horizontal"
           data-radix-collection-item=""
           data-state="inactive"
@@ -2524,7 +2527,7 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
                 Description Two
               </p>
               <div
-                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iobFYN-css t-hxgSuC"
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
                 role="status"
               >
                 <p

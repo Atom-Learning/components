@@ -17,7 +17,7 @@ export const SegmentedControlBadge = ({
   return (
     <Badge
       {...props}
-      css={{ border: 'none', ...css }}
+      css={{ border: 'none', ...css, fontWeight: 'normal' }}
       size={badgeSizeMap[size as string]}
     />
   )

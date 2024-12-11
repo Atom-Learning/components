@@ -44,7 +44,7 @@ const StyledItem = styled(Tabs.Trigger, {
   '&[data-state=active]': {
     bg: 'white',
     boxShadow: 'none',
-    border: '1.25px solid transparent',
+    border: '2px solid transparent',
     '& :is(h1,h2,h3,h4,h5,h6)': {
       fontWeight: 600,
       color: '$textBold'
