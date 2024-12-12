@@ -14,18 +14,20 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -42,18 +44,20 @@ tabs:
       ### sm
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="sm" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -65,18 +69,20 @@ tabs:
       ### md
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -88,18 +94,20 @@ tabs:
       ### lg
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="lg" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -115,18 +123,20 @@ tabs:
       ### primary
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one" theme="primary">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -138,18 +148,20 @@ tabs:
       ### marsh
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one" theme="marsh">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -165,18 +177,20 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Icon is={Alarm}/>
-          <SegmentedControl.Badge theme="danger">
-            Due today
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two">
-          <SegmentedControl.Icon is={Anchor}/>
-          <SegmentedControl.Badge theme="warning">
-            Due in a month
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Icon is={Alarm}/>
+            <SegmentedControl.Badge theme="danger">
+              Due today
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two">
+            <SegmentedControl.Icon is={Anchor}/>
+            <SegmentedControl.Badge theme="warning">
+              Due in a month
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -192,18 +206,20 @@ tabs:
 
 
       <CodeBlock live={true} preview={true} code={`<SegmentedControl.Root size="md" defaultValue="one">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Description one
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two" disabled>
-          <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
-          <SegmentedControl.Description>
-            Descritpion two
-          </SegmentedControl.Description>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading one</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Description one
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two" disabled>
+            <SegmentedControl.Heading>Heading two</SegmentedControl.Heading>
+            <SegmentedControl.Description>
+              Descritpion two
+            </SegmentedControl.Description>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content one
         </SegmentedControl.Content>
@@ -216,7 +232,7 @@ tabs:
       ## API Reference
 
 
-      <ComponentProps component="SegmentedControlRoot" /> <ComponentProps component="SegmentedControlItem" /> <ComponentProps component="SegmentedControlHeading" /> <ComponentProps component="SegmentedControlDescription" /> <ComponentProps component="SegmentedControlIcon" /> <ComponentProps component="SegmentedControlContent" /> <ComponentProps component="SegmentedControlBadge" />
+      <ComponentProps component="SegmentedControlRoot" /> <ComponentProps component="SegmentedControlItemList" /> <ComponentProps component="SegmentedControlItem" /> <ComponentProps component="SegmentedControlHeading" /> <ComponentProps component="SegmentedControlDescription" /> <ComponentProps component="SegmentedControlIcon" /> <ComponentProps component="SegmentedControlContent" /> <ComponentProps component="SegmentedControlBadge" />
   - title: Usage
     content: >-
       ## Overview
