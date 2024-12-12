@@ -9,7 +9,7 @@ interface SegmentedControlContextValue {
   theme: SegmentedControlTheme
 }
 
-export interface SegmentedControlProviderProps
+interface SegmentedControlProviderProps
   extends SegmentedControlContextValue {
   children: React.ReactNode
 }
