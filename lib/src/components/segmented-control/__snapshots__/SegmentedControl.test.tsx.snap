@@ -504,6 +504,11 @@ exports[`SegmentedControl component renders 1`] = `
     width: 100%;
   }
 
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
@@ -637,6 +642,10 @@ exports[`SegmentedControl component renders 1`] = `
     flex: unset;
   }
 
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
   .c-bLFKCq-hRWago-size-sm {
     width: unset;
   }
@@ -647,12 +656,6 @@ exports[`SegmentedControl component renders 1`] = `
     border: none;
     font-weight: normal;
   }
-
-  .c-idmIgS-ibRnMsb-css {
-    background: var(--colors-marsh200);
-    padding: var(--space-1);
-    border-radius: var(--radii-3);
-  }
 }
 
 <div>
@@ -662,7 +665,7 @@ exports[`SegmentedControl component renders 1`] = `
     dir="ltr"
   >
     <div
-      class="PJLV c-idmIgS c-idmIgS-ibRnMsb-css t-fjcNDs t-gMkhEo t-dmfxVJ"
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-fErmnR-theme-marsh t-fjcNDs t-gMkhEo t-dmfxVJ"
     >
       <div
         aria-orientation="horizontal"
@@ -1328,6 +1331,11 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     width: 100%;
   }
 
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
@@ -1461,6 +1469,10 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     flex: unset;
   }
 
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
   .c-bLFKCq-hRWago-size-sm {
     width: unset;
   }
@@ -1496,6 +1508,10 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     flex: 1;
   }
 
+  .c-kxMksb-iGiUJQ-theme-primary {
+    background: var(--colors-primary200);
+  }
+
   .c-PJLV-kFGxbM-size-lg {
     padding: var(--space-24) var(--space-5);
     gap: var(--space-4);
@@ -1526,18 +1542,6 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     border: none;
     font-weight: normal;
   }
-
-  .c-idmIgS-ibRnMsb-css {
-    background: var(--colors-marsh200);
-    padding: var(--space-1);
-    border-radius: var(--radii-3);
-  }
-
-  .c-idmIgS-igRWYSq-css {
-    background: var(--colors-primary200);
-    padding: var(--space-1);
-    border-radius: var(--radii-3);
-  }
 }
 
 <div>
@@ -1547,7 +1551,7 @@ exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
     dir="ltr"
   >
     <div
-      class="PJLV c-idmIgS c-idmIgS-ibRnMsb-css t-fjcNDs t-gMkhEo t-dmfxVJ"
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-fErmnR-theme-marsh t-fjcNDs t-gMkhEo t-dmfxVJ"
     >
       <div
         aria-orientation="horizontal"
@@ -2213,6 +2217,11 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     width: 100%;
   }
 
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
   .c-cWMaKf {
     flex-grow: 1;
     font-family: var(--fonts-body);
@@ -2346,6 +2355,10 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     flex: unset;
   }
 
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
   .c-bLFKCq-hRWago-size-sm {
     width: unset;
   }
@@ -2380,24 +2393,16 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
   .c-irsama-bPNjhd-size-md {
     flex: 1;
   }
+
+  .c-kxMksb-iGiUJQ-theme-primary {
+    background: var(--colors-primary200);
+  }
 }
 
 @media  {
   .c-dhzjXW-iJNhhT-css {
     border: none;
     font-weight: normal;
-  }
-
-  .c-idmIgS-ibRnMsb-css {
-    background: var(--colors-marsh200);
-    padding: var(--space-1);
-    border-radius: var(--radii-3);
-  }
-
-  .c-idmIgS-igRWYSq-css {
-    background: var(--colors-primary200);
-    padding: var(--space-1);
-    border-radius: var(--radii-3);
   }
 }
 
@@ -2408,7 +2413,7 @@ exports[`SegmentedControl component renders md variant with primary theme 1`] = 
     dir="ltr"
   >
     <div
-      class="PJLV c-idmIgS c-idmIgS-igRWYSq-css t-fjcNDs t-gMkhEo t-dmfxVJ"
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-iGiUJQ-theme-primary t-fjcNDs t-gMkhEo t-dmfxVJ"
     >
       <div
         aria-orientation="horizontal"

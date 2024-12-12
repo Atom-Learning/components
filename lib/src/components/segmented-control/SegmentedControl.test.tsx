@@ -18,22 +18,24 @@ const SegmentedControlComponent = ({
       theme="marsh"
       {...props}
     >
-      <SegmentedControl.Item value="one">
-        <SegmentedControl.Icon is={Alarm} />
-        <SegmentedControl.Heading>Heading One</SegmentedControl.Heading>
-        <SegmentedControl.Description>
-          Description One
-        </SegmentedControl.Description>
-        <SegmentedControl.Badge>Status One</SegmentedControl.Badge>
-      </SegmentedControl.Item>
-      <SegmentedControl.Item value="two">
-        <SegmentedControl.Icon is={Anchor} />
-        <SegmentedControl.Heading>Heading Two</SegmentedControl.Heading>
-        <SegmentedControl.Description>
-          Description Two
-        </SegmentedControl.Description>
-        <SegmentedControl.Badge>Status Two</SegmentedControl.Badge>
-      </SegmentedControl.Item>
+      <SegmentedControl.ItemList>
+        <SegmentedControl.Item value="one">
+          <SegmentedControl.Icon is={Alarm} />
+          <SegmentedControl.Heading>Heading One</SegmentedControl.Heading>
+          <SegmentedControl.Description>
+            Description One
+          </SegmentedControl.Description>
+          <SegmentedControl.Badge>Status One</SegmentedControl.Badge>
+        </SegmentedControl.Item>
+        <SegmentedControl.Item value="two">
+          <SegmentedControl.Icon is={Anchor} />
+          <SegmentedControl.Heading>Heading Two</SegmentedControl.Heading>
+          <SegmentedControl.Description>
+            Description Two
+          </SegmentedControl.Description>
+          <SegmentedControl.Badge>Status Two</SegmentedControl.Badge>
+        </SegmentedControl.Item>
+      </SegmentedControl.ItemList>
       <SegmentedControl.Content value="one">
         Content One
       </SegmentedControl.Content>
@@ -116,12 +118,14 @@ describe('SegmentedControl component', () => {
   it('does not allow clicking on disabled tab', async () => {
     render(
       <SegmentedControl.Root size="sm" defaultValue="one" theme="marsh">
-        <SegmentedControl.Item value="one">
-          <SegmentedControl.Heading>Heading One</SegmentedControl.Heading>
-        </SegmentedControl.Item>
-        <SegmentedControl.Item value="two" disabled>
-          <SegmentedControl.Heading>Heading Two</SegmentedControl.Heading>
-        </SegmentedControl.Item>
+        <SegmentedControl.ItemList>
+          <SegmentedControl.Item value="one">
+            <SegmentedControl.Heading>Heading One</SegmentedControl.Heading>
+          </SegmentedControl.Item>
+          <SegmentedControl.Item value="two" disabled>
+            <SegmentedControl.Heading>Heading Two</SegmentedControl.Heading>
+          </SegmentedControl.Item>
+        </SegmentedControl.ItemList>
         <SegmentedControl.Content value="one">
           Content One
         </SegmentedControl.Content>

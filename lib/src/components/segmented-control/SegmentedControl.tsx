@@ -4,6 +4,7 @@ import { SegmentedControlDescription } from './SegmentedControlDescription'
 import { SegmentedControlHeading } from './SegmentedControlHeading'
 import { SegmentedControlIcon } from './SegmentedControlIcon'
 import { SegmentedControlItem } from './SegmentedControlItem'
+import { SegmentedControlItemList } from './SegmentedControlItemList'
 import { SegmentedControlRoot } from './SegmentedControlRoot'
 
 export const SegmentedControl = {
@@ -13,5 +14,6 @@ export const SegmentedControl = {
   Description: SegmentedControlDescription,
   Icon: SegmentedControlIcon,
   Content: SegmentedControlContent,
-  Badge: SegmentedControlBadge
+  Badge: SegmentedControlBadge,
+  ItemList: SegmentedControlItemList
 }
