@@ -1,9 +1,10 @@
-import * as React from 'react'
-import { SegmentedControl } from './SegmentedControl'
 import { Alarm, Anchor } from '@atom-learning/icons'
 import { render, screen, waitFor } from '@testing-library/react'
-import { axe } from 'jest-axe'
 import userEvent from '@testing-library/user-event'
+import { axe } from 'jest-axe'
+import * as React from 'react'
+
+import { SegmentedControl } from './SegmentedControl'
 
 const SegmentedControlComponent = ({
   children,
