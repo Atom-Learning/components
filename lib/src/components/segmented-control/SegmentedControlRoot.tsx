@@ -30,12 +30,10 @@ export const SegmentedControlRoot = ({
   children,
   theme = 'primary',
   ...props
-}: SegmentedControlRootProps): JSX.Element => {
-  return (
-    <SegmentedControlProvider size={size} theme={theme}>
-      <StyledSegmentedControlRoot {...props} size={size}>
-        {children}
-      </StyledSegmentedControlRoot>
-    </SegmentedControlProvider>
-  )
-}
+}: SegmentedControlRootProps): JSX.Element => (
+  <SegmentedControlProvider size={size} theme={theme}>
+    <StyledSegmentedControlRoot {...props} size={size}>
+      {children}
+    </StyledSegmentedControlRoot>
+  </SegmentedControlProvider>
+)

@@ -9,13 +9,15 @@ interface SegmentedControlContextValue {
   theme: SegmentedControlTheme
 }
 
-interface SegmentedControlProviderProps
-  extends SegmentedControlContextValue {
+interface SegmentedControlProviderProps extends SegmentedControlContextValue {
   children: React.ReactNode
 }
 
 const SegmentedControlContext =
-  React.createContext<SegmentedControlContextValue | null>(null)
+  React.createContext<SegmentedControlContextValue>({
+    size: 'md',
+    theme: 'primary'
+  })
 
 export const SegmentedControlProvider = ({
   size,
@@ -34,14 +36,5 @@ export const SegmentedControlProvider = ({
   )
 }
 
-export const useSegmentedControl = (): SegmentedControlContextValue => {
-  const context = React.useContext(SegmentedControlContext)
-
-  if (!context) {
-    throw new Error(
-      'useSegmentedControlContext must be used within a SegmentedControlProvider'
-    )
-  }
-
-  return context
-}
+export const useSegmentedControl = (): SegmentedControlContextValue =>
+  React.useContext(SegmentedControlContext)
