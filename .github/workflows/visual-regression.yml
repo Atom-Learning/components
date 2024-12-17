@@ -1,0 +1,54 @@
+name: Visual Regression
+
+on:
+  workflow_call:
+    inputs:
+      dsDocumentationUrl:
+        description: 'URL of environment to run VR tests against. Should include protocol (e.g. https://)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  actions: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: '20.11'
+
+      - name: Install Dependencies
+        run: yarn install
+
+      - name: Build Library
+        if: ${{ inputs.dsDocumentationUrl != '' }}
+        run: yarn build:lib
+
+      - name: Build Documentation
+        if: ${{ inputs.dsDocumentationUrl != '' }}
+        run: yarn build:docs
+
+      - name: Start Web Server as a Daemon
+        if: ${{ inputs.dsDocumentationUrl != '' }}
+        run: |
+          yarn start:docs &
+          disown -h %1
+
+      - name: Install Playwright browsers + dependencies
+        run: yarn playwright install --with-deps
+
+      - name: Run Visual Regression
+        run: yarn visual-regression
+        env:
+          DS_DOCUMENTATION_URL: '${{ inputs.dsDocumentationUrl }}'
+          ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
