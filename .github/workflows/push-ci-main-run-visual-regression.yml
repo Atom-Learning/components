@@ -1,0 +1,32 @@
+###
+# Workflow to run tests on every commit to master and run Visual Regression tests on it
+###
+name: CI - main branch - Run Visual Regression
+
+on:
+  push:
+    branches: -feat/visual-regression
+
+permissions:
+  actions: write
+  contents: read
+  pull-requests: write
+
+# Run only one build at a time
+concurrency:
+  group: ${{ github.workflow }}
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+  playwright-vr-tests:
+    name: Visual Regression Tests
+    needs: [setup]
+    uses: ./.github/workflows/visual-regression.yml
+    secrets: inherit

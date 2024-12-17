@@ -1,9 +1,6 @@
 name: Visual Regression
 
 on:
-  push:
-    branches:
-      - feat/visual-regression
   workflow_call:
     inputs:
       dsDocumentationUrl:
