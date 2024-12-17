@@ -4,10 +4,7 @@ on:
   push:
     branches: -main
   pull_request:
-    types:
-      - labeled
-      - reopened
-      - synchronize
+    branches: [main]
 
 permissions:
   actions: write
