@@ -1,0 +1,2576 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SegmentedControl component renders 1`] = `
+@media  {
+  :root,
+  .t-dfjnAG {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --default-ratios: [object Object];
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 73%);
+    --colors-grey600: hsl(0, 0%, 62%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(211, 100%, 88%);
+    --colors-blue500: hsl(212, 100%, 80%);
+    --colors-blue600: hsl(213, 100%, 71%);
+    --colors-blue700: hsl(214, 100%, 58%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 79%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(227, 57%, 11%);
+    --colors-pink100: hsl(311, 100%, 98%);
+    --colors-pink200: hsl(310, 100%, 95%);
+    --colors-pink300: hsl(311, 100%, 90%);
+    --colors-pink400: hsl(313, 100%, 80%);
+    --colors-pink500: hsl(313, 83%, 72%);
+    --colors-pink600: hsl(315, 82%, 66%);
+    --colors-pink700: hsl(316, 63%, 56%);
+    --colors-pink800: hsl(317, 63%, 44%);
+    --colors-pink900: hsl(318, 63%, 37%);
+    --colors-pink1000: hsl(319, 55%, 33%);
+    --colors-pink1100: hsl(318, 98%, 16%);
+    --colors-pink1200: hsl(318, 97%, 12%);
+    --colors-purple100: hsl(246, 83%, 98%);
+    --colors-purple200: hsl(244, 74%, 95%);
+    --colors-purple300: hsl(246, 76%, 92%);
+    --colors-purple400: hsl(246, 74%, 85%);
+    --colors-purple500: hsl(249, 72%, 76%);
+    --colors-purple600: hsl(252, 70%, 66%);
+    --colors-purple700: hsl(256, 65%, 62%);
+    --colors-purple800: hsl(252, 51%, 51%);
+    --colors-purple900: hsl(257, 54%, 42%);
+    --colors-purple1000: hsl(257, 53%, 35%);
+    --colors-purple1100: hsl(255, 57%, 23%);
+    --colors-purple1200: hsl(255, 76%, 13%);
+    --colors-cyan100: hsl(198, 100%, 97%);
+    --colors-cyan200: hsl(199, 100%, 94%);
+    --colors-cyan300: hsl(201, 100%, 89%);
+    --colors-cyan400: hsl(200, 100%, 84%);
+    --colors-cyan500: hsl(201, 96%, 73%);
+    --colors-cyan600: hsl(202, 85%, 60%);
+    --colors-cyan700: hsl(204, 81%, 46%);
+    --colors-cyan800: hsl(205, 100%, 38%);
+    --colors-cyan900: hsl(206, 100%, 30%);
+    --colors-cyan1000: hsl(205, 100%, 21%);
+    --colors-cyan1100: hsl(206, 97%, 15%);
+    --colors-cyan1200: hsl(207, 73%, 9%);
+    --colors-green100: hsl(148, 93%, 94%);
+    --colors-green200: hsl(149, 95%, 91%);
+    --colors-green300: hsl(147, 87%, 85%);
+    --colors-green400: hsl(148, 84%, 70%);
+    --colors-green500: hsl(148, 75%, 54%);
+    --colors-green600: hsl(148, 77%, 45%);
+    --colors-green700: hsl(148, 84%, 36%);
+    --colors-green800: hsl(158, 79%, 29%);
+    --colors-green900: hsl(166, 71%, 24%);
+    --colors-green1000: hsl(166, 67%, 20%);
+    --colors-green1100: hsl(169, 88%, 10%);
+    --colors-green1200: hsl(155, 92%, 5%);
+    --colors-magenta100: hsl(330, 100%, 99%);
+    --colors-magenta200: hsl(329, 100%, 96%);
+    --colors-magenta300: hsl(332, 100%, 92%);
+    --colors-magenta400: hsl(333, 100%, 90%);
+    --colors-magenta500: hsl(333, 90%, 80%);
+    --colors-magenta600: hsl(333, 87%, 72%);
+    --colors-magenta700: hsl(333, 75%, 59%);
+    --colors-magenta800: hsl(333, 69%, 49%);
+    --colors-magenta900: hsl(333, 74%, 36%);
+    --colors-magenta1000: hsl(333, 86%, 25%);
+    --colors-magenta1100: hsl(333, 95%, 16%);
+    --colors-magenta1200: hsl(334, 62%, 10%);
+    --colors-red100: hsl(0, 100%, 99%);
+    --colors-red200: hsl(0, 100%, 96%);
+    --colors-red300: hsl(0, 100%, 96%);
+    --colors-red400: hsl(357, 100%, 93%);
+    --colors-red500: hsl(356, 96%, 83%);
+    --colors-red600: hsl(357, 90%, 73%);
+    --colors-red700: hsl(357, 80%, 59%);
+    --colors-red800: hsl(357, 76%, 49%);
+    --colors-red900: hsl(357, 73%, 37%);
+    --colors-red1000: hsl(357, 79%, 26%);
+    --colors-red1100: hsl(357, 91%, 17%);
+    --colors-red1200: hsl(357, 73%, 10%);
+    --colors-teal100: hsl(180, 83%, 95%);
+    --colors-teal200: hsl(180, 75%, 88%);
+    --colors-teal300: hsl(180, 71%, 78%);
+    --colors-teal400: hsl(179, 70%, 71%);
+    --colors-teal500: hsl(179, 65%, 52%);
+    --colors-teal600: hsl(179, 76%, 41%);
+    --colors-teal700: hsl(179, 91%, 31%);
+    --colors-teal800: hsl(178, 100%, 25%);
+    --colors-teal900: hsl(180, 100%, 18%);
+    --colors-teal1000: hsl(183, 100%, 13%);
+    --colors-teal1100: hsl(187, 92%, 10%);
+    --colors-teal1200: hsl(186, 56%, 7%);
+    --colors-orange100: hsl(45, 100%, 96%);
+    --colors-orange200: hsl(46, 100%, 89%);
+    --colors-orange300: hsl(46, 100%, 77%);
+    --colors-orange400: hsl(44, 100%, 65%);
+    --colors-orange500: hsl(41, 100%, 55%);
+    --colors-orange600: hsl(29, 100%, 55%);
+    --colors-orange700: hsl(35, 95%, 50%);
+    --colors-orange800: hsl(22, 94%, 54%);
+    --colors-orange900: hsl(22, 100%, 46%);
+    --colors-orange1000: hsl(20, 100%, 39%);
+    --colors-orange1100: hsl(18, 100%, 27%);
+    --colors-orange1200: hsl(18, 100%, 21%);
+    --colors-yellow100: hsl(53, 94%, 93%);
+    --colors-yellow200: hsl(54, 92%, 85%);
+    --colors-yellow300: hsl(54, 92%, 75%);
+    --colors-yellow400: hsl(52, 97%, 63%);
+    --colors-yellow500: hsl(51, 100%, 46%);
+    --colors-yellow600: hsl(49, 100%, 39%);
+    --colors-yellow700: hsl(48, 100%, 35%);
+    --colors-yellow800: hsl(46, 100%, 30%);
+    --colors-yellow900: hsl(44, 100%, 22%);
+    --colors-yellow1000: hsl(44, 100%, 18%);
+    --colors-yellow1100: hsl(41, 100%, 11%);
+    --colors-yellow1200: hsl(39, 100%, 8%);
+    --colors-lime100: hsl(73, 94%, 93%);
+    --colors-lime200: hsl(73, 94%, 87%);
+    --colors-lime300: hsl(73, 90%, 77%);
+    --colors-lime400: hsl(74, 82%, 69%);
+    --colors-lime500: hsl(74, 68%, 58%);
+    --colors-lime600: hsl(74, 77%, 41%);
+    --colors-lime700: hsl(75, 100%, 31%);
+    --colors-lime800: hsl(75, 100%, 27%);
+    --colors-lime900: hsl(75, 100%, 19%);
+    --colors-lime1000: hsl(75, 100%, 15%);
+    --colors-lime1100: hsl(75, 100%, 9%);
+    --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-lapis100: hsl(214, 100%, 97%);
+    --colors-lapis200: hsl(215, 100%, 95%);
+    --colors-lapis300: hsl(202, 100%, 87%);
+    --colors-lapis400: hsl(212, 100%, 83%);
+    --colors-lapis500: hsl(220, 95%, 76%);
+    --colors-lapis600: hsl(230, 84%, 70%);
+    --colors-lapis700: hsl(240, 79%, 66%);
+    --colors-lapis800: hsl(240, 59%, 52%);
+    --colors-lapis900: hsl(240, 58%, 38%);
+    --colors-lapis1000: hsl(240, 63%, 29%);
+    --colors-lapis1100: hsl(240, 87%, 18%);
+    --colors-lapis1200: hsl(240, 97%, 12%);
+    --colors-maroon100: hsl(15, 100%, 98%);
+    --colors-maroon200: hsl(16, 100%, 93%);
+    --colors-maroon300: hsl(16, 100%, 87%);
+    --colors-maroon400: hsl(16, 100%, 80%);
+    --colors-maroon500: hsl(7, 89%, 70%);
+    --colors-maroon600: hsl(7, 78%, 60%);
+    --colors-maroon700: hsl(7, 67%, 44%);
+    --colors-maroon800: hsl(7, 95%, 32%);
+    --colors-maroon900: hsl(349, 89%, 28%);
+    --colors-maroon1000: hsl(346, 77%, 26%);
+    --colors-maroon1100: hsl(335, 73%, 20%);
+    --colors-maroon1200: hsl(335, 81%, 12%);
+    --colors-marsh100: hsl(147, 50%, 96%);
+    --colors-marsh200: hsl(147, 27%, 88%);
+    --colors-marsh300: hsl(147, 26%, 82%);
+    --colors-marsh400: hsl(147, 25%, 73%);
+    --colors-marsh500: hsl(147, 22%, 60%);
+    --colors-marsh600: hsl(147, 15%, 48%);
+    --colors-marsh700: hsl(147, 15%, 37%);
+    --colors-marsh800: hsl(147, 23%, 29%);
+    --colors-marsh900: hsl(147, 25%, 21%);
+    --colors-marsh1000: hsl(147, 17%, 18%);
+    --colors-marsh1100: hsl(147, 24%, 13%);
+    --colors-marsh1200: hsl(147, 14%, 7%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 79%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(333, 75%, 59%);
+    --colors-subjectMaths: hsl(214, 100%, 58%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(148, 84%, 36%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(35, 95%, 50%);
+    --colors-subjectExamSkills: hsl(257, 53%, 35%);
+    --colors-glBlueLight: hsl(222, 68%, 78%);
+    --colors-glBluePrimary: hsl(222, 56%, 55%);
+    --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 79%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'National 2 Condensed', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
+  }
+
+  .t-fjcNDs {
+    --colors-interactiveForeground: var(--colors-foreground7plus);
+    --colors-interactive1: var(--colors-accent9);
+    --colors-interactive2: var(--colors-accent10);
+    --colors-interactive3: var(--colors-accent11);
+  }
+
+  .t-gMkhEo {
+    --colors-accent1: #FFFFFF;
+    --colors-accent2: var(--colors-primary100);
+    --colors-accent3: var(--colors-primary200);
+    --colors-accent4: var(--colors-primary300);
+    --colors-accent5: var(--colors-primary400);
+    --colors-accent6: var(--colors-primary500);
+    --colors-accent7: var(--colors-primary600);
+    --colors-accent8: var(--colors-primary700);
+    --colors-accent9: var(--colors-primary800);
+    --colors-accent10: var(--colors-primary900);
+    --colors-accent11: var(--colors-primary1000);
+  }
+
+  .t-dmfxVJ {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-grey100);
+    --colors-base3: var(--colors-grey200);
+    --colors-base4: var(--colors-grey300);
+    --colors-base5: var(--colors-grey400);
+    --colors-base6: var(--colors-grey500);
+    --colors-base7: var(--colors-grey600);
+    --colors-base8: var(--colors-grey700);
+    --colors-base9: var(--colors-grey800);
+    --colors-base10: var(--colors-grey900);
+    --colors-base11: var(--colors-grey1000);
+  }
+
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-info);
+  }
+}
+
+@media  {
+  .c-ctivzP {
+    margin: 0;
+  }
+
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
+    display: none;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-iUMJTc {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-cyRcZm {
+    font-family: var(--fonts-body);
+  }
+
+  .c-beRMwA {
+    font-family: var(--fonts-body);
+    color: var(--colors-textSubtle);
+    font-weight: 400;
+  }
+
+  .c-lkWDnA {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    min-width: 0;
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-goUgMm {
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-iPskiL {
+    position: absolute;
+    inset: 0;
+    height: calc(100% + 2px);
+    opacity: 0;
+    background: var(--colors-interactive1);
+  }
+
+  .c-efqMNv {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: var(--space-4);
+    -webkit-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+  }
+
+  .c-efqMNv[data-state="active"] {
+    color: var(--colors-interactive1);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    border-color: currentColor;
+  }
+
+  .c-efqMNv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-efqMNv:not([disabled]):hover,
+  .c-efqMNv:not([disabled]):focus-visible {
+    color: var(--colors-interactive2);
+  }
+
+  .c-efqMNv:not([disabled]):hover .c-iPskiL,
+  .c-efqMNv:not([disabled]):focus-visible .c-iPskiL {
+    opacity: 0.07;
+  }
+
+  .c-efqMNv:not([disabled]):active {
+    color: var(--colors-interactive3);
+  }
+
+  .c-efqMNv:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
+  }
+
+  .c-irsama {
+    background: transparent;
+    border-radius: var(--radii-2);
+    padding: 0;
+  }
+
+  .c-irsama > div {
+    display: none;
+  }
+
+  .c-irsama[data-state=active] {
+    background: white;
+    box-shadow: none;
+    border: 2px solid transparent;
+  }
+
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 600;
+    color: var(--colors-textBold);
+  }
+
+  .c-irsama[data-state=active]:hover {
+    background: white;
+  }
+
+  .c-irsama[data-state=active]:focus-visible {
+    box-shadow: none;
+  }
+
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 400;
+    color: var(--colors-grey900);
+  }
+
+  .c-irsama[disabled] {
+    opacity: 0.3;
+  }
+
+  .c-gZZKZD {
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-idmIgS {
+    position: relative;
+    border-bottom: 1px solid var(--colors-base4);
+    width: 100%;
+  }
+
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
+  .c-cWMaKf {
+    flex-grow: 1;
+    font-family: var(--fonts-body);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-bLFKCq > div {
+    border: none;
+  }
+}
+
+@media  {
+  .c-ctivzP-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-PJLV-fOErqC-size-sm {
+    padding: var(--space-4) var(--space-24);
+    gap: var(--space-3);
+  }
+
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md {
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::before {
+    content: '';
+    margin-bottom: -0.2078em;
+    display: table;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::after {
+    content: '';
+    margin-top: -0.2078em;
+    display: table;
+  }
+
+  .c-cyRcZm-fAKXXr-size-sm {
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-ctivzP-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-beRMwA-cEPjnm-size-sm {
+    font-size: var(--fontSizes-xs);
+  }
+
+  .c-lkWDnA-gichzl-emphasis-subtle {
+    color: var(--colors-textSubtle);
+    background: var(--colors-backgroundSubtle);
+  }
+
+  .c-lkWDnA-efCiES-size-xs {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+
+  .c-ctivzP-fmPQHp-noCapsize-true::before,
+  .c-ctivzP-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
+  .c-goUgMm-ktaGtY-overflow-wrap {
+    white-space: wrap;
+  }
+
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
+    background: var(--colors-marsh300);
+  }
+
+  .c-irsama-hqdqW-theme-marsh:focus {
+    border-color: var(--colors-marsh800);
+  }
+
+  .c-irsama-cvqpll-size-sm {
+    flex: unset;
+  }
+
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
+  .c-bLFKCq-hRWago-size-sm {
+    width: unset;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iJNhhT-css {
+    border: none;
+    font-weight: normal;
+  }
+}
+
+<div>
+  <div
+    class="c-fGHEql c-bLFKCq c-bLFKCq-hRWago-size-sm"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-fErmnR-theme-marsh t-fjcNDs t-gMkhEo t-dmfxVJ"
+    >
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD"
+        data-orientation="horizontal"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
+      >
+        <button
+          aria-controls="radix-:r0:-content-one"
+          aria-selected="true"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-cvqpll-size-sm"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-:r0:-trigger-one"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-fOErqC-size-sm"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="13"
+                  r="9"
+                />
+                <polyline
+                  points="12 8 12 13 15 16"
+                />
+                <path
+                  d="m19 2 3 3M2 5l3-3"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-fAKXXr-size-sm"
+              >
+                Heading One
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-cEPjnm-size-sm"
+              >
+                Description One
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status One
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+        <button
+          aria-controls="radix-:r0:-content-two"
+          aria-selected="false"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-cvqpll-size-sm"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-:r0:-trigger-two"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-fOErqC-size-sm"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-cyeZeh-size-sm"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20V7m-3 3h6"
+                />
+                <circle
+                  cx="12"
+                  cy="5"
+                  r="2"
+                />
+                <path
+                  d="M20 14c-1.333 4-4 6-8 6s-6.667-2-8-6"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-fAKXXr-size-sm"
+              >
+                Heading Two
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-cEPjnm-size-sm"
+              >
+                Description Two
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status Two
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="radix-:r0:-trigger-one"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-:r0:-content-one"
+      role="tabpanel"
+      style="animation-duration: 0s;"
+      tabindex="0"
+    >
+      Content One
+    </div>
+    <div
+      aria-labelledby="radix-:r0:-trigger-two"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r0:-content-two"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</div>
+`;
+
+exports[`SegmentedControl component renders lg variant with marsh theme 1`] = `
+@media  {
+  :root,
+  .t-dfjnAG {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --default-ratios: [object Object];
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 73%);
+    --colors-grey600: hsl(0, 0%, 62%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(211, 100%, 88%);
+    --colors-blue500: hsl(212, 100%, 80%);
+    --colors-blue600: hsl(213, 100%, 71%);
+    --colors-blue700: hsl(214, 100%, 58%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 79%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(227, 57%, 11%);
+    --colors-pink100: hsl(311, 100%, 98%);
+    --colors-pink200: hsl(310, 100%, 95%);
+    --colors-pink300: hsl(311, 100%, 90%);
+    --colors-pink400: hsl(313, 100%, 80%);
+    --colors-pink500: hsl(313, 83%, 72%);
+    --colors-pink600: hsl(315, 82%, 66%);
+    --colors-pink700: hsl(316, 63%, 56%);
+    --colors-pink800: hsl(317, 63%, 44%);
+    --colors-pink900: hsl(318, 63%, 37%);
+    --colors-pink1000: hsl(319, 55%, 33%);
+    --colors-pink1100: hsl(318, 98%, 16%);
+    --colors-pink1200: hsl(318, 97%, 12%);
+    --colors-purple100: hsl(246, 83%, 98%);
+    --colors-purple200: hsl(244, 74%, 95%);
+    --colors-purple300: hsl(246, 76%, 92%);
+    --colors-purple400: hsl(246, 74%, 85%);
+    --colors-purple500: hsl(249, 72%, 76%);
+    --colors-purple600: hsl(252, 70%, 66%);
+    --colors-purple700: hsl(256, 65%, 62%);
+    --colors-purple800: hsl(252, 51%, 51%);
+    --colors-purple900: hsl(257, 54%, 42%);
+    --colors-purple1000: hsl(257, 53%, 35%);
+    --colors-purple1100: hsl(255, 57%, 23%);
+    --colors-purple1200: hsl(255, 76%, 13%);
+    --colors-cyan100: hsl(198, 100%, 97%);
+    --colors-cyan200: hsl(199, 100%, 94%);
+    --colors-cyan300: hsl(201, 100%, 89%);
+    --colors-cyan400: hsl(200, 100%, 84%);
+    --colors-cyan500: hsl(201, 96%, 73%);
+    --colors-cyan600: hsl(202, 85%, 60%);
+    --colors-cyan700: hsl(204, 81%, 46%);
+    --colors-cyan800: hsl(205, 100%, 38%);
+    --colors-cyan900: hsl(206, 100%, 30%);
+    --colors-cyan1000: hsl(205, 100%, 21%);
+    --colors-cyan1100: hsl(206, 97%, 15%);
+    --colors-cyan1200: hsl(207, 73%, 9%);
+    --colors-green100: hsl(148, 93%, 94%);
+    --colors-green200: hsl(149, 95%, 91%);
+    --colors-green300: hsl(147, 87%, 85%);
+    --colors-green400: hsl(148, 84%, 70%);
+    --colors-green500: hsl(148, 75%, 54%);
+    --colors-green600: hsl(148, 77%, 45%);
+    --colors-green700: hsl(148, 84%, 36%);
+    --colors-green800: hsl(158, 79%, 29%);
+    --colors-green900: hsl(166, 71%, 24%);
+    --colors-green1000: hsl(166, 67%, 20%);
+    --colors-green1100: hsl(169, 88%, 10%);
+    --colors-green1200: hsl(155, 92%, 5%);
+    --colors-magenta100: hsl(330, 100%, 99%);
+    --colors-magenta200: hsl(329, 100%, 96%);
+    --colors-magenta300: hsl(332, 100%, 92%);
+    --colors-magenta400: hsl(333, 100%, 90%);
+    --colors-magenta500: hsl(333, 90%, 80%);
+    --colors-magenta600: hsl(333, 87%, 72%);
+    --colors-magenta700: hsl(333, 75%, 59%);
+    --colors-magenta800: hsl(333, 69%, 49%);
+    --colors-magenta900: hsl(333, 74%, 36%);
+    --colors-magenta1000: hsl(333, 86%, 25%);
+    --colors-magenta1100: hsl(333, 95%, 16%);
+    --colors-magenta1200: hsl(334, 62%, 10%);
+    --colors-red100: hsl(0, 100%, 99%);
+    --colors-red200: hsl(0, 100%, 96%);
+    --colors-red300: hsl(0, 100%, 96%);
+    --colors-red400: hsl(357, 100%, 93%);
+    --colors-red500: hsl(356, 96%, 83%);
+    --colors-red600: hsl(357, 90%, 73%);
+    --colors-red700: hsl(357, 80%, 59%);
+    --colors-red800: hsl(357, 76%, 49%);
+    --colors-red900: hsl(357, 73%, 37%);
+    --colors-red1000: hsl(357, 79%, 26%);
+    --colors-red1100: hsl(357, 91%, 17%);
+    --colors-red1200: hsl(357, 73%, 10%);
+    --colors-teal100: hsl(180, 83%, 95%);
+    --colors-teal200: hsl(180, 75%, 88%);
+    --colors-teal300: hsl(180, 71%, 78%);
+    --colors-teal400: hsl(179, 70%, 71%);
+    --colors-teal500: hsl(179, 65%, 52%);
+    --colors-teal600: hsl(179, 76%, 41%);
+    --colors-teal700: hsl(179, 91%, 31%);
+    --colors-teal800: hsl(178, 100%, 25%);
+    --colors-teal900: hsl(180, 100%, 18%);
+    --colors-teal1000: hsl(183, 100%, 13%);
+    --colors-teal1100: hsl(187, 92%, 10%);
+    --colors-teal1200: hsl(186, 56%, 7%);
+    --colors-orange100: hsl(45, 100%, 96%);
+    --colors-orange200: hsl(46, 100%, 89%);
+    --colors-orange300: hsl(46, 100%, 77%);
+    --colors-orange400: hsl(44, 100%, 65%);
+    --colors-orange500: hsl(41, 100%, 55%);
+    --colors-orange600: hsl(29, 100%, 55%);
+    --colors-orange700: hsl(35, 95%, 50%);
+    --colors-orange800: hsl(22, 94%, 54%);
+    --colors-orange900: hsl(22, 100%, 46%);
+    --colors-orange1000: hsl(20, 100%, 39%);
+    --colors-orange1100: hsl(18, 100%, 27%);
+    --colors-orange1200: hsl(18, 100%, 21%);
+    --colors-yellow100: hsl(53, 94%, 93%);
+    --colors-yellow200: hsl(54, 92%, 85%);
+    --colors-yellow300: hsl(54, 92%, 75%);
+    --colors-yellow400: hsl(52, 97%, 63%);
+    --colors-yellow500: hsl(51, 100%, 46%);
+    --colors-yellow600: hsl(49, 100%, 39%);
+    --colors-yellow700: hsl(48, 100%, 35%);
+    --colors-yellow800: hsl(46, 100%, 30%);
+    --colors-yellow900: hsl(44, 100%, 22%);
+    --colors-yellow1000: hsl(44, 100%, 18%);
+    --colors-yellow1100: hsl(41, 100%, 11%);
+    --colors-yellow1200: hsl(39, 100%, 8%);
+    --colors-lime100: hsl(73, 94%, 93%);
+    --colors-lime200: hsl(73, 94%, 87%);
+    --colors-lime300: hsl(73, 90%, 77%);
+    --colors-lime400: hsl(74, 82%, 69%);
+    --colors-lime500: hsl(74, 68%, 58%);
+    --colors-lime600: hsl(74, 77%, 41%);
+    --colors-lime700: hsl(75, 100%, 31%);
+    --colors-lime800: hsl(75, 100%, 27%);
+    --colors-lime900: hsl(75, 100%, 19%);
+    --colors-lime1000: hsl(75, 100%, 15%);
+    --colors-lime1100: hsl(75, 100%, 9%);
+    --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-lapis100: hsl(214, 100%, 97%);
+    --colors-lapis200: hsl(215, 100%, 95%);
+    --colors-lapis300: hsl(202, 100%, 87%);
+    --colors-lapis400: hsl(212, 100%, 83%);
+    --colors-lapis500: hsl(220, 95%, 76%);
+    --colors-lapis600: hsl(230, 84%, 70%);
+    --colors-lapis700: hsl(240, 79%, 66%);
+    --colors-lapis800: hsl(240, 59%, 52%);
+    --colors-lapis900: hsl(240, 58%, 38%);
+    --colors-lapis1000: hsl(240, 63%, 29%);
+    --colors-lapis1100: hsl(240, 87%, 18%);
+    --colors-lapis1200: hsl(240, 97%, 12%);
+    --colors-maroon100: hsl(15, 100%, 98%);
+    --colors-maroon200: hsl(16, 100%, 93%);
+    --colors-maroon300: hsl(16, 100%, 87%);
+    --colors-maroon400: hsl(16, 100%, 80%);
+    --colors-maroon500: hsl(7, 89%, 70%);
+    --colors-maroon600: hsl(7, 78%, 60%);
+    --colors-maroon700: hsl(7, 67%, 44%);
+    --colors-maroon800: hsl(7, 95%, 32%);
+    --colors-maroon900: hsl(349, 89%, 28%);
+    --colors-maroon1000: hsl(346, 77%, 26%);
+    --colors-maroon1100: hsl(335, 73%, 20%);
+    --colors-maroon1200: hsl(335, 81%, 12%);
+    --colors-marsh100: hsl(147, 50%, 96%);
+    --colors-marsh200: hsl(147, 27%, 88%);
+    --colors-marsh300: hsl(147, 26%, 82%);
+    --colors-marsh400: hsl(147, 25%, 73%);
+    --colors-marsh500: hsl(147, 22%, 60%);
+    --colors-marsh600: hsl(147, 15%, 48%);
+    --colors-marsh700: hsl(147, 15%, 37%);
+    --colors-marsh800: hsl(147, 23%, 29%);
+    --colors-marsh900: hsl(147, 25%, 21%);
+    --colors-marsh1000: hsl(147, 17%, 18%);
+    --colors-marsh1100: hsl(147, 24%, 13%);
+    --colors-marsh1200: hsl(147, 14%, 7%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 79%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(333, 75%, 59%);
+    --colors-subjectMaths: hsl(214, 100%, 58%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(148, 84%, 36%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(35, 95%, 50%);
+    --colors-subjectExamSkills: hsl(257, 53%, 35%);
+    --colors-glBlueLight: hsl(222, 68%, 78%);
+    --colors-glBluePrimary: hsl(222, 56%, 55%);
+    --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 79%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'National 2 Condensed', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
+  }
+
+  .t-fjcNDs {
+    --colors-interactiveForeground: var(--colors-foreground7plus);
+    --colors-interactive1: var(--colors-accent9);
+    --colors-interactive2: var(--colors-accent10);
+    --colors-interactive3: var(--colors-accent11);
+  }
+
+  .t-gMkhEo {
+    --colors-accent1: #FFFFFF;
+    --colors-accent2: var(--colors-primary100);
+    --colors-accent3: var(--colors-primary200);
+    --colors-accent4: var(--colors-primary300);
+    --colors-accent5: var(--colors-primary400);
+    --colors-accent6: var(--colors-primary500);
+    --colors-accent7: var(--colors-primary600);
+    --colors-accent8: var(--colors-primary700);
+    --colors-accent9: var(--colors-primary800);
+    --colors-accent10: var(--colors-primary900);
+    --colors-accent11: var(--colors-primary1000);
+  }
+
+  .t-dmfxVJ {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-grey100);
+    --colors-base3: var(--colors-grey200);
+    --colors-base4: var(--colors-grey300);
+    --colors-base5: var(--colors-grey400);
+    --colors-base6: var(--colors-grey500);
+    --colors-base7: var(--colors-grey600);
+    --colors-base8: var(--colors-grey700);
+    --colors-base9: var(--colors-grey800);
+    --colors-base10: var(--colors-grey900);
+    --colors-base11: var(--colors-grey1000);
+  }
+
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-info);
+  }
+}
+
+@media  {
+  .c-ctivzP {
+    margin: 0;
+  }
+
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
+    display: none;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-iUMJTc {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-cyRcZm {
+    font-family: var(--fonts-body);
+  }
+
+  .c-beRMwA {
+    font-family: var(--fonts-body);
+    color: var(--colors-textSubtle);
+    font-weight: 400;
+  }
+
+  .c-lkWDnA {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    min-width: 0;
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-goUgMm {
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-iPskiL {
+    position: absolute;
+    inset: 0;
+    height: calc(100% + 2px);
+    opacity: 0;
+    background: var(--colors-interactive1);
+  }
+
+  .c-efqMNv {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: var(--space-4);
+    -webkit-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+  }
+
+  .c-efqMNv[data-state="active"] {
+    color: var(--colors-interactive1);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    border-color: currentColor;
+  }
+
+  .c-efqMNv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-efqMNv:not([disabled]):hover,
+  .c-efqMNv:not([disabled]):focus-visible {
+    color: var(--colors-interactive2);
+  }
+
+  .c-efqMNv:not([disabled]):hover .c-iPskiL,
+  .c-efqMNv:not([disabled]):focus-visible .c-iPskiL {
+    opacity: 0.07;
+  }
+
+  .c-efqMNv:not([disabled]):active {
+    color: var(--colors-interactive3);
+  }
+
+  .c-efqMNv:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
+  }
+
+  .c-irsama {
+    background: transparent;
+    border-radius: var(--radii-2);
+    padding: 0;
+  }
+
+  .c-irsama > div {
+    display: none;
+  }
+
+  .c-irsama[data-state=active] {
+    background: white;
+    box-shadow: none;
+    border: 2px solid transparent;
+  }
+
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 600;
+    color: var(--colors-textBold);
+  }
+
+  .c-irsama[data-state=active]:hover {
+    background: white;
+  }
+
+  .c-irsama[data-state=active]:focus-visible {
+    box-shadow: none;
+  }
+
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 400;
+    color: var(--colors-grey900);
+  }
+
+  .c-irsama[disabled] {
+    opacity: 0.3;
+  }
+
+  .c-gZZKZD {
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-idmIgS {
+    position: relative;
+    border-bottom: 1px solid var(--colors-base4);
+    width: 100%;
+  }
+
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
+  .c-cWMaKf {
+    flex-grow: 1;
+    font-family: var(--fonts-body);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-bLFKCq > div {
+    border: none;
+  }
+}
+
+@media  {
+  .c-ctivzP-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-PJLV-fOErqC-size-sm {
+    padding: var(--space-4) var(--space-24);
+    gap: var(--space-3);
+  }
+
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md {
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::before {
+    content: '';
+    margin-bottom: -0.2078em;
+    display: table;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::after {
+    content: '';
+    margin-top: -0.2078em;
+    display: table;
+  }
+
+  .c-cyRcZm-fAKXXr-size-sm {
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-ctivzP-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-beRMwA-cEPjnm-size-sm {
+    font-size: var(--fontSizes-xs);
+  }
+
+  .c-lkWDnA-gichzl-emphasis-subtle {
+    color: var(--colors-textSubtle);
+    background: var(--colors-backgroundSubtle);
+  }
+
+  .c-lkWDnA-efCiES-size-xs {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+
+  .c-ctivzP-fmPQHp-noCapsize-true::before,
+  .c-ctivzP-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
+  .c-goUgMm-ktaGtY-overflow-wrap {
+    white-space: wrap;
+  }
+
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
+    background: var(--colors-marsh300);
+  }
+
+  .c-irsama-hqdqW-theme-marsh:focus {
+    border-color: var(--colors-marsh800);
+  }
+
+  .c-irsama-cvqpll-size-sm {
+    flex: unset;
+  }
+
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
+  .c-bLFKCq-hRWago-size-sm {
+    width: unset;
+  }
+
+  .c-PJLV-kFGxbM-size-md {
+    padding: var(--space-24) var(--space-5);
+    gap: var(--space-4);
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-cyRcZm-kWyXas-size-md {
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-beRMwA-fAKXXr-size-md {
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-irsama-dFUZFK-theme-primary[data-state=inactive]:hover {
+    background: var(--colors-primary300);
+  }
+
+  .c-irsama-dFUZFK-theme-primary:focus {
+    border-color: var(--colors-primary800);
+  }
+
+  .c-irsama-bPNjhd-size-md {
+    flex: 1;
+  }
+
+  .c-kxMksb-iGiUJQ-theme-primary {
+    background: var(--colors-primary200);
+  }
+
+  .c-PJLV-kFGxbM-size-lg {
+    padding: var(--space-24) var(--space-5);
+    gap: var(--space-4);
+  }
+
+  .c-cyRcZm-eQRsLC-size-lg {
+    font-size: var(--fontSizes-lg);
+  }
+
+  .c-beRMwA-kWyXas-size-lg {
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-lkWDnA-dvmlHl-size-sm {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-irsama-bPNjhd-size-lg {
+    flex: 1;
+  }
+}
+
+@media  {
+  .c-dhzjXW-iJNhhT-css {
+    border: none;
+    font-weight: normal;
+  }
+}
+
+<div>
+  <div
+    class="c-fGHEql c-bLFKCq"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-fErmnR-theme-marsh t-fjcNDs t-gMkhEo t-dmfxVJ"
+    >
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD"
+        data-orientation="horizontal"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
+      >
+        <button
+          aria-controls="radix-:r9:-content-one"
+          aria-selected="true"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-bPNjhd-size-lg"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-:r9:-trigger-one"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-kFGxbM-size-lg"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="13"
+                  r="9"
+                />
+                <polyline
+                  points="12 8 12 13 15 16"
+                />
+                <path
+                  d="m19 2 3 3M2 5l3-3"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-eQRsLC-size-lg"
+              >
+                Heading One
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-kWyXas-size-lg"
+              >
+                Description One
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status One
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+        <button
+          aria-controls="radix-:r9:-content-two"
+          aria-selected="false"
+          class="c-efqMNv c-irsama c-irsama-hqdqW-theme-marsh c-irsama-bPNjhd-size-lg"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-:r9:-trigger-two"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-kFGxbM-size-lg"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20V7m-3 3h6"
+                />
+                <circle
+                  cx="12"
+                  cy="5"
+                  r="2"
+                />
+                <path
+                  d="M20 14c-1.333 4-4 6-8 6s-6.667-2-8-6"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-eQRsLC-size-lg"
+              >
+                Heading Two
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-kWyXas-size-lg"
+              >
+                Description Two
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-dvmlHl-size-sm c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status Two
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="radix-:r9:-trigger-one"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-:r9:-content-one"
+      role="tabpanel"
+      style="animation-duration: 0s;"
+      tabindex="0"
+    >
+      Content One
+    </div>
+    <div
+      aria-labelledby="radix-:r9:-trigger-two"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r9:-content-two"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</div>
+`;
+
+exports[`SegmentedControl component renders md variant with primary theme 1`] = `
+@media  {
+  :root,
+  .t-dfjnAG {
+    --default-colors: [object Object];
+    --default-space: [object Object];
+    --default-fontSizes: [object Object];
+    --default-fonts: [object Object];
+    --default-sizes: [object Object];
+    --default-radii: [object Object];
+    --default-shadows: [object Object];
+    --default-ratios: [object Object];
+    --colors-textBold: hsl(0, 0%, 12%);
+    --colors-textRegular: hsl(0, 0%, 20%);
+    --colors-textSubtle: hsl(0, 0%, 33%);
+    --colors-textMinimal: hsl(0, 0%, 46%);
+    --colors-background: hsl(0, 0%, 96%);
+    --colors-backgroundAccent: hsl(215, 100%, 98%);
+    --colors-grey100: hsl(0, 0%, 96%);
+    --colors-grey200: hsl(0, 0%, 92%);
+    --colors-grey300: hsl(0, 0%, 88%);
+    --colors-grey400: hsl(0, 0%, 81%);
+    --colors-grey500: hsl(0, 0%, 73%);
+    --colors-grey600: hsl(0, 0%, 62%);
+    --colors-grey700: hsl(0, 0%, 46%);
+    --colors-grey800: hsl(0, 0%, 33%);
+    --colors-grey900: hsl(0, 0%, 20%);
+    --colors-grey1000: hsl(0, 0%, 12%);
+    --colors-grey1100: hsl(0, 0%, 10%);
+    --colors-grey1200: hsl(0, 0%, 6%);
+    --colors-blue100: hsl(215, 100%, 98%);
+    --colors-blue200: hsl(212, 100%, 95%);
+    --colors-blue300: hsl(211, 100%, 92%);
+    --colors-blue400: hsl(211, 100%, 88%);
+    --colors-blue500: hsl(212, 100%, 80%);
+    --colors-blue600: hsl(213, 100%, 71%);
+    --colors-blue700: hsl(214, 100%, 58%);
+    --colors-blue800: hsl(217, 92%, 51%);
+    --colors-blue900: hsl(223, 79%, 44%);
+    --colors-blue1000: hsl(228, 82%, 35%);
+    --colors-blue1100: hsl(228, 63%, 23%);
+    --colors-blue1200: hsl(227, 57%, 11%);
+    --colors-pink100: hsl(311, 100%, 98%);
+    --colors-pink200: hsl(310, 100%, 95%);
+    --colors-pink300: hsl(311, 100%, 90%);
+    --colors-pink400: hsl(313, 100%, 80%);
+    --colors-pink500: hsl(313, 83%, 72%);
+    --colors-pink600: hsl(315, 82%, 66%);
+    --colors-pink700: hsl(316, 63%, 56%);
+    --colors-pink800: hsl(317, 63%, 44%);
+    --colors-pink900: hsl(318, 63%, 37%);
+    --colors-pink1000: hsl(319, 55%, 33%);
+    --colors-pink1100: hsl(318, 98%, 16%);
+    --colors-pink1200: hsl(318, 97%, 12%);
+    --colors-purple100: hsl(246, 83%, 98%);
+    --colors-purple200: hsl(244, 74%, 95%);
+    --colors-purple300: hsl(246, 76%, 92%);
+    --colors-purple400: hsl(246, 74%, 85%);
+    --colors-purple500: hsl(249, 72%, 76%);
+    --colors-purple600: hsl(252, 70%, 66%);
+    --colors-purple700: hsl(256, 65%, 62%);
+    --colors-purple800: hsl(252, 51%, 51%);
+    --colors-purple900: hsl(257, 54%, 42%);
+    --colors-purple1000: hsl(257, 53%, 35%);
+    --colors-purple1100: hsl(255, 57%, 23%);
+    --colors-purple1200: hsl(255, 76%, 13%);
+    --colors-cyan100: hsl(198, 100%, 97%);
+    --colors-cyan200: hsl(199, 100%, 94%);
+    --colors-cyan300: hsl(201, 100%, 89%);
+    --colors-cyan400: hsl(200, 100%, 84%);
+    --colors-cyan500: hsl(201, 96%, 73%);
+    --colors-cyan600: hsl(202, 85%, 60%);
+    --colors-cyan700: hsl(204, 81%, 46%);
+    --colors-cyan800: hsl(205, 100%, 38%);
+    --colors-cyan900: hsl(206, 100%, 30%);
+    --colors-cyan1000: hsl(205, 100%, 21%);
+    --colors-cyan1100: hsl(206, 97%, 15%);
+    --colors-cyan1200: hsl(207, 73%, 9%);
+    --colors-green100: hsl(148, 93%, 94%);
+    --colors-green200: hsl(149, 95%, 91%);
+    --colors-green300: hsl(147, 87%, 85%);
+    --colors-green400: hsl(148, 84%, 70%);
+    --colors-green500: hsl(148, 75%, 54%);
+    --colors-green600: hsl(148, 77%, 45%);
+    --colors-green700: hsl(148, 84%, 36%);
+    --colors-green800: hsl(158, 79%, 29%);
+    --colors-green900: hsl(166, 71%, 24%);
+    --colors-green1000: hsl(166, 67%, 20%);
+    --colors-green1100: hsl(169, 88%, 10%);
+    --colors-green1200: hsl(155, 92%, 5%);
+    --colors-magenta100: hsl(330, 100%, 99%);
+    --colors-magenta200: hsl(329, 100%, 96%);
+    --colors-magenta300: hsl(332, 100%, 92%);
+    --colors-magenta400: hsl(333, 100%, 90%);
+    --colors-magenta500: hsl(333, 90%, 80%);
+    --colors-magenta600: hsl(333, 87%, 72%);
+    --colors-magenta700: hsl(333, 75%, 59%);
+    --colors-magenta800: hsl(333, 69%, 49%);
+    --colors-magenta900: hsl(333, 74%, 36%);
+    --colors-magenta1000: hsl(333, 86%, 25%);
+    --colors-magenta1100: hsl(333, 95%, 16%);
+    --colors-magenta1200: hsl(334, 62%, 10%);
+    --colors-red100: hsl(0, 100%, 99%);
+    --colors-red200: hsl(0, 100%, 96%);
+    --colors-red300: hsl(0, 100%, 96%);
+    --colors-red400: hsl(357, 100%, 93%);
+    --colors-red500: hsl(356, 96%, 83%);
+    --colors-red600: hsl(357, 90%, 73%);
+    --colors-red700: hsl(357, 80%, 59%);
+    --colors-red800: hsl(357, 76%, 49%);
+    --colors-red900: hsl(357, 73%, 37%);
+    --colors-red1000: hsl(357, 79%, 26%);
+    --colors-red1100: hsl(357, 91%, 17%);
+    --colors-red1200: hsl(357, 73%, 10%);
+    --colors-teal100: hsl(180, 83%, 95%);
+    --colors-teal200: hsl(180, 75%, 88%);
+    --colors-teal300: hsl(180, 71%, 78%);
+    --colors-teal400: hsl(179, 70%, 71%);
+    --colors-teal500: hsl(179, 65%, 52%);
+    --colors-teal600: hsl(179, 76%, 41%);
+    --colors-teal700: hsl(179, 91%, 31%);
+    --colors-teal800: hsl(178, 100%, 25%);
+    --colors-teal900: hsl(180, 100%, 18%);
+    --colors-teal1000: hsl(183, 100%, 13%);
+    --colors-teal1100: hsl(187, 92%, 10%);
+    --colors-teal1200: hsl(186, 56%, 7%);
+    --colors-orange100: hsl(45, 100%, 96%);
+    --colors-orange200: hsl(46, 100%, 89%);
+    --colors-orange300: hsl(46, 100%, 77%);
+    --colors-orange400: hsl(44, 100%, 65%);
+    --colors-orange500: hsl(41, 100%, 55%);
+    --colors-orange600: hsl(29, 100%, 55%);
+    --colors-orange700: hsl(35, 95%, 50%);
+    --colors-orange800: hsl(22, 94%, 54%);
+    --colors-orange900: hsl(22, 100%, 46%);
+    --colors-orange1000: hsl(20, 100%, 39%);
+    --colors-orange1100: hsl(18, 100%, 27%);
+    --colors-orange1200: hsl(18, 100%, 21%);
+    --colors-yellow100: hsl(53, 94%, 93%);
+    --colors-yellow200: hsl(54, 92%, 85%);
+    --colors-yellow300: hsl(54, 92%, 75%);
+    --colors-yellow400: hsl(52, 97%, 63%);
+    --colors-yellow500: hsl(51, 100%, 46%);
+    --colors-yellow600: hsl(49, 100%, 39%);
+    --colors-yellow700: hsl(48, 100%, 35%);
+    --colors-yellow800: hsl(46, 100%, 30%);
+    --colors-yellow900: hsl(44, 100%, 22%);
+    --colors-yellow1000: hsl(44, 100%, 18%);
+    --colors-yellow1100: hsl(41, 100%, 11%);
+    --colors-yellow1200: hsl(39, 100%, 8%);
+    --colors-lime100: hsl(73, 94%, 93%);
+    --colors-lime200: hsl(73, 94%, 87%);
+    --colors-lime300: hsl(73, 90%, 77%);
+    --colors-lime400: hsl(74, 82%, 69%);
+    --colors-lime500: hsl(74, 68%, 58%);
+    --colors-lime600: hsl(74, 77%, 41%);
+    --colors-lime700: hsl(75, 100%, 31%);
+    --colors-lime800: hsl(75, 100%, 27%);
+    --colors-lime900: hsl(75, 100%, 19%);
+    --colors-lime1000: hsl(75, 100%, 15%);
+    --colors-lime1100: hsl(75, 100%, 9%);
+    --colors-lime1200: hsl(74, 100%, 6%);
+    --colors-lapis100: hsl(214, 100%, 97%);
+    --colors-lapis200: hsl(215, 100%, 95%);
+    --colors-lapis300: hsl(202, 100%, 87%);
+    --colors-lapis400: hsl(212, 100%, 83%);
+    --colors-lapis500: hsl(220, 95%, 76%);
+    --colors-lapis600: hsl(230, 84%, 70%);
+    --colors-lapis700: hsl(240, 79%, 66%);
+    --colors-lapis800: hsl(240, 59%, 52%);
+    --colors-lapis900: hsl(240, 58%, 38%);
+    --colors-lapis1000: hsl(240, 63%, 29%);
+    --colors-lapis1100: hsl(240, 87%, 18%);
+    --colors-lapis1200: hsl(240, 97%, 12%);
+    --colors-maroon100: hsl(15, 100%, 98%);
+    --colors-maroon200: hsl(16, 100%, 93%);
+    --colors-maroon300: hsl(16, 100%, 87%);
+    --colors-maroon400: hsl(16, 100%, 80%);
+    --colors-maroon500: hsl(7, 89%, 70%);
+    --colors-maroon600: hsl(7, 78%, 60%);
+    --colors-maroon700: hsl(7, 67%, 44%);
+    --colors-maroon800: hsl(7, 95%, 32%);
+    --colors-maroon900: hsl(349, 89%, 28%);
+    --colors-maroon1000: hsl(346, 77%, 26%);
+    --colors-maroon1100: hsl(335, 73%, 20%);
+    --colors-maroon1200: hsl(335, 81%, 12%);
+    --colors-marsh100: hsl(147, 50%, 96%);
+    --colors-marsh200: hsl(147, 27%, 88%);
+    --colors-marsh300: hsl(147, 26%, 82%);
+    --colors-marsh400: hsl(147, 25%, 73%);
+    --colors-marsh500: hsl(147, 22%, 60%);
+    --colors-marsh600: hsl(147, 15%, 48%);
+    --colors-marsh700: hsl(147, 15%, 37%);
+    --colors-marsh800: hsl(147, 23%, 29%);
+    --colors-marsh900: hsl(147, 25%, 21%);
+    --colors-marsh1000: hsl(147, 17%, 18%);
+    --colors-marsh1100: hsl(147, 24%, 13%);
+    --colors-marsh1200: hsl(147, 14%, 7%);
+    --colors-alpha100: hsla(0, 0%, 20%, 0.1);
+    --colors-alpha150: hsla(0, 0%, 20%, 0.15);
+    --colors-alpha200: hsla(0, 0%, 20%, 0.2);
+    --colors-alpha250: hsla(0, 0%, 20%, 0.25);
+    --colors-alpha600: hsla(0, 0%, 20%, 0.6);
+    --colors-infoLight: hsl(215, 100%, 98%);
+    --colors-info: hsl(217, 92%, 51%);
+    --colors-infoMid: hsl(223, 79%, 44%);
+    --colors-infoDark: hsl(228, 82%, 35%);
+    --colors-successLight: hsl(119, 44%, 94%);
+    --colors-success: hsl(119, 100%, 27%);
+    --colors-successMid: hsl(124, 100%, 22%);
+    --colors-successDark: hsl(126, 100%, 17%);
+    --colors-dangerLight: hsl(0, 77%, 95%);
+    --colors-danger: hsl(0, 96%, 48%);
+    --colors-dangerMid: hsl(0, 96%, 41%);
+    --colors-dangerDark: hsl(0, 97%, 34%);
+    --colors-warningLight: hsl(39, 100%, 94%);
+    --colors-warning: hsl(41, 100%, 55%);
+    --colors-warningMid: hsl(41, 89%, 48%);
+    --colors-warningDark: hsl(41, 100%, 41%);
+    --colors-warningText: hsl(24, 100%, 37%);
+    --colors-subjectEnglish: hsl(333, 75%, 59%);
+    --colors-subjectMaths: hsl(214, 100%, 58%);
+    --colors-subjectScience: hsl(256, 65%, 62%);
+    --colors-subjectVerbalReasoning: hsl(148, 84%, 36%);
+    --colors-subjectNonVerbalReasoning: hsl(41, 100%, 55%);
+    --colors-subjectCreativeWriting: hsl(35, 95%, 50%);
+    --colors-subjectExamSkills: hsl(257, 53%, 35%);
+    --colors-glBlueLight: hsl(222, 68%, 78%);
+    --colors-glBluePrimary: hsl(222, 56%, 55%);
+    --colors-glBlueDark: hsl(222, 35%, 43%);
+    --colors-primary100: hsl(215, 100%, 98%);
+    --colors-primary200: hsl(212, 100%, 95%);
+    --colors-primary300: hsl(211, 100%, 92%);
+    --colors-primary400: hsl(211, 100%, 88%);
+    --colors-primary500: hsl(212, 100%, 80%);
+    --colors-primary600: hsl(213, 100%, 71%);
+    --colors-primary700: hsl(214, 100%, 58%);
+    --colors-primary800: hsl(217, 92%, 51%);
+    --colors-primary900: hsl(223, 79%, 44%);
+    --colors-primary1000: hsl(228, 82%, 35%);
+    --colors-primary1100: hsl(228, 63%, 23%);
+    --colors-primary1200: hsl(227, 57%, 11%);
+    --space-0: 0.125rem;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-24: 1.5rem;
+    --fontSizes-xs: 0.75rem;
+    --fontSizes-sm: 0.875rem;
+    --fontSizes-md: 1rem;
+    --fontSizes-lg: 1.3125rem;
+    --fontSizes-xl: 1.75rem;
+    --fontSizes-2xl: 2.3125rem;
+    --fontSizes-3xl: 3.125rem;
+    --fontSizes-4xl: 5.625rem;
+    --fonts-sans: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
+    --fonts-display: 'National 2 Condensed', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --fonts-body: 'Inter', system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+    --sizes-0: 0.5rem;
+    --sizes-1: 1rem;
+    --sizes-2: 1.5rem;
+    --sizes-3: 2rem;
+    --sizes-4: 2.5rem;
+    --sizes-5: 3rem;
+    --sizes-6: 4rem;
+    --sizes-7: 6rem;
+    --sizes-8: 8rem;
+    --radii-0: 0.25rem;
+    --radii-1: 0.5rem;
+    --radii-2: 0.75rem;
+    --radii-3: 1rem;
+    --radii-round: 100rem;
+    --shadows-0: 0 1px 3px hsla(0, 0%, 20%, 0.1), 0 1px 2px hsla(0, 0%, 20%, 0.15);
+    --shadows-1: 0 3px 6px hsla(0, 0%, 20%, 0.1), 0 3px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-2: 0 10px 20px hsla(0, 0%, 20%, 0.1), 0 6px 6px hsla(0, 0%, 20%, 0.1);
+    --shadows-3: 0 14px 28px hsla(0, 0%, 20%, 0.15), 0 10px 10px hsla(0, 0%, 20%, 0.1);
+    --ratios-16-9: 16/9;
+    --ratios-3-2: 3/2;
+    --ratios-4-3: 4/3;
+    --ratios-1-1: 1/1;
+    --ratios-3-4: 3/4;
+  }
+
+  .t-fjcNDs {
+    --colors-interactiveForeground: var(--colors-foreground7plus);
+    --colors-interactive1: var(--colors-accent9);
+    --colors-interactive2: var(--colors-accent10);
+    --colors-interactive3: var(--colors-accent11);
+  }
+
+  .t-gMkhEo {
+    --colors-accent1: #FFFFFF;
+    --colors-accent2: var(--colors-primary100);
+    --colors-accent3: var(--colors-primary200);
+    --colors-accent4: var(--colors-primary300);
+    --colors-accent5: var(--colors-primary400);
+    --colors-accent6: var(--colors-primary500);
+    --colors-accent7: var(--colors-primary600);
+    --colors-accent8: var(--colors-primary700);
+    --colors-accent9: var(--colors-primary800);
+    --colors-accent10: var(--colors-primary900);
+    --colors-accent11: var(--colors-primary1000);
+  }
+
+  .t-dmfxVJ {
+    --colors-foreground: var(--colors-grey1000);
+    --colors-foreground7plus: #FFFFFF;
+    --colors-base1: #FFFFFF;
+    --colors-base2: var(--colors-grey100);
+    --colors-base3: var(--colors-grey200);
+    --colors-base4: var(--colors-grey300);
+    --colors-base5: var(--colors-grey400);
+    --colors-base6: var(--colors-grey500);
+    --colors-base7: var(--colors-grey600);
+    --colors-base8: var(--colors-grey700);
+    --colors-base9: var(--colors-grey800);
+    --colors-base10: var(--colors-grey900);
+    --colors-base11: var(--colors-grey1000);
+  }
+
+  .t-hxgSuC {
+    --colors-textSubtle: var(--colors-infoMid);
+    --colors-backgroundSubtle: var(--colors-infoLight);
+    --colors-textBold: #FFF;
+    --colors-backgroundBold: var(--colors-info);
+  }
+}
+
+@media  {
+  .c-ctivzP {
+    margin: 0;
+  }
+
+  .c-ctivzP > .c-ctivzP:before,
+  .c-ctivzP > .c-ctivzP:after {
+    display: none;
+  }
+
+  .c-dhzjXW {
+    display: flex;
+  }
+
+  .c-hMRxhp {
+    display: inline-block;
+    fill: none;
+    flex-shrink: 0;
+    stroke: currentcolor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vertical-align: middle;
+  }
+
+  .c-iUMJTc {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .c-cyRcZm {
+    font-family: var(--fonts-body);
+  }
+
+  .c-beRMwA {
+    font-family: var(--fonts-body);
+    color: var(--colors-textSubtle);
+    font-weight: 400;
+  }
+
+  .c-lkWDnA {
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radii-0);
+    min-width: 0;
+    border: 1px solid #FFFFFF;
+    font-family: var(--fonts-body);
+  }
+
+  .c-lkWDnA > *:not(:last-child) {
+    margin-right: var(--space-1);
+  }
+
+  .c-goUgMm {
+    padding-top: var(--space-0);
+    padding-bottom: var(--space-0);
+  }
+
+  .c-iPskiL {
+    position: absolute;
+    inset: 0;
+    height: calc(100% + 2px);
+    opacity: 0;
+    background: var(--colors-interactive1);
+  }
+
+  .c-efqMNv {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    padding: var(--space-4);
+    -webkit-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid transparent;
+    position: relative;
+  }
+
+  .c-efqMNv[data-state="active"] {
+    color: var(--colors-interactive1);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    border-color: currentColor;
+  }
+
+  .c-efqMNv[disabled] {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .c-efqMNv:not([disabled]):hover,
+  .c-efqMNv:not([disabled]):focus-visible {
+    color: var(--colors-interactive2);
+  }
+
+  .c-efqMNv:not([disabled]):hover .c-iPskiL,
+  .c-efqMNv:not([disabled]):focus-visible .c-iPskiL {
+    opacity: 0.07;
+  }
+
+  .c-efqMNv:not([disabled]):active {
+    color: var(--colors-interactive3);
+  }
+
+  .c-efqMNv:not([disabled]):focus-visible {
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: white 0px 0px 0px 2px, var(--colors-primary800) 0px 0px 0px 4px;
+  }
+
+  .c-irsama {
+    background: transparent;
+    border-radius: var(--radii-2);
+    padding: 0;
+  }
+
+  .c-irsama > div {
+    display: none;
+  }
+
+  .c-irsama[data-state=active] {
+    background: white;
+    box-shadow: none;
+    border: 2px solid transparent;
+  }
+
+  .c-irsama[data-state=active] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 600;
+    color: var(--colors-textBold);
+  }
+
+  .c-irsama[data-state=active]:hover {
+    background: white;
+  }
+
+  .c-irsama[data-state=active]:focus-visible {
+    box-shadow: none;
+  }
+
+  .c-irsama[data-state=inactive] :is(h1,h2,h3,h4,h5,h6) {
+    font-weight: 400;
+    color: var(--colors-grey900);
+  }
+
+  .c-irsama[disabled] {
+    opacity: 0.3;
+  }
+
+  .c-gZZKZD {
+    flex-shrink: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .c-gZZKZD::-webkit-scrollbar {
+    display: none;
+  }
+
+  .c-gZZKZD {
+    scrollbar-width: none;
+  }
+
+  .c-idmIgS {
+    position: relative;
+    border-bottom: 1px solid var(--colors-base4);
+    width: 100%;
+  }
+
+  .c-kxMksb {
+    padding: var(--space-1);
+    border-radius: var(--radii-3);
+  }
+
+  .c-cWMaKf {
+    flex-grow: 1;
+    font-family: var(--fonts-body);
+  }
+
+  .c-fGHEql {
+    width: 100%;
+  }
+
+  .c-bLFKCq > div {
+    border: none;
+  }
+}
+
+@media  {
+  .c-ctivzP-bndJoy-size-sm {
+    font-size: var(--fontSizes-sm);
+    line-height: 1.53;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::before {
+    content: '';
+    margin-bottom: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-bndJoy-size-sm::after {
+    content: '';
+    margin-top: -0.4056em;
+    display: table;
+  }
+
+  .c-ctivzP-cyRcZm-family-body {
+    font-family: var(--fonts-body);
+  }
+
+  .c-dhzjXW-iTKOFX-direction-column {
+    flex-direction: column;
+  }
+
+  .c-dhzjXW-bICGYT-justify-center {
+    justify-content: center;
+  }
+
+  .c-dhzjXW-jroWjL-align-center {
+    align-items: center;
+  }
+
+  .c-PJLV-fOErqC-size-sm {
+    padding: var(--space-4) var(--space-24);
+    gap: var(--space-3);
+  }
+
+  .c-hMRxhp-cyeZeh-size-sm {
+    height: var(--sizes-1);
+    width: var(--sizes-1);
+    stroke-width: 1.5;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md {
+    font-family: var(--fonts-body);
+    font-size: var(--fontSizes-xl);
+    line-height: 1.14;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::before {
+    content: '';
+    margin-bottom: -0.2078em;
+    display: table;
+  }
+
+  .c-iUMJTc-iEIMJs-size-md::after {
+    content: '';
+    margin-top: -0.2078em;
+    display: table;
+  }
+
+  .c-cyRcZm-fAKXXr-size-sm {
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-ctivzP-gvmVBy-size-md {
+    font-size: var(--fontSizes-md);
+    line-height: 1.5;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::before {
+    content: '';
+    margin-bottom: -0.3864em;
+    display: table;
+  }
+
+  .c-ctivzP-gvmVBy-size-md::after {
+    content: '';
+    margin-top: -0.3864em;
+    display: table;
+  }
+
+  .c-beRMwA-cEPjnm-size-sm {
+    font-size: var(--fontSizes-xs);
+  }
+
+  .c-lkWDnA-gichzl-emphasis-subtle {
+    color: var(--colors-textSubtle);
+    background: var(--colors-backgroundSubtle);
+  }
+
+  .c-lkWDnA-efCiES-size-xs {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+
+  .c-ctivzP-fmPQHp-noCapsize-true::before,
+  .c-ctivzP-fmPQHp-noCapsize-true::after {
+    display: none !important;
+  }
+
+  .c-goUgMm-ktaGtY-overflow-wrap {
+    white-space: wrap;
+  }
+
+  .c-irsama-hqdqW-theme-marsh[data-state=inactive]:hover {
+    background: var(--colors-marsh300);
+  }
+
+  .c-irsama-hqdqW-theme-marsh:focus {
+    border-color: var(--colors-marsh800);
+  }
+
+  .c-irsama-cvqpll-size-sm {
+    flex: unset;
+  }
+
+  .c-kxMksb-fErmnR-theme-marsh {
+    background: var(--colors-marsh200);
+  }
+
+  .c-bLFKCq-hRWago-size-sm {
+    width: unset;
+  }
+
+  .c-PJLV-kFGxbM-size-md {
+    padding: var(--space-24) var(--space-5);
+    gap: var(--space-4);
+  }
+
+  .c-hMRxhp-dMrjnF-size-md {
+    height: var(--sizes-2);
+    width: var(--sizes-2);
+    stroke-width: 1.75;
+  }
+
+  .c-cyRcZm-kWyXas-size-md {
+    font-size: var(--fontSizes-md);
+  }
+
+  .c-beRMwA-fAKXXr-size-md {
+    font-size: var(--fontSizes-sm);
+  }
+
+  .c-irsama-dFUZFK-theme-primary[data-state=inactive]:hover {
+    background: var(--colors-primary300);
+  }
+
+  .c-irsama-dFUZFK-theme-primary:focus {
+    border-color: var(--colors-primary800);
+  }
+
+  .c-irsama-bPNjhd-size-md {
+    flex: 1;
+  }
+
+  .c-kxMksb-iGiUJQ-theme-primary {
+    background: var(--colors-primary200);
+  }
+}
+
+@media  {
+  .c-dhzjXW-iJNhhT-css {
+    border: none;
+    font-weight: normal;
+  }
+}
+
+<div>
+  <div
+    class="c-fGHEql c-bLFKCq"
+    data-orientation="horizontal"
+    dir="ltr"
+  >
+    <div
+      class="PJLV c-idmIgS c-kxMksb c-kxMksb-iGiUJQ-theme-primary t-fjcNDs t-gMkhEo t-dmfxVJ"
+    >
+      <div
+        aria-orientation="horizontal"
+        class="c-gZZKZD"
+        data-orientation="horizontal"
+        role="tablist"
+        style="outline: none;"
+        tabindex="0"
+      >
+        <button
+          aria-controls="radix-:r6:-content-one"
+          aria-selected="true"
+          class="c-efqMNv c-irsama c-irsama-dFUZFK-theme-primary c-irsama-bPNjhd-size-md"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="active"
+          id="radix-:r6:-trigger-one"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-kFGxbM-size-md"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="13"
+                  r="9"
+                />
+                <polyline
+                  points="12 8 12 13 15 16"
+                />
+                <path
+                  d="m19 2 3 3M2 5l3-3"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-kWyXas-size-md"
+              >
+                Heading One
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-fAKXXr-size-md"
+              >
+                Description One
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status One
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+        <button
+          aria-controls="radix-:r6:-content-two"
+          aria-selected="false"
+          class="c-efqMNv c-irsama c-irsama-dFUZFK-theme-primary c-irsama-bPNjhd-size-md"
+          data-orientation="horizontal"
+          data-radix-collection-item=""
+          data-state="inactive"
+          id="radix-:r6:-trigger-two"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-cyRcZm-family-body"
+          >
+            <div
+              class="c-dhzjXW c-PJLV c-dhzjXW-iTKOFX-direction-column c-dhzjXW-bICGYT-justify-center c-dhzjXW-jroWjL-align-center c-PJLV-kFGxbM-size-md"
+            >
+              <svg
+                aria-hidden="true"
+                class="c-hMRxhp c-hMRxhp-dMrjnF-size-md"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20V7m-3 3h6"
+                />
+                <circle
+                  cx="12"
+                  cy="5"
+                  r="2"
+                />
+                <path
+                  d="M20 14c-1.333 4-4 6-8 6s-6.667-2-8-6"
+                />
+              </svg>
+              <h2
+                class="c-iUMJTc c-iUMJTc-iEIMJs-size-md c-cyRcZm c-cyRcZm-kWyXas-size-md"
+              >
+                Heading Two
+              </h2>
+              <p
+                class="c-ctivzP c-ctivzP-gvmVBy-size-md c-ctivzP-cyRcZm-family-body c-beRMwA c-beRMwA-fAKXXr-size-md"
+              >
+                Description Two
+              </p>
+              <div
+                class="c-dhzjXW c-lkWDnA c-lkWDnA-gichzl-emphasis-subtle c-lkWDnA-efCiES-size-xs c-dhzjXW-iJNhhT-css t-hxgSuC"
+                role="status"
+              >
+                <p
+                  class="c-ctivzP c-ctivzP-bndJoy-size-sm c-ctivzP-fmPQHp-noCapsize-true c-ctivzP-cyRcZm-family-body c-goUgMm c-goUgMm-ktaGtY-overflow-wrap"
+                >
+                  Status Two
+                </p>
+              </div>
+            </div>
+          </span>
+          <div
+            class="c-iPskiL"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="radix-:r6:-trigger-one"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="active"
+      id="radix-:r6:-content-one"
+      role="tabpanel"
+      style="animation-duration: 0s;"
+      tabindex="0"
+    >
+      Content One
+    </div>
+    <div
+      aria-labelledby="radix-:r6:-trigger-two"
+      class="c-cWMaKf"
+      data-orientation="horizontal"
+      data-state="inactive"
+      hidden=""
+      id="radix-:r6:-content-two"
+      role="tabpanel"
+      tabindex="0"
+    />
+  </div>
+</div>
+`;
