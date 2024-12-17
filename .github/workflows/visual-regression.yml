@@ -2,7 +2,7 @@ name: Visual Regression
 
 on:
   push:
-    branches: -feat/visual-regression
+    branches: -main
   pull_request:
     types:
       - labeled
