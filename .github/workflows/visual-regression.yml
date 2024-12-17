@@ -48,7 +48,7 @@ jobs:
         run: yarn playwright install --with-deps
 
       - name: Run Visual Regression
-        run: yarn visual-regression
+        run: yarn vr:chromium
         env:
           DS_DOCUMENTATION_URL: '${{ inputs.dsDocumentationUrl }}'
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
