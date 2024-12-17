@@ -18,7 +18,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  test:
+  visual-regression:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,15 +34,15 @@ jobs:
         run: yarn install
 
       - name: Build Library
-        if: ${{ inputs.dsDocumentationUrl != '' }}
+        if: ${{ inputs.dsDocumentationUrl == '' }}
         run: yarn build:lib
 
       - name: Build Documentation
-        if: ${{ inputs.dsDocumentationUrl != '' }}
+        if: ${{ inputs.dsDocumentationUrl == '' }}
         run: yarn build:docs
 
       - name: Start Web Server as a Daemon
-        if: ${{ inputs.dsDocumentationUrl != '' }}
+        if: ${{ inputs.dsDocumentationUrl == '' }}
         run: |
           yarn start:docs &
           disown -h %1
