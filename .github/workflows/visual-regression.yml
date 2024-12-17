@@ -40,7 +40,9 @@ jobs:
 
       - name: Start Web Server as a Daemon
         if: ${{ inputs.dsDocumentationUrl != '' }}
-        run: yarn start:docs &
+        run: |
+          yarn start:docs &
+          disown -h %1
 
       - name: Install Playwright browsers + dependencies
         run: yarn playwright install --with-deps
