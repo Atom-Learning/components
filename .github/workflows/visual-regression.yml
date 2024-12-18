@@ -1,8 +1,8 @@
 name: Visual Regression
 
 on:
-  push:
-    branches: -main
+  # push:
+  #   branches: -main
   pull_request:
     branches: -main
     types:
@@ -26,11 +26,11 @@ jobs:
     steps:
       - name: Print stuff
         run: |
-          echo ${{ github.ref }}
+          echo ${{ github.ref_name }}
           echo ${{ contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
 
   visual-regression:
-    if: ${{ github.ref == 'main' && true || contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
+    if: ${{ github.ref_name == 'main' && true || contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
