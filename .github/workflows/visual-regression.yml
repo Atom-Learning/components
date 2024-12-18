@@ -21,6 +21,14 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  debug-stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print stuff
+        run: |
+          echo ${{ github.ref }}
+          echo ${{ contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
+
   visual-regression:
     if: ${{ github.ref == 'main' && true || contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
     runs-on: ubuntu-latest
