@@ -16,6 +16,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-playwright-report
-test-results
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

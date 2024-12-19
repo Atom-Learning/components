@@ -1,21 +1,27 @@
 name: Visual Regression
 
 on:
-  workflow_call:
-    inputs:
-      dsDocumentationUrl:
-        description: 'URL of environment to run VR tests against. Should include protocol (e.g. https://)'
-        required: false
-        default: ''
-        type: string
+  push:
+    branches: -main
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
 
 permissions:
   actions: write
   contents: read
   pull-requests: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  test:
+  visual-regression:
+    if: ${{ github.ref_name == 'main' && true || contains(github.event.pull_request.labels.*.name, 'visual-regression') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,15 +37,12 @@ jobs:
         run: yarn install
 
       - name: Build Library
-        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: yarn build:lib
 
       - name: Build Documentation
-        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: yarn build:docs
 
       - name: Start Web Server as a Daemon
-        if: ${{ inputs.dsDocumentationUrl != '' }}
         run: |
           yarn start:docs &
           disown -h %1
@@ -48,7 +51,6 @@ jobs:
         run: yarn playwright install --with-deps
 
       - name: Run Visual Regression
-        run: yarn visual-regression
+        run: yarn vr:chromium
         env:
-          DS_DOCUMENTATION_URL: '${{ inputs.dsDocumentationUrl }}'
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
