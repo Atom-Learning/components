@@ -41,7 +41,7 @@ describe('Nav component', () => {
       container: document.body
     })
 
-    userEvent.click(screen.getByRole('button', { name: /theme/i }))
+    await userEvent.click(screen.getByRole('button', { name: /theme/i }))
 
     expect(container).toMatchSnapshot()
   })
@@ -62,7 +62,7 @@ describe('Nav component', () => {
   it('displays links when nav dropdown trigger is clicked', async () => {
     render(<ExampleNav />)
 
-    userEvent.click(screen.getByRole('button', { name: /theme/i }))
+    await userEvent.click(screen.getByRole('button', { name: /theme/i }))
 
     const dropdownList = within(
       screen.getByLabelText(/Theme/i, { selector: 'div' })

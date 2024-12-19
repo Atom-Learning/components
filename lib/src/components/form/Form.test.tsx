@@ -46,7 +46,7 @@ describe(`Form component`, () => {
       </Form>
     )
 
-    userEvent.click(screen.getByText('Submit'))
+    await userEvent.click(screen.getByText('Submit'))
 
     expect(await screen.findByText('Name is required'))
   })
@@ -123,7 +123,7 @@ describe(`Form component`, () => {
 
     const input = screen.getByRole('textbox')
 
-    userEvent.type(input, 'test5')
+    await userEvent.type(input, 'test5')
 
     await waitFor(() => screen.getByRole('button').click())
 

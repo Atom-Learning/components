@@ -43,7 +43,7 @@ describe('DropdownMenu component', () => {
     expect(await trigger).toBeInTheDocument()
 
     expect(await screen.queryByText('Item 1')).not.toBeInTheDocument()
-    userEvent.click(trigger)
+    await userEvent.click(trigger)
     waitFor(async () =>
       expect(await screen.queryByText('Item 1')).toBeInTheDocument()
     )
