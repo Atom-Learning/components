@@ -19,7 +19,10 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
+  /**
+   * We can only run one test in parallel because ubuntu-latest in private repositories has 2vCPUs
+   * and the proportion of workers is # vCPU / 2 (because one per browser and test runner)
+   */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
@@ -35,7 +38,7 @@ export default defineConfig({
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    trace: 'off'
+    trace: process.env.CI ? 'off' : 'on'
   },
 
   timeout: 5 * 60 * 60 * 1000,
@@ -56,6 +59,8 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] }
     }
+
+    // Potential configs in case we want to cover more screen sizes / browsers
 
     /* Test against mobile viewports. */
     // {
